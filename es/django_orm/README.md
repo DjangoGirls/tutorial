@@ -155,7 +155,7 @@ También puedes obtener una lista de todos los post publicados. Lo hacemos filtr
 <QuerySet []>
 ```
 
-Por desgracia, el post que hemos añadido desde la consola de Python aún no está publicado. ¡Pero lo podemos cambiar! Primero obtén una instancia de la entrada que queremos publicar:
+Por desgracia, el post que hemos añadido desde la consola de Python aùn no está publicado. Pero lo podemos cambiar! Primero obtèn una instancia de la entrada que queremos publicar:
 
 {% filename %}command-line{% endfilename %}
 
@@ -200,9 +200,9 @@ También podemos invertir el orden agregando `-` al principio:
 <QuerySet [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]>
 ```
 
-### Encadenar QuerySets
+### Consultas complejas a través de encadenamiento de métodos
 
-También puedes combinar QuerySets **encadenando** uno con otro:
+Como ves, algunos métodos en `Post.objects` devuelven un QuerySet. Los mismos métodos pueden ser llamados también en un QuerySet, y entonces devolverán un nuevo QuerySet. También puedes combinar QuerySets **encadenando** uno con otro:
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')

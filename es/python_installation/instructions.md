@@ -1,27 +1,33 @@
-> Para lectores en casa: este capitulo se cubre en el video [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA).
+> Para lectores en casa: este capitulo se cubre en el vídeo [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA).
 > 
 > Esta sección está basada en un tutorial de Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django esta escrito en Python. Necesitamos Python para hacer cualquier cosa en Django. Comencemos instalandolo!. Tenemos que instalar Python 3.6, así que si tienes una versión anterior, debes actualizarla.
+Django está escrito en Python. Necesitamos Python para hacer cualquier cosa en Django. ¡Empecemos con instalarlo! Queremos que instales la última versión de Python 3, así que si tienes una versión anterior, necesitarás actualizarla. Si ya tienes la versión 3.4 o una superior, debería ir bien.
+
+Por favor, instala Python normalmente de la siguiente forma, incluso si tienes Anaconda instalada en el ordenador.
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
-Primero comprueba si tu computador tiene una version de Windows de 32-bit o 64-bit, presiona tecla Windows + Pause/Break, esto abrirá tu System info (información de tu sistema), ahora busta la linea "System type". Puedes descargar Python para Windows desde el sitio web https://www.python.org/downloads/windows/. Haz click en el link "Latest Python 3 release - Python x.x.x.". Si tu computador tiene una versión de Windows de **64 bits**, descarga **Windows x86-64 executable installer**. De lo contrario, descarga **Windows x86 executable installer**. Después de descargar el instalador, debes ejecutarlo (hazle doble click) y sigue las instrucciones.
+Primero comprueba si tu ordenador ejecuta la versión 32 bits de Windows o la de 64, en "Tipo de sistema" en la página de "Acerca de". Para llegar a esta página, intenta uno de estos métodos:
 
-Algo a tener en cuenta: Durante la instalación notarás una ventana llamada "Setup". Asegúrate de seleccionar la casilla "Add Python 3.6 to Path" y luego haz click en "Install Now", como se muestra a continuación:
+* Presiona la tecla de Windows y la tecla Pause/Break al mismo tiempo
+* Abre el Panel de Control desde el menú de Windows, después accede a Sistema & y Seguridad, luego a Sistema
+* Presiona el botón de Windows, luego accede a Configuración > Sistema > Acerca de
+
+Puedes descargar Python para Windows desde la siguiente web https://www.python.org/downloads/windows/. Clica en el enlace "Latest Python 3 Release -Python x.x.x". Si tu ordenador ejecuta la versión de **64 bits** de Windows, descarga **Windows x86-64 executable installer**. De lo contrario, descarga **Windows x86 executable installer**. Después de descargar el instalador, deberías ejecutarlo (dándole doble click) y seguir las instrucciones.
+
+Una cosa para tener en cuenta: Durante la instalación, verás una ventana de "Setup". Asegúrate de marcar las casillas "Add Python 3.6 to PATH" o "Add Python to your environment variables" y hacer click en "Install Now", como se muestra aquí (puede que se vea un poco diferente si estás instalando una versión diferente):
 
 ![No te olvides de agregar Python al Path](../python_installation/images/python-installation-options.png)
 
-En los próximos pasos, vas a utilizar la línea de comandos de Windows (acerca de la cual también de contaremos algo). De momento, si tienes que teclear algunos comandos, ve al menú de Inicio y teclea "Command Prompt" en el cuadro de búsqueda. (En versiones anteriores de Windows, puedes arrancar la linea de comandos con menú de Inicio → Sistema Windows → Linea de Comandos.) También puedes pulsar la tecla "Windows" + R hasta que aparezca la ventana "Ejecutar" (Run). Para abrir la línea de comandos, escribe "cmd" y pulsa enter en la ventana "Run".
+Cuando la instalación de complete, verás un cuadro de diálogo con un enlace que puedes seguir para saber más sobre Python o sobre la versión que has instalado. Cierra o cancela ese dialogo -- ¡Aprenderás más en ese tutorial!
 
-![Escribe "cmd" en la ventana "Run&quot](../python_installation/images/windows-plus-r.png)
+Nota: si estás usando una versión anterior de Windows (7, Vista o cualquier versión anterior) y el instalador de la versión 3.6.x de Python falla con un error, intenta también:
 
-Nota: Si estas utilizando una versión anterior de Windows (7, Vista, o cualquier versión anterior) y el instalador de Python 3.6.x falla con un error, puedes tratar ya sea:
-
-1. instalar todas las actualizaciones de Windows e intentar instalar Python 3.6 nuevamente; o
+1. instalar todas las actualizaciones de Windows e intenta instalar Python de nuevo; o
 2. instalar una [versión de Python anterior](https://www.python.org/downloads/windows/), por ejemplo, [3.4.6](https://www.python.org/downloads/release/python-346/).
 
-Si instalas una versión anterior de Python, la pantalla de instalación puede ser un poco diferente a la que se muestra arriba. Asegúrate de desplazarte hacia abajo para ver "Add python.exe to Path", y dar click en el botón a la izquierda y seleccionar "Will be installed on local hard drive":
+Si instalas una versión anterior de Python, la pantalla de instalación puede ser un poco diferente a la mostrada arriba. Asegúrate de desplazarte hacia abajo para ver "Add python.exe to Path", después haz click en el botón de la izquierda y selecciona "Will be installed on local hard drive":
 
 ![Añadir Python a Path, versiones más antiguas](../python_installation/images/add_python_to_windows_path.png)
 
@@ -32,17 +38,17 @@ data-collapse=true ces-->
 
 > **Nota** Antes de instalar Python en OS X, debes asegurarte de que la configuración del Mac permita instalar paquetes que no estén en la App Store. ve a preferencias del sistema (System Preferences, está en la carpeta Aplicaciones), da click en "Seguridad y privacidad" (Security & Privacy) y luego la pestaña "General". Si tu "Permitir aplicaciones descargadas desde:" (Allow apps downloaded from:) está establecida a "Mac App Store," cambia a "Mac App Store y desarrolladores identificados." (Mac App Store and identified developers)
 
-Debes ir al sitio web https://www.python.org/downloads/release/python-361/ y descargar el instalador de Python:
+Necesitas ir a la página web https://www.python.org/downloads/release/python-361/ y descargar el instalador de Python:
 
-* Descargar el archivo *Mac OS X 64-bit/32-bit installer*,
-* Haz doble clic en *python-3.4.3-macosx10.6.pkg* para ejecutar al instalador.
+* Descarga el archivo *Mac OS X 64-bit/32-bit installer*,
+* Doble click en *python-3.6.1-macosx10.6.pkg* para ejecutar el instalador.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-Es muy posible que ya tengas Python instalado de serie. Para verificar que ya lo tienes instalado (y qué versión es), abre una consola y escribe el siguiente comando:
+Es muy posible que ya tengas instalado Python de serie. Para verificar que ya lo tienes instalado (y qué versión es), abre una consola y escribe el siguiente comando:
 
 {% filename %}command-line{% endfilename %}
 
@@ -50,7 +56,14 @@ Es muy posible que ya tengas Python instalado de serie. Para verificar que ya lo
     Python 3.6.1
     
 
-Si tienes una 'micro versión' diferente de Python instalada, por ejemplo 3.6.0, entonces no tienes que actualizar. Si no tienes instalado Python o si deseas una versión diferente, puedes instalarla de la siguiente manera:
+Si tienes instalada una versión diferente de Python, al menos 3.4.0 (por ejemplo 3.6.0), entonces no tienes que actualizar. Si tu no has instalado Python, o si tu quieres una versión diferente, primero verifica que distribución de Linux estás usando con el siguiente comando:
+
+{% filename %}command-line{% endfilename %}
+
+    $ grep ^NOMBRE= /etc/os-release
+    
+
+Después, dependiendo de el resultado, sigue una de las siguientes guías de instalación bajo ésta sección.
 
 <!--endsec-->
 
@@ -60,7 +73,7 @@ Escribe este comando en tu consola:
 
 {% filename %}command-line{% endfilename %}
 
-    $ sudo apt install python3.6
+    $ sudo apt install python3
     
 
 <!--endsec-->
@@ -68,21 +81,21 @@ Escribe este comando en tu consola:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Usa este comando en tu consola:
+Usa éste comando en tu consola:
 
 {% filename %}command-line{% endfilename %}
 
-    $ sudo dnf instalar python3
+    $ sudo dnf install python3
     
 
-En versiones anteriores de Fedora tal vez te salga un error de que no se encuentra el comando `dnf`. En ese caso utiliza `yum` en su lugar.
+Si tu estás en versiones antiguas de Fedora, puedes obtener un error que el comando `dnf` no se encuentra. En ese caso, tu necesitas usar `yum` en su lugar.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Usa este comando en tu consola:
+Usa éste comando en tu consola:
 
 {% filename %}command-line{% endfilename %}
 
@@ -91,7 +104,7 @@ Usa este comando en tu consola:
 
 <!--endsec-->
 
-Verifica que la instalación fue exitosa abriendo una terminal y ejecutando el comando `python3`:
+Verifica si la instalación fue exitosa abriendo una terminal o consola, y corriendo el comando `python3`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -99,8 +112,10 @@ Verifica que la instalación fue exitosa abriendo una terminal y ejecutando el c
     Python 3.6.1
     
 
-**NOTA:** Si estás en Windows y recibes un mensaje de error no se encontró `python3`, intenta usar `python` (sin el `3`) y comprueba si todavía es una versión de Python 3.6.
+La versión mostrada puede ser diferente desde 3.6.1 -- este debería marcar la versión que tu instalaste.
+
+**NOTA:** Si está en Windows y recibe un mensaje de error que indica que `python3` no se encontró, intente usar `python` (sin el `3`) y compruebe si todavía podría ser una versión de Python que sea 3.4.0 o superior. Si eso tampoco funciona, puede abrir un nuevo símbolo del sistema e intentar nuevamente; Esto sucede si usa un símbolo del sistema abierto antes de la instalación de Python.
 
 * * *
 
-Si tienes alguna duda o si algo salió mal y no sabes cómo resolverlo - ¡pide ayuda a tu tutor! A veces las cosas no van bien y que es mejor pedir ayuda a alguien con más experiencia.
+Si tú tienes alguna duda, o si ocurrió algún error y no tienes idea sobre qué hacer, ¡por favor pregunta a tú entrenador! Algunas veces las cosas no van bien y es mejor preguntar por ayuda desde alguien con más experiencia.

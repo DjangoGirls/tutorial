@@ -155,7 +155,7 @@ Bueno, miremos se debería ver el HTML en `post_edit.html`:
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <h1>New post</h1>
+    <h2>New post</h2>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
         <button type="submit" class="save btn btn-default">Save</button>
@@ -259,7 +259,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Veamos si funciona. Ve a la página http://127.0.0.1:8000/post/new/, añade un `title` y un `text`, guárdalo... y voilá! Se ha añadido el nuevo post al blog y somos redirigidos a la página de `post_detail`!
+Veamos si funciona. Ve a la página http://127.0.0.1:8000/post/new/, añade un `title` y un `text`, guárdalo... y voilà! Se ha añadido el nuevo post al blog y somos redirigidos a la página de `post_detail`!
 
 Puede que hayas notado que estamos indicando la fecha de publicación antes de guardar el post. Más adelante introduciremos un *botón de publicar* en el libro **Django Girls Tutorial: Extensions**.
 
@@ -299,14 +299,14 @@ para que la plantilla quede así:
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <div class="post">
-        {% if post.published_date %}
-            <div class="date">
-                {{ post.published_date }}
-            </div>
-        {% endif %}
+    <div class="post">
+        {% if post.published_date %}
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+        {% endif %}
         <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-        <h1>{{ post.title }}</h1>
+        <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endblock %}
@@ -342,7 +342,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Esto se ve casi exactamente igual a nuestra view `post_new`, ¿no? Pero no del todo. Primero: pasamos un parámetro extra `pk` de los urls. Segundo: obtenemos el modelo `Post` que queremos editar con `get_object_or_404(Post, pk=pk)` y después, al crear el formulario pasamos este post como una `instancia` tanto al guardar el formulario…
+Esto se ve casi exactamente igual a nuestra view `post_new`, ¿no? Pero no del todo. Por un lado, pasamos un parámetro `pk` adicional de `urls`. Segundo: obtenemos el modelo `Post` que queremos editar con `get_object_or_404(Post, pk=pk)` y después, al crear el formulario pasamos este post como una `instancia` tanto al guardar el formulario…
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -370,7 +370,7 @@ Al dar click ahí, debes ver el formulario con nuestro post del blog:
 
 ¡Felicitaciones! ¡Tu aplicación está cada vez más completa!
 
-Si quieres saber más sobre los Django forms, puedes encontrar la documentación aquí: https://docs.djangoproject.com/en/2.0/topics/forms/
+Si necesita más información sobre los formularios de Django, debe leer la documentación: https://docs.djangoproject.com/en/2.2/topics/forms/
 
 ## Seguridad
 
@@ -435,14 +435,15 @@ Veamos si todo esto funciona en PythonAnywhere. ¡Tiempo de hacer otro despliegu
 
 * Luego, en una [consola Bash de PythonAnywhere](https://www.pythonanywhere.com/consoles/)
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com $ git pull
+    $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
+    $ git pull
     [...]
     
 
-(Recuerda sustituir `<your-pythonanywhere-username>`con tu nombre de PythonAnywhere real, sin los signos de ángulo).
+(Recuerda sustituir `<your-pythonanywhere-domain>` con tu subdominio de PythonAnywhere real, sin los paréntesis angulares.)
 
-* Para terminar ve a ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (usa el botón del menú de la esquina superior derecha, encima de la consola) y haz click en **Reload**. Refresca tu blog https://yourname.pythonanywhere.com para ver los cambios.
+* Para terminar ve a ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (usa el botón del menú de la esquina superior derecha, encima de la consola) y haz click en **Reload**. Recarga tu https://subdomain.pythonanywhere.com blog para ver los cambios.
 
 ¡Y eso debería ser todo! Felicidades :)

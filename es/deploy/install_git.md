@@ -1,13 +1,13 @@
-Git es un "sistema de control de versiones" que utilizan muchos programadores. Este software puede seguir los cambios realizados en archivos a lo largo del tiempo de forma que más tarde puedas volver a cualquier versión anterior. Es un poco parecido a la opción de "control de cambios" de Microsoft Word, pero mucho más potente.
+Git es un "sistema de control de versiones" que utilizan muchos programadores. Este software puede seguir los cambios realizados en archivos a lo largo del tiempo de forma que más tarde puedas volver a cualquier versión anterior. Algo similar a la herramienta de "Control de Cambios" en los programas de tipo Word (por ejemplo, Microsoft Word o LibreOffice Writer), pero mucho más potente.
 
 ## Instalar Git
 
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-Puedes descargar Git desde [git-scm.com](https://git-scm.com/). Puedes hacer click en "next" en todos los pasos a excepción de uno; en el quinto paso titulado "Adjusting your PATH environment", escoge "Use Git and optional Unix tools from the Windows Command Prompt" (la de abajo del todo). Aparte de eso, los valores por defecto están bien. "Checkout Windows-style, commit Unix-style line endings" también está bien.
+Puedes descargar Git desde [git-scm.com](https://git-scm.com/). Puedes hacer click en "Next" en todos los pasos excepto en dos: cuando se te pregunte que selecciones tu editor, selecciona Nano, y en el paso "adjusting your PATH environment", selecciona "Use Git and optional Unix tools from the Windows Command Prompt" (la última opción). Aparte de eso, los valores por defecto son correctos. "Checkout Windows-style, commit Unix-style line endings" tampoco necesita corrección.
 
-No olvides reiniciar la terminal o powershell después de que la instalación termine. <!--endsec-->
+No olvides reiniciar el Símbolo del Sistema o el PowerShell una vez que la instalación se complete con éxito. <!--endsec-->
 
 <!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->

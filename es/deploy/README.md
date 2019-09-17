@@ -87,7 +87,7 @@ Y finalmente guardamos nuestros cambios. Ve a la consola y ejecuta estos comando
 
 ## Subiendo tu código a Github
 
-Ve a [GitHub.com](https://www.github.com) y regístrate para tener una cuenta gratuita. (Si ya tienes una o lo hiciste en la preparación del taller, ¡genial!)
+Vaya a [GitHub.com](https://www.github.com) y regístrese para obtener una cuenta de usuario nueva y gratuita. (Si ya lo hiciste en la preparación del taller, ¡eso es genial!) Asegúrate de recordar tu contraseña (agrégala a tu administrador de contraseñas, si usas uno).
 
 A continuación, crea un nuevo repositorio con el nombre "my-first-blog". Deja el checkbox "initialize with a README" sin marcar, deja la opción de .gitignore vacía (ya lo hemos hecho manualmente) y deja la licencia como None.
 
@@ -155,13 +155,13 @@ Ahora ejecutaremos el asistente para configurar automáticamente nuestra aplicac
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
+    $ pa_autoconfigure_django.py --python=3.6 https://github.com/<your-github-username>/my-first-blog.git
     
 
 A medida que se ejecuta, podrás ver lo que hace:
 
 - Se descarga tu código de GitHub
-- Crea un virtualenv en PythonAnywhere, igual que el de tu ordenador local
+- Crear un virtualenv en PythonAnywhere, como el de tu propia computadora
 - Actualiza tus ficheros de settings con algunos settings de despliegue
 - Crea la base de datos en PythonAnywhere ejecutando el comando `manage.py migrate`
 - Configura los archivos estáticos (static) (luego hablaremos de éstos con más detalle)
@@ -169,7 +169,7 @@ A medida que se ejecuta, podrás ver lo que hace:
 
 En PythonAnywhere todos estos pasos están automatizados, pero son los mismos que tendrías que seguir en cualquier otro proveedor de servidores.
 
-Lo más importante que debes tener en cuenta es que tu base de datos en PythonAnywhere es totalmente independiente de la base de datos de tu propio ordenador, puede tener diferentes posts y cuentas de administrador. Como consecuencia, igual que lo hicimos en tu ordenador, tenemos que crear la cuenta de administrador con el comando `createsuperuser`. PythonAnywhere ya ha activado el virtualenv automáticamente, así que lo único que tienes que hacer es ejecutar:
+Lo más importante que debes notar en este momento es que tu base de datos en PythonAnywhere está totalmente separada de tu base de datos en tu propia computadora, por lo que puedes tener diferentes publicaciones y cuentas de administrador. Como consecuencia, igual que lo hicimos en tu ordenador, tenemos que crear la cuenta de administrador con el comando `createsuperuser`. PythonAnywhere ya ha activado el virtualenv automáticamente, así que lo único que tienes que hacer es ejecutar:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -185,8 +185,8 @@ Ahora, si quieres, también puedes ver tu código en PythonAnywhere con el coman
     (ola.pythonanywhere.com) $ ls
     blog  db.sqlite3  manage.py  mysite requirements.txt static
     (ola.pythonanywhere.com) $ ls blog/
-    __init__.py  __pycache__  admin.py  forms.py  migrations  models.py  static
-    templates  tests.py  urls.py  views.py
+    __init__.py  __pycache__  admin.py  apps.py  migrations  models.py
+    tests.py  views.py
     
 
 También puedes ir a la página de ficheros ("Files") y navegar por los ficheros y directorios usando el visor de PythonAnywhere. (Desde la página de la consola ("Console"), puedes ir a cualquier otra página de PythonAnywhere usando el botón de la esquina superior derecha. Desde el resto de páginas, también hay enlaces a las otras en la parte superior.)
@@ -195,7 +195,7 @@ También puedes ir a la página de ficheros ("Files") y navegar por los ficheros
 
 ¡Tu sitio ya debería estar online en internet! Haz click en la página "Web" de PythonAnywhere para obtener un enlace a él. Puedes compartir este enlace con quien tu quieras :)
 
-> **Nota** Este es un tutorial para principiantes, y al desplegar este sitio hemos tomado algunos atajos que tal vez no sean las mejores prácticas desde el punto de vista de la seguridad. Si decides ampliar este proyecto o comenzar uno nuevo, deberías revisar el [Checklist de despliegue de Django](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) con recomendaciones para que tu sitio sea más seguro.
+> **Nota** Este es un tutorial para principiantes, y al desplegar este sitio hemos tomado algunos atajos que tal vez no sean las mejores prácticas desde el punto de vista de la seguridad. Si decide construir sobre este proyecto, o comenzar un nuevo proyecto, debe revisar la [lista de verificación de despliegue de Django](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) para obtener algunos consejos sobre cómo proteger su sitio.
 
 ## Consejos de depuración
 
@@ -204,6 +204,7 @@ Si te sale un error al ejecutar el script `pa_autconfigure_django.py`, aquí hay
 - Te has olvidado de crear el token de API de PythonAnywhere.
 - No has puesto bien la URL de GitHub
 - Si ves un error diciendo *"Could not find your settings.py*, es probable que no añadieras todos tus archivos a Git, y/o no los subiste a GitHub correctamente. Repasa la sección de Git más arriba
+- Si anteriormente se suscribió a una cuenta de PythonAnywhere y tuvo un error con collectstatic, probablemente tenga una versión anterior de SQLite (por ejemplo, 3.8.2) para su cuenta. En ese caso, regístrese para una nueva cuenta e intente los comandos en la sección PythonAnywhere anterior.
 
 Si ves un error al visitar tu sitio, el primer lugar para ver qué está pasando es el **log de errores**. Encontrará un enlace en la página ["Web"](https://www.pythonanywhere.com/web_app_setup/) de PythonAnywhere. Mira si hay algún mensaje de error allí; los más recientes están en la parte inferior.
 

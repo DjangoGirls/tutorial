@@ -1,7 +1,15 @@
 # Contenido
 
 * [Introducción](README.md)
-* [Instalación](installation/README.md)
+* [Instalación](installation/README.md) 
+  * [Línea de Comandos](installation/README.md#brief-intro-to-the-command-line)
+  * [Python](installation/README.md#install-python)
+  * [Editor de texto](installation/README.md#install-a-code-editor)
+  * [Entorno Virtual](installation/README.md#virtual-environment)
+  * [Django](installation/README.md#installing-django)
+  * [Git](installation/README.md#install-git)
+  * [GitHub](installation/README.md#create-a-github-account)
+  * [PythonAnywhere](installation/README.md#create-a-pythonanywhere-account)
 * [Instalación (chromebook)](chromebook_setup/README.md)
 * [Cómo funciona Internet](how_the_internet_works/README.md)
 * [Introducción a la línea de comandos](intro_to_command_line/README.md)

@@ -35,8 +35,8 @@ Para iniciar sesión, deberás crear un *superusuario (superuser)*, que es un us
 
 Cuando te lo pida, escribe tu nombre de usuario (en minúscula, sin espacios), email y contraseña. **No te preocupes si no puedes ver la password que estás tecleando - así es como debe ser.** Tecléalo y pulsa `intro` para continuar. Luego, verás algo así (Donde username y email serán los que escribiste anteriormente):
 
-    Username: admin
-    Email address: admin@admin.com
+    Username: ola
+    Email address: ola@example.com
     Password:
     Password (again):
     Superuser created successfully.
@@ -52,6 +52,6 @@ Asegúrate de que al menos dos o tres posts (pero no todos) tengan la fecha de p
 
 ![Administrador de Django](images/edit_post3.png)
 
-Si desea saber más acerca de Django admin, debería revisar la documentación Django: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
+Si desea saber más sobre el administrador de Django, debe consultar la documentación de Django: https://docs.djangoproject.com/en/2.2/ref/contrib/admin/
 
 Este posiblemente sea un buen momento para tomar un café (o te) o algo para comer y re energizar tu cuerpo. Has creado tu primer modelo en Django - ¡Mereces un pequeño descanso!
