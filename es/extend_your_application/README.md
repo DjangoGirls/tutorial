@@ -2,7 +2,7 @@
 
 # Extiende tu aplicación
 
-Ya hemos completado todos los pasos necesarios para la creación de nuestro sitio web: sabemos cómo escribir un model, url, view y template. También sabemos cómo hacer que nuestro sitio web tenga buen aspecto.
+Ya hemos completado todos los diferentes pasos necesarios para la creación de nuestro sitio web: sabemos cómo escribir un modelo, URL, vista y plantilla. También sabemos cómo hacer que nuestro sitio web sea bonito.
 
 ¡Hora de practicar!
 
@@ -23,19 +23,19 @@ Empezaremos añadiendo un enlace al fichero `blog/templates/blog/post_list.html`
             <div class="date">
                 {{ post.published_date }}
             </div>
-            <h1><a href="">{{ post.title }}</a></h1>
+            <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
 {% endblock %}
 ```
 
-{% raw %}Queremos tener un link del titulo de una publicación en la lista de publicaciones al detalle de la misma. Vamos a cambiar `<h1><a href="">{{ post.title }}</a></h1>` para que se enlace a la página de detalles de publicación:{% endraw %}
+{% raw %}Queremos tener un link del titulo de una publicación en la lista de publicaciones al detalle de la misma. Cambiemos `<h2><a href="">{{ post.title }}</a></h2>` para enlazarla a la página detalle del post:{% endraw %}
 
 {% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+<h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
 ```
 
 {% raw %}Es hora de explicar el misterioso`{% url 'post_detail' pk=post.pk %}`. Como probablemente sospeches, la notación `{% %}` significa que estamos utilizando Django template tags. ¡Esta vez usaremos uno que creará un URL para nosotros!{% endraw %}
@@ -54,7 +54,7 @@ Vamos a crear una URL en `urls.py` para nuestra *view* `post_detail`!
 
 Queremos que el detalle de la primera entrada se visualice en esta **URL**: http://127.0.0.1:8000/post/1/
 
-Vamos a crear una URL en el fichero `blog/urls.py` que dirija a Django hacia una *vista* llamada `post_detail`, que mostrará una entrada de blog completa. Abre el fichero `blog/urls.py` en el editor, y añade la línea `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` para que el fichero quede así:
+Vamos a crear una URL en el fichero `blog/urls.py` que dirija a Django hacia una *vista* llamada `post_detail`, que mostrará una entrada de blog completa. Abre el fichero `blog/urls.py` en el editor, y añade la línea `path('post/<int:pk>/', views.post_detail, name='post_detail'),` para que el fichero quede así:
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
@@ -84,7 +84,7 @@ OK, hemos añadido un nuevo patrón de URL a `blog/urls.py`! Actualizamos la pag
 
 ## Añade la vista de detalle de la publicación
 
-Esta vez nuestra *vista* tomará un parámetro adicional `pk`. Nuestra *vista* necesita recibirlo, ¿verdad? Así que definiremos nuestra función como `def post_detail (request, pk):`. Ten en cuenta que tenemos que usar exactamente el mismo nombre que especificamos en las urls (`pk`). ¡Omitir esta variable es incorrecto y resultará en un error!
+Esta vez nuestra *vista* tomará un parámetro adicional `pk`. Nuestra *vista* necesita recibirlo, ¿verdad? Así que definiremos nuestra función como `def post_detail (request, pk):`. Tenga en cuenta que necesitamos usar exactamente el mismo nombre que el que especificamos en `urls` (`pk`). ¡Omitir esta variable es incorrecto y resultará en un error!
 
 Ahora, queremos obtener solo un post. Para ello podemos usar querysets como este:
 
@@ -148,15 +148,15 @@ Se verá así:
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <div class="post">
-        {% if post.published_date %}
-            <div class="date">
-                {{ post.published_date }}
-            </div>
-        {% endif %}
-        <h1>{{ post.title }}</h1>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    <div class="post">
+        {% if post.published_date %}
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+        {% endif %}
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
 {% endblock %}
 ```
 
@@ -185,14 +185,14 @@ Sería bueno verificar que tu sitio web aún funcionará en PythonAnywhere, ¿ci
 
 Luego, en una [consola Bash de PythonAnywhere](https://www.pythonanywhere.com/consoles/):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
+    $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-(Recuerda sustituir `<your-pythonanywhere-username>`con tu nombre de PythonAnywhere real, sin los signos de ángulo).
+(Recuerda sustituir `<your-pythonanywhere-domain>` con tu subdominio de PythonAnywhere real, sin los paréntesis angulares.)
 
 ## Actualizar los ficheros estáticos (static files) en el servidor
 
@@ -200,15 +200,15 @@ Normalmente, los servidores como PythonAnywhere tratan los ficheros estáticos (
 
 Activa el virtualenv si no estaba activado de antes (en PythonAnywhere se usa el comando `workon`, es igual que el comando `source myenv/bin/activate` que usamos en local):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ workon <your-pythonanywhere-username>.pythonanywhere.com
+    $ workon <your-pythonanywhere-domain>.pythonanywhere.com
     (ola.pythonanywhere.com)$ python manage.py collectstatic
     [...]
     
 
 El comando `manage.py collectstatic` es un poco como el comando `manage.py migrate`. Hacemos cambios en nuestro código y luego le decimos a Django que los *aplique*, bien a la colección de ficheros estáticos o bien a la base de datos.
 
-En cualquier caso, ya podemos ir a la [página "Web"](https://www.pythonanywhere.com/web_app_setup/) (botón en la esquina superior derecha de la consola), hacer click en **Reload**, y mirar la página https://yourname.pythonanywhere.com para ver el resultado.
+En cualquier caso, ahora estaremos listos para saltar sobre la [página "Web"](https://www.pythonanywhere.com/web_app_setup/) (desde el botón del menú en el lado superior derecho de la consola), realizar la **Recarga**, y mirar en la página https://subdomain.pythonanywhere.com para ver el resultado.
 
 ¡Y eso debería ser todo! Felicidades :)

@@ -1,4 +1,4 @@
-> Parte de esta sección se basa en tutoriales por Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> Parte de esta sección está basada en tutoriales por Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
 > Parte de este capítulo está basada en el [django-marcador tutorial](http://django-marcador.keimlink.de/) bajo la licencia Creative Commons Attribution-ShareAlike 4.0 internacional. El tutorial de django-marcador tiene derechos de autor de Markus Zapke-Gündemann et al.
 
@@ -144,6 +144,13 @@ Inicia el entorno virtual ejecutando:
 
 <!--endsec-->
 
+> **NOTA:** Para usuarios del popular editor VS Code, el cual viene con una terminal integrada basada en el poweshell de windows; si tu deseas añadir la terminal integrada, tu puedes arrancar el siguiente comando para activar tu entorno virtual:
+> 
+>     $ . myvenv\Scripts\activate.ps1
+>     
+> 
+> La ventaja es que tu no tienes que cambiar las ventanas entre el editor de código y la línea de comandos
+
 Sabrás que tienes `virtualenv` iniciado cuando veas que la línea de comando en tu consola tiene el prefijo `(myvenv)`.
 
 Cuando trabajes en un entorno virtual, `python` automáticamente se referirá a la versión correcta, de modo que puedes utilizar `python` en vez de `python3`.
@@ -158,14 +165,14 @@ Antes de hacer eso, debemos asegurarnos que tenemos la última versión de `pip`
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~$ python3 -m pip install --upgrade pip
+    (myvenv) ~$ python -m pip install --upgrade pip
     
 
 ### Instalar paquetes con un fichero de requisitos (requirements)
 
 Un fichero de requisitos (requirements) tiene una lista de dependencias que se deben instalar mediante `pip install`:
 
-Lo primero, crea un fichero `requirements.txt` dentro del directorio `djangogirls/`, usando el editor de código que hemos instalado hace un momento:
+Primero crea un archivo `requirements.txt` dentro de tu directorio `djangogirls`, usando el editor de código que instalaste previamente. Lo puedes hacer mediante abriendo un nuevo archivo en el editor de código y guardandolo como `requirements.txt` en el directorio `djangogirls`. Tu directorio se verá así:
 
     djangogirls
     └───requirements.txt
@@ -192,14 +199,14 @@ Ahora, ejecuta `pip install -r requirements.txt` para instalar Django.
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> Si obtienes un error al ejecutar pip en Windows comprueba si la ruta de tu proyecto contiene espacios, acentos o caracteres especiales (por ejemplo, `C:\Users\User Name\djangogirls`). Si los tiene, por favor considera moverla a otro lugar sin espacios, acentos o caracteres especiales (sugerencia: `C:\djangogirls`). Crea un nuevo virtualenv en el nuevo directorio, luego borra el viejo y reintenta el comando anterior. (Mover el directorio de virtualenv no funciona puesto que virtualenv usa rutas absolutas.)
+> Si tu obtienes un error cuando llamas al pip en la plataforma de Windows, por favor verifica si el nombre de ruta de tu proyecto contiene espacios, acentos o caracteres especiales ( por ejemplo, `C:\Usuarios\NombreUsuario\djangogirls`). Si los tiene, por favor considera usar otro lugar sin espacios, acentos o caracteres especiales (sugerencia: `C:\djangogirls`). Crea un nuevo virtualenv en el nuevo directorio, luego borra el viejo y trata de escribir el comando anterior otra vez. (Moviendo el directorio virtualenv no funcionará debido a que usa rutas absolutas.)
 
 <!--endsec-->
 
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Puede que tu línea de comandos se congele después de que intentes instalar Django. Si esto sucede, en vez del comando anterior utiliza:
+> Tu línea de comando puede congelarse luego de intentar instalar Django. Si ésto sucede, usa el siguiente comando:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -211,7 +218,7 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> Si obtienes un error al ejecutar pip en Ubuntu 12.04 ejecuta `python -m pip install -U --force-reinstall pip` para arreglar la instalación de pip en el virtualenv.
+> Si tu obtienes un error cuando llamas pip en Ubuntu 12.04, por favor corre `python -m pip install -U --force-reinstall pip` para reparar la instalación de pip en el virtualenv.
 
 <!--endsec-->
 

@@ -4,7 +4,7 @@ Estamos a punto de construir nuestra primera página web: ¡una página de inici
 
 ## ¿Qué es una URL?
 
-Una URL es una dirección de la web. Puedes ver una URL cada vez que visitas una página. Se ve en la barra de direcciones del navegador. (Sí! ¡`127.0.0.1:8000` es una URL! Y `https://djangogirls.org` también es una URL.)
+Una URL es una dirección de la web. Puedes ver una URL cada vez que visitas una página. Se ve en la barra de direcciones del navegador. (Sì! ¡`127.0.0.1:8000` es una URL! Y `https://djangogirls.org` también es una URL.)
 
 ![URL](images/url.png)
 
@@ -21,8 +21,8 @@ Vamos a abrir el archivo `mysite/urls.py` en el editor de código de tu elecció
 
 [...]
 """
-from django.urls import path, include
 from django.contrib import admin
+from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -49,15 +49,15 @@ Esta linea dice que para cada URL que empieza con `admin/` Django encontrará su
 
 También queremos mantener limpio el archivo `mysite/urls.py`, así que vamos a importar las urls de nuestra aplicación `blog` en el archivo principal `mysite/urls.py`.
 
-Vamos, añade la línea para importar `blog.urls`. También tienes que cambiar la primera línea, porque vamos a usar la función `include` y tenemos que importarla.
+Vamos, añade la línea para importar `blog.urls`. Tú también necesitarás cambiar la línea `desde django.urls...` porque estaremos usando la función `include` aquí, así que se necesitará añadir ese import a la línea.
 
 El archivo `mysite/urls.py` debería verse ahora así:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
 ```python
-from django.urls import path, include
 from django.contrib import admin
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -90,7 +90,7 @@ urlpatterns = [
 ]
 ```
 
-Como puedes ver, estamos asociando una vista (`view`) llamada `post_list` a la URL raíz. Este patrón de URL detectará la cadena vacía, y el URL resolver de Django no tiene en cuenta el nombre el dominio (i.e., http://127.0.0.1:8000/) que viene antes del path de la url. Este patrón le dirá a Django que `views.post_list` es el lugar correcto al que ir si alguien entra a tu sitio web con la dirección 'http://127.0.0.1:8000/'.
+Como puedes ver, estamos asociando una vista (`view`) llamada `post_list` a la URL raíz. Este patrón de URL coincidirá con una cadena vacía y el solucionador de URL de Django ignorará el nombre de dominio (es decir, http://127.0.0.1:8000/) que prefija la ruta de URL completa. Este patrón le dirá a Django que `views.post_list` es el lugar correcto al que ir si alguien entra a tu sitio web con la dirección 'http://127.0.0.1:8000/'.
 
 La última parte `name='post_list'` es el nombre de la URL que se utilizará para identificar a la vista. Puede coincidir con el nombre de la vista pero también puede ser algo completamente distinto. Utilizaremos las URL con nombre más delante en el proyecto así que es importante darle un nombre a cada URL de la aplicación. También deberíamos intentar mantener los nombres de las URL únicos y fáciles de recordar.
 
@@ -98,6 +98,6 @@ Si tratas de visitar http://127.0.0.1:8000/ ahora, encontrarás un mensaje de er
 
 ![Error](images/error1.png)
 
-La consola esta mostrando un error, pero no te preocupes - de hecho es muy útil: está diciendote que **no existe el atributo 'post_list'**. Ese es el nombre del *view* que Django está tratando de encontrar y usar, pero aun no lo hemos creado. En esta etapa tu `/admin/` tampoco funcionará. No te preocupes, ya llegaremos a eso. Si ves un error diferente, intenta reiniciar el servidor web. Para ello, en la consola en la que se está ejecutando el servidor web, páralo pulsando Ctrl+C (las teclas Control y C a la vez) y reinícialo ejecutando el comando `python manage.py runserver`.
+La consola esta mostrando un error, pero no te preocupes - de hecho es muy ùtil: està diciendote que **no existe el atributo 'post_list'**. Ese es el nombre del *view* que Django está tratando de encontrar y usar, pero aun no lo hemos creado. En esta etapa tu `/admin/` tampoco funcionarà. No te preocupes, ya llegaremos a eso. Si ves un error diferente, intenta reiniciar el servidor web. Para hacerlo, en la ventana de la consola que ejecuta el servidor web, deténgalo presionando Ctrl+C (las teclas juntas Control y C). En Windows, es posible que deba presionar Ctrl+Break. Luego, debe reiniciar el servidor web ejecutando un comando `python manage.py runserver`.
 
-> Si quieres saber más sobre Django URLconfs, mira la documentación oficial: https://docs.djangoproject.com/en/2.0/topics/http/urls/
+> Si quieres saber más sobre URLconfs de Django, mira la documentación oficial: https://docs.djangoproject.com/en/2.2/topics/http/urls/

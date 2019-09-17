@@ -56,7 +56,7 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-La última parte que nos falta es pasar el QuerySet `posts` a la plantilla context. No te preocupes, enseñaremos como mostrarlo más adelante.
+La última parte es pasar el QuerySet `posts` a la plantilla context. No te preocupes, enseñaremos como mostrarlo más adelante.
 
 Fíjate en que creamos una *variable* para el QuerySet: `posts`. Trátala como si fuera el nombre de nuestro QuerySet. De aquí en adelante vamos a referirnos al QuerySet con ese nombre.
 
@@ -78,4 +78,4 @@ def post_list(request):
 
 ¡Terminamos! Ahora regresemos a nuestra plantilla y mostremos este QuerySet.
 
-Si quieres leer un poco más acerca de QuerySets en Django, puedes darle un vistazo a: https://docs.djangoproject.com/en/2.0/ref/models/querysets/
+¿Quieres leer un poco más sobre QuerySets en Django? Debería mirar aquí: https://docs.djangoproject.com/en/2.2/ref/models/querysets/

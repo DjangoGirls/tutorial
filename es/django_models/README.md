@@ -20,11 +20,8 @@ Luego, el `Gato` tiene algunas acciones como: `ronronear`, `arañar` o `alimenta
     dueño 
     ronronear() 
     rasguñar() 
-    alimentarse(comida_de_gato) 
+    alimentarse(comida_de_gato)
     
-    ComidaDeGato
-    ----------
-    sabor
     
 
     ComidaDeGato
@@ -99,7 +96,7 @@ Notarás que se ha creado un nuevo directorio `blog` y ahora contiene una cantid
     └── requirements.txt
     
 
-Después de crear una aplicación, también necesitamos decirle a Django que debe utilizarla. Eso se hace en el fichero `mysite/settings.py` -- ábrelo en el editor. Tenemos que encontrar `INSTALLED_APPS` y agregar una línea que contiene `'blog',` justo por encima de `]`. El producto final debe tener este aspecto:
+Después de crear una aplicación, también necesitamos decirle a Django que debe utilizarla. Eso se hace en el fichero `mysite/settings.py` -- ábrelo en el editor. Tenemos que encontrar `INSTALLED_APPS` y agregar una línea que contiene `'blog.apps.BlogConfig',` justo por encima de `]`. El producto final debe tener este aspecto:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -111,7 +108,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog',
+    'blog.apps.BlogConfig',
 ]
 ```
 
@@ -164,7 +161,7 @@ Ahora definimos las propiedades de las que hablábamos: `title`, `text`, `create
 - `models.DateTimeField`, este es fecha y hora.
 - `modelos.ForeignKey`, este es una relación (link) con otro modelo.
 
-No vamos a explicar aquí cada pedacito de código porque nos tomaría demasiado tiempo. Deberías echar un vistazo a la documentación de Django si quieres saber más sobre los campos de los Modelos y cómo definir cosas diferentes a las descritas anteriormente (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
+No vamos a explicar aquí cada pedacito de código porque nos tomaría demasiado tiempo. Debería echar un vistazo a la documentación de Django si desea obtener más información sobre los campos Modelo y cómo definir otras cosas distintas a las descritas anteriormente (https://docs.djangoproject.com/en/2.2/ref/models/fields/#field-types).
 
 ¿Y qué sobre `def publish(self):`? Es exactamente el método `publish` que mencionábamos antes. `def` significa que es una función/método y `publish` es el nombre del método. Puedes cambiar el nombre del método, si quieres. La regla de nomenclatura es utilizar minúsculas y guiones bajos en lugar de espacios. Por ejemplo, un método que calcule el precio medio se podría llamar `calcular_precio_medio`.
 

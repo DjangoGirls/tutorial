@@ -1,15 +1,15 @@
-Puedes [saltarte esta sección](http://tutorial.djangogirls.org/en/installation/#install-python) en caso de que no estés usando un Chromebook. Si lo estás usando, tu experiencia de instalación será algo diferente. Puedes ignorar el resto de las instrucciones de instalación.
+Puedes [saltarte esta sección](http://tutorial.djangogirls.org/en/installation/#install-python) en caso de que no estés usando un Chromebook. Si lo usas, tu experiencia de instalación será algo diferente. Puedes ignorar el resto de las instrucciones de instalación.
 
 ### IDE en la nube (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Un IDE en la nube es una herramienta que te da un editor de código y acceso a un ordenador conectado a internet en el que puedes instalar, escribir y ejecutar software. En este tutorial, el IDE en la nube te servirá como tu *máquina local*. Seguirás ejecutando comandos en una terminal igual que tus compañeros de clase en OS X, Ubuntu, o Windows, pero tu terminal en realidad estará conectada a un ordenador corriendo en otro sitio que el IDE en la nube gestionará para ti. Aquí están las instrucciones para IDEs en la nube (PaizaCloud Cloud IDE, AWS Cloud9). Puedes elegir uno de los IDEs en la nube, y seguir sus instrucciones.
+Nube de IDE es una herramienta que te ofrece un editor de código y el acceso por medio de internet a una computadora donde puedes instalar, escribir y ejecutar el software. Durante este tutorial, el IDE en la nube te servirá como tu *máquina local*. Seguirás ejecutando comandos en una terminal igual que tus compañeros de clase en OS X, Ubuntu, o Windows, pero tu terminal en realidad estará conectada a una computadora trabajando en algún otro lugar, que el IDE en la nube configura para ti. Aquí están las instrucciones para IDEs en la nube (PaizaCloud Cloud IDE, AWS Cloud9). Puedes elegir uno de los IDEs en la nube, y seguir sus instrucciones.
 
 #### PaizaCloud Cloud IDE
 
 1. Ve a [PaizaCloud Cloud IDE](https://paiza.cloud/)
 2. Crea una cuenta
-3. Haz click en *New Server*
-4. Haz click en el botón Terminal (en el lado izquierdo de la ventana)
+3. Haga clic en *Nuevo Servidor* y elija la aplicación Django
+4. Haz clic en el botón Terminal (en el lado izquierdo de la ventana)
 
 Ahora deberías ver una interfaz con una barra y botones en la izquierda. Haz click en al botón "Terminal" para abrir la ventana de la terminal con un símbolo de sistema como este:
 
@@ -18,38 +18,36 @@ Ahora deberías ver una interfaz con una barra y botones en la izquierda. Haz cl
     $
     
 
-La terminal enviará tus instrucciones al ordenador que Cloud 9 ha preparado para ti. Puedes redimensionar o maximizar la ventana para hacerla un poco mas grande.
+La terminal en el IDE en la nube PaizaCloud, está preparada para ejecutar tus instrucciones. Puedes redimensionar o maximar la ventana para hacerla un poco mas grande.
 
 #### AWS Cloud9
 
-1. Ve a [AWS Cloud9](https://aws.amazon.com/cloud9/)
-2. Crea una cuenta
-3. Haz click en *Create Environment*
+Actualmente Cloud 9 requiere que te registres con AWS y ingreses la información de la tarjeta de crédito.
 
-Deberías ver un interfaz con una barra lateral, una ventana principal grande con texto y una ventana pequeña abajo del todo parecida a esto:
+1. Instala Cloud 9 desde la [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+2. Valla a [c9.io](https://c9.io) y haz clic en *Get started with AWS Cloud9*
+3. Regístrate en una cuenta AWS (requiere información de tarjeta de crédito, pero puedes usar gratis)
+4. En el panel de control AWS, introduzca *Cloud9* en la barra de búsqueda y haga clic en él
+5. En el panel de control de la Cloud 9, haga clic en *Create environment*
+6. Nómbralo *django-girls*
+7. Mientras configura los ajustes, seleccione *Create a new instance for environment (EC2)* para "Environment Type" y seleccione el valor *t2.micro* para "Instance type" (debería decir "Free-tier eligible."). La configuración de ahorro de costes por defecto está bien y puede mantener los otros valores por defecto.
+8. Haz clic en *Next step*
+9. Haz clic en *Create environment*
+
+Ahora deberías ver una interfaz con una barra, una gran ventana principal con algún texto y, una ventana pequeña en la parte inferior que se vería así:
 
 {% filename %}bash{% endfilename %}
 
     yourusername:~/workspace $
     
 
-La parte inferior es tu *terminal*, donde escribirás las instrucciones para el ordenador que Cloud 9 te ha preparado. Puedes redimensionar la ventana para hacerla un poco más grande.
+El área de abajo es tu terminal. Puedes usar el terminal para enviar instrucciones al ordenador remoto en Cloud 9. Puedes redimensionar o maximizar la ventana para hacerla un poco mas grande.
 
 ### Entorno Virtual
 
-Un entorno virtual (también llamado virtualenv) es como una caja privada donde podemos guardar código útil para el proyecto en el que estamos trabajando. Lo usamos para guardar por separado los trozos de código de distintos proyectos, y que así, las cosas no se mezclen entre proyectos.
+Un entorno virtual (también llamado "virtualenv" o "vitual environment" en inglés) es un tipo de caja privada donde podemos introducir código para el proyecto en el cual estemos trabajando. Lo usamos para mantener separados los diferentes trozos de código de nuestros proyectos, de modo que no haya mezclas indeseadas entre los mismos.
 
-En la terminal de la parte inferior de Cloud 9, ejecuta lo siguiente:
-
-{% filename %}Cloud 9{% endfilename %}
-
-    sudo apt update
-    sudo apt install python3.6-venv
-    
-
-Si aun así, no te funciona, pide ayuda a tu mentor.
-
-A continuación, ejecuta:
+Ejecutar:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -60,16 +58,16 @@ A continuación, ejecuta:
     pip install django~={{ book.django_version }}
     
 
-(fíjate que en la última línea hemos usado una tilde seguida de un signo de igual: ~=).
+(nota que en la ultima linea usamos una virgulilla (~) seguido de un signo igual `~=`).
 
 ### GitHub
 
 Hazte una cuenta de [GitHub](https://github.com).
 
-### Python Anywhere
+### PythonAnywhere
 
-El tutorial de Django Girls tiene una sección que se llama "Despliegue", que es el proceso de coger el código de tu nueva aplicación web y ponerlo en un ordenador públicamente accesible (un servidor) para que todo el mundo pueda ver tu trabajo.
+El tutorial de Django Girls incluye una sección en lo que se conoce como Despliegue, lo cual se refiere al proceso de tomar el código que da vida a tu nueva aplicación web y moverlo a un ordenador de acceso publico (llamado servidor) para que otras personas puedan ver tu trabajo.
 
-Esta parte "chirría" un poco cuando haces el tutorial en un Chromebook, porque que ya estamos usando un ordenador que ya está en Internet (en lugar de un ordenador local como un portátil). Sin embargo, aún tiene sentido, si pensamos que nuestro espacio de trabajo en Cloud9 es un lugar para nuestro trabajo "en progreso" y PythonAnywhere es el lugar donde enseñar nuestro sitio web más terminado.
+Esta parte del tutorial es algo extraña usando un Chromebook, pues ya estamos usando un computador conectado a Internet (contrario a, por ejemplo, una laptop). Sin embargo, aún es útil, ya que podemos pensar que nuestro espacio de trabajo en Cloud 9 como un repositorio para nuestro trabajo "en progreso" y Python Anywhere como un lugar donde mostrar nuestro trabajo más completo.
 
-Así que créate una cuenta de PythonAnywhere en [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Así que, registra una cuenta en Python Anywhere [www.pythonanywhere.com](https://www.pythonanywhere.com).

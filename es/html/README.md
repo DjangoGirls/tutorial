@@ -203,14 +203,14 @@ Una vez hecho esto, subimos (push) los cambios a Github:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
+    $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-(Recuerda sustituir `<your-pythonanywhere-username>` por tu nombre de usuario real en PythonAnywhere sin los < >).
+Tú necesitarás sustituir `<your-pythonanywhere-domain>` con tu actual nombre de subdominio PythonAnywhere, sin los paréntesis angulares o corchetes. Tu nombre de subdominio es normalmente tu nombre de usuario PythonAnywhere, pero en algunos casos ésto puede ser un poco diferente (tal como si tu nombre de usuario contiene letras mayúsculas). Así si éste comando no funciona, usa el comando `ls`(listar archivos) para encontrar tu actual subdominio/nombre-carpeta, y muévete allí con `cd `.
 
-Y mira como se descarga tu código. Si quieres comprobar que efectivamente ha llegado bien, puedes ir a la **página "Files"** y ver tu código en PythonAnywhere (puedes ir a otras páginas de PythonAnywhere desde el botón de la esquina superior derecha de la página de la consola).
+Ahora mira cómo se descarga tu código. Si quieres comprobar que efectivamente ha llegado bien, puedes ir a la **página "Files"** y ver tu código en PythonAnywhere (puedes ir a otras páginas de PythonAnywhere desde el botón de la esquina superior derecha de la página de la consola).
 
 * Finalmente, ve a la [página "Web"](https://www.pythonanywhere.com/web_app_setup/) y pulsa **Reload** en tu aplicación web.
 
