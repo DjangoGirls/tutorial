@@ -15,7 +15,7 @@ Ja! Es gibt *sehr* viele Online-Ressourcen zum Erlernen aller möglichen Program
 #### Django
 
 - Unser anderes Buch, [Django Girls Tutorial: Erweiterungen](https://tutorial-extensions.djangogirls.org/)
-- [Das offizielle Django-Tutorial](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
+- [Das offizielle Django-Tutorial](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
 - [Video-Lektionen "Getting Started With Django"](http://www.gettingstartedwithdjango.com/)
 
 #### HTML, CSS und JavaScript
