@@ -18,7 +18,7 @@ Ahora deberías ver una interfaz con una barra y botones en la izquierda. Haz cl
     $
     
 
-La terminal en el IDE en la nube PaizaCloud, está preparada para ejecutar tus instrucciones. Puedes redimensionar o maximar la ventana para hacerla un poco mas grande.
+La terminal en el IDE en la nube PaizaCloud, está preparada para ejecutar tus instrucciones. Puedes redimensionar o maximizar la ventana para hacerla un poco más grande.
 
 #### AWS Cloud9
 
@@ -41,7 +41,7 @@ Ahora deberías ver una interfaz con una barra, una gran ventana principal con a
     yourusername:~/workspace $
     
 
-El área de abajo es tu terminal. Puedes usar el terminal para enviar instrucciones al ordenador remoto en Cloud 9. Puedes redimensionar o maximizar la ventana para hacerla un poco mas grande.
+El área de abajo es tu terminal. Puedes usar el terminal para enviar instrucciones al ordenador remoto en Cloud 9. Puedes redimensionar o maximizar la ventana para hacerla un poco más grande.
 
 ### Entorno Virtual
 
@@ -58,7 +58,7 @@ Ejecutar:
     pip install django~={{ book.django_version }}
     
 
-(nota que en la ultima linea usamos una virgulilla (~) seguido de un signo igual `~=`).
+(nota que en la última linea usamos una virgulilla (~) seguido de un signo igual `~=`).
 
 ### GitHub
 
