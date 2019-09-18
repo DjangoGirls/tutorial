@@ -54,7 +54,7 @@ En Windows debes ejecutar el siguiente comando. **(No olvides incluir el punto `
     └───requirements.txt
     
 
-> **Nota**: en tu estructura de directorios, tambièn veràs el directorio `venv` que creamos anteriormente.
+> **Nota**: en tu estructura de directorios, también verás el directorio `venv` que creamos anteriormente.
 
 `manage.py` es un script que ayuda con la administración del sitio. Con él podremos iniciar un servidor web en nuestro ordenador sin necesidad de instalar nada más, entre otras cosas.
 
@@ -68,7 +68,7 @@ Por ahora vamos a ignorar el resto de archivos porque no los vamos a cambiar. ¡
 
 Vamos a hacer algunos cambios en `mysite/settings.py`. Abre el archivo usando el editor de código que has instalado anteriormente.
 
-**Nota**: Ten en cuenta que `settings.py` es un archivo normal, como cualquier otro. Puedes abrirlo con el editor de texto, usando "file -> open" en el menu de acciones. Esto te deberìa llevar a la tìpica ventana donde puedes buscar el archivo `settings.py` y seleccionarlo. Como alternativa, puedes abrir el archivo haciendo click derecho en la carpeta djangogirls en tu escritorio. Luego, selecciona tu editor de texto en la lista. Elegir el editor es importante puesto que puede que tengas otros programas que pueden abrir el archivo pero que no te dejaran editarlo.
+**Nota**: Ten en cuenta que `settings.py` es un archivo normal, como cualquier otro. Puedes abrirlo con el editor de texto, usando "file -> open" en el menu de acciones. Esto te debería llevar a la típica ventana donde puedes buscar el archivo `settings.py` y seleccionarlo. Como alternativa, puedes abrir el archivo haciendo click derecho en la carpeta djangogirls en tu escritorio. Luego, selecciona tu editor de texto en la lista. Elegir el editor es importante puesto que puede que tengas otros programas que pueden abrir el archivo pero que no te dejaran editarlo.
 
 Sería bueno tener el horario correcto en nuestro sitio web. Ve a [lista de Wikipedia de las zonas horarias](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) y copia tu zona horaria (TZ) (e.g. `Europa/Berlín`).
 
@@ -99,7 +99,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
-Cuando `DEBUG` es `True` y `ALLOWED_HOST` esta vacìo, el host es validado contra `['localhost', '127,0.0.1', '[::1]']`. Una vez despleguemos nuestra aplicaciòn este no sera el mismo que nuestro nombre de host en PythonAnywhere asi que cambiaremos la siguiente opciòn:
+Cuando `DEBUG` es `True` y `ALLOWED_HOST` esta vacío, el host es validado contra `['localhost', '127,0.0.1', '[::1]']`. Una vez despleguemos nuestra aplicación este no sera el mismo que nuestro nombre de host en PythonAnywhere asi que cambiaremos la siguiente opción:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -199,7 +199,7 @@ Si estás usando una Chromebook y Cloud9, haga clic en la URL de la ventana emer
 
 Tenga en cuenta que una ventana de comandos sólo puede ejecutar una cosa a la vez, y la ventana de comandos que abrió antes está ejecutando el servidor web. Mientras el servidor web esté corriendo y esperando solicitudes adicionales, la terminal aceptará nuevo texto pero no ejecutará nuevos comandos.
 
-> Miramos como funcionan los servidores web en el capìtulo **Còmo funciona el internet**.
+> Miramos como funcionan los servidores web en el capítulo **Cómo funciona el internet**.
 
 Para escribir comandos adicionales mientras el servidor web está corriendo, abra una nueva ventana de terminal y active su virtualenv -- para revisar las instrucciones sobre cómo abrir una segunda ventana de terminal, vea [Introducción a la línea de comandos](../intro_to_command_line/README.md). Para parar el servidor web, ve a la ventana donde se esté ejecutando y pulsa CTRL+C, las teclas Control y C a la vez ( en Windows puede que tengas que pulsar Ctrl+Break).
 
