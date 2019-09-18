@@ -14,12 +14,12 @@ Luego, el `Gato` tiene algunas acciones como: `ronronear`, `arañar` o `alimenta
 
     Gato
     ---------
-    color 
-    edad 
-    humor 
-    dueño 
-    ronronear() 
-    rasguñar() 
+    color
+    edad
+    humor
+    dueño
+    ronronear()
+    rasguñar()
     alimentarse(comida_de_gato)
     
     
