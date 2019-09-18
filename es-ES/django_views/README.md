@@ -20,7 +20,7 @@ from django.shortcuts import render
 
 No hay demasiadas cosas aquí todavía.
 
-Recuerda que las lineas que comienzan con `#` son comentarios - significa que Python no las ejecutarà.
+Recuerda que las lineas que comienzan con `#` son comentarios - significa que Python no las ejecutará.
 
 Creemos una *vista (view)* como sugiere el comentario. Añade la siguiente mini-vista por debajo:
 
