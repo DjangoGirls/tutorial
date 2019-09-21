@@ -8,15 +8,15 @@
 
 Добре дошли в учебника Django за момичета! Щастливи сме да те видим тук :) В това ръководство ще отидем на приключение зад кулисите на веб технологии, предлагайки да видиш всички малки и големи части, които трябва да се съберат за да направят веб работа такава, каквато ние знаем.
 
-As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
+Както с всички непознати неща, това може да бъде малко трудно. Но не се вълнувай, вече имаш кураж да бъдеш тука, всичко ще бъде наред :)
 
-## Introduction
+## Въведение
 
-Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
+Някога чувстваше ли че светът е все повече и повече технологичен, а ти оставаш в сянка? Мислеше как да създадеш уеб-сайт, но никога нямаше достатъчно мотивация да започнеш? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
 
-Well, we have good news for you! Programming is not as hard as it seems and we want to show you how fun it can be.
+Имаме добра новина за теб! Програмиране не е толкова трудно, както изглежда, и ние искаме да ти покажем колкова лесно може да бъде.
 
-This tutorial will not magically turn you into a programmer. If you want to be good at it, you need months or even years of learning and practice. But we want to show you that programming or creating websites is not as complicated as it seems. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.
+Това ръководство няма магически да те превърне в програмист. Ако искаш да си добра в това, трябват ти месеци или даже годиини учене и упражняване. Но ние искаме да покажем че програмиране или създаване на уеб-сайтове не е толкова сложно, колкото изглежда. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.
 
 We hope that we'll be able to make you love technology as much as we do!
 
