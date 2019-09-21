@@ -16,23 +16,23 @@
 
 Имаме добра новина за теб! Програмиране не е толкова трудно, както изглежда, и ние искаме да ти покажем колкова лесно може да бъде.
 
-Това ръководство няма магически да те превърне в програмист. Ако искаш да си добра в това, трябват ти месеци или даже годиини учене и упражняване. Но ние искаме да покажем че програмиране или създаване на уеб-сайтове не е толкова сложно, колкото изглежда. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.
+Това ръководство няма магически да те превърне в програмист. Ако искаш да си добра в това, трябват ти месеци или даже годиини учене и упражняване. Но ние искаме да покажем че програмиране или създаване на уеб-сайтове не е толкова сложно, колкото изглежда. Ще се постараем да обясним всички детайли колкото може най-добре, за да не се чувстваш объркана от технология.
 
-We hope that we'll be able to make you love technology as much as we do!
+Надяваме се да те накараме да обичаш технология толкова, колкото ние я обичаме!
 
-## What will you learn during the tutorial?
+## Какво ще научиш от това ръководство?
 
-Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
+След като приключиш с ръководството, ще имаш малко работещо уеб-приложение: твоя собствен блог. Ще ти покажем как да го пуснеш в мрежата, така че другите да ти видят работата!
 
-It will (more or less) look like this:
+Това ще изглежда (горе-долу) ето така:
 
 ![Figure 0.1](images/application.png)
 
-> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
+> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Помолихме нашите инструктори и миналите участници да са там от време на време и да помагат на другите с ръководството! Не се страхувай да задаваш въпроси тука!
 
-OK, [let's start at the beginning…](./how_the_internet_works/README.md)
+Добре, [хайде да започнем от начало...](./how_the_internet_works/README.md)
 
-## Following the tutorial at home
+## Следвайки ръководството вкъщи
 
 It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
 
