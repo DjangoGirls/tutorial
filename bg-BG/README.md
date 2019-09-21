@@ -34,9 +34,9 @@
 
 ## Следвайки ръководството вкъщи
 
-It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+Изумително е да се присъединиш към Django Girls работилница, но ние разбираме, че не винаги е възможно да участваш в такава. Затова ние те насърчаваме да пробваш да следиш ръководството вкъщи. За читатели у домовете си, понастоящем приготвяме видеа, които ще улеснят следването на ръководството само по себе си. Работата все ще е в прогрес, но все повече и повече неща скоро ще бъдат покрити на [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube канал.
 
-In every chapter already covered, there is a link that points to the correct video.
+Във всяка вече покрита глава има линк, препращащ към съответно видео.
 
 ## About and contributing
 
