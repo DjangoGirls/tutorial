@@ -37,6 +37,7 @@ git은 이 디렉터리에 모든 파일과 폴더들의 변경 점을 추적할
 ```
 *.pyc
 *~
+.vscode
 __pycache__
 myvenv
 db.sqlite3

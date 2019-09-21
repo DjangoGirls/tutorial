@@ -41,6 +41,7 @@ A Git ezután nyomon követ minden változást a fájlokban és mappákban ezen 
 ```
 *.pyc
 *~
+.vscode
 __pycache__
 myvenv
 db.sqlite3
