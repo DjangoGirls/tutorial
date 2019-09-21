@@ -2,7 +2,7 @@
 
 * [Въведение](README.md)
 * [Инсталиране](installation/README.md) 
-  * [Command Line](installation/README.md#brief-intro-to-the-command-line)
+  * [Командна строка](installation/README.md#brief-intro-to-the-command-line)
   * [Python](installation/README.md#install-python)
   * [Code Editor](installation/README.md#install-a-code-editor)
   * [Virtual Environment](installation/README.md#virtual-environment)
