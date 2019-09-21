@@ -1,3 +1,3 @@
-# code editor
+# редактор на код
 
-Code editor is an application that allows you to save your code so you will be able to get back to it later. You can learn where to get one from the [Code editor chapter](./code_editor/README.md)
+Редакторът на код е приложение, което ти позволява да съхраняваш своя код за да можеш да продължиш с него по-късно. Можеш да научиш откъде да свалиш един от [глава Редактор на код](./code_editor/README.md)
