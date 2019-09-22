@@ -69,6 +69,6 @@ Saat ini Cloud 9 mengharuskan Anda untuk mendaftar dengan AWS dan memasukkan inf
     
     Tutorial Django Girls menyertakan bagian tentang apa yang disebut Deployment, yaitu proses mengambil kode yang memberi kekuatan pada aplikasi web baru Anda dan memindahkannya ke komputer yang dapat diakses publik (disebut server) sehingga orang lain dapat melihat pekerjaan Anda.
     
-    This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+    Bagian ini sedikit aneh ketika melakukan tutorial pada perangkat Chromebook karena kita sudah menggunakan komputer yang ada di Internet (sebagai lawan, katakanlah, sebuah laptop). Namun, tidak apa, karena kita dapat menggunakan Cloud 9 sebagai tempat untuk melakukan pekerjaan kita dan Python Anywhere sebagai tempat untuk memajang hal-hal yang sudah kita kerjakan.
     
-    Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+    Demikian, buatlah akun Python Anywhere di [www.pythonanywhere.com](https://www.pythonanywhere.com).
