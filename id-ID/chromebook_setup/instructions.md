@@ -8,7 +8,7 @@ Cloud IDE merupakan sebuah layanan berupa editor kode dan diakses lewat komputer
 
 1. Buka situs [PaizaCloud Cloud IDE](https://paiza.cloud/)
 2. Buatlah akun baru
-3. Click *New Server* and choose the Django app
+3. Klik *New Server* dan pilih Django app
 4. Klik tombol Terminal (yang terletak di samping kiri)
 
 Lalu amati sidebar, terdapat tombol di sebelah kiri. Klik tombol "Terminal" untuk membuka terminal dengan prompt seperti ini:
@@ -27,8 +27,8 @@ Currently Cloud 9 requires you to sign up with AWS and enter credit card informa
 1. Pasang Cloud 9 dari Chrome web store</ 0></li> 
     
     - Go to [c9.io](https://c9.io) and click *Get started with AWS Cloud9*
-    - Sign up for an AWS account (requires credit card information, but you can use it for free)
-    - In the AWS Dashboard, enter *Cloud9* in the search bar and click it
+    - Daftar untuk akun AWS (dibutuhkan informasi kartu kredit, tetapi kamu dapat menggunakannya secara gratis)
+    - Pada AWS Dashboard, masuk *Cloud9* pada kotak pencarian dan klik
     - In the Cloud 9 dashboard, click *Create environment*
     - Name it *django-girls*
     - While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
@@ -48,7 +48,7 @@ Currently Cloud 9 requires you to sign up with AWS and enter credit card informa
     
     A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
     
-    Run:
+    Jalankan:
     
     {% filename %}Cloud 9{% endfilename %}
     
@@ -59,15 +59,15 @@ Currently Cloud 9 requires you to sign up with AWS and enter credit card informa
         pip install django~={{ book.django_version }}
         
     
-    (note that on the last line we use a tilde followed by an equal sign: `~=`).
+    (perhatikan bahwa pada baris terakhir kita menggunakan tilde diikuti dengan tanda sama: `~ =`).
     
     ### GitHub
     
-    Make a [GitHub](https://github.com) account.
+    Buat akun [GitHub](https://github.com).
     
     ### PythonAnywhere
     
-    The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+    Tutorial Django Girls menyertakan bagian tentang apa yang disebut Deployment, yaitu proses mengambil kode yang memberi kekuatan pada aplikasi web baru Anda dan memindahkannya ke komputer yang dapat diakses publik (disebut server) sehingga orang lain dapat melihat pekerjaan Anda.
     
     This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
     
