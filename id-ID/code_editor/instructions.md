@@ -1,10 +1,10 @@
 Ada banyak teks editor yang tersedia dan kita dapat memilih salah satu yang kita suka. Sebagian besar programmer Python menggunakan IDE (Integrated Development Environment) yang rumit namun memiliki banyak fitur, seperti PyCharm. Aplikasi seperti PyCharm menurut kami kurang sesuai untuk digunakan oleh pemula. Oleh sebab itu kami menyarankan aplikasi yang lebih sederhana namun memiliki fitur tak kalah lengkap.
 
-Saran kami ada di bawah, tapi jangan ragu untuk bertanya pada pelatih apa preferensi mereka - akan lebih mudah mendapatkan bantuan dari mereka.
+Berikut ini beberapa aplikasi yang kami sarankan untuk dapat pembaca pakai. Jangan sungkan untuk bertanya kepada mentor anda mengenai pilihan mereka - biasanya mereka akan dengan senang hati membantu.
 
 ## Visual Studio Code
 
-Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+Visual Studio Code adalah editor kode, yang dikembangkan oleh Microsoft untuk sistem operasi Windows, Linux dan macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
 
 [Download disini](https://code.visualstudio.com/download)
 
