@@ -22,16 +22,16 @@ Terminal PaizaCloud Cloud IDE, bisa Anda atur ulang ukuran jendela terminalnya d
 
 #### AWS Cloud9
 
-Currently Cloud 9 requires you to sign up with AWS and enter credit card information.
+Saat ini Cloud 9 mengharuskan Anda untuk mendaftar dengan AWS dan memasukkan informasi kartu kredit.
 
 1. Pasang Cloud 9 dari Chrome web store</ 0></li> 
     
-    - Go to [c9.io](https://c9.io) and click *Get started with AWS Cloud9*
+    - Pergi ke [c9.io](https://c9.io) dan klik *Get started with AWS Cloud9*
     - Daftar untuk akun AWS (dibutuhkan informasi kartu kredit, tetapi kamu dapat menggunakannya secara gratis)
     - Pada AWS Dashboard, masuk *Cloud9* pada kotak pencarian dan klik
-    - In the Cloud 9 dashboard, click *Create environment*
-    - Name it *django-girls*
-    - While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
+    - Pada Cloud 9 dashboard, klik *Create environment*
+    - Namakan *django-girls*
+    - Saat di configuring settings, pilih *Create a new instance for environment (EC2)* untuk "Environment Type" dan *t2.micro* "Instance type" (Tulisan yang seharusnya muncul "Free-tier eligible."). Pengaturan default cost-saving selesai dan Anda dapat menetapkan yang lain secara default.
     - Click *Next step*
     - Click *Create environment*</ol> 
     
