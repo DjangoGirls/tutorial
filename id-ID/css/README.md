@@ -25,17 +25,17 @@ Buka file `.html` Anda di editor kode Anda dan tambahkan berikut ini ke bagian `
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-Kode di atas tidak akan ditambahkan ke dalam setiap file dalam proyek Anda. Ini hanyalah sebagai rujukan ke sebuah file yang ada di internet. Jadi, kembali lagi, buka situs web Anda dan *refresh* (muat ulang) halamanya. Inilah hasilnya!
+Ini tidak akan menambahkan file apa pun ke proyek Anda. Kode hanya merujuk ke file yang ada di Internet. Jadi buka dan *refresh* (muat ulang) situs web Anda. Inilah hasilnya!
 
 ![Gambar 14.1](images/bootstrap1.png)
 
 Terlihat lebih menarikkan!
 
-## File statis di Django
+## Static files di Django
 
-Akhirnya kita bisa lebih dekat dengan sesuatu yang dipanggil **static files** atau file statis. Statis file ini adalah semua hal yang berhubungan dengan CSS dan gambar. Ini berarti setiap pengguna atau mereka yang melakukan *request* akan disuguhkan tampilan yang sama.
+Akhirnya kita bisa lebih dekat dengan sesuatu yang dipanggil **static files** atau file statis. Statis file ini adalah semua hal yang berhubungan dengan CSS dan gambar. Kontennya tidak tergantung pada konteks permintaan, tetapi berlaku sama untuk semua pengguna.
 
-### Lokasi untuk menempatkan file statis di Django
+### Dimana menyimpan static files untuk Django
 
 Django sudah mengetahui di mana menemukan file statis ini. Sekarang kita perlu untuk menambahkan beberapa file statis ke dalam aplikasi kita, direktori `blog`.
 
