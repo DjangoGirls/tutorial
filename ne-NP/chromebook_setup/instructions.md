@@ -1,8 +1,8 @@
 यदि तपाईं क्रोमबुक प्रयोग गर्नुहुन्न भने सिधै [ यो भागमा ](http://tutorial.djangogirls.org/en/installation/#install-python) जान सक्नु हुन्छ । यदि क्रोमबुक प्रयोग गर्नुहुन्छ भने स्थापना अनुभव (installation experience) अलिक फरक हुन्छ। तपाइंले बाँकि स्थापना प्रक्रियालाई ध्यान नदिदा हुन्छ।
 
-### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
+### क्लाउड आईडीई (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud IDE is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. For the duration of the tutorial, cloud IDE will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
+क्लाउड आईडीई एक उपकरण हो जसले तपाईंलाई कोड सम्पादकाका साथै इन्टरनेट चल्दै गरेको कम्प्युटरमा पहुँच दिन्छ। चल्दै छ इन्टरनेटमा जहाँ तपाईं सफ्टवेयर स्थापना, लेख्न, र चलाउन सक्नुहुन्छ। तपाईं यस कम्प्यूटरमा सफ्टवेयर स्थापना गर्न, लेख्न, र चलाउन सक्नुहुन्छ । For the duration of the tutorial, cloud IDE will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
 
 #### PaizaCloud Cloud IDE
 
