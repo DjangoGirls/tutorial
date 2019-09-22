@@ -32,21 +32,21 @@ Saat ini Cloud 9 mengharuskan Anda untuk mendaftar dengan AWS dan memasukkan inf
     - Pada Cloud 9 dashboard, klik *Create environment*
     - Namakan *django-girls*
     - Saat di configuring settings, pilih *Create a new instance for environment (EC2)* untuk "Environment Type" dan *t2.micro* "Instance type" (Tulisan yang seharusnya muncul "Free-tier eligible."). Pengaturan default cost-saving selesai dan Anda dapat menetapkan yang lain secara default.
-    - Click *Next step*
-    - Click *Create environment*</ol> 
+    - Klik *Next step*
+    - Klik *Create environment*</ol> 
     
-    Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+    Sekarang Anda harus melihat sebuah antarmuka dengan sidebar, jendela utama yang besar dengan beberapa teks, dan sebuah jendela kecil di bagian bawah yang terlihat seperti ini:
     
     {% filename %}bash{% endfilename %}
     
         yourusername:~/workspace $
         
     
-    This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+    Area bagian bawah adalah terminal Anda. Anda bisa menggunakannya untuk mengirimkan perintah kepada komputer remote Cloud9. Anda bisa menyesuaikan ukuran jendela untuk membuatnya sedikit lebih besar.
     
     ### Lingkungan Virtual
     
-    A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+    Lingkungan virtual (disebut juga virtualenv) seperti sebuah kotak khusus yang bisa kita gunakan untuk menulis kode ke dalam proyek yang sedang kita kerjakan. Kita menggunakannya untuk menyimpan berbagai kode yang kita inginkan untuk berbagai proyek secara terpisah, sehingga hal-hal lain yang tidak ada hubungannya dengan proyek tidak bercampur.
     
     Jalankan:
     
