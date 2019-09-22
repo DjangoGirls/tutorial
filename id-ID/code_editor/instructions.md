@@ -4,25 +4,25 @@ Berikut ini beberapa aplikasi yang kami sarankan untuk dapat pembaca pakai. Jang
 
 ## Visual Studio Code
 
-Visual Studio Code adalah editor kode, yang dikembangkan oleh Microsoft untuk sistem operasi Windows, Linux dan macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+Visual Studio Code adalah editor kode, yang dikembangkan oleh Microsoft untuk sistem operasi Windows, Linux dan macOS. Yang mendukung untuk debugging, kontrol Git didalamnya, penyorotan sintaksis, penyelesaian kode cerdas, snippet, dan refaktorisasi kode.
 
 [Download disini](https://code.visualstudio.com/download)
 
 ## Gedit
 
-Gedit is an open-source, free editor, available for all operating systems.
+Gedit adalah sebuah aplikasi teks editor yang bersifat sumber terbuka (open-source), gratis, dan tersedia untuk semua sistem operasi.
 
 [Download disini](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
+Sumblime Text merupakan editor yang sangat populer dengan fitur gratis yang berjangka waktu dan tersedia untuk semua sistem operasi.
 
 [Download disini](https://www.sublimetext.com/3)
 
 ## Atom
 
-Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
+Atom merupakan editor populer juga. Gratis, open-source dan tersedia untuk Windows, OS X dan Linux. Atom dikembangkan oleh [GitHub](https://github.com/).
 
 [Download it here](https://atom.io/)
 
