@@ -1,10 +1,10 @@
 # CSS - mempercantik!
 
-Blog yang kita buat masih terlihat monoton, bukan? Nah, sekarang waktunya untuk mempercantik tampilannya! Kita akan menggunakan CSS untuk itu.
+Blog kita masih terlihat jelek, kan? Saatnya mempercantiknya! Kami akan menggunakan CSS untuk itu.
 
 ## Apa itu CSS?
 
-Cascading Style Sheets (CSS) adalah bahasa yang digunakan untuk mempresentasikan tampilan dan format situs web yang ditulis dalam bahasa markup (seperti HTML). Gunakan itu sebagai mekap untuk halaman web kita. ;)
+Cascading Style Sheets (CSS) adalah bahasa yang menjelaskan tampilan dan format situs web. Seperti halnya HTML, yang merupakan bahasa markup. CSS adalah sesuatu seperti "make-up" dari situs web Kita. ;)
 
 Tapi kita tidak ingin melakukan itu (mempercantik) dari nol, bukan? Sekali lagi, kita akan menggunakan sesuatu yang telah pemrogram buat dan itu bisa digunakan secara gratis. Dan itu bisa mempersingkat waktu kita untuk membuat situs web, tepatnya blog.
 
