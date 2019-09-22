@@ -34,4 +34,4 @@ Alasan pertama adalah kode harus berbentuk **plain text** (teks biasa), Masalah 
 
 Alasan kedua adalah bahwa semua editor kode memiliki spesialisasi dalam penulisan kode, sehingga mereka memiliki fungsi yang berguna seperti menandai kode dengan warna, atau secara otomatis menutup tanda kutip.
 
-We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
+Kita lihat semuanya saat Anda sudah melakukannya. Nantinya, Anda akan berfikir bahwa kode editor lama yang sering anda gunakan akan menjadi salah satu kode edit yang akan menjadi favorit Anda. :)
