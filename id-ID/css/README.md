@@ -37,11 +37,16 @@ Akhirnya kita bisa lebih dekat dengan sesuatu yang dipanggil **static files** at
 
 ### Dimana menyimpan static files untuk Django
 
-Django sudah mengetahui di mana menemukan file statis ini. Sekarang kita perlu untuk menambahkan beberapa file statis ke dalam aplikasi kita, direktori `blog`.
+Django sudah tahu di mana menemukan file statis untuk aplikasi "admin" bawaan. Sekarang kita hanya perlu menambahkan beberapa file statis untuk aplikasi kita sendiri, di dalam direktori `blog`.
 
 Lakukan dengan cara membuat folder bernama `static` di dalam direktori blog:
 
-    djangogirls ├── blog │ ├── migrasi │ ├── static │   └── template └── mysite
+    djangogirls
+    ├── blog
+    │   ├── migrations
+    │   ├── static
+    │   └── templates
+    └── mysite
     
 
 Django secara otomatis akan menemukan folder yang disebut "static" di dalam folder aplikasi Anda. Dan kemudian file ini bisa digunakan isinya sebagai file statis.
@@ -57,7 +62,7 @@ Sekarang, mari kita buat file CSS, untuk mempercantik halaman web Anda. Buat seb
                    └─── blog.css
     
 
-Saatnya menulis CSS! Buka file `blog/static/css/blog.css` kedalam teks editor mu.
+Saatnya menulis CSS! Buka file `blog/static/css/blog.css` di editor kode Anda.
 
 Kita tidak akan terlalu mendalam mempelajari tentang CSS di sini. Bila ingin belajar lebih mendalam terkait CSS ini Anda bisa kunjungi [halaman ini](https://www.w3schools.com/css/).
 
