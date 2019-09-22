@@ -297,7 +297,7 @@ Simpan dan *refresh* (segarkan) halaman Anda.
 
 ![Gambar 14.4](images/final.png)
 
-Woo hoo! Terlihat mengagumkan, kan? Lihatlah kode yang baru kita tempel untuk menemukan tempat di mana kita menambahkan kelas dalam HTML dan menggunakannya di CSS. Di mana Anda akan membuat perubahan jika Anda ingin tanggal menjadi turquoise?
+Woo hoo! Terlihat mengagumkan, kan? Lihatlah kode yang baru kita tempel untuk menemukan tempat di mana kita menambahkan kelas dalam HTML dan menggunakannya di CSS. Dimana Anda akan membuat perubahan, jika Anda ingin merubah warna tanggal menjadi turquoise?
 
 Jangan takut untuk bermain-main dengan file CSS dan mencoba mengubah beberapa hal. Bermain dengan CSS dapat membantu Anda memahami hal-hal yang lain. Jangan khawatir jika sesuatu rusak, Anda selalu dapat balik ke masa lalu dengan cara *undo*!
 
