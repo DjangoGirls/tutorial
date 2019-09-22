@@ -1,4 +1,4 @@
-# CSS - mempercantik tampilan!
+# CSS - mempercantik!
 
 Blog yang kita buat masih terlihat monoton, bukan? Nah, sekarang waktunya untuk mempercantik tampilannya! Kita akan menggunakan CSS untuk itu.
 
