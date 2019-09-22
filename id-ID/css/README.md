@@ -192,20 +192,21 @@ Silakan beri atribut class ke beberapa bagian HTML. Tambahkan sebuah kelas yang 
 
 ```
 
-Dan sekarang tambahkan sebuah kelas ` pos </ 0> ke <code> div </ 0> berisi sebuah posting blog.</p>
+Dan sekarang tambahkan sebuah kelas `post` ke `div` Anda yang berisi posting blog.
 
-<p>{% filename%} blog / templates / blog / post_list.html {% endfilename%}</p>
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
-<pre><code class="html"><div class="post">
+```html
+<div class="post">
     <p>published: {{ post.published_date }}</p>
     <h2><a href="">{{ post.title }}</a></h2>
     <p>{{ post.text|linebreaksbr }}</p>
 </div>
-`</pre> 
+```
 
 Kami sekarang akan menambahkan blok deklarasi ke penyeleksi yang berbeda. Pemilih dimulai dengan ` . </ 0> berhubungan dengan kelas. Ada banyak tutorial dan penjelasan bagus tentang CSS di Web yang dapat membantu Anda memahami kode berikut. Untuk saat ini, cukup copy dan paste ke file <code>blog/static/css/blog.css` Anda:
 
-{% filename%} blog / static / css / blog.css {% endfilename%}
+{% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
 .page-header {
@@ -256,7 +257,7 @@ h1, h2, h3, h4 {
 }
 ```
 
-Kemudian hubungilah kode HTML yang menampilkan tulisan dengan deklarasi kelas. Ganti ini:
+Kode HTML yang bertanggung jawab untuk menampilkan posting blog harus diperluas oleh kelas. Ganti kode berikut:
 
 {% filename%} blog / templates / blog / post_list.html {% endfilename%}
 
@@ -270,11 +271,12 @@ Kemudian hubungilah kode HTML yang menampilkan tulisan dengan deklarasi kelas. G
 {% endfor %}
 ```
 
-di ` blog / templates / blog / post_list.html </ 0> dengan ini:</p>
+di `blog/templates/blog/post_list.html` dengan ini:
 
-<p>{% filename%} blog / templates / blog / post_list.html {% endfilename%}</p>
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
-<pre><code class="html"><div class="content container">
+```html
+<div class="content container">
     <div class="row">
         <div class="col-md-8">
             {% for post in posts %}
@@ -289,7 +291,7 @@ di ` blog / templates / blog / post_list.html </ 0> dengan ini:</p>
         </div>
     </div>
 </div>
-`</pre> 
+```
 
 Simpan dan *refresh* (segarkan) halaman Anda.
 
@@ -297,7 +299,7 @@ Simpan dan *refresh* (segarkan) halaman Anda.
 
 Woo hoo! Terlihat mengagumkan, kan? Lihatlah kode yang baru kita tempel untuk menemukan tempat di mana kita menambahkan kelas dalam HTML dan menggunakannya di CSS. Di mana Anda akan membuat perubahan jika Anda ingin tanggal menjadi turquoise?
 
-Jangan takut untuk bermain-main dengan file CSS dan mencoba mengubah beberapa hal. Bermain dengan CSS dapat membantu Anda memahami hal-hal yang lain. Jika Anda memecahkan sesuatu, jangan khawatir - Anda selalu bisa membatalkannya!
+Jangan takut untuk bermain-main dengan file CSS dan mencoba mengubah beberapa hal. Bermain dengan CSS dapat membantu Anda memahami hal-hal yang lain. Jangan khawatir jika sesuatu rusak, Anda selalu dapat balik ke masa lalu dengan cara *undo*!
 
 Kami sangat merekomendasikan untuk mengambil kursus online gratis di [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). Dia akan membantu Anda membuat situs web Anda lebih cantik dengan CSS.
 
