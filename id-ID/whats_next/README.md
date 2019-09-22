@@ -1,12 +1,12 @@
 # Apa berikutnya?
 
-Selamatkan dirimu! ** Anda benar-benar hebat </ 0> . Kami bangga <3</p> 
+Beri selamat kepada anda sendiri! **Kamu sangat hebat!**. Kami bangga! <3
 
 ### Apa yang harus dilakukan sekarang?
 
 Istirahat sejenak dan santai! Anda baru saja melakukan hal besar.
 
-Setelah itu, pastikan untuk mengikuti Django Girls di  Facebook </ 0> atau  Twitter </ 1> untuk tetap mengikuti perkembangan.</p> 
+Follow Django Girls di [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) jangan sampai ketinggalan.
 
 ### Dapatkah Anda merekomendasikan sumber daya lebih lanjut?
 
