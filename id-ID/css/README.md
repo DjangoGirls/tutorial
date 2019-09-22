@@ -1,6 +1,6 @@
 # CSS - mempercantik!
 
-Blog kita masih terlihat jelek, kan? Saatnya mempercantiknya! Kami akan menggunakan CSS untuk itu.
+Blog kita masih terlihat jelek, kan? Saatnya mempercantiknya! Kita akan menggunakan CSS untuk itu.
 
 ## Apa itu CSS?
 
@@ -203,7 +203,7 @@ Dan sekarang tambahkan sebuah kelas ` pos </ 0> ke <code> div </ 0> berisi sebua
 </div>
 `</pre> 
 
-Kami sekarang akan menambahkan blok deklarasi ke penyeleksi yang berbeda. Pemilih dimulai dengan ` . </ 0> berhubungan dengan kelas. Ada banyak tutorial dan penjelasan bagus tentang CSS di Web yang dapat membantu Anda memahami kode berikut. For now, copy and paste it into your <code>blog/static/css/blog.css` file:
+Kami sekarang akan menambahkan blok deklarasi ke penyeleksi yang berbeda. Pemilih dimulai dengan ` . </ 0> berhubungan dengan kelas. Ada banyak tutorial dan penjelasan bagus tentang CSS di Web yang dapat membantu Anda memahami kode berikut. Untuk saat ini, cukup copy dan paste ke file <code>blog/static/css/blog.css` Anda:
 
 {% filename%} blog / static / css / blog.css {% endfilename%}
 
@@ -291,14 +291,14 @@ di ` blog / templates / blog / post_list.html </ 0> dengan ini:</p>
 </div>
 `</pre> 
 
-Simpan file tersebut dan segarkan situs Anda.
+Simpan dan *refresh* (segarkan) halaman Anda.
 
 ![Gambar 14.4](images/final.png)
 
 Woo hoo! Terlihat mengagumkan, kan? Lihatlah kode yang baru kita tempel untuk menemukan tempat di mana kita menambahkan kelas dalam HTML dan menggunakannya di CSS. Di mana Anda akan membuat perubahan jika Anda ingin tanggal menjadi turquoise?
 
-Jangan takut untuk bermain-main dengan CSS ini sedikit dan mencoba untuk mengubah beberapa hal. Bermain dengan CSS dapat membantu Anda memahami hal-hal yang berbeda. Jika Anda memecahkan sesuatu, jangan khawatir - Anda selalu bisa membatalkannya!
+Jangan takut untuk bermain-main dengan file CSS dan mencoba mengubah beberapa hal. Bermain dengan CSS dapat membantu Anda memahami hal-hal yang lain. Jika Anda memecahkan sesuatu, jangan khawatir - Anda selalu bisa membatalkannya!
 
-Kami sangat merekomendasikan untuk mengambil online gratis ini  Codeacademy HTML & amp; Kursus CSS </ 0> . Ini dapat membantu Anda mempelajari semua tentang membuat situs web Anda lebih cantik dengan CSS.</p> 
+Kami sangat merekomendasikan untuk mengambil kursus online gratis di [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). Dia akan membantu Anda membuat situs web Anda lebih cantik dengan CSS.
 
 Siap untuk bab berikutnya ?! :)
