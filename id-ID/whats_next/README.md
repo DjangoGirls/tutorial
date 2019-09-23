@@ -8,26 +8,26 @@ Istirahat sejenak dan santai! Anda baru saja melakukan hal besar.
 
 Follow Django Girls di [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) jangan sampai ketinggalan.
 
-### Dapatkah Anda merekomendasikan sumber daya lebih lanjut?
+### Adakah rekomendasi belajar yang lainnya?
 
-Yes! There are a *lot* of resources online for learning all kinds of programming skills – it can be pretty daunting to work out where to go next, but we've got you covered. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
+Ya! Ada *sangat banyak* sumber daya online untuk mempelajari semua jenis keterampilan pemrograman - mungkin cukup menakutkan untuk mengetahui apa yang harus dilakukan selanjutnya, tetapi kami telah membantu Anda. Apa pun minat Anda sebelum Anda datang ke Django Girls, dan minat apa pun yang Anda kembangkan selama tutorial, berikut adalah beberapa sumber daya gratis (atau sumber daya dengan komponen gratis yang besar) yang dapat Anda gunakan untuk mencapai tempat yang Anda inginkan.
 
 #### Django
 
-- Our other book, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
-- [Django's official tutorial](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
-- [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
+- Buku Kami lainnya, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
+- [Tutorial resmi Django](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
+- [Memulai dengan pelajaran video Django](http://www.gettingstartedwithdjango.com/)
 
 #### HTML, CSS and JavaScript
 
-- [Codecademy's web development course](https://www.codecademy.com/learn/paths/web-development)
+- [Kursus pengembangan web Codecademy](https://www.codecademy.com/learn/paths/web-development)
 - [freeCodeCamp](https://www.freecodecamp.org/)
 
 #### Python
 
-- [Codecademy's Python course](https://www.codecademy.com/learn/learn-python)
-- [Google's Python course](https://developers.google.com/edu/python/)
-- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – the initial exercises are free
+- [Kursus Codecademy's Python](https://www.codecademy.com/learn/learn-python)
+- [Kursus Google's Python](https://developers.google.com/edu/python/)
+- Buku [Learn Python The Hard Way](http://learnpythonthehardway.org/book/) – latihan pertama gratis
 - [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
 - [edX](https://www.edx.org/course?search_query=python) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
 - [Coursera's Python specialization](https://www.coursera.org/specializations/python) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
