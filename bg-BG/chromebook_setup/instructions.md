@@ -27,12 +27,12 @@ Cloud IDE is a tool that gives you a code editor and access to a computer runnin
 1. Инсталирай Cloud 9 от [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
 2. Отиди на [c9.io](https://c9.io) и натисни *Get started with AWS Cloud9*
 3. Регистрирай се за AWS акаунт (изисква информация за кредитна карта, но можеш да го използваш безплатно)
-4. In the AWS Dashboard, enter *Cloud9* in the search bar and click it
-5. In the Cloud 9 dashboard, click *Create environment*
-6. Name it *django-girls*
-7. While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
-8. Click *Next step*
-9. Click *Create environment*
+4. В AWS Dashboard, напиши *Cloud9* в поисковата линия и я натисни
+5. В Cloud 9 табло, натисни *Create environment*
+6. Нареки го *django-girls*
+7. Конфигурирайки настройките, избери *Create a new instance for environment (EC2)* за "Environment Type" и *t2.micro* "Instance type" (трябва да пише "Free-tier eligible."). Нормалната намаляваща разходи настройка е добре, можеш и да оставиш други.
+8. Натисни *Next step*
+9. Натисни *Create environment*
 
 Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
 
@@ -43,11 +43,11 @@ Now you should see an interface with a sidebar, a big main window with some text
 
 This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
 
-### Virtual Environment
+### Виртуална среда
 
 A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
-Run:
+Пусни:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -62,7 +62,7 @@ Run:
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+Направи [GitHub](https://github.com) акаунт.
 
 ### PythonAnywhere
 
