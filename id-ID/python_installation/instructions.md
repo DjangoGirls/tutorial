@@ -2,7 +2,7 @@
 > 
 > Bagian ini dibuat berdasarkan tutorial yang dibuat oleh Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want you to install the latest version of Python 3, so if you have any earlier version, you will need to upgrade it. If you already have version 3.4 or higher you should be fine.
+Django ditulis menggunakan Python. Kita butuh Python untuk melakukan berbagai hal di Django. Yuk kita mulai menginstallnya! Kita menginginkan kamu menginstall Python 3, Jika kamu sudah memiliki versi sebelum itu, Kamu butuh upgrade versi yang akan kita install kali ini. Jika kamu sudah memiliki versi 3.4 atau diatasnya, Kamu akan baik-baik saja.
 
 Please install normal Python as follows, even when you have Anaconda installed on your computer.
 
@@ -18,7 +18,7 @@ You can download Python for Windows from the website https://www.python.org/down
 
 One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" or 'Add Python to your environment variables" checkbox and click on "Install Now", as shown here (it may look a bit different if you are installing a different version):
 
-![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
+![Jangan lupa menambahkan Python dapa Path](../python_installation/images/python-installation-options.png)
 
 When the installation completes, you may see a dialog box with a link you can follow to learn more about Python or about the version you installed. Close or cancel that dialog -- you'll be learning more in this tutorial!
 
@@ -29,7 +29,7 @@ Note: if you are using an older version of Windows (7, Vista, or any older versi
 
 If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
 
-![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
+![Tambahkan Python ke Path, versi lama](../python_installation/images/add_python_to_windows_path.png)
 
 <!--endsec-->
 
@@ -95,7 +95,7 @@ If you're on older Fedora versions you might get an error that the command `dnf`
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Use this command in your console:
+Gunakan perintah ini di konsol Anda:
 
 {% filename %}command-line{% endfilename %}
 
@@ -118,4 +118,4 @@ The version shown may be different from 3.6.1 -- it should match the version you
 
 * * *
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
+Jika Anda ragu, atau jika ada yang tidak beres dan Anda tidak tahu apa yang harus dilakukan selanjutnya, tolong tanya pelatih Anda! Kadang sesuatu tidak berjalan dengan lancar dan lebih baik untuk meminta bantuan pada seseorang yang berpengalaman.
