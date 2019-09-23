@@ -6,13 +6,13 @@
 
 ## Добре дошли
 
-Добре дошли в учебника Django за момичета! Щастливи сме да те видим тук :) В това ръководство ще отидем на приключение зад кулисите на веб технологии, предлагайки да видиш всички малки и големи части, които трябва да се съберат за да направят веб работа такава, каквато ние знаем.
+Добре дошли в учебника Django за момичета! Щастливи сме да те видим тук :) В това ръководство ще отидем на приключение зад кулисите на уеб-технологии, предлагайки да видиш всички малки и големи части, които трябва да се съберат за да направят веб работа такава, каквато ние знаем.
 
 Както с всички непознати неща, това може да бъде малко трудно. Но не се вълнувай, вече имаш кураж да бъдеш тука, всичко ще бъде наред :)
 
 ## Въведение
 
-Някога чувстваше ли че светът е все повече и повече технологичен, а ти оставаш в сянка? Мислеше как да създадеш уеб-сайт, но никога нямаше достатъчно мотивация да започнеш? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
+Някога чувстваше ли че светът е все повече и повече технологичен, а ти оставаш в сянка? Мислеше как да създадеш уеб-сайт, но никога нямаше достатъчно мотивация да започнеш? Струвало ли ти се че светът на софтуера е прекалено труден за теб да започнеш да правиш нещо сама?
 
 Имаме добра новина за теб! Програмиране не е толкова трудно, както изглежда, и ние искаме да ти покажем колкова лесно може да бъде.
 
@@ -28,7 +28,7 @@
 
 ![Figure 0.1](images/application.png)
 
-> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Помолихме нашите инструктори и миналите участници да са там от време на време и да помагат на другите с ръководството! Не се страхувай да задаваш въпроси тука!
+> Ако работиш със ръкводството сама, и нямаш инструктор който да ти помага в случай на някой проблем, имаме чат система за теб: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Помолихме нашите инструктори и миналите участници да са там от време на време и да помагат на другите с ръководството! Не се страхувай да задаваш въпроси тука!
 
 Добре, [хайде да започнем от начало...](./how_the_internet_works/README.md)
 
@@ -42,9 +42,9 @@
 
 This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
-## Would you like to help us translate the tutorial into other languages?
+## Би ли искала да ни помогнеш да преведем ръководството на друг език?
 
-Currently, translations are being kept on crowdin.com platform at:
+Понастоящем, преводите са съхранявани на платформа crowdin.com по този адрес:
 
 https://crowdin.com/project/django-girls-tutorial
 
