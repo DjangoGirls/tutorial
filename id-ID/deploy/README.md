@@ -100,7 +100,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 > > 
 > > Sekarang kita perlu menghubungkan Git repositori dalam komputer Anda ke dalam GitHub.
 > > 
-> > Type the following into your console (replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets -- the URL should match the clone URL you just saw):
+> > Ketik perintah berikut ini pada konsol (Gantilah `<your-github-username>` dengan nama user sesuai akun GitHub yang telah Anda buat, tetapi tanpa tanda kurung sudut):
 > > 
 > > {% filename %}command-line{% endfilename %}
 > > 
@@ -108,7 +108,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 > >     $ git push -u origin master
 > >     
 > > 
-> > When you push to GitHub, you'll be asked for your GitHub username and password (either right there in the command-line window or in a pop-up window), and after entering credentials you should see something like this:
+> > Saat Anda push ke GitHub, Anda akan diminta untuk username dan password Github Anda (baik secara langsung di jendela baris perintah atau di jendela pop-up), dan setelah memasukkan kredensial Anda akan melihat sesuatu seperti ini:
 > > 
 > > {% filename %}command-line{% endfilename %}
 > > 
@@ -123,7 +123,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 > > 
 > > <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 > > 
-> > Your code is now on GitHub. Go and check it out! You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
+> > Kode Anda sekarang ada di GitHub. Silahkan anda cek! You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
 > > 
 > > # Setting up our blog on PythonAnywhere
 > > 
@@ -133,7 +133,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 > > 
 > > {% include "/deploy/signup_pythonanywhere.md" %}
 > > 
-> > ## Configuring our site on PythonAnywhere
+> > ## Mengatur situs Kita di PythonAnywhere
 > > 
 > > Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer.
 > > 
