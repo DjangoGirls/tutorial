@@ -16,7 +16,7 @@ Ketika kamu sudah siap, Silakan ikuti instruksi dibawah ini.
 
 Kita ingin membuka konsol Python, Jadi silakan ketik `python` untuk Windows atau `python3` pada Mac OS/Linux dan tekan `Enter`.
 
-{% filename %} baris perintah {% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ python3 Python 3.4.3 (...) Type "help", "copyright", "credits" or "license" for more information. >>>
     
@@ -58,7 +58,7 @@ Seperti yang Anda lihat, Python adalah kalkulator yang hebat. Jika Anda bertanya
 
 Bagaimana dengan namamu? Ketik nama depan Anda dalam tanda kutip seperti ini:
 
-{% filename %} baris perintah {% endfilename %}
+{% filename %}command-line{% endfilename %}
 
 ```python
 >>> "Ola" * 
@@ -69,7 +69,7 @@ Anda sekarang telah membuat string pertama Anda! Ini adalah urutan karakter yang
 
 String bisa dirangkai. Coba ini:
 
-{% filename %}baris perintah{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
 ```python
 >>> "Hi there " + "Ola"
@@ -78,7 +78,7 @@ String bisa dirangkai. Coba ini:
 
 Anda juga bisa mengalikan string dengan angka:
 
-{% filename %} baris perintah {% endfilename %}
+{% filename %}command-line{% endfilename %}
 
 ```python
 >>> "Ola" * 3
@@ -89,7 +89,7 @@ Jika Anda perlu menempatkan tanda kutip di dalam string Anda, Anda memiliki dua 
 
 Menggunakan tanda kutip ganda:
 
-{% filename %}baris perintah{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
 ```python
 >>> 'Runnin\' menuruni bukit'
@@ -98,7 +98,7 @@ Menggunakan tanda kutip ganda:
 
 atau keluar dari apostrof dengan garis miring terbalik (``):
 
-{% filename %}baris perintah{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
 ```python
 >>> 'Runnin\' menuruni bukit'
@@ -107,7 +107,7 @@ atau keluar dari apostrof dengan garis miring terbalik (``):
 
 Keren, Kan? Untuk melihat nama Anda dalam huruf kapital, cukup ketik:
 
-{% filename %} baris perintah {% endfilename %}
+{% filename %}command-line{% endfilename %}
 
 ```python
 >>> "Ola".upper()
@@ -118,7 +118,7 @@ Anda hanya menggunakan **method**`upper` pada string anda! Method (`upper`) adal
 
 Jika Anda ingin tahu jumlah huruf yang terkandung dalam nama Anda, ada **function** untuk itu juga!
 
-{% filename %}baris perintah{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
 ```python
 >>> len ("Ola")
@@ -142,12 +142,13 @@ Ini adalah dasar dari setiap bahasa pemrograman yang Anda pelajari. Siap untuk s
 
 Mari kita coba sesuatu yang baru. Bisakah kita mendapatkan panjang sejumlah cara yang sama kita bisa mengetahui panjang nama kami? Ketik di `len(304023)` dan tekan `Masukkan`:
 
-{% filename %}{{ warning_icon }}{% endfilename %} baris perintah
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
-& gt; & gt; & gt; len (304023) Traceback (panggilan terakhir terakhir):
-   File " <stdin> ", baris 1, di <module> 
-TypeError: objek tipe 'int' tidak memiliki len ()
+>>> len(304023)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: object of type 'int' has no len()
 ```
 
 Kami punya kesalahan pertama kami! Ikon {{ warning_icon }} adalah cara kami memberi Anda kepala up yang Anda akan menjalankan kode tidak bekerja seperti yang diharapkan. Membuat kesalahan (bahkan disengaja yang) yang merupakan bagian penting dari belajar!
@@ -157,7 +158,7 @@ Dikatakan bahwa objek dari jenis "int" (bilangan bulat, bilangan bulat) memiliki
 {% filename %}command-line{% endfilename %}
 
 ```python
-& gt; & gt; & gt; len (str (304023)) 6
+>>> len(str(304023))
 ```
 
 Itu berhasil! Kami menggunakan fungsi `str` dalam fungsi `len`. `Str()` mengkonversi segala sesuatu ke string.
@@ -173,7 +174,7 @@ Konsep penting dalam pemrograman adalah variabel. Variabel adalah tidak lebih da
 
 Katakanlah kita ingin membuat sebuah variabel baru yang disebut `nama`:
 
-{% filename %}baris perintah{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
 ```python
 >>> nama = "Ola"
@@ -181,9 +182,9 @@ Katakanlah kita ingin membuat sebuah variabel baru yang disebut `nama`:
 
 Kita ketik nama sama Ola.
 
-As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Enter `name` and hit `enter`:
+Seperti yang telah Anda sadari, program Anda tidak mengembalikan hal seperti sebelumnya. Jadi bagaimana kita tahu bahwa sebenarnya variabel itu ada? Cukup masukkan `name`dan tekan `Enter`:
 
-{% filename %}baris perintah{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
 ```python
 >>> name
@@ -192,7 +193,7 @@ As you've noticed, your program didn't return anything like it did before. So ho
 
 Hura! Variabel pertama Anda! :) Anda selalu dapat mengubah apa yang ia merujuk kepada:
 
-{% filename %}baris perintah{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
 ```python
 >>> name = "Sonja"
@@ -202,16 +203,16 @@ Hura! Variabel pertama Anda! :) Anda selalu dapat mengubah apa yang ia merujuk k
 
 Anda dapat menggunakannya dalam fungsi juga:
 
-{% filename %} baris perintah {% endfilename %}
+{% filename %}command-line{% endfilename %}
 
 ```python
 >>> len(name)
 5
 ```
 
-Awesome, right? Now, variables can be anything – numbers too! Try this:
+Bagus kan? Variabel dapat berisi segalanya, termasuk angka. Coba yang berikut ini:
 
-{% filename %}baris perintah{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
 ```python
 >>> a = 4
@@ -225,11 +226,11 @@ Tapi bagaimana jika kita menggunakan nama yang salah? Dapatkah kamu menebak apa 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
->>> kota = "Tokyo"
+>>> city = "Tokyo"
 >>> ctiy
-Traceback (panggilan terakhir):
-   File "<stdin>", baris 1, di <module>
-NameError: nama 'ctiy' tidak didefinisikan
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'ctiy' is not defined
 ```
 
 Kesalahan! Seperti yang Anda lihat, Python memiliki berbagai jenis kesalahan dan satu ini disebut **NameError**. Python akan memberikan kesalahan ini jika Anda mencoba menggunakan sebuah variabel yang belum didefinisikan belum. Jika Anda mengalami kesalahan ini kemudian, memeriksa kode Anda untuk melihat jika Anda telah salah ketik nama.
@@ -260,7 +261,7 @@ Beside strings and integers, Python has all sorts of different types of objects.
 
 Go ahead and create a list:
 
-{% filename %}baris perintah{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
 ```python
 >>> []
@@ -269,15 +270,15 @@ Go ahead and create a list:
 
 Yes, this list is empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repeat ourselves all the time, so we will put it in a variable, too:
 
-{% filename %}baris perintah{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
 ```python
->>> undian = [3, 42, 12, 19, 30, 59]
+>>> lottery = [3, 42, 12, 19, 30, 59]
 ```
 
 Baiklah, kita punya daftar! Apa yang bisa kita lakukan dengan itu? Mari kita lihat berapa jumlah undian yang ada dalam daftar. Apakah Anda tahu fungsi mana yang harus Anda gunakan untuk itu? Anda sudah tahu ini!
 
-{% filename %}baris perintah{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
 ```python
 >>> len(lottery)
@@ -286,7 +287,7 @@ Baiklah, kita punya daftar! Apa yang bisa kita lakukan dengan itu? Mari kita lih
 
 Ya! `Len()` dapat memberikan sejumlah objek dalam daftar. Handy, kanan? Mungkin kita akan semacam itu sekarang:
 
-{% filename %}baris perintah{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
 ```python
 >>> lottery.sort()
@@ -1055,10 +1056,10 @@ Note that the second of these two numbers is not included in the list that is ou
 
 ## Ikhtisar
 
-That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
+Itu dia. ** Kamu hebat! ** Bab ini sama sekali tidak mudah, Anda harus bangga. Kami bangga dengan Anda karena telah berhasil sampai di sini!
 
-For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
+Tutorial Python resmi lengkap dapat ditemukan di https://docs.python.org/3/tutorial/. Ini akan memungkinkan Anda untuk mempelajari bahasa secara lengkap dan menyeluruh. Cheers :)
 
-You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
+Sebelum Anda melanjutkan ke bab berikutnya, lakukan sesuatu yang lain - meregangkan, berlari, menenangkan mata Anda. :)
 
 ![Cupcake](images/cupcake.png)
