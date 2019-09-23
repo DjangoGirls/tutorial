@@ -16,7 +16,7 @@ Ayo buat file ` base.html </ 0> di <code> blog / templates / blog / </ 0>:</p>
              post_list.html
 `</pre> 
 
-Then open it up in the code editor and copy everything from `post_list.html` to `base.html` file, like this:
+Kemudian buka dan salin semua dari `post_list.html` ke `base.html` file, Seperti ini:
 
 {% filenama %}blog/template/blog/base.html{% endfilename %}
 
@@ -84,7 +84,7 @@ Kemudian di `base.html`, ganti seluruh `<body>` ( diantara semua `<body>` dan `<
 
 Tapi mengapa? Anda baru saja membuat `block`! Anda menggunakan template tag `{% blok %}` Untuk membuat area yang memiliki HTML yang Dimasukkan didalamnya. HTML akan datang dari template lain yang memperluas template ini (`base.html`). Kami akan menunjukkan kepada kamu bagaimana melakukan ini dalam sesaat.
 
-Now save `base.html` and open your `blog/templates/blog/post_list.html` again in the code editor. {% raw %} kamu akan menghapus segalanya diatas `{% for post in posts %}` dan dibawah `{% endfor %}`. Saat kamu sudah selesai, berkas akan terlihat seperti ini:{% endraw %}
+Sekarang simpan`base.html` dan buka `blog/template/blog/post_list.html` kamu lagi di kode editor. {% raw %} kamu akan menghapus segalanya diatas `{% for post in posts %}` dan dibawah `{% endfor %}`. Saat kamu sudah selesai, berkas akan terlihat seperti ini:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -140,6 +140,6 @@ Hanya tersisa satu hal. Kita perlu menghubungkan dua template ini bersama-sama. 
 {% endblock %}
 ```
 
-That's it! Save the file, and check if your website is still working properly. :)
+Itu saja! Simpan filenya, dan periksa apakah situs Anda berfungsi dengan baik. :)
 
 > Jika Anda mendapatkan error `TemplateDoesNotExist`, itu berarti tidak ada file `blog/base.html`dan Anda memiliki `runserver` yang berjalan di konsol. Cobalah untuk menghentikannya (dengan menekan Ctrl+C - tombol Control and C bersamaan) dan restart dengan menjalankan perintah `python manage.py runserver`.
