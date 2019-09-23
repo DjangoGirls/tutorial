@@ -1,4 +1,4 @@
-# Deploy (Publikasikan)
+# Peluncuran (Deploy)!
 
 > **Catatan** Bab berikut mungkin terasa agak sulit untuk dipahami. Lanjutkan sampai selesai; proses deploy merupakan proses yang penting pada proses pengembangan website. Bab ini sengaja diletakkan di bagian tengah tutorial ini dengan harapan agar pendamping anda, kalau ada, dapat membantu anda menjadikan website anda online, dengan sedikit trik. Ini artinya, anda masih dapat menyelesaikan sendiri tutorial ini kalau-kalau anda tak lagi punya cukup waktu.
 
@@ -45,9 +45,9 @@ Ketiga tempat ini penting bagi Anda. Komputer lokal Anda akan menjadi tempat pen
 > > Dan simpan sebagai ` .gitignore </ 0> di folder "djangogirls".</p>
 
 <blockquote>
-  <p><strong>Catatan</strong> Titik di depan nama file sangat penting!  Jika Anda mengalami kesulitan untuk membuatnya (Mac tidak suka Anda membuat file yang dimulai dengan titik melalui Finder, misalnya), kemudian gunakan fitur "Save As" di editor Anda; itu antipeluru And be sure not to add <code>.txt`, `.py`, or any other extension to the file name -- it will only be recognized by Git if the name is just `.gitignore`.
+  <p><strong>Catatan</strong> Titik di depan nama file sangat penting!  Jika anda mengalami kesulitan membuat nama file semacam ini (Karena Mac tidak suka jika anda membuat nama file yang diawali dengan titik lewat Finder, ini contoh kasus), maka pilih fitur "Save As" pada editor anda, yang seharusnya selalu berfungsi. Penting bahwa Anda tidak mengisi nama file dengan <code>.txt`, `.py` atau ekstensi nama file lainnya - file hanya akan dikenali oleh Git jika namanya persis `.gitignore`.
 > > 
-> > ** Catatan </ 0> Salah satu file yang ditentukan dalam Anda ` Gitignore </ 1> file <code> db.sqlite3 </ 1> . That file is your local database, where all of your users and posts are stored. We'll follow standard web programming practice, meaning that we'll use separate databases for your local testing site and your live website on PythonAnywhere. The PythonAnywhere database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts and superuser you created so far are going to only be available locally, and you'll have to create new ones on production. Anda harus memikirkan database lokal Anda sebagai taman bermain yang bagus di mana Anda dapat menguji berbagai hal dan tidak takut bahwa Anda akan menghapus posting sebenarnya dari blog Anda.</p>
+> > ** Catatan </ 0> Salah satu file yang ditentukan dalam Anda ` Gitignore </ 1> file <code> db.sqlite3 </ 1> . File ini adalah basis data lokal Anda tempat semua pengguna dan posting Anda disimpan. Kami akan mengikuti praktik umum pengembangan web, yang berarti kami akan menggunakan basis data terpisah untuk situs web pengujian lokal kami dan situs web publik kami di PythonAnywhere. Basis data PythonAnywhere bisa berupa SQLite, seperti pada mesin pengembangan Anda, tetapi biasanya Anda akan menggunakan apa yang disebut basis data MySQL, yang dapat menangani lebih banyak pengunjung daripada SQLite. Bagaimanapun, dengan tidak menggunakan database SQLite Anda untuk salinan GitHub, semua posting superuser Anda sebelumnya hanya akan tersedia secara lokal, dan Anda harus menambahkan yang baru di lingkungan produksi. Anda harus memikirkan database lokal Anda sebagai taman bermain yang bagus di mana Anda dapat menguji berbagai hal dan tidak takut bahwa Anda akan menghapus posting sebenarnya dari blog Anda.</p>
 </blockquote>
 
 <p>Sebaiknya cek status dulu dengan perintah <code>git status` sebelum melakukan `git add` atau kapanpun anda ingin memastikan apa yang telah berubah. Ini akan membantu mencegah kejutan terjadi, seperti file yang salah ditambahkan atau dilakukan. Perintah ` git status </ 0> mengembalikan informasi tentang file yang tidak dilacak / dimodifikasi / dipentaskan, status cabang, dan banyak lagi. Keluarannya harus serupa dengan berikut ini:</p>
@@ -84,9 +84,9 @@ nothing added to commit but untracked files present (use "git add" to track)
 > >      create mode 100644 mysite/wsgi.py
 > >     
 > > 
-> > ## Pushing your code to GitHub
+> > ## Memasukkan kode Anda ke GitHub
 > > 
-> > Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!) Be sure to remember your password (add it to your password manager, if you use one).
+> > Pergi ke [GitHub.com](https://www.github.com) dan daftar secara gratis untuk akun yang baru. (Jika Anda sudah mengaturnya selama persiapan lokakarya, itu bagus!) Pastikan Anda tidak lupa kata sandi Anda (tambahkan ke kata sandi manager Anda, jika Anda menggunakannya).
 > > 
 > > Then, create a new repository, giving it the name "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
 > > 
@@ -211,7 +211,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 > > 
 > > And remember, your coach is here to help!
 > > 
-> > # Check out your site!
+> > # Periksa situs Anda!
 > > 
 > > The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server -- remember, the posts from your local test database were not sent to your live blog.
 > > 
