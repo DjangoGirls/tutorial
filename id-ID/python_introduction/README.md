@@ -25,7 +25,7 @@ Kita ingin membuka konsol Python, Jadi silakan ketik `python` untuk Windows atau
 
 Setelah menjalankan perintah Python, prompt akan berubah menjadi `>>>`. Bagi kita sekarang adalah kita harus menggunakan perintah pada bahasa Python saja. Kmau gak perlu mengetik pada perintah `>>>` - Python akan melakukannya untukmu.
 
-If you want to exit the Python console at any point, type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Kemudian kamu tidak akan melihat lagi `>>>`.
+Jika Anda ingin keluar dari konsol Python, Cukup dengan mengetik perintah `exit()` atau menggunakan pintasan `Ctrl + Z` untuk Windows dan `Ctrl + D` untuk Mac/Linux. Kemudian kamu tidak akan melihat lagi `>>>`.
 
 Untuk saat ini, kami tidak ingin untuk keluar dari konsol Python. Kami ingin belajar lebih banyak tentang hal itu. Mari kita mulai dengan mengetik beberapa matematika, seperti `2 + 3` dan memukul `masuk`.
 
@@ -105,7 +105,7 @@ atau keluar dari apostrof dengan garis miring terbalik (``):
 "Runnin' menuruni bukit"
 ```
 
-Nice, huh? To see your name in uppercase letters, type:
+Keren, Kan? Untuk melihat nama Anda dalam huruf kapital, cukup ketik:
 
 {% filename %} baris perintah {% endfilename %}
 
