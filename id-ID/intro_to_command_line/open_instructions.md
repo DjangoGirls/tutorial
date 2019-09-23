@@ -1,13 +1,13 @@
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-Depending on your version of Windows and your keyboard, one of the following should open a command window (you may have to experiment a bit, but you don't have to try all of these suggestions):
+Bergantung pada versi Windows dan keyboard Anda, salah satu dari yang berikut ini akan membuka jendela perintah (Anda mungkin harus bereksperimen sedikit, tetapi Anda tidak harus mencoba semua saran ini):
 
-- Go to the Start menu or screen, and enter "Command Prompt" in the search field.
-- Go to Start menu → Windows System → Command Prompt.
-- Go to Start menu → All Programs → Accessories → Command Prompt.
-- Go to the Start screen, hover your mouse in the lower-left corner of the screen, and click the down arrow that appears (on a touch screen, instead flick up from the bottom of the screen). The Apps page should open. Click on Command Prompt in the Windows System section.
-- Hold the special Windows key on your keyboard and press the "X" key. Choose "Command Prompt" from the pop-up menu.
-- Hold the Windows key and press the "R" key to get a "Run" window. Type "cmd" in the box, and click the OK key.
+- Buka menu Start atau layar Anda (desktop), dan ketik "Command Prompt" di kotak pencarian.
+- Pergi ke Start menu → Windows System → Command Prompt.
+- Buka Start menu → All Programs → Accessories → Command Prompt.
+- Pergi ke layar Start menu, alihkan mouse Anda ke bagian pojok kiri bawah layar Anda, dan klik panah kebawah yang muncul (pada touch screen, geser dari bawah ke atas pada layar). Halaman Aplikasi seharusnya terbuka. Klik pada Command Prompt di Windows System section.
+- Tahan tombol spesial Windows pada keyboard dan tekan tombol "X" bersamaan (windows + x). Pilih "Command Prompt" dari menu yang keluar.
+- Tahan tombol Windows dan tekan tombol "R" untuk dapat memunculkan jendela "Run" (windows + R). Ketik "cmd" di boxnya, dan klik tombol OK.
 
 ![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
 
