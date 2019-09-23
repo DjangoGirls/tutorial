@@ -26,7 +26,7 @@
 
 Това ще изглежда (горе-долу) ето така:
 
-![Figure 0.1](images/application.png)
+![Фигура 0.1](images/application.png)
 
 > Ако работиш със ръкводството сама, и нямаш инструктор който да ти помага в случай на някой проблем, имаме чат система за теб: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Помолихме нашите инструктори и миналите участници да са там от време на време и да помагат на другите с ръководството! Не се страхувай да задаваш въпроси тука!
 
@@ -38,9 +38,9 @@
 
 Във всяка вече покрита глава има линк, препращащ към съответно видео.
 
-## About and contributing
+## Относно и допринасяне
 
-This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
+Това ръководство е поддържано от [Django Girls](https://djangogirls.org/). Ако си намерила някакви грешки или искаш да актуализираш ръководството, моля, [следвай насоките за допринасяне](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
 ## Би ли искала да ни помогнеш да преведем ръководството на друг език?
 
@@ -48,4 +48,4 @@ This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you f
 
 https://crowdin.com/project/django-girls-tutorial
 
-If your language is not listed on [crowdin](https://crowdin.com/), please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
+Ако твоят език не е изброен на [crowdin](https://crowdin.com/), моля [оставете заявка](https://github.com/DjangoGirls/tutorial/issues/new), информирайки ни за езика, за да можем да го добавим.
