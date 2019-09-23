@@ -88,17 +88,17 @@ nothing added to commit but untracked files present (use "git add" to track)
 > > 
 > > Pergi ke [GitHub.com](https://www.github.com) dan daftar secara gratis untuk akun yang baru. (Jika Anda sudah mengaturnya selama persiapan lokakarya, itu bagus!) Pastikan Anda tidak lupa kata sandi Anda (tambahkan ke kata sandi manager Anda, jika Anda menggunakannya).
 > > 
-> > Then, create a new repository, giving it the name "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+> > Kemudian buat sebuah repositori baru, beri nama "my-first-blog". Biarkan kotak centang "initialize with a README" dan pengaturan opsi .gitignore kosong (Kita sudah melakukannya dengan manual) dan biarkan lisensi ditetapkan ke "None".
 > > 
 > > ![](images/new_github_repo.png)
 > > 
-> > > **Note** The name `my-first-blog` is important – you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. It's probably easier to stick with the name `my-first-blog`.
+> > > **Catatan** Nama `my-first-blog` sangat penting, tentu anda bisa saja memilih nama lain, akan tetapi nama tersebut akan selalu muncul lagi dan anda tentu akan repot harus selalu menggantinya. Jadi tak usah sulit-sulit, pakai saja nama `my-first-blog`.
 > > 
-> > On the next screen, you'll be shown your repo's clone URL, which you will use in some of the commands that follow:
+> > Pada layar berikutnya, Anda akan diperlihatkan repo's clone URL Anda, yang akan Anda gunakan di beberapa perintah berikut:
 > > 
 > > ![](images/github_get_repo_url_screenshot.png)
 > > 
-> > Now we need to hook up the Git repository on your computer to the one up on GitHub.
+> > Sekarang kita perlu menghubungkan Git repositori dalam komputer Anda ke dalam GitHub.
 > > 
 > > Type the following into your console (replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets -- the URL should match the clone URL you just saw):
 > > 
