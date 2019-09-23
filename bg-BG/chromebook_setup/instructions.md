@@ -1,4 +1,4 @@
-You can [skip right over this section](http://tutorial.djangogirls.org/en/installation/#install-python) if you're not using a Chromebook. If you are, your installation experience will be a little different. You can ignore the rest of the installation instructions.
+Можеш да [пропуснеш този раздел](http://tutorial.djangogirls.org/en/installation/#install-python), ако не използваш Chromebook. If you are, your installation experience will be a little different. You can ignore the rest of the installation instructions.
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
@@ -6,8 +6,8 @@ Cloud IDE is a tool that gives you a code editor and access to a computer runnin
 
 #### PaizaCloud Cloud IDE
 
-1. Go to [PaizaCloud Cloud IDE](https://paiza.cloud/)
-2. Sign up for an account
+1. Отиди на [PaizaCloud Cloud IDE](https://paiza.cloud/)
+2. Направи акаунт
 3. Click *New Server* and choose the Django app
 4. Click Terminal button(on the left side of the window)
 
