@@ -28,15 +28,15 @@ Ya! Ada *sangat banyak* sumber daya online untuk mempelajari semua jenis keteram
 - [Kursus Codecademy's Python](https://www.codecademy.com/learn/learn-python)
 - [Kursus Google's Python](https://developers.google.com/edu/python/)
 - Buku [Learn Python The Hard Way](http://learnpythonthehardway.org/book/) – latihan pertama gratis
-- [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
-- [edX](https://www.edx.org/course?search_query=python) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
-- [Coursera's Python specialization](https://www.coursera.org/specializations/python) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
-- [Python for Everybody](https://www.py4e.com/) - a free and open version of the Coursera Python for Everybody specialization
+- [New Coder tutorials](http://newcoder.io/tutorials/) – berbagai contoh praktis tentang bagaimana Python dapat digunakan
+- [edX](https://www.edx.org/course?search_query=python) – Anda dapat menguji sebagian besar kursus secara gratis, tetapi jika Anda ingin mendapatkan sertifikat atau kredit untuk pendidikan lebih lanjut, Anda akan dikenakan biaya
+- [Coursera's Python specialization](https://www.coursera.org/specializations/python) – beberapa kuliah video dapat diputar secara gratis dan Anda bisa mendapatkan Sertifikat Coursera dengan mengikuti kursus ini
+- [Python for Everybody](https://www.py4e.com/) - versi gratis dan terbuka dari Coursera Python untuk pembelajar tingkat apapun
 
-#### Working with data
+#### Bekerja dengan data
 
-- [Codecademy's data science course](https://www.codecademy.com/learn/paths/data-science)
-- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
-- [Dataquest](https://www.dataquest.io/) – the first 30 "missions" are free
+- [Kursus Codecademy's data science](https://www.codecademy.com/learn/paths/data-science)
+- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – Anda dapat menguji sebagian besar kursus secara gratis, tetapi jika Anda ingin mendapatkan sertifikat atau kredit untuk pendidikan lebih lanjut, Anda akan dikenakan biaya
+- [Dataquest](https://www.dataquest.io/) – 30 "missions" (misi) pertama gratis
 
-We can't wait to see what you build next!
+Kami tidak sabar untuk melihat apa yang akan Anda buat!
