@@ -2,7 +2,7 @@
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud IDE is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. For the duration of the tutorial, cloud IDE will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
+Cloud IDE е инструмент който ти дава редактор на код и достъп до компютър, работещ по Интернет, където ти можеш да инсталираш, пишеш и пускаш софтуер. За продължителността на ръководството, cloud IDE ще ти служи като твоя *локална машина*. Все пак ще пишеш команди в терминал, също като твоите съученици на OS X, Ubuntu или Windows, но той ще бъде свързан с компютър, работещ някъде другаде, който cloud IDE прави за теб. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
 
 #### PaizaCloud Cloud IDE
 
