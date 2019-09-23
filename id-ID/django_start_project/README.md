@@ -4,7 +4,7 @@
 > 
 > Bagian dari bab ini didasarkan pada  Django-marcador    tutorial </ 0> berlisensi di bawah Creative Commons    Lisensi Internasional Attribution-ShareAlike 4.0. Hak cipta tutorial django-marcador oleh Markus Zapke-Gründemann et al.</p> </blockquote> 
 > 
-> We're going to create a small blog!
+> Kita akan membuat blog sederhana!
 > 
 > Langkah pertama adalah memulai dengan membuat projek baru Django. Pada dasarnya, Kita akan menjalankan beberapa skrip yang disediakan oleh Django yang mana akan membuat skeleton projek Django untuk kita. Ini merupakan bagian direktori dan file yang akan kita gunakan nanti.
 > 
@@ -44,7 +44,7 @@
 > > > 
 > > > > Masalah `.` cukup krusial karena ini akan memberi perintah skrip untuk menginstall Django pada direktori-mu saat ini (untuk masalah `.` adalah referensi singkat).
 > > > > 
-> > > > **Note** When typing the command above, remember that you only type the part which starts by `django-admin.exe`. The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
+> > > > **Catatan** Saat mengetikkan perintah di atas, ingat bahwa Anda hanya mengetikkan bagian yang dimulai oleh `django-admin.exe`. Bagian `(myvenv) C:\Users\Name\djangogirls>` yang ditunjukkan di sini hanyalah contoh prompt yang akan mengundang masukan Anda pada baris perintah Anda.
 > > > 
 > > > <!--endsec-->
 > > > 
