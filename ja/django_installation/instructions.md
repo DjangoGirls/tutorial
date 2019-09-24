@@ -145,6 +145,13 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
+> **補足:** Windows Powershellベースの結合ターミナルがある人気なエディター「VS Code」を使っている方で、VS Codeの結合ターミナルを使いたい場合、仮想環境をアクティベートにするために下記のコマンドを実行してください:
+> 
+>     $ . myvenv\Scripts\activate.ps1
+>     
+> 
+> エディターとコマンドラインのウィンドウを行き来する必要がなくなるのが利点です。
+
 `virtualenv` が起動すると、プロンプトの行頭に`(myvenv)`が現れます。
 
 Virtual environment(仮想環境) の中で作業しているとき、`python`は自動的に正しいバージョンの`Python`を参照しますので、`python3`の代わりに`python`を使うことができます.
@@ -159,14 +166,14 @@ OK,これでDjangoのインストール前に入れておきたい依存関係�
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~$ python3 -m pip install --upgrade pip
+    (myvenv) ~$ python -m pip install --upgrade pip
     
 
 ### Requirementsファイルによってパッケージをインストールする
 
 Requirementsファイルは`pip install`でインストールするためのパッケージリストが記載されているファイルです:
 
-前にインストールしたコードエディタを使用して、最初に `requirements.txt` ファイルを `djangogirls/` フォルダーの中に作ります:
+前にインストールしたコードエディタを使用して、最初に `requirements.txt` ファイルを `djangogirls/` フォルダーの中に作ります。 コードエディタで新しいファイルを開いて`djangogirls/`フォルダ内に`requirements.txt`いう名前で保存してください。 ディレクトリはこんな感じになっているはずです:
 
     djangogirls
     └───requirements.txt
@@ -193,7 +200,7 @@ Requirementsファイルは`pip install`でインストールするためのパ�
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> Windowsでpipを呼んだときにエラーが起きた場合は、あなたのプロジェクトのパス名がスペース・アクセント・特殊文字を含んでいないか確認してみて下さい （例 `C:\Users\User Name\djangogirls`）。 もし含まれている場合は、ディレクトリを他のスペース・アクセント・特殊文字が含まれていない場所（`C:\djangogirls`など）で作成することを検討してみてください。 新しいディレクトリに新しい仮想環境を作成してから、古いディレクトリを削除して、上記のコマンドを試してください。 （仮想環境のディレクトリは、絶対パスが使われているので、移動させてもうごきません。）
+> Windowsでpipを呼んだときにエラーが起きた場合は、あなたのプロジェクトのパス名がスペース・アクセント・特殊文字を含んでいないか確認してみて下さい （例 `C:\Users\User Name\djangogirls`）。 もし含まれている場合は、ディレクトリを他のスペース・アクセント・特殊文字が含まれていない場所（`C:\djangogirls`など）で作成することを検討してみてください。 新しいディレクトリに新しい仮想環境を作成してから、古いディレクトリを削除して、上記のコマンドを試してください。 （仮想環境のディレクトリは、絶対パスが使われているので、移動させても動きません。）
 
 <!--endsec-->
 

@@ -117,7 +117,7 @@ ola という `ユーザ名` の `User` モデルのインスタンスを、`取
 <QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
 ```
 
-出来ていますね！リストにはポストが1つ以上あります。
+出来ていますね！リストに新しいポストが1つ追加されています。
 
 ### さらに投稿を追加しましょう
 
@@ -200,9 +200,9 @@ ola という `ユーザ名` の `User` モデルのインスタンスを、`取
 <QuerySet [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]>
 ```
 
-### クエリセットをつなげる
+### メソッドチェーンによる複雑なクエリ
 
-QuerySetsを **つなげて** 組み合わせることも出来ます。
+ご覧のように、`Post.objects`の一部のメソッドはクエリセットを返します。 同じメソッドをクエリセットで呼び出すこともできるし、新しいクエリセットを返すこともできます。 よって、**つなげる**ことによってそれらの結果を組み合わせることができます:
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')

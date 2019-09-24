@@ -94,7 +94,7 @@ class PostForm(forms.ModelForm):
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-path('post/new', views.post_new, name='post_new'),
+path('post/new/', views.post_new, name='post_new'),
 ```
 
 すると最終的なコードは次のようになります:
@@ -155,7 +155,7 @@ def post_new(request):
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <h1>New post</h1>
+    <h2>New post</h2>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
         <button type="submit" class="save btn btn-default">Save</button>
@@ -306,7 +306,7 @@ Djangoはフォームのすべてのフィールドが正しいことを検証�
             </div>
         {% endif %}
         <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-        <h1>{{ post.title }}</h1>
+        <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endblock %}
@@ -342,7 +342,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-`post_new` とほとんど同じに見えますか? しかし完全に同じではありません。 まずURLから追加の `pk` パラメータを渡します。 次に編集したい`Post` モデルを `get_object_or_404(Post, pk=pk)` で取得し、フォームを作るときは以下の2つのケースのようにそのポストを`instance（インスタンス）`として渡します。フォームを保存するときは…
+`post_new` とほとんど同じに見えますか? しかし完全に同じではありません。 まず `urls` から追加の `pk` パラメータを渡します。 次に編集したい`Post` モデルを `get_object_or_404(Post, pk=pk)` で取得し、フォームを作るときは以下の2つのケースのようにそのポストを`instance（インスタンス）`として渡します。フォームを保存するときは…
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -370,7 +370,7 @@ form = PostForm(instance=post)
 
 おめでとう！アプリケーションが完成しました。
 
-Djangoのフォームについてもっと知りたい場合、Django Projectのドキュメントを読んでください: https://docs.djangoproject.com/ja/2.0/topics/forms/
+Djangoのフォームについてもっと知りたい場合、Django Projectのドキュメントを読んでください。https://docs.djangoproject.com/ja/2.2/topics/forms/
 
 ## セキュリティ
 
@@ -435,15 +435,15 @@ Djangoのフォームについてもっと知りたい場合、Django Projectの
 
 * それから、[PythonAnywhereのbashコンソール](https://www.pythonanywhere.com/consoles/)で：
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
+    $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-(`<your-pythonanywhere-username>`の部分を、自分の実際のPythonAnywhereのユーザー名に山カッコをはずして置き換えることを忘れずに)
+(`<your-pythonanywhere-domain>`の部分を、自分の実際のPythonAnywhereのユーザー名に山カッコをはずして置き換えることを忘れずに)
 
-* 最後に、[「Web」ページ](https://www.pythonanywhere.com/web_app_setup/) に飛んで（コンソールの右上のメニューボタンを使って）それから **Reload** を押しましょう。 変更を見るためにあなたのブログ https://yourname.pythonanywhere.com を再読み込みしましょう。
+* 最後に、[「Web」ページ](https://www.pythonanywhere.com/web_app_setup/) に飛んで（コンソールの右上のメニューボタンを使って）それから **Reload** を押しましょう。 変更を見るためにあなたのブログ https://subdomain.pythonanywhere.com を再読み込みしましょう。
 
 うまくいってるはずです！おめでとう :)

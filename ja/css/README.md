@@ -73,12 +73,13 @@ CSSファイルを作って、Webサイトにあなたのスタイルを設定�
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
-    color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
 }
+
 ```
 
-`h1 a` はCSSセレクタと呼ばれるものです。 `h1` 要素の中にある `a` 要素にスタイルを適用します、という意味になります。 よって `<h1><a href="">link</a></h1>`となっているとき、 `h1 a` スタイルが適用されます。 この場合、その要素を `#FCA205` に、つまりオレンジ色にしようとしています。 またはあなたの好きな色に変えられます！
+`h1 a` はCSSセレクタと呼ばれるものです。 これは、`h1`要素内の`a`要素にスタイルを適用していることを意味します。 `h2 a`セレクタは、`h2`要素に対しても同じことを行います。 よって `<h1><a href="">link</a></h1>`となっているとき、 `h1 a` スタイルが適用されます。 この場合、その要素を `#C25100` に、つまり濃いオレンジ色にしようとしています。 あるいは、あなたの好きな色を設定することができますが、それが白い背景に対して良いコントラストを持つことを確認しましょう！
 
 CSSファイルには、HTMLファイルの各要素のスタイルを指定していきます。 まずは要素名でもって、その要素を識別します。 HTMLのタグ名は覚えがあるでしょう。 例えば `a`, `h1`, `body` などが要素名の例です。 また、`class` 属性や、`id` 属性によって要素を識別することができます。 classやidは、あなたが自分で要素につけることができる名前です。 classは要素のグループを定義して、idは特定の要素を指定します。 例えば、次のタグは、タグ名 `a`、class名 `external_link`、id名 ` link_to_wiki_page`、どれを使ってもCSSによって識別されます。
 
@@ -127,7 +128,7 @@ CSSセレクタについては[CSS Selectors in w3schools](http://www.w3schools.
         {% for post in posts %}
             <div>
                 <p>published: {{ post.published_date }}</p>
-                <h1><a href="">{{ post.title }}</a></h1>
+                <h2><a href="">{{ post.title }}</a></h2>
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
@@ -168,8 +169,8 @@ body {
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
-    color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
     font-family: 'Lobster';
 }
 ```
@@ -197,7 +198,7 @@ h1 a {
 ```html
 <div class="post">
     <p>published: {{ post.published_date }}</p>
-    <h1><a href="">{{ post.title }}</a></h1>
+    <h2><a href="">{{ post.title }}</a></h2>
     <p>{{ post.text|linebreaksbr }}</p>
 </div>
 ```
@@ -208,7 +209,7 @@ h1 a {
 
 ```css
 .page-header {
-    background-color: #ff9400;
+    background-color: #C25100;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
@@ -250,7 +251,7 @@ h1, h2, h3, h4 {
     margin-bottom: 70px;
 }
 
-.post h1 a, .post h1 a:visited {
+.post h2 a, .post h2 a:visited {
     color: #000000;
 }
 ```
@@ -263,7 +264,7 @@ h1, h2, h3, h4 {
 {% for post in posts %}
     <div class="post">
         <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
+        <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
@@ -282,7 +283,7 @@ h1, h2, h3, h4 {
                     <div class="date">
                         <p>published: {{ post.published_date }}</p>
                     </div>
-                    <h1><a href="">{{ post.title }}</a></h1>
+                    <h2><a href="">{{ post.title }}</a></h2>
                     <p>{{ post.text|linebreaksbr }}</p>
                 </div>
             {% endfor %}

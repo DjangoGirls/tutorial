@@ -80,7 +80,7 @@ django-admin.py は、必要なディレクトリとファイルを作成する�
 TIME_ZONE = 'Asia/Tokyo'
 ```
 
-言語コードは、あなたの利用する言語を設定する必要があります。 英語の場合は`en`、ドイツ語の場合は`de`、国コードの場合は`de`はドイツ、`ch`はスイスです。 英語があなたの母国語でない場合、これを追加してDjangoのデフォルトのボタンや通知をあなたの言語に変更することができます。 ですのでたとえば「Cancel」ボタンがここで定義した言語に翻訳されます。 [Djangoには多くの言語が付属しています](https://docs.djangoproject.com/ja/2.0/ref/settings/#language-code)。
+言語コードは、あなたの利用する言語を設定する必要があります。 英語の場合は`en`、ドイツ語の場合は`de`、国コードの場合は`de`はドイツ、`ch`はスイスです。 あなたの母国語が英語でない場合、これを追加すると、Djangoのデフォルトのボタンや通知が設定した言語に変更されます。 ですのでたとえば「Cancel」ボタンがここで定義した言語に翻訳されます。 [Djangoは多くの言語に対応しています。](https://docs.djangoproject.com/en/2.2/ref/settings/#language-code).
 
 別の言語を使用する場合は、次の行を変更して言語コードを変更します。
 
@@ -109,7 +109,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 > **メモ**: Chromebook を使っている人は、次の1行を settings.py ファイルの最後に追加してください。 `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
-> cloud9 のサービスを使っている人は、`.c9users.io` も `ALLOWED_HOSTS` に追加してください。
+> cloud9を使っている人は、 `ALLOWED_HOSTS` に、`.amazonaws.com` を追加しましょう。
 
 ## データベースをセットアップする
 
@@ -148,6 +148,8 @@ DATABASES = {
       Applying auth.0005_alter_user_last_login_null... OK
       Applying auth.0006_require_contenttypes_0002... OK
       Applying auth.0007_alter_validators_add_error_messages... OK
+      Applying auth.0008_alter_user_username_max_length... OK
+      Applying auth.0009_alter_user_last_name_max_length... OK
       Applying sessions.0001_initial... OK
     
 
@@ -176,28 +178,28 @@ Windows上で、`UnicodeDecodeError`で失敗した場合は、代わりに次�
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-これであなたのウェブサイトが稼働していることを確認するだけです。 ブラウザ（Firefox、Chrome、Safari、Internet Explorerなど）を開き、次のアドレスを入力します。
+Webサイトが動いていることを確認してください。ブラウザで以下のアドレスを開いてみましょう。（Firefox, Chrome, Safari, Internet Explorerなど、好きなブラウザを使って大丈夫です）
 
 {% filename %}ブラウザ{% endfilename %}
 
     http://127.0.0.1:8000/
     
 
-Chromebookを使用している場合は、次のURLからテストサーバーにアクセスします。
+Chromebook や Cloud9 を利用している場合は、ウェブサーバーのコマンド画面の右上にあるポップアップ画面のURLをクリックしましょう。 URLはこんな感じになっていると思います。
 
 {% filename %}ブラウザ{% endfilename %}
 
-    https://django-girls-<your cloud9 username>.c9users.io
+    https://<a bunch of letters and numbers>.vfs.cloud9.us-west-2.amazonaws.com
     
 
 おめでとう！ たった今、あなたは最初のウェブサイトを作って、それをウェブサーバーの上で起動しました！ 素晴らしいですね！
 
 ![インストールできました！](images/install_worked.png)
 
-Webサーバーが稼働している間は、追加のコマンドを入力するための新しいコマンドラインプロンプトは表示されません。 新しいテキストを受け入れますが、新しいコマンドは実行しません。 これは、Webサーバーが動作している間はずっとリクエストを待つためです。
+コマンド画面は、一度に一つのコマンドしか実行できません。先程開いたコマンド画面では、Webサーバーが今動いています。 ウェブサーバーが動いている間、次のリクエストを待っています。このコマンドラインプロンプトに新しいテキストを書いても、新しいコマンドとして実行しません。
 
 > Webサーバーの仕組みについては、「インターネットの仕組み」の章を参照してください。
 
-Webサーバーの実行中に追加のコマンドを入力するには、新しいターミナルウィンドウを開き、virtualenvをアクティブにします。 Webサーバーを停止するには、実行中のウィンドウに戻り、CTRL + C - ControlキーとCキーを同時に押します（WindowsではCtrl + Breakキーを押す必要があります）。
+Webサーバーを動かしながら、同時に新たにコマンドを追加したい場合は、新しいコマンドプロンプトのウィンドウを開いて、仮想環境をアクティベイトして実行しましょう。２つ目のウィンドウを開く方法が分からなくなったら、[コマンドラインをつかってみよう](../intro_to_command_line/README.md)の章に戻ってやり方を確認しましょう。 Webサーバーを停止するには、実行中のウィンドウに戻り、CTRL + C - ControlキーとCキーを同時に押します（WindowsではCtrl + Breakキーを押す必要があります）。
 
 次のステップに進む準備はできましたか？ 今度は実際にコンテンツを作り始めましょう！

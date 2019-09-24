@@ -2,7 +2,7 @@
 
 # アプリケーションを拡張しよう
 
-もう、ウェブサイトを作るのに必要な全ての章は終わりました。どのようにモデル、URL、ビュー、テンプレートを書いたら良いかわかっていますし、またウェブサイトを素敵にするやり方もわかります。
+もうウェブサイトを作るのに必要な全ての章は終わりました。どのようにモデル、URL、ビュー、テンプレートを書いたらよいかわかっていますし、またウェブサイトを素敵にするやり方もわかります。
 
 さあ練習しましょう！
 
@@ -23,19 +23,19 @@
             <div class="date">
                 {{ post.published_date }}
             </div>
-            <h1><a href="">{{ post.title }}</a></h1>
+            <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
 {% endblock %}
 ```
 
-{% raw %}投稿リストの投稿のタイトルから投稿の詳細ページへのリンクを作りたいです。 投稿の詳細ページにリンクするように`<h1><a href="">{{ post.title }}</a></h1>`を変更しましょう。{% endraw %}
+{% raw %}投稿リストの投稿のタイトルから投稿の詳細ページへのリンクを作りたいです。 投稿の詳細ページにリンクするように`<h2><a href="">{{ post.title }}</a></h2>`を変更しましょう。{% endraw %}
 
 {% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+<h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
 ```
 
 {% raw %}不思議な` {％ url 'post_detail' pk = post.pk ％}`を説明します。 気づいたかもしれませんが、`{% %}`という表記はDjangoのテンプレートタグを使用していることを意味しています。 今私たちはこれをURLを作るために使います！{% endraw %}
@@ -54,7 +54,7 @@
 
 最初の投稿の詳細がこの**URL**で表示されるようにします：http://127.0.0.1:8000/post/1/
 
-投稿の内容を表示する`post_detail`という*ビュー*をDjangoに示すように、`blog/urls.py`ファイルでURLを作りましょう。 `blog/urls.py`をコードエディタで開いて、`path('post/<int:pk>)/', views.post_detail, name='post_detail'),`という行を追加しましょう。ファイルは次のようになるでしょう。
+投稿の内容を表示する`post_detail`という*ビュー*をDjangoに示すように、`blog/urls.py`ファイルでURLを作りましょう。 `blog/urls.py`をコードエディタで開いて、`path('post/<int:pk>/', views.post_detail, name='post_detail'),`という行を追加しましょう。ファイルは次のようになるでしょう。
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
@@ -84,7 +84,7 @@ urlpatterns = [
 
 ## 投稿の詳細ビューを追加する
 
-今回は*ビュー*に追加のパラメータ`pk`が与えられます。 私たちの*ビュー*はそれを受け取る必要がありますね？ そこで関数を`def post_detail(request, pk):`として定義します。 urlsで指定した名前（`pk`）とまったく同じ名前を使用する必要があることに注意してください。 この変数を省略するのは正しくないのでエラーになってしまいます！
+今回は*ビュー*に追加のパラメータ`pk`が与えられます。 私たちの*ビュー*はそれを受け取る必要がありますね？ そこで関数を`def post_detail(request, pk):`として定義します。 `urls`で指定した名前（`pk`）とまったく同じ名前を使用する必要があることに注意してください。 この変数を省略するのは正しくないのでエラーになってしまいます！
 
 今、私たちは1つだけブログ投稿を取得したいと考えています。 これを行うには、次のようなクエリセットが使用できます。
 
@@ -154,7 +154,7 @@ def post_detail(request, pk):
                 {{ post.published_date }}
             </div>
         {% endif %}
-        <h1>{{ post.title }}</h1>
+        <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endblock %}
@@ -162,7 +162,7 @@ def post_detail(request, pk):
 
 もう一度`base.html`を拡張します。 `content`ブロックでは、投稿の公開日（存在する場合）、タイトル、およびテキストを表示します。 ここで重要なポイントについて見てみます。
 
-{% raw %}`{% if ... %} ...  {％endif％}`は、何かをチェックしたいときに使用できるテンプレートタグです。 (`if ... else...` を**Python入門**のチャプターでやったのを覚えていますか？) この場合、私たちは投稿の`公開日（published_date）`が空でないかを確認したいです。{% endraw %}
+{% raw %}`{% if ... %} ...  {％endif％}`は、何かをチェックしたいときに使用できるテンプレートタグです。 (`if ... else...`を**Python入門**のチャプターでやったのを覚えていますか？) この場合、投稿の`公開日（published_date）`が空でないかを確認します。{% endraw %}
 
 これで、ページを更新して`TemplateDoesNotExist`がもうなくなったかどうか確認できます。
 
@@ -185,14 +185,14 @@ def post_detail(request, pk):
 
 それから、[PythonAnywhere Bash コンソール](https://www.pythonanywhere.com/consoles/)で：
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
+    $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-(`<your-pythonanywhere-username>`の部分を、自分の実際のPythonAnywhereのユーザー名に山カッコをはずして置き換えることを忘れずに)
+（`<your-pythonanywhere-domain>`の部分を、自分の実際のPythonAnywhereのユーザー名に山カッコをはずして置き換えることを忘れずに。）
 
 ## サーバー上の静的ファイルの更新
 
@@ -200,15 +200,15 @@ PythonAnywhereのようなサーバは、（CSSファイルのような）「静
 
 もし仮想環境（virtualenv）が有効になっていなければ有効化するところから始めましょう (PythonAnywhereではこれを行うために`workon`というコマンドを使用します。これはあなたが自身のコンピュータで使用している`source myenv/bin/activate`コマンドと同じようなものです) 。
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ workon <your-pythonanywhere-username>.pythonanywhere.com
+    $ workon <your-pythonanywhere-domain>.pythonanywhere.com
     (ola.pythonanywhere.com)$ python manage.py collectstatic
     [...]
     
 
 `manage.py collectstatic`コマンドは、`manage.py migrate`のようなものです。 私たちはコードをいくつか変更してから、Djangoにサーバの静的ファイルのコレクションまたはデータベースに変更を*適用*するよう指示します。
 
-いずれにしても、[「Web」ページ](https://www.pythonanywhere.com/web_app_setup/)（コンソールの右上のメニューボタンから）を開き、**Reload**をクリックする準備ができました。そしてそれから https://yourname.pythonanywhere.comページを見て結果を確認しましょう。
+いずれにしても、[「Web」ページ](https://www.pythonanywhere.com/web_app_setup/)（コンソールの右上のメニューボタンから）を開き、**Reload**をクリックする準備ができました。そうしたらhttps://subdomain.pythonanywhere.comを見て結果を確認しましょう。
 
 うまくいってるはずです！おめでとう :)
