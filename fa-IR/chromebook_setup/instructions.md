@@ -22,9 +22,9 @@ IDE ابری ابزاری است که به شما دسترسی به یک ویر�
 
 #### AWS Cloud9
 
-Currently Cloud 9 requires you to sign up with AWS and enter credit card information.
+در حال حاضر برای استفاده از Cloud 9 باید با اکانت AWS ثبت نام کنید و مشخصات کارت اعتباری را نیز وارد کنید.
 
-1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+1. Cloud 9 را از [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp) نصب کنید
 2. Go to [c9.io](https://c9.io) and click *Get started with AWS Cloud9*
 3. Sign up for an AWS account (requires credit card information, but you can use it for free)
 4. In the AWS Dashboard, enter *Cloud9* in the search bar and click it
