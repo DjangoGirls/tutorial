@@ -30,7 +30,7 @@ IDE ابری ابزاری است که به شما دسترسی به یک ویر�
 4. در داشبورد AWS عبارت *Cloud9* را در محل جستجو وارد کنید و کلید جستجو را بزنید
 5. در داشبورد Cloud 9 بر روی *Create environment* کلیک کنید
 6. نام آن را *django-girls* بگذارید
-7. While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
+7. در هنگام انجام تنظیمات، در بخش "Environment Type" گزینه *Create a new instance for environment (EC2)* را و در بخش "Instance type" گزینه *t2.micro* را انتخاب کنید ("Free-tier eligible" را نشان خواهد داد). The default cost-saving setting is fine and you can keep the other defaults.
 8. Click *Next step*
 9. Click *Create environment*
 
