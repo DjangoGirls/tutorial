@@ -25,11 +25,11 @@ IDE ابری ابزاری است که به شما دسترسی به یک ویر�
 در حال حاضر برای استفاده از Cloud 9 باید با اکانت AWS ثبت نام کنید و مشخصات کارت اعتباری را نیز وارد کنید.
 
 1. Cloud 9 را از [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp) نصب کنید
-2. Go to [c9.io](https://c9.io) and click *Get started with AWS Cloud9*
-3. Sign up for an AWS account (requires credit card information, but you can use it for free)
-4. In the AWS Dashboard, enter *Cloud9* in the search bar and click it
-5. In the Cloud 9 dashboard, click *Create environment*
-6. Name it *django-girls*
+2. به [c9.io](https://c9.io) بروید و بر روی *Get started with AWS Cloud9* کلیک کنید
+3. با یک حساب AWS ثبت نام کنید (به اطلاعات کارت اعتباری نیاز است اما می‌توانید به رایگان از آن استفاده کنید)
+4. در داشبورد AWS عبارت *Cloud9* را در محل جستجو وارد کنید و کلید جستجو را بزنید
+5. در داشبورد Cloud 9 بر روی *Create environment* کلیک کنید
+6. نام آن را *django-girls* بگذارید
 7. While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
 8. Click *Next step*
 9. Click *Create environment*
