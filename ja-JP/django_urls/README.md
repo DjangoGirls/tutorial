@@ -49,7 +49,7 @@ urlpatterns = [
 
 `mysite/urls.py` ファイルは簡潔なままにしておきたいので、`mysite/urls.py` では`blog` アプリからURLをインポートするだけにしましょう。
 
-まず、`blog.urls` をインポートする行を追加しましょう。 ここで、`include`関数を使いたいので`from django.urls…`の行を変更しそのインポートを追加する必要があります。
+まず、`blog.urls` をインポートする行を追加しましょう。 ここで、`include`関数を使いたいので、`from django.urls…`の行を変更し、そのインポートを追加する必要があります。
 
 `mysite/urls.py` ファイルはこのようになります：
 
