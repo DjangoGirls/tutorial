@@ -151,7 +151,7 @@ PythonAnywhereにWebアプリケーションをデプロイするには、コー
 
 `Collecting pythonanywhere` のようなメッセージがいくつか出力され、最終的に`Successfully installed (...) pythonanywhere- (...)`という行で終わると思います。
 
-GitHub からアプリを自動的に構成するためのヘルパーを実行します。 PythonAnywhereのコンソールに次のように入力します（GitHubからクローンしたときのURLと一致するように、`<your-github-username>`の代わりにGitHubユーザー名を使用することを忘れないでください）：
+GitHub からアプリを自動的に構成するためのヘルパーを実行します。 PythonAnywhereのコンソールに次のように入力します（GitHubからクローンするときのURLと一致するように、`<your-github-username>`の代わりにご自身のGitHubユーザー名を使用することを忘れないでください）：
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
