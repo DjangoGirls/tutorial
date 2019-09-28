@@ -4,7 +4,7 @@
 
 ## Visual Studio Code
 
-Visual Studio Codeは、マイクロソフトがWindowsとLinuxとmacOS向けに開発したソースコードエディタです。 デバッグ、シンタックスハイライト、コード補完、スニペット、リファクタリングなど多くの機能があります。
+Visual Studio Codeは、マイクロソフトがWindowsとLinuxとmacOS向けに開発したソースコードエディタです。 デバッグのサポート、組み込まれたGit操作、シンタックスハイライト、かしこいコード補完、スニペット、リファクタリングなど多くの機能があります。
 
 [ダウンロード](https://code.visualstudio.com/download)
 
@@ -22,7 +22,7 @@ Sublime Text はとても人気のあるエディタで、無料の試用期間�
 
 ## Atom
 
-Atom は 人気のあるオープンソースかつ無料で利用ができるエディタです。Windows、OS X、Linuxで利用可能です。Atom は[GitHub](https://github.com/)が開発しています。
+Atomも人気のあるエディタで、無料でオープンソース、そしてWindows、OS X、Linuxで利用可能です。Atomは[GitHub](https://github.com/)が開発しています。
 
 [ダウンロード](https://atom.io/)
 
