@@ -312,7 +312,7 @@ Djangoはフォームのすべてのフィールドが正しいことを検証�
 {% endblock %}
 ```
 
-`blog/urls.py`をエディタで開き、次の内容を追加します。
+`blog/urls.py`をエディタで開き、次の行を追加します。
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -370,13 +370,13 @@ form = PostForm(instance=post)
 
 おめでとう！アプリケーションが完成しました。
 
-Djangoのフォームについてもっと知りたい場合、Django Projectのドキュメントを読んでください。https://docs.djangoproject.com/ja/2.2/topics/forms/
+Djangoのフォームについてもっと知りたい場合、Djangoのドキュメントを読んでください。https://docs.djangoproject.com/ja/2.2/topics/forms/
 
 ## セキュリティ
 
 リンクをクリックするだけで新しい投稿を作成できることは素晴らしいことです！ しかし、今、あなたのサイトにアクセスした人は誰でも新しいブログ投稿を作成することができます。それはおそらくあなたが望むものではありません。 ボタンはあなたのためには表示されますが、他の人には表示されないようにしましょう。
 
-`blog/templates/blog/base.html` をエディタで開き、`page-header` と名付けた `div ` とそこに以前に入力したアンカータグを見つけます。 これは次のようになります。
+`blog/templates/blog/base.html` をエディタで開き、`page-header` と名付けた `div` とそこに以前に入力したアンカータグを見つけます。 これは次のようになっています。
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
