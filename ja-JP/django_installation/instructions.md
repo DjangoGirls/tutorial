@@ -150,7 +150,7 @@ data-collapse=true ces-->
 >     $ . myvenv\Scripts\activate.ps1
 >     
 > 
-> エディターとコマンドラインのウィンドウを行き来する必要がなくなるのが利点です。
+> エディタのウィンドウとコマンドラインのウィンドウを行き来する必要がなくなるのが利点です。
 
 `virtualenv` が起動すると、プロンプトの行頭に`(myvenv)`が現れます。
 
@@ -173,7 +173,7 @@ OK,これでDjangoのインストール前に入れておきたい依存関係�
 
 Requirementsファイルは`pip install`でインストールするためのパッケージリストが記載されているファイルです:
 
-前にインストールしたコードエディタを使用して、最初に `requirements.txt` ファイルを `djangogirls/` フォルダーの中に作ります。 コードエディタで新しいファイルを開いて`djangogirls/`フォルダ内に`requirements.txt`いう名前で保存してください。 ディレクトリはこんな感じになっているはずです:
+前にインストールしたエディタを使用して、最初に `requirements.txt` ファイルを `djangogirls/` フォルダの中に作ります。 エディタで新しいファイルを開いて`djangogirls/`フォルダ内に`requirements.txt`という名前で保存してください。 ディレクトリはこんな感じになっているはずです:
 
     djangogirls
     └───requirements.txt
