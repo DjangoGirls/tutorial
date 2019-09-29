@@ -1,8 +1,8 @@
-PythonAnywhere はクラウド上のサーバーでPythonのコードを走らせるためのサービスです。私たちはこれを私たちのサイトをホスティングして、インターネット上で動かし続けるために使います。
+PythonAnywhereはクラウド上のサーバーでPythonのコードを走らせるためのサービスです。私たちのサイトをホスティングして、インターネット上で動かし続けるために使います。
 
 今までの章で作ったブログをPythonAnywhere上にホスティングします。PythonAnywhereの「Beginner」でサインアップしましょう(アカウントは無料枠で大丈夫です。クレジットカードは必要ありません)。
 
-* [https://www.pythonanywhere.com](https://www.pythonanywhere.com/)
+* [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
 ![PythonAnywhereのサインアップページ。無料の「Beginner」アカウントを作るためのボタンがあります。](../deploy/images/pythonanywhere_beginner_account_button.png)
 
