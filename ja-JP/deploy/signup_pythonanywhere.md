@@ -14,6 +14,6 @@ PythonAnywhereはクラウド上のサーバーでPythonのコードを走らせ
 
 ![ページ右上にあるAccountページへのリンク](../deploy/images/pythonanywhere_account.png)
 
-「Account」ページに移動したら、「API Token」というタブを選んで、「Create new API token」のボタンを押してください。
+Accountページに移動したら、「API Token」というタブを選んで、「Create new API token」のボタンを押してください。
 
-![「Account」ページの「API Token」のタブ](../deploy/images/pythonanywhere_create_api_token.png)
+![Accountページの「API Token」のタブ](../deploy/images/pythonanywhere_create_api_token.png)
