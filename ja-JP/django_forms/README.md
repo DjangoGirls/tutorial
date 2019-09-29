@@ -89,7 +89,7 @@ class PostForm(forms.ModelForm):
 
 ## URL
 
-`blog/urls.py`をエディタで開き、次の内容を追加します。
+`blog/urls.py`をエディタで開き、次の行を追加します。
 
 {% filename %}blog/urls.py{% endfilename %}
 
