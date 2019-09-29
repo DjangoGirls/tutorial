@@ -138,7 +138,7 @@ def post_new(request):
 
 ## テンプレート
 
-`blog/templates/blog`ディレクトリに`post_edit.html`ファイルを作り、コードエディタで開きましょう。フォームを動かすにはいくつかやることがあります。
+`blog/templates/blog`ディレクトリに`post_edit.html`ファイルを作り、エディタで開きましょう。フォームを動かすにはいくつかやることがあります。
 
 * フォームを表示する必要があります。 私たちは（例えば）{% raw %}`{{ form.as_p }}`{% endraw %} でこれを行うことができます。
 * 上記の行は HTMLのformタグでラップする必要があります：`<form method="POST">...</form>`
