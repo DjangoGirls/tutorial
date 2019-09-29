@@ -155,7 +155,7 @@ GitHub からアプリを自動的に構成するためのヘルパーを実行�
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
+    $ pa_autoconfigure_django.py --python=3.6 https://github.com/<your-github-username>/my-first-blog.git
     
 
 実行しているところを見れば、何をしているのかわかるでしょう。
