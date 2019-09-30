@@ -6,7 +6,7 @@ Za chwilę napiszesz swoją pierwszą linijkę kodu. Jesteś już podekscytowana
 
 **Pozwól, że przedstawimy Ci, Twojego pierwszego przyjaciela: wiersz polecenia!**
 
-Następujące kroki pokażą Ci, jak wykorzystać tajemnicze czarne okno, które używają wszyscy hakerzy. Na początku może to wyglądać nieco przerażająco ale tak naprawdę to tylko zachęta do wpisywania komend.
+Następujące kroki pokażą Ci, jak wykorzystać tajemnicze czarne okno, którego używają wszyscy hakerzy. Na początku może to wyglądać nieco przerażająco ale tak naprawdę to tylko zachęta do wpisywania komend.
 
 > **Uwaga** Podczas tego kursu będziemy używać terminów "katalog" i "folder" zamiennie, ponieważ oznaczają one tę samą rzecz.
 
