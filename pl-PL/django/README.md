@@ -20,7 +20,7 @@ Kiedy serwer otrzymuje żądanie, przekazuje je dalej do Django, aby ten ustali�
 
 Wyobraź sobie listonosza niosącego list. Idzie ulicą i porównuje każdy numer domu z adresem na kopercie. List zostawia w skrzynce tego domu, którego adres pasuje. Tak samo działa urlresolver!
 
-W funkcji *widoku* dzieje się wszystko to, co najciekawsze: tutaj możemy połączyć się z bazą danych i wyszukać potrzebne nam informacje. Może użytkownik poprosił o zmianę danych? To tak, jakbyś wysłała list o treści "proszę o zmianę opisu mojego stanowiska pracy". *Widok* może sprawdzić, czy masz takie uprawnienia, a następnie dokona zmiany opisu i odeśle odpowiedź "Zrobione!". Wówczas *widok*generuje odpowiedź, a Django wysyła ją do przeglądarki użytkownika.
+W funkcji *widoku* dzieje się wszystko to, co najciekawsze: tutaj możemy połączyć się z bazą danych i wyszukać potrzebne nam informacje. Może użytkownik poprosił o zmianę danych? To tak, jakbyś wysłała list o treści "proszę o zmianę opisu mojego stanowiska pracy". *Widok* może sprawdzić, czy masz takie uprawnienia, a następnie dokona zmiany opisu i odeśle odpowiedź "Zrobione!". Wówczas *widok* generuje odpowiedź, a Django wysyła ją do przeglądarki użytkownika.
 
 Powyższy opis jest nieco uproszczony, ale znajomość niuansów technicznych nie jest Ci na razie potrzebna. Wystarczy, że zrozumiesz ogólną zasadę działania.
 
