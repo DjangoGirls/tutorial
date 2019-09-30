@@ -54,7 +54,7 @@ By wykonać potęgowanie, powiedzmy podnieść 2 do potęgi 3, musimy wpisać: {
 
 Pobaw się tym przez chwilę, a potem wróć tutaj. :)
 
-Ja widzisz, Python jest świetnym kalkulatorem. Jeżeli zastanawiasz się, co możesz z nim jeszcze zrobić…
+Jak widzisz, Python jest świetnym kalkulatorem. Jeżeli zastanawiasz się, co możesz z nim jeszcze zrobić…
 
 ## Tekstowy typ danych (string)
 
