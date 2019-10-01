@@ -6,7 +6,7 @@
 
 それでは、実際にやってみましょう。
 
-まず`blog/views.py`をコードエディタで開きます。今のところ `post_list`*ビュー* は、以下のようになっているでしょう。
+まず`blog/views.py`をエディタで開きます。今のところ `post_list`*ビュー* は、以下のようになっているでしょう。
 
 {% filename %}blog/views.py{% endfilename %}
 
