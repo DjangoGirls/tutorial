@@ -8,7 +8,7 @@
 
 ## blog/views.py
 
-では、早速 blog/views.py をコードエディタで開いてみましょう：
+では、早速 blog/views.py をコードエディタで開いて何があるか見てみましょう：
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -41,4 +41,4 @@ def post_list(request):
 
 サーバーは実行されていることはわかるのですが、正しく表示されないのはなぜでしょう？ 心配しないで！ただのエラーページです！ コンソールでのエラーメッセージと同じように、これは実際にかなり便利です。 *TemplateDoesNotExist* と書いてありますね。 それでは次の章でテンプレートを作って、エラーを解決しましょう！
 
-> Djangoのビューについてもっと知りたいのなら、オフィシャルドキュメントをぜひ読んでみてください。 https://docs.djangoproject.com/ja/2.2/topics/http/views/
+> Djangoのビューについてもっと知りたいのなら、公式ドキュメントをぜひ読んでみてください。 https://docs.djangoproject.com/ja/2.2/topics/http/views/
