@@ -17,7 +17,7 @@ Djangoのまた別の素敵なところは**テンプレート拡張**です。�
                 post_list.html
     
 
-それからコードエディタで開いて、以下のように`post_list.html`から`base.html`ファイルにすべてコピーしましょう。
+それからエディタで開いて、以下のように`post_list.html`から`base.html`ファイルにすべてコピーしましょう。
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -86,7 +86,7 @@ Djangoのまた別の素敵なところは**テンプレート拡張**です。�
 
 でも何のために？ あなたはただ`block`を作っただけです！ `{% block %}` テンプレートタグを、これからHTMLを挿入しようとする場所に使いました。 そのHTMLはこのテンプレート (`base.html`) を拡張した別のテンプレートからやってきます。 どうやって行うかはすぐに示します。
 
-`base.html`を保存し、もう一度`blog/templates/blog/post_list.html`をコードエディタで開きます。 {% raw %} `{% for post in posts %}` の上と `{% endfor %}` の下すべてを削除しましょう。 それが終わったら以下のようになっていると思います。{% endraw %}
+`base.html`を保存し、もう一度`blog/templates/blog/post_list.html`をエディタで開きます。 {% raw %} `{% for post in posts %}` の上と `{% endfor %}` の下すべてを削除しましょう。 それが終わったら以下のようになっていると思います。{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
