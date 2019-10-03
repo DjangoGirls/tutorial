@@ -22,7 +22,7 @@
 * [Django modelleri](django_models/README.md)
 * [Django admin](django_admin/README.md)
 * [Yayına alın!](deploy/README.md)
-* [Django URLs](django_urls/README.md)
+* [Django URL'leri](django_urls/README.md)
 * [Django views - yaratma zamanı geldi!](django_views/README.md)
 * [HTML'ye giriş](html/README.md)
 * [Django ORM ve QuerySets (Sorgu Setleri)](django_orm/README.md)
