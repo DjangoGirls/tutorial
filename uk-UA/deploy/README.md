@@ -58,7 +58,7 @@ Git стежитиме за змінам у всіх файлах у цій ди
     $ git status
     On branch master
     
-    Initial commit
+    No commits yet
     
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
