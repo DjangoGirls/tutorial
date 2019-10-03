@@ -16,7 +16,7 @@ Twitter yazılımcıları tarafından geliştirilmeye başlanmış ve şu anda d
 
 ## Bootstrap kurulumu
 
-Bootstrap yüklemek için `.html` uzantılı dostamızı kod düzenleyicisinde açalım ve `<head>` bölümüne şunları ekleyelim:
+Bootstrap yüklemek için `.html` uzantılı dosyamızı kod düzenleyicisinde açalım ve `<head>` bölümüne şunları ekleyelim:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
