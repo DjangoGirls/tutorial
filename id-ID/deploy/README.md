@@ -57,7 +57,7 @@ Ketiga tempat ini penting bagi Anda. Komputer lokal Anda akan menjadi tempat pen
 <pre><code>$ git status
 On branch master
 
-Initial commit
+No commits yet
 
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
