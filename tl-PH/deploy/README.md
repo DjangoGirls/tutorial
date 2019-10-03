@@ -58,7 +58,7 @@ Mainam na gamitin mo muna ang `git status` na commmand bago ka mag `git add` o k
     $ git status
     On branch master
     
-    Initial commit
+    No commits yet
     
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
