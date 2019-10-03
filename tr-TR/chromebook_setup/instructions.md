@@ -22,11 +22,11 @@ PaizaCloud Cloud IDE'nin terminali sizin komutlarınızı girmeniz icin hazırla
 
 #### AWS Cloud9
 
-Currently Cloud 9 requires you to sign up with AWS and enter credit card information.
+Cloud 9 kullanmak için bir AWS üyeliğine sahip olmanız ve kredi kartı bilgilerinizi girmeniz gerekiyor.
 
-1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Go to [c9.io](https://c9.io) and click *Get started with AWS Cloud9*
-3. Sign up for an AWS account (requires credit card information, but you can use it for free)
+1. [Chrome Web Mağazası](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)'ndan Cloud 9 uygulamasını yükleyin
+2. [c9.io](https://c9.io) sayfasına gidin ve *AWS Cloud9'u kullanmaya başlayın* butonuna tıklayın
+3. Bir AWS hesabı açın (kredi kartı bilgilerinizi girmeniz gerekiyor, fakat ücretsiz kullanabilirsiniz)
 4. In the AWS Dashboard, enter *Cloud9* in the search bar and click it
 5. In the Cloud 9 dashboard, click *Create environment*
 6. Name it *django-girls*
