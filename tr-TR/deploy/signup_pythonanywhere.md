@@ -1,6 +1,6 @@
 PythonAnywhere, "bulutta" bulunan sunucularda Python kodunu çalıştırmak için kullanılan bir hizmettir. Sitemizi, canlı ve internette barındırmak için bunu kullanacağız.
 
-We will be hosting the blog we're building on PythonAnywhere. Sign up for a "Beginner" account on PythonAnywhere (the free tier is fine, you don't need a credit card).
+Geliştirdiğimiz blogu PythonAnywhere üzerinde sunacağız. PythonAnywhere'de bir "Beginner" hesabı açın (ücretsiz seviye yeterli, kredi kartına ihtiyacınız yok).
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
@@ -14,6 +14,6 @@ Bu yalnızca bir kere yapmanız gereken bir şey. PythonAnywhere için kaydoldu�
 
 ![Hesap bağlantısı sayfanın sağ üst tarafında](../deploy/images/pythonanywhere_account.png)
 
-then select the tab named "API token", and hit the button that says "Create new API token".
+sonra "API token" isimli sekmeyi seçin ve "Create new API token" yazan butona tıklayın.
 
 ![Hesaplar sayfasındaki API token sekmesi](../deploy/images/pythonanywhere_create_api_token.png)
