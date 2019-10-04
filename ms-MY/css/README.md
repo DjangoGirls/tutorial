@@ -300,6 +300,6 @@ Woohoo! Nampak hebat, kan? Melihat kod kita hanya disisipkan untuk mencari tempa
 
 Jangan takut untuk bermain-main dengan CSS ini sedikit dan cuba untuk mengubah beberapa hal. Bermain dengan CSS boleh membantu anda untuk memahami apa yang perkara-perkara yang berbeza lakukan. Jika anda memecahkan sesuatu, jangan khawatir – anda sentiasa boleh membatalkannya!
 
-We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). Ia boleh membantu anda mempelajari semua tentang membuat anda laman web lebih cantik dengan CSS.
+We really recommend taking the free online courses "Basic HTML & HTML5" and "Basic CSS" on [freeCodeCamp](https://learn.freecodecamp.org/). They can help you learn all about making your websites prettier with HTML and CSS.
 
 Sedia untuk bab seterusnya ?! :)
