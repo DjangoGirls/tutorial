@@ -41,7 +41,7 @@ Now you should see an interface with a sidebar, a big main window with some text
     yourusername:~/workspace $
     
 
-This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+Aşağıdaki bölge sizin terminalizdir. Bu terminali kullanarak Cloud 9 bigisayarına komut gönderebilirsiniz. Tercih ederseniz bu pencereyi büyütebilirsiniz.
 
 ### Sanal ortam (Virtual environment)
 
