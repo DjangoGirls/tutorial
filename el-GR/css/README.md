@@ -303,6 +303,6 @@ Xpath: /pre[14]/code
 
 Μην φοβάστε να πειραματιστείτε με το CSS λίγο και να προσπαθήσετε να αλλάξετε μερικά πράγματα. Παίζοντας με το CSS μπορεί να σε κάνει να καταλάβεις τι κάνουν τα διάφορα πράγματα. Εάν κάτι πάει στραβά μην ανησυχείτε - μπορείτε πάντα να το αναιρέσετε!
 
-Συστήνουμε να πάρετε αυτή την δωρεάν online σειρά μαθημάτων [Codeacademy HTML &](https://www.codecademy.com/tracks/web). Μπορεί να σας βοηθήσει να μάθετε τα πάντα σχετικά με το να κάνεις τις ιστοσελίδες σας ομορφότερες με το CSS.
+We really recommend taking the free online courses "Basic HTML & HTML5" and "Basic CSS" on [freeCodeCamp](https://learn.freecodecamp.org/). They can help you learn all about making your websites prettier with HTML and CSS.
 
 Είστε έτοιμοι για το επόμενο κεφάλαιο; :)
