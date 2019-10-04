@@ -45,7 +45,7 @@ Aşağıdaki bölge sizin terminalizdir. Bu terminali kullanarak Cloud 9 bigisay
 
 ### Sanal ortam (Virtual environment)
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. Onları farklı projemiz ile ilgili kodların birbirine karışmaması için kullanırız.
 
 Run:
 
