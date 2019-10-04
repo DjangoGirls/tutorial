@@ -300,6 +300,6 @@ Uau! Arată super, așa-i? Hai să ne uităm la codul care l-am copiat ca să g�
 
 Să nu ne temem să schimbăm acest CSS un pic și să modificăm niște lucruri. Jucîndu-ne cu CSS putem înțelege ce fac diferite lucruri. Dacă ceva se strică, fără griji - putem oricînd să anulăm schimbarea!
 
-Recomandăm acest curs online gratuit [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). Ne poate ajuta să învățăm tot despre cum să ne facem website-ul mai frumos cu CSS.
+We really recommend taking the free online courses "Basic HTML & HTML5" and "Basic CSS" on [freeCodeCamp](https://learn.freecodecamp.org/). They can help you learn all about making your websites prettier with HTML and CSS.
 
 Gata pentru capitolul următor?! :)
