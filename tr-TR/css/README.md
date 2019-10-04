@@ -299,6 +299,6 @@ Yaşasın! Harika görünüyor değil mi? Şimdi yapıştırdığımız koda bak
 
 CSS ile biraz oynamaktan çekinme ve birkaç şeyi değiştirmeye calış. CSS ile oynamak neyin neyi etkilediğini anlamak için çok faydalı. Bir şey bozarsanız, merak etmeyin- her zaman geri alabilirsiniz!
 
-Ücretsiz [Codeacademy HTML & CSS kursu](https://www.codecademy.com/tracks/web)nu izlemenizi gerçekten öneririz. Web sitelerini CSS'le güzelleştirmekle ilgili herşeyi öğrenmenize yardımcı olabilir.
+We really recommend taking the free online courses "Basic HTML & HTML5" and "Basic CSS" on [freeCodeCamp](https://learn.freecodecamp.org/). They can help you learn all about making your websites prettier with HTML and CSS.
 
 Sonraki bölüm için hazır mısınız?! :)
