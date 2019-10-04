@@ -610,7 +610,7 @@ $
 
 これで、コマンドプロンプトに戻りました。
 
-前に、[コードエディタ](../code_editor/README.md)セクションからエディタを選択しました。 ここでエディタを開いて、新しいファイルにコードを書き込んでみましょう（Chromebookを使用している場合は、Cloud IDEで新しいファイルを作成し、含まれているコードエディタにあるファイルを開きます）。
+前に、[コードエディタ](../code_editor/README.md)セクションからエディタを選択しました。 ここでエディタを開いて、新しいファイルにコードを書き込んでみましょう（Chromebookを使用している場合は、Cloud IDEで新しいファイルを作成し、そのファイルを開きます。ファイルをcloud IDEに含まれたコードエディタで開いています）。
 
 {% filename %}editor{% endfilename %}
 
@@ -684,7 +684,7 @@ WindowsのPowerShellでは、次のようになります。
     Hello, Django girls!
     
 
-注：Windowsでは「python3」はコマンドとして認識されません。代わりに「python」とタイプしてファイルを実行します。
+注：Windowsでは「python3」はコマンドとして認識されません。代わりに「python」を使ってファイルを実行します。
 
 {% filename %}command-line{% endfilename %}
 
