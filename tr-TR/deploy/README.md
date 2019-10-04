@@ -205,7 +205,7 @@ Web siteniz şimdi İnternet üzerinden erişilebilir olmalı! PythonAnywhere "W
 - PythonAnywhere API tokeni oluşturmayı unutmak.
 - GitHub URL'nizde bir hata yapmak
 - *"Could not find your settings.py"* hatası genellikle tüm gerekli dosyaların Git'e eklenmemiş ve/veya GitHub'a başarılı olarak push edilmemiş olmasından kaynaklanır. Tekrar Git bölümüne bakın
-- If you previously signed up for a PythonAnywhere account and had an error with collectstatic, you probably have an older version of SQLite (eg 3.8.2) for your account. In that case, sign up for a new account and try the commands in the PythonAnywhere section above.
+- Eğer daha önce PythonAnywhere hesabına kaydolduysanız ve collectstatic hatası ile karşılaştıysanız, büyük ihtimalle hesabınızda SQLite'ın eski versiyonunu (örneğin 3.8.2) kullanıyorsunuzdur. Bu durumda, yeni bir hesap açın ve PythonAnywhere bölümündeki komutları tekrar deneyin.
 
 Websitenizi ziyaret ettiğiniz zaman bir hata ile karşılaşırsanız ilk bakacağınız yer **error log** dosyasıdır. PythonAnywhere [Web](https://www.pythonanywhere.com/web_app_setup/) sekmesinde bu dosyaya link bulabilirsiniz. Hata mesajlarını buradan kontrol edebilrisiniz; en yakın zamandaki hatalar en sonda yer alır.
 
