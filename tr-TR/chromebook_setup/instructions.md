@@ -34,7 +34,7 @@ Cloud 9 kullanmak için bir AWS üyeliğine sahip olmanız ve kredi kartı bilgi
 8. *Next step* e tıklayın
 9. *Create environment* a tıklayın
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+Şimdi, bir yan panel, içinde bir takım yazıların olduğu büyük bir ana ekran ve altta aşağıdaki yazıya benzeyen küçük bir panel olan yeni bir arayüz görmelisiniz:
 
 {% filename %}bash{% endfilename %}
 
@@ -45,7 +45,7 @@ Aşağıdaki bölge sizin terminalizdir. Bu terminali kullanarak Cloud 9 bigisay
 
 ### Sanal ortam (Virtual environment)
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. Onları farklı projemiz ile ilgili kodların birbirine karışmaması için kullanırız.
+Sanal ortamlar (virtualenv olarak da bilinir) projelerimiz için faydalı içerik ve kod saklayabileceğimiz özel bir kutu gibidir. Onları farklı projemiz ile ilgili kodların birbirine karışmaması için kullanırız.
 
 Çalıştır:
 
@@ -68,6 +68,6 @@ Bir [GitHub](https://github.com) hesabı açın.
 
 Django Girls rehberi yazdığımız kodun web üzerinden başkaları tarafından erişilmesini sağlayan "yayına alma" (deployment) ile ilgili bir bölüm içerir.
 
-Chromebook kullanırken bunu yapmak biraz garip gelebilir, çünkü zaten internet üzerinde olan bir bilgisayar kullanmaktayız. However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Chromebook kullanırken bunu yapmak biraz garip gelebilir, çünkü zaten internet üzerinde olan bir bilgisayar kullanmaktayız. Ancak, bu kısım yine de faydalıdır, çünkü Cloud 9 çalışma ortamını "gelişme aşamasında" olan bir çalışma ve Python Anywhere de tamamladığız kısmın başkalarına gösterilebileceği yer olarak düşünebiliriz.
 
-Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Öyleyse, şimdi yeni bir Python Anywhere hesabını [www.pythonanywhere.com](https://www.pythonanywhere.com) a girerek açalım.
