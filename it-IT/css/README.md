@@ -299,6 +299,6 @@ Woohoo! È fantastico, vero? Guarda il codice che abbiamo appena incollato, per 
 
 Non aver paura di fare qualche esperimento con i CSS, prova a fare qualche modifica. Giocare con i CSS può aiutarti a capire cosa fanno le varie cose. Se fai qualche errore, non preoccuparti - puoi sempre tornare indietro!
 
-Ti raccomandiamo di fare questo corso gratuito: [Codeacademy HTML & CSS](https://www.codecademy.com/tracks/web). Può aiutarti a imparare tutto ciò che ti serve per rendere carini i tuoi siti con CSS.
+We really recommend taking the free online courses "Basic HTML & HTML5" and "Basic CSS" on [freeCodeCamp](https://learn.freecodecamp.org/). They can help you learn all about making your websites prettier with HTML and CSS.
 
 Pronta per il prossimo capitolo?! :)
