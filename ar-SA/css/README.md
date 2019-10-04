@@ -298,6 +298,6 @@ h1, h2, h3, h4 {
 
 لا تخافوا من العبث مع هذه CSS قليلا ومحاولة تغيير بعض الأشياء. اللعب ب CSS يمكن أن يساعدك على فهم ما تقوم به الأشياء المختلفة. إذا كسرت شيء لا تقلق يمكنك اصلاحه دائما!
 
-نحن ننصحك بأخد هذه الحصة التعليمية المجانية [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). يمكن أن تساعدك على تعلم كل شيء عن جعل مواقع الويب الخاصة بك أجمل مع CSS.
+We really recommend taking the free online courses "Basic HTML & HTML5" and "Basic CSS" on [freeCodeCamp](https://learn.freecodecamp.org/). They can help you learn all about making your websites prettier with HTML and CSS.
 
 جاهز للفصل التالي؟! :)
