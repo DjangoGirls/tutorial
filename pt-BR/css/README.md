@@ -300,6 +300,6 @@ Uau! Está lindo, né? Olhe para o código que acabamos de colar para encontrar 
 
 Não tenha medo de mexer um pouco com esse CSS e tentar mudar algumas coisas. Brincar com o CSS pode ajudá-la a entender o que diferentes coisas estão fazendo. Se quebrar algo, não se preocupe - você sempre pode desfazer!
 
-Nós realmente recomendamos fazer este curso gratuito on-line: [Curso de HTML & CSS do Codeacademy](https://www.codecademy.com/tracks/web). Isso pode ajudá-la a aprender tudo sobre como deixar seus sites mais bonito com CSS.
+We really recommend taking the free online courses "Basic HTML & HTML5" and "Basic CSS" on [freeCodeCamp](https://learn.freecodecamp.org/). They can help you learn all about making your websites prettier with HTML and CSS.
 
 Pronta para o próximo capítulo?! :)
