@@ -300,6 +300,6 @@ h1, h2, h3, h4 {
 
 Don't be afraid to tinker with this CSS a little bit and try to change some things. ลองเล่นกับ CSS แล้วมันจะช่วยให้คุณเข้าใจว่าสิ่งต่างๆทำงานยังไง ถ้าคุณทำมันเจ๊ง ก็ไม่ต้องห่วง คุณสามารถใช้คำสั่งย้อนกลับ (undo) ได้!
 
-เราแนะนำให้คุณลงเรียนคอร์สออนไลน์ฟรีเหล่านี้ [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web) มันจะช่วยให้คุณเรียนรู้เกี่ยวกับการทำให้เว็บไซต์ของคุณสวยขึ้นด้วย CSS
+We really recommend taking the free online courses "Basic HTML & HTML5" and "Basic CSS" on [freeCodeCamp](https://learn.freecodecamp.org/). They can help you learn all about making your websites prettier with HTML and CSS.
 
 พร้อมสำหรับบทต่อไปหรือยัง?! :)
