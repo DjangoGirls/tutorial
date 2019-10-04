@@ -300,6 +300,6 @@ Guarda estos archivos y recarga tu sitio.
 
 No tengas miedo a experimentar con este CSS un poco y tratar de cambiar algunas cosas. Jugar con el CSS te puede ayudar a entender lo que hacen las distintas secciones. Si algo deja de funcionar, no te preocupes, ¡siempre puedes deshacerlo!
 
-Realmente te recomendamos seguir este [Curso de HTML y CSS de CodeAcademy](https://www.codecademy.com/tracks/web). Puede ayudarte a aprender todo lo que necesitas para hacer tus websites más bonitos con CSS.
+We really recommend taking the free online courses "Basic HTML & HTML5" and "Basic CSS" on [freeCodeCamp](https://learn.freecodecamp.org/). They can help you learn all about making your websites prettier with HTML and CSS.
 
 ¡¿Lista para el siguiente capítulo?! :)
