@@ -300,6 +300,6 @@ Woohoo! Wygląda to niesamowicie, prawda? Sprawdź w kodzie, który przed chwil�
 
 Nie bój się trochę pomajstrować w CSS próbując zmienić niektóre rzeczy. Zabawa z CSS pozwoli Ci lepiej zrozumieć, co robią różne rzeczy. Niczym się nie przejmuj, jeżeli coś zepsujesz - zawsze przecież można cofnąć zmiany!
 
-Naprawdę zalecamy wzięcie udziału w darmowym kursie online [Codeacademy HTML & CSS](https://www.codecademy.com/tracks/web). Pomoże on Tobie nauczyć się wszystkiego, czego potrzebujesz, by upiększyć twoje strony za pomocą CSS.
+We really recommend taking the free online courses "Basic HTML & HTML5" and "Basic CSS" on [freeCodeCamp](https://learn.freecodecamp.org/). They can help you learn all about making your websites prettier with HTML and CSS.
 
 Gotowa na następny rozdział?! :)
