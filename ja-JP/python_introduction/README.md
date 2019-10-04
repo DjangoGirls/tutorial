@@ -805,7 +805,7 @@ else:
     print("My ears are hurting! :(")
 ```
 
-Pythonは上から順番に各条件をテスト、実行し、出力します。
+Pythonは上から順番に各条件をテストして実行し、次のように出力します。
 
 {% filename %}command-line{% endfilename %}
 
