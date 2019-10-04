@@ -301,6 +301,6 @@ Woo hoo! Terlihat mengagumkan, kan? Lihatlah kode yang baru kita tempel untuk me
 
 Jangan takut untuk bermain-main dengan file CSS dan mencoba mengubah beberapa hal. Bermain dengan CSS dapat membantu Anda memahami hal-hal yang lain. Jangan khawatir jika sesuatu rusak, Anda selalu dapat balik ke masa lalu dengan cara *undo*!
 
-Kami sangat merekomendasikan untuk mengambil kursus online gratis di [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). Dia akan membantu Anda membuat situs web Anda lebih cantik dengan CSS.
+We really recommend taking the free online courses "Basic HTML & HTML5" and "Basic CSS" on [freeCodeCamp](https://learn.freecodecamp.org/). They can help you learn all about making your websites prettier with HTML and CSS.
 
 Siap untuk bab berikutnya ?! :)
