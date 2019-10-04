@@ -47,7 +47,7 @@ Aşağıdaki bölge sizin terminalizdir. Bu terminali kullanarak Cloud 9 bigisay
 
 A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. Onları farklı projemiz ile ilgili kodların birbirine karışmaması için kullanırız.
 
-Run:
+Çalıştır:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -58,7 +58,7 @@ Run:
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: `~=`).
+(dikkat ederseniz eşit işaretinde önce "~" var `~=`).
 
 ### GitHub
 
