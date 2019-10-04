@@ -300,6 +300,6 @@ Woohoo! Kagilas-gilas di ba? Tingnan mo ang iyong code na kakadikit lang natin p
 
 Huwag matakot paglaruan ng konti ang CSS at subukang baguhin ang mga istilo. Ang paglalarong CSS ay makakatulong sa iyo para maintindihan mo kung ano ang ginagawa ng iba't ibang bagay. Kung may nasira ka, huwag mag-alala - pwedeng-pwede mong ibalik ito sa dati!
 
-Minumungkahi talaga namin na kunin mo ang libre na online course na < 0>Codeacademy HTML & CSS</a>. Ito ay makakatulong sa iyo upang matutunan mo ang lahat tungkol sa pagpapaganda ng iyong website gamit ang CSS.
+We really recommend taking the free online courses "Basic HTML & HTML5" and "Basic CSS" on [freeCodeCamp](https://learn.freecodecamp.org/). They can help you learn all about making your websites prettier with HTML and CSS.
 
 Handa ka naba sa sunod na kabanata?! :)
