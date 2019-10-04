@@ -62,12 +62,12 @@ A virtual environment (also called a virtualenv) is like a private box we can st
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+Bir [GitHub](https://github.com) hesabı açın.
 
 ### PythonAnywhere
 
-The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+Django Girls rehberi yazdığımız kodun web üzerinden başkaları tarafından erişilmesini sağlayan "yayına alma" (deployment) ile ilgili bir bölüm içerir.
 
-This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Chromebook kullanırken bunu yapmak biraz garip gelebilir, çünkü zaten internet üzerinde olan bir bilgisayar kullanmaktayız. However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
 Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
