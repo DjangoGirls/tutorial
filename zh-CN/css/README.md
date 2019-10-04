@@ -300,6 +300,6 @@ h1, h2, h3, h4 {
 
 不要害怕，试着去修改一点CSS代码吧。 编写CSS的代码会帮助你理解不同的事物都在做些什么。 如果你不小心破坏了一些东西，不要害怕，因为你总是可以撤销它的。
 
-我们为你推荐这个免费的在线课程[Codeacademy HTML& CSS course](https://www.codecademy.com/tracks/web)。 它可以帮助您了解所有CSS的知识，来使你的网页更加美观。
+We really recommend taking the free online courses "Basic HTML & HTML5" and "Basic CSS" on [freeCodeCamp](https://learn.freecodecamp.org/). They can help you learn all about making your websites prettier with HTML and CSS.
 
 准备好进入下一章了吗？:)
