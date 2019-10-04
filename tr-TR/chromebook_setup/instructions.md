@@ -32,7 +32,7 @@ Cloud 9 kullanmak için bir AWS üyeliğine sahip olmanız ve kredi kartı bilgi
 6. *django-girls* ismini verin
 7. Ayarları (Settings) tanımlarken "Environment Type" için *Create a new instance for environment (EC2)* ve "Instance type" için *t2.micro* seçin ("Free-tier eligible." yazısı görünmeli). Halihazırdaki ayarları uygundur ve olduğu gibi bırakın.
 8. *Next step* e tıklayın
-9. Click *Create environment*
+9. *Create environment* a tıklayın
 
 Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
 
