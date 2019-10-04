@@ -300,6 +300,6 @@ Woohoo! Vyzerá to úžasne, že áno? Pozrite sa na kód, ktorý sme práve vlo
 
 Neboj sa trochu pohrať s týmto CSS a pokús sa zmeniť niektoré veci. Hraním sa s CSS, môžeš pochopiť, čo robia rôzne veci. Ak niečo pokazíš, neboj sa, môžeš vždy vrátiť zmeny späť!
 
-Naozaj odporúčame, tento kurz zadarmo on-line [ CSS & Codeacademy HTML](https://www.codecademy.com/tracks/web). Môžeš sa dozvedieť všetko o tom, ako môžeš svoje stránky skrášliť pomocou CSS.
+We really recommend taking the free online courses "Basic HTML & HTML5" and "Basic CSS" on [freeCodeCamp](https://learn.freecodecamp.org/). They can help you learn all about making your websites prettier with HTML and CSS.
 
 Pripravená na ďalšiu kapitolu?! :)
