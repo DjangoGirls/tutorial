@@ -300,6 +300,6 @@ Whoohoo! Ziet er gaaf uit, toch? Bekijk de code die je zojuist geplakt hebt en p
 
 Wees niet bang om een beetje met de CSS te spelen en wat dingen te veranderen. Met de CSS spelen helpt je om te begrijpen wat de verschillende dingen doen. Als er per ongeluk iets stuk gaat, maak je geen zorgen! Je kunt het altijd weer ongedaan maken!
 
-We raden je aan om deze gratis online [Codecademy HTML & CSS cursus](https://www.codecademy.com/tracks/web) te doen. Hiermee leer je alles over het mooier maken van websites met CSS.
+We really recommend taking the free online courses "Basic HTML & HTML5" and "Basic CSS" on [freeCodeCamp](https://learn.freecodecamp.org/). They can help you learn all about making your websites prettier with HTML and CSS.
 
 Klaar voor het volgende hoofdstuk?! :)
