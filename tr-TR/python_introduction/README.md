@@ -880,7 +880,7 @@ Not: Eğer çalışmadıysa panik yapmayın! Çıktı hatanın neden olduğu hak
 - Eğer bir `IndentationError` alırsanız,`print` dizelerinin her ikisinin de satır başında aynı boşluğa sahip olduğunu kontrol et: python fonksiyonun içindeki tüm kodların düzenli bir şekilde hizalanmasını ister.
 - Eğer tamamında da çıktı yoksa, son `hi()` *isn't* girintiliğini kontrol et - eğer öyleyse, bu dize fonksiyonunda bir parçası haline gelecek ve hiçbir zaman çalışmayacak.
 
-Let's build our first function with parameters. We will change the previous example – a function that says 'hi' to the person running it – with a name:
+İlk fonksiyonumuzu parametrelerle birlikte oluşturalım. Önceki örneği - fonksiyonu çalıştıran kişiye merhaba diyen bir fonksiyon - bir isimle kullanacağız:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -888,7 +888,7 @@ Let's build our first function with parameters. We will change the previous exam
 def hi(name):
 ```
 
-As you can see, we now gave our function a parameter that we called `name`:
+Gördüğünüz gibi, fonksiyonumuza `name` (isim) adında bir parametre ekledik:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -904,7 +904,7 @@ def hi(name):
 hi()
 ```
 
-Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
+Unutmayın: `if` durumu içerisindeki `print` fonksiyonundan önce dört tane boşluk var. Bunun sebebi sadece durum sağlandığında çalışmasını istememiz. Bakalım nasıl çalışıyor:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -915,7 +915,7 @@ Remember: The `print` function is indented four spaces within the `if` statement
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
+Üzgünüz, bir hata. Neyse ki, Python bize oldukça yararlı bir hata mesajı veriyor. `hi()` fonksiyonun (yukarıda tanımladığımız) bir değişken kullanımını gerektirdiğini (`name` isimli) ve bizim o değişkeni fonksiyonu çağırırken iletmeyi unuttuğumuzu söylüyor. Dosyanın alt kısmında hatayı düzeltelim:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -923,7 +923,7 @@ Oops, an error. Luckily, Python gives us a pretty useful error message. It tells
 hi("Ayşe")
 ```
 
-And run it again:
+Ve tekrar çalıştıralım:
 
 {% filename %}command-line{% endfilename %}
 
@@ -931,7 +931,7 @@ And run it again:
     Selam Ayşe!
     
 
-And if we change the name?
+Eğer ismi değiştirirsek ne olur?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -939,7 +939,7 @@ And if we change the name?
 hi("Zeynep")
 ```
 
-And run it:
+Ve çalıştırın:
 
 {% filename %}command-line{% endfilename %}
 
@@ -947,16 +947,16 @@ And run it:
     Selam Zeynep!
     
 
-Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
+Peki Ayşe veya Zeynep dışında başka bir isim yazdığımızda ne olacağını tahmin edebiliyor musunuz? Deneyin ve tahmininizin doğru olup olmadığını görün. Şunun gibi bir şey yazmalı:
 
 {% filename %}command-line{% endfilename %}
 
     Selam yabancı!
     
 
-This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
+Müthiş değil mi? Böylece fonksiyona göndereceğiniz isim değiştiğinde aynı kodu tekrar tekrar yazmanıza gerek kalmayacak. İşte fonksiyonlara tam da bu yüzden ihtiyacımız var - aynı kodu tekrar yazmayı istemeyiz!
 
-Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right? Replace the content of your file with the following:
+Hadi daha zekice bir şey yapalım - İkiden fazla isim var ve her biri için bir şart yazmak zor olur değil mi? Dosyanın içeriğini aşağıdakiyle değiştirin:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -967,7 +967,7 @@ def hi(name):
 hi("Seda")
 ```
 
-Let's call the code now:
+Şimdi kodu çağıralım:
 
 {% filename %}command-line{% endfilename %}
 
@@ -975,15 +975,15 @@ Let's call the code now:
     Merhaba Seda!
     
 
-Congratulations! You just learned how to write functions! :)
+Tebrikler! Az önce fonksiyonları nasıl yazacağınızı öğrendiniz! :)
 
 ## Döngüler
 
 > Evdeki okuyucular için: Bu kısım [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) videosunda işlenmiştir.
 
-This is the last part already. That was quick, right? :)
+Bu da zaten son kısım. Hızlı oldu, değil mi? :)
 
-Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
+Programcılar kendilerini tekrar etmeyi sevmezler. Programlama tamamen işleri otomatize etmedir, bu yüzden her insanı ismiyle selamlamak istemeyiz, değil mi? İşte burası döngülerin devreye girdiği yerdir.
 
 Still remember lists? Let's do a list of girls:
 
