@@ -114,8 +114,8 @@ Komut istemini açıp `python3` komutunu çalıştırarak yüklemenin başarıl�
 
 Konsolda gösterilen sürüm 3.6.1'den farklı olabilir - kurduğunuz sürümle aynı olmalıdır.
 
-**NOT:** Eğer Windows kullanıyorsanız ve `python3` bulunamadı hatasını alıyorsanız, `python` (`3` olmadan) komutunu deneyin ve 3.4.0 veya daha yüksek bir Python sürümü olup olmadığını kontrol edin. If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
+**NOT:** Eğer Windows kullanıyorsanız ve `python3` bulunamadı hatasını alıyorsanız, `python` (`3` olmadan) komutunu deneyin ve 3.4.0 veya daha yüksek bir Python sürümü olup olmadığını kontrol edin. Eğer bu da işe yaramazsa, yeni bir komut istemi açıp tekrar deneyebilirsiniz; çünkü Python kurulumundan önce açılan bir komut istemi kullanıyorsanız bu durumla karşılaşabilirsiniz.
 
 * * *
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
+Eğer herhangi bir şüpheniz varsa veya kurulumda bir şeyler ters gittiyse ve sonrasında ne yapılacağını bilmiyorsanız, eğitmeninize sorabilirsiniz! Bazen işler yolunda gitmez ve daha fazla deneyime sahip birinden yardım istemek iyidir.
