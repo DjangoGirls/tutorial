@@ -1001,9 +1001,9 @@ Diyelim ki hepsine merhaba demek istiyoruz. Az önce yazdığımız `hi` fonksiy
 for name in girls:
 ```
 
-The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
+`for` durumu `if` durumuna benzer şekilde çalışır; aşağıdaki kodda her iki satır dört boşluk ile girintili olmalıdır.
 
-Here is the full code that will be in the file:
+Dosyada yer alacak tam kod aşağıdadır:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1017,7 +1017,7 @@ for name in girls:
     print('Sıradaki kız')
 ```
 
-And when we run it:
+Ve onu çalıştırdığımız zaman:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1034,9 +1034,9 @@ And when we run it:
     Sıradaki kız
     
 
-As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
+Gördüğünüz gibi, `for` cümlesinin içine boşluk karakteri ile koyduğunuz her şey `girls` listesinin her elemanı için tekrarlanıyor.
 
-You can also use `for` on numbers using the `range` function:
+Ayrıca `for`'u `range` fonksiyonuyla beraber sayılar üzerinde de kullanabilirsiniz:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1045,7 +1045,7 @@ for i in range(1, 6):
     print(i)
 ```
 
-Which would print:
+Çalıştırırsak:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1056,16 +1056,16 @@ Which would print:
     5
     
 
-`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
+`range` fonksiyonu birbirini takip eden sayılardan bir liste oluşturur (bu sayıları da siz parametre olarak yazarsınız).
 
-Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
+Sizin verdiğiniz ikinci parametrenin listede olmadığına dikkat edin (yani `range(1, 6)` 1'den 5'e kadar sayar, 6'yı dahil etmez). Çünkü “aralık” yarı açıktır, ve yani ilk değeri içerir ama son değeri içermez.
 
 ## Özet
 
-That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
+İşte bu. **Harikasın, süpersin!** Bu bölüm biraz zordu, kendinle gurur duymalısın. Biz buraya kadar geldiğin için seninle gurur duyuyoruz!
 
-For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
+Resmi ve tam python kılavuzu için https://docs.python.org/3/tutorial/ adresini ziyaret edin. Bu size Python dili hakkında daha kapsamlı ve eksiksiz bir çalışma sunacaktır. Teşekkürler :)
 
-You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
+Sonraki bölüme geçmeden önce başka bir şey yapmak isteyebilirsin. -gerin, biraz etrafta gezin, gözlerini dinlendir- :)
 
 ![Cupcake](images/cupcake.png)
