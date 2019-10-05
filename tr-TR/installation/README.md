@@ -16,16 +16,16 @@ Eğer [Django Girls](https://djangogirls.org/events/) etkinliklerinden birine ka
 
 # Kurulum
 
-Bu kılavuzda bir blog geliştireceksiniz. In order to do that, as you go through the tutorial you'll be instructed on how to install various software on your computer and set up some online accounts as they are needed. This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
+Bu kılavuzda bir blog geliştireceksiniz. Bunu yapmak için, kılavuz boyunca bilgisayarınıza çeşitli yazılımların nasıl kurulacağı ve gerektiğinde bazı çevrimiçi hesaplarına nasıl kaydolunacağı konusunda bilgilendirileceksiniz. Bu sayfa, tüm kurulum ve kaydolma talimatlarını tek bir yerde toplar (bu yöntem bazı atölye formatları için kullanışlıdır).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
 
 <!--endsec-->
 
-# Brief intro to the command line
+# Komut satırına kısa giriş
 
-Many of the steps below reference the "console", "terminal", "command window", or "command line" -- these all mean the same thing: a window on your computer where you can enter commands. When you get to the main tutorial, you'll learn more about the command line. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
+Aşağıdaki adımların çoğu, "konsol", "terminal", "komut penceresi" veya "komut satırı" na atıfta bulunur - bu terimlerin hepsi aynı anlama gelir: bilgisayarınızda komutları girebileceğiniz bir pencere. Ana kılavuza ulaştığınızda, komut satırı hakkında daha fazla bilgi edinebilirsiniz. Şimdilik, bilmeniz gereken en önemli şey bir komut penceresinin nasıl açılacağı ve nasıl göründüğüdür: {% include "/intro_to_command_line/open_instructions.md" %}
 
 # Python Yükleyin
 
@@ -35,15 +35,15 @@ Many of the steps below reference the "console", "terminal", "command window", o
 
 {% include "/code_editor/instructions.md" %}
 
-# Set up virtualenv and install Django
+# Bir "virtualenv" kurun ve Django'yu yükleyin
 
 {% include "/django_installation/instructions.md" %}
 
-# Install Git
+# Git yükleyin
 
 {% include "/deploy/install_git.md" %}
 
-# Create a GitHub account
+# GitHub hesabı oluşturun
 
 Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password (add it to your password manager, if you use one).
 
