@@ -10,21 +10,21 @@ Visual Studio Code est éditeur de texte développé par Microsoft pour Windows,
 
 ## Gedit
 
-Gedit is an open-source, free editor, available for all operating systems.
+Gedit est un éditeur libre et gratuit disponible pour tout les systèmes d'exploitation.
 
 [Télécharger](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
+Sublime Text est un éditeur très populaire avec une période d'évaluation gratuite et il est disponible pour tous les systèmes d'exploitation.
 
 [Télécharger](https://www.sublimetext.com/3)
 
 ## Atom
 
-Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
+Atom est un autre éditeur populaire. Il est gratuit, ouvert et disponible pour Windows, macOS et Linux. Atom est développé par [GitHub](https://github.com/).
 
-[Download it here](https://atom.io/)
+[Télécharger](https://atom.io/)
 
 ## Pourquoi installer un éditeur de texte?
 
