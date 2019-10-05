@@ -805,7 +805,7 @@ else:
     print("Kulaklarım ağrıyor! :(")
 ```
 
-Python runs through each test in sequence and prints:
+Python sırayla her sorguyu çalıştırır ve sonucu ona göre yazar:
 
 {% filename %}command-line{% endfilename %}
 
@@ -815,9 +815,9 @@ Python runs through each test in sequence and prints:
 
 ## Yorumlar
 
-Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
+Yorumlar `#` ile başlayan satırlardır. İstediğiniz her şeyi `#` den sonra yazabilirsiniz ve Python onu gözardı edecektir. Yorumlar diğer insanların kodunuzu anlamasını kolaylaştırabilir.
 
-Let's see how that looks:
+Bakalım nasıl gözüküyor:
 
 {% filename %}python_intro.py{% endfilename %}
 
