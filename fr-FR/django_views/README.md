@@ -41,4 +41,4 @@ Une autre erreur ! Voyons ce qu'elle nous dit :
 
 Cela indique que le serveur tourne, ce qui est bien, mais il y a quelque chose qui ne va pas, non ? Ne vous inquiétez pas, c’est juste une page d’erreur, il ne faut pas avoir peur d'elle ! Au contraire, tout comme les messages d’erreur dans la console, elle nous est très utile. Vous pouvez lire que *TemplateDoesNotExist*. Nous allons corriger ce bug et créer un modèle (template) dans le prochain chapitre !
 
-> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/2.2/topics/http/views/
+> Pour en apprendre un peu plus sur les vues dans Django, consultez la documentation officielle : https://docs.djangoproject.com/en/2.2/topics/http/views/
