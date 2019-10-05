@@ -16,7 +16,7 @@ Lütfen bilgisayarınızda Anaconda yüklü olsa bile normal Python'u aşağıda
 
 Windows için Python'ı https://www.python.org/downloads/windows/ adresinden indirebilirsiniz. "Latest Python 3 Release - Python x.x.x" bağlantısına tıklayın. Eğer bilgisayarınız **64-bit** versiyon Windows çalıştırıyorsa, **Windows x86-64 executable installer**'ı indirin. Değilse, **Windows x86 executable installer**'ı indirin. Yükleyiciyi indirdikten sonra, çalıştırmalısınız (üzerine çift tıklayarak) ve oradaki talimatları takip etmelisiniz.
 
-One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" or 'Add Python to your environment variables" checkbox and click on "Install Now", as shown here (it may look a bit different if you are installing a different version):
+Dikkat edilmesi gereken nokta: Yükleme esnasında "Setup" ("Kur") işaretli bir pencere farkedeceksiniz. "Add Python 3.6 to PATH" ("PATH'e Python 3.6 Ekle") veya "Ortam değişkenlerinize Python Ekle" ( "Add Python to your environment variables") onay kutusunu işaretleyin ve burada gösterildiği gibi "Şimdi Yükle" yi tıklayın (farklı bir sürüm kuruyorsanız biraz farklı olabilir):
 
 ![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
 
