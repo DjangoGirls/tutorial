@@ -12,7 +12,7 @@ Eğer [Django Girls](https://djangogirls.org/events/) etkinliklerinden birine ka
 
 * Atölye'de, atölye gününden önce "kurulum partisi" olabilir. Eğer kurulum partisindeysen, bu sayfa senin için! Atölye için gerekli olacak kurulumları tamamlamak için buradaki talimatları takip et. Eğer ihtiyacın varsa koçlarının yardımını alabilirsin. Daha sonra atölye gününde, kılavuzdaki kurulum talimatlarını atlayabilirsiniz.
 * Atölyedeki organizatörler senden atölye gününden önce evde bilgisayarına her şeyi kurmanı isteyebilir. Eğer böyle bir istekle karşılaştıysan, bu sayfa senin için! Buradaki talimatları elinden geldiğince izle. Eğer gerekli kurulumları yapamadıysanız, daha sonra atölye günü kılavuzdaki kurulum adımına ulaştığınızda koçunuzdan yardım alabilirsiniz.
-* If your workshop does not have an installation party (or you couldn't attend), and if the organizers didn't ask you to try to install everything before you arrived, skip this page and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter. You'll be installing everything you need as you work through the tutorial.
+* Atölyenizde bir kurulum partisi yoksa (veya katılamadıysanız) ve organizatörler sizden atölye gününden önce her şeyi kurmayı denemenizi istemedilerse, bu sayfayı atlayın ve doğruca [İnternet nasıl çalışır](../how_the_internet_works/README.md) bölümüne gidin. Kılavuz boyunca çalışırken ihtiyacınız olan her şeyi yükleyeceksiniz.
 
 # Kurulum
 
