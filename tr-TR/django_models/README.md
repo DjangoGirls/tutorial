@@ -96,7 +96,7 @@ Yeni bir `blog` dizininin oluşturulduğunu ve bir dizi dosya içerdiğini fark 
     └── requirements.txt
     
 
-Uygulamamızı oluşturduktan sonra, Django'ya bunu kullanmasını söylememiz lazım. Bunu `mysite/settings.py` dosyasından yapacağız -- kod editörümüzde açalım. We need to find `INSTALLED_APPS` and add a line containing `'blog.apps.BlogConfig',` just above `]`. Sonuç aşağıdaki gibi görünmeli:
+Uygulamamızı oluşturduktan sonra, Django'ya bunu kullanmasını söylememiz lazım. Bunu `mysite/settings.py` dosyasından yapacağız -- kod editörümüzde açalım. `INSTALLED_APPS`'ı bulup `]` karakterinin üzerindeki satıra `'blog.apps.BlogConfig',` yazmamız lazım. Sonuç aşağıdaki gibi görünmeli:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
