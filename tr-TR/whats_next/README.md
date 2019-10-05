@@ -15,21 +15,21 @@ Evet! Her türlü programlama becerisini öğrenmek için çevrimiçi *bir çok*
 #### Django
 
 - Diğer kitabımız, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
-- [Django's official tutorial](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
-- [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
+- [Resmi Django kılavuzu](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
+- [Django Video Dersleriyle Başlangıç](http://www.gettingstartedwithdjango.com/)
 
 #### HTML, CSS and JavaScript
 
-- [Codecademy's web development course](https://www.codecademy.com/learn/paths/web-development)
+- [Codecademy web geliştirme kursu](https://www.codecademy.com/learn/paths/web-development)
 - [freeCodeCamp](https://www.freecodecamp.org/)
 
 #### Python
 
-- [Codecademy's Python course](https://www.codecademy.com/learn/learn-python)
-- [Google's Python course](https://developers.google.com/edu/python/)
+- [Code Academy Python kursu](https://www.codecademy.com/learn/learn-python)
+- [Google Python kursu](https://developers.google.com/edu/python/)
 - [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – the initial exercises are free
 - [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
-- [edX](https://www.edx.org/course?search_query=python) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
+- [edX](https://www.edx.org/course?search_query=python) – Bir çok kursu ücretsiz olarak alabilirsiniz, ancak yükseköğretim yeterliliği için bir sertifika veya kredi almak ücretli olabilir
 - [Coursera's Python specialization](https://www.coursera.org/specializations/python) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
 - [Python for Everybody](https://www.py4e.com/) - a free and open version of the Coursera Python for Everybody specialization
 
