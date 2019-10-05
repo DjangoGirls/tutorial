@@ -20,14 +20,14 @@ Dikkat edilmesi gereken nokta: Yükleme esnasında "Setup" ("Kur") işaretli bir
 
 ![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
 
-When the installation completes, you may see a dialog box with a link you can follow to learn more about Python or about the version you installed. Close or cancel that dialog -- you'll be learning more in this tutorial!
+Kurulum tamamlandığında, Python veya yüklediğiniz sürüm hakkında daha fazla bilgi edinmeniz için bir bağlantı içeren bir iletişim kutusu görebilirsiniz. Bu iletişim kutusunu kapatın ya da iptal edin - bu kılavuzda daha fazla şey öğreneceksiniz!
 
-Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.6.x installer fails with an error, you can try either:
+Not: Eğer Windows'un eski bir versiyonunu (7, Vista ya da herhangi bir eski versiyon) kullanıyorsanız ve Python 3.6.x yükleyicisi hata veriyorsa, aşağıdaki seçeneklerden birini deneyebilirsiniz:
 
-1. install all Windows Updates and try to install Python again; or
+1. bütün Windows Güncellemeleri'ni yükleyin ve Python'ı tekrar yüklemeyi deneyin; ya da
 2. [eski bir Python versiyonu](https://www.python.org/downloads/windows/), örneğin [3.4.6](https://www.python.org/downloads/release/python-346/) yükleyin.
 
-If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
+Eğer Python'ın eski bir versiyonunu yüklerseniz, yükleme ekranı yukarıda gösterilenden biraz farklı görünebilir. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
 
 ![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
 
