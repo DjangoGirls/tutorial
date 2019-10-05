@@ -985,7 +985,7 @@ Bu da zaten son kısım. Hızlı oldu, değil mi? :)
 
 Programcılar kendilerini tekrar etmeyi sevmezler. Programlama tamamen işleri otomatize etmedir, bu yüzden her insanı ismiyle selamlamak istemeyiz, değil mi? İşte burası döngülerin devreye girdiği yerdir.
 
-Still remember lists? Let's do a list of girls:
+Hala listeleri hatırlıyoruz değil mi? Haydi bir kızlar listesi yapalım:
 
 {% filename %}python_intro.py{% endfilename %}
 
