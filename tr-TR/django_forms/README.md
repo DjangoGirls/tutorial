@@ -342,7 +342,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Bu nerdeyse bizim `post_new` view'inin aynısı, değil mi? Ama, tam da değil. For one, we pass an extra `pk` parameter from `urls`. Sonra,`get_object_or_404(Post, pk=pk)` ile düzenlemek istediğimiz `Post` modelini alıyoruz ve daha sonra bir form oluşturduğumuzda bu yazı objesini `instance` olarak geçiriyoruz, aynı şekilde formu kaydettiğimizde de…
+Bu nerdeyse bizim `post_new` view'inin aynısı, değil mi? Ama, tam da değil. Öncelikle `urls`'ten ekstra bir `pk` parametresi geçiriyoruz. Sonra,`get_object_or_404(Post, pk=pk)` ile düzenlemek istediğimiz `Post` modelini alıyoruz ve daha sonra bir form oluşturduğumuzda bu yazı objesini `instance` olarak geçiriyoruz, aynı şekilde formu kaydettiğimizde de…
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -370,7 +370,7 @@ Butona tıklarsak blog postunu görmemiz lazım:
 
 Tebrikler! Uygulamamız gittikçe tamamlanıyor!
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.2/topics/forms/
+Eğer Django formlarıyla ilgili daha çok bilgiye ihtiyacın varsa, linkteki dökümanı okumalısın: https://docs.djangoproject.com/en/2.2/topics/forms/
 
 ## Güvenlik
 
