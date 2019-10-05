@@ -27,7 +27,7 @@ Not: Eğer Windows'un eski bir versiyonunu (7, Vista ya da herhangi bir eski ver
 1. bütün Windows Güncellemeleri'ni yükleyin ve Python'ı tekrar yüklemeyi deneyin; ya da
 2. [eski bir Python versiyonu](https://www.python.org/downloads/windows/), örneğin [3.4.6](https://www.python.org/downloads/release/python-346/) yükleyin.
 
-Eğer Python'ın eski bir versiyonunu yüklerseniz, yükleme ekranı yukarıda gösterilenden biraz farklı görünebilir. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
+Eğer Python'ın eski bir versiyonunu yüklerseniz, yükleme ekranı yukarıda gösterilenden biraz farklı görünebilir. "python.exe'yi Path'e ekle" uyarısını görene dek aşağı kaydırdığınızdan emin olun, daha sonra soldaki butona tıklayın ve "Yerel sabit sürücüye yüklenecek"' seçeneğini seçin:
 
 ![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
 
@@ -38,17 +38,17 @@ data-collapse=true ces-->
 
 > **Not** Python'ı OS X'te yüklemeden önce, Mac ayarlarınızın App Store'dan olmayan paketleri yüklemeye izin verdiğinden emin olmalısınız. Sistem Tercihleri'ne (Uygulamalar klasöründe) gidin, önce "Güvenlik & Gizlilik"'e ve daha sonra da "Genel" sekmesine tıklayın. Eğer sizin "Şuradan yüklenen uygulamalara izin ver:" ayarınız "Mac App Store"'a ayarlıysa, onu "Mac App Store and kimliği bilinen geliştirici."lere çevirin
 
-You need to go to the website https://www.python.org/downloads/release/python-361/ and download the Python installer:
+Python kurulum dosyasını indirmek için resmi siteye gitmelisiniz: https://www.python.org/downloads/release/python-361/:
 
-* Download the *Mac OS X 64-bit/32-bit installer* file,
-* Double click *python-3.6.1-macosx10.6.pkg* to run the installer.
+* *Mac OS X 64-bit/32-bit installer* dosyasını indirin,
+* *python-3.6.1-macosx10.6.pkg*'a çift tıklayarak yükleyiciyi çalıştırın.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
+Muhtemelen sisteminizde Python zaten yüklüdür. Yüklü olup olmadığını (ya da hangi versiyon olduğunu) kontrol etmek için komut satırını açın ve aşağıdaki komutları girin:
 
 {% filename %}command-line{% endfilename %}
 
@@ -56,7 +56,7 @@ It is very likely that you already have Python installed out of the box. To chec
     Python 3.6.1
     
 
-If you have a different version of Python installed, at least 3.4.0 (e.g. 3.6.0), then you don't have to upgrade. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
+Farklı bir Python sürümü yüklüyse, en azından 3.4.0 (örn. 3.6.0), yükseltme yapmanıza gerek yoktur. Python yüklü değilse ya da farklı bir versiyon edinmek istiyorsanız öncelikle aşağıdaki komutu kullanarak hangi Linux dağıtımını kullandığınızı kontrol edin:
 
 {% filename %}command-line{% endfilename %}
 
