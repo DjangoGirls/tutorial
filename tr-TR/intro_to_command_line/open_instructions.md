@@ -2,8 +2,8 @@
 
 Windows sürümünüze ve klavyenize bağlı olarak, aşağıdaki seçeneklerden birinin bir komut penceresi açması gerekir (biraz deneme yapmanız gerekebilir, ancak tüm önerileri denemeniz gerekmez):
 
-- Başlat menüsüne veya ekranına gidin ve arama alanına "Komut İstemi" girin.
-- Go to Start menu → Windows System → Command Prompt.
+- Başlat menüsüne veya ekranına gidin ve arama alanına "Komut İstemcisi" girin.
+- Başlat'a gidin → Windows sistemi → Komut istemcisi.
 - Go to Start menu → All Programs → Accessories → Command Prompt.
 - Go to the Start screen, hover your mouse in the lower-left corner of the screen, and click the down arrow that appears (on a touch screen, instead flick up from the bottom of the screen). The Apps page should open. Click on Command Prompt in the Windows System section.
 - Hold the special Windows key on your keyboard and press the "X" key. Choose "Command Prompt" from the pop-up menu.
