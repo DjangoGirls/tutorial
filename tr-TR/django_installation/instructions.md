@@ -144,7 +144,7 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-> **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
+> **NOT:** Windows tabanlı komut istemi içeren VS code editörü kullanıcıları, eğer VS code'un içindeki bu komut istemini kullanmak istiyorsanız, aşağıdaki komutu sanal ortamınızı aktifleştirmek için kullanabilirsiniz:
 > 
 >     $ . myvenv\Scripts\activate.ps1
 >     
