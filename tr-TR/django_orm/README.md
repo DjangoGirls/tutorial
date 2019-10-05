@@ -202,7 +202,7 @@ Başına `-` ekleyerek sıralamayı tersine de çevirebiliriz:
 
 ### QuerySets (SorguSetlerini) Zincirlemek (Chaining)
 
-As you saw, some methods on `Post.objects` return a QuerySet. The same methods can in turn also be called on a QuerySet, and will then return a new QuerySet. Thus, you can combine their effect by **chaining** them together:
+Gördüğünüz gibi `Post.objects`'teki bazı metotlar QuerySet döner. Ayrıca aynı metotlar sırayla bir QuerySet'te çağırılabilir ve ardından yeni bir QuerySet döndürülebilir. Böylelikle QuerySet'lerini **zincirleyerek** etkilerini birleştirebilirsin:
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
