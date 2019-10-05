@@ -2,9 +2,9 @@
 
 * [Giriş](README.md)
 * [Kurulum](installation/README.md) 
-  * [Command Line](installation/README.md#brief-intro-to-the-command-line)
+  * [Komut Satırı](installation/README.md#brief-intro-to-the-command-line)
   * [Python](installation/README.md#install-python)
-  * [Code Editor](installation/README.md#install-a-code-editor)
+  * [Kod Editörü](installation/README.md#install-a-code-editor)
   * [Virtual Environment](installation/README.md#virtual-environment)
   * [Django](installation/README.md#installing-django)
   * [Git](installation/README.md#install-git)
