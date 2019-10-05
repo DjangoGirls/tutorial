@@ -2,11 +2,11 @@
 
 Eğer tutorial'ı [Django Girls etkinliklerinden](https://djangogirls.org/events/) birinde değil de evde yapıyorsanız, bu bölümü şimdi tamamen atlayabilirsiniz ve direkt [İnternet nasıl çalışıyor](../how_the_internet_works/README.md) bölümüne geçebilirsiniz.
 
-This is because we cover installing things as they are needed in the tutorial -- this is just an additional page that gathers all of the installation instructions in one place (which is useful for some workshop formats). You can choose to install everything that is on this page right now if you wish. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation parts to you later on, as they are needed.
+Çünkü kılavuz boyunca gerekli yükleme işlemlerini zaten işliyoruz, bu kısım kurulum talimatlarının tek yerde toparlandığı ek bir sayfa sadece (bu yöntem bazı atölye formatları için kullanışlıdır). Eğer istiyorsanız şimdi bu sayfadaki her şeyi yüklemeyi seçebilirsiniz. Ama bilgisayarınıza birkaç şey yüklemeden önce bir şeyler öğrenmeye başlamak istiyorsanız, bu bölümü atlayın. Daha sonra kurulum kısmını size açıklayacağız.
 
 İyi şanslar!
 
-# If you're attending a workshop
+# Eğer bir atölyeye katılıyorsanız
 
 If you are attending one of the [Django Girls events](https://djangogirls.org/events/):
 
