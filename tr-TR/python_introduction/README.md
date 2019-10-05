@@ -610,7 +610,7 @@ $
 
 Bu sizi komut satırına geri yönlendirecektir.
 
-Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now and write some code into a new file (or if you're using a Chromebook, create a new file in the cloud IDE and open the file, which will be in the included code editor):
+Biraz önce [kod editörü](../code_editor/README.md) bölümünden bir kod editörü seçmiştik. Şimdi o editörü açıp ve yeni bir dosya içine kod yazmalıyız (eğer Chromebook kullanıyorsanız, Cloud IDE'de yeni bir dosya oluşturun ve dahil edilen kod editöründe dosyayı açın):
 
 {% filename %}editör{% endfilename %}
 
@@ -641,7 +641,7 @@ Mac'de bu komut şunun gibi görünecektir:
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-On Linux, it will be like this:
+Linux'ta, bu şekilde gibi görünecektir:
 
 {% filename %}komut-satırı{% endfilename %}
 
