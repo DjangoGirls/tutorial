@@ -4,17 +4,17 @@ Kendini tebrik et! **Kesinlikle harikasın**. Seninle gurur duyuyoruz! <3
 
 ### Şimdi ne yapmak gerek?
 
-Take a break and relax! You have just done something really huge.
+Bir ara ver ve rahatla. Gerçekten çok büyük bir şey yaptın.
 
 Sonra, güncel kalmak için Django Girls'ü [Facebook](http://facebook.com/djangogirls) ya da [Twitter](https://twitter.com/djangogirls) da takip ettiğinizden emin olun.
 
 ### Daha geniş kapsamlı kaynaklar önerebilir misiniz?
 
-Yes! There are a *lot* of resources online for learning all kinds of programming skills – it can be pretty daunting to work out where to go next, but we've got you covered. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
+Evet! Her türlü programlama becerisini öğrenmek için çevrimiçi *bir çok* kaynak var. Bir sonraki adıma geçmek biraz göz korkutucu olabilir, ama biz sizin için inceledik. Django Girls'e gelmeden önce ilgi alanlarınız ve eğitim boyunca geliştirdiğiniz ilgi alanları ne olursa olsun, işte istediğiniz yere ulaşmanız için kullanabileceğiniz bazı ücretsiz kaynaklar (veya büyük ücretsiz bileşenlere sahip kaynaklar).
 
 #### Django
 
-- Our other book, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
+- Diğer kitabımız, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
 - [Django's official tutorial](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
 - [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
 
