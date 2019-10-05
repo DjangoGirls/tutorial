@@ -2,7 +2,7 @@
 > 
 > Bu bölüm Geek Girls Carrots (https://github.com/ggcarrots/django-carrots) tarafından hazırlanmış bir öğreticiye dayanmaktadır
 
-Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want you to install the latest version of Python 3, so if you have any earlier version, you will need to upgrade it. If you already have version 3.4 or higher you should be fine.
+Django, Python dilinde yazılmıştır. Django'da herhangi bir şey yapmak için Python'a ihtiyaç duyarız. Hadi Python'ın kurulumunu yaparak başlayalım! Sizden Python 3 en son sürümünü yüklemenizi istiyoruz. Yani, eğer daha önceki bir sürüme sahipseniz, güncellemeniz gerekecek. Zaten 3.4 veya daha yüksek bir sürümünüz varsa, her şey tamam.
 
 Please install normal Python as follows, even when you have Anaconda installed on your computer.
 
