@@ -149,7 +149,7 @@ data-collapse=true ces-->
 >     $ . myvenv\Scripts\activate.ps1
 >     
 > 
-> The advantage is that you don't have to switch between editor windows and command-line windows
+> Böylelikle kod editörü penceresi ve komut satırı penceresi arasında gidip gelmenize gerek kalmaz
 
 Konsolunuzda komut isteminizin başında `(myvenv)` gördüğünüzde `virtualenv`'in çalıştığını anlayabilirsiniz.
 
@@ -172,7 +172,7 @@ Bunu yapmadan önce, bilgisayarımızın, Django yüklemek için kullanacağım�
 
 Bir requirements dosyası `pip install` ile yüklenmesi gereken paketlerin listesini tutar:
 
-Önce `djangogirls /` klasörü içinde `requirements.txt` dosyası oluşturalım. You do this by opening a new file in the code editor and then saving it as `requirements.txt` in the `djangogirls/` folder. İşleminiz bu klasörde görünecek:
+Önce `djangogirls /` klasörü içinde `requirements.txt` dosyası oluşturalım. Bunu kod editöründe yeni bir dosya açıp, sonra `requirements.txt` olarak `djangogirls/` klasöründe kaydederek yapın. İşleminiz bu klasörde görünecek:
 
     djangogirls
     └───requirements.txt
