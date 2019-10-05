@@ -993,7 +993,7 @@ Hala listeleri hatırlıyoruz değil mi? Haydi bir kızlar listesi yapalım:
 kızlar = ['Seda', 'Gül', 'Pınar', 'Ayşe', 'Sen']
 ```
 
-We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
+Diyelim ki hepsine merhaba demek istiyoruz. Az önce yazdığımız `hi` fonksiyonunu döngü içinde kullanabiliriz:
 
 {% filename %}python_intro.py{% endfilename %}
 
