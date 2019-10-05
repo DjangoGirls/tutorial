@@ -35,8 +35,8 @@ Evet! Her türlü programlama becerisini öğrenmek için çevrimiçi *bir çok*
 
 #### Veril ile çalışma
 
-- [Codecademy's data science course](https://www.codecademy.com/learn/paths/data-science)
-- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
-- [Dataquest](https://www.dataquest.io/) – the first 30 "missions" are free
+- [Codecademy veri bilimi kursu](https://www.codecademy.com/learn/paths/data-science)
+- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – Bir çok kursu ücretsiz olarak alabilirsiniz, ancak yükseköğretim yeterliliği için bir sertifika veya kredi almak ücretli olabilir
+- [Dataquest](https://www.dataquest.io/) – ilk 30 "görev" ücretsizdir
 
-We can't wait to see what you build next!
+Bundan sonra ne geliştireceğini görmek için sabırsızlanıyoruz!
