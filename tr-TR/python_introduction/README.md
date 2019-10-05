@@ -641,20 +641,20 @@ Mac'de bu komut şunun gibi görünecektir:
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-Linux'ta, bu şekilde gibi görünecektir:
+Linux'ta bunun gibi görünecektir:
 
 {% filename %}komut-satırı{% endfilename %}
 
     $ cd ~/Desktop
     
 
-(Remember that the word "Desktop" might be translated to your local language.)
+("Desktop" kelimesinin yerel dilinize çevrilebileceğini unutmayın.)
 
 <!--endsec-->
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-On Windows Command Prompt, it will be like this:
+Windows Komut İstemi’nde bunun gibi olacak:
 
 {% filename %}command-line{% endfilename %}
 
@@ -665,7 +665,7 @@ On Windows Command Prompt, it will be like this:
 
 <!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
 
-And on Windows Powershell, it will be like this:
+Ve Windows Powershell’de bunun gibi olacak:
 
 {% filename %}command-line{% endfilename %}
 
@@ -674,9 +674,9 @@ And on Windows Powershell, it will be like this:
 
 <!--endsec-->
 
-If you get stuck, ask for help. That's exactly what the coaches are here for!
+Takılırsanız, yardım isteyin. Eğitmenler bunun için var!
 
-Now use Python to execute the code in the file like this:
+Şimdi dosyadaki komutları çalıştırmak için Python'u kulllanın:
 
 {% filename %}command-line{% endfilename %}
 
@@ -684,7 +684,7 @@ Now use Python to execute the code in the file like this:
     Merhaba, Django girls!
     
 
-Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
+Not: Windows'ta 'python3' bir komut olarak kullanılmaz. Onun yerine, dosyayı çalıştırmak için 'python'ı kullanın:
 
 {% filename %}command-line{% endfilename %}
 
@@ -692,15 +692,15 @@ Note: on Windows 'python3' is not recognized as a command. Instead, use 'python'
 > python python_intro.py
 ```
 
-Alright! You just ran your first Python program that was saved to a file. Feel awesome?
+Tamamdır! Bir dosyaya kaydedilen ilk Python programınızı çalıştırdınız. Harika hissediyor musunuz?
 
-You can now move on to an essential tool in programming:
+Şimdi programlamanın olmazsa olmaz bir aracını öğrenme zamanı:
 
 ## If … elif … else
 
-Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
+Kodunuzdaki bir çok şey yalnızca belirli koşullar yerine getirildiğinde çalışmalıdır. İşte tam da bu yüzden Python'da **if deyimi** isminde bir yapı bulunuyor.
 
-Replace the code in your **python_intro.py** file with this:
+**python_intro.py** dosyasındaki kodunuzu şununla değiştirin:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -708,7 +708,7 @@ Replace the code in your **python_intro.py** file with this:
 if 3 > 2:
 ```
 
-If we were to save and run this, we'd see an error like this:
+Eğer bunu kaydetmiş ve çalıştırmış olsaydık, bunun gibi bir hata görecektik:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
