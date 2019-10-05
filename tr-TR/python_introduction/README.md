@@ -742,7 +742,7 @@ Not: Windows'ta 'python3' komutunun geçerli olmadığını unutmayın. Bundan s
 
 ### Ya bir koşul True (Doğru) değilse?
 
-In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
+Önceki örneklerde kod sadece koşullar True (doğru) olduğunda çalışıyordu. Ama Python ayrıca `elif` ve `else` ifadelerine de sahip:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -753,7 +753,7 @@ else:
     print("5  2'den büyük değildir")
 ```
 
-When this is run it will print out:
+Bu kod çalıştığında aşağıdaki çıktıyı verecektir:
 
 {% filename %}command-line{% endfilename %}
 
@@ -761,7 +761,7 @@ When this is run it will print out:
     5 gerçekten de 2'den büyüktür
     
 
-If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
+Eğer 2 5'ten büyük bir sayı olsaydı, ikinci komut çalıştırılmış olacaktı. Bakalım `elif` nasıl çalışıyor:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -775,7 +775,7 @@ else:
     print('Selam yabancı!')
 ```
 
-and executed:
+ve çalıştırılınca:
 
 {% filename %}command-line{% endfilename %}
 
@@ -783,9 +783,9 @@ and executed:
     Selam Zeynep!
     
 
-See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
+Gördünüz mü? Eğer önceki if koşulları başarısız olursa kontrol edilmek üzere `elif` ifadeleri ekleyebilirsiniz.
 
-You can add as many `elif` statements as you like after your initial `if` statement. For example:
+`if` ifadesinden sonra istediğiniz kadar `elif` ifadesi ekleyebilirsiniz. Örneğin:
 
 {% filename %}python_intro.py{% endfilename %}
 
