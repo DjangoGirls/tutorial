@@ -200,7 +200,7 @@ Başına `-` ekleyerek sıralamayı tersine de çevirebiliriz:
 [<Post: Nefis bir gönderi>, <Post: Harika bir gönderi>, <Post: Gönderi 2>, <Post: Gönderi 1>]>
 ```
 
-### Complex queries through method-chaining
+### QuerySets (SorguSetlerini) Zincirlemek (Chaining)
 
 As you saw, some methods on `Post.objects` return a QuerySet. The same methods can in turn also be called on a QuerySet, and will then return a new QuerySet. Thus, you can combine their effect by **chaining** them together:
 
