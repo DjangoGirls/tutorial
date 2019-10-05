@@ -90,7 +90,7 @@ urlpatterns = [
 ]
 ```
 
-Comme vous pouvez le voir, nous assignons une `vue` appelée `post_list` à l'URL racine. This URL pattern will match an empty string and the Django URL resolver will ignore the domain name (i.e., http://127.0.0.1:8000/) that prefixes the full URL path. Ce pattern va donc indiquer à Django d'afficher la vue `views.post_list` à un utilisateur de votre site web qui se rendrait à l'adresse "http://127.0.0.1:8000/".
+Comme vous pouvez le voir, nous assignons une `vue` appelée `post_list` à l'URL racine. Ce modèle d’URL correspond à une chaîne vide et le résolveur d'URL de Django ignore le nom de domaine (par exemple, http://127.0.0.1:8000/), soit la première partie de l'URL. Ce pattern va donc indiquer à Django d'afficher la vue `views.post_list` à un utilisateur de votre site web qui se rendrait à l'adresse "http://127.0.0.1:8000/".
 
 La dernière partie, `name='post_list'`, est le nom de l'URL qui sera utilisée afin d'identifier la vue. Ce nom peut être le même que celui de la vue ou quelque chose de complètement différent. Plus tard dans ce tutoriel, nous allons utiliser les noms que nous avons donné à nos URLs. Il est donc important de donner un nom unique à chaque URL que nous créons. Pour vous faciliter la tâche, essayez de trouver des nom d'URLs simple à retenir.
 
@@ -98,6 +98,6 @@ Si vous essayez d'aller sur http://127.0.0.1:8000/ maintenant, vous trouverez un
 
 ![Erreur](images/error1.png)
 
-Votre console affiche une erreur, mais ne vous inquiétez pas – c’est en fait très utile : elle vous dit qu’il n’existe aucun attribut « post_list » (**no attribute 'post_list'**). C’est le nom de la *vue* que Django essaie de trouver et d’utiliser, or nous ne l'avons pas encore créée. À ce stade, votre `/admin/` ne fonctionnera pas non plus. Pas de problème, on y vient. Si vous voyez un message d’erreur différent, essayez de redémarrer votre serveur web. To do that, in the console window that is running the web server, stop it by pressing Ctrl+C (the Control and C keys together). On Windows, you might have to press Ctrl+Break. Then you need to restart the web server by running a `python manage.py runserver` command.
+Votre console affiche une erreur, mais ne vous inquiétez pas – c’est en fait très utile : elle vous dit qu’il n’existe aucun attribut « post_list » (**no attribute 'post_list'**). C’est le nom de la *vue* que Django essaie de trouver et d’utiliser, or nous ne l'avons pas encore créée. À ce stade, votre `/admin/` ne fonctionnera pas non plus. Pas de problème, on y vient. Si vous voyez un message d’erreur différent, essayez de redémarrer votre serveur web. Pour faire cela, dans la console qui exécute le serveur web, arrêtez-le en appuyant sur CTRL+C (les touches Control et C simultanément). Sous Windows, vous devrez peut-être appuyer sur Ctrl+Break. Vous devrez alors redémarrer le serveur web en exécutant la commande `python manage.py runserver`.
 
-> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/2.2/topics/http/urls/
+> Si vous voulez en savoir plus au sujet de la configuration des URLs dans Django, vous pouvez aller consulter la documentation officielle du framework : https://docs.djangoproject.com/en/2.2/topics/http/urls/
