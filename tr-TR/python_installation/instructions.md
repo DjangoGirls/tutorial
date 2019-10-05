@@ -63,13 +63,13 @@ Farklı bir Python sürümü yüklüyse, en azından 3.4.0 (örn. 3.6.0), yükse
     $ grep ^NAME= /etc/os-release
     
 
-Afterwards, depending on the result, follow one of the following installation guides below this section.
+Daha sonra, sonuca bağlı olarak, bu bölümün altındaki aşağıdaki kurulum kılavuzlarından birini izleyin.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-Type this command into your console:
+Terminale bu komutu girin:
 
 {% filename %}command-line{% endfilename %}
 
@@ -81,21 +81,21 @@ Type this command into your console:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Use this command in your console:
+Konsolunuzda bu komutu kullanın:
 
 {% filename %}command-line{% endfilename %}
 
     $ sudo dnf install python3
     
 
-If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use `yum` instead.
+Eğer eski bir Fedora sürümünüz varsa `dnf` komutu bulunamadı hatasını alabilirsiniz. Bu durumda `yum` komutunu kullanmanız gerekir.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Use this command in your console:
+Konsolunuzda bu komutu kullanın:
 
 {% filename %}command-line{% endfilename %}
 
@@ -104,7 +104,7 @@ Use this command in your console:
 
 <!--endsec-->
 
-Verify the installation was successful by opening a command prompt and running the `python3` command:
+Komut istemini açıp `python3` komutunu çalıştırarak yüklemenin başarılı olup olmadığını doğrulayabilirsiniz:
 
 {% filename %}command-line{% endfilename %}
 
@@ -112,9 +112,9 @@ Verify the installation was successful by opening a command prompt and running t
     Python 3.6.1
     
 
-The version shown may be different from 3.6.1 -- it should match the version you installed.
+Konsolda gösterilen sürüm 3.6.1'den farklı olabilir - kurduğunuz sürümle aynı olmalıdır.
 
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is 3.4.0 or higher. If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
+**NOT:** Eğer Windows kullanıyorsanız ve `python3` bulunamadı hatasını alıyorsanız, `python` (`3` olmadan) komutunu deneyin ve 3.4.0 veya daha yüksek bir Python sürümü olup olmadığını kontrol edin. If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
 
 * * *
 
