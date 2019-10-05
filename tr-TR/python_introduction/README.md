@@ -718,7 +718,7 @@ Eğer bunu kaydetmiş ve çalıştırmış olsaydık, bunun gibi bir hata görec
     SyntaxError: unexpected EOF while parsing
     
 
-Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
+Python bizden `3 > 2` durumu (veya `True`) sağlandığında kendisine neyi çalıştıracağını söylememizi bekliyor. Python'a "Çalışıyor!" yazmasını söyleyelim. **python_intro.py** dosyanızdaki kodu şununla değiştirin:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -727,9 +727,9 @@ if 3 > 2:
     print('Çalışıyor!')
 ```
 
-Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
+Sonraki kod satırında 4 tane boşluk karakteri bıraktığımıza dikkat ettiniz mi? Böylece if ifadesine yazılan durum doğru olduğunda neyi çalıştırması gerektiğini Python'a söylemiş oluyoruz. Aslında tek bir boşlukla da yapabilirsiniz, ama hemen hemen bütün Python programcıları kodlarının temiz görünmesi için 4 boşluk bırakıyor. Metin düzenleyiciniz ayarlıysa bir tab karakteri de 4 boşluk karakteri olarak sayılacaktır. Seçiminizi yaptıktan sonra değiştirmeyin! Eğer girintilerde 4 boşluk kullandıysanız, gelecek girintilerde de 4 boşluk kullanmaya devam edin - aksi halde sorunlarla karşılaşabilirsiniz.
 
-Save it and give it another run:
+Kaydedip çalıştırmayı deneyelim:
 
 {% filename %}command-line{% endfilename %}
 
@@ -738,7 +738,7 @@ $ python3 python_intro.py
 Çalışıyor!
 ```
 
-Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
+Not: Windows'ta 'python3' komutunun geçerli olmadığını unutmayın. Bundan sonra dosyayı çalıştırmak için 'python3' komutunu yerine 'python' komutu kullanın.
 
 ### Ya bir koşul True (Doğru) değilse?
 
