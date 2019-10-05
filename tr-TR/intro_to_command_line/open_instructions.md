@@ -1,8 +1,8 @@
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-Depending on your version of Windows and your keyboard, one of the following should open a command window (you may have to experiment a bit, but you don't have to try all of these suggestions):
+Windows sürümünüze ve klavyenize bağlı olarak, aşağıdaki seçeneklerden birinin bir komut penceresi açması gerekir (biraz deneme yapmanız gerekebilir, ancak tüm önerileri denemeniz gerekmez):
 
-- Go to the Start menu or screen, and enter "Command Prompt" in the search field.
+- Başlat menüsüne veya ekranına gidin ve arama alanına "Komut İstemi" girin.
 - Go to Start menu → Windows System → Command Prompt.
 - Go to Start menu → All Programs → Accessories → Command Prompt.
 - Go to the Start screen, hover your mouse in the lower-left corner of the screen, and click the down arrow that appears (on a touch screen, instead flick up from the bottom of the screen). The Apps page should open. Click on Command Prompt in the Windows System section.
