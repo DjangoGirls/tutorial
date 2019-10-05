@@ -30,10 +30,10 @@ Evet! Her türlü programlama becerisini öğrenmek için çevrimiçi *bir çok*
 - [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – the initial exercises are free
 - [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
 - [edX](https://www.edx.org/course?search_query=python) – Bir çok kursu ücretsiz olarak alabilirsiniz, ancak yükseköğretim yeterliliği için bir sertifika veya kredi almak ücretli olabilir
-- [Coursera's Python specialization](https://www.coursera.org/specializations/python) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
-- [Python for Everybody](https://www.py4e.com/) - a free and open version of the Coursera Python for Everybody specialization
+- [Coursera Python Uzmanlığı](https://www.coursera.org/specializations/python) - bazı video dersleri ücretsiz olarak izlenebilir ve bu kursları alarak bir Coursera Sertifikası kazanabilirsiniz
+- [Herkes için Python](https://www.py4e.com/)- Coursera Herkes için Python uzmanlık kursunun ücretsiz ve açık versiyonu
 
-#### Working with data
+#### Veril ile çalışma
 
 - [Codecademy's data science course](https://www.codecademy.com/learn/paths/data-science)
 - [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
