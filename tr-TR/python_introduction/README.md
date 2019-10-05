@@ -828,11 +828,11 @@ if volume < 20 or volume > 80:
     print("That's better!")
 ```
 
-You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
+Kodun her satırı için bir açıklama yazmaya ihtiyacınız yoktur, ama kodunuzun niçin bir şey yaptığını açıklamak ya da kompleks bir şey yaptığınızda bir özet sunmak için yorumlar faydalıdırlar.
 
 ### Özet
 
-In the last few exercises you learned about:
+En son yaptığınız alıştırmalarda öğrendikleriniz:
 
 - **kıyaslama yapmak** - Python'da `>`, `>=`, `==`, `<=`, `<` ve `ve`, `veya` operatörlerini kullanarak kıyaslama yapabilirsiniz
 - **Boolean** - İki farklı değer alabilen bir nesne tipidir: Ya `True` (doğru) olur ya da `False` (yanlış)
@@ -840,15 +840,15 @@ In the last few exercises you learned about:
 - **if ... elif ... else** - ifadelerini sadece belirli durumlar sağlandığında çalıştırmak istediğimiz komutlar için kullanabiliriz.
 - **yorumlar** - kodunuzu belgelemenize izin verecek şekilde Python’un çalışmayacağı satırlar
 
-Time for the last part of this chapter!
+Bu bölümün son kısmının zamanı geldi!
 
 ## Kendi fonksiyonlarınız!
 
 > Evdeki okuyucular için: Bu kısım [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0) videosunda işlenmiştir.
 
-Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
+Python'da çalıştırabileceğin `len()` gibi fonksiyonları hatırlıyor musun? Güzel, iyi haber - Şimdi kendi fonksiyonlarını nasıl yazacağını öğreneceksin!
 
-A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
+Fonksiyon Python tarafından işlenmesi gereken yönergeler dizisidir. Python'da her fonksiyon `def` anahtar kelimesi ile başlar, bir isim verilir ve bazı parameterleri olabilir. Hadi başlayalım. **python_intro.py** içindeki kodu aşağıdaki ile değiştirelim:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -861,11 +861,11 @@ def hi():
 hi()
 ```
 
-Okay, our first function is ready!
+Tamam, ilk fonksiyonumuz hazır!
 
-You may wonder why we've written the name of the function at the bottom of the file. This is because Python reads the file and executes it from top to bottom. So in order to use our function, we have to re-write it at the bottom.
+Fonksiyon adını neden dosyanın en altına yazdığımızı merak edebilirsiniz. Çünkü Python dosyayı okur ve onu yukarıdan aşağı doğru işler. Yani fonksiyonumuzu kullanabilmek için, onu en alt kısımda yeniden yazmalıyız.
 
-Let's run this now and see what happens:
+Haydi şimdi bunu çalıştıralım ve neler olacağını görelim:
 
 {% filename %}command-line{% endfilename %}
 
@@ -874,7 +874,7 @@ Let's run this now and see what happens:
     Nasılsın?
     
 
-Note: if it didn't work, don't panic! The output will help you to figure why:
+Not: Eğer çalışmadıysa panik yapmayın! Çıktı hatanın neden olduğu hakkında bir fikir verir:
 
 - Eğer bir `NameError` alırsanız, muhtemelen yanlış bir şey yazdığınız anlamına gelir, bu nedenle `def hi():` lı fonksiyonu oluştururken ve `hi()` lıyı çağırırken aynı adı kullanıp kullanmadığınızı kontrol etmelisiniz.
 - Eğer bir `IndentationError` alırsanız,`print` dizelerinin her ikisinin de satır başında aynı boşluğa sahip olduğunu kontrol et: python fonksiyonun içindeki tüm kodların düzenli bir şekilde hizalanmasını ister.
