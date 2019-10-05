@@ -45,9 +45,9 @@ Aşağıdaki adımların çoğu, "konsol", "terminal", "komut penceresi" veya "k
 
 # GitHub hesabı oluşturun
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password (add it to your password manager, if you use one).
+[GitHub.com](https://www.github.com)'a gidin ve ücretsiz yeni bir kullanıcı hesabı oluşturun. Şifrenizi hatırladığınızdan emin olun (eğer şifrenizi yöneticisi kullanıyorsanız, yöneticinize ekleyin).
 
-# Create a PythonAnywhere account
+# PythonAnywhere hesabı oluşturun
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
@@ -65,4 +65,4 @@ Tebrikler, ayarlarınız tamam ve hazırsınız! Eğer atölyeden önce hala vak
 
 # Çalışmanın tadına varın!
 
-When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
+Atölyeye başladığınızda doğrudan [İlk Django projen!](../django_start_project/README.md) bölümüne gidebilirsiniz çünkü çoktan önceki bölümlerde bu konuları çözdük.
