@@ -6,9 +6,9 @@
 
 Vous utilisez sûrement Internet tous les jours. Mais savez-vous ce qui ce passe vraiment quand vous tapez une adresse comme https://djangogirls.org dans votre navigateur et appuyez sur `Entrée`?
 
-The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk -- just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
+La première chose que vous devez comprendre c’est qu’un site Web consiste en un tas de fichiers sauvegardés sur un disque dur -- tout comme vos films, musiques ou photos. Cependant, les sites web ont quelque chose d'unique : ils contiennent du code informatique appelé HTML.
 
-If you're not familiar with programming, it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. Les navigateurs web sont conçus pour comprendre ce code, pour suivre les instructions qu'il contient et présenter les fichiers de votre site web exactement comme vous voulez qu'ils soient présentés.
+Si vous n'avez pas l'habitude de la programmation, il peut être difficile de comprendre HTML au début, mais vos navigateurs web (comme Chrome, Safari, Firefox, etc.) adorent ça. Les navigateurs web sont conçus pour comprendre ce code, pour suivre les instructions qu'il contient et présenter les fichiers de votre site web exactement comme vous voulez qu'ils soient présentés.
 
 Comme pour n'importe quel autre fichier, il faut stocker les fichiers HTML sur un disque dur quelque part. Pour Internet, on utilise des ordinateurs spéciaux, très puissants, appelés *serveurs*. Ils n'ont pas d'écran, de clavier ou de souris, car leur rôle est de stocker des données, et de les servir. C'est pour ça qu'on les appelle des *serveurs* : parce qu'ils sont là pour vous *servir* des données.
 
