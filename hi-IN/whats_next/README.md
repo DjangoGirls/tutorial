@@ -1,6 +1,6 @@
 # आगे क्या है?
 
-अपने आप को बधाई दे! **आपने बहुत अच्छी तरह से काम किया है।** हमें आप पर गर्व ह! <3
+अपने आप को बधाई दे! **आपने बहुत अच्छी तरह से काम किया है।** हमें गर्व है! <3
 
 ### अब क्या करे?
 
@@ -33,10 +33,10 @@
 - [कौरसेरा के पायथन स्पेशलाइजेशन](https://www.coursera.org/specializations/python) - कुछ वीडियो लेक्चर मुफ्त में ऑडिट किए जा सकते हैं और आप इन कोर्सेज को लेकर एक कौरसेरा सर्टिफिकेट कमा सकते हैं
 - [पाइथन फॉर एवरीबॉडी](https://www.py4e.com/) - एवरीबॉडी स्पेशलाइजेशन के लिए कौरसेरा पायथन का एक स्वतंत्र और खुला संस्करण
 
-#### Working with data
+#### डेटा के साथ काम करना
 
-- [Codecademy's data science course](https://www.codecademy.com/learn/paths/data-science)
-- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
-- [Dataquest](https://www.dataquest.io/) – the first 30 "missions" are free
+- [कोड अकादमी का डेटा साइंस कोर्स](https://www.codecademy.com/learn/paths/data-science)
+- [एडेक्स](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) - आप अधिकांश पाठ्यक्रमों को मुफ्त में ऑडिट कर सकते हैं, लेकिन यदि आप एक उच्च शिक्षा योग्यता के लिए प्रमाण पत्र या क्रेडिट चाहते हैं तो इसके लिए पैसे खर्च होंगे
+- [डेटाक्वेस्ट](https://www.dataquest.io/) - पहले 30 "मिशन" मुफ्त हैं
 
-We can't wait to see what you build next!
+हम यह देखने के लिए इंतजार नहीं कर सकते कि आप आगे क्या बनाते हैं!
