@@ -6,7 +6,7 @@
 
 Visual Studio Code — это редактор исходного кода, разработанный Microsoft для Windows, Linux и macOS. Включает в себя отладчик, инструменты для работы с Git, подсветку синтаксиса, систему автодополнения, сниппеты, и средства для рефакторинга.
 
-[Скачать его можно здесь](https://code.visualstudio.com/download)
+[Скачать его можно здесь](https://code.visualstudio.com/)
 
 ## Gedit
 
