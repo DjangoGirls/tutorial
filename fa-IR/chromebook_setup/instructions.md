@@ -45,7 +45,7 @@ IDE ابری ابزاری است که به شما دسترسی به یک ویر�
 
 ### محیط مجازی
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+یک محیط مجازی (که به آن virtualenv هم گفته می‌شود) شبیه به یک جعبه مجازی است که ما می‌توانیم کدهای مربوط به یک پروژه را در آن جمع کنیم. ما از آن‌ها برای جدا نگه داشتن کدهای پروژه‌های مختلف از یکدیگر، استفاده می‌کنیم تا به هم ریختگی بین پروژه‌ها به وجود نیاید.
 
 Run:
 
@@ -58,11 +58,11 @@ Run:
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: `~=`).
+(دقت کنید که ما در خط آخر از یک علامت tilde به همراه یک علامت مساوی استفاده کرده‌ایم: `~=`).
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+یک حساب کاربری [GitHub](https://github.com) بسازید.
 
 ### PythonAnywhere
 
