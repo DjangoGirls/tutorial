@@ -369,7 +369,7 @@ Nerede olduğunuzu kontrol edin:
 
 <!--endsec-->
 
-Done! To be sure it's actually deleted, let's check it:
+Bitti! Gerçekten silindiğinden emin olalım:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -389,9 +389,9 @@ Done! To be sure it's actually deleted, let's check it:
 
 <!--endsec-->
 
-### Exit
+### Çıkış
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+Şimdilik bu kadar! Şimdi komut satırını güvenle kapatabilirsiniz. Bunu "hacker" tarzında yapalım, tamam mı? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -411,11 +411,11 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--endsec-->
 
-Cool, huh? :)
+Harika, değil mi? :)
 
 ## Özet
 
-Here is a summary of some useful commands:
+İşte bazı yararlı komutların özeti:
 
 | Komut (Windows)  | Komut (Mac OS - GNU/Linux) | Açıklama                | Örnek                                              |
 | ---------------- | -------------------------- | ----------------------- | -------------------------------------------------- |
@@ -428,12 +428,12 @@ Here is a summary of some useful commands:
 | mkdir            | mkdir                      | yeni bir dizin oluştur  | **mkdir testdizini**                               |
 | rmdir (veya del) | rm                         | dosyayı silin           | **del c:\test\test.txt**                         |
 | rmdir /S         | rm -r                      | klasörü siliniz         | **rm - r testdizini**                              |
-| [CMD] /?         | man [CMD]                  | get help for a command  | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
+| [CMD] /?         | man [CMD]                  | komut için yardım al    | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
 
-These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
+Bunlar komut satırında çalıştırabileceğiniz komutlardan sadece birkaçı, fakat bugün bundan daha fazlasını kullanmayacaksınız.
 
-If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+Eğer merak ediyorsanız, [ss64.com](http://ss64.com) adresinden tüm işletim sistemleri için tüm komutların kullanımına ulaşabilirsiniz.
 
 ## Hazır mısınız?
 
-Let's dive into Python!
+Haydi Python'a giriş yapalım!
