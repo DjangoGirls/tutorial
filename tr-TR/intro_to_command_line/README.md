@@ -91,11 +91,11 @@ Gördüğünüz gibi bilgisayar kullanıcı adınızı yazdı. Şahane, değil m
 
 ## Temeller
 
-Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
+Her işletim sistemi komut satırı için birbirinden biraz farklı komutlar kullanır, bu nedenle işletim sisteminize uygun yönergeleri izlediğinizden emin olun. Hadi deneyelim mi?
 
 ### Geçerli Dizin
 
-It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
+Şimdi nerede olduğumuzu bilmek güzel olurdu, değil mi? Bakalım. Bu komutu yazın ve `enter` tuşuna basın:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -105,7 +105,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     /Users/zeynep
     
 
-> Note: 'pwd' stands for 'print working directory'.
+> Not: 'pwd'nin anlamı 'print working directory' yani 'çalışma dizinini yazdır'dır.
 
 <!--endsec-->
 
@@ -117,21 +117,21 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     C:\Users\zeynep
     
 
-> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
+> Not: 'cd' komutu 'change directory' yani 'dizin değiştir' anlamındadır. Powershell ile Linux veya Mac OS X'teki gibi pwd komutunu kullanabilirsiniz.
 
 <!--endsec-->
 
-You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
+Muhtemelen makinenizde benzer bir yazı göreceksiniz. Komut satırını açtığınızda genellikle kullanıcınızın ev dizininde başlarsınız.
 
 * * *
 
-### Learn more about a command
+### Komut hakkında daha fazla bilgi edinin
 
-Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
+Komut istemine yazabileceğiniz birçok komut görüntüleyebileceğiniz ve okuyabileceğiniz yerleşik bir yardım açıklaması sunar! Örneğin, geçerli dizin 'cd' komutu hakkında daha fazla bilgi edinmek için:
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X and Linux have a `man` command, which gives you help on commands. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
+OS X ve Linux, komutlar hakkında size yardımcı olan bir `man` komutuna sahiptir. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
 
 <!--endsec-->
 
