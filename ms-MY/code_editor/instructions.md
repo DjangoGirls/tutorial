@@ -6,7 +6,7 @@ Cadangan kami di bawah, tetapi berasa bebas untuk meminta jurulatih anda apa yan
 
 Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
 
-[Muat turun di sini](https://code.visualstudio.com/download)
+[Muat turun di sini](https://code.visualstudio.com/)
 
 ## Gedit
 
