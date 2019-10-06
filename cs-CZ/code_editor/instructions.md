@@ -6,7 +6,7 @@ Naše návrhy jsou napsané níže, ale neváhejte se zeptat svého kouče, jak�
 
 Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
 
-[Stáhnout si jej můžeš zde](https://code.visualstudio.com/download)
+[Stáhnout si jej můžeš zde](https://code.visualstudio.com/)
 
 ## Gedit
 
