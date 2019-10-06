@@ -20,18 +20,18 @@
 
 #### HTML, CSS और JavaScript
 
-- [Codecademy का वेब डेवलपमेंट कोर्स](https://www.codecademy.com/learn/paths/web-development)
+- [कोड अकादमी का वेब डेवलपमेंट कोर्स](https://www.codecademy.com/learn/paths/web-development)
 - [freeCodeCamp](https://www.freecodecamp.org/)
 
-#### Python
+#### पायथन
 
-- [Codecademy's Python course](https://www.codecademy.com/learn/learn-python)
-- [Google's Python course](https://developers.google.com/edu/python/)
-- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – the initial exercises are free
-- [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
-- [edX](https://www.edx.org/course?search_query=python) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
-- [Coursera's Python specialization](https://www.coursera.org/specializations/python) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
-- [Python for Everybody](https://www.py4e.com/) - a free and open version of the Coursera Python for Everybody specialization
+- [कोड अकादमी का पायथन कोर्स](https://www.codecademy.com/learn/learn-python)
+- [गूगल का पायथन कोर्स](https://developers.google.com/edu/python/)
+- [जानें पायथन द हार्ड वे किताब](http://learnpythonthehardway.org/book/) - शुरुआती अभ्यास मुफ्त हैं 
+- [नए कोडर ट्यूटोरियल](http://newcoder.io/tutorials/) - यह आप पायथन का उपयोग कैसे कर सकते हैं इसके विभिन्न व्यावहारिक उदाहरण हैं
+- [एडेक्स](https://www.edx.org/course?search_query=python) - आप अधिकांश पाठ्यक्रमों को मुफ्त में ऑडिट कर सकते हैं, लेकिन यदि आप एक उच्च शिक्षा योग्यता के लिए प्रमाण पत्र या क्रेडिट चाहते हैं तो इसके लिए पैसे खर्च होंगे
+- [कौरसेरा के पायथन स्पेशलाइजेशन](https://www.coursera.org/specializations/python) - कुछ वीडियो लेक्चर मुफ्त में ऑडिट किए जा सकते हैं और आप इन कोर्सेज को लेकर एक कौरसेरा सर्टिफिकेट कमा सकते हैं
+- [पाइथन फॉर एवरीबॉडी](https://www.py4e.com/) - एवरीबॉडी स्पेशलाइजेशन के लिए कौरसेरा पायथन का एक स्वतंत्र और खुला संस्करण
 
 #### Working with data
 
