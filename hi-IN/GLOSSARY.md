@@ -1,3 +1,3 @@
-# कोड एडिटर
+# कोड संपादक
 
-It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the Coding is for girls YouTube channel. In every chapter already covered, there is a link that points to the correct video. You can learn where to get one from the [Code editor chapter](./code_editor/README.md)
+कोड संपादक एक ऐसा एप्लिकेशन है जो आपको अपना कोड सहेजने की अनुमति देता है ताकि आप बाद में इसे वापस प्राप्त कर सकें। आप सीख सकते हैं कि [कोड संपादक अध्याय](./code_editor/README.md) में से एक कहां से प्राप्त करें
