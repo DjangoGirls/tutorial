@@ -6,7 +6,7 @@ Nous sommes sur le point de créer notre première page web : une page d'accueil
 
 Une URL est une adresse web. Vous pouvez voir une URL chaque fois que vous visitez un site web. Elle est visible dans la barre d'adresse de votre navigateur. (Oui ! `127.0.0.1:8000` est aussi une URL ! Et `https://djangogirls.org` est aussi une URL.)
 
-![Url](images/url.png)
+![URL](images/url.png)
 
 Chaque page internet a besoin de sa propre URL. C'est grâce à cela que votre application sait ce qu'elle doit afficher à un utilisateur qui ouvre cette URL. Dans Django, nous utilisons un outil appelé `URLconf` (Configuration d'URL). URLconf est un ensemble de modèles que Django va essayé de faire correspondre à l'URL demandée afin de trouver la vue adaptée.
 
@@ -98,6 +98,6 @@ Si vous essayez d'aller sur http://127.0.0.1:8000/ maintenant, vous trouverez un
 
 ![Erreur](images/error1.png)
 
-Votre console affiche une erreur, mais ne vous inquiétez pas – c’est en fait très utile : elle vous dit qu’il n’existe aucun attribut « post_list » (**no attribute 'post_list'**). C’est le nom de la *vue* que Django essaie de trouver et d’utiliser, or nous ne l'avons pas encore créée. À ce stade, votre `/admin/` ne fonctionnera pas non plus. Pas de problème, on y vient. Si vous voyez un message d’erreur différent, essayez de redémarrer votre serveur web. Pour ce faire, appuyez Ctrl + C (les touches contrôle et C ensemble) dans la fenêtre de console qui exécute le serveur web, puis redémarrez le serveur en exécutant la commande `python manage.py runserver`.
+Votre console affiche une erreur, mais ne vous inquiétez pas – c’est en fait très utile : elle vous dit qu’il n’existe aucun attribut « post_list » (**no attribute 'post_list'**). C’est le nom de la *vue* que Django essaie de trouver et d’utiliser, or nous ne l'avons pas encore créée. À ce stade, votre `/admin/` ne fonctionnera pas non plus. Pas de problème, on y vient. Si vous voyez un message d’erreur différent, essayez de redémarrer votre serveur web. Pour faire cela, dans la console qui exécute le serveur web, arrêtez-le en appuyant sur CTRL+C (les touches Control et C simultanément). Sous Windows, vous devrez peut-être appuyer sur Ctrl+Break. Vous devrez alors redémarrer le serveur web en exécutant la commande `python manage.py runserver`.
 
-> Si vous voulez en savoir plus au sujet de la configuration des URLs dans Django, vous pouvez consulter la documentation officielle : https://docs.djangoproject.com/en/2.0/topics/http/urls/
+> Si vous voulez en savoir plus au sujet de la configuration des URLs dans Django, vous pouvez aller consulter la documentation officielle du framework : https://docs.djangoproject.com/en/2.2/topics/http/urls/

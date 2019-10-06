@@ -6,7 +6,7 @@
 
 Vous utilisez sûrement Internet tous les jours. Mais savez-vous ce qui ce passe vraiment quand vous tapez une adresse comme https://djangogirls.org dans votre navigateur et appuyez sur `Entrée`?
 
-La première chose que vous devez comprendre c’est qu’un site Web consiste en un tas de fichiers sauvegardés sur un disque dur. Exactement comme vos vidéos, vos musiques ou vos photos. Cependant, les sites web ont quelque chose d'unique : ils contiennent du code informatique appelé HTML.
+La première chose que vous devez comprendre c’est qu’un site Web consiste en un tas de fichiers sauvegardés sur un disque dur -- tout comme vos films, musiques ou photos. Cependant, les sites web ont quelque chose d'unique : ils contiennent du code informatique appelé HTML.
 
 Si vous n'avez pas l'habitude de la programmation, il peut être difficile de comprendre HTML au début, mais vos navigateurs web (comme Chrome, Safari, Firefox, etc.) adorent ça. Les navigateurs web sont conçus pour comprendre ce code, pour suivre les instructions qu'il contient et présenter les fichiers de votre site web exactement comme vous voulez qu'ils soient présentés.
 

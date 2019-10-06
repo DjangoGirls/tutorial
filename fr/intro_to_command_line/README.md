@@ -136,7 +136,7 @@ macOS et Linux ont une commande `man`, qui donne des informations sur les comman
 
 <!--endsec-->
 
-<!--sec data-title="Current directory: Windows" data-id="windows_help" data-collapse=true ces-->
+<!--sec data-title="Command Help: Windows" data-id="windows_help" data-collapse=true ces-->
 
 Ajouter un `/ ?` à la fin de la commande devrait également permettre d'afficher la page d’aide. Vous devrez peut-être faire défiler votre fenêtre de commande vers le haut pour tout voir. Essayez `cd / ?`.
 

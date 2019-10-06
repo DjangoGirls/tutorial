@@ -4,6 +4,8 @@
 
 Django est écrit en Python. Pour réaliser quelque chose en Django, il va nous falloir Python. Commençons par l'installer ! Pour suivre ce tutoriel, l'idéale est d'installer la dernière version de Python 3. Si vous avez une version antérieure, il va falloir la mettre à jour. Si vous avez une version 3.4 ou supérieure, ça devrait aller.
 
+Veuillez installer Python comme suit, même si vous avez déjà installé Anaconda sur votre ordinateur.
+
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
 Vérifiez d'abord si votre ordinateur exécute une version 32 bits ou une version 64 bits de Windows, en cherchant "Type du système" dans la page d'information système. Pour accéder à cette page, essayez l'une de ces méthodes :
@@ -36,7 +38,7 @@ data-collapse=true ces-->
 
 > **Note** Avant d'installer Python sur OS X, vous devriez vous assurer que vos paramètres Mac permettent d'installer des programmes qui ne proviennent pas de l'App Store. Allez dans Préférences Système (c'est dans le dossier Applications), cliquez sur "Sécurité & Confidentialité", puis sur l'onglet "Général". Si votre "Autoriser les applications téléchargées de:" est défini sur "Mac App Store", changez-le à "Mac App Store et développeurs identifiés".
 
-Vous devez aller sur le site https://www.python.org/downloads/release/python-361/ et télécharger l'installateur python:
+Vous devez aller sur le site https://www.python.org/downloads/release/python-361/ et télécharger l'installateur Python:
 
 * Téléchargez le fichier *Mac OS X 64-bit/32-bit installer*,
 * Double-cliquez sur le fichier *python-3.6.1-macosx10.6.pkg* pour lancer l'installateur.
@@ -54,7 +56,14 @@ Il est très probable que Python soit déjà installé sur votre machine. Afin d
     Python 3.6.1
     
 
-Si vous avez une version différente de Python installée, au moins 3.4.0 (par exemple 3.6.0), alors il n'y a pas besoin de mettre à jour. Si Python n'est pas installé ou si vous souhaitez une version plus récente, vous pouvez l'installer en suivant les instructions suivantes :
+Si vous avez une version différente de Python installée, au moins 3.4.0 (par exemple 3.6.0), alors il n'y a pas besoin de mettre à jour. Si Python n'est pas installé, ou si vous voulez une version différente, vérifiez d'abord la distribution Linux que vous utilisez avec la commande suivante :
+
+{% filename %}command-line{% endfilename %}
+
+    $ grep ^NAME= /etc/os-release
+    
+
+Ensuite, selon le résultat, suivez l'un des guides d'installation sous cette section.
 
 <!--endsec-->
 
@@ -105,7 +114,7 @@ Vérifiez que l'installation s'est bien déroulée en ouvrant votre terminal et 
 
 La version affichée peut être différente de 3.6.1 -- elle devrait correspondre à la version que vous avez installée.
 
-**NOTE:** Si vous êtes sur Windows et que vous obtenez un message d'erreur disant que `python3` n'a pas été trouvé, essayez d'utiliser `python` (sans `3`) et vérifiez si elle lance une version de Python qui est toujours 3.4.0 ou supérieur.
+**NOTE:** Si vous êtes sur Windows et que vous obtenez un message d'erreur disant que `python3` n'a pas été trouvé, essayez d'utiliser `python` (sans `3`) et vérifiez si elle lance une version de Python qui est toujours 3.4.0 ou supérieur. Si cela ne fonctionne pas non plus, vous pouvez ouvrir une nouvelle invite de commande et réessayer ; cela se produit si vous utilisez une fenêtre d'invite de commande datant d'avant l'installation de Python.
 
 * * *
 

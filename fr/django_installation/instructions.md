@@ -144,6 +144,13 @@ N'oubliez pas de remplacer `myvenv` par le nom que vous avez choisi pour votre `
 
 <!--endsec-->
 
+> **NOTE :** Pour les éditeurs du très populaire VS Code, qui comporte un terminal intégré basé sur Windows Powershell, si vous souhaitez conserver le terminal intégré, vous pouvez utiliser la commande suivante pour activer votre environnement virtuel :
+> 
+>     $ . myvenv\Scripts\activate.ps1
+>     
+> 
+> L'avantage, c'est que vous n'aurez pas à constamment passer de l'éditeur aux lignes de commandes
+
 Vous saurez que votre `virtualenv` est lancé quand le prompt de votre console est précédé de `(myvenv)`.
 
 Quand vous travaillez dans un environnement virtuel, la commande `python` fera automatiquement référence à la bonne version de Python. Vous pouvez donc utiliser `python` plutôt que `python3`.
