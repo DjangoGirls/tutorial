@@ -6,21 +6,21 @@
 
 एक ब्रेक लें और आराम करें! आपने अभी-अभी कुछ बहुत बड़ा किया है।
 
-उसके बाद, अद्यतित रहने के लिए [फेसबुक](http://facebook.com/djangogirls) या[ ट्विटर ](https://twitter.com/djangogirls)पर Django Girls का पालन करना सुनिश्चित करें।
+उसके बाद, अद्यतित रहने के लिए [फेसबुक](http://facebook.com/djangogirls) या[ ट्विटर ](https://twitter.com/djangogirls)पर Django गर्ल्स का पालन करना सुनिश्चित करें।
 
-### Can you recommend any further resources?
+### क्या आप कोई और संसाधन सुझा सकते हैं?
 
-Yes! There are a *lot* of resources online for learning all kinds of programming skills – it can be pretty daunting to work out where to go next, but we've got you covered. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
+हाँ! प्रोग्रामिंग कौशल के सभी प्रकार सीखने के लिए ऑनलाइन *बहुत* सारे संसाधन हैं - यह बहुत चुनौतीपूर्ण हो सकता है कि आगे कहां जाना है, लेकिन हमने आपको कवर किया है। Django गर्ल्स में आने से पहले आपकी रुचियां जो भी थीं, और जो भी रुचियां आपने पूरे ट्यूटोरियल में विकसित की हैं, यहां कुछ मुफ्त संसाधन (या बड़े मुक्त घटकों के साथ संसाधन) हैं, जिनका उपयोग आप वहीं करना चाहते हैं जहां आप होना चाहते हैं।
 
 #### Django
 
-- Our other book, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
-- [Django's official tutorial](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
+- हमारी दूसरी पुस्तक, [Django गर्ल्स ट्यूटोरियल: एक्सटेंशन](https://tutorial-extensions.djangogirls.org/)
+- [Django के आधिकारिक ट्यूटोरियल](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
 - [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
 
-#### HTML, CSS and JavaScript
+#### HTML, CSS और JavaScript
 
-- [Codecademy's web development course](https://www.codecademy.com/learn/paths/web-development)
+- [Codecademy का वेब डेवलपमेंट कोर्स](https://www.codecademy.com/learn/paths/web-development)
 - [freeCodeCamp](https://www.freecodecamp.org/)
 
 #### Python
