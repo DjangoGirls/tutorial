@@ -6,7 +6,7 @@ Mi az alábbiakat javasoljuk, de nyugodtan kérj segítséget a coach-odtól, ő
 
 Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
 
-[Letöltés](https://code.visualstudio.com/download)
+[Letöltés](https://code.visualstudio.com/)
 
 ## Gedit
 
