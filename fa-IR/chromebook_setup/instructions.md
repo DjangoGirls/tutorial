@@ -66,8 +66,8 @@ Run:
 
 ### PythonAnywhere
 
-The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+دوره آموزشی جنگوگرلز شامل بخشی است به نام انتشار یا Deployment، که شامل گرفتن و انتقال دادن کدهای وبسایت شما به یک کامپیوتر در دسترس عموم (به نام سرور) است تا سایرین هم بتوانند کار شما را ببینند.
 
-This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+اگر این دوره آموزشی را بر روی Chromebook که خودش کامپیوتری بر روی اینترنت است (در مقابل لپ تاپ‌های معمولی که کامپیوتری محلی محسوب می‌شوند)، انجام می‌دهید این بخش کمی عجیب خواهد بود. با اینحال همچنان می‌تواند مفید باشد، به این صورت که ما فضای Cloud 9 را فضای کار "in progress" یا در جریان، و PythonAnywhere را محلی برای نمایش کارهای کامل شده درنظر خواهیم گرفت.
 
-Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+بنابراین یک حساب کاربری جدید در [www.pythonanywhere.com](https://www.pythonanywhere.com) بسازید.
