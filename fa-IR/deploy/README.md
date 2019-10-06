@@ -204,7 +204,7 @@
 - فراموشی در ساخت توکن API در PythonAnywhere.
 - اشتباه در URL مربوط به GitHub
 - اگر خطایی با این مضمون *"Could not find your settings.py"* مشاهده کردید، احتمالاً تمام فایل‌های خود را به Git اضافه نکرده‌اید یا همه آن‌ها را (به کمک دستور push) به GitHub نفرستاده‌اید. به بخش Git در بالا نگاهی دوباره بیندازید
-- If you previously signed up for a PythonAnywhere account and had an error with collectstatic, you probably have an older version of SQLite (eg 3.8.2) for your account. In that case, sign up for a new account and try the commands in the PythonAnywhere section above.
+- اگر قبلاً حساب کاربری در PythonAnywhere داشته‌اید و خطای collectstatic دریافت می‌کنید احتمالاً نسخه‌های قدیمی‌تر SQLite (مثلاً 3.8.2) را در حساب کاربری خود دارید. در این موارد، یک حساب کاربری جدید بسازید و دستورات مربوط به PythonAnywhere را دوباره بزنید.
 
 اگر هنگام مراجعه به وبسایت خطایی مشاهده کردید اولین جا برای بررسی و عیب یابی نگاه کردن به بخش **error log** است. حتماً در صفحه ["Web"](https://www.pythonanywhere.com/web_app_setup/) در PythonAnywhere لینکی به این بخش پیدا خواهید کرد. نگاه کنید که آیا پیغام خطایی در این صفحه وجود دارد؛ آخرین پیغام‌ها در پایین‌ترین خط ها است.
 
