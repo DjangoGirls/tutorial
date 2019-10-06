@@ -248,6 +248,6 @@ h1 a, h2 a { color: #C25100; font-family: 'Lobster'; }
 
 نگران نباشید کمی با این CSS کار کنید و سعی کنید برخی از چیزها را تغییر دهید. بازی با CSS می‌تواند به شما کمک کند که بفهمید هر بخش چگونه کار می‌کند. اگر چیزی را خراب کردید، نگران نباشید، همیشه می‌توانید این تغییرات را به حالت قبل برگردانید!
 
-We really recommend taking the free online courses "Basic HTML & HTML5" and "Basic CSS" on [freeCodeCamp](https://learn.freecodecamp.org/). They can help you learn all about making your websites prettier with HTML and CSS.
+ما اکیداً گذراندن دوره‌های آموزشی آنلاین "Basic HTML & HTML5" و "Basic CSS" را در [freeCodeCamp](https://learn.freecodecamp.org/) توصیه می‌کنیم. این دوره‌ها به شما کمک خواهد کرد تا همه چیزهایی که برای زیباتر کردن وبسایت خود با HTML و CSS لازم دارید یاد بگیرید.
 
 برای فصل بعدی آماده هستید؟! :)
