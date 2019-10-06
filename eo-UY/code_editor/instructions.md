@@ -6,7 +6,7 @@ Nia sugestoj trovis sube, sed bonvolu demandi al via trejnisto, kio estas ria pr
 
 Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
 
-[Elŝutu ĝin ĉi tie](https://code.visualstudio.com/download)
+[Elŝutu ĝin ĉi tie](https://code.visualstudio.com/)
 
 ## Gedit
 
