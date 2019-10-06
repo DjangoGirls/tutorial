@@ -258,15 +258,15 @@ Masaüstünüzde bir uygulama dizin oluşturmaya ne dersiniz? Bu şekilde yapabi
 
 <!--endsec-->
 
-Bu küçük komut masaüstünüzde `uygulama` isimli bir klasör oluşturacaktır. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+Bu küçük komut masaüstünüzde `uygulama` isimli bir klasör oluşturacaktır. Masaüstünü bakarak olup olmadığını kontrol edebilirsiniz ya da `ls` veya `dir` komutlarını kullanabilirsiniz! Deneyin. :)
 
-> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
+> Profesyonel ipucu: Eğer aynı komutları tekrar tekrar yazmak istemiyorsanız, `yukarı ok` ve `aşağı ok` tuşlarına basarak en son kullandığınız komutlar arasında geçiş yapabilirsiniz.
 
 * * *
 
-### Exercise!
+### Alıştırma!
 
-A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
+Sizin için ufak bir alıştırma: yeni oluşturduğunuz `uygulama` dizininde `test` adında bir dizin oluşturun. (`cd` ve `mkdir` komutlarını kullanın.)
 
 #### Çözüm:
 
@@ -274,7 +274,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd practice
+    $ cd uygulama
     $ mkdir test
     $ ls
     test
@@ -286,7 +286,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 {% filename %}command-line{% endfilename %}
 
-    > cd practice
+    > cd uygulama
     > mkdir test
     > dir
     05/08/2014 07:28 PM <DIR>      test
@@ -294,15 +294,15 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Congrats! :)
+Tebrikler! :)
 
 * * *
 
-### Clean up
+### Temizlik
 
-We don't want to leave a mess, so let's remove everything we did until that point.
+Ortalığı dağınık bırakmak istemeyiz, haydi yaptığımız her şeyi silelim.
 
-First, we need to get back to Desktop:
+İlk önce Masaüstü'ne dönmemiz gerek:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -322,9 +322,9 @@ First, we need to get back to Desktop:
 
 <!--endsec-->
 
-Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+`cd` komutu ile `..` kullanmak sizi geçerli dizinin bir üst dizinine götürür (bu şu anki dizinin ana dizinidir).
 
-Check where you are:
+Nerede olduğunuzu kontrol edin:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -346,15 +346,15 @@ Check where you are:
 
 <!--endsec-->
 
-Now time to delete the `practice` directory:
+Şimdi `uygulama` dizinini silme vakti:
 
-> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
+> **Dikkat**: `del`, `rmdir` veya `rm` komutları kullanılarak yapılan silme işlemleri geri alınamaz, bunun anlamı: *silinen dosyalar sonsuza dek yok olur*! Yani bu komutları kullanırken çok dikkatli olun.
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
 {% filename %}komut satırı{% endfilename %}
 
-    $ rm -r practice
+    $ rm -r uygulama
     
 
 <!--endsec-->
