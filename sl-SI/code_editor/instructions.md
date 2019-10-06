@@ -6,7 +6,7 @@ Naši predlogi so našteti spodaj. Če nisi prepričana, katerega bi izbrala, za
 
 Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
 
-[Naložiš ga tukaj](https://code.visualstudio.com/download)
+[Naložiš ga tukaj](https://code.visualstudio.com/)
 
 ## Gedit
 
