@@ -137,13 +137,13 @@ OS X ve Linux, komutlar hakkında size yardımcı olan bir `man` komutuna sahipt
 
 <!--sec data-title="Command Help: Windows" data-id="windows_help" data-collapse=true ces-->
 
-Adding a `/?` suffix to most commands will print the help page. You may need to scroll your command window up to see it all. Try `cd /?`.
+Çoğu komutun sonuna `/?` ekleyince, yardım sayfasını gösterir. Yardım sayfasının tümünü görmek için komut pencerenizi yukarı kaydırmanız gerekebilir. `cd /?` komutunu deneyin.
 
 <!--endsec-->
 
-### List files and directories
+### Dosya ve dizinleri listele
 
-So what's in it? It'd be cool to find out. Let's see:
+Yani içeride ne var? Bilmek harika olurdu. Haydi bakalım:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -171,13 +171,13 @@ So what's in it? It'd be cool to find out. Let's see:
     ...
     
 
-> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
+> Not: Ayrıca powershell kullanırken Linux ve Mac OS X'teki gibi 'ls' komutunu kullanabilirsiniz. <!--endsec-->
 
 * * *
 
-### Change current directory
+### Geçerli dizini değiştir
 
-Now, let's go to our Desktop directory:
+Şimdi, haydi Masaüstü dizinimize gidelim:
 
 <!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
 
@@ -195,7 +195,7 @@ Now, let's go to our Desktop directory:
     $ cd Desktop
     
 
-Note that the directory name "Desktop" might be translated to the language of your Linux account. If that's the case, you'll need to replace `Desktop` with the translated name; for example, `Schreibtisch` for German.
+Unutmayın "Desktop" dizinin adı Linux hesabınızın diline çevrilmiş olabilir. Bu durumda, `Desktop` yerine çevrilmiş ismi kullanmanız gerekecek. Örneğin; Türkçe için `Masaüstü`.
 
 <!--endsec-->
 
@@ -208,7 +208,7 @@ Note that the directory name "Desktop" might be translated to the language of yo
 
 <!--endsec-->
 
-Check if it's really changed:
+Gerçekten değişmiş mi bir bakalım:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -230,9 +230,9 @@ Check if it's really changed:
 
 <!--endsec-->
 
-Here it is!
+İşte oldu!
 
-> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
+> Profesyonel İpucu: Eğer `cd D` yazarsanız ve klavyenizden `tab` tuşuna basarsanız, komut satırı ismin geri kalanını tamamlar ve daha hızlı gezersiniz. Eğer "D" ile başlayan birden fazla klasör varsa, diğer seçenekleri görmek için `tab` tuşuna iki kez basın.
 
 * * *
 
