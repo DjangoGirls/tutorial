@@ -131,7 +131,7 @@ Komut istemine yazabileceğiniz birçok komut görüntüleyebileceğiniz ve okuy
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X ve Linux, komutlar hakkında size yardımcı olan bir `man` komutuna sahiptir. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
+OS X ve Linux, komutlar hakkında size yardımcı olan bir `man` komutuna sahiptir. `man pwd`'yi deneyin ve ne yazdığını görün ya da diğer komutların önüne `man` koyup diğerleri hakkındaki yardımları görün. `man` komutunun çıktısı genellikle sayfa gibidir. Bir sonraki sayfaya geçmek için boşluk çubuğunu ve yardımdan çıkmak için `q` tuşunu kullanın.
 
 <!--endsec-->
 
