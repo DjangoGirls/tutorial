@@ -236,15 +236,15 @@ Gerçekten değişmiş mi bir bakalım:
 
 * * *
 
-### Create directory
+### Dizin oluşturun
 
-How about creating a practice directory on your desktop? You can do it this way:
+Masaüstünüzde bir uygulama dizin oluşturmaya ne dersiniz? Bu şekilde yapabilirsiniz:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
-    $ mkdir practice
+    $ mkdir uygulama
     
 
 <!--endsec-->
@@ -253,12 +253,12 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 {% filename %}command-line{% endfilename %}
 
-    > mkdir practice
+    > mkdir uygulama
     
 
 <!--endsec-->
 
-This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+Bu küçük komut masaüstünüzde `uygulama` isimli bir klasör oluşturacaktır. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
 > PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
 
