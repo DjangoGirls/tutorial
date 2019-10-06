@@ -6,7 +6,7 @@ Våre forslag er nedenfor, men spør gjerne din instruktør hva de foretrekker -
 
 Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
 
-[Last den ned her](https://code.visualstudio.com/download)
+[Last den ned her](https://code.visualstudio.com/)
 
 ## Gedit
 
