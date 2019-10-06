@@ -6,7 +6,7 @@ Onze suggesties staan hieronder, maar vraag gerust je coach wat hun voorkeur is 
 
 Visual Studio Code is een code editor die ontwikkeld is door Microsoft voor Windows, Linux en MacOS. Deze editor bevat ondersteuning voor debugging, ingebakken Git controle, syntax highlighting en slimme code voltooiing, en code refactoring.
 
-[Download het hier](https://code.visualstudio.com/download)
+[Download het hier](https://code.visualstudio.com/)
 
 ## Gedit
 
