@@ -6,7 +6,7 @@
 
 Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
 
-[ดาวน์โหลดได้ ที่นี่](https://code.visualstudio.com/download)
+[ดาวน์โหลดได้ ที่นี่](https://code.visualstudio.com/)
 
 ## Gedit
 
