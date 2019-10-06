@@ -2,11 +2,11 @@
 
 अपने आप को बधाई दे! **आपने बहुत अच्छी तरह से काम किया है।** हमें आप पर गर्व ह! <3
 
-### What to do now?
+### अब क्या करे?
 
-Take a break and relax! You have just done something really huge.
+एक ब्रेक लें और आराम करें! आपने अभी-अभी कुछ बहुत बड़ा किया है।
 
-After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
+उसके बाद, अद्यतित रहने के लिए [फेसबुक](http://facebook.com/djangogirls) या[ ट्विटर ](https://twitter.com/djangogirls)पर Django Girls का पालन करना सुनिश्चित करें।
 
 ### Can you recommend any further resources?
 
