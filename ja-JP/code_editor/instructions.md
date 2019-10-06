@@ -6,7 +6,7 @@
 
 Visual Studio Codeは、マイクロソフトがWindowsとLinuxとmacOS向けに開発したソースコードエディタです。 デバッグのサポート、組み込まれたGit操作、シンタックスハイライト、かしこいコード補完、スニペット、リファクタリングなど多くの機能があります。
 
-[ダウンロード](https://code.visualstudio.com/download)
+[ダウンロード](https://code.visualstudio.com/)
 
 ## Gedit
 
