@@ -48,13 +48,13 @@ Hemen şimdi hemen yukarıdaki Linux bölümüne bir göz atın - daha sonra bu 
 
 <!--endsec-->
 
-Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
+Her komutun başında `$` ya da `>` ve bir boşluk vardır fakat bu kısmı yazmak zorunda değilsiniz. Bilgisayarınız bunu sizin için yapacaktır. :)
 
-> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
+> Küçük bir not: sizin durumunuzda komut isteminden önce `C:\Users\ola>` veya `Olas-MacBook-Air:~ ola$` gibi ifadeler olabilir, bu durumda kesinlikle sorun yok.
 
-The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
+Başında `$` veya `>` içeren kısımlar *komut satırı istemi* veya kısaca *komut istemi*'dir. Buraya bir şey girmenizi ister.
 
-In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
+Bu kılavuzda bir komut girmeniz istendiğinde, örnek komutlarda genellikle sol tarafa `$` ya da `>` ekleyeceğiz. Sol taraftaki bu kısmı göz ardı edebilir ve işlemi başlatan komutu girebilirsiniz.
 
 ## İlk komutunuz (Yaşasın!)
 
@@ -85,9 +85,9 @@ And then hit `enter`. This is our result:
     $ whoami zeynep
     
 
-As you can see, the computer has just printed your username. Neat, huh? :)
+Gördüğünüz gibi bilgisayar kullanıcı adınızı yazdı. Şahane, değil mi ? :)
 
-> Try to type each command; do not copy-paste. You'll remember more this way!
+> Her komutu yazmaya çalışın; kopyala - yapıştır yapmayın. Böylece daha akılda kalıcı olur!
 
 ## Temeller
 
