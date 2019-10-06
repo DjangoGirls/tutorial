@@ -16,17 +16,17 @@ Genellikle **komut satırı** veya **komut satırı arabirimi** adı verilen pen
 
 ## Komut satırı arabirimini açın
 
-To start some experiments we need to open our command-line interface first.
+Birkaç deneme yapmak için öncelikle komut satırı arabirimini açmamız gerekir.
 
 {% include "/intro_to_command_line/open_instructions.md" %}
 
 ## İstemci
 
-You now should see a white or black window that is waiting for your commands.
+Şimdi komutlarınızı bekleyen beyaz veya siyah bir pencere görmelisiniz.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see a `$`, like this:
+Eğer Mac veya Gnu/Linux kullanıyorsanız, yüksek ihtimalle `$` işareti göreceksiniz, tıpkı bunun gibi:
 
 {% filename %}command-line{% endfilename %}
 
@@ -37,14 +37,14 @@ If you're on Mac or Linux, you probably see a `$`, like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-On Windows, you probably see a `>`, like this:
+Windows'da ise `>` işareti göreceksiniz, bunun gibi:
 
 {% filename %}command-line{% endfilename %}
 
     >
     
 
-Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+Hemen şimdi hemen yukarıdaki Linux bölümüne bir göz atın - daha sonra bu kılavuzda PythonAnywhere'e gittiğinizde buna benzer bir şey göreceksiniz.
 
 <!--endsec-->
 
