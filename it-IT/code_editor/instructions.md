@@ -6,7 +6,7 @@ Qui di seguito te ne consigliamo alcuni, ma puoi chiedere al tuo coach quali edi
 
 Visual Studio Code è un editor di codice sorgente sviluppato da Microsoft per Windows, Linux e macOS. Include il supporto per il debug, il controllo Git incorporato, l'evidenziazione della sintassi, il completamento intelligente del codice, gli snippet e il refactoring del codice.
 
-[Scaricalo qui](https://code.visualstudio.com/download)
+[Scaricalo qui](https://code.visualstudio.com/)
 
 ## Gedit
 
