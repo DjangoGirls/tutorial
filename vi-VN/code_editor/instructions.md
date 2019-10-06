@@ -6,7 +6,7 @@ Dưới đây là gợi ý của chúng tôi, nhưng bạn cũng có thể tham 
 
 Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
 
-[Download it here](https://code.visualstudio.com/download)
+[Download it here](https://code.visualstudio.com/)
 
 ## Gedit
 
