@@ -6,7 +6,7 @@
 
 Visual Studio Code是有微软开发的面向Windows、Linux和macOS的一种开源代码编辑器。 它的功能包括支持调试、嵌入Git控制、语法高亮、智能代码完成、代码片断和代码重设。
 
-[在这里下载](https://code.visualstudio.com/download)
+[在这里下载](https://code.visualstudio.com/)
 
 ## Gedit
 
