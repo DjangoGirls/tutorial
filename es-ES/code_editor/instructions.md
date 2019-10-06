@@ -6,7 +6,7 @@ Abajo presentamos nuestras sugerencias pero, también puedes preguntarle a tu me
 
 Visual Studio Code es un recurso de edición de código desarrollado por Microsoft para Windows, Linux y macOS. Esto incluye soporte para depuración, control de Git incrustado, sintaxis destacada, completación de código inteligente, fragmentos y refactorización de código.
 
-[Descárgalo aquí](https://code.visualstudio.com/download)
+[Descárgalo aquí](https://code.visualstudio.com/)
 
 ## Gedit
 
