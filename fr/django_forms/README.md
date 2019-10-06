@@ -370,7 +370,7 @@ N'hésitez pas à changer le titre ou le texte et enregistrer les modifications!
 
 Bravo ! Votre application se complexifie et contient de plus en plus de fonctionnalité !
 
-Si vous souhaitez en apprendre plus sur les formulaires Django, n'hésitez pas à consulter la documentation associée : https://docs.djangoproject.com/en/2.0/topics/forms/
+Si vous souhaitez en apprendre plus sur les formulaires Django, n'hésitez pas à consulter la documentation associée : https://docs.djangoproject.com/en/2.2/topics/forms/
 
 ## Sécurité
 

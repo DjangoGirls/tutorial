@@ -302,6 +302,6 @@ Woohoo ! Ça a l'air génial, non ? Intéressez-vous au code que nous venons jus
 
 N'ayez pas peur de bricoler un peu le CSS et essayer de changer certaines choses. Jouer avec le CSS peut vous aider à comprendre comment et qui agit sur quoi. Si vous cassez quelque chose, ne vous inquiétez pas – vous pouvez toujours faire marche arrière !
 
-N’hésitez-pas à vous renseigner sur le CSS et à pratiquer des exercices, de nombreux sites existent. Ils vous aideront à en apprendre plus sur le sujet et à créer de magnifiques sites web.
+Nous vous recommandons chaudement de suivre les cours en ligne "Basic HTML & HTML5" et "Basic CSS" sur [freeCodeCamp](https://learn.freecodecamp.org/). Ils vous aideront à en apprendre plus sur le sujet et à créer de magnifiques sites web avec HTML et CSS.
 
 Prêt pour le chapitre suivant ? :)
