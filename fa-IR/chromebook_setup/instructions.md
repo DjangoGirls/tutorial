@@ -41,7 +41,7 @@ IDE ابری ابزاری است که به شما دسترسی به یک ویر�
     yourusername:~/workspace $
     
 
-This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+این محدوده پایین، ترمینال شماست. شما می‌توانید از این ترمینال برای فرستادن دستورات به کامپیوتر Cloud 9 استفاده کنید. می‌توانید ابعاد این پنجره را تغییر دهید تا کمی بزرگتر دیده شود.
 
 ### محیط مجازی
 
