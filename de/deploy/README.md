@@ -58,7 +58,7 @@ Es ist hilfreich den Befehl `git status` vor `git add` auszuführen oder immer d
     $ git status
     On branch master
     
-    Initial commit
+    No commits yet
     
     Untracked files:
       (use "git add <file>..." to include in what will be committed)

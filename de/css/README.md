@@ -300,6 +300,6 @@ Juhuu! Sieht super aus, oder? Schau dir den Code an, den wir gerade eingefügt h
 
 Hab keine Angst, etwas mit dieser CSS-Datei herumzuspielen, und versuche, ein paar Dinge zu ändern. Mit CSS herumzuspielen, kann dir helfen zu verstehen, was die verschiedenen Dinge genau machen. Mach dir keine Sorgen, wenn etwas kaputt geht, du kannst deine Änderungen immer rückgängig machen!
 
-Wir empfehlen diesen kostenlosen [Codeacademy HTML & CSS Kurs](https://www.codecademy.com/tracks/web). Er wird dir helfen, deine Webseiten mit CSS schöner zu gestalten.
+Wir empfehlen die kostenlosen online-Kurse "Basic HTML & HTML5" und "Basic CSS" auf [freeCodeCamp](https://learn.freecodecamp.org/). Sie werden dir helfen, deine Webseiten mit HTML und CSS schöner zu gestalten.
 
 Bereit für das nächste Kapitel? :)
