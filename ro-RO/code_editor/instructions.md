@@ -6,7 +6,7 @@ Sugestiile noastre sunt mai jos, dar nu ezitați să întrebați trainer-ul dvs.
 
 Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
 
-[Descarcă-l de aici](https://code.visualstudio.com/download)
+[Descarcă-l de aici](https://code.visualstudio.com/)
 
 ## Gedit
 
