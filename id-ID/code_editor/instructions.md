@@ -6,7 +6,7 @@ Berikut ini beberapa aplikasi yang kami sarankan untuk dapat pembaca pakai. Jang
 
 Visual Studio Code adalah editor kode, yang dikembangkan oleh Microsoft untuk sistem operasi Windows, Linux dan macOS. Yang mendukung untuk debugging, kontrol Git didalamnya, penyorotan sintaksis, penyelesaian kode cerdas, snippet, dan refaktorisasi kode.
 
-[Download disini](https://code.visualstudio.com/download)
+[Download disini](https://code.visualstudio.com/)
 
 ## Gedit
 
