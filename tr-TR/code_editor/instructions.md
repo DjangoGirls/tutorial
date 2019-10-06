@@ -6,7 +6,7 @@ Bizim tavsiyelerimiz aşağıdakiler, ama mentörünüze danışmak isteyebilirs
 
 Visual Studio Code Microsoft tarafından Windows, Linux ve macOS işletim sistemleri için geliştirilmiş bir kod editörüdür. Özellikleri arasında hata ayıklama (debugging) desteği, gömülü Git yönetimi, kod renklendirme (syntax highlighting), zeki kod tamamlama (code completion), kod parçaları (snippets) yönetimi, ve kod düzenleme (refactoring) vardır.
 
-[Buradan indirin](https://code.visualstudio.com/download)
+[Buradan indirin](https://code.visualstudio.com/)
 
 ## Gedit
 
