@@ -300,6 +300,6 @@ h1, h2, h3, h4 {
 
 CSSをいじって表示が壊れることを恐れないで、どんどん変更を加えてみてください。 CSSで遊んでみることで、何がどうなっているかを理解できてきます。 たとえ何かを壊してしまっても、心配しないで！すぐに元に戻すことができます。
 
-We really recommend taking the free online courses "Basic HTML & HTML5" and "Basic CSS" on [freeCodeCamp](https://learn.freecodecamp.org/). They can help you learn all about making your websites prettier with HTML and CSS.
+[freeCodeCamp](https://learn.freecodecamp.org/)で無料のオンラインコース「Basic HTML & HTML5」と「Basic CSS」を受講することをおすすめします。 They can help you learn all about making your websites prettier with HTML and CSS.
 
 さて、次の章にいく準備はできましたか？^皿^
