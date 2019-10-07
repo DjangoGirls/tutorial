@@ -185,6 +185,7 @@ First create a `requirements.txt` file inside of the `djangogirls/` folder, usin
 djangogirls
 └───requirements.txt
 ```
+> **Note**: in your directory structure, you will also see your `venv` directory.
 
 In your `djangogirls/requirements.txt` file you should add the following text:
 
