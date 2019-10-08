@@ -110,6 +110,12 @@ $ git remote add origin https://github.com/<your-github-username>/my-first-blog.
 $ git push -u origin master
 ```
 
+Alternatively, you could simply copy the clone URL by clicking on the button at the end of the bar and paste it in the console.
+```
+$ git remote add origin <paste-here>
+$ git push -u origin master
+``` 
+
 When you push to GitHub, you'll be asked for your GitHub username and password (either right there in the command-line window or in a pop-up window), and after entering credentials you should see something like this:
 
 {% filename %}command-line{% endfilename %}
