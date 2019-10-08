@@ -165,7 +165,7 @@ Si! Ha funzionato!
 
 ## Ultima cosa: ora di fare il deploy!
 
-Sarebbe bello vedere se il tuo sito Web sarà ancora funzionante in PythonAnywhere, vero? Proviamo a fare un alrto deploy.
+Sarebbe bello vedere se il tuo sito Web sarà ancora funzionante in PythonAnywhere, vero? Proviamo a fare un altro deploy.
 
     $ git status
     $ git add --all .
