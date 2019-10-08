@@ -161,7 +161,7 @@ Ahora definimos las propiedades de las que hablábamos: `title`, `text`, `create
 - `models.DateTimeField`, este es fecha y hora.
 - `modelos.ForeignKey`, este es una relación (link) con otro modelo.
 
-No vamos a explicar aquí cada pedacito de código porque nos tomaría demasiado tiempo. Debería echar un vistazo a la documentación de Django si desea obtener más información sobre los campos Modelo y cómo definir otras cosas distintas a las descritas anteriormente (https://docs.djangoproject.com/en/2.2/ref/models/fields/#field-types).
+No vamos a explicar aquí cada pedacito de código porque nos tomaría demasiado tiempo. Deberías echar un vistazo a la documentación de Django si deseas obtener más información sobre los campos Modelo y cómo definir otras cosas distintas a las descritas anteriormente (https://docs.djangoproject.com/en/2.2/ref/models/fields/#field-types).
 
 ¿Y qué sobre `def publish(self):`? Es exactamente el método `publish` que mencionábamos antes. `def` significa que es una función/método y `publish` es el nombre del método. Puedes cambiar el nombre del método, si quieres. La regla de nomenclatura es utilizar minúsculas y guiones bajos en lugar de espacios. Por ejemplo, un método que calcule el precio medio se podría llamar `calcular_precio_medio`.
 
@@ -184,7 +184,7 @@ El último paso aquí es agregar nuestro nuevo modelo a la base de datos. Primer
       - Create model Post
     
 
-**Nota:** Recuerda guardar los archivos que edites. De otro modo, tu computador ejecutara las versiones anteriores lo que puede ocasionar errores inesperados.
+**Nota:** Recuerda guardar los archivos que edites. De otro modo, tu computador ejecutará las versiones anteriores lo que puede ocasionar errores inesperados.
 
 Django preparó un archivo de migración que ahora tenemos que aplicar a nuestra base de datos. Escribe `python manage.py migrate blog` y el resultado debería ser:
 
