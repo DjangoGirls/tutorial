@@ -4,11 +4,11 @@ Kami akan membuat laman web pertama kami: beranda untuk blog Anda! Tapi pertama,
 
 ## Apa itu URL?
 
-A URL is a web address. Anda dapat melihat URL setiap kali mengunjungi situs web - ini terlihat di bilah alamat browser Anda. (Iya nih! `127.0.0.1:8000` is a URL! And `https://djangogirls.org` is also a URL.)
+URL adalah sebuah alamat web. Anda dapat melihat URL setiap kali mengunjungi situs web - ini terlihat di bilah alamat browser Anda. (Iya nih! `127.0.0.1:8000` is a URL! And `https://djangogirls.org` is also a URL.)
 
 ![URL](images/url.png)
 
-Setiap halaman di Internet membutuhkan URLnya sendiri. Dengan cara ini aplikasi Anda tahu apa yang harus ditunjukkan kepada pengguna yang membuka URL itu. In Django, we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.
+Setiap halaman di Internet membutuhkan URLnya sendiri. Dengan cara ini aplikasi Anda tahu apa yang harus ditunjukkan kepada pengguna yang membuka URL itu. Di Django, kita menggunakan yang disebut `URLconf` (konfigurasi URL). URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.
 
 ## Bagaimana cara kerja URL di Django?
 
