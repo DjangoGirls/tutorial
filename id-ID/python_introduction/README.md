@@ -1,6 +1,6 @@
 {% set warning_icon = '<span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!" ></span>' %}
 
-# Pengantar Python
+# Pengenalan Python
 
 > Bagian dari bab ini didasarkan pada tutorial oleh Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
@@ -8,7 +8,7 @@ Mari kita tulis beberapa kode!
 
 ## Python prompt
 
-> Bagi pembaca di rumah: bagian ini tercakup dalam [Dasar-Dasar Python: Integer, String, Daftar, Variabel dan Kesalahan](https://www.youtube.com/watch?v=MO63L4s-20U) video.
+> Untuk pembaca di rumah: bagian ini tercakup dalam [Python Basicx: Integers, Strings, Lists, Variables dan Error](https://www.youtube.com/watch?v=MO63L4s-20U) video.
 
 Untuk memulai python, kita perlu membuka *Comand line atau Jendela perintah* pada komputer anda. Anda seharusnya sudah tahu bagaimana melakukan itu - Anda mempelajarinya di bagian [Intro to Command Line](../intro_to_command_line/README.md).
 
@@ -257,7 +257,7 @@ Seperti yang kita akan lihat nanti, `print()` ini juga berguna ketika kita ingin
 
 ## Daftar
 
-Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called **list**. Lists are exactly what you think they are: objects which are lists of other objects. :)
+Beside strings and integers, Python has all sorts of different types of objects. Sekarang kita akan mengenalkan salah satunya yaitu **list**. Lists persis yang Anda pikirkan: objek yang merupakan kumpulan dari objek-objek. :)
 
 Go ahead and create a list:
 
