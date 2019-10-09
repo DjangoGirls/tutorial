@@ -259,7 +259,7 @@ Seperti yang kita akan lihat nanti, `print()` ini juga berguna ketika kita ingin
 
 Beside strings and integers, Python has all sorts of different types of objects. Sekarang kita akan mengenalkan salah satunya yaitu **list**. Lists persis yang Anda pikirkan: objek yang merupakan kumpulan dari objek-objek. :)
 
-Go ahead and create a list:
+Mari dan buat list:
 
 {% filename %}command-line{% endfilename %}
 
@@ -268,7 +268,7 @@ Go ahead and create a list:
 []
 ```
 
-Yes, this list is empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repeat ourselves all the time, so we will put it in a variable, too:
+Ya, daftar ini kosong. Tidak terlalu berguna kan? Mari buat daftar nomor undian. Kami tidak ingin mengulangi diri kami sepanjang waktu, jadi kami akan memasukkannya ke dalam variabel juga:
 
 {% filename %}command-line{% endfilename %}
 
@@ -387,7 +387,7 @@ Dengan perintah ini, Anda hanya menciptakan variabel bernama `peserta` dengan ti
 - `negara` menunjuk ke `'Polandia'` (string `lainnya`),
 - dan `favorite_numbers` menunjuk ke `[7, 42, 92]` (a `daftar` dengan tiga nomor di dalamnya).
 
-You can check the content of individual keys with this syntax:
+Anda dapat memeriksa isi kunci individu dengan sintaks ini:
 
 {% filename %}command-line{% endfilename %}
 
@@ -411,7 +411,7 @@ KeyError: 'usia'
 
 Tampilan, kesalahan lain! Ini adalah **KeyError**. Python membantu dan memberitahu Anda bahwa kunci `'usia'` tidak ada dalam Kamus ini.
 
-When should you use a dictionary or a list? Well, that's a good point to ponder. Think about the answer before looking at it in the next line.
+Kapan kamu harus menggunakan dictionary atau list? Nah, itu bagus untuk direnungkan. Pikirkan saja jawabannya sebelum melihat jawabannya di baris berikutnya.
 
 - Anda hanya perlu memesan urutan item? Pergi untuk daftar.
 - Apakah Anda perlu menghubungkan nilai dengan tombol, sehingga Anda dapat mencarinya efisien (dengan kunci) kemudian? Menggunakan Kamus.
