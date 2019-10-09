@@ -8,7 +8,7 @@ URL adalah sebuah alamat web. Anda dapat melihat URL setiap kali mengunjungi sit
 
 ![URL](images/url.png)
 
-Setiap halaman di Internet membutuhkan URLnya sendiri. Dengan cara ini aplikasi Anda tahu apa yang harus ditunjukkan kepada pengguna yang membuka URL itu. Di Django, kita menggunakan yang disebut `URLconf` (konfigurasi URL). URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.
+Setiap halaman di Internet membutuhkan URLnya sendiri. Dengan cara ini aplikasi Anda tahu apa yang harus ditunjukkan kepada pengguna yang membuka URL itu. Di Django, kita menggunakan yang disebut `URLconf` (konfigurasi URL). URLconf adalah seperangkat pola-pola yang akan dicoba Django untuk mencocokkan URL yang diminta untuk menemukan view/tampilan yang benar.
 
 ## Bagaimana cara kerja URL di Django?
 
@@ -33,7 +33,7 @@ Seperti yang Anda lihat, Django telah meletakkan sesuatu di sini untuk kita.
 
 Baris antara tanda kutip tiga kali (` '' '</ 0> atau <code> "" "</ 0>) disebut docstrings - Anda dapat menuliskannya di bagian atas file, kelas atau metode untuk menjelaskan apa yang dilakukannya. Mereka tidak akan dijalankan oleh Python.</p>
 
-<p>The admin URL, which you visited in the previous chapter, is already here:</p>
+<p>URL admin, yang telah Anda kunjungi di bab sebelumnya, ada di sini:</p>
 
 <p>{% filename%} mysite / urls.py {% endfilename%}</p>
 
