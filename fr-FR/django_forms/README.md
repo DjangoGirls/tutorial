@@ -44,7 +44,7 @@ Nous allons donc une nouvelle fois suivre le processus suivant et créer : un li
 
 ## Lien vers une page contenant le formulaire
 
-It's time to open `blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `top-menu`:
+It's time to open `blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `page-header`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
