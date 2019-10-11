@@ -44,7 +44,7 @@ Dakle, još jednom ćemo kreirati link do stranice, URL, pregled i obrazac.
 
 ## Link do stranice sa formom
 
-Vreme je da otvorite `blog/templates/blog/base.html` u editoru. Dodaćemo link u `div` i nazvaćemo ga `zaglavlje stranice`:
+It's time to open `blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `top-menu`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
