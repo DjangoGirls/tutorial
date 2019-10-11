@@ -44,7 +44,7 @@ Nítorí náà, a ó ṣẹ̀dá atọ́ka sí ojú-ìwé náà kan, URL kan, vi
 
 ## Atọ́ka sí ojú-ìwé kan pẹ̀lú fọ́ọ̀mù náà
 
-Àkókò ti tó láti ṣí `blog/templates/blog/base.html` nínú olóòtú kóòdù náà. A ó ṣàfikún atọ́ka kan sínú `div` tó ń jẹ́ `page-header`:
+It's time to open `blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `top-menu`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
