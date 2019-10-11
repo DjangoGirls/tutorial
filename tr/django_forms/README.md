@@ -44,7 +44,7 @@ Bir kere daha sayfaya bir bağlantı, bir url, bir view ve bir template oluştur
 
 ## Formun bulunduğu sayfaya bağlantı oluşturma
 
-Şimdi `blog/templates/blog/base.html` isimli template'i açma zamanı. Öncelikle `top-menu` adlı `div` öğesinin içine bir bağlantı ekleyeceğiz:
+Şimdi `blog/templates/blog/base.html` isimli template'i açma zamanı. Öncelikle `page-header` adlı `div` öğesinin içine bir bağlantı ekleyeceğiz:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 

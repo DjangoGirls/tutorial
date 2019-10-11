@@ -44,7 +44,7 @@ Novamente, criaremos um link para a página, uma URL, uma view e um template.
 
 ## Link para a página com o formulário
 
-É hora de abrir *blog/templates/blog/base.html*. Nós iremos adicionar um link em *div* nomeado *top-menu*:
+É hora de abrir *blog/templates/blog/base.html*. Nós iremos adicionar um link em *div* nomeado *page-header*:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 

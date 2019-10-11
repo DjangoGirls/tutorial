@@ -42,7 +42,7 @@ Takže ještě jednou: budeme vytvářet odkaz na stránky, URL, pohled a šablo
 
 ## Odkaz na stránku s formulářem
 
-Je tedy čas otevřít soubor `blog/templates/blog/base.html`. Přidáme odkaz do `div` s názvem `top-menu`:
+Je tedy čas otevřít soubor `blog/templates/blog/base.html`. Přidáme odkaz do `div` s názvem `page-header`:
 
 ```html
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>

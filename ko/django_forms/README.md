@@ -45,7 +45,7 @@ class PostForm(forms.ModelForm):
 
 ## 폼과 페이지 링크
 
-`blog/templates/blog/base.html` 파일을 열어봅시다. `top-menu` 라는 `div` class에 링크를 하나 추가할 거에요.
+`blog/templates/blog/base.html` 파일을 열어봅시다. `page-header` 라는 `div` class에 링크를 하나 추가할 거에요.
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 ```html

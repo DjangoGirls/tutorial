@@ -44,7 +44,7 @@ Takže ešte raz vytvoríme link na stránku, URL, zobrazenie a šablónu.
 
 ## Link na stránku s formulárom
 
-Je čas otvoriť `blog/templates/blog/base.html`. Pridáme link do `divu` s názvom `top-menu`:
+Je čas otvoriť `blog/templates/blog/base.html`. Pridáme link do `divu` s názvom `page-header`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 

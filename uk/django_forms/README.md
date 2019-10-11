@@ -41,7 +41,7 @@ class PostForm(forms.ModelForm):
 
 ## Посилання на сторінку з формою
 
-Час відкрити `blog/templates/blog/base.html`. Додамо лінк всередині блоку `div` із ім'ям `top-menu`:
+Час відкрити `blog/templates/blog/base.html`. Додамо лінк всередині блоку `div` із ім'ям `page-header`:
 
 ```html
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
