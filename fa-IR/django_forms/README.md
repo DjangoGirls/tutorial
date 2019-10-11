@@ -44,7 +44,7 @@ class PostForm(forms.ModelForm):
 
 ## لینک به یک صفحه با فرم
 
-وقت آن است که فایل `blog/templates/blog/base.html` را در ویرایشگر کد باز کنید. در بخش `div` که نام `page-header` را دارد یک لینک اضافه خواهیم کرد:
+It's time to open `blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `top-menu`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
