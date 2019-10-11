@@ -44,7 +44,7 @@ Oto co za chwilę stworzymy: link do strony, adres URL, widok i szablon.
 
 ## Odnośnik do strony z formularzem
 
-Czas otworzyć plik `blog/templates/blog/base.html` w edytorze kodu. Dodajmy wiersz w `div` o nazwie `page-header`:
+It's time to open `blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `top-menu`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
