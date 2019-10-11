@@ -44,7 +44,7 @@ class PostForm(forms.ModelForm):
 
 ## Ссылка на страницу с формой
 
-Пришло время открыть файл `blog/templates/blog/base.html`. Мы добавим ссылку в элемент `div` с именем `top-menu`:
+Пришло время открыть файл `blog/templates/blog/base.html`. Мы добавим ссылку в элемент `div` с именем `page-header`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 ```html

@@ -42,7 +42,7 @@ Tehát még egyszer: egy link az oldalhoz, egy URL, egy view és egy template.
 
 ## Link az oldalhoz, ahol az űrlap van
 
-Itt az ideje, hogy megnyisd a `blog/templates/blog/base.html` fájlt. Itt hozzáadunk egy linket a `top-menu` nevű `div`hez:
+Itt az ideje, hogy megnyisd a `blog/templates/blog/base.html` fájlt. Itt hozzáadunk egy linket a `page-header` nevű `div`hez:
 
 ```html
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>

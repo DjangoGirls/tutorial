@@ -45,7 +45,7 @@ class PostForm(forms.ModelForm):
 
 ## 指向页面表单的链接
 
-是时候打开`blog/templates/blog/base.html`了。我们将添加一个链接到`div`，命名为`top-menu`：
+是时候打开`blog/templates/blog/base.html`了。我们将添加一个链接到`div`，命名为`page-header`：
 
 ```html
     <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>

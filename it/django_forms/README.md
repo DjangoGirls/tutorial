@@ -42,7 +42,7 @@ Ricapitolando, creeremo: link che punti alla pagina, una URL, una view e un mode
 
 ## Link ad una pagina usando il form
 
-È tempo di aprire `blog/templates/blog/base.html`. Aggiungeremo un link nel `div` chiamato `top-menu`:
+È tempo di aprire `blog/templates/blog/base.html`. Aggiungeremo un link nel `div` chiamato `page-header`:
 
 ```html
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>

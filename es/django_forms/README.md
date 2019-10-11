@@ -44,7 +44,7 @@ Una vez más vamos a crear: un enlace a la página, una dirección URL, una vist
 
 ## Enlace a una página con el formulario
 
-Ahora toca abrir el fichero `blog/templates/blog/base.html` en el editor. Vamos a añadir un enlace en el `div` llamado `top-menu`:
+Ahora toca abrir el fichero `blog/templates/blog/base.html` en el editor. Vamos a añadir un enlace en el `div` llamado `page-header`:
 
 {% filename %}blog/templates/blog/post_base.html{% endfilename %}
 

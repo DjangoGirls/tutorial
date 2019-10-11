@@ -44,7 +44,7 @@ So once again we will create a link to the page, a URL, a view and a template.
 
 ## Link to a page with the form
 
-It's time to open `blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `top-menu`:
+It's time to open `blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `page-header`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 ```html
