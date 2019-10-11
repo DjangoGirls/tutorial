@@ -40,12 +40,12 @@ Akhirnya, kita dapat menyatakan field-field mana yang akan muncul di dalam form 
 
 <h2>Mengarahkan link menuju sebuah halaman dengan Form</h2>
 
-<p>It's time to open <code>blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `page-header`:
+<p>It's time to open <code>blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `top-menu`:
 
 {% filename%} blog / templates / blog / base.html {% endfilename%}
 
 ```html
-&lt;a href="{% url 'post_new' %}" class="top-menu"&gt;&lt;span class="glyphicon glyphicon-plus"&gt; </ 0>
+<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"> </ 0>
 ```
 
 Perhatikan bahwa kami ingin memanggil tampilan baru kami ` post_new </ 0> . Kelas <code> "glyphicon glyphicon-plus" </ 0> disediakan oleh tema bootstrap yang kami gunakan, dan akan menampilkan tanda tambah bagi kami.</p>
@@ -280,7 +280,7 @@ We need to create a file `post_edit.html` in the `blog/templates/blog` directory
     {% filename%} blog / templates / blog / post_detail.html {% endfilename%}
     
     ```html
-    &lt;a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"&gt;&lt;span class="glyphicon glyphicon-pencil"&gt; </ 0>
+    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"> </ 0>
     ```
     
     sehingga template akan terlihat seperti ini:
@@ -372,10 +372,10 @@ We need to create a file `post_edit.html` in the `blog/templates/blog` directory
     {% filename%} blog / templates / blog / base.html {% endfilename%}
     
     ```html
-    &lt;a href="{% url 'post_new' %}" class="top-menu"&gt;&lt;span class="glyphicon glyphicon-plus"&gt; </ 0>
+    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"> </ 0>
     ```
     
-    Kami akan menambahkan tag ` {% jika%} </ 0> ke ini, yang akan membuat tautan hanya muncul untuk pengguna yang masuk ke admin. Sekarang, itu hanya kamu! Ubah tag 0>&lt;a&gt;` agar menjadi ini:
+    Kami akan menambahkan tag ` {% jika%} </ 0> ke ini, yang akan membuat tautan hanya muncul untuk pengguna yang masuk ke admin. Sekarang, itu hanya kamu! Ubah tag 0><a>` agar menjadi ini:
     
     {% filename%} blog / templates / blog / base.html {% endfilename%}
     
@@ -394,7 +394,7 @@ We need to create a file `post_edit.html` in the `blog/templates/blog` directory
     {% filename%} blog / templates / blog / post_detail.html {% endfilename%}
     
     ```html
-    &lt;a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"&gt;&lt;span class="glyphicon glyphicon-pencil"&gt; </ 0>
+    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"> </ 0>
     ```
     
     Ubah ke ini:
@@ -403,7 +403,7 @@ We need to create a file `post_edit.html` in the `blog/templates/blog` directory
     
     ```html
     {% jika user.is_authenticated%} 
-    &lt;a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"&gt;&lt;span class="glyphicon glyphicon-pencil"&gt; </ 0> {% endif%}     
+    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"> </ 0> {% endif%}     
     
     ```
     
