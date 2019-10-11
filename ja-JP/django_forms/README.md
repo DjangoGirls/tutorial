@@ -44,7 +44,7 @@ class PostForm(forms.ModelForm):
 
 ## フォームにおけるページへのリンク
 
-`blog/templates/blog/base.html`をエディタで開きましょう。`page-header`と名付けた`div`中に次のリンクを追加します：
+It's time to open `blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `top-menu`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
