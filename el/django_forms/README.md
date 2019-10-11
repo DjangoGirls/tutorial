@@ -44,7 +44,7 @@ class PostForm(forms.ModelForm):
 
 ## Πως συνδέουμε μια σελίδα με την φόρμα μας
 
-Ανοίξτε το template `blog/templates/blog/base.html`. Θα προσθέσουμε έναν σύνδεσμο στο `div` με το όνομα `page-header`:
+Ανοίξτε το template `blog/templates/blog/base.html`. Θα προσθέσουμε έναν σύνδεσμο στο `div` με το όνομα `top-menu`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
