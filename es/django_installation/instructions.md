@@ -121,6 +121,13 @@ Inicia el entorno virtual ejecutando:
 >        The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
 >     
 
+> **NOTA:** Para usuarios del popular editor VS Code, el cual viene con una terminal integrada basada en el poweshell de windows; si deseas añadir la terminal integrada, puedes arrancar el siguiente comando para activar tu entorno virtual:
+> 
+>     $ . myvenv\Scripts\activate.ps1
+>     
+> 
+> La ventaja es que no tienes que cambiar las ventanas entre el editor de código y la línea de comandos.
+
 <!--endsec-->
 
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
@@ -143,13 +150,6 @@ Inicia el entorno virtual ejecutando:
 >     
 
 <!--endsec-->
-
-> **NOTA:** Para usuarios del popular editor VS Code, el cual viene con una terminal integrada basada en el poweshell de windows; si deseas añadir la terminal integrada, puedes arrancar el siguiente comando para activar tu entorno virtual:
-> 
->     $ . myvenv\Scripts\activate.ps1
->     
-> 
-> La ventaja es que no tienes que cambiar las ventanas entre el editor de código y la línea de comandos.
 
 Sabrás que tienes `virtualenv` iniciado cuando veas que la línea de comando en tu consola tiene el prefijo `(myvenv)`.
 

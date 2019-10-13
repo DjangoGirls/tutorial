@@ -122,6 +122,13 @@ data-collapse=true ces-->
 >         The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
 >     
 
+> **補足:** Windows Powershellベースの結合ターミナルがある人気なエディター「VS Code」を使っている方で、VS Codeの結合ターミナルを使いたい場合、仮想環境をアクティベートにするために下記のコマンドを実行してください:
+> 
+>     $ . myvenv\Scripts\activate.ps1
+>     
+> 
+> エディターとコマンドラインのウィンドウを行き来する必要がなくなるのが利点です。
+
 <!--endsec-->
 
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
@@ -144,13 +151,6 @@ data-collapse=true ces-->
 >     
 
 <!--endsec-->
-
-> **補足:** Windows Powershellベースの結合ターミナルがある人気なエディター「VS Code」を使っている方で、VS Codeの結合ターミナルを使いたい場合、仮想環境をアクティベートにするために下記のコマンドを実行してください:
-> 
->     $ . myvenv\Scripts\activate.ps1
->     
-> 
-> エディターとコマンドラインのウィンドウを行き来する必要がなくなるのが利点です。
 
 `virtualenv` が起動すると、プロンプトの行頭に`(myvenv)`が現れます。
 
