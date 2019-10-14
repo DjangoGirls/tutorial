@@ -5,7 +5,7 @@
   * [Línea de Comandos](installation/README.md#brief-intro-to-the-command-line)
   * [Python](installation/README.md#install-python)
   * [Editor de texto](installation/README.md#install-a-code-editor)
-  * [Entorno Virtual](installation/README.md#virtual-environment)
+  * [Entorno Virtual](installation/README.md#set-up-virtualenv-and-install-django)
   * [Django](installation/README.md#installing-django)
   * [Git](installation/README.md#install-git)
   * [GitHub](installation/README.md#create-a-github-account)
