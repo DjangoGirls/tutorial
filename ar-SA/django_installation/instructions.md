@@ -120,6 +120,13 @@ data-collapse=true ces-->
 >         Execution Policy Change
 >         The execution policy helps protect you from scripts that you do not trust. تغيير سياسة التنفيذ قد يعرضك للمخاطر الأمنية الموضحة في موضوع التعليمات about_Execution_Policies في http://go.microsoft.com/fwlink/?LinkID=135170. هل تريد تغيير نهج التنفيذ؟ [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
 >     
+> 
+> **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
+> 
+>     $ . myvenv\Scripts\activate.ps1
+>     
+> 
+> The advantage is that you don't have to switch between editor windows and command-line windows
 
 <!--endsec-->
 
@@ -143,13 +150,6 @@ data-collapse=true ces-->
 >     
 
 <!--endsec-->
-
-> **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
-> 
->     $ . myvenv\Scripts\activate.ps1
->     
-> 
-> The advantage is that you don't have to switch between editor windows and command-line windows
 
 سوف تعرف أن لديك `virtualenv` بدأت عندما ترى أن الموجه في وحدة التحكم الخاصة بك مسبوقاً ب `(myvenv)`.
 
