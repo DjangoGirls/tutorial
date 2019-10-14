@@ -5,7 +5,7 @@
   * [Команден ред](installation/README.md#brief-intro-to-the-command-line)
   * [Python](installation/README.md#install-python)
   * [Редактор на код](installation/README.md#install-a-code-editor)
-  * [Виртуална среда](installation/README.md#virtual-environment)
+  * [Виртуална среда](installation/README.md#set-up-virtualenv-and-install-django)
   * [Django](installation/README.md#installing-django)
   * [Git](installation/README.md#install-git)
   * [GitHub](installation/README.md#create-a-github-account)
