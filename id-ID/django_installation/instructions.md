@@ -123,7 +123,14 @@ data-collapse=true ces-->
 <pre><code>C: \ WINDOWS \ system32 & gt; Set-ExecutionPolicy -ExecutionPolicy     Perubahan Kebijakan Eksekusi RemoteSigned
  Kebijakan
      eksekusi membantu melindungi Anda dari skrip yang tidak Anda percaya. Mengubah kebijakan eksekusi mungkin akan memaparkan risiko keamanan yang dijelaskan di topik bantuan about_Execution_Policies di http://go.microsoft.com/fwlink/?LinkID=135170. Apakah Anda ingin mengubah kebijakan eksekusi? [Y] Ya   [A] Ya untuk Semua   [N] Tidak   [L] Tidak untuk Semua   [S] Suspend [?] Help (defaultnya adalah "N"): A
-`</pre> </blockquote> 
+`</pre> 
+> > > 
+> > > **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
+> > > 
+> > >     $ . myvenv\Scripts\activate.ps1
+> > >     
+> > > 
+> > > The advantage is that you don't have to switch between editor windows and command-line windows</blockquote> 
 > > > 
 > > > <!--endsec-->
 > > > 
@@ -147,13 +154,6 @@ data-collapse=true ces-->
 > > > >     
 > > > 
 > > > <!--endsec-->
-> > > 
-> > > > **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
-> > > > 
-> > > >     $ . myvenv\Scripts\activate.ps1
-> > > >     
-> > > > 
-> > > > The advantage is that you don't have to switch between editor windows and command-line windows
 > > > 
 > > > Anda akan tahu bahwa Anda memiliki ` virtualenv </ 0> dimulai saat Anda melihat bahwa prompt di konsol Anda diawali dengan <code> (myvenv) </ 0> .</p>
 
