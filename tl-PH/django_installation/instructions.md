@@ -120,6 +120,13 @@ Patakbuhin ang iyong virtual na environment sa pamamagitan ng pagpagpatakbo ng:
 >         Execution Policy Change
 >         Ang execution policy ay nakakatulong para maprotektahan ka sa mga script na hindi mo pinagkatiwalaan. Ang pagbaago ng execution policy ay maaring maghantad sa iyong sa mga panganib sa seguridad na nalalarawan sa about_Execution_Poilicies na mga pangtulong na mga paksa sa http://go.microsoft.com/fwlink/?LinkID=135170. Gusto mo bang baguhin ang iyong execution policy? [Y] Oo  [A] Oo sa Lahat  [N] Hindi  [L] Hindi sa Lahat  [S] I-suspende  [?] Tulong ( ang default ay "N"): A
 >     
+> 
+> **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
+> 
+>     $ . myvenv\Scripts\activate.ps1
+>     
+> 
+> The advantage is that you don't have to switch between editor windows and command-line windows
 
 <!--endsec-->
 
@@ -143,13 +150,6 @@ Huwag kalimutan na palitan ang `myenv` sa iyong napili na `virtualenv` na pangal
 >     
 
 <!--endsec-->
-
-> **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
-> 
->     $ . myvenv\Scripts\activate.ps1
->     
-> 
-> The advantage is that you don't have to switch between editor windows and command-line windows
 
 Malalamon mo kung ang iyong `virtualenv` ay nakatakbo na kung makikita mo ang prompt sa iyong console na may unlapi na `(myenv)`.
 
