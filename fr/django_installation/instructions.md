@@ -119,7 +119,14 @@ Démarrez votre environnement virtuel en exécutant :
 >     C:\WINDOWS\system32> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 >         Execution Policy Change
 >         The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
+>    
+
+> **NOTE :** Pour les éditeurs du très populaire VS Code, qui comporte un terminal intégré basé sur Windows Powershell, si vous souhaitez conserver le terminal intégré, vous pouvez utiliser la commande suivante pour activer votre environnement virtuel :
+> 
+>     $ . myvenv\Scripts\activate.ps1
 >     
+> 
+> L'avantage, c'est que vous n'aurez pas à constamment passer de l'éditeur aux lignes de commandes
 
 <!--endsec-->
 
@@ -143,13 +150,6 @@ N'oubliez pas de remplacer `myvenv` par le nom que vous avez choisi pour votre `
 >     
 
 <!--endsec-->
-
-> **NOTE :** Pour les éditeurs du très populaire VS Code, qui comporte un terminal intégré basé sur Windows Powershell, si vous souhaitez conserver le terminal intégré, vous pouvez utiliser la commande suivante pour activer votre environnement virtuel :
-> 
->     $ . myvenv\Scripts\activate.ps1
->     
-> 
-> L'avantage, c'est que vous n'aurez pas à constamment passer de l'éditeur aux lignes de commandes
 
 Vous saurez que votre `virtualenv` est lancé quand le prompt de votre console est précédé de `(myvenv)`.
 

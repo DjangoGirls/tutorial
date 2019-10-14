@@ -121,6 +121,13 @@ data-collapse=true ces-->
 >         The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
 >     
 
+> **نکته:** برای کاربران ویرایشگر VS Code که درون خود یک ترمینال خط فرمان منطبق بر powershell ویندوز دارد، اگر بخواهید از این ترمینال استفاده کنید باید این دستور را برای فعال کردن محیط مجازی خود بزنید:
+> 
+>     $ . myvenv\Scripts\activate.ps1
+>     
+> 
+> فایده این کار این است که لازم نیست دائم بین پنجره ویرایشگر و پنجره خط فرمان جابجا شوید
+
 <!--endsec-->
 
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
@@ -143,13 +150,6 @@ data-collapse=true ces-->
 >     
 
 <!--endsec-->
-
-> **نکته:** برای کاربران ویرایشگر VS Code که درون خود یک ترمینال خط فرمان منطبق بر powershell ویندوز دارد، اگر بخواهید از این ترمینال استفاده کنید باید این دستور را برای فعال کردن محیط مجازی خود بزنید:
-> 
->     $ . myvenv\Scripts\activate.ps1
->     
-> 
-> فایده این کار این است که لازم نیست دائم بین پنجره ویرایشگر و پنجره خط فرمان جابجا شوید
 
 هنگامی که پیشوند `(myvenv)` در کنسول خط فرمان اضافه شود به معنی آن است که `محیط مجازی` شما فعال شده است.
 

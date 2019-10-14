@@ -121,6 +121,13 @@ Starte deine virtuelle Umgebung, indem du Folgendes eingibst:
 >         The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
 >     
 
+> **Hinweis:** Für Benutzerinnen des populären Editors VS Code, der einen Powershell-basiertes Terminal eingebaut hat: Wenn du beim eingebauten Terminal bleiben willst, kannst du deine virtuelle Umgebung mit folgendem Befehl aktivieren:
+> 
+>     $ . myvenv\Scripts\activate.ps1
+>     
+> 
+> Der Vorteil davon ist, dass du nicht zwischen den Editor-Fenstern und den Kommandozeilen-Fenstern wechseln musst
+
 <!--endsec-->
 
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
@@ -143,13 +150,6 @@ Der Name `myvenv` muss mit dem von Dir gewählten Namen des `virtualenv` überei
 >     
 
 <!--endsec-->
-
-> **Hinweis:** Für Benutzerinnen des populären Editors VS Code, der einen Powershell-basiertes Terminal eingebaut hat: Wenn du beim eingebauten Terminal bleiben willst, kannst du deine virtuelle Umgebung mit folgendem Befehl aktivieren:
-> 
->     $ . myvenv\Scripts\activate.ps1
->     
-> 
-> Der Vorteil davon ist, dass du nicht zwischen den Editor-Fenstern und den Kommandozeilen-Fenstern wechseln musst
 
 Du erkennst, dass dein `virtualenv` gestartet ist, wenn du vor der Eingabeaufforderung eine Klammer mit dem Namen deiner Umgebung siehst, `(myvenv)`.
 
