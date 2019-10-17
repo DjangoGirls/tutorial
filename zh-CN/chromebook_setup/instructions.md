@@ -66,8 +66,8 @@ Run:
 
 ### Python无处不在
 
-The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+Django Girls的教程有一节关于部署（Deployment）的内容。这个部分是把实现页面新功能的代码移植到一个可公开访问的计算机（我们称之为服务器）使其他人可以看到和使用的一个过程。
 
-This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+当我们在Chromebook上做课程的时候，这部分就显得有些怪异了，因为我们已经有计算机连接到互联网了。 然而，它仍然有用，因为我们可以认为我们的云工作区 用于我们的“正在进行中”工作，以及使用Python无处不在的功能让我们的代码可以在一个第三方的地方可以持续运行
 
-Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+因此，在[www.pythonanywhere.com](https://www.pythonanywhere.com).注册一个新的 Python Anywhere账户
