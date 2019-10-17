@@ -22,30 +22,30 @@ PaizaCloud Cloud IDE的终端是为你的指示准备的。 你可以调整窗�
 
 #### AWS Cloud9（AWS云开发9）
 
-Currently Cloud 9 requires you to sign up with AWS and enter credit card information.
+目前，Cloud 9要求您使用AWS账号注册并且需要输入信用卡 信息。
 
-1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Go to [c9.io](https://c9.io) and click *Get started with AWS Cloud9*
-3. Sign up for an AWS account (requires credit card information, but you can use it for free)
-4. In the AWS Dashboard, enter *Cloud9* in the search bar and click it
-5. In the Cloud 9 dashboard, click *Create environment*
-6. Name it *django-girls*
-7. While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
-8. Click *Next step*
-9. Click *Create environment*
+1. 从[Chrome网上商店](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)下载安装Cloud9.
+2. 转到 [c9.io](https://c9.io)并点击 *开始使用 AWS Cloud9*
+3. 注册一个 AWS 帐户 (需要信用卡信息，但您可以免费使用)
+4. 在 AWS 仪表盘中，在搜索栏输入 *Cloud9*并点击
+5. 在Cloud9 面板中，点击 *创建环境*
+6. 将其命名为*django-girls*
+7. 在配置设置时，选择 *创建一个新的环境实例 (EC2)* 用于 "环境类型" 和 *t2.micro*"实例类型" (这个VM类型是可以免费账户可以使用的） 缺省的设置是费用最好的，不需要修改缺省的设置。
+8. 点击*下一步*
+9. 点击 *创建环境*
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+现在你应该看见一个拥有侧边栏，一个包含文本的主窗口，以及一个位于底部的小窗口-看起来像这样：
 
 {% filename %}bash{% endfilename %}
 
     你的用户名：~工作区 $
     
 
-This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+底部的区域是你的终端。你可以用终端来向远程的Cloud9计算机发送指示。你可以调整该窗口使之更大。
 
 ### 虚拟环境
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+虚拟环境（也称virtualenv）就像个私人的盒子，我们可以将正在做的项目中有用的计算机代码储存进去。 我们使用虚拟环境来区分开我们不同项目里所用的各种各样代码，以免不同项目的代码相互混淆。
 
 Run:
 
@@ -62,7 +62,7 @@ Run:
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+创建一个[GitHub](https://github.com)账户
 
 ### Python无处不在
 
