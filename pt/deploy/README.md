@@ -176,7 +176,7 @@ Agora, é importante notar que o seu banco de dados no PythonAnywhere é complet
     (ola.pythonanywhere.com) $ python manage.py createsuperuser
     
 
-Digite as informações sobre a sua conta de admin. É mais fácil usar as mesmos que usou no seu computador pra evitar qualquer confusão, a menos que você queira criar uma senha mais segura para a conta no PythonAnywhere.
+Digite as informações sobre a sua conta de admin. É mais fácil usar as mesmas que usou no seu computador pra evitar qualquer confusão, a menos que você queira criar uma senha mais segura para a conta no PythonAnywhere.
 
 Agora, se quiser, você pode dar uma olhada no seu código no PythonAnywhere usando `ls`:
 
