@@ -8,7 +8,7 @@ Cloude IDE (云集成开发环境）是为你提供代码编辑器并可以访�
 
 1. 转到 [PaizaCloud Cloud IDE](https://paiza.cloud/)
 2. 注册一个账户
-3. Click *New Server* and choose the Django app
+3. 点击新的*服务器*，然后选择Django应用
 4. 点击“终端‘’按钮（在窗口的左侧）
 
 现在你可看见一个带有侧边栏、左边按钮的界面。 点击“Terminal”按钮打开终端窗口，如下所示：
