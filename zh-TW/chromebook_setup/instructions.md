@@ -8,7 +8,7 @@ Cloud 9 這工具會提供一個程式碼編輯器(code editor)，並讓你存�
 
 1. 到[PaizaCloud Cloud IDE](https://paiza.cloud/)
 2. 建立帳戶
-3. 點擊*新伺服器*和選擇Django應用程式
+3. 點擊*新伺服器*及選擇Django應用程式
 4. Click Terminal button(on the left side of the window)
 
 Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
@@ -24,8 +24,8 @@ The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You 
 
 Currently Cloud 9 requires you to sign up with AWS and enter credit card information.
 
-1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Go to [c9.io](https://c9.io) and click *Get started with AWS Cloud9*
+1. 從 [Chrome 線上應用程式商店](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)安裝 Colud 9
+2. 到[c9.io](https://c9.io)點擊及瀏覽*開始使用 AWS Cloud9*
 3. Sign up for an AWS account (requires credit card information, but you can use it for free)
 4. In the AWS Dashboard, enter *Cloud9* in the search bar and click it
 5. In the Cloud 9 dashboard, click *Create environment*
