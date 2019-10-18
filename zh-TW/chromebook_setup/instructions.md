@@ -13,7 +13,7 @@ Cloud 9 這工具會提供一個程式碼編輯器(code editor)，並讓你存�
 
 Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
 
-{% filename %}Terminal{% endfilename %}
+{% filename %}終端機{% endfilename %}
 
     $
     
@@ -47,7 +47,7 @@ This bottom area is your terminal. You can use the terminal to send instructions
 
 A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
-Run:
+運行:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -58,7 +58,7 @@ Run:
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: `~=`).
+(請注意，我們在最後一行確實使用了一個符號：`~=` 喔)。
 
 ### GitHub
 
