@@ -183,6 +183,8 @@ First create a `requirements.txt` file inside of the `djangogirls/` folder, usin
 
 ```
 djangogirls
+├── myvenv
+│   └── ...
 └───requirements.txt
 ```
 
