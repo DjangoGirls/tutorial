@@ -84,7 +84,6 @@ Vous pouvez voir qu'un nouveau dossier `blog` a été créé et qu'il contient d
     │   │   └── __init__.py
     │   ├── models.py
     │   ├── tests.py
-    |   ├── urls.py
     │   └── views.py
     ├── db.sqlite3
     ├── manage.py
