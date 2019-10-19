@@ -423,14 +423,14 @@ Desktop というディレクトリ名は使用しているLinuxアカウント�
 | -------------- | --------------------- | ----------------- | ---------------------------------------------------- |
 | exit           | exit                  | ウインドウを閉じる         | **exit**                                             |
 | cd             | cd                    | ディレクトリを変更         | **cd test**                                          |
-| cd             | pwd                   | 現在のディレクトリを表示      | **cd** (Windows) or **pwd** (Mac OS / Linux)         |
+| cd             | pwd                   | 現在のディレクトリを表示      | **cd** (Windows) あるいは **pwd** (Mac OS / Linux)       |
 | dir            | ls                    | ディレクトリ/ファイルの一覧を表示 | **dir**                                              |
 | copy           | cp                    | ファイルのコピー          | **copy c:\test\test.txt c:\windows\test.txt**    |
 | move           | mv                    | ファイルを移動           | **move c:\test\test.txt c:\windows\test.txt**    |
 | mkdir          | mkdir                 | 新しいディレクトリを作成      | **mkdir testdirectory**                              |
 | rmdir (or del) | rm                    | ファイルを削除           | **del c:\test\test.txt**                           |
 | rmdir /S       | rm -r                 | ディレクトリを削除         | **rm -r testdirectory**                              |
-| [CMD] /?       | man [CMD]             | コマンドのヘルプを表示します。   | **cd /?** (Windows) あるいは **man cd** (Mac OS / Linux) |
+| [CMD] /?       | man [CMD]             | コマンドのヘルプを表示       | **cd /?** (Windows) あるいは **man cd** (Mac OS / Linux) |
 
 ここで勉強したのはコマンドのほんの一部でしたが、このワークショップで使うコマンドはこれだけです。
 
