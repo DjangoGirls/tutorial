@@ -29,7 +29,7 @@
 - [GoogleのPythonコース](https://developers.google.com/edu/python/)
 - [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – 最初のエクササイズは無料です。
 - [New Coder tutorials](http://newcoder.io/tutorials/) – Pythonの使い方について様々な実用的な例があります。
-- [edX](https://www.edx.org/course?search_query=python) – ほとんどのコースを無料で視聴できますが修了証書や単位が欲しい場合有料になります。
+- [edX](https://www.edx.org/course?search_query=python) – ほとんどのコースを無料で視聴できますが、高等教育資格に向けた修了証書や単位が欲しい場合、お金がかかります。
 - [ – CourseraのPython講座](https://www.coursera.org/specializations/python)　オンライン動画の講義の一部を無料で見ることができ、コースを受講し終わると修了証を取得することができます。
 - [Python for Everybody](https://www.py4e.com/) – CourseraのPython講座の無料かつオープンなバージョンです。
 
