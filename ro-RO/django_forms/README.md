@@ -44,7 +44,7 @@ Deci încă o dată vom crea: un link către pagină, un URL, un view și un tem
 
 ## Link către o pagină cu formularul
 
-It's time to open `blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `page-header`:
+It's time to open `blog/templates/blog/base.html` in the code editor. In the `div` named `page-header`, we will add a link:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
