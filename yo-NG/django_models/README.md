@@ -84,7 +84,6 @@ Láti mú kí gbogbo nnkan wà létòlétò, a ó ṣẹ̀dá ètò ọ̀tọ̀ 
     │   │   └── __init__.py
     │   ├── models.py
     │   ├── tests.py
-    |   ├── urls.py
     │   └── views.py
     ├── db.sqlite3
     ├── manage.py
