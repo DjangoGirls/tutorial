@@ -40,7 +40,7 @@ Akhirnya, kita dapat menyatakan field-field mana yang akan muncul di dalam form 
 
 <h2>Mengarahkan link menuju sebuah halaman dengan Form</h2>
 
-<p>It's time to open <code>blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `page-header`:
+<p>It's time to open <code>blog/templates/blog/base.html` in the code editor. In the `div` named `page-header`, we will add a link:
 
 {% filename%} blog / templates / blog / base.html {% endfilename%}
 
