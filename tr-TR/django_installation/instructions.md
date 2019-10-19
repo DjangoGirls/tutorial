@@ -175,6 +175,8 @@ Bir requirements dosyası `pip install` ile yüklenmesi gereken paketlerin liste
 Önce `djangogirls /` klasörü içinde `requirements.txt` dosyası oluşturalım. Bunu kod editöründe yeni bir dosya açıp, sonra `requirements.txt` olarak `djangogirls/` klasöründe kaydederek yapın. İşleminiz bu klasörde görünecek:
 
     djangogirls
+    ├── myvenv
+    │   └── ...
     └───requirements.txt
     
 
