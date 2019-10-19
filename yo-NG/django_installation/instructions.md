@@ -175,6 +175,8 @@ Fáìlì àwọn ohun tí a béèrè fún (requirements) kan máa ṣàkọsíl�
 Kọ́kọ́ ṣẹ̀dá fáìlì `requirements.txt` kan sínú fódà `djangogirls/` náà, pẹ̀lú lílo olóòtú kóòdù tí o ti ṣàgbékalẹ̀ ṣáájú. O lè ṣe èyí nípasẹ̀ ṣíṣí fáìlì tuntun kan nínú olóòtú kóòdù náà àti títọ́jú rẹ gẹ́gẹ́ bí `requirements.txt` sínú fódà `djangogirls/` náà. Àkójọpọ̀ fáìlì rẹ yíò rí báyìí:
 
     djangogirls
+    ├── myvenv
+    │   └── ...
     └───requirements.txt
     
 
