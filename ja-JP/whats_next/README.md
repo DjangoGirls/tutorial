@@ -20,7 +20,7 @@
 
 #### HTML, CSS ならびに JavaScript
 
-- [Codecademy - web development コース](https://www.codecademy.com/learn/paths/web-development)
+- [Codecademyのweb開発コース](https://www.codecademy.com/learn/paths/web-development)
 - [freeCodeCamp](https://www.freecodecamp.org/)
 
 #### Python
