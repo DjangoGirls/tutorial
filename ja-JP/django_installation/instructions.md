@@ -176,6 +176,8 @@ Requirementsファイルは`pip install`でインストールするためのパ�
 前にインストールしたエディタを使用して、最初に `requirements.txt` ファイルを `djangogirls/` フォルダの中に作ります。 エディタで新しいファイルを開いて`djangogirls/`フォルダ内に`requirements.txt`という名前で保存してください。 ディレクトリはこんな感じになっているはずです:
 
     djangogirls
+    ├── myvenv
+    │   └── ...
     └───requirements.txt
     
 
