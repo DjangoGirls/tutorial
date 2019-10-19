@@ -18,7 +18,7 @@ https://www.python.org/downloads/windows/ からWindows版のPythonをダウン�
 
 インストールの途中で、「Setup」というタイトルのウィンドウがでてきたら注意してください。 下にあるとおり、「Add Python 3.6 to PATH」か「Add Python to your environment variables」をチェックしてから「Install Now」をクリックしてください (バージョンが違うと表示が違うこともあります)。
 
-![Pythonにパスを通すのを忘れないようにしてください。](../python_installation/images/python-installation-options.png)
+![Pythonのパスを通すのを忘れないようにしてください。](../python_installation/images/python-installation-options.png)
 
 インストールが終わったら、ダイアログボックスが出てきます。ボックス内のリンクを開くと、Pythonやインストールしたバージョンを説明したページに行けます。 ダイアログは閉じてしまいましょう。Pythonの使い方はこのチュートリアルでたっぷり勉強します！
 
@@ -27,9 +27,9 @@ https://www.python.org/downloads/windows/ からWindows版のPythonをダウン�
 1. Windows Updateを実行してすべての更新ファイルを入れてから、Pythonを入れ直す
 2. [古いバージョンのPython](https://www.python.org/downloads/windows/)をインストールしてみる。例えば[3.4.6](https://www.python.org/downloads/release/python-346/)。
 
-古いバージョンのPythonをインストールした場合、インストール画面は上のものと違うことがあります。 下にスクロールして「Add python.exe to Path」のところを左クリックして「Will be installed on local hard drive（ローカルハードドライブにインストールされます）」を選択してください
+古いバージョンのPythonをインストールした場合、インストール画面は上のものと違うことがあります。 下にスクロールして「Add python.exe to Path」の左のボタンをクリックして「Will be installed on local hard drive（ローカルハードドライブにインストールされます）」を選択してください
 
-![古いバージョンのパスを追加してください。](../python_installation/images/add_python_to_windows_path.png)
+![古いバージョンでも、Pythonのパスを通してください。](../python_installation/images/add_python_to_windows_path.png)
 
 <!--endsec-->
 
