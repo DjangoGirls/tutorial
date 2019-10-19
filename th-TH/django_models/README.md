@@ -84,7 +84,6 @@ A model in Django is a special kind of object – it is saved in the `database`.
     │   │   └── __init__.py
     │   ├── models.py
     │   ├── tests.py
-    |   ├── urls.py
     │   └── views.py
     ├── db.sqlite3
     ├── manage.py
