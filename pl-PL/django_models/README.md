@@ -84,7 +84,6 @@ Zauważysz, że nowy katalog `blog` został utworzony i zawiera kilka plików. K
     │   │   └── __init__.py
     │   ├── models.py
     │   ├── tests.py
-    |   ├── urls.py
     │   └── views.py
     ├── db.sqlite3
     ├── manage.py
