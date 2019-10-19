@@ -60,7 +60,7 @@ Jó ötlet a `git status` parancs használata még a `git add` előtt, valamint 
     $ git status
     On branch master
     
-    Initial commit
+    No commits yet
     
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
