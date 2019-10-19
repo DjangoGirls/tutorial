@@ -175,6 +175,8 @@ data-collapse=true ces-->
 Сначала создайте файл `requirements.txt` внутри `djangogirls /` папки, используя редактор кода, который вы установили ранее. Вы делаете это, открыв новый файл в редакторе кода и затем сохранив его как `requirements.txt` в `djangogirls /` папке. Ваша папка будет выглядеть следующим образом:
 
     djangogirls
+    ├── myvenv
+    │   └── ...
     └───requirements.txt
     
 
