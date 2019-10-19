@@ -126,7 +126,7 @@ Démarrez votre environnement virtuel en exécutant :
 >     $ . myvenv\Scripts\activate.ps1
 >     
 > 
-> The advantage is that you don't have to switch between editor windows and command-line windows
+> L'avantage, c'est que vous n'aurez pas à constamment passer de l'éditeur aux lignes de commandes
 
 <!--endsec-->
 
@@ -201,14 +201,14 @@ Maintenant, exécutez `pip install -r requirements.txt` pour installer Django.
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
+> Si jamais vous obtenez des erreurs lorsque vous utilisez pip sous Windows, vérifiez si votre chemin d'accès contient des espaces, des accents ou des caractères spéciaux (ex : `C:\Utilisateurs\Nom d'Utilisateur\djangogirls`). Si c'est le cas, changez de dossier et essayez d'en créer un nouveau en prenant en compte le fait qu'il ne doit donc avoir ni accents, ni espaces, ni caractères spéciaux (ex : `C:\djangogirls`). Créez un nouvel environnement virtuel dans le nouveau répertoire, puis supprimez l'ancien et ré-essayez la commande précédente. (Déplacer ou couper/coller le répertoire de l'environnement virtuel ne marchera pas car virtualenv utilise des chemins absolus)
 
 <!--endsec-->
 
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
+> Votre terminal peut se figer quand vous essayez d'installer Django. Si cela arrive, utilisez cette commande au lieu de la précédente :
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -220,7 +220,7 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
+> Si vous obtenez une erreur lorsque vous utilisez pip sous Ubuntu 12.04, tapez la commande `python -m pip install -U --force-reinstall pip` pour réparer l'installation de pip dans votre virtualenv.
 
 <!--endsec-->
 
