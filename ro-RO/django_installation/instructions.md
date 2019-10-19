@@ -175,6 +175,8 @@ Un requirements-fişier este o listă a dependenţelor care trebuie să fie inst
 Mai întâi, creaţi un fişier `requirements.txt` în directoriu `djangogirls/`, utilizând editorul de cod pe care aţi instalat mai devreme. Faceţi acest lucru deschizând un fişier nou în editorul de cod şi apoi salvați-l ca `requirements.txt` în directoriu `djangogirls/`. Structura directoriu-lui va fi următoare:
 
     djangogirls
+    ├── myvenv
+    │   └── ...
     └───requirements.txt
     
 
