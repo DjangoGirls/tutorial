@@ -175,6 +175,8 @@ Eine requirements-Datei enthält eine Liste von Abhängigkeiten, die von `pip in
 Erstelle mit dem zuvor installierten Code-Editor eine Datei namens `requirements.txt` im Verzeichnis `djangogirls/`. Das machst du, indem du eine neue Datei in deinem Code-Editor öffnest und als `requirements.txt` im Ordner `djangogirls/` abspeicherst. Dein Ordner sieht jetzt so aus:
 
     djangogirls
+    ├── myvenv
+    │   └── ...
     └───requirements.txt
     
 
