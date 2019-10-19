@@ -175,6 +175,8 @@ data-collapse=true ces-->
 در ابتدا یک فایل `requirements.txt` در پوشه `djangogirls/` بسازید. معمولاً می‌توانید از خود ویرایشگر کد که قبل‌تر نصب کرده‌اید هم برای ساختن فایل جدید استفاده کنید. یک فایل جدید در ویرایشگر کد بسازید و سپس به نام `requirements.txt`در پوشه `djangogirls/` ذخیره‌اش کنید. پوشه شما شبیه این خواهد بود:
 
     djangogirls
+    ├── myvenv
+    │   └── ...
     └───requirements.txt
     
 
