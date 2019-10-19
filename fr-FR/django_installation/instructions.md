@@ -175,6 +175,8 @@ Un fichier "requirement" maintient une liste des dépendances qui doivent être 
 Tout d'abord, créez un fichier `requirements.txt` dans votre dossier `djangogirls`, en utilisant l'éditeur de texte que vous avez téléchargé précédemment. Pour ce faire, ouvrez un nouveau fichier dans l'éditeur et sauvegarde-le à l'intérieur du dossier `djangogirls/` en lui donnant le nom `requirements.txt`. Votre dossier ressemble maintenant à ceci :
 
     djangogirls
+    ├── myvenv
+    │   └── ...
     └───requirements.txt
     
 
