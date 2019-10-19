@@ -44,7 +44,7 @@ Una vez más vamos a crear: un enlace a la página, una dirección URL, una vist
 
 ## Enlace a una página con el formulario
 
-It's time to open `blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `page-header`:
+It's time to open `blog/templates/blog/base.html` in the code editor. In the `div` named `page-header`, we will add a link:
 
 {% filename %}blog/templates/blog/post_base.html{% endfilename %}
 
