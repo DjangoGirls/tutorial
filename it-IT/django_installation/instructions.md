@@ -175,6 +175,8 @@ Un file di requisiti mantiene un elenco di dipendenze da installare utilizzando 
 Crea un file `requirements.txt` all'interno della cartella `djangogirls/` utilizzando l'editor di codice che hai installato prima. Lo fai aprendo un nuovo file nell'editor di codice e quindi salvarlo come `requirements.txt` nella cartella `djangogirls/` . Il nostro body avrà questo aspetto:
 
     djangogirls
+    ├── myvenv
+    │   └── ...
     └───requirements.txt
     
 
