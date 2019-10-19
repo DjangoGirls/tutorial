@@ -175,6 +175,8 @@ Un fichero de requisitos (requirements) tiene una lista de dependencias que se d
 Primero crea un archivo `requirements.txt` dentro de tu directorio `djangogirls`, usando el editor de código que instalaste previamente. Lo puedes hacer mediante abriendo un nuevo archivo en el editor de código y guardandolo como `requirements.txt` en el directorio `djangogirls`. Tu directorio se verá así:
 
     djangogirls
+    ├── myvenv
+    │   └── ...
     └───requirements.txt
     
 
