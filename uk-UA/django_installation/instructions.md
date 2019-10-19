@@ -175,6 +175,8 @@ A requirements file keeps a list of dependencies to be installed using `pip inst
 First create a `requirements.txt` file inside of the `djangogirls/` folder, using the code editor that you installed earlier. You do this by opening a new file in the code editor and then saving it as `requirements.txt` in the `djangogirls/` folder. Your directory will look like this:
 
     djangogirls
+    ├── myvenv
+    │   └── ...
     └───requirements.txt
     
 
