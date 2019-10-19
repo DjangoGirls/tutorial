@@ -44,7 +44,7 @@ Nítorí náà, a ó ṣẹ̀dá atọ́ka sí ojú-ìwé náà kan, URL kan, vi
 
 ## Atọ́ka sí ojú-ìwé kan pẹ̀lú fọ́ọ̀mù náà
 
-It's time to open `blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `page-header`:
+It's time to open `blog/templates/blog/base.html` in the code editor. In the `div` named `page-header`, we will add a link:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
