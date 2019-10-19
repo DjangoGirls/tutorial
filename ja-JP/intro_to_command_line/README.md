@@ -173,13 +173,13 @@ OS X と Linux には、`man` コマンドがあり、それはコマンドの�
     ...
     
 
-> 補足：PowersSellでは、Linux や Mac OS X同様にlsコマンドが使えます。 <!--endsec-->
+> 補足：PowerSellでは、Linux や Mac OS X同様にlsコマンドが使えます。 <!--endsec-->
 
 * * *
 
 ### カレントディレクトリの変更
 
-次に、デスクトップのディレクトリに移動してみましょう。
+次に、デスクトップ(Desktop)というディレクトリに移動してみましょう。
 
 <!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
 
@@ -197,7 +197,7 @@ OS X と Linux には、`man` コマンドがあり、それはコマンドの�
     $ cd Desktop
     
 
-Desktop というディレクトリ名は使用しているLinuxアカウントの言語に翻訳されているかもしれません。 その場合は、 `Desktop` に置き換えてください; たとえば、ドイツ語なら `Schreibtisch` です。
+Desktop というディレクトリ名は、使用しているLinuxアカウントの言語に翻訳されているかもしれません。 その場合は、 `Desktop` を翻訳された名前に置き換えてください; たとえば、ドイツ語なら `Schreibtisch` です。
 
 <!--endsec-->
 
