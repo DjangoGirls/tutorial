@@ -175,6 +175,8 @@ Fajl sa neophodnim stavkama sadrži listu stvari koje bi trebalo da budu instali
 Prvo kreirajte fajl `requirements.txt` unutar foldera `djangogirls/`, koristeći editor koji je već instaliran. To možete da uradite tako što otvorite novi fajl u editoru i zatim ga sačuvate kao `requirements.txt` u `djangogirls/` folderu. Vaš direktorijum bi sada trebalo da izgleda ovako:
 
     djangogirls
+    ├── myvenv
+    │   └── ...
     └───requirements.txt
     
 
