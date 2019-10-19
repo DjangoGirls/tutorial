@@ -84,7 +84,6 @@ Você vai notar que um novo diretório `blog` foi criado e que ele contém vári
     │   │   └── __init__.py
     │   ├── models.py
     │   ├── tests.py
-    |   ├── urls.py
     │   └── views.py
     ├── db.sqlite3
     ├── manage.py
