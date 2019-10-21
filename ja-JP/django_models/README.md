@@ -77,9 +77,9 @@ Djangoのモデルは特別なオブジェクトで、`データベース` に�
 
     djangogirls
     ├── blog
-    │   ├── __init__.py
     │   ├── admin.py
     │   ├── apps.py
+    │   ├── __init__.py
     │   ├── migrations
     │   │   └── __init__.py
     │   ├── models.py
@@ -92,7 +92,10 @@ Djangoのモデルは特別なオブジェクトで、`データベース` に�
     │   ├── settings.py
     │   ├── urls.py
     │   └── wsgi.py
+    ├── myvenv
+    │   └── ...
     └── requirements.txt
+    
     
 
 アプリケーションを作ったら、Djangoにそれを使うように伝えないといけません。 それは `mysite/settings.py` でします。エディタでこれを開いてください。 `INSTALLED_APPS` を見つけて `]` の上に `'blog.apps.BlogConfig',` という一行を追加します。 そうすると、最終的には以下のようになりますね。
