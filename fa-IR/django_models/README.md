@@ -77,9 +77,9 @@
 
     djangogirls
     ├── blog
-    │   ├── __init__.py
     │   ├── admin.py
     │   ├── apps.py
+    │   ├── __init__.py
     │   ├── migrations
     │   │   └── __init__.py
     │   ├── models.py
@@ -92,7 +92,10 @@
     │   ├── settings.py
     │   ├── urls.py
     │   └── wsgi.py
+    ├── myvenv
+    │   └── ...
     └── requirements.txt
+    
     
 
 بعد از ساختن این برنامه، باید به جنگو بگوییم تا از آن استفاده کند. این کار را در فایل `mysite/settings.py` انجام می‌دهیم -- این فایل را در ویرایشگر کد باز کنید. باید `INSTALLED_APPS` را پیدا کنیم و دقیقاً بالای علامت `]` در انتهای این بخش، خطی شامل `'blog.apps.BlogConfig',` را اضافه کنیم. پس در نهایت شبیه این خواهد بود:
