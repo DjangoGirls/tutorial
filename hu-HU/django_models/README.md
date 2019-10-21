@@ -77,9 +77,9 @@ You will notice that a new `blog` directory is created and it contains a number 
 
     djangogirls
     ├── blog
-    │   ├── __init__.py
     │   ├── admin.py
     │   ├── apps.py
+    │   ├── __init__.py
     │   ├── migrations
     │   │   └── __init__.py
     │   ├── models.py
@@ -92,7 +92,10 @@ You will notice that a new `blog` directory is created and it contains a number 
     │   ├── settings.py
     │   ├── urls.py
     │   └── wsgi.py
+    ├── myvenv
+    │   └── ...
     └── requirements.txt
+    
     
 
 After creating an application, we also need to tell Django that it should use it. We do that in the file `mysite/settings.py` -- open it in your code editor. We need to find `INSTALLED_APPS` and add a line containing `'blog.apps.BlogConfig',` just above `]`. So the final product should look like this:
