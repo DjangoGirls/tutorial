@@ -45,13 +45,15 @@ On Windows you should run the following command. **(Don't forget to add the peri
 `django-admin.py` je skript, který za tebe vytvoří adresáře a soubory. Nyní bys měla mít adresářovou strukturu, která vypadá následovně:
 
     djangogirls
-    ├───manage.py
-    ├───mysite
-    │        settings.py
-    │        urls.py
-    │        wsgi.py
-    │        __init__.py
-    └───requirements.txt
+    ├── manage.py
+    ├── mysite
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
+    ├── myvenv
+    │   └── ...
+    └── requirements.txt
     
 
 > **Note**: in your directory structure, you will also see your `venv` directory that we created before.
