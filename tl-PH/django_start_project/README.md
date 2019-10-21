@@ -45,13 +45,15 @@ Sa Windows dapat mong patakbuhin ang sumusunod na command. **(Huwag kalimutang m
 Ang `django-admin.py` ay isang script na maglilikha ng mga directory at mga files para sa iyo. Sa ngayon dapat mayroon ka ng directory structure gaya nito:
 
     djangogirls
-    ├───manage.py
-    ├───mysite
-    │        settings.py
-    │        urls.py
-    │        wsgi.py
-    │        __init__.py
-    └───requirements.txt
+    ├── manage.py
+    ├── mysite
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
+    ├── myvenv
+    │   └── ...
+    └── requirements.txt
     
 
 > **Paalala**: sa iyong directory structure, makikita mo rin ang iyong `venv` na directory na nilikha natin kanina.
