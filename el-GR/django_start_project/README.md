@@ -45,13 +45,15 @@
 Η εντολή `django-admin.py` μπορεί να δημιουργήσει τους φακέλους και τα αρχεία για εσάς. Θα πρέπει τώρα να έχετε μια δομή φακέλων που μοιάζει κάπως έτσι:
 
     djangogirls
-    ├───manage.py
-    ├───mysite
-    │        settings.py
-    │        urls.py
-    │        wsgi.py
-    │        __init__.py
-    └───requirements.txt
+    ├── manage.py
+    ├── mysite
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
+    ├── myvenv
+    │   └── ...
+    └── requirements.txt
     
 
 > **Σημείωση**: Στην δομή φακέλων σας, θα δείτε επίσης τον `venv` φάκελο σας που δημιουργήσαμε προηγουμένως.
