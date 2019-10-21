@@ -45,13 +45,15 @@ Denumirele unor fișiere și directorii sunt foarte importante în Django. Nu tr
 `django-admin.py` este un script care va crea directoriile și fișierile. Acum trebuie să aveți următoare structura directoriilor:
 
     djangogirls
-    ├───manage.py
-    ├───mysite
-    │        settings.py
-    │        urls.py
-    │        wsgi.py
-    │        __init__.py
-    └───requirements.txt
+    ├── manage.py
+    ├── mysite
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
+    ├── myvenv
+    │   └── ...
+    └── requirements.txt
     
 
 > **Notă**: în structura directoriului o să vedeți directoriu `venv` care a fost creat înainte.
