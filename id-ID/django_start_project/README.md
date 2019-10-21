@@ -51,13 +51,15 @@
 > > > ` django-admin.py </ 0> adalah script yang akan membuat direktori dan file untuk Anda. Anda sekarang harus memiliki struktur direktori yang terlihat seperti ini:</p>
 
 <pre><code>djangogirls
-├───manage.py
-├───mysite
-│        settings.py
-│        urls.py
-│        wsgi.py
-│        __init__.py
-└───requirements.txt
+├── manage.py
+├── mysite
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── myvenv
+│   └── ...
+└── requirements.txt
 `</pre> 
 > > > 
 > > > > ** Catatan </ 0>: dalam struktur direktori Anda, Anda juga akan melihat direktori ` venv </ 1> yang telah kita buat sebelumnya.</p>
