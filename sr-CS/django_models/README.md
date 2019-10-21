@@ -77,9 +77,9 @@ Primetićete da je kreiran novi `blog` direktorijum i da sadrži broj fajlova. D
 
     djangogirls
     ├── blog
-    │   ├── __init__.py
     │   ├── admin.py
     │   ├── apps.py
+    │   ├── __init__.py
     │   ├── migrations
     │   │   └── __init__.py
     │   ├── models.py
@@ -92,7 +92,10 @@ Primetićete da je kreiran novi `blog` direktorijum i da sadrži broj fajlova. D
     │   ├── settings.py
     │   ├── urls.py
     │   └── wsgi.py
+    ├── myvenv
+    │   └── ...
     └── requirements.txt
+    
     
 
 Nakon kreiranja aplikacije, moramo na neki način da kažemo Django-u da treba da je koristi. To radimo u fajlu `mysite/settings.py` - otvorite ga u editoru. We need to find `INSTALLED_APPS` and add a line containing `'blog.apps.BlogConfig',` just above `]`. Tako da, na kraju to treba da izgleda ovako:
