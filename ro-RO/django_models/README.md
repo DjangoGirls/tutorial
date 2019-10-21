@@ -77,9 +77,9 @@ Veți observa că directoriu nou `blog` este creat și conține niște fișiere.
 
     djangogirls
     ├── blog
-    │   ├── __init__.py
     │   ├── admin.py
     │   ├── apps.py
+    │   ├── __init__.py
     │   ├── migrations
     │   │   └── __init__.py
     │   ├── models.py
@@ -92,7 +92,10 @@ Veți observa că directoriu nou `blog` este creat și conține niște fișiere.
     │   ├── settings.py
     │   ├── urls.py
     │   └── wsgi.py
+    ├── myvenv
+    │   └── ...
     └── requirements.txt
+    
     
 
 După crearea aplicației avem nevoie ca Django o să utilizeze. Noi facem acest lucru în fișierul `mysite/settings.py` -- el trebuie să fie deschis în editorul de cod. We need to find `INSTALLED_APPS` and add a line containing `'blog.apps.BlogConfig',` just above `]`. Rezultatul final trebuie să arate în fel următor:
