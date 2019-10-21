@@ -77,9 +77,9 @@
 
     djangogirls
     ├── blog
-    │   ├── __init__.py
     │   ├── admin.py
     │   ├── apps.py
+    │   ├── __init__.py
     │   ├── migrations
     │   │   └── __init__.py
     │   ├── models.py
@@ -92,7 +92,10 @@
     │   ├── settings.py
     │   ├── urls.py
     │   └── wsgi.py
+    ├── myvenv
+    │   └── ...
     └── requirements.txt
+    
     
 
 После того как приложение создано, нам нужно сообщить Django, что теперь он должен его использовать. Мы делаем это в файле `mysite/settings.py`, откройте его в своем редакторе кода. We need to find `INSTALLED_APPS` and add a line containing `'blog.apps.BlogConfig',` just above `]`. Конечный результат должен выглядеть следующим образом:
