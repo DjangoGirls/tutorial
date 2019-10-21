@@ -45,13 +45,15 @@ No Windows, rode o seguinte comando (**não esqueça de adicionar o ponto `.` no
 `django-admin` é um script que criará os diretórios e arquivos para você. Agora, você deve ter uma estrutura de diretório parecida com isso:
 
     djangogirls
-    ├───manage.py
-    ├───mysite
-    │        settings.py
-    │        urls.py
-    │        wsgi.py
-    │        __init__.py
-    └───requirements.txt
+    ├── manage.py
+    ├── mysite
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
+    ├── myvenv
+    │   └── ...
+    └── requirements.txt
     
 
 > **Observação:** em sua estrutura de diretórios, você também verá o o diretório do virtualenv, `venv`, que criamos antes.
