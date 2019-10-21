@@ -6,7 +6,7 @@
   * [Python](installation/README.md#instale-o-python)
   * [Editor de texto](installation/README.md#instale-um-editor-de-código)
   * [Ambiente Virtual](installation/README.md#configure-o-virtualenv-e-instale-o-django)
-  * [Django](installation/README.md#configure-o-virtualenv-e-instale-o-django)
+  * [Django](installation/README.md#instalando-o-django)
   * [Git](installation/README.md#instale-o-git)
   * [GitHub](installation/README.md#crie-uma-conta-no-gitHub)
   * [PythonAnywhere](installation/README.md#crie-uma-conta-no-pythonAnywhere)
