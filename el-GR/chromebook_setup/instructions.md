@@ -41,13 +41,13 @@ Now you should see an interface with a sidebar, a big main window with some text
     yourusername:~/workspace $
     
 
-This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+Αυτή η κάτω περιοχή είναι το τερματικό σας. Μπορείτε να χρησιμοποιήσετε το τερματικό για να στείλετε οδηγίες στον απομακρυσμένο υπολογιστή Cloud 9. Μπορείτε να αλλάξετε το μέγεθος αυτού του παραθύρου για να το κάνετε μεγαλύτερο.
 
 ### Εικονικό Περιβάλλον
 
 A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
-Run:
+Εκτέλεση:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -58,7 +58,7 @@ Run:
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: `~=`).
+(Σημειώστε ότι στην τελευταία γραμμή χρησιμοποιούμε μια περισπωμένη ακολουθούμενη από ένα σύμβολο ίσον: ` ~ = `).
 
 ### GitHub
 
