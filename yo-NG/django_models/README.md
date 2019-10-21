@@ -77,9 +77,9 @@ Láti mú kí gbogbo nnkan wà létòlétò, a ó ṣẹ̀dá ètò ọ̀tọ̀ 
 
     djangogirls
     ├── blog
-    │   ├── __init__.py
     │   ├── admin.py
     │   ├── apps.py
+    │   ├── __init__.py
     │   ├── migrations
     │   │   └── __init__.py
     │   ├── models.py
@@ -92,7 +92,10 @@ Láti mú kí gbogbo nnkan wà létòlétò, a ó ṣẹ̀dá ètò ọ̀tọ̀ 
     │   ├── settings.py
     │   ├── urls.py
     │   └── wsgi.py
+    ├── myvenv
+    │   └── ...
     └── requirements.txt
+    
     
 
 Lẹ́yìn ṣíṣẹ̀dá ètò kan, a tún nílò láti sọ fún Django pé ó yẹ kó lò ó. A máa ṣe ìyẹn nínú fáìlì `mysite/settings.py` náà -- ṣí i nínú olóòtú kóòdù rẹ. We need to find `INSTALLED_APPS` and add a line containing `'blog.apps.BlogConfig',` just above `]`. Nítorí náà, ó yẹ kí àbájáde náà rí báyìí:
