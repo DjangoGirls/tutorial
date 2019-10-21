@@ -77,9 +77,9 @@ Yeni bir `blog` dizininin oluşturulduğunu ve bir dizi dosya içerdiğini fark 
 
     djangogirls
     ├── blog
-    │   ├── __init__.py
     │   ├── admin.py
     │   ├── apps.py
+    │   ├── __init__.py
     │   ├── migrations
     │   │   └── __init__.py
     │   ├── models.py
@@ -92,7 +92,10 @@ Yeni bir `blog` dizininin oluşturulduğunu ve bir dizi dosya içerdiğini fark 
     │   ├── settings.py
     │   ├── urls.py
     │   └── wsgi.py
+    ├── myvenv
+    │   └── ...
     └── requirements.txt
+    
     
 
 Uygulamamızı oluşturduktan sonra, Django'ya bunu kullanmasını söylememiz lazım. Bunu `mysite/settings.py` dosyasından yapacağız -- kod editörümüzde açalım. `INSTALLED_APPS`'ı bulup `]` karakterinin üzerindeki satıra `'blog.apps.BlogConfig',` yazmamız lazım. Sonuç aşağıdaki gibi görünmeli:
