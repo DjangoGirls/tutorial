@@ -45,13 +45,15 @@
 `django-admin.py` هو البرنامج النصي الذي سينشئ الدلائل والملفات بالنسبة لك. يجب أن يكون لديك الآن هيكل دليل يشبه هذا:
 
     djangogirls
-    ├───manage.py
-    ├───mysite
-    │        settings.py
-    │        urls.py
-    │        wsgi.py
-    │        __init__.py
-    └───requirements.txt
+    ├── manage.py
+    ├── mysite
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
+    ├── myvenv
+    │   └── ...
+    └── requirements.txt
     
 
 > **ملاحظة** في بنية الدليل، سترى أيضا `venv` الذي أنشأناه من قبل.
