@@ -6,7 +6,7 @@
   * [Python](installation/README.md#python-installieren)
   * [Code-Editor](installation/README.md#einen-code-editor-installieren)
   * [Virtuelle Umgebung](installation/README.md#virtualenv-einrichten-und-django-installieren)
-  * [Django](installation/README.md#virtualenv-einrichten-und-django-installieren)
+  * [Django](installation/README.md#django-installation)
   * [Git](installation/README.md#git-installieren)
   * [GitHub](installation/README.md#einen-gitHub-account-erstellen)
   * [PythonAnywhere](installation/README.md#einen-pythonAnywhere-account-erstellen)
