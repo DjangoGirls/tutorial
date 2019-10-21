@@ -61,9 +61,9 @@ Anda akan melihat bahwa sebuah petunjuk `blog` baru dibuat dan berisi sejumlah f
 
     djangogirls
     ├── blog
-    │   ├── __init__.py
     │   ├── admin.py
     │   ├── apps.py
+    │   ├── __init__.py
     │   ├── migrations
     │   │   └── __init__.py
     │   ├── models.py
@@ -76,7 +76,10 @@ Anda akan melihat bahwa sebuah petunjuk `blog` baru dibuat dan berisi sejumlah f
     │   ├── settings.py
     │   ├── urls.py
     │   └── wsgi.py
+    ├── myvenv
+    │   └── ...
     └── requirements.txt
+    
     
 
 Setelah membuat sebuah aplikasi, kita juga perlu memberitahukan Django bahwa aplikasi tersebut harus menggunakannya. We do that in the file `mysite/settings.py` -- open it in your code editor. We need to find `INSTALLED_APPS` and add a line containing `'blog.apps.BlogConfig',` just above `]`. Jadi produk akhir akan tampak seperti ini:
