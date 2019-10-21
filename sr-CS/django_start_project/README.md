@@ -45,13 +45,15 @@ Na Windowsu bi trebalo da pokrenete sledeću komandu **(ne zaboravite da dodate 
 `django-admin.py` je skripta koja za Vas kreira direktorijume i fajlove. Sada bi trebalo da imate strukturu direktorijuma koja izgleda ovako:
 
     djangogirls
-    ├───manage.py
-    ├───mysite
-    │        settings.py
-    │        urls.py
-    │        wsgi.py
-    │        __init__.py
-    └───requirements.txt
+    ├── manage.py
+    ├── mysite
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
+    ├── myvenv
+    │   └── ...
+    └── requirements.txt
     
 
 > **Napomena**: U Vašoj strukturi direktorijuma, videćete takođe `venv` direktorijum koji smo ranije kreirali.
