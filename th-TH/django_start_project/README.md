@@ -45,13 +45,15 @@ On Windows you should run the following command. **(Don't forget to add the peri
 `django-admin.py` เป็นสคริปต์สำหรับสร้างไฟล์และไดเรกทอรีให้กับคุณ และตอนนี้คุณควรจะมีโครงสร้างไฟล์และไดเรกทอรีตามนี้:
 
     djangogirls
-    ├───manage.py
-    ├───mysite
-    │        settings.py
-    │        urls.py
-    │        wsgi.py
-    │        __init__.py
-    └───requirements.txt
+    ├── manage.py
+    ├── mysite
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
+    ├── myvenv
+    │   └── ...
+    └── requirements.txt
     
 
 > **Note**: in your directory structure, you will also see your `venv` directory that we created before.
