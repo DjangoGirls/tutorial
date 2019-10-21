@@ -78,9 +78,9 @@ Notarás que se ha creado un nuevo directorio `blog` y ahora contiene una cantid
 
     djangogirls
     ├── blog
-    │   ├── __init__.py
     │   ├── admin.py
     │   ├── apps.py
+    │   ├── __init__.py
     │   ├── migrations
     │   │   └── __init__.py
     │   ├── models.py
@@ -93,7 +93,10 @@ Notarás que se ha creado un nuevo directorio `blog` y ahora contiene una cantid
     │   ├── settings.py
     │   ├── urls.py
     │   └── wsgi.py
+    ├── myvenv
+    │   └── ...
     └── requirements.txt
+    
     
 
 Después de crear una aplicación, también necesitamos decirle a Django que debe utilizarla. Eso se hace en el fichero `mysite/settings.py` -- ábrelo en el editor. Tenemos que encontrar `INSTALLED_APPS` y agregar una línea que contiene `'blog.apps.BlogConfig',` justo por encima de `]`. El producto final debe tener este aspecto:
