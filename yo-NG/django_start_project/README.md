@@ -45,13 +45,15 @@ Lórí Windows, ó yẹ kí o ṣe àṣẹ tó tẹ̀le yìí. **(Má gbàgbé 
 `django-admin.py` jẹ́ ìlànà ìṣe (script) kan tí yíò ṣẹ̀dá àwọn àkójọpọ̀ fáìlì àti àwọn fáìlì náà fún ọ. Ó yẹ kí o ní ìgbékalẹ̀ àkójọpọ̀ fáìlì kan tó rí báyìí:
 
     djangogirls
-    ├───manage.py
-    ├───mysite
-    │        settings.py
-    │        urls.py
-    │        wsgi.py
-    │        __init__.py
-    └───requirements.txt
+    ├── manage.py
+    ├── mysite
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
+    ├── myvenv
+    │   └── ...
+    └── requirements.txt
     
 
 > **Àkíyèsí**: nínú ìgbékalẹ̀ àkójọpọ̀ fáìlì rẹ, ìwọ yíò tún rí àkójọpọ̀ fáìlì `venv` rẹ tí a ti ṣẹ̀dá ṣáájú.
