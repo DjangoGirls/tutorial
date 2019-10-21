@@ -6,7 +6,7 @@ Nos suggestions sont listées ci-dessous, mais n'hésitez pas à demander à vos
 
 Visual Studio Code est éditeur de texte développé par Microsoft pour Windows, Linux et macOS. Il inclut le support du déboggage, l'utilisation de Git intégrée, le surlignage syntaxique, l'autocompletion intelligente du code, les snippets et la refactoring du code.
 
-[Télécharger](https://code.visualstudio.com/download)
+[Télécharger](https://code.visualstudio.com/)
 
 ## Gedit
 

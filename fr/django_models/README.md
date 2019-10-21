@@ -77,14 +77,13 @@ Vous pouvez voir qu'un nouveau dossier `blog` a été créé et qu'il contient d
 
     djangogirls
     ├── blog
-    │   ├── __init__.py
     │   ├── admin.py
     │   ├── apps.py
+    │   ├── __init__.py
     │   ├── migrations
     │   │   └── __init__.py
     │   ├── models.py
     │   ├── tests.py
-    |   ├── urls.py
     │   └── views.py
     ├── db.sqlite3
     ├── manage.py
@@ -93,7 +92,10 @@ Vous pouvez voir qu'un nouveau dossier `blog` a été créé et qu'il contient d
     │   ├── settings.py
     │   ├── urls.py
     │   └── wsgi.py
+    ├── myvenv
+    │   └── ...
     └── requirements.txt
+    
     
 
 Après avoir créé une nouvelle application, vous devez dire à Django de l'utiliser. Nous faisons cela via le fichier `mysite/settings.py`. Ouvrez-le dans votre éditeur de code. Trouvez la section `INSTALLED_APPS` et ajoutez une ligne `'blog.apps.BlogConfig',` juste avant `]`. La section doit maintenant ressembler à ceci :
