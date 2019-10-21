@@ -45,13 +45,15 @@ On Windows you should run the following command. **(Don't forget to add the peri
 `django-admin.py` 是一個將為你建立目錄和檔案的 script，現在你應該有一個看起來像這樣的目錄架構。
 
     djangogirls
-    ├───manage.py
-    ├───mysite
-    │        settings.py
-    │        urls.py
-    │        wsgi.py
-    │        __init__.py
-    └───requirements.txt
+    ├── manage.py
+    ├── mysite
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
+    ├── myvenv
+    │   └── ...
+    └── requirements.txt
     
 
 > **Note**: in your directory structure, you will also see your `venv` directory that we created before.
