@@ -77,9 +77,9 @@ Zauważysz, że nowy katalog `blog` został utworzony i zawiera kilka plików. K
 
     djangogirls
     ├── blog
-    │   ├── __init__.py
     │   ├── admin.py
     │   ├── apps.py
+    │   ├── __init__.py
     │   ├── migrations
     │   │   └── __init__.py
     │   ├── models.py
@@ -92,7 +92,10 @@ Zauważysz, że nowy katalog `blog` został utworzony i zawiera kilka plików. K
     │   ├── settings.py
     │   ├── urls.py
     │   └── wsgi.py
+    ├── myvenv
+    │   └── ...
     └── requirements.txt
+    
     
 
 Po stworzeniu aplikacji, musimy dać znać Django, że powinien jej używać. Robimy to w pliku `mysite/settings.py` - otwórz go w swoim edytorze kodu. We need to find `INSTALLED_APPS` and add a line containing `'blog.apps.BlogConfig',` just above `]`. Czyli efekt końcowy powinien wyglądać tak:
