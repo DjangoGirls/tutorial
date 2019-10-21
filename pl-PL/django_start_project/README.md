@@ -45,13 +45,15 @@ Dla systemu Windows wpisz teraz do swojej konsoli następującą komendę. **Nie
 `django-admin.py` jest skryptem, który utworzy katalogi i pliki za Ciebie. Powinnaś mieć teraz strukturę katalogów podobną do tej:
 
     djangogirls
-    ├───manage.py
-    ├───mysite
-    │        settings.py
-    │        urls.py
-    │        wsgi.py
-    │        __init__.py
-    └───requirements.txt
+    ├── manage.py
+    ├── mysite
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
+    ├── myvenv
+    │   └── ...
+    └── requirements.txt
     
 
 > **Uwaga**: w strukturze katalogów, możesz zobaczyć również katalog `venv`, który stworzyłyśmy wcześniej.
