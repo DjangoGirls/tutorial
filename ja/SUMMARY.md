@@ -6,7 +6,7 @@
   * [Python](installation/README.md#Pythonのインストール)
   * [コードエディタ](installation/README.md#コードエディタのインストール)
   * [仮想環境](installation/README.md#仮想環境のセットアップとDjangoのインストール)
-  * [Django](installation/README.md#仮想環境のセットアップとDjangoのインストール)
+  * [Django](installation/README.md#djangoのインストール)
   * [Git](installation/README.md#Gitのインストール)
   * [GitHub](installation/README.md#GitHubのアカウント作成)
   * [PythonAnywhere](installation/README.md#PythonAnywhereのアカウント作成)
