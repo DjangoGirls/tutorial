@@ -23,31 +23,31 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 <!--endsec-->
 
-# Brief intro to the command line
+# Brief intro to the command line {#command-line}
 
 Many of the steps below reference the "console", "terminal", "command window", or "command line" -- these all mean the same thing: a window on your computer where you can enter commands. When you get to the main tutorial, you'll learn more about the command line. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
 
-# Inštalácia Pythonu
+# Install Python {#python}
 
 {% include "/python_installation/instructions.md" %}
 
-# Inštalácia editora kódu
+# Install a code editor {#code-editor}
 
 {% include "/code_editor/instructions.md" %}
 
-# Nastavenie virtualenv a inštalácia Django
+# Set up virtualenv and install Django {#virtualenv}
 
 {% include "/django_installation/instructions.md" %}
 
-# Inštalácia Gitu
+# Install Git {#git}
 
 {% include "/deploy/install_git.md" %}
 
-# Vytvorenie GitHub účtu
+# Create a GitHub account {#github}
 
 Prejdite na adresu [ GitHub.com ](https://www.github.com) a zaregistrujte si nový bezplatný používateľský účet. Nezabudnite si heslo zapamätať (ak používate správcu hesiel, pridajte si ho tam).
 
-# Vytvor si PythonAnywhere účet
+# Create a PythonAnywhere account {#pythonanywhere}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
