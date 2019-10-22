@@ -157,7 +157,7 @@ Pracuješ-li ve virtuálním prostředí, `python` bude automaticky odkazovat na
 
 OK máme všechny důležité závislosti na místě a konečně můžeme nainstalovat Django!
 
-## Instalace Django
+## Installing Django {#django}
 
 Now that you have your `virtualenv` started, you can install Django.
 
