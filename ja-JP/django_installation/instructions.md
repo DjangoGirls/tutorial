@@ -158,7 +158,7 @@ Virtual environment(仮想環境) の中で作業しているとき、`python`�
 
 OK,これでDjangoのインストール前に入れておきたい依存関係の準備がすべて整いました。いよいよDjangoのインストールです！
 
-## Djangoのインストール
+## Installing Django {#django}
 
 今度はあなたの`virtualenv`を起動したので、Djangoをインストールすることができます。
 
