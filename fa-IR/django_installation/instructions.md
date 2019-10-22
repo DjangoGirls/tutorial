@@ -201,7 +201,7 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
+> اگر هنگام فراخوانی pip در ویندوز خطایی دریافت کردید، لطفاً بررسی کنید که آیا آدرس پروژه شما در ویندوز شامل کاراکترهای خاص، اعراب و یا اسپیس نباشد (مثلاً مانند `C:\Users\User Name\djangogirls`). اگر چنین بود لطفاً از آدرس دیگری برای پروژه استفاده کنید که شامل چنین کاراکترهایی نباشد (مانند `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
 
 <!--endsec-->
 
