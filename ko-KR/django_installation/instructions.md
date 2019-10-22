@@ -157,7 +157,7 @@ You will know that you have `virtualenv` started when you see that the prompt in
 
 자, 이제 필요한 것들이 준비되었어요. 드디어 장고를 설치할 수 있어요!
 
-## Django 설치하기
+## Installing Django {#django}
 
 Now that you have your `virtualenv` started, you can install Django.
 
