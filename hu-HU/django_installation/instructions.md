@@ -157,7 +157,7 @@ Ha virtuális környezetben dolgozol, a `python` parancs mindig a megfelelő Pyt
 
 Oké, most már minden feltétel teljesült. Végre installálhatjuk a Django-t!
 
-## A Django telepítése
+## Installing Django {#django}
 
 Now that you have your `virtualenv` started, you can install Django.
 
