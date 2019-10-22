@@ -191,7 +191,7 @@ Go ahead and name some parts of the HTML code. Add a class called `page-header` 
 </div>
 ```
 
-And now add a class `post` to your `div` containing a blog post.
+And now add a class `post` to your `div` that displays each blog post details.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
