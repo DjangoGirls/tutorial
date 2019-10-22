@@ -121,12 +121,12 @@ data-collapse=true ces-->
 >         The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
 >     
 > 
-> **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
+> **نکته:** برای کاربران ویرایشگر VS Code که همراه خود یک ترمینال مبتنی بر powershell ویندوز دارد، اگر می‌خواهید از این ترمینال استفاده کنید، باید دستور زیر را برای فعال کردن ترمینال اجرا کنید:
 > 
 >     $ . myvenv\Scripts\activate.ps1
 >     
 > 
-> The advantage is that you don't have to switch between editor windows and command-line windows
+> مزیت آن این است که لازم نیست بین پنجره ویرایشگر کد و پنجره خط فرمان جابجا شوید
 
 <!--endsec-->
 
