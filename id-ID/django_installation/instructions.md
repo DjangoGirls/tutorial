@@ -161,7 +161,7 @@ data-collapse=true ces-->
 > > > 
 > > > Oke, kita telah memiliki semua dipendensi penting pada tempatnya. Pada akhirnya kita dapat mengintal django.
 > > > 
-> > > ## Menginstall Django
+> > > ## Installing Django {#django}
 > > > 
 > > > Sekarang setelah ` virtualenv </ 0> dimulai, Anda bisa menginstal Django.</p>
 
