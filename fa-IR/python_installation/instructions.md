@@ -114,7 +114,7 @@ data-collapse=true ces-->
 
 نصحه نمایش داده شده ممکن است با 3.6.1 متفاوت باشد اما باید آن چیزی باشد که در موقع نصب انتخاب کرده اید.
 
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is 3.4.0 or higher. If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
+**نکته:** اگر بر روی ویندوز کار می‌کنید و خطایی مبنی بر پیدا نکردن `python3` دریافت کردید، سعی کنید از `python` (بدون `3`) استفاده کنید. علاوه بر این چک کنید که نسخه پایتون 3.4.0 یا بالاتر باشد. اگر این هم کار نکرد، یک پنجره خط فرمان دیگر باز کنید و دوباره امتحان کنید؛ اگر یک پنجره خط فرمان را قبل از نصب پایتون باز گذاشته باشید، ممکن است چنین خطایی بگیرید.
 
 * * *
 
