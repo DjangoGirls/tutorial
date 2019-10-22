@@ -157,7 +157,7 @@ Kada radite sa virtuelnim okruženjem, `python` automatski referiše na ispravnu
 
 Okej, ispunili smo sve neophodne uslove. Sada konačno možemo da instaliramo Django!
 
-## Instaliranje Django-a
+## Installing Django {#django}
 
 Sada, kada je Vaš `virtualenv` pokrenut, možete da instalirate Django.
 
