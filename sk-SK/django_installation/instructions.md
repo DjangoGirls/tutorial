@@ -157,7 +157,7 @@ Pri práci vo virtuálnom prostredí bude `python` automaticky odkazovať na spr
 
 OK, všetko potrebné máme prichystané. Konečne môžeme nainštalovať Django!
 
-## Inštalácia Djanga
+## Installing Django {#django}
 
 Teraz keď máš `virtualenv` spustené, môžeš nainštalovať Django.
 
