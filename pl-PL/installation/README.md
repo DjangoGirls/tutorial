@@ -23,31 +23,31 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 <!--endsec-->
 
-# Krótkie wprowadzenie do wiersza polecenia
+# Brief intro to the command line {#command-line}
 
 Wiele z poniższych kroków odnosi się do "konsoli", "terminala", "wiersza poleceń" lub "linii poleceń" - wszystkie one oznaczają to samo: okno na komputerze, w którym można wprowadzać polecenia. Gdy dojdziesz do głównego tutoriala, dowiesz się więcej o wierszu polecenia. Na razie najważniejszą rzeczą jaką musisz wiedzieć to to, jak otworzyć okno wiersza polecenia i jak ono wygląda: {% include "/intro_to_command_line/open_instructions.md" %}
 
-# Zainstaluj Pythona
+# Install Python {#python}
 
 {% include "/python_installation/instructions.md" %}
 
-# Zainstaluj edytor kodu
+# Install a code editor {#code-editor}
 
 {% include "/code_editor/instructions.md" %} 
 
-# Utwórz środowisko wirtualne i zainstaluj Django
+# Set up virtualenv and install Django {#virtualenv}
 
 {% include "/django_installation/instructions.md" %}
 
-# Zainstaluj Gita
+# Install Git {#git}
 
 {% include "/deploy/install_git.md" %}
 
-# Utwórz konto na GitHubie
+# Create a GitHub account {#github}
 
 Przejdź do strony [ GitHub.com ](https://www.github.com) i zarejestruj nowe, bezpłatne konto użytkownika. Pamiętaj, aby zapamiętać swoje hasło (dodaj je do swojego menedżera haseł, jeśli go używasz).
 
-# Utwórz konto na PythonAnywhere
+# Create a PythonAnywhere account {#pythonanywhere}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
