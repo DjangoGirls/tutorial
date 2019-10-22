@@ -157,7 +157,7 @@ Kung gumagamit ka ng virtual na environment, si `python` ay awtomatikong magtuko
 
 Sige, mayroon na lahat nang kinakailangan natin. Sa wakas maari na nating i-install ang Django!
 
-## Nag-iinstall ng Django
+## Installing Django {#django}
 
 Ngayon napatakbo mo na ang iyong `virtualenv`, pwede mo nang i-install ang Django.
 
