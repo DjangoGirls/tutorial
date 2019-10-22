@@ -23,31 +23,31 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 <!--endsec-->
 
-# コマンドラインの簡単な紹介
+# Brief intro to the command line {#command-line}
 
 以下の手順の多くは、 "コンソール"、 "ターミナル"、 "コマンドウィンドウ"、または "コマンドライン"を参照しています。これらはすべて同じことを意味します。コンピュータ上のコマンドを入力できるウィンドウです。 メインのチュートリアルに進むと、コマンドラインについてさらに学ぶことができます。 まずは、コマンドウィンドウの開き方と、それがどのように見えるかを覚えましょう： {% include "/intro_to_command_line/open_instructions.md" %} 
 
-# Pythonのインストール
+# Install Python {#python}
 
 {% include "/python_installation/instructions.md" %}
 
-# コードエディタのインストール
+# Install a code editor {#code-editor}
 
 {% include "/code_editor/instructions.md" %}
 
-# 仮想環境のセットアップとDjangoのインストール
+# Set up virtualenv and install Django {#virtualenv}
 
 {% include "/django_installation/instructions.md" %}
 
-# Gitのインストール
+# Install Git {#git}
 
 {% include "/deploy/install_git.md" %}
 
-# GitHubのアカウント作成
+# Create a GitHub account {#github}
 
 [GitHub.com](https://www.github.com)を開いて、新しくフリーのユーザーアカウントを登録しましょう。パスワードを忘れないようにしてください（もしパスワードマネージャーを使っているなら、それに追加しましょう）。
 
-# PythonAnywhereのアカウント作成
+# Create a PythonAnywhere account {#pythonanywhere}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
