@@ -23,31 +23,31 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/configuração
 
 <!--endsec-->
 
-# Breve introdução à linha de comando
+# Brief intro to the command line {#command-line}
 
 Muitos dos passos abaixo, referenciam "console", "terminal", "janela de comando" ou "linha de comando" -- todos significam a mesma coisa: uma janela no teu computador onde podes digitar comandos. When you get to the main tutorial, you'll learn more about the command line. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
 
-# Install Python
+# Install Python {#python}
 
 {% include "/python_installation/instructions.md" %}
 
-# Install a code editor
+# Install a code editor {#code-editor}
 
 {% include "/code_editor/instructions.md" %}
 
-# Set up virtualenv and install Django
+# Set up virtualenv and install Django {#virtualenv}
 
 {% include "/django_installation/instructions.md" %}
 
-# Install Git
+# Install Git {#git}
 
 {% include "/deploy/install_git.md" %}
 
-# Create a GitHub account
+# Create a GitHub account {#github}
 
 Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password (add it to your password manager, if you use one).
 
-# Create a PythonAnywhere account
+# Create a PythonAnywhere account {#pythonanywhere}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
