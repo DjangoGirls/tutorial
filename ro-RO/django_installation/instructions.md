@@ -157,7 +157,7 @@ Atunci când lucrați într-un environment-ul virtual, `python` se va refera aut
 
 OK, avem toate dependenţele importante instalate. Acum putem instala Django!
 
-## Instalarea Django
+## Installing Django {#django}
 
 Acum, când `virtualenv` este pornit, se poate instala Django.
 
