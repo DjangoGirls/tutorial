@@ -23,31 +23,31 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 <!--endsec-->
 
-# Кратко о командной строке
+# Brief intro to the command line {#command-line}
 
 Многие из нижеследующих шагов ссылаются на "консоль", "терминал", "командное окно" или "командная строка" -- это означает то же самое: окно на компьютере, где вы можете ввести команды. Когда вы дойдете до главного руководства, вы узнаете больше о командной строке. Сейчас главное, что необходимо знать - как открыть окно команды и как оно выглядит: {% include "/intro_to_command_line/open_instructions.md" %}
 
-# Установка Python
+# Install Python {#python}
 
 {% include "/python_installation/instructions.md" %}
 
-# Установка редактора кода
+# Install a code editor {#code-editor}
 
 {% include "/code_editor/instructions.md" %}
 
-# Настрока virtualenv и установка Django
+# Set up virtualenv and install Django {#virtualenv}
 
 {% include "/django_installation/instructions.md" %}
 
-# Установка Git
+# Install Git {#git}
 
 {% include "/deploy/install_git.md" %}
 
-# Создание учётной записи на GitHub
+# Create a GitHub account {#github}
 
 Иди на [GitHub.com](https://www.github.com) и зарегистрируй новый бесплатный аккаунт. Убедись, что запомнила свой пароль (добавь его в менеджер паролей, если пользуешься им).
 
-# Создание учётной записи на PythonAnywhere
+# Create a PythonAnywhere account {#pythonanywhere}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
