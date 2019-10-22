@@ -157,7 +157,7 @@ You will know that you have `virtualenv` started when you see that the prompt in
 
 不錯，所有的支援環境設定都到位了，我們終於可以安裝 Django 。
 
-## 安裝 Django
+## Installing Django {#django}
 
 Now that you have your `virtualenv` started, you can install Django.
 
