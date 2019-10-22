@@ -23,31 +23,31 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 <!--endsec-->
 
-# معرفی کوتاه کنسول خط فرمان
+# Brief intro to the command line {#command-line}
 
 بسیاری از مراحل زیر به "کنسول"، "ترمینال"، "پنجره دستورات" یا "خط فرمان" اشاره می‌کنند ـ همه آنها یک معنا دارند: یک پنجره روی کامپیوتر شما که می‌توانید دستوراتی را در آن وارد کنید. زمانی که به آموزش اصلی رسیدید، در مورد خط فرمان بیشتر می‌آموزید. فعلاً، اصلی‌ترین موردی که باید بدانید نحوه باز کردن یک پنجره خط فرمان و شکل ظاهری آن است: {% include "/intro_to_command_line/open_instructions.md" %}
 
-# نصب پایتون
+# Install Python {#python}
 
 {% include "/python_installation/instructions.md" %}
 
-# نصب یک ویرایشگر متنی
+# Install a code editor {#code-editor}
 
 {% include "/code_editor/instructions.md" %}
 
-# نصب محیط مجازی و نصب جنگو
+# Set up virtualenv and install Django {#virtualenv}
 
 {% include "/django_installation/instructions.md" %}
 
-# نصب گیت
+# Install Git {#git}
 
 {% include "/deploy/install_git.md" %}
 
-# ساخت یک حساب کاربری GitHub
+# Create a GitHub account {#github}
 
 به [GitHub.com](https://www.github.com) بروید و برای یک حساب کاربری جدید و رایگان،‌ ثبت نام کنید. از بخاطر سپردن رمز عبور خود اطمینان حاصل کنید (اگر از یک نرم افزار مدیریت رمزهای عبور استفاده میکنید، رمز عبور جدید را به آن اضافه کنید).
 
-# ساخت یک حساب کاربری PythonAnywhere
+# Create a PythonAnywhere account {#pythonanywhere}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
