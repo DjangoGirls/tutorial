@@ -157,7 +157,7 @@ Virtualenv ile çalışırken `python` otomatik olarak doğru sürümü çalış
 
 Artık bütün gerekli uygulamaları bir araya getirdiğimize göre sonunda Django'yu yükleyebiliriz!
 
-## Django'yu yüklemek
+## Installing Django {#django}
 
 `virtualenv`'i çalıştırdığınıza göre, şimdi Django'yu yükleyebilirsiniz.
 
