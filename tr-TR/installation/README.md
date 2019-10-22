@@ -23,31 +23,31 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 <!--endsec-->
 
-# Komut satırına kısa giriş
+# Brief intro to the command line {#command-line}
 
 Aşağıdaki adımların çoğu, "konsol", "terminal", "komut penceresi" veya "komut satırı" na atıfta bulunur - bu terimlerin hepsi aynı anlama gelir: bilgisayarınızda komutları girebileceğiniz bir pencere. Ana kılavuza ulaştığınızda, komut satırı hakkında daha fazla bilgi edinebilirsiniz. Şimdilik, bilmeniz gereken en önemli şey bir komut penceresinin nasıl açılacağı ve nasıl göründüğüdür: {% include "/intro_to_command_line/open_instructions.md" %}
 
-# Python Yükleyin
+# Install Python {#python}
 
 {% include "/python_installation/instructions.md" %}
 
-# Bir kod düzenleyicisi yükleyin
+# Install a code editor {#code-editor}
 
 {% include "/code_editor/instructions.md" %}
 
-# Bir "virtualenv" kurun ve Django'yu yükleyin
+# Set up virtualenv and install Django {#virtualenv}
 
 {% include "/django_installation/instructions.md" %}
 
-# Git yükleyin
+# Install Git {#git}
 
 {% include "/deploy/install_git.md" %}
 
-# GitHub hesabı oluşturun
+# Create a GitHub account {#github}
 
 [GitHub.com](https://www.github.com)'a gidin ve ücretsiz yeni bir kullanıcı hesabı oluşturun. Şifrenizi hatırladığınızdan emin olun (eğer şifrenizi yöneticisi kullanıyorsanız, yöneticinize ekleyin).
 
-# PythonAnywhere hesabı oluşturun
+# Create a PythonAnywhere account {#pythonanywhere}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
