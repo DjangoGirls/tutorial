@@ -157,7 +157,7 @@ When working within a virtual environment, `python` will automatically refer to 
 
 OK, we have all important dependencies in place. We can finally install Django!
 
-## Installing Django
+## Installing Django {#django}
 
 Now that you have your `virtualenv` started, you can install Django.
 
