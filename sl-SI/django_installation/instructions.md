@@ -157,7 +157,7 @@ Ko delaš z virtualnim okoljem, je privzeta različica `pythona` enaka tisti, ki
 
 OK, teren je pripravljen. Končno lahko namestimo Django!
 
-## Namestitev Djanga
+## Installing Django {#django}
 
 Now that you have your `virtualenv` started, you can install Django.
 
