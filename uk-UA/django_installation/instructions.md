@@ -157,7 +157,7 @@ You will know that you have `virtualenv` started when you see that the prompt in
 
 Добре, маємо усі необхідні залежності. Можемо зрештою встановити Django!
 
-## Встановлення Django
+## Installing Django {#django}
 
 Now that you have your `virtualenv` started, you can install Django.
 
