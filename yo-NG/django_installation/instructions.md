@@ -157,7 +157,7 @@ Nígbà tí o bá n ṣiṣẹ́ nínú àyíká àìrí kan, `python` fúnra r�
 
 Ó dáa, a ti ní gbogbo ohun pàtàkì tí a nílò. A lè wá ṣàgbékalẹ̀ Django!
 
-## Ṣíṣe àgbékalẹ̀ Django
+## Installing Django {#django}
 
 Ní báyìí tí o ti bẹ̀rẹ̀ `virtualenv` rẹ, o lè ṣàgbékalẹ̀ Django.
 
