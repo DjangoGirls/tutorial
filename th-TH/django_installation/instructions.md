@@ -157,7 +157,7 @@ data-collapse=true ces-->
 
 โอววเคย์ ในที่สุดตอนนี้เราพร้อมที่ติดตั้ง Django กันแล้ว!
 
-## การติดตั้ง Django
+## Installing Django {#django}
 
 Now that you have your `virtualenv` started, you can install Django.
 
