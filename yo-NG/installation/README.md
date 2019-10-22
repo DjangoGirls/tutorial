@@ -23,31 +23,31 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 <!--endsec-->
 
-# Ìfihàn ní ṣókí sí ìlà ìpàṣẹ náà
+# Brief intro to the command line {#command-line}
 
 Ọ̀pọ̀lọpọ̀ àwọn ìgbésẹ̀ tó wà nísàlẹ̀ tọ́ka sí "console", "èbúté" (terminal), "fèrèsé ìpàṣẹ" (command window), tàbí "ìlà ìpàṣẹ" (command line) -- ohun kannáà ní gbogbo àwọn wọ̀nyí: fèrèsé kan lórí kọ̀mpútà rẹ níbi tí o lè tẹ àwọn àṣẹ sí. Nígbà tí o bá dé àlàyé pàtàkì náà, ìwọ yíò kẹ́kọ̀ọ́ síi nípa ìlà ìpàṣẹ náà. Ní báyìí, ohun pàtàkì tí o nílò láti mọ̀ ní bí o ṣe lè ṣí fèrèsé ìpàṣẹ kan àti bó ṣe rí: {% include "/intro_to_command_line/open_instructions.md" %}
 
-# Ṣàgbékalẹ̀ Python
+# Install Python {#python}
 
 {% include "/python_installation/instructions.md" %}
 
-# Ṣàgbékalẹ̀ olóòtú kóòdù kan
+# Install a code editor {#code-editor}
 
 {% include "/code_editor/instructions.md" %}
 
-# Ṣàgbékalẹ̀ virtualenv àti ṣàgbékalẹ̀ Django
+# Set up virtualenv and install Django {#virtualenv}
 
 {% include "/django_installation/instructions.md" %}
 
-# Ṣàgbékalẹ̀ Git
+# Install Git {#git}
 
 {% include "/deploy/install_git.md" %}
 
-# Ṣẹ̀dá account GitHub kan
+# Create a GitHub account {#github}
 
 Lọ sí [GitHub.com](https://www.github.com) kí o sì forúkọ sílẹ̀ fún account aṣàmúlò ọ̀fẹ́ tuntun kan. Ri dájú láti rántí ọ̀rọ̀ aṣínà rẹ (ṣàfikún rẹ̀ sínú alákòóso ọ̀rọ̀ aṣínà rẹ, tí o bá lo ọ̀kan).
 
-# Ṣẹ̀dá account PythonAnywhere kan
+# Create a PythonAnywhere account {#pythonanywhere}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
