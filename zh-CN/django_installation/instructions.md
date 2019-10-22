@@ -157,7 +157,7 @@ You will know that you have `virtualenv` started when you see that the prompt in
 
 好的现在所有重要的依赖关系已经就位。最后，我们可以安装 Django ！
 
-## 安装 Django
+## Installing Django {#django}
 
 Now that you have your `virtualenv` started, you can install Django.
 
