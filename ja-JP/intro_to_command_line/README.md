@@ -296,7 +296,7 @@ Desktop というディレクトリ名は、使用しているLinuxアカウン�
 
 <!--endsec-->
 
-おめでとうございます！よくできました! :)
+おめでとうございます！よくできました！ :)
 
 * * *
 
@@ -371,7 +371,7 @@ Desktop というディレクトリ名は、使用しているLinuxアカウン�
 
 <!--endsec-->
 
-できました! 本当に削除されたか、確認してみましょう:
+できました！本当に削除されたか、確認してみましょう:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -393,7 +393,7 @@ Desktop というディレクトリ名は、使用しているLinuxアカウン�
 
 ### 終了
 
-ここまでです。それではコマンドラインを終了しましょう。かっこいいやり方で終わりたいですよね? :)
+今回はここまでです。それではコマンドラインを終了しましょう。かっこいいやり方で終了したいですよね? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -438,4 +438,4 @@ Desktop というディレクトリ名は、使用しているLinuxアカウン�
 
 ## 準備OK？
 
-よし、次はPythonを勉強していきましょう!
+よし、次はPythonを勉強していきましょう！
