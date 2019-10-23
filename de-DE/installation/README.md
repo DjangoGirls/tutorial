@@ -23,11 +23,11 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 <!--endsec-->
 
-# Brief intro to the command line {#command-line}
+# Kurze Einführung in die Kommandozeile {#command-line}
 
 Viele der folgenden Schritte beziehen sich auf die "Konsole", das "Terminal", das "Kommandozeilen-Fenster" oder die "Kommandozeile" -- all diese Begriffe bezeichnen dasselbe: Ein Fenster auf deinem Computer, in das du Kommandos eingeben kannst. Im Hauptteil des Tutorials wirst du mehr über die Kommandozeile lernen. Vorerst musst du nur wissen, wie du ein Kommandozeilenfester öffnen kannst und wie eines aussieht: {% include "/intro_to_command_line/open_instructions.md" %}
 
-# Install Python {#python}
+# Python installieren {#python}
 
 {% include "/python_installation/instructions.md" %}
 
@@ -35,19 +35,19 @@ Viele der folgenden Schritte beziehen sich auf die "Konsole", das "Terminal", da
 
 {% include "/code_editor/instructions.md" %}
 
-# Set up virtualenv and install Django {#virtualenv}
+# Virtualenv einrichten und Django installieren {#virtualenv}
 
 {% include "/django_installation/instructions.md" %}
 
-# Install Git {#git}
+# Git installieren {#git}
 
 {% include "/deploy/install_git.md" %}
 
-# Create a GitHub account {#github}
+# Einen GitHub-Account erstellen {#github}
 
 Gehe zu [GitHub.com](https://www.github.com) und registriere dich für ein neues, kostenfreies Benutzerkonto. Achte darauf, dass du dein Passwort nicht vergisst (füge es deinem Passwortmanager hinzu, wenn du einen benutzt).
 
-# Create a PythonAnywhere account {#pythonanywhere}
+# Einen PythonAnywhere-Account erstellen {#pythonanywhere}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
