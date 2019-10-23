@@ -157,7 +157,7 @@ In deiner neuen virtuellen Umgebung wird automatisch die richtige Version von `p
 
 Ok, jetzt ist die erforderliche Umgebung startklar und wir können endlich Django installieren!
 
-## Installing Django {#django}
+## Django-Installation {#django}
 
 Da du nun dein `virtualenv` gestartet hast, kannst du Django installieren.
 
