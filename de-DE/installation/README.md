@@ -31,7 +31,7 @@ Viele der folgenden Schritte beziehen sich auf die "Konsole", das "Terminal", da
 
 {% include "/python_installation/instructions.md" %}
 
-# Install a code editor {#code-editor}
+# Einen Code-Editor installieren {#code-editor}
 
 {% include "/code_editor/instructions.md" %}
 
