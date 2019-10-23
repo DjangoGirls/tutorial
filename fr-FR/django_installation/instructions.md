@@ -157,7 +157,7 @@ Quand vous travaillez dans un environnement virtuel, la commande `python` fera a
 
 Ok, nous avons installé toutes les dépendances dont nous avions besoin. Nous allons enfin pouvoir installer Django !
 
-## Installing Django {#django}
+## Installation de Django {#django}
 
 Maintenant que vous avez activé votre `virtualenv`, vous pouvez installer Django.
 
