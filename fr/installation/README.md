@@ -23,31 +23,31 @@ data-id="chromebook_setup" data-collapse=true ces-->
 {% include "/chromebook_setup/instructions.md" %}
 <!--endsec-->
 
-# Brève introduction à la ligne de commande
+# Brève introduction à la ligne de commande {#command-line}
 
 Dans les étapes ci-dessous vous allez rencontrer les noms « console », « terminal », « invite de commande » ou « ligne de commande ». Tous ces termes signifient la même chose : une fenêtre sur votre ordinateur où vous pouvez rentrer des commandes. Une fois que vous aurez démarré le tutoriel principal, vous apprendrez plus sur la ligne de commande. Pour l’instant, le plus important est que vous appreniez à ouvrir un terminal et que vous voyez à quoi cela ressemble : {% include "/intro_to_command_line/open_instructions.md" %}
 
-# Installer Python
+# Installer Python {#python}
 
 {% include "/python_installation/instructions.md" %}
 
-# Installer un éditeur de code
+# Installer un éditeur de code {#code-editor}
 
 {% include "/code_editor/instructions.md" %}
 
-# Mettre en place virtualenv et installer Django
+# Mettre en place virtualenv et installer Django {#virtualenv}
 
 {% include "/django_installation/instructions.md" %}
 
-# Installer Git
+# Installer Git {#git}
 
 {% include "/deploy/install_git.md" %}
 
-# Créer un compte GitHub
+# Créer un compte GitHub {#github}
 
 Allez sur [GitHub.com](https://www.github.com) et créez un compte d’utilisateur gratuitement. N’oubliez pas votre mot de passe (ajoutez-le à votre gestionnaire de mots de passe, si vous utilisez un).
 
-# Créer un compte PythonAnywhere
+# Créer un compte PythonAnywhere {#pythonanywhere}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
