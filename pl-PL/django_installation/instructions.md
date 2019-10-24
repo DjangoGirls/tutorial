@@ -120,7 +120,9 @@ Uruchom wirtualne środowisko za pomocą polecenia:
 >         Execution Policy Change
 >         The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
 >     
-> 
+
+<!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
+
 > **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
 > 
 >     $ . myvenv\Scripts\activate.ps1
@@ -133,16 +135,16 @@ Uruchom wirtualne środowisko za pomocą polecenia:
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-Uruchom wirtualne środowisko za pomocą polecenia:
+Start your virtual environment by running:
 
 {% filename %}command-line{% endfilename %}
 
     $ source myvenv/bin/activate
     
 
-Nie zapomnij zastąpić `myvenv` nazwą, którą wybrałaś dla Twojego `virtualenv`!
+Remember to replace `myvenv` with your chosen `virtualenv` name!
 
-> **UWAGA:** może się zdarzyć, że polecenie `source` nie będzie dostępne. W takim przypadku spróbuj użyć poniższego:
+> **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -151,17 +153,17 @@ Nie zapomnij zastąpić `myvenv` nazwą, którą wybrałaś dla Twojego `virtual
 
 <!--endsec-->
 
-O tym, że Twój `virtualenv` jest uruchomiony, dowiesz się, gdy zobaczysz w swojej konsoli prompt poprzedzony przedrostkiem `(myvenv)`.
+You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
 
-W trakcie pracy ze środowiskiem wirtualnym `python` będzie automatycznie odnosił się do właściwej wersji, dzięki czemu możesz używać polecenia `python` zamiast `python3`.
+When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
 
-Świetnie, wszystkie potrzebne elementy są już gotowe. Nareszcie możemy zainstalować Django!
+OK, we have all important dependencies in place. We can finally install Django!
 
 ## Installing Django {#django}
 
-Teraz, gdy Twój `virtualenv` jest już uruchomiony, możesz zainstalować Django.
+Now that you have your `virtualenv` started, you can install Django.
 
-Zanim jednak to zrobimy, powinniśmy się upewnić, że mamy najnowszą wersję `pip`, oprogramowania, które używamy do zainstalowania Django:
+Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
 
 {% filename %}command-line{% endfilename %}
 
@@ -170,24 +172,24 @@ Zanim jednak to zrobimy, powinniśmy się upewnić, że mamy najnowszą wersję 
 
 ### Instalacja pakietów z pliku wymagań
 
-Plik wymagań zawiera listę zależności, które zainstalujemy za pomocą polecenia `pip install`:
+A requirements file keeps a list of dependencies to be installed using `pip install`:
 
-Najpierw stwórz plik `requirements.txt` wewnątrz katalogu `djangogirls/` używając edytora kodu, który wcześniej zainstalowałaś. Aby to zrobić, otwórz nowy plik w edytorze kodu, a następnie zapisz go jako ` requirements.txt ` w folderze ` djangogirls / </ 0>. Twój katalog będzie wyglądał następująco:</p>
+First create a `requirements.txt` file inside of the `djangogirls/` folder, using the code editor that you installed earlier. You do this by opening a new file in the code editor and then saving it as `requirements.txt` in the `djangogirls/` folder. Your directory will look like this:
 
-<pre><code>djangogirls
-├── myvenv
-│   └── ...
-└───requirements.txt
-`</pre> 
+    djangogirls
+    ├── myvenv
+    │   └── ...
+    └───requirements.txt
+    
 
-W swoim pliku `djangogirls/requirements.txt` powinnaś dodać następujący tekst:
+In your `djangogirls/requirements.txt` file you should add the following text:
 
 {% filename %}djangogirls/requirements.txt{% endfilename %}
 
     Django~={{ book.django_version }}
     
 
-Teraz możesz uruchomić `pip install -r requirements.txt`, aby zainstalować Django.
+Now, run `pip install -r requirements.txt` to install Django.
 
 {% filename %}command-line{% endfilename %}
 
@@ -224,4 +226,4 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-To wszystko! Teraz (nareszcie) jesteś gotowa do stworzenia aplikacji w Django!
+That's it! You're now (finally) ready to create a Django application!
