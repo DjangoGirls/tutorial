@@ -120,7 +120,9 @@ Pokrenite Vaše virtuelno okruženje komandom:
 >         Execution Policy Change
 >         The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
 >     
-> 
+
+<!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
+
 > **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
 > 
 >     $ . myvenv\Scripts\activate.ps1
@@ -133,16 +135,16 @@ Pokrenite Vaše virtuelno okruženje komandom:
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-Pokrenite Vaše virtuelno okruženje komandom:
+Start your virtual environment by running:
 
 {% filename %}command-line{% endfilename %}
 
     $ source myvenv/bin/activate
     
 
-Ne zaboravite da zamenite `myvenv` imenom koje ste odabrali za Vaš `virtualenv`.
+Remember to replace `myvenv` with your chosen `virtualenv` name!
 
-> **NAPOMENA:** ponekad `source` nije dostupan. U tom slučaju, pokušajte sledeće:
+> **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -151,17 +153,17 @@ Ne zaboravite da zamenite `myvenv` imenom koje ste odabrali za Vaš `virtualenv`
 
 <!--endsec-->
 
-Znaćete da je `virtualenv` pokrenut kada vidite da `(myvenv)` prethodi mestu za unos na konzoli.
+You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
 
-Kada radite sa virtuelnim okruženjem, `python` automatski referiše na ispravnu verziju, tako da možete da koristite `python` umesto `python3`.
+When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
 
-Okej, ispunili smo sve neophodne uslove. Sada konačno možemo da instaliramo Django!
+OK, we have all important dependencies in place. We can finally install Django!
 
 ## Installing Django {#django}
 
-Sada, kada je Vaš `virtualenv` pokrenut, možete da instalirate Django.
+Now that you have your `virtualenv` started, you can install Django.
 
-Pre nego što to uradite, trebalo bi da budete sigurni da imate najnoviju verziju `pip-a`, softvera koji koristimo da instaliramo Django:
+Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
 
 {% filename %}command-line{% endfilename %}
 
@@ -170,9 +172,9 @@ Pre nego što to uradite, trebalo bi da budete sigurni da imate najnoviju verzij
 
 ### Instaliranje paketa i neophodnih stavki
 
-Fajl sa neophodnim stavkama sadrži listu stvari koje bi trebalo da budu instalirane, koristeći `pip install`:
+A requirements file keeps a list of dependencies to be installed using `pip install`:
 
-Prvo kreirajte fajl `requirements.txt` unutar foldera `djangogirls/`, koristeći editor koji je već instaliran. To možete da uradite tako što otvorite novi fajl u editoru i zatim ga sačuvate kao `requirements.txt` u `djangogirls/` folderu. Vaš direktorijum bi sada trebalo da izgleda ovako:
+First create a `requirements.txt` file inside of the `djangogirls/` folder, using the code editor that you installed earlier. You do this by opening a new file in the code editor and then saving it as `requirements.txt` in the `djangogirls/` folder. Your directory will look like this:
 
     djangogirls
     ├── myvenv
@@ -180,14 +182,14 @@ Prvo kreirajte fajl `requirements.txt` unutar foldera `djangogirls/`, koristeći
     └───requirements.txt
     
 
-U Vašem `djangogirls/requirements.txt` fajlu bi trebalo da dodate sledeći tekst:
+In your `djangogirls/requirements.txt` file you should add the following text:
 
 {% filename %}djangogirls/requirements.txt{% endfilename %}
 
     Django~={{ book.django_version }}
     
 
-Zatim pokrenite `pip install -r requirements.txt` da biste instalirali Django.
+Now, run `pip install -r requirements.txt` to install Django.
 
 {% filename %}command-line{% endfilename %}
 
@@ -224,4 +226,4 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-To je sve! Sada ste konačno spremni da kreirate Django aplikaciju!
+That's it! You're now (finally) ready to create a Django application!
