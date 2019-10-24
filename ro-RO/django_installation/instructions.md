@@ -120,7 +120,9 @@ Porniţi environment-ul virtual prin executarea:
 >         Execution Policy Change
 >         The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
 >     
-> 
+
+<!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
+
 > **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
 > 
 >     $ . myvenv\Scripts\activate.ps1
@@ -133,16 +135,16 @@ Porniţi environment-ul virtual prin executarea:
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-Porniți environment-ul virtual prin executarea:
+Start your virtual environment by running:
 
 {% filename %}command-line{% endfilename %}
 
     $ source myvenv/bin/activate
     
 
-Nu uitați să înlocuiţi `myvenv` cu numele `virtualenv`-ului ales!
+Remember to replace `myvenv` with your chosen `virtualenv` name!
 
-> **Notă:** uneori `sursă` poate să nu fie disponibilă. În acest caz încercaţi să executați comandă repectivă:
+> **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -151,17 +153,17 @@ Nu uitați să înlocuiţi `myvenv` cu numele `virtualenv`-ului ales!
 
 <!--endsec-->
 
-O să aflați că `virtualenv` s-a pornit când veți vedea că prompt-ul în linie de comandă este prefixat cu `(myvenv)`.
+You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
 
-Atunci când lucrați într-un environment-ul virtual, `python` se va refera automat la versiunea corectă astfel încât puteţi utiliza `python` în loc de `python3`.
+When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
 
-OK, avem toate dependenţele importante instalate. Acum putem instala Django!
+OK, we have all important dependencies in place. We can finally install Django!
 
 ## Installing Django {#django}
 
-Acum, când `virtualenv` este pornit, se poate instala Django.
+Now that you have your `virtualenv` started, you can install Django.
 
-Înainte de a face acest lucru, trebuie să ne asigurăm că cea mai recentă versiune de `pip` este instalată, software-ul pe care o folosim pentru a instala Django:
+Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
 
 {% filename %}command-line{% endfilename %}
 
@@ -170,9 +172,9 @@ Acum, când `virtualenv` este pornit, se poate instala Django.
 
 ### Instalarea pachetelor cu requirements
 
-Un requirements-fişier este o listă a dependenţelor care trebuie să fie instalate folosind `pip install`:
+A requirements file keeps a list of dependencies to be installed using `pip install`:
 
-Mai întâi, creaţi un fişier `requirements.txt` în directoriu `djangogirls/`, utilizând editorul de cod pe care aţi instalat mai devreme. Faceţi acest lucru deschizând un fişier nou în editorul de cod şi apoi salvați-l ca `requirements.txt` în directoriu `djangogirls/`. Structura directoriu-lui va fi următoare:
+First create a `requirements.txt` file inside of the `djangogirls/` folder, using the code editor that you installed earlier. You do this by opening a new file in the code editor and then saving it as `requirements.txt` in the `djangogirls/` folder. Your directory will look like this:
 
     djangogirls
     ├── myvenv
@@ -180,14 +182,14 @@ Mai întâi, creaţi un fişier `requirements.txt` în directoriu `djangogirls/`
     └───requirements.txt
     
 
-Adăugați textul următor în fișier-ul `djangogirls/requirements.txt`:
+In your `djangogirls/requirements.txt` file you should add the following text:
 
 {% filename %}djangogirls/requirements.txt{% endfilename %}
 
     Django~={{ book.django_version }}
     
 
-Acum executați `pip install -r requirements.txt` pentru a instala Django.
+Now, run `pip install -r requirements.txt` to install Django.
 
 {% filename %}command-line{% endfilename %}
 
@@ -224,4 +226,4 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-Asta e! Acum sunteți (în sfîrșit) gată pentru a crea o aplicație Django!
+That's it! You're now (finally) ready to create a Django application!
