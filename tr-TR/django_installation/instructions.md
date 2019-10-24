@@ -153,19 +153,19 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
+Konsolunuzda komut isteminizin başında `(myvenv)` gördüğünüzde `virtualenv`'in çalıştığını anlayabilirsiniz.
 
-When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
+Virtualenv ile çalışırken `python` otomatik olarak doğru sürümü çalıştıracaktır. Yani `python3` yerine `python` yazabilirsiniz.
 
-OK, we have all important dependencies in place. We can finally install Django!
+Artık bütün gerekli uygulamaları bir araya getirdiğimize göre sonunda Django'yu yükleyebiliriz!
 
-## Installing Django {#django}
+## Django'yu yüklemek {#django}
 
-Now that you have your `virtualenv` started, you can install Django.
+`virtualenv`'i çalıştırdığınıza göre, şimdi Django'yu yükleyebilirsiniz.
 
-Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
+Bunu yapmadan önce, bilgisayarımızın, Django yüklemek için kullanacağımız yazılım olan `pip`'in en son versiyonuna sahip olduğundan emin olmalıyız:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut-satırı{% endfilename %}
 
     (myvenv) ~$ python -m pip install --upgrade pip
     
