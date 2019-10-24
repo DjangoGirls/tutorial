@@ -123,54 +123,56 @@ data-collapse=true ces-->
 <pre><code>C: \ WINDOWS \ system32 & gt; Set-ExecutionPolicy -ExecutionPolicy     Perubahan Kebijakan Eksekusi RemoteSigned
  Kebijakan
      eksekusi membantu melindungi Anda dari skrip yang tidak Anda percaya. Mengubah kebijakan eksekusi mungkin akan memaparkan risiko keamanan yang dijelaskan di topik bantuan about_Execution_Policies di http://go.microsoft.com/fwlink/?LinkID=135170. Apakah Anda ingin mengubah kebijakan eksekusi? [Y] Ya   [A] Ya untuk Semua   [N] Tidak   [L] Tidak untuk Semua   [S] Suspend [?] Help (defaultnya adalah "N"): A
-`</pre> 
+`</pre> </blockquote> 
 > > > 
-> > > **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
+> > > <!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
 > > > 
-> > >     $ . myvenv\Scripts\activate.ps1
-> > >     
-> > > 
-> > > The advantage is that you don't have to switch between editor windows and command-line windows</blockquote> 
+> > > > **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
+> > > > 
+> > > >     $ . myvenv\Scripts\activate.ps1
+> > > >     
+> > > > 
+> > > > The advantage is that you don't have to switch between editor windows and command-line windows
 > > > 
 > > > <!--endsec-->
 > > > 
 > > > <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 > > > 
-> > > Aktifkan virtual environment anda dengan menjalankan:
+> > > Start your virtual environment by running:
 > > > 
-> > > {% filename%} baris perintah {% endfilename%}
+> > > {% filename %}command-line{% endfilename %}
 > > > 
 > > >     $ source myvenv / bin / aktifkan
 > > >     
 > > > 
-> > > Ingat untuk mengganti `myvenv` dengan nama pilihan anda `virtualenv` name!
+> > > Remember to replace `myvenv` with your chosen `virtualenv` name!
 > > > 
-> > > > **CATATAN:** kadang-kadang `source` tidak tersedia. Kalau anda menghadapi masalah tersebut coba ini:
+> > > > **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
 > > > > 
-> > > > {% filename%} baris perintah {% endfilename%}
+> > > > {% filename %}command-line{% endfilename %}
 > > > > 
-> > > >     $. myvenv / bin / aktifkan
+> > > >     $ . myvenv/bin/activate
 > > > >     
 > > > 
 > > > <!--endsec-->
 > > > 
-> > > Anda akan tahu bahwa Anda memiliki ` virtualenv </ 0> dimulai saat Anda melihat bahwa prompt di konsol Anda diawali dengan <code> (myvenv) </ 0> .</p>
-
-<p>Ketika anda bekerja dalam sebuah virtual environment, <code>python` akan otomatis mengacu pada versi yang benar sehingga anda dapat menggunakan perintah `python` bukannya `python3`.
+> > > You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
 > > > 
-> > > Oke, kita telah memiliki semua dipendensi penting pada tempatnya. Pada akhirnya kita dapat mengintal django.
+> > > When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
+> > > 
+> > > OK, we have all important dependencies in place. We can finally install Django!
 > > > 
 > > > ## Installing Django {#django}
 > > > 
-> > > Sekarang setelah ` virtualenv </ 0> dimulai, Anda bisa menginstal Django.</p>
-
-<p>Sebelum kita melakukan itu, kita harus memastikan bahwa kita memiliki versi terbaru <code> pip </ 0> , perangkat lunak yang kita gunakan untuk menginstal Django:</p>
-
-<p>{% filename%} baris perintah {% endfilename%}</p>
-
-<pre><code>(myvenv) ~$ python -m pip install --upgrade pip
-`</pre> 
+> > > Now that you have your `virtualenv` started, you can install Django.
+> > > 
+> > > Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
+> > > 
+> > > {% filename %}command-line{% endfilename %}
+> > > 
+> > >     (myvenv) ~$ python -m pip install --upgrade pip
+> > >     
 > > > 
 > > > ### Installing packages with requirements
 > > > 
