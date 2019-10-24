@@ -120,59 +120,61 @@ data-collapse=true ces-->
 >         Execution Policy Change
 >         The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
 >     
-> 
-> **نکته:** برای کاربران ویرایشگر VS Code که همراه خود یک ترمینال مبتنی بر powershell ویندوز دارد، اگر می‌خواهید از این ترمینال استفاده کنید، باید دستور زیر را برای فعال کردن ترمینال اجرا کنید:
+
+<!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
+
+> **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
 > 
 >     $ . myvenv\Scripts\activate.ps1
 >     
 > 
-> مزیت آن این است که لازم نیست بین پنجره ویرایشگر کد و پنجره خط فرمان جابجا شوید
+> The advantage is that you don't have to switch between editor windows and command-line windows
 
 <!--endsec-->
 
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-محیط مجازی را با دستور زیر فعال کنید:
+Start your virtual environment by running:
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ source myvenv/bin/activate
     
 
-به یاد داشته باشید که `myvenv` را با نامی که برای `محیط مجازی` خود انتخاب کرده‌اید عوض کنید!
+Remember to replace `myvenv` with your chosen `virtualenv` name!
 
-> **نکته: ** گاهی اوقات ممکن است دستور `source` در دسترس نباشد. در این مواقع دستور زیر را امتحان کنید:
+> **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
 > 
-> {% filename %}خط فرمان{% endfilename %}
+> {% filename %}command-line{% endfilename %}
 > 
 >     $ . myvenv/bin/activate
 >     
 
 <!--endsec-->
 
-هنگامی که پیشوند `(myvenv)` در کنسول خط فرمان اضافه شود به معنی آن است که `محیط مجازی` شما فعال شده است.
+You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
 
-وقتی درون یک محیط مجازی کار می‌کنید کلمه `python` به صورت اتوماتیک به نسخه صحیح پایتون ارجاع می‌دهد در نتیجه می‌توانید به جای `python3` از `python` استفاده کنید.
+When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
 
-بسیار خوب، ما همه نیازمندی‌ها را داریم حالا می‌توانیم جنگو را نصب کنیم!
+OK, we have all important dependencies in place. We can finally install Django!
 
 ## نصب جنگو {#django}
 
-حالا که `محیط مجازی` شما فعال شده است می‌توانید جنگو را نصب کنید.
+Now that you have your `virtualenv` started, you can install Django.
 
-قبل از آن باید مطمئن شویم که آخرین نسخه `pip` که برای نصب جنگو استفاده می‌شود را داریم:
+Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     (myvenv) ~$ python -m pip install --upgrade pip
     
 
 ### نصب پکیج‌ها و پیش‌نیازهایشان
 
-یک فایل پیش‌نیازها شامل لیستی از پکیج‌های وابسته است که باید به کمک `pip install` نصب شوند:
+A requirements file keeps a list of dependencies to be installed using `pip install`:
 
-در ابتدا یک فایل `requirements.txt` در پوشه `djangogirls/` بسازید. معمولاً می‌توانید از خود ویرایشگر کد که قبل‌تر نصب کرده‌اید هم برای ساختن فایل جدید استفاده کنید. یک فایل جدید در ویرایشگر کد بسازید و سپس به نام `requirements.txt`در پوشه `djangogirls/` ذخیره‌اش کنید. پوشه شما شبیه این خواهد بود:
+First create a `requirements.txt` file inside of the `djangogirls/` folder, using the code editor that you installed earlier. You do this by opening a new file in the code editor and then saving it as `requirements.txt` in the `djangogirls/` folder. Your directory will look like this:
 
     djangogirls
     ├── myvenv
@@ -180,16 +182,16 @@ data-collapse=true ces-->
     └───requirements.txt
     
 
-در فایل `djangogirls/requirements.txt` باید خط زیر را اضافه کنید:
+In your `djangogirls/requirements.txt` file you should add the following text:
 
 {% filename %}djangogirls/requirements.txt{% endfilename %}
 
     Django~={{ book.django_version }}
     
 
-حالا دستور `pip install -r requirements.txt` را اجرا کنید تا جنگو نصب شود.
+Now, run `pip install -r requirements.txt` to install Django.
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     (myvenv) ~$ pip install -r requirements.txt
     Collecting Django~={{ book.django_version }} (from -r requirements.txt (line 1))
@@ -201,16 +203,16 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> اگر هنگام فراخوانی pip در ویندوز خطایی دریافت کردید، لطفاً بررسی کنید که آیا آدرس پروژه شما در ویندوز شامل کاراکترهای خاص، اعراب و یا اسپیس نباشد (مثلاً مانند `C:\Users\User Name\djangogirls`). اگر چنین بود لطفاً از آدرس دیگری برای پروژه استفاده کنید که شامل چنین کاراکترهایی نباشد (مانند `C:\djangogirls`). یک محیط مجازی جدید در یک دایرکتوری جدید درست کنید، سپس محیط مجازی قبلی را پاک کنید و دوباره دستور بالا را امتحان کنید. (جابجا کردن دایرکتوری محیط مجازی فایده‌ای ندارد چرا که محیط مجازی از آدرس مطلق یا absolute path استفاده می‌کند.)
+> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
 
 <!--endsec-->
 
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> ممکن است خط فرمان شما هنگام تلاش برای نصب جنگو، ثابت و غیرفعال شود. اگر چنین اتفاقی افتاد به جای دستور بالا، از دستور زیر استفاده کنید:
+> Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
 > 
-> {% filename %}خط فرمان{% endfilename %}
+> {% filename %}command-line{% endfilename %}
 > 
 >     C:\Users\Name\djangogirls> python -m pip install -r requirements.txt
 >     
@@ -220,8 +222,8 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> اگر هنگام اجرای دستور pip بر روی اوبونتو نسخه 12.04 پیغام خطا گرفتید از دستور `python -m pip install -U --force-reinstall pip` برای اصلاح پکیج pip در محیط مجازی استفاده کنید.
+> If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
 
 <!--endsec-->
 
-عالی! بالاخره در نهایت آماده شدید تا یک برنامه جنگو بسازید!
+That's it! You're now (finally) ready to create a Django application!
