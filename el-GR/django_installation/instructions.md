@@ -120,7 +120,9 @@ data-collapse=true ces-->
 >         Execution Policy Change
 >         The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
 >     
-> 
+
+<!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
+
 > **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
 > 
 >     $ . myvenv\Scripts\activate.ps1
@@ -133,16 +135,16 @@ data-collapse=true ces-->
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-Ξεκινήστε το εικονικό σας περιβάλλον εκτελώντας:
+Start your virtual environment by running:
 
 {% filename %}command-line{% endfilename %}
 
     $ source myvenv/bin/activate
     
 
-Θυμηθείτε να αντικαταστήσετε το `myvenv` με το επιλεγμένο `virtualenv` όνομα που επιλέξατε!
+Remember to replace `myvenv` with your chosen `virtualenv` name!
 
-> **ΣΗΜΕΙΩΣΗ:** μερικές φορές `πηγή` μπορεί να μην είναι διαθέσιμη. Σε αυτές τις περιπτώσεις προσπαθήστε να κάνετε αυτό:
+> **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -151,17 +153,17 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-Θα ξέρετε ότι είστε μέσα σε ένα `virtualenv` όταν δείτε την γραμμή εντολών στην κονσόλα σας να είναι συμπληρωμένη με το όνομα του μέσα σε παρένθεση, πχ `(myvenv)`.
+You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
 
-Όταν δουλεύετε μέσα σε ένα εικονικό περιβάλλον, η εντολή `python` θα αναφέρετε αυτόματα στην σωστή έκδοση ώστε να μπορείτε να χρησιμοποιήσετε την εντολή `python` αντί για `python3`.
+When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
 
-Εντάξει, μέχρι τώρα έχουμε τακτοποιήσει το περιβάλλον εργασίας μας. Μπορούμε επιτέλους να εγκαταστήσουμε το Django!
+OK, we have all important dependencies in place. We can finally install Django!
 
 ## Installing Django {#django}
 
-Τώρα που είστε μέσα στο `virtualenv`, μπορείτε να εγκαταστήσετε το Django.
+Now that you have your `virtualenv` started, you can install Django.
 
-Πριν κάνουμε αυτό, πρέπει να σιγουρευτούμε ότι έχουμε την τελευταία έκδοση του `pip`, το εργαλείο που χρησιμοποιούμε για να εγκαταστήσουμε το Django (και οποιοδήποτε άλλο Python πακέτο όπως θα δούμε αργότερα):
+Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
 
 {% filename %}command-line{% endfilename %}
 
@@ -170,9 +172,9 @@ data-collapse=true ces-->
 
 ### Εγκατάσταση πακέτων με τα requirements
 
-Το αρχείο requirements είναι μια λίστα από dependencies (δυστυχώς, πάλι, δεν υπάρχει αντίστοιχος ελληνικός όρος αλλά φανταστείτε το ως τις "απαιτήσεις" της εφαρμογής σας - απαιτήσεις όχι σε μνήμη, σκληρό δίσκο κλπ αλλά σε άλλα προγράμματα) προς εγκατάσταση χρησιμοποιώντας την εντολή `pip install`:
+A requirements file keeps a list of dependencies to be installed using `pip install`:
 
-Δημιουργήστε πρώτα ένα αρχείο `requirements.txt` μέσα στο φάκελο `djangogirls /` χρησιμοποιώντας το πρόγραμμα επεξεργασίας κώδικα που εγκαταστήσατε νωρίτερα. Μπορείτε να το κάνετε αυτό, ανοίγοντας ένα νέο αρχείο στο πρόγραμμα επεξεργασίας κώδικα και στη συνέχεια αποθηκεύοντάς το ως `requirements.txt` στο φάκελο `djangogirls /`. Ο φάκελός σας θα μοιάζει κάπως έτσι:
+First create a `requirements.txt` file inside of the `djangogirls/` folder, using the code editor that you installed earlier. You do this by opening a new file in the code editor and then saving it as `requirements.txt` in the `djangogirls/` folder. Your directory will look like this:
 
     djangogirls
     ├── myvenv
@@ -180,14 +182,14 @@ data-collapse=true ces-->
     └───requirements.txt
     
 
-Στο αρχείο `djangogirls/requirements.txt` θα πρέπει να προσθέσετε τα ακόλουθα:
+In your `djangogirls/requirements.txt` file you should add the following text:
 
 {% filename %}djangogirls/requirements.txt{% endfilename %}
 
     Django~={{ book.django_version }}
     
 
-Τώρα τρέξτε `pip install -r requirements.txt` για να ξεκινήσει η εγκατάσταση του Django.
+Now, run `pip install -r requirements.txt` to install Django.
 
 {% filename %}command-line{% endfilename %}
 
@@ -224,4 +226,4 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-Αυτό ήταν! Είστε (επιτέλους) έτοιμοι να δημιουργήσετε μια Django εφαρμογή!
+That's it! You're now (finally) ready to create a Django application!
