@@ -174,7 +174,7 @@ Bunu yapmadan önce, bilgisayarımızın, Django yüklemek için kullanacağım�
 
 Requirements dosyası `pip install` ile yüklenmesi gereken paketlerin listesini tutar:
 
-Önceden indirdiğimiz editör kullanarak `djangogirls/` klasoru icinde `requirements.txt` dosyasini olusturalim. Bunu kod editöründe yeni bir dosya açıp, sonra `requirements.txt` olarak `djangogirls/` klasöründe kaydederek yapın. Your directory will look like this:
+Önceden indirdiğimiz editör kullanarak `djangogirls/` klasoru icinde `requirements.txt` dosyasini olusturalim. Bunu kod editöründe yeni bir dosya açıp, sonra `requirements.txt` olarak `djangogirls/` klasöründe kaydederek yapın. Klasorlerin boyle gozukmesi gerek:
 
     djangogirls
     ├── myvenv
@@ -182,16 +182,16 @@ Requirements dosyası `pip install` ile yüklenmesi gereken paketlerin listesini
     └───requirements.txt
     
 
-In your `djangogirls/requirements.txt` file you should add the following text:
+`djangogirls/requirements.txt` dosyanıza şu kodu eklemelisiniz:
 
 {% filename %}djangogirls/requirements.txt{% endfilename %}
 
     Django~={{ book.django_version }}
     
 
-Now, run `pip install -r requirements.txt` to install Django.
+Simdi, Django kurmak için `pip install -r requirements.txt` komutunu çalıstırın.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut-satırı{% endfilename %}
 
     (myvenv) ~$ pip install -r requirements.txt
     Collecting Django~={{ book.django_version }} (from -r requirements.txt (line 1))
@@ -203,7 +203,7 @@ Now, run `pip install -r requirements.txt` to install Django.
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
+> Eğer Windows'ta pip komutunu kullanırken bir hata aldıysanız, lütfen proje isminin boşluk veya özel karakter içerip içermediğini kontrol edin (örneğin `C:\Users\User Name\djangogirls`). Eğer böyleyse, lütfen boşluksuz veya özel karaktersiz bir yer kullanmayı düşünün (öneri: `C:\djangogirls`). Yeni dizinde yeni bir virtualenv oluşturun, sonra eskisini silin ve yukarıdaki komutu tekrar deneyin. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
 
 <!--endsec-->
 
