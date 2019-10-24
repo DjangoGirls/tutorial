@@ -120,7 +120,9 @@ Spusť virtuální prostředí:
 >         Execution Policy Change
 >         The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
 >     
-> 
+
+<!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
+
 > **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
 > 
 >     $ . myvenv\Scripts\activate.ps1
@@ -133,16 +135,16 @@ Spusť virtuální prostředí:
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-Spusť virtuální prostředí:
+Start your virtual environment by running:
 
 {% filename %}command-line{% endfilename %}
 
     $ source myvenv/bin/activate
     
 
-Nezapomeň nahradit `myvenv` tvým zvoleným jménem `virtualenv`!
+Remember to replace `myvenv` with your chosen `virtualenv` name!
 
-> **Poznámka:** někdy příkaz `source` nemusí být k dispozici. V těchto případech, zkus raději:
+> **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -153,9 +155,9 @@ Nezapomeň nahradit `myvenv` tvým zvoleným jménem `virtualenv`!
 
 You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
 
-Pracuješ-li ve virtuálním prostředí, `python` bude automaticky odkazovat na správnou verzi, takže můžeš použít `python` místo `python3`.
+When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
 
-OK máme všechny důležité závislosti na místě a konečně můžeme nainstalovat Django!
+OK, we have all important dependencies in place. We can finally install Django!
 
 ## Installing Django {#django}
 
