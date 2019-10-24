@@ -203,18 +203,18 @@ Simdi, Django kurmak için `pip install -r requirements.txt` komutunu çalıstı
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> Eğer Windows'ta pip komutunu kullanırken bir hata aldıysanız, lütfen proje isminin boşluk veya özel karakter içerip içermediğini kontrol edin (örneğin `C:\Users\User Name\djangogirls`). Eğer böyleyse, lütfen boşluksuz veya özel karaktersiz bir yer kullanmayı düşünün (öneri: `C:\djangogirls`). Yeni dizinde yeni bir virtualenv oluşturun, sonra eskisini silin ve yukarıdaki komutu tekrar deneyin. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
+> Eğer Windows'ta pip komutunu kullanırken bir hata aldıysanız, lütfen proje isminin boşluk veya özel karakter içerip içermediğini kontrol edin (örneğin `C:\Users\User Name\djangogirls`). Eğer böyleyse, lütfen boşluksuz veya özel karaktersiz bir yer kullanmayı düşünün (öneri: `C:\djangogirls`). Yeni dizinde yeni bir virtualenv oluşturun, sonra eskisini silin ve yukarıdaki komutu tekrar deneyin. (virtualenv dizinini taşımak işe yaramayacaktır çünkü virtualenv <0>absolute path</0> kullanır.)
 
 <!--endsec-->
 
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
+> Django kurmaya çalışırken komut satırınız donabilir. Bu durumda, yukarıdaki komut yerine şu komutu kullanın:
 > 
-> {% filename %}command-line{% endfilename %}
+> {% filename %}komut-satırı{% endfilename %}
 > 
->     C:\Users\Name\djangogirls> python -m pip install -r requirements.txt
+>     C:\Kullanici\Isim\djangogirls> python -m pip install -r requirements.txt
 >     
 
 <!--endsec-->
@@ -222,8 +222,8 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
+> Eğer Ubuntu 12.04 işletim sisteminde pip komutunu çağırırken bir hata iletisiyle karşılaştıysanız `python -m pip install -U --force-reinstall pip` komutunu çalıştırarak pip kurulumunu onarmayı deneyin.
 
 <!--endsec-->
 
-That's it! You're now (finally) ready to create a Django application!
+İşte bu kadar! Sonunda Django uygulamanızı oluşturmaya hazırsınız!
