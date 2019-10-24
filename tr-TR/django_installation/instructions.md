@@ -135,14 +135,14 @@ data-collapse=true ces-->
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-Start your virtual environment by running:
+Şu komutu çalıştırarak virtualenv'i başlatın:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut-satırı{% endfilename %}
 
     $ source myvenv/bin/activate
     
 
-Remember to replace `myvenv` with your chosen `virtualenv` name!
+`myvenv` kısmını seçtiğiniz `virtualenv` ismi ile değiştirmeyi unutmayın!
 
 > **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
 > 
