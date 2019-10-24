@@ -120,7 +120,9 @@ data-collapse=true ces-->
 >         Execution Policy Change
 >         The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
 >     
-> 
+
+<!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
+
 > **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
 > 
 >     $ . myvenv\Scripts\activate.ps1
@@ -133,16 +135,16 @@ data-collapse=true ces-->
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-运行如下命令进入你的虚拟环境：
+Start your virtual environment by running:
 
 {% filename %}command-line{% endfilename %}
 
     $ source myvenv/bin/activate
     
 
-记住要将 `myvenv` 替换成你选择的 `虚拟环境`的 名字 ！
+Remember to replace `myvenv` with your chosen `virtualenv` name!
 
-> **注：** 有时 `source` 可能不可用。在这些情况下试着做这面这些事情：
+> **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -153,9 +155,9 @@ data-collapse=true ces-->
 
 You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
 
-当在一个虚拟的环境中工作时，`python` 将自动指向正确的版本，因此您可以使用 `python` 代替 `python3`.
+When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
 
-好的现在所有重要的依赖关系已经就位。最后，我们可以安装 Django ！
+OK, we have all important dependencies in place. We can finally install Django!
 
 ## Installing Django {#django}
 
