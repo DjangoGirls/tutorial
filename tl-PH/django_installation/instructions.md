@@ -120,7 +120,9 @@ Patakbuhin ang iyong virtual na environment sa pamamagitan ng pagpagpatakbo ng:
 >         Execution Policy Change
 >         Ang execution policy ay nakakatulong para maprotektahan ka sa mga script na hindi mo pinagkatiwalaan. Ang pagbaago ng execution policy ay maaring maghantad sa iyong sa mga panganib sa seguridad na nalalarawan sa about_Execution_Poilicies na mga pangtulong na mga paksa sa http://go.microsoft.com/fwlink/?LinkID=135170. Gusto mo bang baguhin ang iyong execution policy? [Y] Oo  [A] Oo sa Lahat  [N] Hindi  [L] Hindi sa Lahat  [S] I-suspende  [?] Tulong ( ang default ay "N"): A
 >     
-> 
+
+<!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
+
 > **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
 > 
 >     $ . myvenv\Scripts\activate.ps1
@@ -133,16 +135,16 @@ Patakbuhin ang iyong virtual na environment sa pamamagitan ng pagpagpatakbo ng:
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-Patakbuhin ang iyong virtual environment sa pamamagitan ng pagpapatakbo ng:
+Start your virtual environment by running:
 
 {% filename %}command-line{% endfilename %}
 
     $ source myvenv/bin/activate
     
 
-Huwag kalimutan na palitan ang `myenv` sa iyong napili na `virtualenv` na pangalan!
+Remember to replace `myvenv` with your chosen `virtualenv` name!
 
-> **PAALALA:** minsan ang `source` ay maaaring hindi magagamit. Kung gayon, subukan mong gawin ito:
+> **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -151,17 +153,17 @@ Huwag kalimutan na palitan ang `myenv` sa iyong napili na `virtualenv` na pangal
 
 <!--endsec-->
 
-Malalamon mo kung ang iyong `virtualenv` ay nakatakbo na kung makikita mo ang prompt sa iyong console na may unlapi na `(myenv)`.
+You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
 
-Kung gumagamit ka ng virtual na environment, si `python` ay awtomatikong magtukoy sa tamang bersyon para magamit mo ang `python` sa halip na ang `python3`.
+When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
 
-Sige, mayroon na lahat nang kinakailangan natin. Sa wakas maari na nating i-install ang Django!
+OK, we have all important dependencies in place. We can finally install Django!
 
 ## Installing Django {#django}
 
-Ngayon napatakbo mo na ang iyong `virtualenv`, pwede mo nang i-install ang Django.
+Now that you have your `virtualenv` started, you can install Django.
 
-Pero bago yan, dapat nakasiguro tayo na pinakabago ang bersyon natin ng `pip`, ang software na gagamitin natin sa pag-install ng Django:
+Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
 
 {% filename %}command-line{% endfilename %}
 
