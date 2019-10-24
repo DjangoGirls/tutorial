@@ -120,7 +120,9 @@ Bẹ̀rẹ̀ àyíká àìrí rẹ nípasẹ̀ ṣíṣe:
 >         Execution Policy Change
 >         The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
 >     
-> 
+
+<!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
+
 > **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
 > 
 >     $ . myvenv\Scripts\activate.ps1
@@ -133,16 +135,16 @@ Bẹ̀rẹ̀ àyíká àìrí rẹ nípasẹ̀ ṣíṣe:
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-Bẹ̀rẹ̀ àyíká àìrí rẹ nípasẹ̀ ṣíṣe:
+Start your virtual environment by running:
 
 {% filename %}command-line{% endfilename %}
 
     $ source myvenv/bin/activate
     
 
-Rántí láti rọ́pò `myvenv` pẹ̀lú orúkọ `virtualenv` rẹ tó o yàn!
+Remember to replace `myvenv` with your chosen `virtualenv` name!
 
-> **ÀKÍYÈSÍ:** nígbà míì `source` lè má wà lárọ̀ọ́wọ́tó. Ní irú àwọn ìṣẹ̀lẹ̀ yẹn, gbìyànjú ṣíṣe èyí dípò:
+> **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -151,17 +153,17 @@ Rántí láti rọ́pò `myvenv` pẹ̀lú orúkọ `virtualenv` rẹ tó o yàn
 
 <!--endsec-->
 
-Ìwọ yíò mọ̀ pé o ti bẹ̀rẹ̀ `virtualenv` nígbà tí o bá rí `(myvenv)` níwájú prompt náà nínú console rẹ.
+You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
 
-Nígbà tí o bá n ṣiṣẹ́ nínú àyíká àìrí kan, `python` fúnra rẹ̀ yíò tọ́ka sí ẹyà tó yẹ, nítorí náà o lè lo `python` dípò `python3`.
+When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
 
-Ó dáa, a ti ní gbogbo ohun pàtàkì tí a nílò. A lè wá ṣàgbékalẹ̀ Django!
+OK, we have all important dependencies in place. We can finally install Django!
 
 ## Installing Django {#django}
 
-Ní báyìí tí o ti bẹ̀rẹ̀ `virtualenv` rẹ, o lè ṣàgbékalẹ̀ Django.
+Now that you have your `virtualenv` started, you can install Django.
 
-Ṣáájú kí a tó ṣe ìyẹn, ó yẹ kí a ri dájú pé a ní ẹyà `pip` tó jáde gbẹ̀yìn náà, ètò tí a n lò láti ṣàgbékalẹ̀ Django:
+Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
 
 {% filename %}command-line{% endfilename %}
 
@@ -170,9 +172,9 @@ Ní báyìí tí o ti bẹ̀rẹ̀ `virtualenv` rẹ, o lè ṣàgbékalẹ̀ Dj
 
 ### Ṣíṣe àgbékalẹ̀ àwọn ètò pẹ̀lú àwọn ohun tí a béèrè fún (requirements)
 
-Fáìlì àwọn ohun tí a béèrè fún (requirements) kan máa ṣàkọsílẹ̀ àwọn ohun tí a nílò láti ṣàgbékalẹ̀ pẹ̀lú lílo `pip install`:
+A requirements file keeps a list of dependencies to be installed using `pip install`:
 
-Kọ́kọ́ ṣẹ̀dá fáìlì `requirements.txt` kan sínú fódà `djangogirls/` náà, pẹ̀lú lílo olóòtú kóòdù tí o ti ṣàgbékalẹ̀ ṣáájú. O lè ṣe èyí nípasẹ̀ ṣíṣí fáìlì tuntun kan nínú olóòtú kóòdù náà àti títọ́jú rẹ gẹ́gẹ́ bí `requirements.txt` sínú fódà `djangogirls/` náà. Àkójọpọ̀ fáìlì rẹ yíò rí báyìí:
+First create a `requirements.txt` file inside of the `djangogirls/` folder, using the code editor that you installed earlier. You do this by opening a new file in the code editor and then saving it as `requirements.txt` in the `djangogirls/` folder. Your directory will look like this:
 
     djangogirls
     ├── myvenv
@@ -180,14 +182,14 @@ Kọ́kọ́ ṣẹ̀dá fáìlì `requirements.txt` kan sínú fódà `djangogi
     └───requirements.txt
     
 
-Nínú fáìlì `djangogirls/requirements.txt` rẹ, ó yẹ kí o ṣàfikún ọ̀rọ̀ tó tẹ̀le yìí:
+In your `djangogirls/requirements.txt` file you should add the following text:
 
 {% filename %}djangogirls/requirements.txt{% endfilename %}
 
     Django~={{ book.django_version }}
     
 
-Ní báyìí, ṣe `pip install -r requirements.txt` láti ṣàgbékalẹ̀ Django.
+Now, run `pip install -r requirements.txt` to install Django.
 
 {% filename %}command-line{% endfilename %}
 
@@ -224,4 +226,4 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-Ó parí! O ti ṣetán báyìí láti ṣẹ̀dá ètò Django kan!
+That's it! You're now (finally) ready to create a Django application!
