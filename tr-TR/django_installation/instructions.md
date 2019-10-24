@@ -144,9 +144,9 @@ data-collapse=true ces-->
 
 `myvenv` kısmını seçtiğiniz `virtualenv` ismi ile değiştirmeyi unutmayın!
 
-> **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
+> **NOT:** `source` her zaman calişmaya bilir. O durumlarda aşşağıdaki komutu deneyin:
 > 
-> {% filename %}command-line{% endfilename %}
+> {% filename %}komut-satırı{% endfilename %}
 > 
 >     $ . myvenv/bin/activate
 >     
