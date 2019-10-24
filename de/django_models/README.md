@@ -77,14 +77,13 @@ Wie du sehen kannst, wurde ein neues `blog`-Verzeichnis erstellt, welches schon 
 
     djangogirls
     ├── blog
-    │   ├── __init__.py
     │   ├── admin.py
     │   ├── apps.py
+    │   ├── __init__.py
     │   ├── migrations
     │   │   └── __init__.py
     │   ├── models.py
     │   ├── tests.py
-    |   ├── urls.py
     │   └── views.py
     ├── db.sqlite3
     ├── manage.py
@@ -93,7 +92,10 @@ Wie du sehen kannst, wurde ein neues `blog`-Verzeichnis erstellt, welches schon 
     │   ├── settings.py
     │   ├── urls.py
     │   └── wsgi.py
+    ├── myvenv
+    │   └── ...
     └── requirements.txt
+    
     
 
 Nach dem Erstellen der Applikation müssen wir Django noch sagen, dass diese auch genutzt werden soll. Das tun wir in der Datei `mysite/settings.py` -- öffne diese in deinem Code-Editor. Wir suchen den Eintrag `INSTALLED_APPS` und fügen darin die Zeile `'blog.apps.BlogConfig',` direkt über der schließenden Klammer `]` ein. Danach sollte es also so aussehen:

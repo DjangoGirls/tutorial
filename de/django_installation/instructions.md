@@ -121,6 +121,8 @@ Starte deine virtuelle Umgebung, indem du Folgendes eingibst:
 >         The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
 >     
 
+<!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
+
 > **Hinweis:** Für Benutzerinnen des populären Editors VS Code, der einen Powershell-basiertes Terminal eingebaut hat: Wenn du beim eingebauten Terminal bleiben willst, kannst du deine virtuelle Umgebung mit folgendem Befehl aktivieren:
 > 
 >     $ . myvenv\Scripts\activate.ps1
@@ -157,7 +159,7 @@ In deiner neuen virtuellen Umgebung wird automatisch die richtige Version von `p
 
 Ok, jetzt ist die erforderliche Umgebung startklar und wir können endlich Django installieren!
 
-## Django-Installation
+## Django-Installation {#django}
 
 Da du nun dein `virtualenv` gestartet hast, kannst du Django installieren.
 
@@ -175,6 +177,8 @@ Eine requirements-Datei enthält eine Liste von Abhängigkeiten, die von `pip in
 Erstelle mit dem zuvor installierten Code-Editor eine Datei namens `requirements.txt` im Verzeichnis `djangogirls/`. Das machst du, indem du eine neue Datei in deinem Code-Editor öffnest und als `requirements.txt` im Ordner `djangogirls/` abspeicherst. Dein Ordner sieht jetzt so aus:
 
     djangogirls
+    ├── myvenv
+    │   └── ...
     └───requirements.txt
     
 
