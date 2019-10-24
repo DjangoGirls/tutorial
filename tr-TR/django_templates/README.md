@@ -99,10 +99,10 @@ Web sitemizin İnternet'te hâlâ çalıştığını görmek iyi olacak, değil 
 
 (Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
 
-* Son olarak, [Web sekmesi](https://www.pythonanywhere.com/web_app_setup/)ne gidip uygulamanızın **Yenile** butonuna basın. (To reach other PythonAnywhere pages from the console, use the menu button in the upper right corner.) Your update should be live on https://subdomain.pythonanywhere.com -- check it out in the browser! Eğer PythonAnywhere sitesindeki gönderilerin içeriği ile lokal sunucunuzda bulunan gönderilerin içeriği aynı değilse sorun değil. Lokal bilgisayarınızdaki veritabanı ile Python Anywhere'deki veritabanı, diğer dosyalarınız gibi eşitlenmiyor.
+* Son olarak, [Web sekmesi](https://www.pythonanywhere.com/web_app_setup/)ne gidip uygulamanızın **Yenile** butonuna basın. (Konsoldan diğer PythonAnywhere sayfalarına ulaşmak için, sağ üst köşedeki menü düğmesini kullanın.) Güncellemeniz https://isminiz.pythonanywhere.com adresinde yayınlanmalıdır - tarayıcıda kontrol edin! Eğer PythonAnywhere sitesindeki gönderilerin içeriği ile lokal sunucunuzda bulunan gönderilerin içeriği aynı değilse sorun değil. Lokal bilgisayarınızdaki veritabanı ile Python Anywhere'deki veritabanı, diğer dosyalarınız gibi eşitlenmiyor.
 
-Tebrikler! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://subdomain.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
+Tebrikler! Şimdi Django admin üzerinden yeni bir gönderi eklemeyi deneyin (published_date eklemeyi unutmayın!) PythonAnywhere sitenizin Django admininde olduğunuzdan emin olun, https://subdomain.pythonanywhere.com/admin. Arkasından gönderileri görebilmek için oradaki sayfanızı yenileyin.
 
-Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
+Şiir gibi çalışıyor, değil mi? Gurur duyabiliriz! Şimdi bilgisayar başından bir süre kalkalım, çünkü bir molayı hak ettik. :)
 
 ![Şekil 13.4](images/donut.png)
