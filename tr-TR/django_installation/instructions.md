@@ -128,7 +128,7 @@ data-collapse=true ces-->
 >     $ . myvenv\Scripts\activate.ps1
 >     
 > 
-> The advantage is that you don't have to switch between editor windows and command-line windows
+> Bu durumun avantajı ise editor ve komut-satırı arasında pencere değistirmek zorunda olmamamız
 
 <!--endsec-->
 
