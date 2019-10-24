@@ -120,7 +120,9 @@ Virtuálne prostredie spusti príkazom:
 >         Execution Policy Change
 >         The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
 >     
-> 
+
+<!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
+
 > **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
 > 
 >     $ . myvenv\Scripts\activate.ps1
@@ -133,16 +135,16 @@ Virtuálne prostredie spusti príkazom:
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-Virtuálne prostredie spusti príkazom:
+Start your virtual environment by running:
 
 {% filename %}command-line{% endfilename %}
 
     $ source myvenv/bin/activate
     
 
-Nezabudni nahradiť `myvenv` názvom svojho `virtualenv`-u!
+Remember to replace `myvenv` with your chosen `virtualenv` name!
 
-> **POZNÁMKA:** niekedy `source` nemusí byť k dispozícii. V takom prípade vyskúšaj použiť:
+> **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -151,17 +153,17 @@ Nezabudni nahradiť `myvenv` názvom svojho `virtualenv`-u!
 
 <!--endsec-->
 
-To, že je `virtualenv` spustený, zistíš, keď bude príkazový riadok v konzole bude mať na začiatku `(myenv)`.
+You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
 
-Pri práci vo virtuálnom prostredí bude `python` automaticky odkazovať na správnu verziu, takže môžeš pokojne používať `python` namiesto `python3`.
+When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
 
-OK, všetko potrebné máme prichystané. Konečne môžeme nainštalovať Django!
+OK, we have all important dependencies in place. We can finally install Django!
 
 ## Installing Django {#django}
 
-Teraz keď máš `virtualenv` spustené, môžeš nainštalovať Django.
+Now that you have your `virtualenv` started, you can install Django.
 
-Predtým ako to urobíme, mali by sme sa uistiť, že je nainštalovaná najnovšia verzia `pip`, softvéru ktorý použijeme na inštalovanie Djanga:
+Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
 
 {% filename %}command-line{% endfilename %}
 
