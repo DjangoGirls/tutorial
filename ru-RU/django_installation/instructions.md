@@ -120,7 +120,9 @@ data-collapse=true ces-->
 >         Execution Policy Change
 >         The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
 >     
-> 
+
+<!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
+
 > **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
 > 
 >     $ . myvenv\Scripts\activate.ps1
@@ -133,16 +135,16 @@ data-collapse=true ces-->
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-Запусти виртуальное окружение, выполнив:
+Start your virtual environment by running:
 
 {% filename %}command-line{% endfilename %}
 
     $ source myvenv/bin/activate
     
 
-Не забудь поменять `myvenv` на выбранное для `virtualenv` имя!
+Remember to replace `myvenv` with your chosen `virtualenv` name!
 
-> **ПРИМЕЧАНИЕ:** иногда команда `source` может быть недоступна. В таком случае, используй следующий метод:
+> **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -151,17 +153,17 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-Ты поймешь, что `virtualenv` запущено, когда увидишь префикс в командной строке.
+You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
 
-При работе с виртуальным окружением, команда `python` будет автоматически обращаться к правильной версии языка, так что тебе не обязательно использовать `python3`.
+When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
 
-Отлично, теперь мы будем хранить все важные зависимости в одном месте. Наконец можно установить Django!
+OK, we have all important dependencies in place. We can finally install Django!
 
 ## Installing Django {#django}
 
-Теперь, когда твой `virtualenv` запущен, ты можешь установить Django.
+Now that you have your `virtualenv` started, you can install Django.
 
-Но перед этим мы должны убедиться, что у нас установлена последняя версия `pip`, программа, которую мы будем использовать для установки Django:
+Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
 
 {% filename %}command-line{% endfilename %}
 
@@ -170,9 +172,9 @@ data-collapse=true ces-->
 
 ### Установка пакетов с требованиями
 
-Файл требований хранит список зависимостей для установки с использованием `pip install`:
+A requirements file keeps a list of dependencies to be installed using `pip install`:
 
-Сначала создайте файл `requirements.txt` внутри `djangogirls /` папки, используя редактор кода, который вы установили ранее. Вы делаете это, открыв новый файл в редакторе кода и затем сохранив его как `requirements.txt` в `djangogirls /` папке. Ваша папка будет выглядеть следующим образом:
+First create a `requirements.txt` file inside of the `djangogirls/` folder, using the code editor that you installed earlier. You do this by opening a new file in the code editor and then saving it as `requirements.txt` in the `djangogirls/` folder. Your directory will look like this:
 
     djangogirls
     ├── myvenv
@@ -180,14 +182,14 @@ data-collapse=true ces-->
     └───requirements.txt
     
 
-В файл `static/css/requirements.txt` следует добавить следующий код:
+In your `djangogirls/requirements.txt` file you should add the following text:
 
 {% filename %}djangogirls/requirements.txt{% endfilename %}
 
     Django~={{ book.django_version }}
     
 
-Теперь наберите `pip install -r requirements.txt` для установки Django.
+Now, run `pip install -r requirements.txt` to install Django.
 
 {% filename %}command-line{% endfilename %}
 
@@ -224,4 +226,4 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-Вот и все! Теперь ты (наконец-то) готова создать свое Django приложение!
+That's it! You're now (finally) ready to create a Django application!
