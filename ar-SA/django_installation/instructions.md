@@ -120,7 +120,9 @@ data-collapse=true ces-->
 >         Execution Policy Change
 >         The execution policy helps protect you from scripts that you do not trust. تغيير سياسة التنفيذ قد يعرضك للمخاطر الأمنية الموضحة في موضوع التعليمات about_Execution_Policies في http://go.microsoft.com/fwlink/?LinkID=135170. هل تريد تغيير نهج التنفيذ؟ [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
 >     
-> 
+
+<!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
+
 > **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
 > 
 >     $ . myvenv\Scripts\activate.ps1
@@ -133,16 +135,16 @@ data-collapse=true ces-->
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-بدء تشغيل البيئة الإفتراضية الخاصة بك عن طريق تشغيل:
+Start your virtual environment by running:
 
 {% filename %}command-line{% endfilename %}
 
     $ source myvenv/bin/activate
     
 
-تذكر أن تقوم باستبدال `myvenv` مع الاسم الذي اخترته ل `virtualenv` الخاص بك!
+Remember to replace `myvenv` with your chosen `virtualenv` name!
 
-> **ملاحظة:** في بعض الأحيان قد يكون `source` غير متوفر. وفي تلك الحالات حاول القيام بهذا بدلاً من ذلك:
+> **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -151,17 +153,17 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-سوف تعرف أن لديك `virtualenv` بدأت عندما ترى أن الموجه في وحدة التحكم الخاصة بك مسبوقاً ب `(myvenv)`.
+You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
 
-عند العمل ضمن بيئة افتراضية، سيشير `python` تلقائياً إلى الإصدار الصحيح حيث يمكنك استخدام `python` بدلاً من `python3`.
+When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
 
-حسنا، لدينا كافة التبعيات الهامة في المكان. وأخيراً يمكننا تثبيت جانغو!
+OK, we have all important dependencies in place. We can finally install Django!
 
 ## Installing Django {#django}
 
-الآن بما انه لديك `virtualenv` مشغل، يمكنك تثبيت جانغو.
+Now that you have your `virtualenv` started, you can install Django.
 
-قبل أن نفعل ذلك، يجب علينا التأكد من لدينا أحدث إصدار من `pip`، البرامج التي نستخدمها لتثبيت جانغو:
+Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
 
 {% filename %}command-line{% endfilename %}
 
