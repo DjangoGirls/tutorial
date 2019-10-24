@@ -120,7 +120,9 @@ data-collapse=true ces-->
 >         Execution Policy Change
 >         The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
 >     
-> 
+
+<!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
+
 > **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
 > 
 >     $ . myvenv\Scripts\activate.ps1
@@ -133,46 +135,46 @@ data-collapse=true ces-->
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-Şu komutu çalıştırarak virtualenv'i başlatın:
+Start your virtual environment by running:
 
-{% filename %}komut-satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ source myvenv/bin/activate
     
 
-`myvenv` yerine kendi seçtiğiniz `virtualenv` ismini koymayı unutmayın!
+Remember to replace `myvenv` with your chosen `virtualenv` name!
 
-> **NOT:** bazen `source` komutu kullanılamıyor durumda olabilir. Böyle durumlarda onun yerine aşağıdaki komutu da kullanabilirsiniz:
+> **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
 > 
-> {% filename %}komut-satırı{% endfilename %}
+> {% filename %}command-line{% endfilename %}
 > 
 >     $ . myvenv/bin/activate
 >     
 
 <!--endsec-->
 
-Konsolunuzda komut isteminizin başında `(myvenv)` gördüğünüzde `virtualenv`'in çalıştığını anlayabilirsiniz.
+You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
 
-Virtualenv ile çalışırken `python` otomatik olarak doğru sürümü çalıştıracaktır. Yani `python3` yerine `python` yazabilirsiniz.
+When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
 
-Artık bütün gerekli uygulamaları bir araya getirdiğimize göre sonunda Django'yu yükleyebiliriz!
+OK, we have all important dependencies in place. We can finally install Django!
 
 ## Installing Django {#django}
 
-`virtualenv`'i çalıştırdığınıza göre, şimdi Django'yu yükleyebilirsiniz.
+Now that you have your `virtualenv` started, you can install Django.
 
-Bunu yapmadan önce, bilgisayarımızın, Django yüklemek için kullanacağımız yazılım olan `pip`'in en son versiyonuna sahip olduğundan emin olmalıyız:
+Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
 
-{% filename %}komut-satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     (myvenv) ~$ python -m pip install --upgrade pip
     
 
 ### Requirements ile paketleri yüklemek
 
-Bir requirements dosyası `pip install` ile yüklenmesi gereken paketlerin listesini tutar:
+A requirements file keeps a list of dependencies to be installed using `pip install`:
 
-Önce `djangogirls /` klasörü içinde `requirements.txt` dosyası oluşturalım. Bunu kod editöründe yeni bir dosya açıp, sonra `requirements.txt` olarak `djangogirls/` klasöründe kaydederek yapın. İşleminiz bu klasörde görünecek:
+First create a `requirements.txt` file inside of the `djangogirls/` folder, using the code editor that you installed earlier. You do this by opening a new file in the code editor and then saving it as `requirements.txt` in the `djangogirls/` folder. Your directory will look like this:
 
     djangogirls
     ├── myvenv
@@ -180,16 +182,16 @@ Bir requirements dosyası `pip install` ile yüklenmesi gereken paketlerin liste
     └───requirements.txt
     
 
-`djangogirls/requirements.txt` dosyanıza şu kodu eklemelisiniz:
+In your `djangogirls/requirements.txt` file you should add the following text:
 
 {% filename %}djangogirls/requirements.txt{% endfilename %}
 
     Django~={{ book.django_version }}
     
 
-Simdi, Django kurmak için `pip install -r requirements.txt` komutunu çalıstırın.
+Now, run `pip install -r requirements.txt` to install Django.
 
-{% filename %}komut-satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     (myvenv) ~$ pip install -r requirements.txt
     Collecting Django~={{ book.django_version }} (from -r requirements.txt (line 1))
@@ -224,4 +226,4 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-İşte bu kadar! Sonunda Django uygulamanızı oluşturmaya hazırsınız!
+That's it! You're now (finally) ready to create a Django application!
