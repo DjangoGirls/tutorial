@@ -129,23 +129,23 @@ data-collapse=true ces-->
 >     $ . myvenv\Scripts\activate.ps1
 >     
 > 
-> The advantage is that you don't have to switch between editor windows and command-line windows
+> エディタのウィンドウとコマンドラインのウィンドウを行き来する必要がなくなるのが利点です。
 
 <!--endsec-->
 
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-Start your virtual environment by running:
+実行して、仮想環境を起動します。
 
 {% filename %}command-line{% endfilename %}
 
     $ source myvenv/bin/activate
     
 
-Remember to replace `myvenv` with your chosen `virtualenv` name!
+`myvenv`のところをあながた選んだ`仮想環境(virtualenvironment)`名に置き換えることを忘れないで下さいね！
 
-> **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
+> **備考:** `source` ではできない場合もあります。その場合は、代わりに以下のように入力してみてください：
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -154,17 +154,17 @@ Remember to replace `myvenv` with your chosen `virtualenv` name!
 
 <!--endsec-->
 
-You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
+`virtualenv` が起動すると、プロンプトの行頭に`(myvenv)`が現れます。
 
-When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
+Virtual environment(仮想環境) の中で作業しているとき、`python`は自動的に正しいバージョンの`Python`を参照しますので、`python3`の代わりに`python`を使うことができます.
 
-OK, we have all important dependencies in place. We can finally install Django!
+OK,これでDjangoのインストール前に入れておきたい依存関係の準備がすべて整いました。いよいよDjangoのインストールです！
 
-## Installing Django {#django}
+## Djangoのインストール {#django}
 
-Now that you have your `virtualenv` started, you can install Django.
+今度はあなたの`virtualenv`を起動したので、Djangoをインストールすることができます。
 
-Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
+これを行う前に、Djangoのインストールに使用する最新バージョンの`pip`がインストールされている必要があります。
 
 {% filename %}command-line{% endfilename %}
 
@@ -173,9 +173,9 @@ Before we do that, we should make sure we have the latest version of `pip`, the 
 
 ### Requirementsファイルによってパッケージをインストールする
 
-A requirements file keeps a list of dependencies to be installed using `pip install`:
+Requirementsファイルは`pip install`でインストールするためのパッケージリストが記載されているファイルです:
 
-First create a `requirements.txt` file inside of the `djangogirls/` folder, using the code editor that you installed earlier. You do this by opening a new file in the code editor and then saving it as `requirements.txt` in the `djangogirls/` folder. Your directory will look like this:
+前にインストールしたエディタを使用して、最初に `requirements.txt` ファイルを `djangogirls/` フォルダの中に作ります。 エディタで新しいファイルを開いて`djangogirls/`フォルダ内に`requirements.txt`という名前で保存してください。 ディレクトリはこんな感じになっているはずです:
 
     djangogirls
     ├── myvenv
@@ -183,14 +183,14 @@ First create a `requirements.txt` file inside of the `djangogirls/` folder, usin
     └───requirements.txt
     
 
-In your `djangogirls/requirements.txt` file you should add the following text:
+`djangogirls/requirements.txt` ファイル中に以下のテキストを追加します:
 
 {% filename %}djangogirls/requirements.txt{% endfilename %}
 
     Django~={{ book.django_version }}
     
 
-Now, run `pip install -r requirements.txt` to install Django.
+そして、`pip install -r requirements.txt` を実行してDjangoをインストールします。
 
 {% filename %}command-line{% endfilename %}
 
@@ -204,14 +204,14 @@ Now, run `pip install -r requirements.txt` to install Django.
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
+> Windowsでpipを呼んだときにエラーが起きた場合は、あなたのプロジェクトのパス名がスペース・アクセント・特殊文字を含んでいないか確認してみて下さい （例 `C:\Users\User Name\djangogirls`）。 もし含まれている場合は、ディレクトリをスペース・アクセント・特殊文字が含まれていない他の場所（`C:\djangogirls`など）で作成することを検討してみてください。 新しいディレクトリに新しい仮想環境を作成してから、古いディレクトリを削除して、上記のコマンドを試してください。 （仮想環境には絶対パスが使われているので、仮想環境のディレクトリを移動させてもうまくいきません。）
 
 <!--endsec-->
 
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
+> Djangoをインストールしようとしてコマンドラインがフリーズして動かなくなってしまうことがあります。その時は、以下のコマンドを代わりに入力してみてください。
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -227,4 +227,4 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-That's it! You're now (finally) ready to create a Django application!
+以上です！あなたは（ついに）Djangoアプリケーションを作成する準備が整いました！
