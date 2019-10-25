@@ -123,28 +123,28 @@ Inicia el entorno virtual ejecutando:
 
 <!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
 
-> **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
+> **NOTA:** Para usuarios del popular editor VS Code, el cual viene con una terminal integrada basada en el poweshell de windows; si tu deseas añadir la terminal integrada, tu puedes arrancar el siguiente comando para activar tu entorno virtual:
 > 
 >     $ . myvenv\Scripts\activate.ps1
 >     
 > 
-> The advantage is that you don't have to switch between editor windows and command-line windows
+> La ventaja es que tu no tienes que cambiar las ventanas entre el editor de código y la línea de comandos
 
 <!--endsec-->
 
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-Start your virtual environment by running:
+Inicia el entorno virtual ejecutando:
 
 {% filename %}command-line{% endfilename %}
 
     $ source myvenv/bin/activate
     
 
-Remember to replace `myvenv` with your chosen `virtualenv` name!
+¡Recuerda reemplazar `myvenv` con tu nombre de `virtualenv` que hayas elegido!
 
-> **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
+> **NOTA:** a veces `source` podría no estar disponible. En ese caso trata hacerlo de esta forma:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -153,17 +153,17 @@ Remember to replace `myvenv` with your chosen `virtualenv` name!
 
 <!--endsec-->
 
-You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
+Sabrás que tienes `virtualenv` iniciado cuando veas que la línea de comando en tu consola tiene el prefijo `(myvenv)`.
 
-When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
+Cuando trabajes en un entorno virtual, `python` automáticamente se referirá a la versión correcta, de modo que puedes utilizar `python` en vez de `python3`.
 
-OK, we have all important dependencies in place. We can finally install Django!
+Ok, tenemos todas las dependencias importantes en su lugar. ¡Finalmente podemos instalar Django!
 
-## Installing Django {#django}
+## Instalar Django {#django}
 
-Now that you have your `virtualenv` started, you can install Django.
+Ahora que tienes tu `virtualenv` iniciado, puedes instalar Django.
 
-Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
+Antes de hacer eso, debemos asegurarnos que tenemos la última versión de `pip`, el software que utilizamos para instalar Django:
 
 {% filename %}command-line{% endfilename %}
 
@@ -172,9 +172,9 @@ Before we do that, we should make sure we have the latest version of `pip`, the 
 
 ### Instalar paquetes con un fichero de requisitos (requirements)
 
-A requirements file keeps a list of dependencies to be installed using `pip install`:
+Un fichero de requisitos (requirements) tiene una lista de dependencias que se deben instalar mediante `pip install`:
 
-First create a `requirements.txt` file inside of the `djangogirls/` folder, using the code editor that you installed earlier. You do this by opening a new file in the code editor and then saving it as `requirements.txt` in the `djangogirls/` folder. Your directory will look like this:
+Primero crea un archivo `requirements.txt` dentro de tu directorio `djangogirls`, usando el editor de código que instalaste previamente. Lo puedes hacer mediante abriendo un nuevo archivo en el editor de código y guardandolo como `requirements.txt` en el directorio `djangogirls`. Tu directorio se verá así:
 
     djangogirls
     ├── myvenv
@@ -182,14 +182,14 @@ First create a `requirements.txt` file inside of the `djangogirls/` folder, usin
     └───requirements.txt
     
 
-In your `djangogirls/requirements.txt` file you should add the following text:
+Dentro del fichero `djangogirls/requirements.txt` deberías tener el siguiente texto:
 
 {% filename %}djangogirls/requirements.txt{% endfilename %}
 
     Django~={{ book.django_version }}
     
 
-Now, run `pip install -r requirements.txt` to install Django.
+Ahora, ejecuta `pip install -r requirements.txt` para instalar Django.
 
 {% filename %}command-line{% endfilename %}
 
@@ -203,14 +203,14 @@ Now, run `pip install -r requirements.txt` to install Django.
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
+> Si tu obtienes un error cuando llamas al pip en la plataforma de Windows, por favor verifica si el nombre de ruta de tu proyecto contiene espacios, acentos o caracteres especiales ( por ejemplo, `C:\Usuarios\NombreUsuario\djangogirls`). Si los tiene, por favor considera usar otro lugar sin espacios, acentos o caracteres especiales (sugerencia: `C:\djangogirls`). Crea un nuevo virtualenv en el nuevo directorio, luego borra el viejo y trata de escribir el comando anterior otra vez. (Moviendo el directorio virtualenv no funcionará debido a que usa rutas absolutas.)
 
 <!--endsec-->
 
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
+> Tu línea de comando puede congelarse luego de intentar instalar Django. Si ésto sucede, usa el siguiente comando:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -222,8 +222,8 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
+> Si tu obtienes un error cuando llamas pip en Ubuntu 12.04, por favor corre `python -m pip install -U --force-reinstall pip` para reparar la instalación de pip en el virtualenv.
 
 <!--endsec-->
 
-That's it! You're now (finally) ready to create a Django application!
+¡Eso es todo! Ahora estás lista (por fin) para crear una aplicación Django!
