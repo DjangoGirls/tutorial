@@ -1,6 +1,6 @@
 # 집에서 이 튜토리얼을 보는 분들에게
 
-If you're doing the tutorial at home, not at one of the [Django Girls events](https://djangogirls.org/events/), you can completely skip this chapter now and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter.
+[Django 걸스 이벤트](https://djangogirls.org/events/)가 아닌 집에서 튜토리얼을 따라하시는 분들은 이 챕터를 넘기고 [인터넷은 어떻게 작동할까요?](../how_the_internet_works/README.md) 로 바로 넘어가세요.
 
 This is because we cover installing things as they are needed in the tutorial -- this is just an additional page that gathers all of the installation instructions in one place (which is useful for some workshop formats). You can choose to install everything that is on this page right now if you wish. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation parts to you later on, as they are needed.
 
@@ -27,23 +27,23 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 Many of the steps below reference the "console", "terminal", "command window", or "command line" -- these all mean the same thing: a window on your computer where you can enter commands. When you get to the main tutorial, you'll learn more about the command line. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
 
-# Install Python {#python}
+# Python 설치하기 {#python}
 
 {% include "/python_installation/instructions.md" %}
 
-# Install a code editor {#code-editor}
+# Code Editor 설치하기 {#code-editor}
 
 {% include "/code_editor/instructions.md" %}
 
-# Set up virtualenv and install Django {#virtualenv}
+# virtualenv 설정 & Django 설치하기 {#virtualenv}
 
 {% include "/django_installation/instructions.md" %}
 
-# Install Git {#git}
+# Git 설치하기 {#git}
 
 {% include "/deploy/install_git.md" %}
 
-# Create a GitHub account {#github}
+# GitHub 계정 만들기 {#github}
 
 Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password (add it to your password manager, if you use one).
 
