@@ -36,9 +36,9 @@
 
 맞아요, 간단해요. 메시지를 보내고 답장을 기다리는 거죠. 물론 종이랑 펜 대신 몇 바이트의 데이터를 사용하는 것이지만, 기본 개념은 같답니다!
 
-도로명과 도시이름, 우편번호를 쓰는 대신 IP주소라는 것을 써야 하지만요. 컴퓨터는 먼저 DNS(도메인 주소 시스템)에게 djangogirls.org 의 IP주소가 무엇인지 물어봅니다. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
+도로명과 도시이름, 우편번호를 쓰는 대신 IP주소라는 것을 써야 하지만요. 여러분의 컴퓨터는 먼저 DNS(도메인 주소 시스템)에게 djangogirls.org 의 IP주소가 뭔지를 물어봅니다. 옛날 전화번호부 책에서 연락하고 싶은 대상의 이름으로 전화번호와 주소를 찾아내는 방법과 비슷하지요.
 
-When you send a letter, it needs to have certain features to be delivered correctly: an address, a stamp, etc. 수령인이 이해할 수 있는 언어로 적혀져야하구요. 그렇죠? 이처럼 *데이터 패킷*에도 동일하게 적용되어야 웹사이트를 볼 수 있습니다. 우리는 HTTP (하이퍼텍스트 전송 프로토콜) 라는 프로토콜을 사용합니다.
+여러분이 편지를 보낼 때는 몇가지 규칙을 지켜야 제대로 배달되지요? 주소가 적혀있어야 하고, 우표가 있어야 해요. 수령인이 이해할 수 있는 언어로 적혀져야하구요. 그렇죠? 여러분이 웹사이트를 찾기 위해 보낸 *데이터 패킷*에도 이러한 규칙들이 적용되어야 해요. 우리는 HTTP (하이퍼텍스트 전송 프로토콜) 라 불리는 프로토콜을 사용합니다.
 
 따라서 기본적으로 웹사이트를 만들려면 그 웹사이트가 동작할 *서버* (기계) 가 필요해요. *서버*에서 *요청*(편지) 을 받으면, 다시 웹사이트(다른 편지) 로 되돌려줍니다.
 
