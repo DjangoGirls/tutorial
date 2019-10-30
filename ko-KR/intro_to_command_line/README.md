@@ -391,9 +391,9 @@ Done! To be sure it's actually deleted, let's check it:
 
 <!--endsec-->
 
-### Exit
+### 종료
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+여기까지입니다! 이제 안전하게 커맨드라인을 닫아볼게요. 해커 스타일로 해 보죠, 어때요? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -413,11 +413,11 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--endsec-->
 
-Cool, huh? :)
+멋지죠? :)
 
-## 목차
+## 요역
 
-Here is a summary of some useful commands:
+유용한 명령어들을 모아봤어요:
 
 | 명령어(윈도우)       | 명령어(맥 OS/리눅스) | 설명                  | 예시                                                 |
 | -------------- | ------------- | ------------------- | -------------------------------------------------- |
@@ -434,8 +434,8 @@ Here is a summary of some useful commands:
 
 커맨드라인에서 실행할 수 있는 명령어들 중에 아주 일부만 소개했지만, 오늘은 이정도만 알아도 충분할 거에요. 
 
-If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+하지만 더 많은 명령어가 궁금하신 분은 [ss64.com](http://ss64.com)에서 모든 운영체제별로 정리된 명령어 모음집을 확인하실 수 있어요.
 
 ## 준비되셨나요?
 
-Let's dive into Python!
+이제 파이썬의 세계로 빠져봅시다!
