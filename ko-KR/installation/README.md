@@ -47,7 +47,7 @@ Many of the steps below reference the "console", "terminal", "command window", o
 
 Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password (add it to your password manager, if you use one).
 
-# Create a PythonAnywhere account {#pythonanywhere}
+# PythonAnywhere 계정 만들기 {#pythonanywhere}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
