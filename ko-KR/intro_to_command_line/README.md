@@ -58,7 +58,7 @@ In the tutorial, when we want you to type in a command, we will include the `$` 
 
 ## 나의 첫 번째 명령 (야호!)
 
-Let's start by typing this command:
+이 명령어를 입력하는 것부터 시작해보죠!
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
