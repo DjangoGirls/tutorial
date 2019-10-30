@@ -78,7 +78,7 @@ In the tutorial, when we want you to type in a command, we will include the `$` 
 
 <!--endsec-->
 
-And then hit `enter`. This is our result:
+그리고 `Enter`를 누르세요. 다음과 같이 보일 거에요.
 
 {% filename %}command-line{% endfilename %}
 
@@ -86,17 +86,17 @@ And then hit `enter`. This is our result:
     olasitarska
     
 
-As you can see, the computer has just printed your username. Neat, huh? :)
+컴퓨터가 여러분 컴퓨터 사용자이름을 보여주네요. 괜찮지 않아요? :) 
 
-> Try to type each command; do not copy-paste. You'll remember more this way!
+> 복사해서 붙여넣기 하지 말고, 직접 입력해 보세요. 더 잘 외워질 거예요!
 
 ## 기본 명령어
 
-Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
+각각의 운영체제에 따라, 명령어들이 조금씩 다를 수도 있으니까, 여러분의 운영체제에 해당하는 설명을 따라주세요. 그럼 같이 해볼까요?
 
 ### 현재 디렉토리
 
-It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
+우리가 지금 어느 폴더에 있는지 알면 좋겠죠? 아래의 명렁을 입력하고 `Enter`를 눌러보세요:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -106,7 +106,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     /Users/olasitarska
     
 
-> Note: 'pwd' stands for 'print working directory'.
+> 참고: 'pwd' 는 'print working directory(작업중인 디렉토리 출력)'의 줄임말이에요.
 
 <!--endsec-->
 
