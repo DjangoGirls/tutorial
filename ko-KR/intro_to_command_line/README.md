@@ -6,13 +6,13 @@
 
 **여러분의 첫 번째 친구를 소개합니다: 바로, 커맨드라인(command line) 입니다!**
 
-해커들이 사용하는 까만 윈도우 창을 어떻게 사용하는지 보여드릴 거에요. 처음에는 약간 무서워 보일 수도 있지만, 여러분의 명령어를 기다리는 녀석일 뿐이에요.
+해커들이 사용하는 까만 윈도우 창을 어떻게 사용하는지 보여드릴 거에요. 처음에는 약간 무서워 보일 수도 있지만, 이녀석은 그저 여러분의 명령을 기다리는 메시지창일 뿐이에요!
 
-> **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
+> **참고** 이 설명서에서 '디렉토리'와 '폴더'라는 두가지 단어를 사용하지만 둘다 같은 뜻이랍니다.
 
 ## 커맨드라인은 무엇일까요?
 
-**command line** 또는 **command-line interface**라고도 불리는 윈도우는 컴퓨터에서의 보기, 처리, 그리고 파일 조작을 위한 텍스트 기반 응용 프로그램입니다. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
+**command line** 또는 **command-line interface**라고도 불리는 윈도우는 컴퓨터에서의 파일을 보고, 처리하고, 조작하기 위한 텍스트 기반 응용 프로그램입니다. 그래픽 인터페이스가 없는 윈도우 익스플로러나 Mac의 Finder라고 봐도 되요. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
 
 ## 커맨드라인 열기
 
