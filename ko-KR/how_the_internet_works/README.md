@@ -28,15 +28,15 @@
 
 ![그림 1.3](images/internet_2.png)
 
-Imagine that when you type https://djangogirls.org, you send a letter that says: "Dear Django Girls, I want to see the djangogirls.org website. Send it to me, please!"
+주소창에 https://djangogirls.org 을 입력하는 것을, "사랑하는 장고 걸즈 여러분, 저는 장고걸즈 웹사이트를 보고 싶어요. 저에게 그 웹 사이트를 보여주세요!"라고 편지를 써서 보내는 것과 같다고 생각해 보세요.
 
-이 편지는 나와 가장 가까이에 있는 동네 우체국으로 갈거에요. 받을 사람에게 가까운 다른 우체국으로, 다른 우체국으로 전달되면서 주소지에 최종 도착하게 됩니다. 특이한 점은 같은 장소에서 많은 양의 편지(*데이터 패킷*을 보내면, 각기 다른 우체국(*라우터*) 을 통해 전달될 수 있다는 것입니다. 또 우체국마다 배포되는 방법이 달라요.
+이 편지는 여러분과 가장 가까이에 있는 동네 우체국으로 갈거에요. 그리고 편지는 주소지에 최종적으로 배달될때까지 받을 사람에게 조금 더 가까운 다른 우체국으로, 그리고 또 다른 우체국으로 계속 전달되게 됩니다. 편지와 다른 한가지는 같은 장소에서 많은 양의 편지(*데이터 패킷*)을 보내면, 각기 다른 우체국(*라우터*) 을 통해 전달될 수 있다는 것입니다. 또 우체국마다 배포되는 방법이 달라요.
 
 ![그림 1.4](images/internet_4.png)
 
-That's how it works - you send messages and you expect some response. Instead of paper and pen you use bytes of data, but the idea is the same!
+맞아요, 간단해요. 메시지를 보내고 답장을 기다리는 거죠. 물론 종이랑 펜 대신 몇 바이트의 데이터를 사용하는 것이지만, 기본 개념은 같답니다!
 
-그리고 도로명과 도시이름, 우편번호를 쓰는 대신 IP주소라는 것을 써야해요. 컴퓨터는 먼저 DNS(도메인 주소 시스템)에게 djangogirls.org 의 IP주소가 무엇인지 물어봅니다. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
+도로명과 도시이름, 우편번호를 쓰는 대신 IP주소라는 것을 써야 하지만요. 컴퓨터는 먼저 DNS(도메인 주소 시스템)에게 djangogirls.org 의 IP주소가 무엇인지 물어봅니다. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
 
 When you send a letter, it needs to have certain features to be delivered correctly: an address, a stamp, etc. 수령인이 이해할 수 있는 언어로 적혀져야하구요. 그렇죠? 이처럼 *데이터 패킷*에도 동일하게 적용되어야 웹사이트를 볼 수 있습니다. 우리는 HTTP (하이퍼텍스트 전송 프로토콜) 라는 프로토콜을 사용합니다.
 
