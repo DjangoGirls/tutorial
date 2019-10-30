@@ -1,10 +1,10 @@
 # 커맨드라인 시작하기
 
-> For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
+> 집에서 공부하시는 분은: [새 친구: 커맨드라인](https://www.youtube.com/watch?v=jvZLWhkzX-8)영상을 참고하세요.
 
-It's exciting, right?! You'll write your first line of code in just a few minutes! :)
+재미있을 것 같지 않아요? 몇분 내로 여러분은 코딩의 첫 줄을 쓸 수 있어요! :)
 
-**여러분에 첫 번째 친구를 소개합니다: 바로, 커맨드라인(command line) 입니다!**
+**여러분의 첫 번째 친구를 소개합니다: 바로, 커맨드라인(command line) 입니다!**
 
 해커들이 사용하는 까만 윈도우 창을 어떻게 사용하는지 보여드릴 거에요. 처음에는 약간 무서워 보일 수도 있지만, 여러분의 명령어를 기다리는 녀석일 뿐이에요.
 
