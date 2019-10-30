@@ -118,11 +118,11 @@ In the tutorial, when we want you to type in a command, we will include the `$` 
     C:\Users\olasitarska
     
 
-> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
+> 참고 'cd'는 'change directory(디렉토리 변경)'의 줄임말이에요. 'Powershell'을 사용하면 Linux나 Mac OS X 처럼 윈도우에서도 'pwd'명령어를 사용할 수 있어요.
 
 <!--endsec-->
 
-You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
+위와 비슷한 결과가 출력되었을 거예요. 커맨드라인을 열면, 항상 여러분의 '사용자 홈 디렉토리' 에서 시작하게 됩니다
 
 * * *
 
@@ -419,20 +419,20 @@ Cool, huh? :)
 
 Here is a summary of some useful commands:
 
-| 명령어(윈도우)       | 명령어(맥 OS/리눅스) | 설명                         | 예시                                                 |
-| -------------- | ------------- | -------------------------- | -------------------------------------------------- |
-| exit           | exit          | 창을 닫는다                     | **exit**                                           |
-| cd             | cd            | 디렉토리를 변경한다                 | **cd test**                                        |
-| cd             | pwd           | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)       |
-| dir            | ls            | 디렉토리 혹은 파일 목록을 보여준다        | **dir**                                            |
-| copy           | cp            | 파일을 복사한다                   | **copy c:\test\test.txt c:\windows\test.txt**  |
-| move           | mv            | 파일을 이동한다                   | **move c:\test\test.txt c:\windows\test.txt**  |
-| mkdir          | mkdir         | 새 디렉토리를 만든다                | **mkdir testdirectory**                            |
-| rmdir (or del) | rm            | delete a file              | **del c:\test\test.txt**                         |
-| rmdir /S       | rm -r         | delete a directory         | **rm -r testdirectory**                            |
-| [CMD] /?       | man [CMD]     | get help for a command     | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
+| 명령어(윈도우)       | 명령어(맥 OS/리눅스) | 설명                  | 예시                                                 |
+| -------------- | ------------- | ------------------- | -------------------------------------------------- |
+| exit           | exit          | 창을 닫는다              | **exit**                                           |
+| cd             | cd            | 디렉토리를 변경한다          | **cd test**                                        |
+| cd             | pwd           | 현재 디렉토리를 보여준다       | **cd** (Windows) or **pwd** (Mac OS / Linux)       |
+| dir            | ls            | 디렉토리 혹은 파일 목록을 보여준다 | **dir**                                            |
+| copy           | cp            | 파일을 복사한다            | **copy c:\test\test.txt c:\windows\test.txt**  |
+| move           | mv            | 파일을 이동한다            | **move c:\test\test.txt c:\windows\test.txt**  |
+| mkdir          | mkdir         | 새 디렉토리를 만든다         | **mkdir testdirectory**                            |
+| rmdir (or del) | rm            | 파일을 지운다             | **del c:\test\test.txt**                         |
+| rmdir /S       | rm -r         | 디렉토리를 지운다           | **rm -r testdirectory**                            |
+| [CMD] /?       | man [CMD]     | 명령에 대한 도움말을 표시한다    | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
 
-These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
+커맨드라인에서 실행할 수 있는 명령어들 중에 아주 일부만 소개했지만, 오늘은 이정도만 알아도 충분할 거에요. 
 
 If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
