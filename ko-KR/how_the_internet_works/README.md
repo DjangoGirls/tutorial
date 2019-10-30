@@ -6,7 +6,7 @@
 
 당신은 매일 인터넷을 사용하실거에요. 하지만 당신이 브라우저 주소창에 https://djangogirls.org 를 입력하고 `enter` 키를 누르면 어떤 일이 일어나는지 확실히 알고 있나요?
 
-The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk -- just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
+먼저 웹사이트는 여러분이 가진 영화, 음악 또는 사진과 같은 하드디스크에 저장된 파일덩어리로 이루어져 있다는 점을 먼저 이해할 필요가 있습니다. However, there is one part that is unique for websites: they include computer code called HTML.
 
 If you're not familiar with programming, it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. 웹 프라우저는 코드를 이해하고 지시에 따르고, 내가 원하는 방식으로 정확하게 구현될 수 있도록 설계되었어요.
 
