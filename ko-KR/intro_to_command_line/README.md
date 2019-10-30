@@ -12,21 +12,21 @@
 
 ## 커맨드라인은 무엇일까요?
 
-**command line** 또는 **command-line interface**라고도 불리는 윈도우는 컴퓨터에서의 파일을 보고, 처리하고, 조작하기 위한 텍스트 기반 응용 프로그램입니다. 그래픽 인터페이스가 없는 윈도우 익스플로러나 Mac의 Finder라고 봐도 되요. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
+흔히 **커맨드라인(command line)** 또는 **커맨드라인 대화창(command-line interface)**이라고도 불리는 이 윈도우는 컴퓨터에서의 파일을 보고, 처리하고, 조작하기 위한 텍스트 기반 응용 프로그램입니다. 그래픽 인터페이스가 없는 윈도우 익스플로러나 Mac의 Finder라고 봐도 되요. 커맨드라인은 *cmd*, *CLI*, *프롬프트(prompt)*, *콘솔(console)* 혹은 *터미널(terminal)*로 부르기도 해요.
 
 ## 커맨드라인 열기
 
-To start some experiments we need to open our command-line interface first.
+몇가지 실험을 시작하기 전에 먼저 여러분의 커맨드라인 창을 열어봅시다.
 
 {% include "/intro_to_command_line/open_instructions.md" %}
 
 ## 프롬프트
 
-You now should see a white or black window that is waiting for your commands.
+하얀색 혹은 까만색 배경 윈도우가 여러분의 명령을 기다리고 있는 것을 보실 수 있을 거에요
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see a `$`, like this:
+맥이나 리눅스의 경우, 아래와 같은 `$` 기호가 보일 거예요:
 
 {% filename %}command-line{% endfilename %}
 
@@ -37,7 +37,7 @@ If you're on Mac or Linux, you probably see a `$`, like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-On Windows, you probably see a `>`, like this:
+윈도우에서는 아래와 같은 `>` 기호가 보일 거에요:
 
 {% filename %}command-line{% endfilename %}
 
