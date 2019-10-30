@@ -18,7 +18,7 @@
 
 ![그림 1.1](images/internet_1.png)
 
-조금 지저분해 보이죠? In fact it is a network of connected machines (the above-mentioned *servers*). 수백, 수천 대의 기계들이요! 긴, 아주 긴 케이블들이 지구 전체를 둘러싸고 있답니다! 해저 케이블 지도 사이트 (http://submarinecablemap.com/)에 가보면 케이블이 얼마나 복잡하게 연결되어있는지 알 수 있어요. 아래 사진은 웹사이트에서 가져온 스크린 샷입니다.
+조금 지저분해 보이죠? 사실 인터넷은 수 많은 기계(앞서 얘기한 *서버*라는)들을 연결한 하나의 네트워크랍니다. 수백, 수천 대의 기계들이요! 긴, 아주 긴 케이블들이 지구 전체를 둘러싸고 있답니다! 해저 케이블 지도 사이트 (http://submarinecablemap.com/)에 가보면 케이블이 얼마나 복잡하게 연결되어있는지 알 수 있어요. 아래 사진은 웹사이트에서 가져온 스크린 샷입니다.
 
 ![그림 1.2](images/internet_3.png)
 
