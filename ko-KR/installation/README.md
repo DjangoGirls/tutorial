@@ -2,11 +2,11 @@
 
 [Django 걸스 이벤트](https://djangogirls.org/events/)가 아닌 집에서 튜토리얼을 따라하시는 분들은 이 챕터를 넘기고 [인터넷은 어떻게 작동할까요?](../how_the_internet_works/README.md) 로 바로 넘어가세요.
 
-This is because we cover installing things as they are needed in the tutorial -- this is just an additional page that gathers all of the installation instructions in one place (which is useful for some workshop formats). You can choose to install everything that is on this page right now if you wish. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation parts to you later on, as they are needed.
+이 챕터는 (워크샵에 사용하기 유용하도록) 튜토리얼에서 필요한 모든 프로그램의 설치 안내를 한곳에 모은 추가적인 페이지입니다. 만일 원하신다면 이 페이지에 있는 모든 것을 인스톨 하실수도 있고, 컴퓨터에 이것저것 설치하기 전에, 먼저 학습을 시작하고 싶다면 이번 장을 건너뛰셔도 됩니다. 뒷 부분에서도 설치에 대한 내용을 다루게 될 거에요.
 
-Good luck!
+모두 행운을 빌어요!
 
-# If you're attending a workshop
+# 만일 워크샵에 참석하신 분이라면
 
 If you are attending one of the [Django Girls events](https://djangogirls.org/events/):
 
