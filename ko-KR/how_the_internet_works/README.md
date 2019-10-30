@@ -22,7 +22,7 @@
 
 ![그림 1.2](images/internet_3.png)
 
-멋지지 않나요? But it is not possible to have a wire between every machine connected to the Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
+멋지지 않나요? 그렇지만 인터넷에 연결된 모든 기계를 선으로 연결하는 것은 불가능해요. 그래서 어떤 기계(예를 들어 https://djangogirls.org 이 저장되어 있는 것 같은)에 도달하기 위해서는 수없이 많은 다른 기계들을 통과해야 한답니다.
 
 그림으로 보면 다음과 같습니다.
 
