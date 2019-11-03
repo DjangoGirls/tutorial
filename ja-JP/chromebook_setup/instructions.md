@@ -6,10 +6,10 @@ Chromebookを使わない場合は、このセクションを飛ばして、[Pyt
 
 #### PaizaCloud Cloud IDE
 
-1. [PaizaCloud Cloud IDE](https://paiza.cloud/)へ。
-2. アカウントにサインアップします
-3. *新規サーバ作成*をクリックして、Djangoを選択してください。
-4. (ウィンドウの左側にある) [ターミナル] をクリックします。
+1. [PaizaCloud Cloud IDE](https://paiza.cloud/) へ移動します。
+2. アカウントを登録します。
+3. *新規サーバ作成* をクリックして、Djangoを選択してください。
+4. （ウィンドウの左側にある）「ターミナル」をクリックします。
 
 さて、左側にサイドバーとボタンがついた画面が見えていると思います。 下記のようなプロンプトが表示されたターミナルウィンドウを開くために、“Terminal”ボタンをクリックしてください。
 
@@ -70,4 +70,4 @@ Django Girls チュートリアルには、デプロイと呼ばれるセクシ�
 
 Chromebookでチュートリアルを行うとき、（例えばラップトップとは対照的に）インターネットに接続されているコンピュータをすでに使用しているので、この作業は少し変な感じがします。 しかし、Cloud 9のワークスペースを「開発中」の場所、PythonAnywhere をより完成したものを披露する場所として考えると役に立ちます。
 
-したがって、PythonAnywhereに新規アカウントを作成してください。 [ www.pythonanywhere.com ](https://www.pythonanywhere.com)
+したがって、[www.pythonanywhere.com](https://www.pythonanywhere.com) へ行って、PythonAnywhereの新規アカウントを作成してください。
