@@ -154,9 +154,9 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-`virtualenv` が起動すると、プロンプトの行頭に`(myvenv)`が現れます。
+コンソールでプロンプトの行頭に `(myvenv)` が付いたら、`仮想環境(virtualenv)` を起動しています。
 
-Virtual environment(仮想環境) の中で作業しているとき、`python`は自動的に正しいバージョンの`Python`を参照しますので、`python3`の代わりに`python`を使うことができます.
+仮想環境の中で作業しているとき、`python` コマンドは自動的に正しいバージョンのPythonを参照するので、`python3` コマンドの代わりに `python` コマンドを使うことができます。
 
 OK,これでDjangoのインストール前に入れておきたい依存関係の準備がすべて整いました。いよいよDjangoのインストールです！
 
