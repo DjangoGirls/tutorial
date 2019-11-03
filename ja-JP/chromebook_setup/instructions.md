@@ -29,10 +29,10 @@ Chromebookを使わない場合は、このセクションを飛ばして、[Pyt
 3. AWSアカウントを作成してください。（クレジットカード情報の登録が必要ですが、このチュートリアルは無料利用枠で進めることができます。）
 4. AWSのダッシュボードを開き、検索ボックスで *Cloud9* と入力し選択してください。
 5. Cloud9のダッシュボードで、*Create environment (環境の作成)* を選択します。
-6. 名前は*django-girls*としておきましょう。
-7. ”Configure settings (設定の構成)”ページで、”環境タイプ”は*環境 の新しいインスタンスを作成する (EC2)*を、”Instance type (インスタンスタイプ)”は*t2.micro*を選択します。（無料利用枠で利用できます） ”Cost-saving setting (コスト削減の設定)”はデフォルトの選択のままにします。その他の設定もデフォルトにしておきましょう。
-8. *Next step (次のステップ)*を選択します。
-9. *Create environment (環境の作成)*を選択します。
+6. 名前は *django-girls* としておきましょう。
+7. ”Configure settings (設定の構成)”のステップでは、”Environment Type (環境タイプ)”に *Create a new instance for environment (EC2) (新しいインスタンスを作成する (EC2))* を、”Instance type (インスタンスタイプ)”に *t2.micro* を選択します（"Free-tier eligible (無料利用枠で利用できる)" と書かれているはずです）。 ”Cost-saving setting (コスト削減の設定)”はデフォルトの選択のままにします。その他の設定もデフォルトにしておきましょう。
+8. *Next step (次のステップ)* を選択します。
+9. *Create environment (環境の作成)* を選択します。
 
 大きなメイン画面とサイドバー、そして下部にはこのような小さな画面が表示されています。
 
