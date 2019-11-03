@@ -158,20 +158,20 @@ data-collapse=true ces-->
 
 仮想環境の中で作業しているとき、`python` コマンドは自動的に正しいバージョンのPythonを参照するので、`python3` コマンドの代わりに `python` コマンドを使うことができます。
 
-OK,これでDjangoのインストール前に入れておきたい依存関係の準備がすべて整いました。いよいよDjangoのインストールです！
+OK、これで依存関係の準備はすべて整いました。いよいよDjangoのインストールです！
 
 ## Djangoのインストール {#django}
 
-今度はあなたの`virtualenv`を起動したので、Djangoをインストールすることができます。
+今 `virtualenv` を起動したので、Djangoをインストールすることができます。
 
-これを行う前に、Djangoのインストールに使用する最新バージョンの`pip`がインストールされている必要があります。
+その前に、最新バージョンの `pip` がインストールされていることを確認すべきです。pipはDjangoのインストールに使うソフトウェアです。
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~$ python -m pip install --upgrade pip
     
 
-### Requirementsファイルによってパッケージをインストールする
+### requirementsファイルによってパッケージをインストールする
 
 Requirementsファイルは`pip install`でインストールするためのパッケージリストが記載されているファイルです:
 
