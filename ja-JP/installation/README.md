@@ -35,7 +35,7 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 {% include "/code_editor/instructions.md" %}
 
-# Set up virtualenv and install Django {#virtualenv}
+# 仮想環境のセットアップとDjangoのインストール {#virtualenv}
 
 {% include "/django_installation/instructions.md" %}
 
