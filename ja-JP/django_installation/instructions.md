@@ -173,9 +173,9 @@ OK、これで依存関係の準備はすべて整いました。いよいよDja
 
 ### requirementsファイルによってパッケージをインストールする
 
-Requirementsファイルは`pip install`でインストールするためのパッケージリストが記載されているファイルです:
+requirementsファイルは `pip install` でインストールする依存関係の一覧が記載されているファイルです：
 
-前にインストールしたエディタを使用して、最初に `requirements.txt` ファイルを `djangogirls/` フォルダの中に作ります。 エディタで新しいファイルを開いて`djangogirls/`フォルダ内に`requirements.txt`という名前で保存してください。 ディレクトリはこんな感じになっているはずです:
+インストールしたエディタを使って、最初に `requirements.txt` ファイルを `djangogirls/` フォルダの中に作ります。 エディタで新しいファイルを開いて、`djangogirls/` フォルダ内に `requirements.txt` という名前で保存してください。 ディレクトリはこんな感じになっているはずです：
 
     djangogirls
     ├── myvenv
@@ -183,7 +183,7 @@ Requirementsファイルは`pip install`でインストールするためのパ�
     └───requirements.txt
     
 
-`djangogirls/requirements.txt` ファイル中に以下のテキストを追加します:
+`djangogirls/requirements.txt` ファイル中に以下のテキストを追加します：
 
 {% filename %}djangogirls/requirements.txt{% endfilename %}
 
@@ -204,7 +204,7 @@ Requirementsファイルは`pip install`でインストールするためのパ�
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> Windowsでpipを呼んだときにエラーが起きた場合は、あなたのプロジェクトのパス名がスペース・アクセント・特殊文字を含んでいないか確認してみて下さい （例 `C:\Users\User Name\djangogirls`）。 もし含まれている場合は、ディレクトリをスペース・アクセント・特殊文字が含まれていない他の場所（`C:\djangogirls`など）で作成することを検討してみてください。 新しいディレクトリに新しい仮想環境を作成してから、古いディレクトリを削除して、上記のコマンドを試してください。 （仮想環境には絶対パスが使われているので、仮想環境のディレクトリを移動させてもうまくいきません。）
+> Windowsでpipを実行してエラーが起きた場合は、あなたのプロジェクトのパス名がスペースかアクセント記号か特殊文字を含んでいないか確認して下さい （例 `C:\Users\User Name\djangogirls`）。 もし含んでいる場合は、スペース・アクセント記号・特殊文字を含まない別の場所（`C:\djangogirls`をオススメします）でディレクトリを作成することを検討してみてください。 新しいディレクトリに新しい仮想環境を作成してから、古いディレクトリを削除して、上記のコマンドを試してください。 （仮想環境には絶対パスが使われているので、仮想環境のディレクトリを移動させてもうまくいきません。）
 
 <!--endsec-->
 
