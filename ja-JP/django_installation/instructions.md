@@ -101,7 +101,7 @@ LinuxやOS Xで`virtualenv`を作るときは、`python3 -m venv myvenv`と実�
 
 ## 仮想環境の操作
 
-上に示したコマンドは仮想環境（基本的には一連のディレクトリとファイル）を含む`myvenv` という名前（あるいはあなたが選んだ名前）のディレクトリを生成します。次に我々がしたいのは、これを実行し、開始することです。
+上に示したコマンドは仮想環境（基本的には一連のディレクトリとファイル）を含む`myvenv` という名前（あるいはあなたが選んだ名前）のディレクトリを生成します。次に我々がしたいのは、仮想環境を起動することです。
 
 <!--sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
@@ -113,7 +113,7 @@ data-collapse=true ces-->
     C:\Users\Name\djangogirls > myvenv\Scripts\activate
     
 
-> **補足：**Windows 10では、`execution of scripts is disabled on this system`というエラーがWindows PowerShellに出ることがあります。 その場合は、Windows PowerShellを「管理者として開く」で、管理者権限で新しくウィンドウを開いてください。 そして、仮想環境を開始する前に、以下のコマンドを入力してください。
+> **補足：**Windows 10では、`execution of scripts is disabled on this system`というエラーがWindows PowerShellに出ることがあります。 その場合は、Windows PowerShellを「管理者として開く」で、管理者権限で新しくウィンドウを開いてください。 そして、仮想環境を起動する前に、以下のコマンドを入力してください。
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -143,7 +143,7 @@ data-collapse=true ces-->
     $ source myvenv/bin/activate
     
 
-`myvenv`のところをあながた選んだ`仮想環境(virtualenvironment)`名に置き換えることを忘れないで下さいね！
+`myvenv` のところを、あなたが選んだ `仮想環境(virtualenv)` の名前に置き換えることを忘れないで下さいね！
 
 > **備考:** `source` ではできない場合もあります。その場合は、代わりに以下のように入力してみてください：
 > 
