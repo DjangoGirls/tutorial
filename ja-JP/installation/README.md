@@ -53,16 +53,16 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 # 読んでみよう
 
-お疲れ様でした！これで準備が整いました。ワークショップが始まるまで時間あれば、いくつかのチャプターを読んでおくとよいでしょう。
+お疲れ様でした！これで準備が整いました。ワークショップが始まるまでに時間があれば、最初のチャプターいくつかを読んでおくとよいでしょう。
 
 * [インターネットのしくみ](../how_the_internet_works/README.md)
 
 * [コマンドラインを使ってみよう](../intro_to_command_line/README.md)
 
-* [Pythonをはじめよう](../python_introduction/README.md)
+* [Python入門](../python_introduction/README.md)
 
 * [Djangoってなに？](../django/README.md)
 
 # ワークショップを楽しんでください！
 
-ここまでのインストールが無事にできた方は、ワークショップでは、[プロジェクトを作成しよう！](../django_start_project/README.md)のチャプターからはじめてください。
+ここまでで最初の数チャプターの内容を扱ってきたので、ワークショップでは、[プロジェクトを作成しよう！](../django_start_project/README.md)のチャプターからはじめてください。
