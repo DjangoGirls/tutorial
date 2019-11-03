@@ -124,7 +124,7 @@ data-collapse=true ces-->
 
 <!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
 
-> **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
+> **補足：** Windows PowerShellベースのターミナルがある人気なエディター「VS Code」を使っている方で、VS Codeのターミナルを使いたい場合、仮想環境をアクティベートするために下記のコマンドを実行してください。
 > 
 >     $ . myvenv\Scripts\activate.ps1
 >     
@@ -223,7 +223,7 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
+> Ubuntu 12.04でpipを呼んだときにエラーが起きた場合は、仮想環境内にpipを再インストールするために`python -m pip install -U --force-reinstall pip` を実行して下さい。
 
 <!--endsec-->
 
