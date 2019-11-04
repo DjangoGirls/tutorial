@@ -49,7 +49,7 @@ Git はこのディレクトリ内のすべてのファイルとフォルダの�
 
 > **備考：**ファイル名の先頭のドットは重要です! もしそのファイルを作るのが難しいなら、（Macをお使いの方はFinderからドット（ . ）で始まるファイルを作れません。）そういう時はエディタでSave Asから作成すれば問題ありません。 `.txt`や `.py`などの拡張子をファイル名に入れないように気をつけてください。 ファイル名が`.gitignore`でないとGitに認識されません。
 > 
-> **備考：** `.gitignore`ファイルで指定したファイルの1つが`db.sqlite3`です。 そのファイルはローカルデータベースで、すべてのユーザーと投稿が保存されます。 私達は標準的なウェブプログラミングの慣習に従います。つまり、ローカルのテストサイトとPythonAnywhere上の本番のウェブサイトでデータベースを分けるということです。 PythonAnywhereのデータベースは開発用のマシンと同じようにSQLiteにすることができますが、通常はMySQLというSQLiteよりもたくさんのサイト訪問者に対処できるデータベースを使用します。 どちらの方法でも、GitHubのコードのコピーではSQLiteデータベースを無視することで、これまでに作成したすべての投稿と管理者はそのままローカルで利用できますが、本番環境（ブログを公開するPythonAnywhereのことです）ではそれらを再び追加する必要があります。 ローカルデータベースは本当のブログ投稿をブログから削除してしまうことを心配せずに、さまざまなことをテストできるよい遊び場として考えるといいでしょう。
+> **備考：** `.gitignore`ファイルで指定したファイルの1つが`db.sqlite3`です。 そのファイルはローカルデータベースで、すべてのユーザーと投稿が保存されます。 私達は標準的なウェブプログラミングの慣習に従います。つまり、ローカルのテストサイトとPythonAnywhere上の本番のウェブサイトでデータベースを分けるということです。 PythonAnywhereのデータベースは開発用のマシンと同じようにSQLiteにすることができますが、通常はMySQLというSQLiteよりもたくさんのサイト訪問者に対処できるデータベースを使用します。 どちらの方法でも、GitHubのコードのコピーではSQLiteデータベースを無視することで、これまでに作成したすべての投稿と管理者はそのままローカルで利用できますが、本番環境（ブログを公開するPythonAnywhereのことです）ではそれらを再び作成する必要があります。 ローカルデータベースは本当のブログ投稿をブログから削除してしまうことを心配せずに、さまざまなことをテストできるよい遊び場として考えるといいでしょう。
 
 `git add` コマンドを実行する前や、どのような変更を加えたか定かでない時は、 `git status` コマンドを使用する事をおすすめします。 これは間違ったファイルを追加またはコミットなど思いもかけない事を止めるために役立ちます。 `git status` コマンドは、あらゆる追跡されていない/変更されている/ステージされている（untracked/modifed/staged）ファイルや、ブランチの状態などさまざまな情報を返します。 出力は次のようになります。
 
@@ -58,7 +58,7 @@ Git はこのディレクトリ内のすべてのファイルとフォルダの�
     $ git status
     On branch master
     
-    Initial commit
+    No commits yet
     
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
@@ -87,7 +87,7 @@ Git はこのディレクトリ内のすべてのファイルとフォルダの�
 
 ## GitHubにコードをプッシュする
 
-[GitHub.com](https://www.github.com)にアクセスし、Sign upを押して無料の新規アカウントを作成してください。 (ワークショップの前にすでに作成していたら、それは素晴らしいです!） あなたのパスワードを忘れないようにしてください（持っていたら、パスワードマネージャーに入れておいてください）
+[GitHub.com](https://www.github.com)にアクセスし、Sign upをクリックして無料の新規アカウントを作成してください。 （ワークショップの前にすでに作成していたら、それは素晴らしいです!） あなたのパスワードを忘れないようにしてください（使っていたら、パスワードマネージャーに入れておいてください）
 
 そして、新しいリポジトリに "my-first-blog"の名前で新しいリポジトリを作成します。 "READMEで初期化する"チェックボックスをオフのままにし、.gitignoreオプションを空白にして（手動で行っています）、ライセンスをNoneのままにしておきます。
 
@@ -109,7 +109,7 @@ Git はこのディレクトリ内のすべてのファイルとフォルダの�
     $ git push -u origin master
     
 
-GitHubにpushしたら、GitHubのユーザー名とパスワードと聞かれます（コマンドライン上かポップアップウィンドウにて）。認証情報を入力したらこのようなものが表示されます。
+GitHubにプッシュするとき、GitHubのユーザー名とパスワードを聞かれます（コマンドライン上かポップアップウィンドウにて）。認証情報を入力したらこんな風に表示されます。
 
 {% filename %}command-line{% endfilename %}
 
@@ -151,25 +151,25 @@ PythonAnywhereにWebアプリケーションをデプロイするには、コー
 
 `Collecting pythonanywhere` のようなメッセージがいくつか出力され、最終的に`Successfully installed (...) pythonanywhere- (...)`という行で終わると思います。
 
-GitHub からアプリを自動的に構成するためのヘルパーを実行します。 PythonAnywhereのコンソールに次のように入力します（GitHubからクローンしたときのURLと一致するように、`<your-github-username>`の代わりにGitHubユーザー名を使用することを忘れないでください）：
+GitHub からアプリを自動的に構成するためのヘルパーを実行します。 PythonAnywhereのコンソールに次のように入力します（GitHubからクローンするときのURLと一致するように、`<your-github-username>`の代わりにご自身のGitHubユーザー名を使用することを忘れないでください）：
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
+    $ pa_autoconfigure_django.py --python=3.6 https://github.com/<your-github-username>/my-first-blog.git
     
 
 実行しているところを見れば、何をしているのかわかるでしょう。
 
 - GitHubからコードをダウンロードする
-- ちょうどあなたのPC上でやったように、PythonAnywhere上にvirtualenvを作成する。
+- ちょうどあなたのPC上でやったように、PythonAnywhere上に仮想環境 を作成する
 - 一部のデプロイメント設定で設定ファイルを更新する
 - `manage.py migrate`コマンドを使ってPythonAnywhere上のデータベースをセットアップする
 - 静的ファイルの設定（これについては後で学習します）
 - APIを通じてPythonAnywhereがあなたのWebアプリケーションを提供するように設定する
 
-PythonAnywhereではこれらすべてのステップは自動化されていますが、他のサーバープロバイダーでは同じ手順を経なければなりません。
+PythonAnywhereではこれらすべてのステップは自動化されていますが、他のサーバープロバイダーでは同じ手順を自分で実行しなければなりません。
 
-今注目すべき重要な点は、PythonAnywhere上のデータベースが、自分のPC上のデータベースとはまったく別物であることです。つまり、異なる投稿と管理者アカウントを持つことができます。 その結果、自分のコンピュータで行ったように、`createsuperuser`で管理者アカウントを初期化する必要があります。 PythonAnywhereがあなたのためにあなたのvirtualenvを自動的に起動したので、あなたがする必要があるのは以下の通りです：
+今注目すべき重要な点は、PythonAnywhere上のデータベースが、自分のPC上のデータベースとはまったく別物であることです。つまり、異なる投稿と管理者アカウントを持つことができます。 その結果、自分のコンピュータで行ったように、`createsuperuser`で管理者アカウントを初期化する必要があります。 PythonAnywhereがあなたの代わりに仮想環境を自動的に起動したので、あなたがする必要があるのは以下の通りです：
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -183,19 +183,19 @@ PythonAnywhereのコードを`ls`を使って見てみることもできます�
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
     (ola.pythonanywhere.com) $ ls
-    blog db.sqlite3 manage.py mysite requirements.txt static
+    blog  db.sqlite3  manage.py  mysite requirements.txt static
     (ola.pythonanywhere.com) $ ls blog/
-    __init__.py __pycache__ admin.py apps.py migrations models.pytests.py static
-    templates views.py  
+    __init__.py  __pycache__  admin.py  apps.py  migrations  models.py
+    tests.py  views.py
     
 
-また、「ファイル」ページに移動し、PythonAnywhereに組み込まれているファイルブラウザを使用して閲覧することもできます。 (Consoleページから他のPythonAnywhereページには右上のメニューボタンからいけます。 一度いずれかのページに移動したら、他ページへのリンクはトップのあたりにあります。)
+また、Filesページに移動し、PythonAnywhereに組み込まれているファイルブラウザを使用して閲覧することもできます。 (ConsoleページからPythonAnywhereの他のページには、右上のメニューボタンからいけます。 一度いずれかのページに移動したら、他ページへのリンクは上部にあります。)
 
 ## 動いています！
 
-あなたのサイトは現在、インターネット上で動作しているはずです！ PythonAnywhereの「Web」ページをクリックしてリンクを取得します。 あなたはあなたが望む誰とでもこれを共有することができます:)
+あなたのサイトは現在、インターネット上で動作しているはずです！ PythonAnywhereのWebページをクリックしてリンクを取得します。 あなたはあなたが望む誰とでもこれを共有することができます:)
 
-> **注** これは初心者向けのチュートリアルです。このサイトをデプロイする際にはセキュリティの観点からは理想的ではない、いくつかのショートカットをしました。 もしこのプロジェクトを利用すると決めたり、新しいプロジェクトを開始する場合は、あなたのサイトを保護するいくつかのヒントのために、[Djangoデプロイメントチェックリスト](https://docs.djangoproject.com/ja/2.0/howto/deployment/checklist/)を見直してみてください。
+> **注** これは初心者向けのチュートリアルです。このサイトをデプロイする際にはセキュリティの観点からは理想的ではない、いくつかのショートカットをしました。 もしこのプロジェクトを利用すると決めたり、新しいプロジェクトを開始する場合は、あなたのサイトを安全にするいくつかのヒントについて、[Djangoデプロイチェックリスト](https://docs.djangoproject.com/ja/2.2/howto/deployment/checklist/)を注意深く読んでください。
 
 ## デバッギングのヒント
 
@@ -204,9 +204,9 @@ PythonAnywhereのコードを`ls`を使って見てみることもできます�
 - PythonAnywhere APIトークンの作成を忘れている
 - あなたのGitHubのURLを間違えている
 - *Could not find your settings.py*というエラーが表示された場合は、おそらくGitにすべてのファイルを追加できていなかったか、 GitHubにうまくプッシュできていなかった。 この場合はGitセクションをもう一度見てください
-- PythonAnywhereのアカウントに以前サインアップしていてcollectstaticでエラーが起きたとしたら、あなたのアカウントで古いバージョンのSQLite（例えば、3.8.2）を使っている可能性があります。 その場合、上記のPythonAnywhereのセクションに記載しているコマンドを実行して新しいアカウントを作成してください。
+- PythonAnywhereのアカウントを以前に作成していてcollectstaticでエラーが起きたとしたら、あなたのアカウントで古いバージョンのSQLite（例えば、3.8.2）を使っている可能性があります。 その場合、新しいアカウントを作成して、上記のPythonAnywhereのセクションに記載しているコマンドを実行してください。
 
-サイトにアクセスしようとするとエラーが表示された場合、最初にデバッグ情報を探す場所は**エラーログ**です。 PythonAnywhereの[ Webページ](https://www.pythonanywhere.com/web_app_setup/)には、このリンクがあります。 そこにエラーメッセージがあるかどうかを確認してください。 最新のものは一番下にあります。
+サイトにアクセスしようとするとエラーが表示された場合、最初にデバッグ情報を探す場所は**エラーログ**です。 PythonAnywhereの[ Webページ](https://www.pythonanywhere.com/web_app_setup/)には、エラーログへのリンクがあります。 そこにエラーメッセージがあるかどうかを確認してください。 最新のものは一番下にあります。
 
 [ PythonAnywhereヘルプサイトの一般的なデバッグのヒント](http://help.pythonanywhere.com/pages/DebuggingImportError)もあります。
 
@@ -214,7 +214,7 @@ PythonAnywhereのコードを`ls`を使って見てみることもできます�
 
 # あなたのサイトをチェック！
 
-サイトのデフォルトページでは、ローカルコンピュータと同じように「It worked！」と表示されます。 URLの最後に`/admin/`を追加すると、管理サイトに移動します。 ユーザー名とパスワードを入力したら、サーバーに新規投稿を追加できることがわかります。本番環境のブログではローカルのテスト用データベースの投稿は送られていないことも忘れずに。
+サイトのデフォルトページでは、ローカルコンピュータと同じように「It worked！」と表示されます。 URLの最後に`/admin/`を追加すると、管理サイトに移動します。 ユーザー名とパスワードでログインしたら、Postsへのリンクからサーバーに新規投稿を追加できることがわかるでしょう。ローカルのテスト用データベースの投稿は本番環境のブログに送られていないことも忘れないてくださいね。
 
 いくつかの投稿を作成したら、ローカル環境（PythonAnywhereではなく）に戻ることができます。 ここから、変更を加えるためにはあなたのローカル環境で作業する必要があります。 これがWeb開発の一般的なワークフローです。ローカルで変更し、それらの変更をGitHubにプッシュし、それからその変更を公開しているWebサーバーにプルしてきます。 これにより、公開しているWebサイトを壊すことなく作業したり試したりできます。 とってもクールでしょ？
 

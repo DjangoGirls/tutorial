@@ -2,7 +2,7 @@
 
 # アプリケーションを拡張しよう
 
-もうウェブサイトを作るのに必要な全ての章は終わりました。どのようにモデル、URL、ビュー、テンプレートを書いたらよいかわかっていますし、またウェブサイトを素敵にするやり方もわかります。
+もうウェブサイトを作るのに必要な全ての章は終わりました。モデル、URL、ビュー、テンプレートの書き方はわかっていますし、またウェブサイトを素敵にするやり方もわかります。
 
 さあ練習しましょう！
 
@@ -54,7 +54,7 @@
 
 最初の投稿の詳細がこの**URL**で表示されるようにします：http://127.0.0.1:8000/post/1/
 
-投稿の内容を表示する`post_detail`という*ビュー*をDjangoに示すように、`blog/urls.py`ファイルでURLを作りましょう。 `blog/urls.py`をコードエディタで開いて、`path('post/<int:pk>/', views.post_detail, name='post_detail'),`という行を追加しましょう。ファイルは次のようになるでしょう。
+投稿の内容を表示する`post_detail`という*ビュー*をDjangoに示すように、`blog/urls.py`ファイルでURLを作りましょう。 `blog/urls.py`をエディタで開いて、`path('post/<int:pk>/', views.post_detail, name='post_detail'),`という行を追加しましょう。ファイルは次のようになるでしょう。
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
@@ -162,7 +162,7 @@ def post_detail(request, pk):
 
 もう一度`base.html`を拡張します。 `content`ブロックでは、投稿の公開日（存在する場合）、タイトル、およびテキストを表示します。 ここで重要なポイントについて見てみます。
 
-{% raw %}`{% if ... %} ...  {％endif％}`は、何かをチェックしたいときに使用できるテンプレートタグです。 (`if ... else...`を**Python入門**のチャプターでやったのを覚えていますか？) この場合、投稿の`公開日（published_date）`が空でないかを確認します。{% endraw %}
+{% raw %}`{% if ... %} ...  {％endif％}`は、何かをチェックしたいときに使用できるテンプレートタグです。 (`if ... else...`を**Python入門**のチャプターでやったのを覚えていますか？) この場合、投稿の`published_date`（公開日）が空でないかを確認します。{% endraw %}
 
 これで、ページを更新して`TemplateDoesNotExist`がもうなくなったかどうか確認できます。
 
@@ -192,7 +192,7 @@ def post_detail(request, pk):
     [...]
     
 
-（`<your-pythonanywhere-domain>`の部分を、自分の実際のPythonAnywhereのユーザー名に山カッコをはずして置き換えることを忘れずに。）
+（`<your-pythonanywhere-domain>`の部分を、自分の実際のPythonAnywhereのサブドメイン名に山カッコをはずして置き換えることを忘れずに。）
 
 ## サーバー上の静的ファイルの更新
 
@@ -209,6 +209,6 @@ PythonAnywhereのようなサーバは、（CSSファイルのような）「静
 
 `manage.py collectstatic`コマンドは、`manage.py migrate`のようなものです。 私たちはコードをいくつか変更してから、Djangoにサーバの静的ファイルのコレクションまたはデータベースに変更を*適用*するよう指示します。
 
-いずれにしても、[「Web」ページ](https://www.pythonanywhere.com/web_app_setup/)（コンソールの右上のメニューボタンから）を開き、**Reload**をクリックする準備ができました。そうしたらhttps://subdomain.pythonanywhere.comを見て結果を確認しましょう。
+いずれにしても、[「Web」ページ](https://www.pythonanywhere.com/web_app_setup/)を（コンソールの右上のメニューボタンから）開き、**Reload**をクリックする準備ができました。そうしたらhttps://subdomain.pythonanywhere.comを見て結果を確認しましょう。
 
 うまくいってるはずです！おめでとう :)

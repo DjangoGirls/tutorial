@@ -101,7 +101,7 @@ LinuxやOS Xで`virtualenv`を作るときは、`python3 -m venv myvenv`と実�
 
 ## 仮想環境の操作
 
-上に示したコマンドは仮想環境（基本的には一連のディレクトリとファイル）を含む`myvenv` という名前（あるいはあなたが選んだ名前）のディレクトリを生成します。次に我々がしたいのは、これを実行し、開始することです。
+上に示したコマンドは仮想環境（基本的には一連のディレクトリとファイル）を含む`myvenv` という名前（あるいはあなたが選んだ名前）のディレクトリを生成します。次に我々がしたいのは、仮想環境を起動することです。
 
 <!--sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
@@ -113,7 +113,7 @@ data-collapse=true ces-->
     C:\Users\Name\djangogirls > myvenv\Scripts\activate
     
 
-> **補足：**Windows 10では、`execution of scripts is disabled on this system`というエラーがWindows PowerShellに出ることがあります。 その場合は、Windows PowerShellを「管理者として開く」で、管理者権限で新しくウィンドウを開いてください。 そして、仮想環境を開始する前に、以下のコマンドを入力してください。
+> **補足：**Windows 10では、`execution of scripts is disabled on this system`というエラーがWindows PowerShellに出ることがあります。 その場合は、Windows PowerShellを「管理者として開く」で、管理者権限で新しくウィンドウを開いてください。 そして、仮想環境を起動する前に、以下のコマンドを入力してください。
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -122,12 +122,14 @@ data-collapse=true ces-->
 >         The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
 >     
 
-> **補足:** Windows Powershellベースの結合ターミナルがある人気なエディター「VS Code」を使っている方で、VS Codeの結合ターミナルを使いたい場合、仮想環境をアクティベートにするために下記のコマンドを実行してください:
+<!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
+
+> **補足：** 人気のあるエディタであるVS Codeを使っている方は、VS CodeはWindows Powershellベースの統合ターミナルが一緒になっているので、統合ターミナルを使う場合、仮想環境を有効にするために下記のコマンドを実行してください：
 > 
 >     $ . myvenv\Scripts\activate.ps1
 >     
 > 
-> エディターとコマンドラインのウィンドウを行き来する必要がなくなるのが利点です。
+> エディタのウィンドウとコマンドラインのウィンドウを行き来する必要がなくなるのが利点です。
 
 <!--endsec-->
 
@@ -141,7 +143,7 @@ data-collapse=true ces-->
     $ source myvenv/bin/activate
     
 
-`myvenv`のところをあながた選んだ`仮想環境(virtualenvironment)`名に置き換えることを忘れないで下さいね！
+`myvenv` のところを、あなたが選んだ `仮想環境(virtualenv)` の名前に置き換えることを忘れないで下さいね！
 
 > **備考:** `source` ではできない場合もあります。その場合は、代わりに以下のように入力してみてください：
 > 
@@ -152,34 +154,36 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-`virtualenv` が起動すると、プロンプトの行頭に`(myvenv)`が現れます。
+コンソールでプロンプトの行頭に `(myvenv)` が付いたら、`仮想環境(virtualenv)` を起動しています。
 
-Virtual environment(仮想環境) の中で作業しているとき、`python`は自動的に正しいバージョンの`Python`を参照しますので、`python3`の代わりに`python`を使うことができます.
+仮想環境の中で作業しているとき、`python` コマンドは自動的に正しいバージョンのPythonを参照するので、`python3` コマンドの代わりに `python` コマンドを使うことができます。
 
-OK,これでDjangoのインストール前に入れておきたい依存関係の準備がすべて整いました。いよいよDjangoのインストールです！
+OK、これで依存関係の準備はすべて整いました。いよいよDjangoのインストールです！
 
-## Djangoのインストール
+## Djangoのインストール {#django}
 
-今度はあなたの`virtualenv`を起動したので、Djangoをインストールすることができます。
+今 `virtualenv` を起動したので、Djangoをインストールすることができます。
 
-これを行う前に、Djangoのインストールに使用する最新バージョンの`pip`がインストールされている必要があります。
+その前に、最新バージョンの `pip` がインストールされていることを確認すべきです。pipはDjangoのインストールに使うソフトウェアです。
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~$ python -m pip install --upgrade pip
     
 
-### Requirementsファイルによってパッケージをインストールする
+### requirementsファイルによってパッケージをインストールする
 
-Requirementsファイルは`pip install`でインストールするためのパッケージリストが記載されているファイルです:
+requirementsファイルは `pip install` でインストールする依存関係の一覧が記載されているファイルです：
 
-前にインストールしたコードエディタを使用して、最初に `requirements.txt` ファイルを `djangogirls/` フォルダーの中に作ります。 コードエディタで新しいファイルを開いて`djangogirls/`フォルダ内に`requirements.txt`いう名前で保存してください。 ディレクトリはこんな感じになっているはずです:
+インストールしたエディタを使って、最初に `requirements.txt` ファイルを `djangogirls/` フォルダの中に作ります。 エディタで新しいファイルを開いて、`djangogirls/` フォルダ内に `requirements.txt` という名前で保存してください。 ディレクトリはこんな感じになっているはずです：
 
     djangogirls
+    ├── myvenv
+    │   └── ...
     └───requirements.txt
     
 
-`djangogirls/requirements.txt` ファイル中に以下のテキストを追加します:
+`djangogirls/requirements.txt` ファイル中に以下のテキストを追加します：
 
 {% filename %}djangogirls/requirements.txt{% endfilename %}
 
@@ -200,14 +204,14 @@ Requirementsファイルは`pip install`でインストールするためのパ�
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> Windowsでpipを呼んだときにエラーが起きた場合は、あなたのプロジェクトのパス名がスペース・アクセント・特殊文字を含んでいないか確認してみて下さい （例 `C:\Users\User Name\djangogirls`）。 もし含まれている場合は、ディレクトリを他のスペース・アクセント・特殊文字が含まれていない場所（`C:\djangogirls`など）で作成することを検討してみてください。 新しいディレクトリに新しい仮想環境を作成してから、古いディレクトリを削除して、上記のコマンドを試してください。 （仮想環境のディレクトリは、絶対パスが使われているので、移動させても動きません。）
+> Windowsでpipを実行してエラーが起きた場合は、あなたのプロジェクトのパス名がスペースかアクセント記号か特殊文字を含んでいないか確認して下さい （例 `C:\Users\User Name\djangogirls`）。 もし含んでいる場合は、スペース・アクセント記号・特殊文字を含まない別の場所（`C:\djangogirls`をオススメします）でディレクトリを作成することを検討してみてください。 新しいディレクトリに新しい仮想環境を作成してから、古いディレクトリを削除して、上記のコマンドを試してください。 （仮想環境には絶対パスが使われているので、仮想環境のディレクトリを移動させてもうまくいきません。）
 
 <!--endsec-->
 
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Djangoをインストールしようとしてコマンドラインがフリーズして動かなくなってしまうことがあります。その時は、以下のコマンドを代わりに入力してみてください。
+> Djangoをインストールしようとした後でコマンドラインがフリーズして動かなくなってしまうことがあります。その時は、以下のコマンドを代わりに入力してみてください。
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -219,7 +223,7 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> Ubuntu 12.04でpipを呼んだときにエラーが起きた場合は、仮想環境(virtualenv) 内にpipを再インストールするために`python -m pip install -U --force-reinstall pip` を実行して下さい。
+> Ubuntu 12.04でpipを実行してエラーが起きた場合は、仮想環境内にpipを再インストールするために `python -m pip install -U --force-reinstall pip` を実行して下さい。
 
 <!--endsec-->
 

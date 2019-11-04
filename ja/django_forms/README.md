@@ -44,7 +44,7 @@ class PostForm(forms.ModelForm):
 
 ## フォームにおけるページへのリンク
 
-`blog/templates/blog/base.html`をエディタで開きましょう。`page-header`と名付けた`div`中に次のリンクを追加します：
+`blog/templates/blog/base.html` をエディタで開きましょう。`page-header` と名付けた `div` 中に次のリンクを追加します：
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -89,7 +89,7 @@ class PostForm(forms.ModelForm):
 
 ## URL
 
-`blog/urls.py`をエディタで開き、次の内容を追加します。
+`blog/urls.py`をエディタで開き、次の行を追加します。
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -138,7 +138,7 @@ def post_new(request):
 
 ## テンプレート
 
-`blog/templates/blog`ディレクトリに`post_edit.html`ファイルを作り、コードエディタで開きましょう。フォームを動かすにはいくつかやることがあります。
+`blog/templates/blog`ディレクトリに`post_edit.html`ファイルを作り、エディタで開きましょう。フォームを動かすにはいくつかやることがあります。
 
 * フォームを表示する必要があります。 私たちは（例えば）{% raw %}`{{ form.as_p }}`{% endraw %} でこれを行うことができます。
 * 上記の行は HTMLのformタグでラップする必要があります：`<form method="POST">...</form>`
@@ -220,7 +220,7 @@ if form.is_valid():
     post.save()
 ```
 
-基本的にここでは2つのことを行います。まず `form.save` でフォームを保存することと author を追加することです (`PostForm` 内に `author` フィールドがありませんし、このフィールドは必須です) 。 `commit=False` は `Post` モデルをまだ保存しないという意味です。保存前に author を追加したいので。 ほとんどの場合、`commit = False`なしで`form.save()`を使用しますが、この場合はそれを指定する必要があります。 `post.save()`は変更を保存し（作成者を追加しつつ）、新しいブログ投稿が作成されます！
+基本的にここでは2つのことを行います。まず `form.save` でフォームを保存することと author を追加することです (`PostForm` 内に `author` フィールドがありませんし、このフィールドは必須です) 。 `commit=False` は `Post` モデルをまだ保存しないという意味です。保存前に author を追加したいので。 ほとんどの場合、`commit=False`なしで`form.save()`を使用しますが、この場合はそれを指定する必要があります。 `post.save()`は変更を保存し（作成者を追加しつつ）、新しいブログ投稿が作成されます！
 
 最後に、新しく作成された記事の `post_detail` ページを表示できれば良いですよね? そのために次のインポートを追加します:
 
@@ -312,7 +312,7 @@ Djangoはフォームのすべてのフィールドが正しいことを検証�
 {% endblock %}
 ```
 
-`blog/urls.py`をエディタで開き、次の内容を追加します。
+`blog/urls.py`をエディタで開き、次の行を追加します。
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -370,13 +370,13 @@ form = PostForm(instance=post)
 
 おめでとう！アプリケーションが完成しました。
 
-Djangoのフォームについてもっと知りたい場合、Django Projectのドキュメントを読んでください。https://docs.djangoproject.com/ja/2.2/topics/forms/
+Djangoのフォームについてもっと知りたい場合、Djangoのドキュメントを読んでください。https://docs.djangoproject.com/ja/2.2/topics/forms/
 
 ## セキュリティ
 
 リンクをクリックするだけで新しい投稿を作成できることは素晴らしいことです！ しかし、今、あなたのサイトにアクセスした人は誰でも新しいブログ投稿を作成することができます。それはおそらくあなたが望むものではありません。 ボタンはあなたのためには表示されますが、他の人には表示されないようにしましょう。
 
-`blog/templates/blog/base.html` をエディタで開き、`page-header` と名付けた `div ` とそこに以前に入力したアンカータグを見つけます。 これは次のようになります。
+`blog/templates/blog/base.html` をエディタで開き、`page-header` と名付けた `div` とそこに以前に入力したアンカータグを見つけます。 これは次のようになっています。
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -442,8 +442,8 @@ Djangoのフォームについてもっと知りたい場合、Django Projectの
     [...]
     
 
-(`<your-pythonanywhere-domain>`の部分を、自分の実際のPythonAnywhereのユーザー名に山カッコをはずして置き換えることを忘れずに)
+(`<your-pythonanywhere-domain>`の部分を、自分の実際のPythonAnywhereのサブドメイン名に山カッコをはずして置き換えることを忘れずに)
 
-* 最後に、[「Web」ページ](https://www.pythonanywhere.com/web_app_setup/) に飛んで（コンソールの右上のメニューボタンを使って）それから **Reload** を押しましょう。 変更を見るためにあなたのブログ https://subdomain.pythonanywhere.com を再読み込みしましょう。
+* 最後に、[Webページ](https://www.pythonanywhere.com/web_app_setup/) に飛んで（コンソールの右上のメニューボタンを使ってもいいですね）それから **Reload** を押しましょう。 変更を見るためにあなたのブログ https://subdomain.pythonanywhere.com を再読み込みしましょう。
 
 うまくいってるはずです！おめでとう :)
