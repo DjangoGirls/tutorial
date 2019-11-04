@@ -516,7 +516,7 @@ We've seen `>` and `<`, but what do `>=` and `<=` mean? Read them like this:
 - x `<=` y означает: x меньше или равен y
 - x `>=` y означает: x больше или равен y
 
-Awesome! Wanna do one more? Try this:
+Супер! Хочешь еще? Тогда попробуй вот это:
 
 {% filename %}command-line{% endfilename %}
 
@@ -551,14 +551,14 @@ Here you see that just like in the expression, Python is not able to compare a n
 
 Incidentally, you just learned about a new type of object in Python. It's called **Boolean**.
 
-There are only two Boolean objects:
+Существует только два логических объекта:
 
 - True
 - False
 
 But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well.)
 
-Booleans can be variables, too! See here:
+Ты можешь присваивать переменным логические значения! Смотри сюда:
 
 {% filename %}command-line{% endfilename %}
 
@@ -568,7 +568,7 @@ Booleans can be variables, too! See here:
 True
 ```
 
-You can also do it this way:
+Или это можно сделать так:
 
 {% filename %}command-line{% endfilename %}
 
