@@ -20,7 +20,7 @@ Djangoテンプレートで変数を表示するためには、次のように�
 {{ posts }}
 ```
 
-これを `blog/templates/blog/post_list.html` テンプレートでやってみましょう。 エディタでこのファイルを開き、２つめと３つめの `<div></div>` タグをまるごと `{{posts}}` に置き換えて下さい。 ファイルを保存してページをリロードしますと：
+これを `blog/templates/blog/post_list.html` テンプレートでやってみましょう。 エディタでこのファイルを開き、2つめの `<div>` から3つめの `</div>` までをまるごと `{{ posts }}` に置き換えて下さい。 ファイルを保存してページをリロードすると：
 
 ![図 13.1](images/step1.png)
 
@@ -97,12 +97,12 @@ post変数がさっきと違って、`{{ post.title }}` や `{{ post.text }}` �
     [...]
     
 
-（忘れずに `<your-pythonanywhere-domain>` を自分のPythonAnywhereのアカウント名に置き換えましょう、<> は不要です。）
+（忘れずに `<your-pythonanywhere-domain>` を自分のPythonAnywhereのサブドメイン名に置き換えましょう、<> は不要です。）
 
-* 最後に[「Web」ページ](https://www.pythonanywhere.com/web_app_setup/)を開いてアプリを**リロード**します。 （コンソールから他のPythonAnywhereページにアクセスするには、右上のメニューボタンを使います。）更新された内容が、 https://subdomain.pythonanywhere.com に反映されているはずです。ブラウザで確認してみましょう！ PythonAnywhereサイトで表示されるブログの記事が、あなたのパソコンの中のローカルサーバーのものと違っていても大丈夫です。 ローカルコンピュータにあるデータベースと、PythonAnywhere上のデータベースは同期していません。
+* 最後にPythonAnywhereの[「Web」ページ](https://www.pythonanywhere.com/web_app_setup/)を開いて、アプリを**リロード**（Reload）します。 （コンソールからPythonAnywhereの他のページにアクセスするには、右上のメニューボタンを使います。）更新された内容が、 https://subdomain.pythonanywhere.com に反映されているはずです。ブラウザで確認してみましょう！ PythonAnywhereサイトで表示されるブログの記事が、あなたのパソコンの中のローカルサーバーのものと違っていても大丈夫です。 ローカルコンピュータにあるデータベースと、PythonAnywhere上のデータベースは同期していません。
 
-頑張りましたね！ さぁ、ここまでできたら、Django 管理画面から新しい投稿を追加してみましょう。（published_date 公開日の設定を忘れずに！）投稿を追加する時、PythonAnyweherのサイトの管理画面（https://subdomain.pythonanywhere.com/admin）であることを確認してください 。できたら、リロードして投稿したものが表示されるか見てみましょう。
+頑張りましたね！ さぁ、ここまでできたら、Django 管理画面から新しい投稿を追加してみましょう。（published_date 公開日の設定を忘れずに！）投稿を追加する時、PythonAnywhereのサイトの管理画面（https://subdomain.pythonanywhere.com/admin）であることを確認してください 。できたら、リロードして投稿したものが表示されるか見てみましょう。
 
 うまく動きましたか？ここまでよく頑張りましたね！少しパソコンから離れて、休憩をとりましょう。^_^
 
-![Figure 13.4](images/donut.png)
+![図 13.4](images/donut.png)
