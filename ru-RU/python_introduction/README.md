@@ -578,7 +578,7 @@ True
 False
 ```
 
-Practice and have fun with Booleans by trying to run the following commands:
+Попрактикуйся и развлекись с логическими значениями на примере этих выражений:
 
 - `True and True`
 - `False and True`
