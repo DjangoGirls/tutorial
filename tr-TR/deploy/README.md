@@ -39,6 +39,7 @@ Git bu dizindeki tüm dizin ve dosyalardaki değişiklikleri kaydedecek, ama tak
 
     *.pyc
     *~
+    /.vscode
     __pycache__
     myvenv
     db.sqlite3
