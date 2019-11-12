@@ -38,6 +38,7 @@ O Git irá rastrear as alterações para todos os arquivos e pastas neste diret�
 
     *.pyc
     *~
+    /.vscode
     __pycache__
     myvenv
     db.sqlite3
