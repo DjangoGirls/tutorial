@@ -38,6 +38,7 @@ Git llevará un seguimiento de los cambios realizados en todos los archivos y ca
 
     *.pyc
     *~
+    /.vscode
     __pycache__
     myvenv
     db.sqlite3
