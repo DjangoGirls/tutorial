@@ -38,6 +38,7 @@ Git houdt alle wijzigingen in alle bestanden en mappen in deze map bij, maar er 
 
     *.pyc
     *~
+    /.vscode
     __pycache__
     myvenv
     db.sqlite3
