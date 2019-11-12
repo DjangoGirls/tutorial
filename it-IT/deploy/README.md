@@ -38,11 +38,12 @@ Git memorizzerà le modifiche a tutti i file e le cartelle in questa directory, 
 
     *.pyc
     *~
+    /.vscode
     __pycache__
     myvenv
     db.sqlite3
-    /statica
-    .DS_Negozio
+    /static
+    .DS_Store
     
 
 E salvalo come `.gitignore` all'interno della cartella "djangogirls".
