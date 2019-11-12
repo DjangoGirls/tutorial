@@ -38,6 +38,7 @@ Git стежитиме за змінам у всіх файлах у цій ди
 
     *.pyc
     *~
+    /.vscode
     __pycache__
     myvenv
     db.sqlite3
