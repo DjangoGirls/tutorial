@@ -38,6 +38,7 @@ Ang git ay magsubaybay sa mga pagbabago sa lahat ng mga file at mga folder sa lo
 
     *.pyc
     *~
+    /.vscode
     __pycache__
     myvenv
     db.sqlite3
