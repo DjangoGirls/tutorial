@@ -38,6 +38,7 @@ O Git irá controlar as alterações em todos os arquivos e pastas neste diretó
 
     *.pyc
     *~
+    /.vscode
     __pycache__
     myvenv
     db.sqlite3
