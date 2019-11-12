@@ -38,6 +38,7 @@ Git će pratiti sve izmene na svim fajlovima i folderima u ovom direktorijumu, a
 
     *.pyc
     *~
+    /.vscode
     __pycache__
     myvenv
     db.sqlite3
