@@ -38,6 +38,7 @@ Git yíò ṣàmójútó àwọn ìyípadà sí gbogbo àwọn fáìlì àti fó
 
     *.pyc
     *~
+    /.vscode
     __pycache__
     myvenv
     db.sqlite3
