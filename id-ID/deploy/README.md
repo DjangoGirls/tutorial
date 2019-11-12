@@ -37,9 +37,14 @@ Ketiga tempat ini penting bagi Anda. Komputer lokal Anda akan menjadi tempat pen
 > > 
 > > {% filename%} .gitignore {% endfilename%}
 > > 
-> >     * .pyc * ~
-> >      __pycache__ 
-> >     myvenv db.sqlite3 / static .DS_Store
+> >     *.pyc
+> >     *~
+> >     /.vscode
+> >     __pycache__
+> >     myvenv
+> >     db.sqlite3
+> >     /static
+> >     .DS_Store
 > >     
 > > 
 > > Dan simpan sebagai ` .gitignore </ 0> di folder "djangogirls".</p>
