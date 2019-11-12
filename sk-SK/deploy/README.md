@@ -38,6 +38,7 @@ Git bude sledovať zmeny všetkých súborov a priečinkov v tomto adresári, al
 
     *.pyc
     *~
+    /.vscode
     __pycache__
     myvenv
     db.sqlite3
