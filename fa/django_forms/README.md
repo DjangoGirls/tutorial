@@ -44,7 +44,7 @@ class PostForm(forms.ModelForm):
 
 ## لینک به یک صفحه با فرم
 
-وقت آن است که فایل `blog/templates/blog/base.html` را در ویرایشگر کد باز کنید. در بخش `div` که نام `page-header` را دارد یک لینک اضافه خواهیم کرد:
+وقت آن است که فایل `blog/templates/blog/base.html` را در ویرایشگر کد باز کنید. در `div` که نام آن `page-header` است، یک لینک اضافه می‌کنیم:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -342,7 +342,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-این ویو شبیه ویوی `post_new` ماست، درست است؟ اما نه دقیقاً. در ابتدا ما یک پارامتر `pk` اضافه از url به آن ارجاع می‌دهیم. سپس مدل `Post` را که می‌خواهیم اصلاح کنیم با دستور `get_object_or_404(Post, pk=pk)` می‌گیریم و بعد از آن یک فرم می‌سازیم و این فرم را به صورت `instance`ارسال می‌کنیم، هر دو این کارها وقتی اتفاق می‌افتد که فرم را ذخیره می‌کنیم…
+این ویو شبیه ویوی `post_new` ماست، درست است؟ اما نه دقیقاً. در ابتدا ما یک پارامتر `pk` اضافی از `urls` ارسال کرده‌ایم. سپس مدل `Post` را که می‌خواهیم اصلاح کنیم با دستور `get_object_or_404(Post, pk=pk)` می‌گیریم و بعد از آن یک فرم می‌سازیم و این فرم را به صورت `instance`ارسال می‌کنیم، هر دو این کارها وقتی اتفاق می‌افتد که فرم را ذخیره می‌کنیم…
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -370,7 +370,7 @@ form = PostForm(instance=post)
 
 تبریک! برنامه شما کامل و کامل‌تر می‌شود!
 
-اگر اطلاعات بیشتری در مورد فرم‌ها در جنگو لازم دارید باید مستندات مربوط به آن را در این آدرس بخوانید: https://docs.djangoproject.com/en/2.0/topics/forms/
+اگر اطلاعات بیشتری در مورد فر‌م‌ها در جنگو نیاز دارید، باید مستندات جنگو را مطالعه کنید: https://docs.djangoproject.com/en/2.2/topics/forms/
 
 ## امنیت
 

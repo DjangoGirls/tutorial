@@ -77,26 +77,28 @@
 
     djangogirls
     ├── blog
-    │   ├── __init__.py
-    │   ├── admin.py
-    │   ├── apps.py
-    │   ├── migrations
-    │   │   └── __init__.py
-    │   ├── models.py
-    │   ├── tests.py
-    |   ├── urls.py
-    │   └── views.py
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── __init__.py
+    │   ├── migrations
+    │   │   └── __init__.py
+    │   ├── models.py
+    │   ├── tests.py
+    │   └── views.py
     ├── db.sqlite3
     ├── manage.py
     ├── mysite
-    │   ├── __init__.py
-    │   ├── settings.py
-    │   ├── urls.py
-    │   └── wsgi.py
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
+    ├── myvenv
+    │   └── ...
     └── requirements.txt
     
+    
 
-بعد از ساختن این برنامه، باید به جنگو بگوییم تا از آن استفاده کند. این کار را در فایل `mysite/settings.py` انجام می‌دهیم -- این فایل را در ویرایشگر کد باز کنید. باید بخش `INSTALLED_APPS` را پیدا کنیم و یک خط شامل `'blog',` را دقیقاً قبل از علامت `[` اضافه کنیم. پس در نهایت شبیه این خواهد بود:
+بعد از ساختن این برنامه، باید به جنگو بگوییم تا از آن استفاده کند. این کار را در فایل `mysite/settings.py` انجام می‌دهیم -- این فایل را در ویرایشگر کد باز کنید. باید `INSTALLED_APPS` را پیدا کنیم و دقیقاً بالای علامت `[` در انتهای این بخش، خطی شامل `'blog.apps.BlogConfig',` را اضافه کنیم. پس در نهایت شبیه این خواهد بود:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -108,7 +110,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog',
+    'blog.apps.BlogConfig',
 ]
 ```
 
@@ -161,7 +163,7 @@ class Post(models.Model):
 - `models.DateTimeField` – مشخص کننده تاریخ و زمان است.
 - `models.ForeignKey` – نشان دهنده ارتباط به یک مدل دیگر است.
 
-ما همه قطعات کد را توضیح نخواهیم داد برای آنکه زمان بسیار زیادی می‌گیرد. اگر بخواهید در مورد انواع فیلدهای مدل‌ها بدانید باید به مستندات جنگو در آدرس زیر نگاهی بیندازید (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
+ما همه قطعات کد را توضیح نخواهیم داد برای آنکه زمان بسیار زیادی می‌گیرد. اگر بخواهید اطلاعات بیشتری در مورد فیلدهای یک مدل‌ و انواع آن بدانید باید نگاهی به مستندات جنگو بیندازید (https://docs.djangoproject.com/en/2.2/ref/models/fields/#field-types).
 
 منظور از `def publish(self):` چیست؟ این دقیقاً متد یا عملیات `publish` (انتشار یک پست وبلاگی) است که قبل‌تر در مورد آن صحبت کردیم. عبارت `def` نشان دهنده آن است که یک تابع یا متد تعریف شده‌ است و `publish` نام این تابع است. شما می‌توانید نام این تابع را به دلخواه عوض کنید. برای نامگذاری متدها، معمولاً از حروف کوچک و خط زیرین (underscore) به جای کاراکتر فاصله (space) استفاده می‌کنیم. برای مثال، تابعی که برای محاسبه قیمت متوسط لازم داریم به این صورت نامگذاری می‌شود `calculate_average_price`.
 

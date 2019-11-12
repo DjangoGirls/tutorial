@@ -121,19 +121,21 @@ data-collapse=true ces-->
 >         The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
 >     
 
-> **نکته:** برای کاربران ویرایشگر VS Code که درون خود یک ترمینال خط فرمان منطبق بر powershell ویندوز دارد، اگر بخواهید از این ترمینال استفاده کنید باید این دستور را برای فعال کردن محیط مجازی خود بزنید:
+<!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
+
+> **نکته:** برای کاربران ویرایشگر VS Code که همراه خود یک ترمینال مبتنی بر powershell ویندوز دارد، اگر می‌خواهید از این ترمینال استفاده کنید، باید دستور زیر را برای فعال کردن ترمینال اجرا کنید:
 > 
 >     $ . myvenv\Scripts\activate.ps1
 >     
 > 
-> فایده این کار این است که لازم نیست دائم بین پنجره ویرایشگر و پنجره خط فرمان جابجا شوید
+> مزیت آن این است که لازم نیست بین پنجره ویرایشگر کد و پنجره خط فرمان جابجا شوید
 
 <!--endsec-->
 
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-محیط مجازی را با دستور زیر فعال کنید:
+محیط مجازی خود را با اجرای دستور زیر فعال کنید:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -157,7 +159,7 @@ data-collapse=true ces-->
 
 بسیار خوب، ما همه نیازمندی‌ها را داریم حالا می‌توانیم جنگو را نصب کنیم!
 
-## نصب جنگو
+## نصب جنگو {#django}
 
 حالا که `محیط مجازی` شما فعال شده است می‌توانید جنگو را نصب کنید.
 
@@ -175,6 +177,8 @@ data-collapse=true ces-->
 در ابتدا یک فایل `requirements.txt` در پوشه `djangogirls/` بسازید. معمولاً می‌توانید از خود ویرایشگر کد که قبل‌تر نصب کرده‌اید هم برای ساختن فایل جدید استفاده کنید. یک فایل جدید در ویرایشگر کد بسازید و سپس به نام `requirements.txt`در پوشه `djangogirls/` ذخیره‌اش کنید. پوشه شما شبیه این خواهد بود:
 
     djangogirls
+    ├── myvenv
+    │   └── ...
     └───requirements.txt
     
 
