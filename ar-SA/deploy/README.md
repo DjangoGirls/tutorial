@@ -36,9 +36,14 @@ Git سوف يتعقب التغييرات لكافة الملفات والمجل�
 
 {% filename %}.gitignore{% endfilename %}
 
-    * .pyc * ~
-     __pycache__ 
-    myvenv db.sqlite3 / static .DS_Store
+    *.pyc
+    *~
+    /.vscode
+    __pycache__
+    myvenv
+    db.sqlite3
+    /static
+    .DS_Store
     
 
 واحفظه ك `.gitignore` في مجلد "djangogirls".
