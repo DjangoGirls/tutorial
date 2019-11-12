@@ -38,6 +38,7 @@ Git kommer spåra ändringar över alla filer och mappar i den här katalogen, m
 
     *.pyc
     *~
+    /.vscode
     __pycache__
     myvenv
     db.sqlite3
