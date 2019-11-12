@@ -38,6 +38,7 @@ Git akan menjejaki perubahan kepada semua fail dan folder dalam direktori ini, t
 
     *.pyc
     *~
+    /.vscode
     __pycache__
     myvenv
     db.sqlite3
