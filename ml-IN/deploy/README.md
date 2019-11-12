@@ -38,6 +38,7 @@ Git will track changes to all the files and folders in this directory, but there
 
     *.pyc
     *~
+    /.vscode
     __pycache__
     myvenv
     db.sqlite3
