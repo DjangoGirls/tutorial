@@ -38,6 +38,7 @@ Git יעקוב רק אחרי שינויים של קבצים בתיקייה הז�
 
     *.pyc
     *~
+    /.vscode
     __pycache__
     myvenv
     db.sqlite3
