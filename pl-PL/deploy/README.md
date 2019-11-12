@@ -38,6 +38,7 @@ Git będzie śledzić zmiany we wszyskich plikach i folderach w tym katalogu, al
 
     *.pyc
     *~
+    /.vscode
     __pycache__
     myvenv
     db.sqlite3
