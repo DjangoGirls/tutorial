@@ -38,6 +38,7 @@ Git sledi spremembam datotek in map v tem imeniku. Kaj pa če želimo, da sistem
 
     *.pyc
     *~
+    /.vscode
     __pycache__
     myvenv
     db.sqlite3
