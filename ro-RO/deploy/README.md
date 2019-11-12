@@ -38,6 +38,7 @@ Git va urmări modificările făcute în toate fişierele şi mapele în aceast�
 
     *.pyc
     *~
+    /.vscode
     __pycache__
     myvenv
     db.sqlite3
