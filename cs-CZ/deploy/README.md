@@ -38,6 +38,7 @@ Git bude sledovat změny souborů a složek v tomto adresáři, ale jsou tam ně
 
     *.pyc
     *~
+    /.vscode
     __pycache__
     myvenv
     db.sqlite3
