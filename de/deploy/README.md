@@ -38,6 +38,7 @@ Git wird die Änderungen an all den Dateien und Ordnern in diesem Verzeichnis au
 
     *.pyc
     *~
+    /.vscode
     __pycache__
     myvenv
     db.sqlite3
