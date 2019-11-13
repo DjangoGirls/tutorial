@@ -38,6 +38,7 @@ Git va surveiller les modifications faites à tous les fichiers et dossiers pré
 
     *.pyc
     *~
+    /.vscode
     __pycache__
     myvenv
     db.sqlite3
