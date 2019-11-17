@@ -1,6 +1,6 @@
-# CSS - ¡Que quede bonito!
+# CSS - Hazlo bonito!
 
-Nuestro blog todavía es un poco feo, ¿no te parece? ¡Es hora de ponerlo bonito! Para eso, vamos a usar CSS.
+Nuestro blog todavía parece bastante feo, ¿verdad? Tiempo para hacerla agradable! Utilizaremos CSS para eso.
 
 ## ¿Qué es CSS?
 
@@ -300,6 +300,6 @@ Guarda estos archivos y recarga tu sitio.
 
 No tengas miedo a experimentar con este CSS un poco y tratar de cambiar algunas cosas. Jugar con el CSS te puede ayudar a entender lo que hacen las distintas secciones. Si algo deja de funcionar, no te preocupes, ¡siempre puedes deshacerlo!
 
-We really recommend taking the free online courses "Basic HTML & HTML5" and "Basic CSS" on [freeCodeCamp](https://learn.freecodecamp.org/). They can help you learn all about making your websites prettier with HTML and CSS.
+Realmente recomendamos hacer cursos gratuitos online de "básico HTML & HTML5" y "CSS básico" en freeCodeCamp<0>. They can help you learn all about making your websites prettier with HTML and CSS.</p> 
 
 ¡¿Lista para el siguiente capítulo?! :)
