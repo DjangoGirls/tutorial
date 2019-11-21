@@ -140,7 +140,7 @@ Bẹ́ẹ̀ ni. Àkókò ti tó láti ṣe ìmúdójúìwọ̀n ojú-ìwé náà
 
 A ó ṣẹ̀dá fáìlì kan nínú `blog/templates/blog` tí a n pè ní `post_detail.html`, tí a ó sì ṣí i nínú olóòtú kóòdù náà.
 
-Yóò rí báyìí:
+Let's type the following code:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
