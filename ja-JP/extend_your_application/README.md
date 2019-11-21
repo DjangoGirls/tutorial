@@ -140,7 +140,7 @@ def post_detail(request, pk):
 
 `blog/templates/blog`に`post_detail.html`というファイルを作成し、コードエディタで開きます。
 
-こんな感じですね。
+Let's type the following code:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -192,7 +192,7 @@ def post_detail(request, pk):
     [...]
     
 
-（`<your-pythonanywhere-domain>`の部分を、自分の実際のPythonAnywhereのユーザー名に山カッコをはずして置き換えることを忘れずに。）
+（`<your-pythonanywhere-domain>`の部分を、自分の実際のPythonAnywhereのサブドメイン名に山カッコをはずして置き換えることを忘れずに。）
 
 ## サーバー上の静的ファイルの更新
 
