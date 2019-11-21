@@ -140,7 +140,7 @@ Sí. Es hora de actualizar la página: http://127.0.0.1:8000/
 
 Vamos crear un fichero en `blog/templates/blog` llamado `post_detail.html`, y abrirlo en el editor de código.
 
-Se verá así:
+Let's type the following code:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
