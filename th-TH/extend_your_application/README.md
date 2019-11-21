@@ -140,7 +140,7 @@ def post_detail(request, pk):
 
 We will create a file in `blog/templates/blog` called `post_detail.html`, and open it in the code editor.
 
-ผลลัพธ์ควรมีหน้าตาแบบนี้:
+Let's type the following code:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
