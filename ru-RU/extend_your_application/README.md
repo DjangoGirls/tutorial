@@ -140,7 +140,7 @@ def post_detail(request, pk):
 
 Мы создадим файл `post_detail.html` в директории `blog/templates/blog`, и откроем его в редакторе кода.
 
-Должно получиться примерно так:
+Let's type the following code:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
