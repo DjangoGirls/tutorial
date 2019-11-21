@@ -140,7 +140,7 @@ Of hayır! Başka bir hata! Ama onu nasıl halledeceğimizi biliyoruz, di mi? Bi
 
 `blog/templates/blog` dizininde `post_detail.html` adında bir dosya oluşturalım ve kod düzenleyicisinde açalım.
 
-Şöyle görünmeli:
+Let's type the following code:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
