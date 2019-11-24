@@ -100,7 +100,7 @@ Git会追踪这个目录下所有文件和文件夹的更改，但是有一些�
 
 ![](images/github_get_repo_url_screenshot.png)
 
-Now we need to hook up the Git repository on your computer to the one up on GitHub.
+现在我们需要把你计算机上的Git仓库绑定到 GitHub 上。
 
 Type the following into your console (replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets -- the URL should match the clone URL you just saw):
 
@@ -213,7 +213,7 @@ There are also some [general debugging tips on the PythonAnywhere help site](htt
 
 And remember, your coach is here to help!
 
-# Check out your site!
+# 查看你的网站！
 
 The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server -- remember, the posts from your local test database were not sent to your live blog.
 
