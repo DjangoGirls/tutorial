@@ -47,7 +47,7 @@ PaizaCloud Cloud IDE的终端是为你的指示准备的。 你可以调整窗�
 
 虚拟环境（也称virtualenv）就像个私人的盒子，我们可以将正在做的项目中有用的计算机代码储存进去。 我们使用虚拟环境来区分开我们不同项目里所用的各种各样代码，以免不同项目的代码相互混淆。
 
-Run:
+运行
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -58,7 +58,7 @@ Run:
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: `~=`).
+(请注意, 在最后一行中, 我们使用一个波形符后跟等号: `~=`)。
 
 ### GitHub
 
