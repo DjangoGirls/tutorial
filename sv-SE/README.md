@@ -42,7 +42,7 @@ In every chapter already covered, there is a link that points to the correct vid
 
 Denna tutorial underhålls av [DjangoGirls](https://djangogirls.org/). Om du hittar några felaktigheter eller vill uppdatera något, vänligen [följ riktlinjerna för att bidra](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
-## Would you like to help us translate the tutorial into other languages?
+## Vill du hjälpa oss översätta handledningen till fler språk?
 
 För tillfället sköts översättningar på crowdin.com:
 
