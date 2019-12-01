@@ -62,7 +62,7 @@ A virtual environment (also called a virtualenv) is like a private box we can st
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+建立一個[GitHub](https://github.com)帳號
 
 ### PythonAnywhere
 
