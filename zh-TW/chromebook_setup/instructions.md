@@ -2,7 +2,7 @@
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud 9 這工具會提供一個程式碼編輯器(code editor)，並讓你存取一台位於網路上的電腦，使你可以透過它安裝、撰寫、以及執行軟體。 在這個教程指南中，Cloud 9 將能當作您的*本機電腦*來執行。 您仍將在終端機介面中執行指令，跟同學使用在 OS X、Ubuntu、或是 Windows 一樣，但是您的終端機是連接到一個由 Cloud 9 為您設定在其他地方的主機。 這是為cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9)設計的指南 You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
+Cloud 9 這工具會提供一個程式碼編輯器(code editor)，並讓你存取一台位於網路上的電腦，使你可以透過它安裝、撰寫、以及執行軟體。 在這個教程指南中，Cloud 9 將能當作您的*本機電腦*來執行。 您仍將在終端機介面中執行指令，跟同學使用在 OS X、Ubuntu、或是 Windows 一樣，但是您的終端機是連接到一個由 Cloud 9 為您設定在其他地方的主機。 這是為cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9)設計的指南 您可以選擇其中一個cloud IDE，然後跟從它的指示操作。
 
 #### PaizaCloud Cloud IDE
 
