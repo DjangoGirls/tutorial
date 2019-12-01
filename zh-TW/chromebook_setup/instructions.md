@@ -9,7 +9,7 @@ Cloud 9 這工具會提供一個程式碼編輯器(code editor)，並讓你存�
 1. 到[PaizaCloud Cloud IDE](https://paiza.cloud/)
 2. 建立帳戶
 3. 點擊*新伺服器*及選擇Django應用程式
-4. Click Terminal button(on the left side of the window)
+4. 點擊「終端機」按鈕（在視窗的左側）
 
 Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
 
