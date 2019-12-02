@@ -8,7 +8,7 @@ O IDE na nuvem é uma ferramenta que fornece um editor de código e acesso a um 
 
 1. Vá para *PaizaCloud Cloud IDE *
 2. Registre-se
-3. Click *New Server* and choose the Django app
+3. Clique em *Novo Servidor* e escolha o aplicativo Django
 4. Clique no botão Terminal (no lado esquerdo da janela)
 
 Agora você deve ver uma interface com uma barra lateral, botões no canto esquerdo. Clique no botão "Terminal" para abrir a janela de terminal com prompt desta maneira:
@@ -22,10 +22,10 @@ O terminal na IDE na nuvem PaizaCloud está pronto para suas instruções. Você
 
 #### AWS Cloud9
 
-Currently Cloud 9 requires you to sign up with AWS and enter credit card information.
+Atualmente a Cloud 9 requer que você se cadastre-se com AWS e entre com informações de cartão de crédito.
 
 1. Instale o Cloud 9 através da [Chrome Web Store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Go to [c9.io](https://c9.io) and click *Get started with AWS Cloud9*
+2. Acesse [c9.io](https://c9.io) e clique em *Get started with AWS Cloud9*
 3. Sign up for an AWS account (requires credit card information, but you can use it for free)
 4. In the AWS Dashboard, enter *Cloud9* in the search bar and click it
 5. In the Cloud 9 dashboard, click *Create environment*
