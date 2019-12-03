@@ -26,7 +26,7 @@ Currently Cloud 9 requires you to sign up with AWS and enter credit card informa
 
 1. 從 [Chrome 線上應用程式商店](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)安裝 Colud 9
 2. 到[c9.io](https://c9.io)點擊及瀏覽*開始使用 AWS Cloud9*
-3. Sign up for an AWS account (requires credit card information, but you can use it for free)
+3. 註冊一個 AWS 帳號（需要信用卡資料，但您可以免費使用）
 4. In the AWS Dashboard, enter *Cloud9* in the search bar and click it
 5. In the Cloud 9 dashboard, click *Create environment*
 6. Name it *django-girls*
