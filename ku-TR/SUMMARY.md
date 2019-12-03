@@ -1,10 +1,10 @@
-# Summary
+# پوختە
 
-* [Introduction](README.md)
-* [Installation](installation/README.md) 
-  * [Command Line](installation/README.md#command-line)
-  * [Python](installation/README.md#python)
-  * [Code Editor](installation/README.md#code-editor)
+* [پێشەکی](README.md)
+* [دابەزاندن](installation/README.md) 
+  * [کۆمەند لاین](installation/README.md#command-line)
+  * [پایتۆن](installation/README.md#python)
+  * [کۆد ئێدیتەر](installation/README.md#code-editor)
   * [Virtual Environment](installation/README.md#virtualenv)
   * [Django](installation/README.md#django)
   * [Git](installation/README.md#git)
