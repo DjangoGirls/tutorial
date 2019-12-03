@@ -29,10 +29,10 @@ Currently Cloud 9 requires you to sign up with AWS and enter credit card informa
 3. 註冊一個 AWS 帳號（需要信用卡資料，但您可以免費使用）
 4. In the AWS Dashboard, enter *Cloud9* in the search bar and click it
 5. In the Cloud 9 dashboard, click *Create environment*
-6. Name it *django-girls*
+6. 將它命名為 *django-girls*
 7. While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
-8. Click *Next step*
-9. Click *Create environment*
+8. 點擊 *下一步*
+9. 點擊 *建立環境*
 
 Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
 
