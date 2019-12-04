@@ -1,3 +1,3 @@
 # कोड सम्पादक
 
-Code editor is an application that allows you to save your code so you will be able to get back to it later. You can learn where to get one from the [Code editor chapter](./code_editor/README.md)
+कोड सम्पादक एउटा एस्तो उपकरण हो जसले तपाइलाई आफ्नो कोडलाई पछि फेरि खोल्न मिल्ने गरि राख्न अनुमति दिन्छ. You can learn where to get one from the [Code editor chapter](./code_editor/README.md)
