@@ -59,7 +59,7 @@ E salvalo come `.gitignore` all'interno della cartella "djangogirls".
     $ git status
     On branch master
     
-    No commits yet
+    Initial commit
     
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
@@ -196,7 +196,7 @@ Puoi anche andare alla pagina "File" e navigare in uso del browser di file integ
 
 Il tuo sito dovrebbe ora essere online pubblicamente su Internet! Clicca sulla pagina PythonAnywhere "Web" per ottenere un link. Puoi condividerlo con chiunque tu voglia :)
 
-> **Nota** Questo è un tutorial per principianti, e nel distribuire questo sito abbiamo preso alcune scorciatoie che non sono ideali dal punto di vista della sicurezza. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) for some tips on securing your site.
+> **Nota** Questo è un tutorial per principianti, e nel distribuire questo sito abbiamo preso alcune scorciatoie che non sono ideali dal punto di vista della sicurezza. Se e quando decidi di usare questo progetto in produzione, oppure di avviare un nuovo progetto, dovresti controllare la [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) per alcuni consigli di sicurezza del tuo sito.
 
 ## Suggerimenti per il debug
 
