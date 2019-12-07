@@ -1,6 +1,6 @@
 # Django admin
 
-今作成したポストを追加、編集、削除するのにDjango adminを使います。
+ブログの投稿を追加、編集、削除するのにDjango adminを使います。
 
 `blog/admin.py`ファイルをエディタで開いて、内容をこのように変えて下さい：
 
