@@ -1,4 +1,4 @@
-# L'admin di Django
+# L'interfaccia admin di Django
 
 Per aggiungere, modificare ed eliminare le pubblicazioni che abbiamo appena modellato, useremo l'amministratore di Django.
 
@@ -52,6 +52,6 @@ Fa in modo di avere per lo meno un paio di post (non tutti però) con data di pu
 
 ![Django admin](images/edit_post3.png)
 
-If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/2.2/ref/contrib/admin/
+Se vuoi sapere di più su Django admin, puoi controllare la documentazione ufficiale di Django: https://docs.djangoproject.com/en/2.2/ref/contrib/admin/
 
 Arrivati a questo punto, wow, mi sembra proprio il caso di prendersi un buon caffè ri-energizzante, una frutta (o magari una camomilla). Hai appena creato il tuo primo modello Django — ti meriti una pausa!
