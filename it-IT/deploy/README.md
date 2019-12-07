@@ -1,6 +1,6 @@
-# Implementazione!
+# Pubblica Online!
 
-> **Nota** Il seguente capitolo è abbastanza difficile da capire fino in fondo. Non mollare e cerca di portarlo a termine; l'implementazione è una parte importante nel processo di costruzione di un sito web. Questo capitolo è inserito a metà del tutorial per far sì che il tuo tutor possa aiutarti con il processo leggermente più complesso di messa online del sito. Questo significa che puoi ancora finire il tutorial da sola se sei a corto di tempo.
+> **Nota** Il seguente capitolo può essere un po' difficile da fare fino in fondo. Non mollare e cerca di portarlo a termine; la pubblicazione online è una parte importante nel processo di costruzione di un sito web. Questo capitolo è collocato a metà del tutorial in modo che il tuo coach ti possa aiutare con il processo leggermente più complicato di messa online del sito. Questo significa che puoi ancora finire il tutorial per conto tuo se sei a corto di tempo.
 
 Fino ad ora il tuo sito web è stato presente solo sul tuo computer. Adesso imparerai come implementarlo! L'implementazione è il processo di pubblicazione online del tuo progetto in modo tale che sia visibile anche da altre persone. :)
 
@@ -194,7 +194,7 @@ Puoi anche andare alla pagina "File" e navigare in uso del browser di file integ
 
 ## Ora sei online!
 
-Il tuo sito dovrebbe ora essere in diretta su Internet pubblico! Clicca sulla pagina PythonAnywhere "Web" per ottenere un link. Puoi condividerlo con chiunque tu voglia :)
+Il tuo sito dovrebbe ora essere online pubblicamente su Internet! Clicca sulla pagina PythonAnywhere "Web" per ottenere un link. Puoi condividerlo con chiunque tu voglia :)
 
 > **Nota** Questo è un tutorial per principianti, e nel distribuire questo sito abbiamo preso alcune scorciatoie che non sono ideali dal punto di vista della sicurezza. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) for some tips on securing your site.
 
@@ -205,7 +205,7 @@ Se si osserva un errore durante l'esecuzione dello script `pa_autoconfigure_djan
 - Dimenticare di creare il tuo token API PythonAnywhere.
 - Errore nel tuo URL GitHub
 - Se vedi un errore dicendo * "Non è stato possibile trovare le impostazioni.py"*, probabilmente perché non è riuscito ad aggiungere tutti i file a Git e/o non li hai spinti fino a GitHub con successo. Dai un altro sguardo alla sezione Git qui sopra
-- If you previously signed up for a PythonAnywhere account and had an error with collectstatic, you probably have an older version of SQLite (eg 3.8.2) for your account. In that case, sign up for a new account and try the commands in the PythonAnywhere section above.
+- Se ti sei registrato in precedenza con un account su PythonAnywhere e hai avuto un errore con il comando collectstatic, probabilmente, il tuo account ha una versione un po' vecchia di SQLite (es. 3..2). In tal caso, registrati per un nuovo account e prova i comandi nella sezione PythonAnywhere qui sopra.
 
 Se vedi un errore quando provi a visitare il tuo sito, il primo posto dove cercare qualche info per il debugging è nel tuo **error log**. Troverai un link nella [ scheda Web](https://www.pythonanywhere.com/web_app_setup/) di PythonAnywhere. Vedi se ci sono messaggi di errore lì; i più recenti sono alla fine.
 
