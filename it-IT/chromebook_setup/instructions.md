@@ -8,7 +8,7 @@ Cloud IDE è uno strumento che mette a disposizione un editor di codice e l'acce
 
 1. Andare su [PaizaCloud Cloud IDE](https://paiza.cloud/)
 2. Creare un account
-3. Click *New Server* and choose the Django app
+3. Clicca su *Nuovo server* oppure <0>New Server</0> e scegli l'app Django
 4. Fare click sul pulsante Terminal (sul lato sinistro della finestra)
 
 Ora dovresti vedere un'interfaccia con una barra laterale e dei pulsanti sulla sinistra. Fai click sul pulante "Terminal" per aprire la finestra del terminale con il prompt, così:
@@ -22,11 +22,11 @@ Il terminale su PaizaCloud Cloud IDE è pronto a ricevere istruzioni. Puoi ridim
 
 #### AWS Cloud9
 
-Currently Cloud 9 requires you to sign up with AWS and enter credit card information.
+Attualmente Cloud 9 richiede la registrazione con AWS e l'inserimento delle informazioni sulla carta di credito.
 
-1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Go to [c9.io](https://c9.io) and click *Get started with AWS Cloud9*
-3. Sign up for an AWS account (requires credit card information, but you can use it for free)
+1. Installa Cloud9 dal [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+2. Vai su [c9.io](https://c9.io) e clicca *Inizia con AWS Cloud9*
+3. Registra un account AWS (richiede informazioni sulla carta di credito, ma puoi usarlo gratuitamente)
 4. In the AWS Dashboard, enter *Cloud9* in the search bar and click it
 5. In the Cloud 9 dashboard, click *Create environment*
 6. Name it *django-girls*
