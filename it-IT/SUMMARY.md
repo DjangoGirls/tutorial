@@ -2,7 +2,7 @@
 
 * [Introduzione](README.md)
 * [Installazione](installation/README.md) 
-  * [Command Line](installation/README.md#command-line)
+  * [Riga di Comando](installation/README.md#command-line)
   * [Python](installation/README.md#python)
   * [L'editor di codice](installation/README.md#code-editor)
   * [Ambiente virtuale](installation/README.md#virtualenv)
