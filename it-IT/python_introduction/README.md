@@ -438,7 +438,7 @@ Così come succede se applicato alle liste, il metodo `len()` restituisce il num
 
 Spero che abbia senso per te. :) Pronta per divertirti con i dizionari? Vai alla prossima riga per realizzare altre cose fantastiche.
 
-Puoi usare il comando `del` per cancellare un elemento nella directory. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, type in the following command:
+Puoi usare il comando `del` per cancellare un elemento nella directory. Se vuoi cancellare la voce che corrisponde al tasto `'numeri_preferiti'`, digita il seguente comando:
 
 {% filename %}command-line{% endfilename %}
 
