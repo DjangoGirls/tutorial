@@ -1,4 +1,4 @@
-Puoi [saltare questa sezione](http://tutorial.djangogirls.org/en/installation/#install-python) se non utilizzi un Chromebook. L'installazione su Chromebook segue una procedura un po' diversa. Il resto delle istruzioni di installazione puó essere ignorato.
+Puoi [saltare questa sezione](http://tutorial.djangogirls.org/en/installation/#install-python) se non utilizzi un Chromebook. L'installazione su Chromebook segue una procedura un po' diversa. Il resto delle istruzioni di installazione può essere ignorato.
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
@@ -45,9 +45,9 @@ Questa finestra in basso è il tuo terminale. Puoi usare il terminale per inviar
 
 ### Ambiente virtuale
 
-Un ambiente virtuale (in inglese virtual environment, abbreviato spesso in virtualenv) è come una scatola privata in cui possiamo istallare le dipendenze per un progetto su cui stiamo lavorando. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Un ambiente virtuale (in inglese virtual environment, abbreviato spesso in virtualenv) è come una scatola privata in cui possiamo istallare le dipendenze per un progetto su cui stiamo lavorando. Li usiamo per tenere separate le dipendenze dei nostri progetti, affinché non vengano mescolate tra di essi e non si crei confusione.
 
-Run:
+Esegui:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -58,16 +58,16 @@ Run:
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: `~=`).
+(nota che nell'ultima linea abbiamo usato una tilde seguita dal segno 'uguale':`~=`).
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+Crea un account [GitHub](https://github.com).
 
 ### PythonAnywhere
 
-The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+Il tutorial Django Girls include una sezione chiamata Deployment, che è il processo di spostamento del codice della tua applicazione web su un computer accessibile a tutti (chiamato server) in modo tale che altre persone possano vedere il tuo lavoro.
 
-This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Questa parte del tutorial è un po' strana seguendo il tutorial su un Chromebook, poiché stiamo già usando un computer che è già su internet (al contrario di, per esempio, un laptop). Tuttavia è importante, se pensiamo a Cloud9 come ad uno spazio dove abbiamo il nostro lavoro in modalità "work in progress", ed a PythonAnywhere come ad uno spazio dove pubblicare il nostro progetto quando è più completo.
 
-Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Quindi, registrati a PythonAnywhere su [www.pythonanywhere.com](https://www.pythonanywhere.com).
