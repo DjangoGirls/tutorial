@@ -27,25 +27,25 @@ Attualmente Cloud 9 richiede la registrazione con AWS e l'inserimento delle info
 1. Installa Cloud9 dal [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
 2. Vai su [c9.io](https://c9.io) e clicca *Inizia con AWS Cloud9*
 3. Registra un account AWS (richiede informazioni sulla carta di credito, ma puoi usarlo gratuitamente)
-4. In the AWS Dashboard, enter *Cloud9* in the search bar and click it
-5. In the Cloud 9 dashboard, click *Create environment*
-6. Name it *django-girls*
-7. While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
-8. Click *Next step*
-9. Click *Create environment*
+4. Nella Dashboard di AWS, inserisci *Cloud9* nella barra di ricerca e facci click
+5. Nel cruscotto Cloud 9, clicca su *Crea ambiente*
+6. Chiamalo *django-girls*
+7. Durante la configurazione delle impostazioni, selezionare *Creare una nuova istanza per l'ambiente (EC2)* per "Tipo di Ambiente" e *t2.micro* "Tipo di Istanza" (dovrebbe essere "Free-tier."). L'impostazione di default per il risparmio dei costi va bene e puoi mantenere le altre impostazioni predefinite.
+8. Clicca *Passo Successivo*
+9. Fai click su *Create Environment*
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+Ora dovresti vedere un'interfaccia con una barra laterale, una grossa finestra principale con del testo, ed una piccola finestra in basso che sembra questa:
 
 {% filename %}bash{% endfilename %}
 
     yourusername:~/workspace $
     
 
-This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+Questa finestra in basso è il tuo terminale. Puoi usare il terminale per inviare istruzioni al computer remoto Cloud9. Puoi cambiare le dimensioni della finestra e renderla più grande.
 
 ### Ambiente virtuale
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Un ambiente virtuale (in inglese virtual environment, abbreviato spesso in virtualenv) è come una scatola privata in cui possiamo istallare le dipendenze per un progetto su cui stiamo lavorando. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
 Run:
 
