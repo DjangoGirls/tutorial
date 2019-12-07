@@ -142,22 +142,22 @@ Avvia il tuo virtualenv digitando:
     $ source myvenv/bin/activate
     
 
-Remember to replace `myvenv` with your chosen `virtualenv` name!
+Ricordati di sostituire `myvenv` con il nome del `virtualenv` che hai scelto!
 
-> **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
+> **Nota:** a volte il comando `source` potrebbe non essere disponibile. In quel caso prova ad usare questo:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
->     $ . myvenv/bin/activate
+>     $ myvenv/bin/activate
 >     
 
 <!--endsec-->
 
-You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
+Sarai certo di aver avviato il `virtualenv` quando vedrai che il prompt nella tua console inizia con `(myvenv)`.
 
-When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
+Quando si lavora all'interno di un ambiente virtuale, `python` farà automaticamente riferimento alla versione corretta da utilizzare. Per cui puoi digitare `python` invece che `python3`.
 
-OK, we have all important dependencies in place. We can finally install Django!
+OK, abbiamo tutte le dipendenze importanti pronte. Finalmente possiamo installare Django!
 
 ## Installing Django {#django}
 
