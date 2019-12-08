@@ -34,7 +34,7 @@ Sua carta vai para a agência dos correios mais próxima de você. Então, ela v
 
 ![Figura 1.4](images/internet_4.png)
 
-Funciona assim - voê envia mensagens e espera alguma resposta. Ao invés de papel e caneta, você usa bytes de dados, mas a ideia é a mesma!
+Funciona assim - você envia mensagens e espera alguma resposta. Ao invés de papel e caneta, você usa bytes de dados, mas a ideia é a mesma!
 
 Ao invés de endereços com o nome da rua, cidade, código postal e nome do país, na internet usamos endereços de IP. Primeiro seu computador pergunta pelo DNS (Domain Name System - Sistema de Nome de Domínio) para traduzir djangogirls.org para um endereço de IP. Isso funciona mais ou menos como as antigas listas telefônicas em que você podia procurar o número e endereço da pessoa que queria contactar.
 
