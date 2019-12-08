@@ -114,7 +114,7 @@ Verifica che l'installazione si sia conclusa correttamente aprendo l'applicazion
 
 La versione mostrata può essere diversa da 3.6.1 -- dovrebbe corrispondere alla versione installata.
 
-**NOTA:** Se sei su Windows e ricevi un messaggio di errore che dice che `python3` non è stato trovato, prova ad utilizzare `python` (senza `3`), controlla sia la versione di Python 3.4.0 o superiore. If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
+**NOTA:** Se sei su Windows e ricevi un messaggio di errore che dice che `python3` non è stato trovato, prova ad utilizzare `python` (senza `3`), controlla sia la versione di Python 3.4.0 o superiore. Se anche questo non funziona, puoi aprire un nuovo prompt dei comandi e riprovare; questo accade se usi un prompt dei comandi aperto da prima dell'installazione di Python.
 
 * * *
 
