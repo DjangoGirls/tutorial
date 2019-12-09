@@ -11,7 +11,7 @@ Boa sorte!
 Se você está participando de uma oficina de um [ Evento Django Girls ](https://djangogirls.org/events/):
 
 * Sua oficina pode ter um "grupo de instalação" antes da oficina principal. Se você está com um grupo de instalação, essa página é para você! Siga as instruções aqui contidas para ter tudo que precisa para a oficina instalada, com a ajuda de instrutores, se necessário. Então, no workshop principal, poderás saltar as intruções de instalação que encontrares no tutorial principal, quando aparecerem.
-* A organização do workshop poderá ter-te perguntado se tentaste reslizar a instalação no computador, em casa antes de vires para o workshop. Se te oriposeram a isso, esta página é para ti! Siga as instruções. Então, no workshop principal, quando chegar à etapa de instalação, se você ainda for capaz de prosseguir você poderá pedir ajuda para a sua monitora.
+* A organização do evento pode ter pedido para você tentar realizar a instalação de tudo em casa antes do workshop começar. Se te pediram isto, esta página é para você! Siga as instruções. Então, no workshop principal, quando chegar à etapa de instalação, se você ainda for capaz de prosseguir você poderá pedir ajuda para a sua monitora.
 * Se o seu workshop não tem uma seção de instalação (ou você não a consegue localizar) e os organizadores não lhe pedirem para tentar instalar tudo antes que você chegue, pule esta página e vá direto para [Como a internet funciona](../how_the_internet_works/README.md). Você irá instalar tudo o que precisa no seguimento do tutorial.
 
 # Instalação
