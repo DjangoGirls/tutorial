@@ -6,6 +6,6 @@
 
 > **Забележка** Ако използвате Chromebook, пропуснете тази глава и се уверете, че следвате инструкциите [Настройка на Chromebook](../chromebook_setup/README.md). Облачният IDE, който сте избрали (PaizaCloud Cloud IDE или AWS Cloud9) включва редактор на код и когато отворите файл във вашия IDE от менюто File, автоматично ще използвате редактора.
 > 
-> **Note** You might have done this earlier in the Installation chapter – if so, you can skip right ahead to the next chapter!
+> ** Забележка ** Може да сте направили това по-рано в главата за инсталиране - ако е така, можете да прескочите веднага до следващата глава!
 
 {% include "/code_editor/instructions.md" %}
