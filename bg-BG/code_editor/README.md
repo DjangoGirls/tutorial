@@ -1,10 +1,10 @@
-# Code editor
+# Редактор на код
 
-> For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s) video.
+> За читателите у дома: тази глава е разгледана във видеото [Инсталиране на Python & Редактор на код](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s).
 
-You're about to write your first line of code, so it's time to download a code editor!
+На път сте да напишете първия си ред код, така че е време да изтеглите редактор на код!
 
-> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions. The cloud IDE you chose (PaizaCloud Cloud IDE or AWS Cloud9) includes a code editor, and when you open a file in your IDE from the File menu, you will automatically be using the editor.
+> **Забележка** Ако използвате Chromebook, пропуснете тази глава и се уверете, че следвате инструкциите [Настройка на Chromebook](../chromebook_setup/README.md). Облачният IDE, който сте избрали (PaizaCloud Cloud IDE или AWS Cloud9) включва редактор на код и когато отворите файл във вашия IDE от менюто File, автоматично ще използвате редактора.
 > 
 > **Note** You might have done this earlier in the Installation chapter – if so, you can skip right ahead to the next chapter!
 
