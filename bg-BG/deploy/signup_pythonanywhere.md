@@ -1,19 +1,19 @@
-PythonAnywhere is a service for running Python code on servers "in the cloud". We'll use it for hosting our site, live and on the Internet.
+PythonAnywhere е услуга за ползване на Python код на сървъри „в облака“. Ще използваме нея за хостинг на нашия сайт, на живо и в интернет.
 
-We will be hosting the blog we're building on PythonAnywhere. Sign up for a "Beginner" account on PythonAnywhere (the free tier is fine, you don't need a credit card).
+Ще направим блог, който изграждаме на PythonAnywhere. Регистрирайте се за акаунт за начинаещи в PythonAnywhere (безплатното ниво е добре, нямате нужда от кредитна карта).
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
 ![The PythonAnywhere signup page showing button to create a free 'Beginner' account](../deploy/images/pythonanywhere_beginner_account_button.png)
 
-> **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about. Also, be sure to remember your password (add it to your password manager, if you use one).
+> **Забележка** Когато избирате вашето потребителско име тук, имайте предвид, че URL адресът на вашия блог ще приеме формата `yourusername.pythonanywhere.com`, така че изберете свой собствен прякор или име на блога. Също така, запомнете вашата парола (добавете я към вашия мениджър на пароли, ако използвате такъв).
 
-## Creating a PythonAnywhere API token
+## Създаване на PythonAnywhere API токен
 
-This is something you only need to do once. When you've signed up for PythonAnywhere, you'll be taken to your dashboard. Find the link near the top right to your "Account" page:
+Това е нещо, което трябва да направите само веднъж. Когато се регистрирате за PythonAnywhere, ще бъдете отведени до таблото си за управление. Намерете линка в горния десен ъгъл до страницата си „Профил“:
 
 ![Account link on the top right on the page](../deploy/images/pythonanywhere_account.png)
 
-then select the tab named "API token", and hit the button that says "Create new API token".
+след това изберете раздела, наречен "API токен", и натиснете бутона с надпис "Създаване на нов API токен".
 
 ![The API token tab on the Account page](../deploy/images/pythonanywhere_create_api_token.png)
