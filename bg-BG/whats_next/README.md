@@ -29,14 +29,14 @@
 - [Курс по Python на Google](https://developers.google.com/edu/python/)
 - [Научете Python по трудния път](http://learnpythonthehardway.org/book/) – първоначалните упражнения са безплатни
 - [Нови уроци за кодер](http://newcoder.io/tutorials/) - това са различни практически примери за това как можете да използвате Python
-- [edX](https://www.edx.org/course?search_query=python) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
-- [Coursera's Python specialization](https://www.coursera.org/specializations/python) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
-- [Python for Everybody](https://www.py4e.com/) - a free and open version of the Coursera Python for Everybody specialization
+- [ edX ](https://www.edx.org/course?search_query=python) - можете да участвате в повечето курсове безплатно, но ако искате сертификат или по-голяма квалификация, това ще струва пари
+- [Python специализация на Coursera](https://www.coursera.org/specializations/python) - можете да участвате в няколко видео лекциии безплатно и можете да спечелите сертификат на Coursera, като вземете тези курсове
+- [Python for Everybody](https://www.py4e.com/) - безплатна и отворена версия на специализирания Python Coursera за всеки
 
-#### Working with data
+#### Работа с данни
 
-- [Codecademy's data science course](https://www.codecademy.com/learn/paths/data-science)
-- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
-- [Dataquest](https://www.dataquest.io/) – the first 30 "missions" are free
+- [Курсът по научни данни на Codecademy](https://www.codecademy.com/learn/paths/data-science)
+- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) - можете да участвате в повечето курсове безплатно, но ако искате сертификат или по-голяма квалификация, това ще струва пари
+- [Dataquest](https://www.dataquest.io/) - първите 30 "мисии" са безплатни
 
-We can't wait to see what you build next!
+Нямаме търпение да видим какво ще изградите след това!
