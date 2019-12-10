@@ -1,4 +1,4 @@
-# Django Girls Tutorial
+# فێرکاری کچانی جەنگۆ
 
 [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
