@@ -6,7 +6,7 @@
 
 ## بەخێربێیت
 
-بەخێربێیت بۆ فێرکاری کچانی جەنگۆ! We are happy to see you here :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
+بەخێربێیت بۆ فێرکاری کچانی جەنگۆ! بە سەردانی ئێوە بۆ ئێرە خۆشحاڵین :-) لەو فێرکارییەدا، دەتانبەین بۆ سەفەرێک لەژێر ناوی تەکنۆلۆژیای وێب، ئەو دەرفەتە دەخوڵقێنین کە سەرنجتان رابکێشین بۆ پێداچوونەوەیەک بەسەر هەموو ئەو وردەبەشانە کە پێویستە لەگەڵ یەکتری بن بۆ ئەوەی وێب لەسەرگەڕ بێت وەکوو دەیزانین.
 
 As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
 
