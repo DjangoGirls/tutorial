@@ -1,34 +1,34 @@
-# What's next?
+# Какво следва?
 
-Congratulate yourself! **You're totally awesome**. We're proud! <3
+Поздравете се! **Ти си напълно страхотна**. Гордеем се! <3
 
-### What to do now?
+### Какво да правим сега?
 
-Take a break and relax! You have just done something really huge.
+Направете почивка и се отпуснете! Току-що направихте нещо наистина огромно.
 
-After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
+След това, не забравяйте да следвате Django Girls във [ Facebook ](http://facebook.com/djangogirls) или [ Twitter ](https://twitter.com/djangogirls).
 
-### Can you recommend any further resources?
+### Можете ли да препоръчате допълнителни ресурси?
 
-Yes! There are a *lot* of resources online for learning all kinds of programming skills – it can be pretty daunting to work out where to go next, but we've got you covered. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
+Да! Има *много* онлайн ресурси за научаване на всякакви умения за програмиране - може да бъде доста тежко да разберете как продължите пътя, но не се беспокойте. Каквито и да бяха интересите ви преди да дойдете на Django Girls и каквито и интереси сте разработили през ръководството, ето някои безплатни ресурси (или ресурси с големи безплатни компоненти), които можете да използвате, за да стигнете до това, което искате.
 
 #### Django
 
-- Our other book, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
-- [Django's official tutorial](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
-- [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
+- Другата ни книга, [Учебник за момичета на Django: Разширения](https://tutorial-extensions.djangogirls.org/)
+- [Официалното ръководство на Django](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
+- [Първи стъпки с видео уроци на Django](http://www.gettingstartedwithdjango.com/)
 
-#### HTML, CSS and JavaScript
+#### HTML, CSS и JavaScript
 
-- [Codecademy's web development course](https://www.codecademy.com/learn/paths/web-development)
+- [Курс за уеб разработка на Codecademy](https://www.codecademy.com/learn/paths/web-development)
 - [freeCodeCamp](https://www.freecodecamp.org/)
 
 #### Python
 
-- [Codecademy's Python course](https://www.codecademy.com/learn/learn-python)
-- [Google's Python course](https://developers.google.com/edu/python/)
-- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – the initial exercises are free
-- [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
+- [Курс по Python на Codecademy](https://www.codecademy.com/learn/learn-python)
+- [Курс по Python на Google](https://developers.google.com/edu/python/)
+- [Научете Python по трудния път](http://learnpythonthehardway.org/book/) – първоначалните упражнения са безплатни
+- [Нови уроци за кодер](http://newcoder.io/tutorials/) - това са различни практически примери за това как можете да използвате Python
 - [edX](https://www.edx.org/course?search_query=python) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
 - [Coursera's Python specialization](https://www.coursera.org/specializations/python) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
 - [Python for Everybody](https://www.py4e.com/) - a free and open version of the Coursera Python for Everybody specialization
