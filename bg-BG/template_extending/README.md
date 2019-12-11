@@ -1,14 +1,14 @@
-# Template extending
+# Разширяване на шаблона
 
-Another nice thing Django has for you is **template extending**. What does this mean? It means that you can use the same parts of your HTML for different pages of your website.
+Друго хубаво нещо, което Django има за вас, е **разширяване на шаблона**. Какво означава това? Това означава, че можете да използвате същите части на вашия HTML за различни страници на вашия уебсайт.
 
-Templates help when you want to use the same information or layout in more than one place. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
+Шаблоните помагат, когато искате да използвате една и съща информация или оформление на повече от едно място. Не е нужно да се повтаряте във всеки файл. И ако искате да промените нещо, не е необходимо да го правите във всеки шаблон, само в един!
 
-## Create a base template
+## Създайте основен шаблон
 
-A base template is the most basic template that you extend on every page of your website.
+Базовият шаблон е най-основният шаблон, който разширявате на всяка страница от вашия уебсайт.
 
-Let's create a `base.html` file in `blog/templates/blog/`:
+Нека създадем `base.html` файл в `blog/templates/blog/`:
 
     blog
     └───templates
@@ -17,7 +17,7 @@ Let's create a `base.html` file in `blog/templates/blog/`:
                 post_list.html
     
 
-Then open it up in the code editor and copy everything from `post_list.html` to `base.html` file, like this:
+След това го отворете в редактора на кода и копирайте всичко от `post_list.html` във `base.html` файл, като този:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -55,7 +55,7 @@ Then open it up in the code editor and copy everything from `post_list.html` to 
 </html>
 ```
 
-Then in `base.html`, replace your whole `<body>` (everything between `<body>` and `</body>`) with this:
+След това в `base.html` заменете целия си `<body>` (всичко между `<body>` и `</body>`) с това:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -75,7 +75,7 @@ Then in `base.html`, replace your whole `<body>` (everything between `<body>` an
 </body>
 ```
 
-{% raw %}You might notice this replaced everything from `{% for post in posts %}` to `{% endfor %}` with: {% endraw %}
+{% raw %}Може да забележите, че това замени всичко от `{% for post in posts %}` до `{% endfor %}` с: {% endraw %}
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -84,7 +84,7 @@ Then in `base.html`, replace your whole `<body>` (everything between `<body>` an
 {% endblock %}
 ```
 
-But why? You just created a `block`! You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). We will show you how to do this in a moment.
+Но защо? Току-що създадохте `block`! Използвахте шаблонния маркер `{% block %}`, за да направите област, в която да бъде вмъкнат HTML код. That HTML will come from another template that extends this template (`base.html`). We will show you how to do this in a moment.
 
 Now save `base.html` and open your `blog/templates/blog/post_list.html` again in the code editor. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
 
