@@ -1,10 +1,10 @@
-# Let’s start with Python
+# Да започнем с Python
 
-We're finally here!
+Най-накрая сме тук!
 
-But first, let us tell you what Python is. Python is a very popular programming language that can be used for creating websites, games, scientific software, graphics, and much, much more.
+Но първо нека ви разкажем какво е Python. Python е много популярен език за програмиране, който може да се използва за създаване на уебсайтове, игри, научен софтуер, графика и много, много друго.
 
-Python originated in the late 1980s and its main goal is to be readable by human beings (not only machines!). This is why it looks simpler than other programming languages, but don't worry – Python is also really powerful!
+Python възниква в края на 80-те години и основната му цел е да бъде четен от хора (не само от машини!). Ето защо той изглежда по-прост от другите езици за програмиране, но не се притеснявайте - Python също е наистина мощен!
 
 # Python installation
 
