@@ -84,9 +84,9 @@
 {% endblock %}
 ```
 
-Но защо? Току-що създадохте `block`! Използвахте шаблонния маркер `{% block %}`, за да направите област, в която да бъде вмъкнат HTML код. That HTML will come from another template that extends this template (`base.html`). We will show you how to do this in a moment.
+Но защо? Току-що създадохте `block`! Използвахте шаблонния маркер `{% block %}`, за да направите област, в която да бъде вмъкнат HTML код. Този HTML код ще идва от друг шаблон, който разширява този шаблон (`base.html`). Ще ви покажем как да направите това след малко.
 
-Now save `base.html` and open your `blog/templates/blog/post_list.html` again in the code editor. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
+Сега запишете `base.html` и отворете вашия `blog/templates/blog/post_list.html` отново в редактора на кода. {% raw %} Ще премахнете всичко по-горе `{% for post in posts %}` и под `{% endfor %}`. Когато приключите, файлът ще изглежда така:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -102,9 +102,9 @@ Now save `base.html` and open your `blog/templates/blog/post_list.html` again in
 {% endfor %}
 ```
 
-We want to use this as part of our template for all the content blocks. Time to add block tags to this file!
+Искаме да използваме това като част от нашия шаблон за всички съдържателни блокове. Време е да добавите блокови тагове към този файл!
 
-{% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. Like this:{% endraw %}
+{% raw %}Искате вашият маркер за блока да съвпада с маркера във вашия `base.html` файл. Освен това искате той да включва всички кодове, които принадлежат във вашите блокове на съдържание. За целта поставете всичко между `{% block content %}` и `{% endblock %}`. Ето така:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -122,7 +122,7 @@ We want to use this as part of our template for all the content blocks. Time to 
 {% endblock %}
 ```
 
-Only one thing left. We need to connect these two templates together. This is what extending templates is all about! We'll do this by adding an extends tag to the beginning of the file. Like this:
+Остана само едно нещо. Трябва да свържем тези два шаблона заедно. За това става въпрос в разширяващите се шаблони! Ще направим това, като добавим маркер за разширения в началото на файла. Ето така:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -142,6 +142,6 @@ Only one thing left. We need to connect these two templates together. This is wh
 {% endblock %}
 ```
 
-That's it! Save the file, and check if your website is still working properly. :)
+Това е! Запазете файла и проверете дали уебсайтът ви все още работи правилно. :)
 
-> If you get the error `TemplateDoesNotExist`, that means that there is no `blog/base.html` file and you have `runserver` running in the console. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+> Ако получите грешката `TemplateDoesNotExist`, това означава, че няма `blog/base.html` файл и имате `runserver` работещ в конзолата. Опитайте се да го спрете (като натиснете Ctrl + C - клавишите Control и C заедно) и го рестартирайте, като изпълните команда `python Manag.py runserver`.
