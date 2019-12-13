@@ -35,7 +35,7 @@ Muchos de los pasos citados abajo hacen referencia a la "consola", "terminal", "
 
 {% include "/code_editor/instructions.md" %}
 
-# Set up virtualenv and install Django {#virtualenv}
+# Crea un entorno virtual (virtualenv) e instala Django {#virtualenv}
 
 {% include "/django_installation/instructions.md" %}
 
