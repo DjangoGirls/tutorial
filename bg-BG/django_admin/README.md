@@ -1,8 +1,8 @@
-# Django admin
+# Администратор на Django
 
-To add, edit and delete the posts we've just modeled, we will use Django admin.
+За добавяне, редактиране и изтриване на публикациите, които току-що сме моделирали, ще използваме администратора на Django.
 
-Let's open the `blog/admin.py` file in the code editor and replace its contents with this:
+Нека отворим файла `blog/admin.py` в редактора на кода и заменим съдържанието му с това:
 
 {% filename %}blog/admin.py{% endfilename %}
 
@@ -13,15 +13,15 @@ from .models import Post
 admin.site.register(Post)
 ```
 
-As you can see, we import (include) the Post model defined in the previous chapter. To make our model visible on the admin page, we need to register the model with `admin.site.register(Post)`.
+Както можете да видите, ние импортираме (включваме) модела Post, дефиниран в предишната глава. За да направим модела ни видим на страницата на администратора, трябва да регистрираме модела с `admin.site.register(Post)`.
 
-OK, time to look at our Post model. Remember to run `python manage.py runserver` in the console to run the web server. Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
+Добре, време да разгледаме нашия модел Post. Не забравяйте да стартирате `python manage.py runserver` в конзолата, за да стартирате уеб сървъра. Отидете до вашия браузър и напишете адреса http://127.0.0.1:8000/admin/. Ще видите страница за вход като тази:
 
-![Login page](images/login_page2.png)
+![Страница за вход](images/login_page2.png)
 
-To log in, you need to create a *superuser* - a user account that has control over everything on the site. Go back to the command line, type `python manage.py createsuperuser`, and press enter.
+За да влезете, трябва да създадете *superuser* - потребителски акаунт, който има контрол върху всичко в сайта. Върнете се в командния ред, напишете `python manage.py createsuperuser` и натиснете enter.
 
-> Remember, to write new commands while the web server is running, open a new terminal window and activate your virtualenv. We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
+> Не забравяйте, че за да пишете нови команди, докато уеб сървърът работи, отворете нов прозорец на терминала и активирайте своя virtualenv. Прегледахме как да пишете нови команди в **Вашия първи проект на Django!**, в секцията **Стартиране на уеб сървъра**.
 
 {% filename %}Mac OS X or Linux:{% endfilename %}
 
@@ -33,7 +33,7 @@ To log in, you need to create a *superuser* - a user account that has control ov
     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
     
 
-When prompted, type your username (lowercase, no spaces), email address, and password. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
+Когато бъдете подканени, въведете потребителското си име (малки букви, без интервали), имейл адрес и парола. **Не се притеснявайте, че не можете да видите паролата, която въвеждате - така трябва да бъде.** Въведете я и натиснете `enter`, за да продължите. Резултатът трябва да изглежда така (където потребителското име и имейл трябва да са ваши собствени):
 
     Username: ola
     Email address: ola@example.com
@@ -42,16 +42,16 @@ When prompted, type your username (lowercase, no spaces), email address, and pas
     Superuser created successfully.
     
 
-Return to your browser. Log in with the superuser's credentials you chose; you should see the Django admin dashboard.
+Върнете се в браузъра си. Влезте с избраните от вас име и парола на superuser; трябва да видите таблото за управление на Django.
 
-![Django admin](images/django_admin3.png)
+![Django администратор](images/django_admin3.png)
 
-Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content –- it's only visible to you on your local computer -- you can copy-paste some text from this tutorial to save time. :)
+Отидете на постове и експериментирайте малко с тях. Добавете пет или шест публикации в блога. Не се притеснявайте за съдържанието - вижда се само на вашия локален компютър - можете да копирате и поставите някакъв текст от този урок, за да спестите време. :)
 
-Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
+Уверете се, че поне две или три публикации (но не всички) имат зададена дата на публикуване. По-късно ще бъде полезно.
 
-![Django admin](images/edit_post3.png)
+![Django администратор](images/edit_post3.png)
 
-If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/2.2/ref/contrib/admin/
+Ако искате да знаете повече за администратора на Django, трябва да проверите документацията на Django: https://docs.djangoproject.com/en/2.2/ref/contrib/admin/
 
-This is probably a good moment to grab a coffee (or tea) or something to eat to re-energize yourself. You created your first Django model – you deserve a little break!
+Това вероятно е подходящ момент да вземете кафе (или чай) или нещо за хапване, за да се "зареите". Създадохте първия си модел Django - заслужавате малка почивка!
