@@ -348,9 +348,9 @@ OS X и Linux имат команда `man`, която ви предостав�
 
 <!--endsec-->
 
-Now time to delete the `practice` directory:
+Сега време за изтриване на директорията `practice`:
 
-> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
+> **Внимание**: Изтриването на файлове с помощта на `del`, `rmdir` или `rm` е невъзстановимо, което означава, *изтритите файлове ще бъдат отиде завинаги*! Затова бъдете много внимателни с тази команда.
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
@@ -371,7 +371,7 @@ Now time to delete the `practice` directory:
 
 <!--endsec-->
 
-Done! To be sure it's actually deleted, let's check it:
+Готво! За да сме сигурни, че е действително изтрита, нека проверим:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
