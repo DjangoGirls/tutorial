@@ -78,7 +78,7 @@
 
 <!--endsec-->
 
-And then hit `enter`. This is our result:
+И след това натиснете `enter`. Това е нашият резултат:
 
 {% filename %}command-line{% endfilename %}
 
@@ -86,17 +86,17 @@ And then hit `enter`. This is our result:
     olasitarska
     
 
-As you can see, the computer has just printed your username. Neat, huh? :)
+Както можете да видите, компютърът току-що отпечата вашето потребителско име. Яко, а? :)
 
-> Try to type each command; do not copy-paste. You'll remember more this way!
+> Опитайте да въведете всяка команда; не копирайте-поставете. Ще запомните повече по този начин!
 
-## Basics
+## Основи
 
-Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
+Всяка операционна система има малко по-различен набор от команди за командния ред, така че не забравяйте да следвате инструкциите за вашата операционна система. Нека опитаме това, става ли?
 
-### Current directory
+### Текуща директория
 
-It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
+Би било хубаво да знаем къде сме сега, нали? Да видим. Въведете тази команда и натиснете `enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -106,7 +106,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     /Users/olasitarska
     
 
-> Note: 'pwd' stands for 'print working directory'.
+> Забележка: 'pwd' означава 'print working directory' (принтиране работна директория).
 
 <!--endsec-->
 
@@ -118,33 +118,33 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     C:\Users\olasitarska
     
 
-> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
+> Забележка: 'cd' означава 'change directory' (промяна на директория). С powershell можете да използвате pwd точно както в Linux или Mac OS X.
 
 <!--endsec-->
 
-You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
+Вероятно ще видите нещо подобно на вашата машина. След като отворите командния ред, обикновено стартирате в домашната директория на вашия потребител.
 
 * * *
 
-### Learn more about a command
+### Научете повече за команда
 
-Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
+Много команди, които можете да въведете в командния ред, имат вградена помощ, която можете да показвате и четете! Например, за да научите повече за текущата команда на директория:
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X and Linux have a `man` command, which gives you help on commands. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
+OS X и Linux имат команда `man`, която ви предоставя помощ за команди. Опитайте `man pwd` и вижте какво пише, или поставете `man` преди други команди, за да видите помощта им. Изходът на `man` обикновено се изписва на страницата. Използвайте интервала, за да преминете към следващата страница, и `q`, за да прекратите прегледа на помощта.
 
 <!--endsec-->
 
 <!--sec data-title="Command Help: Windows" data-id="windows_help" data-collapse=true ces-->
 
-Adding a `/?` suffix to most commands will print the help page. You may need to scroll your command window up to see it all. Try `cd /?`.
+Добавянето на `/?` суфикс към повечето команди ще отпечата помощната страница. Може да се наложи да превъртите прозореца на вашата команда нагоре, за да видите всичко. Опитайте `cd /?`.
 
 <!--endsec-->
 
-### List files and directories
+### Списък на файлове и директории
 
-So what's in it? It'd be cool to find out. Let's see:
+И така, какво има в него? Ще е готино да разберем. Да видим:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -173,13 +173,13 @@ So what's in it? It'd be cool to find out. Let's see:
     ...
     
 
-> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
+> Забележка: В powershell можете също да използвате 'ls' като в Linux и Mac OS X. <!--endsec-->
 
 * * *
 
-### Change current directory
+### Промяна на текущата директория
 
-Now, let's go to our Desktop directory:
+Сега, нека да отидем на вашата директория Desktop:
 
 <!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
 
@@ -197,7 +197,7 @@ Now, let's go to our Desktop directory:
     $ cd Desktop
     
 
-Note that the directory name "Desktop" might be translated to the language of your Linux account. If that's the case, you'll need to replace `Desktop` with the translated name; for example, `Schreibtisch` for German.
+Отбележи, че името на директорията "Desktop" може да се преведе на езика на вашия Linux акаунт. В такъв случай ще трябва да замените ` Desktop ` с преведеното име; например, `Работен плот` за български език.
 
 <!--endsec-->
 
@@ -210,7 +210,7 @@ Note that the directory name "Desktop" might be translated to the language of yo
 
 <!--endsec-->
 
-Check if it's really changed:
+Проверете дали наистина е променена:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -232,9 +232,9 @@ Check if it's really changed:
 
 <!--endsec-->
 
-Here it is!
+Ето го!
 
-> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
+> PRO съвет: ако напишете `cd D` и след това натиснете `tab` на клавиатурата си, командният ред автоматично ще попълни останалото име, за да можете да навигирате по-бързо. Ако има повече от една папка, започваща с „D“, натиснете два пъти клавиша `tab`, за да получите списък с опции.
 
 * * *
 
