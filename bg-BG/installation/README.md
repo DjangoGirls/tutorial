@@ -10,59 +10,59 @@
 
 Ако присъствате на някое от събитията на [Django Girls](https://djangogirls.org/events/):
 
-* Your workshop may have an "installation party" before the main workshop. If you are at an installation party, this page is for you! Follow the instructions here to get everything you need for the workshop installed, with the help of the coaches if needed. Then at the main workshop, you'll be able to skip installation instructions you'll encounter in the main tutorial when you get to them.
-* The organizers of your workshop may have asked you to try at home to install everything on your computer before the workshop starts. If you have been asked to do that, this page is for you! Follow the instructions here, as best you can. Then at the main workshop, when you get to an installation step in the main tutorial, if you were not able to get that piece installed you can get help from your coach.
-* If your workshop does not have an installation party (or you couldn't attend), and if the organizers didn't ask you to try to install everything before you arrived, skip this page and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter. You'll be installing everything you need as you work through the tutorial.
+* Вашата работилница може да има "парти за инсталиране" преди основната работилница. Ако сте на парти за инсталиране, тази страница е за вас! Следвайте инструкциите тук, за да получите всичко необходимо за работилницата, с помощта на треньорите, ако е необходимо. След това в основната работилница ще можете да пропуснете инструкциите за инсталиране, които ще срещнете в главния урок, когато стигнете до тях.
+* Организаторите на вашата работилница може би са ви помолили да опитате у дома, за да инсталирате всичко на вашия компютър, преди да започне уъркшопът. Ако сте били помолени да направите това, тази страница е за вас! Следвайте инструкциите тук, както можете най-добре. След това в основната работилница, когато стигнете до стъпка за инсталиране в основния урок, ако не сте успели да инсталирате това парче, можете да получите помощ от вашия треньор.
+* Ако вашият уъркшоп няма парти за инсталиране (или не можете да присъствате) и ако организаторите не са ви помолили да опитате да инсталирате всичко преди да сте пристигнали, пропуснете тази страница и отидете направо към главата [Как работи Интернет](../how_the_internet_works/README.md). Ще инсталирате всичко необходимо, докато работите през урока.
 
-# Installation
+# Инсталиране
 
-In this tutorial you will be building a blog. In order to do that, as you go through the tutorial you'll be instructed on how to install various software on your computer and set up some online accounts as they are needed. This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
+В този урок ще изграждате блог. За да направите това, докато преминавате през урока, ще бъдете инструктирани как да инсталирате различен софтуер на вашия компютър и да настроите някои онлайн акаунти, колкото са необходими. Тази страница събира на едно място всички инструкции за инсталиране и регистрация (което е полезно за някои формати на работилницата).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
 
 <!--endsec-->
 
-# Brief intro to the command line {#command-line}
+# Кратко въведение в командния ред {#command-line}
 
-Many of the steps below reference the "console", "terminal", "command window", or "command line" -- these all mean the same thing: a window on your computer where you can enter commands. When you get to the main tutorial, you'll learn more about the command line. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
+Много от стъпките по-долу се позовават на "конзолата", "терминала", "командния прозорец" или "командния ред" - всичко това означава едно и също нещо: прозорец на вашия компютър, в който можете да въведете команди. Когато стигнете до главния урок, ще научите повече за командния ред. Засега основното, което трябва да знаете, е как да отворите команден прозорец и как изглежда: {% include "/intro_to_command_line/open_instructions.md" %}
 
-# Install Python {#python}
+# Инсталиране на Python {#python}
 
 {% include "/python_installation/instructions.md" %}
 
-# Install a code editor {#code-editor}
+# Инсталиране на редактор на код {#code-editor}
 
 {% include "/code_editor/instructions.md" %}
 
-# Set up virtualenv and install Django {#virtualenv}
+# Настройте virtualenv и инсталирайте Django {#virtualenv}
 
 {% include "/django_installation/instructions.md" %}
 
-# Install Git {#git}
+# Инсталиране на Git {#git}
 
 {% include "/deploy/install_git.md" %}
 
-# Create a GitHub account {#github}
+# Създаване на акаунт в GitHub {#github}
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password (add it to your password manager, if you use one).
+Отидете на [GitHub.com](https://www.github.com) и се регистрирайте за нов безплатен потребителски акаунт. Не забравяйте да запомните паролата си (добавете я към вашия мениджър на пароли, ако използвате такъв).
 
-# Create a PythonAnywhere account {#pythonanywhere}
+# Създаване на акаунт в PythonAnywhere {#pythonanywhere}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-# Start reading
+# Започнете да четете
 
-Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
+Поздравления, всички сте готови и готови да тръгнете! Ако все още имате известно време преди уъркшопа, би било полезно да започнете да четете няколко от началните глави:
 
-* [How the internet works](../how_the_internet_works/README.md)
+* [Как работи интернет](../how_the_internet_works/README.md)
 
-* [Introduction to the command line](../intro_to_command_line/README.md)
+* [Въведение в командния ред](../intro_to_command_line/README.md)
 
-* [Introduction to Python](../python_introduction/README.md)
+* [Въведение в Python](../python_introduction/README.md)
 
-* [What is Django?](../django/README.md)
+* [Какво е Django?](../django/README.md)
 
-# Enjoy the workshop!
+# Насладете се на уъркшопа!
 
-When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
+Когато започнете семинара, ще можете да преминете направо към [първия си проект на Django!](../django_start_project/README.md), защото вече сте обхванали материала в по-ранните глави.
