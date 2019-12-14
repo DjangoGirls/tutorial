@@ -391,9 +391,9 @@ OS X и Linux имат команда `man`, която ви предостав�
 
 <!--endsec-->
 
-### Exit
+### Изход
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+Това е засега! Можете спокойно да затворите командния ред. Да го направим по хакерския начин, добре? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -413,29 +413,29 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--endsec-->
 
-Cool, huh? :)
+Готино, а? :)
 
-## Summary
+## Обобщение
 
-Here is a summary of some useful commands:
+Ето обобщение на някои полезни команди:
 
-| Command (Windows) | Command (Mac OS / Linux) | Description                | Example                                            |
-| ----------------- | ------------------------ | -------------------------- | -------------------------------------------------- |
-| exit              | exit                     | close the window           | **exit**                                           |
-| cd                | cd                       | change directory           | **cd test**                                        |
-| cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)       |
-| dir               | ls                       | list directories/files     | **dir**                                            |
-| copy              | cp                       | copy file                  | **copy c:\test\test.txt c:\windows\test.txt**  |
-| move              | mv                       | move file                  | **move c:\test\test.txt c:\windows\test.txt**  |
-| mkdir             | mkdir                    | create a new directory     | **mkdir testdirectory**                            |
-| rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                         |
-| rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                            |
-| [CMD] /?          | man [CMD]                | get help for a command     | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
+| Команда (Windows) | Команда (Mac OS / Linux) | Описание                         | Пример                                              |
+| ----------------- | ------------------------ | -------------------------------- | --------------------------------------------------- |
+| exit              | exit                     | затваряне на прозореца           | **exit**                                            |
+| cd                | cd                       | промяна на директория            | **cd test**                                         |
+| cd                | pwd                      | показване на текущата директория | **cd** (Windows) или **pwd** (Mac OS / Linux)       |
+| dir               | ls                       | списък директории / файлове      | **dir**                                             |
+| copy              | cp                       | копие на файл                    | **copy c:\test\test.txt c:\windows\test.txt**   |
+| move              | mv                       | преместване на файл              | **move c:\test\test.txt c:\windows\test.txt**   |
+| mkdir             | mkdir                    | създаване на нова директория     | **mkdir testdirectory**                             |
+| rmdir (или del)   | rm                       | изтриване на файл                | **del c:\test\test.txt**                          |
+| rmdir /S          | rm -r                    | изтриване на директория          | **rm -r testdirectory**                             |
+| [CMD] /?          | man [CMD]                | получете помощ за команда        | **cd /?** (Windows) или **man cd** (Mac OS / Linux) |
 
-These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
+Това са само много малко от командите, които можете да изпълнявате във вашия команден ред, но днес няма да използвате нищо повече от това.
 
-If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+Ако ви е любопитно, [ss64.com](http://ss64.com) съдържа пълна справка за команди за всички операционни системи.
 
-## Ready?
+## Готови?
 
-Let's dive into Python!
+Нека се потопим в Python!
