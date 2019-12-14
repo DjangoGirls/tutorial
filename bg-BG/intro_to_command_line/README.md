@@ -1,22 +1,22 @@
-# Introduction to the command-line interface
+# Въведение в интерфейса на командния ред
 
-> For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
+> За читателите у дома: тази глава е разгледана във видеото [Вашият нов приятел: Командният ред](https://www.youtube.com/watch?v=jvZLWhkzX-8).
 
-It's exciting, right?! You'll write your first line of code in just a few minutes! :)
+Вълнуващо е, нали ?! Ще напишете първия си ред код само за няколко минути! :)
 
-**Let us introduce you to your first new friend: the command line!**
+**Нека ви запознаем с първия ви нов приятел: командният ред!**
 
-The following steps will show you how to use the black window all hackers use. It might look a bit scary at first but really it's just a prompt waiting for commands from you.
+Следващите стъпки ще ви покажат как да използвате черния прозорец, който използват всички хакери. В началото може да изглежда малко страшно, но всъщност това нещо просто чака команди от вас.
 
-> **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
+> **Забележка** Моля, имайте предвид, че в тази книга използваме взаимозаменяемите термини „директория“ и „папка“, но те са едно и също нещо.
 
-## What is the command line?
+## Какво е командният ред?
 
-The window, which is usually called the **command line** or **command-line interface**, is a text-based application for viewing, handling, and manipulating files on your computer. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
+Прозорецът, който обикновено се нарича **команден ред** or **интерфеса на командния ред**, е текстово приложение за преглед, обработка и манипулиране на файлове на вашия компютър. Прилича много на Windows Explorer или Finder на Mac, но без графичния интерфейс. Други имена на командния ред са: *cmd*, *CLI*, *prompt*, *конзола* или *терминал*.
 
-## Open the command-line interface
+## Отворете интерфейса на командния ред
 
-To start some experiments we need to open our command-line interface first.
+За да започнем някои експерименти, първо трябва да отворим интерфейса на командния ред.
 
 {% include "/intro_to_command_line/open_instructions.md" %}
 
