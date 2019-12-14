@@ -6,13 +6,13 @@
 
 **Нека ви запознаем с първия ви нов приятел: командният ред!**
 
-Следващите стъпки ще ви покажат как да използвате черния прозорец, който използват всички хакери. В началото може да изглежда малко страшно, но всъщност това нещо просто чака команди от вас.
+Следващите стъпки ще ви покажат как да използвате черния прозорец, който използват всички хакери. В началото може да изглежда малко страшно, но всъщност тази подкана просто чака команди от вас.
 
 > **Забележка** Моля, имайте предвид, че в тази книга използваме взаимозаменяемите термини „директория“ и „папка“, но те са едно и също нещо.
 
 ## Какво е командният ред?
 
-Прозорецът, който обикновено се нарича **команден ред** or **интерфеса на командния ред**, е текстово приложение за преглед, обработка и манипулиране на файлове на вашия компютър. Прилича много на Windows Explorer или Finder на Mac, но без графичния интерфейс. Други имена на командния ред са: *cmd*, *CLI*, *prompt*, *конзола* или *терминал*.
+Прозорецът, който обикновено се нарича **команден ред** or **интерфеса на командния ред**, е текстово приложение за преглед, обработка и манипулиране на файлове на вашия компютър. Прилича много на Windows Explorer или Finder на Mac, но без графичния интерфейс. Други имена на командния ред са: *cmd*, *CLI*, *подкана*, *конзола* или *терминал*.
 
 ## Отворете интерфейса на командния ред
 
@@ -22,11 +22,11 @@
 
 ## Prompt
 
-You now should see a white or black window that is waiting for your commands.
+Сега трябва да видите бял или черен прозорец, който чака вашите команди.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see a `$`, like this:
+Ако сте на Mac или Linux, вероятно виждате `$`, ето така:
 
 {% filename %}command-line{% endfilename %}
 
@@ -37,28 +37,28 @@ If you're on Mac or Linux, you probably see a `$`, like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-On Windows, you probably see a `>`, like this:
+На Windows, вероятно виждате `>`, ето така:
 
 {% filename %}command-line{% endfilename %}
 
     >
     
 
-Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+Погледнете раздела за Linux малко по-горе - ще видите нещо повече от това, когато стигнете до PythonAnywhere по-късно в урока.
 
 <!--endsec-->
 
-Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
+Всяка команда ще бъде предварително подготвена от a `$` или `>` и един интервал, но не бива да го въвеждате. Вашият компютър ще го направи вместо вас. :)
 
-> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
+> Само малка забележка: във вашия случай може да има нещо като `C:\Users\ola>` или `Olas-MacBook-Air:~ ola$` преди знака на подкана и това е 100% ОК.
 
-The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
+Частта до и включително `$` или `>` се нарича *командния ред* или *подкана* за кратко. То ви подканва да въведете нещо там.
 
-In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
+В ръковдството, когато искаме да въведете команда, ще включим `$` или `>`, а понякога и повече вляво. Игнорирайте лявата част и въведете само командата, която започва след подкана.
 
-## Your first command (YAY!)
+## Вашата първа команда (УРА!)
 
-Let's start by typing this command:
+Нека започнем с въвеждането на тази команда:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
