@@ -238,9 +238,9 @@ OS X и Linux имат команда `man`, която ви предостав�
 
 * * *
 
-### Create directory
+### Създаване на директория
 
-How about creating a practice directory on your desktop? You can do it this way:
+Какво ще кажете за създаването на тестова директория на вашия работен плот? Можете да го направите по този начин:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -260,17 +260,17 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--endsec-->
 
-This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+Тази малка команда ще създаде папка с името `practice` на вашия работен плот. Можете да проверите дали е там, като погледнете на работния си плот или като изпълните команда `is` или `dir`! Опитайте. :)
 
-> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
+> PRO съвет: Ако не искате да въвеждате едни и същи команди отново и отново, опитайте да натиснете `стрелката нагоре` и `стрелка надолу` на клавиатурата си, за да преминете през последните използвани команди.
 
 * * *
 
-### Exercise!
+### Упражнение!
 
-A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
+Малко предизвикателство за вас: в новосъздадената си директория `practice` създайте директория, наречена `test`. (Използвайте командите `cd` и `mkdir`.)
 
-#### Solution:
+#### Решение:
 
 <!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
@@ -296,15 +296,15 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Congrats! :)
+Поздравления! :)
 
 * * *
 
-### Clean up
+### Почистване
 
-We don't want to leave a mess, so let's remove everything we did until that point.
+Не искаме да оставим бъркотия, така че нека премахнем всичко, което направихме до този момент.
 
-First, we need to get back to Desktop:
+Първо, трябва да се върнем към Desktop:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -324,9 +324,9 @@ First, we need to get back to Desktop:
 
 <!--endsec-->
 
-Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+Използването на `..` с командата `cd` ще промени текущата ви директория на родителската директория (тоест директорията, която съдържа текущата ви директория).
 
-Check where you are:
+Проверете къде се намирате:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
