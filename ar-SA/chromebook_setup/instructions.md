@@ -1,4 +1,4 @@
-يمكنك [تخطي هذا القسم ](http://tutorial.djangogirls.org/en/installation/#install-python) إذا كنت لا تستخدم كروم بوك. إذا كنت كذالك، تجربة التثبيت الخاص بك سوف تكون مختلفة قليلاً. يمكنك تجاهل بقية إرشادات التثبيت.
+يمكنك [تخطي هذا القسم ](http://tutorial.djangogirls.org/en/installation/#install-python) إذا كنت لا تستخدم كروم بوك. إذا كنت كذلك، تجربة التثبيت الخاص بك سوف تكون مختلفة قليلاً. يمكنك تجاهل بقية إرشادات التثبيت.
 
 ### بيئة التطوير المتكاملة IDE السحابية ( PaizaCloud Cloud IDE, AWS Cloud9)
 
@@ -24,8 +24,8 @@
 
 Currently Cloud 9 requires you to sign up with AWS and enter credit card information.
 
-1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Go to [c9.io](https://c9.io) and click *Get started with AWS Cloud9*
+1. ثبت Cloud 9 من [ متجر كروم](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+2. إذهب الى [c9.io](https://c9.io) واضغط على *ابدأ مع AWS Cloud9*
 3. Sign up for an AWS account (requires credit card information, but you can use it for free)
 4. In the AWS Dashboard, enter *Cloud9* in the search bar and click it
 5. In the Cloud 9 dashboard, click *Create environment*
