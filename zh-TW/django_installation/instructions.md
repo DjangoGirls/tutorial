@@ -53,7 +53,7 @@ We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv 
 
 `myvenv` 是你`虛擬環境 (virtualenv)` 的名字。 你可以使用任何其他名字，但遵守使用小寫字母，及不使用空白。 It is also a good idea to keep the name short as you'll be referencing it a lot!
 
-> **NOTE:** On some versions of Debian/Ubuntu you may receive the following error:
+> **注意:** 在一些Debian/Ubuntu版本中你也許會收到以下錯誤訊息:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
