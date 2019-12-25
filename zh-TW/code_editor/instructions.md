@@ -4,19 +4,19 @@
 
 ## Visual Studio Code
 
-Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+Visual Studio Code 是個微軟開發的編輯器，支援Windows、Linux、macOS。 它支援除錯(debugging), embedded Git control, syntax highlighting, intelligent code completion, snippets, 及 code refactoring
 
 [這裡下載](https://code.visualstudio.com/)
 
 ## Gedit
 
-Gedit is an open-source, free editor, available for all operating systems.
+Gedit 是個開源的免費編輯器，且支援所有系統。
 
 [這裡下載](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
+Sublime Text 是一個很受歡迎的編輯器，擁有免費試用期且支援所有系統。
 
 [這裡下載](https://www.sublimetext.com/3)
 
@@ -24,9 +24,9 @@ Sublime Text is a very popular editor with a free evaluation period and it's ava
 
 Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
 
-[Download it here](https://atom.io/)
+[這裡下載](https://atom.io/)
 
-## Why are we installing a code editor?
+## 為什麼我們要安裝程式編輯器?
 
 You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
