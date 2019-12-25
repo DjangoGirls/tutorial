@@ -8,7 +8,7 @@ We will be hosting the blog we're building on PythonAnywhere. Sign up for a "Beg
 
 > **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about. Also, be sure to remember your password (add it to your password manager, if you use one).
 
-## Creating a PythonAnywhere API token
+## 建立一個 PythonAnywhere API token
 
 This is something you only need to do once. When you've signed up for PythonAnywhere, you'll be taken to your dashboard. Find the link near the top right to your "Account" page:
 
