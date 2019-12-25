@@ -4,8 +4,8 @@
 
 你即將要寫第一行程式碼　所以應該下載程式編輯器了
 
-> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions. The cloud IDE you chose (PaizaCloud Cloud IDE or AWS Cloud9) includes a code editor, and when you open a file in your IDE from the File menu, you will automatically be using the editor.
+> **注意** 如果你使用 Chromebook, 請跳過這章，且確定你依照[Chromebook Setup](../chromebook_setup/README.md) 設定. The cloud IDE you chose (PaizaCloud Cloud IDE or AWS Cloud9) includes a code editor, and when you open a file in your IDE from the File menu, you will automatically be using the editor.
 > 
-> **Note** You might have done this earlier in the Installation chapter – if so, you can skip right ahead to the next chapter!
+> **注意** 你也許在前面安裝章節中做過這些了，如果是這樣，你也可以跳過這裡直接進入下一個章節!
 
 {% include "/code_editor/instructions.md" %}
