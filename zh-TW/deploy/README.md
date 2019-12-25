@@ -2,7 +2,7 @@
 
 > **注意** 這一章節內容有時候比較不容易完成。 堅持下去並完成它；佈署是網站開發過程中的重要部份。 這一章節是放在這份教材的中間部份，所以你的教練可以幫助你將你的網站上線。 這意味著假如你無法跟上課堂進度，你仍然可以自己獨立完成這份教材。
 
-Until now, your website was only available on your computer. Now you will learn how to deploy it! 部署是發佈你的應用程式 (application) 到網際網路的過程，所以大家終於可以看到你的應用程式 (application. :)
+到目前為止，你的網站只存在於你的電腦裡。 現在，你將會學到如何部屬它! 部署是發佈你的應用程式 (application) 到網際網路的過程，所以大家終於可以看到你的應用程式 (application. :)
 
 就如你所學的，網站必須位於伺服器上。 There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
 
