@@ -1,4 +1,4 @@
-PythonAnywhere is a service for running Python code on servers "in the cloud". We'll use it for hosting our site, live and on the Internet.
+PythonAnywhere 是一個讓 Python 程式碼運行在雲端伺服器的服務。我們將用他來放置我們的網站，讓他運行在網際網路中。
 
 We will be hosting the blog we're building on PythonAnywhere. Sign up for a "Beginner" account on PythonAnywhere (the free tier is fine, you don't need a credit card).
 
