@@ -10,7 +10,7 @@ We will be hosting the blog we're building on PythonAnywhere. Sign up for a "Beg
 
 ## 建立一個 PythonAnywhere API token
 
-This is something you only need to do once. When you've signed up for PythonAnywhere, you'll be taken to your dashboard. Find the link near the top right to your "Account" page:
+這是個你只需要要做一次的東西。當你註冊 PythonAnywhere 時，你會被帶往儀表板。找到在你“帳戶”頁面右上角的連結
 
 ![Account link on the top right on the page](../deploy/images/pythonanywhere_account.png)
 
