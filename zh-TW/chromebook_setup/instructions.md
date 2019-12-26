@@ -11,7 +11,7 @@ Cloud 9 這工具會提供一個程式碼編輯器(code editor)，並讓你存�
 3. 點擊*新伺服器*及選擇Django應用程式
 4. 點擊「終端機」按鈕（在視窗的左側）
 
-Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
+現在你應該可以看到一個有左方有sidebar和按鈕的介面。點選“Terminal“按鈕，開啟這樣的命令提示視窗：
 
 {% filename %}終端機{% endfilename %}
 
