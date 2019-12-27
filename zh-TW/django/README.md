@@ -1,6 +1,6 @@
 # Django 是什麼?
 
-Django (/ˈdʒæŋɡoʊ/ *jang-goh*) is a free and open source web application framework, written in Python. Web 框架是一組可以説明您制定網站更快和更容易的元件。
+Django (/ˈdʒæŋɡoʊ/ *jang-goh*) 是一個由Python 語言寫成的免費、開源網頁框架。 Web 框架是一組可以説明您制定網站更快和更容易的元件。
 
 當你建立一個網站時，你總是需要一套類似的組件: 一種方式來處理使用者身份驗證 (註冊、登入、登出)、管理小組為您的網站、 表格、 一種方式來上傳檔等。
 
