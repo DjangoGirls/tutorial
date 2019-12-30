@@ -22,13 +22,13 @@ Sublime Text 是一個很受歡迎的編輯器，擁有免費試用期且支援�
 
 ## Atom
 
-Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
+Atom也是一個很受歡迎的編輯器。他開源、免費且支援windows、OS x及Linux。它是由[GitHub](https://github.com/). 開發。
 
 [這裡下載](https://atom.io/)
 
 ## 為什麼我們要安裝程式編輯器?
 
-You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
+你可能會疑惑為什麼我們要安裝這特別的程式編輯器軟體，而不使用 Word 或記事本 (Notepad) 。
 
 The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
