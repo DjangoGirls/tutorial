@@ -1,6 +1,6 @@
 # Django 表單 (Forms)
 
-我們想要在我們網站做最後一件事是建立一種友善的方式來新增和編輯部落格文章。 Django 的 `管理介面 (admin)` 是很酷，但它是很難自訂格式和美化。 With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
+我們想要在我們網站做最後一件事是建立一種友善的方式來新增和編輯部落格文章。 Django 的 `管理介面 (admin)` 是很酷，但它是很難自訂格式和美化。 有了 `表格`，我們將對我們的介面有絕對的控制能力 -- 我們幾乎可以做任何我們可以想像事情！
 
 Django 表單的好處是，我們可以從零開始定義一個或者建立一個 `ModelForm`，它將會儲存表單的結果到模型。
 
