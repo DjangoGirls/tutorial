@@ -45,7 +45,7 @@ Essa janela na parte inferior é o seu terminal. Você pode usá-la para enviar 
 
 ### Ambiente Virtual
 
-Um ambiente virtual (também chamado de virtualenv) é como uma caixa privada em que podemos colocar código de computador útil para um projeto em que estejamos trabalhando. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Um ambiente virtual (também chamado de virtualenv) é como uma caixa privada em que podemos colocar código de computador útil para um projeto em que estejamos trabalhando. Nós os utilizamos para manter separados os vários pedaços de código de nossos diferentes projetos, para que as coisas não se misturem entre eles.
 
 Executar
 
