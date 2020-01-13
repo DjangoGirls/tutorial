@@ -77,28 +77,28 @@
 
     djangogirls
     ├── blog
-    │   ├── admin.py
-    │   ├── apps.py
-    │   ├── __init__.py
-    │   ├── migrations
-    │   │   └── __init__.py
-    │   ├── models.py
-    │   ├── tests.py
-    │   └── views.py
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── __init__.py
+    │   ├── migrations
+    │   │   └── __init__.py
+    │   ├── models.py
+    │   ├── tests.py
+    │   └── views.py
     ├── db.sqlite3
     ├── manage.py
     ├── mysite
-    │   ├── __init__.py
-    │   ├── settings.py
-    │   ├── urls.py
-    │   └── wsgi.py
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
     ├── myvenv
-    │   └── ...
+    │   └── ...
     └── requirements.txt
     
     
 
-После того как приложение создано, нам нужно сообщить Django, что теперь он должен его использовать. Мы делаем это в файле `mysite/settings.py`, откройте его в своем редакторе кода. We need to find `INSTALLED_APPS` and add a line containing `'blog.apps.BlogConfig',` just above `]`. Конечный результат должен выглядеть следующим образом:
+После того как приложение создано, нам нужно сообщить Django, что теперь он должен его использовать. Мы делаем это в файле `mysite/settings.py`, откройте его в своем редакторе кода. Нам нужно найти `INSTALLED_APPS` и добавить к списку `'blog',` прямо перед `]`. Конечный результат должен выглядеть следующим образом:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -110,7 +110,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog.apps.BlogConfig',
+    'blog',
 ]
 ```
 
@@ -162,9 +162,9 @@ class Post(models.Model):
 - `models.DateTimeField` -- дата и время.
 - `models.ForeignKey` -- ссылка на другую модель.
 
-Мы не будем объяснять каждый участок кода, поскольку на это уйдет слишком много времени. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.2/ref/models/fields/#field-types).
+Мы не будем объяснять каждый участок кода, поскольку на это уйдет слишком много времени. Ознакомься с официальной документаций Django — если хочешь узнать больше о полях моделей и о том как определять разные объекты, то эта ссылка может помочь: (https://docs.djangoproject.com/en/2.2/ref/models/fields/#field-types).
 
-Что насчет `def publish(self):`? Это как раз метод `публикации` для записи, о котором мы говорили. `def` означает, что создаётся функция/метод, а `publish` — это название этого метода. Можно изменить имя метода, если хочешь. Существует правило для имён функций: нужно использовать строчные буквы, а пробелы заменять на подчёркивания. Например метод, вычисляющий среднюю цену может называться `calculate_average_price`.
+Как насчет `def publish(self):`? Это как раз метод `публикации` для записи, о котором мы говорили. `def` означает, что создаётся функция/метод, а `publish` — это название этого метода. Можно изменить имя метода, если хочешь. Существует правило для имён функций: нужно использовать строчные буквы, а пробелы заменять на подчёркивания. Например метод, вычисляющий среднюю цену может называться `calculate_average_price`.
 
 Методы часто `возвращают` что-то. Например, метод `__str__`. В наше случае, после вызова метода `__str__()` мы получим текст (**строку**) с заголовком записи.
 
