@@ -362,9 +362,9 @@ Maria
 
 ## Словари
 
-> For readers at home: this part is covered in the [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) video.
+> Для занимающихся дома: эта глава освещена в видео [Как работает Интернет](https://www.youtube.com/watch?v=ZX1CVvZLE6c).
 
-A dictionary is similar to a list, but you access values by looking up a key instead of a numeric index. A key can be any string or number. The syntax to define an empty dictionary is:
+Словари схожи со списками, но ты обращаешься к значениям словаря по ключу, а не по индексу. Ключом может быть любая строка или число. Давай создадим пустой словарь:
 
 {% filename %}command-line{% endfilename %}
 
@@ -373,9 +373,9 @@ A dictionary is similar to a list, but you access values by looking up a key ins
 {}
 ```
 
-This shows that you just created an empty dictionary. Hurray!
+Это показывает что мы создали пустой словарь. Ура!
 
-Now, try writing the following command (try substituting your own information, too):
+Теперь попробуй следующую команду (можешь заменить значения на своё имя, страну и т. д.):
 
 {% filename %}command-line{% endfilename %}
 
@@ -383,13 +383,13 @@ Now, try writing the following command (try substituting your own information, t
 >>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
 ```
 
-With this command, you just created a variable named `participant` with three key–value pairs:
+Этой командой ты создала переменную `participant` с тремя парами ключ-значение:
 
 - Ключ `name`, указывающий на значение `'Ola'` (`строковый` объект),
 - ключ `country`, указывающий на значение `'Poland'` (еще одна `строка`),
 - и ключ `favorite_numbers`, указывающий на значение `[7, 42, 92]` (объект типа `список` с тремя числами внутри).
 
-You can check the content of individual keys with this syntax:
+Значение конкретного ключа можно узнать следующим образом:
 
 {% filename %}command-line{% endfilename %}
 
@@ -398,9 +398,9 @@ You can check the content of individual keys with this syntax:
 Ola
 ```
 
-See, it's similar to a list. But you don't need to remember the index – just the name.
+Видишь, синтаксис похож на работу со списком. Но вместо того чтобы запоминать индекс, тебе нужно помнить ключ.
 
-What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
+Что случится, если мы спросим у Python значение несуществующего в словаре ключа? Можешь предположить? Давай попробуем и узнаем наверняка!
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -411,14 +411,14 @@ Traceback (most recent call last):
 KeyError: 'age'
 ```
 
-Look, another error! This one is a **KeyError**. Python is helpful and tells you that the key `'age'` doesn't exist in this dictionary.
+Смотри, другая ошибка! Эта называется **KeyError**. Python услужливо напоминает, что ключа `'age'` не существует в словаре.
 
-When should you use a dictionary or a list? Well, that's a good point to ponder. Think about the answer before looking at it in the next line.
+Когда стоит использовать словарь, а когда список? Это хороший вопрос для самостоятельного размышления. Сделай предположение перед тем, как читать дальше.
 
 - Тебе нужна упорядоченная последовательность элементов? Список - наш выбор.
 - Тебе нужны сочетания ключ - значение, чтобы быстро искать значения (по ключу) в дальнейшем? Словарь отлично подойдет.
 
-Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key–value pairs to a dictionary after it is created, like this:
+Словари, как и списки, *изменяемы*, т. е. они могут быть изменены после того как были созданы. Ты можешь добавить новые пары ключ/значение в словарь следующим образом:
 
 {% filename %}command-line{% endfilename %}
 
@@ -426,7 +426,7 @@ Dictionaries, like lists, are *mutable*, meaning that they can be changed after 
 >>> participant['favorite_language'] = 'Python'
 ```
 
-Like lists, using the `len()` method on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
+Также как в примере со списками, использование функции `len()` вернет число пар ключ/значение в словаре. Попробуй сама:
 
 {% filename %}command-line{% endfilename %}
 
@@ -435,9 +435,9 @@ Like lists, using the `len()` method on the dictionaries returns the number of k
 4
 ```
 
-I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
+Надеюсь, все вышеизложенное понятно. :) Готова к новым приключениям со словарями? На следующей строке тебя ждут изумительные вещи.
 
-You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, type in the following command:
+Ты можешь использовать команду `pop` для удаления элементов из словаря. Скажем, ты хочешь удалить элемент с ключом `'favorite_numbers'`, просто набери следующую команду:
 
 {% filename %}command-line{% endfilename %}
 
@@ -448,9 +448,9 @@ You can use the `pop()` method to delete an item in the dictionary. Say, if you 
 {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-As you can see from the output, the key–value pair corresponding to the 'favorite_numbers' key has been deleted.
+Как видно, пара ключ-значение с ключом 'favorite_numbers' была удалена.
 
-As well as this, you can also change a value associated with an already-created key in the dictionary. Type this:
+Помимо этого, ты можешь заменить значение, ассоциированное с уже существующим ключом. Набери:
 
 {% filename %}command-line{% endfilename %}
 
@@ -460,14 +460,14 @@ As well as this, you can also change a value associated with an already-created 
 {'country': 'Germany', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
+Значение, на которое ссылается ключ `'country'` было изменено с `'Poland'` на `'Germany'`. Захватывает? Еще бы! Ты выучила еще одну потрясающую штуку.
 
 ### Содержание
 
-Awesome! You know a lot about programming now. In this last part you learned about:
+Шикарно! Теперь ты знаешь немало о программировании. Мы познакомились с:
 
-- **errors** – you now know how to read and understand errors that show up if Python doesn't understand a command you've given it
-- **variables** – names for objects that allow you to code more easily and to make your code more readable
+- **ошибками** - теперь ты знаешь как читать и анализировать ошибки, которые возникают, если Python не понимает твоей команды
+- **переменными** - именами для объектов, которые упрощают твой код и делают его более читабельным
 - **lists** – lists of objects stored in a particular order
 - **dictionaries** – objects stored as key–value pairs
 
