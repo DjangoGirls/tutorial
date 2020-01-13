@@ -162,7 +162,7 @@ Let's type the following code:
 
 И снова мы расширяем `base.html`. В блоке `content` мы отображаем дату публикации (published_date, если она существует), заголовок и текст. Нам также нужно обсудить пару важных вещей, хорошо?
 
-{% raw %}`{% if ... %} ... {% endif %}` это тег шаблона, который мы можем использовать, если нам нужно что-то проверить. (Помнишь конструкцию `if ... else ...` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` это тег шаблона, который мы можем использовать, если нам нужно что-то проверить. (Помнишь конструкцию `if ... else ..` из главы **Введение в Python**?) В этом сценарии мы хотим проверить, содержит ли `published_date` нашей записи данные или нет.{% endraw %}
 
 Отлично, можешь перезагрузить страницу и проверить пропала ли теперь ошибка `TemplateDoesNotExist`.
 
@@ -192,7 +192,7 @@ Let's type the following code:
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+(Не забудьте заменить `<your-pythonanywhere-domain>` на ваше имя пользователя PythonAnywhere, без угловых скобок.)
 
 ## Обновление статических файлов на сервере
 
@@ -209,6 +209,6 @@ Let's type the following code:
 
 Команда `manage.py collectstatic` немного похожа `manage.py migrate`. Мы вносим некоторые изменения в наш код, а затем мы говорим Django чтобы он *применил* эти изменения для коллекции статических файлов на сервере, либо в базе данных.
 
-In any case, we're now ready to hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (from the menu button in the upper right of the console) and hit **Reload**, and then look at the https://subdomain.pythonanywhere.com page to see the result.
+В любом случае, мы теперь готовы перепрыгнуть на ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (из меню кнопки в верхнем правом углу консоли) и кликнуть **Reload**, а затем смотри на страницу https://subdomain.pythonanywhere.com чтобы увидеть результат.
 
 Вот и все! Поздравляем :)
