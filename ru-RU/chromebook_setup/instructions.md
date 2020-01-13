@@ -27,27 +27,27 @@ Currently Cloud 9 requires you to sign up with AWS and enter credit card informa
 1. Установи Cloud 9 из [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
 2. Перейди на [c9.io](https://c9.io) и нажми *Get started with AWS Cloud9*
 3. Войди при помощи аккаунта AWS (необходимы данные кредитной карты, но ты можешь пользоваться бесплатно)
-4. На дашборде AWS введи *Cloud9* в поисковой строке и кликни
-5. In the Cloud 9 dashboard, click *Create environment*
-6. Name it *django-girls*
-7. While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
-8. Click *Next step*
-9. Click *Create environment*
+4. На панели управления AWS введи *Cloud9* в поисковой строке и кликни
+5. На панели управления Cloud 9 нажми *Create environment*
+6. Назови его *django-girls*
+7. При конфигурировании настроек выбери *Create a new instance for environment (EC2)* в "Environment Type" и *t2.micro* "Instance type" (он должен вернуть тебе ответ "Free-tier eligible."). Все настройки по умолчанию в порядке, и ты также можешь выставлять по умолчанию и остальные настройки.
+8. Нажми *Next step*
+9. Нажми *Create environment*
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+Теперь ты должна увидеть интерфейс боковой панели, большое главное окно с текстом и небольшое окно в нижней части, которая выглядит примерно так:
 
 {% filename %}bash{% endfilename %}
 
     yourusername:~/workspace $
     
 
-This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+Эта нижняя область - твой терминал. Терминал можно использовать для отправки инструкций на удаленный компьютер Cloud 9. Ты можешь изменить размер этого окна, чтобы увеличить терминал.
 
 ### Виртуальное окружение
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Виртуальное окружение (также называемое virtualenv или venv) является "коробкой", куда мы можем сложить полезные для нашей программы вещи. Мы используем его, чтобы держать различные биты кода, которые мы хотим использовать для нашего проекта отдельно, не смешивая с другими проектами.
 
-Run:
+Запусти:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -58,15 +58,15 @@ Run:
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: `~=`).
+(обрати внимание, что в последней строке мы используем знак равенства после знака тильды: `~=`).
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+Создайте аккаунт на [GitHub](https://github.com).
 
 ### PythonAnywhere
 
-The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+Django Girls пособие включает в себя раздел о "развертывании". Это процесс взятия кода, на котором работает ваше новой веб-приложение, и перемещения его на общедоступный компьютер (называемый сервером), чтобы другие люди могли видеть вашу работу.
 
 This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
