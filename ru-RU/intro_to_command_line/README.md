@@ -18,7 +18,7 @@
 
 Для того, чтобы начать экспериментировать, нам нужно сначала открыть интерфейс командной строки.
 
-{% include "/intro_to_command_line/open_instructions.md" %}
+{% включение "/intro_to_command_line/open_instructions.md" %}
 
 ## Командная строка
 
@@ -44,7 +44,7 @@
     >
     
 
-Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+Можешь заглянуть в инструкцию для пользовательниц Linux чуть выше — нам что-то подобное ещё встретится, когда мы дойдём до PythonAnywhere.
 
 <!--endsec-->
 
@@ -52,9 +52,9 @@ Take a look at the Linux section just above now -- you'll see something more lik
 
 > Небольшое примечание: перед курсором командной строки может быть написано что-то вроде `C:\Users\ola>` или `Olas-MacBook-Air:~ola$`. Это абсолютно нормально.
 
-The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
+То, что написано до знака `$` или `>`, плюс сам знак, всё вместе называется *приглашением командной строки*. Как правило, оно включает адрес папки, в которой ты сейчас находишься. Оно приглашает тебя ввести в окно команду.
 
-In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Не обращай внимания на левую часть и просто печатай команду — она начинается после символа приглашения.
+Далее в руководстве перед каждой командой, которую тебе нужно будет ввести, мы будем писать символ `$` или `>`. Иногда слева от него мы будем добавлять ещё немного текста. Не обращай внимания на левую часть и просто печатай команду — она начинается после символа приглашения.
 
 ## Твоя первая команда (УРА!)
 
@@ -132,19 +132,19 @@ In the tutorial, when we want you to type in a command, we will include the `$` 
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X and Linux have a `man` command, which gives you help on commands. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
+В OS X и Linux есть команда `man` — справка о других командах (на английском языке). Набери `man pwd` и посмотри, что пишут о команде pwd. Используй `man` с другими командами, чтобы посмотреть для них справку. Как правило, справки `man` выводятся постранично. Нажми пробел, чтобы перейти на следующую страницу. Чтобы выйти, нажми `q`.
 
 <!--endsec-->
 
 <!--sec data-title="Command Help: Windows" data-id="windows_help" data-collapse=true ces-->
 
-Adding a `/?` suffix to most commands will print the help page. You may need to scroll your command window up to see it all. Try `cd /?`.
+Чтобы вывести справку, почти к любой команде можно добавить `/?`. Чтобы прочитать всю справку, возможно, придётся прокрутить текст вниз. Попробуй набрать `cd /?`.
 
 <!--endsec-->
 
 ### Список файлов и каталогов
 
-So what's in it? It'd be cool to find out. Let's see:
+Так что же в нем? Было бы здорово узнать. Давайте посмотрим:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -179,7 +179,7 @@ So what's in it? It'd be cool to find out. Let's see:
 
 ### Смена текущего каталога
 
-Now, let's go to our Desktop directory:
+Теперь вернемся в наш каталог рабочего стола:
 
 <!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
 
@@ -197,7 +197,7 @@ Now, let's go to our Desktop directory:
     $ cd Desktop
     
 
-Note that the directory name "Desktop" might be translated to the language of your Linux account. If that's the case, you'll need to replace `Desktop` with the translated name; for example, `Schreibtisch` for German.
+Обрати внимание, что название каталога "Desktop" может быть переведено на язык твоей учётной записи в системе Linux. В таком случае набери вместо `Desktop` переводное название: например, `"Рабочий стол"` (в кавычках — они нужны, чтобы командная строка поняла кириллицу).
 
 <!--endsec-->
 
@@ -210,7 +210,7 @@ Note that the directory name "Desktop" might be translated to the language of yo
 
 <!--endsec-->
 
-Check if it's really changed:
+Проверь, что рабочий каталог действительно изменился:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -232,7 +232,7 @@ Check if it's really changed:
 
 <!--endsec-->
 
-Here it is!
+Вот и он!
 
 > Совет от профи: если ты введешь `cd D` и затем нажмешь `Tab` на клавиатуре, в командной строке будет автоматически набрана остальная часть имени, что позволит быстрее перемещаться по каталогам. Если c «D» начинается название не одной папки, нажми `Tab` дважды, чтобы получить список вариантов.
 
@@ -240,7 +240,7 @@ Here it is!
 
 ### Создание каталога
 
-How about creating a practice directory on your desktop? You can do it this way:
+Как насчет создания каталога practice на рабочем столе? Вы можете сделать это таким образом:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -260,7 +260,7 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--endsec-->
 
-This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+Эта маленькая команда создаст папку с именем `practice` на рабочем столе. Ты можешь проверить, появилась ли она, просто взглянув на рабочий стол или введя команду `ls` (для Linux и macOS) или `dir` (если у тебя Windows)! Попробуй. :)
 
 > Совет от профи: если ты не хочешь вводить одни и те же команды снова и снова, попробуй нажать на стрелку вверх и стрелку вниз на клавиатуре для просмотра недавно использованных команд.
 
@@ -268,7 +268,7 @@ This little command will create a folder with the name `practice` on your deskto
 
 ### Тренируемся!
 
-A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
+Небольшая задачка: в недавно созданной папке `practice` создай папку с названием `test`. Используй команды `cd` и `mkdir`
 
 #### Решение:
 
@@ -296,15 +296,15 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Congrats! :)
+Поздравляем! :)
 
 * * *
 
 ### Чистка
 
-We don't want to leave a mess, so let's remove everything we did until that point.
+Мы не хотим оставлять беспорядок, поэтому давай удалим все, что мы создали до этого момента.
 
-First, we need to get back to Desktop:
+Во-первых, мы должны вернуться на рабочий стол:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -324,9 +324,9 @@ First, we need to get back to Desktop:
 
 <!--endsec-->
 
-Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+Используя `..` с командой `cd`, ты можешь сменить текущий каталог на родительский (то есть каталог, который содержит в себе текущий).
 
-Check where you are:
+Проверь, где ты находишься:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -348,7 +348,7 @@ Check where you are:
 
 <!--endsec-->
 
-Now time to delete the `practice` directory:
+Пришло время удалить каталог `practice`:
 
 > **Внимание:** удаление файлов с помощью `del`, `rmdir` или `rm` необратимо. Это означает, что *удалённые файлы будут потеряны навсегда!* Поэтому будь очень осторожна с этими командами.
 
@@ -371,7 +371,7 @@ Now time to delete the `practice` directory:
 
 <!--endsec-->
 
-Done! To be sure it's actually deleted, let's check it:
+Готово! Давай проверим, что папка действительно удалена:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -393,7 +393,7 @@ Done! To be sure it's actually deleted, let's check it:
 
 ### Выход
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+Вот и всё на данный момент! Теперь можно безопасно закрыть командную строку. Давай сделаем это как хакеры, согласна? 
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -413,11 +413,11 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--endsec-->
 
-Cool, huh? :)
+Круто, да? :)
 
 ## Подведём итоги
 
-Here is a summary of some useful commands:
+Вот краткий обзор некоторых полезных команд:
 
 | Команда (Windows) | Команда (Mac OS / Linux) | Описание                | Пример                                              |
 | ----------------- | ------------------------ | ----------------------- | --------------------------------------------------- |
@@ -432,10 +432,10 @@ Here is a summary of some useful commands:
 | rmdir /S          | rm -r                    | удалить папку           | **rm -r testdirectory**                             |
 | [CMD] /?          | man [CMD]                | справка для команды     | **cd /?** (Windows) или **man cd** (Mac OS / Linux) |
 
-These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
+Это лишь некоторые из команд, которые можно использовать в командной строке, но сегодня тебе больше и не пригодится.
 
-If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+Если тебе интересно, [ss64.com](http://ss64.com) содержит полный справочник команд для всех операционных систем.
 
 ## Готова продолжить?
 
-Let's dive into Python!
+Давай погрузимся в мир Python!
