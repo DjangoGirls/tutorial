@@ -468,16 +468,16 @@ KeyError: 'age'
 
 - **ошибками** - теперь ты знаешь как читать и анализировать ошибки, которые возникают, если Python не понимает твоей команды
 - **переменными** - именами для объектов, которые упрощают твой код и делают его более читабельным
-- **lists** – lists of objects stored in a particular order
-- **dictionaries** – objects stored as key–value pairs
+- **списками** - последовательностями объектов в заданном порядке
+- **словарями** - объектами, хранящими пары ключ-значение
 
-Excited for the next part? :)
+Готова к продолжению? :)
 
 ## Сравниваем вещи
 
-> For readers at home: this part is covered in the [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) video.
+> Для занимающихся дома: эта глава освещена в видео [Как работает Интернет](https://www.youtube.com/watch?v=7bzxqIKYgf4).
 
-A big part of programming involves comparing things. What's the easiest thing to compare? Numbers! Let's see how that works:
+Немалая часть программирования требует сравнения вещей. Что проще всего сравнить друг с другом? Числа, конечно. Давай посмотрим как это работает:
 
 {% filename %}command-line{% endfilename %}
 
@@ -494,11 +494,11 @@ True
 True
 ```
 
-We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare method results. Nice, huh?
+Мы передали Python несколько чисел для сравнения. Как ты можешь заметить, Python сравнивает не только числа, но и результаты методов (например, умножения). Неплохо, правда?
 
-Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
+Хочешь спросить почему мы написал двойной символ равенства `==`, чтобы проверить одинаковы ли числа? Потому что одинарные символ равенства `=` уже задействован под присваивание значения переменным. Ты всегда, **всегда** должна писать два символа равенства `==`, если хочешь проверить одинаковы ли объекты. Мы также можем проверить различаются ли объекты. Для этого, мы используем `!=`, как показано в примере выше.
 
-Give Python two more tasks:
+Дадим Python еще два задания:
 
 {% filename %}command-line{% endfilename %}
 
@@ -509,7 +509,7 @@ True
 False
 ```
 
-We've seen `>` and `<`, but what do `>=` and `<=` mean? Read them like this:
+С `>` и `<` все понятно, но что значат `>=` и `<=`? Читай их следующим образом:
 
 - x `>` y означает: x больше y
 - x `<` y означает: x меньше y
@@ -529,12 +529,12 @@ False
 True
 ```
 
-You can give Python as many numbers to compare as you want, and it will give you an answer! Pretty smart, right?
+Ты можешь передать Python так много чисел, как захочешь, и он будет возвращать ответ! Хитро, правда?
 
-- **and** – if you use the `and` operator, both comparisons have to be True in order for the whole command to be True
-- **or** – if you use the `or` operator, only one of the comparisons has to be True in order for the whole command to be True
+- **and** - если ты используешь `and` оператор, оба сравнения по бокам от него должны быть True (верны), чтобы результат всей команды был равен True
+- **or** - если ты используешь `or` оператор, достаточно одному из сравнений по бокам от него быть равным True, чтобы результат всей команды также равнялся True
 
-Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
+Ты когда-нибудь слышала выражение "сравнивать яблоки и апельсины"? Попробуем что-то подобное в Python:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -545,18 +545,18 @@ Traceback (most recent call last):
 TypeError: '>' not supported between instances of 'int' and 'str'
 ```
 
-Here you see that just like in the expression, Python is not able to compare a number (`int`) and a string (`str`). Instead, it shows a **TypeError** and tells us the two types can't be compared together.
+Как мы видим, Python не знает как сравнить число (`int`) и строку (`str`) между собой. Поэтому он просто возвращает нам ошибку **TypeError** и предупреждает, что объекты заданных типов не могут быть сравнены.
 
 ## Логические значения
 
-Incidentally, you just learned about a new type of object in Python. It's called **Boolean**.
+Кстати, вы только что узнали о новом типе объекта на Python. Он называется **Boolean**.
 
 Существует только два логических объекта:
 
 - True
 - False
 
-But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well.)
+Чтобы Python понимал тебя, ты всегда должна писать True с заглавной буквы (остальные прописные). **true, TRUE, tRUE не будет восприниматься -- только True.** (Та же логика применима к False, само собой.)
 
 Ты можешь присваивать переменным логические значения! Смотри сюда:
 
@@ -585,20 +585,20 @@ False
 - `True or 1 == 1`
 - `1 != 2`
 
-Congrats! Booleans are one of the coolest features in programming, and you just learned how to use them!
+Поздравляем! Логические значения одна из самых классных фишек программирования и ты только что научилась ими пользоваться!
 
 # Сохраняй!
 
-> For readers at home: this part is covered in the [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) video.
+> Для занимающихся дома: эта глава освещена в видео [Как работает Интернет](https://www.youtube.com/watch?v=dOAg6QVAxyk).
 
-So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal programs are saved in files and executed by our programming language **interpreter** or **compiler**. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
+До сих пор мы писали весь код в интерактивной консоли, где Python сразу анализировал, обрабатывал и выполнял наши команды. Мы были ограничены одной строкой. Обычно, программы сохраняются в файлах и выполняются **интерпретатором** или **компилятором** нашего языка программирования. Пока мы только просили **интерпретатор** Python выполнять наши однострочные команды из консоли. Однако, нам понадобится больше места для следующих задач, поэтому задача минимум:
 
 - Закрыть интерактивную консоль Python
 - Открыть наш текстовый редактор
 - Сохранить код в новом файле
 - Запустить его!
 
-To exit from the Python interpreter that we've been using, type the `exit()` function
+Чтобы закрыть интерактивную консоль Python просто набери функцию ~~~ exit()~~~ :
 
 {% filename %}command-line{% endfilename %}
 
@@ -607,9 +607,9 @@ To exit from the Python interpreter that we've been using, type the `exit()` fun
 $
 ```
 
-This will put you back into the command prompt.
+Это вернет тебя в командную строку.
 
-Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now and write some code into a new file (or if you're using a Chromebook, create a new file in the cloud IDE and open the file, which will be in the included code editor):
+Ранее мы выбрали редактор кода из раздела [редактор кода](../code_editor/README.md). Теперь нам нужно открыть редактор и написать код в новый файл (или если вы используете Chromebook, создайте новый файл в облачном IDE и откройте файл, который будет включен в редактор кода):
 
 {% filename %}editor{% endfilename %}
 
@@ -617,18 +617,18 @@ Earlier, we picked out a code editor from the [code editor](../code_editor/READM
 print('Hello, Django girls!')
 ```
 
-Obviously, you're a pretty seasoned Python developer now, so feel free to write some code that you've learned today.
+Очевидно, ты уже искушенный Python разработчик, так что не стесняйся добавить что-нибудь по своему вкусу из ране изученного.
 
-Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, but the important part here is to make sure the file ends in **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
+Теперь нам нужно сохранить файл с кодом и дать ему подходящее имя. Давай назовем его **python_intro.py** и сохраним на рабочий стол. Мы можем назвать файл как хотим, но важно чтобы название заканчивалось на **.py**. Расширение **.py** говорит операционной системе, что это **исполняемый файл python**, и Python может его запустить.
 
-> **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. Это называется «синтаксическая подсветка», и это действительно удобная штука для программирования. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). Это одна из причин, по которой мы используем редакторы кода. :)
+> **Примечание** Ты должна уде была заметить одну из крутейших вещей в редакторах кода: цвета! В интерактивной консоли Python весь текст был одного цвета, сейчас же функция `print` должна отличаться по цвету от текста, который передается в неё в качестве атрибута. Это называется «синтаксическая подсветка», и это действительно удобная штука для программирования. Цвет подсветки может подсказать тебе о незакрытой кавычке или опечатке в ключевом слове (таком как `def` в определении функции, с которым мы скоро познакомимся). Это одна из причин, по которой мы используем редакторы кода. :) :)
 
-With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
+После сохранения файла пришло время запустить его! Используя навыки из раздела о командной строки, открой терминал и **поменяй текущую директорию** на рабочий стол.
 
 <!--sec data-title="Change directory: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-On a Mac, the command will look something like this:
+Для Mac команда будет выглядеть так:
 
 {% filename %}command-line{% endfilename %}
 
@@ -647,13 +647,13 @@ data-collapse=true ces-->
     $ cd ~/Desktop
     
 
-(Remember that the word "Desktop" might be translated to your local language.)
+(Помните, что слово "Рабочий стол" может быть переведено на ваш локальный язык.)
 
 <!--endsec-->
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-On Windows Command Prompt, it will be like this:
+В командной строке Windows это будет так:
 
 {% filename %}command-line{% endfilename %}
 
@@ -664,7 +664,7 @@ On Windows Command Prompt, it will be like this:
 
 <!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
 
-And on Windows Powershell, it will be like this:
+И для Windows Powershell это будет выглядеть так:
 
 {% filename %}command-line{% endfilename %}
 
@@ -673,9 +673,9 @@ And on Windows Powershell, it will be like this:
 
 <!--endsec-->
 
-If you get stuck, ask for help. That's exactly what the coaches are here for!
+Если ты застряли, попроси помощи. Именно для этого здесь нужны наставники!
 
-Now use Python to execute the code in the file like this:
+Теперь используй Python чтобы запустить код в файле:
 
 {% filename %}command-line{% endfilename %}
 
@@ -683,7 +683,7 @@ Now use Python to execute the code in the file like this:
     Hello, Django girls!
     
 
-Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
+Примечание: в Windows 'python3' не распознается как команда. Вместо этого используй 'python' для выполнения файла:
 
 {% filename %}command-line{% endfilename %}
 
@@ -691,15 +691,15 @@ Note: on Windows 'python3' is not recognized as a command. Instead, use 'python'
 > python python_intro.py
 ```
 
-Alright! You just ran your first Python program that was saved to a file. Feel awesome?
+Отлично! Ты только что запустила свою первую программу, чей код был сохранен в файле. Чувствуешь воодушевление?
 
-You can now move on to an essential tool in programming:
+Можно передвигаться дальше к такому незаменимому в программировании инструменту как:
 
 ## If … elif … else
 
-Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
+Зачастую определенный код в программе должен выполняться только при соблюдении определенных условий. Поэтому в Python есть такая вещь как **условный оператор if**.
 
-Replace the code in your **python_intro.py** file with this:
+Замени код в своем файле **python_intro.py** на:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -707,7 +707,7 @@ Replace the code in your **python_intro.py** file with this:
 if 3 > 2:
 ```
 
-If we were to save and run this, we'd see an error like this:
+Если мы сохраним его и запустим, то получим ошибку:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -717,7 +717,7 @@ If we were to save and run this, we'd see an error like this:
     SyntaxError: unexpected EOF while parsing
     
 
-Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
+Python предполагает, что мы должны дать ему инструкции, которые будут им выполнены при соблюдении условия `3 > 2` (т. е. при равенстве условия логическому значению `True`). Давай попробуем заставить Python напечатать на экране “It works!”. Внеси следующие изменения в **python_intro.py**:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -726,7 +726,7 @@ if 3 > 2:
     print('It works!')
 ```
 
-Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
+Обратила внимание как мы сделали отступ во второй строке из 4 символов пробела? Мы поступаем так, чтобы Python понимал какой код после условного оператора if должен быть выполнен, если условие равно True. Можно ограничиться и одним пробелом, однако, практически все программисты Python используют 4, чтобы код выглядел аккуратно и читабельно. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
 
 Save it and give it another run:
 
