@@ -202,7 +202,7 @@ QuerySets позволяет сортировать объекты. Давай �
 
 ### Сложные запросы при помощи цепочки вызовов
 
-Как ты видела, некоторые методы в `Post.objects` возвращают QuerySet. The same methods can in turn also be called on a QuerySet, and will then return a new QuerySet. Thus, you can combine their effect by **chaining** them together:
+Как ты видела, некоторые методы в `Post.objects` возвращают QuerySet. The same methods can in turn also be called on a QuerySet, and will then return a new QuerySet. Таким образом ты можешь комбинировать их эффект по цепочке **связывая** вместе:
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
