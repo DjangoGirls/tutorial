@@ -37,12 +37,9 @@ Git будет отслеживать изменения всех файлов �
 {% filename %}.gitignore{% endfilename %}
 
     *.pyc
-    *~
-    /.vscode
     __pycache__
     myvenv
     db.sqlite3
-    /static
     .DS_Store
     
 
@@ -59,7 +56,7 @@ Git будет отслеживать изменения всех файлов �
     $ git status
     On branch master
     
-    No commits yet
+    Initial commit
     
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
@@ -156,7 +153,7 @@ Git будет отслеживать изменения всех файлов �
 
 {% filename %}command-line{% endfilename %}
 
-    $ pa_autoconfigure_django.py --python=3.6 https://github.com/<your-github-username>/my-first-blog.git
+    $ git clone https://github.com/<your-github-username>/my-first-blog.git
     
 
 Когда ты увидишь, как это работает, то ты сможешь понять, что именно оно делает:
