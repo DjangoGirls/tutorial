@@ -2,7 +2,7 @@
 
 # Расширяем свое приложение
 
-We've already completed all the different steps necessary for the creation of our website: we know how to write a model, URL, view and template. We also know how to make our website pretty.
+Мы уже выполнили часть необходимых шагов для создания веб-сайта: мы знаем как создать модель, URL, представление и шаблон. Мы также знаем как улучшить визуальный дизайн с помощью CSS.
 
 Время практики!
 
@@ -30,7 +30,7 @@ We've already completed all the different steps necessary for the creation of ou
 {% endblock %}
 ```
 
-{% raw %}Нам хотелось бы иметь ссылку с заголовка поста в списке на страницу подробной информации о посте. Let's change `<h2><a href="">{{ post.title }}</a></h2>` so that it links to the post's detail page:{% endraw %}
+{% raw %}Нам хотелось бы иметь ссылку с заголовка поста в списке на страницу подробной информации о посте. Давай изменим `<h2><a href="">{{ post.title }}</a></h2>` чтобы получилась ссылка на страницу с полным содержанием поста:{% endraw %}
 
 {% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 
