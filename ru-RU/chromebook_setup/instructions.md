@@ -22,7 +22,7 @@ Cloud IDE - это инструмент, предоставляющий тебе
 
 #### AWS Cloud9
 
-Currently Cloud 9 requires you to sign up with AWS and enter credit card information.
+В настоящее время Cloud 9 требует от тебя входа при помощи AWS и ввода данных кредитной карты.
 
 1. Установи Cloud 9 из [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
 2. Перейди на [c9.io](https://c9.io) и нажми *Get started with AWS Cloud9*
@@ -68,6 +68,6 @@ Currently Cloud 9 requires you to sign up with AWS and enter credit card informa
 
 Django Girls пособие включает в себя раздел о "развертывании". Это процесс взятия кода, на котором работает ваше новой веб-приложение, и перемещения его на общедоступный компьютер (называемый сервером), чтобы другие люди могли видеть вашу работу.
 
-This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Эта часть является немного странной, когда у нас Chromebook, поскольку мы используем компьютер, который находится в Интернете (в отличие от, скажем, ноутбука). Однако, это всё равно полезно, так как Cloud9 - это место для нашей непосредственной работы и Python Anywhere - место для демонстрации того, что мы сделали.
 
-Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Зарегистрируйся на [www.pythonanywhere.com](https://www.pythonanywhere.com).
