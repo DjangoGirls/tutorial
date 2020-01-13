@@ -118,33 +118,33 @@ data-collapse=true ces-->
 > 
 >     C:\WINDOWS\system32> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 >         Execution Policy Change
->         The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
+>         The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Вы хотите изменить политику исполнения? [Y] Да  [A] Да для всех  [N] Нет  [L] Нет для всех  [S] Приостановить [?] Справка (по умолчанию "N"): А
 >     
 
 <!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
 
-> **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
+> **ПРИМЕЧАНИЕ:** Для пользователей популярного кода редактора VS, который поставляется с интегрированным терминалом на основе windows powershell, если ты хочешь придерживаться интегрированного терминала, то выполни следующую команду для активации виртуального окружения:
 > 
 >     $ . myvenv\Scripts\activate.ps1
 >     
 > 
-> The advantage is that you don't have to switch between editor windows and command-line windows
+> Преимущество в том, что тебе не нужно переключаться между окном редактора и командной строкой
 
 <!--endsec-->
 
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-Start your virtual environment by running:
+Запусти виртуальное окружение, выполнив:
 
 {% filename %}command-line{% endfilename %}
 
     $ source myvenv/bin/activate
     
 
-Remember to replace `myvenv` with your chosen `virtualenv` name!
+Не забудь поменять `myvenv` на выбранное для `virtualenv` имя!
 
-> **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
+> **ПРИМЕЧАНИЕ:** иногда команда `source` может быть недоступна. В таком случае, используй следующий метод:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -153,15 +153,15 @@ Remember to replace `myvenv` with your chosen `virtualenv` name!
 
 <!--endsec-->
 
-You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
+Ты поймешь, что `virtualenv` запущен, когда увидишь префикс `(myvenv)` в командной строке.
 
-When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
+При работе с виртуальным окружением, команда `python` будет автоматически обращаться к правильной версии языка, так что тебе не обязательно использовать `python3`.
 
-OK, we have all important dependencies in place. We can finally install Django!
+Отлично, теперь мы будем хранить все важные зависимости в одном месте. Наконец можно установить Django!
 
-## Installing Django {#django}
+## Установка Django {#django}
 
-Now that you have your `virtualenv` started, you can install Django.
+Теперь, когда твой `virtualenv` запущен, ты можешь установить Django.
 
 Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
 
