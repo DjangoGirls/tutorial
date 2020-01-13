@@ -4,7 +4,7 @@
 
 Django написан на Python. Нам нужен Python, чтобы сделать что-нибудь в Django. Давай начнем с его установки! Мы хотим, чтобы ты установила самую свежую версию Python 3, поэтому, если у тебя уже есть более ранняя версия, то её придется обновить. Если у тебя уже установлена версия 3.4 или более высокая, она должна подойти.
 
-Please install normal Python as follows, even when you have Anaconda installed on your computer.
+Пожалуйста, установи обычный Python даже если Anaconda установлена на твоем компьютере.
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
@@ -18,7 +18,7 @@ Please install normal Python as follows, even when you have Anaconda installed o
 
 Обрати внимание на экран мастера установки, который называется "Setup" (Настройка). Тебе нужно пролистать его вниз и выбрать опцию "Add Python 3.6 to the PATH" (Добавить Python 3.6 к системной переменной PATH), как на рисунке (это может выглядеть по-разному в зависимости от версии, которую ты устанавливаешь):
 
-![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
+![Не забудьте добавить Python в системную переменную Path](../python_installation/images/python-installation-options.png)
 
 Когда установка закончится, ты можешь увидеть предложение узнать больше о Python или об установленной тобой версии. Закрой это окно — ты узнаешь намного больше в этом руководстве!
 
@@ -27,9 +27,9 @@ Please install normal Python as follows, even when you have Anaconda installed o
 1. либо установить все доступные обновления Windows и попробовать установить Python 3.6 заново; либо
 2. установить [более раннюю версию Python](https://www.python.org/downloads/windows/), например, [3.4.6](https://www.python.org/downloads/release/python-346/).
 
-If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
+Если ты установишь старую версию Python, экран установки может выглядеть несколько иначе, чем показано выше. Убедись, что вы прокрутили вниз, чтобы увидеть «Add python.exe to Path», а затем нажми кнопку на левой стороне и выбери "Will be installed on local hard drive":
 
-![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
+![Добавить Python в Path, для старых версий](../python_installation/images/add_python_to_windows_path.png)
 
 <!--endsec-->
 
@@ -38,7 +38,7 @@ data-collapse=true ces-->
 
 > **Примечание** Прежде чем установить Python на OS X, следует убедиться, что ваш Mac параметры позволяют устанавливать пакеты, которые не из App Store. Перейди к System Preferences (они находится в папке «Приложения»), нажмите «Безопасность & amp; конфиденциальности», а затем вкладку «Общие». Если настройка "Позволить приложения загруженные с " установлена как "Mac App Store", то измените ее на "Mac App Store and identified developers."
 
-You need to go to the website https://www.python.org/downloads/release/python-361/ and download the Python installer:
+Тебе нужно перейти по ссылке https://www.python.org/downloads/release/python-361/ и скачать установщик Python:
 
 * Скачай файл *Mac OS X 64-bit/32-bit installer*,
 * Сделай двойной щелчок на *python-3.4.3-macosx10.6.pkg* для запуска установщика.
@@ -48,7 +48,7 @@ You need to go to the website https://www.python.org/downloads/release/python-36
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
+Вполне вероятно, что у тебя уже установлен Python. Чтобы проверить это (а также версию языка), открой консоль и введи следующую команду:
 
 {% filename %}command-line{% endfilename %}
 
@@ -56,20 +56,20 @@ It is very likely that you already have Python installed out of the box. To chec
     Python 3.6.1
     
 
-If you have a different version of Python installed, at least 3.4.0 (e.g. 3.6.0), then you don't have to upgrade. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
+Если у вас установлена другая версия Python, новее 3.4.0 (например, 3.6.0), то ее не нужно обновлять. Если у тебя не установлен Python, или если ты хочешь использовать другую версию, сначала проверь, какой дистрибутив Linux ты используешь при помощи следующей команды:
 
 {% filename %}command-line{% endfilename %}
 
     $ grep ^NAME= /etc/os-release
     
 
-Afterwards, depending on the result, follow one of the following installation guides below this section.
+После этого, в зависимости от результата, следуй одной из инструкций по установке ниже.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-Type this command into your console:
+Введи эту команду в консоль:
 
 {% filename %}command-line{% endfilename %}
 
@@ -81,30 +81,30 @@ Type this command into your console:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Use this command in your console:
+Используй следующую команду в консоли:
 
 {% filename %}command-line{% endfilename %}
 
     $ sudo dnf install python3
     
 
-If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use `yum` instead.
+Если вы находитесь на более старых версиях Fedora, вы можете получить сообщение об ошибке, что команда `dnf` не найдена. В этом случае вам нужно использовать `yum` вместо dnf.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Use this command in your console:
+Используй следующую команду в консоли:
 
 {% filename %}command-line{% endfilename %}
 
-    $ sudo zypper install python3
+    $ sudo apt install python3.6
     
 
 <!--endsec-->
 
-Verify the installation was successful by opening a command prompt and running the `python3` command:
+Убедись, что установка прошла успешно, открыв приложение *Терминал* и запустив команду `python3`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -112,10 +112,10 @@ Verify the installation was successful by opening a command prompt and running t
     Python 3.6.1
     
 
-The version shown may be different from 3.6.1 -- it should match the version you installed.
+Показана версия может отличаться от 3.6.1--он должен соответствовать версии, которую вы установили.
 
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is 3.4.0 or higher. If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
+**ПРИМЕЧАНИЕ:** Если ты на Windows, и ты получаешь сообщение об ошибке `python3` не был найден, попробуй использовать `python` (без `3`) и проверить, если он все еще может быть версия Python, которая является 3.4.0 или выше. Если это не сработает, ты можешь открыть новую командную строку и повторить попытку; это произойдет, если ты используешь командную строку, открытую перед установкой Python.
 
 * * *
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
+Если у тебя остались какие-либо сомнения, или что-то пошло не так и ты понятия не имеешь что делать дальше - спроси своего тренера! Иногда дела идут не совсем гладко, поэтому лучше попросить помощи у кого-то с большим опытом.
