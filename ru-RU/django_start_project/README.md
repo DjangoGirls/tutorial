@@ -47,12 +47,12 @@
     djangogirls
     ├── manage.py
     ├── mysite
-    │   ├── __init__.py
-    │   ├── settings.py
-    │   ├── urls.py
-    │   └── wsgi.py
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
     ├── myvenv
-    │   └── ...
+    │   └── ...
     └── requirements.txt
     
 
@@ -82,7 +82,7 @@
 TIME_ZONE = 'Europe/Berlin'
 ```
 
-Код языка состоят из языка, например `en` для английского или `de` для немецкого языка и код страны, например `de` для Германии или `ch` для Швейцарии. Если английский - это не ваш родной язык, то можно добавить язык, чтобы изменить кнопки по умолчанию и уведомления с Django на ваш родной языке. Таким образом, кнопка «Отмена» будет переведена на язык, который вы определили здесь. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/2.2/ref/settings/#language-code).
+Код языка состоят из языка, например `en` для английского или `de` для немецкого языка и код страны, например `de` для Германии или `ch` для Швейцарии. Если английский - это не ваш родной язык, то можно добавить язык, чтобы изменить кнопки по умолчанию и уведомления с Django на ваш родной языке. Таким образом, кнопка «Отмена» будет переведена на язык, который вы определили здесь. [Django предоставляет множество готовых переводов](https://docs.djangoproject.com/en/2.2/ref/settings/#language-code).
 
 Если вам нужен другой язык, измените код языка, изменив следующую строку:
 
@@ -109,7 +109,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 ```
 
-> **Примечание**: Если пользуешься Хромбуком, то добавь эту строку в конец своего settings.py файла: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
+> **Примечание**: Если ты используешь Chromebook, то добавь эту строку в конец своего settings.py файла: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
 > Также добавь `.amazonaws.com` в `ALLOWED_HOSTS` если используешь cloud9
 
