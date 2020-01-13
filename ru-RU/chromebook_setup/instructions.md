@@ -2,32 +2,32 @@
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud IDE - это инструмент, предоставляющий тебе редактор кода и доступ к компьютеру в интернете, на котором ты можешь установить, записать и выполнить программу. На протяжении данного урока Cloud IDE будет использоваться как твой *локальный компьютер*. Ты будешь работать в терминале (так же, как и ваши одноклассники на OS X, Ubuntu или Windows), но твой терминал будет подключен к компьютеру где-нибудь в Нидерландах или Германии, который Cloud9 установили специально для тебя. Вот инструкции для облачных сред разработки (IDE PaizaCloud облако, AWS Cloud9). Вы можете выбрать одну из облачных IDE. Далее следуйте инструкциям.
+Cloud IDE - это инструмент, предоставляющий тебе редактор кода и доступ к компьютеру в интернете, на котором ты можешь установить, записать и выполнить программу. На протяжении данного урока Cloud IDE будет использоваться как твой *локальный компьютер*. Ты будешь работать в терминале (так же, как и твои одноклассники на OS X, Ubuntu или Windows), но твой терминал будет подключен к компьютеру где-нибудь в Нидерландах или Германии, который Cloud9 установили специально для тебя. Вот инструкции для облачных сред разработки (IDE PaizaCloud облако, AWS Cloud9). Ты можешь выбрать одну из облачных IDE. Далее следуй инструкциям.
 
 #### PaizaCloud Cloud IDE
 
-1. Перейдите на [PaizaCloud Cloud IDE](https://paiza.cloud/)
-2. Зарегистрируйте аккаунт
-3. Click *New Server* and choose the Django app
+1. Перейди на [PaizaCloud Cloud IDE](https://paiza.cloud/)
+2. Зарегистрируй аккаунт
+3. Нажми *New Sever* и выбери *Django app*
 4. Нажмите кнопку запуска (в левой части окна)
 
-Теперь вы должны увидеть интерфейс с боковой панелью, кнопки слева. Нажмите кнопку запуска, чтобы открыть окно терминала со строкой вроде этой:
+Теперь ты должна увидеть интерфейс с боковой панелью, кнопки слева. Нажми кнопку запуска, чтобы открыть окно терминала со строкой вроде этой:
 
 {% filename %}Terminal{% endfilename %}
 
     $
     
 
-Терминал на PaizaCloud Cloud IDE готово для ваших инструкций. Вы можете изменить или развернуть это окно, чтобы сделать его немного больше.
+Терминал на PaizaCloud Cloud IDE готов для твоих инструкций. Ты можешь изменить или развернуть это окно, чтобы сделать его немного больше.
 
 #### AWS Cloud9
 
 Currently Cloud 9 requires you to sign up with AWS and enter credit card information.
 
-1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Go to [c9.io](https://c9.io) and click *Get started with AWS Cloud9*
-3. Sign up for an AWS account (requires credit card information, but you can use it for free)
-4. In the AWS Dashboard, enter *Cloud9* in the search bar and click it
+1. Установи Cloud 9 из [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+2. Перейди на [c9.io](https://c9.io) и нажми *Get started with AWS Cloud9*
+3. Войди при помощи аккаунта AWS (необходимы данные кредитной карты, но ты можешь пользоваться бесплатно)
+4. На дашборде AWS введи *Cloud9* в поисковой строке и кликни
 5. In the Cloud 9 dashboard, click *Create environment*
 6. Name it *django-girls*
 7. While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
