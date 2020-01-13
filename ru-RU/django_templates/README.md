@@ -97,12 +97,12 @@
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+(Не забудьте заменить `<your-pythonanywhere-domain>` на ваше имя пользователя PythonAnywhere, без угловых скобок.)
 
 * Наконец, переключись на вкладку [Web](https://www.pythonanywhere.com/web_app_setup/) и нажми кнопку **Reload**. (Чтобы перейти на другие страницы PythonAnywhere из консоли, используйте кнопку меню в верхнем правом углу.) Ваше обновление должно быть доступно на https://subdomain.pythonanywhere.com - проверьте его в браузере! Если сообщения в блоге на сайте PythonAnywhere не соответствуют сообщениям, появляющимся на блоге, размещенном на локальном сервере, то это нормально. Базы данных на локальном компьютере и на PythonAnywhere не синхронизируются с остальными вашими файлами.
 
 Поздравляем! Теперь иди вперед и попробуй добавить новую должность в Django admin (не забудь добавить published_date!) Убедись, что ты находишься на Django admin для твоего сайта pythonanywhere, https://subdomain.pythonanywhere.com/admin. Затем обнови свою страницу, чтобы увидеть, появляется ли там сообщение.
 
-Работает как шарм? Мы гордимся! Отойдите от компьютера немного - вы заработали перерыв. :)
+Работает восхитительно? Мы гордимся тобой! Отойди от компьютера немного - ты заработала перерыв. 
 
-![Figure 13.4](images/donut.png)
+![Рисунок 13.4](images/donut.png)
