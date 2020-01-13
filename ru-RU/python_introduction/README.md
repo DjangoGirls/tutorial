@@ -954,7 +954,7 @@ hi("Sonja")
 
 Шикарно, верно? Так тебе не придется повторяться каждый раз, когда ты захочешь изменить имя. И это именно та причина, для которой нам и нужны функции - ты никогда не захочешь повторять свой код!
 
-Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right? Replace the content of your file with the following:
+Давай сделаем кое-что умнее - тут больше двух имен, и создание условия для каждого было бы сложным, правда? Замени часть своего файла на следующее:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -965,7 +965,7 @@ def hi(name):
 hi("Rachel")
 ```
 
-Let's call the code now:
+Давай выполним этот код:
 
 {% filename %}command-line{% endfilename %}
 
@@ -973,17 +973,17 @@ Let's call the code now:
     Hi Rachel!
     
 
-Congratulations! You just learned how to write functions! :)
+Поздравляем! Ты только что научилась писать свои собственные функции :)
 
 ## Циклы
 
-> For readers at home: this part is covered in the [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) video.
+> Для занимающихся дома: эта глава освещена в видео [Как работает Интернет](https://www.youtube.com/watch?v=aEA6Rc86HF0).
 
-This is the last part already. That was quick, right? :)
+Ну вот и последняя часть. Быстро время пролетело, верно? :)
 
-Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
+Программисты не любят повторяться. Программирование — это автоматизация вещей, поэтому мы не хотим приветствовать каждого человека по имени вручную, верно? Здесь пригодятся циклы.
 
-Still remember lists? Let's do a list of girls:
+Еще помнишь о списках? Давай создадим список девушек:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -991,7 +991,7 @@ Still remember lists? Let's do a list of girls:
 girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 ```
 
-We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
+Мы хотим поздороваться с каждой по имени. У нас есть функция `hi`, которая этим и занимается, так что давай поместим её в цикл:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -999,9 +999,9 @@ We want to greet all of them by their name. We have the `hi` function to do that
 for name in girls:
 ```
 
-The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
+Оператор ~~~ for~~~ работает по схожему принципу что и ~~~ if~~~ ; код после обоих операторов должен иметь отступ в четыре пробела.
 
-Here is the full code that will be in the file:
+Ниже полный код, который должен быть у нас в файле:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1032,9 +1032,9 @@ for name in girls:
     Next girl
     
 
-As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
+Как ты можешь заметить, все команды внутри цикла `for` (с отступом от левого края) будут выполняться для каждого элемента списка `girls`.
 
-You can also use `for` on numbers using the `range` function:
+Ты также можешь использовать цикл `for` на числах, используя функцию `range`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1043,7 +1043,7 @@ for i in range(1, 6):
     print(i)
 ```
 
-Which would print:
+Что выведет на экран:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1054,16 +1054,16 @@ Which would print:
     5
     
 
-`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
+Функция `range` создает список чисел, следующих от первого до второго с заданным шагом (начало, конец и шаг мы передаем функции как параметры, если шаг не указать, как в примере выше, он будет по умолчанию равен 1).
 
-Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
+Обрати внимание что второе число (конец списка) не включается в результат работы функции (`range(1, 6)` создает список от 1 до 5, не включающий 6). Это потому, что «range» — полуоткрытый диапазон, то есть включает в себя первое значение, но не включает последнего.
 
 ## Содержание
 
-That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
+Вот и всё. **Ты чертовски крута!** Эта глава была непростой, так что ты можешь гордиться собой. Мы-то точно тобой гордимся — вон как далеко продвинулась уже!
 
-For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
+Для официального и полного руководства по Python посети https://docs.python.org/3/tutorial/. Это даст тебе более тщательное и полное изучение языка. Юху!
 
-You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
+Тебе может потребоваться перерыв - прогуляйся и дай отдых глазам перед тем, как мы перейдем к следующей главе. :)
 
-![Cupcake](images/cupcake.png)
+![Пирожок](images/cupcake.png)
