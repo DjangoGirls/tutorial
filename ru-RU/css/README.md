@@ -299,6 +299,6 @@ h1, h2, h3, h4 {
 
 Не бойтесь возиться с CSS - попробуйте изменить некоторые вещи. Игра с CSS может помочь вам понять, что делают разные вещи. Если вы нарушите что-то, не беспокойтесь - вы всегда можете отменить это!
 
-We really recommend taking the free online courses "Basic HTML & HTML5" and "Basic CSS" on [freeCodeCamp](https://learn.freecodecamp.org/). They can help you learn all about making your websites prettier with HTML and CSS.
+Мы весьма рекомендуем пройти бесплатные онлайн-курсы "Basic HTML & HTML5" и "Basic CSS" на [freeCodeCamp](https://learn.freecodecamp.org/). Они могут помочь тебе узнать все о том, что делает тебе сайты красивее с HTML и CSS.
 
 Готовы к следующей главе?! :)
