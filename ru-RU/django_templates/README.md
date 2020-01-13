@@ -92,7 +92,7 @@
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd <your-pythonanywhere-domain>.pythonanywhere.com
+    $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
@@ -101,7 +101,7 @@
 
 * Наконец, переключись на вкладку [Web](https://www.pythonanywhere.com/web_app_setup/) и нажми кнопку **Reload**. (Чтобы перейти на другие страницы PythonAnywhere из консоли, используйте кнопку меню в верхнем правом углу.) Ваше обновление должно быть доступно на https://subdomain.pythonanywhere.com - проверьте его в браузере! Если сообщения в блоге на сайте PythonAnywhere не соответствуют сообщениям, появляющимся на блоге, размещенном на локальном сервере, то это нормально. Базы данных на локальном компьютере и на PythonAnywhere не синхронизируются с остальными вашими файлами.
 
-Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://subdomain.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
+Поздравляем! Теперь иди вперед и попробуй добавить новую должность в Django admin (не забудь добавить published_date!) Убедись, что ты находишься на Django admin для твоего сайта pythonanywhere, https://subdomain.pythonanywhere.com/admin. Затем обнови свою страницу, чтобы увидеть, появляется ли там сообщение.
 
 Работает как шарм? Мы гордимся! Отойдите от компьютера немного - вы заработали перерыв. :)
 
