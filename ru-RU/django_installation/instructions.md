@@ -163,7 +163,7 @@ data-collapse=true ces-->
 
 Теперь, когда твой `virtualenv` запущен, ты можешь установить Django.
 
-Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
+Но перед этим мы должны убедиться, что у нас установлена последняя версия `pip`, программы, которую мы будем использовать для установки Django:
 
 {% filename %}command-line{% endfilename %}
 
@@ -172,9 +172,9 @@ Before we do that, we should make sure we have the latest version of `pip`, the 
 
 ### Установка пакетов с требованиями
 
-A requirements file keeps a list of dependencies to be installed using `pip install`:
+Файл требований хранит список зависимостей для установки с использованием `pip install`:
 
-First create a `requirements.txt` file inside of the `djangogirls/` folder, using the code editor that you installed earlier. You do this by opening a new file in the code editor and then saving it as `requirements.txt` in the `djangogirls/` folder. Your directory will look like this:
+Сначала создай файл `requirements.txt` внутри папки `djangogirls /`, используя редактор кода, который ты установила ранее. Ты можешь сделать это, открыв новый файл в редакторе кода и затем сохранив его как `requirements.txt` в папке `djangogirls /`. Ваша папка будет выглядеть следующим образом:
 
     djangogirls
     ├── myvenv
@@ -182,14 +182,14 @@ First create a `requirements.txt` file inside of the `djangogirls/` folder, usin
     └───requirements.txt
     
 
-In your `djangogirls/requirements.txt` file you should add the following text:
+В файл `static/css/requirements.txt` следует добавить следующий код:
 
 {% filename %}djangogirls/requirements.txt{% endfilename %}
 
     Django~={{ book.django_version }}
     
 
-Now, run `pip install -r requirements.txt` to install Django.
+Теперь введи `pip install -r requirements.txt` для установки Django.
 
 {% filename %}command-line{% endfilename %}
 
@@ -203,14 +203,14 @@ Now, run `pip install -r requirements.txt` to install Django.
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
+> Если ты получаешь сообщение об ошибке при запуске pip в Windows, проверь что путь к директории с проектом не содержит пробелы или специальные символы (например, `C:\Users\User Name\djangogirls`). Если проблема в этом, то, пожалуйста, перенеси свой проект в другое место, адрес которого не будет содержать пробелы и специальные символы (советуем в: `C:\djangogirls`). Создай новый virtualenv в новой директории, а затем удали старый и повтори команды выше. (Перемещение директории virtualenv не будет работать, потому что virtualenv использует абсолютные пути.)
 
 <!--endsec-->
 
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
+> Командная строка может зависнуть после попытки установить Django. Если это произойдет, то вместо команды выше используй эту:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -222,8 +222,8 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
+> При возникновении ошибки при вызове pip под Ubuntu 12.04, пожалуйста, запусти `python -m pip install -U --force-reinstall pip`, чтобы исправить установку pip в virtualenv.
 
 <!--endsec-->
 
-That's it! You're now (finally) ready to create a Django application!
+Вот и оно! Теперь ты (наконец-то) готова создать свое Django приложение!
