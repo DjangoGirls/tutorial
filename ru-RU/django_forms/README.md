@@ -44,7 +44,7 @@ class PostForm(forms.ModelForm):
 
 ## Ссылка на страницу с формой
 
-It's time to open `blog/templates/blog/base.html` in the code editor. In the `div` named `page-header`, we will add a link:
+Пришло время открыть `blog/templates/blog/base.html` в редакторе кода. Мы добавим ссылку в `div`, который называется `page-header`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -94,7 +94,7 @@ It's time to open `blog/templates/blog/base.html` in the code editor. In the `di
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-path('post/new/', views.post_new, name='post_new'),
+path('post/new', views.post_new, name='post_new'),
 ```
 
 Окончательная версия файла будет выглядеть следующим образом:
@@ -370,7 +370,7 @@ form = PostForm(instance=post)
 
 Поздравляем! Твое приложение становится все более сложным!
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.2/topics/forms/
+Если тебе нужно больше информации о формах в Django, то обратись к официальной документации: https://docs.djangoproject.com/en/2.2/topics/forms/
 
 ## Безопасность
 
@@ -442,8 +442,8 @@ If you need more information about Django forms, you should read the documentati
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+(Не забудьте заменить `<your-pythonanywhere-domain>` на ваше имя пользователя PythonAnywhere, без угловых скобок.)
 
-* Наконец, прыжок на [страницу «Веб»](https://www.pythonanywhere.com/web_app_setup/) (используйте кнопку меню в верхнем правом углу консоли) и клик по **Reload**. Refresh your https://subdomain.pythonanywhere.com blog to see the changes.
+* Наконец, прыжок на [страницу «Веб»](https://www.pythonanywhere.com/web_app_setup/) (используйте кнопку меню в верхнем правом углу консоли) и клик по **Reload**. Обновите ваш https://subdomain.pythonanywhere.com блог, чтобы увидеть изменения.
 
 Вот и все! Поздравляем :)
