@@ -84,7 +84,7 @@ urlpatterns = [
 
 ## Добавим представление для страницы поста
 
-В этот раз наше *view* получит дополнительный параметр `pk`. Но как дать нашему *view* знать о нем? Для этого мы определим функцию как `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in `urls` (`pk`). Пропуск переменной будет неправилен и приведет к ошибке!
+В этот раз наше *view* получит дополнительный параметр `pk`. Но как дать нашему *view* знать о нем? Для этого мы определим функцию как `def post_detail(request, pk):`. Обрати внимание, что мы должны использовать то же имя переменной, что мы выбрали для обработки URL (`pk`). Пропуск переменной будет неправилен и приведет к ошибке!
 
 Теперь мы хотим получить одну конкретную запись из блога. Для этого потребуется использовать QuerySet, примерно такую:
 
@@ -128,11 +128,11 @@ def post_detail(request, pk):
 
 Да. Пришло время обновить страницу: http://127.0.0.1:8000/
 
-![Post list view](images/post_list2.png)
+![Post list view](images/does_not_exist2.png)
 
 Заработало! Только что произойдет, если ты попробуешь перейти по ссылке из заголовка записи?
 
-![TemplateDoesNotExist ошибка](images/template_does_not_exist2.png)
+![TemplateDoesNotExist ошибка](images/does_not_exist2.png)
 
 Ой, нет! Другая ошибка! Но мы уже знаем как с ней справиться, верно? Нам нужно добавить шаблон!
 
@@ -140,7 +140,7 @@ def post_detail(request, pk):
 
 Мы создадим файл `post_detail.html` в директории `blog/templates/blog`, и откроем его в редакторе кода.
 
-Let's type the following code:
+Давай введём следующий код:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -166,7 +166,7 @@ Let's type the following code:
 
 Отлично, можешь перезагрузить страницу и проверить пропала ли теперь ошибка `TemplateDoesNotExist`.
 
-![Post detail страница](images/post_detail2.png)
+![Post detail страница](images/does_not_exist2.png)
 
 Ура! Все работает!
 
