@@ -342,7 +342,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Выглядит практически идентично представлению `post_new`, верно? Но не совсем. For one, we pass an extra `pk` parameter from `urls`. Следующее: мы получаем модель `Post` для редактирования при помощи `get_object_or_404(Post, pk=pk)` и передаем экземпляр post в качестве `instance` форме для сохранения…
+Выглядит практически идентично представлению `post_new`, верно? Но не совсем. Первое: мы передаем дополнительный параметр `pk` из Url-адреса. Следующее: мы получаем модель `Post` для редактирования при помощи `get_object_or_404(Post, pk=pk)` и передаем экземпляр post в качестве `instance` форме для сохранения…
 
 {% filename %}blog/views.py{% endfilename %}
 
