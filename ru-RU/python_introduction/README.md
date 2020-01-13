@@ -726,9 +726,9 @@ if 3 > 2:
     print('It works!')
 ```
 
-Обратила внимание как мы сделали отступ во второй строке из 4 символов пробела? Мы поступаем так, чтобы Python понимал какой код после условного оператора if должен быть выполнен, если условие равно True. Можно ограничиться и одним пробелом, однако, практически все программисты Python используют 4, чтобы код выглядел аккуратно и читабельно. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
+Обратила внимание как мы сделали отступ во второй строке из 4 символов пробела? Мы поступаем так, чтобы Python понимал какой код после условного оператора if должен быть выполнен, если условие равно True. Можно ограничиться и одним пробелом, однако, практически все программисты Python используют 4, чтобы код выглядел аккуратно и читабельно. Один Tab будет также считаться за 4 пробела - до тех пор, пока тебе это позволяет редактор кода. Когда ты сделала свой выбор, не меняй его! Если у ты уже используешь 4 пробела в качестве отступа, то и для всех будущих отступов используй ихи, в противном случае ты можешь столкнуться с проблемами.
 
-Save it and give it another run:
+Сохраняем и запускаем еще раз:
 
 {% filename %}command-line{% endfilename %}
 
@@ -737,11 +737,11 @@ $ python3 python_intro.py
 It works!
 ```
 
-Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
+Примечание: запомни, что в Windows 'python3' не распознается как команда. Теперь замени 'python3' на 'python' для выполнения файла.
 
 ### Что, если условие не True?
 
-In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
+В предыдущем пример код выполнялся только когда условие равнялось True. Однако, Python имеет операторы `elif` и `else`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -752,7 +752,7 @@ else:
     print('5 is not greater than 2')
 ```
 
-When this is run it will print out:
+Если запустить этот код, он напечатает:
 
 {% filename %}command-line{% endfilename %}
 
@@ -760,7 +760,7 @@ When this is run it will print out:
     5 is indeed greater than 2
     
 
-If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
+Если 2 больше 5, то будет выполнена следующая команда. Просто, правда? Давай посмотрим как работает оператор `elif`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -774,7 +774,7 @@ else:
     print('Hey anonymous!')
 ```
 
-and executed:
+и запускаем:
 
 {% filename %}command-line{% endfilename %}
 
@@ -782,9 +782,9 @@ and executed:
     Hey Sonja!
     
 
-See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
+Видишь, что произошло? `elif` позволяет добавить дополнительные условия, которые запускаются если предыдущие не срабатывают.
 
-You can add as many `elif` statements as you like after your initial `if` statement. For example:
+Можно использовать сколько угодно `elif` после первого `if`. Например:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -804,7 +804,7 @@ else:
     print("My ears are hurting! :(")
 ```
 
-Python runs through each test in sequence and prints:
+Python проходит через каждую проверку условия и выводит:
 
 {% filename %}command-line{% endfilename %}
 
@@ -812,11 +812,11 @@ Python runs through each test in sequence and prints:
     Perfect, I can hear all the details
     
 
-## Comments
+## Комментарии
 
-Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
+Комментарии - это строки, начинающиеся с `#`. Вы можете написать все, что вы хотите после `#` и Python будет игнорировать это. Комментарии могут упростить ваш код для понимания другими людьми.
 
-Let's see how that looks:
+Давайте посмотрим, как это выглядит:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -827,27 +827,27 @@ if volume < 20 or volume > 80:
     print("That's better!")
 ```
 
-You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
+Вам не нужно писать комментарий для каждой строки кода, но они полезны для объяснения, почему ваш код что-то делает, или предоставление сводной информации, когда она делает что-то сложное.
 
 ### Содержание
 
-In the last few exercises you learned about:
+В последних трех упражнениях ты познакомилась с:
 
-- **comparing things** – in Python you can compare things by using `>`, `>=`, `==`, `<=`, `<` and the `and`, `or` operators
-- **Boolean** – a type of object that can only have one of two values: `True` or `False`
-- **Saving files** – storing code in files so you can execute larger programs.
-- **if … elif … else** – statements that allow you to execute code only when certain conditions are met.
-- **comments** - lines that Python won't run which let you document your code
+- **сравнением вещей** - в Python ты можешь сравнивать вещи друг с другом при помощи `>`, `>=`, `==`, `<=`, `<` и `and`, `or` операторов
+- **Boolean** - тип объекта, который может иметь только два значения: `True` или `False`
+- **сохранением файлов** - хранение кода в файлах позволяет выполнять длинные программы.
+- **if...elif...else** - условные операторы, которые позволяют выполнять код только при определенных условиях.
+- **комментариями** - строки, на которых Python не будет выполняться, что позволит документировать ваш код
 
-Time for the last part of this chapter!
+Пришло время для последней части этой главы!
 
 ## Твоя собственная функция!
 
-> For readers at home: this part is covered in the [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0) video.
+> Для занимающихся дома: эта глава освещена в видео [Как работает Интернет](https://www.youtube.com/watch?v=5owr-6suOl0).
 
-Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
+Помнишь функции, такие как `len()`, которые можно использовать в Python? Тогда у нас есть хорошие новости — сейчас ты научишься писать свои собственные функции!
 
-A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
+Функция - это последовательность инструкций, которые должен выполнить Python. Каждая функция в Python начинается с ключевого слова `def`, имеет свое имя и параметры. Давай посмотрим. Замени код в **python_intro.py** на следующий:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -859,11 +859,11 @@ def hi():
 hi()
 ```
 
-Okay, our first function is ready!
+Отлично, наша первая функция готова!
 
-You may wonder why we've written the name of the function at the bottom of the file. This is because Python reads the file and executes it from top to bottom. So in order to use our function, we have to re-write it at the bottom.
+Ты можешь задаться вопросом, почему мы написали имя функции в конце файла. Причина в том, что Python читает и исполняет код из файла сверху вниз. Поэтому, для использования нашей функции мы должны вызвать её в конце файла.
 
-Let's run this now and see what happens:
+Давай запустим и посмотрим что произойдет:
 
 {% filename %}command-line{% endfilename %}
 
@@ -872,13 +872,13 @@ Let's run this now and see what happens:
     How are you?
     
 
-Note: if it didn't work, don't panic! The output will help you to figure why:
+Примечание: если это не работало, не паникуй! Вывод поможет вам определить, почему:
 
-- If you get a `NameError`, that probably means you typed something wrong, so you should check that you used the same name when creating the function with `def hi():` and when calling it with `hi()`.
-- If you get an `IndentationError`, check that both of the `print` lines have the same whitespace at the start of a line: python wants all the code inside the function to be neatly aligned.
-- If there's no output at all, check that the last `hi()` *isn't* indented - if it is, that line will become part of the function too, and it will never get run.
+- Если ты получила `KeyError`, это вероятно означает, что ты ввела что-то неправильное, поэтому проверь, что ты использовала одно то же имя при создании функции с `def hi():` и при вызове функции с `hi()`</0>.
+- Если вы получили `IndentationError`, проверь, что обе строки `print` имеют одинаковые пробелы в начале строки: python хочет, чтобы весь код внутри функции был аккуратно выровнен.
+- Если вообще нет вывода, проверь, что последний `hi()` не имеет отступов - если есть, эта строка тоже станет частью функции и никогда не будет выполняться.
 
-Let's build our first function with parameters. We will change the previous example – a function that says 'hi' to the person running it – with a name:
+Это было просто! Давай напишем нашу первую функцию с параметрами. Мы будем использовать предыдущий пример - функцию, которая пишет 'hi' и имя пользователя:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -886,7 +886,7 @@ Let's build our first function with parameters. We will change the previous exam
 def hi(name):
 ```
 
-As you can see, we now gave our function a parameter that we called `name`:
+Как ты можешь заметить, мы передали нашей функции параметр `name`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -902,7 +902,7 @@ def hi(name):
 hi()
 ```
 
-Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
+Помни: функция `print` расположена внутри блока оператора `if` с отступом в четыре пробела. Это потому, что она запускается тогда, когда выполняется условие. Давай посмотрим, как это работает:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -913,7 +913,7 @@ Remember: The `print` function is indented four spaces within the `if` statement
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
+Упс, ошибка. К счастью, Python выдает довольно подробное сообщение об ошибке. Оно говорит нам, что функция `hi()` (которую мы определили) имеет один обязательный аргумент (`name`) и мы забыли передать его при вызове функции. Давай исправим это в конце файла:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -921,7 +921,7 @@ Oops, an error. Luckily, Python gives us a pretty useful error message. It tells
 hi("Ola")
 ```
 
-And run it again:
+И запустим еще раз:
 
 {% filename %}command-line{% endfilename %}
 
@@ -929,7 +929,7 @@ And run it again:
     Hi Ola!
     
 
-And if we change the name?
+И если мы поменяем имя?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -937,7 +937,7 @@ And if we change the name?
 hi("Sonja")
 ```
 
-And run it:
+И повторим:
 
 {% filename %}command-line{% endfilename %}
 
@@ -945,14 +945,14 @@ And run it:
     Hi Sonja!
     
 
-Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
+Теперь, как ты думаешь, что произойдет, если ты наберешь другое имя? (Не Ola или Sonja) Попробуй сама и проверь была ли ты права. Результат должен быть таким:
 
 {% filename %}command-line{% endfilename %}
 
     Hi anonymous!
     
 
-This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
+Шикарно, верно? Так тебе не придется повторяться каждый раз, когда ты захочешь изменить имя. И это именно та причина, для которой нам и нужны функции - ты никогда не захочешь повторять свой код!
 
 Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right? Replace the content of your file with the following:
 
