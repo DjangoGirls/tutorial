@@ -159,11 +159,11 @@ Quando si lavora all'interno di un ambiente virtuale, `python` farà automaticam
 
 OK, abbiamo tutte le dipendenze importanti pronte. Finalmente possiamo installare Django!
 
-## Installing Django {#django}
+## Installare Django {#django}
 
-Now that you have your `virtualenv` started, you can install Django.
+Ora che hai avviato il tuo `virtualenv`, puoi installare Django.
 
-Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
+Prima però dobbiamo assicurarci di avere la versione più recente di `pip`, il software che useremo per installare Django:
 
 {% filename %}command-line{% endfilename %}
 
