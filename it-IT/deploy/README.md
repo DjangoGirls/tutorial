@@ -156,7 +156,7 @@ Ora eseguiamo l'helper per configurare automaticamente la nostra applicazione da
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pa_autoconfigure_django.py --python=3.6 https://github.com/<your-github-username>/my-first-blog.git
+    $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
     
 
 Guardando l'esecuzione, potrai vedere cosa sta facendo:
