@@ -169,7 +169,7 @@ Encuentra el bloque de declaración (el código entre las llaves `{` y `}`) `h1 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
+h1 a, h2 a {
     color: #FCA205;
     font-family: 'Lobster';
 }
