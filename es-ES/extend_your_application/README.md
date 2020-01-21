@@ -42,7 +42,7 @@ Empezaremos añadiendo un enlace al fichero `blog/templates/blog/post_list.html`
 
 La parte de`post_detail` significa que Django estará esperando un URL en `blog/urls.py` con el nombre=post_detail
 
-¿Y ahora qué pasa con < 0>pk=post.pk</code>? `pk` se refiere a primary key (clave primaria), la cual es un nombre único por cada registro en una base de datos. Debido a que no especificamos una llave primaria en nuestro modelo `Post`, Django creará una por nosotros (por defecto, un número que incrementa una unidad por cada registro, por ejemplo, 1, 2, 3) y lo añadirá como un campo llamado `pk` a cada uno de nuestros posts. Accedemos a la clave primaria escribiendo `post.pk`, del mismo modo en que accedemos a otros campos (`título`, `autor`, etc.) en nuestro objeto `Post`!
+¿Y ahora qué pasa con `pk=post.pk`? `pk` se refiere a primary key (clave primaria), la cual es un nombre único por cada registro en una base de datos. Debido a que no especificamos una llave primaria en nuestro modelo `Post`, Django creará una por nosotros (por defecto, un número que incrementa una unidad por cada registro, por ejemplo, 1, 2, 3) y lo añadirá como un campo llamado `pk` a cada uno de nuestros posts. Accedemos a la clave primaria escribiendo `post.pk`, del mismo modo en que accedemos a otros campos (`título`, `autor`, etc.) en nuestro objeto `Post`!
 
 Ahora cuando vayamos a: http://127.0.0.1:8000/ tendremos un error (como era de esperar, ya que no tenemos una URL o una *vista* para `post_detail`). Se verá así:
 
