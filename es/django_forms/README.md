@@ -46,7 +46,7 @@ Una vez más vamos a crear: un enlace a la página, una dirección URL, una vist
 
 Ahora toca abrir el fichero `blog/templates/blog/base.html` en el editor. Vamos a añadir un enlace en el `div` llamado `page-header`:
 
-{% filename %}blog/templates/blog/post_base.html{% endfilename %}
+{% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
@@ -56,7 +56,7 @@ Ten en cuenta que queremos llamar a nuestra nueva vista `post_new`. La clase `"g
 
 Después de agregar la línea, tu archivo html debería lucir de esta forma:
 
-{% filename %}blog/templates/blog/post_base.html{% endfilename %}
+{% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
 {% load static %}
