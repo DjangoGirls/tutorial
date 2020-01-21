@@ -4,17 +4,17 @@ Nuestro blog todavía luce bastante feo, ¿verdad? ¡Ya es tiempo de mejorarlo! 
 
 ## ¿Qué es CSS?
 
-El lenguaje CSS (las siglas en inglés de hojas de estilos en cascada, o Cascading Style Sheets) sirve para describir la apariencia de un sitio web escrito en un lenguaje de marcado (como HTML). Es como la capa de pintura para nuestra página web. ;)
+El lenguaje CSS (las siglas en inglés de hojas de estilos en cascada, o Cascading Style Sheets), sirve para describir la apariencia y el formato de un sitio web escrito en un lenguaje de marcado (como HTML). Has de cuenta que es como aplicar maquillaje a nuestra página web. ;)
 
-Pero no queremos empezar de cero otra vez, ¿verdad? De nuevo vamos a usar algo que otros programadores han publicado ya en Internet. Estar siempre reinventando la rueda no mola.
+Pero no queremos empezar de cero otra vez, ¿verdad? Una vez más vamos a utilizar algo que otros programadores ya han publicaron gratis en internet. Reinventar la rueda todo el tiempo no es nada divertido.
 
-## ¡Vamos a usar Bootstrap!
+## ¡Comenzemos a usar Bootstrap!
 
 Bootstrap es uno de los frameworks de HTML y CSS mas populares para desarrollar para sitios web atractivos: https://getbootstrap.com/
 
-Lo escribieron programadores que trabajaban en Twitter. ¡Ahora lo mantienen y desarrollan voluntarios de todo el mundo!
+Fue escrito por programadores que trabajaban en Twitter. ¡Ahora lo mantienen y desarrollan voluntarios de todo el mundo!
 
-## Instalar Bootstrap
+## Instala Bootstrap
 
 Para instalar Bootstrap, abre tu fichero `.html` en el editor de código y añade esto a la sección `<head>`:
 
@@ -25,21 +25,21 @@ Para instalar Bootstrap, abre tu fichero `.html` en el editor de código y añad
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-Esto no añade ningún archivo a tu proyecto. Solo apunta a archivos que existen en Internet. Así que adelante, accede a tu sitio web y refresca la página ¡Aquí la tienes!
+Esto no añade ningún archivo a tu proyecto. Solo apunta a archivos que ya existen en Internet. Así que adelante, accede a tu sitio web y actualiza la página ¡Aquí la tienes!
 
 ![Figura 14.1](images/bootstrap1.png)
 
-¡Ya tiene mejor pinta!
+¡Ya luce mucho mejor!
 
-## Archivos estáticos (static files) en Django
+## Archivos estáticos en Django
 
-Finalmente nos vamos a fijar en esto que hemos estado llamando **archivos estáticos**. Los archivos estáticos son los archivos CSS e imágenes. Su contenido no depende del contexto de la petición y siempre será el mismo para todos los usuarios.
+Finalmente vamos a mirar más de cerca esto que hemos estado llamando **archivos estáticos**. Los archivos estáticos son todas tus imágenes y archivos CSS. Su contenido no depende del contexto requerido y siempre será el mismo para cada usuario.
 
-### Dónde poner los archivos estáticos en Django
+### Dónde poner los archivos estáticos para Django
 
-Django ya sabe dónde encontrar los archivos estáticos de la app "admin". Ahora necesitamos añadir los archivos estáticos de nuestra aplicación, `blog`.
+Django ya sabe dónde encontrar los archivos estáticos para la incorporación de la aplicación "admin". Ahora necesitamos añadir los archivos estáticos de nuestra aplicación, `blog`.
 
-Crearemos una carpeta llamada `static` dentro de la app blog:
+Hacemos eso creando una carpeta llamada `static` dentro de la aplicación blog:
 
     djangogirls
     ├── blog
@@ -49,7 +49,7 @@ Crearemos una carpeta llamada `static` dentro de la app blog:
     └── mysite
     
 
-Django encontrará automáticamente cualquier carpeta llamada "static" dentro de cualquiera de las carpetas de tus apps. Podrá usar su contenido como archivos estáticos.
+Django automáticamente encontrará cualquier carpeta llamada "static" dentro de cualquiera de las carpetas de tus aplicaciones. Entonces va a ser posible usar su contenido como archivos estáticos.
 
 ## ¡Tu primer archivo CSS!
 
@@ -169,8 +169,8 @@ Encuentra el bloque de declaración (el código entre las llaves `{` y `}`) `h1 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
-    color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
     font-family: 'Lobster';
 }
 ```
