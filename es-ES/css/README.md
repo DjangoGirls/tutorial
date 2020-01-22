@@ -300,6 +300,6 @@ Guarda estos archivos y recarga tu sitio.
 
 No tengas miedo a experimentar con este CSS un poco y tratar de cambiar algunas cosas. Jugar con el CSS te puede ayudar a entender lo que hacen las distintas secciones. Si algo deja de funcionar, no te preocupes, ¡siempre puedes deshacerlo!
 
-Realmente recomendamos hacer cursos gratuitos online de "básico HTML & HTML5" y "CSS básico" en freeCodeCamp<0>. Pueden ayudarte a aprender todo acerca de hacer tus sitios web más bonitos con HTML y CSS.</p> 
+Realmente recomendamos hacer cursos gratuitos online de "básico HTML & HTML5" y "CSS básico" en [freeCodeCamp](https://learn.freecodecamp.org/). Pueden ayudarte a aprender todo acerca de hacer tus sitios web más bonitos con HTML y CSS.
 
 ¡¿Lista para el siguiente capítulo?! :)
