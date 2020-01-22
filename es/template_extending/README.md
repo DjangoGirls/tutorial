@@ -1,6 +1,6 @@
 # Extendiendo plantillas
 
-Otra cosa buena que tiene Django es la **extensión de plantillas**. ¿Qué significa? Significa que puedes reutilizar partes del HTML para diferentes páginas del sitio web.
+Otra cosa buena que tiene Django es la **extensión de plantillas**. ¿Qué significa? Significa que puedes reusar partes del HTML para diferentes páginas del sitio web.
 
 Las plantillas son útiles cuando quieres utilizar la misma información o el mismo diseño en más de un lugar. No tienes que repetirte a ti misma en cada archivo. Y si quieres cambiar algo, no tienes que hacerlo en cada plantilla, sólo en una!
 
@@ -122,7 +122,7 @@ Queremos utilizar esto como parte de nuestra plantilla en los bloques de conteni
 {% endblock %}
 ```
 
-Solo falta una cosa. Tenemos que conectar estas dos plantillas. ¡Esto es lo que significa extender plantillas! Para eso tenemos que añadir una etiqueta "extends" al comienzo del archivo. Así:
+Solo falta una cosa. Tenemos que conectar estas dos plantillas. ¿Esto es lo que significa extender plantillas! Para eso tenemos que añadir una etiqueta "extends" al comienzo del archivo. Así:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 

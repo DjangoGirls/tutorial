@@ -20,7 +20,7 @@ Una cosa para tener en cuenta: Durante la instalación, verás una ventana de "S
 
 ![No te olvides de agregar Python al Path](../python_installation/images/python-installation-options.png)
 
-Cuando la instalación se complete, verás un cuadro de diálogo con un enlace que puedes seguir para saber más sobre Python o sobre la versión que has instalado. Cierra o cancela ese dialogo -- ¡Aprenderás más en ese tutorial!
+Cuando la instalación de complete, verás un cuadro de diálogo con un enlace que puedes seguir para saber más sobre Python o sobre la versión que has instalado. Cierra o cancela ese dialogo -- ¡Aprenderás más en ese tutorial!
 
 Nota: si estás usando una versión anterior de Windows (7, Vista o cualquier versión anterior) y el instalador de la versión 3.6.x de Python falla con un error, intenta también:
 
@@ -81,21 +81,21 @@ Escribe este comando en tu consola:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Usa este comando en tu consola:
+Usa éste comando en tu consola:
 
 {% filename %}command-line{% endfilename %}
 
     $ sudo dnf install python3
     
 
-Si estás en versiones antiguas de Fedora, puedes obtener un error que el comando `dnf` no se encuentra. En ese caso, necesitas usar `yum` en su lugar.
+Si tu estás en versiones antiguas de Fedora, puedes obtener un error que el comando `dnf` no se encuentra. En ese caso, tu necesitas usar `yum` en su lugar.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Usa este comando en tu consola:
+Usa éste comando en tu consola:
 
 {% filename %}command-line{% endfilename %}
 
@@ -112,10 +112,10 @@ Verifica si la instalación fue exitosa abriendo una terminal o consola, y corri
     Python 3.6.1
     
 
-La versión mostrada puede ser diferente desde 3.6.1 -- debería marcar la versión que instalaste.
+La versión mostrada puede ser diferente desde 3.6.1 -- este debería marcar la versión que tu instalaste.
 
 **NOTA:** Si está en Windows y recibe un mensaje de error que indica que `python3` no se encontró, intente usar `python` (sin el `3`) y compruebe si todavía podría ser una versión de Python que sea 3.4.0 o superior. Si eso tampoco funciona, puede abrir un nuevo símbolo del sistema e intentar nuevamente; Esto sucede si usa un símbolo del sistema abierto antes de la instalación de Python.
 
 * * *
 
-Si tienes alguna duda, o si ocurrió algún error y no tienes idea sobre qué hacer, ¡por favor pregunta a tu entrenador! Algunas veces las cosas no van bien y es mejor pedir ayuda a alguien con más experiencia.
+Si tú tienes alguna duda, o si ocurrió algún error y no tienes idea sobre qué hacer, ¡por favor pregunta a tú entrenador! Algunas veces las cosas no van bien y es mejor preguntar por ayuda desde alguien con más experiencia.

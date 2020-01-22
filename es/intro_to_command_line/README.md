@@ -54,11 +54,11 @@ Cada comando vendrá precedido por un `$` o un `>` y un espacio, pero no debes e
 
 La parte superior incluye el `$` o el `>` que es llamado en la *línea de comandos*, o mas corto *prompt*. Introduce algo allí.
 
-En el tutorial, cuando queramos introducir un comando, incluye el `$` o `>`, y ocasionalmente más a la izquierda. Ignora la parte izquierda solamente escribiendo el comando, el cuál inicia después del prompt.
+En el tutorial, cuando queramos introducir un comando, incluye el `$` o `>`, y ocasionalmente más a la izquierda. Ignora la parte izquierda solamente escribiendo el comando, el cuál inicia después de el prompt.
 
 ## Tu primer comando (¡BIEN!)
 
-Comencemos tecleando este comando:
+Iniciemos por teclear este comando:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -85,9 +85,9 @@ Y luego presiona `enter`. Esto será nuestro resultado:
     $ whoami olasitarska
     
 
-Como puedes ver, el computador solo ha impreso tu nombre de usuario. Ordenado, ¿ah? :)
+Como puedes ver, el computador ha solo impreso tu nombre de usuario. Ordenado, ¿ah? :)
 
-> Intenta escribir cada comando; no copies y pegues. ¡De esta manera lo recordarás!
+> Intenta escribir cada comando; no copies y pegues. ¡De ésta manera lo recordarás!
 
 ## Fundamentos
 
@@ -127,17 +127,17 @@ Probablemente veremos algo similar en tu computador. Una vez que abres la consol
 
 ### Aprende más sobre un comando
 
-¡Muchos comandos pueden escribirse en el prompt que tiene construido una ayuda que puedes leer! Por ejemplo, aprende más acerca de el comando del directorio actual:
+¡Muchos comandos pueden escribirse en el prompt que tiene construído una ayuda que puedes leer! Por ejemplo, aprende más acerca de el comando del directorio actual:
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X y Linux tienen un comando `man`, el cual te da una ayuda en comandos. Intenta `man pwd` y ve qué dice, o coloca `man` antes de otro comando para ver su ayuda. La salida de `man` nomalmentes es paginada. Usa la barra de espacio para moverte a la siguiente página, y `q` para salir de la ayuda.
+OS X y Linux tienen un comando `man`, el cuál te da una ayuda en comandos. Intenta `man pwd` y ve que dice, o coloca `man` antes de otro comando para ver su ayuda. La salida de `man` nomalmentes es paginada. Usa la barra de espacio para moverte a la siguiente página, y `q` para sallir de la ayuda.
 
 <!--endsec-->
 
 <!--sec data-title="Command Help: Windows" data-id="windows_help" data-collapse=true ces-->
 
-Añade un sufijo `/?` para más comandos que se imprimirán en la página de ayuda. Puedes hacer scroll a la ventana de comandos para verlos todos. Intenta `cd /?`.
+Añade un sufijo `/?` para mas comandos que se imprimirán en la página de ayuda. Tú puedes hacer scroll a la ventana de comandos para verlos todos. Intenta `cd /?`.
 
 <!--endsec-->
 
@@ -196,7 +196,7 @@ Ahora, vamos a nuestro directorio de escritorio:
     $ cd Escritorio
     
 
-Nota que el nombre del directorio "Escritorio" puede ser traducido al lenguaje de tu cuenta de Linux. Si ese es el caso, necesitarás reemplazar `Escritorio` con la traducción del nombre; por ejemplo, `Desktop` para el inglés.
+Nota que el nombre del directorio "Escritorio" puede ser traducido al lenguaje de tu cuenta de Linux. Si ese es el caso, tu necesitarás reemplazar `Escritorio` con la traducción del nombre; por ejemplo, `Schreibtisch` para el alemán.
 
 <!--endsec-->
 
@@ -231,13 +231,13 @@ Verifica si está cambiado actualmente:
 
 ¡Aquí está!
 
-> PRO tip: si escribes `cd D` y luego presionas `tab` en tu teclado, la línea de comandos automáticamente llenará el resto de el nombre por el que puedes navegar. Si hay mas que una carpeta iniciando con "D", presiona la tecla `tab` dos veces para obtener una lista de opciones.
+> PRO tip: si tu escribes `cd D` y luego presionas `tab` en tu teclado, la línea de comandos automáticamente llenará el resto de el nombre por el que puedes navegar. Si hay mas que una carpeta iniciando con "D", presiona la tecla `tab` dos veces para obtener una lista de opciones.
 
 * * *
 
 ### Crear un directorio
 
-¿Cómo crear un práctico directorio para tu escritorio? Puedes hacerlo de esta manera:
+¿Cómo crear un práctico directorio para tu escritorio? Tú puedes hacerlo de esta manera:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -257,9 +257,9 @@ Verifica si está cambiado actualmente:
 
 <!--endsec-->
 
-Este pequeño comando creará una carpeta con el nombre `práctica` en tu computador. ¡Puedes verificar si está allí en tu Escritorio o ejecutando uno de los siguientes comandos `ls` o `dir`! Inténtalo. :)
+Éste pequeño comando creará una carpeta con el nombre `práctica` en tu computador. ¡Tú puedes verificar si está allí en tu Escritorio o ejecutando uno de los siguientes comandos `ls` o `dir`! Intentalo. :)
 
-> PRO tip: Si no quieres escribir el mismo comando una y otra vez, intenta presionando la `flecha arriba` y `flecha abajo` en tu teclado para regresar a través de los comandos recientemente usados.
+> PRO tip: Si tu no quieres escribir el mismo comando una y otra vez, intenta presionando la `flecha arriba` y `flecha abajo` en tu teclado para regresar a través de los comandos recientemente usados.
 
 * * *
 
@@ -321,7 +321,7 @@ Primero, necesitamos regresar al Escritorio:
 
 <!--endsec-->
 
-Usando los `..` con el comando `cd` cambiaremos tu actual directorio al directorio padre (que es el directorio que contiene tu directorio actual).
+Usando los `..` con el comando `cd` cambiaremos tu actual directorio al directorio padre( que es, el directorio que contiene tu directorio actual).
 
 Verifica dónde estás:
 
@@ -345,7 +345,7 @@ Verifica dónde estás:
 
 Es hora de eliminar el directorio `practica`:
 
-> **Atención**: Si eliminas los archivos usando `del`, `rmdir` o `rm` no se podrán recuperar, esto significa ¡*el borrado de los archivos será para siempre*! Sé muy cuidados@ con este comando.
+> **Atención**: Si eliminas los archivos usando `del`, `rmdir` o `rm` no se podrán recuperar, esto significa ¡*el borrado de los archivos será para siempre*! Sé muy cuidados@ coon este comando.
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
@@ -427,7 +427,7 @@ Aquí está un resumen de algunos comandos útiles:
 | rmdir /S          | rm -r                    | Eliminar un Directorio        | **rm -r testdirectory**                           |
 | [CMD] /?          | man [CMD]                | Obtener ayuda para un comando | **cd /?** (Windows) o **man cd** (Mac OS / Linux) |
 
-Estos son solo algunos de los comandos que puedes ejecutar en tu línea de comando o consola, pero no usarás ninguno más por hoy.
+Estos son solo algunos de los comandos que tu puedes ejecutar en tu línea de comando o consola, pero no usarás ninguno más por hoy.
 
 Si eres curios@, [ss64.com](http://ss64.com) contiene una referencia completa de comandos para todos los sistemas operativos.
 

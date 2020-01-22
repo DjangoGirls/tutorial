@@ -8,7 +8,7 @@ Las Vistas se colocan en el archivo `views.py`. Agregaremos nuestras *views* al 
 
 ## blog/views.py
 
-Vale, abre este fichero en el editor y mira lo que hay en él:
+Vale, abre éste fichero en el editor y mira lo que hay en él:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -20,7 +20,7 @@ from django.shortcuts import render
 
 No hay demasiadas cosas aquí todavía.
 
-Recuerda que las líneas que comienzan con `#` son comentarios - significa que Python no las ejecutará.
+Recuerda que las lineas que comienzan con `#` son comentarios - significa que Python no las ejecutará.
 
 Creemos una *vista (view)* como sugiere el comentario. Añade la siguiente mini-vista por debajo:
 
@@ -39,6 +39,6 @@ Guarda el archivo, ve a http://127.0.0.1:8000/ y mira lo que hemos hecho.
 
 ![Error](images/error.png)
 
-Esto demuestra que el servidor está funcionando otra vez, al menos, pero todavía no se ve bien, ¿no? No te preocupes, es sólo una página de error, ¡nada que temer! Al igual que los mensajes de error en la consola, estos son realmente muy útiles. Puedes leer que la *TemplateDoesNotExist*. Vamos a corregir este error y crear una plantilla en el próximo capítulo!
+Esto demuestra que el servidor está funcionando otra vez, al menos, pero todavía no se ve bien, ¿No? No te preocupes, es sólo una página de error, ¡nada a que temer! Al igual que los mensajes de error en la consola, estos son realmente muy útiles. Puedes leer que la *TemplateDoesNotExist*. Vamos a corregir este error y crear una plantilla en el próximo capítulo!
 
 > Obtenga más información sobre las vistas de Django leyendo la documentación oficial: https://docs.djangoproject.com/en/2.2/topics/http/views/

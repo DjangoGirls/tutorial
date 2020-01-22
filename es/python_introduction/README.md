@@ -8,7 +8,7 @@
 
 ## La Consola de Python
 
-> Para los lectores en casa: el vídeo [conceptos básicos de Python: enteros, cadenas, listas, variables y errores](https://www.youtube.com/watch?v=MO63L4s-20U) cubre esta parte.
+> Para los lectores en casa: el video [conceptos básicos de Python: enteros, cadenas, listas, variables y errores](https://www.youtube.com/watch?v=MO63L4s-20U) cubre esta parte.
 
 Para empezar a jugar con Python, tenemos que abrir una *línea de comandos* en nuestra computadora. Deberías saber cómo hacerlo, pues lo aprendiste en el capítulo de [Introducción a la Línea de Comandos](../intro_to_command_line/README.md).
 
@@ -183,7 +183,7 @@ Supongamos que queremos crear una nueva variable llamada `name`:
 >>> name = "Ola"
 ```
 
-Indicamos que el nombre es igual a Ola.
+Tecleamos que nombre es igual a Ola.
 
 Como habrás notado, tu programa no devolvió nada como lo hacía antes. Así que ¿cómo sabemos que la variable existe realmente? Escribe `name` y pulsa `intro`:
 
@@ -296,7 +296,7 @@ Muy bien, ¡tenemos una lista! ¿Qué podemos hacer con ella? Vamos a ver cuánt
 >>> lottery.sort()
 ```
 
-No devuelve nada, sólo ha cambiado el orden en que los números aparecen en la lista. Vamos a imprimirla otra vez y ver qué ha pasado:
+No devuelve nada, sólo ha cambiado el orden en que los números aparecen en la lista. Vamos a imprimirla otra vez y ver que ha pasado:
 
 {% filename %}command-line{% endfilename %}
 
@@ -327,7 +327,7 @@ Si quieres añadir algo a tu lista, puedes hacerlo escribiendo este comando:
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-Si deseas mostrar sólo el primer número, puedes hacerlo mediante el uso de **indexes** (en español, índices). Un índice es el número que te dice dónde en una lista aparece un ítem. Las programadoras y los programadores prefieren comenzar a contar desde 0, por lo tanto el primer objeto en tu lista está en el índice 0, el próximo esta en el 1, y así sucesivamente. Intenta esto:
+Si deseas mostrar sólo el primer número, puedes hacerlo mediante el uso de **indexes** (en español, índices). Un índice es el número que te dice dónde en una lista aparece un ítem. Las programadoras y los programadores prefieren comenzar a contar desde 0, por lo tanto el primer objeto en tu lista esta en el indice 0, el próximo esta en el 1, y así sucesivamente. Intenta esto:
 
 {% filename %}command-line{% endfilename %}
 
@@ -355,9 +355,9 @@ Para borrar algo de tu lista tendrás que usar **índices** como aprendimos ante
 [42, 30, 19, 12, 3, 199]
 ```
 
-¡Funcionó de maravilla!
+Funcionó de maravilla!
 
-Para diversión adicional, prueba algunos otros índices: 6, 7, 1000, -1, -6 ó -1000. A ver si puedes predecir el resultado antes de intentar el comando. ¿Tienen sentido los resultados?
+Para diversión adicional, prueba algunos otros índices: 6, 7, 1000, -1, -6 ó -1000. A ver si se puedes predecir el resultado antes de intentar el comando. ¿Tienen sentido los resultados?
 
 Puedes encontrar una lista de todos los métodos disponibles para listas en este capítulo de la documentación de Python: https://docs.python.org/3/tutorial/datastructures.html
 
@@ -427,7 +427,7 @@ Los diccionarios, como las listas, son *mutables*, lo que quiere decir que puede
 >>> participant['favorite_language'] = 'Python'
 ```
 
-Como las listas, usando el método `len()` en los diccionarios devuelven el número de pares llave-valor en el diccionario. Adelante escribe el comando:
+Como las listas, usando el método `len()` en los diccionarios devulven el número de pares llave-valor en el diccionario. Adelante escribe el comando:
 
 {% filename %}command-line{% endfilename %}
 
@@ -476,7 +476,7 @@ Como puedes ver, el valor de la llave `'country'` ha sido modificado de `'Poland
 
 ## Compara cosas
 
-> Para lectores en casa: este capítulo está cubierto en el vídeo [Bases de Python: Comparaciones](https://www.youtube.com/watch?v=7bzxqIKYgf4).
+> Para lectores en casa: este capítulo está cubierto en el video [Bases de Python: Comparaciones](https://www.youtube.com/watch?v=7bzxqIKYgf4).
 
 Buena parte de la programación incluye comparar cosas. ¿Qué es lo más fácil para comparar? Números, por supuesto. Vamos a ver cómo funciona:
 
@@ -517,7 +517,7 @@ Hemos visto `>` y `<`, pero, ¿qué significan `>=` y `<=`? Los puedes leer así
 - x `<=` y significa: x es menor o igual que y
 - x `>=` y significa: x es mayor o igual que y
 
-¡Genial! ¿Quieres hacer uno más? Intenta esto:
+¡Genial! ¿Quieres hacer uno mas? Intenta esto:
 
 {% filename %}command-line{% endfilename %}
 
@@ -590,7 +590,7 @@ Practica y diviértete con los booleanos ejecutando los siguientes comandos:
 
 # ¡Guárdalo!
 
-> Para lectores en casa: este capítulo está cubierto en el vídeo [Bases de Python: Guardando archivos y condicionales](https://www.youtube.com/watch?v=dOAg6QVAxyk).
+> Para lectores en casa: este capítulo está cubierto en el video [Bases de Python: Guardando archivos y condicionales](https://www.youtube.com/watch?v=dOAg6QVAxyk).
 
 Hasta ahora hemos escrito todo nuestro código Python en el intérprete, lo cual nos limita a ingresar una línea de código a la vez. Normalmente los programas son guardados en archivos y son ejecutados por el **intérprete** o **compilador** de nuestro lenguaje de programación. Hasta ahora, hemos estado corriendo nuestros programas de a una línea por vez en el **intérprete** de Python. Necesitaremos más de una línea de código para las siguientes tareas, entonces necesitaremos hacer rápidamente lo que sigue:
 
@@ -674,7 +674,7 @@ Y en Windows Powershell, será así:
 
 <!--endsec-->
 
-Si estás atascada, pide ayuda. ¡Eso es exactamente lo que hacen las entrenadoras!
+Si tú estás atascada, pregunta por ayuda. ¡Eso es exactamente lo que hacen los entrenadores!
 
 Ahora usa Python para ejecutar el código en el archivo como esto:
 
@@ -727,7 +727,7 @@ if 3 > 2:
     print('It works!')
 ```
 
-¿Notas cómo estamos indentando la siguiente línea de código con 4 espacios? Nosotros necesitamos hacer esto para que Python comprenda que el código se ejecuta si el resultado es verdadero. Tú puedes poner un espacio, pero prácticamente todos los programadores en Python ponen 4 espacios para hacer el código más legible. Un simple tabulador también contará como 4 espacios tan largos como tu editor de texto esté configurado. Cuando hagas tu elección, ¡no la cambies! Si ya identaste con 4 espacios, sigue haciendo futuras identaciones con 4 espacios también, de otra forma, puedes encontrar problemas.
+¿Notas cómo estamos indentando la siguiente línea de código con 4 espacios? Nosotros necesitamos hacer ésto para que Python comprenda que el código se ejecuta si el resultado es verdadero. Tú puedes hacer un espacio, pero prácticamente todos los programadores en Python hacen 4 espacios para hacer el código más legible. Un simple tabulador también contará como 4 espacios tan largos como tu editor de texto esté configurado. Cuando tú haces tu elección, ¡no la cambies! Si tu ya identaste con 4 espacios, sigue haciendo futuras identaciones con 4 espacios también, de otra forma, tú puedes correr con problemas.
 
 Guárdalo y ejecútalo de nuevo:
 
@@ -815,7 +815,7 @@ Python corre a través de cada prueba secuencialmente e imprime:
 
 ## Comentarios
 
-Los comentarios son líneas que comienzan con `#`. Tú puedes escribir lo que quieras tras el `#` y Python lo ignorará. Los comentarios pueden hacer que el código sea más fácil de entender para otras personas.
+Los comentarios son líneas que comienzan con `#`. Tú puedes escribir lo que quieras luego de el `#` y Python lo ignorará. Los comentarios pueden hacer que el código sea más fácil de entender para otras personas.
 
 Veamos cómo luce:
 
@@ -832,21 +832,21 @@ Tú no necesitas escribir un comentario para cada línea de código, pero ellos 
 
 ### Resumen
 
-En los últimos ejercicios aprendiste acerca de:
+En los últimos ejercicios tú aprendiste acerca de:
 
-- **Comparar cosas** - en Python puedes comparar cosas haciendo uso de `>`, `>=`, `==`, `<=`, `<` y de los operadores `and` y `or`
+- **Comparar cosas** - en Python puedes comparar cosas haciendo uso de `>`, `>=`, `==`, `<=`, `<` y de los operatores `and` y `or`
 - **Boolean** - un tipo de objeto que sólo puede tener uno de dos valores: `True` o `False`
 - **Guardar archivos** - almacenar código en archivos para que puedas ejecutar programas más grandes.
 - **if... elif... else** - sentencias que te permiten ejecutar código sólo cuando se cumplen ciertas condiciones.
 - **comentarios** - líneas que Python no ejecutará que permiten documentar el código
 
-¡Es tiempo para leer la última parte de este capítulo!
+¡Es tiempo para leer la última parte de éste capítulo!
 
 ## ¡Tus propias funciones!
 
-> Para lectores en casa: este capítulo está cubierto en el vídeo [Bases de Python: Funciones](https://www.youtube.com/watch?v=5owr-6suOl0).
+> Para lectores en casa: este capítulo está cubierto en el video [Bases de Python: Funciones](https://www.youtube.com/watch?v=5owr-6suOl0).
 
-¿Recuerdas las funciones como `len()` que puedes ejecutar en Python? Bien, buenas noticias - ¡aprenderás cómo escribir tus propias funciones ahora!
+¿Recuerdas las funciones como `len()` que puedes ejecutar en Python? Bien, buenas noticias - ¡tú aprenderás cómo escribir tus propias funciones ahora!
 
 Una función es una secuencia de instrucciones que Python debería ejecutar. Cada función en Python inicia con la palabra clave `def`, el nombre es dado, y puede tener algunos parámetros. Veamos. Reemplaza el código en **python_intro.py** con lo siguiente:
 
@@ -862,9 +862,9 @@ hi()
 
 Okay, ¡nuestra primera función está lista!
 
-Tú puedes preguntar por qué hemos escrito el nombre de la función en la parte inferior del archivo. Esto es porque Python lee el archivo y lo ejecuta de arriba a bajo. Así en orden para usar nuestra función, tenemos que re-escribirlo en la parte inferior.
+Tú puedes preguntar por qué hemos escrito el nombre de la función en la parte inferior de el archivo. Esto es porque Python lee el archivo y lo ejecuta de arriba a bajo. Así en orden para usar nuestra función, tenemos que re-escribirlo en la parte inferior.
 
-Ejecuta ésto ahora y mira qué sucede:
+Ejecuta ésto ahora y ve qué sucede:
 
 {% filename %}command-line{% endfilename %}
 
@@ -877,9 +877,9 @@ Nota: si ésto no funciona, ¡Tranquil@! La salida te ayudará a entender por qu
 
 - Si te sale `NameError`, probablemente significa que escribiste algo mal, así que deberias comprobar si utilizaste el mismo nombre para crear la función con `def hi():` y al llamarla con `hi()`.
 - Si te sale un `IndentationError`, comprueba que las líneas del `print` tienen el mismo espacio en blanco al comienzo de línea: python requiere que todo el código dentro de la función esté perfectamente alineado.
-- Si no hay ninguna salida, comprueba que el último `hi()` *no esté* identado - si lo está, esa línea también será parte de la función, y nunca se ejecutará.
+- Si no hay ninguna salida, comprueba que el último `hi()` *no esté* identado - si lo está, esa línea también sera parte de la función, y nunca se ejecutará.
 
-Construyamos nuestra primera función con parámetros. Cambiaremos el ejemplo anterior - una función que dice 'hola' para la persona que lo ejecuta - con un nombre:
+Construyamos nuestra primera función con parámetros. Cambiarémos el ejemplo anterior - una función que dice 'hola' para la persona que lo ejecuta - con un nombre:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -922,7 +922,7 @@ Oops, un error. Por suerte, Python nos da un útil y agradable mensaje de error.
 hi("Ola")
 ```
 
-Y ejecutemos otra vez:
+Y ejecutemos otra vés:
 
 {% filename %}command-line{% endfilename %}
 
@@ -946,7 +946,7 @@ Y lo ejecutamos:
     Hi Sonja!
     
 
-Ahora, ¿qué piensas que sucederá si escribes otro nombre allí? (No Ola o Sonja.) Inténtalo y comprueba si estás en lo correcto. Debería imprimir esto:
+Ahora, ¿Qué piensas que sucederá si escribes otro nombre allí? (No Ola o Sonja.) Intenta y ve si estás en lo correcto. Debería imprimir esto:
 
 {% filename %}command-line{% endfilename %}
 
@@ -974,13 +974,13 @@ Llamarémos al código ahora:
     Hi Rachel!
     
 
-¡Felicidades! ¡Ya aprendíste cómo escribir funciones! :)
+¡Felicidades! ¡Ya aprendíste a cómo escribir funciones! :)
 
 ## Bucles
 
-> Para lectores en casa: este capítulo está cubierto en el vídeo [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0).
+> Para lectores en casa: este capítulo está cubierto en el video [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0).
 
-Listo esta es la última parte. Eso fue rápido, ¿verdad? :)
+Listo ésta es la última parte. Eso fue rápido, ¿verdad? :)
 
 Los programadores no les gusta repetir. Programar es todo acerca de automatizar cosas, así que no queremos recibir a cada persona por su nombre manualmente, ¿verdad? Allí es dónde los ciclos vienen a manejarse.
 

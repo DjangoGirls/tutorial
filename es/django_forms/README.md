@@ -34,9 +34,9 @@ Lo primero, necesitamos importar Django forms (`from django import forms`) y nue
 
 `PostForm`, como probablemente sospechas, es el nombre de nuestro formulario. Necesitamos decirle a Django que este formulario es un `ModelForm` (así Django hará algo de magia por nosotros) - `forms.ModelForm` es responsable de ello.
 
-Luego, tenemos `class Meta`, donde le decimos a Django qué modelo debe ser utilizado para crear este formulario (`model = Post`).
+Luego, tenemos `class Meta`, donde le decimos a Django que modelo debe ser utilizado para crear este formulario (`model = Post`).
 
-Finalmente, podemos decir qué campo(s) deberían estar en nuestro formulario. En este escenario sólo queremos `title` y `text` para ser mostrados - `author` será la persona que está conectada (¡tú!) y `created_date` se definirá automáticamente cuando creemos un post (es decir, en el código), ¿cierto?
+Finalmente, podemos decir que campo(s) deberían estar en nuestro formulario. En este escenario sólo queremos `title` y `text` para ser mostrados - `author` será la persona que esta conectada (¡tú!) y `created_date` se definirá automáticamente cuando creemos un post (es decir, en el código), ¿cierto?
 
 ¡Y eso es todo! Todo lo que necesitamos hacer ahora es usar el formulario en una *view* y mostrarla en una plantilla.
 
@@ -44,7 +44,7 @@ Una vez más vamos a crear: un enlace a la página, una dirección URL, una vist
 
 ## Enlace a una página con el formulario
 
-Ahora toca abrir el fichero `blog/templates/blog/base.html` en el editor. Vamos a añadir un enlace en el `div` llamado `page-header`:
+Ahora toca abrir `blog/templates/blog/base.html` en el editor de código. En la `div` con el nombre `page-header`, vamos a añadir un enlace:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -52,7 +52,7 @@ Ahora toca abrir el fichero `blog/templates/blog/base.html` en el editor. Vamos 
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-Ten en cuenta que queremos llamar a nuestra nueva vista `post_new`. La clase `"glyphicon glyphicon-plus"` es proporcionada por el tema de bootstrap que estamos utilizando, y nos mostrará un signo de suma.
+Ten en cuenta que queremos llamar a nuestra nueva vista `post_new`. La clase `"glyphicon glyphicon-plus"` es proporcionada por el tema de bootstrap que estamos utilizando, y nos mostrara un signo de suma.
 
 Después de agregar la línea, tu archivo html debería lucir de esta forma:
 
@@ -112,7 +112,7 @@ urlpatterns = [
 ]
 ```
 
-Después de actualizar el sitio, veremos un `AttributeError`, puesto que no tenemos la vista `post_new` implementada. Añadaáosla de una vez.
+Después de actualizar el sitio, veremos un `AttributeError`, puesto que no tenemos la vista `post_new` implementada. Añadamosla de una vez.
 
 ## Vista post_new
 
@@ -147,7 +147,7 @@ Tenemos que crear un fichero `post_edit.html` el el directorio `blog/templates/b
 
 ![CSFR Forbidden page](images/csrf2.png)
 
-Bueno, miremos lo que se debería ver el HTML en `post_edit.html`:
+Bueno, miremos se debería ver el HTML en `post_edit.html`:
 
 {% filename %}blog/templates/blog/post_edit.html{% endfilename %}
 
@@ -163,11 +163,11 @@ Bueno, miremos lo que se debería ver el HTML en `post_edit.html`:
 {% endblock %}
 ```
 
-¡Es hora de actualizar! ¡Sí! ¡Tu formulario se muestra!
+¡Es hora de actualizar! ¡Si! ¡Tu formulario se muestra!
 
 ![Nuevo formulario](images/new_form2.png)
 
-Pero, ¡un momento! Si escribes algo en los campos `title` y `text` y tratas de guardar los cambios - ¿qué pasará?
+Pero, ¡un momento! Si escribes algo en los campos `títle` y `text` y tratas de guardar los cambios - ¿qué pasará?
 
 ¡Nada! Una vez más estamos en la misma página y el texto se ha ido... no se añade ningún post nuevo. Entonces, ¿qué ha ido mal?
 
@@ -187,7 +187,7 @@ def post_new(request):
 
 Cuando enviamos el formulario somos redirigidos a la misma vista, pero esta vez tenemos algunos datos adicionales en `request`, más específicamente en `request.POST` (el nombre no tiene nada que ver con un post del blog, se refiere a que estamos "publicando" -en inglés, posting- datos). ¿Recuerdas que en el archivo HTML la definición de `<form>` tenía la variable `method="POST"`? Todos los campos del formulario estan ahora en `request.POST`. No deberías renombrar la variable `POST` (el único nombre que también es válido para la variable `method` es `GET`, pero no tenemos tiempo para explicar cuál es la diferencia).
 
-En nuestra *vista* tenemos dos situaciones distintas que manejar: primero, cuando accedemos a la página por primera vez y queremos un formulario vacío, y segundo, cuando regresamos a la *vista* con los datos del formulario que acabamos de ingresar. Así que tenemos que añadir una condición (utilizaremos `if` para eso):
+En nuestra *vista* tenemos dos situaciones distintas que manejar: primero, cuando accedemos a la pagina por primera vez y queremos un formulario vacío, y segundo, cuando regresamos a la *vista* con los datos del formulario que acabamos de ingresar. Así que tenemos que añadir una condición (utilizaremos `if` para eso):
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -220,7 +220,7 @@ if form.is_valid():
     post.save()
 ```
 
-Básicamente, tenemos que hacer dos cosas: guardamos el formulario con `form.save` y añadimos una autora (ya que no había ningún campo de `author` en el `PostForm` y este campo es obligatorio). `commit=False` significa que no queremos guardar el modelo `Post` aún - queremos añadir la autora primero. La mayoría de las veces utilizarás `form.save()`, sin `commit=False`, pero en este caso, tenemos que hacerlo. `post.save()` conservará los cambios (añadiendo a autor) y se creará una nuevo post en el blog!
+Básicamente, tenemos que hacer dos cosas: guardamos el formulario con `form.save` y añadimos un autor (ya que no había ningún campo de `author` en el `PostForm` y este campo es obligatorio). `commit=False` significa que no queremos guardar el modelo `Post` aún - queremos añadir el autor primero. La mayoría de las veces utilizarás `form.save()`, sin `commit=False`, pero en este caso, tenemos que hacerlo. `post.save()` conservará los cambios (añadiendo a autor) y se creará una nuevo post en el blog!
 
 Por último, sería genial si podemos inmediatamente ir a la página `post_detail` del nuevo post, ¿no? Para hacerlo necesitamos importar algo más:
 
@@ -230,7 +230,7 @@ Por último, sería genial si podemos inmediatamente ir a la página `post_detai
 from django.shortcuts import redirect
 ```
 
-Agrégalo al principio del archivo. Y ahora podemos decir: "ve a la página `post_detail` del post recién creado":
+Agrégalo al principio del archivo. Y ahora podemos decir: "vé a la página `post_detail` del post recién creado":
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -362,7 +362,7 @@ Ok, ¡vamos a probar si funciona! Dirígete a la página `post_detail`. Ahí deb
 
 ![Botón editar](images/edit_button2.png)
 
-Al dar clic ahí, debes ver el formulario con nuestro post del blog:
+Al dar click ahí, debes ver el formulario con nuestro post del blog:
 
 ![Editar formulario](images/edit_form2.png)
 
@@ -370,7 +370,7 @@ Al dar clic ahí, debes ver el formulario con nuestro post del blog:
 
 ¡Felicitaciones! ¡Tu aplicación está cada vez más completa!
 
-Si necesitas más información sobre los formularios de Django, lee la documentación: https://docs.djangoproject.com/en/2.2/topics/forms/
+Si necesita más información sobre los formularios de Django, debe leer la documentación: https://docs.djangoproject.com/en/2.2/topics/forms/
 
 ## Seguridad
 
@@ -396,7 +396,7 @@ Vamos a añadir otra etiqueta `{% if %}` que hará que el enlace sólo parezca p
 
 Este `{% if %}` hará que el enlace sólo se envíe al navegador si el usuario que solicita la página ha iniciado sesión. Esto no protege completamente la creación de nuevas entradas, pero es un buen primer paso. Veremos más sobre seguridad en el libro de extensiones.
 
-Recuerdas el icono de "editar" que acabamos de añadir a nuestra página de detalles? También queremos añadir lo mismo aquí, así otras personas no podrán editar posts existentes.
+Recuerdas el icono de "editar" que acabamos de añadir a nuestra pagina de detalles? También queremos añadir lo mismo aquí, así otras personas no podrán editar posts existentes.
 
 Abre `blog/templates/blog/post_detail.html` en el editor y busca esta línea:
 
@@ -416,7 +416,7 @@ Cámbiala a lo siguiente:
 {% endif %}
 ```
 
-Dado que es probable que estés conectado, si actualizas la página, no verás nada diferente. Carga la página en un navegador diferente o en una ventana en modo incógnito ("privado" en Windows Edge) y verás que el link no aparece, y el icono tampoco!
+Dado que es probable que estés conectado, si actualizas la pagina, no veras nada diferente. Carga la pagina en un navegador diferente o en una ventana en modo incógnito ("privado" en Windows Edge) y verás que el link no aparece, y el icono tampoco!
 
 ## Una cosa más: ¡Tiempo de despliegue!
 

@@ -89,7 +89,7 @@ Primero importemos el modelo User:
 <QuerySet [<User: ola>]>
 ```
 
-¡Este es el superusuario que hemos creado antes! Ahora, vamos a obtener una instancia de este usuario (cambia el código para usar tu propio nombre de usuario):
+¡Este es el superusuario que hemos creado antes! Ahora, vamos a obtener una instancia de éste usuario (cambia el código para usar tu propio nombre de usuario):
 
 {% filename %}command-line{% endfilename %}
 
@@ -97,7 +97,7 @@ Primero importemos el modelo User:
 >>> me = User.objects.get(username='ola')
 ```
 
-Como ves, ya hemos obtenido (`get`) un usuario (`User`) cuyo `username` es igual a 'ola'. ¡Mola!
+Como vés, ya hemos obtenido (`get`) un usuario (`User`) cuyo `username` es igual a 'ola'. ¡Mola!
 
 Ahora, finalmente, podemos crear nuestra entrada:
 
@@ -143,7 +143,7 @@ Una parte importante de los QuerySets es la habilidad para filtrar los resultado
 <QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
 ```
 
-> **Nota** Hay dos guiones bajos (`_`) entre `title` y `contains`. El ORM de Django utiliza esta sintaxis para separar los nombres de los campos ("title") de las operaciones o filtros ("contains"). Si sólo utilizas un guion bajo, obtendrás un error como "FieldError: Cannot resolve keyword title_contains".
+> **Nota** Hay dos guiones bajos (`_`) entre `title` y `contains`. El ORM de Django utiliza esta sintaxis para separar los nombres de los campos ("title") de las operaciones o filtros ("contains"). Si sólo utilizas un guión bajo, obtendrás un error como "FieldError: Cannot resolve keyword title_contains".
 
 También puedes obtener una lista de todos los post publicados. Lo hacemos filtrando los post que tienen la fecha de publicación, `published_date`, en el pasado:
 
@@ -155,7 +155,7 @@ También puedes obtener una lista de todos los post publicados. Lo hacemos filtr
 <QuerySet []>
 ```
 
-Por desgracia, el post que hemos añadido desde la consola de Python aún no está publicado. ¡Pero lo podemos cambiar! Primero obtén una instancia de la entrada que queremos publicar:
+Por desgracia, el post que hemos añadido desde la consola de Python aún no está publicado. Pero lo podemos cambiar! Primero obtén una instancia de la entrada que queremos publicar:
 
 {% filename %}command-line{% endfilename %}
 

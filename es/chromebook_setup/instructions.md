@@ -8,7 +8,7 @@ Nube de IDE es una herramienta que te ofrece un editor de código y el acceso po
 
 1. Ve a [PaizaCloud Cloud IDE](https://paiza.cloud/)
 2. Crea una cuenta
-3. Haz clic en *Nuevo Servidor* y elige la aplicación Django
+3. Haga clic en *Nuevo Servidor* y elija la aplicación Django
 4. Haz clic en el botón Terminal (en el lado izquierdo de la ventana)
 
 Ahora deberías ver una interfaz con una barra y botones en la izquierda. Haz click en al botón "Terminal" para abrir la ventana de la terminal con un símbolo de sistema como este:
@@ -18,23 +18,23 @@ Ahora deberías ver una interfaz con una barra y botones en la izquierda. Haz cl
     $
     
 
-La terminal en el IDE en la nube PaizaCloud está preparada para ejecutar tus instrucciones. Puedes redimensionar o maximizar la ventana para hacerla un poco más grande.
+La terminal en el IDE en la nube PaizaCloud, está preparada para ejecutar tus instrucciones. Puedes redimensionar o maximizar la ventana para hacerla un poco más grande.
 
 #### AWS Cloud9
 
 Actualmente Cloud 9 requiere que te registres con AWS y ingreses la información de la tarjeta de crédito.
 
 1. Instala Cloud 9 desde la [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Ve a [c9.io](https://c9.io) y haz clic en *Get started with AWS Cloud9*
+2. Valla a [c9.io](https://c9.io) y haz clic en *Get started with AWS Cloud9*
 3. Regístrate en una cuenta AWS (requiere información de tarjeta de crédito, pero puedes usar gratis)
-4. En el panel de control AWS, introduz *Cloud9* en la barra de búsqueda y haz clic en él
-5. En el panel de control de la Cloud 9, haz clic en *Create environment*
+4. En el panel de control AWS, introduzca *Cloud9* en la barra de búsqueda y haga clic en él
+5. En el panel de control de la Cloud 9, haga clic en *Create environment*
 6. Nómbralo *django-girls*
-7. Mientras configuras los ajustes, selecciona *Create a new instance for environment (EC2)* para "Environment Type" y selecciona el valor *t2.micro* para "Instance type" (debería decir "Free-tier eligible."). La configuración de ahorro de costes por defecto está bien y puede mantener los otros valores por defecto.
+7. Mientras configura los ajustes, seleccione *Create a new instance for environment (EC2)* para "Environment Type" y seleccione el valor *t2.micro* para "Instance type" (debería decir "Free-tier eligible."). La configuración de ahorro de costes por defecto está bien y puede mantener los otros valores por defecto.
 8. Haz clic en *Next step*
 9. Haz clic en *Create environment*
 
-Ahora deberías ver una interfaz con una barra, una gran ventana principal con algún texto y una ventana pequeña en la parte inferior que se vería así:
+Ahora deberías ver una interfaz con una barra, una gran ventana principal con algún texto y, una ventana pequeña en la parte inferior que se vería así:
 
 {% filename %}bash{% endfilename %}
 
@@ -58,7 +58,7 @@ Ejecutar:
     pip install django~={{ book.django_version }}
     
 
-(nota que en la última línea usamos una virgulilla (~) seguida de un signo igual `~=`).
+(nota que en la última linea usamos una virgulilla (~) seguido de un signo igual `~=`).
 
 ### GitHub
 
@@ -66,8 +66,8 @@ Hazte una cuenta de [GitHub](https://github.com).
 
 ### PythonAnywhere
 
-El tutorial de Django Girls incluye una sección en lo que se conoce como Despliegue, lo cual se refiere al proceso de tomar el código que da vida a tu nueva aplicación web y moverlo a un ordenador de acceso público (llamado servidor) para que otras personas puedan ver tu trabajo.
+El tutorial de Django Girls incluye una sección en lo que se conoce como Despliegue, lo cual se refiere al proceso de tomar el código que da vida a tu nueva aplicación web y moverlo a un ordenador de acceso publico (llamado servidor) para que otras personas puedan ver tu trabajo.
 
-Esta parte del tutorial es algo extraña usando un Chromebook, pues ya estamos usando un computador conectado a Internet (contrario a, por ejemplo, un portátil). Sin embargo, aún es útil, ya que podemos pensar que nuestro espacio de trabajo en Cloud 9 como un repositorio para nuestro trabajo "en progreso" y Python Anywhere como un lugar donde mostrar nuestro trabajo más completo.
+Esta parte del tutorial es algo extraña usando un Chromebook, pues ya estamos usando un computador conectado a Internet (contrario a, por ejemplo, una laptop). Sin embargo, aún es útil, ya que podemos pensar que nuestro espacio de trabajo en Cloud 9 como un repositorio para nuestro trabajo "en progreso" y Python Anywhere como un lugar donde mostrar nuestro trabajo más completo.
 
 Así que, registra una cuenta en Python Anywhere [www.pythonanywhere.com](https://www.pythonanywhere.com).

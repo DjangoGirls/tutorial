@@ -30,7 +30,7 @@ Empezaremos añadiendo un enlace al fichero `blog/templates/blog/post_list.html`
 {% endblock %}
 ```
 
-{% raw %}Queremos tener un enlace del título de una publicación en la lista de publicaciones al detalle de la misma. Cambiemos `<h2><a href="">{{ post.title }}</a></h2>` para enlazarla a la página detalle del post:{% endraw %}
+{% raw %}Queremos tener un link del titulo de una publicación en la lista de publicaciones al detalle de la misma. Cambiemos `<h2><a href="">{{ post.title }}</a></h2>` para enlazarla a la página detalle del post:{% endraw %}
 
 {% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 
@@ -76,11 +76,11 @@ Esta parte `post/<int:pk>/` especifica un patrón de URL – ahora lo explicamos
 
 Esto quiere decir que si pones `http://127.0.0.1:8000/post/5/` en tu navegador, Django entenderá que estás buscando una *vista* llamada `post_detail` y transferirá la información de que `pk` es igual a `5` a esa *vista*.
 
-OK, ¡hemos añadido un nuevo patrón de URL a `blog/urls.py`! Actualizamos la página: http://127.0.0.1:8000/ y, ¡boom! El servidor vuelve a dejar de funcionar. Echa un vistazo a la consola – como era de esperar, ¡hay otro error!
+OK, hemos añadido un nuevo patrón de URL a `blog/urls.py`! Actualizamos la pagina: http://127.0.0.1:8000/ y boom! El servidor vuelve a dejar de funcionar. Echa un vistazo a la consola – como era de esperar, hay otro error!
 
 ![AttributeError](images/attribute_error2.png)
 
-¿Recuerdas cuál es el próximo paso? ¡Añadir una vista!
+¿Recuerdas cual es el próximo paso? ¡Añadir una vista!
 
 ## Añade la vista de detalle de la publicación
 
@@ -130,17 +130,17 @@ Sí. Es hora de actualizar la página: http://127.0.0.1:8000/
 
 ![Post list view](images/post_list2.png)
 
-¡Funcionó! Pero, ¿qué pasa cuando haces click en un enlace en el título del post?
+¡Funcionó! Pero ¿qué pasa cuando haces click en un enlace en el título del post?
 
 ![TemplateDoesNotExist error](images/template_does_not_exist2.png)
 
-¡Oh, no! ¡Otro error! Pero ya sabemos cómo lidiar con eso, ¿no? ¡Tenemos que añadir una plantilla!
+¡Oh no! ¡Otro error! Pero ya sabemos cómo lidiar con eso, ¿no? ¡Tenemos que añadir una plantilla!
 
 ## Crear una plantilla para post detail
 
 Vamos crear un fichero en `blog/templates/blog` llamado `post_detail.html`, y abrirlo en el editor de código.
 
-Se verá así:
+Vamos a escribir el código siguiente:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -170,7 +170,7 @@ Bien, podemos actualizar nuestra página y ver si `TemplateDoesNotExist` se ha i
 
 ¡Yay! ¡Funciona!
 
-# ¡Hora de despliegue!
+# Hora de despliegue!
 
 Sería bueno verificar que tu sitio web aún funcionará en PythonAnywhere, ¿cierto? Intentemos desplegar de nuevo.
 

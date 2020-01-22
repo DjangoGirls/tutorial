@@ -29,7 +29,7 @@ Y ahora crea un archivo `post_list.html` (déjalo en blanco por ahora) dentro de
 
 Mira cómo se ve su sitio web ahora: http://127.0.0.1:8000/
 
-> Si todavía tienes un error `TemplateDoesNotExist`, intenta reiniciar tu servidor. Ve a la consola, para el servidor pulsando Ctrl+C (las teclas Control y C a la vez) y reinícialo ejecuntado el comando `python manage.py runserver`.
+> Si todavía tienes un error `TemplateDoesNotExist`, intenta reiniciar tu servidor. Ve a la consola, para el servidor pulsando Ctrl+C (las teclas Control y C a la vez) y reinicialo ejecuntado el comando `python manage.py runserver`.
 
 ![Figura 11.1](images/step1.png)
 
@@ -48,7 +48,7 @@ Abre un fichero nuevo en el editor y escribe lo siguiente:
 </html>
 ```
 
-Ahora, ¿cómo luce tu sitio web? Haz clic para verlo: http://127.0.0.1:8000/
+Ahora, cómo luce tu sitio web? Haz click para ver: http://127.0.0.1:8000/
 
 ![Figura 11.2](images/step3.png)
 
@@ -110,7 +110,7 @@ Tienes que seguir estas reglas de etiquetas de *cierre* y de *anidación* de ele
 * `<ul><li>primer elemento</li><li>segundo elemento</li></ul>` - crea una lista, ¡igual que esta!
 * `<div></div>` - define una sección de la página
 
-Aquí va un ejemplo de una plantilla completa, cópialo y pégalo en `blog/templates/blog/post_list.html`:
+Aca va un ejemplo de una plantilla completa, copialo y pegalo en `blog/templates/blog/post_list.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -172,7 +172,7 @@ Asegúrate de que estás en el directorio `djangogirls` y vamos a decirle a `git
     $ git add --all .
     
 
-> **Nota** `--all` significa que `git` tambien reconocerá si has borrado archivos (por defecto, solo reconoce archivos nuevos o modificados). También recuerda (del capítulo 3) que `.` significa el directorio actual.
+> **Nota** `--all` significa que `git` tambien reconocera si has borrado archivos (por defecto, solo reconoce archivos nuevos o modificados). También recuerda (del capítulo 3) que `.` significa el directorio actual.
 
 Antes de que subamos todos los archivos, vamos a ver qué es lo que `git` subirá (todos los archivos que `git` cargará deberían aparecer en verde):
 
@@ -208,7 +208,7 @@ Una vez hecho esto, subimos (push) los cambios a Github:
     [...]
     
 
-Necesitarás sustituir `<your-pythonanywhere-domain>` con tu actual nombre de subdominio PythonAnywhere, sin los paréntesis angulares o corchetes. Tu nombre de subdominio es normalmente tu nombre de usuario PythonAnywhere, pero en algunos casos puede ser un poco diferente (por ejemplo, si tu nombre de usuario contiene letras mayúsculas). Así, si este comando no funciona, usa el comando `ls`(listar archivos) para encontrar tu actual subdominio/nombre-carpeta, y muévete allí con `cd `.
+Tú necesitarás sustituir `<your-pythonanywhere-domain>` con tu actual nombre de subdominio PythonAnywhere, sin los paréntesis angulares o corchetes. Tu nombre de subdominio es normalmente tu nombre de usuario PythonAnywhere, pero en algunos casos ésto puede ser un poco diferente (tal como si tu nombre de usuario contiene letras mayúsculas). Así si éste comando no funciona, usa el comando `ls`(listar archivos) para encontrar tu actual subdominio/nombre-carpeta, y muévete allí con `cd `.
 
 Ahora mira cómo se descarga tu código. Si quieres comprobar que efectivamente ha llegado bien, puedes ir a la **página "Files"** y ver tu código en PythonAnywhere (puedes ir a otras páginas de PythonAnywhere desde el botón de la esquina superior derecha de la página de la consola).
 
