@@ -38,6 +38,7 @@
 
     *.pyc
     *~
+    /.vscode
     __pycache__
     myvenv
     db.sqlite3
