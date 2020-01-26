@@ -862,7 +862,7 @@ hi()
 
 よし！あなたの最初の関数を実行する準備ができましたね！
 
-ここであなたは、最後の行になぜ関数の名前を書いたのだろう、と疑問に感じたかもしれません。 これは、Pythonがファイルを読み、上から下へ実行していくからです。 なので、関数を使用するには、一番下に再度書く必要があります。
+ここであなたは、最後の行になぜ関数の名前を書いたのだろう、と疑問に感じたかもしれません。 When we write `def hi():` and the indented lines following, this is us writing instructions for what the `hi()` function should do. Python will read and remember these instructions, but won't run the function yet. To tell Python we want to run the function, we have to call the function with `hi()`. Python reads the file and executes it from top to bottom, so we have to define the function in the file before we call it.
 
 では実行して、どうなるか見てみましょう。
 
