@@ -861,7 +861,7 @@ hallo()
 
 Und schon hast du deine erste Funktion erstellt!
 
-Nun fragst du dich vielleicht, warum wir am Ende der Datei den Namen der Funktion nochmal hingeschrieben haben. Python liest die Datei und führt sie von oben nach unten aus. Um die Funktion also auch zu benutzen, müssen wir sie noch einmal unten hinschreiben.
+Nun fragst du dich vielleicht, warum wir am Ende der Datei den Namen der Funktion nochmal hingeschrieben haben. When we write `def hi():` and the indented lines following, this is us writing instructions for what the `hi()` function should do. Python will read and remember these instructions, but won't run the function yet. To tell Python we want to run the function, we have to call the function with `hi()`. Python reads the file and executes it from top to bottom, so we have to define the function in the file before we call it.
 
 Schauen wir, was passiert, wenn wir die Datei ausführen:
 
