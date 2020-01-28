@@ -4,13 +4,13 @@ A continuació trobaràs les nostres recomanacions. Pots demanar a la teva instr
 
 ## Visual Studio Code
 
-Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+Visual Studio Code és un editor de codi desenvolupat per Microsoft per als sistemes Windows, Linux i macOS. Inclou suport per deupració, control de Git encastat, sintaxi reslatada, completació intel·ligent de codi, snippets i refactorització de codi.
 
 [Descarrega'l aquí](https://code.visualstudio.com/)
 
 ## Gedit
 
-Gedit is an open-source, free editor, available for all operating systems.
+Gedit és un editor gratuit, de programari lliure, disponible per tots els sistemes operatius.
 
 [Descarrega'l aquí](https://wiki.gnome.org/Apps/Gedit#Download)
 
