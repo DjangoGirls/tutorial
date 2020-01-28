@@ -16,22 +16,22 @@ Gedit és un editor gratuit, de programari lliure, disponible per tots els siste
 
 ## Sublime Text 3
 
-Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
+Sublime Text és un editor molt popular amb un període d'avaluació gratuït i disponible per tots els sistemes operatius.
 
 [Descarrega'l aquí](https://www.sublimetext.com/3)
 
 ## Atom
 
-Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
+Atom és un altre editor popular. És gratiut, de programari lliure i disponible per Windows, OS X i Linux. Atom és desenvolupat per [GitHub](https://github.com/).
 
-[Download it here](https://atom.io/)
+[Descarrega'l aquí](https://atom.io/)
 
-## Why are we installing a code editor?
+## Per què estem instal·lant un editor de codi?
 
-You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
+Et pots estar demanant per què estem instal·lant programari específic per codi, en lloc d'usar alternatives com Word o Notepad.
 
-The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+La primera raó és que el codi s'ha d'emmagatzemar en **text pla**. El problema amb programes com el Word o el TextEdit és que, per defecte, no produeixen text pla. Produeixen text enriquit (amb fonts i format), utilitzant formats personalitzats com el [RTF (Format de Text Enriquit -Rich Text Format -)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
+La segona raó és que els editors de codi s'han especialitzat precisament en això, en editar codi. Així doncs, proporcionen característiques útils com acolorir el text del codi en funció del seu significat o tancar-te automàticament els parèntesis.
 
-We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
+Més endavant veurem tot això a la pràctica. Aviat consideraràs el teu antic i fidel editor de codi com una de les teves eines favorites. :)
