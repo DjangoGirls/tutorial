@@ -30,8 +30,8 @@ Atualmente o Cloud 9 requer que você se cadastre com AWS e insira as informaç�
 4. No painel de controle da AWS, digite *Cloud9* na barra de pesquisa e clique nele
 5. No painel de controle do Cloud 9, click em *Create environment*
 6. Nomeie como *django-girls*
-7. While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
-8. Click *Next step*
+7. Ao configurar, selecione *Criar uma nova instância para o ambiente (EC2)* para "Tipo de Ambiente" e o *t2.micro* "Tipo de Instância" (deve dizer "Free-tier elegíveel."). A configuração padrão de economia de custos está bem e você pode manter o outro padrão.
+8. Clique em *Próximo passo*
 9. Click *Create environment*
 
 Agora, a sua tela deve exibir uma interface com uma barra lateral, uma grande janela principal com algum texto e uma pequena janela na parte inferior, semelhante a isto:
