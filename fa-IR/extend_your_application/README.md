@@ -140,7 +140,7 @@ def post_detail(request, pk):
 
 در پوشه `blog/templates/blog` یک فایل به نام `post_detail.html` بسازید و آن را در ویرایشگر کد باز کنید.
 
-حالا کد زیر را تایپ کنید:
+Enter the following code:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
