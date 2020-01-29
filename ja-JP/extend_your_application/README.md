@@ -140,7 +140,7 @@ def post_detail(request, pk):
 
 `blog/templates/blog`に`post_detail.html`というファイルを作成し、コードエディタで開きます。
 
-Let's type the following code:
+Enter the following code:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
