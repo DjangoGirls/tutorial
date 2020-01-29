@@ -140,7 +140,7 @@ def post_detail(request, pk):
 
 Θα δημιουργήσoυμε ένα αρχείο μέσα στο φάκελο `blog/πρότυπα/blog` με το όνομα `post_detail.html`. Ανοίξτε το.
 
-Let's type the following code:
+Enter the following code:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
