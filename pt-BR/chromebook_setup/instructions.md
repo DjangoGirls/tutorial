@@ -22,10 +22,10 @@ O terminal na IDE na nuvem PaizaCloud está pronto para suas instruções. Você
 
 #### AWS Cloud9
 
-Atualmente a Cloud 9 requer que você se cadastre-se com AWS e entre com informações de cartão de crédito.
+Atualmente o Cloud 9 requer que você se cadastre com AWS e insira as informações do cartão de crédito.
 
-1. Instale o Cloud 9 através da [Chrome Web Store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Acesse [c9.io](https://c9.io) e clique em *Get started with AWS Cloud9*
+1. Instale o Cloud 9 através do [Chrome Web Store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+2. Acesse [c9.io](https://c9.io) e clique em *Iniciar com AWS Cloud9*
 3. Cadastre-se em uma conta AWS (requer informações de cartão de crédito, mas você pode usá-la gratuitamente)
 4. No painel de controle da AWS, digite *Cloud9* na barra de pesquisa e clique nele
 5. No painel de controle do Cloud 9, click em *Create environment*
