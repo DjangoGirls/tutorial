@@ -32,7 +32,7 @@ Atualmente o Cloud 9 requer que você se cadastre com AWS e insira as informaç�
 6. Nomeie como *django-girls*
 7. Ao configurar, selecione *Criar uma nova instância para o ambiente (EC2)* para "Tipo de Ambiente" e o *t2.micro* "Tipo de Instância" (deve dizer "Free-tier elegíveel."). A configuração padrão de economia de custos está bem e você pode manter o outro padrão.
 8. Clique em *Próximo passo*
-9. Click *Create environment*
+9. Clique em *Criar ambiente*
 
 Agora, a sua tela deve exibir uma interface com uma barra lateral, uma grande janela principal com algum texto e uma pequena janela na parte inferior, semelhante a isto:
 
@@ -70,4 +70,4 @@ The Django Girls tutorial includes a section on what is called Deployment, which
 
 Esta parte é um pouco estranha quando o tutorial é feito num Chromebook por que já estamos usando um computador que está na Internet (ao contrário de, digamos, um laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
-Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Portanto, cadastre-se para uma nova conta Python Anywhere em [www.pythonanywhere.com](https://www.pythonanywhere.com).
