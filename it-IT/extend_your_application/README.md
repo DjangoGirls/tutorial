@@ -140,7 +140,7 @@ Oh no! Un altro errore! Ma sappiamo già come occuparcene, giusto? Dobbiamo aggi
 
 Creeremo un file in `blog/templates/blog` chiamato `post_detail.html`.
 
-Let's type the following code:
+Enter the following code:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
