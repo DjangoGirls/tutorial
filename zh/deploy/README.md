@@ -56,7 +56,7 @@ Git会追踪这个目录下所有文件和文件夹的更改，但是有一些�
     $ git status
     On branch master
     
-    Initial commit
+    No commits yet
     
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
