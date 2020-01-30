@@ -4,9 +4,9 @@
 
 > This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
 
-## Welcome
+## স্বাগতম
 
-Welcome to the Django Girls Tutorial! We are happy to see you here :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
+সবাইকে জ্যাঙ্গো গার্লস বাংলা টিউটোরিয়াল এ স্বাগত! তোমাদের সাথে পেয়ে আমরা ভীষণ খুশি :) এই টিউটোরিয়ালএ, তোমাদের সাথে নিয়ে আমরা ওয়েব প্রযুক্তির মধ্য দিয়ে এক নতুন সফরের সূচনা করবো। পাশাপাশি একটি ওয়েব কাজ করার প্রয়োজনীয় ও খুঁটিনাটি বিষয়গুলো তুলে ধরার চেষ্টা করবো।
 
 As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
 
