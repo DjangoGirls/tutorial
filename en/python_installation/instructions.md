@@ -4,14 +4,14 @@
 
 Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want you to install the latest version of Python 3, so if you have any earlier version, you will need to upgrade it. If you already have version 3.4 or higher you should be fine.
 
-Please install normal Python as follows, even when you have Anaconda installed on your computer.
-
+Please install normal Python as follows, even when you have Anaconda installed on your compute
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
 First check whether your computer is running a 32-bit version or a 64-bit version of Windows, on the "System type" line of the System Info page. To reach this page, try one of these methods:
-* Press the Windows key and Pause/Break key at the same time
+* Press the Windows key and start to type System Information, the menu should bring it up as best match within 3 letters, click on it or press enter to accept it 
 * Open your Control Panel from the Windows menu, then navigate to System & Security, then System
 * Press the Windows button, then navigate to Settings > System > About
+* Press the Windows key and Pause/Break key at the same time
 
 You can download Python for Windows from the website https://www.python.org/downloads/windows/. Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
 
