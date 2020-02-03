@@ -77,23 +77,23 @@ Yeni bir `blog` dizininin oluşturulduğunu ve bir dizi dosya içerdiğini fark 
 
     djangogirls
     ├── blog
-    │   ├── admin.py
-    │   ├── apps.py
-    │   ├── __init__.py
-    │   ├── migrations
-    │   │   └── __init__.py
-    │   ├── models.py
-    │   ├── tests.py
-    │   └── views.py
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── __init__.py
+    │   ├── migrations
+    │   │   └── __init__.py
+    │   ├── models.py
+    │   ├── tests.py
+    │   └── views.py
     ├── db.sqlite3
     ├── manage.py
     ├── mysite
-    │   ├── __init__.py
-    │   ├── settings.py
-    │   ├── urls.py
-    │   └── wsgi.py
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
     ├── myvenv
-    │   └── ...
+    │   └── ...
     └── requirements.txt
     
     
