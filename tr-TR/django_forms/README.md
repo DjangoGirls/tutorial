@@ -44,7 +44,7 @@ Bir kere daha sayfaya bir bağlantı, bir url, bir view ve bir template oluştur
 
 ## Formun bulunduğu sayfaya bağlantı oluşturma
 
-It's time to open `blog/templates/blog/base.html` in the code editor. In the `div` named `page-header`, we will add a link:
+Şimdi `blog/templates/blog/base.html` isimli örnek dosyayı açma zamanı. Öncelikle `page-header` adlı `div` öğesinin içine bir bağlantı ekleyeceğiz:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
