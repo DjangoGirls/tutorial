@@ -862,7 +862,7 @@ hi()
 
 よし！あなたの最初の関数を実行する準備ができましたね！
 
-ここであなたは、最後の行になぜ関数の名前を書いたのだろう、と疑問に感じたかもしれません。 When we write `def hi():` and the indented lines following, this is us writing instructions for what the `hi()` function should do. Python will read and remember these instructions, but won't run the function yet. To tell Python we want to run the function, we have to call the function with `hi()`. Python reads the file and executes it from top to bottom, so we have to define the function in the file before we call it.
+ここであなたは、最後の行になぜ関数の名前を書いたのだろう、と疑問に感じたかもしれません。 `def hi():` と以下のインデントされた数行を書くと、これは `hi()` という関数が何をすべきかという命令を書いたことになります。 Pythonはこれらの命令群を読み込み記憶しますが、関数はまだ実行されません。 Pythonに関数を実行したいことを伝えるには、関数を `hi()` として呼び出す必要があります。 Pythonはファイルを先頭から末尾まで順に読み込みと実行をするので、呼び出す前に関数を定義しなくてはいけないのです。
 
 では実行して、どうなるか見てみましょう。
 
