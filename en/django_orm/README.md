@@ -62,7 +62,7 @@ This is a list of the posts we created earlier! We created these posts using the
 
 ### Create object
 
-This is how you create a new Post object in database:
+This is how you create a new Post object in the database:
 
 {% filename %}command-line{% endfilename %}
 ```python
