@@ -2,7 +2,7 @@ You can [skip right over this section](http://tutorial.djangogirls.org/en/instal
 are, your installation experience will be a little different. You can ignore the
 rest of the installation instructions.
 
-### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
+### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com)
 
 Cloud IDE is a tool that gives you a code editor and access to a computer running
 on the Internet where you can install, write, and run the software. For the duration
@@ -10,7 +10,7 @@ of the tutorial, cloud IDE will act as your _local machine_. You'll still be
 running commands in a terminal interface just like your classmates on OS X,
 Ubuntu, or Windows, but your terminal will be connected to a computer running
 somewhere else that cloud IDE sets up for you.
-Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9).
+Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com).
 You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
 
 #### PaizaCloud Cloud IDE
@@ -60,6 +60,39 @@ yourusername:~/workspace $
 This bottom area is your terminal. You can use the terminal to send instructions
 to the remote Cloud 9 computer. You can resize that window to make it a bit
 bigger.
+
+#### Glitch.com Cloud IDE
+
+1. Go to [Glitch.com](https://glitch.com/)
+2. Sign up for an account (https://glitch.com/signin) or use your Github account if you have one (see Github instructions below).
+3. Click _New Project_ and choose _Hello Webpage_
+4. Click Terminal button(on the left side of the window)
+
+When using Glitch.com as your Cloud IDE, we do not create a virtual environment but we create the necessary files manually :
+
+{% filename %}glitch.json{% endfilename %}
+```
+{
+  "install": "pip3 install -r requirements.txt --user",
+  "start": "bash start.sh",
+  "watch": {
+    "throttle": 1000
+  }
+}
+```
+
+{% filename %}requirements.txt{% endfilename %}
+```
+Django>=2.2.4
+```
+
+{% filename %}start.sh{% endfilename %}
+```
+pip3 install -r requirements.txt --user
+python3 manage.py makemigrations
+python3 manage.py migrate
+python3 manage.py runserver $PORT
+```
 
 ### Virtual Environment
 
