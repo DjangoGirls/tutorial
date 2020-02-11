@@ -130,11 +130,11 @@ nothing added to commit but untracked files present (use "git add" to track)
 > > 
 > > Kode Anda sekarang ada di GitHub. Silahkan anda cek! You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
 > > 
-> > # Setting up our blog on PythonAnywhere
+> > # Mengatur situs Kita di PythonAnywhere
 > > 
-> > ## Sign up for a PythonAnywhere account
+> > ## Mendaftar untuk PythonAnywhere
 > > 
-> > > **Note** You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
+> > > **Catatan** Anda mungkin telah membuat akun PythonAnywhere sebelumnya selama langkah-langkah pemasangan - jika ya, Anda tidak perlu melakukannya lagi.
 > > 
 > > {% include "/deploy/signup_pythonanywhere.md" %}
 > > 
