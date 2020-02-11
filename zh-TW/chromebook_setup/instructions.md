@@ -22,7 +22,7 @@ The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You 
 
 #### AWS Cloud9
 
-Currently Cloud 9 requires you to sign up with AWS and enter credit card information.
+目前，Cloud 9 要求您使用 AWS 帳號註冊並輸入信用卡資料。
 
 1. 從 [Chrome 線上應用程式商店](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)安裝 Colud 9
 2. 到[c9.io](https://c9.io)點擊及瀏覽*開始使用 AWS Cloud9*
