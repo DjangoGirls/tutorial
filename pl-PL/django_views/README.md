@@ -41,4 +41,4 @@ Znowu błąd! Przeczytaj, o co chodzi tym razem:
 
 Przynajmniej pokazuje, że serwer jest uruchomiony ponownie, ale nadal nie wygląda dobrze, prawda? Nie martw się, to po prostu błąd strony, nic strasznego! Podobnie jak komunikaty o błędach w konsoli, są one całkiem przydatne. Możesz przeczytać, że *TemplateDoesNotExist*. Naprawmy ten błąd i stwórzmy szablon - ale to już w następnym rozdziale!
 
-> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/2.2/topics/http/views/
+> Więcej na temat widoków Django dowiesz się czytając oficjalną dokumentację: https://docs.djangoproject.com/en/2.2/topics/http/views/
