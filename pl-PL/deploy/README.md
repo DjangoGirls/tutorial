@@ -59,7 +59,7 @@ Dobrym nawykiem jest wpisywanie polecenia `git status` zanim wpiszesz `git add` 
     $ git status
     On branch master
     
-    No commits yet
+    Initial commit
     
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
@@ -156,7 +156,7 @@ Teraz uruchamiamy pomocnika, aby automatycznie skonfigurować naszą aplikację 
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pa_autoconfigure_django.py --python=3.6 https://github.com/<your-github-username>/my-first-blog.git
+    $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
     
 
 Jeżeli patrzysz na proces, będziesz mogła zobaczyć:
@@ -196,7 +196,7 @@ Możesz także przejść do zakładki "Pliki" i poruszać się za pomocą wbudow
 
 Twoja strona powinna teraz być dostępna w publicznym internecie! Przejdź do zakładki "Sieć" PythonAnywhere, aby uzyskać link do niej. Możesz podzielić się tym, z kimkolwiek chcesz! :)
 
-> **Uwaga:** Jest to poradnik dla początkujących, a podczas wdrażania tej witryny użyłyśmy kilka skrótów, które nie są idealnym rozwiązaniem z punktu widzenia bezpieczeństwa. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) for some tips on securing your site.
+> **Uwaga:** Jest to poradnik dla początkujących, a podczas wdrażania tej witryny użyłyśmy kilka skrótów, które nie są idealnym rozwiązaniem z punktu widzenia bezpieczeństwa. Jeśli zdecydujesz się zbudować ten projekt lub rozpocząć nowy projekt, należy przejrzeć [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/), aby uzyskać pewne wskazówki dotyczące zabezpieczania witryny.
 
 ## Porady dotyczące debugowania
 
@@ -205,7 +205,7 @@ Jeśli widzisz błąd podczas uruchamiania skryptu `pa_autoconfigure_django.py`,
 - Zapominasz utworzyć Twój PythonAnywhere API token.
 - Robisz błąd w GitHub URL
 - Jeśli zobaczysz komunikat o błędzie *"Could not find your settings.py"*, prawdopodobnie nie udało Ci się dodać wszystkich plików do Git, i / lub nie przekazałeś ich do pomyślnie do GitHuba. Jeszcze raz spójrz na sekcję Git powyżej
-- If you previously signed up for a PythonAnywhere account and had an error with collectstatic, you probably have an older version of SQLite (eg 3.8.2) for your account. In that case, sign up for a new account and try the commands in the PythonAnywhere section above.
+- Jeśli wcześniej zarejestrowałeś konto PythonAnywhere i wystąpił błąd z collectstatic, prawdopodobnie masz starszą wersję SQLite (np. 3.8.2) dla Twojego konta. W takim przypadku zarejestruj nowe konto i wypróbuj polecenia z sekcji PythonAnywhere powyżej.
 
 Jeśli odwiedzając swoją stronę zobaczysz błąd, to pierwszym miejscem, w którym powinnaś poszukać informacji o tym, co się stało, jest Twój **dziennik błędów** (ang. "error log"). Znajdziesz do niego link na stronie [Web](https://www.pythonanywhere.com/web_app_setup/) w PythonAnywhere. Sprawdź, czy znajdują się tam jakieś komunikaty o błędach - te najświeższe znajdują się na samym dole.
 
