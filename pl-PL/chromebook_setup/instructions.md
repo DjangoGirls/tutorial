@@ -8,7 +8,7 @@ Cloud IDE jest narzędziem, które pełni funkcję edytora kodu oraz umożliwia 
 
 1. Przejdź do [PaizaCloud Cloud IDE](https://paiza.cloud/)
 2. Załóż konto
-3. Click *New Server* and choose the Django app
+3. Kliknij *Nowy serwer* i wybierz aplikację Django
 4. Kliknij przycisk "Terminal" (po lewej stronie okna)
 
 Teraz powinnaś zobaczyć interfejs z bocznym paskiem i przyciski po lewej stronie. Kliknij przycisk "Terminal", aby otworzyć okno terminala ze znakiem zachęty takim jak ten:
