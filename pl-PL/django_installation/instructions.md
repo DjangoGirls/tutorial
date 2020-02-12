@@ -135,7 +135,7 @@ Uruchom wirtualne środowisko za pomocą polecenia:
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-Start your virtual environment by running:
+Uruchom wirtualne środowisko za pomocą polecenia:
 
 {% filename %}command-line{% endfilename %}
 
