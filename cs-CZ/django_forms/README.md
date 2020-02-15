@@ -281,7 +281,7 @@ Django is taking care to validate that all the fields in our form are correct. I
 
 ## Upravit formulář
 
-Teď víme, jak přidat nový formulář. Ale co když chceme upravit stávající? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
+Now we know how to add a new post. Ale co když chceme upravit stávající? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
 
 Open `blog/templates/blog/post_detail.html` in the code editor and add the line
 
