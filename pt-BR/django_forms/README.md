@@ -281,7 +281,7 @@ Django está confirmando que todos os campos de nosso formulário estão correto
 
 ## Editando o formulário
 
-Agora sabemos como adicionar um novo formulário. Mas e se quisermos editar um que já existe? É muito parecido com o que acabamos de fazer. Vamos criar algumas coisas importantes rapidinho. (Se você não entender alguma coisa, pergunte para a sua monitora ou veja os capítulos anteriores -- já cobrimos todas essas etapas anteriormente.)
+Now we know how to add a new post. Mas e se quisermos editar um que já existe? É muito parecido com o que acabamos de fazer. Vamos criar algumas coisas importantes rapidinho. (Se você não entender alguma coisa, pergunte para a sua monitora ou veja os capítulos anteriores -- já cobrimos todas essas etapas anteriormente.)
 
 Abra *blog/templates/blog/post_detail.html* e adicione esta linha
 
