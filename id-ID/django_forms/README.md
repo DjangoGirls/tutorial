@@ -273,7 +273,7 @@ We need to create a file `post_edit.html` in the `blog/templates/blog` directory
 
 <h2>Form Edit</h2>
 
-<p>Kini kita tahu bagaimana menambah form baru. Tetapi, bagaimana jika kita ingin mengedit yang sudah ada ? Ini sangat mirip dengan apa yang baru saja kita lakukan. Mari buat beberapa hal penting dengan cepat. (Jika Anda tidak mengerti sesuatu, Anda harus bertanya kepada pelatih Anda atau melihat bab-bab sebelumnya, karena kami telah menyelesaikan semua langkah ini.)</p>
+<p>Now we know how to add a new post. Tetapi, bagaimana jika kita ingin mengedit yang sudah ada ? Ini sangat mirip dengan apa yang baru saja kita lakukan. Mari buat beberapa hal penting dengan cepat. (Jika Anda tidak mengerti sesuatu, Anda harus bertanya kepada pelatih Anda atau melihat bab-bab sebelumnya, karena kami telah menyelesaikan semua langkah ini.)</p>
 
 <p>Open <code>blog/templates/blog/post_detail.html` in the code editor and add the line
     
