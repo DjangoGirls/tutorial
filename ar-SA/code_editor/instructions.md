@@ -1,10 +1,10 @@
-يوجد العديد من برامج التحرير لكن الخيار الاخير يعود للشخص. اغلب مبرمجي البايثون (Python) يستخدمون بيئات تطوير مدمجة (او IDEs) مثل PyCharm. كمبتدئ على الأرجح هذا الخيار أقل ملائمة؛ نحن نوصي ببرامج قوية على نفس المستوى، ولكن أبسط بكثير.
+يوجد العديد من برامج التحرير لكن الخيار الاخير يعود للشخص. اغلب مبرمجي البايثون يستخدمون بيئات تطوير متكاملة (IDEs) معقدة لكنها قوية مثل PyCharm. كمبتدئ على الأرجح هذا الخيار أقل ملائمة؛ نحن نوصي ببرامج قوية على نفس المستوى، ولكن أبسط بكثير.
 
 اقتراحاتنا مدرجة بالاسفل، لكن لا تتردد أن تسأل المدرب عن برنامجه المفضل - سوف يكون من الأسهل الحصول على مساعدة منهم.
 
 ## Visual Studio Code
 
-Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+Visual Studio Code هو محرر أكواد من مايكروسوفت لنظام Windows و Linux و macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
 
 [يمكنك تحميل البرنامج هنا](https://code.visualstudio.com/)
 
