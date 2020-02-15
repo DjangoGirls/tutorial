@@ -31,25 +31,25 @@ Banyak dari langkah-langkah dibawah menunjuk kepada “konsol atau console”, �
 
 {% termasuk “/python_pemasangan/instruksi.md” %}
 
-# Install a code editor {#code-editor}
+# Pasang sebuah kode pengeditan {#code-editor}
 
-{% include "/code_editor/instructions.md" %}
+{% termasuk “/code_editor/instruksi.md” %}
 
-# Set up virtualenv and install Django {#virtualenv}
+# Buat virtualenv dan pasang Django {#virtualenv}
 
-{% include "/django_installation/instructions.md" %}
+{% termasuk “/django_pemasangan/instruksi.md” %}
 
-# Install Git {#git}
+# Pasang Git {#git}
 
-{% include "/deploy/install_git.md" %}
+{% termasuk “/menyebar/pasang_git.md” %}
 
-# Create a GitHub account {#github}
+# Buka akun GitHub {#github}
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password (add it to your password manager, if you use one).
+Masuk ke [GitHub.com](https://www.github.com) dan daftar pengguna baru. Pastikan untuk ingat kata kuncu (tambahkan itu pada manajer kata kunci, bila anda menggunakannya).
 
-# Create a PythonAnywhere account {#pythonanywhere}
+# Buka akun PhytonAnywhere {#pythonanywhere}
 
-{% include "/deploy/signup_pythonanywhere.md" %}
+{% termasuk “/penyebaran/daftar_phytonanywhere.md” %}
 
 # Mulai membaca
 
