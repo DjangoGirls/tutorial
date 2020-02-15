@@ -58,16 +58,16 @@
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: `~=`).
+(لاحظ بأننا في السطر الأخير، استخدمنا علامة المد تليها علامة يساوي: `~=`).
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+أنشئ حساب في [GitHub](https://github.com).
 
 ### بايثون في كل مكان
 
-The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+يتضمن برنامج Django Girls قسما حول ما يسمى التدشين، وهي عملية نقل تطبيق الويب الموجود في جهازك إلى جهاز (يسمى الخادم) يمكن للجميع الوصول إليه حتى يتمكن الجميع من الوصول لموقعك ورؤية عملك.
 
-This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+هذا الجزء غريب نوعاً ما عند تنفيذ البرنامج التعليمي على جهاز كروم بوك لأننا نستخدم جهاز كمبيوتر موجود على الإنترنت أساساً (ليس مثل أي كمبيوتر محمول آخر). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
 Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
