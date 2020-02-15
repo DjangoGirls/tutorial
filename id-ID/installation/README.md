@@ -53,16 +53,16 @@ Masuk ke [GitHub.com](https://www.github.com) dan daftar pengguna baru. Pastikan
 
 # Mulai membaca
 
-Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
+Selamat, anda sudah siap dan siap untuk pergi! Jika anda masih memiliki beberapa waktu sebelum seminar, akan sangat berguna untuk mulai membaca beberapa bab awal:
 
-* [How the internet works](../how_the_internet_works/README.md)
+* [Bagaimana internet bekerja](../how_the_internet_works/README.md)
 
-* [Introduction to the command line](../intro_to_command_line/README.md)
+* [Pengenalan pada baris perintah](../intro_to_command_line/README.md)
 
-* [Introduction to Python](../python_introduction/README.md)
+* [Pengenalan pada Phyton](../python_introduction/README.md)
 
-* [What is Django?](../django/README.md)
+* [Apa itu Django?](../django/README.md)
 
-# Enjoy the workshop!
+# Nikmati seminarnya!
 
-When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
+Pada saat anda memulai seminarnya, anda akan dapat langsung menuju ke [Projek Pertama Django!](../django_start_project/README.md) karena anda sudah menguasai semua bahan di bab-bab sebelumnya.
