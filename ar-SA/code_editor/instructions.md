@@ -4,7 +4,7 @@
 
 ## Visual Studio Code
 
-Visual Studio Code هو محرر أكواد من مايكروسوفت لنظام Windows و Linux و macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+Visual Studio Code هو محرر أكواد من مايكروسوفت لنظام Windows و Linux و macOS. ويشمل دعمًا للتصحيح، والتحكم في Git، وتمييز بناء الجملة، وإكمال الكود الذكي، واقتباس الأكواد، وتعديلها.
 
 [يمكنك تحميل البرنامج هنا](https://code.visualstudio.com/)
 
@@ -32,6 +32,6 @@ Atom محرر أكواد آخر. مجاني، ومفتوح المصدر، ومت
 
 السبب الأول هو أن الكود البرمجي يجب أن يكون ** نصًا عاديًا ** ، والمشكلة في برامج مثل Word و Textedit هي أنها لا تنتج فعليًا نصًا عاديًا ، ولكنها تنتج نصًا منسقًا (مع خطوط وتنسيقات) ، باستخدام تنسيقات مخصصة مثل [ RTF (Rich Text Format) ](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
+السبب الثاني هو أن برامج تحرير الأكواد مخصصة لهذا الغرض، حتى يتمكنون من توفير ميزات مفيدة مثل تلوين الكود حسب معناه، أو إغلاق الأقواس تلقائيًا.
 
-We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
+سترى بنفسك لاحقاً. قريباً، ستتفكر في محرر الأكواد كأحد برامجك المفضلة. :)
