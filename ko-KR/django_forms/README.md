@@ -281,7 +281,7 @@ Django is taking care to validate that all the fields in our form are correct. I
 
 ## 폼 수정하기
 
-지금까지 새 폼을 추가하는 방법에 대해 배웠어요. 하지만 이미 있던 글을 수정하려면 어떻게 해야할까요? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
+Now we know how to add a new post. 하지만 이미 있던 글을 수정하려면 어떻게 해야할까요? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
 
 Open `blog/templates/blog/post_detail.html` in the code editor and add the line
 
