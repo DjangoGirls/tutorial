@@ -281,7 +281,7 @@ Django are grija de validare câmpurilor din formularul nostru. Nu este acesta m
 
 ## Editarea formularului
 
-Acum știm cum să adăugăm formular nou. Dar dacă dorim să shimbăm pe acela pe care îl avem? Acesta este foarte similar cu aceea, ce noi am făcut. Hai să cream niște lucruri importante. (Dacă nu înțelegeți ceva, întrebați pe mentorul vostru sau citiți capitole precedente, pentru că aceste pași au fost deja explicate.)
+Now we know how to add a new post. Dar dacă dorim să shimbăm pe acela pe care îl avem? Acesta este foarte similar cu aceea, ce noi am făcut. Hai să cream niște lucruri importante. (Dacă nu înțelegeți ceva, întrebați pe mentorul vostru sau citiți capitole precedente, pentru că aceste pași au fost deja explicate.)
 
 Deschideți `blog/templates/blog/post_detail.html` în editorul de cod și adăugați linia
 
