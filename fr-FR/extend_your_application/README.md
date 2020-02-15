@@ -42,7 +42,7 @@ Nous allons tout d'abord ajouter un lien à l'intérieur du fichier `blog/templa
 
 La partie `post_detail` signifie que Django s'attend de trouver une URL en `blog/urls.py` avec nom = post_detail
 
-Et qu’en est-il de `pk=post.pk` ? `pk` est l’abréviation de clé primaire ("primary key" en anglais), qui est une référence unique pour chaque élément enregistré dans une base de données. Comme nous n'avons pas spécifiée de clé primaire dans notre modèle `Post`, Django en crée une pour nous (par défaut, un nombre qui augmente d’un pour chaque enregistrement, c'est-à-dire 1, 2, 3 etc..) et l’ajoute comme un champ nommé `pk` à chacun de nos posts. Nous accédons à la clé primaire en écrivant `post.pk`, de la même manière que nous pouvons accéder à d'autres champs (`titre`, `auteur`, etc...) dans notre objet `Post` !
+Et qu’en est-il de `pk=post.pk` ? `pk` is short for primary key, which is a unique identifier for each record in a database. Every Django model has a field which serves as its primary key, and whatever other name it has, it can also be referred to as "pk". Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a field named "id" holding a number that increases for each record, i.e. 1, 2, 3) and adds it as a field to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
 
 Maintenant si nous jetons un coup d’œil à http://127.0.0.1:8000/, nous rencontrons une erreur. Ceci est prévisible, puisque nous n'avons ni d'URL ni de *view* pour `post_detail`. L'erreur ressemble à ceci :
 
