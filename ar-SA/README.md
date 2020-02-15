@@ -42,10 +42,10 @@
 
 هذا الدليل التعليمي يدار بواسطة [DjangoGirls](https://djangogirls.org/). إذا وجدتم أي خطأ أو رغبتم في تحديث الدليل التطبيقي يرجى [اتباع المبادئ التوجيهية للمساهمة](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
-## هل تريد أن تساعدنا على ترجمة البرنامج التعليمي للغات أخرى؟
+## هل تريدون مساعدتنا في ترجمة الدليل التطبيقي إلى لغات أخرى؟
 
 حاليا، يجري الاحتفاظ بالترجمات على منصة crowdin.com في:
 
 https://crowdin.com/project/django-girls-tutorial
 
-إذا لم تكن لغتك موجودة نرجو منك [مراسلتنا](https://github.com/DjangoGirls/tutorial/issues/new) لإضافتها.
+إذا لم تكن لغتكم موجودة في [crowdin](https://crowdin.com/)، فنرجو منكم [إنشاء طلب](https://github.com/DjangoGirls/tutorial/issues/new) لإضافتها.
