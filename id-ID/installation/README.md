@@ -25,11 +25,11 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 # Perkenalan singkat dengan macam perintah {#command-line}
 
-Many of the steps below reference the "console", "terminal", "command window", or "command line" -- these all mean the same thing: a window on your computer where you can enter commands. When you get to the main tutorial, you'll learn more about the command line. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
+Banyak dari langkah-langkah dibawah menunjuk kepada “konsol atau console”, “terminal”, “perintah window atau window command”, atau “perintah atau command line” - semua ini memiliki makna yang sama yaitu sebuah jendela pada komputer anda dimana anda dapat memasukkan perintah-perintah. Pada saat anda sampai pada pelajaran utama, anda akan banyak belajar tentang baris perintah. Sekarang, bagian penting yang anda perlu ketahui adalah bagaimana membuka sebuah perintah window dan bagaimana bentuknya: {%termasuk “/perkenalan_kepada_baris_perintah/buka_instruksi.md” %}
 
-# Install Python {#python}
+# Pasang Phyton {#python}
 
-{% include "/python_installation/instructions.md" %}
+{% termasuk “/python_pemasangan/instruksi.md” %}
 
 # Install a code editor {#code-editor}
 
