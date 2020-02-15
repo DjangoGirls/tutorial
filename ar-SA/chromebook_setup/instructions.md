@@ -29,12 +29,12 @@
 3. أنشئ حساب في AWS (يتطلب معلومات بطاقتك البنكية، لكن تستطيع استخدامها مجاناً)
 4. من AWS Dashboard، أدخل *Cloud9* في مربع البحث ثم اضغطه
 5. من Cloud 9 dashboard، اضغط *Create environment*
-6. Name it *django-girls*
-7. While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
-8. Click *Next step*
-9. Click *Create environment*
+6. سمه *django-girls*
+7. أثناء تعديل الإعدادات، من "Environment Type" اختر *Create a new instance for environment (EC2)*، ومن "Instance type" اختر *t2.micro*. (المفترض يظهر لك "Free-tier eligible." أي أنها متوفرة في الفئة المجانية). إعدادات cost-saving الافتراضية لا بأس بها، وتستطيع إبقاء الإعدادات الافتراضية الأخرى على ما هي عليه.
+8. اضغط على *Next step*
+9. اضغط *Create environment*
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+الآن يفترض أن تشاهد واجهة وقائمة جانبية، ونافذة رئيسية كبيرة تحتوي نص، ونافذة صغيرة في الجزء السفلي التي تبدو مثل هذا:
 
 {% filename %}bash{% endfilename %}
 
