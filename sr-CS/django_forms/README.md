@@ -281,7 +281,7 @@ Django se pobrinuo da potvrdi da su sva polja u našoj formi ispravna. Zar to ni
 
 ## Uređivanje forme
 
-Sada znamo kako da dodamo novu formu. Ali, šta ako želimo da izmenimo postojeću? To je nešto što je veoma slično onome što smo upravo uradili. Hajde da kreiramo brzo neke bitne stvari. (Ukoliko Vam nešto nije jasno, trebalo bi da pitate Vašeg instruktora ili da pogledate prethodna poglavlja, budući da smo već pokrili sve ove korake)
+Now we know how to add a new post. Ali, šta ako želimo da izmenimo postojeću? To je nešto što je veoma slično onome što smo upravo uradili. Hajde da kreiramo brzo neke bitne stvari. (Ukoliko Vam nešto nije jasno, trebalo bi da pitate Vašeg instruktora ili da pogledate prethodna poglavlja, budući da smo već pokrili sve ove korake)
 
 Otvorite `blog/templates/blog/post_detail.html` u editoru i dodajte liniju
 
