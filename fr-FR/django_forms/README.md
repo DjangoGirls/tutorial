@@ -281,7 +281,7 @@ Django va s'occuper de la validation : il va regarder si tous les champs de notr
 
 ## Éditer un formulaire
 
-Maintenant, nous savons comment ajouter un nouveau formulaire. Comment faire si nous voulons éditer un formulaire déjà existant ? C'est très similaire à ce que nous venons de faire. Tout d'abord, faisons rapidement quelques choses importantes. (Si vous ne comprenez pas quelque chose, vous devriez demander à votre entraîneur ou regarder les chapitres précédents, car nous avons déjà traité toutes ces étapes.)
+Now we know how to add a new post. Comment faire si nous voulons éditer un formulaire déjà existant ? C'est très similaire à ce que nous venons de faire. Tout d'abord, faisons rapidement quelques choses importantes. (Si vous ne comprenez pas quelque chose, vous devriez demander à votre entraîneur ou regarder les chapitres précédents, car nous avons déjà traité toutes ces étapes.)
 
 Ouvrez le fichier `blog/templates/blog/post_detail.html` dans l'éditeur de code et ajoutez la ligne suivante :
 
