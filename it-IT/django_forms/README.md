@@ -281,7 +281,7 @@ Django sta prendendo cura di convalidare che tutti i campi nel nostro modulo son
 
 ## Form di modifica
 
-Ora sappiamo come aggiungere un form. Ma cosa succede se ne vogliamo cambiarne uno esistente? E' molto simile a quanto abbiamo appena fatto. Creiamo rapidamente alcune cose importanti. (Se non capisci qualcosa, dovresti chiedere al tuo coach o guardare i capitoli precedenti, poiché abbiamo già coperto tutti questi passi.)
+Now we know how to add a new post. Ma cosa succede se ne vogliamo cambiarne uno esistente? E' molto simile a quanto abbiamo appena fatto. Creiamo rapidamente alcune cose importanti. (Se non capisci qualcosa, dovresti chiedere al tuo coach o guardare i capitoli precedenti, poiché abbiamo già coperto tutti questi passi.)
 
 Apri `blog/templates/blog/post_detail.html` nell'editor del codice e aggiungi la riga
 
