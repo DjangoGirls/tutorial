@@ -281,7 +281,7 @@ Django menjaga untuk mengesahkan bahawa semua bidang dalam bentuk kami adalah be
 
 ## Edit borang
 
-Sekarang kita tahu cara menambah bentuk baru. But what if we want to edit an existing one? Ini sangat mirip dengan apa yang kita buat. Mari kita buat beberapa perkara penting dengan cepat. (Jika anda tidak memahami sesuatu, anda harus meminta jurulatih anda atau melihat bab sebelumnya, kerana kami telah melengkapkan semua langkah ini.)
+Now we know how to add a new post. But what if we want to edit an existing one? Ini sangat mirip dengan apa yang kita buat. Mari kita buat beberapa perkara penting dengan cepat. (Jika anda tidak memahami sesuatu, anda harus meminta jurulatih anda atau melihat bab sebelumnya, kerana kami telah melengkapkan semua langkah ini.)
 
 Open `blog/templates/blog/post_detail.html` in the code editor and add the line
 
