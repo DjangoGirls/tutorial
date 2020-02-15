@@ -1,8 +1,8 @@
 # Jika Anda sedang melakukan tutorial di rumah
 
-Jika Anda melakukan tutorial di rumah, bukan di salah satu acara  Django Girls </ 0> , Anda benar-benar dapat melewatkan bab ini sekarang dan langsung ke  Bagaimana Internet bekerja </ 1> bab .</p> 
+Jika Anda melakukan tutorial ini di rumah, bukan di salah satu acara  Django Girls </ 0> , Anda benar-benar dapat melewatkan bab ini sekarang dan langsung ke  bab “Bagaimana Internet Bekerja”.</p> 
 
-This is because we cover installing things as they are needed in the tutorial -- this is just an additional page that gathers all of the installation instructions in one place (which is useful for some workshop formats). You can choose to install everything that is on this page right now if you wish. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation parts to you later on, as they are needed.
+Ini dikarenakan kami melindungi bagian-bagian pemasangan yang dimana bagian-bagian tersebut dibutuhkan di tutorial ini. Ini hanya halaman tambahan yang menggabungkan semua instruksi pemasangan di satu tempat ( yang sangat berguna untuk beberapa format ruang kerja). You can choose to install everything that is on this page right now if you wish. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation parts to you later on, as they are needed.
 
 Good luck!
 
