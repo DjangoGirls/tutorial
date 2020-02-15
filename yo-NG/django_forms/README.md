@@ -281,7 +281,7 @@ Django n gbìyànjú láti fẹsẹ̀múlẹ̀ pé gbogbo àwọn ààyè tó w�
 
 ## Fọ́ọ̀mù àtúnṣe
 
-Ní báyìí, a mọ bí a ṣe lè ṣàfikún fọ́ọ̀mù tuntun kan. Ṣùgbọ́n tí a bá fẹ́ ṣàtúnṣe ìkan tó ti wà tẹ́lẹ̀ ńkọ́? Èyí kò fi bẹ́ẹ̀ yàtọ̀ sí ohun tí a ṣẹ̀ṣẹ̀ ṣetán. Jẹ́ ká ṣẹ̀dá àwọn nnkan tó ṣe pàtàkì ní kíákíá. (Tí nnkan kan kò bá yé ọ, ó yẹ kí o béèrè lọ́wọ́ olùkọ́ rẹ tàbí kí o wo àwọn àkòrí tó ṣáájú náà, nítorí pé a ti ṣàlàyé gbogbo àwọn ìgbésẹ̀ wọ̀nyí tẹ́lẹ̀.)
+Now we know how to add a new post. Ṣùgbọ́n tí a bá fẹ́ ṣàtúnṣe ìkan tó ti wà tẹ́lẹ̀ ńkọ́? Èyí kò fi bẹ́ẹ̀ yàtọ̀ sí ohun tí a ṣẹ̀ṣẹ̀ ṣetán. Jẹ́ ká ṣẹ̀dá àwọn nnkan tó ṣe pàtàkì ní kíákíá. (Tí nnkan kan kò bá yé ọ, ó yẹ kí o béèrè lọ́wọ́ olùkọ́ rẹ tàbí kí o wo àwọn àkòrí tó ṣáájú náà, nítorí pé a ti ṣàlàyé gbogbo àwọn ìgbésẹ̀ wọ̀nyí tẹ́lẹ̀.)
 
 Ṣí `blog/templates/blog/post_detail.html` nínú olóòtú kóòdù náà kí o sì ṣàfikún ìlà yìí
 
