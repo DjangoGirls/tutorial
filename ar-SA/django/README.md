@@ -22,6 +22,6 @@
 
 في الدالة *view*، تتم جميع الأمور المثيرة للاهتمام: يمكننا أن ننظر إلى قاعدة بيانات للبحث عن بعض المعلومات. ربما طلب المستخدم بتغيير شيء ما في البيانات؟ مثلما تقول الرسالة: "يرجى تغيير وصف وظيفتي". يمكن ل * view* التحقق مما إذا كان مسموحا لك القيام بذلك، ثم تحديث الوصف الوظيفي لك وإرسال رسالة مرة أخرى: "تم!" ثم * view* يولد استجابة و جانغو يمكن أن يرسلها إلى متصفح الويب الخاص بالمستخدم.
 
-The description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
+بالطبع الوصف اعلاه مبسط كثيرا ، لكنك لست في حاجة لمعرفة كل المعلومات التقنية حاليا، الحصول على فكرة عامة كافي.
 
-So instead of diving too much into details, we will start creating something with Django and we will learn all the important parts along the way!
+لذلك بدلا من الغوص كثيرا في التفاصيل، نحن سوف نبدأ ببساطة بصناعة شيء باستخدام جانغو وسنتعلم كل الأجزاء المهمة على طول الطريق!
