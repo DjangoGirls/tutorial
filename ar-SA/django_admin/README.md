@@ -46,12 +46,12 @@ admin.site.register(Post)
 
 ![دجانغو المشرف](images/django_admin3.png)
 
-Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content –- it's only visible to you on your local computer -- you can copy-paste some text from this tutorial to save time. :)
+اذهب إلى Posts وجرب. أضف خمس أو ست مقالات. لا تقلق بشأن المحتوى –- سيكون في جهازك الشخصي فقط – تستطيع نسخ النص الموجود في هذه الصفحة لاختصار الوقت. :)
 
 تأكد من أن اثنين أو ثلاث مشاركات على الأقل (ليس جميعها) لها تاريخ نشر. سوف يكون هذا مفيد لنا في وقت لاحق.
 
 ![دجانغو المشرف](images/edit_post3.png)
 
-If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/2.2/ref/contrib/admin/
+إذا كنت تريد معرفة المزيد حول مشرف دجانغو من خلال قراءة دليل جانقو: https://docs.djangoproject.com/en/2.2/ref/contrib/admin/
 
 ربما تكون هذه لحظة جيدة لشرب كوب من القهوة (أو الشاي) أو لتناول الطعام لإعادة تنشيط نفسك. لقد قمت بإنشاء أول نموذج جانغو خاص بك أنت تستحق الإستراحة قليلا!
