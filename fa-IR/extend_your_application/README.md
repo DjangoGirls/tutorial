@@ -42,7 +42,7 @@
 
 بخش `post_detail` به معنی آن است که جنگو انتظار دارد یک آدرس به نام post_detail، در فایل `blog/urls.py` وجود داشته باشد
 
-حالا معنی `pk=post.pk` چیست؟ `pk` مخفف primary key (کلید اصلی) است که یک نام منحصر به فرد برای هر ردیف از داده‌ها در پایگاه داده می‌باشد. چون ما در مدل `Post` کلید اصلی تعریف نکرده بودیم، جنگو یکی برای ما ساخته‌ است (کلید اصلی به صورت پیش‌فرض عددی است که به ازای هر ردیف از داده‌ها یکی اضافه می‌شود مثلاً 1، 2، 3) و آن را به عنوان یک فیلد به نام `pk` به هر پست ما اضافه کرده‌ است. ما با نوشتن `post.pk` می‌توانیم به کلید اصلی شیء `Post` که قبلاً ساخته ایم، دسترسی پیدا کنیم همانطور که به سایر فیلدها دسترسی پیدا می‌کردیم (مانند `title` و `author`)!
+حالا معنی `pk=post.pk` چیست؟ `pk` is short for primary key, which is a unique identifier for each record in a database. Every Django model has a field which serves as its primary key, and whatever other name it has, it can also be referred to as "pk". Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a field named "id" holding a number that increases for each record, i.e. 1, 2, 3) and adds it as a field to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
 
 حالا وقتی به آدرس http://127.0.0.1:8000/ می‌رویم با خظا مواجه می‌شویم (همانطور که انتظار داشتیم، چرا که ما هنوز برای `post_detail` ، یک آدرس یا یک *view* نساخته ایم). چیزی شبیه به این:
 
