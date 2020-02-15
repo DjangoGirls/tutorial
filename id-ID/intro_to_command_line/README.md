@@ -16,13 +16,13 @@ Jendela, yang biasanya disebut **command line**atau** antarmuka baris perintah**
 
 ## Buka antarmuka baris perintah
 
-To start some experiments we need to open our command-line interface first.
+Untuk mulai beberapa percobaan kita perlu untuk membuka baris-perintah antar muka dulu.
 
-{% include "/intro_to_command_line/open_instructions.md" %}
+{% include “/intro_to_command_line/open_instructions.md” %}
 
 ## Jendela Perintah
 
-You now should see a white or black window that is waiting for your commands.
+Anda sekarang sebaiknya melihat sebuah window hitam atau putih yang sedang menunggu perintah anda.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
