@@ -50,7 +50,7 @@ Lihat di bagian atas bagian Linux sekarang — anda akan melihat sesuatu yang sa
 
 Setiap perintah akan didahulukan dengan `$` atau `>` dan satu tempat, namun anda tidak perlu mengetiknya. Komputer anda akan melakukannya untuk anda. :)
 
-> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
+> Hanya sebuah catatan kecil: dalam alatmh mungkin akan ada seperti `C:\Users\ola>`or ` Olas-MacBook-Air:~ola$` sebelum tanda coba, dan ini artinya 100% OK.
 
 The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
