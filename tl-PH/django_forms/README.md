@@ -277,7 +277,7 @@ Si Django ay sinisuguro na ang lahat ng field sa ating form ay tama. Kagilas-gil
 
 ## I-edit ang form
 
-Ngayon, alam na natin kung paano magdagdag ng bagong form. Ngunit paano kung gusto natin i-edit ang umiiral na? Ito ay parehong-pareho lang sa ginawa natin kanina. Gagawa tayo ng mga importanteng bagay nang mabilisan. (Kung meron kang bagay na hindi maiintindihan, magtanong sa iyong taga sanay o hanapin sa nakalipas na mga kabanata, yamang atin ng napag-aralan and mga hakbang na ito.)
+Now we know how to add a new post. Ngunit paano kung gusto natin i-edit ang umiiral na? Ito ay parehong-pareho lang sa ginawa natin kanina. Gagawa tayo ng mga importanteng bagay nang mabilisan. (Kung meron kang bagay na hindi maiintindihan, magtanong sa iyong taga sanay o hanapin sa nakalipas na mga kabanata, yamang atin ng napag-aralan and mga hakbang na ito.)
 
 Open `blog/templates/blog/post_detail.html` in the code editor and add the line
 
