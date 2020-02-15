@@ -281,7 +281,7 @@ Django is taking care to validate that all the fields in our form are correct. I
 
 ## 編輯表單 (Edit form)
 
-現在我們知道如何增加一個新的表單。 但如果我們想要編輯一個現存的？ This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
+Now we know how to add a new post. 但如果我們想要編輯一個現存的？ This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
 
 Open `blog/templates/blog/post_detail.html` in the code editor and add the line
 
