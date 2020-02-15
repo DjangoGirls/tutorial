@@ -281,7 +281,7 @@ Django overí, či sú všetky polia formulára správne. Nie je to skvelé?
 
 ## Úprava formuláru
 
-Teraz už vieme, ako sa pridáva nový formulár. Ale čo ak chceme upravovať existujúci? Je to veľmi podobné tomu, čo sme práve spravili. Poďme rýchlo vytvoriť niektoré dôležité veci. (ak niečomu nerozumieš, opýtaj sa svojho trénera alebo sa pozri na predchádzajúce kapitoly, pretože všetky tieto kroky sme si už prebrali.)
+Now we know how to add a new post. Ale čo ak chceme upravovať existujúci? Je to veľmi podobné tomu, čo sme práve spravili. Poďme rýchlo vytvoriť niektoré dôležité veci. (ak niečomu nerozumieš, opýtaj sa svojho trénera alebo sa pozri na predchádzajúce kapitoly, pretože všetky tieto kroky sme si už prebrali.)
 
 Open `blog/templates/blog/post_detail.html` in the code editor and add the line
 
