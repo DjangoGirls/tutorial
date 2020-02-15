@@ -12,11 +12,11 @@ Bila anda menghadiri salah satu [ acara Django Girls](https://djangogirls.org/ev
 
 * Ruang kerja anda mungkin memiliki “bagian pemasangan” sebelum ruang kerja utama. Jika anda ada di bagian pemangan, halaman ini adalah untuk anda! Ikuti instruksi-instruksi ini untuk mendapat semua yang anda butuhkan untuk pemasangan ruang kerja, bila perlu dengan bantuan para instruktur. Kemudian di ruang kerja utama, ketika anda menemukan instruksi-instruksi pemasangan di pelajaran utama, anda dapat melewati instruksi-instruksi tersebut.
 * Para penyelenggara seminar anda mungkin meminta anda untuk mencoba memasang semua di komputer anda dirumah sebelum seminar dimulai. Jika anda diminta untuk melakukannya, halaman ini untuk anda! Ikuti instruksi-instruksi dibawah ini sebaik mungkin. Dan pada saat anda berada di ruang kerja utama dan berada di bagian langkah pemasangan di pelajaran utama, anda bisa mendapatkan bantuan dari pelatih anda bila anda tidak dapat memasang bagian tersebut.
-* If your workshop does not have an installation party (or you couldn't attend), and if the organizers didn't ask you to try to install everything before you arrived, skip this page and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter. You'll be installing everything you need as you work through the tutorial.
+* Jika seminar anda tidak memiliki bagian pemasangan (atau anda tidak dapat menghadirinya), dan bila para penyelenggara tidak meminta anda untuk memasang semua sebelum anda datang, lewati halaman ini dan langsung menuju ke bab [Bagaimana Internet Bekerja](../how_the_internet_works/README.md). And akan dapat memasang semua yang anda butuhkan karena anda bekerja melalui bimbingan.
 
 # Instalasi
 
-In this tutorial you will be building a blog. In order to do that, as you go through the tutorial you'll be instructed on how to install various software on your computer and set up some online accounts as they are needed. This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
+Dalam pelajaran ini anda akan dapat membuat sebuah blog. Agar dapat melakukannya, pada saat anda masuk ke bagian pelajaran tersebut anda akan diinstruksikan untuk bagaimana memasang berbagai perangkat lunak pada komputer anda dan membuat beberapa akun online karena itu sangat dibutuhkan. Halaman ini menggabungkan semua instruksi pemasangan dan pendaftaran dalam satu tempat (yang dimana sangat berguna untuk beberapa format ruang kerja).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md"%} 
