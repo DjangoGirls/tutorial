@@ -9,26 +9,26 @@
 1. الذهاب إلى [PaizaCloud Cloud IDE](https://paiza.cloud/)
 2. إنشاء حساب جديد
 3. إنشاء خادم بالضغط على *New Server* واختيار Django
-4. اضغط زر الواجهة الطرفية (على الجانب الأيسر من النافذة)
+4. الضغط على زر Terminal (على الجانب الأيسر من النافذة)
 
-الآن سترى واجهة مع الشريط جانبي، أزرار على اليسار. انقر فوق زر "المحطة الطرفية" لفتح إطار المحطة الطرفية مع موجه مثل هذا:
+الآن سترى واجهة مع قائمة جانبية، وأزرار على اليسار. اضغطي زر "Terminal" لفتح نافذة موجه الأوامر مثل هذا:
 
-{% filename %}المحطة الطرفية{% endfilename %}
+{% filename %} Terminal{% endfilename %}
 
     $
     
 
-المحطة الطرفية في IDE سحابة بايزاكلاود مستعدة للتعليمات الخاصة بك. يمكنك تغيير حجم أو تكبير هذا الإطار لجعله أكبر قليلاً.
+موجه الأوامر في PaizaCloud IDE مستعد لأوامرك. يمكنك تغيير حجم النافذة أو تكبيرها لجعلها أكبر قليلاً.
 
 #### AWS Cloud9
 
-Currently Cloud 9 requires you to sign up with AWS and enter credit card information.
+حالياً Cloud 9 تتطلب تسجيلك في AWS وإدخال معلومات بطاقتك البنكية.
 
 1. ثبت Cloud 9 من [ متجر كروم](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
 2. إذهب الى [c9.io](https://c9.io) واضغط على *ابدأ مع AWS Cloud9*
-3. Sign up for an AWS account (requires credit card information, but you can use it for free)
-4. In the AWS Dashboard, enter *Cloud9* in the search bar and click it
-5. In the Cloud 9 dashboard, click *Create environment*
+3. أنشئ حساب في AWS (يتطلب معلومات بطاقتك البنكية، لكن تستطيع استخدامها مجاناً)
+4. من AWS Dashboard، أدخل *Cloud9* في مربع البحث ثم اضغطه
+5. من Cloud 9 dashboard، اضغط *Create environment*
 6. Name it *django-girls*
 7. While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
 8. Click *Next step*
