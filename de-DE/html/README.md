@@ -181,7 +181,7 @@ Bevor wir alle Dateien hochladen, prüfen wir noch einmal, was `git` hochladen w
     $ git status
     
 
-Fast fertig, wir sagen nun noch, dass diese Änderung in der Verlaufsübersicht gespeichert werden soll. Wir erstellen eine "Commit Message", die beschreibt, was wir verändert haben. Du kannst an diesem Punkt hier alles reinschreiben, aber es ist sehr nützlich, etwas zu Sinnvolles einzutragen, damit du dich in Zukunft erinnern kannst, was du geändert hast.
+Fast fertig, wir sagen nun noch, dass diese Änderung in der Verlaufsübersicht gespeichert werden soll. Wir erstellen eine "Commit Message", die beschreibt, was wir verändert haben. Du kannst an diesem Punkt hier alles reinschreiben, aber es ist sehr nützlich, etwas Sinnvolles einzutragen, damit du dich in Zukunft erinnern kannst, was du geändert hast.
 
 {% filename %}command-line{% endfilename %}
 
