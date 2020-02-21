@@ -42,7 +42,7 @@ Wir beginnen damit, einen Link in der `blog/templates/blog/post_list.html`-Datei
 
 Der `post_detail`-Teil bedeutet, dass Django eine URL in `blog/urls.py` mit dem Namen name=post_detail erwartet.
 
-Und was ist mit `pk=post.pk`? `pk` ist die Abkürzung für primary key (Primär-Schlüssel), ein eindeutiger Name für jeden Datensatz in einer Datenbank. Da wir keinen Primärschlüssel in unserem `Post`-Model angelegt haben, erstellt Django einen für uns (standardmäßig ist das eine Zahl, die mit jedem Eintrag nach oben gezählt wird, z.B. 1, 2, 3) und fügt den Schlüssel in einem Feld namens `pk` zu jedem unserer Blogposts hinzu. Wir können auf den Primärschlüssel durch `post.pk` zugreifen, genauso wie auf andere Felder (`title`, `author`, usw.) in unserem `Post`-Objekt!
+Und was ist mit `pk=post.pk`? `pk` ist die Abkürzung für primary key (zu Deutsch: Primär-Schlüssel), ein eineindeutiges Identifikationsmerkmal zu jedem Eintrag in einer Datenbank. Jedes Django-Modell hat ein Feld, das als Primär-Schlüssel dient. Welchen Namen dieses Feld auch haben mag, es kann ebenfalls als "pk" referenziert werden. Da wir keinen Primär-Schlüssel in unserem `Post`-Modell angelegt haben, erstellt Django einen für uns (standardmäßig ist dies ein Feld namens "id", welches eine Zahl enthält, die mit jedem weiteren Eintrag nach oben gezählt wird, z.B. 1, 2, 3) und fügt ihn als Feld zu jedem unserer Posts hinzu. Wir greifen auf den Primär-Schlüssel zu, indem wir `post.pk` schreiben, genauso wie wir auf andere Felder (`title`, `author`, usw.) in unserem `Post`-Objekt zugreifen!
 
 Wenn wir jetzt http://127.0.0.1:8000/ aufrufen, erhalten wir einen Fehler (wie erwartet, da wir ja noch keine URL oder *View* für `post_detail` erstellt haben). Er wird so aussehen:
 
@@ -140,7 +140,7 @@ Oh nein! Ein anderer Fehler! Aber wir wissen ja schon, wie wir mit diesem umgehe
 
 Wir erstellen eine Datei in `blog/templates/blog` mit dem Namen `post_detail.html` und öffnen sie im Code-Editor.
 
-Geben wir folgenden Code ein:
+Gib den folgenden Code ein:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
