@@ -84,7 +84,7 @@ urlpatterns = [
 
 ## Добавим представление для страницы поста
 
-В этот раз наше *view* получит дополнительный параметр `pk`. Но как дать нашему *view* знать о нем? Для этого мы определим функцию как `def post_detail(request, pk):`. Обрати внимание, что мы должны использовать то же имя переменной, что мы выбрали для обработки URL (`pk`). Пропуск переменной будет неправилен и приведет к ошибке!
+В этот раз наше *view* получит дополнительный параметр `pk`. Но как дать нашему *view* знать о нем? Для этого мы определим функцию как `def post_detail(request, pk):`. Note that this parameter must have the exact same name as the one we specified in `urls` (`pk`). Also note that omitting this variable is incorrect and will result in an error!
 
 Теперь мы хотим получить одну конкретную запись из блога. Для этого потребуется использовать QuerySet, примерно такую:
 
