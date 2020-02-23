@@ -84,7 +84,7 @@ Bir sonraki adımın ne olduğunu hatırlıyor musunuz? Tabi ki: view(görünüm
 
 ## Gönderi detayı için bir view ekleyin
 
-Bu sefer *view*'ımıza `pk` adında bir parametre ekleyeceğiz. *view*'ümüzün onu yakalaması gerekiyor, değil mi? Fonksiyonumuzu `def post_detail(request, pk):` olarak tanımlayacağız. Note that we need to use exactly the same name as the one we specified in `urls` (`pk`). Bu değişkeni kullanmamak yanlıştır ve hataya sebep olacaktır!
+Bu sefer *view*'ımıza `pk` adında bir parametre ekleyeceğiz. *view*'ümüzün onu yakalaması gerekiyor, değil mi? Fonksiyonumuzu `def post_detail(request, pk):` olarak tanımlayacağız. Note that this parameter must have the exact same name as the one we specified in `urls` (`pk`). Also note that omitting this variable is incorrect and will result in an error!
 
 Şimdi sadece ve sadece bir tane blog gönderisi almak istiyoruz. Bunu yapmak için şunun gibi sorgu setlerini/kümelerini kullanabiliriz:
 
