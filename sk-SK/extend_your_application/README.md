@@ -84,7 +84,7 @@ Do you remember what the next step is? It's adding a view!
 
 ## Pridaj view do detailu príspevku
 
-Tentokrát má náš *view* extra parameter, `pk`. Náš *view* ho potrebuje zachytiť, však? Takže definujeme našu funkciu ako `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in `urls` (`pk`). Vynechanie tejto premennej je nesprávne a bude mať za následok chybu!
+Tentokrát má náš *view* extra parameter, `pk`. Náš *view* ho potrebuje zachytiť, však? Takže definujeme našu funkciu ako `def post_detail(request, pk):`. Note that this parameter must have the exact same name as the one we specified in `urls` (`pk`). Also note that omitting this variable is incorrect and will result in an error!
 
 Teraz chceme aby sme dostali jeden a len jeden príspevok blogu. Na to môžeme použiť querysets takto:
 
