@@ -84,7 +84,7 @@ Ti ricordi di quale è il prossimo passo? Ma certo: aggiungere una view!
 
 ## Aggiungi una view del post
 
-Questa volta alla nostra *view* viene data un altro parametro `pk`. La nostra *view* deve prenderlo, vero? Quindi definiremo la nostra funzione come `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in `urls` (`pk`). Omettere questa variabile è sbagliato e genererà un errore!
+Questa volta alla nostra *view* viene data un altro parametro `pk`. La nostra *view* deve prenderlo, vero? Quindi definiremo la nostra funzione come `def post_detail(request, pk):`. Note that this parameter must have the exact same name as the one we specified in `urls` (`pk`). Also note that omitting this variable is incorrect and will result in an error!
 
 Ora, noi vogliamo ottenere un' unico post. Per farlo possiamo utilizzare le queryset così:
 
