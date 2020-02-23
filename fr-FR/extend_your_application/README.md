@@ -84,7 +84,7 @@ Vous souvenez-vous de ce qu'il faut faire ensuite ? Il faut ajouter une vue !
 
 ## Ajouter une vue pour le contenu du post
 
-Cette fois-ci, nous allons donner un paramètre supplémentaire à notre *vue* : `pk`. Notre *vue* va avoir besoin de le récupérer, n'est ce pas ? Pour cela, nous allons définir une fonction : `def post_detail(request, pk):`. Attention : notez bien que nous utilisons le même nom que celui que nous avons spécifié dans le fichier `urls` (`pk`). Oublier cette variable est incorrect et va générer une erreur !
+Cette fois-ci, nous allons donner un paramètre supplémentaire à notre *vue* : `pk`. Notre *vue* va avoir besoin de le récupérer, n'est ce pas ? Pour cela, nous allons définir une fonction : `def post_detail(request, pk):`. Note that this parameter must have the exact same name as the one we specified in `urls` (`pk`). Also note that omitting this variable is incorrect and will result in an error!
 
 Maintenant, nous aimerions obtenir qu'un seul blog post. Pour cela, nous allons utiliser des QuerySets qui ressemblent à ceux-ci:
 
