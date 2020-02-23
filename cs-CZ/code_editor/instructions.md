@@ -10,7 +10,7 @@ XPath: /p[3]. It includes support for debugging, embedded Git control, syntax hi
 
 ## Gedit
 
-Gedit is an open-source, free editor, available for all operating systems.
+Gedit je open-source editor. Je k dispozici zdarma pro všechny operační systémy.
 
 [Stáhnout si jej můžeš zde](https://wiki.gnome.org/Apps/Gedit#Download)
 
@@ -22,11 +22,11 @@ Sublime Text is a very popular editor with a free evaluation period and it's ava
 
 ## Atom
 
-Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
+Atom je další populární editor. Je zdarma, open-source a je k dispozici pro Windows, OS X a Linux. Atom byl vyvinut firmou [GitHub](https://github.com/).
 
-[Download it here](https://atom.io/)
+[Stáhnout si jej můžete zde](https://atom.io/)
 
-## Why are we installing a code editor?
+## Proč instalujeme editor kódu?
 
 Možná přemýšlíte, proč instalujeme speciální editor a proč raději nezvolíme něco jako Notepad nebo Word.
 
@@ -34,4 +34,4 @@ První důvod je, že kód musí být **prostý text** a problém s programy jak
 
 Druhým důvodem je, že editory kódu jsou pro tuto práci uzpůsobené tak, že poskytují užitečné pomůcky jako je barevné zvýrazňování různých částí kódu podle jejich významu či automatické uzavírání uvozovek.
 
-We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
+V akci to uvidíme později. Brzy budeš na svůj editor kódu nahlížet jako na jeden ze svých oblíbených nástrojů. :)
