@@ -84,7 +84,7 @@ Do you remember what the next step is? It's adding a view!
 
 ## เพิ่ม view รายละเอียดของโพสต์
 
-ตอนนี้ *view* ของเราจะได้พารามิเตอร์เพิ่มเข้ามาคือ `pk` Our *view* needs to catch it, right? ดังนั้นเราจะสร้างฟังก์ชั่นใหม่ โดยใช้ `def post_detail(request, pk):` Note that we need to use exactly the same name as the one we specified in `urls` (`pk`). การละเว้นตัวแปรนี้ จะทำให้เกิดข้อผิดพลาด!
+ตอนนี้ *view* ของเราจะได้พารามิเตอร์เพิ่มเข้ามาคือ `pk` Our *view* needs to catch it, right? ดังนั้นเราจะสร้างฟังก์ชั่นใหม่ โดยใช้ `def post_detail(request, pk):` Note that this parameter must have the exact same name as the one we specified in `urls` (`pk`). Also note that omitting this variable is incorrect and will result in an error!
 
 ตอนนี้ เราต้องการโพสต์เดียวเท่านั้น เราสามารถทำได้ โดยใช้ queryset แบบนี้:
 
