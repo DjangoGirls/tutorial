@@ -84,7 +84,7 @@ urlpatterns = [
 
 ## Προσθήκη ενός view για τις λεπτομέρειες του post
 
-Αυτή τη φορά το *view* δέχεται μια έξτρα παράμετρο, το `pk`. Το *view* μας χρειάζεται με κάποιο τρόπο να αιχμαλωτίσει αυτή την παράμετρο, σωστά; Έτσι, λοιπόν, θα ορίσουμε την συνάρτηση μας ως `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in `urls` (`pk`). Η απουσία της παραμέτρου είναι λάθος και θα παρουσιάσει σφάλμα!
+Αυτή τη φορά το *view* δέχεται μια έξτρα παράμετρο, το `pk`. Το *view* μας χρειάζεται με κάποιο τρόπο να αιχμαλωτίσει αυτή την παράμετρο, σωστά; Έτσι, λοιπόν, θα ορίσουμε την συνάρτηση μας ως `def post_detail(request, pk):`. Note that this parameter must have the exact same name as the one we specified in `urls` (`pk`). Also note that omitting this variable is incorrect and will result in an error!
 
 Τώρα, θέλουμε να πάρουμε ένα και μόνο ένα post. Για να το κάνουμε αυτό, μπορούμε να χρησιμοποιήσουμε τα querysets, όπως παρακάτω:
 
