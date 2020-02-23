@@ -84,7 +84,7 @@ OK, hemos añadido un nuevo patrón de URL a `blog/urls.py`! Actualizamos la pag
 
 ## Añade la vista de detalle de la publicación
 
-Esta vez nuestra *vista* tomará un parámetro adicional `pk`. Nuestra *vista* necesita recibirlo, ¿verdad? Así que definiremos nuestra función como `def post_detail (request, pk):`. Tenga en cuenta que necesitamos usar exactamente el mismo nombre que el que especificamos en `urls` (`pk`). ¡Omitir esta variable es incorrecto y resultará en un error!
+Esta vez nuestra *vista* tomará un parámetro adicional `pk`. Nuestra *vista* necesita recibirlo, ¿verdad? Así que definiremos nuestra función como `def post_detail (request, pk):`. Note that this parameter must have the exact same name as the one we specified in `urls` (`pk`). Also note that omitting this variable is incorrect and will result in an error!
 
 Ahora, queremos obtener solo un post. Para ello podemos usar querysets como este:
 
