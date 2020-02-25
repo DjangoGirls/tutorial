@@ -11,18 +11,18 @@ Windows sürümünüze ve klavyenize bağlı olarak, aşağıdaki seçeneklerden
 
 ![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
 
-Sonra bu eğitimde aynı anda iki komut penceresi açma ihtiyacınız olacak. However, on some versions of Windows, if you already have one command window open and you try to open a second one using the same method, it will instead point you to the command window you already have open. Try it now on your computer and see what happens! If you only get one command window, try one of the other methods in the list above. At least one of them should result in a new command window being opened.
+Sonra bu eğitimde aynı anda iki komut penceresi açma ihtiyacınız olacak. However, on some versions of Windows, if you already have one command window open and you try to open a second one using the same method, it will instead point you to the command window you already have open. Şimdi bunu bilgisayarınızda deneyin ve ne olduğuna bakın! Eğer bir tane komut penceresi varsa, aşağıdaki listede bulunan yöntemlerden birini deneyin. En azından bir tanesi yeni bir komut penceresi açılmasını sağlayacaktır.
 
 <!--endsec-->
 
 <!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
 
-Go to Applications → Utilities → Terminal.
+Uygulamalar→ Araçlar → Terminal yolunu takip edin.
 
 <!--endsec-->
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-It's probably under Applications → Accessories → Terminal, or Applications → System → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
+Muhtemelen Uygulamalar → Aksesuarlar → Terminal ya da Uygulamalar → Sistem → Terminal altındadır, nerede olduğu sisteminize bağlıdır. Eğer orada değilse, Google'da arayabilirsiniz. :)
 
 <!--endsec-->
