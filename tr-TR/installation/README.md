@@ -27,11 +27,11 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 Aşağıdaki adımların çoğu, "konsol", "terminal", "komut penceresi" veya "komut satırı" na atıfta bulunur - bu terimlerin hepsi aynı anlama gelir: bilgisayarınızda komutları girebileceğiniz bir pencere. Ana kılavuza ulaştığınızda, komut satırı hakkında daha fazla bilgi edinebilirsiniz. Şimdilik, bilmeniz gereken en önemli şey bir komut penceresinin nasıl açılacağı ve nasıl göründüğüdür: {% include "/intro_to_command_line/open_instructions.md" %}
 
-# Install Python {#python}
+# Python'ı Yükleyin {#python}
 
 {% include "/python_installation/instructions.md" %}
 
-# Install a code editor {#code-editor}
+# Bir kod düzenleyicisi yükleyin {#code-editor}
 
 {% include "/code_editor/instructions.md" %}
 
@@ -39,15 +39,15 @@ Aşağıdaki adımların çoğu, "konsol", "terminal", "komut penceresi" veya "k
 
 {% include "/django_installation/instructions.md" %}
 
-# Install Git {#git}
+# Git'i yükleyin {#git}
 
 {% include "/deploy/install_git.md" %}
 
-# Create a GitHub account {#github}
+# GitHub hesabı oluşturun {#github}
 
 [GitHub.com](https://www.github.com)'a gidin ve ücretsiz yeni bir kullanıcı hesabı oluşturun. Şifrenizi hatırladığınızdan emin olun (eğer şifrenizi yöneticisi kullanıyorsanız, yöneticinize ekleyin).
 
-# Create a PythonAnywhere account {#pythonanywhere}
+# PythonAnywhere hesabı oluşturun {#pythonanywhere}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
