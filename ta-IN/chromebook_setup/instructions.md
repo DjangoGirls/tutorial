@@ -2,7 +2,7 @@
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-கிளவுட் ஐடிஇ என்பது ஒரு குறியீடு எடிட்டரையும் மற்றும் கணினி இயங்கும் அணுகலையும் வழங்கும் ஒரு கருவியாகும். இணையத்தில் நீங்கள் மென்பொருளை நிறுவலாம், எழுதலாம் மற்றும் இயக்கலாம். வரும் இந்த டுடோரியல் கலங்கலில், கிளவுட் ஐடிஇ உங்கள் உள்ளூர் இயந்திரமாக செயல்படும். You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
+கிளவுட் ஐடிஇ என்பது ஒரு குறியீடு எடிட்டரையும் மற்றும் கணினி இயங்கும் அணுகலையும் வழங்கும் ஒரு கருவியாகும். இணையத்தில் நீங்கள் மென்பொருளை நிறுவலாம், எழுதலாம் மற்றும் இயக்கலாம். வரும் இந்த டுடோரியல் கலங்கலில், கிளவுட் ஐடிஇ உங்கள் உள்ளூர் இயந்திரமாக செயல்படும். நீங்கள் இன்னும் OS X, Ubuntu அல்லது Windows முனைய இடைமுகத்தில் உங்கள் கட்டளைகளை இயக்குகிறார், ஆனால் உங்கள் முனையம் இயங்கும் கணினியுடன் இணைக்கப்படும் மேகக்கணி IDE உங்களுக்காக அமைக்கும் வேறு எங்காவது. Cloud IDE கான வழிமுறைகள் எங்கே(PaizaCloud Cloud IDE, AWS Cloud9) You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
 
 #### PaizaCloud Cloud IDE
 
