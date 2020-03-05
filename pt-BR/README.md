@@ -28,7 +28,7 @@ Ele se parecerá (mais ou menos) com isso:
 
 ![Figura 0.1](images/application.png)
 
-> Se você seguir o tutorial por conta própria e não tiver uma monitora para ajudar, podemos de ajudar a resolver qualquer problema por esse chat: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Nós pedimos às nossas monitoras e participantes anteriores para acessarem o chat de tempos em tempos para ajudar outras pessoas com o tutorial! Não tenha medo de fazer sua pergunta!
+> Se você seguir o tutorial por conta própria e não tiver uma monitora para ajudar, podemos te ajudar a resolver qualquer problema por esse chat: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Nós pedimos às nossas monitoras e participantes anteriores para acessarem o chat de tempos em tempos para ajudar outras pessoas com o tutorial! Não tenha medo de fazer sua pergunta!
 
 OK, [vamos começar pelo começo...](./how_the_internet_works/README.md)
 
