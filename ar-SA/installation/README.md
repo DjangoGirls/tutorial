@@ -12,18 +12,18 @@
 
 * ورشة العمل قد تبدأ بـ "حفلة التحميل" قبل الورشة الأساسية. إذا كنتم في حقلة التحميل، فهذه الصفحة لكم! اتبعوا التعليمات هنا لتحصلوا على كل ما تحتاجونه للورشة، بمساعدة المرشدات إذا احتجتم. ثم في الورشة الأساسية، يمكنكم تجاهل جزئية التحميل التي ستمر بكم أثناء قرائتكم للدليل التطبيقي.
 * قد يكون منظموا الورشة طلبوا منكم تحميل كل شيء على أجهزتكم من منازلكم قبل بدء الورشة. إذا كان طلب منكم هذا، فهذه الصفحة لكم! اتبعوا التعليمات هنا، بأفضل قدرنكم. ثم في الورشة الأساسية، عندما تصلون لخطوة تحميل في الدليل التطبيقي، إذا لم تستطعون تحميل المطلوب فيمكنكم طلب المساعدة من المرشدات. 
-* إذا لم تبدأ ورشة العمل بحفلة التثبيت (أو لم تستطيعوا الحضور)، ولم يطلبوا منكم المنظمين تحميل المتطلبات قبل الحضور، تجاهلوا هذه الصفحة واذهبوا مباشرة إلى فصل [كيف يعمل الانترنت](../how_the_internet_works/README.md). You'll be installing everything you need as you work through the tutorial.
+* إذا لم تبدأ ورشة العمل بحفلة التثبيت (أو لم تستطيعوا الحضور)، ولم يطلبوا منكم المنظمين تحميل المتطلبات قبل الحضور، تجاهلوا هذه الصفحة واذهبوا مباشرة إلى فصل [كيف يعمل الانترنت](../how_the_internet_works/README.md). ستحملون جميع ما تحتاجونه خلال اتباعكم للدليل التطبيقي.
 
-# Installation
+# التحميل
 
-In this tutorial you will be building a blog. In order to do that, as you go through the tutorial you'll be instructed on how to install various software on your computer and set up some online accounts as they are needed. This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
+في هذا الدليل التطبيقي ستبنون مدونة. ولعمل ذلك، أثناء تتبعكم للدليل التطبيقي ستمرون بتعليمات لتحميل برامج مختلفة على أجهزتكم وإعداد بعض الحسابات على الإنترنت كلما تطلب ذلك. هذه الصفحة تجمع جميع التعليمات لتحميل البرامج وتسجيل الحسابات في مكان واحد (ستكون مفيدة لبعض ورش العمل)
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
 
 <!--endsec-->
 
-# Brief intro to the command line {#command-line}
+# مقدمة مختصرة عن موجه الأوامر {#command-line}
 
 Many of the steps below reference the "console", "terminal", "command window", or "command line" -- these all mean the same thing: a window on your computer where you can enter commands. When you get to the main tutorial, you'll learn more about the command line. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
 
