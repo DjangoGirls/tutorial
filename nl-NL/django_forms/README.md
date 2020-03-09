@@ -32,11 +32,11 @@ class PostForm(forms.ModelForm):
 
 We moeten eerst Django formulieren importeren (`from django import forms`), net zoals ons `Post` model (`from .models import Post`).
 
-`PostForm`, as you probably suspect, is the name of our form. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
+Zoals je waarschijnlijk al door hebt, is `PostForm` de naam van ons formulier. We moeten Django vertellen dat dit formulier een `ModelForm` is (zodat Django automatisch wat magie voor ons uitvoert). Daar zorgt `forms.ModelForm` voor.
 
-Next, we have `class Meta`, where we tell Django which model should be used to create this form (`model = Post`).
+Vervolgens hebben we `class Meta`, waar we Django vertellen welk model gebruikt moet worden om dit formulier te creëren (`model=Post`).
 
-Finally, we can say which field(s) should end up in our form. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
+Tot slot kunnen we zeggen welke velden ons formulier moet hebben. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
 
 And that's it! All we need to do now is use the form in a *view* and display it in a template.
 
