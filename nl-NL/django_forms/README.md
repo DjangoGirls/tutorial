@@ -36,15 +36,15 @@ Zoals je waarschijnlijk al door hebt, is `PostForm` de naam van ons formulier. W
 
 Vervolgens hebben we `class Meta`, waar we Django vertellen welk model gebruikt moet worden om dit formulier te creëren (`model=Post`).
 
-Tot slot kunnen we zeggen welke velden ons formulier moet hebben. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
+Tot slot kunnen we zeggen welke velden ons formulier moet hebben. In dit voorbeeld willen we alleen de `title` en `text` zichtbaar hebben - `author` moet de persoon zijn die op dat moment is ingelogd (jij!) en `created_date` zou automatisch aangemaakt moeten worden op het moment dat we een post maken (door middel van code), toch?
 
-And that's it! All we need to do now is use the form in a *view* and display it in a template.
+Dat was het! Het enige wat we nu moeten doen is het formulier via een *view* in een template zichtbaar maken.
 
-So once again we will create a link to the page, a URL, a view and a template.
+Daarvoor maken we wederom een link naar de pagina, een URL, een view en een template.
 
-## Link to a page with the form
+## Link naar een pagina met het formulier
 
-It's time to open `blog/templates/blog/base.html` in the code editor. In the `div` named `page-header`, we will add a link:
+Open `blog/templates/blog/base.html` in de code editor. In de `div` met de naam `page-header` gaan we een link toevoegen:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -52,9 +52,9 @@ It's time to open `blog/templates/blog/base.html` in the code editor. In the `di
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-Note that we want to call our new view `post_new`. The class `"glyphicon glyphicon-plus"` is provided by the bootstrap theme we are using, and will display a plus sign for us.
+Let op dat we onze nieuwe view `post_new` willen noemen. De class `"glyphicon glyphicon-plus"` komt uit het bootstrap theme wat we gebruiken, en zal een plusteken tonen.
 
-After adding the line, your HTML file should now look like this:
+Na het toevoegen van deze regel zou je HTML-bestand er nu als volgt uit moeten zien:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -85,19 +85,19 @@ After adding the line, your HTML file should now look like this:
 </html>
 ```
 
-After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
+Na het opslaan en verversen van de pagina http://127.0.0.1:8000 zie je een bekende errormelding: `NoReverseMatch`. Klopt dat? Goed!
 
 ## URL
 
-We open `blog/urls.py` in the code editor and add a line:
+Open `blog/urls.py` in je editor en voeg deze regel toe:
 
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-path('post/new/', views.post_new, name='post_new'),
+path('post/new', views.post_new, name='post_new'),
 ```
 
-And the final code will look like this:
+Uiteindelijk ziet de code er als volgt uit:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -112,11 +112,11 @@ urlpatterns = [
 ]
 ```
 
-After refreshing the site, we see an `AttributeError`, since we don't have the `post_new` view implemented. Let's add it right now.
+Nadat we onze site ververst hebben, zien we een `AttributeError` melding omdat we de `post_new` view nog niet hebben geïmplementeerd. Die gaan we nu toevoegen.
 
 ## post_new view
 
-Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
+Open nu het `blog/views.py` bestand in je editor en voeg de volgende regels code toe bij de overige regels van de `form` code:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -124,7 +124,7 @@ Time to open the `blog/views.py` file in the code editor and add the following l
 from .forms import PostForm
 ```
 
-And then our *view*:
+En dan onze *view*:
 
 {% filename %}blog/views.py{% endfilename %}
 
