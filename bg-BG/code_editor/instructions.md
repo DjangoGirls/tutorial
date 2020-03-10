@@ -1,16 +1,16 @@
-There are a lot of different editors and it largely boils down to personal preference. Most Python programmers use complex but extremely powerful IDEs (Integrated Development Environments), such as PyCharm. As a beginner, however, that's probably less suitable; our recommendations are equally powerful, but a lot simpler.
+Има много различни редактори и това до голяма степен се свежда до личните предпочитания. Повечето програмисти на Python използват сложни, но изключително мощни IDE (интегрирани среди за разработка), като PyCharm. Като начинаещ обаче това вероятно е по-малко подходящо; нашите препоръки са еднакво мощни, но много по-прости.
 
-Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
+Нашите предложения са по-долу, но не се колебайте да попитате треньора си какви са техните предпочитания - по-лесно ще получите помощ от тях.
 
 ## Visual Studio Code
 
-Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+Visual Studio Code е редактор на изходния код, разработен от Microsoft за Windows, Linux и macOS. Той включва поддръжка за отстраняване на грешки, вграден Git контрол, подчертаване на синтаксис, интелигентно попълване на код, фрагменти и рефакторинг на код.
 
-[Download it here](https://code.visualstudio.com/)
+[Изтеглете го тук](https://code.visualstudio.com/)
 
-## Gedit
+## Изтеглете го тук
 
-Gedit is an open-source, free editor, available for all operating systems.
+Gedit е безплатен редактор с отворен код, достъпен за всички операционни системи.
 
 [Download it here](https://wiki.gnome.org/Apps/Gedit#Download)
 
