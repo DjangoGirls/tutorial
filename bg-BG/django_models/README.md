@@ -1,16 +1,16 @@
-# Django models
+# Модели на Django
 
-What we want to create now is something that will store all the posts in our blog. But to be able to do that we need to talk a little bit about things called `objects`.
+Това, което искаме да създадем сега, е нещо, което ще съхранява всички публикации в нашия блог. Но за да можем да направим това, трябва да поговорим малко за неща, наречени `обекти`.
 
-## Objects
+## Обекти
 
-There is a concept in programming called `object-oriented programming`. The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
+Има концепция в програмирането, наречена `обектно-ориентирано програмиране`. Идеята е, че вместо да пишем всичко като скучна последователност от инструкции за програмиране, можем да моделираме нещата и да определим как те си взаимодействат помежду си.
 
-So what is an object? It is a collection of properties and actions. It sounds weird, but we will give you an example.
+И така, какво е обект? Това е съвкупност от свойства и действия. Звучи странно, но ще ви дадем пример.
 
-If we want to model a cat, we will create an object `Cat` that has some properties such as `color`, `age`, `mood` (like good, bad, or sleepy ;)), and `owner` (which could be assigned a `Person` object – or maybe, in case of a stray cat, this property could be empty).
+Ако искаме да моделираме котка, ще създадем обект `Cat`, който има някои свойства като `color`, `age`, `mood` (като добър, лош или сънен;)) и `owner` (на който може да бъде назначен обект `Person` - или може би в случай на бездомна котка, този имот може да бъде празен).
 
-Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which case, we will give the cat some `CatFood`, which could be a separate object with properties, like `taste`).
+Тогава `Cat` има някои действия: `purr`, `scratch` или `feed` (в този случай ще дадем cat some `CatFood`, който може да бъде отделен обект със свойства, като `taste`).
 
     Cat
     --------
