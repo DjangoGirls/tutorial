@@ -89,7 +89,7 @@ NameError: name 'Post' is not defined
 <QuerySet [<User: ola>]>
 ```
 
-This is the superuser we created earlier! Let's get an instance of the user now (adjust this line to use your own username):
+Това е суперпотребителят, който създадохме по-рано! Нека сега вземем потребителя (коригирайте този ред, за да използвате вашето потребителско име):
 
 {% filename %}command-line{% endfilename %}
 
@@ -97,9 +97,9 @@ This is the superuser we created earlier! Let's get an instance of the user now 
 >>> me = User.objects.get(username='ola')
 ```
 
-As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat!
+Както можете да видите, сега `get` a `User` с `username`, което се равнява на „ola“. Яко!
 
-Now we can finally create our post:
+Сега най-накрая можем да създадем нашия пост:
 
 {% filename %}command-line{% endfilename %}
 
@@ -108,7 +108,7 @@ Now we can finally create our post:
 <Post: Sample title>
 ```
 
-Hurray! Wanna check if it worked?
+Ура! Искате ли да проверите дали работи?
 
 {% filename %}command-line{% endfilename %}
 
@@ -117,15 +117,15 @@ Hurray! Wanna check if it worked?
 <QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
 ```
 
-There it is, one more post in the list!
+Ето го още една публикация в списъка!
 
-### Add more posts
+### Добавете още публикации
 
-You can now have a little fun and add more posts to see how it works. Add two or three more and then go ahead to the next part.
+Вече можете да се забавлявате малко и да добавяте още публикации, за да видите как работи. Добавете още две или три и след това преминете към следващата част.
 
-### Filter objects
+### Филтрирайте обекти
 
-A big part of QuerySets is the ability to filter them. Let's say we want to find all posts that user ola authored. We will use `filter` instead of `all` in `Post.objects.all()`. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Now our piece of code looks like this:
+Голяма част от QuerySets е възможността да ги филтрирате. Да речем, че искаме да намерим всички публикации, на които потребителят ola е автор. Ще използваме `filter` вместо `all` в `Post.objects.all()`. В скобите посочваме на кое условие(я) трябва да отговаря блог публикацията, за да се озове в нашия набор от заявки. В нашия случай условието е `author/0> да бъде равен на <code>me`. Начинът да го напишем в Django е `author=me`. Сега нашата част от кода изглежда така:
 
 {% filename %}command-line{% endfilename %}
 
@@ -134,7 +134,7 @@ A big part of QuerySets is the ability to filter them. Let's say we want to find
 <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
-Or maybe we want to see all the posts that contain the word 'title' in the `title` field?
+Или може би искаме да видим всички публикации, които съдържат думата 'title' в полето `title`?
 
 {% filename %}command-line{% endfilename %}
 
@@ -143,9 +143,9 @@ Or maybe we want to see all the posts that contain the word 'title' in the `titl
 <QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
 ```
 
-> **Note** There are two underscore characters (`_`) between `title` and `contains`. Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
+> **Забележка** Има два знака за подчертаване (`_`) между `title` и `contains`. ORM на Django използва това правило за разделяне на имена на полета ("title") и операции или филтри ("contains"). Ако използвате само една долна черта, ще получите грешка като "FieldError: Не може да разреши ключовата дума title_contains".
 
-You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
+Можете също така да получите списък с всички публикувани публикации. Правим това, като филтрираме всички публикации, които имат `published_date` са зададени в миналото:
 
 {% filename %}command-line{% endfilename %}
 
@@ -155,7 +155,7 @@ You can also get a list of all published posts. We do this by filtering all the 
 <QuerySet []>
 ```
 
-Unfortunately, the post we added from the Python console is not published yet. But we can change that! First get an instance of a post we want to publish:
+За съжаление, публикацията, която добавихме от конзолата Python, все още не е публикувана. Но можем да променим това! Първо получете екземпляр от публикация, която искаме да публикуваме:
 
 {% filename %}command-line{% endfilename %}
 
@@ -163,7 +163,7 @@ Unfortunately, the post we added from the Python console is not published yet. B
 >>> post = Post.objects.get(title="Sample title")
 ```
 
-And then publish it with our `publish` method:
+И след това го публикувате с нашия метод `publish`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -171,7 +171,7 @@ And then publish it with our `publish` method:
 >>> post.publish()
 ```
 
-Now try to get list of published posts again (press the up arrow key three times and hit `enter`):
+Сега опитайте отново да получите списък с публикувани публикации (натиснете клавиша със стрелка нагоре три пъти и натиснете `enter`):
 
 {% filename %}command-line{% endfilename %}
 
@@ -180,9 +180,9 @@ Now try to get list of published posts again (press the up arrow key three times
 <QuerySet [<Post: Sample title>]>
 ```
 
-### Ordering objects
+### Подреждане на обекти
 
-QuerySets also allow you to order the list of objects. Let's try to order them by `created_date` field:
+QuerySets също ви позволяват да поръчате списъка с обекти. Нека се опитаме да ги поръчаме от полето `created_date`:
 
 {% filename %}command-line{% endfilename %}
 
