@@ -168,13 +168,13 @@ class Post(models.Model):
 
 Методите често `връщат` нещо. Има пример за това в метода `__str__`. В този сценарий, когато извикаме `__str __ ()`, ще получим текст (**string**) със заглавие на публикацията.
 
-Also notice that both `def publish(self):` and `def __str__(self):` are indented inside our class. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
+Също така забележете, че и двете `def publish(self):` и `def __str__(self):` са отредени в нашия клас. Тъй като Python е чувствителен към бялото пространство, трябва да отстъпим методите си вътре в класа. В противен случай методите няма да принадлежат към класа и можете да получите някакво неочаквано поведение.
 
-If something is still not clear about models, feel free to ask your coach! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
+Ако нещо все още не е ясно за моделите, не се колебайте да попитате своя треньор! Знаем, че е сложно, особено когато научиш какви обекти и функции са едновременно. Но да се надяваме, че сега изглежда малко по-малко вълшебно за вас!
 
-### Create tables for models in your database
+### Създайте таблици за модели във вашата база данни
 
-The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
+Последната стъпка тук е да добавим нашия нов модел към нашата база данни. Първо трябва да накараме Джанго да разбере, че имаме някои промени в нашия модел. (Току-що го създадохме!) Отидете до прозореца на вашата конзола и напишете `python manage.py makemigrations blog`. Ще изглежда така:
 
 {% filename %}command-line{% endfilename %}
 
@@ -185,9 +185,9 @@ The last step here is to add our new model to our database. First we have to mak
       - Create model Post
     
 
-**Note:** Remember to save the files you edit. Otherwise, your computer will execute the previous version which might give you unexpected error messages.
+**Забележка:** Не забравяйте да запазите файловете, които редактирате. В противен случай компютърът ви ще изпълни предишната версия, която може да ви даде неочаквани съобщения за грешка.
 
-Django prepared a migration file for us that we now have to apply to our database. Type `python manage.py migrate blog` and the output should be as follows:
+Django подготви миграционен файл за нас, който сега трябва да приложим към нашата база данни. Въведете `python manage.py migrate blog` и изходът трябва да бъде както следва:
 
 {% filename %}command-line{% endfilename %}
 
@@ -198,4 +198,4 @@ Django prepared a migration file for us that we now have to apply to our databas
       Applying blog.0001_initial... OK
     
 
-Hurray! Our Post model is now in our database! It would be nice to see it, right? Jump to the next chapter to see what your Post looks like!
+Ура! Моделът ни на публикация вече е в нашата база данни! Би било хубаво да го видите, нали? Преминете към следващата глава, за да видите как изглежда вашата публикация!
