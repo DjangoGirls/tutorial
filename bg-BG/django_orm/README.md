@@ -191,7 +191,7 @@ QuerySets също ви позволяват да поръчате списък�
 <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
-We can also reverse the ordering by adding `-` at the beginning:
+Можем също да обърнем подреждането, като добавим `-` в началото:
 
 {% filename %}command-line{% endfilename %}
 
@@ -200,9 +200,9 @@ We can also reverse the ordering by adding `-` at the beginning:
 <QuerySet [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]>
 ```
 
-### Complex queries through method-chaining
+### Сложни заявки чрез свързване на методи
 
-As you saw, some methods on `Post.objects` return a QuerySet. The same methods can in turn also be called on a QuerySet, and will then return a new QuerySet. Thus, you can combine their effect by **chaining** them together:
+Както видяхте, някои методи на `Post.objects` връщат QuerySet. The same methods can in turn also be called on a QuerySet, and will then return a new QuerySet. Thus, you can combine their effect by **chaining** them together:
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
