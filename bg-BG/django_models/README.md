@@ -145,28 +145,28 @@ class Post(models.Model):
 
 > Проверете двукратно дали използвате два знака за подчертаване (`_`) от всяка страна на `str`. Тази конвенция се използва често в Python и понякога ги наричаме и „dunder“ (съкратено от „двойно-подчертаване“, "double-underscore").
 
-It looks scary, right? But don't worry – we will explain what these lines mean!
+Изглежда страшно, нали? Но не се притеснявайте - ще ви обясним какво означават тези редове!
 
-All lines starting with `from` or `import` are lines that add some bits from other files. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
+Всички редове, започващи с `from` или `import`, са редове, които добавят някои битове от други файлове. Така че вместо да копираме и поставяме едни и същи неща във всеки файл, можем да включим някои части с `from  ... import ...`.
 
-`class Post(models.Model):` – this line defines our model (it is an `object`).
+`class Post (models.Model):` - този ред дефинира нашия модел (това е `object`).
 
-- `class` is a special keyword that indicates that we are defining an object.
-- `Post` is the name of our model. We can give it a different name (but we must avoid special characters and whitespace). Always start a class name with an uppercase letter.
-- `models.Model` means that the Post is a Django Model, so Django knows that it should be saved in the database.
+- `class` е специална ключова дума, която показва, че дефинираме обект.
+- `Post` е името на нашия модел. Можем да му дадем различно име (но трябва да избягваме специални символи и бяло пространство). Винаги започвайте име на клас с главна буква.
+- `models.Model` означава, че публикацията е модел на Django, така че Django знае, че трябва да бъде записана в базата данни.
 
-Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
+Сега дефинираме свойствата, за които говорихме: `title`, `text`, `created_date`, `published_date` и `author`. За целта трябва да определим типа на всяко поле (текст ли е? Число? Дата? Отношение към друг обект, като User?)
 
-- `models.CharField` – this is how you define text with a limited number of characters.
-- `models.TextField` – this is for long text without a limit. Sounds ideal for blog post content, right?
-- `models.DateTimeField` – this is a date and time.
-- `models.ForeignKey` – this is a link to another model.
+- `models.CharField` -- по този начин определяте текст с ограничен брой знаци.
+- `models.TextField` -- това е за дълъг текст без ограничение. Звучи идеално за съдържание в блог, нали?
+- `models.DateTimeField` -- това е дата и час.
+- `models.ForeignKey` -- това е връзка към друг модел.
 
-We will not explain every bit of code here since it would take too much time. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.2/ref/models/fields/#field-types).
+Тук няма да обясняваме всеки бит код, тъй като това ще отнеме твърде много време. Трябва да разгледате документацията на Django, ако искате да знаете повече за моделните полета и как да дефинирате неща, различни от описаните по-горе (https://docs.djangoproject.com/en/2.2/ref/models/fields/#field -types).
 
-What about `def publish(self):`? This is exactly the `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method if you want. The naming rule is that we use lowercase and underscores instead of spaces. For example, a method that calculates average price could be called `calculate_average_price`.
+Какво ще кажете за `def publish(self):`? Това е точно методът `publish`, за който говорихме преди. `def` означава, че това е функция/метод и `publish` е името на метода. Можете да промените името на метода, ако искате. Правилото за именуване е, че използваме малки и малки символи вместо интервали. Например метод, който изчислява средна цена, може да се нарече `calculate_average_price`.
 
-Methods often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
+Методите често `връщат` нещо. Има пример за това в метода `__str__`. В този сценарий, когато извикаме `__str __ ()`, ще получим текст (**string**) със заглавие на публикацията.
 
 Also notice that both `def publish(self):` and `def __str__(self):` are indented inside our class. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
 
