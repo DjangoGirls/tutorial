@@ -28,13 +28,13 @@
     taste
     
 
-So basically the idea is to describe real things in code with properties (called `object properties`) and actions (called `methods`).
+Така че в общи линии идеята е да се опишат реални неща в код със свойства (наречени `свойства на обекта`) и действия (наречени `методи`).
 
-How will we model blog posts then? We want to build a blog, right?
+Как ще моделираме публикации в блогове тогава? Искаме да изградим блог, нали?
 
-We need to answer the question: What is a blog post? What properties should it have?
+Трябва да отговорим на въпроса: Какво е публикация в блога? Какви свойства трябва да има?
 
-Well, for sure our blog post needs some text with its content and a title, right? It would be also nice to know who wrote it – so we need an author. Finally, we want to know when the post was created and published.
+Е, със сигурност нашата публикация в блога се нуждае от текст с нейното съдържание и заглавие, нали? Също така би било хубаво да знаем кой го е написал - така че се нуждаем от автор. И накрая, искаме да знаем кога публикацията е създадена и публикувана.
 
     Post
     --------
@@ -45,25 +45,25 @@ Well, for sure our blog post needs some text with its content and a title, right
     published_date
     
 
-What kind of things could be done with a blog post? It would be nice to have some `method` that publishes the post, right?
+Какви неща могат да се направят с публикация в блог? Би било хубаво да има някакъв `метод`, който публикува публикацията, нали?
 
-So we will need a `publish` method.
+Така че ще се нуждаем от метод `publish`.
 
-Since we already know what we want to achieve, let's start modeling it in Django!
+Тъй като вече знаем какво искаме да постигнем, нека започнем да го моделираме в Django!
 
-## Django model
+## Модел на Джанго
 
-Knowing what an object is, we can create a Django model for our blog post.
+Знаейки какво е обект, можем да създадем модел на Django за нашата публикация в блога.
 
-A model in Django is a special kind of object – it is saved in the `database`. A database is a collection of data. This is a place in which you will store information about users, your blog posts, etc. We will be using a SQLite database to store our data. This is the default Django database adapter – it'll be enough for us right now.
+Моделът в Django е специален вид обект - той се записва в `database`. База данни е съвкупност от данни. Това е място, на което ще съхранявате информация за потребители, публикации в блога си и т.н. Ще използваме база данни SQLite, за да съхраняваме нашите данни. Това е адаптерът за база данни Django по подразбиране - това ще ни бъде достатъчно в момента.
 
-You can think of a model in the database as a spreadsheet with columns (fields) and rows (data).
+Можете да мислите за модел в базата данни като електронна таблица с колони (полета) и редове (данни).
 
-### Creating an application
+### Създаване на приложение
 
-To keep everything tidy, we will create a separate application inside our project. It is very nice to have everything organized from the very beginning. To create an application we need to run the following command in the console (from `djangogirls` directory where `manage.py` file is):
+За да поддържаме всичко подредено, ние ще създадем отделно приложение вътре в нашия проект. Много е хубаво да се организира всичко от самото начало. За да създадем приложение, трябва да стартираме следната команда в конзолата (от директорията `djangogirls`, където е файлът `management.py`):
 
-{% filename %}Mac OS X and Linux:{% endfilename %}
+{% filename %}Mac OS X и Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py startapp blog
     
@@ -73,32 +73,32 @@ To keep everything tidy, we will create a separate application inside our projec
     (myvenv) C:\Users\Name\djangogirls> python manage.py startapp blog
     
 
-You will notice that a new `blog` directory is created and it contains a number of files now. The directories and files in our project should look like this:
+Ще забележите, че се създава нова директория `blog` и сега съдържа редица файлове. Директориите и файловете в нашия проект трябва да изглеждат така:
 
     djangogirls
     ├── blog
-    │   ├── admin.py
-    │   ├── apps.py
-    │   ├── __init__.py
-    │   ├── migrations
-    │   │   └── __init__.py
-    │   ├── models.py
-    │   ├── tests.py
-    │   └── views.py
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── __init__.py
+    │   ├── migrations
+    │   │   └── __init__.py
+    │   ├── models.py
+    │   ├── tests.py
+    │   └── views.py
     ├── db.sqlite3
     ├── manage.py
     ├── mysite
-    │   ├── __init__.py
-    │   ├── settings.py
-    │   ├── urls.py
-    │   └── wsgi.py
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
     ├── myvenv
-    │   └── ...
+    │   └── ...
     └── requirements.txt
     
     
 
-After creating an application, we also need to tell Django that it should use it. We do that in the file `mysite/settings.py` -- open it in your code editor. We need to find `INSTALLED_APPS` and add a line containing `'blog.apps.BlogConfig',` just above `]`. So the final product should look like this:
+След създаването на приложение също трябва да кажем на Django, че трябва да го използва. Правим това във файла `mysite/settings.py` -- отваряме го във вашия редактор на кодове. Трябва да намерим `INSTALLED_APPS` и да добавим ред, съдържащ `'blog.apps.BlogConfig',` малко над `]`. Така че крайният продукт трябва да изглежда така:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -114,11 +114,11 @@ INSTALLED_APPS = [
 ]
 ```
 
-### Creating a blog post model
+### Създаване на модел на блог публикация
 
-In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
+Във файла `blog/models.py` дефинираме всички обекти, наречени `Models` - това е място, на което ще дефинираме нашата публикация в блога.
 
-Let's open `blog/models.py` in the code editor, remove everything from it, and write code like this:
+Нека да отворим `blog/models.py` в редактора на кода, да премахнем всичко от него и да напишем код така:
 
 {% filename %}blog/models.py{% endfilename %}
 
@@ -143,7 +143,7 @@ class Post(models.Model):
         return self.title
 ```
 
-> Double-check that you use two underscore characters (`_`) on each side of `str`. This convention is used frequently in Python and sometimes we also call them "dunder" (short for "double-underscore").
+> Проверете двукратно дали използвате два знака за подчертаване (`_`) от всяка страна на `str`. Тази конвенция се използва често в Python и понякога ги наричаме и „dunder“ (съкратено от „двойно-подчертаване“, "double-underscore").
 
 It looks scary, right? But don't worry – we will explain what these lines mean!
 
