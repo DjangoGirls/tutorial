@@ -1,23 +1,23 @@
-# Django ORM and QuerySets
+# Django ORM и QuerySets
 
-In this chapter you'll learn how Django connects to the database and stores data in it. Let's dive in!
+В тази глава ще научите как Django се свързва с базата данни и съхранява данни в нея. Нека се потопим!
 
-## What is a QuerySet?
+## Какво е QuerySet?
 
-A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow you to read the data from the database, filter it and order it.
+QuerySet е по същество списък на обекти на даден Модел. QuerySets ви позволяват да четете данните от базата данни, да ги филтрирате и да ги подредите..
 
-It's easiest to learn by example. Let's try this, shall we?
+Най-лесно е да се учи чрез пример. Нека опитаме това, нали?
 
 ## Django shell
 
-Open up your local console (not on PythonAnywhere) and type this command:
+Отворете вашата локална конзола (не на PythonAnywhere) и въведете тази команда:
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py shell
     
 
-The effect should be like this:
+Ефектът трябва да бъде такъв:
 
 {% filename %}command-line{% endfilename %}
 
@@ -26,11 +26,11 @@ The effect should be like this:
 >>>
 ```
 
-You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too.
+Вече сте в интерактивната конзола на Django. Това е точно като подкана Python, но с допълнителна магия на Django. :) Тук можете да използвате всички Python команди.
 
-### All objects
+### Всички обекти
 
-Let's try to display all of our posts first. You can do that with the following command:
+Нека се опитаме първо да покажем всички наши публикации. Можете да направите това със следната команда:
 
 {% filename %}command-line{% endfilename %}
 
@@ -41,7 +41,7 @@ Traceback (most recent call last):
 NameError: name 'Post' is not defined
 ```
 
-Oops! An error showed up. It tells us that there is no Post. It's correct – we forgot to import it first!
+Ами сега! Появи се грешка. Това ни казва, че няма Post. Правилно е - забравихме да го внесем първо!
 
 {% filename %}command-line{% endfilename %}
 
@@ -49,7 +49,7 @@ Oops! An error showed up. It tells us that there is no Post. It's correct – we
 >>> from blog.models import Post
 ```
 
-We import the model `Post` from `blog.models`. Let's try displaying all posts again:
+Импортираме модела `Post` от `blog.models`. Нека опитаме отново да покажем всички публикации:
 
 {% filename %}command-line{% endfilename %}
 
@@ -58,11 +58,11 @@ We import the model `Post` from `blog.models`. Let's try displaying all posts ag
 <QuerySet [<Post: my post title>, <Post: another post title>]>
 ```
 
-This is a list of the posts we created earlier! We created these posts using the Django admin interface. But now we want to create new posts using Python, so how do we do that?
+Това е списък на публикациите, които създадохме по-рано! Създадохме тези публикации чрез администраторския интерфейс на Django. Но сега искаме да създаваме нови публикации с помощта на Python, така че как да направим това?
 
-### Create object
+### Създаване на обект
 
-This is how you create a new Post object in database:
+Ето как създавате нов обект Post в базата данни:
 
 {% filename %}command-line{% endfilename %}
 
@@ -70,9 +70,9 @@ This is how you create a new Post object in database:
 >>> Post.objects.create(author=me, title='Sample title', text='Test')
 ```
 
-But we have one missing ingredient here: `me`. We need to pass an instance of `User` model as an author. How do we do that?
+Но тук имаме една липсваща съставка: `me`. Трябва да предадем инстанция на модел `User` като автор. Как да направим това?
 
-Let's import User model first:
+Нека първо да импортираме модел User:
 
 {% filename %}command-line{% endfilename %}
 
@@ -80,7 +80,7 @@ Let's import User model first:
 >>> from django.contrib.auth.models import User
 ```
 
-What users do we have in our database? Try this:
+Какви потребители имаме в нашата база данни? Опитайте това:
 
 {% filename %}command-line{% endfilename %}
 
