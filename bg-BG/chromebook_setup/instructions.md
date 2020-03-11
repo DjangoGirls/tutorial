@@ -1,8 +1,8 @@
-Можеш да [пропуснеш този раздел](http://tutorial.djangogirls.org/en/installation/#install-python), ако не използваш Chromebook. If you are, your installation experience will be a little different. You can ignore the rest of the installation instructions.
+Можеш да [пропуснеш този раздел](http://tutorial.djangogirls.org/en/installation/#install-python), ако не използваш Chromebook. Ако сте, опитът ви в инсталацията ще бъде малко по-различен. Можете да игнорирате останалата част от инструкциите за инсталиране.
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud IDE е инструмент който ти дава редактор на код и достъп до компютър, работещ по Интернет, където ти можеш да инсталираш, пишеш и пускаш софтуер. За продължителността на ръководството, cloud IDE ще ти служи като твоя *локална машина*. Все пак ще пишеш команди в терминал, също като твоите съученици на OS X, Ubuntu или Windows, но той ще бъде свързан с компютър, работещ някъде другаде, който cloud IDE прави за теб. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
+Cloud IDE е инструмент който ти дава редактор на код и достъп до компютър, работещ по Интернет, където ти можеш да инсталираш, пишеш и пускаш софтуер. За продължителността на ръководството, cloud IDE ще ти служи като твоя *локална машина*. Все пак ще пишеш команди в терминал, също като твоите съученици на OS X, Ubuntu или Windows, но той ще бъде свързан с компютър, работещ някъде другаде, който cloud IDE прави за теб. Ето инструкциите за облачни IDE (PaizaCloud Cloud IDE, AWS Cloud9). Можете да изберете една от облачните IDE и следвайте инструкциите на облачната IDE.
 
 #### PaizaCloud Cloud IDE
 
@@ -34,18 +34,18 @@ Cloud IDE е инструмент който ти дава редактор на
 8. Натисни *Next step*
 9. Натисни *Create environment*
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+Сега трябва да видите интерфейс със странична лента, голям основен прозорец с малко текст и малък прозорец в долната част, който изглежда като нещо подобно:
 
 {% filename %}bash{% endfilename %}
 
     yourusername:~/workspace $
     
 
-This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+Тази долна зона е вашият терминал. Можете да използвате терминала за изпращане на инструкции до отдалечения компютър Cloud 9. Можете да промените размера на прозореца, за да го направите малко по-голям.
 
 ### Виртуална среда
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Виртуална среда (наричана още virtualenv) е като частна кутия, в която можем да запълним полезен компютърен код за проект, над който работим. Ние ги използваме, за да държим различните битове код, които искаме за различните ни проекти, разделени, така че нещата да не се смесват между проектите.
 
 Пусни:
 
@@ -58,7 +58,7 @@ A virtual environment (also called a virtualenv) is like a private box we can st
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: `~=`).
+(имайте предвид, че на последния ред използваме тилд, последван от знак за равенство: `~=`).
 
 ### GitHub
 
