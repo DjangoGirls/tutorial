@@ -16,32 +16,32 @@
 
 Нарисувахме ви снимка! Изглежда така:
 
-![Figure 1.1](images/internet_1.png)
+![Фигура 1.1](images/internet_1.png)
 
-Прилича на каша, нали? Всъщност това е мрежа от свързани машини (гореспоменатите *сървъри*). Стотици хиляди машини! Много, много километри кабели по света! Можете да посетите уебсайта на Submarine Cable Map (http://submarinecablemap.com), за да видите колко сложна е мрежата. Here is a screenshot from the website:
+Прилича на каша, нали? Всъщност това е мрежа от свързани машини (гореспоменатите *сървъри*). Стотици хиляди машини! Много, много километри кабели по света! Можете да посетите уебсайта на Submarine Cable Map (http://submarinecablemap.com), за да видите колко сложна е мрежата. Ето екранна снимка от уебсайта:
 
-![Figure 1.2](images/internet_3.png)
+![Фигура 1.2](images/internet_3.png)
 
-It is fascinating, isn't it? But it is not possible to have a wire between every machine connected to the Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
+Очарователно е, нали? Но не е възможно да има жица между всяка машина, свързана към Интернет. И така, за да достигнем машина (например тази, на която е записан https://djangogirls.org), трябва да предадем заявка през много, много различни машини.
 
-It looks like this:
+Изглежда така:
 
-![Figure 1.3](images/internet_2.png)
+![Фигура 1.3](images/internet_2.png)
 
-Imagine that when you type https://djangogirls.org, you send a letter that says: "Dear Django Girls, I want to see the djangogirls.org website. Send it to me, please!"
+Представете си, че когато въвеждате https://djangogirls.org, изпращате писмо, което гласи: "Скъпи момичета на Django, искам да видя уебсайта djangogirls.org. Изпратете ми го, моля!"
 
-Your letter goes to the post office closest to you. Then it goes to another that is a bit nearer to your addressee, then to another, and another until it is delivered at its destination. The only unique thing is that if you send many letters (*data packets*) to the same place, they could go through totally different post offices (*routers*). This depends on how they are distributed at each office.
+Вашето писмо отива до най-близката до вас поща. След това преминава към друга, който е малко по-близо до вашия адресат, след това към друга и друга, докато не бъде доставено до местоназначението си. Единственото уникално нещо е, че ако изпратите много писма (*пакети данни*) на едно и също място, те могат да преминат през напълно различни пощенски станции (*рутери*). Това зависи от начина, по който се разпределят във всеки офис.
 
-![Figure 1.4](images/internet_4.png)
+![Фигура 1.4](images/internet_4.png)
 
-That's how it works - you send messages and you expect some response. Instead of paper and pen you use bytes of data, but the idea is the same!
+Така става - изпращате съобщения и очаквате някакъв отговор. Вместо хартия и химикалка използвате байтове с данни, но идеята е същата!
 
-Instead of addresses with a street name, city, zip code and country name, we use IP addresses. Your computer first asks the DNS (Domain Name System) to translate djangogirls.org into an IP address. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
+Вместо адреси с име на улица, град, пощенски код и име на държавата, използваме IP адреси. Вашият компютър първо пита DNS (система за имена на домейни) да преведе djangogirls.org в IP адрес. Тя работи малко като старомодни телефонни книжки, където можете да потърсите името на човека, с когото искате да се свържете, и да намерите техния телефонен номер и адрес.
 
-When you send a letter, it needs to have certain features to be delivered correctly: an address, a stamp, etc. You also use a language that the receiver understands, right? The same applies to the *data packets* you send to see a website. We use a protocol called HTTP (Hypertext Transfer Protocol).
+Когато изпращате писмо, то трябва да има определени функции, за да бъде доставено правилно: адрес, печат и т.н. Използвате и език, който приемникът разбира, нали? Същото се отнася и за *пакетите данни*, които изпращате, за да видите уебсайт. Ние използваме протокол, наречен HTTP (Hypertext Transfer Protocol).
 
-So, basically, when you have a website, you need to have a *server* (machine) where it lives. When the *server* receives an incoming *request* (in a letter), it sends back your website (in another letter).
+Така че, когато имате уебсайт, трябва да имате *сървър* (машина), където живее. Когато *сървърът* получи входяща *заявка* (с писмо), той изпраща обратно вашия уебсайт (с друго писмо).
 
-Since this is a Django tutorial, you might ask what Django does. When you send a response, you don't always want to send the same thing to everybody. It is so much better if your letters are personalized, especially for the person that has just written to you, right? Django helps you with creating these personalized, interesting letters. :)
+Тъй като това е урок за Django, може да попитате какво прави Django. Когато изпращате отговор, не винаги искате да изпращате едно и също нещо на всички. Много по-добре е, ако вашите писма са персонализирани, особено за човека, който току-що ви е писал, нали? Django ви помага при създаването на тези персонализирани, интересни писма. :)
 
-Enough talk – time to create!
+Достатъчно беседа - време за създаване!
