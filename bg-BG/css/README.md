@@ -37,23 +37,23 @@ Bootstrap е една от най-популярните фреймуорки з
 
 ### Къде да сложа статични файлове за Django
 
-Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
+Django вече знае къде да намери статичните файлове за вграденото приложение "admin". Сега трябва да добавим статични файлове за нашето собствено приложение, `blog`.
 
-We do that by creating a folder called `static` inside the blog app:
+Правим това, като създаваме папка, наречена `static` в блог приложението:
 
     djangogirls
     ├── blog
     │   ├── migrations
     │   ├── static
-    │   └── templates
+    │   └── templates
     └── mysite
     
 
-Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
+Django автоматично ще открива всички папки, наречени 'static', в която и да е от папките на вашите приложения. Тогава той ще може да използва тяхното съдържание като статични файлове.
 
-## Your first CSS file!
+## Вашият първи CSS файл!
 
-Let's create a CSS file now, to add your own style to your web page. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
+Нека сега създадем CSS файл, за да добавим свой собствен стил към вашата уеб страница. Създайте нова директория, наречена `css` във вашата `static` директория. След това създайте нов файл, наречен `blog.css` вътре в тази директория `css`. Готови?
 
     djangogirls
     └─── blog
@@ -62,13 +62,13 @@ Let's create a CSS file now, to add your own style to your web page. Create a ne
                    └─── blog.css
     
 
-Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code editor.
+Време е да напишете малко CSS! Отворете файла `blog/static/css/blog.css` във вашия редактор на код.
 
-We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
+Тук няма да навлизаме твърде дълбоко в персонализирането и научаването на CSS. Има препоръка за безплатен CSS курс в края на тази страница, ако искате да научите повече.
 
-But let's do at least a little. Maybe we could change the color of our headers? To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
+Но нека направим поне малко. Може би бихме могли да променим цвета на заглавките си? За да разберат цветовете, компютрите използват специални кодове. Тези кодове започват с `#`, последвани от 6 букви (A–F) и цифри (0–9). Например кодът за синьо е `#0000FF`. Можете да намерите цветовите кодове за много цветове тук: http://www.colorpicker.com/. Можете също така да използвате [предварително определени цветове](http://www.w3schools.com/colors/colors_names.asp), като `червено` и `зелено`.
 
-In your `blog/static/css/blog.css` file you should add the following code:
+Във вашия `blog/static/css/blog.css` файл трябва да добавите следния код:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -79,9 +79,9 @@ h1 a, h2 a {
 
 ```
 
-`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
+`h1 a` е CSS селектор. Това означава, че прилагаме стиловете си към всеки `a` елемент вътре в елемент `h1`; селекторът `h2 a` прави същото за елементи `h2`. Така че, когато имаме нещо като `<h1><a href="">връзка</a></h1>`, ще се прилага стилът `h1 a`. В този случай ние му казваме да промени цвета си на `#C25100`, което е тъмно оранжево. Или можете да поставите свой собствен цвят тук, но се уверете, че той има добър контраст на бял фон!
 
-In a CSS file we determine styles for elements in the HTML file. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+Във CSS файл определяме стилове за елементи в HTML файла. Първият начин да идентифицираме елементите е с името на елемента. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
