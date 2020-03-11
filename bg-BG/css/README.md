@@ -81,15 +81,15 @@ h1 a, h2 a {
 
 `h1 a` е CSS селектор. Това означава, че прилагаме стиловете си към всеки `a` елемент вътре в елемент `h1`; селекторът `h2 a` прави същото за елементи `h2`. Така че, когато имаме нещо като `<h1><a href="">връзка</a></h1>`, ще се прилага стилът `h1 a`. В този случай ние му казваме да промени цвета си на `#C25100`, което е тъмно оранжево. Или можете да поставите свой собствен цвят тук, но се уверете, че той има добър контраст на бял фон!
 
-Във CSS файл определяме стилове за елементи в HTML файла. Първият начин да идентифицираме елементите е с името на елемента. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+Във CSS файл определяме стилове за елементи в HTML файла. Първият начин да идентифицираме елементите е с името на елемента. Може да ги запомните като тагове от секцията HTML. Неща като `a`, `h1` и `body` са примери за имена на елементи. Ние също така идентифицираме елементи по атрибут `class` или атрибут `id`. Class и id са имена, които сами давате елемента. Класовете определят групи от елементи, а идентификаторите сочат конкретни елементи. Например, можете да идентифицирате следния маркер, като използвате името на тага `a`, класа `external_link` или id `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
 ```
 
-You can read more about [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
+Можете да прочетете повече за [CSS селектори в w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
-We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file in the code editor and add this line at the very beginning of it:
+Трябва също така да кажем на нашия HTML шаблон, че добавихме някои CSS. Отворете файла `blog/templates/blog/post_list.html` в редактора на кода и добавете този ред в самото начало на него:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -97,7 +97,7 @@ We also need to tell our HTML template that we added some CSS. Open the `blog/te
 {% load static %}
 ```
 
-We're just loading static files here. :) Between the `<head>` and `</head>` tags, after the links to the Bootstrap CSS files, add this line:
+Тук просто зареждаме статични файлове. :) Между таговете `<head>` и `</head>`, след връзките към CSS файловете на Bootstrap, добавете този ред:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -105,9 +105,9 @@ We're just loading static files here. :) Between the `<head>` and `</head>` tags
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may be overriden by code in Bootstrap files. We just told our template where our CSS file is located.
+Браузърът чете файловете в реда, в който са зададени, така че трябва да се уверим, че това е на правилното място. В противен случай кодът във нашия файл може да бъде редактиран от кода в Bootstrap файлове. Току-що казахме на нашия шаблон къде се намира нашият CSS файл.
 
-Your file should now look like this:
+Вашият файл сега трябва да изглежда така:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -136,11 +136,11 @@ Your file should now look like this:
 </html>
 ```
 
-OK, save the file and refresh the site!
+ОК, запазете файла и актуализирайте сайта!
 
 ![Figure 14.2](images/color2.png)
 
-Nice work! Maybe we would also like to give our website a little air and increase the margin on the left side? Let's try this!
+Добра работа! Може би също бихме искали да дадем на нашия уебсайт малко въздух и да увеличим полето от лявата страна? Нека опитаме това!
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -150,11 +150,11 @@ body {
 }
 ```
 
-Add that to your CSS, save the file and see how it works!
+Добавете това към вашия CSS, запишете файла и вижте как работи!
 
 ![Figure 14.3](images/margin2.png)
 
-Maybe we can customize the font in our header? Paste this into your `<head>` in `blog/templates/blog/post_list.html` file:
+Може би можем да персонализираме шрифта в заглавката ни? Поставете това във вашия `<head>` във `blog/templates/blog/post_list.html` файл:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -162,9 +162,9 @@ Maybe we can customize the font in our header? Paste this into your `<head>` in 
 <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
-As before, check the order and place before the link to `blog/static/css/blog.css`. This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
+Както и преди, проверете поръчката и поставете преди връзката към `blog/static/css/blog.css`. Този ред ще импортира шрифт, наречен *Lobster* от Google Fonts (https://www.google.com/fonts).
 
-Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file `blog/static/css/blog.css`. Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
+Намерете блока за деклариране `h1 a` (кодът между скобите `{` и `}`) в CSS файла `blog/static/css/blog.css`. Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
