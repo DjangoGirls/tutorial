@@ -18,7 +18,7 @@ Django е написан на Python. Имаме нужда от Python, за д
 
 Едно нещо, за което трябва да внимавате: По време на инсталацията ще забележите прозорец с надпис „Настройка“. Уверете се, че поставете отметка в квадратчето „Добавяне на Python 3.6 към PATH“ или „Добавяне на Python към променливите на вашата среда“ и кликнете върху „Инсталиране сега“, както е показано тук (може да изглежда малко по-различно, ако инсталирате друга версия):
 
-![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
+![Не забравяйте да добавите Python към Path](../python_installation/images/python-installation-options.png)
 
 Когато инсталацията приключи, може да видите диалогов прозорец с връзка, която можете да следвате, за да научите повече за Python или за версията, която сте инсталирали. Затворете или отменете този диалог - в този урок ще научите повече!
 
@@ -29,26 +29,26 @@ Django е написан на Python. Имаме нужда от Python, за д
 
 Ако инсталирате по-стара версия на Python, екранът за инсталиране може да изглежда малко по-различно от показаното по-горе. Уверете се, че превъртете надолу, за да видите „Добавяне на python.exe към Path“, след това щракнете върху бутона вляво и изберете „Ще бъде инсталиран на локален твърд диск“:
 
-![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
+![Добавете Python към Path, по-стари версии](../python_installation/images/add_python_to_windows_path.png)
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Забележка** Преди да инсталирате Python в OS X, трябва да се уверите, че настройките ви за Mac позволяват инсталиране на пакети, които не са от App Store. Отидете на System Preferences (това е в папката Applications), щракнете върху "Сигурност & Поверителност," и след това върху раздела "General". If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
+> **Забележка** Преди да инсталирате Python в OS X, трябва да се уверите, че настройките ви за Mac позволяват инсталиране на пакети, които не са от App Store. Отидете на System Preferences (това е в папката Applications), щракнете върху "Сигурност & Поверителност," и след това върху раздела "General". Ако вашият "Разрешаване на приложения, изтеглени от:" е зададен на "Магазин за приложения на Mac", променете го на "Магазин за приложения на Mac и идентифицирани разработчици".
 
-You need to go to the website https://www.python.org/downloads/release/python-361/ and download the Python installer:
+Трябва да отидете на уебсайта https://www.python.org/downloads/release/python-361/ и да изтеглите инсталатора на Python:
 
-* Download the *Mac OS X 64-bit/32-bit installer* file,
-* Double click *python-3.6.1-macosx10.6.pkg* to run the installer.
+* Изтеглете *Mac OS X 64-битов/32-битов инсталатор* файл,
+* Щракнете два пъти * python-3.6.1-macosx10.6.pkg *, за да стартирате инсталатора.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
+Много е вероятно вече да имате инсталиран Python извън кутията. За да проверите дали сте го инсталирали (и коя версия е), отворете конзола и въведете следната команда:
 
 {% filename %}command-line{% endfilename %}
 
@@ -56,20 +56,20 @@ It is very likely that you already have Python installed out of the box. To chec
     Python 3.6.1
     
 
-If you have a different version of Python installed, at least 3.4.0 (e.g. 3.6.0), then you don't have to upgrade. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
+Ако имате инсталирана друга версия на Python, поне 3.4.0 (например 3.6.0), тогава не е нужно да актуализирате. Ако нямате инсталиран Python или искате друга версия, първо проверете каква дистрибуция на Linux използвате със следната команда:
 
 {% filename %}command-line{% endfilename %}
 
     $ grep ^NAME= /etc/os-release
     
 
-Afterwards, depending on the result, follow one of the following installation guides below this section.
+След това, в зависимост от резултата, следвайте едно от следните ръководства за инсталиране под този раздел.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-Type this command into your console:
+Въведете тази команда в конзолата си:
 
 {% filename %}command-line{% endfilename %}
 
@@ -81,21 +81,21 @@ Type this command into your console:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Use this command in your console:
+Използвайте тази команда в конзолата си:
 
 {% filename %}command-line{% endfilename %}
 
     $ sudo dnf install python3
     
 
-If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use `yum` instead.
+Ако сте на по-стари версии на Fedora, може да получите грешка, че командата `dnf` не е намерена. В такъв случай трябва да използвате вместо `yum`.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Use this command in your console:
+Използвайте тази команда в конзолата си:
 
 {% filename %}command-line{% endfilename %}
 
@@ -104,7 +104,7 @@ Use this command in your console:
 
 <!--endsec-->
 
-Verify the installation was successful by opening a command prompt and running the `python3` command:
+Проверете дали инсталацията е била успешна, като отворите командния ред и изпълните командата `python3`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -112,10 +112,10 @@ Verify the installation was successful by opening a command prompt and running t
     Python 3.6.1
     
 
-The version shown may be different from 3.6.1 -- it should match the version you installed.
+Показаната версия може да се различава от 3.6.1 - тя трябва да съответства на инсталираната от вас версия.
 
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is 3.4.0 or higher. If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
+**ЗАБЕЛЕЖКА:** Ако сте в Windows и получите съобщение за грешка, че `python3` не е намерен, опитайте да използвате `python` (без <1 >3</code>) и проверете дали все още може да е версия на Python, която е 3.4.0 или по-нова. Ако и това не работи, можете да отворите нов команден ред и да опитате отново; това се случва, ако използвате командния ред, оставен отворен преди инсталирането на Python.
 
 * * *
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
+Ако имате някакви съмнения или ако нещо се обърка и нямате идея какво да правите по-нататък, моля, попитайте вашия треньор! Понякога нещата не вървят гладко и е по-добре да поискате помощ от някого с повече опит.
