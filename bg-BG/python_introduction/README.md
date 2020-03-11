@@ -52,13 +52,13 @@ Nice! Вижте как отговорът изскочи? Python знае ма�
 8
 ```
 
-Have fun with this for a little while and then get back here. :)
+Забавлявайте се с това за малко и след това се върнете тук. :)
 
-As you can see, Python is a great calculator. If you're wondering what else you can do…
+Както можете да видите, Python е чудесен калкулатор. Ако се чудите какво още можете да направите...
 
-## Strings
+## Низове
 
-How about your name? Type your first name in quotes like this:
+Какво ще кажете за вашето име? Въведете първото си име в кавички така:
 
 {% filename %}command-line{% endfilename %}
 
@@ -67,9 +67,9 @@ How about your name? Type your first name in quotes like this:
 'Ola'
 ```
 
-You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
+Сега създадохте първия си низ! Това е поредица от знаци, които могат да бъдат обработени от компютър. Низът винаги трябва да започва и завършва с един и същ символ. Това могат да бъдат единични (`'`) или двойни (`"`) кавички (няма разлика!) Кавичките казват на Python, че това, което е вътре в тях, е низ.
 
-Strings can be strung together. Try this:
+Струните могат да бъдат нанизани заедно. Опитайте това:
 
 {% filename %}command-line{% endfilename %}
 
@@ -78,7 +78,7 @@ Strings can be strung together. Try this:
 'Hi there Ola'
 ```
 
-You can also multiply strings with a number:
+Можете също да умножите низове с число:
 
 {% filename %}command-line{% endfilename %}
 
@@ -87,9 +87,9 @@ You can also multiply strings with a number:
 'OlaOlaOla'
 ```
 
-If you need to put an apostrophe inside your string, you have two ways to do it.
+Ако трябва да поставите апостроф във вашия низ, имате два начина да го направите.
 
-Using double quotes:
+Използвайки двойни кавички:
 
 {% filename %}command-line{% endfilename %}
 
@@ -98,7 +98,7 @@ Using double quotes:
 "Runnin' down the hill"
 ```
 
-or escaping the apostrophe with a backslash (``):
+или да избягате от апострофа с обратна черта (``):
 
 {% filename %}command-line{% endfilename %}
 
@@ -107,7 +107,7 @@ or escaping the apostrophe with a backslash (``):
 "Runnin' down the hill"
 ```
 
-Nice, huh? To see your name in uppercase letters, type:
+Хубаво, а? За да видите името си с главни букви, напишете:
 
 {% filename %}command-line{% endfilename %}
 
