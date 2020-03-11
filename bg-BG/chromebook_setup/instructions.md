@@ -66,8 +66,8 @@ Cloud IDE е инструмент който ти дава редактор на
 
 ### PythonAnywhere
 
-The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+Урокът за Django Girls включва раздел за това, което се нарича Разгръщане, което е процесът на приемане на кода, който захранва новото ви уеб приложение и го премества на обществено достъпен компютър (наречен сървър), за да могат другите хора да виждат работата ви.
 
-This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Тази част е малко странна, когато правим урока в Chromebook, тъй като вече използваме компютър, който е в Интернет (за разлика от, да речем, лаптоп). Въпреки това, все още е полезно, тъй като можем да мислим за работното пространство на Cloud 9 като място за нашата „текуща“ работа и Python Anywhere като място за показване на нашите неща, когато те станат по-пълни.
 
-Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+По този начин се регистрирайте за нов акаунт в Python Anywhere на адрес [www.pythonanywhere.com](https://www.pythonanywhere.com).
