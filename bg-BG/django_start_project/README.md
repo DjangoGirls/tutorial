@@ -70,11 +70,11 @@
 
 Нека направим някои промени в `mysite/settings.py`. Отворете файла с помощта на редактора на кода, който сте инсталирали по-рано.
 
-**Забележка**: Имайте предвид, че `settings.py` е обикновен файл, като всеки друг. Можете да го отворите от редактора на кода, като използвате действията от менюто "файл -> отвори". This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
+**Забележка**: Имайте предвид, че `settings.py` е обикновен файл, като всеки друг. Можете да го отворите от редактора на кода, като използвате действията от менюто "файл -> отвори". Това трябва да ви изведе обичайния прозорец, в който можете да се придвижите до вашия файл `settings.py` и да го изберете. Освен това можете да отворите файла, като отворите папката djangogirls на вашия работен плот и щракнете с десния бутон върху него. След това изберете редактора на кода от списъка. Изборът на редактора е важен, тъй като може да имате инсталирани други програми, които могат да отворят файла, но няма да ви позволят да го редактирате.
 
-It would be nice to have the correct time on our website. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
+Би било хубаво да имаме точното време на нашия уебсайт. Отидете в [списъка на часовите зони на Wikipedia](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) и копирайте съответната часова зона (ЧЗ) (напр. `Европа/Берлин`).
 
-In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choose your own timezone. For example:
+В `settings.py` намерете реда, който съдържа `TIME_ZONE` и го модифицирайте, за да изберете своя собствена часова зона. Например:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -82,9 +82,9 @@ In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choos
 TIME_ZONE = 'Europe/Berlin'
 ```
 
-A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `ch` for Switzerland. If English is not your native language, you can add this to change the default buttons and notifications from Django to be in your language. So you would have "Cancel" button translated into the language you defined here. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/2.2/ref/settings/#language-code).
+Езиков код се състои от езика, напр. `en` за английски или `de` за немски, и кодът на държавата, напр. `de` за Германия или `ch` за Швейцария. Ако английският не е вашият роден език, можете да добавите това, за да промените бутоните по подразбиране и известията от Django, за да бъдат на вашия език. Така че ще имате бутон „Отказ“, преведен на езика, който сте дефинирали тук. [Django идва с много подготвени преводи](https://docs.djangoproject.com/en/2.2/ref/settings/#language-code).
 
-If you want a different language, change the language code by changing the following line:
+Ако искате друг език, променете езиковия код, като промените следния ред:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -92,7 +92,7 @@ If you want a different language, change the language code by changing the follo
 LANGUAGE_CODE = 'de-ch'
 ```
 
-We'll also need to add a path for static files. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
+Ще трябва също да добавим път за статични файлове. (Ще разберем всичко за статичните файлове и CSS по-късно в урока.) Слезте до *края* на файла и точно под надписа `STATIC_URL` добавете нов, наречен `STATIC_ROOT`:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
