@@ -1,24 +1,24 @@
-# How the Internet works
+# Как работи интернет
 
-> For readers at home: this chapter is covered in the [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc) video.
+> За читателите у дома: тази глава е разгледана във видеото [Как работи интернет](https://www.youtube.com/watch?v=oM9yAA09wdc).
 > 
-> This chapter is inspired by the talk "How the Internet works" by Jessica McKellar (http://web.mit.edu/jesstess/www/).
+> Тази глава е вдъхновена от беседата "Как работи Интернет" от Джесика Маккелар (http://web.mit.edu/jesstess/www/).
 
-We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
+Обзалагаме се, че използвате интернет всеки ден. Но всъщност знаете ли какво се случва, когато въведете адрес като https://djangogirls.org в браузъра си и натиснете `enter`?
 
-The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk -- just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
+Първото нещо, което трябва да разберете е, че уебсайтът се състои от куп файлове, записани на твърд диск - точно като вашите филми, музика или снимки. Има обаче една част, която е уникална за уебсайтовете: те включват компютърен код, наречен HTML.
 
-If you're not familiar with programming, it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. Web browsers are designed to understand this code, follow its instructions, and present these files that your website is made of, exactly the way you want.
+Ако не сте запознати с програмирането, в началото може да е трудно да разберете HTML, но вашите уеб браузъри (като Chrome, Safari, Firefox и др.) го харесват. Уеб браузърите са създадени да разбират този код, да следват неговите инструкции и да представят тези файлове, от които е направен уебсайтът ви, точно по начина, по който искате.
 
-As with every file, we need to store HTML files somewhere on a hard disk. For the Internet, we use special, powerful computers called *servers*. They don't have a screen, mouse or a keyboard, because their main purpose is to store data and serve it. That's why they're called *servers* – because they *serve* you data.
+Както при всеки файл, ние трябва да съхраняваме HTML файлове някъде на твърд диск. За интернет използваме специални, мощни компютри, наречени *сървъри*. Те нямат екран, мишка или клавиатура, защото основната им цел е да съхраняват данни и да ги предоставят. Ето защо те се наричат *сървъри* - защото те *предоставят* вашите данни.
 
-OK, but you want to know how the Internet looks, right?
+Добре, но искате да знаете как изглежда интернет, нали?
 
-We drew you a picture! It looks like this:
+Нарисувахме ви снимка! Изглежда така:
 
 ![Figure 1.1](images/internet_1.png)
 
-Looks like a mess, right? In fact it is a network of connected machines (the above-mentioned *servers*). Hundreds of thousands of machines! Many, many kilometers of cables around the world! You can visit a Submarine Cable Map website (http://submarinecablemap.com) to see how complicated the net is. Here is a screenshot from the website:
+Прилича на каша, нали? Всъщност това е мрежа от свързани машини (гореспоменатите *сървъри*). Стотици хиляди машини! Много, много километри кабели по света! Можете да посетите уебсайта на Submarine Cable Map (http://submarinecablemap.com), за да видите колко сложна е мрежата. Here is a screenshot from the website:
 
 ![Figure 1.2](images/internet_3.png)
 
