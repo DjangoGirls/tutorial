@@ -202,16 +202,16 @@ QuerySets също ви позволяват да поръчате списък�
 
 ### Сложни заявки чрез свързване на методи
 
-Както видяхте, някои методи на `Post.objects` връщат QuerySet. The same methods can in turn also be called on a QuerySet, and will then return a new QuerySet. Thus, you can combine their effect by **chaining** them together:
+Както видяхте, някои методи на `Post.objects` връщат QuerySet. Същите методи от своя страна могат също да бъдат извикани на QuerySet и след това ще върнат нов QuerySet. По този начин можете да комбинирате ефекта им, като ги **свържете** заедно:
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 <QuerySet [<Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>, <Post: Sample title>]>
 ```
 
-This is really powerful and lets you write quite complex queries.
+Това е наистина мощно и ви позволява да пишете доста сложни заявки.
 
-Cool! You're now ready for the next part! To close the shell, type this:
+Готино! Вече сте готови за следващата част! За да затворите обвивката, въведете това:
 
 {% filename %}command-line{% endfilename %}
 
