@@ -101,7 +101,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
-When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated against `['localhost', '127.0.0.1', '[::1]']`. This won't match our hostname on PythonAnywhere once we deploy our application so we will change the following setting:
+Когато `DEBUG` е `True` и `ALLOWED_HOSTS` е празен, хостът е валидиран срещу `['localhost', '127.0.0.1', '[::1]']`. Това няма да съвпада с името на хоста ни в PythonAnywhere, след като разгърнем нашето приложение, така че ще променим следната настройка:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -109,15 +109,15 @@ When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated again
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 ```
 
-> **Note**: If you're using a Chromebook, add this line at the bottom of your settings.py file: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
+> **Забележка**: Ако използвате Chromebook, добавете този ред в долната част на вашия settings.py файл:    `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
-> Also add `.amazonaws.com` to the `ALLOWED_HOSTS` if you are using cloud9
+> Също така добавете `.amazonaws.com` към `ALLOWED_HOSTS`, ако използвате cloud9
 
-## Set up a database
+## Създаване на база данни
 
-There's a lot of different database software that can store data for your site. We'll use the default one, `sqlite3`.
+Има много различни софтуерни бази данни, които могат да съхраняват данни за вашия сайт. Ще използваме тази по подразбиране `sqlite3`.
 
-This is already set up in this part of your `mysite/settings.py` file:
+Това вече е настроено в тази част на вашия `mysite/settings.py` файл:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -130,7 +130,7 @@ DATABASES = {
 }
 ```
 
-To create a database for our blog, let's run the following in the console: `python manage.py migrate` (we need to be in the `djangogirls` directory that contains the `manage.py` file). If that goes well, you should see something like this:
+За да създадем база данни за нашия блог, нека пуснете следното в конзолата:`python manage.py migrate` (трябва да бъдем в директорията `djangogirls`, която съдържа `management.py` файл). Ако това върви добре, трябва да видите нещо подобно:
 
 {% filename %}command-line{% endfilename %}
 
@@ -152,56 +152,56 @@ To create a database for our blog, let's run the following in the console: `pyth
       Applying auth.0007_alter_validators_add_error_messages... OK
       Applying auth.0008_alter_user_username_max_length... OK
       Applying auth.0009_alter_user_last_name_max_length... OK
-      Applying sessions.0001_initial... OK
+      Applying sessions.0001_initial... ОК
     
 
-And we're done! Time to start the web server and see if our website is working!
+И ние сме готови! Време е да стартирате уеб сървъра и да видите дали уебсайтът ни работи!
 
-## Starting the web server
+## Стартиране на уеб сървъра
 
-You need to be in the directory that contains the `manage.py` file (the `djangogirls` directory). In the console, we can start the web server by running `python manage.py runserver`:
+Трябва да сте в директорията, която съдържа файла `manage.py` (директорията `djangogirls`). В конзолата можем да стартираме уеб сървъра, като пуснем `python manage.py runserver`:
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver
     
 
-If you are on a Chromebook, use this command instead:
+Ако сте на Chromebook, използвайте вместо това тази команда:
 
 {% filename %}Cloud 9{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
     
 
-If you are on Windows and this fails with `UnicodeDecodeError`, use this command instead:
+Ако сте в Windows и това не успее с `UnicodeDecodeError`, използвайте вместо това тази команда:
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Now you need to check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
+Сега трябва да проверите дали уебсайтът ви работи. Отворете браузъра си (Firefox, Chrome, Safari, Internet Explorer или каквото използвате) и въведете този адрес:
 
 {% filename %}browser{% endfilename %}
 
     http://127.0.0.1:8000/
     
 
-If you're using a Chromebook and Cloud9, instead click the URL in the pop-up window that should have appeared in the upper right corner of the command window where the web server is running. The URL will look something like:
+Ако използвате Chromebook и Cloud9, вместо това щракнете върху URL адреса в изскачащия прозорец, който би трябвало да се появи в горния десен ъгъл на командния прозорец, където работи уеб сървърът. URL адресът ще изглежда като:
 
 {% filename %}browser{% endfilename %}
 
     https://<a bunch of letters and numbers>.vfs.cloud9.us-west-2.amazonaws.com
     
 
-Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?
+Честито! Току-що създадохте първия си уебсайт и го стартирате с помощта на уеб сървър! Това не е ли страхотно?
 
-![Install worked!](images/install_worked.png)
+![Инсталирането работи!](images/install_worked.png)
 
-Note that a command window can only run one thing at a time, and the command window you opened earlier is running the web server. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
+Обърнете внимание, че командният прозорец може да стартира само едно по едно и командният прозорец, който отворихте по-рано, работи на уеб сървъра. Докато уеб сървърът работи и чака допълнителни входящи заявки, терминалът ще приема нов текст, но няма да изпълнява нови команди.
 
-> We reviewed how web servers work in the **How the Internet works** chapter.
+> Прегледахме как работят уеб сървърите в главата **Как работи Интернет**.
 
-To type additional commands while the web server is running, open a new terminal window and activate your virtualenv -- to review instructions on how to open a second terminal window, see [Introduction to the command line](../intro_to_command_line/README.md). To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
+За да въведете допълнителни команди, докато уеб сървърът работи, отворете нов прозорец на терминала и активирайте своя virtualenv - за да прегледате инструкциите как да отворите втори прозорец на терминала, вижте [Въведение в командния ред](../intro_to_command_line/README.md). За да спрете уеб сървъра, върнете се обратно към прозореца, в който работи, и натиснете CTRL + C - Control и C клавиши заедно (във Windows може да се наложи да натиснете Ctrl + Break).
 
-Ready for the next step? It's time to create some content!
+Готови ли сте за следващата стъпка? Време е да създадете малко съдържание!
