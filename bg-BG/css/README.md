@@ -1,22 +1,22 @@
-# CSS – make it pretty!
+# CSS - направи го красиво!
 
-Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS for that.
+Блогът ни все още изглежда доста грозен, нали? Време е да го направите хубав! За това ще използваме CSS.
 
-## What is CSS?
+## Какво е CSS?
 
-Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
+Cascading Style Sheets (CSS) е език, използван за описание на външния вид и форматирането на уебсайт, написан на език за маркиране (като HTML). Отнасяйте се към него като грим за нашата уеб страница. ;)
 
-But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
+Но не искаме отново да започнем от нулата, нали? Още веднъж ще използваме нещо, което програмистите пуснаха в интернет безплатно. Преосмислянето на колелото не е забавно.
 
-## Let's use Bootstrap!
+## Нека използваме Bootstrap!
 
-Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
+Bootstrap е една от най-популярните фреймуорки за HTML и CSS за разработване на красиви уебсайтове: https://getbootstrap.com/
 
-It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
+Той е написан от програмисти, които са работили за Twitter. Сега тя е разработена от доброволци от цял свят!
 
-## Install Bootstrap
+## Инсталирайте Bootstrap
 
-To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
+За да инсталирате Bootstrap, отворете вашия файл `.html` в редактора на кода и го добавете в секцията `<head>`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -25,17 +25,17 @@ To install Bootstrap, open up your `.html` file in the code editor and add this 
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
+Това не добавя никакви файлове към вашия проект. Той просто сочи файлове, които съществуват в Интернет. Затова продължете напред, отворете уебсайта си и актуализирайте страницата. Ето го!
 
 ![Figure 14.1](images/bootstrap1.png)
 
-Looking nicer already!
+Вече изглежда по-хубав!
 
-## Static files in Django
+## Статични файлове в Django
 
-Finally we will take a closer look at these things we've been calling **static files**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
+Накрая ще разгледаме по-подробно тези неща, които наричахме **статични файлове**. Статичните файлове са всички ваши CSS и изображения. Съдържанието им не зависи от контекста на заявката и ще бъде едно и също за всеки потребител.
 
-### Where to put static files for Django
+### Къде да сложа статични файлове за Django
 
 Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
 
