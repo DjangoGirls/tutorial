@@ -27,7 +27,7 @@ Bootstrap е една от най-популярните фреймуорки з
 
 Това не добавя никакви файлове към вашия проект. Той просто сочи файлове, които съществуват в Интернет. Затова продължете напред, отворете уебсайта си и актуализирайте страницата. Ето го!
 
-![Figure 14.1](images/bootstrap1.png)
+![Фигура 14.1](images/bootstrap1.png)
 
 Вече изглежда по-хубав!
 
@@ -138,7 +138,7 @@ h1 a, h2 a {
 
 ОК, запазете файла и актуализирайте сайта!
 
-![Figure 14.2](images/color2.png)
+![Фигура 14.2](images/color2.png)
 
 Добра работа! Може би също бихме искали да дадем на нашия уебсайт малко въздух и да увеличим полето от лявата страна? Нека опитаме това!
 
@@ -152,7 +152,7 @@ body {
 
 Добавете това към вашия CSS, запишете файла и вижте как работи!
 
-![Figure 14.3](images/margin2.png)
+![Фигура 14.3](images/margin2.png)
 
 Може би можем да персонализираме шрифта в заглавката ни? Поставете това във вашия `<head>` във `blog/templates/blog/post_list.html` файл:
 
@@ -164,7 +164,7 @@ body {
 
 Както и преди, проверете поръчката и поставете преди връзката към `blog/static/css/blog.css`. Този ред ще импортира шрифт, наречен *Lobster* от Google Fonts (https://www.google.com/fonts).
 
-Намерете блока за деклариране `h1 a` (кодът между скобите `{` и `}`) в CSS файла `blog/static/css/blog.css`. Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
+Намерете блока за деклариране `h1 a` (кодът между скобите `{` и `}`) в CSS файла `blog/static/css/blog.css`. Сега добавете ред `font-family: 'Lobster';` между скобите и актуализирайте страницата:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -175,13 +175,13 @@ h1 a, h2 a {
 }
 ```
 
-![Figure 14.3](images/font.png)
+![Фигура 14.3](images/font.png)
 
-Great!
+Страхотно!
 
-As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
+Както бе споменато по-горе, CSS има концепция за класове. Те ви позволяват да назовите част от HTML кода и да приложите стилове само към тази част, без да засягате други части. Това може да бъде супер полезно! Може би имате два divs, които правят нещо различно (като заглавката и публикацията ви). Един клас може да ви помогне да ги направите да изглеждат различно.
 
-Go ahead and name some parts of the HTML code. Add a class called `page-header` to your `div` that contains your header, like this:
+Продължете и дайте име на някои части от HTML кода. Добавете клас, наречен `page-header`, към вашия `div`, който съдържа заглавката ви, като този:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -191,7 +191,7 @@ Go ahead and name some parts of the HTML code. Add a class called `page-header` 
 </div>
 ```
 
-And now add a class `post` to your `div` containing a blog post.
+И сега добавете клас `post` към вашия `div` съдържащ публикация в блог.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -203,7 +203,7 @@ And now add a class `post` to your `div` containing a blog post.
 </div>
 ```
 
-We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, copy and paste it into your `blog/static/css/blog.css` file:
+Сега ще добавим декларационни блокове към различни селектори. Селектори, започващи с `. `, се отнасят за класове. Има много страхотни уроци и обяснения за CSS в мрежата, които могат да ви помогнат да разберете следния код. Засега го копирайте и поставете във вашия `blog/static/css/blog.css` файл:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -256,7 +256,7 @@ h1, h2, h3, h4 {
 }
 ```
 
-Then surround the HTML code which displays the posts with declarations of classes. Replace this:
+След това заобиколете HTML кода, който показва публикациите с декларации за класове. Заменете това:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -270,7 +270,7 @@ Then surround the HTML code which displays the posts with declarations of classe
 {% endfor %}
 ```
 
-in the `blog/templates/blog/post_list.html` with this:
+в `blog/templates/blog/post_list.html` с това:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -292,14 +292,14 @@ in the `blog/templates/blog/post_list.html` with this:
 </div>
 ```
 
-Save those files and refresh your website.
+Запазете тези файлове и актуализирайте уебсайта си.
 
-![Figure 14.4](images/final.png)
+![Фигура 14.4](images/final.png)
 
-Woohoo! Looks awesome, right? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
+Ура! Изглежда страхотно, нали? Вижте кода, който току-що поставихме, за да намерите местата, където добавихме класове в HTML и ги използвахме в CSS. Къде бихте направили промяната, ако искате датата да е тюркоазена?
 
-Don't be afraid to tinker with this CSS a little bit and try to change some things. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry – you can always undo it!
+Не се страхувайте да се поинтересувате с този CSS малко и се опитайте да промените някои неща. Играта с CSS може да ви помогне да разберете какво правят различните неща. Ако счупите нещо, не се притеснявайте - винаги можете да го отмените!
 
-We really recommend taking the free online courses "Basic HTML & HTML5" and "Basic CSS" on [freeCodeCamp](https://learn.freecodecamp.org/). They can help you learn all about making your websites prettier with HTML and CSS.
+Наистина препоръчваме да вземете безплатните онлайн курсове "Basic HTML & HTML5" и "Basic CSS" на [freeCodeCamp](https://learn.freecodecamp.org/). Те могат да ви помогнат да научите всичко за правенето на уебсайтовете ви по-красиви с HTML и CSS.
 
-Ready for the next chapter?! :)
+Готови ли сте за следващата глава?! :)
