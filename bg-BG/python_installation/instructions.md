@@ -2,32 +2,32 @@
 > 
 > Този раздел е базиран на урок от Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django е написан на Python. Имаме нужда от Python, за да направим нещо в Django. Нека започнем с инсталирането му! Искаме да инсталирате най-новата версия на Python 3, така че ако имате някоя по-ранна версия, ще трябва да я актуализирате. If you already have version 3.4 or higher you should be fine.
+Django е написан на Python. Имаме нужда от Python, за да направим нещо в Django. Нека започнем с инсталирането му! Искаме да инсталирате най-новата версия на Python 3, така че ако имате някоя по-ранна версия, ще трябва да я актуализирате. Ако вече имате версия 3.4 или по-нова, трябва да се оправите.
 
-Please install normal Python as follows, even when you have Anaconda installed on your computer.
+Моля, инсталирайте нормален Python по следния начин, дори когато на вашия компютър е инсталиран Anaconda.
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
-First check whether your computer is running a 32-bit version or a 64-bit version of Windows, on the "System type" line of the System Info page. To reach this page, try one of these methods:
+Първо проверете дали вашият компютър използва 32-битова версия или 64-битова версия на Windows, в реда "Тип система" на страницата Информация за системата. За да стигнете до тази страница, опитайте един от следните методи:
 
-* Press the Windows key and Pause/Break key at the same time
-* Open your Control Panel from the Windows menu, then navigate to System & Security, then System
-* Press the Windows button, then navigate to Settings > System > About
+* Натиснете едновременно клавиша Windows и клавиша за Пауза/Прекъсване
+* Отворете контролния панел от менюто на Windows, след което отворете Система & Сигурност, след това Система
+* Натиснете бутона на Windows, след това отворете Настройки> Система> Информация
 
-You can download Python for Windows from the website https://www.python.org/downloads/windows/. Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
+Можете да изтеглите Python за Windows от уебсайта https://www.python.org/downloads/windows/. Кликнете върху връзката "Последно издание на Python 3 - Python x.x.x“. Ако вашият компютър работи с **64-битова** версия на Windows, изтеглете **изпълнителния инсталатор Windows x86-64**. В противен случай изтеглете **изпълнителния инсталатор Windows x86**. След като изтеглите инсталатора, трябва да го стартирате (щракнете двукратно върху него) и следвайте инструкциите там.
 
-One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" or 'Add Python to your environment variables" checkbox and click on "Install Now", as shown here (it may look a bit different if you are installing a different version):
+Едно нещо, за което трябва да внимавате: По време на инсталацията ще забележите прозорец с надпис „Настройка“. Уверете се, че поставете отметка в квадратчето „Добавяне на Python 3.6 към PATH“ или „Добавяне на Python към променливите на вашата среда“ и кликнете върху „Инсталиране сега“, както е показано тук (може да изглежда малко по-различно, ако инсталирате друга версия):
 
 ![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
 
-When the installation completes, you may see a dialog box with a link you can follow to learn more about Python or about the version you installed. Close or cancel that dialog -- you'll be learning more in this tutorial!
+Когато инсталацията приключи, може да видите диалогов прозорец с връзка, която можете да следвате, за да научите повече за Python или за версията, която сте инсталирали. Затворете или отменете този диалог - в този урок ще научите повече!
 
-Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.6.x installer fails with an error, you can try either:
+Забележка: Ако използвате по-стара версия на Windows (7, Vista или някоя по-стара версия) и инсталатора на Python 3.6.x не успее с грешка, можете да опитате или:
 
-1. install all Windows Updates and try to install Python again; or
-2. install an [older version of Python](https://www.python.org/downloads/windows/), e.g., [3.4.6](https://www.python.org/downloads/release/python-346/).
+1. да инсталирате всички актуализации на Windows и да опитате отново да инсталирате Python; или
+2. да инсталирате [по-стара версия на Python](https://www.python.org/downloads/windows/), например, [3.4.6](https://www.python.org/downloads/release/python-346/).
 
-If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
+Ако инсталирате по-стара версия на Python, екранът за инсталиране може да изглежда малко по-различно от показаното по-горе. Уверете се, че превъртете надолу, за да видите „Добавяне на python.exe към Path“, след това щракнете върху бутона вляво и изберете „Ще бъде инсталиран на локален твърд диск“:
 
 ![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
 
@@ -36,7 +36,7 @@ If you install an older version of Python, the installation screen may look a bi
 <!--sec data-title="Install Python: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
+> **Забележка** Преди да инсталирате Python в OS X, трябва да се уверите, че настройките ви за Mac позволяват инсталиране на пакети, които не са от App Store. Отидете на System Preferences (това е в папката Applications), щракнете върху "Сигурност & Поверителност," и след това върху раздела "General". If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
 
 You need to go to the website https://www.python.org/downloads/release/python-361/ and download the Python installer:
 
