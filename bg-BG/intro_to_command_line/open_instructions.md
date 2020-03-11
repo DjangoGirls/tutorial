@@ -1,28 +1,28 @@
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-Depending on your version of Windows and your keyboard, one of the following should open a command window (you may have to experiment a bit, but you don't have to try all of these suggestions):
+В зависимост от вашата версия на Windows и клавиатурата ви, едно от следните трябва да отвори команден прозорец (може да се наложи да експериментирате малко, но не е нужно да изпробвате всички тези предложения):
 
-- Go to the Start menu or screen, and enter "Command Prompt" in the search field.
-- Go to Start menu → Windows System → Command Prompt.
-- Go to Start menu → All Programs → Accessories → Command Prompt.
-- Go to the Start screen, hover your mouse in the lower-left corner of the screen, and click the down arrow that appears (on a touch screen, instead flick up from the bottom of the screen). The Apps page should open. Click on Command Prompt in the Windows System section.
-- Hold the special Windows key on your keyboard and press the "X" key. Choose "Command Prompt" from the pop-up menu.
-- Hold the Windows key and press the "R" key to get a "Run" window. Type "cmd" in the box, and click the OK key.
+- Отидете в менюто или екрана "Старт" и въведете "Команден ред" в полето за търсене.
+- Отидете в менюто "Старт" → Windows System → Команден ред.
+- Отидете в менюто Старт → Всички програми → Аксесоари → Команден ред.
+- Отидете на стартовия екран, задръжте мишката в долния ляв ъгъл на екрана и щракнете върху стрелката надолу, която се появява (на сензорен екран, вместо това натиснете нагоре от долната част на екрана). Страницата с приложения трябва да се отвори. Кликнете върху командния ред в секцията Windows.
+- Задръжте специалния клавиш Windows на клавиатурата си и натиснете клавиша "X". Изберете „Команден ред“ от изскачащото меню.
+- Задръжте клавиша на Windows и натиснете клавиша "R", за да получите прозорец "Изпълнение". Въведете "cmd" в полето и щракнете върху бутона OK.
 
-![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
+![Напишете "cmd" в прозореца "Изпълнение"](../python_installation/images/windows-plus-r.png)
 
-Later in this tutorial, you will need to have two command windows open at the same time. However, on some versions of Windows, if you already have one command window open and you try to open a second one using the same method, it will instead point you to the command window you already have open. Try it now on your computer and see what happens! If you only get one command window, try one of the other methods in the list above. At least one of them should result in a new command window being opened.
+По-късно в този урок ще трябва да имате отворени два командни прозореца едновременно. Въпреки това, при някои версии на Windows, ако вече имате един отворен команден прозорец и се опитате да отворите втори, използвайки същия метод, той вместо това ще ви насочи към командния прозорец, който вече имате отворен. Опитайте го сега на вашия компютър и вижте какво ще се случи! Ако получите само един команден прозорец, опитайте някой от другите методи в списъка по-горе. Поне един от тях трябва да доведе до отваряне на нов команден прозорец.
 
 <!--endsec-->
 
 <!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
 
-Go to Applications → Utilities → Terminal.
+Отидете на Приложения → Утилити → Терминал.
 
 <!--endsec-->
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-It's probably under Applications → Accessories → Terminal, or Applications → System → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
+Вероятно е под Приложения → Аксесоари → Терминал или Приложения → Система → Терминал, но това може да зависи от вашата система. Ако не е там, можете да опитате да го потърсите в Google. :)
 
 <!--endsec-->
