@@ -10,67 +10,67 @@
 
 Имената на някои файлове и директории са много важни за Django. Не трябва да преименувате файловете, които предстои да създадем. Преместването им на друго място също не е добра идея. Джанго трябва да поддържа определена структура, за да може да намери важни неща.
 
-> Не забравяйте да стартирате всичко във virtualenv (виртуално пространство). If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. We explained how to do that in the **Django installation** chapter in the **Working with virtualenv** part. Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
+> Не забравяйте да стартирате всичко във virtualenv (виртуално пространство). Ако не видите префикс `(myvenv)` в конзолата си, трябва да активирате своя virtualenv. Обяснихме как да направим това в главата **Инсталация на Django** в частта **Работа с virtualenv**. Въвеждането `myvenv\Scripts\activate`` в Windows или <0>source myvenv/bin/activate` в Mac OS X или Linux ще направи това вместо вас.
 
 <!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
-In your Mac OS X or Linux console, you should run the following command. **Don't forget to add the period (or dot) `.` at the end!**
+Във вашата Mac OS X или Linux конзола трябва да изпълните следната команда. ** Не забравяйте да добавите точка `.` в края!**
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ django-admin startproject mysite .
     
 
-> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
+> Точката `.` е от решаващо значение, тъй като казва на скрипта да инсталира Django във вашата текуща директория (за която точката `.` е препратка).
 > 
-> **Note** When typing the command above, remember that you only type the part which starts by `django-admin`. The `(myvenv) ~/djangogirls$` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **Забележка** Когато пишете командата по-горе, не забравяйте, че въвеждате само частта, която започва от `django-admin`. Частта `(myvenv) ~/djangogirls$`, показана тук, е само пример за подкана, която ще покани вашия вход във вашия команден ред.
 
 <!--endsec-->
 
 <!--sec data-title="Create project: Windows" data-id="django_start_project_windows" data-collapse=true ces-->
 
-On Windows you should run the following command. **(Don't forget to add the period (or dot) `.` at the end)**:
+В Windows трябва да изпълните следната команда. **(Не забравяйте да добавите точка `.` в края)**:
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) C:\Users\Name\djangogirls> django-admin.exe startproject mysite .
     
 
-> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
+> Точката `.` е от решаващо значение, тъй като казва на скрипта да инсталира Django във вашата текуща директория (за която точката `.` е препратка).
 > 
-> **Note** When typing the command above, remember that you only type the part which starts by `django-admin.exe`. The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **Забележка** Когато пишете командата по-горе, не забравяйте, че въвеждате само частта, която започва от `django-admin.exe`. Частта `(myvenv) C:\Users\Name\djangogirls>`, показана тук, е само пример за подкана, която ще покани вашия вход във вашия команден ред.
 
 <!--endsec-->
 
-`django-admin.py` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
+`django-admin.py` е скрипт, който ще създаде директории и файлове за вас. Сега трябва да имате структура на директория, която изглежда така:
 
     djangogirls
     ├── manage.py
     ├── mysite
-    │   ├── __init__.py
-    │   ├── settings.py
-    │   ├── urls.py
-    │   └── wsgi.py
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
     ├── myvenv
-    │   └── ...
+    │   └── ...
     └── requirements.txt
     
 
-> **Note**: in your directory structure, you will also see your `venv` directory that we created before.
+> **Забележка**: в структурата на вашата директория ще видите и вашата `venv` директория, която създадохме преди.
 
-`manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
+`manage.py` е скрипт, който помага при управлението на сайта. С него ще можем (освен всичко друго) да стартираме уеб сървър на нашия компютър, без да инсталираме нищо друго.
 
-The `settings.py` file contains the configuration of your website.
+Файлът `settings.py` съдържа конфигурацията на вашия уебсайт.
 
-Remember when we talked about a mail carrier checking where to deliver a letter? `urls.py` file contains a list of patterns used by `urlresolver`.
+Спомняте ли си, когато говорихме за пощенски превозвач, проверяващ къде да достави писмо? `urls.py` файлът съдържа списък от модели, използвани от `urlresolver`.
 
-Let's ignore the other files for now as we won't change them. The only thing to remember is not to delete them by accident!
+За сега игнорираме останалите файлове, тъй като няма да ги променяме. Единственото нещо, което трябва да запомните, е да не ги изтриете случайно!
 
-## Changing settings
+## Промяна на настройките
 
-Let's make some changes in `mysite/settings.py`. Open the file using the code editor you installed earlier.
+Нека направим някои промени в `mysite/settings.py`. Отворете файла с помощта на редактора на кода, който сте инсталирали по-рано.
 
-**Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "file -> open" menu actions. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
+**Забележка**: Имайте предвид, че `settings.py` е обикновен файл, като всеки друг. Можете да го отворите от редактора на кода, като използвате действията от менюто "файл -> отвори". This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
 
 It would be nice to have the correct time on our website. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
 
