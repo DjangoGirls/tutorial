@@ -1,8 +1,8 @@
-> For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA) video.
+> За читателите у дома: тази глава е разгледана във видеото [Инсталиране на Python & Редактор на код](https://www.youtube.com/watch?v=pVTaqzKZCdA).
 > 
-> This section is based on a tutorial by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
+> Този раздел е базиран на урок от Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want you to install the latest version of Python 3, so if you have any earlier version, you will need to upgrade it. If you already have version 3.4 or higher you should be fine.
+Django е написан на Python. Имаме нужда от Python, за да направим нещо в Django. Нека започнем с инсталирането му! Искаме да инсталирате най-новата версия на Python 3, така че ако имате някоя по-ранна версия, ще трябва да я актуализирате. If you already have version 3.4 or higher you should be fine.
 
 Please install normal Python as follows, even when you have Anaconda installed on your computer.
 
