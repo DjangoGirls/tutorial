@@ -6,15 +6,15 @@
 
 Да напишем малко код!
 
-## Python prompt
+## Python подкана
 
-> For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
+> За читателите у дома: тази част е разгледана във видеото [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U).
 
-To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+За да започнем да играем с Python, трябва да отворим *команден ред* на вашия компютър. Вече трябва да знаете как да го направите - научихте го в главата [Въведение в командния ред](../intro_to_command_line/README.md).
 
-Once you're ready, follow the instructions below.
+След като сте готови, следвайте инструкциите по-долу.
 
-We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
+Искаме да отворим конзола на Python, затова въведете `python` в Windows или `python3` в Mac OS/Linux и натиснете `enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -24,13 +24,13 @@ We want to open up a Python console, so type in `python` on Windows or `python3`
     >>>
     
 
-## Your first Python command!
+## Вашата първа Python команда!
 
-After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
+След като изпълните командата Python, подканата се промени в `>>>`. За нас това означава, че засега можем да използваме само команди на езика Python. Не е нужно да пишете `>>>` - Python ще направи това вместо вас.
 
-If you want to exit the Python console at any point, type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
+Ако искате да излезете от конзолата на Python във всеки момент, напишете `exi()` или използвайте прекия път `Ctrl + Z` за Windows и `Ctrl + D` за Mac/Linux. Тогава вече няма да виждате `>>>`.
 
-For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
+Засега не искаме да излизаме от конзолата Python. Искаме да научим повече за него. Нека започнем с въвеждане на някаква математика, като `2 + 3` и натискане на `enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -39,13 +39,13 @@ For now, we don't want to exit the Python console. We want to learn more about i
 5
 ```
 
-Nice! See how the answer popped out? Python knows math! You could try other commands like:
+Nice! Вижте как отговорът изскочи? Python знае математика! Можете да опитате и други команди като:
 
 - `4 * 5`
 - `5 - 1`
 - `40 / 2`
 
-To perform exponential calculation, say 2 to the power 3, we type: {% filename %}command-line{% endfilename %}
+За да извършим експоненциално изчисление, да кажем 2 на степен 3, ние набираме: {% filename %}command-line{% endfilename %}
 
 ```python
 >>> 2 ** 3
