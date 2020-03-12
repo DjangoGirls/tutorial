@@ -139,7 +139,7 @@ Git ще проследи промените във всички файлове 
 
 Върнете се към главното [PythonAnywhere Dashboard](https://www.pythonanywhere.com/), като кликнете върху логото и изберете опцията за стартиране на конзола "Bash" - това е версията на командния ред PythonAnywhere, точно като тази на вашия компютър.
 
-![The 'New Console' section on the PythonAnywhere web interface, with a button for 'bash'](images/pythonanywhere_bash_console.png)
+![Секцията 'Нова конзола' в уеб интерфейса на PythonAnywhere, с бутон за 'bash'](images/pythonanywhere_bash_console.png)
 
 > **Забележка** PythonAnywhere е базиран на Linux, така че ако сте на Windows, конзолата ще изглежда малко по-различна от тази на вашия компютър.
 
@@ -200,23 +200,23 @@ Git ще проследи промените във всички файлове 
 
 ## Съвети за отстраняване на грешки
 
-If you see an error while running the `pa_autoconfigure_django.py` script, here are a few common causes:
+Ако видите грешка при изпълнение на скрипта `pa_autoconfigure_django.py`, ето няколко често срещани причини:
 
-- Forgetting to create your PythonAnywhere API token.
-- Making a mistake in your GitHub URL
-- If you see an error saying *"Could not find your settings.py"*, it's probably because you didn't manage to add all your files to Git, and/or you didn't push them up to GitHub successfully. Have another look at the Git section above
-- If you previously signed up for a PythonAnywhere account and had an error with collectstatic, you probably have an older version of SQLite (eg 3.8.2) for your account. In that case, sign up for a new account and try the commands in the PythonAnywhere section above.
+- Забравяйки да създадете своя маркер за API на PythonAnywhere API.
+- Грешка в URL адреса ви в GitHub
+- Ако видите грешка, която казва *"Could not find your settings.py"*, вероятно защото не успяхте да добавите всичките си файлове в Git и/или не ги избутахте до GitHub успешно. Погледнете още един път раздела Git по-горе
+- Ако преди това сте се регистрирали за акаунт в PythonAnywhere и имате грешка с collestatic, вероятно имате по-стара версия на SQLite (например 3.8.2) за вашия акаунт. В такъв случай се регистрирайте за нов акаунт и опитайте командите в секцията PythonAnywhere по-горе.
 
-If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere ["Web" page](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
+Ако видите грешка, когато се опитвате да посетите вашия сайт, първото място за търсене на информация за отстраняване на грешки е във вашия **error log**. Ще намерите линк към това на страницата на PythonAnywhere ["Web"](https://www.pythonanywhere.com/web_app_setup/). Вижте дали има съобщения за грешки там; най-новите са най-отдолу.
 
-There are also some [general debugging tips on the PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
+Също така има някои [общи съвети за отстраняване на грешки на помощния сайт на PythonAnywhere](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
-And remember, your coach is here to help!
+И не забравяйте, че вашият ментор е тук, за да ви помогне!
 
-# Check out your site!
+# Вижте вашия сайт!
 
-The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server -- remember, the posts from your local test database were not sent to your live blog.
+Страницата по подразбиране за вашия сайт трябва да гласи „Работи!“, точно както прави на вашия локален компютър. Опитайте да добавите `/admin/` в края на URL адреса и ще бъдете отведени до администраторския сайт. Влезте с потребителското име и паролата и ще видите, че можете да добавяте нови публикации на сървъра - не забравяйте, че публикациите от вашата локална база данни за тестове не бяха изпратени във вашия блог на живо.
 
-Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
+След като създадете няколко публикации, можете да се върнете към вашата локална настройка (не PythonAnywhere). От тук трябва да работите върху вашата локална настройка, за да направите промени. Това е често срещан работен процес в уеб разработката - правете промени локално, бутате тези промени в GitHub и изтегляте промените надолу към вашия уеб сървър на живо. Това ви позволява да работите и да експериментирате, без да нарушавате уеб сайта си на живо. Доста готино, а?
 
-Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet!
+Заслужавате *огромни* похвали! Сървърните внедрения са едни от най-трудните части на уеб разработката и често отнемат на хората няколко дни, преди да ги накарат да работят. Но вие имате своя сайт на живо, в реалния Интернет!
