@@ -18,7 +18,7 @@
 
 ## Стартираме нашето Git хранилище
 
-Git проследява промените в определен набор от файлове в т.нар. Кодово хранилище (или за кратко "repo" от "repository"). Нека започнем еднo за нашия проект. Отворете конзолата и стартирайте тези команди в директорията `djangogirls`:
+Git проследява промените в определен набор от файлове в т.нар. репозиторий (или за кратко "репо"). Нека започнем еднo за нашия проект. Отворете конзолата и стартирайте тези команди в директорията `djangogirls`:
 
 > **Забележка** Проверете текущата си работна директория с команда `pwd` (Mac OS X / Linux) или `cd` (Windows), преди да инициализирате хранилището. Трябва да сте в папката `djangogirls`.
 
@@ -52,7 +52,7 @@ Git ще проследи промените във всички файлове 
 > 
 > **Забележка** Един от файловете, които сте посочили във вашия `.gitignore` файл е `db.sqlite3`. Този файл е вашата локална база данни, където се съхраняват всички ваши потребители и публикации. Ще следваме стандартната практика за уеб програмиране, което означава, че ще използваме отделни бази данни за вашия локален тестващ сайт и вашия уеб сайт на живо в PythonAnywhere. Базата данни на PythonAnywhere може да бъде SQLite, като вашата разработваща машина, но обикновено ще използвате такава, наречена MySQL, която може да се справи с много повече посетители на сайта, отколкото SQLite. Така или иначе, като игнорирате вашата SQLite база данни за копието на GitHub, това означава, че всички публикувани досега публикации и superuser ще бъдат достъпни само локално и ще трябва да създавате нови в производството. Трябва да мислите за вашата локална база данни като за добра площадка, където можете да тествате различни неща и да не се страхувате, че ще изтриете истинските си публикации от блога си.
 
-Добра идея е да използвате команда `git status` преди `git add` или винаги, когато се окажете несигурни какво се е променило. Това ще ви помогне да предотвратите появата на изненади, като например добавяне или поемане на грешни файлове. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
+Добра идея е да използвате команда `git status` преди `git add` или винаги, когато се окажете несигурни какво се е променило. Това ще ви помогне да предотвратите появата на изненади, като например добавяне или поемане на грешни файлове. Командата `git status` връща информация за всички непроследени/модифицирани/поетапни файлове, състоянието на клона и много други. Изходът трябва да бъде подобен на следното:
 
 {% filename %}command-line{% endfilename %}
 
@@ -73,7 +73,7 @@ Git ще проследи промените във всички файлове 
     nothing added to commit but untracked files present (use "git add" to track)
     
 
-And finally we save our changes. Go to your console and run these commands:
+И накрая спестяваме промените си. Отидете на конзолата си и изпълнете следните команди:
 
 {% filename %}command-line{% endfilename %}
 
@@ -86,23 +86,23 @@ And finally we save our changes. Go to your console and run these commands:
      create mode 100644 mysite/wsgi.py
     
 
-## Pushing your code to GitHub
+## Избутване на кода ви към GitHub
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!) Be sure to remember your password (add it to your password manager, if you use one).
+Отидете на [GitHub.com](https://www.github.com) и се регистрирайте за нов безплатен потребителски акаунт. (Ако вече сте го направили в подготвителната работилница, това е чудесно!) Не забравяйте да запомните паролата си (добавете я към вашия мениджър на пароли, ако използвате такъв).
 
-Then, create a new repository, giving it the name "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+След това създайте ново хранилище, като му дадете името "my-first-blog". Оставете квадратчето за „инициализация с README“ отместено, оставете опцията .gitignore празна (направихме това ръчно) и оставете лиценза като None.
 
 ![](images/new_github_repo.png)
 
-> **Note** The name `my-first-blog` is important – you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. It's probably easier to stick with the name `my-first-blog`.
+> **Забележка** Името `my-first-blog` е важно - бихте могли да изберете нещо друго, но това ще се случва много пъти в инструкциите по-долу и ще трябва да го замествате всеки път. Вероятно е по-лесно да се придържаме към името `my-first-blog`.
 
-On the next screen, you'll be shown your repo's clone URL, which you will use in some of the commands that follow:
+На следващия екран ще се покаже URL за клониране на вашия репозиторий, което ще използвате в някои от следващите команди:
 
 ![](images/github_get_repo_url_screenshot.png)
 
-Now we need to hook up the Git repository on your computer to the one up on GitHub.
+Сега трябва да свържем Git хранилището на вашия компютър към това в GitHub.
 
-Type the following into your console (replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets -- the URL should match the clone URL you just saw):
+Въведете следното в конзолата си (заменете `<your-github-username>` с потребителското име, което сте въвели, когато сте създали акаунта си в GitHub, но без скобите на ъглите - URL адресът трябва да съответства на клониращия URL адрес, който току-що видяхте):
 
 {% filename %}command-line{% endfilename %}
 
@@ -110,7 +110,7 @@ Type the following into your console (replace `<your-github-username>` with the 
     $ git push -u origin master
     
 
-When you push to GitHub, you'll be asked for your GitHub username and password (either right there in the command-line window or in a pop-up window), and after entering credentials you should see something like this:
+Когато натиснете към GitHub, ще бъдете попитани за вашето потребителско име и парола за GitHub (било то в прозореца на командния ред или в изскачащ прозорец), а след въвеждане на идентификационни данни трябва да видите нещо подобно:
 
 {% filename %}command-line{% endfilename %}
 
@@ -125,34 +125,34 @@ When you push to GitHub, you'll be asked for your GitHub username and password (
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 
-Your code is now on GitHub. Go and check it out! You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
+Кодът ви вече е на GitHub. Отидете и го вижте! Ще откриете, че е в добра компания - [Django](https://github.com/django/django), [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial) и много други страхотни софтуерни проекти с отворен код също са домакини на кода си в GitHub. :)
 
-# Setting up our blog on PythonAnywhere
+# Настройване на нашия блог на PythonAnywhere
 
-## Sign up for a PythonAnywhere account
+## Регистрирайте се за акаунт в PythonAnywhere
 
-> **Note** You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
+> **Забележка** Може би вече сте създали акаунт в PythonAnywhere по-рано по време на стъпките за инсталиране - ако е така, няма нужда да го правите отново.
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-## Configuring our site on PythonAnywhere
+## Конфигуриране на нашия сайт на PythonAnywhere
 
-Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer.
+Върнете се към главното [PythonAnywhere Dashboard](https://www.pythonanywhere.com/), като кликнете върху логото и изберете опцията за стартиране на конзола "Bash" - това е версията на командния ред PythonAnywhere, точно като тази на вашия компютър.
 
 ![The 'New Console' section on the PythonAnywhere web interface, with a button for 'bash'](images/pythonanywhere_bash_console.png)
 
-> **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
+> **Забележка** PythonAnywhere е базиран на Linux, така че ако сте на Windows, конзолата ще изглежда малко по-различна от тази на вашия компютър.
 
-Deploying a web app on PythonAnywhere involves pulling down your code from GitHub, and then configuring PythonAnywhere to recognise it and start serving it as a web application. There are manual ways of doing it, but PythonAnywhere provides a helper tool that will do it all for you. Let's install it first:
+Внедряването на уеб приложение в PythonAnywhere включва сваляне на кода от GitHub и конфигуриране на PythonAnywhere да го разпознае и да започне да го обслужва като уеб приложение. Има ръчни начини за това, но PythonAnywhere предоставя помощен инструмент, който ще свърши всичко за вас. Нека го инсталираме първо:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ pip3.6 install --user pythonanywhere
     
 
-That should print out some things like `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
+Това трябва да отпечата някои неща като `Collecting pythonanywhere` и в крайна сметка да завърши с ред, който казва `Successfully installed (...) pythonanywhere- (...)`.
 
-Now we run the helper to automatically configure our app from GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
+Сега стартираме помощника за автоматично конфигуриране на приложението ви от GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
