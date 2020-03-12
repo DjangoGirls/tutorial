@@ -12,15 +12,15 @@
 
 # Git
 
-> **Note** If you already did the Installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
+> **Забележка** Ако вече сте направили стъпките за инсталиране, няма нужда да правите това отново - можете да преминете към следващия раздел и да започнете да създавате вашето Git хранилище.
 
 {% include "/deploy/install_git.md" %}
 
-## Starting our Git repository
+## Стартираме нашето Git хранилище
 
-Git tracks changes to a particular set of files in what's called a code repository (or "repo" for short). Let's start one for our project. Open up your console and run these commands, in the `djangogirls` directory:
+Git проследява промените в определен набор от файлове в т.нар. Кодово хранилище (или за кратко "repo" от "repository"). Нека започнем еднo за нашия проект. Отворете конзолата и стартирайте тези команди в директорията `djangogirls`:
 
-> **Note** Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. You should be in the `djangogirls` folder.
+> **Забележка** Проверете текущата си работна директория с команда `pwd` (Mac OS X / Linux) или `cd` (Windows), преди да инициализирате хранилището. Трябва да сте в папката `djangogirls`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -30,9 +30,9 @@ Git tracks changes to a particular set of files in what's called a code reposito
     $ git config --global user.email you@example.com
     
 
-Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email ever again).
+Инициализирането на git хранилището е нещо, което трябва да направим само веднъж за всеки проект (и няма да се налага да въвеждате отново потребителското име и имейла отново).
 
-Git will track changes to all the files and folders in this directory, but there are some files we want it to ignore. We do this by creating a file called `.gitignore` in the base directory. Open up your editor and create a new file with the following contents:
+Git ще проследи промените във всички файлове и папки в тази директория, но има някои файлове, които искаме да игнорира. Правим това чрез създаване на файл, наречен `.gitignore` в основната директория. Отворете редактора си и създайте нов файл със следното съдържание:
 
 {% filename %}.gitignore{% endfilename %}
 
@@ -46,13 +46,13 @@ Git will track changes to all the files and folders in this directory, but there
     .DS_Store
     
 
-And save it as `.gitignore` in the "djangogirls" folder.
+И го запишете като `.gitignore` в папката "djangogirls".
 
-> **Note** The dot at the beginning of the file name is important! If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof. And be sure not to add `.txt`, `.py`, or any other extension to the file name -- it will only be recognized by Git if the name is just `.gitignore`.
+> **Забележка** Точката в началото на името на файла е важна! Ако имате проблеми с създаването му (Macs не харесва да създавате файлове, които започват с точка чрез Finder, например), след това използвайте функцията "Save As" в редактора си; това е бронеустойчиво. И не забравяйте да добавите `.txt`, `.py` или друго разширение към името на файла - той ще бъде разпознат от Git само ако името е просто `.gitignore`.
 > 
-> **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. That file is your local database, where all of your users and posts are stored. We'll follow standard web programming practice, meaning that we'll use separate databases for your local testing site and your live website on PythonAnywhere. The PythonAnywhere database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts and superuser you created so far are going to only be available locally, and you'll have to create new ones on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
+> **Забележка** Един от файловете, които сте посочили във вашия `.gitignore` файл е `db.sqlite3`. Този файл е вашата локална база данни, където се съхраняват всички ваши потребители и публикации. Ще следваме стандартната практика за уеб програмиране, което означава, че ще използваме отделни бази данни за вашия локален тестващ сайт и вашия уеб сайт на живо в PythonAnywhere. Базата данни на PythonAnywhere може да бъде SQLite, като вашата разработваща машина, но обикновено ще използвате такава, наречена MySQL, която може да се справи с много повече посетители на сайта, отколкото SQLite. Така или иначе, като игнорирате вашата SQLite база данни за копието на GitHub, това означава, че всички публикувани досега публикации и superuser ще бъдат достъпни само локално и ще трябва да създавате нови в производството. Трябва да мислите за вашата локална база данни като за добра площадка, където можете да тествате различни неща и да не се страхувате, че ще изтриете истинските си публикации от блога си.
 
-It's a good idea to use a `git status` command before `git add` or whenever you find yourself unsure of what has changed. This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
+Добра идея е да използвате команда `git status` преди `git add` или винаги, когато се окажете несигурни какво се е променило. Това ще ви помогне да предотвратите появата на изненади, като например добавяне или поемане на грешни файлове. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
 
 {% filename %}command-line{% endfilename %}
 
