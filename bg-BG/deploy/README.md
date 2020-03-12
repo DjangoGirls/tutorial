@@ -1,14 +1,14 @@
-# Deploy!
+# Внедряване!
 
-> **Note** The following chapter can be sometimes a bit hard to get through. Persist and finish it; deployment is an important part of the website development process. This chapter is placed in the middle of the tutorial so that your mentor can help with the slightly trickier process of getting your website online. This means you can still finish the tutorial on your own if you run out of time.
+> **Забележка** Следващата глава понякога може да бъде малко трудна за преминаване. Продължете и я завършете; внедряването е важна част от процеса на разработване на уебсайтове. Тази глава е поставена в средата на урока, така че вашият ментор да ви помогне с малко по-сложния процес на вдигане на уебсайта ви онлайн. Това означава, че все още можете да завършите урока самостоятелно, ако ви липсва време.
 
-Until now, your website was only available on your computer. Now you will learn how to deploy it! Deploying is the process of publishing your application on the Internet so people can finally go and see your app. :)
+Досега вашият уебсайт беше достъпен само на вашия компютър. Сега ще научите как да го разгърнете! Разгръщането е процесът на публикуване на приложението ви в Интернет, така че хората най-накрая да могат да отидат и да видят приложението ви. :)
 
-As you learned, a website has to be located on a server. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
+Както научихте, уебсайт трябва да бъде разположен на сървър. В интернет има много доставчици на сървъри, ще използваме [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere е безплатен за малки приложения, които нямат твърде много посетители, така че определено сега ще ви бъде достатъчно.
 
-The other external service we'll be using is [GitHub](https://www.github.com), which is a code hosting service. There are others out there, but almost all programmers have a GitHub account these days, and now so will you!
+Другата външна услуга, която ще използваме е [GitHub](https://www.github.com), която е услуга за хостинг на код. Има и други, но почти всички програмисти имат GitHub акаунт в наши дни, а сега и вие!
 
-These three places will be important to you. Your local computer will be the place where you do development and testing. When you're happy with the changes, you will place a copy of your program on GitHub. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
+Тези три места ще бъдат важни за вас. Вашият локален компютър ще бъде мястото, където правите разработка и тестване. Когато сте доволни от промените, ще поставите копие на програмата си в GitHub. Вашият уебсайт ще бъде на PythonAnywhere и ще го актуализирате, като получите ново копие на вашия код от GitHub.
 
 # Git
 
