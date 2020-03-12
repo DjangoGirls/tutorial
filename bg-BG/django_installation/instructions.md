@@ -62,7 +62,7 @@ data-collapse=true ces-->
 >     You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.
 >     
 > 
-> In this case, follow the instructions above and install the `python3-venv` package: {% filename %}command-line{% endfilename %}
+> В този случай следвайте инструкциите по-горе и инсталирайте пакета `python3-venv`: {% filename %}command-line{% endfilename %}
 > 
 >     $ sudo apt install python3-venv
 >     
