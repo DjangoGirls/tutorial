@@ -152,34 +152,34 @@ Git ще проследи промените във всички файлове 
 
 Това трябва да отпечата някои неща като `Collecting pythonanywhere` и в крайна сметка да завърши с ред, който казва `Successfully installed (...) pythonanywhere- (...)`.
 
-Сега стартираме помощника за автоматично конфигуриране на приложението ви от GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
+Сега стартираме помощника за автоматично конфигуриране на приложението ви от GitHub. Въведете следното в конзолата на PythonAnywhere (не забравяйте да използвате потребителското си име на GitHub вместо `<your-github-username>`, така че URL адресът да съответства на клонираният URL от GitHub):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ pa_autoconfigure_django.py --python=3.6 https://github.com/<your-github-username>/my-first-blog.git
     
 
-As you watch that running, you'll be able to see what it's doing:
+Докато гледате това да работи, ще можете да видите какво прави:
 
-- Downloading your code from GitHub
-- Creating a virtualenv on PythonAnywhere, just like the one on your own computer
-- Updating your settings file with some deployment settings
-- Setting up a database on PythonAnywhere using the `manage.py migrate` command
-- Setting up your static files (we'll learn about these later)
-- And configuring PythonAnywhere to serve your web app via its API
+- Изтегляне на вашия код от GitHub
+- Създаване на virtualenv на PythonAnywhere, точно като този на вашия собствен компютър
+- Актуализиране на вашия файл с настройки с някои настройки за внедряване
+- Настройка на база данни на PythonAnywhere с помощта на командата `manage.py migrate`
+- Настройка на статичните ви файлове (за тях ще научим по-късно)
+- И конфигуриране на PythonAnywhere да обслужва вашето уеб приложение чрез неговия API
 
-On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider.
+На PythonAnywhere всички тези стъпки са автоматизирани, но те са същите стъпки, които би трябвало да преминете с всеки друг доставчик на сървъри.
 
-The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own computer, so it can have different posts and admin accounts. As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
+Основното, което трябва да забележите в момента, е, че вашата база данни в PythonAnywhere всъщност е напълно отделена от вашата база данни на вашия собствен компютър, така че може да има различни публикации и администраторски акаунти. В резултат на това, точно както направихме на вашия собствен компютър, трябва да инициализираме администраторския акаунт с `createsuperuser`. PythonAnywhere автоматично активира вашия virtualenv за вас, така че всичко, което трябва да направите, е да стартирате:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
     (ola.pythonanywhere.com) $ python manage.py createsuperuser
     
 
-Type in the details for your admin user. Best to use the same ones as you're using on your own computer to avoid any confusion, unless you want to make the password on PythonAnywhere more secure.
+Въведете данните за вашия администратор потребител. Най-добре е да използвате същите, които използвате на собствения си компютър, за да избегнете объркване, освен ако не искате да направите паролата на PythonAnywhere по-сигурна.
 
-Now, if you like, you can also take a look at your code on PythonAnywhere using `ls`:
+Сега, ако желаете, можете също да разгледате кода си на PythonAnywhere, като използвате `ls`:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -190,15 +190,15 @@ Now, if you like, you can also take a look at your code on PythonAnywhere using 
     tests.py  views.py
     
 
-You can also go to the "Files" page and navigate around using PythonAnywhere's built-in file browser. (From the Console page, you can get to other PythonAnywhere pages from the menu button in the upper right corner. Once you're on one of the pages, there are links to the other ones near the top.)
+Можете също да отидете на страницата „Файлове“ и да се придвижвате наоколо, използвайки вградения файлов браузър на PythonAnywhere. (От страницата на конзолата можете да стигнете до други страници на PythonAnywhere от бутона на менюто в горния десен ъгъл. След като сте на една от страниците, има връзки към другите в горната част.)
 
-## You are now live!
+## Вече сте на живо!
 
-Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want :)
+Сега вашият сайт трябва да бъде на живо в публичния Интернет! Кликнете върху страницата „Уеб“ на PythonAnywhere, за да получите линк към нея. Можете да споделите това с всеки, който искате :)
 
-> **Note** This is a beginners' tutorial, and in deploying this site we've taken a few shortcuts which aren't ideal from a security point of view. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) for some tips on securing your site.
+> **Забележка** Това е урок за начинаещи и при разгръщането на този сайт взехме няколко преки пътища, които не са идеални от гледна точка на сигурността. Ако и когато решите да надградите този проект или да започнете нов проект, трябва да прегледате [контролния списък за разгръщане на Django](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) за някои съвети относно осигуряването на вашия сайт.
 
-## Debugging tips
+## Съвети за отстраняване на грешки
 
 If you see an error while running the `pa_autoconfigure_django.py` script, here are a few common causes:
 
