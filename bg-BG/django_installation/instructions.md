@@ -37,23 +37,23 @@ data-collapse=true ces-->
     C:\Users\Name\djangogirls> python -m venv myvenv
     
 
-Където `myvenv` е името на вашия `virtualenv`. You can use any other name, but stick to lowercase and use no spaces, accents or special characters. It is also good idea to keep the name short – you'll be referencing it a lot!
+Където `myvenv` е името на вашия `virtualenv`. Можете да използвате всяко друго име, но се придържайте към малки букви и не използвайте интервали, ударения или специални знаци. Също така е добре името да бъде кратко - ще го препращате много!
 
 <!--endsec-->
 
 <!--sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv myvenv`. It will look like this:
+Можем да създадем `virtualenv` и в Linux и OS X, като пуснем `python3 -m venv myvenv`. Ще изглежда така:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 -m venv myvenv
     
 
-`myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces. It is also a good idea to keep the name short as you'll be referencing it a lot!
+`myvenv` е името на вашия `virtualenv`. Можете да използвате всяко друго име, но се придържайте към малки букви и не използвайте интервали. Също така е добре името да бъде кратко, понеже ще го препращате много!
 
-> **NOTE:** On some versions of Debian/Ubuntu you may receive the following error:
+> **ЗАБЕЛЕЖКА:** В някои версии на Debian/Ubuntu може да получите следната грешка:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
