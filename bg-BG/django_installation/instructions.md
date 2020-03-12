@@ -6,13 +6,13 @@
 
 Преди да инсталираме Django, ще ви накараме да инсталирате изключително полезен инструмент, който да ви помогне да поддържате средата си на кодиране подредена на вашия компютър. Възможно е да пропуснете тази стъпка, но силно се препоръчва. Като започнете с възможно най-добрата настройка, ще ви спести много проблеми в бъдеще!
 
-Така че, нека създадем **виртуална среда** (наричана още *virtualenv*). Virtualenv ще изолира вашата настройка на Python/Django на база проект. This means that any changes you make to one website won't affect any others you're also developing. Neat, right?
+Така че, нека създадем **виртуална среда** (наричана още *virtualenv*). Virtualenv ще изолира вашата настройка на Python/Django на база проект. Това означава, че всички промени, които правите в един уебсайт, няма да засегнат други, които също разработвате. Яко, нали?
 
-All you need to do is find a directory in which you want to create the `virtualenv`; your home directory, for example. On Windows, it might look like `C:\Users\Name` (where `Name` is the name of your login).
+Всичко, което трябва да направите, е да намерите директория, в която искате да създадете `virtualenv`; вашата домашна директория, например. В Windows може да изглежда като `C:\Users\Name` (където `Name` е името на вашия логин).
 
-> **NOTE:** On Windows, make sure that this directory does not contain accented or special characters; if your username contains accented characters, use a different directory, for example, `C:\djangogirls`.
+> **ЗАБЕЛЕЖКА:** В Windows уверете се, че тази директория не съдържа акцентирани или специални знаци; ако вашето потребителско име съдържа символи с ударение, използвайте друга директория, например, `C:\djangogirls`.
 
-For this tutorial we will be using a new directory `djangogirls` from your home directory:
+За този урок ще използваме нова директория `djangogirls` от вашата домашна директория:
 
 {% filename %}command-line{% endfilename %}
 
@@ -20,7 +20,7 @@ For this tutorial we will be using a new directory `djangogirls` from your home 
     $ cd djangogirls
     
 
-We will make a virtualenv called `myvenv`. The general command will be in the format:
+Ще направим virtualenv, наречен `myvenv`. Общата команда ще бъде във формата:
 
 {% filename %}command-line{% endfilename %}
 
