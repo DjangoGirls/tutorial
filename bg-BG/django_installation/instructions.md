@@ -1,12 +1,12 @@
-> Part of this section is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> Част от този раздел е базиран на уроци от Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
-> Part of this section is based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. The django-marcador tutorial is copyrighted by Markus Zapke-Gründemann et al.
+> Част от този раздел е базиран на [ django-marcador    урок ](http://django-marcador.keimlink.de/) лицензиран съгласно Creative Commons    Attribution-ShareAlike 4.0 международен лиценз. Урокът за джанго-маркадор е защитен с авторско право от Markus Zapke-Gründemann et al.
 
-## Virtual environment
+## Виртуална среда
 
-Before we install Django we will get you to install an extremely useful tool to help keep your coding environment tidy on your computer. It's possible to skip this step, but it's highly recommended. Starting with the best possible setup will save you a lot of trouble in the future!
+Преди да инсталираме Django, ще ви накараме да инсталирате изключително полезен инструмент, който да ви помогне да поддържате средата си на кодиране подредена на вашия компютър. Възможно е да пропуснете тази стъпка, но силно се препоръчва. Като започнете с възможно най-добрата настройка, ще ви спести много проблеми в бъдеще!
 
-So, let's create a **virtual environment** (also called a *virtualenv*). Virtualenv will isolate your Python/Django setup on a per-project basis. This means that any changes you make to one website won't affect any others you're also developing. Neat, right?
+Така че, нека създадем **виртуална среда** (наричана още *virtualenv*). Virtualenv ще изолира вашата настройка на Python/Django на база проект. This means that any changes you make to one website won't affect any others you're also developing. Neat, right?
 
 All you need to do is find a directory in which you want to create the `virtualenv`; your home directory, for example. On Windows, it might look like `C:\Users\Name` (where `Name` is the name of your login).
 
