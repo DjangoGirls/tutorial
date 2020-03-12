@@ -30,14 +30,14 @@
 <!--sec data-title="Virtual environment: Windows" data-id="virtualenv_installation_windows"
 data-collapse=true ces-->
 
-To create a new `virtualenv`, you need to open the command prompt and run `python -m venv myvenv`. It will look like this:
+За да създадете нов `virtualenv `, трябва да отворите командния ред и да стартирате `python -m venv myvenv`. Ще изглежда така:
 
 {% filename %}command-line{% endfilename %}
 
     C:\Users\Name\djangogirls> python -m venv myvenv
     
 
-Where `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces, accents or special characters. It is also good idea to keep the name short – you'll be referencing it a lot!
+Където `myvenv` е името на вашия `virtualenv`. You can use any other name, but stick to lowercase and use no spaces, accents or special characters. It is also good idea to keep the name short – you'll be referencing it a lot!
 
 <!--endsec-->
 
