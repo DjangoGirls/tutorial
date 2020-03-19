@@ -13,9 +13,9 @@ from .models import Post
 admin.site.register(Post)
 ```
 
-As you can see, we import (include) the Post model defined in the previous chapter. To make our model visible on the admin page, we need to register the model with `admin.site.register(Post)`.
+আগের চ্যাপ্টারে যে পোষ্ট মডেলটি (Post model ) সংজ্ঞায়িত করেছিলাম সেটি এখানে আমরা ইম্পোর্ট(যুক্ত) করেছি। আমাদের এডমিন প্যানেলে যাতে আমাদের মডেল দেখতে পারি সেইজন্য আমাদেরকে `admin.site.register(Post)` এইভাবে নিবন্ধন করতে হবে ।
 
-OK, time to look at our Post model. Remember to run `python manage.py runserver` in the console to run the web server. Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
+চলুন, এখন তাহলে আমাদের পোষ্ট মডেলটি খেয়াল করি দেখি । Remember to run `python manage.py runserver` in the console to run the web server. Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
 
 ![Login page](images/login_page2.png)
 
