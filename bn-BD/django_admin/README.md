@@ -1,6 +1,6 @@
-# Django admin
+# জ্যাঙ্গো এডমিন ( Django admin) 
 
-To add, edit and delete the posts we've just modeled, we will use Django admin.
+আমরা জ্যাঙ্গো এডমিন ব্যবহার করে মডেলকৃত পোষ্ট যোগ , সংযুক্ত বা সম্পাদন এবং ডিলিট করতে পারবো।
 
 Let's open the `blog/admin.py` file in the code editor and replace its contents with this:
 
