@@ -2,7 +2,7 @@
 
 আমরা জ্যাঙ্গো এডমিন ব্যবহার করে মডেলকৃত পোষ্ট যোগ , সংযুক্ত বা সম্পাদন এবং ডিলিট করতে পারবো।
 
-Let's open the `blog/admin.py` file in the code editor and replace its contents with this:
+চলুন, তাহলে আমরা কোড এডিটরে `blog/admin.py` ফাইলটি ওপেন করি এবং ফাইলের বিষয়বস্তু পরিবর্তন করি ।
 
 {% filename %}blog/admin.py{% endfilename %}
 
