@@ -66,7 +66,7 @@ CSS를 쓸 차례에요! 여러분이 사용하고 있는 코드에디터에서 
 
 우리는 여기서 CSS에 대해 깊게 배우거나 다루지않을 거에요. 만약 더 많이 배우고 싶다면, 페이지 마지막 부분에 무료 CSS 코스에 대한 추천을 참고하세요.
 
-하지만 조금이라도 해보자구요. Maybe we could change the color of our headers? 컴퓨터는 특별한 코드를 사용해 색깔을 나타내요. `#`으로 시작해 알파벳(A-F) 와 숫자(0-9) 중 6개를 조합해 나타내요(16진수로 말이에요). 예를 들어, 파란색 코드는 `#0000FF`입니다. 더 많은 색상 코드는 다음 링크에서 찾을 수 있어요: http://www.colorpicker.com/ 그리고 [미리 정의 된 색](http://www.w3schools.com/colors/colors_names.asp), 예를 들어 `빨간색` 또는 `녹색` 등도 사용할 수 있어요.
+하지만 조금이라도 해보자구요. 제목 색깔을 바꿔볼까요? 컴퓨터는 특별한 코드를 사용해 색깔을 나타내요. `#`으로 시작해 알파벳(A-F) 와 숫자(0-9) 중 6개를 조합해 나타내요(16진수로 말이에요). 예를 들어, 파란색 코드는 `#0000FF`입니다. 더 많은 색상 코드는 다음 링크에서 찾을 수 있어요: http://www.colorpicker.com/ 그리고 [미리 정의 된 색](http://www.w3schools.com/colors/colors_names.asp), 예를 들어 `빨간색` 또는 `녹색` 등도 사용할 수 있어요.
 
 `blog/static/css/blog.css`에 아래의 코드를 추가하세요.
 
@@ -79,7 +79,7 @@ h1 a, h2 a {
 
 ```
 
-`h1 a`가 CSS 셀렉터(Selector)에요. This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. 예를 들어 `<h1><a href="">link</a></h1>`은 `h1 a` {...} 을 통해 스타일이 적용됩니다. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
+`h1 a`가 CSS 셀렉터(Selector)에요. 이건 `h1` 안에있는 어떤 `a` 요소에도 스타일을 적용한다는 뜻입니다; `h2` 셀렉터도 `h2`요소에 같은 작용을 한답니다. 예를 들어 `<h1><a href="">link</a></h1>`은 `h1 a` {...} 을 통해 스타일이 적용됩니다. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
 
 CSS파일에서는 HTML 파일에 있는 각 요소들에 스타일을 적용할 수 있어요. 요소를 식별하는 첫 번째 방법은 이름을 붙이는 겁니다. HTML에서 태그 이름으로 찾을 수 있겠죠. `a`, `h1`, `body`요소도 그 예입니다. 상속 `class` 또는 상속 `id`로 요소를 식별합니다. Class와 id는 여러분들이 붙인 이름을 갖게 되지요. 클래스는 요소들의 그룹을 결정하는 것이고, id는 특정 요소들을 지칭해요. 예를 들어, 다음 태그들은 css에서 태그 이름 `a`, 클래스 `external_link`, id `link_to_wiki_page`을 사용해서 식별해요.
 
