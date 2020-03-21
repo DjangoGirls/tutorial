@@ -4,34 +4,34 @@
 
 ## Visual Studio Code
 
-Visual Studio Code는 마이크로소프트가 윈도우, 리눅스, 맥OS를 위해 개발한 소스 코드 에디터입니다. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+Visual Studio Code는 마이크로소프트가 윈도우, 리눅스, 맥OS를 위해 개발한 소스 코드 에디터입니다. 디버깅, 내장 Git 컨트롤,문법 하이라이팅, 지능형 코드 완성, 스니펫, 코드 리팩토링등 지원을 포함하고 있습니다.
 
 [이 곳에서 다운받을 수 있어요.](https://code.visualstudio.com/)
 
 ## Gedit
 
-Gedit is an open-source, free editor, available for all operating systems.
+Gedit는 모든 운영체제에서 사용 가능한 무료 오픈소스에요. 
 
 [이 곳에서 설치할 수 있어요.](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
+Sublime Text는 인기있는 에디터이면서 무료로 사용할 수 있어요. 그리고 설치나 사용이 편리하며 모든 운영체제에서 쓸 수 있어요.
 
 [이 곳에서 다운받을 수 있어요.](https://www.sublimetext.com/3)
 
 ## Atom
 
-Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
+Atom은 또 다른 인기 편집기입니다. 무료 및 오픈소스이며, 윈도우, OS X와 리눅스에서 사용가능합니다. Atom은 [GitHub](https://github.com/)에 의해 개발되었습니다.
 
-[Download it here](https://atom.io/)
+[이 곳에서 다운받을 수 있어요.](https://atom.io/)
 
-## Why are we installing a code editor?
+## 왜 코드 에디터를 설치해야 하나요?
 
-You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
+워드나 노트패드가 있는데도, 굳이 코드 에디터 소프트웨어를 설치해야하는 이유가 궁금할거에요.
 
-The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+첫 번째 이유는 코드는 **순수한 텍스트**이여야 합니다. 그런데 Word나 Textedit 같은 프로그램의 문제는, 그 프로그램들이 제대로된 순수한 텍스트를 생성하지 않기 때문입니다. 그들은 [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format)와 같은 커스텀 서식을 쓴 rich 텍스트(폰트와 서식이 있는 텍스트) 를 생성합니다.
 
-The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
+두 번째 이유는 코드 에디터가 여러분이 개발을 할 때 도움이 되는 여러 기능들을 제공하기 때문이에요. 대표적인 예로, 코드를 해석해서 색으로 문법을 하이라이팅해주는 기능이라든가 쌍따옴표("") 를 자동으로 닫아주는 등과 같은 기능들이지요.
 
-We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
+우리는 앞으로 어떻게 작동하는지 확인할 거에요. 그러면 곧, 여러분은 자신이 선택한 코드 에디터를 제일 좋아한다고 생각하기 시작할 거에요.
