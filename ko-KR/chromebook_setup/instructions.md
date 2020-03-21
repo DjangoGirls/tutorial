@@ -26,26 +26,26 @@ PaizaCloud Cloud IDE 의 터미널은 당신의 명령어를 기다리고 있습
 
 1. [ 크롬 웹스토어](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)에서 Cloud9을 설치합니다.
 2. [c9.io](https://c9.io) 접속후 *AWS Cloud9 시작하기*를 선택합니다.
-3. AWS 계정 등록을합니다 (신용카드 정보 등록이 필요하지만 무료로 사용하실수 있습니다).
+3. AWS 계정 등록을합니다 (신용카드 정보 등록하셔야 하지만 무료로 사용하실수 있습니다).
 4. AWS 대쉬보드에서 *Cloud9*을 서치창에 입력후 클릭합니다.
-5. Cloud9 대쉬보드에서 *가상환경 만들기*를 클릭합니다.
+5. Cloud9 대쉬보드에서 *환경 만들기*를 클릭합니다.
 6. *django-girls*라고 이름 짓습니다.
-7. 세팅 설정중, "가상환경 속성"에서 * 가상환경에 새 인스턴스 만들기 (EC2)*와 *t2.micro* "인스턴스 속성"을 선택합니다 ("무료사용자등급 가능"이라 표시 되어야합니다). 기본 비용절약 설정과 다른 기본설정으로 괜찮습니다.
+7. 세팅 설정중, "환경 속성"에서 * 환경에 새 인스턴스 만들기 (EC2)*와 *t2.micro* "인스턴스 속성"을 선택합니다 ("무료사용자등급 가능"이라 표시 되어야합니다). 기본 비용절약 설정과 다른 기본설정으로 괜찮습니다.
 8. *다음 단계*를 선택합니다.
-9. * 새 환경 만들기*를 선택합니다.
+9. * 환경 만들기*를 선택합니다.
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+이제 다음과 같이 사이드바, 텍스트가 있는 큰 메인 창, 그리고 하단에 작은 창이 있는 화면이 보이실 겁니다.
 
 {% filename %}bash{% endfilename %}
 
     yourusername:~/workspace $
     
 
-This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+이 하단영역은 귀하의 터미널입니다. 이 터미널을 이용해 원격 Cloud9 컴퓨터에 커맨드에 커맨드를 보낼 수 있습니다. 창을 더 크게 조절하실수 있습니다.
 
 ### 가상 환경
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+가상환경 (virtualenv라고도 부름)은 우리가 진행하고 있는 프로젝트를 위해 유용한 컴퓨터 코드를 담아놓을 수 있는 개인 상자와도 같습니다. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
 Run:
 
