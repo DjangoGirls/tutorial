@@ -89,7 +89,7 @@ CSS파일에서는 HTML 파일에 있는 각 요소들에 스타일을 적용할
 
 W3Schools에서 [CSS Selectors](http://www.w3schools.com/cssref/css_selectors.asp)에 대해 더 읽을 수 있어요.
 
-We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file in the code editor and add this line at the very beginning of it:
+HTML 템플릿에 CSS를 추가했다는 사실을 알려줄 필요가 있어요. 코드 에디터에 있는 `blog/templates/blog/post_list.html`파일을 열고 가장 위에 다음 줄을 추가하세요:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -202,7 +202,7 @@ body {
 </div>
 ```
 
-다음 각 다른 선택자(selector) 에 정의를 붙여볼거에요. 클래스를 나타내는 선택자는 `.`으로 시작합니다. 아래의 코드(클래스 선택자) 를 이해하기 위해서 CSS에 대한 튜토리얼이나 설명을 참고하면 큰 도움이 될 거에요. For now, copy and paste it into your `blog/static/css/blog.css` file:
+다음 각 다른 선택자(selector) 에 정의를 붙여볼거에요. 클래스를 나타내는 선택자는 `.`으로 시작합니다. 아래의 코드(클래스 선택자) 를 이해하기 위해서 CSS에 대한 튜토리얼이나 설명을 참고하면 큰 도움이 될 거에요. 이제 `blog/static/css/blog.css`파일으로 아래 코드를 복사, 붙여넣기 하세요:
 
 {% filename %}blog/templates/blog/post_blog.css{% endfilename %}
 
