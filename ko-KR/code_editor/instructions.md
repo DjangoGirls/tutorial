@@ -4,7 +4,7 @@
 
 ## Visual Studio Code
 
-Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+Visual Studio Code는 마이크로소프트가 윈도우, 리눅스, 맥OS를 위해 개발한 소스 코드 에디터입니다. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
 
 [이 곳에서 다운받을 수 있어요.](https://code.visualstudio.com/)
 
