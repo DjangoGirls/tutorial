@@ -8,7 +8,7 @@
 
 1. [PaizaCloud Cloud IDE](https://paiza.cloud/) 사이트에 접속합니다.
 2. 새 계정을 생성합니다.
-3. Click *New Server* and choose the Django app
+3. *새 서버* 선택후 Django 앱을 선택합니다.
 4. Terminal 버튼(왼쪽 창에 있습니다) 버튼을 클릭합니다.
 
 이제 당신은 버튼이 왼쪽에 있는 사이드바 형태의 인터페이스를 볼 수 있을 겁니다. "Terminal" 버튼을 눌러 터미널 창을 연 뒤 해당 명령어를 입력하세요:
