@@ -22,14 +22,14 @@ PaizaCloud Cloud IDE 의 터미널은 당신의 명령어를 기다리고 있습
 
 #### AWS Cloud9
 
-Currently Cloud 9 requires you to sign up with AWS and enter credit card information.
+현재 Cloud9은 AWS 계정 등록과 신용카드 정보 등록을 필요로합니다
 
-1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Go to [c9.io](https://c9.io) and click *Get started with AWS Cloud9*
-3. Sign up for an AWS account (requires credit card information, but you can use it for free)
-4. In the AWS Dashboard, enter *Cloud9* in the search bar and click it
-5. In the Cloud 9 dashboard, click *Create environment*
-6. Name it *django-girls*
+1. [ 크롬 웹 스토어 ](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)에서 Cloud9을 설치합니다.
+2. [c9.io](https://c9.io) 접속후 *AWS Cloud9 시작하기*를 선택합니다.
+3. AWS 계정 등록을합니다 (신용카드 정보 등록이 필요하지만 무료로 사용하실수 있습니다).
+4. AWS 대쉬보드에서 *Cloud9*을 서치창에 입력후 클릭합니다.
+5. Cloud9 대쉬보드에서 *가상환경 만들기*를 클릭합니다.
+6. *django-girls*라고 이름 짓습니다.
 7. While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
 8. Click *Next step*
 9. Click *Create environment*
