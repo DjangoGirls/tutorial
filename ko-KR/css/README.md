@@ -37,7 +37,7 @@ Bootstrap을 설치하려면 코드 편집기에서 `.html ` 파일을 열고 �
 
 ### 어디에 정적 파일을 넣어야 하나요
 
-Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
+서버에서 `collectstatic`를 실행할 때 처럼, 장고는 "admin" 앱에서 동적 파일을 어디서 찾아야하는지 이미 알고 있어요. 이제 `blog`앱에 동적파일을 추가하면 되어요.
 
 blog앱 안에 `static`폴더를 만드세요:
 
