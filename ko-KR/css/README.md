@@ -299,6 +299,6 @@ h1, h2, h3, h4 {
 
 CSS를 고치는 것을 두려워하지 말고, 편하게 고치고 싶은 것을 수정해보세요. 이것저것 고쳐보면서 CSS와 놀아보면 금방 이해할 수 있게 된답니다. 만약 무엇인가 깨져보이면, 걱정하지마세요 - 항상 되돌릴 수 있어요!
 
-We really recommend taking the free online courses "Basic HTML & HTML5" and "Basic CSS" on [freeCodeCamp](https://learn.freecodecamp.org/). They can help you learn all about making your websites prettier with HTML and CSS.
+[freeCodeCamp](https://learn.freecodecamp.org/)에서 "기본 HTML &ampl HTML5" 와 "기본 CSS" 무료 온라인 강의 들어보시길 권장드려요. HTML과 CSS로 귀하의 웹 사이트를 더 근사하게 만들 방법들을 배우실수 있답니다.
 
 다음 장을 읽을 준비됐나요?! :)
