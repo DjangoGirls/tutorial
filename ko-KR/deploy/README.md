@@ -4,7 +4,7 @@
 
 지금까지는 웹사이트를 내 컴퓨터에서만 볼 수 있었어요. 이제 어떻게 웹사이트를 배포하는지 배워봅시다. 배포(deploy) 는 애플리케이션을 인터넷에 올려놓아 다른 사람들도 볼 수 있게 해주는 것 말해요. :)
 
-앞에서 배웠듯이, 웹사이트는 서버라는 곳에 들어가요. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
+앞에서 배웠듯이, 웹사이트는 서버라는 곳에 들어가요. 인터넷상에 많은 서버 공급자들이 있지만, 우린 [PythonAnywhere](https://www.pythonanywhere.com/)을 사용할 겁니다. PythonAnywhere은 방문자가 많지 않은 소규모 어플리케이션은 무료로 사용가능하니 지금 우리에겐 충분하답니다.
 
 우리가 사용할 다른 서비스는 [GitHub](https://www.github.com)라는 코드 호스팅 서비스입니다. 프로그래머들이 애용하는 곳들 중 하나로 대부분의 모든 프로그래머가 GitHub 계정을 가지고 있다고 봐도 될 거예요. 이제 여러분도 하나 만들 때가 되었어요!
 
@@ -12,7 +12,7 @@
 
 # Git
 
-> **Note** If you already did the Installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
+> **참고** 이미 설치를 끝냈다면, 이 부분을 다시 할 필요가 없어요 - 이 부분을 뛰어넘고 Git 저장소를 만드는 것부터 시작하세요.
 
 {% include "/deploy/install_git.md" %}
 
@@ -20,7 +20,7 @@
 
 Git은 코드 저장소(줄여서 "repo"라고 합니다.)에 특정한 파일들 집합의 변화를 추적하여 관리합니다. 이제 프로젝트를 시작해볼까요? 콘솔창을 열어서 `djangogirls` 디렉토리에서 아래 명령어들을 실행하세요. 아래 명령 중에서 Your Name 대신 여러분의 이름을, you@example.com 대신에 여러분의 이메일 주소를 입력하세요.
 
-> **Note** Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. 반드시 `djangogirls` 폴더에서 해야합니다.
+> **주의**: 저장소를 초기화 하기 전에 여러분의 현재 작업 디렉토리가 어디인지 꼭 확인하세요. 맥OS나 Linux라면 `pwd` 명령으로, 윈도우라면 `cd` 명령어를 실행하면 알 수 있을 거에요. 반드시 `djangogirls` 폴더에서 해야합니다.
 
 {% filename %}command-line{% endfilename %}
 
@@ -30,7 +30,7 @@ Git은 코드 저장소(줄여서 "repo"라고 합니다.)에 특정한 파일�
     $ git config --global user.email you@example.com
     
 
-Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email ever again).
+git 저장소 초기화는 프로젝트를 시작할 때 딱 한번만 필요합니다 (username과 email 등록 명령은 다시 입력할 필요가 없습니다).
 
 Git은 이 디렉토리에 모든 파일들과 폴더들의 변경점을 추적할 거에요. 무시(ignore) 하도록 지정한 파일들을 제외하고는 말이죠. 기본 디렉토리에다 `.gitignore`라는 파일을 만들어서 특정 파일이나 폴더를 추적하지 않도록 할 수 있습니다. 에디터를 열어서 아래 내용을 넣어주세요:
 
