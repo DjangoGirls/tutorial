@@ -48,7 +48,7 @@ Git은 이 디렉토리에 모든 파일들과 폴더들의 변경점을 추적�
 
 "djangogirls"폴더에 `.gitignore`파일을 저장하세요.
 
-> **주의**: 파일명 앞에 마침표로 시작하는 것이 중요합니다! 꼭 붙여주세요. If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof. And be sure not to add `.txt`, `.py`, or any other extension to the file name -- it will only be recognized by Git if the name is just `.gitignore`.
+> **주의**: 파일명 앞에 마침표로 시작하는 것이 중요합니다! 꼭 붙여주세요. 만약 여러분이 파일을 만드는 것이 어렵다면 (예를 들어 맥에서는 파인더에서 마침표로 시작하는 파일을 생성하는걸 좋아하지 않아요.) "다른 이름으로 저장(Save As)" 기능을 사용하세요. 대부분 이 것으로 충분할거에요. 그리고 `.txt`나 `.py`등 다른 파일 이름 익스텐션을 붙이지 마세요 -- 명칭이 `.gitignore` 이여야 git이 인식할수 있답니다.
 > 
 > Note .gitignore 파일에 있는 db.sqlite3이라는 파일은 모든 게시물이 저장된 로컬 데이터베이스입니다. 로컬 테스트 사이트와 PythonAnywhere에서 실제 서비스되는 웹사이트는 분리된 데이터베이스를 사용할 것이다. 이것이 표준 웹 개발 방법이다. 다른 데이터베이스로는 SQLite로도 사용하지만 보통은 SQLite보다 훨씬 많은 방문자를 보유한 웹사이트일 경우 MySQL을 사용합니다. GitHub 저장소에 SQLite 데이터베이스를 제외하고 저장하면, 지금까지 작성한 모든 게시물을 로컬에서만 사용할 수 있으므로 실제 운영하는 프로덕션 환경에서는 다시 새 데이터베이스를 추가해야합니다. 로컬 데이터베이스를 놀이터처럼 생각하고 이것저것 테스트해보세요. 실제 블로그 내 게시글이 삭제되지 않으니 걱정하지 마세요.
 
