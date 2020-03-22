@@ -52,7 +52,7 @@ Git은 이 디렉토리에 모든 파일들과 폴더들의 변경점을 추적�
 > 
 > Note .gitignore 파일에 있는 db.sqlite3이라는 파일은 모든 게시물이 저장된 로컬 데이터베이스입니다. 로컬 테스트 사이트와 PythonAnywhere에서 실제 서비스되는 웹사이트는 분리된 데이터베이스를 사용할 것이다. 이것이 표준 웹 개발 방법이다. 다른 데이터베이스로는 SQLite로도 사용하지만 보통은 SQLite보다 훨씬 많은 방문자를 보유한 웹사이트일 경우 MySQL을 사용합니다. GitHub 저장소에 SQLite 데이터베이스를 제외하고 저장하면, 지금까지 작성한 모든 게시물을 로컬에서만 사용할 수 있으므로 실제 운영하는 프로덕션 환경에서는 다시 새 데이터베이스를 추가해야합니다. 로컬 데이터베이스를 놀이터처럼 생각하고 이것저것 테스트해보세요. 실제 블로그 내 게시글이 삭제되지 않으니 걱정하지 마세요.
 
-`git add`하기 전이나 변경된 것이 있는지 잘 모를 때마다 `git status` 명령어를 사용하는 것은 좋은 방법이에요. This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
+`git add`하기 전이나 변경된 것이 있는지 잘 모를 때마다 `git status` 명령어를 사용하는 것은 좋은 방법이에요. 잘못된 파일이 추가될 경우 이를 멈출 수 있게 도움을 주어요. `git status` 명령은 미추적/수정/스테이지된 파일들, 브랜치 상태와 그 외 많은 정보들을 보여줍니다. 출력 결과는 다음과 비슷합니다:
 
 {% filename %}command-line{% endfilename %}
 
@@ -86,11 +86,11 @@ Git은 이 디렉토리에 모든 파일들과 폴더들의 변경점을 추적�
      create mode 100644 mysite/wsgi.py
     
 
-## Pushing your code to GitHub
+## GitHub에 코드 넣기
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!) Be sure to remember your password (add it to your password manager, if you use one).
+[GitHub.com](https://www.github.com)에 가서 무료 사용자 계정으로 회원가입을 하세요. (만약 워크샵 준비과정에서 하셨다면 훌륭하십니다!) 비밀번호 관리를 꼭 해주세요 (만약 사용하신다면 비밀번호 관리자에 추가해 주세요). 
 
-Then, create a new repository, giving it the name "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+그 다음 새 저장소(new repository)를 "my-first-blog"라는 이름으로 생성하세요. Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
 
 ![](images/new_github_repo.png)
 
