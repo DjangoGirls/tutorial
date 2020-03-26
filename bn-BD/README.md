@@ -22,9 +22,9 @@
 
 ## তুমি এই টিউটোরিয়াল জুড়ে কি শিখবে? 
 
-Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
+যখন তুমি এই টিউটোরিয়াল শেষ করবে, তখন তোমার কাছে তোমার ওয়েব এপ্লিকেশন থাকবেঃ তোমার নিজের ব্লগ। এরপর তোমাকে দেখাবো তুমি কিভাবে এটি অনলাইনে প্রকাশ করবে, যাতে সবাই তোমার এই তৈরি করা কাজ দেখতে পারে সবাই ! 
 
-It will (more or less) look like this:
+এটি দেখতে মোটামুটি এমনঃ 
 
 ![Figure 0.1](images/application.png)
 
