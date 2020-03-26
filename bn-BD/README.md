@@ -28,11 +28,11 @@
 
 ![Figure 0.1](images/application.png)
 
-> তুমি যদি এই টিউটোরিয়াল নিজে নিজে কাজ করো এবং তোমার যদি কোচ না থাকে যে তোমাকে কোন সমস্যা পড়লে তোমাকে সাহায্য করবে । এই সমস্যা থেকে উত্তরণের জন্য আছে আমাদের চ্যাট সিস্টেম । আমরা আমাদের সকল কোচ এবং পূর্বে যারা এই টিউটোরিয়াল শেষ করেছে, তারা সেখানে থাকবে বিভিন্ন বিষয়ে সাহায্য করার জন্য। Don't be afraid to ask your question there!
+> তুমি যদি এই টিউটোরিয়াল নিজে নিজে কাজ করো এবং তোমার যদি কোচ না থাকে যে তোমাকে কোন সমস্যা পড়লে তোমাকে সাহায্য করবে । এই সমস্যা থেকে উত্তরণের জন্য আছে আমাদের চ্যাট সিস্টেম । আমরা আমাদের সকল কোচ এবং পূর্বে যারা এই টিউটোরিয়াল শেষ করেছে, তারা সেখানে থাকবে বিভিন্ন বিষয়ে সাহায্য করার জন্য। সেখানে প্রশ্ন করতে সংকোচবোধ করো না । 
 
-OK, [let's start at the beginning…](./how_the_internet_works/README.md)
+ঠিক আছে, তাহলে শুরু করি 
 
-## Following the tutorial at home
+## বাড়িতে বসে এই টিউটোরিয়াল অনুসরণ 
 
 It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
 
