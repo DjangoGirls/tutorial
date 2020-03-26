@@ -38,14 +38,14 @@
 
 প্রতিটি চ্যাপ্টার অলরেডি কভার হয়েছে এবং এর ভিডিওগুলো তোমরা লিংকে ক্লিক করলেই পেয়ে যাবে । 
 
-## About and contributing
+## আমাদের সম্পর্কে এবং যাদের অবদান 
 
-This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
+এই টিউটোরিয়ালটি মেইন্টেইন করে [জ্যাঙ্গোগার্লস](https://djangogirls.org/) তুমি যদি এই টিউটোরিয়ালে কোন ভুল বা কোন নতুন জিনিস যুক্ত করতে চাও তাহলে দয়া করে [এই লিংকে যাও](https://github.com/DjangoGirls/tutorial/blob/master/README.md)
 
-## Would you like to help us translate the tutorial into other languages?
+## তুমি কি আমাদের এই টিউটোরিয়ালটি অন্য ভাষায় ট্রান্সলেট করে অবদান রাখতে চাও? 
 
-Currently, translations are being kept on crowdin.com platform at:
+এখন, ট্রান্সলেশনের কাজটি crowdin.com প্লাটফর্মে রাখা আছে । 
 
-https://crowdin.com/project/django-girls-tutorial
+https://crowdin.com/project/django-girls-tutorial 
 
 If your language is not listed on [crowdin](https://crowdin.com/), please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
