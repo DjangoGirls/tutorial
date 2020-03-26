@@ -14,13 +14,13 @@
 
 তোমার কি এই রকম মনে হয়েছে যে, পৃথিবীতে প্রযুক্তি অনেক এগিয়ে চলছে , আর তুমি এটা থেকে অনেক পিছিয়ে পড়ছো? তুমি কি কখনো অবাক হয়েছো যে, কিভাবে একটি ওয়েবসাইট তৈরি হয়, কিন্তু কোন ভাল অনুপ্রেরণা না থাকায় তুমি এটা তৈরি করতে পারছো না? বর্তমান সফটওয়্যার শিল্প কি আপনার নিজের সামান্য কোনো সফটওয়্যার বানানোর জন্যও অনেক জটিল মনে হয়েছে?
 
-Well, we have good news for you! Programming is not as hard as it seems and we want to show you how fun it can be.
+ঠিক আছে, তোমার জন্য আমাদের পক্ষ থেকে একটি সুখবর আছে !! প্রোগ্রামিং যতটা কঠিন ভাবছো আসলে তা এত কঠিন নয় বরং এটি কিভাবে আরো আনন্দদায়ক করা যায় তা তোমাকে আমরা দেখাবো। 
 
-This tutorial will not magically turn you into a programmer. If you want to be good at it, you need months or even years of learning and practice. But we want to show you that programming or creating websites is not as complicated as it seems. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.
+এই টিউটোরিয়ালটি তোমাকে রাতারাতি প্রোগ্রামার বানিয়ে দিবে না। তুমি যদি এই বিষয়ে ভাল হয়ে চাও, তোমাকে এটি শিখতে হবে এবং অনুশীলন করতে হবে, এরজন্য তোমার অনেক মাস বা বছর লাগতে পারে । কিন্তু আমরা তোমাকে দেখাবো প্রোগ্রামিং বা ওয়েবসাইট তৈরি করা আসলে এত জটিল কিছু নয় যা তুমি ভাবছো । আমরা প্রতিটি ক্ষুদ্র ক্ষুদ্র জিনিস তোমাকে ব্যাখা করার চেষ্টা করবো, যাতে তুমি এই প্রযুক্তি রিলেটেড কোন কিছুকে আর ভয় না পাও । 
 
-We hope that we'll be able to make you love technology as much as we do!
+আমরা আশা করি, আমরা যেভাবে এই প্রযুক্তির প্রতিটি স্পন্দনকে ভালবাসি, সেভাবে তুমি ভালবাসবে । 
 
-## What will you learn during the tutorial?
+## তুমি এই টিউটোরিয়াল জুড়ে কি শিখবে? 
 
 Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
 
