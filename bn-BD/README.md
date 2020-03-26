@@ -1,6 +1,6 @@
 # জ্যাঙ্গো গার্লস টিউটোরিয়াল 
 
-[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
+[![গিটার ](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
 > এই টিউটোরিয়ালটি Creative Common Attribution-ShareAlike 4.0 International লাইসেন্স এর মাধ্যমে প্রকাশিত হয়েছে । এই লাইসেন্স সম্পর্কে আরো জানতে ভিজিট করতে পারো নিচের এই লিংকেঃ https://creativecommons.org/licenses/by-sa/4.0 
 
@@ -26,7 +26,7 @@
 
 এটি দেখতে মোটামুটি এমনঃ 
 
-![Figure 0.1](images/application.png)
+![ফিগার ০.১ ](images/application.png)
 
 > তুমি যদি এই টিউটোরিয়াল নিজে নিজে কাজ করো এবং তোমার যদি কোচ না থাকে যে তোমাকে কোন সমস্যা পড়লে তোমাকে সাহায্য করবে । এই সমস্যা থেকে উত্তরণের জন্য আছে আমাদের চ্যাট সিস্টেম । আমরা আমাদের সকল কোচ এবং পূর্বে যারা এই টিউটোরিয়াল শেষ করেছে, তারা সেখানে থাকবে বিভিন্ন বিষয়ে সাহায্য করার জন্য। সেখানে প্রশ্ন করতে সংকোচবোধ করো না । 
 
@@ -48,4 +48,4 @@
 
 https://crowdin.com/project/django-girls-tutorial 
 
-If your language is not listed on [crowdin](https://crowdin.com/), please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
+যদি তোমার ভাষাটি [crowdin](https://crowdin.com/) এ না থাকে, দয়া করে [ একটি নতুন ইস্যু ](https://github.com/DjangoGirls/tutorial/issues/new) আমাদেরকে এই সম্পর্কে জানাও যাতে আমরা এটিকে যুক্ত করতে পারি ।
