@@ -34,9 +34,9 @@
 
 ## বাড়িতে বসে এই টিউটোরিয়াল অনুসরণ 
 
-It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+জাঙ্গো গার্লস ওয়ার্কশপে অংশ নেওয়া ভাল , তবে আমরা সচেতন যে সবসময় এটিতে অংশ নেওয়া সম্ভব নয়। এজন্যই আমরা তোমাদেরকে বাসায় বসে এই টিউটোরিয়াল অনুসরণ করার তাগিদ দিচ্ছি । যারা বাসায় বসে পড়বে, তাদের জন্য আমরা এখন ভিডিও তৈরি করছি যাতে এই টিউটোরিয়াল অনুসরণ করতে আরো সহজ হবে । এটির কাজ এখনো চলছে, তবে শীঘ্রই এই সকল বিষয় কাভার করা হবে ইউটিউবের এই চ্যানেলেঃ [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed)
 
-In every chapter already covered, there is a link that points to the correct video.
+প্রতিটি চ্যাপ্টার অলরেডি কভার হয়েছে এবং এর ভিডিওগুলো তোমরা লিংকে ক্লিক করলেই পেয়ে যাবে । 
 
 ## About and contributing
 
