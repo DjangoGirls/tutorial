@@ -22,12 +22,12 @@ The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You 
 
 #### AWS Cloud9
 
-Currently Cloud 9 requires you to sign up with AWS and enter credit card information.
+В даний час Cloud 9 вимагає зареєструватися за допомогою AWS і ввести інформацію кредитної карти.
 
-1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Go to [c9.io](https://c9.io) and click *Get started with AWS Cloud9*
-3. Sign up for an AWS account (requires credit card information, but you can use it for free)
-4. In the AWS Dashboard, enter *Cloud9* in the search bar and click it
+1. Встановити Cloud 9 з [веб-магазину Chrome](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+2. Перейдіть до [c9.io](https://c9.io) та натисніть *Get started with AWS Cloud9*
+3. Створіть обліковий запис AWS (потрібна інформація про кредитну картку, але ви можете користуватись цим безкоштовно)
+4. В AWS-Dashboard, введіть *Cloud9* в рядку пошуку і клацніть на ньому
 5. In the Cloud 9 dashboard, click *Create environment*
 6. Name it *django-girls*
 7. While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
