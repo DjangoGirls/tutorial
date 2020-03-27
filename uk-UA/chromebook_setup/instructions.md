@@ -28,7 +28,7 @@ The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You 
 2. Перейдіть до [c9.io](https://c9.io) та натисніть *Get started with AWS Cloud9*
 3. Створіть обліковий запис AWS (потрібна інформація про кредитну картку, але ви можете користуватись цим безкоштовно)
 4. В AWS-Dashboard, введіть *Cloud9* в рядку пошуку і клацніть на ньому
-5. In the Cloud 9 dashboard, click *Create environment*
+5. У панелі Cloud9 натисніть *Create environment*
 6. Name it *django-girls*
 7. While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
 8. Click *Next step*
