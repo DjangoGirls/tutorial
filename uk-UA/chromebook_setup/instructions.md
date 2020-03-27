@@ -30,22 +30,22 @@ The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You 
 4. В AWS-Dashboard, введіть *Cloud9* в рядку пошуку і клацніть на ньому
 5. У панелі Cloud9 натисніть *Create environment*
 6. Назвіть його *django-girls*
-7. Під час налаштування параметрів виберіть *Create a new instance for environment (EC2)* для "Environment Type" та *t2.micro* для "Instance type" (він має сказати "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
-8. Click *Next step*
-9. Click *Create environment*
+7. Під час налаштування параметрів виберіть *Create a new instance for environment (EC2)* для "Environment Type" та *t2.micro* для "Instance type" (він має сказати "Free-tier eligible."). Економне налаштування за замовчуванням задовільне, а ви можете залишити інші значення також без змін.
+8. Натисніть *Next step*
+9. Натисніть *Create environment*
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+Тепер ви повинні побачити інтерфейс із бічною панеллю, великим основним вікном з деяким текстом, і маленьке вікно внизу, що виглядає приблизно так:
 
 {% filename %}bash{% endfilename %}
 
     yourusername:~/workspace $
     
 
-This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+Ця нижня область є вашим терміналом. Ви можете використовувати термінал, щоб відправляти інструкції на віддалений комп'ютер Cloud9. Ви можете змінити розмір вікна, щоб зробити його трохи більшим.
 
-### Virtual Environment
+### Віртуальне середовище
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Віртуальне середовище (також зване virtualenv) - це як приватна скриня, яку ми можемо наповнювати корисним комп'ютерним кодом для проекту, над яким ми працюємо. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
 Run:
 
