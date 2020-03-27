@@ -4,7 +4,7 @@
 
 ## Visual Studio Code
 
-Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+Visual Studio Code - це редактор вихідного коду, розроблений Microsoft для Windows, Linux та macOS. Це включає підтримку відладки, вбудований клієнт Git, підсвічування синтаксису, автоматичні підказки коду, шаблони та рефакторинг коду.
 
 [Завантажте його тут](https://code.visualstudio.com/)
 
