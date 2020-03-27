@@ -4,7 +4,7 @@
 > 
 > ## Virtual Environment
 > 
-> Sebelum kita menginstal django kami akan mengajari anda untuk menginstall tool yang sangat penting yang akan menjaga lingkungan pengembangan anda teratur di komputer anda. Dimungkinkan untuk melewati bagian ini, tapi sangat dianjurkan untuk tidak melewatinya. Dimulai dengan setup sebaik mungkin akan menghindarkan anda dari banyak kesulitan di masa yang akan datang.
+> Sebelum anda menginstal django, anda akan mempelajari cara menginstall tool yang sangat penting untuk menjaga pengembangan komputer anda secara teratur. Dimungkinkan untuk melewati bagian ini, tapi sangat dianjurkan untuk tidak melewatinya. Dimulai dengan setup sebaik mungkin akan menghindarkan anda dari banyak kesulitan di masa yang akan datang.
 > 
 > Karena itu, mari membuat sebuah **virtual environment** (juga disebut *virtualenv*). Virtualenv akan memisahkan setup Python/Django untuk tiap proyek. Ini artinya bahwa suatu perubahan yang anda buat pada sebuah website, tidak akan mempengaruhi website lain yang juga sedang anda kembangkan. Jelas bukan ?
 > 
