@@ -45,9 +45,9 @@ The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You 
 
 ### Віртуальне середовище
 
-Віртуальне середовище (також зване virtualenv) - це як приватна скриня, яку ми можемо наповнювати корисним комп'ютерним кодом для проекту, над яким ми працюємо. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Віртуальне середовище (також зване virtualenv) - це як приватна скриня, яку ми можемо наповнювати корисним комп'ютерним кодом для проекту, над яким ми працюємо. Ми використовуємо це для зберігання різних частин коду, які потрібні для наших різних проектів як окремі частини, так щоб не заплутались між проектами.
 
-Run:
+Виконайте
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -58,16 +58,16 @@ Run:
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: `~=`).
+(Зауважте, що на останньому рядку ми використовуємо знак тільди, за яким слідує знак рівності: `~=`).
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+Створіть обліковий запис [GitHub](https://github.com).
 
 ### PythonAnywhere
 
-The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+Посібник Django Girls включає в себе розділ так званого Розгортання, який являє собою процес використання коду, який створює ваш новий веб-додаток, переміщення його до загальнодоступного комп'ютера (так званого сервера), тому інші люди можуть побачити Вашу роботу.
 
-This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Ця частина трохи дивна при навчанні по Chromebook, так як ми вже використовуємо комп'ютер, який знаходиться в Інтернеті (на відміну від скажімо, ноутбука). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
-Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Таким чином, зареєструйте новий обліковий запис Python Anywhere на [www.pythonanywhere.com](https://www.pythonanywhere.com).
