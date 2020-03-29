@@ -176,7 +176,7 @@ data-collapse=true ces-->
 
 Файла съдържа лист от зависимости, които да се инсталират с командата `pip install`:
 
-Първо създайте файл с име `requirements.txt` в папка `djangogirls`, като използвате IDE инсталиран по-рано. You do this by opening a new file in the code editor and then saving it as `requirements.txt` in the `djangogirls/` folder. Your directory will look like this:
+Първо създайте файл с име `requirements.txt` в папка `djangogirls`, като използвате IDE инсталиран по-рано. Това става като отворите нов файл в редактора и след това го запазите като `requirements.txt` в папка `djangogirls/`. Вашата директория трябва да изглежда така:
 
     djangogirls
     ├── myvenv
@@ -184,14 +184,14 @@ data-collapse=true ces-->
     └───requirements.txt
     
 
-In your `djangogirls/requirements.txt` file you should add the following text:
+Във вашият `djangogirls/requirements.txt` файл трябва да добавите следното:
 
 {% filename %}djangogirls/requirements.txt{% endfilename %}
 
     Django~={{ book.django_version }}
     
 
-Now, run `pip install -r requirements.txt` to install Django.
+Сега напишете команда `pip install -r requirements.txt` за да инсталирате Django.
 
 {% filename %}command-line{% endfilename %}
 
@@ -205,7 +205,7 @@ Now, run `pip install -r requirements.txt` to install Django.
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
+> Ако се появи грешка когато извикате команда pip на Windows платформа, проверете дали името на пътя на проекта ви съдържа празно място, знак за ударение или други специални знаци. (например , `C:\Users\User Name\djangogirls`). Ако съдържа, моля помислете за друго място без разстояние, знак за ударение или други специални знаци (предложение: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
 
 <!--endsec-->
 
