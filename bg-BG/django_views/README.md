@@ -31,14 +31,14 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-As you can see, we created a function (`def`) called `post_list` that takes `request` and will `return` the value it gets from calling another function `render` that will render (put together) our template `blog/post_list.html`.
+Както забелязвате, създаваме фукнция (`def`) наречена `post_list`, която взима за стойност `request` ще върне друга функция `render`, взимайки стойността, шаблона и контекста.
 
-Save the file, go to http://127.0.0.1:8000/ and see what we've got.
+Запазете файла и отидете на http://127.0.0.1:8000/ за да видите какво имаме там.
 
-Another error! Read what's going on now:
+Друга грешка! Прочетете какво се случва сега:
 
 ![Error](images/error.png)
 
-This shows that the server is running again, at least, but it still doesn't look right, does it? Don't worry, it's just an error page, nothing to be scared of! Just like the error messages in the console, these are actually pretty useful. You can read that the *TemplateDoesNotExist*. Let's fix this bug and create a template in the next chapter!
+Това показва, че сървърът отново работи, но все още не изглежда както трябва, нали? Не се тревожете. Това е само страница с грешка, няма от какво да се страхувате! Също като съобщение с грешка в конзолата, тези са всъщност от голяма полза. Можете да прочетете, че *TemplateDoesNotExist*. Нека отстраним тази грешка и създадем шаблон в следващата глава!
 
-> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/2.2/topics/http/views/
+> Научете повече за Django изгледите като прочетете официалната документация: https://docs.djangoproject.com/en/2.2/topics/http/views/
