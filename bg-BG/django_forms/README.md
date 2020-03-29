@@ -117,7 +117,7 @@ urlpatterns = [
 
 ## post_new изглед
 
-Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
+Време е да отворим файлът `blog/views.py` в редактора и да добавим следните няколко реда от код при останалите във формата
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -125,7 +125,7 @@ Time to open the `blog/views.py` file in the code editor and add the following l
 from .forms import PostForm
 ```
 
-And then our *view*:
+И след това нашия изглед:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -135,14 +135,14 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-To create a new `Post` form, we need to call `PostForm()` and pass it to the template. We will go back to this *view*, but for now, let's quickly create a template for the form.
+За да създадем нова форма `Post`, трябва да извикаме `PostForm()` и да я препратим към шаблона (template). Ще се върнем отново на този изглед (view), но сега нека бързо да създадем шаблон (template) за формата.
 
-## Template
+## Шаблон (Template)
 
-We need to create a file `post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
+Трябва да създадем файл `post_edit.html` в директория `blog/templates/blog` и да го отворим в редактора ни за код. За да направим така, че формата да работи са ни нужни няколко неща:
 
-* We have to display the form. We can do that with (for example) {% raw %}`{{ form.as_p }}`{% endraw %}.
-* The line above needs to be wrapped with an HTML form tag: `<form method="POST">...</form>`.
+* Трябва да покажем формата. Можем да направим това чрез (например) {% raw %}`{{ form.as_p }}`{% endraw %}.
+* Горният ред трябва да бъде обвит с HTML form tag: `<form method="POST">...</form>`.
 * We need a `Save` button. We do that with an HTML button: `<button type="submit">Save</button>`.
 * And finally, just after the opening `<form ...>` tag we need to add {% raw %}`{% csrf_token %}`{% endraw %}. This is very important, since it makes your forms secure! If you forget about this bit, Django will complain when you try to save the form:
 
