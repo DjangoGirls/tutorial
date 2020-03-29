@@ -172,11 +172,11 @@ def post_new(request):
 
 Нищо! Пак сме на същата страница и нашият текст изчезна... и няма нова публикация. Какво се обърка?
 
-The answer is: nothing. We need to do a little bit more work in our *view*.
+Отговорът е: нищо. Трябва още малко да поработим върху нашия изглед (*view*).
 
-## Saving the form
+## Запазване на формата
 
-Open `blog/views.py` once again in the code editor. Currently all we have in the `post_new` view is the following:
+Отворете пак `blog/views.py` в редактора. В момента всичко, което имаме в изгледа на `post_new` е следното:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -186,7 +186,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-When we submit the form, we are brought back to the same view, but this time we have some more data in `request`, more specifically in `request.POST` (the naming has nothing to do with a blog "post"; it's to do with the fact that we're "posting" data). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? All the fields from the form are now in `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
+Когато изпратим форматата се връщаме пак на същият изглед, но този път имаме повече данни в запитването (`request`) или по-точно в `request.POST` (наименованието няма нищо общо с блога "post", а с факта, че "публикуваме" информация). Помните ли как в нашия HTML файл при дефинирането на `<form>` имахме променлива `method="POST"`? Всички тези полета са сега в `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
 
 So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. So we need to add a condition (we will use `if` for that):
 
