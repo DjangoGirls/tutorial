@@ -44,15 +44,15 @@
 
 А какво за `pk=post.pk`? `pk` е на кратко от primary key, което е уникален идентификатор за всеки един запис в базата данни. Всеки Django модел има поле, което служи за негов първоначален код (primary key), и каквото и друго име да има, то може също да се съотнесе като "pk". Тъй като не уточнихме първоначалната стойност в нашия `Post` модел, Django създава един за нас (по подразбиране, полето "id" , съдържащо номер, който се увеличава при всеки запис, т.е. 1, 2, 3) и го добавя към полето на всеки от нашите постове. Можем да достигнем primary key като напишем `post.pk`,, по същия начин достъпваме други полета (`title`, `author`, и т.н.)в нашия `Post` обект!
 
-Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
+Сега като отидем на http://127.0.0.1:8000/ ще видим грешка ( както се очаквкаше, тъй като все още нямаме URL или *view* за `post_detail`). Ще изглежда така:
 
 ![NoReverseMatch error](images/no_reverse_match2.png)
 
-## Create a URL to a post's detail
+## Създаване на URL към съдържанието на поста
 
-Let's create a URL in `urls.py` for our `post_detail` *view*!
+Нека създадем URL в `urls.py` за нашия `post_detail` *view*!
 
-We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
+Искаме първия ни пост да бъде показван на този **URL**: http://127.0.0.1:8000/post/1/ 
 
 Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Open the `blog/urls.py` file in the code editor, and add the line `path('post/<int:pk>/', views.post_detail, name='post_detail'),` so that the file looks like this:
 
