@@ -96,8 +96,8 @@ urlpatterns = [
 
 <p>Ако сега се опитате да посетите http://127.0.0.1:8000/, ще видите съобщение от рода на 'web page not available' . Това е така, защото сървърът (помните командата <code>runserver`?) вече не е активен. Погледнете в конзолата на сървъра си и разберете защо.
 
-![Error](images/error1.png)
+![Error (Грешка)](images/error1.png)
 
-Конзолата ви показва грешка, но не се тревожете – това всъщност е много полезно: Казва ви, **че няма атрибут с име 'post_list'**. Това е името на изгледа, който Django се опитва да намери и използва, но ние не сме го създали все още. На този етап, вашият `/admin/` също няма да работи. Не се тревожете – ще стигнем и до там. Ако виждате съобщение с друга греша, опитайте се да презаредите уеб сървъра. To do that, in the console window that is running the web server, stop it by pressing Ctrl+C (the Control and C keys together). On Windows, you might have to press Ctrl+Break. Then you need to restart the web server by running a `python manage.py runserver` command.
+Конзолата ви показва грешка, но не се тревожете – това всъщност е много полезно: Казва ви, **че няма атрибут с име 'post_list'**. Това е името на изгледа, който Django се опитва да намери и използва, но ние не сме го създали все още. На този етап, вашият `/admin/` също няма да работи. Не се тревожете – ще стигнем и до там. Ако виждате съобщение с друга греша, опитайте се да презаредите уеб сървъра. За да направите това, в конзолния прозорец, където сте пуснали сървъра, натиснете Ctrl+C за да го спрете (Ctrl + C заедно). На Windows може би трябва да натиснете Ctrl+Break. След това трябва да презаредите уеб сървъра като напишете командата `python manage.py runserver`.
 
-> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/2.2/topics/http/urls/
+> Ако искате да научите повече за Django URLconfs, вижте в официалната документация: https://docs.djangoproject.com/en/2.2/topics/http/urls/
