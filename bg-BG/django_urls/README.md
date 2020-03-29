@@ -49,9 +49,9 @@ urlpatterns = [
 
 Също така искаме да задържим файла `mysite/urls.py` чист, така че да въведем URL от нашата `blog` апликация към главният файл `mysite/urls.py`.
 
-Давайте напред, акто добавите ред с който ще въведете `blog.urls`. You will also need to change the `from django.urls…` line because we are using the `include` function here, so you will need to add that import to the line.
+Давайте напред, акто добавите ред с който ще въведете `blog.urls`. Също ще искате да направите промени в `from django.urls…` реда, защото използваме функция `include`, така че вие трябва да добавите `import` към този ред.
 
-Your `mysite/urls.py` file should now look like this:
+Вашият файл `mysite/urls.py` трябва да изглежда ето така:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -65,11 +65,11 @@ urlpatterns = [
 ]
 ```
 
-Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and looks for further instructions there.
+Django сега ще пренасочва всичко, което идва към 'http://127.0.0.1:8000/' до `blog.urls` и търси за следващи инструкции тук.
 
 ## blog.urls
 
-Create a new empty file named `urls.py` in the `blog` directory, and open it in the code editor. All right! Add these first two lines:
+Създайте нов файл с име `urls.py` в директория на `blog` и го отворете с редактора си. И така! Добавете следните два реда:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -78,9 +78,9 @@ from django.urls import path
 from . import views
 ```
 
-Here we're importing Django's function `path` and all of our `views` from the `blog` application. (We don't have any yet, but we will get to that in a minute!)
+Тук въвеждаме функцията на Django `path` и всички наши изгледи ( `views`) от `blog` апликацията. (Все още нямаме никакви, но ще стигнем до там след минута!)
 
-After that, we can add our first URL pattern:
+След това можем да добавим наши първи URL образец:
 
 {% filename %}blog/urls.py{% endfilename %}
 
