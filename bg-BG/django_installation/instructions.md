@@ -100,7 +100,7 @@ data-collapse=true ces-->
 
 ## Работа с virtualenv
 
-The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directory and files).
+Командата по-горе ще създаде директория с име `myvenv` (или каквото име сте си избрали), която съдържа нашата виртуална среда (по същество куп директории и файлове). 
 
 <!--sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
