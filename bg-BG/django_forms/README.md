@@ -268,13 +268,13 @@ def post_new(request):
 
 Това е страхотно!
 
-> Тъй като наскоро ползвахме административния интерфейс на Django, системата в момента си мисли, че сме влезнали в акаунта си. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
+> Тъй като наскоро ползвахме административния интерфейс на Django, системата в момента си мисли, че сме влезнали в акаунта си. Има няколко ситуации, които могат да доведат до излизане от акаунта (затваряне на търсачката, рестартиране на базата данни, и др.). Ако при създаване на нова публикация получавате грешки свързани с потребител, който не е влязал в акаунта си, отидете на администраторската страница http://127.0.0.1:8000/admin и влезте пак в акаунта си. Това ще реши проблема временно. Има дълготрайно решение на проблема, което ви очаква в раздела **Домашна работа: добавяне на сигурност към уеб страницата ви!** намиращ се след главното ръководство.
 
 ![Logged in error](images/post_create_error.png)
 
-## Form validation
+## Валидиране на формите (Form validation)
 
-Now, we will show you how cool Django forms are. A blog post needs to have `title` and `text` fields. In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
+Сега ще ви покажем колко са готини формите на Django. Една публикация трябва да има полета за `title` и `text`. В нашия `Post` модел не казахме дали тези полета се изискват (както при `published_date`), така че Django очаква те да са нагласени по подразбиране.
 
 Try to save the form without `title` and `text`. Guess what will happen!
 
