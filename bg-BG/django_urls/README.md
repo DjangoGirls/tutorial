@@ -4,15 +4,15 @@
 
 ## Какво е URL?
 
-URL е уеб адрес. You can see a URL every time you visit a website – it is visible in your browser's address bar. (Yes! `127.0.0.1:8000` is a URL! And `https://djangogirls.org` is also a URL.)
+URL е уеб адрес. Може да видиш URL всеки път когато посещаваш уебсайт – видимо е в полето за адрес на твоята търсачка. (Да! `127.0.0.1:8000` е URL! И `https://djangogirls.org` също е URL.)
 
 ![URL](images/url.png)
 
-Every page on the Internet needs its own URL. This way your application knows what it should show to a user who opens that URL. In Django, we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.
+Всяка страница в Internet има нужда от собствен URL. По този начин твоето приложение знае какво трябва да покаже на потребителя, който отваря този URL. В Django използваме нещо наречено `URLconf` (URL конфигурация). URLconf е пакет от примери, които Django се опитва да съпостави със запитания URL за да намери правилния изглед.
 
-## How do URLs work in Django?
+## Как работят URL в Django?
 
-Let's open up the `mysite/urls.py` file in your code editor of choice and see what it looks like:
+Нека отворим файла `mysite/urls.py` в редактора си и видим как изглежда:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -29,9 +29,9 @@ urlpatterns = [
 ]
 ```
 
-As you can see, Django has already put something here for us.
+Както може да видите, Django вече е сложил нещо за нас тук.
 
-Lines between triple quotes (`'''` or `"""`) are called docstrings – you can write them at the top of a file, class or method to describe what it does. They won't be run by Python.
+Редовете между трите кавички (`'''` or `"""`) се наричат docstrings – може да ги изписвате в началото на файла, класове или методи за да обясните какво прави кода - като коментар. They won't be run by Python.
 
 The admin URL, which you visited in the previous chapter, is already here:
 
