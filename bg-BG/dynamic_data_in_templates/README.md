@@ -60,9 +60,9 @@ def post_list(request):
 
 Моля забележете, че създадохме променлива за нашия QuerySet: `posts`. Ползвайте това като име на нашия QuerySet. От сега нататък можем да се отнасяме към него с това име.
 
-In the `render` function we have one parameter `request` (everything we receive from the user via the Internet) and another giving the template file (`'blog/post_list.html'`). The last parameter, `{}`, is a place in which we can add some things for the template to use. We need to give them names (we will stick to `'posts'` right now). :) It should look like this: `{'posts': posts}`. Please note that the part before `:` is a string; you need to wrap it with quotes: `''`.
+В `render` функцията имаме един параметър `request` (всичко се получава от потребителят чрез Internet) и друг даващ файла на шаблона (`'blog/post_list.html'`). Последният параметър, `{}`, е място в което може да добавим някакви неща, така че шаблона да ги използва. Трябва да им дадем имена (ще се придържаме към `'posts'` засега). :) Трябва да изглежда ето така: `{'posts': posts}`. Забележете, че частта преди `:` е низ; трябва да го заградите с кавички: `''`.
 
-So finally our `blog/views.py` file should look like this:
+И така накрая нашия файл `blog/views.py` трябва да изглежда така:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -76,6 +76,6 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {'posts': posts})
 ```
 
-That's it! Time to go back to our template and display this QuerySet!
+Това е! Време е да се върнем към нашия шаблон и да покажем на екрана QuerySet!
 
-Want to read a little bit more about QuerySets in Django? You should look here: https://docs.djangoproject.com/en/2.2/ref/models/querysets/
+Искате да прочетете малко повече за QuerySets в Django? Трябва да погледнете тук: https://docs.djangoproject.com/en/2.2/ref/models/querysets/
