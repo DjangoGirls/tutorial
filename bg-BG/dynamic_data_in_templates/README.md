@@ -2,11 +2,11 @@
 
 Имаме различни парчета на места: `Post` моделът е дефиниран в `models.py`, имаме `post_list` във `views.py` и добавен шаблон. Но как всъщност ще направим, така че нашите публикации да се показват на HMTL шаблон? Защото това е, което искаме да направим – да вземем някакво съдържание (запазените модели в базата от данни) и да се показват хубаво на нашия шаблон, нали?
 
-Това е точно, което *views* трябва да правят: свързват моделите с шаблоните. В нашия изглед за `post_list` ще трябва да вземем моделите, които искаме да показваме и да ги предадем на шаблоните. In a *view* we decide what (model) will be displayed in a template.
+Това е точно, което *views* трябва да правят: свързват моделите с шаблоните. В нашия изглед за `post_list` ще трябва да вземем моделите, които искаме да показваме и да ги предадем на шаблоните. В изгледа ние определяме какво (модел) ще се изобразява в шаблона.
 
-OK, so how will we achieve this?
+Добре, как ще го постигнем?
 
-We need to open our `blog/views.py` in our code editor. So far `post_list` *view* looks like this:
+Трябва да отворим `blog/views.py` в редактора си. До момента `post_list` изгледа е такъв: 
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -17,7 +17,7 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-Remember when we talked about including code written in different files? Now is the moment when we have to include the model we have written in `models.py`. We will add the line `from .models import Post` like this:
+Помните ли когато говорихме за вмъкване на код написан в различни файлове? Сега е моментът, в който трябва да вмъкнем модела, който създадохме в `models.py`. Ще добавим реда `from .models import Post` така:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -26,9 +26,9 @@ from django.shortcuts import render
 from .models import Post
 ```
 
-The dot before `models` means *current directory* or *current application*. Both `views.py` and `models.py` are in the same directory. This means we can use `.` and the name of the file (without `.py`). Then we import the name of the model (`Post`).
+Точката преди `models` означава настояща директория или настояща апликация. Двата файла `views.py` и `models.py` са в една и съща директория. Това означава, че можем да използваме `.` и името на файла (без разширението `.py`). Тогава въвеждаме името на модела (`Post`).
 
-But what's next? To take actual blog posts from the `Post` model we need something called `QuerySet`.
+Но след това какво? За да вземем всъщност публикация от `Post` модела ни трябва нещо наречено `QuerySet`.
 
 ## QuerySet
 
