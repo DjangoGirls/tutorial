@@ -1,8 +1,8 @@
-# Dynamic data in templates
+# Динамични данни в шаблоните
 
-We have different pieces in place: the `Post` model is defined in `models.py`, we have `post_list` in `views.py` and the template added. But how will we actually make our posts appear in our HTML template? Because that is what we want to do – take some content (models saved in the database) and display it nicely in our template, right?
+Имаме различни парчета на места: `Post` моделът е дефиниран в `models.py`, имаме `post_list` във `views.py` и добавен шаблон. Но как всъщност ще направим, така че нашите публикации да се показват на HMTL шаблон? Защото това е, което искаме да направим – да вземем някакво съдържание (запазените модели в базата от данни) и да се показват хубаво на нашия шаблон, нали?
 
-This is exactly what *views* are supposed to do: connect models and templates. In our `post_list` *view* we will need to take the models we want to display and pass them to the template. In a *view* we decide what (model) will be displayed in a template.
+Това е точно, което *views* трябва да правят: свързват моделите с шаблоните. В нашия изглед за `post_list` ще трябва да вземем моделите, които искаме да показваме и да ги предадем на шаблоните. In a *view* we decide what (model) will be displayed in a template.
 
 OK, so how will we achieve this?
 
