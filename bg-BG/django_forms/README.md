@@ -143,12 +143,12 @@ def post_new(request):
 
 * Трябва да покажем формата. Можем да направим това чрез (например) {% raw %}`{{ form.as_p }}`{% endraw %}.
 * Горният ред трябва да бъде обвит с HTML form tag: `<form method="POST">...</form>`.
-* We need a `Save` button. We do that with an HTML button: `<button type="submit">Save</button>`.
-* And finally, just after the opening `<form ...>` tag we need to add {% raw %}`{% csrf_token %}`{% endraw %}. This is very important, since it makes your forms secure! If you forget about this bit, Django will complain when you try to save the form:
+* Трябва ни бутон `Save`. Това правим с HTML button: `<button type="submit">Save</button>`.
+* И най-накрая, точно след отварящия `<form ...>` tag трябва да добавим {% raw %}`{% csrf_token %}`{% endraw %}. Това е много важно, тъй като прави нашата форма надеждна! Ако забравите за това, Django ще се оплаче когато се опитате да запазите формата.
 
 ![CSFR Forbidden page](images/csrf2.png)
 
-OK, so let's see how the HTML in `post_edit.html` should look:
+Добре, нека видим сега как трябва да изглежда HTML кода в `post_edit.html`:
 
 {% filename %}blog/templates/blog/post_edit.html{% endfilename %}
 
@@ -164,13 +164,13 @@ OK, so let's see how the HTML in `post_edit.html` should look:
 {% endblock %}
 ```
 
-Time to refresh! Yay! Your form is displayed!
+Време е да обновим страницата! Иха! Формата се показа!
 
 ![New form](images/new_form2.png)
 
-But, wait a minute! When you type something in the `title` and `text` fields and try to save it, what will happen?
+Но, чакай малко! Когато напишеш нещо в полетата `title` и `text` и се опиташ да го запазиш, какво ще стане?
 
-Nothing! We are once again on the same page and our text is gone… and no new post is added. So what went wrong?
+Нищо! Пак сме на същата страница и нашият текст изчезна... и няма нова публикация. Какво се обърка?
 
 The answer is: nothing. We need to do a little bit more work in our *view*.
 
