@@ -205,14 +205,14 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> Ако се появи грешка когато извикате команда pip на Windows платформа, проверете дали името на пътя на проекта ви съдържа празно място, знак за ударение или други специални знаци. (например , `C:\Users\User Name\djangogirls`). Ако съдържа, моля помислете за друго място без разстояние, знак за ударение или други специални знаци (предложение: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
+> Ако се появи грешка когато извикате команда pip на Windows платформа, проверете дали името на пътя на проекта ви съдържа празно място, знак за ударение или други специални знаци. (например , `C:\Users\User Name\djangogirls`). Ако съдържа, моля помислете за друго място без разстояние, знак за ударение или други специални знаци (предложение: `C:\djangogirls`). Създайте нова виртуална среда в новата директория, след това изтрийте старата и опитайте отново командата. (Преместването на папката с виртуална среда няма да работи, тъй като виртуалната среда използва абсолютни пътеки.)
 
 <!--endsec-->
 
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
+> Вашият command line може да забие след като се опитате да инсталирате Django. Ако това се случи напишете следната команда вместо горната:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -224,8 +224,8 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
+> Ако получите грешка при извикване на pip при Ubuntu 12.04 напишете следната команда `python -m pip install -U --force-reinstall pip` за да оправите инсталацията на pip във виртуалната среда.
 
 <!--endsec-->
 
-That's it! You're now (finally) ready to create a Django application!
+Това е! Сега вече (най-накрая) сте готови да създадете Django апликация!
