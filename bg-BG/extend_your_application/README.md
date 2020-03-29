@@ -72,7 +72,7 @@ urlpatterns = [
 
 - `post/` означава, че URL трябва да започва с думата **post** последвана от **/**. Дотук добре.
 - `<int:pk>` -- тази част е по-сложна. Означава, че Django очаква стойност цяло число и ще го преведе към изгледа (view) като променлива наречена `pk`.
-- `/` – then we need a **/** again before finishing the URL.
+- `/` – след това ни е необходима **/** преди да завършим URL.
 
 That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
 
