@@ -2,21 +2,21 @@
 
 Последното нещо, което искаме да направим в нашия уеб сайт е да създадем начин за добавяне и редактиране на публикации в блога. Django's `admin` е супер, но е по-трудно да се персонализира и направи приятно на външен вид. С `forms` ще имаме абсолютно надмощие над нашия изглед - можем да правим почти всичко което може да си представим!
 
-The nice thing about Django forms is that we can either define one from scratch or create a `ModelForm` which will save the result of the form to the model.
+Хубавото на Django формите е, че може да дефинираме форма от самото начало или да създадем ModelForm, в която ще съхраняваме резултатът от формата на модела.
 
-This is exactly what we want to do: we will create a form for our `Post` model.
+Точно това искаме да направим: ще създадем форма за нашия `Post` модел.
 
-Like every important part of Django, forms have their own file: `forms.py`.
+Като всяка важна част от Django, формите също имат собствен файл: `forms.py`.
 
-We need to create a file with this name in the `blog` directory.
+Трябва да създадем файл с това наименование в директорията на `blog`.
 
     blog
        └── forms.py
     
 
-OK, let's open it in the code editor and type the following code:
+И така, нека да отворим IDE и напишем следният код:
 
-{% filename %}blog/forms.py{% endfilename %}
+{% filename %}blog/forms.py{% endfilename %} 
 
 ```python
 from django import forms
@@ -30,7 +30,7 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
+Първо трябва да въведем Django формите (`from django import forms`) и нашия `Post` модел (`from .models import Post`).
 
 `PostForm`, as you probably suspect, is the name of our form. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
 
