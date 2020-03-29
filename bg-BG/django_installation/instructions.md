@@ -123,7 +123,7 @@ data-collapse=true ces-->
 
 <!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
 
-> **Забележка:** За потребителите на популярният редактор VS Code, който идва с интегриран терминал базиран на windows powershell, така че ако искате да се придържате към интегрирания терминал, трябва да напишете следната команда за да активирате виртуалната си среда:
+> **Забележка:** За потребителите на популярният редактор VS Code, който идва с интегриран терминал базиран на windows powershell, и ако искате да се придържате към интегрирания терминал, трябва да напишете следната команда за да активирате виртуалната си среда:
 > 
 >     $ . myvenv\Scripts\activate.ps1
 >     
@@ -142,20 +142,21 @@ data-collapse=true ces-->
     $ source myvenv/bin/activate
     
 
-Remember to replace `myvenv` with your chosen `virtualenv` name!
+Помнете, че трябва да заместите `myvenv` с името на вашата избрана `virtualenv`.
 
-> **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
+> **Забележка:** понякога `source` може да не е на лице. В тези случаи трябва да направите следното: 
 > 
-> {% filename %}command-line{% endfilename %}
+> {% filename %}command-line{% endfilename %} 
 > 
 >     $ . myvenv/bin/activate
+>     
 >     
 
 <!--endsec-->
 
-You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
+Ще разберете, че виртуалната ви среда е стартирана като видите подсказването в конзолата ви, което започва с `(myvenv)`.
 
-When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
+Когато работите от виртуална среда, `python` автоматично ще се насочи към правилната версия, така че може да използвате команда `python` вместо `python3`.
 
 OK, we have all important dependencies in place. We can finally install Django!
 
