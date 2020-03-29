@@ -369,17 +369,17 @@ form = PostForm(instance=post)
 
 ![Edit form](images/edit_form2.png)
 
-Feel free to change the title or the text and save the changes!
+Можете да промените заглавието или текста и да запазите промените!
 
-Congratulations! Your application is getting more and more complete!
+Поздравления! Вашата апликация изглежда все по- и по-завършена!
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.2/topics/forms/
+Ако искате повече информация относно Django формите, трябва да прочетете документацията: https://docs.djangoproject.com/en/2.2/topics/forms/
 
-## Security
+## Сигурност
 
-Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
+Да можете да създадете нови публикация чрез един клие е страхотно! Но сега всеки, който посети вашата страница ще може да създаде нова публикация и това е нещо, което може би не искате. Нека направим така, че бутонът да се показва за вас, но не и за останалите.
 
-Open `blog/templates/blog/base.html` in the code editor, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
+Отворете `blog/templates/blog/base.html` в редактора и намерете `page-header` `div` и реда посочващ anchor tag, който по-рано сложихте там. Трябва да изглежда така:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
