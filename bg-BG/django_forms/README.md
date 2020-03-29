@@ -186,7 +186,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Когато изпратим форматата се връщаме пак на същият изглед, но този път имаме повече данни в запитването (`request`) или по-точно в `request.POST` (наименованието няма нищо общо с блога "post", а с факта, че "публикуваме" информация). Помните ли как в нашия HTML файл при дефинирането на `<form>` имахме променлива `method="POST"`? Всички тези полета са сега в `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
+Когато изпратим форматата се връщаме пак на същият изглед, но този път имаме повече данни в запитването (`request`) или по-точно в `request.POST` (наименованието няма нищо общо с блога "post", а с факта, че "публикуваме" информация). Помните ли как в нашия HTML файл при дефинирането на `<form>` имахме променлива `method="POST"`? Всички тези полета са сега в `request.POST`. Не трябва да преименувате `POST` (друга валидна стойност за `method` е `GET`, но нямаме време да обясним каква е разликата).
 
 So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. So we need to add a condition (we will use `if` for that):
 
