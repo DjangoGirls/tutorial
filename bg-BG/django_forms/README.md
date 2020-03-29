@@ -325,7 +325,7 @@ Django се грижи за проверката дали всички поле�
 
 Ще използваме пак шаблона `blog/templates/blog/post_edit.html`, така че последното липсващо нещо е изгледа (*view*).
 
-Let's open `blog/views.py` in the code editor and add this at the very end of the file:
+Нека отворим `blog/views.py` в редактора и да добваим това накрая на файла:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -345,7 +345,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-This looks almost exactly the same as our `post_new` view, right? But not entirely. For one, we pass an extra `pk` parameter from `urls`. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
+Това изглежда почти еднакво с нашия изглед `post_new`, нали? Но не изцяло. Първо зададохме допълнителен `pk` параметър от `urls`. После взехме `Post` модела, който искаме да променим с `get_object_or_404(Post, pk=pk)` и накрая, когато създаваме форма, подаваме тази публикация като инстанция (`instance`), когето запазваме формата...
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -353,7 +353,7 @@ This looks almost exactly the same as our `post_new` view, right? But not entire
 form = PostForm(request.POST, instance=post)
 ```
 
-…and when we've just opened a form with this post to edit:
+... и когато отваряме формата с публикацията, която искаме да променим:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -361,11 +361,11 @@ form = PostForm(request.POST, instance=post)
 form = PostForm(instance=post)
 ```
 
-OK, let's test if it works! Let's go to the `post_detail` page. There should be an edit button in the top-right corner:
+Добре! Нека проверим дали работи! Да отидем на страница `post_detail`. Трябва да има бутон за редактиране в горния десен ъгъл:
 
 ![Edit button](images/edit_button2.png)
 
-When you click it you will see the form with our blog post:
+Когато го натиснете, ще видите формата с нашата публикация:
 
 ![Edit form](images/edit_form2.png)
 
