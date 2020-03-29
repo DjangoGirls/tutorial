@@ -32,7 +32,7 @@
 <QuerySet [<Post: My second post>, <Post: My first post>]>
 ```
 
-Това означава, че Django го разбира като лист от обекти. Remember from **Introduction to Python** how we can display lists? Yes, with for loops! In a Django template you do them like this:
+Това означава, че Django го разбира като лист от обекти. Помните ли от **Въведение в Python** как показваме листове? Да, с for цикли! При Django шаблоните ги правим така:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -42,13 +42,13 @@
 {% endfor %}
 ```
 
-Try this in your template.
+Пробвайте това във вашия шаблон.
 
 ![Figure 13.2](images/step2.png)
 
-It works! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. You can mix HTML and template tags. Our `body` will look like this:
+Работи! Но ние искаме публикациите ни да се показват като статичните публикации, които създадохме по-рано в главата **Въведение в HTML**. Можете да смесвате HTML с шаблони. Нашето `body` ще изглежда така:
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+{% filename %}blog/templates/blog/post_list.html{% endfilename %} 
 
 ```html
 <div>
@@ -64,7 +64,7 @@ It works! But we want the posts to be displayed like the static posts we created
 {% endfor %}
 ```
 
-{% raw %}Everything you put between `{% for %}` and `{% endfor %}` will be repeated for each object in the list. Refresh your page:{% endraw %}
+{% raw %}Всичко, което сложите между `{% for %}` и `{% endfor %}` ще се повтаря за всеки обект в листа. Опреснете страницата си: {% endraw %}
 
 ![Figure 13.3](images/step3.png)
 
