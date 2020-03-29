@@ -54,9 +54,9 @@
 
 Искаме първия ни пост да бъде показван на този **URL**: http://127.0.0.1:8000/post/1/ 
 
-Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Open the `blog/urls.py` file in the code editor, and add the line `path('post/<int:pk>/', views.post_detail, name='post_detail'),` so that the file looks like this:
+Сега да направим URL във файла `blog/urls.py`, който да насочва Django към *view* наречен `post_detail`, който ще показва целия блог пост. Отворете файла `blog/urls.py` в редактора си и добавете следния ред `path('post/<int:pk>/', views.post_detail, name='post_detail'),`, така че файлът да изглежда по този начин:
 
-{% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
+{% filename %}{{ warning_icon }} blog/urls.py{% endfilename %} 
 
 ```python
 from django.urls import path
@@ -68,10 +68,10 @@ urlpatterns = [
 ]
 ```
 
-This part `post/<int:pk>/` specifies a URL pattern – we will explain it for you:
+Тази част `post/<int:pk>/` уточнява URL образеца -- ще ви го обясним:
 
-- `post/` means that the URL should begin with the word **post** followed by a **/**. So far so good.
-- `<int:pk>` – this part is trickier. It means that Django expects an integer value and will transfer it to a view as a variable called `pk`.
+- `post/` означава, че URL трябва да започва с думата **post** последвана от **/**. Дотук добре.
+- `<int:pk>` -- тази част е по-сложна. Означава, че Django очаква стойност цяло число и ще го преведе към изгледа (view) като променлива наречена `pk`.
 - `/` – then we need a **/** again before finishing the URL.
 
 That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
