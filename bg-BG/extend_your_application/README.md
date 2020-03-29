@@ -42,7 +42,7 @@
 
 `post_detail` частта означава, че Django трябва да очаква URL в `blog/urls.py` с име name=post_detail
 
-А какво за `pk=post.pk`? `pk` is short for primary key, which is a unique identifier for each record in a database. Every Django model has a field which serves as its primary key, and whatever other name it has, it can also be referred to as "pk". Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a field named "id" holding a number that increases for each record, i.e. 1, 2, 3) and adds it as a field to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
+А какво за `pk=post.pk`? `pk` е на кратко от primary key, което е уникален идентификатор за всеки един запис в базата данни. Всеки Django модел има поле, което служи за негов първоначален код (primary key), и каквото и друго име да има, то може също да се съотнесе като "pk". Тъй като не уточнихме първоначалната стойност в нашия `Post` модел, Django създава един за нас (по подразбиране, полето "id" , съдържащо номер, който се увеличава при всеки запис, т.е. 1, 2, 3) и го добавя към полето на всеки от нашите постове. Можем да достигнем primary key като напишем `post.pk`,, по същия начин достъпваме други полета (`title`, `author`, и т.н.)в нашия `Post` обект!
 
 Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
 
