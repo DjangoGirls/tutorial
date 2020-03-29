@@ -6,7 +6,7 @@
 
 Да напишем малко код!
 
-## Python подкана
+## Python запитване
 
 > За читателите у дома: тази част е разгледана във видеото [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U).
 
