@@ -31,9 +31,9 @@ urlpatterns = [
 
 Както може да видите, Django вече е сложил нещо за нас тук.
 
-Редовете между трите кавички (`'''` or `"""`) се наричат docstrings – може да ги изписвате в началото на файла, класове или методи за да обясните какво прави кода - като коментар. They won't be run by Python.
+Редовете между трите кавички (`'''` or `"""`) се наричат docstrings – може да ги изписвате в началото на файла, класове или методи за да обясните какво прави кода - като коментар. Те няма да се изпълнят от Python.
 
-The admin URL, which you visited in the previous chapter, is already here:
+Администртивния URL, който посетихте в предната глава е вече тук:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -41,15 +41,15 @@ The admin URL, which you visited in the previous chapter, is already here:
     path('admin/', admin.site.urls),
 ```
 
-This line means that for every URL that starts with `admin/`, Django will find a corresponding *view*. In this case, we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
+Този ред означава, че за всеки URL, който започва с `admin/`, Django ще намери съответстващ изглед *view*. В този случай въвеждаме много администраторски URL, така че да не е претъпкано в този малък файл – по-четимо и по-чисто.
 
-## Your first Django URL!
+## Твоя първи Django URL!
 
-Time to create our first URL! We want 'http://127.0.0.1:8000/' to be the home page of our blog and to display a list of posts.
+Време е да създадете вашия първи URL! Искаме 'http://127.0.0.1:8000/' да бъде началната страница на нашия блог и да показва лист от публикации.
 
-We also want to keep the `mysite/urls.py` file clean, so we will import URLs from our `blog` application to the main `mysite/urls.py` file.
+Също така искаме да задържим файла `mysite/urls.py` чист, така че да въведем URL от нашата `blog` апликация към главният файл `mysite/urls.py`.
 
-Go ahead, add a line that will import `blog.urls`. You will also need to change the `from django.urls…` line because we are using the `include` function here, so you will need to add that import to the line.
+Давайте напред, акто добавите ред с който ще въведете `blog.urls`. You will also need to change the `from django.urls…` line because we are using the `include` function here, so you will need to add that import to the line.
 
 Your `mysite/urls.py` file should now look like this:
 
