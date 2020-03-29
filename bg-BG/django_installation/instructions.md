@@ -105,14 +105,14 @@ data-collapse=true ces-->
 <!--sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
 
-Start your virtual environment by running:
+Стартирайте виртуалната си среда като напишете:
 
 {% filename %}command-line{% endfilename %}
 
     C:\Users\Name\djangogirls> myvenv\Scripts\activate
     
 
-> **NOTE:** on Windows 10 you might get an error in the Windows PowerShell that says `execution of scripts is disabled on this system`. In this case, open another Windows PowerShell with the "Run as Administrator" option. Then try typing the following command before starting your virtual environment:
+> **Забележка:** При Windows 10 можете да получите грешка в прозореца на PowerShell `execution of scripts is disabled on this system`. В този случай трябва да отворите нов прозорец на PowerShell като изберете "Run as Administrator." След това напишете следната команда преди да стартирате виртуалната си среда: След това напишете следната команда преди да стартирате виртуалната си среда:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
