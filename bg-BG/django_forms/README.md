@@ -401,15 +401,15 @@ form = PostForm(instance=post)
 
 Помните ли иконата за редактиране, която тъкмо добавихме в страницата ни с детайли? Ще добавим същата промяна и там, така че други хора да не могат да променят съществуващи публикации.
 
-Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
+Отворете `blog/templates/blog/post_detail.html` в редактрора и намерете този ред:
 
-{% filename %}blog/templates/blog/post_detail.html{% endfilename %}
+{% filename %}blog/templates/blog/post_detail.html{% endfilename %} 
 
 ```html
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-Change it to this:
+Променете го на това:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -419,13 +419,13 @@ Change it to this:
 {% endif %}
 ```
 
-Since you're likely logged in, if you refresh the page, you won't see anything different. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
+Тъй като най-вероятно сте в акаунта си, ако опресните страницата, няма да видите разликата. Заредете страницата в друга търсачка или в инкогнито прозорец (наречен още "InPrivate" в Windows Edge) и ще видите, че връзката не се показва и иконата също не се появява на екрана!
 
-## One more thing: deploy time!
+## Още едно нещо: време за deploy
 
-Let's see if all this works on PythonAnywhere. Time for another deploy!
+Нека видим дали всичко работи на PythonAnywhere. Време е за още един deploy!
 
-* First, commit your new code, and push it up to GitHub:
+* Първо съхранете новия си код и го пратете към GitHub:
 
 {% filename %}command-line{% endfilename %}
 
@@ -436,7 +436,7 @@ Let's see if all this works on PythonAnywhere. Time for another deploy!
     $ git push
     
 
-* Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
+* След това в [PythonAnywhere Bash конзолата](https://www.pythonanywhere.com/consoles/):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -445,7 +445,7 @@ Let's see if all this works on PythonAnywhere. Time for another deploy!
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+(Не забравяйте да замените `<your-pythonanywhere-domain>` с вашият PythonAnywhere субдомейн без скобите.)
 
 * Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (use the menu button in the upper right of the console) and hit **Reload**. Refresh your https://subdomain.pythonanywhere.com blog to see the changes.
 
