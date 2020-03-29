@@ -38,13 +38,13 @@ class PostForm(forms.ModelForm):
 
 Най-накрая трябва да кажем с какви полета ще разполагаме в нашата форма. При този сценарий искаме само `title` и `text` да бъдат показани - `author` ще бъде този, който в момента е влязъл с профила си (ти!) и `created_date` трябва автоматично да се създаде, когато започнем нова публикация (като в кода), нали?
 
-And that's it! All we need to do now is use the form in a *view* and display it in a template.
+И това е! Всичко от което имаме нужда в момента е да използваме формата във *view* и да я покажем в шаблона.
 
-So once again we will create a link to the page, a URL, a view and a template.
+И така още веднъж, ще създадем връзка до страницата чрез URL, view и template.
 
-## Link to a page with the form
+## Връзка до страницата чрез формата
 
-It's time to open `blog/templates/blog/base.html` in the code editor. In the `div` named `page-header`, we will add a link:
+Време е да отворим `blog/templates/blog/base.html` в редактора. В `div` наречен `page-header` ще добавим връзка:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -52,7 +52,7 @@ It's time to open `blog/templates/blog/base.html` in the code editor. In the `di
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-Note that we want to call our new view `post_new`. The class `"glyphicon glyphicon-plus"` is provided by the bootstrap theme we are using, and will display a plus sign for us.
+Забележете, че искаме да извикаме нашия нов изглед `post_new`. Класът `"glyphicon glyphicon-plus"` е предоставен от темата на bootstrap, която използваме и ще покаже знака плюс.
 
 After adding the line, your HTML file should now look like this:
 
