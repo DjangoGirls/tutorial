@@ -117,8 +117,8 @@ data-collapse=true ces-->
 > {% filename %}command-line{% endfilename %}
 > 
 >     C:\WINDOWS\system32> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
->         Execution Policy Change
->         The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
+>         Промяна при политиката на изпълнението
+>         Политиката на изпълнението ви предпазва от скриптове на които нямате доверие. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
 >     
 
 <!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
