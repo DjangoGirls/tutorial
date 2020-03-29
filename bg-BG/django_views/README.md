@@ -2,7 +2,7 @@
 
 Време е да премахнем пречката, която създадохме в последната глава! :)
 
-A *view* is a place where we put the "logic" of our application. It will request information from the `model` you created before and pass it to a `template`. We'll create a template in the next chapter. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
+*view* е мястото, където поставяме "логиката" на приложението ни. Ще изиска информация от моделът, който създадохме по-рано и ще го подаде на шаблона. Ще създадем шаблон в следващата глава. Изгледите са просто Python фукнции, които са малко по-сложни от тези, които написахме в главата **Въведение в Python**.
 
 Views are placed in the `views.py` file. We will add our *views* to the `blog/views.py` file.
 
