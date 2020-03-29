@@ -97,11 +97,11 @@
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+(Не забравяйте да заместите `<your-pythonanywhere-domain>` с вашия актуален PythonAnywhere субдомейн, без скобите.)
 
-* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. (To reach other PythonAnywhere pages from the console, use the menu button in the upper right corner.) Your update should be live on https://subdomain.pythonanywhere.com -- check it out in the browser! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
+* Накрая отидете на ["Web" страница](https://www.pythonanywhere.com/web_app_setup/) и натиснете **Reload** на вашата апликация. (За да достигнете други PythonAnywhere страници от конзолата, използвайте бутона от менюто в горния десен ъгъл.) Вашете обновление трябва да съществува на https://subdomain.pythonanywhere.com -- проверете в търсачката си! Ако публикациите на вашата PythonAnywhere страница не съвпадат с тези, които се появяват на локалния ви сървър, това е нормално. Базата от данни на локалния ви компютър не са синхронизирани с останалите ви файлове на PythonAnywhere.
 
-Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://subdomain.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
+Поздравления! Сега добавете нова публикация в администрацията на Django (помнете да добавите published_date!) Бъдете сигурни, че сте администрацията на Django на своята страница в pythonanywhere, https://subdomain.pythonanywhere.com/admin. След това презаредете страницата за да видите дали публикациите са налице.
 
 Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
 
