@@ -207,9 +207,9 @@ else:
 form = PostForm(request.POST)
 ```
 
-The next thing is to check if the form is correct (all required fields are set and no incorrect values have been submitted). We do that with `form.is_valid()`.
+Следващото нещо е да проверим дали формата е вярна (всики полета които се изискват да са определени и да няма неправилно въведени стойности). Правим това чрез `form.is_valid()`.
 
-We check if the form is valid and if so, we can save it!
+Проверяваме дали формата е валидна и ако да в запазваме!
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -221,7 +221,7 @@ if form.is_valid():
     post.save()
 ```
 
-Basically, we have two things here: we save the form with `form.save` and we add an author (since there was no `author` field in the `PostForm` and this field is required). `commit=False` means that we don't want to save the `Post` model yet – we want to add the author first. Most of the time you will use `form.save()` without `commit=False`, but in this case, we need to supply it. `post.save()` will preserve changes (adding the author) and a new blog post is created!
+Основно имаме две неща: запазваме формата с `form.save` и добавяме автор (тъй като няма поле `author` във формата `PostForm` а това поле се изисква). `commit=False` означава, че не искаме все още да запазим моделът `Post` - искаме да добавим първо автора. През повечето време ще използвате `form.save()` без `commit=False`, но в този случай трябва да се снабдим с него. `post.save()` ще запази промените (добавяне на автора) и новата публикация в блога е създадена!
 
 Finally, it would be awesome if we could immediately go to the `post_detail` page for our newly created blog post, right? To do that we need one more import:
 
