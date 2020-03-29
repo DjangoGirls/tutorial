@@ -272,21 +272,21 @@ def post_new(request):
 
 ![Logged in error](images/post_create_error.png)
 
-## Валидиране на формите (Form validation)
+## Проверка на формите (Form validation)
 
 Сега ще ви покажем колко са готини формите на Django. Една публикация трябва да има полета за `title` и `text`. В нашия `Post` модел не казахме дали тези полета се изискват (както при `published_date`), така че Django очаква те да са нагласени по подразбиране.
 
-Try to save the form without `title` and `text`. Guess what will happen!
+Опитайте се да запазите формата без `title` и `text`. Познайте какво ще стане!
 
 ![Form validation](images/form_validation2.png)
 
-Django is taking care to validate that all the fields in our form are correct. Isn't it awesome?
+Django се грижи за проверката дали всички полета във формата ни са правилни. Не е ли готино?
 
-## Edit form
+## Редактиране на формата
 
-Now we know how to add a new post. But what if we want to edit an existing one? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
+Сега знаем как да добавим нова публикация. Но какво ако искаме да променим вече съществуваща? Това много прилича на това, което тъкмо направихме. Нека набързо да създадем няколко важни неща. (Ако не разбирате нещо, попитайте инструктора си или вижте в предходните глави, тъй като вече минахме врез всичко това.)
 
-Open `blog/templates/blog/post_detail.html` in the code editor and add the line
+Отворете `blog/templates/blog/post_detail.html` в редактора и добавете реда
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -294,7 +294,7 @@ Open `blog/templates/blog/post_detail.html` in the code editor and add the line
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-so that the template will look like this:
+така че шаблона (template) да изглежда така:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -315,7 +315,7 @@ so that the template will look like this:
 {% endblock %}
 ```
 
-Open `blog/urls.py` in the code editor, and add this line:
+Отворете `blog/urls.py` в редактора и добавете този ред:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -323,7 +323,7 @@ Open `blog/urls.py` in the code editor, and add this line:
     path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
 ```
 
-We will reuse the template `blog/templates/blog/post_edit.html`, so the last missing thing is a *view*.
+Ще използваме пак шаблона `blog/templates/blog/post_edit.html`, така че последното липсващо нещо е изгледа (*view*).
 
 Let's open `blog/views.py` in the code editor and add this at the very end of the file:
 
