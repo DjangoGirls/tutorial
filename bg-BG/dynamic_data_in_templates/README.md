@@ -32,9 +32,9 @@ from .models import Post
 
 ## QuerySet
 
-You should already be familiar with how QuerySets work. We talked about them in [Django ORM (QuerySets) chapter](../django_orm/README.md).
+Вече трябва да се запознати как QuerySets работят. Говорихме за тях в главата [Django ORM (QuerySets)](../django_orm/README.md).
 
-So now we want published blog posts sorted by `published_date`, right? We already did that in QuerySets chapter!
+Сега искаме публикуваните ни блог постове сортирани по дата на публикуване, нали? Вече направихме това в главата QuerySets!
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -42,7 +42,7 @@ So now we want published blog posts sorted by `published_date`, right? We alread
 Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 ```
 
-So, let's open the `blog/views.py` file in the code editor, and add this piece of code to the function `def post_list(request)` -- but don't forget to first add `from django.utils import timezone`:
+И така, нека да отворим файла `blog/views.py` в редактора и добавим този код към функцията `def post_list(request)` -- но нека не забравяме първо да добавим `from django.utils import timezone`: 
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -56,9 +56,9 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-The last missing part is passing the `posts` QuerySet to the template context. Don't worry – we will cover how to display it in a later chapter.
+Последната липсваща част е подаването на QuerySet постове към контекста на шаблона. Не се притеснявайте -- ще обясним как става в по-следваща глава.
 
-Please note that we create a *variable* for our QuerySet: `posts`. Treat this as the name of our QuerySet. From now on we can refer to it by this name.
+Моля забележете, че създадохме променлива за нашия QuerySet: `posts`. Ползвайте това като име на нашия QuerySet. От сега нататък можем да се отнасяме към него с това име.
 
 In the `render` function we have one parameter `request` (everything we receive from the user via the Internet) and another giving the template file (`'blog/post_list.html'`). The last parameter, `{}`, is a place in which we can add some things for the template to use. We need to give them names (we will stick to `'posts'` right now). :) It should look like this: `{'posts': posts}`. Please note that the part before `:` is a string; you need to wrap it with quotes: `''`.
 
