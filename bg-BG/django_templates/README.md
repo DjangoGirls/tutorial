@@ -4,15 +4,15 @@
 
 ## Какви са тези шаблонни етикети?
 
-You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
+Виждате, в HTML не може наистина да пишете Python код, защото търсачките не го разбират. Те знаят само HTML. Знаем, че HTML е статичен, докато Python е по-динамичен.
 
-**Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster. Cool!
+**Django template tags** ни позволяват да прехвърлим Python нещата към HTML, така че да изграждаме динамични сайтове по-бързо. Супер!
 
-## Display post list template
+## Показване на шаблон за лист от публикации
 
-In the previous chapter we gave our template a list of posts in the `posts` variable. Now we will display it in HTML.
+В предишната глава дадохме на нашия шаблон лист от публикации с променливата `posts`. Сега ще го покажем на екран с HTML.
 
-To print a variable in Django templates, we use double curly brackets with the variable's name inside, like this:
+За да отпечатаме променливата в шаблоните на Django, използваме къдрави скоби с името на променливата вътре ето така:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -20,11 +20,11 @@ To print a variable in Django templates, we use double curly brackets with the v
 {{ posts }}
 ```
 
-Try this in your `blog/templates/blog/post_list.html` template. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
+Пробвайте това във вашия шаблон `blog/templates/blog/post_list.html`. Отворете го в редактора си и заместете всичко от вторият `<div>` до третият `</div>` с `{{ posts }}`. Запазете файла и опреснете страницата за да видите резултатите:
 
 ![Figure 13.1](images/step1.png)
 
-As you can see, all we've got is this:
+Както може да видите, всичко което имаме е това:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -32,7 +32,7 @@ As you can see, all we've got is this:
 <QuerySet [<Post: My second post>, <Post: My first post>]>
 ```
 
-This means that Django understands it as a list of objects. Remember from **Introduction to Python** how we can display lists? Yes, with for loops! In a Django template you do them like this:
+Това означава, че Django го разбира като лист от обекти. Remember from **Introduction to Python** how we can display lists? Yes, with for loops! In a Django template you do them like this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
