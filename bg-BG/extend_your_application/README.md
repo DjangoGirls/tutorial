@@ -2,17 +2,17 @@
 
 # Продължете апликацията си
 
-We've already completed all the different steps necessary for the creation of our website: we know how to write a model, URL, view and template. We also know how to make our website pretty.
+Вече завършихме всички различни стъпки необходими за създаването на нашия уеб сайт: знаем как да напишем модел, URL, изглед и шаблон. Знаем също и как да направим сайта ни хубав.
 
-Time to practice!
+Време е за практика!
 
-The first thing we need in our blog is, obviously, a page to display one post, right?
+Първото нешо, което ни е необходимо за блога е очевидно страница, която да показва една публикация, нали така?
 
-We already have a `Post` model, so we don't need to add anything to `models.py`.
+Вече разполагаме с `Post` модел, така че няма нужда да правим промени в `models.py`.
 
-## Create a template link to a post's detail
+## Създайте връзка към шаблона със съдържанието на поста.
 
-We will start with adding a link inside `blog/templates/blog/post_list.html` file. Open it in the code editor, and so far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+Ще започнем като добавим връзка във файла `blog/templates/blog/post_list.html`. Отворете го в редактора си, като до момента трябва да изглежда по този начин: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -30,7 +30,7 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
 {% endblock %}
 ```
 
-{% raw %}We want to have a link from a post's title in the post list to the post's detail page. Let's change `<h2><a href="">{{ post.title }}</a></h2>` so that it links to the post's detail page:{% endraw %}
+{% raw %} Искаме да имаме връзка от заглавието на поста в листа с публикациите до страницата със съдържанието на поста. Let's change `<h2><a href="">{{ post.title }}</a></h2>` so that it links to the post's detail page:{% endraw %}
 
 {% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 
