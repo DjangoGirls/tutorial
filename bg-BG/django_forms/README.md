@@ -264,11 +264,11 @@ def post_new(request):
 
 Нека видим дали работи. Отидете на страница http://127.0.0.1:8000/post/new, добвавете `title` и `text`, запазете..и voilà! Новата публикация е добавена и сме пренасочени към страница `post_detail`!
 
-You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a *publish button* in **Django Girls Tutorial: Extensions**.
+Може би забелязахте, че избираме датата на публикуване преди да запазим публикацията. По-късно ще се запознаем с *publish button* in **Django Girls Tutorial: Extensions**.
 
-That is awesome!
+Това е страхотно!
 
-> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
+> Тъй като наскоро ползвахме административния интерфейс на Django, системата в момента си мисли, че сме влезнали в акаунта си. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
 
 ![Logged in error](images/post_create_error.png)
 
