@@ -112,7 +112,7 @@ data-collapse=true ces-->
     C:\Users\Name\djangogirls> myvenv\Scripts\activate
     
 
-> **Забележка:** При Windows 10 можете да получите грешка в прозореца на PowerShell `execution of scripts is disabled on this system`. В този случай трябва да отворите нов прозорец на PowerShell като изберете "Run as Administrator." След това напишете следната команда преди да стартирате виртуалната си среда: След това напишете следната команда преди да стартирате виртуалната си среда:
+> **Забележка:** При Windows 10 можете да получите грешка в прозореца на PowerShell `execution of scripts is disabled on this system`. В този случай трябва да отворите нов прозорец на PowerShell като изберете "Run as Administrator." След това напишете следната команда преди да стартирате виртуалната си среда:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -123,19 +123,19 @@ data-collapse=true ces-->
 
 <!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
 
-> **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
+> **Забележка:** За потребителите на популярният редактор VS Code, който идва с интегриран терминал базиран на windows powershell, така че ако искате да се придържате към интегрирания терминал, трябва да напишете следната команда за да активирате виртуалната си среда:
 > 
 >     $ . myvenv\Scripts\activate.ps1
 >     
 > 
-> The advantage is that you don't have to switch between editor windows and command-line windows
+> Предимството е, че не трябва да сменяте прозорците между IDE и command-line.
 
 <!--endsec-->
 
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-Start your virtual environment by running:
+Стартирайте виртуалната си среда като напишете:
 
 {% filename %}command-line{% endfilename %}
 
