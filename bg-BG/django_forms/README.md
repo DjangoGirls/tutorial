@@ -54,7 +54,7 @@ class PostForm(forms.ModelForm):
 
 Забележете, че искаме да извикаме нашия нов изглед `post_new`. Класът `"glyphicon glyphicon-plus"` е предоставен от темата на bootstrap, която използваме и ще покаже знака плюс.
 
-After adding the line, your HTML file should now look like this:
+След добаване на този ред, вашия HTML файл трябва да изглежда ето така:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -83,13 +83,14 @@ After adding the line, your HTML file should now look like this:
         </div>
     </body>
 </html>
+
 ```
 
-After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
+След запазване и обновяване на страницата http://127.0.0.1:8000 трябва да виждате познатата грешка `NoReverseMatch`. Така ли е? Добре!
 
 ## URL
 
-We open `blog/urls.py` in the code editor and add a line:
+Отваряме файла `blog/urls.py` в редактора и добавяме ред:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -97,7 +98,7 @@ We open `blog/urls.py` in the code editor and add a line:
 path('post/new/', views.post_new, name='post_new'),
 ```
 
-And the final code will look like this:
+И последния код трябва да изглежда така:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -112,9 +113,9 @@ urlpatterns = [
 ]
 ```
 
-After refreshing the site, we see an `AttributeError`, since we don't have the `post_new` view implemented. Let's add it right now.
+След като обновим сайта виждаме `AttributeError`, тъй като нямаме изглед за изпълнението на `post_new`. Нека го добавим сега.
 
-## post_new view
+## post_new изглед
 
 Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
 
