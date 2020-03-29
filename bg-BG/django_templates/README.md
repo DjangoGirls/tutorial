@@ -1,8 +1,8 @@
-# Django templates
+# Django шаблони
 
-Time to display some data! Django gives us some helpful built-in **template tags** for that.
+Време е да покажем на екран малко данни! Django има вградени **template tags** за тази цел.
 
-## What are template tags?
+## Какви са тези шаблонни етикети?
 
 You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
 
