@@ -387,7 +387,7 @@ form = PostForm(instance=post)
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! Change the `<a>` tag to look like this:
+Ще добавим още един `{% if %}` към това, което ще накара връзката да се показва само за потребители, които са влезнали в административния панел. В момента това си само ти! Променете `<a>` да изглежда така:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -397,9 +397,9 @@ We're going to add another `{% if %}` tag to this, which will make the link show
 {% endif %}
 ```
 
-This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. This doesn't protect the creation of new posts completely, but it's a good first step. We'll cover more security in the extension lessons.
+Този `{% if %}` ще накара връзката да се изпраща до търсачката, само ако потребителят, който изисква страницата е влязъл в акаунта си. Това не предпазва напълно от създаване на нови публикации, но е добре като за начало. Ще покрием повече относно сигурността в продължението на уроците.
 
-Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
+Помните ли иконата за редактиране, която тъкмо добавихме в страницата ни с детайли? Ще добавим същата промяна и там, така че други хора да не могат да променят съществуващи публикации.
 
 Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
 
