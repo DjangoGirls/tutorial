@@ -223,25 +223,27 @@ if form.is_valid():
 
 Основно имаме две неща: запазваме формата с `form.save` и добавяме автор (тъй като няма поле `author` във формата `PostForm` а това поле се изисква). `commit=False` означава, че не искаме все още да запазим моделът `Post` - искаме да добавим първо автора. През повечето време ще използвате `form.save()` без `commit=False`, но в този случай трябва да се снабдим с него. `post.save()` ще запази промените (добавяне на автора) и новата публикация в блога е създадена!
 
-Finally, it would be awesome if we could immediately go to the `post_detail` page for our newly created blog post, right? To do that we need one more import:
+Накрая, би било добре ако можем веднага да отидем на страницата `post_detail` за нашата новосъздадена блог публикация, нали? За да направим това трябва ни трябва още едно въвеждане:
 
-{% filename %}blog/views.py{% endfilename %}
+{% filename %}blog/views.py{% endfilename %} 
 
 ```python
 from django.shortcuts import redirect
+
 ```
 
-Add it at the very beginning of your file. And now we can say, "go to the `post_detail` page for the newly created post":
+Добавете го в самото начало на вашия файл. И сега можем да кажем "отиди на страница `post_detail` за новосъздадената публикация":
 
 {% filename %}blog/views.py{% endfilename %}
 
 ```python
 return redirect('post_detail', pk=post.pk)
+
 ```
 
-`post_detail` is the name of the view we want to go to. Remember that this *view* requires a `pk` variable? To pass it to the views, we use `pk=post.pk`, where `post` is the newly created blog post!
+`post_detail` е името на изгледа, на който искаме да отидем. Помните ли, че този изглед (*view*) изискваше стойност `pk`? За да го предадем на изгледа използваме `pk=post.pk`, където `post` е новосъздадена публикация!
 
-OK, we've talked a lot, but we probably want to see what the whole *view* looks like now, right?
+И така, говорихме много, но може би искаме да видим как изглежда всичко, нали?
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -260,7 +262,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Let's see if it works. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it… and voilà! The new blog post is added and we are redirected to the `post_detail` page!
+Нека видим дали работи. Отидете на страница http://127.0.0.1:8000/post/new, добвавете `title` и `text`, запазете..и voilà! Новата публикация е добавена и сме пренасочени към страница `post_detail`!
 
 You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a *publish button* in **Django Girls Tutorial: Extensions**.
 
