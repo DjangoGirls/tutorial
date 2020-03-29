@@ -32,11 +32,11 @@ class PostForm(forms.ModelForm):
 
 Първо трябва да въведем Django формите (`from django import forms`) и нашия `Post` модел (`from .models import Post`).
 
-`PostForm`, както забелязахте е името на нашата форма. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
+`PostForm`, както забелязахте е името на нашата форма. Трябва да кажем на Django, че тази форма е `ModelForm` (така че Django да направи малко магия за нас) - `forms.ModelForm` отговаря за това.
 
-Next, we have `class Meta`, where we tell Django which model should be used to create this form (`model = Post`).
+След това с `class Meta`, казваме на Django кой модел трябва да се използва за да се създаде тази форма (`model = Post`).
 
-Finally, we can say which field(s) should end up in our form. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
+Най-накрая трябва да кажем с какви полета ще разполагаме в нашата форма. При този сценарий искаме само `title` и `text` да бъдат показани - `author` ще бъде този, който в момента е влязъл с профила си (ти!) и `created_date` трябва автоматично да се създаде, когато започнем нова публикация (като в кода), нали?
 
 And that's it! All we need to do now is use the form in a *view* and display it in a template.
 
