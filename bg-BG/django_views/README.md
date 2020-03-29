@@ -4,11 +4,11 @@
 
 *view* е мястото, където поставяме "логиката" на приложението ни. Ще изиска информация от моделът, който създадохме по-рано и ще го подаде на шаблона. Ще създадем шаблон в следващата глава. Изгледите са просто Python фукнции, които са малко по-сложни от тези, които написахме в главата **Въведение в Python**.
 
-Views are placed in the `views.py` file. We will add our *views* to the `blog/views.py` file.
+Изгледите са във файла `views.py`. Ние ще добавим първи си изглед към файла `blog/views.py`.
 
 ## blog/views.py
 
-OK, let's open up this file in our code editor and see what's in there:
+И така, нека отворим файла в редактора си видим какво има в него:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -18,11 +18,11 @@ from django.shortcuts import render
 # Create your views here.
 ```
 
-Not too much stuff here yet.
+Няма почти нищо все още.
 
-Remember that lines starting with `#` are comments – this means that those lines won't be run by Python.
+Помнете, че редовете, които започват с `#` са коментари – което означава, че тези редове няма да се четат от Python.
 
-Let's create a *view* as the comment suggests. Add the following minimal view below it:
+Нека създадем *view* както коментара предлага да направим. Добавете следният минимален изглед под него:
 
 {% filename %}blog/views.py{% endfilename %}
 
