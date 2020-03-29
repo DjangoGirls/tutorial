@@ -68,13 +68,13 @@
 
 ![Figure 13.3](images/step3.png)
 
-Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }}`)? We are accessing data in each of the fields defined in our `Post` model. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
+Забелязахте ли, че този път използвахме малко по-различно означение (`{{ post.title }}` или `{{ post.text }}`)? Достъпваме данните във всяко едно поле дефинирано в нашия `Post` модел. Също така `|linebreaksbr` изпраща текста на публикациите през филтър и превръща в абзаци.
 
-## One more thing
+## Още едно нещо
 
-It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
+Ще е хубаво да видим дали уеб страницата ви работи в Internet, нали? Нека го прехвърлим отново на PythonAnywhere. Ето преглед на стъпките:
 
-* First, push your code to GitHub
+* Първо, изпратете кода си към GitHub
 
 {% filename %}command-line{% endfilename %}
 
@@ -88,7 +88,7 @@ It'd be good to see if your website will still be working on the public Internet
     $ git push
     
 
-* Then, log back in to [PythonAnywhere](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one), and run:
+* След това влезте пак в [PythonAnywhere](https://www.pythonanywhere.com/consoles/) акаунта си и отидете на **Bash console** (или стартирайте нова) и напишете командите:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
