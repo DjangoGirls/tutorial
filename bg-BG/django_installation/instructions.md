@@ -158,24 +158,25 @@ data-collapse=true ces-->
 
 Когато работите от виртуална среда, `python` автоматично ще се насочи към правилната версия, така че може да използвате команда `python` вместо `python3`.
 
-OK, we have all important dependencies in place. We can finally install Django!
+Добре, сега имаме всичкo необходимо на едно място. Най-накрая може да инсталираме Django!
 
-## Installing Django {#django}
+## Инсталиране на Django {#django}
 
-Now that you have your `virtualenv` started, you can install Django.
+Сега след като имате стартирана `virtualenv` може да инсталирате Django.
 
-Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
+Преди да направим това обаче ще проверим дали имаме инсталирана последната версия на `pip`, софтуерът, който използваме да инсталираме Django:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}command-line{% endfilename %} 
 
     (myvenv) ~$ python -m pip install --upgrade pip
     
+    
 
-### Installing packages with requirements
+### Инсталиране на пакети с изисквания
 
-A requirements file keeps a list of dependencies to be installed using `pip install`:
+Файла съдържа лист от зависимости, които да се инсталират с командата `pip install`:
 
-First create a `requirements.txt` file inside of the `djangogirls/` folder, using the code editor that you installed earlier. You do this by opening a new file in the code editor and then saving it as `requirements.txt` in the `djangogirls/` folder. Your directory will look like this:
+Първо създайте файл с име `requirements.txt` в папка `djangogirls`, като използвате IDE инсталиран по-рано. You do this by opening a new file in the code editor and then saving it as `requirements.txt` in the `djangogirls/` folder. Your directory will look like this:
 
     djangogirls
     ├── myvenv
