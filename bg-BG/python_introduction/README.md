@@ -622,14 +622,14 @@ print('Hello, Django girls!')
 
 Сега трябва да запазим файла и да му дадем описателно име. Нека наречем файла **python_intro.py** и го запазим на началния си екран. Можем да именуваме файла си както пожелаем, но е важно да сме сигурни, че завършва на **.py**. Разширението **.py** казва на операционната система, че това е **Python executable file** и Python може да го обработи. 
 
-> **Забележка:** Трябва да забелязахте, че едни от най-готините неща в редактора са: цветовете! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. This is called "syntax highlighting", and it's a really useful feature when coding. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor. :)
+> **Забележка:** Трябва да забелязахте, че едни от най-готините неща в редактора са: цветовете! В конзолата на Python всичко беше един цват; сега трябва да виждате, че `print` функцията е с различен цвят от цвета на низа. Това се нарича "syntax highlighting", и е много полезна добавка когато пишем код. Цвета на нещата ще ви подсказва, например ако имате незатворени низове или сте объркали ключова дума (като при писането на функцията `def`, както ще видим по-долу). Това е една от причините да изполваме редактор за писане на код. :) :)
 
-With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
+С вече запазения файл е време да го пуснем! Да използваме това, което научихме от секцията с командите. Ползвайте терминала (конзолата) за да смените директорията до началния си екран (desktop).
 
 <!--sec data-title="Change directory: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-On a Mac, the command will look something like this:
+На Mac, командата ще излгежда по този начин:
 
 {% filename %}command-line{% endfilename %}
 
@@ -641,20 +641,20 @@ On a Mac, the command will look something like this:
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-On Linux, it will be like this:
+На Linux, ще изглежда така:
 
 {% filename %}command-line{% endfilename %}
 
     $ cd ~/Desktop
     
 
-(Remember that the word "Desktop" might be translated to your local language.)
+(Помнете, че думата "Desktop" може да е преведена на вашия език.)
 
 <!--endsec-->
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-On Windows Command Prompt, it will be like this:
+На Windows Command Prompt ще изглежда така:
 
 {% filename %}command-line{% endfilename %}
 
@@ -665,7 +665,7 @@ On Windows Command Prompt, it will be like this:
 
 <!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
 
-And on Windows Powershell, it will be like this:
+И на Windows Powershell ще изглежда така:
 
 {% filename %}command-line{% endfilename %}
 
