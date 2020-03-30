@@ -98,25 +98,26 @@ Post.objects.get(pk=pk)
 
 ![DoesNotExist error](images/does_not_exist2.png)
 
-Ние не искаме това! Но за щастие Django идва с нещо, скоето да се справи вместо нас: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
+Ние не искаме това! За щастие Django идва с нещо, с което да се справи вместо нас: `get_object_or_404`. В случай, че няма `Post` със зададен `pk`, ще се покаже на екрана много по-добре, `Page Not Found 404` страница. 
 
 ![Page not found](images/404_2.png)
 
-The good news is that you can actually create your own `Page not found` page and make it as pretty as you want. But it's not super important right now, so we will skip it.
+Хубавото е, че всъщност и вие можете да си създадете такава страница `Page not found` и да я направите колкото си искате хубава. Но не е чак толкова важно в момента, затова ще го пропуснем.
 
-OK, time to add a *view* to our `views.py` file!
+ОК, време е да добавим *view* към нашия файл `views.py`!
 
-In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called `views.post_detail`. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
+В 0>blog/urls.py</code> създадохме URL правило наречено `post_detail`, което се отнася до изглед с име `views.post_detail`. Това означава, че Django ще очаква изглед функция наречена `post_detail` вътре в `blog/views.py`.
 
-We should open `blog/views.py` in the code editor and add the following code near the other `from` lines:
+Трябва да отворим `blog/views.py` в редактора и да добавим следния код близо до другите редове `from` :
 
 {% filename %}blog/views.py{% endfilename %}
 
 ```python
 from django.shortcuts import render, get_object_or_404
+
 ```
 
-And at the end of the file we will add our *view*:
+И накрая на файла ще добавим нашия изглед (*view*):
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -126,17 +127,17 @@ def post_detail(request, pk):
     return render(request, 'blog/post_detail.html', {'post': post})
 ```
 
-Yes. It is time to refresh the page: http://127.0.0.1:8000/
+Да. Време е да презаредим страницата: http://127.0.0.1:8000/
 
 ![Post list view](images/post_list2.png)
 
-It worked! But what happens when you click a link in blog post title?
+Работи! Но сега какво става, когато кликнете върху връзката със заглавието на поста?
 
 ![TemplateDoesNotExist error](images/template_does_not_exist2.png)
 
-Oh no! Another error! But we already know how to deal with it, right? We need to add a template!
+Оо, не! Друга грешка! Но вече знаем как да се справим с това, нали? Трябва да добавим нов шаблон!
 
-## Create a template for the post details
+## Създайте шаблон за съдържанието на поста
 
 We will create a file in `blog/templates/blog` called `post_detail.html`, and open it in the code editor.
 
