@@ -427,7 +427,7 @@ KeyError: 'age'
 >>> participant['favorite_language'] = 'Python'
 ```
 
-Like lists, using the `len()` method on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
+Като при листовете, използването на метода `len()` върху речника връща броя на двойката елемент-стойност в речника. Продължете и напишете тази команда:
 
 {% filename %}command-line{% endfilename %}
 
@@ -436,9 +436,9 @@ Like lists, using the `len()` method on the dictionaries returns the number of k
 4
 ```
 
-I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
+Надявам се да има смисъл това което правим досега. :) Готови ли сте за още веселба с речниците? Прочетете някои невероятни неща.
 
-You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, type in the following command:
+Можете да използвате метода `pop()` да изтриете елемент от речника. Да кажем, че искаме да премахнем въведението, което се отанся за елемента `'favorite_numbers'`, напишете следната команда:
 
 {% filename %}command-line{% endfilename %}
 
@@ -449,9 +449,9 @@ You can use the `pop()` method to delete an item in the dictionary. Say, if you 
 {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-As you can see from the output, the key–value pair corresponding to the 'favorite_numbers' key has been deleted.
+Както се вижда, двойката елемент-стойност отнасяща се за 'favorite_numbers' беше премахната.
 
-As well as this, you can also change a value associated with an already-created key in the dictionary. Type this:
+Както и това, можете да промените стойността, която отговаря на вече създаден елемент в речника. Напишете това:
 
 {% filename %}command-line{% endfilename %}
 
@@ -461,15 +461,15 @@ As well as this, you can also change a value associated with an already-created 
 {'country': 'Germany', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
+Както виждате, стойността на елемента `'country'` беше променен от `'Poland'` на `'Germany'`. :) Вълнуващо? Ураа! Току що научихте още едно невероятно нещо.
 
-### Summary
+### Обобщение
 
-Awesome! You know a lot about programming now. In this last part you learned about:
+Страхотно! Вече знаете много за програмирането. В тази последна част научихте за:
 
-- **errors** – you now know how to read and understand errors that show up if Python doesn't understand a command you've given it
-- **variables** – names for objects that allow you to code more easily and to make your code more readable
-- **lists** – lists of objects stored in a particular order
+- **грешки** -- знаете как да четете и разбирате грешките които се показват, ако Python не разбира командата която сте задали
+- **променливи** – имена на обектите, които ви позволяват да пишете код по-лесно и да правят кода ви по-четлив
+- **листове** –листовете са обекти запазени в определен ред
 - **dictionaries** – objects stored as key–value pairs
 
 Excited for the next part? :)
