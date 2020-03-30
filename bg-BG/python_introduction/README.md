@@ -1057,14 +1057,14 @@ for i in range(1, 6):
 
 `range` е функция, която създава лист от номера едно след друго (тези номера са дадени от вас като стойности). 
 
-Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
+Забележете, че втория параметър, който сте дали не се включва в листа с показаните числа от Python (което означава, че `range(1, 6)` брои от 1 до 5, без да включва числото 6). Това е така, защото "range" е полу-отворена функция, което означава, че включва първата стойност, но не и последната.
 
-## Summary
+## Обобщение
 
-That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
+Това е! **Ти си върха!** Това беше сложна глава, така че трябва да сте горди със себе си. Ние определено сме горди с това, което постигнахте досега!
 
-For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
+За официалното и пълно ръководство на Python посетете visit https://docs.python.org/3/tutorial/. Това ще ви даде много по-подробни и цялостни знания за езика. Със здраве! :)
 
-You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
+Може би искате да направите нещо друго за кратко - разтягане, разходка, да ви отпочинат очите - преди да отидем към следващата глава. :)
 
-![Cupcake](images/cupcake.png)
+![Кексче](images/cupcake.png)
