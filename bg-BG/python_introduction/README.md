@@ -533,9 +533,9 @@ True
 Може да дадете на Python колкото си искате числа да сравнява и ще ви даде отговор! Много умно, нали?
 
 - **and** – ако използвате оператора `and`, двете сравнения трябва да са True за да бъде цялата команда True
-- **or** – if you use the `or` operator, only one of the comparisons has to be True in order for the whole command to be True
+- **or** – ако използвате оператора `or`, само едното сравнение трябва да е True за да бъде цялата команда True
 
-Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
+Чували ли сте за израза "сравнение на ябълки и портокали"? Нека пробваме подобно нещо в Python:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -546,18 +546,18 @@ Traceback (most recent call last):
 TypeError: '>' not supported between instances of 'int' and 'str'
 ```
 
-Here you see that just like in the expression, Python is not able to compare a number (`int`) and a string (`str`). Instead, it shows a **TypeError** and tells us the two types can't be compared together.
+Тук виждате, както при израза, Python не е способен да сравни число (`int`) и низ (`str`). Вместо това ни показва грешка **TypeError** и ни казва, че двата типа не могат да бъдат сравнени.
 
-## Boolean
+## Булеви променливи
 
-Incidentally, you just learned about a new type of object in Python. It's called **Boolean**.
+По между другото, току що научихте за нов тип обект в Python. Нарича се **Булев (Boolean)**.
 
-There are only two Boolean objects:
+Има само два вида булеви променливи:
 
 - True
 - False
 
-But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well.)
+Но за Python да разбере това, винаги трябва да пишете 'True' (като първата буква е главна, а следващите малки). **true, TRUE, and tRUE няма да работят – само True е правилно.** (Същото се отнася и до 'False'.)
 
 Booleans can be variables, too! See here:
 
