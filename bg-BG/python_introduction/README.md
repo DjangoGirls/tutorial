@@ -317,7 +317,7 @@ Maria
 [59, 42, 30, 19, 12, 3]
 ```
 
-If you want to add something to your list, you can do this by typing this command:
+Ако искате да добавите нещо към вашия лист, може да го направите като напишете следната команда:
 
 {% filename %}command-line{% endfilename %}
 
@@ -327,9 +327,9 @@ If you want to add something to your list, you can do this by typing this comman
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-If you want to show only the first number, you can do this by using **indexes**. An index is the number that says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
+Ако искате да покажете само първото число, може да направите това като използвате **индекси**. Индекса е номерът, който казва къде в листа се появява елемента. Програмистите предпочитат да започват броенето от 0, така че първият обект в листа е с индекс 0, следващия е с 1 и т.н. Опитайте това:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}command-line{% endfilename %} 
 
 ```python
 >>> print(lottery[0])
@@ -338,9 +338,9 @@ If you want to show only the first number, you can do this by using **indexes**.
 42
 ```
 
-As you can see, you can access different objects in your list by using the list's name and the object's index inside of square brackets.
+Както може да видите, можете да достъпите различни обекти от листа си като използвате името на листа и индекс със квадратни скоби.
 
-To delete something from your list you will need to use **indexes** as we learned above and the `pop()` method. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
+За да премахнете нещо от листа си ще трябва да използвате **индексите**, които научихме по-горе и метода `pop()`. Нека пробваме пример и затвърдим това, което научихме до момента: ще отстраним първото число от листа ни.
 
 {% filename %}command-line{% endfilename %}
 
@@ -355,15 +355,15 @@ To delete something from your list you will need to use **indexes** as we learne
 [42, 30, 19, 12, 3, 199]
 ```
 
-That worked like a charm!
+Работи безупречно!
 
-For extra fun, try some other indexes: 6, 7, 1000, -1, -6 or -1000. See if you can predict the result before trying the command. Do the results make sense?
+За повече веселба, пробвайте други индекси: 6, 7, 1000, -1, -6 or -1000. Пробвайте се да предположите какъв би могъл да е резултата от командата. Имат ли смисъл резултатите?
 
-You can find a list of all available list methods in this chapter of the Python documentation: https://docs.python.org/3/tutorial/datastructures.html
+Можете да намерите лист с всички възможни методи в тази глава от документацията на Python: https://docs.python.org/3/tutorial/datastructures.html
 
-## Dictionaries
+## Речници
 
-> For readers at home: this part is covered in the [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) video.
+> За читателите у дома: тази част е показана във видеото [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c).
 
 A dictionary is similar to a list, but you access values by looking up a key instead of a numeric index. A key can be any string or number. The syntax to define an empty dictionary is:
 
