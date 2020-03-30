@@ -129,11 +129,11 @@ def post_detail(request, pk):
 
 Да. Време е да презаредим страницата: http://127.0.0.1:8000/
 
-![Post list view](images/post_list2.png)
+![Post list view (Изглед с лист от постове)](images/post_list2.png)
 
 Работи! Но сега какво става, когато кликнете върху връзката със заглавието на поста?
 
-![TemplateDoesNotExist error](images/template_does_not_exist2.png)
+![TemplateDoesNotExist грешка](images/template_does_not_exist2.png)
 
 Оо, не! Друга грешка! Но вече знаем как да се справим с това, нали? Трябва да добавим нов шаблон!
 
@@ -167,7 +167,7 @@ def post_detail(request, pk):
 
 ОК, можем да отворим страницата ни наново и ще видим, че `TemplateDoesNotExist` сега го няма.
 
-![Post detail page](images/post_detail2.png)
+![Post detail page (Страница със съдържанието на поста)](images/post_detail2.png)
 
 Ихаа! Работи!
 
