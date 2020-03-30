@@ -875,11 +875,11 @@ hi()
 
 Забележка: ако не работи не се паникьосвайте! Резултатът ще ви помогне да разберете защо:
 
-- If you get a `NameError`, that probably means you typed something wrong, so you should check that you used the same name when creating the function with `def hi():` and when calling it with `hi()`.
-- If you get an `IndentationError`, check that both of the `print` lines have the same whitespace at the start of a line: python wants all the code inside the function to be neatly aligned.
-- If there's no output at all, check that the last `hi()` *isn't* indented - if it is, that line will become part of the function too, and it will never get run.
+- Ако получите грешка `NameError`, това най-вероятно означава, че сте направили грешка при писането, такаче трябва да проверите дали имената са същите при създаването на функцията `def hi():` и когато я извиквате `hi()`.
+- Ако получите грешка `IndentationError`, вижте дали двата реда с функцията `print` са отместени на едно и също растояние: python иска кода във функцията да бъде безупречно подреден.
+- Ако на изхода няма нищо, проверете дали последното `hi()` *не е* отместено - ако е , тази част също ще се превърне в част от функцията и никога няма да се изпълни
 
-Let's build our first function with parameters. We will change the previous example – a function that says 'hi' to the person running it – with a name:
+Нека съставим първата си функция с параметри. Ще променим предния пример - функцията, която казва 'hi' на човека, който пуска програмата - с име:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -887,7 +887,7 @@ Let's build our first function with parameters. We will change the previous exam
 def hi(name):
 ```
 
-As you can see, we now gave our function a parameter that we called `name`:
+Както се вижда, дадохме на функцията си стойност, която нарекохме `name`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -903,7 +903,7 @@ def hi(name):
 hi()
 ```
 
-Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
+Запомнете: `print` функцията е поместена 4 места навътре спрямо `if` условието. Това е така, защото функцията се изпълнява, ако е изпълнено условието. Нека видим как работи:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -914,7 +914,7 @@ Remember: The `print` function is indented four spaces within the `if` statement
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
+Опаа, грешка. За щастие, Python ни показва много полезно съобщение за грешката. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
 
 {% filename %}python_intro.py{% endfilename %}
 
