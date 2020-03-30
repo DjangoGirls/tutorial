@@ -89,23 +89,23 @@ HTML идва от "HyperText Markup Language". **HyperText** означава, 
 
 Забелязахте ли как търсачката ви разбра, че заглавието на блога е "Ola's blog"? Тълкува `<title>Ola's blog</title>` и показва текст с името на заглавието в лентата на търсачката (също така ще се използва за отметка (bookmarks) и т.н.).
 
-Probably you have also noticed that each opening tag is matched by a *closing tag*, with a `/`, and that elements are *nested* (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
+Вероятно забелязахте и, че отварящия етикет съвпада със затварящия с `/`, като тези елементи са вложени (например не можете да затворите определен етикет, докато не затворите всички, които са преди него).
 
-It's like putting things into boxes. You have one big box, `<html></html>`; inside it there is `<body></body>`, and that contains still smaller boxes: `<p></p>`.
+Също като да слагаме неща в кутии. Имате една голяма кутия, `<html></html>`; в нея е `<body></body>` и това съдържа други по-малки кутии: `<p></p>`.
 
-You need to follow these rules of *closing* tags, and of *nesting* elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
+Трябва да следвате тези правила със затварящите етикети и вложените елементи - ако ли не, търсачката ви може и да не ги представи както трябва и страницата ви ще изглежда неправилно.
 
-## Customize your template
+## Персонализиране на шаблон
 
-You can now have a little fun and try to customize your template! Here are a few useful tags for that:
+Може малко да се позабавлявате и да опитате да направите свой шаблон! Ето няколко полезни етикета за целта:
 
-* `<h1>A heading</h1>` for your most important heading
-* `<h2>A sub-heading</h2>` for a heading at the next level
-* `<h3>A sub-sub-heading</h3>` …and so on, up to `<h6>`
-* `<p>A paragraph of text</p>`
-* `<em>text</em>` emphasizes your text
-* `<strong>text</strong>` strongly emphasizes your text
-* `<br>` goes to another line (you can't put anything inside br and there's no closing tag)
+* `<h1>Заглавие</h1>` за най-важното ви заглавие
+* `<h2>Подзаглавие</h2>` за заглавие от следващо ниво
+* `<h3>Под-подзаглавие</h3>` …и т.н. до `<h6>`
+* `<p>Абзац</p>`
+* `<em>текст</em>` набляга на текста 
+* `<strong>текст</strong>` удебелява текста
+* `<br>` отива на нов ред (не може да сложите нищо в br, както и няма затварящ етикет )
 * `<a href="https://djangogirls.org">link</a>` creates a link
 * `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
 * `<div></div>` defines a section of the page
