@@ -914,7 +914,7 @@ hi()
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-Опаа, грешка. За щастие, Python ни показва много полезно съобщение за грешката. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
+Опаа, грешка. За щастие, Python ни показва много полезно съобщение за грешката. Казва ни, че фукнцията `hi()` (която ние дефинирахме) има аргумент, който се изисква (с име `name`) и че сме забравили да го приложим, когато извикваме фунцкията. Нека оправим това в края на файла:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -922,7 +922,7 @@ hi()
 hi("Ola")
 ```
 
-And run it again:
+И да стартираме отначало:
 
 {% filename %}command-line{% endfilename %}
 
@@ -930,7 +930,7 @@ And run it again:
     Hi Ola!
     
 
-And if we change the name?
+А ако сменим името?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -938,7 +938,7 @@ And if we change the name?
 hi("Sonja")
 ```
 
-And run it:
+И стартираме отново:
 
 {% filename %}command-line{% endfilename %}
 
@@ -946,16 +946,16 @@ And run it:
     Hi Sonja!
     
 
-Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
+Сега, какво мислите, че ще стане ако напишете ново име? (Не Ola или Sonja.) Опитайте и вижте дали сте прави. Трябва да отпечата това:
 
 {% filename %}command-line{% endfilename %}
 
     Hi anonymous!
     
 
-This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
+Това е страхотно, нали? При това не трбва да се повтаряте всеки път, когато смените името на човека, който функцията трябва да поздрави. Затова са ни необходими функциите - никога да не повтаряш кода си!
 
-Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right? Replace the content of your file with the following:
+Нека опитаме нещо по-хитро - имаме повече от две имена и писането на условия за всяко едно от тях ще отнеме много време, нали така? Заместете съдържание на файла си със следното:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -966,7 +966,7 @@ def hi(name):
 hi("Rachel")
 ```
 
-Let's call the code now:
+Нека извикаме кода:
 
 {% filename %}command-line{% endfilename %}
 
@@ -974,13 +974,13 @@ Let's call the code now:
     Hi Rachel!
     
 
-Congratulations! You just learned how to write functions! :)
+Поздравления! Току що научихте как да пишете функции! :)
 
-## Loops
+## Цикли
 
-> For readers at home: this part is covered in the [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) video.
+> За читателите у дома: тази част е показана във видеото [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0)
 
-This is the last part already. That was quick, right? :)
+Това вече е последната част. Мина бързо, нали? :)
 
 Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
 
