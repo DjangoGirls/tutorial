@@ -139,9 +139,9 @@ def post_detail(request, pk):
 
 ## Създайте шаблон за съдържанието на поста
 
-We will create a file in `blog/templates/blog` called `post_detail.html`, and open it in the code editor.
+Ще създадем файл в `blog/templates/blog` наречен `post_detail.html`, и ще го отворим в редактора.
 
-Enter the following code:
+Впишете следния код:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -161,19 +161,19 @@ Enter the following code:
 {% endblock %}
 ```
 
-Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
+Още веднъж удължаваме `base.html`. В блока `content` искаме да покажем датата на публикуване на поста (ако същестрвува), заглавието и текста. Но трябва да обсъдим други важни работи, нали?
 
-{% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ...` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` е шаблонен етикет, който използваме, когато искаме да проверим нещо. (Помните ли `if ... else ...` от главата ** Въведение в Python**?) В този случай искаме да проверим дали `published_date` (датата на публикване) на поста не е празна.{% endraw %}
 
-OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
+ОК, можем да отворим страницата ни наново и ще видим, че `TemplateDoesNotExist` сега го няма.
 
 ![Post detail page](images/post_detail2.png)
 
-Yay! It works!
+Ихаа! Работи!
 
-# Deploy time!
+# Време за прехвърляне на файловете!
 
-It'd be good to see if your website still works on PythonAnywhere, right? Let's try deploying again.
+Би било добре да видите дали сайта ви работи на PythonAnywhere нали? Нека опитаме да прехвърлим всичко отново.
 
 {% filename %}command-line{% endfilename %}
 
@@ -184,7 +184,7 @@ It'd be good to see if your website still works on PythonAnywhere, right? Let's 
     $ git push
     
 
-Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
+Тогава, в [PythonAnywhere Bash конзолата](https://www.pythonanywhere.com/consoles/):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -193,9 +193,9 @@ Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+(Не забравяйте да замените `<your-pythonanywhere-domain>` с вашият актуален PythonAnywhere субдомейн, без скобите.)
 
-## Updating the static files on the server
+## Обновяване на статичните файлове на сървърът:
 
 Servers like PythonAnywhere like to treat "static files" (like CSS files) differently from Python files, because they can optimise for them to be loaded faster. As a result, whenever we make changes to our CSS files, we need to run an extra command on the server to tell it to update them. The command is called `collectstatic`.
 
