@@ -74,19 +74,19 @@ urlpatterns = [
 - `<int:pk>` -- тази част е по-сложна. Означава, че Django очаква стойност цяло число и ще го преведе към изгледа (view) като променлива наречена `pk`.
 - `/` – след това ни е необходима **/** преди да завършим URL.
 
-That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
+Това означава, че когато напишем в търсачката си `http://127.0.0.1:8000/post/5/`, Django ще разбере, че търсите за *view* наречен `post_detail` и изпраща информацията, че този `pk` съответства на `5` спрямо този *view* (изглед).
 
-OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! The server has stopped running again. Have a look at the console – as expected, there's yet another error!
+И така, добавихме нов URL образец към `blog/urls.py`! Нека презаредим страницата: http://127.0.0.1:8000/ Бум! Сървърът отново спря да работи. Погледнете в конзолата -- както се очакваше, има нова грешка!
 
 ![AttributeError](images/attribute_error2.png)
 
-Do you remember what the next step is? It's adding a view!
+Помните ли каква е следващата стъпка? Добавяне на нов изглед (view)!
 
-## Add a post's detail view
+## Добавяне на изглед за съдържанието на поста
 
-This time our *view* is given an extra parameter, `pk`. Our *view* needs to catch it, right? So we will define our function as `def post_detail(request, pk):`. Note that this parameter must have the exact same name as the one we specified in `urls` (`pk`). Also note that omitting this variable is incorrect and will result in an error!
+Този път на нашето *view* даваме допълнителен параметър, `pk`. Нашето *view* трябва да го прихване, нали? Така, ще дефинираме нашата функция като `def post_detail(request, pk):`. Забележете, че този параметър трябва да има точно същото име като на `urls` (`pk`), който уточнихме по-рано. Също така забележете, че пропускането на тази променлива е неправилно и в резултат ще доведе до грешка!
 
-Now, we want to get one and only one blog post. To do this, we can use querysets, like this:
+Сега, искаме да вземем само и единствено една публикация. За да направим това, можем да използваме querysets ето така:
 
 {% filename %}{{ warning_icon }} blog/views.py{% endfilename %}
 
@@ -94,11 +94,11 @@ Now, we want to get one and only one blog post. To do this, we can use querysets
 Post.objects.get(pk=pk)
 ```
 
-But this code has a problem. If there is no `Post` with the given `primary key` (`pk`) we will have a super ugly error!
+Но този код има проблем. Ако нямаме `Post` с даден `primary key` (`pk`) ще имаме много грозна грешка!
 
 ![DoesNotExist error](images/does_not_exist2.png)
 
-We don't want that! But luckily Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
+Ние не искаме това! Но за щастие Django идва с нещо, скоето да се справи вместо нас: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
 
 ![Page not found](images/404_2.png)
 
