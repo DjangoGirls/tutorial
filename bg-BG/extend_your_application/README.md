@@ -46,7 +46,7 @@
 
 Сега като отидем на http://127.0.0.1:8000/ ще видим грешка ( както се очаквкаше, тъй като все още нямаме URL или *view* за `post_detail`). Ще изглежда така:
 
-![NoReverseMatch error](images/no_reverse_match2.png)
+![NoReverseMatch грешка](images/no_reverse_match2.png)
 
 ## Създаване на URL към съдържанието на поста
 
@@ -96,7 +96,7 @@ Post.objects.get(pk=pk)
 
 Но този код има проблем. Ако нямаме `Post` с даден `primary key` (`pk`) ще имаме много грозна грешка!
 
-![DoesNotExist error](images/does_not_exist2.png)
+![DoesNotExist грешка](images/does_not_exist2.png)
 
 Ние не искаме това! За щастие Django идва с нещо, с което да се справи вместо нас: `get_object_or_404`. В случай, че няма `Post` със зададен `pk`, ще се покаже на екрана много по-добре, `Page Not Found 404` страница. 
 
@@ -197,9 +197,9 @@ def post_detail(request, pk):
 
 ## Обновяване на статичните файлове на сървърът:
 
-Servers like PythonAnywhere like to treat "static files" (like CSS files) differently from Python files, because they can optimise for them to be loaded faster. As a result, whenever we make changes to our CSS files, we need to run an extra command on the server to tell it to update them. The command is called `collectstatic`.
+Сървъри като PythonAnywhere обичат да се отнасят към "статичните файлове" (като CSS файлове) различно от Python файловете, защото те могат да оптимизират зареждането им по-бързо. В резултат, когато правим промени на нашите CSS файлове трябва да напишем допълнителни команди на сървъра за да му кажем да ги обнови. Командата се казва `collectstatic`.
 
-Start by activating your virtualenv if it's not still active from earlier (PythonAnywhere uses a command called `workon` to do this, it's just like the `source myenv/bin/activate` command you use on your own computer):
+Започнете като активирате виртуалната си среда, ако не е активна от преди това (PythonAnywhere използва команда наречена `workon` да направи това, същото е както когато използваме команда `source myenv/bin/activate` на своя компютър.
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -208,8 +208,8 @@ Start by activating your virtualenv if it's not still active from earlier (Pytho
     [...]
     
 
-The `manage.py collectstatic` command is a bit like `manage.py migrate`. We make some changes to our code, and then we tell Django to *apply* those changes, either to the server's collection of static files, or to the database.
+Командата `manage.py collectstatic` е нещо като `manage.py migrate`. Правим промени на кода си, след това казваме на Django да приложи тези промени или към събраните статизни файлове на сървъра или към базата данни.
 
-In any case, we're now ready to hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (from the menu button in the upper right of the console) and hit **Reload**, and then look at the https://subdomain.pythonanywhere.com page to see the result.
+Във всеки случай сега сме готови да отидем на ["Web" страницата](https://www.pythonanywhere.com/web_app_setup/) (от бутона на менюто в горния десен ъгъл) и натиснем **Reload**, след това погледнете страницата https://subdomain.pythonanywhere.com за да видите резултата.
 
-And that should be it! Congrats :)
+Та това е! Поздравления :)
