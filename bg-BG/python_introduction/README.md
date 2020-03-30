@@ -166,16 +166,16 @@ TypeError: object of type 'int' has no len()
 
 Работи! Използвахме функцията `str` във функцията `len`. `str()` преобразува всичко в низове.
 
-- The `str` function converts things into **strings**
-- The `int` function converts things into **integers**
+- Функцията `str` преобразува нещата като **низове**
+- Функцията `int` преобразува нещата като **цели числа**
 
-> Important: we can convert numbers into text, but we can't necessarily convert text into numbers – what would `int('hello')` be anyway?
+> Важно: можем да преобразуваме числа в текст, но не можем да направим обратното -- както и да е какво би било `int('hello')`?
 
-## Variables
+## Променливи
 
-An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
+Важно понятие в програмирането са променливите. Променливата е нищо повече от име, което може да се използва по-късно в програмата. Програмистите ползват тези променливи да запазват данни. Това прави кода им по-четлив, така че не се налага да запомнят какви са тези неща.
 
-Let's say we want to create a new variable called `name`:
+Нека кажем, че искаме да създаде променлива с име `name`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -183,7 +183,7 @@ Let's say we want to create a new variable called `name`:
 >>> name = "Ola"
 ```
 
-We type name equals Ola.
+Пишем name равно на Ola.
 
 As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Enter `name` and hit `enter`:
 
