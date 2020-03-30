@@ -559,7 +559,7 @@ TypeError: '>' not supported between instances of 'int' and 'str'
 
 Но за Python да разбере това, винаги трябва да пишете 'True' (като първата буква е главна, а следващите малки). **true, TRUE, and tRUE няма да работят – само True е правилно.** (Същото се отнася и до 'False'.)
 
-Booleans can be variables, too! See here:
+Булевите стойности могат също да са променливи! Вижте тук:
 
 {% filename %}command-line{% endfilename %}
 
@@ -569,7 +569,7 @@ Booleans can be variables, too! See here:
 True
 ```
 
-You can also do it this way:
+Може също да го направите по този начин:
 
 {% filename %}command-line{% endfilename %}
 
@@ -579,24 +579,24 @@ You can also do it this way:
 False
 ```
 
-Practice and have fun with Booleans by trying to run the following commands:
+Практикувайте и се повеселете с булевите стойности като се опитате да напишете следните команди:
 
 - `True and True`
 - `False and True`
 - `True or 1 == 1`
 - `1 != 2`
 
-Congrats! Booleans are one of the coolest features in programming, and you just learned how to use them!
+Поздраления! Булевите стойности са едни от най-готините неща в програмирането, и ти току що се научи как да ги използваш!
 
-# Save it!
+# Запази!
 
-> For readers at home: this part is covered in the [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) video.
+> За читателите у дома: тази част е показана във видеото [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk)
 
-So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal programs are saved in files and executed by our programming language **interpreter** or **compiler**. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
+До тук писахме всичкия си python код в интерпретатора, който ни ограничава да използваме само едни ред да впишем кода. Обикновено програмите са запазени във файлове и после изпълнени от **интерпретатора** или **компилатора** ни. Досега пускахме нашите програми по една на ред в Python интерпретатора. Ще са ни необходими малко повече редове от код за следващите няколко задачи, затова бързо ще направим това:
 
-- Exit the Python interpreter
-- Open up our code editor of choice
-- Save some code into a new python file
+- Излезем от Python интерпретатора
+- Отворим редактор за текс по избор
+- Запазим малко код в нов python файл
 - Run it!
 
 To exit from the Python interpreter that we've been using, type the `exit()` function
