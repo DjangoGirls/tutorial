@@ -148,31 +148,31 @@ HTML идва от "HyperText Markup Language". **HyperText** означава, 
 
 ![Figure 11.4](images/step6.png)
 
-Ихаа! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
+Ихаа! Но дотук, нашият шаблон показва точно **същата информация** -- там където говорихме по-рано за шаблоните, които ни позволяват да показваме **различна** информация в **същия формат**.
 
-What we really want to do is display real posts added in our Django admin – and that's where we're going next.
+Това, което искаме е да показва истински публикации добавени в администратора на Django -- и там е където отиваме след това.
 
-## One more thing: deploy!
+## Още нещо: прехвърляне на файловете (deploy)!
 
-It'd be good to see all this out and live on the Internet, right? Let's do another PythonAnywhere deploy:
+Би било добре да видим всичко това на живо в Internet, нали? Нека направим още едно прехвърляне на файлове към PythonAnywhere:
 
-### Commit, and push your code up to GitHub
+### Запазете, and избутайте кода си към GitHub
 
-First off, let's see what files have changed since we last deployed (run these commands locally, not on PythonAnywhere):
+Първо, нека видим кои файлове се промениха след последното прехвърляне (напишете следните команди на локалния компютър, не на PythonAnywhere):
 
 {% filename %}command-line{% endfilename %}
 
     $ git status
     
 
-Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes in this directory:
+Бъдете сигурни, че сте в директорията на `djangogirls` и нека кажем на git да включи всички промени в тази директория:
 
 {% filename %}command-line{% endfilename %}
 
     $ git add --all .
     
 
-> **Note** `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Also remember (from chapter 3) that `.` means the current directory.
+> **Забележка** `--all` означава, че `git` ще разпознае и файлове, които сте изтрили (по подразбиране, разпознава нови/модифицирани файлове). Also remember (from chapter 3) that `.` means the current directory.
 
 Before we upload all the files, let's check what `git` will be uploading (all the files that `git` will upload should now appear in green):
 
