@@ -106,11 +106,11 @@ HTML идва от "HyperText Markup Language". **HyperText** означава, 
 * `<em>текст</em>` набляга на текста 
 * `<strong>текст</strong>` удебелява текста
 * `<br>` отива на нов ред (не може да сложите нищо в br, както и няма затварящ етикет )
-* `<a href="https://djangogirls.org">link</a>` creates a link
-* `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
-* `<div></div>` defines a section of the page
+* `<a href="https://djangogirls.org">връзка</a>` създава връзка 
+* `<ul><li>първи елемент</li><li>втори елемент</li></ul>` прави лист, точно като този! 
+* `<div></div>` дефинира секция от страницата
 
-Here's an example of a full template, copy and paste it into `blog/templates/blog/post_list.html`:
+Ето пример на пълен шаблон, копирайте и пренесете в `blog/templates/blog/post_list.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -139,16 +139,16 @@ Here's an example of a full template, copy and paste it into `blog/templates/blo
 </html>
 ```
 
-We've created three `div` sections here.
+Създадохме три `div` секции тук.
 
-* The first `div` element contains the title of our blog – it's a heading and a link
-* Another two `div` elements contain our blog posts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blog post.
+* Първият `div` елемент съдържа името на блога -- неговото заглавие и връзката
+* Другите два `div` елемента съдържат нашите блог постове с датата на публикуване, `h2` със заглавието, на което може да се кликне и два `p`s (абзаца) от текст, единия за датата, а другия за нашия пост.
 
-It gives us this effect:
+Дава ни този ефект:
 
 ![Figure 11.4](images/step6.png)
 
-Yaaay! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
+Ихаа! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
 
 What we really want to do is display real posts added in our Django admin – and that's where we're going next.
 
