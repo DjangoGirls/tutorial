@@ -674,9 +674,9 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-If you get stuck, ask for help. That's exactly what the coaches are here for!
+Ако се затруднявате, поискайте помощ. Затова са менторите!
 
-Now use Python to execute the code in the file like this:
+Сега ползвайте Python за да изпълни кода във файла ето така:
 
 {% filename %}command-line{% endfilename %}
 
@@ -684,7 +684,7 @@ Now use Python to execute the code in the file like this:
     Hello, Django girls!
     
 
-Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
+Забележка: на Windows 'python3' не е разпознат като команда. Вместо това, използвайте 'python' за да стартирате файла:
 
 {% filename %}command-line{% endfilename %}
 
@@ -692,15 +692,15 @@ Note: on Windows 'python3' is not recognized as a command. Instead, use 'python'
 > python python_intro.py
 ```
 
-Alright! You just ran your first Python program that was saved to a file. Feel awesome?
+Браво! Току що пуснахте първата си програма на Python, която беше запазена на файл. Чувствате ли се страхотно?
 
-You can now move on to an essential tool in programming:
+Сега може да се прехвърлим на по-важно средство в програмирането:
 
 ## If … elif … else
 
-Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
+Много неща в кода трябва да се изпълнят само ако са преминали определени условия. Затова Python има нещо, наречено **if условна конструкция**.
 
-Replace the code in your **python_intro.py** file with this:
+Заместете кода във файла си **python_intro.py** с това:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -708,7 +708,7 @@ Replace the code in your **python_intro.py** file with this:
 if 3 > 2:
 ```
 
-If we were to save and run this, we'd see an error like this:
+Ако запазим и стартираме файла ще видим грешка като тази:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
