@@ -35,7 +35,7 @@ HTML идва от "HyperText Markup Language". **HyperText** означава, 
 
 Вече нямаме грешка! Поздравления :) Въпреки това, сайта ви всъщност не публикува нищо освен празна страница, защото шаблонът ви също е празен. Можем да оправим това.
 
-Open the new file in the code editor, and add the following:
+Отворете новият файл в редактора и добавете следното:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -48,26 +48,26 @@ Open the new file in the code editor, and add the following:
 </html>
 ```
 
-So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
+Така, как изглежда уебсайта ви в момента? Отиде на: http://127.0.0.1:8000/ за да разберете
 
 ![Figure 11.2](images/step3.png)
 
-It worked! Nice work there :)
+Работи! Добра работа :)
 
-* The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
-* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
+* Най-простия етикет `<html>` е винаги в началото на една страница и `</html>` е винаги в края и. Както може да видите, цялото съдържание на страницата е между отварящият `<html>` и затварящият етикет `</html>`
+* `<p>` е етикет за абзацни елементи; `</p>` затваря всеки един абзац
 
-## Head and body
+## Глава и тяло на страницата (head и body)
 
-Each HTML page is also divided into two elements: **head** and **body**.
+Всяка HTML страница е разделена на два елемена: **head** и **body**.
 
-* **head** is an element that contains information about the document that is not displayed on the screen.
+* **head** е елемент, който съдържа информация относно документа, който е показан на екрана.
 
-* **body** is an element that contains everything else that is displayed as part of the web page.
+* **body** е елемент, който съдържа всичко, което е показано като част от уеб страницата.
 
-We use `<head>` to tell the browser about the configuration of the page, and `<body>` to tell it what's actually on the page.
+Използваме `<head>` за да кажем на търсачката за конфигурацията на страницата и `<body>` какво точно е на страницата.
 
-For example, you can put a web page title element inside the `<head>`, like this:
+Например, може да сложите заглавие на елемента вътре в `<head>` ето така: 
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -83,7 +83,7 @@ For example, you can put a web page title element inside the `<head>`, like this
 </html>
 ```
 
-Save the file and refresh your page.
+Запазете файла и презаредете страницата.
 
 ![Figure 11.3](images/step4.png)
 
