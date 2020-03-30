@@ -185,7 +185,7 @@ TypeError: object of type 'int' has no len()
 
 Пишем name равно на Ola.
 
-As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Enter `name` and hit `enter`:
+Ако забелязахте, програмата ви не върна нищо както преди това. Как да разберем, че променливата съществува? Напишете `name` и натиснете бутона `enter`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -194,7 +194,7 @@ As you've noticed, your program didn't return anything like it did before. So ho
 'Ola'
 ```
 
-Yippee! Your first variable! :) You can always change what it refers to:
+Ихууу! Първата ти променлива! :) Винаги може да я промениш към какво се отнася:
 
 {% filename %}command-line{% endfilename %}
 
@@ -204,7 +204,7 @@ Yippee! Your first variable! :) You can always change what it refers to:
 'Sonja'
 ```
 
-You can use it in functions too:
+Може да я използвате и във функции:
 
 {% filename %}command-line{% endfilename %}
 
@@ -213,7 +213,7 @@ You can use it in functions too:
 5
 ```
 
-Awesome, right? Now, variables can be anything – numbers too! Try this:
+Страхотно, нали? Сега, променливите могат да са какво ли не -- също така и числа! Пробвайте това:
 
 {% filename %}command-line{% endfilename %}
 
@@ -224,7 +224,7 @@ Awesome, right? Now, variables can be anything – numbers too! Try this:
 24
 ```
 
-But what if we used the wrong name? Can you guess what would happen? Let's try!
+Но какво ако използваме грешното име Можете ли да отгатнете какво ще се случи? Нека опитаме!
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -236,13 +236,13 @@ Traceback (most recent call last):
 NameError: name 'ctiy' is not defined
 ```
 
-An error! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
+Грешка! Както виждате, Python има различни видове грешки, като тази се казва **NameError**. Python винаги ще ви дава тази грешка, ако се опитвате да използвате променлива, която все още не е дефинирана. Ако попаднете на тази грешка по-късно, вижте дали не сте сбъркали при писането на някое от имената.
 
-Play with this for a while and see what you can do!
+Поиграйте се малко с това и вижте какво може да правите!
 
-## The print function
+## Фунцкията print
 
-Try this:
+Пробвайте това:
 
 {% filename %}command-line{% endfilename %}
 
@@ -254,11 +254,11 @@ Try this:
 Maria
 ```
 
-When you just type `name`, the Python interpreter responds with the string *representation* of the variable 'name', which is the letters M-a-r-i-a, surrounded by single quotes, ''. When you say `print(name)`, Python will "print" the contents of the variable to the screen, without the quotes, which is neater.
+Когато напишете `name`, Python интерпретатора отговаря със низово *изображение* на променливата 'name', където буквите 'M-a-r-i-a' са обградени от единични кавички. Когато кажем `print(name)`, Python ще "отпечата" съдържанието на променливата на екрана, без кавичките, което е по-прилежно.
 
-As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things on multiple lines.
+Както ще видим по-късно `print()` също е полезен, когато искаме да отпечатаме неща от функциите, или когато искаме да отпечатаме неща на няколко реда.
 
-## Lists
+## Листове
 
 Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called **list**. Lists are exactly what you think they are: objects which are lists of other objects. :)
 
