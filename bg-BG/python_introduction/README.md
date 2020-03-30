@@ -401,7 +401,7 @@ Ola
 
 Виждате ли, подобно е на лист. Но не е необходимо да помните индекса -- само името.
 
-What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
+Какво се случва, когато попитаме Python за стойността на елемент, който не съществува? Можете ли да познаете? Нека опитаме и видим:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -412,14 +412,14 @@ Traceback (most recent call last):
 KeyError: 'age'
 ```
 
-Look, another error! This one is a **KeyError**. Python is helpful and tells you that the key `'age'` doesn't exist in this dictionary.
+Вижте, друга грешка! Тази е **KeyError**. Python е много услужлив и ти казва, че елемент `'age'` не съществува в този речник.
 
-When should you use a dictionary or a list? Well, that's a good point to ponder. Think about the answer before looking at it in the next line.
+Кога да използвате речник и кога лист? Това е добър въпрос. Помислете за отговор преди да видите следващия ред.
 
-- Do you just need an ordered sequence of items? Go for a list.
-- Do you need to associate values with keys, so you can look them up efficiently (by key) later on? Use a dictionary.
+- Ако имате нужда просто от подредена последователност от елементи? Ползвайте лист.
+- Ако трабва да асоциирате стойности с елементи, които искате да може да ги видите на по-късен етап (чрез елемент - by key)? Използвайте речник.
 
-Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key–value pairs to a dictionary after it is created, like this:
+Речниците са като листове, но *непостоянни*, което означава, че могат да бъдат променени след като бъдат създадени. Може да добавяте нови двойки елемент-стойност към речника след като е създаден ето така:
 
 {% filename %}command-line{% endfilename %}
 
