@@ -116,9 +116,9 @@ Nice! Вижте как отговорът изскочи? Python знае ма�
 'OLA'
 ```
 
-You just used the `upper` **method** on your string! A method (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
+Току що използвахте метода `upper` върху вашия низ! Методът (като `upper()`) е поредица от инструкции, който Python изпълнява върху даден обект (`"Ola"`) след като е повикан.
 
-If you want to know the number of letters contained in your name, there is a **function** for that too!
+Ако искате да знаете, от колко на брой букви е вашето име, има функция и за това!
 
 {% filename %}command-line{% endfilename %}
 
@@ -127,7 +127,7 @@ If you want to know the number of letters contained in your name, there is a **f
 3
 ```
 
-Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
+Чудите ли се понякога защо, когато извиквате функции с `.` на края на низа (като `"Ola".upper()`), като понякога извиквате първо функцията и поставяте низа в скоби? Е, в някой случаи функциите принадлежат на обекти, като `upper()`, която може да се използва само върху низове. В този случай, наричам функцията метод. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
 
 ### Summary
 
