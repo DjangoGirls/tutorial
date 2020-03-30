@@ -982,9 +982,9 @@ hi("Rachel")
 
 Това вече е последната част. Мина бързо, нали? :)
 
-Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
+Програмистите не обичат да е повтарят. Програмирането се отнася до автоматизация, така че не искаме да поздравяваме всеки човек по име като изписваме за всеки по отделно, нали? Ето къде циклите идват в употреба.
 
-Still remember lists? Let's do a list of girls:
+Все още си спомняте листовете? Нека направим лист с момичета:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -992,7 +992,7 @@ Still remember lists? Let's do a list of girls:
 girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 ```
 
-We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
+Искаме да поздравим всяка една от тях по име. Имаме функцията `hi` да направи това, така че нека я използваме в цикъл:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1000,9 +1000,9 @@ We want to greet all of them by their name. We have the `hi` function to do that
 for name in girls:
 ```
 
-The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
+Конструкцията `for` се държи подобно на конструкцията `if`; кода под него трябва да е отместен с четири места навътре.
 
-Here is the full code that will be in the file:
+Ето целия код, който трябва да е във файла:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1016,7 +1016,7 @@ for name in girls:
     print('Next girl')
 ```
 
-And when we run it:
+И когато го стартираме:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1033,9 +1033,9 @@ And when we run it:
     Next girl
     
 
-As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
+Както виждате всичко, което сложите вътре във `for` конструкцията с отместването ще бъде повторено за всеки елемент от листа `girls`.
 
-You can also use `for` on numbers using the `range` function:
+Може също да използвате `for` цикъл за числа като използвате фунцкията `range` :
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1044,7 +1044,7 @@ for i in range(1, 6):
     print(i)
 ```
 
-Which would print:
+Което ще отпечата:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1055,7 +1055,7 @@ Which would print:
     5
     
 
-`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
+`range` е функция, която създава лист от номера едно след друго (тези номера са дадени от вас като стойности). 
 
 Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
 
