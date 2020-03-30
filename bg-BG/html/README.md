@@ -172,34 +172,34 @@ HTML идва от "HyperText Markup Language". **HyperText** означава, 
     $ git add --all .
     
 
-> **Забележка** `--all` означава, че `git` ще разпознае и файлове, които сте изтрили (по подразбиране, разпознава нови/модифицирани файлове). Also remember (from chapter 3) that `.` means the current directory.
+> **Забележка** `--all` означава, че `git` ще разпознае и файлове, които сте изтрили (по подразбиране, разпознава нови/модифицирани файлове). Също помните (от 3-та глава), че `.` означава настоящата директория.
 
-Before we upload all the files, let's check what `git` will be uploading (all the files that `git` will upload should now appear in green):
+Преди да качим всички файлове, нека проверим какво ще качи `git` (всички файлове, които `git` ще качи ще се появят в зелено):
 
 {% filename %}command-line{% endfilename %}
 
     $ git status
     
 
-We're almost there, now it's time to tell it to save this change in its history. We're going to give it a "commit message" where we describe what we've changed. You can type anything you'd like at this stage, but it's helpful to type something descriptive so that you can remember what you've done in the future.
+Почти сме там, сега е време да кажем да запази тези промени в хронологията си. Ще дадем съобщение за запазване ("commit message"), където описваме накратко какво сме променили. Може да напишете каквото си поискате на този етап, но е важно да се знае, че би трябвало да е нещо описващо от това, което сте направили, така че да се знае в бъдеще.
 
 {% filename %}command-line{% endfilename %}
 
     $ git commit -m "Changed the HTML for the site."
     
 
-> **Note** Make sure you use double quotes around the commit message.
+> **Забележка:** Бъдете сигурни, че сте сложили съобщението в двойни кавички.
 
-Once we've done that, we upload (push) our changes up to GitHub:
+След като сме направили това, качваме (push) нашите промени на GitHub:
 
 {% filename %}command-line{% endfilename %}
 
     $ git push
     
 
-### Pull your new code down to PythonAnywhere, and reload your web app
+### Издърпайте новия код на PythonAnywhere и презаредете страницата
 
-* Open up the [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one). Then, run:
+* Отворете [PythonAnywhere страницата](https://www.pythonanywhere.com/consoles/) и отидете на **Bash конзолата** (или стартирайте нова). След това напишете команда:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -208,7 +208,7 @@ Once we've done that, we upload (push) our changes up to GitHub:
     [...]
     
 
-You'll need to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain name, without the angle-brackets. Your subdomain name is normally your PythonAnywhere user name, but in some cases it might be a bit different (such as if your user name contains capital letters). So if this command doesn't work, use the `ls` (list files) command to find your actual subdomain/folder name, and then `cd` to there.
+Трябва да заместите `<your-pythonanywhere-domain>` с актуалния си PythonAnywhere субдомейн без скобите. Your subdomain name is normally your PythonAnywhere user name, but in some cases it might be a bit different (such as if your user name contains capital letters). So if this command doesn't work, use the `ls` (list files) command to find your actual subdomain/folder name, and then `cd` to there.
 
 Now watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **"Files" page** and view your code on PythonAnywhere (you can reach other PythonAnywhere pages from the menu button on the console page).
 
