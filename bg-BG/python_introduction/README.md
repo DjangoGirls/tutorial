@@ -497,9 +497,9 @@ True
 
 Дадохме на Python да сравни няколко числа. Както може да видите, Python не само че може да сравни числата, но може също така да сравнява и резултатите от метода. Супер, нали?
 
-Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
+Чудите ли се защо използвахме два знака за равно `==` един до друг за да сравним дали числата са равни? Използваме едно равно `=` за да причислим стойност на променливите. Винаги, ама **винаги** трябва да иползваме две от тях – `==` – ако искаме да проверим дали две неща са равни едно на друго. Можем също така да кажем, че не искаме двете неща да са равни едно на друго. Затова, използваме символа `!=`, както е показано в примера по-горе.
 
-Give Python two more tasks:
+Дайте на Python още две задачки:
 
 {% filename %}command-line{% endfilename %}
 
@@ -510,14 +510,14 @@ True
 False
 ```
 
-We've seen `>` and `<`, but what do `>=` and `<=` mean? Read them like this:
+Виждали сме `>` и `<`, но какво означават `>=` и `<=`? Четем ги по този начин:
 
-- x `>` y means: x is greater than y
-- x `<` y means: x is less than y
-- x `<=` y means: x is less than or equal to y
-- x `>=` y means: x is greater than or equal to y
+- x `>` y означава: x е по-голямо от y
+- x `>` y означава: x е по-малко от y
+- x `<=` y означава: x е по-малко или равно на y
+- x `>=` y означава: x е по-голямо или равно на y
 
-Awesome! Wanna do one more? Try this:
+Страхотно! Искате ли да направите още нещо? Пробвайте това:
 
 {% filename %}command-line{% endfilename %}
 
@@ -530,9 +530,9 @@ False
 True
 ```
 
-You can give Python as many numbers to compare as you want, and it will give you an answer! Pretty smart, right?
+Може да дадете на Python колкото си искате числа да сравнява и ще ви даде отговор! Много умно, нали?
 
-- **and** – if you use the `and` operator, both comparisons have to be True in order for the whole command to be True
+- **and** – ако използвате оператора `and`, двете сравнения трябва да са True за да бъде цялата команда True
 - **or** – if you use the `or` operator, only one of the comparisons has to be True in order for the whole command to be True
 
 Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
