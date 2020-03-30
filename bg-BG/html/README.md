@@ -10,13 +10,13 @@ Django формат шаблона е описан в език наречен HT
 
 HTML е код, който се интерпретира от търсачките -- като Chrome, Firefox, Safari -- за да покаже на екран страницата на потребителя.
 
-HTML идва от "HyperText Markup Language". **HyperText** означава, че е тип от текст който подпомага хипервръзки между страници. **Markup** means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with **tags**, each one starting with `<` and ending with `>`. These tags represent markup **elements**.
+HTML идва от "HyperText Markup Language". **HyperText** означава, че е тип от текст който подпомага хипервръзки между страници. **Markup** означава, че сме взели документа и сме го означили с код за да кажем нещо (в този случай, търсачка) как да подразбира страницата. HTML кода е изграден от **tags** (етикети), всеки от които стартира с `<` и завършва с `>`. Тези етикети представляват маркирани елементи (**elements**).
 
-## Your first template!
+## Първият ви шаблон!
 
-Creating a template means creating a template file. Everything is a file, right? You have probably noticed this already.
+Създаване на шаблон означава създаване на шаблонен файл. Всичко е файл, нали? Може би вече забелязахте това.
 
-Templates are saved in `blog/templates/blog` directory. So first create a directory called `templates` inside your blog directory. Then create another directory called `blog` inside your templates directory:
+Шаблоните се запазват в директория `blog/templates/blog`. Така че, първо създайте директория наречена `templates` в директорията на блога ви. След това създайте друга директория наречена `blog` вътре при вашите шаблони:
 
     blog
     └───templates
