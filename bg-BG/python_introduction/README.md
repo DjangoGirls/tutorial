@@ -470,15 +470,15 @@ KeyError: 'age'
 - **грешки** -- знаете как да четете и разбирате грешките които се показват, ако Python не разбира командата която сте задали
 - **променливи** – имена на обектите, които ви позволяват да пишете код по-лесно и да правят кода ви по-четлив
 - **листове** –листовете са обекти запазени в определен ред
-- **dictionaries** – objects stored as key–value pairs
+- **речници** – обекти запазени като двойки от елемент-стойност (key-value pairs)
 
-Excited for the next part? :)
+Вълнувате ли се за следващата част? :)
 
-## Compare things
+## Сравняване на неща
 
-> For readers at home: this part is covered in the [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) video.
+> За читателите у вома: тази част е показана във видеото [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4).
 
-A big part of programming involves comparing things. What's the easiest thing to compare? Numbers! Let's see how that works:
+Голяма част от програмирането включва сравняване на неща. Какво е най-лесното нещо което може да се сравни? Числата! Нека видим как работи:
 
 {% filename %}command-line{% endfilename %}
 
@@ -495,7 +495,7 @@ True
 True
 ```
 
-We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare method results. Nice, huh?
+Дадохме на Python да сравни няколко числа. Както може да видите, Python не само че може да сравни числата, но може също така да сравнява и резултатите от метода. Супер, нали?
 
 Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
 
