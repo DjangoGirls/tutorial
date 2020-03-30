@@ -365,7 +365,7 @@ Maria
 
 > За читателите у дома: тази част е показана във видеото [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c).
 
-A dictionary is similar to a list, but you access values by looking up a key instead of a numeric index. A key can be any string or number. The syntax to define an empty dictionary is:
+Речника е подобен на листа, но можете да достъпвате стойностите му като погледнете за ключа вместо числения индекс. Синтаксисът за дефиниране на празен речник е:
 
 {% filename %}command-line{% endfilename %}
 
@@ -374,9 +374,9 @@ A dictionary is similar to a list, but you access values by looking up a key ins
 {}
 ```
 
-This shows that you just created an empty dictionary. Hurray!
+Това показва, че в момента създадохте празен речник. Ура!
 
-Now, try writing the following command (try substituting your own information, too):
+Сега, опитайте се да напишете следната команда (опитайте се да заместите със своя информация):
 
 {% filename %}command-line{% endfilename %}
 
@@ -384,13 +384,13 @@ Now, try writing the following command (try substituting your own information, t
 >>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
 ```
 
-With this command, you just created a variable named `participant` with three key–value pairs:
+С тази команда, току що създадохте променлива с име `participant` с три елемент-стойност (keys-value) двойки.
 
-- The key `name` points to the value `'Ola'` (a `string` object),
-- `country` points to `'Poland'` (another `string`),
-- and `favorite_numbers` points to `[7, 42, 92]` (a `list` with three numbers in it).
+- Елементът `name` се отнася за стойността `'Ola'` (`низ` обект),
+- `country` се отнася за `'Poland'` (друг `низ`),
+- and `favorite_numbers` се отнася за `[7, 42, 92]` (`лист` с три числа в него).
 
-You can check the content of individual keys with this syntax:
+Може да проверите съдържанието на всеки от елементите с този синтаксис:
 
 {% filename %}command-line{% endfilename %}
 
@@ -399,7 +399,7 @@ You can check the content of individual keys with this syntax:
 Ola
 ```
 
-See, it's similar to a list. But you don't need to remember the index – just the name.
+Виждате ли, подобно е на лист. Но не е необходимо да помните индекса -- само името.
 
 What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
 
