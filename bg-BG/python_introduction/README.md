@@ -597,9 +597,9 @@ False
 - Излезем от Python интерпретатора
 - Отворим редактор за текс по избор
 - Запазим малко код в нов python файл
-- Run it!
+- Пуснете го!
 
-To exit from the Python interpreter that we've been using, type the `exit()` function
+За да излезнем от Python интерпретатора, който използвахме, пише следната функция `exit()`
 
 {% filename %}command-line{% endfilename %}
 
@@ -608,9 +608,9 @@ To exit from the Python interpreter that we've been using, type the `exit()` fun
 $
 ```
 
-This will put you back into the command prompt.
+Това ще ви върне в началното състояние на конзолата (терминала).
 
-Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now and write some code into a new file (or if you're using a Chromebook, create a new file in the cloud IDE and open the file, which will be in the included code editor):
+По-рано избрахме нашия редактор от секцията за [code editor](../code_editor/README.md). Сега трябва да го отворим и да напишем малко код в нов файл (ако използвате Chromebook, създайте нов файл в cloud IDE и отворете файла, който ще е в редактора):
 
 {% filename %}editor{% endfilename %}
 
@@ -618,11 +618,11 @@ Earlier, we picked out a code editor from the [code editor](../code_editor/READM
 print('Hello, Django girls!')
 ```
 
-Obviously, you're a pretty seasoned Python developer now, so feel free to write some code that you've learned today.
+Очевидно, вече сте по-обиграни Python разработчици, така че напишете код, който научихте днес.
 
-Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, but the important part here is to make sure the file ends in **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
+Сега трябва да запазим файла и да му дадем описателно име. Нека наречем файла **python_intro.py** и го запазим на началния си екран. Можем да именуваме файла си както пожелаем, но е важно да сме сигурни, че завършва на **.py**. Разширението **.py** казва на операционната система, че това е **Python executable file** и Python може да го обработи. 
 
-> **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. This is called "syntax highlighting", and it's a really useful feature when coding. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor. :)
+> **Забележка:** Трябва да забелязахте, че едни от най-готините неща в редактора са: цветовете! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. This is called "syntax highlighting", and it's a really useful feature when coding. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor. :)
 
 With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
 
