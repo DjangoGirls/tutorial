@@ -718,7 +718,7 @@ if 3 > 2:
     SyntaxError: unexpected EOF while parsing
     
 
-Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
+Python очаква от нас да дадем следващи инсктрукции какво да се изпълни в условието `3 > 2` за да бъде вярно (или `True` за същата цел). Нека накараме Python да отпечата “It works!”. Променете кода си във файла с това:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -727,9 +727,9 @@ if 3 > 2:
     print('It works!')
 ```
 
-Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
+Забелязахте ли как изписахме следващия ред от код с 4 празни места навътре? Трябва да направим това за да може Python да знае, кой код да изпълни в случай, че е вярно условието. Може да използвате едно празно място, но почти всеки Python програмист използва 4, тъй като изглежда по-прилежно. Използването на бутона Tab също се равнява на 4 места, ако сте направили редактора си да прави така. Когато направите избор не го променяйте! Ако вече сте използвали 4 места за в бъдеще ползвайте 4 места - в противен случай може да попаднете на затруднения.
 
-Save it and give it another run:
+Запазете и го стартирайте отново:
 
 {% filename %}command-line{% endfilename %}
 
@@ -738,9 +738,9 @@ $ python3 python_intro.py
 It works!
 ```
 
-Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
+Забележка: Помнете, че на Windows, 'python3' не се разпознава като команда. От сега нататък, заместете 'python3' с 'python' за да изпълните файла.
 
-### What if a condition isn't True?
+### Какво ако условието не е вярно (True)?
 
 In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
 
