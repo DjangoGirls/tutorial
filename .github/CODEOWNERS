@@ -2,17 +2,22 @@
 *	@DjangoGirls/committers
 
 # language PR review teams for the respective translations:
+/bg/	@DjangoGirls/bg-pr
+/cs/	@DjangoGirls/cs-pr
 /de/	@DjangoGirls/de-pr
+/el/	@DjangoGirls/el-pr
 /en/	@DjangoGirls/en-pr
 /es/	@DjangoGirls/es-pr
 /fa/	@DjangoGirls/fa-pr
 /fr/	@DjangoGirls/fr-pr
+/hu/	@DjangoGirls/hu-pr
 /it/	@DjangoGirls/it-pr
 /ja/	@DjangoGirls/ja-pr
 /ko/	@DjangoGirls/ko-pr
 /pl/	@DjangoGirls/pl-pr
 /pt/	@DjangoGirls/pt-pr
 /ru/	@DjangoGirls/ru-pr
+/sk/	@DjangoGirls/sk-pr
 /tr/	@DjangoGirls/tr-pr
 /uk/	@DjangoGirls/uk-pr
 /zh/	@DjangoGirls/zh-pr
