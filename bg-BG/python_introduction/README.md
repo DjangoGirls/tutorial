@@ -742,7 +742,7 @@ It works!
 
 ### Какво ако условието не е вярно (True)?
 
-In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
+В предходните примери, кода се изпълняваше само ако условието е вярно (True). Но Python има също `elif` и `else` условия:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -753,7 +753,7 @@ else:
     print('5 is not greater than 2')
 ```
 
-When this is run it will print out:
+Когато това се изпълни ще се отпечата:
 
 {% filename %}command-line{% endfilename %}
 
@@ -761,7 +761,7 @@ When this is run it will print out:
     5 is indeed greater than 2
     
 
-If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
+Ако 2 беше по-голямо число от 5, тогава втората команда щеше да се изпълни. Нека видим как работи `elif` :
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -775,7 +775,7 @@ else:
     print('Hey anonymous!')
 ```
 
-and executed:
+и се изпълнява:
 
 {% filename %}command-line{% endfilename %}
 
@@ -783,9 +783,9 @@ and executed:
     Hey Sonja!
     
 
-See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
+Видяхте ли какво се случи там? `elif` ви даде възможност да добавите още едно условие в случай, че предното се провали.
 
-You can add as many `elif` statements as you like after your initial `if` statement. For example:
+Може да добавяте колкото си искате `elif` условия след първоначалното `if` условие. Например:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -805,7 +805,7 @@ else:
     print("My ears are hurting! :(")
 ```
 
-Python runs through each test in sequence and prints:
+Python преминава и тества през всеки ред и отпечатва:
 
 {% filename %}command-line{% endfilename %}
 
@@ -813,11 +813,11 @@ Python runs through each test in sequence and prints:
     Perfect, I can hear all the details
     
 
-## Comments
+## Коментари
 
-Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
+Коментрите са редове, започващи с `#`. Може да пишете каквото искате след `#` и Python ще го игнорира. Коментарите са направени да правят кода по-лесен за четене и разбиране от другите хора.
 
-Let's see how that looks:
+Нека видим как изглежда:
 
 {% filename %}python_intro.py{% endfilename %}
 
