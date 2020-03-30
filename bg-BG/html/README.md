@@ -31,7 +31,7 @@ HTML идва от "HyperText Markup Language". **HyperText** означава, 
 
 > Ако все още имате грешка `TemplateDoesNotExist`, опитайте се да заредите сървъра си отново. Отидете в конзолата си, спрете сървъра като натиснете едновременно Ctrl+C и го стартирате отново като напишете команда `python manage.py runserver` .
 
-![Figure 11.1](images/step1.png)
+![Фигура 11.1](images/step1.png)
 
 Вече нямаме грешка! Поздравления :) Въпреки това, сайта ви всъщност не публикува нищо освен празна страница, защото шаблонът ви също е празен. Можем да оправим това.
 
@@ -50,7 +50,7 @@ HTML идва от "HyperText Markup Language". **HyperText** означава, 
 
 Така, как изглежда уебсайта ви в момента? Отиде на: http://127.0.0.1:8000/ за да разберете
 
-![Figure 11.2](images/step3.png)
+![Фигура 11.2](images/step3.png)
 
 Работи! Добра работа :)
 
@@ -85,7 +85,7 @@ HTML идва от "HyperText Markup Language". **HyperText** означава, 
 
 Запазете файла и презаредете страницата.
 
-![Figure 11.3](images/step4.png)
+![Фигура 11.3](images/step4.png)
 
 Забелязахте ли как търсачката ви разбра, че заглавието на блога е "Ola's blog"? Тълкува `<title>Ola's blog</title>` и показва текст с името на заглавието в лентата на търсачката (също така ще се използва за отметка (bookmarks) и т.н.).
 
@@ -146,7 +146,7 @@ HTML идва от "HyperText Markup Language". **HyperText** означава, 
 
 Дава ни този ефект:
 
-![Figure 11.4](images/step6.png)
+![Фигура 11.4](images/step6.png)
 
 Ихаа! Но дотук, нашият шаблон показва точно **същата информация** -- там където говорихме по-рано за шаблоните, които ни позволяват да показваме **различна** информация в **същия формат**.
 
@@ -208,10 +208,10 @@ HTML идва от "HyperText Markup Language". **HyperText** означава, 
     [...]
     
 
-Трябва да заместите `<your-pythonanywhere-domain>` с актуалния си PythonAnywhere субдомейн без скобите. Your subdomain name is normally your PythonAnywhere user name, but in some cases it might be a bit different (such as if your user name contains capital letters). So if this command doesn't work, use the `ls` (list files) command to find your actual subdomain/folder name, and then `cd` to there.
+Трябва да заместите `<your-pythonanywhere-domain>` с актуалния си PythonAnywhere субдомейн без скобите. Вашият субдомейн е потребителско ви име в PythonAnywhere, но в някои случай може да е различно (като например ако потребителското ви име съдържа главни букви). Така че, ако тази команда не работи, използвайте команда `ls` (показване на лист от файлове) за да намерите вашия субдомейн/име на папката, и след това да отидете в нея `cd`.
 
-Now watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **"Files" page** and view your code on PythonAnywhere (you can reach other PythonAnywhere pages from the menu button on the console page).
+Сега гледайте как се сваля кода ви. Ако искате да проверите дали е пристигнал, отидете на **"Files" страница** и вижте кода си на PythonAnywhere (може да достигнете други страници на PythonAnywhere от бутона на менюто в страницата на конзолата).
 
-* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
+* Накрая, отидете на ["Web" страницата](https://www.pythonanywhere.com/web_app_setup/) и натиснете **Reload** на вашата апликация.
 
-Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
+Обновлението трябва да е на живо! Отидете и презаредете страницата си в търсачката. Промените трябва да са видими. :)
