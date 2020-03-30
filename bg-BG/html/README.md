@@ -87,7 +87,7 @@ HTML идва от "HyperText Markup Language". **HyperText** означава, 
 
 ![Figure 11.3](images/step4.png)
 
-Notice how the browser has understood that "Ola's blog" is the title of your page? It has interpreted `<title>Ola's blog</title>` and placed the text in the title bar of your browser (it will also be used for bookmarks and so on).
+Забелязахте ли как търсачката ви разбра, че заглавието на блога е "Ola's blog"? Тълкува `<title>Ola's blog</title>` и показва текст с името на заглавието в лентата на търсачката (също така ще се използва за отметка (bookmarks) и т.н.).
 
 Probably you have also noticed that each opening tag is matched by a *closing tag*, with a `/`, and that elements are *nested* (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
 
