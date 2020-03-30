@@ -140,9 +140,9 @@ Nice! Вижте как отговорът изскочи? Python знае ма�
 
 Това са основите на всеки програмен език, който учите. Готови ли сте за нещо по-сложно? Залагаме, че сте!
 
-## Errors
+## Грешки
 
-Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
+Нека опитаме нещо ново. Можем ли да вземем дължината на числото по същият начин, по който взехме дължината на нашето име? Напишете `len(304023)` и натиснете `enter`:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -153,9 +153,9 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-We got our first error! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. Making mistakes (even intentional ones) are an important part of learning!
+Показа се първата ни грешка! {{ warning_icon }} е начина, по който ще ви показваме, че кода който се опитвате да пуснете няма да работи както се очаква. Грешките (дори и тези, които правим нарочно) са важна част от процеса на учене!
 
-It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
+Казва, че обектът от тип "int" (integers, или още цели числа) нямат дължина. Какво можем да направим сега? Може би да напишем числото ни като низ? Низовете имат дължина, нали така?
 
 {% filename %}command-line{% endfilename %}
 
@@ -164,7 +164,7 @@ It says that objects of type "int" (integers, whole numbers) have no length. So 
 6
 ```
 
-It worked! We used the `str` function inside of the `len` function. `str()` converts everything to strings.
+Работи! Използвахме функцията `str` във функцията `len`. `str()` преобразува всичко в низове.
 
 - The `str` function converts things into **strings**
 - The `int` function converts things into **integers**
