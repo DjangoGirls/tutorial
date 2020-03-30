@@ -260,9 +260,9 @@ Maria
 
 ## Листове
 
-Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called **list**. Lists are exactly what you think they are: objects which are lists of other objects. :)
+Освен низовете и целите числа, Python има всякакви видове типове от обекти. Сега ще въведем една от тях наречена **list**. Листоверте са точно това, което си мислите, че са: обекти, които са листове от други обекти. :)
 
-Go ahead and create a list:
+Давайте нататък и създайте лист:
 
 {% filename %}command-line{% endfilename %}
 
@@ -271,7 +271,7 @@ Go ahead and create a list:
 []
 ```
 
-Yes, this list is empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repeat ourselves all the time, so we will put it in a variable, too:
+Да, това е празен лист. Не е много полезен нали? Нека създадем лист с лотарийни номера. Не искаме да се повтаряме постоянно, така че ще използваме променлива:
 
 {% filename %}command-line{% endfilename %}
 
@@ -279,7 +279,7 @@ Yes, this list is empty. Not very useful, right? Let's create a list of lottery 
 >>> lottery = [3, 42, 12, 19, 30, 59]
 ```
 
-All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that? You know this already!
+И така, имаме лист! Какво можем да правим с него? Нека видим колко лотарийни числа има в листа? Имате ли си на идея коя функция може да се използва за това? Това вече го знаете!
 
 {% filename %}command-line{% endfilename %}
 
@@ -288,7 +288,7 @@ All right, we have a list! What can we do with it? Let's see how many lottery nu
 6
 ```
 
-Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we will sort it now:
+Да! `len()` може да ви даде броя на обектите в листа. Много удобно, нали? Може би и ще го сортираме:
 
 {% filename %}command-line{% endfilename %}
 
@@ -296,7 +296,7 @@ Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we 
 >>> lottery.sort()
 ```
 
-This doesn't return anything, it just changed the order in which the numbers appear in the list. Let's print it out again and see what happened:
+Това не връща нищо, само променя реда, в който числата са показани в листа. Нека го отпечатаме отново и видим какво се случва:
 
 {% filename %}command-line{% endfilename %}
 
@@ -305,9 +305,9 @@ This doesn't return anything, it just changed the order in which the numbers app
 [3, 12, 19, 30, 42, 59]
 ```
 
-As you can see, the numbers in your list are now sorted from the lowest to highest value. Congrats!
+Както се вижда, числата в листа са вече подредени от по-малката към по-голямата стойност. Поздравления!
 
-Maybe we want to reverse that order? Let's do that!
+Може би искаме да направим обратното?
 
 {% filename %}command-line{% endfilename %}
 
