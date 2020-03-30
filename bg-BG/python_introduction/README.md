@@ -846,9 +846,9 @@ if volume < 20 or volume > 80:
 
 > За читателите у дома: тази част е показана във видеото [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0).
 
-Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
+Помните ли функциите като `len()`, които изпълнихте в Python? Така, добри новини - сега ще научите как да напишете свои фукции!
 
-A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
+Функцията е последователност от инструкции, така че Python да може да я изпълнин. Всяка функция в Python започяа с ключовата дума `def`, с което се дава име на функцията и може да има няколко параметъра. Нека пробваме. Заместете кода във файла **python_intro.py** със следното:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -860,11 +860,11 @@ def hi():
 hi()
 ```
 
-Okay, our first function is ready!
+Добре, първата ви функция е готова!
 
-You may wonder why we've written the name of the function at the bottom of the file. When we write `def hi():` and the indented lines following, this is us writing instructions for what the `hi()` function should do. Python will read and remember these instructions, but won't run the function yet. To tell Python we want to run the function, we have to call the function with `hi()`. Python reads the file and executes it from top to bottom, so we have to define the function in the file before we call it.
+Може би се чудите защо написахме името на функцията в края на файла. Когато пишем `def hi():` и следващите редове започват по-навътре, това оказва какво трябва да направи функцията `hi()`. Python ще прочете и запомни тези инструкции, но няма да изпълни все още функцията. За да кажем на Python да изпълни функцията, трябва да извикаме вункцията с `hi()`. Python чете файла и изпълнява от горе до долу, затова трябва да дефинираме функцията преди да сме я повикали.
 
-Let's run this now and see what happens:
+Нека го стартираме и видим какво се случва:
 
 {% filename %}command-line{% endfilename %}
 
@@ -873,7 +873,7 @@ Let's run this now and see what happens:
     How are you?
     
 
-Note: if it didn't work, don't panic! The output will help you to figure why:
+Забележка: ако не работи не се паникьосвайте! Резултатът ще ви помогне да разберете защо:
 
 - If you get a `NameError`, that probably means you typed something wrong, so you should check that you used the same name when creating the function with `def hi():` and when calling it with `hi()`.
 - If you get an `IndentationError`, check that both of the `print` lines have the same whitespace at the start of a line: python wants all the code inside the function to be neatly aligned.
