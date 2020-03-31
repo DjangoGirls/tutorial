@@ -10,7 +10,7 @@
 
 ### আপনি কি আরও কোনো রিসোর্স সুপারিশ করতে পারেন?
 
-হ্যাঁ! There are a *lot* of resources online for learning all kinds of programming skills – it can be pretty daunting to work out where to go next, but we've got you covered. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
+হ্যাঁ! অনলাইনে *অনেক * রিসোর্স আছে সকল প্রকার প্রোগ্রামিং স্কিল শেখার জন্য - এটা বেস ভয়ংকর কাজ যে একটা শেখার পর আরেকটা শিখতে কোথায় যাব, কিন্তু আমরা আপনাকে সয়ংসম্পূর্ণ করব। Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
 
 #### Django
 
