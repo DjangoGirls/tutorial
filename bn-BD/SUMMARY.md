@@ -1,9 +1,9 @@
-# সারাংশ
+# সারসংক্ষেপ
 
 * [ভূমিকা](README.md)
-* [Installation](installation/README.md) 
-  * [Command Line](installation/README.md#command-line)
-  * [Python](installation/README.md#python)
+* [স্থাপন](installation/README.md) 
+  * [নির্দেশনা পংতি](installation/README.md#command-line)
+  * [পাইথন](installation/README.md#python)
   * [Code Editor](installation/README.md#code-editor)
   * [Virtual Environment](installation/README.md#virtualenv)
   * [Django](installation/README.md#django)
