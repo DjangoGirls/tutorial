@@ -1,8 +1,8 @@
-# What's next?
+# এরপর কি?
 
-Congratulate yourself! **You're totally awesome**. We're proud! <3
+নিজেকে অভিনন্দন দিন! **আপনি অসাধারণ **। আমরা গর্বিত! <3
 
-### What to do now?
+### এখন কি করা যায়? 
 
 Take a break and relax! You have just done something really huge.
 
