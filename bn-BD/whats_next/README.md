@@ -4,13 +4,13 @@
 
 ### এখন কি করা যায়? 
 
-Take a break and relax! You have just done something really huge.
+বিরতি নিন এবং আরাম করুন! আপনি আসলেই ইতিমধ্যে অনেক কিছু করে ফেলেছেন। 
 
-After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
+তদন্তর, আপ টু ডেট থাকার জন্য নিশ্চিত করুন আপনি জ্যাঙ্গো গার্লস এর [ফেসবুক](http://facebook.com/djangogirls) অথবা [টুইটার](https://twitter.com/djangogirls) একাউন্ট অনুসরণ করছেন। 
 
-### Can you recommend any further resources?
+### আপনি কি আরও কোনো রিসোর্স সুপারিশ করতে পারেন?
 
-Yes! There are a *lot* of resources online for learning all kinds of programming skills – it can be pretty daunting to work out where to go next, but we've got you covered. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
+হ্যাঁ! There are a *lot* of resources online for learning all kinds of programming skills – it can be pretty daunting to work out where to go next, but we've got you covered. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
 
 #### Django
 
