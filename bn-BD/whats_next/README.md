@@ -15,15 +15,15 @@
 #### জ্যাঙ্গো
 
 - আমাদের অন্যান্য বই, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
-- [Django's official tutorial](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
-- [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
+- [জ্যাঙ্গো-এর অফিশিয়াল টিউটোরিয়াল](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
+- [শুরু করুন জ্যাঙ্গো ভিডিও পাঠের মাধ্যমে](http://www.gettingstartedwithdjango.com/)
 
-#### HTML, CSS and JavaScript
+#### HTML, CSS এবং JavaScript
 
 - [Codecademy's web development course](https://www.codecademy.com/learn/paths/web-development)
 - [freeCodeCamp](https://www.freecodecamp.org/)
 
-#### Python
+#### পাইথন
 
 - [Codecademy's Python course](https://www.codecademy.com/learn/learn-python)
 - [Google's Python course](https://developers.google.com/edu/python/)
