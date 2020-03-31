@@ -2,7 +2,7 @@
 
 [![গিটার ](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
-> এই টিউটোরিয়ালটি Creative Common Attribution-ShareAlike 4.0 International লাইসেন্স এর মাধ্যমে প্রকাশিত হয়েছে । এই লাইসেন্স সম্পর্কে আরো জানতে ভিজিট করতে পারো নিচের এই লিংকেঃ https://creativecommons.org/licenses/by-sa/4.0 
+> এই টিউটোরিয়ালটি Creative Common Attribution-ShareAlike 4.0 International লাইসেন্স-এর মাধ্যমে প্রকাশিত হয়েছে। লাইসেন্সটির প্রতিলিপি দেখতে ভিজিট করুনঃ https://creativecommons.org/licenses/by-sa/4.0 
 
 ## স্বাগতম 
 
