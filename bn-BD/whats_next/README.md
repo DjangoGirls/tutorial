@@ -10,11 +10,11 @@
 
 ### আপনি কি আরও কোনো রিসোর্স সুপারিশ করতে পারেন?
 
-হ্যাঁ! অনলাইনে *অনেক * রিসোর্স আছে সকল প্রকার প্রোগ্রামিং স্কিল শেখার জন্য - এটা বেস ভয়ংকর কাজ যে একটা শেখার পর আরেকটা শিখতে কোথায় যাব, কিন্তু আমরা আপনাকে সয়ংসম্পূর্ণ করব। Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
+হ্যাঁ! অনলাইনে *অনেক * রিসোর্স আছে সকল প্রকার প্রোগ্রামিং স্কিল শেখার জন্য - এটা বেস ভয়ংকর কাজ যে একটা শেখার পর আরেকটা শিখতে কোথায় যাব, কিন্তু আমরা আপনাকে সয়ংসম্পূর্ণ করব। যাই হোক, জ্যাঙ্গো গার্লস-এ আসার পূর্বে আপনার আগ্রহ কেমন ছিল, এবং টিউটোরিয়াল-এর মাধ্যমে যে আগ্রহই তৈরি করুন, এখানে কিছু ফ্রি রিসোর্স দেওয়া হল ( যে রিসোর্স অনেক উপাদানে সয়ংসম্পূর্ণ) আপনি এগুলো ব্যবহার করতে পারেন যেখানে চাইবেন। 
 
-#### Django
+#### জ্যাঙ্গো
 
-- Our other book, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
+- আমাদের অন্যান্য বই, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
 - [Django's official tutorial](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
 - [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
 
