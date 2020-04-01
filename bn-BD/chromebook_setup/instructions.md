@@ -47,7 +47,7 @@ This bottom area is your terminal. You can use the terminal to send instructions
 
 A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
-Run:
+চালনা করুনঃ
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -58,7 +58,7 @@ Run:
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: `~=`).
+(লক্ষণীয় যে শেষের লাইনে আমরা একটি বিশেষ চিহ্ন ব্যবহার করেছি যা অনেকটা সমান চিহ্নের মতঃ `~=`).
 
 ### গিটহাব
 
