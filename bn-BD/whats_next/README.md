@@ -27,16 +27,16 @@
 
 - [Codecademy's Python course](https://www.codecademy.com/learn/learn-python)
 - [Google's Python course](https://developers.google.com/edu/python/)
-- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – the initial exercises are free
-- [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
-- [edX](https://www.edx.org/course?search_query=python) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
-- [Coursera's Python specialization](https://www.coursera.org/specializations/python) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
-- [Python for Everybody](https://www.py4e.com/) - a free and open version of the Coursera Python for Everybody specialization
+- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) - প্রাথমিক অনুশীলনগুলো পাবেন একদম বিনামূল্যে 
+- [New Coder tutorials](http://newcoder.io/tutorials/) - এটি কিভাবে পাইথন প্রয়োগ করতে পারেন তার বৈচিত্রপূর্ণ ব্যবহারিক উদাহরণসমূহ
+- [edX](https://www.edx.org/course?search_query=python) - আপনি এখান থেকে বেশিভাগ কোর্সই বিনামূল্যে পেতে পারেন, কিন্তু আপনি যদি উচ্চ শিক্ষার যোগ্যতার সনদ বা ক্রেডিট নিতে চান তাহলে আপনাকে টাকা প্রদান করতে হবে
+- [Coursera's Python specialization](https://www.coursera.org/specializations/python) - কিছু ভিডিও লেকচার বিনামূল্যে পেতে পারেন এবং আপনি কোর্সগুলোর জন্য Coursera-থেকে সনদও নিতে পারবেন । 
+- পাইথন সবার জন্য ([Python for Everybody](https://www.py4e.com/)) - সবাইকে পাইথন-এ দক্ষ করার জন্য Coursera- এর পক্ষ থেকে একটি ফ্রি ও উন্মুক্ত কোর্স। 
 
-#### Working with data
+#### ডেটা নিয়ে যত কাজ
 
 - [Codecademy's data science course](https://www.codecademy.com/learn/paths/data-science)
-- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
-- [Dataquest](https://www.dataquest.io/) – the first 30 "missions" are free
+- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) - আপনি এখান থেকে বেশিভাগ কোর্সই বিনামূল্যে পেতে পারেন, কিন্তু আপনি যদি উচ্চ শিক্ষার যোগ্যতার সনদ বা ক্রেডিট নিতে চান তাহলে আপনাকে টাকা প্রদান করতে হবে
+- [Dataquest](https://www.dataquest.io/) - প্রথম ৩০ "missions" একদম বিনামূল্যে
 
-We can't wait to see what you build next!
+আপনি পরবর্তীতে কি তৈরি করছেন সেটা দেখার জন্য আমরা আর অপেক্ষা করতে পারছিনা!
