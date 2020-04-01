@@ -62,9 +62,9 @@ A virtual environment (also called a virtualenv) is like a private box we can st
 
 ### গিটহাব
 
-Make a [GitHub](https://github.com) account.
+একটি [গিটহাব](https://github.com) একাউন্ট তৈরি করুন। 
 
-### পাইথন সর্বত্র
+### PythonAnywhere
 
 The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
 
