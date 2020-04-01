@@ -1,7 +1,7 @@
 # সারসংক্ষেপ
 
 * [ভূমিকা](README.md)
-* [স্থাপন](installation/README.md) 
+* [ইনস্টলেশন / স্থাপন](installation/README.md) 
   * [কমান্ড লাইন](installation/README.md#command-line)
   * [পাইথন](installation/README.md#python)
   * [কোড সম্পাদনকারী](installation/README.md#code-editor)
@@ -14,7 +14,7 @@
 * [ইন্টারনেট কিভাবে কাজ করে](how_the_internet_works/README.md)
 * [কমান্ড লাইনের পরিচয়](intro_to_command_line/README.md)
 * [পাইথন স্থাপনা](python_installation/README.md)
-* [কোড সম্পাদনকারী](code_editor/README.md)
+* [কোড এডিটর](code_editor/README.md)
 * [পাইথন-এর পরিচিতি](python_introduction/README.md)
 * [জ্যাঙ্গো কি?](django/README.md)
 * [জ্যাঙ্গো স্থাপনা](django_installation/README.md)
