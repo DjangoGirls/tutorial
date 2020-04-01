@@ -1,8 +1,8 @@
 আপনি [এই বিভাগটি বাদ দিয় যেতে](http://tutorial.djangogirls.org/en/installation/#install-python) পারেন যদি আপনি ক্রোমবুক ব্যবহার না করে থাকেন। আর যদি আপনি করতে চান, তবে আপনা ক্রোমবুক স্থাপনের প্রক্রিয়াটির অভিজ্ঞনা একটু ভিন্ন হয়ে পারে। আপনি চাইলে বাকি স্থাপন নির্দেশনাবলী এড়িয়ে যেতে পারেন। 
 
-### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
+### ক্লাউড আইডিই (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud IDE is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. For the duration of the tutorial, cloud IDE will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
+ক্লাউড আইডিই হচ্ছে এমন একটি টুল যটি আপনাকে ইন্টারনেটে কোড এডিটর এবং একটি কমিউটারের এক্সেস দিবে যেখানে আপনি সফটওয়্য্যার স্থাপন (install) , লিখতে ও পরিচালনা করতে পারবেন। টিউটোরিয়ালের সময় জুড়ে, ক্লাউড আইডিই আপনার *লোকাল মেশিন* এর মত ভূমিক পালন করবে। You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
 
 #### PaizaCloud Cloud IDE
 
@@ -60,7 +60,7 @@ Run:
 
 (note that on the last line we use a tilde followed by an equal sign: `~=`).
 
-### GitHub
+### গিটহাব
 
 Make a [GitHub](https://github.com) account.
 
