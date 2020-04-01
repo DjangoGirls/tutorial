@@ -1,4 +1,4 @@
-আপনি পারবেন [ এই বিভাগ ছেরে যেতে ](http://tutorial.djangogirls.org/en/installation/#install-python) যদি আপনি chromebook না করেন। যদি আপনি হন, আপনার স্থাপন অভিজ্ঞতা কিছুটা ভিন্ন হবে। আপনি স্থাপন নির্দেশাবলী বাকি প্রত্যাখ্যান করতে পারেন।
+আপনি পারবেন [ এই বিভাগ ছেরে যেতে ](http://tutorial.djangogirls.org/en/installation/#install-python) যদি আপনি chromebook না করেন। যদি আপনি হন, আপনার স্থাপন অভিজ্ঞতা কিছুটা ভিন্ন হবে। আপনি প্রত্যাখ্যান করতে পারেন বাকি স্থাপন নির্দেশাবলী। 
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
