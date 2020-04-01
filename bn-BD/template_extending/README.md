@@ -1,6 +1,6 @@
-# টেম্পলেট বর্ধন
+# Template বর্ধন
 
-জাঙ্গোর আরেকটি সুন্দর বিষয় হচ্ছে **টেম্পলেট বর্ধন**। এর মানে কি? এর মানে হল আপনি আপনার ওয়েবসাইটে একই এইচটিএমএল এর অংশ ভিন্ন ভিন্ন ওয়েবপেজে ব্যবহার করতে পারবেন।
+আপনার জন্য জাঙ্গো-এর আরেকটি আকর্ষণ হচ্ছে **template বর্ধন**। এর মানে কি? এর মানে হল আপনি আপনার ওয়েবসাইটে একই HML-এর অংশ ভিন্ন ভিন্ন ওয়েবপেজে ব্যবহার করতে পারবেন।
 
 Templates help when you want to use the same information or layout in more than one place. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
 
