@@ -60,7 +60,7 @@ data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
-    $ grep ^NAME= /etc/os-release
+    $ grep '^NAME=' /etc/os-release
     
 
 表示されたディストリビューション名に従って、以下のインストール方法の1つを実行してください。
