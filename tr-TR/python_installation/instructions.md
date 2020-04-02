@@ -60,7 +60,7 @@ Farklı bir Python sürümü yüklüyse, en azından 3.4.0 (örn. 3.6.0), yükse
 
 {% filename %}command-line{% endfilename %}
 
-    $ grep ^NAME= /etc/os-release
+    $ grep '^NAME=' /etc/os-release
     
 
 Daha sonra, sonuca bağlı olarak, bu bölümün altındaki aşağıdaki kurulum kılavuzlarından birini izleyin.
