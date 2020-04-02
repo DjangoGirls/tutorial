@@ -60,7 +60,7 @@ Tí o bá ti sàgbékalẹ̀ ẹyà Python tó yàtọ̀ kan tẹ́lẹ̀, ó k�
 
 {% filename %}command-line{% endfilename %}
 
-    $ grep ^NAME= /etc/os-release
+    $ grep '^NAME=' /etc/os-release
     
 
 Afterwards, depending on the result, follow one of the following installation guides below this section.
