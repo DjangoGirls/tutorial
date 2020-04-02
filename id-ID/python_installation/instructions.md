@@ -60,7 +60,7 @@ If you have a different version of Python installed, at least 3.4.0 (e.g. 3.6.0)
 
 {% filename %}command-line{% endfilename %}
 
-    $ grep ^NAME= /etc/os-release
+    $ grep '^NAME=' /etc/os-release
     
 
 Afterwards, depending on the result, follow one of the following installation guides below this section.
