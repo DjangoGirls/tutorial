@@ -60,7 +60,7 @@ data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
-    $ grep ^NAME= /etc/os-release
+    $ grep '^NAME=' /etc/os-release
     
 
 След това, в зависимост от резултата, следвайте едно от следните ръководства за инсталиране под този раздел.
