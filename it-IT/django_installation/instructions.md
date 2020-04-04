@@ -172,9 +172,9 @@ Prima però dobbiamo assicurarci di avere la versione più recente di `pip`, il 
 
 ### Installazione di pacchetti con requisiti
 
-A requirements file keeps a list of dependencies to be installed using `pip install`:
+Un file di requisiti mantiene un elenco di dipendenze da installare utilizzando `pip install`:
 
-First create a `requirements.txt` file inside of the `djangogirls/` folder, using the code editor that you installed earlier. You do this by opening a new file in the code editor and then saving it as `requirements.txt` in the `djangogirls/` folder. Your directory will look like this:
+Crea un file `requirements.txt` all'interno della cartella `djangogirls/` utilizzando l'editor di codice che hai installato prima. Lo fai aprendo un nuovo file nell'editor di codice e quindi salvarlo come `requirements.txt` nella cartella `djangogirls/` . La tua cartella assomiglierà a questo:
 
     djangogirls
     ├── myvenv
@@ -182,7 +182,7 @@ First create a `requirements.txt` file inside of the `djangogirls/` folder, usin
     └───requirements.txt
     
 
-In your `djangogirls/requirements.txt` file you should add the following text:
+Nel tuo file `djangogirls/requirements.txt` aggiungi il testo seguente:
 
 {% filename %}djangogirls/requirements.txt{% endfilename %}
 
@@ -222,8 +222,8 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
+> Se ottieni un errore quando esegui il comando pip su Ubuntu 12.04, prova ad eseguire `python -m pip install -U --force-reinstall pip` per risolvere il problema.
 
 <!--endsec-->
 
-That's it! You're now (finally) ready to create a Django application!
+Questo è tutto! Sei (finalmente) pronto/a a creare un'applicazione Django!
