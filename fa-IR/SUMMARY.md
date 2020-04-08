@@ -9,7 +9,7 @@
   * [جنگو](installation/README.md#django)
   * [گیت](installation/README.md#git)
   * [GitHub](installation/README.md#github)
-  * [PythonAnywhere](installation/README.md#pythonanywhere)
+  * [پایتون همه جا](installation/README.md#pythonanywhere)
 * [نصب و راه اندازی (کروم بوک)](chromebook_setup/README.md)
 * [اینترنت چگونه کار می‌کند](how_the_internet_works/README.md)
 * [آشنایی با خط فرمان](intro_to_command_line/README.md)
