@@ -17,12 +17,12 @@
 
 <!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
 
-Отидете на Приложения → Утилити → Терминал.
+Отидете на Applications → Utilities → Terminal.
 
 <!--endsec-->
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-Вероятно е под Приложения → Аксесоари → Терминал или Приложения → Система → Терминал, но това може да зависи от вашата система. Ако не е там, можете да опитате да го потърсите в Google. :)
+Вероятно е под Applications → Accessories → Terminal или Applications → System → Terminal, но това може да зависи от вашата система. Ако не е там, можете да опитате да го потърсите в Google. :)
 
 <!--endsec-->
