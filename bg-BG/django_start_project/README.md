@@ -2,7 +2,7 @@
 
 > Част от тази глава е базирана на уроци от Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
-> Части от тази глава се основават на [django-marcador tutorial](http://django-marcador.keimlink.de/), лицензиран съгласно лиценза Creative Commons Attribution-ShareAlike 4.0 International. Урокът за джанго-маркадор е защитен с авторско право от Markus Zapke-Gründemann et al.
+> Части от тази глава се основават на [django-marcador tutorial](http://django-marcador.keimlink.de/), лицензиран съгласно лиценза Creative Commons Attribution-ShareAlike 4.0 International. Урокът за django-marcador е защитен с авторско право от Markus Zapke-Gründemann и сие.
 
 Ще създадем малък блог!
 
@@ -10,7 +10,7 @@
 
 Имената на някои файлове и директории са много важни за Django. Не трябва да преименувате файловете, които предстои да създадем. Преместването им на друго място също не е добра идея. Джанго трябва да поддържа определена структура, за да може да намери важни неща.
 
-> Не забравяйте да стартирате всичко във virtualenv (виртуално пространство). Ако не видите префикс `(myvenv)` в конзолата си, трябва да активирате своя virtualenv. Обяснихме как да направим това в главата **Инсталация на Django** в частта **Работа с virtualenv**. Въвеждането `myvenv\Scripts\activate`` в Windows или <0>source myvenv/bin/activate` в Mac OS X или Linux ще направи това вместо вас.
+> Не забравяйте да стартирате всичко във virtualenv (виртуалната среда). Ако не видите префикс `(myvenv)` в конзолата си, трябва да активирате своята virtualenv. Обяснихме как да направим това в главата **Инсталация на Django** в частта **Работа с virtualenv**. Въвеждането `myvenv\Scripts\activate`` в Windows или <0>source myvenv/bin/activate` в Mac OS X или Linux ще направи това вместо вас.
 
 <!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
