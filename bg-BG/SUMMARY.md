@@ -10,7 +10,7 @@
   * [Git](installation/README.md#git)
   * [GitHub](installation/README.md#github)
   * [PythonAnywhere](installation/README.md#pythonanywhere)
-* [Инсталиране (хромбук)](chromebook_setup/README.md)
+* [Инсталиране (chromebook)](chromebook_setup/README.md)
 * [Как работи интернет](how_the_internet_works/README.md)
 * [Въведение в команден ред](intro_to_command_line/README.md)
 * [Инсталиране на Python](python_installation/README.md)
