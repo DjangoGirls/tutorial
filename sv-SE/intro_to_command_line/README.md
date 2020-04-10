@@ -419,22 +419,22 @@ Coolt, va? :)
 
 Här är en sammanfattning av några viktiga kommandon:
 
-| Kommando (Windows) | Kommando (Mac OS / Linux) | Beskrivning            | Exempel                                            |
-| ------------------ | ------------------------- | ---------------------- | -------------------------------------------------- |
-| exit               | exit                      | stäng fönstret         | **exit**                                           |
-| cd                 | cd                        | ändra katalog          | **cd test**                                        |
-| cd                 | pwd                       | visa nuvarande katalog | **cd** (Windows) eller **pwd** (Mac OS / Linux)    |
-| dir                | ls                        | lista kataloger/filer  | **dir**                                            |
-| copy               | cp                        | kopiera fil            | **copy c:\test\test.txt c:\windows\test.txt**  |
-| move               | mv                        | flytta fil             | **move c:\test\test.txt c:\windows\test.txt**  |
-| mkdir              | mkdir                     | skapa en ny katalog    | **mkdir testkatalog**                              |
-| rmdir (eller del)  | rm                        | ta bort en fil         | **del c:\test\test.txt**                         |
-| rmdir /S           | rm -r                     | ta bort en mapp        | **rm -r testkatalog**                              |
-| [CMD] /?           | man [CMD]                 | get help for a command | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
+| Kommando (Windows) | Kommando (Mac OS / Linux) | Beskrivning              | Exempel                                               |
+| ------------------ | ------------------------- | ------------------------ | ----------------------------------------------------- |
+| exit               | exit                      | stäng fönstret           | **exit**                                              |
+| cd                 | cd                        | ändra katalog            | **cd test**                                           |
+| cd                 | pwd                       | visa nuvarande katalog   | **cd** (Windows) eller **pwd** (Mac OS / Linux)       |
+| dir                | ls                        | lista kataloger/filer    | **dir**                                               |
+| copy               | cp                        | kopiera fil              | **copy c:\test\test.txt c:\windows\test.txt**     |
+| move               | mv                        | flytta fil               | **move c:\test\test.txt c:\windows\test.txt**     |
+| mkdir              | mkdir                     | skapa en ny katalog      | **mkdir testkatalog**                                 |
+| rmdir (eller del)  | rm                        | ta bort en fil           | **del c:\test\test.txt**                            |
+| rmdir /S           | rm -r                     | ta bort en mapp          | **rm -r testkatalog**                                 |
+| [CMD] /?           | man [CMD]                 | få hjälp om ett kommando | **cd /?** (Windows) eller **man cd** (Mac OS / Linux) |
 
-These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
+Dessa är få av alla andra kommandon som du kan köra i kommandotolken, men du kommer inte att använda fler än de idag.
 
-If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+Om du är nyfiken så innehåller [ss64.com](http://ss64.com) en komplett lista med kommandon för alla operativsystem.
 
 ## Redo?
 
