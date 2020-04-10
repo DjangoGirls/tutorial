@@ -32,7 +32,7 @@ from .models import Post
 
 ## QuerySet
 
-Вече трябва да се запознати как QuerySets работят. Говорихме за тях в главата [Django ORM (QuerySets)](../django_orm/README.md).
+Вече трябва да сте запознати как работят QuerySets. Говорихме за тях в главата [Django ORM (QuerySets)](../django_orm/README.md).
 
 Сега искаме публикуваните ни блог постове сортирани по дата на публикуване, нали? Вече направихме това в главата QuerySets!
 
