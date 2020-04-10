@@ -18,7 +18,7 @@ Du kan ladda ned Python till Windows från deras hemsida https://www.python.org/
 
 En sak att se upp för: Under installation kommer du se ett fönster markerat "Setup". Se till att markera kryssrutorna "Add Python 3.6 to PATH" eller "Add Python to your environment variables" och klicka sedan på "Install Now", som visas här (det kan se olika ut om du installerar en annan version):
 
-![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
+![Glöm inte att lägga till Python till Path](../python_installation/images/python-installation-options.png)
 
 När installationen är klar kan det komma upp en dialogruta med en länk som du kan följa för att lära dig mer om Python eller om ersionen du installerade. Stäng eller avbryt den dialogen -- du kommer att lära dig mer i den här handledningen!
 
@@ -29,7 +29,7 @@ Obs: Om du använder en äldre version av Windows (7, Vista, eller någon äldre
 
 Om du installerar en äldre version av Python så kan installationsskärmen se annorlunda ut än vad som visas ovan. Se till att du skrollar ned för att se "Add python.exe to Path", klicka sedan på knappen till vänster och välj "Will be installed on local hard drive":
 
-![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
+![Lägg till Python till Path, äldre versioner](../python_installation/images/add_python_to_windows_path.png)
 
 <!--endsec-->
 
@@ -114,8 +114,8 @@ Verifiera att installation var lyckad genom att öppna en kommandotolk och anvä
 
 Versionen som visas kan skilja sig från 3.6.1 -- den bör matcha den version du installerat.
 
-**Obs:** Om du är på Windows och det står att `python3` inte hittades, försök använda `python` (utan `3`) och kolla om det fortfarande är en version som är 3.4.0 eller högre. If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
+**Obs:** Om du är på Windows och det står att `python3` inte hittades, försök använda `python` (utan `3`) och kolla om det fortfarande är en version som är 3.4.0 eller högre. Om det inte heller fungerar, kan du öppna en ny kommandotolk och försöka igen; det här händer om du använder en kommandotolk kvar öppen från innan en Python installation.
 
 * * *
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
+Om du tvivlar på något eller om något gick fel och du inte vet vad du ska göra, fråga din coach! Ibland går inte saker så lätt och det är bättre att fråga någon som har mer erfarenhet.
