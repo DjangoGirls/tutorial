@@ -16,17 +16,17 @@ Fönstret, som oftast kallas **kommandotolken** eller **terminalen**, är ett te
 
 ## Öppna kommandotolken
 
-To start some experiments we need to open our command-line interface first.
+För att starta några experiment så behöver vi öppna kommandotolken.
 
 {% include "/intro_to_command_line/open_instructions.md" %}
 
 ## Prompt
 
-You now should see a white or black window that is waiting for your commands.
+Du borde nu se ett vitt eller svart fönster som väntar på dina kommandon.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see a `$`, like this:
+Om du är på Mac eller Linux, så ser du nog en `$`, såhär:
 
 {% filename %}command-line{% endfilename %}
 
@@ -37,7 +37,7 @@ If you're on Mac or Linux, you probably see a `$`, like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-On Windows, you probably see a `>`, like this:
+På Windows, så ser du nog en `>`, såhär:
 
 {% filename %}command-line{% endfilename %}
 
