@@ -2,14 +2,14 @@
 
 Vi är äntligen här!
 
-But first, let us tell you what Python is. Python is a very popular programming language that can be used for creating websites, games, scientific software, graphics, and much, much more.
+Men först, låt oss berätta vad Python är. Python är ett väldigt populärt programmeringsspråk som kan användas för att skapa webbsidor, spel, vetenskapsapplikationer, grafiker och mycket, mycket mer.
 
-Python originated in the late 1980s and its main goal is to be readable by human beings (not only machines!). This is why it looks simpler than other programming languages, but don't worry – Python is also really powerful!
+Python har sitt ursprung i slutet av 1980-talet och dess huvudsakliga mål är att vara läsbar för människor (inte bara maskiner!). Det är därför det ser enklare ut än andra programmeringsspråk, men oroa dig inte – Python är också riktigt kraftfullt!
 
 # Installera Python
 
-> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
+> **Obs** Om du använder en Chromebook, hoppa över detta kapitel och följ istället instruktionerna i [Chromebook Setup](../chromebook_setup/README.md).
 > 
-> **Note** If you already worked through the Installation steps, there's no need to do this again – you can skip straight ahead to the next chapter!
+> **Obs** Om du redan har gått igenom installationen så behöver du inte göra det här igen – du kan hoppa över till nästa kapitel!
 
 {% include "/python_installation/instructions.md" %}
