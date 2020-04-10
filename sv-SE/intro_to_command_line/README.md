@@ -128,33 +128,33 @@ Du ser säkert något liknande på din dator. När du öppnar terminalen brukar 
 
 ### Lär dig mer om ett kommando
 
-Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
+Många kommandon som du kan skriva i kommandotolken har inbyggd hjälp som du kan visa och läsa! Till exempel, för att lära sig mer om kommandot som visar vilken mapp du är i:
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X and Linux have a `man` command, which gives you help on commands. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
+OS X och Linux har ett `man` kommando, vilket ger dig hjälp med kommandon. Testa `man pwd` och se vad den säger, eller lägg `man` före andra kommandon för att se hjälp om dem. Utmatningen av `man` har normalt sidor. Använd mellanslag för att gå till nästa sida, och `q` för att sluta visa hjälpsidan.
 
 <!--endsec-->
 
 <!--sec data-title="Command Help: Windows" data-id="windows_help" data-collapse=true ces-->
 
-Adding a `/?` suffix to most commands will print the help page. You may need to scroll your command window up to see it all. Try `cd /?`.
+Om du lägger till `/?` suffix till flesta kommandon kommer att visa hjälpsidan. Du kan behöva skrolla upp i kommandotolken för att se allt. Testa `cd /?`.
 
 <!--endsec-->
 
-### List files and directories
+### Lista filer och mappar
 
-So what's in it? It'd be cool to find out. Let's see:
+Så vad finns här? Det hade varit kul att se. Vi testar:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
     $ ls
-    Applications
-    Desktop
-    Downloads
-    Music
+    Applikationer
+    Skrivbord
+    Nedladdningar
+    Musik
     ...
     
 
@@ -166,20 +166,20 @@ So what's in it? It'd be cool to find out. Let's see:
 
     > dir
      Directory of C:\Users\olasitarska
-    05/08/2014 07:28 PM <DIR>      Applications
-    05/08/2014 07:28 PM <DIR>      Desktop
-    05/08/2014 07:28 PM <DIR>      Downloads
-    05/08/2014 07:28 PM <DIR>      Music
+    05/08/2014 07:28 PM <DIR>      Applikationer
+    05/08/2014 07:28 PM <DIR>      Skrivbord
+    05/08/2014 07:28 PM <DIR>      Nedladdningar
+    05/08/2014 07:28 PM <DIR>      Musik
     ...
     
 
-> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
+> Obs: I powershell så kan du också använda 'ls' som på Linux och Mac OS X.<!--endsec-->
 
 * * *
 
-### Change current directory
+### Ändra aktuell mapp
 
-Now, let's go to our Desktop directory:
+Låt oss gå till Skrivbordets mapp:
 
 <!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
 
