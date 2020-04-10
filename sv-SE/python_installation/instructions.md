@@ -16,16 +16,16 @@ Först kolla om din dator kör en 32-bit version eller en 64-bit version av Wind
 
 Du kan ladda ned Python till Windows från deras hemsida https://www.python.org/downloads/windows/. Klicka på länken "Latest Python 3 Release - Python x.x.x". Om din dator kör en **64-bit** version av Windows, ladda ned **Windows x86-64 executable installer**. Ladda annars ned **Windows x86 executable installer**. Kör installationsfilen efter att du har laddat ned den genom att dubbelklicka på den.
 
-En sak att se upp för: Under installation kommer du se ett fönster markerat "Setup". Make sure you tick the "Add Python 3.6 to PATH" or 'Add Python to your environment variables" checkbox and click on "Install Now", as shown here (it may look a bit different if you are installing a different version):
+En sak att se upp för: Under installation kommer du se ett fönster markerat "Setup". Se till att markera kryssrutorna "Add Python 3.6 to PATH" eller "Add Python to your environment variables" och klicka sedan på "Install Now", som visas här (det kan se olika ut om du installerar en annan version):
 
 ![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
 
-When the installation completes, you may see a dialog box with a link you can follow to learn more about Python or about the version you installed. Close or cancel that dialog -- you'll be learning more in this tutorial!
+När installationen är klar kan det komma upp en dialogruta med en länk som du kan följa för att lära dig mer om Python eller om ersionen du installerade. Stäng eller avbryt den dialogen -- du kommer att lära dig mer i den här handledningen!
 
-Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.6.x installer fails with an error, you can try either:
+Obs: Om du använder en äldre version av Windows (7, Vista, eller någon äldre version) och Python 3.6.x installationen misslyckas med ett felmeddelande, kan du försöka att antingen:
 
-1. install all Windows Updates and try to install Python again; or
-2. install an [older version of Python](https://www.python.org/downloads/windows/), e.g., [3.4.6](https://www.python.org/downloads/release/python-346/).
+1. installera alla Windows uppdateringar och försöka att installera Python igen; eller
+2. installera en [äldre version av Python](https://www.python.org/downloads/windows/), som [3.4.6](https://www.python.org/downloads/release/python-346/).
 
 If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
 
