@@ -55,7 +55,7 @@
 </html>
 ```
 
-След това в `base.html` заменете целия си `<body>` (всичко между `<body>` и `</body>`) с това:
+След това в `base.html` заменете съдържанието в секцията `<body>` (всичко между `<body>` и `</body>`) с това:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
