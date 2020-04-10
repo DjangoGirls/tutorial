@@ -60,7 +60,7 @@ Wenn du eine andere 'Mikroversion' von Python installiert hast, z.B. 3.6.0, dann
 
 {% filename %}command-line{% endfilename %}
 
-    $ grep ^NAME= /etc/os-release
+    $ grep '^NAME=' /etc/os-release
     
 
 Folge danach je nach Ergebnis einer der unterhalb dieses Abschnitts folgenden Installationsanweisungen.
