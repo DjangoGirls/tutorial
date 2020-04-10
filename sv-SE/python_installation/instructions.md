@@ -1,17 +1,17 @@
-> For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA) video.
+> För läsare hemifrån: det här kapitlet täcks i [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA) videon.
 > 
-> This section is based on a tutorial by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
+> Den här sektionen är baserad på en handledning av Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want you to install the latest version of Python 3, so if you have any earlier version, you will need to upgrade it. If you already have version 3.4 or higher you should be fine.
+Django är skrivet i Python. Vi behöver Python för att göra något i Django. Låt oss börja genom att installera det! Vi vill att du installerar den senaste versionen av Python 3, så om du har någon tidigare version, så behöver du uppgradera den. Om du redan har version 3.4 eller högre så borde du vara okej.
 
-Please install normal Python as follows, even when you have Anaconda installed on your computer.
+Installera normala Python som följande, även om du har Anaconda installerad på din dator.
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
-First check whether your computer is running a 32-bit version or a 64-bit version of Windows, on the "System type" line of the System Info page. To reach this page, try one of these methods:
+Först kolla om din dator kör en 32-bit version eller en 64-bit version av Windows, på "System typ" raden i System Info sidan. För att nå denna sida, försök en av dessa metoder:
 
-* Press the Windows key and Pause/Break key at the same time
-* Open your Control Panel from the Windows menu, then navigate to System & Security, then System
+* Tryck ned Windows-tangenten och Pause/Break-tangenten samtidigt
+* Öppna Kontrollpanelen från Windows-menyn och navigera sedan till System & Säkerhet, sen System
 * Press the Windows button, then navigate to Settings > System > About
 
 You can download Python for Windows from the website https://www.python.org/downloads/windows/. Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
