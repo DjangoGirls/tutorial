@@ -151,10 +151,10 @@ Så vad finns här? Det hade varit kul att se. Vi testar:
 {% filename %}command-line{% endfilename %}
 
     $ ls
-    Applikationer
-    Skrivbord
-    Nedladdningar
-    Musik
+    Applications
+    Desktop
+    Downloads
+    Music
     ...
     
 
@@ -165,11 +165,11 @@ Så vad finns här? Det hade varit kul att se. Vi testar:
 {% filename %}command-line{% endfilename %}
 
     > dir
-     Directory of C:\Users\olasitarska
-    05/08/2014 07:28 PM <DIR>      Applikationer
-    05/08/2014 07:28 PM <DIR>      Skrivbord
-    05/08/2014 07:28 PM <DIR>      Nedladdningar
-    05/08/2014 07:28 PM <DIR>      Musik
+     Directory of C:\Users\olasitarska
+    05/08/2014 07:28 PM <DIR>      Applications
+    05/08/2014 07:28 PM <DIR>      Desktop
+    05/08/2014 07:28 PM <DIR>      Downloads
+    05/08/2014 07:28 PM <DIR>      Music
     ...
     
 
@@ -197,7 +197,7 @@ Låt oss gå till Skrivbordets mapp:
     $ cd Desktop
     
 
-Note that the directory name "Desktop" might be translated to the language of your Linux account. If that's the case, you'll need to replace `Desktop` with the translated name; for example, `Schreibtisch` for German.
+Notera att mapp-namnet "Desktop" kan vara översatt till språket på ditt Linux-konto. Om det är så, så behöver du ändra `Desktop` till det översatta ordet; till exempel, `Schreibtisch` på Tyska.
 
 <!--endsec-->
 
@@ -210,7 +210,7 @@ Note that the directory name "Desktop" might be translated to the language of yo
 
 <!--endsec-->
 
-Check if it's really changed:
+Kolla om det verkligen är ändrat:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -232,21 +232,21 @@ Check if it's really changed:
 
 <!--endsec-->
 
-Here it is!
+Här är det!
 
-> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
+> Tips: om du skriver `cd D` och sen klickar på `tab` på ditt tangentbord, så kommer kommandotolken att automatiskt skriva in resten av namnet för att navigera snabbare. Om det finns fler än en mapp som startar med "D", klicka på `tab` tangenten två gånger för att få en lista med alternativ.
 
 * * *
 
-### Create directory
+### Skapa mapp
 
-How about creating a practice directory on your desktop? You can do it this way:
+Vad sägs om att skapa en test-mapp på ditt skrivbord? Du kan göra det så här:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
-    $ mkdir practice
+    $ mkdir övning
     
 
 <!--endsec-->
@@ -255,12 +255,12 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 {% filename %}command-line{% endfilename %}
 
-    > mkdir practice
+    > mkdir träning
     
 
 <!--endsec-->
 
-This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+Det här lilla kommandot kommer att skapa en mapp med namnet `övning` på ditt skrivbord. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
 > PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
 
