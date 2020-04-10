@@ -9,7 +9,7 @@ Beroende på vilken version du har av Windows och vilket tangentbord, en av de f
 - Håll in Windows-tangenten på ditt tangentbord och klicka på "X" tangenten. Välj "Kommandotolk" från popup-menyn.
 - Håll in Windows-tangenten och klicka på "R" för att visa ett "Kör" fönster. Skriv in "cmd" i fönstret och klicka på OK.
 
-![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
+![Skriv "cmd" i "Kör" fönstret](../python_installation/images/windows-plus-r.png)
 
 Senare i den här handledningen så kommer du att behöva ha två kommandotolkar öppna samtidigt. Dock på vissa versioner av Windows, om du redan har en kommandotolk öppen och du försöker att öppna en till med samma metod, så kommer den istället att peka till kommandotolken som redan är öppen. Försök nu på din dator och se vad som händer! Om du fortfarande bara har en kommandotolk, försök en av dem andra metoderna i listan ovan. Åtminstone en av de borde resultera i att en ny kommandotolk öppnas.
 
@@ -23,6 +23,6 @@ Gå till Applikationer → Verktyg → Terminal.
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-It's probably under Applications → Accessories → Terminal, or Applications → System → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
+Det är förmodligen under Applikationer → Tillbehör → Terminal, eller Applikationer → System → Terminal, men det kan variera beroende på ditt system. Om det inte finns där, så kan du försöka att Googla det. :)
 
 <!--endsec-->
