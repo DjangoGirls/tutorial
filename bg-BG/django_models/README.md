@@ -98,11 +98,12 @@
     
     
 
-След създаването на приложение също трябва да кажем на Django, че трябва да го използва. Правим това във файла `mysite/settings.py` -- отваряме го във вашия редактор на кодове. Трябва да намерим `INSTALLED_APPS` и да добавим ред, съдържащ `'blog.apps.BlogConfig'. Така че крайният продукт трябва да изглежда така:</p>
+След създаването на приложение също трябва да кажем на Django, че трябва да го използва. Правим това във файла `mysite/settings.py` -- отваряме го във вашия редактор на кодове. Трябва да намерим `INSTALLED_APPS` и да добавим ред, съдържащ `'blog.apps.BlogConfig',` най-отгоре `]`. Така че крайният продукт трябва да изглежда така:
 
-<p>{% filename %}mysite/settings.py{% endfilename %}</p>
+{% filename %}mysite/settings.py{% endfilename %}
 
-<pre><code class="python">INSTALLED_APPS = [
+```python
+INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -111,7 +112,7 @@
     'django.contrib.staticfiles',
     'blog.apps.BlogConfig',
 ]
-`</pre> 
+```
 
 ### Създаване на модел на блог публикация
 
