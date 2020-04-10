@@ -27,7 +27,7 @@ Obs: Om du använder en äldre version av Windows (7, Vista, eller någon äldre
 1. installera alla Windows uppdateringar och försöka att installera Python igen; eller
 2. installera en [äldre version av Python](https://www.python.org/downloads/windows/), som [3.4.6](https://www.python.org/downloads/release/python-346/).
 
-If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
+Om du installerar en äldre version av Python så kan installationsskärmen se annorlunda ut än vad som visas ovan. Se till att du skrollar ned för att se "Add python.exe to Path", klicka sedan på knappen till vänster och välj "Will be installed on local hard drive":
 
 ![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
 
@@ -36,19 +36,19 @@ If you install an older version of Python, the installation screen may look a bi
 <!--sec data-title="Install Python: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
+> **Obs** Innan du installerar Python på OS X, bör du se till att din Macs inställningar tillåter installationer som inte är från App Store. Gå till System Preferenser (det är i Program mappen), klicka på "Säkerhet & Sekretess," och sen på fliken "Allmänt". Om din "Tillåt appar nedladdade från:" är satt till "Mac App Store," ändra det till "Mac App Store och identifierade utvecklare."
 
-You need to go to the website https://www.python.org/downloads/release/python-361/ and download the Python installer:
+Du behöver gå till webbsidan https://www.python.org/downloads/release/python-361/ och ladda ned Python installeraren:
 
-* Download the *Mac OS X 64-bit/32-bit installer* file,
-* Double click *python-3.6.1-macosx10.6.pkg* to run the installer.
+* Ladda ned *Mac OS X 64-bit/32-bit installer* filen,
+* Dubbelklicka på *python-3.6.1-macosx10.6.pkg* för att köra installeraren.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
+Troligen har du redan Python installerat. För att kolla om det är installerat (och vilken version), öppna en terminal och skriv in följande kommando:
 
 {% filename %}command-line{% endfilename %}
 
@@ -56,7 +56,7 @@ It is very likely that you already have Python installed out of the box. To chec
     Python 3.6.1
     
 
-If you have a different version of Python installed, at least 3.4.0 (e.g. 3.6.0), then you don't have to upgrade. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
+Om du har en annan version av Python installerad, minst 3.4.0 (t.ex 3.6.0), då behöver du inte uppgradera. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
 
 {% filename %}command-line{% endfilename %}
 
