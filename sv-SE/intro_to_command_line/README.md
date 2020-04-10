@@ -234,7 +234,7 @@ Kolla om det verkligen är ändrat:
 
 Här är det!
 
-> Tips: om du skriver `cd D` och sen klickar på `tab` på ditt tangentbord, så kommer kommandotolken att automatiskt skriva in resten av namnet för att navigera snabbare. Om det finns fler än en mapp som startar med "D", klicka på `tab` tangenten två gånger för att få en lista med alternativ.
+> Tips: Om du skriver `cd D` och sen klickar på `tab` på ditt tangentbord, så kommer kommandotolken att automatiskt skriva in resten av namnet för att navigera snabbare. Om det finns fler än en mapp som startar med "D", klicka på `tab` tangenten två gånger för att få en lista med alternativ.
 
 * * *
 
@@ -255,20 +255,20 @@ Vad sägs om att skapa en test-mapp på ditt skrivbord? Du kan göra det så hä
 
 {% filename %}command-line{% endfilename %}
 
-    > mkdir träning
+    > mkdir övning
     
 
 <!--endsec-->
 
-Det här lilla kommandot kommer att skapa en mapp med namnet `övning` på ditt skrivbord. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+Det här lilla kommandot kommer att skapa en mapp med namnet `övning` på ditt skrivbord. Du kan kolla om det är där genom att kolla på ditt skrivbord eller genom att göra `ls` eller `dir` kommandot! Prova det. :)
 
-> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
+> Tips: Om du inte vill skriva samma kommando om och om igen, försök trycka på `uppåtpilen` och `nedåtpilen` på ditt tangentbord för att bläddra bland kommandon som du nyligen använt.
 
 * * *
 
-### Exercise!
+### Övning!
 
-A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
+En liten utmatning för dig: i din nyligen skapade `övning` mapp, skapa en mapp som heter `test`. (Använd `cd` och `mkdir` kommandona.)
 
 #### Lösning:
 
@@ -276,7 +276,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd practice
+    $ cd övning
     $ mkdir test
     $ ls
     test
@@ -288,7 +288,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 {% filename %}command-line{% endfilename %}
 
-    > cd practice
+    > cd övning
     > mkdir test
     > dir
     05/08/2014 07:28 PM <DIR>      test
@@ -296,15 +296,15 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Congrats! :)
+Grattis!
 
 * * *
 
-### Clean up
+### Rensa upp
 
-We don't want to leave a mess, so let's remove everything we did until that point.
+Vi vill inte lämna en röra, så låt oss ta bort allt som vi gjort tills nu.
 
-First, we need to get back to Desktop:
+Först, måste vi gå tillbaka till Skrivbordet:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -324,9 +324,9 @@ First, we need to get back to Desktop:
 
 <!--endsec-->
 
-Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+Om man använder `..` med `cd` kommandot så kommer det att ändra din nuvarande mapp till förälder mappen (det är, mappen som innehåller din nuvarande mapp).
 
-Check where you are:
+Kolla var du är:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
