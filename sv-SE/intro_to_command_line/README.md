@@ -348,15 +348,15 @@ Kolla var du är:
 
 <!--endsec-->
 
-Now time to delete the `practice` directory:
+Nu är det dags att radera `övning` mappen:
 
-> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
+> **Varning**: Borttagning av filer med `del`, `rmdir` eller `rm` är oåterkalleligt, alltså är *de raderade filerna borta för alltid*! Så var väldigt försiktig med det här kommandot.
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
-    $ rm -r practice
+    $ rm -r övning
     
 
 <!--endsec-->
@@ -365,13 +365,13 @@ Now time to delete the `practice` directory:
 
 {% filename %}command-line{% endfilename %}
 
-    > rmdir /S practice
-    practice, Are you sure <Y/N>? Y
+    > rmdir /S övning
+    övning, Are you sure <Y/N>? Y
     
 
 <!--endsec-->
 
-Done! To be sure it's actually deleted, let's check it:
+Klart! För att vara säker på att den är raderad, låt oss kolla:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -391,9 +391,9 @@ Done! To be sure it's actually deleted, let's check it:
 
 <!--endsec-->
 
-### Exit
+### Avsluta
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+Nu är det klart för nu! Du kan nu stänga kommandotolken. Låt oss göra det på hacker sättet, okej? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -413,11 +413,11 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--endsec-->
 
-Cool, huh? :)
+Coolt, va? :)
 
 ## Sammanfattning
 
-Here is a summary of some useful commands:
+Här är en sammanfattning av några viktiga kommandon:
 
 | Kommando (Windows) | Kommando (Mac OS / Linux) | Beskrivning            | Exempel                                            |
 | ------------------ | ------------------------- | ---------------------- | -------------------------------------------------- |
