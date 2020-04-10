@@ -1,12 +1,12 @@
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-Depending on your version of Windows and your keyboard, one of the following should open a command window (you may have to experiment a bit, but you don't have to try all of these suggestions):
+Beroende på vilken version du har av Windows och vilket tangentbord, en av de följande bör öppna ett kommandofönster (du kan behöva experimentera lite, men du behöver inte försöka alla de här förslagen):
 
-- Go to the Start menu or screen, and enter "Command Prompt" in the search field.
-- Go to Start menu → Windows System → Command Prompt.
-- Go to Start menu → All Programs → Accessories → Command Prompt.
-- Go to the Start screen, hover your mouse in the lower-left corner of the screen, and click the down arrow that appears (on a touch screen, instead flick up from the bottom of the screen). The Apps page should open. Click on Command Prompt in the Windows System section.
-- Hold the special Windows key on your keyboard and press the "X" key. Choose "Command Prompt" from the pop-up menu.
+- Gå till Start-menyn eller startskärmen och skriv "Kommandotolk" i sökfältet.
+- Gå till Start-menyn → Windows System → Kommandotolk.
+- Gå till Start-menyn → Alla Program → Tillbehör → Kommandotolk.
+- Gå till startskärmen, håll musen i det nedre vänstra hörnet av skärmen och klicka på nedåtpilen som visas (på pekskärmar, slå istället upp från botten av skärmen). App-sidan bör öppnas. Klicka på Kommandotolk i Windows System avsnittet.
+- Håll in Windows-tangenten på ditt tangentbord och klicka på "X" tangenten. Välj "Kommandotolk" från popup-menyn.
 - Hold the Windows key and press the "R" key to get a "Run" window. Type "cmd" in the box, and click the OK key.
 
 ![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
