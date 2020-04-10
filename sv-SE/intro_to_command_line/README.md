@@ -438,4 +438,4 @@ Om du är nyfiken så innehåller [ss64.com](http://ss64.com) en komplett lista 
 
 ## Redo?
 
-Let's dive into Python!
+Låt ås dyka in i Python!
