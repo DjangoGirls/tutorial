@@ -56,20 +56,20 @@ Troligen har du redan Python installerat. För att kolla om det är installerat 
     Python 3.6.1
     
 
-Om du har en annan version av Python installerad, minst 3.4.0 (t.ex 3.6.0), då behöver du inte uppgradera. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
+Om du har en annan version av Python installerad, minst 3.4.0 (t.ex 3.6.0), då behöver du inte uppgradera. Om du inte har Python installerad, eller om mdu vill ha en annan version, kolla först vilken Linux-distribution du använder med följande kommando:
 
 {% filename %}command-line{% endfilename %}
 
     $ grep '^NAME=' /etc/os-release
     
 
-Afterwards, depending on the result, follow one of the following installation guides below this section.
+Efteråt, beroende på resultatet, följ en av följande installationsguider under detta avsnitt.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-Type this command into your console:
+Skriv in följande kommando i konsolen:
 
 {% filename %}command-line{% endfilename %}
 
@@ -81,14 +81,14 @@ Type this command into your console:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Use this command in your console:
+Använd det här kommandot i din konsol:
 
 {% filename %}command-line{% endfilename %}
 
     $ sudo dnf install python3
     
 
-If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use `yum` instead.
+Om du använder en äldre Fedora version så kan du få ett felmeddelande som säger att kommandot `dnf` inte hittades. I det fallet, behöver du använda `yum` istället.
 
 <!--endsec-->
 
