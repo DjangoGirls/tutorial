@@ -95,7 +95,7 @@ Om du använder en äldre Fedora version så kan du få ett felmeddelande som s�
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Use this command in your console:
+Använd det här kommandot i din konsol:
 
 {% filename %}command-line{% endfilename %}
 
@@ -104,7 +104,7 @@ Use this command in your console:
 
 <!--endsec-->
 
-Verify the installation was successful by opening a command prompt and running the `python3` command:
+Verifiera att installation var lyckad genom att öppna en kommandotolk och använd `python3` kommandot:
 
 {% filename %}command-line{% endfilename %}
 
@@ -112,9 +112,9 @@ Verify the installation was successful by opening a command prompt and running t
     Python 3.6.1
     
 
-The version shown may be different from 3.6.1 -- it should match the version you installed.
+Versionen som visas kan skilja sig från 3.6.1 -- den bör matcha den version du installerat.
 
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is 3.4.0 or higher. If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
+**Obs:** Om du är på Windows och det står att `python3` inte hittades, försök använda `python` (utan `3`) och kolla om det fortfarande är en version som är 3.4.0 eller högre. If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
 
 * * *
 
