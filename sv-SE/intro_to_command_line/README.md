@@ -44,13 +44,13 @@ På Windows, så ser du nog en `>`, såhär:
     >
     
 
-Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+Kolla på Linux-sektionen precis ovan nu -- du kommer att se mer som det när du kommer till PythonAnywhere senare i handledningen.
 
 <!--endsec-->
 
-Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
+Varje kommando kommer att infogas av ett `$` eller `>` och ett mellanrum, men du ska inte skriva det. Din dator kommer att göra det åt dig. :)
 
-> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
+> En liten notis: i ditt fall kan det vara något som `C:\Users\ola>` eller `Olas-MacBook-Air:~ ola$` och det är 100% OK.
 
 The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
@@ -106,7 +106,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     /Users/olasitarska
     
 
-> Note: 'pwd' stands for 'print working directory'.
+> Notis: 'pwd' står för 'print working directory', alltså 'skriv ut nuvarande mapp'.
 
 <!--endsec-->
 
@@ -118,15 +118,15 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     C:\Users\olasitarska
     
 
-> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
+> Obs: 'cd' står för 'change directory' som betyder 'byt mapp' på svenska. Med powershell kan du använda pwd som i Linux eller Mac OS X.
 
 <!--endsec-->
 
-You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
+Du ser säkert något liknande på din dator. När du öppnar terminalen brukar du starta i användarens hemmamapp.
 
 * * *
 
-### Learn more about a command
+### Lär dig mer om ett kommando
 
 Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
 
