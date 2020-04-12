@@ -18,7 +18,7 @@ Cloud IDE це інструмент який надає вам редактор 
     $
     
 
-The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+Термінал на PaizaCloud IDE готовий до ваших інструкцій. Ви можете змінити розмір або максимізувати це вікно, щоб зробити його трохи більшим.
 
 #### AWS Cloud9
 
