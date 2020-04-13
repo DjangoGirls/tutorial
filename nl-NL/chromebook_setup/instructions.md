@@ -22,14 +22,14 @@ De terminal op de PaizaCloud IDE is klaar voor je instructies. Je kunt het scher
 
 #### AWS Cloud9
 
-Currently Cloud 9 requires you to sign up with AWS and enter credit card information.
+Op dit moment vereist Cloud 9 dat je je aanmeldt met AWS en creditcardinformatie invoert.
 
-1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+1. Installeer Cloud 9 uit de [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
 2. Go to [c9.io](https://c9.io) and click *Get started with AWS Cloud9*
-3. Sign up for an AWS account (requires credit card information, but you can use it for free)
-4. In the AWS Dashboard, enter *Cloud9* in the search bar and click it
+3. Registreer voor een AWS-account (vereist creditcardgegevens, maar deze kun je gratis gebruiken)
+4. In het AWS Dashboard, typ *Cloud9* in de zoekbalk en klik erop
 5. In the Cloud 9 dashboard, click *Create environment*
-6. Name it *django-girls*
+6. Noem deze *django-girls*
 7. While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
 8. Click *Next step*
 9. Click *Create environment*
@@ -41,11 +41,11 @@ Now you should see an interface with a sidebar, a big main window with some text
     yourusername:~/workspace $
     
 
-This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+Het onderste scherm is je terminal. Je kunt de terminal gebruiken om instructies op afstand naar de Cloud 9 computer te versturen. Je kunt de grootte van dat scherm aanpassen om het iets groter te maken.
 
 ### Virtuele omgeving
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We gebruiken ze om de stukjes code van verschillende projecten apart te houden, zodat dingen uit verschillende projecten niet doorelkaar worden gehaald.
+Een virtuele omgeving (ook wel een virtualenv genoemd) is als een persoonlijke bak waarin we de computercode kunnen opslaan voor een project waaraan we werken. We gebruiken ze om de stukjes code van verschillende projecten apart te houden, zodat dingen uit verschillende projecten niet doorelkaar worden gehaald.
 
 Run:
 
