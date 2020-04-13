@@ -45,7 +45,7 @@ This bottom area is your terminal. You can use the terminal to send instructions
 
 ### Virtuele omgeving
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We gebruiken ze om de stukjes code van verschillende projecten apart te houden, zodat dingen uit verschillende projecten niet doorelkaar worden gehaald.
 
 Run:
 
@@ -58,11 +58,11 @@ Run:
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: `~=`).
+(let op: op de laatste regel gebruiken we een tilde gevolgd door een 'is' teken: `~=`).
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+Maak een [GitHub](https://github.com)account aan.
 
 ### PythonAnywhere
 
@@ -70,4 +70,4 @@ The Django Girls tutorial includes a section on what is called Deployment, which
 
 This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
-Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Meld je daarom aan voor een nieuw Python Anywhere account op [www.pythonanywhere.com](https://www.pythonanywhere.com).
