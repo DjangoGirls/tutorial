@@ -10,9 +10,9 @@ Mari kita tulis beberapa kode!
 
 > Untuk pembaca di rumah: bagian ini tercakup dalam [Python Basicx: Integers, Strings, Lists, Variables dan Error](https://www.youtube.com/watch?v=MO63L4s-20U) video.
 
-Untuk memulai python, kita perlu membuka *Comand line atau Jendela perintah* pada komputer anda. Anda seharusnya sudah tahu bagaimana melakukan itu - Anda mempelajarinya di bagian [Intro to Command Line](../intro_to_command_line/README.md).
+Untuk memulai python, kita perlu membuka *Comand line atau Jendela perintah* pada komputer anda. Anda seharusnya sudah tahu bagaimana melakukannya - Anda telah belajar di bagian [Pengenalan Halaman Perintah](../intro_to_command_line/README.md).
 
-Ketika kamu sudah siap, Silakan ikuti instruksi dibawah ini.
+Saat kamu sudah siap, ikuti instruksi dibawah ini.
 
 Kita ingin membuka konsol Python, Jadi silakan ketik `python` untuk Windows atau `python3` pada Mac OS/Linux dan tekan `Enter`.
 
