@@ -36,16 +36,16 @@
 
 Це чудово приймати участь в Django Girls workshop, але ми розуміємо, що не завжди є можливість його відвідати. Тому ми за те щоб ви намагались проходити цей посібник вдома. Для тих хто навчається вдома, ми зараз готуємо відео які можуть спростити використання посібника самостійно. Вони досі знаходяться в розробці, але з часом все більше цікавих речей можна буде знайти на каналі [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) в YouTube.
 
-In every chapter already covered, there is a link that points to the correct video.
+У кожному розділі, які вже готові, вже є посилання, що вказує на правильне відео.
 
 ## Коротка інформація та вклад
 
 Цей посібник підтримується спільнотою [DjangoGirls](https://djangogirls.org/). Якщо ви знайдете якісь помилки або захочете зробити певні оновлення, будь ласка, [виконуйте вказівки з частини про вклад](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
-## Would you like to help us translate the tutorial into other languages?
+## Чи не бажаєте допомогти нам із перекладом посібника на інші мови?
 
-Currently, translations are being kept on crowdin.com platform at:
+На цей момент переклади підтримуються на платформі crowdin.com :
 
 https://crowdin.com/project/django-girls-tutorial
 
-If your language is not listed on [crowdin](https://crowdin.com/), please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
+Якщо ваша мова не перерахована на [crowdin](https://crowdin.com/), будь ласка, відкрийте нову тему</0>, що інформує про мову, таким чином ми зможемо додати її.</p>
