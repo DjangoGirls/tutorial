@@ -2,10 +2,10 @@
 
 * [Вступ](README.md)
 * [Встановлення](installation/README.md) 
-  * [Command Line](installation/README.md#command-line)
+  * [Командний рядок](installation/README.md#command-line)
   * [Python](installation/README.md#python)
-  * [Code Editor](installation/README.md#code-editor)
-  * [Virtual Environment](installation/README.md#virtualenv)
+  * [Редактор Коду](installation/README.md#code-editor)
+  * [Віртуальне середовище](installation/README.md#virtualenv)
   * [Django](installation/README.md#django)
   * [Git](installation/README.md#git)
   * [GitHub](installation/README.md#github)
