@@ -30,24 +30,24 @@ För närvarande kräver Cloud 9 att du registrerar dig med AWS och ange kreditk
 4. I AWS kontrollpanelen anger du *Cloud9* i sökfältet och klickar på den
 5. I Cloud9 panelen klickar du på *Create environment*
 6. Döp den till *django-girls*
-7. While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
-8. Click *Next step*
-9. Click *Create environment*
+7. Medan du anger inställningar, välj *Create a new instance for environment (EC2)* för "Environment Type" och *t2.micro* "Instance type" (det bör säga "Free-tier eligible."). Standardinställningen för kostnadsbesparingar är bra och du kan behålla de andra standardinställningarna.
+8. Klicka på *Next step*
+9. Klicka på *Create Environment*
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+Nu kan du se ett gränssnitt med en navigation vid sidan, ett stort huvud-fönster med någon text och ett litet fönster nertill som ser ut typ så här:
 
 {% filename %}bash{% endfilename %}
 
     dittanvändarnamn:~/workspace $
     
 
-This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+Detta nedre område är din terminal. Du kan använda terminalen för att skicka instruktioner till fjärrdatorn Cloud9. Du kan ändra fönstrets storleken för att göra det lite större.
 
 ### Virtuell miljö
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+En virtuell miljö (även kallad virtualenv) är som en privat låda där vi kan lägga användbar datorkod för ett projekt vi arbetar på. Vi kommer använda dem för att spara olika bitar av kod som tillhör olika projekt. På detta sätt kommer koden till projekten hållas separat från varandra så att vi inte blandar ihop de olika projekt-koden.
 
-Run:
+Kör:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -58,11 +58,11 @@ Run:
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: `~=`).
+(observera att på sista raden använder vi en tilde följt av ett lika tecken: `~=`).
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+Skapa ett [Github](https://github.com) konto.
 
 ### PythonAnywhere
 
@@ -70,4 +70,4 @@ The Django Girls tutorial includes a section on what is called Deployment, which
 
 This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
-Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Så registrera dig för ett nytt Python Anywhere konto på [www.pythonanywhere.com](https://www.pythonanywhere.com).
