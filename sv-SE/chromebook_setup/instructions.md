@@ -8,7 +8,7 @@ Cloud IDE är ett verktyg som ger användaren en kod-editor och tillgång till e
 
 1. Gå till [PaizaCloud Cloud IDE](https://paiza.cloud/)
 2. Skapa ett konto
-3. Click *New Server* and choose the Django app
+3. Klicka på *Ny Server* och välj Django-appen
 4. Klicka på Terminal knappen (på vänster sida av fönstret)
 
 Nu bör du se ett gränssnitt med en sidofält, och några knappar på vänster. Klicka ”Terminal” knappen för att öppna terminal-fönstret som ser ut såhär:
@@ -22,14 +22,14 @@ Terminalen på PaizaCloud Cloud IDE är förberedd för dina instruktioner. Du k
 
 #### AWS Cloud9
 
-Currently Cloud 9 requires you to sign up with AWS and enter credit card information.
+För närvarande kräver Cloud 9 att du registrerar dig med AWS och ange kreditkort information.
 
-1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Go to [c9.io](https://c9.io) and click *Get started with AWS Cloud9*
-3. Sign up for an AWS account (requires credit card information, but you can use it for free)
-4. In the AWS Dashboard, enter *Cloud9* in the search bar and click it
-5. In the Cloud 9 dashboard, click *Create environment*
-6. Name it *django-girls*
+1. Installera Cloud 9 från [Chrome webbutiken](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+2. Gå till [c9.io](https://c9.io) och klicka på *Kom igång med AWS Cloud9*
+3. Registrera dig för ett AWS-konto (kräver kreditkortsinformation, men du kan använda det gratis)
+4. I AWS kontrollpanelen anger du *Cloud9* i sökfältet och klickar på den
+5. I Cloud9 panelen klickar du på *Create environment*
+6. Döp den till *django-girls*
 7. While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
 8. Click *Next step*
 9. Click *Create environment*
