@@ -2,6 +2,6 @@
 
 > 注意 如果您使用的是 Chromebook, 请跳过本章, 并确保遵循 Chromebook 安装指令。
 > 
-> **Note** If you already worked through the Installation steps then you've already done this – you can go straight to the next chapter!
+> **注意**如果你已完成了安装步骤，可以直接进入下一章。
 
 {% include "/django_installation/instructions.md" %}
