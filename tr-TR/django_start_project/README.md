@@ -187,7 +187,7 @@ Now you need to check that your website is running. Open your browser (Firefox, 
     http://127.0.0.1:8000/
     
 
-If you're using a Chromebook and Cloud9, instead click the URL in the pop-up window that should have appeared in the upper right corner of the command window where the web server is running. The URL will look something like:
+If you're using a Chromebook and Cloud9, instead click the URL in the pop-up window that should have appeared in the upper right corner of the command window where the web server is running. URL bunun gibi bir şeye benzeyecektir:
 
 {% filename %}tarayıcı{% endfilename %}
 
