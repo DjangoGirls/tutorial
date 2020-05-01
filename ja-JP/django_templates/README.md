@@ -97,7 +97,7 @@ post変数がさっきと違って、`{{ post.title }}` や `{{ post.text }}` �
     [...]
     
 
-（忘れずに `<your-pythonanywhere-domain>` を自分のPythonAnywhereのアカウント名に置き換えましょう、<> は不要です。）
+（忘れずに `<your-pythonanywhere-domain>` を自分のPythonAnywhereのサブドメイン名に置き換えましょう、<> は不要です。）
 
 * 最後にPythonAnywhereの[「Web」ページ](https://www.pythonanywhere.com/web_app_setup/)を開いて、アプリを**リロード**（Reload）します。 （コンソールからPythonAnywhereの他のページにアクセスするには、右上のメニューボタンを使います。）更新された内容が、 https://subdomain.pythonanywhere.com に反映されているはずです。ブラウザで確認してみましょう！ PythonAnywhereサイトで表示されるブログの記事が、あなたのパソコンの中のローカルサーバーのものと違っていても大丈夫です。 ローカルコンピュータにあるデータベースと、PythonAnywhere上のデータベースは同期していません。
 
