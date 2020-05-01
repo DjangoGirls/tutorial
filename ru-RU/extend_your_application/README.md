@@ -42,7 +42,7 @@
 
 Часть `post_detail` означает, что Django будет ожидать URL в `blog/urls.py` с именем =post_detail
 
-А что же `pk=post.pk`? `pk` is short for primary key, which is a unique identifier for each record in a database. Every Django model has a field which serves as its primary key, and whatever other name it has, it can also be referred to as "pk". Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a field named "id" holding a number that increases for each record, i.e. 1, 2, 3) and adds it as a field to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
+А что же `pk=post.pk`? `pk` - это сокращение от первичного ключа (primary key), которое является уникальным идентификатором для каждой записи в базе данных. Каждая Django модель имеет поле, которое служит своим первичным ключом, и любое другое имя, которое оно имеет, так же можно назвать как "pk". Поскольку мы не определили специальный primary key в нашей модели `Post`, Django создаст его для нас (по умолчанию это будет число, которое увеличивается на единицу для каждой записи, например 1, 2, 3) и добавит его в поле с именем `pk` для каждой из наших записей. Мы получаем доступ к первичному ключу напечатав `post.pk`, таким же образом мы получаем доступ и к другим полям (`title`, `author`, и т.д.) в нашем объекте `Post`!
 
 Теперь, когда мы перейдем по адресу http://127.0.0.1:8000/ мы получим ошибку (как и ожидается, поскольку у нас нет прописанного URL и *view* для `post_detail`). Она будет выглядеть следующим образом:
 
@@ -84,9 +84,9 @@ urlpatterns = [
 
 ## Добавим представление для страницы поста
 
-В этот раз наше *view* получит дополнительный параметр `pk`. Но как дать нашему *view* знать о нем? Для этого мы определим функцию как `def post_detail(request, pk):`. Note that this parameter must have the exact same name as the one we specified in `urls` (`pk`). Also note that omitting this variable is incorrect and will result in an error!
+В этот раз наше *view* получит дополнительный параметр `pk`. Но как дать нашему *view* знать о нем? Для этого мы определим функцию как `def post_detail(request, pk):`. Обрати внимание, что параметр должен иметь точно такое же имя как, мы выбрали для обработки `urls` (`pk`). Также обрати внимание, что и пропуск переменной будет неправилен и приведет к ошибке!
 
-Теперь мы хотим получить одну конкретную запись из блога. Для этого потребуется использовать QuerySet, примерно такую:
+Теперь мы хотим получить одну конкретную запись из блога. Для того, чтобы сделать это,мы можем использовать набор запросов (querysets), например такой:
 
 {% filename %}{{ warning_icon }} blog/views.py{% endfilename %}
 
@@ -140,7 +140,7 @@ def post_detail(request, pk):
 
 Мы создадим файл `post_detail.html` в директории `blog/templates/blog`, и откроем его в редакторе кода.
 
-Enter the following code:
+Набери следующий код:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
