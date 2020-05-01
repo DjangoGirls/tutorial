@@ -30,8 +30,8 @@ Atom is another popular editor. It's free, open-source and available for Windows
 
 You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
-The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+তার প্রথম কারন হলো কোড **সাধারন টেক্সট** কিন্তু ওয়ার্ড বা টেক্সটএডিট- ধরনের সফ্টওয়্যারগুলো সাধারন টেক্সট তৈরী না করে রিচ টেক্সট(Rich Text) তৈরী করে যেটা RTF(Rich Text Format) বা এই ধরনের কোন ফর্মাটে থাকে। </p> 
 
-The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
+দ্বিতীয় কারন হলো কোডএডিটরের বিশেষ পারদর্শীতা হলো কোড এডিটিং, যাতে অনেক প্রয়োজনীয় জিনিস যেমন কোডকে তার বৈশিষ্ঠ্য অনুযায়ী রঙিন ভাবে দেখানো এবং বন্ধনীর(braces) কে নিজে থেকে শেষ করা ইত্যাদি। 
 
 We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
