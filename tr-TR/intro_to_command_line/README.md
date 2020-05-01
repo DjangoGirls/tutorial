@@ -28,7 +28,7 @@ Birkaç deneme yapmak için öncelikle komut satırı arabirimini açmamız gere
 
 Eğer Mac veya Gnu/Linux kullanıyorsanız, yüksek ihtimalle `$` işareti göreceksiniz, tıpkı bunun gibi:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     $
     
@@ -78,9 +78,9 @@ Aşağıdaki komutu yazarak başlayalım:
 
 <!--endsec-->
 
-And then hit `enter`. This is our result:
+Ve ardından `enter` tuşuna basın. Sonucumuz bu:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     $ whoami zeynep
     
