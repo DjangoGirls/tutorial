@@ -2,9 +2,9 @@
 
 # 扩展您的应用
 
-We've already completed all the different steps necessary for the creation of our website: we know how to write a model, URL, view and template. We also know how to make our website pretty.
+我们已经完成了所有创建网站的各项不同必须的步骤：我们知道如何写一个模型，url，视图和模板。我们同样知道如何让我们网站更漂亮。
 
-Time to practice!
+现在来练习吧！
 
 The first thing we need in our blog is, obviously, a page to display one post, right?
 
