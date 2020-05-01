@@ -1,10 +1,10 @@
-# CSS – make it pretty!
+# CSS - এটি সুন্দর করুন 
 
 আমাদের ব্লগ তেমন সুন্দর দেখা যাচ্ছে না, তাই না? এখনি সুন্দর করার সময়! আমরা এইজন্য CSS ব্যাবহার করব।
 
 ## CSS কি?
 
-Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
+CSS এর পূর্ণরুপ হচ্ছে Cascading Style Sheets এবং এটি একধরনের মার্কঅাপ ল্যাঙ্গুয়েজ(যেমন: HTML). যেটি ব্যবহার করা হয় ওয়েবসাইটের সৌন্দর্য্য এবং বিন্যাসের জন্য . এটিকে ওয়েবপেইজের সৌন্দয্য বলে ও ধরা হয় ;) .
 
 But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
 
