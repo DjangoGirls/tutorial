@@ -656,7 +656,7 @@ Linux'ta bunun gibi görünecektir:
 
 Windows Komut İstemi’nde bunun gibi olacak:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     > cd %HomePath%\Desktop
     
@@ -667,7 +667,7 @@ Windows Komut İstemi’nde bunun gibi olacak:
 
 Ve Windows Powershell’de bunun gibi olacak:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     > cd $Home\Desktop
     
@@ -678,7 +678,7 @@ Takılırsanız, yardım isteyin. Eğitmenler bunun için var!
 
 Şimdi dosyadaki komutları çalıştırmak için Python'u kulllanın:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     $ python3 python_intro.py
     Merhaba, Django girls!
@@ -686,7 +686,7 @@ Takılırsanız, yardım isteyin. Eğitmenler bunun için var!
 
 Not: Windows'ta 'python3' bir komut olarak kullanılmaz. Onun yerine, dosyayı çalıştırmak için 'python'ı kullanın:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 > python python_intro.py
@@ -710,7 +710,7 @@ if 3 > 2:
 
 Eğer bunu kaydetmiş ve çalıştırmış olsaydık, bunun gibi bir hata görecektik:
 
-{% filename %}{{ warning_icon }} command-line{% endfilename %}
+{% filename %}{{ warning_icon }} komut satırı{% endfilename %}
 
     $ python3 python_intro.py
     File "python_intro.py", line 2
