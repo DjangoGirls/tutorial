@@ -1,6 +1,6 @@
-Estas multaj diversaj redaktiloj kaj la elekto esence bazu sur persona prefero. Most Python programmers use complex but extremely powerful IDEs (Integrated Development Environments), such as PyCharm. Por komencanto tamen tio verŝajne malpli taŭgas; nia rekomendoj estas same potenca, sed multe pli simpla.
+Estas multaj diversaj redaktiloj kaj la elekto esence okazas surbaze de persona prefero. Most Python programmers use complex but extremely powerful IDEs (Integrated Development Environments), such as PyCharm. Por komencanto tamen tio verŝajne malpli taŭgas; nia rekomendoj estas same potenca, sed multe pli simpla.
 
-Nia sugestoj trovis sube, sed bonvolu demandi al via trejnisto, kio estas ria prefero – plifalicos ricevi helpon de ri.
+Nia sugestoj troviĝas sube, sed bonvolu demandi al via trejnisto, kio estas ilia prefero – plifalicos ricevi helpon de ili.
 
 ## Visual Studio Code
 
