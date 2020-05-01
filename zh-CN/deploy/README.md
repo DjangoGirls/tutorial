@@ -102,7 +102,7 @@ Git会追踪这个目录下所有文件和文件夹的更改，但是有一些�
 
 现在我们需要把你计算机上的Git仓库绑定到 GitHub 上。
 
-Type the following into your console (replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets -- the URL should match the clone URL you just saw):
+在你的终端里输入下面的内容（用你创建的GitHub账号的用户名替代`<your-github-username>`，但是不要带尖括号 -- URL就是你刚才看克隆的时候看到的URL）：
 
 {% filename %}command-line{% endfilename %}
 
@@ -110,7 +110,7 @@ Type the following into your console (replace `<your-github-username>` with the 
     $ git push -u origin master
     
 
-When you push to GitHub, you'll be asked for your GitHub username and password (either right there in the command-line window or in a pop-up window), and after entering credentials you should see something like this:
+当你推送到GitHub时，你会被提示输入GitHub的用户名和密码（可能就是在那个命令行窗口，也可能在一个弹出窗口），输入认证信息后你会看到类似下面的东西：
 
 {% filename %}command-line{% endfilename %}
 
@@ -170,16 +170,16 @@ When you push to GitHub, you'll be asked for your GitHub username and password (
 
 在 PythonAnywhere上，所有的这些步骤都会自动的，但是他们和你在其他服务器提供的步骤是一样的。
 
-The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own computer, so it can have different posts and admin accounts. As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
+这里最需要注意的是，你在PythonAnywhere的数据库和你自己电脑里的数据库是完全独立开的，所以它可能会有不同的管理员账号和帖子。 因此，就像刚才在你自己电脑上做过的那样，我们需要用`createsuperuser`初始化管理员账号。 PythonAnywhere 已经自动帮你激活了virtualenv环境，所以你只需要执行：
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
     (ola.pythonanywhere.com) $ python manage.py createsuperuser
     
 
-Type in the details for your admin user. Best to use the same ones as you're using on your own computer to avoid any confusion, unless you want to make the password on PythonAnywhere more secure.
+输入管理员的详细信息。为了避免混乱，最好用跟你电脑上相同的信息，除非你想让PythonAnywhere上的密码更加安全。
 
-Now, if you like, you can also take a look at your code on PythonAnywhere using `ls`:
+现在，如果你愿意，你还可以用`ls`查看你在PythonAnywhere的代码：
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -190,21 +190,21 @@ Now, if you like, you can also take a look at your code on PythonAnywhere using 
     tests.py  views.py
     
 
-You can also go to the "Files" page and navigate around using PythonAnywhere's built-in file browser. (From the Console page, you can get to other PythonAnywhere pages from the menu button in the upper right corner. Once you're on one of the pages, there are links to the other ones near the top.)
+你也可以转到”文件“页面，用PythonAnywhere的内置文件浏览器导航查阅。 （在控制台页面的右上角，你可以通过菜单按钮转到PythonAnywhere的其他页面。 当你打开其中一个页面后，靠近顶部会出现其他页面的链接。）
 
-## You are now live!
+## 你现在上线了！
 
-Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want :)
+你的站点现在应该在公共互联网上跑起来了！点击PythonAnywhere的”web“页面获取链接。然后就可以分享给其他人了:)
 
-> **Note** This is a beginners' tutorial, and in deploying this site we've taken a few shortcuts which aren't ideal from a security point of view. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) for some tips on securing your site.
+> **注意**这是一个初学者教程，我们在部署这个网站的时候走了一些捷径，但从安全的角度这是不推荐的。 等你决定在这个项目的基础上继续搭建，或者开始一个新项目，建议你去查看[Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/)，来获取一些关于站点安全的提示。
 
-## Debugging tips
+## 调试技巧
 
-If you see an error while running the `pa_autoconfigure_django.py` script, here are a few common causes:
+如果你在运行`pa_autoconfigure_django.py`脚本的时候遇到错误，通常可能是这些原因：
 
-- Forgetting to create your PythonAnywhere API token.
-- Making a mistake in your GitHub URL
-- If you see an error saying *"Could not find your settings.py"*, it's probably because you didn't manage to add all your files to Git, and/or you didn't push them up to GitHub successfully. Have another look at the Git section above
+- 忘记创建PythonAnywhere的API token。
+- 弄错了GitHub的URL
+- 如果你看到一个错误说*"Could not find your settings.py"*，很可能是你向Git添加文件的时候漏掉一些，或者你没有成功推送到GitHub。 再查看一下前面的Git部分
 - If you previously signed up for a PythonAnywhere account and had an error with collectstatic, you probably have an older version of SQLite (eg 3.8.2) for your account. In that case, sign up for a new account and try the commands in the PythonAnywhere section above.
 
 If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere ["Web" page](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
