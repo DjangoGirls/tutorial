@@ -2,7 +2,7 @@
 
 [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
-> これは、Creative Commons Attribution-ShareAlike 4.0 International License のライセンスの下で提供しています。ライセンスについてはこちらをご確認ください。 https://creativecommons.org/licenses/by-sa/4.0/
+> これは、Creative Commons Attribution-ShareAlike 4.0 International License のライセンスの下で提供しています。ライセンスについてはこちらをご確認ください。 https://creativecommons.org/licenses/by-sa/4.0/ [日本語版](https://creativecommons.org/licenses/by-sa/4.0/deed.ja)
 
 ## ウェルカム！
 
