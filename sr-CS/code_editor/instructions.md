@@ -1,12 +1,12 @@
-Postoji puno različitih editora i izbor se uglavnom svodi na lične preference. Većina Pajton programera koriste kompleksne ali veoma snazne IDE (Integrisana razvojna okruženja), poput PyCharm-a. Početniku su, međutim, manje podesni. Naše preporuke su jednako moćne, ali znatno jednostavnije.
+Postoji puno različitih editora i izbor se uglavnom svodi na lične preference. Većina Pajton programera koriste kompleksne ali veoma snazne IDE (Integrisana razvojna okruženja), poput PyCharm-a. Međutim, kao početniku to je verovatno manje pogodno; naše preporuke su podjednako snažne, ali mnogo jednostavnije.
 
 Naše sugestije slede u nastavku, ali slobodno možete da pitate svog instruktora za njegove preporuke - jer bi tako bilo dosta lakše da dobijete njegovu pomoć.
 
 ## Visual Studio Code
 
-Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+Visual Studio Code je uređivač izvornog koda koji je razvio Microsoft za Windows, Linux i macOS. To uključuje podršku za uklanjanje grešaka, ugrađenu Git kontrolu, isticanje sintakse, inteligentno dovršavanje koda, isečke i proces restrukturiranja postojećeg računarskog koda.
 
-[Skinite ga ovde](https://code.visualstudio.com/)
+[Preuzmite ovde](https://code.visualstudio.com/)
 
 ## Gedit
 
