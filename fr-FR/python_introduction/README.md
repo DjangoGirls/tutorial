@@ -862,7 +862,7 @@ hi()
 
 Voilà, notre première fonction est prête !
 
-Vous vous demandez peut-être pourquoi nous avons écrit le nom de la fonction à la fin du fichier. When we write `def hi():` and the indented lines following, this is us writing instructions for what the `hi()` function should do. Python will read and remember these instructions, but won't run the function yet. To tell Python we want to run the function, we have to call the function with `hi()`. Python reads the file and executes it from top to bottom, so we have to define the function in the file before we call it.
+Vous vous demandez peut-être pourquoi nous avons écrit le nom de la fonction à la fin du fichier. Quand nous écrivons`def hi():` et les lignes indentées qui suivent, nous écrivons les instructions disant ce que la fonction `hi` doit faire. Python va lire et mémoriser ces instructions, mais ne va pas exécuter la fonction tout de suite. Pour dire à Python que nous voulons exécuter la fonction, nous devons appeler la fonction avec `hi()`. Python reads the file and executes it from top to bottom, so we have to define the function in the file before we call it.
 
 Lançons notre code pour voir ce qui se passe :
 
