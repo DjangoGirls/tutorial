@@ -300,6 +300,6 @@ Vauuu! Izgleda odlično, zar ne? Pogledajte kod koji smo nalepili kako biste vid
 
 Ne plašite se da malo eksperimentišete sa CSS-om i da pokušate da promenite neke stvari. Igranje CSS-om može da Vam pomogne da razumete kako različite stvari funkcionišu. Ako negde pogrešite, ne brinite - uvek možete da se vratite korak unazad!
 
-We really recommend taking the free online courses "Basic HTML & HTML5" and "Basic CSS" on [freeCodeCamp](https://learn.freecodecamp.org/). They can help you learn all about making your websites prettier with HTML and CSS.
+Zaista preporučujemo polaganje besplatnih online kurseva "Basic HTML & HTML5" i „Basic CSS“ na [ freeCodeCamp ](https://learn.freecodecamp.org/). Oni vam mogu pomoći da naučite sve o tome kako da napravite vaše web stranice lepše koristeci HTML i CSS.
 
 Da li ste spremni za sledeće poglavlje?! :)
