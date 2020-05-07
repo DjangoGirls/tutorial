@@ -2,7 +2,7 @@ Možeš da [preskočiš ovo poglavlje](http://tutorial.djangogirls.org/en/instal
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud IDE je alatka koja vam omogućava uređivanje kodova i pristup računaru umreženom na internet, gde možete da instalirate, pišete, i pokrenete softver. Tokom ovog priručnika, Cloud IDE će poslužiti kao Vaš *lokalni računar*. I dalje ćes pokretati naredbe u terminalu, baš kao i Vaše kolege koje koriste OS X, Ubuntu ili Windows, ali će Vaš terminal biti povezan sa pokrenutim računarom negde gde je cloud IDE to podesio za tebe. Evo su uputstva za oblak IDEs (PaizaCloud oblak IDE, AWS Cloud9). Možete da izaberete jedan od Cloud IDE-jeva i da pratite njegove instrukcije.
+Cloud IDE je alatka koja vam omogućava uređivanje kodova i pristup računaru umreženom na internet, gde možete da instalirate, pišete, i pokrenete softver. Tokom ovog priručnika, Cloud IDE će poslužiti kao Vaš *lokalni računar*. I dalje ćes pokretati naredbe u terminalu, baš kao i Vaše kolege koje koriste OS X, Ubuntu ili Windows, ali će Vaš terminal biti povezan sa računarom pokrenutim negde drugde tamo gde je cloud IDE to podesio za tebe. Evo su uputstva za Cloud IDEs (PaizaCloud oblak IDE, AWS Cloud9). Možete da izaberete jedan od Cloud IDE-jeva i da pratite njegove instrukcije.
 
 #### PaizaCloud Cloud IDE
 
