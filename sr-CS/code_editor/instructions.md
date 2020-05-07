@@ -16,21 +16,21 @@ Gedit je otvorenog koda, besplatni uređivač, dostupan za sve operativne sistem
 
 ## Sublime Text 3
 
-Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
+Sublime Text je vrlo popularan uređivač sa slobodnim periodom procene i dostupan je za sve operativne sisteme.
 
-[Skinite ga ovde](https://www.sublimetext.com/3)
+[Preuzmite ovde](https://www.sublimetext.com/3)
 
 ## Atom
 
-Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
+Atom je još jedan popularni urednik. Besplatan je, otvorenog koda i dostupan za Windows, OS X i Linux. Atom je razvio [ GitHub ](https://github.com/).
 
-[Download it here](https://atom.io/)
+[Preuzmite ovde](https://atom.io/)
 
-## Why are we installing a code editor?
+## Zašto instaliramo uređivač koda?
 
-You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
+Možda se pitate zašto instaliramo ovaj poseban softver za uređivanje koda, umesto da koristimo nešto poput Word-a ili Notepad-a.
 
-The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+Prvi razlog je taj što kod treba da bude ** običan tekst **, a problem sa programima kao što su Word i Textedit je taj što oni zapravo ne proizvode običan tekst, oni stvaraju bogat tekst (sa fontom i formatiranjem), korišćenjem prilagođenih formata kao što je [ RTF (Format obogađenog teksta) ](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
 The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
 
