@@ -42,7 +42,7 @@ Nous allons tout d'abord ajouter un lien à l'intérieur du fichier `blog/templa
 
 La partie `post_detail` signifie que Django s'attend de trouver une URL en `blog/urls.py` avec nom = post_detail
 
-Et qu’en est-il de `pk=post.pk` ? `pk` is short for primary key, which is a unique identifier for each record in a database. Every Django model has a field which serves as its primary key, and whatever other name it has, it can also be referred to as "pk". Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a field named "id" holding a number that increases for each record, i.e. 1, 2, 3) and adds it as a field to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
+Et qu’en est-il de `pk=post.pk` ? `pk` est l’abréviation de clé primaire (« primary key » en anglais), qui est un identifiant unique pour chaque entrée dans une base de données. Chaque modèle Django a un champ qui sert de clé primaire, et peu importe son autre nom, il peut aussi être appelé par le nom « pk ». Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a field named "id" holding a number that increases for each record, i.e. 1, 2, 3) and adds it as a field to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
 
 Maintenant si nous jetons un coup d’œil à http://127.0.0.1:8000/, nous rencontrons une erreur. Ceci est prévisible, puisque nous n'avons ni d'URL ni de *view* pour `post_detail`. L'erreur ressemble à ceci :
 
@@ -50,7 +50,7 @@ Maintenant si nous jetons un coup d’œil à http://127.0.0.1:8000/, nous renco
 
 ## Créer une URL vers le contenu d'un post
 
-Allons créer notre URL dans le fichier `urls.py` pour notre *vue* `post_detail`!
+Allons créer notre URL dans le fichier `urls.py` pour notre *vue* `post_detail` !
 
 Nous aimerions que le contenu de notre premier post s'affiche à cette **URL** : http://127.0.0.1:8000/post/1/
 
@@ -84,7 +84,7 @@ Vous souvenez-vous de ce qu'il faut faire ensuite ? Il faut ajouter une vue !
 
 ## Ajouter une vue pour le contenu du post
 
-Cette fois-ci, nous allons donner un paramètre supplémentaire à notre *vue* : `pk`. Notre *vue* va avoir besoin de le récupérer, n'est ce pas ? Pour cela, nous allons définir une fonction : `def post_detail(request, pk):`. Note that this parameter must have the exact same name as the one we specified in `urls` (`pk`). Also note that omitting this variable is incorrect and will result in an error!
+Cette fois-ci, nous allons donner un paramètre supplémentaire à notre *vue* : `pk`. Notre *vue* va avoir besoin de le récupérer, n'est ce pas ? Pour cela, nous allons définir une fonction : `def post_detail(request, pk):`. Notez que ce paramètre doit avoir exactement le même nom que celui que nous avons spécifié dans le fichier `urls` (`pk`). Notez aussi qu’oublier de mettre cette variable est incorrect et produira une erreur !
 
 Maintenant, nous aimerions obtenir qu'un seul blog post. Pour cela, nous allons utiliser des QuerySets qui ressemblent à ceux-ci:
 
@@ -140,7 +140,7 @@ Oh non ! Encore une erreur ! Mais cette fois, vous savez quoi faire : nous avons
 
 Nous allons créer un fichier `post_detail.html` dans le dossier `blog/templates/blog` et nous l'ouvrons ensuite avec notre éditeur de code.
 
-Enter the following code:
+Entrez le code suivant :
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
