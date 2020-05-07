@@ -69,6 +69,6 @@ U ovu trenutku Cloud 9 zahteva da se prijavite na AWS i unesete informacije o kr
     
     Vodič za Django Girls sadrži odeljak koji se naziva Postavljanje, to je postupak preuzimanja koda koji pokreće vašu novu web aplikaciju i premeštanja je na javno dostupan računar (zvan server) kako bi drugi mogli da vide vaš rad.
     
-    Ovaj deo je malo čudan kada radite tutorial na Chromebooku jer već koristimo računar koji se nalazi na Internetu (za razliku od recimo laptopa). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+    Ovaj deo je malo čudan kada radite tutorial na Chromebooku jer već koristimo računar koji se nalazi na Internetu (za razliku od recimo laptopa). Međutim, to je još uvek korisno jer možemo smatrati da naš Cloud 9 radni prostor predstavlja mesto za naš "u toku" rad, a Python Anywhere kao mesto da pokažemo naše stvari kako postaju potpunije. 
     
-    Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+    Tako da, prijavite se za novi Python Anywhere nalog na [ www.pythonanywhere.com ](https://www.pythonanywhere.com).
