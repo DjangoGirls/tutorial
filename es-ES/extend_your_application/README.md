@@ -42,7 +42,7 @@ Empezaremos añadiendo un enlace al fichero `blog/templates/blog/post_list.html`
 
 La parte de`post_detail` significa que Django estará esperando un URL en `blog/urls.py` con el nombre=post_detail
 
-¿Y ahora qué pasa con `pk=post.pk`? `pk` is short for primary key, which is a unique identifier for each record in a database. Every Django model has a field which serves as its primary key, and whatever other name it has, it can also be referred to as "pk". Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a field named "id" holding a number that increases for each record, i.e. 1, 2, 3) and adds it as a field to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
+¿Y ahora qué pasa con `pk=post.pk`? `pk` abrevia clave primaria (primary key), la cual es un identificador único para cada registro en una base de datos. Cada modelo de Django tiene un campo que sirve como clave primaria, y cualquier otro nombre que tiene, también se puede llamar "pk". Porque no especificamos una clave primaria en nuestro modelo `Post`, Django creará una por nosotros (por defecto, un campo llamado "id" con un número que se incrementará por cada registro, por ejemplo 1, 2, 3) y lo agregará como un campo en cada uno de nuestros posts. Accedemos a la clave primaria escribiendo `post.pk`, del mismo modo en que accedemos a otros campos (`title`, `author`, etc.) en nuestro objeto `Post`!
 
 Ahora cuando vayamos a: http://127.0.0.1:8000/ tendremos un error (como era de esperar, ya que no tenemos una URL o una *vista* para `post_detail`). Se verá así:
 
@@ -84,7 +84,7 @@ OK, hemos añadido un nuevo patrón de URL a `blog/urls.py`! Actualizamos la pag
 
 ## Añade la vista de detalle de la publicación
 
-Esta vez nuestra *vista* tomará un parámetro adicional `pk`. Nuestra *vista* necesita recibirlo, ¿verdad? Así que definiremos nuestra función como `def post_detail (request, pk):`. Note that this parameter must have the exact same name as the one we specified in `urls` (`pk`). Also note that omitting this variable is incorrect and will result in an error!
+Esta vez nuestra *vista* tomará un parámetro adicional `pk`. Nuestra *vista* necesita recibirlo, ¿verdad? Así que definiremos nuestra función como `def post_detail (request, pk):`. Tenga en cuenta que este parametro debe tener exactamente el mismo nombre que el que especificamos en `urls` (`pk`). ¡También tenga en cuenta que omitir esta variable es incorrecto y resultará en un error!
 
 Ahora, queremos obtener solo un post. Para ello podemos usar querysets como este:
 
@@ -140,7 +140,7 @@ Sí. Es hora de actualizar la página: http://127.0.0.1:8000/
 
 Vamos crear un fichero en `blog/templates/blog` llamado `post_detail.html`, y abrirlo en el editor de código.
 
-Enter the following code:
+Introduzca el siguiente código:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
