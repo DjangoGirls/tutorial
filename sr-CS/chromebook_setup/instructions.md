@@ -26,13 +26,13 @@ U ovu trenutku Cloud 9 zahteva da se prijavite na AWS i unesete informacije o kr
 
 1. Instalirajte Cloud 9 iz  Chrome web prodavnice </ 0</li> 
     
-    - Go to [c9.io](https://c9.io) and click *Get started with AWS Cloud9*
-    - Sign up for an AWS account (requires credit card information, but you can use it for free)
-    - In the AWS Dashboard, enter *Cloud9* in the search bar and click it
-    - In the Cloud 9 dashboard, click *Create environment*
-    - Name it *django-girls*
-    - While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
-    - Click *Next step*
+    - Idite na [ c9.io ](https://c9.io) i kliknite * Počnite sa AVS Cloud9 *
+    - Prijavite se za AVS nalog (zahteva podatke o kreditnoj kartici, ali možete ga koristiti i besplatno)
+    - Na AWS kontrolnoj tabli unesite * Cloud9 * u traku za pretragu i kliknite je
+    - Na Cloud 9 kontrolnoj tabli, kliknite * Kreiraj okruženje *
+    - Dajte mu ime * django-girls ​​*
+    - Dok konfigurišete podesavanja, odaberite * Kreirajte novu instancu za okruženje (EC2) * za "Tip okruženja" i * t2.micro * "Tip instance" (trebalo bi da piše "Slobodni-nivo dostupan."). Osnovna podesavanja za uštedu troškova su u redu i možete zadržati ostale zadane vrednosti.
+    - Kliknite na * Sledeći korak *
     - Click *Create environment*</ol> 
     
     Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
