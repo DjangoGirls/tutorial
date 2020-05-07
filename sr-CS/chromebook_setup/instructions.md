@@ -33,20 +33,20 @@ U ovu trenutku Cloud 9 zahteva da se prijavite na AWS i unesete informacije o kr
     - Dajte mu ime * django-girls ​​*
     - Dok konfigurišete podesavanja, odaberite * Kreirajte novu instancu za okruženje (EC2) * za "Tip okruženja" i * t2.micro * "Tip instance" (trebalo bi da piše "Slobodni-nivo dostupan."). Osnovna podesavanja za uštedu troškova su u redu i možete zadržati ostale zadane vrednosti.
     - Kliknite na * Sledeći korak *
-    - Click *Create environment*</ol> 
+    - Kliknite na * Kreirajte okruženje *</ol> 
     
-    Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+    Sada bi trebalo da vidite interfejs sa bočnom trakom, veliki glavni prozor sa nekim tekstom i mali prozor na dnu koji izgleda ovako:
     
     {% filename %}bash{% endfilename %}
     
         yourusername:~/workspace $
         
     
-    This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+    Ovo donje područje je vaš terminal. Možete koristiti terminal da biste poslali uputstva udaljenom Cloud 9 računaru. Možete da promenite veličinu tog prozora da biste ga malo povećali.
     
-    ### Virutalno okruženje
+    ### Virutelno okruženje
     
-    A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+    Virtuelno okruženje (koje se takođe naziva virtualenv) je poput privatne kutije u koju možemo ubaciti korisni računarski kod za projekat na kojem radimo. Koristimo ih da sacuvamo različite bitove koda koji su nam potrebni za naše različite projekte razdvojene kako se stvari ne bi pomešale između projekata.
     
     Run:
     
