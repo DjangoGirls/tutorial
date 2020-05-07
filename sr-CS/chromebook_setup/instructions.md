@@ -48,7 +48,7 @@ U ovu trenutku Cloud 9 zahteva da se prijavite na AWS i unesete informacije o kr
     
     Virtuelno okruženje (koje se takođe naziva virtualenv) je poput privatne kutije u koju možemo ubaciti korisni računarski kod za projekat na kojem radimo. Koristimo ih da sacuvamo različite bitove koda koji su nam potrebni za naše različite projekte razdvojene kako se stvari ne bi pomešale između projekata.
     
-    Run:
+    Pokreni:
     
     {% filename %}Cloud 9{% endfilename %}
     
@@ -59,16 +59,16 @@ U ovu trenutku Cloud 9 zahteva da se prijavite na AWS i unesete informacije o kr
         pip install django~={{ book.django_version }}
         
     
-    (note that on the last line we use a tilde followed by an equal sign: `~=`).
+    (imajte na umu da u zadnjem redu koristimo znak priblizno nakon kojeg sledi znak jednakosti: ` ~ = `).
     
     ### GitHub
     
-    Make a [GitHub](https://github.com) account.
+    Napravite [ GitHub ](https://github.com) nalog.
     
     ### PythonAnywhere
     
-    The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+    Vodič za Django Girls sadrži odeljak koji se naziva Postavljanje, to je postupak preuzimanja koda koji pokreće vašu novu web aplikaciju i premeštanja je na javno dostupan računar (zvan server) kako bi drugi mogli da vide vaš rad.
     
-    This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+    Ovaj deo je malo čudan kada radite tutorial na Chromebooku jer već koristimo računar koji se nalazi na Internetu (za razliku od recimo laptopa). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
     
     Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
