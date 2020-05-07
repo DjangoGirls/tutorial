@@ -10,9 +10,9 @@ Visual Studio Code je uređivač izvornog koda koji je razvio Microsoft za Windo
 
 ## Gedit
 
-Gedit is an open-source, free editor, available for all operating systems.
+Gedit je otvorenog koda, besplatni uređivač, dostupan za sve operativne sisteme.
 
-[Skinite ga ovde](https://wiki.gnome.org/Apps/Gedit#Download)
+[Preuzmite ovde](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
