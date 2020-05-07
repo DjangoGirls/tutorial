@@ -1,4 +1,4 @@
-Postoji puno različitih editora i izbor se uglavnom svodi na lične preference. Većina Python programera koriste veoma kompleksne IDE (Integrated Development Environments), poput PyCharm-a. Početniku su, međutim, manje podesni. Naše preporuke su jednako moćne, ali znatno jednostavnije.
+Postoji puno različitih editora i izbor se uglavnom svodi na lične preference. Većina Pajton programera koriste kompleksne ali veoma snazne IDE (Integrisana razvojna okruženja), poput PyCharm-a. Početniku su, međutim, manje podesni. Naše preporuke su jednako moćne, ali znatno jednostavnije.
 
 Naše sugestije slede u nastavku, ali slobodno možete da pitate svog instruktora za njegove preporuke - jer bi tako bilo dosta lakše da dobijete njegovu pomoć.
 
