@@ -2,7 +2,7 @@
 
 # توسيع التطبيق الخاص بك
 
-We've already completed all the different steps necessary for the creation of our website: we know how to write a model, URL, view and template. We also know how to make our website pretty.
+لقد أكملنا بالفعل جميع الخطوات المختلفة اللازمة لإنشاء موقعنا على الويب: 
 
 Time to practice!
 
