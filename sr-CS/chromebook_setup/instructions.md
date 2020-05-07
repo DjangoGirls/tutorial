@@ -8,7 +8,7 @@ Cloud IDE je alatka koja vam omogućava uređivanje kodova i pristup računaru u
 
 1. Idite na [PaizaCloud Cloud IDE](https://paiza.cloud/)
 2. Napravite Vaš nalog
-3. Click *New Server* and choose the Django app
+3. Kliknite na *New Server* i izaberite Django aplikaciju
 4. Kliknite na dugme sa nazivom "Terminal"(sa leve strane prozora)
 
 Sada bi trebalo da vidite interfejs sa trakom sa opcijama sa leve strane. Kliknite "Terminal" dugme kako biste otvorili terminal sa komandama:
