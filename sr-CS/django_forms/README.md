@@ -44,7 +44,7 @@ Dakle, još jednom ćemo kreirati link do stranice, URL, pregled i obrazac.
 
 ## Link do stranice sa formom
 
-It's time to open `blog/templates/blog/base.html` in the code editor. In the `div` named `page-header`, we will add a link:
+Vreme je da otvorite ` blog/templates/blog/base.html` u uređivaču koda. U ` div ` nazvanom ` page-header `, dodaćemo vezu:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -281,7 +281,7 @@ Django se pobrinuo da potvrdi da su sva polja u našoj formi ispravna. Zar to ni
 
 ## Uređivanje forme
 
-Now we know how to add a new post. Ali, šta ako želimo da izmenimo postojeću? To je nešto što je veoma slično onome što smo upravo uradili. Hajde da kreiramo brzo neke bitne stvari. (Ukoliko Vam nešto nije jasno, trebalo bi da pitate Vašeg instruktora ili da pogledate prethodna poglavlja, budući da smo već pokrili sve ove korake)
+Sada znamo kako dodati novu objavu. Ali, šta ako želimo da izmenimo postojeću? To je nešto što je veoma slično onome što smo upravo uradili. Hajde da kreiramo brzo neke bitne stvari. (Ukoliko Vam nešto nije jasno, trebalo bi da pitate Vašeg instruktora ili da pogledate prethodna poglavlja, budući da smo već pokrili sve ove korake)
 
 Otvorite `blog/templates/blog/post_detail.html` u editoru i dodajte liniju
 
@@ -342,7 +342,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Ovo izgleda skoro identično kao naš `post_new` pregled, zar ne? Ne baš u potpunosti. For one, we pass an extra `pk` parameter from `urls`. Sledeće, imamo `Post` model koji želimo da izmenimo pomoću `get_object_or_404(Post, pk=pk)`, a zatim kada kreiramo formu, prosleđujemo post kao `instancu`, kada sačuvamo formu.
+Ovo izgleda skoro identično kao naš `post_new` pregled, zar ne? Ne baš u potpunosti. Za jedan prenosimo dodatni ` pk ` parametar iz ` urls ` Sledeće, imamo `Post` model koji želimo da izmenimo pomoću `get_object_or_404(Post, pk=pk)`, a zatim kada kreiramo formu, prosleđujemo post kao `instancu`, kada sačuvamo formu.
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -370,7 +370,7 @@ Slobodno izmenite naziv ili tekst i sačuvajte izmene!
 
 Čestitamo! Vaša aplikacija postaje sve kompletnija!
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.2/topics/forms/
+Ako su vam potrebne dodatne informacije o Django obrascima, pročitajte dokumentaciju: https://docs.djangoproject.com/en/2.2/topics/forms/
 
 ## Sigurnost
 
