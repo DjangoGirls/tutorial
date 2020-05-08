@@ -862,7 +862,7 @@ hi()
 
 Okay, ¡nuestra primera función está lista!
 
-Tú puedes preguntar por qué hemos escrito el nombre de la función en la parte inferior de el archivo. Esto es porque Python lee el archivo y lo ejecuta de arriba a bajo. Así en orden para usar nuestra función, tenemos que re-escribirlo en la parte inferior.
+Tú puedes preguntar por qué hemos escrito el nombre de la función en la parte inferior de el archivo. Cuando escribimos `def hi():` y las líneas indentadas que siguen, estamos escribiendo instrucciones que la función `hi()` debe hacer. Python leerá y recordará estas instrucciones, pero no ejecutará la función todavía. Para decirle a Python que queremos ejecutar la función, tenemos que llamar a la función con `hi()`. Python lee el archivo y lo ejecuta desde arriba hacia abajo, así que tenemos que definir la función en el archivo antes de llamarla.
 
 Ejecuta ésto ahora y ve qué sucede:
 

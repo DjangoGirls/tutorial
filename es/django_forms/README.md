@@ -281,7 +281,7 @@ Django se encarga de validar que todos los campos en el formulario estén correc
 
 ## Editar formulario
 
-Ahora sabemos cómo agregar un nuevo formulario. Pero, ¿qué pasa si queremos editar uno existente? Es muy similar a lo que acabamos de hacer. Creemos rápidamente algunas cosas importantes. (si no entiendes algo, pregúntale a tu tutora o tutor, o revisa lo capítulos anteriores, son temas que ya hemos cubierto.)
+Ahora sabemos cómo agregar un nuevo post. Pero, ¿qué pasa si queremos editar uno existente? Es muy similar a lo que acabamos de hacer. Creemos rápidamente algunas cosas importantes. (si no entiendes algo, pregúntale a tu tutora o tutor, o revisa lo capítulos anteriores, son temas que ya hemos cubierto.)
 
 Abre `blog/templates/blog/post_detail.html` en el editor de código y añade la línea
 

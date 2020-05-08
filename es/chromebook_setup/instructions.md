@@ -9,7 +9,7 @@ Nube de IDE es una herramienta que te ofrece un editor de código y el acceso po
 1. Ve a [PaizaCloud Cloud IDE](https://paiza.cloud/)
 2. Crea una cuenta
 3. Haga clic en *Nuevo Servidor* y elija la aplicación Django
-4. Haz clic en el botón Terminal (en el lado izquierdo de la ventana)
+4. Haga clic en el botón Terminal (al lado izquierdo de la ventana)
 
 Ahora deberías ver una interfaz con una barra y botones en la izquierda. Haz click en al botón "Terminal" para abrir la ventana de la terminal con un símbolo de sistema como este:
 
