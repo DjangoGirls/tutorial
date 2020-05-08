@@ -61,8 +61,8 @@ Dobra ideja je da koristite `git status` komandu pre komande `git add` ili kada 
     
     No commits yet
     
-    Untracked files:
-      (use "git add <file>..." to include in what will be committed)
+    Datoteke bez praćenja:
+     (koristite „git add <file> ...“ da biste uključili šta će biti objavljeno)
     
             .gitignore
             blog/
@@ -70,7 +70,7 @@ Dobra ideja je da koristite `git status` komandu pre komande `git add` ili kada 
             mysite/
             requirements.txt
     
-    nothing added to commit but untracked files present (use "git add" to track)
+    ništa nije dodato za objavljivanje, ali prisutne su i datoteke bez praćenja (za praćenje koristite „git add“)
     
 
 I na kraju, možemo da sačuvamo izmene pomoću sledećih komandi:
@@ -196,7 +196,7 @@ Možete takođe da odete na stranicu "Files" (fajlovi) i da je pretražujete kor
 
 Vaš sajt bi trebalo da ide sada uživo i javno na internetu! Prođite kroz PythonAnywhere "Web" stranicu da nađete link koji možete da podelite s kim god želite :)
 
-> **Napomena** Ovo je priručnik za početnike i zbog toga smo tokom dopremanja ovog sajta primenili nekoliko prečica koje nisu baš idealne, gledano sa stanovišta sigurnosti. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) for some tips on securing your site.
+> **Napomena** Ovo je priručnik za početnike i zbog toga smo tokom dopremanja ovog sajta primenili nekoliko prečica koje nisu baš idealne, gledano sa stanovišta sigurnosti. Ako i kada odlučite da nadogradite na ovaj projekat ili započnete novi projekat, trebalo bi da pogledate [ Kontrolni spisak za postavljanje u Djangu ](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) za neke savete o obezbeđivanju web lokacije.
 
 ## Saveti za otklanjanje grešaka
 
@@ -205,7 +205,7 @@ Ukoliko vidite grešku tokom pokretanja skripte `pa_autoconfigure_django.py`, ev
 - Možda ste zaboravili da kreirate PythonAnywhere API token.
 - Možda ste pogrešili u GitHub URL-u
 - Ukoliko vidite poruku *"Could not find your settings.py"*, verovatno niste uspeli da dodate sve Vaše fajlove na Git i/ili ih niste postavili uspešno na GitHub. Pogledajte još jednom prethodni deo koji se odnosi na Git
-- If you previously signed up for a PythonAnywhere account and had an error with collectstatic, you probably have an older version of SQLite (eg 3.8.2) for your account. In that case, sign up for a new account and try the commands in the PythonAnywhere section above.
+- Ako ste se prethodno prijavili za PythonAnywhere nalog i imali ste grešku sa collectstatic, verovatno imate stariju verziju SQLite (npr. 3.8.2) za svoj nalog. U tom slučaju se prijavite za novi nalog i isprobajte naredbe iz gornjeg odeljka PythonAnywhere.
 
 Ako dobijate poruku o grešci kada pokušate da odete na sajt, prvo mesto na kom bi trebalo da potražite više informacija o otklanjanju greške je **evidencija o greškama** (eng. error log). Možete da pronađete link do te evidencije na PythonAnywhere ["Web" stranici](https://www.pythonanywhere.com/web_app_setup/). Pogledajte da li se tu nalaze bilo kakve poruke o greškama; one najnovije se nalaze na dnu.
 
