@@ -25,7 +25,7 @@ Terminal PaizaCloud Cloud ID jest gotowy na Twoje instrukcje. Możesz zmienić r
 Obecnie Cloud 9 wymaga rejestracji w AWS i wprowadzenia informacji o karcie kredytowej.
 
 1. Zainstaluj Cloud 9 ze [ sklepu internetowego Chrome](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Go to [c9.io](https://c9.io) and click *Get started with AWS Cloud9*
+2. Przejdź do [c9.io](https://c9.io) i kliknij *Zacznij z AWS Cloud9*
 3. Sign up for an AWS account (requires credit card information, but you can use it for free)
 4. In the AWS Dashboard, enter *Cloud9* in the search bar and click it
 5. In the Cloud 9 dashboard, click *Create environment*
