@@ -254,8 +254,6 @@ h1, h2, h3, h4 {
 .post h2 a, .post h2 a:visited {
     color: #000000;
 }
- 
-Context | Request Context
 ```
 
 Nous allons maintenant nous intéresser au code concernant les posts. Il va falloir remplacer le code le code suivant :
