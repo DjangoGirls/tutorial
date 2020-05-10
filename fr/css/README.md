@@ -47,7 +47,7 @@ Pour cela, nous allons créer un dossier appelé `static` à l'intérieur de not
     │   ├── static
     │   └── templates
     └── mysite
-    
+
 
 Django va rechercher automatiquement tous les dossiers dits "statiques" à l'intérieur de vos dossiers d'appli. Ensuite, il sera en mesure d'utiliser leur contenu sous forme de fichiers statiques.
 
@@ -60,9 +60,9 @@ Nous allons maintenant créer un fichier CSS afin de personnaliser votre page. C
          └─── static
               └─── css
                    └─── blog.css
-    
 
-Et c'est parti pour un peu de CSS ! Ouvrez le fichier `static/css/blog.css` dans votre éditeur de texte.
+
+Et c'est parti pour un peu de CSS ! Ouvrez le fichier `blog/static/css/blog.css` dans votre éditeur de texte.
 
 Nous n'irons pas trop loin dans la personnalisation et l'apprentissage du CSS ici. Il y a à la fin de cette page une recommandation pour un cours CSS gratuit si vous souhaitez en savoir plus.
 
@@ -254,8 +254,6 @@ h1, h2, h3, h4 {
 .post h2 a, .post h2 a:visited {
     color: #000000;
 }
- 
-Context | Request Context
 ```
 
 Nous allons maintenant nous intéresser au code concernant les posts. Il va falloir remplacer le code le code suivant :
