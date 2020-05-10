@@ -2,7 +2,7 @@
 > 
 > This section is based on a tutorial by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django estas skribita en Python. Ni bezonas Python por fari iu ajn en Django. Let's start by installing it! We want you to install the latest version of Python 3, so if you have any earlier version, you will need to upgrade it. If you already have version 3.4 or higher you should be fine.
+Django estas skribita en Python. Ni bezonas Python por fari iu ajn en Django. Let's start by installing it! We want you to install the latest version of Python 3, so if you have any earlier version, you will need to upgrade it. Se vi jam havas version 3.4 aŭ altan, ĝi devus estis bona.
 
 Please install normal Python as follows, even when you have Anaconda installed on your computer.
 
