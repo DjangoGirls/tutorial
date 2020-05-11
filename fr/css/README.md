@@ -47,7 +47,7 @@ Pour cela, nous allons créer un dossier appelé `static` à l'intérieur de not
     │   ├── static
     │   └── templates
     └── mysite
-    
+
 
 Django va rechercher automatiquement tous les dossiers dits "statiques" à l'intérieur de vos dossiers d'appli. Ensuite, il sera en mesure d'utiliser leur contenu sous forme de fichiers statiques.
 
@@ -60,7 +60,6 @@ Nous allons maintenant créer un fichier CSS afin de personnaliser votre page. C
          └─── static
               └─── css
                    └─── blog.css
-    
 
 Et c'est parti pour un peu de CSS ! Ouvrez le fichier `blog/static/css/blog.css` dans votre éditeur de texte.
 
