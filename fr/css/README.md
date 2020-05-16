@@ -61,7 +61,6 @@ Nous allons maintenant créer un fichier CSS afin de personnaliser votre page. C
               └─── css
                    └─── blog.css
 
-
 Et c'est parti pour un peu de CSS ! Ouvrez le fichier `blog/static/css/blog.css` dans votre éditeur de texte.
 
 Nous n'irons pas trop loin dans la personnalisation et l'apprentissage du CSS ici. Il y a à la fin de cette page une recommandation pour un cours CSS gratuit si vous souhaitez en savoir plus.
