@@ -1,10 +1,10 @@
-PythonAnywhere is a service for running Python code on servers "in the cloud". We'll use it for hosting our site, live and on the Internet.
+PythonAnywhere 是在服务器上运行Python代码的服务"云端"。 我们将使用 来托管我们的网站，直播和在互联网。
 
-We will be hosting the blog we're building on PythonAnywhere. Sign up for a "Beginner" account on PythonAnywhere (the free tier is fine, you don't need a credit card).
+我们将在 PythonAnywhere 上创建我们的博客。 注册在 PythonAnywhere 上的 "初学者" 帐户(免费等级很好，您不需要信用卡)。
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
-![The PythonAnywhere signup page showing button to create a free 'Beginner' account](../deploy/images/pythonanywhere_beginner_account_button.png)
+![PythonAnywhere 注册页面显示按钮创建一个免费的“初学者”帐户](../deploy/images/pythonanywhere_beginner_account_button.png)
 
 > **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about. Also, be sure to remember your password (add it to your password manager, if you use one).
 
