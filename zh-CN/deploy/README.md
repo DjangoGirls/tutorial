@@ -181,7 +181,7 @@ Git会追踪这个目录下所有文件和文件夹的更改，但是有一些�
 
 现在，如果你愿意，你还可以用`ls`查看你在PythonAnywhere的代码：
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
+{% filename %}PythonAnywhere 命令行{% endfilename %}
 
     (ola.pythonanywhere.com) $ ls
     blog  db.sqlite3  manage.py  mysite requirements.txt static
@@ -205,18 +205,18 @@ Git会追踪这个目录下所有文件和文件夹的更改，但是有一些�
 - 忘记创建PythonAnywhere的API token。
 - 弄错了GitHub的URL
 - 如果你看到一个错误说*"Could not find your settings.py"*，很可能是你向Git添加文件的时候漏掉一些，或者你没有成功推送到GitHub。 再查看一下前面的Git部分
-- If you previously signed up for a PythonAnywhere account and had an error with collectstatic, you probably have an older version of SQLite (eg 3.8.2) for your account. In that case, sign up for a new account and try the commands in the PythonAnywhere section above.
+- 如果你先前注册的 PythonAnywhere 帐户并且有一个错误，你可能有一个旧版本的 SQLite (eg 3)。 (2) 用于您的帐户。 在这种情况下，注册一个新帐户或者在上面的 PythonAnywhere 尝试命令行。
 
-If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere ["Web" page](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
+如果你在访问你的网站时候看到一个错误，首先要去 **error log** 中找一些调试信息。 你可以在 PythonAnywhere [Web 选项卡](https://www.pythonanywhere.com/web_app_setup/) 中发现它的链接。 检查那里是否有任何错误信息，底部是最新的信息。
 
-There are also some [general debugging tips on the PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
+有一些常见的调试小贴士在 [general debugging tips on the PythonAnywhere wiki](http://help.pythonanywhere.com/pages/DebuggingImportError) 里.
 
-And remember, your coach is here to help!
+记住，你的教练会在这里帮你！
 
 # 查看你的网站！
 
-The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server -- remember, the posts from your local test database were not sent to your live blog.
+你网站的默认页面说 “Welcome to Django”，如同你本地计算机上的一样。 试着添加 `/admin/`到URL的末尾，然后你会到达管理者的页面。 使用用户名和密码登录，您将看到您可以在服务器上添加新帖子——请记住， 您本地测试数据库中的帖子没有发送到您的直播博客。
 
-Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
+一旦您创建了几个帖子，您可以返回到您的本地设置(不是 PythonAnywhere)。 从这里开始，您应该进行本地设置以进行更改。 这是网页开发中常见的工作流——在本地进行更改 将这些更改推送到GitHub 并将您的更改拉到您的实时Web服务器。 这使得您可以在不打断您的现场网站的情况下工作和实验。 很厉害吧！
 
-Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet!
+给你自己一个*超大*的鼓励！ 服务器部署是web开发中最棘手的部分之一， 它通常要耗费人们几天时间才能搞定。 但你的网站已经上线，运转在真正的互联网上，就是这样！
