@@ -861,16 +861,16 @@ hi()
 
 Отлично, наша первая функция готова!
 
-Ты можешь задаться вопросом, почему мы написали имя функции в конце файла. When we write `def hi():` and the indented lines following, this is us writing instructions for what the `hi()` function should do. Python will read and remember these instructions, but won't run the function yet. To tell Python we want to run the function, we have to call the function with `hi()`. Python reads the file and executes it from top to bottom, so we have to define the function in the file before we call it.
+Ты можешь задаться вопросом, почему мы написали имя функции в конце файла. Когда мы пишем `def hi():` и далее строки с отступом, мы описываем инструкции, которые определяют, что должна выполнять функция `hi()`. Python прочитает и запомнит эти инструкции, но они не будут выполнены немедленно. Чтобы попросить Python выполнить эту функцию мы должны написать вызов этой функции: `hi()<0>. Python читает файл и исполняет его сверху вниз, поэтому мы описываем функцию в файле перед тем, как вызываем ее.</p>
 
-Давай запустим и посмотрим что произойдет:
+<p>Давай запустим и посмотрим что произойдет:</p>
 
-{% filename %}command-line{% endfilename %}
+<p>{% filename %}command-line{% endfilename %}</p>
 
-    $ python3 python_intro.py
-    Hi there!
-    How are you?
-    
+<pre><code>$ python3 python_intro.py
+Hi there!
+How are you?
+`</pre> 
 
 Примечание: если это не работало, не паникуй! Вывод поможет вам определить, почему:
 
