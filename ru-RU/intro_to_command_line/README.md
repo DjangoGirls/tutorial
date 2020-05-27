@@ -18,7 +18,7 @@
 
 Для того, чтобы начать экспериментировать, нам нужно сначала открыть интерфейс командной строки.
 
-{% включение "/intro_to_command_line/open_instructions.md" %}
+{% include "/intro_to_command_line/open_instructions.md" %}
 
 ## Командная строка
 
