@@ -19,13 +19,13 @@
 
 {% block content %}
     {% for post in posts %}
-        &lt;div class="post"&gt;
-            &lt;div class="date"&gt;
+        <div class="post">
+            <div class="date">
                 {{ post.published_date }}
-            &lt;/div&gt;
-            &lt;h2&gt;&lt;a href=""&gt;{{ post.title }}&lt;/a&gt;&lt;/h2&gt;
-            &lt;p&gt;{{ post.text|linebreaksbr }}&lt;/p&gt;
-        &lt;/div&gt;
+            </div>
+            <h2><a href="">{{ post.title }}</a></h2>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
     {% endfor %}
 {% endblock %}
 ```
@@ -148,15 +148,15 @@ def post_detail(request, pk):
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    &lt;div class="post"&gt;
+    <div class="post">
         {% if post.published_date %}
-            &lt;div class="date"&gt;
+            <div class="date">
                 {{ post.published_date }}
-            &lt;/div&gt;
+            </div>
         {% endif %}
-        &lt;h2&gt;{{ post.title }}&lt;/h2&gt;
-        &lt;p&gt;{{ post.text|linebreaksbr }}&lt;/p&gt;
-    &lt;/div&gt;
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
 {% endblock %}
 ```
 
