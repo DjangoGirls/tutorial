@@ -1,38 +1,42 @@
 # Что дальше?
 
-Поздравь себя! __Ты нереально крута__. Мы очень гордимся! <3
+Поздравь себя! **Ты нереально крута**. Мы очень гордимся! <3
 
 ### Что делать дальше?
 
 Сделай перерыв и расслабься. Ты только что закончила огромную работу.
 
-И не забудь подписаться на страничку Django Girls в [Facebook](http://facebook.com/djangogirls) и [Twitter](https://twitter.com/djangogirls), чтобы оставаться в курсе новостей.
+Подпишись на страничку Django Girls в [Facebook](http://facebook.com/djangogirls) и [Twitter](https://twitter.com/djangogirls), чтобы оставаться в курсе новостей.
 
 ### Можем ли мы посоветовать дополнительные ресурсы для обучения?
 
-Конечно! Сейчас доступно _огромное_ количество ресурсов для изучения всевозможных навыков программирования. Мы поможем подобрать тебе то, что будет полезно изучить на следующем этапе. Вот несколько бесплатных ресурсов (или ресурсов с большим количеством бесплатного контента):
+Да! Есть *много* онлайн-ресурсов для изучения всех видов языков программирования - это может быть довольно сложно определиться, куда идти дальше, но мы поможем разобраться с этим. Какими были ваши интересы, прежде чем вы пришли в Django Girls, и все, что вас заинтересовало, поработав с нашим учебником; вот некоторые бесплатные ресурсы (или ресурсы с большим количеством бесплатных компонентов) можно использовать для достижения ваших целей.
 
 #### Django
-- Другое наше руководство, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
-- [Django's official tutorial](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
-- [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
+
+- Еще одна наша книга, [Django Girls Учебник: расширения](https://tutorial-extensions.djangogirls.org/)
+- [Django официальный учебник](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
+- [Начало работы с Django видео уроки](http://www.gettingstartedwithdjango.com/)
 
 #### HTML, CSS и JavaScript
-- [Codecademy's web development course](https://www.codecademy.com/learn/paths/web-development)
+
+- [Курс веб-разработки на Codecademy](https://www.codecademy.com/learn/paths/web-development)
 - [freeCodeCamp](https://www.freecodecamp.org/)
 
 #### Python
-- [Codecademy's Python course](https://www.codecademy.com/learn/learn-python)
-- [Google's Python course](https://developers.google.com/edu/python/)
-- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – несколько первых упражнений бесплатно
-- [New Coder tutorials](http://newcoder.io/tutorials/) – многообразие практических примеров того, как ты можешь использовать Python
-- [edX](https://www.edx.org/course?search_query=python) – большинство курсов бесплатны, но если вам нужен сертификат, необходимо оплатить
-- [Coursera's Python specialization](https://www.coursera.org/specializations/python) – некоторые видеокурсы можно изучать бесплатно, также можешь получить сертификат Coursera после успешного прохождения  
-- [Python for Everybody](https://www.py4e.com/)
+
+- [Курс Python в Codecademy](https://www.codecademy.com/learn/learn-python)
+- [Python курс в Google](https://developers.google.com/edu/python/)
+- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) - начальные упражнения бесплатно
+- [Новый кодер учебники](http://newcoder.io/tutorials/) – это целый ряд практических примеров того, как вы могли бы использовать Python
+- [edX](https://www.edx.org/course?search_query=python) – вы можете просмотреть большинство курсов бесплатно, но если вы хотите сертификат или подтверждение квалификации высшего образования, то это будет стоить денег
+- [Python специализация в Coursera](https://www.coursera.org/specializations/python) – некоторые видео лекции могут просматриваться бесплатно и вы можете заработать сертификат Coursera, прослушивая эти курсы
+- [Python для всех](https://www.py4e.com/) - свободные и открытые версии Coursera Python для всех специализации
 
 #### Работа с данными
-- [Codecademy's data science course](https://www.codecademy.com/learn/paths/data-science)
-- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – большинство курсов бесплатны, но если вам нужен сертификат, необходимо оплатить
-- [Dataquest](https://www.dataquest.io/) первые 30 "миссий" бесплатно
 
-Нам уже не терпится узнать, что ты создашь следующим!
+- [Codecademy курс по data science ](https://www.codecademy.com/learn/paths/data-science)
+- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – вы можете просмотреть большинство курсов бесплатно, но если вы хотите сертификат или подтверждение квалификации высшего образования, то это будет стоить денег
+- [Dataquest](https://www.dataquest.io/) – первые 30 «миссий» бесплатно
+
+Ждем с нетерпением твой следующий проект!

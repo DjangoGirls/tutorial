@@ -1,19 +1,19 @@
-PythonAnywhere — это сервис по запуску кода на Python в облаке. Мы будем использовать его, чтобы разместить наш сайт «вживую» в интернете.
+PythonAnyway это сервис позволяющий запускать код написанный на языке Python на сервере в "облаке". Мы используем его для хостинга нашего веб-сайта в интернете.
 
-Создай аккаунт уровня "Beginner" на PythonAnywhere. Он бесплатный, так что кредитка не понадобится.
+Зарегистрируй на PythonAnywhere аккаунт как "Beginner" ("новичок") (бесплатной версии достаточно, кредитная карточка не понадобится).
 
-  * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
+* [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
-  ![Страница регистрации на PythonAnywhere с кнопкой создания бесплатного 'Beginner' аккаунта](../deploy/images/pythonanywhere_beginner_account_button.png)
+![На странице регистрации PythonAnywhere имеется кнопка для создания бесплатной учетной записи «Beginner»](../deploy/images/pythonanywhere_beginner_account_button.png)
 
-> **Примечание:** при выборе имени пользователя помни, что URL блога примет вид `yourusername.pythonanywhere.com`, так что остановись либо на своём нике, либо на имени, связанном с тематикой блога. Кроме того, убедись в том, что запомнила пароль (сохрани его в своём менеджере паролей, если им пользуешься).
+> **Примечание**: При выборе имени пользователя, помни, что URL блога примет вид `yourusername.pythonanywhere.com`, так что остановись либо на своём нике, либо на имени, связанном с тематикой блога. Кроме того, убедись, что запомнила свой пароль (добавь его в свой менеджер паролей, если пользуешься таковым).
 
-## Создание API токена для PythonAnywhere
+## Создание API ключа на PythonAnywhere
 
-Это нужно будет сделать только один раз. Когда ты зарегистрируешься на PythonAnywhere, откроется панель управления (dashboard). На ней в правом верхнем углу будет ссылка на страницу «Account»:
+Это то, что вам только нужно сделать один раз. Когда вы зарегистрировались на PythonAnywhere, вы переместитесь на dashboard. Найди ссылку расположенную вверху справа на свою страницу "Account":
 
-![Account link on the top right on the page](../deploy/images/pythonanywhere_account.png)
+![Ссылка на аккаунт расположена вверху справа на странице](../deploy/images/pythonanywhere_account.png)
 
-Там выбери вкладку «API token» и нажми кнопку, на которой написано «Create new API token» (создать новый API token).
+затем выберите вкладку с именем «API token» и нажмите кнопку с надписью "Create new API token".
 
-![The API token tab on the Account page](../deploy/images/pythonanywhere_create_api_token.png)
+![API token вкладка на странице Аккаунт](../deploy/images/pythonanywhere_create_api_token.png)
