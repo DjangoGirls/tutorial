@@ -155,11 +155,11 @@ def post_new(request):
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    &lt;h2&gt;New post&lt;/h2&gt;
-    &lt;form method="POST" class="post-form"&gt;{% csrf_token %}
+    <h2>New post</h2>
+    <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
-        &lt;button type="submit" class="save btn btn-default"&gt;Save&lt;/button&gt;
-    &lt;/form&gt;
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
 {% endblock %}
 ```
 
@@ -299,16 +299,16 @@ Django заботится о проверке всех полей в нашей 
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    &lt;div class="post"&gt;
+    <div class="post">
         {% if post.published_date %}
-            &lt;div class="date"&gt;
+            <div class="date">
                 {{ post.published_date }}
-            &lt;/div&gt;
+            </div>
         {% endif %}
-        &lt;a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"&gt;&lt;span class="glyphicon glyphicon-pencil"&gt;&lt;/span&gt;&lt;/a&gt;
-        &lt;h2&gt;{{ post.title }}&lt;/h2&gt;
-        &lt;p&gt;{{ post.text|linebreaksbr }}&lt;/p&gt;
-    &lt;/div&gt;
+        <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
 {% endblock %}
 ```
 
