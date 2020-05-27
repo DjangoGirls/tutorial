@@ -20,7 +20,7 @@
 {{ posts }}
 ```
 
-Попробуй это в шаблоне `blog/templates/blog/post_list.html`. Открой это в редакторе кода и замени все со второй `&lt;div&gt;`до третьего `&lt;/div&gt;` на `{{ posts }}`. Сохрани файл и обнови страницу, чтобы увидеть результат:
+Попробуй это в шаблоне `blog/templates/blog/post_list.html`. Открой это в редакторе кода и замени все со второй `<div>` до третьего `</div>` на `{{ posts }}`. Сохрани файл и обнови страницу, чтобы увидеть результат:
 
 ![Рисунок 13.1](images/step1.png)
 
@@ -51,16 +51,16 @@
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-&lt;div&gt;
-    &lt;h1&gt;&lt;a href="/"&gt;Django Girls Blog&lt;/a&gt;&lt;/h1&gt;
-&lt;/div&gt;
+<div>
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div>
 
 {% for post in posts %}
-    &lt;div&gt;
-        &lt;p&gt;published: {{ post.published_date }}&lt;/p&gt;
-        &lt;h2&gt;&lt;a href=""&gt;{{ post.title }}&lt;/a&gt;&lt;/h2&gt;
-        &lt;p&gt;{{ post.text|linebreaksbr }}&lt;/p&gt;
-    &lt;/div&gt;
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
 {% endfor %}
 ```
 
