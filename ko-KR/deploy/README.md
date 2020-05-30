@@ -194,16 +194,16 @@ PythonAnywhere에서는 위의 과정들이 모두 자동화되어 있습니다.
 
 ## 이제 세상에 공개되었습니다!
 
-Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want :)
+이제 귀하의 사이트는 internet상에 공개되었습니다. PythonAnywhere의 "Web" 페이지를 클릭해 링크를 받아오세요. 이 링크는 귀하가 원하는 모든 사람에게 공유될 수 있습니다. 
 
-> **Note** This is a beginners' tutorial, and in deploying this site we've taken a few shortcuts which aren't ideal from a security point of view. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) for some tips on securing your site.
+> **알림**이 안내서는 초보자를 위한 튜토리얼입니다. 쉬운 안내를 위해서 보안상 권장되지 않는 방법도 몇개 사용했습니다. 이 프로젝트를 기반으로 하거나 혹은 아예 새로운 프로젝트를 실행하려면, 사이트 보안을 위해 [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/)를 살펴보세요.
 
-## Debugging tips
+## 디버깅 팁
 
-If you see an error while running the `pa_autoconfigure_django.py` script, here are a few common causes:
+만일 `pa_autoconfigure_django.py` 스크립트를 실행하다가 에러가 발생한다면, 아래에 제시된 자주 나타나는 문제 원인들을 참고해 보세요. 
 
-- Forgetting to create your PythonAnywhere API token.
-- Making a mistake in your GitHub URL
+- PythonAnywhere의 API 토큰 생성을 잊어버림
+- Github URL을 잘못 입력함
 - If you see an error saying *"Could not find your settings.py"*, it's probably because you didn't manage to add all your files to Git, and/or you didn't push them up to GitHub successfully. Have another look at the Git section above
 - If you previously signed up for a PythonAnywhere account and had an error with collectstatic, you probably have an older version of SQLite (eg 3.8.2) for your account. In that case, sign up for a new account and try the commands in the PythonAnywhere section above.
 
