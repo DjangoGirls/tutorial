@@ -204,18 +204,18 @@ PythonAnywhere에서는 위의 과정들이 모두 자동화되어 있습니다.
 
 - PythonAnywhere의 API 토큰 생성을 잊어버림
 - Github URL을 잘못 입력함
-- If you see an error saying *"Could not find your settings.py"*, it's probably because you didn't manage to add all your files to Git, and/or you didn't push them up to GitHub successfully. Have another look at the Git section above
-- If you previously signed up for a PythonAnywhere account and had an error with collectstatic, you probably have an older version of SQLite (eg 3.8.2) for your account. In that case, sign up for a new account and try the commands in the PythonAnywhere section above.
+- 만약 *"Could not find your settings.py"* 라는 오류가 보인다면, Git에 업로드할때 파일을 빼먹었던지 Github에 push가 제대로 되지 않은 것입니다. 위의 Git 부분을 한번 더 살펴보세요. 
+- 과거에 이미 PythonAnywhere에 가입된 상태였는데 collectstatic 에러가 발생한다면, 해당 계정의 SQLite 버전(eg 3.8.2)이 오래되어서 그럴수도 있습니다. 이럴때는 새로운 계정을 생성하고 위에 나와있는 PythonAnywhere 부분 명령어를 다시 실행해 보세요. 
 
-If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere ["Web" page](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
+본인의 사이트에 접속할 때 오류가 보이면, 제일 먼저 **error log(오류 로그)**에서 디버깅 정보를 찾아보세요. PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/)에서 이 사이트로 가는 링크를 찾을 수 있습니다. 혹시 거기에 오류 메세지가 있는지 확인하세요. 가장 최근의 오류 메세지는 맨 하단에 있습니다. 
 
-There are also some [general debugging tips on the PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
+[PythonAnywhere help site에서 일반적인 디버깅 팁](http://help.pythonanywhere.com/pages/DebuggingImportError)을 확인할 수 있어요.
 
-And remember, your coach is here to help!
+그리고 기억하세요, 코치들이 여러분을 도와주려고 기다리고 있습니다. 
 
-# Check out your site!
+# 사이트 확인하기!
 
-The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server -- remember, the posts from your local test database were not sent to your live blog.
+여러분 사이트의 기본 페이지(default page)가 로컬과 같이 "It worked!"라는 메시지를 보여줘야 합니다. URL 뒤에 `/admin/`를 붙여서 다시 접속해 보세요. 이제 관리자 사이트를 볼 수 있어요. Log in with the username and password, and you'll see you can add new Posts on the server -- remember, the posts from your local test database were not sent to your live blog.
 
 Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
 
