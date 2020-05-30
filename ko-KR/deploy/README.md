@@ -125,27 +125,27 @@ Github에 push를 하면, Github 유저네임과 비밀번호를 입력하라고
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 
-Your code is now on GitHub. Go and check it out! [Django](https://github.com/django/django), [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial)뿐만 아니라 수많은 훌륭한 오픈소스 소프트웨어 프로젝트들이 GitHub에서 코드를 호스팅하고 있어요. 방금 여러분이 한 것처럼 말이죠. :) :)
+이제 코드가 Github에 업로드 되었습니다. Go and check it out! [Django](https://github.com/django/django), [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial)뿐만 아니라 수많은 훌륭한 오픈소스 소프트웨어 프로젝트들이 GitHub에서 코드를 호스팅하고 있어요. 방금 여러분이 한 것처럼 말이죠. :) :)
 
-# Setting up our blog on PythonAnywhere
+# PythonAnywhere에서 블로그 설정하기
 
-## Sign up for a PythonAnywhere account
+## PythonAnywhere에 가서 회원가입을 하세요. 
 
-> **Note** You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
+> **참고** 여러분은 아마 앞부분에서 PythonAnywhere 계정을 생성했을겁니다. 이미 PythonAnywhere 계정이 있으면, 이 부분을 다시 할 필요가 없어요.
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-## Configuring our site on PythonAnywhere
+## PythonAnywhere에 우리의 사이트 등록하기
 
-Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer.
+로고를 클릭해서 메인의 [PythonAnywhere Dashboard](https://www.pythonanywhere.com/)로 돌아간다음, "Bash" 콘솔 시작하기 옵션을 선택합니다 - 이건 PythonAnywhere 버전의 터미널 창이예요. 내컴퓨터에 있는것과 마찬가지입니다. 
 
 ![The 'New Console' section on the PythonAnywhere web interface, with a button for 'bash'](images/pythonanywhere_bash_console.png)
 
-> **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
+> **알림**PythonAnywhere는 리눅스를 기반으로 합니다. 만약 Windows를 사용중이시라면 내컴퓨터의 커맨드라인과 약간 모양이 다를수도 있습니다.
 
-Deploying a web app on PythonAnywhere involves pulling down your code from GitHub, and then configuring PythonAnywhere to recognise it and start serving it as a web application. There are manual ways of doing it, but PythonAnywhere provides a helper tool that will do it all for you. Let's install it first:
+PythonAnywhere에 웹앱을 배포하는 과정은 Github에서 코드를 받아온 다음, PythonAnywhere이 이 app을 알아보도록 등록해주고, 웹앱 서비스를 시작하는 것입니다. 이런 과정을 직접 하나하나 할 수도 있습니다. 하지만 PythonAnywhere은 우리에게 이 과정을 대신 해주는 도움을 제공합니다. 이제 설치부터 해봅시다. 
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ pip3.6 install --user pythonanywhere
     
