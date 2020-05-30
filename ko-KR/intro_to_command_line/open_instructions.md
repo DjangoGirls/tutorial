@@ -1,9 +1,9 @@
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-Depending on your version of Windows and your keyboard, one of the following should open a command window (you may have to experiment a bit, but you don't have to try all of these suggestions):
+사용하고있는 Windows 버전에 따라서, 아래 명령어 중에 하나를 치면 명령 프롬프트가 실행될 것입니다 (실험해보고 싶을수도 있겠지만, 그렇다고 다 쳐볼 필요는 없습니다.)
 
-- Go to the Start menu or screen, and enter "Command Prompt" in the search field.
-- Go to Start menu → Windows System → Command Prompt.
+- 화면의 시작 메뉴를 누르고 검색창에 " 명령 프롬프트"를 입력하세요. 
+- 시작 메뉴 --> 시스템 설정 --> 명령 프롬프트 
 - Go to Start menu → All Programs → Accessories → Command Prompt.
 - Go to the Start screen, hover your mouse in the lower-left corner of the screen, and click the down arrow that appears (on a touch screen, instead flick up from the bottom of the screen). The Apps page should open. Click on Command Prompt in the Windows System section.
 - Hold the special Windows key on your keyboard and press the "X" key. Choose "Command Prompt" from the pop-up menu.
