@@ -190,9 +190,9 @@ PythonAnywhere에서는 위의 과정들이 모두 자동화되어 있습니다.
     tests.py  views.py
     
 
-You can also go to the "Files" page and navigate around using PythonAnywhere's built-in file browser. (From the Console page, you can get to other PythonAnywhere pages from the menu button in the upper right corner. Once you're on one of the pages, there are links to the other ones near the top.)
+이제 "Files" 페이지로 이동해서 PythonAnywhre의 내장 브라우저를 사용해 파일들을 둘러볼수도 있습니다. (콘솔 페이지에서 오른쪽 상단의 메뉴 버튼을 통해 PythonAnywhere의 다른 페이지로 이동할수도 있습니다. ) 일단 어떤 페이지에 접속하면, 상단에 다른 페이지로 이동할 수 있는 링크가 있습니다. 
 
-## You are now live!
+## 이제 세상에 공개되었습니다!
 
 Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want :)
 
