@@ -150,23 +150,23 @@ PythonAnywhere에 웹앱을 배포하는 과정은 Github에서 코드를 받아
     $ pip3.6 install --user pythonanywhere
     
 
-That should print out some things like `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
+이 명령을 실행하면 `Collecting pythonanywhere`같은 글씨가 나와야 합니다. 그리고 마지막에는 `Successfully installed (...) pythonanywhere-(...)`라는 문장과 함께 설치가 완료됩니다. 
 
-Now we run the helper to automatically configure our app from GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
+이제 helper를 실행하여 Github에 있는 app을 자동으로 등록하겠습니다. PythonAnywhere 콘솔에 다음과 같이 입력하세요.(`<your-github-username>`자리에 잊지말고 Github username을 입력해 주세요, URL이 Github의 clone url과 일치되도록 말입니다.)
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
-    $ pa_autoconfigure_django.py --python=3.6 https://github.com/<your-github-username>/my-first-blog.git
+    $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
     
 
-As you watch that running, you'll be able to see what it's doing:
+이 실행 과정을 지켜보면, 어떤 일이 일어나는지 보일겁니다. 
 
-- Downloading your code from GitHub
-- Creating a virtualenv on PythonAnywhere, just like the one on your own computer
-- Updating your settings file with some deployment settings
-- Setting up a database on PythonAnywhere using the `manage.py migrate` command
-- Setting up your static files (we'll learn about these later)
-- And configuring PythonAnywhere to serve your web app via its API
+- Github에서 코드를 다운로드합니다
+- 내컴퓨터에서 하는것과 마찬가지로, PythonAnywhere에 가상환경을 생성합니다. 
+- settings 파일을 배포 관련 설정과 함께 업데이트 합니다. 
+- `manage.py migrate` 명령어를 사용해서 PythonAnywhere에 데이터베이스를 설정합니다
+- 정적 파일을 세팅합니다(이에 대해서는 나중에 배웁니다)
+- PythonAnywhere를 등록해서 API를 통해 웹앱을 서빙합니다. 
 
 On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider.
 
