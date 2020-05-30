@@ -90,17 +90,17 @@ Git은 이 디렉토리에 모든 파일들과 폴더들의 변경점을 추적�
 
 [GitHub.com](https://www.github.com)에 가서 무료 사용자 계정으로 회원가입을 하세요. (만약 워크샵 준비과정에서 하셨다면 훌륭하십니다!) 비밀번호 관리를 꼭 해주세요 (만약 사용하신다면 비밀번호 관리자에 추가해 주세요). 
 
-그 다음 새 저장소(new repository)를 "my-first-blog"라는 이름으로 생성하세요. Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+그 다음 새 저장소(new repository)를 "my-first-blog"라는 이름으로 생성하세요. 'initialize with a README' 와 '.gitignore' 옵션은 체크하지 말고 빈칸으로 놔두세요. (이미 직접 만들어 봤습니다) Liscense 부분도 None으로 놔두세요. 
 
 ![](images/new_github_repo.png)
 
-> **Note** The name `my-first-blog` is important – you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. It's probably easier to stick with the name `my-first-blog`.
+> 꼭 이름을 my-first-name으로 지정해 주세요. 나중에야 얼마든지 다른 이름으로 바꿀수 있습니다만, 이 안내문에서는 이 제목이 앞으로 많이 등장할겁니다. 만약 다른 이름이라면, (지시를) 하나씩 따라할때마다 이름을 매번 바꿔줘야 하잖아요. 가급적이면 `my-first-blog`라는 저장소 이름을 그대로 사용하는게 편할거에요.
 
-On the next screen, you'll be shown your repo's clone URL, which you will use in some of the commands that follow:
+다음 화면에서 이 레포지토리를 클론(clone)할때 쓸 url이 보일텐데요, 이 뒤에 나오는 명령어에서 사용될 예정입니다. 
 
 ![](images/github_get_repo_url_screenshot.png)
 
-Now we need to hook up the Git repository on your computer to the one up on GitHub.
+이제 내 컴퓨터의 Git 저장소를 GitHub에 있는 저장소로 연결해 보겠습니다. 
 
 Type the following into your console (replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets -- the URL should match the clone URL you just saw):
 
