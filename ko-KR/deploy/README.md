@@ -139,7 +139,7 @@ Github에 push를 하면, Github 유저네임과 비밀번호를 입력하라고
 
 로고를 클릭해서 메인의 [PythonAnywhere Dashboard](https://www.pythonanywhere.com/)로 돌아간다음, "Bash" 콘솔 시작하기 옵션을 선택합니다 - 이건 PythonAnywhere 버전의 터미널 창이예요. 내컴퓨터에 있는것과 마찬가지입니다. 
 
-![The 'New Console' section on the PythonAnywhere web interface, with a button for 'bash'](images/pythonanywhere_bash_console.png)
+![PythonAnywhere 웹 인터페이스의 'New console'부분, 'bash'버튼과 함께](images/pythonanywhere_bash_console.png)
 
 > **알림**PythonAnywhere는 리눅스를 기반으로 합니다. 만약 Windows를 사용중이시라면 내컴퓨터의 커맨드라인과 약간 모양이 다를수도 있습니다.
 
@@ -181,13 +181,13 @@ PythonAnywhere에서는 위의 과정들이 모두 자동화되어 있습니다.
 
 지금부터는 `ls` 명령어를 사용해 PythonAnywhere에 있는 코드를 검토하는게 가능합니다.
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     (ola.pythonanywhere.com) $ ls
     blog  db.sqlite3  manage.py  mysite requirements.txt static
     (ola.pythonanywhere.com) $ ls blog/
-    __init__.py  __pycache__  admin.py  apps.py  migrations  models.py
-    tests.py  views.py
+    __init__.py  __pycache__  admin.py  apps.py  migrations  models.pytests.py  static
+    templates  views.py
     
 
 이제 "Files" 페이지로 이동해서 PythonAnywhre의 내장 브라우저를 사용해 파일들을 둘러볼수도 있습니다. (콘솔 페이지에서 오른쪽 상단의 메뉴 버튼을 통해 PythonAnywhere의 다른 페이지로 이동할수도 있습니다. ) 일단 어떤 페이지에 접속하면, 상단에 다른 페이지로 이동할 수 있는 링크가 있습니다. 
@@ -215,8 +215,8 @@ PythonAnywhere에서는 위의 과정들이 모두 자동화되어 있습니다.
 
 # 사이트 확인하기!
 
-여러분 사이트의 기본 페이지(default page)가 로컬과 같이 "It worked!"라는 메시지를 보여줘야 합니다. URL 뒤에 `/admin/`를 붙여서 다시 접속해 보세요. 이제 관리자 사이트를 볼 수 있어요. Log in with the username and password, and you'll see you can add new Posts on the server -- remember, the posts from your local test database were not sent to your live blog.
+여러분 사이트의 기본 페이지(default page)가 로컬과 같이 "It worked!"라는 메시지를 보여줘야 합니다. URL 뒤에 `/admin/`를 붙여서 다시 접속해 보세요. 이제 관리자 사이트를 볼 수 있어요. username과 비밀번호를 쳐서 로그인하면, 서버에 새로운 게시물들을 추가할 수 있습니다. - 기억하세요, 로컬에 있는 테스트 데이터베이스의 게시물들은 배포된 블로그로 옮겨지지 않습니다. 
 
-Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
+게시물 몇개를 생성했다면, 로컬의 설정으로 들어가세요. (PythonAnywhre에 있는거 말고요) 이제부터 로컬의 설정에 변경사항 몇개를 생성하겠습니다. 그리고 이것은 웹개발에서 흔한 작업 흐름입니다 - 로컬에서 변경사항을 만들고, Github에 푸시하고, 공개된 웹서버에 변경사항을 내려받으세요. 이렇게 하면 이미 공개된 사이트를 부수지 않고 여러가지 작업을 하고, 실험할 수 있습니다. 좀 멋지죠 ㅎㅎ?
 
-Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet!
+이제까지 고생한 자기 자신을 *격려*해주세요! 서버 배포는 웹 개발 단계 중 가장 까다로운 부분 중 하나이고, 어떨때는 제대로 돌아갈때까지 몇 일이 걸리기도 합니다. 하지만 당신은 진짜로 인터넷에 사이트 배포를 마쳤습니다!
