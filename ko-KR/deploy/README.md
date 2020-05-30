@@ -168,16 +168,16 @@ PythonAnywhere에 웹앱을 배포하는 과정은 Github에서 코드를 받아
 - 정적 파일을 세팅합니다(이에 대해서는 나중에 배웁니다)
 - PythonAnywhere를 등록해서 API를 통해 웹앱을 서빙합니다. 
 
-On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider.
+PythonAnywhere에서는 위의 과정들이 모두 자동화되어 있습니다. 하지만 다른 서버 제공자를 사용하면 이같은 과정들을 하나하나 직접 수행해야 합니다. 
 
-The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own computer, so it can have different posts and admin accounts. As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
+여기서 기억해야 할 중요한 점은, PythonAnywhere에 있는 데이터베이스가 내컴퓨터의 데이터베이스와는 아무런 연결고리가 없다는 점입니다. 그래서 각자의 게시물 현황과 관리자 계정이 다릅니다. 따라서, 내컴퓨터에서 했던것과 마찬가지로, `createsuperuser`명령어를 이용해 관리자 계정을 세팅해야 합니다. PythonAnywhere가 이미 자동으로 가상환경을 생성해줬기때문에, 우리는 실행만 하면 됩니다:
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     (ola.pythonanywhere.com) $ python manage.py createsuperuser
     
 
-Type in the details for your admin user. Best to use the same ones as you're using on your own computer to avoid any confusion, unless you want to make the password on PythonAnywhere more secure.
+관리자 계정에 필요한 세부 설정을 입력해 주세요. 특별히 PythonAnywhere 비밀번호의 보안을 강화할 생각이 아니라면, 헷갈림을 방지하기 위해서 내컴퓨터에서 사용하고있는 설정과 똑같이 해줍니다. 
 
 Now, if you like, you can also take a look at your code on PythonAnywhere using `ls`:
 
