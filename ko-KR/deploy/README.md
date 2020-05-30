@@ -102,7 +102,7 @@ Git은 이 디렉토리에 모든 파일들과 폴더들의 변경점을 추적�
 
 이제 내 컴퓨터의 Git 저장소를 GitHub에 있는 저장소로 연결해 보겠습니다. 
 
-Type the following into your console (replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets -- the URL should match the clone URL you just saw):
+이제 콘솔에 다음과 같이 입력하세요 (Github 계정을 만들때 입력한 username을 `<your-github-username>`꺾쇠(<>)를 떼고 입력해 주세요.. URL은 방금 보신 clone URL과 반드시 일치해야 합니다.):
 
 {% filename %}command-line{% endfilename %}
 
@@ -110,7 +110,7 @@ Type the following into your console (replace `<your-github-username>` with the 
     $ git push -u origin master
     
 
-When you push to GitHub, you'll be asked for your GitHub username and password (either right there in the command-line window or in a pop-up window), and after entering credentials you should see something like this:
+Github에 push를 하면, Github 유저네임과 비밀번호를 입력하라고 할 겁니다(지금 열려있는 터미널창 아니면 새로운 팝업창), 이 정보를 입력하고 나면 다음과 같은 장면이 보여야 합니다. 
 
 {% filename %}command-line{% endfilename %}
 
@@ -125,7 +125,7 @@ When you push to GitHub, you'll be asked for your GitHub username and password (
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 
-Your code is now on GitHub. Go and check it out! You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
+Your code is now on GitHub. Go and check it out! [Django](https://github.com/django/django), [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial)뿐만 아니라 수많은 훌륭한 오픈소스 소프트웨어 프로젝트들이 GitHub에서 코드를 호스팅하고 있어요. 방금 여러분이 한 것처럼 말이죠. :) :)
 
 # Setting up our blog on PythonAnywhere
 
