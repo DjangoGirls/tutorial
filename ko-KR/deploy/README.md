@@ -179,7 +179,7 @@ PythonAnywhere에서는 위의 과정들이 모두 자동화되어 있습니다.
 
 관리자 계정에 필요한 세부 설정을 입력해 주세요. 특별히 PythonAnywhere 비밀번호의 보안을 강화할 생각이 아니라면, 헷갈림을 방지하기 위해서 내컴퓨터에서 사용하고있는 설정과 똑같이 해줍니다. 
 
-Now, if you like, you can also take a look at your code on PythonAnywhere using `ls`:
+지금부터는 `ls` 명령어를 사용해 PythonAnywhere에 있는 코드를 검토하는게 가능합니다.
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
