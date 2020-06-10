@@ -14,7 +14,7 @@
        └── forms.py
     
 
-OK, let's open it in the code editor and type the following code:
+حسنًا، دعونا نفتحه في محرر التعليمات البرمجية (أي في البرنامج الذي تكتب فيه الأكواد) ونكتب التعليمات البرمجية التالية:
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -30,7 +30,7 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
+نحتاج أولا الى جلب و احضار نماذج جانغو (`from django import forms`) and our `Post` model (`from .models import Post`).
 
 `PostForm`,، كما كنت تظن ربما، هو اسم النموذج. نحن بحاجة إلى أن نقول لدجانغو ان هذا النموذج هو `ModelForm`(لذلك جانغو ستقوم ببعض السحر `forms.ModelForm` هو المسؤول عن ذلك.
 
@@ -85,7 +85,7 @@ It's time to open `blog/templates/blog/base.html` in the code editor. In the `di
 </html>
 ```
 
-After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
+بعد حفظ و تحديث الصفحة : http://127.0.0.1:8000 سوف ترى خطأ مألوف! `NoReverseMatch` هل هذا ما حدث معك/معكي؟ جيد !!
 
 ## عنوان الموقع URL
 
