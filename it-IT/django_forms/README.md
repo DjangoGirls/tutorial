@@ -44,7 +44,7 @@ Quindi creeremo di nuovo un link alla pagina, un URL, una view e un template.
 
 ## Link ad una pagina usando il form
 
-It's time to open `blog/templates/blog/base.html` in the code editor. In the `div` named `page-header`, we will add a link:
+Ora apriamo `blog/templates/blog/base.html` nell'editor del codice. Nel `div` denominato `page-header`, aggiungerà un link:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
