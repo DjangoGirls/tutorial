@@ -2,7 +2,7 @@
 
 # Estendi la tua applicazione
 
-We've already completed all the different steps necessary for the creation of our website: we know how to write a model, URL, view and template. We also know how to make our website pretty.
+Abbiamo già completato tutti i passaggi differenti necessari per la creazione del nostro sito web: sappiamo come scrivere un modello, un URL, una vista ed un modello. Sappiamo anche come rendere carino il nostro sito web.
 
 Ora di far pratica!
 
@@ -42,7 +42,7 @@ Cominceremo aggiungendo un link all'interno del file `blog/templates/blog/post_l
 
 La parte `post_detail` significa che Django si aspetta un URL in `blog/urls.py` con nome=post_detail
 
-E come si può parlare di `pk=post.pk`? `pk` is short for primary key, which is a unique identifier for each record in a database. Every Django model has a field which serves as its primary key, and whatever other name it has, it can also be referred to as "pk". Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a field named "id" holding a number that increases for each record, i.e. 1, 2, 3) and adds it as a field to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
+E come si può parlare di `pk=post.pk`? `pk` è breve per il tasto principale, che è un identificatore unico per ogni registro in un database. Ogni modello di Django ha un campo che serve come tasto principale, e qualsiasi altro nome ha, è anche referenziabile come "pk". Poiché non abbiamo specificato un tasto principale nel nostro modello `Post`, Django ne crea uno per noi (di default, un campo nominato "id" che mantiene un numero che aumenta per ogni registro, es. 1, 2, 3) e lo aggiunge come un campo per ognuno dei nostri post. Accediamo al tasto principale scrivendo `post.pk`, allo stesso modo in cui accediamo agli altri campi (`titolo`, `autore`, etc.) nel nostro oggetto del `Post`!
 
 Adesso quando andremo all'indirizzo: http://127.0.0.1:8000/ avremo un errore (come sapevamo, dal momento che non abbiamo una URL oppure una *view* per `post_detail`). Avrà questo aspetto:
 
@@ -84,7 +84,7 @@ Ti ricordi di quale è il prossimo passo? Ma certo: aggiungere una view!
 
 ## Aggiungi una view del post
 
-Questa volta alla nostra *view* viene data un altro parametro `pk`. La nostra *view* deve prenderlo, vero? Quindi definiremo la nostra funzione come `def post_detail(request, pk):`. Note that this parameter must have the exact same name as the one we specified in `urls` (`pk`). Also note that omitting this variable is incorrect and will result in an error!
+Questa volta alla nostra *view* viene data un altro parametro `pk`. La nostra *view* deve prenderlo, vero? Quindi definiremo la nostra funzione come `def post_detail(request, pk):`. Nota che questo parametro deve avere lo stesso esatto nome di quello specificato in `urls` (`pk`). Nota anche che omettere questa variabile è scorretto e risulterà in un errore!
 
 Ora, noi vogliamo ottenere un' unico post. Per farlo possiamo utilizzare le queryset così:
 
@@ -140,7 +140,7 @@ Oh no! Un altro errore! Ma sappiamo già come occuparcene, giusto? Dobbiamo aggi
 
 Creeremo un file in `blog/templates/blog` chiamato `post_detail.html`.
 
-Enter the following code:
+Inserisci il codice seguente:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
