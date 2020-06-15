@@ -90,7 +90,7 @@ urlpatterns = [
 ]
 ```
 
-Come vedi, stiamo assegnando una `view` nominata `post_list` alla URL `^$`. This URL pattern will match an empty string and the Django URL resolver will ignore the domain name (i.e., http://127.0.0.1:8000/) that prefixes the full URL path. Questo schema dirà a Django che `views.post_list` è il posto giusto dove andare se qualcuno entra nel tuo sito all'indirizzo 'http://127.0.0.1:8000/'.
+Come vedi, stiamo assegnando una `view` nominata `post_list` alla URL `^$`. Questo modello dell'URL corrisponderà ad una stringa vuota ed al risolutore URL di Django ignorerà il nome del dominio (es., http://127.0.0.1:8000/) che prefissa il percorso URL completo. Questo schema dirà a Django che `views.post_list` è il posto giusto dove andare se qualcuno entra nel tuo sito all'indirizzo 'http://127.0.0.1:8000/'.
 
 L'ultima parte `name='post_list'` è il nome dell'URL che verrà usata per identificare la view. Può avere lo stesso del nome della view, ma può anche essere qualcosa di completamente diverso. Useremo le URL rinominate successivamente nel progetto quindi è importante dare un nome a ciascuna URL nell'app. Inoltre dovremmo cercare di mantenere i nomi delle URL unici e facili da ricordare.
 
