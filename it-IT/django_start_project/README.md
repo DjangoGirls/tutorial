@@ -82,7 +82,7 @@ In settings.py, trova la riga che contiene `TIME_ZONE` e modificala per sceglier
 TIME_ZONE = 'Europe/Berlin'
 ```
 
-Un codice lingua è costituito dalla lingua, ad esempio`en` per l'inglese o `de` per il tedesco e il codice del paese, ad esempio`de` per la Germania o `ch` per la Svizzera. Se l'inglese non è la tua lingua nativa, puoi aggiungere questo per cambiare i pulsanti e le notifiche predefinite da Django per essere nella tua lingua. Quindi, il pulsante "Annulla" verrebbe tradotto nella lingua che hai definito qui. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/2.2/ref/settings/#language-code).
+Un codice lingua è costituito dalla lingua, ad esempio`en` per l'inglese o `de` per il tedesco e il codice del paese, ad esempio`de` per la Germania o `ch` per la Svizzera. Se l'inglese non è la tua lingua nativa, puoi aggiungere questo per cambiare i pulsanti e le notifiche predefinite da Django per essere nella tua lingua. Quindi, il pulsante "Annulla" verrebbe tradotto nella lingua che hai definito qui. [Django arriva con molte traduzioni preparate](https://docs.djangoproject.com/en/2.2/ref/settings/#language-code).
 
 Se vuoi una lingua diversa, cambia il codice lingua modificando la seguente riga:
 
