@@ -98,6 +98,6 @@ Se provi a guardare adesso http://127.0.0.1:8000/, troverai un qualche tipo di m
 
 ![Errore](images/error1.png)
 
-La tua console sta mostrando un errore, ma non preoccuparti – è davvero molto utile: ti dice che c'è **nessun attributo 'post_list'**. È il nome della *view* che Django prova a cercare e usare, ma non l'abbiamo ancora creata. In questa fase, anche il tuo `/admin/` non funzionerà. Non ti preoccupare, ci arriveremo. Se vedi un altro messaggio di errore, prova a riavviare il server web. To do that, in the console window that is running the web server, stop it by pressing Ctrl+C (the Control and C keys together). On Windows, you might have to press Ctrl+Break. Then you need to restart the web server by running a `python manage.py runserver` command.
+La tua console sta mostrando un errore, ma non preoccuparti – è davvero molto utile: ti dice che c'è **nessun attributo 'post_list'**. È il nome della *view* che Django prova a cercare e usare, ma non l'abbiamo ancora creata. In questa fase, anche il tuo `/admin/` non funzionerà. Non ti preoccupare, ci arriveremo. Se vedi un altro messaggio di errore, prova a riavviare il server web. Per farlo, nella finestra della console che esegue il server web, interrompilo premendo Ctrl+C (i tasti Control e C insieme). Su Windows, potresti dover premere Ctrl+Break. Poi devi riavviare il server web eseguendo un comando `python manage.py runserver`.
 
-> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/2.2/topics/http/urls/
+> Se vuoi sapere di più su URLconfs di Django, guarda alla documentazione ufficiale: https://docs.djangoproject.com/en/2.2/topics/http/urls/
