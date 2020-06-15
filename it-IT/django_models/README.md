@@ -98,7 +98,7 @@ Noterai che si è creata una nuova cartella `blog` e che ora contiene alcuni fil
     
     
 
-Dopo aver creato un'applicazione dobbiamo dire a Django che dovrebbe utilizzarla. Lo facciamo nel file `mysite/settings.py` -- aprilo nell'editor di codice. We need to find `INSTALLED_APPS` and add a line containing `'blog.apps.BlogConfig',` just above `]`. Il progetto dovrebbe assomigliare a questo:
+Dopo aver creato un'applicazione dobbiamo dire a Django che dovrebbe utilizzarla. Lo facciamo nel file `mysite/settings.py` -- aprilo nell'editor di codice. Dobbiamo scoprire `INSTALLED_APPS` ed aggiunge una riga contenente `'blog.apps.BlogConfig',` proprio sopra `]`. Il progetto dovrebbe assomigliare a questo:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -162,7 +162,7 @@ Ora definiamo le proprietà di cui stavamo parlando: `titolo`, `testo`, `data_cr
 - `models.DateTimeField` - questo per la data ed l'ora.
 - `models.ForeignKey` - questo è un link a un altro modello.
 
-Non spiegheremo ogni pezzo di codice perchè ci vorrebbre troppo tempo. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.2/ref/models/fields/#field-types).
+Non spiegheremo ogni pezzo di codice perchè ci vorrebbre troppo tempo. Dovresti dare un'occhiata alla documentazione di Django se vuoi sapere di più sui campi del Modello e come definire le cose oltre che da quelli descritti sopra (https://docs.djangoproject.com/en/2.2/ref/models/fields/#field-types).
 
 Che dire di `def publish(self):`? È esattamente il metodo `pubblicare` di cui stavamo parlando prima. `def` significa che questa è una funzione/metodo e `publish` è il nome del metodo. Puoi modificare il nome del metodo, se vuoi. La regola per la denominazione è usare lettere minuscole e caratteri di sottolineatura al posto degli spazi. Per esempio, un metodo che calcola il prezzo medio potrebbe essere chiamato `calculate_average_price`.
 
