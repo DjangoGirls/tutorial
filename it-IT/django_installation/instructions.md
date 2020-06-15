@@ -189,7 +189,7 @@ Nel tuo file `djangogirls/requirements.txt` aggiungi il testo seguente:
     Django~={{ book.django_version }}
     
 
-Now, run `pip install -r requirements.txt` to install Django.
+Ora, esegui `pip install -r requirements.txt` per installare Django.
 
 {% filename %}command-line{% endfilename %}
 
