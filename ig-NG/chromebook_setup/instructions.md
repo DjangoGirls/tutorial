@@ -18,11 +18,11 @@ Ugbu a ị ga - ahụ na obuputara ihe n’akuku ihu oru a, bọtịnụ n'aka e
     $
     
 
-The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+A na-akwadebe ọnụ ọrụ na PaizaCloud Cloud IDE maka ntuziaka gị. I nwere ike igbubi ma ọ bụ bulie elu ihu oru ahụ iji mee ka ọ bukwuo ibu.
 
 #### AWS Cloud9
 
-Currently Cloud 9 requires you to sign up with AWS and enter credit card information.
+Ugbu a Cloud 9 chọrọ ka ị debanye aha na AWS wee debanye ihe ogwugwa kaadị akwụmụgwọ.
 
 1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
 2. Go to [c9.io](https://c9.io) and click *Get started with AWS Cloud9*
