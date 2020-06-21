@@ -68,6 +68,6 @@ Mee akaụntụ nnabata [ GitHub ](https://github.com)
 
 Ihe nkuzi nke Django Girls nwere ngalaba ihe a na-akpo Deployment, nke bụ usoro iwere koodu na-eme ka ngwa weebụ ọhụrụ gị sie ike ma bufere ya na kọmputa a na-enweta n'ihu ọha (nke a na-akpọ server) ya mere ndị madu ọzọ nwere ike na hụ ọrụ gị.
 
-Nke a bụ ntakịrị ihe mgbe ị na-eme nkuzi ahụ na Chromebook kemgbe anyị na-eji kọmputa dị na Intanetị (dị ka, na-ekwu, laptọọpụ). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Nke a bụ ntakịrị ihe mgbe ị na-eme nkuzi ahụ na Chromebook kemgbe anyị na-eji kọmputa dị na Intanetị (dị ka, na-ekwu, laptọọpụ). Agbanyeghị, ọ ka bara uru, dịka anyị nwere ike iche maka Cloud 9 anyi dị ka ebe ọrụ anyị ka anyi we "na-aga n'ihu" na Python Anywhere dị ka ebe iji gosipụta ngwa ahịa anyị ka o na-abawanye.
 
-Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+N'ihi ya, debanye aha maka akaụntụ ọhụrụ Python Anywhere na [ www.pythonanywhere.com ](https://www.pythonanywhere.com).
