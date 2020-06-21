@@ -45,9 +45,9 @@ Ebe ala a bụ ọdụ oru gị. I nwere ike iji ọdụ oru a zipu ntuziaka na 
 
 ### Gburugburu Mebere
 
-Gburugburu ebe a na-ewu ewu (nke a na-akpọkwa virtualenv) dị ka igbe nkeonwe anyị nwere ike nyefee koodu kọmputa bara uru maka ọrụ anyị na-arụ. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Gburugburu ebe a na-ewu ewu (nke a na-akpọkwa virtualenv) dị ka igbe nkeonwe anyị nwere ike nyefee koodu kọmputa bara uru maka ọrụ anyị na-arụ. Anyị na-eji ha debe koodu obere ndị iche iche anyị chọrọ iji rụ ọrụ anyị dị iche iche ka ihe agagha agwakọ n'etiti oru ngo.
 
-Run:
+Ghazie 
 
 {% filename %}Cloud 9{% endfilename %}
 
