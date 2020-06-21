@@ -8,10 +8,10 @@ Cloud IDE bu ngwaọrụ eji enyere gi aka ideputa koodu ma banye na kọmputa n
 
 1. Gaa na [PaizaCloud Cloud IDE](https://paiza.cloud/)
 2. Debanye aha maka akaụntụ
-3. Click *New Server* and choose the Django app
-4. Click Terminal button(on the left side of the window)
+3. Pịa * Server ọhụụ * ma họrọ Django App
+4. Pịa bọtịnụ Terminal (n'akụkụ aka ekpe nke ihi oru ahụ)
 
-Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
+Ugbu a ị ga - ahụ na obuputara ihe n’akuku ihu oru a, bọtịnụ n'aka ekpe. Pịa bọtịnụ "Terminal" ka imepee ọnụ ọrụ na-eji otu a:
 
 {% filename %}Terminal{% endfilename %}
 
