@@ -2,7 +2,7 @@ I nwere ike [ hapụ ebe a ](http://tutorial.djangogirls.org/en/installation/#in
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud IDE bu ngwaọrụ eji enyere gi aka ideputa koodu ma banye na kọmputa na aru oru na ntanetị ebe inwere ike iwunye, dee ihe ma ghazie ngwanro a. Maka oge n'ime nkuzi nkuzi a, cloud IDE ga-arụ ọrụ dị ka * Igwe mpaghara gị *. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
+Cloud IDE bu ngwaọrụ eji enyere gi aka ideputa koodu ma banye na kọmputa na aru oru na ntanetị ebe inwere ike iwunye, dee ihe ma ghazie ngwanro a. Maka oge n'ime nkuzi nkuzi a, cloud IDE ga-arụ ọrụ dị ka * Igwe mpaghara gị *. l ka ga-anọ na-agba n'ime otu ọnụ oru dika ụmụ klas ibe gị nọ na OS X, Ubuntu, ma ọ bụ Windows, mana a ga-ejikọ ọnụ oru gị na kọmputa na-agba ebe ozo cloud IDE wubere gi. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
 
 #### PaizaCloud Cloud IDE
 
