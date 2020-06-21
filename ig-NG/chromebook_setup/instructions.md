@@ -58,16 +58,16 @@ Ghazie
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: `~=`).
+(mara kwa na edemede nke ikpeazụ anyị jiri otu tilde soro ihe nhata ama: ` ~ = `).
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+Mee akaụntụ nnabata [ GitHub ](https://github.com)
 
 ### PythonAnywhere
 
-The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+Ihe nkuzi nke Django Girls nwere ngalaba ihe a na-akpo Deployment, nke bụ usoro iwere koodu na-eme ka ngwa weebụ ọhụrụ gị sie ike ma bufere ya na kọmputa a na-enweta n'ihu ọha (nke a na-akpọ server) ya mere ndị madu ọzọ nwere ike na hụ ọrụ gị.
 
-This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Nke a bụ ntakịrị ihe mgbe ị na-eme nkuzi ahụ na Chromebook kemgbe anyị na-eji kọmputa dị na Intanetị (dị ka, na-ekwu, laptọọpụ). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
 Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
