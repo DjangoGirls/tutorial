@@ -30,9 +30,9 @@ Ugbu a Cloud 9 chọrọ ka ị debanye aha na AWS wee debanye ihe ogwugwa kaad�
 4. N'ime AWS, tinye * Cloud9 * na ihe ochicho wee pịa ya
 5. N’ime Cloud 9, pịa * Mepụta gburugburu *
 6. Kpọọ ya * django-girls *
-7. While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
-8. Click *Next step*
-9. Click *Create environment*
+7. Mgbe ị na-ahazi ntọala, họrọ * Mepụta atụ ọhụụ maka gburugburu (EC2) * maka "Udị gburugburu" yana * t2.micro * "Na ụdị atu" (ọ kwesịrị kwu "Ntọpụta-aka ruru eru maka ya."). Etu echekwara iru-ego di nma ma gi nwere ike idowe nrụrụ nke ọzọ.
+8. Pịa * Nzọụkwụ ọzọ *
+9. Pịa * Mepụta gburugburu *
 
 Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
 
