@@ -26,8 +26,8 @@ Ugbu a Cloud 9 chọrọ ka ị debanye aha na AWS wee debanye ihe ogwugwa kaad�
 
 1. Tinye Cloud 9 si na[ ụlọ ahịa weebụ Chrome](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
 2. Gaa na [ c9.io ](https://c9.io) wee pịa * Bido na AWS Cloud9 *
-3. Sign up for an AWS account (requires credit card information, but you can use it for free)
-4. In the AWS Dashboard, enter *Cloud9* in the search bar and click it
+3. Debanye aha maka akaụntụ AWS (o na eji ihe ogwugwa kaadị akwụmụgwọ, mana ị nwere ike were ya n'efu)
+4. N'ime AWS, tinye * Cloud9 * na ihe ochicho wee pịa ya
 5. In the Cloud 9 dashboard, click *Create environment*
 6. Name it *django-girls*
 7. While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
