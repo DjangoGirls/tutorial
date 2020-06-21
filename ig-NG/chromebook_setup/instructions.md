@@ -41,7 +41,7 @@ Ugbu a ị ga - ahụ ihi oru nwere ihe na akuku, nnukwu windo nwere ụfọdụ
     aha njirimara gị: ~ / ebe ọrụ $
     
 
-This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+Ebe ala a bụ ọdụ oru gị. I nwere ike iji ọdụ oru a zipu ntuziaka na kọmputa Cloud 9. I nwere ike ịgbanwe ihu oru ahụ iji mee ya t'ọ bụru tu ibu.
 
 ### Virtual Environment
 
