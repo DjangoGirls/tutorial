@@ -34,11 +34,11 @@ Ugbu a Cloud 9 chọrọ ka ị debanye aha na AWS wee debanye ihe ogwugwa kaad�
 8. Pịa * Nzọụkwụ ọzọ *
 9. Pịa * Mepụta gburugburu *
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+Ugbu a ị ga - ahụ ihi oru nwere ihe na akuku, nnukwu windo nwere ụfọdụ ihe ederede, na ihi oru obere na ala nke dị ka nke a:
 
 {% filename %}bash{% endfilename %}
 
-    yourusername:~/workspace $
+    aha njirimara gị: ~ / ebe ọrụ $
     
 
 This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
