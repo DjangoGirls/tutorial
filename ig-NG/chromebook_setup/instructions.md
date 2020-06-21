@@ -28,8 +28,8 @@ Ugbu a Cloud 9 chọrọ ka ị debanye aha na AWS wee debanye ihe ogwugwa kaad�
 2. Gaa na [ c9.io ](https://c9.io) wee pịa * Bido na AWS Cloud9 *
 3. Debanye aha maka akaụntụ AWS (o na eji ihe ogwugwa kaadị akwụmụgwọ, mana ị nwere ike were ya n'efu)
 4. N'ime AWS, tinye * Cloud9 * na ihe ochicho wee pịa ya
-5. In the Cloud 9 dashboard, click *Create environment*
-6. Name it *django-girls*
+5. N’ime Cloud 9, pịa * Mepụta gburugburu *
+6. Kpọọ ya * django-girls *
 7. While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
 8. Click *Next step*
 9. Click *Create environment*
