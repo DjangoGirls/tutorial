@@ -1,3 +1,3 @@
 # code editor
 
-Code editor is an application that allows you to save your code so you will be able to get back to it later. You can learn where to get one from the [Code editor chapter](./code_editor/README.md)
+Code editor bụ ngwa na-enye gị ohere ịchekwa koodu gị ka ị nwee ike ịbịaghachi na ya ma emesịa. I nwere ike imuta otu aga esi nweta otu site na ebe a kwuru okwu maka Code editor <0></p>
