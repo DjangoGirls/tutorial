@@ -1,7 +1,7 @@
-# Summary
+# Nchikota
 
-* [Introduction](README.md)
-* [Installation](installation/README.md) 
+* [Ndubata](README.md)
+* [Nwụnye](installation/README.md) 
   * [Command Line](installation/README.md#command-line)
   * [Python](installation/README.md#python)
   * [Code Editor](installation/README.md#code-editor)
@@ -10,8 +10,8 @@
   * [Git](installation/README.md#git)
   * [GitHub](installation/README.md#github)
   * [PythonAnywhere](installation/README.md#pythonanywhere)
-* [Installation (chromebook)](chromebook_setup/README.md)
-* [How the Internet works](how_the_internet_works/README.md)
+* [Nwụnye (chromebook)](chromebook_setup/README.md)
+* [Otu Intanetị si arụ ọrụ](how_the_internet_works/README.md)
 * [Introduction to command line](intro_to_command_line/README.md)
 * [Python installation](python_installation/README.md)
 * [Code editor](code_editor/README.md)
