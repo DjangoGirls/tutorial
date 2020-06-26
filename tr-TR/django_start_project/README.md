@@ -198,10 +198,10 @@ Tebrikler! ilk web siteni oluşturdun ve web sunucusu kullanarak çalıştırdı
 
 ![Kurulum basarili!](images/install_worked.png)
 
-Note that a command window can only run one thing at a time, and the command window you opened earlier is running the web server. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
+Bir komut penceresinin aynı anda yalnızca bir şey çalıştırabileceğini ve daha önce açtığınız komut penceresinin web sunucusunu çalıştırdığını unutmayın. Web sunucusu çalışıyor ve gelen ek istekleri beklediği sürece, terminal yeni metni kabul eder ancak yeni komutları yürütmez.
 
 > Web sunucuları nasıl çalışır **How the Internet works (İnternet Nasıl Çalışır)** bölümünde görmüştük.
 
-To type additional commands while the web server is running, open a new terminal window and activate your virtualenv -- to review instructions on how to open a second terminal window, see [Introduction to the command line](../intro_to_command_line/README.md). Web sunucusunu durdurmak için, çalıştığı pencereye geri dönün ve CTRL+C ye basın -Control ve C tuşlarına birlikte. (Windows'ta Ctrl+Break tuşları olabilir.).
+Web sunucusu çalışırken ek komutlar yazmak için yeni bir terminal penceresi açın ve sanal sanal ortamınızı etkinleştirin - ikinci bir terminal penceresinin nasıl açılacağına ilişkin talimatları gözden geçirmek için bkz. [ Komut satırına giriş ](../intro_to_command_line/README.md). Web sunucusunu durdurmak için, çalıştığı pencereye geri dönün ve CTRL+C ye basın -Control ve C tuşlarına birlikte. (Windows'ta Ctrl+Break tuşları olabilir.).
 
 Sonraki adım için hazır mısın? İçerikleri oluşturma zamanı!
