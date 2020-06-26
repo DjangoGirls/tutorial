@@ -82,7 +82,7 @@ Web sitemizin doğru bir saate sahip olması güzel olurdu. [Wikipedia'nın zama
 TIME_ZONE = 'Europe/Istanbul'
 ```
 
-Bir dil kodu, dil (ör. İngilizce için `en` veya Almanca için `de`) ve ülke kodundan (ör. Almanya için `de` veya İsviçre için `ch`) oluşmaktadır. Eğer İngilizce ana diliniz değilse, varsayılan butonları ve Django uyarılarının dilini kendi dilinize değiştirmek için bunu ekleyebilirsiniz. Böylece "İptal" butonu burada tanımladığınız dile çevrilmiş olacaktır. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/2.2/ref/settings/#language-code).
+Bir dil kodu, dil (ör. İngilizce için `en` veya Almanca için `de`) ve ülke kodundan (ör. Almanya için `de` veya İsviçre için `ch`) oluşmaktadır. Eğer İngilizce ana diliniz değilse, varsayılan butonları ve Django uyarılarının dilini kendi dilinize değiştirmek için bunu ekleyebilirsiniz. Böylece "İptal" butonu burada tanımladığınız dile çevrilmiş olacaktır. Django hazırlanmış çok sayıda çeviri ile gelmektedir.
 
 Farklı bir dil istiyorsanız, aşağıdaki satırı değiştirerek dil kodunu seçin:
 
@@ -180,14 +180,14 @@ Eğer Windows'taysanız ve `UnicodeDecodeError` hatası varsa, bu komutu kullan�
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Now you need to check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
+Şimdi yapmanız gereken, sitenizin çalışıp çalışmadığını kontrol etmek. Tarayıcınızı (Firefox, Chrome, Safari, Internet Explorer ya da ne kullanıyorsanız) açın ve şu adresi girin:
 
 {% filename %}tarayıcı{% endfilename %}
 
     http://127.0.0.1:8000/
     
 
-If you're using a Chromebook and Cloud9, instead click the URL in the pop-up window that should have appeared in the upper right corner of the command window where the web server is running. URL bunun gibi bir şeye benzeyecektir:
+Bir Chromebook ve Cloud9 kullanıyorsanız, bunun yerine açılır pencerede web sunucusunun çalıştığı komut penceresinin sağ üst köşesinde görünmesi gereken URL'ye tıklayın. URL bunun gibi bir şeye benzeyecektir:
 
 {% filename %}tarayıcı{% endfilename %}
 
