@@ -52,6 +52,6 @@ Zorg ervoor dat ten minste twee of drie posts (maar niet alle) een publicatiedat
 
 ![Django beheer](images/edit_post3.png)
 
-If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/2.2/ref/contrib/admin/
+Als je meer wil weten over de Django admin, neem dan eens een kijkje in Django's documentatie: https://docs.djangoproject.com/en/2.2/ref/contrib/admin
 
 Dit is een goed moment om jezelf te trakteren op een kopje koffie (of thee), of om even wat te eten om weer energie te krijgen. Je hebt net je eerste Django model gemaakt - je verdient een kleine pauze!
