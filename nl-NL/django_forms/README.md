@@ -138,16 +138,16 @@ Om een nieuw `Post` formulier te creëren moeten we `PostForm()` aanroepen en do
 
 ## Template
 
-We need to create a file `post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
+We moeten een bestand `post_edit.html` maken in de `blog/templates/blog`map en openen in de code editor. Om een formulier te kunnen maken hebben we verschillende dingen nodig:
 
-* We have to display the form. We can do that with (for example) {% raw %}`{{ form.as_p }}`{% endraw %}.
-* The line above needs to be wrapped with an HTML form tag: `<form method="POST">...</form>`.
-* We need a `Save` button. We do that with an HTML button: `<button type="submit">Save</button>`.
-* And finally, just after the opening `<form ...>` tag we need to add {% raw %}`{% csrf_token %}`{% endraw %}. This is very important, since it makes your forms secure! If you forget about this bit, Django will complain when you try to save the form:
+* We moeten het formulier weergeven. Dit kunnen we doen met (bijvoorbeeld) {% raw %}`{{ form.as_p }}`{% endraw %}.
+* De bovenstaande regel moet worden omringd door 2 HTML-formuliertags: `<form method="POST">...</form>`.
+* We hebben een `Opslaan` -knop nodig. Dat doen we met een HTML-knop: `<button type="submit">Opslaan</button>`.
+* En ten slotte, net na de opening `<form ...>`-tag moeten we {% raw %}`{% csrf_token %}`{% endraw %} toevoegen. Dat is heel belangrijk, want het maakt je formulieren veilig! Als je dit stuk vergeet, zal Django klagen wanneer je het formulier probeert te bewaren:
 
 ![CSFR Forbidden page](images/csrf2.png)
 
-OK, so let's see how the HTML in `post_edit.html` should look:
+Ok, dus laten we eens kijken hoe de HTML in `post_edit.html` eruit moet zien:
 
 {% filename %}blog/templates/blog/post_edit.html{% endfilename %}
 
@@ -163,17 +163,17 @@ OK, so let's see how the HTML in `post_edit.html` should look:
 {% endblock %}
 ```
 
-Time to refresh! Yay! Your form is displayed!
+Tijd om te vernieuwen! Hoera! Je formulier wordt weergegeven!
 
-![New form](images/new_form2.png)
+![Nieuw formulier](images/new_form2.png)
 
-But, wait a minute! When you type something in the `title` and `text` fields and try to save it, what will happen?
+Maar wacht eens even! Als je iets in de velden `title` en `text` typt en probeer op te slaan, wat gebeurt er dan?
 
-Nothing! We are once again on the same page and our text is gone… and no new post is added. So what went wrong?
+Niets! We zijn weer op dezelfde pagina en onze tekst is weggegaan… en er is geen nieuwe post toegevoegd. Dus wat ging er fout?
 
-The answer is: nothing. We need to do a little bit more work in our *view*.
+Het antwoord is: niets. We moeten nog wat meer doen in onze *view*.
 
-## Saving the form
+## Het formulier opslaan
 
 Open `blog/views.py` once again in the code editor. Currently all we have in the `post_new` view is the following:
 
