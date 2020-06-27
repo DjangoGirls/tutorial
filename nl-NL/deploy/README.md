@@ -48,7 +48,7 @@ Git houdt alle wijzigingen in alle bestanden en mappen in deze map bij, maar er 
 
 En sla het op als `.gitignore` in de "djangogirls" map.
 
-> **Opmerking** De punt aan het begin van de bestandsnaam is belangrijk! Als je tegen problemen aanloopt bij het creëren van het bestand (Macs vinden het niet leuk als je via de Finder een bestand dat begint met een punt aanmaakt, bijvoorbeeld), gebruik dan de "Opslaan als" functie in je editor; daar kan niks misgaan. En zorg ervoor dat je geen `.txt`, `.py`, of een andere extensie aan de bestandsnaam toevoegt -- het wordt alleen herkend door Git als de naam alléén `.gitignore` is. Linux and MacOS treat files with a name that starts with `.` (such as `.gitignore`) as hidden and the normal `ls` command won't show these files. Instead use `ls -a` to see the `.gitignore` file.
+> **Opmerking** De punt aan het begin van de bestandsnaam is belangrijk! Als je tegen problemen aanloopt bij het creëren van het bestand (Macs vinden het niet leuk als je via de Finder een bestand dat begint met een punt aanmaakt, bijvoorbeeld), gebruik dan de "Opslaan als" functie in je editor; daar kan niks misgaan. En zorg ervoor dat je geen `.txt`, `.py`, of een andere extensie aan de bestandsnaam toevoegt -- het wordt alleen herkend door Git als de naam alléén `.gitignore` is. Linux en MacOS behandelen bestanden met een naam die begint met `.` (zoals `.gitignore`) als verborgen en het standaard `ls`-commando laat deze bestanden niet zien. Gebruik in plaats daarvan `ls -a` om he `.gitignore` bestand te zien.
 > 
 > **Opmerking** Een van de besanden die je genoemd hebt in je `.gitignore` bestand is `db.sqlite3`. Dit bestand is je lokale database waar al je gebruikers en posts worden opgeslagen. We zullen de standaard web programmeer praktijk volgen, wat betekent dat we aparte databases voor je lokale site en je live website op PythonAnywhere zullen gebruiken. De database voor PythonAnywhere zou SQLite kunnen zijn, zoals je lokale omgeving, maar meestal gebruik je een die MySQL heet. Die kan met veel meer bezoekers overweg dan SQLite. Omdat we de SQLite database negeren voor de GitHub kopie, betekent het dat de superuser en alle posts die je aangemaakt hebt alleen maar lokaal (op je eigen laptop) beschikbaar zullen zijn, en dat je voor de live website nieuwe moet creëren. Zie je lokale database als een speeltuin waar je veel verschillende dingen kunt uitproberen, zonder dat je bang hoeft te zijn dat je al je echte posts perongeluk verwijdert van je blog.
 
@@ -196,7 +196,7 @@ Je kunt ook naar de "Files" pagina gaan en door je bestanden navigeren met behul
 
 Je site zou nu live moeten zijn op het openbare internet! Klik door naar de PythonAnywhere "Web" pagina om de link te verkrijgen. Je kunt die met iedereen delen die je wilt :)
 
-> **Opmerking** Dit is een tutorial voor beginners, en tijdens het deployen hebben we een aantal stappen genomen die vanuit een veiligheidsoogpunt niet ideaal zijn. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) for some tips on securing your site.
+> **Opmerking** Dit is een tutorial voor beginners, en tijdens het deployen hebben we een aantal stappen genomen die vanuit een veiligheidsoogpunt niet ideaal zijn. Als en wanneer je besluit om dit project voort te zetten, of met een nieuw project begint, is het handig om de [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) te bekijken voor wat tips om je site beter te beveiligen.
 
 ## Debugging tips
 
@@ -205,7 +205,7 @@ Als je een error ziet terwijl je het `pa_autoconfigure_django.py` script draait,
 - Vergeten om je PythonAnywhere API token aan te maken.
 - Een foutje in je GitHub URL
 - Als je een error ziet die meldt *"Could not find your settings.py"*, komt dat waarschijnlijk omdat het niet gelukt is om al je bestanden aan Git toe te voegen, en/of het is niet gelukt om ze naar GitHub te sturen. Kijk nog eens naar het Git hoofdstuk hierboven
-- If you previously signed up for a PythonAnywhere account and had an error with collectstatic, you probably have an older version of SQLite (eg 3.8.2) for your account. In that case, sign up for a new account and try the commands in the PythonAnywhere section above.
+- Als je je eerder aangemeld hebt voor een PythonAnywhere account en een fout had met collectstatic, heb je waarschijnlijk een oudere versie van SQLite (bijv. 3.8.2) voor uw account. Meld je in dat geval aan voor een nieuw account en probeer de commando's in de PythonAnywhere sectie hierboven.
 
 Als je een errormelding krijgt als je je site probeert te bezoeken is de eerste plek om te kijken voor wat debugging informatie is in de **error log**. Je vindt een link naar de logs op de PythongAnywhere ["Web" pagina](https://www.pythonanywhere.com/web_app_setup/). Kijk of er daar errormeldingen zijn; de meest recente staan onderaan.
 
