@@ -1,0 +1,23 @@
+{
+  "name": "tutorial",
+  "version": "1.0.0",
+  "description": "The Django Girls tutorial",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gitbook-plugin-codeblock-label": "*",
+    "gitbook-plugin-collapsible-menu": "*",
+    "gitbook-plugin-ga": "^2.0.0",
+    "gitbook-plugin-github": "2.0.0",
+    "gitbook-plugin-heading-anchors": "^1.0.3",
+    "gitbook-plugin-language-picker": "*",
+    "gitbook-plugin-richquotes": "0.0.9",
+    "gitbook-plugin-sectionx-ex": "*",
+    "gitbook-plugin-sidebar-ad": "*",
+    "honkit": "^3.4.0"
+  },
+  "scripts": {},
+  "keywords": [],
+  "author": "Django Girls",
+  "license": "CC-BY-SA-4.0"
+}
