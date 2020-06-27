@@ -25,16 +25,16 @@ De terminal op de PaizaCloud IDE is klaar voor je instructies. Je kunt het scher
 Op dit moment vereist Cloud 9 dat je je aanmeldt met AWS en creditcardinformatie invoert.
 
 1. Installeer Cloud 9 uit de [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Go to [c9.io](https://c9.io) and click *Get started with AWS Cloud9*
+2. Ga naar [c9.io](https://c9.io) en klik op * Get started with AWS Cloud9*
 3. Registreer voor een AWS-account (vereist creditcardgegevens, maar deze kun je gratis gebruiken)
 4. In het AWS Dashboard, typ *Cloud9* in de zoekbalk en klik erop
-5. In the Cloud 9 dashboard, click *Create environment*
+5. In het Cloud 9 overzicht, klik op * Create environment*
 6. Noem deze *django-girls*
-7. While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
-8. Click *Next step*
-9. Click *Create environment*
+7. Tijdens het aanpassen van de instellingen, selecteer je * Create a new instance for environment (EC2)* voor “Environment Type” en de *t2.micro* “Instance type” (Er zou “Free-tier eligible.”) moeten staan. De standaard kosten-besparing instelling is in orde en je kan de andere standaard instellingen behouden
+8. Klik op *Next step*
+9. Klik op * Create environment*
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+Je zou nu een scherm moeten zien met een zijbalk, een hoofdvenster met enkele tekstblokken erin, en een klein venster beneden dat er ongeveer zo uitziet:
 
 {% filename %}bash{% endfilename %}
 
@@ -47,7 +47,7 @@ Het onderste scherm is je terminal. Je kunt de terminal gebruiken om instructies
 
 Een virtuele omgeving (ook wel een virtualenv genoemd) is als een persoonlijke bak waarin we de computercode kunnen opslaan voor een project waaraan we werken. We gebruiken ze om de stukjes code van verschillende projecten apart te houden, zodat dingen uit verschillende projecten niet doorelkaar worden gehaald.
 
-Run:
+Uitvoeren:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -66,8 +66,8 @@ Maak een [GitHub](https://github.com)account aan.
 
 ### PythonAnywhere
 
-The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+De Django Girls Gids bevat een sectie over iets wat we Deployment noemen; dit is het proces om de code van je nieuwe webapplicatie over te zetten naar een publiek toegankelijke computer (een zogenaamde server) waar andere mensen je werk kunnen zien.
 
-This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Dat gedeelte is een tikkeltje vreemd als je de Gids door neemt op een Chromebook omdat we al gebruik maken van een computer op het Internet (in tegenstelling tot bijvoorbeeld op een laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
 Meld je daarom aan voor een nieuw Python Anywhere account op [www.pythonanywhere.com](https://www.pythonanywhere.com).
