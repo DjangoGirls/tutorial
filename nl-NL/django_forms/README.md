@@ -175,7 +175,7 @@ Het antwoord is: niets. We moeten nog wat meer doen in onze *view*.
 
 ## Het formulier opslaan
 
-Open `blog/views.py` once again in the code editor. Currently all we have in the `post_new` view is the following:
+Open `blog/views.py` opnieuw in de code editor. Momenteel is alles dat we in de `post_new` weergave hebben het volgende:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -185,9 +185,9 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-When we submit the form, we are brought back to the same view, but this time we have some more data in `request`, more specifically in `request.POST` (the naming has nothing to do with a blog "post"; it's to do with the fact that we're "posting" data). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? All the fields from the form are now in `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
+Wanneer we het formulier indienen, komen we terug tot hetzelfde standpunt. maar deze keer hebben we nog wat meer gegevens in `request `, meer specifiek in `request.POST` (de benaming heeft niets te maken met een blog "post"; het heeft te maken met het feit dat we gegevens "posten" . Weet je nog hoe in het HTML-bestand, onze `<form>`definitie, de variabele `method="POST"` stond? Alle velden in het formulier bevinden zich nu in `request.POST`. U moet `POST` niet naar iets anders hernoemen (de enige andere geldige waarde voor `method` is `GET`, maar we hebben geen tijd om uit te leggen wat het verschil is).
 
-So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. So we need to add a condition (we will use `if` for that):
+Dus in onze *view* hebben we twee afzonderlijke situaties om te behandelen: wanneer we de pagina voor het eerst openen en we een leeg formulier willen en tweede wanneer we teruggaan naar de *view* met alle formuliergegevens die we net hebben ingevoerd. We moeten dus een voorwaarde toevoegen (Daarvoor gebruiken we `if`):
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -198,7 +198,7 @@ else:
     form = PostForm()
 ```
 
-It's time to fill in the dots `[...]`. If `method` is `POST` then we want to construct the `PostForm` with data from the form, right? We will do that as follows:
+Het is tijd om de stippen `[...]` in te vullen. Als `methode` `POST` is, willen we de `PostForm` construeren met gegevens uit het formulier, toch? We zullen dat als volgt doen:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -206,9 +206,9 @@ It's time to fill in the dots `[...]`. If `method` is `POST` then we want to con
 form = PostForm(request.POST)
 ```
 
-The next thing is to check if the form is correct (all required fields are set and no incorrect values have been submitted). We do that with `form.is_valid()`.
+Het volgende onderdeel is controleren of het formulier juist is (alle verplichte velden zijn ingesteld en er zijn geen onjuiste waarden ingediend). We doen dat met `form.is_valid()`.
 
-We check if the form is valid and if so, we can save it!
+We controleren of het formulier geldig is en zo ja, dan kunnen we het opslaan!
 
 {% filename %}blog/views.py{% endfilename %}
 
