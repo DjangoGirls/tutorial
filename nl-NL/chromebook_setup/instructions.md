@@ -8,7 +8,7 @@ Cloud 9 is een hulpmiddel die je een code editor aanbiedt op een computer op het
 
 1. Ga naar de [PaizaCloud wolk IDE](https://paiza.cloud/)
 2. Meld je aan voor een account
-3. Click *New Server* and choose the Django app
+3. Klik op *New Server* en kies Django app
 4. Klik op Terminal knop (aan de linkerkant van het venster)
 
 Nu zou je een scherm met een zijbalk en knoppen aan de linkerkant moeten zien. Klik op de "Terminal" knop om een scherm met een terminal te openen, met de volgende prompt:
