@@ -97,7 +97,7 @@ Web sitemizin İnternet'te hâlâ çalıştığını görmek iyi olacak, değil 
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+(Köşeli parantez olmadan `<your-pythonanywhere-domain>` yerine gerçek PythonAnywhere alt etki alanınızı koymayı unutmayın.)
 
 * Son olarak, [Web sekmesi](https://www.pythonanywhere.com/web_app_setup/)ne gidip uygulamanızın **Yenile** butonuna basın. (Konsoldan diğer PythonAnywhere sayfalarına ulaşmak için, sağ üst köşedeki menü düğmesini kullanın.) Güncellemeniz https://isminiz.pythonanywhere.com adresinde yayınlanmalıdır - tarayıcıda kontrol edin! Eğer PythonAnywhere sitesindeki gönderilerin içeriği ile lokal sunucunuzda bulunan gönderilerin içeriği aynı değilse sorun değil. Lokal bilgisayarınızdaki veritabanı ile Python Anywhere'deki veritabanı, diğer dosyalarınız gibi eşitlenmiyor.
 
