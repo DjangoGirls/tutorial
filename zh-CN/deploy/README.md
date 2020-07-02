@@ -48,7 +48,7 @@ Git会追踪这个目录下所有文件和文件夹的更改，但是有一些�
 
 然后在djangogirls项目根目录下将它保存为 `.gitignore`文件。
 
-> **注意** 在文件名最前面的"."很重要。 如果你在创建文件的时候有困难(例如，Macs不能通过Finder创建开头为"."的文件), 可以在编辑器里点击"另存为", 这个没问题的。 确定不添加<0 txt</code>,`><py`,或者文件名中的任何其他扩展名，只有在名称为 `gigistnow`的情况下，该扩展才能被Git 确认。 Linux and MacOS treat files with a name that starts with `.` (such as `.gitignore`) as hidden and the normal `ls` command won't show these files. Instead use `ls -a` to see the `.gitignore` file.
+> **注意** 在文件名最前面的"."很重要。 如果你在创建文件的时候有困难(例如，Macs不能通过Finder创建开头为"."的文件), 可以在编辑器里点击"另存为", 这个没问题的。 确定不添加<0 txt</code>,`><py`,或者文件名中的任何其他扩展名，只有在名称为 `gigistnow`的情况下，该扩展才能被Git 确认。 Linux 和 苹果 MacOS 系统中隐藏文件的文件名会以英文句点“`.`”作为第一个字符 (例如 `.gitignore`)。您无法通过普通`ls` 命令来显示这些文件。 您必须使用 `ls -a ` 来查看`.gitignore` 这样的隐藏文件。
 > 
 > **注意** 您在 `githnode`文件中指定的文件之一是 `db.sqlite3`。 此文件是你的本地数据库，用来存储所有用户和帖子。 我们将遵循标准的网络编程做法，这意味着我们将使用单独的数据库来用于本地测试网站和您的 PythonAnywhere 上的现场网站。 PythonAnywhere 数据库可以像您的开发机器一样使用SQLite，但通常使用一个叫MySQL的站点访问者比SQLite更多。 无论如何，无视您GitHub 复制的SQLite数据库意味着您迄今所创建的所有帖子和超级用户只能在当地使用，并且您必须在生产中创建新的版本。 你应该把本地数据库视为一个可以随意测试不同的事情而不担心你会从博客中删除您的真实帖子的地方。
 
