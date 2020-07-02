@@ -1,20 +1,20 @@
 # 你的第一个Django 项目 ！
 
-> Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> 本章的部分内容基于 Geek Girls Carrots (https://github.com/ggcarrots/django-carrots/) 的教程。
 > 
 > Parts of this chapter are based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Django-marcador 教程的版权归 Markus Zapke-Gründemann 所有。
 
-We're going to create a small blog!
+我们将创建一个小博客！
 
 第一步是创建一个新的 Django 项目。 首先，我们需要运行一些由 Django 提供的脚本，为我们即将开始的项目建立主要骨架。 它会生成一系列的文件夹和文件，在后面的项目中我们会需要修改和使用到它们。
 
 某些名称的文件和目录在 Django 起着至关重要的作用。 你不应该重命名我们将要创建的文件。 将它们移动到一个不同的地方也不是一个好主意。 Django 需要固定的系统结构，以便 Django 能够找到重要的东西。
 
-> 记住在虚拟环境中运行的一切。 If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. 我们在 **Django 安装**这一节内的 **在虚拟环境下工作** 部分中解释过了。 Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
+> 记住在虚拟环境中运行的一切。 如果您没有在控制台中看到前缀 `（myvenv）`，您需要先激活您的虚拟环境。 我们在 **Django 安装**这一节内的 **在虚拟环境下工作** 部分中解释过该怎么做了。 Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
 
 <!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
-In your Mac OS X or Linux console, you should run the following command. **Don't forget to add the period (or dot) `.` at the end!**
+在苹果 OS X 或 Linux 系统下，你需要运行下面的命令,**记得不要漏掉命令后面的小点（.）**: (myvenv) ~/djangogirls$ django-admin startproject mysite .
 
 {% filename %}command-line{% endfilename %}
 
@@ -47,16 +47,16 @@ On Windows you should run the following command. **(Don't forget to add the peri
     djangogirls
     ├── manage.py
     ├── mysite
-    │   ├── __init__.py
-    │   ├── settings.py
-    │   ├── urls.py
-    │   └── wsgi.py
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
     ├── myvenv
-    │   └── ...
+    │   └── ...
     └── requirements.txt
     
 
-> **Note**: in your directory structure, you will also see your `venv` directory that we created before.
+> **注意**：在目录结构中，您也会看到我们以前创建的`venv`文件夹。
 
 `manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
 
