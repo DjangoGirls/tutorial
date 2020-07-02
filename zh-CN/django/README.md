@@ -24,4 +24,4 @@ Django是一个由python编写的，免费和开放的开源网站框架。 web�
 
 当然，上面的描述是有点简化的，但是你不需要去知道所有的技术的东西， 有一个大概的想法就足够了。
 
-So instead of diving too much into details, we will start creating something with Django and we will learn all the important parts along the way!
+所以不要太过深入细节，我们将会用Django创建一些简单的东西，并在学习的过程中学到所有重要的部分！
