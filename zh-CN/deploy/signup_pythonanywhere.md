@@ -6,9 +6,9 @@ PythonAnywhere 是在服务器上运行Python代码的服务"云端"。 我们�
 
 ![PythonAnywhere 注册页面显示按钮创建一个免费的“初学者”帐户](../deploy/images/pythonanywhere_beginner_account_button.png)
 
-> **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about. Also, be sure to remember your password (add it to your password manager, if you use one).
+> **注意** 在这里选择您的用户名时，请记住您的博客URL将采取 “`您的用户名.ythonanywhere .com`”，因此最好选择你自己喜欢的昵称，或者与你的博客相符的名称。 Also, be sure to remember your password (add it to your password manager, if you use one).
 
-## Creating a PythonAnywhere API token
+## 创建一个 PythonAnywhere 的 API 令牌
 
 This is something you only need to do once. When you've signed up for PythonAnywhere, you'll be taken to your dashboard. Find the link near the top right to your "Account" page:
 
