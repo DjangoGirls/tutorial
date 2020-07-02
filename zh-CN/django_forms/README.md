@@ -14,7 +14,7 @@ Django表单的一个好处就是我们既可以从零开始自定义，也可�
        └── forms.py
     
 
-OK, let's open it in the code editor and type the following code:
+好的，让我们在代码编辑器中打开它，然后输入以下代码：
 
 {% filename %}blog/forms.py{% endfilename %}
 
