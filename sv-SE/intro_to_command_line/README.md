@@ -54,11 +54,11 @@ Varje kommando kommer att infogas av ett `$` eller `>` och ett mellanrum, men du
 
 Delen fram till och med `$` eller `>` kallas *kommandoradsprompten* eller kort och gott *prompten*. Den uppmanar dig att mata in något där.
 
-In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
+I handledningen, när vi vill att du ska skriva in ett kommando, kommer vi att inkludera `$` eller `>`, och ibland ännu mer till vänster. Ignorera den vänstra delen och skriv bara in kommandot, som börjar efter prompten.
 
 ## Ditt första kommando (WOHO!)
 
-Let's start by typing this command:
+Börja med att skriva detta kommando:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -78,7 +78,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-And then hit `enter`. This is our result:
+Och tryck sedan `Enter`. Detta blir resultatet:
 
 {% filename %}command-line{% endfilename %}
 
@@ -86,17 +86,17 @@ And then hit `enter`. This is our result:
     olasitarska
     
 
-As you can see, the computer has just printed your username. Neat, huh? :)
+Som ni kan se har datorn precis skrivit ut ditt användarnamn. Snyggt, va? :)
 
-> Try to type each command; do not copy-paste. You'll remember more this way!
+> Försök att skriva varje kommando för hand, utan att kopiera och klistra in. På så sätt kommer du komma ihåg bättre!
 
 ## Grunderna
 
-Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
+Varje operativsystem har lite olika kommandon för terminalen, så följ instruktionerna för ditt operativsystem. Nu kör vi!
 
 ### Aktuell katalog
 
-It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
+Visst hade det varit bra att veta var vi är? Skriv in detta kommando och tryck `enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
