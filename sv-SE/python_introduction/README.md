@@ -2,13 +2,13 @@
 
 # Introduktion till Python
 
-> Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> Delar av det här kapitlet är baserat på en handledning av Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
-Let's write some code!
+Låt oss skriva lite kod!
 
 ## Python-prompten
 
-> For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
+> För läsare hemma: denna del omfattas av videon [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U).
 
 To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
 
