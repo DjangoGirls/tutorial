@@ -1,6 +1,6 @@
 # Introduktion till kommandotolken
 
-> For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
+> För läsare hemma: detta kapitel omfattas av videon [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8).
 
 Visst är det spännande!?! Inom bara några minuter kommer du skriva din första rad kod! :)
 
@@ -52,7 +52,7 @@ Varje kommando kommer att infogas av ett `$` eller `>` och ett mellanrum, men du
 
 > En liten notis: i ditt fall kan det vara något som `C:\Users\ola>` eller `Olas-MacBook-Air:~ ola$` och det är 100% OK.
 
-The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
+Delen fram till och med `$` eller `>` kallas *kommandoradsprompten* eller kort och gott *prompten*. Den uppmanar dig att mata in något där.
 
 In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
 
