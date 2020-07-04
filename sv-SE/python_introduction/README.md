@@ -67,9 +67,9 @@ Vad sägs om ditt namn? Skriv ditt förnamn i citattecken så här:
 'Ola'
 ```
 
-You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
+Du har nu skapat din första sträng! Det är en sekvens av tecken som kan behandlas av en dator. Strängen måste alltid börja och sluta med samma tecken. Dessa kan vara enkla (`'`) eller dubbla (`"`) citationsecken (det är ingen skillnad!) Citationstecknen talar om för Python att det som är inuti dem är en sträng.
 
-Strings can be strung together. Try this:
+Strängar kan strängas ihop. Prova detta:
 
 {% filename %}command-line{% endfilename %}
 
@@ -78,7 +78,7 @@ Strings can be strung together. Try this:
 'Hi there Ola'
 ```
 
-You can also multiply strings with a number:
+Du kan också multiplicera strängar med ett nummer:
 
 {% filename %}command-line{% endfilename %}
 
@@ -87,9 +87,9 @@ You can also multiply strings with a number:
 'OlaOlaOla'
 ```
 
-If you need to put an apostrophe inside your string, you have two ways to do it.
+Om du behöver sätta en apostrof i din sträng, finns det två sätt att göra det.
 
-Using double quotes:
+Använd dubbla citattecken:
 
 {% filename %}command-line{% endfilename %}
 
@@ -98,7 +98,7 @@ Using double quotes:
 "Runnin' down the hill"
 ```
 
-or escaping the apostrophe with a backslash (``):
+eller undanta apostrofen med ett omvänt snedstreck (``):
 
 {% filename %}command-line{% endfilename %}
 
