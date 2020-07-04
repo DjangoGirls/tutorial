@@ -10,7 +10,7 @@ Låt oss skriva lite kod!
 
 > För läsare hemma: denna del omfattas av videon [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U).
 
-To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+För att börja använda Python behöver vi öppna upp *kommandotolken* på datorn. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
 
 Once you're ready, follow the instructions below.
 
