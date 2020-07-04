@@ -14,7 +14,7 @@ För att börja använda Python behöver vi öppna upp *kommandotolken* på dato
 
 När du är redo, följ instruktionerna nedan.
 
-We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
+Vi vill öppna en Python-konsol, så skriv `python` på Windows eller `python3` på Mac OS/Linux och tryck `enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -24,13 +24,13 @@ We want to open up a Python console, so type in `python` on Windows or `python3`
     >>>
     
 
-## Your first Python command!
+## Ditt första Python-kommando!
 
-After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
+Efter att ha kört Python-kommandot ändrades prompten till `>>>`. För oss innebär detta att vi för tillfället endast får använda kommandon i Python-språket. Du behöver inte skriva in `>>>` – Python kommer att göra det åt dig.
 
-If you want to exit the Python console at any point, type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
+Om du någon gång vill avsluta Python-konsolen, skriv `exit()` eller använd genvägen `Ctrl + Z` för Windows och `Ctrl + D` för Mac/Linux. Då ser du inte `>>>` längre.
 
-For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
+För tillfället vill vi inte lämna Python-konsolen. Vi vill lära oss mer om den. Låt oss börja med att skriva lite matematik, skriv `2 + 3` och tryck `enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -39,26 +39,26 @@ For now, we don't want to exit the Python console. We want to learn more about i
 5
 ```
 
-Nice! See how the answer popped out? Python knows math! You could try other commands like:
+Snyggt! Ser du hur svaret dök upp? Python kan matematik! Du kan prova andra kommandon som:
 
 - `4 * 5`
 - `5 - 1`
 - `40 / 2`
 
-To perform exponential calculation, say 2 to the power 3, we type: {% filename %}command-line{% endfilename %}
+För att utföra potensräkning, säg 2 upphöjt till 3, skriver vi: {% filename %}command-line{% endfilename %}
 
 ```python
 >>> 2 ** 3
 8
 ```
 
-Have fun with this for a little while and then get back here. :)
+Ha kul med detta ett tag och kom sedan tillbaka hit. :)
 
-As you can see, Python is a great calculator. If you're wondering what else you can do…
+Som du kan se är Python en utmärkt kalkylator. Om du undrar vad mer du kan göra…
 
 ## Strängar
 
-How about your name? Type your first name in quotes like this:
+Vad sägs om ditt namn? Skriv ditt förnamn i citattecken så här:
 
 {% filename %}command-line{% endfilename %}
 
