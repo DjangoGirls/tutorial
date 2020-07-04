@@ -107,7 +107,7 @@ eller undanta apostrofen med ett omvänt snedstreck (``):
 "Runnin' down the hill"
 ```
 
-Nice, huh? To see your name in uppercase letters, type:
+Snyggt, va? För att se ditt namn i versaler, skriv:
 
 {% filename %}command-line{% endfilename %}
 
@@ -116,9 +116,9 @@ Nice, huh? To see your name in uppercase letters, type:
 'OLA'
 ```
 
-You just used the `upper` **method** on your string! A method (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
+Du använde just `upper`-**metoden** på din sträng! En metod (som `upper()`) är en sekvens av instruktioner som Python måste utföra på ett visst objekt (`"Ola"`) när du kallar den.
 
-If you want to know the number of letters contained in your name, there is a **function** for that too!
+Om du vill veta antalet bokstäver som finns i ditt namn, finns det en **funktion** för det också!
 
 {% filename %}command-line{% endfilename %}
 
@@ -127,15 +127,15 @@ If you want to know the number of letters contained in your name, there is a **f
 3
 ```
 
-Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
+Undrar du varför man ibland anropar funktioner med en `.` i slutet av en sträng (som `"Ola".upper()`) och ibland anropar du först en funktion och placerar strängen inom parenteser? Tja, i vissa fall tillhör funktioner objekt, som `upper()`, som endast kan utföras på strängar. I det fallet kallar vi funktionen för en **metod**. I andra fall tillhör funktioner inte något specifikt och kan användas på olika typer av objekt, precis som `len()`. Därför anger vi `"Ola"` som en parameter till funktionen `len`
 
 ### Sammanfattning
 
-OK, enough of strings. So far you've learned about:
+OK, nog om strängar. Hittills har du lärt dig om:
 
-- **the prompt** – typing commands (code) into the Python prompt results in answers in Python
-- **numbers and strings** – in Python numbers are used for math and strings for text objects
-- **operators** – like `+` and `*`, combine values to produce a new one
+- **prompten** – att skriva kommandon (kod) i Python-prompten resulterar i svar i Python
+- **tal och strängar** – i Python används nummer för matematik och strängar för textobjekt
+- **operatorer** – som `+` och `*`, kombinera värden för att producera ett nytt
 - **functions** – like `upper()` and `len()`, perform actions on objects.
 
 These are the basics of every programming language you learn. Ready for something harder? We bet you are!
