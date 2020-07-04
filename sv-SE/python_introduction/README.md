@@ -136,13 +136,13 @@ OK, nog om strängar. Hittills har du lärt dig om:
 - **prompten** – att skriva kommandon (kod) i Python-prompten resulterar i svar i Python
 - **tal och strängar** – i Python används nummer för matematik och strängar för textobjekt
 - **operatorer** – som `+` och `*`, kombinera värden för att producera ett nytt
-- **functions** – like `upper()` and `len()`, perform actions on objects.
+- **funktioner** – som `upper()` och `len()`, utför åtgärder på objekt.
 
-These are the basics of every programming language you learn. Ready for something harder? We bet you are!
+Dessa är grunderna i varje programmeringsspråk du lär dig. Redo för något svårare? Vi slår vad om att du är!
 
 ## Fel
 
-Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
+Låt oss prova något nytt. Kan vi få längden på ett nummer på samma sätt som vi kunde ta reda på längden på vårt namn? Skriv `len(304023)` och tryck `enter`:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -153,9 +153,9 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-We got our first error! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. Making mistakes (even intentional ones) are an important part of learning!
+Vi fick vårt första fel! {{ warning_icon }}-ikonen är vårt sätt att förvarna dig om att den kod du är på väg att köra inte fungerar som förväntat. Att göra misstag (även avsiktliga) är en viktig del av inlärningsprocessen!
 
-It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
+Det står att objekt av typen "int" (heltal, heltal) inte har någon längd. Så vad kan vi göra nu? Vi kanske kan skriva vårt nummer som en sträng? Strängar har en längd, eller hur?
 
 {% filename %}command-line{% endfilename %}
 
@@ -164,14 +164,14 @@ It says that objects of type "int" (integers, whole numbers) have no length. So 
 6
 ```
 
-It worked! We used the `str` function inside of the `len` function. `str()` converts everything to strings.
+Det fungerade! Vi använde funktionen `str` inuti funktionen `len`. `str()` konverterar allt till strängar.
 
-- The `str` function converts things into **strings**
-- The `int` function converts things into **integers**
+- Funktionen `str` omvandlar saker till **strängar**
+- Funktionen `int` omvandlar saker till **heltal**
 
-> Important: we can convert numbers into text, but we can't necessarily convert text into numbers – what would `int('hello')` be anyway?
+> Viktigt: vi kan konvertera siffror till text, men vi kan inte nödvändigtvis konvertera text till siffror – vad skulle `int('hello')` betyda?
 
-## Variables
+## Variabler
 
 An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
 
