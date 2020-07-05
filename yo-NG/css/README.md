@@ -74,7 +74,7 @@ Nínú fáìlì `blog/static/css/blog.css` rẹ ó yẹ kí o ṣàfikún kóòd
 
 ```css
 h1 a, h2 a {
-    color: #C25100;
+    color: #FF8833;
 }
 
 ```
