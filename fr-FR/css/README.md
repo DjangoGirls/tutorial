@@ -74,7 +74,7 @@ Dans votre fichier `blog/static/css/blog.css`, ajoutez le code suivant :
 
 ```css
 h1 a, h2 a {
-    color: #C25100;
+    color: #FF8833;
 }
 
 ```
