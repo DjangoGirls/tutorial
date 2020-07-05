@@ -73,7 +73,9 @@ CSS یا (Cascading Style Sheets) زبان مورد استفاده برای تو
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a, h2 a {color: #C25100; }
+h1 a, h2 a {
+    color: #FF8833;
+}
 
 ```
 
