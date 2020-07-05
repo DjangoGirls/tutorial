@@ -74,7 +74,7 @@ We won't be going too deep into customizing and learning about CSS here. There i
 
 ```css
 h1 a, h2 a {
-    color: #C25100;
+    color: #FF8833;
 }
 
 ```
