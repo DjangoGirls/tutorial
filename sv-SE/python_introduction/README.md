@@ -236,13 +236,13 @@ Traceback (most recent call last):
 NameError: name 'ctiy' is not defined
 ```
 
-An error! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
+Ett fel! Som du kan se har Python olika typer av fel och detta kallas ett **NameError**. Python kommer att ge dig detta fel om du försöker använda en variabel som ännu inte har definierats. Om du stöter på detta fel senare, kontrollera din kod för att se om du har skrivit fel.
 
-Play with this for a while and see what you can do!
+Lek med detta ett tag och se vad du kan göra!
 
-## The print function
+## print-funktionen
 
-Try this:
+Prova det här:
 
 {% filename %}command-line{% endfilename %}
 
@@ -254,9 +254,9 @@ Try this:
 Maria
 ```
 
-When you just type `name`, the Python interpreter responds with the string *representation* of the variable 'name', which is the letters M-a-r-i-a, surrounded by single quotes, ''. When you say `print(name)`, Python will "print" the contents of the variable to the screen, without the quotes, which is neater.
+När du bara skriver `name`, svarar Pythontolken med sträng-*representationen* av variabeln 'name', vilken är bokstäverna M-a-r-i-a, omgivna av enkla citattecken, ''. När du säger `print(name)`, kommer Python att "skriva ut" innehållet i variabeln till skärmen, utan citationstecken, vilket är snyggare.
 
-As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things on multiple lines.
+Som vi kommer att se senare, är `print()` också användbar när vi vill skriva ut saker inifrån funktioner, eller när vi vill skriva ut saker på flera rader.
 
 ## Listor
 
