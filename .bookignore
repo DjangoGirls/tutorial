@@ -1,0 +1,6 @@
+.bookignore
+.github
+.gitignore
+crowdin.yaml
+package-lock.json
+package.json
