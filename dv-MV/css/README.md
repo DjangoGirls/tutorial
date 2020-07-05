@@ -72,9 +72,9 @@
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-} h1 a, h2 
-; color: #C25100
-{
+h1 a, h2 a {
+    color: #FF8833;
+}
 
 ```
 
