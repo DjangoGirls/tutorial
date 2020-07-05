@@ -66,8 +66,8 @@ Skapa ett [Github](https://github.com) konto.
 
 ### PythonAnywhere
 
-The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+Django Girls introduktion innehåller ett avsnitt om vad som kallas Deployment, som är processen att ta koden som driver din nya webbapplikation och flytta den till en offentligt tillgänglig dator (en så kallad server) så att andra personer kan se ditt arbete.
 
-This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Denna del är lite udda när du gör övningen på en Chromebook eftersom vi redan använder en dator som är på Internet (jämfört med, exempelvis, en bärbar dator). Men det är fortfarande användbart, eftersom vi kan tänka på vår arbetsyta på Cloud 9 som en plats för vårt pågående arbete och Python Anywhere som en plats att visa upp våra mer färdigarbetade grejer.
 
-Så registrera dig för ett nytt Python Anywhere konto på [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Så, registrera dig för ett nytt Python Anywhere-konto på [www.pythonanywhere.com](https://www.pythonanywhere.com).
