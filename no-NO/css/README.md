@@ -74,7 +74,7 @@ I filen `blog/static/css/blog.css` legger du til følgende kode:
 
 ```css
 h1 a, h2 a {
-    color: #C25100;
+    color: #FF8833;
 }
 
 ```
