@@ -74,7 +74,7 @@ Trebalo bi da dodate sledeću liniju koda u Vašem `blog/static/css/blog.css` fa
 
 ```css
 h1 a, h2 a {
-    color: #C25100;
+    color: #FF8833;
 }
 
 ```
