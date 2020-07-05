@@ -74,7 +74,7 @@ V súbore `blog/static/css/blog.css` pridaj nasledujúci kód:
 
 ```css
 h1 a, h2 a {
-    color: #C25100;
+    color: #FF8833;
 }
 
 ```
