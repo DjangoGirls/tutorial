@@ -74,7 +74,7 @@ Django จะค้นหาโฟลเดอร์ชื่อ "static" ใน
 
 ```css
 h1 a, h2 a {
-    color: #C25100;
+    color: #FF8833;
 }
 
 ```
