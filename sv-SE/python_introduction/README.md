@@ -173,9 +173,9 @@ Det fungerade! Vi använde funktionen `str` inuti funktionen `len`. `str()` konv
 
 ## Variabler
 
-An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
+Ett viktigt begrepp inom programmering är variabler. En variabel är inget annat än ett namn för något så att du kan använda det senare. Programmerare använder dessa variabler för att lagra data, göra deras kod mer läsbar och så att de inte behöver komma ihåg vad saker är.
 
-Let's say we want to create a new variable called `name`:
+Låt oss säga att vi vill skapa en ny variabel som heter `name`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -183,9 +183,9 @@ Let's say we want to create a new variable called `name`:
 >>> name = "Ola"
 ```
 
-We type name equals Ola.
+Vi skriver name är lika med Ola.
 
-As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Enter `name` and hit `enter`:
+Som du märkte returnerade ditt program inte något som det gjorde tidigare. Så hur vet vi att variabeln faktiskt existerar? Ange `name` och tryck `enter`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -194,7 +194,7 @@ As you've noticed, your program didn't return anything like it did before. So ho
 'Ola'
 ```
 
-Yippee! Your first variable! :) You can always change what it refers to:
+Jippi! Din första variabel! :) Du kan alltid ändra vad den refererar till:
 
 {% filename %}command-line{% endfilename %}
 
@@ -204,7 +204,7 @@ Yippee! Your first variable! :) You can always change what it refers to:
 'Sonja'
 ```
 
-You can use it in functions too:
+Du kan använda den i funktioner också:
 
 {% filename %}command-line{% endfilename %}
 
@@ -213,7 +213,7 @@ You can use it in functions too:
 5
 ```
 
-Awesome, right? Now, variables can be anything – numbers too! Try this:
+Grymt, eller hur? Variabler kan vara vad som helst – siffror också! Prova detta:
 
 {% filename %}command-line{% endfilename %}
 
@@ -224,7 +224,7 @@ Awesome, right? Now, variables can be anything – numbers too! Try this:
 24
 ```
 
-But what if we used the wrong name? Can you guess what would happen? Let's try!
+Men tänk om vi använde fel namn? Kan du gissa vad som skulle hända? Låt oss försöka!
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
