@@ -288,7 +288,7 @@ Okej, vi har en lista! Vad kan vi göra med den? Låt oss se hur många lottnumm
 6
 ```
 
-Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we will sort it now:
+Ja! `len()` kan ge dig antalet objekt i en lista. Praktisk, eller hur? Nu kommer vi kanske sortera den:
 
 {% filename %}command-line{% endfilename %}
 
@@ -296,7 +296,7 @@ Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we 
 >>> lottery.sort()
 ```
 
-This doesn't return anything, it just changed the order in which the numbers appear in the list. Let's print it out again and see what happened:
+Detta returnerar ingenting, det ändrade bara ordningen som talen visas i listan. Låt oss skriva ut den igen och se vad som hände:
 
 {% filename %}command-line{% endfilename %}
 
@@ -305,9 +305,9 @@ This doesn't return anything, it just changed the order in which the numbers app
 [3, 12, 19, 30, 42, 59]
 ```
 
-As you can see, the numbers in your list are now sorted from the lowest to highest value. Congrats!
+Som du ser är talen i din lista nu sorterade från lägsta till högsta värde. Grattis!
 
-Maybe we want to reverse that order? Let's do that!
+Vi kanske vill vända på ordningen? Låt oss göra det!
 
 {% filename %}command-line{% endfilename %}
 
@@ -317,7 +317,7 @@ Maybe we want to reverse that order? Let's do that!
 [59, 42, 30, 19, 12, 3]
 ```
 
-If you want to add something to your list, you can do this by typing this command:
+Om du vill lägga till något i din lista, kan du göra detta genom att skriva detta kommando:
 
 {% filename %}command-line{% endfilename %}
 
@@ -327,7 +327,7 @@ If you want to add something to your list, you can do this by typing this comman
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-If you want to show only the first number, you can do this by using **indexes**. An index is the number that says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
+Om du bara vill visa det första talet kan du göra detta med **index**. Ett index är det tal som säger var i en lista ett objekt förekommer. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
 
 {% filename %}command-line{% endfilename %}
 
