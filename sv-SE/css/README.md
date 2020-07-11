@@ -300,6 +300,6 @@ Hurra! Ser snyggt ut, eller hur? Titta på den kod som vi just klistrade in och 
 
 Var inte rädd för att experimentera med CSS och ändra utseendet på saker. Att leka runt med CSS kan hjälpa dig att förstå vad de olika sakerna gör. Om du har sönder något, ingen fara - du kan alltid ångra ändringarna!
 
-We really recommend taking the free online courses "Basic HTML & HTML5" and "Basic CSS" on [freeCodeCamp](https://learn.freecodecamp.org/). They can help you learn all about making your websites prettier with HTML and CSS.
+Vi rekommenderar starkt att du läser de kostnadsfria onlinekurserna "Basic HTML & HTML5" och "Basic CSS" på [freeCodeCamp](https://learn.freecodecamp.org/). De kan lära dig allt om att göra dina webbplatser snyggare med HTML och CSS.
 
 Redo för nästa kapitel?! :)
