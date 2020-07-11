@@ -327,7 +327,7 @@ Om du vill lägga till något i din lista, kan du göra detta genom att skriva d
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-Om du bara vill visa det första talet kan du göra detta med **index**. Ett index är det tal som säger var i en lista ett objekt förekommer. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
+Om du bara vill visa det första talet kan du göra detta med **index**. Ett index är det tal som säger var i en lista ett objekt förekommer. Programmerare föredrar att börja räkna på 0, så det första objektet i din lista är vid index 0, nästa är vid 1, och så vidare. Prova det här:
 
 {% filename %}command-line{% endfilename %}
 
