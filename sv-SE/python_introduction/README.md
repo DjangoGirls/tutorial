@@ -260,9 +260,9 @@ Som vi kommer att se senare, är `print()` också användbar när vi vill skriva
 
 ## Listor
 
-Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called **list**. Lists are exactly what you think they are: objects which are lists of other objects. :)
+Utöver strängar och heltal, har Python alla möjliga typer av olika objekt. Nu ska vi introducera ett som heter **lista**. Listor är precis vad du tror att de är: objekt som är listor över andra objekt. :)
 
-Go ahead and create a list:
+Kör vidare och skapa en lista:
 
 {% filename %}command-line{% endfilename %}
 
@@ -271,7 +271,7 @@ Go ahead and create a list:
 []
 ```
 
-Yes, this list is empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repeat ourselves all the time, so we will put it in a variable, too:
+Ja, den här listan är tom. Inte särskilt användbar, eller hur? Låt oss skapa en lista över lottnummer. Vi vill inte upprepa oss hela tiden, så vi kommer att lägga listan i en variabel också:
 
 {% filename %}command-line{% endfilename %}
 
@@ -279,7 +279,7 @@ Yes, this list is empty. Not very useful, right? Let's create a list of lottery 
 >>> lottery = [3, 42, 12, 19, 30, 59]
 ```
 
-All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that? You know this already!
+Okej, vi har en lista! Vad kan vi göra med den? Låt oss se hur många lottnummer det finns i en lista. Har du någon aning om vilken funktion du ska använda för det? Du vet det redan!
 
 {% filename %}command-line{% endfilename %}
 
