@@ -4,7 +4,7 @@ Våra förslag är listade nedan, men fråga gärna din coach vilken editor de f
 
 ## Visual Studio Code
 
-Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+Visual Studio Code är en källkodsredigerare som utvecklats av Microsoft för Windows, Linux och macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
 
 [Ladda ner den här](https://code.visualstudio.com/)
 
