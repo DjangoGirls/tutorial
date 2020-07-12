@@ -355,17 +355,17 @@ För att ta bort något från din lista måste du använda **index** som vi lär
 [42, 30, 19, 12, 3, 199]
 ```
 
-That worked like a charm!
+Det gick som smort!
 
-For extra fun, try some other indexes: 6, 7, 1000, -1, -6 or -1000. See if you can predict the result before trying the command. Do the results make sense?
+För extra skoj, prova några andra index: 6, 7, 1000, -1, -6 eller -1000. Se om du kan förutse resultatet innan du provar kommandot. Är resultaten vettiga?
 
-You can find a list of all available list methods in this chapter of the Python documentation: https://docs.python.org/3/tutorial/datastructures.html
+Du kan hitta en lista över alla tillgängliga listmetoder i detta kapitel i Pythondokumentationen: https://docs.python.org/3/tutorial/datastructures.html
 
 ## Dictionaries
 
-> For readers at home: this part is covered in the [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) video.
+> För läsare hemma: denna del omfattas av videon [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c).
 
-A dictionary is similar to a list, but you access values by looking up a key instead of a numeric index. A key can be any string or number. The syntax to define an empty dictionary is:
+En dictionary liknar en lista, men du får tillgång till värden genom att slå upp en nyckel istället för ett numeriskt index. En nyckel kan vara en sträng eller ett tal. Syntaxen för att definiera en tom dictionary är:
 
 {% filename %}command-line{% endfilename %}
 
@@ -374,9 +374,9 @@ A dictionary is similar to a list, but you access values by looking up a key ins
 {}
 ```
 
-This shows that you just created an empty dictionary. Hurray!
+Detta visar att du just skapat en tom dictionary. Hurra!
 
-Now, try writing the following command (try substituting your own information, too):
+Prova att skriva följande kommando (prova också att ersätta informationen med din egen):
 
 {% filename %}command-line{% endfilename %}
 
