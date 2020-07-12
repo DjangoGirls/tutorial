@@ -451,7 +451,7 @@ Du kan använda metoden `pop()` för att ta bort ett objekt i dictionaryn. Om du
 
 Som du kan se från utskriften har nyckel-värde-paret som hörde till nyckeln 'favorite_numbers' tagits bort.
 
-As well as this, you can also change a value associated with an already-created key in the dictionary. Type this:
+Utöver detta kan du också ändra ett värde som associeras med en redan skapad nyckel i dictionaryn. Skriv detta:
 
 {% filename %}command-line{% endfilename %}
 
@@ -461,18 +461,18 @@ As well as this, you can also change a value associated with an already-created 
 {'country': 'Germany', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
+Som du kan se har värdet på nyckeln `'country'` ändrats från `'Poland'` till `'Germany'`. :) Spännande? Hurrah! Du har precis lärt dig ytterligare något fantastisk.
 
 ### Sammanfattning
 
-Awesome! You know a lot about programming now. In this last part you learned about:
+Grymt! Du vet mycket om programmering nu. I den här sista delen lärde du dig om:
 
-- **errors** – you now know how to read and understand errors that show up if Python doesn't understand a command you've given it
-- **variables** – names for objects that allow you to code more easily and to make your code more readable
-- **lists** – lists of objects stored in a particular order
-- **dictionaries** – objects stored as key–value pairs
+- **fel** – du vet nu hur man läser och förstår fel som dyker upp om Python inte förstår ett kommando du har gett det
+- **variabler** – namn för objekt som gör att du kan koda enklare och göra din kod mer läsbar
+- **listor** – listor över objekt som lagras i en viss ordning
+- **dictionaries** – objekt lagrade som nyckelvärdepar
 
-Excited for the next part? :)
+Taggad inför nästa del? :)
 
 ## Compare things
 
