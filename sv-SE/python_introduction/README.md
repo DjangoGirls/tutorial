@@ -338,9 +338,9 @@ Om du bara vill visa det första talet kan du göra detta med **index**. Ett ind
 42
 ```
 
-As you can see, you can access different objects in your list by using the list's name and the object's index inside of square brackets.
+Som du kan se kan du komma åt olika objekt i din lista med hjälp av listans namn och objektets index inuti hakparenteser.
 
-To delete something from your list you will need to use **indexes** as we learned above and the `pop()` method. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
+För att ta bort något från din lista måste du använda **index** som vi lärt oss ovan och metoden `pop()`. Låt oss prova ett exempel och förstärka det vi lärt oss tidigare; vi kommer att ta bort det första talet från vår lista.
 
 {% filename %}command-line{% endfilename %}
 
