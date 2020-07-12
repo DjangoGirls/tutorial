@@ -436,9 +436,9 @@ Likt listor, kan metoden `len()` på dictionaries returnerar antalet nyckel-vär
 4
 ```
 
-I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
+Jag hoppas att det känts vettigt fram till nu. :) Redo för mer skoj med dictionaries? Läs vidare för några fantastiska saker.
 
-You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, type in the following command:
+Du kan använda metoden `pop()` för att ta bort ett objekt i dictionaryn. Om du vill ta bort nyckel-värde-paret som hör till nyckeln `'favorite_numbers'`, skriv in följande kommando:
 
 {% filename %}command-line{% endfilename %}
 
@@ -449,7 +449,7 @@ You can use the `pop()` method to delete an item in the dictionary. Say, if you 
 {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-As you can see from the output, the key–value pair corresponding to the 'favorite_numbers' key has been deleted.
+Som du kan se från utskriften har nyckel-värde-paret som hörde till nyckeln 'favorite_numbers' tagits bort.
 
 As well as this, you can also change a value associated with an already-created key in the dictionary. Type this:
 
