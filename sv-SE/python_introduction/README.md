@@ -495,11 +495,11 @@ True
 True
 ```
 
-We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare method results. Nice, huh?
+Vi gav Python några tal att jämföra. Som du kan se kan Python inte bara jämföra tal, utan även metodresultat. Trevligt, va?
 
-Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
+Undrar du varför vi sätter två likhetstecken `==` bredvid varandra för att jämföra om talen är lika? Vi använder ett enda `=` för att tilldela värden till variabler. Du behöver alltid, **alltid** använda två av dem – `==` – om du vill kontrollera om saker är lika. Vi kan också konstatera att saker och ting är olika varandra. För det använder vi symbolen `!=`, enligt exemplet ovan.
 
-Give Python two more tasks:
+Ge Python ytterligare två uppgifter:
 
 {% filename %}command-line{% endfilename %}
 
@@ -510,14 +510,14 @@ True
 False
 ```
 
-We've seen `>` and `<`, but what do `>=` and `<=` mean? Read them like this:
+Vi har sett `>` och `<`, men vad betyder `>=` och `<=` ? Tolka dem så här:
 
-- x `>` y means: x is greater than y
-- x `<` y means: x is less than y
-- x `<=` y means: x is less than or equal to y
-- x `>=` y means: x is greater than or equal to y
+- x `>` y betyder: x är större än y
+- x `<` y betyder: x är mindre än y
+- x `<=` y betyder: x är mindre än eller lika med y
+- x `>=` y betyder: x är större än eller lika med y
 
-Awesome! Wanna do one more? Try this:
+Grymt! Vill du göra ett kommando till? Prova detta:
 
 {% filename %}command-line{% endfilename %}
 
@@ -530,12 +530,12 @@ False
 True
 ```
 
-You can give Python as many numbers to compare as you want, and it will give you an answer! Pretty smart, right?
+Du kan ge Python så många tal att jämföra som du själv vill, och det kommer att ge dig ett svar! Ganska smart, eller hur?
 
-- **and** – if you use the `and` operator, both comparisons have to be True in order for the whole command to be True
-- **or** – if you use the `or` operator, only one of the comparisons has to be True in order for the whole command to be True
+- **and** – om du använder operatorn `and` måste båda jämförelserna vara sanna för att hela kommandot ska vara sant
+- **or** – om du använder operatorn `or` behöver bara en av jämförelserna vara sant för att hela kommandot ska vara sant
 
-Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
+Har du hört talas om uttrycket "jämföra äpplen med päron"? Vi provar Python-motsvarigheten:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
