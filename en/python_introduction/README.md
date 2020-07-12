@@ -460,6 +460,8 @@ True
 True
 >>> 5 != 2
 True
+>>> len([1, 2, 3]) > len([4, 5])
+True
 ```
 
 We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare method results. Nice, huh?
