@@ -74,7 +74,7 @@ Django会自动找出你项目文件夹中所有名为“static”的文件夹�
 
 ```css
 h1 a, h2 a {
-    color: #FF8833;
+    color: #C25100;
 }
 
 ```
