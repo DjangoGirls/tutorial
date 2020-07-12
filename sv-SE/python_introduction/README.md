@@ -384,13 +384,13 @@ Prova att skriva följande kommando (prova också att ersätta informationen med
 >>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
 ```
 
-With this command, you just created a variable named `participant` with three key–value pairs:
+Med det kommandot skapade du just en variabel som heter `participant` med tre nyckelvärdepar:
 
-- The key `name` points to the value `'Ola'` (a `string` object),
-- `country` points to `'Poland'` (another `string`),
-- and `favorite_numbers` points to `[7, 42, 92]` (a `list` with three numbers in it).
+- Nyckeln `name` pekar på värdet `'Ola'` (ett `sträng`-objekt),
+- `country` pekar på `'Poland'` (ytterligare en `sträng`),
+- och `favorite_numbers` pekar på `[7, 42, 92]` (en `lista` med tre tal).
 
-You can check the content of individual keys with this syntax:
+Du kan kontrollera innehållet för enskilda nycklar med denna syntax:
 
 {% filename %}command-line{% endfilename %}
 
@@ -399,9 +399,9 @@ You can check the content of individual keys with this syntax:
 Ola
 ```
 
-See, it's similar to a list. But you don't need to remember the index – just the name.
+Se, det liknar en lista. Men du behöver inte komma ihåg indexet – bara namnet.
 
-What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
+Vad händer om vi frågar Python efter värdet av en nyckel som inte finns? Kan du gissa? Låt oss prova och se!
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -412,12 +412,12 @@ Traceback (most recent call last):
 KeyError: 'age'
 ```
 
-Look, another error! This one is a **KeyError**. Python is helpful and tells you that the key `'age'` doesn't exist in this dictionary.
+Titta, ett till fel! Det här felet är ett **KeyError**. Python är hjälpsamt och berättar att nyckeln `'age'` inte finns i den här dictionaryn.
 
-When should you use a dictionary or a list? Well, that's a good point to ponder. Think about the answer before looking at it in the next line.
+När ska du använda en dictionary eller en lista? Tja, det är en bra tanke att överväga. Fundera över svaret innan du tittar på det i nästa rad.
 
-- Do you just need an ordered sequence of items? Go for a list.
-- Do you need to associate values with keys, so you can look them up efficiently (by key) later on? Use a dictionary.
+- Behöver du bara en ordnad sekvens av objekt? Använd en lista.
+- Behöver du associera värden med nycklar, så att du kan slå upp dem effektivt (via nyckeln) senare? Använd en dictionary.
 
 Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key–value pairs to a dictionary after it is created, like this:
 
