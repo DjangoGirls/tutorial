@@ -1,8 +1,8 @@
 # Django admin 管理后台
 
-To add, edit and delete the posts we've just modeled, we will use Django admin.
+我们将使用 Django admin 添加，编辑和删除我们刚刚创建的帖子。
 
-Let's open the `blog/admin.py` file in the code editor and replace its contents with this:
+让我们在代码编辑器中打开`blog/admin.py`文件，并将其内容替换为此：
 
 {% filename %}blog/admin.py{% endfilename %}
 
@@ -15,13 +15,13 @@ admin.site.register(Post)
 
 如你所见，我们导入（包括）了前一章定义的Post模型。 为了让我们的模型在admin页面上可见，我们需要使用`admin.site.register(Post)`来注册模型.
 
-OK, 现在来看看我们的 Post 模型。 记得先在控制台输入`python manage.py runserver`启动服务器。 Go to your browser and type the address http://127.0.0.1:8000/admin/. 你将看到一个登陆页面，像这样：
+OK, 现在来看看我们的 Post 模型。 记得先在控制台输入`python manage.py runserver`启动服务器。 转到您的浏览器并输入地址http://127.0.1:8000/admin/。 你将看到一个登陆页面，像这样：
 
 ![登录页面](images/login_page2.png)
 
-To log in, you need to create a *superuser* - a user account that has control over everything on the site. Go back to the command line, type `python manage.py createsuperuser`, and press enter.
+为了登陆，您需要创建一个*超级用户* ——一个在站点里拥有控制一切的权利的用户。 返回到命令行, 输入 `python manage.py createsuperuser`, 然后按回车键。
 
-> Remember, to write new commands while the web server is running, open a new terminal window and activate your virtualenv. We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
+> 记住，如果想在网页服务器运行时写入新命令，那就打开一个新的终端窗口并激活virtualenv。 We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
 
 {% filename %}Mac OS X or Linux:{% endfilename %}
 
