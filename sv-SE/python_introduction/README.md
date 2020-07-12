@@ -474,11 +474,11 @@ Grymt! Du vet mycket om programmering nu. I den här sista delen lärde du dig o
 
 Taggad inför nästa del? :)
 
-## Compare things
+## Jämföra saker
 
-> For readers at home: this part is covered in the [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) video.
+> För läsare hemma: denna del omfattas av videon [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4).
 
-A big part of programming involves comparing things. What's the easiest thing to compare? Numbers! Let's see how that works:
+En stor del av programmering handlar om att jämföra saker. Vad är det enklaste att jämföra? Tal! Låt oss se hur det fungerar:
 
 {% filename %}command-line{% endfilename %}
 
