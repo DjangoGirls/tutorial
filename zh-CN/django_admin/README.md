@@ -21,9 +21,9 @@ OK, 现在来看看我们的 Post 模型。 记得先在控制台输入`python m
 
 为了登陆，您需要创建一个*超级用户* ——一个在站点里拥有控制一切的权利的用户。 返回到命令行, 输入 `python manage.py createsuperuser`, 然后按回车键。
 
-> 记住，如果想在网页服务器运行时写入新命令，那就打开一个新的终端窗口并激活virtualenv。 We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
+> 记住，如果想在网页服务器运行时写入新命令，那就打开一个新的终端窗口并激活virtualenv。 我们在**启动Web服务器**部分的**Your first Django project!**章节中回顾了如何编写新的命令。
 
-{% filename %}Mac OS X or Linux:{% endfilename %}
+{% filename %}Mac OS X 或 Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py createsuperuser
     
