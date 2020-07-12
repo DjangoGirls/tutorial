@@ -419,7 +419,7 @@ När ska du använda en dictionary eller en lista? Tja, det är en bra tanke att
 - Behöver du bara en ordnad sekvens av objekt? Använd en lista.
 - Behöver du associera värden med nycklar, så att du kan slå upp dem effektivt (via nyckeln) senare? Använd en dictionary.
 
-Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key–value pairs to a dictionary after it is created, like this:
+Dictionaries, liksom listor, är *muterbara*, vilket innebär att de kan ändras efter att de har skapats. Du kan lägga till nya nyckel-värde par till en dictionary efter att den skapats, så här:
 
 {% filename %}command-line{% endfilename %}
 
@@ -427,7 +427,7 @@ Dictionaries, like lists, are *mutable*, meaning that they can be changed after 
 >>> participant['favorite_language'] = 'Python'
 ```
 
-Like lists, using the `len()` method on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
+Likt listor, kan metoden `len()` på dictionaries returnerar antalet nyckel-värden-par i en dictionary. Gå vidare och skriv in detta kommando:
 
 {% filename %}command-line{% endfilename %}
 
