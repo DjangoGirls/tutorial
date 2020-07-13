@@ -13,6 +13,7 @@ Django е написан на Python. Имаме нужда от Python, за д
 * Натиснете едновременно клавиша Windows и клавиша за Пауза/Прекъсване
 * Отворете контролния панел от менюто на Windows, след което отворете Система & Сигурност, след това Система
 * Натиснете бутона на Windows, след това отворете Настройки> Система> Информация
+* Search the Windows Start menu for "System Information". To do that, click the Start button or press the Windows key, then begin to type `System Information`. It will start making suggestions as soon as you type. You can select the entry once it shows up.
 
 Можете да изтеглите Python за Windows от уебсайта https://www.python.org/downloads/windows/. Кликнете върху връзката "Последно издание на Python 3 - Python x.x.x“. Ако вашият компютър работи с **64-битова** версия на Windows, изтеглете **изпълнителния инсталатор Windows x86-64**. В противен случай изтеглете **изпълнителния инсталатор Windows x86**. След като изтеглите инсталатора, трябва да го стартирате (щракнете двукратно върху него) и следвайте инструкциите там.
 
