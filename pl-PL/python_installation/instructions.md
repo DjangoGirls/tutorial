@@ -13,6 +13,7 @@ Najpierw sprawdź, czy na komputerze działa 32- lub 64-bitowa wersja systemu Wi
 * Wciśnij klawisz Windows i klawisz Pause/Break w tym samym czasie
 * Otwórz panel sterowania z menu systemu Windows, a następnie przejdź do Zabezpieczenia Systemu, a następnie System
 * Wciśnij przycisk Windows, a następnie przejdź do Settings>System>About
+* Search the Windows Start menu for "System Information". To do that, click the Start button or press the Windows key, then begin to type `System Information`. It will start making suggestions as soon as you type. You can select the entry once it shows up.
 
 Możesz ściągnąć Pythona dla Windowsa ze strony https://www.python.org/downloads/windows/. Kliknij w link "Latest Python 3 Release - Python x.x.x". Jeżeli twój komputer pracuje na **64-bitowej** wersji Windowsa, ściągnij **Windows x86-64 executable installer**. W innym wypadku ściągnij **Windows x86 executable installer**. Po ściągnięciu instalatora, powinnaś go uruchomić (klikając dwukrotnie w niego) i postępować według wyświetlanych instrukcji.
 
