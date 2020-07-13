@@ -13,6 +13,7 @@
 * دکمه Windows و دکمه Pause/Break را همزمان روی کیبورد فشار دهید
 * Control Panel را از منو ویندوز باز کنید، سپس به System & Security بروید و بعد از آن به System بروید
 * دکمه Windows را فشار دهید، سپس مسیر Settings > System > About را دنبال کنید
+* Search the Windows Start menu for "System Information". To do that, click the Start button or press the Windows key, then begin to type `System Information`. It will start making suggestions as soon as you type. You can select the entry once it shows up.
 
 می‌توانید پایتون برای ویندوز را از وبسایت https://www.python.org/downloads/windows/ دانلود کنید. بر روی لینک "Latest Python 3 Release - Python x.x.x" کلیک کنید. اگر کامپیوتر شما نسخه **64-bit** ویندوز را اجرا می‌کند، **Windows x86-64 executable installer** را دانلود کنید. در غیر اینصورت، **Windows x86 executable installer** را دانلود کنید. پس از دانلود کردن اینستالر، باید آن را اجرا کنید (بر روی آن دوبار کلیک کنید) و دستورالعمل‌ها را دنبال کنید.
 
