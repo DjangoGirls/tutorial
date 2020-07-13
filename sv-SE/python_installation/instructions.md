@@ -13,6 +13,7 @@ Först kolla om din dator kör en 32-bit version eller en 64-bit version av Wind
 * Tryck ned Windows-tangenten och Pause/Break-tangenten samtidigt
 * Öppna Kontrollpanelen från Windows-menyn och navigera sedan till System & Säkerhet, sen System
 * Tryck på Windows-knappen och navigera sedan till Inställningar > System > Om
+* Search the Windows Start menu for "System Information". To do that, click the Start button or press the Windows key, then begin to type `System Information`. It will start making suggestions as soon as you type. You can select the entry once it shows up.
 
 Du kan ladda ned Python till Windows från deras hemsida https://www.python.org/downloads/windows/. Klicka på länken "Latest Python 3 Release - Python x.x.x". Om din dator kör en **64-bit** version av Windows, ladda ned **Windows x86-64 executable installer**. Ladda annars ned **Windows x86 executable installer**. Kör installationsfilen efter att du har laddat ned den genom att dubbelklicka på den.
 
