@@ -13,6 +13,7 @@ Lütfen bilgisayarınızda Anaconda yüklü olsa bile normal Python'u aşağıda
 * Windows tuşuna ve Pause/Break tuşuna aynı anda basın
 * Windows menüsünden Denetim Masası'nı açın, ardından Sistem & Güvenlik, ardından Sistem seçeneğine gidin
 * Windows düğmesine basın, ardından Ayarlar> Sistem> Hakkında'ya gidin
+* Search the Windows Start menu for "System Information". To do that, click the Start button or press the Windows key, then begin to type `System Information`. It will start making suggestions as soon as you type. You can select the entry once it shows up.
 
 Windows için Python'ı https://www.python.org/downloads/windows/ adresinden indirebilirsiniz. "Latest Python 3 Release - Python x.x.x" bağlantısına tıklayın. Eğer bilgisayarınız **64-bit** versiyon Windows çalıştırıyorsa, **Windows x86-64 executable installer**'ı indirin. Değilse, **Windows x86 executable installer**'ı indirin. Yükleyiciyi indirdikten sonra, çalıştırmalısınız (üzerine çift tıklayarak) ve oradaki talimatları takip etmelisiniz.
 
