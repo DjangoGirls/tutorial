@@ -13,6 +13,7 @@ First check whether your computer is running a 32-bit version or a 64-bit versio
 * Stlač klávesu Windows a klávesu Pause/Break v rovnakom čase
 * Otvor v ovládacom paneli v ponuke Windows, potom prejdi do Systém a Zabezpečenia, potom Systém
 * Stlačte tlačidlo Windows a potom prejdite na položku Nastavenia > Systém > Informácie
+* Search the Windows Start menu for "System Information". To do that, click the Start button or press the Windows key, then begin to type `System Information`. It will start making suggestions as soon as you type. You can select the entry once it shows up.
 
 You can download Python for Windows from the website https://www.python.org/downloads/windows/. Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
 
