@@ -9,7 +9,7 @@ Please install normal Python as follows, even when you have Anaconda installed o
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
 First check whether your computer is running a 32-bit version or a 64-bit version of Windows, on the "System type" line of the System Info page. To reach this page, try one of these methods:
-* Press the Windows key and start to type `System Information`. The menu should bring it up as best match within 3 letters. Click on it or press enter to accept it.
+* Search the Windows Start menu for "System Information". To do that, click the Start button or press the Windows key, then begin to type `System Information`. It will start making suggestions as soon as you type. You can select the entry once it shows up.
 * Open your Control Panel from the Windows menu, then navigate to System & Security, then System
 * Press the Windows button, then navigate to Settings > System > About
 * Press the Windows key and Pause/Break key at the same time
