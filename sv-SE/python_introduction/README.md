@@ -550,16 +550,16 @@ Här ser du att precis som i talesättet, kan Python inte jämföra ett tal (`in
 
 ## Boolean
 
-Incidentally, you just learned about a new type of object in Python. It's called **Boolean**.
+Förresten, du lärde dig just om en ny typ av objekt i Python. Det kallas **Boolean**.
 
-There are only two Boolean objects:
+Det finns bara två booleska objekt:
 
 - True
 - False
 
-But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well.)
+Men för att Python ska förstå detta, måste du alltid skriva det som "True" (första bokstaven versal, med resten av bokstäverna gemena). **true, TRUE, och tRUE fungerar inte – endast True är korrekt.** (Samma sak gäller även 'False'.)
 
-Booleans can be variables, too! See here:
+Booleaner kan även vara variabler! Se här:
 
 {% filename %}command-line{% endfilename %}
 
@@ -569,7 +569,7 @@ Booleans can be variables, too! See here:
 True
 ```
 
-You can also do it this way:
+Du kan också göra på detta sätt:
 
 {% filename %}command-line{% endfilename %}
 
@@ -579,7 +579,7 @@ You can also do it this way:
 False
 ```
 
-Practice and have fun with Booleans by trying to run the following commands:
+Träna och ha kul med booleaner genom att försöka köra följande kommandon:
 
 - `True and True`
 - `False and True`
