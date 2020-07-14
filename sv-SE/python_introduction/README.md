@@ -610,7 +610,7 @@ $
 
 Detta kommer att ta dig tillbaka till kommandotolken.
 
-Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now and write some code into a new file (or if you're using a Chromebook, create a new file in the cloud IDE and open the file, which will be in the included code editor):
+Tidigare valde vi ut en kodeditor från avsnittet [Kod-editor](../code_editor/README.md). Vi kommer nu att behöva öppna redigeraren och skriva lite kod till en ny fil (eller om du använder en Chromebook, skapa en ny fil i molnet IDE och öppna filen, som kommer öppnas i den medföljande kodeditorn):
 
 {% filename %}editor{% endfilename %}
 
@@ -618,11 +618,11 @@ Earlier, we picked out a code editor from the [code editor](../code_editor/READM
 print('Hello, Django girls!')
 ```
 
-Obviously, you're a pretty seasoned Python developer now, so feel free to write some code that you've learned today.
+Du är såklart en ganska erfaren Python-utvecklare nu, så skriv gärna lite kod som du har lärt dig idag.
 
-Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, but the important part here is to make sure the file ends in **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
+Nu behöver vi spara filen och ge den ett beskrivande namn. Låt oss kalla filen **python_intro.py** och spara den på skrivbordet. Vi kan namnge filen vadsomhelst, men det viktigaste är att se till att filnamnet slutar med **.py**. Filändelsen **.py** berättar för vårt operativsystem att detta är en **körbar Python-fil** och att Python kan köra den.
 
-> **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. This is called "syntax highlighting", and it's a really useful feature when coding. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor. :)
+> **Observera** Du bör lägga märke till en av de häftigaste sakerna med kodredigerare: färger! I Python-konsolen hade allt samma färg; nu bör du se att funktionen `print` är en annan färg än strängen. Detta kallas "syntax highlighting", och det är en riktigt användbar finess vid kodning. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor. :)
 
 With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
 
