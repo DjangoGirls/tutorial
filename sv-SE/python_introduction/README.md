@@ -586,20 +586,20 @@ Träna och ha kul med booleaner genom att försöka köra följande kommandon:
 - `True or 1 == 1`
 - `1 != 2`
 
-Congrats! Booleans are one of the coolest features in programming, and you just learned how to use them!
+Grattis! Booleaner är en av de coolaste finesserna inom programmering, och du har precis lärt dig att använda dem!
 
-# Save it!
+# Spara!
 
-> For readers at home: this part is covered in the [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) video.
+> För läsare hemma: denna del omfattas av videon [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk).
 
-So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal programs are saved in files and executed by our programming language **interpreter** or **compiler**. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
+Hittills har vi skrivit all vår python-kod i tolken, vilket begränsar oss till att ange en rad kod åt gången. Normala program sparas i filer och körs av vårt programmeringsspråks **interpretator** eller **kompilator**. Hittills har vi kört våra program en rad åt gången i Python-**interpretatorn**. Vi kommer att behöva mer än en rad kod för de kommande uppgifterna, så vi kommer snabbt behöva:
 
-- Exit the Python interpreter
-- Open up our code editor of choice
-- Save some code into a new python file
-- Run it!
+- Avsluta Python-tolken
+- Öppna valfri kodeditor
+- Spara lite kod i en ny python-fil
+- Kör den!
 
-To exit from the Python interpreter that we've been using, type the `exit()` function
+För att avsluta Pythontolken som vi har använt, skriv in funktionen `exit()`
 
 {% filename %}command-line{% endfilename %}
 
@@ -608,7 +608,7 @@ To exit from the Python interpreter that we've been using, type the `exit()` fun
 $
 ```
 
-This will put you back into the command prompt.
+Detta kommer att ta dig tillbaka till kommandotolken.
 
 Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now and write some code into a new file (or if you're using a Chromebook, create a new file in the cloud IDE and open the file, which will be in the included code editor):
 
