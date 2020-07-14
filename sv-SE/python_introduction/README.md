@@ -622,14 +622,14 @@ Du är såklart en ganska erfaren Python-utvecklare nu, så skriv gärna lite ko
 
 Nu behöver vi spara filen och ge den ett beskrivande namn. Låt oss kalla filen **python_intro.py** och spara den på skrivbordet. Vi kan namnge filen vadsomhelst, men det viktigaste är att se till att filnamnet slutar med **.py**. Filändelsen **.py** berättar för vårt operativsystem att detta är en **körbar Python-fil** och att Python kan köra den.
 
-> **Observera** Du bör lägga märke till en av de häftigaste sakerna med kodredigerare: färger! I Python-konsolen hade allt samma färg; nu bör du se att funktionen `print` är en annan färg än strängen. Detta kallas "syntax highlighting", och det är en riktigt användbar finess vid kodning. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor. :)
+> **Observera** Du bör lägga märke till en av de häftigaste sakerna med kodredigerare: färger! I Python-konsolen hade allt samma färg; nu bör du se att funktionen `print` är en annan färg än strängen. Detta kallas "syntax highlighting", och det är en riktigt användbar finess vid kodning. Färgen på saker kommer att ge dig ledtrådar, såsom oavslutade strängar eller en stavfel i ett nyckelordsnamn (som `def` i en funktion, som vi kommer se nedan). Detta är en av anledningarna till att vi använder en kodeditor. :)
 
-With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
+Med filen sparad är det dags att köra den! Använda de färdigheter du har lärt dig i kommandoradsavsnittet, använd terminalen till **byta katalog** till skrivbordet.
 
 <!--sec data-title="Change directory: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-On a Mac, the command will look something like this:
+På en Mac kommer kommandot att se ut ungefär så här:
 
 {% filename %}command-line{% endfilename %}
 
@@ -641,20 +641,20 @@ On a Mac, the command will look something like this:
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-On Linux, it will be like this:
+På Linux kommer det att bli så här:
 
 {% filename %}command-line{% endfilename %}
 
     $ cd ~/Desktop
     
 
-(Remember that the word "Desktop" might be translated to your local language.)
+(Kom ihåg att ordet "Desktop" kan vara översatt till ditt lokala språk.)
 
 <!--endsec-->
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-On Windows Command Prompt, it will be like this:
+I Windows Command Prompt, kommer det att vara så här:
 
 {% filename %}command-line{% endfilename %}
 
@@ -665,7 +665,7 @@ On Windows Command Prompt, it will be like this:
 
 <!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
 
-And on Windows Powershell, it will be like this:
+Och i Windows Powershell, kommer det att vara så här:
 
 {% filename %}command-line{% endfilename %}
 
@@ -674,9 +674,9 @@ And on Windows Powershell, it will be like this:
 
 <!--endsec-->
 
-If you get stuck, ask for help. That's exactly what the coaches are here for!
+Om du fastnar, be om hjälp. Det är precis vad coacherna är här för!
 
-Now use Python to execute the code in the file like this:
+Använd nu Python för att köra koden i filen så här:
 
 {% filename %}command-line{% endfilename %}
 
@@ -684,7 +684,7 @@ Now use Python to execute the code in the file like this:
     Hello, Django girls!
     
 
-Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
+Obs: på Windows känns "python3" inte igen som ett kommando. Använd istället "python" för att köra filen:
 
 {% filename %}command-line{% endfilename %}
 
@@ -692,9 +692,9 @@ Note: on Windows 'python3' is not recognized as a command. Instead, use 'python'
 > python python_intro.py
 ```
 
-Alright! You just ran your first Python program that was saved to a file. Feel awesome?
+Okej! Du körde just ditt första Python-program som var sparat till en fil. Känns det fantastiskt?
 
-You can now move on to an essential tool in programming:
+Du kan nu gå vidare till ett viktigt verktyg inom programmering:
 
 ## If … elif … else
 
