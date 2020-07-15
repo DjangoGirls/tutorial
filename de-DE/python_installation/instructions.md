@@ -13,7 +13,7 @@ Bitte schau zuerst auf der "Systemtyp"-Zeile der Systeminformationsseite nach, o
 * Drücke die Windows-Taste und die Pause/Break-Taste zur selben Zeit
 * Öffne dein Control Panel über das Windows Menü und navigiere dann zu System & Sicherheit, dann System
 * Drücke die Windows-Taste und navigiere dann zu Einstellungen > System > Über
-* Search the Windows Start menu for "System Information". To do that, click the Start button or press the Windows key, then begin to type `System Information`. It will start making suggestions as soon as you type. You can select the entry once it shows up.
+* Suche im Windows-Startmenü nach "Systeminformationen". Klicke datu auf Start oder drücke die Window-Taste, dann beginne `Systeminformationen` zu tippen. Sobald du etwas eingegeben hast, bekommst du passende Vorschläge. Wähle den Eintrag "Systeminformationen" an, sobald er erscheint.
 
 Du kannst Python für Windows von der Webseite https://www.python.org/downloads/windows/ herunterladen. Klicke auf den "Latest Python 3 Release - Python x.x.x" Link. Wenn du eine **64-bit**-Version von Windows benutzt, lade die Datei **Windows x86-64 executable installer** herunter. Andernfalls lade den **Windows x86 executable installer** herunter. Führe den Installer nach dem Download (per Doppelklick) aus und folge den Anweisungen des Installationsprogramms.
 
