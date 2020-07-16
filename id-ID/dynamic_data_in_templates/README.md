@@ -56,7 +56,10 @@ def post_list(permintaan):
      mengembalikan render (permintaan, 'blog / post_list.html', {})
 ```
 
-Bagian terakhir yang hilang adalah melewati ` posts ` QuerySet ke konteks template. Jangan khawatir - kami akan membahas bagaimana menampilkannya di bab berikutnya.
+To display our QuerySet on our blog's post list, we have two things left to do:
+
+1. Pass the `posts` QuerySet to the template context, by changing the `render` function call. We'll do this now.
+2. Modify the template to display the `posts` QuerySet. We'll cover this in a later chapter.
 
 Perlu diketahui bahwa kami membuat variabel * * untuk QuerySet kami: ` posts `. Perlakukan ini sebagai nama QuerySet kami. Mulai sekarang kita bisa merujuknya dengan nama ini.
 
