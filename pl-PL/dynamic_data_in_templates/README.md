@@ -56,7 +56,10 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-Ostatnią częścią, której nam brakuje, jest przekazanie QuerySetu `posts` do szablonu. Nie martw się - omówimy sposób wyświetlania go w późniejszym rozdziale.
+To display our QuerySet on our blog's post list, we have two things left to do:
+
+1. Pass the `posts` QuerySet to the template context, by changing the `render` function call. We'll do this now.
+2. Modify the template to display the `posts` QuerySet. We'll cover this in a later chapter.
 
 Zauważ, że tworzymy *zmienną* dla naszego QuerySetu: `posts`. Potraktuj ją jako nazwę naszego QuerySetu. Od tej pory będziemy odnosić się do niej tylko za pomocą tej nazwy.
 
