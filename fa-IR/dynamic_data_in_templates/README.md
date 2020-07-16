@@ -56,7 +56,10 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-آخرین قدم، فرستادن کوئری سِت `posts` به محتوای template است. نگران نباشید، نحوه نمایش کوئری سِت در template را در بخش های بعدی آموزش خواهیم داد.
+To display our QuerySet on our blog's post list, we have two things left to do:
+
+1. Pass the `posts` QuerySet to the template context, by changing the `render` function call. We'll do this now.
+2. Modify the template to display the `posts` QuerySet. We'll cover this in a later chapter.
 
 توجه داشته باشید که ما یک *متغیر* برای کوئری ست مان درست کردیم: `posts`. آن را به عنوان نام کوئری ست در نظر بگیرید. از این به بعد ما به کمک همین نام به این کوئری ست مراجعه می‌کنیم.
 
