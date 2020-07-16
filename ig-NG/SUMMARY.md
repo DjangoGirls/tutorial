@@ -15,7 +15,7 @@
 * [Ndubata na command line](intro_to_command_line/README.md)
 * [Nwụnye Python](python_installation/README.md)
 * [Nchịkwa koodu](code_editor/README.md)
-* [Introduction to Python](python_introduction/README.md)
+* [Ndubata na Python](python_introduction/README.md)
 * [What is Django?](django/README.md)
 * [Django installation](django_installation/README.md)
 * [Your first Django project!](django_start_project/README.md)
