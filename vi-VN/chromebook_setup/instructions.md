@@ -7,9 +7,9 @@ Cloud IDE là một công cụ hỗ trợ viết code và giúp bạn truy cập
 #### PaizaCloud Cloud IDE
 
 1. Nhấn [PaizaCloud Cloud IDE](https://paiza.cloud/)
-2. Sign up for an account
+2. Đăng ký một account
 3. Nhấn *New Server* và chọn ứng dụng Django
-4. Click Terminal button(on the left side of the window)
+4. Click vào nút Terminal ( nằm bên trái cửa sổ)
 
 Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
 
