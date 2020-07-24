@@ -1,8 +1,8 @@
 Možeš [odmah preskočiti ovaj dio](http://tutorial.djangogirls.org/en/installation/#install-python) ako ne koristiš Chromebook. Ako ipak koristiš, tvoje će iskustvo instalacije biti malo drugačije. Možeš ignorirati ostatak uputa za instalaciju.
 
-### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
+### Cloud IDE
 
-Cloud IDE is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. For the duration of the tutorial, cloud IDE will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
+Cloud 9 je alat koji ti daje uređivač koda i pristup računalu pokrenutom na Internetu gdje možeš instalirati, pisati i pokretati programsku potporu (eng. software). Za vrijeme tutorijala, Cloud 9 služit će kao tvoj *lokalni stroj*. I dalje ćeš pokretati naredbe u terminalu kao i tvoji kolege iz razreda na OS X, Ubuntu ili Windowsima, ali tvoj će terminal biti povezan na računalo pokrenuto negdje drugdje gdje ga Cloud 9 postavi za tebe. Ovde su instrukcij za Cloud IDEs You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
 
 #### PaizaCloud Cloud IDE
 
