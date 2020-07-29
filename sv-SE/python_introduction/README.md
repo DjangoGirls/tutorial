@@ -742,7 +742,7 @@ Obs: Kom ihåg att på Windows känns "python3" inte igen som ett kommando. Häd
 
 ### Vad händer om ett tillstånd inte är sant?
 
-In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
+I tidigare exempel utfördes koden endast när villkoren var sanna. Men Python har också `elif` och `else`-satser:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -753,7 +753,7 @@ else:
     print('5 is not greater than 2')
 ```
 
-When this is run it will print out:
+När detta körs kommer Python skriva ut:
 
 {% filename %}command-line{% endfilename %}
 
@@ -761,7 +761,7 @@ When this is run it will print out:
     5 is indeed greater than 2
     
 
-If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
+Om 2 vore ett större tal än 5 skulle det andra kommandot köras. Låt oss se hur `elif` fungerar:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -775,7 +775,7 @@ else:
     print('Hey anonymous!')
 ```
 
-and executed:
+och vid körning:
 
 {% filename %}command-line{% endfilename %}
 
@@ -783,9 +783,9 @@ and executed:
     Hey Sonja!
     
 
-See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
+Såg du vad som hände där? `elif` låter dig lägga till extra villkor som körs om tidigare villkor misslyckas.
 
-You can add as many `elif` statements as you like after your initial `if` statement. For example:
+Du kan lägga till så många `elif`-satser som du vill efter din ursprungliga `if`-sats. Till exempel:
 
 {% filename %}python_intro.py{% endfilename %}
 
