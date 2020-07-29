@@ -835,14 +835,14 @@ Du behöver inte skriva en kommentar för varje kodrad, men de är användbara f
 I de senaste övningarna har du lärt dig om:
 
 - **jämförelser** – i Python kan du jämföra saker med `>`, `>=`, `==`, `<=`, `<` och operatorerna `and` och `or`
-- **Boolean** – a type of object that can only have one of two values: `True` or `False`
-- **Saving files** – storing code in files so you can execute larger programs.
-- **if … elif … else** – statements that allow you to execute code only when certain conditions are met.
-- **comments** - lines that Python won't run which let you document your code
+- **Boolean** – en typ av objekt som bara kan ha ett av två värden: `True` eller `False`
+- **Spara filer** – lagra kod i filer så att du kan köra större program.
+- **if … elif … else** – satser som låter dig köra kod när endast vissa villkor uppfylls.
+- **kommentarer** - rader som Python inte kör som låter dig dokumentera din kod
 
-Time for the last part of this chapter!
+Dags för den sista delen i det här kapitlet!
 
-## Your own functions!
+## Dina egna funktioner!
 
 > For readers at home: this part is covered in the [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0) video.
 
