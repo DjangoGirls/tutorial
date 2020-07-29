@@ -805,7 +805,7 @@ else:
     print("My ears are hurting! :(")
 ```
 
-Python runs through each test in sequence and prints:
+Python går igenom varje test i ordning och skriver ut:
 
 {% filename %}command-line{% endfilename %}
 
@@ -813,11 +813,11 @@ Python runs through each test in sequence and prints:
     Perfect, I can hear all the details
     
 
-## Comments
+## Kommentarer
 
-Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
+Kommentarer är rader som börjar med `#`. Du kan skriva vad du vill efter `#` och Python kommer att ignorera det. Kommentarer kan göra din kod enklare för andra att förstå.
 
-Let's see how that looks:
+Låt oss se hur det ser ut:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -828,11 +828,11 @@ if volume < 20 or volume > 80:
     print("That's better!")
 ```
 
-You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
+Du behöver inte skriva en kommentar för varje kodrad, men de är användbara för att förklara varför din kod gör något, eller ge en sammanfattning när den gör något komplext.
 
 ### Sammanfattning
 
-In the last few exercises you learned about:
+I de senaste övningarna har du lärt dig om:
 
 - **comparing things** – in Python you can compare things by using `>`, `>=`, `==`, `<=`, `<` and the `and`, `or` operators
 - **Boolean** – a type of object that can only have one of two values: `True` or `False`
