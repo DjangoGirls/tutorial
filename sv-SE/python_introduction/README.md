@@ -873,9 +873,9 @@ Låt oss köra koden och se vad som händer:
     How are you?
     
 
-Note: if it didn't work, don't panic! The output will help you to figure why:
+Obs: om det inte fungerar, ingen panik! Utskriften kommer att hjälpa dig att förstå varför:
 
-- If you get a `NameError`, that probably means you typed something wrong, so you should check that you used the same name when creating the function with `def hi():` and when calling it with `hi()`.
+- Om du får ett `NameError`, betyder det förmodligen att du skrivit något fel, så kontrollera att du använde samma namn när du skapade funktionen med `def hi():` och när du anropar den med `hi()`.
 - If you get an `IndentationError`, check that both of the `print` lines have the same whitespace at the start of a line: python wants all the code inside the function to be neatly aligned.
 - If there's no output at all, check that the last `hi()` *isn't* indented - if it is, that line will become part of the function too, and it will never get run.
 
