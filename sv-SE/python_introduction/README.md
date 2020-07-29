@@ -738,9 +738,9 @@ $ python3 python_intro.py
 It works!
 ```
 
-Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
+Obs: Kom ihåg att på Windows känns "python3" inte igen som ett kommando. Hädanefter, ersätt "python3" med "python" för att köra filen.
 
-### What if a condition isn't True?
+### Vad händer om ett tillstånd inte är sant?
 
 In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
 
