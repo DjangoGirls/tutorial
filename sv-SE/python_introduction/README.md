@@ -844,11 +844,11 @@ Dags för den sista delen i det här kapitlet!
 
 ## Dina egna funktioner!
 
-> For readers at home: this part is covered in the [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0) video.
+> För läsare hemma: denna del omfattas av videon [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0).
 
-Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
+Kommer du ihåg funktioner som `len()` som du kan köra i Python? Goda nyheter – du kommer nu att lära dig att skriva dina egna funktioner!
 
-A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
+En funktion är en sekvens av instruktioner som Python ska utföra. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
 
 {% filename %}python_intro.py{% endfilename %}
 
