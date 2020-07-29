@@ -718,7 +718,7 @@ Om vi skulle spara och köra detta skulle vi få se ett fel:
     SyntaxError: unexpected EOF while parsing
     
 
-Python förväntar sig att vi ger ytterligare instruktioner till det som utförs om villkoret `3 > 2` visar sig vara sant (eller `True` för den delen). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
+Python förväntar sig att vi ger ytterligare instruktioner till det som utförs om villkoret `3 > 2` visar sig vara sant (eller `True` för den delen). Låt oss försöka få Python att skriva ut “It works!”. Ändra koden i din **python_intro.py**-fil till detta:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -727,9 +727,9 @@ if 3 > 2:
     print('It works!')
 ```
 
-Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
+La du märke till hur vi ökade indraget på nästa kodrad med 4 mellanslag? Vi måste göra detta så att Python vet vilken kod som ska köras om resultatet är sant. Du kan använda ett mellanslag, men nästan alla Python-programmerare använder 4 för att få det att se snyggt ut. En enda tabb kommer också att räknas som 4 mellanslag så länge din textredigerare är inställd så. När du gjort ditt val, ändra dig inte! Om du redan gjort indragen med 4 mellanslag, gör framtida indrag med 4 mellanslag, också - annars kan du stöta på problem.
 
-Save it and give it another run:
+Spara och kör igen:
 
 {% filename %}command-line{% endfilename %}
 
