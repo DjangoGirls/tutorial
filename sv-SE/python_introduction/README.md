@@ -862,9 +862,9 @@ hi()
 
 Okej, vår första funktion är redo!
 
-Du kanske undrar varför vi har skrivit namnet på funktionen längst ner i filen. När vi skriver `def hi():` och de efterföljande indragna linjerna så skriver vi instruktioner för vad funktionen `hi()` ska göra. Python kommer att läsa och komma ihåg dessa instruktioner, men kommer inte köra funktionen än. To tell Python we want to run the function, we have to call the function with `hi()`. Python reads the file and executes it from top to bottom, so we have to define the function in the file before we call it.
+Du kanske undrar varför vi har skrivit namnet på funktionen längst ner i filen. När vi skriver `def hi():` och de efterföljande indragna linjerna så skriver vi instruktioner för vad funktionen `hi()` ska göra. Python kommer att läsa och komma ihåg dessa instruktioner, men kommer inte köra funktionen än. För att berätta för Python att vi vill köra funktionen måste vi anropa funktionen med `hi()`. Python läser filen och exekverar den uppifrån och ner, så vi måste definiera funktionen i filen innan vi kallar den.
 
-Let's run this now and see what happens:
+Låt oss köra koden och se vad som händer:
 
 {% filename %}command-line{% endfilename %}
 
