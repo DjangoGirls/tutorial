@@ -698,9 +698,9 @@ Du kan nu gå vidare till ett viktigt verktyg inom programmering:
 
 ## If … elif … else
 
-Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
+Många saker i koden ska endast utföras när vissa villkor uppfylls. Det är därför Python har något som heter **if-satser**.
 
-Replace the code in your **python_intro.py** file with this:
+Ersätt koden i din **python_intro.py**-fil med detta:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -708,7 +708,7 @@ Replace the code in your **python_intro.py** file with this:
 if 3 > 2:
 ```
 
-If we were to save and run this, we'd see an error like this:
+Om vi skulle spara och köra detta skulle vi få se ett fel:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -718,7 +718,7 @@ If we were to save and run this, we'd see an error like this:
     SyntaxError: unexpected EOF while parsing
     
 
-Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
+Python förväntar sig att vi ger ytterligare instruktioner till det som utförs om villkoret `3 > 2` visar sig vara sant (eller `True` för den delen). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
 
 {% filename %}python_intro.py{% endfilename %}
 
