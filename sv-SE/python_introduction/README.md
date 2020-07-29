@@ -848,7 +848,7 @@ Dags för den sista delen i det här kapitlet!
 
 Kommer du ihåg funktioner som `len()` som du kan köra i Python? Goda nyheter – du kommer nu att lära dig att skriva dina egna funktioner!
 
-En funktion är en sekvens av instruktioner som Python ska utföra. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
+En funktion är en sekvens av instruktioner som Python ska utföra. Varje funktion i Python börjar med nyckelordet `def`, måste namnges och kan ha parametrar. Vi ger det ett försök. Ersätt koden i din **python_intro.py**-fil med följande:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -860,9 +860,9 @@ def hi():
 hi()
 ```
 
-Okay, our first function is ready!
+Okej, vår första funktion är redo!
 
-You may wonder why we've written the name of the function at the bottom of the file. When we write `def hi():` and the indented lines following, this is us writing instructions for what the `hi()` function should do. Python will read and remember these instructions, but won't run the function yet. To tell Python we want to run the function, we have to call the function with `hi()`. Python reads the file and executes it from top to bottom, so we have to define the function in the file before we call it.
+Du kanske undrar varför vi har skrivit namnet på funktionen längst ner i filen. När vi skriver `def hi():` och de efterföljande indragna linjerna så skriver vi instruktioner för vad funktionen `hi()` ska göra. Python kommer att läsa och komma ihåg dessa instruktioner, men kommer inte köra funktionen än. To tell Python we want to run the function, we have to call the function with `hi()`. Python reads the file and executes it from top to bottom, so we have to define the function in the file before we call it.
 
 Let's run this now and see what happens:
 
