@@ -834,7 +834,7 @@ Du behöver inte skriva en kommentar för varje kodrad, men de är användbara f
 
 I de senaste övningarna har du lärt dig om:
 
-- **comparing things** – in Python you can compare things by using `>`, `>=`, `==`, `<=`, `<` and the `and`, `or` operators
+- **jämförelser** – i Python kan du jämföra saker med `>`, `>=`, `==`, `<=`, `<` och operatorerna `and` och `or`
 - **Boolean** – a type of object that can only have one of two values: `True` or `False`
 - **Saving files** – storing code in files so you can execute larger programs.
 - **if … elif … else** – statements that allow you to execute code only when certain conditions are met.
