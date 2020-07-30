@@ -13,7 +13,7 @@ Primero comprueba si tu ordenador ejecuta la versión 32 bits de Windows o la de
 * Presiona la tecla de Windows y la tecla Pause/Break al mismo tiempo
 * Abre el Panel de Control desde el menú de Windows, después accede a Sistema & y Seguridad, luego a Sistema
 * Presiona el botón de Windows, luego accede a Configuración > Sistema > Acerca de
-* Search the Windows Start menu for "System Information". To do that, click the Start button or press the Windows key, then begin to type `System Information`. It will start making suggestions as soon as you type. You can select the entry once it shows up.
+* Busca "Información del sistema" en el menú de Inicio de Windows. Para hacerlo, haz click en el botón de Inicio o pulsa la tecla Windows, entonces empieza a teclear `Información del sistema`. Empezará a proporcionar sugerencias tan pronto como empieces a teclear. Puedes selecionar la entrada una vez se muestre.
 
 Puedes descargar Python para Windows desde la siguiente web https://www.python.org/downloads/windows/. Clica en el enlace "Latest Python 3 Release -Python x.x.x". Si tu ordenador ejecuta la versión de **64 bits** de Windows, descarga **Windows x86-64 executable installer**. De lo contrario, descarga **Windows x86 executable installer**. Después de descargar el instalador, deberías ejecutarlo (dándole doble click) y seguir las instrucciones.
 
