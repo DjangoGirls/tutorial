@@ -17,6 +17,7 @@
 - আমাদের অন্যান্য বই, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
 - [জ্যাঙ্গো-এর অফিশিয়াল টিউটোরিয়াল](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
 - [শুরু করুন জ্যাঙ্গো ভিডিও পাঠের মাধ্যমে](http://www.gettingstartedwithdjango.com/)
+- [Django for Everybody Specialization](https://www.coursera.org/specializations/django) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
 
 #### HTML, CSS এবং JavaScript
 
