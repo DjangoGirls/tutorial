@@ -17,6 +17,7 @@
 - كتابنا الآخر، ["جانغو الفتيات التعليمي": ملحقات](https://tutorial-extensions.djangogirls.org/)
 - [المحتوى التعليمي الخاص بDjango](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
 - [ابدأ مع دروس الفيديو لDjango](http://www.gettingstartedwithdjango.com/)
+- [Django for Everybody Specialization](https://www.coursera.org/specializations/django) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
 
 #### إتش تي أم ال، سي اس اس وجافا سكريبت
 
