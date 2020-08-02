@@ -17,6 +17,7 @@
 - このチュートリアルの続きである[Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
 - [Django 公式チュートリアル](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
 - [Getting Started With Django 動画レッスン](http://www.gettingstartedwithdjango.com/)
+- [Django for Everybody Specialization](https://www.coursera.org/specializations/django) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
 
 #### HTML, CSS ならびに JavaScript
 
