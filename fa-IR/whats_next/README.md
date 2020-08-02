@@ -17,6 +17,7 @@
 - کتاب دیگر ما، [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
 - [دوره آموزشی رسمی جنگو](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
 - [شروع کردن جنگو با درس‌های ویدئویی](http://www.gettingstartedwithdjango.com/)
+- [Django for Everybody Specialization](https://www.coursera.org/specializations/django) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
 
 #### HTML, CSS and JavaScript
 
