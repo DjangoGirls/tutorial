@@ -17,6 +17,7 @@ Ja! Es gibt *sehr* viele Online-Ressourcen zum Erlernen aller möglichen Program
 - Unser anderes Buch, [Django Girls Tutorial: Erweiterungen](https://tutorial-extensions.djangogirls.org/)
 - [Das offizielle Django-Tutorial](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
 - [Video-Lektionen "Getting Started With Django"](http://www.gettingstartedwithdjango.com/)
+- [Django for Everybody Specialization](https://www.coursera.org/specializations/django) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
 
 #### HTML, CSS und JavaScript
 
