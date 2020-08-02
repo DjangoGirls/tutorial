@@ -16,7 +16,7 @@
 * [Nwụnye Python](python_installation/README.md)
 * [Nchịkwa koodu](code_editor/README.md)
 * [Ndubata na Python](python_introduction/README.md)
-* [What is Django?](django/README.md)
+* [Kedu Ihe bụ Django?](django/README.md)
 * [Nwunye Django](django_installation/README.md)
 * [Ihe omume Django mbu gi!](django_start_project/README.md)
 * [Django models](django_models/README.md)
