@@ -1,4 +1,4 @@
-# CSS – make it pretty!
+# CSS - mee ya ka ọ maa mma!
 
 Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS for that.
 
