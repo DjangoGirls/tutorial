@@ -1,6 +1,6 @@
 PythonAnywhere bụ ọrụ maka ịru koodu Python na sava "na cloud". Anyị ga-eji ya wee kwado saịtị anyị, na ru oru na ntanetị.
 
-We will be hosting the blog we're building on PythonAnywhere. Sign up for a "Beginner" account on PythonAnywhere (the free tier is fine, you don't need a credit card).
+Anyị ga na-elele blog anyị na-ewu na PythonAnywhere. Debanye aha maka akaụntụ "Mbido" na PythonAnywhere (ọnụahịa n'efu dị mma, ị gaghị eji kaadị kredit).
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
