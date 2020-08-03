@@ -1,4 +1,4 @@
-# Let’s start with Python
+# Ka anyị bido na Python
 
 We're finally here!
 
