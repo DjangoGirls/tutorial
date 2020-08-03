@@ -4,12 +4,12 @@ Anyị erutego ebe a n'ikpeazụ!
 
 Mana nke mbu, ka anyị gwa gị ihe Python bụ. Python bụ asụsụ mmemme a ma ama nke enwere ike iji ya mepụta weebụsaịtị, egwuregwu, sọftụware sayensị, eserese, na ọtụtụ ihe ndị ọzọ.
 
-Python originated in the late 1980s and its main goal is to be readable by human beings (not only machines!). This is why it looks simpler than other programming languages, but don't worry – Python is also really powerful!
+Python sitere na ngwụsị 1980s ma ebum n’uche ya bu ka ndi mmadu nwe ike i guru ya (obughi nani igwe!). Nke a bụ ya mere na ọ dị mfe karịa n'asụsụ mmemme ndị ọzọ, mana echegbula - Python dịkwa ike n'ezie!
 
-# Python installation
+# Nwụnye Python
 
-> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
+> **Ndetu** Ọ bụrụ na ị na-eji Chromebook, hapu ebe a ma gbaa mbọ hụ na ị na-eso [ntuziaka ](../chromebook_setup/README.md)Chromebook .
 > 
-> **Note** If you already worked through the Installation steps, there's no need to do this again – you can skip straight ahead to the next chapter!
+> **Ndetu ** Ọ bụrụ n’ịrụ ọrụ site na nrụnye, ịgaghị eme nke a ọzọ - ị nwere ike hapu ebe a ga n’ihu n'isi ozo.
 
 {% include "/python_installation/instructions.md" %}
