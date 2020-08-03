@@ -31,5 +31,5 @@
 * [CSS - mee ya ka ọ maa mma](css/README.md)
 * [Ndebiri igbati](template_extending/README.md)
 * [Gbatia ngwa gị](extend_your_application/README.md)
-* [Django Forms](django_forms/README.md)
-* [What's next?](whats_next/README.md)
+* [Ụdị Django](django_forms/README.md)
+* [Kedu ihe ọzọ?](whats_next/README.md)
