@@ -6,6 +6,6 @@ I na-achọ ide akara koodu mbụ gị, ya mere oge eruola iji budata ihe ndezi 
 
 > **Ndetu** Ọ bụrụ na ị na-eji Chromebook, hapu ebe a ma gbaa mbọ hụ na ị na-eso [ntuziaka ](../chromebook_setup/README.md)Chromebook . Igwe IDE nke ị họọrọ (PaizaCloud Cloud IDE ma ọ bụ AWS Cloud9) gụnyere ihe ndezi koodu, yana mgbe imepe faịlụ na IDE gị na menu Faịlị, ị ga-n'eji ihe ndezi ahụ na-akpaghị aka.
 > 
-> **Note** You might have done this earlier in the Installation chapter – if so, you can skip right ahead to the next chapter!
+> **Ndetu** Inwere ike ịme nke a na mbụ na nwunye nke isi - ọ bụrụ otu a, ịnwere ike hapu ebe a ga n'ihu n'isi ozo!
 
 {% include "/code_editor/instructions.md" %}
