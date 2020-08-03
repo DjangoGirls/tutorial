@@ -6,9 +6,9 @@ Anyị ga na-elele blog anyị na-ewu na PythonAnywhere. Debanye aha maka akaụ
 
 ![The PythonAnywhere signup page showing button to create a free 'Beginner' account](../deploy/images/pythonanywhere_beginner_account_button.png)
 
-> **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about. Also, be sure to remember your password (add it to your password manager, if you use one).
+> **Ndetu** Mgbe ị na-ahọrọ aha njirimara gị ebe a, buru n'uche na URL nke blog gị ga-abụ ụdị a `yourusername.pythonanywhere.com`, ya mere i họrọ aha otutu gi ma obu aha maka ihe blog gi bu banyere. Ọzọkwa, dị njikere icheta paswọọdụ gị (tinye ya na ihe njikwa paswọọdụ gị, ọ bụrụ na i n'eji otu).
 
-## Creating a PythonAnywhere API token
+## Imepụta API token PythonAnywhere 
 
 This is something you only need to do once. When you've signed up for PythonAnywhere, you'll be taken to your dashboard. Find the link near the top right to your "Account" page:
 
