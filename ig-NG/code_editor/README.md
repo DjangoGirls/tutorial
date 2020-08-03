@@ -1,6 +1,6 @@
-# Code editor
+# Ihe ndezi koodu
 
-> For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s) video.
+> Maka ndị na - agụ akwụkwọ nọ n'ụlọ: E kụziri isiakwụkwọ nke a na [Nwụnye Python & Ihe Ndezi Koodu](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s) vidiyo.
 
 You're about to write your first line of code, so it's time to download a code editor!
 
