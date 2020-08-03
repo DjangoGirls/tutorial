@@ -2,9 +2,9 @@
 
 > Maka ndị na - agụ akwụkwọ nọ n'ụlọ: E kụziri isiakwụkwọ nke a na [Nwụnye Python & Ihe Ndezi Koodu](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s) vidiyo.
 
-You're about to write your first line of code, so it's time to download a code editor!
+I na-achọ ide akara koodu mbụ gị, ya mere oge eruola iji budata ihe ndezi koodu!
 
-> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions. The cloud IDE you chose (PaizaCloud Cloud IDE or AWS Cloud9) includes a code editor, and when you open a file in your IDE from the File menu, you will automatically be using the editor.
+> **Ndetu** Ọ bụrụ na ị na-eji Chromebook, hapu ebe a ma gbaa mbọ hụ na ị na-eso [ntuziaka ](../chromebook_setup/README.md)Chromebook . Igwe IDE nke ị họọrọ (PaizaCloud Cloud IDE ma ọ bụ AWS Cloud9) gụnyere ihe ndezi koodu, yana mgbe imepe faịlụ na IDE gị na menu Faịlị, ị ga-n'eji ihe ndezi ahụ na-akpaghị aka.
 > 
 > **Note** You might have done this earlier in the Installation chapter – if so, you can skip right ahead to the next chapter!
 
