@@ -1,8 +1,8 @@
 # Mallutökning
 
-Another nice thing Django has for you is **template extending**. What does this mean? It means that you can use the same parts of your HTML for different pages of your website.
+En annan trevlig sak Django har åt dig är **mallutökning**. Vad betyder detta? Det innebär att du kan använda samma delar av din HTML för olika sidor på din webbplats.
 
-Templates help when you want to use the same information or layout in more than one place. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
+Mallar hjälper dig när du vill använda samma information eller layout på mer än ett ställe. Du behöver inte upprepa dig själv i varje fil. Och om du vill ändra något behöver du inte göra det i varje mall, bara en!
 
 ## Skapa en basmall
 
@@ -55,7 +55,7 @@ Låt oss skapa en `base.html` fil i `blog/templates/blog/`:
 </html>
 ```
 
-Then in `base.html`, replace your whole `<body>` (everything between `<body>` and `</body>`) with this:
+Därefter, i `base.html`, ersätt hela din `<body>` (allt mellan `<body>` och `</body>`) med detta:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -75,7 +75,7 @@ Then in `base.html`, replace your whole `<body>` (everything between `<body>` an
 </body>
 ```
 
-{% raw %}You might notice this replaced everything from `{% for post in posts %}` to `{% endfor %}` with: {% endraw %}
+{% raw %}Du kanske märker att detta ersatte allt från `{% for post in posts %}` till `{% endfor %}` med: {% endraw %}
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -84,9 +84,9 @@ Then in `base.html`, replace your whole `<body>` (everything between `<body>` an
 {% endblock %}
 ```
 
-But why? You just created a `block`! You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). We will show you how to do this in a moment.
+Men varför? Du har precis skapat ett `block`! Du använde malltaggen `{% block %}` för att skapa ett område som kommer att ha HTML insatt i den. HTML-koden kommer från en annan mall som utökar denna mall (`base.html`). Vi kommer att visa dig hur du ska göra detta om ett ögonblick.
 
-Now save `base.html` and open your `blog/templates/blog/post_list.html` again in the code editor. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
+Spara nu `base.html` och öppna din `blog/templates/blog/post_list.html` i kodeditorn. {% raw %}Du kommer att ta bort allt över `{% for post in posts %}` och under `{% endfor %}`. När du är klar kommer filen att se ut så här:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -102,9 +102,9 @@ Now save `base.html` and open your `blog/templates/blog/post_list.html` again in
 {% endfor %}
 ```
 
-We want to use this as part of our template for all the content blocks. Time to add block tags to this file!
+Vi vill använda detta som en del av vår mall för alla innehållsblock. Dags att lägga till blocktaggar till denna fil!
 
-{% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. Like this:{% endraw %}
+{% raw %}Du vill att din blocktagg ska matcha taggen i din `base.html`. Du vill också att den ska innehålla all kod som hör hemma i dina innehållsblock. För att göra det, lägg allt mellan `{% block content %}` och `{% endblock %}`. Såhär:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
