@@ -122,7 +122,7 @@ Vi vill använda detta som en del av vår mall för alla innehållsblock. Dags a
 {% endblock %}
 ```
 
-Only one thing left. We need to connect these two templates together. This is what extending templates is all about! We'll do this by adding an extends tag to the beginning of the file. Like this:
+Bara en sak kvar. Vi behöver sammankoppla de här två mallarna. Detta är vad mallutökning handlar om! Vi kommer att göra detta genom att lägga till en "extends"-tagg till början av filen. Såhär:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -142,6 +142,6 @@ Only one thing left. We need to connect these two templates together. This is wh
 {% endblock %}
 ```
 
-That's it! Save the file, and check if your website is still working properly. :)
+Det är allt! Spara filen, och kontrollera att din webbplats fortfarande fungerar som den ska. :)
 
-> If you get the error `TemplateDoesNotExist`, that means that there is no `blog/base.html` file and you have `runserver` running in the console. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+> Om du får felet `TemplateDoesNotExist`, betyder det att det inte finns någon `blog/base.html`-fil och du har `runserver` körandes i konsolen. Försök att stoppa den (genom att trycka på Ctrl+C – Control- och C-tangenten tillsammans) och starta om den genom att köra kommandot `python manage.py runserver`.
