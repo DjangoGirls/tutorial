@@ -992,7 +992,7 @@ Kom du ihåg listor? Låt oss göra en lista över tjejer:
 girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 ```
 
-We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
+Vi vill hälsa på alla med deras namn. Vi har funktionen `hi` för att göra det, så låt oss använda den i en loop:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1000,9 +1000,9 @@ We want to greet all of them by their name. We have the `hi` function to do that
 for name in girls:
 ```
 
-The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
+Uttrycket `for` uppför sig på samma sätt som uttrycket `if`, koden under båda dessa måste indenteras med fyra mellanslag.
 
-Here is the full code that will be in the file:
+Här är den fullständiga koden som kommer att finnas i filen:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1016,7 +1016,7 @@ for name in girls:
     print('Next girl')
 ```
 
-And when we run it:
+Och när vi kör det:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1033,9 +1033,9 @@ And when we run it:
     Next girl
     
 
-As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
+Som du kan se kommer allt du lägger in i en `for`-sats med indrag att upprepas för varje element i listan `girls`.
 
-You can also use `for` on numbers using the `range` function:
+Du kan också använda `for` på tal med funktionen `range`
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1044,7 +1044,7 @@ for i in range(1, 6):
     print(i)
 ```
 
-Which would print:
+Vilket skulle skriva ut:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1055,7 +1055,7 @@ Which would print:
     5
     
 
-`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
+`range` är en funktion som skapar en lista med tal som följer den ena efter den andra (dessa tal tillhandahålls som parametrar av dig).
 
 Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
 
