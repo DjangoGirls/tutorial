@@ -879,7 +879,7 @@ Obs: om det inte fungerar, ingen panik! Utskriften kommer att hjälpa dig att f�
 - Om du får ett `IndentationError`, kontrollera att båda `print`-raderna har samma blanktecken i början av en rad: python vill att all kod inuti funktionen ska vara snyggt justerad.
 - Om det inte finns någon utskrift alls, kontrollera att den sista raden `hi()` *inte* är indragen - om den är det, kommer den raden att bli en del av funktionen också, och den kommer aldrig att köras.
 
-Let's build our first function with parameters. We will change the previous example – a function that says 'hi' to the person running it – with a name:
+Låt oss bygga vår första funktion med parametrar. Vi kommer att ändra det tidigare exemplet – en funktion som säger "hi" till den person som kör den – med ett namn:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -887,7 +887,7 @@ Let's build our first function with parameters. We will change the previous exam
 def hi(name):
 ```
 
-As you can see, we now gave our function a parameter that we called `name`:
+Som du kan se gav vi nu vår funktion en parameter som vi kallade `name`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -903,7 +903,7 @@ def hi(name):
 hi()
 ```
 
-Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
+Kom ihåg: Funktionen `print` är indragen med fyra mellanslag inuti `if`-satsen. Detta beror på att funktionen körs när villkoret är uppfyllt. Låt oss se hur det fungerar nu:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -914,7 +914,7 @@ Remember: The `print` function is indented four spaces within the `if` statement
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
+Hoppsan, ett fel. Lyckligtvis ger Python oss ett ganska användbart felmeddelande. Det säger oss att funktionen `hi()` (den vi definierade) kräver ett argument (`name`) och att vi glömde att skicka med det när vi anropade funktionen. Låt oss fixa det längst ner i filen:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -922,7 +922,7 @@ Oops, an error. Luckily, Python gives us a pretty useful error message. It tells
 hi("Ola")
 ```
 
-And run it again:
+Och kör igen:
 
 {% filename %}command-line{% endfilename %}
 
@@ -930,7 +930,7 @@ And run it again:
     Hi Ola!
     
 
-And if we change the name?
+Och om vi ändrar namnet?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -938,7 +938,7 @@ And if we change the name?
 hi("Sonja")
 ```
 
-And run it:
+Och kör:
 
 {% filename %}command-line{% endfilename %}
 
@@ -946,14 +946,14 @@ And run it:
     Hi Sonja!
     
 
-Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
+Vad tror du kommer att hända om du skriver ett annat namn där? (Inte Ola eller Sonja.) Prova och se om du har rätt. Det ska skrivas ut så här:
 
 {% filename %}command-line{% endfilename %}
 
     Hi anonymous!
     
 
-This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
+Detta är fantastiskt, eller hur? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
 
 Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right? Replace the content of your file with the following:
 
