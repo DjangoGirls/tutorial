@@ -953,9 +953,9 @@ Vad tror du kommer att hända om du skriver ett annat namn där? (Inte Ola eller
     Hi anonymous!
     
 
-Detta är fantastiskt, eller hur? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
+Detta är fantastiskt, eller hur? Nu behöver du inte upprepa dig varje gång du vill ändra namnet på personen som funktionen ska hälsa på. Och det är just därför vi behöver funktioner – du vill aldrig upprepa dig i din kod!
 
-Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right? Replace the content of your file with the following:
+Låt oss göra något smartare – det finns fler namn än två, och att skriva ett villkor för var och ett skulle vara svårt, eller hur? Ersätt innehållet i din fil med följande:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -966,7 +966,7 @@ def hi(name):
 hi("Rachel")
 ```
 
-Let's call the code now:
+Kör nu koden:
 
 {% filename %}command-line{% endfilename %}
 
@@ -974,17 +974,17 @@ Let's call the code now:
     Hi Rachel!
     
 
-Congratulations! You just learned how to write functions! :)
+Grattis! Du lärde dig precis hur man skriver funktioner! :)
 
 ## Loopar
 
-> For readers at home: this part is covered in the [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) video.
+> För läsare hemma: denna del omfattas av videon [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0).
 
-This is the last part already. That was quick, right? :)
+Vi har redan kommit till sista delen. Det gick snabbt, eller hur? :)
 
-Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
+Programmerare tycker inte om att upprepa sig. Programmering handlar om att automatisera saker, så vi vill inte hälsa på varje person med deras namn manuellt, eller hur? Det är där loopar kommer till hands.
 
-Still remember lists? Let's do a list of girls:
+Kom du ihåg listor? Låt oss göra en lista över tjejer:
 
 {% filename %}python_intro.py{% endfilename %}
 
