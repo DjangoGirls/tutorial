@@ -2,7 +2,7 @@
 
 [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
-> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
+> Detta verk är licensierat under Creative Commons Attribution-Sharealike 4.0 International License. För att se en kopia av denna licens, besök https://creativecommons.org/licenses/by-sa/4.0/
 
 ## Välkommen
 
@@ -36,7 +36,7 @@ Okej, [låt oss börja från början...](./how_the_internet_works/README.md)
 
 Det är fantastiskt att delta i en Django Girls workshop, men vi är medvetna om att det inte alltid är möjligt att närvara vid en. Det är därför vi uppmuntrar dig att försöka följa denna handledning hemifrån. För läsare hemma, förbereder vi för närvarande videor som gör det lättare att följa handledningen på egen hand. Det är fortfarande ett pågående arbete, men fler och fler saker kommer snart att täckas på YouTube-kanalen [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed).
 
-In every chapter already covered, there is a link that points to the correct video.
+I varje kapitel som redan täcks finns en länk som leder till rätt video.
 
 ## Om oss och att bidra
 
@@ -48,4 +48,4 @@ För tillfället sköts översättningar på crowdin.com:
 
 https://crowdin.com/project/django-girls-tutorial
 
-If your language is not listed on [crowdin](https://crowdin.com/), please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
+Om ditt språk inte finns listat på [crowdin](https://crowdin.com/), vänligen [skapa ett "issue"](https://github.com/DjangoGirls/tutorial/issues/new) och skriv vilket språk det gäller så kan vi lägga till det.
