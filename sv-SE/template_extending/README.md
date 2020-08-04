@@ -1,14 +1,14 @@
-# Template extending
+# Mallutökning
 
 Another nice thing Django has for you is **template extending**. What does this mean? It means that you can use the same parts of your HTML for different pages of your website.
 
 Templates help when you want to use the same information or layout in more than one place. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
 
-## Create a base template
+## Skapa en basmall
 
-A base template is the most basic template that you extend on every page of your website.
+En basmall är den mest grundläggande mallen som du utökar på varje sida på din webbplats.
 
-Let's create a `base.html` file in `blog/templates/blog/`:
+Låt oss skapa en `base.html` fil i `blog/templates/blog/`:
 
     blog
     └───templates
@@ -17,7 +17,7 @@ Let's create a `base.html` file in `blog/templates/blog/`:
                 post_list.html
     
 
-Then open it up in the code editor and copy everything from `post_list.html` to `base.html` file, like this:
+Öppna sedan upp den i kodeditorn och kopiera allt från `post_list.html` till `base.html` fil, så här:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
