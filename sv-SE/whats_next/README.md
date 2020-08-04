@@ -17,7 +17,7 @@ Ja! Det finns en *hel* del resurser på nätet för att lära sig alla typer av 
 - Vår andra bok, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
 - [Djangos officiella handledning](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
 - [Komma igång med Django videolektioner](http://www.gettingstartedwithdjango.com/)
-- [Django for Everybody Specialization](https://www.coursera.org/specializations/django) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
+- [Django for Everybody Specialization](https://www.coursera.org/specializations/django) – några videoföreläsningar kan spelas gratis och du kan erhålla ett certifikat från Coursera genom att gå dessa kurser
 
 #### HTML, CSS och JavaScript
 
