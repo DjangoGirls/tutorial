@@ -1057,14 +1057,14 @@ Vilket skulle skriva ut:
 
 `range` är en funktion som skapar en lista med tal som följer den ena efter den andra (dessa tal tillhandahålls som parametrar av dig).
 
-Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
+Observera att det andra av dessa två tal inte ingår i listan av utdata från Python (dvs `range(1, 6)` räknar från 1 till 5, men inkluderar inte talet 6). Det beror på att "range" är halvöppen, och med det menar vi att det inkluderar det första värdet, men inte det sista.
 
 ## Sammanfattning
 
-That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
+Det var det. **Du rockar fett!** Det här var ett knepigt kapitel, så känn dig stolt över dig själv. Vi är definitivt stolta över dig för att du har kommit så här långt!
 
-For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
+För en officiell och fullständig python-handledning besök https://docs.python.org/3/tutorial/. Den kommer att ge dig en mer grundlig och komplett studie av språket. Skål :)
 
-You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
+Du kanske vill göra något annat en kort stund – stretcha, promenera lite, vila ögonen – innan du går vidare till nästa kapitel. :)
 
-![Cupcake](images/cupcake.png)
+![Muffin](images/cupcake.png)
