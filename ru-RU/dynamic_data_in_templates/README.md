@@ -56,10 +56,10 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-To display our QuerySet on our blog's post list, we have two things left to do:
+Чтобы отобразить наш QuerySet в списке постов блога, осталось сделать всего две вещи:
 
-1. Pass the `posts` QuerySet to the template context, by changing the `render` function call. We'll do this now.
-2. Modify the template to display the `posts` QuerySet. We'll cover this in a later chapter.
+1. Передать `posts ` QuerySet в контекст шаблона, изменив вызов функции `render` (мы сделаем это прямо сейчас).
+2. Изменить шаблон для отображения `posts` QuerySet (мы разберемся с этим чуть позже).
 
 Пожалуйста, обрати внимание, что мы создали *переменную* для QuerySet: `posts`. Можешь думать о неё как об имени для нашего QuerySet. Теперь мы можем обращаться к нему, используя имя.
 
