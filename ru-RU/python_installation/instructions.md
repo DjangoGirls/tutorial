@@ -1,4 +1,4 @@
-> Для тех читателей, кто занимается дома: эта глава описывается в видео [Установка Python и текстового редактора](https://www.youtube.com/watch?v=pVTaqzKZCdA).
+> Для тех, кто занимается дома: эта глава описывается в видео [Установка Python и текстового редактора](https://www.youtube.com/watch?v=pVTaqzKZCdA).
 > 
 > Этот подраздел основан на руководстве Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
@@ -13,7 +13,7 @@ Django написан на Python. Нам нужен Python, чтобы сдел
 * Нажмите одновременно клавишу Windows и клавишу Pause/Break
 * Откройте панель управления из меню Windows, затем перейдите в Система & Безопасность, затем перейдите в Система
 * Нажми клавишу Windows, затем перейди по разделам Настройки > Система > О системе
-* Search the Windows Start menu for "System Information". To do that, click the Start button or press the Windows key, then begin to type `System Information`. It will start making suggestions as soon as you type. You can select the entry once it shows up.
+* Найдите пункт "Информация о системе" в меню Windows Start. Для этого нажмите на кнопку "Старт" на экране или кнопку со значком "Windows" на клавиатуре - и начните вводить "Информация о системе". It will start making suggestions as soon as you type. You can select the entry once it shows up.
 
 Ты можешь загрузить Python для Windows с официального веб-сайта: https://www.python.org/downloads/windows/. Перейди по ссылке "Latest Python 3 Release - Python x.x.x". Если у тебя установлена **64-битная** версия Windows, скачай **Windows x86-64 executable installer**. Если нет — скачай **Windows x86 executable installer**. После загрузки дистрибутива ты должна запустить его (двойным щелчком) и следовать инструкциям.
 
