@@ -28,7 +28,7 @@
 * [Django ORM (Querysets)](django_orm/README.md)
 * [Динамически изменяющиеся данные в шаблонах](dynamic_data_in_templates/README.md)
 * [Шаблоны Django](django_templates/README.md)
-* [CSS – сделай это красиво](css/README.md)
+* [CSS – делаем красиво](css/README.md)
 * [Расширение шаблона](template_extending/README.md)
 * [Расширяем свое приложение](extend_your_application/README.md)
 * [Формы в Django](django_forms/README.md)
