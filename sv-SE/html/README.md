@@ -1,10 +1,10 @@
 # Introduktion till HTML
 
-What's a template, you may ask?
+Du kanske undrar vad en mall är?
 
-A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter because although each letter might contain a different message and be addressed to a different person, they will share the same format.
+En mall är en fil som vi kan återanvända för att presentera information med olika innehåll i ett konsekvent format – till exempel kan du använda en mall för att hjälpa dig att skriva ett brev. För även om varje brev kan innehålla olika meddelanden och adresseras till olika personer, kommer de att dela samma format.
 
-A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, **How the Internet works**).
+En Django-malls format skrivs på ett språk som heter HTML (det är den HTML vi nämnde i det första kapitlet, **Hur Internet fungerar**).
 
 ## What is HTML?
 
