@@ -6,30 +6,30 @@ En mall är en fil som vi kan återanvända för att presentera information med 
 
 En Django-malls format skrivs på ett språk som heter HTML (det är den HTML vi nämnde i det första kapitlet, **Hur Internet fungerar**).
 
-## What is HTML?
+## Vad är HTML?
 
-HTML is a code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
+HTML är kod som tolkas av din webbläsare – till exempel Chrome, Firefox eller Safari – för att visa en webbsida för användaren.
 
-HTML stands for "HyperText Markup Language". **HyperText** means it's a type of text that supports hyperlinks between pages. **Markup** means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with **tags**, each one starting with `<` and ending with `>`. These tags represent markup **elements**.
+HTML står för "HyperText Markup Language". **HyperText** betyder att det är en typ av text som stöder hyperlänkar mellan sidor. **Markup** betyder att vi har tagit ett dokument och markerat det med kod för att berätta något (i det här fallet, en webbläsare) hur man tolkar sidan. HTML-kod är byggd med **taggar**, var och en som börjar med `<` och slutar med `>`. Dessa taggar representerar markup-**element**.
 
-## Your first template!
+## Din första mall!
 
-Creating a template means creating a template file. Everything is a file, right? You have probably noticed this already.
+Att skapa en mall innebär att skapa en mallfil. Allt är en fil, eller hur? Du har förmodligen märkt detta redan.
 
-Templates are saved in `blog/templates/blog` directory. So first create a directory called `templates` inside your blog directory. Then create another directory called `blog` inside your templates directory:
+Mallar sparas i katalogen `blog/templates/blog` . Så skapa först en katalog som heter `templates` i katalogen blog. Skapa därefter en annan katalog som heter `blog` i din mallkatalog:
 
     blog
     └───templates
         └───blog
     
 
-(You might wonder why we need two directories both called `blog` – as you will discover later, this is a useful naming convention that makes life easier when things start to get more complicated.)
+(Du kanske undrar varför vi behöver två kataloger som båda heter `blog` – som du kommer att upptäcka senare är detta en användbar namnkonvention som gör livet lättare när saker och ting börjar bli mer komplicerade.)
 
-And now create a `post_list.html` file (just leave it blank for now) inside the `blog/templates/blog` directory.
+Skapa nu filen `post_list.html` (lämna den tom för nu) i katalogen `blog/templates/blog` .
 
-See how your website looks now: http://127.0.0.1:8000/
+Se nu hur din webbplats ser ut: http://127.0.0.1:8000/
 
-> If you still have an error `TemplateDoesNotExist`, try to restart your server. Go to the command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
+> Om du fortfarande får ett fel `TemplateDoesNotExist`, försök att starta om din server. Gå till kommandoraden, stoppa servern genom att trycka på Ctrl+C (Control- och C-tangenten tillsammans) och starta den igen genom att köra kommandot `python manage.py runserver`.
 
 ![Figur 11.1](images/step1.png)
 
