@@ -33,9 +33,9 @@ Se nu hur din webbplats ser ut: http://127.0.0.1:8000/
 
 ![Figur 11.1](images/step1.png)
 
-No error anymore! Congratulations :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
+Inga fel längre! Grattis :) Men din webbplats publicerar faktiskt inte något annat än en tom sida, eftersom din mall också är tom. Det måste vi åtgärda.
 
-Open the new file in the code editor, and add the following:
+Öppna den nya filen i kodeditorn, och lägg till följande:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -48,26 +48,26 @@ Open the new file in the code editor, and add the following:
 </html>
 ```
 
-So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
+Hur ser din webbplats ut nu? Besök den för att få veta: http://127.0.0.1:8000/
 
 ![Figur 11.2](images/step3.png)
 
-It worked! Nice work there :)
+Det fungerade! Bra jobbat :)
 
-* The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
-* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
+* Den mest grundläggande taggen, `<html>`, är alltid början på alla webbsidor och `</html>` är alltid slutet. Som du kan se finns hela innehållet på webbplatsen mellan starttaggen `<html>` och stängningstaggen `</html>`
+* `<p>` är en tagg för styckeelement; `</p>` avslutar varje stycke
 
-## Head and body
+## Head och body
 
-Each HTML page is also divided into two elements: **head** and **body**.
+Varje HTML-sida är också uppdelad i två element: **head** och **body**.
 
-* **head** is an element that contains information about the document that is not displayed on the screen.
+* **head** är ett element som innehåller information om dokumentet som inte visas på skärmen.
 
-* **body** is an element that contains everything else that is displayed as part of the web page.
+* **body** är ett element som innehåller allt annat som visas som en del av webbsidan.
 
-We use `<head>` to tell the browser about the configuration of the page, and `<body>` to tell it what's actually on the page.
+Vi använder `<head>` för att berätta för webbläsaren om konfigurationen av sidan, och `<body>` för att berätta vad som faktiskt finns på sidan.
 
-For example, you can put a web page title element inside the `<head>`, like this:
+Du kan till exempel lägga in en webbsidas titel-element i `<head>`, så här:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
