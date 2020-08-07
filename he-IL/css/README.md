@@ -1,22 +1,22 @@
-# CSS – make it pretty!
+# CSS – בואו נעשה את זה יפה!
 
 הבלוג שלנו עדיין נראה די מכוער, לא? הגיע הזמן לגרום לו להראות טוב! בשביל זה, נשתמש ב-CSS.
 
 ## מה זה CSS?
 
-Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
+CSS (Cascading Style Sheets, או בעברית - גליונות סגנון מדורגים) היא שפה המשמשת לתאר את המראה והעיצוב של אתר הכתוב בשפת markup (כמו HTML). תחשבו על זה כמו על איפור לדף אינטרנט שלנו. ;)
 
-But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
+אבל לא נרצה להתחיל את הכל מחדש, נכון? שוב פעם, נשתמש במשהו ששוחרר באינטרנט בחינם. להמציא את הגלגל זה לא כיף.
 
 ## בואי נשתמש ב-Bootstrap!
 
-Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
+Bootstrap היא אחת מחבילות ה-HTML ו-CSS הפופולריות ביותר ליצירה של אתרים יפים: https://getbootstrap.com/
 
-It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
+היא נכתבה על ידי מתכנתות.ים שעבדו בטוויטר, ועכשיו היא מפותחת ומתוחזקת על ידי מתנדבים מכל העולם!
 
 ## התקנת Bootstrap
 
-To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
+כדי להתקין את Bootstrap, עלינו לפתוח את קובץ ה`.html` בעורך הקוד ולהוסיף את זה לחלק ה`<head>`.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
