@@ -142,19 +142,19 @@ Här är ett exempel på en komplett mall, kopiera och klistra in den i `blog/te
 Vi har skapat tre `div`-sektioner här.
 
 * Det första `div`-elementet innehåller titeln på vår blogg – det är en rubrik och en länk
-* Another two `div` elements contain our blog posts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blog post.
+* Ytterligare två `div`-element innehåller våra blogginlägg med ett publiceringsdatum, `h2` med en titel som är klickbar och två `p` (stycke) med text, en för datum och en för vårt blogginlägg.
 
-It gives us this effect:
+Det ger oss denna effekt:
 
 ![Figur 11.4](images/step6.png)
 
-Yaaay! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
+Yaaay! Men hittills visar vår mall bara exakt **samma information** hela tiden – medan vi tidigare pratade om mallar som tillåter oss att visa **olika** information i **samma format**.
 
-What we really want to do is display real posts added in our Django admin – and that's where we're going next.
+Vad vi verkligen vill göra är att visa riktiga inlägg som lagts till i vår Django admin – och det är dit vi ska härnäst.
 
-## One more thing: deploy!
+## En sak till: driftsätt!
 
-It'd be good to see all this out and live on the Internet, right? Let's do another PythonAnywhere deploy:
+Det skulle vara bra att se allt detta leva på Internet, eller hur? Låt oss göra ytterligare en driftsättning på PythonAnywhere:
 
 ### Commit, and push your code up to GitHub
 
