@@ -1,15 +1,15 @@
-ניתן [ לדלג מיד על החלק הזה](http://tutorial.djangogirls.org/en/installation/#install-python) אם את/ה לא משתמש/ת בChromebook. אם כן, ההתקנה תהיה קצת שונה. באפשרותך להתעלם מהוראות ההתקנה אלו.
+ניתן [ לדלג מיד על החלק הזה](http://tutorial.djangogirls.org/en/installation/#install-python) אם אתם.ן לא משתמשים.ות בChromebook. אם כן, ההתקנה תהיה קצת שונה. באפשרותכן.ם להתעלם מהוראות ההתקנה אלו.
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud IDE הוא כלי שנותן לך עורך קוד וגישה למחשב הרץ על האינטרנט שעליו ניתן להוריד, לכתוב, ולהריץ תוכנות. במהלך המדריך, Cloud IDE ישמש כ*מחשב המקומי* שלך. עדיין תריצ/י פקודות בממשק הטרמינל בדיוק כמו שאר חבריך לכיתה בOS X, Ubuntu או Windows, אבל הטרמינל יהיה מחובר למחשב שפועל במקום אחר שcloud IDE מסדר בשבילך. הנה ההוראות לcloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). ניתן לבחור אחד מהcloud IDEs, ולעקוב אחר ההוראות של הcloud IDEs.
+Cloud IDE הוא כלי שנותן לך עורך קוד וגישה למחשב הרץ על האינטרנט שעליו ניתן להוריד, לכתוב, ולהריץ תוכנות. במהלך המדריך, Cloud IDE ישמש כ*מחשב המקומי* שלך. עדיין תריצ.י פקודות בממשק הטרמינל בדיוק כמו שאר חבריך לכיתה בOS X, Ubuntu או Windows, אבל הטרמינל יהיה מחובר למחשב שפועל במקום אחר שcloud IDE מסדר בשבילך. הנה ההוראות לcloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). ניתן לבחור אחד מהcloud IDEs, ולעקוב אחר ההוראות של הcloud IDEs.
 
 #### PaizaCloud Cloud IDE
 
-1. לכ/י ל[PaizaCloud Cloud IDE](https://paiza.cloud/)
-2. הירשמ/י ליצירת חשבון
-3. Click *New Server* and choose the Django app
-4. Click Terminal button(on the left side of the window)
+1. לכו ל [PaizaCloud Cloud IDE](https://paiza.cloud/)
+2. הירשמו ליצירת חשבון
+3. לחצו *שרת חדש* ובחרו באפליקציית הDjango
+4. לחצו על כפתור הטרמינל (בצד שמאל של החלון)
 
 Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
 
@@ -43,7 +43,7 @@ Now you should see an interface with a sidebar, a big main window with some text
 
 This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
 
-### Virtual Environment
+### סביבה וירטואלית
 
 A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
@@ -62,7 +62,7 @@ Run:
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+צרו חשבון [GitHub](https://github.com).
 
 ### PythonAnywhere
 
