@@ -83,11 +83,11 @@ Du kan till exempel lägga in en webbsidas titel-element i `<head>`, så här:
 </html>
 ```
 
-Save the file and refresh your page.
+Spara filen och ladda om sidan.
 
 ![Figur 11.3](images/step4.png)
 
-Notice how the browser has understood that "Ola's blog" is the title of your page? It has interpreted `<title>Ola's blog</title>` and placed the text in the title bar of your browser (it will also be used for bookmarks and so on).
+Märker du hur webbläsaren har förstått att "Ola's blog" är titeln på din sida? Den har tolkat `<title>Ola's blog</title>` och placerat texten i titelfältet i din webbläsare (den kommer också att användas för bokmärken och så vidare).
 
 Probably you have also noticed that each opening tag is matched by a *closing tag*, with a `/`, and that elements are *nested* (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
 
