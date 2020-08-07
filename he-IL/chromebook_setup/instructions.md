@@ -1,13 +1,13 @@
-ניתן [ לדלג מיד על החלק הזה](http://tutorial.djangogirls.org/en/installation/#install-python) אם אתן/ם לא משתמשות/ים בChromebook אם כן, ההתקנה תהיה קצת שונה. באפשרותך להתעלם מהוראות ההתקנה אלו.
+ניתן [ לדלג מיד על החלק הזה](http://tutorial.djangogirls.org/en/installation/#install-python) אם את/ה לא משתמש/ת בChromebook. אם כן, ההתקנה תהיה קצת שונה. באפשרותך להתעלם מהוראות ההתקנה אלו.
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud IDE הוא כלי שנותן לך עורך קוד וגישה למחשב הרץ על האינטרנט שעליו ניתן להוריד, לכתוב, ולהריץ תוכנות. For the duration of the tutorial, cloud IDE will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
+Cloud IDE הוא כלי שנותן לך עורך קוד וגישה למחשב הרץ על האינטרנט שעליו ניתן להוריד, לכתוב, ולהריץ תוכנות. במהלך המדריך, Cloud IDE ישמש כ*מחשב המקומי* שלך. עדיין תריצ/י פקודות בממשק הטרמינל בדיוק כמו שאר חבריך לכיתה בOS X, Ubuntu או Windows, אבל הטרמינל יהיה מחובר למחשב שפועל במקום אחר שcloud IDE מסדר בשבילך. הנה ההוראות לcloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). ניתן לבחור אחד מהcloud IDEs, ולעקוב אחר ההוראות של הcloud IDEs.
 
 #### PaizaCloud Cloud IDE
 
-1. Go to [PaizaCloud Cloud IDE](https://paiza.cloud/)
-2. Sign up for an account
+1. לכ/י ל[PaizaCloud Cloud IDE](https://paiza.cloud/)
+2. הירשמ/י ליצירת חשבון
 3. Click *New Server* and choose the Django app
 4. Click Terminal button(on the left side of the window)
 
