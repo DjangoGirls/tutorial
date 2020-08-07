@@ -214,4 +214,4 @@ Se nu hur din kod laddas ner. Om du vill kontrollera att den har anlänt, kan du
 
 * Slutligen, hoppa över till sidan ["Web"](https://www.pythonanywhere.com/web_app_setup/) och klicka på **Reload** på din webbapp.
 
-Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
+Din uppdatering bör vara live! Gå vidare och uppdatera din webbsida webbläsaren. Ändringarna bör vara synliga. :)
