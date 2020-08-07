@@ -156,25 +156,25 @@ Vad vi verkligen vill göra är att visa riktiga inlägg som lagts till i vår D
 
 Det skulle vara bra att se allt detta leva på Internet, eller hur? Låt oss göra ytterligare en driftsättning på PythonAnywhere:
 
-### Commit, and push your code up to GitHub
+### Commita och pusha din kod till GitHub
 
-First off, let's see what files have changed since we last deployed (run these commands locally, not on PythonAnywhere):
+Allra först, låt oss se vilka filer som har ändrats sedan vi senast driftsatte (kör dessa kommandon lokalt, inte på PythonAnywhere):
 
 {% filename %}command-line{% endfilename %}
 
     $ git status
     
 
-Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes in this directory:
+Se till att du är i katalogen `djangogirls` och säg till `git` att inkludera alla ändringar i denna katalog:
 
 {% filename %}command-line{% endfilename %}
 
     $ git add --all .
     
 
-> **Note** `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Also remember (from chapter 3) that `.` means the current directory.
+> **OBS** `--all` betyder att `git` också kommer att märka om du har raderat filer (som standard märker den bara nya/modifierade filer). Kom också ihåg (från kapitel 3) att `.` betyder den aktuella katalogen.
 
-Before we upload all the files, let's check what `git` will be uploading (all the files that `git` will upload should now appear in green):
+Innan vi laddar upp alla filer, låt oss kontrollera vad `git` kommer att ladda upp (alla filer som `git` kommer ladda upp ska visas i grönt):
 
 {% filename %}command-line{% endfilename %}
 
