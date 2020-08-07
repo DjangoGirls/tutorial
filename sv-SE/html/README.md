@@ -181,25 +181,25 @@ Innan vi laddar upp alla filer, låt oss kontrollera vad `git` kommer att ladda 
     $ git status
     
 
-We're almost there, now it's time to tell it to save this change in its history. We're going to give it a "commit message" where we describe what we've changed. You can type anything you'd like at this stage, but it's helpful to type something descriptive so that you can remember what you've done in the future.
+Vi är nästan klara, nu är det dags att berätta för git att spara den här förändringen i dess historik. Vi kommer att ange ett "commit-meddelande" där vi beskriver vad vi har ändrat. Du kan skriva vad du vill i detta skede, men det är bra att skriva något beskrivande så att du i framtiden kan komma ihåg vad du har gjort.
 
 {% filename %}command-line{% endfilename %}
 
     $ git commit -m "Changed the HTML for the site."
     
 
-> **Note** Make sure you use double quotes around the commit message.
+> **OBS** Kontrollera att du använder dubbla citattecken runt commit-meddelandet.
 
-Once we've done that, we upload (push) our changes up to GitHub:
+När vi har gjort det så laddar vi upp (pushar) våra ändringar till GitHub:
 
 {% filename %}command-line{% endfilename %}
 
     $ git push
     
 
-### Pull your new code down to PythonAnywhere, and reload your web app
+### Dra ner din nya kod till PythonAnywhere och ladda om din webbapp
 
-* Open up the [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one). Then, run:
+* Öppna sidan [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/) och gå till din **Bash-konsol** (eller starta en ny). Kör sedan:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -208,10 +208,10 @@ Once we've done that, we upload (push) our changes up to GitHub:
     [...]
     
 
-You'll need to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain name, without the angle-brackets. Your subdomain name is normally your PythonAnywhere user name, but in some cases it might be a bit different (such as if your user name contains capital letters). So if this command doesn't work, use the `ls` (list files) command to find your actual subdomain/folder name, and then `cd` to there.
+Du måste ersätta `<your-pythonanywhere-domain>` med ditt faktiska subdomännamn utan vinkelparenteser. Ditt subdomännamn är normalt sett ditt användarnamn på PythonAnywhere men i vissa fall kan det vara lite annorlunda (t.ex. om ditt användarnamn innehåller stora bokstäver). Så om detta kommando inte fungerar, använd kommandot `ls` (listar filer) för att hitta din faktiska subdomän/mappnamn och kör `cd` dit.
 
-Now watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **"Files" page** and view your code on PythonAnywhere (you can reach other PythonAnywhere pages from the menu button on the console page).
+Se nu hur din kod laddas ner. Om du vill kontrollera att den har anlänt, kan du hoppa över till sidan **"Files"** och visa din kod på PythonAnywhere (du kan nå andra PythonAnywhere-sidor från menyknappen på konsolsidan).
 
-* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
+* Slutligen, hoppa över till sidan ["Web"](https://www.pythonanywhere.com/web_app_setup/) och klicka på **Reload** på din webbapp.
 
 Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
