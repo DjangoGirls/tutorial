@@ -99,18 +99,18 @@ Du måste följa dessa regler för *stängnings*-taggar, och för *nästlade* el
 
 Du kan nu ha lite skoj och försöka anpassa din mall! Här är några användbara taggar:
 
-* `<h1>A heading</h1>` för din viktigaste rubrik
-* `<h2>A sub-heading</h2>` for a heading at the next level
-* `<h3>A sub-sub-heading</h3>` …and so on, up to `<h6>`
-* `<p>A paragraph of text</p>`
-* `<em>text</em>` emphasizes your text
-* `<strong>text</strong>` strongly emphasizes your text
-* `<br>` goes to another line (you can't put anything inside br and there's no closing tag)
-* `<a href="https://djangogirls.org">link</a>` creates a link
-* `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
-* `<div></div>` defines a section of the page
+* `<h1>En rubrik</h1>` för din viktigaste rubrik
+* `<h2>En underrubrik</h2>` för en rubrik på nästa nivå
+* `<h3>En under-underrubrik</h3>` …och så vidare, upp till `<h6>`
+* `<p>Ett stycke text</p>`
+* `<em>text</em>` betonar din text
+* `<strong>text</strong>` betonar starkt din text
+* `<br>` går till en annan rad (du kan inte sätta något inuti br och det finns ingen stängningstagg)
+* `<a href="https://djangogirls.org">länk</a>` skapar en länk
+* `<ul><li>första elementet</li><li>andra elementet</li></ul>` skapar en lista, precis som denna!
+* `<div></div>` definierar ett avsnitt på sidan
 
-Here's an example of a full template, copy and paste it into `blog/templates/blog/post_list.html`:
+Här är ett exempel på en komplett mall, kopiera och klistra in den i `blog/templates/blog/post_list.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -139,9 +139,9 @@ Here's an example of a full template, copy and paste it into `blog/templates/blo
 </html>
 ```
 
-We've created three `div` sections here.
+Vi har skapat tre `div`-sektioner här.
 
-* The first `div` element contains the title of our blog – it's a heading and a link
+* Det första `div`-elementet innehåller titeln på vår blogg – det är en rubrik och en länk
 * Another two `div` elements contain our blog posts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blog post.
 
 It gives us this effect:
