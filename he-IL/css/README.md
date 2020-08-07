@@ -25,7 +25,7 @@ Bootstrap היא אחת מחבילות ה-HTML ו-CSS הפופולריות בי�
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
+זה לא מוסיף קבצים לפרויקט שלך; זה פשוט מצביע לקבצים קיימים באינטרנט. אז פשוט לכו על זה, תפתחו את הדפדפן, תרעננו את העמוד, והנה!
 
 ![תמונה 14.1](images/bootstrap1.png)
 
@@ -33,7 +33,7 @@ This doesn't add any files to your project. It just points to files that exist o
 
 ## קבצים סטטיים ב Django
 
-סוף-סוף אנחנו יכולים להתעמק במה שנקרא **קבצים סטטיים** (או בעברית, קבועים). Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
+סוף-סוף אנחנו יכולים להתעמק במה שנקרא **קבצים סטטיים** (או בעברית, קבועים). קבצים סטטיים הם כל התמונות וקבצי הCSS. Their content doesn't depend on the request context and will be the same for every user.
 
 ### איפה לשים קבצים סטטיים בג'נגו
 
@@ -45,15 +45,15 @@ Django already knows where to find the static files for the built-in "admin" app
     ├── blog
     │   ├── migrations
     │   ├── static
-    │   └── templates
+    │   └── templates
     └── mysite
     
 
-Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
+Django ימצא באופן אוטומטי את כל התיקיות בשם "static" בתוך כל אחת מהתיקיות של האפליקציה. ואז הוא יוכל להשתמש בתוכן שלהם כקבצים סטטיים.
 
 ## קובץ ה-CSS הראשון שלך!
 
-Let's create a CSS file now, to add your own style to your web page. תייצרי תיקייה חדשה בשם `css` בתוך תיקייה ה-`static` שלך. עכשיו, תייצרי קובץ חדש בשם `blog.css` בתוך תיקיית ה-`css`. Ready?
+בואו ניצור קובץ CSS עכשיו, כדי להוסיף את סטייל אישי לעמוד. תייצרי תיקייה חדשה בשם `css` בתוך תיקייה ה-`static` שלך. עכשיו, תייצרי קובץ חדש בשם `blog.css` בתוך תיקיית ה-`css`. Ready?
 
     djangogirls
     └─── blog
@@ -292,11 +292,11 @@ h1, h2, h3, h4 {
 </div>
 ```
 
-תשמרי את הקבצים ותרענני את העמוד.
+שמרו את הקבצים האלו ותרעננו את האתר.
 
 ![תמונה 14.4](images/final.png)
 
-Woohoo! Looks awesome, right? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
+ווהו! נראה מדהים, נכון? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
 
 Don't be afraid to tinker with this CSS a little bit and try to change some things. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry – you can always undo it!
 
