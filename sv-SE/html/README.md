@@ -87,19 +87,19 @@ Spara filen och ladda om sidan.
 
 ![Figur 11.3](images/step4.png)
 
-Märker du hur webbläsaren har förstått att "Ola's blog" är titeln på din sida? Den har tolkat `<title>Ola's blog</title>` och placerat texten i titelfältet i din webbläsare (den kommer också att användas för bokmärken och så vidare).
+Märkte du hur webbläsaren har förstått att "Ola's blog" är titeln på din sida? Den har tolkat `<title>Ola's blog</title>` och placerat texten i titelfältet i din webbläsare (den kommer också att användas för bokmärken och så vidare).
 
-Probably you have also noticed that each opening tag is matched by a *closing tag*, with a `/`, and that elements are *nested* (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
+Förmodligen har du också märkt att varje öppningstagg matchas av en *stängningstagg*, med ett `/`, och att elementen är *nästlade* (dvs du kan inte stänga en viss tagg förrän alla som var inne i den också har stängts).
 
-It's like putting things into boxes. You have one big box, `<html></html>`; inside it there is `<body></body>`, and that contains still smaller boxes: `<p></p>`.
+Det är som att lägga saker i lådor. Du har en stor låda, `<html></html>`; inuti den finns `<body></body>`, och den innehåller ännu mindre lådor: `<p></p>`.
 
-You need to follow these rules of *closing* tags, and of *nesting* elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
+Du måste följa dessa regler för *stängnings*-taggar, och för *nästlade* element – om du inte gör det kan webbläsaren kanske inte tolka dem korrekt och din sida kommer att visas felaktigt.
 
-## Customize your template
+## Anpassa din mall
 
-You can now have a little fun and try to customize your template! Here are a few useful tags for that:
+Du kan nu ha lite skoj och försöka anpassa din mall! Här är några användbara taggar:
 
-* `<h1>A heading</h1>` for your most important heading
+* `<h1>A heading</h1>` för din viktigaste rubrik
 * `<h2>A sub-heading</h2>` for a heading at the next level
 * `<h3>A sub-sub-heading</h3>` …and so on, up to `<h6>`
 * `<p>A paragraph of text</p>`
