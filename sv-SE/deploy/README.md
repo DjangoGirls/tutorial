@@ -86,23 +86,23 @@ Och slutligen sparar vi våra ändringar. Gå till din konsol och kör dessa kom
      create mode 100644 mysite/wsgi.py
     
 
-## Skjuta din kod till GitHub
+## Pusha din kod till GitHub
 
 Gå till [GitHub.com](https://www.github.com) och registrera dig för ett nytt, gratis användarkonto. (Om du redan gjorde det under workshop-förberedelserna är det toppen! Se till att komma ihåg ditt lösenord (lägg till det i din lösenordshanterare, om du använder en).
 
-Skapa sedan en ny databas och ge den namnet ”my-first-blog”. Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+Skapa sedan en ny databas och ge den namnet ”my-first-blog”. Lämna kryssrutan "initialize with a README" urbockad, lämna fältet för .gitignore tomt (vi har gjort det manuellt) och låt licensen vara "None".
 
 ![](images/new_github_repo.png)
 
-> **Note** The name `my-first-blog` is important – you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. It's probably easier to stick with the name `my-first-blog`.
+> **Obs** Namnet `my-first-blog` är viktigt – du kan välja något annat, men det kommer att inträffa massor av gånger i instruktionerna nedan, och du skulle behöva ersätta det varje gång. Det är nog lättare att hålla sig till namnet `my-first-blog`.
 
-On the next screen, you'll be shown your repo's clone URL, which you will use in some of the commands that follow:
+På nästa skärm kommer ditt repos klonings-URL visas, den kommer du att använda i några av de kommandon som följer:
 
 ![](images/github_get_repo_url_screenshot.png)
 
-Now we need to hook up the Git repository on your computer to the one up on GitHub.
+Nu måste vi koppla upp Git-repot på din dator med det på GitHub.
 
-Type the following into your console (replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets -- the URL should match the clone URL you just saw):
+Skriv in följande i konsolen (ersätt `<your-github-username>` med det användarnamn du angav när du skapade ditt GitHub-konto, men utan vinkelparenteserna -- URL:en ska matcha den klonings-URL du just såg):
 
 {% filename %}command-line{% endfilename %}
 
@@ -110,7 +110,7 @@ Type the following into your console (replace `<your-github-username>` with the 
     $ git push -u origin master
     
 
-When you push to GitHub, you'll be asked for your GitHub username and password (either right there in the command-line window or in a pop-up window), and after entering credentials you should see something like this:
+När du pushar till GitHub kommer du bli ombedd att fylla i ditt användarnamn och lösenord (antingen direkt där i kommandoradsfönstret eller i ett popup-fönster) och efter att du har angett uppgifterna bör du se något som det här:
 
 {% filename %}command-line{% endfilename %}
 
@@ -125,7 +125,7 @@ When you push to GitHub, you'll be asked for your GitHub username and password (
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 
-Your code is now on GitHub. Go and check it out! You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
+Din kod är nu på GitHub. Gå och kolla in den! Du kommer se att den är i gott sällskap – [Django](https://github.com/django/django), [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial) och många andra stora projekt med öppen källkod har sin kod på GitHub. :)
 
 # Setting up our blog on PythonAnywhere
 
