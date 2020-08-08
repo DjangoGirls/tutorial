@@ -50,9 +50,9 @@ Och spara den som `.gitignore` i topp-nivån av mappen "djangogirls".
 
 > **Obs** Punkten i början av filnamnet är viktigt! Om du får problem med att skapa filen (Mac-datorer gillar inte att du skapar filer som börjar med en punkt via Finder, till exempel), använd funktionen "Spara som" i din redaktör; det är skottsäkert. Och var noga med att inte lägga till `.txt`, `.py` eller någon annan tillägg till filnamnet - det kommer endast att erkännas av Git om namnet bara är `.gitignore`. Linux och MacOS hanterar filer med ett namn som börjar med `.` (t.ex. `.gitignore`) som dolda och det normala `ls` kommandot kommer inte att visa dessa filer. Använd istället `ls -a` för att se filen `.gitignore`
 > 
-> **Obs** En av de filer du angav i din `.gitignore`-fil är `db.sqlite3`. Den filen är din lokala databas, där alla dina användare och inlägg lagras. Vi följer standard-praxis för webbprogrammering, vilket innebär att vi använder separata databaser för din lokala testsite och din live-webbplats på PythonAnywhere. PythonAnywhere-databasen kan vara SQLite, som på din utvecklingsmaskin, men oftast kommer du att använda en som kallas MySQL som kan hantera många fler besökare än SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts and superuser you created so far are going to only be available locally, and you'll have to create new ones on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
+> **Obs** En av de filer du angav i din `.gitignore`-fil är `db.sqlite3`. Den filen är din lokala databas, där alla dina användare och inlägg lagras. Vi följer standard-praxis för webbprogrammering, vilket innebär att vi använder separata databaser för din lokala testsite och din live-webbplats på PythonAnywhere. PythonAnywhere-databasen kan vara SQLite, som på din utvecklingsmaskin, men oftast kommer du att använda en som kallas MySQL som kan hantera många fler besökare än SQLite. Hursomhelst, genom att ignorera din SQLite-databas för GitHub-kopian kommer alla de inlägg och superanvändare du skapat hittills endast att vara tillgängliga lokalt, och du måste skapa nya i produktion. Du bör se din lokala databas som en bra lekplats där du kan testa olika saker och inte vara rädd för att du kommer att ta bort dina riktiga inlägg från din blogg.
 
-Det är en bra idé att använda kommandot `git status` före `git add` eller om du är osäker på vad som har förändrats. Detta kommer hjälpa till att förhindra att överraskningar inträffar, till exempel att fel filer läggs till eller commitas. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. Resultatet bör likna följande:
+Det är en bra idé att använda kommandot `git status` före `git add` eller om du är osäker på vad som har förändrats. Detta kommer hjälpa till att förhindra att överraskningar inträffar, till exempel att fel filer läggs till eller commitas. Kommandot `git status` returnerar information om alla ospårade/modifierade/incheckade filer, gren-status och mycket mer. Resultatet bör likna följande:
 
 {% filename %}command-line{% endfilename %}
 
@@ -88,9 +88,9 @@ Och slutligen sparar vi våra ändringar. Gå till din konsol och kör dessa kom
 
 ## Skjuta din kod till GitHub
 
-Gå till [GitHub.com](https://www.github.com) och anmäl dig för en ny, gratis användarkonto. (Om du gjorde det redan i workshop prep, det är bra!) Se till att komma ihåg ditt lösenord (lägga till i din lösenordshanterare, om du använder en).
+Gå till [GitHub.com](https://www.github.com) och registrera dig för ett nytt, gratis användarkonto. (Om du redan gjorde det under workshop-förberedelserna är det toppen! Se till att komma ihåg ditt lösenord (lägg till det i din lösenordshanterare, om du använder en).
 
-Skapa sedan en ny databas, ge det namnet ”my-first-blog”. Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+Skapa sedan en ny databas och ge den namnet ”my-first-blog”. Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
 
 ![](images/new_github_repo.png)
 
