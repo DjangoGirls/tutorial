@@ -34,13 +34,13 @@ Först måste vi importera Django-formulär (`from django import forms`) och vå
 
 `PostForm`, som du förmodligen anar, är namnet på vårt formulär. Vi måste berätta för Django att detta formulär är en `ModellForm` (så Django kommer att göra lite magi för oss) – `forms.ModelForm` är ansvarig för det.
 
-Next, we have `class Meta`, where we tell Django which model should be used to create this form (`model = Post`).
+Därefter har vi `class Meta`, där vi berättar för Django vilken modell som ska användas för att skapa detta formulär (`model = Post`).
 
-Finally, we can say which field(s) should end up in our form. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
+Slutligen kan vi säga vilka fält som ska finnas i vårt formulär. I det här scenariot vill vi endast att `title` och `text` ska exponeras – `author` ska vara den person som för närvarande är inloggad (du! och `created_date` bör automatiskt ställas in när vi skapar ett inlägg (dvs i koden), eller hur?
 
-And that's it! All we need to do now is use the form in a *view* and display it in a template.
+Och det är det! Allt vi behöver göra nu är att använda formuläret i en *view* och visa det i en mall.
 
-So once again we will create a link to the page, a URL, a view and a template.
+Så återigen kommer vi att skapa en länk till sidan, en URL, en vy och en mall.
 
 ## Link to a page with the form
 
