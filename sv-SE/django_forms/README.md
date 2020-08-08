@@ -1,20 +1,20 @@
-# Django Forms
+# Django-formulär
 
-The final thing we want to do on our website is create a nice way to add and edit blog posts. Django's `admin` is cool, but it is rather hard to customize and make pretty. With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
+Det sista vi vill göra på vår hemsida är att skapa ett trevligt sätt att lägga till och redigera blogginlägg. Djangos `admin` är cool, men den är ganska svår att anpassa och få snygg. Med `forms` kommer vi att ha absolut makt över vårt gränssnitt – vi kan göra nästan vad som helst som vi kan föreställa oss!
 
-The nice thing about Django forms is that we can either define one from scratch or create a `ModelForm` which will save the result of the form to the model.
+Det fina med Django-formulär är att vi antingen kan definiera ett från grunden eller skapa en `ModelForm` som kommer att spara resultatet från formuläret till modellen.
 
-This is exactly what we want to do: we will create a form for our `Post` model.
+Detta är exakt vad vi vill göra: vi kommer att skapa ett formulär för vår `Post`-modell.
 
-Like every important part of Django, forms have their own file: `forms.py`.
+Precis som varje viktig del i Django har formulär sin egen fil: `forms.py`.
 
-We need to create a file with this name in the `blog` directory.
+Vi måste skapa en fil med det namnet i katalogen `blog` .
 
     blog
        └── forms.py
     
 
-OK, let's open it in the code editor and type the following code:
+OK, låt oss öppna den i kodredigeraren och skriv följande kod:
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -30,9 +30,9 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
+Först måste vi importera Django-formulär (`from django import forms`) och vår `Post`-modell (`from .models import Post`).
 
-`PostForm`, as you probably suspect, is the name of our form. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
+`PostForm`, som du förmodligen anar, är namnet på vårt formulär. Vi måste berätta för Django att detta formulär är en `ModellForm` (så Django kommer att göra lite magi för oss) – `forms.ModelForm` är ansvarig för det.
 
 Next, we have `class Meta`, where we tell Django which model should be used to create this form (`model = Post`).
 
