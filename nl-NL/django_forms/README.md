@@ -220,9 +220,9 @@ if form.is_valid():
     post.save()
 ```
 
-Basically, we have two things here: we save the form with `form.save` and we add an author (since there was no `author` field in the `PostForm` and this field is required). `commit=False` means that we don't want to save the `Post` model yet – we want to add the author first. Most of the time you will use `form.save()` without `commit=False`, but in this case, we need to supply it. `post.save()` will preserve changes (adding the author) and a new blog post is created!
+Er gebeuren hier eigenlijk twee dingen: we slaan het formulier op met `form.save` én we voegen een auteur toe (omdat er geen `author` veld in de `PostForm` zat, maar dit veld is wel verplicht). `commit=False` betekent dat we het `Post` model nog niet willen opslaan - we willen eerst de auteur toevoegen. Meestal gebruik je `form.save()` zonder `commit=False`, maar in dit geval gebruiken we het wel. `post.save()` slaat de wijzigingen (het toevoegen van de auteur) op. Je hebt een nieuwe blog post!
 
-Finally, it would be awesome if we could immediately go to the `post_detail` page for our newly created blog post, right? To do that we need one more import:
+Tot slot zou het gaaf zijn als we meteen naar de `post_detail` pagina voor onze nieuwe post zouden kunnen gaan, toch? Daarvoor hebben we nog een extra import nodig:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -230,7 +230,7 @@ Finally, it would be awesome if we could immediately go to the `post_detail` pag
 from django.shortcuts import redirect
 ```
 
-Add it at the very beginning of your file. And now we can say, "go to the `post_detail` page for the newly created post":
+Voeg dit helemaal aan het begin van je bestand toe. Nu kunnen we de opdracht geven: "ga naar de `post_detail` pagina voor de nieuw aangemaakte post":
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -238,9 +238,9 @@ Add it at the very beginning of your file. And now we can say, "go to the `post_
 return redirect('post_detail', pk=post.pk)
 ```
 
-`post_detail` is the name of the view we want to go to. Remember that this *view* requires a `pk` variable? To pass it to the views, we use `pk=post.pk`, where `post` is the newly created blog post!
+`post_detail` is de naam van de view waar we heen willen. Herinner je je nog dat deze *view* een `pk` variabele vereist? Om dit door te geven aan de views gebruiken we `pk=post.pk`, waar `post` de blogpost die je net hebt gemaakt is.
 
-OK, we've talked a lot, but we probably want to see what the whole *view* looks like now, right?
+Ok, genoeg gepraat. Je wil waarschijnlijk weten hoe de *view* er nu uit ziet, toch?
 
 {% filename %}blog/views.py{% endfilename %}
 
