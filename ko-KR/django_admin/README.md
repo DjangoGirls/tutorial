@@ -1,8 +1,8 @@
 # Django 관리자
 
-To add, edit and delete the posts we've just modeled, we will use Django admin.
+우리가 모델링한 포스트를 더하거나 고치거나 삭제하기 위해서는, Django의 admin기능을 사용해야 합니다.
 
-Let's open the `blog/admin.py` file in the code editor and replace its contents with this:
+코드 에디터에서 `blog/admin.py`파일을 열고 이것으로 교체하세요:
 
 {% filename %}blog/admin.py{% endfilename %}
 
