@@ -30,7 +30,7 @@
 <!--sec data-title="Virtual environment: Windows" data-id="virtualenv_installation_windows"
 data-collapse=true ces-->
 
-За да създадете нов `virtualenv `, трябва да отворите командния ред и да стартирате `python -m venv myvenv`. Ще изглежда така:
+За да създадеш нов `virtualenv`, трябва да отвориш командния ред и да стартираш `python -m venv myvenv`. Ще изглежда така:
 
 {% filename %}command-line{% endfilename %}
 
@@ -154,7 +154,7 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-Ще разберете, че виртуалната ви среда е стартирана като видите подсказването в конзолата ви, което започва с `(myvenv)`.
+Ще разбереш, че `virtualenv` е стартирана като видиш че подканата в конзолата ти започва с `(myvenv)`.
 
 Когато работите от виртуална среда, `python` автоматично ще се насочи към правилната версия, така че може да използвате команда `python` вместо `python3`.
 
