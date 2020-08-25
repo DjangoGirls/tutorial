@@ -1,6 +1,6 @@
 > Част от този раздел е базиран на ръководства от Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
-> Част от този раздел е базирана на [django-marcador ръководство](http://django-marcador.keimlink.de/) лицензиран съгласно Creative Commons Attribution-ShareAlike 4.0 International License. Урокът за джанго-маркадор е защитен с авторско право от Markus Zapke-Gründemann et al.
+> Част от този раздел е базирана на [django-marcador ръководство](http://django-marcador.keimlink.de/) лицензиран съгласно Creative Commons Attribution-ShareAlike 4.0 International License. Ръководството django-marcador е защитено с авторско право от Markus Zapke-Gründemann et al.
 
 ## Виртуална среда
 
@@ -12,7 +12,7 @@
 
 > **ЗАБЕЛЕЖКА:** В Windows се уверете, че тази директория не съдържа акцентирани или специални знаци; ако вашето потребителско име съдържа символи с ударение, използвайте друга директория, например, `C:\djangogirls`.
 
-За този урок ще използваме нова директория `djangogirls` от вашата домашна директория:
+За това ръководство ще използваме нова директория `djangogirls` от вашата домашна директория:
 
 {% filename %}command-line{% endfilename %}
 
