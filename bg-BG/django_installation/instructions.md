@@ -1,6 +1,6 @@
-> Част от този раздел е базиран на уроци от Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> Част от този раздел е базиран на ръководства от Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
-> Част от този раздел е базиран на [ django-marcador    урок ](http://django-marcador.keimlink.de/) лицензиран съгласно Creative Commons    Attribution-ShareAlike 4.0 международен лиценз. Урокът за джанго-маркадор е защитен с авторско право от Markus Zapke-Gründemann et al.
+> Част от този раздел е базирана на [django-marcador ръководство](http://django-marcador.keimlink.de/) лицензиран съгласно Creative Commons Attribution-ShareAlike 4.0 International License. Урокът за джанго-маркадор е защитен с авторско право от Markus Zapke-Gründemann et al.
 
 ## Виртуална среда
 
