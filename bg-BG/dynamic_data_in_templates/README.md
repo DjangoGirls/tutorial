@@ -58,8 +58,8 @@ def post_list(request):
 
 За да покажем нашия QuerySet в списъка с публикации на нашия блог, ни остават две неща:
 
-1. Pass the `posts` QuerySet to the template context, by changing the `render` function call. We'll do this now.
-2. Modify the template to display the `posts` QuerySet. We'll cover this in a later chapter.
+1. Натиснете `posts` QuerySet в контекста на шаблона, като промените функцията `render`. Ще направим това сега.
+2. Променете шаблона да показва `posts` QuerySet. Ще разгледаме това в следващата глава.
 
 Моля забележете, че създадохме променлива за нашия QuerySet: `posts`. Ползвайте това като име на нашия QuerySet. От сега нататък можем да се отнасяме към него с това име.
 
