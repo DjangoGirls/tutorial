@@ -128,7 +128,7 @@ data-collapse=true ces-->
 >     $ . myvenv\Scripts\activate.ps1
 >     
 > 
-> Предимството е, че не трябва да сменяте прозорците между IDE и command-line.
+> Предимството е, че не е необходимо да сменяте между прозорците на IDE и командния ред.
 
 <!--endsec-->
 
@@ -212,7 +212,7 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Вашият command line може да забие след като се опитате да инсталирате Django. Ако това се случи напишете следната команда вместо горната:
+> Вашият команден ред може да забие след като се опитате да инсталирате Django. Ако това се случи, използвайте следната команда вместо горната:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
