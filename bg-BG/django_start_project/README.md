@@ -2,7 +2,7 @@
 
 > Част от тази глава е базирана на ръководства от Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
-> Части от тази глава се основават на [django-marcador tutorial](http://django-marcador.keimlink.de/), лицензиран съгласно лиценза Creative Commons Attribution-ShareAlike 4.0 International. Ръководството на django-marcador е защитено с авторско право от Markus Zapke-Gründemann et al.
+> Части от тази глава са базирани на [django-marcador ръководство](http://django-marcador.keimlink.de/), лицензирано съгласно лиценза Creative Commons Attribution-ShareAlike 4.0 International. Ръководството на django-marcador е защитено с авторско право от Markus Zapke-Gründemann et al.
 
 Ще създадем малък блог!
 
