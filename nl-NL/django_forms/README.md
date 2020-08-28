@@ -265,15 +265,15 @@ Het is je misschien opgevallen dat we de publicatiedatum vaststellen voordat we 
 
 Dat is geweldig!
 
-> Omdat we recent de Django admin interface hebben gebruikt, denkt het systeem dat we nog steeds ingelogd zijn. Er zijn nog een paar situaties die ertoe kunnen leiden dat we uitgelogd worden (bijv: de browser afsluiten, de DB herstarten en dergelijke) If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
+> Omdat we recent de Django admin interface hebben gebruikt, denkt het systeem dat we nog steeds ingelogd zijn. Er zijn nog een paar situaties die ertoe kunnen leiden dat we uitgelogd worden (bijv: de browser afsluiten, de DB herstarten en dergelijke) Als je bij het aanmaken van een bericht je foutmeldingen krijgt die wijzen op het ontbreken van een ingelogde gebruiker, ga dan naar de admin pagina http://127.0.0.1:8000/admin en log opnieuw in. Dit zal het probleem tijdelijk oplossen. In ** Huiswerk: voeg beveiliging toe aan je website!** werken we aan een permanente oplossing
 
-![Logged in error](images/post_create_error.png)
+![Inlog fout](images/post_create_error.png)
 
-## Form validation
+## Formulier checken
 
-Now, we will show you how cool Django forms are. A blog post needs to have `title` and `text` fields. In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
+Nu zullen we laten zien hou cool Django formulieren zijn. Een bericht moet een `title` en `text` veld hebben. In ons `Post` model hebben we niet gespecificeerd dat deze velden verplicht zijn (in tegenstelling tot `published_date`) hierdoor gaat Django er standaard vanuit dat ze gezet zijn
 
-Try to save the form without `title` and `text`. Guess what will happen!
+Probeer het formulier maar eens op te slaan zonder `title` en `text`. Raad eens wat er gebeurt!
 
 ![Form validation](images/form_validation2.png)
 
