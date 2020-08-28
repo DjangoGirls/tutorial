@@ -277,13 +277,13 @@ Probeer het formulier maar eens op te slaan zonder `title` en `text`. Raad eens 
 
 ![Form validation](images/form_validation2.png)
 
-Django is taking care to validate that all the fields in our form are correct. Isn't it awesome?
+Django zorgt ervoor dat alle velden in ons formulier juist zijn. Is dat niet geweldig?
 
-## Edit form
+## Formulier aanpassen
 
-Now we know how to add a new post. But what if we want to edit an existing one? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
+Nu weten we hoe we een nieuw bericht kunnen toevoegen. Maar wat als we een bestaande willen aanpassen? Dit lijkt op wat we net gedaan hebben. Laten we snel een aantal belangrijke dingen maken. (Als je iets niet begrijpt, moet je je coach vragen of naar de vorige hoofdstukken kijken, aangezien we al deze stappen al hebben behandeld.)
 
-Open `blog/templates/blog/post_detail.html` in the code editor and add the line
+Open `blog/templates/blog/post_detail.html` in de code editor en voeg de regel toe
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -291,7 +291,7 @@ Open `blog/templates/blog/post_detail.html` in the code editor and add the line
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-so that the template will look like this:
+zodat de template er als volgt uitziet:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -312,7 +312,7 @@ so that the template will look like this:
 {% endblock %}
 ```
 
-Open `blog/urls.py` in the code editor, and add this line:
+Open `blog/urls.py` in je editor en voeg deze regel toe:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -320,9 +320,9 @@ Open `blog/urls.py` in the code editor, and add this line:
     path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
 ```
 
-We will reuse the template `blog/templates/blog/post_edit.html`, so the last missing thing is a *view*.
+We zullen de template `blog/templates/blog/post_edit.html` opnieuw gebruiken, dan missen we aleen een *view*.
 
-Let's open `blog/views.py` in the code editor and add this at the very end of the file:
+Laten we `blog/views.py` in de code editor openen en dit aan het einde van het bestand toevoegen:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -342,7 +342,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-This looks almost exactly the same as our `post_new` view, right? But not entirely. For one, we pass an extra `pk` parameter from `urls`. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
+Dit ziet er bijna precies hetzelfde uit als onze `post_new` weergave, toch? Maar niet helemaal. Ten eerste, we sturren een extra `pk` parameter van `urls` mee. Ten tweede, krijgen we het `Post` model dat we willen bewerken met `get_object_or_404(Post, pk=pk)` en dan. wanneer we een formulier maken, geven we dit bericht door als `instantie`, beide wanneer we het formulier opslaan…
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -350,7 +350,7 @@ This looks almost exactly the same as our `post_new` view, right? But not entire
 form = PostForm(request.POST, instance=post)
 ```
 
-…and when we've just opened a form with this post to edit:
+…en wanneer we zojuist een formulier hebben geopend met dit bericht om te bewerken:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -358,21 +358,21 @@ form = PostForm(request.POST, instance=post)
 form = PostForm(instance=post)
 ```
 
-OK, let's test if it works! Let's go to the `post_detail` page. There should be an edit button in the top-right corner:
+Laten we testen of het werkt! Laten we naar de pagina `post_detail` gaan. Er moet een knop 'bewerken' zijn in de rechterbovenhoek:
 
 ![Edit button](images/edit_button2.png)
 
-When you click it you will see the form with our blog post:
+Als je erop klik zie je het formulier met onze post:
 
 ![Edit form](images/edit_form2.png)
 
-Feel free to change the title or the text and save the changes!
+Voel je vrij om de titel of tekst te wijzigen en de wijzigingen op te slaan!
 
-Congratulations! Your application is getting more and more complete!
+Gefeliciteerd! Je applicatie wordt steeds completer!
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.2/topics/forms/
+Als je meer informatie over Django formulieren nodig hebt, kunt je de documentatie lezen: https://docs.djangoproject.com/en/2.2/topics/forms/
 
-## Security
+## Beveiliging
 
 Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
 
