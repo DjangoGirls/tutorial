@@ -261,11 +261,11 @@ def post_new(request):
 
 Laten we kijken of het werkt. Ga naar de pagina http://127.0.0.1:8000/post/new, voeg een `title` en `text` toe, sla het op en...voilà! De nieuwe blogpost is toegevoegd en we worden doorgestuurd naar de `post_detail` pagina!
 
-You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a *publish button* in **Django Girls Tutorial: Extensions**.
+Het is je misschien opgevallen dat we de publicatiedatum vaststellen voordat we het bericht opslaan. Later zullen we een *publicatie knop* introduceren in **Django Girls handleiding: Extensies**
 
-That is awesome!
+Dat is geweldig!
 
-> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
+> Omdat we recent de Django admin interface hebben gebruikt, denkt het systeem dat we nog steeds ingelogd zijn. Er zijn nog een paar situaties die ertoe kunnen leiden dat we uitgelogd worden (bijv: de browser afsluiten, de DB herstarten en dergelijke) If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
 
 ![Logged in error](images/post_create_error.png)
 
