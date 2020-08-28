@@ -374,9 +374,9 @@ Als je meer informatie over Django formulieren nodig hebt, kunt je de documentat
 
 ## Beveiliging
 
-Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
+Het is geweldig om nieuwe berichten te kunnen maken door op een link te klikken! Maar op dit moment kan iedereen die jouw site bezoekt, een nieuwe blogpost maken, en dat is waarschijnlijk niet iets wat je wilt. Laten we ervoor zorgen dat de knop voor jou verschijnt, maar voor niemand anders.
 
-Open `blog/templates/blog/base.html` in the code editor, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
+Open `blog/templates/blog/base.html` in de code editor, vind onze `page-header` `div` en de ankertag die je daar eerder heeft geplaatst. Het zou er als volgt uit moeten zien:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -384,7 +384,7 @@ Open `blog/templates/blog/base.html` in the code editor, find our `page-header` 
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! Change the `<a>` tag to look like this:
+We gaan nog een `{% if %}` tag toevoegen waardoor de link alleen zal laten verschijnen voor gebruikers die zijn ingelogd als admin. Op dit moment is dat alleen jij! Wijzig de `<a>` tag om er als volgt uit te zien:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
