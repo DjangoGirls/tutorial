@@ -4,8 +4,8 @@
 
 Bạn sắp viết những dòng code đầu tiên rồi, vậy hãy dành thời gian để tải trình viết code về nào!
 
-> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions. The cloud IDE you chose (PaizaCloud Cloud IDE or AWS Cloud9) includes a code editor, and when you open a file in your IDE from the File menu, you will automatically be using the editor.
+> **Chú ý:** Nếu bạn đang sử dụng Chromebook, hãy bỏ qua phần này và đảm bảo rằng bạn làm theo hướng dẫn ở phần [Chromebook Setup](../chromebook_setup/README.md). IDE trên mây (PaizaCloud Cloud IDE hoặc AWS Cloud9) có bao gồm trình sửa code, khi bạn mở file trong IDE từ menu File, trình sửa code sẽ tự động được sử dụng.
 > 
 > **Chú ý** Bạn có thể hoàn thành phần này ở chương cài đặt trước đó rồi - nếu vậy, hãy bỏ qua và đọc chương kế tiếp nhé!
 
-{% include "/code_editor/instructions.md" %}
+{% include "/chromebook_setup/instructions.md" %}
