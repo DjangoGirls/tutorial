@@ -27,12 +27,12 @@ Hiện tại, Cloud 9 yêu cầu đăng ký với AWS và nhập thông tin th�
 1. Cài đặt Cloud 9 từ [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
 2. Tới trang [c9.io](https://c9.io) và chọn *Get started with AWS Cloud9*
 3. Đăng ký 1 tài khoản AWS (Yêu cầu thông tin thẻ tín dụng, nhưng bạn có thể sử dụng miễn phí)
-4. Tại trang Dashboard của AWS, nhập *Cloud9* vào thanh timd kiếm và chọn
-5. In the Cloud 9 dashboard, click *Create environment*
-6. Name it *django-girls*
-7. While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
-8. Click *Next step*
-9. Click *Create environment*
+4. Tại trang Dashboard của AWS, nhập *Cloud9* vào thanh tìm kiếm và chọn
+5. Tại trang dashboard của Cloud 9, chọn *Create environment*
+6. Đặt tên là *django-girls*
+7. Trong khi thiết lập cài đặt, chọn *Create a new instance for environment (EC2)* cho "Environment Type" và *t2.micro* cho "Instance type" (được mô tả là "Free-tier eligible."). Cost-saving setting và các phần khác có thể để mặc định
+8. Chọn *Next step*
+9. Chọn *Create environment*
 
 Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
 
