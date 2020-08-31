@@ -68,6 +68,6 @@ Tạo một tài khoản [Github](https://github.com).
 
 Các bài hướng dẫn Django Girls bao gồm một phần được gọi là triển khai (deploy), đó là quá trình của việc đưa mã nguồn ứng dụng web của bạn đến một máy tính truy cập công cộng (gọi là một máy chủ) để mọi người có thể thấy công việc của bạn.
 
-This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). Tuy nhiên, đó là vẫn rất hữu ích, như chúng ta có thể coi Cloud 9 như là một môi trường phát triển và Python Anywhere như là nơi để triển khai các công cụ của chúng ta khi nó trở nên hoàn chỉnh hơn.
+Phần này là một chút ngoài lề khi thực hiện các hướng dẫn trên Chromebook kể từ khi chúng tôi sử dụng một máy tính trên Internet (thay vi một chiếc laptop).. Tuy nhiên, đó là vẫn rất hữu ích, như chúng ta có thể coi Cloud 9 như là một môi trường phát triển và Python Anywhere như là nơi để triển khai các công cụ của chúng ta khi nó trở nên hoàn chỉnh hơn.
 
 Vì vậy, đăng ký cho một tài khoản Python Anywhere mới tại [www.pythonanywhere.com](https://www.pythonanywhere.com).
