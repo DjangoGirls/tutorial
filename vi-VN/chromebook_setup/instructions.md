@@ -11,7 +11,7 @@ Cloud IDE là một công cụ hỗ trợ viết code và giúp bạn truy cập
 3. Nhấn *New Server* và chọn ứng dụng Django
 4. Click vào nút Terminal ( nằm bên trái cửa sổ)
 
-Bây giờ bạn sẽ thấy cây thư mục mà menu nút ở phía bên trái. Chọn "Terminal" để mở cửa sổ terminal
+Bây giờ bạn sẽ thấy giao diện với cây thư mục mà menu nút ở phía bên trái. Chọn "Terminal" để mở cửa sổ terminal
 
 {% filename %}Terminal{% endfilename %}
 
@@ -34,40 +34,40 @@ Hiện tại, Cloud 9 yêu cầu đăng ký với AWS và nhập thông tin th�
 8. Chọn *Next step*
 9. Chọn *Create environment*
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+Bây giờ bạn sẽ thấy một giao diện với một sidebar, một cửa sổ chính lớn với một số văn bản, và một cửa sổ nhỏ ở phía dưới trông giống như thế này:
 
 {% filename %}bash{% endfilename %}
 
-    yourusername:~/workspace $
+    yourusername: ~ / workspace $
     
 
-This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+Phần dưới là terminal của bạn. Bạn có thể sử dụng terminal để gửi chỉ dẫn tới máy tính remote Cloud 9. Bạn có thể thay đổi kích thước để làm nó lớn hơn.
 
 ### Môi trường ảo (Virtual Environment)
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Một môi trường ảo (thường gọi là một virtualenv) là giống như một môi trường riêng, các tác động vào môi trường này không bị ảnh hưởng bởi môi trường của hệ thống. Chúng ta sử dụng chúng để giữ cho sự khác nhau về mã nguồn của từng dự án trên cùng một môi trường.
 
-Run:
+Chạy:
 
 {% filename %}Cloud 9{% endfilename %}
 
-    mkdir djangogirls
-    cd djangogirls
-    python3.6 -mvenv myvenv
+    mkdir djangogirls 
+    cd djangogirls 
+    python3.6 - mvenv myvenv 
     source myvenv/bin/activate
-    pip install django~={{ book.django_version }}
+    pip install django ~ = 1.11.0
     
 
-(note that on the last line we use a tilde followed by an equal sign: `~=`).
+(Chú ý dòng cuối cùng chúng tôi sử dụng một dấu ngã theo sau là một dấu bằng: ~ =).
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+Tạo một tài khoản [Github](https://github.com).
 
 ### PythonAnywhere
 
-The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+Các bài hướng dẫn Django Girls bao gồm một phần được gọi là triển khai (deploy), đó là quá trình của việc đưa mã nguồn ứng dụng web của bạn đến một máy tính truy cập công cộng (gọi là một máy chủ) để mọi người có thể thấy công việc của bạn.
 
 This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). Tuy nhiên, đó là vẫn rất hữu ích, như chúng ta có thể coi Cloud 9 như là một môi trường phát triển và Python Anywhere như là nơi để triển khai các công cụ của chúng ta khi nó trở nên hoàn chỉnh hơn.
 
-Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Vì vậy, đăng ký cho một tài khoản Python Anywhere mới tại [www.pythonanywhere.com](https://www.pythonanywhere.com).
