@@ -11,14 +11,14 @@ Cloud IDE là một công cụ hỗ trợ viết code và giúp bạn truy cập
 3. Nhấn *New Server* và chọn ứng dụng Django
 4. Click vào nút Terminal ( nằm bên trái cửa sổ)
 
-Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
+Bây giờ bạn sẽ thấy cây thư mục mà menu nút ở phía bên trái. Chọn "Terminal" để mở cửa sổ terminal
 
 {% filename %}Terminal{% endfilename %}
 
     $
     
 
-The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+Terminal trên PaizaCloud Cloud IDE được chuẩn bị cho sự hướng dẫn của bạn. Bạn có thể thay đổi kích thước của sổ đó để làm nó to hơn.
 
 #### AWS Cloud9
 
