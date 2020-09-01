@@ -194,7 +194,7 @@ Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles
 
 (Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
 
-## Updating the static files on the server
+## Memperbarui file statis di server
 
 Servers like PythonAnywhere like to treat "static files" (like CSS files) differently from Python files, because they can optimise for them to be loaded faster. As a result, whenever we make changes to our CSS files, we need to run an extra command on the server to tell it to update them. The command is called `collectstatic`.
 
