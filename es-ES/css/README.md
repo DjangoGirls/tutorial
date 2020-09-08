@@ -1,4 +1,4 @@
-# CSS - ¡Hazlo bonito!
+# CSS - ¡Que quede bonito!
 
 Nuestro blog todavía luce bastante feo, ¿verdad? ¡Ya es tiempo de mejorarlo! Utilizaremos CSS para eso.
 
