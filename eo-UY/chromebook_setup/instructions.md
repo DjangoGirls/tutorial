@@ -2,7 +2,7 @@ Vi povas [salti ĉi-tiun ĉapitron](http://tutorial.djangogirls.org/en/installat
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud IDE estas ilo, kiu disponigas al vi kodoredaktilon kaj aliron al komputilo funkciante en la reto, kie vi povas instali, skribi kaj funkciigi la programaron. Dum la daŭro de la lernsesio, Cloud IDE agas kiel via *loka maŝino*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
+Cloud IDE estas ilo, kiu disponigas al vi kodoredaktilon kaj aliron al komputilo funkciante en la reto, kie vi povas instali, skribi kaj funkciigi la programaron. Dum la daŭro de la lernsesio, Cloud IDE agas kiel via *loka maŝino*. Vi ankoraŭ estos lanĉante komandojn en terminala interfaco same kiel viaj samklasanoj en OS X, Ubuntu, aŭ Vindozo, sed via terminalo estos konektita al komputilo funkciante aliloke, tiu cloud IDE estos agordita por vi. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
 
 #### PaizaCloud Cloud IDE
 
