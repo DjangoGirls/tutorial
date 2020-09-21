@@ -33,9 +33,9 @@ Trông cũng được đấy chứ!
 
 ## Các thành phần cố định (Static) trong Django
 
-Finally we will take a closer look at these things we've been calling **static files**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
+Cuối cùng, chúng ta sẽ tiến lại gần hơn với những thứ chúng ta vừa gọi là **static files**. Static files là toàn bộ mã CSS của bạn và các hình ảnh. Nội dung của chúng không phụ thuộc vào ngữ cảnh của yêu cầu và sẽ trở nên giống nhau với mọi người dùng. 
 
-### Where to put static files for Django
+### Nơi đặt các các static files trong Django
 
 Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
 
