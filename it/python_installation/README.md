@@ -6,7 +6,7 @@ Ma prima, permettici di introdurre brevemente cos'è Python. Python è un lingua
 
 Python è stato creato alla fine degli anni '80 ed il suo obiettivo principale è quello di essere leggibile dalle persone (e non solo dalle macchine!). Per questo motivo sembra più semplice di altri linguaggi di programmazione, ma non preoccuparti -- Python è anche molto potente!
 
-# Istallazione di Python
+# Installazione di Python
 
 > **Nota** Se utilizzi un Chromebook, salta questo capitolo e segui le istruzioni in [Configurazione di Chromebook](../chromebook_setup/README.md).
 > 
