@@ -131,7 +131,7 @@ Adesso Il tuo codice è su GitHub. Guarda! Lo troverai in buona compagnia - [Dja
 
 ## Crea un account PythonAnywhere
 
-> **Nota** Potresti aver già creato un account PythonAnywhere prima, durante la fase di istallazione - in questo caso, non c'è bisogno di crearlo di nuovo.
+> **Nota** Potresti aver già creato un account PythonAnywhere prima, durante la fase di installazione - in questo caso, non c'è bisogno di crearlo di nuovo.
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
