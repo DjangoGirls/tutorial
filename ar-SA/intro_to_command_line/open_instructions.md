@@ -1,28 +1,28 @@
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-Depending on your version of Windows and your keyboard, one of the following should open a command window (you may have to experiment a bit, but you don't have to try all of these suggestions):
+اعتماداً على إصدارك من Windows ولوحة المفاتيح الخاصة بك، واحد مما يلي يجب أن يفتح نافذة أمر (قد تضطر إلى تجربة قليلًا)، ولكن ليس عليك تجربة كل هذه المقترحات:
 
-- Go to the Start menu or screen, and enter "Command Prompt" in the search field.
-- Go to Start menu → Windows System → Command Prompt.
-- Go to Start menu → All Programs → Accessories → Command Prompt.
-- Go to the Start screen, hover your mouse in the lower-left corner of the screen, and click the down arrow that appears (on a touch screen, instead flick up from the bottom of the screen). The Apps page should open. Click on Command Prompt in the Windows System section.
-- Hold the special Windows key on your keyboard and press the "X" key. Choose "Command Prompt" from the pop-up menu.
-- Hold the Windows key and press the "R" key to get a "Run" window. Type "cmd" in the box, and click the OK key.
+- انتقل إلى قائمة أو شاشة البدء وأدخل "طلب الأوامر" في حقل البحث.
+- اذهب إلى قائمة البدء → نظام ويندوز → طلب الأوامر.
+- اذهب إلى قائمة البدء → جميع البرامج → الملحقات → أمر الدفع.
+- اذهب إلى شاشة البدء، وقفل الفأرة في الزاوية اليسرى السفلى من الشاشة، وانقر فوق السهم لأسفل الذي يظهر (على شاشة اللمس، بدلا من ذلك ارتفع من أسفل الشاشة). يجب فتح صفحة التطبيقات. انقر على توجيه الأوامر في قسم نظام ويندوز.
+- امسك مفتاح ويندوز الخاص على لوحة المفاتيح الخاصة بك واضغط على مفتاح "X". اختر "طلب الأوامر" من القائمة المنبثقة.
+- امسك مفتاح ويندوز واضغط على مفتاح "R" للحصول على نافذة "تشغيل". اكتب "cmd" في المربع، وانقر فوق مفتاح OK.
 
 ![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
 
-Later in this tutorial, you will need to have two command windows open at the same time. However, on some versions of Windows, if you already have one command window open and you try to open a second one using the same method, it will instead point you to the command window you already have open. Try it now on your computer and see what happens! If you only get one command window, try one of the other methods in the list above. At least one of them should result in a new command window being opened.
+في وقت لاحق من هذا البرنامج التعليمي، ستحتاج إلى وجود نافذتين للأوامر مفتوحة في نفس الوقت. ومع ذلك، في بعض إصدارات Windows، إذا كان لديك بالفعل نافذة أمر واحدة مفتوحة وتحاول فتح واحدة ثانية باستخدام نفس الطريقة، وبدلا من ذلك سيوجهك إلى نافذة الأوامر التي لديك بالفعل مفتوحة. جرب الآن على جهاز الكمبيوتر الخاص بك وشاهد ما يحدث! إذا حصلت على نافذة أمر واحدة فقط، جرب إحدى الطرق الأخرى في القائمة أعلاه. وينبغي أن يؤدي واحد منها على الأقل إلى فتح نافذة أوامر جديدة.
 
 <!--endsec-->
 
 <!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
 
-Go to Applications → Utilities → Terminal.
+انتقل إلى التطبيقات → الأدوات المساعدة → تيرمينال.
 
 <!--endsec-->
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-It's probably under Applications → Accessories → Terminal, or Applications → System → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
+ربما تحت التطبيقات → الملحقات → الطرفية، أو التطبيقات → System → Terminal, ولكن هذا قد يعتمد على النظام الخاص بك. إذا لم يكن هناك ، يمكنك محاولة جوجل. :)
 
 <!--endsec-->
