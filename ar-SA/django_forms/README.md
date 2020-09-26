@@ -322,7 +322,7 @@ Open `blog/urls.py` in the code editor, and add this line:
 
 سوف نعيد استخدام القالب `blog/templates/blog/post_edit.html`، آخر شيء مفقود هو طريقة*view*.
 
-Let's open `blog/views.py` in the code editor and add this at the very end of the file:
+دعونا نفتح `blog/views.py` وإضافة هذا في نهاية الملف:
 
 {% filename %}blog/views.py{% endfilename %}
 
