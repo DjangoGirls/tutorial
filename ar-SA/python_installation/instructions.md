@@ -2,54 +2,54 @@
 > 
 > هذا القسم يستند على دورة تعليمية من فتيات الجزر المهووسات (https://github.com/ggcarrots/django-carrots)
 
-Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want you to install the latest version of Python 3, so if you have any earlier version, you will need to upgrade it. If you already have version 3.4 or higher you should be fine.
+دجانغو مكتوب في بايتون. نحتاج إلى بايثون للقيام بأي شيء في دجانغو. دعونا نبدأ بتثبيته! نريد منك تثبيت أحدث إصدار من Python 3، لذا إذا كان لديك أي إصدار سابق، فستحتاج إلى ترقيته. إذا كان لديك بالفعل الإصدار 3.4 أو أعلى يجب أن تكون على ما يرام.
 
-Please install normal Python as follows, even when you have Anaconda installed on your computer.
+الرجاء تثبيت بايثون العادية كما يلي، حتى عندما يكون لديك أناكوندا مثبت على جهاز الكمبيوتر الخاص بك.
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
-First check whether your computer is running a 32-bit version or a 64-bit version of Windows, on the "System type" line of the System Info page. To reach this page, try one of these methods:
+أولاً تحقق مما إذا كان جهاز الكمبيوتر الخاص بك يقوم بتشغيل إصدار 32 بت أو إصدار 64 بت من Windows، على سطر "نوع النظام" من صفحة معلومات النظام. للوصول إلى هذه الصفحة، حاول أحد هذه الأساليب:
 
-* Press the Windows key and Pause/Break key at the same time
-* Open your Control Panel from the Windows menu, then navigate to System & Security, then System
-* Press the Windows button, then navigate to Settings > System > About
-* Search the Windows Start menu for "System Information". To do that, click the Start button or press the Windows key, then begin to type `System Information`. It will start making suggestions as soon as you type. You can select the entry once it shows up.
+* اضغط على مفتاح ويندوز ومفتاح الإيقاف/الاستراحة في نفس الوقت
+* افتح لوحة التحكم الخاصة بك من قائمة ويندوز، ثم انتقل إلى النظام & الأمان، ثم النظام
+* اضغط على زر Windows ، ثم انتقل إلى الإعدادات > النظام > حول
+* ابحث في قائمة بدء تشغيل ويندوز عن "معلومات النظام". للقيام بذلك، انقر فوق زر البدء أو اضغط على مفتاح ويندوز، ثم ابدأ في كتابة `معلومات النظام`. سوف تبدأ في تقديم الاقتراحات بمجرد أن تكتب. يمكنك اختيار الإدخال بمجرد ظهوره.
 
-You can download Python for Windows from the website https://www.python.org/downloads/windows/. Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
+يمكنك تحميل بايثون ل Windows من https://www.python.org/downloads/windows/. انقر فوق "Latest Python 3 Release - Python x.x.x". إذا كان جهاز الكمبيوتر الخاص بك يقوم بتشغيل إصدار **64 بت** من Windows، حمل **Windows x86-64 executable installer**. وبخلاف ذلك، حمل **Windows x86 executable installer**. بعد تحميل المثبت، ينبغي تشغيله (انقر نقراً مزدوجاً على الملف) واتبع الإرشادات الموجودة هناك.
 
-One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" or 'Add Python to your environment variables" checkbox and click on "Install Now", as shown here (it may look a bit different if you are installing a different version):
+شيء واحد يجب مراقبته: أثناء التثبيت، ستلاحظ علامة نافذة "الإعداد". تأكد من تحديد "إضافة Python 3. إلى باث" أو "إضافة بايثون إلى متغيرات البيئة الخاصة بك" مربع الاختيار وانقر على "تثبيت الآن"، كما يظهر هنا (قد يبدو مختلفا بعض الشيء إذا كنت تقوم بتثبيت إصدار مختلف):
 
-![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
+![لا تنس إضافة بيثون إلى المسار](../python_installation/images/python-installation-options.png)
 
-When the installation completes, you may see a dialog box with a link you can follow to learn more about Python or about the version you installed. Close or cancel that dialog -- you'll be learning more in this tutorial!
+عند اكتمال التثبيت، قد ترى مربع حوار مع رابط يمكنك متابعته لمعرفة المزيد عن بايثون أو عن الإصدار الذي قمت بتثبيته. إغلاق أو إلغاء مربع الحوار هذا -- سوف تتعلم المزيد في هذا البرنامج التعليمي!
 
-Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.6.x installer fails with an error, you can try either:
+ملاحظة: إذا كنت تستخدم نسخة قديمة من Windows (7، فيستا، أو أي إصدار قديم) و Python 3. .x فشل المثبت مع خطأ، يمكنك محاولة إما:
 
-1. install all Windows Updates and try to install Python again; or
-2. تثبيت [نسخة اقدم من بايثون](https://www.python.org/downloads/windows/) مثال [3.4.6](https://www.python.org/downloads/release/python-346/).
+1. تثبيت كافة تحديثات ويندوز ومحاولة تثبيت بايثون مرة أخرى؛ أو
+2. تثبيت [نسخة قديمة من Python](https://www.python.org/downloads/windows/)، على سبيل المثال ، [3.4.6](https://www.python.org/downloads/release/python-346/).
 
-If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
+إذا قمت بتثبيت إصدار قديم من بايثون، شاشة التثبيت قد تبدو مختلفة بعض الشيء مما هو مبين أعلاه. تأكد من أنك قمت بالتمرير لأسفل لرؤية "Add python.exe to Path"، ثم انقر فوق الزر الموجود على الجانب الأيسر واختر "Will be installed on local hard drive":
 
-![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
+![إضافة بايثون إلى المسار، الإصدارات القديمة](../python_installation/images/add_python_to_windows_path.png)
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **ملاحظة** قبل أن تقوم بتثبيت بايثون على نظام التشغيل OS X، عليك التأكد من إعدادات ماك إذا كانت تسمح بتثبيت الحزم التي ليست من المتجر. إذهب إلى "تفضيلات النظام" (في مجلد التطبيقات)، انقر فوق "الأمان الخصوصية"، ثم علامة التبويب "عام". إذا كانت " السمحاح بالتطبيقات للتحميل من " موضوعة على تطبيقات أبستور فقط غيرها إلى " تطبيقات أبستور و المطورين الغير المعرفين "
+> **ملاحظة** قبل تثبيت Python على OS X، يجب التأكد من أن إعدادات Mac تسمح بتثبيت الحزم التي ليست من متجر التطبيق. انتقل إلى تفضيلات النظام (هو في مجلد التطبيقات)، انقر فوق "الأمان & الخصوصية"، ثم علامة التبويب "الجنرال". إذا تم تعيين "السماح للتطبيقات التي تم تنزيلها من:" إلى "Mac App Store،" قم بتغييره إلى "Mac App Store والمطورين المحددين."
 
-You need to go to the website https://www.python.org/downloads/release/python-361/ and download the Python installer:
+يجب عليك زيارة هذا الموقع وتحميل مثبت بايثون https://www.python.org/downloads/release/python-361/:
 
-* Download the *Mac OS X 64-bit/32-bit installer* file,
-* Double click *python-3.6.1-macosx10.6.pkg* to run the installer.
+* تحميل ملف *مثبت Ma c OS X 64-بت/32-بت * ،
+* انقر نقراً مزدوجاً فوق *python-3.6.1-macosx10.6.pkg* لتشغيل المثبت.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
+من المحتمل جدا ان لديك نسخة بايثون مثبتة بالفعل ، للتحقق ادخل الأوامر التالية في وحدة التحكم:
 
 {% filename %}command-line{% endfilename %}
 
@@ -57,20 +57,20 @@ It is very likely that you already have Python installed out of the box. To chec
     Python 3.6.1
     
 
-If you have a different version of Python installed, at least 3.4.0 (e.g. 3.6.0), then you don't have to upgrade. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
+إذا كان لديك 'نسخة مايكرو' مختلفة من بايثون منصبة، مثل 3.6.0، إذا ليس عليك الترقية. إذا لم يكن لديك Python مثبت، أو إذا كنت تريد إصدار مختلف، فتحقق أولاً من توزيع لينكس الذي تستخدمه مع الأمر التالي:
 
-{% filename %}command-line{% endfilename %}
+{% filename %} baris perintah {% endfilename %}
 
-    $ grep '^NAME=' /etc/os-release
+    $ تنبيه '^NAME=' /etc/os-release
     
 
-Afterwards, depending on the result, follow one of the following installation guides below this section.
+وبعد ذلك، ووفقا للنتيجة، يتبع أحد أدلة التثبيت التالية تحت هذا القسم.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-Type this command into your console:
+استخدم هذا الأمر في وحدة التحكم الخاصة بك:
 
 {% filename %}command-line{% endfilename %}
 
@@ -82,21 +82,21 @@ Type this command into your console:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Use this command in your console:
+استخدم هذا الأمر في وحدة التحكم الخاصة بك:
 
 {% filename %}command-line{% endfilename %}
 
     $ sudo dnf install python3
     
 
-If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use `yum` instead.
+إذا كنت تستخدم إصدار فيدورا قديم قد تحصل على خطأ لم يتم العثور على الأمر dnf. في هذه الحالة تحتاج إلى استخدام yum بدلاً من ذلك.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Use this command in your console:
+إذا كنت تستخدم إصدار فيدورا قديم قد تحصل على خطأ لم يتم العثور على الأمر dnf. في هذه الحالة تحتاج إلى استخدام yum `yum` بدلاً من ذلك.
 
 {% filename %}command-line{% endfilename %}
 
@@ -105,7 +105,7 @@ Use this command in your console:
 
 <!--endsec-->
 
-Verify the installation was successful by opening a command prompt and running the `python3` command:
+تحقق من أن عملية التثبيت كانت ناجحة بفتح موجه الأوامر ثم تشغيل الأمر `python3`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -113,10 +113,10 @@ Verify the installation was successful by opening a command prompt and running t
     Python 3.6.1
     
 
-The version shown may be different from 3.6.1 -- it should match the version you installed.
+قد تكون النسخة المعروضة مختلفة عن 3.6.1 -- يجب أن تكون مطابقة للنسخة التي قمت بتثبيتها.
 
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is 3.4.0 or higher. If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
+**ملاحظة:** إذا كنت على Windows وتحصل على رسالة خطأ التي `python3` لم يتم العثور عليها، حاول استخدام `بايثون` (دون ``) وتحقق مما إذا كان لا يزال إصدار بايثون هو 3. .0 أو أعلى. إذا لم ينجح ذلك أيضاً، فيمكنك فتح توجيه أمر جديد والمحاولة مرة أخرى؛ يحدث هذا إذا كنت تستخدم توجيه أمر متبق قبل تثبيت بايتون.
 
 * * *
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
+إذا كان لديك أي شكوك، أو إذا حدث خطأ ما، وليس لديك أي فكرة عما تفعله بعد ذلك، يرجى سؤال مدربك! في بعض الأحيان لا تسير الأمور بسلاسة ومن الأفضل طلب المساعدة من شخص لديه خبرة أكثر.
