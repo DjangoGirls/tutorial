@@ -8,9 +8,9 @@ Anyị na-ekwenye na ị na-eji Intaneti kwa ụbọchị. Mana ị maara n'ezie
 
 Ihe mbụ ikwesiri ighọta bụ na webụsaiti nwere ọtụtụ faịlụ echekwara na diski ike - dika ihe nkiri, egwu, ma ọbu ihe onyonyo/foto gi Agbanyeghị, enwere otu ebe pụrụ iche maka webụsaịtị: ha gụnyere koodu kọmputa akpọrọ HTML.
 
-Ọ bụrụ na ị maghị programin, o nwere ike isiri gị ike ịghọta HTML na mbụ, mana ihe nchọgharị weebụ gị (dịka Chrome, Safari, Firefox, wdg) dị ya mma. Web browsers are designed to understand this code, follow its instructions, and present these files that your website is made of, exactly the way you want.
+Ọ bụrụ na ị maghị programin, o nwere ike isiri gị ike ịghọta HTML na mbụ, mana ihe nchọgharị weebụ gị (dịka Chrome, Safari, Firefox, wdg) dị ya mma. E mere ihe nchọgharị weebụ iji ghọta koodu a, soro ntuziaka ya, ma gosipụta faịlụ ndị a eji mee weebụsaịtị gị, otu ị chọrọ.
 
-As with every file, we need to store HTML files somewhere on a hard disk. For the Internet, we use special, powerful computers called *servers*. They don't have a screen, mouse or a keyboard, because their main purpose is to store data and serve it. That's why they're called *servers* – because they *serve* you data.
+Dị ka faịlụ ọ bụla, anyị kwesịrị ịchekwa faịlụ HTML n'ebe dị iche na diski ike Maka Intanet, anyị na-eji kọmputa pụrụ iche, nke dị ike a na-akpọ server. They don't have a screen, mouse or a keyboard, because their main purpose is to store data and serve it. That's why they're called *servers* – because they *serve* you data.
 
 OK, but you want to know how the Internet looks, right?
 
