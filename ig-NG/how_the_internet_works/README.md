@@ -1,6 +1,6 @@
 # How the Internet works
 
-> For readers at home: this chapter is covered in the [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc) video.
+> Maka ndị na-agụ akwụkwọ n’ụlọ: a kọwara isiakwụkwọ na vidiyo- Otu Intanet si arụ ọrụ.
 > 
 > This chapter is inspired by the talk "How the Internet works" by Jessica McKellar (http://web.mit.edu/jesstess/www/).
 
