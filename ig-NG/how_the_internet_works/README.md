@@ -10,9 +10,9 @@ Ihe mbụ ikwesiri ighọta bụ na webụsaiti nwere ọtụtụ faịlụ eche
 
 Ọ bụrụ na ị maghị programin, o nwere ike isiri gị ike ịghọta HTML na mbụ, mana ihe nchọgharị weebụ gị (dịka Chrome, Safari, Firefox, wdg) dị ya mma. E mere ihe nchọgharị weebụ iji ghọta koodu a, soro ntuziaka ya, ma gosipụta faịlụ ndị a eji mee weebụsaịtị gị, otu ị chọrọ.
 
-Dị ka faịlụ ọ bụla, anyị kwesịrị ịchekwa faịlụ HTML n'ebe dị iche na diski ike Maka Intanet, anyị na-eji kọmputa pụrụ iche, nke dị ike a na-akpọ server. They don't have a screen, mouse or a keyboard, because their main purpose is to store data and serve it. That's why they're called *servers* – because they *serve* you data.
+Dị ka faịlụ ọ bụla, anyị kwesịrị ịchekwa faịlụ HTML n'ebe dị iche na diski ike Maka Intanet, anyị na-eji kọmputa pụrụ iche, nke dị ike a na-akpọ server. Ha enweghị ihuenyo, mouse ma ọ bụ ahụigodo, n'ihi na isi nzube ha bụ ịchekwa data ma jeere ya ozi. Ọ bụ ya mere eji akpọ ha server - n'ihi na ha na - enye gị data.
 
-OK, but you want to know how the Internet looks, right?
+Ọ dị mma, mana ịchọrọ ịma ka ịntanetị si dị?
 
 We drew you a picture! It looks like this:
 
