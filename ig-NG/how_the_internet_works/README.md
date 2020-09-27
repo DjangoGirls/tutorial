@@ -2,11 +2,11 @@
 
 > Maka ndị na-agụ akwụkwọ n’ụlọ: a kọwara isiakwụkwọ na vidiyo- Otu Intanet si arụ ọrụ.
 > 
-> This chapter is inspired by the talk "How the Internet works" by Jessica McKellar (http://web.mit.edu/jesstess/www/).
+> Isi okwu a kpalitere n'okwu "Otu Intanet si arụ ọrụ" nke Jessica McKellar (http://web.mit.edu/jesstess/www/).
 
 Anyị na-ekwenye na ị na-eji Intaneti kwa ụbọchị. Mana ị maara n'ezie ihe na-eme mgbe ị pịnyere adreesị dị ka https://djangogirls.org n'ime ihe nchọgharị gị wee pịa `enter`?
 
-The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk -- just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
+Ihe mbu ikwesiri ighota bu na webusaiti nwere otutu faịlụ echekwara na diski ike - dika ihe nkiri, egwu, ma obu ihe onyonyo gi/foto. However, there is one part that is unique for websites: they include computer code called HTML.
 
 If you're not familiar with programming, it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. Web browsers are designed to understand this code, follow its instructions, and present these files that your website is made of, exactly the way you want.
 
