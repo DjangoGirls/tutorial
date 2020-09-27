@@ -6,9 +6,9 @@
 
 Anyị na-ekwenye na ị na-eji Intaneti kwa ụbọchị. Mana ị maara n'ezie ihe na-eme mgbe ị pịnyere adreesị dị ka https://djangogirls.org n'ime ihe nchọgharị gị wee pịa `enter`?
 
-Ihe mbu ikwesiri ighota bu na webusaiti nwere otutu faịlụ echekwara na diski ike - dika ihe nkiri, egwu, ma obu ihe onyonyo gi/foto. However, there is one part that is unique for websites: they include computer code called HTML.
+Ihe mbụ ikwesiri ighọta bụ na webụsaiti nwere ọtụtụ faịlụ echekwara na diski ike - dika ihe nkiri, egwu, ma ọbu ihe onyonyo/foto gi Agbanyeghị, enwere otu ebe pụrụ iche maka webụsaịtị: ha gụnyere koodu kọmputa akpọrọ HTML.
 
-If you're not familiar with programming, it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. Web browsers are designed to understand this code, follow its instructions, and present these files that your website is made of, exactly the way you want.
+Ọ bụrụ na ị maghị programin, o nwere ike isiri gị ike ịghọta HTML na mbụ, mana ihe nchọgharị weebụ gị (dịka Chrome, Safari, Firefox, wdg) dị ya mma. Web browsers are designed to understand this code, follow its instructions, and present these files that your website is made of, exactly the way you want.
 
 As with every file, we need to store HTML files somewhere on a hard disk. For the Internet, we use special, powerful computers called *servers*. They don't have a screen, mouse or a keyboard, because their main purpose is to store data and serve it. That's why they're called *servers* – because they *serve* you data.
 
