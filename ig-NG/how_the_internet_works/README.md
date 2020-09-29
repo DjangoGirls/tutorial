@@ -1,4 +1,4 @@
-# How the Internet works
+# Otu Intanetị si arụ ọrụ
 
 > Maka ndị na-agụ akwụkwọ n’ụlọ: a kọwara isiakwụkwọ na vidiyo- Otu Intanet si arụ ọrụ.
 > 
