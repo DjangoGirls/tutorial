@@ -1,8 +1,8 @@
-> For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA) video.
+> 写给家中的读者：本章被包含于[Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA) 视频中。
 > 
-> 本节基于 Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)的教程
+> 本节基于由Geek Girls Carrots (https://github.com/ggcarrots/django-carrots) 所制作的教程。
 
-Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want you to install the latest version of Python 3, so if you have any earlier version, you will need to upgrade it. If you already have version 3.4 or higher you should be fine.
+Django由Python编写。 我们需要Python来完成Django中的一切。 让我们从安装开始 ！ 我们希望您能安装 Python 3，所以如果你有任何以前的版本，你将需要将其升级。 如果您已经由版本3.4或更高版本，这是没有问题的。
 
 Please install normal Python as follows, even when you have Anaconda installed on your computer.
 
