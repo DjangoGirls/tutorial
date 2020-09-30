@@ -11,9 +11,9 @@ Django由Python编写。 我们需要Python来完成Django中的一切。 让我
 首先，请在系统信息页的”系统类型“中检查您的计算机拥有的是32位系统还是64位系统的Windows。您可以使用以下任意一种方式来进入这个页面：
 
 * 同时按Windows键和暂停/关闭键
-* 从Windows菜单打开您的控制面板，进入”系统与安全“，再进入”系统“
-* 按下Windows按钮，然后导航到设置 > 系统 > 关于
-* 在Windows开始菜单搜索”系统信息“。 To do that, click the Start button or press the Windows key, then begin to type `System Information`. It will start making suggestions as soon as you type. You can select the entry once it shows up.
+* 从Windows菜单打开您的控制面板，进入”系统&安全“，再进入”系统“。
+* 按下Windows按钮，然后寻找设置 > 系统 > 关于
+* 在Windows开始菜单搜索”系统信息“。 完成这点，需要按启动按钮或Windows键，然后输入`系统信息`。 It will start making suggestions as soon as you type. You can select the entry once it shows up.
 
 You can download Python for Windows from the website https://www.python.org/downloads/windows/. Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
 
