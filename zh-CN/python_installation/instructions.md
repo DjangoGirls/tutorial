@@ -2,18 +2,18 @@
 > 
 > 本节基于由Geek Girls Carrots (https://github.com/ggcarrots/django-carrots) 所制作的教程。
 
-Django由Python编写。 我们需要Python来完成Django中的一切。 让我们从安装开始 ！ 我们希望您能安装 Python 3，所以如果你有任何以前的版本，你将需要将其升级。 如果您已经由版本3.4或更高版本，这是没有问题的。
+Django由Python编写。 我们需要Python来完成Django中的一切。 让我们从安装开始 ！ 我们希望您能安装最新版本的 Python 3，所以如果您有任何旧版本，请将其更新。 如果您拥有版本3.4或更高版本，也是也没有问题的。
 
-Please install normal Python as follows, even when you have Anaconda installed on your computer.
+即使您已经在计算机上安装过Anaconda，也请安装以下的普通Python。
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
-First check whether your computer is running a 32-bit version or a 64-bit version of Windows, on the "System type" line of the System Info page. To reach this page, try one of these methods:
+首先，请在系统信息页的”系统类型“中检查您的计算机拥有的是32位系统还是64位系统的Windows。您可以使用以下任意一种方式来进入这个页面：
 
-* Press the Windows key and Pause/Break key at the same time
-* Open your Control Panel from the Windows menu, then navigate to System & Security, then System
-* Press the Windows button, then navigate to Settings > System > About
-* Search the Windows Start menu for "System Information". To do that, click the Start button or press the Windows key, then begin to type `System Information`. It will start making suggestions as soon as you type. You can select the entry once it shows up.
+* 同时按Windows键和暂停/关闭键
+* 从Windows菜单打开您的控制面板，进入”系统与安全“，再进入”系统“
+* 按下Windows按钮，然后导航到设置 > 系统 > 关于
+* 在Windows开始菜单搜索”系统信息“。 To do that, click the Start button or press the Windows key, then begin to type `System Information`. It will start making suggestions as soon as you type. You can select the entry once it shows up.
 
 You can download Python for Windows from the website https://www.python.org/downloads/windows/. Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
 
