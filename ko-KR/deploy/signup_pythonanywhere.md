@@ -1,4 +1,4 @@
-PythonAnywhere is a service for running Python code on servers "in the cloud". We'll use it for hosting our site, live and on the Internet.
+PythonAnywhere는 클라우드서버에서 파이썬코드를 실행할수 있는 서비스입니다. 우리는 이 서비스를 이용하여 우리 싸이트를 호스팅할것입니다.
 
 우리는 우리가 만든 블로그를 PythonAnywhere에서 서비스를 제공할 것 입니다. PythonAnywhere에 "Beginner"계정을 등록하세요. (무료사용자등급도 좋습니다. 신용카드가 필요하지 않아요.)
 
