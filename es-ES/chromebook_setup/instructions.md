@@ -2,13 +2,13 @@ Puedes [saltarte esta sección](http://tutorial.djangogirls.org/en/installation/
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud IDE es una herramienta que te brinda un editor de código y acceso a una computadora ejecutándose en internet donde puedes instalar, escribir y correr el software. Durante este tutorial, el IDE en la nube te servirá como tu *máquina local*. Seguirás ejecutando comandos en una terminal igual que tus compañeros de clase en OS X, Ubuntu, o Windows, pero tu terminal en realidad estará conectada a una computadora trabajando en algún otro lugar, que el IDE en la nube configura para ti. Aquí están las instrucciones para IDEs en la nube (PaizaCloud Cloud IDE, AWS Cloud9). Puedes elegir uno de los IDEs en la nube, y seguir sus instrucciones.
+Cloud IDE es una herramienta que te brinda un editor de código y acceso a una computadora ejecutándose en internet donde puedes instalar, escribir y correr el software. Durante este tutorial, el IDE en la nube te servirá como tu *máquina local*. Seguirás corriendo comandos en una interfaz de terminal justo como tus compañeros de clase en OS X, Ubuntu, o Windows, pero tu terminal será conenctada a una computadora corriendo en algún otro lugar que cloud IDE establecerá por tí. Aquí están las instrucciones para cloud IDEs (PaizaCloud Cloud IDE, AWS CLoud9). Puedes elegir uno de los IDEs en la nube, y seguir sus instrucciones.
 
 #### PaizaCloud Cloud IDE
 
 1. Ve a [PaizaCloud Cloud IDE](https://paiza.cloud/)
 2. Crea una cuenta
-3. Haga clic en *Nuevo Servidor* y elija la aplicación Django
+3. Haga clic en *New Server* y elija la aplicación Django
 4. Haga clic en el botón Terminal (al lado izquierdo de la ventana)
 
 Ahora deberías ver una interfaz con una barra y botones en la izquierda. Haz click en al botón "Terminal" para abrir la ventana de la terminal con un símbolo de sistema como este:
