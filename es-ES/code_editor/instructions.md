@@ -1,10 +1,10 @@
-Hay muchos editores diferentes y la elección es principalmente una cuestión de preferencia personal. La mayoría de programadores de Python usan IDEs (Entornos de Desarrollo Integrados) complejos pero muy potentes, como PyCharm. Sin embargo, como principiante, probablemente no es lo más aconsejable; nuestras recomendaciones son igualmente potentes pero mucho más simples.
+Hay muchos diferentes editores y se reduce en gran parte a la preferencia personal La mayoría de programadores de Python usan complejos pero muy potentes IDEs (Entornos de Desarrollo Integrados), como PyCharm. Como principiante, de cualquier manera, es probable que sea menos adecuado; nuestras recomendaciones son igual de poderosas, pero más simples.
 
-Abajo presentamos nuestras sugerencias pero, también puedes preguntarle a tu mentor cuáles son las suyas - será más fácil que te ayude.
+Nuestras sugerencias están abajo, pero siéntete libre de preguntarle a tu tutor cuales son sus preferencias - será mucho mas simple obtener ayuda de ellos.
 
 ## Visual Studio Code
 
-Visual Studio Code es un recurso de edición de código desarrollado por Microsoft para Windows, Linux y macOS. Esto incluye soporte para depuración, control de Git incrustado, sintaxis destacada, completación de código inteligente, fragmentos y refactorización de código.
+Visual Studio Code es un editor de código fuente desarrollado por Microsoft para Windows, Linux y macOS. Esto incluye soporte para depuración, control de Git incrustado, sintaxis destacada, completación de código inteligente, fragmentos y refactorización de código.
 
 [Descárgalo aquí](https://code.visualstudio.com/)
 
