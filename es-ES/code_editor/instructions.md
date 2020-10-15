@@ -4,7 +4,7 @@ Nuestras sugerencias están abajo, pero siéntete libre de preguntarle a tu tuto
 
 ## Visual Studio Code
 
-Visual Studio Code es un editor de código fuente desarrollado por Microsoft para Windows, Linux y macOS. Esto incluye soporte para depuración, control de Git incrustado, sintaxis destacada, completación de código inteligente, fragmentos y refactorización de código.
+Visual Studio Code es un editor de código fuente desarrollado por Microsoft para Windows, Linux y macOS. Incluye soporte para depuración, control Git embebido, resaltado de sintaxis, finalización inteligente de código, fragmentos y refactorización de código.
 
 [Descárgalo aquí](https://code.visualstudio.com/)
 
@@ -22,13 +22,13 @@ Sublime Text es un editor muy popular con un periodo de prueba gratis, y está d
 
 ## Atom
 
-Atom es otro editor popular. Es gratis, de código abierto y disponible para Windows, OS X and Linux. Atom esta desarrollado por [Github](https://github.com/).
+Atom es otro editor popular. Es gratis, de código abierto y está disponible para Windows, OS X and Linux. Atom esta desarrollado por [Github](https://github.com/).
 
-[Descargalo aquí](https://atom.io/)
+[Descárgalo aquí](https://atom.io/)
 
 ## ¿Por qué estamos instalando un editor de código?
 
-Tú podrías estar preguntandote por qué estamos instalando éste especializado software editor de código, en vez de usar algo como Word o Notepad.
+Tú podrías estar preguntándote por qué estamos instalando éste especial software editor de código, en vez de usar algo como Word o Notepad.
 
 La primera razón es que el código necesita ser **texto plano**, y el problema con programas como Word y Textedit es que ellos actualmente no produce texto plano, ellos producen texto rico (con fuentes y formatos), usando formatos personalizados como [RTF ( Formato del Texto Enriquecido, del inglés Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
