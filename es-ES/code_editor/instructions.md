@@ -32,6 +32,6 @@ Tú podrías estar preguntándote por qué estamos instalando éste especial sof
 
 La primera razón es que el código necesita ser **texto plano**, y el problema con programas como Word y Textedit es que ellos actualmente no produce texto plano, ellos producen texto rico (con fuentes y formatos), usando formatos personalizados como [RTF ( Formato del Texto Enriquecido, del inglés Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-La segunda razón es que los editores de código son especializados para ésta función, así ellos pueden proveer ayuda a características como destacar código con color acorde a su significado, o automáticamente cerrando etiquetas para ti.
+La segunda razón es que los editores de código son especializados para editar código, así ellos pueden proveer características útiles como destacar código con color acorde a su significado, o automáticamente cerrando citas para ti.
 
-Veremos todo esto en acción más adelante. Pronto, pensarás en convertir el editor de código como una de tus herramientas favoritas. :)
+Veremos todo esto en acción más adelante. Pronto, llegarás a pensar que tu viejo confiable editor de código es una de tus herramientas favoritas :)
