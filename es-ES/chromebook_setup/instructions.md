@@ -41,11 +41,11 @@ Ahora deberías ver una interfaz con una barra, una gran ventana principal con a
     yourusername:~/workspace $
     
 
-El área de abajo es tu terminal. Puedes usar el terminal para enviar instrucciones al ordenador remoto en Cloud 9. Puedes redimensionar o maximizar la ventana para hacerla un poco más grande.
+El área de abajo es tu terminal. Puedes usar el terminal para enviar instrucciones al ordenador remoto Cloud 9. Puedes redimensionar la ventana para hacerla un poco mas grande
 
 ### Entorno Virtual
 
-Un entorno virtual (también llamado "virtualenv" o "vitual environment" en inglés) es un tipo de caja privada donde podemos introducir código para el proyecto en el cual estemos trabajando. Lo usamos para mantener separados los diferentes trozos de código de nuestros proyectos, de modo que no haya mezclas indeseadas entre los mismos.
+Un entorno virtual (también llamado "virtualenv" o "vitual environment" en inglés) es un tipo de caja privada donde podemos introducir código para el proyecto en el cual estemos trabajando. Lo usamos para mantener separados los varios trozos de código de nuestros varios proyectos separados de este modo las cosas no se mezclan entre proyectos.
 
 Ejecutar:
 
@@ -58,11 +58,11 @@ Ejecutar:
     pip install django~={{ book.django_version }}
     
 
-(nota que en la última linea usamos una virgulilla (~) seguido de un signo igual `~=`).
+(nota que en la última línea usamos una virgulilla seguido de un signo igual `~=`).
 
 ### GitHub
 
-Hazte una cuenta de [GitHub](https://github.com).
+Haz una cuenta de [GitHub](https://github.com).
 
 ### PythonAnywhere
 
