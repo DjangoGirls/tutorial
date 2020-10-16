@@ -14,9 +14,9 @@ As with all unknown things, this is going to be an adventure - but no worries, s
 
 Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
 
-Well, we have good news for you! Programming is not as hard as it seems and we want to show you how fun it can be.
+Onda, sizə xoş xəbərlərimiz var! Proqramlaşdırma göründüyü qədər çətin deyil və biz sizə nə qədər əyləncəli ola biləcəyini göstərmək istəyirik.
 
-This tutorial will not magically turn you into a programmer. If you want to be good at it, you need months or even years of learning and practice. But we want to show you that programming or creating websites is not as complicated as it seems. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.
+Bu təlim sizi möcüzəli şəkildə bir anda proqramçıya çevirməyəcək. Əgər bu mövzuda yaxşı olmaq istəyirsinizsə, aylarla, hətta illərlə öyrənməyə və pratika etməyə ehtiyacınız var. Ancaq sizə göstərmək istəyirik ki, proqramlaşdırma və ya veb sayt yaratmaq göründüyü qədər mürəkkəb deyil. Müxtəlif hissələri bacardığımız qədər izah etməyə çalışacağıq ki, texnologiyadan artıq gözünüz qorxmasın.
 
 We hope that we'll be able to make you love technology as much as we do!
 
@@ -42,7 +42,7 @@ In every chapter already covered, there is a link that points to the correct vid
 
 Bu təlim [DjangoGirls](https://djangogirls.org/) tərəfindən təmin edilir. Əgər hər hansı bir səhv tapsanız və ya təlimatı yeniləmək istəsəniz, zəhmət olmasa [ töhfə təlimatlarını izləyin](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
-## Would you like to help us translate the tutorial into other languages?
+## Bu təlimi başqa dillərə tərcümə etmək üçün kömək etmək istərdinizmi?
 
 Hal-hazırda, tərcümələr crowdin.com platformasında saxlanılır:
 
