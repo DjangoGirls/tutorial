@@ -1,4 +1,4 @@
-# Django Girls Tutorial
+# Django Girls Təlimi
 
 [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
@@ -6,7 +6,7 @@
 
 ## Xoş Gəldiniz
 
-Welcome to the Django Girls Tutorial! We are happy to see you here :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
+Django Girls Təliminə xoş gəldin! We are happy to see you here :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
 As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
 
@@ -20,7 +20,7 @@ This tutorial will not magically turn you into a programmer. If you want to be g
 
 We hope that we'll be able to make you love technology as much as we do!
 
-## What will you learn during the tutorial?
+## Təlim boyunca nələr öyrənəcəksiniz?
 
 Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
 
