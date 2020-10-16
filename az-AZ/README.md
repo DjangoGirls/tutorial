@@ -40,7 +40,7 @@ In every chapter already covered, there is a link that points to the correct vid
 
 ## Haqqımızda və Tövhə
 
-This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
+Bu təlim [DjangoGirls](https://djangogirls.org/) tərəfindən təmin edilir. Əgər hər hansı bir səhv tapsanız və ya təlimatı yeniləmək istəsəniz, zəhmət olmasa [ töhfə təlimatlarını izləyin](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
 ## Would you like to help us translate the tutorial into other languages?
 
