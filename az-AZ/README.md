@@ -16,9 +16,9 @@ Have you ever felt that the world is more and more about technology to which you
 
 Onda, sizə xoş xəbərlərimiz var! Proqramlaşdırma göründüyü qədər çətin deyil və biz sizə nə qədər əyləncəli ola biləcəyini göstərmək istəyirik.
 
-Bu təlim sizi möcüzəli şəkildə bir anda proqramçıya çevirməyəcək. Əgər bu mövzuda yaxşı olmaq istəyirsinizsə, aylarla, hətta illərlə öyrənməyə və pratika etməyə ehtiyacınız var. Ancaq sizə göstərmək istəyirik ki, proqramlaşdırma və ya veb sayt yaratmaq göründüyü qədər mürəkkəb deyil. Müxtəlif hissələri bacardığımız qədər izah etməyə çalışacağıq ki, texnologiyadan artıq gözünüz qorxmasın.
+Bu təlim sizi möcüzəli şəkildə bir anda proqramçıya çevirməyəcək. Əgər bu mövzuda yaxşı olmaq istəyirsinizsə, aylarla, hətta illərlə öyrənməyə və pratika etməyə ehtiyacınız var. Ancaq yenə də sizə göstərmək istəyirik ki, proqramlaşdırma və ya veb sayt yaratmaq göründüyü qədər mürəkkəb deyil. Müxtəlif hissələri bacardığımız qədər izah etməyə çalışacağıq ki, texnologiyadan artıq gözünüz qorxmasın.
 
-We hope that we'll be able to make you love technology as much as we do!
+Ümid edirik ki, texnologiyanı sizə bizim qədər sevdirə biləcəyik!
 
 ## Təlim boyunca nələr öyrənəcəksiniz?
 
@@ -28,7 +28,7 @@ It will (more or less) look like this:
 
 ![Şəkil 0.1](images/application.png)
 
-> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
+> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Orada suallarınızı verməkdən çəkinməyin!
 
 Yaxşı, [gəlin ən başdan başlayaq...](./how_the_internet_works/README.md)
 
