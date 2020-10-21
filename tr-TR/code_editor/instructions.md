@@ -1,6 +1,6 @@
 Birçok farklı kod editörü var, hangi editörü kullanacağınız kişisel tercihinize bağlı. Çoğu Python programcısı, PyCharm gibi karmaşık fakat son derece güçlü IDE'leri (Integrated Development Environments-Entegre Geliştirme Ortamları) kullanır. Başlangıç seviyesi için bunlar muhtemelen pek uygun olmayacaktır. Bizim önerdiklerimiz aynı derecede güçlü fakat çok daha basit editörler olacak.
 
-Bizim tavsiyelerimiz aşağıdakiler, ama mentörünüze danışmak isteyebilirsiniz.
+Bizim tavsiyelerimiz aşağıdakiler, ama mentörünüze tercihleri hakkında danışabilirsiniz, onlardan yardım almak bunu daha kolay olacaktır.
 
 ## Visual Studio Code
 
@@ -22,7 +22,7 @@ Sublime Text, ücretsiz deneme süresi olan çok popüler bir editördür ve tü
 
 ## Atom
 
-Atom başka bir popüler editör. Ücretsiz, açık kaynaklı ve Windows, OS X ve Linux için kullanılabilir. Atom [GitHub](https://github.com/) tarafından geliştirilmiştir.
+Atom, başka bir popüler editör. Ücretsiz, açık kaynaklı ve Windows, OS X ve Linux için kullanılabilir. Atom [GitHub](https://github.com/) tarafından geliştirilmiştir.
 
 [Buradan indirin](https://atom.io/)
 
