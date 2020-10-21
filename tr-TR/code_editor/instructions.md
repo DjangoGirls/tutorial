@@ -1,4 +1,4 @@
-Birçok farklı kod editörü var, hangi editörü kullanacağınız kişisel tercihinize bağlı. Çoğu Python programcısı PyCharm gibi karmaşık fakat son derece güçlü IDE'leri (Integrated Development Environments-Entegre Geliştirme Ortamları) kullanır. Başlangıç seviyesi için bunlar muhtemelen pek uygun olmayacaktır. Bizim önerdiklerimiz aynı derecede güçlü fakat çok daha basit editörler olacak.
+Birçok farklı kod editörü var, hangi editörü kullanacağınız kişisel tercihinize bağlı. Çoğu Python programcısı, PyCharm gibi karmaşık fakat son derece güçlü IDE'leri (Integrated Development Environments-Entegre Geliştirme Ortamları) kullanır. Başlangıç seviyesi için bunlar muhtemelen pek uygun olmayacaktır. Bizim önerdiklerimiz aynı derecede güçlü fakat çok daha basit editörler olacak.
 
 Bizim tavsiyelerimiz aşağıdakiler, ama mentörünüze danışmak isteyebilirsiniz.
 
