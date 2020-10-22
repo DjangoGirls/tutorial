@@ -22,7 +22,7 @@ Git відслідковує зміни певних файлів в репоз�
 
 > **Note** Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. Ви маєте бути в папці `djangogirls`.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}command-line{% endfilename
 
     $ git init
     Initialized empty Git repository in ~/djangogirls/.git/
@@ -154,7 +154,7 @@ That should print out some things like `Collecting pythonanywhere`, and eventual
 
 Now we run the helper to automatically configure our app from GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
+{% filename %}PythonAnywhere командний рядок 
 
     $ pa_autoconfigure_django.py --python=3.6 https://github.com/<your-github-username>/my-first-blog.git
     
