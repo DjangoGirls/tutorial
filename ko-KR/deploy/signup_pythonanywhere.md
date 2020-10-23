@@ -6,9 +6,9 @@ PythonAnywhere는 클라우드서버에서 파이썬코드를 실행할수 있�
 
 ![The PythonAnywhere signup page showing button to create a free 'Beginner' account](../deploy/images/pythonanywhere_beginner_account_button.png)
 
-> **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about. Also, be sure to remember your password (add it to your password manager, if you use one).
+> **참고**: 여러분의 유저네임을 정할 때 블로그 주소의 일부가 여러분의 유저네임으로 되는 것을 염두하고 정하세요. 예를 들어 유저네임이 uourusername이라면 여러분의 블로그 URL은 `yourusername.pythonanywhere.com`이 된답니다. 또한, 기억할 수 있는 비밀번호를 사용하세요(만약 당신이 비밀번호 관리자를 사용한다면 비밀번호를 추가해주세요)
 
-## Creating a PythonAnywhere API token
+## PythonAnywhere API Token 생성
 
 This is something you only need to do once. When you've signed up for PythonAnywhere, you'll be taken to your dashboard. Find the link near the top right to your "Account" page:
 
