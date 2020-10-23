@@ -4,13 +4,13 @@
 
 ### 이제 무엇을 해야하나요?
 
-Take a break and relax! You have just done something really huge.
+잠시 휴식을 가지고 여유를 가지세요. 여러분은 이제 막 정말 큰 일 마쳤으니까요
 
-After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
+[Facebook](http://facebook.com/djangogirls) 또는 [Twitter](https://twitter.com/djangogirls) 에서 Django Girls를 구독하셔서 최신 정보를 얻으세요!
 
 ### 다음에 해볼만한 자료를 추천해주실래요?
 
-Yes! There are a *lot* of resources online for learning all kinds of programming skills – it can be pretty daunting to work out where to go next, but we've got you covered. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
+Yes! 모든 종류의 프로그래밍 기술을 학습 할 수있는 * 많은</ 0> 리소스가 온라인에 있습니다. 다음에 어디로 가야할지 결정하는 것은 상당히 어려울 수 있지만, 저희가 도와 드리겠습니다. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.</p> 
 
 #### Django
 
