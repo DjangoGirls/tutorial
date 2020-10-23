@@ -8,7 +8,7 @@
 
 ## blog/views.py
 
-OK, let's open up this file in our code editor and see what's in there:
+좋아요. 이제 이 파일을 열고 안에 있는 내용을 살펴봅시다. :
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -20,9 +20,9 @@ from django.shortcuts import render
 
 해야할 게 그렇게 많지는 않아요.
 
-Remember that lines starting with `#` are comments – this means that those lines won't be run by Python.
+`#`로 시작하는 줄은 주석이 됨을 기억하세요 – 이 라인은 파이썬에 의해 실행되지 않는 것을 의미합니다.
 
-Let's create a *view* as the comment suggests. Add the following minimal view below it:
+주석내 추천에 따라 *view* 를 생성해 봅시다. 최소한의 뷰를 아래와 같이 추가해봅시다.
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -33,12 +33,12 @@ def post_list(request):
 
 방금 `post_list`라는 함수(`def`)를 만들었습니다. 이 함수는 `요청(request)`을 넘겨받아 `render`메서드를 호출합니다. 이 함수는 `render` 메서드를 호출하여 받은(return) `blog/post_list.html`템플릿을 보여줍니다.
 
-Save the file, go to http://127.0.0.1:8000/ and see what we've got.
+파일을 저장하고, http://127.0.0.1:8000/로 접속해 결과를 확인해보세요.
 
 에러가 발생했어요! 이제 아래 내용을 읽어보세요. :
 
-![Error](images/error.png)
+![오류](images/error.png)
 
 서버가 다시 실행했지만, 아직도 보여지지 않네요, 그렇죠? 걱정하지마세요, 이건 단순한 오류 페이지에요, 전혀 두려워하지 않아도 돼요! 콘솔에 에러 메세지가 나타나는 것은, 실제로 정말 유용하답니다! *TemplateDoesNotExist (템플릿이 존재하지 않습니다)*라고 읽을 수 있으니까요. 버그를 잡고 다음 장에서 템플릿을 만들어보아요!
 
-> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/2.2/topics/http/views/
+> Django 뷰에 대해 자세히 알고 싶으시면 공식 문서를 읽어보세요. https://docs.djangoproject.com/en/2.2/topics/http/views/
