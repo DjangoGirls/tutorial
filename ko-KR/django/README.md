@@ -4,23 +4,23 @@ Django (/ˈdʒæŋɡoʊ/ *jang-goh*)는 Python으로 만들어진 무료 오픈�
 
 웹사이트를 구축할 때, 비슷한 유형의 요소들이 항상 필요합니다. 회원가입, 로그인, 로그아웃과 같이 사용자 인증을 다루는 방법이나 웹사이트의 관리자 패널, 폼, 파일 업로드와 같은 것들 말이지요.
 
-Luckily for you, other people long ago noticed that web developers face similar problems when building a new site, so they teamed up and created frameworks (Django being one of them) that give you ready-made components to use.
+그런데 정말 다행이게도, 오래 전에 어떤 웹 개발자들이 새로운 웹 사이트를 개발할 때 서로 비슷한 문제들에 직면한다는 것을 깨달았습니다. 그래서 팀을 조직했구요. 바로 사용할 수 있는 구성요소들을 갖춘 여러 프레임워크를 만들었답니다. (장고도 그 중에 하나인거죠.)
 
-Frameworks exist to save you from having to reinvent the wheel and to help alleviate some of the overhead when you’re building a new site.
+프레임워크는 다시 발명해야하는 문제로부터 해방감을 주며 새로운 웹사이트를 개발할 때 뒤따르는 간접비용의 부담을 덜기 위해 존재한답니다.
 
 ## 왜 프레임워크가 필요한가요?
 
-To understand what Django is actually for, we need to take a closer look at the servers. The first thing is that the server needs to know that you want it to serve you a web page.
+장고라는 것이 실제로 무엇을 위한 것인지 이해하기 위해서는 서버에 대해서 자세히 살펴볼 필요가 있어요. 첫 번째는, 서버가 여러분에게 웹 페이지를 제공하길 원하는지 알 필요가 있다는 거에요.
 
-편지(request, 요청) 이 도착했는지 확인해주는 메일박스(port, 포트) 가 있다고 상상해보세요. 이 것은 웹 서버가 해주는 일이에요. The web server reads the letter and then sends a response with a webpage. 그런데 무언가를 주고 싶을 때는 그 안에 내용이 있어야하죠. 장고는 그 특정 컨텐츠를 만들 수 있는 역할을 합니다.
+편지(request, 요청) 이 도착했는지 확인해주는 메일박스(port, 포트) 가 있다고 상상해보세요. 이 것은 웹 서버가 해주는 일이에요. 웹 서버는 받은 편지를 읽고 웹 페이지와 함께 답장을 준답니다. 그런데 무언가를 주고 싶을 때는 그 안에 내용이 있어야하죠. 장고는 그 특정 컨텐츠를 만들 수 있는 역할을 합니다.
 
 ## 누군가가 서버에 웹 사이트를 요청하면 어떤 일이 벌어질까요?
 
-When a request comes to a web server, it's passed to Django which tries to figure out what is actually requested. It takes a web page address first and tries to figure out what to do. This part is done by Django's **urlresolver** (note that a website address is called a URL – Uniform Resource Locator – so the name *urlresolver* makes sense). It is not very smart – it takes a list of patterns and tries to match the URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
+웹 서버에 요청이 오면 장고로 전달됩니다. 그러면 장고는 실제로 어떤 요청이 들어왔는지 확인합니다. 첫 번째로 웹 페이지의 주소를 가져온 후 무엇을 할지 확인합니다. 이 것이 바로 장고의 **urlresolver**가 하는 역할이에요. (웹 사이트 주소는 URL - Uniform Resource Locator을 말합니다. 그래서 *urlresolver*의 이름을 이해할 수 있습니다.) 패턴 목록을 가져와 URL과 맞는지 하나 씩 대조해보는 것은 그리 똑똑한 방법이 아니죠. 그러나 장고는 위에서 부터 아래로 그 패턴을 확인해봅니다. 만약 일치하는 게 있다고 하면, 장고는 그 요청을 관련된 함수( *view*라고 불리는) 에 넘겨줍니다.
 
-우편배달부를 생각해보세요. 거리를 걸으며 집집마다 편지와 대조해서 주소와 번지를 확인합니다. 주소와 번지가 일치하면 우편배달부는 그곳에 편지를 배달합니다. Urlresolver 가 바로 이와 같은 일을 합니다.
+편지를 가진 우편배달부를 생각해보세요. 거리를 걸으며 집집마다 편지와 대조해서 주소와 번지를 확인합니다. 주소와 번지가 일치하면 우편배달부는 그곳에 편지를 배달합니다. Urlresolver 가 바로 이와 같은 일을 합니다.
 
-In the *view* function, all the interesting things are done: we can look at a database to look for some information. 그런데 만약 사용자가 데이터를 바꿔달라고 수정을 요청한다면 어떻게 될까요? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
+모든 재미난 일들은 *view* 함수에서 모두 처리됩니다: 특정 정보를 데이터베이스에서 찾을 수 있어요. 그런데 만약 사용자가 데이터를 바꿔달라고 수정을 요청한다면 어떻게 될까요? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
 
 물론 지금까지의 설명은 아주 간단히 설명한 것에 불과해요. 하지만 모든 기술적인 부분까지 자세히 알 필요가 없답니다. 이 정도 아는 것만으로도 충분하답니다.
 
