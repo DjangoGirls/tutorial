@@ -31,13 +31,13 @@
 - [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – 첫 연습 무료
 - [New Coder tutorials](http://newcoder.io/tutorials/) –파이썬 활용에 대한 다양한 실습 예제
 - [edX](https://www.edx.org/course?search_query=python) - 당신은 무료로 청강할 수 있습니다. 그러나 인증서를 취득하거나 양질의 교육 충족을 위한 학점을 얻기위해서는 비용을 지불해야합니다.
-- [Coursera's Python specialization](https://www.coursera.org/specializations/python) – 일부 강의는 무료로 청강할수 있으며 이 과정을 수료하여 Coursera 인증서를 취득할 수 있습니다.
-- [Python for Everybody](https://www.py4e.com/) - a free and open version of the Coursera Python for Everybody specialization
+- [Django for Everybody Specialization](https://www.coursera.org/specializations/python) - 몇몇의 비디오 강의는 무료로 청강할수 있으며 과정을 수료하여 Coursera 증명서를 취득할 수 있습니다.
+- [Python for Everybody](https://www.py4e.com/) - 전문화를 위한 Coursera Python의 무료 공개 버전
 
-#### Working with data
+#### 데이터학습
 
-- [Codecademy's data science course](https://www.codecademy.com/learn/paths/data-science)
-- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
-- [Dataquest](https://www.dataquest.io/) – the first 30 "missions" are free
+- [Codeacademy 데이터 사이언스 과정](https://www.codecademy.com/learn/paths/data-science)
+- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) - 당신은 무료로 청강할 수 있습니다. 그러나 인증서를 취득하거나 양질의 교육 충족을 위한 학점을 얻기위해서는 비용을 지불해야합니다.
+- [Dataquest](https://www.dataquest.io/) - 첫 30 과제는 무료
 
-We can't wait to see what you build next!
+우리는 다음에 당신이 무엇을 만드는지 빨리 보고싶어요!
