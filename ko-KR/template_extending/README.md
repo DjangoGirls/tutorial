@@ -86,7 +86,7 @@
 
 왜 그럴까요? `block`을 만들었기 때문이죠! `{% block %}`템플릿 태그는 HTML이 삽입될 수 있는 영역을 만들어줍니다. (`base.html`)템플릿이 확장되어 HTML이 다른 템플릿에도 들어갈 수 있게 됩니다. 그럼 어떻게 동작하는지 알아볼게요.
 
-Now save `base.html` and open your `blog/templates/blog/post_list.html` again in the code editor. {% raw %}`{% for post in posts %}`부터 `{% endfor %}`까지 모든 내용을 지우세요. When you're done, the file will look like this:{% endraw %}
+`base.html`을 저장한 후, 코드 에디터에서 `blog/templates/blog/post_list.html`을 다시 엽니다. {% raw %}`{% for post in posts %}`부터 `{% endfor %}`까지 모든 내용을 지우세요. 완료했다면 아래처럼 될 거에요:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
