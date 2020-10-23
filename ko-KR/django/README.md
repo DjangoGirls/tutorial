@@ -20,7 +20,7 @@ Django (/ˈdʒæŋɡoʊ/ *jang-goh*)는 Python으로 만들어진 무료 오픈�
 
 편지를 가진 우편배달부를 생각해보세요. 거리를 걸으며 집집마다 편지와 대조해서 주소와 번지를 확인합니다. 주소와 번지가 일치하면 우편배달부는 그곳에 편지를 배달합니다. Urlresolver 가 바로 이와 같은 일을 합니다.
 
-모든 재미난 일들은 *view* 함수에서 모두 처리됩니다: 특정 정보를 데이터베이스에서 찾을 수 있어요. 그런데 만약 사용자가 데이터를 바꿔달라고 수정을 요청한다면 어떻게 될까요? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
+모든 재미난 일들은 *view* 함수에서 모두 처리됩니다: 특정 정보를 데이터베이스에서 찾을 수 있어요. 그런데 만약 사용자가 데이터를 바꿔달라고 수정을 요청한다면 어떻게 될까요? "제 직업에 대한 설명을 바꿔주세요."와 같은 편지를 받았다고 생각해봅시다. *view*함수는 수정할 수 있는 권한이 있는지 확인하고나서, 직업에 대한 설명을 수정해 다시 답장을 주겠지요. "완료했습니다!" 라고요. 그리고 *view*는 응답을 생성하고 장고는 사용자의 웹브라우저로 응답을 보낼 수 있게 된답니다.
 
 물론 지금까지의 설명은 아주 간단히 설명한 것에 불과해요. 하지만 모든 기술적인 부분까지 자세히 알 필요가 없답니다. 이 정도 아는 것만으로도 충분하답니다.
 
