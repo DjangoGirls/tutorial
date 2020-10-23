@@ -10,28 +10,28 @@
 
 ### 다음에 해볼만한 자료를 추천해주실래요?
 
-Yes! 모든 종류의 프로그래밍 기술을 학습 할 수있는 * 많은</ 0> 리소스가 온라인에 있습니다. 다음에 어디로 가야할지 결정하는 것은 상당히 어려울 수 있지만, 저희가 도와 드리겠습니다. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.</p> 
+예! 모든 종류의 프로그래밍 기술을 학습 할 수있는 * 많은</ 0> 리소스가 온라인에 있습니다. 다음에 어디로 가야할지 결정하는 것은 상당히 어려울 수 있지만, 저희가 도와 드리겠습니다. Django Girls에 오기 전에 관심사가 무엇이었든, 튜토리얼을 통해 개발한 관심사가 무엇이든, 여기에 원하는 곳으로 이동하는 데 사용할 수있는 무료 리소스 (또는 큰 무료 구성 요소가있는 리소스)가 있습니다.</p> 
 
 #### Django
 
-- Our other book, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
-- [Django's official tutorial](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
-- [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
-- [Django for Everybody Specialization](https://www.coursera.org/specializations/django) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
+- 우리의 다른 책, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
+- [Django 공식 튜토리얼](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
+- [Djnago 비디오 강의로 시작하기](http://www.gettingstartedwithdjango.com/)
+- [Django for Everybody Specialization](https://www.coursera.org/specializations/django) - 몇몇의 비디오 강의는 무료로 청강할수 있으며 과정을 수료하여 Coursera 증명서를 취득할 수 있습니다.
 
-#### HTML, CSS and JavaScript
+#### HTML/CSS/JavaScript
 
-- [Codecademy's web development course](https://www.codecademy.com/learn/paths/web-development)
+- [Codeacademy web 개발 과정](https://www.codecademy.com/learn/paths/web-development)
 - [freeCodeCamp](https://www.freecodecamp.org/)
 
-#### Python
+#### 파이선(Python)
 
-- [Codecademy's Python course](https://www.codecademy.com/learn/learn-python)
-- [Google's Python course](https://developers.google.com/edu/python/)
-- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – the initial exercises are free
-- [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
-- [edX](https://www.edx.org/course?search_query=python) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
-- [Coursera's Python specialization](https://www.coursera.org/specializations/python) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
+- [Codeacademy Python 과정](https://www.codecademy.com/learn/learn-python)
+- [Google Python 과정](https://developers.google.com/edu/python/)
+- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – 첫 연습 무료
+- [New Coder tutorials](http://newcoder.io/tutorials/) –파이썬 활용에 대한 다양한 실습 예제
+- [edX](https://www.edx.org/course?search_query=python) - 당신은 무료로 청강할 수 있습니다. 그러나 인증서를 취득하거나 양질의 교육 충족을 위한 학점을 얻기위해서는 비용을 지불해야합니다.
+- [Coursera's Python specialization](https://www.coursera.org/specializations/python) – 일부 강의는 무료로 청강할수 있으며 이 과정을 수료하여 Coursera 인증서를 취득할 수 있습니다.
 - [Python for Everybody](https://www.py4e.com/) - a free and open version of the Coursera Python for Everybody specialization
 
 #### Working with data
