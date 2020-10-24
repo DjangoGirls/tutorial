@@ -1,4 +1,4 @@
-நீங்கள் ஒரு Chromebook பயன்படுத்தவில்லை என்றால் [இந்த பிரிவினை தவிர்க்கலாம் ](http://tutorial.djangogirls.org/en/installation/#install-python). நீங்கள் chromebook பயன்படுத்தினால் உங்கள் நிறுவல் அனுபவத்தை கொஞ்சம் வித்தியாசமாக இருக்கும். Chromebook பயனர்கள் , பின்வரும் நிறுவல் விதிமுறைகளைப் புறக்கணிக்கலாம்.
+நீங்கள் Chromebook பயன்படுத்தவில்லை என்றால் [இந்த பிரிவினை தவிர்க்கலாம் ](http://tutorial.djangogirls.org/en/installation/#install-python). நீங்கள் chromebook பயன்படுத்தினால் உங்கள் நிறுவல் அனுபவம் கொஞ்சம் வித்தியாசமாக இருக்கும். Chromebook பயனர்கள் , பின்வரும் நிறுவல் விதிமுறைகளைப் புறக்கணிக்கலாம்.
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
