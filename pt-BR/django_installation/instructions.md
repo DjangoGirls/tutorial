@@ -123,19 +123,19 @@ Inicie o seu ambiente virtual executando:
 
 <!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
 
-> **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
+> **NOTA:** Para usuários do popular editor VS Code, que conta com um terminal integrado baseado no Windows PowerShell, se você preferir continuar com o terminal integrado, você deve executar o seguinte comando para ativar seu ambiente virtual:
 > 
 >     $ . myvenv\Scripts\activate.ps1
 >     
 > 
-> The advantage is that you don't have to switch between editor windows and command-line windows
+> A vantagem é que você não necessita trocar entre o editor do Windows e a interface command-line.
 
 <!--endsec-->
 
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-Start your virtual environment by running:
+Inicie o seu ambiente virtual executando:
 
 {% filename %}command-line{% endfilename %}
 
