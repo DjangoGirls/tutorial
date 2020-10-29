@@ -45,7 +45,7 @@ This bottom area is your terminal. You can use the terminal to send instructions
 
 ### סביבה וירטואלית
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+סביבת פייתון וירטואלית (שם החבילה באנגלית virtualenv) היא כמו מכונה פרטית בה נוכל להריץ קוד שקשור לפרוייקט שעליו אנו עובדים. אנו משתמשים בסביבות אלו בשביל להפריד קטעי קוד מפרויקטים שונים, על מנת לא לערבב ביניהם.
 
 Run:
 
