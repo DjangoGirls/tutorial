@@ -2,9 +2,9 @@
 
 # Python 简介
 
-> Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> 本章的部分内容基于 Geek Girls Carrots (https://github.com/ggcarrots/django-carrots/) 的教程。
 
-Let's write some code!
+让我们开始写代码吧！
 
 ## Python 提示符
 
