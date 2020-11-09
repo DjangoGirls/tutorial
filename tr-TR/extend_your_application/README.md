@@ -2,7 +2,7 @@
 
 # Uygulamanı genişlet
 
-We've already completed all the different steps necessary for the creation of our website: we know how to write a model, URL, view and template. We also know how to make our website pretty.
+Websitemizi oluşturmak için gerekli olan adımların hepsini tamamladık: bir modelin, url'nin, view'in ve template(şablon)'in nasıl yazılacağını biliyoruz. Websitemizi nasıl güzelleştirebiliriz, onu da biliyoruz.
 
 Pratik zamanı!
 
