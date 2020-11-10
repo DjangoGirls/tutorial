@@ -21,9 +21,9 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
     {% for post in posts %}
         <div class="post">
             <div class="date">
-                {{ post.published_date }}
+                <p>Published: {{ post.published_date }}</p>
             </div>
-            <h2><a href="">{{ post.title }}</a></h2>
+            <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
@@ -172,7 +172,7 @@ It'd be good to see if your website still works on PythonAnywhere, right? Let's 
 {% filename %}command-line{% endfilename %}
 ```
 $ git status
-$ git add --all .
+$ git add .
 $ git status
 $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
 $ git push
