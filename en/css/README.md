@@ -125,15 +125,18 @@ Your file should now look like this:
 </head>
 
 <body>
-    <div>
-        <h1><a href="/">Django Girls Blog</a></h1>
+    <div class="page-header">
+        <div class="container">
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </div>
     </div>
+
     {% for post in posts %}
-    <div>
-        <p>Published: {{ post.published_date }}</p>
-        <h2><a href="">{{ post.title }}</a></h2>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+        <div>
+            <p>Published: {{ post.published_date }}</p>
+            <h2><a href="">{{ post.title }}</a></h2>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
     {% endfor %}
 </body>
 
@@ -188,7 +191,9 @@ Go ahead and name some parts of the HTML code. Add a class called `page-header` 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
 <div class="page-header">
-    <h1><a href="/">Django Girls Blog</a></h1>
+    <div class="container">
+        <h1><a href="/">Django Girls Blog</a></h1>
+    </div>
 </div>
 ```
 
@@ -208,20 +213,16 @@ We will now add declaration blocks to different selectors. Selectors starting wi
 {% filename %}blog/static/css/blog.css{% endfilename %}
 ```css
 .page-header {
-    background-color: #C25100;
+    background-color: #ff9400;
     margin-top: 0;
-    margin-bottom: 40px;
     padding: 20px 20px 20px 40px;
+    margin-bottom: 40px;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
     color: #ffffff;
     font-size: 36pt;
     text-decoration: none;
-}
-
-.content {
-    margin-left: 40px;
 }
 
 h1, h2, h3, h4 {
