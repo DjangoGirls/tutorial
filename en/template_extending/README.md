@@ -35,7 +35,9 @@ Then open it up in the code editor and copy everything from `post_list.html` to 
 
 <body>
     <div class="page-header">
-        <h1><a href="/">Django Girls Blog</a></h1>
+        <div class="container">
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </div>
     </div>
     
     <div class="content container">
@@ -64,8 +66,11 @@ Then in `base.html`, replace your whole `<body>` (everything between `<body>` an
 ```html
 <body>
     <div class="page-header">
-        <h1><a href="/">Django Girls Blog</a></h1>
+        <div class="container">
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </div>
     </div>
+    
     <div class="content container">
         <div class="row">
             <div class="col-md-8">
