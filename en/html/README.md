@@ -40,11 +40,14 @@ Open the new file in the code editor, and add the following:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
+<!DOCTYPE html>
 <html>
+
 <body>
     <p>Hi there!</p>
     <p>It works!</p>
 </body>
+
 </html>
 ```
 
@@ -54,7 +57,8 @@ So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
 
 It worked! Nice work there :)
 
-- The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
+- The line `<!DOCTYPE html>` is not a HTML tag. It only declares the document type. Here, it informs the browser that document type is [HTML5](https://html.spec.whatwg.org/#the-doctype). This is always the beginning of any HTML5 file.
+- The most basic tag, `<html>`, is always the beginning of html content and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
 - `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
 
 ## Head and body
@@ -71,14 +75,18 @@ For example, you can put a web page title element inside the `<head>`, like this
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Ola's blog</title>
-    </head>
-    <body>
-        <p>Hi there!</p>
-        <p>It works!</p>
-    </body>
+
+<head>
+    <title>Ola's blog</title>
+</head>
+
+<body>
+    <p>Hi there!</p>
+    <p>It works!</p>
+</body>
+
 </html>
 ```
 
@@ -113,27 +121,29 @@ Here's an example of a full template, copy and paste it into `blog/templates/blo
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Django Girls blog</title>
-    </head>
-    <body>
-        <div>
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My first post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
+<head>
+    <title>Django Girls blog</title>
+</head>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My second post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
-    </body>
+<body>
+    <div>
+        <h1><a href="/">Django Girls Blog</a></h1>
+    </div>
+    <div>
+        <p>published: 14.06.2014, 12:14</p>
+        <h2><a href="">My first post</a></h2>
+        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+    </div>
+    <div>
+        <p>published: 14.06.2014, 12:14</p>
+        <h2><a href="">My second post</a></h2>
+        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
+    </div>
+</body>
+
 </html>
 ```
 
@@ -167,10 +177,10 @@ Make sure you're in the `djangogirls` directory and let's tell `git` to include 
 
 {% filename %}command-line{% endfilename %}
 ```
-$ git add --all .
+$ git add .
 ```
 
-> __Note__ `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Also remember (from chapter 3) that `.` means the current directory.
+> __Note__ By default, `git add` will recognize if you've deleted files (by default, it only recognizes new/modified files). Also remember (from chapter 3) that `.` means the current directory.
 
 Before we upload all the files, let's check what `git` will be uploading (all the files that `git` will upload should now appear in green):
 
