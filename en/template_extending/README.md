@@ -12,10 +12,10 @@ Let's create a `base.html` file in `blog/templates/blog/`:
 
 ```
 blog
-└───templates
-    └───blog
-            base.html
-            post_list.html
+└── templates
+    └── blog
+        ├── base.html
+        └── post_list.html
 ```
 
 Then open it up in the code editor and copy everything from `post_list.html` to `base.html` file, like this:
@@ -23,35 +23,38 @@ Then open it up in the code editor and copy everything from `post_list.html` to 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 ```html
 {% load static %}
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    </head>
-    <body>
-        <div class="page-header">
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
 
-        <div class="content container">
-            <div class="row">
-                <div class="col-md-8">
+<head>
+    <title>Django Girls blog</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+</head>
+
+<body>
+    <div class="page-header">
+        <h1><a href="/">Django Girls Blog</a></h1>
+    </div>
+    
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-8">
                 {% for post in posts %}
                     <div class="post">
                         <div class="date">
-                            {{ post.published_date }}
+                            <p>Published: {{ post.published_date }}</p>
                         </div>
                         <h2><a href="">{{ post.title }}</a></h2>
                         <p>{{ post.text|linebreaksbr }}</p>
                     </div>
                 {% endfor %}
-                </div>
             </div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>
 ```
 
@@ -91,7 +94,7 @@ Now save `base.html` and open your `blog/templates/blog/post_list.html` again in
 {% for post in posts %}
     <div class="post">
         <div class="date">
-            {{ post.published_date }}
+            <p>Published: {{ post.published_date }}</p>
         </div>
         <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
@@ -110,7 +113,7 @@ Time to add block tags to this file!
     {% for post in posts %}
         <div class="post">
             <div class="date">
-                {{ post.published_date }}
+                <p>Published: {{ post.published_date }}</p>
             </div>
             <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
@@ -129,7 +132,7 @@ Only one thing left. We need to connect these two templates together.  This is w
     {% for post in posts %}
         <div class="post">
             <div class="date">
-                {{ post.published_date }}
+                <p>Published: {{ post.published_date }}</p>
             </div>
             <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
