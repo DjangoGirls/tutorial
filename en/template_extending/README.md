@@ -46,7 +46,7 @@ Then open it up in the code editor and copy everything from `post_list.html` to 
                 {% for post in posts %}
                     <div class="post">
                         <div class="date">
-                            <p>Published: {{ post.published_date }}</p>
+                            <p>{{ post.published_date }}</p>
                         </div>
                         <h2><a href="">{{ post.title }}</a></h2>
                         <p>{{ post.text|linebreaksbr }}</p>
@@ -99,7 +99,7 @@ Now save `base.html` and open your `blog/templates/blog/post_list.html` again in
 {% for post in posts %}
     <div class="post">
         <div class="date">
-            <p>Published: {{ post.published_date }}</p>
+            <p>{{ post.published_date }}</p>
         </div>
         <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
@@ -118,7 +118,7 @@ Time to add block tags to this file!
     {% for post in posts %}
         <div class="post">
             <div class="date">
-                <p>Published: {{ post.published_date }}</p>
+                <p>{{ post.published_date }}</p>
             </div>
             <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
@@ -137,7 +137,7 @@ Only one thing left. We need to connect these two templates together.  This is w
     {% for post in posts %}
         <div class="post">
             <div class="date">
-                <p>Published: {{ post.published_date }}</p>
+                <p>{{ post.published_date }}</p>
             </div>
             <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>

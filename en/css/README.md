@@ -20,7 +20,7 @@ To install Bootstrap, open up your `.html` file in the code editor and add this 
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 ```
 
 This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
@@ -120,15 +120,13 @@ Your file should now look like this:
 
 <head>
     <title>Django Girls blog</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 </head>
 
 <body>
-    <div class="page-header">
-        <div class="container">
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+    <div>
+        <h1><a href="/">Django Girls Blog</a></h1>
     </div>
 
     {% for post in posts %}
@@ -292,7 +290,7 @@ in the `blog/templates/blog/post_list.html` with this:
             {% for post in posts %}
                 <div class="post">
                     <div class="date">
-                        <p>Published: {{ post.published_date }}</p>
+                        <p>{{ post.published_date }}</p>
                     </div>
                     <h2><a href="">{{ post.title }}</a></h2>
                     <p>{{ post.text|linebreaksbr }}</p>
