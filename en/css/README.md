@@ -255,6 +255,18 @@ h1, h2, h3, h4 {
 .post h2 a, .post h2 a:visited {
     color: #000000;
 }
+
+.btn-default {
+    color: rgb(255, 148, 0);
+    background: none;
+    border: none;
+}
+
+.btn-default:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 148, 0);
+    border-color: rgb(204, 179, 144);
+}
 ```
 
 Then surround the HTML code which displays the posts with declarations of classes. Replace this:
