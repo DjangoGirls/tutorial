@@ -85,7 +85,7 @@ $ python3 -m venv myvenv
 >{% filename %}command-line{% endfilename %}
 >```
 >$ sudo apt install python-virtualenv
->$ virtualenv --python=python3.6 myvenv
+>$ virtualenv --python=python3.9 myvenv
 >```
 
 > __NOTE:__ If you get an error like
@@ -99,7 +99,7 @@ $ python3 -m venv myvenv
 >
 >{% filename %}command-line{% endfilename %}
 >```
->sudo apt install python3.6-venv
+>sudo apt install python3.9-venv
 >```
 
 <!--endsec-->
