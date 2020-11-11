@@ -21,6 +21,7 @@ Remember when we talked about including code written in different files? Now is 
 {% filename %}blog/views.py{% endfilename %}
 ```python
 from django.shortcuts import render
+
 from .models import Post
 ```
 
@@ -45,6 +46,7 @@ So, let's open the `blog/views.py` file in the code editor, and add this piece o
 ```python
 from django.shortcuts import render
 from django.utils import timezone
+
 from .models import Post
 
 def post_list(request):
@@ -66,6 +68,7 @@ So finally our `blog/views.py` file should look like this:
 ```python
 from django.shortcuts import render
 from django.utils import timezone
+
 from .models import Post
 
 def post_list(request):
