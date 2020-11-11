@@ -81,11 +81,11 @@ You will notice that a new `blog` directory is created and it contains a number 
 ```
 djangogirls
 ├── blog
-│   ├── admin.py
-│   ├── apps.py
-│   ├── __init__.py
 │   ├── migrations
 │   │   └── __init__.py
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
 │   ├── models.py
 │   ├── tests.py
 │   └── views.py
