@@ -260,7 +260,7 @@ h4 {
     margin-bottom: 70px;
 }
 
-.post .action {
+.post .actions {
     float: right;
     margin: auto 10px;
 }
