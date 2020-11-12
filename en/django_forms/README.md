@@ -27,7 +27,7 @@ class PostForm(forms.ModelForm):
 
     class Meta:
         model = Post
-        fields = ('title', 'text',)
+        fields = ['title', 'text',]
 ```
 
 We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
