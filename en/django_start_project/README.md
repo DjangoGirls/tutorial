@@ -54,6 +54,7 @@ djangogirls
 ├── manage.py
 ├── mysite
 │   ├── __init__.py
+│   ├── asgi.py
 │   ├── settings.py
 │   ├── urls.py
 │   └── wsgi.py
@@ -87,7 +88,7 @@ In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choos
 TIME_ZONE = 'Europe/Berlin'
 ```
 
-A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `ch` for Switzerland. If English is not your native language, you can add this to change the default buttons and notifications from Django to be in your language. So you would have "Cancel" button translated into the language you defined here. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/2.2/ref/settings/#language-code).
+A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `ch` for Switzerland. If English is not your native language, you can add this to change the default buttons and notifications from Django to be in your language. So you would have "Cancel" button translated into the language you defined here. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/3.1/ref/settings/#language-code).
 
 If you want a different language, change the language code by changing the following line:
 
@@ -102,7 +103,7 @@ We'll also need to add a path for static files. (We'll find out all about static
 {% filename %}mysite/settings.py{% endfilename %}
 ```python
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = BASE_DIR / 'static'
 ```
 
 When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated against `['localhost', '127.0.0.1', '[::1]']`. This won't
@@ -129,7 +130,7 @@ This is already set up in this part of your `mysite/settings.py` file:
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 ```

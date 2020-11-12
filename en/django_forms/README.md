@@ -12,7 +12,7 @@ We need to create a file with this name in the `blog` directory.
 
 ```
 blog
-   └── forms.py
+└── forms.py
 ```
 
 OK, let's open it in the code editor and type the following code:
@@ -27,7 +27,7 @@ class PostForm(forms.ModelForm):
 
     class Meta:
         model = Post
-        fields = ('title', 'text',)
+        fields = ['title', 'text',]
 ```
 
 We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
@@ -352,7 +352,7 @@ Feel free to change the title or the text and save the changes!
 
 Congratulations! Your application is getting more and more complete!
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.2/topics/forms/
+If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/3.1/topics/forms/
 
 ## Security
 

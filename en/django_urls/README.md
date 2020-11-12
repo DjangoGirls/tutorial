@@ -99,4 +99,4 @@ Your console is showing an error, but don't worry – it's actually pretty usefu
 If you see a different error message, try restarting your web server. To do that, in the console window that is running the web server, stop it by pressing Ctrl+C (the Control and C keys together). On Windows, you might have to press Ctrl+Break. Then you need to restart the web server by running a `python manage.py runserver` command.
 
 
-> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/2.2/topics/http/urls/
+> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/3.1/topics/http/urls/
