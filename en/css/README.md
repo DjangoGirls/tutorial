@@ -77,7 +77,7 @@ In your `blog/static/css/blog.css` file you should add the following code:
 {% filename %}blog/static/css/blog.css{% endfilename %}
 ```css
 h1 a, h2 a {
-    color: #FF8833;
+    color: #C25100;
 }
 
 ```
@@ -208,36 +208,43 @@ We will now add declaration blocks to different selectors. Selectors starting wi
 .page-header {
     background-color: #C25100;
     margin-top: 0;
+    margin-bottom: 40px;
     padding: 20px 20px 20px 40px;
 }
 
-.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+.page-header h1,
+.page-header h1 a,
+.page-header h1 a:visited,
+.page-header h1 a:active {
     color: #ffffff;
     font-size: 36pt;
     text-decoration: none;
 }
 
-.content {
-    margin-left: 40px;
-}
-
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Lobster', cursive;
 }
 
 .date {
     color: #828282;
+    float: right;
 }
 
 .save {
     float: right;
 }
 
-.post-form textarea, .post-form input {
+.post-form textarea,
+.post-form input {
     width: 100%;
 }
 
-.top-menu, .top-menu:hover, .top-menu:visited {
+.top-menu,
+.top-menu:hover,
+.top-menu:visited {
     color: #ffffff;
     float: right;
     font-size: 26pt;
@@ -248,8 +255,27 @@ h1, h2, h3, h4 {
     margin-bottom: 70px;
 }
 
-.post h2 a, .post h2 a:visited {
+.post h2 a,
+.post h2 a:visited {
     color: #000000;
+}
+
+.post .actions {
+    float: right;
+    margin: auto 10px;
+}
+
+.btn-default {
+    color: rgb(255, 148, 0);
+    background: none;
+    border-color: rgb(255, 148, 0);
+}
+
+.btn-default:hover,
+.btn-default:visited {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 148, 0);
+    border-color: rgb(204, 179, 144);
 }
 ```
 
