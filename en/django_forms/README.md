@@ -44,7 +44,7 @@ So once again we will create a link to the page, a URL, a view and a template.
 
 ## Link to a page with the form
 
-It's time to open `blog/templates/blog/base.html` in the code editor. In the `div` named `page-header`, we will add a link:
+It's time to open `blog/templates/blog/base.html` in the code editor. In the `div` named `container` inside `page-header` `div` tag, we will add a link:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 ```html
@@ -68,8 +68,10 @@ After adding the line, your HTML file should now look like this:
     </head>
     <body>
         <div class="page-header">
-            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-            <h1><a href="/">Django Girls Blog</a></h1>
+            <div class="container">
+                <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+                <h1><a href="/">Django Girls Blog</a></h1>
+            </div>
         </div>
         <div class="content container">
             <div class="row">
@@ -358,7 +360,7 @@ If you need more information about Django forms, you should read the documentati
 
 Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
 
-Open `blog/templates/blog/base.html` in the code editor, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
+Open `blog/templates/blog/base.html` in the code editor, find our `container` `div` inside `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 ```html

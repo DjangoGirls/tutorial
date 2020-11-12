@@ -181,12 +181,14 @@ Great!
 
 As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post).  A class can help you make them look different.
 
-Go ahead and name some parts of the HTML code. Add a class called `page-header` to your `div` that contains your header, like this:
+Go ahead and name some parts of the HTML code. Replace the `div` that contains your header with the following:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
 <div class="page-header">
-    <h1><a href="/">Django Girls Blog</a></h1>
+    <div class="container">
+        <h1><a href="/">Django Girls Blog</a></h1>
+    </div>
 </div>
 ```
 
