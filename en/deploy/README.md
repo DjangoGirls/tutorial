@@ -24,7 +24,7 @@ Git tracks changes to a particular set of files in what's called a code reposito
 
 {% filename %}command-line{% endfilename %}
 ```
-$ git init
+$ git init -b main
 Initialized empty Git repository in ~/djangogirls/.git/
 $ git config --global user.name "Your Name"
 $ git config --global user.email you@example.com
@@ -60,7 +60,7 @@ It's a good idea to use a `git status` command before `git add` or whenever you 
 {% filename %}command-line{% endfilename %}
 ```
 $ git status
-On branch master
+On branch main
 
 No commits yet
 
@@ -111,7 +111,7 @@ Type the following into your console (replace `<your-github-username>` with the 
 {% filename %}command-line{% endfilename %}
 ```
 $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git
-$ git push -u origin master
+$ git push origin main
 ```
 
 When you push to GitHub, you'll be asked for your GitHub username and password (either right there in the command-line window or in a pop-up window), and after entering credentials you should see something like this:
@@ -122,8 +122,8 @@ Counting objects: 6, done.
 Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
 To https://github.com/ola/my-first-blog.git
- * [new branch]      master -> master
-Branch master set up to track remote branch master from origin.
+ * [new branch]      main -> main
+Branch main set up to track remote branch main from origin.
 ```
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
