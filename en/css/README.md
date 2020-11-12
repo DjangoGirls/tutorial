@@ -129,7 +129,7 @@ Your file should now look like this:
 
         {% for post in posts %}
             <div>
-                <p>published: {{ post.published_date }}</p>
+                <p>Published: {{ post.published_date }}</p>
                 <h2><a href="">{{ post.title }}</a></h2>
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
@@ -197,7 +197,7 @@ And now add a class `post` to your `div` containing a blog post.
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
 <div class="post">
-    <p>published: {{ post.published_date }}</p>
+    <p>Published: {{ post.published_date }}</p>
     <h2><a href="">{{ post.title }}</a></h2>
     <p>{{ post.text|linebreaksbr }}</p>
 </div>
@@ -287,7 +287,7 @@ Then surround the HTML code which displays the posts with declarations of classe
 ```html
 {% for post in posts %}
     <div class="post">
-        <p>published: {{ post.published_date }}</p>
+        <p>Published: {{ post.published_date }}</p>
         <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
@@ -304,7 +304,7 @@ in the `blog/templates/blog/post_list.html` with this:
             {% for post in posts %}
                 <div class="post">
                     <div class="date">
-                        <p>published: {{ post.published_date }}</p>
+                        <p>Published: {{ post.published_date }}</p>
                     </div>
                     <h2><a href="">{{ post.title }}</a></h2>
                     <p>{{ post.text|linebreaksbr }}</p>
