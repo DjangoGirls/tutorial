@@ -40,6 +40,7 @@ Open the new file in the code editor, and add the following:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
+<!DOCTYPE html>
 <html>
 <body>
     <p>Hi there!</p>
@@ -54,7 +55,8 @@ So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
 
 It worked! Nice work there :)
 
-- The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
+- The line `<!DOCTYPE html>` is not a HTML tag. It only declares the document type. Here, it informs the browser that document type is [HTML5](https://html.spec.whatwg.org/#the-doctype). This is always the beginning of any HTML5 file.
+- The most basic tag, `<html>`, is always the beginning of html content and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
 - `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
 
 ## Head and body
@@ -71,6 +73,7 @@ For example, you can put a web page title element inside the `<head>`, like this
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Ola's blog</title>
@@ -113,6 +116,7 @@ Here's an example of a full template, copy and paste it into `blog/templates/blo
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>

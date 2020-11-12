@@ -58,6 +58,7 @@ After adding the line, your HTML file should now look like this:
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 ```html
 {% load static %}
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
