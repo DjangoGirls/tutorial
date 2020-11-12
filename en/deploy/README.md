@@ -80,7 +80,7 @@ And finally we save our changes. Go to your console and run these commands:
 
 {% filename %}command-line{% endfilename %}
 ```
-$ git add --all .
+$ git add .
 $ git commit -m "My Django Girls app, first commit"
  [...]
  13 files changed, 200 insertions(+)
