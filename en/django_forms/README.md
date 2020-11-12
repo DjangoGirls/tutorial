@@ -12,7 +12,7 @@ We need to create a file with this name in the `blog` directory.
 
 ```
 blog
-   └── forms.py
+└── forms.py
 ```
 
 OK, let's open it in the code editor and type the following code:

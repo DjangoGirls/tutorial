@@ -81,11 +81,11 @@ You will notice that a new `blog` directory is created and it contains a number 
 ```
 djangogirls
 ├── blog
-│   ├── admin.py
-│   ├── apps.py
-│   ├── __init__.py
 │   ├── migrations
 │   │   └── __init__.py
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
 │   ├── models.py
 │   ├── tests.py
 │   └── views.py
@@ -93,6 +93,7 @@ djangogirls
 ├── manage.py
 ├── mysite
 │   ├── __init__.py
+│   ├── asgi.py
 │   ├── settings.py
 │   ├── urls.py
 │   └── wsgi.py
@@ -181,8 +182,8 @@ The last step here is to add our new model to our database. First we have to mak
 ```
 (myvenv) ~/djangogirls$ python manage.py makemigrations blog
 Migrations for 'blog':
-  blog/migrations/0001_initial.py:
-  - Create model Post
+  blog/migrations/0001_initial.py
+    - Create model Post
 ```
 
 **Note:** Remember to save the files you edit. Otherwise, your computer will execute the previous version which might give you unexpected error messages.
