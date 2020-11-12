@@ -53,7 +53,7 @@ It's time to open `blog/templates/blog/base.html` in the code editor. In the `di
 </a>
 ```
 
-Note that we want to call our new view `post_new`. The class `"glyphicon glyphicon-plus"` is provided by the bootstrap theme we are using, and will display a plus sign for us.
+Note that we want to call our new view `post_new`. The [svg icon](https://icons.getbootstrap.com/icons/file-earmark-plus/) is provided by the [Bootstrap Icons](https://icons.getbootstrap.com/) and it will display a page icon with plus sign.
 
 After adding the line, your HTML file should now look like this:
 
