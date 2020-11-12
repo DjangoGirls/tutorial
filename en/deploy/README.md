@@ -135,7 +135,7 @@ Type the following into your console (replace `<your-github-username>` with the 
 {% filename %}command-line{% endfilename %}
 ```
 $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git
-$ git push origin main
+$ git push -u origin main
 ```
 
 When you push to GitHub, you'll be asked for your GitHub username and password (either right there in the command-line window or in a pop-up window), and after entering credentials you should see something like this:
