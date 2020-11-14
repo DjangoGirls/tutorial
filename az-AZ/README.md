@@ -2,17 +2,17 @@
 
 [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
-> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
+> Bu iş Creative Commons Attribution-ShareAlike 4.0 Beynəlxalq Lisenziyası altında lisenziyalanmışdır. Bu lisenziyanın bir kopyasına baxmaq üçün, https://creativecommons.org/licenses/by-sa/4.0/ ünvanını ziyarət edin.
 
 ## Xoş Gəldiniz
 
-Django Girls Təliminə xoş gəldin! We are happy to see you here :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
+Django Girls Dərsliyinizə xoş gəldiniz! Sizi burada görməyə şadıq :) Bu dərslikdə, sizi veb texnologiyalar başlığı altında bir səyahətə aparacağıq, internetin bildiyimiz kimi işləməsi üçün bir araya gəlməsi lazım olan bütün hissə və parçalara nəzər salacağıq.
 
-As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
+Bütün bilinməyən şeylərdə olduğu kimi, bu da bir macəra dolu səyahət olacaq - ancaq narahat olmayın, çünki cəsarətiniz sayəsində buradasınız və daha da yaxşı olacaqsınız :)
 
 ## Giriş
 
-Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
+Heç (hələ də) əlaqə qurmadığınız texnologiyanın getdikcə dünya ilə daha çox əlaqəli olduğunu hiss etməmisiniz? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
 
 Onda, sizə xoş xəbərlərimiz var! Proqramlaşdırma göründüyü qədər çətin deyil və biz sizə nə qədər əyləncəli ola biləcəyini göstərmək istəyirik.
 
