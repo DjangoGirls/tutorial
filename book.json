@@ -3,7 +3,7 @@
     "variables": {
       "py_version": "3.9",
       "py_release": "3.9.0",
-      "pyaw_version": "3.8",
+      "pa_py_version": "3.8",
       "django_version": "2.2.4"
     },
     "links": {

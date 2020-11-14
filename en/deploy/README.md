@@ -152,7 +152,7 @@ Deploying a web app on PythonAnywhere involves pulling down your code from GitHu
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 ```
-$ pip{{ book.pyaw_version }} install --user pythonanywhere
+$ pip{{ book.pa_py_version }} install --user pythonanywhere
 ```
 
 That should print out some things like `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
@@ -161,7 +161,7 @@ Now we run the helper to automatically configure our app from GitHub. Type the f
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 ```
-$ pa_autoconfigure_django.py --python={{ book.pyaw_version }} https://github.com/<your-github-username>/my-first-blog.git
+$ pa_autoconfigure_django.py --python={{ book.pa_py_version }} https://github.com/<your-github-username>/my-first-blog.git
 ```
 
 As you watch that running, you'll be able to see what it's doing:
