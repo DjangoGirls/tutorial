@@ -1,4 +1,4 @@
-# Xülasə
+# İcmal
 
 * [Giriş](README.md)
 * [Quraşdırma](installation/README.md) 
@@ -31,5 +31,5 @@
 * [CSS – gözəlləşdirin](css/README.md)
 * [Şablonu genişləndirmə](template_extending/README.md)
 * [Tətbiqetmənizi genişləndirin](extend_your_application/README.md)
-* [Django Forms](django_forms/README.md)
-* [What's next?](whats_next/README.md)
+* [Django Formları](django_forms/README.md)
+* [Növbədə nədir?](whats_next/README.md)
