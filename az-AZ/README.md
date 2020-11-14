@@ -12,11 +12,11 @@ Bütün bilinməyən şeylərdə olduğu kimi, bu da bir macəra dolu səyahət 
 
 ## Giriş
 
-Heç (hələ də) əlaqə qurmadığınız texnologiyanın getdikcə dünya ilə daha çox əlaqəli olduğunu hiss etməmisiniz? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
+Heç (hələ də) əlaqə qurmadığınız texnologiyanın getdikcə dünya ilə daha çox əlaqəli olduğunu hiss etməmisiniz? Heç bir veb saytın necə hazırlandığı ilə maraqlanıb başlamaq üçün lazım olan motivasiyaya sahib olmamısınız? Proqram təminatı (kod) dünyasının sizin üçün özbaşına bir şeylərə cəhd etmək üçün çox mürəkkəb olduğunu düşünmüsünüz?
 
-Onda, sizə xoş xəbərlərimiz var! Proqramlaşdırma göründüyü qədər çətin deyil və biz sizə nə qədər əyləncəli ola biləcəyini göstərmək istəyirik.
+Onda, sizə yaxşı xəbərimiz var! Proqramlaşdırma göründüyü qədər çətin deyil və biz sizə nə qədər əyləncəli ola biləcəyini göstərmək istəyirik.
 
-Bu təlim sizi möcüzəli şəkildə bir anda proqramçıya çevirməyəcək. Əgər bu mövzuda yaxşı olmaq istəyirsinizsə, aylarla, hətta illərlə öyrənməyə və pratika etməyə ehtiyacınız var. Ancaq yenə də sizə göstərmək istəyirik ki, proqramlaşdırma və ya veb sayt yaratmaq göründüyü qədər mürəkkəb deyil. Müxtəlif hissələri bacardığımız qədər izah etməyə çalışacağıq ki, texnologiyadan artıq gözünüz qorxmasın.
+Bu dərslik bir sehrlə sizi proqramçıya çevirməyəcək. Əgər bu mövzuda yaxşı olmaq istəyirsinizsə, aylarla, hətta illərlə öyrənməyə və pratika etməyə ehtiyacınız var. Ancaq yenə də sizə göstərmək istəyirik ki, proqramlaşdırma və ya veb sayt yaratmaq göründüyü qədər mürəkkəb deyil. Müxtəlif hissələri bacardığımız qədər izah etməyə çalışacağıq ki, texnologiyadan artıq gözünüz qorxmasın.
 
 Ümid edirik ki, texnologiyanı sizə bizim qədər sevdirə biləcəyik!
 
