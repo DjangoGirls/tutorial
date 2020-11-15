@@ -12,7 +12,7 @@
 
 # Git
 
-> **注意** 如果你已经做过安装步骤了，你可以直接跳过这个步骤开始创建你自己的Git版本库。
+> **Note** If you already did the installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
 
 {% include "/deploy/install_git.md" %}
 
