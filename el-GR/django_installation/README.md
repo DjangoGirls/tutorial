@@ -2,6 +2,6 @@
 
 > **Σημείωση** Αν χρησιμοποιείτε ένα Chromebook, παραλείψτε αυτό το κεφάλαιο και σιγουρευτείτε ότι ακουλουθείτε τις [Chromebook Setup](../chromebook_setup/README.md) οδηγίες.
 > 
-> **Σημείωση** Αν έχετε ήδη περάσει τα βήματα εγκατάστασης τότε το έχετε ήδη κάνει αυτό - μπορείτε να μεταβείτε απευθείας στο επόμενο κεφάλαιο!
+> **Note** If you already worked through the installation steps then you've already done this – you can go straight to the next chapter!
 
 {% include "/django_installation/instructions.md" %}
