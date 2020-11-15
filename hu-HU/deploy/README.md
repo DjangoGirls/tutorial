@@ -12,7 +12,7 @@ Ez a három helyen lesz fontos. A helyi számítógép lesz az a hely, ahol fejl
 
 # Git
 
-> **megjegyzés** Ha már a Telepítési lépéseket, nem kell ezt még egyszer – ugrás a következő részt, majd kezdeni a Git repository.
+> **Note** If you already did the installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
 
 {% include "/deploy/install_git.md" %}
 
