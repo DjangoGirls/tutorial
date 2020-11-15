@@ -177,7 +177,7 @@ def post_detail(request, pk):
 {% filename %}خط فرمان{% endfilename %}
 
     $ git status
-    $ git add --all .
+    $ git add .
     $ git status
     $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
     $ git push
