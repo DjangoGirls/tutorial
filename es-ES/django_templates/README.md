@@ -78,10 +78,10 @@ Sería bueno ver si tu sitio web seguirá funcionando en la Internet pública, �
 
     $ git status
     [...]
-    $ git add --all .
+    $ git add .
     $ git status
     [...]
-    $ git commit -m "Templates modificados para mostrar post desde base de datos."
+    $ git commit -m "Modified templates to display posts from database."
     [...]
     $ git push
     
