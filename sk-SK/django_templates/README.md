@@ -80,7 +80,7 @@ Bolo by fajn vidieť či bude tvoja web stránka stále funkčná aj na Internet
 
     $ git status
     [...]
-    $ git add --all .
+    $ git add .
     $ git status
     [...]
     $ git commit -m "Modified templates to display posts from database."
