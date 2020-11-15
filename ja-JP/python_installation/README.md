@@ -10,6 +10,6 @@ Pythonは1980年代の終わりに、人間が読みやすい（機械だけで�
 
 > **注意：**Chromebookをお使いの場合、このチャプターは飛ばして、[Chromebookのセットアップ](../chromebook_setup/README.md)の章をすすめてください。
 > 
-> **注意：**すでにインストール手順を実行している場合は、これをもう一度行う必要はありません。次の章に進んでください。
+> **Note** If you already worked through the installation steps, there's no need to do this again – you can skip straight ahead to the next chapter!
 
 {% include "/python_installation/instructions.md" %}
