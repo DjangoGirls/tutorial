@@ -10,6 +10,6 @@ Python berasal pada akhir 1980-an dan tujuan utamanya adalah untuk dapat dibaca 
 
 > **Catatan** Jika Anda menggunakan Chromebook, lewati bab ini dan pastikan Anda mengikuti [Pengaturan](../chromebook_setup/README.md) Chromebook.
 > 
-> **Catatan** Jika Anda sudah mengerjakan langkah-langkah Pemasangan, Anda tidak perlu melakukan ini lagi - Anda bisa langsung melompat ke bab berikutnya!
+> **Note** If you already worked through the installation steps, there's no need to do this again – you can skip straight ahead to the next chapter!
 
 {% include "/python_installation/instructions.md"%}
