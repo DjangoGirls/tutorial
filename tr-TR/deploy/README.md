@@ -12,7 +12,7 @@ Bu üç yer sizin için önemli olacak. Lokal bilgisayarınız geliştirme ve te
 
 # Git
 
-> **Not** Eğer kurulum adımlarını zaten yaptıysanız, bunu tekrar yapmanıza gerek yok - bir sonraki bölüme geçip Git reponuzu oluşturabilirsiniz.
+> **Note** If you already did the installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
 
 {% include "/deploy/install_git.md" %}
 
