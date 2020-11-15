@@ -10,6 +10,6 @@ Python vznikol koncom 80-tych rokov minulého storočia a jeho hlavným cieľom 
 
 > **Poznámka:** Ak používaš Chromebook, preskoč túto kapitolu a postupuj podľa pokynov na [inštaláciu na Chromebookoch](../chromebook_setup/README.md).
 > 
-> **Poznámka** Ak si sa už cez kroky inštalácie prepracovala, nemusíš to robiť znova - môžeš preskočiť rovno na nasledujúcu kapitolu!
+> **Note** If you already worked through the installation steps, there's no need to do this again – you can skip straight ahead to the next chapter!
 
 {% include "/python_installation/instructions.md" %}
