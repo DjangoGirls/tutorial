@@ -10,6 +10,6 @@ Python sitere na ngwụsị 1980s ma ebum n’uche ya bu ka ndi mmadu nwe ike i 
 
 > **Ndetu** Ọ bụrụ na ị na-eji Chromebook, hapu ebe a ma gbaa mbọ hụ na ị na-eso [ntuziaka ](../chromebook_setup/README.md)Chromebook .
 > 
-> **Ndetu ** Ọ bụrụ n’ịrụ ọrụ site na nrụnye, ịgaghị eme nke a ọzọ - ị nwere ike hapu ebe a ga n’ihu n'isi ozo.
+> **Note** If you already worked through the installation steps, there's no need to do this again – you can skip straight ahead to the next chapter!
 
 {% include "/python_installation/instructions.md" %}
