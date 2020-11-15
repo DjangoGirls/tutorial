@@ -169,10 +169,8 @@ Make sure you're in the `djangogirls` directory and let's tell `git` to include 
 
 {% filename %}command-line{% endfilename %}
 
-    $ git add --all .
+    $ git add .
     
-
-> **Note** `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Korábban már volt róla szó (a 3. fejezetben), hogy a `.` az aktuális mappát jelenti.
 
 Mielőtt továbbmegyünk ellenőrizzük, hogy a `git` mit szeretne feltölteni (zölddel jelennek meg azok a fájlok, amiket a `git` fel akar tölteni):
 
@@ -188,7 +186,7 @@ Már majdnem készen is vagyunk, de előtte el kell mentenünk a változtatások
     $ git commit -m "Changed the HTML for the site."
     
 
-> **Megjegyzés** Győződj meg róla, hogy idézőjelet használsz a commit üzenetnél.
+> **Note** Make sure you use double quotes around the commit message.
 
 Once we've done that, we upload (push) our changes up to GitHub:
 
