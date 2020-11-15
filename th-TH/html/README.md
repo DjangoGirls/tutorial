@@ -169,10 +169,8 @@ Open the new file in the code editor, and add the following:
 
 {% filename %}command-line{% endfilename %}
 
-    $ git add --all .
+    $ git add .
     
-
-> **หมายเหตุ** `-A` (ย่อมาจาก "all") หมายถึง `git` จะจัดการไฟล์อื่นๆ รวมถึงไฟล์ที่ถูกลบไปแล้วด้วย (ซึ่งปกติ จะจัดการเฉพาะไฟล์ที่ถูกสร้างใหม่/แก้ไข เท่านั้น) ยังจำ (จากบทที่ 3) เครื่องหมาย `.` หมายถึงไดเรกทอรีปัจจุบัน
 
 ก่อนเราละอัปโหลดไฟล์ทั้งหมด ตรวจสอบดูว่า `git` จะอัปไฟล์ไหนไป (ไฟล์ที่ `git` จะอัปโหลดจะเป็นตัวอักษรสีเขียว):
 
@@ -188,7 +186,7 @@ Open the new file in the code editor, and add the following:
     $ git commit -m "Changed the HTML for the site."
     
 
-> **หมายเหตุ** ตรวจสอบให้แน่ใจว่าคุณใช้อัญประกาศคู่กับข้อความบันทึก
+> **Note** Make sure you use double quotes around the commit message.
 
 เมื่อเสร็จแล้ว เราจะทำการอัปโหลด (push) การเปลี่ยนแปลงไปที่ Github:
 
