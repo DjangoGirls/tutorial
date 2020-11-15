@@ -2,6 +2,6 @@
 
 > **Napomena:** Ako koristiš chromebook, preskoči ovo poglavlje i prati upute [Postavljanje Chromebooka](../chromebook_setup/README.md).
 > 
-> **Note** Ako si već prošla kroz korake instalacije, onda si ovo već napravila - možeš ići izravno na slijedeće poglavlje!
+> **Note** If you already worked through the installation steps then you've already done this – you can go straight to the next chapter!
 
 {% include "/django_installation/instructions.md" %}
