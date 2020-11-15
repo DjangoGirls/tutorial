@@ -171,10 +171,8 @@ Make sure you're in the `djangogirls` directory and let's tell `git` to include 
 
 {% filename %}command-line{% endfilename %}
 
-    $ git add --all .
+    $ git add .
     
-
-> **Note** `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). 此外，記得（在第３章）`.` 是指目前的目錄。
 
 在我們上傳的所有檔之前，讓我們檢查 `git` 將上傳那些檔案（所有 `git` 將上傳的檔案現在都應以綠色顯示）：
 
@@ -190,7 +188,7 @@ Make sure you're in the `djangogirls` directory and let's tell `git` to include 
     $ git commit -m "Changed the HTML for the site."
     
 
-> **注意** 確認在提交消息前後使用雙引號。
+> **Note** Make sure you use double quotes around the commit message.
 
 Once we've done that, we upload (push) our changes up to GitHub:
 
