@@ -2,6 +2,6 @@
 
 > **ملاحضة**إذا كنت تستخدم كروم بوك تخطى هذا القسم وتابع الإرشادات الموجودة في [التركيب على كروم بوك](../chromebook_setup/README.md).
 > 
-> **ملاحضة** اذا كنت قد عملت على تعليمات التركيب من قبل ، يمكنك الإنتقال الى المستوى الأخر!
+> **Note** If you already worked through the installation steps then you've already done this – you can go straight to the next chapter!
 
 {% include "/django_installation/instructions.md" %}
