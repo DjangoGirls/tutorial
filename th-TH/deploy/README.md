@@ -12,7 +12,7 @@ These three places will be important to you. เครื่องคอมพ�
 
 # Git
 
-> **หมายเหตุ** ถ้าคุณผ่านขั้นตอนในหัวข้อติดตั้งมาแล้ว คุณไม่จำเป็นต้องทำอีกครั้ง - คุณสามารถข้ามไปยังส่วนถัดไป และเริ่มสร้าง Git repository ได้เลย
+> **Note** If you already did the installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
 
 {% include "/deploy/install_git.md" %}
 
