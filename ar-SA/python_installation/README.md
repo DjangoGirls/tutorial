@@ -10,6 +10,6 @@
 
 > **ملاحضة**إذا كنت تستخدم كروم بوك تخطى هذا القسم وتابع الإرشادات الموجودة في [التركيب على كروم بوك](../chromebook_setup/README.md).
 > 
-> **ملاحضة** اذا كنت قد عملت على تعليمات التركيب من قبل ، يمكنك الإنتقال الى المستوى الأخر!
+> **Note** If you already worked through the installation steps, there's no need to do this again – you can skip straight ahead to the next chapter!
 
 {% include "/python_installation/instructions.md" %}
