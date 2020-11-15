@@ -10,6 +10,6 @@ Python a été créé à la fin des années 1980. l'objectif principal des créa
 
 > **Note** Si vous utilisez un Chromebook, passez ce chapitre et prenez soin de suivre les instructions de [configuration pour Chromebook](../chromebook_setup/README.md).
 > 
-> **Note** Si vous avez déjà réalisé les étapes d'installation, vous ne devez pas refaire la procédure - vous pouvez passer directement au prochain chapitre!
+> **Note** If you already worked through the installation steps, there's no need to do this again – you can skip straight ahead to the next chapter!
 
 {% include "/python_installation/instructions.md" %}
