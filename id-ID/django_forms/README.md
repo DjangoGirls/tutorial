@@ -417,7 +417,11 @@ We need to create a file `post_edit.html` in the `blog/templates/blog` directory
     
     {% filename%} baris perintah {% endfilename%}
     
-        $ git status $ git add --all. $ git status $ git commit -m "Ditambahkan tampilan untuk membuat / mengedit posting blog di dalam situs." $ git push
+        $ git status
+        $ git add .
+        $ git status
+        $ git commit -m "Added views to create/edit blog post inside the site."
+        $ git push
         
     
     * Kemudian dalam konsol Bash [PythonAnywhere](https://www.pythonanywhere.com/consoles/):
