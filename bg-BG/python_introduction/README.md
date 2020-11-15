@@ -427,7 +427,7 @@ KeyError: 'age'
 >>> participant['favorite_language'] = 'Python'
 ```
 
-Като при листовете, използването на метода `len()` върху речника връща броя на двойката елемент-стойност в речника. Продължете и напишете тази команда:
+Like lists, using the `len()` function on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
 
 {% filename %}command-line{% endfilename %}
 
@@ -493,9 +493,11 @@ True
 True
 >>> 5 != 2
 True
+>>> len([1, 2, 3]) > len([4, 5])
+True
 ```
 
-Дадохме на Python да сравни няколко числа. Както може да видите, Python не само че може да сравни числата, но може също така да сравнява и резултатите от метода. Супер, нали?
+We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare values of mathematical expressions like `2 * 2` and function results like the `2` returned by `len([4, 5])`. Nice, huh?
 
 Чудите ли се защо използвахме два знака за равно `==` един до друг за да сравним дали числата са равни? Използваме едно равно `=` за да причислим стойност на променливите. Винаги, ама **винаги** трябва да иползваме две от тях – `==` – ако искаме да проверим дали две неща са равни едно на друго. Можем също така да кажем, че не искаме двете неща да са равни едно на друго. Затова, използваме символа `!=`, както е показано в примера по-горе.
 
