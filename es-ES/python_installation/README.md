@@ -10,6 +10,6 @@ Python se originó en la década de 1980 y su principal objetivo es ser legible 
 
 > **Nota** Si usas un Chromebook, omite este capítulo y asegúrate de seguir las instrucciones de [Chromebook Setup](../chromebook_setup/README.md).
 > 
-> **Nota** Si ya has seguido los pasos de instalación, no hay necesidad de hacerlo nuevamente - ¡puedes saltar y continuar al siguiente capítulo!
+> **Note** If you already worked through the installation steps, there's no need to do this again – you can skip straight ahead to the next chapter!
 
 {% include "/python_installation/instructions.md" %}
