@@ -169,10 +169,8 @@ Make sure you're in the `djangogirls` directory and let's tell `git` to include 
 
 {% filename %}command-line{% endfilename %}
 
-    $ git add --all .
+    $ git add .
     
-
-> **Note** `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Ne pozabi (poglavje 3), da je `.` oznaka za trenutni imenik.
 
 Preden boš datoteke naložila, preveri, katere je `git` izbral (le-te bodo zelene barve):
 
@@ -188,7 +186,7 @@ Zagotoviti moramo še, da bo git zabeležil, kakšno spremembo smo naredili. Nap
     $ git commit -m "Changed the HTML for the site."
     
 
-> **Opomba:** Pri besedilo v git-u moraš vedno uporabiti dvojne narekovaje.
+> **Note** Make sure you use double quotes around the commit message.
 
 Once we've done that, we upload (push) our changes up to GitHub:
 
