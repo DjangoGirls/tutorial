@@ -169,10 +169,8 @@ Assegure-se de que você está no diretório `djangogirls` e vamos dizer ao `git
 
 {% filename %}command-line{% endfilename %}
 
-    $ git add --all .
+    $ git add .
     
-
-> **Observação:** `..--all` significa que o `git` também vai reconhecer se você tiver excluído arquivos (por padrão, ele só reconhece arquivos novos/modificados). Lembre-se também (do capítulo 3) que `.` significa o diretório atual.
 
 Antes de fazermos o upload de todos os arquivos, vamos verificar quais deles o `git` enviará (todos os arquivos marcados para upload pelo `git` aparecerão em verde):
 
@@ -188,7 +186,7 @@ Estamos quase lá! Agora é hora de dizer ao git para salvar essa modificação 
     $ git commit -m "Changed the HTML for the site."
     
 
-> **Observação:** Certifique-se de que você usou aspas duplas para delimitar a mensagem do commit.
+> **Note** Make sure you use double quotes around the commit message.
 
 Uma vez feito isso, faremos o upload (push) das nossas mudanças para o Github:
 
