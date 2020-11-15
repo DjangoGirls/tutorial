@@ -186,7 +186,7 @@ Fast fertig, wir sagen nun noch, dass diese Änderung in der Verlaufsübersicht 
     $ git commit -m "HTML der Site geändert."
     
 
-> **Note** Make sure you use double quotes around the commit message.
+> **Beachte:** Du musst Anführungszeichen um den Commit-Kommentar setzen.
 
 Nachdem wir das gemacht haben, laden (push) wir unsere Änderungen auf GitHub:
 
