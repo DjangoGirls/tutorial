@@ -427,7 +427,7 @@ Dictionaries, liksom listor, är *muterbara*, vilket innebär att de kan ändras
 >>> participant['favorite_language'] = 'Python'
 ```
 
-Likt listor, kan metoden `len()` på dictionaries returnerar antalet nyckel-värden-par i en dictionary. Gå vidare och skriv in detta kommando:
+Like lists, using the `len()` function on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
 
 {% filename %}command-line{% endfilename %}
 
@@ -493,9 +493,11 @@ True
 True
 >>> 5 != 2
 True
+>>> len([1, 2, 3]) > len([4, 5])
+True
 ```
 
-Vi gav Python några tal att jämföra. Som du kan se kan Python inte bara jämföra tal, utan även metodresultat. Trevligt, va?
+We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare values of mathematical expressions like `2 * 2` and function results like the `2` returned by `len([4, 5])`. Nice, huh?
 
 Undrar du varför vi sätter två likhetstecken `==` bredvid varandra för att jämföra om talen är lika? Vi använder ett enda `=` för att tilldela värden till variabler. Du behöver alltid, **alltid** använda två av dem – `==` – om du vill kontrollera om saker är lika. Vi kan också konstatera att saker och ting är olika varandra. För det använder vi symbolen `!=`, enligt exemplet ovan.
 
