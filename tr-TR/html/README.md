@@ -169,10 +169,8 @@ Bunları İnternet'te canlı olarak görmek çok güzel olur, değil mi:
 
 {% filename %}komut-satırı{% endfilename %}
 
-    $ git add --all .
+    $ git add .
     
-
-> **Not** `--all` demek eğer `git`'in silinmiş dosyaları varsa onları tanımayı sağlar (varsayılan olarak sadece yeni/değiştirilmiş dosyaları tanır). Hatırlatma: `.` içinde olduğumuz klasör anlamına gelir (3. Bölüm).
 
 Dosyalarımızı yüklemeden önce `git`'in hangilerini yükleyeceğine (`git`'in yükleyeceği dosyalar yeşil gösterilir) bakalım:
 
@@ -188,7 +186,7 @@ Neredeyse bitirdik, şimdi bu değişikliği tarihçesine kaydetmesini söyleyel
     $ git commit -m "Site için HTML dosyasını değiştirdim."
     
 
-> **Not** Tamamlama mesajını çift tırnak içerisinde kullandığımızdan emin olalım.
+> **Note** Make sure you use double quotes around the commit message.
 
 Bunu bir kez yapıp, değişikliklerimizi GitHub'a yükledik (ittik):
 
