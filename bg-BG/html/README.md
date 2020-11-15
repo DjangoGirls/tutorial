@@ -169,10 +169,8 @@ HTML идва от "HyperText Markup Language". **HyperText** означава, 
 
 {% filename %}command-line{% endfilename %}
 
-    $ git add --all .
+    $ git add .
     
-
-> **Забележка** `--all` означава, че `git` ще разпознае и файлове, които сте изтрили (по подразбиране, разпознава нови/модифицирани файлове). Също помните (от 3-та глава), че `.` означава настоящата директория.
 
 Преди да качим всички файлове, нека проверим какво ще качи `git` (всички файлове, които `git` ще качи ще се появят в зелено):
 
@@ -188,7 +186,7 @@ HTML идва от "HyperText Markup Language". **HyperText** означава, 
     $ git commit -m "Changed the HTML for the site."
     
 
-> **Забележка:** Бъдете сигурни, че сте сложили съобщението в двойни кавички.
+> **Note** Make sure you use double quotes around the commit message.
 
 След като сме направили това, качваме (push) нашите промени на GitHub:
 
