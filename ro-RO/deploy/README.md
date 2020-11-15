@@ -36,14 +36,38 @@ Git va urmări modificările făcute în toate fişierele şi mapele în aceast�
 
 {% filename %}.gitignore{% endfilename %}
 
+    # Python
     *.pyc
     *~
-    /.vscode
     __pycache__
-    myvenv
+    
+    # Env
+    .env
+    myvenv/
+    venv/
+    
+    # Database
     db.sqlite3
-    /static
+    
+    # Static folder
+    static/
+    
+    # macOS
+    ._*
     .DS_Store
+    .fseventsd
+    .Spotlight-V100
+    
+    # Windows
+    Thumbs.db*
+    ehthumbs*.db
+    [Dd]esktop.ini
+    $RECYCLE.BIN/
+    
+    # Visual Studio
+    .vscode/
+    .history/
+    *.code-workspace
     
 
 Și îl salvăm ca `.gitignore` în mapa "djangogirls".
@@ -77,7 +101,7 @@ Este o idee bună să folosiți comanda `git status` înaintea celei de `git add
 
 {% filename %}command-line{% endfilename %}
 
-    $ git add --all .
+    $ git add .
     $ git commit -m "My Django Girls app, first commit"
      [...]
      13 files changed, 200 insertions(+)
