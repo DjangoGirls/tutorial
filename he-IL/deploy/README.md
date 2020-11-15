@@ -36,14 +36,38 @@ Git יעקוב רק אחרי שינויים של קבצים בתיקייה הז�
 
 {% filename %}.gitignore{% endfilename %}
 
+    # Python
     *.pyc
     *~
-    /.vscode
     __pycache__
-    myvenv
+    
+    # Env
+    .env
+    myvenv/
+    venv/
+    
+    # Database
     db.sqlite3
-    /static
+    
+    # Static folder
+    static/
+    
+    # macOS
+    ._*
     .DS_Store
+    .fseventsd
+    .Spotlight-V100
+    
+    # Windows
+    Thumbs.db*
+    ehthumbs*.db
+    [Dd]esktop.ini
+    $RECYCLE.BIN/
+    
+    # Visual Studio
+    .vscode/
+    .history/
+    *.code-workspace
     
 
 And save it as `.gitignore` in the "djangogirls" folder.
@@ -77,7 +101,7 @@ And save it as `.gitignore` in the "djangogirls" folder.
 
 {% filename %}command-line{% endfilename %}
 
-    $ git add --all .
+    $ git add .
     $ git commit -m "My Django Girls app, first commit"
      [...]
      13 files changed, 200 insertions(+)
