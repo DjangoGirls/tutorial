@@ -177,9 +177,9 @@ Bolo by dobré vedieť, či tvoja stránka stále funguje na PythonAnywhere, vš
 {% filename %}command-line{% endfilename %}
 
     $ git status
-    $ git add --al .
+    $ git add .
     $ git status
-    $ git commit -m "Pridaný view a šablóna pre detail príspevku blogu a taktiež CSS pre stránku."
+    $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
     $ git push
     
 
