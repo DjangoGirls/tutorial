@@ -169,10 +169,8 @@ Make sure you're in the `djangogirls` directory and let's tell `git` to include 
 
 {% filename %}command-line{% endfilename %}
 
-    $ git add --all .
+    $ git add .
     
-
-> **Note** `--all` ay nangangahulugan na `git` ay makakikilala kung nagbura ka ng mga file (bilang default, ito ay nakakikilala lamang ng mga bago/binagong file). Alalahanin rin na (simula sa kabanata 3) na `.` ay nangangahulugan na kasalukuyang directory.
 
 Bago natin i-upload ang lahat ng mga file, tingnan natin kung ano ang i-a-upload ni `git` (ang lahat ng mga file na i-a-upload ni `git` ay dapat nang lumitaw ngayon sa berde):
 
@@ -188,7 +186,7 @@ Malapit na tayo, oras na ngayon upang sabihan ito na i-save ang mga pagbabago sa
     $ git commit -m "Binago ang HTML para sa site na ito."
     
 
-> **Note** Siguraduhin na gumamit ng dobleng quotes sa paligid ng commit message.
+> **Note** Make sure you use double quotes around the commit message.
 
 Sa sandaling nagawa na natin iyan, i-a-upload natin (ipasa) ang ating mga pagbabago sa Github:
 
