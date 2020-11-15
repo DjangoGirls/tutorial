@@ -169,10 +169,8 @@ Upewnij się, że jesteś w folderze `djangogirls` i powiedz `git`owi aby dodał
 
 {% filename %}command-line{% endfilename %}
 
-    $ git add --all .
+    $ git add .
     
-
-> **Uwaga:** `--all` (czyli "wszystko") oznacza, że `git` weźmie pod uwagę pliki, które usunęłaś (domyślnie rozpoznaje zmiany tylko w nowych lub już istniejących plikach). Pamiętaj również (vide rozdział 3), że `.` oznacza aktualny katalog.
 
 Zanim prześlemy wszystkie pliki, sprawdźmy, co faktycznie `git` zamierza przesłać (wszystkie pliki, które `git` prześle do repozytorium, powinny być zaznaczone na zielono):
 
@@ -188,7 +186,7 @@ Już blisko do końca. Teraz czas poprosić gita, aby zapisał te zmiany w histo
     $ git commit -m "Zmieniony kod HTML na stronie."
     
 
-> **Uwaga:** Nie zapomnij umieścić informacji o zmianach w cudzysłowie (" ").
+> **Note** Make sure you use double quotes around the commit message.
 
 Jak już wszystko to zrobimy, możemy wysłać (push) nasze zmiany na Githuba:
 
