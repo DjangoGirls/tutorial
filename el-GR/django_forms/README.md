@@ -427,7 +427,7 @@ If you need more information about Django forms, you should read the documentati
 {% filename %}command-line{% endfilename %}
 
     $ git status
-    $ git add --all .
+    $ git add .
     $ git status
     $ git commit -m "Added views to create/edit blog post inside the site."
     $ git push
