@@ -12,7 +12,7 @@
 
 # Git
 
-> **注：**もし、すでにインストールしていた場合は再度行う必要はありません。次のセクションに進んであなたのGitリポジトリを作り始められます。
+> **Note** If you already did the installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
 
 {% include "/deploy/install_git.md" %}
 
