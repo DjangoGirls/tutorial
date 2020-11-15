@@ -80,7 +80,7 @@ Yóò dára láti ṣàyẹ̀wò bóyá ààyè ayélujára rẹ ṣì máa ṣi
 
     $ git status
     [...]
-    $ git add --all .
+    $ git add .
     $ git status
     [...]
     $ git commit -m "Modified templates to display posts from database."
