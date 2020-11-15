@@ -169,10 +169,8 @@ Asigurați-vă că sunteți în directoriu `djangogirls` și hai să spunem ca `
 
 {% filename %}command-line{% endfilename %}
 
-    $ git add --all .
+    $ git add .
     
-
-> **Notă** `--all` înseamnă că `git` va identifica fișierile șterse (în mod implicit el identifică numai fișiere noi sau modificate). Țineți minte (din capitolul 3) că `.` înseamnă directoriu curent.
 
 Înainte de a încărca pe toate fișiere, hai să verificăm ce `git` va încărca (toate fișiere pe care `git` va încărca vor fi de culoare verde):
 
@@ -188,7 +186,7 @@ Aproape terminăm, acum este timp să-i spunem să salvăm schimbare această î
     $ git commit -m "Changed the HTML for the site."
     
 
-> **Notă** Asigurați-vă că utilizați un citat dublu în jurul mesajului de commit.
+> **Note** Make sure you use double quotes around the commit message.
 
 Când sunteți gată, încărcați (push) schimbările pe GitHub:
 
