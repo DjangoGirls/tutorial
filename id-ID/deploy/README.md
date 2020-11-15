@@ -37,14 +37,38 @@ Ketiga tempat ini penting bagi Anda. Komputer lokal Anda akan menjadi tempat pen
 > > 
 > > {% filename%} .gitignore {% endfilename%}
 > > 
+> >     # Python
 > >     *.pyc
 > >     *~
-> >     /.vscode
 > >     __pycache__
-> >     myvenv
+> >     
+> >     # Env
+> >     .env
+> >     myvenv/
+> >     venv/
+> >     
+> >     # Database
 > >     db.sqlite3
-> >     /static
+> >     
+> >     # Static folder
+> >     static/
+> >     
+> >     # macOS
+> >     ._*
 > >     .DS_Store
+> >     .fseventsd
+> >     .Spotlight-V100
+> >     
+> >     # Windows
+> >     Thumbs.db*
+> >     ehthumbs*.db
+> >     [Dd]esktop.ini
+> >     $RECYCLE.BIN/
+> >     
+> >     # Visual Studio
+> >     .vscode/
+> >     .history/
+> >     *.code-workspace
 > >     
 > > 
 > > Dan simpan sebagai ` .gitignore </ 0> di folder "djangogirls".</p>
@@ -80,7 +104,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 > > 
 > > {% filename %}command-line{% endfilename %}
 > > 
-> >     $ git add --all .
+> >     $ git add .
 > >     $ git commit -m "My Django Girls app, first commit"
 > >      [...]
 > >      13 files changed, 200 insertions(+)
