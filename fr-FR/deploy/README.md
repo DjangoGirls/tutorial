@@ -12,7 +12,7 @@ Ces trois endroits sont importants pour vous. Votre ordinateur local est l'endro
 
 # Git
 
-> **Note** Si vous avez déjà effectué l'installation, vous n'avez pas besoin de le re-faire: vous pouvez passer à la section suivante et commencer à créer votre dépôt Git.
+> **Note** If you already did the installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
 
 {% include "/deploy/install_git.md" %}
 
