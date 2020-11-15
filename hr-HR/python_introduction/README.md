@@ -427,7 +427,7 @@ Rječnici, poput list, su *promjenjivi*, što znači da ih se može promijeniti 
 >>> participant['favorite_language'] = 'Python'
 ```
 
-Kao kod listi, korištenje `len()` metode na rječnicima vraća broj ključ-vrijednost parova u rječniku. Hajde utipkaj iduću naredbu:
+Like lists, using the `len()` function on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
 
 {% filename %}command-line{% endfilename %}
 
@@ -493,9 +493,11 @@ True
 True
 >>> 5 != 2
 True
+>>> len([1, 2, 3]) > len([4, 5])
+True
 ```
 
-Dali smo Pythonu neke brojeve za usporedbu. Kao što vidiš, Python ne samo da može usporediti brojeve, već može uspoređivati i rezultate metoda. Super, zar ne?
+We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare values of mathematical expressions like `2 * 2` and function results like the `2` returned by `len([4, 5])`. Nice, huh?
 
 Pitaš li se zašto smo stavili dva znaka jednakosti `==` jedan pored drugog za usporedbu jednakosti brojeva? Koristimo jednostruki `=` za dodijeljivanje vrijednosti varijablama. Uvijek, **uvijek** moraš staviti dva znaka - `==` - ako želiš provjeriti jesu li dvije stvari jednake. Također možemo reći da su stvari različite. Za to koristimo simbol `!=` kao što je prikazano u gornjem primjeru.
 
