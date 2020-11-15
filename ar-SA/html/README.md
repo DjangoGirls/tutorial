@@ -169,10 +169,8 @@ Open the new file in the code editor, and add the following:
 
 {% filename %}command-line{% endfilename %}
 
-    $ git add --all .
+    $ git add .
     
-
-> **ملاحظة** `--al` تعني أن `git` ستعرف أيضا إذا كنت قد حذفت الملفات (بشكل افتراضي، فإنها ستعرف فقط الملفات الجديدة / المعدلة). تذكر أيضا (من الفصل 3) أن `.` تعني الدليل الحالي.
 
 قبل رفع جميع الملفات دعنا نرى ماذا سترفع `git` ( جميع الملفات التي ترفعها `git` يجب ان تضهر باللون الأخضر):
 
@@ -188,7 +186,7 @@ Open the new file in the code editor, and add the following:
     $ git commit -m "Changed the HTML for the site."
     
 
-> **ملاحظة** تأكد من استخدام علامات الاقتباس المزدوجة حول رسالة الالتزام.
+> **Note** Make sure you use double quotes around the commit message.
 
 عندما نقوم بذالك نرفع او ندفع بتعديلاتنا إلى GitHub:
 
