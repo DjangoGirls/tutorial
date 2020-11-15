@@ -10,6 +10,6 @@
 
 > **หมายเหตุ** ถ้าคุณใช้ Chromebook ข้ามบทนี้ และแน่ใจว่าคุณทำตามบทแนะนำ [ติดตั้ง Chromebook](../chromebook_setup/README.md)
 > 
-> **หมายเหตุ** ถ้าคุณผ่านขั้นตอนการติดตั้งแล้ว - คุณสามารถไปต่อยังบทถัดไปได้เลย
+> **Note** If you already worked through the installation steps, there's no need to do this again – you can skip straight ahead to the next chapter!
 
 {% include "/python_installation/instructions.md" %}
