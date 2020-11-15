@@ -36,14 +36,38 @@ Git会追踪这个目录下所有文件和文件夹的更改，但是有一些�
 
 {% filename %}.gitignore{% endfilename %}
 
+    # Python
     *.pyc
     *~
-    /.vscode
     __pycache__
-    myvenv
+    
+    # Env
+    .env
+    myvenv/
+    venv/
+    
+    # Database
     db.sqlite3
-    /static
+    
+    # Static folder
+    static/
+    
+    # macOS
+    ._*
     .DS_Store
+    .fseventsd
+    .Spotlight-V100
+    
+    # Windows
+    Thumbs.db*
+    ehthumbs*.db
+    [Dd]esktop.ini
+    $RECYCLE.BIN/
+    
+    # Visual Studio
+    .vscode/
+    .history/
+    *.code-workspace
     
 
 然后在djangogirls项目根目录下将它保存为 `.gitignore`文件。
@@ -77,7 +101,7 @@ Git会追踪这个目录下所有文件和文件夹的更改，但是有一些�
 
 {% filename %}command-line{% endfilename %}
 
-    $ git add --all .
+    $ git add .
     $ git commit -m "My Django Girls app, first commit"
      [...]
      13 files changed, 200 insertions(+)
