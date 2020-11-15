@@ -1,5 +1,5 @@
 # Chromebook-Installation
 
-> **Note** If you already worked through the installation steps, no need to do this again – you can skip straight ahead to [Introduction to Python](../python_introduction/README.md).
+> **Hinweis** Wenn du die Installation bereits gemacht hast, kannst du direkt zur [Einführung in Python](../python_introduction/README.md) gehen.
 
 {% include "/chromebook_setup/instructions.md" %}
