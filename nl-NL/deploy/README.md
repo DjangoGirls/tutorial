@@ -12,7 +12,7 @@ Deze drie diensten zijn belangrijk. Je eigen (lokale) computer is de plek waar j
 
 # Git
 
-> **Opmerking** Als je de stappen voor installatie al gevolgd hebt, hoef je dit niet nog een keer te doen. Je kunt het volgende gedeelte overslaan en beginnen met het aanmaken van je Git repository.
+> **Note** If you already did the installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
 
 {% include "/deploy/install_git.md" %}
 
