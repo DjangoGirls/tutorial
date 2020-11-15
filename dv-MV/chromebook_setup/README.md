@@ -1,5 +1,5 @@
 # ކްރޯމްބުކް ސެޓަޕްކުރުން
 
-> **ނޯޓު** އިންސްޓޮލޭޝަން ގެ ބައިތައް ފުރިހަމަ ކޮށްފައިވާނަމަ، މީތި ހަދާކަށްނުޖެހޭނެއެވެ- މިބައި ދޫކޮށް [ ޕައިތަން ގެ ފެށުން](../python_introduction/README.md) އަށްދޭ.
+> **Note** If you already worked through the installation steps, no need to do this again – you can skip straight ahead to [Introduction to Python](../python_introduction/README.md).
 
 {% include "/chromebook_setup/instructions.md" %}
