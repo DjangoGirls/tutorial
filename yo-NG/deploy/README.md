@@ -12,7 +12,7 @@ Gẹ́gẹ́ bí o ṣe kẹ́kọ̀ọ́, ààyè ayélujára kan ní láti wà
 
 # Git
 
-> **Àkíyèsí** Tí o bá ti yanjú àwọn ìgbésẹ̀ ìṣàgbékalẹ̀ náà tẹ́lẹ̀, kò sídìí láti tún ṣe èyí mọ́ – o lè fò lọ sí abala tó kàn náà kí o sì bẹ̀rẹ̀ ṣíṣẹ̀dá repository Git rẹ.
+> **Note** If you already did the installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
 
 {% include "/deploy/install_git.md" %}
 
