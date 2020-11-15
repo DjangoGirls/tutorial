@@ -10,6 +10,6 @@
 
 > **Σημείωση** Αν χρησιμοποιείτε Chromebook, μεταβείτε στο κεφάλαιο [Εγκατάσταση Chromebook](../chromebook_setup/README.md).
 > 
-> **Σημείωση** Αν έχετε ήδη ολοκληρώσει τα βήματα εγκατάστασης, δεν υπάρχει λόγος να τα ξανακάνετε. Μπορείτε να διαβάσετε το ακόλουθο κεφάλαιο!
+> **Note** If you already worked through the installation steps, there's no need to do this again – you can skip straight ahead to the next chapter!
 
 {% include "/python_installation/instructions.md" %}
