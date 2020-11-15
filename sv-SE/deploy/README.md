@@ -12,7 +12,7 @@ Dessa tre platser kommer att vara viktiga för dig. Din lokala dator kommer vara
 
 # Git
 
-> **Obs** Om du redan gått igenom installationsstegen behöver du inte göra detta igen - du kan hoppa till nästa avsnitt och börja skapa ditt Git-repositorium.
+> **Note** If you already did the installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
 
 {% include "/deploy/install_git.md" %}
 
