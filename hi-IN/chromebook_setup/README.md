@@ -1,5 +1,5 @@
 # Chromebook सेटअप
 
-> ** नोट:-</ strong> यदि आपने पहले से ही इंस्टालेशन चरणों को पूरा कर लिया है, तो इसे फिर से करने की आवश्यकता नहीं है - आप सीधे [ पायथन का परिचय](../python_introduction/README.md) पर आगे बढ़ सकते हैं।</p> </blockquote> 
-> 
-> {% include "/chromebook_setup/instructions.md" %}
+> **Note** If you already worked through the installation steps, no need to do this again – you can skip straight ahead to [Introduction to Python](../python_introduction/README.md).
+
+{% include "/chromebook_setup/instructions.md" %}
