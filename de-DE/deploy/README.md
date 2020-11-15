@@ -102,7 +102,7 @@ Nun speichern wir unsere Änderungen durch folgende Eingabe in der Konsole:
 {% filename %}command-line{% endfilename %}
 
     $ git add .
-    $ git commit -m "My Django Girls app, first commit"
+    $ git commit -m "Meine Django Girls App, erster Commit"
      [...]
      13 files changed, 200 insertions(+)
      create mode 100644 .gitignore
