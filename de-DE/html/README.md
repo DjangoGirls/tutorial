@@ -169,10 +169,8 @@ Stelle sicher, dass du im `Djangogirls` Verzeichnis bist und sag `git`, dass all
 
 {% filename %}command-line{% endfilename %}
 
-    $ git add --all .
+    $ git add .
     
-
-> **Beachte:** `--all` bedeutet, dass `git` auch Dateien berücksichtigt, die du gelöscht hast (in der Standardeinstellung werden nur neue/geänderte Dateien hinzugefügt). Denk auch daran (Kapitel 3), dass `.` das aktuelle Verzeichnis meint.
 
 Bevor wir alle Dateien hochladen, prüfen wir noch einmal, was `git` hochladen will (alle Dateien, die `git` hochladen wird, sind jetzt grün):
 
@@ -188,7 +186,7 @@ Fast fertig, wir sagen nun noch, dass diese Änderung in der Verlaufsübersicht 
     $ git commit -m "HTML der Site geändert."
     
 
-> **Beachte:** Du musst Anführungszeichen um den Commit-Kommentar setzen.
+> **Note** Make sure you use double quotes around the commit message.
 
 Nachdem wir das gemacht haben, laden (push) wir unsere Änderungen auf GitHub:
 
