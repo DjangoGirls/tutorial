@@ -169,10 +169,8 @@ Uisti sa, že si v zložke `djangogirls` a následne povedzme `gitu` nech zahrni
 
 {% filename %}command-line{% endfilename %}
 
-    $ git add --all .
+    $ git add .
     
-
-> **Poznámka** - `--all` znamená, že `git` rozozná, ak si vymazala súbory (štandardne rozoznáva len nové/modifikované súbory). Spomeň si tiež (bolo to v kapitole 3), že `.` znamená aktuálny adresár.
 
 Predtým, ako nahráme všetky súbory, skontrolujme čo bude `git` nahrávať (všetky súbory, ktoré `git` nahrá by teraz mali byť zelené):
 
@@ -188,7 +186,7 @@ Už sme skoro tam, teraz nastal čas mu povedať, aby uložil tieto zmeny v jeho
     $ git commit -m "Zmeny v HTML pre stránku."
     
 
-> **Poznámka** - Uisti sa, že si použila dvojité úvodzovky okolo commit správy.
+> **Note** Make sure you use double quotes around the commit message.
 
 Po tom, čo sme to dokončili, nahráme (push) naše zmeny na Github:
 
