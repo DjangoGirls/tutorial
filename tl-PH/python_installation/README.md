@@ -10,6 +10,6 @@ Ang python ay nagsimula sa katapusan ng 1980 at ang pangunahing layunin nito ay 
 
 > **Paalala** Kung ikaw ay gumagamit ng isang Chromebook, laktawan ang kabanatang ito at siguraduhin na masunod mo ang mga tagubilin sa [Chromebook Setup](../chromebook_setup/README.md).
 > 
-> **Paalala** Kung nagawa mo na ang mga mga hakbang sa pag-install, hindi na kailangan na gawin pa itong muli - maaari ka nang dumiretso sa susunod na kabanata!
+> **Note** If you already worked through the installation steps, there's no need to do this again – you can skip straight ahead to the next chapter!
 
 {% include "/python_installation/instructions.md" %}
