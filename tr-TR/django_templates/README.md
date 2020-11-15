@@ -80,10 +80,10 @@ Web sitemizin İnternet'te hâlâ çalıştığını görmek iyi olacak, değil 
 
     $ git status
     [...]
-    $ git add --all .
+    $ git add .
     $ git status
     [...]
-    $ git commit -m "Veritabanından gönderileri göstermek için template'ler değiştirildi."
+    $ git commit -m "Modified templates to display posts from database."
     [...]
     $ git push
     
