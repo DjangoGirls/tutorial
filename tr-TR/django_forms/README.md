@@ -427,9 +427,9 @@ Bakalım PythonAnywhere'de de çalışacak mı? Tekrar yayına alalım!
 {% filename %}komut-satırı{% endfilename %}
 
     $ git status
-    $ git add --all .
+    $ git add .
     $ git status
-    $ git commit -m "Sitede gönderi oluşturmak ve düzenlemek için view'ler eklendi."
+    $ git commit -m "Added views to create/edit blog post inside the site."
     $ git push
     
 
