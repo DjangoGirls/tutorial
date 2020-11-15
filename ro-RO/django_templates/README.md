@@ -80,7 +80,7 @@ Ar fi bun să vedem dacă website-ul va lucra în Internet? Hai să-l afișăm p
 
     $ git status
     [...]
-    $ git add --all .
+    $ git add .
     $ git status
     [...]
     $ git commit -m "Modified templates to display posts from database."
