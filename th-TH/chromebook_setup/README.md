@@ -1,5 +1,5 @@
 # ติดตั้ง Chromebook
 
-> **หมายเหตุ** ถ้าคุณทำงานผ่านขั้นตอนการติดตั้งมาแล้ว ไม่จำเป็นต้องทำสิ่งนี้อีก – คุณสามารถข้ามตรงไปข้างหน้าเพื่อ[ทำความรู้จักภาษา Python](../python_introduction/README.md)
+> **Note** If you already worked through the installation steps, no need to do this again – you can skip straight ahead to [Introduction to Python](../python_introduction/README.md).
 
 {% include "/chromebook_setup/instructions.md" %}
