@@ -36,14 +36,38 @@ Git va surveiller les modifications faites à tous les fichiers et dossiers pré
 
 {% filename %}.gitignore{% endfilename %}
 
+    # Python
     *.pyc
     *~
-    /.vscode
     __pycache__
-    myvenv
+    
+    # Env
+    .env
+    myvenv/
+    venv/
+    
+    # Database
     db.sqlite3
-    /static
+    
+    # Static folder
+    static/
+    
+    # macOS
+    ._*
     .DS_Store
+    .fseventsd
+    .Spotlight-V100
+    
+    # Windows
+    Thumbs.db*
+    ehthumbs*.db
+    [Dd]esktop.ini
+    $RECYCLE.BIN/
+    
+    # Visual Studio
+    .vscode/
+    .history/
+    *.code-workspace
     
 
 Enregistrez ce fichier sous le nom `.gitignore` dans votre répertoire principal "djangogirls".
@@ -77,8 +101,8 @@ Et pour finir, nous allons enregistrer nos modifications. Tapez ces commandes da
 
 {% filename %}command-line{% endfilename %}
 
-    $ git add --all .
-    $ git commit -m "Mon app Django Girls, premier commit"
+    $ git add .
+    $ git commit -m "My Django Girls app, first commit"
      [...]
      13 files changed, 200 insertions(+)
      create mode 100644 .gitignore
