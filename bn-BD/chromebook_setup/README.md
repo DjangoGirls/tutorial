@@ -1,5 +1,5 @@
 # ক্রোমবুক সেটআপ
 
-> **নির্দেশনা ** যদি আপনি ইতিমধ্যে ইনস্টল করার পদক্ষেপ সম্পন্ন করে থাকেন, তবে আবার তা করার দরকার নেই - আপনি সরাসরি [ পাইথন পরিচিতি ](../python_introduction/README.md) তে যেতে পারেন।.
+> **Note** If you already worked through the installation steps, no need to do this again – you can skip straight ahead to [Introduction to Python](../python_introduction/README.md).
 
 {% include "/chromebook_setup/instructions.md" %}
