@@ -12,7 +12,7 @@ Tieto tri miesta budú pre teba dôležité. Lokálny počítač bude miestom, k
 
 # Git
 
-> **Poznámka** Ak už máš za sebou inštaláciu, nemusíš to robiť znovu a môžeš preskočiť na ďalšiu časť a začať s vytváraním Git repozitára.
+> **Note** If you already did the installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
 
 {% include "/deploy/install_git.md" %}
 
