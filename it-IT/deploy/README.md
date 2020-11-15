@@ -12,7 +12,7 @@ Questi tre servizi saranno importantissimi per te. Userai il tuo computer locale
 
 # Git
 
-> **Nota** Se hai giá eseguito i passagi di installazione, non é necessario eseguire nuovamente questa operazione - puoi andare alla sezione successiva e iniziare a creare il tuo repository Git.
+> **Note** If you already did the installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
 
 {% include "/deploy/install_git.md" %}
 
