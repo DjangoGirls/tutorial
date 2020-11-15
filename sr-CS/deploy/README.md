@@ -12,7 +12,7 @@ Ta tri mesta će Vam biti važna. Vaš lokalni računar će biti mesto gde razvi
 
 # Git
 
-> **Napomena** Ako ste već prošli kroz sve instalacione korake, nema potrebe da ovo radite ponovo - možete da odmah pređete na sledeći deo i da počnete da pravite svoje Git skladište.
+> **Note** If you already did the installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
 
 {% include "/deploy/install_git.md" %}
 
