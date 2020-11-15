@@ -12,7 +12,7 @@ Te trzy miejsca będą dla Ciebie bardzo ważne. Twój lokalny komputer będzie 
 
 # Git
 
-> **Uwaga** Jeżeli wykonałaś już wszystkie kroki instalacji, nie ma potrzeby ich powtarzać - możesz przeskoczyć do następnej sekcji i zacząć tworzyć repozytorium w Gicie.
+> **Note** If you already did the installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
 
 {% include "/deploy/install_git.md" %}
 
