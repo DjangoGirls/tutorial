@@ -426,10 +426,10 @@ Vamos ver se tudo isso funciona no PythonAnywhere. Hora de fazer outro deploy!
 
 {% filename %}command-line{% endfilename %}
 
-    $ git status 
-    $ git add --all . 
-    $ git status 
-    $ git commit -m "Added views to create/edit blog post inside the site." 
+    $ git status
+    $ git add .
+    $ git status
+    $ git commit -m "Added views to create/edit blog post inside the site."
     $ git push
     
 
