@@ -80,11 +80,12 @@ Berhasil! Tapi kami ingin posting ditampilkan seperti tulisan statis yang kami b
 <p>{% filename%} baris perintah {% endfilename%}</p>
 
 <pre><code>$ git status
- [...] 
-$ git add --all. $ git status
- [...] 
-$ git commit -m "Template yang dimodifikasi untuk menampilkan posting dari database."
-[...] 
+[...]
+$ git add .
+$ git status
+[...]
+$ git commit -m "Modified templates to display posts from database."
+[...]
 $ git push
 `</pre> 
 
