@@ -10,6 +10,6 @@ Python potiče iz kasnih 1980-ih i njegov glavni cilj je da je čitljiv za ljuds
 
 > **Napomena:** Ako koristiš chromebook, preskoči ovo poglavlje i prati upute [Postavljanje Chromebooka](../chromebook_setup/README.md).
 > 
-> **Napomena** Ako si već prošla kroz korake za instalaciju, ne trebaš ovo raditi ponovo - možeš odmah preskočiti na slijedeće poglavlje!
+> **Note** If you already worked through the installation steps, there's no need to do this again – you can skip straight ahead to the next chapter!
 
 {% include "/python_installation/instructions.md" %}
