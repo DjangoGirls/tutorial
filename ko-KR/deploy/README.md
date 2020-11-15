@@ -12,7 +12,7 @@
 
 # Git
 
-> **참고** 이미 설치를 끝냈다면, 이 부분을 다시 할 필요가 없어요 - 이 부분을 뛰어넘고 Git 저장소를 만드는 것부터 시작하세요.
+> **Note** If you already did the installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
 
 {% include "/deploy/install_git.md" %}
 
