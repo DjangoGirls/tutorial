@@ -427,7 +427,7 @@ Slovníky, rovnako ako zoznamy sú *premenlivé*, čo znamená, že ich môžeme
 >>> ucastnicka['oblubeny_jazyk'] = 'Python'
 ```
 
-Tak ako pri zoznamoch, použitím metódy `len()` na slovníkoch dostaneš počet párov kľúč-hodnota v slovníku. Poďme na to, zadaj tento príkaz:
+Like lists, using the `len()` function on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
 
 {% filename %}command-line{% endfilename %}
 
@@ -493,9 +493,11 @@ True
 True
 >>> 5 != 2
 True
+>>> len([1, 2, 3]) > len([4, 5])
+True
 ```
 
-Dali sme Pythonu pár čísiel na porovnanie. Ako vidíš, Python vie porovnávať nielen čísla, ale vie porovnávať aj výsledky metód. Pekné, nie?
+We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare values of mathematical expressions like `2 * 2` and function results like the `2` returned by `len([4, 5])`. Nice, huh?
 
 Zaujíma ťa, prečo sme použili dve "rovná sa" `==` vedľa seba, aby sme porovnali, či sú čísla rovnaké? Jeden znak `=` používame na priraďovanie hodnôt premenným. Takže, ak chceš skontrolovať, či sú veci rovnaké, musíš vždy, úplne **vždy** použiť dve `==`. Taktiež môžeme zisťovať, či sa veci navzájom líšia. Na to použijeme symbol `!=`, ako bolo uvedené v príklade vyššie.
 
