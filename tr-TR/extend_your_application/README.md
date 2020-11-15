@@ -177,9 +177,9 @@ Sitenizin hala PythonAnywhere'de çalışıp çalışmadığına bakmakta fayda 
 {% filename %}komut satırı{% endfilename %}
 
     $ git status
-    $ git add --all .
+    $ git add .
     $ git status
-    $ git commit -m "Site için CSS ve ayrıntılı blog gönderisi için görünüm ve şablon eklendi."
+    $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
     $ git push
     
 
