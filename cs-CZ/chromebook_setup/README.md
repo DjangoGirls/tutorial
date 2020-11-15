@@ -1,5 +1,5 @@
 # Chromebook setup
 
-> **Poznámka** Jestli, že si již prošla instalační kroky, tak je nemusíš opakovat – přeskoč tuto kapitolu a jdi rovnou na [Úvod do Pythonu](../python_introduction/README.md).
+> **Note** If you already worked through the installation steps, no need to do this again – you can skip straight ahead to [Introduction to Python](../python_introduction/README.md).
 
 {% include "/chromebook_setup/instructions.md" %}
