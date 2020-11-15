@@ -169,10 +169,8 @@ HTMLは、「HyperText Markup Language」の頭文字を取ったものです。
 
 {% filename %}command-line{% endfilename %}
 
-    $ git add --all .
+    $ git add .
     
-
-> **ノート** `--all` をつけると、 `git` は、ファイルを削除したかどうかも判定します (これがない初期設定の状態では、新しいファイルと変更されたファイルしか認識しません)。 `.` が、今いるディレクトリを表すということも思い出してくださいね(第３章にありました)。
 
 全てのファイルをアップロードする前に、`git`が何をアップロードするのかチェックしておきましょう(`git`がアップロードする全ファイルは緑で表示されます):
 
@@ -188,7 +186,7 @@ HTMLは、「HyperText Markup Language」の頭文字を取ったものです。
     $ git commit -m "Changed the HTML for the site."
     
 
-> **ノート** コミットメッセージは二重クォート記号で囲みましょう。
+> **Note** Make sure you use double quotes around the commit message.
 
 ここまで終われば、GitHubに変更部分をアップロード(push) しましょう。
 
