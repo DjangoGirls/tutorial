@@ -427,7 +427,7 @@ Comme les listes, les dictionnaires sont *mutables*, ce qui signifie qu'ils peuv
 >>> participant['favorite_language'] = 'Python'
 ```
 
-Comme pour les listes, la fonction `len()` permet d'obtenir le nombre de paires clef–valeur du dictionnaire. Essayez et tapez la commande suivante :
+Like lists, using the `len()` function on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
 
 {% filename %}command-line{% endfilename %}
 
@@ -493,9 +493,11 @@ True
 True
 >>> 5 != 2
 True
+>>> len([1, 2, 3]) > len([4, 5])
+True
 ```
 
-Nous avons donné à Python des chiffres à comparer. Comme vous pouvez le voir, Python peut comparer des chiffres, mais aussi les résultats de méthodes. Pas mal, non ?
+We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare values of mathematical expressions like `2 * 2` and function results like the `2` returned by `len([4, 5])`. Nice, huh?
 
 Vous vous demandez probablement pourquoi nous avons mis deux signes `==` côte à côte pour savoir si deux nombres étaient égaux ? On utilise déjà `=` pour assigner des valeurs aux variables. Du coup, il faut toujours, oui **toujours**, mettre deux `==` si vous voulez savoir si deux choses sont égales. Nous pouvons aussi dire que certaines choses ne sont pas égales à d'autres. Pour cela, nous utilisons le symbole `! =`, comme illustré dans l'exemple ci-dessus.
 
