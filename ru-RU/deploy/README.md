@@ -36,11 +36,38 @@ Git будет отслеживать изменения всех файлов �
 
 {% filename %}.gitignore{% endfilename %}
 
+    # Python
     *.pyc
+    *~
     __pycache__
-    myvenv
+    
+    # Env
+    .env
+    myvenv/
+    venv/
+    
+    # Database
     db.sqlite3
+    
+    # Static folder
+    static/
+    
+    # macOS
+    ._*
     .DS_Store
+    .fseventsd
+    .Spotlight-V100
+    
+    # Windows
+    Thumbs.db*
+    ehthumbs*.db
+    [Dd]esktop.ini
+    $RECYCLE.BIN/
+    
+    # Visual Studio
+    .vscode/
+    .history/
+    *.code-workspace
     
 
 И сохрани его как `.gitignore` в корневом каталоге "djangogirls".
@@ -74,7 +101,7 @@ Git будет отслеживать изменения всех файлов �
 
 {% filename %}command-line{% endfilename %}
 
-    $ git add --all .
+    $ git add .
     $ git commit -m "My Django Girls app, first commit"
      [...]
      13 files changed, 200 insertions(+)
