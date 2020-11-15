@@ -80,7 +80,7 @@ Es wäre gut zu sehen, ob deine Website noch immer im öffentlichen Internet fun
 
     $ git status
     [...]
-    $ git add --all .
+    $ git add .
     $ git status
     [...]
     $ git commit -m "Modified templates to display posts from database."
