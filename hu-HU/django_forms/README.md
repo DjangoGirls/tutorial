@@ -427,7 +427,7 @@ Nézzük meg, hogy működik-e ez az egész a PythonAnywhere-en. Itt az ideje eg
 {% filename %}command-line{% endfilename %}
 
     $ git status
-    $ git add --all .
+    $ git add .
     $ git status
     $ git commit -m "Added views to create/edit blog post inside the site."
     $ git push
