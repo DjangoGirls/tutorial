@@ -1,5 +1,5 @@
 # ക്രോംബുക്ക് സെറ്റപ്പ് 
 
-> **നോട്ട് ** നിങ്ങൾ മുൻപ് തന്നെ ഇൻസ്റ്റാളേഷൻ നടത്തിയതാണെങ്കിൽ പിന്നേം ചെയ്യേണ്ടതില്ല. നിങ്ങൾക് ഈ സ്റ്റെപ് ചെയേണ്ടതില്ല . [പൈത്തൺ ആമുഖം ](../python_introduction/README.md).
+> **Note** If you already worked through the installation steps, no need to do this again – you can skip straight ahead to [Introduction to Python](../python_introduction/README.md).
 
 {% include "/chromebook_setup/instructions.md" %}
