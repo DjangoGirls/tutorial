@@ -427,7 +427,7 @@ KeyError: 'age'
 >>> participant['favorite_language'] = 'Python'
 ```
 
-استفاده از متد `len()` روی دیکشنری، مانند لیست‌ها، تعداد جفت‌های کلید-مقدار را برمی‌گرداند. دستور زیر را تایپ کنید:
+Like lists, using the `len()` function on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -493,9 +493,11 @@ True
 True
 >>> 5 != 2
 True
+>>> len([1, 2, 3]) > len([4, 5])
+True
 ```
 
-ما چند عدد را برای مقایسه به پایتون داده‌ایم. همانطور که می‌بینید، پایتون نه تنها می‌تواند اعداد را مقایسه کند، بلکه می‌تواند خروجی متدها را هم مقایسه کند، به نظر شما عالی نیست؟
+We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare values of mathematical expressions like `2 * 2` and function results like the `2` returned by `len([4, 5])`. Nice, huh?
 
 آیا به این فکر کرده‌اید که چرا دو علامت مساوی `==` کنار هم برای چک کردن تساوی اعداد گذاشته‌ایم؟ ما از یک علامت مساوی `=` برای انتساب مقادیر به متغیرها استفاده می‌کنیم. اگر می‌خواهید مساوی بودن دو شی با همدیگر را چک کنید، همیشه و **همیشه** باید از دو علامت مساوی `==` استفاده کنید. همچنین می‌توانیم مساوی نبودن اشیا را تعیین کنیم. برای این منظور، از علامت `=!`، همانطور که در مثال بالا نشان داده شده است، استفاده می‌کنیم.
 
