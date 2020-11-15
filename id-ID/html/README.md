@@ -169,10 +169,8 @@ Make sure you're in the `djangogirls` directory and let's tell `git` to include 
 
 {% filename %}command-line{% endfilename %}
 
-    $ git add --all .
+    $ git add .
     
-
-> **Note** `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Also remember (from chapter 3) that `.` means the current directory.
 
 Before we upload all the files, let's check what `git` will be uploading (all the files that `git` will upload should now appear in green):
 
@@ -188,7 +186,7 @@ Kita sudah hampir sampai, sekarang saatnya untuk menceritakannya untuk menyimpan
     $ git commit -m "Changed the HTML for the site."
     
 
-> **Catatan** Pastikan Anda menggunakan tanda kutip ganda di sekitar pesan komit.
+> **Note** Make sure you use double quotes around the commit message.
 
 Setelah kami selesai melakukannya, kami mengupload (mendorong) perubahan kami ke GitHub:
 
