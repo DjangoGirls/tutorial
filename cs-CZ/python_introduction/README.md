@@ -427,7 +427,7 @@ Dictionaries, like lists, are *mutable*, meaning that they can be changed after 
 >>> participant['favorite_language'] = 'Python'
 ```
 
-Like lists, using the `len()` method on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
+Like lists, using the `len()` function on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
 
 {% filename %}command-line{% endfilename %}
 
@@ -483,18 +483,21 @@ A big part of programming involves comparing things. What's the easiest thing to
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> 5 > 2 
-True 
->>> 3 < 1 
-False >>> 5 > 2 * 2 
-True 
->>> 1 == 1 
-True 
->>> 5 != 2 
+>>> 5 > 2
+True
+>>> 3 < 1
+False
+>>> 5 > 2 * 2
+True
+>>> 1 == 1
+True
+>>> 5 != 2
+True
+>>> len([1, 2, 3]) > len([4, 5])
 True
 ```
 
-We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare method results. Nice, huh?
+We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare values of mathematical expressions like `2 * 2` and function results like the `2` returned by `len([4, 5])`. Nice, huh?
 
 Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
 
