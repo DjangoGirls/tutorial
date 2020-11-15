@@ -80,7 +80,7 @@ Seria bom ver se seu site ainda funciona na internet, né? Vamos tentar implanta
 
     $ git status
     [...]
-    $ git add --all .
+    $ git add .
     $ git status
     [...]
     $ git commit -m "Modified templates to display posts from database."
