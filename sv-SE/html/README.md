@@ -169,10 +169,8 @@ Se till att du är i katalogen `djangogirls` och säg till `git` att inkludera a
 
 {% filename %}command-line{% endfilename %}
 
-    $ git add --all .
+    $ git add .
     
-
-> **OBS** `--all` betyder att `git` också kommer att märka om du har raderat filer (som standard märker den bara nya/modifierade filer). Kom också ihåg (från kapitel 3) att `.` betyder den aktuella katalogen.
 
 Innan vi laddar upp alla filer, låt oss kontrollera vad `git` kommer att ladda upp (alla filer som `git` kommer ladda upp ska visas i grönt):
 
@@ -188,7 +186,7 @@ Vi är nästan klara, nu är det dags att berätta för git att spara den här f
     $ git commit -m "Changed the HTML for the site."
     
 
-> **OBS** Kontrollera att du använder dubbla citattecken runt commit-meddelandet.
+> **Note** Make sure you use double quotes around the commit message.
 
 När vi har gjort det så laddar vi upp (pushar) våra ändringar till GitHub:
 
