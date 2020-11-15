@@ -169,10 +169,8 @@ Make sure you're in the `djangogirls` directory and let's tell `git` to include 
 
 {% filename %}command-line{% endfilename %}
 
-    $ git add --all .
+    $ git add .
     
-
-> **Note** `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Taky si vzpomeň (ze 3. kapitoly), že `.` znamená aktuální adresář.
 
 Než nahrajeme všechny soubory, zkontrolujme co bude `git` nahrávat (všechny soubory, které bude `git` nahrávat, se zobrazí zeleně):
 
@@ -188,7 +186,7 @@ Jsme skoro u konce, teď je čas uložit změny do historie. Vytvoříme "commit
     $ git commit -m "Změněn HTML kód stránek."
     
 
-> **Poznámka** Ujisti se, že používáš dvojité uvozovky kolem zprávy.
+> **Note** Make sure you use double quotes around the commit message.
 
 Once we've done that, we upload (push) our changes up to GitHub:
 
