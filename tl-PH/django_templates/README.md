@@ -80,10 +80,10 @@ Magandang tingnan kung ang website ay gumagana pa rin sa publikong Internet, di 
 
     $ git status
     [...]
-    $ git add --all .
+    $ git add .
     $ git status
     [...]
-    $ git commit -m "Binago ang mga template para magdisplay ng mga post galing sa database."
+    $ git commit -m "Modified templates to display posts from database."
     [...]
     $ git push
     
