@@ -12,7 +12,7 @@
 
 # Git
 
-> **Примечание**Если вы уже проделали все шаги установки, делать это вновь нет необходимости - вы можете пропустить этот раздел и приступить к созданию Git репозитория.
+> **Note** If you already did the installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
 
 {% include "/deploy/install_git.md" %}
 
