@@ -169,10 +169,8 @@ Make sure you're in the `djangogirls` directory and let's tell `git` to include 
 
 {% filename %}command-line{% endfilename %}
 
-    $ git add --all .
+    $ git add .
     
-
-> **Note** `-A` ("all"의 축약어) 는 `git`이 삭제한 파일을 인식합니다. (기본적으로, 새로 추가하거나 변경한 파일만 인지합니다) 또한 `.`의미가 현재 디렉토리라는 것을 기억하고 있죠? (3장에서 언급한 내용이에요)
 
 파일 업로드 전, `git`으로 업로드 할 파일들을 확인해봅시다. (`git`에서 업로드 할 모든 파일들이 녹색으로 나타나야 합니다.) :
 
@@ -188,7 +186,7 @@ Make sure you're in the `djangogirls` directory and let's tell `git` to include 
     $ git commit -m "Changed the HTML for the site."
     
 
-> **주의** 커밋 메시지는 쌍따옴표(")로 감싸주세요.
+> **Note** Make sure you use double quotes around the commit message.
 
 Once we've done that, we upload (push) our changes up to GitHub:
 
