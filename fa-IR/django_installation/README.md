@@ -2,6 +2,6 @@
 
 > **نکته** اگر از Chromebook استفاده می‌کنید، این فصل را رد کنید و مطمئن شوید که دستورالعمل [ تنظیمات Chromebook](../chromebook_setup/README.md) را دنبال کنید.
 > 
-> **نکته** اگر قبلاً مراحل نصب را طی کرده باشید، این کار را قبلاً انجام داده‌اید پس می‌توانید به فصل بعدی بروید!
+> **Note** If you already worked through the installation steps then you've already done this – you can go straight to the next chapter!
 
 {% include "/django_installation/instructions.md" %}
