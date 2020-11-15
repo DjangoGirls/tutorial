@@ -169,10 +169,8 @@ Ri dájú pé o wà nínú àkójọpọ̀ fáìlì `djangogirls` náà kí a s�
 
 {% filename %}command-line{% endfilename %}
 
-    $ git add --all .
+    $ git add .
     
-
-> **Àkíyèsí** `--all` túmọ̀ sí pé `git` yíò tún mọ̀ tí o bá ní àwọn fáìlì tí o ti yọ kúrò (ní ìpìlẹ̀, yóò dá àwọn fáìlì tuntun tàbí àwọn tí o ṣàtúnṣe mọ̀ nìkan). Tún rántí (láti àkòrí 3) pé `.` túmọ̀ sí àkójọpọ̀ fáìlì lọ́wọ́lọ́wọ́ náà.
 
 Ṣáájú kí a tó gbé gbogbo àwọn fáìlì náà jáde, jẹ́ ká ṣàyẹ̀wò nnkan tí `git` yíò máa gbé jáde (ó yẹ kí gbogbo àwọn fáìlì tí `git` máa gbé jáde ti fojú hàn ní àwọ̀ ewé):
 
@@ -188,7 +186,7 @@ A ti fẹ́rẹ̀ẹ́ débẹ̀, àkókò ti tó báyìí láti sọ fún-un p�
     $ git commit -m "Changed the HTML for the site."
     
 
-> **Àkíyèsí** Ri dájú pé o lo àwọn àmì àyọlò méjì yíká ìròyìn commit náà.
+> **Note** Make sure you use double quotes around the commit message.
 
 Tá a bá ti ṣe ìyẹn, a máa gbé (ti) àwọn ìyípadà wa jáde sí GitHub:
 
