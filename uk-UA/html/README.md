@@ -169,10 +169,8 @@ Make sure you're in the `djangogirls` directory and let's tell `git` to include 
 
 {% filename %}command-line{% endfilename %}
 
-    $ git add --all .
+    $ git add .
     
-
-> **Note** `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Також пам'ятайте (з розділу 3), що `.` означає поточну директорію.
 
 Перед тим як завантажити усі файли, давайте перевіримо що ж буде завантажувати `git` (усі файли, які буде завантажувати `git` повинні тепер з'явитися і бути позначеними зеленим кольором):
 
@@ -188,7 +186,7 @@ Make sure you're in the `djangogirls` directory and let's tell `git` to include 
     $ git commit -m "Changed the HTML for the site."
     
 
-> **Зауваження** Переконайтеся, що ви використали подвійні лапки навколо повідомлення про здійснену фіксацію.
+> **Note** Make sure you use double quotes around the commit message.
 
 Once we've done that, we upload (push) our changes up to GitHub:
 
