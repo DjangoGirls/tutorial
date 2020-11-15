@@ -427,7 +427,7 @@ KeyError: 'age'
 >>> participant['favorite_language'] = 'Python'
 ```
 
-リストと同様に、`len()` 関数をディクショナリに使ってみましょう。ディクショナリでは、キーと値のペアの数を返します。コマンドを入力してやってみましょう。
+Like lists, using the `len()` function on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
 
 {% filename %}command-line{% endfilename %}
 
@@ -493,9 +493,11 @@ True
 True
 >>> 5 != 2
 True
+>>> len([1, 2, 3]) > len([4, 5])
+True
 ```
 
-Pythonにいくつか比較する数字をあたえてみました。数字を比較するだけでなく、演算式の答えも比較することができます。便利でしょ？
+We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare values of mathematical expressions like `2 * 2` and function results like the `2` returned by `len([4, 5])`. Nice, huh?
 
 ２つの数字がイコールであるかどうかを比べる時に、イコールの記号が２つ `==` 並んでいます。 Pythonを記述する時、イコール１つ `=`は、変数に値を代入するときに使います。 ですので、値同士が等しいかどうか比較するときは、必ず **必ず** イコール記号２つ `==` を記述してください。 等しくないことを比較するときは、 上記の例のように `!=` と記述します。
 
