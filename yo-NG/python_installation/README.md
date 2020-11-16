@@ -10,6 +10,6 @@ Python pilẹ̀ṣẹ̀ ní apá ìparí àwọn ọdún 1980 àti pé àfojús�
 
 > **Àkíyèsí** Tí o bá n lo Chromebook kan, fojú fo àkòrí yìí kí o sì rí dájú pé o tẹ̀lé àwọn ìtọ́sọ́nà [Àgbékalẹ̀-ètò Chromebook](../chromebook_setup/README.md) náà.
 > 
-> **Note** If you already worked through the installation steps, there's no need to do this again – you can skip straight ahead to the next chapter!
+> **Note** If you already worked through the [installation steps](../installation/README.md), there's no need to do this again – you can skip straight ahead to the next chapter!
 
 {% include "/python_installation/instructions.md" %}
