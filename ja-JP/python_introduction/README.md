@@ -1065,7 +1065,7 @@ for i in range(1, 6):
 
 以上です！**おめでとう！頑張りました！** これは簡単ではなかったと思います。自分を褒めてあげてくださいね。ここまで進めることができたのは、本当にすごいことです！
 
-公式の完全なPythonチュートリアルは https://docs.python.org/ja/3/tutorial/ にあります。これを見れば、Pythonについてより綿密で完全な学習ができるでしょう。ばんざい！:)
+For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers! :)
 
 次のチャプターに進む前に、ストレッチしたり、お散歩したり、目を休ませたりして、少しの間リフレッシュしてくださいね。 :)
 
