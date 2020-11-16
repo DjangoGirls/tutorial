@@ -33,7 +33,7 @@ HTML代表“HyperText Markup Language（超文本标记语言）”。 **超文
 
 ![图 11.1](images/step1.png)
 
-再也没有错误了 ！祝贺:)然而，您的网站实际上并没有展现任何东西出了一个空白页，因为您的模板也是空。我们需要解决这个问题。
+No error anymore! Congratulations! :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
 
 Open the new file in the code editor, and add the following:
 
@@ -52,7 +52,7 @@ So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
 
 ![图 11.2](images/step3.png)
 
-它工作了 ！很好地完成了:)
+It worked. Nice work there! :)
 
 * The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. 正如你所看到的，整个网站的内容是在 `<html>` 开始标记和结束标记之间 `</html>`的
 * `<p>` 一种用于段落元素标记 ；`</p>` 关闭每个段落
