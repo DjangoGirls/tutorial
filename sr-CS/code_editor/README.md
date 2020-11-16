@@ -6,6 +6,6 @@ Uskoro ćete napisati svoju prvu liniju koda, tako da je vreme da preuzmete ure�
 
 > **Napomena** Ukoliko koristite Chromebook, preskočite ovo poglavlje i postarajte se da sledite instrukcije u [Chromebook podešavanjima](../chromebook_setup/README.md). Cloud IDE koji izaberete (PaizaCloud Cloud IDE or AWS Cloud9) uključuje editor koji će se automatski pokrenuti kada otvorite fajl u svom IDE-u fajl meniju.
 > 
-> **Napomena** Možda ste ovo već uradili ranije u okviru poglavlja o instalaciji. Ako je to slučaj, pređite odmah na sledeće poglavlje!
+> **Note** You might have done this earlier in the [Installation chapter](../installation/README.md) – if so, you can skip right ahead to the next chapter!
 
 {% include "/code_editor/instructions.md" %}
