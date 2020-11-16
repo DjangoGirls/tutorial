@@ -33,7 +33,7 @@ Tingnan kung ano ang hitsura ng iyong website ngayon: http://127.0.0.1:8000/
 
 ![Tambilang 11.1](images/step1.png)
 
-Wala nang error! Binabati kita :) Subalit, ang iyong website ay walang pina-publish na kahit ano maliban sa isang page na walang laman, dahil ang iyong template ay wala ring laman. Kailangan natin itong ayusin.
+No error anymore! Congratulations! :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
 
 Open the new file in the code editor, and add the following:
 
@@ -52,7 +52,7 @@ Ano ang hitsura ng iyong website ngayon? Dalawin ito upang malaman: http://127.0
 
 ![Tambilang 11.2](images/step3.png)
 
-Gumana siya! Magaling na gawa :)
+It worked. Nice work there! :)
 
 * Ang pinaka-basic na tag, `<html>`, ay palaging simula ng kahit anong web page at ang `</html>` ay palaging katapusan. Gaya ng iyong nakikita, ang kabuuang nilalaman ng website ay nasa pagitan ng pansimulang tag `<html>` at pangwakas na tag `</html>`
 * `<p>` ay isang tag pra sa mga elemento ng talata;`</p>` ngwawakas ng bawat talata
