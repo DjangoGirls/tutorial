@@ -10,6 +10,6 @@ Początki Pythona sięgają późnych lat 80., a jego głównym założeniem jes
 
 > **Uwaga** Jeśli używasz już Chromebook, pomiń ten rozdział i upewnij się, że postąpiłeś zgodnie z instrukcją [Instalowanie Chromebook](../chromebook_setup/README.md).
 > 
-> **Note** If you already worked through the installation steps, there's no need to do this again – you can skip straight ahead to the next chapter!
+> **Note** If you already worked through the [installation steps](../installation/README.md), there's no need to do this again – you can skip straight ahead to the next chapter!
 
 {% include "/python_installation/instructions.md" %}
