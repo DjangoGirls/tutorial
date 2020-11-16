@@ -6,9 +6,9 @@
 
 ## Káàbọ̀
 
-Káàbọ̀ sí Àlàyé Django Girls náà! Inú wa dùn láti ri ẹ níbí :) Nínú àlàyé yìí, a óò mú ẹ rin ìrìn àjò kan wọnú agbègbè àwọn ìmọ̀-ẹ̀rọ ayélujára, tí o sì máa mọ díẹ̀ nípa gbogbo àwọn èròjà tó nílò láti parapọ̀ kí ayélujára tó lè ṣiṣẹ́ gẹ́gẹ́ bí a ṣe mọ̀.
+Káàbọ̀ sí Àlàyé Django Girls náà! We are happy to see you here. :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
-Gẹ́gẹ́ bó ti rí pẹ̀lú gbogbo nǹkan àjèjì, èyí yóò jẹ́ ìdáwọ́lé kan - ṣùgbọ́n kò sí ìdààmú, níwọ̀n bí o ti ṣe ní ìgboyà láti wà níbí, ìwọ yóò ṣe dáadáa :)
+As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine. :)
 
 ## Ìfihàn
 
