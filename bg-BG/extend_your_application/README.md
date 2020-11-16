@@ -212,4 +212,4 @@ def post_detail(request, pk):
 
 Във всеки случай сега сме готови да отидем на ["Web" страницата](https://www.pythonanywhere.com/web_app_setup/) (от бутона на менюто в горния десен ъгъл) и натиснем **Reload**, след това погледнете страницата https://subdomain.pythonanywhere.com за да видите резултата.
 
-Та това е! Поздравления :)
+And that should be it. Congrats! :)
