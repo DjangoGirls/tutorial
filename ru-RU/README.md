@@ -6,9 +6,9 @@
 
 ## Добро пожаловать
 
-Добро пожаловать в учебник Django Girls! Мы рады видеть тебя :) В этом пособии мы заглянем под капот веб-технологий, взглянем на все куски кода, которые потом соберутся в одно целое.
+Добро пожаловать в учебник Django Girls! We are happy to see you here. :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
-Как и все неизвестное - это может быть немного страшно. Но не беспокойся, ты уже достаточно преодолела, чтобы зайти сюда :)
+As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine. :)
 
 ## Введение
 
