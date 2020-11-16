@@ -12,7 +12,7 @@ Ang tatlong lugar na ito ay importante para sa iyo. Ang iyong lokal na komputer 
 
 # Git
 
-> **Note** If you already did the installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
+> **Note** If you already did the [installation steps](../installation/README.md), there's no need to do this again – you can skip to the next section and start creating your Git repository.
 
 {% include "/deploy/install_git.md" %}
 
