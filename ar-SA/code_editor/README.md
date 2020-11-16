@@ -6,6 +6,6 @@
 
 > **ملاحضة**إذا كنت تستخدم كروم بوك تخطى هذا القسم وتابع الإرشادات الموجودة في [إعداد كروم بوك](../chromebook_setup/README.md). بيئة التطوير المتكاملة IDE السحابية التي اخترتها (PaizaCloud Cloud IDE or AWS Cloud9) تحتوي على محرر أكواد، وعندما تفتح ملف في بيئة التطوير خاصتك عن طريق قائمة ملف، سوف تقوم تلقائياً باستخدام المحرر.
 > 
-> **ملاحظة** من الممكن أنك فعلت هذا بوقت سابق في فصل التثبيت، بأمكانك تخطي هذا إلى الفصل التالي!
+> **Note** You might have done this earlier in the [Installation chapter](../installation/README.md) – if so, you can skip right ahead to the next chapter!
 
 {% include "/code_editor/instructions.md" %}
