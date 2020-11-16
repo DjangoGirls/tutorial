@@ -6,6 +6,6 @@ O ti fẹ́ kọ ilà kóòdù àkọ́kọ́ rẹ, nítorí náà àkókò ti t
 
 > **Àkíyèsí** Tí o bá n lo Chromebook kan, fojú fo àkòrí yìí kí o sì rí dájú pé o tẹ̀lé àwọn ìtọ́sọ́nà [Àgbékalẹ̀-ètò Chromebook](../chromebook_setup/README.md) náà. Cloud IDE tí o bá yàn náà (PaizaCloud Cloud IDE tàbí AWS Cloud9) yíò ní olóòtú kóòdù kan, nígbà tí o bá ṣí fáìlì kan nínú IDE rẹ láti àkójọ àṣàyàn Fáìlì náà, olóòtú náà yíò ma jẹ́ lílò fún ẹ.
 > 
-> **Àkíyèsí** O lè ti ṣe èyí sẹ́yìn nínú àkòrí ìṣàgbékalẹ̀ náà - tó bá jẹ́ bẹ́ẹ̀, o lè fojú fo tààrà lọ sí àkòrí tó kàn náà!
+> **Note** You might have done this earlier in the [Installation chapter](../installation/README.md) – if so, you can skip right ahead to the next chapter!
 
 {% include "/code_editor/instructions.md" %}
