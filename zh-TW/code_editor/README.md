@@ -6,6 +6,6 @@
 
 > **注意** 如果你使用 Chromebook, 請跳過這章，且確定你依照[Chromebook Setup](../chromebook_setup/README.md) 設定. The cloud IDE you chose (PaizaCloud Cloud IDE or AWS Cloud9) includes a code editor, and when you open a file in your IDE from the File menu, you will automatically be using the editor.
 > 
-> **注意** 你也許在前面安裝章節中做過這些了，如果是這樣，你也可以跳過這裡直接進入下一個章節!
+> **Note** You might have done this earlier in the [Installation chapter](../installation/README.md) – if so, you can skip right ahead to the next chapter!
 
 {% include "/code_editor/instructions.md" %}
