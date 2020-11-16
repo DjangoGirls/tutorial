@@ -74,7 +74,7 @@ Run:
 ```
 mkdir djangogirls
 cd djangogirls
-python{{ book.py_version }} -mvenv myvenv
+python3 -mvenv myvenv
 source myvenv/bin/activate
 pip install django~={{ book.django_version }}
 ```
