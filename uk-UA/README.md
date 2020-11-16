@@ -6,9 +6,9 @@
 
 ## Вітаємо
 
-Ласкаво просимо до Django Girls Tutorial! Ми раді вас зустріти тут :)  В цьому курсі, ви побачите із середини як працюють веб-технології, ми пропонуємо вам огляд всіх бітів і частинок які мають об'єднатись разом щоб зробити мережу такою як ми її знаємо.
+Ласкаво просимо до Django Girls Tutorial! We are happy to see you here. :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
-Як з усім невідомим, це буде пригодою - але не хвилюйся, так як в тебе вистачило сміливості бути тут, ти впораєшся :)
+As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine. :)
 
 ## Вступ
 
