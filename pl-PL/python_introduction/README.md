@@ -1065,7 +1065,7 @@ Zwróć uwagę, że druga z tych liczb nie jest częścią listy stworzonej prze
 
 To już wszystko. **Wspaniale Ci idzie!** To nie było wcale takie łatwe, możesz zatem być z siebie dumna. My zdecydowanie jesteśmy z Ciebie dumne, że dotarłaś do tego miejsca!
 
-Oficjalny, kompletny tutorial Pythona znajdziesz pod adresem https://docs.python.org/3/tutorial/. Pozwoli on Tobie poznać język kompletnie i dogłębnie. Powodzenia! :)
+For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers! :)
 
 Jak myślisz, może czas na małą przerwę? Rozciągnij się, rozprostuj nogi, daj odpocząć oczom zanim przejdziesz do kolejnego rozdziału. :)
 
