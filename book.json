@@ -1,9 +1,9 @@
 {
     "gitbook": ">=3.2.0",
     "variables": {
-      "py_version": "3.9",
-      "py_release": "3.9.0",
-      "py_min_version": "3.6.0",
+      "py_version": "3.8",
+      "py_release": "3.8.6",
+      "py_min_version": "3.6.8",
       "pa_py_version": "3.8",
       "django_version": "2.2.4"
     },
