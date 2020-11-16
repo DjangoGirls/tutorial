@@ -33,7 +33,7 @@ Podívej se jak tvá stránka vypadá teď: http://127.0.0.1:8000/
 
 ![Figure 11.1](images/step1.png)
 
-Žádná chybová hláška! Gratulujeme :) Nicméně, na tvé stránce se ještě nezveřejnilo nic kromě prázdné stránky, protože tvá šablona je také prázdná. To musíme napravit.
+No error anymore! Congratulations! :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
 
 Open the new file in the code editor, and add the following:
 
@@ -52,7 +52,7 @@ So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
 
 ![Figure 11.2](images/step3.png)
 
-Fungovalo to! Pěkná práce :)
+It worked. Nice work there! :)
 
 * The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. Jak vidíš, celý obsah stránky je mezi otevíracím tagem `<html>` a zavíracím tagem `</html>`
 * `<p>` je tag pro element paragraf; `</p>` každý paragraf ukončuje
