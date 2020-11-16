@@ -6,9 +6,9 @@
 
 ## Välkommen
 
-Välkommen till Django Girls Tutorial! Vi är glada att se dig här :) I den här tutorialen kommer vi att ta dig på en resa under ytan av webbteknologier och ge dig en glimt av alla bitar som behöver sammanställas för att få webben att fungera som vi är vana vid.
+Välkommen till Django Girls Tutorial! We are happy to see you here. :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
-Som de flesta okända ting kommer även detta att bli ett äventyr - men oroa dig inte. Du har redan samlat ihop mod för att komma hit, så du kommer att klara dig utan problem :)
+As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine. :)
 
 ## Introduktion
 
