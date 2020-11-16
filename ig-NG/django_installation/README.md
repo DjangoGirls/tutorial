@@ -2,6 +2,6 @@
 
 > **Ndetu** Ọ bụrụ na ị na-eji Chromebook, hapu ebe a ma gbaa mbọ hụ na ị na-eso [ntuziaka ](../chromebook_setup/README.md)Chromebook .
 > 
-> **Note** If you already worked through the installation steps then you've already done this – you can go straight to the next chapter!
+> **Note** If you already worked through the [installation steps](../installation/README.md) then you've already done this – you can go straight to the next chapter!
 
 {% include "/django_installation/instructions.md" %}
