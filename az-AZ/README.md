@@ -6,9 +6,9 @@
 
 ## Xoş Gəldiniz
 
-Django Girls Dərsliyinizə xoş gəldiniz! Sizi burada görməyə şadıq :) Bu dərslikdə, sizi veb texnologiyalar başlığı altında bir səyahətə aparacağıq, internetin bildiyimiz kimi işləməsi üçün bir araya gəlməsi lazım olan bütün hissə və parçalara nəzər salacağıq.
+Django Girls Dərsliyinizə xoş gəldiniz! We are happy to see you here. :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
-Bütün bilinməyən şeylərdə olduğu kimi, bu da bir macəra dolu səyahət olacaq - ancaq narahat olmayın, çünki cəsarətiniz sayəsində buradasınız və daha da yaxşı olacaqsınız :)
+As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine. :)
 
 ## Giriş
 
