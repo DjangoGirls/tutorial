@@ -1065,7 +1065,7 @@ Nota che il secondo di questi due numeri non è incluso nella lista prodotta da 
 
 È tutto. **Sei grande!** Questo capitolo non era affatto facile, puoi essere orgogliosa di te stessa. Noi siamo fierissimi di te per avercela fatta fino a qui!
 
-Per il tutorial ufficiale e completo di python visita https://docs.python.org/3/tutorial/. Questo ti darà uno studio più completo e completo della lingua. Cheers :)
+For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers! :)
 
 Potresti desiderare di fare brevemente qualcos'altro - stiracchiati, fai due passi, riposa gli occhi - prima di continuare con il prossimo capitolo. :)
 
