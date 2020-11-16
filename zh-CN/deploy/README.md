@@ -218,7 +218,7 @@ Git会追踪这个目录下所有文件和文件夹的更改，但是有一些�
 
 ## 你现在上线了！
 
-你的站点现在应该在公共互联网上跑起来了！点击PythonAnywhere的”web“页面获取链接。然后就可以分享给其他人了:)
+Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want. :)
 
 > **注意**这是一个初学者教程，我们在部署这个网站的时候走了一些捷径，但从安全的角度这是不推荐的。 等你决定在这个项目的基础上继续搭建，或者开始一个新项目，建议你去查看[Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/)，来获取一些关于站点安全的提示。
 
