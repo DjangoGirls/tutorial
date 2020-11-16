@@ -6,9 +6,9 @@
 
 ## Benvinguda
 
-Benvingudes al Tutorial Noies Django! Ens alegrem de veure't aquí :) En aquest tutorial, farem una ullada sota el capó de les tecnologies web, oferint-te una mostra de totes les peces que formen el treball web tal com el coneixem.
+Benvingudes al Tutorial Noies Django! We are happy to see you here. :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
-Com passa amb tot allò que ens és desconegut, serà una aventura. Però no et preocupis, si has tingut el valor d'arribar fins aquí, tot anirà bé :)
+As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine. :)
 
 ## Introducció
 
