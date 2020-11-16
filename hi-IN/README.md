@@ -6,9 +6,9 @@
 
 ## स्वागत है
 
-डीजेन्गो गर्ल प्रशिक्षण में आपका स्वागत है! हम आपको यहां देखने में प्रसन्न हैं :) इस ट्यूटोरियल में, हम आपको वेब टेक्नोलॉजीज के हुड के तहत एक यात्रा पर ले जायेंगे, हम अपने अनुभव द्वारा आपको उन सभी छोटी बड़ी चीजों से अवगत कराएँगे जिनको एक साथ प्रयोग करके वेब को कार्यान्वित किया जाता है ।
+डीजेन्गो गर्ल प्रशिक्षण में आपका स्वागत है! We are happy to see you here. :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
-सभी अज्ञात चीजों की तरह, यह भी साहसिक होने वाला है - परन्तु घबराने की जरूरत नहीं है, क्योंकि आपने पहले से ही यहां तक आने का साहस कर लिया है, आपको कोई परेशानी नहीं होगी:
+As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine. :)
 
 ## 3
 
