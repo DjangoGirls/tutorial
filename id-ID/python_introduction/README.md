@@ -1060,7 +1060,7 @@ Note that the second of these two numbers is not included in the list that is ou
 
 Itu dia. ** Kamu hebat! ** Bab ini sama sekali tidak mudah, Anda harus bangga. Kami bangga dengan Anda karena telah berhasil sampai di sini!
 
-Tutorial Python resmi lengkap dapat ditemukan di https://docs.python.org/3/tutorial/. Ini akan memungkinkan Anda untuk mempelajari bahasa secara lengkap dan menyeluruh. Cheers :)
+For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers! :)
 
 Sebelum Anda melanjutkan ke bab berikutnya, lakukan sesuatu yang lain - meregangkan, berlari, menenangkan mata Anda. :)
 
