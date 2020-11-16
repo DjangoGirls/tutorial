@@ -6,9 +6,9 @@
 
 ## স্বাগতম 
 
-সবাইকে জ্যাঙ্গো গার্লস বাংলা টিউটোরিয়াল এ স্বাগত! তোমাদেরকে সাথে পেয়ে আমরা খুবই আনন্দিত :) । এই টিউটোরিয়ালে, তোমাদেরকে সাথে নিয়ে আমরা ওয়েব প্রযুক্তির মধ্য দিয়ে এক নতুন ভ্রমণের সূচনা করবো। পাশাপাশি একটি ওয়েবে কাজ করার প্রয়োজনীয় ও খুঁটিনাটি বিষয়গুলো তুলে ধরার চেষ্টা করবো।
+সবাইকে জ্যাঙ্গো গার্লস বাংলা টিউটোরিয়াল এ স্বাগত! We are happy to see you here. :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
-অজানা সবকিছু নিয়ে আমাদের এই যাত্রা হবে আরো বেশি রোমাঞ্চকর। আর চিন্তার কিছুই নেই, যেহেতু তুমি ইতিমধ্যে এখানে চলে এসেছ, তুমি মানিয়ে নিতে পারবেই :)
+As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine. :)
 
 ## ভূমিকা
 
