@@ -1066,7 +1066,7 @@ Sizin verdiğiniz ikinci parametrenin listede olmadığına dikkat edin (yani `r
 
 İşte bu. **Harikasın, süpersin!** Bu bölüm biraz zordu, kendinle gurur duymalısın. Biz buraya kadar geldiğin için seninle gurur duyuyoruz!
 
-Resmi ve tam python kılavuzu için https://docs.python.org/3/tutorial/ adresini ziyaret edin. Bu size Python dili hakkında daha kapsamlı ve eksiksiz bir çalışma sunacaktır. Teşekkürler :)
+For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers! :)
 
 Sonraki bölüme geçmeden önce başka bir şey yapmak isteyebilirsin. -gerin, biraz etrafta gezin, gözlerini dinlendir- :)
 
