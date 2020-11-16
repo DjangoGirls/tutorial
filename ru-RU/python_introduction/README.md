@@ -426,7 +426,7 @@ KeyError: 'age'
 >>> participant['favorite_language'] = 'Python'
 ```
 
-Like lists, using the `len()` function on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
+Как и в случае со списками, применяя функцию `len()` к словарю, ты получишь число пар ключ/значение. Попробуй сама:
 
 {% filename %}command-line{% endfilename %}
 
@@ -496,7 +496,7 @@ True
 True
 ```
 
-We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare values of mathematical expressions like `2 * 2` and function results like the `2` returned by `len([4, 5])`. Nice, huh?
+Мы дали Python несколько чисел для сравнения. Как видишь, Python может не только сравнивать числа, но и значения математических выражений, таких как `2 * 2`, а так же сравнивать результат функции `len([4, 5])` - `2` . Неплохо, да?
 
 Хочешь спросить почему мы написал двойной символ равенства `==`, чтобы проверить одинаковы ли числа? Потому что одинарные символ равенства `=` уже задействован под присваивание значения переменным. Ты всегда, **всегда** должна писать два символа равенства `==`, если хочешь проверить одинаковы ли объекты. Мы также можем проверить различаются ли объекты. Для этого, мы используем `!=`, как показано в примере выше.
 
