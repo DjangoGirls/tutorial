@@ -33,7 +33,7 @@ Puteți să vedeți site-ul acum: http://127.0.0.1:8000/
 
 ![Figura 11.1](images/step1.png)
 
-Eroare a fost eliminată! Felicitări :) Dar website-ul nu postează nimic, doar o pagină goală, pentru că în template nu este informație. Trebuie să afișăm ceva informație.
+No error anymore! Congratulations! :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
 
 Deschideți fișier în editor de cod și adăugați marcajul următor:
 
@@ -52,7 +52,7 @@ Cum arată website-ul acum? Vizitați-l pe http://127.0.0.1:8000/
 
 ![Figura 11.2](images/step3.png)
 
-Lucrează! Ați lucrat bine :)
+It worked. Nice work there! :)
 
 * Tag-ul de bază, `<html>`, este începutul a paginii web și `</html>` este sfârșitul. După cum vedeți, conținutul website-ului este între tăgul de început `<html>` și cel de sfârșit `</html>`
 * `<p>` este un tăg pentru elemente de paragraf; `</p>` închide fiecare paragraf
