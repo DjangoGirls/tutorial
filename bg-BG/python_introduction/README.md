@@ -1065,7 +1065,7 @@ for i in range(1, 6):
 
 Това е! **Ти си върха!** Това беше сложна глава, така че трябва да сте горди със себе си. Ние определено сме горди с това, което постигнахте досега!
 
-За официалното и пълно ръководство на Python посетете https://docs.python.org/3/tutorial/. Това ще ви даде много по-подробни и цялостни знания за езика. Със здраве! :)
+For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers! :)
 
 Може би искате да направите нещо друго за кратко - разтягане, разходка, да ви отпочинат очите - преди да отидем към следващата глава. :)
 
