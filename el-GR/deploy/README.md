@@ -218,7 +218,7 @@
 
 ## Τώρα είστε ζωντανά!
 
-Το site σας είναι πλεόν deployed! Κλικάρετε στη σελίδα "Web" του PythonAnywhere για να αποκτήσετε το url σας. Μπορείτε να το μοιραστείτε με όποιον θέλετε :)
+Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want. :)
 
 > **Σημείωση** Αυτός είναι ένας οδηγός για αρχάριους και κατά τη διάρκεια του deploying παρακάμψαμε κάποια βήματα τα οποία είναι πολύ σημαντικά από άποψη ασφάλειας. Αν και όταν θελήσετε να εμπλουτίσετε ή να φτιάξετε ένα νέο project, καλό θα ήταν να συμβουλευτείτε το [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) για μερικές συμβουλές ασφάλειας.
 
