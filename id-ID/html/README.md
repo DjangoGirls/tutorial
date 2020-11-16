@@ -33,7 +33,7 @@ Lihatlah bagaimana situs web terlihat sekarang: http://127.0.0.1:8000 /
 
 ![Gambar 11.1](images/step1.png)
 
-Tidak ada kesalahan lagi! Selamat :) Namun, situs Anda sebenarnya tidak menerbitkan apapun kecuali halaman kosong, karena template Anda juga kosong. Kita perlu memperbaikinya.
+No error anymore! Congratulations! :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
 
 Open the new file in the code editor, and add the following:
 
@@ -52,7 +52,7 @@ Jadi bagaimana Apakah situs web Anda terlihat sekarang? Mengunjunginya untuk men
 
 ![Gambar 11.2](images/step3.png)
 
-Itu berhasil! Nice bekerja di sana :)
+It worked. Nice work there! :)
 
 * Tag paling dasar, `<html>`, selalu adalah awal dari setiap halaman web dan `</html>` selalu akhir. Seperti yang Anda lihat, seluruh isi website terjadi antara awal tag `<html>`dan tag penutup `</html>`
 * `<p>`adalah suatu tag untuk elemen ayat; `</p>` menutup setiap ayat
