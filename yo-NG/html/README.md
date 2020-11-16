@@ -33,7 +33,7 @@ Wo bí ààyè ayélujára rẹ ṣe rí ní báyìí: http://127.0.0.1:8000/
 
 ![Figure 11.1](images/step1.png)
 
-Kò sí àsìṣe mọ́! Kú oríire :) Àmọ́ o, ààyè ayélujára rẹ kò fi bẹ́ẹ̀ ṣàtẹ̀jáde nnkan kan yàtọ̀ sí ojú-ìwé òfìfo kan, nítorí pé àwòṣe rẹ wà ní òfìfo pẹ̀lú. A nílò láti ṣàtúnṣe ìyẹn.
+No error anymore! Congratulations! :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
 
 Ṣí fáìlì tuntun náà nínú olóòtú kóòdù náà, kí o sì ṣàfikún èyí tó tẹ̀le yìí:
 
@@ -52,7 +52,7 @@ Báwo wá ni ààyè ayélujára rẹ ṣe rí ní báyìí? Ṣàbẹ̀wò rẹ
 
 ![Figure 11.2](images/step3.png)
 
-Ó ṣiṣẹ́! Iṣẹ́ tó dáa lo ṣe :)
+It worked. Nice work there! :)
 
 * Àmì tó ṣe pàtàkì jù náà, `<html>`, máa n jẹ́ ìbẹ̀rẹ̀ èyíkéyìí ojú-ìwé ayélujára àti pé `</html>` máa n jẹ́ ìparí náà. Gẹ́gẹ́ bó o ṣe ríi, gbogbo àkóónú ààyè ayélujára náà máa wà láàrín àmì ìbẹ̀rẹ̀ `<html>` àti àmì ìparí `</html>` náà
 * `<p>` jẹ́ àmì kan fún àwọn element ìpínrọ: `</p>` yíò parí ìpínrọ kọ̀ọ̀kan
