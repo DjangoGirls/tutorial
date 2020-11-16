@@ -446,4 +446,4 @@ form = PostForm(instance=post)
 
 * در نهایت به صفحه ["Web" page](https://www.pythonanywhere.com/web_app_setup/) بروید (از کلید منو در بالا و سمت راست کنسول استفاده کنید) و کلید **Reload** را بزنید. آدرس وبلاگ خودتان https://subdomain.pythonanywhere.com را باز کنید تا تغییرات را ببینید.
 
-همین است! تبریک به شما :)
+And that should be it. Congrats! :)
