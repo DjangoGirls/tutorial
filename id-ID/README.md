@@ -6,9 +6,9 @@
 
 ## SELAMAT DATANG
 
-Selamat datang di Tutorial Django Girls! Kami senang melihat Anda di sini :) Dalam tutorial ini, kami akan membawa Anda ke sebuah perjalanan di bawah tenda teknologi web, menawarkan sekilas semua potongan dan potongan yang perlu disatukan untuk membuat pekerjaan web seperti yang kita ketahui. saya t.
+Selamat datang di Tutorial Django Girls! We are happy to see you here. :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
-Seperti semua hal yang tidak diketahui, ini akan menjadi petualangan - tapi jangan khawatir, karena Anda sudah berusaha keras untuk berada di sini, Anda akan baik-baik saja :)
+As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine. :)
 
 ## pengantar
 
