@@ -6,9 +6,9 @@
 
 ## Xin chào mừng
 
-Chào mừng bạn đã đến với Django Girls Tutorial! Chúng tôi rất hạnh phúc khi thấy bạn ở đây :) Trong bài hướng dẫn này, chúng tôi sẽ đồng hành cùng bạn trên chuyến đi tìm hiểu về công nghệ đằng sau các website, đem lại cho bạn từng mảnh ghép để tạo nên một website hoàn chỉnh.
+Chào mừng bạn đã đến với Django Girls Tutorial! We are happy to see you here. :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
-Giống nhưng những điều chưa biết khác, đây sẽ là một chuyến phiêu lưu - nhưng đừng lo lắng nhé, bởi vì bạn đã can đảm để ở đây, vậy nên bạn sẽ chinh phục được thôi :)
+As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine. :)
 
 ## Giới thiệu
 
