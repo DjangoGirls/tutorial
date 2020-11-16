@@ -6,9 +6,9 @@
 
 ## خوش آمدید
 
-به دوره آموزشی دختران جنگو خوش آمدید! خوشحالیم که شما را اینجا می‌بینیم :) در این آموزش، شما را به سفری به پشت صحنه تکنولوژی‌های وب خواهیم برد و نگاهی اجمالی می‌اندازیم به تمام بخش‌های بزرگ و کوچکی که کنار هم قرار می‌گیرند تا وب، آن طور که می‌شناسیمش، کار کند.
+به دوره آموزشی دختران جنگو خوش آمدید! We are happy to see you here. :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
-مثل تمام کارهای ناشناخته دیگر، این کار نیز یک ماجراجویی خواهد بود. اما نگران نباشید، چرا که شهامت اینجا بودن را داشته‌اید، همه چیز خوب پیش خواهد رفت :)
+As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine. :)
 
 ## معرفی
 
