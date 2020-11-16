@@ -211,4 +211,4 @@ PythonAnywhereのようなサーバは、（CSSファイルのような）「静
 
 いずれにしても、[「Web」ページ](https://www.pythonanywhere.com/web_app_setup/)を（コンソールの右上のメニューボタンから）開き、**Reload**をクリックする準備ができました。そうしたらhttps://subdomain.pythonanywhere.comを見て結果を確認しましょう。
 
-うまくいってるはずです！おめでとう :)
+And that should be it. Congrats! :)
