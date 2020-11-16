@@ -33,7 +33,7 @@ Veja como o nosso site está agora: http://127.0.0.1:8000/
 
 ![Figura 11.1](images/step1.png)
 
-Acabaram-se os erros! Uhuu :) Entretanto, nosso site não mostra nada a não ser uma página em branco. Isso acontece porque o nosso template está vazio. Precisamos consertar isso.
+No error anymore! Congratulations! :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
 
 Abra o novo arquivo no editor de código e adicione o seguinte:
 
@@ -52,7 +52,7 @@ Como está o nosso site agora? Visite a página descobrir: http://127.0.0.1:8000
 
 ![Figura 11.2](images/step3.png)
 
-Funcionou! Bom trabalho :)
+It worked. Nice work there! :)
 
 * A tag mais básica, `<html>`, estará sempre no começo de qualquer página da web, assim como, `</html>` sempre estará no fim. Todo o conteúdo de um website se encontra entre a tag de início `<html>` e a tag de fim `</html>`
 * `<p>` é a tag que inicia um parágrafos; `</p>` determina o fim de um parágrafo
