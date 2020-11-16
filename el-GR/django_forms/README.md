@@ -446,4 +446,4 @@ If you need more information about Django forms, you should read the documentati
 
 * Τέλος, επισκεφτείτε τη σελίδα σας ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (χρησιμοποιήστε το κουμπί του menu στην πάνω δεξιά γωνία της κονσόλας) και κλικάρετε **Reload**. Refresh your https://subdomain.pythonanywhere.com blog to see the changes.
 
-Αυτό ήταν! Συγχαρητήρια :)
+And that should be it. Congrats! :)
