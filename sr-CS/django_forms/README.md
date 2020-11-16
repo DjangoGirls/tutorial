@@ -446,4 +446,4 @@ Hajde da vidimo da li ovo radi na PythonAnywhere. Vreme je za još jedno razvija
 
 * Konačno, idite na [veb stranicu](https://www.pythonanywhere.com/web_app_setup/) (koristite dugme za meni u gornjem desnom uglu konzole) i kliknite na **osveži**. Osvežite Vaš https://subdomain.pythonanywhere.com blog da vidite izmene.
 
-I to je sve! Čestitamo :)
+And that should be it. Congrats! :)
