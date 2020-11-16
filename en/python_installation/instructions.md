@@ -22,13 +22,7 @@ One thing to watch out for: During the installation, you will notice a window ma
 
 When the installation completes, you may see a dialog box with a link you can follow to learn more about Python or about the version you installed. Close or cancel that dialog -- you'll be learning more in this tutorial!
 
-Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python {{ book.py_version }}.x installer fails with an error, you can try either:
-1. install all Windows Updates and try to install Python again; or
-2. install an [older version of Python](https://www.python.org/downloads/windows/), e.g., [{{ book.py_min_version }}](https://www.python.org/downloads/release/python-346/).
-
-If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
-
-![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
+Note: If you are using an older version of Windows (7, Vista, or any older version) and the Python {{ book.py_version }} installer fails with an error, then install all Windows Updates and try to install Python again. If you still have the error, try installing Python version {{ book.py_min_version }} from [Python.org](https://www.python.org/downloads/windows/).
 
 <!--endsec-->
 
