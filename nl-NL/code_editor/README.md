@@ -6,6 +6,6 @@ Je staat op het punt om je eerste regel code te schrijven. Tijd om een code edit
 
 > **Opmerking** Als je een Chromebook gebruikt, sla dit hoofdstuk dan over en zorg ervoor dat je de [Chromebook installatie](../chromebook_setup/README.md) instructies volgt. De cloud IDE die je gekozen hebt (PiazaCloud Cloud IDE of AWS Cloud9) komt met een code editor. Wanneer je een bestand opent in je IDE vanuit het bestandsmenu gebruik je automatisch de editor.
 > 
-> **Opmerking** Het zou kunnen dat je dit eerder in het Installatie hoodstuk al gedaan hebt. Als dat zo is kun je rechtstreeks door naar het volgende hoofdstuk!
+> **Note** You might have done this earlier in the [Installation chapter](../installation/README.md) – if so, you can skip right ahead to the next chapter!
 
 {% include "/code_editor/instructions.md" %}
