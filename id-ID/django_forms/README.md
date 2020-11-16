@@ -437,4 +437,4 @@ We need to create a file `post_edit.html` in the `blog/templates/blog` directory
     
     * Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (use the menu button in the upper right of the console) and hit **Reload**. Refresh your https://subdomain.pythonanywhere.com blog to see the changes.
     
-    And that should be it! Congrats :)
+    And that should be it. Congrats! :)
