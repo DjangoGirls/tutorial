@@ -6,9 +6,9 @@
 
 ## Καλώς ήρθατε
 
-Καλώς ήρθατε στο φροντιστήριο Django Girls! Χαιρόμαστε που σε βλέπουμε εδώ :) Σε αυτόν τον οδηγό θα σε πάμε ένα ταξίδι γύρω από τις τεχνολογίες ιστοσελίδων, προσφέροντας σου μία γεύση από όλα τα κομμάτια που πρέπει να συγκεντρωθούν ώστε να κάνουν τον ιστό (με άλλα λόγια το internet) να δουλέψει όπως το γνωρίζουμε.
+Καλώς ήρθατε στο φροντιστήριο Django Girls! We are happy to see you here. :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
-Όπως με όλα τα άγνωστα πράγματα, αυτό πρόκειται να είναι άλλη μία εμπειρία για σένα, αλλά μην ανησυχείς, αφού ήδη πήρες την απόφαση να είσαι εδώ, θα είσαι μια χαρά :)
+As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine. :)
 
 ## Εισαγωγή
 
