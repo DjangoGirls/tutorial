@@ -33,7 +33,7 @@ HTML هو رمز يتم تفسيره بواسطة متصفح الويب - مثل
 
 ![الرقم 11.1](images/step1.png)
 
-لا يوجد خطأ بعد الآن! تهاني:) ومع ذلك، موقع الويب الخاص بك لم ينشر أي شيء ما عدا صفحة فارغة، نظراً لأن القالب فارغ . نحن بحاجة إلى إصلاح ذلك.
+No error anymore! Congratulations! :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
 
 Open the new file in the code editor, and add the following:
 
@@ -52,7 +52,7 @@ Open the new file in the code editor, and add the following:
 
 ![الرقم 11.2](images/step3.png)
 
-إنه كان مجديًا! لقد قمت بعمل جيد هناك:)
+It worked. Nice work there! :)
 
 * إن العلامة الأساسية، `<html>`، هي دائما بداية أي صفحة ويب و `</html>` هي دائما النهاية. كما ترون، يذهب كامل محتوى الموقع بين بداية الوسم `<html>`وعلامة إغلاق `</html>`
 * `<p>`علامة لعناصر الفقرة؛ `</p>` يغلق كل فقرة
