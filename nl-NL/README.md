@@ -6,9 +6,9 @@
 
 ## Welkom
 
-Welkom bij de Django Girls Gids! We zijn blij je hier te zien :-) In deze Gids nemen we je mee voor een kijkje achter de schermen van diverse webtechnologiën. We zullen een tipje van de sluier oplichten van alle dingen die er samen voor zorgen dat het web werkt zoals we het kennen.
+Welkom bij de Django Girls Gids! We are happy to see you here. :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
-Zoals met alle onbekende dingen gaat dit een ontdekkingsreis zijn - maar maak je geen zorgen: aangezien je de moed al had om op dit punt te belanden, zal het je best lukken :-)
+As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine. :)
 
 ## Inleiding
 
