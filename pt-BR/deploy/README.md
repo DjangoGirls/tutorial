@@ -218,7 +218,7 @@ Você também pode visitar a aba "Files" e dar uma olhada usando o gerenciador d
 
 ## Estamos no ar!
 
-Agora, seu site deve estar no ar! Clique na aba "Web" do PythonAnywhere para pegar o link dele. Você pode compartilhar esse link com quem quiser :)
+Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want. :)
 
 > **Observação:** Este é um tutorial para iniciantes e ao fazer o deploy do site desta forma, nós tomamos alguns atalhos que não são ideais do ponto de vista de segurança. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) for some tips on securing your site.
 
