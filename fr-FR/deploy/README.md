@@ -218,7 +218,7 @@ Vous pouvez également accéder à la page "Fichiers" et naviguer à l'aide du n
 
 ## Vous êtes désormais sur Internet !
 
-Votre site devrait désormais être accessible sur Internet ! Cliquez sur la page "Web" dans PythonAnywhere pour obtenir un lien. Vous pouvez partagez ce lien avec qui vous voulez :)
+Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want. :)
 
 > **Note** Ce tutoriel est conçu pour les débutants, et pendant le déploiement on a pris quelques raccourcis qui, d'un point de vue de la sécurité, ne sont pas idéaux. Quand vous voudrez aller plus loin dans ce projet, ou commencer un nouveau projet, vous devriez consulter la [Checklist de déploiement pour Django](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) pour obtenir des conseils sur comment sécuriser votre site.
 
