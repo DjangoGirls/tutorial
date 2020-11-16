@@ -33,7 +33,7 @@ Se nu hur din webbplats ser ut: http://127.0.0.1:8000/
 
 ![Figur 11.1](images/step1.png)
 
-Inga fel längre! Grattis :) Men din webbplats publicerar faktiskt inte något annat än en tom sida, eftersom din mall också är tom. Det måste vi åtgärda.
+No error anymore! Congratulations! :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
 
 Öppna den nya filen i kodeditorn, och lägg till följande:
 
@@ -52,7 +52,7 @@ Hur ser din webbplats ut nu? Besök den för att få veta: http://127.0.0.1:8000
 
 ![Figur 11.2](images/step3.png)
 
-Det fungerade! Bra jobbat :)
+It worked. Nice work there! :)
 
 * Den mest grundläggande taggen, `<html>`, är alltid början på alla webbsidor och `</html>` är alltid slutet. Som du kan se finns hela innehållet på webbplatsen mellan starttaggen `<html>` och stängningstaggen `</html>`
 * `<p>` är en tagg för styckeelement; `</p>` avslutar varje stycke
