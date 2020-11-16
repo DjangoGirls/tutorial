@@ -6,9 +6,9 @@
 
 ## Bine ai venit
 
-Bine ai venit la Django Girls Tutorial! Suntem bucuroşi să te vedem aici :) În acest tutorial, noi te vom ghida în călătoria minunată prin lumea tehnologiilor web, oferindu-ți suport în așa fel ca aplicația ta web să îți întreacă așteptările proprii.
+Bine ai venit la Django Girls Tutorial! We are happy to see you here. :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
-Plutind acum prin necunoscuta lume a dezvoltării web, aceasta va fi o aventura pentru tine - dar nu îți face griji, pasul cel mai greu l-ai făcut - ai avut curajul să ajungi aici, o să-ți placă :)
+As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine. :)
 
 ## Introducere
 
