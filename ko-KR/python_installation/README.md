@@ -10,6 +10,6 @@
 
 > **Note**만약 크롬북을 사용하고 있다면 이번 장은 생략하고 [크롬북 설정 지침](../chromebook_setup/README.md)을 따르고 있는지 확인하세요.
 > 
-> **Note** If you already worked through the installation steps, there's no need to do this again – you can skip straight ahead to the next chapter!
+> **Note** If you already worked through the [installation steps](../installation/README.md), there's no need to do this again – you can skip straight ahead to the next chapter!
 
 {% include "/python_installation/instructions.md" %}
