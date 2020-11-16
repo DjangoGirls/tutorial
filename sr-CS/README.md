@@ -6,9 +6,9 @@
 
 ## Dobrodošli
 
-Dobrodošli u Django Girls Priručnik! Raduje nas što si ovde :) U ovom priručniku ćemo te odvesti na putovanje gde ćeš sagledati šta se krije pod nazivom internet tehnologija. Omogućićemo ti da stekneš uvid u sve deliće koji zajedno čine internet onakvim kakvim ga mi znamo.
+Dobrodošli u Django Girls Priručnik! We are happy to see you here. :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
-I kao što to obično biva sa nepoznanicama, i ovo će biti avantura - ali ne brini: pošto si već sakupila hrabrost da budeš ovde, mi znamo da ćeš biti sasvim u redu :)
+As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine. :)
 
 ## Uvod
 
