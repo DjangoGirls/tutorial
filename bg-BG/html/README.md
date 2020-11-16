@@ -33,7 +33,7 @@ HTML идва от "HyperText Markup Language". **HyperText** означава, 
 
 ![Фигура 11.1](images/step1.png)
 
-Вече нямаме грешка! Поздравления :) Въпреки това, сайта ви всъщност не публикува нищо освен празна страница, защото шаблонът ви също е празен. Можем да оправим това.
+No error anymore! Congratulations! :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
 
 Отворете новият файл в редактора и добавете следното:
 
@@ -52,7 +52,7 @@ HTML идва от "HyperText Markup Language". **HyperText** означава, 
 
 ![Фигура 11.2](images/step3.png)
 
-Работи! Добра работа :)
+It worked. Nice work there! :)
 
 * Най-простия етикет `<html>` е винаги в началото на една страница и `</html>` е винаги в края и. Както може да видите, цялото съдържание на страницата е между отварящият `<html>` и затварящият етикет `</html>`
 * `<p>` е етикет за абзацни елементи; `</p>` затваря всеки един абзац
