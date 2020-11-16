@@ -33,7 +33,7 @@ Popatrz, jak Twoja strona wygląda teraz: http://127.0.0.1:8000/
 
 ![Rysunek 11.1](images/step1.png)
 
-Nie ma błędu! Gratulacje! :) Niestety, twoja aplikacja nie wyświetla niczego poza pustą stroną, ponieważ Twój szablon również jest pusty. Naprawmy to.
+No error anymore! Congratulations! :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
 
 Otwórz Twój nowy plik w edytorze kodu i dodaj poniższe:
 
@@ -52,7 +52,7 @@ I jak twoja strona wygląda teraz? Odwiedź stronę http://127.0.0.1:8000/, żeb
 
 ![Rysunek 11.2](images/step3.png)
 
-Zadziałało! Dobra robota :)
+It worked. Nice work there! :)
 
 * Najbardziej podstawowy znacznik, `<html>`, jest zawsze na początku każdej strony internetowej, zaś `</html>` jest zawsze na końcu. Jak widzisz, cała zawartość strony zawiera się pomiędzy znacznikiem otwierającym `<html>` i zamykającym `</html>`
 * `<p>` jest znacznikiem akapitów; `</p>` zamyka każdy akapit
