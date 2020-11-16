@@ -218,7 +218,7 @@ PythonAnywhereのコードを`ls`を使って見てみることもできます�
 
 ## 動いています！
 
-あなたのサイトは現在、インターネット上で動作しているはずです！ PythonAnywhereのWebページをクリックしてリンクを取得します。 あなたはあなたが望む誰とでもこれを共有することができます:)
+Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want. :)
 
 > **注** これは初心者向けのチュートリアルです。このサイトをデプロイする際にはセキュリティの観点からは理想的ではない、いくつかのショートカットをしました。 もしこのプロジェクトを利用すると決めたり、新しいプロジェクトを開始する場合は、あなたのサイトを安全にするいくつかのヒントについて、[Djangoデプロイチェックリスト](https://docs.djangoproject.com/ja/2.2/howto/deployment/checklist/)を注意深く読んでください。
 
