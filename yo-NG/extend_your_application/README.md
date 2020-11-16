@@ -211,4 +211,4 @@ Bẹ̀rẹ̀ pẹ̀lú mímú virtualenv rẹ ṣiṣẹ́ tí kò bá tíì ma 
 
 Bó ti wù kó rí, a ti ṣetán báyìí láti lọ sí [ojú-ìwé "Ayélujára"](https://www.pythonanywhere.com/web_app_setup/) náà (láti bọ́tìnnì àkójọ àṣàyàn tó wà ní òkè lápá ọ̀tún console náà) kí o sì tẹ **Reload**, lẹ́yìn náà wo ojú-ìwé https://subdomain.pythonanywhere.com náà láti rí àbájáde náà.
 
-A ó parí gbogbo rẹ̀ síbí! Kú oríire :)
+And that should be it. Congrats! :)
