@@ -6,9 +6,9 @@
 
 ## Vitaj
 
-Vitaj na Django Girls! Sme radi, že ťa tu vidíme :) V tomto tutoriále ti ukážeme čo je pod kapotou webových technológií. Ponúkneme ti pohľad na všetky čiastky a kúsky, ktoré musia do seba zapadnúť aby web fungoval tak ako ho poznáme.
+Vitaj na Django Girls! We are happy to see you here. :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
-Ako so všetkými vecami, ktoré sú neznáme, aj toto bude dobrodružstvo - ale neboj sa, keďže si sa už odvážila byť tu, všetko bude v poriadku :)
+As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine. :)
 
 ## Úvod
 
