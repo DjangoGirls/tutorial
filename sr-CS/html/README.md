@@ -33,7 +33,7 @@ See how your website looks now: http://127.0.0.1:8000/
 
 ![Slika 11.1](images/step1.png)
 
-No error anymore! Congratulations :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
+No error anymore! Congratulations! :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
 
 Open the new file in the code editor, and add the following:
 
@@ -52,7 +52,7 @@ So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
 
 ![Slika 11.2](images/step3.png)
 
-It worked! Nice work there :)
+It worked. Nice work there! :)
 
 * The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
 * `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
