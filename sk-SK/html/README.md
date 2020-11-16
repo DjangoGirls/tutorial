@@ -33,7 +33,7 @@ Pozri sa, ako momentálne vyzerá tvoja stránka: http://127.0.0.1:8000/
 
 ![Obrázok 11.1](images/step1.png)
 
-Žiadne ďalšie chyby! Gratulujeme :) Avšak tvoja stránka zatiaľ neukazuje nič, okrem prázdnej stránky, pretože tvoja šablóna je taktiež prázdna. To musíme opraviť.
+No error anymore! Congratulations! :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
 
 Open the new file in the code editor, and add the following:
 
@@ -52,7 +52,7 @@ Takže ako momentálne vyzerá tvoja stránka? To môžeš zistiť kliknutím na
 
 ![Obrázok 11.2](images/step3.png)
 
-Funguje to! Dobrá práca :)
+It worked. Nice work there! :)
 
 * Najzákladnejší tag, `<html>`, je vždy na začiatku každej webovej stránky a `</html>` je vždy na jej konci. Ako môžeš vidieť, celý obsah stránky sa nachádza medzi začínajúcim tagom `<html>` a uzatvárajúcim tagom `</html>`
 * `<p>` je tag pre element odstavca; `</p>` uzatvára každý odstavec
