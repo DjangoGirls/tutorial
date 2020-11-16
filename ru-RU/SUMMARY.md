@@ -21,7 +21,7 @@
 * [Твой первый проект на Django!](django_start_project/README.md)
 * [Модели Django](django_models/README.md)
 * [Административная панель Django](django_admin/README.md)
-* [Разворачиваем!](deploy/README.md)
+* [Запускаем!](deploy/README.md)
 * [URL-адреса Django](django_urls/README.md)
 * [Представления в Django – время создавать!](django_views/README.md)
 * [Введение в HTML](html/README.md)
