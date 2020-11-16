@@ -218,7 +218,7 @@ PythonAnywhere에서는 위의 과정들이 모두 자동화되어 있습니다.
 
 ## 이제 세상에 공개되었습니다!
 
-이제 귀하의 사이트는 internet상에 공개되었습니다. PythonAnywhere의 "Web" 페이지를 클릭해 링크를 받아오세요. 이 링크는 귀하가 원하는 모든 사람에게 공유될 수 있습니다. 
+Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want. :)
 
 > **알림**이 안내서는 초보자를 위한 튜토리얼입니다. 쉬운 안내를 위해서 보안상 권장되지 않는 방법도 몇개 사용했습니다. 이 프로젝트를 기반으로 하거나 혹은 아예 새로운 프로젝트를 실행하려면, 사이트 보안을 위해 [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/)를 살펴보세요.
 
