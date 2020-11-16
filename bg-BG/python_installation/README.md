@@ -10,6 +10,6 @@ Python възниква в края на 80-те години и основна�
 
 > **Забележка** Ако използвате Chromebook, пропуснете тази глава и се уверете, че следвате инструкциите [Настройка на Chromebook](../chromebook_setup/README.md).
 > 
-> **Note** If you already worked through the installation steps, there's no need to do this again – you can skip straight ahead to the next chapter!
+> **Note** If you already worked through the [installation steps](../installation/README.md), there's no need to do this again – you can skip straight ahead to the next chapter!
 
 {% include "/python_installation/instructions.md" %}
