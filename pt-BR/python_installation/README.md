@@ -10,6 +10,6 @@ O Python foi criado na década de 1980 e seu principal objetivo é ser legível 
 
 > **Observação:** Se você está usando um Chromebook, pule este capítulo e certifique-se de seguir as instruções para [ Configuração do Chromebook](../chromebook_setup/README.md).
 > 
-> **Note** If you already worked through the installation steps, there's no need to do this again – you can skip straight ahead to the next chapter!
+> **Note** If you already worked through the [installation steps](../installation/README.md), there's no need to do this again – you can skip straight ahead to the next chapter!
 
 {% include "/python_installation/instructions.md" %}
