@@ -6,9 +6,9 @@
 
 ## 欢迎
 
-欢迎来到Django Girls教程！ 很高兴您能使用本教程 :) 在本教程中，我们将带您踏上神奇的网络开发之旅，并将向您简要地传授网络开发的方方面面，以便像我们了解的那样，进行网络开发工作。
+欢迎来到Django Girls教程！ We are happy to see you here. :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
-与所有未知的事情一样，这将是一次冒险之旅 - 但请不要担心，因为您已经鼓起勇气来到这里，您一定会成功的 :)
+As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine. :)
 
 ## 介绍
 
