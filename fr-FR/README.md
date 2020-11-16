@@ -6,9 +6,9 @@
 
 ## Bienvenue
 
-Bienvenue dans le tutoriel Django Girls ! Nous sommes heureux de vous voir ici :) Dans ce tutoriel, nous allons vous emmener dans un voyage sous le capot des technologies web, en vous offrant un aperçu de tous les pièces et les morceaux qui ont besoin de se réunir pour que le web fonctionne tel que nous le connaissons.
+Bienvenue dans le tutoriel Django Girls ! We are happy to see you here. :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
-Comme avec toutes les choses inconnues, cela va être une aventure, mais pas de soucis, puisque vous avez déjà eu le courage d'arriver ici, vous allez y arriver :)
+As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine. :)
 
 ## Introduction
 
