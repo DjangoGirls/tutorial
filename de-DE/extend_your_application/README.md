@@ -211,4 +211,4 @@ Der `manage.py collectstatic` Befehl ist ein bisschen wie `manage.py migrate`. W
 
 Auf jeden Fall sind wir nun soweit, dass wir [auf die Seite "Web"](https://www.pythonanywhere.com/web_app_setup/) wechseln können (mittels dem Menü-Knopf in der Ecke oben rechts) und **Reload** klicken können. Schau dir dann die Seite https://subdomain.pythonanywhere.com an, um das Ergebnis zu sehen.
 
-Und das sollte es sein! Herzlichen Glückwunsch :)
+And that should be it. Congrats! :)
