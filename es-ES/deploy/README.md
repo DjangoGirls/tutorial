@@ -218,7 +218,7 @@ También puedes ir a la página de ficheros ("Files") y navegar por los ficheros
 
 ## ¡Ya estás en vivo!
 
-¡Tu sitio ya debería estar online en internet! Haz click en la página "Web" de PythonAnywhere para obtener un enlace a él. Puedes compartir este enlace con quien tu quieras :)
+Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want. :)
 
 > **Nota** Este es un tutorial para principiantes, y al desplegar este sitio hemos tomado algunos atajos que tal vez no sean las mejores prácticas desde el punto de vista de la seguridad. Si decide construir sobre este proyecto, o comenzar un nuevo proyecto, debe revisar la [lista de verificación de despliegue de Django](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) para obtener algunos consejos sobre cómo proteger su sitio.
 
