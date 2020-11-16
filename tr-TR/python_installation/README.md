@@ -10,6 +10,6 @@ Python'un kökleri 1980'li yılların sonlarına dayanmaktadır ve ana hedefi sa
 
 > **Not** Eğer Chromebook kullanıyorsanız bu bölümü geçin ve [Chromebook Kurulumu](../chromebook_setup/README.md)'daki talimatları takip edin.
 > 
-> **Note** If you already worked through the installation steps, there's no need to do this again – you can skip straight ahead to the next chapter!
+> **Note** If you already worked through the [installation steps](../installation/README.md), there's no need to do this again – you can skip straight ahead to the next chapter!
 
 {% include "/python_installation/instructions.md" %}
