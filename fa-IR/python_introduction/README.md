@@ -1064,7 +1064,7 @@ for i in range(1, 6):
 
 همین بود. **شما فوق‌العاده هستید!** این بخش دارای ریزه کاری هایی بود و شما باید به خودتان افتخار کنید. ما هم قطعاً به شما افتخار می‌کنیم که تا اینجا پیش آمده اید!
 
-برای دوره‌های آموزشی رسمی و کامل پایتون، سایت https://docs.python.org/3/tutorial/ را ببینید. دیدگاه کامل و دقیقی در مورد این زبان به شما می‌دهد. موفق باشید :)
+For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers! :)
 
 شاید بخواهید قبل از رفتن به مرحله بعد، کارهای دیگری بکنید، کمی کش قوس بیایید، قدم بزنید و به چشم های خود استراحتی بدهید. :)
 
