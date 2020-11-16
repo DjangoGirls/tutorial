@@ -1065,7 +1065,7 @@ Nota que el segundo de estos números no está incluido en la lista que regresa 
 
 Eso es todo. **¡Tú rockeas totalmente!** Esto fue un capítulo difícil, así que deberías sentirte orgullos@ de ti. ¡Estamos definitivamente encantados de que hayas llegado tan lejos!
 
-Para un tutorial oficial y completo de python visita https://docs.python.org/3/tutorial/. Este te dará un estudio completo de éste lenguaje. Gracias :)
+For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers! :)
 
 Tu podrías querer un momento para algo - estirarte, caminar cerca, descansar tus ojos - antes de avanzar a un próximo capítulo. :)
 
