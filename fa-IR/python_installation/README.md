@@ -10,6 +10,6 @@
 
 > **نکته** اگر از Chromebook استفاده می‌کنید، از این بخش رد شوید و دستورالعمل‌های بخش [نصب Chromebook](../chromebook_setup/README.md) را پیگیری کنید.
 > 
-> **Note** If you already worked through the installation steps, there's no need to do this again – you can skip straight ahead to the next chapter!
+> **Note** If you already worked through the [installation steps](../installation/README.md), there's no need to do this again – you can skip straight ahead to the next chapter!
 
 {% include "/python_installation/instructions.md" %}
