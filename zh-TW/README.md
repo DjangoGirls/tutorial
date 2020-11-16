@@ -6,9 +6,9 @@
 
 ## 歡迎
 
-歡迎來到Django Girls的教學指引 很開心能在這裡見到妳/你:)，這份教學指引會帶領你進入一段旅程，進入網頁技術的世界，瞧瞧究竟是哪些必要的元素，才能完成我們所熟知的那些網頁。
+歡迎來到Django Girls的教學指引 We are happy to see you here. :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
-就像面對所有的未知事物一樣，這將會是一場冒險！ 但是不用擔心，因為你已經鼓起勇氣來到了這裡，一切都會沒問題的:)
+As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine. :)
 
 ## 簡介
 
