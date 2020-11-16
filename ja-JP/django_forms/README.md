@@ -446,4 +446,4 @@ Djangoのフォームについてもっと知りたい場合、Djangoのドキ�
 
 * 最後に、[Webページ](https://www.pythonanywhere.com/web_app_setup/) に飛んで（コンソールの右上のメニューボタンを使ってもいいですね）それから **Reload** を押しましょう。 変更を見るためにあなたのブログ https://subdomain.pythonanywhere.com を再読み込みしましょう。
 
-うまくいってるはずです！おめでとう :)
+And that should be it. Congrats! :)
