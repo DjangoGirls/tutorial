@@ -33,7 +33,7 @@ Nézd meg, hogy néz ki most a weboldal: http://127.0.0.1:8000/
 
 ![11.1 ábra](images/step1.png)
 
-Nincs több hiba! Ügyes vagy :) Azonban a weboldalad csak egy üres oldalt jelenít meg, mivel a template is üres, amit készítettél. Ezt ki kell javítanunk.
+No error anymore! Congratulations! :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
 
 Open the new file in the code editor, and add the following:
 
@@ -52,7 +52,7 @@ So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
 
 ![11.2 ábra](images/step3.png)
 
-Működik! Szép munka :)
+It worked. Nice work there! :)
 
 * The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. Láthatod, hogy a weboldal tartalma a kezdő `<html>` tag, és a záró `</html>` tag közé kerül
 * A `<p>` tag a bekezdés (paragrafus) elem; `</p>` zárja a bekezdéseket
