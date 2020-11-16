@@ -6,9 +6,9 @@
 
 ## Mabuhay
 
-Maligayang pagdating sa Django Tutorial para sa mga Kababaihan! Masaya kami na makita ka dito :) Sa tutorial na ito, dadalhin ka namin sa isang paglalakbay sa kasulok-sulokang bahagi ng mga teknolohiya sa web, naghahandog sa iyo na makita mo ang mga piraso na bumubuo para gumagawa ang web basi sa ating nalalaman.
+Maligayang pagdating sa Django Tutorial para sa mga Kababaihan! We are happy to see you here. :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
-Sa lahat nang mga hindi nalalaman na mga bagay-bagay, ito ay magiging isang pakikipagsapalaran - pero wag mag-alala, dahil nagkaroon ka na ng lakas ng loob para makasali, kayang-kaya mo lang eto :)
+As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine. :)
 
 ## Introduksiyon
 
