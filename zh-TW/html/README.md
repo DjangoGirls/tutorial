@@ -33,7 +33,7 @@ HTML 代表 "超文字標記語言 (HyperText Markup Language)"。 **超文字 (
 
 ![圖 11.1](images/step1.png)
 
-再也沒有錯誤了！恭喜 :) 然而，您的網站實際上沒有發佈任何東西除了一空白網頁，因為你的範本 (template) 也是空白，我們需要修復這個問題。
+No error anymore! Congratulations! :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
 
 Open the new file in the code editor, and add the following:
 
@@ -52,7 +52,7 @@ So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
 
 ![圖 11.2](images/step3.png)
 
-它可以運作 了挨！非常好 :)。
+It worked. Nice work there! :)
 
 * The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. 正如你可看到的，整個網站的內容是在開始標籤 `<html>` 和結束標籤 `</html>` 之間。
 * `<p>` 是一種用於段落元素的標籤；`</p>` 結束每個段落。
