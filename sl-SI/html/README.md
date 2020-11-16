@@ -33,7 +33,7 @@ Zdaj si lahko stran ogledaš na naslovu http://127.0.0.1:8000/
 
 ![Figure 11.1](images/step1.png)
 
-Napake ni več! Čestitke :) Vendar pa je naša stran zaenkrat še precej dolgočasna, saj ni na njej nič objavljenega. Zdaj je končno prišel čas, da to spremenimo.
+No error anymore! Congratulations! :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
 
 Open the new file in the code editor, and add the following:
 
@@ -52,7 +52,7 @@ So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
 
 ![Figure 11.2](images/step3.png)
 
-Deluje! Odlično :)
+It worked. Nice work there! :)
 
 * The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. Vsa preostala koda, ki jo bomo pisali, bo torej med tema dvema značkama
 * `<p>` označuje začetek novega odstavka, `</p>` pa konec
