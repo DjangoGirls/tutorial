@@ -218,7 +218,7 @@ Możesz także przejść do zakładki "Pliki" i poruszać się za pomocą wbudow
 
 ## Jesteś na żywo!
 
-Twoja strona powinna teraz być dostępna w publicznym internecie! Przejdź do zakładki "Sieć" PythonAnywhere, aby uzyskać link do niej. Możesz podzielić się tym, z kimkolwiek chcesz! :)
+Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want. :)
 
 > **Uwaga:** Jest to poradnik dla początkujących, a podczas wdrażania tej witryny użyłyśmy kilka skrótów, które nie są idealnym rozwiązaniem z punktu widzenia bezpieczeństwa. Jeśli zdecydujesz się zbudować ten projekt lub rozpocząć nowy projekt, należy przejrzeć [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/), aby uzyskać pewne wskazówki dotyczące zabezpieczania witryny.
 
