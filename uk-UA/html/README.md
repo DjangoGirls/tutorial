@@ -33,7 +33,7 @@ HTML розшифровується як "Мова розмітки гіперт
 
 ![Рисунок 11.1](images/step1.png)
 
-Більше ніяких помилок! Вітання :) Однак, ваш сайт насправді не публікує нічого, окрім пустої сторінки, оскільки ваш шаблон також пустий. Ми маємо це виправити.
+No error anymore! Congratulations! :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
 
 Open the new file in the code editor, and add the following:
 
@@ -52,7 +52,7 @@ So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
 
 ![Рисунок 11.2](images/step3.png)
 
-Спрацювало! Гарна робота :)
+It worked. Nice work there! :)
 
 * The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. Як бачите, увесь контент сайту розміщений між початковим тегом `<html>` і закриваючим тегом `</html>`
 * `<p>` - тег для елементів абзацу; `</p>` закриває кожен абзац
