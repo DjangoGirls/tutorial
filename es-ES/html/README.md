@@ -33,7 +33,7 @@ Mira cómo se ve su sitio web ahora: http://127.0.0.1:8000/
 
 ![Figura 11.1](images/step1.png)
 
-¡Ningún error más! Felicidades :) Sin embargo, por ahora, tu sitio web no está publicando nada excepto una página en blanco, porque la plantilla también está vacía. Tenemos que arreglarlo.
+No error anymore! Congratulations! :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
 
 Abre un fichero nuevo en el editor y escribe lo siguiente:
 
@@ -52,7 +52,7 @@ Ahora, cómo luce tu sitio web? Haz click para ver: http://127.0.0.1:8000/
 
 ![Figura 11.2](images/step3.png)
 
-¡Funcionó! Buen trabajo :)
+It worked. Nice work there! :)
 
 * La etiqueta más básica, `<html>`, siempre va al inicio de cualquier página web y `</html>` va siempre al final. Como puedes ver, todo el contenido de la página web va desde el principio de la etiqueta `<html >` y hasta la etiqueta de cierre `</html >`
 * `<p>` es una etiqueta para los elementos de párrafo; `</p>` cierra cada párrafo
