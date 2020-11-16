@@ -33,7 +33,7 @@ Web sitemizin nasıl göründüğüne bir bakalım: http://127.0.0.1:8000/
 
 ![Şekil 11.1](images/step1.png)
 
-Artık hata kalmadı! Tebrikler :) Ama, web sitemiz aslında boş bir sayfadan başka bir şey yayınlamıyor, çünkü template boş. Bunu düzeltelim.
+No error anymore! Congratulations! :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
 
 Yeni dosyayı kod düzenleyicisinde açıp şunları ekleyelim:
 
@@ -52,7 +52,7 @@ Web siteniz şu anda nasıl görünüyor? Öğrenmek için bir bakalım: http://
 
 ![Şekil 11.2](images/step3.png)
 
-Çalıştı! Tebrikler :)
+It worked. Nice work there! :)
 
 * En temel etiket, `<html>`, daima herhangi bir web sayfasının başlangıcıdır ve `</html>` daima bitişidir. Gördüğünüz gibi, web sitesinin tüm içeriği `<html>` başlangıç etiketi ve `</html>` bitiş etiketinin arasında yer alır
 * `<p>` paragraf öğelerini belirten etikettir; her paragrafın bitişinde de `</p>` olacaktır
