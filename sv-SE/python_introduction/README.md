@@ -1065,7 +1065,7 @@ Observera att det andra av dessa två tal inte ingår i listan av utdata från P
 
 Det var det. **Du rockar fett!** Det här var ett knepigt kapitel, så känn dig stolt över dig själv. Vi är definitivt stolta över dig för att du har kommit så här långt!
 
-För en officiell och fullständig python-handledning besök https://docs.python.org/3/tutorial/. Den kommer att ge dig en mer grundlig och komplett studie av språket. Skål :)
+For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers! :)
 
 Du kanske vill göra något annat en kort stund – stretcha, promenera lite, vila ögonen – innan du går vidare till nästa kapitel. :)
 
