@@ -8,7 +8,7 @@
 
 Добро пожаловать в учебник Django Girls! Рады тебя видеть. :) В этом уроке мы заглянем под капот веб-технологий, чтобы разобраться, из каких кусочков состоит привычный нам веб.
 
-As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine. :)
+Как и со всем новым - страшно делать первый шаг, но не переживай, ты уже здесь, значит все будет хорошо. :)
 
 ## Введение
 
