@@ -169,7 +169,7 @@ It worked. Nice work there! :)
 
 {% filename %}command-line{% endfilename %}
 
-    $ git add .
+    $ git add
     
 
 Прежде чем мы загрузим файлы, давай проверим, что именно `git` будет загружать (все файлы, который `git` готов отправить на сервер отмечаются шрифтом зеленого цвета):
@@ -186,7 +186,7 @@ It worked. Nice work there! :)
     $ git commit -m "Changed the HTML for the site."
     
 
-> **Note** Make sure you use double quotes around the commit message.
+> **Примечание** Убедись, что оборачиваешь комментарий в двойные кавычки. 
 
 После того, как мы сделали это, мы загрузим (сделаем push) изменения на Github:
 
