@@ -446,4 +446,4 @@ form = PostForm(instance=post)
 
 * Наконец, прыжок на [страницу «Веб»](https://www.pythonanywhere.com/web_app_setup/) (используйте кнопку меню в верхнем правом углу консоли) и клик по **Reload**. Обновите ваш https://subdomain.pythonanywhere.com блог, чтобы увидеть изменения.
 
-And that should be it. Congrats! :)
+На этом все. Ты молодец!
