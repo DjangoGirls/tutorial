@@ -446,4 +446,4 @@ Jẹ́ ká wo bóyá gbogbo èyí yíò ṣiṣẹ́ lórí PythonAnywhere. Àk�
 
 * Ní ìparí, lọ sí [ojú-ìwé "Ayélujára"](https://www.pythonanywhere.com/web_app_setup/) náà (lo bọ́tìnnì àkójọ àṣàyàn tó wà ní òkè lápá ọ̀tún console náà) kí o sì tẹ **Reload**. Ṣe ìmúdójúìwọ̀n blog https://subdomain.pythonanywhere.com rẹ láti rí àwọn ìyípadà náà.
 
-A ó parí gbogbo rẹ̀ síbí! Kú oríire :)
+And that should be it. Congrats! :)
