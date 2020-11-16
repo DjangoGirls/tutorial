@@ -446,4 +446,4 @@ Since you're likely logged in, if you refresh the page, you won't see anything d
 
 * Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (use the menu button in the upper right of the console) and hit **Reload**. Refresh your https://subdomain.pythonanywhere.com blog to see the changes.
 
-และนั่นควรเสร็จแล้ว! ยินดีด้วยนะ :)
+And that should be it. Congrats! :)
