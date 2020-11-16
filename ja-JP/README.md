@@ -6,9 +6,9 @@
 
 ## ウェルカム！
 
-Django Girlsのチュートリアルにようこそ！ お会いできて嬉しいです :) このチュートリアルでは、ウェブテクノロジーの中身を見て回る旅へあなたをお連れします。私たちが知っているようにウェブを動かすのに必要なものすべてを垣間見ることができるでしょう。
+Django Girlsのチュートリアルにようこそ！ We are happy to see you here. :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
-知らないことを学ぶことは冒険のようなものです - でも心配はいりません。あなたはすでに勇気を出してここにいらっしゃるのですから、きっとうまくいくでしょう :)
+As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine. :)
 
 ## はじめに
 
