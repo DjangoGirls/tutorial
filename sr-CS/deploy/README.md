@@ -218,7 +218,7 @@ Možete takođe da odete na stranicu "Files" (fajlovi) i da je pretražujete kor
 
 ## Oživeli ste projekat!
 
-Vaš sajt bi trebalo da ide sada uživo i javno na internetu! Prođite kroz PythonAnywhere "Web" stranicu da nađete link koji možete da podelite s kim god želite :)
+Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want. :)
 
 > **Napomena** Ovo je priručnik za početnike i zbog toga smo tokom dopremanja ovog sajta primenili nekoliko prečica koje nisu baš idealne, gledano sa stanovišta sigurnosti. Ako i kada odlučite da nadogradite na ovaj projekat ili započnete novi projekat, trebalo bi da pogledate [ Kontrolni spisak za postavljanje u Djangu ](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) za neke savete o obezbeđivanju web lokacije.
 
