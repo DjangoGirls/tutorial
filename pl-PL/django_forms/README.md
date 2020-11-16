@@ -446,4 +446,4 @@ Dobrze byłoby wiedzieć, że nasza witryna nadal działa na PythonAnywhere, pra
 
 * Nareszcie przeskakujemy do do ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (użyj przycisku menu w prawym górnym rogu konsoli) i naciśnij **Reload**. Odśwież swój blog https://yourname.pythonanywhere.com, aby zobaczyć zmiany.
 
-I to już wszystko! Gratulacje :)
+And that should be it. Congrats! :)
