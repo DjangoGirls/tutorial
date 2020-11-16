@@ -446,4 +446,4 @@ Open `blog/templates/blog/post_detail.html` in the code editor and find this lin
 
 * Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (use the menu button in the upper right of the console) and hit **Reload**. Refresh your https://subdomain.pythonanywhere.com blog to see the changes.
 
-هذا ينبغي ان يكون كل شيء! مبروك:)
+And that should be it. Congrats! :)
