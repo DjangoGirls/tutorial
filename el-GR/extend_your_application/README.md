@@ -211,4 +211,4 @@ Enter the following code:
 
 Σε κάθε περίπτωση, είμαστε τώρα έτοιμοι να κλικάρουμε ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (από το κουμπί του μενού στην επάνω δεξιά μεριά της κονσόλας) και κλικάρουμε στο **Reload**. Δείτε τη σελίδα https://subdomain.pythonanywhere.com με το αποτέλεσμα.
 
-Αυτό ήταν! Συγχαρητήρια :)
+And that should be it. Congrats! :)
