@@ -1064,7 +1064,7 @@ Beachte, dass der zweite der Werte, die du als Argumente übergibst, nicht in de
 
 Das ist alles. **Du rockst total!** Das war ein kniffliges Kapitel, du darfst also ruhig stolz auf dich sein. Wir sind definitiv stolz auf dich und darauf, dass du es so weit geschafft hast!
 
-Besuche https://docs.python.org/3/tutorial/ , wenn du zum offiziellen und vollständigen Python-Tutorial willst. Dort gibt's (bislang jedoch noch nicht auf Deutsch) eine gründlichere und umfassendere Einführung in diese Programmiersprache. :)
+For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers! :)
 
 Bevor du zum nächsten Kapitel übergehst, mach kurz 'was anderes – streck dich, lauf etwas 'rum, ruh' deine Augen aus. :)
 
