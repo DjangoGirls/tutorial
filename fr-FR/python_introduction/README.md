@@ -1065,7 +1065,7 @@ Vous pouvez remarquer que le second de ces nombres n'est pas inclus dans la list
 
 Et voilà ! **Vos assurez un max !** C'était un chapitre difficile, donc vous pouvez être fières de vous. De notre côté, nous sommes fières de vous, pour être parvenu-e si loin dans le cours. Bravo !
 
-Pour accéder au tutoriel officiel et complet de Python, visitez https://docs.python.org/3/tutorial/. Cela vous donnera un accès plus exhaustif à l'étude du langage. A bientôt :)
+For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers! :)
 
 N'hésitez pas à prendre une pause : étirez-vous, marchez un peu ou reposez-vous les yeux. Une fois que vous avez un peu rechargé vos batteries, vous pouvez attaquer le chapitre suivant :)
 
