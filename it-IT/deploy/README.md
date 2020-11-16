@@ -218,7 +218,7 @@ Puoi anche andare alla pagina "File" e navigare in uso del browser di file integ
 
 ## Ora sei online!
 
-Il tuo sito dovrebbe ora essere online pubblicamente su Internet! Clicca sulla pagina PythonAnywhere "Web" per ottenere un link. Puoi condividerlo con chiunque tu voglia :)
+Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want. :)
 
 > **Nota** Questo è un tutorial per principianti, e nel distribuire questo sito abbiamo preso alcune scorciatoie che non sono ideali dal punto di vista della sicurezza. Se e quando decidi di usare questo progetto in produzione, oppure di avviare un nuovo progetto, dovresti controllare la [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) per alcuni consigli di sicurezza del tuo sito.
 
