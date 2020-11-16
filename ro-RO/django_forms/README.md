@@ -446,4 +446,4 @@ Hai să vedem dacă acesta lucrează pe PythonAnywhere. Este timpul să afișăm
 
 * În sfârșit, mergeți la pagina ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (utilizați butonul din meniu în colțul de sus-dreapta) și apăsați **Reload**. Faceți un refresh a paginii https://subdomain.pythonanywhere.com pentru a vizualiza schimbările.
 
-Acesta e! Felicitări :)
+And that should be it. Congrats! :)
