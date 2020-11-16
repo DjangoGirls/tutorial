@@ -33,7 +33,7 @@ HTMLは、「HyperText Markup Language」の頭文字を取ったものです。
 
 ![図 11.1](images/step1.png)
 
-もうエラーはありませんか！おめでとうございます:)。しかし、あなたのウェブサイトは実際には空白のページ以外は何も表示していないでしょう。テンプレートも空白だからです。それを直していく必要があります。
+No error anymore! Congratulations! :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
 
 この新しく作ったファイルをコードエディタで開いて、次の内容を書き加えます。
 
@@ -52,7 +52,7 @@ HTMLは、「HyperText Markup Language」の頭文字を取ったものです。
 
 ![図 11.2](images/step3.png)
 
-うまく動いています！よくできました:)
+It worked. Nice work there! :)
 
 * どんなウェブページでも、最も基本的なタグである`<html>`から始まり、そして常に、`</html>`で終わります。 みなさん見てとれるように、ウェブサイトの全てのコンテンツは、開始タグの`<html>`と閉じタグ`</html>`の間にあります。
 * `<p>`は、段落要素のためのタグです; `</p>` でそれぞれの段落を閉じます。
