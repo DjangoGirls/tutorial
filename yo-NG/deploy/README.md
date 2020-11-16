@@ -218,7 +218,7 @@ O tún lè lọ sí ojú-ìwé "Files" náà kí o sì lọ káàkiri pẹ̀lú 
 
 ## O tí n ṣiṣẹ́ báyìí!
 
-Ó yẹ kí ààyè rẹ ti máa ṣiṣẹ́ lórí Íńtánẹ́ẹ̀tì gbangba náà! Tẹ lọ sí ojú-ìwé "Ayélujára" PythonAnywhere náà láti gba atọ́ka kan sí i. O lè pín èyí pẹ̀lú ẹnikẹ́ni tí o bá fẹ́ :)
+Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want. :)
 
 > **Àkíyèsí** Èyí jẹ́ àlàyé ti ṣẹ̀ṣẹ̀bẹ̀rẹ̀ kan, àti pé nínú ṣíṣe àgbékalẹ̀ ààyè yìí a ti gba àwọn àbùjá díẹ̀ kan èyí tí kò dára nípa ti ààbò. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) for some tips on securing your site.
 
