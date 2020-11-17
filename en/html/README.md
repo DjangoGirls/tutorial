@@ -148,7 +148,7 @@ It gives us this effect:
 
 Yaaay! But so far, our template only ever displays exactly __the same information__ – whereas earlier we were talking about templates as allowing us to display __different__ information in the __same format__.
 
-What we really want to do is display real posts added in our Django admin – and that's where we're going next.
+What we really want to do is display real blog posts added in our Django admin – and that's where we're going next.
 
 ## One more thing:  deploy!
 

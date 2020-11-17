@@ -39,13 +39,13 @@ Then open it up in the code editor and copy everything from `post_list.html` to 
         <div class="content container">
             <div class="row">
                 <div class="col-md-8">
-                {% for post in posts %}
+                {% for blogpost in blogposts %}
                     <div class="post">
                         <div class="date">
-                            {{ post.published_date }}
+                            {{ blogpost.published_date }}
                         </div>
-                        <h2><a href="">{{ post.title }}</a></h2>
-                        <p>{{ post.text|linebreaksbr }}</p>
+                        <h2><a href="">{{ blogpost.title }}</a></h2>
+                        <p>{{ blogpost.text|linebreaksbr }}</p>
                     </div>
                 {% endfor %}
                 </div>
@@ -74,7 +74,7 @@ Then in `base.html`, replace your whole `<body>` (everything between `<body>` an
 </body>
 ```
 
-{% raw %}You might notice this replaced everything from `{% for post in posts %}` to `{% endfor %}` with: {% endraw %}
+{% raw %}You might notice this replaced everything from `{% for blogpost in blogposts %}` to `{% endfor %}` with: {% endraw %}
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 ```html
@@ -84,17 +84,17 @@ Then in `base.html`, replace your whole `<body>` (everything between `<body>` an
 But why?  You just created a `block`!  You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). We will show you how to do this in a moment.
 
 Now save `base.html` and open your `blog/templates/blog/post_list.html` again in the code editor.
-{% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
+{% raw %}You're going to remove everything above `{% for blogpost in blogposts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
-{% for post in posts %}
+{% for blogpost in blogposts %}
     <div class="post">
         <div class="date">
-            {{ post.published_date }}
+            {{ blogpost.published_date }}
         </div>
-        <h2><a href="">{{ post.title }}</a></h2>
-        <p>{{ post.text|linebreaksbr }}</p>
+        <h2><a href="">{{ blogpost.title }}</a></h2>
+        <p>{{ blogpost.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
 ```
@@ -107,13 +107,13 @@ Time to add block tags to this file!
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
 {% block content %}
-    {% for post in posts %}
+    {% for blogpost in blogposts %}
         <div class="post">
             <div class="date">
-                {{ post.published_date }}
+                {{ blogpost.published_date }}
             </div>
-            <h2><a href="">{{ post.title }}</a></h2>
-            <p>{{ post.text|linebreaksbr }}</p>
+            <h2><a href="">{{ blogpost.title }}</a></h2>
+            <p>{{ blogpost.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
 {% endblock %}
@@ -126,13 +126,13 @@ Only one thing left. We need to connect these two templates together.  This is w
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    {% for post in posts %}
+    {% for blogpost in blogposts %}
         <div class="post">
             <div class="date">
-                {{ post.published_date }}
+                {{ blogpost.published_date }}
             </div>
-            <h2><a href="">{{ post.title }}</a></h2>
-            <p>{{ post.text|linebreaksbr }}</p>
+            <h2><a href="">{{ blogpost.title }}</a></h2>
+            <p>{{ blogpost.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
 {% endblock %}

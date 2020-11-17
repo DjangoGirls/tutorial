@@ -36,7 +36,7 @@ We need to import Django forms first (`from django import forms`) and our `Post`
 
 Next, we have `class Meta`, where we tell Django which model should be used to create this form (`model = Post`).
 
-Finally, we can say which field(s) should end up in our form. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
+Finally, we can say which field(s) should end up in our form. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a blog post (i.e. in the code), right?
 
 And that's it! All we need to do now is use the form in a *view* and display it in a template.
 
@@ -98,7 +98,7 @@ And the final code will look like this:
 
 {% filename %}blog/urls.py{% endfilename %}
 ```python
-from django.urls import path 
+from django.urls import path
 from . import views
 
 urlpatterns = [
@@ -162,7 +162,7 @@ Time to refresh! Yay! Your form is displayed!
 
 But, wait a minute! When you type something in the `title` and `text` fields and try to save it, what will happen?
 
-Nothing! We are once again on the same page and our text is gone… and no new post is added. So what went wrong?
+Nothing! We are once again on the same page and our text is gone… and no new blog post is added. So what went wrong?
 
 The answer is: nothing. We need to do a little bit more work in our *view*.
 
@@ -203,13 +203,13 @@ We check if the form is valid and if so, we can save it!
 {% filename %}blog/views.py{% endfilename %}
 ```python
 if form.is_valid():
-    post = form.save(commit=False)
-    post.author = request.user
-    post.published_date = timezone.now()
-    post.save()
+    blogpost = form.save(commit=False)
+    blogpost.author = request.user
+    blogpost.published_date = timezone.now()
+    blogpost.save()
 ```
 
-Basically, we have two things here: we save the form with `form.save` and we add an author (since there was no `author` field in the `PostForm` and this field is required). `commit=False` means that we don't want to save the `Post` model yet – we want to add the author first. Most of the time you will use `form.save()` without `commit=False`, but in this case, we need to supply it. `post.save()` will preserve changes (adding the author) and a new blog post is created!
+Basically, we have two things here: we save the form with `form.save` and we add an author (since there was no `author` field in the `PostForm` and this field is required). `commit=False` means that we don't want to save the `Post` model yet – we want to add the author first. Most of the time you will use `form.save()` without `commit=False`, but in this case, we need to supply it. `blogpost.save()` will preserve changes (adding the author) and a new blog post is created!
 
 Finally, it would be awesome if we could immediately go to the `post_detail` page for our newly created blog post, right? To do that we need one more import:
 
@@ -218,14 +218,14 @@ Finally, it would be awesome if we could immediately go to the `post_detail` pag
 from django.shortcuts import redirect
 ```
 
-Add it at the very beginning of your file. And now we can say, "go to the `post_detail` page for the newly created post":
+Add it at the very beginning of your file. And now we can say, "go to the `post_detail` page for the newly created blog post":
 
 {% filename %}blog/views.py{% endfilename %}
 ```python
-return redirect('post_detail', pk=post.pk)
+return redirect('post_detail', pk=blogpost.pk)
 ```
 
-`post_detail` is the name of the view we want to go to. Remember that this *view* requires a `pk` variable? To pass it to the views, we use `pk=post.pk`, where `post` is the newly created blog post!
+`post_detail` is the name of the view we want to go to. Remember that this *view* requires a `pk` variable? To pass it to the views, we use `pk=blogpost.pk`, where `blogpost` is the newly created blog post!
 
 OK, we've talked a lot, but we probably want to see what the whole *view* looks like now, right?
 
@@ -235,11 +235,11 @@ def post_new(request):
     if request.method == "POST":
         form = PostForm(request.POST)
         if form.is_valid():
-            post = form.save(commit=False)
-            post.author = request.user
-            post.published_date = timezone.now()
-            post.save()
-            return redirect('post_detail', pk=post.pk)
+            blogpost = form.save(commit=False)
+            blogpost.author = request.user
+            blogpost.published_date = timezone.now()
+            blogpost.save()
+            return redirect('post_detail', pk=blogpost.pk)
     else:
         form = PostForm()
     return render(request, 'blog/post_edit.html', {'form': form})
@@ -247,11 +247,11 @@ def post_new(request):
 
 Let's see if it works. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it… and voilà! The new blog post is added and we are redirected to the `post_detail` page!
 
-You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a _publish button_ in __Django Girls Tutorial: Extensions__.
+You might have noticed that we are setting the publish date before saving the blogpost. Later on, we will introduce a _publish button_ in __Django Girls Tutorial: Extensions__.
 
 That is awesome!
 
-> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the __Homework: add security to your website!__ chapter after the main tutorial.
+> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a blog post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the __Homework: add security to your website!__ chapter after the main tutorial.
 
 ![Logged in error](images/post_create_error.png)
 
@@ -269,13 +269,13 @@ Django is taking care to validate that all the fields in our form are correct. I
 
 ## Edit form
 
-Now we know how to add a new post. But what if we want to edit an existing one? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
+Now we know how to add a new blogpost. But what if we want to edit an existing one? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
 
 Open `blog/templates/blog/post_detail.html` in the code editor and add the line
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 ```html
-<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+<a class="btn btn-default" href="{% url 'post_edit' pk=blogpost.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
 so that the template will look like this:
@@ -286,14 +286,14 @@ so that the template will look like this:
 
 {% block content %}
     <div class="post">
-        {% if post.published_date %}
+        {% if blogpost.published_date %}
             <div class="date">
-                {{ post.published_date }}
+                {{ blogpost.published_date }}
             </div>
         {% endif %}
-        <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-        <h2>{{ post.title }}</h2>
-        <p>{{ post.text|linebreaksbr }}</p>
+        <a class="btn btn-default" href="{% url 'post_edit' pk=blogpost.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+        <h2>{{ blogpost.title }}</h2>
+        <p>{{ blogpost.text|linebreaksbr }}</p>
     </div>
 {% endblock %}
 ```
@@ -312,32 +312,32 @@ Let's open `blog/views.py` in the code editor and add this at the very end of th
 {% filename %}blog/views.py{% endfilename %}
 ```python
 def post_edit(request, pk):
-    post = get_object_or_404(Post, pk=pk)
+    blogpost = get_object_or_404(Post, pk=pk)
     if request.method == "POST":
-        form = PostForm(request.POST, instance=post)
+        form = PostForm(request.POST, instance=blogpost)
         if form.is_valid():
-            post = form.save(commit=False)
-            post.author = request.user
-            post.published_date = timezone.now()
-            post.save()
-            return redirect('post_detail', pk=post.pk)
+            blogpost = form.save(commit=False)
+            blogpost.author = request.user
+            blogpost.published_date = timezone.now()
+            blogpost.save()
+            return redirect('post_detail', pk=blogpost.pk)
     else:
-        form = PostForm(instance=post)
+        form = PostForm(instance=blogpost)
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-This looks almost exactly the same as our `post_new` view, right? But not entirely. For one, we pass an extra `pk` parameter from `urls`. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
+This looks almost exactly the same as our `post_new` view, right? But not entirely. For one, we pass an extra `pk` parameter from `urls`. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this blog post as an `instance`, both when we save the form…
 
 {% filename %}blog/views.py{% endfilename %}
 ```python
-form = PostForm(request.POST, instance=post)
+form = PostForm(request.POST, instance=blogpost)
 ```
 
-…and when we've just opened a form with this post to edit:
+…and when we've just opened a form with this blog post to edit:
 
 {% filename %}blog/views.py{% endfilename %}
 ```python
-form = PostForm(instance=post)
+form = PostForm(instance=blogpost)
 ```
 
 OK, let's test if it works! Let's go to the `post_detail` page. There should be an edit button in the top-right corner:
@@ -356,7 +356,7 @@ If you need more information about Django forms, you should read the documentati
 
 ## Security
 
-Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
+Being able to create new blog posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
 
 Open `blog/templates/blog/base.html` in the code editor, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
 
@@ -374,15 +374,15 @@ We're going to add another `{% if %}` tag to this, which will make the link show
 {% endif %}
 ```
 
-This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. This doesn't protect the creation of new posts completely, but it's a good first step. We'll cover more security in the extension lessons.
+This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. This doesn't protect the creation of new blog posts completely, but it's a good first step. We'll cover more security in the extension lessons.
 
-Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
+Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing blog posts.
 
 Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 ```html
-<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+<a class="btn btn-default" href="{% url 'post_edit' pk=blogpost.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
 Change it to this:
@@ -390,7 +390,7 @@ Change it to this:
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 ```html
 {% if user.is_authenticated %}
-     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+     <a class="btn btn-default" href="{% url 'post_edit' pk=blogpost.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 {% endif %}
 ```
 

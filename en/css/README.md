@@ -68,7 +68,7 @@ djangogirls
 
 Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code editor.
 
-We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more. 
+We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
 
 But let's do at least a little. Maybe we could change the color of our headers?
 To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
@@ -128,11 +128,11 @@ Your file should now look like this:
             <h1><a href="/">Django Girls Blog</a></h1>
         </div>
 
-        {% for post in posts %}
+        {% for blogpost in blogposts %}
             <div>
-                <p>published: {{ post.published_date }}</p>
-                <h2><a href="">{{ post.title }}</a></h2>
-                <p>{{ post.text|linebreaksbr }}</p>
+                <p>published: {{ blogpost.published_date }}</p>
+                <h2><a href="">{{ blogpost.title }}</a></h2>
+                <p>{{ blogpost.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
     </body>
@@ -180,7 +180,7 @@ h1 a, h2 a {
 Great!
 
 
-As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post).  A class can help you make them look different.
+As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your blog post).  A class can help you make them look different.
 
 Go ahead and name some parts of the HTML code. Add a class called `page-header` to your `div` that contains your header, like this:
 
@@ -191,14 +191,14 @@ Go ahead and name some parts of the HTML code. Add a class called `page-header` 
 </div>
 ```
 
-And now add a class `post` to your `div` containing a blog post.
+And now add a class `blogpost` to your `div` containing a blog post.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
 <div class="post">
-    <p>published: {{ post.published_date }}</p>
-    <h2><a href="">{{ post.title }}</a></h2>
-    <p>{{ post.text|linebreaksbr }}</p>
+    <p>published: {{ blogpost.published_date }}</p>
+    <h2><a href="">{{ blogpost.title }}</a></h2>
+    <p>{{ blogpost.text|linebreaksbr }}</p>
 </div>
 ```
 
@@ -254,15 +254,15 @@ h1, h2, h3, h4 {
 }
 ```
 
-Then surround the HTML code which displays the posts with declarations of classes. Replace this:
+Then surround the HTML code which displays the blog posts with declarations of classes. Replace this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
-{% for post in posts %}
+{% for blogpost in blogposts %}
     <div class="post">
-        <p>published: {{ post.published_date }}</p>
-        <h2><a href="">{{ post.title }}</a></h2>
-        <p>{{ post.text|linebreaksbr }}</p>
+        <p>published: {{ blogpost.published_date }}</p>
+        <h2><a href="">{{ blogpost.title }}</a></h2>
+        <p>{{ blogpost.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
 ```
@@ -274,13 +274,13 @@ in the `blog/templates/blog/post_list.html` with this:
 <div class="content container">
     <div class="row">
         <div class="col-md-8">
-            {% for post in posts %}
+            {% for blogpost in blogposts %}
                 <div class="post">
                     <div class="date">
-                        <p>published: {{ post.published_date }}</p>
+                        <p>published: {{ blogpost.published_date }}</p>
                     </div>
-                    <h2><a href="">{{ post.title }}</a></h2>
-                    <p>{{ post.text|linebreaksbr }}</p>
+                    <h2><a href="">{{ blogpost.title }}</a></h2>
+                    <p>{{ blogpost.text|linebreaksbr }}</p>
                 </div>
             {% endfor %}
         </div>
@@ -300,4 +300,3 @@ Don't be afraid to tinker with this CSS a little bit and try to change some thin
 We really recommend taking the free online courses "Basic HTML & HTML5" and "Basic CSS" on [freeCodeCamp](https://learn.freecodecamp.org/). They can help you learn all about making your websites prettier with HTML and CSS.
 
 Ready for the next chapter?! :)
-

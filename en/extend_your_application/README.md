@@ -6,11 +6,11 @@ We've already completed all the different steps necessary for the creation of ou
 
 Time to practice!
 
-The first thing we need in our blog is, obviously, a page to display one post, right?
+The first thing we need in our blog is, obviously, a page to display one blog post, right?
 
 We already have a `Post` model, so we don't need to add anything to `models.py`.
 
-## Create a template link to a post's detail
+## Create a template link to a blog post's detail
 
 We will start with adding a link inside `blog/templates/blog/post_list.html` file. Open it in the code editor, and so far it should look like this:
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
@@ -18,40 +18,40 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    {% for post in posts %}
+    {% for blogpost in blogposts %}
         <div class="post">
             <div class="date">
-                {{ post.published_date }}
+                {{ blogpost.published_date }}
             </div>
-            <h2><a href="">{{ post.title }}</a></h2>
-            <p>{{ post.text|linebreaksbr }}</p>
+            <h2><a href="">{{ blogpost.title }}</a></h2>
+            <p>{{ blogpost.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
 {% endblock %}
 ```
 
-{% raw %}We want to have a link from a post's title in the post list to the post's detail page. Let's change `<h2><a href="">{{ post.title }}</a></h2>` so that it links to the post's detail page:{% endraw %}
+{% raw %}We want to have a link from a blog post's title in the post list to the blog post's detail page. Let's change `<h2><a href="">{{ blogpost.title }}</a></h2>` so that it links to the blog post's detail page:{% endraw %}
 
 {% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 ```html
-<h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+<h2><a href="{% url 'post_detail' pk=blogpost.pk %}">{{ blogpost.title }}</a></h2>
 ```
 
-{% raw %}Time to explain the mysterious `{% url 'post_detail' pk=post.pk %}`. As you might suspect, the `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!{% endraw %}
+{% raw %}Time to explain the mysterious `{% url 'post_detail' pk=blogpost.pk %}`. As you might suspect, the `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!{% endraw %}
 
 The `post_detail` part means that Django will be expecting a URL in `blog/urls.py` with name=post_detail
 
-And how about `pk=post.pk`? `pk` is short for primary key, which is a unique identifier for each record in a database. Every Django model has a field which serves as its primary key, and whatever other name it has, it can also be referred to as "pk". Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a field named "id" holding a number that increases for each record, i.e. 1, 2, 3) and adds it as a field to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields  (`title`, `author`, etc.) in our `Post` object!
+And how about `pk=blogpost.pk`? `pk` is short for primary key, which is a unique identifier for each record in a database. Every Django model has a field which serves as its primary key, and whatever other name it has, it can also be referred to as "pk". Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a field named "id" holding a number that increases for each record, i.e. 1, 2, 3) and adds it as a field to each of our blog posts. We access the primary key by writing `blogpost.pk`, the same way we access other fields  (`title`, `author`, etc.) in our `Post` object!
 
 Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
 
 ![NoReverseMatch error](images/no_reverse_match2.png)
 
-## Create a URL to a post's detail
+## Create a URL to a blog post's detail
 
 Let's create a URL in `urls.py` for our `post_detail` *view*!
 
-We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
+We want our first blog post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
 
 Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Open the `blog/urls.py` file in the code editor, and add the line `path('post/<int:pk>/', views.post_detail, name='post_detail'),` so that the file looks like this:
 
@@ -79,7 +79,7 @@ OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: htt
 
 Do you remember what the next step is? It's adding a view!
 
-## Add a post's detail view
+## Add a blog post's detail view
 
 This time our *view* is given an extra parameter, `pk`. Our *view* needs to catch it, right? So we will define our function as `def post_detail(request, pk):`. Note that this parameter must have the exact same name as the one we specified in `urls` (`pk`). Also note that omitting this variable is incorrect and will result in an error!
 
@@ -117,8 +117,8 @@ And at the end of the file we will add our *view*:
 {% filename %}blog/views.py{% endfilename %}
 ```python
 def post_detail(request, pk):
-    post = get_object_or_404(Post, pk=pk)
-    return render(request, 'blog/post_detail.html', {'post': post})
+    blogpost = get_object_or_404(Post, pk=pk)
+    return render(request, 'blog/post_detail.html', {'blogpost': blogpost})
 ```
 
 Yes. It is time to refresh the page: http://127.0.0.1:8000/
@@ -131,7 +131,7 @@ It worked! But what happens when you click a link in blog post title?
 
 Oh no! Another error! But we already know how to deal with it, right? We need to add a template!
 
-## Create a template for the post details
+## Create a template for the blog post details
 
 We will create a file in `blog/templates/blog` called `post_detail.html`, and open it in the code editor.
 
@@ -143,20 +143,20 @@ Enter the following code:
 
 {% block content %}
     <div class="post">
-        {% if post.published_date %}
+        {% if blogpost.published_date %}
             <div class="date">
-                {{ post.published_date }}
+                {{ blogpost.published_date }}
             </div>
         {% endif %}
-        <h2>{{ post.title }}</h2>
-        <p>{{ post.text|linebreaksbr }}</p>
+        <h2>{{ blogpost.title }}</h2>
+        <p>{{ blogpost.text|linebreaksbr }}</p>
     </div>
 {% endblock %}
 ```
 
-Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
+Once again we are extending `base.html`. In the `content` block we want to display a blog post's published_date (if it exists), title and text. But we should discuss some important things, right?
 
-{% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ...` from __Introduction to Python__ chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ...` from __Introduction to Python__ chapter?) In this scenario we want to check if a blog post's `published_date` is not empty.{% endraw %}
 
 OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
 

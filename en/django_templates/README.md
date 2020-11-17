@@ -8,18 +8,18 @@ You see, in HTML, you can't really write Python code, because browsers don't und
 
 __Django template tags__ allow us to transfer Python-like things into HTML, so you can build dynamic websites faster. Cool!
 
-## Display post list template
+## Display blog post list template
 
-In the previous chapter we gave our template a list of posts in the `posts` variable. Now we will display it in HTML.
+In the previous chapter we gave our template a list of blog posts in the `blogposts` variable. Now we will display it in HTML.
 
 To print a variable in Django templates, we use double curly brackets with the variable's name inside, like this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
-{{ posts }}
+{{ blogposts }}
 ```
 
-Try this in your `blog/templates/blog/post_list.html` template. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
+Try this in your `blog/templates/blog/post_list.html` template. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ blogposts }}`. Save the file, and refresh the page to see the results:
 
 ![Figure 13.1](images/step1.png)
 
@@ -34,8 +34,8 @@ This means that Django understands it as a list of objects. Remember from __Intr
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
-{% for post in posts %}
-    {{ post }}
+{% for blogpost in blogposts %}
+    {{ blogpost }}
 {% endfor %}
 ```
 
@@ -43,7 +43,7 @@ Try this in your template.
 
 ![Figure 13.2](images/step2.png)
 
-It works! But we want the posts to be displayed like the static posts we created earlier in the __Introduction to HTML__ chapter. You can mix HTML and template tags. Our `body` will look like this:
+It works! But we want the blog posts to be displayed like the static posts we created earlier in the __Introduction to HTML__ chapter. You can mix HTML and template tags. Our `body` will look like this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
@@ -51,11 +51,11 @@ It works! But we want the posts to be displayed like the static posts we created
     <h1><a href="/">Django Girls Blog</a></h1>
 </div>
 
-{% for post in posts %}
+{% for blogpost in blogposts %}
     <div>
-        <p>published: {{ post.published_date }}</p>
-        <h2><a href="">{{ post.title }}</a></h2>
-        <p>{{ post.text|linebreaksbr }}</p>
+        <p>published: {{ blogpost.published_date }}</p>
+        <h2><a href="">{{ blogpost.title }}</a></h2>
+        <p>{{ blogpost.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
 ```
@@ -64,7 +64,7 @@ It works! But we want the posts to be displayed like the static posts we created
 
 ![Figure 13.3](images/step3.png)
 
-Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }}`)? We are accessing data in each of the fields defined in our `Post` model. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
+Have you noticed that we used a slightly different notation this time (`{{ blogpost.title }}` or `{{ blogpost.text }}`)? We are accessing data in each of the fields defined in our `Post` model. Also, the `|linebreaksbr` is piping the blog posts' text through a filter to convert line-breaks into paragraphs.
 
 
 ## One more thing
@@ -80,7 +80,7 @@ $ git status
 $ git add .
 $ git status
 [...]
-$ git commit -m "Modified templates to display posts from database."
+$ git commit -m "Modified templates to display blog posts from database."
 [...]
 $ git push
 ```
@@ -96,10 +96,10 @@ $ git pull
 
 (Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
 
-* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. (To reach other PythonAnywhere pages from the console, use the menu button in the upper right corner.) Your update should be live on https://subdomain.pythonanywhere.com -- check it out in the browser! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
+* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. (To reach other PythonAnywhere pages from the console, use the menu button in the upper right corner.) Your update should be live on https://subdomain.pythonanywhere.com -- check it out in the browser! If the blog posts on your PythonAnywhere site don't match the blog posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
 
 
-Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://subdomain.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
+Congrats! Now go ahead and try adding a new blog post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://subdomain.pythonanywhere.com/admin. Then refresh your page to see if the blog post appears there.
 
 Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
 
