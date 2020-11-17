@@ -30,8 +30,8 @@ Atom je priljubljen urejevalnik. Je brezplačen, odprtokoden, na voljo pa je za 
 
 Morda se sprašuješ, zakaj namestiti urejevalnik programske kode, namesto tega, da bi uporabili nekaj, kot je Word ali Notepad.
 
-Glavni razlog je to, da mora programska koda biti **golo besedilo** (angleško "plain text"), problem s programi kot sta Word in Textedit pa je, da proizvajajo obogateno besedilo (besedilo, ki vsebuje različne pisave in je oblikovano) s pomočjo posebnih formatov kot je [RTF](https://en.wikipedia.org/wiki/Rich_Text_Format) (Rich Text Format)
+Glavni razlog je to, da mora programska koda biti **navadno besedilo** , problem s programi kot sta Word in Textedit pa je, da proizvajajo obogateno besedilo (besedilo, ki vsebuje različne pisave in je oblikovano) z lastnim oblikovanjem, kot denimo [RTF](https://en.wikipedia.org/wiki/Rich_Text_Format) (Rich Text Format).
 
-The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
+Drugi razlog je v tem, da so urejevalniki kode namenjeni urejanju kode, zato imajo koristne funkcije, kot denimo osvetljevanje kode glede na pomen ali samodejno zapiranje navedkov.
 
-We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
+Kasneje bomo te stvari videli v praksi. Kmalu boši o svojem urejevalniku kode razmišljala, kot o enem izmed naljubših orodji. :)
