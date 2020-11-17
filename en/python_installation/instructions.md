@@ -24,6 +24,8 @@ When the installation completes, you may see a dialog box with a link you can fo
 
 Note: If you are using an older version of Windows (7, Vista, or any older version) and the Python {{ book.py_version }} installer fails with an error, then install all Windows Updates and try to install Python again. If you still have the error, try installing Python version {{ book.py_min_version }} from [Python.org](https://www.python.org/downloads/windows/).
 
+> Django {{ book.django_version }} needs Python {{ book.py_min_version }} or greater, which does not support Windows XP or earlier versions.
+
 <!--endsec-->
 
 <!--sec data-title="Install Python: OS X" data-id="python_OSX"
