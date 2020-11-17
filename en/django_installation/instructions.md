@@ -171,9 +171,14 @@ Now that you have your `virtualenv` started, you can install Django.
 
 Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Mac OS X and Linux:{% endfilename %}
 ```
-(myvenv) ~$ python -m pip install --upgrade pip
+(myvenv) ~/djangogirls$ pip install -U pip
+```
+
+{% filename %}Windows:{% endfilename %}
+```
+(myvenv) C:\Users\Name\djangogirls> python -m pip install -U pip
 ```
 
 ### Installing packages with requirements
