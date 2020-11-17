@@ -4,7 +4,7 @@ The final thing we want to do on our website is create a nice way to add and edi
 
 The nice thing about Django forms is that we can either define one from scratch or create a `ModelForm` which will save the result of the form to the model.
 
-This is exactly what we want to do: we will create a form for our `Post` model.
+This is exactly what we want to do: we will create a form for our `BlogPost` model.
 
 Like every important part of Django, forms have their own file: `forms.py`.
 
@@ -21,20 +21,20 @@ OK, let's open it in the code editor and type the following code:
 ```python
 from django import forms
 
-from .models import Post
+from .models import BlogPost
 
-class PostForm(forms.ModelForm):
+class BlogPostForm(forms.ModelForm):
 
     class Meta:
-        model = Post
+        model = BlogPost
         fields = ('title', 'text',)
 ```
 
-We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
+We need to import Django forms first (`from django import forms`) and our `BlogPost` model (`from .models import BlogPost`).
 
-`PostForm`, as you probably suspect, is the name of our form. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
+`BlogPostForm`, as you probably suspect, is the name of our form. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
 
-Next, we have `class Meta`, where we tell Django which model should be used to create this form (`model = Post`).
+Next, we have `class Meta`, where we tell Django which model should be used to create this form (`model = BlogPost`).
 
 Finally, we can say which field(s) should end up in our form. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a blog post (i.e. in the code), right?
 
@@ -116,7 +116,7 @@ Time to open the `blog/views.py` file in the code editor and add the following l
 
 {% filename %}blog/views.py{% endfilename %}
 ```python
-from .forms import PostForm
+from .forms import BlogPostForm
 ```
 
 And then our *view*:
@@ -124,11 +124,11 @@ And then our *view*:
 {% filename %}blog/views.py{% endfilename %}
 ```python
 def post_new(request):
-    form = PostForm()
+    form = BlogPostForm()
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-To create a new `Post` form, we need to call `PostForm()` and pass it to the template. We will go back to this *view*, but for now, let's quickly create a template for the form.
+To create a new `BlogPost` form, we need to call `BlogPostForm()` and pass it to the template. We will go back to this *view*, but for now, let's quickly create a template for the form.
 
 ## Template
 
@@ -173,7 +173,7 @@ Open `blog/views.py` once again in the code editor. Currently all we have in the
 {% filename %}blog/views.py{% endfilename %}
 ```python
 def post_new(request):
-    form = PostForm()
+    form = BlogPostForm()
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
@@ -186,14 +186,14 @@ So in our *view* we have two separate situations to handle: first, when we acces
 if request.method == "POST":
     [...]
 else:
-    form = PostForm()
+    form = BlogPostForm()
 ```
 
-It's time to fill in the dots `[...]`. If `method` is `POST` then we want to construct the `PostForm` with data from the form, right? We will do that as follows:
+It's time to fill in the dots `[...]`. If `method` is `POST` then we want to construct the `BlogPostForm` with data from the form, right? We will do that as follows:
 
 {% filename %}blog/views.py{% endfilename %}
 ```python
-form = PostForm(request.POST)
+form = BlogPostForm(request.POST)
 ```
 
 The next thing is to check if the form is correct (all required fields are set and no incorrect values have been submitted). We do that with `form.is_valid()`.
@@ -209,7 +209,7 @@ if form.is_valid():
     blogpost.save()
 ```
 
-Basically, we have two things here: we save the form with `form.save` and we add an author (since there was no `author` field in the `PostForm` and this field is required). `commit=False` means that we don't want to save the `Post` model yet – we want to add the author first. Most of the time you will use `form.save()` without `commit=False`, but in this case, we need to supply it. `blogpost.save()` will preserve changes (adding the author) and a new blog post is created!
+Basically, we have two things here: we save the form with `form.save` and we add an author (since there was no `author` field in the `BlogPostForm` and this field is required). `commit=False` means that we don't want to save the `BlogPost` model yet – we want to add the author first. Most of the time you will use `form.save()` without `commit=False`, but in this case, we need to supply it. `blogpost.save()` will preserve changes (adding the author) and a new blog post is created!
 
 Finally, it would be awesome if we could immediately go to the `post_detail` page for our newly created blog post, right? To do that we need one more import:
 
@@ -233,7 +233,7 @@ OK, we've talked a lot, but we probably want to see what the whole *view* looks 
 ```python
 def post_new(request):
     if request.method == "POST":
-        form = PostForm(request.POST)
+        form = BlogPostForm(request.POST)
         if form.is_valid():
             blogpost = form.save(commit=False)
             blogpost.author = request.user
@@ -241,7 +241,7 @@ def post_new(request):
             blogpost.save()
             return redirect('post_detail', pk=blogpost.pk)
     else:
-        form = PostForm()
+        form = BlogPostForm()
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
@@ -258,7 +258,7 @@ That is awesome!
 
 ## Form validation
 
-Now, we will show you how cool Django forms are. A blog post needs to have `title` and `text` fields. In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
+Now, we will show you how cool Django forms are. A blog post needs to have `title` and `text` fields. In our `BlogPost` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
 
 Try to save the form without `title` and `text`. Guess what will happen!
 
@@ -312,9 +312,9 @@ Let's open `blog/views.py` in the code editor and add this at the very end of th
 {% filename %}blog/views.py{% endfilename %}
 ```python
 def post_edit(request, pk):
-    blogpost = get_object_or_404(Post, pk=pk)
+    blogpost = get_object_or_404(BlogPost, pk=pk)
     if request.method == "POST":
-        form = PostForm(request.POST, instance=blogpost)
+        form = BlogPostForm(request.POST, instance=blogpost)
         if form.is_valid():
             blogpost = form.save(commit=False)
             blogpost.author = request.user
@@ -322,22 +322,22 @@ def post_edit(request, pk):
             blogpost.save()
             return redirect('post_detail', pk=blogpost.pk)
     else:
-        form = PostForm(instance=blogpost)
+        form = BlogPostForm(instance=blogpost)
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-This looks almost exactly the same as our `post_new` view, right? But not entirely. For one, we pass an extra `pk` parameter from `urls`. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this blog post as an `instance`, both when we save the form…
+This looks almost exactly the same as our `post_new` view, right? But not entirely. For one, we pass an extra `pk` parameter from `urls`. Next, we get the `BlogPost` model we want to edit with `get_object_or_404(BlogPost, pk=pk)` and then, when we create a form, we pass this blog post as an `instance`, both when we save the form…
 
 {% filename %}blog/views.py{% endfilename %}
 ```python
-form = PostForm(request.POST, instance=blogpost)
+form = BlogPostForm(request.POST, instance=blogpost)
 ```
 
 …and when we've just opened a form with this blog post to edit:
 
 {% filename %}blog/views.py{% endfilename %}
 ```python
-form = PostForm(instance=blogpost)
+form = BlogPostForm(instance=blogpost)
 ```
 
 OK, let's test if it works! Let's go to the `post_detail` page. There should be an edit button in the top-right corner:

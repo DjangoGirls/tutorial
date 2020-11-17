@@ -1,6 +1,6 @@
 # Dynamic data in templates
 
-We have different pieces in place: the `Post` model is defined in `models.py`, we have `post_list` in `views.py` and the template added. But how will we actually make our blog posts appear in our HTML template? Because that is what we want to do – take some content (models saved in the database) and display it nicely in our template, right?
+We have different pieces in place: the `BlogPost` model is defined in `models.py`, we have `post_list` in `views.py` and the template added. But how will we actually make our blog posts appear in our HTML template? Because that is what we want to do – take some content (models saved in the database) and display it nicely in our template, right?
 
 This is exactly what *views* are supposed to do: connect models and templates. In our `post_list` *view* we will need to take the models we want to display and pass them to the template. In a *view* we decide what (model) will be displayed in a template.
 
@@ -16,17 +16,17 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-Remember when we talked about including code written in different files? Now is the moment when we have to include the model we have written in `models.py`. We will add the line `from .models import Post` like this:
+Remember when we talked about including code written in different files? Now is the moment when we have to include the model we have written in `models.py`. We will add the line `from .models import BlogPost` like this:
 
 {% filename %}blog/views.py{% endfilename %}
 ```python
 from django.shortcuts import render
-from .models import Post
+from .models import BlogPost
 ```
 
-The dot before `models` means *current directory* or *current application*. Both `views.py` and `models.py` are in the same directory. This means we can use `.` and the name of the file (without `.py`). Then we import the name of the model (`Post`).
+The dot before `models` means *current directory* or *current application*. Both `views.py` and `models.py` are in the same directory. This means we can use `.` and the name of the file (without `.py`). Then we import the name of the model (`BlogPost`).
 
-But what's next? To take actual blog posts from the `Post` model we need something called `QuerySet`.
+But what's next? To take actual blog posts from the `BlogPost` model we need something called `QuerySet`.
 
 ## QuerySet
 
@@ -36,7 +36,7 @@ So now we want published blog posts sorted by `published_date`, right? We alread
 
 {% filename %}blog/views.py{% endfilename %}
 ```python
-Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+BlogPost.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 ```
 
 So, let's open the `blog/views.py` file in the code editor, and add this piece of code to the function `def post_list(request)` -- but don't forget to first add `from django.utils import timezone`:
@@ -45,10 +45,10 @@ So, let's open the `blog/views.py` file in the code editor, and add this piece o
 ```python
 from django.shortcuts import render
 from django.utils import timezone
-from .models import Post
+from .models import BlogPost
 
 def post_list(request):
-    blogposts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    blogposts = BlogPost.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     return render(request, 'blog/post_list.html', {})
 ```
 
@@ -66,10 +66,10 @@ So finally our `blog/views.py` file should look like this:
 ```python
 from django.shortcuts import render
 from django.utils import timezone
-from .models import Post
+from .models import BlogPost
 
 def post_list(request):
-    blogposts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    blogposts = BlogPost.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     return render(request, 'blog/post_list.html', {'blogposts': blogposts})
 ```
 

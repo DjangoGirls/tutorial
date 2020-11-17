@@ -7,14 +7,14 @@ Let's open the `blog/admin.py` file in the code editor and replace its contents 
 {% filename %}blog/admin.py{% endfilename %}
 ```python
 from django.contrib import admin
-from .models import Post
+from .models import BlogPost
 
-admin.site.register(Post)
+admin.site.register(BlogPost)
 ```
 
-As you can see, we import (include) the Post model defined in the previous chapter. To make our model visible on the admin page, we need to register the model with `admin.site.register(Post)`.
+As you can see, we import (include) the BlogPost model defined in the previous chapter. To make our model visible on the admin page, we need to register the model with `admin.site.register(BlogPost)`.
 
-OK, time to look at our Post model. Remember to run `python manage.py runserver` in the console to run the web server. Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
+OK, time to look at our BlogPost model. Remember to run `python manage.py runserver` in the console to run the web server. Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
 
 ![Login page](images/login_page2.png)
 
@@ -46,7 +46,7 @@ Return to your browser. Log in with the superuser's credentials you chose; you s
 
 ![Django admin](images/django_admin3.png)
 
-Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content –- it's only visible to you on your local computer -- you can copy-paste some text from this tutorial to save time. :)
+Go to BlogPosts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content –- it's only visible to you on your local computer -- you can copy-paste some text from this tutorial to save time. :)
 
 Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
 

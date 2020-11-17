@@ -8,7 +8,7 @@ Time to practice!
 
 The first thing we need in our blog is, obviously, a page to display one blog post, right?
 
-We already have a `Post` model, so we don't need to add anything to `models.py`.
+We already have a `BlogPost` model, so we don't need to add anything to `models.py`.
 
 ## Create a template link to a blog post's detail
 
@@ -41,7 +41,7 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
 
 The `post_detail` part means that Django will be expecting a URL in `blog/urls.py` with name=post_detail
 
-And how about `pk=blogpost.pk`? `pk` is short for primary key, which is a unique identifier for each record in a database. Every Django model has a field which serves as its primary key, and whatever other name it has, it can also be referred to as "pk". Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a field named "id" holding a number that increases for each record, i.e. 1, 2, 3) and adds it as a field to each of our blog posts. We access the primary key by writing `blogpost.pk`, the same way we access other fields  (`title`, `author`, etc.) in our `Post` object!
+And how about `pk=blogpost.pk`? `pk` is short for primary key, which is a unique identifier for each record in a database. Every Django model has a field which serves as its primary key, and whatever other name it has, it can also be referred to as "pk". Because we didn't specify a primary key in our `BlogPost` model, Django creates one for us (by default, a field named "id" holding a number that increases for each record, i.e. 1, 2, 3) and adds it as a field to each of our blog posts. We access the primary key by writing `blogpost.pk`, the same way we access other fields  (`title`, `author`, etc.) in our `BlogPost` object!
 
 Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
 
@@ -88,14 +88,14 @@ Now, we want to get one and only one blog post. To do this, we can use querysets
 
 {% filename %}{{ warning_icon }} blog/views.py{% endfilename %}
 ```python
-Post.objects.get(pk=pk)
+BlogPost.objects.get(pk=pk)
 ```
 
-But this code has a problem. If there is no `Post` with the given `primary key` (`pk`) we will have a super ugly error!
+But this code has a problem. If there is no `BlogPost` with the given `primary key` (`pk`) we will have a super ugly error!
 
 ![DoesNotExist error](images/does_not_exist2.png)
 
-We don't want that! But luckily Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
+We don't want that! But luckily Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `BlogPost` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
 
 ![Page not found](images/404_2.png)
 
@@ -117,13 +117,13 @@ And at the end of the file we will add our *view*:
 {% filename %}blog/views.py{% endfilename %}
 ```python
 def post_detail(request, pk):
-    blogpost = get_object_or_404(Post, pk=pk)
+    blogpost = get_object_or_404(BlogPost, pk=pk)
     return render(request, 'blog/post_detail.html', {'blogpost': blogpost})
 ```
 
 Yes. It is time to refresh the page: http://127.0.0.1:8000/
 
-![Post list view](images/post_list2.png)
+![BlogPost list view](images/post_list2.png)
 
 It worked! But what happens when you click a link in blog post title?
 
@@ -160,7 +160,7 @@ Once again we are extending `base.html`. In the `content` block we want to displ
 
 OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
 
-![Post detail page](images/post_detail2.png)
+![BlogPost detail page](images/post_detail2.png)
 
 Yay! It works!
 

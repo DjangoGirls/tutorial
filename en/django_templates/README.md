@@ -27,7 +27,7 @@ As you can see, all we've got is this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
-<QuerySet [<Post: My second post>, <Post: My first post>]>
+<QuerySet [<BlogPost: My second post>, <BlogPost: My first post>]>
 ```
 
 This means that Django understands it as a list of objects. Remember from __Introduction to Python__ how we can display lists? Yes, with for loops! In a Django template you do them like this:
@@ -64,7 +64,7 @@ It works! But we want the blog posts to be displayed like the static posts we cr
 
 ![Figure 13.3](images/step3.png)
 
-Have you noticed that we used a slightly different notation this time (`{{ blogpost.title }}` or `{{ blogpost.text }}`)? We are accessing data in each of the fields defined in our `Post` model. Also, the `|linebreaksbr` is piping the blog posts' text through a filter to convert line-breaks into paragraphs.
+Have you noticed that we used a slightly different notation this time (`{{ blogpost.title }}` or `{{ blogpost.text }}`)? We are accessing data in each of the fields defined in our `BlogPost` model. Also, the `|linebreaksbr` is piping the blog posts' text through a filter to convert line-breaks into paragraphs.
 
 
 ## One more thing

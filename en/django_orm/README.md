@@ -36,25 +36,25 @@ Let's try to display all of our blog posts first. You can do that with the follo
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> Post.objects.all()
+>>> BlogPost.objects.all()
 Traceback (most recent call last):
       File "<console>", line 1, in <module>
-NameError: name 'Post' is not defined
+NameError: name 'BlogPost' is not defined
 ```
 
-Oops! An error showed up. It tells us that there is no Post. It's correct – we forgot to import it first!
+Oops! An error showed up. It tells us that there is no BlogPost. It's correct – we forgot to import it first!
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> from blog.models import Post
+>>> from blog.models import BlogPost
 ```
 
-We import the model `Post` from `blog.models`. Let's try displaying all blog posts again:
+We import the model `BlogPost` from `blog.models`. Let's try displaying all blog posts again:
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> Post.objects.all()
-<QuerySet [<Post: my post title>, <Post: another post title>]>
+>>> BlogPost.objects.all()
+<QuerySet [<BlogPost: my post title>, <BlogPost: another post title>]>
 ```
 
 This is a list of the blog posts we created earlier! We created these blog posts using the Django admin interface. But now we want to create new blog posts using Python, so how do we do that?
@@ -62,11 +62,11 @@ This is a list of the blog posts we created earlier! We created these blog posts
 
 ### Create object
 
-This is how you create a new Post object in database:
+This is how you create a new BlogPost object in database:
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> Post.objects.create(author=me, title='Sample title', text='Test')
+>>> BlogPost.objects.create(author=me, title='Sample title', text='Test')
 ```
 
 But we have one missing ingredient here: `me`. We need to pass an instance of `User` model as an author. How do we do that?
@@ -99,16 +99,16 @@ Now we can finally create our blog post:
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> Post.objects.create(author=me, title='Sample title', text='Test')
-<Post: Sample title>
+>>> BlogPost.objects.create(author=me, title='Sample title', text='Test')
+<BlogPost: Sample title>
 ```
 
 Hurray! Wanna check if it worked?
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> Post.objects.all()
-<QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
+>>> BlogPost.objects.all()
+<QuerySet [<BlogPost: my post title>, <BlogPost: another post title>, <BlogPost: Sample title>]>
 ```
 
 There it is, one more blog post in the list!
@@ -121,20 +121,20 @@ You can now have a little fun and add more blog posts to see how it works. Add t
 
 ### Filter objects
 
-A big part of QuerySets is the ability to filter them. Let's say we want to find all blog posts that user ola authored. We will use `filter` instead of `all` in `Post.objects.all()`. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Now our piece of code looks like this:
+A big part of QuerySets is the ability to filter them. Let's say we want to find all blog posts that user ola authored. We will use `filter` instead of `all` in `BlogPost.objects.all()`. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Now our piece of code looks like this:
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> Post.objects.filter(author=me)
-<QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
+>>> BlogPost.objects.filter(author=me)
+<QuerySet [<BlogPost: Sample title>, <BlogPost: BlogPost number 2>, <BlogPost: My 3rd post!>, <BlogPost: 4th title of post>]>
 ```
 
 Or maybe we want to see all the blog posts that contain the word 'title' in the `title` field?
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> Post.objects.filter(title__contains='title')
-<QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
+>>> BlogPost.objects.filter(title__contains='title')
+<QuerySet [<BlogPost: Sample title>, <BlogPost: 4th title of post>]>
 ```
 
 > **Note** There are two underscore characters (`_`) between `title` and `contains`. Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
@@ -144,7 +144,7 @@ You can also get a list of all published blog posts. We do this by filtering all
 {% filename %}command-line{% endfilename %}
 ```python
 >>> from django.utils import timezone
->>> Post.objects.filter(published_date__lte=timezone.now())
+>>> BlogPost.objects.filter(published_date__lte=timezone.now())
 <QuerySet []>
 ```
 
@@ -152,7 +152,7 @@ Unfortunately, the blog post we added from the Python console is not published y
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> blogpost = Post.objects.get(title="Sample title")
+>>> blogpost = BlogPost.objects.get(title="Sample title")
 ```
 
 And then publish it with our `publish` method:
@@ -166,8 +166,8 @@ Now try to get list of published blog posts again (press the up arrow key three 
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> Post.objects.filter(published_date__lte=timezone.now())
-<QuerySet [<Post: Sample title>]>
+>>> BlogPost.objects.filter(published_date__lte=timezone.now())
+<QuerySet [<BlogPost: Sample title>]>
 ```
 
 
@@ -177,30 +177,30 @@ QuerySets also allow you to order the list of objects. Let's try to order them b
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> Post.objects.order_by('created_date')
-<QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
+>>> BlogPost.objects.order_by('created_date')
+<QuerySet [<BlogPost: Sample title>, <BlogPost: BlogPost number 2>, <BlogPost: My 3rd post!>, <BlogPost: 4th title of post>]>
 ```
 
 We can also reverse the ordering by adding `-` at the beginning:
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> Post.objects.order_by('-created_date')
-<QuerySet [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]>
+>>> BlogPost.objects.order_by('-created_date')
+<QuerySet [<BlogPost: 4th title of post>,  <BlogPost: My 3rd post!>, <BlogPost: BlogPost number 2>, <BlogPost: Sample title>]>
 ```
 
 
 ### Complex queries through method-chaining
 
-As you saw, some methods on `Post.objects` return a QuerySet.
+As you saw, some methods on `BlogPost.objects` return a QuerySet.
 The same methods can in turn also be called on a QuerySet,
 and will then return a new QuerySet.
 Thus,
 you can combine their effect by **chaining** them together:
 
 ```python
->>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-<QuerySet [<Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>, <Post: Sample title>]>
+>>> BlogPost.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+<QuerySet [<BlogPost: BlogPost number 2>, <BlogPost: My 3rd post!>, <BlogPost: 4th title of post>, <BlogPost: Sample title>]>
 ```
 
 This is really powerful and lets you write quite complex queries.
