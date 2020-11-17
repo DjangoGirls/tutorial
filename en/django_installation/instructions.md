@@ -181,6 +181,8 @@ Before we do that, we should make sure we have the latest version of `pip`, the 
 (myvenv) C:\Users\Name\djangogirls> python -m pip install -U pip
 ```
 
+> Note: Option -U or --upgrade in the above command allows pip to install a newer version of the installed package if available
+
 ### Installing packages with requirements
 
 A requirements file keeps a list of dependencies to be installed using
