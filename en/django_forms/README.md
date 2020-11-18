@@ -73,7 +73,7 @@ Now we can use the file inside the base template as follow.
 </a>
 ```
 
-> Note: You can save the svg file in `blog/static/img/icons/` and use `<img>` tag to display svg icon. But this method requires an extra HTTP request to fetch the file from server. So, it will only increase loading time. But in the proposed method, since `<svg>` tag is HTML, we can simply include it inside HTML file from server itself using `{% include %}` directive. This approach reduce the page loading time.
+> Note: You can save the svg file in `blog/static/img/icons/` and use `<img>` tag to display svg icon. But this method requires an extra HTTP request to fetch the file from server. So, it will only increase loading time. But in the proposed method, since `<svg>` tag is HTML, we can simply include it inside HTML file from server itself using `include` directive. This approach reduce the page loading time.
 
 After editing the line, your HTML file should now look like this:
 
