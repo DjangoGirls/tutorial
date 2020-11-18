@@ -269,15 +269,14 @@ h4 {
 
 .btn-default,
 .btn-default:visited {
-    color: rgb(255, 148, 0);
+    color: #C25100;
     background: none;
-    border-color: rgb(255, 148, 0);
+    border-color: #C25100;
 }
 
 .btn-default:hover {
-    color: rgb(255, 255, 255);
-    background-color: rgb(255, 148, 0);
-    border-color: rgb(204, 179, 144);
+    color: #FFFFFF;
+    background-color: #C25100;
 }
 ```
 
