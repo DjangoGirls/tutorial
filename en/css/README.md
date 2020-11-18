@@ -304,7 +304,7 @@ in the `blog/templates/blog/post_list.html` with this:
             {% for post in posts %}
                 <div class="post">
                     <div class="date">
-                        <p>{{ post.published_date }}</p>
+                        {{ post.published_date }}
                     </div>
                     <h2><a href="">{{ post.title }}</a></h2>
                     <p>{{ post.text|linebreaksbr }}</p>
