@@ -2,9 +2,9 @@
 
 * [Introdução](README.md)
 * [Instalação](installation/README.md) 
-  * [Command Line](installation/README.md#command-line)
+  * [Linha de Comando](installation/README.md#command-line)
   * [Python](installation/README.md#python)
-  * [Code Editor](installation/README.md#code-editor)
+  * [Editor de código](installation/README.md#code-editor)
   * [Virtual Environment](installation/README.md#virtualenv)
   * [Django](installation/README.md#django)
   * [Git](installation/README.md#git)
