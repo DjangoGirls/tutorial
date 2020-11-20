@@ -127,13 +127,13 @@ Here's an example of a full template, copy and paste it into `blog/templates/blo
         </div>
 
         <div>
-            <p>Published: 14.06.2020, 12:14</p>
+            <p>published: 14.06.2014, 12:14</p>
             <h2><a href="">My first post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
         </div>
 
         <div>
-            <p>Published: 14.06.2020, 12:14</p>
+            <p>published: 14.06.2014, 12:14</p>
             <h2><a href="">My second post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
         </div>
