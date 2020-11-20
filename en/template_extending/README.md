@@ -40,7 +40,7 @@ Then open it up in the code editor and copy everything from `post_list.html` to 
 
         <div class="content container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col">
                 {% for post in posts %}
                     <div class="post">
                         <div class="date">
@@ -69,7 +69,7 @@ Then in `base.html`, replace your whole `<body>` (everything between `<body>` an
     </div>
     <div class="content container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col">
             {% block content %}
             {% endblock %}
             </div>

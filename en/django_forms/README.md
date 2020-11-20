@@ -99,7 +99,7 @@ After editing the line, your HTML file should now look like this:
         </div>
         <div class="content container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col">
                     {% block content %}
                     {% endblock %}
                 </div>

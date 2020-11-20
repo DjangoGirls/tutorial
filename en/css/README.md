@@ -299,7 +299,7 @@ in the `blog/templates/blog/post_list.html` with this:
 ```html
 <div class="content container">
     <div class="row">
-        <div class="col-md-8">
+        <div class="col">
             {% for post in posts %}
                 <div class="post">
                     <div class="date">
