@@ -44,14 +44,11 @@ So once again we will create a link to the page, a URL, a view and a template.
 
 ## Link to a page with the form
 
-Before we add the link, we need some icons to use as buttons for the link.
+Before we add the link, we need some icons to use as buttons for the link. For this tutorial, download [file-earmark-plus.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/file-earmark-plus.svg) and save it in the folder `blog/templates/blog/icons/`
 
-> You can download the whole bootstrap icons [here](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip). Unzip the file and copy all the svg image files in to a new folder inside `blog/templates/blog/` called `icons`. So that you can access a icon, e.g. pencil-fill.svg using the file path `blog/templates/blog/icons/pencil-fill.svg`
-
-For this tutorial, download [file-earmark-plus.svg](images/file-earmark-plus.svg) and save it in the folder `blog/templates/blog/icons/`
+> Note: To download the svg image, click on the link and save the file using the keyboard shortcut `Ctrl + S`(Windows/Linux) or `Cmd + S`(MacOS).
 
 It's time to open `blog/templates/blog/base.html` in the code editor. Now we can use this icon file inside the base template as follow. In the `div` named `container` inside `page-header` `div` tag, we will add a link:
-
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 ```html
@@ -61,6 +58,8 @@ It's time to open `blog/templates/blog/base.html` in the code editor. Now we can
 ```
 
 Note that we want to call our new view `post_new`. The [svg icon](https://icons.getbootstrap.com/icons/file-earmark-plus/) is provided by the [Bootstrap Icons](https://icons.getbootstrap.com/) and it will display a page icon with plus sign. We use a django template directive called `include`. This will inject the file's content in to django template since web browser know how to handle this type of content without any further processing.
+
+> You can download the whole bootstrap icons [here](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip). Unzip the file and copy all the svg image files in to a new folder inside `blog/templates/blog/` called `icons`. So that you can access a icon, e.g. pencil-fill.svg using the file path `blog/templates/blog/icons/pencil-fill.svg`
 
 After editing the line, your HTML file should now look like this:
 
@@ -284,7 +283,7 @@ Django is taking care to validate that all the fields in our form are correct. I
 
 Now we know how to add a new post. But what if we want to edit an existing one? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
 
-First, let's save the icon which represent edit button. Download [pencil-fill.svg](images/pencil-fill.svg) and save it in location `blog/templates/blog/icons/`
+First, let's save the icon which represent edit button. Download [pencil-fill.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/pencil-fill.svg) and save it in location `blog/templates/blog/icons/`
 
 Open `blog/templates/blog/post_detail.html` in the code editor and add the line
 
