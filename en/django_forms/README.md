@@ -44,36 +44,23 @@ So once again we will create a link to the page, a URL, a view and a template.
 
 ## Link to a page with the form
 
-It's time to open `blog/templates/blog/base.html` in the code editor. In the `div` named `container` inside `page-header` `div` tag, we will add a link:
+Before we add the link, we need some icons to use as buttons for the link.
+
+> You can download the whole bootstrap icons [here](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip). Unzip the file and copy all the svg image files in to a new folder inside `blog/templates/blog/` called `icons`. So that you can access a icon, e.g. pencil-fill.svg using the file path `blog/templates/blog/icons/pencil-fill.svg`
+
+For this tutorial, download [file-earmark-plus.svg](./images/file-earmark-plus.svg) and save it in the folder `blog/templates/blog/icons/`
+
+It's time to open `blog/templates/blog/base.html` in the code editor. Now we can use this icon file inside the base template as follow. In the `div` named `container` inside `page-header` `div` tag, we will add a link:
+
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 ```html
 <a href="{% url 'post_new' %}" class="top-menu">
-    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-earmark-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M4 0h5.5v1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h1V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"/><path d="M9.5 3V0L14 4.5h-3A1.5 1.5 0 0 1 9.5 3z"/><path fill-rule="evenodd" d="M8 6.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V11a.5.5 0 0 1-1 0V9.5H6a.5.5 0 0 1 0-1h1.5V7a.5.5 0 0 1 .5-.5z"/></svg>
+    {% include './icons/file-earmark-plus.svg' %}
 </a>
 ```
 
-Note that we want to call our new view `post_new`. The [svg icon](https://icons.getbootstrap.com/icons/file-earmark-plus/) is provided by the [Bootstrap Icons](https://icons.getbootstrap.com/) and it will display a page icon with plus sign.
-
-The addition of SVG code for the icon made it look very complicated. So we can try a different approach to achieve the same result.
-
-Let's save the svg code in a separate file. Save the following code in the file `blog/templates/blog/icons/add-post.svg`
-
-{% filename %}blog/templates/blog/icons/add-post.svg{% endfilename %}
-```html
-<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-earmark-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M4 0h5.5v1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h1V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"/><path d="M9.5 3V0L14 4.5h-3A1.5 1.5 0 0 1 9.5 3z"/><path fill-rule="evenodd" d="M8 6.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V11a.5.5 0 0 1-1 0V9.5H6a.5.5 0 0 1 0-1h1.5V7a.5.5 0 0 1 .5-.5z"/></svg>
-```
-
-Now we can use the file inside the base template as follow.
-
-{% filename %}blog/templates/blog/base.html{% endfilename %}
-```html
-<a href="{% url 'post_new' %}" class="top-menu">
-    {% include './icons/add-post.svg' %}
-</a>
-```
-
-> Note: You can save the svg file in `blog/static/img/icons/` and use `<img>` tag to display svg icon. But this method requires an extra HTTP request to fetch the file from server. So, it will only increase loading time. But in the proposed method, since `<svg>` tag is HTML, we can simply include it inside HTML file from server itself using `include` directive. This approach reduce the page loading time.
+Note that we want to call our new view `post_new`. The [svg icon](https://icons.getbootstrap.com/icons/file-earmark-plus/) is provided by the [Bootstrap Icons](https://icons.getbootstrap.com/) and it will display a page icon with plus sign. We use a django template directive called `include`. This will inject the file's content in to django template since web browser know how to handle this type of content without any further processing.
 
 After editing the line, your HTML file should now look like this:
 
@@ -92,7 +79,7 @@ After editing the line, your HTML file should now look like this:
         <div class="page-header">
             <div class="container">
                 <a href="{% url 'post_new' %}" class="top-menu">
-                    {% include './icons/add-post.svg' %}
+                    {% include './icons/file-earmark-plus.svg' %}
                 </a>
                 <h1><a href="/">Django Girls Blog</a></h1>
             </div>
@@ -297,11 +284,11 @@ Django is taking care to validate that all the fields in our form are correct. I
 
 Now we know how to add a new post. But what if we want to edit an existing one? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
 
-First, let's save the icon which represent edit button. Save the following code in the file `blog/templates/blog/icons/edit-post.svg`
+First, let's save the icon which represent edit button. Download [pencil-fill.svg](./images/pencil-fill.svg) and save it in location `blog/templates/blog/icons/`
 
-{% filename %}blog/templates/blog/icons/edit-post.svg{% endfilename %}
+{% filename %}blog/templates/blog/icons/pencil-fill.svg{% endfilename %}
 ```html
-<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/></svg>
+<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil-fill-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/></svg>
 ```
 
 Open `blog/templates/blog/post_detail.html` in the code editor and add the line
@@ -310,7 +297,7 @@ Open `blog/templates/blog/post_detail.html` in the code editor and add the line
 ```html
 <div class="actions">
     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
-      {% include './icons/edit-post.svg' %}
+      {% include './icons/pencil-fill.svg' %}
     </a>
 </div>
 ```
@@ -325,7 +312,7 @@ so that the template will look like this:
     <div class="post">
         <div class="actions">
             <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
-                {% include './icons/edit-post.svg' %}
+                {% include './icons/pencil-fill.svg' %}
             </a>
         </div>
         {% if post.published_date %}
@@ -404,7 +391,7 @@ Open `blog/templates/blog/base.html` in the code editor, find our `container` `d
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 ```html
 <a href="{% url 'post_new' %}" class="top-menu">
-    {% include './icons/add-post.svg' %}
+    {% include './icons/file-earmark-plus.svg' %}
 </a>
 ```
 
@@ -414,7 +401,7 @@ We're going to add another `{% if %}` tag to this, which will make the link show
 ```html
 {% if user.is_authenticated %}
     <a href="{% url 'post_new' %}" class="top-menu">
-        {% include './icons/add-post.svg' %}
+        {% include './icons/file-earmark-plus.svg' %}
     </a>
 {% endif %}
 ```
@@ -428,7 +415,7 @@ Open `blog/templates/blog/post_detail.html` in the code editor and find this lin
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 ```html
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
-    {% include './icons/edit-post.svg' %}
+    {% include './icons/pencil-fill.svg' %}
 </a>
 ```
 
@@ -438,7 +425,7 @@ Change it to this:
 ```html
 {% if user.is_authenticated %}
      <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
-        {% include './icons/edit-post.svg' %}
+        {% include './icons/pencil-fill.svg' %}
      </a>
 {% endif %}
 ```
