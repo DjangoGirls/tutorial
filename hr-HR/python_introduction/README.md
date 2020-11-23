@@ -19,7 +19,7 @@ Kada si spremna, prati sljedeće upute.
 {% filename %}command-line{% endfilename %}
 
     $ python3
-    Python 3.6.1 (...)
+    Python {{ book.py_release }} (...)
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
     
