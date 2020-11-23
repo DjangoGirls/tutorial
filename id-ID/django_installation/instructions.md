@@ -83,7 +83,7 @@ data-collapse=true ces-->
 > > {% filename%} baris perintah {% endfilename%}
 > > 
 > >     $ sudo apt install python-virtualenv
-> >     $ virtualenv --python=python3.6 myvenv
+> >     $ virtualenv --python=python{{ book.py_version }} myvenv
 > >     
 > > 
 > > ** CATATAN: </ 0> Jika Anda mengalami error seperti</p> 
@@ -97,7 +97,7 @@ data-collapse=true ces-->
 > > 
 > > {% filename%} baris perintah {% endfilename%}
 > > 
-> >     sudo apt install python3.6-venv
+> >     sudo apt install python{{ book.py_version }}-venv
 > >     </blockquote> 
 > > 
 > > <!--endsec-->
