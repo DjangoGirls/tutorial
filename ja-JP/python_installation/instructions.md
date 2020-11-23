@@ -2,7 +2,7 @@
 > 
 > このセクションはGeek Girls Carrots (https://github.com/ggcarrots/django-carrots) のチュートリアルをベースに作成しました。
 
-DjangoはPythonで書かれています。 Djangoを使うにはPythonが必要です。 では、インストールするところから始めましょう！ 最新のPython３をインストールしてください。それ以前のPythonがインストールされていたら、アップグレードする必要があります。 3.4以降のバージョンであれば問題ありません。
+DjangoはPythonで書かれています。 Djangoを使うにはPythonが必要です。 では、インストールするところから始めましょう！ 最新のPython３をインストールしてください。それ以前のPythonがインストールされていたら、アップグレードする必要があります。 If you already have version {{ book.py_min_version }} or higher you should be fine.
 
 下に書いたとおりのやり方で、Pythonをインストールしてください。すでにAnacondaが入っていても以下のとおりにインストールしてください。
 
@@ -17,60 +17,55 @@ DjangoはPythonで書かれています。 Djangoを使うにはPythonが必要�
 
 https://www.python.org/downloads/windows/ からWindows版のPythonをダウンロードできます。 "Latest Python 3 Release - Python x.x.x" というリンクをクリックします。 あなたのWindowsが**64-bit版**なら、**Windows x86-64 executable installer**をダウンロードしてください。 そうでなければ**Windows x86 executable installer**をダウンロードしてください。 インストーラーがダウンロードできたら、ダブルクリックして実行し、指示に従ってください。
 
-インストールの途中で、「Setup」というタイトルのウィンドウがでてきたら注意してください。 下にあるとおり、「Add Python 3.6 to PATH」か「Add Python to your environment variables」をチェックしてから「Install Now」をクリックしてください (バージョンが違うと表示が違うこともあります)。
+インストールの途中で、「Setup」というタイトルのウィンドウがでてきたら注意してください。 Make sure you tick the "Add Python {{ book.py_version }} to PATH" or 'Add Python to your environment variables" checkbox and click on "Install Now", as shown here (it may look a bit different if you are installing a different version):
 
 ![Pythonのパスを通すのを忘れないようにしてください。](../python_installation/images/python-installation-options.png)
 
 インストールが終わったら、ダイアログボックスが出てきます。ボックス内のリンクを開くと、Pythonやインストールしたバージョンを説明したページに行けます。 ダイアログは閉じてしまいましょう。Pythonの使い方はこのチュートリアルでたっぷり勉強します！
 
-注意: あなたのWindowsがWindows7、Windows Vistaや、それ以前のバージョンの場合で、Python 3.6.x のインストールがエラーがでて失敗する場合は、下のどちらかのやり方を試してください。
+Note: If you are using an older version of Windows (7, Vista, or any older version) and the Python {{ book.py_version }} installer fails with an error, then install all Windows Updates and try to install Python again. If you still have the error, try installing Python version {{ book.py_min_release }} from [Python.org](https://www.python.org/downloads/windows/).
 
-1. Windows Updateを実行してすべての更新ファイルを入れてから、Pythonを入れ直す
-2. [古いバージョンのPython](https://www.python.org/downloads/windows/)をインストールしてみる。例えば[3.4.6](https://www.python.org/downloads/release/python-346/)。
-
-古いバージョンのPythonをインストールした場合、インストール画面は上のものと違うことがあります。 下にスクロールして「Add python.exe to Path」の左のボタンをクリックして「Will be installed on local hard drive（ローカルハードドライブにインストールされます）」を選択してください
-
-![古いバージョンでも、Pythonのパスを通してください。](../python_installation/images/add_python_to_windows_path.png)
+> Django {{ book.django_version }} needs Python {{ book.py_min_version }} or greater, which does not support Windows XP or earlier versions.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **注意**：OS XにPythonをインストールする前に、Macの設定でApp Store以外のパッケージをインストールできるようにする必要があります。 「システム環境設定」（「アプリケーション」フォルダ内）に移動し、「セキュリティとプライバシー」、「一般」タブの順にクリックします。 「ダウンロードしたアプリを許可する」が「Mac App Store」に設定されている場合は、「Mac App Storeと識別された開発者」に変更します。
+> **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
 
-https://www.python.org/downloads/release/python-361/ からPythonインストーラーをダウンロードします。
+You need to go to the website https://www.python.org/downloads/mac-osx/ and download the latest Python installer:
 
 * *Mac OS X 64-bit/32-bit installer* というファイルをダウンロードします。 
-* ダウンロードできたら *python-3.6.1-macosx10.6.pkg* をダブルクリックして実行します。
+* Double click *python-{{ book.py_release }}-macosx10.9.pkg* to run the installer.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-すでにPythonがインストールされているかもしれません。インストールされているか、そしてどのバージョンが入っているか確かめるには、コンソールを開いて下のコマンドを入力してください。
+It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 --version
-    Python 3.6.5
+    Python {{ book.py_release }}
     
 
-表示されたバージョンが違っても、3.4.0以降(例えば 3.6.0など)であれば、アップグレードの必要はありません。 Pythonがインストールされていなかったり、違うバージョンをインストールしたい場合は、下のコマンドを実行して、まずパソコンのLinuxディストリビューションがなにか確かめてください。
+If you have a different version of Python installed, at least {{ book.py_min_version }} (e.g. {{ book.py_min_release }}), then you don't have to upgrade. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
 
 {% filename %}command-line{% endfilename %}
 
     $ grep '^NAME=' /etc/os-release
     
 
-表示されたディストリビューション名に従って、以下のインストール方法の1つを実行してください。
+Afterwards, depending on the result, follow one of the following installation guides below this section.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-下のコマンドをコンソールに入力します。
+Type this command into your console:
 
 {% filename %}command-line{% endfilename %}
 
@@ -82,21 +77,21 @@ data-collapse=true ces-->
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-下のコマンドをコンソールに入力します。
+Use this command in your console:
 
 {% filename %}command-line{% endfilename %}
 
     $ sudo dnf install python3
     
 
-Fedoraのバージョンが古い場合、 `dnf` コマンドが見つからないというエラーが出るかもしれません。そんなときは代わりに `yum` コマンドを使ってください。
+If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use `yum` instead.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-下のコマンドをコンソールに入力します。
+Use this command in your console:
 
 {% filename %}command-line{% endfilename %}
 
@@ -105,18 +100,18 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-インストールがうまくいったか確認するために、コマンドプロンプトを開いて `python3` と打ち込んでください。
+Verify the installation was successful by opening a command prompt and running the `python3` command:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 --version
-    Python 3.6.1
+    Python {{ book.py_release }}
     
 
-バージョンはあなたがインストールしたものが表示されます。なのでPython 3.6.1 と表示されないかもしれません。
+The version shown may be different from {{ book.py_release }} -- it should match the version you installed.
 
-**注意:** Windowsで `python3` を実行して、コマンドが見つからないとエラーが出た場合、代わりに `python` (`3` をコマンドに入れていません) を使ってみてください。そして、3.4.0以降のPythonのバージョンが表示されるか確認してください。 どちらのコマンドもうまく動かない場合は、新しいコマンドプロンプトを開いて同じことを試してください。Pythonのインストール前にコマンドプロンプトを使っていて、それが開きっぱなしだとこういうことが起きます。
+**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is {{ book.py_min_version }} or higher. If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
 
 * * *
 
-わからないことがあったり、うまくいかなくて次にどうしたらいいかわからなかったりするときは、コーチに質問してください! うまくいかないこともあります。そういうときは、経験豊富な人に聞くといいですよ。
+If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
