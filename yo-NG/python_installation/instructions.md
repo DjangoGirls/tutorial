@@ -2,7 +2,7 @@
 > 
 > Abala yìí dá lórí àlàyé kan ti Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django gba kíkọ ní Python. A nílò Python láti ṣe ohunkóhun nínú Django. Ẹ jẹ́ ká bẹ̀rẹ̀ nípasẹ̀ ṣíṣe àgbékalẹ̀ rẹ̀! A fẹ́ kí o ṣàgbékalẹ̀ ẹyà tó jáde gbẹ̀yìn ti Python 3, nítorí náà tí o bá ní èyíkéyìí ẹyà tàtijọ́, ìwọ yíò nílò láti ṣe ìmúdójúìwọ̀n rẹ̀. Tí o bá ti ní ẹyà 3.4 tàbí jù bẹ́ẹ̀ lọ tẹ́lẹ̀, ó yẹ kó ṣiṣẹ́ dáadáa.
+Django gba kíkọ ní Python. A nílò Python láti ṣe ohunkóhun nínú Django. Ẹ jẹ́ ká bẹ̀rẹ̀ nípasẹ̀ ṣíṣe àgbékalẹ̀ rẹ̀! A fẹ́ kí o ṣàgbékalẹ̀ ẹyà tó jáde gbẹ̀yìn ti Python 3, nítorí náà tí o bá ní èyíkéyìí ẹyà tàtijọ́, ìwọ yíò nílò láti ṣe ìmúdójúìwọ̀n rẹ̀. If you already have version {{ book.py_min_version }} or higher you should be fine.
 
 Jọ̀wọ́ ṣàgbékalẹ̀ ojúlówó Python báyìí, kódà nígbà tí o bá ti ṣàgbékalẹ̀ Anaconda tẹ́lẹ̀ sórí kọ̀mpútà rẹ.
 
@@ -17,47 +17,42 @@ Kọ́kọ́ ṣàyẹ̀wò bóyá kọ̀mpútà rẹ n ṣiṣẹ́ pẹ̀lú �
 
 O lè gba Python fún Windows láti ààyè ayélujára náà https://www.python.org/downloads/windows/. Tẹ orí atọ́ka "Latest Python 3 Release - Python x.x.x" náà. Tí kọ̀mpútà rẹ bá n ṣiṣẹ́ pẹ̀lú ẹyà **64-bit** ti Windows kan, gba **Windows x86-64 executable installer** náà. Bí bẹ́ẹ̀ kọ́, gba **Windows x86 executable installer** náà. Lẹ́yìn tí o bá gba aṣàgbékalẹ̀ náà, ó yẹ kí o mú u ṣiṣẹ́ (ṣíra tẹ̀ẹ́ lẹ́ẹ̀mejì) àti tẹ̀lé àwọn ìtọ́sọ́nà tó wà níbẹ̀.
 
-Nnkan kan láti ṣọ́ra fún: Lásìkò ìṣàgbékalẹ̀ náà, ìwọ yíò ṣàkíyèsí fèrèsé kan pẹ̀lú àmì "Setup". Ri dájú pé o ṣàmì sí àpótí adarí yíyàn "Add Python 3.6 to PATH" tàbí "Add Python to your environment variables" kí o sì tẹ "Install Now", gẹ́gẹ́ bí a ṣe fihàn níbí (ó lè yàtọ̀ díẹ̀ tí o bá n ṣàgbékalẹ̀ ẹyà tó yàtọ̀ kan):
+Nnkan kan láti ṣọ́ra fún: Lásìkò ìṣàgbékalẹ̀ náà, ìwọ yíò ṣàkíyèsí fèrèsé kan pẹ̀lú àmì "Setup". Make sure you tick the "Add Python {{ book.py_version }} to PATH" or 'Add Python to your environment variables" checkbox and click on "Install Now", as shown here (it may look a bit different if you are installing a different version):
 
 ![Má gbàgbé láti ṣàfikún Python sí Atọ́nà náà](../python_installation/images/python-installation-options.png)
 
 Nígbà tí ìṣàgbékalẹ̀ náà bá parí, o lè rí àpótí ìsọ̀rọ̀gbèsì kan pẹ̀lú atọ́ka kan tí o lè tẹ̀lé láti kẹ́kọ̀ọ́ síi nípa Python tàbí nípa ẹyà tí o ṣàgbékalẹ̀ náà. Pa àpótí ìsọ̀rọ̀gbèsì yẹn dé tàbí fagi lé -- ìwọ yíò ma kẹ́kọ̀ọ́ síi nínú àlàyé yìí!
 
-Àkíyèsí: tí o bá n lo ẹyà Windows tàtijọ́ kan (7, Vista, tàbí èyíkéyìí ẹyà tàtijọ́) àti tí aṣàgbékalẹ̀ Python 3.6.x náà bá kùnà pẹ̀lú àṣìṣe kan, o lè gbìyànjú yálà:
+Note: If you are using an older version of Windows (7, Vista, or any older version) and the Python {{ book.py_version }} installer fails with an error, then install all Windows Updates and try to install Python again. If you still have the error, try installing Python version {{ book.py_min_release }} from [Python.org](https://www.python.org/downloads/windows/).
 
-1. ṣàgbékalẹ̀ gbogbo àwọn Ìmúdójúìwọ̀n Windows kí o gbìyànjú láti tún ṣàgbékalẹ̀ Python lẹ́ẹ̀kan si; tàbí
-2. ṣàgbékalẹ̀ [ẹyà tàtijọ́ ti Python](https://www.python.org/downloads/windows/) kan, fún àpẹẹrẹ, [3.4.6](https://www.python.org/downloads/release/python-346/).
-
-Tí o bá ṣàgbékalẹ̀ ẹyà tàtijọ́ ti Python kan, ojú àwòrán ìṣàgbékalẹ̀ náà le yàtọ̀ díẹ̀ sí èyí tí a ṣàfihàn lókè. Ri dájú pé o sún wálẹ̀ láti rí "Add python.exe to Path", nígbà náà tẹ bọ́tìnnì tó wà lápá òsì kí o sì mú "Will be installed on local hard drive":
-
-![Ṣàfikún Python sí Atọ́nà náà, àwọn ẹyà tàtijọ́](../python_installation/images/add_python_to_windows_path.png)
+> Django {{ book.django_version }} needs Python {{ book.py_min_version }} or greater, which does not support Windows XP or earlier versions.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Àkíyèsí** Ṣáájú kí o tó ṣàgbékalẹ̀ Python sórí OS X, ó yẹ ki o ri dájú pé ìṣèto Mac rẹ fi ààyè gba ṣíṣe àgbékalẹ̀ àwọn ètò tí kò wá láti App Store náà. Lọ sí System Preferences (ó wà nínú fódà Applications náà), tẹ "Security & Privacy," lẹ́yìn náà táàbù "General" náà. Tí "Allow apps downloaded from:" rẹ bá wà ní "Mac App Store," ṣàyípadà rẹ̀ sí "Mac App Store and identified developers."
+> **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
 
-O ní láti lọ sórí ààyè ayélujára https://www.python.org/downloads/release/python-361/ àti gba aṣàgbékalẹ̀ Python náà:
+You need to go to the website https://www.python.org/downloads/mac-osx/ and download the latest Python installer:
 
 * Gba fáìlì *Mac OS X 64-bit/32-bit installer* náà,
-* Tẹ *python-3.6.1-macosx10.6.pkg* lẹ́ẹ̀mejì láti mú aṣàgbékalẹ̀ náà ṣiṣẹ́.
+* Double click *python-{{ book.py_release }}-macosx10.9.pkg* to run the installer.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-Ó ṣeéṣe kí o ti ṣàgbékalẹ̀ Python tẹ́lẹ̀ láti ìpìlẹ̀. Láti ṣàyẹ̀wò bóyá o ti ṣàgbékalẹ̀ rẹ̀ tẹ́lẹ̀ (àti ẹyà tó jẹ́), ṣí console kan kí o tẹ àṣẹ tó tẹ̀lé yìí:
+It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 --version
-    Python 3.6.1
+    Python {{ book.py_release }}
     
 
-Tí o bá ti sàgbékalẹ̀ ẹyà Python tó yàtọ̀ kan tẹ́lẹ̀, ó kéré tán 3.4.0 (fún àpẹẹrẹ 3.6.0), á jẹ́ pé ìwọ kò nílò láti ṣe ìmúdójúìwọ̀n. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
+If you have a different version of Python installed, at least {{ book.py_min_version }} (e.g. {{ book.py_min_release }}), then you don't have to upgrade. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
 
 {% filename %}command-line{% endfilename %}
 
@@ -110,12 +105,12 @@ Verify the installation was successful by opening a command prompt and running t
 {% filename %}command-line{% endfilename %}
 
     $ python3 --version
-    Python 3.6.1
+    Python {{ book.py_release }}
     
 
-The version shown may be different from 3.6.1 -- it should match the version you installed.
+The version shown may be different from {{ book.py_release }} -- it should match the version you installed.
 
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is 3.4.0 or higher. If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
+**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is {{ book.py_min_version }} or higher. If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
 
 * * *
 
