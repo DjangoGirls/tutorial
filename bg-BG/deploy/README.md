@@ -171,7 +171,7 @@ Git ще проследи промените във всички файлове 
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pip3.6 install --user pythonanywhere
+    $ pip{{ book.pa_py_version }} install --user pythonanywhere
     
 
 Това трябва да отпечата някои неща като `Collecting pythonanywhere` и в крайна сметка да завърши с ред, който казва `Successfully installed (...) pythonanywhere- (...)`.
@@ -180,7 +180,7 @@ Git ще проследи промените във всички файлове 
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pa_autoconfigure_django.py --python=3.6 https://github.com/<your-github-username>/my-first-blog.git
+    $ pa_autoconfigure_django.py --python={{ book.pa_py_version }} https://github.com/<your-github-username>/my-first-blog.git
     
 
 Докато гледаш това да работи, ще можеш да видиш какво прави:
