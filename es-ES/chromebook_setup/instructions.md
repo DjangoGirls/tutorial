@@ -2,7 +2,7 @@ Puedes [saltarte esta sección](http://tutorial.djangogirls.org/en/installation/
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud IDE es una herramienta que te brinda un editor de código y acceso a una computadora ejecutándose en internet donde puedes instalar, escribir y correr el software. Durante este tutorial, el IDE en la nube te servirá como tu *máquina local*. Seguirás corriendo comandos en una interfaz de terminal justo como tus compañeros de clase en OS X, Ubuntu, o Windows, pero tu terminal será conenctada a una computadora corriendo en algún otro lugar que cloud IDE establecerá por tí. Aquí están las instrucciones para cloud IDEs (PaizaCloud Cloud IDE, AWS CLoud9). Puedes elegir uno de los IDEs en la nube, y seguir sus instrucciones.
+Cloud IDE es una herramienta que te da un editor de código y acceso a un ordenador conectado a internet en el que puedes instalar, escribir y ejecutar software. Durante este tutorial, el IDE en la nube te servirá como tu *máquina local*. Seguirás corriendo comandos en una interfaz de terminal justo como tus compañeros de clase en OS X, Ubuntu, o Windows, pero tu terminal será conenctada a una computadora corriendo en algún otro lugar que cloud IDE establecerá por tí. Aquí están las instrucciones para cloud IDEs (PaizaCloud Cloud IDE, AWS CLoud9). Puedes elegir uno de los IDEs en la nube, y seguir sus instrucciones.
 
 #### PaizaCloud Cloud IDE
 
@@ -53,7 +53,7 @@ Ejecutar:
 
     mkdir djangogirls
     cd djangogirls
-    python3.6 -mvenv myvenv
+    python3 -m venv myvenv
     source myvenv/bin/activate
     pip install django~={{ book.django_version }}
     
