@@ -79,7 +79,7 @@ myvenv je ime tvojega virtualnega okolja. Ubistvu si lahko zmisliš katerokoli i
 > {% filename %}command-line{% endfilename %}
 > 
 >     $ sudo apt install python-virtualenv
->     $ virtualenv --python=python3.6 myvenv
+>     $ virtualenv --python=python{{ book.py_version }} myvenv
 >     
 > 
 > **NOTE:** If you get an error like
@@ -93,7 +93,7 @@ myvenv je ime tvojega virtualnega okolja. Ubistvu si lahko zmisliš katerokoli i
 > 
 > {% filename %}command-line{% endfilename %}
 > 
->     sudo apt install python3.6-venv
+>     sudo apt install python{{ book.py_version }}-venv
 >     
 
 <!--endsec-->
