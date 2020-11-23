@@ -171,7 +171,7 @@ Wdrożenie aplikacji internetowej w PythonAnywhere polega na ściągnięciu kodu
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pip3.6 install --user pythonanywhere
+    $ pip{{ book.pa_py_version }} install --user pythonanywhere
     
 
 To powinno wydrukować rzeczy takie jak `Collecting pythonanywhere`, a skończyć się na linii z napisem `Successfully installed (...) pythonanywhere- (...)`.
@@ -180,7 +180,7 @@ Teraz uruchamiamy pomocnika, aby automatycznie skonfigurować naszą aplikację 
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
+    $ pa_autoconfigure_django.py --python={{ book.pa_py_version }} https://github.com/<your-github-username>/my-first-blog.git
     
 
 Jeżeli patrzysz na proces, będziesz mogła zobaczyć:
