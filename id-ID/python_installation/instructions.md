@@ -2,7 +2,7 @@
 > 
 > Bagian ini dibuat berdasarkan tutorial yang dibuat oleh Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django ditulis menggunakan Python. Kita butuh Python untuk melakukan berbagai hal di Django. Yuk kita mulai menginstallnya! Kita menginginkan kamu menginstall Python 3, Jika kamu sudah memiliki versi sebelum itu, Kamu butuh upgrade versi yang akan kita install kali ini. Jika kamu sudah memiliki versi 3.4 atau diatasnya, Kamu akan baik-baik saja.
+Django ditulis menggunakan Python. Kita butuh Python untuk melakukan berbagai hal di Django. Yuk kita mulai menginstallnya! Kita menginginkan kamu menginstall Python 3, Jika kamu sudah memiliki versi sebelum itu, Kamu butuh upgrade versi yang akan kita install kali ini. If you already have version {{ book.py_min_version }} or higher you should be fine.
 
 Please install normal Python as follows, even when you have Anaconda installed on your computer.
 
@@ -17,32 +17,27 @@ First check whether your computer is running a 32-bit version or a 64-bit versio
 
 You can download Python for Windows from the website https://www.python.org/downloads/windows/. Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
 
-One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" or 'Add Python to your environment variables" checkbox and click on "Install Now", as shown here (it may look a bit different if you are installing a different version):
+One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python {{ book.py_version }} to PATH" or 'Add Python to your environment variables" checkbox and click on "Install Now", as shown here (it may look a bit different if you are installing a different version):
 
 ![Jangan lupa menambahkan Python dapa Path](../python_installation/images/python-installation-options.png)
 
 When the installation completes, you may see a dialog box with a link you can follow to learn more about Python or about the version you installed. Close or cancel that dialog -- you'll be learning more in this tutorial!
 
-Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.6.x installer fails with an error, you can try either:
+Note: If you are using an older version of Windows (7, Vista, or any older version) and the Python {{ book.py_version }} installer fails with an error, then install all Windows Updates and try to install Python again. If you still have the error, try installing Python version {{ book.py_min_release }} from [Python.org](https://www.python.org/downloads/windows/).
 
-1. install all Windows Updates and try to install Python again; or
-2. install an [older version of Python](https://www.python.org/downloads/windows/), e.g., [3.4.6](https://www.python.org/downloads/release/python-346/).
-
-If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
-
-![Tambahkan Python ke Path, versi lama](../python_installation/images/add_python_to_windows_path.png)
+> Django {{ book.django_version }} needs Python {{ book.py_min_version }} or greater, which does not support Windows XP or earlier versions.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Catatan** Sebelum menginstal Python di OS X, Anda harus memastikan pengaturan Mac Anda memungkinkan menginstal paket yang bukan dari App Store. Buka System Preferences (ada di folder Applications), klik "Security & Privacy," dan kemudian tab "General". Jika "Izinkan aplikasi Anda diunduh dari:" disetel ke "Mac App Store", ubahlah menjadi "Mac App Store dan pengembang yang teridentifikasi."
+> **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
 
-You need to go to the website https://www.python.org/downloads/release/python-361/ and download the Python installer:
+You need to go to the website https://www.python.org/downloads/mac-osx/ and download the latest Python installer:
 
 * Download the *Mac OS X 64-bit/32-bit installer* file,
-* Double click *python-3.6.1-macosx10.6.pkg* to run the installer.
+* Double click *python-{{ book.py_release }}-macosx10.9.pkg* to run the installer.
 
 <!--endsec-->
 
@@ -54,10 +49,10 @@ It is very likely that you already have Python installed out of the box. To chec
 {% filename %}command-line{% endfilename %}
 
     $ python3 --version
-    Python 3.6.1
+    Python {{ book.py_release }}
     
 
-If you have a different version of Python installed, at least 3.4.0 (e.g. 3.6.0), then you don't have to upgrade. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
+If you have a different version of Python installed, at least {{ book.py_min_version }} (e.g. {{ book.py_min_release }}), then you don't have to upgrade. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
 
 {% filename %}command-line{% endfilename %}
 
@@ -89,14 +84,14 @@ Use this command in your console:
     $ sudo dnf install python3
     
 
-Jika Anda menggunakan versi Fedora yang lebih tua, Anda mungkin mendapatkan pesan error bahwa perintah `dnf` tidak ditemukan. Dalam hal ini Anda perlu menggunakan `yum`sebagai gantinya.
+If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use `yum` instead.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Gunakan perintah ini di konsol Anda:
+Use this command in your console:
 
 {% filename %}command-line{% endfilename %}
 
@@ -110,13 +105,13 @@ Verify the installation was successful by opening a command prompt and running t
 {% filename %}command-line{% endfilename %}
 
     $ python3 --version
-    Python 3.6.1
+    Python {{ book.py_release }}
     
 
-The version shown may be different from 3.6.1 -- it should match the version you installed.
+The version shown may be different from {{ book.py_release }} -- it should match the version you installed.
 
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is 3.4.0 or higher. If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
+**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is {{ book.py_min_version }} or higher. If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
 
 * * *
 
-Jika Anda ragu, atau jika ada yang tidak beres dan Anda tidak tahu apa yang harus dilakukan selanjutnya, tolong tanya pelatih Anda! Kadang sesuatu tidak berjalan dengan lancar dan lebih baik untuk meminta bantuan pada seseorang yang berpengalaman.
+If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
