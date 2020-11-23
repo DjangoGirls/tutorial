@@ -171,7 +171,7 @@ Git будет отслеживать изменения всех файлов �
 
 {% filename %}command-line{% endfilename %}
 
-    pip3.6 install --user pythonanywhere
+    $ pip{{ book.pa_py_version }} install --user pythonanywhere
     
 
 В консоли должно напечататься что-то подобное`Collecting pythonanywhere` и в конце `Successfully installed (...) pythonanywhere- (...)`.
@@ -180,7 +180,7 @@ Git будет отслеживать изменения всех файлов �
 
 {% filename %}command-line{% endfilename %}
 
-    $ git clone https://github.com/<your-github-username>/my-first-blog.git
+    $ pa_autoconfigure_django.py --python={{ book.pa_py_version }} https://github.com/<your-github-username>/my-first-blog.git
     
 
 Когда ты увидишь, как это работает, то ты сможешь понять, что именно оно делает:
