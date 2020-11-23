@@ -79,7 +79,7 @@ Možemo da kreiramo `virtualenv` i na Linux-u i na OS X, pokretanjem `python3 -m
 > {% filename %}command-line{% endfilename %}
 > 
 >     $ sudo apt install python-virtualenv
->     $ virtualenv --python=python3.6 myvenv
+>     $ virtualenv --python=python{{ book.py_version }} myvenv
 >     
 > 
 > **NAPOMENA:** Ukoliko dobijete grešku
@@ -93,7 +93,7 @@ Možemo da kreiramo `virtualenv` i na Linux-u i na OS X, pokretanjem `python3 -m
 > 
 > {% filename %}command-line{% endfilename %}
 > 
->     sudo apt install python3.6-venv
+>     sudo apt install python{{ book.py_version }}-venv
 >     
 
 <!--endsec-->
