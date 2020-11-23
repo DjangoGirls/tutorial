@@ -445,4 +445,4 @@ Mal sehen, ob das alles auch auf PythonAnywhere funktioniert. Zeit für ein weit
 
 * Gehe schließlich noch rüber [auf die Seite "Web"](https://www.pythonanywhere.com/web_app_setup/) (benutze den Menü-Knopf in der rechten oberen Ecke der Konsole) und klicke **Reload**. Lade deinen Blog https://subdomain.pythonanywhere.com neu, um die Änderungen zu sehen.
 
-And that should be it. Congrats! :)
+Und das war's. Glückwunsch! :)
