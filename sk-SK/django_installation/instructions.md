@@ -79,7 +79,7 @@ Vytvoriť `virtualenv` na Linuxe a OS X vyžaduje iba jednoduché spustenie `pyt
 > {% filename %}command-line{% endfilename %}
 > 
 >     $ sudo apt install python-virtualenv
->     $ virtualenv --python=python3.6 myvenv
+>     $ virtualenv --python=python{{ book.py_version }} myvenv
 >     
 > 
 > **POZNÁMKA:** Ak sa ti objaví chybu ako
@@ -93,7 +93,7 @@ Vytvoriť `virtualenv` na Linuxe a OS X vyžaduje iba jednoduché spustenie `pyt
 > 
 > {% filename %}command-line{% endfilename %}
 > 
->     sudo apt install python3.6-venv
+>     sudo apt install python{{ book.py_version }}-venv
 >     
 
 <!--endsec-->
