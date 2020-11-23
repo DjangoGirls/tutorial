@@ -19,7 +19,7 @@
 {% filename %}خط فرمان{% endfilename %}
 
     $ python3
-    Python 3.6.1 (...)
+    Python {{ book.py_release }} (...)
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
     
