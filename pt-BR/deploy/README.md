@@ -171,7 +171,7 @@ Fazer o deploy de uma aplicação web no PythonAnywhere envolve baixar o seu có
 
 {% filename %}linha de comando do PythonAnywhere{% endfilename %}
 
-    $ pip3.6 install --user pythonanywhere
+    $ pip{{ book.pa_py_version }} install --user pythonanywhere
     
 
 Isso deve mostrar na tela coisas como `Collecting pythonanywhere`, e depois de algum tempo finalizar com uma linha dizendo `Successfully installed (...) pythonanywhere (...)`.
@@ -180,7 +180,7 @@ Agora vamos executar a ferramenta para configurar a nossa aplicação a partir d
 
 {% filename %}linha de comando do PythonAnywhere{% endfilename %}
 
-    $ pa_autoconfigure_django.py --python=3.6 https://github.com/<your-github-username>/my-first-blog.git
+    $ pa_autoconfigure_django.py --python={{ book.pa_py_version }} https://github.com/<your-github-username>/my-first-blog.git
     
 
 Enquanto assiste a execução da ferramenta, você pode ver o que ela está fazendo:
