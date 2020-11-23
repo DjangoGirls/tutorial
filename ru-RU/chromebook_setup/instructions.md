@@ -53,7 +53,7 @@ Cloud IDE - это инструмент, предоставляющий тебе
 
     mkdir djangogirls
     cd djangogirls
-    python3.6 -mvenv myvenv
+    python3 -m venv myvenv
     source myvenv/bin/activate
     pip install django~={{ book.django_version }}
     
