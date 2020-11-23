@@ -33,7 +33,7 @@ Kontrolliere deine überarbeitete Webseite unter: http://127.0.0.1:8000
 
 ![Abbildung 11.1](images/step1.png)
 
-No error anymore! Congratulations! :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
+Der Fehler sollte weg sein! Gratulation! :) Deine Webseite ist allerdings noch leer, weil dein Template leer ist. Das müssen wir ändern.
 
 Öffne die neue Datei im Code-Editor, und füge Folgendes hinzu:
 
@@ -52,7 +52,7 @@ Hat sich die Seite geändert? Besuche http://127.0.0.1:8000/, um nachzusehen.
 
 ![Abbildung 11.2](images/step3.png)
 
-It worked. Nice work there! :)
+Es funktioniert. Gute Arbeit! :)
 
 * Jede Webseite sollte mit dem Tag `<html>` beginnen. Und `</html>` steht immer am Ende. Zwischen den beiden Tags `<html>` und `</html>` steht der gesamte Inhalt der Webseite
 * `<p>` ist der Tag für ein Absatz-Element (paragraph), `</p>` beendet einen Absatz
