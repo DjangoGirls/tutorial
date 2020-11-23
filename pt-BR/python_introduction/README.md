@@ -19,8 +19,8 @@ Para abrir um prompt de comando do Python, digite `python` no Windows ou `python
 {% filename %}command-line{% endfilename %}
 
     $ python3
-    Python 3.6.1 (...)
-    Digite "ajuda", "direitos autorais", ou "licença" para mais informações.
+    Python {{ book.py_release }} (...)
+    Type "help", "copyright", "credits" or "license" for more information.
     >>>
     
 
