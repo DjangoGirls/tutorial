@@ -19,7 +19,7 @@ A fẹ́ ṣí console Python kan, nítorí náà tẹ `python` lórí Windows t
 {% filename %}command-line{% endfilename %}
 
     $ python3
-    Python 3.6.1 (...)
+    Python {{ book.py_release }} (...)
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
     
