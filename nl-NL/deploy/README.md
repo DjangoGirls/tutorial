@@ -171,7 +171,7 @@ Voor het deployen van de applicatie op PythonAnywhere moeten we de code van GitH
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pip3.6 install --user pythonanywhere
+    $ pip{{ book.pa_py_version }} install --user pythonanywhere
     
 
 Dat zou enkele dingen als `Collecting pythonanywhere` moeten printen, en uiteindelijk eindigen met een regel die zegt `Successfully installed (...) pythonanywhere- (...)`.
@@ -180,7 +180,7 @@ Nu draaien we het hulpmiddel om onze app automatisch vanaf GitHub te configurere
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pa_autoconfigure_django.py --python=3.6 https://github.com/<your-github-username>/my-first-blog.git
+    $ pa_autoconfigure_django.py --python={{ book.pa_py_version }} https://github.com/<your-github-username>/my-first-blog.git
     
 
 Als je kijkt wat er gebeurt, zie je wat het doet:
