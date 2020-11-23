@@ -53,7 +53,7 @@ PaizaCloud Cloud IDE的终端是为你的指示准备的。 你可以调整窗�
 
     mkdir djangogirls
     cd djangogirls
-    python3.6 -mvenv myvenv
+    python3 -m venv myvenv
     source myvenv/bin/activate
     pip install django~={{ book.django_version }}
     
