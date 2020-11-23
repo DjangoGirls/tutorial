@@ -19,7 +19,7 @@ Vi vill öppna en Python-konsol, så skriv `python` på Windows eller `python3` 
 {% filename %}command-line{% endfilename %}
 
     $ python3
-    Python 3.6.1 (...)
+    Python {{ book.py_release }} (...)
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
     
