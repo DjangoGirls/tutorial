@@ -18,7 +18,10 @@ Kita ingin membuka konsol Python, Jadi silakan ketik `python` untuk Windows atau
 
 {% filename %}command-line{% endfilename %}
 
-    $ python3 Python 3.4.3 (...) Type "help", "copyright", "credits" or "license" for more information. >>>
+    $ python3
+    Python {{ book.py_release }} (...)
+    Type "help", "copyright", "credits" or "license" for more information.
+    >>>
     
 
 ## Perintah Python Pertama!
