@@ -171,7 +171,7 @@
 
 {% filename %}خط فرمان PythonAnywhere {% endfilename %}
 
-    $ pip3.6 install --user pythonanywhere
+    $ pip{{ book.pa_py_version }} install --user pythonanywhere
     
 
 این دستور باید چیزهایی شبیه به `Collecting pythonanywhere` بر روی صفحه نشان دهد و در انتها نیز این پیغام `Successfully installed (...) pythonanywhere- (...)` نمایش داده خواهد شد.
@@ -180,7 +180,7 @@
 
 {% filename %}خط فرمان PythonAnywhere {% endfilename %}
 
-    $ pa_autoconfigure_django.py --python=3.6 https://github.com/<your-github-username>/my-first-blog.git
+    $ pa_autoconfigure_django.py --python={{ book.pa_py_version }} https://github.com/<your-github-username>/my-first-blog.git
     
 
 همینطور که به اجراشدن آن نگاه می‌کنید می‌توانید بفهمید که چه کاری انجام می‌دهد:
