@@ -23,7 +23,7 @@ Auf eine Sache solltest du achten: Während der Installation wird ein Setup-Fens
 
 Wenn die Installation abgeschlossen ist, siehst du vielleicht ein Dialogfeld mit einem Link, wo du mehr über Python oder über die Version lernen kannst. Schließe es oder brich den Dialog ab -- du wirst darüber mehr in diesem Tutorial lernen!
 
-Note: If you are using an older version of Windows (7, Vista, or any older version) and the Python {{ book.py_version }} installer fails with an error, then install all Windows Updates and try to install Python again. If you still have the error, try installing Python version {{ book.py_min_release }} from [Python.org](https://www.python.org/downloads/windows/).
+Hinweis: Falls du eine ältere Version von Windows verwendest (7, Vista oder älter) und die Installation von Python {{ book.py_version }} mit einer Fehlermeldung fehlschlägt, dann installiere alle Windows-Updates und versuche erneut, Python zu installieren. Falls der Fehler dann immer noch auftritt, installiere Python-Version {{ book.py_min_release }} von [Python.org](https://www.python.org/downloads/windows/).
 
 > Django {{ book.django_version }} benötigt Python {{ book.py_min_version }} oder höher, das weder Windows XP noch frühere Windows-Versionen unterstützt.
 
@@ -52,20 +52,20 @@ Es ist ziemlich wahrscheinlich, dass du Python schon automatisch installiert has
     Python {{ book.py_release }}
     
 
-If you have a different version of Python installed, at least {{ book.py_min_version }} (e.g. {{ book.py_min_release }}), then you don't have to upgrade. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
+Wenn du eine andere Version von Python installiert hast, die {{ book.py_min_version }} oder höher ist, z.B. {{ book.py_min_release }}, dann musst du die Version nicht aktualisieren. Wenn du Python noch nicht installiert hast oder wenn du eine andere Python-Version willst, prüfe zuerst mit folgendem Befehl, welche Linux-Distribution du benutzt:
 
 {% filename %}command-line{% endfilename %}
 
     $ grep '^NAME=' /etc/os-release
     
 
-Afterwards, depending on the result, follow one of the following installation guides below this section.
+Folge danach je nach Ergebnis einer der unterhalb dieses Abschnitts folgenden Installationsanweisungen.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-Type this command into your console:
+Gib diesen Befehl in die Konsole ein:
 
 {% filename %}command-line{% endfilename %}
 
@@ -77,21 +77,21 @@ Type this command into your console:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Use this command in your console:
+Gib diesen Befehl in die Konsole ein:
 
 {% filename %}command-line{% endfilename %}
 
     $ sudo dnf install python3
     
 
-If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use `yum` instead.
+Auf älteren Fedora-Versionen kann es sein, dass du eine Fehlermeldung bekommst, dass das Kommando `dnf` nicht gefunden wird. Falls das passiert, musst du stattdessen `yum` verwenden.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Use this command in your console:
+Gib diesen Befehl in die Konsole ein:
 
 {% filename %}command-line{% endfilename %}
 
@@ -100,7 +100,7 @@ Use this command in your console:
 
 <!--endsec-->
 
-Verify the installation was successful by opening a command prompt and running the `python3` command:
+Prüfe, ob die Installation erfolgreich war, indem du ein Kommandozeilenfenster öffnest und den `python3`-Befehl ausführst:
 
 {% filename %}command-line{% endfilename %}
 
@@ -108,10 +108,10 @@ Verify the installation was successful by opening a command prompt and running t
     Python {{ book.py_release }}
     
 
-The version shown may be different from {{ book.py_release }} -- it should match the version you installed.
+Die angezeigte Version kann bei dir eine andere sein als {{ book.py_release }} -- sie sollte aber der entsprechen, die du installiert hast.
 
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is {{ book.py_min_version }} or higher. If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
+**Hinweis:** Wenn du unter Windows eine Fehlermeldung bekommst, dass `python3` nicht gefunden wurde, versuche es mit `python` (ohne die `3`) und prüfe, ob es dennoch eine Version von Python {{ book.py_min_version }} oder höher ist. Wenn auch das nicht funktioniert, kannst du ein neues Kommandozeilenfenster öffnen und es dort erneut versuchen; dies geschieht, wenn du ein Kommandozeilenfenster verwendet, das schon vor der Python-Installation geöffnet war.
 
 * * *
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
+Wenn es Unklarheiten gibt oder wenn etwas schief ging und du nicht weiter weißt, frage bitte deinen Coach! Manchmal laufen die Dinge einfach nicht so glatt und dann ist es besser, jemanden mit mehr Erfahrung um Hilfe zu bitten.
