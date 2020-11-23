@@ -54,7 +54,7 @@ U ovu trenutku Cloud 9 zahteva da se prijavite na AWS i unesete informacije o kr
     
         mkdir djangogirls
         cd djangogirls
-        python3.6 -mvenv myvenv
+        python3 -m venv myvenv
         source myvenv/bin/activate
         pip install django~={{ book.django_version }}
         
