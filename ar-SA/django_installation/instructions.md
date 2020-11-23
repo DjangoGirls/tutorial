@@ -78,8 +78,8 @@ data-collapse=true ces-->
 > 
 > {% filename %}command-line{% endfilename %}
 > 
->     $ sudo apt-get install python-virtualenv
->     $ virtualenv --python=python3.6 myvenv
+>     $ sudo apt install python-virtualenv
+>     $ virtualenv --python=python{{ book.py_version }} myvenv
 >     
 > 
 > **ملاحظة:** إذا حصلت على خطأ مثل
@@ -93,7 +93,7 @@ data-collapse=true ces-->
 > 
 > {% filename %}command-line{% endfilename %}
 > 
->     sudo apt install python3.6-venv
+>     sudo apt install python{{ book.py_version }}-venv
 >     
 
 <!--endsec-->
