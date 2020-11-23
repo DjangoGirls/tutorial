@@ -51,11 +51,11 @@ Chạy:
 
 {% filename %}Cloud 9{% endfilename %}
 
-    mkdir djangogirls 
-    cd djangogirls 
-    python3.6 - mvenv myvenv 
+    mkdir djangogirls
+    cd djangogirls
+    python3 -m venv myvenv
     source myvenv/bin/activate
-    pip install django ~ = 1.11.0
+    pip install django~={{ book.django_version }}
     
 
 (Chú ý dòng cuối cùng chúng tôi sử dụng một dấu ngã theo sau là một dấu bằng: ~ =).
