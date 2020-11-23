@@ -25,26 +25,26 @@ Wenn die Installation abgeschlossen ist, siehst du vielleicht ein Dialogfeld mit
 
 Note: If you are using an older version of Windows (7, Vista, or any older version) and the Python {{ book.py_version }} installer fails with an error, then install all Windows Updates and try to install Python again. If you still have the error, try installing Python version {{ book.py_min_release }} from [Python.org](https://www.python.org/downloads/windows/).
 
-> Django {{ book.django_version }} needs Python {{ book.py_min_version }} or greater, which does not support Windows XP or earlier versions.
+> Django {{ book.django_version }} benötigt Python {{ book.py_min_version }} oder höher, das weder Windows XP noch frühere Windows-Versionen unterstützt.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
+> **Hinweis** Bevor du Python auf Mac OS X installierst, musst du sicherstellen, dass deine Mac-Einstellungen es erlauben, Pakete zu installieren, die nicht aus dem App Store stammen. Geh auf Systemeinstellungen (im Ordner "Programme"), klicke auf "Sicherheit", und dann auf die Registerkarte "Allgemein". Wenn "Apps-Download erlauben von:" auf "Mac App Store" gestellt ist, ändere die Einstellung auf "Mac App Store und verifizierte Entwickler".
 
-You need to go to the website https://www.python.org/downloads/mac-osx/ and download the latest Python installer:
+Auf der Website https://www.python.org/downloads/mac-osx/ findest du aktuellen Python-Installer:
 
 * Lade die Datei *Mac OS X 64-bit/32-bit installer* herunter,
-* Double click *python-{{ book.py_release }}-macosx10.9.pkg* to run the installer.
+* Doppelklicke auf *python-{{ book.py_release }}-macosx10.9.pkg*, um die Installation zu starten.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
+Es ist ziemlich wahrscheinlich, dass du Python schon automatisch installiert hast. Um herauszufinden, ob das so ist (und wenn ja, welche Version du hast), öffne eine Konsole und gib das folgende Kommando ein:
 
 {% filename %}command-line{% endfilename %}
 
