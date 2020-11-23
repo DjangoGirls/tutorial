@@ -171,7 +171,7 @@ Padà sí [Pánẹ́ẹ̀lì ìdarí PythonAnywhere](https://www.pythonanywhere.
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pip3.6 install --user pythonanywhere
+    $ pip{{ book.pa_py_version }} install --user pythonanywhere
     
 
 Ó yẹ kí ìyẹn ṣàtẹ̀jáde àwọn nnkan kan bíi `Collecting pythonanywhere`, kí o sì parí gbẹ̀yìn pẹ̀lú ìlà kan tó n sọ pé `Successfully installed (...) pythonanywhere- (...)`.
@@ -180,7 +180,7 @@ Ní báyìí, a máa mú olùrànlọ́wọ́ náà ṣiṣẹ́ láti ṣètò 
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pa_autoconfigure_django.py --python=3.6 https://github.com/<your-github-username>/my-first-blog.git
+    $ pa_autoconfigure_django.py --python={{ book.pa_py_version }} https://github.com/<your-github-username>/my-first-blog.git
     
 
 Bó o ṣe ń wo ìyẹn tó n ṣiṣẹ́, ìwọ yíò lè rí ohun tó ń ṣe:
