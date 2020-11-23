@@ -171,7 +171,7 @@ PythonAnywhereにWebアプリケーションをデプロイするには、コー
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pip3.6 install --user pythonanywhere
+    $ pip{{ book.pa_py_version }} install --user pythonanywhere
     
 
 `Collecting pythonanywhere` のようなメッセージがいくつか出力され、最終的に`Successfully installed (...) pythonanywhere- (...)`という行で終わると思います。
@@ -180,7 +180,7 @@ GitHub からアプリを自動的に構成するためのヘルパーを実行�
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pa_autoconfigure_django.py --python=3.6 https://github.com/<your-github-username>/my-first-blog.git
+    $ pa_autoconfigure_django.py --python={{ book.pa_py_version }} https://github.com/<your-github-username>/my-first-blog.git
     
 
 実行しているところを見れば、何をしているのかわかるでしょう。
