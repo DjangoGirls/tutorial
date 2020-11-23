@@ -78,8 +78,8 @@ Podemos crear un `virtualenv` en Linux y OS X, es tan sencillo como ejecutar `py
 > 
 > {% filename %}command-line{% endfilename %}
 > 
->     $ sudo apt-get install python-virtualenv
->     $ virtualenv --python=python3.6 myvenv
+>     $ sudo apt install python-virtualenv
+>     $ virtualenv --python=python{{ book.py_version }} myvenv
 >     
 > 
 > **NOTA:** Si obtienes un error como
@@ -93,7 +93,7 @@ Podemos crear un `virtualenv` en Linux y OS X, es tan sencillo como ejecutar `py
 > 
 > {% filename %}command-line{% endfilename %}
 > 
->     sudo apt install python3.6-venv
+>     sudo apt install python{{ book.py_version }}-venv
 >     
 
 <!--endsec-->
