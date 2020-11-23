@@ -2,7 +2,7 @@
 > 
 > Questa sezione è basata sul tutorial delle Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django è scritto in Python. Python ci serve per fare qualunque cosa in Django. Iniziamo con l'installazione! Dovresti installare la versione più recente di Python 3, quindi se hai una versione precendente dovrai aggiornarla. Se hai già la versione 3.4 o una versione successiva non servono aggiornamenti.
+Django è scritto in Python. Python ci serve per fare qualunque cosa in Django. Iniziamo con l'installazione! Dovresti installare la versione più recente di Python 3, quindi se hai una versione precendente dovrai aggiornarla. If you already have version {{ book.py_min_version }} or higher you should be fine.
 
 Installa Python normale come segue, anche quando hai Anaconda installato sul tuo computer.
 
@@ -17,60 +17,55 @@ Prima verifica se il computer sta eseguendo una versione a 32 bit o una versione
 
 Puoi scaricare Python per Windows dal sito web https://www.python.org/downloads/windows/. Clicca sul link "Ultimo Python 3 - Python x.x.x". Se il tuo computer sta eseguendo una versione **64-bit** di Windows, scarica il file **Windows x86-64 di installer eseguibile**. Altrimenti, scarica il file **Windows x86 eseguibile installer**. Dopo aver scaricato il file *.msi, lo dovresti eseguire (cliccaci sopra due volte) e segui le istruzioni.
 
-Una cosa per cui guardare: durante l'installazione, si noti una finestra contrassegnata "Setup". Assicurati di spuntare la casella di controllo "Aggiungi Python 3.6 a PATH" o 'Aggiungi Python alle variabili ambientali" e clicca su "Installa Ora", come mostrato qui (potrebbe sembrare un po' diverso se stai installando una versione diversa):
+Una cosa per cui guardare: durante l'installazione, si noti una finestra contrassegnata "Setup". Make sure you tick the "Add Python {{ book.py_version }} to PATH" or 'Add Python to your environment variables" checkbox and click on "Install Now", as shown here (it may look a bit different if you are installing a different version):
 
 ![Non dimenticare di aggiungere Python al Path](../python_installation/images/python-installation-options.png)
 
 Quando l'installazione è completata, potresti vedere una finestra di dialogo con un link che puoi seguire per saperne di più su Python o sulla versione installata. Chiudi o annulla questa finestra -- imparerai molto di più in questo tutorial!
 
-Nota: se stai usando una versione precedente di Windows (7, Vista o qualsiasi versione precedente) e l'installazione Python 3.6.x fallisce e restituisce un errore, puoi provare a:
+Note: If you are using an older version of Windows (7, Vista, or any older version) and the Python {{ book.py_version }} installer fails with an error, then install all Windows Updates and try to install Python again. If you still have the error, try installing Python version {{ book.py_min_release }} from [Python.org](https://www.python.org/downloads/windows/).
 
-1. installare tutti gli aggiornamenti di Windows e provare a installare di nuovo Python; oppure
-2. installare una [versione precedente di Python](https://www.python.org/downloads/windows/), ad esempio la [3.4.6](https://www.python.org/downloads/release/python-346/).
-
-Se installi una versione precedente di Python, la schermata di installazione potrebbe apparire un po' diversa da quella mostrata sopra. Assicurati di scorrere verso il basso per vedere "Aggiungi python.exe al Path", quindi clicca sul pulsante a sinistra e scegli "Verrà installato sul disco rigido locale":
-
-![Aggiungi Python al percorso, versioni precedenti](../python_installation/images/add_python_to_windows_path.png)
+> Django {{ book.django_version }} needs Python {{ book.py_min_version }} or greater, which does not support Windows XP or earlier versions.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Nota** Prima di installare Python su OS X, devi garantire che le impostazioni Mac consentano l'installazione di pacchetti che non sono presenti nell'App Store. Vai alle Preferenze di sistema (è nella cartella Applicazioni), clicca "Sicurezza & Privacy," e poi la scheda "Generale". Se le tue "Consenti app scaricate da:" sono impostate su "Mac App Store," cambiale in "Mac App Store e sviluppatori identificati."
+> **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
 
-Devi andare sul sito https://www.python.org/downloads/release/python-361/ e scaricare il programma di installazione di Python:
+You need to go to the website https://www.python.org/downloads/mac-osx/ and download the latest Python installer:
 
 * Scarica il file *Mac OS X 64-bit/32-bit installer*
-* Fai doppio click su *python-3.4.3-macosx10.6.pkg* per eseguire il programma d'installazione.
+* Double click *python-{{ book.py_release }}-macosx10.9.pkg* to run the installer.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-È molto probabile che tu abbia Python già installato di default. Per controllare se ce l'hai già installato (e quale versione è), apri una console e digita il seguente comando:
+It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 --version
-    Python 3.6.1
+    Python {{ book.py_release }}
     
 
-Se hai una differente 'micro versione' di Python installata, ad esempio la 3.4.0, non hai bisogno di aggiornarla. Se non hai Python installato, o se vuoi una versione diversa, controlla prima quale distribuzione Linux stai usando con il seguente comando:
+If you have a different version of Python installed, at least {{ book.py_min_version }} (e.g. {{ book.py_min_release }}), then you don't have to upgrade. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
 
 {% filename %}command-line{% endfilename %}
 
     $ grep '^NAME=' /etc/os-release
     
 
-In seguito, a seconda del risultato, segui una delle seguenti guide di installazione sotto questa sezione.
+Afterwards, depending on the result, follow one of the following installation guides below this section.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-Digita questo comando nella tua console:
+Type this command into your console:
 
 {% filename %}command-line{% endfilename %}
 
@@ -82,21 +77,21 @@ Digita questo comando nella tua console:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Digita questo comando nella tua console:
+Use this command in your console:
 
 {% filename %}command-line{% endfilename %}
 
     $ sudo dnf install python3
     
 
-Se sei nelle vecchie versioni Fedora potresti ottenere un errore che il comando `dnf` non è stato trovato. In questo caso, devi utilizzare `yum` invece.
+If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use `yum` instead.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Digita questo comando nella tua console:
+Use this command in your console:
 
 {% filename %}command-line{% endfilename %}
 
@@ -105,18 +100,18 @@ Digita questo comando nella tua console:
 
 <!--endsec-->
 
-Verifica che l'installazione si sia conclusa correttamente aprendo l'applicazione *Terminal* ed eseguendo il comando `python3`:
+Verify the installation was successful by opening a command prompt and running the `python3` command:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 --version
-    Python 3.6.1
+    Python {{ book.py_release }}
     
 
-La versione mostrata può essere diversa da 3.6.1 -- dovrebbe corrispondere alla versione installata.
+The version shown may be different from {{ book.py_release }} -- it should match the version you installed.
 
-**NOTA:** Se sei su Windows e ricevi un messaggio di errore che dice che `python3` non è stato trovato, prova ad utilizzare `python` (senza `3`), controlla sia la versione di Python 3.4.0 o superiore. Se anche questo non funziona, puoi aprire un nuovo prompt dei comandi e riprovare; questo accade se usi un prompt dei comandi aperto da prima dell'installazione di Python.
+**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is {{ book.py_min_version }} or higher. If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
 
 * * *
 
-Se hai dubbi o se qualcosa è andato storto e non hai idea di cosa fare dopo - chiedi al tuo coach! A volte le cose non vanno come dovrebbero ed è meglio chiedere aiuto a qualcuno con più esperienza.
+If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
