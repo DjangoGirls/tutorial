@@ -53,7 +53,7 @@ IDE ابری ابزاری است که به شما دسترسی به یک ویر�
 
     mkdir djangogirls
     cd djangogirls
-    python3.6 -mvenv myvenv
+    python3 -m venv myvenv
     source myvenv/bin/activate
     pip install django~={{ book.django_version }}
     
