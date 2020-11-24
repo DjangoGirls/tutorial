@@ -171,7 +171,7 @@ PythonAnywhere에 웹앱을 배포하는 과정은 Github에서 코드를 받아
 
 {% filename %}command-line{% endfilename %}
 
-    $ pip{{ book.pa_py_version }} install --user pythonanywhere
+    $ pip3.8 install --user pythonanywhere
     
 
 이 명령을 실행하면 `Collecting pythonanywhere`같은 글씨가 나와야 합니다. 그리고 마지막에는 `Successfully installed (...) pythonanywhere-(...)`라는 문장과 함께 설치가 완료됩니다. 
@@ -180,7 +180,7 @@ PythonAnywhere에 웹앱을 배포하는 과정은 Github에서 코드를 받아
 
 {% filename %}command-line{% endfilename %}
 
-    $ pa_autoconfigure_django.py --python={{ book.pa_py_version }} https://github.com/<your-github-username>/my-first-blog.git
+    $ pa_autoconfigure_django.py --python=3.8 https://github.com/<your-github-username>/my-first-blog.git
     
 
 이 실행 과정을 지켜보면, 어떤 일이 일어나는지 보일겁니다. 
