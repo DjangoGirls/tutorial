@@ -187,7 +187,7 @@ def post_new(request):
 
 우리가 폼을 제출할 때, 동일한 뷰를 불러옵니다. 이 때 `request`에는 우리가 입력했던 데이터들을 가지고 있는데, `request.POST`가 이 데이터를 가지고 있습니다. (POST는 글 데이터를 "등록하는(posting)"하는 것을 의미합니다. 블로그 "글"을 의미하는 "post"과 관련이 없어요.) HTML에서 `<form>`정의에 `method="POST"`라는 속성이 있던 것이 기억나나요? 이렇게 POST로 넘겨진 폼 필드의 값들은 이제 `request.POST`에 저장됩니다. `POST`로 된 값을 다른 걸로 바꾸면 안돼요.(`method` 속성의 값으로 넣을 수 있는 유효한 값 중에 `GET` 같은 것도 있지만 post와 어떤 차이점이 있는지 등에 대해서 다루기에는 너무 길어질 것 같아 생략할게요.)
 
-So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. 여기서 조건문을 추가시켜야해요. (`if`을 사용할게요):
+그래서 우리의 *view*에서는 두 개의 상황을 부리해서 다뤄야해요. 첫째, 우리가 페이지에 처음 접속시 빈 폼을 원할때에요. 그리고 둘 째, *view*로 되돌아 갔을때 우리가 입력한 데이터가 폼 데이터를 포함할 때에요. 여기서 조건문을 추가시켜야해요. (`if`을 사용할게요):
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -198,7 +198,7 @@ else:
     form = PostForm()
 ```
 
-It's time to fill in the dots `[...]`. If `method` is `POST` then we want to construct the `PostForm` with data from the form, right? We will do that as follows:
+`[...]` 에 입력할 시간이에요. `method` 가 `POST` 일때 `PostForm` 을 폼에서 받은 데이터로 구성하고 싶어요, 맞죠? 아래와 같이 해보아요.
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -206,7 +206,7 @@ It's time to fill in the dots `[...]`. If `method` is `POST` then we want to con
 form = PostForm(request.POST)
 ```
 
-The next thing is to check if the form is correct (all required fields are set and no incorrect values have been submitted). We do that with `form.is_valid()`.
+참 쉽죠! 다음에는 폼에 들어있는 값들이 올바른지를 확인해야합니다.(모든 필드에는 값이 있어야하고 잘못된 값이 있다면 저장하면 되지 않아야해요.) 이를 위해 `form.is_valid()`을 사용할거에요.
 
 폼에 입력된 값이 올바른지 확인한 다음, 저장되는거죠!
 
@@ -220,7 +220,7 @@ if form.is_valid():
     post.save()
 ```
 
-일반적으로, 이 작업을 두 단계로 나눌 수 있어요: `form.save`로 폼을 저장하는 작업과 작성자를 추가하는 작업입니다.(`PostForm`에는 `작성자(author)` 필드가 없지만, 필드 값이 필요하죠). `commit=False` means that we don't want to save the `Post` model yet – we want to add the author first. Most of the time you will use `form.save()` without `commit=False`, but in this case, we need to supply it. `post.save()` will preserve changes (adding the author) and a new blog post is created!
+일반적으로, 이 작업을 두 단계로 나눌 수 있어요: `form.save`로 폼을 저장하는 작업과 작성자를 추가하는 작업입니다.(`PostForm`에는 `작성자(author)` 필드가 없지만, 필드 값이 필요하죠). `commit=False`란 넘겨진 데이터를 바로 `Post` 모델에 저장하지는 말라는 뜻입니다. - 왜냐하면 작성자를 추가한 다음 저장해야하니까요. 대부분의 경우에는 `commit=False`를 쓰지 않고 바로 `form.save()`를 사용해서 저장해요. 다면 여기서는 작성자 정보를 추가하고 저장해야하기 때문에 commit=False를 사용하는 거에요. `post.save()`는 변경사항(작성자 정보를 포함)을 유지할 것이고 새 블로그 글이 만들어 질거에요!
 
 Finally, it would be awesome if we could immediately go to the `post_detail` page for our newly created blog post, right? To do that we need one more import:
 
@@ -230,7 +230,7 @@ Finally, it would be awesome if we could immediately go to the `post_detail` pag
 from django.shortcuts import redirect
 ```
 
-Add it at the very beginning of your file. And now we can say, "go to the `post_detail` page for the newly created post":
+위 코드를 여러분의 파일 맨 위에 추가하세요. 그리고 새로 작성한 글을 볼 수 있도록 `post_detail` 페이지로 가라고 수정합시다":
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -238,7 +238,7 @@ Add it at the very beginning of your file. And now we can say, "go to the `post_
 return redirect('post_detail', pk=post.pk)
 ```
 
-`blog.views.post_detail`은 이동해야 할 뷰의 이름이에요. *post_detail 뷰*는 `pk`변수가 필요한 거 기억하고 있겠죠? To pass it to the views, we use `pk=post.pk`, where `post` is the newly created blog post!
+`blog.views.post_detail`은 이동해야 할 뷰의 이름이에요. *post_detail 뷰*는 `pk`변수가 필요한 거 기억하고 있겠죠? `pk=post.pk`를 사용해서 뷰에게 값을 넘겨줄 거에요. 여기서 `post`는 새로 생성한 블로그 글이에요.
 
 OK, we've talked a lot, but we probably want to see what the whole *view* looks like now, right?
 
