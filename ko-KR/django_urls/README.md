@@ -69,7 +69,7 @@ urlpatterns = [
 
 ## blog.urls
 
-Create a new empty file named `urls.py` in the `blog` directory, and open it in the code editor. All right! Add these first two lines:
+`blog` 디렉토리에 `urls.py` 라는 이름의 빈 파일을 만들고 코드 에디터로 여세요. 좋아요! 이제 아래 두줄을 추가합니다:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -80,7 +80,7 @@ from . import views
 
 우리는 장고에서 제공되는 함수 `path`와 `blog` 애플리케이션에서 사용할 모든 `views`를 불러오고 있어요. (물론 아직 뷰를 하나도 안 만들었지만, 곧 만들거니 조금만 기다리세요!)
 
-After that, we can add our first URL pattern:
+그 다음, 첫 번째 URL 패턴을 추가하세요.
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -90,14 +90,14 @@ urlpatterns = [
 ]
 ```
 
-이제 `post_list`라는 이름의 `view`가 루트 URL에 할당되었습니다. This URL pattern will match an empty string and the Django URL resolver will ignore the domain name (i.e., http://127.0.0.1:8000/) that prefixes the full URL path. 따라서, 이 패턴은 장고에게 누군가 웹사이트에 'http://127.0.0.1:8000/' 주소로 들어왔을 때 `views.post_list`를 보여주라고 말할 거에요.
+이제 `post_list`라는 이름의 `view`가 루트 URL에 할당되었습니다. 이러한 URL 패턴은 빈 문자열에 매칭이 되며, 장고 URL 확인자(resolver)는 전체 URL 경로에서 접두어(prefix)에 포함되는 도메인 이름(i.e. <http://127.0.0.1:8000/>)을 무시해서 받아들입니다. 따라서, 이 패턴은 장고에게 누군가 웹사이트에 'http://127.0.0.1:8000/' 주소로 들어왔을 때 `views.post_list`를 보여주라고 말할 거에요.
 
-The last part, `name='post_list'`, is the name of the URL that will be used to identify the view. This can be the same as the name of the view but it can also be something completely different. We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
+마지막 부분인 `name='post_list'` 는 URL에 이름을 붙인 것으로 뷰를 식별합니다. 이 부분은 뷰의 이름과 같을 수도 완전히 다를 수도 있습니다. 이름을 붙인 URL은 프로젝트의 후반에 사용할 거에요. 그러니 앱의 각 URL을 이름짓는 것은 중요합니다. 또 URL에 고유한 이름을 붙여, 외우고 부르기 쉽게 만들어야 해요.
 
 지금 http://127.0.0.1:8000를 접속 하려 하면 'web page not available(웹 페이지를 사용할 수 없습니다)'와 같은 메세지가 보일 겁니다. 이렇게 뜨는건 지금은 서버가(`runserver`라고 입력했던걸 기억하시나요?) 실행되고 있지 않기 때문이에요. 서버 콘솔을 보고 왜 그런지 이유를 찾아봅시다.
 
-![Error](images/error1.png)
+![오류](images/error1.png)
 
-콘솔에서 에러가 발생했네요. 하지만 걱정하지 마세요. 에러는 해결할 방법을 알려준답니다. : __no attribute 'post_list'__ 라는 메시지가 보일 텐데요. 이것은 장고가 찾고 사용하려고하는 *뷰*가 아직 없다는 거에요. 이 단계에서 `/admin/`로도 접속되지 않을 거에요. 앞으로 고쳐볼 테니 걱정하지 마세요. 혹시 여러분이 다른 에러 메시지를 보게 된다면, 웹서버를 껐다 켜보세요. To do that, in the console window that is running the web server, stop it by pressing Ctrl+C (the Control and C keys together). On Windows, you might have to press Ctrl+Break. Then you need to restart the web server by running a `python manage.py runserver` command.
+콘솔에서 에러가 발생했네요. 하지만 걱정하지 마세요. 에러는 해결할 방법을 알려준답니다. : __no attribute 'post_list'__ 라는 메시지가 보일 텐데요. 이것은 장고가 찾고 사용하려고하는 *뷰*가 아직 없다는 거에요. 이 단계에서 `/admin/`로도 접속되지 않을 거에요. 앞으로 고쳐볼 테니 걱정하지 마세요. 혹시 여러분이 다른 에러 메시지를 보게 된다면, 웹서버를 껐다 켜보세요. 이걸 하기 위해서는 콘솔창에서 실행되고 있는 웹 서버를 Ctrl+C 로 중지해요(Control 키와 C 키를 동시에 눌러야해요). 윈도우 에서는 Ctrl+Break 키를 눌러야 할거에요. 그리고 `python manage.py runserver` 명령을 입력해, 웹서버를 다시 시작해야 해요.
 
-> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/2.2/topics/http/urls/
+> 장고 URL 설정에 대해 더 알고 싶다면 공식 문서를 읽어보세요. : https://docs.djangoproject.com/en/2.2/topics/http/urls/
