@@ -12,7 +12,7 @@
 
 # Git
 
-> **Note** If you already did the [installation steps](../installation/README.md), there's no need to do this again – you can skip to the next section and start creating your Git repository.
+> **참고** 이미 [설치 단계](../installation/README.md)를 거쳤다면, 이 부분을 다시 하실 필요는 없습니다 - 바로 다음 장으로 넘어 가 Git 저장소 만들기를 시작하세요.
 
 {% include "/deploy/install_git.md" %}
 
@@ -101,7 +101,7 @@ Git은 이 디렉토리에 모든 파일들과 폴더들의 변경점을 추적�
 
 {% filename %}command-line{% endfilename %}
 
-    $ git add .
+    $ git add --all .
     $ git commit -m "My Django Girls app, first commit"
      [...]
      13 files changed, 200 insertions(+)
@@ -149,7 +149,7 @@ Github에 push를 하면, Github 유저네임과 비밀번호를 입력하라고
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 
-이제 코드가 Github에 업로드 되었습니다. Go and check it out! [Django](https://github.com/django/django), [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial)뿐만 아니라 수많은 훌륭한 오픈소스 소프트웨어 프로젝트들이 GitHub에서 코드를 호스팅하고 있어요. 방금 여러분이 한 것처럼 말이죠. :) :)
+이제 코드가 Github에 업로드 되었습니다. 가서 확인해보세요! [Django](https://github.com/django/django), [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial)뿐만 아니라 수많은 훌륭한 오픈소스 소프트웨어 프로젝트들이 GitHub에서 코드를 호스팅하고 있어요. 방금 여러분이 한 것처럼 말이죠. :) :)
 
 # PythonAnywhere에서 블로그 설정하기
 
@@ -218,7 +218,7 @@ PythonAnywhere에서는 위의 과정들이 모두 자동화되어 있습니다.
 
 ## 이제 세상에 공개되었습니다!
 
-Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want. :)
+이제 귀하의 사이트는 internet상에 공개되었습니다. PythonAnywhere의 "Web" 페이지를 클릭해 링크를 받아오세요. 이 링크는 귀하가 원하는 모든 사람에게 공유될 수 있습니다. 
 
 > **알림**이 안내서는 초보자를 위한 튜토리얼입니다. 쉬운 안내를 위해서 보안상 권장되지 않는 방법도 몇개 사용했습니다. 이 프로젝트를 기반으로 하거나 혹은 아예 새로운 프로젝트를 실행하려면, 사이트 보안을 위해 [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/)를 살펴보세요.
 
