@@ -12,10 +12,10 @@ Let's create a `base.html` file in `blog/templates/blog/`:
 
 ```
 blog
-└───templates
-    └───blog
-            base.html
-            post_list.html
+└── templates
+    └── blog
+        ├── base.html
+        └── post_list.html
 ```
 
 Then open it up in the code editor and copy everything from `post_list.html` to `base.html` file, like this:
