@@ -171,7 +171,7 @@
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pip{{ book.pa_py_version }} install --user pythonanywhere
+    $ pip3.8 install --user pythonanywhere
     
 
 Αυτό θα εμφανίσει κάτι σαν `Collecting pythonanywhere` και στο τέλος θα τελειώσει με μια γραμμή η οποία θα λέει `Successfully installed (...) pythonanywhere- (...)`.
@@ -180,7 +180,7 @@
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pa_autoconfigure_django.py --python={{ book.pa_py_version }} https://github.com/<your-github-username>/my-first-blog.git
+    $ pa_autoconfigure_django.py --python=3.8 https://github.com/<your-github-username>/my-first-blog.git
     
 
 Μπορείτε να βλέπετε τι γίνεται καθώς το πρόγραμμα τρέχει:
