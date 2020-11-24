@@ -6,9 +6,9 @@
 
 ## 환영합니다
 
-장고 걸스 튜토리얼에 오신것을 환영합니다! We are happy to see you here. :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
+장고 걸스 튜토리얼에 오신것을 환영합니다! 여기서 보게 되어 기뻐요 :) 이 튜토리얼에서는 우리가 웹 기술을 살펴보기위한 여정을 안내하며, 우리가 알고있는 웹을 작동시키기 위해 함께 알아가야하는 모든 부분을 간략하게 보여줍니다.
 
-As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine. :)
+모든 알려지지 않은 것들과 마찬가지로 이것은 모험이 될 것이지만 걱정할 필요는 없어요. 이미 여기에 다다르기 위해 용기를 내어왔기 때문에 괜찮답니다:)
 
 ## 들어가며
 
