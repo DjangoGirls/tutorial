@@ -46,7 +46,7 @@ So once again we will create a link to the page, a URL, a view and a template.
 
 Before we add the link, we need some icons to use as buttons for the link. For this tutorial, download [file-earmark-plus.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/file-earmark-plus.svg) and save it in the folder `blog/templates/blog/icons/`
 
-> Note: To download the SVG image, click on the link and save the file using the keyboard shortcut `Ctrl + S`(Windows/Linux) or `Cmd + S`(MacOS).
+> Note: To download the SVG image, open the context menu on the link (usually by right-clicking on it) and choose "Save link as" option. Now you can navigate to the desired directory in the window on your screen and save the file.
 
 It's time to open `blog/templates/blog/base.html` in the code editor. Now we can use this icon file inside the base template as follow. In the `div` named `container` inside `page-header` `div` tag, we will add a link:
 
