@@ -171,7 +171,7 @@ Dopremanje veb aplikacije na PythonAnywhere uključuje povlačenje koda sa GitHu
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pip{{ book.pa_py_version }} install --user pythonanywhere
+    $ pip3.8 install --user pythonanywhere
     
 
 Ovo bi trebalo da ispiše neke stvari kao `Collecting pythonanywhere` i da se eventualno završi natpisom `Successfully installed (...) pythonanywhere- (...)`.
@@ -180,7 +180,7 @@ Sada treba da pokrenemo alat koji će nam pomoći da automatski konfigurišemo n
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pa_autoconfigure_django.py --python={{ book.pa_py_version }} https://github.com/<your-github-username>/my-first-blog.git
+    $ pa_autoconfigure_django.py --python=3.8 https://github.com/<your-github-username>/my-first-blog.git
     
 
 Dok posmatrate kako se to izvršava, moći ćete da vidite šta se dešava:
