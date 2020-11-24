@@ -1,6 +1,6 @@
 # Django 폼
 
-이제 한 가지만 더 하면 웹사이트가 완성되어요. 바로 블로그 글을 추가하거나 수정하는 멋진 기능을 추가하는 것이죠. 장고의 `관리자` 기능도 충분히 멋있기는 하지만, 좀 더 입맛에 맞게 바꾸고 예쁘게 꾸미기에는 좀 한계가 있습니다. With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
+이제 한 가지만 더 하면 웹사이트가 완성되어요. 바로 블로그 글을 추가하거나 수정하는 멋진 기능을 추가하는 것이죠. 장고의 `관리자` 기능도 충분히 멋있기는 하지만, 좀 더 입맛에 맞게 바꾸고 예쁘게 꾸미기에는 좀 한계가 있습니다. `폼(양식, forms)`으로 강력한 인터페이스를 만들 수 있어요. - 우리가 상상할 수 있는 거의 모든 것을 할 수 있거든요!
 
 장고 폼이 정말 멋진 것은 아무런 준비 없이도 양식을 만들 수 있고, `ModelForm`을 생성해 자동으로 모델에 결과물을 저장할 수 있다는 거에요.
 
@@ -14,7 +14,7 @@
       └── forms.py
     
 
-OK, let's open it in the code editor and type the following code:
+자, 코드 에디터를 열어 아래 코드를 입력해 보아요.
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -30,21 +30,21 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
+위 코드를 보면 첫 번째로 forms model을 import 해야하고 (`from django import forms`), 그 다음으로 `Post` model 도 import 해야합니다. (`from .models import Post`).
 
-`PostForm` 은 이미 다들 예상 하셨듯이 우리가 만들 폼의 이름이에요. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
+`PostForm` 은 이미 다들 예상 하셨듯이 우리가 만들 폼의 이름이에요. 그리고 장고에게 이 폼이 `ModelForm`이라는 것을 알려줘야해요. (그러면 장고가 뭔가 마술을 부릴 거에요) - `forms.ModelForm`은 ModelForm이라는 것을 알려주는 구문이에요.
 
 자, 이제 다음으로 `class Meta`가 나오는데요, 이 구문은 이 폼을 만들기 위해서 어떤 model이 쓰여야 하는지 장고에게 알려주는 구문입니다. (`model = Post`).
 
-마지막으로, 이 폼에 필드를 넣으면 완성되겠죠. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
+마지막으로, 이 폼에 필드를 넣으면 완성되겠죠. 이번 폼에서는 `title` 과 `text` 만 보여지게 해 봅시다. - `author` 는 현재 로그인 하고 있는 사람이 될 것이고 (바로 당신이요!) 그리고 `created_date` 는 글이 등록되는 시간이 될 것입니다. (예를 들어, code 상에서요), 됐죠?
 
 마쳤습니다! 이제 *뷰* 에서 이 폼을 사용해 템플릿에서 보여주기만 하면 되네요.
 
-So once again we will create a link to the page, a URL, a view and a template.
+다음에는 링크, URL, 뷰 그리고 템플릿을 만들거에요.
 
 ## 폼과 페이지 링크
 
-It's time to open `blog/templates/blog/base.html` in the code editor. In the `div` named `page-header`, we will add a link:
+`blog/templates/blog/base.html` 파일을 코드 에디터로 열어봅시다. `page-header` 라는 `div` class 에 링크를 하나 추가할거에요.
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -54,7 +54,7 @@ It's time to open `blog/templates/blog/base.html` in the code editor. In the `di
 
 이 새로운 뷰는 `post_new`입니다. 부트스트랩 테마에 있는 `"glyphicon glyphicon-plus"` 클래스로 더하기 기호가 보이게 됩니다.
 
-After adding the line, your HTML file should now look like this:
+위 구문을 추가하고 나면, 이제 HTML 파일이 아래처럼 보일거에요.
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -85,11 +85,11 @@ After adding the line, your HTML file should now look like this:
 </html>
 ```
 
-After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
+페이지를 저장하고 나서 http://127.0.0.1:8000 페이지를 새로고침 해보면, `NoReverseMatch`이 에러가 나타나죠?
 
 ## URL
 
-We open `blog/urls.py` in the code editor and add a line:
+이제 코드 에디터에서 `blog/urls.py` 을 열고 아래 구문을 추가하겠습니다:
 
 {% filename %}blog/urls.py{% endfilename %}
 
