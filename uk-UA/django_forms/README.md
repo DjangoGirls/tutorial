@@ -167,15 +167,15 @@ def post_new(request):
 
 ![New form](images/new_form2.png)
 
-But, wait a minute! When you type something in the `title` and `text` fields and try to save it, what will happen?
+Одну хвилинку! Коли ви набираєте щось в полях `title` і `text` і намагайтесь зберегти зміни - що ж станеться тоді?
 
-Nothing! We are once again on the same page and our text is gone… and no new post is added. So what went wrong?
+Нічого! Ми знову опинимось на цій ж самій сторінці і наш текст зникне... і жодного нового поста. Отож, що ж пішло не так?
 
 Відповідь: нічого. Мусимо проробити трохи більше роботи з нашим блоком *view*.
 
 ## Зберігання форми
 
-Open `blog/views.py` once again in the code editor. Currently all we have in the `post_new` view is the following:
+Відкрийте `blog/views.py` знову. Наразі все що ми маємо в `post_new` це:
 
 {% filename %}blog/views.py{% endfilename %}
 
