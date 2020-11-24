@@ -94,7 +94,7 @@ class PostForm(forms.ModelForm):
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-path('post/new/', views.post_new, name='post_new'),
+шлях('post/new/', views.post_new, name='post_new'),
 ```
 
 Остаточно код буде виглядати так:
@@ -112,11 +112,11 @@ urlpatterns = [
 ]
 ```
 
-After refreshing the site, we see an `AttributeError`, since we don't have the `post_new` view implemented. Let's add it right now.
+Після того як ми оновимо сайт, ми побачимо помилку `AttributeError`, оскільки вид `post_new` не є реалізованим. Давайте додамо цей вид прямо зараз.
 
 ## post_new view
 
-Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
+Тепер відкриємо файл `blog/views.py` і додамо наступні рядки:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -124,7 +124,7 @@ Time to open the `blog/views.py` file in the code editor and add the following l
 from .forms import PostForm
 ```
 
-And then our *view*:
+А далі *view*:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -134,16 +134,16 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Щоб створити нову форму `Post`, нам потрібно викликати функцію `PostForm()` і передати її до шаблону. We will go back to this *view*, but for now, let's quickly create a template for the form.
+Щоб створити нову форму `Post`, нам потрібно викликати функцію `PostForm()` і передати її до шаблону. Повернемось пізніше до цього відображення, а зараз ми створимо шаблон для форми.
 
 ## Шаблон
 
-We need to create a file `post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
+Нам потрібно створити файл `post_edit.html` у папці `blog/templates/blog`. Щоб створити форму нам потрібно декілька речей:
 
-* We have to display the form. We can do that with (for example) {% raw %}`{{ form.as_p }}`{% endraw %}.
+* Ми маємо проявити форму. Можемо це зробити, наприклад, за допомогою `{{ form.as_p }}`. 
 * Верхній рядок має бути розміщений всередині тега HTML для форми: `<form method="POST">...</form>`.
 * Нам знадобиться кнопка Зберегти - `Save`. Створимо її в HTML за допомогою: `<button type="submit">Save</button>`.
-* And finally, just after the opening `<form ...>` tag we need to add {% raw %}`{% csrf_token %}`{% endraw %}. Це дуже важливо з міркувань безпеки вашої форми! If you forget about this bit, Django will complain when you try to save the form:
+* І нарешті зразу після відкриття тегу для форми `<form ...>` потрібно додати `{% csrf_token %}`. Це дуже важливо з міркувань безпеки вашої форми! If you forget about this bit, Django will complain when you try to save the form:
 
 ![CSFR Forbidden page](images/csrf2.png)
 
