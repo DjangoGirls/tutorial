@@ -19,9 +19,9 @@ admin.site.register(Post)
 
 ![로그인 페이지](images/login_page2.png)
 
-To log in, you need to create a *superuser* - a user account that has control over everything on the site. Go back to the command line, type `python manage.py createsuperuser`, and press enter.
+로그인을 하기 위해서는, 모든 권한을 가지는 *슈퍼유저(superuser)*를 생성해야해요. 콘솔창에서 `python manage.py createsuperuser`을 입력하고 엔터를 누르세요.
 
-> Remember, to write new commands while the web server is running, open a new terminal window and activate your virtualenv. We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
+> 웹 서버가 실행중에 새로운 명령을 입력하기 위해서 새 터미널창을 열고 당신의 virtualenv를 활성화해야 하는것을 잊지마세요. We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
 
 {% filename %}Mac OS X or Linux:{% endfilename %}
 
