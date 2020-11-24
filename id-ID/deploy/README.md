@@ -174,7 +174,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 > 
 > {% filename %}PythonAnywhere command-line{% endfilename %}
 > 
->     $ pip{{ book.pa_py_version }} install --user pythonanywhere
+>     $ pip3.8 install --user pythonanywhere
 >     
 > 
 > That should print out some things like `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
@@ -183,7 +183,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 > 
 > {% filename %}PythonAnywhere command-line{% endfilename %}
 > 
->     $ pa_autoconfigure_django.py --python={{ book.pa_py_version }} https://github.com/<your-github-username>/my-first-blog.git
+>     $ pa_autoconfigure_django.py --python=3.8 https://github.com/<your-github-username>/my-first-blog.git
 >     
 > 
 > As you watch that running, you'll be able to see what it's doing:
