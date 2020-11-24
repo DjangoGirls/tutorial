@@ -261,29 +261,29 @@ def post_new(request):
 
 잘 작동하는지 확인해보세요. http://127.0.0.1:8000/post/new/ 페이지로 접속해서 `title`과 `text`를 입력하고, 저장하세요! 새로운 블로그 글이 추가되고 `post_detail` 페이지가 나타났어요!
 
-You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a *publish button* in **Django Girls Tutorial: Extensions**.
+아마 우리가 아직 게시 일자를 세팅하지 않은 것을 눈치챘을 지 모르겠군요. 이 부분은 **Django Girls 튜터리얼: 확장**의 *게시하기 버튼* 챕터에서 다룰 것입니다.
 
 모두 잘 해냈어요!
 
-> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. 이 문제는 금방 해결할 수 있어요. 다만 이건 이 튜터리얼 후에 해야할 **과제(Homework): 여러분의 사이트에 보안 추가하기** 챕터로 남겨놓겠습니다.
+> 앞서 우리가 사용한 장고 관리자 인터 페이스처럼 로그인 된 상태라고 생각해봅시다. 하지만 사용자가 로그아웃이 되는 상황이 발생하기도 하죠.(브라우저가 닫히거나, DB가 재시작된다던가 등) 만약 로그인 되지 않은 상태에서 새 글을 저장한다면, 사용자가 로그인 정보가 부족해 누가 글을 작성한지 알 수 없어 글을 저장할 때 오류가 발생하고, 로그인시키도록 http://127.0.0.1:8000/admin 관리자 페이지가 나타나게 될 거에요. 이 문제는 금방 해결할 수 있어요. 다만 이건 이 튜터리얼 후에 해야할 **과제(Homework): 여러분의 사이트에 보안 추가하기** 챕터로 남겨놓겠습니다.
 
 ![로그인 오류 (Logged in error)](images/post_create_error.png)
 
 ## 폼 검증하기
 
-이제 장고 폼이 얼마나 멋진지 알아볼 차례에요. 블로그 글은 `title`과 `test` 필드가 반드시 있어야해요. In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
+이제 장고 폼이 얼마나 멋진지 알아볼 차례에요. 블로그 글은 `title`과 `test` 필드가 반드시 있어야해요. 우리가 만든 `Post` 모델에서는 이 필드 값들이 필요없다고 했지만(`published_date`는 제외하고) 장고는 모두 기본 값으로 설정되어 있다고 생각합니다.
 
 Try to save the form without `title` and `text`. Guess what will happen!
 
 ![폼 검증하기](images/form_validation2.png)
 
-Django is taking care to validate that all the fields in our form are correct. Isn't it awesome?
+장고는 모든 필드의 값이 올바른지 검증할 수 있답니다. 정말 멋지죠?
 
 ## 폼 수정하기
 
-Now we know how to add a new post. 하지만 이미 있던 글을 수정하려면 어떻게 해야할까요? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
+지금까지 새 게시물을 추가하는 방법에 대해 배웠어요. 하지만 이미 있던 글을 수정하려면 어떻게 해야할까요? 이 것도 앞서 했던 것과 매우 비슷해요. 빨리 해보도록 합시다! (만약 여러분이 뭔가 이해하지 못하는 부분이 있다면, 여러분의 코치에게 이전 챕터의 내용에 대해서 물어보고 차례대로 하나씩 해결해 나가야합니다)
 
-Open `blog/templates/blog/post_detail.html` in the code editor and add the line
+코드에디터로 `blog/templates/blog/post_detail.html`파일을 열어 아래와 같이 작성된 라인을 찾아주세요:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -291,7 +291,7 @@ Open `blog/templates/blog/post_detail.html` in the code editor and add the line
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-so that the template will look like this:
+이제 템플릿이 아래처럼 보일 거에요:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -312,7 +312,7 @@ so that the template will look like this:
 {% endblock %}
 ```
 
-Open `blog/urls.py` in the code editor, and add this line:
+이제 코드 에디터에서 `blog/urls.py` 을 열고 아래 구문을 추가하겠습니다:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -322,7 +322,7 @@ Open `blog/urls.py` in the code editor, and add this line:
 
 우리는 `blog/templates/blog/post_edit.html` 템플릿을 재사용할 거에요. 마지막으로 할 일은 *view*를 만드는 것입니다.
 
-Let's open `blog/views.py` in the code editor and add this at the very end of the file:
+코드 에디터로 `blog/views.py` 파일을 열어서 파일의 맨 밑에 코드를 추가해봅시다:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -342,7 +342,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-음.. 코드가 `post_new`과 거의 비슷해보이지 않나요? 하지만 완전히 같지는 않아요. For one, we pass an extra `pk` parameter from `urls`. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
+음.. 코드가 `post_new`과 거의 비슷해보이지 않나요? 하지만 완전히 같지는 않아요. 첫 번째: `url`로부터 추가로 `pk` 매개변수를 받아서 처리합니다. 두번째: `get_object_or_404(Post, pk=pk)`를 호출하여 수정하고자 하는 글의 `Post` 모델 `인스턴스(instance)`로 가져옵니다(원하는 글은 pk를 이용해 찾습니다.). 이렇게 가져온 데이터를 폼을 만들 때와(글을 수정할 때 폼에 이전에 입력했던 데이터가 있어야 하겠죠?) 폼을 저장할 때 사용하게 됩니다...
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -350,7 +350,7 @@ def post_edit(request, pk):
 form = PostForm(request.POST, instance=post)
 ```
 
-…and when we've just opened a form with this post to edit:
+...그리고 폼에 아래와 같이 수정했어요
 
 {% filename %}blog/views.py{% endfilename %}
 
