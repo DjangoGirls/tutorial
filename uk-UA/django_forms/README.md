@@ -206,7 +206,7 @@ else:
 form = PostForm(request.POST)
 ```
 
-The next thing is to check if the form is correct (all required fields are set and no incorrect values have been submitted). We do that with `form.is_valid()`.
+Наступний крок - перевірити правильність форми ( встановлено усі обов’язкові поля і не відбулося зберігання неправильних значень ). Ми зробимо це за допомогою `form.is_valid()`.
 
 Ми перевіряємо чи є форма прийнятною і якщо це так, то можемо зберегти її!
 
@@ -220,9 +220,9 @@ if form.is_valid():
     post.save()
 ```
 
-В основі, маємо тут два моменти: зберігаємо форму за допомогою `form.save` і додаємо автора (оскільки поле автор `author` було відсутнє в `PostForm` і це поле є необхідним). `commit=False` means that we don't want to save the `Post` model yet – we want to add the author first. Most of the time you will use `form.save()` without `commit=False`, but in this case, we need to supply it. `post.save()` will preserve changes (adding the author) and a new blog post is created!
+В основі, маємо тут два моменти: зберігаємо форму за допомогою `form.save` і додаємо автора (оскільки поле автор `author` було відсутнє в `PostForm` і це поле є необхідним). `commit=False` це означає, що ми не хочемо поки зберігати модель `Post` - ми хочемо спочатку додати ім’я автора. В більшості випадків ви будете використовувати `form.save()` без `commit=False`, але в даному випадку нам слід це зробити. `post.save()` це захистить зміни, які зробили ( додавання автора ) і получиться новий блог пост!
 
-Finally, it would be awesome if we could immediately go to the `post_detail` page for our newly created blog post, right? To do that we need one more import:
+Нарешті, було б чудово, якби ми могли негайно переходити на сторінку `post_detail` для нашого нещодавнього створеного допису в блозі, правда ж? Для цього нам потрібен ще один імпорт: 
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -230,7 +230,7 @@ Finally, it would be awesome if we could immediately go to the `post_detail` pag
 from django.shortcuts import redirect
 ```
 
-Add it at the very beginning of your file. And now we can say, "go to the `post_detail` page for the newly created post":
+Додайте його на самому початку вашого файлу. І тепер ми можемо сказати: перейдіть на сторінку `post_detail` для новоствореної публікації:
 
 {% filename %}blog/views.py{% endfilename %}
 
