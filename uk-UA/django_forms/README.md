@@ -14,7 +14,7 @@
        └── forms.py
     
 
-OK, let's open it in the code editor and type the following code:
+Гаразд, давайте відкриємо його в редакторі коду і наберемо такий код:
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -30,13 +30,13 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
+Спочатку нам потрібно імпортувати форми Django (`from django import forms`) та нашу модель (`from .models import Post`).
 
-`PostForm`, як ви можливо зазначили, ім'я нашої форми. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
+`PostForm`, як ви можливо зазначили, ім'я нашої форми. Нам потрібно сказати Django, що ця форма є `ModelForm` ( тому Django зробить для нас трішки магії ) – ` і рядок.ModelForm` відповідає за це.
 
 Далі, у нас є `class Meta`, де ми вказуємо для Django котра з моделей має бути використана для створення форми (`model = Post`).
 
-Зрештою, можемо зазначити якими полями має закінчуватись наша форма. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
+Зрештою, можемо зазначити якими полями має закінчуватись наша форма. У цьому сценарії ми хочемо опублікувати такі параметри як заголовок `title` і зміст `text`, дані про автора `author`, що автоматично встановлюються як дані особи, яка наразі увійшла в систему (тобто ви!), а також дата створення `created_date`, яка автоматично встановлюється при створенні публікації (тобто в коді), вірно ж?
 
 І це все! Все що нам потрібно тепер зробити це використати форму в блоці *view* і відобразити її в шаблоні.
 
