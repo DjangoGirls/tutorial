@@ -273,7 +273,7 @@ def post_new(request):
 
 이제 장고 폼이 얼마나 멋진지 알아볼 차례에요. 블로그 글은 `title`과 `test` 필드가 반드시 있어야해요. 우리가 만든 `Post` 모델에서는 이 필드 값들이 필요없다고 했지만(`published_date`는 제외하고) 장고는 모두 기본 값으로 설정되어 있다고 생각합니다.
 
-Try to save the form without `title` and `text`. Guess what will happen!
+`title`와 `text`가 없이 폼을 저장해보세요. 어떻게 될지 생각해보세요!
 
 ![폼 검증하기](images/form_validation2.png)
 
@@ -358,7 +358,7 @@ form = PostForm(request.POST, instance=post)
 form = PostForm(instance=post)
 ```
 
-OK, let's test if it works! Let's go to the `post_detail` page. There should be an edit button in the top-right corner:
+잘했어요, 이제 잘 작동하는지 확인해보세요! `post_detail` 페이지로 가보세요. 거기에 우측 상단에 수정 버튼이 있어야 합니다.
 
 ![수정 버튼(Edit button)](images/edit_button2.png)
 
@@ -366,11 +366,11 @@ OK, let's test if it works! Let's go to the `post_detail` page. There should be 
 
 ![폼 수정하기](images/edit_form2.png)
 
-Feel free to change the title or the text and save the changes!
+자유롭게 제목과 텍스트를 수정하고 저장해보세요!
 
 축하합니다! 여러분의 어플리케이션이 점점 더 완벽해지고 있어요!
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.2/topics/forms/
+장고 폼에 대해 자세한 정보가 필요하다면 공식 문서를 읽어보세요: https://docs.djangoproject.com/en/2.2/topics/forms/
 
 ## 보안
 
