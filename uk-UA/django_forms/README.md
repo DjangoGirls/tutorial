@@ -416,20 +416,20 @@ form = PostForm(instance=post)
 {% endif %}
 ```
 
-Оскільки ви швидше за все увійшли в систему, якщо ви оновите сторінку, ви не побачите нічого зміненого. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
+Оскільки ви швидше за все увійшли в систему, якщо ви оновите сторінку, ви не побачите нічого зміненого. Завантажте сторінку в інший браузер або вікно анонімного перегляду (що називається "InPrivate" у Windows Edge), і ви побачите, що посилання не відображається, і піктограма також не відображається!
 
 ## Ще одне: розгортання!
 
 Давайте поглянемо чи це все працює на PythonAnywhere. Час для ще одного деплою!
 
-* First, commit your new code, and push it up to GitHub:
+* Спочатку зафіксуйте свій новий код і зробіть його на GitHub:
 
 {% filename %}command-line{% endfilename %}
 
     $ git status
     $ git add .
     $ git status
-    $ git commit -m "Added views to create/edit blog post inside the site."
+    $ git commit -m "Додано подання для створення / редагування публікації в блозі сайту."
     $ git push
     
 
@@ -442,8 +442,8 @@ form = PostForm(instance=post)
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+(Не забудьте замінити `<your-pythonanywhere-domain>` вашим фактичним субдоменом PythonAnywhere, без кутових дужок.)
 
-* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (use the menu button in the upper right of the console) and hit **Reload**. Refresh your https://subdomain.pythonanywhere.com blog to see the changes.
+* Нарешті, перейти на сторінку ["Web"](https://www.pythonanywhere.com/web_app_setup/) ( використати кнопку меню у верхньому правому куті консолю ) та натисніть **Перезавантажити**. Оновіть свій https://subdomain.pythonanywhere.com блог, щоб почати зміни.
 
-And that should be it. Congrats! :)
+І на цьому все! Вітання вас :)
