@@ -53,7 +53,7 @@ PaizaCloud Cloud IDE 의 터미널은 당신의 명령어를 기다리고 있습
 
     mkdir djangogirls
     cd djangogirls
-    python3 -m venv myvenv
+    python3. -mvenv myvenv
     source myvenv/bin/activate
     pip install django~={{ book.django_version }}
     
