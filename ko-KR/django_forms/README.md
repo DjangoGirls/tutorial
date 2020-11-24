@@ -112,11 +112,11 @@ urlpatterns = [
 ]
 ```
 
-After refreshing the site, we see an `AttributeError`, since we don't have the `post_new` view implemented. Let's add it right now.
+브라우저에 사이트를 다시 불러오면 `AttributeError`가 보이게 됩니다. 왜냐하면 아직 우리는 `post_new`뷰를 구현하지 않았기 때문이죠. 이제 하나 추가해봅시다.
 
-## post_new view
+## 새로운 뷰 게시
 
-Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
+코드 에디터로 `blog/views.py` 파일을 열어서 `from` 아랫줄에 아래와 같은 코드를 추가합니다.
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -124,7 +124,7 @@ Time to open the `blog/views.py` file in the code editor and add the following l
 from .forms import PostForm
 ```
 
-And then our *view*:
+그리고 *view*에 추가합니다.
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -134,20 +134,20 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-새 `Post` 폼을 추가하기 위해 `PostForm()` 함수를 호출하도록 하여 템플릿에 넘깁니다. We will go back to this *view*, but for now, let's quickly create a template for the form.
+새 `Post` 폼을 추가하기 위해 `PostForm()` 함수를 호출하도록 하여 템플릿에 넘깁니다. 이따가 *view*로 다시 돌아와서 이 작업을 하겠지만, 지금 당장은 폼을 위한 템플릿을 먼저 빨리 만들어보도록 할게요.
 
 ## 템플릿
 
-We need to create a file `post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
+이번에는 코드 에디터로 `blog/templates/blog` 디렉토리 안에 `post_edit.html` 파일을 생성해 폼이 작동할 수 있게 만들거에요.
 
-* We have to display the form. We can do that with (for example) {% raw %}`{{ form.as_p }}`{% endraw %}.
-* The line above needs to be wrapped with an HTML form tag: `<form method="POST">...</form>`.
-* We need a `Save` button. We do that with an HTML button: `<button type="submit">Save</button>`.
-* And finally, just after the opening `<form ...>` tag we need to add {% raw %}`{% csrf_token %}`{% endraw %}. 이 작업은 폼 보안을 위해 중요하답니다! If you forget about this bit, Django will complain when you try to save the form:
+* 이제 폼을 나타나게 할거에요. 예를 들어 {% raw %}`{{ form.as_p }}`{% endraw %} 로 나타나게 할 수 있답니다.
+* 위 코드를 HTML태그로 폼을 감싸세요. `<form method="POST">...</form>`.
+* `Save` 버튼이 필요합니다. 이 것은 HTML 버튼으로 만들 수 있어요: `<button type="submit">Save</button>`.
+* 그리고 마지막으로 열린 `<form ...>` 태그에 {% raw %}`{% csrf_token %}`{% endraw %}를 추가해야 해요. 이 작업은 폼 보안을 위해 중요하답니다! 만약 이걸 잊어버린다면, 장고는 당신이 폼을 저장할때 주의를 시킬 거에요.
 
 ![CSFR 서버가 허용하지 않는 웹 페이지(Forbidden page)](images/csrf2.png)
 
-OK, so let's see how the HTML in `post_edit.html` should look:
+네, 이제 `post_edit.html` 파일의 HTML을 확인해볼게요:
 
 {% filename %}blog/templates/blog/post_edit.html{% endfilename %}
 
@@ -167,15 +167,15 @@ OK, so let's see how the HTML in `post_edit.html` should look:
 
 ![새 폼(New form)](images/new_form2.png)
 
-But, wait a minute! When you type something in the `title` and `text` fields and try to save it, what will happen?
+그런데, 잠깐만요! `title`과 `text` 필드에 아무거나 입력하고 저장해보세요. 어떻게 됐나요?
 
-Nothing! We are once again on the same page and our text is gone… and no new post is added. So what went wrong?
+글이 사라졌어요! 한번 더 해봐도 내가 입력한 글들은 어디론가로 사라지고는 새 글이 추가되지 않아요. 뭐가 잘못된걸까요?
 
 정답은요: 여러분이 잘못한 게 없어요. 단지 *view*에 조금 작업이 필요할 뿐이에요.
 
 ## 폼 저장하기
 
-Open `blog/views.py` once again in the code editor. Currently all we have in the `post_new` view is the following:
+코드 에디터로 `blog/views.py`를 다시 여세요. 지금 여러분이 보고 있는 `post_new` 뷰는 아래와 같을 거에요:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -185,7 +185,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-When we submit the form, we are brought back to the same view, but this time we have some more data in `request`, more specifically in `request.POST` (the naming has nothing to do with a blog "post"; it's to do with the fact that we're "posting" data). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? 이렇게 POST로 넘겨진 폼 필드의 값들은 이제 `request.POST`에 저장됩니다. `POST`로 된 값을 다른 걸로 바꾸면 안돼요.(`method` 속성의 값으로 넣을 수 있는 유효한 값 중에 `GET` 같은 것도 있지만 post와 어떤 차이점이 있는지 등에 대해서 다루기에는 너무 길어질 것 같아 생략할게요.)
+우리가 폼을 제출할 때, 동일한 뷰를 불러옵니다. 이 때 `request`에는 우리가 입력했던 데이터들을 가지고 있는데, `request.POST`가 이 데이터를 가지고 있습니다. (POST는 글 데이터를 "등록하는(posting)"하는 것을 의미합니다. 블로그 "글"을 의미하는 "post"과 관련이 없어요.) HTML에서 `<form>`정의에 `method="POST"`라는 속성이 있던 것이 기억나나요? 이렇게 POST로 넘겨진 폼 필드의 값들은 이제 `request.POST`에 저장됩니다. `POST`로 된 값을 다른 걸로 바꾸면 안돼요.(`method` 속성의 값으로 넣을 수 있는 유효한 값 중에 `GET` 같은 것도 있지만 post와 어떤 차이점이 있는지 등에 대해서 다루기에는 너무 길어질 것 같아 생략할게요.)
 
 So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. 여기서 조건문을 추가시켜야해요. (`if`을 사용할게요):
 
