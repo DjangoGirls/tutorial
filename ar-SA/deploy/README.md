@@ -171,7 +171,7 @@ Git سوف يتعقب التغييرات لكافة الملفات والمجل�
 > 
 > {% filename %}PythonAnywhere command-line{% endfilename %}
 > 
->     $ pip{{ book.pa_py_version }} install --user pythonanywhere
+>     $ pip3.8 install --user pythonanywhere
 >     
 > 
 > يجب أنت ترى بعض الملاحظات ك`Collecting pythonanywhere` و تنتهي بالعبارة `Successfully installed (...) pythonanywhere- (...)`.
@@ -180,7 +180,7 @@ Git سوف يتعقب التغييرات لكافة الملفات والمجل�
 > 
 > {% filename %}PythonAnywhere command-line{% endfilename %}
 > 
->     $ pa_autoconfigure_django.py --python={{ book.pa_py_version }} https://github.com/<your-github-username>/my-first-blog.git
+>     $ pa_autoconfigure_django.py --python=3.8 https://github.com/<your-github-username>/my-first-blog.git
 >     
 > 
 > بينما تشاهد ذلك يعمل، سوف يمكنك رؤية ماذا يفعل:
