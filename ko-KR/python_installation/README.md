@@ -8,8 +8,8 @@
 
 # 파이썬 설치하기
 
-> **Note**만약 크롬북을 사용하고 있다면 이번 장은 생략하고 [크롬북 설정 지침](../chromebook_setup/README.md)을 따르고 있는지 확인하세요.
+> **참고** 만약 크롬북을 사용한다면, 이번 장을 생략하고 [크롬 북 설정](../chromebook_setup/README.md)을 정확하게 따르세요.
 > 
-> **Note** If you already worked through the [installation steps](../installation/README.md), there's no need to do this again – you can skip straight ahead to the next chapter!
+> **참고** 이미 [설치 단계](../installation/README.md)를 거쳤다면, 이 부분을 다시 하실 필요는 없습니다 - 바로 다음 장으로 넘어 가세요!
 
 {% include "/python_installation/instructions.md" %}
