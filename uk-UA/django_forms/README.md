@@ -40,11 +40,11 @@ class PostForm(forms.ModelForm):
 
 І це все! Все що нам потрібно тепер зробити це використати форму в блоці *view* і відобразити її в шаблоні.
 
-So once again we will create a link to the page, a URL, a view and a template.
+То ж ще раз ми створимо посилання на сторінку, URL- адресу, вид і шаблон.
 
 ## Посилання на сторінку з формою
 
-It's time to open `blog/templates/blog/base.html` in the code editor. In the `div` named `page-header`, we will add a link:
+Час відкрити `blog/templates/blog/base.html` у редакторі коду. Додаємо посилання всередину блоку `div` з ім’ям `page-header`.
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -52,9 +52,9 @@ It's time to open `blog/templates/blog/base.html` in the code editor. In the `di
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-Note that we want to call our new view `post_new`. The class `"glyphicon glyphicon-plus"` is provided by the bootstrap theme we are using, and will display a plus sign for us.
+Зверніть увагу, що ми хочемо викликати наше нове подання `post_new`. забезпечується темою bootstrap, яку ми використовуємо, і відображатиме для нас знак плюса.
 
-After adding the line, your HTML file should now look like this:
+Після додавання відповідного рядка, ваш файл HTML повинен виглядати таким чином:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -85,11 +85,11 @@ After adding the line, your HTML file should now look like this:
 </html>
 ```
 
-After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
+Після зберігання та оновлення сторінки http://127.0.0.1:8000 ви побачите знайому помилку `NoReverseMatch` error. Правда ж? Добре! 
 
 ## URL
 
-We open `blog/urls.py` in the code editor and add a line:
+Відкриваємо `blog/urls.py` і додаємо відповідний рядок: 
 
 {% filename %}blog/urls.py{% endfilename %}
 
