@@ -265,15 +265,15 @@ def post_new(request):
 
 Просто чудово!
 
-> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. Проблему тимчасово буде вирішено. Безповоротне розв'язання проблеми чекає на вас у розділі **Домашня робота: безпека вашого сайту!** після освоєння головної програми.
+> Оскільки нещодавно ми працювали з інтерфейсом Django адміністратора, система вважає, що ми залогінились. Є кілька ситуацій, які могли призвести до того, що ми вийшли з системи ( закриття браузера, перезавантаження комп’ютера або бази даних, т.д. ) Якщо під час створення допису ви помітите, що у вас з’являються помилки, пов’язані з відсутністю зареєстрованого користувача, будь ласка перейдіть на сторінку адміністратора http://127.0.0.1:8000/admin і увійдіть знову. Проблему тимчасово буде вирішено. Безповоротне розв'язання проблеми чекає на вас у розділі **Домашня робота: безпека вашого сайту!** після освоєння головної програми.
 
 ![Logged in error](images/post_create_error.png)
 
 ## Form validation
 
-А тепер, ми покажемо вам наскільки круто використовувати Django форми. Блог пост повинен мати такі поля як заголовок - `title` і зміст - `text`. In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
+А тепер, ми покажемо вам наскільки круто використовувати Django форми. Блог пост повинен мати такі поля як заголовок - `title` і зміст - `text`. В нашій моделі `Post` ми не вказали ( на відміну від дати публікації - `published_date`), що ці поля є обов’язковими, отже Django, за умовчуванням, очікує що вони будуть заповненими.
 
-Try to save the form without `title` and `text`. Guess what will happen!
+Намагайтесь зберегти форму без атрибутів `title` і `text`. Напевне здогадуємось що відбудеться!
 
 ![Form validation](images/form_validation2.png)
 
