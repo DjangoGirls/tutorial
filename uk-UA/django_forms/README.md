@@ -238,9 +238,9 @@ from django.shortcuts import redirect
 return redirect('post_detail', pk=post.pk)
 ```
 
-`post_detail` is the name of the view we want to go to. Пам'ятаєте, що цей вид потребує змінної `pk`? To pass it to the views, we use `pk=post.pk`, where `post` is the newly created blog post!
+`post_detail` ім’я виду, яке ми хочемо розглянути. Пам'ятаєте, що цей вид потребує змінної `pk`? Щоб передати вище згаданої змінної, використаємо `pk=post.pk`, where `post` є новоствореним постом!
 
-OK, we've talked a lot, but we probably want to see what the whole *view* looks like now, right?
+Що ж, добре, забагато розмови, напевне ми хочемо побачити як відображається даний вид в цілому, чи не так?
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -259,9 +259,9 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Подивимося, чи усе працює. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it… and voilà! The new blog post is added and we are redirected to the `post_detail` page!
+Подивимося, чи усе працює. Перейдіть на сторінку http://127.0.0.1:8000/post/new/, і додайте `title` і `text`, не забудьте зберегти! Новий блог пост додано і нас перенаправило на сторінку `post_detail` !
 
-You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a *publish button* in **Django Girls Tutorial: Extensions**.
+Ви напевне замітили, що ми встановлюємо дату публікації перед збереженням поста. Згодом, ми введемо * кнопку публікації * в ** Django Girls Tutorial: Extensions**.
 
 Просто чудово!
 
