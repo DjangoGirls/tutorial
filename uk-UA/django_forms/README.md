@@ -277,13 +277,13 @@ def post_new(request):
 
 ![Form validation](images/form_validation2.png)
 
-Django is taking care to validate that all the fields in our form are correct. Isn't it awesome?
+Django дбає про те, щоб перевірити правильність усіх полів у нашій формі. Хіба це не приголомшливо?
 
 ## Edit form
 
-Now we know how to add a new post. Та якщо ми раптом захочемо відредагувати вже існуючу? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
+Тепер ми знаємо як додавати нову форму. Та якщо ми раптом захочемо відредагувати вже існуючу? Це дуже схоже на те, що ми щойно зробили. Давайте швиденько створимо деякі важливі речі. ( Якщо ви чогось не розумієте, вам слід запитати у свого тренера або переглянути попередні параграфи, оскільки всі ці кроки ми вже розглянули ).
 
-Open `blog/templates/blog/post_detail.html` in the code editor and add the line
+Відкрийте `blog/templates/blog/post_detail.html` і додайте наступний рядок
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -291,7 +291,7 @@ Open `blog/templates/blog/post_detail.html` in the code editor and add the line
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-so that the template will look like this:
+тому, шаблон буде виглядати таким чином:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -312,7 +312,7 @@ so that the template will look like this:
 {% endblock %}
 ```
 
-Open `blog/urls.py` in the code editor, and add this line:
+Відкрийте `blog/urls.py` і додаємо відповідний рядок:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -320,9 +320,9 @@ Open `blog/urls.py` in the code editor, and add this line:
     path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
 ```
 
-We will reuse the template `blog/templates/blog/post_edit.html`, so the last missing thing is a *view*.
+Повторюємо шаблон і використовуємо `blog/templates/blog/post_edit.html`, отож остання річ, яка залишила це відображення.
 
-Let's open `blog/views.py` in the code editor and add this at the very end of the file:
+Давайте відкриємо `blog/views.py` і додамо це в самому кінці файлу:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -342,7 +342,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Виглядає майже точно так як і наш вид `post_new`, чи не так? Але не зовсім. For one, we pass an extra `pk` parameter from `urls`. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
+Виглядає майже точно так як і наш вид `post_new`, чи не так? Але не зовсім. Спочатку: ми передамо додатковий параметр `pk` з адресного рядку. Наступне: ми отримуємо модель `Post`, яку хотіли б редагувати як `get_object_or_404(Post, pk=pk)` і потім, при створенні форми ми передаємо цей пост як приклад `instance`, коли зберігаємо форму...
 
 {% filename %}blog/views.py{% endfilename %}
 
