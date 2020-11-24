@@ -222,7 +222,7 @@ if form.is_valid():
 
 일반적으로, 이 작업을 두 단계로 나눌 수 있어요: `form.save`로 폼을 저장하는 작업과 작성자를 추가하는 작업입니다.(`PostForm`에는 `작성자(author)` 필드가 없지만, 필드 값이 필요하죠). `commit=False`란 넘겨진 데이터를 바로 `Post` 모델에 저장하지는 말라는 뜻입니다. - 왜냐하면 작성자를 추가한 다음 저장해야하니까요. 대부분의 경우에는 `commit=False`를 쓰지 않고 바로 `form.save()`를 사용해서 저장해요. 다면 여기서는 작성자 정보를 추가하고 저장해야하기 때문에 commit=False를 사용하는 거에요. `post.save()`는 변경사항(작성자 정보를 포함)을 유지할 것이고 새 블로그 글이 만들어 질거에요!
 
-Finally, it would be awesome if we could immediately go to the `post_detail` page for our newly created blog post, right? To do that we need one more import:
+끝으로, 새 블로그 글을 작성한 다음에 `post_detail` 페이지로 바로 이동할 수 있으면 좋겠죠? 이 작업을 하려면 한 가지를 더 불러와야해요.
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -240,7 +240,7 @@ return redirect('post_detail', pk=post.pk)
 
 `blog.views.post_detail`은 이동해야 할 뷰의 이름이에요. *post_detail 뷰*는 `pk`변수가 필요한 거 기억하고 있겠죠? `pk=post.pk`를 사용해서 뷰에게 값을 넘겨줄 거에요. 여기서 `post`는 새로 생성한 블로그 글이에요.
 
-OK, we've talked a lot, but we probably want to see what the whole *view* looks like now, right?
+잘 했어요. 너무 설명이 길어졌네요... 이제 *view*의 전체 코드를 확인할게요.
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -259,7 +259,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-잘 작동하는지 확인해보세요. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it… and voilà! The new blog post is added and we are redirected to the `post_detail` page!
+잘 작동하는지 확인해보세요. http://127.0.0.1:8000/post/new/ 페이지로 접속해서 `title`과 `text`를 입력하고, 저장하세요! 새로운 블로그 글이 추가되고 `post_detail` 페이지가 나타났어요!
 
 You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a *publish button* in **Django Girls Tutorial: Extensions**.
 
