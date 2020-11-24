@@ -171,7 +171,7 @@ Git会追踪这个目录下所有文件和文件夹的更改，但是有一些�
 
 {% filename %}PythonAnywhere 命令行{% endfilename %}
 
-    $ pip{{ book.pa_py_version }} install --user pythonanywhere
+    $ pip3.8 install --user pythonanywhere
     
 
 这应该列印出一些内容，例如 `收集 pythonanywhere`，并最终以 `Successfully installed (...) pythonanywhere- (...)`结束.
@@ -180,7 +180,7 @@ Git会追踪这个目录下所有文件和文件夹的更改，但是有一些�
 
 {% filename %}PythonAnywhere 命令行{% endfilename %}
 
-    $ pa_autoconfigure_django.py --python={{ book.pa_py_version }} https://github.com/<your-github-username>/my-first-blog.git
+    $ pa_autoconfigure_django.py --python=3.8 https://github.com/<your-github-username>/my-first-blog.git
     
 
 当你看到其运行时，你会看到它所做的事情：
