@@ -172,7 +172,7 @@ PythonAnywhere'de bir web yazılımı konuşlandırmak için kodun GitHub'dan ç
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pip{{ book.pa_py_version }} install --user pythonanywhere
+    $ pip3.8 install --user pythonanywhere
     
 
 Bu komut ekrana bir takım şeyler yazar, mesela `Collecting pythonanywhere` den başlayıp, sonunda `Successfully installed (...) pythonanywhere- (...)` gibi bir şey der.
@@ -181,7 +181,7 @@ Bu komut ekrana bir takım şeyler yazar, mesela `Collecting pythonanywhere` den
 
 {% filename %}PythonAnywhere komut satırı{% endfilename %}
 
-    $ pa_autoconfigure_django.py --python={{ book.pa_py_version }} https://github.com/<your-github-username>/my-first-blog.git
+    $ pa_autoconfigure_django.py --python=3.8 https://github.com/<your-github-username>/my-first-blog.git
     
 
 Bu komut çalışırken neler olup bittiğini izleyebilirsiniz:
