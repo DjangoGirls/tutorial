@@ -171,7 +171,7 @@ Per implementare un'applicazione web su PythonAnywhere devi prendere il codice d
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pip{{ book.pa_py_version }} install --user pythonanywhere
+    $ pip3.8 install --user pythonanywhere
     
 
 Ora dovresti leggere: `Collecting pythonanywhere` e un'eventuale riga finale che dice `Successfully installed (...) pythonanywhere- (...)`.
@@ -180,7 +180,7 @@ Ora eseguiamo l'helper per configurare automaticamente la nostra applicazione da
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pa_autoconfigure_django.py --python={{ book.pa_py_version }} https://github.com/<your-github-username>/my-first-blog.git
+    $ pa_autoconfigure_django.py --python=3.8 https://github.com/<your-github-username>/my-first-blog.git
     
 
 Guardando l'esecuzione, potrai vedere cosa sta facendo:
