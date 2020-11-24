@@ -143,11 +143,11 @@ def post_new(request):
 * Ми маємо проявити форму. Можемо це зробити, наприклад, за допомогою `{{ form.as_p }}`. 
 * Верхній рядок має бути розміщений всередині тега HTML для форми: `<form method="POST">...</form>`.
 * Нам знадобиться кнопка Зберегти - `Save`. Створимо її в HTML за допомогою: `<button type="submit">Save</button>`.
-* І нарешті зразу після відкриття тегу для форми `<form ...>` потрібно додати `{% csrf_token %}`. Це дуже важливо з міркувань безпеки вашої форми! If you forget about this bit, Django will complain when you try to save the form:
+* І нарешті зразу після відкриття тегу для форми `<form ...>` потрібно додати `{% csrf_token %}`. Це дуже важливо з міркувань безпеки вашої форми! Якщо ви раптом забудете про цей біт, Django поскаржиться, коли будете намагатися зберегти форму:
 
 ![CSFR Forbidden page](images/csrf2.png)
 
-OK, so let's see how the HTML in `post_edit.html` should look:
+Добре, отож давайте розглянемо як маж виглядати HTML код в `post_edit.html`:
 
 {% filename %}blog/templates/blog/post_edit.html{% endfilename %}
 
