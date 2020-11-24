@@ -4,9 +4,9 @@
 
 ## 템플릿 태그는 무엇인가요?
 
-You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
+HTML에 여러분은 파이썬 코드를 바로 넣을 수 없어요. 브라우저는 HTML만을 알고 있고 파이썬 코드를 이해할 수 없기 때문이에요. 알다시피 HTML는 정적이지만, 파이썬은 동적입니다.
 
-**Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster. Cool!
+**장고 템플릿 태그**는 파이썬을 HTML로 바꿔주어, 빠르고 쉽게 동적인 웹사이트를 만들 수 있게 도와주어요. 야호!
 
 ## post 목록 템플릿 보여주기
 
@@ -20,7 +20,7 @@ You see, in HTML, you can't really write Python code, because browsers don't und
 {{ posts }}
 ```
 
-`blog/templates/blog/post_list.html` 템플릿에서 하세요. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. 파일을 저장하고 페이지를 새로 고침하면 이렇게 보입니다. :
+`blog/templates/blog/post_list.html` 템플릿에서 하세요. 에디터로 열고 두 번째 `<div>`에서 세 번째 `</div>`까지를 `{{ posts }}`로 바꾸세요. 파일을 저장하고 페이지를 새로 고침하면 이렇게 보입니다. :
 
 ![그림 13.1](images/step1.png)
 
@@ -46,7 +46,7 @@ You see, in HTML, you can't really write Python code, because browsers don't und
 
 ![그림 13.2](images/step2.png)
 
-잘 작동하네요! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. HTML과 템플릿 태그를 섞어 사용하면 멋있게 만들 수 있어요. 우리의 `body`는 다음과 같을 거에요. :
+잘 작동하네요! 그런데 디자인이 별로죠. 앞에서 **HTML 소개** 챕터에서 했던 정적 글들처럼 보이면 참 좋을텐데 말이에요. HTML과 템플릿 태그를 섞어 사용하면 멋있게 만들 수 있어요. 우리의 `body`는 다음과 같을 거에요. :
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -68,7 +68,7 @@ You see, in HTML, you can't really write Python code, because browsers don't und
 
 ![그림 13.3](images/step3.png)
 
-Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }}`)? `Post` 모델에서 정의한 각 필드의 데이터에 접근하기 위해 이 표기법을 사용합니다. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
+(`{{ post.title }}`라던가 `{{ post.text }}`) 같이 이전과 다른 표기법을 사용한 것을 눈치 채셨나요? `Post` 모델에서 정의한 각 필드의 데이터에 접근하기 위해 이 표기법을 사용합니다. 또한 `|linebreaks` 같이 파이프 문자(|)도 사용해요. 이건 블로그 글 텍스트에서 행이 바뀌면 문단으로 변환하도록 하라는 의미입니다. 행바뀜을 문단으로 변환하는 필터를 적용한다는 표현을 쓰기도 합니다.
 
 ## 한 가지 더
 
