@@ -350,7 +350,7 @@ def post_edit(request, pk):
 form = PostForm(request.POST, instance=post)
 ```
 
-…and when we've just opened a form with this post to edit:
+...а коли ми просто відкриємо форму з цим постом для редагування:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -358,7 +358,7 @@ form = PostForm(request.POST, instance=post)
 form = PostForm(instance=post)
 ```
 
-OK, let's test if it works! Let's go to the `post_detail` page. There should be an edit button in the top-right corner:
+Добре, давайте подивимось чи все працює! Перейдімо на сторінку `post_detail`. У верхньому правому кутку має з’явитися кнопка редагування:
 
 ![Edit button](images/edit_button2.png)
 
