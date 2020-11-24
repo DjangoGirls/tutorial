@@ -187,7 +187,7 @@ def post_new(request):
 
 Коли ми відправляємо форму, ми потрапляємо в той самий view, але цього разу ми маємо більше даних в `request`, а якщо бути точним - в `request.POST` ( ця назва не є пов’язаною з блогерським терміном "пост", вона пов’язана з тим, що ми "постимо" дані. Запам’ятайте, що у файлі HTML наше визначення `<form>` містило деяку зміну `method="POST"`? Усі поля форми на даний момент знаходитимуться в `request.POST`. Ви не повинні перейменовувати `POST` на щось інше (лише єдине альтернативне прийнятне значення для атрибуту `method` це `GET`, але ми не маємо часу пояснювати в чому різниця).
 
-So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. Таким чином, маємо додати умову (використаємо для цього `if`):
+Отож в нашому * режимі перегляду * ми маємо дві окремих ситуацій, що слід виконувати: спочатку, коли ми отримуємо доступ до сторінки вперше і хочемо отримати порожню форму, і вдруге, коли ми повертаємось до * виду * з усіма даними формами, які ми щойно вказали. Таким чином, маємо додати умову (використаємо для цього `if`):
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -198,7 +198,7 @@ else:
     form = PostForm()
 ```
 
-It's time to fill in the dots `[...]`. If `method` is `POST` then we want to construct the `PostForm` with data from the form, right? We will do that as follows:
+Час заповнювати точки `[...]`. Якщо ` метод ` `POST` тоді ми хочемо створити `PostForm` з даними нам формами, правда ж? Ми можемо зробити наступним чином:
 
 {% filename %}blog/views.py{% endfilename %}
 
