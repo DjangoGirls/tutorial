@@ -366,17 +366,17 @@ form = PostForm(instance=post)
 
 ![Edit form](images/edit_form2.png)
 
-Feel free to change the title or the text and save the changes!
+Ви можете вільно змінити заголовок або текст і зберегти зміни!
 
 Вітаємо! Ваш додаток стає все більше і більше завершеним!
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.2/topics/forms/
+Якщо ви хочете дізнатися більше інформації про Django форми прошу ознайомитись із документацією: https://docs.djangoproject.com/en/2.2/topics/forms/
 
 ## Безпека
 
-Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
+Створювати нові публікації можна можна просто клацнувши на посилання - це ж класно! Але зараз, будь хто відвідує може відвідати ваш сайт, бути здатним опублікувати пост, а ви цього напевне не хочете. Давайте зробимо так, що кнопка показує для вас, але не показує для інших.
 
-Open `blog/templates/blog/base.html` in the code editor, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
+В `blog/templates/blog/base.html`, знайдіть наш `page-header` `div` і тег посилання який ви додали туди раніше. Вони повинні виглядати якось так:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -384,7 +384,7 @@ Open `blog/templates/blog/base.html` in the code editor, find our `page-header` 
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! Змініть тег `<a>` щоб він виглядав так:
+Ми хочемо додати інший тег `{% if %}` який буде показувати посилання лише тим користувачам, які ввійшли від імені адміністратора. На даний момент, це лише ви! Змініть тег `<a>` щоб він виглядав так:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -394,11 +394,11 @@ We're going to add another `{% if %}` tag to this, which will make the link show
 {% endif %}
 ```
 
-This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. Це не захищає від створення нових публікацій анонімами повністю, але це непоганий перший крок. Ми розглянемо більше питань безпеки в розширених уроках.
+Цей `{% if %}` зробить так, що посилання будуть відправлятись браузеру лише тоді, коли користувач, що запитував сторінку, зареєстрований. Це не захищає від створення нових публікацій анонімами повністю, але це непоганий перший крок. Ми розглянемо більше питань безпеки в розширених уроках.
 
-Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
+Пам'ятаєте піктограму редагування, яку ми щойно додали на нашу сторінку деталей? Ми також хочемо додати ту саму зміну, щоб інші люди не мали змоги редагувати наявні публікації.
 
-Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
+Відкрийте `blog/templates/blog/post_detail.html` і додайте наступний рядок:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -406,7 +406,7 @@ Open `blog/templates/blog/post_detail.html` in the code editor and find this lin
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-Change it to this:
+Змініть його на це:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -416,7 +416,7 @@ Change it to this:
 {% endif %}
 ```
 
-Since you're likely logged in, if you refresh the page, you won't see anything different. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
+Оскільки ви швидше за все увійшли в систему, якщо ви оновите сторінку, ви не побачите нічого зміненого. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
 
 ## Ще одне: розгортання!
 
