@@ -83,7 +83,7 @@ Web sitemizin İnternet'te hâlâ çalıştığını görmek iyi olacak, değil 
     $ git add .
     $ git status
     [...]
-    $ git commit -m "Modified templates to display posts from database."
+    $ git commit -m "Veritabanındaki gönderileri görüntülemek için değiştirilmiş şablonlar."
     [...]
     $ git push
     
