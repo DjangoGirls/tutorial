@@ -12,7 +12,7 @@ Bu üç yer sizin için önemli olacak. Lokal bilgisayarınız geliştirme ve te
 
 # Git
 
-> **Note** If you already did the [installation steps](../installation/README.md), there's no need to do this again – you can skip to the next section and start creating your Git repository.
+> **Not** Eğer [kurulum adımlarını](../installation/README.md) gerçekleştirdiyseniz, bunu tekrar yapmaya gerek yoktur - bir sonraki bölüme geçebilir ve Git deponuzu oluşturmaya başlayabilirsiniz.
 
 {% include "/deploy/install_git.md" %}
 
@@ -47,10 +47,10 @@ Git bu dizindeki tüm dizin ve dosyalardaki değişiklikleri kaydedecek, ama tak
     myvenv/
     venv/
     
-    # Database
+    # Veritabanı
     db.sqlite3
     
-    # Static folder
+    # Statik klasör
     static/
     
     # macOS
@@ -219,7 +219,7 @@ Admin kullanıcısının detaylarını girin. Daha önce kendi bilgisayarınızd
 
 ## Şimdi Canlı Yayındasınız!
 
-Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want. :)
+Siteniz artık halka açık internette yayınlanmalıdır! Bir bağlantı almak için PythonAnywhere "Web" sayfasına tıklayın. Bunu istediğiniz herhangi biriyle paylaşabilirsiniz. :)
 
 > **Not** Bu kılavuz başlangıçlara yönelik olduğu için basit tutmak amacıyla siteyi yayına alırken güvenlik açısından ideal olmayan bir kaç seçim yaptık. Eğer bu projeyi geliştirmek veya yeni bir projeye başlamak isterseniz, güvenlik tavsiyeleri için [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) sayfasını inceleyin.
 
