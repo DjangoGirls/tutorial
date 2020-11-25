@@ -1,5 +1,5 @@
 # Chromebook kurulumu
 
-> **Note** If you already worked through the [installation steps](../installation/README.md), no need to do this again – you can skip straight ahead to [Introduction to Python](../python_introduction/README.md).
+> **Not** Eğer halihazırda [kurulum adımlarını](../installation/README.md), tamamladıysanız, bunu tekrar yapmanıza gerek yok - doğrudan [Python'a Giriş](../python_introduction/README.md) bölümüne atlayabilirsiniz.
 
 {% include "/chromebook_setup/instructions.md" %}
