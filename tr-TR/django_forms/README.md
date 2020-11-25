@@ -429,7 +429,7 @@ Bakalım PythonAnywhere'de de çalışacak mı? Tekrar yayına alalım!
     $ git status
     $ git add .
     $ git status
-    $ git commit -m "Added views to create/edit blog post inside the site."
+    $ git commit -m "Site içinde blog yayını oluşturmak/düzenlemek için görünümler eklendi."
     $ git push
     
 
@@ -446,4 +446,4 @@ Bakalım PythonAnywhere'de de çalışacak mı? Tekrar yayına alalım!
 
 * Son olarak, ["Web" page](https://www.pythonanywhere.com/web_app_setup/) bölümüne geçin (konsolun sağ üst tarafındaki menü düğmesini kullanın) ve **Yeniden yükle** tuşuna basın. Değişiklikleri görmek için https://subdomain.pythonanywhere.com blogunuzu yenileyin.
 
-And that should be it. Congrats! :)
+Ve sonucunda bu olmalıdır. Tebrikler! :)
