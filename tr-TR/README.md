@@ -6,9 +6,9 @@
 
 ## Hoşgeldiniz
 
-Django Girls Eğitimi'ne hoşgeldin! We are happy to see you here. :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
+Django Girls Eğitimi'ne hoşgeldin! Sizi burada gördüğümüz için mutluyuz. :) Bu eğitici yazıda, sizi web teknolojileri başlığı altında bir yolculuğa çıkaracağız ve web'in bildiğimiz şekilde çalışması için bir araya gelmesi gereken tüm bitlerin ve parçaların bir görüntüsünü sunacağız. 
 
-As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine. :)
+Tüm bilinmeyen şeylerde olduğu gibi, bu bir macera olacak - ama endişelenmeyin, burada olma cesaretini çoktan geçtiğiniz için, gayet iyi olacaksınız. :)
 
 ## Giriş
 
