@@ -2,7 +2,7 @@
 > 
 > Questa sezione è basata sul tutorial delle Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django è scritto in Python. Python ci serve per fare qualunque cosa in Django. Iniziamo con l'installazione! Dovresti installare la versione più recente di Python 3, quindi se hai una versione precendente dovrai aggiornarla. If you already have version {{ book.py_min_version }} or higher you should be fine.
+Django è scritto in Python. Python ci serve per fare qualunque cosa in Django. Iniziamo con l'installazione! Dovresti installare la versione più recente di Python 3, quindi se hai una versione precendente dovrai aggiornarla. Se possiedi già la versione {{ book.py_min_version }} o una versione successiva non servono aggiornamenti.
 
 Installa Python normale come segue, anche quando hai Anaconda installato sul tuo computer.
 
