@@ -446,4 +446,4 @@ Vediamo se funziona su PythonAnywhere. È l'ora di un altro deploy!
 
 * Infine, salta alla pagina [ "Web" ](https://www.pythonanywhere.com/web_app_setup/) (usa il pulsante menu in alto a destra della console) e premi **Ricarica**. Aggiorna il tuo blog https://subdomain.pythonanywhere.com per vedere le modifiche.
 
-And that should be it. Congrats! :)
+Ecco fatto! Congratulazioni!
