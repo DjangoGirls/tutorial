@@ -12,7 +12,7 @@ Questi tre servizi saranno importantissimi per te. Userai il tuo computer locale
 
 # Git
 
-> **Note** If you already did the [installation steps](../installation/README.md), there's no need to do this again – you can skip to the next section and start creating your Git repository.
+> **Nota** Se hai già terminato il processo di installazione, non é necessario eseguire nuovamente questa operazione. Puoi passare alla sezione successiva e iniziare a creare il tuo repository Git.
 
 {% include "/deploy/install_git.md" %}
 
@@ -218,7 +218,7 @@ Puoi anche andare alla pagina "File" e navigare in uso del browser di file integ
 
 ## Ora sei online!
 
-Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want. :)
+Ora il tuo sito dovrebbe essere stato pubblicato online! Clicca sulla pagina PythonAnywhere per ottenere un link. Puoi condividerlo con chiunque tu voglia :)
 
 > **Nota** Questo è un tutorial per principianti, e nel distribuire questo sito abbiamo preso alcune scorciatoie che non sono ideali dal punto di vista della sicurezza. Se e quando decidi di usare questo progetto in produzione, oppure di avviare un nuovo progetto, dovresti controllare la [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) per alcuni consigli di sicurezza del tuo sito.
 
