@@ -33,7 +33,7 @@ Guarda che aspetto ha il tuo sito adesso: http://127.0.0.1:8000/
 
 ![Figura 11.1](images/step1.png)
 
-No error anymore! Congratulations! :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
+L'errore dovrebbe essere stato corretto! Congratulazioni :) Tuttavia, il tuo sito in realtà non sta pubblicando niente eccetto una pagina vuota, perché anche il tuo template è vuoto. Bisogna sistemarlo.
 
 Apri il nuovo file nell'editor di codice e aggiungi quanto segue:
 
@@ -52,7 +52,7 @@ Quindi come appare il tuo sito ora? clicca per scoprirlo: http://127.0.0.1:8000/
 
 ![Figura 11.2](images/step3.png)
 
-It worked. Nice work there! :)
+Ha funzionato! Ottimo lavoro! :)
 
 * Il comando più basico, `<html>`, è sempre l'inizio di ogni pagina web e `</html>` è sempre la fine. Come puoi vedere, l'intero contenuto del sito va tra il tag iniziale `<html>` ed il tag conclusivo `</html>`
 * `<p>` è un tag per gli elementi paragrafo; `</p>` conclude ogni paragrafo
@@ -186,7 +186,7 @@ Ci siamo quasi, ora è il momento di dirgli di salvare questa modifica nella cro
     $ git commit -m "Ho cambiato l'HTML per questo sito."
     
 
-> **Note** Make sure you use double quotes around the commit message.
+> **Nota** Assicurati di usare doppie virgolette prima e dopo il "messaggio di commit".
 
 Quando hai finito, caricheremo (push) le nostre modifiche su Github:
 
