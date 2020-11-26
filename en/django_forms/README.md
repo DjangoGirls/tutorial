@@ -57,7 +57,7 @@ It's time to open `blog/templates/blog/base.html` in the code editor. Now we can
 </a>
 ```
 
-Note that we want to call our new view `post_new`. The [SVG icon](https://icons.getbootstrap.com/icons/file-earmark-plus/) is provided by the [Bootstrap Icons](https://icons.getbootstrap.com/) and it will display a page icon with plus sign. We use a django template directive called `include`. This will inject the file's content in to django template since web browser know how to handle this type of content without any further processing.
+Note that we want to call our new view `post_new`. The [SVG icon](https://icons.getbootstrap.com/icons/file-earmark-plus/) is provided by the [Bootstrap Icons](https://icons.getbootstrap.com/) and it will display a page icon with plus sign. We use a Django template directive called `include`. This will inject the file's content into the Django template. The web browser knows how to handle this type of content without any further processing.
 
 > You can download the whole bootstrap icons [here](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip). Unzip the file and copy all the SVG image files in to a new folder inside `blog/templates/blog/` called `icons`. So that you can access a icon, e.g. pencil-fill.svg using the file path `blog/templates/blog/icons/pencil-fill.svg`
 
