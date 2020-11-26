@@ -1,7 +1,7 @@
 # Installazione di Django
 
-> **Nota** Se utilizzi un Chromebook, salta questo capitolo e assicurati di seguire il[ Configurzione di Chromebook](../chromebook_setup/README.md)istruzioni.
+> **Nota** Se utilizzi un Chromebook, salta questo capitolo e segui le istruzioni in [Configurazione di Chromebook](../chromebook_setup/README.md).
 > 
-> **Note** If you already worked through the [installation steps](../installation/README.md) then you've already done this – you can go straight to the next chapter!
+> Se hai terminato il processo di installazione, questo passaggio l'hai già completato e puoi passare direttamente al capitolo successivo!
 
 {% include "/django_installation/instructions.md" %}
