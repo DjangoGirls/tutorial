@@ -48,7 +48,7 @@ Before we add the link, we need some icons to use as buttons for the link. For t
 
 > Note: To download the SVG image, open the context menu on the link (usually by right-clicking on it) and select "Save link as". In the dialog asking you where to save the file, navigate to the `djangogirls` directory of your Django project, and within that to subdirectory `blog/templates/blog/icons/`, and save the file there.
 
-It's time to open `blog/templates/blog/base.html` in the code editor. Now we can use this icon file inside the base template as follow. In the `div` named `container` inside `page-header` `div` tag, we will add a link:
+It's time to open `blog/templates/blog/base.html` in the code editor. Now we can use this icon file inside the base template as follow. In the `div` tag inside `header` section, we will add a link before `h1` tag:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 ```html
@@ -75,22 +75,22 @@ After editing the line, your HTML file should now look like this:
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-        <div class="page-header">
+        <header class="page-header">
             <div class="container">
                 <a href="{% url 'post_new' %}" class="top-menu">
                     {% include './icons/file-earmark-plus.svg' %}
                 </a>
                 <h1><a href="/">Django Girls Blog</a></h1>
             </div>
-        </div>
-        <div class="content container">
+        </header>
+        <main class="content container">
             <div class="row">
                 <div class="col">
                     {% block content %}
                     {% endblock %}
                 </div>
             </div>
-        </div>
+        </main>
     </body>
 </html>
 ```
@@ -285,15 +285,15 @@ Now we know how to add a new post. But what if we want to edit an existing one? 
 
 First, let's save the icon which represents the edit button. Download [pencil-fill.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/pencil-fill.svg) and save it to the location `blog/templates/blog/icons/`.
 
-Open `blog/templates/blog/post_detail.html` in the code editor and add the line
+Open `blog/templates/blog/post_detail.html` in the code editor and add the following code inside `article` tag:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 ```html
-<div class="actions">
+<aside class="actions">
     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
       {% include './icons/pencil-fill.svg' %}
     </a>
-</div>
+</aside>
 ```
 
 so that the template will look like this:
@@ -303,20 +303,20 @@ so that the template will look like this:
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <div class="post">
-        <div class="actions">
+    <article class="post">
+        <aside class="actions">
             <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
                 {% include './icons/pencil-fill.svg' %}
             </a>
-        </div>
+        </aside>
         {% if post.published_date %}
-            <div class="date">
+            <time class="date">
                 {{ post.published_date }}
-            </div>
+            </time>
         {% endif %}
         <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    </article>
 {% endblock %}
 ```
 
@@ -380,7 +380,7 @@ If you need more information about Django forms, you should read the documentati
 
 Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
 
-Open `blog/templates/blog/base.html` in the code editor, find our `container` `div` inside `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
+Open `blog/templates/blog/base.html` in the code editor, find our `div` inside `header` and the anchor tag you put in there earlier. It should look like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 ```html

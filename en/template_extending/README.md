@@ -32,27 +32,27 @@ Then open it up in the code editor and copy everything from `post_list.html` to 
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-        <div class="page-header">
+        <header class="page-header">
           <div class="container">
               <h1><a href="/">Django Girls Blog</a></h1>
           </div>
-        </div>
+        </header>
 
-        <div class="content container">
+        <main class="container">
             <div class="row">
                 <div class="col">
                 {% for post in posts %}
-                    <div class="post">
-                        <div class="date">
+                    <article class="post">
+                        <time class="date">
                             {{ post.published_date }}
-                        </div>
+                        </time>
                         <h2><a href="">{{ post.title }}</a></h2>
                         <p>{{ post.text|linebreaksbr }}</p>
-                    </div>
+                    </article>
                 {% endfor %}
                 </div>
             </div>
-        </div>
+        </main>
     </body>
 </html>
 ```
@@ -62,19 +62,19 @@ Then in `base.html`, replace your whole `<body>` (everything between `<body>` an
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 ```html
 <body>
-    <div class="page-header">
+    <header class="page-header">
       <div class="container">
           <h1><a href="/">Django Girls Blog</a></h1>
       </div>
-    </div>
-    <div class="content container">
+    </header>
+    <main class="container">
         <div class="row">
             <div class="col">
             {% block content %}
             {% endblock %}
             </div>
         </div>
-    </div>
+    </main>
 </body>
 ```
 
@@ -93,13 +93,13 @@ Now save `base.html` and open your `blog/templates/blog/post_list.html` again in
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
 {% for post in posts %}
-    <div class="post">
-        <div class="date">
+    <article class="post">
+        <time class="date">
             {{ post.published_date }}
-        </div>
+        </time>
         <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    </article>
 {% endfor %}
 ```
 
@@ -112,13 +112,13 @@ Time to add block tags to this file!
 ```html
 {% block content %}
     {% for post in posts %}
-        <div class="post">
-            <div class="date">
+        <article class="post">
+            <time class="date">
                 {{ post.published_date }}
-            </div>
+            </time>
             <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
-        </div>
+        </article>
     {% endfor %}
 {% endblock %}
 ```
@@ -131,13 +131,13 @@ Only one thing left. We need to connect these two templates together.  This is w
 
 {% block content %}
     {% for post in posts %}
-        <div class="post">
-            <div class="date">
+        <article class="post">
+            <time class="date">
                 {{ post.published_date }}
-            </div>
+            </time>
             <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
-        </div>
+        </article>
     {% endfor %}
 {% endblock %}
 ```

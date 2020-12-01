@@ -123,16 +123,16 @@ Your file should now look like this:
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-        <div>
+        <header>
             <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+        </header>
 
         {% for post in posts %}
-            <div>
-                <p>published: {{ post.published_date }}</p>
+            <article>
+                <time>published: {{ post.published_date }}</time>
                 <h2><a href="">{{ post.title }}</a></h2>
                 <p>{{ post.text|linebreaksbr }}</p>
-            </div>
+            </article>
         {% endfor %}
     </body>
 </html>
@@ -181,26 +181,26 @@ Great!
 
 As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post).  A class can help you make them look different.
 
-Go ahead and name some parts of the HTML code. Replace the `div` that contains your header with the following:
+Go ahead and name some parts of the HTML code. Replace the `header` that contains your header with the following:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
-<div class="page-header">
+<header class="page-header">
     <div class="container">
         <h1><a href="/">Django Girls Blog</a></h1>
     </div>
-</div>
+</header>
 ```
 
-And now add a class `post` to your `div` containing a blog post.
+And now add a class `post` to your `article` containing a blog post.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
-<div class="post">
-    <p>published: {{ post.published_date }}</p>
+<article class="post">
+    <time>published: {{ post.published_date }}</time>
     <h2><a href="">{{ post.title }}</a></h2>
     <p>{{ post.text|linebreaksbr }}</p>
-</div>
+</article>
 ```
 
 We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, copy and paste it into your `blog/static/css/blog.css` file:
@@ -232,7 +232,6 @@ h4 {
 
 .date {
     color: #828282;
-    float: right;
 }
 
 .save {
@@ -262,9 +261,9 @@ h4 {
     color: #000000;
 }
 
-.post .actions {
+.post > .date,
+.post > .actions {
     float: right;
-    margin: auto 10px;
 }
 
 .btn-default,
@@ -285,11 +284,11 @@ Then surround the HTML code which displays the posts with declarations of classe
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
 {% for post in posts %}
-    <div class="post">
-        <p>published: {{ post.published_date }}</p>
+    <article class="post">
+        <time>published: {{ post.published_date }}</time>
         <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    </article>
 {% endfor %}
 ```
 
@@ -297,21 +296,21 @@ in the `blog/templates/blog/post_list.html` with this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
-<div class="content container">
+<main class="container">
     <div class="row">
         <div class="col">
             {% for post in posts %}
-                <div class="post">
-                    <div class="date">
+                <article class="post">
+                    <time class="date">
                         {{ post.published_date }}
-                    </div>
+                    </time>
                     <h2><a href="">{{ post.title }}</a></h2>
                     <p>{{ post.text|linebreaksbr }}</p>
-                </div>
+                </article>
             {% endfor %}
         </div>
     </div>
-</div>
+</main>
 ```
 
 Save those files and refresh your website.

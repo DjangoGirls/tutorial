@@ -111,6 +111,14 @@ You can now have a little fun and try to customize your template! Here are a few
 - `<a href="https://djangogirls.org">link</a>` creates a link
 - `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
 - `<div></div>` defines a section of the page
+- `<nav></nav>` defines a set of navigation links
+- `<article></article>` specifies independent, self-contained content
+- `<section></section>` defines a section in a document
+- `<header></header>` specifies a header for a document or section
+- `<main></main>` specifies the main content of a document
+- `<aside></aside>` defines some content aside from the content it is placed in (like a sidebar)
+- `<footer></footer>` defines a footer for a document or section
+- `<time></time>` defines a specific time (or datetime)
 
 Here's an example of a full template, copy and paste it into `blog/templates/blog/post_list.html`:
 
@@ -122,29 +130,29 @@ Here's an example of a full template, copy and paste it into `blog/templates/blo
         <title>Django Girls blog</title>
     </head>
     <body>
-        <div>
+        <header>
             <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+        </header>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
             <h2><a href="">My first post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
+        </article>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
             <h2><a href="">My second post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
+        </article>
     </body>
 </html>
 ```
 
-We've created three `div` sections here.
+We've created one `header` section and two `article` section here.
 
-- The first `div` element contains the title of our blog – it's a heading and a link
-- Another two `div` elements contain our blog posts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blog post.
+- The `header` element contains the title of our blog – it's a heading and a link
+- Another two `article` elements contain our blog posts with a published date in `time` element, `h2` with a post title that is clickable and a `p` (paragraph) of text for our blog post.
 
 It gives us this effect:
 
