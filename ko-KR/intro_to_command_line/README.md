@@ -44,17 +44,17 @@
     >
     
 
-Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+바로 위의 Linux 섹션을 살펴보세요. PythonAnywhere에 접속하면 이 튜토리얼과 비슷한 내용을 볼 수 있습니다.
 
 <!--endsec-->
 
-Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
+각 명령은 `$` 또는 `>` 그리고 한 개의 공백이 앞에 붙어요, 하지만 그것은 입력하면 안되요. 컴퓨터가 당신을 위해 알아서 넣어줄 거랍니다.
 
-> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
+> 잠깐만요: 상황에 따라 프롬트 기호 앞에 `C:\Users\ola>` 혹은 `Olas-MacBook-Air:~ ola$` 같은 것이 보일 수 있는데, 그건 문제가 있는게 아니라 아주 잘 동작하는 거랍니다.
 
-The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
+`$` 또는 `>` 포함 부분 짧게 *명령줄 프롬프트* 또는 *프롬프트*라고 합니다. 뭔가 입력하라는 표시입니다.
 
-In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
+이 튜토리얼을 따라하면서, 커맨드 라인에 명령어를 입력할 때마다 왼쪽에 `$` 또는 `>`표시가 보일 거에요. 프롬프트를 실행하고 나서 왼쪽 표시 부분을 무시하고 명령어를 바로 입력하면 됩니다.
 
 ## 나의 첫 번째 명령 (야호!)
 
@@ -126,13 +126,13 @@ In the tutorial, when we want you to type in a command, we will include the `$` 
 
 * * *
 
-### Learn more about a command
+### 명령에 대해 더 배워보기
 
-Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
+명령창에 내장된 입력할 수 있는 많은 명령들은 표시하고 읽을 수 있는 많은 도움말이 내장되어 있어요. 예를 들어, 현재 디렉토리 명령에 대해 배워보아요:
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X and Linux have a `man` command, which gives you help on commands. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
+OS X 와 Linux 는 `man` 이라는 명령어가 도움을 줄거에요. `man pwd` 입력하고 어떻게 나오는지 보아요, 혹은 다른명령어 앞에 `man` 을 붙여 입력하면 해당명령어의 도움말을 볼 수 있어요. `man` 은 보통 페이징되어있어요. 스페이스바를 눌러 다음 장으로 이동하고 `q` 를 눌러 도움말을 종료할 수 있어요.
 
 <!--endsec-->
 
