@@ -101,7 +101,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
-`DEBUG` 가 `True` 이고 `ALLOWED_HOSTS` 가 비어있다면, 호스트가`['localhost', '127.0.0.1', '[::1]']`로 검증됩니다. This won't match our hostname on PythonAnywhere once we deploy our application so we will change the following setting:
+`DEBUG` 가 `True` 이고 `ALLOWED_HOSTS` 가 비어있다면, 호스트가`['localhost', '127.0.0.1', '[::1]']`로 검증됩니다. 애플리케이션을 배포하고나면 PythonAnywhere 호스트 이름과 일치하지 않으므로 다음 설정을 변경합니다.
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -109,11 +109,11 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 ```
 
-> **Note**: If you're using a Chromebook, add this line at the bottom of your settings.py file: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
+> **주의**: 크롬북을 사용하고 있다면, settings.py 에 아래 라인과 같이 추가해요: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
-> Also add `.amazonaws.com` to the `ALLOWED_HOSTS` if you are using cloud9
+> 그리고 cloud9을 사용하고 있다면 `ALLOWED_HOSTS`에 `.amazonaws.com` 을 추가해요.
 
-## Set up a database
+## 데이터베이스 설정하기
 
 사이트 내 데이터를 저장하기 위한 많은 다양한 데이터베이스 소프트웨어들이 있습니다. 그 중에서 우리는 `sqlite3`을 사용할 거에요.
 
@@ -132,7 +132,7 @@ DATABASES = {
 
 블로그에 데이터베이스를 생성하기 위해서 콘솔창에서 아래 코드를 실행하세요: `python manage.py migrate` (이 명령을 실행하기 위해서는 `djangogirls`디렉토리 안에 있는 `manage.py` 필요합니다.) 잘 작동되면, 아래와 같은 내용이 나옵니다. :
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py migrate
     Operations to perform:
@@ -157,16 +157,16 @@ DATABASES = {
 
 잘했네요! 이제 웹 서버를 시작해 웹사이트가 잘 작동하는지 확인해봐요!
 
-## Starting the web server
+## 웹 서버 시작하기
 
 프로젝트 디렉토리(the `djangogirls` directory)에 `manage.py` 파일이 있어야 합니다. 콘솔에서는 `python manage.py runserver` 명령을 실행해, 웹서버를 바로 시작할 수 있습니다. :
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver
     
 
-If you are on a Chromebook, use this command instead:
+만약 크롬북을 쓰고 있다면, 대신에 이 명령을 사용해요:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -175,21 +175,21 @@ If you are on a Chromebook, use this command instead:
 
 윈도우에서 `UnicodeDecodeError`를 썼는데 오류가 난다면 아래 명령을 대신 써보세요. :
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Now you need to check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
+웹 사이트가 모두 잘 작동하는지 확인해봐요. 사용하는 브라우져(파이어폭스, 크롬, 사파리, 인터넷 익스플로어 등 여러분의 원하는대로)를 열어서 주소를 입력하세요. :
 
-{% filename %}browser{% endfilename %}
+{% filename %}브라우저{% endfilename %}
 
     http://127.0.0.1:8000/
     
 
-If you're using a Chromebook and Cloud9, instead click the URL in the pop-up window that should have appeared in the upper right corner of the command window where the web server is running. The URL will look something like:
+크롬북과 Cloud9을 사용하고 있다면, 위의 URL대신 웹 서버가 실행 중인 명령 창의 오른쪽 상단 모서리에 표시되어야 하는 팝업 창의 URL을 클릭합니다. URL은 아래처럼 보일거에요:
 
-{% filename %}browser{% endfilename %}
+{% filename %}브라우저{% endfilename %}
 
     https://<a bunch of letters and numbers>.vfs.cloud9.us-west-2.amazonaws.com
     
@@ -198,9 +198,9 @@ If you're using a Chromebook and Cloud9, instead click the URL in the pop-up win
 
 ![Install worked!](images/install_worked.png)
 
-Note that a command window can only run one thing at a time, and the command window you opened earlier is running the web server. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
+명령창은 한번에 하나만 실행할 수 있는걸 주의하세요, 그리고 열어놓은 명령창은 이미 웹서버를 실행하고 있어요. 웹 서버가 실행되고 추가 수신 요청을 기다리는 동안 터미널은 새 텍스트를 허용하지만 새 명령을 실행하지는 않아요.
 
-> We reviewed how web servers work in the **How the Internet works** chapter.
+> 우리는 이미 **인터넷 작동 방법** 장에서 어떻게 웹서버가 작동하는지 알아봤어요. 
 
 To type additional commands while the web server is running, open a new terminal window and activate your virtualenv -- to review instructions on how to open a second terminal window, see [Introduction to the command line](../intro_to_command_line/README.md). To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
 
