@@ -198,17 +198,17 @@ PythonAnywhere에서도 웹사이트가 잘 작동하는지 봐야겠죠? 다시
 
 PythonAnywhere 와 같은 서버는 "정적 파일" (CSS와 같은 파일)을 파이썬 파일과는 다르게 다뤄요, 왜냐하면 더 빨리 불러올 수 있도록 최적화 할 수 있기 때문이에요. 결과적으로, 우리가 CSS파일을 변경했을때, 우리는 서버에서 이것을 업데이트하기 위한 추가 명령을 실행해야 해요. 이 명령은 `collectstatic`이라 불려요.
 
-Start by activating your virtualenv if it's not still active from earlier (PythonAnywhere uses a command called `workon` to do this, it's just like the `source myenv/bin/activate` command you use on your own computer):
+만약 활성화 하고 있지 않았다면 virtualenv를 활성화하고 실행해요 (PythonAnywhere 는`workon` 명령을 사용해요, 내 컴퓨터에서 쓰던 `source myenv/bin/activate`명령과 같아요.):
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
+{% filename %}PythonAnywhere 명령줄{% endfilename %}
 
     $ workon <your-pythonanywhere-domain>.pythonanywhere.com
     (ola.pythonanywhere.com)$ python manage.py collectstatic
     [...]
     
 
-The `manage.py collectstatic` command is a bit like `manage.py migrate`. We make some changes to our code, and then we tell Django to *apply* those changes, either to the server's collection of static files, or to the database.
+`manage.py collectstatic` 명령은 `manage.py migrate`와 같아요. 코드를 변경하고 장고에게 서버의 정적 파일 모음이나 데이터베이스에 이러한 변경사항을 *적용*하도록 지시할거에요.
 
-In any case, we're now ready to hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (from the menu button in the upper right of the console) and hit **Reload**, and then look at the https://subdomain.pythonanywhere.com page to see the result.
+어쨌든, 이제 콘솔 오른쪽 상단에 있는 메뉴 버튼에서 ["Web" page](https://www.pythonanywhere.com/web_app_setup/)로 이동해서 **Reload**를 누른 다음 https://subdomain.pythonanywhere.com 페이지를 확인하여 결과를 확인할 수 있어요.
 
-And that should be it. Congrats! :)
+이제 완료 되었어요. 축하합니다. :)
