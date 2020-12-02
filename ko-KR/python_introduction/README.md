@@ -497,13 +497,13 @@ True
 True
 ```
 
-우리는 파이썬에서 몇가지 숫자를 비교할거에요. As you can see, not only can Python compare numbers, but it can also compare values of mathematical expressions like `2 * 2` and function results like the `2` returned by `len([4, 5])`. Nice, huh?
+우리는 파이썬에서 몇가지 숫자를 비교할거에요. 보다싶이 파이썬은 숫자비교만 가능한게 아니에요. 수학적 표현인 `2 * 2`의 값과 `len([4, 5])`함수의 결과값인 `2`의 비교 또한 가능하답니다. 멋지죠?
 
-Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
+두 숫자를 비교할 때 왜 등호 부호 `==`를 사용하는지 궁금했죠? 우리는 변수에 값을 넣을 때 한 개의 등호 기호 `=`를 사용하죠. 그렇기 때문에, 두 대상이 같은지 서로 비교하기 위해서는 **항상** 두 개의 등호 기호 `==`를 사용해야 합니다. 마찬가지로 두 대상이 서로 같지 않다라고 말할 수 있습니다. 위 예제에서 볼 수 있었듯이 서로 같은 대상이 아닐 때는 `!=` 기호를 사용합니다.
 
-Give Python two more tasks:
+두 개의 작업을 더 해볼게요.:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> 6 >= 12 / 2
@@ -512,16 +512,16 @@ True
 False
 ```
 
-We've seen `>` and `<`, but what do `>=` and `<=` mean? Read them like this:
+`>`와 `<`는 알겠지만, `>=`와 `<=`는 무슨 뜻일까요? 아래 내용을 읽어보세요. :
 
 - x `>` y : x는 y보다 크다
 - x `<` : x는 y보다 작다
 - x `<=` : x가 y보다 작거나 같다
 - x `>=` : x가 y보다 크거나 같다
 
-Awesome! Wanna do one more? Try this:
+잘했어요! 좀 더 해볼까요? 이런 건 어떨까요. :
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> 6 > 2 and 2 < 3
@@ -532,14 +532,14 @@ False
 True
 ```
 
-You can give Python as many numbers to compare as you want, and it will give you an answer! Pretty smart, right?
+파이썬은 얼마든지 원하는 만큼 숫자를 비교할 수 있고 답을 알려줄 거에요! 똑똑한 녀석이죠?
 
-- **and** – if you use the `and` operator, both comparisons have to be True in order for the whole command to be True
-- **or** – if you use the `or` operator, only one of the comparisons has to be True in order for the whole command to be True
+- **and** - `and` 연산자는, 두 값 모두 참(True) 일 경우에만 결과가 True가 됩니다.
+- **or** - `or` 연산자는, 둘 중 하나만 참(True) 일 경우에 True가 됩니다.
 
-Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
+"사과를 오렌지에 비교하기"라는 말을 들어본 적이 있나요? 파이썬에게 시켜봅시다. :
 
-{% filename %}{{ warning_icon }} command-line{% endfilename %}
+{% filename %}{{ warning_icon }} 명령줄{% endfilename %}
 
 ```python
 >>> 1 > 'django'
@@ -548,22 +548,22 @@ Traceback (most recent call last):
 TypeError: '>' not supported between instances of 'int' and 'str'
 ```
 
-Here you see that just like in the expression, Python is not able to compare a number (`int`) and a string (`str`). Instead, it shows a **TypeError** and tells us the two types can't be compared together.
+이처럼 파이썬은 숫자(`int`) 와 문자열(`str`) 을 비교할 수 없어요. 비교는 못하지만 대신 **TypeError**를 보여줘 두 타입이 서로 비교 대상이 아니라는 것을 알려줍니다.
 
 ## Boolean (불리언)
 
-Incidentally, you just learned about a new type of object in Python. It's called **Boolean**.
+덧붙여서, 파이썬에서 **Boolean**이라는 새 객체 타입을 배웠어요.
 
-There are only two Boolean objects:
+Boolean 객체는 종류는 딱 두 가지 뿐이에요.:- 참(True)- 거짓(False)
 
 - True
 - False
 
-But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well.)
+그런데 파이썬이 이해시키려면, 항상 'True'라고 써야 합니다. (즉 첫 글자가 대문자고 나머지는 소문자여야만, Boolean으로 이해하는 것이죠.) **true, TRUE, tRUE는 모두 틀린 표현이에요. -- True만 올바른 표현입니다.** (False도 마찬가지입니다.)
 
-Booleans can be variables, too! See here:
+Boolean도 변수로 사용할 수도 있습니다! 다음을 보세요:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> a = True
@@ -571,9 +571,9 @@ Booleans can be variables, too! See here:
 True
 ```
 
-You can also do it this way:
+이런 식으로도 쓸 수 있습니다.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> a = 2 > 5
@@ -581,38 +581,38 @@ You can also do it this way:
 False
 ```
 
-Practice and have fun with Booleans by trying to run the following commands:
+아래 명령어를 실행해보면서 Boolean을 가지고 놀아보세요. :
 
 - `True and True`
 - `False and True`
 - `True or 1 == 1`
 - `1 != 2`
 
-Congrats! Booleans are one of the coolest features in programming, and you just learned how to use them!
+축하합니다! Boolean은 프로그래밍에 있어서 가장 멋진 기능 중 하나에요. 여러분은 Boolean을 앞으로 어떻게 사용해야 하는지 방금 배웠답니다!
 
 # 코드 저장하기!
 
-> For readers at home: this part is covered in the [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) video.
+> 집에서 공부하시는 분은: [파이썬 기초: 파일 저장하기와 "if" 반복문](https://www.youtube.com/watch?v=dOAg6QVAxyk)영상을 참고하세요. 
 
-So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal programs are saved in files and executed by our programming language **interpreter** or **compiler**. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
+지금까지 우리는 인터프리터(interpreter) 에서 파이썬 코드를 입력해 왔어요. 한 번에 코드 한 줄만 입력할 수 있었어요. 일반적으로 프로그램은 파일로 저장되어 프로그래밍 언어 **인터프리터(interpreter)** 또는 **컴파일러(complier)**로 실행됩니다. 지금까지 우리는 파이썬 **인터프리터**에서 한 줄씩 코드를 입력해 프로그램을 실행시켰어요. 이제 앞으로는 한 줄 이상 더 많은 코드를 작성해 실행해 볼 거에요. 빨리 해볼게요. :
 
 - 파이썬 인터프리터를 종료하세요.
 - 선택한 코드 에디터를 실행하세요.
 - 코드를 새 파이썬 파일로 저장하세요.
 - 실행하세요!
 
-To exit from the Python interpreter that we've been using, type the `exit()` function
+사용했던 파이썬 인터프리터를 종료하려면, `exit()` 함수를 입력하세요.:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> exit()
 $
 ```
 
-This will put you back into the command prompt.
+그러면 커맨드 프롬프트(또는 콘솔창) 가 초기화 됩니다.
 
-Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now and write some code into a new file (or if you're using a Chromebook, create a new file in the cloud IDE and open the file, which will be in the included code editor):
+이전에 우리는 [코드 편집기](../code_editor/README.md)섹션에서 코드편집기를 알아봤어요. We'll need to open the editor now and write some code into a new file (or if you're using a Chromebook, create a new file in the cloud IDE and open the file, which will be in the included code editor):
 
 {% filename %}editor{% endfilename %}
 
