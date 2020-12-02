@@ -23,22 +23,22 @@
 
 > 점 `.`은 현재 디렉토리에 장고를 설치하라고 스크립트에 알려주기 때문에 중요해요. (축약된 표시이죠).
 > 
-> **참고** 위 명령을 입력할 때 `django-admin`로 시작하는 부분만 입력하세요. 여기에 보이는 `(myvenv) ~/djangogirls$` 부분은 커맨드라인에 입력을 가져오게 하는 프롬트프(prompt) 입니다.
+> **참고** 위 명령을 입력할 때 `django-admin`로 시작하는 부분만 입력하세요. 여기에 보이는 `(myvenv) ~/djangogirls$` 부분은 커맨드라인에 입력을 가져오게 하는 프롬트프(prompt)의 예시에요.
 
 <!--endsec-->
 
 <!--sec data-title="Create project: Windows" data-id="django_start_project_windows" data-collapse=true ces-->
 
-On Windows you should run the following command. **(Don't forget to add the period (or dot) `.` at the end)**:
+윈도우에서는 다음과 같이 명령을 실행해야 해요. **명령어 끝에 `.`(점, 마침표) 을 입력하는 것을 잊지마세요.** :
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     (myvenv) C:\Users\Name\djangogirls> django-admin.exe startproject mysite .
     
 
 > 점 `.`은 현재 디렉토리에 장고를 설치하라고 스크립트에 알려주기 때문에 중요해요. (축약된 표시이죠).
 > 
-> **Note** When typing the command above, remember that you only type the part which starts by `django-admin.exe`. The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **참고** 위 명령을 입력할 때 `django-admin.exe`로 시작하는 부분만 입력하세요. 여기에 보이는 `(myvenv) C:\Users\Name\djangogirls>` 부분은 커맨드라인에 입력을 가져오게 하는 프롬트프(prompt)의 예시에요.
 
 <!--endsec-->
 
@@ -56,9 +56,9 @@ On Windows you should run the following command. **(Don't forget to add the peri
     └── requirements.txt
     
 
-> **Note**: in your directory structure, you will also see your `venv` directory that we created before.
+> **주의**: 디렉토리 구조안에, `venv` 디렉토리가 보인다면, 이미 이전에 만들어 놓은 것이에요.
 
-`manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
+`manage.py` 파일 또한 스크립트인데, 사이트 관리를 도와주는 역할을 합니다. 이 스크립트로 다른 설치 작업 없이, 컴퓨터에서 웹 서버를 시작할 수 있습니다.
 
 `settings.py`는 웹사이트 설정이 있는 파일입니다.
 
@@ -70,11 +70,11 @@ On Windows you should run the following command. **(Don't forget to add the peri
 
 `mysite/settings.py`을 조금 고쳐 볼게요. 설치한 코드 에디터를 열어 파일을 열어주세요.
 
-**Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "file -> open" menu actions. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
+**주의**: `settings.py` 은 다른파일과 마찬가지로 일반 파일임을 명심하세요. 코드편집기에서 "파일 -> 열기"메뉴를 통해 열 수 있어요. `settings.py` 파일을 찾고 선택할 수 있는 일반적인 창이 나타난답니다. 또는, 바탕화면의 djangogirs폴더로 이동해서 마우스 우클릭후 파일을 열 수 있어요. 그리고 목록에서 코드편집기를 선택하세요. 파일을 열 수는 있지만 편집할 수는 없는 다른 프로그램이 설치되어 있을 수 있으므로 편집기를 선택하는 것이 중요해요.
 
-웹사이트에 정확한 현재 시간을 넣으면 좋겠죠. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
+웹사이트에 정확한 현재 시간을 넣으면 좋겠죠. [위키피디아의 타임존 목록](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)으로 이동해서 연관된 타임존(TZ) (예를 들어`Europe/Berlin`).
 
-In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choose your own timezone. For example:
+Settings.py에서 `TIME_ZONE`있는 줄을 찾으세요. 그리고 이를 해당 시간대로 변경하세요.
 
 {% filename %}mysite/settings.py{% endfilename %}
 
