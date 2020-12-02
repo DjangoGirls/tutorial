@@ -101,8 +101,8 @@ HTML에 여러분은 파이썬 코드를 바로 넣을 수 없어요. 브라우�
 
 * 마지막으로 [웹 탭(Web tab)](https://www.pythonanywhere.com/web_app_setup/)으로 가서 여러분의 웹 앱을 **다시 불러오기**를 하세요. (PythonAnywhere 의 다른 페이지를 콘솔에서 접근하기 위해서는, 우측상단 메뉴 버튼을 이용해요.) 새로 업데이트한 내용이 https://subdomain.pythonanywhere.com 에 갱신될 거에요-- 브라우저에서 확인해보세요! PythonAnywhere 사이트 내 블로그 게시글 내용과 로컬 서버에 있는 내용이 똑같지 않아도 돼요. 로컬 컴퓨터 데이터베이스와 PythonAnywehere 데이터베이스 파일은 파일 동기화를 하지 않아요.
 
-Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://subdomain.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
+축하합니다! 장고 관리자 화면에서 새 게시글을 작성하세요. (published_date를 만든 것을 기억하세요!) pythonanywhere 사이트 https://subdomain.pythonanywhere.com/admin에서 장고 관리자인 것을 확인하세요. 새로고침을 하고 게시글이 잘 보이는지 확인해보세요.
 
-Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
+잘 작동하니까 멋지죠? 참 자랑스러워요! 잠시 쉬고 오세요. :)
 
-![Figure 13.4](images/donut.png)
+![그림 13.4](images/donut.png)
