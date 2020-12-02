@@ -834,23 +834,23 @@ if volume < 20 or volume > 80:
 
 ### 목차
 
-In the last few exercises you learned about:
+지금까지 우리는 몇가지 예제로 다음과 같은 것들을 배웠어요.:
 
-- **comparing things** – in Python you can compare things by using `>`, `>=`, `==`, `<=`, `<` and the `and`, `or` operators
-- **Boolean** – a type of object that can only have one of two values: `True` or `False`
-- **Saving files** – storing code in files so you can execute larger programs.
-- **if … elif … else** – statements that allow you to execute code only when certain conditions are met.
-- **comments** - lines that Python won't run which let you document your code
+- **비교하기** - 파이썬에서 `>`, `>=`, `==`, `<=`, `<` 그리고 `and`, `or` 연산자를 사용해 비교합니다.
+- **Boolean** -두 둘 중 하나의 값만 가질 수 있는 객체입니다. : `True` 또는 `False`
+- **파일 저장하기** - 복잡한 프로그램을 실행할 수 있도록 코드를 파일로 저장합니다.
+- **if...elif...else** - 조건문을 작성해 특정 조건이 주어졌을 때만 코드가 실행되도록 만듭니다.
+- **주석** - 파이썬에서 실행하지 않고 문서화할 라인이에요.
 
-Time for the last part of this chapter!
+드디어 이번 장의 마지막 부분입니다!
 
 ## 나만의 함수 만들기!
 
-> For readers at home: this part is covered in the [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0) video.
+> 집에서 공부하시는 분은: [파이썬 기초: 함수](https://www.youtube.com/watch?v=5owr-6suOl0)영상을 참고하세요.
 
-Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
+앞에서 했던 파이썬 `len()` 같은 함수를 기억하나요? 네, 좋은 소식이에요. 지금부터는 함수를 만드는 법을 배울 거에요!
 
-A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
+함수는 파이썬이 실행해야하는 명령어의 나열이에요. 파이썬의 각 함수는 `def`로 시작해, 이름을 가지고, 몇 가지 매개 변수를 가집니다. 자 한번 해볼까요. **python_intro.py**파일을 열어 코드를 다음과 같이 고치세요. :
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -862,9 +862,9 @@ def hi():
 hi()
 ```
 
-Okay, our first function is ready!
+네, 우리가 만든 첫 번째 함수네요!
 
-You may wonder why we've written the name of the function at the bottom of the file. When we write `def hi():` and the indented lines following, this is us writing instructions for what the `hi()` function should do. Python will read and remember these instructions, but won't run the function yet. To tell Python we want to run the function, we have to call the function with `hi()`. Python reads the file and executes it from top to bottom, so we have to define the function in the file before we call it.
+파일 맨 밑에 왜 함수의 이름을 적는지 궁금할거에요. When we write `def hi():` and the indented lines following, this is us writing instructions for what the `hi()` function should do. Python will read and remember these instructions, but won't run the function yet. To tell Python we want to run the function, we have to call the function with `hi()`. Python reads the file and executes it from top to bottom, so we have to define the function in the file before we call it.
 
 Let's run this now and see what happens:
 
