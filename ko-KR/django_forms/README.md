@@ -374,7 +374,7 @@ form = PostForm(instance=post)
 
 ## 보안
 
-Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. 나에게만 보이고 다른 사람에게는 보이지 않는 버튼을 만들어볼게요.
+링크를 클릭해 새로운 포스트가 나오게 만드는 것은 멋져요! 지금은 웹사이트를 방문하는 누구든지 글을 쓸 수 있지만, 그렇게 하고 싶지 않을 수 있어요. 나에게만 보이고 다른 사람에게는 보이지 않는 버튼을 만들어볼게요.
 
 `blog/templates/blog/base.html` 파일에서, `page-header` `div`를 찾아 아래와 같이 작성된 앵커 태그를 찾습니다:
 
@@ -384,7 +384,7 @@ Being able to create new posts by clicking a link is awesome! But right now, any
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! `<a>`태그를 아래와 같이 변경하세요:
+여기에 `{% if %}` 태그를 추가해 관리자로 로그인한 유저들만 링크가 보일 수 있게 만들거에요. 그게, 바로 여러분이죠! `<a>`태그를 아래와 같이 변경하세요:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -394,7 +394,7 @@ We're going to add another `{% if %}` tag to this, which will make the link show
 {% endif %}
 ```
 
-This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. 이는 새 게시글을 완전히 보호해주는 것은 아니지만, 바람직한 방법입니다. 이 부분은 튜토리얼 심화에서 좀더 자세히 다룰거에요.
+이 `{% if %}`는 브라우저에 페이지를 요청 하는 사용자가 로그인 하는 경우 링크가 발생됩니다. 이는 새 게시글을 완전히 보호해주는 것은 아니지만, 바람직한 방법입니다. 이 부분은 튜토리얼 심화에서 좀더 자세히 다룰거에요.
 
 세부 페이지에 있는 수정 아이콘이 기억나죠? 이번에도 동일하게 다른 사람들이 게시글을 수정하지 못하게 할 거에요.
 
@@ -416,13 +416,13 @@ Change it to this:
 {% endif %}
 ```
 
-로그인했기 때문에, 페이지 새로고침을 해도 아무것도 표시되지 않을 거에요. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
+로그인했기 때문에, 페이지 새로고침을 해도 아무것도 표시되지 않을 거에요. 새로운 브라우저 또는 시크릿 창(윈도우 엣지에서는 InPrivate)을 실행해 보세요. 링크와 아이콘이 보이지 않을 거에요!
 
 ## 한 가지만 더: 배포하세요!
 
 모든 작업을 끝마쳤으면 PythonAnywhere로 배포해야죠!
 
-* First, commit your new code, and push it up to GitHub:
+* 제일 먼저, 여러분의 코드를 커밋하고 Github로 푸시합니다.
 
 {% filename %}command-line{% endfilename %}
 
@@ -435,14 +435,14 @@ Change it to this:
 
 * 그 다음 [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/)을 여세요:
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+(당신의 PythonAnywhere 서브 도메인을 `<your-pythonanywhere-domain>`에 화살괄호 없이 입력하는것을 잊지마세요)
 
 * Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (use the menu button in the upper right of the console) and hit **Reload**. Refresh your https://subdomain.pythonanywhere.com blog to see the changes.
 
