@@ -42,17 +42,17 @@
 
 `post_detail` 부분은 `blog/urls.py`에서 URL을 name=post_detail 로 예측하는걸 의미해요.
 
-그리고 `pk=post.pk`는 어떨까요? `pk` 는 데이터베이스에서 각 레코드의 고유 식별자를 의미하는 기본키(Primary Key)의 줄임말이에요. 모든 장고 모델은 기본키 역할을 하는 필드를 가지고 있고 다른 이름이 무엇이든간에 "pk"라 할 수 있어요. Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a field named "id" holding a number that increases for each record, i.e. 1, 2, 3) and adds it as a field to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
+그리고 `pk=post.pk`는 어떨까요? `pk` 는 데이터베이스에서 각 레코드의 고유 식별자를 의미하는 기본키(Primary Key)의 줄임말이에요. 모든 장고 모델은 기본키 역할을 하는 필드를 가지고 있고 다른 이름이 무엇이든간에 "pk"라 할 수 있어요. `Post` 모델에 기본키를 정의하지 않았기 때문에,장고는 우리를 위해 기본키를 생성해요(기본값으로 필드명이 "id" 예를들어 1, 2, 3과 같이 레코드마다 숫자가 증가하는 숫자값을 지녀요) 그리고 각 글마다 이 필드를 추가한답니다. `post.pk`와 같이 기본키에 접근할 수 있어요, 같은 방법으로 `Post`객체의 다른 필드에 접근(`title`, `author`, 기타.)할 수 있어요.
 
-Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
+http://127.0.0.1:8000/를 열어보세요. 오류 메세지가 나올 거에요. (예상대로, 아직 `post_detail`을 위한 *view*파일 만들지 않아 오류가 나는 것이죠.) 아마 이렇게 나왔을 거에요. :
 
 ![NoReverseMatch error](images/no_reverse_match2.png)
 
 ## Post 상세 페이지에 URL 만들기
 
-Let's create a URL in `urls.py` for our `post_detail` *view*!
+`urls.py` 파일에 `post_detail` *view*를 위한 URL를 만들어 봅시다!
 
-We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
+첫 번째 게시물의 상세 **URL**은 이렇게 나올 거에요. : http://127.0.0.1:8000/post/1/
 
 `blog/urls.py`파일에 URL을 만들어, 장고가 `post_detail` *뷰*로 보내, 게시글이 보일 수 있게 해봅시다. `path('post/<int:pk>/', views.post_detail, name='post_detail')`코드를 `blog/urls.py`파일에 추가하면 아래와 같이 보일 거에요.
 
@@ -74,19 +74,19 @@ urlpatterns = [
 - `<int:pk>`<int:pk></0>는 조금 까다롭습니다. 장고는 숫자로 나타낼 수 있는 값을 읽어들이며, 이를 뷰에 `pk`라는 변수로써 전달할 수 있다는 것을 의미합니다.
 - `/`은 다음에 **/** 가 한 번 더 와야 한다는 의미입니다.
 
-That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
+브라우저에 `http://127.0.0.1:8000/post/5/`입력하면, 장고는 `post_detail`인 *view*를 찾고 있다고 생각하고 `pk`가 `5`와 일치한 *view*로 정보를 보내게 됩니다.
 
-OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! The server has stopped running again. Have a look at the console – as expected, there's yet another error!
+좋아요, `blog/urls.py`에 새로운 URL 패턴이 추가됐네요! 페이지를 새로고침 해보세요: http://127.0.0.1:8000/ 짠! 서버 실행이 멈추었어요! 예상했던대로 콘솔에 에러가 발생했네요!
 
 ![AttributeError](images/attribute_error2.png)
 
-Do you remember what the next step is? It's adding a view!
+다음 단계는 무엇일까요? 그렇죠. : view를 추가해야죠!
 
 ## Post 상세 페이지에 뷰 추가하기
 
-This time our *view* is given an extra parameter, `pk`. Our *view* needs to catch it, right? So we will define our function as `def post_detail(request, pk):`. Note that this parameter must have the exact same name as the one we specified in `urls` (`pk`). Also note that omitting this variable is incorrect and will result in an error!
+이제 *view*는 추가적으로 매개 변수`pk`를 받아야합니다. *view*에 가져다가 써야겠죠? 그래서 함수를 정의할 때, pk를 받도록 `def post_detail(request, pk):`라고 정의 할 것입니다. 이 파라미터는 반드시 `urls` (`pk`)에 명시된 이름과 같아야 한다는걸 주의하세요. 변수가 생략되면 문제가 생겨 오류가 날 거에요!
 
-Now, we want to get one and only one blog post. To do this, we can use querysets, like this:
+이제, 우리는 딱 한 개 블로그만 보고 싶어요. 이를 위해 다음과 같이 쿼리셋(queryset)을 사용해야해요. :
 
 {% filename %}{{ warning_icon }} blog/views.py{% endfilename %}
 
@@ -94,17 +94,17 @@ Now, we want to get one and only one blog post. To do this, we can use querysets
 Post.objects.get(pk=pk)
 ```
 
-But this code has a problem. If there is no `Post` with the given `primary key` (`pk`) we will have a super ugly error!
+하지만 이 코드에는 문제가 있어요. `primary key` (`pk`)가있는 `Post`가 없다면 보고 싶지 않은 오류가 나올 거에요!
 
 ![DoesNotExist error](images/does_not_exist2.png)
 
-We don't want that! But luckily Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
+우리가 원하는게 아니에요! 장고에서는 이를 해결 하기위해 특별한 기능을 제공해요. : `get_object_or_404`이에요. 이 기능을 사용하면 `pk`에 맞는 `Post`가 없을 경우, 멋진 페이지(`페이지 찾을 수 없음 404 : Page Not Found 404)`를 보여줄 거에요.
 
 ![Page not found](images/404_2.png)
 
-The good news is that you can actually create your own `Page not found` page and make it as pretty as you want. But it's not super important right now, so we will skip it.
+좋은 점은 여러분 만의 `페이지 찾을 수 없음(Page not found)` 페이지를 예쁘게 만들 수 있다는 거에요. 지금 당장 중요한 것이 아니까 생략할게요.
 
-OK, time to add a *view* to our `views.py` file!
+좋아요. 이제 `views.py` 파일에 *view*를 추가합시다!
 
 `blog/urls.py`파일에서 `views.post_detail`라는 뷰를 `post_detail`이라 이름을 붙이도록 URL 법칙을 만들었어요. 이는 장고가 `post_detail`이라는 이름을 해석할 때, `blog/views.py`파일 내부의 `post_detail`이라는 뷰 함수로 이해하도록 해줍니다.
 
@@ -126,21 +126,21 @@ def post_detail(request, pk):
     return render(request, 'blog/post_detail.html', {'post': post})
 ```
 
-Yes. It is time to refresh the page: http://127.0.0.1:8000/
+브라우저를 새로고침 해보세요. : http://127.0.0.1:8000/
 
 ![Post list view](images/post_list2.png)
 
-It worked! But what happens when you click a link in blog post title?
+잘 되네요! 그런데 블로그 제목 안의 링크를 클릭하면 어떻게 되나요?
 
 ![TemplateDoesNotExist error](images/template_does_not_exist2.png)
 
-Oh no! Another error! But we already know how to deal with it, right? We need to add a template!
+이런! 또 에러가 나왔네요! 하지만 이제는 이런 걸 어떻게 다뤄야하는지 알고 있죠? 우리는 이제 템플릿을 추가해 볼 거에요!
 
-## Create a template for the post details
+## Post 상세 페이지에 템플릿 만들기
 
-We will create a file in `blog/templates/blog` called `post_detail.html`, and open it in the code editor.
+`blog/templates/blog` 디렉토리 안에 `post_detail.html`라는 새 파일을 생성하세요.
 
-Enter the following code:
+다음 코드를 추가하세요:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -160,9 +160,9 @@ Enter the following code:
 {% endblock %}
 ```
 
-Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
+다시 한 번 `base.html`을 확장해 봅시다. `content` 블록에서, 블로그 글의 published_date 출판일(존재한다면) 과 제목, 내용을 보이게 할 거에요. 그런데 제일 중요한 것을 얘기해봐야하지 않겠어요?
 
-{% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ...` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` 는 무엇인가를 확인할 때 사용하는 템플릿 태그 입니다. (` If else ...` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
 
 OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
 
