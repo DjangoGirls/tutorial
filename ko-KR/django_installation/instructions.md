@@ -1,6 +1,6 @@
 > 이번 장의 일부는 Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)의 튜토리얼을 바탕으로 작성되었습니다.
 > 
-> Part of this section is based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Django-marcador 튜토리얼은 Markus Zapke-Gründemann et al에게 저작권이 있습니다.
+> Creative Commons Attribution-ShareAlike 4.0 International License 에 따라 [django-marcador 튜토리얼](http://django-marcador.keimlink.de/)를 바탕으로 작성되었습니다. Django-marcador 튜토리얼은 Markus Zapke-Gründemann et al에게 저작권이 있습니다.
 
 ## 가상 환경
 
@@ -8,13 +8,13 @@
 
 자, 이제부터 **가상 환경**(*virtualenv*라고 불러요)을 만들어보겠습니다. Virtualenv는 프로젝트 기초 전부를 Python/Django와 분리시켜줍니다. 다시 말해 웹사이트가 변경되어도 개발 중인 것에 영향을 미치지 않다는 것입니다. 어때요, 깔끔하죠?
 
-`virtualenv`를 만드는 데 필요한 것은 생성할 곳을 정하는 것 뿐입니다. 예를 들면, home 디렉토리와 같은 곳이면 적당합니다. On Windows, it might look like `C:\Users\Name` (where `Name` is the name of your login).
+`virtualenv`를 만드는 데 필요한 것은 생성할 곳을 정하는 것 뿐입니다. 예를 들면, home 디렉토리와 같은 곳이면 적당합니다. 윈도우 환경에서는 `C:\Users\Name` 일 거에요. (`Name` 이라는 것은 윈도우에 로그인할 때 사용한 아이디를 말합니다.)
 
-> **NOTE:** On Windows, make sure that this directory does not contain accented or special characters; if your username contains accented characters, use a different directory, for example, `C:\djangogirls`.
+> **주의:** 윈도우에서는 디렉토리에 악센트기호나 특수문자가 포함되어서는 안되요; 만약 사용자명에 악센트 기호가 예를 들어`C:\djangogirls`와 같은 다른 디렉토리를 사용하세요.
 
 이 튜토리얼에서는 home 디렉토리 아래 `djangogirls`라는 디렉토리를 새로 만들어 사용하도록 할게요.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     $ mkdir djangogirls
     $ cd djangogirls
@@ -22,7 +22,7 @@
 
 이제 `myenv` 라는 이름의 가상 환경을 만들어볼게요. 아래와 같은 형식의 명령을 실행하세요.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     $ python3 -m venv myvenv
     
@@ -30,68 +30,68 @@
 <!--sec data-title="Virtual environment: Windows" data-id="virtualenv_installation_windows"
 data-collapse=true ces-->
 
-To create a new `virtualenv`, you need to open the command prompt and run `python -m venv myvenv`. It will look like this:
+새 `virtualenv` 만들기 위해, 명령줄에 `python -m venv myvenv` 을 입력해서 실행해요. 화면에 이렇게 나타날 거에요:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     C:\Users\Name\djangogirls> python -m venv myvenv
     
 
-Where `myvenv` is the name of your `virtualenv`. 이름은 마음대로 정할 수 있지만, 소문자여야하고 공백은 없어야하고 특수문자도 사용하면 안되요. It is also good idea to keep the name short – you'll be referencing it a lot!
+여기서 `myvenv` 는 `가상 환경`의 이름이예요. 이름은 마음대로 정할 수 있지만, 소문자여야하고 공백은 없어야하고 특수문자도 사용하면 안되요. 이름은 짧게 만드는게 좋아요. 자주 입력해야하니까요.
 
 <!--endsec-->
 
 <!--sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv myvenv`. It will look like this:
+리눅스와 맥에서 `virtualenv`를 생성하려면 간단하게 `python3 -m venv myvenv`를 실행하면 됩니다. 화면에 이렇게 나타날 거에요:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     $ python3 -m venv myvenv
     
 
-여기서 `myvenv` 는 `가상 환경`의 이름이예요. 이름은 마음대로 정할 수 있지만, 소문자여야하고 공백은 없어야해요. It is also a good idea to keep the name short as you'll be referencing it a lot!
+여기서 `myvenv` 는 `가상 환경`의 이름이예요. 이름은 마음대로 정할 수 있지만, 소문자여야하고 공백은 없어야해요. 이름은 짧게 만드는게 좋아요. 자주 입력해야하니까요.
 
 > **참고:** 데비안/우분투 일부 버전에서 아래 오류가 나타날 수 있습니다:
 > 
-> {% filename %}command-line{% endfilename %}
+> {% filename %}명령줄{% endfilename %}
 > 
 >     The virtual environment was not created successfully because ensurepip is not available.  데비안/우분투 시스템에는, 다음 명령을 사용 하여 python3 venv 패키지를 설치 해야 합니다.
 >        apt install python3-venv
 >     You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.
 >     
 > 
-> In this case, follow the instructions above and install the `python3-venv` package: {% filename %}command-line{% endfilename %}
+> 이 경우에는, 위에 `python3-venv` 패키지 설치 안내를 참고해요: {% filename %}명령줄{% endfilename %}
 > 
 >     $ sudo apt install python3-venv
 >     
 > 
-> **NOTE:** On some versions of Debian/Ubuntu initiating the virtual environment like this currently gives the following error:
+> **주의:** 일부 데비안/우분투 버전의 경우 가상환경을 초기화할때 아래와 같은 에러가 발생할 수 있어요:
 > 
-> {% filename %}command-line{% endfilename %}
+> {% filename %}명령줄{% endfilename %}
 > 
 >     Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
 >     
 > 
 > 이 문제를 해결하려면 `virtualenv` 명령을 사용해야해요.
 > 
-> {% filename %}command-line{% endfilename %}
+> {% filename %}명령줄{% endfilename %}
 > 
 >     $ sudo apt install python-virtualenv
 >     $ virtualenv --python=python{{ book.py_version }} myvenv
 >     
 > 
-> **NOTE:** If you get an error like
+> **주의:** 만약 아래와 같은 에러가 발생할 경우
 > 
-> {% filename %}command-line{% endfilename %}
+> {% filename %}명령줄{% endfilename %}
 > 
 >     E: Unable to locate package python3-venv
 >     
 > 
-> then instead run:
+> 대신 아래와 같이 실행해요:
 > 
-> {% filename %}command-line{% endfilename %}
+> {% filename %}명령줄{% endfilename %}
 > 
 >     sudo apt install python{{ book.py_version }}-venv
 >     
@@ -107,14 +107,14 @@ data-collapse=true ces-->
 
 다음과 같이 가상환경을 실행하세요.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     C:\Users\Name\djangogirls> myvenv\Scripts\activate
     
 
-> **NOTE:** on Windows 10 you might get an error in the Windows PowerShell that says `execution of scripts is disabled on this system`. In this case, open another Windows PowerShell with the "Run as Administrator" option. Then try typing the following command before starting your virtual environment:
+> **주의:** 윈도우 10의 파워셸에서는 `execution of scripts is disabled on this system`와 같은 에러가 발생할 수 있어요. 이 경우 "관리자 권한으로 실행" 옵션을 사용해 새 윈도우 파워셸을 열어요. 가상환경을 시작하기 전에 그리고 아래 명령을 입력해요.
 > 
-> {% filename %}command-line{% endfilename %}
+> {% filename %}명령줄{% endfilename %}
 > 
 >     C:\WINDOWS\system32> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 >         Execution Policy Change
