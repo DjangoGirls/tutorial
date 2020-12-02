@@ -25,49 +25,49 @@ Anaconda가 컴퓨터에 이미 설치되어 있더라도, 아래와같이 일�
 
 주의: 만약 오래된 윈도우(7, 비스타, 혹은 더 오래된 버전)를 사용하고 있다면 파이썬 {{ book.py_version }} 인스톨러가 실페 에러를 나타낼 거에요, 그러면 윈도우 업데이트를 설치하고 파이썬 설치를 다시 해보세요. 만약 계속 에러를 나타낸다면, [Python.org](https://www.python.org/downloads/windows/)에서 파이썬 {{ book.py_min_release }} 버전을 설치해 보세요.
 
-> Django {{ book.django_version }} needs Python {{ book.py_min_version }} or greater, which does not support Windows XP or earlier versions.
+> 장고 {{ book.django_version }}는 Windows XP나 이전버전을 지원하지 않는 파이썬 {{ book.py_min_version }} 혹은 이상의 버전을 필요로해요
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
+> **주의** OS X에 파이썬을 설치하기 전, 맥 설정이 앱스토어에서 받지않은 패키지가 설치될 수 있도록 허용되어 있는지 확인하세요. 시스템 설정(어플리케이션 폴더에 있어요), "보안 및 개인정보보호", 그리고 "일반" 탭으로 이동해요. "다음에서 다운로드한 앱 허용:"이 "Mac App Store"로 되어있다면, "Mac App Store 및 확인된 개발자" 로 변경해요.
 
-You need to go to the website https://www.python.org/downloads/mac-osx/ and download the latest Python installer:
+https://www.python.org/downloads/mac-osx/ 에서 파이썬 설치프로그램을 다운로드 받아야 합니다.
 
-* Download the *Mac OS X 64-bit/32-bit installer* file,
-* Double click *python-{{ book.py_release }}-macosx10.9.pkg* to run the installer.
+* *Mac OS X 64-bit/32-bit installer* 파일을 다운 받으세요.
+* *python-{{ book.py_release }}-macosx10.9.pkg*을 더블 클릭해 설치 프로그램을 시작하세요. 
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
+아마도 이미 파이썬이 설치되어있을 거에요. 설치되어있는지 (그리고 어떤 버전인지) 확인하려면, 콘솔을 열어서 다음 명령을 실행하세요.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     $ python3 --version
     Python {{ book.py_release }}
     
 
-If you have a different version of Python installed, at least {{ book.py_min_version }} (e.g. {{ book.py_min_release }}), then you don't have to upgrade. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
+만약 다른버전의 파이썬이 깔려 있다면, 최소 {{ book.py_min_version }} (예를 들어 {{ book.py_min_release }})이어야 해요, 그렇지 않다면 업그레이드 해요. 파이썬이 설치되어 있지 않다면, 혹은 다른 버전을 원한다면, 먼저 어떤 리눅스 배포판을 사용하고 있는지 아래 명령으로 확인해요:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     $ grep '^NAME=' /etc/os-release
     
 
-Afterwards, depending on the result, follow one of the following installation guides below this section.
+그리고나서, 결과에 따라, 아래 섹션의 설치 가이드를 따라해보세요.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-Type this command into your console:
+콘솔에서 다음 명령을 실행하세요.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     $ sudo apt install python3
     
@@ -77,40 +77,40 @@ Type this command into your console:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Use this command in your console:
+콘솔에서 다음 명령을 실행하세요.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     $ sudo dnf install python3
     
 
-If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use `yum` instead.
+만약 오래된 페도라 버전을 사용하고 있다면 `dnf`명령을 찾을 수 없을거에요. 그런 경우 `yum` 명령을 대신 사용해요.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Use this command in your console:
+콘솔에서 다음 명령을 실행하세요.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     $ sudo zypper install python3
     
 
 <!--endsec-->
 
-Verify the installation was successful by opening a command prompt and running the `python3` command:
+명령창을 열고 `python3` 명령을 실행해서 잘 설치되었는지 확인하세요.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     $ python3 --version
     Python {{ book.py_release }}
     
 
-The version shown may be different from {{ book.py_release }} -- it should match the version you installed.
+만약 {{ book.py_release }} 버전과 다르게 보일거에요 -- 이것은 당신이 설치한 버전과 일치해요.
 
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is {{ book.py_min_version }} or higher. If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
+**주의:** 만약 윈도우에서 `python3` 를 찾을수 없다는 에러메시지가 발생하면, `python` (`3`을 제외하고)을 입력해보고 {{ book.py_min_version }} 버전 이상인지 확인하세요. If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
 
 * * *
 
