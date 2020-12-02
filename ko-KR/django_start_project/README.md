@@ -82,9 +82,9 @@ Settings.py에서 `TIME_ZONE`있는 줄을 찾으세요. 그리고 이를 해당
 TIME_ZONE = 'Europe/Berlin'
 ```
 
-A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `ch` for Switzerland. If English is not your native language, you can add this to change the default buttons and notifications from Django to be in your language. So you would have "Cancel" button translated into the language you defined here. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/2.2/ref/settings/#language-code).
+언어코드는 예를 들어 `en` 은 영어, `de` 는 독일어와 같이 구성 되어 있어요. 그리고 국가 코드는 예를 들어 `de`는 독일, `ch` 는 스위스와 같이 구성되어 있어요. 영어가 모국어가 아니라면, 이것을 추가해서 장고의 기본 버튼과 알림을 당신의 언어로 변경할 수 있어요. "Cancel" 버튼을 당신이 정의한 언어로 바꿀 수 있을거에요. [장고는 이미 준비된 번역본을 포함하고 있어요](https://docs.djangoproject.com/en/2.2/ref/settings/#language-code).
 
-If you want a different language, change the language code by changing the following line:
+다른 언어를 원한다면, 아래와 같이 언어 코드를 바꾸어서 변경할 수 있어요:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -92,7 +92,7 @@ If you want a different language, change the language code by changing the follo
 LANGUAGE_CODE = 'de-ch'
 ```
 
-We'll also need to add a path for static files. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
+그리고 경로에 정적파일을 추가해야 해요. (정적 파일과 CSS에 대한 자세한 내용은 튜토리얼 뒷부분에서 확인하겠습니다.) 파일의 *끝*으로 내려가서 `STATIC_URL` 항목 바로 아래에 `STATIC_ROOT`라는 새 항목을 추가해요.
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -101,7 +101,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
-When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated against `['localhost', '127.0.0.1', '[::1]']`. This won't match our hostname on PythonAnywhere once we deploy our application so we will change the following setting:
+`DEBUG` 가 `True` 이고 `ALLOWED_HOSTS` 가 비어있다면, 호스트가`['localhost', '127.0.0.1', '[::1]']`로 검증됩니다. This won't match our hostname on PythonAnywhere once we deploy our application so we will change the following setting:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
