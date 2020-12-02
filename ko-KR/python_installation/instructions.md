@@ -19,7 +19,7 @@ Anaconda가 컴퓨터에 이미 설치되어 있더라도, 아래와같이 일�
 
 설치를 진행하기 시작하면 "Setup"이라고 적혀진 창을 발견 할 수 있을거에요. 여기 보이는것처럼 "Add Python {{ book.py_version }} to PATH" or 'Add Python to your environment variables" 에 체크가 되어있는지 확인하고 "Install Now"를 클릭하세요.(설치되는 버전에 따라 조금 다르게 보일 수 있어요):
 
-![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
+![파이썬을 패쓰 (path)에 추가하는 것을 잊지 마세요.](../python_installation/images/python-installation-options.png)
 
 설치가 완료되면 파이썬 혹은 설치된 버전에 대한 정보를 알아볼 수 있는 링크가 표시된 안내창이 보입니다. 해당 창을 Close 혹은 cancel 하세요 - 당신은 이 튜토리얼에서 더 배우게 될거에요.
 
@@ -110,8 +110,8 @@ data-collapse=true ces-->
 
 만약 {{ book.py_release }} 버전과 다르게 보일거에요 -- 이것은 당신이 설치한 버전과 일치해요.
 
-**주의:** 만약 윈도우에서 `python3` 를 찾을수 없다는 에러메시지가 발생하면, `python` (`3`을 제외하고)을 입력해보고 {{ book.py_min_version }} 버전 이상인지 확인하세요. If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
+**주의:** 만약 윈도우에서 `python3` 를 찾을수 없다는 에러메시지가 발생하면, `python` (`3`을 제외하고)을 입력해보고 {{ book.py_min_version }} 버전 이상인지 확인하세요. 만약 계속 작동하지 않는다면, 새 명령창을 열고 시도해보세요; 파이썬 설치 이전에 실행된 명령창인 경우 간혹 발생한답니다.
 
 * * *
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
+더 알고 싶은 것이 있거나, 설치가 잘 되지 않고 어찌 해야할지 모르겠다면 코치를 불러주세요! 잘 설치 되지 않는 경우도 있을 수 있습니다. 그럴 때는 경험이 있는 분에게 도움을 구해보세요.
