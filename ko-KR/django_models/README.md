@@ -34,7 +34,7 @@
 
 우리는 다음 질문에 답할 수 있어야 해요: 블로그 글이란 무엇일까? 어떤 속성들을 가져야 할까?
 
-블로그는 제목과 내용이 필요하죠? It would be also nice to know who wrote it – so we need an author. 마지막으로, 그 글이 작성된 날짜와 게시된 날짜도 알면 좋겠어요.
+블로그는 제목과 내용이 필요하죠? 그리고 누가 썼는지도 알 수 있게 작성자(author) 도 추가하면 좋을 것 같아요. 마지막으로, 그 글이 작성된 날짜와 게시된 날짜도 알면 좋겠어요.
 
     Post
     --------
@@ -63,7 +63,7 @@
 
 잘 정돈된 상태에서 시작하기 위해, 프로젝트 내부에 별도의 어플리케이션을 만들어볼 거에요. 처음부터 모든 것이 잘 준비되어있다면 훌륭하죠. 어플리케이션을 만들기 위해 콘솔창(`djangogirls` 디렉토리에서 `manage.py` 파일)에서 아래 명령어를 실행하세요.
 
-{% filename %}Mac OS X and Linux:{% endfilename %}
+{% filename %}Mac OS X 와 Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py startapp blog
     
@@ -98,7 +98,7 @@
     
     
 
-After creating an application, we also need to tell Django that it should use it. We do that in the file `mysite/settings.py` -- open it in your code editor. We need to find `INSTALLED_APPS` and add a line containing `'blog.apps.BlogConfig',` just above `]`. So the final product should look like this:
+어플리케이션을 생성한 후 장고에게 사용해야한다고 알려줘야 합니다. 코드편집기에서 `mysite/settings.py` 파일을 열어 진행할거에요. 이 파일 안에서 `INSTALLED_APPS`를 찾고 `]`바로 위 라인에`'blog.apps.BlogConfig'`을 추가하세요.. 최종 결과물은 아래와 다음과 같을 거에요.
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -116,9 +116,9 @@ INSTALLED_APPS = [
 
 ### 블로그 글 모델 만들기
 
-In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
+모든 `Model` 객체는 `blog/models.py` 파일에 선언하여 모델을 만듭니다. 이 파일에 우리의 블로그 글 모델도 정의할 거에요.
 
-Let's open `blog/models.py` in the code editor, remove everything from it, and write code like this:
+`blog/models.py` 파일을 열어서 안에 모든 내용을 삭제한 후 아래 코드를 추가하세요:
 
 {% filename %}blog/models.py{% endfilename %}
 
