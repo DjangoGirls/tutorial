@@ -1018,9 +1018,9 @@ for name in girls:
     print('Next girl')
 ```
 
-And when we run it:
+실행하면 다음과 같습니다:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     $ python3 python_intro.py
     Hi Rachel!
@@ -1035,9 +1035,9 @@ And when we run it:
     Next girl
     
 
-As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
+`girls` 리스트의 요소마다 여러분이 `for`문에 넣은, 들여쓰기를 한 모든 코드들이 반복됩니다.
 
-You can also use `for` on numbers using the `range` function:
+`for`문에 `range` 함수로 숫자를 사용할 수 있어요.
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1046,9 +1046,9 @@ for i in range(1, 6):
     print(i)
 ```
 
-Which would print:
+이렇게 출력됩니다. :
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     1
     2
@@ -1057,16 +1057,16 @@ Which would print:
     5
     
 
-`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
+`range`는 매개 변수로 넘겨진 숫자부터 시작하는 숫자 리스트를 만들어주는 함수입니다.
 
-Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
+파이썬에서는 두 숫자 중 두 번째는 리스트에 포함되지 않는다는 것을 주의하세요. (즉 `range(1, 6)`는 1부터 5까지 카운트 하며 숫자 6은 리스트에 포함되지 않습니다.) "range"는 반만 열려 있기 때문에, 첫번째 숫자는 포함되지만 마지막 숫자는 포함되지 않아요.
 
 ## 목차
 
-That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
+이제 다 끝났어요. **모두 정말 대단해요!** 어려운 내용이었는데 잘 해낸 나 자신을 자랑스럽게 생각하세요. 여기까지 온 것이 자랑스럽습니다!
 
-For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers! :)
+공식 파이썬 튜토리얼을 모두 해보고 싶다면 https://docs.python.org/3/tutorial/ 을 방문해보아요. 이렇게하면 철저하고 완벽하게 언어를 학습할 수 있어요. 화이팅!:)
 
-You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
+다음 장으로 넘어가지 전에 좀 쉬고 와도 좋아요. 스트레칭을 하던가, 잠깐 산책을 하던가, 눈을 쉬게 한다던가 말이죠. :)
 
-![Cupcake](images/cupcake.png)
+![컵케이크](images/cupcake.png)
