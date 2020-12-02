@@ -729,22 +729,22 @@ if 3 > 2:
     print('It works!')
 ```
 
-두 번째 줄 들여쓰기 된 코드에 스페이스 4칸을 준 게 보이나요? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
+두 번째 줄 들여쓰기 된 코드에 스페이스 4칸을 준 게 보이나요? 파이썬에서 결과가 참일대 코드를 실행하기 위해서는 이처럼 들여쓰기를 해줘야 한답니다. 물론 스페이스 한 칸만 띄울 수 있지만, 거의 모든 파이썬 프로그래머들은 코드를 깔끔하게 작성하기 위해 4칸을 사용해요. 텍스트 편집기에서 한번의 탭이 스페이스 4칸으로 계산된답니다. 들여쓰기 방식을 결정했다면, 바꾸지 마세요. 이미 스페이스 4칸으로 들여쓰기가 되었다면, 이후의 들여쓰기는 모두 4칸이어야 해요. 만약 그렇지 않으면 실행할때 문제가 생길거에요.
 
-Save it and give it another run:
+이제 저장하고 실행해보세요:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 $ python3 python_intro.py
 It works!
 ```
 
-Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
+주의: 윈도우에서는 'python3'가 명령으로 인식되지 않으니, 지금부터 'python3'를 'python'으로 변경해서 실행하세요.
 
 ### 조건이 참(True) 이 아니라면 어떻게 되나요?
 
-In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
+앞의 예제에서 코드가 조건이 True인 경우에만 실행되게 만들었어요. 하지만 파이썬은 `elif`문과 `else`문도 사용할 수 있습니다.
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -755,15 +755,15 @@ else:
     print('5 is not greater than 2')
 ```
 
-When this is run it will print out:
+실행하면 다음과 같이 출력됩니다:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     $ python3 python_intro.py
     5 is indeed greater than 2
     
 
-If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
+만약 2가 5보다 크다면 두번째 명령이 실행됩니다. 참 쉽죠? 이제 `elif`가 어떻게 작동하는지 봅시다. :
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -777,17 +777,17 @@ else:
     print('Hey anonymous!')
 ```
 
-and executed:
+그리고 실행해보세요. :
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     $ python3 python_intro.py
     Hey Sonja!
     
 
-See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
+어떻게 됐나요? `elif`문은 맨 처음 조건이 아닐 경우 그 다음 조건을 처리하게 해줍니다.
 
-You can add as many `elif` statements as you like after your initial `if` statement. For example:
+여러분은 `if` 문을 쓴 다음에 원하는 만큼 `elif` 문을 계속 추가할 수 있어요. 이렇게요. :
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -807,19 +807,19 @@ else:
     print("My ears are hurting! :(")
 ```
 
-Python runs through each test in sequence and prints:
+파이썬이 각 테스트를 순서대로 실행하고 출력합니다:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     $ python3 python_intro.py
     Perfect, I can hear all the details
     
 
-## Comments
+## 주석
 
-Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
+주석은 `#`로 시작해요. `#` 다음에 아무거나 원하는 것을 입력하면 파이썬은 이를 무시할거에요. 주석은 당신의 코드를 다른사람들이 더 쉽게 이해할 수 있도록 만들어 줄거랍니다.
 
-Let's see how that looks:
+어떻게 보이는지 한번 알아볼까요:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -830,7 +830,7 @@ if volume < 20 or volume > 80:
     print("That's better!")
 ```
 
-You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
+모든 코드에 주석을 달 필요는 없어요, 그러나 당신의 코드가 무엇을 해야하는지 설명해야 하거나 복잡한 무엇인가를 요약해야할 때 유용할 거에요.
 
 ### 목차
 
