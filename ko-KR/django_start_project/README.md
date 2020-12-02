@@ -2,28 +2,28 @@
 
 > 이번 장의 일부는 Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)의 튜토리얼을 바탕으로 작성되었습니다.
 > 
-> Parts of this chapter are based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Django-marcador 튜토리얼은 Markus Zapke-Gründemann et al에게 저작권이 있습니다.
+> 이번 장의 일부는 Creative Commons Attribution-ShareAlike 4.0 International License가 있는 [django-marcador tutorial](http://django-marcador.keimlink.de/)을 기초로 작성되었습니다. Django-marcador 튜토리얼은 Markus Zapke-Gründemann et al에게 저작권이 있습니다.
 
-We're going to create a small blog!
+이제 우리는 아주 간단한 블로그를 만들어 볼 거에요!
 
 첫 단계는 장고 프로젝트를 시작하는 거에요. 다시 말해 장고의 기본 골격을 만들어주는 스크립트를 실행할 거에요. 이 디렉토리와 파일 묶음은 나중에 사용할 것입니다.
 
 장고에서는 디렉토리나 파일 이름이 매우 중요하답니다. 우리가 생성할 그 파일들의 이름을 마음대로 변경해서는 안됩니다. 또한 그 파일들을 다른 곳으로 옮겨도 안됩니다. 장고는 중요한 것들을 찾을 수 있게 특정한 구조를 유지해야합니다.
 
-> 모든 것은 가상환경(virtualenv) 안에서 해야한다는 것을 기억하세요. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. **Django 설치하기**장의 **virtualenv 작동법**에서 이미 다루었던 내용입니다. Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
+> 모든 것은 가상환경(virtualenv) 안에서 해야한다는 것을 기억하세요. 현재 콘솔창에서 접두어로 `(myvenv)`가 안보인다면 먼저 virtualenv를 활성화해야 합니다. **Django 설치하기**장의 **virtualenv 작동법**에서 이미 다루었던 내용입니다. 윈도우에서는 `myvenv\Scripts\activate`를 타이핑하고 Mac OS 또는 Linux에서는 `source myvenv/bin/activate`을 입력하세요.
 
 <!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
-In your Mac OS X or Linux console, you should run the following command. **Don't forget to add the period (or dot) `.` at the end!**
+맥과 리눅스 콘솔에서는 다음과 같이 명령을 실행해야해요. **명령어 끝에 `.`(점, 마침표) 을 입력하는 것을 잊지마세요.** :
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     (myvenv) ~/djangogirls$ django-admin startproject mysite .
     
 
 > 점 `.`은 현재 디렉토리에 장고를 설치하라고 스크립트에 알려주기 때문에 중요해요. (축약된 표시이죠).
 > 
-> **Note** When typing the command above, remember that you only type the part which starts by `django-admin`. The `(myvenv) ~/djangogirls$` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **참고** 위 명령을 입력할 때 `django-admin`로 시작하는 부분만 입력하세요. 여기에 보이는 `(myvenv) ~/djangogirls$` 부분은 커맨드라인에 입력을 가져오게 하는 프롬트프(prompt) 입니다.
 
 <!--endsec-->
 
