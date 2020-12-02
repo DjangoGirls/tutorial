@@ -2,17 +2,17 @@
 
 # 어플리케이션 확장하기
 
-We've already completed all the different steps necessary for the creation of our website: we know how to write a model, URL, view and template. We also know how to make our website pretty.
+우리는 지금까지 웹사이트 제작에 필요한 모든 단계들을 마쳤어요. 모델, URL, 뷰와 템플릿을 만드는지 알게 되었고요. 또 웹사이트를 어떻게 멋지게 꾸미는지 알게 되었어요.
 
-Time to practice!
+이제 연습해 봅시다!
 
-The first thing we need in our blog is, obviously, a page to display one post, right?
+블로그에 가장 필요한 것은 페이지에 포스트가 보이게 만드는 것이겠죠?
 
-We already have a `Post` model, so we don't need to add anything to `models.py`.
+이미 앞에서 `Post` 모델을 만들었으니 `models.py`에 추가할 내용은 없습니다.
 
 ## Post에 템플릿 링크 만들기
 
-We will start with adding a link inside `blog/templates/blog/post_list.html` file. Open it in the code editor, and so far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+`blog/templates/blog/post_list.html` 파일에 링크를 추가하는 것부터 시작합시다. 아마 아래와 같을 거에요. : 코드편집기를 열면 아래와 같이 보일거에요: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -30,7 +30,7 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
 {% endblock %}
 ```
 
-{% raw %}We want to have a link from a post's title in the post list to the post's detail page. Let's change `<h2><a href="">{{ post.title }}</a></h2>` so that it links to the post's detail page:{% endraw %}
+{% raw %}우리는 post 목록에 있는 제목에서 post의 내용 페이지로 가는 링크를 만들 거에요. `<h2><a href="">{{ post.title }}</a></h2>` 를 변경해 봅시다. post의 상세 페이지는 {% endraw %} 로 연결됩니다.
 
 {% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 
@@ -38,11 +38,11 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
 <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
 ```
 
-{% raw %}Time to explain the mysterious `{% url 'post_detail' pk=post.pk %}`. As you might suspect, the `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!{% endraw %}
+{% raw %} `{% url 'post_detail' pk=post.pk %}`에 대해 설명할 때가 왔군요! 예상하셨겠지만 `{% %}` 표기는 장고 템플릿 태그를 사용하고 있는 것을 말합니다. 이번에는 우리를 위한 URL를 만들어 사용해 봅시다!{% endraw %}
 
-The `post_detail` part means that Django will be expecting a URL in `blog/urls.py` with name=post_detail
+`post_detail` 부분은 `blog/urls.py`에서 URL을 name=post_detail 로 예측하는걸 의미해요.
 
-And how about `pk=post.pk`? `pk` is short for primary key, which is a unique identifier for each record in a database. Every Django model has a field which serves as its primary key, and whatever other name it has, it can also be referred to as "pk". Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a field named "id" holding a number that increases for each record, i.e. 1, 2, 3) and adds it as a field to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
+그리고 `pk=post.pk`는 어떨까요? `pk` 는 데이터베이스에서 각 레코드의 고유 식별자를 의미하는 기본키(Primary Key)의 줄임말이에요. 모든 장고 모델은 기본키 역할을 하는 필드를 가지고 있고 다른 이름이 무엇이든간에 "pk"라 할 수 있어요. Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a field named "id" holding a number that increases for each record, i.e. 1, 2, 3) and adds it as a field to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
 
 Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
 
