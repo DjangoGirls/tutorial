@@ -30,104 +30,104 @@ Python으로 놀기 위해서는 *커맨드라인*을 열어야 합니다. [커�
 
 파이썬 콘솔에서 나가려면 `exit()` 을 입력하거나 윈도우에서는 `Ctrl + Z` 를 맥이나 리눅스에서는 `Ctrl + D`를 입력하면 됩니다. 그러면 `>>>` 는 사라질 거에요.
 
-For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
+지금은 우리는 파이썬 콘솔을 나가지 않을거에요. 우리는 더 배우길 원하거든요. 자 이제 `2 + 3` 라는 수학식을 입력하고 `enter`키를 누르세요.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> 2 + 3 
 5
 ```
 
-Nice! See how the answer popped out? Python knows math! You could try other commands like:
+잘했어요! 결과값이 어떻게 나왔나요? 파이썬은 수학을 알고 있어요! 다른 명령어를 넣어봅시다:
 
 - `4 * 5`
 - `5 - 1`
 - `40 / 2`
 
-To perform exponential calculation, say 2 to the power 3, we type: {% filename %}command-line{% endfilename %}
+2의 3제곱인 지수연산을 수행하기위해서 우리는 {% filename %}명령줄{% endfilename %} 입력할 거에요.
 
 ```python
 >>> 2 ** 3
 8
 ```
 
-Have fun with this for a little while and then get back here. :)
+조금 놀아봤다면 다시 여기로 돌아와주세요 :)
 
-As you can see, Python is a great calculator. If you're wondering what else you can do…
+보시다시피, 파이썬은 훌륭한 계산기랍니다. 그 밖에 여러분들이 할 수 있는 것들이 궁금하다면...
 
 ## 문자열(String)
 
-How about your name? Type your first name in quotes like this:
+이름도 다룰 수 있을까요? 따옴표로 이름을 감싸서 입력해보세요.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> "Ola" 
 'Ola'
 ```
 
-You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
+처음으로 문자열을 만들었군요! 문자열은 컴퓨터가 처리할 수 있는 연속된 문자들을 말해요. 문자열은 반드시 시작과 끝이 같은 문자여야해요. 문자열은 작은 따옴표(`'`) 나 큰 따옴표(`"`) 로 감싸야 해요. (둘 간의 차이점은 없어요. 단지 하나로 감싸나 둘로 감싸나 차이일 뿐이에요.) 이 따옴표는 파이썬에게 안에 문자열이리 들어있다고 알려줍니다.
 
-Strings can be strung together. Try this:
+문자열들은 줄줄이 사탕처럼 연결할 수 있어요. 이렇게요:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> "Hi there " + "Ola" 
 'Hi there Ola'
 ```
 
-You can also multiply strings with a number:
+문자열이랑 숫자를 곱할 수도 있어요.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> "Ola" * 3 
 'OlaOlaOla'
 ```
 
-If you need to put an apostrophe inside your string, you have two ways to do it.
+문자열 안에 작은 따옴표를 넣고 싶다면, 두 가지 방법이 있어요.
 
-Using double quotes:
+큰 따옴표를 사용하는 방법과
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> "Runnin' down the hill" 
 "Runnin' down the hill"
 ```
 
-or escaping the apostrophe with a backslash (``):
+백슬래시 (``) 기호를 이용하는 방법이예요.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> 'Runnin\' down the hill' 
 "Runnin' down the hill"
 ```
 
-Nice, huh? To see your name in uppercase letters, type:
+알겠나요? 이제 이름을 대문자로 만들어볼까요:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> "Ola".upper()
 'OLA'
 ```
 
-You just used the `upper` **method** on your string! A method (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
+방금 문자열에 `upper`이라는 **함수(function)**를 사용했어요! 함수 (`upper()` 같은 것)란 파이썬이 주어진 대상(`"Ola"`같은)에 대해 수행할 수 있는 일련의 명령을 말해요.
 
-If you want to know the number of letters contained in your name, there is a **function** for that too!
+내 이름의 총 글자의 수를 알고 싶을 때, 사용하는 **함수**도 있어요.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> len("Ola") 
 3
 ```
 
-Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
+함수 호출 시, 어떤 함수는 문자열 뒤에 `.`를 붙이고, (`"Ola".upper()` 처럼), 또 어떤 함수는 함수 뒤에 문자열이 들어간 괄호를 붙이는지 궁금하셨죠? `upper()`와 같은 함수는 객체에 속하게 되어 해당 문자열에서만 수행되기 때문이죠. 이와 같은 경우, 함수를 **메서드(method)**라고 합니다. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
 
 ### 목차
 
