@@ -196,12 +196,12 @@ DATABASES = {
 
 축하해요! 여러분은 방금 웹 서버를 활용한 첫 웹사이트를 만들었어요! 정말 멋지죠?
 
-![Install worked!](images/install_worked.png)
+![설치 완료!](images/install_worked.png)
 
 명령창은 한번에 하나만 실행할 수 있는걸 주의하세요, 그리고 열어놓은 명령창은 이미 웹서버를 실행하고 있어요. 웹 서버가 실행되고 추가 수신 요청을 기다리는 동안 터미널은 새 텍스트를 허용하지만 새 명령을 실행하지는 않아요.
 
 > 우리는 이미 **인터넷 작동 방법** 장에서 어떻게 웹서버가 작동하는지 알아봤어요. 
 
-To type additional commands while the web server is running, open a new terminal window and activate your virtualenv -- to review instructions on how to open a second terminal window, see [Introduction to the command line](../intro_to_command_line/README.md). To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
+웹 서버가 실행되는 동안 추가 명령을 입력하려면 새 터미널 창을 열고 virtualenv를 활성화해요. 두 번째 터미널 창을 여는 방법은 [명령줄 소개](../intro_to_command_line/README.md)를 참고해요. 웹 서버를 중지하려면, 실행되고 있는 창으로 돌아가 CTRL+C를 동시에 누르세요. (윈도우라면, Ctrl+Break를 눌러야 할지도 모릅니다.)
 
 다음 단계로 넘어갈 준비가 되셨나요? 이제는 새로운 내용을 만들어 볼 시간이에요!
