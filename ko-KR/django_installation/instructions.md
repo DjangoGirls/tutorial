@@ -189,9 +189,9 @@ requirements는 `pip install`로 설치가 필요한 것들의 목록을 유지�
     Django~={{ book.django_version }}
     
 
-Now, run `pip install -r requirements.txt` to install Django.
+이제 `pip install -r requirements.txt` 을 실행해 장고를 설치해요.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     (myvenv) ~$ pip install -r requirements.txt
     Collecting Django~={{ book.django_version }} (from -r requirements.txt (line 1))
@@ -203,16 +203,16 @@ Now, run `pip install -r requirements.txt` to install Django.
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
+> 만약 윈도우에서 pip를 실행했는데 오류가 발생했다면 경로에 공백이나 특수문자가 없는지 (예를 들어 `C:\Users\User Name\djangogirls` 처럼요) 확인하세요. 만약 그렇다면 (`C:\djangogirls`처럼) 공백이나 특수문자가 없는 곳으로 옮겨보세요. 디렉토리에 새로운 가상환경을 만들고, 이전 가상환경을 삭제한 후 명령을 다시 시도해보세요. (가상환경은 절대 경로를 사용하기 때몬에 경로를 변경하면 작동하지 않습니다)
 
 <!--endsec-->
 
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
+> 장고 설치 시, 커맨드 라인이 멈출 수 있습니다. 이 경우, 아래 명령어를 사용하세요:
 > 
-> {% filename %}command-line{% endfilename %}
+> {% filename %}명령줄{% endfilename %}
 > 
 >     C:\Users\Name\djangogirls> python -m pip install -r requirements.txt
 >     
@@ -222,8 +222,8 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
+> 우분투 12.04에서 오류가 발생했다면 `python -m pip install -U --force-reinstall pip` 명령으로 가상환경 내의 pip를 고쳐주세요.
 
 <!--endsec-->
 
-That's it! You're now (finally) ready to create a Django application!
+잘했어요! 드디어 장고 어플리케이션을 만들 준비가 끝났습니다!
