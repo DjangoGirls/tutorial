@@ -57,7 +57,7 @@ HTML은 "HyperText Markup Language"의 줄인 말입니다. **하이퍼텍스트
 * 모든 웹 페이지는 `<html>`로 시작해서 `</html>`로 끝나게 됩니다. 가장 기본적인 태그이지요. 웹사이트의 모든 내용은 시작 태그 `<html>`과 닫는 태그인`</html>` 사이에 넣어야만 합니다.
 * `<p>`는 문단 태그입니다. 문단의 끝은 `</p>`로 닫습니다.
 
-## Head and body
+## Head 와 Body
 
 각 HTML 페이지는 두 가지 요소, **head**와 **body**로 구분됩니다.
 
@@ -67,7 +67,7 @@ HTML은 "HyperText Markup Language"의 줄인 말입니다. **하이퍼텍스트
 
 `<head>`는 브라우저에 페이지에 대한 설정들을 알려주고, `<body>`는 실제 페이지에 보여줄 내용을 알려줍니다.
 
-For example, you can put a web page title element inside the `<head>`, like this:
+그 예로, `<head>` 안에 웹페이지의 제목을 넣어봅시다. :
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -93,24 +93,24 @@ For example, you can put a web page title element inside the `<head>`, like this
 
 이 개념은 박스에 뭔가 집어 넣는 것과 같아요. 여러분에게 `<html></html>`라고 하는 큰 박스가 있습니다. 박스 안에는 `<body></body>` 박스가 있고, 또 그 박스 안에는 `<p></p>`라는 더 작은 박스들이 있는 것이죠.
 
-You need to follow these rules of *closing* tags, and of *nesting* elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
+*태그 마침*과 *중첩*의 규칙을 잘 따라야 해요. 그렇지 않으면, 브라우저가 해석을 할 수 없어, 페이지가 원하는 모습으로 나오지 않게 됩니다.
 
 ## 맞춤형 템플릿 만들기
 
 여러분은 이제 좀 더 재밌어질 것입니다. 여러분만의 템플릿을 만들어봅시다! 여기 몇 가지 유용한 태그들이 있습니다:
 
-* `<h1>A heading</h1>` for your most important heading
+* `<h1>A heading</h1>` - 가장 중요한 머리말에 사용하는 태그
 * `<h2>A sub-heading</h2>` 그 다음 수준의 머리말에 사용하는 태그
-* `<h3>A sub-sub-heading</h3>` …and so on, up to `<h6>`
-* `<p>A paragraph of text</p>`
+* `<h3>A sub-sub-heading</h3>` ... 그 다음 머리말.. `<h6>` 까지 계속 수준이 낮아집니다.
+* `<p>텍스트 단락 입니다.</p>`
 * `<em>text</em>` 텍스트를 강조할 때 사용하는 태그
 * `<strong>text</strong>` 여러분의 텍스트를 강력하게 강조할 때 사용하는 태그
-* `<br>` goes to another line (you can't put anything inside br and there's no closing tag)
+* `<br>` 개행. 행을 내누기(br 태그 안에는 속성으로 아무 것도 넣을 수 없습니다.)
 * `<a href="https://djangogirls.org">link</a>` 링크 걸기
 * `<ul><li>first item</li><li>second item</li></ul>` 목록을 만듭니다. 지금 여러분이 보고 있는 목록처럼요!
 * `<div></div>` 페이지의 섹션을 정의합니다.
 
-Here's an example of a full template, copy and paste it into `blog/templates/blog/post_list.html`:
+여기 템플렛 예제가 있어요, `blog/templates/blog/post_list.html`에 붙여넣으세요:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -141,31 +141,31 @@ Here's an example of a full template, copy and paste it into `blog/templates/blo
 
 이 템플릿에는 세 개의 `div` 섹션이 있습니다.
 
-* The first `div` element contains the title of our blog – it's a heading and a link
-* Another two `div` elements contain our blog posts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blog post.
+* 첫 번째 `div`는 블로그 제목을 가지고 있어요. 머리말과 링크이지요.
+* 나머지 두 `div`는 블로그 글 출판 날짜와 클릭할 수 있는 `h2`로 된 블로그 제목을 가지고 있습니다. 두 `p`(문단)의 하나는 날짜를, 다른 하나는 블로그를 위한 거에요.
 
 이 태그들로 이렇게 변합니다. :
 
 ![그림 11.4](images/step6.png)
 
-야호! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
+야호! 지금까지 만든 우리 템플릿은 계속 **같은 내용**만 보여주었죠. 그러나 앞에서 템플릿은 **같은 양식**을 사용하지만 **다른** 정보들을 보여줄 때 사용한다고 말했었죠.
 
-What we really want to do is display real posts added in our Django admin – and that's where we're going next.
+장고 관리자에서 실제 추가한 글들을 보여주는 방법은 앞으로 배우게 될 거에요.
 
 ## 하나 더: 배포하기!
 
 방금 작업했던 것이 인터넷에서도 볼 수 있으면 좋겠죠? PythonAnywhere으로도 배포해 봅시다. :
 
-### Commit, and push your code up to GitHub
+### Github에 코드를 커밋, 푸시하세요!
 
 제일 먼저, 마지막 배포 이후 수정된 파일을 확인해 봅시다. (PythonAnywhere가 아닌 로컬에서 실행하세요) :
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     $ git status
     
 
-Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes in this directory:
+`djangogirls` 디렉토리에서 `git`에게 현재 폴더에 있는 모든 변경 내용을 포함라고 말합니다.
 
 {% filename %}command-line{% endfilename %}
 
@@ -174,23 +174,23 @@ Make sure you're in the `djangogirls` directory and let's tell `git` to include 
 
 파일 업로드 전, `git`으로 업로드 할 파일들을 확인해봅시다. (`git`에서 업로드 할 모든 파일들이 녹색으로 나타나야 합니다.) :
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     $ git status
     
 
 거의 다 왔습니다. 이제 저장소에 변경 사항을 저장할 단계예요. 우리는 "커밋 메시지(commit message)"를 주어, 어떤 것이 수정 변경되었는지 알려줄 거에요. 이번에는 아무거나 적어도 괜찮습니다. 하지만 앞으로는 내가 수정한 내용을 간략하게 적어 다음에 기억할 수 있도록 하는 것이 좋을 거에요.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     $ git commit -m "Changed the HTML for the site."
     
 
-> **Note** Make sure you use double quotes around the commit message.
+> **주의** 커밋 메시지는 쌍따옴표(")로 감싸주세요.
 
-Once we've done that, we upload (push) our changes up to GitHub:
+완성되면, Github으로 업로드(푸쉬) 하세요. :
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     $ git push
     
@@ -199,14 +199,14 @@ Once we've done that, we upload (push) our changes up to GitHub:
 
 * [PythonAnywhere 콘솔 페이지](https://www.pythonanywhere.com/consoles/)를 열고 **배시 콘솔** (또는 새로운 창)을 준비합니다. 그 다음, 명령어를 입력합니다. :
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
+{% filename %}PythonAnywhere 명령줄{% endfilename %}
 
     $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-You'll need to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain name, without the angle-brackets. Your subdomain name is normally your PythonAnywhere user name, but in some cases it might be a bit different (such as if your user name contains capital letters). So if this command doesn't work, use the `ls` (list files) command to find your actual subdomain/folder name, and then `cd` to there.
+(당신의 PythonAnywhere 서브 도메인을 `<your-pythonanywhere-domain>`에 화살괄호 없이 입력하는것을 잊지마세요) Your subdomain name is normally your PythonAnywhere user name, but in some cases it might be a bit different (such as if your user name contains capital letters). So if this command doesn't work, use the `ls` (list files) command to find your actual subdomain/folder name, and then `cd` to there.
 
 Now watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **"Files" page** and view your code on PythonAnywhere (you can reach other PythonAnywhere pages from the menu button on the console page).
 
