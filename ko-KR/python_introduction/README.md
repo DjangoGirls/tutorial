@@ -127,22 +127,22 @@ Python으로 놀기 위해서는 *커맨드라인*을 열어야 합니다. [커�
 3
 ```
 
-함수 호출 시, 어떤 함수는 문자열 뒤에 `.`를 붙이고, (`"Ola".upper()` 처럼), 또 어떤 함수는 함수 뒤에 문자열이 들어간 괄호를 붙이는지 궁금하셨죠? `upper()`와 같은 함수는 객체에 속하게 되어 해당 문자열에서만 수행되기 때문이죠. 이와 같은 경우, 함수를 **메서드(method)**라고 합니다. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
+함수 호출 시, 어떤 함수는 문자열 뒤에 `.`를 붙이고, (`"Ola".upper()` 처럼), 또 어떤 함수는 함수 뒤에 문자열이 들어간 괄호를 붙이는지 궁금하셨죠? `upper()`와 같은 함수는 객체에 속하게 되어 해당 문자열에서만 수행되기 때문이죠. 이와 같은 경우, 함수를 **메서드(method)**라고 합니다. 그리고, `len()`과 같은 함수들은 특정한 대상에 속하지 않고 여러가지 객체를 대상으로 사용할 수 있습니다. 그래서 `len` 함수에 `"Ola"`를 매개 변수(parameter) 로 준 거예요.
 
 ### 목차
 
-OK, enough of strings. So far you've learned about:
+자, 문자열은 충분히 다루었어요. 지금까지 우리가 공부한 것들을 정리해봅시다:
 
-- **the prompt** – typing commands (code) into the Python prompt results in answers in Python
-- **numbers and strings** – in Python numbers are used for math and strings for text objects
-- **operators** – like `+` and `*`, combine values to produce a new one
-- **functions** – like `upper()` and `len()`, perform actions on objects.
+- **the prompt: 프롬프트** - 명령어(코드) 를 파이썬 프롬프트에 입력하면 파이썬이 응답합니다.
+- **numbers and strings: 숫자와 문자열** - 파이썬에서는 셈을 할 때는 숫자를 사용하고 글을 다룰 때는 문자열을 사용합니다.
+- **operators: 연산자** - 값들을 이용해서 새로운 값을 만들 때는 `+` 와 `*` 같은 연산자를 이용합니다.
+- **functions 함수** - `upper()` 나 `len ()` 처럼 대상에 명령을 수행합니다.
 
-These are the basics of every programming language you learn. Ready for something harder? We bet you are!
+지금까지 프로그래밍 언어의 기초에 대해 알아보았어요. 더 어려운 부분으로 넘어가도 괜찮겠죠? 그럼요!
 
 ## 오류
 
-Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
+이제 새로운 것을 해볼 때에요. 이름의 글자 길이를 알아냈듯이 숫자의 길이도 알 수 있을까요? `len(304023)` 을 입력하고 `엔터`를 입력해보세요:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -164,20 +164,20 @@ TypeError: object of type 'int' has no len()
 6
 ```
 
-It worked! We used the `str` function inside of the `len` function. `str()` converts everything to strings.
+잘 되네요! 앞에서 우리는`len` 함수 내부에 `str` 함수를 사용했어요. `str` 함수는 모든 것을 문자열로 변환한답니다.
 
 - `str`함수는 대상을 **문자열**로 변환합니다
 - `int` 함수는 대상을 **정수**로 변환합니다.
 
-> Important: we can convert numbers into text, but we can't necessarily convert text into numbers – what would `int('hello')` be anyway?
+> 중요 : 우리는 숫자를 텍스트로 변환할 수는 있지만, 반드시 텍스트를 숫자로 변환할 수 있는건 아닙니다 - `int('hello')` 가 어떻게 될 것 같나요?
 
 ## 변수
 
-An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
+변수는 프로그래밍에서 중요한 개념입니다. 변수란 어떤 것을 나중에도 사용할 수 있도록 이름을 붙인 것일 뿐 입니다. 프로그래머들은 이 변수를 데이터 저장하는데 사용하고, 작성한 코드를 다 기억할 필요없이 코드를 읽기 쉽게 하기 위해 사용하지요.
 
-Let's say we want to create a new variable called `name`:
+`name`이라는 새로운 변수를 만들어봅시다:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> name = "Ola"
