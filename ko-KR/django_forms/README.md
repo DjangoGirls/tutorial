@@ -406,7 +406,7 @@ form = PostForm(instance=post)
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-Change it to this:
+이렇게 바꾸세요:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -444,6 +444,6 @@ Change it to this:
 
 (당신의 PythonAnywhere 서브 도메인을 `<your-pythonanywhere-domain>`에 화살괄호 없이 입력하는것을 잊지마세요)
 
-* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (use the menu button in the upper right of the console) and hit **Reload**. Refresh your https://subdomain.pythonanywhere.com blog to see the changes.
+* 마지막으로 ["웹" 페이지](https://www.pythonanywhere.com/web_app_setup/) (콘솔의 우측상단의 메뉴를 이용)로 이동해 **새로고침**. 을 누릅니다. 변경된 내용을 보기위해 당신의 https://subdomain.pythonanywhere.com 블로그를 새로고침 하세요.
 
-And that should be it. Congrats! :)
+이제 배포가 완료 되었어요. 잘 작동되는지 확인해 보세요! 축하합니다. :)
