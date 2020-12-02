@@ -4,7 +4,7 @@
 
 ## 쿼리셋(QuerySet) 은 무엇인가요?
 
-A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow you to read the data from the database, filter it and order it.
+핵심만 말하자면, 쿼리셋은 전달받은 모델의 객체 목록입니다. 쿼리셋은 데이터베이스로부터 데이터를 읽고, 필터를 걸거나 정렬을 할 수 있습니다.
 
 가장 쉽게 배우는 방법은 예제로 배우는 것이죠. 함께 해볼까요?
 
@@ -12,27 +12,27 @@ A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow y
 
 PythonAnywhere가 아닌 로컬 컨솔에서 아래 명령을 입력하세요. :
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py shell
     
 
 실행하면 아래처럼 나올 거에요.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 (InteractiveConsole)
 >>>
 ```
 
-You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too.
+여러분은 이제 장고 인터랙티브 콘솔(interactive console) 로 들어왔습니다. 파이썬 프롬프트와 비슷하지만 장고만의 마법을 부릴 수 있는 곳이기도 하지요. :) 물론 파이썬의 모든 명령어를 여기서 사용할 수 있습니다.
 
 ### 모두 보기
 
 자, 이제 먼저 입력했던 모든 글들을 출력하겠습니다. 아래와 같이 입력하세요.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> Post.objects.all()
@@ -41,40 +41,40 @@ Traceback (most recent call last):
 NameError: name 'Post' is not defined
 ```
 
-Oops! An error showed up. It tells us that there is no Post. It's correct – we forgot to import it first!
+이런! 에러가 나타났어요. 글이 없다고 하네요. 이럴수가... 그런데 이렇게 나오는 것이 맞는 거랍니다. 이 글을 먼저 불러오는 것(import) 을 잊었네요!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> from blog.models import Post
 ```
 
-We import the model `Post` from `blog.models`. Let's try displaying all posts again:
+간단합니다. : 우리는 `Post`모델을 `blog.models`에서 불러왔어요. 이제 모든 글들을 출력해봅시다.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> Post.objects.all()
 <QuerySet [<Post: my post title>, <Post: another post title>]>
 ```
 
-This is a list of the posts we created earlier! We created these posts using the Django admin interface. But now we want to create new posts using Python, so how do we do that?
+우리가 만들었던 그 글 목록이 나타났네요! 장고 관리자 인터페이스로 만들었던 것들이에요. 그런데 파이썬으로 새 글을 포스팅하려면, 어떻게 해야할까요?
 
 ### 객체 생성하기
 
 데이터베이스에 새 글 객체를 저장하는 방법에 대해 알아봅시다.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> Post.objects.create(author=me, title='Sample title', text='Test')
 ```
 
-But we have one missing ingredient here: `me`. We need to pass an instance of `User` model as an author. How do we do that?
+하지만 여기에 뭔가 빼먹은 것이 하나 있어요.: `me` . 작성자로서 `User`(사용자) 모델의 인스턴스를 가져와 전달해줘야 합니다. 어떻게 해야 할까요?
 
 먼저 User 모델을 불러옵니다. :
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> from django.contrib.auth.models import User
@@ -82,26 +82,26 @@ But we have one missing ingredient here: `me`. We need to pass an instance of `U
 
 데이터베이스에서 user는 어떤 일을 할까요? 함께 알아봅시다:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> User.objects.all()
 <QuerySet [<User: ola>]>
 ```
 
-This is the superuser we created earlier! Let's get an instance of the user now (adjust this line to use your own username):
+이전에 만든 슈퍼유저에요! 사용자 개체를 얻어봐요(현재 가지고 있는 사용자이름을 사용하기위해 다음줄을 수정해요)
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> me = User.objects.get(username='ola')
 ```
 
-As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat!
+보다싶이 우리는 `username` 이 'ola'인 사용자를 깔끔하게`get`했어요.
 
 드디어 우리 게시물을 만들었네요. :
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> Post.objects.create(author=me, title='Sample title', text='Test')
@@ -110,7 +110,7 @@ As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat!
 
 만세! 그런데 제대로 작동했는지 확인해봐야죠?
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> Post.objects.all()
@@ -121,13 +121,13 @@ As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat!
 
 ### 글 더 추가하기
 
-You can now have a little fun and add more posts to see how it works. Add two or three more and then go ahead to the next part.
+점점 재밌어질 거에요. 몇 개 글을 더 추가해서 잘 작동하는지 확인해봅시다. 2-3개 정도만 더 추가해보고 다음 내용으로 넘어갈게요.
 
 ### 필터링하기
 
-A big part of QuerySets is the ability to filter them. Let's say we want to find all posts that user ola authored. 이런 경우 `Post.objects.all()`에서 `all` 대신, `filter`를 사용합니다. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. 이제 이 조건이 반영된 코드를 볼까요. :
+쿼리셋의 중요한 기능은 데이터를 필터링하는 거에요. 예를 들어, 우리는 ola라는 User가 작성한 모든 글을 찾고 싶다고 해볼게요. 이런 경우 `Post.objects.all()`에서 `all` 대신, `filter`를 사용합니다. 쿼리셋 안에 있는 괄호 안에 우리가 원하는 조건(들)을 넣어줄 거에요. 지금 이 경우에는 `author`가 `me`인 조건을 넣어야겠죠. 이걸 장고로 표현한다면 `author=me`가 됩니다. 이제 이 조건이 반영된 코드를 볼까요. :
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> Post.objects.filter(author=me)
