@@ -340,9 +340,9 @@ Maria
 
 리스트의 이름이나 대괄호 안에 들어가는 객체의 인덱스를 사용해서, 리스트 안에 있는 다른 객체로도 접근이 가능합니다.
 
-To delete something from your list you will need to use **indexes** as we learned above and the `pop()` method. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
+리스트에서 무엇인가를 지우기위해서는 위에서 배운 **인덱스**와 , `pop()` 명령어가 필요해요. 이제 한번 해보고 이전에 배웠던 것을 다시 떠올려봅시다; 목록에서 첫 번째 숫자를 삭제할 것입니다.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> print(lottery)
@@ -355,55 +355,55 @@ To delete something from your list you will need to use **indexes** as we learne
 [42, 30, 19, 12, 3, 199]
 ```
 
-That worked like a charm!
+마법같네요!
 
-For extra fun, try some other indexes: 6, 7, 1000, -1, -6 or -1000. See if you can predict the result before trying the command. Do the results make sense?
+재미로 몇 번 더 여러 인덱스를 테스트해보세요: 6, 7, 1000, -1, -6, -1000 등이요. 결과값을 보기 전에 미리 어떤 값이 나올지 예상할 수 있었나요? 생각했던 정답이 나왔나요?
 
-You can find a list of all available list methods in this chapter of the Python documentation: https://docs.python.org/3/tutorial/datastructures.html
+이번 장에 나온 리스트 메서드와 관련된 모든 내용은 파이썬 공식 문서에서 찾을 수 있습니다. : https://docs.python.org/3/tutorial/datastructures.html
 
 ## 딕셔너리(Dictionary)
 
-> For readers at home: this part is covered in the [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) video.
+> 집에서 공부하시는 분은: [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c)영상을 참고하세요.
 
-A dictionary is similar to a list, but you access values by looking up a key instead of a numeric index. A key can be any string or number. The syntax to define an empty dictionary is:
+딕셔너리는 리스트와 유사하지만, 인덱스가 아닌 키(key)로 값을 찾습니다. 키는 문자열이든, 숫자든지 상관 없습니다. 빈 딕셔너리를 만드는 문법은 아래와 같습니다. :
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> {}
 {}
 ```
 
-This shows that you just created an empty dictionary. Hurray!
+방금 비어있는 딕셔너리를 하나 만들었답니다. 만세!
 
-Now, try writing the following command (try substituting your own information, too):
+자, 이제 아래 명령어를 따라 작성해 봅시다. (안에 있는 정보는 마음대로 바꿔도 됩니다):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
 ```
 
-With this command, you just created a variable named `participant` with three key–value pairs:
+위 명령어로 `paticipant`라는 이름의 변수를 만들었습니다. 이 변수 안에는 3개의 키-값 쌍이 들어있습니다.
 
 - 키(key) 는 `name`이고, 값(value) 는 `'Ola'`를 가리킵니다. (`string(문자열)` 객체이지요.),
 - 키 `country`의 값은 `'Poland'`입니다. (또 다른 `string`입니다),
 - 그리고 키 `favorite_numbers`는 `[7, 42, 92]`를 가리킵니다. (`리스트`에는 세 개의 숫자가 있습니다.)
 
-You can check the content of individual keys with this syntax:
+여러분은 아래와 같은 문법으로 개별 키의 값에 접근할 수 있습니다.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> print(participant['name'])
 Ola
 ```
 
-See, it's similar to a list. But you don't need to remember the index – just the name.
+리스트와 조금 비슷하죠. 다만 인덱스가 아닌, 이름을 사용해 값에 접근한다는 것을 기억하세요.
 
-What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
+만약 파이썬에 키에 대응하는 값이 없는 경우에는 어떻게 될까요? 예측할 수 있나요? 그럼 한 번 알아봅시다!
 
-{% filename %}{{ warning_icon }} command-line{% endfilename %}
+{% filename %}{{ warning_icon }} 명령줄{% endfilename %}
 
 ```python
 >>> participant['age']
@@ -412,35 +412,35 @@ Traceback (most recent call last):
 KeyError: 'age'
 ```
 
-Look, another error! This one is a **KeyError**. Python is helpful and tells you that the key `'age'` doesn't exist in this dictionary.
+보세요, 에러가 났네요! 이번에는 **KeyError**에러가 났습니다. 파이썬은 친절하게 키 `'age'`가 딕셔너리에 존재하지 않는다고 알려주네요.
 
-When should you use a dictionary or a list? Well, that's a good point to ponder. Think about the answer before looking at it in the next line.
+그렇다면 언제 딕셔너리를 쓰고, 언제 리스트를 사용해야할까요? 이를 위한 판단 기준은 다음과 같습니다.
 
 - 아이템을 나열할 때 정렬이 필요하나요? 그렇다면 리스트를 사용하세요.
 - 키(key) 과 값(value) 이 서로 연관되어 있어야 하나요? 또는 보다 효과적으로 (키를 사용해서) 어떤 값을 찾아야 하나요? 그렇다면, 딕셔너리를 사용하세요.
 
-Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key–value pairs to a dictionary after it is created, like this:
+딕셔너리는 리스트와 유사하지만, *변경(mutable)*할 수 있습니다. 딕셔너리가 만들어진 후에도, 그 값을 마음대로 변경할 수 있다는 뜻이지요. 키/값 을 나중에 추가할 수 있답니다. 바로 이렇게요. :
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> participant['favorite_language'] = 'Python'
 ```
 
-Like lists, using the `len()` function on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
+리스트처럼 딕셔너리도 `len()` 메서드를 사용하여 키-값 쌍의 수를 리턴합니다. 한 번 커맨드라인에서 확인합시다.:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> len(participant)
 4
 ```
 
-I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
+다들 이해를 잘 하고 있으리라 믿어요 :) 딕셔너리로 좀 더 재미있는 것을 해볼까요? 좀더 흥미로운 내용이 다음에 있어요.
 
-You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, type in the following command:
+`pop` 명령어로 딕셔너리에 있는 아이템을 삭제할 수 있습니다. `'favorite_numbers'` 키를 삭제하고 싶으면, 아래와 같은 명령어를 입력하면 됩니다. :
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> participant.pop('favorite_numbers')
@@ -449,11 +449,11 @@ You can use the `pop()` method to delete an item in the dictionary. Say, if you 
 {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-As you can see from the output, the key–value pair corresponding to the 'favorite_numbers' key has been deleted.
+위에 보여지는 결과처럼 'favorite_numbers' 에 해당하는 키-값 쌍이 삭제되었네요.
 
-As well as this, you can also change a value associated with an already-created key in the dictionary. Type this:
+이뿐만 아니라 딕셔너리 안에 이미 만들어진 키에 해당하는 값도 변경할 수 있습니다. 다음 내용을 해보세요:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> participant['country'] = 'Germany'
@@ -461,26 +461,26 @@ As well as this, you can also change a value associated with an already-created 
 {'country': 'Germany', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
+보셨듯이, `'country'` 키에 해당하는 값이 `'Poland'`에서 `'Germany'`로 변경되었네요. :) 재미있죠? 야호! 우리는 또 굉장한 것을 배웠네요.
 
 ### 목차
 
-Awesome! You know a lot about programming now. In this last part you learned about:
+훌륭하네요! 이제 모두가 프로그래밍에 대해서 많은 것을 알게 되었어요. 지금까지 우리가 배운 내용은 다음과 같아요. :
 
-- **errors** – you now know how to read and understand errors that show up if Python doesn't understand a command you've given it
-- **variables** – names for objects that allow you to code more easily and to make your code more readable
-- **lists** – lists of objects stored in a particular order
-- **dictionaries** – objects stored as key–value pairs
+- **에러** - 파이썬이 작성된 명령어를 이해하지 못할 때 발생하는 에러를 읽고 이해할 수 있습니다.
+- **변수** - 객체에 이름을 붙여 코드를 가독성 좋게 작성할 수 있습니다.
+- **리스트** - 특정한 순서로 정렬된 객체들이 저장된 목록임을 알고 있습니다.
+- **딕셔너리** - 키(key)-값(value) 쌍으로 이루어진 객체들이 저장된 것임을 알고 있습니다.
 
-Excited for the next part? :)
+다음 내용이 기대되나요? :)
 
 ## 비교하기
 
-> For readers at home: this part is covered in the [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) video.
+> 집에서 공부하시는 분은: [파이썬 기초: 비교하기](https://www.youtube.com/watch?v=7bzxqIKYgf4)영상을 참고하세요.
 
-A big part of programming involves comparing things. What's the easiest thing to compare? Numbers! Let's see how that works:
+무엇인가 비교하는 것은 프로그래밍에서 매우 중요한 부분이에요. 비교를 할 때, 제일 쉬운 방법은 무엇일까요? 당연히, 숫자입니다. 어떻게 하는지 알아볼게요. :
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{} 명령줄{% endfilename %}
 
 ```python
 >>> 5 > 2
@@ -497,7 +497,7 @@ True
 True
 ```
 
-We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare values of mathematical expressions like `2 * 2` and function results like the `2` returned by `len([4, 5])`. Nice, huh?
+우리는 파이썬에서 몇가지 숫자를 비교할거에요. As you can see, not only can Python compare numbers, but it can also compare values of mathematical expressions like `2 * 2` and function results like the `2` returned by `len([4, 5])`. Nice, huh?
 
 Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
 
