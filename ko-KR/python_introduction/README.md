@@ -183,20 +183,20 @@ TypeError: object of type 'int' has no len()
 >>> name = "Ola"
 ```
 
-We type name equals Ola.
+우리는 name 변수에 Ola를 입력했어요.
 
-As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Enter `name` and hit `enter`:
+여러분도 알겠지만, 프로그램은 이전에 수행한 것을 보여주지 않습니다. 그러면 실제 변수에 어떤 값이 들어있는지 알려면 어떻게 해야할까요? 간단하게 `name`를 입력하고 `엔터`를 입력하세요:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> name
 'Ola'
 ```
 
-Yippee! Your first variable! :) You can always change what it refers to:
+야호! 여러분이 만든 첫 변수입니다 :)! 언제든지 여러분은 변수를 바꿀 수 있어요:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> name = "Sonja"
@@ -204,18 +204,18 @@ Yippee! Your first variable! :) You can always change what it refers to:
 'Sonja'
 ```
 
-You can use it in functions too:
+또 함수 안에서 변수를 사용할 수 있습니다:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> len(name)
 5
 ```
 
-Awesome, right? Now, variables can be anything – numbers too! Try this:
+멋지죠? 물론 변수는 무엇이든지 담을 수 있으니, 당연히 숫자도 가능하죠! 해봅시다:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> a = 4
@@ -224,7 +224,7 @@ Awesome, right? Now, variables can be anything – numbers too! Try this:
 24
 ```
 
-But what if we used the wrong name? Can you guess what would happen? Let's try!
+그런데 만약 잘못된 이름을 사용했다면 어떻게 될까요? 어떤 일이 일어날까요? 해봅시다!
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -236,15 +236,15 @@ Traceback (most recent call last):
 NameError: name 'ctiy' is not defined
 ```
 
-An error! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
+에러가 나타났네요! 보다시피, 파이썬에는 많은 종류의 오류들이 있습니다. 그 중 하나가 **NameError**입니다. 파이썬은 아직 정의하지 않은 변수를 사용하면 이 오류를 보여줍니다. 나중에 똑같은 오류를 보게 된다면, 이름에 오타가 없는지 확인해보세요.
 
-Play with this for a while and see what you can do!
+잠시동안 변수와 놀아봅시다. 그리고 어떤 것들을 할 수 있는지 살펴보아요!
 
 ## print 함수
 
-Try this:
+해봅시다:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> name = 'Maria'
@@ -254,62 +254,62 @@ Try this:
 Maria
 ```
 
-When you just type `name`, the Python interpreter responds with the string *representation* of the variable 'name', which is the letters M-a-r-i-a, surrounded by single quotes, ''. When you say `print(name)`, Python will "print" the contents of the variable to the screen, without the quotes, which is neater.
+`name`을 쳤을 때, 파이썬 해석기는 'name' 변수의 문자열 *표현(representatio)*으로 응답하는데, 그 모양은 작은 따옴표('') 로 둘러싸인 M-a-r-i-a 문자들 입니다. `print(name)`라고 치면, 파이썬은 화면에 따옴표 없이 더 깔끔한 변수를 "출력(print)"할 것입니다.
 
-As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things on multiple lines.
+나중에 보겠지만, `print()`는 함수 안에 있는 어떤 것을 출력하거나, 이를 여러 줄로 출력할 때 유용하게 사용됩니다.
 
 ## 리스트 (List)
 
-Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called **list**. Lists are exactly what you think they are: objects which are lists of other objects. :)
+문자열과 정수 외에, 파이썬은 객체 정렬 위한 여러 방법들이 있어요. 이제 **리스트**라고 불리는 녀석에 대해서 알아보기로 하겠습니다. 리스트를 이렇게 생각하시면 됩니다: 다른 객체들을 나열한 객체. :)
 
-Go ahead and create a list:
+이제 리스트를 만듭시다:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> []
 []
 ```
 
-Yes, this list is empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repeat ourselves all the time, so we will put it in a variable, too:
+네, 리스트가 비어있어요. 별로 유용해 보이지 않죠? 이제 로또 번호 목록을 만들어 봅시다. 매번 직접 우리가 반복하기는 귀찮으니, 리스트에 변수를 넣어봅시다:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> lottery = [3, 42, 12, 19, 30, 59]
 ```
 
-All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that? You know this already!
+좋아요, 리스트를 만들었네요! 어떻게 쓰면 될까요? 목록에 수 많은 로또 번호가 있다고 생각해봅시다. 함수를 사용할 수 있는 아이디어가 떠올랐나요? 여러분들은 이미 앞에서 해봤어요!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> len(lottery)
 6
 ```
 
-Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we will sort it now:
+네! `len()` 함수는 리스트 안에 있는 객체의 수를 알려줍니다. 편리하지 않나요? 이제 정렬을 해봅시다:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> lottery.sort()
 ```
 
-This doesn't return anything, it just changed the order in which the numbers appear in the list. Let's print it out again and see what happened:
+아무것도 보여주지 않네요. 이 함수는 리스트 안의 숫자들을 오름차순으로 정렬합니다. 어떻게 변했는지 리스트를 출력해봅시다:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> print(lottery)
 [3, 12, 19, 30, 42, 59]
 ```
 
-As you can see, the numbers in your list are now sorted from the lowest to highest value. Congrats!
+위에 나왔듯이, 리스트 안에 있는 숫자들은 오름차순으로 정렬되었습니다. 축하합니다!
 
-Maybe we want to reverse that order? Let's do that!
+만약 반대로 내림차순으로 정렬하고 싶다면요? 하면 됩니다!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> lottery.reverse()
@@ -317,9 +317,9 @@ Maybe we want to reverse that order? Let's do that!
 [59, 42, 30, 19, 12, 3]
 ```
 
-If you want to add something to your list, you can do this by typing this command:
+참 쉽죠? 여러분이 리스트에 새로운 값을 추가하고 싶다면면, 추가할 때마다 매번 다시 정렬 명령을 해줘야 합니다:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> lottery.append(199)
@@ -327,9 +327,9 @@ If you want to add something to your list, you can do this by typing this comman
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-If you want to show only the first number, you can do this by using **indexes**. An index is the number that says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
+만약 첫 번째 숫자 하나만 보여주고 싶다면, **인덱스(index)**를 사용하세요. 인덱스는 리스트 안의 아이템 위치를 나타내는 숫자입니다. 프로그래머는 0부터 세는 것을 선호합니다. 따라서 리스트에 있는 첫 번째 객체는 인덱스 0부터 시작하고, 그 다음은 1, 그 다음은 2.. 가 됩니다. 해봅시다:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> print(lottery[0])
@@ -338,7 +338,7 @@ If you want to show only the first number, you can do this by using **indexes**.
 42
 ```
 
-As you can see, you can access different objects in your list by using the list's name and the object's index inside of square brackets.
+리스트의 이름이나 대괄호 안에 들어가는 객체의 인덱스를 사용해서, 리스트 안에 있는 다른 객체로도 접근이 가능합니다.
 
 To delete something from your list you will need to use **indexes** as we learned above and the `pop()` method. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
 
