@@ -1,17 +1,17 @@
-> For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA) video.
+> 집에서 학습하시는 분을 위해: 이번 장은 [파이썬 및 코드 편집기 설치 ](https://www.youtube.com/watch?v=pVTaqzKZCdA)비디오를 이용해 다룰 거에요.
 > 
 > 위 내용은 Geek Girls Carrots (http://django.carrots.pl)을 바탕으로 작성되었습니다.
 
-Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want you to install the latest version of Python 3, so if you have any earlier version, you will need to upgrade it. If you already have version {{ book.py_min_version }} or higher you should be fine.
+장고는 파이썬으로 만들어졌습니다. 장고로 무언가를 해보려면 파이썬이 있어야합니다. 우선 설치부터 해볼까요! 우리는 파이썬 3를 사용할 거예요. 그보다 낮은 버전을 사용하고 있다면, 업그레이드해야 합니다. {{ book.py_min_version }} 버전이나 높은 버전을 가지고 있다면 괜찮아요.
 
-Please install normal Python as follows, even when you have Anaconda installed on your computer.
+Anaconda가 컴퓨터에 이미 설치되어 있더라도, 아래와같이 일반 파이썬을 설치해주세요.
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
-First check whether your computer is running a 32-bit version or a 64-bit version of Windows, on the "System type" line of the System Info page. To reach this page, try one of these methods:
+먼저 "시스템 종류" 시스템 정보 페이지를 통해 컴퓨터의 윈도우가 32비트 버전인지 64비트 버전인지 확인해 보아요. 아래 명령을 통해 페이지에 접근할 수 있어요:
 
-* Press the Windows key and Pause/Break key at the same time
-* Open your Control Panel from the Windows menu, then navigate to System & Security, then System
+* 윈도우키와 Pasue/Break 키를 동시에 눌러요
+* 윈도우 메뉴에 제어판을 열어요, 그리고 시스템 및 보안의 시스템으로 이동해요.
 * Press the Windows button, then navigate to Settings > System > About
 * Search the Windows Start menu for "System Information". To do that, click the Start button or press the Windows key, then begin to type `System Information`. It will start making suggestions as soon as you type. You can select the entry once it shows up.
 
