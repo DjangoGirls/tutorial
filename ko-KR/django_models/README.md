@@ -145,22 +145,22 @@ class Post(models.Model):
 
 > `str`양 옆에 언더스코어(`_`) 를 두 개씩 넣었는지 다시 확인하세요. 이건 관습은 파이썬에서 자주 사용되는데, "던더(dunder; 더블-언더스코어의 준말)"라고도 불려요.
 
-It looks scary, right? But don't worry – we will explain what these lines mean!
+으음... 코드가 좀 무서워졌죠? 걱정마세요. 각 줄마다 어떤 의미인지 설명해드릴거에요.
 
-All lines starting with `from` or `import` are lines that add some bits from other files. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
+`from` 또는 `import`로 시작하는 부분은 다른 파일에 있는 것을 추가하라는 뜻입니다. 다시 말해, 매번 다른 파일에 있는 것을 복사&붙여넣기로 해야하는 작업을 `from</0>이 대신 불러와주는 거죠 import ...`.
 
-`class Post(models.Model):` – this line defines our model (it is an `object`).
+`class Post(models.Model):`는 모델을 정의하는 코드입니다. (모델은 `객체(object)`라고 했죠?
 
 - `class`는 특별한 키워드로, 객체를 정의한다는 것을 알려줍니다.
-- `Post` is the name of our model. We can give it a different name (but we must avoid special characters and whitespace). Always start a class name with an uppercase letter.
+- `Post`는 모델의 이름입니다. (특수문자와 공백 제외한다면) 다른 이름을 붙일 수도 있습니다. 항상 클래스 이름의 첫 글자는 대문자로 써야 합니다.
 - `models.Model`은 Post가 장고 모델임을 의미합니다. 이 코드 때문에 장고는 Post가 데이터베이스에 저장되어야 된다고 알게 됩니다.
 
-Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
+이제 속성을 정의하는 것에 대해서 이야기해볼게요: `title`, `text`, `created_date`, `published_date`, `author`에 대해서 말할 거에요. 각 필드마다 어떤 종류의 데이터 타입을 가지는지를 정해야해요. (텍스트? 숫자? 날짜? 예를 들어, 유저와 같은 다른 객체와의 관계?)
 
-- `models.CharField` – this is how you define text with a limited number of characters.
-- `models.TextField` – this is for long text without a limit. Sounds ideal for blog post content, right?
-- `models.DateTimeField` – this is a date and time.
-- `models.ForeignKey` – this is a link to another model.
+- `models.CharField` - 글자 수가 제한된 텍스트를 정의할 때 사용합니다. 글 제목같이 대부분의 짧은 문자열 정보를 저장할 때 사용합니다.
+- `models.TextField` - 글자 수에 제한이 없는 긴 텍스트를 위한 속성입니다. 블로그 콘텐츠를 담기 좋겠죠?
+- `models.DateTimeField` - 이것은 날짜와 시간을 의미합니다.
+- `models.ForeignKey` - 다른 모델이 대한 링크를 의미합니다.
 
 시간 관계상 모든 코드를 하나하나 다 설명하지는 않을 거예요. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.2/ref/models/fields/#field-types).
 
