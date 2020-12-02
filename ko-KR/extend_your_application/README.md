@@ -162,19 +162,19 @@ def post_detail(request, pk):
 
 다시 한 번 `base.html`을 확장해 봅시다. `content` 블록에서, 블로그 글의 published_date 출판일(존재한다면) 과 제목, 내용을 보이게 할 거에요. 그런데 제일 중요한 것을 얘기해봐야하지 않겠어요?
 
-{% raw %}`{% if ... %} ... {% endif %}` 는 무엇인가를 확인할 때 사용하는 템플릿 태그 입니다. (` If else ...` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` 는 무엇인가를 확인할 때 사용하는 템플릿 태그 입니다. ( ` If else ...` 를 **파이썬 소개** 장에서 다뤘던걸 기억하나요?) 이 시나리오 에서는 우리는 글의`published_date` 가 비어있지 않은지 확인하고 싶어요.{% endraw %}
 
-OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
+페이지를 새로고침하면 `페이지 찾을 수 없음(Page not found)` 페이지가 없어진 것을 알 수 있어요.
 
 ![Post detail page](images/post_detail2.png)
 
-Yay! It works!
+야호! 잘 되네요!
 
-# Deploy time!
+# 배포 시간!
 
-It'd be good to see if your website still works on PythonAnywhere, right? Let's try deploying again.
+PythonAnywhere에서도 웹사이트가 잘 작동하는지 봐야겠죠? 다시 한 번 배포해봅시다.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     $ git status
     $ git add .
@@ -183,20 +183,20 @@ It'd be good to see if your website still works on PythonAnywhere, right? Let's 
     $ git push
     
 
-Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
+그 다음 [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/)을 여세요:
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
+{% filename %}PythonAnywhere 명령줄{% endfilename %}
 
     $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+(당신의 PythonAnywhere 서브 도메인을 `<your-pythonanywhere-domain>`에 화살괄호 없이 입력하는것을 잊지마세요)
 
-## Updating the static files on the server
+## 서버의 정적파일을 업데이트
 
-Servers like PythonAnywhere like to treat "static files" (like CSS files) differently from Python files, because they can optimise for them to be loaded faster. As a result, whenever we make changes to our CSS files, we need to run an extra command on the server to tell it to update them. The command is called `collectstatic`.
+PythonAnywhere 와 같은 서버는 "정적 파일" (CSS와 같은 파일)을 파이썬 파일과는 다르게 다뤄요, 왜냐하면 더 빨리 불러올 수 있도록 최적화 할 수 있기 때문이에요. 결과적으로, 우리가 CSS파일을 변경했을때, 우리는 서버에서 이것을 업데이트하기 위한 추가 명령을 실행해야 해요. 이 명령은 `collectstatic`이라 불려요.
 
 Start by activating your virtualenv if it's not still active from earlier (PythonAnywhere uses a command called `workon` to do this, it's just like the `source myenv/bin/activate` command you use on your own computer):
 
