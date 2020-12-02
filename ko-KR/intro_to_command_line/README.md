@@ -138,17 +138,17 @@ OS X 와 Linux 는 `man` 이라는 명령어가 도움을 줄거에요. `man pwd
 
 <!--sec data-title="Command Help: Windows" data-id="windows_help" data-collapse=true ces-->
 
-Adding a `/?` suffix to most commands will print the help page. You may need to scroll your command window up to see it all. Try `cd /?`.
+명령어에 `/?` 접미사를 붙여 도움말을 출력할 수 있어요. 아마 띄워진 화면을 스크롤 해야할 거에요. `cd /?`를 시도해 보세요.
 
 <!--endsec-->
 
-### List files and directories
+### 파일과 디렉토리 목록 보기
 
-So what's in it? It'd be cool to find out. Let's see:
+여기에는 뭐가 있는지 알아낼 수 있다면 좋겠지요? 그럼 같이 해봐요.
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     $ ls 
     Applications 
@@ -162,7 +162,7 @@ So what's in it? It'd be cool to find out. Let's see:
 
 <!--sec data-title="List files and directories: Windows" data-id="windows_dir" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     > dir  
     Directory of C:\Users\olasitarska 
@@ -173,17 +173,17 @@ So what's in it? It'd be cool to find out. Let's see:
     ...
     
 
-> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
+> 주의: 파워셸에서는 Linux 와 Mac OS X처럼 'ls'명령을 사용할 수 있어요.<!--endsec-->
 
 * * *
 
-### Change current directory
+### 현재 디렉토리 변경
 
-Now, let's go to our Desktop directory:
+자, 바탕화면 디렉토리로 가볼까요:
 
 <!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     $ cd Desktop
     
@@ -192,12 +192,12 @@ Now, let's go to our Desktop directory:
 
 <!--sec data-title="Change current directory: Linux" data-id="Linux_move_to" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     $ cd Desktop
     
 
-Note that the directory name "Desktop" might be translated to the language of your Linux account. If that's the case, you'll need to replace `Desktop` with the translated name; for example, `Schreibtisch` for German.
+"Desktop" 이라는 디렉토리명은 당신의 Linux계정의 언어 설정에 따라 번역되어있을 수 있으니 주의하세요. 이런경우 `Desktop`을 번역된 이름으로 바꾸어야 해요. 예를 들어, 독일어의 경우 `Schreibtisch` 이에요.
 
 <!--endsec-->
 
@@ -210,11 +210,11 @@ Note that the directory name "Desktop" might be translated to the language of yo
 
 <!--endsec-->
 
-Check if it's really changed:
+정말 변경되었는지 볼까요:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     $ pwd
     /Users/olasitarska/Desktop
@@ -224,7 +224,7 @@ Check if it's really changed:
 
 <!--sec data-title="Check if changed: Windows" data-id="windows_cd2" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     > cd
     C:\Users\olasitarska\Desktop
@@ -232,19 +232,19 @@ Check if it's really changed:
 
 <!--endsec-->
 
-Here it is!
+맞군요!
 
-> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
+> 전문가 팁: `cd D`까지 입력하고 `tab`(탭) 키를 누르면, 커맨드라인이 자동으로 나머지 부분을 완성해 주기 때문에, 시간을 절약할 수 있어요. "D"로 시작하는 폴더가 2개 이상일 경우, `tab`(탭) 키를 두 번 누르면, 해당하는 폴더들을 다 보여줍니다.
 
 * * *
 
-### Create directory
+### 새 디렉토리 만들기
 
-How about creating a practice directory on your desktop? You can do it this way:
+바탕 화면에 연습 디렉터리를 만들어 볼까요? 이렇게 하면 돼요:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     $ mkdir practice
     
@@ -253,22 +253,22 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: Windows" data-id="windows_mkdir" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     > mkdir practice
     
 
 <!--endsec-->
 
-This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+이 간단한 명령어가, 바탕화면에 `practice` 라는 이름의 폴더를 만들어 줍니다. 바탕화면에서 직접 보거나, 명령어 `ls` 혹은 `dir`을 실행해서 확인할 수 있어요! 한 번 해보세요. :)
 
-> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
+> 전문가 팁: 같은 명령어를 여러 번 반복해서 입력하고 싶지 않다면, 키보드의 `위 화살표`와 `아래 화살표`를 눌러서 최근 사용한 명령어들을 볼 수 있어요.
 
 * * *
 
-### Exercise!
+### 연습문제!
 
-A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
+작은 도전 과제를 드릴게요: 새로 만든 `practice` 디렉토리 안에 `test` 라는 이름의 디렉토리를 만들어 보세요. 명령어 `cd` 와 `mkdir`을 사용하세요. 
 
 #### 답:
 
@@ -300,15 +300,15 @@ Congrats! :)
 
 * * *
 
-### Clean up
+### 정리
 
-We don't want to leave a mess, so let's remove everything we did until that point.
+어지럽힌 흔적은 남기고 싶지 않지요, 지금까지 한 것들을 모두 지워봅시다!
 
-First, we need to get back to Desktop:
+우선, 바탕화면으로 돌아가야해요.
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     $ cd ..
     
@@ -317,20 +317,20 @@ First, we need to get back to Desktop:
 
 <!--sec data-title="Clean up: Windows" data-id="windows_back" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     > cd ..
     
 
 <!--endsec-->
 
-Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+`..`과 `cd` 명령은 현재 디렉토리에서 (현재 디렉토리보다 한수준 위인) 부모 디렉토리로 보내줄겁니다. 
 
-Check where you are:
+현재 위치를 확인해 보세요:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     $ pwd
     /Users/olasitarska/Desktop
@@ -340,7 +340,7 @@ Check where you are:
 
 <!--sec data-title="Check location: Windows" data-id="windows_cd3" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     > cd
     C:\Users\olasitarska\Desktop
@@ -348,13 +348,13 @@ Check where you are:
 
 <!--endsec-->
 
-Now time to delete the `practice` directory:
+이제 `practice` 디렉토리를 삭제할시간이에요:
 
-> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
+> **주의**: `del`, `rmdir` 혹은 `rm` 을 사용하여 파일을 지울 경우, 복구할 수가 없습니다, *지워진 파일들을 영원히 사라지게 됩니다*! 그러니, 이 명령어들은 주의해서 사용하세요.
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     $ rm -r practice
     
@@ -363,7 +363,7 @@ Now time to delete the `practice` directory:
 
 <!--sec data-title="Delete directory: Windows Command Prompt" data-id="windows_rmdir" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     > rmdir /S practice
     practice, Are you sure <Y/N>? Y
@@ -371,11 +371,11 @@ Now time to delete the `practice` directory:
 
 <!--endsec-->
 
-Done! To be sure it's actually deleted, let's check it:
+완료! 실제로 삭제되었는지, 확인해 봅시다:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     $ ls
     
@@ -384,7 +384,7 @@ Done! To be sure it's actually deleted, let's check it:
 
 <!--sec data-title="Check deletion: Windows" data-id="windows_dir2" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     > dir
     
