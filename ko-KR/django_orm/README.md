@@ -134,20 +134,20 @@ NameError: name 'Post' is not defined
 <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
-Or maybe we want to see all the posts that contain the word 'title' in the `title` field?
+또는 모든 글들 중, `제목(title)`에 'title'이라는 글자가 들어간 글들만을 뽑아내서 보고 싶다면요?
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> Post.objects.filter(title__contains='title')
 <QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
 ```
 
-> **주의하세요** `title`와 `contains` 사이에 있는 밑줄(`_`)이 2개입니다. 장고 ORM은 필드 이름("title")과 연산자과 필터("contains")를 밑줄 2개를 사용해 구분합니다. If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
+> **주의하세요** `title`와 `contains` 사이에 있는 밑줄(`_`)이 2개입니다. 장고 ORM은 필드 이름("title")과 연산자과 필터("contains")를 밑줄 2개를 사용해 구분합니다. 밑줄 1개만 입력한다면, "FieldError: Cannot resolve keyword title_contains"라는 오류가 뜰 거에요.
 
-You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
+우리는 출판된 글 목록을 볼 수 있어요. 이를 위해 `출판 날짜(published_date)`가 과거인 글들을 필터링하면 가져오면 되겠죠.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> from django.utils import timezone
@@ -155,9 +155,9 @@ You can also get a list of all published posts. We do this by filtering all the 
 <QuerySet []>
 ```
 
-Unfortunately, the post we added from the Python console is not published yet. But we can change that! First get an instance of a post we want to publish:
+안타깝게도, 파이썬 콘솔에서 추가한 게시물은 아직 보이지 않네요. 하지만 바꿀 수 있어요! 먼저 게시하려는 게시물의 인스턴스를 얻어야 해요. :
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> post = Post.objects.get(title="Sample title")
@@ -165,15 +165,15 @@ Unfortunately, the post we added from the Python console is not published yet. B
 
 그리고 `publish` 메서드를 사용해서 출판합시다:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> post.publish()
 ```
 
-Now try to get list of published posts again (press the up arrow key three times and hit `enter`):
+이제 (위쪽 화살표 버튼 3번을 누르고 `enter`를 눌러) 다시 게시된 글의 목록을 가져와 봅시다.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now())
@@ -184,7 +184,7 @@ Now try to get list of published posts again (press the up arrow key three times
 
 퀘리셋은 객체 목록을 정렬도 할 수 있어요. 이제 `created_date` 필드를 정렬해봅시다. :
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> Post.objects.order_by('created_date')
@@ -193,16 +193,16 @@ Now try to get list of published posts again (press the up arrow key three times
 
 `-`을 맨 앞에 붙여주면 내림차순으로 정렬도 가능해요. :
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> Post.objects.order_by('-created_date')
 <QuerySet [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]>
 ```
 
-### Complex queries through method-chaining
+### 메서드체이닝을 활용한 복잡한 쿼리
 
-As you saw, some methods on `Post.objects` return a QuerySet. The same methods can in turn also be called on a QuerySet, and will then return a new QuerySet. Thus, you can combine their effect by **chaining** them together:
+보다싶이, `Post.objects` 의 몇몇 함수는 쿼리셋을 반환해요. 쿼리셋에서도 동일한 함수를 호출할 수 있어요, 그리고새 쿼리셋을 반환한답니다. 쿼리셋들을 함께 **연결(chaining)**할 수도 있어요.
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
@@ -213,7 +213,7 @@ As you saw, some methods on `Post.objects` return a QuerySet. The same methods c
 
 좋아요! 이제 다음 내용으로 넘어갈 때로군요! 다음 명령을 입력해, 쉘을 종료하세요. :
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 >>> exit()
