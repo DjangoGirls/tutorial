@@ -12,12 +12,12 @@ Anaconda가 컴퓨터에 이미 설치되어 있더라도, 아래와같이 일�
 
 * 윈도우키와 Pasue/Break 키를 동시에 눌러요
 * 윈도우 메뉴에 제어판을 열어요, 그리고 시스템 및 보안의 시스템으로 이동해요.
-* Press the Windows button, then navigate to Settings > System > About
-* Search the Windows Start menu for "System Information". To do that, click the Start button or press the Windows key, then begin to type `System Information`. It will start making suggestions as soon as you type. You can select the entry once it shows up.
+* 윈도우 버튼을 누르고, 설정 > 시스템 > 정보 를 클릭해요
+* 윈도우 시작메뉴에서 "시스템 정보"를 검색해요. 이를 위해서, 시작 버튼을 누르거나 윈도우 키를 누르고, `시스템 정보`를 입력해요. 당신이 입력한것에 따른 추천제안을 보여줘요. 보여진 것중에 선택할 수 있답니다.
 
-You can download Python for Windows from the website https://www.python.org/downloads/windows/. Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
+윈도우용 파이썬은 https://www.python.org/downloads/windows/ 에서 다운로드 받을 수 있어요. "Latest Python 3 Release - Python x.x.x" 링크를 클릭해요. 만약 당신의 컴퓨터의 윈도우가 **64-bit**라면 **Windows x86-64 executable installer**를 다운로드 해요. 아닐경우 **Windows x86 executable installer**를 다운로드 해요. 설치파일을 파일을 다운로드 받고나서, 실행(더블클릭으로)한 다음, 지시사항을 따라하세요.
 
-One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python {{ book.py_version }} to PATH" or 'Add Python to your environment variables" checkbox and click on "Install Now", as shown here (it may look a bit different if you are installing a different version):
+설치를 진행하기 시작하면 "Setup"이라고 적혀진 창을 발견 할 수 있을거에요. 여기 보이는것처럼 "Add Python {{ book.py_version }} to PATH" or 'Add Python to your environment variables" 에 체크가 되어있는지 확인하고 "Install Now"를 클릭하세요.(설치되는 버전에 따라 조금 다르게 보일 수 있어요):
 
 ![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
 
