@@ -45,24 +45,24 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 # GitHub 계정 만들기 {#github}
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password (add it to your password manager, if you use one).
+[GitHub.com](https://www.github.com) 에 접속해서 무료계정으로 회원가입을 해요. 비밀번호를 잊어먹지 마세요. (비밀번호 관리자를 쓰고있다면 추가해 두세요).
 
 # PythonAnywhere 계정 만들기 {#pythonanywhere}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-# Start reading
+# 읽기 시작
 
-Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
+축하합니다. 드디어 여러분은 시작할 준비가 되었답니다! 워크샵 사전에 튜토리얼 앞 부분을 미리 읽어두면 도움이 될 거에요:
 
-* [How the internet works](../how_the_internet_works/README.md)
+* [인터넷은 어떻게 작동할까요?](../how_the_internet_works/README.md)
 
-* [Introduction to the command line](../intro_to_command_line/README.md)
+* [커맨드라인(command line) 시작하기](../intro_to_command_line/README.md)
 
-* [Introduction to Python](../python_introduction/README.md)
+* [파이썬(python) 시작하기](../python_introduction/README.md)
 
-* [What is Django?](../django/README.md)
+* [Django란 무엇일까요?](../django/README.md)
 
-# Enjoy the workshop!
+# 워크샵을 즐기세요!
 
-When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
+워크샵이 시작하면, 앞의 내용은 이미 다 이해했다고 생각하고 [나의 첫 번째 Django 프로젝트!](../django_start_project/README.md)로 넘어가세요.
