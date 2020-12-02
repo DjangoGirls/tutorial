@@ -72,11 +72,11 @@ HTML에 여러분은 파이썬 코드를 바로 넣을 수 없어요. 브라우�
 
 ## 한 가지 더
 
-It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
+나혼자만 웹 사이트를 보는게 아니라 다른 사람들도 인터넷을 통해서 볼 수 있으면 참 좋겠죠? 이제 PythonAnywhere에 다시 여러분이 만든 블로그를 배포해봅시다. 아래에 각 단계별로 요약했어요.
 
-* First, push your code to GitHub
+* 먼저, 코드를 깃허브에 푸시해보아요
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     $ git status
     [...]
@@ -90,16 +90,16 @@ It'd be good to see if your website will still be working on the public Internet
 
 * 다음 [PythonAnywhere](https://www.pythonanywhere.com/consoles/)로 돌아와 **배시 콘솔창**으로 가서(또는 이미 닫았다면 새 콘솔창을 여세요), 다음 명령어를 실행하세요. :
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
+{% filename %}PythonAnywhere 명령줄{% endfilename %}
 
     $ cd <your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+(당신의 PythonAnywhere 서브 도메인을 `<your-pythonanywhere-domain>`에 화살괄호 없이 입력하는것을 잊지마세요)
 
-* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. (To reach other PythonAnywhere pages from the console, use the menu button in the upper right corner.) Your update should be live on https://subdomain.pythonanywhere.com -- check it out in the browser! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
+* 마지막으로 [웹 탭(Web tab)](https://www.pythonanywhere.com/web_app_setup/)으로 가서 여러분의 웹 앱을 **다시 불러오기**를 하세요. (PythonAnywhere 의 다른 페이지를 콘솔에서 접근하기 위해서는, 우측상단 메뉴 버튼을 이용해요.) 새로 업데이트한 내용이 https://subdomain.pythonanywhere.com 에 갱신될 거에요-- 브라우저에서 확인해보세요! PythonAnywhere 사이트 내 블로그 게시글 내용과 로컬 서버에 있는 내용이 똑같지 않아도 돼요. 로컬 컴퓨터 데이터베이스와 PythonAnywehere 데이터베이스 파일은 파일 동기화를 하지 않아요.
 
 Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://subdomain.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
 
