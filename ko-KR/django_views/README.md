@@ -1,4 +1,4 @@
-# Django views – time to create!
+# Django 뷰 만들기
 
 지난 장에서 만들었던 버그를 잡을 시간이 왔어요! :)
 
