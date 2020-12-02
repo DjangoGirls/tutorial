@@ -162,21 +162,21 @@ class Post(models.Model):
 - `models.DateTimeField` - 이것은 날짜와 시간을 의미합니다.
 - `models.ForeignKey` - 다른 모델이 대한 링크를 의미합니다.
 
-시간 관계상 모든 코드를 하나하나 다 설명하지는 않을 거예요. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.2/ref/models/fields/#field-types).
+시간 관계상 모든 코드를 하나하나 다 설명하지는 않을 거예요. 모델의 필드를 정의하는 방법에 궁금하거나 위에서 설명한 것 이외의 것이 알고 싶다면 아래 장고 공식 문서를 꼭 읽어보길 바랍니다. (https://docs.djangoproject.com/en/2.2/ref/models/fields/#field-types).
 
-What about `def publish(self):`? This is exactly the `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method if you want. The naming rule is that we use lowercase and underscores instead of spaces. For example, a method that calculates average price could be called `calculate_average_price`.
+`def publish(self):`는 무슨 뜻일까요? 이 것이 바로 앞서 말했던 `publish`라는 메서드(method) 입니다. `def`는 이 것이 함수/메서드라는 뜻이고, `publish`는 메서드의 이름입니다. 원한다면 메서드 이름을 변경할 수도 있어요. 이름을 붙일 때는 공백 대신, 소문자와 언더스코어를 사용해야 합니다. 예를 들어, 평균 가격을 계산하는 메서드는 `calculate_average_price`라고 부를 수 있겠네요.
 
-Methods often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
+메서드는 자주 무언가를 되돌려주죠. (`return`) 그 예로 `__str__` 메서드를 봅시다. 이 시나리오대로라면, `__str__`를 호출하면 Post 모델의 제목 텍스트(**string**) 를 얻게 될 거에요.
 
-Also notice that both `def publish(self):` and `def __str__(self):` are indented inside our class. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
+클래스 내 `def publish(self):`, `def __str__(self):`는 들여쓰기가 되어 있습니다. 파이썬은 공백에 민감한 때문에, 클래스 내 메소드는 들여쓰기를 해줘야 합니다. 그렇지 않으면 메소드가 클래스안에 속하지 않아서 예기치 않은 동작이 발생할 수 있습니다.
 
-If something is still not clear about models, feel free to ask your coach! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
+아직 모델에 대해서 잘 모르는 부분이 있다면, 코치에게 자유롭게 물어보세요! 지금 배운 내용이 너무 복잡하게 느껴질 수 있어요. 객체와 함수를 배운 적이 없는 분들이 한꺼번에 배우게 된다면 특히 그렇겠죠. 그래도 해 볼 만한 마법이라고 생각했으면 좋겠어요!
 
 ### 데이터베이스에 모델을 위한 테이블 만들기
 
-The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
+이 장의 마지막 단계입니다. 이제 데이터베이스에 우리의 새 모델을 추가할 거에요. 먼저 우리는 장고 모델에 (우리가 방금 만든!) 몇 가지 변화가 생겼다는 걸 알게 해줘야 합니다. (콘솔로 돌아가 `python manage.py makemigrations blog`를 입력하세요. 아마도 화면에 이렇게 보이겠죠?
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py makemigrations blog
     Migrations for 'blog':
@@ -187,9 +187,9 @@ The last step here is to add our new model to our database. First we have to mak
 
 주의: 수정한 파일들을 저장하는것을 잊지 마세요. 만약 그렇지 않으면 에러 메시지가 보이는 이전 코드가 실행될거에요.
 
-Django prepared a migration file for us that we now have to apply to our database. Type `python manage.py migrate blog` and the output should be as follows:
+장고는 데이터베이스에 바로 반영할 수 있도록 마이그레이션 파일(migration file)이라는 것을 준비해 두었답니다. 이제 `python manage.py migrate blog` 명령을 실행해, 실제 데이터베이스에 모델 추가를 반영하겠습니다. :
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py migrate blog
     Operations to perform:
@@ -198,4 +198,4 @@ Django prepared a migration file for us that we now have to apply to our databas
       Applying blog.0001_initial... OK
     
 
-Hurray! Our Post model is now in our database! It would be nice to see it, right? Jump to the next chapter to see what your Post looks like!
+만세! 드디어 글 모델이 데이터베이스에 저장되었습니다. 너무 멋지 않나요? 빨리 다음 장으로 넘어가서 블로그 글을 확인하러 가요!
