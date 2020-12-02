@@ -2,13 +2,13 @@
 
 템플릿이 무엇인지 궁금하셨죠?
 
-A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter because although each letter might contain a different message and be addressed to a different person, they will share the same format.
+템플릿이란 서로 다른 정보를 일정한 형태로 표시하기 위해 재사용 가능한 파일이예요. 예를 들면 편지를 쓸때도 템플릿을 사용할 수 있어요. 편지의 내용이나 수신인 주소는 달라져도 동일한 디자인, 레이아웃을 사용하는 경우가 있으니까요.
 
-A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, **How the Internet works**).
+장고의 템플릿 양식은 HTML을 사용합니다. (HTML은 첫 번째 장 **인터넷은 어떻게 작동할까요**에서 들어봤죠).
 
 ## HTML이란 무엇일까요?
 
-HTML is a code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
+HTML은 크롬이나 파이어폭스, 사파리같은 웹브라우저가 해석할 수 있는 간단한 코드예요. 사용자에게 웹페이지를 표시할 때 사용해요.
 
 HTML은 "HyperText Markup Language"의 줄인 말입니다. **하이퍼텍스트(HyperText)** 는 텍스트인데 페이지간에 하이퍼링크를 담을 수 있다는 뜻이예요. **마크업(Markup)**이란 누군가에게(여기서는 브라우저) 문서를 해석하는 방법을 표시(mark)를 했다는 뜻이에요. HTML 코드는 **태그(tag)**들로 이루어져있어요. 태그는 `<` 로 시작하고 `>`로 끝나요. 이런 태그들은 마크업 **요소(elements)**를 나타냅니다.
 
@@ -23,19 +23,19 @@ HTML은 "HyperText Markup Language"의 줄인 말입니다. **하이퍼텍스트
         └───blog
     
 
-(You might wonder why we need two directories both called `blog` – as you will discover later, this is a useful naming convention that makes life easier when things start to get more complicated.)
+(왜 `blog` 디렉토리를 하나 더 만들어야하는지 궁금할 거에요. 나중에 알게 되겠지만, 작업이 좀더 복잡해질 때 편하게 만들기 위해 사용하는 관습같은 거에요.)
 
 다음 `blog/templates/blog` 디렉토리에 `post_list.html` (비어있는) 파일을 만드세요.
 
 웹사이트를 확인해보세요. : http://127.0.0.1:8000/
 
-> 여전히 `TemplateDoesNotExists`에러가 나온다면, 웹 서버를 다시 시작하세요. Go to the command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
+> 여전히 `TemplateDoesNotExists`에러가 나온다면, 웹 서버를 다시 시작하세요. 명령창으로 가서 Ctrl + C를 눌러 웹 서버 작동을 멈춥니다. 그런 후 다시 `python manage.py runserver` 명령을 실행해 서버를 재시작합니다.
 
 ![그림 11.1](images/step1.png)
 
-No error anymore! Congratulations! :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
+이제 에러가 사라졌어요! 축하합니다. :) 하지만 웹사이트가 비어있어 아무 내용도 보여지지 않네요. 이제 고쳐나가 봅시다.
 
-Open the new file in the code editor, and add the following:
+코드 편집기로 새 파일을 열어서 다음내용을 추가해요:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -48,13 +48,13 @@ Open the new file in the code editor, and add the following:
 </html>
 ```
 
-So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
+웹 사이트가 어떻게 보이나요? 방문해서 확인해보세요: http://127.0.0.1:8000/
 
 ![그림 11.2](images/step3.png)
 
-It worked. Nice work there! :)
+잘 작동하네요! 잘 했습니다. :)
 
-* The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. 웹사이트의 모든 내용은 시작 태그 `<html>`과 닫는 태그인`</html>` 사이에 넣어야만 합니다.
+* 모든 웹 페이지는 `<html>`로 시작해서 `</html>`로 끝나게 됩니다. 가장 기본적인 태그이지요. 웹사이트의 모든 내용은 시작 태그 `<html>`과 닫는 태그인`</html>` 사이에 넣어야만 합니다.
 * `<p>`는 문단 태그입니다. 문단의 끝은 `</p>`로 닫습니다.
 
 ## Head and body
