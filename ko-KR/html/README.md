@@ -206,10 +206,10 @@ HTML은 "HyperText Markup Language"의 줄인 말입니다. **하이퍼텍스트
     [...]
     
 
-(당신의 PythonAnywhere 서브 도메인을 `<your-pythonanywhere-domain>`에 화살괄호 없이 입력하는것을 잊지마세요) Your subdomain name is normally your PythonAnywhere user name, but in some cases it might be a bit different (such as if your user name contains capital letters). So if this command doesn't work, use the `ls` (list files) command to find your actual subdomain/folder name, and then `cd` to there.
+(당신의 PythonAnywhere 서브 도메인을 `<your-pythonanywhere-domain>`에 화살괄호 없이 입력하는것을 잊지마세요) 서브도메인은 PythonAnywhere 의 사용자명과 같아요, 그러나 간혹 다를 수도 있어요.(이름이 대문자를 포함하는 경우와 같이 말이죠). 만약 명령이 작동안하면, `ls` (파일 목록) 명령을 통해 실제 서브도메인/폴더명을 확인하고, `cd` 명령으로 이동해요.
 
-Now watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **"Files" page** and view your code on PythonAnywhere (you can reach other PythonAnywhere pages from the menu button on the console page).
+다운로드된 코드를 보아요. 반영되었는지 확인하려면 **"파일" 페이지**로 이동하여 PythonAnywhere에서 코드를 볼 수 있어요(콘솔 페이지의 메뉴 버튼에서 다른 PythonAnywhere 페이지에 연결할 수도 있어요).
 
-* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
+* 마지막으로 ["웹" 페이지("Web" page)](https://www.pythonanywhere.com/web_app_setup/)으로 가서 여러분의 웹 앱을 **다시 불러오기(Reload)**를 하세요.
 
-Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
+인터넷에도 업데이트 되었네요! 브라우저로 가서 웹사이트를 새로고침하세요. 변경한 내용들이 보일 거에요. :)
