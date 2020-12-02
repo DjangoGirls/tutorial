@@ -58,12 +58,12 @@ def post_list(request):
 
 블로그 게시글 목록에 쿼리셋을 보여주려면, 두 가지 작업이 더 남았어요.
 
-1. Pass the `posts` QuerySet to the template context, by changing the `render` function call. We'll do this now.
-2. Modify the template to display the `posts` QuerySet. We'll cover this in a later chapter.
+1. `render` 함수 호출을 변경하여 `posts` 쿼리셋을 템플릿 컨텍스트에 전달합니다. 이제 할거에요.
+2. `posts` 쿼리셋을 보여주기위해 템플릿을 수정해요. 다음 챕터에서 다룰거랍니다.
 
 우리는 `posts`쿼리셋을 나타내는 *변수*를 만든다는 점에 주의하세요. 이 변수는 퀴리셋의 이름으로 취급하며 이 이름으로 참조할 수도 있습니다.
 
-In the `render` function we have one parameter `request` (everything we receive from the user via the Internet) and another giving the template file (`'blog/post_list.html'`). The last parameter, `{}`, is a place in which we can add some things for the template to use. 이름을 넣어줘야 합니다. (여기서는 `'posts'`라고 하죠). :) 이렇게 보일지도 모르겠어요: `{'posts': posts}`. Please note that the part before `:` is a string; you need to wrap it with quotes: `''`.
+`render` 함수는 `request`(인터넷을 통해 사용자로부터 받는 모든것)라는 하나의 매개변수를 가지고, 다른하나는 템플릿 파일(`'blog/post_list.html'`)을 전달해요. `{}` 와 같이 보이는 마지막 파라미터는 템플릿을 사용하기 위해 뭔가 추가하는 장소입니다. 이름을 넣어줘야 합니다. (여기서는 `'posts'`라고 하죠). :) 이렇게 보일지도 모르겠어요: `{'posts': posts}`. `:` 표시를 해 구분하는 것을 잊지 마세요; 양쪽에 작은 따옴표:`"`를 붙이는 것도요.
 
 그래서 최종적으로는 `blog/views.py` 파일이 아래처럼 될 것입니다. :
 
@@ -81,4 +81,4 @@ def post_list(request):
 
 다 되었습니다! 이제 템플릿 파일로 돌아가서 이 쿼리셋을 나타나도록 하는 것을 해볼 때입니다.
 
-Want to read a little bit more about QuerySets in Django? You should look here: https://docs.djangoproject.com/en/2.2/ref/models/querysets/
+쿼리셋에 대해 더 알고 싶다면 장고 공식 문서를 읽어보세요. : https://docs.djangoproject.com/en/2.2/ref/models/querysets/
