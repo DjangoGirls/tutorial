@@ -864,20 +864,20 @@ hi()
 
 네, 우리가 만든 첫 번째 함수네요!
 
-파일 맨 밑에 왜 함수의 이름을 적는지 궁금할거에요. When we write `def hi():` and the indented lines following, this is us writing instructions for what the `hi()` function should do. Python will read and remember these instructions, but won't run the function yet. To tell Python we want to run the function, we have to call the function with `hi()`. Python reads the file and executes it from top to bottom, so we have to define the function in the file before we call it.
+파일 맨 밑에 왜 함수의 이름을 적는지 궁금할거에요. 우리가 적은 `def hi():`와 뒤따르는 들여쓰기된 줄들은, `hi()` 함수가 해야될 명령을 작성한 거에요 파이썬은 이 명령을 읽고 기억하겠지만, 우리는 아직 함수를 실행하지 않았어요. 파이썬에게 함수를 실행하라고 말하려면, `hi()` 로 함수 호출을 해야해요. 파이썬은 위에서부터 아래로 파일을 읽고 실행해요, 그래서 우리는 함수를 호출하기전에 먼저 정의해야 한답니다.
 
-Let's run this now and see what happens:
+이제 실행해서 어떻게 되는지 봅시다:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     $ python3 python_intro.py
     Hi there!
     How are you?
     
 
-Note: if it didn't work, don't panic! The output will help you to figure why:
+주의: 만약 작동이 안된다면, 당황하지 마세요! 출력된 내용을 보면 왜 그런지 알아가는데 도움이 될거에요:
 
-- If you get a `NameError`, that probably means you typed something wrong, so you should check that you used the same name when creating the function with `def hi():` and when calling it with `hi()`.
+- `NameError`라면, 무엇인가 잘못 입력한거에요, `def hi():` 함수를 만들때랑 `hi()`를 호출할때 같은 이름인지 확인해요.
 - If you get an `IndentationError`, check that both of the `print` lines have the same whitespace at the start of a line: python wants all the code inside the function to be neatly aligned.
 - If there's no output at all, check that the last `hi()` *isn't* indented - if it is, that line will become part of the function too, and it will never get run.
 
