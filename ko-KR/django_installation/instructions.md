@@ -123,58 +123,58 @@ data-collapse=true ces-->
 
 <!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
 
-> **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
+> **주의:** 파워셸 기반의 터미널이 통합된 VS Code와 같은 유명한 편집기를 사용하는 사용자는, 통합 터미널을 계속 사용하려면 다음 명령을 실행해 가상 환경을 활성화할 수 있어요.
 > 
 >     $ . myvenv\Scripts\activate.ps1
 >     
 > 
-> The advantage is that you don't have to switch between editor windows and command-line windows
+> 이것은 편집기창과 명령창을 전환하지 않아도 된다는 장점이 있어요.
 
 <!--endsec-->
 
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-Start your virtual environment by running:
+가상환경을 실행해서 시작:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     $ source myvenv/bin/activate
     
 
-Remember to replace `myvenv` with your chosen `virtualenv` name!
+실행할 때 `myvenv` 부분에 자신이 선택한 `가상 환경`의 이름을 적어야해요!
 
-> **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
+> **주의:** 간혹 `source` 명령이 동작하지 않을 수도 있어요. 그럴 때는 이렇게 하세요.
 > 
-> {% filename %}command-line{% endfilename %}
+> {% filename %}명령줄{% endfilename %}
 > 
 >     $ . myvenv/bin/activate
 >     
 
 <!--endsec-->
 
-You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
+콘솔에서 `(myvenv)`가 보이면 `virtualenv(가상환경)`이 실행되고 있다는 거에요.
 
-When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
+가상 환경을 시작하고 나면 `python`이라고만 해도 지정한 버전의 파이썬이 실행되기 때문에 `python3` 대신 `python`이라고 입력해도 된답니다.
 
-OK, we have all important dependencies in place. We can finally install Django!
+자, 이제 필요한 것들이 준비되었어요. 드디어 장고를 설치할 수 있어요!
 
-## Installing Django {#django}
+## Django 설치하기 {#django}
 
-Now that you have your `virtualenv` started, you can install Django.
+`virtualenv`가 시작됐으니, `pip`으로 장고를 설치할 수 있어요.
 
-Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
+하기전에 먼저, 장고를 설치하기 위한 스프트웨어인 `pip`가 최신버전인지 확인해요.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     (myvenv) ~$ python -m pip install --upgrade pip
     
 
-### Installing packages with requirements
+### 패키지와 requirement 설치
 
-A requirements file keeps a list of dependencies to be installed using `pip install`:
+requirements는 `pip install`로 설치가 필요한 것들의 목록을 유지합니다.
 
-First create a `requirements.txt` file inside of the `djangogirls/` folder, using the code editor that you installed earlier. You do this by opening a new file in the code editor and then saving it as `requirements.txt` in the `djangogirls/` folder. Your directory will look like this:
+먼저 이전에 설치한 코드편집기를 사용해 `djangogirls/` 폴더안에 `requirements.txt`파일을 생성해요. 코드 편집기에서 새 파일을 연 다음 `requirements.txt`을 `djangogirls/` 폴더에 저장해요. 디렉토리는 다음과 같을거에요:
 
     djangogirls
     ├── myvenv
@@ -182,7 +182,7 @@ First create a `requirements.txt` file inside of the `djangogirls/` folder, usin
     └───requirements.txt
     
 
-In your `djangogirls/requirements.txt` file you should add the following text:
+`staticcss/requirements.txt`파일에 아래의 코드를 추가하세요:
 
 {% filename %}djangogirls/requirements.txt{% endfilename %}
 
