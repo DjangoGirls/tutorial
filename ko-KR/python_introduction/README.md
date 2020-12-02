@@ -612,28 +612,28 @@ $
 
 그러면 커맨드 프롬프트(또는 콘솔창) 가 초기화 됩니다.
 
-이전에 우리는 [코드 편집기](../code_editor/README.md)섹션에서 코드편집기를 알아봤어요. We'll need to open the editor now and write some code into a new file (or if you're using a Chromebook, create a new file in the cloud IDE and open the file, which will be in the included code editor):
+이전에 우리는 [코드 편집기](../code_editor/README.md)섹션에서 코드편집기를 알아봤어요. 우리는 지금 편집기를 열어서 새로운 파일에 코드를 입력해야 해요(만약 크롬북을 사용하고 있다면, 코드 편집기가 포함된 클라우드IDE에 새파일을 만들어요):
 
-{% filename %}editor{% endfilename %}
+{% filename %}편집기{% endfilename %}
 
 ```python
 print('Hello, Django girls!')
 ```
 
-Obviously, you're a pretty seasoned Python developer now, so feel free to write some code that you've learned today.
+오늘 우리 모두가 파이썬 개발자가 되었답니다. 그러니 오늘 배운 코드를 가지고 놀아보세요.
 
-Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, but the important part here is to make sure the file ends in **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
+이제 파일을 저장하고 파일 이름을 바꾸세요. 바탕화면에 **python_intro.py** 파일로 저장하세요. 원하는 파일이름으로 저장할 수 있지만, 파일 이름이 반드시 **.py**로 끝나야 해요. **.py**파일 확장자는 운영체제에게 **파이썬 실행 파일**이니 파이썬을 실행하라고 지시합니다.
 
-> **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. 이를 "문법 하이라이팅(syntax highlighting)" 하는데, 코딩할 때 필요한 기능이죠. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). 그래서 우리는 코드 에디터를 사용한답니다. :)
+> **주의** 우리는 코드 에디터의 멋진 기능을 알고 있어야 해요. : 파이썬 콘솔에서는 모든 코드가 같은 색이였지만, 이제 `print` 함수와 그 안에 있는 문자열이 다른 색깔로 되어 구분할 수 있다는 것을 알게 되었을 거에요. 이를 "문법 하이라이팅(syntax highlighting)" 하는데, 코딩할 때 필요한 기능이죠. 이 기능은 여러분에게 색깔로 힌트를 알려줘요. 예를 들어, 문자열이 제대로 닫히지 않았다던가, 특정 키워드(함수에서 사용하는 `def` 같은 특별한 의미로 쓰이는 단어. 앞으로 다룰 거에요.)를 사용할 때, 다른 색으로 지정해서 바로 알 수 있게 해주죠. 그래서 우리는 코드 에디터를 사용한답니다. :) :)
 
-With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
+파일을 저장했다면, 커맨드라인 장에서 배웠던 것을 써먹어야죠! 터미널에서 데스크탑으로 **디렉토리 변경**을 해보세요.
 
 <!--sec data-title="Change directory: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-On a Mac, the command will look something like this:
+맥이라면 명령어는 다음과 같을 것입니다:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     $ cd ~/Desktop
     
@@ -643,22 +643,22 @@ On a Mac, the command will look something like this:
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-On Linux, it will be like this:
+리눅스라면 다음과 같이 하세요. :
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     $ cd ~/Desktop
     
 
-(Remember that the word "Desktop" might be translated to your local language.)
+("Desktop"이라는 단어는 당신의 언어로 번역되어있을 수 있다는 것을 기억하세요)
 
 <!--endsec-->
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-On Windows Command Prompt, it will be like this:
+윈도우 명령창에서는 다음과 같이 될거에요:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     > cd %HomePath%\Desktop
     
@@ -667,42 +667,42 @@ On Windows Command Prompt, it will be like this:
 
 <!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
 
-And on Windows Powershell, it will be like this:
+그리고 윈도우 파워셸에서는 다음과 같이 하세요. :
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     > cd $Home\Desktop
     
 
 <!--endsec-->
 
-If you get stuck, ask for help. That's exactly what the coaches are here for!
+만약 하는도중에 막혔다면, 도움을 요청하세요. 여기에 코치들이 있는 이유랍니다.
 
-Now use Python to execute the code in the file like this:
+이제 파일 안에 있는 코드를 실행하기 위해 다음과 같이 파이썬을 실행해 봅시다. :
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     $ python3 python_intro.py
     Hello, Django girls!
     
 
-Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
+주의: 윈도우에서는 'python3'를 명령으로 인식하지 못해요. 대신에 'python'을 사용해 파일을 열 수 있답니다.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
 ```python
 > python python_intro.py
 ```
 
-Alright! You just ran your first Python program that was saved to a file. Feel awesome?
+잘했어요! 우리는 첫 파이썬 프로그램이 저장된 파일을 실행했어요. 내가 드디어 해냈다고 느껴지나요?
 
-You can now move on to an essential tool in programming:
+다음으로 프로그래밍의 필수 도구를 알아볼 차례에요. :
 
 ## If … elif … else
 
-Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
+코드의 많은 부분은 조건을 만났을 때 실행된답니다. 이를 위해 파이썬은 **if문**을 사용합니다.
 
-Replace the code in your **python_intro.py** file with this:
+**python_intro.py** 파일을 다음과 같이 수정하세요:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -710,9 +710,9 @@ Replace the code in your **python_intro.py** file with this:
 if 3 > 2:
 ```
 
-If we were to save and run this, we'd see an error like this:
+저장하고 실행하면 아래와 같은 에러를 보게 될 거에요. :
 
-{% filename %}{{ warning_icon }} command-line{% endfilename %}
+{% filename %}{{ warning_icon }} 명령줄{% endfilename %}
 
     $ python3 python_intro.py
     File "python_intro.py", line 2
@@ -720,7 +720,7 @@ If we were to save and run this, we'd see an error like this:
     SyntaxError: unexpected EOF while parsing
     
 
-Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
+파이썬은 조건문 `3 > 2`가 참인 경우(또는 값이 `True`인 경우)에 어떤할 지 물어 보네요. 이 경우에 파이썬이 "It works!"를 출력하게 해봅시다. : **python_intro.py** 파일을 아래와 같이 수정하세요. :
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -729,7 +729,7 @@ if 3 > 2:
     print('It works!')
 ```
 
-Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
+두 번째 줄 들여쓰기 된 코드에 스페이스 4칸을 준 게 보이나요? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
 
 Save it and give it another run:
 
