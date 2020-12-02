@@ -4,17 +4,17 @@
 
 > 이번 장의 일부는 Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)의 튜토리얼을 바탕으로 작성되었습니다.
 
-Let's write some code!
+자, 코드를 써 봅시다!
 
 ## 파이썬 프롬프트 (Python prompt)
 
-> For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
+> 집에서 공부하시는 분은: [파이썬 기초: 정수, 문자, 리스트, 변수, 에러](https://www.youtube.com/watch?v=MO63L4s-20U)영상을 참고하세요.
 
-To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+Python으로 놀기 위해서는 *커맨드라인*을 열어야 합니다. [커맨드라인 시작하기](../intro_to_command_line/README.md)에서 배웠던 걸 기억하고 있겠지요?
 
-Once you're ready, follow the instructions below.
+준비되었다면, 아래 내용을 잘 따라오세요.
 
-We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
+파이썬 콘솔을 실행해야합니다. 윈도우에서는 `python`을 입력하고 맥OS나 리눅스라면`python3`를 입력하고 `엔터`를 입력하세요.
 
 {% filename %}command-line{% endfilename %}
 
@@ -26,9 +26,9 @@ We want to open up a Python console, so type in `python` on Windows or `python3`
 
 ## 나의 첫 번째 파이썬 명령!
 
-After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
+파이썬을 실행시키고 나면 프롬프트가 `>>>`로 바뀝니다. 이제부터는 파이썬 언어의 명령어들만 사용할 수 있다는 뜻이예요. `>>>`를 입력할 필요 없어요. 파이썬이 대신해 줄 테니까요.
 
-If you want to exit the Python console at any point, type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
+파이썬 콘솔에서 나가려면 `exit()` 을 입력하거나 윈도우에서는 `Ctrl + Z` 를 맥이나 리눅스에서는 `Ctrl + D`를 입력하면 됩니다. 그러면 `>>>` 는 사라질 거에요.
 
 For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
 
