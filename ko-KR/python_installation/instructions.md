@@ -21,9 +21,9 @@ Anaconda가 컴퓨터에 이미 설치되어 있더라도, 아래와같이 일�
 
 ![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
 
-When the installation completes, you may see a dialog box with a link you can follow to learn more about Python or about the version you installed. Close or cancel that dialog -- you'll be learning more in this tutorial!
+설치가 완료되면 파이썬 혹은 설치된 버전에 대한 정보를 알아볼 수 있는 링크가 표시된 안내창이 보입니다. 해당 창을 Close 혹은 cancel 하세요 - 당신은 이 튜토리얼에서 더 배우게 될거에요.
 
-Note: If you are using an older version of Windows (7, Vista, or any older version) and the Python {{ book.py_version }} installer fails with an error, then install all Windows Updates and try to install Python again. If you still have the error, try installing Python version {{ book.py_min_release }} from [Python.org](https://www.python.org/downloads/windows/).
+주의: 만약 오래된 윈도우(7, 비스타, 혹은 더 오래된 버전)를 사용하고 있다면 파이썬 {{ book.py_version }} 인스톨러가 실페 에러를 나타낼 거에요, 그러면 윈도우 업데이트를 설치하고 파이썬 설치를 다시 해보세요. 만약 계속 에러를 나타낸다면, [Python.org](https://www.python.org/downloads/windows/)에서 파이썬 {{ book.py_min_release }} 버전을 설치해 보세요.
 
 > Django {{ book.django_version }} needs Python {{ book.py_min_version }} or greater, which does not support Windows XP or earlier versions.
 
