@@ -226,7 +226,7 @@ TypeError: object of type 'int' has no len()
 
 그런데 만약 잘못된 이름을 사용했다면 어떻게 될까요? 어떤 일이 일어날까요? 해봅시다!
 
-{% filename %}{{ warning_icon }} command-line{% endfilename %}
+{% filename %}{{ warning_icon }} 명령줄{% endfilename %}
 
 ```python
 >>> city = "Tokyo"
@@ -878,10 +878,10 @@ hi()
 주의: 만약 작동이 안된다면, 당황하지 마세요! 출력된 내용을 보면 왜 그런지 알아가는데 도움이 될거에요:
 
 - `NameError`라면, 무엇인가 잘못 입력한거에요, `def hi():` 함수를 만들때랑 `hi()`를 호출할때 같은 이름인지 확인해요.
-- If you get an `IndentationError`, check that both of the `print` lines have the same whitespace at the start of a line: python wants all the code inside the function to be neatly aligned.
-- If there's no output at all, check that the last `hi()` *isn't* indented - if it is, that line will become part of the function too, and it will never get run.
+- `IndentationError`라면, 두개의 `print` 줄이 같은 공백갯수로 시작되었는지 확인해요.: 파이썬은 함수내 모든 코드가 깔끔하게 정렬되기 원한답니다.
+- 아무것도 출력되지 않는다면, 마지막 `hi()` 가 들여쓰기 되지*않았는지* 확인해요. - 만약 들여쓰기 되어있다면, 함수의 일부가되어서 절대 실행되지 않을거랍니다.
 
-Let's build our first function with parameters. We will change the previous example – a function that says 'hi' to the person running it – with a name:
+정말 간단하네요! 매개 변수와 함께 첫 번째 함수를 만들어 볼게요. 전에 사용했던 예제를 다시 사용할 거에요. 함수를 실행하면, 사람들에게 자신의 이름과 함께 'hi'를 말하게요.
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -889,7 +889,7 @@ Let's build our first function with parameters. We will change the previous exam
 def hi(name):
 ```
 
-As you can see, we now gave our function a parameter that we called `name`:
+함수에 매개변수인 `name`를 주었어요.
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -905,9 +905,9 @@ def hi(name):
 hi()
 ```
 
-Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
+기억하세요: `if`문 안의 `print`함수는 4칸을 들여쓰기 했습니다. 조건문에 해당하는 경우에만 실행되게 만들기 위해서에요. 이제 어떻게 되는지 보세요. :
 
-{% filename %}{{ warning_icon }} command-line{% endfilename %}
+{% filename %}{{ warning_icon }} 명령줄{% endfilename %}
 
     $ python3 python_intro.py
     Traceback (most recent call last):
@@ -916,7 +916,7 @@ Remember: The `print` function is indented four spaces within the `if` statement
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
+이런, 에러가 나왔네요. 다행히도, 파이썬 에러는 유용한 오류 메세지를 보여주네요. 에러 메시지를 보면 함수 `hi()`가 한 개의 인자값(`name`) 을 필요로 하는데, 그 함수를 호출할 때 빼먹고 실행했다는 것을 알려주고 있어요. 이제 아래와 같이 코드를 수정해봅시다:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -924,15 +924,15 @@ Oops, an error. Luckily, Python gives us a pretty useful error message. It tells
 hi("Ola")
 ```
 
-And run it again:
+그리고 다시 실행해보세요. :
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     $ python3 python_intro.py
     Hi Ola!
     
 
-And if we change the name?
+만약 이름을 바꾸면 어떻게 될까요?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -940,24 +940,24 @@ And if we change the name?
 hi("Sonja")
 ```
 
-And run it:
+그리고 실행하세요:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     $ python3 python_intro.py
     Hi Sonja!
     
 
-Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
+이제 다른 이름(Ola와 Sonja가 아닌) 을 넣는다면 어떻게 될까요? 한번 넣어서 실행해봅시다. 이렇게 나와야 해요. :
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     Hi anonymous!
     
 
-This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
+어때요, 정말 굉장하지 않나요? 이로써 인사 함수가 호출될 때마다, 사람 이름을 매번 반복할 필요가 없어요. 그래서 함수가 필요해요 - 매번 똑같은 코드를 반복해 작성하지 않아도 돼요!
 
-Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right? Replace the content of your file with the following:
+좀더 똑똑하게 해보아요 - 이름이 두개 이상일때, 매번 조건을 작성하는것은 힘들겠죠? 아래와 같이 파일의 내용을 바꿔보세요.
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -968,25 +968,25 @@ def hi(name):
 hi("Rachel")
 ```
 
-Let's call the code now:
+이제 코드를 실행해 봅시다:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}명령줄{% endfilename %}
 
     $ python3 python_intro.py
     Hi Rachel!
     
 
-Congratulations! You just learned how to write functions! :)
+축하합니다! 우리는 이제 함수를 작성하는 법을 알게 되었어요! :)
 
 ## 반복하기
 
-> For readers at home: this part is covered in the [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) video.
+> 집에서 공부하시는 분은 : [파이썬 기초: For 반복문](https://www.youtube.com/watch?v=aEA6Rc86HF0) 영상을 참고하세요.
 
-This is the last part already. That was quick, right? :)
+이제 마지막 부분입니다. 금방 했죠? :)
 
-Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
+프로그래머는 반복되는 일을 스스로 하기를 좋아하지 않아요. 프로그래밍이란 어떤 일들을 자동화하는 것이니까 반복적인 경우가 생기면 그걸 반복해서 해결하는 코드를 짜는 것이지요. 앞에서 했던 예제와 같이 인사해야 하는 사람이 수백명 있을 경우, 설마 각각 사람마다 인사하려고 hi('누구누구') 코드를 수백번 입력하고 싶지는 않겠지요? 이런 경우에 바로 반복문(loop)를 사용할 수 있어요.
 
-Still remember lists? Let's do a list of girls:
+리스트 아직 기억하고 있어요? 아래 girls 리스트를 보세요. :
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -994,7 +994,7 @@ Still remember lists? Let's do a list of girls:
 girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 ```
 
-We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
+우리는 여자 아이들 이름을 불러 인사를 하고 싶어요. 우리는 이미 `hi` 함수를 만들었으니 반복문을 사용해봅시다. : 
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1002,9 +1002,9 @@ We want to greet all of them by their name. We have the `hi` function to do that
 for name in girls:
 ```
 
-The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
+`for` 문은 `if` 문과 비슷하게 동작합니다; 두 경우 모두 다음에 오는 코드들을 4칸 들여쓰기 해야해요.
 
-Here is the full code that will be in the file:
+아래 완성된 코드입니다. :
 
 {% filename %}python_intro.py{% endfilename %}
 
