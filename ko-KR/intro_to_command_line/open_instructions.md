@@ -4,10 +4,10 @@
 
 - 화면의 시작 메뉴를 누르고 검색창에 " 명령 프롬프트"를 입력하세요. 
 - 시작 메뉴 --> 시스템 설정 --> 명령 프롬프트 
-- Go to Start menu → All Programs → Accessories → Command Prompt.
-- Go to the Start screen, hover your mouse in the lower-left corner of the screen, and click the down arrow that appears (on a touch screen, instead flick up from the bottom of the screen). The Apps page should open. Click on Command Prompt in the Windows System section.
-- Hold the special Windows key on your keyboard and press the "X" key. Choose "Command Prompt" from the pop-up menu.
-- Hold the Windows key and press the "R" key to get a "Run" window. Type "cmd" in the box, and click the OK key.
+- 시작메뉴로 가서 → 모든 프로그램 → 보조프로그램 → 명령 프롬프트.
+- 시작화면으로 가서, 마우스를 좌측하단 구석에 올려놓으면 아랫방향 화살표가 나타나요(터치스크린에서는 화면 아래를 쓸어올리세요) 앱 페이지가 보일거에요. 윈도우 시스템 항목에서 명령창을 클릭해요
+- 윈도우키를 누른상태에서 "X"키를 눌러요. 팝업 메뉴에서 "명령 프롬프트"를 선택해요.
+- 윈도우키를 누른채 "R"키를 눌러 "실행" 창을 열어요. Type "cmd" in the box, and click the OK key.
 
 ![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
 
