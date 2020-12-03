@@ -1,4 +1,4 @@
-# Django Girls Təlimi
+# Django Girls Dərsliyi
 
 [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
