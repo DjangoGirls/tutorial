@@ -34,13 +34,13 @@ Yaxşı, [gəlin ən başdan başlayaq...](./how_the_internet_works/README.md)
 
 ## Dərsi evdən izləmək
 
-Django Girls atelyesində iştirak etmək möhtəşəmdir, ancaq qoşulmağın həmişə mümkün ola bilməyəcəyini də anlayırıq. Buna görə də, bu dərsliyi evdə izləməyini tövsiyə edirik. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+Django Girls atelyesində iştirak etmək möhtəşəmdir, ancaq qoşulmağın həmişə mümkün ola bilməyəcəyini də anlayırıq. Buna görə də, bu dərsliyi evdə izləməyini tövsiyə edirik. Evdə oxuyanlar üçün, hazırda dərsliyi təkbaşına izləməyi asanlaşdıracaq videolar hazırlayırıq. Bu hələ də davam edən bir işdir, ancaq daha çoxu tezliklə [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube kanalında işıqlandırılacaq.
 
-In every chapter already covered, there is a link that points to the correct video.
+Artıq əhatə olunmuş hər fəsildə, doğru videoya işarə edən bir bağlantı var.
 
-## Haqqımızda və Tövhə
+## Haqqında və töhfə vermə
 
-Bu təlim [DjangoGirls](https://djangogirls.org/) tərəfindən təmin edilir. Əgər hər hansı bir səhv tapsanız və ya təlimatı yeniləmək istəsəniz, zəhmət olmasa [ töhfə təlimatlarını izləyin](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
+Bu dərs [DjangoGirls](https://djangogirls.org/) tərəfindən aparılır. Əgər səhv tapsanız və ya dərsliyi yeniləmək istəsəniz, zəhmət olmasa [töhfə təlimatlarını izləyin](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
 ## Bu təlimi başqa dillərə tərcümə etmək üçün kömək etmək istərdinizmi?
 
@@ -48,4 +48,4 @@ Hal-hazırda, tərcümələr crowdin.com platformasında saxlanılır:
 
 https://crowdin.com/project/django-girls-tutorial
 
-Diliniz [crowdin](https://crowdin.com/)'dəki siyahıda yoxdursa, zəhmət olmasa [yeni mövzu aç](https://github.com/DjangoGirls/tutorial/issues/new) vasitəsilə bizi məlumatlandırın ki, dilinizi əlavə edə bilək.
+Əgər diliniz [crowdin](https://crowdin.com/)-dəki siyahıda yoxdursa, dili əlavə etməyimiz üçün zəhmət olmasa [yeni bir mövzu aç](https://github.com/DjangoGirls/tutorial/issues/new) vasitəsilə bizi məlumatlandırın.
