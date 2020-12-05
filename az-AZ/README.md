@@ -22,19 +22,19 @@ Bu dərslik bir sehrlə sizi proqramçıya çevirməyəcək. Əgər bu mövzuda 
 
 ## Təlim boyunca nələr öyrənəcəksiniz?
 
-Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
+Dərsliyi bitirdikdən sonra kiçik bir işləyən veb tətbiqiniz olacaq: öz bloqunuz. Başqalarının işlərinizi görməsi üçün bloqunuzu necə onlayn edəcəyinizi göstərəcəyik!
 
-It will (more or less) look like this:
+Aşağı yuxarı, belə bir görünüşü olacaq:
 
 ![Şəkil 0.1](images/application.png)
 
-> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Orada suallarınızı verməkdən çəkinməyin!
+> Dərsliklə təkbaşına işləyirsinizsə və hər hansı bir problem zamanı sizə kömək edəcək bir məşqçiniz yoxdursa, sizin üçün bir söhbət sistemimiz var: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Məşqçilərimizdən və daha əvvəl qoşulan şəxslərdən vaxtaşırı orada olmalarını və dərslikdə başqalarına kömək etmələrini xahiş etdik! Orada suallarınızı verməkdən çəkinməyin!
 
 Yaxşı, [gəlin ən başdan başlayaq...](./how_the_internet_works/README.md)
 
-## Təlimi evdən izləmək
+## Dərsi evdən izləmək
 
-It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+Django Girls atelyesində iştirak etmək möhtəşəmdir, ancaq qoşulmağın həmişə mümkün ola bilməyəcəyini də anlayırıq. Buna görə də, bu dərsliyi evdə izləməyini tövsiyə edirik. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
 
 In every chapter already covered, there is a link that points to the correct video.
 
