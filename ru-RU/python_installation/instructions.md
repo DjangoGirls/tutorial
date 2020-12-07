@@ -2,9 +2,9 @@
 > 
 > Этот подраздел основан на руководстве Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django написан на Python. Нам нужен Python, чтобы сделать что-нибудь в Django. Давай начнем с его установки! Мы хотим, чтобы ты установила самую свежую версию Python 3, поэтому, если у тебя уже есть более ранняя версия, то её придется обновить. If you already have version {{ book.py_min_version }} or higher you should be fine.
+Django написан на Python. Нам нужен Python, чтобы сделать что-нибудь в Django. Давай начнем с его установки! Мы хотим, чтобы ты установила самую свежую версию Python 3, поэтому, если у тебя уже есть более ранняя версия, то её придется обновить. Если у тебя уже есть эта версия или повыше, то всё должно пройти нормально.
 
-Пожалуйста, установи обычный Python даже если Anaconda установлена на твоем компьютере.
+Пожалуйста, установите обычный Python даже если Anaconda установлена на твоем компьютере.
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
@@ -17,7 +17,7 @@ Django написан на Python. Нам нужен Python, чтобы сдел
 
 Ты можешь загрузить Python для Windows с официального веб-сайта: https://www.python.org/downloads/windows/. Перейди по ссылке "Latest Python 3 Release - Python x.x.x". Если у тебя установлена **64-битная** версия Windows, скачай **Windows x86-64 executable installer**. Если нет — скачай **Windows x86 executable installer**. После загрузки дистрибутива ты должна запустить его (двойным щелчком) и следовать инструкциям.
 
-Обрати внимание на экран мастера установки, который называется "Setup" (Настройка). Make sure you tick the "Add Python {{ book.py_version }} to PATH" or 'Add Python to your environment variables" checkbox and click on "Install Now", as shown here (it may look a bit different if you are installing a different version):
+Обрати внимание на экран мастера установки, который называется "Setup" (Настройка). Убедитесь, что вы выбираете "Добавить Python" по адресу "Добавить Python к системной переменной" и нажать на "Установить сейчас", как показано здесь (может немного отличаться в зависимости от версии)
 
 ![Не забудьте добавить Python в системную переменную Path](../python_installation/images/python-installation-options.png)
 
