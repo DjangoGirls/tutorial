@@ -81,7 +81,7 @@ data-collapse=true ces-->
 $ sudo dnf install python3
 ```
 
-Если у тебя старая версия Fedora, то ты можешь получить ошибку «command `dfn` is not found». В этом случае используй `yum`.
+Если у тебя старая версия Fedora, то ты можешь получить ошибку «command `dnf` is not found». В этом случае используй `yum`.
 
 <!--endsec-->
 
