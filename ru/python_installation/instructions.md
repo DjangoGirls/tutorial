@@ -24,7 +24,7 @@ Django написан на Python. Нам нужен Python, чтобы сдел
 1. либо установить все доступные обновления Windows и попробовать установить Python 3.6 заново;
 2. либо установить [более раннюю версию Python](https://www.python.org/downloads/windows/), например, [3.4.6](https://www.python.org/downloads/release/python-346/).
 
-Если тебе пришлось установить раннюю версию Python, экран установки можешь выглядеть чуть иначе, чем показано выше. Не забудь прокрутить окно до строки «Add python.exe to Path», затем нажми кнопку слева от неё и выбери пункт «Will be installed on local hard drive»:
+Если тебе пришлось установить раннюю версию Python, экран установки может выглядеть чуть иначе, чем показано выше. Не забудь прокрутить окно до строки «Add python.exe to Path», затем нажми кнопку слева от неё и выбери пункт «Will be installed on local hard drive»:
 
 ![Добавление Python в переменную Path, ранние версии](../python_installation/images/add_python_to_windows_path.png)
 
@@ -81,7 +81,7 @@ data-collapse=true ces-->
 $ sudo dnf install python3
 ```
 
-Если у тебя старая версия Fedora, то ты можешь получить ошибку «command `dfn` is not found». В этом случае используй `yum`.
+Если у тебя старая версия Fedora, то ты можешь получить ошибку «command `dnf` is not found». В этом случае используй `yum`.
 
 <!--endsec-->
 
