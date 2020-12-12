@@ -36,13 +36,38 @@ Git llevará un seguimiento de los cambios realizados en todos los archivos y ca
 
 {% filename %}.gitignore{% endfilename %}
 
+    # Python
     *.pyc
     *~
     __pycache__
-    myvenv
+
+    # Env
+    .env
+    myvenv/
+    venv/
+
+    # Database
     db.sqlite3
-    /static
+
+    # Static folder
+    static/
+
+    # macOS
+    ._*
     .DS_Store
+    .fseventsd
+    .Spotlight-V100
+
+    # Windows
+    Thumbs.db*
+    ehthumbs*.db
+    [Dd]esktop.ini
+    $RECYCLE.BIN/
+
+    # Visual Studio
+    .vscode/
+    .history/
+    *.code-workspace
     
 
 Y guárdalo como `.gitignore` en la carpeta "djangogirls".
