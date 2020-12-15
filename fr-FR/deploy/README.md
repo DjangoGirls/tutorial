@@ -49,8 +49,8 @@ Git va surveiller les modifications faites à tous les fichiers et dossiers pré
     # Database
     db.sqlite3
     
-    # Static folder
-    static/
+    # Static folder at project root
+    /static/
     
     # macOS
     ._*
