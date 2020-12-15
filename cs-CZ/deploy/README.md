@@ -49,8 +49,8 @@ Git bude sledovat změny souborů a složek v tomto adresáři, ale jsou tam ně
     # Database
     db.sqlite3
     
-    # Static folder
-    static/
+    # Static folder at project root
+    /static/
     
     # macOS
     ._*
