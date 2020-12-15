@@ -49,8 +49,8 @@ Git yíò ṣàmójútó àwọn ìyípadà sí gbogbo àwọn fáìlì àti fó
     # Database
     db.sqlite3
     
-    # Static folder
-    static/
+    # Static folder at project root
+    /static/
     
     # macOS
     ._*
