@@ -49,8 +49,8 @@ Git стежитиме за змінам у всіх файлах у цій ди
     # Database
     db.sqlite3
     
-    # Static folder
-    static/
+    # Static folder at project root
+    /static/
     
     # macOS
     ._*
