@@ -49,8 +49,8 @@ Git wird die Änderungen an all den Dateien und Ordnern in diesem Verzeichnis au
     # Database
     db.sqlite3
     
-    # Static folder
-    static/
+    # Static folder at project root
+    /static/
     
     # macOS
     ._*
