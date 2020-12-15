@@ -49,8 +49,8 @@ Git bude sledovať zmeny všetkých súborov a priečinkov v tomto adresári, al
     # Database
     db.sqlite3
     
-    # Static folder
-    static/
+    # Static folder at project root
+    /static/
     
     # macOS
     ._*
