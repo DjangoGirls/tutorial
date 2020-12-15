@@ -49,8 +49,8 @@ Git은 이 디렉토리에 모든 파일들과 폴더들의 변경점을 추적�
     # Database
     db.sqlite3
     
-    # Static folder
-    static/
+    # Static folder at project root
+    /static/
     
     # macOS
     ._*
