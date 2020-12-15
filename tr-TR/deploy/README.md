@@ -47,11 +47,11 @@ Git bu dizindeki tüm dizin ve dosyalardaki değişiklikleri kaydedecek, ama tak
     myvenv/
     venv/
     
-    # Veritabanı
+    # Database
     db.sqlite3
     
-    # Statik klasör
-    static/
+    # Static folder at project root
+    /static/
     
     # macOS
     ._*
