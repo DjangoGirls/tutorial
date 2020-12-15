@@ -49,8 +49,8 @@ A Git ezután nyomon követ minden változást a fájlokban és mappákban ezen 
     # Database
     db.sqlite3
     
-    # Static folder
-    static/
+    # Static folder at project root
+    /static/
     
     # macOS
     ._*
