@@ -49,8 +49,8 @@ Git 將會追蹤這個目錄下所有檔案和資料夾的變更，但我們想�
     # Database
     db.sqlite3
     
-    # Static folder
-    static/
+    # Static folder at project root
+    /static/
     
     # macOS
     ._*
