@@ -49,8 +49,8 @@ Git będzie śledzić zmiany we wszyskich plikach i folderach w tym katalogu, al
     # Database
     db.sqlite3
     
-    # Static folder
-    static/
+    # Static folder at project root
+    /static/
     
     # macOS
     ._*
