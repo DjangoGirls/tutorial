@@ -49,8 +49,8 @@ Git memorizzerà le modifiche a tutti i file e le cartelle in questa directory, 
     # Database
     db.sqlite3
     
-    # Static folder
-    static/
+    # Static folder at project root
+    /static/
     
     # macOS
     ._*
