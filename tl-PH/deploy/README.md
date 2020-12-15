@@ -49,8 +49,8 @@ Ang git ay magsubaybay sa mga pagbabago sa lahat ng mga file at mga folder sa lo
     # Database
     db.sqlite3
     
-    # Static folder
-    static/
+    # Static folder at project root
+    /static/
     
     # macOS
     ._*
