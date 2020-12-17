@@ -22,6 +22,6 @@ Bayangkanlah ada petugas pengantar surat membawa sebuah surat. Ia menelusuri jal
 
 Pada fungsi *view*, semua hal menarik dilakukan: kita bisa melihat database untuk mencari beberapa informasi. Munkin si user ingin mengubah data? Seperti sepucuk surat yang berbunyi, "Tolong ubah deskripsi pekerjaan saya." The *pandangan* dapat memeriksa apakah Anda diperbolehkan untuk melakukan itu, kemudian memperbarui deskripsi pekerjaan untuk Anda dan mengirim kembali pesan: "! Selesai" Kemudian *pandangan* menghasilkan respon dan Django dapat mengirimkannya ke web browser pengguna.
 
-The description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
+Deskripsi di atas agak disederhanakan, tapi Anda tak perlu tahu segala sesuatu yang sangat teknis dulu. Mengerti yang umum-umum dulu sudah cukup.
 
-So instead of diving too much into details, we will start creating something with Django and we will learn all the important parts along the way!
+Jadi, kita tidak akan belajar segala sesuatunya langsung secara detail, tetapi kita akan mulai membuat sesuatu dengan Django dan kita akan belajar semua hal penting sambil berjalan!
