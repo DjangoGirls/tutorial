@@ -6,6 +6,6 @@
 > 
 > > **Catatan** Jika Anda menggunakan Chromebook, silahkan lewati bab ini dan pastikan Anda mengikuti perintah [Chromebook Setup](../chromebook_setup/README.md). IDE cloud yang anda pilih (PaizaCloud Cloud IDE atau AWS Cloud9) menyertakan sebuah Editor Kode, dan ketika anda membuka sebuah berkas di IDE anda dari menu File, maka anda akan secara ototmatis menggunakan editor tersebut.
 > > 
-> > **Note** You might have done this earlier in the [Installation chapter](../installation/README.md) – if so, you can skip right ahead to the next chapter!
+> > ** Catatan** Anda mungkin telah melakukan ini sebelumnya di [bab Instalasi](../installation/README.md) - jika demikian, Anda dapat langsung melompat ke bab berikutnya!
 > 
 > {% include "/code_editor/instructions.md" %}
