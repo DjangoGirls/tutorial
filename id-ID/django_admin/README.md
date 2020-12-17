@@ -7,10 +7,13 @@ Mari buka berkas `blog/admin.py` dalam editor kode dan ganti isinya dengan ini:
 {% filename %}blog/admin.py{% endfilename %}
 
 ```python
-dari admin impor django.contrib dari .Models import Post admin.site.register (Post)
+from django.contrib import admin
+from .models import Post
+
+admin.site.register(Post)
 ```
 
-Sebagaimana dapat anda lihat, kita mengimport (meng Include) model Post yang telah didefinisikan di bab sebelumnya. Agar model kita tampil pada halaman admin, kita perlu mendaftarkan model tersebut dengan `admin.site.register(Post)`.
+Sebagaimana dapat Anda lihat, kita mengimpor (include) model Post yang telah didefinisikan di bab sebelumnya. Agar model kita tampil pada halaman admin, kita perlu mendaftarkan model tersebut dengan `admin.site.register(Post)`.
 
 Oke, saatnya kita lihat model Post kita. Ingat untuk menjalankan `python manage.py runserver` di konsol untuk menjalankan web server. Buka browser Anda dan ketikkan alamat http://127.0.0.1:8000/admin/. Anda akan melihat halaman login seperti ini:
 
@@ -20,7 +23,7 @@ Untuk masuk, Anda perlu membuat * superuser </ 0> - akun pengguna yang memiliki 
 
 > Ingat, untuk menulis perintah baru saat server web berjalan, buka jendela terminal baru dan aktifkan virtualenv Anda. Kami meninjau bagaimana menulis perintah baru di ** proyek Django pertama Anda! </ 0> bab, di bagian ** Starting the web server </ 0> .</p> </blockquote> 
 > 
-> {% filename %}Mac OS X or Linux:{% endfilename %}
+> {% filename %}Mac OS X atau Linux:{% endfilename %}
 > 
 >     (myvenv) ~/djangogirls$ python manage.py createsuperuser
 >     
@@ -30,25 +33,25 @@ Untuk masuk, Anda perlu membuat * superuser </ 0> - akun pengguna yang memiliki 
 >     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
 >     
 > 
-> Saat diminta, ketik nama akun anda (huruf kecil, tidak ada spasi), alamat email, dan kata sandi. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Type it in and press `enter` to continue. Outputnya akan terlihat seperti ini (dimana nama akun dan emailnya seharusnya menjadi milik anda):
+> Saat diminta, ketik nama akun anda (huruf kecil, tidak ada spasi), alamat email, dan kata sandi. **Jangan khawatir ketika Anda tidak dapat melihat kata sandi yang Anda ketik - begitulah semestinya.** Ketik saja dan tekan `enter` untuk melanjutkan. Keluarannya akan terlihat seperti ini (dimana nama akun dan emailnya seharusnya adalah milik Anda):
 > 
->     Username: ola
->     Email address: ola@example.com
->     Password:
->     Password (again):
->     Superuser created successfully.
+>     Nama pengguna: ola
+>     Alamat email: ola@example.com
+>     Kata sandi:
+>     Kata sandi (lagi):
+>     Superuser sukses dibuat.
 >     
 > 
-> Kembali ke browser anda. Masuklah dengan kredensial superuser yang anda pilih; anda harus melihat dasbor admin Django.
+> Kembali ke browser Anda. Masuklah dengan kredensial superuser yang Anda pilih; Anda harus melihat dasbor admin Django.
 > 
-> ![Django admin](images/django_admin3.png)
+> ![Admin Django](images/django_admin3.png)
 > 
-> Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content –- it's only visible to you on your local computer -- you can copy-paste some text from this tutorial to save time. :)
+> Pergilah ke Posts dan bereksperimenlah sedikit dengannya. Tambahkan lima atau enam posting blog. Jangan khawatir tentang isi -- ini hanya tampak ke Anda pada komputer lokal Anda - Anda dapat menyalin-tempel sebagian teks dari tutorial ini untuk menghemat waktu. :)
 > 
 > Pastikan paling tidak ada dua atau tiga postingan (tapi tidak semua) yang memiliki tanggal terbitan. Ini akan sangat membantu nantinya.
 > 
-> ![Django admin](images/edit_post3.png)
+> ![Admin Django](images/edit_post3.png)
 > 
-> If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/2.2/ref/contrib/admin/
+> Jika Anda ingin tahu lebih banyak tentang admin Django, Anda harus memeriksa dokumentasi Django: https://docs.djangoproject.com/en/2.2/ref/contrib/admin/
 > 
 > Ini mungkin saja saat yang tepat untuk minum kopi (atau teh) atau sesuatu yang bisa dimakan untuk mengembalikan tenaga anda. Anda menciptakan model Django yang pertama - Anda layak untuk sedikit beristirahat!
