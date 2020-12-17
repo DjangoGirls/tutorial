@@ -2,9 +2,9 @@
 
 Untuk menambahkan, mengedit dan menghapus tulisan yang baru saja kita telusuri, kita akan menggunakan admin Django.
 
-Let's open the `blog/admin.py` file in the code editor and replace its contents with this:
+Mari buka berkas `blog/admin.py` dalam editor kode dan ganti isinya dengan ini:
 
-{% filename%} blog / admin.py {% endfilename%}
+{% filename %}blog/admin.py{% endfilename %}
 
 ```python
 dari admin impor django.contrib dari .Models import Post admin.site.register (Post)
