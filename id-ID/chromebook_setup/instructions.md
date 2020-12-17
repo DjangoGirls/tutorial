@@ -2,7 +2,7 @@ Anda bisa [melewatkan bagian ini](http://tutorial.djangogirls.org/en/installatio
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud IDE merupakan sebuah layanan berupa editor kode dan diakses lewat komputer yang berjalan di internet yang mana Anda bisa memasang, menulis, dan mengoperasikan perangkat lunak. Di dalam tutorial ini, Cloud IDE ini akan bertindak sebagai *mesin lokal* Anda. Anda tetap bisa mengoperasikan perintah di antarmuka terminal sama seperti mereka yang menggunakan OS X, Ubuntu, atau Windows, tapi terminal ini akan terkoneksi ke komputer yang berjalan di layanan cloud IDE yang Anda gunakan. Inilah instruksi untuk layanan cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9). Anda bisa pilih salah satu dari layanan cloud IDE, dan ikuti instruksi dari setiap layanan cloud IDE yang Anda gunakan.
+Cloud IDE merupakan sebuah layanan berupa editor kode dan diakses lewat komputer yang berjalan di internet yang mana Anda bisa memasang, menulis, dan mengoperasikan perangkat lunak. Di dalam tutorial ini, Cloud IDE ini akan bertindak sebagai *mesin lokal* Anda. Anda tetap bisa mengoperasikan perintah di antarmuka terminal sama seperti mereka yang menggunakan OS X, Ubuntu, atau Windows, tapi terminal ini akan terkoneksi ke komputer yang berjalan di layanan cloud IDE yang Anda gunakan. Inilah instruksi untuk layanan cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9). Anda bisa memilih salah satu dari layanan cloud IDE, dan ikuti instruksi dari setiap layanan cloud IDE yang Anda gunakan.
 
 #### PaizaCloud Cloud IDE
 
@@ -18,7 +18,7 @@ Lalu amati sidebar, terdapat tombol di sebelah kiri. Klik tombol "Terminal" untu
     $
     
 
-Terminal PaizaCloud Cloud IDE, bisa Anda atur ulang ukuran jendela terminalnya dan pula bisa diperbesar hingga memenuhi layar.
+Terminal pada PaizaCloud Cloud IDE siap menerima instruksi Anda. Anda bisa mengubah ukuran atau memaksimalkan jendela itu untuk membuatnya sedikit lebih besar.
 
 #### AWS Cloud9
 
@@ -27,7 +27,7 @@ Saat ini Cloud 9 mengharuskan Anda untuk mendaftar dengan AWS dan memasukkan inf
 1. Pasang Cloud 9 dari Chrome web store</ 0></li> 
     
     - Pergi ke [c9.io](https://c9.io) dan klik *Get started with AWS Cloud9*
-    - Daftar untuk akun AWS (dibutuhkan informasi kartu kredit, tetapi kamu dapat menggunakannya secara gratis)
+    - Daftar untuk akun AWS (memerlukan informasi kartu kredit, tetapi kamu dapat menggunakannya secara gratis)
     - Pada AWS Dashboard, masuk *Cloud9* pada kotak pencarian dan klik
     - Pada Cloud 9 dashboard, klik *Create environment*
     - Namakan *django-girls*
