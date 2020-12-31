@@ -13,7 +13,7 @@ Primeiramente, verifique se o seu computador está rodando uma versão 32-bit ou
 * Aperte as teclas do Windows e "Pause/Break" ao mesmo tempo
 * Abra o seu Painel de Controle pelo menu do Windows, e navegue para "Sistema e Segurança", depois "Sistema"
 * Aperte o botão do Windows no seu teclado, então navegue para Configurações > Sistema > Sobre
-* Search the Windows Start menu for "System Information". To do that, click the Start button or press the Windows key, then begin to type `System Information`. It will start making suggestions as soon as you type. You can select the entry once it shows up.
+* Search the Windows Start menu for "System Information". To do that, click the Start button or press the Windows key, then begin to type `System Information`. Ele começará a fazer sugestões assim que você começar a digitar. Você pode selecionar a sugestão assim que ela aparecer.
 
 Você pode baixar Python para Windows do site https://www.python.org/downloads/windows/. Clique no link "Versão mais recente do Python 3 - Python x.x.x". Se o seu computador está executando uma versão **64-bit** do Windows, baixe o instalador executável **Windows x86-64**. Caso contrário, baixe o instalador executável **Windows x86**. Depois de baixar o instalador, você deve executá-lo (com clique duplo) e seguir as instruções fornecidas.
 
@@ -37,7 +37,7 @@ data-collapse=true ces-->
 You need to go to the website https://www.python.org/downloads/mac-osx/ and download the latest Python installer:
 
 * Faça o download do arquivo *Mac OS X 64-bit/32-bit installer*,
-* Double click *python-{{ book.py_release }}-macosx10.9.pkg* to run the installer.
+* Dê um duplo clique no arquivo *python-3.6.1-macosx10.6.pkg* para iniciar a instalação.
 
 <!--endsec-->
 
