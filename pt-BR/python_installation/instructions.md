@@ -2,7 +2,7 @@
 > 
 > Esta seção baseia-se em tutoriais das Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django é escrito em Python. Precisamos de Python para fazer qualquer coisa no Django. Vamos começar por instalá-lo! Queremos que você instale a versão mais recente do Python 3, então, se você tiver uma versão anterior, precisará atualizá-la. If you already have version {{ book.py_min_version }} or higher you should be fine.
+Django é escrito em Python. Precisamos de Python para fazer qualquer coisa no Django. Vamos começar por instalá-lo! Queremos que você instale a versão mais recente do Python 3, então, se você tiver uma versão anterior, precisará atualizá-la. Se você já tem versão {{ book.py_min_version }} ou superior, deve funcionar normalmente.
 
 Por favor, instale o Python normal da seguinte maneira, mesmo tenha o Anaconda instalado no seu computador.
 
@@ -65,7 +65,7 @@ Afterwards, depending on the result, follow one of the following installation gu
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-Type this command into your console:
+Digite o seguinte comando em seu terminal:
 
 {% filename %}command-line{% endfilename %}
 
@@ -100,7 +100,7 @@ Use this command in your console:
 
 <!--endsec-->
 
-Verify the installation was successful by opening a command prompt and running the `python3` command:
+Verifique se a instalação foi bem sucedida abrindo o terminal e digitando o comando `python3`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -114,4 +114,4 @@ The version shown may be different from {{ book.py_release }} -- it should match
 
 * * *
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
+Se você tem alguma dúvida ou se alguma coisa deu errado e você não tem a menor ideia do que fazer, pergunte ao seu instrutor! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
