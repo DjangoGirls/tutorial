@@ -1,4 +1,4 @@
-如果不使用 Chromebook, 则可以 [ 跳过本节 ](http://tutorial.djangogirls.org/en/installation/#install-python)。 如果您是使用 Chromebook,, 您的安装体验将会有一点不同。 您可以忽略其余的安装说明。
+如果不使用 Chromebook, 则可以 [ 跳过本节 ](http://tutorial.djangogirls.org/en/installation/#install-python)。 如果您是使用 Chrome笔记本电脑, 您的安装体验将会有一点不同。 您可以忽略其余的安装说明。
 
 ### Django 视野-快来创造吧！
 
