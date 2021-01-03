@@ -1,4 +1,4 @@
-# Chromebook 设置
+# Chrome 笔记本电脑的设置
 
 > **Note** If you already worked through the [installation steps](../installation/README.md), no need to do this again – you can skip straight ahead to [Introduction to Python](../python_introduction/README.md).
 
