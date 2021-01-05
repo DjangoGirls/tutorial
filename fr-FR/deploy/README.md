@@ -46,10 +46,10 @@ Git va surveiller les modifications faites à tous les fichiers et dossiers pré
     myvenv/
     venv/
     
-    # Database
+    # Base de donnée
     db.sqlite3
     
-    # Static folder at project root
+    # Dossier "static" à la racine du projet
     /static/
     
     # macOS
@@ -68,6 +68,10 @@ Git va surveiller les modifications faites à tous les fichiers et dossiers pré
     .vscode/
     .history/
     *.code-workspace
+     
+    Text
+    XPath: /pre[2]/code
+    
     
 
 Enregistrez ce fichier sous le nom `.gitignore` dans votre répertoire principal "djangogirls".
@@ -218,7 +222,7 @@ Vous pouvez également accéder à la page "Fichiers" et naviguer à l'aide du n
 
 ## Vous êtes désormais sur Internet !
 
-Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want. :)
+Votre site devrait maintenant être accessible sur Internet ! Cliquez sur l'onglet "Web" dans PythonAnywhere pour y obtenir un lien. Vous pouvez partagez ce lien avec qui vous voulez. :)
 
 > **Note** Ce tutoriel est conçu pour les débutants, et pendant le déploiement on a pris quelques raccourcis qui, d'un point de vue de la sécurité, ne sont pas idéaux. Quand vous voudrez aller plus loin dans ce projet, ou commencer un nouveau projet, vous devriez consulter la [Checklist de déploiement pour Django](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) pour obtenir des conseils sur comment sécuriser votre site.
 
