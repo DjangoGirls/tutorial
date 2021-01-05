@@ -12,7 +12,7 @@ Ces trois endroits sont importants pour vous. Votre ordinateur local est l'endro
 
 # Git
 
-> **Note** If you already did the [installation steps](../installation/README.md), there's no need to do this again – you can skip to the next section and start creating your Git repository.
+> **Note** Si vous avez déjà effectué [l'installation](../installation/README.md), il n'est pas nécessaire de la refaire : vous pouvez passer à la partie suivante et commencer à créer votre dépôt Git
 
 {% include "/deploy/install_git.md" %}
 
