@@ -430,7 +430,7 @@ Nos modifications fonctionnent-elles sur PythonAnywhere ? Pour le savoir, déplo
     $ git add .
     $ git status
     $ git commit -m "Added views to create/edit blog post inside the site."
-    $ git push
+    $ git pus
     
 
 * Puis, dans la console bash de [PythonAnywhere](https://www.pythonanywhere.com/consoles/):
