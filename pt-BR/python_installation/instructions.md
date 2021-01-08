@@ -77,7 +77,7 @@ Digite o seguinte comando em seu terminal:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Use this command in your console:
+Use o seguinte comando no terminal:
 
 {% filename %}command-line{% endfilename %}
 
@@ -91,7 +91,7 @@ If you're on older Fedora versions you might get an error that the command `dnf`
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Use this command in your console:
+Use o seguinte comando no terminal:
 
 {% filename %}command-line{% endfilename %}
 
