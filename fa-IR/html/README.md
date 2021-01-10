@@ -33,7 +33,7 @@ HTML مخفف عبارت "HyperText Markup Language" است. **HyperText** به 
 
 ![تصویر 11.1](images/step1.png)
 
-No error anymore! Congratulations! :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
+پیغام خطایی نیست! تبریک :) با اینحال وبسایت شما هنوز چیزی به غیر از یک صفحه خالی نشان نمی‌دهد برای اینکه تمپلیت شما خالی است. لازم است که آن را اصلاح کنیم.
 
 فایل جدید را در ویرایشگر کد باز کنید و موارد زیر را به آن اضافه کنید:
 
@@ -52,7 +52,7 @@ No error anymore! Congratulations! :) However, your website isn't actually publi
 
 ![تصویر 11.2](images/step3.png)
 
-It worked. Nice work there! :)
+کار می‌کند! خوب شد! :)
 
 * `<html>` پایه‌ای ترین تگ و معمولاً اولین تگ در ابتدای صفحه است و تگ `</html>` معمولاً در انتهای صفحه می‌آید. همانطور که می‌بینید، تمام محتوای وبسایت بین تگ `<html>` در ابتدا و تگ `</html>` در انتها قرار می‌گیرند
 * تگ `<p>` برای پاراگراف‌ها به کار می‌رود و تگ `</p>` پایان هر پاراگراف را مشخص می‌کند
@@ -186,7 +186,7 @@ It worked. Nice work there! :)
     $ git commit -m "Changed the HTML for the site."
     
 
-> **Note** Make sure you use double quotes around the commit message.
+> **نکته** مطمئن باشید که از علامت نقل قول دوتایی در اطراف پیغام مربوط به کامیت استفاده کنید.
 
 وقتی این کار را انجام دادیم تغییرات را در گیتهاب آپلود (push) می‌کنیم:
 
