@@ -58,8 +58,8 @@ def post_list(request):
 
 برای نمایش QuerySet در لیست ارسال های بلاگ، دو کار باقی مانده است که باید انجام شود:
 
-1. Pass the `posts` QuerySet to the template context, by changing the `render` function call. We'll do this now.
-2. Modify the template to display the `posts` QuerySet. We'll cover this in a later chapter.
+1. فرستادن کوئری ست `posts` به تمپلیت با تغییر تابع `render`. الان این کار را انجام می‌دهیم.
+2. اصلاح تمپلیت برای نمایش دادن کوئری ست `posts`. این کار را در بخش‌های بعد انجام خواهیم داد.
 
 توجه داشته باشید که ما یک *متغیر* برای کوئری ست مان درست کردیم: `posts`. آن را به عنوان نام کوئری ست در نظر بگیرید. از این به بعد ما به کمک همین نام به این کوئری ست مراجعه می‌کنیم.
 
