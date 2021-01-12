@@ -118,7 +118,7 @@ Quer saber em que diretório está agora? Digite o seguinte comando e clique `en
     C:\Users\olasitarska
     
 
-> Observação: 'cd' significa 'change directory' em inglês, o que se traduz para 'mudar de diretório'. Com o powershell, você pode utilizar pwd da mesma forma como no Linux ou Mac OS X.
+> Observação: 'cd' significa 'change directory' em inglês, o que se traduz para 'mudar de diretório'. Com o PowerShell, você pode utilizar pwd da mesma forma como no Linux ou Mac OS X.
 
 <!--endsec-->
 
@@ -173,7 +173,7 @@ Então, o que tem no seu computador? Vamos descobrir:
     ...
     
 
-> Observação: No powershell, você também pode usar 'ls' como no Linux e Mac OS X. <!--endsec-->
+> Observação: No PowerShell, você também pode usar 'ls' como no Linux e Mac OS X. <!--endsec-->
 
 * * *
 

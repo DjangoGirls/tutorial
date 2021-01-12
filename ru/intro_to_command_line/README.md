@@ -121,7 +121,7 @@ $ pwd
 > cd
 C:\Users\olasitarska
 ```
-> Примечание: 'cd' означает 'change directory'(сменить каталог). Если ты пользуешься powershell, можешь ввести pwd — как на Linux или Mac OS X.
+> Примечание: 'cd' означает 'change directory'(сменить каталог). Если ты пользуешься PowerShell, можешь ввести pwd — как на Linux или Mac OS X.
 
 <!--endsec-->
 
@@ -177,7 +177,7 @@ Music
 05/08/2014 07:28 PM <DIR>      Music
 ...
 ```
-> Примечание: в powershell можешь использовать 'ls' — как в Linux или Mac OS X.
+> Примечание: в PowerShell можешь использовать 'ls' — как в Linux или Mac OS X.
 <!--endsec-->
 
 ---
