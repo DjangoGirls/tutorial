@@ -32,7 +32,7 @@ Django написан на Python. Нам нужен Python, чтобы сдел
 <!--sec data-title="Install Python: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
+> ** Примечание ** Перед установкой Python в OS X вы должны убедиться, что настройки вашего Mac позволяют устанавливать сторонние пакеты, по мимо тех, что доступны в App Store. Перейдите в Системные настройки (они находятся в папке «Приложения»), нажмите «Безопасность и конфиденциальность», а затем - вкладку «Общие». If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
 
 You need to go to the website https://www.python.org/downloads/mac-osx/ and download the latest Python installer:
 
