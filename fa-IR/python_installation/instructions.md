@@ -52,20 +52,20 @@ data-collapse=true ces-->
     Python {{ book.py_release }}
     
 
-اگر نسخه نصب شده دیگری از پایتون دارید حداقل {{ book.py_min_version }} (یا مثلاً {{ book.py_min_release }})، نیازی به به‌‌روزرسانی ندارید. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
+اگر نسخه نصب شده دیگری از پایتون دارید حداقل {{ book.py_min_version }} (یا مثلاً {{ book.py_min_release }})، نیازی به به‌‌روزرسانی ندارید. اگر پایتون نصب شده ندارید یا نسخه دیگری را می‌خواهید، اول باید به کمک دستورات زیر، کنترل کنید که از کدام توزیع لینوکس استفاده می‌کنید:
 
 {% filename %}خط فرمان{% endfilename %}
 
     $ grep '^NAME=' /etc/os-release
     
 
-Afterwards, depending on the result, follow one of the following installation guides below this section.
+سپس بسته به نتیجه، یکی از روش‌های نصب زیر را به کار ببرید.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-Type this command into your console:
+این دستور را در کنسول تایپ کنید:
 
 {% filename %}command-line{% endfilename %}
 
@@ -77,38 +77,38 @@ Type this command into your console:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Use this command in your console:
+این دستور را در کنسول تایپ کنید:
 
 {% filename %}خط فرمان{% endfilename %}
 
     $ sudo dnf install python3
     
 
-If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use `yum` instead.
+اگر بر روی نسخه‌های قدیمی Fedora کار می‌کنید ممکن است پیغام خطایی بگیرید که `dnf` پیدا نشد. در این مورد، باید به جای آن از `yum` استفاده کنید.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Use this command in your console:
+این دستور را در کنسول تایپ کنید:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ sudo zypper install python3
     
 
 <!--endsec-->
 
-Verify the installation was successful by opening a command prompt and running the `python3` command:
+برای بررسی موفقیت‌آمیز بودن نصب، یک خط فرمان باز کنید و دستور `python3</0 را جرا کنید:</p>
 
-{% filename %}خط فرمان{% endfilename %}
+<p>{% filename %}خط فرمان{% endfilename %}</p>
 
-    $ python3 --version
-    Python {{ book.py_release }}
-    
+<pre><code>$ python3 --version
+Python {{ book.py_release }}
+`</pre> 
 
-The version shown may be different from {{ book.py_release }} -- it should match the version you installed.
+نسخه نمایش داده شده ممکن است با {{ book.py_release }} متفاوت باشد اما باید آن چیزی باشد که در موقع نصب انتخاب کرده‌اید.
 
 **NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is {{ book.py_min_version }} or higher. If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
 
