@@ -32,27 +32,27 @@
 <!--sec data-title="Install Python: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **نکته** قبل از نصب پایتون بر روی OS X، باید مطمئن شوید که تنظیمات Mac‌، اجازه نصب پکیج‌هایی را که در App Store‌ نیستند، می‌دهد. به System Preferences بروید (در پوشه Applications است)، بر روی "Security & Privacy," کلیک کنید و به تب "General" بروید. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
+> **نکته** قبل از نصب پایتون بر روی OS X، باید مطمئن شوید که تنظیمات Mac‌، اجازه نصب پکیج‌هایی را که در App Store‌ نیستند، می‌دهد. به System Preferences بروید (در پوشه Applications است)، بر روی "Security & Privacy," کلیک کنید و به تب "General" بروید. اگر "Allow apps downloaded from:" بر روی "Mac App Store" تنظیم شده بود آن را به گزینه "Mac App Store and identified developers" تغییر دهید.
 
-You need to go to the website https://www.python.org/downloads/mac-osx/ and download the latest Python installer:
+شما باید به آدرس https://www.python.org/downloads/mac-osx/ بروید و آخرین نسخه پایتون را دانلود کنید: 
 
 * فایل *Mac OS X 64-bit/32-bit installer* را دانلود کنید،
-* Double click *python-{{ book.py_release }}-macosx10.9.pkg* to run the installer.
+* بر روی *python-{{ book.py_release }}-macosx10.9.pkg* دوبار کلیک کنید تا نصب‌کننده نرم‌افزار فعال شود.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
+احتمال زیادی دارد که شما بر روی کامپیوترتان پایتون داشته باشید. برای چک کردن آنکه آیا پایتون دارید (یا اینکه نسخه آن چیست)، یک کنسول باز کنید و دستورات زیر را تایپ کنید:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ python3 --version
     Python {{ book.py_release }}
     
 
-If you have a different version of Python installed, at least {{ book.py_min_version }} (e.g. {{ book.py_min_release }}), then you don't have to upgrade. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
+اگر نسخه نصب شده دیگری از پایتون دارید حداقل {{ book.py_min_version }} (یا مثلاً {{ book.py_min_release }})، نیازی به به‌‌روزرسانی ندارید. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
 
 {% filename %}خط فرمان{% endfilename %}
 
