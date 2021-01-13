@@ -17,22 +17,22 @@
 
 می‌توانید پایتون برای ویندوز را از وبسایت https://www.python.org/downloads/windows/ دانلود کنید. بر روی لینک "Latest Python 3 Release - Python x.x.x" کلیک کنید. اگر کامپیوتر شما نسخه **64-bit** ویندوز را اجرا می‌کند، **Windows x86-64 executable installer** را دانلود کنید. در غیر اینصورت، **Windows x86 executable installer** را دانلود کنید. پس از دانلود کردن اینستالر، باید آن را اجرا کنید (بر روی آن دوبار کلیک کنید) و دستورالعمل‌ها را دنبال کنید.
 
-نکته قابل توجه: در هنگام نصب پنجره‌ای را خواهید دید به نام "Setup". Make sure you tick the "Add Python {{ book.py_version }} to PATH" or 'Add Python to your environment variables" checkbox and click on "Install Now", as shown here (it may look a bit different if you are installing a different version):
+نکته قابل توجه: در هنگام نصب پنجره‌ای را خواهید دید به نام "Setup". مطمئن شوید که گزینه "Add Python {{ book.py_version }} to PATH" یا "Add Python to your environment variables"را انتخاب کرده‌اید و سپس بر روی "Install Now" که اینجا می‌بینید، کلیک کنید (اگر نسخه‌‌های دیگری را نصب کنید ممکن است کمی با این متفاوت باشد):
 
 ![فراموش نکنید که پایتون را به Path اضافه کنید](../python_installation/images/python-installation-options.png)
 
 وقتی که نصب کامل شد، یک پنجره خواهید دید که شما را به یک لینک برای آموزش بیشتر در مورد پایتون و نیز در مورد نسخه‌ای که نصب کرده‌اید ارجاع می‌دهد. این پنجره را کنسل کنید و یا ببندید - شما در همین دوره آموزشی بیشتر در مورد پایتون یاد خواهید گرفت!
 
-Note: If you are using an older version of Windows (7, Vista, or any older version) and the Python {{ book.py_version }} installer fails with an error, then install all Windows Updates and try to install Python again. If you still have the error, try installing Python version {{ book.py_min_release }} from [Python.org](https://www.python.org/downloads/windows/).
+نکته: اگر از نسخه‌های قدیمی‌تر ویندوز استفاده می‌کنید (7، Vista یا نسخه‌های قدیمی‌تر) و نصب پایتون نسخه {{ book.py_version }} با خطا مواجه شد، تمام آپدیت‌های ویندوز را نصب کنید و دوباره برای نصب پایتون تلاش کنید. اگر همچنان با خطا مواجه شدید، سعی کنید پایتون نسخه {{ book.py_min_release }} را از [Python.org](https://www.python.org/downloads/windows/) نصب کنید.
 
-> Django {{ book.django_version }} needs Python {{ book.py_min_version }} or greater, which does not support Windows XP or earlier versions.
+> جنگو {{ book.django_version }} به پایتون {{ book.py_min_version }} یا بالاتر نیاز دارد که ویندوز XP یا نسخه‌های قدیمی‌تر را پشتیبانی نمی‌کند.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
+> **نکته** قبل از نصب پایتون بر روی OS X، باید مطمئن شوید که تنظیمات Mac‌، اجازه نصب پکیج‌هایی را که در App Store‌ نیستند، می‌دهد. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
 
 You need to go to the website https://www.python.org/downloads/mac-osx/ and download the latest Python installer:
 
