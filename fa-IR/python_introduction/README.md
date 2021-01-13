@@ -427,7 +427,7 @@ KeyError: 'age'
 >>> participant['favorite_language'] = 'Python'
 ```
 
-Like lists, using the `len()` function on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
+استفاده از متد `len()` روی دیکشنری، مانند لیست‌ها، تعداد جفت‌های کلید-مقدار را برمی‌گرداند. دستور زیر را تایپ کنید:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -497,7 +497,7 @@ True
 True
 ```
 
-We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare values of mathematical expressions like `2 * 2` and function results like the `2` returned by `len([4, 5])`. Nice, huh?
+ما به پایتون تعدادی عدد برای مقایسه کردن داده‌ایم. همانطور که می‌بینید، پایتون نه تنها می‌تواند اعداد را مقایسه کند بلکه می‌تواند عبارت‌های ریاضی مانند `2 * 2` و متدهایی همچون `len([4, 5])` که نتیجه `2` را می‌دهد نیز با هم مقایسه کند. جالب است، نه؟
 
 آیا به این فکر کرده‌اید که چرا دو علامت مساوی `==` کنار هم برای چک کردن تساوی اعداد گذاشته‌ایم؟ ما از یک علامت مساوی `=` برای انتساب مقادیر به متغیرها استفاده می‌کنیم. اگر می‌خواهید مساوی بودن دو شی با همدیگر را چک کنید، همیشه و **همیشه** باید از دو علامت مساوی `==` استفاده کنید. همچنین می‌توانیم مساوی نبودن اشیا را تعیین کنیم. برای این منظور، از علامت `=!`، همانطور که در مثال بالا نشان داده شده است، استفاده می‌کنیم.
 
@@ -1064,7 +1064,7 @@ for i in range(1, 6):
 
 همین بود. **شما فوق‌العاده هستید!** این بخش دارای ریزه کاری هایی بود و شما باید به خودتان افتخار کنید. ما هم قطعاً به شما افتخار می‌کنیم که تا اینجا پیش آمده اید!
 
-For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers! :)
+برای دیدن آموزش رسمی و کامل پایتون آدرس https://docs.python.org/3/tutorial/ را ببینید. این آموزش به شما دید کامل‌تر و درست‌تری نسبت به این زبان می‌دهد. موفق باشید! :)
 
 شاید بخواهید قبل از رفتن به مرحله بعد، کارهای دیگری بکنید، کمی کش قوس بیایید، قدم بزنید و به چشم های خود استراحتی بدهید. :)
 
