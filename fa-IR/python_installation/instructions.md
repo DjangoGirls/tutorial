@@ -67,7 +67,7 @@ data-collapse=true ces-->
 
 این دستور را در کنسول تایپ کنید:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ sudo apt install python3
     
@@ -110,8 +110,8 @@ Python {{ book.py_release }}
 
 نسخه نمایش داده شده ممکن است با {{ book.py_release }} متفاوت باشد اما باید آن چیزی باشد که در موقع نصب انتخاب کرده‌اید.
 
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is {{ book.py_min_version }} or higher. If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
+**نکته:** اگر بر روی ویندوز کار می‌کنید و خطای `python3` wasn't found را گرفتید، از دستور `python` (بدون `3`) استفاده کنید و ببنید آیا ممکن است که نسخه پایتون {{ book.py_min_version }} یا بالاتر باشد. اگر این کار هم موثر نبود، یک خط فرمان جدید بازکنید و دوباره تلاش کنید؛ اگر خط فرمان شما از قبل از نصب پایتون باز مانده باشد ممکن است چنین خطایی دریافت کنید.
 
 * * *
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
+اگر جایی تردید داشتید یا مشکل دیگری بوجود آمد که نمی‌دانستید چه باید بکنید، لطفاً از مربی خود کمک بگیرید! گاهی وقت‌ها اوضاع به خوبی پیش نمی‌رود و بهتر است از فرد باتجربه‌تری کمک بگیرید.
