@@ -20,7 +20,7 @@
 
     $ python3
     Python {{ book.py_release }} (...)
-    Type "help", "copyright", "credits" or "license" for more information.
+    Введите "help", "copyright", "credits" или "license" для дополнительной информации.
     >>>
     
 
