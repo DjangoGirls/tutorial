@@ -32,19 +32,19 @@ Django написан на Python. Нам нужен Python, чтобы сдел
 <!--sec data-title="Install Python: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-> ** Примечание ** Перед установкой Python в OS X вы должны убедиться, что настройки вашего Mac позволяют устанавливать сторонние пакеты, по мимо тех, что доступны в App Store. Перейдите в Системные настройки (они находятся в папке «Приложения»), нажмите «Безопасность и конфиденциальность», а затем - вкладку «Общие». If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
+> ** Примечание ** Перед установкой Python в OS X вы должны убедиться, что настройки вашего Mac позволяют устанавливать сторонние пакеты, по мимо тех, что доступны в App Store. Перейдите в Системные настройки (они находятся в папке «Приложения»), нажмите «Безопасность и конфиденциальность», а затем - вкладку «Общие». Если для параметра «Разрешить загрузку приложений из:» установлено значение «Mac App Store», измените его на «Mac App Store и сторонние разработчики».
 
-You need to go to the website https://www.python.org/downloads/mac-osx/ and download the latest Python installer:
+Вам необходимо зайти на сайт https://www.python.org/downloads/mac-osx/ и загрузить последнюю версию установщика Python:
 
 * Скачай файл *Mac OS X 64-bit/32-bit installer*,
-* Double click *python-{{ book.py_release }}-macosx10.9.pkg* to run the installer.
+* Дважды щелкните *python-{{ book.py_release }}-macosx10.9.pkg* для запуска программы установки.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
+Очень вероятно, что у вас уже установлен Python. Чтобы проверить, установлен ли он у вас (и какая это версия), откройте консоль и введите следующую команду:
 
 {% filename %}command-line{% endfilename %}
 
@@ -52,20 +52,20 @@ It is very likely that you already have Python installed out of the box. To chec
     Python {{ book.py_release }}
     
 
-If you have a different version of Python installed, at least {{ book.py_min_version }} (e.g. {{ book.py_min_release }}), then you don't have to upgrade. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
+Если у вас установлена другая версия Python, по крайней мере {{ book.py_min_version }} (например, {{ book.py_min_release }}), то вам не нужно обновиться. Если у вас не установлен Python, или если вы хотите использовать другую версию, сначала проверьте, что вы используете Linux со следующей командой:
 
 {% filename %}command-line{% endfilename %}
 
     $ grep '^NAME=' /etc/os-release
     
 
-Afterwards, depending on the result, follow one of the following installation guides below this section.
+После этого, в зависимости от результата, следуй одной из инструкций по установке ниже.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-Type this command into your console:
+Введи эту команду в консоль:
 
 {% filename %}command-line{% endfilename %}
 
@@ -77,21 +77,21 @@ Type this command into your console:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Use this command in your console:
+Используй следующую команду в консоли:
 
 {% filename %}command-line{% endfilename %}
 
     $ sudo dnf install python3
     
 
-If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use `yum` instead.
+Если вы находитесь на более старых версиях Fedora, вы можете получить сообщение об ошибке, что команда `dnf` не найдена. В этом случае вам нужно использовать `yum` вместо dnf.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Use this command in your console:
+Используй следующую команду в консоли:
 
 {% filename %}command-line{% endfilename %}
 
@@ -100,7 +100,7 @@ Use this command in your console:
 
 <!--endsec-->
 
-Verify the installation was successful by opening a command prompt and running the `python3` command:
+Убедись, что установка прошла успешно, открыв приложение *Терминал* и запустив команду `python3`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -108,10 +108,10 @@ Verify the installation was successful by opening a command prompt and running t
     Python {{ book.py_release }}
     
 
-The version shown may be different from {{ book.py_release }} -- it should match the version you installed.
+Показанная версия может отличаться от {{ book.py_release }} -- она должна совпадать с установленной версией.
 
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is {{ book.py_min_version }} or higher. If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
+**ПРИМЕЧАНИЕ:** Если вы на Windows, и вы получите сообщение об ошибке, `python3` не был найден, попробуйте использовать `python` (без `3`) и проверить, если он все еще может быть версия Python, которая является . или выше. Если это не сработает, вы можете открыть новую командную строку и повторить попытку; это произойдет, если вы используете командную строку, оставив открытыми перед установкой Python.
 
 * * *
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
+Если у тебя остались какие-либо сомнения, или что-то пошло не так и ты понятия не имеешь что делать дальше - спроси своего тренера! Иногда дела идут не совсем гладко, поэтому лучше попросить помощи у кого-то с большим опытом.
