@@ -211,4 +211,4 @@ def post_detail(request, pk):
 
 به هرحال، الان ما آماده هستیم، به سراغ ["Web" page](https://www.pythonanywhere.com/web_app_setup/) بروید (از طریق دکمه menu در گوشه بالا و سمت راست کنسول) و دکمه **Reload** را بزنید و سپس به صفحه https://subdomain.pythonanywhere.com نگاه کنید تا نتیجه را ببینید.
 
-And that should be it. Congrats! :)
+به نتیجه رسید! تبریک! :)
