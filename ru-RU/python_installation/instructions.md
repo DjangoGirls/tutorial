@@ -23,9 +23,9 @@ Django написан на Python. Нам нужен Python, чтобы сдел
 
 Когда установка закончится, ты можешь увидеть предложение узнать больше о Python или об установленной тобой версии. Закрой это окно — ты узнаешь намного больше в этом руководстве!
 
-Note: If you are using an older version of Windows (7, Vista, or any older version) and the Python {{ book.py_version }} installer fails with an error, then install all Windows Updates and try to install Python again. If you still have the error, try installing Python version {{ book.py_min_release }} from [Python.org](https://www.python.org/downloads/windows/).
+Примечание: Если вы используете старую версию Windows (7, Vista, или любой более старой версии) и установщик Python {{ book.py_version }} завершился ошибкой, установите все обновления Windows и попробуйте установить Python снова. Если ошибка не исчезла, попробуйте установить версию Python {{book.py_min_release}} с [ Python.org ](https://www.python.org/downloads/windows/).
 
-> Django {{ book.django_version }} needs Python {{ book.py_min_version }} or greater, which does not support Windows XP or earlier versions.
+> Django {{ book.django_version }} нужен Python {{ book.py_min_version }} или выше, который не поддерживает Windows XP или более ранние версии.
 
 <!--endsec-->
 
