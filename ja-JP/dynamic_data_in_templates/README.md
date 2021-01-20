@@ -56,10 +56,10 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-To display our QuerySet on our blog's post list, we have two things left to do:
+ブログ投稿リストにクエリセットを表示するために、あと2つしなければならないことがあります。
 
-1. Pass the `posts` QuerySet to the template context, by changing the `render` function call. We'll do this now.
-2. Modify the template to display the `posts` QuerySet. We'll cover this in a later chapter.
+1. `posts` クエリセット をテンプレートコンテキストに渡し、 `render` 関数呼び出しを変更します。今から行います。
+2. `posts` クエリセットを表示するテンプレートを修正します。後の章で説明します。
 
 作成したクエリセットは、*変数* `posts `で参照できることに、注意しましょう。この 変数 posts を使って、クエリセットのデータにアクセスします。これから先 posts というと、このクエリセットのことです。
 
