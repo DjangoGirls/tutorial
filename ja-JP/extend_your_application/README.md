@@ -42,7 +42,7 @@
 
 `post_detail`の部分は、Djangoが`blog/urls.py`に書かれた name=post_detail のURLを待ち受けることを表しています。
 
-そして`pk=post.pk`についてはどうでしょうか？ `pk` is short for primary key, which is a unique identifier for each record in a database. Every Django model has a field which serves as its primary key, and whatever other name it has, it can also be referred to as "pk". Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a field named "id" holding a number that increases for each record, i.e. 1, 2, 3) and adds it as a field to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
+そして`pk=post.pk`についてはどうでしょうか？ `pk` は primary keyの略で、データベースの各レコードのユニークな名前です。 すべてのDjangoモデルには、そのプライマリーキーとして機能するフィールドがあります。 どのような名前を持っていたとしても、「pk」と呼ばれることもあります `Post`モデルでプライマリキーを指定しなかったので、Djangoは私たちのために1つのキーを作成し（デフォルトでは、"id"という各レコードごとに1ずつ増える数字で、たとえば1、2、3です）、各投稿に`pk`というフィールド名で追加します。 We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
 
 さて、私たちが http://127.0.0.1:8000/ に行くとエラーが出ます（知っての通り、URLも`post_detail`の*ビュー*もまだ作っていないので）。 このようになります：
 
@@ -211,4 +211,4 @@ PythonAnywhereのようなサーバは、（CSSファイルのような）「静
 
 いずれにしても、[「Web」ページ](https://www.pythonanywhere.com/web_app_setup/)を（コンソールの右上のメニューボタンから）開き、**Reload**をクリックする準備ができました。そうしたらhttps://subdomain.pythonanywhere.comを見て結果を確認しましょう。
 
-And that should be it. Congrats! :)
+うまくいってるはずです！おめでとうございます! :)
