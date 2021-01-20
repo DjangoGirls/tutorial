@@ -6,6 +6,6 @@
 
 > **補足：** Chromebookを使っている方は、このチャプターは飛ばして、 [Chromebookのセットアップ](../chromebook_setup/README.md) の説明に従ってください。 あなたが選んだクラウドIDE（PaizaCloud Cloud IDE もしくは AWS Cloud9）にはコードエディタが含まれています。IDEのファイルメニューからファイルを開くと、自動的にエディタが使用できます。
 > 
-> **Note** You might have done this earlier in the [Installation chapter](../installation/README.md) – if so, you can skip right ahead to the next chapter!
+> **注意** [インストールの章](../installation/README.md)で既にコードエディターのダウウンロードを済ませてしまっているかもしれません。もしそうなら、スキップして次の章に進んでください！
 
 {% include "/code_editor/instructions.md" %}
