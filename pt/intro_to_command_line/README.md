@@ -132,7 +132,7 @@ Muitos comandos que você digita no Prompt de comand possuem um painel de ajuda 
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-SO X e Linux tem um comando `man`, que ajuda você nos comandos. Tente `mand pwd` e veja o que ele diz, ou coloque `man` antes de outros comandos para ver seus menus de ajuda. A saída `man` é normalmente paginada. Use a barra de espaço para ir para a próxima página, e `q` para sair do menu de ajuda.
+SO X e Linux tem um comando `man`, que ajuda você nos comandos. Tente `man pwd` e veja o que ele diz, ou coloque `man` antes de outros comandos para ver seus menus de ajuda. A saída `man` é normalmente paginada. Use a barra de espaço para ir para a próxima página, e `q` para sair do menu de ajuda.
 
 <!--endsec-->
 
@@ -197,7 +197,7 @@ Agora vamos para a pasta Desktop:
     $ cd Desktop
     
 
-Note que o nome do diretório "Desktop" pode estar traduzido para a linguagem da sua conta Linux. Se for o caso, você irá precisar mudar `Desktop` para o nome traduzido; como exemplo, `Área de trabalho` em português.
+Note que o nome do diretório "Desktop" pode estar traduzido para a linguagem da sua conta Linux. Se for o caso, você irá precisar mudar `Desktop` para o nome traduzido; como exemplo, `Área de trabalho` em português, neste caso utilize barras para acessar a pasta `cd Área\ de\ trabalho`.
 
 <!--endsec-->
 
