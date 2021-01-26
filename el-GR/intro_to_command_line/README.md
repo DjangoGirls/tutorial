@@ -118,7 +118,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     C:\Users\olasitarska
     
 
-> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
+> Note: 'cd' stands for 'change directory'. With PowerShell you can use pwd just like on Linux or Mac OS X.
 
 <!--endsec-->
 
@@ -173,7 +173,7 @@ So what's in it? It'd be cool to find out. Let's see:
     ...
     
 
-> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
+> Note: In PowerShell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
 
 * * *
 
