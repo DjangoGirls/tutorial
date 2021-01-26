@@ -7,7 +7,7 @@ data-collapse=true ces-->
 
 [git-scm.com](https://git-scm.com/) からGitをダウンロードすることができます。 2つのステップを除いて「次へ」を押して進んで大丈夫です。エディタを選ぶステップでは、Nanoを選んでください。「PATH環境を調整する(Adjusting your PATH environment)」というステップでは、「Use Git and optional Unix tools from the Windows Command Prompt（WindowsコマンドプロンプトからGitとオプションのUnixツールを使用する）」（一番下の選択肢）を選択します。 それ以外はデフォルトの設定値で構いません。 改行コードの変換(Configuring the line ending conversions)については、「Checkout Windows-style, commit Unix-style line endings」の選択で大丈夫です。
 
-インストールが正常に終了した後、コマンドプロンプトまたはPowerShellを再起動することを忘れないでください。<!--endsec-->
+Do not forget to restart the command prompt or PowerShell after the installation finished successfully. <!--endsec-->
 
 <!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->
