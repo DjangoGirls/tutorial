@@ -117,7 +117,7 @@ Sería bueno saber dónde estamos ahora, ¿Correcto? Veamos. Escribe éste coman
     C:\Users\olasitarska
     
 
-> Nota: 'cd' es para cambiar de directorio (change directory). Con la consola tu puedes usar pwd solo con Linux o Mac OS X.
+> Note: 'cd' stands for 'change directory'. With PowerShell you can use pwd just like on Linux or Mac OS X.
 
 <!--endsec-->
 
@@ -172,7 +172,7 @@ Así que, ¿en qué estamos? Estaría bien saberlo. Veamos:
     ...
     
 
-> Nota: En consola tu puedes usar también 'ls' como en Linux y Mac OS X. <!--endsec-->
+> Note: In PowerShell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
 
 * * *
 
