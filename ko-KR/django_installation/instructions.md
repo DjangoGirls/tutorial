@@ -123,7 +123,7 @@ data-collapse=true ces-->
 
 <!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
 
-> **주의:** 파워셸 기반의 터미널이 통합된 VS Code와 같은 유명한 편집기를 사용하는 사용자는, 통합 터미널을 계속 사용하려면 다음 명령을 실행해 가상 환경을 활성화할 수 있어요.
+> **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows PowerShell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
 > 
 >     $ . myvenv\Scripts\activate.ps1
 >     
