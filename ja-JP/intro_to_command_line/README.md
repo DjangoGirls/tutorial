@@ -118,7 +118,7 @@ OSによってコマンドが若干違います。あなたのコンピュータ
     C:\Users\olasitarska
     
 
-> 補足: 'cd' は、'change directory'の略で、ディレクトリを変えることを意味します。PowerShellを使うと、LinuxやMac OS Xのようにpwdコマンドを使えます。
+> Note: 'cd' stands for 'change directory'. With PowerShell you can use pwd just like on Linux or Mac OS X.
 
 <!--endsec-->
 
@@ -173,7 +173,7 @@ OS X と Linux には、`man` コマンドがあり、それはコマンドの�
     ...
     
 
-> 補足：PowerSellでは、Linux や Mac OS X同様にlsコマンドが使えます。 <!--endsec-->
+> Note: In PowerShell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
 
 * * *
 
