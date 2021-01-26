@@ -118,7 +118,7 @@
     C:\Users\olasitarska
     
 
-> 참고 'cd'는 'change directory(디렉토리 변경)'의 줄임말이에요. 'Powershell'을 사용하면 Linux나 Mac OS X 처럼 윈도우에서도 'pwd'명령어를 사용할 수 있어요.
+> Note: 'cd' stands for 'change directory'. With PowerShell you can use pwd just like on Linux or Mac OS X.
 
 <!--endsec-->
 
@@ -173,7 +173,7 @@ OS X 와 Linux 는 `man` 이라는 명령어가 도움을 줄거에요. `man pwd
     ...
     
 
-> 주의: 파워셸에서는 Linux 와 Mac OS X처럼 'ls'명령을 사용할 수 있어요.<!--endsec-->
+> Note: In PowerShell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
 
 * * *
 
