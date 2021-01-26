@@ -136,7 +136,7 @@
     C:\Users\olasitarska
     
 
-> Σημείωση: 'cd' σημαίνει 'change directory'. Με το powershell μπορείτε να χρησιμοποιήσετε την εντολή pwd όπως στο Linux ή το Mac OS X.
+> Σημείωση: 'cd' σημαίνει 'change directory'. Με το PowerShell μπορείτε να χρησιμοποιήσετε την εντολή pwd όπως στο Linux ή το Mac OS X.
 
 <!--endsec-->
 
@@ -191,7 +191,7 @@
     ...
     
 
-> Σημείωση: Σε powershell μπορείτε επίσης να χρησιμοποιήσετε το 'ls' όπως στο Linux και στο Mac OS X. <!--endsec-->
+> Σημείωση: Σε PowerShell μπορείτε επίσης να χρησιμοποιήσετε το 'ls' όπως στο Linux και στο Mac OS X. <!--endsec-->
 
 * * *
 
