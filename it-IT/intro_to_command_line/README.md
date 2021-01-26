@@ -115,7 +115,7 @@ Sarebbe bello sapere dove ci troviamo ora, giusto?Vediamo. Digita questo comando
     > cd C:\Users\olasitarska
     
 
-> Nota: 'cd' è per 'modifica cartella'. Con la shell può usare pwd come su Linux o Mac OS X.
+> Note: 'cd' stands for 'change directory'. With PowerShell you can use pwd just like on Linux or Mac OS X.
 
 <!--endsec-->
 
@@ -170,7 +170,7 @@ Cosa c'è dentro? Sarebbe bello scoprirlo. Vediamo come:
     ...
     
 
-> Nota: Nella shell vocale puoi anche utilizzare 'ls' come su Linux e Mac OS X. <!--endsec-->
+> Note: In PowerShell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
 
 * * *
 
