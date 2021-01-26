@@ -7,7 +7,7 @@ data-collapse=true ces-->
 
 Можете да свалите Git от [git-scm.com](https://git-scm.com/). Можеш да натиснеш „next“ на всички стъпки, с изключение на две: в стъпката, където се изисква да избереш твоя редактор, трябва да избереш Nano, и в стъпката, озаглавена „Настройка на вашата PATH среда“, избери "Използване на Git и незадължителни Unix инструменти от командния ред на Windows" (най-долната опция). Освен това, настройките по подразбиране са добре. Разгледайте Windows стил, Unix стил за окончанията на редовете е добре.
 
-Не забравяй да рестартирш командния ред или powershell, след като инсталацията приключи успешно.<!--endsec-->
+Do not forget to restart the command prompt or PowerShell after the installation finished successfully. <!--endsec-->
 
 <!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->
