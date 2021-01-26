@@ -7,7 +7,7 @@ data-collapse=true ces-->
 
 Μπορείτε να κατεβάσετε το Git από το [git-scm.com](https://git-scm.com/). Μπορείτε να πατάτε "επόμενο" σε όλα τα στάδια εκτός από δύο: στο στάδιο που ρωτάει για τον προτιμώμενο επεξεργαστή κειμένου θα πρέπει να επιλέξετε το Nano και στο στάδιο με το όνομα "Adjusting your PATH environment", θα πρέπει να επιλέξετε το "Use Git and optional Unix tools from the Windows Command Prompt" (την τελευταία επιλογή). Εκτός από αυτό, οι προκαθορισμένες ρυθμίσεις είναι μια χαρά. Επίσης, οι επιλογές Checkout Windows-style και Commit Unix-style είναι μια χαρά.
 
-Μη ξεχάσετε να επανεκκινήσετε τη γραμμή εντολών ή το powershell μετά την επιτυχής εγκατάσταση. <!--endsec-->
+Do not forget to restart the command prompt or PowerShell after the installation finished successfully. <!--endsec-->
 
 <!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->
