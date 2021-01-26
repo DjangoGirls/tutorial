@@ -118,7 +118,7 @@ Ce serait pratique de savoir dans quel répertoire nous nous trouvons. Pour le s
     C:\Users\olasitarska
     
 
-> Note : « cd » signifie « changer répertoire ». Avec PowerShell vous pouvez utiliser pwd comme sur Linux ou macOS.
+> Note: 'cd' stands for 'change directory'. With PowerShell you can use pwd just like on Linux or Mac OS X.
 
 <!--endsec-->
 
@@ -173,7 +173,7 @@ Du coup, que pouvons-nous trouver dans ce dossier personnel ? Voyons voir :
     ...
     
 
-> Remarque : dans powershell vous pouvez aussi utiliser "ls" comme sur Linux et macOS. <!--endsec-->
+> Note: In PowerShell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
 
 * * *
 
