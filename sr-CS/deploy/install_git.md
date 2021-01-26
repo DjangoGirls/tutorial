@@ -7,7 +7,7 @@ data-collapse=true ces-->
 
 Možete da preuzmete Git sa [git-scm.com](https://git-scm.com/). Možete da kliknete na "next" (sledeći korak) tokom svakog koraka, osim u dva slučaja: u koraku gde treba da izaberete editor (potrebno je da izaberete Nano) i u koraku koji se zove "Adjusting your PATH environment" (prilagođavanje Vašeg PATH okruženja), gde treba da izaberete opciju na dnu - "Use Git and optional Unix tools from the Windows Command Prompt" (Koristite Git i Unix alate iz Windows komandne linije). Osim toga, podrazumevane opcije su u redu. Opcija "Checkout Windows-style, commit Unix-style line endings" je dobra.
 
-Ne zaboravite da restartujete komandnu liniju ili powershell nakon uspešno obavljene instalacije. <!--endsec-->
+Do not forget to restart the command prompt or PowerShell after the installation finished successfully. <!--endsec-->
 
 <!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->
