@@ -123,7 +123,7 @@ data-collapse=true ces-->
 
 <!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
 
-> **NOT:** Windows tabanlı komut istemi içeren VS code editörü kullanıcıları, eğer VS code'un içindeki bu komut istemini kullanmak istiyorsanız, aşağıdaki komutu sanal ortamınızı aktifleştirmek için kullanabilirsiniz:
+> **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows PowerShell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
 > 
 >     $ . myvenv\Scripts\activate.ps1
 >     
