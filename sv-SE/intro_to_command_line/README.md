@@ -118,7 +118,7 @@ Visst hade det varit bra att veta var vi är? Skriv in detta kommando och tryck 
     C:\Users\olasitarska
     
 
-> Obs: 'cd' står för 'change directory' som betyder 'byt mapp' på svenska. Med powershell kan du använda pwd som i Linux eller Mac OS X.
+> Note: 'cd' stands for 'change directory'. With PowerShell you can use pwd just like on Linux or Mac OS X.
 
 <!--endsec-->
 
@@ -173,7 +173,7 @@ Så vad finns här? Det hade varit kul att se. Vi testar:
     ...
     
 
-> Obs: I powershell så kan du också använda 'ls' som på Linux och Mac OS X.<!--endsec-->
+> Note: In PowerShell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
 
 * * *
 
