@@ -118,7 +118,7 @@
     C:\Users\olasitarska
     
 
-> Забележка: 'cd' означава 'change directory' (промяна на директория). С powershell можете да използвате pwd точно както в Linux или Mac OS X.
+> Note: 'cd' stands for 'change directory'. With PowerShell you can use pwd just like on Linux or Mac OS X.
 
 <!--endsec-->
 
@@ -173,7 +173,7 @@ OS X и Linux имат команда `man`, която ви предостав�
     ...
     
 
-> Забележка: В powershell можете също да използвате 'ls' като в Linux и Mac OS X. <!--endsec-->
+> Note: In PowerShell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
 
 * * *
 
