@@ -7,7 +7,7 @@ data-collapse=true ces-->
 
 Git은 [git-scm.com](https://git-scm.com/)에서 다운로드 할 수 있어요. 두가지 단계만 빼고 "다음"을 누르실수 있답니다: 에디터 선택을 요구하는 단계에서 Nano를 선택하시고, "PATH 환경 조정" 단계에서 "윈도우 명령 프롬프트에서 Git과 Unix 도구 사용" (하단 옵션)을 선택해 주세요. 나머지는 모두 기본 설정대로 해도 됩니다. 윈도우 스타일, 유닉스 스타일로 라인엔딩 커밋하기(commit Unix-style line endings) 를 체크하는 것도 좋습니다.
 
-설치가 성공적으로 완료된 후 명령 프롬프트나 파워쉘을 다시 시작하세요. <!--endsec-->
+Do not forget to restart the command prompt or PowerShell after the installation finished successfully. <!--endsec-->
 
 <!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->
