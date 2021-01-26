@@ -7,7 +7,7 @@ data-collapse=true ces-->
 
 Kamu dapat mengunduh Git dari [git-scm.com](https://git-scm.com/). Anda bisa menekan "next" di semua langkah kecuali satu; pada langkah kelima yang berjudul ""Adjusting your PATH environment", pilih "Use Git and optional Unix tools from the Windows Command Prompt" (opsi paling bawah). Akan tetapi membiarkan pilihan-pilihan tersebut dalam keadaan default juga tidak masalah. Lihat pada Window-style, akhir baris Unix-style yang ada terlhat bagus.
 
-Jangan lupa restart command prompt atau PowerShell setelah penginstalan selesai dengan sukses. <!--endsec-->
+Do not forget to restart the command prompt or PowerShell after the installation finished successfully. <!--endsec-->
 
 <!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->
