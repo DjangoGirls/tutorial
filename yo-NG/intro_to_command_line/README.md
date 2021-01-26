@@ -118,7 +118,7 @@ Yíò dára láti mọ ibi tí a wà ní báyìí, àbí bẹ́ẹ̀ kọ? Jẹ�
     C:\Users\olasitarska
     
 
-> Àkíyèsí: 'cd' dúró fún 'change directory' (ṣàyípadà àkójọpọ̀ fáìlì). Pẹ̀lú powershell, o lè lo pwd gẹ́gẹ́ bíi orí Linux tàbí Mac OS X.
+> Note: 'cd' stands for 'change directory'. With PowerShell you can use pwd just like on Linux or Mac OS X.
 
 <!--endsec-->
 
@@ -173,7 +173,7 @@ Nítorí náà kí ló wà nínú rẹ̀? Yíò dára láti rí ìdáhùn sí i.
     ...
     
 
-> Àkíyèsí: Nínú powershell, o tún lè lo 'ls' gẹ́gẹ́ bíi orí Linux àti Mac OS X. <!--endsec-->
+> Note: In PowerShell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
 
 * * *
 
