@@ -7,7 +7,7 @@ data-collapse=true ces-->
 
 يمكنك تحميل Git من [ git-scm.com](https://git-scm.com/). يمكنك الضغط على "التالي" في جميع الخطوات باستثناء خطوتين: في الخطوة التي يطلب منك اختيار محررك، عليك اختيار Nano, وفي الخطوة بعنوان "ضبط بيئة المسار (PATH) الخاص بك"، اختر "استخدام Git وأدوات يونيكس المرتبطة بها من سطر الأوامر في ويندوز" (الخيار الأسفل). بخلاف ذلك، الإعدادات الافتراضية كافيه. راجع نهايات السطور في نمط ويندوز ، و ارتكاب نمط يونكس.
 
-لا تنس إعادة تشغيل موجه الأوامر أو powershell بعد انتهاء عملية التثبيت بنجاح. <!--endsec-->
+Do not forget to restart the command prompt or PowerShell after the installation finished successfully. <!--endsec-->
 
 <!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->
