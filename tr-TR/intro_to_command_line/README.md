@@ -117,7 +117,7 @@ Her işletim sistemi komut satırı için birbirinden biraz farklı komutlar kul
     C:\Users\zeynep
     
 
-> Not: 'cd' komutu 'change directory' yani 'dizin değiştir' anlamındadır. Powershell ile Linux veya Mac OS X'teki gibi pwd komutunu kullanabilirsiniz.
+> Note: 'cd' stands for 'change directory'. With PowerShell you can use pwd just like on Linux or Mac OS X.
 
 <!--endsec-->
 
@@ -171,7 +171,7 @@ Yani içeride ne var? Bilmek harika olurdu. Haydi bakalım:
     ...
     
 
-> Not: Ayrıca powershell kullanırken Linux ve Mac OS X'teki gibi 'ls' komutunu kullanabilirsiniz. <!--endsec-->
+> Note: In PowerShell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
 
 * * *
 
