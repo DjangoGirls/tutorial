@@ -7,7 +7,7 @@ data-collapse=true ces-->
 
 Putem descărca Git aici [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for two: in the step where it asks to choose your editor, you should pick Nano, and in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). În afară de aceasta, valorile implicite sunt ok. Verificarea în stil Windows și sfârşiturile de linie de cod pentru commit-uri în stil Unix sunt ok.
 
-Să nu uităm să restartăm linia de comandă sau powershell-ul după ce instalația se termină. <!--endsec-->
+Do not forget to restart the command prompt or PowerShell after the installation finished successfully. <!--endsec-->
 
 <!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->
