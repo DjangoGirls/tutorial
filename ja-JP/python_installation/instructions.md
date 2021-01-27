@@ -91,7 +91,7 @@ Fedora バージョンが古い場合は、`dnf`が見つかりませんとい�
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Use this command in your console:
+以下のコマンドをコンソールで使用してください。
 
 {% filename %}command-line{% endfilename %}
 
@@ -100,7 +100,7 @@ Use this command in your console:
 
 <!--endsec-->
 
-Verify the installation was successful by opening a command prompt and running the `python3` command:
+インストールが成功しているか確認するために、コマンドプロンプトを開いて`Python3`コマンドを使用します。
 
 {% filename %}command-line{% endfilename %}
 
@@ -108,9 +108,9 @@ Verify the installation was successful by opening a command prompt and running t
     Python {{ book.py_release }}
     
 
-The version shown may be different from {{ book.py_release }} -- it should match the version you installed.
+表示されているバージョンは{{ book.py_release }} と異なるかもしれません。あなたがインストールしたバージョンが表示されています。
 
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is {{ book.py_min_version }} or higher. If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
+**注意:**Windowsでpython3は見つかりませんというエラーが出たときは、python（`3抜きで`）実行してみてください。そして、{{ book.py_min_version }} 以降のバージョンが表示されているか確認してください。 If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
 
 * * *
 
