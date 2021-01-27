@@ -59,7 +59,7 @@ data-collapse=true ces-->
     $ grep '^NAME=' /etc/os-release
     
 
-Afterwards, depending on the result, follow one of the following installation guides below this section.
+その後、結果によって、以下のセクションのいづれかのインストール手順に従います。
 
 <!--endsec-->
 
