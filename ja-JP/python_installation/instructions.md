@@ -44,7 +44,7 @@ You need to go to the website https://www.python.org/downloads/mac-osx/ and down
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
+おそらく殆どの場合は、すでに Python をインストールしていると思います。Python をインストールしているか確認するために（またどのばーじょんかかを）、コンソールを開いて以下のコマンドをうってください。
 
 {% filename %}command-line{% endfilename %}
 
@@ -52,7 +52,7 @@ It is very likely that you already have Python installed out of the box. To chec
     Python {{ book.py_release }}
     
 
-If you have a different version of Python installed, at least {{ book.py_min_version }} (e.g. {{ book.py_min_release }}), then you don't have to upgrade. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
+異なるバージョンの Python をインストールしている場合、少なくとも{{ book.py_min_version }} （例: {{ book.py_min_release }}）、アップグレードの必要はありません。 Pythonがインストールされていなかったり、異なるバージョンをインストールしたい場合は、はじめに下記のコマンドでどの Linux ディストリビューションを使っているか確認してください。
 
 {% filename %}command-line{% endfilename %}
 
