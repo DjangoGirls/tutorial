@@ -2,7 +2,7 @@
 > 
 > このセクションはGeek Girls Carrots (https://github.com/ggcarrots/django-carrots) のチュートリアルをベースに作成しました。
 
-DjangoはPythonで書かれています。 Djangoを使うにはPythonが必要です。 では、インストールするところから始めましょう！ 最新のPython３をインストールしてください。それ以前のPythonがインストールされていたら、アップグレードする必要があります。 If you already have version {{ book.py_min_version }} or higher you should be fine.
+DjangoはPythonで書かれています。 Djangoを使うにはPythonが必要です。 では、インストールするところから始めましょう！ 最新のPython３をインストールしてください。それ以前のPythonがインストールされていたら、アップグレードする必要があります。 もしあなたが{{ book.py_min_version }}かそれ以上のバージョンを持っているのなら大丈夫です。
 
 下に書いたとおりのやり方で、Pythonをインストールしてください。すでにAnacondaが入っていても以下のとおりにインストールしてください。
 
@@ -13,7 +13,7 @@ DjangoはPythonで書かれています。 Djangoを使うにはPythonが必要�
 * WindowsキーとPause/Breakキーを同時に押します。
 * Windowsのスタートからコントロールパネルを開き、”システムとセキュリティ”、”システム”と順にクリックします。
 * Windowsロゴをクリック、設定 > システム > バージョン情報 とクリックしていきましょう。
-* Search the Windows Start menu for "System Information". To do that, click the Start button or press the Windows key, then begin to type `System Information`. It will start making suggestions as soon as you type. You can select the entry once it shows up.
+* Windowsのスタートメニューから「システムの詳細設定」を検索します。 これを行うためには、スタートのボタンをクリックするかWindowsキーを押して、`システムの詳細設定`を入力し始めます。 入力するとすぐに候補を提案します。 You can select the entry once it shows up.
 
 https://www.python.org/downloads/windows/ からWindows版のPythonをダウンロードできます。 "Latest Python 3 Release - Python x.x.x" というリンクをクリックします。 あなたのWindowsが**64-bit版**なら、**Windows x86-64 executable installer**をダウンロードしてください。 そうでなければ**Windows x86 executable installer**をダウンロードしてください。 インストーラーがダウンロードできたら、ダブルクリックして実行し、指示に従ってください。
 
