@@ -34,7 +34,7 @@ data-collapse=true ces-->
 
 > **注意** OS X にPython をインストールする前に、Mac の設定がApp Store以外からのパッケージのインストールを許可しているか確認してください。 Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
 
-You need to go to the website https://www.python.org/downloads/mac-osx/ and download the latest Python installer:
+https://www.python.org/downloads/mac-osx/ のウェブサイトから最新のPython のインストーラーをダウンロードします。
 
 * *Mac OS X 64-bit/32-bit installer* というファイルをダウンロードします。 
 * Double click *python-{{ book.py_release }}-macosx10.9.pkg* to run the installer.
@@ -65,7 +65,7 @@ data-collapse=true ces-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-Type this command into your console:
+次のコマンドをコンソールに打ち込みます。
 
 {% filename %}command-line{% endfilename %}
 
@@ -77,14 +77,14 @@ Type this command into your console:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Use this command in your console:
+次のコマンドをコンソールで使用します。
 
 {% filename %}command-line{% endfilename %}
 
     $ sudo dnf install python3
     
 
-If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use `yum` instead.
+Fedora バージョンが古い場合は、`dnf`が見つかりませんというエラーが起きるかもしれません。その場合は、`yum` を変わりに使用してください。
 
 <!--endsec-->
 
