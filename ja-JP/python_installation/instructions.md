@@ -17,7 +17,7 @@ DjangoはPythonで書かれています。 Djangoを使うにはPythonが必要�
 
 https://www.python.org/downloads/windows/ からWindows版のPythonをダウンロードできます。 "Latest Python 3 Release - Python x.x.x" というリンクをクリックします。 あなたのWindowsが**64-bit版**なら、**Windows x86-64 executable installer**をダウンロードしてください。 そうでなければ**Windows x86 executable installer**をダウンロードしてください。 インストーラーがダウンロードできたら、ダブルクリックして実行し、指示に従ってください。
 
-インストールの途中で、「Setup」というタイトルのウィンドウがでてきたら注意してください。 Make sure you tick the "Add Python {{ book.py_version }} to PATH" or 'Add Python to your environment variables" checkbox and click on "Install Now", as shown here (it may look a bit different if you are installing a different version):
+インストールの途中で、「Setup」というタイトルのウィンドウがでてきたら注意してください。 以下に書かれてあるように（インストールしているバージョンが違った場合は表示されている内容が少し異なるかもしれません）、"Python {{ book.py_version }} to PATH" か "Add Python to your environment variables" のチェックボックスをチェックし、"Install Now"をクリックします。
 
 ![Pythonのパスを通すのを忘れないようにしてください。](../python_installation/images/python-installation-options.png)
 
