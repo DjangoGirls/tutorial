@@ -23,16 +23,16 @@ https://www.python.org/downloads/windows/ からWindows版のPythonをダウン�
 
 インストールが終わったら、ダイアログボックスが出てきます。ボックス内のリンクを開くと、Pythonやインストールしたバージョンを説明したページに行けます。 ダイアログは閉じてしまいましょう。Pythonの使い方はこのチュートリアルでたっぷり勉強します！
 
-Note: If you are using an older version of Windows (7, Vista, or any older version) and the Python {{ book.py_version }} installer fails with an error, then install all Windows Updates and try to install Python again. If you still have the error, try installing Python version {{ book.py_min_release }} from [Python.org](https://www.python.org/downloads/windows/).
+注意: もしあなたが古いバージョンのWindows(7, Vistaなど)使用している場合、Python {{ book.py_version }} インストーラーはエラーを起こし失敗します。Windowsアップデートをインストールし再度Pythonをインストールしてください。 もしもエラーが起こり続けているのなら、Python バージョン {{ book.py_min_release }} を[Python.org](https://www.python.org/downloads/windows/)からダウンロードしてみてください。
 
-> Django {{ book.django_version }} needs Python {{ book.py_min_version }} or greater, which does not support Windows XP or earlier versions.
+> Django {{ book.django_version }} はWindows XP以前のバージョンがサポートしていない Python {{ book.py_min_version }} 以上のバージョンを必要とします。
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
+> **注意** OS X にPython をインストールする前に、Mac の設定がApp Store以外からのパッケージのインストールを許可しているか確認してください。 Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
 
 You need to go to the website https://www.python.org/downloads/mac-osx/ and download the latest Python installer:
 
