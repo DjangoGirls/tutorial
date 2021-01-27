@@ -110,8 +110,8 @@ data-collapse=true ces-->
 
 表示されているバージョンは{{ book.py_release }} と異なるかもしれません。あなたがインストールしたバージョンが表示されています。
 
-**注意:**Windowsでpython3は見つかりませんというエラーが出たときは、python（`3抜きで`）実行してみてください。そして、{{ book.py_min_version }} 以降のバージョンが表示されているか確認してください。 If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
+**注意:**Windowsでpython3は見つかりませんというエラーが出たときは、python（`3抜きで`）実行してみてください。そして、{{ book.py_min_version }} 以降のバージョンが表示されているか確認してください。 どちらもうまく行かない場合は、新しくコマンドプロンプトを開いて再び試してみてください。Pythonのインストール前にコマンドプロントを開き続けていると、これが起こります。
 
 * * *
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
+なにか疑問や上手く行かないことがある時、また次に何をすればいいかわからに時は、コーチに質問しましょう。 時々上手く行かないときもあります。そんなときは、経験豊富な人に聞くのが良いです。
