@@ -134,7 +134,7 @@ Bolo by fajn vedieť, kde sa nachádzame, však? Zistime to. Napíš tento prík
     C:\Users\olasitarska
 
 
-> Poznámka: 'cd' znamená 'change directory', teda zmena priečinku. V powershell môžeš použiť pwd tak ako na Linuxe alebo Mac OS X.
+> Poznámka: 'cd' znamená 'change directory', teda zmena priečinku. V PowerShell môžeš použiť pwd tak ako na Linuxe alebo Mac OS X.
 
 <!--endsec-->
 

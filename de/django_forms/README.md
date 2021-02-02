@@ -280,7 +280,7 @@ Django kümmert sich darum sicherzustellen, dass alle Felder in unserem Formular
 
 ## Formular bearbeiten
 
-Jetzt wissen wir, wie ein neues Formular hinzugefügt wird. Aber was ist, wenn wir ein bereits bestehendes bearbeiten wollen? Das funktioniert so ähnlich wie das, was wir gerade getan haben. Lass uns schnell ein paar wichtige Dinge kreieren. (Falls du etwas nicht verstehst, solltest du deinen Coach fragen oder in den vorherigen Kapiteln nachschlagen, da wir all die Schritte bereits behandelt haben.)
+Jetzt wissen wir, wie ein neuer Blogpost hinzugefügt wird. Aber was ist, wenn wir einen bereits bestehenden bearbeiten wollen? Das funktioniert so ähnlich wie das, was wir gerade getan haben. Lass uns schnell ein paar wichtige Dinge kreieren. (Falls du etwas nicht verstehst, solltest du deinen Coach fragen oder in den vorherigen Kapiteln nachschlagen, da wir all die Schritte bereits behandelt haben.)
 
 Öffne `blog/templates/blog/post_detail.html` im Code-Editor und füge folgende Zeile hinzu:
 

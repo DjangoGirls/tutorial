@@ -12,7 +12,7 @@
 > 번역 업데이트 및 번역자
 >
 > - 1차 : 2015. 10. 1.
-    [이수진](https://github.com/sujinleeme), 함기훈, [Jay Park](http://jinto.pe.kr/), 조혜선, [정광윤](https://twitter.com/initialkommit), 임정훈, 문지영, 김휘경, 송석리, 여형석, 심혜민
+    [이수진](https://github.com/sujinleeme), 함기훈, [박제권](http://jinto.pe.kr/), 조혜선, [정광윤](https://twitter.com/initialkommit), 임정훈, 문지영, 김휘경, 송석리, 여형석, 심혜민
 
 > - 2차 : 2016. 6. 3.
     [이수진](https://github.com/sujinleeme)

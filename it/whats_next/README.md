@@ -1,39 +1,42 @@
 # Quali sono le prospettive?
 
-Complimenti! **Sei veramente incredibile**. Siamo orgogliosi! < 3
+Complimenti! **Sei veramente incredibile**. Siamo orgogliosi! <3
 
-### Cosa si fa ora?
+### E ora cosa si fa?
 
-Prenditi una pausa e rilassati. Hai veramente fatto un passo da gigante.
+Per prima cosa: Pausa, Relax! Hai veramente appena fatto passi da gigante.
 
-Dopo di che, assicurati di:
-
-*   Seguire Django Girls su [Facebook][1] o [Twitter][2] per rimanere aggiornata
-
- [1]: http://facebook.com/djangogirls
- [2]: https://twitter.com/djangogirls
+Dopodichè, assicurati di seguire Django Girls in [ Facebook ](http://facebook.com/djangogirls) o [ Twitter](https://twitter.com/djangogirls) per restare aggiornata.
 
 ### Mi puoi consigliare ulteriori risorse?
 
-Si! Vai avanti e prova il nostro libro dal titolo [Django Girls Tutorial: estensioni][3].
+Ma certo che sì! C'è una quantità *enorme* a dir poco, di risorse online per imparare i vari aspetti della programmazione — da farti perdere l'orientamento, tanto da impedirti di decidere in che direzione andare. Le Django Girls ti hanno preparato una selezione. Qualunque fosse il tuo interesse prima di iniziare questo tutorial, e qualunque sia l'interesse che questo tutorial ha maggiormente stimolato in te, qui ci sono un paio di risorse libere (o risorse con buona parte libera) per tornare ad orientarti, ed andare nella direzione che t'interessa.
 
- [3]: https://tutorial-extensions.djangogirls.org
+#### Django
 
-Più avanti potrai provare le risorse elencate qui sotto. Sono tutte molto consigliate!
-- [Django - tutorial ufficiale][4]
-- [Tutorial per i nuovi Coder][5]
-- [Corso Code Academy Python][6]
-- [Corso Code Academy HTML & CSS][7]
-- [Tutorial Django Carrots][8]
-- [Il libro "Learn Python The Hard Way"][9]
-- [Lezioni video "Inizia con Django"][10]
-- [Il libro "Two Scoops of Django: Best Practices for Django 1.8 book"][11]
+- Il nostro altro libro, [Django Girls Tutorial: Estensioni](https://tutorial-extensions.djangogirls.org/)
+- [Il tutorial ufficiale di Django's](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
+- [Le lezioni video su come incominciare con Django](http://www.gettingstartedwithdjango.com/)
 
- [4]: https://docs.djangoproject.com/en/1.8/intro/tutorial01/
- [5]: http://newcoder.io/tutorials/
- [6]: https://www.codecademy.com/en/tracks/python
- [7]: https://www.codecademy.com/tracks/web
- [8]: https://github.com/ggcarrots/django-carrots
- [9]: http://learnpythonthehardway.org/book/
- [10]: http://www.gettingstartedwithdjango.com/
- [11]: https://twoscoopspress.com/products/two-scoops-of-django-1-8
+#### HTML, CSS e JavaScript
+
+- [Corso di sviluppo web di Codecademy](https://www.codecademy.com/learn/paths/web-development)
+- [freeCodeCamp](https://www.freecodecamp.org/)
+
+#### Python
+
+- [Corso Python di Codecademy](https://www.codecademy.com/learn/learn-python)
+- [Corso Python di Google](https://developers.google.com/edu/python/)
+- [Libro: Impara Python The Hard Way](http://learnpythonthehardway.org/book/) – gli esercizi iniziali sono gratuiti
+- [Nuovi tutorial di Coder](http://newcoder.io/tutorials/) – Questo è una serie di esempi pratici di come utilizzare Python
+- [edX](https://www.edx.org/course?search_query=python) – puoi controllare la maggior parte dei corsi gratuiti, ma se si desidera un certificato o crediti verso una qualifica di istruzione superiore, allora questo costerà denaro
+- [specializzazione Python di questa persona](https://www.coursera.org/specializations/python) – alcune lezioni video possono essere revisionate gratuitamente e puoi ottenere un certificato di Coursera seguendo questi corsi
+- [Python per tutti](https://www.py4e.com/) - una versione libera e aperta del Coursera Python per la specializzazione di tutti i corpi
+
+#### Lavorare con i dati
+
+- [Corso di informatica di Codecademy](https://www.codecademy.com/learn/paths/data-science)
+- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – puoi controllare la maggior parte dei corsi gratuiti, ma se si desidera un certificato o crediti verso una qualifica di istruzione superiore, allora questo costerà denaro
+- [Dataquest](https://www.dataquest.io/) – le prime 30 "missioni" sono gratuite
+
+Non possiamo aspettare di vedere cosa costruirai in seguito!

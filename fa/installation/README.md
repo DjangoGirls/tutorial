@@ -18,8 +18,7 @@
 
 در این آموزش شما یک وبلاگ خواهید ساخت. برای انجام این کار، در خلال روند آموزش، به شما نحوه‌ی نصب نرم‌افزارهای مختلف روی کامپیوترتان و نحوه‌ی راه اندازی چند حساب اینترنتی گفته خواهد شد. این بخش شامل تمام مراحل نصب و دستورالعمل‌های ثبت نام است (که برای بعضی از کارگاه‌ها مفید است).
 
-<!--sec data-title="Chromebook setup (if you're using one)"
-data-id="chromebook_setup" data-collapse=true ces-->
+<!--sec data-title="Chromebook setup (if you're using one)" data-id="chromebook_setup" data-collapse=true ces-->
 {% include "/chromebook_setup/instructions.md" %}
 <!--endsec-->
 

@@ -1,49 +1,68 @@
-# Se stai facendo il tutorial a casa
+# Se stai seguendo il tutorial a casa
 
-Se stai facendo il tutorial a casa e non durante uno degli [eventi Django Girls ](https://djangogirls.org/events/), puoi saltare questo capitolo e andare direttamente a [Come funziona Internet](../how_the_internet_works/README.md).
+Se stai seguendo il tutorial a casa, e non durante uno degli [eventi Django Girls](https://djangogirls.org/events/), puoi saltare completamente questo capitolo e andare direttamente al capitolo [Come funziona Internet](../how_the_internet_works/README.md).
 
-Copriamo questi argomenti nel tutorial completo, e questa è una pagina aggiuntiva contenente tutte le istruzioni di installazione. L'evento Django Girls include una "serata dedicata all'installazione" in cui installiamo tutto, in modo da non preoccuparcene durante il workshop, quindi questo capitolo è utile per chi partecipa ad uno dei nostri workshop.
-
-Se lo trovi utile puoi seguire anche questo capitolo. Ma se vuoi iniziare a imparare prima di installare le cose sul tuo computer, salta questo capitolo. Ti spiegheremo l'installazione più avanti.
+Questo perché nel tutorial spieghiamo come installare i programmi passo passo -- questa è una pagina aggiuntiva che raccoglie tutte le istruzioni di installazione (e che può tornare utile in alcuni workshop). Se vuoi puoi decidere di installare subito il materiale che trovi in questa pagina. Ma se vuoi imparare alcune nozioni prima di installare queste cose sul tuo computer, salta questo capitolo e ti spiegheremo come fare le installazioni più tardi, quando sarà necessario.
 
 Buona fortuna!
 
+# Se stai partecipando a un workshop
+
+Se stai partecipando a uno degli [eventi Django Girls](https://djangogirls.org/events/):
+
+* Il tuo workshop potrebbe avere un "party di installazione" prima del workshop principale. Se sei in un party di installazione, questa pagina è per te! Segui le istruzioni qui per ottenere tutto quello che serve per il workshop installato, con l'aiuto degli autobus se necessario. Poi al workshop principale, sarai in grado di saltare le istruzioni di installazione che incontrerai nel tutorial principale quando li avrai ricevuti.
+* Gli organizzatori del tuo workshop potrebbero aver chiesto di provare a casa per installare tutto sul tuo computer prima dell'inizio del workshop. Se ti è stato chiesto di farlo, questa pagina è per te! Segui le istruzioni qui, il meglio possibile. Poi al workshop principale, quando si arriva a un passo di installazione nel tutorial principale, se non si è riusciti a installare quel pezzo, si può ottenere aiuto dal tuo coach.
+* Se il tuo workshop non ha un gruppo di installazione (o non hai potuto partecipare), e se gli organizzatori non ti hanno chiesto di provare a installare tutto prima di arrivare, salta questa pagina e vai direttamente al capitolo [Come funziona Internet](../how_the_internet_works/README.md) . Installerai tutto ciò di cui hai bisogno quando lavori il tutorial.
+
 # Installazione
 
-Nel workshop costruirai un blog, e ci sono alcuni task dedicati all'impostazione che sarebbe bello completare in anticipo, in modo che tu sia pronta a scrivere codice in giornata.
+In questo tutorial costruirai un blog. Per farlo, mentre vai nel tutorial, sarai informato su come installare vari software sul tuo computer e impostare alcuni account online come sono necessari. Questa pagina raccoglie tutte le istruzioni di installazione e iscrizione in un unico luogo (che è utile per alcuni formati di workshop).
 
-# Installare Python
+<!--sec data-title="Chromebook setup (if you're using one)"
+data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
+
+<!--endsec-->
+
+# Breve introduzione alla linea di comando {#command-line}
+
+Molti dei passaggi qui sotto fanno riferimento alla "console", "terminal", "finestra di comando", o "linea di comando" - tutto questo significa la stessa cosa: una finestra sul tuo computer dove puoi inserire comandi. Quando arriverai al tutorial principale, imparerai di più sulla linea di comando. Per ora, la cosa principale che devi sapere è come aprire una finestra di comando e come sembra: {% include "/intro_to_command_line/open_instructions.md" %}
+
+# Installa Python {#python}
 
 {% include "/python_installation/instructions.md" %}
 
-# Preparare virtualenv e installare Django
-
-{% include "/django_installation/instructions.md" %}
-
-# Installare un editor di codice
+# Installa un editor del codice {#code-editor}
 
 {% include "/code_editor/instructions.md" %}
 
-# Installare Git
+# Imposta virtualenv e installa Django {#virtualenv}
+
+{% include "/django_installation/instructions.md" %}
+
+# Installa Git {#git}
 
 {% include "/deploy/install_git.md" %}
 
-# Creare un account GitHub
+# Crea un profilo di GitHub {#github}
 
-Vai su [GitHub.com](https://www.github.com) e iscriviti per un nuovo account gratuito.
+Vai su [GitHub.com](https://www.github.com) e crea un nuovo account gratuito. Assicurati di ricordare la tua password (aggiungila al tuo password manager, se ne usi uno).
 
-# Creare un account PythonAnywhere
+# Crea un profilo di PythonAnywhere {#pythonanywhere}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
 # Inizia la lettura
 
-Complimenti, ora sei pronta! Se hai un po' di tempo prima del workshop, potrebbe essere utile cominciare a leggere i capitoli iniziali:
+Congratulazioni, sei pronta a partire! Se hai del tempo prima del workshop sarebbe magnifico se leggessi qualche capitolo iniziale:
 
-  * [Come funziona Internet](../how_the_internet_works/README.md)
+* [Come funziona Internet](../how_the_internet_works/README.md)
 
-  * [Introduzione alla riga di comando](../intro_to_command_line/README.md)
+* [Introduzione alla riga di comando](../intro_to_command_line/README.md)
 
-  * [Introduzione a Python](../python_introduction/README.md)
+* [Introduzione a Python](../python_introduction/README.md)
 
-  * [Che cos'è Django?](../django/README.md)
+* [Che cos'è Django?](../django/README.md)
+
+# Divertiti al workshop!
+
+Quando inizierà il workshop, potrai andare direttamente a [il tuo primo progetto Django!](../django_start_project/README.md) dato che hai già coperto il materiale dei capitoli precedenti.

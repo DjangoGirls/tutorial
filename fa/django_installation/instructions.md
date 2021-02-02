@@ -123,7 +123,7 @@ data-collapse=true ces-->
 
 <!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
 
-> **نکته:** برای کاربران ویرایشگر VS Code که همراه خود یک ترمینال مبتنی بر powershell ویندوز دارد، اگر می‌خواهید از این ترمینال استفاده کنید، باید دستور زیر را برای فعال کردن ترمینال اجرا کنید:
+> **نکته:** برای کاربران ویرایشگر VS Code که همراه خود یک ترمینال مبتنی بر PowerShell ویندوز دارد، اگر می‌خواهید از این ترمینال استفاده کنید، باید دستور زیر را برای فعال کردن ترمینال اجرا کنید:
 > 
 >     $ . myvenv\Scripts\activate.ps1
 >     
