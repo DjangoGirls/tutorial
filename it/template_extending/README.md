@@ -2,11 +2,11 @@
 
 Un'altra cosa bella di Django è l'**estensione del template**. Cosa significa? Significa che puoi usare le stesse parti del tuo HTML per pagine diverse del tuo sito.
 
-Così non hai bisogno di ripetere le stesse informazioni/layout in ogni file. E se vuoi cambiare qualcosa, non devi cambiarlo in ogni templates, ma soltanto una volta!
+I template ti aiutano quando vuoi usare le stesse informazioni o gli stessi layout in pagine diverse. Non devi ripetere lo stesso codice in ogni file. E se vuoi cambiare qualcosa, non lo devi fare in ogni template, ma solo in uno!
 
-## Crea un template di base
+## Creare un template di base
 
-Un template base è il template più semplice. Lo puoi estendere su ogni pagina del tuo sito.
+Un template di base è il template più semplice. Lo puoi estendere ad ogni pagina del tuo sito.
 
 Creiamo un file `base.html` in `blog/templates/blog/`:
 
@@ -17,10 +17,12 @@ Creiamo un file `base.html` in `blog/templates/blog/`:
                 post_list.html
     
 
-Poi aprilo e copia tutto da `post_list.html` e incollalo sul file `base.html`, così:
+Poi aprilo nell'editor di codice e copia tutto da `post_list.html` al file `base.html`, in questo modo:
+
+{% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
+{% load static %}
 <html>
     <head>
         <title>Django Girls blog</title>
@@ -42,7 +44,7 @@ Poi aprilo e copia tutto da `post_list.html` e incollalo sul file `base.html`, c
                         <div class="date">
                             {{ post.published_date }}
                         </div>
-                        <h1><a href="">{{ post.title }}</a></h1>
+                        <h2><a href="">{{ post.title }}</a></h2>
                         <p>{{ post.text|linebreaksbr }}</p>
                     </div>
                 {% endfor %}
@@ -54,6 +56,8 @@ Poi aprilo e copia tutto da `post_list.html` e incollalo sul file `base.html`, c
 ```
 
 Poi nel `base.html`, rimpiazza tutto il tuo `<body>` (tutto quello che si trova tra `<body>` e `</body>`) con questo:
+
+{% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
 <body>
@@ -71,16 +75,20 @@ Poi nel `base.html`, rimpiazza tutto il tuo `<body>` (tutto quello che si trova 
 </body>
 ```
 
-Abbiamo praticamente rimpiazzato tutto quello tra `{% for post in posts %}{% endfor %}` con:
+{% raw %}Potresti aver notato che questo sostituisce tutto da `{% for post in posts %}` a `{% endfor %}` con: {% endraw %}
+
+{% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
 {% block content %}
 {% endblock %}
 ```
 
-Che cosa significa? Che hai appena creato un `blocco`, ovvero un tag di template che ti permette di inserire l'HTML presente in questo blocco all'interno di altri template che estendono `base.html`. Ti mostreremo come farlo tra un attimo.
+Perchè? Hai appena creato un blocco! Hai appena usato un template tag `{% block %}` per creare un area che che avrà dell'HTML all'interno. Questo codice HTML verrà da altri template che estenderanno questo (`base.html`). Ti mostreremo come farlo tra un attimo.
 
-Ora salvalo, e apri il tuo `blog/templates/blog/post_list.html` di nuovo. Cancella tutto quello che non è all'interno del body e poi cancella anche `<div class="page-header"></div>`, in modo che il file appaia così:
+Ora salva `base.html` e apri di nuovo il tuo `blog/templates/blog/post_list.html` nell'editor di codice. {% raw %}Rimuovi tutto quello che c'è prima di `{% for post in posts %}` e dopo `{% endfor %}`. Quando hai finito, il file apparirà così:{% endraw %}
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% for post in posts %}
@@ -88,36 +96,52 @@ Ora salvalo, e apri il tuo `blog/templates/blog/post_list.html` di nuovo. Cancel
         <div class="date">
             {{ post.published_date }}
         </div>
-        <h1><a href="">{{ post.title }}</a></h1>
+        <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
 ```
 
-Ed ora aggiungi questa riga all'inizio del file:
+Vogliamo usare questa parte del nostro template per ogni blocco per i contenuti. Aggiungiamo un tag block in questo file!
 
-```python
-{% extends 'blog/base.html' %}
-```
+{% raw %}Dobbiamo fare in modo che il tuo tag block combaci con quello nel tuo file`base.html`. Dobbiamo anche includere tutto il codice del blocco dei contenuti. Per farlo, metti tutto tra `{% block content %}` e `{% endblock %}`. Come questo:{% endraw %}
 
-{% raw %}Significa che stiamo estendendo il template `base.html` in `post_list.html`. Rimane solo una cosa da fare: metti tutto (tranne la riga che abbiamo appena aggiunto) tra `{% block content %}` e `{% endblock %}`. Come questo:{% endraw %}
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% extends 'blog/base.html' %}
-
 {% block content %}
     {% for post in posts %}
         <div class="post">
             <div class="date">
                 {{ post.published_date }}
             </div>
-            <h1><a href="">{{ post.title }}</a></h1>
+            <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
 {% endblock %}
 ```
 
-È tutto! Controlla se il tuo sito sta ancora funzionando correttamente :)
+Un'ultima cosa. Dobbiamo collegare questi due template. È questo che vuol dire estendere i template! Lo faremo aggiungendo un tag extends all'inizio del file. Così:
 
-> Se hai un errore `TemplateDoesNotExists` che dice che non c'è un file `blog/base.html` e hai `runserver` in esecuzione nella console, prova a fermarlo (premendo Ctrl+C - I tasti Control e C insieme) e riavvialo mettendo in esecuzione il comando `python manage.py runserver`.
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
+```html
+{% extends 'blog/base.html' %}
+
+{% block content %}
+     {% for post in posts %}
+         <div class="post">
+             <div class="date">
+                 {{ post.published_date }}
+             </div>
+             <h2><a href="">{{ post.title }}</a></h2>
+             <p>{{ post.text|linebreaksbr }}</p>
+         </div>
+     {% endfor %}
+ {% endblock %}
+```
+
+Ecco fatto! Salva il file e controlla se il tuo sito web funziona ancora correttamente. :)
+
+> Se ottieni l'errore `TemplateDoesNotExist`, significa che non c'è nessun file `blog/base.html` e `runserver` è in esecuzione nella console. Prova ad arrestarlo (premendo Ctrl+C, i tasti Control e C insieme) e riavvialo utilizzando il comando `python manage.py runserver`.

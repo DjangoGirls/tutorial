@@ -85,7 +85,7 @@ $ python3 -m venv myvenv
 >{% filename %}command-line{% endfilename %}
 >```
 >$ sudo apt install python-virtualenv
->$ virtualenv --python=python3.6 myvenv
+>$ virtualenv --python=python{{ book.py_version }} myvenv
 >```
 
 > __NOTE:__ If you get an error like
@@ -99,7 +99,7 @@ $ python3 -m venv myvenv
 >
 >{% filename %}command-line{% endfilename %}
 >```
->sudo apt install python3.6-venv
+>sudo apt install python{{ book.py_version }}-venv
 >```
 
 <!--endsec-->
@@ -129,7 +129,7 @@ C:\Users\Name\djangogirls> myvenv\Scripts\activate
 
 <!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
 
-> __NOTE:__ For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
+> __NOTE:__ For users of the popular editor VS Code, which come with an integrated terminal based off windows PowerShell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
 >
 >```
 >$ . myvenv\Scripts\activate.ps1

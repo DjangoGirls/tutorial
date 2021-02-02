@@ -269,7 +269,7 @@ Django is taking care to validate that all the fields in our form are correct. I
 
 ## Edit form
 
-Now we know how to add a new form. But what if we want to edit an existing one? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
+Now we know how to add a new post. But what if we want to edit an existing one? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
 
 Open `blog/templates/blog/post_detail.html` in the code editor and add the line
 
@@ -405,7 +405,7 @@ Let's see if all this works on PythonAnywhere. Time for another deploy!
 {% filename %}command-line{% endfilename %}
 ```
 $ git status
-$ git add --all .
+$ git add .
 $ git status
 $ git commit -m "Added views to create/edit blog post inside the site."
 $ git push
@@ -426,4 +426,4 @@ $ git pull
 * Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (use the menu button in the upper right of the console) and hit **Reload**. Refresh your https://subdomain.pythonanywhere.com blog to see the changes.
 
 
-And that should be it! Congrats :)
+And that should be it. Congrats! :)

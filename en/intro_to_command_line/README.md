@@ -121,7 +121,7 @@ $ pwd
 > cd
 C:\Users\olasitarska
 ```
-> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
+> Note: 'cd' stands for 'change directory'. With PowerShell you can use pwd just like on Linux or Mac OS X.
 
 <!--endsec-->
 
@@ -177,7 +177,7 @@ Music
 05/08/2014 07:28 PM <DIR>      Music
 ...
 ```
-> Note: In powershell you can also use 'ls' like on Linux and Mac OS X.
+> Note: In PowerShell you can also use 'ls' like on Linux and Mac OS X.
 <!--endsec-->
 
 ---

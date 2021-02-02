@@ -173,7 +173,7 @@ Du coup, que pouvons-nous trouver dans ce dossier personnel ? Voyons voir :
     ...
     
 
-> Remarque : dans powershell vous pouvez aussi utiliser "ls" comme sur Linux et macOS. <!--endsec-->
+> Remarque : dans PowerShell vous pouvez aussi utiliser "ls" comme sur Linux et macOS. <!--endsec-->
 
 * * *
 

@@ -1,0 +1,64 @@
+
+/* add text to top menu items */
+
+.book-header .fa::after {
+    text-transform: none;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.book-header .fa-align-justify::after {
+    content: ' Show Outline';
+    text-transform: none;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.book.with-summary .book-header .fa-align-justify::after {
+    content: ' Hide Outline';
+}
+.book-header .fa-globe::after {
+    content: ' Language';
+}
+.book-header .fa-font::after {
+    content: ' Font Settings';
+}
+@media (max-width:600px) {
+    .book-header .fa-font::after {
+        content: ' Font';
+    }
+    .book-header .js-toolbar-action.pull-right {  /* social sharing links */
+        display: none;
+    }
+}
+
+/* add text to the Next & Prev arrows */
+
+.navigation-prev::after {
+    content: 'Previous';
+    font-size: 20pt;
+    vertical-align: text-bottom;
+    line-height: 44px;
+}
+.navigation-next::after {
+    content: 'Next';
+    font-size: 20pt;
+    vertical-align: text-bottom;
+    line-height: 44px;
+}
+
+@media (max-width:1240px) {
+    /* on small viewports, the arrows are shown on the side, so move text around to look better */
+    .navigation-next::after {
+        content: none;
+    }
+    .navigation-next::before {
+        content: 'Next';
+        font-size: 20pt;
+        vertical-align: text-bottom;
+        line-height: 44px;
+    }
+}
+
+/* fine tune text size to not overlap main body text on very specific viewport sizes */
+@media (min-width:1241px) and (max-width:1274px) {
+    .navigation-prev::after {
+        font-size: 16pt;
+    }
+}

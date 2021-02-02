@@ -78,7 +78,7 @@ In your `blog/static/css/blog.css` file you should add the following code:
 {% filename %}blog/static/css/blog.css{% endfilename %}
 ```css
 h1 a, h2 a {
-    color: #C25100;
+    color: #FF8833;
 }
 
 ```

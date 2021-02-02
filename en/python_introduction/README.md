@@ -19,7 +19,7 @@ We want to open up a Python console, so type in `python` on Windows or `python3`
 {% filename %}command-line{% endfilename %}
 ```
 $ python3
-Python 3.6.1 (...)
+Python {{ book.py_release }} (...)
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
@@ -398,7 +398,7 @@ Dictionaries, like lists, are *mutable*, meaning that they can be changed after 
 >>> participant['favorite_language'] = 'Python'
 ```
 
-Like lists, using the `len()` method on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
+Like lists, using the `len()` function on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
 
 {% filename %}command-line{% endfilename %}
 ```python
@@ -460,9 +460,11 @@ True
 True
 >>> 5 != 2
 True
+>>> len([1, 2, 3]) > len([4, 5])
+True
 ```
 
-We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare method results. Nice, huh?
+We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare values of mathematical expressions like `2 * 2` and function results like the `2` returned by `len([4, 5])`. Nice, huh?
 
 Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, __always__ need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
 
@@ -1008,7 +1010,7 @@ Note that the second of these two numbers is not included in the list that is ou
 
 That's it. __You totally rock!__ This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
 
-For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
+For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers! :)
 
 You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
 

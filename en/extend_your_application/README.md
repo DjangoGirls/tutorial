@@ -41,7 +41,7 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
 
 The `post_detail` part means that Django will be expecting a URL in `blog/urls.py` with name=post_detail
 
-And how about `pk=post.pk`? `pk` is short for primary key, which is a unique name for each record in a database. Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a number that increases by one for each record, i.e. 1, 2, 3) and adds it as a field named `pk` to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields  (`title`, `author`, etc.) in our `Post` object!
+And how about `pk=post.pk`? `pk` is short for primary key, which is a unique identifier for each record in a database. Every Django model has a field which serves as its primary key, and whatever other name it has, it can also be referred to as "pk". Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a field named "id" holding a number that increases for each record, i.e. 1, 2, 3) and adds it as a field to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields  (`title`, `author`, etc.) in our `Post` object!
 
 Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
 
@@ -81,7 +81,8 @@ Do you remember what the next step is? It's adding a view!
 
 ## Add a post's detail view
 
-This time our *view* is given an extra parameter, `pk`. Our *view* needs to catch it, right? So we will define our function as `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in `urls` (`pk`). Omitting this variable is incorrect and will result in an error!
+This time our *view* is given an extra parameter, `pk`. Our *view* needs to catch it, right? So we will define our function as `def post_detail(request, pk):`. Note that this parameter must have the exact same name as the one we specified in `urls` (`pk`). Also note that omitting this variable is incorrect and will result in an error!
+
 
 Now, we want to get one and only one blog post. To do this, we can use querysets, like this:
 
@@ -171,7 +172,7 @@ It'd be good to see if your website still works on PythonAnywhere, right? Let's 
 {% filename %}command-line{% endfilename %}
 ```
 $ git status
-$ git add --all .
+$ git add .
 $ git status
 $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
 $ git push
@@ -206,4 +207,4 @@ The `manage.py collectstatic` command is a bit like `manage.py migrate`.  We mak
 
 In any case, we're now ready to hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (from the menu button in the upper right of the console) and hit **Reload**, and then look at the https://subdomain.pythonanywhere.com page to see the result.
 
-And that should be it! Congrats :)
+And that should be it. Congrats! :)

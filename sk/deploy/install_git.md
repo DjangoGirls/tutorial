@@ -7,7 +7,7 @@ data-collapse=true ces-->
 
 Git si môžeš stiahnuť z [git-scm.com](https://git-scm.com/). Môžeš bez obáv klikať na "ďalej ďalej ďalej" pri všetkých krokoch okrem jedného. V kroku 5, označenom ako "Nastavenie prostredia PATH", zvoľ "Spustiť Git a príslušné Unixové nástroje z príkazového riadku systému Windows" (spodná možnosť). V ostatných prípadoch sú predvolené nastavenia v poriadku. Možnosť "Checkout Windows-style, commit Unix-style line endings" je OK.
 
-Nezabudni reštartovať príkazový riadok alebo powershell po úspešnom dokončení inštalácie. <!--endsec-->
+Nezabudni reštartovať príkazový riadok alebo PowerShell po úspešnom dokončení inštalácie. <!--endsec-->
 
 <!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->

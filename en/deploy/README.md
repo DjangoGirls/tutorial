@@ -12,7 +12,7 @@ These three places will be important to you.  Your local computer will be the pl
 
 # Git
 
-> **Note** If you already did the Installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
+> **Note** If you already did the [installation steps](../installation/README.md), there's no need to do this again – you can skip to the next section and start creating your Git repository.
 
 {% include "/deploy/install_git.md" %}
 
@@ -36,19 +36,46 @@ Git will track changes to all the files and folders in this directory, but there
 
 {% filename %}.gitignore{% endfilename %}
 ```
+# Python
 *.pyc
 *~
-/.vscode
 __pycache__
-myvenv
+
+# Env
+.env
+myvenv/
+venv/
+
+# Database
 db.sqlite3
-/static
+
+# Static folder at project root
+/static/
+
+# macOS
+._*
 .DS_Store
+.fseventsd
+.Spotlight-V100
+
+# Windows
+Thumbs.db*
+ehthumbs*.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Visual Studio
+.vscode/
+.history/
+*.code-workspace
 ```
 
 And save it as `.gitignore` in the "djangogirls" folder.
 
 > **Note** The dot at the beginning of the file name is important!  If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof. And be sure not to add `.txt`, `.py`, or any other extension to the file name -- it will only be recognized by Git if the name is just `.gitignore`.
+Linux and MacOS treat files with a name that starts with `.` (such as `.gitignore`) as hidden
+and the normal `ls` command won't show these files.
+Instead use `ls -a` to see the `.gitignore` file.
 
 > **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. That file is your local database, where all of your users and posts are stored. We'll follow standard web programming practice, meaning that we'll use separate databases for your local testing site and your live website on PythonAnywhere. The PythonAnywhere database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts and superuser you created so far are going to only be available locally, and you'll have to create new ones on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
 
@@ -77,7 +104,7 @@ And finally we save our changes. Go to your console and run these commands:
 
 {% filename %}command-line{% endfilename %}
 ```
-$ git add --all .
+$ git add .
 $ git commit -m "My Django Girls app, first commit"
  [...]
  13 files changed, 200 insertions(+)
@@ -149,7 +176,7 @@ Deploying a web app on PythonAnywhere involves pulling down your code from GitHu
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 ```
-$ pip3.6 install --user pythonanywhere
+$ pip3.8 install --user pythonanywhere
 ```
 
 That should print out some things like `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
@@ -158,7 +185,7 @@ Now we run the helper to automatically configure our app from GitHub. Type the f
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 ```
-$ pa_autoconfigure_django.py --python=3.6 https://github.com/<your-github-username>/my-first-blog.git
+$ pa_autoconfigure_django.py --python=3.8 https://github.com/<your-github-username>/my-first-blog.git
 ```
 
 As you watch that running, you'll be able to see what it's doing:
@@ -197,7 +224,7 @@ You can also go to the "Files" page and navigate around using PythonAnywhere's b
 
 ## You are now live!
 
-Your site should now be live on the public Internet!  Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want :)
+Your site should now be live on the public Internet!  Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want. :)
 
 
 > **Note** This is a beginners' tutorial, and in deploying this site we've taken a few shortcuts which aren't ideal from a security point of view.  If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) for some tips on securing your site.
@@ -229,4 +256,3 @@ Once you have a few posts created, you can go back to your local setup (not Pyth
 
 
 Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet!
-

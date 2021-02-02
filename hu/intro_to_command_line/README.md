@@ -127,7 +127,7 @@ $ pwd
 > cd
 C:\Users\olasitarska
 ```
-> Megjegyzés: a 'cd' jelentése: 'change directory' ('könyvtár váltása'). Ha powershell-t használsz, használhatod a pwd parancsot is, mint Linuxon vagy Mac OS X-en.
+> Megjegyzés: a 'cd' jelentése: 'change directory' ('könyvtár váltása'). Ha PowerShell-t használsz, használhatod a pwd parancsot is, mint Linuxon vagy Mac OS X-en.
 
 <!--endsec-->
 
