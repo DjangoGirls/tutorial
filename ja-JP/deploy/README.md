@@ -12,7 +12,7 @@
 
 # Git
 
-> **Note** If you already did the [installation steps](../installation/README.md), there's no need to do this again – you can skip to the next section and start creating your Git repository.
+> **注意** もしすでに[インストール手順](../installation/README.md)を行っていた場合は、このステップを再び行う必要はありません。次のステップにスキップして Git リポジトリを作り始めてください。
 
 {% include "/deploy/install_git.md" %}
 
@@ -72,7 +72,7 @@ Git はこのディレクトリ内のすべてのファイルとフォルダの�
 
 これを "djangogirls" フォルダ内に `.gitignore` という名前で保存します。
 
-> **備考：**ファイル名の先頭のドットは重要です! もしそのファイルを作るのが難しいなら、（Macをお使いの方はFinderからドット（ . ）で始まるファイルを作れません。）そういう時はエディタでSave Asから作成すれば問題ありません。 `.txt`や `.py`などの拡張子をファイル名に入れないように気をつけてください。 ファイル名が`.gitignore`でないとGitに認識されません。 LinuxとMacOSは、（`.gitignore` のように） `.<code>で始まる名前のファイルを隠しファイルとして扱います。通常の<code>ls`コマンドでは、これらのファイルは表示されません。 Instead use `ls -a` to see the `.gitignore` file.
+> **備考：**ファイル名の先頭のドットは重要です! もしそのファイルを作るのが難しいなら、（Macをお使いの方はFinderからドット（ . ）で始まるファイルを作れません。）そういう時はエディタでSave Asから作成すれば問題ありません。 `.txt`や `.py`などの拡張子をファイル名に入れないように気をつけてください。 ファイル名が`.gitignore`でないとGitに認識されません。 LinuxとMacOSは、（`.gitignore` のように） `.<code>で始まる名前のファイルを隠しファイルとして扱います。通常の<code>ls`コマンドでは、これらのファイルは表示されません。 `.gitignore`fileを見つけるために、代わりに`ls -a`を使います。
 > 
 > **備考：** `.gitignore`ファイルで指定したファイルの1つが`db.sqlite3`です。 そのファイルはローカルデータベースで、すべてのユーザーと投稿が保存されます。 私達は標準的なウェブプログラミングの慣習に従います。つまり、ローカルのテストサイトとPythonAnywhere上の本番のウェブサイトでデータベースを分けるということです。 PythonAnywhereのデータベースは開発用のマシンと同じようにSQLiteにすることができますが、通常はMySQLというSQLiteよりもたくさんのサイト訪問者に対処できるデータベースを使用します。 どちらの方法でも、GitHubのコードのコピーではSQLiteデータベースを無視することで、これまでに作成したすべての投稿と管理者はそのままローカルで利用できますが、本番環境（ブログを公開するPythonAnywhereのことです）ではそれらを再び作成する必要があります。 ローカルデータベースは本当のブログ投稿をブログから削除してしまうことを心配せずに、さまざまなことをテストできるよい遊び場として考えるといいでしょう。
 
@@ -218,7 +218,7 @@ PythonAnywhereのコードを`ls`を使って見てみることもできます�
 
 ## 動いています！
 
-Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want. :)
+あなたのサイトは今、インターネット上で動いているはずです。PythonAnywhereの Webページをクリックしてリンクを取得してください。あなたは誰とでもこのリンクを共有することができます。
 
 > **注** これは初心者向けのチュートリアルです。このサイトをデプロイする際にはセキュリティの観点からは理想的ではない、いくつかのショートカットをしました。 もしこのプロジェクトを利用すると決めたり、新しいプロジェクトを開始する場合は、あなたのサイトを安全にするいくつかのヒントについて、[Djangoデプロイチェックリスト](https://docs.djangoproject.com/ja/2.2/howto/deployment/checklist/)を注意深く読んでください。
 
