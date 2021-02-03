@@ -33,7 +33,7 @@ HTMLは、「HyperText Markup Language」の頭文字を取ったものです。
 
 ![図 11.1](images/step1.png)
 
-No error anymore! Congratulations! :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
+もうエラーはありません。おめでとうございます! :)　しかし、あなたのウェブサイトは空白ページ以外は何も表示しいません。テンプレートが空白だからです。これを直していく必要があります。
 
 この新しく作ったファイルをコードエディタで開いて、次の内容を書き加えます。
 
@@ -52,7 +52,7 @@ No error anymore! Congratulations! :) However, your website isn't actually publi
 
 ![図 11.2](images/step3.png)
 
-It worked. Nice work there! :)
+動いています。よくできました! :)
 
 * どんなウェブページでも、最も基本的なタグである`<html>`から始まり、そして常に、`</html>`で終わります。 みなさん見てとれるように、ウェブサイトの全てのコンテンツは、開始タグの`<html>`と閉じタグ`</html>`の間にあります。
 * `<p>`は、段落要素のためのタグです; `</p>` でそれぞれの段落を閉じます。
@@ -186,7 +186,7 @@ It worked. Nice work there! :)
     $ git commit -m "Changed the HTML for the site."
     
 
-> **Note** Make sure you use double quotes around the commit message.
+> **注意** コミットメッセージでダブルクォーテーションを使用していることを確認してください。
 
 ここまで終われば、GitHubに変更部分をアップロード(push) しましょう。
 
