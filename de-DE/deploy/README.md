@@ -46,10 +46,10 @@ Git wird die Änderungen an all den Dateien und Ordnern in diesem Verzeichnis au
     myvenv/
     venv/
     
-    # Database
+    # Datenbank
     db.sqlite3
     
-    # Static folder at project root
+    # Static Ordner im Projektverzeichnis
     /static/
     
     # macOS
