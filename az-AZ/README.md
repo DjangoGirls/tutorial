@@ -42,7 +42,7 @@ Artıq əhatə olunmuş hər fəsildə, doğru videoya işarə edən bir bağlan
 
 Bu dərs [DjangoGirls](https://djangogirls.org/) tərəfindən aparılır. Əgər səhv tapsanız və ya dərsliyi yeniləmək istəsəniz, zəhmət olmasa [töhfə təlimatlarını izləyin](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
-## Bu təlimi başqa dillərə tərcümə etmək üçün kömək etmək istərdinizmi?
+## Bu dərsliyi başqa dillərə tərcümə etməyimizə kömək etmək istərdinizmi?
 
 Hal-hazırda, tərcümələr crowdin.com platformasında saxlanılır:
 
