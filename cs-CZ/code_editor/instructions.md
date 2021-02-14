@@ -1,4 +1,4 @@
-Existuje mnoho různých editorů a z velké části se výběr scvrkává na osobní preference. Většina programátorům v Pythonu používá složité, ale mimořádně mocné IDE (integrovaná vývojová prostředí), například PyCharm. Pro začátečníka to může být pravděpodobně méně vhodné; naše doporučení jsou stejně mocná, ale mnohem jednodušší.
+Existuje mnoho různých editorů a z velké části se výběr scvrkává na osobní preference. Většina programátorů v Pythonu používá složité, ale mimořádně mocné IDE (integrovaná vývojová prostředí), například PyCharm. Pro začátečníka to může být pravděpodobně méně vhodné, naše doporučení jsou stejně mocná, ale mnohem jednodušší.
 
 Naše návrhy jsou napsané níže, ale neváhejte se zeptat svého kouče, jaké jsou jeho preference - poté bude i jednodušší získat od něj pomoc s prací v editoru.
 
