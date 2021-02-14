@@ -28,26 +28,26 @@ Momentálně Cloud9 vyžaduje, aby ses přihlásila pomocí AWS účtu a zadala 
 2. Běž na [c9.io](https://c9.io) a klikni na *Get started with AWS Cloud9*
 3. Přihlaš se pomocí svého AWS účtu (vyžaduje zadání platebních údajů, ale bude možné využívat jej zdarma bez placení).
 4. V AWS nástěnce vlož *Cloud9* ve vyhledávacím políčku a dej vyhledat.
-5. Na Cloud9 nástěnce klikni na *Create environment*
+5. Na Cloud9 nástěnce klikni na *Vytvořit prostředí*
 6. Pojmenuj to jako *django-girls*
-7. While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
-8. Click *Next step*
-9. Click *Create environment*
+7. Zatímco se konfiguruje nastavení, pro "Typ prostředí" vyber možnost *Vytvořit novou instanci pro prostředí (EC2)* a jako "Typ instance" zvol *t2.micro* (mělo by zmiňovat ""Free-tier eligible."). Výchozí nastavení plateb a výdajů lze nechat tak, jak je a stejně pokračovat i u dalších nastavení.
+8. Klikni na *Další krok*
+9. Klikni na *Vytvořit prostředí*
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+Nyní bys měla vidět rozhraní s postranním panelem a velkým hlavním oknem, kde bude nějaký text a malé okno v dolní části stránky, které vypadá přibližně takto:
 
 {% filename %}bash{% endfilename %}
 
     yourusername:~/workspace $
     
 
-This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+Tato dolní část je tvůj terminál. Můžeš jej použít pro zadání příkazů pro vzdálený Cloud9 počítač. Můžeš měnit velikost okna, jak potřebuješ.
 
-### Virtual Environment
+### Virtuální prostředí
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Virtuální prostředí (také nazývané veirtualenv) je jako soukromá krabička, kam můžeme dávat užitečné věci a kód pro náš projekt, na kterém pracujeme. Používáme je pro uchování různých částí kódu, které chceme pro různé naše projekty, abychom tak oddělili části, které by se neměly smíchat dohromady mezi projekty.
 
-Run:
+Spusť:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -58,7 +58,7 @@ Run:
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: `~=`).
+(všimni si, že na poslední řádce používáme tzv. tildu ~ a je následována rovnítkem: `~=`).
 
 ### GitHub
 
