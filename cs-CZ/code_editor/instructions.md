@@ -4,7 +4,7 @@ Naše návrhy jsou napsané níže, ale neváhejte se zeptat svého kouče, jak�
 
 ## Visual Studio Code
 
-XPath: /p[3]. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+XPath: /p[3]. Zahrnuje technickou podporu pro tzv. debugging, kompletní možnost práce s Gitem, zvýrazňování syntaxe jazyka, inteligentní pomoc pro psaní kódu, napovědu a možnost refactorovat kód.
 
 [Stáhnout si jej můžeš zde](https://code.visualstudio.com/)
 
@@ -16,7 +16,7 @@ Gedit je open-source editor. Je k dispozici zdarma pro všechny operační syst�
 
 ## Sublime Text 3
 
-Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
+Sublime je velmi oblíbený a známý editor s možností využít zkušební verzi zdarma a je dostupný pro všechny operační systémy.
 
 [Stáhnout si jej můžeš zde](https://www.sublimetext.com/3)
 
