@@ -2,34 +2,34 @@ Pokud nepoužíváš Chromebook, můžeš [přeskočit přímo na tuto sekci](ht
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud IDE je nástroj, který ti umožňuje využívat editor kódu a přístup k počítači běžícím na internetu, kde můžeš instalovat, psát a spouštět software. V průběhu tutoriálu se Cloud IDE bude chovat jako tvůj *lokální počítač*. Příkazy budeš psát stále pomocí příkazové řádky v terminálu stejně jako tví spolužáci na OS X, Ubuntu nebo Windows, ale tvůj terminál bude propojený s počítačem běžícím někde jinde, což je řešeno pomocí Cloud IDE. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
+Cloud IDE je nástroj, který ti umožňuje využívat editor kódu a přístup k počítači běžícím na internetu, kde můžeš instalovat, psát a spouštět software. V průběhu tutoriálu se Cloud IDE bude chovat jako tvůj *lokální počítač*. Příkazy budeš psát stále pomocí příkazové řádky v terminálu stejně jako tví spolužáci na OS X, Ubuntu nebo Windows, ale tvůj terminál bude propojený s počítačem běžícím někde jinde, což je řešeno pomocí Cloud IDE. Zde jsou instrukce pro všechna Cloud IDE (Paiza Cloud IDE, AWS, Cloud9). Můžeš si vybrat jedno z Cloud IDE řešení a následovat instrukce nastavení pro zvolený typ.
 
-#### PaizaCloud Cloud IDE
+#### PaizaCloud ID
 
-1. Go to [PaizaCloud Cloud IDE](https://paiza.cloud/)
-2. Sign up for an account
-3. Click *New Server* and choose the Django app
-4. Click Terminal button(on the left side of the window)
+1. Jdi na [PaizaCloud Cloud IDE](https://paiza.cloud/)
+2. Zaregistruj se nebo se přihlaš ke svému účtu, pokud již registrovaná jsi.
+3. Klikni na *Nový Server* a vyber možnost Django App.
+4. Klikni na tlačítko Terminál (na levé straně okna).
 
-Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
+Nyní bys měla vidět rozhraní s postranním panelem a tlačítka nalevo. Klikni na tlačítko Terminál, kde po otevření příkazové řádky uvidíš něco jako:
 
 {% filename %}Terminal{% endfilename %}
 
     $
     
 
-The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+Terminál v PaizaCloud IDE je připraven a čeká na tvé příkazy. Můžeš měnit velikost okna, pokud ti nevyhovuje velikost zobrazení.
 
 #### AWS Cloud9
 
-Currently Cloud 9 requires you to sign up with AWS and enter credit card information.
+Momentálně Cloud9 vyžaduje, aby ses přihlásila pomocí AWS účtu a zadala jako platební metodu tvou platební kartu.
 
-1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Go to [c9.io](https://c9.io) and click *Get started with AWS Cloud9*
-3. Sign up for an AWS account (requires credit card information, but you can use it for free)
-4. In the AWS Dashboard, enter *Cloud9* in the search bar and click it
-5. In the Cloud 9 dashboard, click *Create environment*
-6. Name it *django-girls*
+1. Nainstaluj si Cloud9 z odkazu [Chrome webový obchod](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+2. Běž na [c9.io](https://c9.io) a klikni na *Get started with AWS Cloud9*
+3. Přihlaš se pomocí svého AWS účtu (vyžaduje zadání platebních údajů, ale bude možné využívat jej zdarma bez placení).
+4. V AWS nástěnce vlož *Cloud9* ve vyhledávacím políčku a dej vyhledat.
+5. Na Cloud9 nástěnce klikni na *Create environment*
+6. Pojmenuj to jako *django-girls*
 7. While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
 8. Click *Next step*
 9. Click *Create environment*
