@@ -1,11 +1,11 @@
-Git je "systém pro správu verzí" používaný spoustou programátorů. Tento software může sledovat změny v souborech v průběhu času tak, že konkrétní verze můžeš později znovu zobrazit. A bit like the "track changes" feature in word processor programs (e.g., Microsoft Word or LibreOffice Writer), but much more powerful.
+Git je "systém pro správu verzí" používaný spoustou programátorů. Tento software může sledovat změny v souborech v průběhu času tak, že konkrétní verze můžeš později znovu zobrazit. Trochu jako funkce "sledovat změny" ve slovních procesorových programech (např. Microsoft Word nebo LibreOffice spisovatel), ale mnohem silnější.
 
 ## Instalace Git
 
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-Git si můžeš stáhnout z [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for two: in the step where it asks to choose your editor, you should pick Nano, and in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Ostatní výchozí hodnoty jsou v pořádku. Odškrtni Windows-style konce řádků, pro commit je Unixový styl konce řádků správný.
+Git si můžeš stáhnout z [git-scm.com](https://git-scm.com/). Klikej na "další další další" ve všech krocích s vyjímkou 5. kroku s názvem "Nastavení prostředí PATH", zvol "Spustit Git a související Unixové nástroje, z příkazového řádku systému Windows" (spodní možnost). Ostatní výchozí hodnoty jsou v pořádku. Odškrtni Windows-style konce řádků, pro commit je Unixový styl konce řádků správný.
 
 Do not forget to restart the command prompt or PowerShell after the installation finished successfully. <!--endsec-->
 
