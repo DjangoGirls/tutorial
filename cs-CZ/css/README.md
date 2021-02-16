@@ -33,11 +33,11 @@ Hned to vypadá lépe!
 
 ## Statické soubory v Djangu
 
-Konečně se podíváme zblízka na téma, které jsme již zmínili, **statické soubory**. Statické soubory jsou všechna tvá CSS a obrázky. Their content doesn't depend on the request context and will be the same for every user.
+Konečně se podíváme zblízka na téma, které jsme již zmínili, **statické soubory**. Statické soubory jsou všechna tvá CSS a obrázky. Jejich obsah nezávisí na kontextu požadavku a bude stejný pro každého uživatele.
 
 ### Kam umístit statické soubory pro Django
 
-Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
+Django již ví, kde najít statické soubory pro vestavěnou "admin" aplikaci. Nyní potřebujeme přidat nějaké statické soubory do naší vlastní aplikace, `blog`.
 
 Uděláš to tak, že vytvoříš složku s názvem `static` uvnitř aplikace blog:
 
@@ -49,11 +49,11 @@ Uděláš to tak, že vytvoříš složku s názvem `static` uvnitř aplikace bl
     └── mysite
     
 
-Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
+Django bude automaticky hledat jakékoliv složky nazvané "static" uvnitř tvých složek v aplikaci. Poté bude schopný použít jejich obsah jako statické soubory.
 
 ## Tvůj první soubor CSS!
 
-Let's create a CSS file now, to add your own style to your web page. Vytvoř nový adresář s názvem `css` uvnitř adresáře `static`. Vytvoř nový soubor s názvem `blog.css` uvnitř tohoto adresáře `css`. Připraveno?
+Pojďme vytvořit nějaký CSS soubor a přidat vlastní styly pro tvou webovou stránku. Vytvoř nový adresář s názvem `css` uvnitř adresáře `static`. Vytvoř nový soubor s názvem `blog.css` uvnitř tohoto adresáře `css`. Připraveno?
 
     djangogirls
     └─── blog
