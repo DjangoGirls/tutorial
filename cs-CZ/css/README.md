@@ -33,7 +33,7 @@ Hned to vypadá lépe!
 
 ## Statické soubory v Djangu
 
-Konečně se podíváme zblízka na téma, které jsme již zmínili, **statické soubory**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
+Konečně se podíváme zblízka na téma, které jsme již zmínili, **statické soubory**. Statické soubory jsou všechna tvá CSS a obrázky. Their content doesn't depend on the request context and will be the same for every user.
 
 ### Kam umístit statické soubory pro Django
 
