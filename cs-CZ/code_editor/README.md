@@ -1,11 +1,11 @@
 # Editor zdrojového kódu
 
-> For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s) video.
+> Čtení na doma: tato kapitola je pokryta ve videu [Instalujeme pro Python & Editor kódu](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s).
 
 Právě se chystáš napsat svůj první řádek kódu, takže je čas sáhnout po editoru kódu!
 
-> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions. The cloud IDE you chose (PaizaCloud Cloud IDE or AWS Cloud9) includes a code editor, and when you open a file in your IDE from the File menu, you will automatically be using the editor.
+> **Poznámka** POkud používáš Chromebook přeskoč tuto kapitolu a ujisti se, že následuješ pokyny pro [Nastavení Chromebooku](../chromebook_setup/README.md). Cloudové IDE, které si vybereš (Paiza Cloud nebo AWS Cliud9) zahrnuje editor kódu a když otevřeš soubor ve tvém IDE z nabídky souborů, automaticky použije editor kódu.
 > 
-> **Note** You might have done this earlier in the [Installation chapter](../installation/README.md) – if so, you can skip right ahead to the next chapter!
+> **Poznámka** Je možné, že jsi to již udělala dříve v [kapitole o instalaci](../installation/README.md) – pokud ano, můžeš přeskočit rovnou an další kapitolu!!
 
 {% include "/code_editor/instructions.md" %}
