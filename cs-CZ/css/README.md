@@ -180,7 +180,7 @@ h1 a, h2 a {
 
 Skvěle!
 
-Jak bylo uvedeno výše, CSS má koncepci tříd. Ty ti umožňují pojmenovat část HTML kódu a aplikovat styly pouze na danou část, aniž by to ovlivnilo ostatní části. To může být super užitečné! Možná máš dva prvky 'div' , které dělají něco jiného (jako je hlavička a tvůj příspěvek). Třída vám může pomoci, aby vypadala jinak.
+Jak bylo uvedeno výše, CSS má koncepci tříd. Ty ti umožňují pojmenovat část HTML kódu a aplikovat styly pouze na danou část, aniž by to ovlivnilo ostatní části. To může být super užitečné! Možná máš dva prvky 'div' , které dělají něco jiného (jako je hlavička a tvůj příspěvek). Třída ti může pomoci, aby element vypadal jinak.
 
 Pokračuj a pojmenuj některé části kódu HTML. Přidáš třídu s názvem `page-header` do tvého `div` tagu, který obsahuje záhlaví, jako je tento:
 
@@ -204,7 +204,7 @@ A nyní přidej třídu, `post` do svého `div` obsahující blog post.
 </div>
 ```
 
-Nyní přidáme deklaraci bloků pro jiné selektory. Selektory začínající `.` se týkají tříd. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, copy and paste it into your `blog/static/css/blog.css` file:
+Nyní přidáme deklaraci bloků pro jiné selektory. Selektory začínající `.` se týkají tříd. Existuje mnoho skvělých návodů a vysvětlení CSS na webu, které ti pomohou pochopit následující kód. Pro tuto chvíli stačí zkopírovat a vložit do souboru `blog/static/css/blog.css`:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -297,10 +297,10 @@ Tyto soubory ulož a aktualizuj své webové stránky.
 
 ![Obrázek 14.4](images/final.png)
 
-Woohoo! Looks awesome, right? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
+Jupí! To je paráda, co? Podívej se na kód, který jsme právě vložili, abychom našli místa, kde jsme přidali třídy v HTML a používali je v CSS. Kde bys provedla změnu, pokud chceš, aby datum bylo tyrkysové?
 
-Don't be afraid to tinker with this CSS a little bit and try to change some things. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry – you can always undo it!
+Neboj se trochu pohrát s tímto CSS a pokus se některé věci změnit. Hraní s CSS ti pomůže pochopit, co dělají různé věci. Pokud něco rozbiješ, nedělej si starosti - vždy to můžeš vrátit zpět!
 
-We really recommend taking the free online courses "Basic HTML & HTML5" and "Basic CSS" on [freeCodeCamp](https://learn.freecodecamp.org/). They can help you learn all about making your websites prettier with HTML and CSS.
+Opravdu doporučujeme vzít zdarma online kurzy "Základní HTML & HTML5" a "Základní CSS" na [freeCodeCamp](https://learn.freecodecamp.org/). Mohou ti pomoci naučit se, jak udělat tvé webové stránky hezčí pomocí HTML a CSS.
 
 Připravena na další kapitolu?! :)
