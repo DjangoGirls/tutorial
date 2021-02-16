@@ -64,9 +64,9 @@ Pojďme vytvořit nějaký CSS soubor a přidat vlastní styly pro tvou webovou 
 
 Čas k napsání nějakého CSS! Otevři soubor `blog/static/css/blog.css` v editoru kódu.
 
-We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
+Zde nebudeme zacházet příliš do detailů a učit se CSS nebo jej přizpůsobovat. Pokud se budeš chtít naučit více o CSS, na konci této stránky najdeš doporučení na CSS kurz zdarma.
 
-Ale pojďme něco málo udělat. Maybe we could change the color of our headers? Pro interpretaci barev, počítače používají speciální kódy. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. Můžeš také použít [předdefinované barvy](http://www.w3schools.com/colors/colors_names.asp), `červená/red` a `zelená/green`.
+Ale pojďme něco málo udělat. Možná bychom mohli změnit barvu našich nadpisů? Pro interpretaci barev, počítače používají speciální kódy. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. Můžeš také použít [předdefinované barvy](http://www.w3schools.com/colors/colors_names.asp), `červená/red` a `zelená/green`.
 
 V souboru `blog/static/css/blog.css` přidej následující kód:
 
