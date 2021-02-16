@@ -1,4 +1,4 @@
-# CSS – make it pretty!
+# CSS - zkrášli svou stránku!
 
 Náš blog nevypadá stále dost pěkně, že? Je na čase ho udělat hezčí! Použijeme na to CSS.
 
@@ -87,9 +87,9 @@ V CSS souboru určujeme styly pro prvky v souboru HTML. První způsob, jak iden
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
 ```
 
-You can read more about [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
+Více si můžeš přečíst [CSS Selectoryna w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
-We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file in the code editor and add this line at the very beginning of it:
+Pak je třeba také říct naší HTML šabloně, že jsme přidali nějaké CSS. Otevři soubor `blog/templates/blog/post_list.html` a přidej tento řádek na úplný začátek:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -97,7 +97,7 @@ We also need to tell our HTML template that we added some CSS. Open the `blog/te
 {% load static %}
 ```
 
-We're just loading static files here. :) Between the `<head>` and `</head>` tags, after the links to the Bootstrap CSS files, add this line:
+Právě zde načítáme statické soubory. :) mezi značkami `<head>` a `</head>` , po odkazech na Bootstrap CSS soubory přidejte tento řádek:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -105,13 +105,14 @@ We're just loading static files here. :) Between the `<head>` and `</head>` tags
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may be overriden by code in Bootstrap files. Právě jsi řekla naší šabloně, kde je umístěn náš soubor CSS.
+Prohlížeč čte soubory v pořadí, ve kterém jsou zadány, takže se musíme ujistit, že jsme na správném místě. V opačném případě může být kód v našem souboru přepsán kódem z Bootstrap souborů. Právě jsi řekla naší šabloně, kde je umístěn náš soubor CSS.
 
 Soubor by měl nyní vypadat takto:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+Zdrojový kód
 {% load static %}
 <html>
     <head>
@@ -127,7 +128,7 @@ Soubor by měl nyní vypadat takto:
 
         {% for post in posts %}
             <div>
-                <p>published: {{ post.published_date }}</p>
+                <p>vydáno: {{ post.published_date }}</p>
                 <h2><a href="">{{ post.title }}</a></h2>
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
@@ -150,7 +151,7 @@ body {
 }
 ```
 
-Add that to your CSS, save the file and see how it works!
+Přidej toto do svého CSS souboru, ulož soubor a koukni se, jak to funguje!
 
 ![Obrázek 14.3](images/margin2.png)
 
@@ -162,9 +163,9 @@ Možná můžeme také chtít přizpůsobit písmo v našem záhlaví? Vlož mez
 <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
-As before, check the order and place before the link to `blog/static/css/blog.css`. This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
+Stejně jako předtím, zkontroluj pořadí a místo před odkazem na `blog/static/css/blog.css`. Tento řádek importuje font s názvem *Lobster* z Google Fonts (https://www.google.com/fonts).
 
-Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file `blog/static/css/blog.css`. Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
+Najdi blok `h1 deklarací` (kód mezi závorkami `{` a `}`) v CSS souboru `blog/static/css/blog.css`. Nyní přidej řádek `font-family: 'Lobster';` mezi závorkami a obnov stránku:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -179,7 +180,7 @@ h1 a, h2 a {
 
 Skvěle!
 
-As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
+Jak bylo uvedeno výše, CSS má koncepci tříd. Ty ti umožňují pojmenovat část HTML kódu a aplikovat styly pouze na danou část, aniž by to ovlivnilo ostatní části. To může být super užitečné! Možná máš dva prvky 'div' , které dělají něco jiného (jako je hlavička a tvůj příspěvek). Třída vám může pomoci, aby vypadala jinak.
 
 Pokračuj a pojmenuj některé části kódu HTML. Přidáš třídu s názvem `page-header` do tvého `div` tagu, který obsahuje záhlaví, jako je tento:
 
@@ -197,7 +198,7 @@ A nyní přidej třídu, `post` do svého `div` obsahující blog post.
 
 ```html
 <div class="post">
-    <p>published: {{ post.published_date }}</p>
+    <p>vydáno: {{ post.published_date }}</p>
     <h2><a href="">{{ post.title }}</a></h2>
     <p>{{ post.text|linebreaksbr }}</p>
 </div>
@@ -263,7 +264,7 @@ Pak obklopující HTML kód, který zobrazuje příspěvek s deklaracemi tříd.
 ```html
 {% for post in posts %}
     <div class="post">
-        <p>published: {{ post.published_date }}</p>
+        <p>vydáno: {{ post.published_date }}</p>
         <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
@@ -281,7 +282,7 @@ v `blog/templates/blog/post_list.html` tímto:
             {% for post in posts %}
                 <div class="post">
                     <div class="date">
-                        <p>published: {{ post.published_date }}</p>
+                        <p>vydáno: {{ post.published_date }}</p>
                     </div>
                     <h2><a href="">{{ post.title }}</a></h2>
                     <p>{{ post.text|linebreaksbr }}</p>
