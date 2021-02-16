@@ -66,7 +66,7 @@ Pojďme vytvořit nějaký CSS soubor a přidat vlastní styly pro tvou webovou 
 
 Zde nebudeme zacházet příliš do detailů a učit se CSS nebo jej přizpůsobovat. Pokud se budeš chtít naučit více o CSS, na konci této stránky najdeš doporučení na CSS kurz zdarma.
 
-Ale pojďme něco málo udělat. Možná bychom mohli změnit barvu našich nadpisů? Pro interpretaci barev, počítače používají speciální kódy. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. Můžeš také použít [předdefinované barvy](http://www.w3schools.com/colors/colors_names.asp), `červená/red` a `zelená/green`.
+Ale pojďme něco málo udělat. Možná bychom mohli změnit barvu našich nadpisů? Pro interpretaci barev, počítače používají speciální kódy. Tyto kódy začínají `#` a následuje 6 písmen(A-F) a číslic(0-9). Například kód pro modrou barvu bude vypadat takto: `#0000FF`. Kódy všech barev můžeš najít například zde: http://www.colorpicker.com/. Můžeš také použít [předdefinované barvy](http://www.w3schools.com/colors/colors_names.asp), `červená/red` a `zelená/green`.
 
 V souboru `blog/static/css/blog.css` přidej následující kód:
 
@@ -79,9 +79,9 @@ h1 a, h2 a {
 
 ```
 
-`h1` je CSS selector. This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
+`h1` je CSS selector. Toto znamená, že aplikujeme naše styly na každý element `a` uvnitř elementu `h1` , selektor `h2` dělá to samé pro elementy `h2`. Takže když máme něco jako `<h1><a href="">odkaz</a></h1>`, použije se styl `h1`. V tomto případě říkáme, že barvu elementu měníme na `#C25100`, což je oranžová. Nebo zde můžeš vložit vlastní barvu, ale ujisti se, že bude kontrastní vůči bílé barvě pozadí stránky.
 
-V CSS souboru určujeme styly pro prvky v souboru HTML. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Třídy/Class a id jsou jména, které pojmenovávají samotný prvek. Třídy definují skupiny prvků a Id poukazují na konkrétní prvky. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+V CSS souboru určujeme styly pro prvky v souboru HTML. První způsob, jak identifikovat prvky je pomocí názvu elementu. Možná si vzpomeneš na tyto tagy ze sekce HTML. Věci jako `a`, `h1` a `body`jsou všechny příklady názvů elementů. Také identifikujeme elementy podle atributu `class` nebo atributu `id`. Třídy/Class a id jsou jména, které pojmenovávají samotný prvek. Třídy definují skupiny prvků a Id poukazují na konkrétní prvky. Například, můžeš identifikovat následující tag pomocí názvu `a`, třídy `externi_odkaz` nebo id `odkaz_stranka_wikipedie`.
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
