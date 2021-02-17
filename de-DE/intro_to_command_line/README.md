@@ -118,7 +118,7 @@ Es wäre schön zu sehen, wo wir uns befinden, oder? Lass uns nachsehen. Gib die
     C:\Users\olasitarska
     
 
-> Note: 'cd' stands for 'change directory'. With PowerShell you can use pwd just like on Linux or Mac OS X.
+> Hinweis: "cd" steht für "change directory". Mit PowerShell kannst du auch 'pwd' verwenden, wie auf Linux oder Mac OS X.
 
 <!--endsec-->
 
@@ -172,7 +172,7 @@ Nun, was befindet sich in deinem Verzeichnis? Es wäre toll, das herauszufinden.
      05/08/2014 07:28 PM <DIR> Music ...
     
 
-> Note: In PowerShell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
+> Hinweis: PowerShell kannst du auch 'ls' verwenden, wie auf Linux oder Mac OS X.<!--endsec-->
 
 * * *
 
