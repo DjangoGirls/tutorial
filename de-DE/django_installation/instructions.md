@@ -123,7 +123,7 @@ Starte deine virtuelle Umgebung, indem du Folgendes eingibst:
 
 <!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
 
-> **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows PowerShell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
+> **Hinweis:** Für Benutzerinnen des populären Editors VS Code, der einen PowerShell-basiertes Terminal eingebaut hat: Wenn du beim eingebauten Terminal bleiben willst, kannst du deine virtuelle Umgebung mit folgendem Befehl aktivieren:
 > 
 >     $ . myvenv\Scripts\activate.ps1
 >     
