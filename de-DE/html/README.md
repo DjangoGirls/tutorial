@@ -56,8 +56,8 @@ Hat sich die Seite geändert? Besuche http://127.0.0.1:8000/, um nachzusehen.
 Es funktioniert. Gute Arbeit! :)
 
 * Die Zeile `<!DOCTYPE html>` ist kein HTML-Tag. Es deklariert nur den Dokumententyp. Hier informiert sie den Browser, dass der Dokumententyp [HTML5](https://html.spec.whatwg.org/#the-doctype) ist. Jede HTML5-Datei muss so anfangen.
-* Der eigentliche HTML-Inhalt beginnt immer mit `<html>` und endet immer mit `</html>`. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
-* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
+* Der eigentliche HTML-Teil beginnt immer mit `<html>` und endet immer mit `</html>`. Zwischen den beiden Tags `<html>` und `</html>` steht der gesamte Inhalt der Webseite
+* `<p>` ist der Tag für ein Absatz-Element (paragraph), `</p>` beendet einen Absatz
 
 ## "Head" und "body"
 
@@ -77,11 +77,11 @@ In den `<head>` können wir z.B. noch den Titel (title) der Seite mit aufnehmen:
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Ola's blog</title>
+        <title>Olas blog</title>
     </head>
     <body>
-        <p>Hi there!</p>
-        <p>It works!</p>
+        <p>Halli-Hallo!</p>
+        <p>Es funktioniert!</p>
     </body>
 </html>
 ```
@@ -112,14 +112,14 @@ Jetzt kannst du ein bisschen rumprobieren und dein Template umgestalten! Hier si
 * `<a href="https://djangogirls.org">link</a>` erstellt einen Link
 * `<ul><li>Erster Punkt</li><li>second item</li></ul>` generiert eine Liste so wie diese hier!
 * `<div></div>` definiert einen Abschnitt auf einer Seite
-* `<nav></nav>` defines a set of navigation links
-* `<article></article>` specifies independent, self-contained content
-* `<section></section>` defines a section in a document
-* `<header></header>` specifies a header for a document or section
-* `<main></main>` specifies the main content of a document
-* `<aside></aside>` defines some content aside from the content it is placed in (like a sidebar)
-* `<footer></footer>` defines a footer for a document or section
-* `<time></time>` defines a specific time (or datetime)
+* `<nav></nav>` definiert eine Reihe von Navigationslinks
+* `<article></article>` definiert voneinander unabhängige, eigenständige Inhalts-Teile
+* `<section></section>` definiert einen Abschnitt in einem Dokument
+* `<header></header>` gibt eine Kopfzeile für ein Dokument oder einen Abschnitt an
+* `<main></main>` enthält den Hauptinhalt eines Dokuments
+* `<aside></aside>` definiert eine Nebenbemerkung (wie den Inhalt einer Rand-Leiste) zum Inhaltsteil, in dem es platziert wird
+* `<footer></footer>` definiert eine Fußzeile für ein Dokument oder einen Abschnitt
+* `<time></time>` definiert eine bestimmte Zeit (oder einen Zeitpunkt samt Datum)
 
 Hier ist ein vollständiges Beispiel eines Templates. Kopiere es und füge es in `blog/templates/blog/post_list.html` ein:
 
