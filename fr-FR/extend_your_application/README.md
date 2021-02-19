@@ -19,13 +19,13 @@ Nous allons tout d'abord ajouter un lien à l'intérieur du fichier `blog/templa
 
 {% block content %}
     {% for post in posts %}
-        <div class="post">
-            <div class="date">
+        <article class="post">
+            <time class="date">
                 {{ post.published_date }}
-            </div>
+            </time>
             <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
-        </div>
+        </article>
     {% endfor %}
 {% endblock %}
 ```
@@ -145,16 +145,18 @@ Entrez le code suivant :
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
 ```html
+{% extends 'blog/base.html' %}
+
 {% block content %}
-    <div class="post">
+    <article class="post">
         {% if post.published_date %}
-            <div class="date">
+            <time class="date">
                 {{ post.published_date }}
-            </div>
+            </time>
         {% endif %}
         <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    </article>
 {% endblock %}
 ```
 
