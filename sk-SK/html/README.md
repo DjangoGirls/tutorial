@@ -40,6 +40,7 @@ Open the new file in the code editor, and add the following:
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
 <body>
     <p>Hi there!</p>
@@ -54,8 +55,9 @@ Takže ako momentálne vyzerá tvoja stránka? To môžeš zistiť kliknutím na
 
 It worked. Nice work there! :)
 
-* Najzákladnejší tag, `<html>`, je vždy na začiatku každej webovej stránky a `</html>` je vždy na jej konci. Ako môžeš vidieť, celý obsah stránky sa nachádza medzi začínajúcim tagom `<html>` a uzatvárajúcim tagom `</html>`
-* `<p>` je tag pre element odstavca; `</p>` uzatvára každý odstavec
+* The line `<!DOCTYPE html>` is not a HTML tag. It only declares the document type. Here, it informs the browser that document type is [HTML5](https://html.spec.whatwg.org/#the-doctype). This is always the beginning of any HTML5 file.
+* The most basic tag, `<html>`, is always the beginning of html content and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
+* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
 
 ## Head a body
 
@@ -72,6 +74,7 @@ Napríklad môžeš dať stránke titulok pomocou title elementu v hlavičke `<h
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Ola's blog</title>
@@ -109,40 +112,49 @@ Môžeš sa trocha pohrať s tým, že budeš upravovať svoju šablónu! Tu je 
 * `<a href="https://djangogirls.org">link</a>` vytvára odkaz
 * `<ul><li>prvá položka</li><li>druhá položka</li></ul>` vytvára zoznam ako tento!
 * `<div></div>` definuje sekciu stránky
+* `<nav></nav>` defines a set of navigation links
+* `<article></article>` specifies independent, self-contained content
+* `<section></section>` defines a section in a document
+* `<header></header>` specifies a header for a document or section
+* `<main></main>` specifies the main content of a document
+* `<aside></aside>` defines some content aside from the content it is placed in (like a sidebar)
+* `<footer></footer>` defines a footer for a document or section
+* `<time></time>` defines a specific time (or datetime)
 
 Tu je príklad úplnej šablóny, skopíruj ho do súboru `blog/templates/blog/post_list.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
     </head>
     <body>
-        <div>
+        <header>
             <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+        </header>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
             <h2><a href="">My first post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
+        </article>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
             <h2><a href="">My second post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
+        </article>
     </body>
 </html>
 ```
 
-Vytvorili sme tri `div` sekcie.
+We've created one `header` section and two `article` section here.
 
-* Prvá `div` sekcia obsahuje titulok nášho blogu - je to nádpis a odkaz
-* Ďalšie dva `div` elementy obsahujú príspevky blogu s časom publikovania, `h2` nádpisom príspevku, na ktorý sa dá kliknúť a dva `p` (odstavce) textu, jeden pre dátum a druhý pre náš príspevok.
+* The `header` element contains the title of our blog – it's a heading and a link
+* Another two `article` elements contain our blog posts with a published date in `time` element, `h2` with a post title that is clickable and a `p` (paragraph) of text for our blog post.
 
 Výsledok je nasledovný:
 
