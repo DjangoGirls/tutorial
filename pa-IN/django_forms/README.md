@@ -44,43 +44,55 @@ So once again we will create a link to the page, a URL, a view and a template.
 
 ## Link to a page with the form
 
-It's time to open `blog/templates/blog/base.html` in the code editor. In the `div` named `page-header`, we will add a link:
+Before we add the link, we need some icons to use as buttons for the link. For this tutorial, download [file-earmark-plus.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/file-earmark-plus.svg) and save it in the folder `blog/templates/blog/icons/`
+
+> Note: To download the SVG image, open the context menu on the link (usually by right-clicking on it) and select "Save link as". In the dialog asking you where to save the file, navigate to the `djangogirls` directory of your Django project, and within that to subdirectory `blog/templates/blog/icons/`, and save the file there.
+
+It's time to open `blog/templates/blog/base.html` in the code editor. Now we can use this icon file inside the base template as follow. In the `div` tag inside `header` section, we will add a link before `h1` tag:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
-<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+<a href="{% url 'post_new' %}" class="top-menu">
+    {% include './icons/file-earmark-plus.svg' %}
+</a>
 ```
 
-Note that we want to call our new view `post_new`. The class `"glyphicon glyphicon-plus"` is provided by the bootstrap theme we are using, and will display a plus sign for us.
+Note that we want to call our new view `post_new`. The [SVG icon](https://icons.getbootstrap.com/icons/file-earmark-plus/) is provided by the [Bootstrap Icons](https://icons.getbootstrap.com/) and it will display a page icon with plus sign. We use a Django template directive called `include`. This will inject the file's content into the Django template. The web browser knows how to handle this type of content without any further processing.
 
-After adding the line, your HTML file should now look like this:
+> You can download all the Bootstrap icons [here](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip). Unzip the file and copy all the SVG image files into a new folder inside `blog/templates/blog/` called `icons`. That way you can access an icon like `pencil-fill.svg` using the file path `blog/templates/blog/icons/pencil-fill.svg`
+
+After editing the line, your HTML file should now look like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
 {% load static %}
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-        <div class="page-header">
-            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
-        <div class="content container">
+        <header class="page-header">
+            <div class="container">
+                <a href="{% url 'post_new' %}" class="top-menu">
+                    {% include './icons/file-earmark-plus.svg' %}
+                </a>
+                <h1><a href="/">Django Girls Blog</a></h1>
+            </div>
+        </header>
+        <main class="content container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col">
                     {% block content %}
                     {% endblock %}
                 </div>
             </div>
-        </div>
+        </main>
     </body>
 </html>
 ```
@@ -102,7 +114,7 @@ And the final code will look like this:
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-from django.urls import path 
+from django.urls import path
 from . import views
 
 urlpatterns = [
@@ -283,12 +295,18 @@ Django is taking care to validate that all the fields in our form are correct. I
 
 Now we know how to add a new post. But what if we want to edit an existing one? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
 
-Open `blog/templates/blog/post_detail.html` in the code editor and add the line
+First, let's save the icon which represents the edit button. Download [pencil-fill.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/pencil-fill.svg) and save it to the location `blog/templates/blog/icons/`.
+
+Open `blog/templates/blog/post_detail.html` in the code editor and add the following code inside `article` tag:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
 ```html
-<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+<aside class="actions">
+    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+      {% include './icons/pencil-fill.svg' %}
+    </a>
+</aside>
 ```
 
 so that the template will look like this:
@@ -299,16 +317,20 @@ so that the template will look like this:
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <div class="post">
+    <article class="post">
+        <aside class="actions">
+            <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+                {% include './icons/pencil-fill.svg' %}
+            </a>
+        </aside>
         {% if post.published_date %}
-            <div class="date">
+            <time class="date">
                 {{ post.published_date }}
-            </div>
+            </time>
         {% endif %}
-        <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
         <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    </article>
 {% endblock %}
 ```
 
@@ -376,12 +398,14 @@ If you need more information about Django forms, you should read the documentati
 
 Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
 
-Open `blog/templates/blog/base.html` in the code editor, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
+Open `blog/templates/blog/base.html` in the code editor, find our `div` inside `header` and the anchor tag you put in there earlier. It should look like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
-<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+<a href="{% url 'post_new' %}" class="top-menu">
+    {% include './icons/file-earmark-plus.svg' %}
+</a>
 ```
 
 We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! Change the `<a>` tag to look like this:
@@ -390,7 +414,9 @@ We're going to add another `{% if %}` tag to this, which will make the link show
 
 ```html
 {% if user.is_authenticated %}
-    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+    <a href="{% url 'post_new' %}" class="top-menu">
+        {% include './icons/file-earmark-plus.svg' %}
+    </a>
 {% endif %}
 ```
 
@@ -403,7 +429,9 @@ Open `blog/templates/blog/post_detail.html` in the code editor and find this lin
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
 ```html
-<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+    {% include './icons/pencil-fill.svg' %}
+</a>
 ```
 
 Change it to this:
@@ -412,7 +440,9 @@ Change it to this:
 
 ```html
 {% if user.is_authenticated %}
-     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+        {% include './icons/pencil-fill.svg' %}
+     </a>
 {% endif %}
 ```
 
