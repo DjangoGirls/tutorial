@@ -46,9 +46,9 @@ Also erstellen wir hier auch wieder einen Link auf die Seite, eine URL, eine Vie
 
 Bevor wir den Link hinzufügen, benötigen wir einige Icons als Buttons für den Link. Lade für dieses Tutorial [Datei earmark-plus.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/file-earmark-plus.svg) herunter und speicher es im Ordner `blog/templates/blog/blog/icons/`
 
-> Note: To download the SVG image, open the context menu on the link (usually by right-clicking on it) and select "Save link as". In the dialog asking you where to save the file, navigate to the `djangogirls` directory of your Django project, and within that to subdirectory `blog/templates/blog/icons/`, and save the file there.
+> Hinweis: Um das SVG-Bild herunterzuladen, öffne das Kontextmenü auf dem Link (normalerweise durch einen Rechtsklick darauf) und wähle "Link speichern unter". Im Dialog, in dem du gefragt wirst, wo du die Datei speichern willst, navigiere zum `djangogirls`-Verzeichnis deines Django-Projekts und innerhalb davon in das Unterverzeichnis `blog/templates/blog/icons/` und speicher die Datei dort.
 
-It's time to open `blog/templates/blog/base.html` in the code editor. Now we can use this icon file inside the base template as follow. In the `div` tag inside `header` section, we will add a link before `h1` tag:
+Es ist an der Zeit, `blog/templates/blog/base.html` im Code-Editor zu öffnen. Now we can use this icon file inside the base template as follow. In the `div` tag inside `header` section, we will add a link before `h1` tag:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
