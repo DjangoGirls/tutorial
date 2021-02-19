@@ -62,7 +62,7 @@ Note that we want to call our new view `post_new`. The [SVG icon](https://icons.
 
 > You can download all the Bootstrap icons [here](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip). Unzip the file and copy all the SVG image files into a new folder inside `blog/templates/blog/` called `icons`. That way you can access an icon like `pencil-fill.svg` using the file path `blog/templates/blog/icons/pencil-fill.svg`
 
-After editing the line, your HTML file should now look like this:
+Nach dem Bearbeiten der Zeile sieht deine HTML-Datei so aus:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -101,7 +101,7 @@ Nach dem Speichern und Neuladen von http://127.0.0.1:8000 solltest du den bereit
 
 ## URL
 
-We open `blog/urls.py` in the code editor and add a line:
+Wir öffnen `blog/urls.py` im Code-Editor und fügen eine Zeile hinzu:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -109,7 +109,7 @@ We open `blog/urls.py` in the code editor and add a line:
 path('post/new/', views.post_new, name='post_new'),
 ```
 
-And the final code will look like this:
+Der finale Code sieht dann so aus:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -176,7 +176,7 @@ OK, so let's see how the HTML in `post_edit.html` should look:
 
 Time to refresh! Yay! Your form is displayed!
 
-![New form](images/new_form2.png)
+![Neues Formular](images/new_form2.png)
 
 But, wait a minute! When you type something in the `title` and `text` fields and try to save it, what will happen?
 
@@ -278,7 +278,7 @@ That is awesome!
 
 > As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
 
-![Logged in error](images/post_create_error.png)
+![Anmeldefehler](images/post_create_error.png)
 
 ## Formularvalidierung
 
@@ -286,7 +286,7 @@ Now, we will show you how cool Django forms are. A blog post needs to have `titl
 
 Try to save the form without `title` and `text`. Guess what will happen!
 
-![Form validation](images/form_validation2.png)
+![Formularvalidierung](images/form_validation2.png)
 
 Django is taking care to validate that all the fields in our form are correct. Isn't it awesome?
 
@@ -381,11 +381,11 @@ form = PostForm(instance=post)
 
 OK, let's test if it works! Let's go to the `post_detail` page. There should be an edit button in the top-right corner:
 
-![Edit button](images/edit_button2.png)
+![Schaltfläche "Bearbeiten"](images/edit_button2.png)
 
 When you click it you will see the form with our blog post:
 
-![Edit form](images/edit_form2.png)
+!["Bearbeiten"-Formular](images/edit_form2.png)
 
 Feel free to change the title or the text and save the changes!
 
@@ -475,4 +475,4 @@ Let's see if all this works on PythonAnywhere. Time for another deploy!
 
 * Gehe schließlich noch rüber [auf die Seite "Web"](https://www.pythonanywhere.com/web_app_setup/) (benutze den Menü-Knopf in der rechten oberen Ecke der Konsole) und klicke **Reload**. Lade deinen Blog https://subdomain.pythonanywhere.com neu, um die Änderungen zu sehen.
 
-And that should be it. Congrats! :)
+Und das war's. Glückwunsch! :)
