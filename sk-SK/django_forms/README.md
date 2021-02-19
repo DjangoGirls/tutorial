@@ -44,43 +44,55 @@ Takže ešte raz vytvoríme link na stránku, URL, zobrazenie a šablónu.
 
 ## Link na stránku s formulárom
 
-It's time to open `blog/templates/blog/base.html` in the code editor. In the `div` named `page-header`, we will add a link:
+Before we add the link, we need some icons to use as buttons for the link. For this tutorial, download [file-earmark-plus.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/file-earmark-plus.svg) and save it in the folder `blog/templates/blog/icons/`
+
+> Note: To download the SVG image, open the context menu on the link (usually by right-clicking on it) and select "Save link as". In the dialog asking you where to save the file, navigate to the `djangogirls` directory of your Django project, and within that to subdirectory `blog/templates/blog/icons/`, and save the file there.
+
+It's time to open `blog/templates/blog/base.html` in the code editor. Now we can use this icon file inside the base template as follow. In the `div` tag inside `header` section, we will add a link before `h1` tag:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
-<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+<a href="{% url 'post_new' %}" class="top-menu">
+    {% include './icons/file-earmark-plus.svg' %}
+</a>
 ```
 
-Všimni si, že chceme zavolať naše nové view `post_new`. Trieda `"glyphicon glyphicon-plus"` je poskytnutá bootstrap témou ktorú používame a ona zobrazí znamienko plus pre nás.
+Note that we want to call our new view `post_new`. The [SVG icon](https://icons.getbootstrap.com/icons/file-earmark-plus/) is provided by the [Bootstrap Icons](https://icons.getbootstrap.com/) and it will display a page icon with plus sign. We use a Django template directive called `include`. This will inject the file's content into the Django template. The web browser knows how to handle this type of content without any further processing.
 
-Po pridaní riadku by tvoj html súbor mal vyzerať asi takto:
+> You can download all the Bootstrap icons [here](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip). Unzip the file and copy all the SVG image files into a new folder inside `blog/templates/blog/` called `icons`. That way you can access an icon like `pencil-fill.svg` using the file path `blog/templates/blog/icons/pencil-fill.svg`
+
+After editing the line, your HTML file should now look like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
 {% load static %}
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-        <div class="page-header">
-            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
-        <div class="content container">
+        <header class="page-header">
+            <div class="container">
+                <a href="{% url 'post_new' %}" class="top-menu">
+                    {% include './icons/file-earmark-plus.svg' %}
+                </a>
+                <h1><a href="/">Django Girls Blog</a></h1>
+            </div>
+        </header>
+        <main class="content container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col">
                     {% block content %}
                     {% endblock %}
                 </div>
             </div>
-        </div>
+        </main>
     </body>
 </html>
 ```
@@ -97,12 +109,12 @@ We open `blog/urls.py` in the code editor and add a line:
 path('post/new/', views.post_new, name='post_new'),
 ```
 
-A výsledný kód bude vyzerať takto:
+And the final code will look like this:
 
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-from django.urls import path 
+from django.urls import path
 from . import views
 
 urlpatterns = [
@@ -112,7 +124,7 @@ urlpatterns = [
 ]
 ```
 
-Po obnovení stránky uvidíme chybu `AttributeError`, pretože nemáme implementovaný view `post_new`. Pridajme ho teraz.
+After refreshing the site, we see an `AttributeError`, since we don't have the `post_new` view implemented. Let's add it right now.
 
 ## view post_new
 
@@ -124,7 +136,7 @@ Time to open the `blog/views.py` file in the code editor and add the following l
 from .forms import PostForm
 ```
 
-A potom náš *view*:
+And then our *view*:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -134,7 +146,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Nový formulár `Post` vytvoríme tak, že sputíme `PostForm()` a prepošleme ho šablóne. K tomuto *view* sa ešte vrátime, ale teraz poďme rýchlo vytvoriť šablónu formulára.
+To create a new `Post` form, we need to call `PostForm()` and pass it to the template. We will go back to this *view*, but for now, let's quickly create a template for the form.
 
 ## Šablóna
 
@@ -145,9 +157,9 @@ We need to create a file `post_edit.html` in the `blog/templates/blog` directory
 * Potrebujeme tlačidlo `Uložiť`. Vytvoríme ho ako HTML tlačidlo: `<button type="submit">Uložiť</button>`.
 * A nakoniec, hneď za otváracím tagom `<form ...>` musíme pridať `{% raw %}{% csrf_token %}{% endraw %}`. Toto je veľmi dôležité, vďaka tomu je formulár bezpečný! Ak si na to zabudla, Django sa bude sťažovať keď sa pokúsiš uložiť formulár:
 
-![CSFR Zakázaná stránka](images/csrf2.png)
+![CSFR Forbidden page](images/csrf2.png)
 
-OK, pozrime sa, ako by malo vyzerať HTML v `post_edit.html`:
+OK, so let's see how the HTML in `post_edit.html` should look:
 
 {% filename %}blog/templates/blog/post_edit.html{% endfilename %}
 
@@ -163,15 +175,15 @@ OK, pozrime sa, ako by malo vyzerať HTML v `post_edit.html`:
 {% endblock %}
 ```
 
-Obnovíme stránku! Aha! Tvoj formulár je na svete!
+Time to refresh! Yay! Your form is displayed!
 
-![Nový formulár](images/new_form2.png)
+![New form](images/new_form2.png)
 
-Ale počkaj! Keď zadáš niečo do polí `title` a `text` a skúsiš to uložiť - čo sa stane?
+But, wait a minute! When you type something in the `title` and `text` fields and try to save it, what will happen?
 
-Nič! Sme stále na rovnakej stránke a náš text je preč... a žiaden nový príspevok sa nepridal. Takže čo sa pokazilo?
+Nothing! We are once again on the same page and our text is gone… and no new post is added. So what went wrong?
 
-Odpoveď znie: nič. Akurát budeme mať ešte trochu práce v našom *view* (zobrazení).
+The answer is: nothing. We need to do a little bit more work in our *view*.
 
 ## Uloženie formuláru
 
@@ -185,9 +197,9 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Keď odošleme formulár, vrátime sa do rovnakého view, ale teraz už máme v `request` aj nejaké údaje, presnejšie v `request.POST` (názov nemá nič spoločné s "postom" na blogu, ide len o to, že posielame - "postujeme" údaje). Pamätáš si, že naša definícia formuláru `<form>` v HTML súbore mala premennú `method="POST"`? Všetky polia z formulára sú teraz v `request.POST`. `POST` by si nemala premenovať na nič iné (jediná ďalšia platná hodnota pre premennú `method` je `GET`, teraz ale nemáme čas vysvetliť si rozdiel).
+When we submit the form, we are brought back to the same view, but this time we have some more data in `request`, more specifically in `request.POST` (the naming has nothing to do with a blog "post"; it's to do with the fact that we're "posting" data). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? All the fields from the form are now in `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
 
-Takže v našom *view* musíme ošetriť dva rôzne prípady: prvý, ak pristupujeme na stránku prvýkrát a chceme prázdny formulár, a druhý, keď sa vrátime na *view* s už predvyplnenými údajmi formulára. Takže potrebujeme pridať podmienku (na to použijeme `if`):
+So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. So we need to add a condition (we will use `if` for that):
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -198,7 +210,7 @@ else:
     form = PostForm()
 ```
 
-Je čas nahradiť tri bodky `[...]`. Ak ide o `metódu` `POST` tak cheme vytvoriť `PostForm` s datami z formulára, však? Urobíme to takto:
+It's time to fill in the dots `[...]`. If `method` is `POST` then we want to construct the `PostForm` with data from the form, right? We will do that as follows:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -206,9 +218,9 @@ Je čas nahradiť tri bodky `[...]`. Ak ide o `metódu` `POST` tak cheme vytvori
 form = PostForm(request.POST)
 ```
 
-Ďalej skontrolujme či je formulár v poriadku (všetky povinné polia sú vyplnené a nie sú zadané žiadne nesprávne hodnoty). To urobíme pomocou `form.is_valid()`.
+The next thing is to check if the form is correct (all required fields are set and no incorrect values have been submitted). We do that with `form.is_valid()`.
 
-Skonotrolujeme, či je formulár platný a ak áno, môžeme ho uložiť!
+We check if the form is valid and if so, we can save it!
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -220,9 +232,9 @@ if form.is_valid():
     post.save()
 ```
 
-V podstate urobím dve veci: uložíme formulár pomocou `form.save` a pridáme autora (keďže pole `author` nebolo v `PostForm`, avšak toto pole je povinné). `commit=False` znamená, že ešte nechceme uložiť model `Post` - najskôr chceme pridať autora. Väčšinou budeš používať `form.save()` bez `commit=False`, no v tomto prípade, to takto musíme spraviť. `post.save()` uchová zmeny (pridanie autora) a máme vytvorený nový blog príspevok!
+Basically, we have two things here: we save the form with `form.save` and we add an author (since there was no `author` field in the `PostForm` and this field is required). `commit=False` means that we don't want to save the `Post` model yet – we want to add the author first. Most of the time you will use `form.save()` without `commit=False`, but in this case, we need to supply it. `post.save()` will preserve changes (adding the author) and a new blog post is created!
 
-A bolo by skvelé, keby sme sa potom ihneď dostali na stránku `post_detail` nášho novovytvoreného blog postu, nie? Aby sme to vedeli urobiť, budeme potrebovať ešte jeden import:
+Finally, it would be awesome if we could immediately go to the `post_detail` page for our newly created blog post, right? To do that we need one more import:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -230,7 +242,7 @@ A bolo by skvelé, keby sme sa potom ihneď dostali na stránku `post_detail` n�
 from django.shortcuts import redirect
 ```
 
-Pridaj tento riadok úplne na začiatok súboru. A teraz môžeme povedať: prejdi na stránku `post_detail` novovytvoreného príspevku":
+Add it at the very beginning of your file. And now we can say, "go to the `post_detail` page for the newly created post":
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -238,9 +250,9 @@ Pridaj tento riadok úplne na začiatok súboru. A teraz môžeme povedať: prej
 return redirect('post_detail', pk=post.pk)
 ```
 
-`blog. views. post_detail` je názov view, kam chceme ísť. Spomínaš si, že tento *view* vyžaduje premennú `pk`? Aby sme ju odovzdali do view, použijeme `pk=post.pk`, kde `post` je novovytvorený blog post!
+`post_detail` is the name of the view we want to go to. Remember that this *view* requires a `pk` variable? To pass it to the views, we use `pk=post.pk`, where `post` is the newly created blog post!
 
-OK, dosť sme hovorili, už je na čase pozrieť sa ako teraz vyzerá celý *view*, však?
+OK, we've talked a lot, but we probably want to see what the whole *view* looks like now, right?
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -259,39 +271,45 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Pozrime sa, či funguje. Poď na stránku http://127.0.0.1:8000/post/new/, pridaj `title` a `text`, ulož to... a voilà! Nový blog post je pridaný a my sme presmerovaní na stránku `post_detail`!
+Let's see if it works. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it… and voilà! The new blog post is added and we are redirected to the `post_detail` page!
 
-Možno si si všimla, že pred uložením postu nastavujeme dátum publikovania. Neskôr v **Django Girls Tutorial: Rozšírenie** sa zoznámime s *tlačidlom Publikovať*.
+You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a *publish button* in **Django Girls Tutorial: Extensions**.
 
-To je úžasné!
+That is awesome!
 
-> Keďže sme nedávno použili administrátorské rozhranie Djanga, systém si myslí, že sme stále prihlásení. Existuje zopár situácií, ktoré by mohli spôsobiť odhlásenie (zatvorenie prehliadača, reštart databázy a podobne). Pokiaľ by sa ti zobrazovala chyba pri vytváraní postu upozorňujúca na neprihláseného užívateľa, choď na adminskú stránku http://127.0.0.1:8000/admin and prihlás sa znova. Toto dočasne vyrieši problém. Čaká však na teba aj permanentné riešenie v kapitole **Domáca úloha: zvýš svojej stránke bezpečnosť!** po skončení hlavného tutorialu.
+> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
 
-![Chyba prihlásenia](images/post_create_error.png)
+![Logged in error](images/post_create_error.png)
 
 ## Validácia formuláru
 
-Teraz si ukážeme, aké sú Django formuláre super. Príspevok na blogu (post) musí mať polia `title` a `text`. V našom modeli `Post` sme nepovedali (na rozdiel od `published_date`), že tieto polia sú nepovinné, takže Django štandardne očakáva, že budú nastavené.
+Now, we will show you how cool Django forms are. A blog post needs to have `title` and `text` fields. In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
 
-Skús uložiť formulár bez `title` a `text`. Pokús sa uhádnuť, čo sa stane!
+Try to save the form without `title` and `text`. Guess what will happen!
 
-![Validácia formuláru](images/form_validation2.png)
+![Form validation](images/form_validation2.png)
 
-Django overí, či sú všetky polia formulára správne. Nie je to skvelé?
+Django is taking care to validate that all the fields in our form are correct. Isn't it awesome?
 
 ## Úprava formuláru
 
-Now we know how to add a new post. Ale čo ak chceme upravovať existujúci? Je to veľmi podobné tomu, čo sme práve spravili. Poďme rýchlo vytvoriť niektoré dôležité veci. (ak niečomu nerozumieš, opýtaj sa svojho trénera alebo sa pozri na predchádzajúce kapitoly, pretože všetky tieto kroky sme si už prebrali.)
+Now we know how to add a new post. But what if we want to edit an existing one? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
 
-Open `blog/templates/blog/post_detail.html` in the code editor and add the line
+First, let's save the icon which represents the edit button. Download [pencil-fill.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/pencil-fill.svg) and save it to the location `blog/templates/blog/icons/`.
+
+Open `blog/templates/blog/post_detail.html` in the code editor and add the following code inside `article` tag:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
 ```html
-<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+<aside class="actions">
+    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+      {% include './icons/pencil-fill.svg' %}
+    </a>
+</aside>
 ```
 
-takže šablóna teraz bude vyzerať takto:
+so that the template will look like this:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -299,16 +317,20 @@ takže šablóna teraz bude vyzerať takto:
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <div class="post">
+    <article class="post">
+        <aside class="actions">
+            <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+                {% include './icons/pencil-fill.svg' %}
+            </a>
+        </aside>
         {% if post.published_date %}
-            <div class="date">
+            <time class="date">
                 {{ post.published_date }}
-            </div>
+            </time>
         {% endif %}
-        <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
         <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    </article>
 {% endblock %}
 ```
 
@@ -320,7 +342,7 @@ Open `blog/urls.py` in the code editor, and add this line:
     path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
 ```
 
-Znova použijeme šablónu `blog/templates/blog/post_edit.html`, takže posledná vec, čo nám chýba je *view*.
+We will reuse the template `blog/templates/blog/post_edit.html`, so the last missing thing is a *view*.
 
 Let's open `blog/views.py` in the code editor and add this at the very end of the file:
 
@@ -342,7 +364,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-To vyzerá skoro tak isto ako náš view `post_new`, však? Ale nie úplne. For one, we pass an extra `pk` parameter from `urls`. A ďalej: pomocou `get_object_or_404(Post, pk=pk)` získame `Post` model, ktorý chceme upravovať a následne pri vytváraní formuláru odovzdáme tento post ako parameter `instance`, aj v prípade keď ukladáme formulár…
+This looks almost exactly the same as our `post_new` view, right? But not entirely. For one, we pass an extra `pk` parameter from `urls`. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -350,7 +372,7 @@ To vyzerá skoro tak isto ako náš view `post_new`, však? Ale nie úplne. For 
 form = PostForm(request.POST, instance=post)
 ```
 
-…aj v prípade keď sme otvorili formulár za účelom úpravy daného príspevku:
+…and when we've just opened a form with this post to edit:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -358,69 +380,77 @@ form = PostForm(request.POST, instance=post)
 form = PostForm(instance=post)
 ```
 
-OK, vyskúšajme, či to funguje! Poďme na stránku `post_detail`. V pravom hornom rohu by malo byť tlačidlo na úpravu:
+OK, let's test if it works! Let's go to the `post_detail` page. There should be an edit button in the top-right corner:
 
-![Tlačidlo Upraviť](images/edit_button2.png)
+![Edit button](images/edit_button2.png)
 
-Keď naňho klikneš, uvidíš formulár s našim blog príspevkom:
+When you click it you will see the form with our blog post:
 
-![Úprava formuláru](images/edit_form2.png)
+![Edit form](images/edit_form2.png)
 
-Môžeš si vyskúšať zmeniť názov alebo text a uložiť zmeny!
+Feel free to change the title or the text and save the changes!
 
-Gratulujeme! Tvoja aplikácia je čím ďalej dokonalejšia!
+Congratulations! Your application is getting more and more complete!
 
 If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.2/topics/forms/
 
 ## Bezpečnosť
 
-Being able to create new posts by clicking a link is awesome! Ale, v tejto chvíli, každý kto navštívi tvoju stránku, bude môcť pridať nový blog post a to asi nie je to, čo by si chcela. Urobme to tak, že sa tlačidlo zobrazí len tebe.
+Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
 
-Open `blog/templates/blog/base.html` in the code editor, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
+Open `blog/templates/blog/base.html` in the code editor, find our `div` inside `header` and the anchor tag you put in there earlier. It should look like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
-<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+<a href="{% url 'post_new' %}" class="top-menu">
+    {% include './icons/file-earmark-plus.svg' %}
+</a>
 ```
 
-Do neho pridáme ďalší tag `{% if %}`, vďaka ktorému sa link zobrazí len užívateľom, ktorí sú prihlásení ako admin. Momentálne si to len ty! Zmeň `<a>` aby vyzeral takto:
+We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! Change the `<a>` tag to look like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
 {% if user.is_authenticated %}
-    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+    <a href="{% url 'post_new' %}" class="top-menu">
+        {% include './icons/file-earmark-plus.svg' %}
+    </a>
 {% endif %}
 ```
 
-Tento `{% if %}` zabezpečí, aby bol link odoslaný do prehliadača, len ak je používateľ požadujúci stránku prihlásený. Nezabráni to vytváraniu nových príspevkov úplne, ale je to dobrý prvý krok. Viac o bezpečnosti si povieme v rozširujúcich lekciách.
+This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. This doesn't protect the creation of new posts completely, but it's a good first step. We'll cover more security in the extension lessons.
 
-Spomínaš si na ikonku na upravovanie ktorú sme práve pridali na našu stránku s detailmi? Rovnakú zmenu chceme pridať aj sem, aby iný ludia nemohli upravovať existujúce príspevky.
+Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
 
 Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
 ```html
-<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+    {% include './icons/pencil-fill.svg' %}
+</a>
 ```
 
-Zmeň ho na toto:
+Change it to this:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
 ```html
 {% if user.is_authenticated %}
-     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+        {% include './icons/pencil-fill.svg' %}
+     </a>
 {% endif %}
 ```
 
-Kedže si pravdepodobne prihlásená, ak obnovíš stránku, neuvidíš nič. Načítaj stránku v inom prehliadači, alebo incognito okne (nazývané "InPrivate" vo Windows Edge) a uvidíš, že sa odkaz nezobrazuje a ikonka tiež nie!
+Since you're likely logged in, if you refresh the page, you won't see anything different. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
 
 ## Ešte jedna vec: čas nasadiť aplikáciu!
 
-Pozrime sa, či to všetko funguje na PythonAnywhere. Je čas na ďalšie nasadenie!
+Let's see if all this works on PythonAnywhere. Time for another deploy!
 
 * First, commit your new code, and push it up to GitHub:
 
