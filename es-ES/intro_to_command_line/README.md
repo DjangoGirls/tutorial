@@ -164,11 +164,11 @@ Así que, ¿en qué estamos? Estaría bien saberlo. Veamos:
 {% filename %}command-line{% endfilename %}
 
     > dir
-    Directory of C:\Users\olasitarska
-    05/08/2014 07:28 PM <DIR> Applications
-    05/08/2014 07:28 PM <DIR> Desktop
-    05/08/2014 07:28 PM <DIR> Downloads
-    05/08/2014 07:28 PM <DIR> Music
+     Directory of C:\Users\olasitarska
+    05/08/2020 07:28 PM <DIR>      Applications
+    05/08/2020 07:28 PM <DIR>      Desktop
+    05/08/2020 07:28 PM <DIR>      Downloads
+    05/08/2020 07:28 PM <DIR>      Music
     ...
     
 
@@ -285,10 +285,10 @@ Un pequeño reto para ti: en tu nuevo directorio creado `práctica`, crea un dir
 
 {% filename %}command-line{% endfilename %}
 
-    > cd practica
-    > mkdir prueba
+    > cd practice
+    > mkdir test
     > dir
-    05/08/2014 07:28 PM <DIR>      prueba
+    05/08/2020 07:28 PM <DIR>      test
     
 
 <!--endsec-->
