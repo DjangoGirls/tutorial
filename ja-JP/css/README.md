@@ -21,8 +21,7 @@ Bootstrap をインストールするため、`.html` ファイル (blog/templat
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 ```
 
 これは、あなたのプロジェクトにファイルを追加しているわけではありません。インターネット上にあるファイルを指しているだけです。では、Webサイトを開いてページを再読み込みしてください。
@@ -74,7 +73,7 @@ CSSファイルを作って、Webサイトにあなたのスタイルを設定�
 
 ```css
 h1 a, h2 a {
-    color: #FF8833;
+    color: #C25100;
 }
 
 ```
@@ -113,24 +112,24 @@ CSSセレクタについては[CSS Selectors in w3schools](http://www.w3schools.
 
 ```html
 {% load static %}
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-        <div>
+        <header>
             <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+        </header>
 
         {% for post in posts %}
-            <div>
-                <p>published: {{ post.published_date }}</p>
+            <article>
+                <time>published: {{ post.published_date }}</time>
                 <h2><a href="">{{ post.title }}</a></h2>
                 <p>{{ post.text|linebreaksbr }}</p>
-            </div>
+            </article>
         {% endfor %}
     </body>
 </html>
@@ -181,26 +180,28 @@ h1 a, h2 a {
 
 前述のように、CSSはクラスの概念を持っています。 それにより、HTMLコードの一部に名前を指定し、他の部分に影響を与えずにこの部分にだけスタイルを適用することができます。 なんて便利なんでしょう！ 例えば、２つのdiv要素（ヘッダーと記事など）があったとして、これらのそれぞれに違うスタイルを適用することができます。 クラスを利用すると、違う見た目にできるのです。
 
-先に進んで、HTMLコードの一部に名前をつけましょう。ヘッダーを含む`div` 要素に、`page-header` というクラス名をつけましょう：
+Go ahead and name some parts of the HTML code. Replace the `header` that contains your header with the following:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<div class="page-header">
-    <h1><a href="/">Django Girls Blog</a></h1>
-</div>
+<header class="page-header">
+    <div class="container">
+        <h1><a href="/">Django Girls Blog</a></h1>
+    </div>
+</header>
 ```
 
-さらにブログ投稿を含む `div` 要素に `post` というクラス名をつけましょう。
+And now add a class `post` to your `article` containing a blog post.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<div class="post">
-    <p>published: {{ post.published_date }}</p>
+<article class="post">
+    <time>published: {{ post.published_date }}</time>
     <h2><a href="">{{ post.title }}</a></h2>
     <p>{{ post.text|linebreaksbr }}</p>
-</div>
+</article>
 ```
 
 そして、さまざまなセレクタに宣言ブロックを追加します。 `.` で始まるセレクタはクラスに関連します。 Web上にはCSSに関する多くのチュートリアルがあり、それらは以下に示すコードを理解する手助けになるはずです。 今のところは、`blog/static/css/blog.css` のファイルに以下の内容をコピー＆ペーストしましょう：
@@ -211,20 +212,23 @@ h1 a, h2 a {
 .page-header {
     background-color: #C25100;
     margin-top: 0;
+    margin-bottom: 40px;
     padding: 20px 20px 20px 40px;
 }
 
-.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+.page-header h1,
+.page-header h1 a,
+.page-header h1 a:visited,
+.page-header h1 a:active {
     color: #ffffff;
     font-size: 36pt;
     text-decoration: none;
 }
 
-.content {
-    margin-left: 40px;
-}
-
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Lobster', cursive;
 }
 
@@ -236,11 +240,14 @@ h1, h2, h3, h4 {
     float: right;
 }
 
-.post-form textarea, .post-form input {
+.post-form textarea,
+.post-form input {
     width: 100%;
 }
 
-.top-menu, .top-menu:hover, .top-menu:visited {
+.top-menu,
+.top-menu:hover,
+.top-menu:visited {
     color: #ffffff;
     float: right;
     font-size: 26pt;
@@ -251,8 +258,26 @@ h1, h2, h3, h4 {
     margin-bottom: 70px;
 }
 
-.post h2 a, .post h2 a:visited {
+.post h2 a,
+.post h2 a:visited {
     color: #000000;
+}
+
+.post > .date,
+.post > .actions {
+    float: right;
+}
+
+.btn-default,
+.btn-default:visited {
+    color: #C25100;
+    background: none;
+    border-color: #C25100;
+}
+
+.btn-default:hover {
+    color: #FFFFFF;
+    background-color: #C25100;
 }
 ```
 
@@ -262,11 +287,11 @@ h1, h2, h3, h4 {
 
 ```html
 {% for post in posts %}
-    <div class="post">
-        <p>published: {{ post.published_date }}</p>
+    <article class="post">
+        <time>published: {{ post.published_date }}</time>
         <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    </article>
 {% endfor %}
 ```
 
@@ -275,21 +300,21 @@ h1, h2, h3, h4 {
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<div class="content container">
+<main class="container">
     <div class="row">
-        <div class="col-md-8">
+        <div class="col">
             {% for post in posts %}
-                <div class="post">
-                    <div class="date">
-                        <p>published: {{ post.published_date }}</p>
-                    </div>
+                <article class="post">
+                    <time class="date">
+                        {{ post.published_date }}
+                    </time>
                     <h2><a href="">{{ post.title }}</a></h2>
                     <p>{{ post.text|linebreaksbr }}</p>
-                </div>
+                </article>
             {% endfor %}
         </div>
     </div>
-</div>
+</main>
 ```
 
 ファイルを保存してWebサイトを更新してみましょう。
