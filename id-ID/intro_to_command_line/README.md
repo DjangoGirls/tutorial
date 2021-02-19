@@ -164,12 +164,12 @@ So what's in it? It'd be cool to find out. Let's see:
 
 {% filename %}command-line{% endfilename %}
 
-    > dir  
-    Directory of C:\Users\olasitarska 
-    05/08/2014 07:28 PM <DIR> Applications 
-    05/08/2014 07:28 PM <DIR> Desktop 
-    05/08/2014 07:28 PM <DIR> Downloads 
-    05/08/2014 07:28 PM <DIR> Music 
+    > dir
+     Directory of C:\Users\olasitarska
+    05/08/2020 07:28 PM <DIR>      Applications
+    05/08/2020 07:28 PM <DIR>      Desktop
+    05/08/2020 07:28 PM <DIR>      Downloads
+    05/08/2020 07:28 PM <DIR>      Music
     ...
     
 
@@ -291,7 +291,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
     > cd practice
     > mkdir test
     > dir
-    05/08/2014 07:28 PM <DIR>      test
+    05/08/2020 07:28 PM <DIR>      test
     
 
 <!--endsec-->
