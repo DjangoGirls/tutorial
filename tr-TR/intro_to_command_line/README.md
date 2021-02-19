@@ -163,11 +163,12 @@ Yani içeride ne var? Bilmek harika olurdu. Haydi bakalım:
 
 {% filename %}command-line{% endfilename %}
 
-    > dir  Directory of C:\Users\zeynep 
-    05/08/2014 07:28 PM <DIR> Uygulamalar 
-    05/08/2014 07:28 PM <DIR> Masaüstü 
-    05/08/2014 07:28 PM <DIR> İndirilenler 
-    05/08/2014 07:28 PM <DIR> Müzik 
+    > dir
+     Directory of C:\Users\olasitarska
+    05/08/2020 07:28 PM <DIR>      Applications
+    05/08/2020 07:28 PM <DIR>      Desktop
+    05/08/2020 07:28 PM <DIR>      Downloads
+    05/08/2020 07:28 PM <DIR>      Music
     ...
     
 
@@ -286,10 +287,10 @@ Sizin için ufak bir alıştırma: yeni oluşturduğunuz `uygulama` dizininde `t
 
 {% filename %}command-line{% endfilename %}
 
-    > cd uygulama
+    > cd practice
     > mkdir test
     > dir
-    05/08/2014 07:28 PM <DIR>      test
+    05/08/2020 07:28 PM <DIR>      test
     
 
 <!--endsec-->
