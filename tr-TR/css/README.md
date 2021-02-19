@@ -126,7 +126,7 @@ Tarayıcı, dosyaları verilen sırada okuyor. O yüzden doğru yerde olduğunda
 
         {% for post in posts %}
             <article>
-                <time>published: {{ post.published_date }}</time>
+                <time>yayınlandı: {{ post.published_date }}</time>
                 <h2><a href="">{{ post.title }}</a></h2>
                 <p>{{ post.text|linebreaksbr }}</p>
             </article>
@@ -198,7 +198,7 @@ And now add a class `post` to your `article` containing a blog post.
 
 ```html
 <article class="post">
-    <time>published: {{ post.published_date }}</time>
+    <time>yayınlandı: {{ post.published_date }}</time>
     <h2><a href="">{{ post.title }}</a></h2>
     <p>{{ post.text|linebreaksbr }}</p>
 </article>
@@ -288,7 +288,7 @@ Sonra, blog gönderilerini gösteren HTML kodunu, sınıf bildirimleri içine al
 ```html
 {% for post in posts %}
     <article class="post">
-        <time>published: {{ post.published_date }}</time>
+        <time>yayınlandı: {{ post.published_date }}</time>
         <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </article>
