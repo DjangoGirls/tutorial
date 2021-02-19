@@ -40,6 +40,7 @@ HTMLは、「HyperText Markup Language」の頭文字を取ったものです。
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
 <body>
     <p>Hi there!</p>
@@ -54,8 +55,9 @@ HTMLは、「HyperText Markup Language」の頭文字を取ったものです。
 
 動いています。よくできました! :)
 
-* どんなウェブページでも、最も基本的なタグである`<html>`から始まり、そして常に、`</html>`で終わります。 みなさん見てとれるように、ウェブサイトの全てのコンテンツは、開始タグの`<html>`と閉じタグ`</html>`の間にあります。
-* `<p>`は、段落要素のためのタグです; `</p>` でそれぞれの段落を閉じます。
+* The line `<!DOCTYPE html>` is not a HTML tag. It only declares the document type. Here, it informs the browser that document type is [HTML5](https://html.spec.whatwg.org/#the-doctype). This is always the beginning of any HTML5 file.
+* The most basic tag, `<html>`, is always the beginning of html content and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
+* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
 
 ## HeadとBody
 
@@ -72,6 +74,7 @@ HTMLは、「HyperText Markup Language」の頭文字を取ったものです。
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Ola's blog</title>
@@ -109,40 +112,49 @@ HTMLは、「HyperText Markup Language」の頭文字を取ったものです。
 * `<a href="https://djangogirls.org">リンク</a>` はリンクを生成します
 * `<ul><li>第１の項目</li><li>第２の項目</li></ul>` でリストを作成する、こんな感じに！
 * `<div></div>`はページ内のセクションを定義
+* `<nav></nav>` defines a set of navigation links
+* `<article></article>` specifies independent, self-contained content
+* `<section></section>` defines a section in a document
+* `<header></header>` specifies a header for a document or section
+* `<main></main>` specifies the main content of a document
+* `<aside></aside>` defines some content aside from the content it is placed in (like a sidebar)
+* `<footer></footer>` defines a footer for a document or section
+* `<time></time>` defines a specific time (or datetime)
 
 いろんな要素をまとめたテンプレートの例がこれです。コピーして`blog/templates/blog/post_list.html`に貼り付けてみましょう:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
     </head>
     <body>
-        <div>
+        <header>
             <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+        </header>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
             <h2><a href="">My first post</a></h2>
-            <p>Aenean eu leo quam. こんにちは！ よろしくお願いします！ </p>
-        </div>
+            <p>Aenean eu leo quam. こんにちは！ よろしくお願いします！ Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        </article>
 
-        <div>
-            <p>公開日: 2014/06/14, 12:14</p>
-            <h2><a href="">2番目の投稿</a></h2>
-            <p> こんにちは！ よろしくお願いします！ </p>
-        </div>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
+            <h2><a href="">My second post</a></h2>
+            <p>Aenean eu leo quam. こんにちは！ よろしくお願いします！ Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
+        </article>
     </body>
 </html>
 ```
 
-ここで3つの `div` セクションを作成しました。
+We've created one `header` section and two `article` section here.
 
-* 最初の `div` 要素には、私たちのブログのタイトルが含まれています。見出しとリンクです。
-* その他の2つの`div`要素には、このブログに投稿された記事が公開日とともに記載されています。`h2`はクリック可能な記事のタイトルです。2つの`p`(段落) は、1つが日付で、1つがブログに投稿された記事です。
+* The `header` element contains the title of our blog – it's a heading and a link
+* Another two `article` elements contain our blog posts with a published date in `time` element, `h2` with a post title that is clickable and a `p` (paragraph) of text for our blog post.
 
 その結果、次のような結果が得られます。
 
