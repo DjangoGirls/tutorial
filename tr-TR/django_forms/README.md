@@ -97,11 +97,11 @@ Satırı düzenledikten sonra, HTML dosyanız artık şu şekilde görünmelidir
 </html>
 ```
 
-After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
+Dosyayı kaydedip http://127.0.0.1:8000 sayfasını yeniledikten sonra, siz de bilindik `NoReverseMatch` hatasını görüyor olmalısınız, görüyorsunuz değil mi? Güzel!
 
 ## URL
 
-We open `blog/urls.py` in the code editor and add a line:
+`blog/urls.py` dosyasını açıp şu satırı ekleyelim:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -109,7 +109,7 @@ We open `blog/urls.py` in the code editor and add a line:
 path('post/new/', views.post_new, name='post_new'),
 ```
 
-And the final code will look like this:
+Ve kodun son hali şu şekilde görünecektir:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -124,11 +124,11 @@ urlpatterns = [
 ]
 ```
 
-After refreshing the site, we see an `AttributeError`, since we don't have the `post_new` view implemented. Let's add it right now.
+Sayfayı yeniledikten sonra `post_new` view'ını oluşturmadığımız için `AttributeError` hatası alacağız. Şimdi onu ekleyelim.
 
 ## post_new view
 
-Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
+Şimdi `blog/views.py` dosyasını açıp aşağıdaki satırları diğer `from` satırlarının olduğu yere ekleyelim:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -136,7 +136,7 @@ Time to open the `blog/views.py` file in the code editor and add the following l
 from .forms import PostForm
 ```
 
-And then our *view*:
+Ve sonra bizim *view*'ımız:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -146,7 +146,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-To create a new `Post` form, we need to call `PostForm()` and pass it to the template. We will go back to this *view*, but for now, let's quickly create a template for the form.
+Yeni bir `Post` formu oluşturmak için `PostForm()` fonksiyonunu çağırmak ve template'e iletmek gerekir. *view* kısmına geri döneceğiz, ancak şimdilik form için bir template oluşturalım.
 
 ## Template
 
@@ -295,9 +295,9 @@ Django is taking care to validate that all the fields in our form are correct. I
 
 Now we know how to add a new post. But what if we want to edit an existing one? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
 
-First, let's save the icon which represents the edit button. Download [pencil-fill.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/pencil-fill.svg) and save it to the location `blog/templates/blog/icons/`.
+Öncelikle düzenleme butonunu temsil eden ikonu kaydedelim. [pencil-fill.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/pencil-fill.svg) dosyasını indirin ve `blog/templates/blog/icons/` konumuna kaydedin.
 
-Open `blog/templates/blog/post_detail.html` in the code editor and add the following code inside `article` tag:
+Kod düzenleyicide `blog/templates/blog/post_detail.html` açın ve aşağıdaki kodu `article` etiketinin içine ekleyin:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
