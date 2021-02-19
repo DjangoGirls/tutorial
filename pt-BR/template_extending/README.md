@@ -23,34 +23,36 @@ Em seguida, abra o arquivo no editor de código e copie tudo de `post_list.html`
 
 ```html
 {% load static %}
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-        <div class="page-header">
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+        <header class="page-header">
+          <div class="container">
+              <h1><a href="/">Django Girls Blog</a></h1>
+          </div>
+        </header>
 
-        <div class="content container">
+        <main class="container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col">
                 {% for post in posts %}
-                    <div class="post">
-                        <div class="date">
+                    <article class="post">
+                        <time class="date">
                             {{ post.published_date }}
-                        </div>
-                        <h1><a href="">{{ post.title }}</a></h1>
+                        </time>
+                        <h2><a href="">{{ post.title }}</a></h2>
                         <p>{{ post.text|linebreaksbr }}</p>
-                    </div>
+                    </article>
                 {% endfor %}
                 </div>
             </div>
-        </div>
+        </main>
     </body>
 </html>
 ```
@@ -61,17 +63,19 @@ Então, em `base.html`, substitua todo o seu `<body>` (tudo entre `<body>` e `</
 
 ```html
 <body>
-    <div class="page-header">
-        <h1><a href="/">Django Girls Blog</a></h1>
-    </div>
-    <div class="content container">
+    <header class="page-header">
+      <div class="container">
+          <h1><a href="/">Django Girls Blog</a></h1>
+      </div>
+    </header>
+    <main class="container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col">
             {% block content %}
             {% endblock %}
             </div>
         </div>
-    </div>
+    </main>
 </body>
 ```
 
@@ -92,13 +96,13 @@ Agora, salve `base.html` e abra novamente o seu `blog/templates/blog/post_list.h
 
 ```html
 {% for post in posts %}
-    <div class="post">
-        <div class="date">
+    <article class="post">
+        <time class="date">
             {{ post.published_date }}
-        </div>
+        </time>
         <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    </article>
 {% endfor %}
 ```
 
@@ -111,13 +115,13 @@ Queremos usar isso como parte do nosso template para todos os blocos de conteúd
 ```html
 {% block content %}
     {% for post in posts %}
-        <div class="post">
-            <div class="date">
+        <article class="post">
+            <time class="date">
                 {{ post.published_date }}
-            </div>
+            </time>
             <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
-        </div>
+        </article>
     {% endfor %}
 {% endblock %}
 ```
@@ -131,13 +135,13 @@ Só falta uma coisa. Precisamos juntar estes dois templates. Isto é o que signi
 
 {% block content %}
     {% for post in posts %}
-        <div class="post">
-            <div class="date">
+        <article class="post">
+            <time class="date">
                 {{ post.published_date }}
-            </div>
+            </time>
             <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
-        </div>
+        </article>
     {% endfor %}
 {% endblock %}
 ```
