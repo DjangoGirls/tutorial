@@ -57,7 +57,7 @@ Bunu kendi template'imizle deneyelim.
 
 {% for post in posts %}
     <article>
-        <time>published: {{ post.published_date }}</time>
+        <time>yayınlandı: {{ post.published_date }}</time>
         <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </article>
