@@ -40,6 +40,7 @@ No error anymore! Congratulations! :) However, your website isn't actually publi
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
 <body>
     <p>Hi there!</p>
@@ -54,8 +55,9 @@ Báwo wá ni ààyè ayélujára rẹ ṣe rí ní báyìí? Ṣàbẹ̀wò rẹ
 
 It worked. Nice work there! :)
 
-* Àmì tó ṣe pàtàkì jù náà, `<html>`, máa n jẹ́ ìbẹ̀rẹ̀ èyíkéyìí ojú-ìwé ayélujára àti pé `</html>` máa n jẹ́ ìparí náà. Gẹ́gẹ́ bó o ṣe ríi, gbogbo àkóónú ààyè ayélujára náà máa wà láàrín àmì ìbẹ̀rẹ̀ `<html>` àti àmì ìparí `</html>` náà
-* `<p>` jẹ́ àmì kan fún àwọn element ìpínrọ: `</p>` yíò parí ìpínrọ kọ̀ọ̀kan
+* The line `<!DOCTYPE html>` is not a HTML tag. It only declares the document type. Here, it informs the browser that document type is [HTML5](https://html.spec.whatwg.org/#the-doctype). This is always the beginning of any HTML5 file.
+* The most basic tag, `<html>`, is always the beginning of html content and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
+* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
 
 ## Orí àti ara
 
@@ -72,6 +74,7 @@ Fún àpẹẹrẹ, o lè fi element àkọlé ojú-ìwé ayélujára kan sínú
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Ola's blog</title>
@@ -109,40 +112,49 @@ O lè wá ṣeré díẹ̀ báyìí kí o gbìyànjú láti ṣe àwòṣe rẹ 
 * `<a href="https://djangogirls.org">atọ́ka</a>` yíò ṣẹ̀dá atọ́ka kan
 * `<ul><li>nǹkan àkọ́kọ́</li><li>nǹkan èkejì</li></ul>` yíò ṣe àkójọ kan, gẹ́gẹ́ bí eléyìí!
 * `<div></div>` yíò ṣàlàyé abala kan ti ojú-ìwé náà
+* `<nav></nav>` defines a set of navigation links
+* `<article></article>` specifies independent, self-contained content
+* `<section></section>` defines a section in a document
+* `<header></header>` specifies a header for a document or section
+* `<main></main>` specifies the main content of a document
+* `<aside></aside>` defines some content aside from the content it is placed in (like a sidebar)
+* `<footer></footer>` defines a footer for a document or section
+* `<time></time>` defines a specific time (or datetime)
 
 Àpẹẹrẹ àwòṣe kíkún kan nìyí, ṣàdàkọ rẹ̀ sínú `blog/templates/blog/post_list.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
     </head>
     <body>
-        <div>
+        <header>
             <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+        </header>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
             <h2><a href="">My first post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
+        </article>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
             <h2><a href="">My second post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
+        </article>
     </body>
 </html>
 ```
 
-A ti ṣẹ̀dá àwọn abala `div` mẹ́ta níbí.
+We've created one `header` section and two `article` section here.
 
-* Element `div` àkọ́kọ́ náà kó àkọlé blog wa sínú – ó jẹ́ àkọsórí kan àti atọ́ka kan
-* Àwọn element `div` méjì mìíràn kó àwọn àròkọ blog wa sínú pẹ̀lú ọjọ́ ìtẹ̀jáde kan, `h2` pẹ̀lú àkọlé àròkọ kan tó lè gba títẹ̀ àti àwọn `p` (ìpínrọ̀) ọ̀rọ̀ méjì, ọ̀kan fún ọjọ́ náà àti ọ̀kan fún àròkọ blog wa.
+* The `header` element contains the title of our blog – it's a heading and a link
+* Another two `article` elements contain our blog posts with a published date in `time` element, `h2` with a post title that is clickable and a `p` (paragraph) of text for our blog post.
 
 Yóò fún wa ní àbájáde yìí:
 
