@@ -44,52 +44,64 @@ class PostForm(forms.ModelForm):
 
 ## 폼과 페이지 링크
 
-`blog/templates/blog/base.html` 파일을 코드 에디터로 열어봅시다. `page-header` 라는 `div` class 에 링크를 하나 추가할거에요.
+Before we add the link, we need some icons to use as buttons for the link. For this tutorial, download [file-earmark-plus.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/file-earmark-plus.svg) and save it in the folder `blog/templates/blog/icons/`
+
+> Note: To download the SVG image, open the context menu on the link (usually by right-clicking on it) and select "Save link as". In the dialog asking you where to save the file, navigate to the `djangogirls` directory of your Django project, and within that to subdirectory `blog/templates/blog/icons/`, and save the file there.
+
+It's time to open `blog/templates/blog/base.html` in the code editor. Now we can use this icon file inside the base template as follow. In the `div` tag inside `header` section, we will add a link before `h1` tag:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
-<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+<a href="{% url 'post_new' %}" class="top-menu">
+    {% include './icons/file-earmark-plus.svg' %}
+</a>
 ```
 
-이 새로운 뷰는 `post_new`입니다. 부트스트랩 테마에 있는 `"glyphicon glyphicon-plus"` 클래스로 더하기 기호가 보이게 됩니다.
+Note that we want to call our new view `post_new`. The [SVG icon](https://icons.getbootstrap.com/icons/file-earmark-plus/) is provided by the [Bootstrap Icons](https://icons.getbootstrap.com/) and it will display a page icon with plus sign. We use a Django template directive called `include`. This will inject the file's content into the Django template. The web browser knows how to handle this type of content without any further processing.
 
-위 구문을 추가하고 나면, 이제 HTML 파일이 아래처럼 보일거에요.
+> You can download all the Bootstrap icons [here](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip). Unzip the file and copy all the SVG image files into a new folder inside `blog/templates/blog/` called `icons`. That way you can access an icon like `pencil-fill.svg` using the file path `blog/templates/blog/icons/pencil-fill.svg`
+
+After editing the line, your HTML file should now look like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
 {% load static %}
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-        <div class="page-header">
-            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
-        <div class="content container">
+        <header class="page-header">
+            <div class="container">
+                <a href="{% url 'post_new' %}" class="top-menu">
+                    {% include './icons/file-earmark-plus.svg' %}
+                </a>
+                <h1><a href="/">Django Girls Blog</a></h1>
+            </div>
+        </header>
+        <main class="content container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col">
                     {% block content %}
                     {% endblock %}
                 </div>
             </div>
-        </div>
+        </main>
     </body>
 </html>
 ```
 
-페이지를 저장하고 나서 http://127.0.0.1:8000 페이지를 새로고침 해보면, `NoReverseMatch`이 에러가 나타나죠?
+After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
 
 ## URL
 
-이제 코드 에디터에서 `blog/urls.py` 을 열고 아래 구문을 추가하겠습니다:
+We open `blog/urls.py` in the code editor and add a line:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -97,12 +109,12 @@ class PostForm(forms.ModelForm):
 path('post/new/', views.post_new, name='post_new'),
 ```
 
-전체 코드는 아래와 같을 거에요.
+And the final code will look like this:
 
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-from django.urls import path 
+from django.urls import path
 from . import views
 
 urlpatterns = [
@@ -112,11 +124,11 @@ urlpatterns = [
 ]
 ```
 
-브라우저에 사이트를 다시 불러오면 `AttributeError`가 보이게 됩니다. 왜냐하면 아직 우리는 `post_new`뷰를 구현하지 않았기 때문이죠. 이제 하나 추가해봅시다.
+After refreshing the site, we see an `AttributeError`, since we don't have the `post_new` view implemented. Let's add it right now.
 
 ## 새로운 뷰 게시
 
-코드 에디터로 `blog/views.py` 파일을 열어서 `from` 아랫줄에 아래와 같은 코드를 추가합니다.
+Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -124,7 +136,7 @@ urlpatterns = [
 from .forms import PostForm
 ```
 
-그리고 *view*에 추가합니다.
+And then our *view*:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -134,20 +146,20 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-새 `Post` 폼을 추가하기 위해 `PostForm()` 함수를 호출하도록 하여 템플릿에 넘깁니다. 이따가 *view*로 다시 돌아와서 이 작업을 하겠지만, 지금 당장은 폼을 위한 템플릿을 먼저 빨리 만들어보도록 할게요.
+To create a new `Post` form, we need to call `PostForm()` and pass it to the template. We will go back to this *view*, but for now, let's quickly create a template for the form.
 
 ## 템플릿
 
-이번에는 코드 에디터로 `blog/templates/blog` 디렉토리 안에 `post_edit.html` 파일을 생성해 폼이 작동할 수 있게 만들거에요.
+We need to create a file `post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
 
 * 이제 폼을 나타나게 할거에요. 예를 들어 {% raw %}`{{ form.as_p }}`{% endraw %} 로 나타나게 할 수 있답니다.
 * 위 코드를 HTML태그로 폼을 감싸세요. `<form method="POST">...</form>`.
 * `Save` 버튼이 필요합니다. 이 것은 HTML 버튼으로 만들 수 있어요: `<button type="submit">Save</button>`.
 * 그리고 마지막으로 열린 `<form ...>` 태그에 {% raw %}`{% csrf_token %}`{% endraw %}를 추가해야 해요. 이 작업은 폼 보안을 위해 중요하답니다! 만약 이걸 잊어버린다면, 장고는 당신이 폼을 저장할때 주의를 시킬 거에요.
 
-![CSFR 서버가 허용하지 않는 웹 페이지(Forbidden page)](images/csrf2.png)
+![CSFR Forbidden page](images/csrf2.png)
 
-네, 이제 `post_edit.html` 파일의 HTML을 확인해볼게요:
+OK, so let's see how the HTML in `post_edit.html` should look:
 
 {% filename %}blog/templates/blog/post_edit.html{% endfilename %}
 
@@ -163,19 +175,19 @@ def post_new(request):
 {% endblock %}
 ```
 
-다 작성했으면 화면을 다시 불러옵시다! 여러분의 폼이 이렇게 나타났나요!
+Time to refresh! Yay! Your form is displayed!
 
-![새 폼(New form)](images/new_form2.png)
+![New form](images/new_form2.png)
 
-그런데, 잠깐만요! `title`과 `text` 필드에 아무거나 입력하고 저장해보세요. 어떻게 됐나요?
+But, wait a minute! When you type something in the `title` and `text` fields and try to save it, what will happen?
 
-글이 사라졌어요! 한번 더 해봐도 내가 입력한 글들은 어디론가로 사라지고는 새 글이 추가되지 않아요. 뭐가 잘못된걸까요?
+Nothing! We are once again on the same page and our text is gone… and no new post is added. So what went wrong?
 
-정답은요: 여러분이 잘못한 게 없어요. 단지 *view*에 조금 작업이 필요할 뿐이에요.
+The answer is: nothing. We need to do a little bit more work in our *view*.
 
 ## 폼 저장하기
 
-코드 에디터로 `blog/views.py`를 다시 여세요. 지금 여러분이 보고 있는 `post_new` 뷰는 아래와 같을 거에요:
+Open `blog/views.py` once again in the code editor. Currently all we have in the `post_new` view is the following:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -185,9 +197,9 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-우리가 폼을 제출할 때, 동일한 뷰를 불러옵니다. 이 때 `request`에는 우리가 입력했던 데이터들을 가지고 있는데, `request.POST`가 이 데이터를 가지고 있습니다. (POST는 글 데이터를 "등록하는(posting)"하는 것을 의미합니다. 블로그 "글"을 의미하는 "post"과 관련이 없어요.) HTML에서 `<form>`정의에 `method="POST"`라는 속성이 있던 것이 기억나나요? 이렇게 POST로 넘겨진 폼 필드의 값들은 이제 `request.POST`에 저장됩니다. `POST`로 된 값을 다른 걸로 바꾸면 안돼요.(`method` 속성의 값으로 넣을 수 있는 유효한 값 중에 `GET` 같은 것도 있지만 post와 어떤 차이점이 있는지 등에 대해서 다루기에는 너무 길어질 것 같아 생략할게요.)
+When we submit the form, we are brought back to the same view, but this time we have some more data in `request`, more specifically in `request.POST` (the naming has nothing to do with a blog "post"; it's to do with the fact that we're "posting" data). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? All the fields from the form are now in `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
 
-그래서 우리의 *view*에서는 두 개의 상황을 부리해서 다뤄야해요. 첫째, 우리가 페이지에 처음 접속시 빈 폼을 원할때에요. 그리고 둘 째, *view*로 되돌아 갔을때 우리가 입력한 데이터가 폼 데이터를 포함할 때에요. 여기서 조건문을 추가시켜야해요. (`if`을 사용할게요):
+So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. So we need to add a condition (we will use `if` for that):
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -198,7 +210,7 @@ else:
     form = PostForm()
 ```
 
-`[...]` 에 입력할 시간이에요. `method` 가 `POST` 일때 `PostForm` 을 폼에서 받은 데이터로 구성하고 싶어요, 맞죠? 아래와 같이 해보아요.
+It's time to fill in the dots `[...]`. If `method` is `POST` then we want to construct the `PostForm` with data from the form, right? We will do that as follows:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -206,9 +218,9 @@ else:
 form = PostForm(request.POST)
 ```
 
-참 쉽죠! 다음에는 폼에 들어있는 값들이 올바른지를 확인해야합니다.(모든 필드에는 값이 있어야하고 잘못된 값이 있다면 저장하면 되지 않아야해요.) 이를 위해 `form.is_valid()`을 사용할거에요.
+The next thing is to check if the form is correct (all required fields are set and no incorrect values have been submitted). We do that with `form.is_valid()`.
 
-폼에 입력된 값이 올바른지 확인한 다음, 저장되는거죠!
+We check if the form is valid and if so, we can save it!
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -220,9 +232,9 @@ if form.is_valid():
     post.save()
 ```
 
-일반적으로, 이 작업을 두 단계로 나눌 수 있어요: `form.save`로 폼을 저장하는 작업과 작성자를 추가하는 작업입니다.(`PostForm`에는 `작성자(author)` 필드가 없지만, 필드 값이 필요하죠). `commit=False`란 넘겨진 데이터를 바로 `Post` 모델에 저장하지는 말라는 뜻입니다. - 왜냐하면 작성자를 추가한 다음 저장해야하니까요. 대부분의 경우에는 `commit=False`를 쓰지 않고 바로 `form.save()`를 사용해서 저장해요. 다면 여기서는 작성자 정보를 추가하고 저장해야하기 때문에 commit=False를 사용하는 거에요. `post.save()`는 변경사항(작성자 정보를 포함)을 유지할 것이고 새 블로그 글이 만들어 질거에요!
+Basically, we have two things here: we save the form with `form.save` and we add an author (since there was no `author` field in the `PostForm` and this field is required). `commit=False` means that we don't want to save the `Post` model yet – we want to add the author first. Most of the time you will use `form.save()` without `commit=False`, but in this case, we need to supply it. `post.save()` will preserve changes (adding the author) and a new blog post is created!
 
-끝으로, 새 블로그 글을 작성한 다음에 `post_detail` 페이지로 바로 이동할 수 있으면 좋겠죠? 이 작업을 하려면 한 가지를 더 불러와야해요.
+Finally, it would be awesome if we could immediately go to the `post_detail` page for our newly created blog post, right? To do that we need one more import:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -230,7 +242,7 @@ if form.is_valid():
 from django.shortcuts import redirect
 ```
 
-위 코드를 여러분의 파일 맨 위에 추가하세요. 그리고 새로 작성한 글을 볼 수 있도록 `post_detail` 페이지로 가라고 수정합시다":
+Add it at the very beginning of your file. And now we can say, "go to the `post_detail` page for the newly created post":
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -238,9 +250,9 @@ from django.shortcuts import redirect
 return redirect('post_detail', pk=post.pk)
 ```
 
-`blog.views.post_detail`은 이동해야 할 뷰의 이름이에요. *post_detail 뷰*는 `pk`변수가 필요한 거 기억하고 있겠죠? `pk=post.pk`를 사용해서 뷰에게 값을 넘겨줄 거에요. 여기서 `post`는 새로 생성한 블로그 글이에요.
+`post_detail` is the name of the view we want to go to. Remember that this *view* requires a `pk` variable? To pass it to the views, we use `pk=post.pk`, where `post` is the newly created blog post!
 
-잘 했어요. 너무 설명이 길어졌네요... 이제 *view*의 전체 코드를 확인할게요.
+OK, we've talked a lot, but we probably want to see what the whole *view* looks like now, right?
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -259,39 +271,45 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-잘 작동하는지 확인해보세요. http://127.0.0.1:8000/post/new/ 페이지로 접속해서 `title`과 `text`를 입력하고, 저장하세요! 새로운 블로그 글이 추가되고 `post_detail` 페이지가 나타났어요!
+Let's see if it works. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it… and voilà! The new blog post is added and we are redirected to the `post_detail` page!
 
-아마 우리가 아직 게시 일자를 세팅하지 않은 것을 눈치챘을 지 모르겠군요. 이 부분은 **Django Girls 튜터리얼: 확장**의 *게시하기 버튼* 챕터에서 다룰 것입니다.
+You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a *publish button* in **Django Girls Tutorial: Extensions**.
 
-모두 잘 해냈어요!
+That is awesome!
 
-> 앞서 우리가 사용한 장고 관리자 인터 페이스처럼 로그인 된 상태라고 생각해봅시다. 하지만 사용자가 로그아웃이 되는 상황이 발생하기도 하죠.(브라우저가 닫히거나, DB가 재시작된다던가 등) 만약 로그인 되지 않은 상태에서 새 글을 저장한다면, 사용자가 로그인 정보가 부족해 누가 글을 작성한지 알 수 없어 글을 저장할 때 오류가 발생하고, 로그인시키도록 http://127.0.0.1:8000/admin 관리자 페이지가 나타나게 될 거에요. 이 문제는 금방 해결할 수 있어요. 다만 이건 이 튜터리얼 후에 해야할 **과제(Homework): 여러분의 사이트에 보안 추가하기** 챕터로 남겨놓겠습니다.
+> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
 
-![로그인 오류 (Logged in error)](images/post_create_error.png)
+![Logged in error](images/post_create_error.png)
 
 ## 폼 검증하기
 
-이제 장고 폼이 얼마나 멋진지 알아볼 차례에요. 블로그 글은 `title`과 `test` 필드가 반드시 있어야해요. 우리가 만든 `Post` 모델에서는 이 필드 값들이 필요없다고 했지만(`published_date`는 제외하고) 장고는 모두 기본 값으로 설정되어 있다고 생각합니다.
+Now, we will show you how cool Django forms are. A blog post needs to have `title` and `text` fields. In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
 
-`title`와 `text`가 없이 폼을 저장해보세요. 어떻게 될지 생각해보세요!
+Try to save the form without `title` and `text`. Guess what will happen!
 
-![폼 검증하기](images/form_validation2.png)
+![Form validation](images/form_validation2.png)
 
-장고는 모든 필드의 값이 올바른지 검증할 수 있답니다. 정말 멋지죠?
+Django is taking care to validate that all the fields in our form are correct. Isn't it awesome?
 
 ## 폼 수정하기
 
-지금까지 새 게시물을 추가하는 방법에 대해 배웠어요. 하지만 이미 있던 글을 수정하려면 어떻게 해야할까요? 이 것도 앞서 했던 것과 매우 비슷해요. 빨리 해보도록 합시다! (만약 여러분이 뭔가 이해하지 못하는 부분이 있다면, 여러분의 코치에게 이전 챕터의 내용에 대해서 물어보고 차례대로 하나씩 해결해 나가야합니다)
+Now we know how to add a new post. But what if we want to edit an existing one? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
 
-코드에디터로 `blog/templates/blog/post_detail.html`파일을 열어 아래와 같이 작성된 라인을 찾아주세요:
+First, let's save the icon which represents the edit button. Download [pencil-fill.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/pencil-fill.svg) and save it to the location `blog/templates/blog/icons/`.
+
+Open `blog/templates/blog/post_detail.html` in the code editor and add the following code inside `article` tag:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
 ```html
-<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+<aside class="actions">
+    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+      {% include './icons/pencil-fill.svg' %}
+    </a>
+</aside>
 ```
 
-이제 템플릿이 아래처럼 보일 거에요:
+so that the template will look like this:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -299,20 +317,24 @@ def post_new(request):
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <div class="post">
+    <article class="post">
+        <aside class="actions">
+            <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+                {% include './icons/pencil-fill.svg' %}
+            </a>
+        </aside>
         {% if post.published_date %}
-            <div class="date">
+            <time class="date">
                 {{ post.published_date }}
-            </div>
+            </time>
         {% endif %}
-        <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
         <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    </article>
 {% endblock %}
 ```
 
-이제 코드 에디터에서 `blog/urls.py` 을 열고 아래 구문을 추가하겠습니다:
+Open `blog/urls.py` in the code editor, and add this line:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -320,9 +342,9 @@ def post_new(request):
     path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
 ```
 
-우리는 `blog/templates/blog/post_edit.html` 템플릿을 재사용할 거에요. 마지막으로 할 일은 *view*를 만드는 것입니다.
+We will reuse the template `blog/templates/blog/post_edit.html`, so the last missing thing is a *view*.
 
-코드 에디터로 `blog/views.py` 파일을 열어서 파일의 맨 밑에 코드를 추가해봅시다:
+Let's open `blog/views.py` in the code editor and add this at the very end of the file:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -342,7 +364,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-음.. 코드가 `post_new`과 거의 비슷해보이지 않나요? 하지만 완전히 같지는 않아요. 첫 번째: `url`로부터 추가로 `pk` 매개변수를 받아서 처리합니다. 두번째: `get_object_or_404(Post, pk=pk)`를 호출하여 수정하고자 하는 글의 `Post` 모델 `인스턴스(instance)`로 가져옵니다(원하는 글은 pk를 이용해 찾습니다.). 이렇게 가져온 데이터를 폼을 만들 때와(글을 수정할 때 폼에 이전에 입력했던 데이터가 있어야 하겠죠?) 폼을 저장할 때 사용하게 됩니다...
+This looks almost exactly the same as our `post_new` view, right? But not entirely. For one, we pass an extra `pk` parameter from `urls`. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -350,7 +372,7 @@ def post_edit(request, pk):
 form = PostForm(request.POST, instance=post)
 ```
 
-...그리고 폼에 아래와 같이 수정했어요
+…and when we've just opened a form with this post to edit:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -358,69 +380,77 @@ form = PostForm(request.POST, instance=post)
 form = PostForm(instance=post)
 ```
 
-잘했어요, 이제 잘 작동하는지 확인해보세요! `post_detail` 페이지로 가보세요. 거기에 우측 상단에 수정 버튼이 있어야 합니다.
+OK, let's test if it works! Let's go to the `post_detail` page. There should be an edit button in the top-right corner:
 
-![수정 버튼(Edit button)](images/edit_button2.png)
+![Edit button](images/edit_button2.png)
 
-수정 버튼을 누르면 우리가 쓴 블로그 글이 들어가 있는 폼을 볼 수 있을 거에요.
+When you click it you will see the form with our blog post:
 
-![폼 수정하기](images/edit_form2.png)
+![Edit form](images/edit_form2.png)
 
-자유롭게 제목과 텍스트를 수정하고 저장해보세요!
+Feel free to change the title or the text and save the changes!
 
-축하합니다! 여러분의 어플리케이션이 점점 더 완벽해지고 있어요!
+Congratulations! Your application is getting more and more complete!
 
-장고 폼에 대해 자세한 정보가 필요하다면 공식 문서를 읽어보세요: https://docs.djangoproject.com/en/2.2/topics/forms/
+If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.2/topics/forms/
 
 ## 보안
 
-링크를 클릭해 새로운 포스트가 나오게 만드는 것은 멋져요! 지금은 웹사이트를 방문하는 누구든지 글을 쓸 수 있지만, 그렇게 하고 싶지 않을 수 있어요. 나에게만 보이고 다른 사람에게는 보이지 않는 버튼을 만들어볼게요.
+Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
 
-`blog/templates/blog/base.html` 파일에서, `page-header` `div`를 찾아 아래와 같이 작성된 앵커 태그를 찾습니다:
+Open `blog/templates/blog/base.html` in the code editor, find our `div` inside `header` and the anchor tag you put in there earlier. It should look like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
-<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+<a href="{% url 'post_new' %}" class="top-menu">
+    {% include './icons/file-earmark-plus.svg' %}
+</a>
 ```
 
-여기에 `{% if %}` 태그를 추가해 관리자로 로그인한 유저들만 링크가 보일 수 있게 만들거에요. 그게, 바로 여러분이죠! `<a>`태그를 아래와 같이 변경하세요:
+We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! Change the `<a>` tag to look like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
 {% if user.is_authenticated %}
-    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+    <a href="{% url 'post_new' %}" class="top-menu">
+        {% include './icons/file-earmark-plus.svg' %}
+    </a>
 {% endif %}
 ```
 
-이 `{% if %}`는 브라우저에 페이지를 요청 하는 사용자가 로그인 하는 경우 링크가 발생됩니다. 이는 새 게시글을 완전히 보호해주는 것은 아니지만, 바람직한 방법입니다. 이 부분은 튜토리얼 심화에서 좀더 자세히 다룰거에요.
+This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. This doesn't protect the creation of new posts completely, but it's a good first step. We'll cover more security in the extension lessons.
 
-세부 페이지에 있는 수정 아이콘이 기억나죠? 이번에도 동일하게 다른 사람들이 게시글을 수정하지 못하게 할 거에요.
+Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
 
-`blog/templates/blog/post_detail.html`파일을 열어 아래와 같이 작성된 라인을 찾아주세요:
+Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
 ```html
-<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+    {% include './icons/pencil-fill.svg' %}
+</a>
 ```
 
-이렇게 바꾸세요:
+Change it to this:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
 ```html
 {% if user.is_authenticated %}
-     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+        {% include './icons/pencil-fill.svg' %}
+     </a>
 {% endif %}
 ```
 
-로그인했기 때문에, 페이지 새로고침을 해도 아무것도 표시되지 않을 거에요. 새로운 브라우저 또는 시크릿 창(윈도우 엣지에서는 InPrivate)을 실행해 보세요. 링크와 아이콘이 보이지 않을 거에요!
+Since you're likely logged in, if you refresh the page, you won't see anything different. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
 
 ## 한 가지만 더: 배포하세요!
 
-모든 작업을 끝마쳤으면 PythonAnywhere로 배포해야죠!
+Let's see if all this works on PythonAnywhere. Time for another deploy!
 
 * 제일 먼저, 여러분의 코드를 커밋하고 Github로 푸시합니다.
 
@@ -435,15 +465,15 @@ form = PostForm(instance=post)
 
 * 그 다음 [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/)을 여세요:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-(당신의 PythonAnywhere 서브 도메인을 `<your-pythonanywhere-domain>`에 화살괄호 없이 입력하는것을 잊지마세요)
+(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
 
 * 마지막으로 ["웹" 페이지](https://www.pythonanywhere.com/web_app_setup/) (콘솔의 우측상단의 메뉴를 이용)로 이동해 **새로고침**. 을 누릅니다. 변경된 내용을 보기위해 당신의 https://subdomain.pythonanywhere.com 블로그를 새로고침 하세요.
 
-이제 배포가 완료 되었어요. 잘 작동되는지 확인해 보세요! 축하합니다. :)
+And that should be it. Congrats! :)
