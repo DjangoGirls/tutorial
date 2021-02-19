@@ -40,6 +40,7 @@ HTML은 "HyperText Markup Language"의 줄인 말입니다. **하이퍼텍스트
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
 <body>
     <p>Hi there!</p>
@@ -54,8 +55,9 @@ HTML은 "HyperText Markup Language"의 줄인 말입니다. **하이퍼텍스트
 
 잘 작동하네요! 잘 했습니다. :)
 
-* 모든 웹 페이지는 `<html>`로 시작해서 `</html>`로 끝나게 됩니다. 가장 기본적인 태그이지요. 웹사이트의 모든 내용은 시작 태그 `<html>`과 닫는 태그인`</html>` 사이에 넣어야만 합니다.
-* `<p>`는 문단 태그입니다. 문단의 끝은 `</p>`로 닫습니다.
+* The line `<!DOCTYPE html>` is not a HTML tag. It only declares the document type. Here, it informs the browser that document type is [HTML5](https://html.spec.whatwg.org/#the-doctype). This is always the beginning of any HTML5 file.
+* The most basic tag, `<html>`, is always the beginning of html content and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
+* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
 
 ## Head 와 Body
 
@@ -72,6 +74,7 @@ HTML은 "HyperText Markup Language"의 줄인 말입니다. **하이퍼텍스트
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Ola's blog</title>
@@ -109,40 +112,49 @@ HTML은 "HyperText Markup Language"의 줄인 말입니다. **하이퍼텍스트
 * `<a href="https://djangogirls.org">link</a>` 링크 걸기
 * `<ul><li>first item</li><li>second item</li></ul>` 목록을 만듭니다. 지금 여러분이 보고 있는 목록처럼요!
 * `<div></div>` 페이지의 섹션을 정의합니다.
+* `<nav></nav>` defines a set of navigation links
+* `<article></article>` specifies independent, self-contained content
+* `<section></section>` defines a section in a document
+* `<header></header>` specifies a header for a document or section
+* `<main></main>` specifies the main content of a document
+* `<aside></aside>` defines some content aside from the content it is placed in (like a sidebar)
+* `<footer></footer>` defines a footer for a document or section
+* `<time></time>` defines a specific time (or datetime)
 
 여기 템플렛 예제가 있어요, `blog/templates/blog/post_list.html`에 붙여넣으세요:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
     </head>
     <body>
-        <div>
+        <header>
             <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+        </header>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
             <h2><a href="">My first post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
+        </article>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
             <h2><a href="">My second post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
+        </article>
     </body>
 </html>
 ```
 
-이 템플릿에는 세 개의 `div` 섹션이 있습니다.
+We've created one `header` section and two `article` section here.
 
-* 첫 번째 `div`는 블로그 제목을 가지고 있어요. 머리말과 링크이지요.
-* 나머지 두 `div`는 블로그 글 출판 날짜와 클릭할 수 있는 `h2`로 된 블로그 제목을 가지고 있습니다. 두 `p`(문단)의 하나는 날짜를, 다른 하나는 블로그를 위한 거에요.
+* The `header` element contains the title of our blog – it's a heading and a link
+* Another two `article` elements contain our blog posts with a published date in `time` element, `h2` with a post title that is clickable and a `p` (paragraph) of text for our blog post.
 
 이 태그들로 이렇게 변합니다. :
 
