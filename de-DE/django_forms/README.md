@@ -276,25 +276,25 @@ Du hast vielleicht bemerkt, dass wir das Veröffentlichungsdatum festlegen, bevo
 
 Das ist genial!
 
-> Da wir vor Kurzem das Django-Admin-Interface benutzt haben, denkt das System, dass wir noch angemeldet sind. Es gibt einige Situationen, welche dazu führen können, dass wir ausgeloggt werden (Schließen des Browsers, Neustarten der Datenbank etc). Wenn du feststellst, dass du bei dem Erstellen von Posts Fehlermeldungen bekommst, die auf nicht angemeldete Nutzer zurückzuführen sind, dann gehe zur Admin Seite http://127.0.0.1:8000/admin und logge dich erneut ein. Dies wird das Problem vorübergehend lösen. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
+> Da wir vor Kurzem das Django-Admin-Interface benutzt haben, denkt das System, dass wir noch angemeldet sind. Es gibt einige Situationen, welche dazu führen können, dass wir ausgeloggt werden (Schließen des Browsers, Neustarten der Datenbank etc). Wenn du feststellst, dass du bei dem Erstellen von Posts Fehlermeldungen bekommst, die auf nicht angemeldete Nutzer zurückzuführen sind, dann gehe zur Admin Seite http://127.0.0.1:8000/admin und logge dich erneut ein. Dies wird das Problem vorübergehend lösen. Es gibt eine permanente Lösung dafür, die im Kapitel **Homework: add security to your website!** nach dem Haupttutorial auf dich wartet.
 
 ![Anmeldefehler](images/post_create_error.png)
 
 ## Formularvalidierung
 
-Now, we will show you how cool Django forms are. A blog post needs to have `title` and `text` fields. In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
+Jetzt zeigen wir dir, wie cool Django-Formulare sind. Ein Blogpost muss `title`- und `text`-Felder besitzen. In unserem `Post`-Model haben wir (im Gegensatz zu dem `published_date`) nicht festgelegt, dass diese Felder nicht benötigt werden, also nimmt Django standardmäßig an, dass sie definiert werden.
 
-Try to save the form without `title` and `text`. Guess what will happen!
+Versuch, das Formular ohne `title` und `text` zu speichern. Rate, was passieren wird!
 
 ![Formularvalidierung](images/form_validation2.png)
 
-Django is taking care to validate that all the fields in our form are correct. Isn't it awesome?
+Django kümmert sich darum sicherzustellen, dass alle Felder in unserem Formular richtig sind. Ist das nicht großartig?
 
-## Formular bearbeiten
+## "Bearbeiten"-Formular
 
-Now we know how to add a new post. But what if we want to edit an existing one? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
+Jetzt wissen wir, wie ein neuer Blogpost hinzugefügt wird. Aber was ist, wenn wir einen bereits bestehenden bearbeiten wollen? Das funktioniert so ähnlich wie das, was wir gerade getan haben. Lass uns schnell ein paar wichtige Dinge erstellen. (Falls du etwas nicht verstehst, solltest du deinen Coach fragen oder in den vorherigen Kapiteln nachschlagen, da wir all die Schritte bereits behandelt haben.)
 
-First, let's save the icon which represents the edit button. Download [pencil-fill.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/pencil-fill.svg) and save it to the location `blog/templates/blog/icons/`.
+Lass uns zunächst das Symbol speichern, das den Bearbeiten-Button darstellt. Lade [pencil-fill.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/pencil-fill.svg) herunter und speichere es in `blog/templates/blog/icons/`.
 
 Open `blog/templates/blog/post_detail.html` in the code editor and add the following code inside `article` tag:
 
@@ -308,7 +308,7 @@ Open `blog/templates/blog/post_detail.html` in the code editor and add the follo
 </aside>
 ```
 
-so that the template will look like this:
+damit die Vorlage so aussieht:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -333,7 +333,7 @@ so that the template will look like this:
 {% endblock %}
 ```
 
-Open `blog/urls.py` in the code editor, and add this line:
+Öffne `blog/urls.py` im Code-Editor und fügen diese Zeile hinzu:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -341,9 +341,9 @@ Open `blog/urls.py` in the code editor, and add this line:
     path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
 ```
 
-We will reuse the template `blog/templates/blog/post_edit.html`, so the last missing thing is a *view*.
+Wir werden die Vorlage `blog/templates/blog/post_edit.html` wiederverwenden, daher ist das einzig Fehlende eine neue *View*.
 
-Let's open `blog/views.py` in the code editor and add this at the very end of the file:
+Öffne `blog/views.py` im Code-Editor und füge ganz am Ende der Datei Folgendes hinzu:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -363,7 +363,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-This looks almost exactly the same as our `post_new` view, right? But not entirely. For one, we pass an extra `pk` parameter from `urls`. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
+Sieht genauso aus wie unsere `post_new`-View, oder? Aber nicht ganz. Zum einen übergeben wir einen zusätzliche `pk`-Parameter aus `urls`. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
 
 {% filename %}blog/views.py{% endfilename %}
 
