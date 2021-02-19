@@ -40,10 +40,11 @@ Yeni dosyayı kod düzenleyicisinde açıp şunları ekleyelim:
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
 <body>
-    <p>Merhaba!</p>
-    <p>Çalışıyor!</p>
+    <p>Hi there!</p>
+    <p>It works!</p>
 </body>
 </html>
 ```
@@ -54,8 +55,9 @@ Web siteniz şu anda nasıl görünüyor? Öğrenmek için bir bakalım: http://
 
 It worked. Nice work there! :)
 
-* En temel etiket, `<html>`, daima herhangi bir web sayfasının başlangıcıdır ve `</html>` daima bitişidir. Gördüğünüz gibi, web sitesinin tüm içeriği `<html>` başlangıç etiketi ve `</html>` bitiş etiketinin arasında yer alır
-* `<p>` paragraf öğelerini belirten etikettir; her paragrafın bitişinde de `</p>` olacaktır
+* The line `<!DOCTYPE html>` is not a HTML tag. It only declares the document type. Here, it informs the browser that document type is [HTML5](https://html.spec.whatwg.org/#the-doctype). This is always the beginning of any HTML5 file.
+* The most basic tag, `<html>`, is always the beginning of html content and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
+* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
 
 ## Kafa ve vücut
 
@@ -72,13 +74,14 @@ Aynı zamanda tüm HTML sayfaları **head** ve **body** olmak üzere iki öğeye
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Zeynep'in blogu</title>
+        <title>Ola's blog</title>
     </head>
     <body>
-        <p>Merhaba!</p>
-        <p>Çalışıyor!</p>
+        <p>Hi there!</p>
+        <p>It works!</p>
     </body>
 </html>
 ```
@@ -109,40 +112,49 @@ Bu *kapatma* etiketleri ve *yuvalama* ögeleri kurallarını takip etmeye ihtiya
 * `<a href="https://djangogirls.org">bağlantı</a>` bağlantı oluşturur
 * `<ul><li>ilk madde</li><li>ikinci madde</li></ul>` - tıpkı bunun gibi bir liste yapar!
 * `<div></div>` - sayfanın bir bölümünü tanımlar
+* `<nav></nav>` defines a set of navigation links
+* `<article></article>` specifies independent, self-contained content
+* `<section></section>` defines a section in a document
+* `<header></header>` specifies a header for a document or section
+* `<main></main>` specifies the main content of a document
+* `<aside></aside>` defines some content aside from the content it is placed in (like a sidebar)
+* `<footer></footer>` defines a footer for a document or section
+* `<time></time>` defines a specific time (or datetime)
 
 İşte komple bir template örneği, kopyalayın ve `blog/templates/blog/post_list.html` içine yapıştırın:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
     </head>
     <body>
-        <div>
+        <header>
             <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">İlk Blogum</a></h2>
-            <p>Çok heyecanlıyım! Bu benim ilk blogum. Ne kadar zevkli bir işmiş bilgisayarlarla uğraşmak. Artık bilgisayar başından kalkmam. </p>
-        </div>
+        </header>
 
-        <div>
-            <p>published: 14.06.2014, 12:20</p>
-            <h2><a href="">İkinci gönderim</a></h2>
-            <p>Bir varmış bir yokmuş, evvel zaman içinde Ne kadar zevkli bir işmiş bilgisayarlarla uğraşmak. Artık bilgisayar başından kalkmam. kalbur saman içinde, develer tellal iken, pireler berber iken; ben annemin beşiğini tıngır mıngır sallar iken.</p>
-        </div>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
+            <h2><a href="">My first post</a></h2>
+            <p>Aenean eu leo quam. Ne kadar zevkli bir işmiş bilgisayarlarla uğraşmak. Artık bilgisayar başından kalkmam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        </article>
+
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
+            <h2><a href="">My second post</a></h2>
+            <p>Aenean eu leo quam. Ne kadar zevkli bir işmiş bilgisayarlarla uğraşmak. Artık bilgisayar başından kalkmam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
+        </article>
     </body>
 </html>
 ```
 
-Burada üç tane `div` bölümü oluşturduk.
+We've created one `header` section and two `article` section here.
 
-* İlk `div` ögesi blogumuzun başlığını içerir - bu bir baş kısımdır ve bir bağlantıdır
-* Sonraki iki `div` öğesi blog gönderilerimizi içeriyor; bunlarda bir yayın tarihi (published_date), tıklanabilir bir `h2` başlığı ve biri tarih diğeri gönderi metnimiz için olmak üzere, iki tane `p` (paragraf) var.
+* The `header` element contains the title of our blog – it's a heading and a link
+* Another two `article` elements contain our blog posts with a published date in `time` element, `h2` with a post title that is clickable and a `p` (paragraph) of text for our blog post.
 
 Bize yaşattığı duygu:
 
