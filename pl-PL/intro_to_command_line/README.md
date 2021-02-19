@@ -165,11 +165,11 @@ Co znajduje się w środku? Fajnie byłoby się tego dowiedzieć. Sprawdźmy:
 {% filename %}command-line{% endfilename %}
 
     > dir
-    Directory of C:\Users\olasitarska
-    05/08/2014 07:28 PM <DIR>      Applications
-    05/08/2014 07:28 PM <DIR>      Desktop
-    05/08/2014 07:28 PM <DIR>      Downloads
-    05/08/2014 07:28 PM <DIR>      Music
+     Directory of C:\Users\olasitarska
+    05/08/2020 07:28 PM <DIR>      Applications
+    05/08/2020 07:28 PM <DIR>      Desktop
+    05/08/2020 07:28 PM <DIR>      Downloads
+    05/08/2020 07:28 PM <DIR>      Music
     ...
     
 
@@ -288,10 +288,10 @@ Małe wyzwanie dla Ciebie: wewnątrz świeżo utworzonego katalogu `cwiczenie` s
 
 {% filename %}command-line{% endfilename %}
 
-    > cd excercise
+    > cd practice
     > mkdir test
     > dir
-    05/08/2014 07:28 PM <DIR>      test
+    05/08/2020 07:28 PM <DIR>      test
     
 
 <!--endsec-->
