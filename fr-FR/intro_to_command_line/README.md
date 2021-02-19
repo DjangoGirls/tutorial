@@ -166,10 +166,10 @@ Du coup, que pouvons-nous trouver dans ce dossier personnel ? Voyons voir :
 
     > dir
      Directory of C:\Users\olasitarska
-    05/08/2014 07:28 PM <DIR>      Applications
-    05/08/2014 07:28 PM <DIR>      Bureau
-    05/08/2014 07:28 PM <DIR>      Musique
-    05/08/2014 07:28 PM <DIR>      Téléchargements
+    05/08/2020 07:28 PM <DIR>      Applications
+    05/08/2020 07:28 PM <DIR>      Desktop
+    05/08/2020 07:28 PM <DIR>      Downloads
+    05/08/2020 07:28 PM <DIR>      Music
     ...
     
 
@@ -288,10 +288,10 @@ Un petit défi pour vous : dans votre nouveau dossier `exercices`, créez un do
 
 {% filename %}command-line{% endfilename %}
 
-    > cd exercices
+    > cd practice
     > mkdir test
     > dir
-    05/08/2014 07:28 PM <DIR>      test
+    05/08/2020 07:28 PM <DIR>      test
     
 
 <!--endsec-->
