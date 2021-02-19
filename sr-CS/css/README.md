@@ -21,8 +21,7 @@ Kako biste instalirali Bootstrap, otvorite Vaš `.html` fajl u editoru i u `<hea
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 ```
 
 Ova naredba ne dodaje ni jedan novi fajl u Vaš projekat. Umesto toga, samo pokazuje fajlove koji postoje na Internetu. Samo napred, otvorite svoj veb sajt i osvežite stranicu. Evo ga!
@@ -74,7 +73,7 @@ Trebalo bi da dodate sledeću liniju koda u Vašem `blog/static/css/blog.css` fa
 
 ```css
 h1 a, h2 a {
-    color: #FF8833;
+    color: #C25100;
 }
 
 ```
@@ -113,24 +112,24 @@ Vaš fajl bi trebalo sada da izgleda ovako:
 
 ```html
 {% load static %}
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-        <div>
+        <header>
             <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+        </header>
 
         {% for post in posts %}
-            <div>
-                <p>published: {{ post.published_date }}</p>
+            <article>
+                <time>published: {{ post.published_date }}</time>
                 <h2><a href="">{{ post.title }}</a></h2>
                 <p>{{ post.text|linebreaksbr }}</p>
-            </div>
+            </article>
         {% endfor %}
     </body>
 </html>
@@ -181,26 +180,28 @@ Odlično!
 
 Kao što je napomenuto ranije, u CSS-u postoje klase. One omogućavaju da odredite deo HTML koda i da primenite određene stilove na taj deo, bez ikakvog uticaja na ostale delove. To može da bude jako korisno! Možda imate dve celine (div-ovi) koje rade potpuno različite stvari (kao na primer zaglavlje i post). Klase mogu da Vam pomognu da učinite da ti delovi izgledaju drugačije.
 
-Pokušajte da imenujete neke delove Vašeg HTML koda. Dodajte klasu koja se zove `page-header` u Vaš `div` koji sadrži zaglavlje:
+Go ahead and name some parts of the HTML code. Replace the `header` that contains your header with the following:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<div class="page-header">
-    <h1><a href="/">Django Girls Blog</a></h1>
-</div>
+<header class="page-header">
+    <div class="container">
+        <h1><a href="/">Django Girls Blog</a></h1>
+    </div>
+</header>
 ```
 
-Sada dodajte klasu `post` u Vaš `div` koji sadrži post.
+And now add a class `post` to your `article` containing a blog post.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<div class="post">
-    <p>published: {{ post.published_date }}</p>
+<article class="post">
+    <time>published: {{ post.published_date }}</time>
     <h2><a href="">{{ post.title }}</a></h2>
     <p>{{ post.text|linebreaksbr }}</p>
-</div>
+</article>
 ```
 
 Sada ćemo dodati deklaracione blokove različitim selektorima. Selektori počinju `.` (tačkom) za razliku od klasa. Postoje mnogi odlični priručnici i objašnjenja o CSS-u na internetu koji mogu da Vam pomognu da razumete sledeći kod. Za sada, kopirajte ga i nalepite u Vaš `blog/static/css/blog.css` fajl:
@@ -211,20 +212,23 @@ Sada ćemo dodati deklaracione blokove različitim selektorima. Selektori počin
 .page-header {
     background-color: #C25100;
     margin-top: 0;
+    margin-bottom: 40px;
     padding: 20px 20px 20px 40px;
 }
 
-.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+.page-header h1,
+.page-header h1 a,
+.page-header h1 a:visited,
+.page-header h1 a:active {
     color: #ffffff;
     font-size: 36pt;
     text-decoration: none;
 }
 
-.content {
-    margin-left: 40px;
-}
-
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Lobster', cursive;
 }
 
@@ -236,11 +240,14 @@ h1, h2, h3, h4 {
     float: right;
 }
 
-.post-form textarea, .post-form input {
+.post-form textarea,
+.post-form input {
     width: 100%;
 }
 
-.top-menu, .top-menu:hover, .top-menu:visited {
+.top-menu,
+.top-menu:hover,
+.top-menu:visited {
     color: #ffffff;
     float: right;
     font-size: 26pt;
@@ -251,8 +258,26 @@ h1, h2, h3, h4 {
     margin-bottom: 70px;
 }
 
-.post h2 a, .post h2 a:visited {
+.post h2 a,
+.post h2 a:visited {
     color: #000000;
+}
+
+.post > .date,
+.post > .actions {
+    float: right;
+}
+
+.btn-default,
+.btn-default:visited {
+    color: #C25100;
+    background: none;
+    border-color: #C25100;
+}
+
+.btn-default:hover {
+    color: #FFFFFF;
+    background-color: #C25100;
 }
 ```
 
@@ -262,11 +287,11 @@ Zatim umetnite HTML kod koji prikazuje post između deklaracija klasa. Zamenite 
 
 ```html
 {% for post in posts %}
-    <div class="post">
-        <p>published: {{ post.published_date }}</p>
+    <article class="post">
+        <time>published: {{ post.published_date }}</time>
         <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    </article>
 {% endfor %}
 ```
 
@@ -275,21 +300,21 @@ u `blog/templates/blog/post_list.html` fajlu ovim delom:
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<div class="content container">
+<main class="container">
     <div class="row">
-        <div class="col-md-8">
+        <div class="col">
             {% for post in posts %}
-                <div class="post">
-                    <div class="date">
-                        <p>published: {{ post.published_date }}</p>
-                    </div>
+                <article class="post">
+                    <time class="date">
+                        {{ post.published_date }}
+                    </time>
                     <h2><a href="">{{ post.title }}</a></h2>
                     <p>{{ post.text|linebreaksbr }}</p>
-                </div>
+                </article>
             {% endfor %}
         </div>
     </div>
-</div>
+</main>
 ```
 
 Sačuvajte ove fajlove i osvežite svoj sajt.
