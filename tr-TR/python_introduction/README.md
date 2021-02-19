@@ -496,7 +496,7 @@ True
 True
 ```
 
-We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare values of mathematical expressions like `2 * 2` and function results like the `2` returned by `len([4, 5])`. Nice, huh?
+Python'a karşılaştırmak için bazı sayılar verdik. As you can see, not only can Python compare numbers, but it can also compare values of mathematical expressions like `2 * 2` and function results like the `2` returned by `len([4, 5])`. Güzel, ha?
 
 İki sayının eşit olup olmadığını öğrenmek için neden iki tane eşittir işraretini `==` yan yana koyduk? Değişkenlere içerik verirken, tek `=` işaretini kullanıyoruz. Her zaman ama **her zaman** ikisini birden koyman gerekir – `==` – eğer birbirlerine eşit olup olmadıklarını kontrol etmek isterseniz. Sayıların birbirine eşit olmaması durumunu da kontrol edebiliriz. Bunun için, yukarıdaki örnekteki gibi `!=` sembolünü kullanıyoruz. 
 
@@ -865,7 +865,7 @@ hi()
 
 Tamam, ilk fonksiyonumuz hazır!
 
-Fonksiyon adını neden dosyanın en altına yazdığımızı merak edebilirsiniz. When we write `def hi():` and the indented lines following, this is us writing instructions for what the `hi()` function should do. Python will read and remember these instructions, but won't run the function yet. To tell Python we want to run the function, we have to call the function with `hi()`. Python reads the file and executes it from top to bottom, so we have to define the function in the file before we call it.
+Fonksiyon adını neden dosyanın en altına yazdığımızı merak edebilirsiniz. `def hi():` ve ardından gelen girintili satırları yazdığımızda, bu, `hi()` işlevinin ne yapması gerektiğine ilişkin talimatlar yazıyoruz. Python bu talimatları okuyacak ve hatırlayacak, ancak henüz işlevi çalıştırmayacak. Python'a fonksiyonu çalıştırmak istediğimizi söylemek için, fonksiyonu `hi()` ile çağırmalıyız. Python dosyayı okur ve yukarıdan aşağıya doğru yürütür, bu yüzden onu çağırmadan önce dosyadaki işlevi tanımlamamız gerekir.
 
 Haydi şimdi bunu çalıştıralım ve neler olacağını görelim:
 
