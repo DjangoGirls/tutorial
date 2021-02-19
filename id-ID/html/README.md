@@ -40,6 +40,7 @@ Open the new file in the code editor, and add the following:
 {% filename %}blog/static/css/list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
 <body>
     <p>Hi there!</p>
@@ -54,8 +55,9 @@ Jadi bagaimana Apakah situs web Anda terlihat sekarang? Mengunjunginya untuk men
 
 It worked. Nice work there! :)
 
-* Tag paling dasar, `<html>`, selalu adalah awal dari setiap halaman web dan `</html>` selalu akhir. Seperti yang Anda lihat, seluruh isi website terjadi antara awal tag `<html>`dan tag penutup `</html>`
-* `<p>`adalah suatu tag untuk elemen ayat; `</p>` menutup setiap ayat
+* The line `<!DOCTYPE html>` is not a HTML tag. It only declares the document type. Here, it informs the browser that document type is [HTML5](https://html.spec.whatwg.org/#the-doctype). This is always the beginning of any HTML5 file.
+* The most basic tag, `<html>`, is always the beginning of html content and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
+* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
 
 ## Kepala dan tubuh
 
@@ -72,6 +74,7 @@ Misalnya, Anda bisa memasukkan elemen judul halaman web ke dalam `<head>`, seper
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Ola's blog</title>
@@ -109,40 +112,49 @@ Anda sekarang bisa bersenang-senang dan mencoba menyesuaikan template Anda! Beri
 * `<a href="https://djangogirls.org">link</a>` membuat sebuah link
 * `<ul> <li> item pertama </li> <li> item kedua </li> </ul>` membuat daftar, sama seperti yang ini!
 * `<div></div>` mendefinisikan bagian dari halaman
+* `<nav></nav>` defines a set of navigation links
+* `<article></article>` specifies independent, self-contained content
+* `<section></section>` defines a section in a document
+* `<header></header>` specifies a header for a document or section
+* `<main></main>` specifies the main content of a document
+* `<aside></aside>` defines some content aside from the content it is placed in (like a sidebar)
+* `<footer></footer>` defines a footer for a document or section
+* `<time></time>` defines a specific time (or datetime)
 
 Berikut adalah contoh template lengkap, copy dan paste ke `blog/templates/blog/post_list.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
     </head>
     <body>
-        <div>
+        <header>
             <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+        </header>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
             <h2><a href="">My first post</a></h2>
             <p>Aenean eu leo quam. Anak rok televisi sepak bola dan gas beracun. Donec id elit non mi porta gravida di eget Metus Sed congue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
+        </article>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
             <h2><a href="">My second post</a></h2>
             <p>Aenean eu leo quam. Anak rok televisi sepak bola dan gas beracun. Donec id elit non mi porta gravida di eget Metus Sed congue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
+        </article>
     </body>
 </html>
 ```
 
-We've created three `div` sections here.
+We've created one `header` section and two `article` section here.
 
-* The first `div` element contains the title of our blog – it's a heading and a link
-* Another two `div` elements contain our blog posts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blog post.
+* The `header` element contains the title of our blog – it's a heading and a link
+* Another two `article` elements contain our blog posts with a published date in `time` element, `h2` with a post title that is clickable and a `p` (paragraph) of text for our blog post.
 
 Ini memberi kita efek ini:
 
