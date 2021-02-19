@@ -40,6 +40,7 @@ No error anymore! Congratulations! :) However, your website isn't actually publi
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
 <body>
     <p>Hi there!</p>
@@ -54,8 +55,9 @@ No error anymore! Congratulations! :) However, your website isn't actually publi
 
 It worked. Nice work there! :)
 
-* Το πιο βασικό tag, `<html>`, είναι πάντα η αρχή οποιασδήποτε ιστοσελίδας και `</html>` είναι πάντα στο τέλος. Όπως μπορείτε να δείτε, όλο το περιεχόμενο της σελίδας ενσωματώνεται μεταξύ της αρχής του tag `<html>` και του tag κλεισίματος `</html>`
-* `<p>`είναι ένα tag για στοιχεία κειμένου παραγράφου. Το tag `</p>` κλείνει κάθε παράγραφο
+* The line `<!DOCTYPE html>` is not a HTML tag. It only declares the document type. Here, it informs the browser that document type is [HTML5](https://html.spec.whatwg.org/#the-doctype). This is always the beginning of any HTML5 file.
+* The most basic tag, `<html>`, is always the beginning of html content and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
+* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
 
 ## Head και body
 
@@ -72,6 +74,7 @@ It worked. Nice work there! :)
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Ola's blog</title>
@@ -109,40 +112,49 @@ It worked. Nice work there! :)
 * `<a href="https://djangogirls.org">link</a>` δημιουργεί έναν σύνδεσμο
 * `<ul><li>first item</li><li>second item</li></ul>` δημιουργεί μια λίστα, όπως αυτή εδώ που διαβάζετε τώρα!
 * `<div></div>` ορίζει ένα τμήμα στη σελίδα
+* `<nav></nav>` defines a set of navigation links
+* `<article></article>` specifies independent, self-contained content
+* `<section></section>` defines a section in a document
+* `<header></header>` specifies a header for a document or section
+* `<main></main>` specifies the main content of a document
+* `<aside></aside>` defines some content aside from the content it is placed in (like a sidebar)
+* `<footer></footer>` defines a footer for a document or section
+* `<time></time>` defines a specific time (or datetime)
 
 Παρακάτω φαίνεται ένα πλήρες παράδειγμα ενός template. Αντιγράψτε-επικολλήστε το μέσα στο αρχείο `blog/templates/blog/post_list.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
     </head>
     <body>
-        <div>
+        <header>
             <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+        </header>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
             <h2><a href="">My first post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
+        </article>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
             <h2><a href="">My second post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
+        </article>
     </body>
 </html>
 ```
 
-Δημιουργήσαμε τρία `div` εδώ.
+We've created one `header` section and two `article` section here.
 
-* Το πρώτο `div` περιέχει τον τίτλο του blog μας – είναι μια επικεφαλίδα και ένας σύνδεσμος
-* Τα υπόλοιπα δύο `div` περιέχουν τα posts μας με ημ/νια δημοσίευσης, το `h2` με τον τίτλο του post ο οποίος μπορεί να κλικαριστεί και επίσης δύο `p`s (παραγράφους) κείμενα, ένα για την ημ/νια και το άλλο για το κυρίως κείμενο.
+* The `header` element contains the title of our blog – it's a heading and a link
+* Another two `article` elements contain our blog posts with a published date in `time` element, `h2` with a post title that is clickable and a `p` (paragraph) of text for our blog post.
 
 Δίνει αυτή την αίσθηση:
 
