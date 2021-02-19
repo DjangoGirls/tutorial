@@ -40,6 +40,7 @@ HTML (от англ. "HyperText Markup Language") - язык гипертекс�
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
 <body>
     <p>Hi there!</p>
@@ -54,8 +55,9 @@ HTML (от англ. "HyperText Markup Language") - язык гипертекс�
 
 Сработало. Хорошо постаралась! :)
 
-* Самый базовый тег, `<html>`, всегда присутствует в начале веб-страницы и `</html>` - всегда в конце. Как ты можешь заметить, основной контент веб-сайта находится между тегами `<html>` и `</html>`
-* `<p>` - это тег для параграфов; `</p>`, соответственно, закрывает каждый параграф
+* The line `<!DOCTYPE html>` is not a HTML tag. It only declares the document type. Here, it informs the browser that document type is [HTML5](https://html.spec.whatwg.org/#the-doctype). This is always the beginning of any HTML5 file.
+* The most basic tag, `<html>`, is always the beginning of html content and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
+* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
 
 ## Head и body
 
@@ -72,6 +74,7 @@ HTML (от англ. "HyperText Markup Language") - язык гипертекс�
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Ola's blog</title>
@@ -109,40 +112,49 @@ HTML (от англ. "HyperText Markup Language") - язык гипертекс�
 * `<a href="https://djangogirls.org">link</a>` создает ссылку
 * `<ul><li>первый элемент</li><li>второй элемент</li></ul>` создает список, такой же как этот!
 * `<div></div>` определяет раздел страницы
+* `<nav></nav>` defines a set of navigation links
+* `<article></article>` specifies independent, self-contained content
+* `<section></section>` defines a section in a document
+* `<header></header>` specifies a header for a document or section
+* `<main></main>` specifies the main content of a document
+* `<aside></aside>` defines some content aside from the content it is placed in (like a sidebar)
+* `<footer></footer>` defines a footer for a document or section
+* `<time></time>` defines a specific time (or datetime)
 
 Вот пример полного шаблона, скопируйте и вставьте его в `blog/templates/blog/post_list.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
     </head>
     <body>
-        <div>
+        <header>
             <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+        </header>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
             <h2><a href="">My first post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
+        </article>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
             <h2><a href="">My second post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
+        </article>
     </body>
 </html>
 ```
 
-Мы создали три `div` элемента.
+We've created one `header` section and two `article` section here.
 
-* Первый элемент `div` содержит название нашего блока, которое также является ссылкой
-* Два других `div` элемента содержат текст записи блога и дату публикации, `h2` тег с заголовком записи, который также является ссылкой, и два `p` (параграфа) с текстом, один для даты и другой для самого текста записи.
+* The `header` element contains the title of our blog – it's a heading and a link
+* Another two `article` elements contain our blog posts with a published date in `time` element, `h2` with a post title that is clickable and a `p` (paragraph) of text for our blog post.
 
 Это даст нам следующий эффект:
 
