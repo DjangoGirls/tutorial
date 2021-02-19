@@ -146,14 +146,14 @@ Hier ist ein vollständiges Beispiel eines Templates. Kopiere es und füge es in
             <time>published: 14.06.2014, 12:14</time>
             <h2><a href="">My second post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </article>
-    </body>
+        </article>
+    </body>
 </html>
 ```
 
-We've created one `header` section and two `article` section here.
+Wir haben hier einen `header`-Abschnitt und zwei `article`-Abschnitte erstellt.
 
-* The `header` element contains the title of our blog – it's a heading and a link
+* Das `header`-Element enthält den Titel unseres Blogs – eine Überschrift und einen Link
 * Another two `article` elements contain our blog posts with a published date in `time` element, `h2` with a post title that is clickable and a `p` (paragraph) of text for our blog post.
 
 Wir bekommen das Folgende:
