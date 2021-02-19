@@ -7,7 +7,7 @@ data-collapse=true ces-->
 
 Git'i [git-scm.com](https://git-scm.com/) adresinden indirebilirsiniz. İki adım hariç bütün adımlarda "next"e basarak ilerleyebilirsiniz. Editör seçiminin sorulduğu adımda, Nano seçeneğini seçin. "Adjusting your PATH environment" adımında ise "Run Git and associated Unix tools from the Windows command-line" (en alttaki opsiyonu) seçin. Onun dışında varsayılanları seçebilirsiniz. Satır sonları için kodu çekerken Windows-stilini, kodu gönderirken Unix-stilini kullanın.
 
-Do not forget to restart the command prompt or PowerShell after the installation finished successfully. <!--endsec-->
+Kurulum başarıyla tamamlandıktan sonra uçbirimi veya PowerShell'i yeniden başlatmayı unutmayın.<!--endsec-->
 
 <!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->
