@@ -44,52 +44,64 @@ Deci încă o dată vom crea: un link către pagină, un URL, un view și un tem
 
 ## Link către o pagină cu formularul
 
-It's time to open `blog/templates/blog/base.html` in the code editor. In the `div` named `page-header`, we will add a link:
+Before we add the link, we need some icons to use as buttons for the link. For this tutorial, download [file-earmark-plus.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/file-earmark-plus.svg) and save it in the folder `blog/templates/blog/icons/`
+
+> Note: To download the SVG image, open the context menu on the link (usually by right-clicking on it) and select "Save link as". In the dialog asking you where to save the file, navigate to the `djangogirls` directory of your Django project, and within that to subdirectory `blog/templates/blog/icons/`, and save the file there.
+
+It's time to open `blog/templates/blog/base.html` in the code editor. Now we can use this icon file inside the base template as follow. In the `div` tag inside `header` section, we will add a link before `h1` tag:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
-<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+<a href="{% url 'post_new' %}" class="top-menu">
+    {% include './icons/file-earmark-plus.svg' %}
+</a>
 ```
 
-Dorim să numim noul view `post_new`. Clasa `"glyphicon glyphicon-plus"` este de la bootstrap, pe care îl utilizăm, și va afișa un simbol de plus.
+Note that we want to call our new view `post_new`. The [SVG icon](https://icons.getbootstrap.com/icons/file-earmark-plus/) is provided by the [Bootstrap Icons](https://icons.getbootstrap.com/) and it will display a page icon with plus sign. We use a Django template directive called `include`. This will inject the file's content into the Django template. The web browser knows how to handle this type of content without any further processing.
 
-După adăugarea liniei, fișierul HTML trebuie să arate în modul următor:
+> You can download all the Bootstrap icons [here](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip). Unzip the file and copy all the SVG image files into a new folder inside `blog/templates/blog/` called `icons`. That way you can access an icon like `pencil-fill.svg` using the file path `blog/templates/blog/icons/pencil-fill.svg`
+
+After editing the line, your HTML file should now look like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
 {% load static %}
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-        <div class="page-header">
-            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
-        <div class="content container">
+        <header class="page-header">
+            <div class="container">
+                <a href="{% url 'post_new' %}" class="top-menu">
+                    {% include './icons/file-earmark-plus.svg' %}
+                </a>
+                <h1><a href="/">Django Girls Blog</a></h1>
+            </div>
+        </header>
+        <main class="content container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col">
                     {% block content %}
                     {% endblock %}
                 </div>
             </div>
-        </div>
+        </main>
     </body>
 </html>
 ```
 
-După salvarea și actualizarea paginii http://127.0.0.1:8000 o să vedeți o eroare `NoReverseMatch`. Hai s-o rezolvăm!
+After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
 
 ## URL
 
-Deschideți `blog/urls.py` în editorul de cod și adăugați o linie:
+We open `blog/urls.py` in the code editor and add a line:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -97,12 +109,12 @@ Deschideți `blog/urls.py` în editorul de cod și adăugați o linie:
 path('post/new/', views.post_new, name='post_new'),
 ```
 
-Codul final va fi următor:
+And the final code will look like this:
 
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-from django.urls import path 
+from django.urls import path
 from . import views
 
 urlpatterns = [
@@ -112,11 +124,11 @@ urlpatterns = [
 ]
 ```
 
-După actualizarea site-ului noi vedem eroare `AttributeError`, pentru că noi n-am creat view `post_new`. Hai s-o adăugăm.
+After refreshing the site, we see an `AttributeError`, since we don't have the `post_new` view implemented. Let's add it right now.
 
 ## post_new view
 
-Este timp de a deschide fișierul `blog/views.py` în editorul de cod și a adăuga linii următoare, cu liniile `from`:
+Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -124,7 +136,7 @@ Este timp de a deschide fișierul `blog/views.py` în editorul de cod și a adă
 from .forms import PostForm
 ```
 
-Și funcție *view*:
+And then our *view*:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -134,11 +146,11 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Pentru a crea un formular nou `Post`, noi trebuie să executăm `PostForm()` și să-l transmitem rezultat în șablon. O să mai întoarcem la acest *view*, dar acum hai să creăm un șablon pentru un formular.
+To create a new `Post` form, we need to call `PostForm()` and pass it to the template. We will go back to this *view*, but for now, let's quickly create a template for the form.
 
 ## Șablon
 
-Trebuie să creăm un fișier `post_edit.html` în directoriu `blog/templates/blog` și să-l deschidem în editor de cod. Pentru a face ca formularul să lucreze, trebuie să asigurăm de următoare:
+We need to create a file `post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
 
 * Noi trebuie să afișăm pe formular. Putem să facem acesta (de exemplu) în mod următor {% raw %}`{{ form.as_p }}`{% endraw %}.
 * Linie de sus trebuie să fie între tăgurile HTML form: `<form method="POST">...</form>`.
@@ -147,7 +159,7 @@ Trebuie să creăm un fișier `post_edit.html` în directoriu `blog/templates/bl
 
 ![CSFR Forbidden page](images/csrf2.png)
 
-Hai să vedem cum HTML în `post_edit.html` trebuie să arăte:
+OK, so let's see how the HTML in `post_edit.html` should look:
 
 {% filename %}blog/templates/blog/post_edit.html{% endfilename %}
 
@@ -163,19 +175,19 @@ Hai să vedem cum HTML în `post_edit.html` trebuie să arăte:
 {% endblock %}
 ```
 
-E timp pentru a actualiza pagina! Formular este afișat!
+Time to refresh! Yay! Your form is displayed!
 
-![Formular nou](images/new_form2.png)
+![New form](images/new_form2.png)
 
-Dar așteptați un minut! Ce o să întâmplă când voi tapați ceva în `title` (titlu) și `text` (text) și o să le salvați?
+But, wait a minute! When you type something in the `title` and `text` fields and try to save it, what will happen?
 
-Nimic! Suntem pe aceeași pagină și textul s-a dispărut... și nici un post n-a fost adăugat. Deci care este problema?
+Nothing! We are once again on the same page and our text is gone… and no new post is added. So what went wrong?
 
-Răspunsul este: nu este o problemă. Trebuie să mai adăugăm codul în funcție *view*.
+The answer is: nothing. We need to do a little bit more work in our *view*.
 
 ## Salvarea formularului
 
-Deschideți `blog/views.py`. Acum totul ce noi avem în funcție `post_new` este următoare:
+Open `blog/views.py` once again in the code editor. Currently all we have in the `post_new` view is the following:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -185,9 +197,9 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Când facem un submit a formularului, noi suntem redirecționați la aceeași funcție, dar în cazul acesta avem mai multe date în `request`, de exemplu, în `request.POST` (denumirea POST nu este din cauza postului de blog; dar din cauza că "postăm" data). Țineți minte, în fișierul HTML la definiție `<form>` am adăugat atribut `method="POST"`? Toate aceste câmpurile din formular sunt în `request.POST`. Nu trebuie să renumiți `POST` pe altceva (o altă variantă validă pentru atributul `method` este `GET`, dar n-avem timp să explicăm care este diferență).
+When we submit the form, we are brought back to the same view, but this time we have some more data in `request`, more specifically in `request.POST` (the naming has nothing to do with a blog "post"; it's to do with the fact that we're "posting" data). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? All the fields from the form are now in `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
 
-Deci în funcția *view* noi avem două situații sepărate pentru a gestiona: dintâi, noi accesăm pagină pentru prima dată și dorim să afișăm formularul fără date, în al doilea rând, când ne întoarcem la *view* cu toate date care au fost întroduse. Trebuie să adăugăm o condiție (o să utilizăm `if` pentru acesta):
+So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. So we need to add a condition (we will use `if` for that):
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -198,7 +210,7 @@ else:
     form = PostForm()
 ```
 
-Este timp să completăm bloc cu `[...]`. Dacă `method` este `POST` atunci dorim să constructăm `PostForm` cu dată de la formular? O să facem în fel următor:
+It's time to fill in the dots `[...]`. If `method` is `POST` then we want to construct the `PostForm` with data from the form, right? We will do that as follows:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -206,9 +218,9 @@ Este timp să completăm bloc cu `[...]`. Dacă `method` este `POST` atunci dori
 form = PostForm(request.POST)
 ```
 
-Următorul lucru este de a verifica că forma este corectă (toate câmpurile obligatorii sunt setate și au valorile corecte). Facem acesta cu `form.is_valid()`.
+The next thing is to check if the form is correct (all required fields are set and no incorrect values have been submitted). We do that with `form.is_valid()`.
 
-Verificăm dacă formular este valid, dacă este, îl salvăm!
+We check if the form is valid and if so, we can save it!
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -220,9 +232,9 @@ if form.is_valid():
     post.save()
 ```
 
-În general, avem două lucruri: salvăm formular, utilizând `form.save` și adăugăm autor (pentru că câmpul `author` n-a fost în `PostForm` și el este obligatoriu). `commit=False` înseamnă că noi nu dorim să salvăm modelul `Post` până când – dintâi, noi dorim să adăugăm autorul. Majoritatea timpului o să utilizați `form.save()` fără `commit=False`, dar în cazul acesta, noi avem nevoie de acesta. `post.save()` o să păstreze schimbările (adăugând autor) și blogul nou este creat!
+Basically, we have two things here: we save the form with `form.save` and we add an author (since there was no `author` field in the `PostForm` and this field is required). `commit=False` means that we don't want to save the `Post` model yet – we want to add the author first. Most of the time you will use `form.save()` without `commit=False`, but in this case, we need to supply it. `post.save()` will preserve changes (adding the author) and a new blog post is created!
 
-În sfârșit, acesta va fi minunat de a trece la pagina `post_detail` pentru a vizualiza articol creat? Pentru a face acesta avem nevoie de mai un import:
+Finally, it would be awesome if we could immediately go to the `post_detail` page for our newly created blog post, right? To do that we need one more import:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -230,7 +242,7 @@ if form.is_valid():
 from django.shortcuts import redirect
 ```
 
-Adăugați-l la începutul fișierului. Acum noi putem să "facem un redirect la pagina `post_detail` pentru a vizualiza articol creat":
+Add it at the very beginning of your file. And now we can say, "go to the `post_detail` page for the newly created post":
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -238,9 +250,9 @@ Adăugați-l la începutul fișierului. Acum noi putem să "facem un redirect la
 return redirect('post_detail', pk=post.pk)
 ```
 
-`post_detail` este denumire unui view pe care vrem să o afișăm. Țineți minte că acest *view* are nevoie de o variabilă `pk`? Ca să-l transmitem la funcție utilizăm `pk=post.pk`, unde `post` este un articol nou care a fost creat!
+`post_detail` is the name of the view we want to go to. Remember that this *view* requires a `pk` variable? To pass it to the views, we use `pk=post.pk`, where `post` is the newly created blog post!
 
-OK, am vorbit mult, poate doriți să vedeți codul complet al funcției *view*?
+OK, we've talked a lot, but we probably want to see what the whole *view* looks like now, right?
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -259,39 +271,45 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Hai să verificăm dacă lucrează. Mergeți la o pagină http://127.0.0.1:8000/post/new/, adăugați `title` și `text`, salvați-l... și voilà! Un nou articol este adăugat și noi suntem redirecționați la pagina `post_detail`!
+Let's see if it works. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it… and voilà! The new blog post is added and we are redirected to the `post_detail` page!
 
-Poate ați văzut că am setat data de publicare înainte de salvare a postului. Apoi, o să introducem *butonul publish* în **Django Girls Tutorial: Extensii**.
+You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a *publish button* in **Django Girls Tutorial: Extensions**.
 
-Acesta este minunat!
+That is awesome!
 
-> Din cauză că am utilizat interfața Django admin, suntem logați în sistem. Acesta sunt câteva situații în care putem să fim deconectați (închiderea browserului, restartarea bazei de date, etc.). Dacă primiți erori, când creați articol, care se refer la absența userului care este logat în sistem, mergeți la pagina de administrare page http://127.0.0.1:8000/admin și autentificați. O să fixăm aceasta problemă temporar. O soluție este descrisă în capitolul **Tema pentru acasă: adăugați securitate la site-ul vostru!** după tutorial principal.
+> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
 
-![Eroare de autentificare](images/post_create_error.png)
+![Logged in error](images/post_create_error.png)
 
 ## Validație formularelor
 
-Acum o să vă arătăm cum lucrează Django formulare. Un articol de blog trebuie să aibă câmpurile `title` și `text`. În modelul `Post` noi nu am zis că aceste câmpurile nu sunt obligatorii (spre deosebire de `published_date`), deci Django, o să le considere obligatorii, în mod implicit.
+Now, we will show you how cool Django forms are. A blog post needs to have `title` and `text` fields. In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
 
-Încercați să salvați formular fără `title` și `text`. Ce se va întâmpla!
+Try to save the form without `title` and `text`. Guess what will happen!
 
-![Validarea formularelor](images/form_validation2.png)
+![Form validation](images/form_validation2.png)
 
-Django are grija de validare câmpurilor din formularul nostru. Nu este acesta minunat?
+Django is taking care to validate that all the fields in our form are correct. Isn't it awesome?
 
 ## Editarea formularului
 
-Now we know how to add a new post. Dar dacă dorim să shimbăm pe acela pe care îl avem? Acesta este foarte similar cu aceea, ce noi am făcut. Hai să cream niște lucruri importante. (Dacă nu înțelegeți ceva, întrebați pe mentorul vostru sau citiți capitole precedente, pentru că aceste pași au fost deja explicate.)
+Now we know how to add a new post. But what if we want to edit an existing one? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
 
-Deschideți `blog/templates/blog/post_detail.html` în editorul de cod și adăugați linia
+First, let's save the icon which represents the edit button. Download [pencil-fill.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/pencil-fill.svg) and save it to the location `blog/templates/blog/icons/`.
+
+Open `blog/templates/blog/post_detail.html` in the code editor and add the following code inside `article` tag:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
 ```html
-<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+<aside class="actions">
+    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+      {% include './icons/pencil-fill.svg' %}
+    </a>
+</aside>
 ```
 
-în așa mod ca un template să arăte în mod următor:
+so that the template will look like this:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -299,20 +317,24 @@ Deschideți `blog/templates/blog/post_detail.html` în editorul de cod și adău
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <div class="post">
+    <article class="post">
+        <aside class="actions">
+            <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+                {% include './icons/pencil-fill.svg' %}
+            </a>
+        </aside>
         {% if post.published_date %}
-            <div class="date">
+            <time class="date">
                 {{ post.published_date }}
-            </div>
+            </time>
         {% endif %}
-        <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
         <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    </article>
 {% endblock %}
 ```
 
-Deschideți `blog/urls.py` în editorul de cod și adăugați o linie:
+Open `blog/urls.py` in the code editor, and add this line:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -320,9 +342,9 @@ Deschideți `blog/urls.py` în editorul de cod și adăugați o linie:
     path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
 ```
 
-O să utilizăm template `blog/templates/blog/post_edit.html`, urmează să scriem un *view*.
+We will reuse the template `blog/templates/blog/post_edit.html`, so the last missing thing is a *view*.
 
-Hai să deschidem `blog/views.py` în editor de cod și să adăugăm cod următor la sfârșitul fișierului:
+Let's open `blog/views.py` in the code editor and add this at the very end of the file:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -342,7 +364,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Este ca și view `post_new`, corect? Dar nu complet. For one, we pass an extra `pk` parameter from `urls`. Apoi, obținem modelul `Post` pe care o vrem să edităm, utilizând `get_object_or_404(Post, pk=pk)` și apoi, când creăm formular, transmitem articol ca `o instanță`, în ambele cazuri când salvăm formular…
+This looks almost exactly the same as our `post_new` view, right? But not entirely. For one, we pass an extra `pk` parameter from `urls`. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -350,7 +372,7 @@ Este ca și view `post_new`, corect? Dar nu complet. For one, we pass an extra `
 form = PostForm(request.POST, instance=post)
 ```
 
-... și când am deschis formular cu articol selectat pentru a-l edita:
+…and when we've just opened a form with this post to edit:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -358,69 +380,77 @@ form = PostForm(request.POST, instance=post)
 form = PostForm(instance=post)
 ```
 
-OK, hai să testăm, dacă lucrează! Deschideți pagina `post_detail`. Acolo trebuie să fie un buton pentru editare în colț din sus-dreapta:
+OK, let's test if it works! Let's go to the `post_detail` page. There should be an edit button in the top-right corner:
 
-![Butonul de editare](images/edit_button2.png)
+![Edit button](images/edit_button2.png)
 
-Când faceți un click o să vedeți formular cu articolul nostru:
+When you click it you will see the form with our blog post:
 
-![Editarea formularului](images/edit_form2.png)
+![Edit form](images/edit_form2.png)
 
-Schimbați titlu sau text și salvați schimbările!
+Feel free to change the title or the text and save the changes!
 
-Felicitări! Aplicație devine mai complicată!
+Congratulations! Your application is getting more and more complete!
 
 If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.2/topics/forms/
 
 ## Securitate
 
-Având posibilitate de a publica aticolele noi apăsând un link este minunat! Dar acum, orice persoana care vizitează site-ul va avea posibilitate de a crea un articol nou, și acesta nu este ceea ce voi doriți. Hai să facem ca butonul va fi afișat numai pentru tine, dar pentru orice persoana.
+Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
 
-Deschideți `blog/templates/blog/base.html` în editorul de cod, găsiți `page-header` `div` și o ancoră pe care ați făcut mai înainte. El trebuie să arăte în mod următor:
+Open `blog/templates/blog/base.html` in the code editor, find our `div` inside `header` and the anchor tag you put in there earlier. It should look like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
-<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+<a href="{% url 'post_new' %}" class="top-menu">
+    {% include './icons/file-earmark-plus.svg' %}
+</a>
 ```
 
-Trebuie să adăugăm alt tag `{% if %}` care va face ca link-ul va fi afișat numai utilizatorilor care sunt autorizați în panel de administrare. Acum voi sunteți autorizați! Schimbați tag `<a>` care va arăta în mod următor:
+We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! Change the `<a>` tag to look like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
 {% if user.is_authenticated %}
-    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+    <a href="{% url 'post_new' %}" class="top-menu">
+        {% include './icons/file-earmark-plus.svg' %}
+    </a>
 {% endif %}
 ```
 
-Acesta `{% if %}` va face ca link-ul va fi afișat numai în cazul când utilizatorul care accesează pagina este autorizat. Acesta nu protejează complet de la crearea articolelor noi, dar este un bun început. O să vorbim mai mult despre securitate în lecții despre extensii.
+This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. This doesn't protect the creation of new posts completely, but it's a good first step. We'll cover more security in the extension lessons.
 
-Țineți minte despre o pictogramă pe care am adăugat-o pe pagina cu detalii? Noi dorim să facem acesta schimbare și aici, ca utilizatorii neautorizați să nu aibă posibilitate de a schimba articole.
+Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
 
-Deschideți `blog/templates/blog/post_detail.html` în editorul de cod și adăugați linia:
+Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
 ```html
-<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+    {% include './icons/pencil-fill.svg' %}
+</a>
 ```
 
-Schimbați pe cod următor:
+Change it to this:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
 ```html
 {% if user.is_authenticated %}
-     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+        {% include './icons/pencil-fill.svg' %}
+     </a>
 {% endif %}
 ```
 
-Din cauza că sunteți autorizați, dacă faceți un refresh a paginii, nu veți vedea nici o diferență. Deschideți pagină în alt browser sau pagina incognito (denumită "InPrivate" în Windows Edge) și o să vedeți că link-ul nu va fi afișat și pictograma de asemenea nu e afișată!
+Since you're likely logged in, if you refresh the page, you won't see anything different. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
 
 ## Un alt lucru: lansați site-ul!
 
-Hai să vedem dacă acesta lucrează pe PythonAnywhere. Este timpul să afișăm!
+Let's see if all this works on PythonAnywhere. Time for another deploy!
 
 * Dintâi, faceți un commit de cod și un push pe GitHub:
 
@@ -442,7 +472,7 @@ Hai să vedem dacă acesta lucrează pe PythonAnywhere. Este timpul să afișăm
     [...]
     
 
-(Trebuie să substituiți `<your-pythonanywhere-domain>` cu denumirea sub-domeniului pe PythonAnywhere, fără paranteze unghiulare.)
+(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
 
 * În sfârșit, mergeți la pagina ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (utilizați butonul din meniu în colțul de sus-dreapta) și apăsați **Reload**. Faceți un refresh a paginii https://subdomain.pythonanywhere.com pentru a vizualiza schimbările.
 
