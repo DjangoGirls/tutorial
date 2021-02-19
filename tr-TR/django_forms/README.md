@@ -44,11 +44,11 @@ Bir kere daha sayfaya bir bağlantı, bir url, bir view ve bir template oluştur
 
 ## Formun bulunduğu sayfaya bağlantı oluşturma
 
-Before we add the link, we need some icons to use as buttons for the link. For this tutorial, download [file-earmark-plus.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/file-earmark-plus.svg) and save it in the folder `blog/templates/blog/icons/`
+Before we add the link, we need some icons to use as buttons for the link. Bu öğretici için [file-earmark-plus.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/file-earmark-plus.svg) dosyasını indirin ve `blog/templates/blog/icons/` klasörüne kaydedin.
 
-> Note: To download the SVG image, open the context menu on the link (usually by right-clicking on it) and select "Save link as". In the dialog asking you where to save the file, navigate to the `djangogirls` directory of your Django project, and within that to subdirectory `blog/templates/blog/icons/`, and save the file there.
+> Not: SVG görüntüsünü indirmek için, bağlam menüsünü açın (genellikle üzerine sağ tıklayarak) ve "Bağlantıyı farklı kaydet"i seçin. Dosyayı nereye kaydedeceğinizi soran iletişim kutusunda, Django projenizin `djangogirls` dizinine gidin, içindeki `blog/templates/blog/icons/` alt dizinine girin ve dosyayı oraya kaydedin.
 
-It's time to open `blog/templates/blog/base.html` in the code editor. Now we can use this icon file inside the base template as follow. In the `div` tag inside `header` section, we will add a link before `h1` tag:
+Kod düzenleyicide `blog/templates/blog/base.html` dosyasını açma zamanı geldi. Şimdi bu ikon dosyasını temel şablon içerisinde aşağıdaki gibi kullanabiliriz. In the `div` tag inside `header` section, we will add a link before `h1` tag:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -58,11 +58,11 @@ It's time to open `blog/templates/blog/base.html` in the code editor. Now we can
 </a>
 ```
 
-Note that we want to call our new view `post_new`. The [SVG icon](https://icons.getbootstrap.com/icons/file-earmark-plus/) is provided by the [Bootstrap Icons](https://icons.getbootstrap.com/) and it will display a page icon with plus sign. We use a Django template directive called `include`. This will inject the file's content into the Django template. The web browser knows how to handle this type of content without any further processing.
+Note that we want to call our new view `post_new`. The [SVG icon](https://icons.getbootstrap.com/icons/file-earmark-plus/) is provided by the [Bootstrap Icons](https://icons.getbootstrap.com/) and it will display a page icon with plus sign. `include` adlı bir Django şablon yönergesi kullanıyoruz. Bu, dosyanın içeriğini Django şablonuna enjekte edecektir. Web tarayıcısı, herhangi bir işlem yapmadan bu tür içeriği nasıl kullanacağını bilir.
 
-> You can download all the Bootstrap icons [here](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip). Unzip the file and copy all the SVG image files into a new folder inside `blog/templates/blog/` called `icons`. That way you can access an icon like `pencil-fill.svg` using the file path `blog/templates/blog/icons/pencil-fill.svg`
+> Tüm Bootstrap simgelerini [buradan](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip) indirebilirsiniz. Unzip the file and copy all the SVG image files into a new folder inside `blog/templates/blog/` called `icons`. Bu şekilde, `blog/templates/blog/icons/pencil-fill.svg` dosya yolunu kullanarak `pencil-fill.svg` gibi bir simgeye erişebilirsiniz.
 
-After editing the line, your HTML file should now look like this:
+Satırı düzenledikten sonra, HTML dosyanız artık şu şekilde görünmelidir:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
