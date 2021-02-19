@@ -13,7 +13,7 @@ Lütfen bilgisayarınızda Anaconda yüklü olsa bile normal Python'u aşağıda
 * Windows tuşuna ve Pause/Break tuşuna aynı anda basın
 * Windows menüsünden Denetim Masası'nı açın, ardından Sistem & Güvenlik, ardından Sistem seçeneğine gidin
 * Windows düğmesine basın, ardından Ayarlar> Sistem> Hakkında'ya gidin
-* Search the Windows Start menu for "System Information". To do that, click the Start button or press the Windows key, then begin to type `System Information`. It will start making suggestions as soon as you type. You can select the entry once it shows up.
+* Windows Başlat menüsünde "Sistem Bilgileri"ni arayın. Bunu yapmak için, Başlat düğmesine tıklayın veya Windows tuşuna basın, sonra `Sistem Bilgileri` yazmaya başlayın. Yazdığınız anda önerilerde bulunmaya başlayacaktır. Girişi göründüğünde seçebilirsiniz.
 
 Windows için Python'ı https://www.python.org/downloads/windows/ adresinden indirebilirsiniz. "Latest Python 3 Release - Python x.x.x" bağlantısına tıklayın. Eğer bilgisayarınız **64-bit** versiyon Windows çalıştırıyorsa, **Windows x86-64 executable installer**'ı indirin. Değilse, **Windows x86 executable installer**'ı indirin. Yükleyiciyi indirdikten sonra, çalıştırmalısınız (üzerine çift tıklayarak) ve oradaki talimatları takip etmelisiniz.
 
@@ -23,9 +23,9 @@ Dikkat edilmesi gereken nokta: Yükleme esnasında "Setup" ("Kur") işaretli bir
 
 Kurulum tamamlandığında, Python veya yüklediğiniz sürüm hakkında daha fazla bilgi edinmeniz için bir bağlantı içeren bir iletişim kutusu görebilirsiniz. Bu iletişim kutusunu kapatın ya da iptal edin - bu kılavuzda daha fazla şey öğreneceksiniz!
 
-Note: If you are using an older version of Windows (7, Vista, or any older version) and the Python {{ book.py_version }} installer fails with an error, then install all Windows Updates and try to install Python again. If you still have the error, try installing Python version {{ book.py_min_release }} from [Python.org](https://www.python.org/downloads/windows/).
+Not: Windows'un daha eski bir sürümünü (7, Vista veya herhangi bir eski sürüm) kullanıyorsanız ve Python {{ book.py_version }} yükleyici bir hata ile başarısız olursa, tüm Windows Güncellemelerini yükleyin ve Python'u yeniden yüklemeyi deneyin. Hala hatayla karşılaşıyorsanız, [Python.org](https://www.python.org/downloads/windows/) adresinden {{ book.py_min_release }} Python sürümünü yüklemeyi deneyin.
 
-> Django {{ book.django_version }} needs Python {{ book.py_min_version }} or greater, which does not support Windows XP or earlier versions.
+> Django {{ book.django_version }}, Windows XP veya önceki sürümleri desteklemeyen Python {{ book.py_min_version }} veya üstüne ihtiyaç duyar.
 
 <!--endsec-->
 
@@ -52,7 +52,7 @@ It is very likely that you already have Python installed out of the box. To chec
     Python {{ book.py_release }}
     
 
-If you have a different version of Python installed, at least {{ book.py_min_version }} (e.g. {{ book.py_min_release }}), then you don't have to upgrade. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
+Python'un farklı bir sürümüne sahipseniz, en azından {{ book.py_min_version }} (örneğin, {{ book.py_min_release }}), o zaman yükseltmeniz gerekmez. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
 
 {% filename %}command-line{% endfilename %}
 
