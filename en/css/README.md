@@ -20,8 +20,7 @@ To install Bootstrap, open up your `.html` file in the code editor and add this 
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 ```
 
 This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
@@ -68,7 +67,7 @@ djangogirls
 
 Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code editor.
 
-We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more. 
+We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
 
 But let's do at least a little. Maybe we could change the color of our headers?
 To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
@@ -78,7 +77,7 @@ In your `blog/static/css/blog.css` file you should add the following code:
 {% filename %}blog/static/css/blog.css{% endfilename %}
 ```css
 h1 a, h2 a {
-    color: #FF8833;
+    color: #C25100;
 }
 
 ```
@@ -116,24 +115,24 @@ Your file should now look like this:
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
 {% load static %}
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-        <div>
+        <header>
             <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+        </header>
 
         {% for post in posts %}
-            <div>
-                <p>published: {{ post.published_date }}</p>
+            <article>
+                <time>published: {{ post.published_date }}</time>
                 <h2><a href="">{{ post.title }}</a></h2>
                 <p>{{ post.text|linebreaksbr }}</p>
-            </div>
+            </article>
         {% endfor %}
     </body>
 </html>
@@ -182,24 +181,26 @@ Great!
 
 As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post).  A class can help you make them look different.
 
-Go ahead and name some parts of the HTML code. Add a class called `page-header` to your `div` that contains your header, like this:
+Go ahead and name some parts of the HTML code. Replace the `header` that contains your header with the following:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
-<div class="page-header">
-    <h1><a href="/">Django Girls Blog</a></h1>
-</div>
+<header class="page-header">
+    <div class="container">
+        <h1><a href="/">Django Girls Blog</a></h1>
+    </div>
+</header>
 ```
 
-And now add a class `post` to your `div` containing a blog post.
+And now add a class `post` to your `article` containing a blog post.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
-<div class="post">
-    <p>published: {{ post.published_date }}</p>
+<article class="post">
+    <time>published: {{ post.published_date }}</time>
     <h2><a href="">{{ post.title }}</a></h2>
     <p>{{ post.text|linebreaksbr }}</p>
-</div>
+</article>
 ```
 
 We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, copy and paste it into your `blog/static/css/blog.css` file:
@@ -209,20 +210,23 @@ We will now add declaration blocks to different selectors. Selectors starting wi
 .page-header {
     background-color: #C25100;
     margin-top: 0;
+    margin-bottom: 40px;
     padding: 20px 20px 20px 40px;
 }
 
-.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+.page-header h1,
+.page-header h1 a,
+.page-header h1 a:visited,
+.page-header h1 a:active {
     color: #ffffff;
     font-size: 36pt;
     text-decoration: none;
 }
 
-.content {
-    margin-left: 40px;
-}
-
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Lobster', cursive;
 }
 
@@ -234,11 +238,14 @@ h1, h2, h3, h4 {
     float: right;
 }
 
-.post-form textarea, .post-form input {
+.post-form textarea,
+.post-form input {
     width: 100%;
 }
 
-.top-menu, .top-menu:hover, .top-menu:visited {
+.top-menu,
+.top-menu:hover,
+.top-menu:visited {
     color: #ffffff;
     float: right;
     font-size: 26pt;
@@ -249,8 +256,26 @@ h1, h2, h3, h4 {
     margin-bottom: 70px;
 }
 
-.post h2 a, .post h2 a:visited {
+.post h2 a,
+.post h2 a:visited {
     color: #000000;
+}
+
+.post > .date,
+.post > .actions {
+    float: right;
+}
+
+.btn-default,
+.btn-default:visited {
+    color: #C25100;
+    background: none;
+    border-color: #C25100;
+}
+
+.btn-default:hover {
+    color: #FFFFFF;
+    background-color: #C25100;
 }
 ```
 
@@ -259,11 +284,11 @@ Then surround the HTML code which displays the posts with declarations of classe
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
 {% for post in posts %}
-    <div class="post">
-        <p>published: {{ post.published_date }}</p>
+    <article class="post">
+        <time>published: {{ post.published_date }}</time>
         <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    </article>
 {% endfor %}
 ```
 
@@ -271,21 +296,21 @@ in the `blog/templates/blog/post_list.html` with this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
-<div class="content container">
+<main class="container">
     <div class="row">
-        <div class="col-md-8">
+        <div class="col">
             {% for post in posts %}
-                <div class="post">
-                    <div class="date">
-                        <p>published: {{ post.published_date }}</p>
-                    </div>
+                <article class="post">
+                    <time class="date">
+                        {{ post.published_date }}
+                    </time>
                     <h2><a href="">{{ post.title }}</a></h2>
                     <p>{{ post.text|linebreaksbr }}</p>
-                </div>
+                </article>
             {% endfor %}
         </div>
     </div>
-</div>
+</main>
 ```
 
 Save those files and refresh your website.
@@ -300,4 +325,3 @@ Don't be afraid to tinker with this CSS a little bit and try to change some thin
 We really recommend taking the free online courses "Basic HTML & HTML5" and "Basic CSS" on [freeCodeCamp](https://learn.freecodecamp.org/). They can help you learn all about making your websites prettier with HTML and CSS.
 
 Ready for the next chapter?! :)
-
