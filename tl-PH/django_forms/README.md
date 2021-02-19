@@ -44,43 +44,55 @@ Sa makaisa pa, gagawa tayo ng link papunta sa page, sa URL, sa view at sa templa
 
 ## I-link sa isang page na may mga form
 
-It's time to open `blog/templates/blog/base.html` in the code editor. In the `div` named `page-header`, we will add a link:
+Before we add the link, we need some icons to use as buttons for the link. For this tutorial, download [file-earmark-plus.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/file-earmark-plus.svg) and save it in the folder `blog/templates/blog/icons/`
+
+> Note: To download the SVG image, open the context menu on the link (usually by right-clicking on it) and select "Save link as". In the dialog asking you where to save the file, navigate to the `djangogirls` directory of your Django project, and within that to subdirectory `blog/templates/blog/icons/`, and save the file there.
+
+It's time to open `blog/templates/blog/base.html` in the code editor. Now we can use this icon file inside the base template as follow. In the `div` tag inside `header` section, we will add a link before `h1` tag:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
-<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+<a href="{% url 'post_new' %}" class="top-menu">
+    {% include './icons/file-earmark-plus.svg' %}
+</a>
 ```
 
-Paalala na gusto nating tawagin ang ating bagong view na `post_new`. Ang class na `"glyphicon glyphicon-plus"` ay handa na sa pamamagitang ng bootstrap theme na ginagamit natin, at magdidisplay ito ng plus sign para sa atin.
+Note that we want to call our new view `post_new`. The [SVG icon](https://icons.getbootstrap.com/icons/file-earmark-plus/) is provided by the [Bootstrap Icons](https://icons.getbootstrap.com/) and it will display a page icon with plus sign. We use a Django template directive called `include`. This will inject the file's content into the Django template. The web browser knows how to handle this type of content without any further processing.
 
-Pagkatapos maidagdag ang linya, ang iyong HTML file ay maging kagaya nito:
+> You can download all the Bootstrap icons [here](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip). Unzip the file and copy all the SVG image files into a new folder inside `blog/templates/blog/` called `icons`. That way you can access an icon like `pencil-fill.svg` using the file path `blog/templates/blog/icons/pencil-fill.svg`
+
+After editing the line, your HTML file should now look like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
 {% load static %}
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-        <div class="page-header">
-            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
-        <div class="content container">
+        <header class="page-header">
+            <div class="container">
+                <a href="{% url 'post_new' %}" class="top-menu">
+                    {% include './icons/file-earmark-plus.svg' %}
+                </a>
+                <h1><a href="/">Django Girls Blog</a></h1>
+            </div>
+        </header>
+        <main class="content container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col">
                     {% block content %}
                     {% endblock %}
                 </div>
             </div>
-        </div>
+        </main>
     </body>
 </html>
 ```
@@ -97,12 +109,12 @@ We open `blog/urls.py` in the code editor and add a line:
 path('post/new/', views.post_new, name='post_new'),
 ```
 
-At ang katapusang code ay maging ganito:
+And the final code will look like this:
 
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-from django.urls import path 
+from django.urls import path
 from . import views
 
 urlpatterns = [
@@ -112,7 +124,7 @@ urlpatterns = [
 ]
 ```
 
-Pagkatapos mag-refresh sa site, makikita natin ang `AttributeError`, ito ay dahil wala pa tayong `post_new` na view na nagawa. Ating idagdag ito ngayon.
+After refreshing the site, we see an `AttributeError`, since we don't have the `post_new` view implemented. Let's add it right now.
 
 ## post_new view
 
@@ -124,7 +136,7 @@ Time to open the `blog/views.py` file in the code editor and add the following l
 from .forms import PostForm
 ```
 
-At ang atin ding *view*:
+And then our *view*:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -134,7 +146,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Para makalikha ng bagong form na `Post`, kailagan nating tawagin ang `PostForm()` at ipasa ito sa mga template. Babalikan natin ang *view* na ito, pero sa ngayon, gagawa tayo ng madaliang template para sa ating form.
+To create a new `Post` form, we need to call `PostForm()` and pass it to the template. We will go back to this *view*, but for now, let's quickly create a template for the form.
 
 ## Template
 
@@ -147,7 +159,7 @@ We need to create a file `post_edit.html` in the `blog/templates/blog` directory
 
 ![CSFR Forbidden page](images/csrf2.png)
 
-Sige, tingnan natin kung ano dapat ang hitsura ng HTML sa `post_edit.html`:
+OK, so let's see how the HTML in `post_edit.html` should look:
 
 {% filename %}blog/templates/blog/post_edit.html{% endfilename %}
 
@@ -163,15 +175,15 @@ Sige, tingnan natin kung ano dapat ang hitsura ng HTML sa `post_edit.html`:
 {% endblock %}
 ```
 
-Oras na para mag-refresh! Yay! Nakadisplay na ang ating form!
+Time to refresh! Yay! Your form is displayed!
 
-![Bagong form](images/new_form2.png)
+![New form](images/new_form2.png)
 
-Pero, teka muna! Kung mag-type ka sa `pamagat` at `teksto` na mga field at subukang i-save, ano ang mangyari?
+But, wait a minute! When you type something in the `title` and `text` fields and try to save it, what will happen?
 
-Wala! Tayo ay babalik sa parehong pahina at nawala ang ating tekso... at walang bagong post ang nadagdag. Kaya saan nagkaproblema?
+Nothing! We are once again on the same page and our text is gone… and no new post is added. So what went wrong?
 
-Ang sagot ay: wala. May kailangan lang tayong gawin sa ating *view*.
+The answer is: nothing. We need to do a little bit more work in our *view*.
 
 ## Nagsisave ng form
 
@@ -185,9 +197,9 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Kung nagpasa tayo ng form, dadalhin tayo pabalik sa parehong view, pero ngayon may mga karagdagang mga datos na sa ating `request`, para mas maging partikular sa loob ng `request.POST` (ang pagkakapangalan ay walang kinalaman sa blog "post"; ito ay dahil tayo ay nagpopost ng data). Tandaan kung paano sa loob ng HTML file, ang ating `<form>`pagbigay kahulugan ay mayroong variable na `method="POST"`? Lahat ng mga field galing sa form ay nasa `request.POST` na. Hindi mo dapat baguhin ang pangalan ng `POST` sa kahit ano (ang isa pang balidong value para sa `method` ay si `GET`, pero wala na tayong oras para ipaliwanag ang kaibahan).
+When we submit the form, we are brought back to the same view, but this time we have some more data in `request`, more specifically in `request.POST` (the naming has nothing to do with a blog "post"; it's to do with the fact that we're "posting" data). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? All the fields from the form are now in `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
 
-Kaya sa ating *view* mayroon tayong hiwalay ng mga sitwasyon na dapat kailangang gawin: una, kung bibisitahin natin ang pahina sa unang beses at gusto natin na walang laman ang form, at pangalawa, kung gusto nating bumalik sa *view* na may laman nang lahat na na-type natin. Kaya kailangan nating magdagdag ng kondisyon (gagamit tayo ng `if` para dito):
+So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. So we need to add a condition (we will use `if` for that):
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -198,7 +210,7 @@ else:
     form = PostForm()
 ```
 
-Oras na para gawin ang mga dots `[...]`. Kung ang `method` ay `POST`, gusto nating gawin ang `PostForm` na may lamang datos galing sa form, tama ba? Gagawin natin ito gaya ng sumunod:
+It's time to fill in the dots `[...]`. If `method` is `POST` then we want to construct the `PostForm` with data from the form, right? We will do that as follows:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -208,7 +220,7 @@ form = PostForm(request.POST)
 
 The next thing is to check if the form is correct (all required fields are set and no incorrect values have been submitted). We do that with `form.is_valid()`.
 
-Susuriin natin ang form kung ito ay balido, para ma-save natin!
+We check if the form is valid and if so, we can save it!
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -216,9 +228,9 @@ Susuriin natin ang form kung ito ay balido, para ma-save natin!
 {% filename %}blog/views.py{% endfilename %}
 ```
 
-Pangunahin na, mayroon tayong dalawang bagay dito: i-save natin ang form gamit ang `form.save` at magdagdag ng may-akda (dahil wala tayong `may-akda` na field sa `PostForm` at ang field na ito ay kinakailangan. Ang ibig sabihin ng `commit=False` ay hindi muna natin gustong i-save ang model na `Post` - magdagdag muna tayo ng may-akda. Kadalasan gagamit ka ng `form.save()` na walang `commit=False`, pero sa ngayon, kailangan natin itong idagdag. Ang `post.save()` ay magiimbak sa mga pagbabago (magdagdag ng may-akda) at ang bagong blog post at nilikha!
+Basically, we have two things here: we save the form with `form.save` and we add an author (since there was no `author` field in the `PostForm` and this field is required). `commit=False` means that we don't want to save the `Post` model yet – we want to add the author first. Most of the time you will use `form.save()` without `commit=False`, but in this case, we need to supply it. `post.save()` will preserve changes (adding the author) and a new blog post is created!
 
-Sa wakas, mas maganda kung tayo ay makakapunta ng direkta sa ating `post_detail` na pahina para sa ating bagong nalikha na blog post, tama ba? Para gawin ito, kailangan natin ng isa pang import:
+Finally, it would be awesome if we could immediately go to the `post_detail` page for our newly created blog post, right? To do that we need one more import:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -226,7 +238,7 @@ Sa wakas, mas maganda kung tayo ay makakapunta ng direkta sa ating `post_detail`
 from django.shortcuts import redirect
 ```
 
-Idagdag ito sa pinakasimula ng file. At ngayon pede nating sabihin na, "pumunta sa `post_detail` na pahina para sa kakalikhang post":
+Add it at the very beginning of your file. And now we can say, "go to the `post_detail` page for the newly created post":
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -234,9 +246,9 @@ Idagdag ito sa pinakasimula ng file. At ngayon pede nating sabihin na, "pumunta 
 return redirect('post_detail', pk=post.pk)
 ```
 
-`post_detail` ang pangalan sa view na gusto nating puntahan. Tandaan na ang *view* na ito ay nangangailangan ng `pk` na variable? Para mapasa ito sa ating mga view, gagamit tayo ng `pk=post.pk`, kung saan ang `post` at ang kakalikha lang na blog post!
+`post_detail` is the name of the view we want to go to. Remember that this *view* requires a `pk` variable? To pass it to the views, we use `pk=post.pk`, where `post` is the newly created blog post!
 
-Sige, dami na nating sinabi, ngunit gusto siguro nating makita ang kung naano na ang kabuoang *view* ngayon, tama ba?
+OK, we've talked a lot, but we probably want to see what the whole *view* looks like now, right?
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -255,39 +267,45 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Tingnan natin kung gumana ba. Pumunta sa pahina na http://127.0.0.1:8000/post/new/, magdagdag ng `pamagat` at `teksto`, i-save ito... at tingnan! Ang bagong blog post ay nadagdag na at tayo ay pinasa sa `post_detail` na pahina!
+Let's see if it works. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it… and voilà! The new blog post is added and we are redirected to the `post_detail` page!
 
-Siguro ay napansin mo na nag-set muna tayo ng paglathala na petsa bako tayo nag-save ng post. Maya-mata, aming ianunsyo ang *publish na button* sa **Django Girls Tutorial: Extensions**.
+You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a *publish button* in **Django Girls Tutorial: Extensions**.
 
-Yan ay kasindak-sindak!
+That is awesome!
 
-> Dahil bago lang natin ginamit ang interface ng Django admin, inisip ng sistema na tayo ay nakalog-in pa. Mayroong mga sitwasyon na magresulta sa ating paglog-out (nasara ang browser, na-restart ang DB, at iba pa). Kung, gagawa ng post, at napansin mo na may mga problema tungkol sa walang nakalog-in na user, pumunta sa admin page na http://127.0.0.1:8000/admin at maglog-in ulit. Ito ay panandaliang mag-ayos sa problema. May permanenteng solusyong na nag-aabang sa iyo sa **Gawaing Bahay: magdagdag ng seguridad sa iyong website!** na kabanata pagkatapos ng pangunahing tutorial.
+> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
 
-![May problema sa paglog-in](images/post_create_error.png)
+![Logged in error](images/post_create_error.png)
 
 ## Pagpapabalido ng Form
 
-Ngayon, ipapakita namin kung gaano kahusay ang mga form ng Django. Ang blog post ay kinakailangan na mayroon `pamagat` at `teksto` na mga field. Sa ating `Post` na model, hindi natin sinabi na ang mga field na ito (kumpara sa `published_date` ay hindi kinakailangan, kaya si Django ay umaasa na naka-set ang mga ito.
+Now, we will show you how cool Django forms are. A blog post needs to have `title` and `text` fields. In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
 
-Subukang i-save ang form na walang `pamagat` at `teksto`. Hulaan kung ano ang mangyari!
+Try to save the form without `title` and `text`. Guess what will happen!
 
-![Pagpapabalido ng Form](images/form_validation2.png)
+![Form validation](images/form_validation2.png)
 
-Si Django ay sinisuguro na ang lahat ng field sa ating form ay tama. Kagilas-gilas di ba?
+Django is taking care to validate that all the fields in our form are correct. Isn't it awesome?
 
 ## I-edit ang form
 
-Now we know how to add a new post. Ngunit paano kung gusto natin i-edit ang umiiral na? Ito ay parehong-pareho lang sa ginawa natin kanina. Gagawa tayo ng mga importanteng bagay nang mabilisan. (Kung meron kang bagay na hindi maiintindihan, magtanong sa iyong taga sanay o hanapin sa nakalipas na mga kabanata, yamang atin ng napag-aralan and mga hakbang na ito.)
+Now we know how to add a new post. But what if we want to edit an existing one? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
 
-Open `blog/templates/blog/post_detail.html` in the code editor and add the line
+First, let's save the icon which represents the edit button. Download [pencil-fill.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/pencil-fill.svg) and save it to the location `blog/templates/blog/icons/`.
 
-{% filename %}blog/templates/blog/post/post_detail.html{% endfilename %}
+Open `blog/templates/blog/post_detail.html` in the code editor and add the following code inside `article` tag:
+
+{% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
 ```html
-<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+<aside class="actions">
+    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+      {% include './icons/pencil-fill.svg' %}
+    </a>
+</aside>
 ```
 
-nang sa gayon ang template ay magmumukhang ganito:
+so that the template will look like this:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -295,16 +313,20 @@ nang sa gayon ang template ay magmumukhang ganito:
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <div class="post">
+    <article class="post">
+        <aside class="actions">
+            <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+                {% include './icons/pencil-fill.svg' %}
+            </a>
+        </aside>
         {% if post.published_date %}
-            <div class="date">
+            <time class="date">
                 {{ post.published_date }}
-            </div>
+            </time>
         {% endif %}
-        <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
         <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    </article>
 {% endblock %}
 ```
 
@@ -316,7 +338,7 @@ Open `blog/urls.py` in the code editor, and add this line:
     path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
 ```
 
-Gagamitin natin uli ang template na `blog/templates/blog/post_edit.html`, kaya ang kulang nalang natin ay ang *view*.
+We will reuse the template `blog/templates/blog/post_edit.html`, so the last missing thing is a *view*.
 
 Let's open `blog/views.py` in the code editor and add this at the very end of the file:
 
@@ -338,7 +360,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Ito ay halos kapareho sa ating `post_new` na view, di ba? Pero hindi talaga lubos. For one, we pass an extra `pk` parameter from `urls`. Sa sunod, kukunin natin ang `Post` model na gusto nating i-edit gamit ang `get_object_or_404(Post, pk=pk)` at pagkatapos, sa paglikha ng form, ipasa natin ang post na ito isip `instance`, pareho sila sa pag-save natin sa form…
+This looks almost exactly the same as our `post_new` view, right? But not entirely. For one, we pass an extra `pk` parameter from `urls`. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -346,7 +368,7 @@ Ito ay halos kapareho sa ating `post_new` na view, di ba? Pero hindi talaga lubo
 form = PostForm(request.POST, instance=post)
 ```
 
-... at pagkatapos nating buksan ang form gamit ang post to edit:
+…and when we've just opened a form with this post to edit:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -354,69 +376,77 @@ form = PostForm(request.POST, instance=post)
 form = PostForm(instance=post)
 ```
 
-Sige, tingnan natin kung gumana ba! Puntahan natin ang `post_detail` na pahina. Dapat mayroon itong edit na button sa kaliwang itaas:
+OK, let's test if it works! Let's go to the `post_detail` page. There should be an edit button in the top-right corner:
 
-![Edit na button](images/edit_button2.png)
+![Edit button](images/edit_button2.png)
 
-Pag-click mo nito makikita mo ang blog post sa ating form:
+When you click it you will see the form with our blog post:
 
-![I-edit ang form](images/edit_form2.png)
+![Edit form](images/edit_form2.png)
 
-Huwag mag-atubiling magpalit ng pamaga at tesko at i-save ang mga pagbabago!
+Feel free to change the title or the text and save the changes!
 
-Binabati ko kayo! Ang iyong application ay unti-unti nang nakompleto!
+Congratulations! Your application is getting more and more complete!
 
 If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.2/topics/forms/
 
 ## Seguridad
 
-Being able to create new posts by clicking a link is awesome! Pero sa ngayon, kung sinuman ang bumisita sa iyong site ay maaring maglikha ng bagong blog post, at yan ang hindi mo siguro gustong mangyari. Gawin natin ito na ang button ay makikita mo lang pero hindi sa ibang tao.
+Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
 
-Open `blog/templates/blog/base.html` in the code editor, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
+Open `blog/templates/blog/base.html` in the code editor, find our `div` inside `header` and the anchor tag you put in there earlier. It should look like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
-<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+<a href="{% url 'post_new' %}" class="top-menu">
+    {% include './icons/file-earmark-plus.svg' %}
+</a>
 ```
 
-Magdadagdag tayo ng isa pang `{% if %}` na tag dito, at ang link ay makikita lamang ng mga gumagamit na naka log-in sa admin. Sa ngayon, ikaw palang! Palitan ang `<a>` na tag para maging kagaya nito:
+We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! Change the `<a>` tag to look like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
 {% if user.is_authenticated %}
-    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+    <a href="{% url 'post_new' %}" class="top-menu">
+        {% include './icons/file-earmark-plus.svg' %}
+    </a>
 {% endif %}
 ```
 
-Ang `{% if %}` ay maging sanhi na ang link ay ipapadala sa browser kung ang gumamit na humingi sa pahina ay nakalog-in. Hindi ito nagproprotekta sa paglikha ng mga bagong posts, pero maganda na itong hakbang. Tatalakayin natin ang karamihan sa mga seguridad doon sa extention na mga klase.
+This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. This doesn't protect the creation of new posts completely, but it's a good first step. We'll cover more security in the extension lessons.
 
-Natandaan mo ba ang edit na icon na kakadagdag lang natin sa pahina na detalye? Gusto din nating magdagdag ng kaparehang pagbabago dito. Para ang ibang tao ay hindi maaring mag-edit ng umiiral na mga post.
+Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
 
 Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
 ```html
-<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+    {% include './icons/pencil-fill.svg' %}
+</a>
 ```
 
-Palitan ito ng ganito:
+Change it to this:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
 ```html
 {% if user.is_authenticated %}
-     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+        {% include './icons/pencil-fill.svg' %}
+     </a>
 {% endif %}
 ```
 
-Dahil maari kang nakalog-in, kung i-refresh mo ang pahina, wala kang makikitang kakaiba. I-load ang page sa ibang browser or sa window na naka incognito (tinanatawag na "InPrivate" sa Windows Edge), bagaman, at makikita mo ang linki ay hindi makikita, at ang icon ay wala din!
+Since you're likely logged in, if you refresh the page, you won't see anything different. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
 
 ## May isang bagay pa: oras na para mag-deploy!
 
-Tingnan natin kung gagana ito sa PythonAnywhere. Oras na para gumawa ng isa pang pag-deploy!
+Let's see if all this works on PythonAnywhere. Time for another deploy!
 
 * First, commit your new code, and push it up to GitHub:
 
