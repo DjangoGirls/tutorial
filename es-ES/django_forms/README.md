@@ -44,52 +44,64 @@ Una vez más vamos a crear: un enlace a la página, una dirección URL, una vist
 
 ## Enlace a una página con el formulario
 
-Ahora toca abrir `blog/templates/blog/base.html` en el editor de código. En la `div` con el nombre `page-header`, vamos a añadir un enlace:
+Before we add the link, we need some icons to use as buttons for the link. For this tutorial, download [file-earmark-plus.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/file-earmark-plus.svg) and save it in the folder `blog/templates/blog/icons/`
+
+> Note: To download the SVG image, open the context menu on the link (usually by right-clicking on it) and select "Save link as". In the dialog asking you where to save the file, navigate to the `djangogirls` directory of your Django project, and within that to subdirectory `blog/templates/blog/icons/`, and save the file there.
+
+It's time to open `blog/templates/blog/base.html` in the code editor. Now we can use this icon file inside the base template as follow. In the `div` tag inside `header` section, we will add a link before `h1` tag:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
-<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+<a href="{% url 'post_new' %}" class="top-menu">
+    {% include './icons/file-earmark-plus.svg' %}
+</a>
 ```
 
-Ten en cuenta que queremos llamar a nuestra nueva vista `post_new`. La clase `"glyphicon glyphicon-plus"` es proporcionada por el tema de bootstrap que estamos utilizando, y nos mostrara un signo de suma.
+Note that we want to call our new view `post_new`. The [SVG icon](https://icons.getbootstrap.com/icons/file-earmark-plus/) is provided by the [Bootstrap Icons](https://icons.getbootstrap.com/) and it will display a page icon with plus sign. We use a Django template directive called `include`. This will inject the file's content into the Django template. The web browser knows how to handle this type of content without any further processing.
 
-Después de agregar la línea, tu archivo html debería lucir de esta forma:
+> You can download all the Bootstrap icons [here](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip). Unzip the file and copy all the SVG image files into a new folder inside `blog/templates/blog/` called `icons`. That way you can access an icon like `pencil-fill.svg` using the file path `blog/templates/blog/icons/pencil-fill.svg`
+
+After editing the line, your HTML file should now look like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
 {% load static %}
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-        <div class="page-header">
-            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
-        <div class="content container">
+        <header class="page-header">
+            <div class="container">
+                <a href="{% url 'post_new' %}" class="top-menu">
+                    {% include './icons/file-earmark-plus.svg' %}
+                </a>
+                <h1><a href="/">Django Girls Blog</a></h1>
+            </div>
+        </header>
+        <main class="content container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col">
                     {% block content %}
                     {% endblock %}
                 </div>
             </div>
-        </div>
+        </main>
     </body>
 </html>
 ```
 
-Después de guardar y refrescar la página http://127.0.0.1:8000 verás el - ya conocido - error `NoReverseMatch`. ¿Es así? ¡Vamos bien!
+After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
 
 ## URL
 
-Abrimos `blog/urls.py` en el editor para añadir una línea:
+We open `blog/urls.py` in the code editor and add a line:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -97,7 +109,7 @@ Abrimos `blog/urls.py` en el editor para añadir una línea:
 path('post/new', views.post_new, name='post_new'),
 ```
 
-Y el código final tendrá este aspecto:
+And the final code will look like this:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -112,11 +124,11 @@ urlpatterns = [
 ]
 ```
 
-Después de actualizar el sitio, veremos un `AttributeError`, puesto que no tenemos la vista `post_new` implementada. Añadamosla de una vez.
+After refreshing the site, we see an `AttributeError`, since we don't have the `post_new` view implemented. Let's add it right now.
 
 ## Vista post_new
 
-Ahora abre el fichero `blog/views.py` en el editor y añade estas líneas con el resto de imports `from`:
+Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -124,7 +136,7 @@ Ahora abre el fichero `blog/views.py` en el editor y añade estas líneas con el
 from .forms import PostForm
 ```
 
-Y ahora nuestra *vista*:
+And then our *view*:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -134,11 +146,11 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Para crear un nuevo formulario `Post`, tenemos que llamar a `PostForm()` y pasarlo a la plantilla. Volveremos a esta *vista* pero, por ahora, vamos a crear rápidamente una plantilla para el formulario.
+To create a new `Post` form, we need to call `PostForm()` and pass it to the template. We will go back to this *view*, but for now, let's quickly create a template for the form.
 
 ## Plantilla
 
-Tenemos que crear un fichero `post_edit.html` el el directorio `blog/templates/blog`, y abrirlo en el editor de código. Para hacer que un formulario funcione necesitamos varias cosas:
+We need to create a file `post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
 
 * Tenemos que mostrar el formulario. Podemos hacerlo, por ejemplo, con un sencillo {% raw %}`{{ form.as_p }}`{% endraw %}.
 * La línea anterior tiene que estar dentro de una etiqueta de formuLario HTML: `<form method="POST">...</form>`.
@@ -147,7 +159,7 @@ Tenemos que crear un fichero `post_edit.html` el el directorio `blog/templates/b
 
 ![CSFR Forbidden page](images/csrf2.png)
 
-Bueno, miremos se debería ver el HTML en `post_edit.html`:
+OK, so let's see how the HTML in `post_edit.html` should look:
 
 {% filename %}blog/templates/blog/post_edit.html{% endfilename %}
 
@@ -163,19 +175,19 @@ Bueno, miremos se debería ver el HTML en `post_edit.html`:
 {% endblock %}
 ```
 
-¡Es hora de actualizar! ¡Si! ¡Tu formulario se muestra!
+Time to refresh! Yay! Your form is displayed!
 
-![Nuevo formulario](images/new_form2.png)
+![New form](images/new_form2.png)
 
-Pero, ¡un momento! Si escribes algo en los campos `títle` y `text` y tratas de guardar los cambios - ¿qué pasará?
+But, wait a minute! When you type something in the `title` and `text` fields and try to save it, what will happen?
 
-¡Nada! Una vez más estamos en la misma página y el texto se ha ido... no se añade ningún post nuevo. Entonces, ¿qué ha ido mal?
+Nothing! We are once again on the same page and our text is gone… and no new post is added. So what went wrong?
 
-La respuesta es: nada. Tenemos que trabajar un poco más en nuestra *vista*.
+The answer is: nothing. We need to do a little bit more work in our *view*.
 
 ## Guardar el formulario
 
-Abre `blog/views.py` de nuevo en el editor. De momento todo lo que tenemos en la vista `post_new` es lo siguiente:
+Open `blog/views.py` once again in the code editor. Currently all we have in the `post_new` view is the following:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -185,9 +197,9 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Cuando enviamos el formulario somos redirigidos a la misma vista, pero esta vez tenemos algunos datos adicionales en `request`, más específicamente en `request.POST` (el nombre no tiene nada que ver con un post del blog, se refiere a que estamos "publicando" -en inglés, posting- datos). ¿Recuerdas que en el archivo HTML la definición de `<form>` tenía la variable `method="POST"`? Todos los campos del formulario estan ahora en `request.POST`. No deberías renombrar la variable `POST` (el único nombre que también es válido para la variable `method` es `GET`, pero no tenemos tiempo para explicar cuál es la diferencia).
+When we submit the form, we are brought back to the same view, but this time we have some more data in `request`, more specifically in `request.POST` (the naming has nothing to do with a blog "post"; it's to do with the fact that we're "posting" data). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? All the fields from the form are now in `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
 
-En nuestra *vista* tenemos dos situaciones distintas que manejar: primero, cuando accedemos a la pagina por primera vez y queremos un formulario vacío, y segundo, cuando regresamos a la *vista* con los datos del formulario que acabamos de ingresar. Así que tenemos que añadir una condición (utilizaremos `if` para eso):
+So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. So we need to add a condition (we will use `if` for that):
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -198,7 +210,7 @@ else:
     form = PostForm()
 ```
 
-Es hora de rellenar los puntos `[...]`. Si el `método` es `POST` entonces querremos construir el `PostForm` con datos del formulario, cierto? Lo haremos de la siguiente manera:
+It's time to fill in the dots `[...]`. If `method` is `POST` then we want to construct the `PostForm` with data from the form, right? We will do that as follows:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -206,9 +218,9 @@ Es hora de rellenar los puntos `[...]`. Si el `método` es `POST` entonces querr
 form = PostForm(request.POST)
 ```
 
-Lo siguiente es verificar si el formulario está correcto (si todos los campos necesarios están definidos y no hay valores incorrectos). Lo hacemos con `form.is_valid()`.
+The next thing is to check if the form is correct (all required fields are set and no incorrect values have been submitted). We do that with `form.is_valid()`.
 
-Comprobamos que el formulario es válido y, si es así, ¡lo podemos salvar!
+We check if the form is valid and if so, we can save it!
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -220,9 +232,9 @@ if form.is_valid():
     post.save()
 ```
 
-Básicamente, tenemos que hacer dos cosas: guardamos el formulario con `form.save` y añadimos un autor (ya que no había ningún campo de `author` en el `PostForm` y este campo es obligatorio). `commit=False` significa que no queremos guardar el modelo `Post` aún - queremos añadir el autor primero. La mayoría de las veces utilizarás `form.save()`, sin `commit=False`, pero en este caso, tenemos que hacerlo. `post.save()` conservará los cambios (añadiendo a autor) y se creará una nuevo post en el blog!
+Basically, we have two things here: we save the form with `form.save` and we add an author (since there was no `author` field in the `PostForm` and this field is required). `commit=False` means that we don't want to save the `Post` model yet – we want to add the author first. Most of the time you will use `form.save()` without `commit=False`, but in this case, we need to supply it. `post.save()` will preserve changes (adding the author) and a new blog post is created!
 
-Por último, sería genial si podemos inmediatamente ir a la página `post_detail` del nuevo post, ¿no? Para hacerlo necesitamos importar algo más:
+Finally, it would be awesome if we could immediately go to the `post_detail` page for our newly created blog post, right? To do that we need one more import:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -230,7 +242,7 @@ Por último, sería genial si podemos inmediatamente ir a la página `post_detai
 from django.shortcuts import redirect
 ```
 
-Agrégalo al principio del archivo. Y ahora podemos decir: "vé a la página `post_detail` del post recién creado":
+Add it at the very beginning of your file. And now we can say, "go to the `post_detail` page for the newly created post":
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -238,9 +250,9 @@ Agrégalo al principio del archivo. Y ahora podemos decir: "vé a la página `po
 return redirect('post_detail', pk=post.pk)
 ```
 
-`post_detail` es el nombre de la vista a la que queremos ir. ¿Recuerdas que esta *view* requiere una variable `pk`? Para pasarlo a las vistas utilizamos `pk=post.pk`, donde `post` es el post recién creado!
+`post_detail` is the name of the view we want to go to. Remember that this *view* requires a `pk` variable? To pass it to the views, we use `pk=post.pk`, where `post` is the newly created blog post!
 
-Bien, hablamos mucho, pero probablemente queremos ver como se ve la *vista*, ¿verdad?
+OK, we've talked a lot, but we probably want to see what the whole *view* looks like now, right?
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -259,39 +271,45 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Veamos si funciona. Ve a la página http://127.0.0.1:8000/post/new/, añade un `title` y un `text`, guárdalo... y voilá! Se ha añadido el nuevo post al blog y somos redirigidos a la página de `post_detail`!
+Let's see if it works. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it… and voilà! The new blog post is added and we are redirected to the `post_detail` page!
 
-Puede que hayas notado que estamos indicando la fecha de publicación antes de guardar el post. Más adelante introduciremos un *botón de publicar* en el libro **Django Girls Tutorial: Extensions**.
+You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a *publish button* in **Django Girls Tutorial: Extensions**.
 
-¡Eso es genial!
+That is awesome!
 
-> Como recientemente hemos utilizado la interfaz de administrador de Django, el sistema piensa que estamos conectados. Hay algunas situaciones que podrían llevarnos a desconectarnos (cerrando el navegador, reiniciando la base de datos, etc.). Si estás recibiendo errores al crear un post que indican la falta de inicio de sesión de usuario, dirígete a la pagina de admin http://127.0.0.1:8000/admin e inicia sesión nuevamente. Esto resolverá el problema temporalmente. Hay un arreglo permanente esperándote en el capítulo **Tarea: ¡Añadir seguridad a tu sitio web!** después del tutorial principal.
+> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
 
-![Error de inicio de sesión](images/post_create_error.png)
+![Logged in error](images/post_create_error.png)
 
 ## Validación de formularios
 
-Ahora, vamos a enseñarte qué tan bueno es Django forms. Un post del blog debe tener los campos `title` y `text`. En nuestro modelo `Post` no dijimos (a diferencia de `published_date`) que estos campos no son requeridos, así que Django, por defecto, espera que estén definidos.
+Now, we will show you how cool Django forms are. A blog post needs to have `title` and `text` fields. In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
 
-Trata de guardar el formulario sin `title` y `text`. ¡Adivina qué pasará!
+Try to save the form without `title` and `text`. Guess what will happen!
 
-![Validación de formularios](images/form_validation2.png)
+![Form validation](images/form_validation2.png)
 
-Django se encarga de validar que todos los campos en el formulario estén correctos. ¿No es genial?
+Django is taking care to validate that all the fields in our form are correct. Isn't it awesome?
 
 ## Editar formulario
 
-Ahora sabemos cómo agregar un nuevo post. Pero, ¿qué pasa si queremos editar uno existente? Es muy similar a lo que acabamos de hacer. Creemos rápidamente algunas cosas importantes. (si no entiendes algo, pregúntale a tu tutora o tutor, o revisa lo capítulos anteriores, son temas que ya hemos cubierto.)
+Now we know how to add a new post. But what if we want to edit an existing one? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
 
-Abre `blog/templates/blog/post_detail.html` en el editor de código y añade la línea
+First, let's save the icon which represents the edit button. Download [pencil-fill.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/pencil-fill.svg) and save it to the location `blog/templates/blog/icons/`.
+
+Open `blog/templates/blog/post_detail.html` in the code editor and add the following code inside `article` tag:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
 ```html
-<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+<aside class="actions">
+    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+      {% include './icons/pencil-fill.svg' %}
+    </a>
+</aside>
 ```
 
-para que la plantilla quede así:
+so that the template will look like this:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -299,20 +317,24 @@ para que la plantilla quede así:
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <div class="post">
+    <article class="post">
+        <aside class="actions">
+            <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+                {% include './icons/pencil-fill.svg' %}
+            </a>
+        </aside>
         {% if post.published_date %}
-            <div class="date">
+            <time class="date">
                 {{ post.published_date }}
-            </div>
+            </time>
         {% endif %}
-        <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
         <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    </article>
 {% endblock %}
 ```
 
-Abre `blog/urls.py` en el editor y añade esta línea:
+Open `blog/urls.py` in the code editor, and add this line:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -320,9 +342,9 @@ Abre `blog/urls.py` en el editor y añade esta línea:
     path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
 ```
 
-Vamos a reusar la plantilla `blog/templates/blog/post_edit.html`, así que lo último que nos falta es una *view*.
+We will reuse the template `blog/templates/blog/post_edit.html`, so the last missing thing is a *view*.
 
-Abre `blog/views.py` en el editor de código y añade esto al final del todo:
+Let's open `blog/views.py` in the code editor and add this at the very end of the file:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -342,7 +364,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Esto se ve casi exactamente igual a nuestra view `post_new`, ¿no? Pero no del todo. Por un lado, pasamos un parámetro `pk` adicional de `urls`. Segundo: obtenemos el modelo `Post` que queremos editar con `get_object_or_404(Post, pk=pk)` y después, al crear el formulario pasamos este post como una `instancia` tanto al guardar el formulario…
+This looks almost exactly the same as our `post_new` view, right? But not entirely. For one, we pass an extra `pk` parameter from `urls`. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -350,7 +372,7 @@ Esto se ve casi exactamente igual a nuestra view `post_new`, ¿no? Pero no del t
 form = PostForm(request.POST, instance=post)
 ```
 
-... y justo cuando abrimos un formulario con este post para editarlo:
+…and when we've just opened a form with this post to edit:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -358,69 +380,77 @@ form = PostForm(request.POST, instance=post)
 form = PostForm(instance=post)
 ```
 
-Ok, ¡vamos a probar si funciona! Dirígete a la página `post_detail`. Ahí debe haber un botón para editar en la esquina superior derecha:
+OK, let's test if it works! Let's go to the `post_detail` page. There should be an edit button in the top-right corner:
 
-![Botón editar](images/edit_button2.png)
+![Edit button](images/edit_button2.png)
 
-Al dar click ahí, debes ver el formulario con nuestro post del blog:
+When you click it you will see the form with our blog post:
 
-![Editar formulario](images/edit_form2.png)
+![Edit form](images/edit_form2.png)
 
-¡Siéntete libre de cambiar el título o el texto y guarda los cambios!
+Feel free to change the title or the text and save the changes!
 
-¡Felicitaciones! ¡Tu aplicación está cada vez más completa!
+Congratulations! Your application is getting more and more complete!
 
-Si necesita más información sobre los formularios de Django, debe leer la documentación: https://docs.djangoproject.com/en/2.2/topics/forms/
+If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.2/topics/forms/
 
 ## Seguridad
 
-¡Poder crear nuevas publicaciones haciendo click en un enlace es genial! Pero, ahora mismo, cualquiera que visite tu página podría publicar un nuevo post y seguro que eso no es lo que quieres. Vamos a hacer que el botón sea visible para ti pero no para nadie más.
+Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
 
-Abre `blog/templates/blog/base.html` en el editor, busca el `div` `page-header` y la etiqueta del enlace (anchor) que pusimos antes. Debería ser algo así:
+Open `blog/templates/blog/base.html` in the code editor, find our `div` inside `header` and the anchor tag you put in there earlier. It should look like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
-<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+<a href="{% url 'post_new' %}" class="top-menu">
+    {% include './icons/file-earmark-plus.svg' %}
+</a>
 ```
 
-Vamos a añadir otra etiqueta `{% if %}` que hará que el enlace sólo parezca para los usuarios que hayan iniciado sesión en el admin. Ahora mismo, ¡eres sólo tú! Cambia la etiqueta `<a>` para que se parezca a esto:
+We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! Change the `<a>` tag to look like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
 {% if user.is_authenticated %}
-    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+    <a href="{% url 'post_new' %}" class="top-menu">
+        {% include './icons/file-earmark-plus.svg' %}
+    </a>
 {% endif %}
 ```
 
-Este `{% if %}` hará que el enlace sólo se envíe al navegador si el usuario que solicita la página ha iniciado sesión. Esto no protege completamente la creación de nuevas entradas, pero es un buen primer paso. Veremos más sobre seguridad en el libro de extensiones.
+This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. This doesn't protect the creation of new posts completely, but it's a good first step. We'll cover more security in the extension lessons.
 
-Recuerdas el icono de "editar" que acabamos de añadir a nuestra pagina de detalles? También queremos añadir lo mismo aquí, así otras personas no podrán editar posts existentes.
+Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
 
-Abre `blog/templates/blog/post_detail.html` en el editor y busca esta línea:
+Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
 ```html
-<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+    {% include './icons/pencil-fill.svg' %}
+</a>
 ```
 
-Cámbiala a lo siguiente:
+Change it to this:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
 ```html
 {% if user.is_authenticated %}
-    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+        {% include './icons/pencil-fill.svg' %}
+     </a>
 {% endif %}
 ```
 
-Dado que es probable que estés conectado, si actualizas la pagina, no veras nada diferente. Carga la pagina en un navegador diferente o en una ventana en modo incógnito ("privado" en Windows Edge) y verás que el link no aparece, y el icono tampoco!
+Since you're likely logged in, if you refresh the page, you won't see anything different. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
 
 ## Una cosa más: ¡Tiempo de despliegue!
 
-Veamos si todo esto funciona en PythonAnywhere. ¡Tiempo de hacer otro despliegue!
+Let's see if all this works on PythonAnywhere. Time for another deploy!
 
 * Lo primero, haz commit de tus últimos cambios y súbelo (push) a GitHub:
 
@@ -442,7 +472,7 @@ Veamos si todo esto funciona en PythonAnywhere. ¡Tiempo de hacer otro despliegu
     [...]
     
 
-(Recuerda sustituir `<your-pythonanywhere-domain>` con tu subdominio de PythonAnywhere real, sin los paréntesis angulares.)
+(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
 
 * Para terminar ve a ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (usa el botón del menú de la esquina superior derecha, encima de la consola) y haz click en **Reload**. Recarga tu https://subdomain.pythonanywhere.com blog para ver los cambios.
 
