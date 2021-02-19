@@ -40,6 +40,7 @@ Open the new file in the code editor, and add the following:
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
 <body>
     <p>Hi there!</p>
@@ -54,8 +55,9 @@ Ano ang hitsura ng iyong website ngayon? Dalawin ito upang malaman: http://127.0
 
 It worked. Nice work there! :)
 
-* Ang pinaka-basic na tag, `<html>`, ay palaging simula ng kahit anong web page at ang `</html>` ay palaging katapusan. Gaya ng iyong nakikita, ang kabuuang nilalaman ng website ay nasa pagitan ng pansimulang tag `<html>` at pangwakas na tag `</html>`
-* `<p>` ay isang tag pra sa mga elemento ng talata;`</p>` ngwawakas ng bawat talata
+* The line `<!DOCTYPE html>` is not a HTML tag. It only declares the document type. Here, it informs the browser that document type is [HTML5](https://html.spec.whatwg.org/#the-doctype). This is always the beginning of any HTML5 file.
+* The most basic tag, `<html>`, is always the beginning of html content and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
+* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
 
 ## Ulo at katawan
 
@@ -72,13 +74,14 @@ Halimbawa, maaari mong ilagay ang web page title na elemento sa loob ng `<head>`
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Blog ni Ola</title>
+        <title>Ola's blog</title>
     </head>
     <body>
-        <p>Kumusta!</p>
-        <p>Ito ay gumagana!</p>
+        <p>Hi there!</p>
+        <p>It works!</p>
     </body>
 </html>
 ```
@@ -109,40 +112,49 @@ Maaari ka na ngayong magkaroon ng kaunting kasiyahan at subukang i-customize ang
 * `<a href="https://djangogirls.org">link</a>` lumilikha ng isang link
 * `<ul><li> first item</li><li>second item</li></ul>` gumagawa ng isang listahan, kagaya ng isang ito!
 * `<div></div>` tumutukoy sa isang seksyon ng pahina
+* `<nav></nav>` defines a set of navigation links
+* `<article></article>` specifies independent, self-contained content
+* `<section></section>` defines a section in a document
+* `<header></header>` specifies a header for a document or section
+* `<main></main>` specifies the main content of a document
+* `<aside></aside>` defines some content aside from the content it is placed in (like a sidebar)
+* `<footer></footer>` defines a footer for a document or section
+* `<time></time>` defines a specific time (or datetime)
 
 Nandito ang isang halimbawa ng isang buong template, kopyahin at ilagay ito sa `blog/templates/blog/post_list.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Django Girls na blog</title>
+        <title>Django Girls blog</title>
     </head>
     <body>
-        <div>
-            <h1><a href="/">Django Girls na Blog</a></h1>
-        </div>
+        <header>
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </header>
 
-        <div>
-            <p>Nailathala noong: 14.06.2014, 12:14</p>
-            <h2><a href="">Ang aking unang post</a></h2>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
+            <h2><a href="">My first post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
+        </article>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">Aking pangalawang post</a></h2>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
+            <h2><a href="">My second post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
+        </article>
     </body>
 </html>
 ```
 
-Gumawa tayo ng tatlong `div` na mga seksyon dito.
+We've created one `header` section and two `article` section here.
 
-* Ang unang `div` na elemento ay naglalaman sa pamagat ng ating blog - ito ay isang heading at isang link
-* Another two `div` elements contain our blog posts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blog post.
+* The `header` element contains the title of our blog – it's a heading and a link
+* Another two `article` elements contain our blog posts with a published date in `time` element, `h2` with a post title that is clickable and a `p` (paragraph) of text for our blog post.
 
 Ito ay nagbibigay sa atin ng effect na ito:
 
