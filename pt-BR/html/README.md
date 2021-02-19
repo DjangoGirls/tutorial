@@ -40,6 +40,7 @@ Abra o novo arquivo no editor de código e adicione o seguinte:
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
 <body>
     <p>Hi there!</p>
@@ -54,8 +55,9 @@ Como está o nosso site agora? Visite a página descobrir: http://127.0.0.1:8000
 
 It worked. Nice work there! :)
 
-* A tag mais básica, `<html>`, estará sempre no começo de qualquer página da web, assim como, `</html>` sempre estará no fim. Todo o conteúdo de um website se encontra entre a tag de início `<html>` e a tag de fim `</html>`
-* `<p>` é a tag que inicia um parágrafos; `</p>` determina o fim de um parágrafo
+* The line `<!DOCTYPE html>` is not a HTML tag. It only declares the document type. Here, it informs the browser that document type is [HTML5](https://html.spec.whatwg.org/#the-doctype). This is always the beginning of any HTML5 file.
+* The most basic tag, `<html>`, is always the beginning of html content and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
+* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
 
 ## "Head" e "body"
 
@@ -72,6 +74,7 @@ Por exemplo, você pode incluir o elemento título de uma página web dentro da 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Ola's blog</title>
@@ -109,40 +112,49 @@ Agora você pode se divertir um pouco tentando personalizar o seu template! Aqui
 * `<a href="https://djangogirls.org">link</a>` cria um link
 * `<ul><li>primeiro item</li><li>segundo item</li></ul>` cria uma lista, exatamente como essa!
 * `<div></div>` define uma seção da página
+* `<nav></nav>` defines a set of navigation links
+* `<article></article>` specifies independent, self-contained content
+* `<section></section>` defines a section in a document
+* `<header></header>` specifies a header for a document or section
+* `<main></main>` specifies the main content of a document
+* `<aside></aside>` defines some content aside from the content it is placed in (like a sidebar)
+* `<footer></footer>` defines a footer for a document or section
+* `<time></time>` defines a specific time (or datetime)
 
 Aqui vai um exemplo de um template completo; copie e cole dentro de `blog/templates/blog/post_list.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Blog Django Girls</title>
+        <title>Django Girls blog</title>
     </head>
     <body>
-        <div>
-            <h1><a href="/">Blog Django Girls</a></h1>
-        </div>
+        <header>
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </header>
 
-        <div>
-            <p>publicado: 14.06.2014, 12:14</p>
-            <h2><a href="">Meu primeiro post</a></h2>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
+            <h2><a href="">My first post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
+        </article>
 
-        <div>
-            <p>publicado: 14.06.2014, 12:14</p>
-            <h2><a href="">Meu segundo post</a></h2>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
+            <h2><a href="">My second post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
+        </article>
     </body>
 </html>
 ```
 
-Nós criamos três seções `div` aqui.
+We've created one `header` section and two `article` section here.
 
-* O primeiro elemento `div` possui o título do nosso blog - é um título que contêm um link
-* Os outros dois elementos `div` possuem nossas postagens com a data de publicação, `h2` com o título clicável da postagem e dois `p`s (parágrafos) de texto, um para a data e outro para o texto da postagem.
+* The `header` element contains the title of our blog – it's a heading and a link
+* Another two `article` elements contain our blog posts with a published date in `time` element, `h2` with a post title that is clickable and a `p` (paragraph) of text for our blog post.
 
 Isso nos dá o seguinte efeito:
 
