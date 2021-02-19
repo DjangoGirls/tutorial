@@ -40,6 +40,7 @@ Deschideți fișier în editor de cod și adăugați marcajul următor:
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
 <body>
     <p>Hi there!</p>
@@ -54,8 +55,9 @@ Cum arată website-ul acum? Vizitați-l pe http://127.0.0.1:8000/
 
 It worked. Nice work there! :)
 
-* Tag-ul de bază, `<html>`, este începutul a paginii web și `</html>` este sfârșitul. După cum vedeți, conținutul website-ului este între tăgul de început `<html>` și cel de sfârșit `</html>`
-* `<p>` este un tăg pentru elemente de paragraf; `</p>` închide fiecare paragraf
+* The line `<!DOCTYPE html>` is not a HTML tag. It only declares the document type. Here, it informs the browser that document type is [HTML5](https://html.spec.whatwg.org/#the-doctype). This is always the beginning of any HTML5 file.
+* The most basic tag, `<html>`, is always the beginning of html content and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
+* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
 
 ## Head și body
 
@@ -72,6 +74,7 @@ De exemplu, putem pune elementul pentru a afișa titlu paginii web în `<head>`:
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Ola's blog</title>
@@ -109,40 +112,49 @@ Acum puteți să distrați și să încercați să personalizați template-ul vo
 * `<a href="https://djangogirls.org">link</a>` creează un
 * `<ul><li>primul punct</li><li>al doilea punct</li></ul>` face un list, ca acesta!
 * `<div></div>` definește o secție a paginii
+* `<nav></nav>` defines a set of navigation links
+* `<article></article>` specifies independent, self-contained content
+* `<section></section>` defines a section in a document
+* `<header></header>` specifies a header for a document or section
+* `<main></main>` specifies the main content of a document
+* `<aside></aside>` defines some content aside from the content it is placed in (like a sidebar)
+* `<footer></footer>` defines a footer for a document or section
+* `<time></time>` defines a specific time (or datetime)
 
 Acesta este un exemplu a template-ului, copiați-l și plasați-l în `blog/templates/blog/post_list.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
     </head>
     <body>
-        <div>
+        <header>
             <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+        </header>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
             <h2><a href="">My first post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
+        </article>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
             <h2><a href="">My second post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
+        </article>
     </body>
 </html>
 ```
 
-Aici am creat 3 secții `div`.
+We've created one `header` section and two `article` section here.
 
-* Primul element `div` conține titlul blogului nostru – acesta este un titlu și link
-* Alte două elemente `div`conțin posturi de blog cu data de publicare, `h2` cu un titlu de post, pe care o putem face click și două `p` (paragrafe) de text, unul pentru dată și unul pentru postul de blog.
+* The `header` element contains the title of our blog – it's a heading and a link
+* Another two `article` elements contain our blog posts with a published date in `time` element, `h2` with a post title that is clickable and a `p` (paragraph) of text for our blog post.
 
 Acesta dă efectul următor:
 
