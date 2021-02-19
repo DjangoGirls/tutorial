@@ -192,7 +192,7 @@ Go ahead and name some parts of the HTML code. Replace the `header` that contain
 </header>
 ```
 
-And now add a class `post` to your `article` containing a blog post.
+Jetzt fügen wir dem `article` für den Blog-Inhalt (Post) noch eine Klasse `post` hinzu.
 
 {% filename %}blog/templates/blog/post_list{% endfilename %}
 
