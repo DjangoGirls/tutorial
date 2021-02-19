@@ -51,16 +51,16 @@ Es funktioniert! Aber wir wollen, dass die Posts so wie die statischen Posts ang
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<div>
-    <h1><a href="/">Django Girls Blog</a></h1>
-</div>
+<header>
+    <h1><a href="/">Django Girls Blog</a></h1>
+</header>
 
 {% for post in posts %}
-    <div>
-        <p>published: {{ post.published_date }}</p>
-        <h2><a href="">{{ post.title }}</a></h2>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    <article>
+        <time>published: {{ post.published_date }}</time>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </article>
 {% endfor %}
 ```
 
