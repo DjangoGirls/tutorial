@@ -21,8 +21,7 @@ CSS یا (Cascading Style Sheets) زبان مورد استفاده برای تو
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 ```
 
 این کار هیچ فایلی به پروژه شما اضافه نمی‌کند. این کد به فایلی که در اینترنت وجود دارد اشاره می‌کند. بنابراین به پیش بروید وبسایت خود را باز کنید و صفحه را ریفرش کنید. بفرمایید!
@@ -74,7 +73,7 @@ CSS یا (Cascading Style Sheets) زبان مورد استفاده برای تو
 
 ```css
 h1 a, h2 a {
-    color: #FF8833;
+    color: #C25100;
 }
 
 ```
@@ -113,24 +112,24 @@ h1 a, h2 a {
 
 ```html
 {% load static %}
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-        <div>
+        <header>
             <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+        </header>
 
         {% for post in posts %}
-            <div>
-                <p>published: {{ post.published_date }}</p>
+            <article>
+                <time>published: {{ post.published_date }}</time>
                 <h2><a href="">{{ post.title }}</a></h2>
                 <p>{{ post.text|linebreaksbr }}</p>
-            </div>
+            </article>
         {% endfor %}
     </body>
 </html>
@@ -176,26 +175,28 @@ h1 a, h2 a { color: #C25100; font-family: 'Lobster'; }
 
 همانطور که در بالا ذکر شد CSS دارای مفهوم کلاس است. کلاس‌ها به شما اجازه می‌دهند تا بخشی از کد HTML را نامگذاری کنید و تنها فرمت این قسمت از کد را تغییر بدهید، بدون اینکه به سایر قسمت‌ها آسیبی برسد. کلاس‌ها می‌توانند فوق‌العاده مفید باشند! شاید شما دو div دارید که کاری متفاوت انجام می دهند (مانند header و post). یک کلاس می‌تواند به شما کمک کند آن‌ها را متفاوت نگاه کنید.
 
-پیش برویم و بخش هایی از کد HTML را نام گذاری کنیم. کلاسی به نام `page-header` را به `div` اضافه کنید که شامل هدر شما است، مانند این:
+Go ahead and name some parts of the HTML code. Replace the `header` that contains your header with the following:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<div class="page-header">
-    <h1><a href="/">Django Girls Blog</a></h1>
-</div>
+<header class="page-header">
+    <div class="container">
+        <h1><a href="/">Django Girls Blog</a></h1>
+    </div>
+</header>
 ```
 
-و اکنون کلاس `post` را به `div` اضافه کنید که حاوی یک پست وبلاگ است.
+And now add a class `post` to your `article` containing a blog post.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<div class="post">
-    <p>published: {{ post.published_date }}</p>
+<article class="post">
+    <time>published: {{ post.published_date }}</time>
     <h2><a href="">{{ post.title }}</a></h2>
     <p>{{ post.text|linebreaksbr }}</p>
-</div>
+</article>
 ```
 
 ما اکنون بلوک‌های معرف را به انتخاب‌گرهای مختلف اضافه خواهیم کرد. انتخابگرهایی که با `.` آغاز می‌شوند مربوط به کلاس‌ها هستند. آموزش‌ها و توضیحات بسیار خوبی درباره CSS در اینترنت وجود دارد که می‌تواند به شما در درک کد زیر کمک کند. حالا این قطعه کد را در فایل `blog/static/css/blog.css` کپی کنید:
@@ -203,7 +204,76 @@ h1 a, h2 a { color: #C25100; font-family: 'Lobster'; }
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-.page-header {     background-color: #C25100;     margin-top: 0;     padding: 20px 20px 20px 40px; } .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {     color: #ffffff;     font-size: 36pt;     text-decoration: none; } .content {     margin-left: 40px; } h1, h2, h3, h4 {     font-family: 'Lobster', cursive; } .date {     color: #828282; } .save {     float: right; } .post-form textarea, .post-form input {     width: 100%; } .top-menu, .top-menu:hover, .top-menu:visited {     color: #ffffff;     float: right;     font-size: 26pt;     margin-right: 20px; } .post {     margin-bottom: 70px; } .post h2 a, .post h2 a:visited {     color: #000000; }
+.page-header {
+    background-color: #C25100;
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding: 20px 20px 20px 40px;
+}
+
+.page-header h1,
+.page-header h1 a,
+.page-header h1 a:visited,
+.page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Lobster', cursive;
+}
+
+.date {
+    color: #828282;
+}
+
+.save {
+    float: right;
+}
+
+.post-form textarea,
+.post-form input {
+    width: 100%;
+}
+
+.top-menu,
+.top-menu:hover,
+.top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.post {
+    margin-bottom: 70px;
+}
+
+.post h2 a,
+.post h2 a:visited {
+    color: #000000;
+}
+
+.post > .date,
+.post > .actions {
+    float: right;
+}
+
+.btn-default,
+.btn-default:visited {
+    color: #C25100;
+    background: none;
+    border-color: #C25100;
+}
+
+.btn-default:hover {
+    color: #FFFFFF;
+    background-color: #C25100;
+}
 ```
 
 سپس کد HTML زیر را که نمایش پست‌ها با اسامی کلاس‌ها را نشان می‌دهد:
@@ -212,11 +282,11 @@ h1 a, h2 a { color: #C25100; font-family: 'Lobster'; }
 
 ```html
 {% for post in posts %}
-    <div class="post">
-        <p>published: {{ post.published_date }}</p>
+    <article class="post">
+        <time>published: {{ post.published_date }}</time>
         <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    </article>
 {% endfor %}
 ```
 
@@ -225,21 +295,21 @@ h1 a, h2 a { color: #C25100; font-family: 'Lobster'; }
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<div class="content container">
+<main class="container">
     <div class="row">
-        <div class="col-md-8">
+        <div class="col">
             {% for post in posts %}
-                <div class="post">
-                    <div class="date">
-                        <p>published: {{ post.published_date }}</p>
-                    </div>
+                <article class="post">
+                    <time class="date">
+                        {{ post.published_date }}
+                    </time>
                     <h2><a href="">{{ post.title }}</a></h2>
                     <p>{{ post.text|linebreaksbr }}</p>
-                </div>
+                </article>
             {% endfor %}
         </div>
     </div>
-</div>
+</main>
 ```
 
 این فایل‎‌ها را ذخیره کنید و وبسایت خود را دوباره بارگیری کنید.
