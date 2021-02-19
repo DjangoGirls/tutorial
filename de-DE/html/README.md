@@ -40,10 +40,11 @@ Der Fehler sollte weg sein! Gratulation! :) Deine Webseite ist allerdings noch l
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
 <body>
-    <p>Halli-Hallo!</p>
-    <p>Es funktioniert!</p>
+    <p>Hi there!</p>
+    <p>It works!</p>
 </body>
 </html>
 ```
@@ -54,8 +55,9 @@ Hat sich die Seite geändert? Besuche http://127.0.0.1:8000/, um nachzusehen.
 
 Es funktioniert. Gute Arbeit! :)
 
-* Jede Webseite sollte mit dem Tag `<html>` beginnen. Und `</html>` steht immer am Ende. Zwischen den beiden Tags `<html>` und `</html>` steht der gesamte Inhalt der Webseite
-* `<p>` ist der Tag für ein Absatz-Element (paragraph), `</p>` beendet einen Absatz
+* The line `<!DOCTYPE html>` is not a HTML tag. It only declares the document type. Here, it informs the browser that document type is [HTML5](https://html.spec.whatwg.org/#the-doctype). This is always the beginning of any HTML5 file.
+* The most basic tag, `<html>`, is always the beginning of html content and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
+* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
 
 ## "Head" und "body"
 
@@ -72,13 +74,14 @@ In den `<head>` können wir z.B. noch den Titel (title) der Seite mit aufnehmen:
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Olas Blog</title>
+        <title>Ola's blog</title>
     </head>
     <body>
-        <p>Halli-Hallo!</p>
-        <p>Es funktioniert!</p>
+        <p>Hi there!</p>
+        <p>It works!</p>
     </body>
 </html>
 ```
@@ -109,40 +112,49 @@ Jetzt kannst du ein bisschen rumprobieren und dein Template umgestalten! Hier si
 * `<a href="https://djangogirls.org">link</a>` erstellt einen Link
 * `<ul><li>Erster Punkt</li><li>second item</li></ul>` generiert eine Liste so wie diese hier!
 * `<div></div>` definiert einen Abschnitt auf einer Seite
+* `<nav></nav>` defines a set of navigation links
+* `<article></article>` specifies independent, self-contained content
+* `<section></section>` defines a section in a document
+* `<header></header>` specifies a header for a document or section
+* `<main></main>` specifies the main content of a document
+* `<aside></aside>` defines some content aside from the content it is placed in (like a sidebar)
+* `<footer></footer>` defines a footer for a document or section
+* `<time></time>` defines a specific time (or datetime)
 
 Hier ist ein vollständiges Beispiel eines Templates. Kopiere es und füge es in `blog/templates/blog/post_list.html` ein:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
     </head>
     <body>
-        <div>
+        <header>
             <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+        </header>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
             <h2><a href="">My first post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
+        </article>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My second post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
-    </body>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
+            <h2><a href="">My second post</a></h2>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
+        </article>
+    </body>
 </html>
 ```
 
-Wir haben hier drei verschiedene `div` Abschnitte erstellt.
+We've created one `header` section and two `article` section here.
 
-* Das erste `div` Element enthält den Titel unseres Blogs – eine Überschrift und einen Link
-* Zwei weitere `div` Elemente beinhalten unsere Blogposts und ein Publikationsdatum, `h2` mit dem Titel des Posts und zwei `p` (paragraph) Tags mit Text, eines für das Datum und eines für den Blogpost.
+* The `header` element contains the title of our blog – it's a heading and a link
+* Another two `article` elements contain our blog posts with a published date in `time` element, `h2` with a post title that is clickable and a `p` (paragraph) of text for our blog post.
 
 Wir bekommen das Folgende:
 
