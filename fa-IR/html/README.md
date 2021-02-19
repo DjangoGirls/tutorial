@@ -40,6 +40,7 @@ HTML مخفف عبارت "HyperText Markup Language" است. **HyperText** به 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
 <body>
     <p>Hi there!</p>
@@ -54,8 +55,9 @@ HTML مخفف عبارت "HyperText Markup Language" است. **HyperText** به 
 
 کار می‌کند! خوب شد! :)
 
-* `<html>` پایه‌ای ترین تگ و معمولاً اولین تگ در ابتدای صفحه است و تگ `</html>` معمولاً در انتهای صفحه می‌آید. همانطور که می‌بینید، تمام محتوای وبسایت بین تگ `<html>` در ابتدا و تگ `</html>` در انتها قرار می‌گیرند
-* تگ `<p>` برای پاراگراف‌ها به کار می‌رود و تگ `</p>` پایان هر پاراگراف را مشخص می‌کند
+* The line `<!DOCTYPE html>` is not a HTML tag. It only declares the document type. Here, it informs the browser that document type is [HTML5](https://html.spec.whatwg.org/#the-doctype). This is always the beginning of any HTML5 file.
+* The most basic tag, `<html>`, is always the beginning of html content and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
+* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
 
 ## Head and body
 
@@ -72,6 +74,7 @@ HTML مخفف عبارت "HyperText Markup Language" است. **HyperText** به 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Ola's blog</title>
@@ -109,40 +112,49 @@ HTML مخفف عبارت "HyperText Markup Language" است. **HyperText** به 
 * `<a href="https://djangogirls.org">لینک</a>` یک لینک می‌سازد
 * `<ul><li>آیتم اول</li><li>آیتم دوم</li></ul>` یک لیست، دقیقاً مانند همین لیست درست می‌کند!
 * `<div></div>` یک بخش جدید در صفحه تعریف می‌کند
+* `<nav></nav>` defines a set of navigation links
+* `<article></article>` specifies independent, self-contained content
+* `<section></section>` defines a section in a document
+* `<header></header>` specifies a header for a document or section
+* `<main></main>` specifies the main content of a document
+* `<aside></aside>` defines some content aside from the content it is placed in (like a sidebar)
+* `<footer></footer>` defines a footer for a document or section
+* `<time></time>` defines a specific time (or datetime)
 
 اینجا نمونه‌ای از یک تمپلیت کامل داریم. آن را در فایل `blog/templates/blog/post_list.html` کپی کنید:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
     </head>
     <body>
-        <div>
+        <header>
             <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+        </header>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
             <h2><a href="">My first post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
+        </article>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
             <h2><a href="">My second post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
+        </article>
     </body>
 </html>
 ```
 
-ما سه بخش با تگ `div` ساخته‌ایم.
+We've created one `header` section and two `article` section here.
 
-* اولین عنصر `div`، شامل عنوان وبلاگ یعنی یک تیتر و یک لینک، است
-* دو عنصر `div` بعدی شامل یک پست وبلاگی و تاریخ انتشار آن است. تگ `h2` با عنوان پست و قابل کلیک کردن و دوتا تگ متنی `p` که یکی برای تاریخ است و دیگری برای متن پست وبلاگ ما.
+* The `header` element contains the title of our blog – it's a heading and a link
+* Another two `article` elements contain our blog posts with a published date in `time` element, `h2` with a post title that is clickable and a `p` (paragraph) of text for our blog post.
 
 چنین نتیجه ای به ما می‌دهد:
 
