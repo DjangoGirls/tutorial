@@ -29,7 +29,7 @@ Evet! Her türlü programlama becerisini öğrenmek için çevrimiçi *bir çok*
 - [Code Academy Python kursu](https://www.codecademy.com/learn/learn-python)
 - [Google Python kursu](https://developers.google.com/edu/python/)
 - [Python dilini The Hard Way(Zor Yol) kitabı ile öğren. ](http://learnpythonthehardway.org/book/) İçindeki egzersizler ücretsiz 
-- [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
+- [Yeni Kodlayıcı öğreticileri](http://newcoder.io/tutorials/) - bu, Python'u nasıl kullanabileceğinize dair çeşitli pratik örneklerdir
 - [edX](https://www.edx.org/course?search_query=python) – Bir çok kursu ücretsiz olarak alabilirsiniz, ancak yükseköğretim yeterliliği için bir sertifika veya kredi almak ücretli olabilir
 - [Coursera Python Uzmanlığı](https://www.coursera.org/specializations/python) - bazı video dersleri ücretsiz olarak izlenebilir ve bu kursları alarak bir Coursera Sertifikası kazanabilirsiniz
 - [Herkes için Python](https://www.py4e.com/)- Coursera Herkes için Python uzmanlık kursunun ücretsiz ve açık versiyonu
