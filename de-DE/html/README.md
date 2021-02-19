@@ -43,8 +43,8 @@ Der Fehler sollte weg sein! Gratulation! :) Deine Webseite ist allerdings noch l
 <!DOCTYPE html>
 <html>
 <body>
-    <p>Hi there!</p>
-    <p>It works!</p>
+    <p>Halli-Hallo!</p>
+    <p>Es funktioniert!</p>
 </body>
 </html>
 ```
@@ -55,8 +55,8 @@ Hat sich die Seite geändert? Besuche http://127.0.0.1:8000/, um nachzusehen.
 
 Es funktioniert. Gute Arbeit! :)
 
-* The line `<!DOCTYPE html>` is not a HTML tag. It only declares the document type. Here, it informs the browser that document type is [HTML5](https://html.spec.whatwg.org/#the-doctype). This is always the beginning of any HTML5 file.
-* The most basic tag, `<html>`, is always the beginning of html content and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
+* Die Zeile `<!DOCTYPE html>` ist kein HTML-Tag. Es deklariert nur den Dokumententyp. Hier informiert sie den Browser, dass der Dokumententyp [HTML5](https://html.spec.whatwg.org/#the-doctype) ist. Jede HTML5-Datei muss so anfangen.
+* Der eigentliche HTML-Inhalt beginnt immer mit `<html>` und endet immer mit `</html>`. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
 * `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
 
 ## "Head" und "body"
