@@ -21,8 +21,7 @@ Bootstrap е една от най-популярните фреймуорки з
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 ```
 
 Това не добавя никакви файлове към твоя проект. То просто сочи файлове, които съществуват в Интернет. Затова продължи напред, отвори уебсайта си и актуализирай страницата. Ето го!
@@ -74,7 +73,7 @@ Django автоматично ще открива всички папки, на�
 
 ```css
 h1 a, h2 a {
-    color: #FF8833;
+    color: #C25100;
 }
 
 ```
@@ -113,24 +112,24 @@ h1 a, h2 a {
 
 ```html
 {% load static %}
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-        <div>
+        <header>
             <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+        </header>
 
         {% for post in posts %}
-            <div>
-                <p>published: {{ post.published_date }}</p>
+            <article>
+                <time>published: {{ post.published_date }}</time>
                 <h2><a href="">{{ post.title }}</a></h2>
                 <p>{{ post.text|linebreaksbr }}</p>
-            </div>
+            </article>
         {% endfor %}
     </body>
 </html>
@@ -181,26 +180,28 @@ h1 a, h2 a {
 
 Както бе споменато по-горе, CSS има концепция за класове. Те ви позволяват да назовете част от HTML кода и да приложите стилове само към тази част, без да засягате другите. Това може да бъде супер полезно! Може би имаш два div (от division, разделяне), които правят нещо различно (като заглавието и публикацията ти). Един клас може да ти помогне да ги накараш да изглеждат различно.
 
-Продължи и дай име на някои части от HTML кода. Добави клас, наречен `page-header`, към твоя `div`, който съдържа заглавието ти, ето така:
+Go ahead and name some parts of the HTML code. Replace the `header` that contains your header with the following:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<div class="page-header">
-    <h1><a href="/">Django Girls Blog</a></h1>
-</div>
+<header class="page-header">
+    <div class="container">
+        <h1><a href="/">Django Girls Blog</a></h1>
+    </div>
+</header>
 ```
 
-И сега добави клас `post` към твоя `div` съдържащ публикация в блог.
+And now add a class `post` to your `article` containing a blog post.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<div class="post">
-    <p>published: {{ post.published_date }}</p>
+<article class="post">
+    <time>published: {{ post.published_date }}</time>
     <h2><a href="">{{ post.title }}</a></h2>
     <p>{{ post.text|linebreaksbr }}</p>
-</div>
+</article>
 ```
 
 Сега ще добавим декларационни блокове към различни селектори. Селектори, започващи с `.`, се отнасят за класове. Има много страхотни ръководства и обяснения за CSS в мрежата, които могат да ти помогнат да разбереш следния код. Засега го копирай и постави във твоя `blog/static/css/blog.css` файл:
@@ -211,20 +212,23 @@ h1 a, h2 a {
 .page-header {
     background-color: #C25100;
     margin-top: 0;
+    margin-bottom: 40px;
     padding: 20px 20px 20px 40px;
 }
 
-.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+.page-header h1,
+.page-header h1 a,
+.page-header h1 a:visited,
+.page-header h1 a:active {
     color: #ffffff;
     font-size: 36pt;
     text-decoration: none;
 }
 
-.content {
-    margin-left: 40px;
-}
-
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Lobster', cursive;
 }
 
@@ -236,11 +240,14 @@ h1, h2, h3, h4 {
     float: right;
 }
 
-.post-form textarea, .post-form input {
+.post-form textarea,
+.post-form input {
     width: 100%;
 }
 
-.top-menu, .top-menu:hover, .top-menu:visited {
+.top-menu,
+.top-menu:hover,
+.top-menu:visited {
     color: #ffffff;
     float: right;
     font-size: 26pt;
@@ -251,8 +258,26 @@ h1, h2, h3, h4 {
     margin-bottom: 70px;
 }
 
-.post h2 a, .post h2 a:visited {
+.post h2 a,
+.post h2 a:visited {
     color: #000000;
+}
+
+.post > .date,
+.post > .actions {
+    float: right;
+}
+
+.btn-default,
+.btn-default:visited {
+    color: #C25100;
+    background: none;
+    border-color: #C25100;
+}
+
+.btn-default:hover {
+    color: #FFFFFF;
+    background-color: #C25100;
 }
 ```
 
@@ -262,11 +287,11 @@ h1, h2, h3, h4 {
 
 ```html
 {% for post in posts %}
-    <div class="post">
-        <p>published: {{ post.published_date }}</p>
+    <article class="post">
+        <time>published: {{ post.published_date }}</time>
         <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    </article>
 {% endfor %}
 ```
 
@@ -275,21 +300,21 @@ h1, h2, h3, h4 {
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<div class="content container">
+<main class="container">
     <div class="row">
-        <div class="col-md-8">
+        <div class="col">
             {% for post in posts %}
-                <div class="post">
-                    <div class="date">
-                        <p>published: {{ post.published_date }}</p>
-                    </div>
+                <article class="post">
+                    <time class="date">
+                        {{ post.published_date }}
+                    </time>
                     <h2><a href="">{{ post.title }}</a></h2>
                     <p>{{ post.text|linebreaksbr }}</p>
-                </div>
+                </article>
             {% endfor %}
         </div>
     </div>
-</div>
+</main>
 ```
 
 Запази тези файлове и актуализирай уебсайта си.
