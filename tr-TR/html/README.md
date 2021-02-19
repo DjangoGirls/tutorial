@@ -43,8 +43,8 @@ Yeni dosyayı kod düzenleyicisinde açıp şunları ekleyelim:
 <!DOCTYPE html>
 <html>
 <body>
-    <p>Hi there!</p>
-    <p>It works!</p>
+    <p>Merhaba!</p>
+    <p>Çalışıyor!</p>
 </body>
 </html>
 ```
@@ -53,9 +53,9 @@ Web siteniz şu anda nasıl görünüyor? Öğrenmek için bir bakalım: http://
 
 ![Şekil 11.2](images/step3.png)
 
-It worked. Nice work there! :)
+Çalıştı! Tebrikler! :)
 
-* The line `<!DOCTYPE html>` is not a HTML tag. It only declares the document type. Here, it informs the browser that document type is [HTML5](https://html.spec.whatwg.org/#the-doctype). This is always the beginning of any HTML5 file.
+* `<DOCTYPE html>` satırı bir HTML etiketi değildir. Yalnızca belge türünü bildirir. Burada tarayıcıya belge türünün [HTML5](https://html.spec.whatwg.org/#the-doctype) olduğunu bildirir. Bu her zaman herhangi bir HTML5 dosyasının başlangıcıdır.
 * The most basic tag, `<html>`, is always the beginning of html content and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
 * `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
 
@@ -77,11 +77,11 @@ Aynı zamanda tüm HTML sayfaları **head** ve **body** olmak üzere iki öğeye
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Ola's blog</title>
+        <title>Ayşe'nin blogu</title>
     </head>
     <body>
-        <p>Hi there!</p>
-        <p>It works!</p>
+        <p>Merhaba!</p>
+        <p>Çalışıyor!</p>
     </body>
 </html>
 ```
@@ -113,13 +113,13 @@ Bu *kapatma* etiketleri ve *yuvalama* ögeleri kurallarını takip etmeye ihtiya
 * `<ul><li>ilk madde</li><li>ikinci madde</li></ul>` - tıpkı bunun gibi bir liste yapar!
 * `<div></div>` - sayfanın bir bölümünü tanımlar
 * `<nav></nav>` defines a set of navigation links
-* `<article></article>` specifies independent, self-contained content
-* `<section></section>` defines a section in a document
-* `<header></header>` specifies a header for a document or section
-* `<main></main>` specifies the main content of a document
-* `<aside></aside>` defines some content aside from the content it is placed in (like a sidebar)
-* `<footer></footer>` defines a footer for a document or section
-* `<time></time>` defines a specific time (or datetime)
+* `<article></article>` bağımsız, kendi kendine yeten içeriği belirtir
+* `<section></section>` bir belgedeki bir bölümü tanımlar
+* `<header></header>` bir belge veya bölüm için bir başlık belirtir
+* `<main></main>` bir belgenin ana içeriğini belirtir
+* `<aside></aside>` kenar çubuğu gibi yerleştirildiği içeriğin dışında bazı içerikleri tanımlar
+* `<footer></footer>` bir belge veya bölüm için bir alt bilgi tanımlar
+* `<time></time>` belirli bir zamanı tanımlar (yada zaman aralığını)
 
 İşte komple bir template örneği, kopyalayın ve `blog/templates/blog/post_list.html` içine yapıştırın:
 
@@ -137,9 +137,9 @@ Bu *kapatma* etiketleri ve *yuvalama* ögeleri kurallarını takip etmeye ihtiya
         </header>
 
         <article>
-            <time>published: 14.06.2014, 12:14</time>
-            <h2><a href="">My first post</a></h2>
-            <p>Aenean eu leo quam. Ne kadar zevkli bir işmiş bilgisayarlarla uğraşmak. Artık bilgisayar başından kalkmam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <time>yayınlandı: 14.06.2014, 12:14</time>
+            <h2><a href="">İlk Blogum</a></h2>
+            <p>Çok heyecanlıyım! Bu benim ilk blogum. Ne kadar zevkli bir işmiş bilgisayarlarla uğraşmak. Artık bilgisayar başından kalkmam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
         </article>
 
         <article>
