@@ -80,7 +80,7 @@ h1 a, h2 a {
 
 `h1 a` bir CSS seçicisidir (selector). Bu bizim stillerimizi `h1` öğesi içindeki herhangi bir `a` öğesine uyguladığınız anlamına gelir; `h2 a` seçicisi `h2` öğeleri için aynı şeyi yapar. Yani `<h1><a href="">bağlantı</a></h1>` gibi bir öğemiz olduğunda, ona `h1 a` stilimiz uygulanıyor. Böylelikle, o öğeye rengini`#Fca205` yani koyu turuncu olarak değiştirmesini söylüyoruz. Ya da burada kendi renginizi koyabilirsiniz ama beyaz arka plan ile iyi bir kontrastı olmasına dikkat edin!
 
-Bir CSS dosyasında, HTML dosyasındaki öğeler için stil belirleriz. Öğeleri tanımlamanın ilk yolu öğe adıdır. Bunları HTML bölümünden etiketler olarak hatırlıyor olabilirsiniz. Bunların hepsi öğe adına örnektir: `a`, `h1` ve `body`. Öğeleri aynı zamanda `class` ve `id` öznitelikleri ile tanımlarız. Sınıf ve id (kimlik), bir öğeye senin tarafından verilen isimlerdir. Sınıflar bir öğe grubunu tanımlar, id'ler ise belirli bir öğeye işaret ederler. Örneğin şu aşağıdaki etiketi `a` etiket adı, `external_link` sınıfı ya da `link_to_wiki_page` id'si kullanarak tanımlayabilirsiniz:
+Bir CSS dosyasında, HTML dosyasındaki öğeler için stil belirleriz. Öğeleri tanımlamanın ilk yolu öğe adıdır. Bunları HTML bölümünden etiketler olarak hatırlıyor olabilirsiniz. Bunların hepsi öğe adına örnektir: `a`, `h1` ve `body`. Öğeleri aynı zamanda `class` ve `id` öznitelikleri ile tanımlarız. Sınıf ve id (kimlik), bir öğeye senin tarafından verilen isimlerdir. Sınıflar bir öğe grubunu tanımlar, id'ler ise belirli bir öğeye işaret ederler. For example, you could identify the following element by using the element name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
