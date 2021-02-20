@@ -48,7 +48,7 @@ Before we add the link, we need some icons to use as buttons for the link. Bu ö
 
 > Not: SVG görüntüsünü indirmek için, bağlam menüsünü açın (genellikle üzerine sağ tıklayarak) ve "Bağlantıyı farklı kaydet"i seçin. Dosyayı nereye kaydedeceğinizi soran iletişim kutusunda, Django projenizin `djangogirls` dizinine gidin, içindeki `blog/templates/blog/icons/` alt dizinine girin ve dosyayı oraya kaydedin.
 
-Kod düzenleyicide `blog/templates/blog/base.html` dosyasını açma zamanı geldi. Şimdi bu ikon dosyasını temel şablon içerisinde aşağıdaki gibi kullanabiliriz. In the `div` tag inside `header` section, we will add a link before `h1` tag:
+Kod düzenleyicide `blog/templates/blog/base.html` dosyasını açma zamanı geldi. Şimdi bu ikon dosyasını temel şablon içerisinde aşağıdaki gibi kullanabiliriz. In the `div` element inside `header` section, we will add a link before the `h1` element:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -153,7 +153,7 @@ Yeni bir `Post` formu oluşturmak için `PostForm()` fonksiyonunu çağırmak ve
 We need to create a file `post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
 
 * Formu göstermek zorundayız. Örneğin bunu şu şekilde yapabiliriz {% raw %}`{{ form.as_p }}`{% endraw %}.
-* Yukarıdaki örnek satır HTML form etiketi içine alınmalı: `<form method="POST">...</form>`.
+* The line above needs to be wrapped with an HTML form element: `<form method="POST">...</form>`.
 * Bir `Kaydet` butonuna ihtiyacımız var. Bunu Bir HTML butonu ile yapıyoruz: `<button type="submit">Kaydet</button>`.
 * Ve son olarak, açılıştan hemen sonra `<form ...>` etiketini eklememiz gerekiyor {% raw %}`{% csrf_token %}`{% endraw %}. Formlarımızın güvenliğini sağladığı için bu çok önemlidir! Eğer bu kısmı unutursak, formu kaydetmeye çalıştığımızda Django şikayet edecektir:
 
@@ -297,7 +297,7 @@ Now we know how to add a new post. But what if we want to edit an existing one? 
 
 Öncelikle düzenleme butonunu temsil eden ikonu kaydedelim. [pencil-fill.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/pencil-fill.svg) dosyasını indirin ve `blog/templates/blog/icons/` konumuna kaydedin.
 
-Kod düzenleyicide `blog/templates/blog/post_detail.html` açın ve aşağıdaki kodu `article` etiketinin içine ekleyin:
+Open `blog/templates/blog/post_detail.html` in the code editor and add the following code inside `article` element:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -398,7 +398,7 @@ If you need more information about Django forms, you should read the documentati
 
 Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
 
-Open `blog/templates/blog/base.html` in the code editor, find our `div` inside `header` and the anchor tag you put in there earlier. It should look like this:
+Open `blog/templates/blog/base.html` in the code editor, find our `div` inside `header` and the anchor element you put in there earlier. It should look like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -408,7 +408,7 @@ Open `blog/templates/blog/base.html` in the code editor, find our `div` inside `
 </a>
 ```
 
-We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! Change the `<a>` tag to look like this:
+We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! Change the `<a>` element to look like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
