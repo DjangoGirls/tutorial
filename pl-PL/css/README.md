@@ -80,7 +80,7 @@ h1 a, h2 a {
 
 `h1 a` to selektor CSS. Oznacza to, że zastosujemy nasze style do każdego elementu `a` znajdującego się w elemencie `h1`; selektor `h2 a` czyni to samo dla elementów `h2`. Czyli gdy mamy coś takiego jak `<h1><a href="">link</a></h1>`, styl `h1 a`, styl zostanie użyty. W tym przypadku nadajemy mu kolor `#C25100`, czyli ciemnopomarańczowy. Możesz też tutaj wstawić swój własny kolor, ale pamiętaj, by odpowiednio kontrastował z białym tłem!
 
-W pliku CSS ustalamy styl dla elementów znajdujących się w pliku HTML. Pierwszą metodą rozpoznawania elementu jest jego nazwa. Możesz pamiętać te tagi z rozdziału o HTML. Takie rzeczy jak `a`, `h1` i `body` to wszystko przykłady nazw elementów. Elementy rozpoznajemy również po atrybutach `class` lub `id`. Nazwę klasy lub id ustalasz sama dowolnie. Ta sama nazwa klasy może być przypisana do wielu elementów, ale id musi być unikalne dla całego kodu HTML. Dla przykładu, możesz zidentyfikować następujący tag używając nazwy tagu `a`, klasy `external_link` lub po jego id `link_to_wiki_page`:
+W pliku CSS ustalamy styl dla elementów znajdujących się w pliku HTML. Pierwszą metodą rozpoznawania elementu jest jego nazwa. Możesz pamiętać te tagi z rozdziału o HTML. Takie rzeczy jak `a`, `h1` i `body` to wszystko przykłady nazw elementów. Elementy rozpoznajemy również po atrybutach `class` lub `id`. Nazwę klasy lub id ustalasz sama dowolnie. Ta sama nazwa klasy może być przypisana do wielu elementów, ale id musi być unikalne dla całego kodu HTML. For example, you could identify the following element by using the element name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
