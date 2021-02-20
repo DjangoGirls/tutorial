@@ -1,4 +1,4 @@
-Vi povas [salti ĉi-tiun ĉapitron](http://tutorial.djangogirls.org/en/installation/#install-python), se vi ne uzas kromiolibron. Se vi uzas, via instalsperto estos iomete malsama. Vi povas ignori la reston de la instalinstrukcioj.
+Vi povas [salti ĉi-tiun ĉapitron](http://tutorial.djangogirls.org/en/installation/#install-python), se vi ne uzas kromiolibron. Se vi uzas, via instalado estos iomete malsama. Vi povas ignori la reston de la instalinstrukcioj.
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
