@@ -80,7 +80,7 @@ h1 a, h2 a {
 
 `h1` je CSS selector. Toto znamená, že aplikujeme naše styly na každý element `a` uvnitř elementu `h1` , selektor `h2` dělá to samé pro elementy `h2`. Takže když máme něco jako `<h1><a href="">odkaz</a></h1>`, použije se styl `h1`. V tomto případě říkáme, že barvu elementu měníme na `#C25100`, což je oranžová. Nebo zde můžeš vložit vlastní barvu, ale ujisti se, že bude kontrastní vůči bílé barvě pozadí stránky.
 
-V CSS souboru určujeme styly pro prvky v souboru HTML. První způsob, jak identifikovat prvky je pomocí názvu elementu. Možná si vzpomeneš na tyto tagy ze sekce HTML. Věci jako `a`, `h1` a `body`jsou všechny příklady názvů elementů. Také identifikujeme elementy podle atributu `class` nebo atributu `id`. Třídy/Class a id jsou jména, které pojmenovávají samotný prvek. Třídy definují skupiny prvků a Id poukazují na konkrétní prvky. Například, můžeš identifikovat následující tag pomocí názvu `a`, třídy `externi_odkaz` nebo id `odkaz_stranka_wikipedie`.
+V CSS souboru určujeme styly pro prvky v souboru HTML. První způsob, jak identifikovat prvky je pomocí názvu elementu. Možná si vzpomeneš na tyto tagy ze sekce HTML. Věci jako `a`, `h1` a `body`jsou všechny příklady názvů elementů. Také identifikujeme elementy podle atributu `class` nebo atributu `id`. Třídy/Class a id jsou jména, které pojmenovávají samotný prvek. Třídy definují skupiny prvků a Id poukazují na konkrétní prvky. For example, you could identify the following element by using the element name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
