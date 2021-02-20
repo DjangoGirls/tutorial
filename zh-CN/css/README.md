@@ -80,7 +80,7 @@ h1 a, h2 a {
 
 `h1 a`是CSS选择器。 这意味着我们要对`h1`中全部有`a`的元素使用这种风格，同理`h2`中全部有`a`的元素。 所以，如果我们有这样的代码`<h1><a href="">link</a></h1>`，通过`h1 a`描述的样式就将会生效。 在这种情况下，我们要告诉它将其颜色更改为 `#C25100`，这是一个暗的橙色。 或者您可以在这里放下你自己的颜色，但确保它与白色背景有良好的对比！
 
-在CSS文件中我们指明了HTML文件里各种元素的样式。 我们识别元素的第一种方法是使用元素的名称。 你可能还记得那些HTML部分中的标签。 诸如`a`，`h1`和`body`等都是元素的名称。 我们也可以用`class`属性和`id`属性来定义元素。 class和id是你自己给该元素定义的名称。 class定义一组元素，而id则指定特定的元素。 例如，下面的标签使用了 `a` 作为标签名,`external_link` 为 class 名, id 名则是 `link_to_wiki_page`.
+在CSS文件中我们指明了HTML文件里各种元素的样式。 我们识别元素的第一种方法是使用元素的名称。 你可能还记得那些HTML部分中的标签。 诸如`a`，`h1`和`body`等都是元素的名称。 我们也可以用`class`属性和`id`属性来定义元素。 class和id是你自己给该元素定义的名称。 class定义一组元素，而id则指定特定的元素。 For example, you could identify the following element by using the element name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
