@@ -296,7 +296,7 @@ Jetzt wissen wir, wie ein neuer Blogpost hinzugefügt wird. Aber was ist, wenn w
 
 Lass uns zunächst das Symbol speichern, das den Bearbeiten-Button darstellt. Lade [pencil-fill.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/pencil-fill.svg) herunter und speichere es in `blog/templates/blog/icons/`.
 
-Open `blog/templates/blog/post_detail.html` in the code editor and add the following code inside `article` element:
+Öffne `blog/templates/blog/post_detail.html` im Code-Editor und füge folgenden Code innerhalb des Elements `article` hinzu:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -397,7 +397,7 @@ Falls du mehr Informationen über Django-Formulare benötigst, solltest du die o
 
 Neue Posts durch Klick auf einen Link zu erstellen ist großartig! Aber im Moment ist jeder, der deine Seite besucht, in der Lage, einen neuen Blogpost zu veröffentlichen, und das ist etwas, was du garantiert nicht willst. Lass es uns so machen, dass der Button für dich angezeigt wird, aber für niemanden sonst.
 
-Open `blog/templates/blog/base.html` in the code editor, find our `div` inside `header` and the anchor element you put in there earlier. It should look like this:
+Öffne die Datei `blog/templates/blog/base.html` im Code-Editor, finde darin unseren `header` und das Anchor-Element, welches du zuvor eingefügt hast. Es sollte so aussehen:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -407,7 +407,7 @@ Open `blog/templates/blog/base.html` in the code editor, find our `div` inside `
 </a>
 ```
 
-Wir fügen ein weiteres `{% if %}`-Tag ein, was dafür sorgt, dass der Link nur für angemeldete Nutzer angezeigt wird. Im Moment bist das also nur du! Change the `<a>` element to look like this:
+Wir fügen ein weiteres `{% if %}`-Tag ein, was dafür sorgt, dass der Link nur für angemeldete Nutzer angezeigt wird. Im Moment bist das also nur du! Ändere das `<a>`-Element zu Folgendem:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
