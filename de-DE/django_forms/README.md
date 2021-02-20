@@ -48,7 +48,7 @@ Bevor wir den Link hinzufügen, benötigen wir einige Icons als Buttons für den
 
 > Hinweis: Um das SVG-Bild herunterzuladen, öffne das Kontextmenü auf dem Link (normalerweise durch einen Rechtsklick darauf) und wähle "Link speichern unter". Im Dialog, in dem du gefragt wirst, wo du die Datei speichern willst, navigiere zum `djangogirls`-Verzeichnis deines Django-Projekts und innerhalb davon in das Unterverzeichnis `blog/templates/blog/icons/` und speicher die Datei dort.
 
-Es ist an der Zeit, `blog/templates/blog/base.html` im Code-Editor zu öffnen. Now we can use this icon file inside the base template as follow. In the `div` tag inside `header` section, we will add a link before `h1` tag:
+Es ist an der Zeit, `blog/templates/blog/base.html` im Code-Editor zu öffnen. Now we can use this icon file inside the base template as follow. In the `div` element inside `header` section, we will add a link before the `h1` element:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -152,7 +152,7 @@ Um ein neues `PostForm` zu erstellen, rufen wir `PostForm()` auf und übergeben 
 Wir müssen eine Datei `post_edit.html` im Verzeichnis `blog/templates/blog` erstellen und im Code-Editor öffnen. Damit ein Formular funktioniert, benötigen wir einige Dinge:
 
 * Wir müssen das Formular anzeigen. Wir können das zum Beispiel mit einem einfachen `{{ form.as_p }}` tun.
-* Die Zeile oben muss von einem HTML-Formular-Tag eingeschlossen werden `<form method="POST">...</form>`.
+* The line above needs to be wrapped with an HTML form element: `<form method="POST">...</form>`.
 * Wir benötigen einen `Save`-Button. Wir erstellen diesen mit einem HTML-Button: `<button type="submit">Save</button>`.
 * Und schließlich fügen wir nach dem öffnenden `<form ...>` Tag `{% raw %}{% csrf_token %}{% endraw %}` hinzu. Das ist sehr wichtig, da es deine Formulare sicher macht! Wenn du diesen Teil vergisst, wird sich Django beim Speichern des Formulars beschweren.
 
@@ -296,7 +296,7 @@ Jetzt wissen wir, wie ein neuer Blogpost hinzugefügt wird. Aber was ist, wenn w
 
 Lass uns zunächst das Symbol speichern, das den Bearbeiten-Button darstellt. Lade [pencil-fill.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/pencil-fill.svg) herunter und speichere es in `blog/templates/blog/icons/`.
 
-Open `blog/templates/blog/post_detail.html` in the code editor and add the following code inside `article` tag:
+Open `blog/templates/blog/post_detail.html` in the code editor and add the following code inside `article` element:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -397,7 +397,7 @@ Falls du mehr Informationen über Django-Formulare benötigst, solltest du die o
 
 Neue Posts durch Klick auf einen Link zu erstellen ist großartig! Aber im Moment ist jeder, der deine Seite besucht, in der Lage, einen neuen Blogpost zu veröffentlichen, und das ist etwas, was du garantiert nicht willst. Lass es uns so machen, dass der Button für dich angezeigt wird, aber für niemanden sonst.
 
-Öffne die Datei `blog/templates/blog/base.html` im Code-Editor, finde darin unseren `header` und das Anchor-Tag, welches du zuvor eingefügt hast. Es sollte so aussehen:
+Open `blog/templates/blog/base.html` in the code editor, find our `div` inside `header` and the anchor element you put in there earlier. It should look like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -407,7 +407,7 @@ Neue Posts durch Klick auf einen Link zu erstellen ist großartig! Aber im Momen
 </a>
 ```
 
-Wir fügen ein weiteres `{% if %}`-Tag ein, was dafür sorgt, dass der Link nur für angemeldete Nutzer angezeigt wird. Im Moment bist das also nur du! Ändere den `<a>`-Tag zu Folgendem:
+Wir fügen ein weiteres `{% if %}`-Tag ein, was dafür sorgt, dass der Link nur für angemeldete Nutzer angezeigt wird. Im Moment bist das also nur du! Change the `<a>` element to look like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
