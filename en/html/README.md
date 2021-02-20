@@ -152,7 +152,7 @@ Here's an example of a full template, copy and paste it into `blog/templates/blo
 We've created one `header` section and two `article` section here.
 
 - The `header` element contains the title of our blog – it's a heading and a link
-- Another two `article` elements contain our blog posts with a published date in `time` element, `h2` with a post title that is clickable and a `p` (paragraph) of text for our blog post.
+- Another two `article` elements contain our blog posts with a published date in a `time` element, a `h2` with a post title that is clickable and a `p` (paragraph) of text for our blog post.
 
 It gives us this effect:
 
