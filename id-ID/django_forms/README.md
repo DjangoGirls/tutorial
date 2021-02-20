@@ -44,7 +44,7 @@ Akhirnya, kita dapat menyatakan field-field mana yang akan muncul di dalam form 
 
 > Note: To download the SVG image, open the context menu on the link (usually by right-clicking on it) and select "Save link as". In the dialog asking you where to save the file, navigate to the `djangogirls` directory of your Django project, and within that to subdirectory `blog/templates/blog/icons/`, and save the file there.
 
-It's time to open `blog/templates/blog/base.html` in the code editor. Now we can use this icon file inside the base template as follow. In the `div` tag inside `header` section, we will add a link before `h1` tag:
+It's time to open `blog/templates/blog/base.html` in the code editor. Now we can use this icon file inside the base template as follow. In the `div` element inside `header` section, we will add a link before the `h1` element:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -149,7 +149,7 @@ To create a new `Post` form, we need to call `PostForm()` and pass it to the tem
 We need to create a file `post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
 
 * We have to display the form. We can do that with (for example) {% raw %}`{{ form.as_p }}`{% endraw %}.
-* Baris di atas tersebut perlu diletakkan di dalam tag form HTML: `<form method="POST">...</form>`.
+* The line above needs to be wrapped with an HTML form element: `<form method="POST">...</form>`.
 * Kita perlu sebuah tombol `Save`. Kita lakukan hal itu dengan sebuah tombol HTML: `<button type="submit">Save</button>`.
 * Dan akhirnya, tepat setelah tag pembuka `<form ...>` kita perlu menambahkan {% raw%} ` {% csrf_token%} </ 1> {% endraw%} . Ini sangat penting, karena akan menjadikan form anda aman! Jika Anda lupa sedikit ini, Django akan mengeluh saat Anda mencoba menyimpan formulir:</li>
 </ul>
@@ -293,7 +293,7 @@ We need to create a file `post_edit.html` in the `blog/templates/blog` directory
     
     First, let's save the icon which represents the edit button. Download [pencil-fill.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/pencil-fill.svg) and save it to the location `blog/templates/blog/icons/`.
     
-    Open `blog/templates/blog/post_detail.html` in the code editor and add the following code inside `article` tag:
+    Open `blog/templates/blog/post_detail.html` in the code editor and add the following code inside `article` element:
     
     {% filename%} blog / templates / blog / post_detail.html {% endfilename%}
     
@@ -394,7 +394,7 @@ We need to create a file `post_edit.html` in the `blog/templates/blog` directory
     
     Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
     
-    Open `blog/templates/blog/base.html` in the code editor, find our `div` inside `header` and the anchor tag you put in there earlier. It should look like this:
+    Open `blog/templates/blog/base.html` in the code editor, find our `div` inside `header` and the anchor element you put in there earlier. It should look like this:
     
     {% filename%} blog / templates / blog / base.html {% endfilename%}
     
@@ -404,7 +404,7 @@ We need to create a file `post_edit.html` in the `blog/templates/blog` directory
     </a>
     ```
     
-    We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! Change the `<a>` tag to look like this:
+    We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! Change the `<a>` element to look like this:
     
     {% filename %}blog/templates/blog/base.html{% endfilename %}
     
