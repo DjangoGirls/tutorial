@@ -80,7 +80,7 @@ h1 a, h2 a {
 
 `h1 a` er en CSS Selector. Dette betyr at vi angir våre stiler til et hvilket som helst `a` element inni et `h1`-element; `h2 a`-selector gjør det samme for `h2`-elementer. Så når vi har noe sånt som `<h1><a href="">link</a></h1>`, vil `h1 a`-stilen gjelde. I dette tilfellet, ber vi om å endre fargen til `#C25100`, som er en mørk oransje. Eller du kan sette din egen farge her, men vær sikker på at den har god kontrast mot en hvit bakgrunn!
 
-I en CSS-fil bestemmer vil stiler for elementer i HTML-filen. Først identifiserer vi elementene ved hjelp av elementnavnet. Du husker kanskje disse kodene fra HTML-delen. Ting som `a`, `h1`, og `body` er alle eksempler på elementnavn. Vi identifiserer også elementer etter attributten `class` eller attributten `id`. Class og id er navn du selv gir elementet. Klasser definerer grupper av elementer, og id-er peker til spesifikke elementer. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+I en CSS-fil bestemmer vil stiler for elementer i HTML-filen. Først identifiserer vi elementene ved hjelp av elementnavnet. Du husker kanskje disse kodene fra HTML-delen. Ting som `a`, `h1`, og `body` er alle eksempler på elementnavn. Vi identifiserer også elementer etter attributten `class` eller attributten `id`. Class og id er navn du selv gir elementet. Klasser definerer grupper av elementer, og id-er peker til spesifikke elementer. For example, you could identify the following element by using the element name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
