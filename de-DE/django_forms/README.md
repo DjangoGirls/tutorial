@@ -58,9 +58,9 @@ Es ist an der Zeit, `blog/templates/blog/base.html` im Code-Editor zu öffnen. J
 </a>
 ```
 
-Note that we want to call our new view `post_new`. The [SVG icon](https://icons.getbootstrap.com/icons/file-earmark-plus/) is provided by the [Bootstrap Icons](https://icons.getbootstrap.com/) and it will display a page icon with plus sign. We use a Django template directive called `include`. This will inject the file's content into the Django template. The web browser knows how to handle this type of content without any further processing.
+Beachte, dass wir unseren neuen View `post_new` nennen wollen. Das [SVG-Icon](https://icons.getbootstrap.com/icons/file-earmark-plus/) wird von [Bootstrap Icons](https://icons.getbootstrap.com/) zur Verfügung gestellt und zeigt ein Seitensymbol mit Pluszeichen an. Wir verwenden eine Django-Template-Direktive namens `include`. Dadurch wird der Inhalt der Datei in das Django-Template eingefügt. Der Web-Browser weiß, wie man diese Art von Inhalt ohne weitere Verarbeitung handhabt.
 
-> You can download all the Bootstrap icons [here](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip). Unzip the file and copy all the SVG image files into a new folder inside `blog/templates/blog/` called `icons`. That way you can access an icon like `pencil-fill.svg` using the file path `blog/templates/blog/icons/pencil-fill.svg`
+> Alle Bootstrap Icons kannst du [hier herunterladen](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip). Entpacke die Datei und kopiere alle SVG-Bilddateien in einen neuen Ordner namens `icons` innerhalb von `blog/templates/blog/`. So kannst du auf ein Symbol wie `pencil-fill.svg` mit dem Dateipfad `blog/templates/blog/icons/pencil-fill.svg` zugreifen
 
 Nach dem Bearbeiten der Zeile sieht deine HTML-Datei so aus:
 
@@ -152,7 +152,7 @@ Um ein neues `PostForm` zu erstellen, rufen wir `PostForm()` auf und übergeben 
 Wir müssen eine Datei `post_edit.html` im Verzeichnis `blog/templates/blog` erstellen und im Code-Editor öffnen. Damit ein Formular funktioniert, benötigen wir einige Dinge:
 
 * Wir müssen das Formular anzeigen. Wir können das zum Beispiel mit einem einfachen `{{ form.as_p }}` tun.
-* The line above needs to be wrapped with an HTML form element: `<form method="POST">...</form>`.
+* Die Zeile oben muss von einem HTML-Formular-Element eingeschlossen werden `<form method="POST">...</form>`.
 * Wir benötigen einen `Save`-Button. Wir erstellen diesen mit einem HTML-Button: `<button type="submit">Save</button>`.
 * Und schließlich fügen wir nach dem öffnenden `<form ...>` Tag `{% raw %}{% csrf_token %}{% endraw %}` hinzu. Das ist sehr wichtig, da es deine Formulare sicher macht! Wenn du diesen Teil vergisst, wird sich Django beim Speichern des Formulars beschweren.
 
@@ -198,7 +198,7 @@ def post_new(request):
 
 Wenn wir das Formular übermitteln, werden wir zur selben Ansicht weitergeleitet, aber dieses Mal haben wir mehr Daten in `request`, genauer in `request.POST` (der Name hat nichts zu tun mit einem "Blogpost", sondern damit, dass wir Daten "posten"). Erinnerst du dich daran, dass in der HTML-Datei unsere `<form>` Definition die Variable `method="POST"` hatte? Alle Felder aus dem Formular sind jetzt in `request.POST`. Du solltest `POST` nicht umbenennen (der einzige andere gültige Wert für `method` ist `GET`, wir wollen hier jetzt aber nicht auf den Unterschied eingehen).
 
-Somit müssen wir uns in unserer *View* mit zwei verschiedenen Situationen befassen: erstens, wenn wir das erste Mal auf die Seite zugreifen und ein leeres Formular wollen und zweitens, wenn wir zur *View* mit allen soeben ausgefüllten Formular-Daten zurück wollen. So we need to add a condition (we will use `if` for that):
+Somit müssen wir uns in unserer *View* mit zwei verschiedenen Situationen befassen: erstens, wenn wir das erste Mal auf die Seite zugreifen und ein leeres Formular wollen und zweitens, wenn wir zur *View* mit allen soeben ausgefüllten Formular-Daten zurück wollen. Wir müssen also eine Bedingung hinzufügen (dafür verwenden wir `if`):
 
 {% filename %}blog/views.py{% endfilename %}
 
