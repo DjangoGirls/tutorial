@@ -48,7 +48,7 @@ Bevor wir den Link hinzufügen, benötigen wir einige Icons als Buttons für den
 
 > Hinweis: Um das SVG-Bild herunterzuladen, öffne das Kontextmenü auf dem Link (normalerweise durch einen Rechtsklick darauf) und wähle "Link speichern unter". Im Dialog, in dem du gefragt wirst, wo du die Datei speichern willst, navigiere zum `djangogirls`-Verzeichnis deines Django-Projekts und innerhalb davon in das Unterverzeichnis `blog/templates/blog/icons/` und speicher die Datei dort.
 
-Es ist an der Zeit, `blog/templates/blog/base.html` im Code-Editor zu öffnen. Now we can use this icon file inside the base template as follow. In the `div` element inside `header` section, we will add a link before the `h1` element:
+Es ist an der Zeit, `blog/templates/blog/base.html` im Code-Editor zu öffnen. Jetzt können wir diese Icon-Datei im Basis-Template wie folgt verwenden. Im `div`-Element innerhalb des `header`-Abschnitts werden wir einen Link vor dem `h1`-Element hinzufügen:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
