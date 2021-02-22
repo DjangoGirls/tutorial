@@ -154,7 +154,7 @@ Voici un exemple d’un modèle complet, copiez et collez-le dans `blog/template
 We've created one `header` section and two `article` section here.
 
 * The `header` element contains the title of our blog – it's a heading and a link
-* Another two `article` elements contain our blog posts with a published date in `time` element, `h2` with a post title that is clickable and a `p` (paragraph) of text for our blog post.
+* Another two `article` elements contain our blog posts with a published date in a `time` element, a `h2` element with a post title that is clickable and a `p` (paragraph) element for text of our blog post.
 
 Ce qui nous donne :
 
