@@ -44,7 +44,7 @@ Akhirnya, kita dapat menyatakan field-field mana yang akan muncul di dalam form 
 
 > Note: To download the SVG image, open the context menu on the link (usually by right-clicking on it) and select "Save link as". In the dialog asking you where to save the file, navigate to the `djangogirls` directory of your Django project, and within that to subdirectory `blog/templates/blog/icons/`, and save the file there.
 
-It's time to open `blog/templates/blog/base.html` in the code editor. Now we can use this icon file inside the base template as follow. In the `div` element inside `header` section, we will add a link before the `h1` element:
+It's time to open `blog/templates/blog/base.html` in the code editor. Now we can use this icon file inside the base template as follows. In the `div` element inside `header` section, we will add a link before the `h1` element:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
