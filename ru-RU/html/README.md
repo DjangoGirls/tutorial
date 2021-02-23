@@ -154,7 +154,7 @@ HTML (от англ. "HyperText Markup Language") - язык гипертекс�
 We've created one `header` section and two `article` section here.
 
 * The `header` element contains the title of our blog – it's a heading and a link
-* Another two `article` elements contain our blog posts with a published date in a `time` element, a `h2` element with a post title that is clickable and a `p` (paragraph) element for text of our blog post.
+* The two `article` elements contain our blog posts with a published date in a `time` element, a `h2` element with a post title that is clickable and a `p` (paragraph) element for text of our blog post.
 
 Это даст нам следующий эффект:
 
