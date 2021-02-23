@@ -154,7 +154,7 @@ HTML은 "HyperText Markup Language"의 줄인 말입니다. **하이퍼텍스트
 We've created one `header` section and two `article` section here.
 
 * The `header` element contains the title of our blog – it's a heading and a link
-* Another two `article` elements contain our blog posts with a published date in a `time` element, a `h2` element with a post title that is clickable and a `p` (paragraph) element for text of our blog post.
+* The two `article` elements contain our blog posts with a published date in a `time` element, a `h2` element with a post title that is clickable and a `p` (paragraph) element for text of our blog post.
 
 이 태그들로 이렇게 변합니다. :
 
