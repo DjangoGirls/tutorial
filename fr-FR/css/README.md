@@ -126,7 +126,7 @@ Maintenant, votre fichier doit ressembler à ceci :
 
         {% for post in posts %}
             <article>
-                <time>published: {{ post.published_date }}</time>
+                <time>Date de publication: {{ post.published_date }}</time>
                 <h2><a href="">{{ post.title }}</a></h2>
                 <p>{{ post.text|linebreaksbr }}</p>
             </article>
@@ -180,7 +180,7 @@ Super !
 
 Comme mentionné ci-dessus, CSS a un concept de classe. Ce concept vous permet de nommer une partie de code HTML et d'y appliquer des styles, uniquement pour cette partie, sans affecter le reste. Cela peut être très utile ! Peut-être que vous avez deux divs qui sont en train de faire quelque chose de différent (comme votre en-tête et votre contenu). Une classe peut vous aider à leur donner un aspect différent.
 
-Go ahead and name some parts of the HTML code. Replace the `header` that contains your header with the following:
+Vous pouvez maintenant nommer certaines parties du code HTML. Remplacez l'élément `header` qui contient votre en-tête avec ce qui suit :
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -192,13 +192,13 @@ Go ahead and name some parts of the HTML code. Replace the `header` that contain
 </header>
 ```
 
-And now add a class `post` to your `article` containing a blog post.
+Maintenant, ajoutez la classe `post` à votre `article` contenant votre blog post.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <article class="post">
-    <time>published: {{ post.published_date }}</time>
+    <time>Date de publication: {{ post.published_date }}</time>
     <h2><a href="">{{ post.title }}</a></h2>
     <p>{{ post.text|linebreaksbr }}</p>
 </article>
@@ -288,7 +288,7 @@ Nous allons maintenant nous intéresser au code concernant les posts. Il va fall
 ```html
 {% for post in posts %}
     <article class="post">
-        <time>published: {{ post.published_date }}</time>
+        <time>Date de publication: {{ post.published_date }}</time>
         <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </article>
