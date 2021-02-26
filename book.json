@@ -36,18 +36,20 @@
             "grid-columns": 3
         },
         "sidebar-ad": {
-            "patreon": {
-                "imageUrl": "https://djangogirls.org/static/img/global/donate/lagos.jpg",
-                "url": "https://www.patreon.com/djangogirls",
-                "description": "💖 Support our work and donate to our project! ✨",
-                "btnText": "Donate now!"
-            },
-            "caktus": {
-                "imageUrl": "https://djangogirls.org/static/img/global/supporters/caktus-logo.png",
-                "url": "https://www.caktusgroup.com/",
-                "description": "We build sharp web apps & support greater diversity in the tech industry. Want to grow with us?",
-                "btnText": "Visit our website!"
-            }
+            "items": [
+                {
+                    "imageUrl": "https://djangogirls.org/static/img/global/donate/lagos.jpg",
+                    "url": "https://www.patreon.com/djangogirls",
+                    "description": "💖 Support our work and donate to our project! ✨",
+                    "btnText": "Donate now!"
+                },
+                {
+                    "imageUrl": "https://djangogirls.org/static/img/global/supporters/caktus-logo.png",
+                    "url": "https://www.caktusgroup.com/",
+                    "description": "We build sharp web apps & support greater diversity in the tech industry. Want to grow with us?",
+                    "btnText": "Visit our website!"
+                }
+            ]}
         },
         "sectionx": {
             "tag": "b"
