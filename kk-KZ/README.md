@@ -20,9 +20,9 @@ This tutorial will not magically turn you into a programmer. If you want to be g
 
 We hope that we'll be able to make you love technology as much as we do!
 
-## What will you learn during the tutorial?
+## Осы нұсқаулық бойынша не үйренесің?
 
-Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
+Оқулықты аяқтағаннан кейін сізде шағын жұмыс істейтін веб-бағдарлама болады: ол өз блогыңыз. Басқалар сіздің жұмысыңызды көруі үшін оны интернетте қалай орналастыру керектігін көрсетеміз!
 
 It will (more or less) look like this:
 
