@@ -1,10 +1,10 @@
-# How the Internet works
+# Интернет қалай жұмыс істейді
 
 > For readers at home: this chapter is covered in the [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc) video.
 > 
 > This chapter is inspired by the talk "How the Internet works" by Jessica McKellar (http://web.mit.edu/jesstess/www/).
 
-We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
+Бәстесуге дайынмын сіз күн сайын интернет қолданасың. Бірақ браузерге кіріп https://djangogirls.org адресін енгізген кезде не болатынын білесіз бе?
 
 The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk -- just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
 
