@@ -23,7 +23,7 @@ Una cosa per cui guardare: durante l'installazione, si noti una finestra contras
 
 Quando l'installazione è completata, potresti vedere una finestra di dialogo con un link che puoi seguire per saperne di più su Python o sulla versione installata. Chiudi o annulla questa finestra -- imparerai molto di più in questo tutorial!
 
-Nota: Se si utilizza una versione precedente di Windows (7, Vista, o qualsiasi versione precedente) e l'installatore di Python {{ book.py_version }} non funziona per un errore, installare tutti gli aggiornamenti di Windows e provare a installare nuovamente Python. If you still have the error, try installing Python version {{ book.py_min_release }} from [Python.org](https://www.python.org/downloads/windows/).
+Nota: Se si utilizza una versione precedente di Windows (7, Vista, o qualsiasi versione precedente) e l'installatore di Python {{ book.py_version }} non funziona per un errore, installare tutti gli aggiornamenti di Windows e provare a installare nuovamente Python. Se l'errore si ripresenta, prova ad installare la versione di Python {{ book.py_min_release }} da [Python.org](https://www.python.org/downloads/windows/).
 
 > Django {{ book.django_version }} needs Python {{ book.py_min_version }} or greater, which does not support Windows XP or earlier versions.
 
@@ -32,12 +32,12 @@ Nota: Se si utilizza una versione precedente di Windows (7, Vista, o qualsiasi v
 <!--sec data-title="Install Python: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
+> **Nota** Prima di installare Python su OS X, devi fare in modo/ verificare che le impostazioni Mac consentano l'installazione di pacchetti che non sono presenti nell'App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
 
 You need to go to the website https://www.python.org/downloads/mac-osx/ and download the latest Python installer:
 
 * Scarica il file *Mac OS X 64-bit/32-bit installer*
-* Double click *python-{{ book.py_release }}-macosx10.9.pkg* to run the installer.
+* Fare doppio clic su *python-{{ book.py_release }}-macosx10.9.pkg* per eseguire l'installer.
 
 <!--endsec-->
 
@@ -52,7 +52,7 @@ data-collapse=true ces-->
     Python {{ book.py_release }}
     
 
-If you have a different version of Python installed, at least {{ book.py_min_version }} (e.g. {{ book.py_min_release }}), then you don't have to upgrade. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
+Se hai una versione diversa di Python installata, almeno {{ book.py_min_version }} (es. {{ book.py_min_release }}), allora non devi aggiornare. Se non hai Python installato, o se vuoi una versione diversa, controlla prima quale distribuzione Linux stai usando con il seguente comando:
 
 {% filename %}command-line{% endfilename %}
 
