@@ -56,7 +56,7 @@ Quindi come appare il tuo sito ora? clicca per scoprirlo: http://127.0.0.1:8000/
 Ha funzionato! Ottimo lavoro! :)
 
 * The line `<!DOCTYPE html>` is not a HTML tag. It only declares the document type. Here, it informs the browser that document type is [HTML5](https://html.spec.whatwg.org/#the-doctype). This is always the beginning of any HTML5 file.
-* The most basic tag, `<html>`, is always the beginning of html content and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
+* The most basic tag, `<html>`, is always the beginning of html content and `</html>` is always the end. Come puoi vedere, l'intero contenuto del sito va tra il tag iniziale `<html>` ed il tag conclusivo `</html>`
 * `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
 
 ## Testa e corpo
@@ -112,14 +112,14 @@ Ora puoi divertirti un po' e provare a personalizzare il tuo template! Qua ci so
 * `<a href="https://djangogirls.org">link</a>` crea un link
 * `<ul><li>primo elemento</li><li>secondo elemento</li></ul>` fa una lista, proprio come questa qui!
 * `<div></div>` definisce una sezione della pagina
-* `<nav></nav>` defines a set of navigation links
-* `<article></article>` specifies independent, self-contained content
-* `<section></section>` defines a section in a document
-* `<header></header>` specifies a header for a document or section
-* `<main></main>` specifies the main content of a document
+* `<nav></nav>` definisce un insieme di collegamenti di navigazione
+* `<article></article>` specifica il contenuto autonomo e indipendente
+* `<section></section>` definisce una sezione in un documento
+* `<header></header>` specifica un'intestazione per un documento o una sezione
+* `<main></main>` specifica il contenuto principale di un documento
 * `<aside></aside>` defines some content aside from the content it is placed in (like a sidebar)
-* `<footer></footer>` defines a footer for a document or section
-* `<time></time>` defines a specific time (or datetime)
+* `<footer></footer>` definisce un piè di pagina per un documento o sezione
+* `<time></time>` definisce un'ora (o datetime) specifica
 
 Ecco un esempio di modello completo, copia e incolla in `blog/templates/blog/post_list.html`:
 
@@ -151,7 +151,7 @@ Ecco un esempio di modello completo, copia e incolla in `blog/templates/blog/pos
 </html>
 ```
 
-We've created one `header` section and two `article` section here.
+Abbiamo creato una sezione `intestazione` e due `articolo` sezione qui.
 
 * The `header` element contains the title of our blog – it's a heading and a link
 * I due elementi `articolo` contengono i nostri post sul blog con una data pubblicata in un elemento `ora` , un elemento `h2` con un titolo post cliccabile e un elemento `p` (paragrafo) per il testo del nostro post sul blog.
