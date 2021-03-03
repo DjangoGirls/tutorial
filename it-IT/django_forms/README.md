@@ -44,11 +44,11 @@ Quindi creeremo di nuovo un link alla pagina, un URL, una view e un template.
 
 ## Link ad una pagina usando il form
 
-Before we add the link, we need some icons to use as buttons for the link. For this tutorial, download [file-earmark-plus.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/file-earmark-plus.svg) and save it in the folder `blog/templates/blog/icons/`
+Prima di aggiungere il link, abbiamo bisogno di alcune icone da usare come pulsanti per il link. Per questo tutorial, scarica [file-earmark-plus.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/file-earmark-plus.svg) e salvalo nella cartella `blog/templates/blog/icons/`
 
-> Note: To download the SVG image, open the context menu on the link (usually by right-clicking on it) and select "Save link as". In the dialog asking you where to save the file, navigate to the `djangogirls` directory of your Django project, and within that to subdirectory `blog/templates/blog/icons/`, and save the file there.
+> Nota: Per scaricare l'immagine SVG, aprire il menu contestuale sul link (di solito facendo clic destro su di essa) e selezionare "Salva collegamento come". Nella finestra di dialogo che ti chiede dove salvare il file, vai alla directory `djangogirls` del tuo progetto Django, e all'interno di questo fino alla sottodirectory `blog/templates/blog/icons/`, e salvare il file lì.
 
-It's time to open `blog/templates/blog/base.html` in the code editor. Now we can use this icon file inside the base template as follows. In the `div` element inside `header` section, we will add a link before the `h1` element:
+È ora di aprire `blog/templates/blog/base.html` nell'editor di codice. Ora possiamo usare questo file di icone all'interno del modello di base come segue. Nell'elemento `div` all'interno della sezione `header` , aggiungeremo un link prima dell'elemento `h1`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -58,11 +58,11 @@ It's time to open `blog/templates/blog/base.html` in the code editor. Now we can
 </a>
 ```
 
-Note that we want to call our new view `post_new`. The [SVG icon](https://icons.getbootstrap.com/icons/file-earmark-plus/) is provided by the [Bootstrap Icons](https://icons.getbootstrap.com/) and it will display a page icon with plus sign. We use a Django template directive called `include`. This will inject the file's content into the Django template. The web browser knows how to handle this type of content without any further processing.
+Nota che vogliamo chiamare la nostra nuova view `post_new`. L'[icona SVG](https://icons.getbootstrap.com/icons/file-earmark-plus/) è fornita dal [Bootstrap Icons](https://icons.getbootstrap.com/) e mostrerà un'icona di pagina con il segno 'più'. Utilizziamo una direttiva sui modelli Django chiamata `include`. Questo immetterà il contenuto del file nel modello Django. Il browser web sa come gestire questo tipo di contenuto senza ulteriori elaborazioni.
 
-> You can download all the Bootstrap icons [here](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip). Unzip the file and copy all the SVG image files into a new folder inside `blog/templates/blog/` called `icons`. That way you can access an icon like `pencil-fill.svg` using the file path `blog/templates/blog/icons/pencil-fill.svg`
+> Puoi scaricare tutte le icone di Bootstrap [qui](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip). Scompattare il file e copiare tutti i file immagine SVG in una nuova cartella all'interno `blog/templates/blog/` chiamata `icone`. In questo modo è possibile accedere a un'icona come `pencil-fill.svg` utilizzando il percorso del file `blog/templates/blog/icons/pencil-fill.svg`
 
-After editing the line, your HTML file should now look like this:
+Dopo aver modificato la riga, il file HTML dovrebbe ora assomigliare a questo:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -97,11 +97,11 @@ After editing the line, your HTML file should now look like this:
 </html>
 ```
 
-After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
+Dopo aver salvato e aggiornato la pagina http://127.0.0.1:8000 vedrai un errore che già conosci: `NoReverseMatch`. Lo vedi? Bene!
 
 ## URL
 
-We open `blog/urls.py` in the code editor and add a line:
+Apriamo `blog/urls.py` nell'editor di codice e aggiungiamo:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -109,7 +109,7 @@ We open `blog/urls.py` in the code editor and add a line:
 path('post/new/', views.post_new, name='post_new'),
 ```
 
-And the final code will look like this:
+E il codice finale sarà così:
 
 {% filename %}blog/urls.py{% endfilename %}
 
