@@ -56,7 +56,7 @@ Quindi come appare il tuo sito ora? clicca per scoprirlo: http://127.0.0.1:8000/
 Ha funzionato! Ottimo lavoro! :)
 
 * La riga `<!DOCTYPE html>` non è un tag HTML. Dichiara solo il tipo di documento. Here, it informs the browser that document type is [HTML5](https://html.spec.whatwg.org/#the-doctype). Questo è sempre l'inizio di qualsiasi file HTML5.
-* The most basic tag, `<html>`, is always the beginning of html content and `</html>` is always the end. Come puoi vedere, l'intero contenuto del sito va tra il tag iniziale `<html>` ed il tag conclusivo `</html>`
+* Il tag più semplice, `<html>`, è sempre l'inizio del contenuto html e `</html>` è sempre la fine. Come puoi vedere, l'intero contenuto del sito va tra il tag iniziale `<html>` ed il tag conclusivo `</html>`
 * `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
 
 ## Testa e corpo
@@ -117,7 +117,7 @@ Ora puoi divertirti un po' e provare a personalizzare il tuo template! Qua ci so
 * `<section></section>` definisce una sezione in un documento
 * `<header></header>` specifica un'intestazione per un documento o una sezione
 * `<main></main>` specifica il contenuto principale di un documento
-* `<aside></aside>` defines some content aside from the content it is placed in (like a sidebar)
+* `<aside></aside>` definisce alcuni contenuti a parte il contenuto in cui è inserito (come una barra laterale)
 * `<footer></footer>` definisce un piè di pagina per un documento o sezione
 * `<time></time>` definisce un'ora (o datetime) specifica
 
