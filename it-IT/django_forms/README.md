@@ -150,7 +150,7 @@ To create a new `Post` form, we need to call `PostForm()` and pass it to the tem
 
 ## Template
 
-We need to create a file `post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
+Dobbiamo creare un file `post_edit. tml` nella directory `blog/templates/blog` , e aprilo nell'editor di codice. Per far si che un modulo funzioni, abbiamo bisogno di diverse cose:
 
 * Dobbiamo visualizzare il form. Possiamo farlo con (ad esempio) {% raw %}`{{ form.as_p }}`{% endraw %}.
 * The line above needs to be wrapped with an HTML form element: `<form method="POST">...</form>`.
@@ -197,9 +197,9 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Quando inviamo il form, veniamo riportati alla stessa view, ma questa volta abbiamo più dati in `request`, in particolare in `request.POST` (il nome non ha nulla a che vedere con un blog "post", bensì con l'inglese "posting", ovvero inviare, in questo caso dati). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? All the fields from the form are now in `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
+Quando inviamo il form, veniamo riportati alla stessa view, ma questa volta abbiamo più dati in `request`, in particolare in `request.POST` (il nome non ha nulla a che vedere con un blog "post", bensì con l'inglese "posting", ovvero inviare, in questo caso dati). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? All the fields from the form are now in `request.POST`. Non è necessario rinominare `POST` in nessuna altra maniera (l'unico altro valore valido per `method` è `GET`, ma al momento non abbiamo abbastanza tempo per spiegare la differenza).
 
-So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. So we need to add a condition (we will use `if` for that):
+Quindi, nella nostra *view* abbiamo due situazioni separate da gestire: prima, quando accediamo la pagina per la prima volta e vogliamo un modulo vuoto, e poi, quando torniamo alla *view* con tutti i dati del modulo che abbiamo appena digitato. So we need to add a condition (we will use `if` for that):
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -218,7 +218,7 @@ It's time to fill in the dots `[...]`. If `method` is `POST` then we want to con
 form = PostForm(request.POST)
 ```
 
-The next thing is to check if the form is correct (all required fields are set and no incorrect values have been submitted). We do that with `form.is_valid()`.
+La cosa successiva è controllare se il modulo è corretto (tutti i campi obbligatori sono impostati e non sono stati inviati valori errati). Lo facciamo con `form.is_valid()`.
 
 We check if the form is valid and if so, we can save it!
 
@@ -232,9 +232,9 @@ if form.is_valid():
     post.save()
 ```
 
-Basically, we have two things here: we save the form with `form.save` and we add an author (since there was no `author` field in the `PostForm` and this field is required). `commit=False` means that we don't want to save the `Post` model yet – we want to add the author first. Most of the time you will use `form.save()` without `commit=False`, but in this case, we need to supply it. `post.save()` will preserve changes (adding the author) and a new blog post is created!
+In pratica, ci sono due cose da fare: salviamo il modulo con `form.save` e aggiungiamo un autore(dal momento che non c'era nessun campo autore `author` nel modulo `PostForm` e questo campo non può essere lasciato bianco). `commit=False` means that we don't want to save the `Post` model yet – we want to add the author first. Most of the time you will use `form.save()` without `commit=False`, but in this case, we need to supply it. `post.save()` will preserve changes (adding the author) and a new blog post is created!
 
-Finally, it would be awesome if we could immediately go to the `post_detail` page for our newly created blog post, right? To do that we need one more import:
+Infine, sarebbe fantastico se potessimo andare immediatamente alla pagina `post_detail` per il nostro post appena creato, giusto? Per fare questo abbiamo bisogno di un'altra importazione:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -273,17 +273,17 @@ def post_new(request):
 
 Let's see if it works. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it… and voilà! The new blog post is added and we are redirected to the `post_detail` page!
 
-You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a *publish button* in **Django Girls Tutorial: Extensions**.
+Potresti aver notato che stiamo impostando la data di pubblicazione prima di salvare il post. Più tardi, introdurremo un *pulsante pubblcia* nel **Django Girls Tutorial: Estensioni**.
 
 That is awesome!
 
-> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
+> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). Se, quando si crea un post, si scopre che si stanno ricevendo errori in riferimento alla mancanza di un utente loggato, vai alla pagina admin http://127.0.0.1:8000/admin e accedi di nuovo. This will fix the issue temporarily. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
 
 ![Logged in error](images/post_create_error.png)
 
 ## Validazione del form
 
-Now, we will show you how cool Django forms are. A blog post needs to have `title` and `text` fields. In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
+Now, we will show you how cool Django forms are. A blog post needs to have `title` and `text` fields. Nel nostro modello `Post` non abbiamo detto che questi campi (contrariamente a `published_date`) non sono richiesti, quindi Django, di default, si aspetta che siano impostati.
 
 Try to save the form without `title` and `text`. Guess what will happen!
 
@@ -295,7 +295,7 @@ Django is taking care to validate that all the fields in our form are correct. I
 
 Now we know how to add a new post. But what if we want to edit an existing one? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
 
-First, let's save the icon which represents the edit button. Download [pencil-fill.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/pencil-fill.svg) and save it to the location `blog/templates/blog/icons/`.
+First, let's save the icon which represents the edit button. Scarica [pencil-fill.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/pencil-fill.svg) e salvalo nella posizione `blog/templates/blog/icons/`.
 
 Open `blog/templates/blog/post_detail.html` in the code editor and add the following code inside `article` element:
 
@@ -364,7 +364,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-This looks almost exactly the same as our `post_new` view, right? But not entirely. For one, we pass an extra `pk` parameter from `urls`. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
+This looks almost exactly the same as our `post_new` view, right? But not entirely. For one, we pass an extra `pk` parameter from `urls`. Successivamente, otteniamo il modello `Post` che vogliamo modificare con `get_object_or_404(Post, pk=pk)` e poi, quando creiamo un modulo, passiamo questo post come `istanza`, sia quando salviamo il modulo…
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -398,7 +398,7 @@ If you need more information about Django forms, you should read the documentati
 
 Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
 
-Open `blog/templates/blog/base.html` in the code editor, find our `div` inside `header` and the anchor element you put in there earlier. It should look like this:
+Apri `blog/template/blog/base.html` nell'editor del codice, trova il nostro `div` all'interno dell'`intestazione` e il tag di ancoraggio che hai inserito in precedenza. Dovrebbe essere così:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -408,7 +408,7 @@ Open `blog/templates/blog/base.html` in the code editor, find our `div` inside `
 </a>
 ```
 
-We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! Change the `<a>` element to look like this:
+Aggiungeremo un altro tag `{% if %}` , che farà apparire il link solo per gli utenti che hanno effettuato l'accesso nell'admin. In questo momento, è solo voi! Change the `<a>` element to look like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -446,7 +446,7 @@ Change it to this:
 {% endif %}
 ```
 
-Since you're likely logged in, if you refresh the page, you won't see anything different. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
+Since you're likely logged in, if you refresh the page, you won't see anything different. Carica la pagina in un browser diverso o in una finestra incognita (chiamata "InPrivate" in Windows Edge), tuttavia, e vedrai che il link non viene mostrato in alto, e l'icona non viene visualizzata!
 
 ## Ultima cosa: ora di fare il deploy!
 
