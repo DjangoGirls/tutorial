@@ -169,7 +169,7 @@ Cosa c'è dentro? Sarebbe bello scoprirlo. Vediamo come:
     05/08/2020 07:28 PM <DIR>      Music
     
 
-> Note: In PowerShell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
+> Nota: In PowerShell è anche possibile utilizzare 'ls' come su Linux e Mac OS X. <!--endsec-->
 
 * * *
 
