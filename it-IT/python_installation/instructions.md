@@ -34,7 +34,7 @@ data-collapse=true ces-->
 
 > **Nota** Prima di installare Python su OS X, devi fare in modo/ verificare che le impostazioni Mac consentano l'installazione di pacchetti che non sono presenti nell'App Store. Vai alle Preferenze di sistema (è nella cartella Applicazioni), clicca "Sicurezza & Privacy," e poi la scheda "Generale". Se il tuo "Consenti le app scaricate da:" è impostato su "Mac App Store", cambialo in "Mac App Store e sviluppatori identificati".
 
-You need to go to the website https://www.python.org/downloads/mac-osx/ and download the latest Python installer:
+Devi andare sul sito https://www.python.org/downloads/mac-osx/ e scaricare il programma di installazione di Python più recente:
 
 * Scarica il file *Mac OS X 64-bit/32-bit installer*
 * Fare doppio clic su *python-{{ book.py_release }}-macosx10.9.pkg* per eseguire l'installer.
@@ -59,7 +59,7 @@ Se hai una versione diversa di Python installata, almeno {{ book.py_min_version 
     $ grep '^NAME=' /etc/os-release
     
 
-Afterwards, depending on the result, follow one of the following installation guides below this section.
+In seguito, a seconda del risultato, segui una delle seguenti guide di installazione sotto questa sezione.
 
 <!--endsec-->
 
@@ -100,7 +100,7 @@ Usa questo comando nella tua console:
 
 <!--endsec-->
 
-Verify the installation was successful by opening a command prompt and running the `python3` command:
+Verifica che l'installazione si sia conclusa correttamente aprendo l'applicazione *Terminal* ed eseguendo il comando `python3`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -108,10 +108,10 @@ Verify the installation was successful by opening a command prompt and running t
     Python {{ book.py_release }}
     
 
-The version shown may be different from {{ book.py_release }} -- it should match the version you installed.
+La versione mostrata può essere diversa da {{ book.py_release }} -- dovrebbe corrispondere alla versione installata.
 
 **NOTA:** Se sei su Windows e ricevi un messaggio di errore che dice che `python3` non è stato trovato, prova ad utilizzare `python` (senza `3`), controlla sia la versione di Python che è {{ book.py_min_version }} o superiore. Se anche questo non funziona, puoi aprire un nuovo prompt dei comandi e riprovare; questo accade se usi un prompt dei comandi aperto da prima dell'installazione di Python.
 
 * * *
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
+Se hai dubbi o se qualcosa è andato storto e non hai idea di cosa fare dopo - chiedi al tuo coach! A volte le cose non vanno come dovrebbero ed è meglio chiedere aiuto a qualcuno con più esperienza.
