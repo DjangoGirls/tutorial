@@ -139,7 +139,7 @@ Ecco un esempio di modello completo, copia e incolla in `blog/templates/blog/pos
         <article>
             <time>published: 14.06.2014, 12:14</time>
             <h2><a href="">My first post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p>Aenean eu leo quam Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
         </article>
 
         <article>
@@ -154,7 +154,7 @@ Ecco un esempio di modello completo, copia e incolla in `blog/templates/blog/pos
 We've created one `header` section and two `article` section here.
 
 * The `header` element contains the title of our blog – it's a heading and a link
-* The two `article` elements contain our blog posts with a published date in a `time` element, a `h2` element with a post title that is clickable and a `p` (paragraph) element for text of our blog post.
+* I due elementi `articolo` contengono i nostri post sul blog con una data pubblicata in un elemento `ora` , un elemento `h2` con un titolo post cliccabile e un elemento `p` (paragrafo) per il testo del nostro post sul blog.
 
 Ci dà questo effetto:
 
