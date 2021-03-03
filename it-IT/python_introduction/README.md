@@ -98,7 +98,7 @@ Utilizzando le virgolette doppie:
 "L'ape Maja va"
 ```
 
-o facendo l'escape dell'apostrofo (cioè evitando che concluda la stringa) con una barra rovesciata (``):
+o facendo l'escape dell'apostrofo (cioè evitando che concluda la stringa) con una barra rovesciata (`\`):
 
 {% filename %}command-line{% endfilename %}
 
@@ -497,7 +497,7 @@ True
 True
 ```
 
-We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare values of mathematical expressions like `2 * 2` and function results like the `2` returned by `len([4, 5])`. Nice, huh?
+We gave Python some numbers to compare. Come puoi vedere, non solo Python può confrontare i numeri, ma può anche confrontare i valori delle espressioni matematiche come `2 * 2` e i risultati delle funzioni come `2` restituiti da `len([4, 5])`. Nice, huh?
 
 Ti sei chiesta perché abbiamo messo due simboli di uguale `==` uno vicino all'altro per confrontare i numeri? Usiamo un singolo `=` per assegnare valori alle variabili. Sempre, **sempre** devi mettere due `==` se vuoi controllare se le cose sono uguali. Possiamo affermare anche che le cose sono diverse tra di loro. Per dirlo, usiamo il simbolo `!=`, come mostrato nell'esempio sopra.
 
@@ -1065,7 +1065,7 @@ Nota che il secondo di questi due numeri non è incluso nella lista prodotta da 
 
 È tutto. **Sei grande!** Questo capitolo non era affatto facile, puoi essere orgogliosa di te stessa. Noi siamo fierissimi di te per avercela fatta fino a qui!
 
-For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers! :)
+Per il tutorial ufficiale e completo di python visita https://docs.python.org/3/tutorial/. Questo ti darà uno studio più completo e completo della lingua. Saluti! :)
 
 Potresti desiderare di fare brevemente qualcos'altro - stiracchiati, fai due passi, riposa gli occhi - prima di continuare con il prossimo capitolo. :)
 
