@@ -55,7 +55,7 @@ Quindi come appare il tuo sito ora? clicca per scoprirlo: http://127.0.0.1:8000/
 
 Ha funzionato! Ottimo lavoro! :)
 
-* The line `<!DOCTYPE html>` is not a HTML tag. It only declares the document type. Here, it informs the browser that document type is [HTML5](https://html.spec.whatwg.org/#the-doctype). This is always the beginning of any HTML5 file.
+* La riga `<!DOCTYPE html>` non è un tag HTML. Dichiara solo il tipo di documento. Here, it informs the browser that document type is [HTML5](https://html.spec.whatwg.org/#the-doctype). Questo è sempre l'inizio di qualsiasi file HTML5.
 * The most basic tag, `<html>`, is always the beginning of html content and `</html>` is always the end. Come puoi vedere, l'intero contenuto del sito va tra il tag iniziale `<html>` ed il tag conclusivo `</html>`
 * `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
 
