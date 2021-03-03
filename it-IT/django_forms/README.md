@@ -252,7 +252,7 @@ return redirect('post_detail', pk=post.pk)
 
 `post_detail` è il nome della view su cui vogliamo andare. Ti ricordi che questa *view* ha bisogno della variabile `pk`? Per passare alle views, usiamo `pk=post.pk`, dove `post` è il post appena creato!
 
-OK, we've talked a lot, but we probably want to see what the whole *view* looks like now, right?
+OK, abbiamo parlato molto, ma probabilmente vogliamo vedere come appare l'intera *view* ora, giusto?
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -271,13 +271,13 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Vediamo se funziona. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it… and voilà! Il nuovo post è stato aggiunto e siamo reindirizzati alla pagina `post_detail`!
+Vediamo se funziona. Vai alla pagina http://127.0.0.1:8000/post/new/, aggiungi un `titolo` e `testo`, salvalo… e voilà! Il nuovo post è stato aggiunto e siamo reindirizzati alla pagina `post_detail`!
 
 Potresti aver notato che stiamo impostando la data di pubblicazione prima di salvare il post. Più tardi, introdurremo un *pulsante pubblcia* nel **Django Girls Tutorial: Estensioni**.
 
 Fantastico!
 
-> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). Se, quando si crea un post, si scopre che si stanno ricevendo errori in riferimento alla mancanza di un utente loggato, vai alla pagina admin http://127.0.0.1:8000/admin e accedi di nuovo. Questo risolverà temporaneamente il problema. C'è una correzione permanente che ti aspetta nella sezione degli esercizi extra alla fine del tutorial principale **Compiti: aggiungi sicurezza al tuo sito web!**.
+> Poiché abbiamo recentemente utilizzato l'interfaccia di admin di Django, il sistema attualmente ritiene che siamo ancora loggati. Ci sono alcune situazioni che potrebbero portarci a disconnetterci (chiusura del browser, riavvio del DB, ecc.). Se, quando si crea un post, si scopre che si stanno ricevendo errori in riferimento alla mancanza di un utente loggato, vai alla pagina admin http://127.0.0.1:8000/admin e accedi di nuovo. Questo risolverà temporaneamente il problema. C'è una correzione permanente che ti aspetta nella sezione degli esercizi extra alla fine del tutorial principale **Compiti: aggiungi sicurezza al tuo sito web!**.
 
 ![Registrato con un errore](images/post_create_error.png)
 
@@ -285,11 +285,11 @@ Fantastico!
 
 E adesso ti dimostreremo quanto siano belli i moduli di Django. Un post del blog deve avere dei campi per il `titolo` ed il `testo`. Nel nostro modello `Post` non abbiamo detto che questi campi (contrariamente a `published_date`) non sono richiesti, quindi Django, di default, si aspetta che siano impostati.
 
-Try to save the form without `title` and `text`. Guess what will happen!
+Prova a salvare il modulo senza `titolo` e `testo`. Indovina cosa accadrà!
 
 ![Convalida del modulo](images/form_validation2.png)
 
-Django is taking care to validate that all the fields in our form are correct. Isn't it awesome?
+Django si incarica di verificare che tutti i campi nel nostro modulo siano corretti. Non è fantastico?
 
 ## Form di modifica
 
@@ -424,7 +424,7 @@ Questo `{% if %}` causerà l'invio del link al browser solo se l'utente che rich
 
 Ricordi l'icona modifica che abbiamo aggiunto sulla nostra pagina di dettaglio? Vogliamo faro la stessa cosa qui, così le altre persone non potranno editare i post esistenti.
 
-Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
+Apri `blog/templates/blog/post_detail.html` nell'editor del codice e trova questa riga:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
