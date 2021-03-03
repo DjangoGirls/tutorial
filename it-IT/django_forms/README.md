@@ -128,7 +128,7 @@ Dopo aver aggiornato il sito, vedremo un `AttributeError` dal momento che non ab
 
 ## post_new view
 
-Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
+È ora di aprire i `blog/views. y` file nell'editor di codice e aggiungere le seguenti righe con il resto delle `da` righe:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -136,7 +136,7 @@ Time to open the `blog/views.py` file in the code editor and add the following l
 from .forms import PostForm
 ```
 
-And then our *view*:
+E poi la nostra *view*:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -175,9 +175,9 @@ OK, quindi vediamo come dovrebbe apparire l'HTML in `post_edit.html`:
 {% endblock %}
 ```
 
-Time to refresh! Yay! Your form is displayed!
+Aggiorna la pagina! Yay! Il tuo modulo è visualizzato!
 
-![New form](images/new_form2.png)
+![Nuovo Modulo](images/new_form2.png)
 
 But, wait a minute! When you type something in the `title` and `text` fields and try to save it, what will happen?
 
@@ -197,7 +197,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Quando inviamo il form, veniamo riportati alla stessa view, ma questa volta abbiamo più dati in `request`, in particolare in `request.POST` (il nome non ha nulla a che vedere con un blog "post", bensì con l'inglese "posting", ovvero inviare, in questo caso dati). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? All the fields from the form are now in `request.POST`. Non è necessario rinominare `POST` in nessuna altra maniera (l'unico altro valore valido per `method` è `GET`, ma al momento non abbiamo abbastanza tempo per spiegare la differenza).
+Quando inviamo il form, veniamo riportati alla stessa view, ma questa volta abbiamo più dati in `request`, in particolare in `request.POST` (il nome non ha nulla a che vedere con un blog "post", bensì con l'inglese "posting", ovvero inviare, in questo caso dati). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? Tutti i campi dal modulo sono ora in `request.POST`. Non è necessario rinominare `POST` in nessuna altra maniera (l'unico altro valore valido per `method` è `GET`, ma al momento non abbiamo abbastanza tempo per spiegare la differenza).
 
 Quindi, nella nostra *view* abbiamo due situazioni separate da gestire: prima, quando accediamo la pagina per la prima volta e vogliamo un modulo vuoto, e poi, quando torniamo alla *view* con tutti i dati del modulo che abbiamo appena digitato. Per cui dobbiamo aggiungere una condizione(useremo `if`):
 
@@ -210,7 +210,7 @@ else:
     form = PostForm()
 ```
 
-It's time to fill in the dots `[...]`. If `method` is `POST` then we want to construct the `PostForm` with data from the form, right? We will do that as follows:
+È ora di riempire i punti `[...]`. If `method` is `POST` then we want to construct the `PostForm` with data from the form, right? Lo faremo come segue:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -220,7 +220,7 @@ form = PostForm(request.POST)
 
 La cosa successiva è controllare se il modulo è corretto (tutti i campi obbligatori sono impostati e non sono stati inviati valori errati). Lo facciamo con `form.is_valid()`.
 
-We check if the form is valid and if so, we can save it!
+Verifichiamo se il modulo è valido e se è così, possiamo salvarlo!
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -250,7 +250,7 @@ Add it at the very beginning of your file. And now we can say, "go to the `post_
 return redirect('post_detail', pk=post.pk)
 ```
 
-`post_detail` is the name of the view we want to go to. Ti ricordi che questa *view* ha bisogno della variabile `pk`? To pass it to the views, we use `pk=post.pk`, where `post` is the newly created blog post!
+`post_detail` è il nome della view su cui vogliamo andare. Ti ricordi che questa *view* ha bisogno della variabile `pk`? To pass it to the views, we use `pk=post.pk`, where `post` is the newly created blog post!
 
 OK, we've talked a lot, but we probably want to see what the whole *view* looks like now, right?
 
@@ -271,31 +271,31 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Let's see if it works. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it… and voilà! Il nuovo post è stato aggiunto e siamo reindirizzati alla pagina `post_detail`!
+Vediamo se funziona. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it… and voilà! Il nuovo post è stato aggiunto e siamo reindirizzati alla pagina `post_detail`!
 
 Potresti aver notato che stiamo impostando la data di pubblicazione prima di salvare il post. Più tardi, introdurremo un *pulsante pubblcia* nel **Django Girls Tutorial: Estensioni**.
 
-That is awesome!
+Fantastico!
 
-> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). Se, quando si crea un post, si scopre che si stanno ricevendo errori in riferimento alla mancanza di un utente loggato, vai alla pagina admin http://127.0.0.1:8000/admin e accedi di nuovo. This will fix the issue temporarily. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
+> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). Se, quando si crea un post, si scopre che si stanno ricevendo errori in riferimento alla mancanza di un utente loggato, vai alla pagina admin http://127.0.0.1:8000/admin e accedi di nuovo. Questo risolverà temporaneamente il problema. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
 
-![Logged in error](images/post_create_error.png)
+![Registrato con un errore](images/post_create_error.png)
 
 ## Validazione del form
 
-Now, we will show you how cool Django forms are. Un post del blog deve avere dei campi per il `titolo` ed il `testo`. Nel nostro modello `Post` non abbiamo detto che questi campi (contrariamente a `published_date`) non sono richiesti, quindi Django, di default, si aspetta che siano impostati.
+E adesso ti dimostreremo quanto siano belli i moduli di Django. Un post del blog deve avere dei campi per il `titolo` ed il `testo`. Nel nostro modello `Post` non abbiamo detto che questi campi (contrariamente a `published_date`) non sono richiesti, quindi Django, di default, si aspetta che siano impostati.
 
 Try to save the form without `title` and `text`. Guess what will happen!
 
-![Form validation](images/form_validation2.png)
+![Convalida del modulo](images/form_validation2.png)
 
 Django is taking care to validate that all the fields in our form are correct. Isn't it awesome?
 
 ## Form di modifica
 
-Now we know how to add a new post. But what if we want to edit an existing one? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
+Ora sappiamo come aggiungere un nuovo post. Ma cosa succede se ne vogliamo cambiarne uno esistente? E' molto simile a quanto abbiamo appena fatto. Creiamo rapidamente alcune cose importanti. (Se non capisci qualcosa, dovresti chiedere al tuo coach o guardare i capitoli precedenti, poiché abbiamo già affrontato tutti questi passi.)
 
-First, let's save the icon which represents the edit button. Scarica [pencil-fill.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/pencil-fill.svg) e salvalo nella posizione `blog/templates/blog/icons/`.
+Innanzitutto, salviamo l'icona che rappresenta il pulsante di modifica. Scarica [pencil-fill.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/pencil-fill.svg) e salvalo nella posizione `blog/templates/blog/icons/`.
 
 Open `blog/templates/blog/post_detail.html` in the code editor and add the following code inside `article` element:
 
@@ -309,7 +309,7 @@ Open `blog/templates/blog/post_detail.html` in the code editor and add the follo
 </aside>
 ```
 
-so that the template will look like this:
+così che il modello sarà così:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -344,7 +344,7 @@ Apri `blog/urls.py` nell'editor del codice e aggiungi questa riga:
 
 We will reuse the template `blog/templates/blog/post_edit.html`, so the last missing thing is a *view*.
 
-Let's open `blog/views.py` in the code editor and add this at the very end of the file:
+Apriamo `blog/views.py` nell'editor del codice e aggiungiamolo alla fine del file:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -364,7 +364,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Questo sembra quasi esattamente la view `post_new`, giusto? But not entirely. Per una, passiamo un parametro `pk` extra da `urls`. Successivamente, otteniamo il modello `Post` che vogliamo modificare con `get_object_or_404(Post, pk=pk)` e poi, quando creiamo un modulo, passiamo questo post come `istanza`, sia quando salviamo il modulo…
+Questo sembra quasi esattamente la view `post_new`, giusto? Ma non del tutto. Per una, passiamo un parametro `pk` extra da `urls`. Successivamente, otteniamo il modello `Post` che vogliamo modificare con `get_object_or_404(Post, pk=pk)` e poi, quando creiamo un modulo, passiamo questo post come `istanza`, sia quando salviamo il modulo…
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -372,7 +372,7 @@ Questo sembra quasi esattamente la view `post_new`, giusto? But not entirely. Pe
 form = PostForm(request.POST, instance=post)
 ```
 
-…and when we've just opened a form with this post to edit:
+…e quando abbiamo appena aperto un modulo con questo post per modificare:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -382,21 +382,21 @@ form = PostForm(instance=post)
 
 OK, let's test if it works! Let's go to the `post_detail` page. There should be an edit button in the top-right corner:
 
-![Edit button](images/edit_button2.png)
+![Pulsante modifica](images/edit_button2.png)
 
-When you click it you will see the form with our blog post:
+Quando ci clicchi, vedrai il modulo con i nostri post del blog:
 
-![Edit form](images/edit_form2.png)
+![Modificare il modulo](images/edit_form2.png)
 
-Feel free to change the title or the text and save the changes!
+Sentiti libero di cambiare il titolo o il testo e salvare le modifiche!
 
-Congratulations! Your application is getting more and more complete!
+Complimenti! La tua application è sempre più completa!
 
 If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.2/topics/forms/
 
 ## Sicurezza
 
-Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Facciamo spuntare il bottone solo per te e non per gli altri.
+Riuscire a creare nuovi post semplicemente cliccando su un link è bellissimo! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Facciamo spuntare il bottone solo per te e non per gli altri.
 
 Apri `blog/template/blog/base.html` nell'editor del codice, trova il nostro `div` all'interno dell'`intestazione` e il tag di ancoraggio che hai inserito in precedenza. Dovrebbe essere così:
 
@@ -408,7 +408,7 @@ Apri `blog/template/blog/base.html` nell'editor del codice, trova il nostro `div
 </a>
 ```
 
-Aggiungeremo un altro tag `{% if %}` , che farà apparire il link solo per gli utenti che hanno effettuato l'accesso nell'admin. In questo momento, è solo voi! Change the `<a>` element to look like this:
+Aggiungeremo un altro tag `{% if %}` , che farà apparire il link solo per gli utenti che hanno effettuato l'accesso nell'admin. In questo momento, è solo voi! Cambia l'elemento `<a>` per farlo assomigliare a questo:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -420,7 +420,7 @@ Aggiungeremo un altro tag `{% if %}` , che farà apparire il link solo per gli u
 {% endif %}
 ```
 
-This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. Questo non protegge completamente la creazione di nuovi post, ma è un buon primo passo. We'll cover more security in the extension lessons.
+This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. Questo non protegge completamente la creazione di nuovi post, ma è un buon primo passo. Ci occuperemo di più sicurezza nelle lezioni di estensione.
 
 Ricordi l'icona modifica che abbiamo aggiunto sulla nostra pagina di dettaglio? Vogliamo faro la stessa cosa qui, così le altre persone non potranno editare i post esistenti.
 
@@ -434,7 +434,7 @@ Open `blog/templates/blog/post_detail.html` in the code editor and find this lin
 </a>
 ```
 
-Change it to this:
+Cambialo in questo:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -472,8 +472,8 @@ Vediamo se funziona su PythonAnywhere. È l'ora di ripartire!
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+(Ricordati di sostituire `<your-pythonanywhere-domain>` con il sottodominio di PythonAnywhere, senza le parentesi angolo.)
 
 * Infine, salta alla pagina [ "Web" ](https://www.pythonanywhere.com/web_app_setup/) (usa il pulsante menu in alto a destra della console) e premi **Ricarica**. Aggiorna il tuo blog https://subdomain.pythonanywhere.com per vedere le modifiche.
 
-And that should be it. Congrats! :)
+Ecco fatto! Congratulazioni!
