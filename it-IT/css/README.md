@@ -80,7 +80,7 @@ h1 a, h2 a {
 
 `h1 a` è un esempio di selettore CSS. Significa che stiamo applicando i nostri fogli di stile ad ogni elemento `a` all'interno di un elemento `h1`; il selettore `h2 a` si comporta allo stesso modo con gli elementi `h2`. Quindi quando si ha qualcosa come `<h1><a href="">link</a></h1>`, lo stile `h1 a` verrà applicato. In questo caso stiamo impostando il colore `#C25100`, che corrisponde all'arancione scuro. Puoi inserire il colore che preferisci, ma assicurati che ci sia un buon contrasto con lo sfondo bianco!
 
-In un file CSS definiamo lo stile degli elementi presenti nel file HTML. Il primo modo per identificare gli elementi è attraverso il loro nome. Potresti ricordarli come tags dalla sezione sull'HTML. Cose come `a`, `h1` e `body` sono tutti esempi di nomi di elementi. Possiamo identificare anche con l'attributo `class` o l'attributo `id`. Class e id sono i nomi che assegni agli elementi. Le classi definiscono gruppi di elementi mentre gli id indicano uno specifico elemento. For example, you could identify the following element by using the element name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+In un file CSS definiamo lo stile degli elementi presenti nel file HTML. Il primo modo per identificare gli elementi è attraverso il loro nome. Potresti ricordarli come tags dalla sezione sull'HTML. Cose come `a`, `h1` e `body` sono tutti esempi di nomi di elementi. Possiamo identificare anche con l'attributo `class` o l'attributo `id`. Class e id sono i nomi che assegni agli elementi. Le classi definiscono gruppi di elementi mentre gli id indicano uno specifico elemento. Per esempio, potresti identificare il seguente elemento utilizzando il nome dell'elemento `a`, la classe `external_link`, o l'ID`link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
@@ -180,7 +180,7 @@ Grandioso!
 
 Come già detto in precedenza, CSS possiede il concetto di classi. Questo ti permette identificare una parte del codice HTML e applicare lo stile solo su quella parte, senza modificare le altre. Questo è utilissimo! Potresti avere due div che hanno qualcosa di differente (come il tuo header e il tuo post). Una classe ti aiuta a renderli differenti.
 
-Go ahead and name some parts of the HTML code. Replace the `header` that contains your header with the following:
+Vai avanti e chiama alcune parti del codice HTML. Sostituisci l'`intestazione` che contiene l'intestazione con quanto segue:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -192,7 +192,7 @@ Go ahead and name some parts of the HTML code. Replace the `header` that contain
 </header>
 ```
 
-And now add a class `post` to your `article` containing a blog post.
+E ora aggiungi una classe `post` al tuo `articolo` che contiene un post del blog.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
