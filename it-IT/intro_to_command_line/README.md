@@ -115,7 +115,7 @@ Sarebbe bello sapere dove ci troviamo ora, giusto?Vediamo. Digita questo comando
     > cd C:\Users\olasitarska
     
 
-> Note: 'cd' stands for 'change directory'. With PowerShell you can use pwd just like on Linux or Mac OS X.
+> Nota: 'cd' sta per 'modifica cartella'. Con la shell può usare pwd come su Linux o Mac OS X.
 
 <!--endsec-->
 
