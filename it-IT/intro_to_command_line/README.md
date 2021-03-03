@@ -167,7 +167,6 @@ Cosa c'è dentro? Sarebbe bello scoprirlo. Vediamo come:
     05/08/2020 07:28 PM <DIR>      Desktop
     05/08/2020 07:28 PM <DIR>      Downloads
     05/08/2020 07:28 PM <DIR>      Music
-    ...
     
 
 > Note: In PowerShell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
