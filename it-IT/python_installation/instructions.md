@@ -17,7 +17,7 @@ Prima verifica se il computer sta eseguendo una versione a 32 bit o una versione
 
 Puoi scaricare Python per Windows dal sito web https://www.python.org/downloads/windows/. Clicca sul link "Ultimo Python 3 - Python x.x.x". Se il tuo computer sta eseguendo una versione **64-bit** di Windows, scarica il file **Windows x86-64 di installer eseguibile**. Altrimenti, scarica il file **Windows x86 eseguibile installer**. Dopo aver scaricato il file *.msi, lo dovresti eseguire (cliccaci sopra due volte) e segui le istruzioni.
 
-Una cosa per cui guardare: durante l'installazione, si noti una finestra contrassegnata "Setup". Make sure you tick the "Add Python {{ book.py_version }} to PATH" or 'Add Python to your environment variables" checkbox and click on "Install Now", as shown here (it may look a bit different if you are installing a different version):
+Una cosa per cui guardare: durante l'installazione, si noti una finestra contrassegnata "Setup". Assicurati di selezionare la casellina "Add Python {{ book.py_version }} to PATH" o 'Aggiungi Python alle tue variabili ambientali" e clicca su "installa ora", come mostrato qui (potrebbe risultare leggermente diverso se stai installando una versione differente):
 
 ![Non dimenticare di aggiungere Python al Path](../python_installation/images/python-installation-options.png)
 
@@ -110,7 +110,7 @@ Verify the installation was successful by opening a command prompt and running t
 
 The version shown may be different from {{ book.py_release }} -- it should match the version you installed.
 
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is {{ book.py_min_version }} or higher. If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
+**NOTA:** Se sei su Windows e ricevi un messaggio di errore che dice che `python3` non è stato trovato, prova ad utilizzare `python` (senza `3`), controlla sia la versione di Python che è {{ book.py_min_version }} o superiore. If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
 
 * * *
 
