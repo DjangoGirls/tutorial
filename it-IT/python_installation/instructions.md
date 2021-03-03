@@ -25,14 +25,14 @@ Quando l'installazione è completata, potresti vedere una finestra di dialogo co
 
 Nota: Se si utilizza una versione precedente di Windows (7, Vista, o qualsiasi versione precedente) e l'installatore di Python {{ book.py_version }} non funziona per un errore, installare tutti gli aggiornamenti di Windows e provare a installare nuovamente Python. Se l'errore si ripresenta, prova ad installare la versione di Python {{ book.py_min_release }} da [Python.org](https://www.python.org/downloads/windows/).
 
-> Django {{ book.django_version }} needs Python {{ book.py_min_version }} or greater, which does not support Windows XP or earlier versions.
+> Django {{ book.django_version }} ha bisogno di Python {{ book.py_min_version }} o maggiore, che non supporta Windows XP o versioni precedenti.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Nota** Prima di installare Python su OS X, devi fare in modo/ verificare che le impostazioni Mac consentano l'installazione di pacchetti che non sono presenti nell'App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
+> **Nota** Prima di installare Python su OS X, devi fare in modo/ verificare che le impostazioni Mac consentano l'installazione di pacchetti che non sono presenti nell'App Store. Vai alle Preferenze di sistema (è nella cartella Applicazioni), clicca "Sicurezza & Privacy," e poi la scheda "Generale". Se il tuo "Consenti le app scaricate da:" è impostato su "Mac App Store", cambialo in "Mac App Store e sviluppatori identificati".
 
 You need to go to the website https://www.python.org/downloads/mac-osx/ and download the latest Python installer:
 
