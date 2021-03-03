@@ -65,7 +65,7 @@ Afterwards, depending on the result, follow one of the following installation gu
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-Type this command into your console:
+Digita questo comando nella tua console:
 
 {% filename %}command-line{% endfilename %}
 
@@ -77,7 +77,7 @@ Type this command into your console:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Use this command in your console:
+Usa questo comando nella tua console:
 
 {% filename %}command-line{% endfilename %}
 
@@ -91,7 +91,7 @@ Se sei nelle vecchie versioni Fedora potresti ottenere un errore che il comando 
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Use this command in your console:
+Usa questo comando nella tua console:
 
 {% filename %}command-line{% endfilename %}
 
