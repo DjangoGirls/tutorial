@@ -8,7 +8,7 @@
 
 Benvenuta al tutorial Django Girls! Siamo felici di vederti qui. :) In questo tutorial, vi porteremo in un viaggio nella sfera delle tecnologie web, offrendovi uno sguardo di tutti i bit e pezzi che hanno bisogno di stare insieme per far funzionare il web così come lo conosciamo.
 
-As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine. :)
+Come per tutte le cose sconosciute, questa sarà un'avventura - ma non preoccupatevi, dal momento che hai già avuto il coraggio di arrivare fino a qui, andrà tutto bene :)
 
 ## Introduzione
 
