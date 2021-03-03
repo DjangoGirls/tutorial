@@ -146,14 +146,14 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-To create a new `Post` form, we need to call `PostForm()` and pass it to the template. We will go back to this *view*, but for now, let's quickly create a template for the form.
+Per creare un nuovo modulo `Post`, dobbiamo richiamare `PostForm()` e passarlo nel nostro modello. Torneremo sulla *view* in seguito, ma per ora creiamo velocemente un modello per il modulo.
 
 ## Template
 
 Dobbiamo creare un file `post_edit. tml` nella directory `blog/templates/blog` , e aprilo nell'editor di codice. Per far si che un modulo funzioni, abbiamo bisogno di diverse cose:
 
 * Dobbiamo visualizzare il form. Possiamo farlo con (ad esempio) {% raw %}`{{ form.as_p }}`{% endraw %}.
-* The line above needs to be wrapped with an HTML form element: `<form method="POST">...</form>`.
+* La riga sopra deve essere racchiuso con un elemento di forma HTML: `<form method="POST">...</form>`.
 * Ci serve un `Save` pulsante. Possiamo fare Ciò con HTML button: `<button type="submit">Save</button>`.
 * E infine, subito dopo l'apertura `<form ...>` abbiamo bisogno di aggiungere {% raw %}`{% csrf_token %}`{% endraw %}. Questo passaggio è molto importante dal momento che rende il nostro form sicuro! Se dimentichi di questo bit, Django si lamenterà quando tenterai di salvare il modulo:
 
@@ -179,15 +179,15 @@ Aggiorna la pagina! Yay! Il tuo modulo è visualizzato!
 
 ![Nuovo Modulo](images/new_form2.png)
 
-But, wait a minute! When you type something in the `title` and `text` fields and try to save it, what will happen?
+Ma, aspetta un momento! Se provi a scrivere qualcosa nei campi`titolo` e `testo` e cerchi di salvare ciò che hai scritto- che cosa succede?
 
-Nothing! We are once again on the same page and our text is gone… and no new post is added. So what went wrong?
+Nulla! Siamo ancora una volta nella stessa pagina e il nostro testo è andato perduto… e nessun nuovo post è stato aggiunto. Quindi cosa è andato storto?
 
 La risposta è: nulla. Dobbiamo solo fare un po' di lavoro in più nella nostra *view*.
 
 ## Salvare il form
 
-Open `blog/views.py` once again in the code editor. Currently all we have in the `post_new` view is the following:
+Apri ancora una volta `blog/views.py`. Attualmente tutto quello che abbiamo nella view `post_new` è:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -197,7 +197,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Quando inviamo il form, veniamo riportati alla stessa view, ma questa volta abbiamo più dati in `request`, in particolare in `request.POST` (il nome non ha nulla a che vedere con un blog "post", bensì con l'inglese "posting", ovvero inviare, in questo caso dati). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? Tutti i campi dal modulo sono ora in `request.POST`. Non è necessario rinominare `POST` in nessuna altra maniera (l'unico altro valore valido per `method` è `GET`, ma al momento non abbiamo abbastanza tempo per spiegare la differenza).
+Quando inviamo il form, veniamo riportati alla stessa view, ma questa volta abbiamo più dati in `request`, in particolare in `request.POST` (il nome non ha nulla a che vedere con un blog "post", bensì con l'inglese "posting", ovvero inviare, in questo caso dati). Ricordate come nel file HTML, la nostra definizione `<form>` aveva la variabile `method="POST"`? Tutti i campi dal modulo sono ora in `request.POST`. Non è necessario rinominare `POST` in nessuna altra maniera (l'unico altro valore valido per `method` è `GET`, ma al momento non abbiamo abbastanza tempo per spiegare la differenza).
 
 Quindi, nella nostra *view* abbiamo due situazioni separate da gestire: prima, quando accediamo la pagina per la prima volta e vogliamo un modulo vuoto, e poi, quando torniamo alla *view* con tutti i dati del modulo che abbiamo appena digitato. Per cui dobbiamo aggiungere una condizione(useremo `if`):
 
@@ -210,7 +210,7 @@ else:
     form = PostForm()
 ```
 
-È ora di riempire i punti `[...]`. If `method` is `POST` then we want to construct the `PostForm` with data from the form, right? Lo faremo come segue:
+È ora di riempire i punti `[...]`. Se `metodo` è `POST` allora vogliamo costruire il `PostForm` con dati dal modulo, giusto? Lo faremo come segue:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -232,7 +232,7 @@ if form.is_valid():
     post.save()
 ```
 
-In pratica, ci sono due cose da fare: salviamo il modulo con `form.save` e aggiungiamo un autore(dal momento che non c'era nessun campo autore `author` nel modulo `PostForm` e questo campo non può essere lasciato bianco). `commit=False` means that we don't want to save the `Post` model yet – we want to add the author first. Most of the time you will use `form.save()` without `commit=False`, but in this case, we need to supply it. `post.save()` will preserve changes (adding the author) and a new blog post is created!
+In pratica, ci sono due cose da fare: salviamo il modulo con `form.save` e aggiungiamo un autore(dal momento che non c'era nessun campo autore `author` nel modulo `PostForm` e questo campo non può essere lasciato bianco). `commit=False` significa che non vogliamo ancora salvare il modello `Post` - vogliamo aggiungere prima l'autore. La maggior parte del tempo userai `form.save()` senza `commit=False`, ma in questo caso dobbiamo fornirlo. `post.save()` manterrà le modifiche (aggiungendo l'autore) ed un nuovo post del blog è stato creato!
 
 Infine, sarebbe fantastico se potessimo andare immediatamente alla pagina `post_detail` per il nostro post appena creato, giusto? Per fare questo abbiamo bisogno di un'altra importazione:
 
@@ -242,7 +242,7 @@ Infine, sarebbe fantastico se potessimo andare immediatamente alla pagina `post_
 from django.shortcuts import redirect
 ```
 
-Add it at the very beginning of your file. And now we can say, "go to the `post_detail` page for the newly created post":
+Aggiungilo all'inizio del tuo file. E ora possiamo dire: "vai alla pagina `post_detail` per il post appena creato":
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -250,7 +250,7 @@ Add it at the very beginning of your file. And now we can say, "go to the `post_
 return redirect('post_detail', pk=post.pk)
 ```
 
-`post_detail` è il nome della view su cui vogliamo andare. Ti ricordi che questa *view* ha bisogno della variabile `pk`? To pass it to the views, we use `pk=post.pk`, where `post` is the newly created blog post!
+`post_detail` è il nome della view su cui vogliamo andare. Ti ricordi che questa *view* ha bisogno della variabile `pk`? Per passare alle views, usiamo `pk=post.pk`, dove `post` è il post appena creato!
 
 OK, we've talked a lot, but we probably want to see what the whole *view* looks like now, right?
 
@@ -277,7 +277,7 @@ Potresti aver notato che stiamo impostando la data di pubblicazione prima di sal
 
 Fantastico!
 
-> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). Se, quando si crea un post, si scopre che si stanno ricevendo errori in riferimento alla mancanza di un utente loggato, vai alla pagina admin http://127.0.0.1:8000/admin e accedi di nuovo. Questo risolverà temporaneamente il problema. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
+> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). Se, quando si crea un post, si scopre che si stanno ricevendo errori in riferimento alla mancanza di un utente loggato, vai alla pagina admin http://127.0.0.1:8000/admin e accedi di nuovo. Questo risolverà temporaneamente il problema. C'è una correzione permanente che ti aspetta nella sezione degli esercizi extra alla fine del tutorial principale **Compiti: aggiungi sicurezza al tuo sito web!**.
 
 ![Registrato con un errore](images/post_create_error.png)
 
@@ -297,7 +297,7 @@ Ora sappiamo come aggiungere un nuovo post. Ma cosa succede se ne vogliamo cambi
 
 Innanzitutto, salviamo l'icona che rappresenta il pulsante di modifica. Scarica [pencil-fill.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/pencil-fill.svg) e salvalo nella posizione `blog/templates/blog/icons/`.
 
-Open `blog/templates/blog/post_detail.html` in the code editor and add the following code inside `article` element:
+Apri `blog/templates/blog/post_detail.html` nell'editor di codice e aggiungi il seguente codice all'interno dell'elemento `article`:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -342,7 +342,7 @@ Apri `blog/urls.py` nell'editor del codice e aggiungi questa riga:
     path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
 ```
 
-We will reuse the template `blog/templates/blog/post_edit.html`, so the last missing thing is a *view*.
+Riutilizzeremo il modello `blog/templates/blog/post_edit.html`, quindi l'ultima cosa che manca è una *view*.
 
 Apriamo `blog/views.py` nell'editor del codice e aggiungiamolo alla fine del file:
 
@@ -380,7 +380,7 @@ form = PostForm(request.POST, instance=post)
 form = PostForm(instance=post)
 ```
 
-OK, let's test if it works! Let's go to the `post_detail` page. There should be an edit button in the top-right corner:
+OK, vedi se funziona! Vai alla pagina `post_detail` . Dovrebbe esserci un pulsante di modifica nell'angolo in alto a destra:
 
 ![Pulsante modifica](images/edit_button2.png)
 
@@ -392,11 +392,11 @@ Sentiti libero di cambiare il titolo o il testo e salvare le modifiche!
 
 Complimenti! La tua application è sempre più completa!
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.2/topics/forms/
+Se necessiti di altre informazioni sui moduli di Django, dovresti leggere la documentazione: https://docs.djangoproject.com/en/2.2/topics/forms/
 
 ## Sicurezza
 
-Riuscire a creare nuovi post semplicemente cliccando su un link è bellissimo! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Facciamo spuntare il bottone solo per te e non per gli altri.
+Riuscire a creare nuovi post semplicemente cliccando su un link è bellissimo! Ma in questo momento chiunque visiti il tuo sito potrà creare un nuovo post sul blog, e probabilmente non è qualcosa che vuoi. Facciamo spuntare il bottone solo per te e non per gli altri.
 
 Apri `blog/template/blog/base.html` nell'editor del codice, trova il nostro `div` all'interno dell'`intestazione` e il tag di ancoraggio che hai inserito in precedenza. Dovrebbe essere così:
 
@@ -420,7 +420,7 @@ Aggiungeremo un altro tag `{% if %}` , che farà apparire il link solo per gli u
 {% endif %}
 ```
 
-This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. Questo non protegge completamente la creazione di nuovi post, ma è un buon primo passo. Ci occuperemo di più sicurezza nelle lezioni di estensione.
+Questo `{% if %}` causerà l'invio del link al browser solo se l'utente che richiede la pagina è loggato. Questo non protegge completamente la creazione di nuovi post, ma è un buon primo passo. Ci occuperemo di più sicurezza nelle lezioni di estensione.
 
 Ricordi l'icona modifica che abbiamo aggiunto sulla nostra pagina di dettaglio? Vogliamo faro la stessa cosa qui, così le altre persone non potranno editare i post esistenti.
 
