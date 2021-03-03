@@ -159,7 +159,7 @@ Dobbiamo creare un file `post_edit. tml` nella directory `blog/templates/blog` ,
 
 ![CSFR Forbidden page](images/csrf2.png)
 
-OK, so let's see how the HTML in `post_edit.html` should look:
+OK, quindi vediamo come dovrebbe apparire l'HTML in `post_edit.html`:
 
 {% filename %}blog/templates/blog/post_edit.html{% endfilename %}
 
@@ -183,7 +183,7 @@ But, wait a minute! When you type something in the `title` and `text` fields and
 
 Nothing! We are once again on the same page and our text is gone… and no new post is added. So what went wrong?
 
-The answer is: nothing. We need to do a little bit more work in our *view*.
+La risposta è: nulla. Dobbiamo solo fare un po' di lavoro in più nella nostra *view*.
 
 ## Salvare il form
 
@@ -199,7 +199,7 @@ def post_new(request):
 
 Quando inviamo il form, veniamo riportati alla stessa view, ma questa volta abbiamo più dati in `request`, in particolare in `request.POST` (il nome non ha nulla a che vedere con un blog "post", bensì con l'inglese "posting", ovvero inviare, in questo caso dati). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? All the fields from the form are now in `request.POST`. Non è necessario rinominare `POST` in nessuna altra maniera (l'unico altro valore valido per `method` è `GET`, ma al momento non abbiamo abbastanza tempo per spiegare la differenza).
 
-Quindi, nella nostra *view* abbiamo due situazioni separate da gestire: prima, quando accediamo la pagina per la prima volta e vogliamo un modulo vuoto, e poi, quando torniamo alla *view* con tutti i dati del modulo che abbiamo appena digitato. So we need to add a condition (we will use `if` for that):
+Quindi, nella nostra *view* abbiamo due situazioni separate da gestire: prima, quando accediamo la pagina per la prima volta e vogliamo un modulo vuoto, e poi, quando torniamo alla *view* con tutti i dati del modulo che abbiamo appena digitato. Per cui dobbiamo aggiungere una condizione(useremo `if`):
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -250,7 +250,7 @@ Add it at the very beginning of your file. And now we can say, "go to the `post_
 return redirect('post_detail', pk=post.pk)
 ```
 
-`post_detail` is the name of the view we want to go to. Remember that this *view* requires a `pk` variable? To pass it to the views, we use `pk=post.pk`, where `post` is the newly created blog post!
+`post_detail` is the name of the view we want to go to. Ti ricordi che questa *view* ha bisogno della variabile `pk`? To pass it to the views, we use `pk=post.pk`, where `post` is the newly created blog post!
 
 OK, we've talked a lot, but we probably want to see what the whole *view* looks like now, right?
 
@@ -271,7 +271,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Let's see if it works. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it… and voilà! The new blog post is added and we are redirected to the `post_detail` page!
+Let's see if it works. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it… and voilà! Il nuovo post è stato aggiunto e siamo reindirizzati alla pagina `post_detail`!
 
 Potresti aver notato che stiamo impostando la data di pubblicazione prima di salvare il post. Più tardi, introdurremo un *pulsante pubblcia* nel **Django Girls Tutorial: Estensioni**.
 
@@ -283,7 +283,7 @@ That is awesome!
 
 ## Validazione del form
 
-Now, we will show you how cool Django forms are. A blog post needs to have `title` and `text` fields. Nel nostro modello `Post` non abbiamo detto che questi campi (contrariamente a `published_date`) non sono richiesti, quindi Django, di default, si aspetta che siano impostati.
+Now, we will show you how cool Django forms are. Un post del blog deve avere dei campi per il `titolo` ed il `testo`. Nel nostro modello `Post` non abbiamo detto che questi campi (contrariamente a `published_date`) non sono richiesti, quindi Django, di default, si aspetta che siano impostati.
 
 Try to save the form without `title` and `text`. Guess what will happen!
 
@@ -334,7 +334,7 @@ so that the template will look like this:
 {% endblock %}
 ```
 
-Open `blog/urls.py` in the code editor, and add this line:
+Apri `blog/urls.py` nell'editor del codice e aggiungi questa riga:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -364,7 +364,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-This looks almost exactly the same as our `post_new` view, right? But not entirely. For one, we pass an extra `pk` parameter from `urls`. Successivamente, otteniamo il modello `Post` che vogliamo modificare con `get_object_or_404(Post, pk=pk)` e poi, quando creiamo un modulo, passiamo questo post come `istanza`, sia quando salviamo il modulo…
+Questo sembra quasi esattamente la view `post_new`, giusto? But not entirely. Per una, passiamo un parametro `pk` extra da `urls`. Successivamente, otteniamo il modello `Post` che vogliamo modificare con `get_object_or_404(Post, pk=pk)` e poi, quando creiamo un modulo, passiamo questo post come `istanza`, sia quando salviamo il modulo…
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -396,7 +396,7 @@ If you need more information about Django forms, you should read the documentati
 
 ## Sicurezza
 
-Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
+Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Facciamo spuntare il bottone solo per te e non per gli altri.
 
 Apri `blog/template/blog/base.html` nell'editor del codice, trova il nostro `div` all'interno dell'`intestazione` e il tag di ancoraggio che hai inserito in precedenza. Dovrebbe essere così:
 
@@ -420,9 +420,9 @@ Aggiungeremo un altro tag `{% if %}` , che farà apparire il link solo per gli u
 {% endif %}
 ```
 
-This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. This doesn't protect the creation of new posts completely, but it's a good first step. We'll cover more security in the extension lessons.
+This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. Questo non protegge completamente la creazione di nuovi post, ma è un buon primo passo. We'll cover more security in the extension lessons.
 
-Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
+Ricordi l'icona modifica che abbiamo aggiunto sulla nostra pagina di dettaglio? Vogliamo faro la stessa cosa qui, così le altre persone non potranno editare i post esistenti.
 
 Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
 
@@ -446,11 +446,11 @@ Change it to this:
 {% endif %}
 ```
 
-Since you're likely logged in, if you refresh the page, you won't see anything different. Carica la pagina in un browser diverso o in una finestra incognita (chiamata "InPrivate" in Windows Edge), tuttavia, e vedrai che il link non viene mostrato in alto, e l'icona non viene visualizzata!
+Siccome probabilmente sei loggata, se ricarichi la pagina non vedrai differenze. Carica la pagina in un browser diverso o in una finestra incognita (chiamata "InPrivate" in Windows Edge), tuttavia, e vedrai che il link non viene mostrato in alto, e l'icona non viene visualizzata!
 
 ## Ultima cosa: ora di fare il deploy!
 
-Let's see if all this works on PythonAnywhere. Time for another deploy!
+Vediamo se funziona su PythonAnywhere. È l'ora di ripartire!
 
 * Prima di tutto, esegui il tuo nuovo codice e push fino a GitHub:
 
