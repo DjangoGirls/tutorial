@@ -427,7 +427,7 @@ I dizionari, come le liste, sono *mutable*, significa che possono essere cambiat
 >>> partecipante['linguaggio_preferito'] = 'Python'
 ```
 
-Like lists, using the `len()` function on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
+Come le liste, usando la funzione `len()` sui dizionari restituisce il numero di coppie chiave-valore nel dizionario. Vai avanti e digita questo comando:
 
 {% filename %}command-line{% endfilename %}
 
