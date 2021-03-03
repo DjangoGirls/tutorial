@@ -497,7 +497,7 @@ True
 True
 ```
 
-We gave Python some numbers to compare. Come puoi vedere, non solo Python può confrontare i numeri, ma può anche confrontare i valori delle espressioni matematiche come `2 * 2` e i risultati delle funzioni come `2` restituiti da `len([4, 5])`. Nice, huh?
+Abbiamo dato a Python dei numeri da confrontare. Come puoi vedere, non solo Python può confrontare i numeri, ma può anche confrontare i valori delle espressioni matematiche come `2 * 2` e i risultati delle funzioni come `2` restituiti da `len([4, 5])`. "Bello, eh?"
 
 Ti sei chiesta perché abbiamo messo due simboli di uguale `==` uno vicino all'altro per confrontare i numeri? Usiamo un singolo `=` per assegnare valori alle variabili. Sempre, **sempre** devi mettere due `==` se vuoi controllare se le cose sono uguali. Possiamo affermare anche che le cose sono diverse tra di loro. Per dirlo, usiamo il simbolo `!=`, come mostrato nell'esempio sopra.
 
