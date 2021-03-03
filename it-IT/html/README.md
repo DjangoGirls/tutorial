@@ -55,9 +55,9 @@ Quindi come appare il tuo sito ora? clicca per scoprirlo: http://127.0.0.1:8000/
 
 Ha funzionato! Ottimo lavoro! :)
 
-* La riga `<!DOCTYPE html>` non è un tag HTML. Dichiara solo il tipo di documento. Here, it informs the browser that document type is [HTML5](https://html.spec.whatwg.org/#the-doctype). Questo è sempre l'inizio di qualsiasi file HTML5.
+* La riga `<!DOCTYPE html>` non è un tag HTML. Dichiara solo il tipo di documento. Qui, informa il browser che il tipo di documento è [HTML5](https://html.spec.whatwg.org/#the-doctype). Questo è sempre l'inizio di qualsiasi file HTML5.
 * Il tag più semplice, `<html>`, è sempre l'inizio del contenuto html e `</html>` è sempre la fine. Come puoi vedere, l'intero contenuto del sito va tra il tag iniziale `<html>` ed il tag conclusivo `</html>`
-* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
+* `<p>` è un tag per gli elementi paragrafo; `</p>` conclude ogni paragrafo
 
 ## Testa e corpo
 
@@ -153,7 +153,7 @@ Ecco un esempio di modello completo, copia e incolla in `blog/templates/blog/pos
 
 Abbiamo creato una sezione `intestazione` e due `articolo` sezione qui.
 
-* The `header` element contains the title of our blog – it's a heading and a link
+* L'elemento `intestazione` contiene il titolo del nostro blog – è un'intestazione e un link
 * I due elementi `articolo` contengono i nostri post sul blog con una data pubblicata in un elemento `ora` , un elemento `h2` con un titolo post cliccabile e un elemento `p` (paragrafo) per il testo del nostro post sul blog.
 
 Ci dà questo effetto:
