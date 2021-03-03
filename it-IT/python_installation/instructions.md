@@ -23,7 +23,7 @@ Una cosa per cui guardare: durante l'installazione, si noti una finestra contras
 
 Quando l'installazione è completata, potresti vedere una finestra di dialogo con un link che puoi seguire per saperne di più su Python o sulla versione installata. Chiudi o annulla questa finestra -- imparerai molto di più in questo tutorial!
 
-Note: If you are using an older version of Windows (7, Vista, or any older version) and the Python {{ book.py_version }} installer fails with an error, then install all Windows Updates and try to install Python again. If you still have the error, try installing Python version {{ book.py_min_release }} from [Python.org](https://www.python.org/downloads/windows/).
+Nota: Se si utilizza una versione precedente di Windows (7, Vista, o qualsiasi versione precedente) e l'installatore di Python {{ book.py_version }} non funziona per un errore, installare tutti gli aggiornamenti di Windows e provare a installare nuovamente Python. If you still have the error, try installing Python version {{ book.py_min_release }} from [Python.org](https://www.python.org/downloads/windows/).
 
 > Django {{ book.django_version }} needs Python {{ book.py_min_version }} or greater, which does not support Windows XP or earlier versions.
 
@@ -44,7 +44,7 @@ You need to go to the website https://www.python.org/downloads/mac-osx/ and down
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
+È molto probabile che tu abbia già installato Python fuori dalla scatola. Per verificare se è installata (e quale versione è), aprire una console e digitare il seguente comando:
 
 {% filename %}command-line{% endfilename %}
 
@@ -84,7 +84,7 @@ Use this command in your console:
     $ sudo dnf install python3
     
 
-If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use `yum` instead.
+Se sei nelle vecchie versioni Fedora potresti ottenere un errore che il comando `dnf` non è stato trovato. In questo caso, devi utilizzare `yum` invece.
 
 <!--endsec-->
 
@@ -110,7 +110,7 @@ Verify the installation was successful by opening a command prompt and running t
 
 The version shown may be different from {{ book.py_release }} -- it should match the version you installed.
 
-**NOTA:** Se sei su Windows e ricevi un messaggio di errore che dice che `python3` non è stato trovato, prova ad utilizzare `python` (senza `3`), controlla sia la versione di Python che è {{ book.py_min_version }} o superiore. If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
+**NOTA:** Se sei su Windows e ricevi un messaggio di errore che dice che `python3` non è stato trovato, prova ad utilizzare `python` (senza `3`), controlla sia la versione di Python che è {{ book.py_min_version }} o superiore. Se anche questo non funziona, puoi aprire un nuovo prompt dei comandi e riprovare; questo accade se usi un prompt dei comandi aperto da prima dell'installazione di Python.
 
 * * *
 
