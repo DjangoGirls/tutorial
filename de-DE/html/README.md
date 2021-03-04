@@ -154,7 +154,7 @@ Hier ist ein vollständiges Beispiel eines Templates. Kopiere es und füge es in
 Wir haben hier einen `header`-Abschnitt und zwei `article`-Abschnitte erstellt.
 
 * Das `header`-Element enthält den Titel unseres Blogs – eine Überschrift und einen Link
-* The two `article` elements contain our blog posts with a published date in a `time` element, a `h2` element with a post title that is clickable and a `p` (paragraph) element for text of our blog post.
+* Die beiden `Artikel` Elemente enthalten unsere Blogeinträge mit einem veröffentlichten Datum in einem `time` Element, ein `h2` Element mit einem anklickbaren Beitragstitel und einem `p` (Absatz) Element für den Text unseres Blogeintrags.
 
 Wir bekommen das Folgende:
 
