@@ -25,35 +25,35 @@ Bootstrap- ը տեղադրելու համար կոդի խմբագրում բաց
 
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
+Սա ձեր նախագծին ոչ մի ֆայլ չի ավելացնում: Դա պարզապես մատնանշում է ինտերնետում գոյություն ունեցող ֆայլերը: Այսպիսով, առաջ գնացեք, բացեք ձեր կայքը և թարմացրեք էջը: Ահա այն!
 
 ![Figure 14.1](images/bootstrap1.png)
 
-Looking nicer already!
+Արդեն ավելի գեղեցիկ տեսք ունես:
 
-## Static files in Django
+## Ստատիկ ֆայլեր Django- ում
 
-Finally we will take a closer look at these things we've been calling **static files**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
+Finally we will take a closer look at these things we've been calling **static files**. Ստատիկ ֆայլերը ձեր բոլոր CSS- ն ու պատկերներն են: Դրանց բովանդակությունը կախված չէ հարցման համատեքստից և նույնը կլինի յուրաքանչյուր օգտագործողի համար:
 
 ### Where to put static files for Django
 
-Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
+Django- ն արդեն գիտի, թե որտեղ գտնել ստատիկ ֆայլերը ներկառուցված «ադմինիստրատոր» ծրագրի համար: Այժմ մենք պետք է ստատիկ ֆայլեր ավելացնենք մեր սեփական ծրագրի, բլոգի համար:
 
-We do that by creating a folder called `static` inside the blog app:
+Մենք դա անում ենք ՝ բլոգի հավելվածի ներսում ստեղծելով ` ստատիկ ` կոչվող թղթապանակ.
 
     djangogirls
     ├── blog
     │   ├── migrations
     │   ├── static
-    │   └── templates
+    │   └── templates
     └── mysite
     
 
-Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
+Django- ն ձեր ծրագրերի ցանկացած պանակների մեջ ավտոմատ կերպով կգտնի «ստատիկ» կոչվող ցանկացած պանակ: Այնուհետև այն կկարողանա օգտագործել դրանց բովանդակությունը որպես ստատիկ ֆայլեր:
 
-## Your first CSS file!
+## Ձեր առաջին CSS ֆայլը:
 
-Let's create a CSS file now, to add your own style to your web page. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
+Եկեք հիմա ստեղծենք CSS ֆայլ ՝ ձեր սեփական ոճը ձեր վեբ էջին ավելացնելու համար: Ստեղծեք ` css ` անունով նոր գրացուցակ ձեր ` ստատիկ ` գրացուցակի ներսում: Դրանից հետո ստեղծեք ` blog.css ` կոչվող նոր ֆայլ այս ` css ` գրացուցակի ներսում: Պատրա՞ստ եք
 
     djangogirls
     └─── blog
@@ -62,13 +62,13 @@ Let's create a CSS file now, to add your own style to your web page. Create a ne
                    └─── blog.css
     
 
-Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code editor.
+Timeամանակն է գրել CSS: Ձեր կոդի խմբագրիչում բացեք ` բլոգ / ստատիկ / css / blog.css ` ֆայլը:
 
-We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
+Մենք այստեղ շատ խոր չենք գնա CSS- ի անհատականացմանը և սովորելուն: Այս էջի վերջում կա CSS անվճար դասընթացի առաջարկ, եթե ցանկանում եք ավելին իմանալ:
 
-But let's do at least a little. Maybe we could change the color of our headers? To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
+Բայց եկեք գոնե մի փոքր անենք: Գուցե մենք կարողանո՞ւմ ենք վերնագրերի գույնը փոխել: Գույները հասկանալու համար համակարգիչները օգտագործում են հատուկ ծածկագրեր: Այս կոդերը սկսվում են ` # ` - ից, որին հաջորդում են 6 տառ (A – F) և թվեր (0–9): Օրինակ ՝ կապույտի կոդը ` # 0000FF ` է: Շատ գույների գունային կոդերը կարող եք գտնել այստեղ ՝ http://www.colorpicker.com/: Կարող եք նաև օգտագործել [ նախորոշված ​​գույներ ](http://www.w3schools.com/colors/colors_names.asp), ինչպիսիք են ` կարմիրը ` և ` կանաչը `
 
-In your `blog/static/css/blog.css` file you should add the following code:
+Ձեր ` blog/static/css/blog.css ` ֆայլում պետք է ավելացնեք հետևյալ ծածկագիրը.
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -79,7 +79,7 @@ h1 a, h2 a {
 
 ```
 
-`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
+` h1 a ` - ը CSS ընտրող է: This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
 
 In a CSS file we determine styles for elements in the HTML file. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following element by using the element name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
