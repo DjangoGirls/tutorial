@@ -1,4 +1,4 @@
-You can [skip right over this section](http://tutorial.djangogirls.org/en/installation/#install-python) if you're not using a Chromebook. . Դուք կարող եք անտեսել այն տեղադրման հրահանգների մնացած մասը:
+Եթե ​​Chromebook չեք օգտագործում, կարող եք անմիջապես անցնել այս բաժնի վրայով: Եթե ​​դու են, ձեր տեղադրման փորձը մի փոքր այլ կլինի: Դուք կարող եք անտեսել այն տեղադրման հրահանգների մնացած մասը:
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
