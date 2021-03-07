@@ -79,9 +79,9 @@ h1 a, h2 a {
 
 ```
 
-` h1 a ` - ը CSS ընտրող է: This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
+` h1 a ` - ը CSS ընտրող է: Սա նշանակում է, որ մենք օգտագործում ենք մեր ոճերը `a`տարրի ներսում գտնվող ցանկացած `h1` տարրի նկատմամբ; `h2 a` ընտրիչը նույնն է անում`h2`տարրերի համար: Այսպիսով, երբ մենք ունենք `<h1><a href="">link</a></h1>` պես մի բան, կգործի`h1 a` ոճը: Այս դեպքում մենք ասում ենք, որ այն փոխի իր գույնը և դարձնի `#C25100`, որը մուգ նարնջագույն է: Կամ կարող եք այստեղ տեղադրել ձեր սեփական գույնը, բայց համոզվեք, որ այն լավ հակադրություն ունի սպիտակ ֆոնի վրա:
 
-In a CSS file we determine styles for elements in the HTML file. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following element by using the element name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+CSS ֆայլում մենք որոշում ենք HTML ոճի տարրերի ոճերը: Էլեմենտները նույնացնելու առաջին եղանակը տարրի անվան հետ է: Դրանք կարող եք հիշել որպես HTML էջի պիտակներ: ` a `, ` h1 `, և ` body ` նման բաները բոլորն էլ տարրերի անունների օրինակներ են: Մենք էլ տարրերը նույնացնում ենք ըստ հատկանիշի `class` կամ հատկանիշը `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following element by using the element name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
