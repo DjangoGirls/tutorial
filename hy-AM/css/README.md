@@ -1,27 +1,28 @@
-# CSS – make it pretty!
+# CSS - դարձրեք այն գեղեցիկ:
 
-Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS for that.
+Մեր բլոգը դեռ բավականին տգեղ է թվում, չէ՞: Niceամանակն է այն գեղեցիկ դարձնել: Դրա համար մենք կօգտագործենք CSS:
 
-## What is CSS?
+## Ի՞նչ է CSS- ը:
 
-Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
+Կասկադի ոճի թերթերը (CSS) լեզու է, որն օգտագործվում է նշագծման լեզվով գրված կայքի տեսքը և ձևաչափումը նկարագրելու համար (ինչպես HTML): Վերաբերվեք դրան, որպես դիմահարդարում մեր կայքի համար: ;)
 
-But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
+Բայց մենք չենք ուզում նորից զրոյից սկսել, այնպես չէ՞: Եվս մեկ անգամ մենք կօգտագործենք մի բան, որը ծրագրավորողները անվճար թողարկել են ինտերնետում: Գիտեք, անիվը նորից հորինելը զվարճալի չէ:
 
-## Let's use Bootstrap!
+## Եկեք օգտագործենք Bootstrap!
 
-Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
+Bootstrap- ը HTML և CSS ամենատարածված շրջանակներից մեկն է `գեղեցիկ կայքեր մշակելու համար. Https://getbootstrap.com/
 
-It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
+Այն գրվել է ծրագրավորողների կողմից, ովքեր աշխատում էին Twitter- ում: Այժմ այն ​​մշակվել է կամավորների կողմից ամբողջ աշխարհից:
 
-## Install Bootstrap
+## Տեղադրեք Bootstrap- ը
 
-To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
+Bootstrap- ը տեղադրելու համար կոդի խմբագրում բացեք ձեր ` .html ` ֆայլը և այն ավելացրեք `<head>` բաժնում.
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+{% filename %}blog/templates/blog/post_list.html{% endfilename %} 
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
 ```
 
 This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
