@@ -4,34 +4,34 @@
 
 ## Visual Studio Code 
 
-Visual Studio Code- ը Microsoft- ի կողմից ստեղծված Windows- ի, Linux- ի և macOS- ի համար նախատեսված կոդերի կոդ է: It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+Visual Studio Code- ը Microsoft- ի կողմից ստեղծված Windows- ի, Linux- ի և macOS- ի համար նախատեսված կոդերի կոդ է: Այն ներառում է աջակցության կարգաբերում, ներկառուցված Git հսկողություն, շարահյուսական լուսաբանում, խելացի կոդի լրացում, հատվածներ և կոդի վերափոխում:
 
 [Բեռնիր այն այստեղից](https://code.visualstudio.com/)
 
 ## Gedit
 
-Gedit is an open-source, free editor, available for all operating systems.
+Gedit- ը բաց կոդով, անվճար խմբագիր է, որը հասանելի է բոլոր օպերացիոն համակարգերի համար:
 
 [Բեռնիր այն այստեղից](https://wiki.gnome.org/Apps/Gedit#Download)
 
-## Sublime Text 3
+## Sublime Text 3 
 
-Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
+Sublime Text- ը շատ սիրված խմբագիր է `անվճար գնահատման ժամանակահատվածով, և այն մատչելի է բոլոր օպերացիոն համակարգերի համար:
 
 [Բեռնիր այն այստեղից](https://www.sublimetext.com/3)
 
 ## Atom
 
-Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
+Atom- ը եւս մեկ սիրված խմբագիր է: Այն անվճար է, բաց կոդով և հասանելի է Windows- ի, OS X- ի և Linux- ի համար: Ատոմը մշակվում է [ GitHub ](https://github.com/) - ի կողմից:
 
-[Download it here](https://atom.io/)
+[Բեռնիր այն այստեղից](https://atom.io/)
 
-## Why are we installing a code editor?
+## Ինչու ենք մենք ծածկագրերի խմբագիր տեղադրում:
 
-You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
+Գուցե ձեզ հետաքրքրում է, թե ինչու ենք մենք տեղադրում այս հատուկ կոդերի խմբագրիչ ծրագիրը, այլ ոչ թե օգտագործելով այնպիսի բառեր, ինչպիսիք են Word- ը կամ Notepad- ը:
 
-The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+Առաջին պատճառն այն է, որ կոդը պետք է լինի ** պարզ տեքստ </ 0>, և Word- ի և Textedit- ի նման ծրագրերի խնդիրն այն է, որ նրանք իրականում չեն արտադրում պարզ տեքստ, նրանք արտադրում են հարուստ տեքստ (տառատեսակներով և ձևաչափմամբ), օգտագործելով հատուկ ձևաչափեր, ինչպիսիք են  RTF (հարուստ տեքստի ձևաչափ) </ 1>:</p> 
 
-The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
+Երկրորդ պատճառն այն է, որ կոդերի խմբագրիչները մասնագիտացված են կոդերը խմբագրելու համար, ուստի նրանք կարող են տրամադրել այնպիսի օգտակար հատկություններ, ինչպիսիք են գունային ծածկագրով կոդն ըստ դրա նշանակության կամ ձեզ համար ավտոմատ փակելով գները:
 
-We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
+Այս ամենը մենք գործի մեջ կտեսնենք ավելի ուշ: Շուտով դուք կմտածեք ձեր հին կոդերի վստահելի խմբագրի մասին `որպես ձեր սիրած գործիքներից մեկի: :)
