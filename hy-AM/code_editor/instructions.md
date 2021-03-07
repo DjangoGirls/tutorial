@@ -1,10 +1,10 @@
-Աշխարհում գոյություն ունեն բազում խմբագրիչներ և դա զգալիորեն հանգեցնում է անձնական նախասիրություններին։ Շատ Python ծրագրավորողներ օգտագործում են բարդ, բայց միևնույն ժամանակ հզոր IDE֊ներ (Integrated Development Environments - Միասնական Նախագծման Միջավայր), ինչպիսն է օրինակ PyCharm֊ը։ As a beginner, however, that's probably less suitable; our recommendations are equally powerful, but a lot simpler.
+Աշխարհում գոյություն ունեն բազում խմբագրիչներ և դա զգալիորեն հանգեցնում է անձնական նախասիրություններին։ Շատ Python ծրագրավորողներ օգտագործում են բարդ, բայց միևնույն ժամանակ հզոր IDE֊ներ (Integrated Development Environments - Միասնական Նախագծման Միջավայր), ինչպիսն է օրինակ PyCharm֊ը։ Որպես սկսնակ, դա, հավանաբար, ավելի քիչ հարմար է մեր առաջարկությունները հավասարապես հզոր են, բայց շատ ավելի պարզ:
 
-Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
+Մեր առաջարկները ներկայացված են ստորև, բայց ազատորեն հարցրեք ձեր մարզչին, թե որոնք են իրենց նախընտրությունները. Նրանցից օգնություն ստանալն ավելի հեշտ կլինի:
 
-## Visual Studio Code
+## Visual Studio Code 
 
-Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+Visual Studio Code- ը Microsoft- ի կողմից ստեղծված Windows- ի, Linux- ի և macOS- ի համար նախատեսված կոդերի կոդ է: It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
 
 [Բեռնիր այն այստեղից](https://code.visualstudio.com/)
 
