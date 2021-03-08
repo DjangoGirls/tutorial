@@ -1,5 +1,5 @@
 # Chromebook տեղադրում
 
-> ** Նշում ** Եթե դուք արդեն աշխատել եք  տեղադրման փուլերի </ 1> միջով, ապա այլևս անհրաժեշտ չէ դա անել. Կարող եք անմիջապես անցնել  Python- ի ներածություն </ 2>:</p> </blockquote> 
-> 
-> {% include "/chromebook_setup/instructions.md" %}
+> ** Նշում ** Եթե դուք արդեն աշխատել եք [installation steps](../installation/README.md) (ներբեռնման), ապա այլևս կարիգ չկա դա կրկնել. կարող եք անմիջապես անցնել [Introduction to Python](../python_introduction/README.md) (Python- ի Ներածություն) բաժնին: 
+
+{% include "/chromebook_setup/instructions.md" %}
