@@ -1,6 +1,6 @@
 # Code editor 
 
-> Ընթերցողների համար տանը. Այս գլուխն ընդգրկված է [ Python- ի տեղադրում & amp; Code Editor ](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s) տեսանյութ:
+> Տնային ուսուցման համար. Այս գլուխն ընդգրկված է [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s) video.(Python-ի և տեքստի խմբագրի ծրագրերի ներբեռնումը:
 
 Դուք պատրաստվում եք գրել ձեր առաջին ծածկագիրը, այնպես որ ժամանակն է ներբեռնել ծածկագրի խմբագիր:
 
