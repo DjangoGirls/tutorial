@@ -1,11 +1,11 @@
-Git- ը «տարբերակների կառավարման համակարգ է» ("version control system"), որն օգտագործվում է շատ ծրագրավորողների կողմից: This software can track changes to files over time so that you can recall specific versions later. A bit like the "track changes" feature in word processor programs (e.g., Microsoft Word or LibreOffice Writer), but much more powerful.
+Git- ը «տարբերակների կառավարման համակարգ է» ("version control system"), որն օգտագործվում է շատ ծրագրավորողների կողմից: Այս ծրագիրը վերահսկում է փոփոխությունները, որոնք տեղի են ունենում ֆայլերում, որպեսզի հետագայում կարողանաք վերականգնել ծածկագրի վիճակը ցանկալի ժամանակահատվածում: Մի փոքր նման է բառ մշակող ("track changes" )ծրագրերի գործառույթին (օրինակ ՝ Microsoft Word կամ LibreOffice Writer) բայց շատ ավելի հզոր:
 
-## Installing Git
+## Git-ի ներբեռնում
 
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-You can download Git from [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for two: in the step where it asks to choose your editor, you should pick Nano, and in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Other than that, the defaults are fine. Checkout Windows-style, commit Unix-style line endings is good.
+Կարող ես ներբեռնել Git-ը այս հղումով [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for two: in the step where it asks to choose your editor, you should pick Nano, and in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Other than that, the defaults are fine. Checkout Windows-style, commit Unix-style line endings is good.
 
 Do not forget to restart the command prompt or PowerShell after the installation finished successfully. <!--endsec-->
 
