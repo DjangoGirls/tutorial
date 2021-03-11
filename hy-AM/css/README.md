@@ -296,7 +296,7 @@ Then surround the HTML code which displays the posts with declarations of classe
 {% endfor %}
 ```
 
-in the `blog/templates/blog/post_list.html` with this:
+`blog/templates/blog/post_list.html`-ում սրանով
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -318,11 +318,11 @@ in the `blog/templates/blog/post_list.html` with this:
 </main>
 ```
 
-Save those files and refresh your website.
+Պահեք այդ ֆայլերը և թարմացրեք ձեր կայքը:
 
 ![Figure 14.4](images/final.png)
 
-Woohoo! Looks awesome, right? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
+Օօօօ Հիանալի տեսք ունի, այնպես չէ՞ Նայեք մեր տեղադրած կոդին: Մենք դասակարգումներ (classes) ենք ավելացրել HTML- ին և օգտագործել դրանք CSS- ում: Որտե՞ղ կկատարեք փոփոխություն, եթե ցանկանում եք, որ ամսաթիվը փիրուզագույն լինի:
 
 Don't be afraid to tinker with this CSS a little bit and try to change some things. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry – you can always undo it!
 
