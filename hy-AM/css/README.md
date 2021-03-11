@@ -205,7 +205,7 @@ And now add a class `post` to your `article` containing a blog post.
 </article>
 ```
 
-Այժմ եկեք ավելացնենք բլոկի սահմանումները տարբեր ընտրողների համար: Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, copy and paste it into your `blog/static/css/blog.css` file:
+Այժմ եկեք ավելացնենք բլոկի սահմանումները տարբեր ընտրողների համար: Selector-ները (ընտրողները), որոնք սկսվում են ` - ով: ` դասին հատուկ են: Համացանցում կան բազմաթիվ հիանալի հղումներ և բացատրություններ CSS- ի վերաբերյալ, որոնք կարող են օգնել ձեզ հասկանալ հետևյալ կոդը: Առայժմ, պատճենեք և տեղադրեք այն ձեր `blog/static/css/blog.css` ֆայլում.
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
