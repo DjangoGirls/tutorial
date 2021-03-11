@@ -89,7 +89,7 @@ CSS ֆայլում մենք որոշում ենք HTML ֆայլի տարրերի
 
 CSS ընտրողների մասին ավելին կարող եք կարդալ այստեղ [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
-We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file in the code editor and add this line at the very beginning of it:
+Մենք նաև պետք է մեր HTML ձևանմուշին ասենք, որ մենք ավելացրել ենք CSS ոճեր: Կոդի խմբագրում բացեք `blog/templates/blog/post_list.html` ֆայլը և հենց սկզբում ավելացրեք այս տողը. 
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
