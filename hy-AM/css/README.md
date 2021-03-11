@@ -164,7 +164,7 @@ body {
 
 Ինչպես նախկինում, ստուգեք հրահանգը և տեղադրեք `blog/static/css/blog.css` հղումը: Այս տողում Google Fonts- ից (https://www.google.com/fonts) ներմուծեք * Lobster * կոչվող տառատեսակը:
 
-Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file `blog/static/css/blog.css`. Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
+Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file `blog/static/css/blog.css`. Ձևավոր փակագծերի միջև ավելացրեք `font-family: 'Lobster';` տողը և թարմացրեք էջը.
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -177,9 +177,9 @@ h1 a, h2 a {
 
 ![Figure 14.3](images/font.png)
 
-Great!
+Հիանալի է!
 
-As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
+Ինչպես նշվեց վերևում, CSS- ն ունի դասակարգման հասկացություն: Դրանք թույլ են տալիս անվանել HTML կոդի մի մաս և կիրառել ոճեր միայն այդ մասի վրա ՝ առանց այլ մասերի վրա ազդելու: Սա կարող է շատ օգտակար լինել: Գուցե դուք ունեք երկու բաժիններ, որոնք տարբեր դերեր ունեն (ինչպես օրինակ վերնագիրն և բուն հաղորդագրությունը): Դասակարգումը (Class) կարող է օգնել ձեզ տարբեր տեսքեր ստանալ:
 
 Go ahead and name some parts of the HTML code. Replace the `header` that contains your header with the following:
 
