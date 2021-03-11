@@ -154,7 +154,7 @@ body {
 
 ![Figure 14.3](images/margin2.png)
 
-Maybe we can customize the font in our header? Paste this into your `<head>` in `blog/templates/blog/post_list.html` file:
+Միգուցե կարո՞ղ ենք հարմարեցնել մեր վերնագրի տառատեսակը: Տեղադրեք սա `<head>` in `blog/templates/blog/post_list.html` ձեր ֆայլում:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
