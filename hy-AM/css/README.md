@@ -324,8 +324,8 @@ Then surround the HTML code which displays the posts with declarations of classe
 
 Օօօօ Հիանալի տեսք ունի, այնպես չէ՞ Նայեք մեր տեղադրած կոդին: Մենք դասակարգումներ (classes) ենք ավելացրել HTML- ին և օգտագործել դրանք CSS- ում: Որտե՞ղ կկատարեք փոփոխություն, եթե ցանկանում եք, որ ամսաթիվը փիրուզագույն լինի:
 
-Don't be afraid to tinker with this CSS a little bit and try to change some things. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry – you can always undo it!
+Մի վախեցեք խճճվել CSS- ով `փորձեք փոխություններ անել: CSS- ով "խաղալը" կօգնի ձեզ հասկանալ, թե ինչ ֆունկցոնալություն ունեն տարբեր գործիքներ: Եթե ​​ինչ-որ բան փչացնում եք, մի անհանգստացեք. Միշտ կարող եք չեղարկել այն:
 
-We really recommend taking the free online courses "Basic HTML & HTML5" and "Basic CSS" on [freeCodeCamp](https://learn.freecodecamp.org/). They can help you learn all about making your websites prettier with HTML and CSS.
+Խորհուրդ ենք տալիս անցնել «Հիմնական HTML & HTML5» և «Հիմնական CSS» առցանց դասընթացներ [freeCodeCamp](https://learn.freecodecamp.org/): Դրանք կարող են օգնել ձեզ դարձնել ձեր կայքերը ավելի գեղեցիկ HTML և CSS- ին տիրապետելու միջոցով:
 
-Ready for the next chapter?! :)
+Պատրա՞ստ եք հաջորդ գլխին: :)
