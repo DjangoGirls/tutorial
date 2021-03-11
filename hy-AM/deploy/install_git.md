@@ -5,9 +5,9 @@ Git- ը «տարբերակների կառավարման համակարգ է» ("
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-Կարող ես ներբեռնել Git-ը այս հղումով [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for two: in the step where it asks to choose your editor, you should pick Nano, and in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Other than that, the defaults are fine. Checkout Windows-style, commit Unix-style line endings is good.
+Կարող ես ներբեռնել Git-ը այս հղումով [git-scm.com](https://git-scm.com/). "next" (հաջորդ) կարող եք ընտրել բոլոր քայլերին, բացառությամբ երկուսի. Քայլ որտեղ այն խնդրում է ընտրել ձեր խմբագրին (choose your editor), պետք է ընտրեք Nano- ն, իսկ «Ձեր PATH միջավայրի կարգավորումը»-("Adjusting your PATH environment") խորագրի ներքո ընտրեք "Use Git and optional Unix tools from the Windows Command Prompt"(«Օգտագործեք Git և ընտրովի Unix գործիքներ Windows հրամանի տողը»)(ներքևի տարբերակը): Մնացած բոլոր պարամետրերը կարող եք թողնել: Checkout Windows-style, commit Unix-style line endings is good.
 
-Do not forget to restart the command prompt or PowerShell after the installation finished successfully. <!--endsec-->
+Տեղադրումը հաջող ավարտելուց հետո մի մոռացեք վերսկսել հրամանի տողը կամ PowerShell- ը:<!--endsec-->
 
 <!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->
