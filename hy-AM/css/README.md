@@ -181,7 +181,7 @@ h1 a, h2 a {
 
 Ինչպես նշվեց վերևում, CSS- ն ունի դասակարգման հասկացություն: Դրանք թույլ են տալիս անվանել HTML կոդի մի մաս և կիրառել ոճեր միայն այդ մասի վրա ՝ առանց այլ մասերի վրա ազդելու: Սա կարող է շատ օգտակար լինել: Գուցե դուք ունեք երկու բաժիններ, որոնք տարբեր դերեր ունեն (ինչպես օրինակ վերնագիրն և բուն հաղորդագրությունը): Դասակարգումը (Class) կարող է օգնել ձեզ տարբեր տեսքեր ստանալ:
 
-Go ahead and name some parts of the HTML code. Replace the `header` that contains your header with the following:
+Առաջ անցնենք և անվանեք HTML կոդի որոշ մասեր: Փոխարինեք Ձեր վերնագիրը հետևյալով `header` :
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -205,7 +205,7 @@ And now add a class `post` to your `article` containing a blog post.
 </article>
 ```
 
-We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, copy and paste it into your `blog/static/css/blog.css` file:
+Այժմ եկեք ավելացնենք բլոկի սահմանումները տարբեր ընտրողների համար: Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, copy and paste it into your `blog/static/css/blog.css` file:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
