@@ -97,7 +97,7 @@ CSS ընտրողների մասին ավելին կարող եք կարդալ ա
 {% load static %}
 ```
 
-We're just loading static files here. :) Between the `<head>` and `</head>` tags, after the links to the Bootstrap CSS files, add this line:
+Մենք պարզապես ներբեռնում ենք ստատիկ ֆայլեր :) `<head>` և ` </head> ` միջև, Bootstrap CSS ֆայլեր ֆայլերից հետո, ավելացրեք այս տողը.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -105,7 +105,7 @@ We're just loading static files here. :) Between the `<head>` and `</head>` tags
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may be overriden by code in Bootstrap files. We just told our template where our CSS file is located.
+Բրաուզերը կարդում է ֆայլերը տրված հերթականությամբ, ուստի մենք պետք է համոզվենք, որ դրանք ճիշտ տեղում են: Otherwise the code in our file may be overriden by code in Bootstrap files. We just told our template where our CSS file is located.
 
 Your file should now look like this:
 
