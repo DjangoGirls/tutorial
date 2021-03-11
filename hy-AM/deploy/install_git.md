@@ -1,4 +1,4 @@
-Git is a "version control system" used by a lot of programmers. This software can track changes to files over time so that you can recall specific versions later. A bit like the "track changes" feature in word processor programs (e.g., Microsoft Word or LibreOffice Writer), but much more powerful.
+Git- ը «տարբերակների կառավարման համակարգ է» ("version control system"), որն օգտագործվում է շատ ծրագրավորողների կողմից: This software can track changes to files over time so that you can recall specific versions later. A bit like the "track changes" feature in word processor programs (e.g., Microsoft Word or LibreOffice Writer), but much more powerful.
 
 ## Installing Git
 
