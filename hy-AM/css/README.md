@@ -105,9 +105,9 @@ CSS ընտրողների մասին ավելին կարող եք կարդալ ա
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-Բրաուզերը կարդում է ֆայլերը տրված հերթականությամբ, ուստի մենք պետք է համոզվենք, որ դրանք ճիշտ տեղում են: Otherwise the code in our file may be overriden by code in Bootstrap files. We just told our template where our CSS file is located.
+Բրաուզերը կարդում է ֆայլերը տրված հերթականությամբ, ուստի մենք պետք է համոզվենք, որ դրանք ճիշտ տեղում են: Հակառակ դեպքում, մեր ֆայլի կոդը կարող է գերակշռվել կոդով Bootstrap ֆայլերում: Մենք պարզապես պատմեցինք մեր ձևանմուշին (template), թե որտեղ է գտնվում մեր CSS ֆայլը:
 
-Your file should now look like this:
+Ձեր ֆայլն այժմ պետք է ունենա այսպիսի տեսք.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -136,11 +136,11 @@ Your file should now look like this:
 </html>
 ```
 
-OK, save the file and refresh the site!
+Շատ լավ, պահեք ֆայլը և թարմացրեք կայքը:
 
 ![Figure 14.2](images/color2.png)
 
-Nice work! Maybe we would also like to give our website a little air and increase the margin on the left side? Let's try this!
+Հիանալի աշխատանք: Գուցե մենք ցանկանում ենք մեր կայքին որոշակի տարածք և ձախ հատվածում լուսանցք ավելացնել: Եկեք փորձենք!
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -150,7 +150,7 @@ body {
 }
 ```
 
-Add that to your CSS, save the file and see how it works!
+Ավելացրեք դա ձեր CSS- ին, պահեք ֆայլը և տեսեք, թե ինչպես է այն աշխատում:
 
 ![Figure 14.3](images/margin2.png)
 
