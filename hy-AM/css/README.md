@@ -81,13 +81,13 @@ h1 a, h2 a {
 
 ` h1 a ` - ը CSS ընտրող է: Սա նշանակում է, որ մենք օգտագործում ենք մեր ոճերը `a`տարրի ներսում գտնվող ցանկացած `h1` տարրի նկատմամբ; `h2 a` ընտրիչը նույնն է անում`h2`տարրերի համար: Այսպիսով, երբ մենք ունենք `<h1><a href="">link</a></h1>` պես մի բան, կկիրառվի `h1 a` ոճը: Այս դեպքում մենք հրահանգում ենք, որ այն փոխի իր գույնը և դարձնի `#C25100`, որը մուգ նարնջագույն է: Կամ կարող եք այստեղ տեղադրել ձեր սեփական գույնը, բայց համոզված լինելով, որ այն լավ հակադրություն ունի սպիտակ ֆոնի վրա:
 
-CSS ֆայլում մենք որոշում ենք HTML ֆայլի տարրերի ոճերը: Էլեմենտները նույնացնելու առաջին եղանակը դրանց անվանումներն են: Պետք է հիշել այս պիտակները (tag-երը) HTML- ից: ` a `, ` h1 `, և ` body ` սրանք բոլորը տարրերի անունների օրինակներ են: Մենք էլ տարրերը նույնացնում ենք ըստ հատկանիշի `class` կամ հատկանիշը `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following element by using the element name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+CSS ֆայլում մենք որոշում ենք HTML ֆայլի տարրերի ոճերը: Էլեմենտները նույնացնելու առաջին եղանակը դրանց անվանումներն են: Պետք է հիշել այս պիտակները (tag-երը) HTML- ից: ` a `, ` h1 `, և ` body ` սրանք բոլորը տարրերի անունների օրինակներ են: Մենք նաև տարրերը նույնացնում ենք ըստ հատկանիշի `class` կամ հատկանիշը `id`. Class և id-ը անուններ են, որոնք դուք ինքներդ եք վերագրում տարրերին: Դասերը (сlass) սահմանում են տարրերի խմբեր, իսկ նույնացուցիչները (id) մատնանշում են հատուկ տարրեր: Օրինակ, դուք կարող եք նույնականացնել հետևյալ տարրը ՝ օգտագործելով տարրի անունը
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
 ```
 
-You can read more about [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
+CSS ընտրողների մասին ավելին կարող եք կարդալ այստեղ [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
 We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file in the code editor and add this line at the very beginning of it:
 
