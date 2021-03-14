@@ -10,18 +10,18 @@ Django (/ ˈdʒæŋɡoʊ / * jang-goh *) ազատ և բաց կոդով վեբ հ
 
 ## Ինչու՞ է ձեզ անհրաժեշտ շրջանակ:
 
-To understand what Django is actually for, we need to take a closer look at the servers. The first thing is that the server needs to know that you want it to serve you a web page.
+Հասկանալու համար, թե իրականում ինչի համար է Django- ն, մենք պետք է ավելի սերտ նայենք սերվերներին: Առաջին բանը այն է, որ սերվերը պետք է իմանա, որ ցանկանում եք, որ այն ձեզ ինտերնետային էջ ծառայի:
 
-Imagine a mailbox (port) which is monitored for incoming letters (requests). This is done by a web server. The web server reads the letter and then sends a response with a webpage. But when you want to send something, you need to have some content. And Django is something that helps you create the content.
+Պատկերացրեք փոստարկղ (նավահանգիստ), որը վերահսկվում է մուտքային նամակների (հարցումների) համար: Դա արվում է վեբ սերվերի( web server-ի) կողմից: Վեբ սերվերը(server) կարդում է նամակը և այնուհետև ուղարկում է պատասխան կայքէջի միջոցով: Բայց երբ ուզում ես ինչ-որ բան ուղարկել, պետք է որոշակի բովանդակություն ունենաս: Իսկ Django- ն մի բան է, որն օգնում է ձեզ ստեղծել բովանդակություն:
 
-## What happens when someone requests a website from your server?
+## Ի՞նչ է պատահում, երբ ինչ-որ մեկը կայք է խնդրում ձեր սերվերից:
 
-When a request comes to a web server, it's passed to Django which tries to figure out what is actually requested. It takes a web page address first and tries to figure out what to do. This part is done by Django's **urlresolver** (note that a website address is called a URL – Uniform Resource Locator – so the name *urlresolver* makes sense). It is not very smart – it takes a list of patterns and tries to match the URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
+Երբ հարցումը գալիս է վեբ սերվերին, այն փոխանցվում է Django- ին, որը փորձում է պարզել, թե իրականում ինչ է պահանջվում: Այն նախ տանում է ինտերնետային կայքի հասցե և փորձում է հասկանալ, թե ինչ անել: Այս մասը կատարում է Django- ի ** urlresolver ** ը (նշենք, որ կայքի հասցեն կոչվում է URL - Uniform Resource Locator - այնպես որ * urlresolver * անունն իմաստ ունի): Դա շատ խելացի չէ. Այն վերցնում է օրինաչափությունների ցուցակ և փորձում համընկնել URL- ի հետ: Django- ն վերևից ներքև ստուգում է օրինաչափությունները, և եթե ինչ-որ բան համընկնում է, ապա Django- ն հարցումը փոխանցում է կապված գործառույթին (որը կոչվում է * դիտում *):
 
-Imagine a mail carrier with a letter. She is walking down the street and checks each house number against the one on the letter. If it matches, she puts the letter there. This is how the urlresolver works!
+Պատկերացրեք նամակ ունեցող փոստի կրիչ: Նա քայլում է փողոցով և յուրաքանչյուր տան համարը ստուգում է նամակի վրա նշվածի վրա: Եթե ​​այն համընկնում է, նա նամակը դնում է այնտեղ: Այսպես է աշխատում urlresolver- ը:
 
-In the *view* function, all the interesting things are done: we can look at a database to look for some information. Maybe the user asked to change something in the data? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
+* տեսակետ * գործառույթում արվում են բոլոր հետաքրքիր բաները. Մենք կարող ենք նայել տվյալների բազա ՝ որոշ տեղեկություններ որոնելու համար: Գուցե օգտագործողը խնդրե՞լ է ինչ-որ բան փոխել տվյալների մեջ: Նամակի պես ՝ «Խնդրում եմ, փոխեք իմ աշխատանքի նկարագիրը»: * տեսքը * կարող է ստուգել, ​​արդյոք դուք թույլատրված եք դա անել, ապա թարմացրեք աշխատանքի նկարագրությունը ձեզ համար և հետ ուղարկեք հաղորդագրություն. Դրանից հետո * տեսքը * առաջացնում է պատասխան, և Django- ն կարող է այն ուղարկել օգտվողի վեբ զննարկչին:
 
-The description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
+Վերոնշյալ նկարագրությունը մի փոքր պարզեցված է, բայց դեռ պետք չէ բոլոր տեխնիկական բաները իմանալ: Ընդհանուր գաղափար ունենալը բավական է:
 
-So instead of diving too much into details, we will start creating something with Django and we will learn all the important parts along the way!
+Այսպիսով, մանրամասների մեջ շատ սուզվելու փոխարեն, մենք կսկսենք ինչ-որ բան ստեղծել Django- ի հետ և այդ ընթացքում կսովորենք բոլոր կարևոր մասերը:
