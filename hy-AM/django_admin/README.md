@@ -1,6 +1,6 @@
-# Django admin
+# Django ադմին
 
-To add, edit and delete the posts we've just modeled, we will use Django admin.
+Հենց նոր մոդելավորված գրառումները ավելացնելու, խմբագրելու և ջնջելու համար մենք կօգտագործենք Django ադմինիստրատորը:
 
 Let's open the `blog/admin.py` file in the code editor and replace its contents with this:
 
