@@ -2,9 +2,9 @@
 
 Հենց նոր մոդելավորված գրառումները ավելացնելու, խմբագրելու և ջնջելու համար մենք կօգտագործենք Django ադմինիստրատորը:
 
-Let's open the `blog/admin.py` file in the code editor and replace its contents with this:
+Եկեք բացենք ` blog/admin.py ` ֆայլը ծածկագրի խմբագրում և դրա բովանդակությունը փոխարինենք այսով.
 
-{% filename %}blog/admin.py{% endfilename %}
+{% filename %}blog/admin.py{% endfilename %} 
 
 ```python
 from django.contrib import admin
@@ -13,15 +13,15 @@ from .models import Post
 admin.site.register(Post)
 ```
 
-As you can see, we import (include) the Post model defined in the previous chapter. To make our model visible on the admin page, we need to register the model with `admin.site.register(Post)`.
+Ինչպես տեսնում եք, մենք ներմուծում (ներառում) ենք նախորդ գլխում սահմանված Post մոդելը: Որպեսզի մեր մոդելը տեսանելի լինի ադմինիստրատորի էջում, մենք պետք է գրանցենք մոդելը ` admin.site.register(Post)` - ում:
 
-OK, time to look at our Post model. Remember to run `python manage.py runserver` in the console to run the web server. Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
+Լավ, ժամանակն է նայել մեր Post մոդելը: Հիշեք, որ վեբ սերվերը գործարկելու համար վահանակում գործարկեք ` python manage.py runserver `: Գնացեք ձեր դիտարկիչում և մուտքագրեք http://127.0.0.1:8000/admin/ հասցեն: Դուք կտեսնեք մուտքի նման էջ.
 
 ![Login page](images/login_page2.png)
 
-To log in, you need to create a *superuser* - a user account that has control over everything on the site. Go back to the command line, type `python manage.py createsuperuser`, and press enter.
+Մուտք գործելու համար հարկավոր է ստեղծել *superuser* ՝ օգտվողի հաշիվ, որը վերահսկում է կայքի ցանկացած կետը: Վերադարձեք հրամանի տող, մուտքագրեք `python manage.py createsuperuse ` և սեղմեք Enter:
 
-> Remember, to write new commands while the web server is running, open a new terminal window and activate your virtualenv. We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
+> Հիշեք ՝ վեբ սերվերի գործարկման ընթացքում նոր հրամաններ գրելու համար բացեք նոր տերմինալային պատուհան և ակտիվացրեք ձեր վիրտուալները: Մենք վերանայեցինք, թե ինչպես գրել նոր հրամաններ ** Ձեր առաջին Django նախագիծը ** գլուխը, ** Սկսելով վեբ սերվերը ** բաժնում:
 
 {% filename %}Mac OS X or Linux:{% endfilename %}
 
@@ -33,7 +33,7 @@ To log in, you need to create a *superuser* - a user account that has control ov
     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
     
 
-When prompted, type your username (lowercase, no spaces), email address, and password. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
+Երբ ձեզ հուշում են, մուտքագրեք ձեր օգտվողի անունը (փոքրատառ, բացատներ չկան), էլ. Փոստի հասցեն և գաղտնաբառը: ** Մի անհանգստացեք, որ չեք կարող տեսնել ձեր մուտքագրած գաղտնաբառը, այդպես էլ պետք է լիներ ** Մուտքագրեք այն և սեղմեք ` մուտքագրեք ` շարունակելու համար: Արդյունքը պետք է ունենա այսպիսի տեսք (որտեղ օգտագործողի անունը և էլ. Փոստը պետք է լինեն ձեր սեփականը).
 
     Username: ola
     Email address: ola@example.com
@@ -42,13 +42,13 @@ When prompted, type your username (lowercase, no spaces), email address, and pas
     Superuser created successfully.
     
 
-Return to your browser. Log in with the superuser's credentials you chose; you should see the Django admin dashboard.
+Վերադարձեք ձեր զննարկիչը: Մուտք գործեք գերադասի հավատարմագրերի միջոցով, որը դուք ընտրել եք: դուք պետք է տեսնեք Django ադմինիստրատորի վահանակը:
 
 ![Django admin](images/django_admin3.png)
 
-Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content –- it's only visible to you on your local computer -- you can copy-paste some text from this tutorial to save time. :)
+Գնացեք Գրառումներ/ Posts և մի փոքր փորձեք դրանով: Ավելացրեք հինգ կամ վեց բլոգային հաղորդագրություններ: Մի անհանգստացեք բովանդակության համար .- դա ձեզ տեսանելի է միայն ձեր տեղական համակարգչում. Ժամանակ խնայելու համար կարող եք այս ձեռնարկից որոշ տեքստ պատճենահանել: :)
 
-Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
+Համոզվեք, որ առնվազն երկու կամ երեք գրառում (բայց ոչ բոլորը) սահմանված են հրապարակման ամսաթվով: Հետագայում օգտակար կլինի:
 
 ![Django admin](images/edit_post3.png)
 
