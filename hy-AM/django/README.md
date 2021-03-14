@@ -1,6 +1,6 @@
-# What is Django?
+# Ի՞նչ է Django- ն:
 
-Django (/ˈdʒæŋɡoʊ/ *jang-goh*) is a free and open source web application framework, written in Python. A web framework is a set of components that helps you to develop websites faster and easier.
+Django (/ ˈdʒæŋɡoʊ / * jang-goh *) ազատ և բաց կոդով վեբ հավելվածների շրջանակ է, որը գրված է Python- ում: Վեբ շրջանակը բաղկացուցիչ մաս է կազմում, որն օգնում է ձեզ կայքերն ավելի արագ և հեշտ զարգացնել:
 
 When you're building a website, you always need a similar set of components: a way to handle user authentication (signing up, signing in, signing out), a management panel for your website, forms, a way to upload files, etc.
 
