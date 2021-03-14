@@ -2,13 +2,13 @@
 
 Django (/ ˈdʒæŋɡoʊ / * jang-goh *) ազատ և բաց կոդով վեբ հավելվածների շրջանակ է, որը գրված է Python- ում: Վեբ շրջանակը բաղկացուցիչ մաս է կազմում, որն օգնում է ձեզ կայքերն ավելի արագ և հեշտ զարգացնել:
 
-When you're building a website, you always need a similar set of components: a way to handle user authentication (signing up, signing in, signing out), a management panel for your website, forms, a way to upload files, etc.
+Երբ կայք եք կառուցում, ձեզ միշտ անհրաժեշտ է բաղադրիչների նմանատիպ շարք. Օգտագործողի վավերացումը կարգավորելու միջոց (գրանցվել, մուտք գործել, դուրս գալ), ձեր կայքի կառավարման վահանակ, ձևաթղթեր, ֆայլեր վերբեռնելու միջոց և այլն:
 
-Luckily for you, other people long ago noticed that web developers face similar problems when building a new site, so they teamed up and created frameworks (Django being one of them) that give you ready-made components to use.
+Բարեբախտաբար ձեզ համար, այլ մարդիկ վաղուց էին նկատել, որ վեբ մշակողները նման խնդիրներ են ունենում նոր կայք կառուցելիս, այնպես որ նրանք միավորվել և ստեղծել են շրջանակներ (դրանցից մեկը Django- ն է), որոնք ձեզ տալիս են պատրաստի բաղադրիչներ օգտագործման համար:
 
-Frameworks exist to save you from having to reinvent the wheel and to help alleviate some of the overhead when you’re building a new site.
+Շրջանակները (Frameworks) գոյություն ունեն, որպեսզի փրկեն ձեզ անիվը նորից գյուտելուց և օգնելու թեթեւացնել որոշ վերերկրյա գումարներ, երբ նոր կայք եք կառուցում:
 
-## Why do you need a framework?
+## Ինչու՞ է ձեզ անհրաժեշտ շրջանակ:
 
 To understand what Django is actually for, we need to take a closer look at the servers. The first thing is that the server needs to know that you want it to serve you a web page.
 
