@@ -17,7 +17,7 @@ admin.site.register(Post)
 
 Լավ, ժամանակն է նայել մեր Post մոդելը: Հիշեք, որ վեբ սերվերը գործարկելու համար վահանակում գործարկեք ` python manage.py runserver `: Գնացեք ձեր դիտարկիչում և մուտքագրեք http://127.0.0.1:8000/admin/ հասցեն: Դուք կտեսնեք մուտքի նման էջ.
 
-![Login page](images/login_page2.png)
+![Մուտք էջ](images/login_page2.png)
 
 Մուտք գործելու համար հարկավոր է ստեղծել *superuser* ՝ օգտվողի հաշիվ, որը վերահսկում է կայքի ցանկացած կետը: Վերադարձեք հրամանի տող, մուտքագրեք `python manage.py createsuperuse ` և սեղմեք Enter:
 
@@ -44,14 +44,14 @@ admin.site.register(Post)
 
 Վերադարձեք ձեր զննարկիչը: Մուտք գործեք գերադասի հավատարմագրերի միջոցով, որը դուք ընտրել եք: դուք պետք է տեսնեք Django ադմինիստրատորի վահանակը:
 
-![Django admin](images/django_admin3.png)
+![Django ադմին](images/django_admin3.png)
 
 Գնացեք Գրառումներ/ Posts և մի փոքր փորձեք դրանով: Ավելացրեք հինգ կամ վեց բլոգային հաղորդագրություններ: Մի անհանգստացեք բովանդակության համար .- դա ձեզ տեսանելի է միայն ձեր տեղական համակարգչում. Ժամանակ խնայելու համար կարող եք այս ձեռնարկից որոշ տեքստ պատճենահանել: :)
 
 Համոզվեք, որ առնվազն երկու կամ երեք գրառում (բայց ոչ բոլորը) սահմանված են հրապարակման ամսաթվով: Հետագայում օգտակար կլինի:
 
-![Django admin](images/edit_post3.png)
+![Django ադմին](images/edit_post3.png)
 
-If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/2.2/ref/contrib/admin/
+Եթե ​​ցանկանում եք ավելին իմանալ Django- ի ադմինիստրատորի մասին, ապա պետք է ստուգեք Django- ի փաստաթղթերը. https://docs.djangoproject.com/en/2.2/ref/contrib/admin/
 
-This is probably a good moment to grab a coffee (or tea) or something to eat to re-energize yourself. You created your first Django model – you deserve a little break!
+Հավանաբար, սա լավ պահ է սուրճ (կամ թեյ) կամ ուտելու ինչ-որ բան վերցնելու համար `ձեզ նորից էներգիա հաղորդելու համար: Դուք ստեղծեցիք ձեր առաջին Django մոդելը. Դուք արժանի եք մի փոքր ընդմիջման:
