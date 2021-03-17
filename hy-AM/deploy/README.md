@@ -134,7 +134,7 @@ Git- ը հետևում է ֆայլերի որոշակի հավաքածուի փ�
 >     $ git push -u origin master
 >     
 > 
-> When you push to GitHub, you'll be asked for your GitHub username and password (either right there in the command-line window or in a pop-up window), and after entering credentials you should see something like this:
+> GitHub մուտք գործելուց հետո ձեզանից կպահանջվի ձեր GitHub օգտվողի անունն ու գաղտնաբառը (կա՛մ հենց այնտեղ ՝ հրամանի տողի պատուհանում, կա՛մ ելնող պատուհանում), և հավատարմագրերը մուտքագրելուց հետո պետք է հայտնվի նման մի բան.
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -149,7 +149,7 @@ Git- ը հետևում է ֆայլերի որոշակի հավաքածուի փ�
 > 
 > <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 > 
-> Your code is now on GitHub. Go and check it out! You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
+> Ձեր ծածկագիրն այժմ GitHub- ում է: Գնացեք կայք և ստուգեք այն: You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
 > 
 > # Setting up our blog on PythonAnywhere
 > 
