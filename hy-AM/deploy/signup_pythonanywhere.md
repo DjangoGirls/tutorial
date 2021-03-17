@@ -4,16 +4,16 @@ PythonAnyway- ը ծառայություն է Python կոդի «ամպի մեջ»
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
-![The PythonAnywhere signup page showing button to create a free 'Beginner' account](../deploy/images/pythonanywhere_beginner_account_button.png)
+![PythonAnywhere գրանցման էջում կա 'Beginner' (Սկսնակ) անվճար հաշիվ ստեղծելու կոճակ](../deploy/images/pythonanywhere_beginner_account_button.png)
 
-> **Նշում** . Օգտանուն ընտրելիս հիշեք, որ բլոգի URL-ը կունենա այսպիսի տեսք `yourusername.pythonanywhere.com`, այնպես որ ընտրեք կամ ձեր սեփական մականունը կամ բլոգի թեմային վերաբերող անուն: Also, be sure to remember your password (add it to your password manager, if you use one).
+> **Նշում** . Օգտանուն ընտրելիս հիշեք, որ բլոգի URL-ը կունենա այսպիսի տեսք `yourusername.pythonanywhere.com`, այնպես որ ընտրեք կամ ձեր սեփական մականունը կամ բլոգի թեմային վերաբերող անուն: Նաև համոզվեք, որ կհիշեք ձեր գաղտնաբառը (ավելացրեք այն ձեր գաղտնաբառերի կառավարչին,եթե նման բան օգտագործում եք):
 
-## Creating a PythonAnywhere API token
+## PythonAnywhere- ում API token-ի (նշանի) ստեղծում
 
-This is something you only need to do once. When you've signed up for PythonAnywhere, you'll be taken to your dashboard. Find the link near the top right to your "Account" page:
+Սա մի բան է, որը դուք պետք է անեք միայն մեկ անգամ: Երբ գրանցվեք PythonAnywhere- ում, ձեզ կտեղափոխեն կառավարման վահանակ (dashboard): Գտեք ձեր "Account" (հաշիվ) էջի վերևի աջ մասի հղումը ՝
 
-![Account link on the top right on the page](../deploy/images/pythonanywhere_account.png)
+![Հաշվի հղումը գտնվում է էջի վերևի աջ հատվածում](../deploy/images/pythonanywhere_account.png)
 
-then select the tab named "API token", and hit the button that says "Create new API token".
+ապա ընտրեք "API token" անունով ներդիրը և սեղմեք "Create new API token". (ստեղծել նոր API նշան) կոճակը:
 
-![The API token tab on the Account page](../deploy/images/pythonanywhere_create_api_token.png)
+![API token (API նշանի) ներդիրը Account page-ում (հաշվի էջում)](../deploy/images/pythonanywhere_create_api_token.png)
