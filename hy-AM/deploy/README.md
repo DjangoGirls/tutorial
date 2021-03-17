@@ -1,8 +1,8 @@
 # Հրապարակում
 
-> **Նշում** Հաջորդ գլուխը, որոշ դեպքերում կարող է մի փոքր դժվար թվալ: Եղեք համառ և ավարտին հասցրեք այն, սերվերային կայքի տեղադրումը վեբ մշակման կարևոր մասն է: This chapter is placed in the middle of the tutorial so that your mentor can help with the slightly trickier process of getting your website online. This means you can still finish the tutorial on your own if you run out of time.
+> **Նշում** Հաջորդ գլուխը, որոշ դեպքերում կարող է մի փոքր դժվար թվալ: Եղեք համառ և ավարտին հասցրեք այն, սերվերային կայքի տեղադրումը վեբ մշակման կարևոր մասն է: Այս գլուխը միտումնավոր տեղադրված է ձեռնարկի մեջտեղում, որպեսզի ձեր ուսուցիչը կարողանա օգնել ձեզ կայք թողարկելու բարդ գործընթացում: Այս կերպ Դուք կարող եք ինքնուրույն լրացնել բոլոր գլուխները, նույնիսկ եթե ժամանակը սուղ է:
 
-Until now, your website was only available on your computer. Now you will learn how to deploy it! Deploying is the process of publishing your application on the Internet so people can finally go and see your app. :)
+Մինչ այժմ ձեր կայքը հասանելի էր միայն ձեր համակարգչում: Այժմ դուք կսովորեք, թե ինչպես «տեղակայել/շահագործման հանձնել» ձեր կայքը: Տեղակայումը ձեր ծրագիրը ինտերնետում հրապարակելու գործընթացն է, որպեսզի մարդիկ վերջապես տեսնեն ձեր ստեղծած աշխատանքը: :)
 
 As you learned, a website has to be located on a server. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
 
