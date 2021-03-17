@@ -155,7 +155,7 @@ Git- ը հետևում է ֆայլերի որոշակի հավաքածուի փ�
 > 
 > ## Գրանցվեք PythonAnywhere հաշվում
 > 
-> > **Note** You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
+> > **Նշում** Եթե ավելի վաղ դուք արդեն գրանցվել եք PythonAnywhere հաշվում, ապա կարիգ չկա այն կրկնել:
 > 
 > {% include "/deploy/signup_pythonanywhere.md" %}
 > 
