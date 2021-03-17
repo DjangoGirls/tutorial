@@ -282,7 +282,7 @@ h4 {
 }
 ```
 
-Then surround the HTML code which displays the posts with declarations of classes. Replace this:
+Հետո, փոփոխեք հաղորդագրությունները ցուցադրող HTML կոդը: Փոխարինեք սարանով ՝
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
