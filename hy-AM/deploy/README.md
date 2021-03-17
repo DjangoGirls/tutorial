@@ -20,7 +20,7 @@
 
 Git- ը հետևում է ֆայլերի որոշակի հավաքածուի փոփոխությանը, որը կոչվում է պահոց (կրճատ ՝ «repo»): Եկեք ստեղծենք մեկը մեր նախագծի համար: Բացեք վահանակ և գործարկեք այս հրամանները `djangogirls` գրացուցակում.
 
-> ** Նշում </ 0> Նախքան պահեստի նախնականացումը սկսեք, ստուգեք ձեր ընթացիկ աշխատանքային գրացուցակը `օգտագործելով `pwd` (Mac OS X/Linux) կամ `cd` (Windows) հրամաններ: You should be in the `djangogirls` folder.</p> </blockquote> 
+> ** Նշում </ 0> Նախքան պահեստի նախնականացումը սկսեք, ստուգեք ձեր ընթացիկ աշխատանքային գրացուցակը `օգտագործելով `pwd` (Mac OS X/Linux) կամ `cd` (Windows) հրամաններ: Դուք պետք է լինեք ` djangogirls ` պանակում (folder):</p> </blockquote> 
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -30,7 +30,7 @@ Git- ը հետևում է ֆայլերի որոշակի հավաքածուի փ�
 >     $ git config --global user.email you@example.com
 >     
 > 
-> Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email ever again).
+> Յուրաքանչյուր նախագծի համար անհրաժեշտ է նախաձևակերպել git պահոցը (git repository)միայն մեկ անգամ (և այլևս ստիպված չեք լինի կրկին մուտքագրել ձեր` օգտվողի անունն ու էլ. Փոստի հասցեն):
 > 
 > Git will track changes to all the files and folders in this directory, but there are some files we want it to ignore. We do this by creating a file called `.gitignore` in the base directory. Open up your editor and create a new file with the following contents:
 > 
