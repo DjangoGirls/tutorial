@@ -4,11 +4,11 @@
 
 Մինչ այժմ ձեր կայքը հասանելի էր միայն ձեր համակարգչում: Այժմ դուք կսովորեք, թե ինչպես «տեղակայել/շահագործման հանձնել» ձեր կայքը: Տեղակայումը ձեր ծրագիրը ինտերնետում հրապարակելու գործընթացն է, որպեսզի մարդիկ վերջապես տեսնեն ձեր ստեղծած աշխատանքը: :)
 
-As you learned, a website has to be located on a server. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
+Ինչպես արդեն գիտեք, կայքը պետք է տեղակայված լինի սերվերի վրա: Ինտերնետում կան շատ սերվերների մատակարարներ, մենք կօգտագործենք [PythonAnywhere](https://www.pythonanywhere.com/) - ը: PythonAnywhere- ն անվճար է փոքր ծրագրերի համար, որոնք ունեն փոքր թվով այցելուներ, ինչը մեզ համար ավելի քան բավարար է:
 
-The other external service we'll be using is [GitHub](https://www.github.com), which is a code hosting service. There are others out there, but almost all programmers have a GitHub account these days, and now so will you!
+Մյուս արտաքին ծառայությունը, որը մենք կօգտագործենք, [ GitHub ](https://www.github.com) է, որը ծածկագրերի հոսթինգի (hosting-սպասարկման) ծառայություն է: Կան նաև այլ նմանատիպ ծառայություններ, բայց այսօր գրեթե յուրաքանչյուր ծրագրավորող ունի GitHub հաշիվ, և հիմա դուք նույնպես::
 
-These three places will be important to you. Your local computer will be the place where you do development and testing. When you're happy with the changes, you will place a copy of your program on GitHub. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
+Այս երեք տեղերը ձեզ համար կարևոր կլինեն: Ձեր տեղական համակարգիչը կլինի այն վայրը, որտեղ դուք կկատարեք մշակում և փորձարկում: When you're happy with the changes, you will place a copy of your program on GitHub. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
 
 # Git
 
