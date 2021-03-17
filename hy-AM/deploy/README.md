@@ -112,9 +112,9 @@ Git- ը հետևում է ֆայլերի որոշակի հավաքածուի փ�
 > 
 > ## Հրապարակեք ձեր կոդը GitHub- ում
 > 
-> Անցեք [GitHub.com](https://www.github.com) կայք և գրանցվեք նոր անվճար օգտվողի հաշվի համար: (If you already did that in the workshop prep, that is great!) Be sure to remember your password (add it to your password manager, if you use one).
+> Անցեք [GitHub.com](https://www.github.com) կայք և գրանցվեք նոր անվճար օգտվողի հաշվի համար: (Եթե դա արդեն արել եք սեմինարի նախապատրաստական ​​փուլում, հիանալի է): Համոզվեք, որ հիշում եք ձեր գաղտնաբառը (ավելացրեք այն գաղտնաբառերի կառավարչին (password manager), եթե այն օգտագործում եք):
 > 
-> Then, create a new repository, giving it the name "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+> Հաջորդը, ստեղծեք նոր պահեստ ` "my-first-blog" (իմ առաջին բլոգը) անունով: Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
 > 
 > ![](images/new_github_repo.png)
 > 
