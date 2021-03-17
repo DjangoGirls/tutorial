@@ -8,15 +8,15 @@
 
 Մյուս արտաքին ծառայությունը, որը մենք կօգտագործենք, [ GitHub ](https://www.github.com) է, որը ծածկագրերի հոսթինգի (hosting-սպասարկման) ծառայություն է: Կան նաև այլ նմանատիպ ծառայություններ, բայց այսօր գրեթե յուրաքանչյուր ծրագրավորող ունի GitHub հաշիվ, և հիմա դուք նույնպես::
 
-Այս երեք տեղերը ձեզ համար կարևոր կլինեն: Ձեր տեղական համակարգիչը կլինի այն վայրը, որտեղ դուք կկատարեք մշակում և փորձարկում: When you're happy with the changes, you will place a copy of your program on GitHub. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
+Այս երեք տեղերը ձեզ համար կարևոր կլինեն: Ձեր տեղական համակարգիչը կլինի այն վայրը, որտեղ դուք կկատարեք մշակում և փորձարկում: Երբ գոհ լինեք փոփոխություններից, ձեր ծրագրի պատճենը կտեղադրեք GitHub- ում: Ձեր կայքը կլինի PythonAnywhere- ում, և դուք այն կթարմացնեք ՝ GitHub-ից ձեր կոդի նոր օրինակը ստանալու միջոցով:
 
 # Git
 
-> **Note** If you already did the [installation steps](../installation/README.md), there's no need to do this again – you can skip to the next section and start creating your Git repository.
+> ** Նշում ** Եթե դուք արդեն կատարել եք [installation steps](../installation/README.md), (տեղադրման քայլերը), ապա դա նորից անելու անհրաժեշտություն չկա. Կարող եք անցնել հաջորդ բաժին և սկսել ստեղծել ձեր Git պահոցը:
 
 {% include "/deploy/install_git.md" %}
 
-## Starting our Git repository
+## Ստեղծեք մեր Git պահոցը:
 
 Git tracks changes to a particular set of files in what's called a code repository (or "repo" for short). Let's start one for our project. Open up your console and run these commands, in the `djangogirls` directory:
 
