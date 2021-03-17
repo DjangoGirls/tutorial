@@ -151,9 +151,9 @@ Git- ը հետևում է ֆայլերի որոշակի հավաքածուի փ�
 > 
 > Ձեր ծածկագիրն այժմ GitHub- ում է: Գնացեք կայք և ստուգեք այն: Այն կարող եք գտնել հիանալի ընկերություններում ինչպիսիք են՝ [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), և շատ այլ բաց կոդով ծրագրեր GitHub- ում: :)
 > 
-> # Setting up our blog on PythonAnywhere
+> # PythonAnywhere- ում մեր բլոգի տեղադրումը
 > 
-> ## Sign up for a PythonAnywhere account
+> ## Գրանցվեք PythonAnywhere հաշվում
 > 
 > > **Note** You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
 > 
