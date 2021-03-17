@@ -32,7 +32,7 @@ Git- ը հետևում է ֆայլերի որոշակի հավաքածուի փ�
 > 
 > Յուրաքանչյուր նախագծի համար անհրաժեշտ է նախաձևակերպել git պահոցը (git repository)միայն մեկ անգամ (և այլևս ստիպված չեք լինի կրկին մուտքագրել ձեր` օգտվողի անունն ու էլ. Փոստի հասցեն):
 > 
-> Git will track changes to all the files and folders in this directory, but there are some files we want it to ignore. We do this by creating a file called `.gitignore` in the base directory. Open up your editor and create a new file with the following contents:
+> Git- ը հետևելու է տվյալ գրացուցակի բոլոր ֆայլերի և գրացուցակների փոփոխություններին, սակայն մենք գերադասում ենք անտեսել դրանցից մի քանիսը: Դա անելու համար մենք պետք է պահեստի բազային գրացուցակում ստեղծենք ` .gitignore ` կոչվող ֆայլ: Բացեք ձեր խմբագիրը և ստեղծեք նոր ֆայլ հետևյալ բովանդակությամբ.
 > 
 > {% filename %}.gitignore{% endfilename %}
 > 
@@ -70,9 +70,9 @@ Git- ը հետևում է ֆայլերի որոշակի հավաքածուի փ�
 >     *.code-workspace
 >     
 > 
-> And save it as `.gitignore` in the "djangogirls" folder.
+> Եվ այն պահպանեք որպես ` .gitignore ` "djangogirls" արմատային գրացուցակում:
 > 
-> > **Note** The dot at the beginning of the file name is important! If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof. And be sure not to add `.txt`, `.py`, or any other extension to the file name -- it will only be recognized by Git if the name is just `.gitignore`. Linux and MacOS treat files with a name that starts with `.` (such as `.gitignore`) as hidden and the normal `ls` command won't show these files. Instead use `ls -a` to see the `.gitignore` file.
+> > ** Նշում ** Ֆայլի անվան սկզբում գտնվող կետը կարևոր է: If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof. And be sure not to add `.txt`, `.py`, or any other extension to the file name -- it will only be recognized by Git if the name is just `.gitignore`. Linux and MacOS treat files with a name that starts with `.` (such as `.gitignore`) as hidden and the normal `ls` command won't show these files. Instead use `ls -a` to see the `.gitignore` file.
 > > 
 > > **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. That file is your local database, where all of your users and posts are stored. We'll follow standard web programming practice, meaning that we'll use separate databases for your local testing site and your live website on PythonAnywhere. The PythonAnywhere database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts and superuser you created so far are going to only be available locally, and you'll have to create new ones on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
 > 
