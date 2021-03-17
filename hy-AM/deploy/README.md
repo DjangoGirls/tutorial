@@ -149,7 +149,7 @@ Git- ը հետևում է ֆայլերի որոշակի հավաքածուի փ�
 > 
 > <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 > 
-> Ձեր ծածկագիրն այժմ GitHub- ում է: Գնացեք կայք և ստուգեք այն: You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
+> Ձեր ծածկագիրն այժմ GitHub- ում է: Գնացեք կայք և ստուգեք այն: Այն կարող եք գտնել հիանալի ընկերություններում ինչպիսիք են՝ [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), և շատ այլ բաց կոդով ծրագրեր GitHub- ում: :)
 > 
 > # Setting up our blog on PythonAnywhere
 > 
