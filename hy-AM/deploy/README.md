@@ -114,11 +114,11 @@ Git- ը հետևում է ֆայլերի որոշակի հավաքածուի փ�
 > 
 > Անցեք [GitHub.com](https://www.github.com) կայք և գրանցվեք նոր անվճար օգտվողի հաշվի համար: (Եթե դա արդեն արել եք սեմինարի նախապատրաստական ​​փուլում, հիանալի է): Համոզվեք, որ հիշում եք ձեր գաղտնաբառը (ավելացրեք այն գաղտնաբառերի կառավարչին (password manager), եթե այն օգտագործում եք):
 > 
-> Հաջորդը, ստեղծեք նոր պահեստ ` "my-first-blog" (իմ առաջին բլոգը) անունով: Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+> Հաջորդը, ստեղծեք նոր պահեստ ` "my-first-blog" (իմ առաջին բլոգը) անունով: "initialize with a README" վանդակը պետք չէ ընտրել, բաց թողեք .gitignore- ը (այս ֆայլը ձեռքով կստեղծենք) և թողեք License որպես None:
 > 
 > ![](images/new_github_repo.png)
 > 
-> > **Note** The name `my-first-blog` is important – you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. It's probably easier to stick with the name `my-first-blog`.
+> > **Նշում** . `my-first-blog` (իմ առաջին բլոգ) պահեստի անվանումը շատ կարևոր է: Իհարկե կարող եք այլ անվանումով հանդես գալ, բայց այն բազմիցս հանդիպում է հրահանգներում, և ամեն անգամ ստիպված կլինեք փոխել այն ձեր սեփականով: It's probably easier to stick with the name `my-first-blog`.
 > 
 > On the next screen, you'll be shown your repo's clone URL, which you will use in some of the commands that follow:
 > 
