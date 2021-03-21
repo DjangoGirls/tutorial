@@ -174,9 +174,9 @@ Git- ը հետևում է ֆայլերի որոշակի հավաքածուի փ�
 >     $ pip3.8 install --user pythonanywhere
 >     
 > 
-> That should print out some things like `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
+> Վահանակը պետք է տպի նման մի բան, ինչպիսին է `Collecting pythonanywhere` և վերջում `Successfully installed (...) pythonanywhere- (...)`.
 > 
-> Now we run the helper to automatically configure our app from GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
+> Այժմ մենք գործարկում ենք օգնականին ՝ GitHub-ից մեր հավելվածը ավտոմատ կերպով կարգավորելու համար: Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
 > 
 > {% filename %}PythonAnywhere command-line{% endfilename %}
 > 
