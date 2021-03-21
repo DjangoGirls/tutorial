@@ -201,9 +201,9 @@ Git- ը հետևում է ֆայլերի որոշակի հավաքածուի փ�
 >     (ola.pythonanywhere.com) $ python manage.py createsuperuser
 >     
 > 
-> Type in the details for your admin user. Best to use the same ones as you're using on your own computer to avoid any confusion, unless you want to make the password on PythonAnywhere more secure.
+> Մուտքագրեք ադմինիստրատորի հաշվի (admin user) տեղեկատվությունը: Քանի դեռ չեք ցանկանում ձեր PythonAnywhere գաղտնաբառն ավելի ապահով դարձնել, ցանկալի է օգտագործել ձեր համակարգչում օգտագործածները, որպեսզի խառնաշփոթ չլինի, 
 > 
-> Now, if you like, you can also take a look at your code on PythonAnywhere using `ls`:
+> Այժմ, եթե ցանկանում եք, կարող եք նաև հայացք նետել ձեր կոդին PythonAnywhere- ում ՝ օգտագործելով `ls`:
 > 
 > {% filename %}PythonAnywhere command-line{% endfilename %}
 > 
