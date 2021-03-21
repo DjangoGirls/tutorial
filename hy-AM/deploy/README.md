@@ -167,7 +167,7 @@ Git- ը հետևում է ֆայլերի որոշակի հավաքածուի փ�
 > 
 > > **Հղում** PythonAnywhere- ը հիմնված է Linux- ի վրա, այնպես որ, եթե դուք օգտագործում եք Windows, ապա console-ը (վահանակը) մի փոքր այլ տեսք կունենա ձեր համակարգչի վրա:
 > 
-> Deploying a web app on PythonAnywhere involves pulling down your code from GitHub, and then configuring PythonAnywhere to recognise it and start serving it as a web application. There are manual ways of doing it, but PythonAnywhere provides a helper tool that will do it all for you. Let's install it first:
+> PythonAnywhere- ում վեբ հավելվածի տեղադրումը ենթադրում է GitHub- ից ձեր կոդի բեռնումը և PythonAnywhere-ի կարգավորումը `որպեսզի այն ճանաչի և գործարկի որպես վեբ ծրագիր: Դա ձեռքով անելու եղանակներ կան, բայց PythonAnywhere- ը տրամադրում է օգնող գործիք, որն ամեն ինչ կանի ձեր փոխարեն: Եկեք նախ տեղադրենք այն.
 > 
 > {% filename %}PythonAnywhere command-line{% endfilename %}
 > 
