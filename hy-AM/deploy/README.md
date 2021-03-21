@@ -176,16 +176,16 @@ Git- ը հետևում է ֆայլերի որոշակի հավաքածուի փ�
 > 
 > Վահանակը պետք է տպի նման մի բան, ինչպիսին է `Collecting pythonanywhere` և վերջում `Successfully installed (...) pythonanywhere- (...)`.
 > 
-> Այժմ մենք գործարկում ենք օգնականին ՝ GitHub-ից մեր հավելվածը ավտոմատ կերպով կարգավորելու համար: Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
+> Այժմ մենք գործարկում ենք օգնականին ՝ GitHub-ից մեր հավելվածը ավտոմատ կերպով կարգավորելու համար: PythonAnyplace- ի վահանակի մեջ մուտքագրեք հետևյալ հրահանգը (մի մոռացեք օգտագործել ձեր GitHub օգտվողի անունը `<your-github-username>` -ի փոխարեն, որպեսզի URL- ը համապատասխանի GitHub-ի կլոնավորված URL- ին):
 > 
 > {% filename %}PythonAnywhere command-line{% endfilename %}
 > 
 >     $ pa_autoconfigure_django.py --python=3.8 https://github.com/<your-github-username>/my-first-blog.git
 >     
 > 
-> As you watch that running, you'll be able to see what it's doing:
+> Երբ տեսնեք, թե ինչպես է այն աշխատում, կարող եք հասկանալ, թե կոնկրետ ինչ է այն անում.
 > 
-> - Downloading your code from GitHub
+> - Ներբեռնեք ձեր կոդը GitHub- ից
 > - Creating a virtualenv on PythonAnywhere, just like the one on your own computer
 > - Updating your settings file with some deployment settings
 > - Setting up a database on PythonAnywhere using the `manage.py migrate` command
