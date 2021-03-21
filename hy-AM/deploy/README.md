@@ -161,7 +161,7 @@ Git- ը հետևում է ֆայլերի որոշակի հավաքածուի փ�
 > 
 > ## Մեր կայքի տեղադրումը PythonAnywhere- ում
 > 
-> Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer.
+> Վերադարձեք [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) հիմնական ընտրացանկ ՝ կտտացնելով պատկերանշանին և ընտրեք "Bash" վահանակը գործարկելու տարբերակը. Սա PythonAnywhere մխիթարիչի տարբերակն է, ինչպես ձեր համակարգչում:
 > 
 > ![The 'New Console' section on the PythonAnywhere web interface, with a button for 'bash'](images/pythonanywhere_bash_console.png)
 > 
