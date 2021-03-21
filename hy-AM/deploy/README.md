@@ -186,11 +186,11 @@ Git- ը հետևում է ֆայլերի որոշակի հավաքածուի փ�
 > Երբ տեսնեք, թե ինչպես է այն աշխատում, կարող եք հասկանալ, թե կոնկրետ ինչ է այն անում.
 > 
 > - Ներբեռնեք ձեր կոդը GitHub- ից
-> - Creating a virtualenv on PythonAnywhere, just like the one on your own computer
-> - Updating your settings file with some deployment settings
-> - Setting up a database on PythonAnywhere using the `manage.py migrate` command
-> - Setting up your static files (we'll learn about these later)
-> - And configuring PythonAnywhere to serve your web app via its API
+> - Virtualenv-ի ստեղծումը PythonAnyplace- ում `ճիշտ այնպես, ինչպես ձեր համակարգչում է
+> - Թարմացրեք ձեր settings file-ը (կարգավորումների ֆայլը) տեղակայման որոշ կարգավորումներում (deployment settings)
+> - Ստեղծեք տվյալների բազա PythonAnywhere-ում ՝ օգտագործելով այս `manage.py migrate` հրամանը
+> - Ձեր ստատիկ ֆայլերի (static files) կարգավորում (դրանց մասին մենք կիմանանք ավելի ուշ)
+> - Եվ կարգավորեք PythonAnywhere- ը `ձեր վեբ հավելվածը API- ի միջոցով սպասարկելու համար
 > 
 > On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider.
 > 
