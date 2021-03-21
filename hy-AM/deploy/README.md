@@ -228,8 +228,8 @@ Git- ը հետևում է ֆայլերի որոշակի հավաքածուի փ�
 > 
 > - PythonAnywhere API նշան բանալի չի ստեղծվել ՝ մուտքն ապահովելու համար:
 > - GitHub պահոցի URL- ում սխալ է տեղի ունեցել
-> - If you see an error saying *"Could not find your settings.py"*, it's probably because you didn't manage to add all your files to Git, and/or you didn't push them up to GitHub successfully. Have another look at the Git section above
-> - If you previously signed up for a PythonAnywhere account and had an error with collectstatic, you probably have an older version of SQLite (eg 3.8.2) for your account. In that case, sign up for a new account and try the commands in the PythonAnywhere section above.
+> - Եթե ​​տեսնում եք սխալ *"Could not find your settings.py"* (Չկարողացա գտնել ձեր settings.py) հետևյալ բովանդակությամբ, դա հավանաբար այն պատճառով է, որ դուք ի վիճակի չէիք ձեր բոլոր ֆայլերը ավելացնել Git- ին և / կամ դրանք հաջողությամբ չկարողացաք բեռնել GitHub- ում: Եվս մեկ անգամ նայեք վերևում գտնվող Git հատվածին և ստուգեք հրահանգները:
+> - Եթե ​​նախկինում գրանցվել եք PythonAnywhere հաշվում և ունեցել եք ստատիկ սխալ, ապա, հավանաբար, ձեր հաշվի համար ունեք SQLite- ի հին տարբերակ (օրինակ ՝ 3.8.2): Այս դեպքում մուտք գործեք նոր հաշիվ և փորձեք վերևում գտնվող PythonAnywhere բաժնի հրահանգները:
 > 
 > If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere ["Web" page](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
 > 
