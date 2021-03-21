@@ -214,13 +214,13 @@ Git- ը հետևում է ֆայլերի որոշակի հավաքածուի փ�
 >     tests.py  views.py
 >     
 > 
-> You can also go to the "Files" page and navigate around using PythonAnywhere's built-in file browser. (From the Console page, you can get to other PythonAnywhere pages from the menu button in the upper right corner. Once you're on one of the pages, there are links to the other ones near the top.)
+> Կարող եք նաև մտնել "Files" («Ֆայլեր») ներդիր էջ և շրջել ՝ օգտագործելով PythonAnywhere- ի ներկառուցված ֆայլերի զննիչը (built-in file browser): (Վահանակի էջից վերևի աջ անկյունում գտնվող ցանկի կոճակից կարող եք անցնել PythonAnywhere- ի այլ էջեր: Էջերից մեկում հայտնվելուց հետո, վերին մասում այլ էջերի հղումներ կան:)
 > 
-> ## You are now live!
+> ## Դու օնլայն եք:
 > 
-> Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want. :)
+> Ձեր կայքը այժմ հանրային ինտերնետում է: Անցեք PythonAnywhere- ի "Web" ներդիրին `ձեր կայքի հղումը ( link-ը) ստանալու համար: Կարող եք այն կիսել յուրաքանչյուրի հետ, ում ցանկանում եք: :)
 > 
-> > **Note** This is a beginners' tutorial, and in deploying this site we've taken a few shortcuts which aren't ideal from a security point of view. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) for some tips on securing your site.
+> > **Նշում** Սա սկսնակների ձեռնարկ է, և մենք կայքը տեղակայելիս օգտագործել ենք մի քանի հնարքներ, որոնք անվտանգության տեսանկյունից իդեալական չեն: If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) for some tips on securing your site.
 > 
 > ## Debugging tips
 > 
