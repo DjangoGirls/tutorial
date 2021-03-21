@@ -226,8 +226,8 @@ Git- ը հետևում է ֆայլերի որոշակի հավաքածուի փ�
 > 
 > Ահա մի քանի ընդհանուր պատճառներ, եթե ​​ `pa_autoconfigure_django.py` սկրիպտը գործարկելիս սխալ եք տեսնում
 > 
-> - Forgetting to create your PythonAnywhere API token.
-> - Making a mistake in your GitHub URL
+> - PythonAnywhere API նշան բանալի չի ստեղծվել ՝ մուտքն ապահովելու համար:
+> - GitHub պահոցի URL- ում սխալ է տեղի ունեցել
 > - If you see an error saying *"Could not find your settings.py"*, it's probably because you didn't manage to add all your files to Git, and/or you didn't push them up to GitHub successfully. Have another look at the Git section above
 > - If you previously signed up for a PythonAnywhere account and had an error with collectstatic, you probably have an older version of SQLite (eg 3.8.2) for your account. In that case, sign up for a new account and try the commands in the PythonAnywhere section above.
 > 
