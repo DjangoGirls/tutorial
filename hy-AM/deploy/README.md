@@ -192,9 +192,9 @@ Git- ը հետևում է ֆայլերի որոշակի հավաքածուի փ�
 > - Ձեր ստատիկ ֆայլերի (static files) կարգավորում (դրանց մասին մենք կիմանանք ավելի ուշ)
 > - Եվ կարգավորեք PythonAnywhere- ը `ձեր վեբ հավելվածը API- ի միջոցով սպասարկելու համար
 > 
-> On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider.
+> Այս բոլոր քայլերը ավտոմատացված են PythonAnywhere- ում, բայց դրանք այն նույն քայլերն են, որոնք պետք է կատարվեն սերվերի ցանկացած այլ մատակարարի հետ:
 > 
-> The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own computer, so it can have different posts and admin accounts. As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
+> Հիմնական բանը, որն այժմ պետք է նկատել, այն է, որ PythonAnywhere տվյալների բազան իրականում ամբողջովին տարանջատված է ձեր համակարգչի տվյալների բազայից: Սա նշանակում է, որ նրանք կարող են ունենալ տարբեր հաղորդագրություններ և ադմինիստրատորի հաշիվներ: Արդյունքում, ինչպես արդեն արեցինք մեր համակարգչում, մենք պետք է ադմինիստրատորի հաշիվը նախապատրաստենք `createsuperuser` - ով: PythonAnywhere- ը ավտոմատ կերպով կակտիվացնի ձեր virtualenv-ին, այնպես որ ձեզ հարկավոր է միայն գործարկել՝
 > 
 > {% filename %}PythonAnywhere command-line{% endfilename %}
 > 
