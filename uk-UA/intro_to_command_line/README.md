@@ -1,32 +1,32 @@
 # Вступ до інтерфейсу командного рядка
 
-> For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
+> Для читачів вдома: відеоверсія цього розділу - [Ваш новий друг: командний рядок](https://www.youtube.com/watch?v=jvZLWhkzX-8) (англ.).
 
-It's exciting, right?! You'll write your first line of code in just a few minutes! :)
+Це захоплює, так?! Ви напишете свій перший рядок коду через декілька хвилин :)
 
-**Дозвольте нам представити вас вашому новому другові: командний рядок!**
+**Дозвольте нам представити вам нового друга: командний рядок!**
 
-Наступні кроки покажуть вам як користуватися чорним вікном, яким користуються усі хакери. Спочатку це може видаватися трохи жахливим, однак насправді це лише командна підказка, що очікує певних команд від вас.
+Наступні кроки покажуть вам, як користуватися чорним вікном, яке є інструментом усіх хакерів. Спочатку це може видаватися трохи жахливим, однак насправді це лише запрошення, що очікує певних команд від вас.
 
-> **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
+> **Примітка.** Зауважте, що в цій книзі ми використовуємо терміни "директорія", "каталог" та "папка" взаємозамінно, ці слова означають одне й те саме.
 
 ## Що таке командний рядок?
 
-Вікно, яке зазвичай називають **командним рядком** або **інтерфейсом командного рядка**, є текстовою програмою для перегляду, обробки і управління файлами на вашому комп'ютері. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Інші назви командного рядка: *cmd*, *CLI*, *prompt*, *console* або *terminal*.
+Вікно, яке зазвичай називають **командним рядком** або **інтерфейсом командного рядка**, є текстовою програмою для перегляду, редагування та інших операцій з файлами на вашому комп'ютері. Як Провідник на Windows чи Finder на Mac, але без графічного інтерфейсу. Інші назви командного рядка: *cmd*, *CLI*, *prompt*, *console* або *terminal*.
 
 ## Відкриваємо інтерфейс командного рядка
 
-To start some experiments we need to open our command-line interface first.
+Щоб почати експериментувати, нам потрібно спочатку відкрити наш командний рядок.
 
 {% include "/intro_to_command_line/open_instructions.md" %}
 
-## Командний рядок
+## Запрошення
 
-You now should see a white or black window that is waiting for your commands.
+Має з'явитися біле або чорне вікно, що очікує на ваші команди.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see a `$`, like this:
+Якщо ви працюєте на Mac або на Linux, ви напевно побачите `$`, на зразок:
 
 {% filename %}command-line{% endfilename %}
 
@@ -37,24 +37,24 @@ If you're on Mac or Linux, you probably see a `$`, like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-On Windows, you probably see a `>`, like this:
+На Windows, це знак `>`, ось так:
 
 {% filename %}command-line{% endfilename %}
 
     >
     
 
-Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+Подивіться на секцію Linux трохи вище - ви побачите щось подібне, коли перейдете до PythonAnywhere пізніше у цьому посібнику.
 
 <!--endsec-->
 
-Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
+Кожній команді буде передувати символ `$` або `>` і після нього один пробіл, але ви не мусите набирати їх. Ваш комп'ютер робитиме це для вас сам :)
 
-> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
+> Маленьке зауваження: перед знаком командного рядка ви, скоріш за все, побачите щось на зразок `C:\Users\ola>` або `Olas-MacBook-Air:~ ola$`. Це є на 100% правильним.
 
-The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
+Весь цей текст включно зі знаком `$` або `>` називається *запрошенням командного рядка* або скорочено *запрошенням*. Він запрошує вас ввести туди щось.
 
-In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
+У посібнику, коли нам потрібно, щоб ви набрали щось у командному рядку, ми включатимемо `$` або `>`, а іноді й більше символів зліва. Ігноруйте ліву частину і набирайте лише команду, яка починається після знаку запрошення.
 
 ## Ваша перша команда (ЙОЙ!)
 
