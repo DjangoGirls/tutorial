@@ -89,6 +89,7 @@ Django>=2.2.4
 {% filename %}.bash_profile{% endfilename %}
 ```
 alias python=python3
+alias pip=pip3
 ```
 
 
