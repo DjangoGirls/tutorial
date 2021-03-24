@@ -118,6 +118,22 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 > Also add `.amazonaws.com` to the `ALLOWED_HOSTS` if you are using cloud9
 
+> If you are hosting your project on `Glitch.com`, let us protect the Django secret key that needs to 
+> remain confidential (otherwise, anyone remixing your project could see it) :
+>   * Create a file ```.env``` at the root of your project and add the following property in it :
+>     {% filename %}.env{% endfilename %}
+>     ```bash
+>     # Remember to change the value below to any, very long, very random sequence of characters
+>     SECRET='a-completely-random-string-of-letters-numbers-and-special-characters-anything-goes'
+>     ```
+>   * Then update the Django settings file to inject this secret value and set the Django web site name :
+>     {% filename %}mysite/settings.py{% endfilename %}
+>     ```python
+>     SECRET_KEY = os.getenv('SECRET')
+>     # and a little further, we inject the name of your new Glitch website ...
+>     ALLOWED_HOSTS = [os.getenv('PROJECT_DOMAIN') + ".glitch.me"]
+>     ```
+
 ## Set up a database
 
 There's a lot of different database software that can store data for your site. We'll use the default one, `sqlite3`.
@@ -176,6 +192,13 @@ If you are on a Chromebook, use this command instead:
 ```
 (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
 ```
+or this one if you are using Glitch :
+
+{% filename %}Glitch.com terminal{% endfilename %}
+```
+$ refresh
+
+```
 
 If you are on Windows and this fails with `UnicodeDecodeError`, use this command instead:
 
@@ -197,6 +220,10 @@ If you're using a Chromebook and Cloud9, instead click the URL in the pop-up win
 {% filename %}browser{% endfilename %}
 ```
 https://<a bunch of letters and numbers>.vfs.cloud9.us-west-2.amazonaws.com
+```
+or on Glitch :
+```
+https://name-of-your-glitch-project.glitch.me
 ```
 
 Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?

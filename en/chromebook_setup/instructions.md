@@ -66,9 +66,9 @@ bigger.
 1. Go to [Glitch.com](https://glitch.com/)
 2. Sign up for an account (https://glitch.com/signin) or use your Github account if you have one (see Github instructions below).
 3. Click _New Project_ and choose _Hello Webpage_
-4. Click Terminal button(on the left side of the window)
+4. Click Terminal button (on the left side of the window)
 
-When using Glitch.com as your Cloud IDE, we do not create a virtual environment but we create the necessary files manually :
+When using Glitch.com as your Cloud IDE, we do not create a virtual environment but we create the following files manually :
 
 {% filename %}glitch.json{% endfilename %}
 ```
@@ -86,13 +86,50 @@ When using Glitch.com as your Cloud IDE, we do not create a virtual environment 
 Django>=2.2.4
 ```
 
+{% filename %}.bash_profile{% endfilename %}
+```
+alias python=python3
+```
+
+
 {% filename %}start.sh{% endfilename %}
 ```
+chmod 600 .bash_profile
 pip3 install -r requirements.txt --user
 python3 manage.py makemigrations
 python3 manage.py migrate
 python3 manage.py runserver $PORT
 ```
+
+Once these files are created, open a terminal (in the tools menu at the bottom) and execute the command ```refresh```.
+
+The initial restarting of the Glitch project should fail (complaining that the ```manage.py``` file is missing), but do not worry about it at this stage, the tutorial will fix this as soon as you create your first Django project.
+
+In order to see detailed error messages, you can activate Django debug logs for your Glitch application.
+Simply add the following at the end of the ```mysite/settings.py``` file.
+
+{% filename %}mysite/settings.py{% endfilename %}
+```python
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': 'debug.log',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}
+```
+This will create a ```debug.log``` file detailing Django operations and any error messages that might come up, making it much easier to fix if your website does not work.
 
 ### Virtual Environment
 
