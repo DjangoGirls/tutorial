@@ -173,13 +173,13 @@ Many commands you can type at the command prompt have built-in help that you can
     ...
     
 
-> Note: In PowerShell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
+> Примітка: у PowerShell ви можете використовувати 'ls', як у Linux або Mac OS X. <!--endsec-->
 
 * * *
 
-### Change current directory
+### Змінити поточну директорію
 
-Now, let's go to our Desktop directory:
+Тепер давайте перейдемо до директорії Робочого столу:
 
 <!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
 
@@ -197,7 +197,7 @@ Now, let's go to our Desktop directory:
     $ cd Desktop
     
 
-Note that the directory name "Desktop" might be translated to the language of your Linux account. If that's the case, you'll need to replace `Desktop` with the translated name; for example, `Schreibtisch` for German.
+Зверніть увагу, що назва каталогу "Desktop" може бути перекладена на мову вашого облікового запису Linux. У такому випадку вам треба замінити `Desktop` на назву перекладу; наприклад, `Робочий стіл` для української.
 
 <!--endsec-->
 
@@ -210,7 +210,7 @@ Note that the directory name "Desktop" might be translated to the language of yo
 
 <!--endsec-->
 
-Check if it's really changed:
+Перевірте, чи дійсно щось змінилось:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -232,15 +232,15 @@ Check if it's really changed:
 
 <!--endsec-->
 
-Here it is!
+Так, ось воно!
 
-> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
+> ПРОФІ хитрощі: якщо ви наберете `cd D` і потім натиснете `Tab` на клавіатурі, командний рядок автоматично заповнить решту імені, таким чином можна набирати команди швидше. Якщо папок, що починаються з "D", більше однієї, натисніть клавішу `Tab` двічі, щоб отримати список варіантів.
 
 * * *
 
-### Create directory
+### Створити директорію 
 
-How about creating a practice directory on your desktop? You can do it this way:
+Як щодо створення каталогу practice на вашому робочому столі? Ви можете зробити це таким чином:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -260,17 +260,17 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--endsec-->
 
-This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+Ця коротка команда створить папку з іменем `practice` на вашому Робочому столі. Можете перевірити, чи з'явилась вона там, просто глянувши на свій Робочий стіл або запустивши команду `ls` або `dir`! Спробуйте :)
 
-> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
+> ПРОФІ хитрощі: Якщо ви не хочете кожного разу набирати одну й ту ж команду, спробуйте натиснути клавіші `Стрілка вгору` та `Стрілка вниз` на своїй клавіатурі, щоб повторити нещодавно використані команди.
 
 * * *
 
-### Exercise!
+### Вправа!
 
-A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
+Невеличке випробування для вас: у щойно створеній директорії `practice` створіть папку `test`. Використайте для цього команди `cd` та `mkdir`.
 
-#### Розв'язання:
+#### Розв'язок:
 
 <!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
@@ -296,7 +296,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Congrats! :)
+Вітаємо! :)
 
 * * *
 
