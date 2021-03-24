@@ -58,7 +58,7 @@
 
 ## Ваша перша команда (ЙОЙ!)
 
-Let's start by typing this command:
+Почнемо з чогось простенького. Наберіть команду:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -78,7 +78,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-And then hit `enter`. This is our result:
+Далі натисніть `Enter`. Це наш результат:
 
 {% filename %}command-line{% endfilename %}
 
@@ -86,17 +86,17 @@ And then hit `enter`. This is our result:
     olasitarska
     
 
-As you can see, the computer has just printed your username. Neat, huh? :)
+Як бачимо, комп'ютер виводить ваше ім'я користувача. Файно, еге ж?:)
 
-> Try to type each command; do not copy-paste. You'll remember more this way!
+> Спробуйте набирати кожну команду, а не копіювати і вставляти. Таким чином, ви більше запам'ятаєте!
 
 ## Основи
 
-Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
+У кожної операційної системи є трохи відмінні набори команд для командного рядка, отже будьте певними, що виконуєте інструкції саме для вашої операційної системи. Давайте спробуємо?
 
 ### Поточна директорія
 
-It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
+Було б приємно знати, де ми перебуваємо зараз, чи не так? Давайте подивимося. Введіть цю команду і натисніть `Enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -106,7 +106,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     /Users/olasitarska
     
 
-> Note: 'pwd' stands for 'print working directory'.
+> Примітка: "pwd" розшифровується як "print working directory" (англ. "надрукувати робочу папку").
 
 <!--endsec-->
 
@@ -118,21 +118,21 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     C:\Users\olasitarska
     
 
-> Note: 'cd' stands for 'change directory'. With PowerShell you can use pwd just like on Linux or Mac OS X.
+> Примітка: "cd" означає "'change directory". Проте у PowerShell ви можете використовувати pwd - так же само, як на Linux або Mac OS X.
 
 <!--endsec-->
 
-You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
+Можливо, ви побачите щось таке на вашій машині. Після того, як ви відкрили командний рядок, ви зазвичай починаєте зі своєї домашньої папки.
 
 * * *
 
-### Learn more about a command
+### Довідка для команд
 
-Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
+Багато команд, які можна вводити у командному рядку, мають вбудовану довідку, яку ви можете відобразити та прочитати! Наприклад, дізнайтесь більше про команду поточної директорії:
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-ОС X та Linux мають команду `man` , що видає вам довідку по іншим командам. Спробуйте `man pwd` і подивіться, що вона видає, або помістіть `man` перед іншими командами, щоб побачити їхню довідку. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
+ОС X та Linux мають команду `man` , що видає вам довідку по іншим командам. Спробуйте `man pwd` і подивіться, що вона видає, або помістіть `man` перед іншими командами, щоб побачити їхню довідку. Результат `man` зазвичай розбито на сторінки. Використовуйте пробіл, щоб перейти на наступну сторінку, і `q` , щоб вийти з перегляду довідки.
 
 <!--endsec-->
 
