@@ -132,19 +132,19 @@ Many commands you can type at the command prompt have built-in help that you can
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X and Linux have a `man` command, which gives you help on commands. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
+ОС X та Linux мають команду `man` , що видає вам довідку по іншим командам. Спробуйте `man pwd` і подивіться, що вона видає, або помістіть `man` перед іншими командами, щоб побачити їхню довідку. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
 
 <!--endsec-->
 
 <!--sec data-title="Command Help: Windows" data-id="windows_help" data-collapse=true ces-->
 
-Adding a `/?` suffix to most commands will print the help page. You may need to scroll your command window up to see it all. Try `cd /?`.
+Додавання суфікса `/?` до більшості команд відобразить сторінку довідки. Можливо, доведеться прокрутити командне вікно, щоб побачити його повністю. Спробуйте `cd /?`.
 
 <!--endsec-->
 
-### List files and directories
+### Список файлів і папок
 
-So what's in it? It'd be cool to find out. Let's see:
+Отже, що ж всередині? Було б круто з'ясувати. Давайте подивимось:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
