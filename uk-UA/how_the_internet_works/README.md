@@ -1,14 +1,14 @@
 # Як працює Інтернет
 
-> For readers at home: this chapter is covered in the [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc) video.
+> Для читачів вдома: відеоверсія цього розділу - [Як працює Інтернет](https://www.youtube.com/watch?v=oM9yAA09wdc) (англ.).
 > 
-> This chapter is inspired by the talk "How the Internet works" by Jessica McKellar (http://web.mit.edu/jesstess/www/).
+> На створення цього розділу нас надихнув виступ Джесіки Маккеллар "Як працює інтернет" (http://web.mit.edu/jesstess/www/).
 
-We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
+Б'ємось об заклад, ви використовуєте Інтернет кожного дня. Однак, чи знаєте ви насправді, що трапляється, коли ви набираєте адресу на зразок https://djangogirls.org у вашому браузері та натискаєте `enter`?
 
-The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk -- just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
+Перша річ, яку вам необхідно зрозуміти, - це те, що вебсайт є лише набором файлів на жорсткому диску. Просто як фільми, музика або зображення. Проте, є одна унікальна річ для вебсайтів: вони містять комп'ютерний код, що називається HTML.
 
-If you're not familiar with programming, it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. Веб-браузери пристосовані для того, щоб розуміти цей код, виконувати його інструкції та показувати файли, з яких складається ваш сайт, саме так як ви хочете.
+Якщо ви не знайомі із програмуванням, спочатку може бути складно вловити що таке HTML, але ваші веббраузери (такі як Chrome, Safari, Firefox тощо) люблять це. Веббраузери розроблені спеціально, щоб розуміти цей код, виконувати його інструкції та показувати файли, з яких складається ваш сайт, і саме так, як ви цього хочете.
 
 Як і з кожним файлом, нам потрібно зберігати HTML файли в певному місці на жорсткому диску. В Інтернеті ми використовуємо спеціальні потужні комп'ютери, що називаються *серверами*. Вони не мають екрану, мишки чи клавіатури тому, що їхня основна ціль -- зберігати і обробляти дані. That's why they're called *servers* – because they *serve* you data.
 
