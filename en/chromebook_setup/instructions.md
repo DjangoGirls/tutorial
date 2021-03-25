@@ -116,7 +116,7 @@ refresh
 ```
 
 In order to see detailed error messages, you can activate Django debug logs for your Glitch application.
-Simply add the following at the end of the ```mysite/settings.py``` file.
+Simply add the following at the end of the `mysite/settings.py` file.
 
 {% filename %}mysite/settings.py{% endfilename %}
 ```python
