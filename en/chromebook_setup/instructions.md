@@ -66,7 +66,12 @@ bigger.
 1. Go to [Glitch.com](https://glitch.com/)
 2. Sign up for an account (https://glitch.com/signin) or use your GitHub account if you have one (see GitHub instructions below).
 3. Click _New Project_ and choose _hello-webpage_
-4. Click Terminal button (on the left side of the window)
+4. Click Terminal button (at the bottom left side of the window) to open terminal window with prompt like this:
+
+{% filename %}Terminal{% endfilename %}
+```
+app@name-of-your-glitch-project:~
+```
 
 When using Glitch.com as your Cloud IDE, we do not create a virtual environment but we create the following files manually :
 
@@ -102,9 +107,13 @@ python3 manage.py migrate
 python3 manage.py runserver $PORT
 ```
 
-Once these files are created, open a terminal (in the tools menu at the bottom) and execute the command `refresh`.
+Once these files are created, open a terminal (in the tools menu at the bottom) and execute the following commands to create your first Django project :
 
-The initial restarting of the Glitch project should fail (complaining that the ```manage.py``` file is missing), but do not worry about it at this stage, the tutorial will fix this as soon as you create your first Django project.
+{% filename %}Terminal{% endfilename %}
+```
+django-admin.py startproject mysite .
+refresh
+```
 
 In order to see detailed error messages, you can activate Django debug logs for your Glitch application.
 Simply add the following at the end of the ```mysite/settings.py``` file.
@@ -131,6 +140,8 @@ LOGGING = {
 }
 ```
 This will create a ```debug.log``` file detailing Django operations and any error messages that might come up, making it much easier to fix if your website does not work.
+
+The initial restarting of the Glitch project should fail (if you click on the top dropdown button `Show` then click on `In a New Window`, you will receive a `DisallowedHost` error message), but do not worry about it at this stage, the tutorial will fix this as soon as you update the Django settings of your project in the `mysite/settings.py` file.
 
 ### Virtual Environment
 
