@@ -83,7 +83,7 @@ Maintenant, ça serait bien de voir si votre site Web fonctionne toujours sur In
     $ git add .
     $ git status
     [...]
-    $ git commit -m "Modified templates to display posts from database."
+    $ git commit -m "Modification des templates to afficher les posts contenus dans la base de données."
     [...]
     $ git push
     
