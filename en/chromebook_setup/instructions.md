@@ -83,7 +83,7 @@ When using Glitch.com as your Cloud IDE, we do not create a virtual environment 
 
 {% filename %}requirements.txt{% endfilename %}
 ```
-Django>=2.2.4
+Django~={{ book.django_version }}
 ```
 
 {% filename %}.bash_profile{% endfilename %}
