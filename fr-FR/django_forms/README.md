@@ -390,15 +390,15 @@ Lorsque vous cliquez dessus, vous devez voir le formulaire du post de blog appar
 
 N'hésitez pas à changer le titre ou le texte et à enregistrer les modifications!
 
-Congratulations! Your application is getting more and more complete!
+Bravo ! Votre application s'enrichit de plus en plus de fonctionnalités !
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.2/topics/forms/
+Si vous souhaitez en apprendre plus sur les formulaires Django, n'hésitez pas à consulter la documentation associée : https://docs.djangoproject.com/en/2.2/topics/forms/
 
 ## Sécurité
 
-Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
+C’est génial de pouvoir créer de nouveaux posts juste en cliquant sur un lien ! Mais maintenant, toute personne visitant votre site sera en mesure de créer un nouveau post, et ce n'est peut-être pas ce que vous voulez. Faisons en sorte que les boutons apparaissent pour vous mais pas pour les autres.
 
-Open `blog/templates/blog/base.html` in the code editor, find our `div` inside `header` and the anchor element you put in there earlier. It should look like this:
+Ouvrez `blog/templates/blog/base.html` dans l'éditeur de code, trouvez notre `div` `page-header` et la balise ancre que vous y avez mis plus tôt. Ça doit ressembler à ça :
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -408,7 +408,7 @@ Open `blog/templates/blog/base.html` in the code editor, find our `div` inside `
 </a>
 ```
 
-We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! Change the `<a>` element to look like this:
+Nous allons y ajouter une autre balise `{% if %}` qui ne fera apparaitre le lien qu’aux utilisateurs⋅trices connecté⋅e⋅s avec les droits d'administration. C'est à dire pour le moment, seulement vous ! Changez la balise `<a>` comme ceci :
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -420,11 +420,11 @@ We're going to add another `{% if %}` tag to this, which will make the link show
 {% endif %}
 ```
 
-This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. This doesn't protect the creation of new posts completely, but it's a good first step. We'll cover more security in the extension lessons.
+Ce `{% if %}` fait en sorte de n’envoyer le lien au navigateur que si l’utilisateur⋅trice demandant la page est connecté⋅e. Cela ne n'empêche pas complètement la création de nouveaux posts, mais c’est un bon début. Nous reviendrons sur les questions de sécurité dans les extensions du tutoriel.
 
-Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
+Rappelez-vous l'icône de modification que nous venons d'ajouter à notre page de détails? Nous souhaitons également ajouter les mêmes modifications, afin que les autres utilisateurs ne puissent pas modifier les publications existantes.
 
-Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
+Ouvrez le fichier `blog/templates/blog/post_detail.html` dans l'éditeur de code et trouvez la ligne suivante :
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -434,7 +434,7 @@ Open `blog/templates/blog/post_detail.html` in the code editor and find this lin
 </a>
 ```
 
-Change it to this:
+Changez-la en ceci:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -446,11 +446,11 @@ Change it to this:
 {% endif %}
 ```
 
-Since you're likely logged in, if you refresh the page, you won't see anything different. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
+Parce vous êtes sans doute déjà connecté⋅e⋅s, vous ne verrez aucune différence si vous rafraîchissez la page. Mais si vous chargez la page dans un navigateur web différent ou dans une fenêtre en mode "navigation privée" ou "incognito", vous verrez que le lien ne s'affiche plus, et l’icône non plus !
 
 ## Encore un petit effort : déployons !
 
-Let's see if all this works on PythonAnywhere. Time for another deploy!
+Nos modifications fonctionnent-elles sur PythonAnywhere ? Pour le savoir, déployons à nouveau !
 
 * Tout d'abord, commitez votre nouveau code et pushez le à nouveau sur GitHub:
 
@@ -465,15 +465,15 @@ Let's see if all this works on PythonAnywhere. Time for another deploy!
 
 * Puis, dans la console bash de [PythonAnywhere](https://www.pythonanywhere.com/consoles/):
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
+{% filename %}Ligne de commande PythonAnywhere{% endfilename %}
 
     $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+(N’oubliez pas de remplacer `<your-pythonanywhere-domain>` avec votre propre sous-domaine PythonAnywhere, sans les chevrons.)
 
 * Enfin, allez sur ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (utilisez le bouton de menu en haut à droite de la console) et cliquez **Reload**. Actualisez votre blog https://subdomain.pythonanywhere.com pour voir les changements.
 
-And that should be it. Congrats! :)
+Et normalement c'est tout ! Félicitations ! :)
