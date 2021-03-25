@@ -139,7 +139,7 @@ LOGGING = {
     },
 }
 ```
-This will create a ```debug.log``` file detailing Django operations and any error messages that might come up, making it much easier to fix if your website does not work.
+This will create a `debug.log` file detailing Django operations and any error messages that might come up, making it much easier to fix if your website does not work.
 
 The initial restarting of the Glitch project should fail (if you click on the top dropdown button `Show` then click on `In a New Window`, you will receive a `DisallowedHost` error message). Do not worry about it at this stage, the tutorial will fix this as soon as you update the Django settings of your project in the `mysite/settings.py` file.
 
