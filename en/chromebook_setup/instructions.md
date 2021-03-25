@@ -71,7 +71,7 @@ bigger.
 When using Glitch.com as your Cloud IDE, we do not create a virtual environment but we create the following files manually :
 
 {% filename %}glitch.json{% endfilename %}
-```
+```json
 {
   "install": "pip3 install -r requirements.txt --user",
   "start": "bash start.sh",
