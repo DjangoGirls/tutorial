@@ -99,7 +99,7 @@ alias pip=pip3
 
 
 {% filename %}start.sh{% endfilename %}
-```
+```bash
 chmod 600 .bash_profile
 pip3 install -r requirements.txt --user
 python3 manage.py makemigrations
