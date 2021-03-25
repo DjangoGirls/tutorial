@@ -44,11 +44,11 @@ Nous allons donc une nouvelle fois suivre le processus suivant et créer : un li
 
 ## Lien vers une page contenant le formulaire
 
-Before we add the link, we need some icons to use as buttons for the link. For this tutorial, download [file-earmark-plus.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/file-earmark-plus.svg) and save it in the folder `blog/templates/blog/icons/`
+Avant d'ajouter le lien, nous avons besoin d'icônes que nous allons utiliser comme boutons pour le lien. Pour ce tutoriel, téléchargez [file-earmark-plus.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/file-earmark-plus.svg) et enregistrez-le dans le dossier `blog/templates/blog/icons/`
 
-> Note: To download the SVG image, open the context menu on the link (usually by right-clicking on it) and select "Save link as". In the dialog asking you where to save the file, navigate to the `djangogirls` directory of your Django project, and within that to subdirectory `blog/templates/blog/icons/`, and save the file there.
+> Remarque : Pour télécharger l'image SVG, ouvrez le menu contextuel du lien (en cliquant avec le bouton droit de la souris) et sélectionnez "Enregistrer le lien sous". Dans la boîte de dialogue vous demandant où enregistrer le fichier, choisissez le répertoire `djangogirls` de votre projet Django, et à l'intérieur du sous-répertoire `blog/templates/blog/icons/`, et enregistrez le fichier à cet endroit.
 
-It's time to open `blog/templates/blog/base.html` in the code editor. Now we can use this icon file inside the base template as follows. In the `div` element inside `header` section, we will add a link before the `h1` element:
+Il est temps d'ouvrir `blog/templates/blog/base.html` dans l'éditeur de code. Maintenant nous pouvons utiliser ce fichier d'icônes à l'intérieur du modèle de base comme suit. Dans l'élément `div` à l'intérieur de la section `header` , nous ajouterons un lien avant l'élément `h1`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
