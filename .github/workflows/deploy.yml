@@ -7,7 +7,7 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    if: github.repository == 'CERN/django-girls-tutorial'
+    if: github.repository == 'djangogirls/tutorial'
     steps:
       - name: Checkout
         uses: actions/checkout@v2
