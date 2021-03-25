@@ -179,7 +179,7 @@ Ce serait bien de mettre à jour la version de notre site sur PythonAnywhere. On
     $ git status
     $ git add .
     $ git status
-    $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
+    $ git commit -m "Ajout de la vue et du template de détail blog post ainsi que du CSS pour le site."
     $ git push
     
 
@@ -211,4 +211,4 @@ La commande `manage.py collectstatic` nous rappelle un peu `manage.py migrate`. 
 
 Maintenant nous sommes prêtes à aller sur [« Web »](https://www.pythonanywhere.com/web_app_setup/) (depuis le menu en haut à droite de la console), appuyer sur **Reload** et voir les résultats à votre adresse https://sous-domaine.pythonanywhere.com.
 
-And that should be it. Congrats! :)
+Normalement, ça devrait suffire ! Encore bravo! :)
