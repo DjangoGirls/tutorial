@@ -58,11 +58,11 @@ Il est temps d'ouvrir `blog/templates/blog/base.html` dans l'éditeur de code. M
 </a>
 ```
 
-Note that we want to call our new view `post_new`. The [SVG icon](https://icons.getbootstrap.com/icons/file-earmark-plus/) is provided by the [Bootstrap Icons](https://icons.getbootstrap.com/) and it will display a page icon with plus sign. We use a Django template directive called `include`. This will inject the file's content into the Django template. The web browser knows how to handle this type of content without any further processing.
+Remarquez que notre nouvelle vue s'appelle `post_new`. L'icône [SVG](https://icons.getbootstrap.com/icons/file-earmark-plus/) est fournie par les [icônes Bootstrap](https://icons.getbootstrap.com/) et elle affichera une icône de page avec le signe plus. Nous utilisons une directive de modèle Django appelée `include`. Cela injectera le contenu du fichier dans le modèle Django. Le navigateur web sait comment gérer ce type de contenu sans aucun traitement supplémentaire.
 
-> You can download all the Bootstrap icons [here](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip). Unzip the file and copy all the SVG image files into a new folder inside `blog/templates/blog/` called `icons`. That way you can access an icon like `pencil-fill.svg` using the file path `blog/templates/blog/icons/pencil-fill.svg`
+> Vous pouvez télécharger toutes les icônes Bootstrap [ici](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip). Décompressez le fichier et copiez tous les fichiers image SVG vers un nouveau dossier dans `blog/templates/blog/` intitulé `icons`. De cette façon, vous pouvez accéder à une icône comme `pencil-fill.svg` en référençant le chemin du fichier `blog/templates/blog/icons/pencil-fill.svg`
 
-After editing the line, your HTML file should now look like this:
+Après avoir ajouté cette ligne, votre fichier HTML devrait maintenant ressembler à ceci :
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -97,11 +97,11 @@ After editing the line, your HTML file should now look like this:
 </html>
 ```
 
-After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
+Normalement, après avoir sauvegardé et rechargé la page http://127.0.0.1:8000, vous devriez encore tomber sur l'erreur `NoReverseMatch`. Est-ce le cas ? Très bien !
 
 ## URL
 
-We open `blog/urls.py` in the code editor and add a line:
+Ouvrez le fichier `blog/urls.py` dans l'éditeur de code et ajoutez cette ligne :
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -109,7 +109,7 @@ We open `blog/urls.py` in the code editor and add a line:
 path('post/new/', views.post_new, name='post_new'),
 ```
 
-And the final code will look like this:
+Votre fichier doit maintenant ressembler à ceci :
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -124,7 +124,7 @@ urlpatterns = [
 ]
 ```
 
-After refreshing the site, we see an `AttributeError`, since we don't have the `post_new` view implemented. Let's add it right now.
+Une fois la page rechargée, vous allez voir une `AttributeError`, ce qui est normal. Nous n'avons pas encore implémenté la vue `post_new`. Faisons-le maintenant.
 
 ## La vue post_new
 
