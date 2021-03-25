@@ -36,7 +36,7 @@ Comme vous l'avez probablement deviné, `PostForm` est le nom de notre formulair
 
 Ensuite, nous avons la `class Meta` qui nous permet de dire à Django quel modèle il doit utiliser pour créer ce formulaire (`model = Post`).
 
-Enfin, nous précisions quels sont le⋅s champ⋅s qui doivent figurer dans notre formulaire. Dans notre cas, nous souhaitons que seuls `title` et `text` apparaissent dans notre formulaire. Nous obtiendrons les autres données différemment : par exemple, on s'attend à ce que l'auteur (`author`) soit la personne actuellement connectée (c'est à dire vous !) et que la date de création `created_date` soit générée automatiquement lors de la création du post (cf code que nous avons écrit).
+Enfin, nous précisions quel⋅s sont le⋅s champ⋅s qui doivent figurer dans notre formulaire. Dans notre cas, nous souhaitons que seuls `title` et `text` apparaissent dans notre formulaire. Nous obtiendrons les autres données différemment : par exemple, on s'attend à ce que l'auteur (`author`) soit la personne actuellement connectée (c'est à dire vous !) et que la date de création `created_date` soit générée automatiquement lors de la création du post (cf code que nous avons écrit).
 
 Et voilà, c'est tout ! Tout ce qu'il nous reste à faire, c'est d'utiliser ce formulaire dans une *vue* et de l'afficher dans un template.
 
@@ -48,7 +48,7 @@ Avant d'ajouter le lien, nous avons besoin d'icônes que nous allons utiliser co
 
 > Remarque : Pour télécharger l'image SVG, ouvrez le menu contextuel du lien (en cliquant avec le bouton droit de la souris) et sélectionnez "Enregistrer le lien sous". Dans la boîte de dialogue vous demandant où enregistrer le fichier, choisissez le répertoire `djangogirls` de votre projet Django, et à l'intérieur du sous-répertoire `blog/templates/blog/icons/`, et enregistrez le fichier à cet endroit.
 
-Il est temps d'ouvrir `blog/templates/blog/base.html` dans l'éditeur de code. Maintenant nous pouvons utiliser ce fichier d'icônes à l'intérieur du modèle de base comme suit. Dans l'élément `div` à l'intérieur de la section `header` , nous ajouterons un lien avant l'élément `h1`:
+Il est temps d'ouvrir `blog/templates/blog/base.html` dans l'éditeur de code. Maintenant nous pouvons utiliser ce fichier d'icônes à l'intérieur du template de base comme suit. Dans l'élément `div` à l'intérieur de la section `header` , nous ajouterons un lien avant l'élément `h1`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -58,7 +58,7 @@ Il est temps d'ouvrir `blog/templates/blog/base.html` dans l'éditeur de code. M
 </a>
 ```
 
-Remarquez que notre nouvelle vue s'appelle `post_new`. L'icône [SVG](https://icons.getbootstrap.com/icons/file-earmark-plus/) est fournie par les [icônes Bootstrap](https://icons.getbootstrap.com/) et elle affichera une icône de page avec le signe plus. Nous utilisons une directive de modèle Django appelée `include`. Cela injectera le contenu du fichier dans le modèle Django. Le navigateur web sait comment gérer ce type de contenu sans aucun traitement supplémentaire.
+Remarquez que notre nouvelle vue s'appelle `post_new`. L'icône [SVG](https://icons.getbootstrap.com/icons/file-earmark-plus/) est fournie par les [icônes Bootstrap](https://icons.getbootstrap.com/) et elle affichera une icône de page avec le signe plus. Nous utilisons une directive de modèle Django appelée `include`. Cela injectera le contenu du fichier dans le template Django. Le navigateur web sait comment gérer ce type de contenu sans aucun traitement supplémentaire.
 
 > Vous pouvez télécharger toutes les icônes Bootstrap [ici](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip). Décompressez le fichier et copiez tous les fichiers image SVG vers un nouveau dossier dans `blog/templates/blog/` intitulé `icons`. De cette façon, vous pouvez accéder à une icône comme `pencil-fill.svg` en référençant le chemin du fichier `blog/templates/blog/icons/pencil-fill.svg`
 
@@ -128,7 +128,7 @@ Une fois la page rechargée, vous allez voir une `AttributeError`, ce qui est no
 
 ## La vue post_new
 
-Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
+Ouvrez maintenant le fichier `blog/views.py` dans l'éditeur de code et ajoutez les lignes suivantes avec celles du `from` qui existent déjà :
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -136,7 +136,7 @@ Time to open the `blog/views.py` file in the code editor and add the following l
 from .forms import PostForm
 ```
 
-And then our *view*:
+Puis dans la *vue* :
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -146,20 +146,20 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-To create a new `Post` form, we need to call `PostForm()` and pass it to the template. We will go back to this *view*, but for now, let's quickly create a template for the form.
+Afin de pouvoir créer un nouveau formulaire `Post`, nous avons besoin d'appeler la fonction `PostForm()` et de la passer au template. Nous reviendrons modifier cette *vue* plus tard, mais pour l'instant, créons rapidement un template pour ce formulaire.
 
 ## Template
 
-We need to create a file `post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
+Nous avons à présent besoin de créer un fichier `post_edit.html` dans le dossier `blog/templates/blog` et de l'ouvrir dans l'éditeur de code. Afin que notre formulaire fonctionne, nous avons besoin de plusieurs choses :
 
 * Nous avons besoin d'afficher le formulaire. Pour cela, nous n'avons qu'à utiliser {% raw %}`{{ form.as_p }}`{% endraw %}.
-* The line above needs to be wrapped with an HTML form element: `<form method="POST">...</form>`.
+* La ligne précédente va avoir besoin d'être entourée des balises HTML `<form method="POST">...</form>`.
 * Nous avons besoin d'un bouton `Valider`. Nous allons le créer à l'aide d'un bouton HTML : `<button type="submit">Valider</button>`.
 * Enfin, nous devons ajouter {% raw %}`{% csrf_token %}`{% endraw %} juste après `<form ...>`. C'est très important car c'est ce qui va permettre de sécuriser votre formulaire ! Si vous oubliez ce détail, Django se plaindra lorsque vous essaierez de sauvegarder le formulaire:
 
 ![CSFR Forbidden page](images/csrf2.png)
 
-OK, so let's see how the HTML in `post_edit.html` should look:
+Ok, voyons maintenant à quoi devrait ressembler le HTML contenu dans le fichier `post_edit.html` :
 
 {% filename %}blog/templates/blog/post_edit.html{% endfilename %}
 
@@ -175,19 +175,19 @@ OK, so let's see how the HTML in `post_edit.html` should look:
 {% endblock %}
 ```
 
-Time to refresh! Yay! Your form is displayed!
+Rafraîchissons la page ! Et voilà : le formulaire s'affiche !
 
 ![New form](images/new_form2.png)
 
-But, wait a minute! When you type something in the `title` and `text` fields and try to save it, what will happen?
+Mais attendez une minute! Lorsque vous taperez quelque chose dans les champs `title` et `text` et essayez de le sauvegarder, que se passera-t-il?
 
-Nothing! We are once again on the same page and our text is gone… and no new post is added. So what went wrong?
+Absolument rien ! Nous retombons sur la même page sauf qu'en plus, notre texte a disparu et aucun article ne semble avoir été créé. Que s'est-il passé ?
 
-The answer is: nothing. We need to do a little bit more work in our *view*.
+La réponse est : rien ! Nous avons juste encore un peu de travail à accomplir. Retournons à notre *vue*.
 
 ## Sauvegarder le contenu du formulaire
 
-Open `blog/views.py` once again in the code editor. Currently all we have in the `post_new` view is the following:
+Ouvrez à nouveau `blog/views.py` dans l'éditeur de code. Actuellement, `post_new` n'est composé que des lignes de code suivantes :
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -197,7 +197,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-When we submit the form, we are brought back to the same view, but this time we have some more data in `request`, more specifically in `request.POST` (the naming has nothing to do with a blog "post"; it's to do with the fact that we're "posting" data). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? All the fields from the form are now in `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
+Lorsque nous envoyons notre formulaire, nous revenons à la même vue. Cependant, nous récupérons les données dans `request`, et plus particulièrement dans `request.POST` (le nom "POST" n'a aucun lien avec nos "posts" de blog : il est lié au type de requête effectué à l'envoi des données). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? All the fields from the form are now in `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
 
 So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. So we need to add a condition (we will use `if` for that):
 
