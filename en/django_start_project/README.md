@@ -129,7 +129,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 >     This should display a long random string, perfect to use a secret key for your brand new Django web site.
 >     We will now paste this key into a `.env` file that Glitch will only show you if you are the owner of the web site.    
 >   
->   * Create a file `.env` at the root of your project and add the following property in it :
+>   * Create a file `.env` at the root of your project and add the following property in it:
 >     {% filename %}.env{% endfilename %}
 >     ```bash
 >     # Here, inside the single quotes, you can cut and paste the random key generated above
