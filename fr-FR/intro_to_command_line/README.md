@@ -288,7 +288,7 @@ Un petit défi pour vous : dans votre nouveau dossier `exercices`, créez un do
 
 {% filename %}command-line{% endfilename %}
 
-    > cd practice
+    > cd exercices
     > mkdir test
     > dir
     05/08/2020 07:28 PM <DIR>      test
