@@ -52,7 +52,7 @@ Il est très probable que Python soit déjà installé sur votre machine. Afin d
     Python {{ book.py_release }}
     
 
-Si vous avez une version différente de Python installée, au moins {{ book.py_min_version }} (par exemple {{ book.py_min_release }}), vous n'avez pas besoin de mettre à jour Python. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
+Si vous avez une version différente de Python installée, au moins {{ book.py_min_version }} (par exemple {{ book.py_min_release }}), vous n'avez pas besoin de mettre à jour Python. Si Python n'est pas installé, ou si vous voulez une version différente, vérifiez d'abord la distribution Linux que vous utilisez avec la commande suivante :
 
 {% filename %}command-line{% endfilename %}
 
@@ -79,39 +79,39 @@ data-collapse=true ces-->
 
 Tapez cette commande dans votre terminal :
 
-{% filename %}command-line{% endfilename %}
+{% filename %}ligne de commande{% endfilename %}
 
-    sudo dnf install python3
+    $ sudo dnf install python3
     
 
-If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use `yum` instead.
+Si vous utilisez une ancienne version de Fedora, vous pourriez avoir une erreur disant que la commande `dnf` n'est pas trouvée. Dans ce cas, vous devez utiliser la commande `yum` à la place.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Use this command in your console:
+Tapez cette commande dans votre terminal :
 
-{% filename %}command-line{% endfilename %}
+{% filename %}ligne de commande{% endfilename %}
 
     $ sudo zypper install python3
     
 
 <!--endsec-->
 
-Verify the installation was successful by opening a command prompt and running the `python3` command:
+Vérifiez que l'installation s'est bien déroulée en ouvrant votre terminal et en lançant la commande `python3`:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}ligne de commande{% endfilename %}
 
     $ python3 --version
     Python {{ book.py_release }}
     
 
-The version shown may be different from {{ book.py_release }} -- it should match the version you installed.
+La version affichée peut être différente de {{ book.py_release }} -- elle devrait correspondre à la version que vous avez installée.
 
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is {{ book.py_min_version }} or higher. If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
+**NOTE:** Si vous êtes sur Windows et que vous obtenez un message d'erreur disant que `python3` n'a pas été trouvé, essayez d'utiliser `python` (sans `3`) et vérifiez si elle lance une version de Python {{ book.py_min_version }} ou ultérieure. Si cela ne fonctionne pas non plus, vous pouvez ouvrir une nouvelle ligne de commande et réessayer ; cela se produit si vous utilisez une fenêtre de ligne de commande datant d'avant l'installation de Python.
 
 * * *
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
+Si vous avez des questions ou si quelque chose ne fonctionne pas et que vous ne savez pas quoi faire : demandez de l'aide à votre coach ! Il arrive parfois que les choses ne se déroulent pas comme prévu et il est alors préférable de demander à quelqu'un qui a plus d'expérience.
