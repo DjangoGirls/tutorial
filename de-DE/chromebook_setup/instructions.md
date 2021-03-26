@@ -43,7 +43,7 @@ Jetzt solltest du eine Benutzeroberfläche mit Seitenleiste, ein grosses Fenster
 
 Dieser untere Bereich ist dein Terminal. Dort kannst du Kommandos für den Computer eingeben, den dir Cloud 9 zur Verfügung stellt. Du kannst dieses Fenster vergrößern oder verkleinern.
 
-#### Glitch.com Cloud IDE
+#### Glitch.com Cloud-IDE
 
 1. Gehe auf [Glitch.com](https://glitch.com/)
 2. Melde dich für einen Account an (https://glitch.com/signup) oder nutze deinen GitHub-Account, falls du einen hast. (Siehe GitHub-Anweisungen unten.)
