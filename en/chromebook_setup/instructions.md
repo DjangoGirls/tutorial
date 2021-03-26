@@ -64,7 +64,7 @@ bigger.
 #### Glitch.com Cloud IDE
 
 1. Go to [Glitch.com](https://glitch.com/)
-2. Sign up for an account (https://glitch.com/signup) or use your GitHub account if you have one (see GitHub instructions below).
+2. Sign up for an account (https://glitch.com/signup) or use your GitHub account if you have one. (See GitHub instructions below.)
 3. Click _New Project_ and choose _hello-webpage_
 4. Click on the Tools dropdown list (at the bottom left side of the window), then on Terminal button to open terminal tab with a prompt like this:
 
