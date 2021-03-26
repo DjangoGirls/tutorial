@@ -141,7 +141,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 >     ```python
 >     SECRET_KEY = os.getenv('SECRET')
 >     ```
->   * And a little further, in the same file, we inject the name of your new Glitch website :
+>   * And a little further, in the same file, we inject the name of your new Glitch website:
 >     {% filename %}mysite/settings.py{% endfilename %}
 >     ```python
 >     ALLOWED_HOSTS = [os.getenv('PROJECT_DOMAIN') + ".glitch.me"]
