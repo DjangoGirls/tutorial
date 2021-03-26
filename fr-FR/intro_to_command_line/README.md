@@ -118,7 +118,7 @@ Ce serait pratique de savoir dans quel répertoire nous nous trouvons. Pour le s
     C:\Users\olasitarska
     
 
-> Note: 'cd' stands for 'change directory'. With PowerShell you can use pwd just like on Linux or Mac OS X.
+> Note : « cd » signifie « changer répertoire ». Avec PowerShell vous pouvez utiliser pwd comme sur Linux ou Mac OSX.
 
 <!--endsec-->
 
@@ -167,13 +167,13 @@ Du coup, que pouvons-nous trouver dans ce dossier personnel ? Voyons voir :
     > dir
      Directory of C:\Users\olasitarska
     05/08/2020 07:28 PM <DIR>      Applications
-    05/08/2020 07:28 PM <DIR>      Desktop
-    05/08/2020 07:28 PM <DIR>      Downloads
-    05/08/2020 07:28 PM <DIR>      Music
+    05/08/2020 07:28 PM <DIR>      Bureau
+    05/08/2020 07:28 PM <DIR>      Téléchargements
+    05/08/2020 07:28 PM <DIR>      Musique
     ...
     
 
-> Note: In PowerShell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
+> Remarque : Dans PowerShell, vous pouvez également utiliser "ls" comme sur Linux et Mac OS X. <!--endsec-->
 
 * * *
 
