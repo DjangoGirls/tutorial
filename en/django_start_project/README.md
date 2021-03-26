@@ -207,7 +207,7 @@ If you are on a Chromebook, use this command instead:
 ```
 (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
 ```
-or this one if you are using Glitch :
+or this one if you are using Glitch:
 
 {% filename %}Glitch.com terminal{% endfilename %}
 ```
