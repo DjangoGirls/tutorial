@@ -5,9 +5,9 @@
 - Перейдіть до меню Пуск (або екрана Пуск), та введіть "Командний рядок" ("Command Prompt") у полі пошуку.
 - Перейдіть до меню Пуск → Система Windows → Командний рядок (Start menu → Windows System → Command Prompt).
 - Перейдіть до меню Пуск → Усі програми → Стандартні → Командний рядок (Start menu → All Programs → Accessories → Command Prompt).
-- Go to the Start screen, hover your mouse in the lower-left corner of the screen, and click the down arrow that appears (on a touch screen, instead flick up from the bottom of the screen). The Apps page should open. Click on Command Prompt in the Windows System section.
-- Hold the special Windows key on your keyboard and press the "X" key. Choose "Command Prompt" from the pop-up menu.
-- Hold the Windows key and press the "R" key to get a "Run" window. Type "cmd" in the box, and click the OK key.
+- Перейдіть до екрана Пуск, підведіть курсор миші до нижнього лівого кута екрану та натисніть стрілку вниз, яка з'явиться (на сенсорному екрані замість цього протягніть від нижнього краю екрану). Повинна відкритись сторінка додатків. Натисніть на "Командний рядок" ("Command Prompt") у розділі "Система Windows" ("Windows System").
+- Утримуючи спеціальну клавішу "Windows" на клавіатурі, натисніть клавішу "X". Виберіть "Командний рядок" ("Command Prompt") або "Оболонка Windows PowerShell" із меню, яке з'явиться.
+- Утримуючи клавішу "Windows", натисніть клавішу "R", щоб відкрити вікно "Виконати". Type "cmd" in the box, and click the OK key.
 
 ![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
 
