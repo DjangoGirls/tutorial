@@ -136,7 +136,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 >     # Here, inside the single quotes, you can cut and paste the random key generated above
 >     SECRET='3!0k#7ds5mp^-x$lqs2%le6v97h#@xopab&oj5y7d=hxe511jl'
 >     ```
->   * Then update the Django settings file to inject this secret value and set the Django web site name :
+>   * Then update the Django settings file to inject this secret value and set the Django web site name:
 >     {% filename %}mysite/settings.py{% endfilename %}
 >     ```python
 >     SECRET_KEY = os.getenv('SECRET')
