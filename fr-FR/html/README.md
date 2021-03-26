@@ -33,7 +33,7 @@ Allons regarder à quoi ressemble notre site maintenant : http://127.0.0.1:8000/
 
 ![Figure 11.1](images/step1.png)
 
-No error anymore! Congratulations! :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
+Et voilà, il n'y a plus d'erreurs ! Bravo :) Cependant, notre site ne peut rien faire d'autre pour le moment qu'afficher une page blanche. La faute à notre template que nous avons laissé vide. Allons corriger ça.
 
 Ouvrez le nouveau fichier dans l’éditeur de code et ajoutez le morceau suivant :
 
@@ -43,8 +43,8 @@ Ouvrez le nouveau fichier dans l’éditeur de code et ajoutez le morceau suivan
 <!DOCTYPE html>
 <html>
 <body>
-    <p>Hi there!</p>
-    <p>It works!</p>
+    <p>Bonjour !</p>
+    <p>Ça marche !</p>
 </body>
 </html>
 ```
@@ -53,9 +53,9 @@ Alors, à quoi ressemble notre site web maintenant ? Allons le découvrir : http
 
 ![Figure 11.2](images/step3.png)
 
-It worked. Nice work there! :)
+Ça marche ! Bon boulot! :)
 
-* The line `<!DOCTYPE html>` is not a HTML tag. It only declares the document type. Here, it informs the browser that document type is [HTML5](https://html.spec.whatwg.org/#the-doctype). This is always the beginning of any HTML5 file.
+* The line `<!DOCTYPE html>` is not a HTML tag. Il ne déclare que le type de document. Ici, il informe le navigateur que le type de document est [HTML5](https://html.spec.whatwg.org/#the-doctype). C'est toujours le début de n'importe quel fichier HTML5.
 * The most basic tag, `<html>`, is always the beginning of html content and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
 * `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
 
