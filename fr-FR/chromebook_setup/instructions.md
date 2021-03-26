@@ -130,9 +130,9 @@ Le redémarrage initial du projet Glitch devrait échouer. (Si vous cliquez sur 
 
 ### Environnement virtuel
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Un environnement virtuel (également appelé un virtualenv) est comme une boîte noire dans laquelle nous pouvons insérer du code informatique utile à un projet sur lequel nous travaillons. Nous les utilisons pour conserver séparément les différents morceaux de code que nous voulons dans nos différents projets afin que les choses ne se mélangent entre les projets.
 
-Run:
+Lancer :
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -143,16 +143,16 @@ Run:
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: `~=`).
+(Notez que sur la dernière ligne, nous utilisons un tilde suivi d'un signe égal : `~=`).
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+Créez un compte [GitHub](https://github.com).
 
 ### PythonAnywhere
 
-The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+Le tutoriel Django Girls comprend une section sur ce qui est appelé le Déploiement, un processus qui permet de déplacer le code de votre application web vers un ordinateur public (appelé serveur) pour que d'autres personnes puissent voir votre travail.
 
-This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Cette partie est un peu étrange quand on fait le tutoriel sur un Chromebook puisque nous utilisons déjà un ordinateur qui est visible sur Internet (par opposition, par exemple, à un ordinateur portable). Cependant, c'est toujours utile, car nous devons penser à notre espace de travail Cloud 9 comme un endroit pour notre travail "en cours" et Python Anywhere comme un endroit pour publier notre projet à mesure qu'il devient plus complet.
 
-Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Donc, inscrivez-vous pour un nouveau compte Python Anywhere sur [www.pythonanywhere.com](https://www.pythonanywhere.com).
