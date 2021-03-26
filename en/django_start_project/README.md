@@ -236,7 +236,7 @@ If you're using a Chromebook and Cloud9, instead click the URL in the pop-up win
 ```
 https://<a bunch of letters and numbers>.vfs.cloud9.us-west-2.amazonaws.com
 ```
-or on Glitch :
+or on Glitch:
 ```
 https://name-of-your-glitch-project.glitch.me
 ```
