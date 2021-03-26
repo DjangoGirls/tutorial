@@ -66,7 +66,7 @@ bigger.
 1. Go to [Glitch.com](https://glitch.com/)
 2. Sign up for an account (https://glitch.com/signup) or use your GitHub account if you have one (see GitHub instructions below).
 3. Click _New Project_ and choose _hello-webpage_
-4. Click on the `Tools` dropdown list (at the bottom left side of the window), then on `Terminal` button to open terminal tab with a prompt like this:
+4. Click on the Tools dropdown list (at the bottom left side of the window), then on Terminal button to open terminal tab with a prompt like this:
 
 {% filename %}Terminal{% endfilename %}
 ```
@@ -107,7 +107,7 @@ python3 manage.py migrate
 python3 manage.py runserver $PORT
 ```
 
-Once these files are created, open a terminal (in the tools menu at the bottom) and execute the following commands to create your first Django project :
+Once these files are created, go to the Terminal and execute the following commands to create your first Django project :
 
 {% filename %}Terminal{% endfilename %}
 ```
