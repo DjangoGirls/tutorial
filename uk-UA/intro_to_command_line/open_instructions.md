@@ -1,6 +1,6 @@
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-Depending on your version of Windows and your keyboard, one of the following should open a command window (you may have to experiment a bit, but you don't have to try all of these suggestions):
+В залежності від вашої версії Windows і клавіатури, ви можете відкрити командне вікно одним з наступних способів (можливо, доведеться трохи поекспериментувати, але ви не повинні пробувати всі варіанти):
 
 - Go to the Start menu or screen, and enter "Command Prompt" in the search field.
 - Go to Start menu → Windows System → Command Prompt.
