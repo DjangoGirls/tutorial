@@ -56,10 +56,10 @@ Alors, à quoi ressemble notre site web maintenant ? Allons le découvrir : http
 Ça marche ! Bon boulot! :)
 
 * La ligne `<!DOCTYPE html>` n'est pas une balise HTML. Elle ne déclare que le type de document. Ici, elle informe le navigateur web que le type de document est [HTML5](https://html.spec.whatwg.org/#the-doctype). C'est toujours ainsi que débute un fichier HTML5.
-* La balise la plus élémentaire, `<html>`, figure toujours au début de n'importe quelle page web tandis que `</html>` est toujours située à la fin. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
-* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
+* La balise la plus élémentaire, `<html>`, figure toujours au début de n'importe quelle page web tandis que `</html>` est toujours située à la fin. Comme vous pouvez le constater, l'intégralité du contenu de notre page web est située entre la balise de départ, `<html>`, et la balise de fin, `</html>`
+* `<p>` est la balise pour les éléments de type paragraphe. `</p>` permet de fermer chaque paragraphe.
 
-## Head et body
+## Head et Body
 
 Chaque page HTML est divisée en deux éléments : **head** (entête) et **body** (corps.
 
@@ -80,8 +80,8 @@ Par exemple, vous pouvez donner un titre à votre page web en utilisant l'élém
         <title>Ola's blog</title>
     </head>
     <body>
-        <p>Hi there!</p>
-        <p>It works!</p>
+        <p>Bonjour !</p>
+        <p>Ça marche !</p>
     </body>
 </html>
 ```
@@ -112,14 +112,14 @@ Et si nous en profitions pour nous amuser un peu ? Essayons de personnaliser not
 * `<a href="https://djangogirls.org">link</a>` permet de créer un lien
 * `<ul><li>premier item</li><li>second item</li></ul>` permet de créer des listes, comme celle que nous sommes en train de faire !
 * `<div></div>` permet de créer une section au sein de la page
-* `<nav></nav>` defines a set of navigation links
-* `<article></article>` specifies independent, self-contained content
-* `<section></section>` defines a section in a document
-* `<header></header>` specifies a header for a document or section
-* `<main></main>` specifies the main content of a document
-* `<aside></aside>` defines some content aside from the content it is placed in (like a sidebar)
-* `<footer></footer>` defines a footer for a document or section
-* `<time></time>` defines a specific time (or datetime)
+* `<nav></nav>` définit un ensemble de liens de navigation
+* `<article></article>` spécifie du contenu indépendant et autonome
+* `<section></section>` définit une section dans un document
+* `<header></header>` spécifie un en-tête pour un document ou une section
+* `<main></main>` spécifie le contenu principal d'un document
+* `<aside></aside>` définit du contenu en dehors du contenu dans lequel il est placé (comme une barre latérale)
+* `<footer></footer>` définit un pied de page pour un document ou une section
+* `<time></time>` définit un instant spécifique (ou un horodatage)
 
 Voici un exemple d’un modèle complet, copiez et collez-le dans `blog/templates/blog/post_list.html` :
 
@@ -129,32 +129,32 @@ Voici un exemple d’un modèle complet, copiez et collez-le dans `blog/template
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Django Girls blog</title>
+        <title>Blog Django Girls</title>
     </head>
     <body>
         <header>
-            <h1><a href="/">Django Girls Blog</a></h1>
+            <h1><a href="/">Blog Django Girls</a></h1>
         </header>
 
         <article>
-            <time>published: 14.06.2014, 12:14</time>
-            <h2><a href="">My first post</a></h2>
+            <time>publication: 14.06.2014, 12:14</time>
+            <h2><a href="">Mon premier article</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
         </article>
 
         <article>
-            <time>published: 14.06.2014, 12:14</time>
-            <h2><a href="">My second post</a></h2>
+            <time>publication: 14.06.2014, 12:14</time>
+            <h2><a href="">Mon second article</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
         </article>
     </body>
 </html>
 ```
 
-We've created one `header` section and two `article` section here.
+Nous avons créé ici une section `en-tête` et deux sections `article`.
 
-* The `header` element contains the title of our blog – it's a heading and a link
-* The two `article` elements contain our blog posts with a published date in a `time` element, a `h2` element with a post title that is clickable and a `p` (paragraph) element for text of our blog post.
+* Le premier élément `header` contient le titre de notre blog - c'est à la fois un titre et un lien
+* Les deux éléments `article` contiennent nos articles de blog avec une date de publication dans un élément `time` un élément `h2` avec un titre de publication qui est cliquable et un élément `p` (paragraphe) pour le texte de notre blog.
 
 Ce qui nous donne :
 
@@ -198,7 +198,7 @@ On y est presque : nous devons maintenant lui dire de sauvegarder ces changement
     $ git commit -m "Modification du HTML du site"
     
 
-> **Note** Make sure you use double quotes around the commit message.
+> **Note** Assurez-vous d'utiliser des guillemets doubles autour du message de commit.
 
 Une fois que nous avons fait cela, nous pouvons mettre en ligne (pusher) nos modifications sur GitHub :
 
