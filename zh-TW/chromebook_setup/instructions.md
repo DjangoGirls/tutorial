@@ -1,8 +1,8 @@
 如果您不是使用 Chromebook 的話，您可以 [跳過這個章節](http://tutorial.djangogirls.org/en/installation/#install-python)。 如果是的話，您的安裝過程將會有些許的不同。 您可以忽略其餘的安裝說明。
 
-### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
+### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com)
 
-Cloud 9 這工具會提供一個程式碼編輯器(code editor)，並讓你存取一台位於網路上的電腦，使你可以透過它安裝、撰寫、以及執行軟體。 在這個教程指南中，Cloud 9 將能當作您的*本機電腦*來執行。 您仍將在終端機介面中執行指令，跟同學使用在 OS X、Ubuntu、或是 Windows 一樣，但是您的終端機是連接到一個由 Cloud 9 為您設定在其他地方的主機。 這是為cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9)設計的指南 您可以選擇其中一個cloud IDE，然後跟從它的指示操作。
+Cloud 9 這工具會提供一個程式碼編輯器(code editor)，並讓你存取一台位於網路上的電腦，使你可以透過它安裝、撰寫、以及執行軟體。 在這個教程指南中，Cloud 9 將能當作您的*本機電腦*來執行。 您仍將在終端機介面中執行指令，跟同學使用在 OS X、Ubuntu、或是 Windows 一樣，但是您的終端機是連接到一個由 Cloud 9 為您設定在其他地方的主機。 Here are the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com). 您可以選擇其中一個cloud IDE，然後跟從它的指示操作。
 
 #### PaizaCloud Cloud IDE
 
@@ -43,11 +43,96 @@ Now you should see an interface with a sidebar, a big main window with some text
 
 This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
 
+#### Glitch.com Cloud IDE
+
+1. Go to [Glitch.com](https://glitch.com/)
+2. Sign up for an account (https://glitch.com/signup) or use your GitHub account if you have one. (See GitHub instructions below.)
+3. Click *New Project* and choose *hello-webpage*
+4. Click on the Tools dropdown list (at the bottom left side of the window), then on Terminal button to open terminal tab with a prompt like this:
+
+{% filename %}Terminal{% endfilename %}
+
+    app@name-of-your-glitch-project:~
+    
+
+When using Glitch.com as your Cloud IDE, you don't have to create a virtual environment. Instead, create the following files manually:
+
+{% filename %}glitch.json{% endfilename %}
+
+```json
+{
+  "install": "pip3 install -r requirements.txt --user",
+  "start": "bash start.sh",
+  "watch": {
+    "throttle": 1000
+  }
+}
+```
+
+{% filename %}requirements.txt{% endfilename %}
+
+    Django~={{ book.django_version }}
+    
+
+{% filename %}.bash_profile{% endfilename %}
+
+```bash
+alias python=python3
+alias pip=pip3
+```
+
+{% filename %}start.sh{% endfilename %}
+
+```bash
+chmod 600 .bash_profile
+pip3 install -r requirements.txt --user
+python3 manage.py makemigrations
+python3 manage.py migrate
+python3 manage.py runserver $PORT
+```
+
+Once these files are created, go to the Terminal and execute the following commands to create your first Django project:
+
+{% filename %}Terminal{% endfilename %}
+
+    django-admin.py startproject mysite .
+    refresh
+    
+
+In order to see detailed error messages, you can activate Django debug logs for your Glitch application. Simply add the following at the end of the `mysite/settings.py` file.
+
+{% filename %}mysite/settings.py{% endfilename %}
+
+```python
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': 'debug.log',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}
+```
+
+This will create a `debug.log` file detailing Django operations and any error messages that might come up, making it much easier to fix if your website does not work.
+
+The initial restarting of the Glitch project should fail. (If you click on the top dropdown button `Show` then click on `In a New Window`, you will receive a `DisallowedHost` error message.) Do not worry about it at this stage, the tutorial will fix this as soon as you update the Django settings of your project in the `mysite/settings.py` file.
+
 ### 虛擬環境 [Virtual Environment]
 
 A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
-運行:
+Run:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -58,11 +143,11 @@ A virtual environment (also called a virtualenv) is like a private box we can st
     pip install django~={{ book.django_version }}
     
 
-(請注意，我們在最後一行確實使用了一個符號：`~=` 喔)。
+(note that on the last line we use a tilde followed by an equal sign: `~=`).
 
 ### GitHub
 
-建立一個[GitHub](https://github.com)帳號
+Make a [GitHub](https://github.com) account.
 
 ### PythonAnywhere
 
