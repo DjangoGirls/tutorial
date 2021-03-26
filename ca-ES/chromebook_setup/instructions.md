@@ -1,8 +1,8 @@
 Pots [saltar fins aquesta secció](http://tutorial.djangogirls.org/en/installation/#install-python) si no fas servir un Chromebook. Si el fas servir, la teva experiència d'instal·lació serà una mica diferent. Pots ignorar la resta d'instruccions d'instal·lació.
 
-### IDE en núvol (PaizaCloud Cloud IDE, AWS Cloud9)
+### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com)
 
-L'entorn de desenvolupament integrat (IDE) en núvol és una eina que t'ofereix un editor de codi i accés a un ordinador funcionant a Internet, on pots instal·lar, escriure i executar el programari. Durant la resta del tutorial, aquest IDE en núvol actuarà com la teva *màquina local*. Executaràs comandes des d'una interfície de terminal, com les teves companyes de classe fan amb OS X, Ubuntu o Windows, però la teva estarà conectada a un ordinador executant-se en algun altre lloc de la xarxa. El IDE en núvol la prepararà per a tu. Aquí tens les instruccions per alguns IDEs en núvol (PaizaCloud Cloud IDE, AWS Cloud9). Pots elegir-ne un i seguir les seves instruccions.
+L'entorn de desenvolupament integrat (IDE) en núvol és una eina que t'ofereix un editor de codi i accés a un ordinador funcionant a Internet, on pots instal·lar, escriure i executar el programari. Durant la resta del tutorial, aquest IDE en núvol actuarà com la teva *màquina local*. Executaràs comandes des d'una interfície de terminal, com les teves companyes de classe fan amb OS X, Ubuntu o Windows, però la teva estarà conectada a un ordinador executant-se en algun altre lloc de la xarxa. El IDE en núvol la prepararà per a tu. Here are the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com). Pots elegir-ne un i seguir les seves instruccions.
 
 #### PaizaCloud Cloud IDE
 
@@ -42,6 +42,91 @@ Now you should see an interface with a sidebar, a big main window with some text
     
 
 This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+
+#### Glitch.com Cloud IDE
+
+1. Go to [Glitch.com](https://glitch.com/)
+2. Sign up for an account (https://glitch.com/signup) or use your GitHub account if you have one. (See GitHub instructions below.)
+3. Click *New Project* and choose *hello-webpage*
+4. Click on the Tools dropdown list (at the bottom left side of the window), then on Terminal button to open terminal tab with a prompt like this:
+
+{% filename %}Terminal{% endfilename %}
+
+    app@name-of-your-glitch-project:~
+    
+
+When using Glitch.com as your Cloud IDE, you don't have to create a virtual environment. Instead, create the following files manually:
+
+{% filename %}glitch.json{% endfilename %}
+
+```json
+{
+  "install": "pip3 install -r requirements.txt --user",
+  "start": "bash start.sh",
+  "watch": {
+    "throttle": 1000
+  }
+}
+```
+
+{% filename %}requirements.txt{% endfilename %}
+
+    Django~={{ book.django_version }}
+    
+
+{% filename %}.bash_profile{% endfilename %}
+
+```bash
+alias python=python3
+alias pip=pip3
+```
+
+{% filename %}start.sh{% endfilename %}
+
+```bash
+chmod 600 .bash_profile
+pip3 install -r requirements.txt --user
+python3 manage.py makemigrations
+python3 manage.py migrate
+python3 manage.py runserver $PORT
+```
+
+Once these files are created, go to the Terminal and execute the following commands to create your first Django project:
+
+{% filename %}Terminal{% endfilename %}
+
+    django-admin.py startproject mysite .
+    refresh
+    
+
+In order to see detailed error messages, you can activate Django debug logs for your Glitch application. Simply add the following at the end of the `mysite/settings.py` file.
+
+{% filename %}mysite/settings.py{% endfilename %}
+
+```python
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': 'debug.log',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}
+```
+
+This will create a `debug.log` file detailing Django operations and any error messages that might come up, making it much easier to fix if your website does not work.
+
+The initial restarting of the Glitch project should fail. (If you click on the top dropdown button `Show` then click on `In a New Window`, you will receive a `DisallowedHost` error message.) Do not worry about it at this stage, the tutorial will fix this as soon as you update the Django settings of your project in the `mysite/settings.py` file.
 
 ### Entorn Virtual
 
