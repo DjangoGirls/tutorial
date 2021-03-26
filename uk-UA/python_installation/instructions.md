@@ -32,19 +32,19 @@ Python для Windows можна завантажити з сайту https://ww
 <!--sec data-title="Install Python: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
+> **Зверніть увагу:** Перед встановленням Python на OS X, ви повинні впевнитись, що налаштування Mac дозволяють встановлювати пакети, які відсутні з App Store. Перейдіть до налаштувань системи (це у папці Applications), натисніть "Security & Privacy", а потім - вкладку "General". Якщо параметр "Allow apps downloaded from:" встановлено в "Mac App Store", змініть його на "Mac App Store and identified developers".
 
-You need to go to the website https://www.python.org/downloads/mac-osx/ and download the latest Python installer:
+Вам необхідно перейти на вебсайт https://www.python.org/downloads/mac-osx/ і завантажити найсвіжіший інсталятор Python:
 
-* Download the *Mac OS X 64-bit/32-bit installer* file,
-* Double click *python-{{ book.py_release }}-macosx10.9.pkg* to run the installer.
+* завантажте файл *Mac OS X 64-bit/32-bit installer*,
+* двічі клацніть на *python-{{ book.py_release }}-macosx10.9.pkg*, щоб запустити інсталятор.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
+Цілком ймовірно, що у вас вже є Python, встановлений разом із системою. Щоб перевірити це (а заодно й версію), відкрийте консоль і наберіть таку команду:
 
 {% filename %}command-line{% endfilename %}
 
@@ -52,20 +52,20 @@ It is very likely that you already have Python installed out of the box. To chec
     Python {{ book.py_release }}
     
 
-If you have a different version of Python installed, at least {{ book.py_min_version }} (e.g. {{ book.py_min_release }}), then you don't have to upgrade. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
+Якщо у вас встановлена інша версія Python, але не старіша за {{ book.py_min_version }} (напр. {{ book.py_min_release }}), то оновлювати не потрібно. Якщо ж у вас не встановлено Python, або якщо ви хочете оновити версію, спочатку перевірте, яку версію дистрибутиву Linux ви використовуєте за допомогою наступної команди:
 
 {% filename %}command-line{% endfilename %}
 
     $ grep '^NAME=' /etc/os-release
     
 
-Afterwards, depending on the result, follow one of the following installation guides below this section.
+Після цього, в залежності від результату, дотримуйтесь однієї з наступних інструкцій (див. нижче).
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-Type this command into your console:
+Наберіть наступну команду в консолі:
 
 {% filename %}command-line{% endfilename %}
 
@@ -77,21 +77,21 @@ Type this command into your console:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Use this command in your console:
+Скористайтеся наступною командою в консолі:
 
 {% filename %}command-line{% endfilename %}
 
     $ sudo dnf install python3
     
 
-If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use `yum` instead.
+Якщо у вас стара версія Fedora, ви можете отримати помилку, що команда `dnf` не знайдена. У цьому випадку потрібно використати `yum`.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Use this command in your console:
+Скористайтеся наступною командою в консолі:
 
 {% filename %}command-line{% endfilename %}
 
@@ -100,7 +100,7 @@ Use this command in your console:
 
 <!--endsec-->
 
-Verify the installation was successful by opening a command prompt and running the `python3` command:
+Перевірте, що встановлення пройшло успішно, відкривши командний рядок і запустивши команду `python3`:
 
 {% filename %}command-line{% endfilename %}
 
