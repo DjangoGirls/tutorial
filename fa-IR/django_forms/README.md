@@ -109,7 +109,7 @@ After saving and refreshing the page http://127.0.0.1:8000 you will see a famili
 path('post/new/', views.post_new, name='post_new'),
 ```
 
-And the final code will look like this:
+و در نهایت کد ما بصورت زیر خواهد بود:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -124,7 +124,7 @@ urlpatterns = [
 ]
 ```
 
-After refreshing the site, we see an `AttributeError`, since we don't have the `post_new` view implemented. Let's add it right now.
+از آنجایی که ویوی `post_new` را پیاده سازی نکرده ایم، هنگامی که سایت را ریفرش کنیم با خطای `AttributeError` مواجه خواهیم شد. پس باید ویوی مربوطه را نیز بسازیم:
 
 ## ویو post_new
 
