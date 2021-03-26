@@ -55,8 +55,8 @@ Alors, à quoi ressemble notre site web maintenant ? Allons le découvrir : http
 
 Ça marche ! Bon boulot! :)
 
-* The line `<!DOCTYPE html>` is not a HTML tag. Il ne déclare que le type de document. Ici, il informe le navigateur que le type de document est [HTML5](https://html.spec.whatwg.org/#the-doctype). C'est toujours le début de n'importe quel fichier HTML5.
-* The most basic tag, `<html>`, is always the beginning of html content and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
+* La ligne `<!DOCTYPE html>` n'est pas une balise HTML. Elle ne déclare que le type de document. Ici, elle informe le navigateur web que le type de document est [HTML5](https://html.spec.whatwg.org/#the-doctype). C'est toujours ainsi que débute un fichier HTML5.
+* La balise la plus élémentaire, `<html>`, figure toujours au début de n'importe quelle page web tandis que `</html>` est toujours située à la fin. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
 * `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
 
 ## Head et body
