@@ -127,7 +127,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 >     python -c 'from django.core.management.utils import get_random_secret_key; \
 >           print(get_random_secret_key())'
 >     ```
->     This should display a long random string, perfect to use a secret key for your brand new Django web site.
+>     This should display a long random string, perfect to use as a secret key for your brand new Django web site.
 >     We will now paste this key into a `.env` file that Glitch will only show you if you are the owner of the web site.    
 >   
 >   * Create a file `.env` at the root of your project and add the following property in it:
