@@ -1,8 +1,8 @@
 Você pode [pular este capítulo](http://tutorial.djangogirls.org/en/installation/#install-python) se não estiver usando um Chromebook. Caso esteja, sua experiência de instalação será um pouco diferente. Você pode ignorar o restante das instruções de instalação.
 
-### IDE na (PaizaCloud Cloud IDE, AWS Cloud9)
+### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com)
 
-O IDE na nuvem é uma ferramenta que fornece um editor de código e acesso a um computador em execução na Internet, onde você pode instalar, gravar e executar software. Pela duração desse tutorial, o IDE na nuvem funcionará como sua * máquina local *. Você ainda estará executando comandos em uma interface de terminal (ou prompt de comando), como suas colegas de oficina no OS X, Ubuntu ou Windows, mas seu prompt estará conectado a um computador remoto configurado pelo Cloud 9. Estas são as instruções para IDEs na nuvem (PaizaCloud Cloud IDE, AWS Cloud9). Você pode escolher uma das IDEs na nuvem e seguir as instruções.
+O IDE na nuvem é uma ferramenta que fornece um editor de código e acesso a um computador em execução na Internet, onde você pode instalar, gravar e executar software. Pela duração desse tutorial, o IDE na nuvem funcionará como sua * máquina local *. Você ainda estará executando comandos em uma interface de terminal (ou prompt de comando), como suas colegas de oficina no OS X, Ubuntu ou Windows, mas seu prompt estará conectado a um computador remoto configurado pelo Cloud 9. Here are the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com). Você pode escolher uma das IDEs na nuvem e seguir as instruções.
 
 #### IDE na Nuvem PaizaCloud
 
@@ -43,11 +43,96 @@ Agora, a sua tela deve exibir uma interface com uma barra lateral, uma grande ja
 
 Essa janela na parte inferior é o seu terminal. Você pode usá-la para enviar instruções para o computador remoto Cloud 9. Se preferir, você pode redimensioná-la para que fique um pouco maior.
 
+#### Glitch.com Cloud IDE
+
+1. Go to [Glitch.com](https://glitch.com/)
+2. Sign up for an account (https://glitch.com/signup) or use your GitHub account if you have one. (See GitHub instructions below.)
+3. Click *New Project* and choose *hello-webpage*
+4. Click on the Tools dropdown list (at the bottom left side of the window), then on Terminal button to open terminal tab with a prompt like this:
+
+{% filename %}Terminal{% endfilename %}
+
+    app@name-of-your-glitch-project:~
+    
+
+When using Glitch.com as your Cloud IDE, you don't have to create a virtual environment. Instead, create the following files manually:
+
+{% filename %}glitch.json{% endfilename %}
+
+```json
+{
+  "install": "pip3 install -r requirements.txt --user",
+  "start": "bash start.sh",
+  "watch": {
+    "throttle": 1000
+  }
+}
+```
+
+{% filename %}requirements.txt{% endfilename %}
+
+    Django~={{ book.django_version }}
+    
+
+{% filename %}.bash_profile{% endfilename %}
+
+```bash
+alias python=python3
+alias pip=pip3
+```
+
+{% filename %}start.sh{% endfilename %}
+
+```bash
+chmod 600 .bash_profile
+pip3 install -r requirements.txt --user
+python3 manage.py makemigrations
+python3 manage.py migrate
+python3 manage.py runserver $PORT
+```
+
+Once these files are created, go to the Terminal and execute the following commands to create your first Django project:
+
+{% filename %}Terminal{% endfilename %}
+
+    django-admin.py startproject mysite .
+    refresh
+    
+
+In order to see detailed error messages, you can activate Django debug logs for your Glitch application. Simply add the following at the end of the `mysite/settings.py` file.
+
+{% filename %}mysite/settings.py{% endfilename %}
+
+```python
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': 'debug.log',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}
+```
+
+This will create a `debug.log` file detailing Django operations and any error messages that might come up, making it much easier to fix if your website does not work.
+
+The initial restarting of the Glitch project should fail. (If you click on the top dropdown button `Show` then click on `In a New Window`, you will receive a `DisallowedHost` error message.) Do not worry about it at this stage, the tutorial will fix this as soon as you update the Django settings of your project in the `mysite/settings.py` file.
+
 ### Ambiente Virtual
 
-Um ambiente virtual (também chamado de virtualenv) é como uma caixa privada em que podemos colocar código de computador útil para um projeto em que estejamos trabalhando. Nós os utilizamos para manter separados os vários pedaços de código de nossos diferentes projetos, para que as coisas não se misturem entre eles.
+A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
-Executar
+Run:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -58,16 +143,16 @@ Executar
     pip install django~={{ book.django_version }}
     
 
-(note que na última linha, utilizamos um til seguido de um sinal de igual: `~=`).
+(note that on the last line we use a tilde followed by an equal sign: `~=`).
 
 ### GitHub
 
-Crie uma conta no [GitHub](https://github.com).
+Make a [GitHub](https://github.com) account.
 
 ### PythonAnywhere
 
-O tutorial da Django Girls inclui uma seção chamada de Desenvolvimento, que é o processo de mover o código que alimenta sua nova aplicação web para um computador de acesso público (chamado de servidor) para que outras pessoas possam ver o seu trabalho.
+The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
 
-Esta parte é um pouco estranha quando o tutorial é feito num Chromebook por que já estamos usando um computador que está na Internet (ao contrário de, digamos, um laptop). No entanto, ainda é útil, já que podemos pensar no ambiente do Cloud 9 como um lugar pra nosso trabalho em andamento e no Python Anywhere como um lugar para mostrar nosso trabalho conforme ele vai ficando mais completo.
+This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
-Portanto, cadastre-se para uma nova conta Python Anywhere em [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
