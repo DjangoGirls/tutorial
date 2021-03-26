@@ -1,8 +1,8 @@
 Μπορείτε [ να παραλείψετε αυτή την ενότητα](http://tutorial.djangogirls.org/en/installation/#install-python) εάν δεν χρησιμοποιείτε το Chromebook. Εάν το χρησιμοποιείτε, η διαδικασία εγκατάστασης θα είναι λίγο διαφορετική. Σε αυτή την περίπτωση μπορείτε να αγνοήσετε τις υπόλοιπες οδηγίες εγκατάστασης.
 
-### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
+### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com)
 
-Το CloudIDE είναι ένα εργαλείο το οποίο σου παρέχει έναν επεξεργαστή κώδικα καθώς και πρόσβαση σε έναν υπολογιστή στο internet στον οποίο μπορείς να εγκαταστήσεις, να γράψεις και να τρέξεις το λογισμικό. Κατά τη διάρκεια του οδηγού, το CloudIDE θα παίζει το ρόλο του *local machine* (δηλαδή του τοπικού υπολογιστή σας). Παραταύτα, θα χρειαστεί να γράφετε εντολές στο τερματικό όπως ακριβώς οι συμμαθητές σας που χρησιμοποιούν OS X, Ubuntu ή Windows, με την μόνη διαφορά ότι το τερματικό δεν θα τρέχει στον υπολογιστή που κάθεστε αλλά στο cloud (σύννεφο), εκεί που το όρισε το CloudIDE (σε κάποιον εικονικό υπολογιστή, δηλαδή, στο internet). Εδώ είναι οι οδηγίες για τα cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). Μπορείτε να επιλέξετε ένα από τα cloud IDEs και να ακολουθήσετε τις αντίστοιχες οδηγίες του.
+Το CloudIDE είναι ένα εργαλείο το οποίο σου παρέχει έναν επεξεργαστή κώδικα καθώς και πρόσβαση σε έναν υπολογιστή στο internet στον οποίο μπορείς να εγκαταστήσεις, να γράψεις και να τρέξεις το λογισμικό. Κατά τη διάρκεια του οδηγού, το CloudIDE θα παίζει το ρόλο του *local machine* (δηλαδή του τοπικού υπολογιστή σας). Παραταύτα, θα χρειαστεί να γράφετε εντολές στο τερματικό όπως ακριβώς οι συμμαθητές σας που χρησιμοποιούν OS X, Ubuntu ή Windows, με την μόνη διαφορά ότι το τερματικό δεν θα τρέχει στον υπολογιστή που κάθεστε αλλά στο cloud (σύννεφο), εκεί που το όρισε το CloudIDE (σε κάποιον εικονικό υπολογιστή, δηλαδή, στο internet). Here are the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com). Μπορείτε να επιλέξετε ένα από τα cloud IDEs και να ακολουθήσετε τις αντίστοιχες οδηγίες του.
 
 #### PaizaCloud Cloud IDE
 
@@ -43,11 +43,96 @@ Now you should see an interface with a sidebar, a big main window with some text
 
 Αυτή η κάτω περιοχή είναι το τερματικό σας. Μπορείτε να χρησιμοποιήσετε το τερματικό για να στείλετε οδηγίες στον απομακρυσμένο υπολογιστή Cloud 9. Μπορείτε να αλλάξετε το μέγεθος αυτού του παραθύρου για να το κάνετε μεγαλύτερο.
 
+#### Glitch.com Cloud IDE
+
+1. Go to [Glitch.com](https://glitch.com/)
+2. Sign up for an account (https://glitch.com/signup) or use your GitHub account if you have one. (See GitHub instructions below.)
+3. Click *New Project* and choose *hello-webpage*
+4. Click on the Tools dropdown list (at the bottom left side of the window), then on Terminal button to open terminal tab with a prompt like this:
+
+{% filename %}Terminal{% endfilename %}
+
+    app@name-of-your-glitch-project:~
+    
+
+When using Glitch.com as your Cloud IDE, you don't have to create a virtual environment. Instead, create the following files manually:
+
+{% filename %}glitch.json{% endfilename %}
+
+```json
+{
+  "install": "pip3 install -r requirements.txt --user",
+  "start": "bash start.sh",
+  "watch": {
+    "throttle": 1000
+  }
+}
+```
+
+{% filename %}requirements.txt{% endfilename %}
+
+    Django~={{ book.django_version }}
+    
+
+{% filename %}.bash_profile{% endfilename %}
+
+```bash
+alias python=python3
+alias pip=pip3
+```
+
+{% filename %}start.sh{% endfilename %}
+
+```bash
+chmod 600 .bash_profile
+pip3 install -r requirements.txt --user
+python3 manage.py makemigrations
+python3 manage.py migrate
+python3 manage.py runserver $PORT
+```
+
+Once these files are created, go to the Terminal and execute the following commands to create your first Django project:
+
+{% filename %}Terminal{% endfilename %}
+
+    django-admin.py startproject mysite .
+    refresh
+    
+
+In order to see detailed error messages, you can activate Django debug logs for your Glitch application. Simply add the following at the end of the `mysite/settings.py` file.
+
+{% filename %}mysite/settings.py{% endfilename %}
+
+```python
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': 'debug.log',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}
+```
+
+This will create a `debug.log` file detailing Django operations and any error messages that might come up, making it much easier to fix if your website does not work.
+
+The initial restarting of the Glitch project should fail. (If you click on the top dropdown button `Show` then click on `In a New Window`, you will receive a `DisallowedHost` error message.) Do not worry about it at this stage, the tutorial will fix this as soon as you update the Django settings of your project in the `mysite/settings.py` file.
+
 ### Εικονικό Περιβάλλον
 
 A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
-Εκτέλεση:
+Run:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -58,7 +143,7 @@ A virtual environment (also called a virtualenv) is like a private box we can st
     pip install django~={{ book.django_version }}
     
 
-(Σημειώστε ότι στην τελευταία γραμμή χρησιμοποιούμε μια περισπωμένη ακολουθούμενη από ένα σύμβολο ίσον: ` ~ = `).
+(note that on the last line we use a tilde followed by an equal sign: `~=`).
 
 ### GitHub
 
