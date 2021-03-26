@@ -19,7 +19,7 @@ Python для Windows можна завантажити з сайту https://ww
 
 Зверніть увагу на одну річ: під час встановлення з'явиться вікно з заголовком "Setup". Переконайтесь, що ви поставили галочку "Add Python {{ book.py_version }} to PATH" або "Add Python to your environment variables", і натисніть "Install Now", як показано тут (це може виглядати трохи інакше, якщо ви встановлюєте іншу версію):
 
-![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
+![Не забудьте додати Python до змінної Path](../python_installation/images/python-installation-options.png)
 
 Коли встановлення завершиться, ви можете побачити діалогове вікно з посиланням, щоб дізнатись більше про Python або про версію, яку ви встановили. Закрийте або скасуйте цей діалог: у цьому посібнику ви дізнаєтесь значно більше!
 
@@ -108,10 +108,10 @@ data-collapse=true ces-->
     Python {{ book.py_release }}
     
 
-The version shown may be different from {{ book.py_release }} -- it should match the version you installed.
+Версія може відрізнятися від {{ book.py_release }} -- вона має відповідати встановленій вами версії.
 
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is {{ book.py_min_version }} or higher. If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
+**ПРИМІТКА:** Якщо ви у Windows і отримуєте повідомлення про помилку, що `python3` не знайдено, спробуйте використати `python` (без `3`) і перевірте, що версія Python не менше за {{ book.py_min_version }}. Якщо це не спрацювало, ви можете відкрити новий командний рядок і спробувати знову; подібне відбувається, якщо ви використовуєте командний рядок, що був відкритий ще до початку встановлення Python.
 
 * * *
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
+Якщо маєте певні сумніви, або щось пішло не так і ви без поняття, що робити далі - будь ласка, зверніться до свого тренера! Інколи не все йде гладко і краще звернутись по допомогу до когось, хто має більше досвіду.
