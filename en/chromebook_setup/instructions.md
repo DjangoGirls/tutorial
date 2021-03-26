@@ -73,7 +73,8 @@ bigger.
 app@name-of-your-glitch-project:~
 ```
 
-When using Glitch.com as your Cloud IDE, we do not create a virtual environment but we create the following files manually :
+When using Glitch.com as your Cloud IDE, you don't have to create a virtual environment.
+Instead, create the following files manually:
 
 {% filename %}glitch.json{% endfilename %}
 ```json
