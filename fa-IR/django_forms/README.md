@@ -101,7 +101,7 @@ After saving and refreshing the page http://127.0.0.1:8000 you will see a famili
 
 ## آدرس اینترنتی
 
-We open `blog/urls.py` in the code editor and add a line:
+فایل url اپلیکیشن را که در آدرس `blog/urls.py` است باز کرده و کد زیر را به آن اضافه میکنیم:
 
 {% filename %}blog/urls.py{% endfilename %}
 
