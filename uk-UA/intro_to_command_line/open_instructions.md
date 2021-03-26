@@ -9,7 +9,7 @@
 - Утримуючи спеціальну клавішу "Windows" на клавіатурі, натисніть клавішу "X". Виберіть "Командний рядок" ("Command Prompt") або "Оболонка Windows PowerShell" із меню, яке з'явиться.
 - Утримуючи клавішу "Windows", натисніть клавішу "R", щоб відкрити вікно "Виконати". Введіть "cmd" у текстовому полі та натисніть кнопку "OK".
 
-![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
+![Введіть "cmd" у вікні "Виконати"](../python_installation/images/windows-plus-r.png)
 
 Пізніше, в цьому посібнику вам знадобиться два командних вікна, відчинених одночасно. Однак, на деяких версіях Windows, якщо у вас вже є одне відчинене вікно і ви спробуєте відкрити друге за допомогою того ж методу, вас переадресує знову на те ж командне вікно, що вже відкрите. Спробуйте це зараз на своєму комп'ютері та подивіться, що станеться! Якщо ви отримуєте лише одне командне вікно, то спробуйте якийсь інший метод зі списку вище. Принаймні один з них повинен відкривати нове командне вікно.
 
@@ -23,6 +23,6 @@
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-It's probably under Applications → Accessories → Terminal, or Applications → System → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
+Скоріш за все Додатки → Стандартні → Термінал (Applications → Accessories → Terminal), або Додатки → Система → Термінал (Applications → System → Terminal), але це може залежати від вашого дистрибутива. Якщо ж немає нічого подібного, спробуйте погуглити це. :)
 
 <!--endsec-->
