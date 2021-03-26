@@ -1,8 +1,8 @@
 Bạn có thể [bỏ qua phần này](http://tutorial.djangogirls.org/en/installation/#install-python) nếu bạn không sử dụng Chromebook. Nếu có thì việc cài đặt của bạn có thể có một chút khác biệt. Bạn có thể bỏ qua phần còn lại của hướng dẫn cài đặt này.
 
-### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
+### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com)
 
-Cloud IDE là một công cụ hỗ trợ viết code và giúp bạn truy cập vào máy tính đang chạy trên Internet, nơi mà bạn có thể cài đặt, viết và chạy chương trình trên đó. Trong suốt bài hướng dẫn này, cloud IDE sẽ hoạt động như *local machine*. Bạn vẫn sẽ chạy lệnh trên terminal như trên OS X, Ubuntu, hay Windows, chỉ khác là terminal của bạn được kết nối với một máy tính đang nằm trên cloud của IDE và đã được cloud IDE sắp xếp cho bạn. running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Đây là hướng dẫn cho cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). Bạn có thể chọn 1 trong số các IDE này, hướng dẫn như sau.
+Cloud IDE là một công cụ hỗ trợ viết code và giúp bạn truy cập vào máy tính đang chạy trên Internet, nơi mà bạn có thể cài đặt, viết và chạy chương trình trên đó. Trong suốt bài hướng dẫn này, cloud IDE sẽ hoạt động như *local machine*. Bạn vẫn sẽ chạy lệnh trên terminal như trên OS X, Ubuntu, hay Windows, chỉ khác là terminal của bạn được kết nối với một máy tính đang nằm trên cloud của IDE và đã được cloud IDE sắp xếp cho bạn. running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here are the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com). Bạn có thể chọn 1 trong số các IDE này, hướng dẫn như sau.
 
 #### PaizaCloud Cloud IDE
 
@@ -43,11 +43,96 @@ Bây giờ bạn sẽ thấy một giao diện với một sidebar, một cửa 
 
 Phần dưới là terminal của bạn. Bạn có thể sử dụng terminal để gửi chỉ dẫn tới máy tính remote Cloud 9. Bạn có thể thay đổi kích thước để làm nó lớn hơn.
 
+#### Glitch.com Cloud IDE
+
+1. Go to [Glitch.com](https://glitch.com/)
+2. Sign up for an account (https://glitch.com/signup) or use your GitHub account if you have one. (See GitHub instructions below.)
+3. Click *New Project* and choose *hello-webpage*
+4. Click on the Tools dropdown list (at the bottom left side of the window), then on Terminal button to open terminal tab with a prompt like this:
+
+{% filename %}Terminal{% endfilename %}
+
+    app@name-of-your-glitch-project:~
+    
+
+When using Glitch.com as your Cloud IDE, you don't have to create a virtual environment. Instead, create the following files manually:
+
+{% filename %}glitch.json{% endfilename %}
+
+```json
+{
+  "install": "pip3 install -r requirements.txt --user",
+  "start": "bash start.sh",
+  "watch": {
+    "throttle": 1000
+  }
+}
+```
+
+{% filename %}requirements.txt{% endfilename %}
+
+    Django~={{ book.django_version }}
+    
+
+{% filename %}.bash_profile{% endfilename %}
+
+```bash
+alias python=python3
+alias pip=pip3
+```
+
+{% filename %}start.sh{% endfilename %}
+
+```bash
+chmod 600 .bash_profile
+pip3 install -r requirements.txt --user
+python3 manage.py makemigrations
+python3 manage.py migrate
+python3 manage.py runserver $PORT
+```
+
+Once these files are created, go to the Terminal and execute the following commands to create your first Django project:
+
+{% filename %}Terminal{% endfilename %}
+
+    django-admin.py startproject mysite .
+    refresh
+    
+
+In order to see detailed error messages, you can activate Django debug logs for your Glitch application. Simply add the following at the end of the `mysite/settings.py` file.
+
+{% filename %}mysite/settings.py{% endfilename %}
+
+```python
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': 'debug.log',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}
+```
+
+This will create a `debug.log` file detailing Django operations and any error messages that might come up, making it much easier to fix if your website does not work.
+
+The initial restarting of the Glitch project should fail. (If you click on the top dropdown button `Show` then click on `In a New Window`, you will receive a `DisallowedHost` error message.) Do not worry about it at this stage, the tutorial will fix this as soon as you update the Django settings of your project in the `mysite/settings.py` file.
+
 ### Môi trường ảo (Virtual Environment)
 
-Một môi trường ảo (thường gọi là một virtualenv) là giống như một môi trường riêng, các tác động vào môi trường này không bị ảnh hưởng bởi môi trường của hệ thống. Chúng ta sử dụng chúng để giữ cho sự khác nhau về mã nguồn của từng dự án trên cùng một môi trường.
+A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
-Chạy:
+Run:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -58,16 +143,16 @@ Chạy:
     pip install django~={{ book.django_version }}
     
 
-(Chú ý dòng cuối cùng chúng tôi sử dụng một dấu ngã theo sau là một dấu bằng: ~ =).
+(note that on the last line we use a tilde followed by an equal sign: `~=`).
 
 ### GitHub
 
-Tạo một tài khoản [Github](https://github.com).
+Make a [GitHub](https://github.com) account.
 
 ### PythonAnywhere
 
-Các bài hướng dẫn Django Girls bao gồm một phần được gọi là triển khai (deploy), đó là quá trình của việc đưa mã nguồn ứng dụng web của bạn đến một máy tính truy cập công cộng (gọi là một máy chủ) để mọi người có thể thấy công việc của bạn.
+The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
 
-Phần này là một chút ngoài lề khi thực hiện các hướng dẫn trên Chromebook kể từ khi chúng tôi sử dụng một máy tính trên Internet (thay vi một chiếc laptop).. Tuy nhiên, đó là vẫn rất hữu ích, như chúng ta có thể coi Cloud 9 như là một môi trường phát triển và Python Anywhere như là nơi để triển khai các công cụ của chúng ta khi nó trở nên hoàn chỉnh hơn.
+This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
-Vì vậy, đăng ký cho một tài khoản Python Anywhere mới tại [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
