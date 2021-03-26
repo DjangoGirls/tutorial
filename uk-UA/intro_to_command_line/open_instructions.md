@@ -7,17 +7,17 @@
 - Перейдіть до меню Пуск → Усі програми → Стандартні → Командний рядок (Start menu → All Programs → Accessories → Command Prompt).
 - Перейдіть до екрана Пуск, підведіть курсор миші до нижнього лівого кута екрану та натисніть стрілку вниз, яка з'явиться (на сенсорному екрані замість цього протягніть від нижнього краю екрану). Повинна відкритись сторінка додатків. Натисніть на "Командний рядок" ("Command Prompt") у розділі "Система Windows" ("Windows System").
 - Утримуючи спеціальну клавішу "Windows" на клавіатурі, натисніть клавішу "X". Виберіть "Командний рядок" ("Command Prompt") або "Оболонка Windows PowerShell" із меню, яке з'явиться.
-- Утримуючи клавішу "Windows", натисніть клавішу "R", щоб відкрити вікно "Виконати". Type "cmd" in the box, and click the OK key.
+- Утримуючи клавішу "Windows", натисніть клавішу "R", щоб відкрити вікно "Виконати". Введіть "cmd" у текстовому полі та натисніть кнопку "OK".
 
 ![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
 
-Later in this tutorial, you will need to have two command windows open at the same time. However, on some versions of Windows, if you already have one command window open and you try to open a second one using the same method, it will instead point you to the command window you already have open. Try it now on your computer and see what happens! If you only get one command window, try one of the other methods in the list above. At least one of them should result in a new command window being opened.
+Пізніше, в цьому посібнику вам знадобиться два командних вікна, відчинених одночасно. Однак, на деяких версіях Windows, якщо у вас вже є одне відчинене вікно і ви спробуєте відкрити друге за допомогою того ж методу, вас переадресує знову на те ж командне вікно, що вже відкрите. Спробуйте це зараз на своєму комп'ютері та подивіться, що станеться! Якщо ви отримуєте лише одне командне вікно, то спробуйте якийсь інший метод зі списку вище. Принаймні один з них повинен відкривати нове командне вікно.
 
 <!--endsec-->
 
 <!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
 
-Go to Applications → Utilities → Terminal.
+Відкрийте Додатки → Утиліти → Термінал (Applications → Utilities → Terminal).
 
 <!--endsec-->
 
