@@ -1,10 +1,10 @@
-> For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA) video.
+> Для читачів вдома: відеоверсія цього розділу - [Встановлення Python та редактора коду](https://www.youtube.com/watch?v=pVTaqzKZCdA) (англ.).
 > 
-> This section is based on a tutorial by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
+> Цей розділ базується на навчальних матеріалах Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want you to install the latest version of Python 3, so if you have any earlier version, you will need to upgrade it. If you already have version {{ book.py_min_version }} or higher you should be fine.
+Django написаний на Python. Нам потрібен Python, щоб робити на Django усе, що заманеться. Почнемо з його інсталяції! Ми хочемо, щоб ви встановили останню версію Python 3, отже якщо у вас встановлена більш рання версія, вам потрібно її оновити. Якщо у вас вже є версія {{ book.py_min_version }} або вище, то у вас має бути все гаразд.
 
-Please install normal Python as follows, even when you have Anaconda installed on your computer.
+Будь ласка, встановіть звичайний Python, навіть якщо на вашому комп’ютері встановлена Анаконда.
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
