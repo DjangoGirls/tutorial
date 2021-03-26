@@ -8,24 +8,24 @@ Django написаний на Python. Нам потрібен Python, щоб р
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
-First check whether your computer is running a 32-bit version or a 64-bit version of Windows, on the "System type" line of the System Info page. To reach this page, try one of these methods:
+Спочатку перевірте, яка версія Windows встановлена на вашому комп'ютері (64- чи 32-розрядна) у рядку "Тип системи" сторінки налаштувань "Система". Щоб відкрити цю сторінку, оберіть один з цих способів:
 
-* Press the Windows key and Pause/Break key at the same time
-* Open your Control Panel from the Windows menu, then navigate to System & Security, then System
-* Press the Windows button, then navigate to Settings > System > About
-* Search the Windows Start menu for "System Information". To do that, click the Start button or press the Windows key, then begin to type `System Information`. It will start making suggestions as soon as you type. You can select the entry once it shows up.
+* Натисніть на клавіатурі комбінацію клавіш Win + Pause/Break
+* Відкрийте панель керування у меню Windows, потім перейдіть до категорії "Системи й безпека", і звідти - до "Система"
+* Натисніть клавішу Windows, а потім перейдіть до Настройки > Система > Про систему
+* Знайдіть у меню "Пуск" розділ "Система". Для цього натисніть кнопку «Пуск» (або клавішу Windows), а потім почніть набирати `Система`. Посилання на сторінку "Система" з'явиться одразу, як тільки ви почнете набирати. І ви можете одразу обрати його.
 
-You can download Python for Windows from the website https://www.python.org/downloads/windows/. Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
+Python для Windows можна завантажити з сайту https://www.python.org/downloads/windows/. Натисніть на посилання "Latest Python 3 Release - Python 3.x.x". Якщо ваш комп'ютер працює з **64-розрядною** версією Windows, завантажте **Windows installer (64-bit)** (посилання шукайте у самому низу). Інакше завантажте **Windows installer (32-bit)**. Після завантаження інсталятора запустіть його (двічі клацніть на ньому) і виконайте усі подальші інструкції.
 
-One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python {{ book.py_version }} to PATH" or 'Add Python to your environment variables" checkbox and click on "Install Now", as shown here (it may look a bit different if you are installing a different version):
+Зверніть увагу на одну річ: під час встановлення з'явиться вікно з заголовком "Setup". Переконайтесь, що ви поставили галочку "Add Python {{ book.py_version }} to PATH" або "Add Python to your environment variables", і натисніть "Install Now", як показано тут (це може виглядати трохи інакше, якщо ви встановлюєте іншу версію):
 
 ![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
 
-When the installation completes, you may see a dialog box with a link you can follow to learn more about Python or about the version you installed. Close or cancel that dialog -- you'll be learning more in this tutorial!
+Коли встановлення завершиться, ви можете побачити діалогове вікно з посиланням, щоб дізнатись більше про Python або про версію, яку ви встановили. Закрийте або скасуйте цей діалог: у цьому посібнику ви дізнаєтесь значно більше!
 
-Note: If you are using an older version of Windows (7, Vista, or any older version) and the Python {{ book.py_version }} installer fails with an error, then install all Windows Updates and try to install Python again. If you still have the error, try installing Python version {{ book.py_min_release }} from [Python.org](https://www.python.org/downloads/windows/).
+Примітка: Якщо ви використовуєте стару версію Windows (7, Vista, або будь-яка стара версія) і встановлення Python {{ book.py_version }} зазнає помилки, то встановіть усі оновлення для Windows і спробуйте встановити Python знову. Якщо помилка залишилась, спробуйте встановити версію Python {{ book.py_min_release }} з [Python.org](https://www.python.org/downloads/windows/).
 
-> Django {{ book.django_version }} needs Python {{ book.py_min_version }} or greater, which does not support Windows XP or earlier versions.
+> Django {{ book.django_version }} потребує Python {{ book.py_min_version }} або вище: ці версії не підтримують Windows XP або більш ранні версії Windows.
 
 <!--endsec-->
 
