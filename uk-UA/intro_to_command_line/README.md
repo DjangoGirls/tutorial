@@ -419,23 +419,23 @@
 
 Для зручності ми зібрали основні команди у таблиці:
 
-| Команда (Windows) | Команда (Mac OS / Linux) | Опис                       | Приклад                                            |
-| ----------------- | ------------------------ | -------------------------- | -------------------------------------------------- |
-| exit              | вихід                    | закрити вікно              | **вихід**                                          |
-| cd                | cd                       | змінити директорію         | **cd test**                                        |
-| cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)       |
-| dir               | ls                       | список директорій/файлів   | **dir**                                            |
-| copy              | cp                       | скопіювати файл            | **copy c:\test\test.txt c:\windows\test.txt**  |
-| move              | mv                       | перемістити файл           | **move c:\test\test.txt c:\windows\test.txt**  |
-| mkdir             | mkdir                    | створити нову директорію   | **mkdir testdirectory**                            |
-| rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                         |
-| rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                            |
-| [CMD] /?          | man [CMD]                | get help for a command     | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
+| Команда (Windows) | Команда (Mac OS / Linux) | Опис                         | Приклад                                             |
+| ----------------- | ------------------------ | ---------------------------- | --------------------------------------------------- |
+| exit              | exit                     | закрити вікно                | **exit**                                            |
+| cd                | cd                       | змінити директорію           | **cd test**                                         |
+| cd                | pwd                      | показати поточну директорію  | **cd** (Windows) або **pwd** (Mac OS / Linux)       |
+| dir               | ls                       | список директорій/файлів     | **dir**                                             |
+| copy              | cp                       | скопіювати файл              | **copy c:\test\test.txt c:\windows\test.txt**   |
+| move              | mv                       | перемістити файл             | **move c:\test\test.txt c:\windows\test.txt**   |
+| mkdir             | mkdir                    | створити нову директорію     | **mkdir testdirectory**                             |
+| del               | rm                       | видалити файл                | **del c:\test\test.txt**                          |
+| rmdir /s          | rm -r                    | видалити директорію          | **rm -r testdirectory**                             |
+| [CMD] /?          | man [CMD]                | показати довідку для команди | **cd /?** (Windows) або **man cd** (Mac OS / Linux) |
 
-These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
+Це лише невелика кількість команд, які можна запускати у вашому командному рядку, однак поки вам більше і не буде потрібно.
 
-If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+Якщо вас цікавить, [ss64.com](http://ss64.com) містить опис усіх команд для усіх операційних систем.
 
 ## Готові?
 
-Let's dive into Python!
+Давайте зануримось у Python!
