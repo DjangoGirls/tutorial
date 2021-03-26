@@ -300,11 +300,11 @@
 
 * * *
 
-### Clean up
+### Прибираємо
 
-We don't want to leave a mess, so let's remove everything we did until that point.
+Ми не хочемо залишити безлад, тож давайте видалимо усе, що ми створили до цього моменту.
 
-First, we need to get back to Desktop:
+Спочатку нам потрібно повернутися назад до директорії Робочий стіл:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -324,9 +324,9 @@ First, we need to get back to Desktop:
 
 <!--endsec-->
 
-Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+Використання `cd` із `..` змінить вашу поточну директорію на батьківську (тобто папку, що містить вашу поточну папку).
 
-Check where you are:
+Перевірте, де ми:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -348,9 +348,9 @@ Check where you are:
 
 <!--endsec-->
 
-Now time to delete the `practice` directory:
+Тепер час видалити директорію `practice`:
 
-> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
+> **Увага**: Видалення файлів за допомогою `del`, `rmdir` або `rm` є безповоротнім, тобто *файли будуть видалені назавжди*! Тож будьте конче обережними з цією командою.
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
@@ -371,7 +371,7 @@ Now time to delete the `practice` directory:
 
 <!--endsec-->
 
-Done! To be sure it's actually deleted, let's check it:
+Виконано! Щоб переконатися, що папку дійсно видалено, давайте перевіримо:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -391,9 +391,9 @@ Done! To be sure it's actually deleted, let's check it:
 
 <!--endsec-->
 
-### Exit
+### Вихід
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+Це все наразі! Можна тепер спокійно закрити командний рядок. Давайте зробимо це хакерським методом, добре? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
