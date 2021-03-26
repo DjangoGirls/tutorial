@@ -113,7 +113,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 > 
 > Falls du Cloud9 benutzt, füge auch `.amazonaws.com` zu den `ALLOWED_HOSTS` hinzu
 > 
-> If you are hosting your project on `Glitch.com`, let us protect the Django secret key that needs to remain confidential (otherwise, anyone remixing your project could see it): * First, we are going to create a random secret key. Open the Glitch terminal again, and type the following command: {% filename %}.env{% endfilename %} 
+> Wenn du dein Projekt auf `Glitch.com` hostest, dann lass uns den Django-Sekret-Key schützen, der vertraulich bleiben muss (andernfalls könnte jeder, der dein Projekt remixt, diesen sehen): * Zuerst erstellen wir einen zufälligen geheimen Schlüssel. Öffne erneut das Glitch-Terminal und gib den folgenden Befehl ein: {% filename %}.env{% endfilename %} 
 > 
 >     bash
 >         python -c 'from django.core.management.utils import get_random_secret_key; \
@@ -203,21 +203,21 @@ or this one if you are using Glitch:
     
     
 
-If you are on Windows and this fails with `UnicodeDecodeError`, use this command instead:
+Wenn du Windows benutzt und dies mit dem `UnicodeDecodeError` fehlschläft, verwende diesen Befehl:
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Now you need to check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
+Jetzt wollen wir schauen, ob unsere Website funktioniert: Öffne deinen Browser (Firefox, Chrome, Safari, Edge oder was du sonst nutzt) und gib diese Adresse ein:
 
 {% filename %}browser{% endfilename %}
 
     http://127.0.0.1:8000/
     
 
-If you're using a Chromebook and Cloud9, instead click the URL in the pop-up window that should have appeared in the upper right corner of the command window where the web server is running. The URL will look something like:
+Wenn du ein Chromebook und Cloud9 verwendest, dann klicke stattdessen die URL im erschienenen Fenster in der oberen rechten Ecke des Kommandozeilenfensters, in dem der Webserver läuft. Die URL sollte etwa so aussehen:
 
 {% filename %}browser{% endfilename %}
 
@@ -229,14 +229,14 @@ or on Glitch:
     https://name-of-your-glitch-project.glitch.me
     
 
-Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?
+Glückwunsch! Du hast gerade deine erste Website erstellt und sie auf deinem Webserver laufen! Ist das nicht toll?
 
-![Install worked!](images/install_worked.png)
+![Installation hat funktioniert!](images/install_worked.png)
 
-Note that a command window can only run one thing at a time, and the command window you opened earlier is running the web server. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
+Beachte, dass ein Terminalfenster immer nur eine Sache zur selben Zeit erledigen kann, und in dem Terminalfenster, was du vorhin geöffnet hast, läuft gerade der Webserver. Und solange der Webserver läuft und auf einkommende Anfragen wartet, akzeptiert das Terminal zwar Texteingaben, aber es wird keine neuen Befehle ausführen.
 
 > Wie Webserver funktionieren, haben wir im Kapitel **"Wie das Internet funktioniert"** angesehen.
 
-To type additional commands while the web server is running, open a new terminal window and activate your virtualenv -- to review instructions on how to open a second terminal window, see [Introduction to the command line](../intro_to_command_line/README.md). To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
+Um weitere Kommandos einzugeben, während der Webserver läuft, öffne ein neues Kommandozeilen-Fenster und aktiviere dort deine Virtualenv-Umgebung. Siehe [Einführung in die Kommandozeile](../intro_to_command_line/README.md), um nachzulesen, wie du ein zweites Kommandozeilen-Fenster öffnen kannst. Um den Webserver zu stoppen, wechsel zurück in das Fenster, in dem er läuft, und drücke STRG+C - Steuerung und C gleichzeitig. (In Windows kann es sein, dass du STRG und "Pause"-Taste drücken musst).
 
-Ready for the next step? It's time to create some content!
+Bereit für den nächsten Schritt? Es wird Zeit, ein paar Inhalte hinzuzufügen!
