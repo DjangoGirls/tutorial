@@ -1,4 +1,4 @@
-> Для читачів вдома: відеоверсія цього розділу - [Встановлення Python та редактора коду](https://www.youtube.com/watch?v=pVTaqzKZCdA) (англ.).
+> Для читачів вдома: відеоверсія цього розділу (разом із наступним) - [Встановлення Python та редактора коду](https://www.youtube.com/watch?v=pVTaqzKZCdA) (англ.).
 > 
 > Цей розділ базується на навчальних матеріалах Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
