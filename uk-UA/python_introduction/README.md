@@ -142,7 +142,7 @@
 
 ## Помилки
 
-Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
+Спробуємо щось нове. Чи можемо ми отримати довжину числа тим же методом, як ми це робили для нашого імені? Наберіть `len(304023)` та натисніть `Enter`:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -153,9 +153,9 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-We got our first error! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. Making mistakes (even intentional ones) are an important part of learning!
+Ми отримали нашу першу помилку! Іконка {{ warning_icon }} - це наш спосіб попередити вас, що код, який ви збираєтесь запустити, не буде працювати так, як очікувалося. Робити помилки (навіть навмисне) – важлива частина навчання!
 
-It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
+Отже, прочитаємо уважно текст помилки вище. У ньому йдеться про те, що об'єкт типу "int" (integers, цілі числа) не має довжини. І що ж нам тепер робити? Можливо, можна записати наше число у формі рядка? Рядки ж мають довжину, правда?
 
 {% filename %}command-line{% endfilename %}
 
@@ -164,12 +164,12 @@ It says that objects of type "int" (integers, whole numbers) have no length. So 
 6
 ```
 
-It worked! We used the `str` function inside of the `len` function. `str()` converts everything to strings.
+Спрацювало! Ми використали функцію `str` всередині функції `len`. `str()` перетворює будь-що на рядок.
 
-- Функція `str` перетворює речі на **рядки**
-- Функція `int` перетворює речі на **цілі числа**
+- Функція `str` перетворює будь-який об'єкт на **рядок**
+- Функція `int` перетворює будь-який об'єкт на **ціле число** (якщо це можливо)
 
-> Important: we can convert numbers into text, but we can't necessarily convert text into numbers – what would `int('hello')` be anyway?
+> Важливо: ми можемо перетворити число на текст, однак не завжди можемо перетворити текст на число - чому б могло дорівнювати, наприклад, `int('hello')`?
 
 ## Змінні
 
