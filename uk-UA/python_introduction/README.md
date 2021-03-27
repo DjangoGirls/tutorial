@@ -26,11 +26,11 @@
 
 ## Ваша перша команда на Python!
 
-After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
+Після запуску команди Python, як ми побачили, запрошення змінилось на `>>>`. Для нас це означає, що відтепер ми можемо користуватися лише командами мови Python. Вам не доведеться друкувати `>>>`, Python зробить це для вас сам.
 
-If you want to exit the Python console at any point, type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
+Якщо забажаєте вийти із консолі Python, наберіть `exit()` або використайте комбінацію клавіш `Ctrl + Z` для Windows і `Ctrl + D` для Mac/Linux. Після цього ви більше не побачите `>>>`.
 
-For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
+Але наразі ми не бажаємо виходити із консолі Python. Ми хочемо дізнатися про неї більше. Почнемо з чогось простенького. Наприклад, спробуйте набрати певний математичний вираз, на зразок `2 + 3`, та натисніть `enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -39,22 +39,22 @@ For now, we don't want to exit the Python console. We want to learn more about i
 5
 ```
 
-Nice! See how the answer popped out? Python knows math! You could try other commands like:
+Чудово! Бачите, де з'явилась відповідь? Python знає математику! Можна спробувати інші команди, наприклад:
 
 - `4 * 5`
 - `5 - 1`
 - `40 / 2`
 
-To perform exponential calculation, say 2 to the power 3, we type: {% filename %}command-line{% endfilename %}
+Для піднесення до степеня, наприклад 2 у степені 3, ми пишемо: {% filename %}command-line{% endfilename %}
 
 ```python
 >>> 2 ** 3
 8
 ```
 
-Have fun with this for a little while and then get back here. :)
+Поки що можете трохи побавитися із математикою, а далі повертайтесь назад :).
 
-As you can see, Python is a great calculator. If you're wondering what else you can do…
+Як бачите, Python є чудовим калькулятором. Мабуть вам цікаво, що ще можна робити?
 
 ## Рядки
 
