@@ -2,19 +2,19 @@
 
 # Вступ до Python
 
-> Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> Частина цього розділу базується на матеріалах Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
-Let's write some code!
+Давайте напишемо якийсь код!
 
-## Командний рядок Python
+## Консоль Python
 
-> For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
+> Для читачів вдома: відеоверсія цього розділу - [Основи Python: числа, рядки, списки, змінні та помилки](https://www.youtube.com/watch?v=MO63L4s-20U) (англ.).
 
-To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+Щоб розпочати роботу із Python, нам необхідно відкрити *командний рядок*. Ви вже повинні знати, як це зробити, адже ознайомились із цим у розділі [Вступ до командного рядка](../intro_to_command_line/README.md).
 
-Once you're ready, follow the instructions below.
+Як тільки будете готові, виконайте наведені нижче інструкції.
 
-We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
+Ми хочемо відкрити консоль Python, тому введіть `python` на Windows або `python3` на Mac OS/Linux та натисніть `Enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -98,7 +98,7 @@ Using double quotes:
 "Runnin' down the hill"
 ```
 
-or escaping the apostrophe with a backslash (``):
+or escaping the apostrophe with a backslash (`\`):
 
 {% filename %}command-line{% endfilename %}
 
