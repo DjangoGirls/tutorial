@@ -58,7 +58,7 @@
 
 ## Рядки
 
-How about your name? Type your first name in quotes like this:
+Як щодо вашого імені? Наберіть ваше ім'я в лапках, як тут (можна писати кирилицею):
 
 {% filename %}command-line{% endfilename %}
 
@@ -67,9 +67,9 @@ How about your name? Type your first name in quotes like this:
 'Ola'
 ```
 
-You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
+Щойно ви створили свій перший рядок! Це послідовність символів, що може бути оброблена комп'ютером. Рядок має починатися і закінчуватися одним і тим же символом. Це може бути одинарна (`'`) або подвійна (`"`) лапка (немає ніякої різниці)! Лапки вказують Python, що всередині них рядок.
 
-Strings can be strung together. Try this:
+Рядки можна об'єднувати. Спробуйте:
 
 {% filename %}command-line{% endfilename %}
 
@@ -78,7 +78,7 @@ Strings can be strung together. Try this:
 'Hi there Ola'
 ```
 
-You can also multiply strings with a number:
+Рядки можна не тільки додавати, але й множити на число:
 
 {% filename %}command-line{% endfilename %}
 
@@ -87,9 +87,9 @@ You can also multiply strings with a number:
 'OlaOlaOla'
 ```
 
-If you need to put an apostrophe inside your string, you have two ways to do it.
+Якщо вам раптом треба поставити апостроф всередині рядка, то існує два шляхи це зробити.
 
-Using double quotes:
+Використавши подвійні лапки:
 
 {% filename %}command-line{% endfilename %}
 
@@ -98,7 +98,7 @@ Using double quotes:
 "Runnin' down the hill"
 ```
 
-or escaping the apostrophe with a backslash (`\`):
+або ж "екранувати" апостроф за допомогою оберненої скісної риски `\` (бекслеш, англ. backslash):
 
 {% filename %}command-line{% endfilename %}
 
@@ -107,7 +107,7 @@ or escaping the apostrophe with a backslash (`\`):
 "Runnin' down the hill"
 ```
 
-Nice, huh? To see your name in uppercase letters, type:
+Гарно, еге ж? Щоб побачити своє ім'я, написане великими літерами, наберіть:
 
 {% filename %}command-line{% endfilename %}
 
@@ -116,9 +116,9 @@ Nice, huh? To see your name in uppercase letters, type:
 'OLA'
 ```
 
-You just used the `upper` **method** on your string! A method (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
+Ви щойно застосували до свого рядка **функцію** `upper`! Функція (така як `upper()`) - це набір інструкцій, які повинен виконувати Python над заданим об'єктом (`"Ola"`) після того, як ви її викликали.
 
-If you want to know the number of letters contained in your name, there is a **function** for that too!
+Якщо ви раптом забажаєте дізнатися число букв у вашому імені, то для цього також існує функція!
 
 {% filename %}command-line{% endfilename %}
 
@@ -127,7 +127,7 @@ If you want to know the number of letters contained in your name, there is a **f
 3
 ```
 
-Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
+Здивовані, чому іноді ви викликаєте функції із `.` наприкінці рядка (на зразок `"Ola".upper()`), а іноді ви спочатку викликаєте функцію, а рядок вказуєте після неї у дужках? Що ж, у деяких випадках функції належать об'єктам, як наприклад `upper()`, - це означає, що така функція може бути виконана лише над рядком. У цьому випадку ми називаємо функцію **методом**. В інших випадках функції не прив'язані до якогось конкретного об'єкта і можуть використовуватись над різними типами об'єктів, як наприклад `len()`. Саме тому ми використовуємо `"Ola"` у якості параметра для функції `len`.
 
 ### Зміст
 
