@@ -178,7 +178,7 @@ That should print out some things like `Collecting pythonanywhere`, and eventual
 
 Now we run the helper to automatically configure our app from GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
 
-{% filename %}PythonAnywhere командний рядок 
+{% filename %}командний рядок PythonAnywhere{% endfilename %}
 
     $ pa_autoconfigure_django.py --python=3.8 https://github.com/<your-github-username>/my-first-blog.git
     
