@@ -152,10 +152,10 @@ To create a new `Post` form, we need to call `PostForm()` and pass it to the tem
 
 We need to create a file `post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
 
-* Ми маємо проявити форму. Можемо це зробити, наприклад, за допомогою `{{ form.as_p }}`. 
-* The line above needs to be wrapped with an HTML form element: `<form method="POST">...</form>`.
-* Нам знадобиться кнопка Зберегти - `Save`. Створимо її в HTML за допомогою: `<button type="submit">Save</button>`.
-* І нарешті зразу після відкриття тегу для форми `<form ...>` потрібно додати `{% csrf_token %}`. Це дуже важливо з міркувань безпеки вашої форми! Якщо ви раптом забудете про цей біт, Django поскаржиться, коли будете намагатися зберегти форму:
+* Ми маємо відобразити форму. Можемо це зробити, наприклад, за допомогою {% raw %}`{{ form.as_p }}`{% endraw %}. 
+* Вказаний рядок має бути розміщений всередині тега форми HTML: `<form method="POST">...</form>`.
+* Нам знадобиться кнопка "Зберегти" - `Save`. Створимо її в HTML за допомогою виразу `<button type="submit">Save</button>`.
+* І нарешті зразу після відкриття тегу форми `<form ...>` потрібно додати {% raw %}`{% csrf_token %}`{% endraw %}. Це дуже важливо з міркувань безпеки вашої форми! Якщо ви раптом забудете про цю деталь, Django поскаржиться, коли будете намагатися зберегти форму:
 
 ![CSFR Forbidden page](images/csrf2.png)
 
