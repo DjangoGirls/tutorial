@@ -22,7 +22,7 @@ Git відслідковує зміни певних файлів в репоз�
 
 > **Note** Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. Ви маєте бути в папці `djangogirls`.
 
-{% filename %}command-line{% endfilename
+{% filename %}command-line{% endfilename %}
 
     $ git init
     Initialized empty Git repository in ~/djangogirls/.git/
