@@ -203,14 +203,14 @@ Now, run `pip install -r requirements.txt` to install Django.
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
+> 如果你在Windows平台上调用pip时出错，请检查你的项目路径名是否包含空格、重音或特殊字符(例如， If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). 请在新目录中创建一个新的virtualenv，然后删除旧的，并再次尝试上面的命令。 (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
 
 <!--endsec-->
 
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
+> 当你试图安装Django时，你的命令行可能会冻结。如果发生这种情况，请使用上面的命令:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -222,7 +222,7 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
+> 如果你在Ubuntu 12.04中调用pip时出现错误，请运行 `python -m pip install -U --force-reinstall pip` 来修复虚拟版中的pip安装
 
 <!--endsec-->
 
