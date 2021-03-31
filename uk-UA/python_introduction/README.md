@@ -242,7 +242,7 @@ NameError: name 'ctiy' is not defined
 
 ## Функція print
 
-Try this:
+Спробуйте таке:
 
 {% filename %}command-line{% endfilename %}
 
@@ -254,9 +254,9 @@ Try this:
 Maria
 ```
 
-When you just type `name`, the Python interpreter responds with the string *representation* of the variable 'name', which is the letters M-a-r-i-a, surrounded by single quotes, ''. When you say `print(name)`, Python will "print" the contents of the variable to the screen, without the quotes, which is neater.
+Коли ви вводите просто `name`, інтерпретатор Python видає рядкове *представлення* змінної 'name', тобто набір літер M-a-r-i-a, взятий в одинарні лапки, ''. Коли ж ви пишете `print(name)`, Python "друкує" (англ. print) значення змінної на екран без лапок, що є більш елегантним.
 
-As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things on multiple lines.
+Як ми потім побачимо, `print()` є також корисним, коли ми хочемо надрукувати повідомлення зсередини функцій, або ж коли хочемо надрукувати щось у декілька рядків.
 
 ## Списки
 
