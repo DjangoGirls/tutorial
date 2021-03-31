@@ -419,7 +419,7 @@ KeyError: 'age'
 - Вам необхідна лише впорядкована послідовність елементів? Користуйтеся списком.
 - Вам потрібні значення, асоційовані із ключами, так щоб ви могли легко їх знаходити (за допомогою ключа)? Користуйтеся словником.
 
-Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key–value pairs to a dictionary after it is created, like this:
+Словники, як і списки, є *змінюваними*, це означає що вони можуть бути змінені після того, як створені. Ви можете додати нові пари ключ-значення до словника після того, як він був створений, наприклад:
 
 {% filename %}command-line{% endfilename %}
 
@@ -427,7 +427,7 @@ Dictionaries, like lists, are *mutable*, meaning that they can be changed after 
 >>> participant['favorite_language'] = 'Python'
 ```
 
-Like lists, using the `len()` function on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
+Як і для списків, функція `len()` для словників повертає кількість пар ключ-значення в словнику. Наберіть команду:
 
 {% filename %}command-line{% endfilename %}
 
@@ -436,7 +436,7 @@ Like lists, using the `len()` function on the dictionaries returns the number of
 4
 ```
 
-I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
+Сподіваємося, це наразі має сенс. :) Готові до ще більшого задоволення від роботи зі словниками? Читайте далі, щоб побачити дещо дивовижне.
 
 You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, type in the following command:
 
