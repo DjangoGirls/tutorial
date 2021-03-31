@@ -174,7 +174,7 @@ Before we do that, we should make sure we have the latest version of `pip`, the 
 
 A requirements file keeps a list of dependencies to be installed using `pip install`:
 
-First create a `requirements.txt` file inside of the `djangogirls/` folder, using the code editor that you installed earlier. You do this by opening a new file in the code editor and then saving it as `requirements.txt` in the `djangogirls/` folder. Your directory will look like this:
+首先请使用前面安装的代码编辑器在 `djangogirls/`文件夹内建立一个`requirements.txt` 文档。 为此，您可以在代码编辑器中打开一个新文件，然后将其保存为`requirements.txt` 在`djangogirls/` 中。 您的目录将如下所示：
 
     djangogirls
     ├── myvenv
@@ -203,7 +203,7 @@ Now, run `pip install -r requirements.txt` to install Django.
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> 如果你在Windows平台上调用pip时出错，请检查你的项目路径名是否包含空格、重音或特殊字符(例如， If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). 请在新目录中创建一个新的virtualenv，然后删除旧的，并再次尝试上面的命令。 (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
+> 如果你在Windows平台上调用pip时出错，请检查你的项目路径名是否包含空格、重音或特殊字符(例如， If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). 请在新目录中创建一个新的virtualenv，然后删除旧的，并再次尝试上面的命令。 (因为virtualenv使用绝对路径，移动虚拟目录将无法工作。)
 
 <!--endsec-->
 
