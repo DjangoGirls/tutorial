@@ -399,9 +399,9 @@ Maria
 Ola
 ```
 
-See, it's similar to a list. But you don't need to remember the index – just the name.
+Бачите, усе подібно до списку. Але вам не треба пам'ятати індекс – треба знати лише ім'я.
 
-What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
+Що трапиться якщо запитати Python про значення ключа, який не існує? Не здогадуєтесь? Давайте спробуємо і подивимось!
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -412,12 +412,12 @@ Traceback (most recent call last):
 KeyError: 'age'
 ```
 
-Look, another error! This one is a **KeyError**. Python is helpful and tells you that the key `'age'` doesn't exist in this dictionary.
+Погляньте, інша помилка! Цього разу - **KeyError** ("помилка ключа"). Python допомагає і підказує вам, що ключа `'age'` (вік) не існує в даному словнику.
 
-When should you use a dictionary or a list? Well, that's a good point to ponder. Think about the answer before looking at it in the next line.
+Коли ж варто використовувати словник, а коли список? Що ж, гарне питання. Подумайте над ним перед тим, як подивитися відповідь у наступному рядку.
 
 - Вам необхідна лише впорядкована послідовність елементів? Користуйтеся списком.
-- Вам потрібні значення асоційовані із ключами, так що ви можете ефективно переглядати їх (за допомогою ключа) пізніше? Користуйтеся словником.
+- Вам потрібні значення, асоційовані із ключами, так щоб ви могли легко їх знаходити (за допомогою ключа)? Користуйтеся словником.
 
 Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key–value pairs to a dictionary after it is created, like this:
 
