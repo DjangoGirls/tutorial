@@ -260,9 +260,9 @@ Maria
 
 ## Списки
 
-Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called **list**. Lists are exactly what you think they are: objects which are lists of other objects. :)
+Окрім рядків та чисел, Python має усі види різних типів об'єктів. Наразі ми збираємося представити вашій увазі один із них, він називається **список**. Списки є саме тим, про що ви й подумали: це об'єкти, які є списками інших об'єктів. :)
 
-Go ahead and create a list:
+Створимо список:
 
 {% filename %}command-line{% endfilename %}
 
@@ -271,7 +271,7 @@ Go ahead and create a list:
 []
 ```
 
-Yes, this list is empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repeat ourselves all the time, so we will put it in a variable, too:
+Так, цей список пустий. Не дуже корисно, так? Створимо список лотерейних номерів. Ми не бажаємо увесь час повторюватись, то ж покладемо усе до змінної:
 
 {% filename %}command-line{% endfilename %}
 
@@ -279,7 +279,7 @@ Yes, this list is empty. Not very useful, right? Let's create a list of lottery 
 >>> lottery = [3, 42, 12, 19, 30, 59]
 ```
 
-All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that? You know this already!
+Гаразд, маємо список! Що ми можемо з ним робити? Давайте глянемо, скільки лотерейних номерів міститься у списку. Як ви думаєте, яку функцію для цього можна використати? Ви вже це знаєте!
 
 {% filename %}command-line{% endfilename %}
 
@@ -288,7 +288,7 @@ All right, we have a list! What can we do with it? Let's see how many lottery nu
 6
 ```
 
-Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we will sort it now:
+Так! Знайома вам функція `len()` може дати вам кількість об'єктів у списку. Зручно, правда ж? Тепер, можливо, ми захочемо відсортувати список:
 
 {% filename %}command-line{% endfilename %}
 
@@ -296,7 +296,7 @@ Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we 
 >>> lottery.sort()
 ```
 
-This doesn't return anything, it just changed the order in which the numbers appear in the list. Let's print it out again and see what happened:
+Ця функція нічого не повертає, вона лише змінює порядок, в якому зберігаються числа у списку. Давайте надрукуємо список знову і подивимось, що ж сталося:
 
 {% filename %}command-line{% endfilename %}
 
@@ -305,9 +305,9 @@ This doesn't return anything, it just changed the order in which the numbers app
 [3, 12, 19, 30, 42, 59]
 ```
 
-As you can see, the numbers in your list are now sorted from the lowest to highest value. Congrats!
+Як бачимо, числа у нашому списку тепер відсортовано, починаючи з найменшого і закінчуючи найбільшим значенням. Вітаємо!
 
-Maybe we want to reverse that order? Let's do that!
+Можливо, ми хочемо відсортувати числа у зворотньому порядку? Давайте це зробимо!
 
 {% filename %}command-line{% endfilename %}
 
@@ -317,7 +317,7 @@ Maybe we want to reverse that order? Let's do that!
 [59, 42, 30, 19, 12, 3]
 ```
 
-If you want to add something to your list, you can do this by typing this command:
+Якщо ви забажаєте щось додати до свого списку, то можете це зробити за допомогою такої команди:
 
 {% filename %}command-line{% endfilename %}
 
@@ -327,7 +327,7 @@ If you want to add something to your list, you can do this by typing this comman
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-If you want to show only the first number, you can do this by using **indexes**. An index is the number that says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
+Якщо захочете показати лише перше число зі списку, то можете зробити це використавши **індекси**. Індекс - це порядковий номер, який повідомляє, з якої позиції у списку взято елемент. Програмісти люблять починати відлік з 0, отже перший об'єкт з вашого списку буде мати індекс 0, наступний - 1, і так далі. Спробуйте таке:
 
 {% filename %}command-line{% endfilename %}
 
@@ -338,9 +338,9 @@ If you want to show only the first number, you can do this by using **indexes**.
 42
 ```
 
-As you can see, you can access different objects in your list by using the list's name and the object's index inside of square brackets.
+Як бачимо, ви можете отримати доступ до різних об'єктів списку, написавши індекс об'єкта всередині квадратних дужок після імені списку.
 
-To delete something from your list you will need to use **indexes** as we learned above and the `pop()` method. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
+Для того, щоб видалити що-небудь зі списку, вам потрібно використати **індекси**, які ви вже знаєте, і метод `pop()`. Давайте спробуємо на прикладі та згадаємо, що ми вивчили раніше; ми будемо видаляти перший елемент з нашого списку.
 
 {% filename %}command-line{% endfilename %}
 
@@ -355,11 +355,11 @@ To delete something from your list you will need to use **indexes** as we learne
 [42, 30, 19, 12, 3, 199]
 ```
 
-That worked like a charm!
+Працює чудово!
 
-For extra fun, try some other indexes: 6, 7, 1000, -1, -6 or -1000. See if you can predict the result before trying the command. Do the results make sense?
+Для додаткового задоволення спробуйте різні індекси: 6, 7, 1000, -1, -6 або -1000. Подивіться, чи можете ви передбачити результат команди перед її застосуванням. Чи мають ці результати якийсь смисл?
 
-You can find a list of all available list methods in this chapter of the Python documentation: https://docs.python.org/3/tutorial/datastructures.html
+Список усіх доступних методів списку міститься у цьому розділі документації Python: https://docs.python.org/3/tutorial/datastructures.html
 
 ## Словники
 
