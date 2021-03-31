@@ -173,9 +173,9 @@ TypeError: object of type 'int' has no len()
 
 ## Змінні
 
-An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
+Важливою концепцію в програмуванні є змінні. Змінна - це не більше, ніж ім'я для чогось, що можна буде використовувати пізніше. Програмісти використовують ці змінні для збереження даних, щоб зробити свій код більш читабельним, і в результаті їм не потрібно пам'ятати зайве.
 
-Let's say we want to create a new variable called `name`:
+Скажімо, ми хочемо створити змінну і назвати її `name`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -183,9 +183,9 @@ Let's say we want to create a new variable called `name`:
 >>> name = "Ola"
 ```
 
-We type name equals Ola.
+Бачите? Це просто! Просто: name дорівнює Ola.
 
-As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Enter `name` and hit `enter`:
+Як ви помітили, ваша команда не повернула нічого, на відміну від прикладів вище. Отже, як ми можемо бути певні, що змінна насправді існує? Просто введіть `name` і натисніть `Enter`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -194,7 +194,7 @@ As you've noticed, your program didn't return anything like it did before. So ho
 'Ola'
 ```
 
-Yippee! Your first variable! :) You can always change what it refers to:
+Урра! Ваша перша змінна :)! Ви завжди можете змінити значення, на яке вона посилатиметься:
 
 {% filename %}command-line{% endfilename %}
 
@@ -204,7 +204,7 @@ Yippee! Your first variable! :) You can always change what it refers to:
 'Sonja'
 ```
 
-You can use it in functions too:
+Також можна використовувати її у функціях:
 
 {% filename %}command-line{% endfilename %}
 
@@ -213,7 +213,7 @@ You can use it in functions too:
 5
 ```
 
-Awesome, right? Now, variables can be anything – numbers too! Try this:
+Файно, хіба ні? Звісно, змінні можуть представляти будь-що, наприклад числа! Спробуйте:
 
 {% filename %}command-line{% endfilename %}
 
@@ -224,7 +224,7 @@ Awesome, right? Now, variables can be anything – numbers too! Try this:
 24
 ```
 
-But what if we used the wrong name? Can you guess what would happen? Let's try!
+А якщо ми використали неправильне ім'я? Як ви думаєте, що станеться? Спробуймо!
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -236,9 +236,9 @@ Traceback (most recent call last):
 NameError: name 'ctiy' is not defined
 ```
 
-An error! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
+Помилка! Як бачите, Python має різні типи помилок, і дана помилка називається **NameError** ("помилка імені"). Python видасть цю помилку, якщо ви спробуєте використати досі не визначену змінну. Якщо ж ви зіткнетеся із цією помилкою пізніше, перевірте свій код, чи не зробили ви помилки в написанні імен змінних.
 
-Play with this for a while and see what you can do!
+Поекспериментуйте трохи із цим усім і подивіться, що тут можна робити!
 
 ## Функція print
 
