@@ -363,9 +363,9 @@ Maria
 
 ## Словники
 
-> For readers at home: this part is covered in the [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) video.
+> Для читачів вдома: відеоверсія цього розділу - [Основи Python: словники](https://www.youtube.com/watch?v=ZX1CVvZLE6c) (англ.).
 
-A dictionary is similar to a list, but you access values by looking up a key instead of a numeric index. A key can be any string or number. The syntax to define an empty dictionary is:
+Словник є чимось подібним до списку, але доступ до значень отримується шляхом пошуку за ключем замість числового індексу. Ключ може являти собою будь-який рядок або число. Створити пустий словник можна так:
 
 {% filename %}command-line{% endfilename %}
 
@@ -374,9 +374,9 @@ A dictionary is similar to a list, but you access values by looking up a key ins
 {}
 ```
 
-This shows that you just created an empty dictionary. Hurray!
+Це показує, що ви щойно створили пустий словник. Урра!
 
-Now, try writing the following command (try substituting your own information, too):
+А тепер спробуйте набрати таку команду (можете підставити сюди вашу власну інформацію):
 
 {% filename %}command-line{% endfilename %}
 
@@ -384,13 +384,13 @@ Now, try writing the following command (try substituting your own information, t
 >>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
 ```
 
-With this command, you just created a variable named `participant` with three key–value pairs:
+За допомогою вказаної команди ви щойно створили змінну-словник із назвою `participant` і трьома парами ключ-значення:
 
-- ключ `name` вказує на значення `'Ola'` (об'єкт `string` - рядок),
-- `country` вказує на `'Poland'` (інший об'єкт `string` - рядок),
-- і `favorite_numbers` вказує на `[7, 42, 92]` (об'єкт `list` - список з трьома числами всередині).
+- Ключ `name` (ім'я) вказує на значення `'Ola'` (об'єкт `рядок`),
+- `country` (країна) вказує на `'Poland'` (інший `рядок`),
+- нарешті, `favorite_number` (улюблені числа) вказує на `[7, 42, 92]` ( `список` з трьома числами всередині).
 
-You can check the content of individual keys with this syntax:
+Можна перевірити значення індивідуальних ключів, використовуючи такий синтаксис:
 
 {% filename %}command-line{% endfilename %}
 
