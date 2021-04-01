@@ -153,7 +153,7 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-Ми отримали нашу першу помилку! Іконка {{ warning_icon }} - це наш спосіб попередити вас, що код, який ви збираєтесь запустити, не буде працювати так, як очікувалося. Робити помилки (навіть навмисне) – важлива частина навчання!
+Ми отримали нашу першу помилку (error)! Іконка {{ warning_icon }} - це наш спосіб попередити вас, що код, який ви збираєтесь запустити, не буде працювати так, як очікувалося. Робити помилки (навіть навмисне) – важлива частина навчання!
 
 Отже, прочитаємо уважно текст помилки вище. У ньому йдеться про те, що об'єкт типу "int" (integers, цілі числа) не має довжини. І що ж нам тепер робити? Можливо, можна записати наше число у формі рядка? Рядки ж мають довжину, правда?
 
@@ -260,7 +260,7 @@ Maria
 
 ## Списки
 
-Окрім рядків та чисел, Python має усі види різних типів об'єктів. Наразі ми збираємося представити вашій увазі один із них, він називається **список**. Списки є саме тим, про що ви й подумали: це об'єкти, які є списками інших об'єктів. :)
+Окрім рядків та чисел, Python має усі види різних типів об'єктів. Наразі ми збираємося представити вашій увазі один із них, він називається **список** (list). Списки є саме тим, про що ви й подумали: це об'єкти, які є списками інших об'єктів. :)
 
 Створимо список:
 
@@ -365,7 +365,7 @@ Maria
 
 > Для читачів вдома: відеоверсія цього розділу - [Основи Python: словники](https://www.youtube.com/watch?v=ZX1CVvZLE6c) (англ.).
 
-Словник є чимось подібним до списку, але доступ до значень отримується шляхом пошуку за ключем замість числового індексу. Ключ може являти собою будь-який рядок або число. Створити пустий словник можна так:
+Словник (dict) є чимось подібним до списку (list), але доступ до значень отримується шляхом пошуку за ключем замість числового індексу. Ключ може являти собою будь-який рядок або число. Створити пустий словник можна так:
 
 {% filename %}command-line{% endfilename %}
 
@@ -438,7 +438,7 @@ KeyError: 'age'
 
 Сподіваємося, це наразі має сенс. :) Готові до ще більшого задоволення від роботи зі словниками? Читайте далі, щоб побачити дещо дивовижне.
 
-You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, type in the following command:
+Ви можете використовувати метод `pop()` для видалення елемента зі словника. Скажімо, якщо ви бажаєте видалити значення, що відповідає ключу `'favorite_numbers'`, наберіть таку команду:
 
 {% filename %}command-line{% endfilename %}
 
@@ -449,9 +449,9 @@ You can use the `pop()` method to delete an item in the dictionary. Say, if you 
 {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-As you can see from the output, the key–value pair corresponding to the 'favorite_numbers' key has been deleted.
+Як бачимо з результатів, пару ключ-значення, що відповідає ключу 'favorite_numbers', було видалено.
 
-As well as this, you can also change a value associated with an already-created key in the dictionary. Type this:
+Також можна змінити значення, асоційоване з ключем, який вже існує у словнику. Наберіть:
 
 {% filename %}command-line{% endfilename %}
 
@@ -461,18 +461,18 @@ As well as this, you can also change a value associated with an already-created 
 {'country': 'Germany', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
+Як бачимо, значення ключа `'country'` було змінено із `'Poland'` на `'Germany'`. :) Вражаюче? Ура! Ви щойно освоїли ще одну дивовижну річ.
 
-### Зміст
+### Підсумок
 
-Awesome! You know a lot about programming now. In this last part you learned about:
+Чудово! Тепер ви знаєте багато про програмування. У цій останній частині ви дізналися про такі поняття, як:
 
-- **errors** – you now know how to read and understand errors that show up if Python doesn't understand a command you've given it
-- **variables** – names for objects that allow you to code more easily and to make your code more readable
-- **lists** – lists of objects stored in a particular order
-- **dictionaries** – objects stored as key–value pairs
+- **помилки** – тепер ви знаєте, як читати та розуміти помилки, які з'являються, якщо Python не розуміє введеної команди;
+- **змінні** – імена для об'єктів, що дозволяють вам спростити процес написання коду і зробити його більш читабельним;
+- **списки** – послідовності об'єктів, впорядкованих певним чином;
+- **словники** – об'єкти, що містять пари ключ-значення.
 
-Excited for the next part? :)
+Не дочекаєтеся переходу до наступної частини? :)
 
 ## Порівняння
 
