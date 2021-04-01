@@ -476,9 +476,9 @@ KeyError: 'age'
 
 ## Порівняння
 
-> For readers at home: this part is covered in the [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) video.
+> Для читачів вдома: відеоверсія цього розділу - [Основи Python: порівняння](https://www.youtube.com/watch?v=7bzxqIKYgf4) (англ.).
 
-A big part of programming involves comparing things. What's the easiest thing to compare? Numbers! Let's see how that works:
+Велика частина програмування — це порівняння. Що є найпростішою річчю для порівняння? Звісно, числа. Давайте подивимось, як це працює:
 
 {% filename %}command-line{% endfilename %}
 
@@ -497,11 +497,11 @@ True
 True
 ```
 
-We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare values of mathematical expressions like `2 * 2` and function results like the `2` returned by `len([4, 5])`. Nice, huh?
+Ми надали Python деякі числа для порівняння. Як бачимо, Python не тільки порівнює числа, але може й порівнювати значення математичних виразів (на зразок `2 * 2`) або результати функцій, такі як `2` , що повертається функцією `len([4, 5])`. Гарно, еге ж?
 
-Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
+Цікаво, чому ми використали два однакові знаки `==` щоб перевірити, чи є числа рівними? Ми використовуємо один знак `=` для присвоєння значень змінним. Тому **завжди** треба писати два знаки `==`, якщо ви бажаєте здійснити перевірку двох чисел на рівність одне одному. Ми також можемо перевіряти, чи є два об'єкти нерівними. Для цього ми використовуємо символи `!=`, як показано в прикладі вище.
 
-Give Python two more tasks:
+Задайте для Python ще дві задачі:
 
 {% filename %}command-line{% endfilename %}
 
