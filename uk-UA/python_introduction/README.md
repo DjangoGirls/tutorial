@@ -561,7 +561,7 @@ TypeError: '>' not supported between instances of 'int' and 'str'
 
 Але для того, щоб Python міг це зрозуміти, треба завжди писати 'True' (перша літера – велика, а решта – маленькі). **true, TRUE, tRUE не працюють -- лише True є правильним** (Те ж саме стосується і 'False').
 
-Booleans can be variables, too! See here:
+Логічні значення також можуть бути змінними! Погляньте:
 
 {% filename %}command-line{% endfilename %}
 
@@ -571,7 +571,7 @@ Booleans can be variables, too! See here:
 True
 ```
 
-You can also do it this way:
+Можна зробити теж саме і по-іншому:
 
 {% filename %}command-line{% endfilename %}
 
@@ -581,14 +581,14 @@ You can also do it this way:
 False
 ```
 
-Practice and have fun with Booleans by trying to run the following commands:
+Попрактикуйте з логічними виразами, спробувавши запустити такі команди:
 
 - `True and True`
 - `False and True`
 - `True or 1 == 1`
 - `1 != 2`
 
-Congrats! Booleans are one of the coolest features in programming, and you just learned how to use them!
+Вітання! Логічні значення – одна із найкрутіших властивостей програмування, і ви щойно освоїли, як їх застосовувати!
 
 # Збережіть!
 
