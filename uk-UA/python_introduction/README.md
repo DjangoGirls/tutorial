@@ -512,14 +512,14 @@ True
 False
 ```
 
-We've seen `>` and `<`, but what do `>=` and `<=` mean? Read them like this:
+Щодо `>` та `<` начебто зрозуміло, але що означають `>=` та `<=`? Читайте їх так:
 
-- x `>` y означає x більше ніж y
-- x `<` y означає x менше ніж y
-- x `<=` y означає x менше або рівне y
-- x `>=` y означає x більше або рівне y
+- x `>` y означає: x більше y
+- x `<` y означає: x менше y
+- x `<=` y означає: x менше або дорівнює y
+- x `>=` y означає: x більше або дорівнює y
 
-Awesome! Wanna do one more? Try this:
+Чудово! Хочете ще? Спробуйте це:
 
 {% filename %}command-line{% endfilename %}
 
@@ -532,7 +532,7 @@ False
 True
 ```
 
-You can give Python as many numbers to compare as you want, and it will give you an answer! Pretty smart, right?
+Ви можете давати Python стільки чисел для порівняння, скільки заманеться, і він дасть вам результат! Дуже розумно, чи не так?
 
 - **and** – if you use the `and` operator, both comparisons have to be True in order for the whole command to be True
 - **or** – if you use the `or` operator, only one of the comparisons has to be True in order for the whole command to be True
