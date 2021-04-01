@@ -550,16 +550,16 @@ TypeError: '>' not supported between instances of 'int' and 'str'
 
 Бачимо, що як і у тому жартівному виразі, Python не в змозі порівняти число (`int`) та рядок (`str`). Натомість виводиться **TypeError** ("помилка типу"), яка повідомляє нам про те, що ці два типи не можна порівнювати між собою.
 
-## Логічні типи
+## Логічний тип даних
 
-Incidentally, you just learned about a new type of object in Python. It's called **Boolean**.
+Між іншим, ви щойно дізналися про новий тип даних в Python. Він називається **логічним типом** (або булевим, bool).
 
-There are only two Boolean objects:
+Можливо, це найпростіший тип. Існує лише два значення логічного типу:
 
-- True
-- False
+- Істинне: True
+- Хибне: False
 
-But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well.)
+Але для того, щоб Python міг це зрозуміти, треба завжди писати 'True' (перша літера – велика, а решта – маленькі). **true, TRUE, tRUE не працюють -- лише True є правильним** (Те ж саме стосується і 'False').
 
 Booleans can be variables, too! See here:
 
