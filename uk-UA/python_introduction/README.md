@@ -626,14 +626,14 @@ print('Hello, Django girls!')
 
 > **Примітка:** Ви повинні помітити одну з найкрутіших фіч редакторів коду: кольори! У консолі Python все було одного кольору, тепер же ви бачите, що функція `print` має інший колір, ніж рядок, який вона друкує. Це називається "підсвічуванням синтаксису", і це справді корисна функція для програмістів. Різний колір слів дає вам підказку про незакриті лапки рядка чи орфографічну помилку в ключовому слові (згодом зверніть увагу на колір слова `def` в описі функції). Це одна з вагомих причин, чому ми використовуємо редактор коду. :)
 
-With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
+По тому, як файл успішно збережено, час запустити його! Згадуючи, чому ви навчились у розділі про командний рядок, скористайтеся терміналом, щоб **змінити директорію** на робочий стіл.
 
 <!--sec data-title="Change directory: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-On a Mac, the command will look something like this:
+Для Mac команда буде виглядати так:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
     $ cd ~/Desktop
     
@@ -643,9 +643,9 @@ On a Mac, the command will look something like this:
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-On Linux, it will be like this:
+Для Linux вона буде на зразок
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
     $ cd ~/Desktop
     
