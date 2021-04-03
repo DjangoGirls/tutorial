@@ -612,19 +612,19 @@ $
 
 Ви повернетеся назад до командного рядка.
 
-Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now and write some code into a new file (or if you're using a Chromebook, create a new file in the cloud IDE and open the file, which will be in the included code editor):
+Раніше ми вже обрали для себе редактор коду в розділі [Редактор коду](../code_editor/README.md). А тепер ми маємо відкрити цей редактор і написати якийсь код в новому файлі (якщо ви використовуєте хромбук, створіть новий файл у хмарному IDE і відкрийте цей файл там же у редакторі коду):
 
-{% filename %}editor{% endfilename %}
+{% filename %}редактор коду{% endfilename %}
 
 ```python
 print('Hello, Django girls!')
 ```
 
-Obviously, you're a pretty seasoned Python developer now, so feel free to write some code that you've learned today.
+Очевидно, ви тепер є досить досвідченою Python-програмісткою, отже можете написати у ваш код усе, що ви до цього часу вивчили.
 
-Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, but the important part here is to make sure the file ends in **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
+А тепер треба зберегти файл і дати йому описове ім'я. Назвіть файл **python_intro.py** і збережіть його на вашому робочому столі. Ви можете назвати файл як завгодно, тільки важливо, щоб назва закінчувалась на **.py**. Закінчення **.py** говорить нашій операційної системи, що це **виконуваний файл Python** і Python може його запускати.
 
-> **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. Це називається "підсвіткою синтаксису", і це справді корисна для програміста функція. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). Це одна з вагомих причин, чому ми використовуємо редактор коду. :)
+> **Примітка:** Ви повинні помітити одну з найкрутіших фіч редакторів коду: кольори! У консолі Python все було одного кольору, тепер же ви бачите, що функція `print` має інший колір, ніж рядок, який вона друкує. Це називається "підсвічуванням синтаксису", і це справді корисна функція для програмістів. Різний колір слів дає вам підказку про незакриті лапки рядка чи орфографічну помилку в ключовому слові (згодом зверніть увагу на колір слова `def` в описі функції). Це одна з вагомих причин, чому ми використовуємо редактор коду. :)
 
 With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
 
