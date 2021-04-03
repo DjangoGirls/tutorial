@@ -98,7 +98,7 @@ Vous pouvez utiliser des guillemets doubles :
 "J'aime la mousse au chocolat"
 ```
 
-ou échapper l’apostrophe avec une barre oblique inversée (un backslash, ``) :
+ou échapper l’apostrophe avec une barre oblique inversée (un backslash, `\`) :
 
 {% filename %}command-line{% endfilename %}
 
@@ -427,7 +427,7 @@ Comme les listes, les dictionnaires sont *mutables*, ce qui signifie qu'ils peuv
 >>> participant['favorite_language'] = 'Python'
 ```
 
-Like lists, using the `len()` function on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
+Comme pour les listes, la fonction `len()` permet d'obtenir le nombre de paires clef–valeur du dictionnaire. Essayez de taper la commande suivante :
 
 {% filename %}command-line{% endfilename %}
 
@@ -497,7 +497,7 @@ True
 True
 ```
 
-We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare values of mathematical expressions like `2 * 2` and function results like the `2` returned by `len([4, 5])`. Nice, huh?
+Nous avons donné à Python quelques nombres à comparer. Comme vous pouvez le voir, Python n'est pas seulement capable de comparer des nombres, mais il peut aussi comparer les valeurs des expressions mathématiques comme `2 * 2` avec le résultat d'une fonction comme le `2` renvoyé par `len([4, 5])`. Pas mal, non ?
 
 Vous vous demandez probablement pourquoi nous avons mis deux signes `==` côte à côte pour savoir si deux nombres étaient égaux ? On utilise déjà `=` pour assigner des valeurs aux variables. Du coup, il faut toujours, oui **toujours**, mettre deux `==` si vous voulez savoir si deux choses sont égales. Nous pouvons aussi dire que certaines choses ne sont pas égales à d'autres. Pour cela, nous utilisons le symbole `! =`, comme illustré dans l'exemple ci-dessus.
 
@@ -1065,7 +1065,7 @@ Vous pouvez remarquer que le second de ces nombres n'est pas inclus dans la list
 
 Et voilà ! **Vos assurez un max !** C'était un chapitre difficile, donc vous pouvez être fières de vous. De notre côté, nous sommes fières de vous, pour être parvenu-e si loin dans le cours. Bravo !
 
-For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers! :)
+Pour accéder au tutoriel officiel et complet de Python, visitez https://docs.python.org/3/tutorial/. Cela vous donnera un accès plus exhaustif à l'étude du langage. A bientôt! :)
 
 N'hésitez pas à prendre une pause : étirez-vous, marchez un peu ou reposez-vous les yeux. Une fois que vous avez un peu rechargé vos batteries, vous pouvez attaquer le chapitre suivant :)
 
