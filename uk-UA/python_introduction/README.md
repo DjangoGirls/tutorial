@@ -592,18 +592,18 @@ False
 
 # Збережіть!
 
-> For readers at home: this part is covered in the [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) video.
+> Для читачів вдома: відеоверсія цього розділу – [Основи Python: збереження файлів та інструкція "if"](https://www.youtube.com/watch?v=dOAg6QVAxyk) (англ.).
 
-So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal programs are saved in files and executed by our programming language **interpreter** or **compiler**. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
+Досі ми писали весь наш Python-код в інтерпретаторі, що обмежує нас написанням лише одного рядка за раз. Зазвичай програми зберігаються у файлах і виконуються **інтерпретатором** або **компілятором** нашої мови програмування. Досі ми запускали наші програми одним рядком в **інтерпретаторі** Python. Для наступних задач нам знадобиться більше, ніж один рядок коду, отже нам потрібно:
 
-- Закрити Python інтепретатор
-- Відкрити наш текстовий редактор на вибір
-- Зберегти певний код в python файлі
+- Закрити інтерпретатор Python
+- Відкрити редактор коду, який ми обрали
+- Зберегти певний код у Python-файлі
 - Запустити його!
 
-To exit from the Python interpreter that we've been using, type the `exit()` function
+Щоб вийти з інтерпретатора Python, яким ми користувалися до цього, наберіть функцію `exit()`:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 >>> exit()
