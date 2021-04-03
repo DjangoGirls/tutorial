@@ -643,22 +643,22 @@ data-collapse=true ces-->
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-Для Linux вона буде на зразок
+Для Linux команда буде на зразок
 
 {% filename %}командний рядок{% endfilename %}
 
     $ cd ~/Desktop
     
 
-(Remember that the word "Desktop" might be translated to your local language.)
+(Пам'ятайте, що слово "Desktop" може бути перекладене вашою мовою.)
 
 <!--endsec-->
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-On Windows Command Prompt, it will be like this:
+У командному рядку Windows це буде так:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
     > cd %HomePath%\Desktop
     
@@ -667,36 +667,36 @@ On Windows Command Prompt, it will be like this:
 
 <!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
 
-And on Windows Powershell, it will be like this:
+А у Windows Powershell команда буде такою:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
     > cd $Home\Desktop
     
 
 <!--endsec-->
 
-If you get stuck, ask for help. That's exactly what the coaches are here for!
+Якщо ви застрягли, попросіть допомоги. Це як раз той випадок, коли треба турбувати тренера.
 
-Now use Python to execute the code in the file like this:
+Тепер ви можете виконати ваш код у файлі, викликаючи Python:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
     $ python3 python_intro.py
     Hello, Django girls!
     
 
-Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
+Примітка: у Windows команди 'python3' немає. Замість цього виконуйте файл командою 'python':
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 > python python_intro.py
 ```
 
-Alright! You just ran your first Python program that was saved to a file. Feel awesome?
+Гаразд! Ви щойно запустили вашу першу Python-програму, яка була збережена у файлі. Чудові відчуття?
 
-You can now move on to an essential tool in programming:
+Тепер ви можете переходити до важливого інструменту в програмуванні:
 
 ## If … elif … else
 
