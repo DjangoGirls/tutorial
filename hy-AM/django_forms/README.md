@@ -19,15 +19,17 @@ Django- ի յուրաքանչյուր կարեւոր մասի նման, ձևեր
 {% filename %}blog/forms.py{% endfilename %}
 
 ```python
-from django import forms
+django ներմուծման ձևերից
 
-from .models import Post
+.models- ից ներմուծում են Post
 
-class PostForm(forms.ModelForm):
+դասի PostForm (forms. ModelForm):
 
     class Meta:
         model = Post
         fields = ('title', 'text',)
+
+
 ```
 
 We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
