@@ -32,7 +32,7 @@ django ներմուծման ձևերից
 
 ```
 
-We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
+Մենք պետք է նախ ներմուծենք Django ձևերը (` django ներմուծման ձևերից `)Post ` Post ` մոդելը/model (` .models- ից ներմուծում ենք Post `):
 
 `PostForm`, as you probably suspect, is the name of our form. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
 
