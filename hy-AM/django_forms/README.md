@@ -1,20 +1,20 @@
-# Django Forms
+# Django Forms 
 
-The final thing we want to do on our website is create a nice way to add and edit blog posts. Django's `admin` is cool, but it is rather hard to customize and make pretty. With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
+Վերջին բանը, որ մենք ուզում ենք անել մեր կայքում, բլոգի գրառումներն ավելացնելու և խմբագրելու գեղեցիկ միջոց է ստեղծելը: Django- ի ` ադմինիստրատորը ` հիանալի է, բայց այն բավականին դժվար է հարմարեցնել և դնել գեղեցիկ: ` ձևերով ` մենք բացարձակ ուժ կունենանք մեր ինտերֆեյսի վրա. Մենք կարող ենք անել գրեթե այն ամենը, ինչ կարող ենք պատկերացնել:
 
-The nice thing about Django forms is that we can either define one from scratch or create a `ModelForm` which will save the result of the form to the model.
+Django ձևերի մեջ հաճելին այն է, որ մենք կարող ենք կամ զրոյից սահմանել մեկը, կամ ստեղծել ` ModelForm `, որը ձևի արդյունքը կփրկի մոդելին:
 
-This is exactly what we want to do: we will create a form for our `Post` model.
+Սա հենց այն է, ինչ մենք ուզում ենք անել. Մենք կստեղծենք ձև ` Հաղորդագրություն ` մոդելի համար:
 
-Like every important part of Django, forms have their own file: `forms.py`.
+Django- ի յուրաքանչյուր կարեւոր մասի նման, ձևերն ունեն իրենց ֆայլը. ` form.py `:
 
-We need to create a file with this name in the `blog` directory.
+Այս անունով ֆայլ պետք է ստեղծենք ` blog </ 0> գրացուցակում:</p>
 
-    blog
-       └── forms.py
-    
+<pre><code>blog
+   └── forms.py
+`</pre> 
 
-OK, let's open it in the code editor and type the following code:
+Լավ, եկեք բացենք այն կոդերի խմբագրում և մուտքագրենք հետևյալ կոդը.
 
 {% filename %}blog/forms.py{% endfilename %}
 
