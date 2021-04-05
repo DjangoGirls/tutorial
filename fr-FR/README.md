@@ -12,7 +12,7 @@ Comme avec toutes les choses inconnues, cela va être une aventure, mais pas de 
 
 ## Introduction
 
-Avez-vous déjà eu l'impression que le monde est de plus en plus remplit de technologies avec lesquelles vous n'êtes pas (encore) familière ? Avez-vous déjà été curieuse de comment créer un site web, sans jamais avoir le courage de vous plonger dedans ? Vous êtes-vous déjà dit que le monde de l'informatique est trop compliqué, ne serait-ce que pour savoir par où commencer ?
+Avez-vous déjà eu l'impression que le monde est de plus en plus rempli de technologies avec lesquelles vous n'êtes pas (encore) familière ? Avez-vous déjà été curieuse de comment créer un site web, sans jamais avoir le courage de vous plonger dedans ? Vous êtes-vous déjà dit que le monde de l'informatique est trop compliqué, ne serait-ce que pour savoir par où commencer ?
 
 Hé bien, bonne nouvelle ! Programmer n'est pas aussi dur que ça en a l'air, et nous sommes là pour vous montrer à quel point ça peut être amusant.
 
