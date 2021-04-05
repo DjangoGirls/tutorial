@@ -34,11 +34,11 @@ django ներմուծման ձևերից
 
 Մենք պետք է նախ ներմուծենք Django ձևերը (` django ներմուծման ձևերից `)Post ` Post ` մոդելը/model (` .models- ից ներմուծում ենք Post `):
 
-` PostForm ` - ը, ինչպես, հավանաբար, կասկածում եք, մեր ձևի անունն է: We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
+` PostForm ` - ը, ինչպես, հավանաբար, կասկածում եք, մեր ձևի անունն է: Մենք պետք է Django- ին ասենք, որ այս ձևը ` ModelForm ` է (այնպես որ Django- ն ինչ-որ կախարդանք կանի մեզ համար) - ` ձևեր: Դրա համար պատասխանատու է ModelForm- ը:</p>
 
-Next, we have `class Meta`, where we tell Django which model should be used to create this form (`model = Post`).
+<p>Հաջորդը, մենք ունենք <code> class Meta `, որտեղ մենք ասում ենք Django- ին, թե որ մոդելը պետք է օգտագործվի այս ձևը ստեղծելու համար (` model = Post `):
 
-Finally, we can say which field(s) should end up in our form. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
+Վերջապես, մենք կարող ենք ասել, թե որ դաշտը (դաշտերը) պետք է հայտնվի մեր տեսքով: In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
 
 And that's it! All we need to do now is use the form in a *view* and display it in a template.
 
