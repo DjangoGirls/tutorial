@@ -30,11 +30,11 @@ Une fois que vous aurez terminé le tutoriel, vous aurez une petite application 
 
 > Si vous travaillez avec le tutoriel de votre côté et n'avez pas un coach qui vous aiderait en cas de problème, nous avons un système de discussion instantanée pour vous : [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Nous avons demandé aux coachs et participant·e·s des précédentes éditions de passer de temps en temps pour aider les autres avec le tutoriel. N'ayez pas peur et allez poser vos questions !
 
-Ok, [commençons par le commencement…](./how_the_internet_works/README.md)
+OK, [commençons par le commencement…](./how_the_internet_works/README.md)
 
 ## Suivre le tutoriel chez soi
 
-Il est formidable de participer à un atelier Django Girls, mais nous comprenons qu'il n'est pas toujours facile d'en trouver un. C'est pourquoi nous vous encourageons à essayer de suivre ce tutoriel chez vous. Pour les lecteurs à la maison, nous sommes actuellement en train de préparer des vidéos qu'il vous soit plus facile de suivre le tutoriel de votre coté. C'est encore un travail en cours, mais de plus en plus de choses seront bientôt couvertes [Le codage est pour les filles](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) Chaînes YouTube.
+Il est formidable de participer à un atelier Django Girls, mais nous comprenons qu'il n'est pas toujours facile d'en trouver un. C'est pourquoi nous vous encourageons à essayer de suivre ce tutoriel chez vous. Pour les lectrices à la maison, nous sommes actuellement en train de préparer des vidéos afin qu'il vous soit plus facile de suivre le tutoriel de votre côté. C'est encore un travail en cours, mais de plus en plus de choses seront bientôt couvertes [Le codage est pour les filles](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) Chaînes YouTube.
 
 Dans chaque chapitre couvert se trouve un lien pointant vers la vidéo correspondante.
 
