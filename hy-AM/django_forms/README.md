@@ -38,9 +38,9 @@ django ներմուծման ձևերից
 
 <p>Հաջորդը, մենք ունենք <code> class Meta `, որտեղ մենք ասում ենք Django- ին, թե որ մոդելը պետք է օգտագործվի այս ձևը ստեղծելու համար (` model = Post `):
 
-Վերջապես, մենք կարող ենք ասել, թե որ դաշտը (դաշտերը) պետք է հայտնվի մեր տեսքով: In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
+Վերջապես, մենք կարող ենք ասել, թե որ դաշտը (դաշտերը) պետք է հայտնվի մեր տեսքով: Այս սցենարում մենք ուզում ենք, որ բացահայտվի միայն ` title (վերնագիրը) ` և ` text(տեքստը) ` ` created_date(ստեղծված_ ամսաթիվը) ` պետք է ավտոմատ կերպով սահմանվի, երբ մենք ստեղծում ենք գրառում (այսինքն ՝ կոդում), այնպես չէ՞:
 
-And that's it! All we need to do now is use the form in a *view* and display it in a template.
+Եվ վերջ! Մեզ մնում է միայն օգտագործել ձևը *view* և ցուցադրել այն template-ում(ձևանմուշում):
 
 So once again we will create a link to the page, a URL, a view and a template.
 
