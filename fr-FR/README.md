@@ -34,7 +34,7 @@ OK, [commençons par le commencement…](./how_the_internet_works/README.md)
 
 ## Suivre le tutoriel chez soi
 
-Il est formidable de participer à un atelier Django Girls, mais nous comprenons qu'il n'est pas toujours facile d'en trouver un. C'est pourquoi nous vous encourageons à essayer de suivre ce tutoriel chez vous. Pour les lectrices à la maison, nous sommes actuellement en train de préparer des vidéos afin qu'il vous soit plus facile de suivre le tutoriel de votre côté. C'est encore un travail en cours, mais de plus en plus de choses seront bientôt couvertes [Le codage est pour les filles](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) Chaînes YouTube.
+Il est formidable de participer à un atelier Django Girls, mais nous comprenons qu'il n'est pas toujours facile d'en trouver un. C'est pourquoi nous vous encourageons à essayer de suivre ce tutoriel chez vous. Pour les lectrices à la maison, nous sommes actuellement en train de préparer des vidéos afin qu'il vous soit plus facile de suivre le tutoriel de votre côté. C'est encore un travail en cours, mais la chaine YouTube [Le code convient aux filles](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) couvre de plus en plus de choses.
 
 Dans chaque chapitre couvert se trouve un lien pointant vers la vidéo correspondante.
 
@@ -42,7 +42,7 @@ Dans chaque chapitre couvert se trouve un lien pointant vers la vidéo correspon
 
 Ce tutoriel est maintenu par [DjangoGirls](https://djangogirls.org/). Si vous rencontrez des erreurs ou souhaitez simplement suggérer une amélioration du tutoriel, il est important de respecter [les règles de contribution](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
-## Voudriez-vous nous aider à traduire le tutoriel dans d'autres langues?
+## Vous voulez nous aider à traduire le tutoriel dans d'autres langues ?
 
 Actuellement, les traductions sont conservés sur la plate-forme crowdin.com :
 
