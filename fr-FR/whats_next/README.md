@@ -1,16 +1,16 @@
 # Et maintenant ?
 
-Un immense bravo à vous ! **Vous êtes totalement géniale**. Nous sommes fière de vous! <3
+Un immense bravo à vous ! **Vous êtes très déterminée**. Nous sommes fières ! <3
 
 ### Que faire maintenant ?
 
-Faites une pause et détendez-vous ! Vous venez d'accomplir quelque chose de vraiment énorme.
+Faites une pause et détendez-vous ! Vous venez d'accomplir quelque chose de conséquent.
 
 Ensuite, suivez Django Girls sur [Facebook](http://facebook.com/djangogirls) ou [Twitter](https://twitter.com/djangogirls) pour être au courant des nouvelles.
 
 ### À la recherche de ressources supplémentaires ?
 
-Oui ! Il y a *énormément* de ressources en ligne pour apprendre toutes sortes de compétences de programmation. Il peut être assez difficile de s'orienter et aller plus loin, mais nous vous donnons des pistes pour démarrer. Quelle que soit la raison qui vous a mené à participer à Django Girls, et quels que soient les intérêts que vous avez développés en suivant le tutoriel, voici quelques ressources gratuites (ou des ressources avec de grands composants gratuits) que vous pouvez utiliser pour atteindre vos objectifs.
+Oui ! Il y a *énormément* de ressources en ligne pour apprendre toutes sortes de compétences de programmation. Il peut être assez difficile de s'orienter et aller plus loin, mais nous vous donnons des pistes pour démarrer. Quelle que soit la raison qui vous a menée à participer à Django Girls, et quels que soient les intérêts que vous avez développés en suivant le tutoriel, voici quelques ressources gratuites (ou des ressources avec de grands composants gratuits) que vous pouvez utiliser pour atteindre vos objectifs.
 
 #### Django
 
