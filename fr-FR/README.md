@@ -6,7 +6,7 @@
 
 ## Bienvenue
 
-Bienvenue dans le tutoriel Django Girls ! Nous sommes heureux de vous voir ici. :) Dans ce tutoriel, nous allons vous emmener dans un voyage sous le capot des technologies web, en vous offrant un aperçu de tous les pièces et les morceaux qui ont besoin de marcher ensemble pour que le web fonctionne tel que nous le connaissons.
+Bienvenue dans le tutoriel Django Girls ! Nous sommes heureux de vous voir ici. :) Dans ce tutoriel, nous allons vous emmener dans un voyage sous le capot des technologies web, en vous offrant un aperçu de tous les pièces et les morceaux qui doivent être assemblés pour que le web fonctionne tel que nous le connaissons.
 
 Comme avec toutes les choses inconnues, cela va être une aventure, mais pas de soucis, puisque vous avez déjà eu le courage d'arriver ici, vous allez y arriver. :)
 
@@ -28,7 +28,7 @@ Une fois que vous aurez terminé le tutoriel, vous aurez une petite application 
 
 ![Figure 0.1](images/application.png)
 
-> Si vous travaillez avec le tutoriel de votre coté et vous n'avez pas un coach qui vous aiderait en cas de problème, nous avons un système de chat pour vous: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Nous avons demandé aux coachs et participant·e·s des précédentes éditions de passer de temps en temps pour aider les autres avec le tutoriel. N'ayez pas peur et allez poser vos questions !
+> Si vous travaillez avec le tutoriel de votre côté et n'avez pas un coach qui vous aiderait en cas de problème, nous avons un système de discussion instantanée pour vous : [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Nous avons demandé aux coachs et participant·e·s des précédentes éditions de passer de temps en temps pour aider les autres avec le tutoriel. N'ayez pas peur et allez poser vos questions !
 
 Ok, [commençons par le commencement…](./how_the_internet_works/README.md)
 
