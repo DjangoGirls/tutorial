@@ -28,7 +28,7 @@
 * [Django ORM (Querysets)](django_orm/README.md)
 * [Données dynamiques dans les templates](dynamic_data_in_templates/README.md)
 * [Templates Django](django_templates/README.md)
-* [CSS - Rendez votre site joli](css/README.md)
+* [CSS – donnez du style](css/README.md)
 * [Héritage de template](template_extending/README.md)
 * [Finaliser votre application](extend_your_application/README.md)
 * [Formulaires Django](django_forms/README.md)
