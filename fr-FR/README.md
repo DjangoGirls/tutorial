@@ -44,7 +44,7 @@ Ce tutoriel est maintenu par [DjangoGirls](https://djangogirls.org/). Si vous re
 
 ## Vous voulez nous aider à traduire le tutoriel dans d'autres langues ?
 
-Actuellement, les traductions sont conservés sur la plate-forme crowdin.com :
+Actuellement, les traductions sont faites sur la plateforme crowdin.com :
 
 https://crowdin.com/project/django-girls-tutorial
 
