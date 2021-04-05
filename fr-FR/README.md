@@ -22,7 +22,7 @@ Nous espérons arriver à vous faire aimer la technologie autant que nous l'aimo
 
 ## Qu'apprendrez-vous au cours de ce tutoriel ?
 
-Une fois que vous avez terminé le tutoriel, vous aurez une petite application web: votre propre blog. Nous allons vous montrer comment le mettre en ligne, afin que les autres puissent voir votre travail!
+Une fois que vous aurez terminé le tutoriel, vous aurez une petite application web : votre propre blog. Nous allons vous montrer comment le mettre en ligne, ainsi votre travail sera visible par d'autres !
 
 Ça devrait ressembler plus ou moins à ça :
 
