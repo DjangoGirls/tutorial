@@ -32,4 +32,4 @@
 * [Héritage de template](template_extending/README.md)
 * [Finaliser votre application](extend_your_application/README.md)
 * [Formulaires Django](django_forms/README.md)
-* [La suite?](whats_next/README.md)
+* [Et maintenant ?](whats_next/README.md)
