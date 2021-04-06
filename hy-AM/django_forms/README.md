@@ -130,17 +130,17 @@ urlpatterns = [
 
 ## post_new view
 
-Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
+բացեք ` բլոգը / views.py ` ֆայլը ծածկագրի խմբագրում և ավելացնել տողերի մնացած տողերի հետևյալ տողերը. 
 
 {% filename %}blog/views.py{% endfilename %}
 
 ```python
-from .forms import PostForm
+.forms- ից ներմուծում է PostForm
 ```
 
-And then our *view*:
+Եվ հետո մեր * տեսակետը *:
 
-{% filename %}blog/views.py{% endfilename %}
+{% filename%} blog/views.py {% endfilename%}
 
 ```python
 def post_new(request):
@@ -148,15 +148,15 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-To create a new `Post` form, we need to call `PostForm()` and pass it to the template. We will go back to this *view*, but for now, let's quickly create a template for the form.
+Նոր ` Post ` ձև ստեղծելու համար հարկավոր է զանգահարել ` PostForm () ` և փոխանցել այն ձևանմուշին: Մենք կվերադառնանք այս *view*, բայց առայժմ արագ եկեք ձևանմուշ ստեղծենք ձևի համար:
 
 ## Template
 
-We need to create a file `post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
+Մենք պետք է ` post_edit.html` գրացուցակում ` blog/templates/blog` ֆայլ ստեղծենք և բացենք այն կոդերի խմբագրում: Ձևը գործ դնելու համար մեզ մի քանի բան է պետք.
 
-* We have to display the form. We can do that with (for example) {% raw %}`{{ form.as_p }}`{% endraw %}.
-* The line above needs to be wrapped with an HTML form element: `<form method="POST">...</form>`.
-* We need a `Save` button. We do that with an HTML button: `<button type="submit">Save</button>`.
+* Մենք պետք է ցուցադրենք ձևը: Մենք կարող ենք դա անել (օրինակ) {% raw %}`{{ form.as_p }}`{% endraw %} - ով:
+* Վերևի տողը պետք է փաթաթված լինի HTML ձևի տարրով. `<form method="POST"> ... </form>`:
+* Մեզ պետք է ` Save` կոճակը: Մենք դա անում ենք HTML կոճակի միջոցով. `<button type="submit"> Save </button>`:
 * And finally, just after the opening `<form ...>` tag we need to add {% raw %}`{% csrf_token %}`{% endraw %}. This is very important, since it makes your forms secure! If you forget about this bit, Django will complain when you try to save the form:
 
 ![CSFR Forbidden page](images/csrf2.png)
