@@ -46,7 +46,7 @@ django ներմուծման ձևերից
 
 ## Link (Հղում) դեպի էջի ձևը
 
-Հղումը չավելացնելուց առաջ մեզ պետք են մի քանի պատկերակներ, որոնք կօգտագործվեն որպես հղման կոճակներ: For this tutorial, download [file-earmark-plus.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/file-earmark-plus.svg) and save it in the folder `blog/templates/blog/icons/`
+Հղումը չավելացնելուց առաջ մեզ պետք են մի քանի պատկերակներ, որոնք կօգտագործվեն որպես հղման կոճակներ: Այս ձեռնարկի համար ներբեռնեք [ file-earmark-plus.svg ](https://raw.githubusercontent.com/twbs/icons/main/icons/file-earmark-plus.svg) և պահեք այն ` blog/templates/blog/icons/ ` թղթապանակում:
 
 > Note: To download the SVG image, open the context menu on the link (usually by right-clicking on it) and select "Save link as". In the dialog asking you where to save the file, navigate to the `djangogirls` directory of your Django project, and within that to subdirectory `blog/templates/blog/icons/`, and save the file there.
 
