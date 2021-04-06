@@ -199,9 +199,9 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-When we submit the form, we are brought back to the same view, but this time we have some more data in `request`, more specifically in `request.POST` (the naming has nothing to do with a blog "post"; it's to do with the fact that we're "posting" data). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? All the fields from the form are now in `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
+Ձևը ներկայացնելիս մեզ հետ են բերում նույն տեսակետը, բայց այս անգամ մենք ունենք ևս մի քանի տվյալներ ` request` - ում, ավելի կոնկրետ ` request. POST ` (անվանումն ունի ոչ մի կապ չունի բլոգի "post"(«գրառման») հետ. դա կապ ունի այն փաստի հետ, որ մենք "psoting" («տեղադրում ենք») տվյալներ): Հիշո՞ւմ եք, թե ինչպես HTML ֆայլում մեր `<form>` սահմանումն ուներ փոփոխական ` method="POST" `: Ձևի բոլոր դաշտերն այժմ գտնվում են ` request.POST `: Դուք չպետք է վերանվանեք ` POST ` ը որևէ այլ բանի (` method ` միակ այլ վավեր արժեքը ` GET ` է, բայց մենք ժամանակ չունենք բացատրելու, թե ինչ տարբերություն է):
 
-So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. So we need to add a condition (we will use `if` for that):
+Այսպիսով, մեր * view* մենք ունենք կարգավորման երկու առանձին իրավիճակ. Առաջին ՝ երբ մենք առաջին անգամ մուտք ենք գործում էջ և ուզում ենք դատարկ ձև, և երկրորդ, երբ վերադառնում ենք * view* բոլոր մուտքագրված ձևի տվյալներով: Այսպիսով, մենք պետք է պայման դնենք (դրա համար կօգտագործենք ` if `):
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -212,17 +212,17 @@ else:
     form = PostForm()
 ```
 
-It's time to fill in the dots `[...]`. If `method` is `POST` then we want to construct the `PostForm` with data from the form, right? We will do that as follows:
+Լրացրեք կետերը ` [...] `: Եթե ​​` method` ` POST ` է, ապա մենք ուզում ենք կառուցել ` PostForm- ը ` ձևից ստացված տվյալներով, այնպես չէ՞: Մենք դա կանենք հետևյալ կերպ.
 
-{% filename %}blog/views.py{% endfilename %}
+{% filename%} blog/views.py{% endfilename%}
 
 ```python
 form = PostForm(request.POST)
 ```
 
-The next thing is to check if the form is correct (all required fields are set and no incorrect values have been submitted). We do that with `form.is_valid()`.
+Հաջորդ բանը `ստուգել, ​​թե արդյոք ձևը ճիշտ է (բոլոր պահանջվող դաշտերը դրված են և սխալ արժեքներ չեն ներկայացվել): Մենք դա անում ենք ` form.is_valid () ` - ի միջոցով:
 
-We check if the form is valid and if so, we can save it!
+Մենք ստուգում ենք, արդյոք ձևը վավեր է, և եթե այո, ապա այն կարող ենք պահպանել:
 
 {% filename %}blog/views.py{% endfilename %}
 
