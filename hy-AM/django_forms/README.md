@@ -48,9 +48,9 @@ django ներմուծման ձևերից
 
 Հղումը չավելացնելուց առաջ մեզ պետք են մի քանի պատկերակներ, որոնք կօգտագործվեն որպես հղման կոճակներ: Այս ձեռնարկի համար ներբեռնեք [ file-earmark-plus.svg ](https://raw.githubusercontent.com/twbs/icons/main/icons/file-earmark-plus.svg) և պահեք այն ` blog/templates/blog/icons/ ` թղթապանակում:
 
-> Note: To download the SVG image, open the context menu on the link (usually by right-clicking on it) and select "Save link as". In the dialog asking you where to save the file, navigate to the `djangogirls` directory of your Django project, and within that to subdirectory `blog/templates/blog/icons/`, and save the file there.
+> Նշում. SVG պատկերը ներբեռնելու համար բացեք համատեքստային ընտրացանկը հղման վրա (սովորաբար դրա վրա աջ կտտացնելով) և ընտրեք <<Save link as>> («Պահել հղումը որպես»): Պատուհանում հարցնելով, թե որտեղ պետք է ֆայլը պահպանել, անցեք ձեր Django նախագծի ` djangogirls ` գրացուցակը, իսկ դրա ներքո ՝ ` blog/templates/blog/icons/ ` ենթագրացուցակ, և ֆայլը այնտեղ պահեք:
 
-It's time to open `blog/templates/blog/base.html` in the code editor. Now we can use this icon file inside the base template as follows. In the `div` element inside `header` section, we will add a link before the `h1` element:
+Codeամանակն է ծածկագրի խմբագրում բացել `blog/templates/blog/base.html`: Այժմ մենք կարող ենք օգտագործել այս պատկերակային ֆայլը բազային ձևանմուշի մեջ ՝ հետևյալ կերպ. ` div ` տարրում ` headrer ` բաժնում, մենք կավելացնենք հղում ` h1 ` տարրից առաջ.
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -60,7 +60,7 @@ It's time to open `blog/templates/blog/base.html` in the code editor. Now we can
 </a>
 ```
 
-Note that we want to call our new view `post_new`. The [SVG icon](https://icons.getbootstrap.com/icons/file-earmark-plus/) is provided by the [Bootstrap Icons](https://icons.getbootstrap.com/) and it will display a page icon with plus sign. We use a Django template directive called `include`. This will inject the file's content into the Django template. The web browser knows how to handle this type of content without any further processing.
+Նկատի ունեցեք, որ մենք ուզում ենք մեր նոր տեսակետը կոչել ` post_new `: [SVG icon](https://icons.getbootstrap.com/icons/file-earmark-plus/) տրամադրվում է [Bootstrap Icons ](https://icons.getbootstrap.com/) կողմից, և դրանում կցուցադրվի էջի պատկերակ `գումարած նշանով: We use a Django template directive called `include`. This will inject the file's content into the Django template. The web browser knows how to handle this type of content without any further processing.
 
 > You can download all the Bootstrap icons [here](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip). Unzip the file and copy all the SVG image files into a new folder inside `blog/templates/blog/` called `icons`. That way you can access an icon like `pencil-fill.svg` using the file path `blog/templates/blog/icons/pencil-fill.svg`
 
