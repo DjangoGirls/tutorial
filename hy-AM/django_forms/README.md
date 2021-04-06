@@ -400,7 +400,7 @@ form = PostForm(instance=post)
 
 Հղումը կտտացնելով նոր հաղորդագրություններ ստեղծելու կարողությունը զարմանալի է: Բայց հենց հիմա, յուրաքանչյուր ոք, ով այցելում է ձեր կայք, կկարողանա նոր բլոգային գրառում կատարել, և դա, հավանաբար, ձեր ուզածը չէ: Եկեք այնպես անենք, որ կոճակը ցուցադրվի ձեզ համար, բայց ոչ ուրիշ մեկի:
 
-Open `blog/templates/blog/base.html` in the code editor, find our `div` inside `header` and the anchor element you put in there earlier. It should look like this:
+Բացեք ` blog/templates/blog/base.html` կոդերի խմբագրում, գտեք մեր ` div ` ` վերնագրի ներսում ` և խարիսխի տարրը, որը դուք ավելի վաղ այնտեղ եք տեղադրել , Այն պետք է ունենա այսպիսի տեսք.
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -410,7 +410,7 @@ Open `blog/templates/blog/base.html` in the code editor, find our `div` inside `
 </a>
 ```
 
-We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! Change the `<a>` element to look like this:
+Մենք դրան կավելացնենք ևս ` {% if%} ` պիտակը, որը կստիպի հղումը ցույց տալ միայն այն ադմինիստրատոր մուտք գործած օգտվողների համար: Հենց հիմա, դու հենց դու ես: Փոխեք `<a>` տարրը ՝ այսպիսի տեսք ունենալու համար.
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -422,11 +422,11 @@ We're going to add another `{% if %}` tag to this, which will make the link show
 {% endif %}
 ```
 
-This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. This doesn't protect the creation of new posts completely, but it's a good first step. We'll cover more security in the extension lessons.
+Սա ` {% if %} ` կհանգեցնի այն, որ հղումը կուղարկվի զննարկիչ, միայն եթե էջը հայցող օգտվողը մուտք է գործում: Սա ամբողջությամբ չի պաշտպանում նոր հաղորդագրությունների ստեղծումը, բայց դա լավ առաջին քայլ է: Մենք ավելի շատ անվտանգություն ենք ծածկելու ընդլայնման դասերին:
 
-Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
+Հիշո՞ւմ եք խմբագրման պատկերակը, որը մենք պարզապես ավելացրել ենք մեր մանրամասն էջին: Մենք ուզում ենք նաև նույն փոփոխությունն ավելացնել այնտեղ, այնպես որ այլ մարդիկ չեն կարողանա խմբագրել առկա հաղորդագրությունները:
 
-Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
+Բացեք ` blog/templates/blog/post_detail.html` կոդերի խմբագրում և գտեք այս տողը.
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -436,7 +436,7 @@ Open `blog/templates/blog/post_detail.html` in the code editor and find this lin
 </a>
 ```
 
-Change it to this:
+Փոխեք այն այստեղ ՝
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -448,13 +448,13 @@ Change it to this:
 {% endif %}
 ```
 
-Since you're likely logged in, if you refresh the page, you won't see anything different. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
+Քանի որ, ամենայն հավանականությամբ, մուտք եք գործել կայք, եթե թարմացնեք էջը, այլ բան չեք տեսնի: Էջը բեռնեք այլ զննարկչում կամ ինկոգնիտո պատուհանում (Windows Edge- ում կոչվում է «InPrivate»), և կտեսնեք, որ հղումը չի ցուցադրվում, և պատկերակը նույնպես չի ցուցադրվում:
 
-## One more thing: deploy time!
+## Եվս մեկ բան. Տեղաբաշխեք ժամանակ:
 
-Let's see if all this works on PythonAnywhere. Time for another deploy!
+Տեսնենք, արդյոք այս ամենը աշխատում է PythonAnywhere- ում: Anotherամանակն է նոր տեղակայման:
 
-* First, commit your new code, and push it up to GitHub:
+* Նախ, կատարեք ձեր նոր ծածկագիրը և սեղմեք այն դեպի GitHub:
 
 {% filename %}command-line{% endfilename %}
 
@@ -465,7 +465,7 @@ Let's see if all this works on PythonAnywhere. Time for another deploy!
     $ git push
     
 
-* Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
+* Հետո, [ PythonAnywhere Bash կոնսոլում ](https://www.pythonanywhere.com/consoles/)
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -474,7 +474,7 @@ Let's see if all this works on PythonAnywhere. Time for another deploy!
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+(Մի մոռացեք փոխարինել `<your-pythonanywhere-domain>` ձեր իրական PythonAnywhere ենթադոմեյնով ՝ առանց անկյունային փակագծերի:)
 
 * Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (use the menu button in the upper right of the console) and hit **Reload**. Refresh your https://subdomain.pythonanywhere.com blog to see the changes.
 
