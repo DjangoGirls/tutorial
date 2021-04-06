@@ -150,18 +150,18 @@ def post_new(request):
 
 Նոր ` Post ` ձև ստեղծելու համար հարկավոր է զանգահարել ` PostForm () ` և փոխանցել այն ձևանմուշին: Մենք կվերադառնանք այս *view*, բայց առայժմ արագ եկեք ձևանմուշ ստեղծենք ձևի համար:
 
-## Template
+## Կաղապար
 
 Մենք պետք է ` post_edit.html` գրացուցակում ` blog/templates/blog` ֆայլ ստեղծենք և բացենք այն կոդերի խմբագրում: Ձևը գործ դնելու համար մեզ մի քանի բան է պետք.
 
 * Մենք պետք է ցուցադրենք ձևը: Մենք կարող ենք դա անել (օրինակ) {% raw %}`{{ form.as_p }}`{% endraw %} - ով:
 * Վերևի տողը պետք է փաթաթված լինի HTML ձևի տարրով. `<form method="POST"> ... </form>`:
 * Մեզ պետք է ` Save` կոճակը: Մենք դա անում ենք HTML կոճակի միջոցով. `<button type="submit"> Save </button>`:
-* And finally, just after the opening `<form ...>` tag we need to add {% raw %}`{% csrf_token %}`{% endraw %}. This is very important, since it makes your forms secure! If you forget about this bit, Django will complain when you try to save the form:
+* Եվ, վերջապես, `<form ...>` թեգը բացելուց անմիջապես հետո մենք պետք է ավելացնենք {% raw %} ` {% csrf_token %} ` {% endraw %}: Սա շատ կարևոր է, քանի որ դրանով ապահովվում են ձեր ձևերի անվտանգությունը: Եթե ​​մոռանաք այս բիթի մասին, Django- ն կբողոքարկի, երբ փորձեք պահպանել ձևը.
 
 ![CSFR Forbidden page](images/csrf2.png)
 
-OK, so let's see how the HTML in `post_edit.html` should look:
+Լավ, այնպես որ եկեք տեսնենք, թե ինչպես պետք է HTML- ը ` post_edit.html ` - ում:
 
 {% filename %}blog/templates/blog/post_edit.html{% endfilename %}
 
@@ -177,19 +177,19 @@ OK, so let's see how the HTML in `post_edit.html` should look:
 {% endblock %}
 ```
 
-Time to refresh! Yay! Your form is displayed!
+Թարմացնելու ժամանակն է: Այո Ձեր ձևը ցուցադրվում է:
 
 ![New form](images/new_form2.png)
 
-But, wait a minute! When you type something in the `title` and `text` fields and try to save it, what will happen?
+Բայց սպասեք մի րոպե: Երբ ինչ-որ բան եք մուտքագրում ` title ` և ` title ` դաշտերում և փորձում եք այն պահպանել, ի՞նչ կլինի:
 
-Nothing! We are once again on the same page and our text is gone… and no new post is added. So what went wrong?
+Ոչինչ Մենք նորից նույն էջում ենք, և մեր տեքստը այլևս չկա ... և ոչ մի նոր գրառում չի ավելացվում: Այսպիսով, ի՞նչն է սխալ եղել: 
 
-The answer is: nothing. We need to do a little bit more work in our *view*.
+Պատասխանն է. Ոչինչ: Մենք պետք է մի փոքր ավելի շատ աշխատանք կատարենք մեր * view*:
 
-## Saving the form
+## Ձևը պահելը
 
-Open `blog/views.py` once again in the code editor. Currently all we have in the `post_new` view is the following:
+Մեկ անգամ եւս բացեք ` blog/views.py ` կոդը խմբագրիչի մեջ: Ներկայումս ` post_new ` տեսքում մենք ունենք միայն հետևյալը.
 
 {% filename %}blog/views.py{% endfilename %}
 
