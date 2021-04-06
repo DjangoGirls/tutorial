@@ -60,11 +60,11 @@ Codeամանակն է ծածկագրի խմբագրում բացել `blog/templ
 </a>
 ```
 
-Նկատի ունեցեք, որ մենք ուզում ենք մեր նոր տեսակետը կոչել ` post_new `: [SVG icon](https://icons.getbootstrap.com/icons/file-earmark-plus/) տրամադրվում է [Bootstrap Icons ](https://icons.getbootstrap.com/) կողմից, և դրանում կցուցադրվի էջի պատկերակ `գումարած նշանով: We use a Django template directive called `include`. This will inject the file's content into the Django template. The web browser knows how to handle this type of content without any further processing.
+Նկատի ունեցեք, որ մենք ուզում ենք մեր նոր տեսակետը կոչել ` post_new `: [SVG icon](https://icons.getbootstrap.com/icons/file-earmark-plus/) տրամադրվում է [Bootstrap Icons ](https://icons.getbootstrap.com/) կողմից, և դրանում կցուցադրվի էջի պատկերակ `գումարած նշանով: Մենք օգտագործում ենք Django ձևանմուշի դիրեկտիվը, որը կոչվում է `include `: Սա ֆայլի պարունակությունը կներարկի Django ձևանմուշում: Վեբ զննարկիչը գիտի, թե ինչպես վարվել այս տեսակի բովանդակության հետ `առանց հետագա մշակման:
 
-> You can download all the Bootstrap icons [here](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip). Unzip the file and copy all the SVG image files into a new folder inside `blog/templates/blog/` called `icons`. That way you can access an icon like `pencil-fill.svg` using the file path `blog/templates/blog/icons/pencil-fill.svg`
+> Bootstrap- ի բոլոր պատկերակները կարող եք ներբեռնել [ here](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip): Անջատեք ֆայլը և պատճենեք բոլոր SVG պատկերային ֆայլերը ` blog/templates/blog/ ` ներսում գտնվող նոր պանակի մեջ, որը կոչվում է ` icons `: Այդ կերպ Դուք կարող եք մուտք գործել ` pencil-fill.svg ` պես պատկերակ ՝ օգտագործելով ֆայլի ուղի `blog/templates/blog/icons/pencil-fill.svg `
 
-After editing the line, your HTML file should now look like this:
+Տողը խմբագրելուց հետո ձեր HTML ֆայլը այժմ պետք է ունենա այսպիսի տեսք.
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -99,11 +99,11 @@ After editing the line, your HTML file should now look like this:
 </html>
 ```
 
-After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
+http://127.0.0.1:8000 էջը փրկելուց և թարմացնելուց հետո կտեսնեք ծանոթ ` NoReverseMatch ` error(սխալ) : Այդպե՞ս է: Լավ
 
 ## URL
 
-We open `blog/urls.py` in the code editor and add a line:
+Կոդի խմբագրում բացում ենք ` blog/urls.py` և ավելացնում տող.
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -111,7 +111,7 @@ We open `blog/urls.py` in the code editor and add a line:
 path('post/new/', views.post_new, name='post_new'),
 ```
 
-And the final code will look like this:
+Եվ վերջնական ծածկագիրը կտեսնի այսպես.
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -126,7 +126,7 @@ urlpatterns = [
 ]
 ```
 
-After refreshing the site, we see an `AttributeError`, since we don't have the `post_new` view implemented. Let's add it right now.
+Կայքը թարմացնելուց հետո մենք տեսնում ենք ` AttributeError `, քանի որ իրականացված չենք ` post_new ` դիտումը: Եկեք ավելացնենք հենց հիմա:
 
 ## post_new view
 
