@@ -279,27 +279,27 @@ def post_new(request):
 
 Դա հիանալի է!
 
-> Քանի որ մենք վերջերս օգտագործել ենք Django ադմինիստրատորի միջերեսը, համակարգը ներկայումս կարծում է, որ մենք դեռ մուտք ենք գործել: Կան մի քանի իրավիճակներ, որոնք կարող են հանգեցնել մեզ դուրս գալուն (զննարկիչը փակելը, DB- ն վերագործարկելը և այլն): Եթե ​​հաղորդագրություն ստեղծելիս հայտնաբերում եք, որ սխալներ եք գրանցում մուտք գործած օգտվողի բացակայության վերաբերյալ, ապա անցեք ադմինիստրատորի էջ http://127.0.0.1:8000/admin և կրկին մուտք գործեք: Դրանով խնդիրը ժամանակավորապես կկարգավորվի: There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
+> Քանի որ մենք վերջերս օգտագործել ենք Django ադմինիստրատորի միջերեսը, համակարգը ներկայումս կարծում է, որ մենք դեռ մուտք ենք գործել: Կան մի քանի իրավիճակներ, որոնք կարող են հանգեցնել մեզ դուրս գալուն (զննարկիչը փակելը, DB- ն վերագործարկելը և այլն): Եթե ​​հաղորդագրություն ստեղծելիս հայտնաբերում եք, որ սխալներ եք գրանցում մուտք գործած օգտվողի բացակայության վերաբերյալ, ապա անցեք ադմինիստրատորի էջ http://127.0.0.1:8000/admin և կրկին մուտք գործեք: Դրանով խնդիրը ժամանակավորապես կկարգավորվի: ** Տնային առաջադրանք. Ձեզ սպասում է մշտական ​​շտկում ՝ հիմնական ձեռնարկից հետո անվտանգություն ավելացրեք ձեր կայքում: **
 
 ![Logged in error](images/post_create_error.png)
 
-## Form validation
+## Ձևի վավերացում
 
-Now, we will show you how cool Django forms are. A blog post needs to have `title` and `text` fields. In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
+Այժմ մենք ձեզ ցույց կտանք, թե որքան զով են Django- ի ձևերը: Բլոգի գրառումը պետք է ունենա ` title ` և ` text ` դաշտեր: Մեր ` Post` մոդելում մենք չասացինք, որ այս դաշտերը (ի տարբերություն ` published_date `) չեն պահանջվում, ուստի Django- ն, ըստ նախնականի, ակնկալում է, որ դրանք կսահմանվեն:
 
-Try to save the form without `title` and `text`. Guess what will happen!
+Փորձեք պահպանել ձևը առանց ` title ` և ` text `: Գուշակիր, թե ինչ կլինի:
 
 ![Form validation](images/form_validation2.png)
 
-Django is taking care to validate that all the fields in our form are correct. Isn't it awesome?
+Django- ն հոգ է տանում հաստատելու, որ մեր ձևի բոլոր դաշտերը ճիշտ են: Հիանալի չէ՞:
 
-## Edit form
+## Խմբագրել ձևը
 
-Now we know how to add a new post. But what if we want to edit an existing one? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
+Այժմ մենք գիտենք, թե ինչպես ավելացնել նոր գրառում: Բայց ի՞նչ կլինի, եթե մենք ուզում ենք խմբագրել գոյություն ունեցողը: Սա շատ նման է մեր արածին: Եկեք արագ ստեղծենք մի քանի կարևոր բաներ: (Եթե ինչ-որ բան չեք հասկանում, պետք է հարցնեք ձեր մարզչին կամ նայեք նախորդ գլուխներին, քանի որ մենք արդեն ծածկել ենք այս բոլոր քայլերը):
 
-First, let's save the icon which represents the edit button. Download [pencil-fill.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/pencil-fill.svg) and save it to the location `blog/templates/blog/icons/`.
+Նախ, եկեք պահենք պատկերակը, որը ներկայացնում է խմբագրման կոճակը: Ներբեռնեք [ pencil-fill.svg ](https://raw.githubusercontent.com/twbs/icons/main/icons/pencil-fill.svg) - ը և այն պահեք ` blog/templates/blog/icons/`:
 
-Open `blog/templates/blog/post_detail.html` in the code editor and add the following code inside `article` element:
+Կոդի խմբագրում բացեք `blog/templates/blog/post_detail.html` և `article` էլեմենտի մեջ ավելացրեք հետևյալ ծածկագիրը.
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -311,9 +311,9 @@ Open `blog/templates/blog/post_detail.html` in the code editor and add the follo
 </aside>
 ```
 
-so that the template will look like this:
+այնպես, որ ձևանմուշն այսպիսին լինի.
 
-{% filename %}blog/templates/blog/post_detail.html{% endfilename %}
+{% filename%} բլոգ / ձևանմուշներ / բլոգ / post_detail.html {% endfilename%}
 
 ```html
 {% extends 'blog/base.html' %}
