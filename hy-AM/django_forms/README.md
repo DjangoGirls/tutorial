@@ -476,6 +476,6 @@ form = PostForm(instance=post)
 
 (Մի մոռացեք փոխարինել `<your-pythonanywhere-domain>` ձեր իրական PythonAnywhere ենթադոմեյնով ՝ առանց անկյունային փակագծերի:)
 
-* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (use the menu button in the upper right of the console) and hit **Reload**. Refresh your https://subdomain.pythonanywhere.com blog to see the changes.
+* Ի վերջո, անցեք [ "Web" page](https://www.pythonanywhere.com/web_app_setup/) (օգտագործեք մենյուի վերևի աջ մասում ընտրացանկի կոճակը) և սեղմեք ** Reload**: Թարմացրեք ձեր https://subdomain.pythonanywhere.com բլոգը ՝ փոփոխությունները տեսնելու համար:
 
-And that should be it. Congrats! :)
+Եվ դա պետք է լինի դա: Շնորհավորանքներ :)
