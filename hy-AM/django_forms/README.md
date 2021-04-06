@@ -336,7 +336,7 @@ Django- ն հոգ է տանում հաստատելու, որ մեր ձևի բո�
 {% endblock %}
 ```
 
-Open `blog/urls.py` in the code editor, and add this line:
+Բացեք ` blog/urls.py ` ծածկագրի խմբագրում և ավելացրեք այս տողը.
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -344,9 +344,9 @@ Open `blog/urls.py` in the code editor, and add this line:
     path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
 ```
 
-We will reuse the template `blog/templates/blog/post_edit.html`, so the last missing thing is a *view*.
+Մենք կրկին կօգտագործենք ` blog/templates/blog/post_edit.html ` ձևանմուշը, այնպես որ վերջին բացակայողը * view -է*:
 
-Let's open `blog/views.py` in the code editor and add this at the very end of the file:
+Եկեք բացենք ` blog/views.py` ծածկագրի խմբագրում և ավելացնենք սա ֆայլի հենց վերջում.
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -366,7 +366,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-This looks almost exactly the same as our `post_new` view, right? But not entirely. For one, we pass an extra `pk` parameter from `urls`. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
+Սա կարծես գրեթե նույնն է, ինչ մեր ` post_new ` տեսակետը: Բայց ոչ ամբողջությամբ: Մեկի համար մենք ` url- ից ` փոխանցում ենք լրացուցիչ ` pk ` պարամետր: Հաջորդը, մենք ստանում ենք ` Post ` մոդելը, որը ցանկանում ենք խմբագրել ` get_object_or_404(Post, pk=pk)`, իսկ հետո, երբ ձև ենք ստեղծում, այս գրառումն անցնում ենք որպես ` instance`, այնպես էլ, երբ ձևը պահում ենք
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -374,7 +374,7 @@ This looks almost exactly the same as our `post_new` view, right? But not entire
 form = PostForm(request.POST, instance=post)
 ```
 
-…and when we've just opened a form with this post to edit:
+… Եվ երբ մենք այս գրառմամբ նոր բացեցինք ձևաթուղթ ՝ խմբագրելու համար.
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -382,23 +382,23 @@ form = PostForm(request.POST, instance=post)
 form = PostForm(instance=post)
 ```
 
-OK, let's test if it works! Let's go to the `post_detail` page. There should be an edit button in the top-right corner:
+Լավ, եկեք փորձենք, արդյոք այն աշխատում է: Եկեք գնանք ` post_detail` էջին: Վերին աջ անկյունում պետք է լինի խմբագրման կոճակ.
 
 ![Edit button](images/edit_button2.png)
 
-When you click it you will see the form with our blog post:
+Երբ կտտացրեք այն, կտեսնեք ձևը մեր բլոգի գրառման հետ.
 
 ![Edit form](images/edit_form2.png)
 
-Feel free to change the title or the text and save the changes!
+Ազատորեն փոխեք վերնագիրը կամ տեքստը և պահպանեք փոփոխությունները:
 
-Congratulations! Your application is getting more and more complete!
+Շնորհավորում եմ Ձեր դիմումը ավելի ու ավելի ամբողջական է դառնում:
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.2/topics/forms/
+Եթե ​​Django ձևերի վերաբերյալ ավելի շատ տեղեկատվության կարիք ունեք, պետք է կարդաք փաստաթղթերը. https://docs.djangoproject.com/hy/2.2/topics/forms/
 
-## Security
+## Անվտանգություն
 
-Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
+Հղումը կտտացնելով նոր հաղորդագրություններ ստեղծելու կարողությունը զարմանալի է: Բայց հենց հիմա, յուրաքանչյուր ոք, ով այցելում է ձեր կայք, կկարողանա նոր բլոգային գրառում կատարել, և դա, հավանաբար, ձեր ուզածը չէ: Եկեք այնպես անենք, որ կոճակը ցուցադրվի ձեզ համար, բայց ոչ ուրիշ մեկի:
 
 Open `blog/templates/blog/base.html` in the code editor, find our `div` inside `header` and the anchor element you put in there earlier. It should look like this:
 
