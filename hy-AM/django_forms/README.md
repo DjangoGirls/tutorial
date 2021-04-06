@@ -252,11 +252,11 @@ from django.shortcuts import redirect
 return redirect('post_detail', pk=post.pk)
 ```
 
-` post_detail ` այն տեսքի անունն է, որին մենք ցանկանում ենք այցելել: Հիշո՞ւմ եք, որ այս * view* պահանջում է ` pk ` փոփոխական: To pass it to the views, we use `pk=post.pk`, where `post` is the newly created blog post!
+` post_detail ` այն տեսքի անունն է, որին մենք ցանկանում ենք այցելել: Հիշո՞ւմ եք, որ այս * view* պահանջում է ` pk ` փոփոխական: Այն դիտումներին փոխանցելու համար մենք օգտագործում ենք ` pk = post.pk `, որտեղ ` post` նոր ստեղծվող բլոգային գրառում է:
 
-OK, we've talked a lot, but we probably want to see what the whole *view* looks like now, right?
+Լավ, մենք շատ ենք խոսել, բայց հավանաբար ուզում ենք տեսնել, թե ինչպիսին է այժմ * view * ճիշտ է:
 
-{% filename %}blog/views.py{% endfilename %}
+{% filename%} բլոգ /views.py {% endfilename%}
 
 ```python
 def post_new(request):
@@ -273,13 +273,13 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Let's see if it works. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it… and voilà! The new blog post is added and we are redirected to the `post_detail` page!
+Տեսնենք ՝ կաշխատի՞: Անցեք http://127.0.0.1:8000/post/new/ էջին, ավելացրեք ` վերնագիր </ 0> և <code> տեքստ </ 0>, պահեք այն… և voilà: Ավելացվեց բլոգի նոր գրառումը, և մենք վերահասցեագրվում ենք <code> հաղորդագրության_մանրամասնություն ` էջ:
 
-You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a *publish button* in **Django Girls Tutorial: Extensions**.
+Գուցե նկատած լինեիք, որ մենք տեղադրում ենք հրապարակման ամսաթիվը նախքան հաղորդագրությունը պահելը: Ավելի ուշ, մենք կներկայացնենք * հրապարակման կոճակ * ** Django Girls Tutorial- ում ՝ Extensions **:
 
-That is awesome!
+Դա հիանալի է!
 
-> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
+> Քանի որ մենք վերջերս օգտագործել ենք Django ադմինիստրատորի միջերեսը, համակարգը ներկայումս կարծում է, որ մենք դեռ մուտք ենք գործել: Կան մի քանի իրավիճակներ, որոնք կարող են հանգեցնել մեզ դուրս գալուն (զննարկիչը փակելը, DB- ն վերագործարկելը և այլն): Եթե ​​հաղորդագրություն ստեղծելիս հայտնաբերում եք, որ սխալներ եք գրանցում մուտք գործած օգտվողի բացակայության վերաբերյալ, ապա անցեք ադմինիստրատորի էջ http://127.0.0.1:8000/admin և կրկին մուտք գործեք: Դրանով խնդիրը ժամանակավորապես կկարգավորվի: There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
 
 ![Logged in error](images/post_create_error.png)
 
