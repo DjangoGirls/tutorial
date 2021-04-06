@@ -2,9 +2,9 @@
 
 > **Note** The following chapter can be sometimes a bit hard to get through. Persist and finish it; deployment is an important part of the website development process. यह अध्याय बीच में इसलिए डाला गया है ताकि आपके अध्यापक आपकी वेबसाइट को ऑनलाइन डालने में आपकी मदद कर सके| This means you can still finish the tutorial on your own if you run out of time.
 
-अभी तक आपकी वेबसाइट सिर्फ आपके कंप्यूटर पर थी | अब आप उसे डिप्लॉय करना सीखेंगे | Deploying is the process of publishing your application on the Internet so people can finally go and see your app. :)
+अभी तक आपकी वेबसाइट सिर्फ आपके कंप्यूटर पर थी | अब आप उसे डिप्लॉय करना सीखेंगे | डिप्लोयिंग का मतलब इन्टरनेट पर अपनी एप्लीकेशन छापना ताकि दुसरे लोग उसे देख सके| :)
 
-As you learned, a website has to be located on a server. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
+जैसे apne सीखा, हर वेबसाइट एक सर्वर पर बनती है | There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
 
 The other external service we'll be using is [GitHub](https://www.github.com), which is a code hosting service. There are others out there, but almost all programmers have a GitHub account these days, and now so will you!
 
