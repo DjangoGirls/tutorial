@@ -189,7 +189,7 @@ data-collapse=true ces-->
 >     Django~={{ book.django_version }}
 >     
 > 
-> Now, run `pip install -r requirements.txt` to install Django.
+> Django- ն տեղադրելու համար այժմ մուտքագրեք `pip install -r requirements.txt`:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
