@@ -112,7 +112,7 @@ data-collapse=true ces-->
 >     C:\Users\Name\djangogirls> myvenv\Scripts\activate
 >     
 > 
-> > ** Նշում. ** Windows 10-ի դեպքում Windows PowerShell- ում կարող է ստացվել սխալի հաղորդագրություն, որում ասվում է, որ `execution of scripts is disabled on this system/սցենարը անջատված է այս համակարգում` In this case, open another Windows PowerShell with the "Run as Administrator" option. Then try typing the following command before starting your virtual environment:
+> > ** Նշում. ** Windows 10-ի դեպքում Windows PowerShell- ում կարող է ստացվել սխալի հաղորդագրություն, որում ասվում է, որ `execution of scripts is disabled on this system/սցենարը անջատված է այս համակարգում` Այս դեպքում բացեք մեկ այլ Windows PowerShell «Գործարկեք որպես ադմինիստրատոր»/"Run as Administrator" տարբերակով: Դրանից հետո փորձեք մուտքագրել հետևյալ հրամանը ՝ նախքան ձեր վիրտուալ միջավայրի/virtual environment-ի սկսելը.
 > > 
 > > {% filename %}command-line{% endfilename %}
 > > 
@@ -123,28 +123,28 @@ data-collapse=true ces-->
 > 
 > <!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
 > 
-> > **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows PowerShell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
+> > **Նշում** Հանրաճանաչ խմբագիր VS Code- ի օգտագործողների համար, որոնք գալիս են Windows PowerShell- ի վրա հիմնված ինտեգրված տերմինալ, եթե ցանկանում եք հավատարիմ մնալ ինտեգրված տերմինալին, կարող եք գործարկել հետևյալ հրահանգը ՝ ձեր վիրտուալ միջավայրն ակտիվացնելու համար.
 > > 
 > >     $ . myvenv\Scripts\activate.ps1
 > >     
 > > 
-> > The advantage is that you don't have to switch between editor windows and command-line windows
+> > Առավելությունն այն է, որ անհրաժեշտ չէ փոխություն անել խմբագրի պատուհանի և հրամանի տողի միջև:
 > 
 > <!--endsec-->
 > 
 > <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 > 
-> Start your virtual environment by running:
+> Սկսեք ձեր վիրտուալ միջավայրը/virtual environment-ը `գործարկելով.
 > 
 > {% filename %}command-line{% endfilename %}
 > 
 >     $ source myvenv/bin/activate
 >     
 > 
-> Remember to replace `myvenv` with your chosen `virtualenv` name!
+> Մի մոռացեք ` myvenv ` -ը փոխարինել ձեր ընտրած ` virtualenv ` անունով:
 > 
-> > **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
+> > **Նշում**երբեմն `source/աղբյուրը` կարող է անհասանելի լինել: Այդ դեպքում օգտագործեք հետևյալ մեթոդը.
 > > 
 > > {% filename %}command-line{% endfilename %}
 > > 
@@ -153,7 +153,7 @@ data-collapse=true ces-->
 > 
 > <!--endsec-->
 > 
-> You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
+> Դուք կհասկանաք, որ virtualenv- ն աշխատում է, երբ հրամանի տողում տեսնեք `(myvenv)` նախածանցը:
 > 
 > When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
 > 
