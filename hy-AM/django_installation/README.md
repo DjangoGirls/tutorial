@@ -1,7 +1,7 @@
-# Django installation
+# Django- ի տեղադրում
 
-> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
+> **Նշում** Եթե Chromebook եք օգտագործում, բաց թողեք այս գլուխը և համոզվեք, որ հետևում եք [Chromebook Setup/Chromebook- ի կարգավորման](../chromebook_setup/README.md) ցուցումներին:
 > 
-> **Note** If you already worked through the [installation steps](../installation/README.md) then you've already done this – you can go straight to the next chapter!
+> **Նշում** Եթե դուք արդեն ավարտել եք տեղադրումը [installation steps](../installation/README.md) , կարող եք ուղղակիորեն անցնել հաջորդ գլխին:
 
 {% include "/django_installation/instructions.md" %}
