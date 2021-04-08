@@ -1,18 +1,18 @@
 > Այս բաժնի մի մասը հիմնված է Geek Girls Carrots- ի (https://github.com/ggcarrots/django-carrots) ձեռնարկների վրա:
 > 
-> Այս բաժնի մի մասը հիմնված է  django-marcador- ի վրա ձեռնարկ </ 0> լիցենզավորված Creative Commons- ի ներքո Attribution-ShareAlike 4.0 միջազգային լիցենզիա: Django-marcador ձեռնարկը հեղինակային իրավունքի պաշտպանն են Markus Zapke-Gründemann et al.</p> </blockquote> 
+> Այս բաժնի մի մասը հիմնված է  django-marcador- ի վրա ձեռնարկ </ 0> լիցենզավորված Creative Commons- ի ներքո Attribution-ShareAlike 4.0 միջազգային լիցենզիա: Django-marcador ձեռնարկի հեղինակային իրավունքի պաշտպանն են Markus Zapke-Gründemann et al.</p> </blockquote> 
 > 
 > ## Վիրտուալ միջավայր
 > 
-> Նախքան Django- ն տեղադրելը, մենք կստիպենք ձեզ տեղադրել չափազանց օգտակար գործիք, որը կօգնի ձեր կոդավորման միջավայրը կոկիկ պահել ձեր համակարգչում: Հնարավոր է բաց թողնել այս քայլը, բայց շատ խորհուրդ է տրվում: Հնարավոր լավագույն կարգավորումից սկսելը ապագայում ձեզ շատ դժվարություններ կփրկի:
+> Նախքան Django- ն տեղադրելը, մենք ձեզ կառաջարկենք տեղադրել չափազանց օգտակար գործիք, որը կօգնի ձեր կոդավորման միջավայրը կոկիկ պահել ձեր համակարգչում: Հնարավոր է բաց թողնել այս քայլը, բայց խորհուրդ է տրվում իրականացնել: Հնարավոր լավագույն կարգավորումից սկսելը ապագայում ձեզ շատ դժվարություններ կփրկի:
 > 
-> Այսպիսով, եկեք ստեղծենք ** վիրտուալ միջավայր/virtual environment** (կոչվում է նաև *virtualenv* ): Virtualenv will isolate your Python/Django setup on a per-project basis. This means that any changes you make to one website won't affect any others you're also developing. Neat, right?
+> Այսպիսով, եկեք ստեղծենք ** վիրտուալ միջավայր/virtual environment** (կոչվում է նաև *virtualenv* ): Virtualenv- ը մեկուսացնելու է ձեր Python / Django- ի տեղադրումը ՝ ըստ նախագծի: Սա նշանակում է, որ որևէ փոփոխություն, որ կատարեք մեկ կայքում, չի ազդի որևէ այլ կայքի վրա, որը դուք նույնպես զարգացնում եք: Կոկիկ է, այնպես չէ՞:
 > 
-> All you need to do is find a directory in which you want to create the `virtualenv`; your home directory, for example. On Windows, it might look like `C:\Users\Name` (where `Name` is the name of your login).
+> Դուք պետք է ընդամենը գտնեք գրացուցակ, որում ցանկանում եք ստեղծել `virtualenv`; ձեր տան գրացուցակը, օրինակ. Windows- ում այն ​​կարող է նման լինել `C:\Users\Name` (որտեղ ` Name ` - ը ձեր մուտքի անունն է):
 > 
-> > **NOTE:** On Windows, make sure that this directory does not contain accented or special characters; if your username contains accented characters, use a different directory, for example, `C:\djangogirls`.
+> > ** ՆՇՈՒՄ. ** Windows- ում համոզվեք, որ այս գրացուցակը չի պարունակում շեշտադրված կամ հատուկ նիշեր. եթե ձեր օգտանունը պարունակում է ընդգծված նիշեր, օգտագործեք այլ գրացուցակ, օրինակ ՝ `C:\djangogirls`:
 > 
-> For this tutorial we will be using a new directory `djangogirls` from your home directory:
+> Այս ձեռնարկի համար մենք կօգտագործենք նոր գրացուցակ ` djangogirls ` ձեր տան գրացուցակից.
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -20,7 +20,7 @@
 >     $ cd djangogirls
 >     
 > 
-> We will make a virtualenv called `myvenv`. The general command will be in the format:
+> Մենք պատրաստելու ենք մի վիրտուալ անուն, որը կոչվում է ` myvenv `: Ընդհանուր հրամանը կլինի ձևաչափով/format.
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -30,7 +30,7 @@
 > <!--sec data-title="Virtual environment: Windows" data-id="virtualenv_installation_windows"
 data-collapse=true ces-->
 > 
-> To create a new `virtualenv`, you need to open the command prompt and run `python -m venv myvenv`. It will look like this:
+> Նոր `virtualenv` ստեղծելու համար հարկավոր է բացել հրամանի տողը և գործարկել `python -m venv myvenv`: Դա կունենա այսպիսի տեսք.
 > 
 > {% filename %}command-line{% endfilename %}
 > 
