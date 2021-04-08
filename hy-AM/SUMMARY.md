@@ -1,6 +1,6 @@
-# Summary
+# Ամփոփում
 
-* [Introduction](README.md)
+* [Ներածություն](README.md)
 * [Installation](installation/README.md) 
   * [Command Line](installation/README.md#command-line)
   * [Python](installation/README.md#python)
