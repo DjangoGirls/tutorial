@@ -203,14 +203,14 @@ data-collapse=true ces-->
 > <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 > 
-> > If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
+> > Եթե ​​Windows- ում pip գործարկելիս սխալ եք ստացել, ստուգեք, որ նախագծի գրացուցակը չի պարունակում հեռավորություններ կամ հատուկ նիշեր (օրինակ, `C:\Users\User Name\djangogirls`): Եթե ​​սա է խնդիրը, ապա խնդրում ենք ձեր նախագիծը տեղափոխել մեկ այլ վայր, որի հասցեն չի պարունակի բացատներ և հատուկ նիշեր (խորհուրդ ենք տալիս ՝ `C:\djangogirls`): Նոր գրացուցակում ստեղծեք նոր virtualenv, այնուհետև ջնջեք հինը և կրկնեք վերը նշված հրահանգները: (Virtualenv գրացուցակի տեղափոխումը չի գործի, քանի որ virtualenv- ն օգտագործում է բացարձակ ուղիներ):
 > 
 > <!--endsec-->
 > 
 > <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 > 
-> > Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
+> > Հրամանի տողը կարող է սառեցնել Django- ն տեղադրելու փորձից հետո: Եթե ​​դա տեղի ունենա, ապա վերը նշված հրամանի փոխարեն օգտագործեք այս մեկը.
 > > 
 > > {% filename %}command-line{% endfilename %}
 > > 
