@@ -37,23 +37,23 @@ data-collapse=true ces-->
 >     C:\Users\Name\djangogirls> python -m venv myvenv
 >     
 > 
-> Where `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces, accents or special characters. It is also good idea to keep the name short – you'll be referencing it a lot!
+> Որտեղ ` myvenv ` - ը ձեր `virtualenv` անունն է: Կարող եք օգտագործել ցանկացած այլ անուն, բայց հավատարիմ մնացեք փոքրատառերին և մի օգտագործեք բացատներ, շեշտադրումներ կամ հատուկ նիշեր: Լավ է նաև, որ անունը կարճ մնա. Դուք դեռ շատ կանդրադառնաք դրան:
 > 
 > <!--endsec-->
 > 
 > <!--sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 > 
-> We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv myvenv`. It will look like this:
+> Մենք կարող ենք ստեղծել ` virtualenv ` ինչպես Linux- ի, այնպես էլ OS X- ի վրա ՝ գործարկելով `python3 -m venv myvenv`: Դա կունենա այսպիսի տեսք.
 > 
 > {% filename %}command-line{% endfilename %}
 > 
 >     $ python3 -m venv myvenv
 >     
 > 
-> `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces. It is also a good idea to keep the name short as you'll be referencing it a lot!
+> ` myvenv ` - ը ձեր `virtualenv` անունն է: Կարող եք օգտագործել ցանկացած այլ անուն, բայց հավատարիմ մնացեք փոքրատառերին և բացատներ մի օգտագործեք: Լավ է նաև, որ անունը կարճ մնա. Դուք դեռ շատ կանդրադառնաք դրան:
 > 
-> > **NOTE:** On some versions of Debian/Ubuntu you may receive the following error:
+> > ** ՆՇՈՒՄ. ** Debian / Ubuntu- ի որոշ տարբերակների վրա կարող եք ստանալ հետևյալ սխալը.
 > > 
 > > {% filename %}command-line{% endfilename %}
 > > 
@@ -62,7 +62,7 @@ data-collapse=true ces-->
 > >     You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.
 > >     
 > > 
-> > In this case, follow the instructions above and install the `python3-venv` package: {% filename %}command-line{% endfilename %}
+> > Այս դեպքում հետևեք վերը նշված հրահանգներին և տեղադրեք ` python3-venv ` փաթեթը. {% filename %}command-line{% endfilename %}
 > > 
 > >     $ sudo apt install python3-venv
 > >     
