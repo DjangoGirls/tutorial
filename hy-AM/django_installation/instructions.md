@@ -155,26 +155,26 @@ data-collapse=true ces-->
 > 
 > Դուք կհասկանաք, որ virtualenv- ն աշխատում է, երբ հրամանի տողում տեսնեք `(myvenv)` նախածանցը:
 > 
-> When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
+> Վիրտուալ միջավայրի հետ աշխատելիս ` python ` հրամանն ինքնաբերաբար կվերաբերվի լեզվի ճիշտ տարբերակին, այնպես որ ձեզ հարկավոր չէ օգտագործել ` python3 `: 
 > 
-> OK, we have all important dependencies in place. We can finally install Django!
+> Հիանալի է, հիմա մենք բոլոր կարեւոր կախվածությունները կպահենք մեկ տեղում: Վերջապես, դուք կարող եք տեղադրել Django- ն:
 > 
-> ## Installing Django {#django}
+> ## Django- ի տեղադրում {#django}
 > 
-> Now that you have your `virtualenv` started, you can install Django.
+> Այժմ, երբ ձեր `virtualenv`-ն աշխատում է, կարող եք տեղադրել Django- ն:
 > 
-> Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
+> Բայց մինչ այդ մենք պետք է համոզվենք, որ մենք ունենք `pip`- ի վերջին տարբերակը տեղադրված, դա այն ծրագիրն է, որը մենք կօգտագործենք Django- ն տեղադրելու համար.
 > 
 > {% filename %}command-line{% endfilename %}
 > 
 >     (myvenv) ~$ python -m pip install --upgrade pip
 >     
 > 
-> ### Installing packages with requirements
+> ### Փաթեթների տեղադրում պահանջներով
 > 
-> A requirements file keeps a list of dependencies to be installed using `pip install`:
+> Պահանջների ֆայլը/A requirements file պահում է կախվածության ցուցակը որը տեղադրվելու է օգտագործելով `pip install`:
 > 
-> First create a `requirements.txt` file inside of the `djangogirls/` folder, using the code editor that you installed earlier. You do this by opening a new file in the code editor and then saving it as `requirements.txt` in the `djangogirls/` folder. Your directory will look like this:
+> First create a `requirements.txt` file inside of the `djangogirls/` folder, using the code editor that you installed earlier. Դուք դա անում եք կոդի խմբագրում/code editor-ում նոր ֆայլ բացելով, այնուհետև պահպանելով այն որպես `requirements.txt/ պահանջներ` `djangogirls/` թղթապանակում: Ձեր թղթապանակն այսպիսի տեսք կունենա.
 > 
 >     djangogirls
 >     ├── myvenv
@@ -182,7 +182,7 @@ data-collapse=true ces-->
 >     └───requirements.txt
 >     
 > 
-> In your `djangogirls/requirements.txt` file you should add the following text:
+> Հետևյալ կոդը ավելացրեք ձեր `djangogirls/requirements.txt` ֆայլում.
 > 
 > {% filename %}djangogirls/requirements.txt{% endfilename %}
 > 
