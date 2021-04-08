@@ -222,8 +222,8 @@ data-collapse=true ces-->
 > <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 > 
-> > If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
+> > Եթե ​​Ubuntu 12.04-ին pip զանգահարելիս սխալի եք հանդիպում, գործարկեք `python -m pip install -U --force-reinstall pip` ՝ վիրտուալում pip- ի տեղադրումն ամրագրելու համար: 
 > 
 > <!--endsec-->
 > 
-> That's it! You're now (finally) ready to create a Django application!
+> Վերջ Դուք այժմ (վերջապես) պատրաստ եք ստեղծել Django հավելված:
