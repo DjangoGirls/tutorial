@@ -67,14 +67,14 @@ data-collapse=true ces-->
 > >     $ sudo apt install python3-venv
 > >     
 > > 
-> > **NOTE:** On some versions of Debian/Ubuntu initiating the virtual environment like this currently gives the following error:
+> > ** ՆՇՈՒՄ. ** Debian / Ubuntu- ի որոշ տարբերակներում վիրտուալ միջավայր նախաձեռնելիս այն տալիս է հետևյալ սխալը.
 > > 
 > > {% filename %}command-line{% endfilename %}
 > > 
 > >     Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
 > >     
 > > 
-> > To get around this, use the `virtualenv` command instead.
+> > Այս խնդրը շրջանցելու համար օգտագործեք ` virtualenv ` հրամանը:
 > > 
 > > {% filename %}command-line{% endfilename %}
 > > 
@@ -82,14 +82,14 @@ data-collapse=true ces-->
 > >     $ virtualenv --python=python{{ book.py_version }} myvenv
 > >     
 > > 
-> > **NOTE:** If you get an error like
+> > **Նշում** Եթե նման սխալ եք ստանում
 > > 
 > > {% filename %}command-line{% endfilename %}
 > > 
 > >     E: Unable to locate package python3-venv
 > >     
 > > 
-> > then instead run:
+> > փոխարենը բաց թող
 > > 
 > > {% filename %}command-line{% endfilename %}
 > > 
@@ -98,21 +98,21 @@ data-collapse=true ces-->
 > 
 > <!--endsec-->
 > 
-> ## Working with virtualenv
+> ## Վիրտուալենվի/virtualenv-ի հետ աշխատանք
 > 
-> The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directory and files).
+> Վերոնշյալ հրամանը կստեղծի ` myvenv ` գրացուցակ (կամ մեկ այլ ՝ ձեր ընտրած ցանկացած անուն), որը կպարունակի վիրտուալ միջավայր/ virtual environment (հիմնականում ֆայլերի և պանակների շարք):
 > 
 > <!--sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
 > 
-> Start your virtual environment by running:
+> Սկսեք ձեր վիրտուալ միջավայրը/virtual environment-ը `գործարկելով.
 > 
 > {% filename %}command-line{% endfilename %}
 > 
 >     C:\Users\Name\djangogirls> myvenv\Scripts\activate
 >     
 > 
-> > **NOTE:** on Windows 10 you might get an error in the Windows PowerShell that says `execution of scripts is disabled on this system`. In this case, open another Windows PowerShell with the "Run as Administrator" option. Then try typing the following command before starting your virtual environment:
+> > ** Նշում. ** Windows 10-ի դեպքում Windows PowerShell- ում կարող է ստացվել սխալի հաղորդագրություն, որում ասվում է, որ `execution of scripts is disabled on this system/սցենարը անջատված է այս համակարգում` In this case, open another Windows PowerShell with the "Run as Administrator" option. Then try typing the following command before starting your virtual environment:
 > > 
 > > {% filename %}command-line{% endfilename %}
 > > 
