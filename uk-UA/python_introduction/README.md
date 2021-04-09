@@ -700,9 +700,9 @@ data-collapse=true ces-->
 
 ## If … elif … else
 
-Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
+Часто певні дії у нашій програмі мають відбуватись лише тоді, коли виконуються задані умови. Саме тому Python має інструмент, який називається **інструкцією if (якщо)**.
 
-Replace the code in your **python_intro.py** file with this:
+Замініть код у вашому файлі **python_intro.py** на такий:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -710,17 +710,19 @@ Replace the code in your **python_intro.py** file with this:
 if 3 > 2:
 ```
 
-If we were to save and run this, we'd see an error like this:
+Якщо ми збережемо цей файл і запустимо його, то побачимо таку помилку:
 
-{% filename %}{{ warning_icon }} command-line{% endfilename %}
+{% filename %}{{ warning_icon }} командний рядок{% endfilename %}
 
     $ python3 python_intro.py
     File "python_intro.py", line 2
              ^
     SyntaxError: unexpected EOF while parsing
     
+    (Помилка синтаксису: неочікуваний кінець файлу у рядку 2)
+    
 
-Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
+Python очікує від нас подальших інструкцій, які будуть виконані у разі, якщо умова `3 > 2` виявиться істинною (тобто `True`). Спробуємо змусити Python надрукувати “It works!” ("Воно працює!"). Змініть код у вашому файлі **python_intro.py** на такий:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -729,7 +731,7 @@ if 3 > 2:
     print('It works!')
 ```
 
-Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
+Звернули увагу, що ми зробили відступ в 4 пробіли для наступного рядка коду? Це необхідно для того, щоб Python знав, який шматок коду запускати у разі, якщо умова істинна. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
 
 Save it and give it another run:
 
