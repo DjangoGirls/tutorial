@@ -1,23 +1,23 @@
-# Django ORM and QuerySets
+# Django ORM և QuerySets
 
-In this chapter you'll learn how Django connects to the database and stores data in it. Let's dive in!
+Այս գլխում դուք կսովորեք, թե ինչպես է Django- ն միանում տվյալների բազային և տվյալների մեջ պահում դրանում: Եկեք սուզվենք:
 
-## What is a QuerySet?
+## Ի՞նչ է QuerySet- ը:
 
-A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow you to read the data from the database, filter it and order it.
+QuerySet- ը, ըստ էության, տվյալ Մոդելի օբյեկտների ցուցակն է: QuerySets- ը թույլ է տալիս կարդալ տվյալների բազաներից, զտել դրանք և պատվիրել դրանք:
 
-It's easiest to learn by example. Let's try this, shall we?
+Օրինակով սովորելը ամենահեշտն է: Փորձենք սա, այնպես չէ՞:
 
 ## Django shell
 
-Open up your local console (not on PythonAnywhere) and type this command:
+Բացեք ձեր տեղական վահանակը (ոչ PythonAnywhere- ում) և մուտքագրեք այս հրամանը.
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py shell
     
 
-The effect should be like this:
+Արդյունքն այսպիսին պետք է լինի.
 
 {% filename %}command-line{% endfilename %}
 
@@ -26,11 +26,11 @@ The effect should be like this:
 >>>
 ```
 
-You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too.
+Դուք այժմ Django- ի ինտերակտիվ վահանակում եք: Դա ճիշտ է Python- ի հուշման նման, բայց ինչ-որ լրացուցիչ Django մոգությամբ: :) Այստեղ կարող եք օգտագործել Python- ի բոլոր հրամանները:
 
-### All objects
+### Բոլոր օբյեկտները
 
-Let's try to display all of our posts first. You can do that with the following command:
+Փորձենք նախ ցուցադրել մեր բոլոր հաղորդագրությունները: Դա կարող եք անել հետևյալ հրահանգով.
 
 {% filename %}command-line{% endfilename %}
 
@@ -41,7 +41,7 @@ Traceback (most recent call last):
 NameError: name 'Post' is not defined
 ```
 
-Oops! An error showed up. It tells us that there is no Post. It's correct – we forgot to import it first!
+Վայ Սխալ առաջացավ: Այն մեզ ասում է, որ Փոստ չկա: Մոռացանք նախ ներմուծել:
 
 {% filename %}command-line{% endfilename %}
 
