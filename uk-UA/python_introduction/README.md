@@ -480,7 +480,7 @@ KeyError: 'age'
 
 Велика частина програмування — це порівняння. Що є найпростішою річчю для порівняння? Звісно, числа. Давайте подивимось, як це працює:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 >>> 5 > 2
@@ -503,7 +503,7 @@ True
 
 Задайте для Python ще дві задачі:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 >>> 6 >= 12 / 2
@@ -521,7 +521,7 @@ False
 
 Чудово! Хочете ще? Спробуйте це:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 >>> 6 > 2 and 2 < 3
@@ -539,7 +539,7 @@ True
 
 Чули колись вираз "порівнювати тепле з м'яким"? Давайте спробуємо щось подібне у Python:
 
-{% filename %}{{ warning_icon }} command-line{% endfilename %}
+{% filename %}{{ warning_icon }} командний рядок{% endfilename %}
 
 ```python
 >>> 1 > 'django'
@@ -563,7 +563,7 @@ TypeError: '>' not supported between instances of 'int' and 'str'
 
 Логічні значення також можуть бути змінними! Погляньте:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 >>> a = True
@@ -573,7 +573,7 @@ True
 
 Можна зробити теж саме і по-іншому:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 >>> a = 2 > 5
