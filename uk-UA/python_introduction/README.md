@@ -534,8 +534,8 @@ True
 
 Ви можете давати Python стільки чисел для порівняння, скільки заманеться, і він дасть вам результат! Дуже розумно, чи не так?
 
-- **and** – якщо з'єднати дві умови оператором `and`, то результат буде істинним (True) лише у випадку, коли обидві умови істинні (True);
-- **or** – якщо з'єднати дві умови оператором `or`, то результат буде істинним (True), коли хоча б одна з умов – істинна (True).
+- **and** – якщо з'єднати дві умови оператором `and` ("та"), то результат буде істинним (True) лише у випадку, коли обидві умови істинні (True);
+- **or** – якщо з'єднати дві умови оператором `or` ("або"), то результат буде істинним (True), коли хоча б одна з умов – істинна (True).
 
 Чули колись вираз "порівнювати тепле з м'яким"? Давайте спробуємо щось подібне у Python:
 
@@ -817,34 +817,34 @@ Python послідовно виконує всі перевірки та дру
     Чудово, я можу почути всі нотки
     
 
-## Comments
+## Коментарі
 
-Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
+Коментарі – це рядки коду, які починаються з `#`. Ви можете написати будь-що після `#` і Python його проігнорує. Коментарі можуть спростити ваш код та допомогти іншим людям (да і вам самим) пізніше зрозуміти ваш код.
 
-Let's see how that looks:
+Давайте подивимось, як це виглядає:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-# Change the volume if it's too loud or too quiet
+# Відрегулюемо звук, якщо занадто гучно або занадто тихо
 if volume < 20 or volume > 80:
     volume = 50
-    print("That's better!")
+    print("Так краще!")
 ```
 
-You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
+Вам не потрібно писати коментар для кожного рядка коду, але коментарі є корисними для того, щоб пояснити, чому ваш код робить саме це, або ж надати короткий опис, коли робиться щось складне.
 
-### Зміст
+### Підсумок
 
-In the last few exercises you learned about:
+В останніх трьох вправах ви освоїли такі поняття як:
 
-- **comparing things** – in Python you can compare things by using `>`, `>=`, `==`, `<=`, `<` and the `and`, `or` operators
-- **Boolean** – a type of object that can only have one of two values: `True` or `False`
-- **Saving files** – storing code in files so you can execute larger programs.
-- **if … elif … else** – statements that allow you to execute code only when certain conditions are met.
-- **comments** - lines that Python won't run which let you document your code
+- **Порівняння** – в Python можна порівнювати елементи використовуючи `>`, `>=`, `==`, `<=`, `<` та оператори `and`, `or`;
+- **Логічний тип (Boolean)** – тип об'єкту, що може приймати лише одне з двох значень: `True` (істинне) або `False` (хибне);
+- **Збереження файлів** – зберігання коду в файлах дозволяє виконувати більші за розміром програми;
+- **if...elif...else** – інструкції, що дозволяють виконувати код, лише коли задовольняються певні умови.
+- **Коментарі** – рядки коду, які Python не запускає, але які дозволяють вам документувати код.
 
-Time for the last part of this chapter!
+Час для останньої частини цього розділу!
 
 ## Ваші власні функції!
 
