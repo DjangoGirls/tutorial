@@ -16,7 +16,7 @@
 
 Ми хочемо відкрити консоль Python, тому введіть `python` на Windows або `python3` на Mac OS/Linux та натисніть `Enter`.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
     $ python3
     Python {{ book.py_release }} (...)
@@ -30,9 +30,9 @@
 
 Якщо забажаєте вийти із консолі Python, наберіть `exit()` або використайте комбінацію клавіш `Ctrl + Z` для Windows і `Ctrl + D` для Mac/Linux. Після цього ви більше не побачите `>>>`.
 
-Але наразі ми не бажаємо виходити із консолі Python. Ми хочемо дізнатися про неї більше. Почнемо з чогось простенького. Наприклад, спробуйте набрати певний математичний вираз, на зразок `2 + 3`, та натисніть `enter`.
+Але наразі ми не бажаємо виходити із консолі Python. Ми хочемо дізнатися про неї більше. Почнемо з чогось простенького. Наприклад, спробуйте набрати певний математичний вираз, на зразок `2 + 3`, та натисніть `Enter`.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 >>> 2 + 3
@@ -60,7 +60,7 @@
 
 Як щодо вашого імені? Наберіть ваше ім'я в лапках, як тут (можна писати кирилицею):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 >>> "Ola"
@@ -71,7 +71,7 @@
 
 Рядки можна об'єднувати. Спробуйте:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 >>> "Hi there " + "Ola"
@@ -80,7 +80,7 @@
 
 Рядки можна не тільки додавати, але й множити на число:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 >>> "Ola" * 3
@@ -91,7 +91,7 @@
 
 Використавши подвійні лапки:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 >>> "Runnin' down the hill"
@@ -100,7 +100,7 @@
 
 або ж "екранувати" апостроф за допомогою оберненої скісної риски `\` (бекслеш, англ. backslash):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 >>> 'Runnin\' down the hill'
@@ -109,7 +109,7 @@
 
 Гарно, еге ж? Щоб побачити своє ім'я, написане великими літерами, наберіть:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 >>> "Ola".upper()
@@ -120,7 +120,7 @@
 
 Якщо ви раптом забажаєте дізнатися число букв у вашому імені, то для цього також існує функція!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 >>> len("Ola")
@@ -144,7 +144,7 @@
 
 Спробуємо щось нове. Чи можемо ми отримати довжину числа тим же методом, як ми це робили для нашого імені? Наберіть `len(304023)` та натисніть `Enter`:
 
-{% filename %}{{ warning_icon }} command-line{% endfilename %}
+{% filename %}{{ warning_icon }} командний рядок{% endfilename %}
 
 ```python
 >>> len(304023)
@@ -157,7 +157,7 @@ TypeError: object of type 'int' has no len()
 
 Отже, прочитаємо уважно текст помилки вище. У ньому йдеться про те, що це "помилка типу": об'єкт типу "int" (integers, цілі числа) не має довжини. І що ж нам тепер робити? Можливо, можна записати наше число у формі рядка? Рядки ж мають довжину, правда?
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 >>> len(str(304023))
@@ -177,7 +177,7 @@ TypeError: object of type 'int' has no len()
 
 Скажімо, ми хочемо створити змінну і назвати її `name`:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 >>> name = "Ola"
@@ -187,7 +187,7 @@ TypeError: object of type 'int' has no len()
 
 Як ви помітили, ваша програма не повернула нічого, на відміну від прикладів вище. Отже, як ми можемо бути певні, що змінна насправді існує? Просто введіть `name` і натисніть `Enter`:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 >>> name
