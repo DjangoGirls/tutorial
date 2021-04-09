@@ -744,28 +744,28 @@ It works!
 
 Примітка: Пам'ятайте, що у Windows немає команди 'python3'. Тому, коли виконуєте файл, пишіть 'python' замість 'python3'.
 
-### А що, коли умова не істинна?
+### А що, коли умова не істинна (тобто False)?
 
-In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
+У попередніх прикладах код виконувався, лише коли умови були істинними – True. Однак Python також має інструкції `elif` (інакше якщо) та `else` (інакше):
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
 if 5 > 2:
-    print('5 is indeed greater than 2')
+    print('5 дійсно більше ніж 2')
 else:
-    print('5 is not greater than 2')
+    print('5 не більше ніж 2')
 ```
 
-When this is run it will print out:
+Коли це все запустимо, то отримаємо на виході:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
     $ python3 python_intro.py
-    5 is indeed greater than 2
+    5 дійсно більше ніж 2
     
 
-If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
+Якщо б число 2 було більшим за 5, то тоді виконалась би друга команда замість першої. Просто, правда ж? Подивимося як працює `elif`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -779,42 +779,42 @@ else:
     print('Hey anonymous!')
 ```
 
-and executed:
+і в результаті:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
     $ python3 python_intro.py
     Hey Sonja!
     
 
-See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
+Бачите, що тут відбувається? `elif` вказує додаткові умови для перевірки, якщо результат попередніх – невдалий.
 
-You can add as many `elif` statements as you like after your initial `if` statement. For example:
+Ви можете додати стільки виразів `elif`, скільки вам до вподоби, одразу після виразу `if`. Наприклад (задамо гучність музики у змінній volume):
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
 volume = 57
 if volume < 20:
-    print("It's kinda quiet.")
+    print("Якось тихо")
 elif 20 <= volume < 40:
-    print("It's nice for background music")
+    print("Це добре для фонової музики")
 elif 40 <= volume < 60:
-    print("Perfect, I can hear all the details")
+    print("Чудово, я можу почути всі нотки")
 elif 60 <= volume < 80:
-    print("Nice for parties")
+    print("Добре для вечірки")
 elif 80 <= volume < 100:
-    print("A bit loud!")
+    print("Трохи гучно!")
 else:
-    print("My ears are hurting! :(")
+    print("Мої вуха болять! :(")
 ```
 
-Python runs through each test in sequence and prints:
+Python послідовно виконує всі перевірки та друкує:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
     $ python3 python_intro.py
-    Perfect, I can hear all the details
+    Чудово, я можу почути всі нотки
     
 
 ## Comments
