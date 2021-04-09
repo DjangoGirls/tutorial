@@ -731,18 +731,18 @@ if 3 > 2:
     print('It works!')
 ```
 
-Звернули увагу, що ми зробили відступ в 4 пробіли для наступного рядка коду? Це необхідно для того, щоб Python знав, який шматок коду запускати у разі, якщо умова істинна. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
+Звернули увагу, що ми зробили відступ в 4 пробіли для наступного рядка коду? Це необхідно для того, щоб Python знав, який шматок коду запускати у разі, якщо умова істинна. Можна зробити відступ і в один пробіл, але майже усі Python-програмісти роблять відступ у 4 пробіли, щоб було акуратніше. Клавіша Tab також додає 4 пробіли (якщо ви не налаштували свій редактор інакше). Як зробите вибір, вже не змінюйте його! Якщо ви почали робити відступ з 4 пробілами, робіть такими ж і всі інші відступи у програмі – інакше ви можете зіткнутися з проблемами.
 
-Save it and give it another run:
+Збережіть і запустіть знову:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 $ python3 python_intro.py
 It works!
 ```
 
-Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
+Примітка: Пам'ятайте, що у Windows немає команди 'python3'. Тому, коли виконуєте файл, пишіть 'python' замість 'python3'.
 
 ### А що, коли умова не істинна?
 
