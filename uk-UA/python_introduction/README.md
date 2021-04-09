@@ -196,7 +196,7 @@ TypeError: object of type 'int' has no len()
 
 Урра! Ваша перша змінна :)! Ви завжди можете змінити значення, на яке вона посилатиметься:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 >>> name = "Sonja"
@@ -206,7 +206,7 @@ TypeError: object of type 'int' has no len()
 
 Також можна використовувати її у функціях:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 >>> len(name)
@@ -215,7 +215,7 @@ TypeError: object of type 'int' has no len()
 
 Файно, хіба ні? Звісно, змінні можуть представляти будь-що, наприклад числа! Спробуйте:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 >>> a = 4
@@ -226,7 +226,7 @@ TypeError: object of type 'int' has no len()
 
 А якщо ми використали неправильне ім'я? Як ви думаєте, що станеться? Спробуймо!
 
-{% filename %}{{ warning_icon }} command-line{% endfilename %}
+{% filename %}{{ warning_icon }} командний рядок{% endfilename %}
 
 ```python
 >>> city = "Tokyo"
@@ -244,7 +244,7 @@ NameError: name 'ctiy' is not defined
 
 Спробуйте таке:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 >>> name = 'Maria'
@@ -264,7 +264,7 @@ Maria
 
 Створимо список:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 >>> []
@@ -273,7 +273,7 @@ Maria
 
 Так, цей список пустий. Не дуже корисно, так? Створимо список лотерейних номерів. Ми не бажаємо увесь час повторюватись, то ж покладемо усе до змінної:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 >>> lottery = [3, 42, 12, 19, 30, 59]
@@ -281,7 +281,7 @@ Maria
 
 Гаразд, маємо список! Що ми можемо з ним робити? Давайте глянемо, скільки лотерейних номерів міститься у списку. Як ви думаєте, яку функцію для цього можна використати? Ви вже це знаєте!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 >>> len(lottery)
@@ -290,7 +290,7 @@ Maria
 
 Так! Знайома вам функція `len()` може дати вам кількість об'єктів у списку. Зручно, правда ж? Тепер, можливо, ми захочемо відсортувати список:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 >>> lottery.sort()
@@ -298,7 +298,7 @@ Maria
 
 Ця функція нічого не повертає, вона лише змінює порядок, в якому зберігаються числа у списку. Давайте надрукуємо список знову і подивимось, що ж сталося:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 >>> print(lottery)
@@ -309,7 +309,7 @@ Maria
 
 Можливо, ми хочемо відсортувати числа у зворотньому порядку? Давайте це зробимо!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 >>> lottery.reverse()
@@ -319,7 +319,7 @@ Maria
 
 Якщо ви забажаєте щось додати до свого списку, то можете це зробити за допомогою такої команди:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 >>> lottery.append(199)
@@ -329,7 +329,7 @@ Maria
 
 Якщо захочете показати лише перше число зі списку, то можете зробити це використавши **індекси**. Індекс - це порядковий номер, який повідомляє, з якої позиції у списку взято елемент. Програмісти люблять починати відлік з 0, отже перший об'єкт з вашого списку буде мати індекс 0, наступний - 1, і так далі. Спробуйте таке:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 >>> print(lottery[0])
@@ -342,7 +342,7 @@ Maria
 
 Для того, щоб видалити що-небудь зі списку, вам потрібно використати **індекси**, які ви вже знаєте, і метод `pop()`. Давайте спробуємо на прикладі та згадаємо, що ми вивчили раніше; ми будемо видаляти перший елемент з нашого списку.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 >>> print(lottery)
@@ -367,7 +367,7 @@ Maria
 
 Словник (dict) є чимось подібним до списку (list), але доступ до значень отримується шляхом пошуку за ключем замість числового індексу. Ключ може являти собою будь-який рядок або число. Створити пустий словник можна так:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 >>> {}
@@ -378,7 +378,7 @@ Maria
 
 А тепер спробуйте набрати таку команду (можете підставити сюди вашу власну інформацію):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 >>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
@@ -392,7 +392,7 @@ Maria
 
 Можна перевірити значення індивідуальних ключів, використовуючи такий синтаксис:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 >>> print(participant['name'])
@@ -403,7 +403,7 @@ Ola
 
 Що трапиться якщо запитати Python про значення ключа, який не існує? Не здогадуєтесь? Давайте спробуємо і подивимось!
 
-{% filename %}{{ warning_icon }} command-line{% endfilename %}
+{% filename %}{{ warning_icon }} командний рядок{% endfilename %}
 
 ```python
 >>> participant['age']
@@ -421,7 +421,7 @@ KeyError: 'age'
 
 Словники, як і списки, є *змінюваними*, це означає що вони можуть бути змінені після того, як створені. Ви можете додати нові пари ключ-значення до словника після того, як він був створений, наприклад:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 >>> participant['favorite_language'] = 'Python'
@@ -429,7 +429,7 @@ KeyError: 'age'
 
 Як і для списків, функція `len()` для словників повертає кількість пар ключ-значення в словнику. Наберіть команду:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 >>> len(participant)
@@ -440,7 +440,7 @@ KeyError: 'age'
 
 Ви можете використовувати метод `pop()` для видалення елемента зі словника. Скажімо, якщо ви бажаєте видалити значення, що відповідає ключу `'favorite_numbers'`, наберіть таку команду:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 >>> participant.pop('favorite_numbers')
@@ -453,7 +453,7 @@ KeyError: 'age'
 
 Також можна змінити значення, асоційоване з ключем, який вже існує у словнику. Наберіть:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
 ```python
 >>> participant['country'] = 'Germany'
