@@ -1,10 +1,10 @@
-# Django models
+# Django մոդելներ
 
-What we want to create now is something that will store all the posts in our blog. But to be able to do that we need to talk a little bit about things called `objects`.
+Մեզ ինչ-որ բան է պետք ՝ մեր բոլոր բլոգային գրառումները պահելու համար, դա հենց այն է ինչ մենք հիմա կստեղծենք: Բայց նախ եկեք խոսենք `objects/օբյեկտներ` կոչվող իրերի մասին:
 
-## Objects
+## Օbjects/Օբյեկտներ
 
-There is a concept in programming called `object-oriented programming`. The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
+Ծրագրավորման մեջ կա մի հասկացություն, որը կոչվում է օբյեկտիվ կողմնորոշում(կամ օբյեկտի վրա հիմնված ծրագրավորում:): Գաղափարն այն է, որ հրահանգների ձանձրալի հաջորդականության փոխարեն, մենք մոդելավորում ենք իրերը և նկարագրում, թե ինչպես են դրանք փոխազդում միմյանց հետ:
 
 So what is an object? It is a collection of properties and actions. It sounds weird, but we will give you an example.
 
