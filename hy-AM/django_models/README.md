@@ -10,7 +10,7 @@
 
 Եթե ​​մենք ուզում ենք կատու մոդելավորել, ապա կստեղծենք `Cat/ կատու`t օբյեկտ, որն ունի որոշակի հատկություններ, օրինակ ՝ `color/գույն`, `age/տարիք` `mood/տրամադրություն ` ՝ (վատ, լավ, քնկոտ;)), `owner/սեփականատեր` (օրինակ ՝ մեկ այլ առարկա. Անձ կամ, եթե կատուն վայրի է, այս հատկությունը դատարկ կլինի): 
 
-Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which case, we will give the cat some `CatFood`, which could be a separate object with properties, like `taste`).
+`Cat/Կատու` օբյեկտը կունենա որոշակի գործողությունների շարք. `purr/մլավել`, `scratch/ճանկռել`, կամ `feed/կերակրել` (որտեղ մենք կատուին տալիս ենք մի քանի `CatFood` (կատվի սնունդ), որը կարող է նաև լինել իր սեփական հատկություններով առանձին առարկա օրինակ `taste/համ` ):
 
     Cat
     --------
@@ -28,9 +28,9 @@ Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which case, we
     taste
     
 
-So basically the idea is to describe real things in code with properties (called `object properties`) and actions (called `methods`).
+Այսպիսով, հիմնականում գաղափարը՝ օբյեկտի նկարագրումն է կոդի մեջ՝ հատկություններով (կոչվում են `object properties/օբյեկտի հատկություններ`) և գործողություններով (կոչվում են `methods/մեթոդներ`):
 
-How will we model blog posts then? We want to build a blog, right?
+Այսպիսով, ինչպե՞ս ենք մոդելավորելու բլոգի հաղորդագրությունները: Մենք ուզում ենք բլոգ կառուցել, այնպես չէ՞:
 
 We need to answer the question: What is a blog post? What properties should it have?
 
