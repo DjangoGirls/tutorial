@@ -168,13 +168,13 @@ class Post(models.Model):
 
 Մեթոդները հաճախ ինչ-որ բան են `վերադարձնում/ return` : Դրա մի օրինակ կա `__str__` մեթոդում: Այս սցենարում, երբ մենք զանգահարենք `__str__()`, մենք կստանանք գրության վերնագիր ունեցող տեքստ (**string/տող**):
 
-Also notice that both `def publish(self):` and `def __str__(self):` are indented inside our class. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
+Նաև նկատեք, որ `def publish(self):` և `def __str__(self):` կտրված են մեր դասի ներսում: Քանի որ Python- ը զգայուն է սպիտակ տարածության նկատմամբ, մենք պետք է դասի մեջ ներմուծենք մեր մեթոդները: Հակառակ դեպքում, մեթոդները չեն պատկանի դասին, և դուք կարող եք ինչ-որ անսպասելի արդյունք ունենալ:
 
-If something is still not clear about models, feel free to ask your coach! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
+Եթե ​​մոդելների հետ կապված ինչ-որ բան դեռ պարզ չէ, ազատորեն հարցրեք ձեր ուսուցչին: Մենք գիտենք, որ դա իսկապես բարդ է, հատկապես, երբ զուգահեռաբար ուսումնասիրում ես, թե ինչ են օբյեկտներն/objects ու գործառույթները/functions: Բայց հուսանք, որ այս ամենը քեզ հիմա մոգություն չի թվում:
 
-### Create tables for models in your database
+### Ստեղծեք աղյուսակներ ձեր տվյալների բազայում
 
-The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
+Վերջին քայլը տվյալների բազայում մեր նոր մոդելի ավելացումն է: Նախ, մենք պետք է տեղյակ պահենք Django- ին, որ մենք փոփոխություններ ենք մտցրել մեր մոդելի մեջ: (Մենք հենց նոր ստեղծեցինք այն) Գնացեք ձեր վահանակի պատուհանում և մուտքագրեք `python manage.py makemigrations blog`: It will look like this:
 
 {% filename %}command-line{% endfilename %}
 
