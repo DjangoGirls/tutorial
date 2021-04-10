@@ -6,9 +6,9 @@
 
 Ծրագրավորման մեջ կա մի հասկացություն, որը կոչվում է օբյեկտիվ կողմնորոշում(կամ օբյեկտի վրա հիմնված ծրագրավորում:): Գաղափարն այն է, որ հրահանգների ձանձրալի հաջորդականության փոխարեն, մենք մոդելավորում ենք իրերը և նկարագրում, թե ինչպես են դրանք փոխազդում միմյանց հետ:
 
-So what is an object? It is a collection of properties and actions. It sounds weird, but we will give you an example.
+Այսպիսով, ինչ է օբյեկտը: Դա հատկությունների և գործողությունների հավաքածու է: Տարօրինակ է թվում, բայց մենք մի օրինակ կբերենք: 
 
-If we want to model a cat, we will create an object `Cat` that has some properties such as `color`, `age`, `mood` (like good, bad, or sleepy ;)), and `owner` (which could be assigned a `Person` object – or maybe, in case of a stray cat, this property could be empty).
+Եթե ​​մենք ուզում ենք կատու մոդելավորել, ապա կստեղծենք `Cat/ կատու`t օբյեկտ, որն ունի որոշակի հատկություններ, օրինակ ՝ `color/գույն`, `age/տարիք` `mood/տրամադրություն ` ՝ (վատ, լավ, քնկոտ;)), `owner/սեփականատեր` (օրինակ ՝ մեկ այլ առարկա. Անձ կամ, եթե կատուն վայրի է, այս հատկությունը դատարկ կլինի): 
 
 Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which case, we will give the cat some `CatFood`, which could be a separate object with properties, like `taste`).
 
