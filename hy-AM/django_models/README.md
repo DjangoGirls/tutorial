@@ -61,7 +61,7 @@ Django- ում մոդելը հատուկ տեսակի առարկա է. Այն պ
 
 ### Դիմումների ստեղծում
 
-Ամեն ինչ կոկիկ պահելու համար մենք մեր ծրագրի ներսում կստեղծենք առանձին ծրագիր: Շատ հաճելի է ամեն ինչ կազմակերպել հենց սկզբից: To create an application we need to run the following command in the console (from `djangogirls` directory where `manage.py` file is):
+Ամեն ինչ կոկիկ պահելու համար մենք մեր ծրագրի ներսում կստեղծենք առանձին ծրագիր: Շատ հաճելի է ամեն ինչ կազմակերպել հենց սկզբից: Ծրագիր / Application ստեղծելու համար մենք պետք է հրամանի տողում մուտքագրենք հետևյալ հրահանգը ( `djangogirls` գրացուցակից, որտեղ գտնվում է `manage.py` ֆայլը). 
 
 {% filename %}Mac OS X and Linux:{% endfilename %}
 
@@ -73,7 +73,7 @@ Django- ում մոդելը հատուկ տեսակի առարկա է. Այն պ
     (myvenv) C:\Users\Name\djangogirls> python manage.py startapp blog
     
 
-You will notice that a new `blog` directory is created and it contains a number of files now. The directories and files in our project should look like this:
+Դուք կնկատեք, որ ստեղծվել է նոր `blog` գրացուցակ, որն այժմ պարունակում է մի շարք ֆայլեր: Այսպիսով, մեր նախագծում գրացուցակները և ֆայլերը պետք է ունենան այսպիսի տեսք.
 
     djangogirls
     ├── blog
@@ -98,7 +98,7 @@ You will notice that a new `blog` directory is created and it contains a number 
     
     
 
-After creating an application, we also need to tell Django that it should use it. We do that in the file `mysite/settings.py` -- open it in your code editor. We need to find `INSTALLED_APPS` and add a line containing `'blog.apps.BlogConfig',` just above `]`. So the final product should look like this:
+Դիմումը/application-ը ստեղծվելուց հետո մենք պետք է Django- ին ասենք, որ այն այժմ պետք է օգտագործի այն: We do that in the file `mysite/settings.py` -- open it in your code editor. We need to find `INSTALLED_APPS` and add a line containing `'blog.apps.BlogConfig',` just above `]`. So the final product should look like this:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
