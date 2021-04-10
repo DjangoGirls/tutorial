@@ -59,9 +59,9 @@ Django- ում մոդելը հատուկ տեսակի առարկա է. Այն պ
 
 Դուք կարող եք տվյալների շտեմարանում մոդելի մասին մտածել որպես աղյուսակ ՝ սյունակներով (դաշտերով/columns (fields) և տողերով (տվյալներով)/rows (data):
 
-### Creating an application
+### Դիմումների ստեղծում
 
-To keep everything tidy, we will create a separate application inside our project. It is very nice to have everything organized from the very beginning. To create an application we need to run the following command in the console (from `djangogirls` directory where `manage.py` file is):
+Ամեն ինչ կոկիկ պահելու համար մենք մեր ծրագրի ներսում կստեղծենք առանձին ծրագիր: Շատ հաճելի է ամեն ինչ կազմակերպել հենց սկզբից: To create an application we need to run the following command in the console (from `djangogirls` directory where `manage.py` file is):
 
 {% filename %}Mac OS X and Linux:{% endfilename %}
 
