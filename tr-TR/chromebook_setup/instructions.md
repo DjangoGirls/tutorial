@@ -1,8 +1,8 @@
 Chromebook kullanmıyorsanız, [bu bölümü atlayabilirsiniz](http://tutorial.djangogirls.org/en/installation/#install-python). Chromebook kullanıyorsanız kurulum deneyiminiz biraz farklı olacaktır. Diğer yükleme yönergelerini göz ardı edebilirsiniz.
 
-### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com)
+### IDE Bulutu (paiza-bulutu IDE bulutu, AWS Bulut9, Glitch.com)
 
-Cloud IDE, size İnternette yazılım yükleyebileceğiniz, yazabileceğiniz ve çalıştırabileceğiniz bir kod düzenleyicisi ve çalışan bir bilgisayara erişim sağlayan bir araçtır. Eğitim boyunca, Cloud IDE sizin *yerel makinanız* gibi davranacak. OS X, Ubuntu veya Windows'daki sınıf arkadaşlarınız gibi terminal arayüzünde komut çalıştırmaya devam edeceksiniz, ancak terminaliniz Cloud IDE'nin sizin yerinize kuracağı başka bir bilgisayara bağlanacaktır. Here are the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com). Cloud IDE'lerden birini seçin ve o IDE'nin talimatlarini takip edin.
+Cloud IDE, size İnternette yazılım yükleyebileceğiniz, yazabileceğiniz ve çalıştırabileceğiniz bir kod düzenleyicisi ve çalışan bir bilgisayara erişim sağlayan bir araçtır. Eğitim boyunca, Cloud IDE sizin *yerel makinanız* gibi davranacak. OS X, Ubuntu veya Windows'daki sınıf arkadaşlarınız gibi terminal arayüzünde komut çalıştırmaya devam edeceksiniz, ancak terminaliniz Cloud IDE'nin sizin yerinize kuracağı başka bir bilgisayara bağlanacaktır. Cloud IDE(PaizaCloud bulut IDE, AWS Cloud9)'ler için talimatlar burada. Cloud IDE'lerden birini seçin ve o IDE'nin talimatlarini takip edin.
 
 #### PaizaCloud Cloud IDE
 
@@ -43,11 +43,11 @@ Cloud 9 kullanmak için bir AWS üyeliğine sahip olmanız ve kredi kartı bilgi
 
 Aşağıdaki bölge sizin terminalizdir. Bu terminali kullanarak Cloud 9 bigisayarına komut gönderebilirsiniz. Tercih ederseniz bu pencereyi büyütebilirsiniz.
 
-#### Glitch.com Cloud IDE
+#### Glitch.com'un Bulut IDE'si
 
-1. Go to [Glitch.com](https://glitch.com/)
-2. Sign up for an account (https://glitch.com/signup) or use your GitHub account if you have one. (See GitHub instructions below.)
-3. Click *New Project* and choose *hello-webpage*
+1. [Glitch.com](https://glitch.com/) adresine gidin
+2. Kaydol (https://glitch.com/signup) yada GitHub hesabınla kaydol. (See GitHub instructions below.)
+3. Tıkla*Yeni Proje*seç*karşılama web sayfası*
 4. Click on the Tools dropdown list (at the bottom left side of the window), then on Terminal button to open terminal tab with a prompt like this:
 
 {% filename %}Terminal{% endfilename %}
