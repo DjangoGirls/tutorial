@@ -149,7 +149,7 @@ class Post(models.Model):
 
 Բոլոր տողերը, որոնք `from` կամ `import` են սկսվում, թույլ են տալիս մուտք գործել կոդ այլ ֆայլերից: Այսպիսով, բոլոր ֆայլերի միջև միևնույն կոդը պատճենելու և տեղադրելու փոխարեն, մենք կարող ենք այն հղել ՝ օգտագործելով ... import ...</code>.
 
-`class Post(models.Model):` – this line defines our model (it is an `object`).
+`class Post(models.Model):` –այս տողը սահմանում է մեր մոդելը (դա `object/օբյեկտ`-ն է):
 
 - `class` is a special keyword that indicates that we are defining an object.
 - `Post` is the name of our model. We can give it a different name (but we must avoid special characters and whitespace). Always start a class name with an uppercase letter.
