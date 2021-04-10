@@ -174,7 +174,7 @@ class Post(models.Model):
 
 ### Ստեղծեք աղյուսակներ ձեր տվյալների բազայում
 
-Վերջին քայլը տվյալների բազայում մեր նոր մոդելի ավելացումն է: Նախ, մենք պետք է տեղյակ պահենք Django- ին, որ մենք փոփոխություններ ենք մտցրել մեր մոդելի մեջ: (Մենք հենց նոր ստեղծեցինք այն) Գնացեք ձեր վահանակի պատուհանում և մուտքագրեք `python manage.py makemigrations blog`: It will look like this:
+Վերջին քայլը տվյալների բազայում մեր նոր մոդելի ավելացումն է: Նախ, մենք պետք է տեղյակ պահենք Django- ին, որ մենք փոփոխություններ ենք մտցրել մեր մոդելի մեջ: (Մենք հենց նոր ստեղծեցինք այն) Գնացեք ձեր վահանակի պատուհանում և մուտքագրեք `python manage.py makemigrations blog`: Այն պետք է ունենա նման տեսք:
 
 {% filename %}command-line{% endfilename %}
 
@@ -185,9 +185,9 @@ class Post(models.Model):
       - Create model Post
     
 
-**Note:** Remember to save the files you edit. Otherwise, your computer will execute the previous version which might give you unexpected error messages.
+** Նշում. ** Մի մոռացեք պահպանել ձեր խմբագրած ֆայլերը: Հակառակ դեպքում, ձեր համակարգիչը կգործարկի նախորդ տարբերակները, որը կարող է ձեզ անսպասելի սխալ հաղորդագրություններ հաղորդել: 
 
-Django prepared a migration file for us that we now have to apply to our database. Type `python manage.py migrate blog` and the output should be as follows:
+Django- ն մեզ համար տվյալների բազայի համար ստեղծեց միգրացիոն ֆայլ: Մուտքագրեք `python manage.py migrate blog` , արդյունքը պետք է լինի հետևյալը.
 
 {% filename %}command-line{% endfilename %}
 
@@ -198,4 +198,4 @@ Django prepared a migration file for us that we now have to apply to our databas
       Applying blog.0001_initial... OK
     
 
-Hurray! Our Post model is now in our database! It would be nice to see it, right? Jump to the next chapter to see what your Post looks like!
+Ուռա! Մեր Post մոդելը այժմ մեր տվյալների բազայում է: Ցանկալի կլիներ տեսնել դա, այնպես չէ՞: Անցեք հաջորդ գլխին ՝ տեսնելու, թե ձեր Post-ը ինչ տեսք ունի:
