@@ -143,11 +143,11 @@ class Post(models.Model):
         return self.title
 ```
 
-> Double-check that you use two underscore characters (`_`) on each side of `str`. This convention is used frequently in Python and sometimes we also call them "dunder" (short for "double-underscore").
+> Համոզվեք, որ `str` մեթոդի յուրաքանչյուր կողմում օգտագործեք երկու տակի գծիկ (`_`) : Այս կոնվենցիան հաճախ օգտագործվում է Python ծրագրավորման մեջ , և երբեմն կոչվում է "dunder" (կարճ ՝ «կրկնակի ընդգծում»/ "double-underscore"): 
 
-It looks scary, right? But don't worry – we will explain what these lines mean!
+Սարսափելի է թվում, ճի՞շտ է: Բայց մի անհանգստացեք. Մենք կբացատրենք, թե ինչ են նշանակում այս տողերը:
 
-All lines starting with `from` or `import` are lines that add some bits from other files. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
+Բոլոր տողերը, որոնք `from` կամ `import` են սկսվում, թույլ են տալիս մուտք գործել կոդ այլ ֆայլերից: Այսպիսով, բոլոր ֆայլերի միջև միևնույն կոդը պատճենելու և տեղադրելու փոխարեն, մենք կարող ենք այն հղել ՝ օգտագործելով ... import ...</code>.
 
 `class Post(models.Model):` – this line defines our model (it is an `object`).
 
