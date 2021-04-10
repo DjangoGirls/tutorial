@@ -32,9 +32,9 @@
 
 Այսպիսով, ինչպե՞ս ենք մոդելավորելու բլոգի հաղորդագրությունները: Մենք ուզում ենք բլոգ կառուցել, այնպես չէ՞:
 
-We need to answer the question: What is a blog post? What properties should it have?
+Մենք պետք է պատասխանենք այն հարցին. Ի՞նչ է բլոգի գրառումը: Ի՞նչ հատկություններ պետք է այն ունենա:
 
-Well, for sure our blog post needs some text with its content and a title, right? It would be also nice to know who wrote it – so we need an author. Finally, we want to know when the post was created and published.
+Դե, հաստատ մեր բլոգային գրառմանը պետք է ինչ-որ տեքստ իր բովանդակությամբ և վերնագիրով, այնպես չէ՞: Լավ կլինի իմանալ նաև, թե ով է այն գրել, այնպես որ հեղինակը մեզ պետք է: Վերջապես, մենք պետք է իմանանք, թե երբ է ստեղծվել գրառումը և երբ է հրապարակվել:
 
     Post
     --------
