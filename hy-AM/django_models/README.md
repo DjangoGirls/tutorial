@@ -98,7 +98,7 @@ Django- ում մոդելը հատուկ տեսակի առարկա է. Այն պ
     
     
 
-Դիմումը/application-ը ստեղծվելուց հետո մենք պետք է Django- ին ասենք, որ այն այժմ պետք է օգտագործի այն: We do that in the file `mysite/settings.py` -- open it in your code editor. We need to find `INSTALLED_APPS` and add a line containing `'blog.apps.BlogConfig',` just above `]`. So the final product should look like this:
+Դիմումը/application-ը ստեղծվելուց հետո մենք պետք է Django- ին ասենք, որ այն այժմ պետք է օգտագործի այն: Մենք դա անում ենք `mysite/settings.py` ֆայլում - բացեք այն ձեր կոդի խմբագրում/code editor: Մենք պետք է գտնենք `INSTALLED_APPS` և ավելացնենք `'blog.apps.BlogConfig',` պարունակող տող, հենց վերևում `]` : Այսպիսով, վերջնական արդյունքը պետք է ունենա այսպիսի տեսք.
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -114,11 +114,11 @@ INSTALLED_APPS = [
 ]
 ```
 
-### Creating a blog post model
+### Բլոգի գրառման մոդելի ստեղծում
 
-In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
+`blog/models.py` այս ֆայլում մենք բնութագրում ենք `Models/մոդելներ` կոչվող բոլոր օբյեկտները. Սա մի տեղ է, որտեղ մենք կսահմանենք մեր բլոգի գրառումը/blog post-երը:
 
-Let's open `blog/models.py` in the code editor, remove everything from it, and write code like this:
+Բացեք `blog/models.py` այս ֆայլը կոդերի խմբագրում, ջնջեք ամբողջ տեքստը և փոխարենը տեղադրեք հետևյալ կոդը.
 
 {% filename %}blog/models.py{% endfilename %}
 
