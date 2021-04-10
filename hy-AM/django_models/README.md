@@ -53,11 +53,11 @@
 
 ## Django մոդել
 
-Knowing what an object is, we can create a Django model for our blog post.
+Իմանալով, թե ինչ է օբյեկտը, մենք կարող ենք ստեղծել Django մոդել մեր բլոգի գրառման համար:
 
-A model in Django is a special kind of object – it is saved in the `database`. A database is a collection of data. This is a place in which you will store information about users, your blog posts, etc. We will be using a SQLite database to store our data. This is the default Django database adapter – it'll be enough for us right now.
+Django- ում մոդելը հատուկ տեսակի առարկա է. Այն պահվում է ` տվյալների բազայում/database`.: Տվյալների բազան/database-ը տարբեր տվյալների հավաքածու է: Սա այն վայրն է, որտեղ դուք կպահեք տեղեկատվություն օգտվողների, ձեր բլոգի հաղորդագրությունների և այլնի մասին: Մենք կօգտագործենք SQLite տվյալների բազա ՝ մեր տվյալները պահելու համար: Սա ներքին կարգավորման/default Django տվյալների շտեմարանն է. Այս փուլում նրա հնարավորությունները բավարար են մեր պահանջների համար: 
 
-You can think of a model in the database as a spreadsheet with columns (fields) and rows (data).
+Դուք կարող եք տվյալների շտեմարանում մոդելի մասին մտածել որպես աղյուսակ ՝ սյունակներով (դաշտերով/columns (fields) և տողերով (տվյալներով)/rows (data):
 
 ### Creating an application
 
