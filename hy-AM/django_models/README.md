@@ -45,13 +45,13 @@
     published_date
     
 
-What kind of things could be done with a blog post? It would be nice to have some `method` that publishes the post, right?
+Ի՞նչ բաներ կարող եք անել բլոգում գրառման միջոցով: Լավ կլիներ որ գրառումը հրապարակող ինչ-որ մեթոդ լիներ, ճի՞շտ է: 
 
-So we will need a `publish` method.
+Այսպիսով, մեզ հարկավոր է `publish/հրապարակման` մեթոդ:
 
-Since we already know what we want to achieve, let's start modeling it in Django!
+Դե, քանի որ մենք որոշել ենք, թե ինչ ենք ուզում ստանալ, եկեք սկսենք մոդելավորել այն Django- ում:
 
-## Django model
+## Django մոդել
 
 Knowing what an object is, we can create a Django model for our blog post.
 
