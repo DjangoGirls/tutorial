@@ -151,11 +151,11 @@ class Post(models.Model):
 
 `class Post(models.Model):` –այս տողը սահմանում է մեր մոդելը (դա `object/օբյեկտ`-ն է):
 
-- `class` is a special keyword that indicates that we are defining an object.
-- `Post` is the name of our model. We can give it a different name (but we must avoid special characters and whitespace). Always start a class name with an uppercase letter.
-- `models.Model` means that the Post is a Django Model, so Django knows that it should be saved in the database.
+- `class/դասը` հատուկ բանալիբառ է, որը ցույց է տալիս, որ մենք օբյեկտ ենք սահմանում:
+- `Post` -ը մեր մոդելի անունն է: Ցանկության դեպքում մենք կարող ենք փոխել այն (բայց պետք է խուսափել հատուկ նիշերից և սպիտակ տարածությունից): Միշտ դասի անունը սկսեք մեծատառով: 
+- `models.Model` նշանակում է, որ Post օբյեկտը Django մոդել է, ուստի Django- ն գիտի, որ անհրաժեշտ է այն պահպանել տվյալների բազայում:
 
-Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
+Այժմ մենք սահմանում ենք այն հատկությունները, որոնց մասին մենք խոսում էինք ՝ `title/վերնագիրը`, `text/տեքստը`, `created_date/ստեղծման ամսաթիվը`, `published_date/հրապարակման ամսաթիվը` և `author/հեղինակ`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
 
 - `models.CharField` – this is how you define text with a limited number of characters.
 - `models.TextField` – this is for long text without a limit. Sounds ideal for blog post content, right?
