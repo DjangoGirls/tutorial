@@ -14,38 +14,38 @@
 
 Երբևէ զգացե՞լ եք, որ աշխարհն ավելի ու ավելի շատ է վերաբերում այն ​​տեխնոլոգիային, որի հետ (դեռ չեք կարող) առնչվել: Երբևէ մտածե՞լ եք, թե ինչպես ստեղծել կայք, բայց երբևէ բավարար շարժառիթ չի՞ ունեցել գործելու: Երբևէ մտածե՞լ եք, որ ծրագրակազմի աշխարհը չափազանց բարդ է ձեզ համար, որպեսզի փորձեք նույնիսկ ինքնուրույն ինչ-որ բան անել:
 
-Well, we have good news for you! Programming is not as hard as it seems and we want to show you how fun it can be.
+Դե, մենք լավ լուր ունենք ձեզ համար: Ծրագրավորումն այնքան էլ դժվար չէ, որքան թվում է, և մենք ուզում ենք ցույց տալ, թե որքան զվարճալի կարող է լինել:
 
-This tutorial will not magically turn you into a programmer. If you want to be good at it, you need months or even years of learning and practice. But we want to show you that programming or creating websites is not as complicated as it seems. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.
+Այս ձեռնարկը կախարդական կերպով չի վերածի ձեզ ծրագրավորողի: Եթե ​​ցանկանում եք դրանում լավ տիրապետել, ձեզ հարկավոր են ամիսներ կամ նույնիսկ տարիներ սովորել և պրակտիկայով զբաղվել: Բայց մենք ուզում ենք ձեզ ցույց տալ, որ կայքերի ծրագրավորումը կամ ստեղծումը այնքան էլ բարդ չէ, որքան թվում է: Մենք կփորձենք բացատրել տարբեր կտորներ և կտորներ, ինչպես կարող ենք, այնպես որ դուք ձեզ ահաբեկված չեք զգա տեխնոլոգիայից:
 
-We hope that we'll be able to make you love technology as much as we do!
+Հուսով ենք, որ կկարողանանք այնպես անել, որ դուք սիրեք տեխնոլոգիան, ինչպես մեզ:
 
-## What will you learn during the tutorial?
+## Ի՞նչ կսովորեք ձեռնարկի ընթացքում:
 
-Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
+Ձեռնարկն ավարտելուց հետո դուք կունենաք մի փոքր աշխատող վեբ հավելված ՝ ձեր սեփական բլոգը: Մենք ձեզ ցույց կտանք, թե ինչպես տեղադրել այն առցանց, այնպես որ մյուսները կտեսնեն ձեր աշխատանքը:
 
-It will (more or less) look like this:
+Դա (քիչ թե շատ) այսպիսի տեսք կունենա.
 
 ![Figure 0.1](images/application.png)
 
-> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
+> Եթե ​​ինքնուրույն աշխատում եք ձեռնարկի հետ և չունեք մարզիչ, որը կօգնի ձեզ ցանկացած խնդրի դեպքում, մենք ձեզ համար ունենք չաթ համակարգ ՝ [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg) ](https://gitter.im/DjangoGirls/tutorial): Մենք խնդրեցինք մեր մարզիչներին և նախորդ մասնակիցներին ժամանակ առ ժամանակ այնտեղ գտնվել և օգնել ուրիշներին ձեռնարկի միջոցով: Մի վախեցեք այնտեղ ձեր հարցը տալուց:
 
-OK, [let's start at the beginning…](./how_the_internet_works/README.md)
+Լավ, [ եկեք սկսենք ամենասկզբից… ](./how_the_internet_works/README.md)
 
 ## Following the tutorial at home
 
-It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+Հիանալի է մասնակցել Django Girls սեմինարին, բայց մենք տեղյակ ենք, որ միշտ չէ, որ հնարավոր է մեկին մասնակցել: Ահա թե ինչու մենք ձեզ խրախուսում ենք փորձել հետեւել այս ձեռնարկին տանը: Ընթերցողների համար տանը մենք ներկայումս պատրաստում ենք տեսանյութեր, որոնք ավելի հեշտ կդարձնեն ձեռնարկին ինքնուրույն հետևելը: Դա դեռ ընթացքի մեջ է, բայց շուտով ավելի ու ավելի շատ բաներ լուսաբանվելու են [ Կոդավորումը աղջիկների համար ](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube ալիքում:
 
-In every chapter already covered, there is a link that points to the correct video.
+Արդեն լուսաբանված յուրաքանչյուր գլխում կա մի հղում, որը մատնանշում է ճիշտ տեսանյութը:
 
-## About and contributing
+## Մասին և ներդրում
 
-This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
+Այս ձեռնարկը վարում է [ DjangoGirls ](https://djangogirls.org/) - ը: Եթե ​​սխալներ եք հայտնաբերել կամ ցանկանում եք թարմացնել ձեռնարկը, խնդրում ենք [ հետևել ներդրվող ուղեցույցներին ](https://github.com/DjangoGirls/tutorial/blob/master/README.md):
 
-## Would you like to help us translate the tutorial into other languages?
+## Կցանկանայի՞ք մեզ օգնել ձեռնարկը թարգմանել այլ լեզուներով:
 
-Currently, translations are being kept on crowdin.com platform at:
+Ներկայումս թարգմանությունները պահվում են crowdin.com հարթակում ՝
 
 https://crowdin.com/project/django-girls-tutorial
 
-If your language is not listed on [crowdin](https://crowdin.com/), please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
+Եթե ​​ձեր լեզուն նշված չէ [ crowdin- ի ](https://crowdin.com/) վրա, խնդրում ենք [ բացել նոր թողարկում ](https://github.com/DjangoGirls/tutorial/issues/new) ՝ տեղեկացնելով մեզ լեզվի մասին, որպեսզի կարողանանք ավելացնել այն:
