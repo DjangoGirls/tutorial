@@ -1,7 +1,7 @@
 # Ամփոփում
 
 * [Ներածություն](README.md)
-* [Installation](installation/README.md) 
+* [Installation (Տեղադրում)](installation/README.md) 
   * [Command Line](installation/README.md#command-line)
   * [Python](installation/README.md#python)
   * [Code Editor](installation/README.md#code-editor)
