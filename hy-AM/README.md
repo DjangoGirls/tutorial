@@ -2,17 +2,17 @@
 
 [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
-> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
+> Այս աշխատանքը լիցենզավորված է Creative Commons Attribution-ShareAlike 4.0 միջազգային լիցենզիայով: Այս արտոնագրի պատճենը դիտելու համար այցելեք https://creativecommons.org/licenses/by-sa/4.0/
 
-## Welcome
+## Բարի գալուստ
 
-Welcome to the Django Girls Tutorial! We are happy to see you here. :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
+Բարի գալուստ Django Girls ձեռնարկը: Մենք ուրախ ենք ձեզ այստեղ տեսնել: :) Այս ձեռնարկի ընթացքում մենք ձեզ ճանապարհորդելու ենք վեբ տեխնոլոգիաների տակ, առաջարկելով ձեզ մի ակնարկ այն բոլոր կտորների մասին, որոնք անհրաժեշտ է միավորել, որպեսզի համացանցն աշխատի այնպես, ինչպես մենք գիտենք:
 
-As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine. :)
+Ինչպես բոլոր անհայտ բաների դեպքում, սա էլ կլինի արկածախնդրություն, բայց ոչ մի անհանգստություն, քանի որ դուք արդեն համարձակություն եք գործադրել այստեղ լինելու համար, լավ կլինեք: :)
 
-## Introduction
+## Ներածություն
 
-Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
+Երբևէ զգացե՞լ եք, որ աշխարհն ավելի ու ավելի շատ է վերաբերում այն ​​տեխնոլոգիային, որի հետ (դեռ չեք կարող) առնչվել: Երբևէ մտածե՞լ եք, թե ինչպես ստեղծել կայք, բայց երբևէ բավարար շարժառիթ չի՞ ունեցել գործելու: Երբևէ մտածե՞լ եք, որ ծրագրակազմի աշխարհը չափազանց բարդ է ձեզ համար, որպեսզի փորձեք նույնիսկ ինքնուրույն ինչ-որ բան անել:
 
 Well, we have good news for you! Programming is not as hard as it seems and we want to show you how fun it can be.
 
