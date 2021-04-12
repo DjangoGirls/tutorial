@@ -125,7 +125,7 @@ NameError: name 'Post' is not defined
 
 ### Ֆիլտրեք օբյեկտները
 
-QuerySets- ի կարեւոր առանձնահատկությունը օբյեկտները զտելու հնարավորությունն է: Ասենք, որ ուզում ենք գտնել ola օգտվողի հեղինակած բոլոր գրառումնները: `Post.objects.all()` –ում `all/ամբողջի` փոխարեն մենք կօգտագործենք `filter/ֆիլտր ` : Փակագծերի մեջ մենք նշելու ենք այն պայմանները, որոնցով կկառուցվի գրառումների ընտրությունը: Մեր դեպքում պայմանն այն է, որ `author/հեղինակը` պետք է հավասար լինի `me/ինձ `: Django- ում այն կգրվի այսպես `author=me`: Now our piece of code looks like this:
+QuerySets- ի կարեւոր առանձնահատկությունը օբյեկտները զտելու հնարավորությունն է: Ասենք, որ ուզում ենք գտնել ola օգտվողի հեղինակած բոլոր գրառումնները: `Post.objects.all()` –ում `all/ամբողջի` փոխարեն մենք կօգտագործենք `filter/ֆիլտր ` : Փակագծերի մեջ մենք նշելու ենք այն պայմանները, որոնցով կկառուցվի գրառումների ընտրությունը: Մեր դեպքում պայմանն այն է, որ `author/հեղինակը` պետք է հավասար լինի `me/ինձ `: Django- ում այն կգրվի այսպես `author=me`: Մեր ծածկագիրն այժմ ունի այսպիսի տեսք.
 
 {% filename %}command-line{% endfilename %}
 
@@ -134,7 +134,7 @@ QuerySets- ի կարեւոր առանձնահատկությունը օբյեկտ
 <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
-Or maybe we want to see all the posts that contain the word 'title' in the `title` field?
+Կամ գուցե `title/վերնագիր` դաշտում ուզում ենք տեսնել բոլոր գրառումները, որոնք պարունակում են «վերնագիր»/'title' բառը:
 
 {% filename %}command-line{% endfilename %}
 
@@ -143,7 +143,7 @@ Or maybe we want to see all the posts that contain the word 'title' in the `titl
 <QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
 ```
 
-> **Note** There are two underscore characters (`_`) between `title` and `contains`. Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
+> **Նշում** որ `title/Վերնագրի` և `contains/պարունակության` միջև կա երկու ընդգծված նիշ (`_`): Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
 
 You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
 
