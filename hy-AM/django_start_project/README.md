@@ -14,7 +14,7 @@
 
 <!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
-In your Mac OS X or Linux console, you should run the following command. **Don't forget to add the period (or dot) `.` at the end!**
+Mac OS- ի կամ Linux- ի վահանակի վրա գործարկեք հետևյալ հրամանը. **մի մոռացեք կետ ավելացնել `  ` at the end!/վերջում**
 
 {% filename %}command-line{% endfilename %}
 
