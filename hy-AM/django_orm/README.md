@@ -41,7 +41,7 @@ Traceback (most recent call last):
 NameError: name 'Post' is not defined
 ```
 
-Վայ Սխալ առաջացավ: Այն մեզ ասում է, որ Փոստ չկա: Մոռացանք նախ ներմուծել:
+Վայ Սխալ առաջացավ: Այն մեզ ասում է, որ Փոստ չկա: Եվ դա ճիշտ է. Մենք մոռացել ենք ներմուծել այն:
 
 {% filename %}command-line{% endfilename %}
 
@@ -49,7 +49,7 @@ NameError: name 'Post' is not defined
 >>> from blog.models import Post
 ```
 
-We import the model `Post` from `blog.models`. Let's try displaying all posts again:
+Մենք ներմուծում ենք `Post` մոդելը `blog.models`-ից:Փորձենք կրկին ստանալ բլոգի բոլոր գրառումները.
 
 {% filename %}command-line{% endfilename %}
 
@@ -58,11 +58,11 @@ We import the model `Post` from `blog.models`. Let's try displaying all posts ag
 <QuerySet [<Post: my post title>, <Post: another post title>]>
 ```
 
-This is a list of the posts we created earlier! We created these posts using the Django admin interface. But now we want to create new posts using Python, so how do we do that?
+Սա ավելի վաղ ստեղծած հաղորդագրությունների ցուցակն է: Մենք ստեղծեցինք այս հաղորդագրությունները Django ադմինիստրատորի ինտերֆեյսի միջոցով: Բայց հիմա մենք ուզում ենք ստեղծել նոր հաղորդագրություններ Python- ի միջոցով, ինչպե՞ս դա անել:
 
-### Create object
+### Ստեղծել օբյեկտ
 
-This is how you create a new Post object in database:
+Ահա, թե ինչպես եք դուք ստեղծում նոր Post օբյեկտ տվյալների բազայում/database.
 
 {% filename %}command-line{% endfilename %}
 
@@ -70,9 +70,9 @@ This is how you create a new Post object in database:
 >>> Post.objects.create(author=me, title='Sample title', text='Test')
 ```
 
-But we have one missing ingredient here: `me`. We need to pass an instance of `User` model as an author. How do we do that?
+Բայց այստեղ մենք ունենք մեկ պակասող բաղադրիչ ՝ `me/ես`: Մենք պետք է որպես հեղինակ փոխանցենք `User/Օգտագործող` մոդելի օրինակ: Ինչպե՞ս դա անել:
 
-Let's import User model first:
+Եկեք նախ ներմուծենք Օգտագործողի մոդելը/User model.
 
 {% filename %}command-line{% endfilename %}
 
@@ -80,7 +80,7 @@ Let's import User model first:
 >>> from django.contrib.auth.models import User
 ```
 
-What users do we have in our database? Try this:
+Ի՞նչ օգտվողներ ունենք մեր տվյալների բազայում/database: Փորձեք այս:
 
 {% filename %}command-line{% endfilename %}
 
