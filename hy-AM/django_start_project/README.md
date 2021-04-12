@@ -21,15 +21,15 @@ Mac OS- ի կամ Linux- ի վահանակի վրա գործարկեք հետև�
     (myvenv) ~/djangogirls$ django-admin startproject mysite .
     
 
-> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
+> `.` կետը կարևոր է, քանի որ այն ասում է, որ սցենարը Django- ն տեղադրի ձեր ընթացիկ գրացուցակում (որի համար `.` կետը կարճ հղում է):
 > 
-> **Note** When typing the command above, remember that you only type the part which starts by `django-admin`. The `(myvenv) ~/djangogirls$` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **Նշում** Վերը նշված հրամանը մուտքագրելիս հիշեք, որ դուք մուտքագրում եք միայն այն հատվածը, որը սկսվում է `django-admin` - ի կողմից: Այս `(myvenv) ~/djangogirls$` հատվածը, որը ցույց է տրված այստեղ, ուղղակի հուշման օրինակ է ՝ հետագա հրամանի մուտքագրման համար:
 
 <!--endsec-->
 
 <!--sec data-title="Create project: Windows" data-id="django_start_project_windows" data-collapse=true ces-->
 
-On Windows you should run the following command. **(Don't forget to add the period (or dot) `.` at the end)**:
+Windows- ում պետք է գործարկել հետևյալ հրամանը: ** (Մի մոռացեք վերջում ավելացնել կետը) `. `) **:
 
 {% filename %}command-line{% endfilename %}
 
