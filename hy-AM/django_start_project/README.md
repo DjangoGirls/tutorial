@@ -66,15 +66,15 @@ Windows- ում պետք է գործարկել հետևյալ հրամանը: **
 
 Եկեք առայժմ մոռանանք մնացած ֆայլերի մասին , քանի որ դրանք չենք փոխելու: Միակ բանը, որ պետք է հիշել, դրանք պատահաբար չջնջելն է:
 
-## Changing settings
+## Փոխել կարգավորումները
 
 Եկեք որոշ փոփոխություններ կատարենք `mysite/settings.py` - ում: Բացեք ֆայլը ՝ ավելի վաղ տեղադրած կոդերի խմբագրիչի/code editor-ի միջոցով:
 
 **Նշում**. Հիշեք, որ `settings.py`- ը սովորական ֆայլ է, ինչպես ցանկացած այլ: Կարող եք այն բացել ձեր կոդերի խմբագրից `օգտագործելով "file -> open" /«ֆայլ-> բաց » գործողությունների ընտրացանկը: Սա ձեզ կտա սովորական պատուհանը, որում կարող եք անցնել ձեր `settings.py` ֆայլը և ընտրել այն: Այլապես, ֆայլը կարող եք բացել ՝ անցնելով ձեր աշխատասեղանի djangogirls պանակը և սեղմել աջ քլիք ֆայլի վրա: Ապա, ցուցակից ընտրեք ձեր կոդի խմբագիրը: Խմբագրի ընտրությունը կարևոր է, քանի որ կարող եք տեղադրել այլ ծրագրեր, որոնք կարող են բացել ֆայլը, բայց թույլ չեն տալիս խմբագրել այն:
 
-It would be nice to have the correct time on our website. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
+Լավ կլինի մեր կայքում ճիշտ ժամային գոտի սահմանել: Գնացեք [Wikipedia's list of time zones/Վիքիպեդիայի ժամային գոտիների ցուցակ](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) և պատճենեք ձեր համապատասխան ժամային գոտին (TZ) (օրինակ `Europe/Berlin`):
 
-In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choose your own timezone. For example:
+`settings.py` ֆայլում գտեք `TIME_ZONE` պարունակող տողը և փոփոխեք այն ըստ ձեր ժամային գոտու: Օրինակ.
 
 {% filename %}mysite/settings.py{% endfilename %}
 
