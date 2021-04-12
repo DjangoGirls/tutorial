@@ -109,11 +109,11 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 ```
 
-> **Note**: If you're using a Chromebook, add this line at the bottom of your settings.py file: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
+> ** Նշում**. Եթե օգտագործում եք Chromebook, ավելացրեք այս տողը ձեր settings.py ֆայլի վերջում. `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
-> Also add `.amazonaws.com` to the `ALLOWED_HOSTS` if you are using cloud9
+> Ինչպես նաև, ավելացրեք ` .amazonaws.com `-ը ` ALLOWED_HOSTS ` - ին, եթե օգտագործում եք cloud9
 > 
-> If you are hosting your project on `Glitch.com`, let us protect the Django secret key that needs to remain confidential (otherwise, anyone remixing your project could see it): * First, we are going to create a random secret key. Open the Glitch terminal again, and type the following command: {% filename %}.env{% endfilename %} 
+> Եթե ​​դուք վարում եք ձեր նախագիծը `Glitch.com`եկեք պաշտպանենք Django- ի գաղտնի բանալին, որն անհրաժեշտ է գաղտնիության ապահովման համար (հակառակ դեպքում ձեր նախագիծը վերամշակող ցանկացած անձ կարող է տեսնել այն). * Նախ, մենք պատրաստվում ենք ստեղծել պատահական գաղտնի բանալի: Open the Glitch terminal again, and type the following command: {% filename %}.env{% endfilename %} 
 > 
 >     bash
 >         python -c 'from django.core.management.utils import get_random_secret_key; \
