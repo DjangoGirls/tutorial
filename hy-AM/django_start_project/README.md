@@ -70,7 +70,7 @@ Windows- ում պետք է գործարկել հետևյալ հրամանը: **
 
 Եկեք որոշ փոփոխություններ կատարենք `mysite/settings.py` - ում: Բացեք ֆայլը ՝ ավելի վաղ տեղադրած կոդերի խմբագրիչի/code editor-ի միջոցով:
 
-**Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "file -> open" menu actions. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
+**Նշում**. Հիշեք, որ `settings.py`- ը սովորական ֆայլ է, ինչպես ցանկացած այլ: Կարող եք այն բացել ձեր կոդերի խմբագրից `օգտագործելով "file -> open" /«ֆայլ-> բաց » գործողությունների ընտրացանկը: Սա ձեզ կտա սովորական պատուհանը, որում կարող եք անցնել ձեր `settings.py` ֆայլը և ընտրել այն: Այլապես, ֆայլը կարող եք բացել ՝ անցնելով ձեր աշխատասեղանի djangogirls պանակը և սեղմել աջ քլիք ֆայլի վրա: Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
 
 It would be nice to have the correct time on our website. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
 
