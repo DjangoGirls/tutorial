@@ -56,19 +56,19 @@ Windows- ում պետք է գործարկել հետևյալ հրամանը: **
     └── requirements.txt
     
 
-> **Note**: in your directory structure, you will also see your `venv` directory that we created before.
+> **Նշում**. Գրացուցակի կառուցվածքում կտեսնեք նաև ձեր ` venv ` գրացուցակը, որը մենք ավելի վաղ ստեղծել էինք:
 
-`manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
+`manage.py` սա սցենար է, որն օգնում է կառավարել կայքը: Դրանով մենք կկարողանանք վեբ սերվեր գործարկել ձեր համակարգչում ՝ առանց լրացուցիչ ծրագրեր տեղադրելու:
 
-The `settings.py` file contains the configuration of your website.
+` settings.py ` ֆայլը պարունակում է ձեր կայքի կարգավորումները:
 
-Remember when we talked about a mail carrier checking where to deliver a letter? `urls.py` file contains a list of patterns used by `urlresolver`.
+Հիշո՞ւմ եք փոստատարի հետ մեր անալոգիան, որը ստուգում է, թե որտեղ պետք է նամակ առաքել: ` urls.py ` ֆայլը պարունակում է ` urlresolver ` - ի կողմից օգտագործված օրինաչափությունների ցուցակ:
 
-Let's ignore the other files for now as we won't change them. The only thing to remember is not to delete them by accident!
+Եկեք առայժմ մոռանանք մնացած ֆայլերի մասին , քանի որ դրանք չենք փոխելու: Միակ բանը, որ պետք է հիշել, դրանք պատահաբար չջնջելն է:
 
 ## Changing settings
 
-Let's make some changes in `mysite/settings.py`. Open the file using the code editor you installed earlier.
+Եկեք որոշ փոփոխություններ կատարենք `mysite/settings.py` - ում: Բացեք ֆայլը ՝ ավելի վաղ տեղադրած կոդերի խմբագրիչի/code editor-ի միջոցով:
 
 **Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "file -> open" menu actions. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
 
