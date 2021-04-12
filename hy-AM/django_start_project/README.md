@@ -210,14 +210,14 @@ DATABASES = {
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Now you need to check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
+Այժմ դուք պետք է ստուգեք, արդյո՞ք ձեր կայքը գործում է: Բացեք ձեր բրաուզերը (Firefox, Chrome, Safari, Internet Explorer կամ այլ ինչ որ օգտագործում եք) և մուտքագրեք այս հասցեն.
 
 {% filename %}browser{% endfilename %}
 
     http://127.0.0.1:8000/
     
 
-If you're using a Chromebook and Cloud9, instead click the URL in the pop-up window that should have appeared in the upper right corner of the command window where the web server is running. The URL will look something like:
+Եթե ​​օգտագործում եք Chromebook և Cloud9, փոխարենը կտտացրեք ելնող պատուհանի URL- ին, որը պետք է որ հայտնվեր հրամանի պատուհանի վերևի աջ անկյունում, որտեղ վեբ սերվերն է աշխատում: URL- ն այսպիսի տեսք կունենա.
 
 {% filename %}browser{% endfilename %}
 
@@ -229,14 +229,14 @@ or on Glitch:
     https://name-of-your-glitch-project.glitch.me
     
 
-Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?
+Շնորհավորում եմ Դուք պարզապես ստեղծել եք ձեր առաջին վեբ կայքը և այն վարում եք վեբ սերվերի միջոցով: Դա հիանալի, այնպես չէ՞:
 
-![Install worked!](images/install_worked.png)
+![Տեղադրեք աշխատանքը!](images/install_worked.png)
 
-Note that a command window can only run one thing at a time, and the command window you opened earlier is running the web server. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
+Նկատի ունեցեք, որ հրամանի պատուհանը միանգամից կարող է գործարկել միայն մեկ բան, իսկ ավելի վաղ ձեր բացած հրամանի պատուհանը վեբ սերվերն է գործարկում: Քանի դեռ վեբ սերվերը աշխատում է և սպասում է լրացուցիչ մուտքային հարցումների, տերմինալը կընդունի նոր տեքստ, բայց չի կատարի նոր հրամաններ:
 
 > Մենք ստուգեցինք, թե ինչպես են աշխատում վեբ սերվերները ** Ինչպես է աշխատում ինտերնետը/How the Internet works ** գլխում:
 
-To type additional commands while the web server is running, open a new terminal window and activate your virtualenv -- to review instructions on how to open a second terminal window, see [Introduction to the command line](../intro_to_command_line/README.md). To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
+Վեբ սերվերի գործարկման ժամանակ լրացուցիչ հրամաններ մուտքագրելու համար բացեք նոր տերմինալի պատուհան և ակտիվացրեք ձեր virtualenv-ը. երկրորդ տերմինալի պատուհանը բացելու վերաբերյալ հրահանգները վերանայելու համար տե՛ս [Introduction to the command line/Հրամանի տողի ներածություն](../intro_to_command_line/README.md) բաժնում: Վեբ սերվերը դադարեցնելու համար վերադարձրեք այն պատուհանը, որում այն ​​աշխատում է, և միասին սեղմեք CTRL + C - Control և C ստեղները (Windows- ում գուցե ստիպված լինեք սեղմել Ctrl + Break):
 
-Ready for the next step? It's time to create some content!
+Պատրա՞ստ եք հաջորդ քայլին: Ժամանակն է ստեղծել որոշակի բովանդակություն:
