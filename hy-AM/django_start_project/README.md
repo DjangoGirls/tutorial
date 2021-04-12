@@ -137,7 +137,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 ## Ստեղծեք տվյալների բազա
 
-There's a lot of different database software that can store data for your site. We'll use the default one, `sqlite3`.
+Ծրագրակազմ կան տարբեր տվյալների բազաներ, որոնք կարող են պահել տվյալներ ձեր կայքի համար: Մենք կօգտագործենք սա ՝ `sqlite3`:
 
 This is already set up in this part of your `mysite/settings.py` file:
 
@@ -152,7 +152,7 @@ DATABASES = {
 }
 ```
 
-To create a database for our blog, let's run the following in the console: `python manage.py migrate` (we need to be in the `djangogirls` directory that contains the `manage.py` file). If that goes well, you should see something like this:
+Մեր բլոգի համար տվյալների շտեմարան ստեղծելու համար եկեք վահանակում գործարկենք հետևյալը.`python manage.py migrate` (մենք պետք է լինենք `djangogirls` գրացուցակում, որը պարունակում է `manage.py` ֆայլը) Եթե ​​ամեն բան լավ է, դուք պետք է տեսնեք նման մի բան.
 
 {% filename %}command-line{% endfilename %}
 
@@ -177,25 +177,25 @@ To create a database for our blog, let's run the following in the console: `pyth
       Applying sessions.0001_initial... OK
     
 
-And we're done! Time to start the web server and see if our website is working!
+Եվ մենք ավարտեցինք: Ժամանակն է սկսել վեբ սերվերը և տեսնել, թե արդյոք մեր կայքը գործում է:
 
 ## Վեբ սերվերի գործարկում
 
-You need to be in the directory that contains the `manage.py` file (the `djangogirls` directory). In the console, we can start the web server by running `python manage.py runserver`:
+Դուք պետք է լինեք գրացուցակում, որտեղ գտնվում է `manage.py` ֆայլը (մեր դեպքում ՝ `djangogirls`): Վահանակում մենք կարող ենք սկսել վեբ սերվերը ՝ գործարկելով `python manage.py runserver`.
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver
     
 
-If you are on a Chromebook, use this command instead:
+Եթե ​​աշխատում եք Chromebook- ի վրա, ապա օգտագործեք այս հրահանգը.
 
 {% filename %}Cloud 9{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
     
 
-or this one if you are using Glitch:
+կամ սա, եթե օգտագործում եք Glitch:
 
 {% filename %}Glitch.com terminal{% endfilename %}
 
@@ -203,7 +203,7 @@ or this one if you are using Glitch:
     
     
 
-If you are on Windows and this fails with `UnicodeDecodeError`, use this command instead:
+Եթե ​​դուք Windows- ում եք, և դա չի հաջողվում ` UnicodeDecodeError ` - ի հետ, փոխարենը օգտագործեք այս հրամանը.
 
 {% filename %}command-line{% endfilename %}
 
