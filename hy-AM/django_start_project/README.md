@@ -1,14 +1,14 @@
 # Ձեր առաջին Django նախագիծը:
 
-> Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> Այս գլխի մի մասը հիմնված է Geek Girls Carrots- ի ձեռնարկների վրա (https://github.com/ggcarrots/django-carrots):
 > 
-> Parts of this chapter are based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. The django-marcador tutorial is copyrighted by Markus Zapke-Gründemann et al.
+> Այս գլխի մասերը հիմնված են django-marcador ձեռնարկի վրա, որը լիցենզավորված է Creative Commons Attribution-ShareAlike 4.0 միջազգային լիցենզիայի կողմից: Django-marcador ձեռնարկի հեղինակային իրավունքները պաշտպանված են Markus Zapke-Gründemann- ի և այլոց կողմից:
 
-We're going to create a small blog!
+Մենք պատրաստվում ենք ստեղծել փոքրիկ բլոգ:
 
-The first step is to start a new Django project. Basically, this means that we'll run some scripts provided by Django that will create the skeleton of a Django project for us. This is just a bunch of directories and files that we will use later.
+Առաջին քայլը նոր Django նախագիծ սկսելն է: Ըստ էության, սա նշանակում է, որ մենք գործարկելու ենք մի քանի ստանդարտ սցենարներ Django բաշխումից, որոնք կստեղծեն նախագծի կմախք մեզ համար: Սա ընդամենը գրացուցակների և ֆայլերի մի խումբ է, որոնք մենք կօգտագործենք ավելի ուշ:
 
-The names of some files and directories are very important for Django. You should not rename the files that we are about to create. Moving them to a different place is also not a good idea. Django needs to maintain a certain structure to be able to find important things.
+Որոշ ֆայլերի և գրացուցակների անունները շատ կարևոր են Django- ի համար: Դուք չպետք է վերանվանեք այն ֆայլերը, որոնք մենք պատրաստվում ենք ստեղծել: Նրանց այլ տեղ տեղափոխելը նույնպես լավ գաղափար չէ: Django- ն պետք է որոշակի կառուցվածք պահպանի, որպեսզի կարողանա գտնել կարևոր բաներ:
 
 > Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. We explained how to do that in the **Django installation** chapter in the **Working with virtualenv** part. Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
 
