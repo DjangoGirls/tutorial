@@ -125,7 +125,7 @@ NameError: name 'Post' is not defined
 
 ### Ֆիլտրեք օբյեկտները
 
-A big part of QuerySets is the ability to filter them. Let's say we want to find all posts that user ola authored. We will use `filter` instead of `all` in `Post.objects.all()`. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Now our piece of code looks like this:
+QuerySets- ի կարեւոր առանձնահատկությունը օբյեկտները զտելու հնարավորությունն է: Ասենք, որ ուզում ենք գտնել ola օգտվողի հեղինակած բոլոր գրառումնները: `Post.objects.all()` –ում `all/ամբողջի` փոխարեն մենք կօգտագործենք `filter/ֆիլտր ` : Փակագծերի մեջ մենք նշելու ենք այն պայմանները, որոնցով կկառուցվի գրառումների ընտրությունը: Մեր դեպքում պայմանն այն է, որ `author/հեղինակը` պետք է հավասար լինի `me/ինձ `: Django- ում այն կգրվի այսպես `author=me`: Now our piece of code looks like this:
 
 {% filename %}command-line{% endfilename %}
 
