@@ -191,7 +191,7 @@ QuerySets- ը թույլ է տալիս տեսակավորել օբյեկտներ
 <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
-We can also reverse the ordering by adding `-` at the beginning:
+Կարող ենք նաև հակադարձել հրամանը ՝ սկզբում ավելացնելով սա `-`
 
 {% filename %}command-line{% endfilename %}
 
@@ -200,18 +200,18 @@ We can also reverse the ordering by adding `-` at the beginning:
 <QuerySet [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]>
 ```
 
-### Complex queries through method-chaining
+### Բարդ հարցումներ մեթոդի շղթայացման միջոցով
 
-As you saw, some methods on `Post.objects` return a QuerySet. The same methods can in turn also be called on a QuerySet, and will then return a new QuerySet. Thus, you can combine their effect by **chaining** them together:
+Ինչպես տեսնում եք, `Post.objects` - ի որոշ մեթոդներ վերադարձնում են QuerySet- ը: Նույն մեթոդները կարելի է կրկին կանչել QuerySet- ում, և նրանք կվերադարձնեն նոր QuerySet: Այս կերպ Դուք կարող եք շղթայել դրանց ազդեցությունը ՝ դրանք միմյանց **chaining/կապակցելով**:
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 <QuerySet [<Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>, <Post: Sample title>]>
 ```
 
-This is really powerful and lets you write quite complex queries.
+Սա իսկապես հզոր է և թույլ է տալիս գրել բավականին բարդ հարցումներ:
 
-Cool! You're now ready for the next part! To close the shell, type this:
+Գերազանց է! Այժմ դուք պատրաստ եք հաջորդ մասի: Ինտերակտիվ վահանակը/shell փակելու համար մուտքագրեք ՝
 
 {% filename %}command-line{% endfilename %}
 
