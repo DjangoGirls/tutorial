@@ -89,7 +89,7 @@ NameError: name 'Post' is not defined
 <QuerySet [<User: ola>]>
 ```
 
-This is the superuser we created earlier! Let's get an instance of the user now (adjust this line to use your own username):
+Սա նույն գերշահագործողն է/superuser, որը մենք ստեղծել ենք ավելի վաղ: Այժմ եկեք ստեղծենք օգտագործողի օրինակ (այս տողը հարմարեցրեք ձեր սեփական օգտվողի անվանմանը).
 
 {% filename %}command-line{% endfilename %}
 
@@ -97,9 +97,9 @@ This is the superuser we created earlier! Let's get an instance of the user now 
 >>> me = User.objects.get(username='ola')
 ```
 
-As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat!
+Ինչպես տեսնում եք, մենք այժմ ստանում ենք `get` a `User` `username`/օգտագործող անունով, որը համարժեք է «ola»-ին: Կոկիկ! 
 
-Now we can finally create our post:
+Այժմ մենք վերջապես կարող ենք ստեղծել մեր գրառումը.
 
 {% filename %}command-line{% endfilename %}
 
@@ -108,7 +108,7 @@ Now we can finally create our post:
 <Post: Sample title>
 ```
 
-Hurray! Wanna check if it worked?
+Ուռա! Ցանկանու՞մ եք ստուգել, ​​արդյո՞ք այն աշխատում է:
 
 {% filename %}command-line{% endfilename %}
 
@@ -117,13 +117,13 @@ Hurray! Wanna check if it worked?
 <QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
 ```
 
-There it is, one more post in the list!
+Ահա, ևս մեկ գրառում ցուցակում:
 
-### Add more posts
+### Ավելացրեք այլ հաղորդագրություններ
 
-You can now have a little fun and add more posts to see how it works. Add two or three more and then go ahead to the next part.
+Այժմ կարող եք մի փոքր զվարճանալ և ավելացնել նոր հաղորդագրություններ ՝ տեսնելու համար, թե ինչպես է դա աշխատում: Ավելացրեք ևս երկու-երեքը, ապա անցեք հաջորդ մասին:
 
-### Filter objects
+### Ֆիլտրեք օբյեկտները
 
 A big part of QuerySets is the ability to filter them. Let's say we want to find all posts that user ola authored. We will use `filter` instead of `all` in `Post.objects.all()`. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Now our piece of code looks like this:
 
