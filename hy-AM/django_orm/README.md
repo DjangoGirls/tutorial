@@ -145,7 +145,7 @@ QuerySets- ի կարեւոր առանձնահատկությունը օբյեկտ
 
 > **Նշում** որ `title/Վերնագրի` և `contains/պարունակության` միջև կա երկու ընդգծված նիշ (`_`): Django- ի ORM- ն այս կանոնն օգտագործում է դաշտերի անունները («վերնագիր»/"title") և գործողությունները կամ ֆիլտրերն առանձնացնելու համար («պարունակում է»/"contains"): Եթե ​​դուք օգտագործեք միայն մեկ ընդգծում, դուք կստանաք սխալ ՝ "FieldError: Cannot resolve keyword title_contains".
 
-You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
+Կարող եք նաև ստանալ բոլոր հրապարակված հաղորդագրությունների ցուցակը: Մենք դա անում ենք ՝ զտելով անցյալում տեղադրված `published_date/հրապարակված_ամսաթերթը` բոլոր հաղորդագրությունները:
 
 {% filename %}command-line{% endfilename %}
 
@@ -155,7 +155,7 @@ You can also get a list of all published posts. We do this by filtering all the 
 <QuerySet []>
 ```
 
-Unfortunately, the post we added from the Python console is not published yet. But we can change that! First get an instance of a post we want to publish:
+Ցավոք, գրառումը, որը մենք ավելացրել ենք Python կոնսոլից, դեռ հրապարակված չէ: Բայց մենք կարող ենք դա փոխել: Նախ ընտրենք այն գրառումը, որը մենք ցանկանում ենք հրապարակել.
 
 {% filename %}command-line{% endfilename %}
 
@@ -163,7 +163,7 @@ Unfortunately, the post we added from the Python console is not published yet. B
 >>> post = Post.objects.get(title="Sample title")
 ```
 
-And then publish it with our `publish` method:
+Եվ այնուհետև հրապարակեք այն մեր `publish/հրապարակել ` եղանակով:
 
 {% filename %}command-line{% endfilename %}
 
@@ -171,7 +171,7 @@ And then publish it with our `publish` method:
 >>> post.publish()
 ```
 
-Now try to get list of published posts again (press the up arrow key three times and hit `enter`):
+Այժմ կրկին փորձեք ստանալ հրապարակված հաղորդագրությունների ցուցակը (3 անգամ սեղմեք վեր սլաքը և ապա `enter`).
 
 {% filename %}command-line{% endfilename %}
 
@@ -180,9 +180,9 @@ Now try to get list of published posts again (press the up arrow key three times
 <QuerySet [<Post: Sample title>]>
 ```
 
-### Ordering objects
+### Օբյեկտների կարգավորում
 
-QuerySets also allow you to order the list of objects. Let's try to order them by `created_date` field:
+QuerySets- ը թույլ է տալիս տեսակավորել օբյեկտները: Փորձենք տեսակավորել ըստ `created_date/ստեղծման_ամսաթիվ` դաշտի.
 
 {% filename %}command-line{% endfilename %}
 
