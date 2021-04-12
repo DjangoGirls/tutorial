@@ -38,11 +38,11 @@ Windows- ում պետք է գործարկել հետևյալ հրամանը: **
 
 > `.` կետը կարևոր է, քանի որ այն ասում է, որ սցենարը Django- ն տեղադրի ձեր ընթացիկ գրացուցակում (որի համար `.` կետը կարճ հղում է):
 > 
-> **Note** When typing the command above, remember that you only type the part which starts by `django-admin.exe`. The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
+> ** Նշում ** Վերը նշված հրամանը մուտքագրելիս հիշեք, որ դուք մուտքագրում եք միայն այն մասը, որը սկսվում է `django-admin.exe` - ով: `(myvenv) C:\Users\Name\djangogirls>` սրանք ընդամենը տերմինալային արագ տողերի օրինակներ են ՝ հետագա հրամանի մուտքագրման համար:
 
 <!--endsec-->
 
-`django-admin.py` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
+`django-admin.py` սա սցենար է, որը կստեղծի գրացուցակի անհրաժեշտ կառուցվածքը և ֆայլերը մեզ համար: Այժմ դուք պետք է ունենաք ծրագրի հետևյալ կառուցվածքը.
 
     djangogirls
     ├── manage.py
