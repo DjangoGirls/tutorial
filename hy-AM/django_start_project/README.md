@@ -10,7 +10,7 @@
 
 Որոշ ֆայլերի և գրացուցակների անունները շատ կարևոր են Django- ի համար: Դուք չպետք է վերանվանեք այն ֆայլերը, որոնք մենք պատրաստվում ենք ստեղծել: Նրանց այլ տեղ տեղափոխելը նույնպես լավ գաղափար չէ: Django- ն պետք է որոշակի կառուցվածք պահպանի, որպեսզի կարողանա գտնել կարևոր բաներ:
 
-> Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. We explained how to do that in the **Django installation** chapter in the **Working with virtualenv** part. Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
+> Մի մոռացեք. Դուք պետք է գործադրեք բոլոր հրամանները virtualenv- ով: Եթե ​​հրամանի տողում չեք տեսնում `(myvenv)` նախածանցը, ապա ձեզ հարկավոր է ակտիվացնել virtualenv- ը: Մենք բացատրեցինք, թե ինչպես դա անել, **Django installation/Django տեղադրում** գլխի **Working with virtualenv/ Աշխատանք virtualenv-ի հետ ** բաժնում: Դա անելու համար մուտքագրեք `myvenv\Scripts\activate` Windows- ում կամ `source myvenv/bin/activate` Mac OS / Linux- ում:
 
 <!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
