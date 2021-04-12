@@ -82,9 +82,9 @@ Windows- ում պետք է գործարկել հետևյալ հրամանը: **
 TIME_ZONE = 'Europe/Berlin'
 ```
 
-A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `ch` for Switzerland. If English is not your native language, you can add this to change the default buttons and notifications from Django to be in your language. So you would have "Cancel" button translated into the language you defined here. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/2.2/ref/settings/#language-code).
+Լեզվի կոդը կազմված է մի լեզվով, օրինակ ``en` անգլերենի համար կամ `de` գերմաներենի համար, և երկրի կոդ, ինչպիսիք են `de`- ն Գերմանիայի համար կամ `ch`-ն Շվեյցարիայի համար: Եթե ​​անգլերենը ձեր մայրենի լեզուն չէ, կարող եք լեզու ավելացնել ՝ սկզբնադիր կոճակները և ծանուցումները Django- ից ձեր մայրենի լեզվով փոխելու համար: Այսպիսով, դուք կունենաք "Cancel"/«Չեղարկել» կոճակը թարգմանված այն լեզվով, որը դուք ընտրել եք այստեղ: [Django comes with a lot of prepared translations/ Django- ն տրամադրում է բազմաթիվ թարգմանություններ:](https://docs.djangoproject.com/en/2.2/ref/settings/#language-code):
 
-If you want a different language, change the language code by changing the following line:
+Եթե ​​այլ լեզվի կարիք ունեք, փոխեք լեզվի կոդը `փոխելով հետևյալ տողը.
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -92,7 +92,7 @@ If you want a different language, change the language code by changing the follo
 LANGUAGE_CODE = 'de-ch'
 ```
 
-We'll also need to add a path for static files. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
+Անհրաժեշտ է նաև ավելացնել ուղի/path ստատիկ ֆայլերի/static files համար: (Ստատիկ ֆայլերի և CSS- ի մասին ամեն ինչ կիմանանք ավելի ուշ ձեռնարկի ընթացքում): Իջեք ֆայլի *end/վերջը* և անմիջապես `STATIC_URL` գրառման տակ, ավելացրեք նորը ՝ `STATIC_ROOT`.
 
 {% filename %}mysite/settings.py{% endfilename %}
 
