@@ -143,7 +143,7 @@ QuerySets- ի կարեւոր առանձնահատկությունը օբյեկտ
 <QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
 ```
 
-> **Նշում** որ `title/Վերնագրի` և `contains/պարունակության` միջև կա երկու ընդգծված նիշ (`_`): Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
+> **Նշում** որ `title/Վերնագրի` և `contains/պարունակության` միջև կա երկու ընդգծված նիշ (`_`): Django- ի ORM- ն այս կանոնն օգտագործում է դաշտերի անունները («վերնագիր»/"title") և գործողությունները կամ ֆիլտրերն առանձնացնելու համար («պարունակում է»/"contains"): Եթե ​​դուք օգտագործեք միայն մեկ ընդգծում, դուք կստանաք սխալ ՝ "FieldError: Cannot resolve keyword title_contains".
 
 You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
 
