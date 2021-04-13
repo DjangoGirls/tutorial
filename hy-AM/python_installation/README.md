@@ -4,12 +4,12 @@
 
 Բայց նախ ասենք, թե ինչ է Python- ը: Python- ը շատ սիրված ծրագրավորման լեզու է, որը կարող է օգտագործվել կայքեր, խաղեր, գիտական ​​ծրագրեր, գրաֆիկա և շատ ավելին ստեղծելու համար:
 
-Python originated in the late 1980s and its main goal is to be readable by human beings (not only machines!). This is why it looks simpler than other programming languages, but don't worry – Python is also really powerful!
+Python- ն առաջացել է 1980-ականների վերջին, և դրա հիմնական նպատակն է ընթեռնելի լինել մարդկանց կողմից (ոչ միայն մեքենաների): Ահա թե ինչու այն ավելի պարզ թվում, քան ծրագրավորման այլ լեզուները, բայց մի անհանգստացեք. Python-ը իսկապես հզոր է:
 
-# Python installation
+# Python- ի տեղադրում
 
-> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
+> **Նշում** Եթե Chromebook եք օգտագործում, բաց թողեք այս գլուխը և համոզվեք, որ հետևում եք [Chromebook Setup/Chromebook- ի կարգավորման](../chromebook_setup/README.md) հրահանգներին:
 > 
-> **Note** If you already worked through the [installation steps](../installation/README.md), there's no need to do this again – you can skip straight ahead to the next chapter!
+> **Նշում** Եթե դուք արդեն ավարտել եք տեղադրումը, ապա այլևս դա անելու կարիք չկա. Դուք կարող եք անմիջապես անցնել հաջորդ գլխին:
 
 {% include "/python_installation/instructions.md" %}
