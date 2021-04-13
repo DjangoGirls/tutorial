@@ -1,8 +1,8 @@
-# What's next?
+# Ի՞նչ է հաջորդը
 
-Congratulate yourself! **You're totally awesome**. We're proud! <3
+Շնորհավորիր քեզ: ** Դուք հիանալի եք **: Մենք շատ հպարտ ենք <3
 
-### What to do now?
+### Ի՞նչ անել հիմա:
 
 Take a break and relax! You have just done something really huge.
 
