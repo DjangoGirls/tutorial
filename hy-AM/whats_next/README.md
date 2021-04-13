@@ -10,7 +10,7 @@
 
 ### Կարո՞ղ եք առաջարկել ուսման լրացուցիչ ռեսուրսներ:
 
-Այո: There are a *lot* of resources online for learning all kinds of programming skills – it can be pretty daunting to work out where to go next, but we've got you covered. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
+Այո: Բոլոր տեսակի ծրագրավորման լեզուները սովորելու համար կան * բազմաթիվ * առցանց ռեսուրսներ. Հնարավոր է դժվար թվալ ընտրությունը, թե որ կողմ շարժվել հաջորդ փուլերում, բայց մենք կօգնենք ձեզ դա հասկանալ: Ինչպիսին էլ որ լինեին ձեր հետաքրքրությունները նախքան Django Girls- ին միանալը, և ինչ հետաքրքրություններ էլ որ դուք զարգացրել եք ամբողջ դասընթացի ժամանակ, ահա մի քանի անվճար ռեսուրսներ (կամ ռեսուրսներ ՝ շատ անվճար բաղադրիչներով), որոնք կարող եք օգտագործել ձեր նպատակներին հասնելու համար:
 
 #### Django
 
