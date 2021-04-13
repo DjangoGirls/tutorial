@@ -1,8 +1,8 @@
-# Let’s start with Python
+# Եկեք սկսենք Python- ից
 
-We're finally here!
+Վերջապես մենք այստեղ ենք:
 
-But first, let us tell you what Python is. Python is a very popular programming language that can be used for creating websites, games, scientific software, graphics, and much, much more.
+Բայց նախ ասենք, թե ինչ է Python- ը: Python- ը շատ սիրված ծրագրավորման լեզու է, որը կարող է օգտագործվել կայքեր, խաղեր, գիտական ​​ծրագրեր, գրաֆիկա և շատ ավելին ստեղծելու համար:
 
 Python originated in the late 1980s and its main goal is to be readable by human beings (not only machines!). This is why it looks simpler than other programming languages, but don't worry – Python is also really powerful!
 
