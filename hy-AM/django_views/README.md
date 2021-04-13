@@ -39,6 +39,6 @@ def post_list(request):
 
 ![Error](images/error.png)
 
-This shows that the server is running again, at least, but it still doesn't look right, does it? Don't worry, it's just an error page, nothing to be scared of! Just like the error messages in the console, these are actually pretty useful. You can read that the *TemplateDoesNotExist*. Let's fix this bug and create a template in the next chapter!
+Սա ցույց է տալիս, որ սերվերը գոնե նորից է աշխատում, բայց նրա աշխատանքի ընթացքը դեռ սխալ է թվում, ճի՞շտ է: Մի անհանգստացեք, սա պարզապես սխալի էջ է, վախենալու ոչինչ չկա: Ինչպես և վահանակի սխալի հաղորդագրությունները, այս հաղորդագրությունները նույնպես օգտակար են: Կարող եք կարդալ, որ *TemplateDoesNotExist*: Եկեք շտկենք այս սխալը և ձևանմուշ/template ստեղծենք հաջորդ գլխում:
 
 > Իմացեք ավելին Django- ի տեսակետների/Django views-ի մասին `կարդալով պաշտոնական փաստաթղթերը. https://docs.djangoproject.com/en/2.2/topics/http/views/
