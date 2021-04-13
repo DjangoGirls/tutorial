@@ -1,8 +1,8 @@
 # Django- ի դիտում. Ստեղծագործելու ժամանակն է:
 
-Time to get rid of the bug we created in the last chapter! :)
+Ժամանակն է ազատվել այն սխալից, որի հետ մենք բախվեցինք վերջին գլխում: :)
 
-A *view* is a place where we put the "logic" of our application. It will request information from the `model` you created before and pass it to a `template`. We'll create a template in the next chapter. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
+*view/տեսարանը * այն հատվածն է, որտեղ տեղադրում ենք մեր հավելվածի «տրամաբանությունը»: Այն տեղեկատվություն կխնդրի ձեր ստեղծած նախկին `model`-ից և կփոխանցի `template/ձևանմուշ`-ին: Հաջորդ գլխում շաբլոն/template կստեղծենք: Views/Դիտումները պարզապես Python գործառույթներ/ Python functions են, որոնք մի փոքր ավելի բարդ են, քան այն, ինչ մենք գրել ենք **Introduction to Python/Python- ի «Ներածություն»** գլխում:
 
 Views are placed in the `views.py` file. We will add our *views* to the `blog/views.py` file.
 
