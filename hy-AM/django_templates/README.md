@@ -74,7 +74,7 @@ Try this in your template.
 
 Ժամանակն է մեկ անգամ ևս համոզվել, որ մեր կայքը կաշխատի հանրային ինտերնետում, այնպե՞ս չէ: Փորձենք կայքի նոր տարբերակը տեղակայել PythonAnywhere - ում: Ահա քայլերի ամփոփումը...
 
-* First, push your code to GitHub
+* Նախ վերբեռնեք ձեր կոդը GitHub- ում
 
 {% filename %}command-line{% endfilename %}
 
@@ -88,7 +88,7 @@ Try this in your template.
     $ git push
     
 
-* Then, log back in to [PythonAnywhere](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one), and run:
+* Դրանից հետո անցեք [ PythonAnywhere ](https://www.pythonanywhere.com/consoles/), բացեք **Bash console** (կամ սկսեք նորը) և մուտքագրեք հրահանգը.
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -97,7 +97,7 @@ Try this in your template.
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+(Հիշեք, որ `<your-pythonanywhere-domain>` - ը փոխարինեք ձեր PythonAnywhere օգտվողի անունով, առանց անկյունային փակագծերի:)
 
 * Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. (To reach other PythonAnywhere pages from the console, use the menu button in the upper right corner.) Your update should be live on https://subdomain.pythonanywhere.com -- check it out in the browser! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
 
