@@ -127,13 +127,13 @@ PaizaCloud Cloud IDE- ի տերմինը պատրաստ է ձեր հրահանգ�
         }
         ```
         
-        This will create a `debug.log` file detailing Django operations and any error messages that might come up, making it much easier to fix if your website does not work.
+        Սա կստեղծի ` debug.log ` ֆայլ, որը մանրամասնում է Django- ի գործողությունները և ցանկացած սխալ հաղորդագրություններ, որոնք կարող են ի հայտ գալ, շատ ավելի հեշտ դարձնելով դրանց շտկումը, եթե ձեր կայքը չի աշխատում:
         
         The initial restarting of the Glitch project should fail. (If you click on the top dropdown button `Show` then click on `In a New Window`, you will receive a `DisallowedHost` error message.) Do not worry about it at this stage, the tutorial will fix this as soon as you update the Django settings of your project in the `mysite/settings.py` file.
         
         ### Virtual Environment
         
-        A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+        (Virtual environment) Վիրտուալ միջավայրը (որը կոչվում է նաև virtualenv) նման է մեր անձնական տուփի. մենք կարող ենք ավելացնել օգտակար համակարգչային ծածկագիր (code) այն նախագծի համար, որի շուրջ մենք աշխատում ենք: Մենք օգտագործում ենք դրանք, որպեսզի պահպանենք տարբեր ծածկագրերի կոդերի մասնիկներ առանձին, այնպես որ դրանք չխառնվեն այլ նախագծերի հետ:
         
         Run:
         
@@ -146,16 +146,16 @@ PaizaCloud Cloud IDE- ի տերմինը պատրաստ է ձեր հրահանգ�
             pip install django~={{ book.django_version }}
             
         
-        (note that on the last line we use a tilde followed by an equal sign: `~=`).
+        (նշենք, որ վերջին տողի վրա մենք օգտագործում ենք ալիք, որին հաջորդում է հավասար նշանը ՝ ` ~ = `):
         
         ### GitHub
         
-        Make a [GitHub](https://github.com) account.
+        Ստեղծեք GitHub հաշիվ:
         
         ### PythonAnywhere 
         
-        The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+        Django Girls ձեռնարկը ներառում է բաժին այն մասին, թե ինչ է կոչվում Տեղակայում/Deployment-ը որը ձեր նոր վեբ հավելվածն աշխատեցնող ծածկագիր ստանալու գործընթացն է և տեղափոխումն այն հանրությանը հասանելի համակարգիչ (կոչվում է սերվեր/server) և այլն մարդիկ կարող են տեսնել ձեր աշխատանքը:
         
-        This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+        Այս բաժինը մի փոքր տարօրինակ է, երբ մեզ մոտ Chromebook է, քանի որ մենք արդեն օգտագործում ենք համակարգիչ, որը գտնվում է ինտերնետային տիրույթում (ի տարբերություն, ասենք, նոութբուքի): Այնուամենայնիվ, այն դեռ օգտակար է, քանի որ մենք կարող ենք մեր Cloud 9 -ի աշխատանքային տարածքը համարել որպես «ընթացքի մեջ»/"in progress" գտնվող աշխատանքների տիրույթ, իսկ Python Anywhere-ը ՝ պատրաստի աշխատանքները ցուցադրելու տիրույթ, քանի որ այն ավելի ամբողջական տեսք ունի:
         
-        Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+        Այսպիսով, գրանցվեք Python Anywhere նոր հաշվի համար ՝ [www.pythonanywhere.com](https://www.pythonanywhere.com).
