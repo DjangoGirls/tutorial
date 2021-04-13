@@ -20,19 +20,19 @@ Django ձևանմուշի/Django templates մեջ փոփոխական տեղադ�
 {{ posts }}
 ```
 
-Փորձեք սա ձեր ձևանմուշում/template `blog/templates/blog/post_list.html` : Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
+Փորձեք սա ձեր ձևանմուշում/template `blog/templates/blog/post_list.html` : Բացեք այն կոդերի խմբագրում և փոխարինեք ամեն ինչ ՝ սկսած երկրորդ –ից`<div>` երրորդ-`</div>` </code> - ով `{{ posts }}</1>. Պահեք ֆայլը և թարմացրեք էջը ՝ արդյունքները տեսնելու համար.
+</p>
 
-![Figure 13.1](images/step1.png)
+<p><img src="images/step1.png" alt="Figure 13.1" /></p>
 
-As you can see, all we've got is this:
+<p>Ինչպես տեսնում եք, մենք ստացանք հետևյալ տողը.</p>
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+<p>{% filename %}blog/templates/blog/post_list.html{% endfilename %}</p>
 
-```html
-<QuerySet [<Post: My second post>, <Post: My first post>]>
-```
+<pre><code class="html"><QuerySet [<Post: My second post>, <Post: My first post>]>
+`</pre> 
 
-This means that Django understands it as a list of objects. Remember from **Introduction to Python** how we can display lists? Yes, with for loops! In a Django template you do them like this:
+Սա ցույց է տալիս, որ Django- ն փոփոխականը հասկանում էր որպես օբյեկտների ցուցակ: Հիշեք Python- ի **Introduction to Python** <0>«Ներածությունից</0>, թե ինչպես կարող ենք ցուցակներ ցուցադրել: Ճիշտ է, for հանգույցով: Django- ի ձևանմուշում դրանք կարող եք օգտագործել այսպես.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -46,7 +46,7 @@ Try this in your template.
 
 ![Figure 13.2](images/step2.png)
 
-It works! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. You can mix HTML and template tags. Our `body` will look like this:
+Այն աշխատում է! Բայց մենք ուզում ենք, որ դրանք հայտնվեն որպես ստատիկ գրառումներ, որոնք մենք ստեղծել ենք **Introduction to HTML/ «HTML Ներածություն» ** գլխում: Դուք կարող եք խառնել HTML և ձևանմուշի պիտակները: Մեր `body`-ի տարրը կունենա այսպիսի տեսք.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -64,7 +64,7 @@ It works! But we want the posts to be displayed like the static posts we created
 {% endfor %}
 ```
 
-{% raw %}Everything you put between `{% for %}` and `{% endfor %}` will be repeated for each object in the list. Refresh your page:{% endraw %}
+{% raw %} Այն ամենը, ինչ դնում եք `{% for %}` - ի և `{% endfor %}` - ի միջև, կկրկնվի ցուցակի յուրաքանչյուր կետի համար: Թարմացրեք էջը ՝ {% endraw %}
 
 ![Figure 13.3](images/step3.png)
 
