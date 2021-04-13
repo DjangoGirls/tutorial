@@ -1,4 +1,4 @@
-# Django views – time to create!
+# Django- ի դիտում. Ստեղծագործելու ժամանակն է:
 
 Time to get rid of the bug we created in the last chapter! :)
 
