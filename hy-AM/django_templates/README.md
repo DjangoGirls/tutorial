@@ -68,11 +68,11 @@ Try this in your template.
 
 ![Figure 13.3](images/step3.png)
 
-Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }}`)? We are accessing data in each of the fields defined in our `Post` model. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
+Նկատե՞լ եք, որ այս անգամ մենք մի փոքր այլ գրառում ենք օգտագործել (`{{ post.title }}` or `{{ post.text }}`)? Մենք մուտք ենք գործում տվյալների `Post` մոդելում սահմանված յուրաքանչյուր դաշտ: Նաև `|linebreaksbr` -ը տեքստը ֆիլտրում է զտիչի միջոցով ՝ տողերի ընդմիջումները/line-breaks/ պարբերությունների/paragraphs/ վերածելու համար:
 
-## One more thing
+## Եվս մեկ բան
 
-It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
+Ժամանակն է մեկ անգամ ևս համոզվել, որ մեր կայքը կաշխատի հանրային ինտերնետում, այնպե՞ս չէ: Փորձենք կայքի նոր տարբերակը տեղակայել PythonAnywhere - ում: Ահա քայլերի ամփոփումը...
 
 * First, push your code to GitHub
 
