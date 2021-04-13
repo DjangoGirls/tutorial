@@ -4,11 +4,11 @@
 
 *view/տեսարանը * այն հատվածն է, որտեղ տեղադրում ենք մեր հավելվածի «տրամաբանությունը»: Այն տեղեկատվություն կխնդրի ձեր ստեղծած նախկին `model`-ից և կփոխանցի `template/ձևանմուշ`-ին: Հաջորդ գլխում շաբլոն/template կստեղծենք: Views/Դիտումները պարզապես Python գործառույթներ/ Python functions են, որոնք մի փոքր ավելի բարդ են, քան այն, ինչ մենք գրել ենք **Introduction to Python/Python- ի «Ներածություն»** գլխում:
 
-Views are placed in the `views.py` file. We will add our *views* to the `blog/views.py` file.
+Դիտումները տեղակայված են ` views.py ` ֆայլում: Մենք կավելացնենք մեր *views/դիտումները * `blog/views.py`- ին:
 
 ## blog/views.py
 
-OK, let's open up this file in our code editor and see what's in there:
+Լավ, եկեք բացենք այս ֆայլը մեր կոդի խմբագրում/code editor և տեսնենք, թե ինչ կա այնտեղ:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -18,9 +18,9 @@ from django.shortcuts import render
 # Create your views here.
 ```
 
-Not too much stuff here yet.
+Այստեղ դեռ շատ բան չկա:
 
-Remember that lines starting with `#` are comments – this means that those lines won't be run by Python.
+Հիշեք, որ ` # ` - ով սկսվող տողերը մեկնաբանություններ են. դա նշանակում է, որ այս տողերը չեն աշխատի Python- ում:
 
 Let's create a *view* as the comment suggests. Add the following minimal view below it:
 
