@@ -1,10 +1,10 @@
-# Django templates
+# Django շաբլոններ
 
-Time to display some data! Django gives us some helpful built-in **template tags** for that.
+Որոշ տվյալներ ցուցադրելու ժամանակն է: Դրա համար Django- ն մեզ տալիս է մի քանի օգտակար **template tags/ձևանմուշներ**:
 
-## What are template tags?
+## Ի՞նչ են շաբլոնային պիտակները
 
-You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
+Ինչպես տեսնում եք, HTML- ում դուք իսկապես չեք կարող Python կոդ գրել, քանի որ բրաուզերները չեն հասկանում դա: Նրանք գիտեն միայն HTML: Մենք գիտենք, որ HTML- ը բավականին ստատիկ է, մինչդեռ Python- ը շատ ավելի դինամիկ է:
 
 **Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster. Cool!
 
