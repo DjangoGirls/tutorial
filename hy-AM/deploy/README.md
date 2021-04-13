@@ -54,20 +54,6 @@ Git- ը հետևում է ֆայլերի որոշակի հավաքածուի փ�
 >     
 >     # macOS
 >     ._*
->     .DS_Store
->     .fseventsd
->     .Spotlight-V100
->     
->     # Windows
->     Thumbs.db*
->     ehthumbs*.db
->     [Dd]esktop.ini
->     $RECYCLE.BIN/
->     
->     # Visual Studio
->     .vscode/
->     .history/
->     *.code-workspace
 >     
 > 
 > Եվ այն պահպանեք որպես ` .gitignore ` "djangogirls" արմատային գրացուցակում:
