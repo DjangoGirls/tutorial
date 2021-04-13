@@ -6,13 +6,13 @@
 
 Ինչպես տեսնում եք, HTML- ում դուք իսկապես չեք կարող Python կոդ գրել, քանի որ բրաուզերները չեն հասկանում դա: Նրանք գիտեն միայն HTML: Մենք գիտենք, որ HTML- ը բավականին ստատիկ է, մինչդեռ Python- ը շատ ավելի դինամիկ է:
 
-**Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster. Cool!
+**Django template tags/Django շաբլոնային պիտակները**-ը թույլ են տալիս մեզ Python-ը տեղափոխել HTML- ի մեջ, այնպես որ կարող եք ավելի արագ կառուցել դինամիկ կայքեր: Հիանալի է:
 
 ## Display post list template
 
-In the previous chapter we gave our template a list of posts in the `posts` variable. Now we will display it in HTML.
+Նախորդ գլխում մենք մեր ձևանմուշին/template-ին փոխանցեցինք հաղորդագրությունների ցանկը `posts/հաղորդագրությունների ` փոփոխականում: Այժմ այն ​​կներկայացնենք HTML- ով:
 
-To print a variable in Django templates, we use double curly brackets with the variable's name inside, like this:
+Django ձևանմուշի/Django templates մեջ փոփոխական տեղադրելու համար հարկավոր է օգտագործել կրկնակի ձևավոր փակագծեր, որի ներսում փոփոխականի անունն է, ինչպես օրինակում.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -20,7 +20,7 @@ To print a variable in Django templates, we use double curly brackets with the v
 {{ posts }}
 ```
 
-Try this in your `blog/templates/blog/post_list.html` template. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
+Փորձեք սա ձեր ձևանմուշում/template `blog/templates/blog/post_list.html` : Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
 
 ![Figure 13.1](images/step1.png)
 
