@@ -879,9 +879,9 @@ hi()
 
 Примітка: якщо це не спрацює, не хвилюйтеся! Прочитайте уважно повідомлення, що виведеться на екран. Воно допоможе Вам зрозуміти, що сталося:
 
-- If you get a `NameError`, that probably means you typed something wrong, so you should check that you used the same name when creating the function with `def hi():` and when calling it with `hi()`.
-- If you get an `IndentationError`, check that both of the `print` lines have the same whitespace at the start of a line: python wants all the code inside the function to be neatly aligned.
-- If there's no output at all, check that the last `hi()` *isn't* indented - if it is, that line will become part of the function too, and it will never get run.
+- Якщо ви отримаєте `NameError` (помилку імені), це, мабуть, означає, що ви ввели неправильне ім'я: тоді треба перевірити, що ви використовуєте одне й те ж ім'я під час створення функції через `def hi():` і коли викликаєте її за допомогою `hi()`.
+- Якщо у вас `IndentationError` (помилка відступу), перевірте, чи мають обидва рядки `print` однакову кількість пробілів на початку рядка: Python хоче, щоб весь код всередині функції був чітко вирівняний.
+- Якщо ж на екран взагалі нічого не вивелося, перевірте, що *немає* пробілів перед останнім `hi()`, – якщо вони є, цей рядок також стане частиною функції і ніколи не запуститься.
 
 Let's build our first function with parameters. We will change the previous example – a function that says 'hi' to the person running it – with a name:
 
