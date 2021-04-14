@@ -848,11 +848,11 @@ if volume < 20 or volume > 80:
 
 ## Ваші власні функції!
 
-> For readers at home: this part is covered in the [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0) video.
+> Для читачів вдома: відеоверсія цього розділу - [Основи Python: функції](https://www.youtube.com/watch?v=5owr-6suOl0) (англ.).
 
-Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
+Пам'ятаєте функції на зразок `len()`, що можна виконувати в Python? Що ж, гарні новини – зараз ви дізнаєтесь, як писати свої власні функції!
 
-A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
+Функція - це набір інструкцій, які Python повинен виконати. Кожна функція в Python починається із ключового слова `def`, має ім'я і може мати певні параметри (вони записуються у дужках). Почнемо з простого. Замініть код у вашому файлі **python_intro.py** на такий:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -864,20 +864,20 @@ def hi():
 hi()
 ```
 
-Okay, our first function is ready!
+Окей, наша перша функція готова!
 
-You may wonder why we've written the name of the function at the bottom of the file. When we write `def hi():` and the indented lines following, this is us writing instructions for what the `hi()` function should do. Python will read and remember these instructions, but won't run the function yet. To tell Python we want to run the function, we have to call the function with `hi()`. Python reads the file and executes it from top to bottom, so we have to define the function in the file before we call it.
+Ви можете запитати, для чого ми вдруге написали ім'я функції наприкінці файлу. Коли ми пишемо `def hi():` та подальші рядки з відступом, це ми задаємо інструкції, які повинна робити функція `hi()`. Python прочитає та запам'ятає ці інструкції, але виконувати їх поки не буде. Щоб сказати Python, що ми хочемо запустити функцію, нам потрібно викликати функцію за допомогою команди `hi()`. Python читає файл і виконує його згори донизу, тому потрібно описати функцію раніше (тобто вище), ніж запустити її.
 
-Let's run this now and see what happens:
+А тепер запустимо і подивимось, що відбудеться:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
     $ python3 python_intro.py
     Hi there!
     How are you?
     
 
-Note: if it didn't work, don't panic! The output will help you to figure why:
+Примітка: якщо це не спрацює, не хвилюйтеся! Прочитайте уважно повідомлення, що виведеться на екран. Воно допоможе Вам зрозуміти, що сталося:
 
 - If you get a `NameError`, that probably means you typed something wrong, so you should check that you used the same name when creating the function with `def hi():` and when calling it with `hi()`.
 - If you get an `IndentationError`, check that both of the `print` lines have the same whitespace at the start of a line: python wants all the code inside the function to be neatly aligned.
