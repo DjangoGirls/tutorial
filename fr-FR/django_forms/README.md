@@ -210,7 +210,7 @@ else:
     form = PostForm()
 ```
 
-Il faut maintenant remplir à l'endroit des pointillés `[...]`. Si `method` contient `POST` alors on veut construire le `PostForm` avec les données du formulaire, n'est-ce pas ? We will do that as follows:
+Il faut maintenant remplir à l'endroit des pointillés `[...]`. Si `method` contient `POST` alors on veut construire le `PostForm` avec les données du formulaire, n'est-ce pas ? Nous allons le faire comme cela :
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -364,7 +364,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Vous ne trouvez pas que ça ressemble presque exactement à la vue de `post_new` ? But not entirely. Tout d'abord, nous passons un paramètre `pk` supplémentaire. Ensuite, nous récupérons le modèle `Post` que nous souhaitons éditer à l'aide de `get_object_or_404(Post, pk=pk)`. Puis, lorsque nous créons un formulaire, nous passons ce post comme une `instance`, d'abord lorsque nous sauvegardons le formulaire…
+Vous ne trouvez pas que ça ressemble presque exactement à la vue de `post_new` ? Regardons un peu plus en détails. Tout d'abord, nous passons un paramètre `pk` supplémentaire. Ensuite, nous récupérons le modèle `Post` que nous souhaitons éditer à l'aide de `get_object_or_404(Post, pk=pk)`. Puis, lorsque nous créons un formulaire, nous passons ce post comme une `instance`, d'abord lorsque nous sauvegardons le formulaire…
 
 {% filename %}blog/views.py{% endfilename %}
 
