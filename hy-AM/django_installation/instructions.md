@@ -174,7 +174,7 @@ data-collapse=true ces-->
 > 
 > Պահանջների ֆայլը/A requirements file պահում է կախվածության ցուցակը որը տեղադրվելու է օգտագործելով `pip install`:
 > 
-> First create a `requirements.txt` file inside of the `djangogirls/` folder, using the code editor that you installed earlier. Դուք դա անում եք կոդի խմբագրում/code editor-ում նոր ֆայլ բացելով, այնուհետև պահպանելով այն որպես `requirements.txt/ պահանջներ` `djangogirls/` թղթապանակում: Ձեր թղթապանակն այսպիսի տեսք կունենա.
+> Սկզբից ` djangogirls/ ` թղթապանակի մեջ ստեղծեք ` requirements.txt ` ֆայլ ՝ օգտագործելով ավելի վաղ տեղադրած կոդերի խմբագրիչը: Դուք դա անում եք կոդի խմբագրում/code editor-ում նոր ֆայլ բացելով, այնուհետև պահպանելով այն որպես `requirements.txt/ պահանջներ` `djangogirls/` թղթապանակում: Ձեր թղթապանակն այսպիսի տեսք կունենա.
 > 
 >     djangogirls
 >     ├── myvenv
