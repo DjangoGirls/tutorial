@@ -19,8 +19,8 @@ Si vous participez à un [événement Django Girls](https://djangogirls.org/even
 Dans ce tutoriel, vous allez apprendre comment créer un blog. Le tutoriel vous guidera à travers toute les étapes d'installation des différents logiciels, ansi que de création de comptes en ligne nécessaires. Cette page regroupe l’ensemble des instructions concernant installations et comptes en ligne en un seul endroit (ce qui est utile pour certains formats d’atelier).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
-data-id="chromebook_setup" data-collapse=true ces-->
-{% include "/chromebook_setup/instructions.md" %}
+data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
+
 <!--endsec-->
 
 # Brève introduction à la ligne de commande {#command-line}

@@ -112,6 +112,46 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 > **Note** : Si vous utilisez un Chromebook, ajoutez cette ligne à la fin de votre fichier settings.py : `MESSAGE_STORAGE = « django.contrib.messages.storage.session.SessionStorage »`
 > 
 > Ajoutez `.amazonaws.com` à `ALLOWED_HOSTS` si vous utilisez cloud9
+> 
+> Si vous hébergez votre projet sur `Glitch.com`, nous devons protéger la clé secrète Django qui doit rester confidentielle (sinon, toute personne remixant votre projet pourrait la voir) :
+> 
+> - Tout d'abord, nous allons créer une clé secrète aléatoire. Ouvrez à nouveau le terminal Glitch et tapez la commande suivante :
+>     
+>     {% filename %}Terminal{% endfilename %}
+>     
+>     ```bash
+>     python -c 'from django.core.management.utils import get_random_secret_key; \
+>           print(get_random_secret_key())'
+>     ```
+>     
+>     Ceci devrait afficher une longue chaîne de caractères aléatoire, parfaite à utiliser comme clé secrète pour votre tout nouveau site web Django. Nous allons maintenant coller cette clé dans un `.env` que Glitch ne vous montrera que si vous êtes propriétaire du site Web.
+> 
+> - Créez un fichier `.env` à la racine de votre projet et ajoutez-y la propriété suivante :
+>     
+>     {% filename %}.env{% endfilename %}
+>     
+>     ```bash
+>     # Ici, à l'intérieur des apostrophes, vous pouvez copier et coller la clé aléatoire générée ci-dessus
+>     SECRET='3!0k#7ds5mp^-x$lqs2%le6v97h#@xopab&oj5y7d=hxe511jl'
+>     ```
+> 
+> - Puis mettez à jour le fichier de configuration de Django pour injecter cette valeur secrète et définir le nom du site web Django :
+>     
+>     {% filename %}mysite/settings.py{% endfilename %}
+>     
+>     ```python
+>     SECRET_KEY = os.getenv('SECRET')
+>     ```
+> 
+> - Et un peu plus loin, dans le même fichier, nous injectons le nom de votre nouveau site Glitch :
+>     
+>     {% filename %}mysite/settings.py{% endfilename %}
+>     
+>     ```python
+>     ALLOWED_HOSTS = [os.getenv('PROJECT_DOMAIN') + ".glitch.me"]
+>     ```
+>     
+>     `PROJECT_DOMAIN` est générée automatiquement par Glitch. Elle contient le nom de votre projet.
 
 ## Configuration de la base de données
 
@@ -173,6 +213,14 @@ Si vous avez un Chromebook, utilisez plutôt la commande suivante :
     (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
     
 
+ou celle-ci si vous utilisez Glitch :
+
+{% filename %}Glitch.com terminal{% endfilename %}
+
+    $ refresh
+    
+    
+
 Si vous utilisez Windows et que vous obtenez l'erreur `UnicodeDecodeError`, tapez plutôt cette commande :
 
 {% filename %}command-line{% endfilename %}
@@ -187,21 +235,26 @@ Ensuite, vous allez vérifier que votre site fonctionne. Pour cela, ouvrez votre
     http://127.0.0.1:8000/
     
 
-Si vous utilisez un Chromebook et Cloud9, cliquez plutôt sur l’URL dans la fenêtre pop-up qui devrait figurer dans le coin supérieur droit de la fenêtre de commande où le serveur web est en cours d’exécution. Le URL ressemble à ceci :
+Si vous utilisez un Chromebook et Cloud9, cliquez plutôt sur l’URL dans la fenêtre pop-up qui devrait figurer dans le coin supérieur droit de la fenêtre de commande où le serveur web est en cours d’exécution. L'URL ressemblera à quelque chose comme :
 
 {% filename %}navigateur{% endfilename %}
 
     https://<a bunch of letters and numbers>.vfs.cloud9.us-west-2.amazonaws.com
     
 
+ou sur Glitch :
+
+    https://nom-de-votre-projet-glitch.glitch.me
+    
+
 Bravo ! Vous venez de créer votre premier site web, et de le lancer avec un serveur web ! C'est génial, non?
 
-![Install worked!](images/install_worked.png)
+![L'installation a fonctionné !](images/install_worked.png)
 
-Notez qu’une fenêtre de commande ne peut exécuter qu’une chose à la fois, et la fenêtre de commande que vous avez ouvert précédemment est en train d'exécuter le serveur web. Tant que le serveur web est en cours d’exécution et en attente des demandes entrantes, le terminal acceptera du nouveau texte mais ne l'exécutera pas.
+Notez qu’une fenêtre de commande ne peut exécuter qu’une chose à la fois, et la fenêtre de commande que vous avez ouverte précédemment est en train d'exécuter le serveur web. Tant que le serveur web est en cours d’exécution et en attente de requêtes entrantes, le terminal acceptera du nouveau texte mais ne l'exécutera pas.
 
 > Nous avons vu le fonctionnement des serveurs web dans le chapitre **Comment fonctionne Internet**.
 
-Pour taper et executer des nouvelles commandes pendant que le serveur web est en fonction, ouvrez une nouvelle fenêtre dans votre terminal et activez votre virtualenv. Pour reviser comment ouvrir une nouvelle fenêtre, rendez-vous au chapitre [Introduction à la ligne de commande](../intro_to_command_line/README.md). Pour arrêter votre serveur web, retournez dans la fenêtre où il tourne et appuyez sur CTRL+C : gardez les boutons Control et C appuyés en même temps. (Sous Windows, vous devrez peut-être appuyer sur CTRL+Arrêt défil.)
+Pour taper et executer des nouvelles commandes pendant que le serveur web est en fonction, ouvrez une nouvelle fenêtre dans votre terminal et activez votre virtualenv. Pour révoir comment ouvrir une nouvelle fenêtre, rendez-vous au chapitre [Introduction à la ligne de commande](../intro_to_command_line/README.md). Pour arrêter votre serveur web, retournez dans la fenêtre où il tourne et appuyez sur CTRL+C : gardez les boutons Control et C appuyés en même temps. (Sous Windows, vous devrez peut-être appuyer sur CTRL+Arrêt défil.)
 
-Prête pour la suite ? Il est temps de créer du contenu!
+Prêtes pour la suite ? Il est temps de créer du contenu !
