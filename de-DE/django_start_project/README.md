@@ -113,7 +113,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 > 
 > Falls du Cloud9 benutzt, füge auch `.amazonaws.com` zu den `ALLOWED_HOSTS` hinzu
 > 
-> If you are hosting your project on `Glitch.com`, let us protect the Django secret key that needs to remain confidential (otherwise, anyone remixing your project could see it):
+> Wenn du dein Projekt auf `Glitch.com` hostest, dann lass uns den Django-Sekret-Key schützen, der vertraulich bleiben muss (andernfalls könnte jeder, der dein Projekt remixt, diesen sehen):
 > 
 > - First, we are going to create a random secret key. Open the Glitch terminal again, and type the following command: {% filename %}.env{% endfilename %} 
 >         bash
