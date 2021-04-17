@@ -19,13 +19,13 @@ Nous allons tout d'abord ajouter un lien à l'intérieur du fichier `blog/templa
 
 {% block content %}
     {% for post in posts %}
-        <div class="post">
-            <div class="date">
+        <article class="post">
+            <time class="date">
                 {{ post.published_date }}
-            </div>
+            </time>
             <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
-        </div>
+        </article>
     {% endfor %}
 {% endblock %}
 ```
@@ -145,16 +145,18 @@ Entrez le code suivant :
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
 ```html
+{% extends 'blog/base.html' %}
+
 {% block content %}
-    <div class="post">
+    <article class="post">
         {% if post.published_date %}
-            <div class="date">
+            <time class="date">
                 {{ post.published_date }}
-            </div>
+            </time>
         {% endif %}
         <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    </article>
 {% endblock %}
 ```
 
@@ -175,9 +177,9 @@ Ce serait bien de mettre à jour la version de notre site sur PythonAnywhere. On
 {% filename %}command-line{% endfilename %}
 
     $ git status
-    $ git add --all .
+    $ git add .
     $ git status
-    $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
+    $ git commit -m "Ajout de la vue et du template de détail blog post ainsi que du CSS pour le site."
     $ git push
     
 
@@ -209,4 +211,4 @@ La commande `manage.py collectstatic` nous rappelle un peu `manage.py migrate`. 
 
 Maintenant nous sommes prêtes à aller sur [« Web »](https://www.pythonanywhere.com/web_app_setup/) (depuis le menu en haut à droite de la console), appuyer sur **Reload** et voir les résultats à votre adresse https://sous-domaine.pythonanywhere.com.
 
-Normalement, ça devrait suffire ! Encore bravo :)
+Normalement, ça devrait suffire ! Encore bravo! :)
