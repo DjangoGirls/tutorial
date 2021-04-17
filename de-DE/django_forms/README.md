@@ -58,9 +58,9 @@ Es ist an der Zeit, `blog/templates/blog/base.html` im Code-Editor zu öffnen. J
 </a>
 ```
 
-Beachte, dass wir unseren neuen View `post_new` nennen wollen. Das [SVG-Icon](https://icons.getbootstrap.com/icons/file-earmark-plus/) wird von [Bootstrap Icons](https://icons.getbootstrap.com/) zur Verfügung gestellt und zeigt ein Seitensymbol mit Pluszeichen an. Wir verwenden eine Django-Template-Direktive namens `include`. Dadurch wird der Inhalt der Datei in das Django-Template eingefügt. Der Web-Browser weiß, wie man diese Art von Inhalt ohne weitere Verarbeitung handhabt.
+Beachte, dass wir unsere neue View `post_new` nennen wollen. Das [SVG-Icon](https://icons.getbootstrap.com/icons/file-earmark-plus/) wird von [Bootstrap Icons](https://icons.getbootstrap.com/) zur Verfügung gestellt und zeigt ein Seitensymbol mit Pluszeichen an. Wir verwenden eine Django-Template-Direktive namens `include`. Dadurch wird der Inhalt der Datei in das Django-Template eingefügt. Der Web-Browser weiß, wie man diese Art von Inhalt ohne weitere Verarbeitung handhabt.
 
-> Alle Bootstrap Icons kannst du [hier herunterladen](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip). Entpacke die Datei und kopiere alle SVG-Bilddateien in einen neuen Ordner namens `icons` innerhalb von `blog/templates/blog/`. So kannst du auf ein Symbol wie `pencil-fill.svg` mit dem Dateipfad `blog/templates/blog/icons/pencil-fill.svg` zugreifen
+> Alle Bootstrap-Icons kannst du [hier herunterladen](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip). Entpacke die Datei und kopiere alle SVG-Bilddateien in einen neuen Ordner namens `icons` innerhalb von `blog/templates/blog/`. So kannst du auf ein Symbol wie `pencil-fill.svg` mit dem Dateipfad `blog/templates/blog/icons/pencil-fill.svg` zugreifen
 
 Nach dem Bearbeiten der Zeile sieht deine HTML-Datei so aus:
 
@@ -249,7 +249,7 @@ Füge dies direkt am Anfang der Datei hinzu. Jetzt können wir endlich sagen: "G
 return redirect('post_detail', pk=post.pk)
 ```
 
-`post_detail` ist der Name der View, zu der wir springen wollen. Erinnerst du dich daran, dass dieser *view* einen `pk` benötigt? Um diesen an die View weiterzugeben, benutzen wir `pk=post.pk`, wobei `post` unser neu erstellter Blogpost ist!
+`post_detail` ist der Name der View, zu der wir springen wollen. Erinnerst du dich daran, dass diese *view* einen `pk` benötigt? Um diesen an die View weiterzugeben, benutzen wir `pk=post.pk`, wobei `post` unser neu erstellter Blogpost ist!
 
 Ok, wir haben jetzt eine ganze Menge geredet, aber du willst bestimmt sehen, wie die gesamte *View* aussieht, richtig?
 
