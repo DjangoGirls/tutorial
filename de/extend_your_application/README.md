@@ -19,13 +19,13 @@ Wir beginnen damit, einen Link in der `blog/templates/blog/post_list.html`-Datei
 
 {% block content %}
     {% for post in posts %}
-        <div class="post">
-            <div class="date">
+        <article class="post">
+            <time class="date">
                 {{ post.published_date }}
-            </div>
+            </time>
             <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
-        </div>
+        </article>
     {% endfor %}
 {% endblock %}
 ```
@@ -148,15 +148,15 @@ Gib den folgenden Code ein:
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <div class="post">
+    <article class="post">
         {% if post.published_date %}
-            <div class="date">
+            <time class="date">
                 {{ post.published_date }}
-            </div>
+            </time>
         {% endif %}
         <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    </article>
 {% endblock %}
 ```
 
@@ -177,9 +177,9 @@ Es wäre schön zu sehen, ob deine Website noch auf PythonAnywhere funktioniert,
 {% filename %}command-line{% endfilename %}
 
     $ git status
-    $ git add --all .
+    $ git add .
     $ git status
-    $ git commit -m "View und Template für Blogpost-Details sowie CSS für die Website hinzugefügt"
+    $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
     $ git push
     
 
@@ -211,4 +211,4 @@ Der `manage.py collectstatic` Befehl ist ein bisschen wie `manage.py migrate`. W
 
 Auf jeden Fall sind wir nun soweit, dass wir [auf die Seite "Web"](https://www.pythonanywhere.com/web_app_setup/) wechseln können (mittels dem Menü-Knopf in der Ecke oben rechts) und **Reload** klicken können. Schau dir dann die Seite https://subdomain.pythonanywhere.com an, um das Ergebnis zu sehen.
 
-Und das sollte es sein! Herzlichen Glückwunsch :)
+Und das war's. Glückwunsch! :)

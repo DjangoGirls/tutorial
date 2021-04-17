@@ -19,8 +19,8 @@ Wenn du an einer [Django Girls Veranstaltung](https://djangogirls.org/events/) t
 In diesem Tutorial wirst du einen Blog bauen. Dafür wirst du während des Tutorials aufgefordert, verschiedene Software auf deinem Computer zu installieren und auch einige Online-Konten anzulegen, wenn sie gebraucht werden. Diese Seite fasst alle Installations- und Kontoeinrichtungs-Anweisungen an einer Stelle zusammen (das ist für einige Workshopformate sinnvoll).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
-data-id="chromebook_setup" data-collapse=true ces-->
-{% include "/chromebook_setup/instructions.md" %}
+data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
+
 <!--endsec-->
 
 # Kurze Einführung in die Kommandozeile {#command-line}

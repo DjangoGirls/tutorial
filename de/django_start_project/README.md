@@ -112,6 +112,28 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 > **Hinweis**: Wenn du ein Chromebook verwendest, füge noch diese Zeile am Ende deiner settings.py-Datei hinzu: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
 > Falls du Cloud9 benutzt, füge auch `.amazonaws.com` zu den `ALLOWED_HOSTS` hinzu
+> 
+> Wenn du dein Projekt auf `Glitch.com` hostest, dann lass uns den Django-Sekret-Key schützen, der vertraulich bleiben muss (andernfalls könnte jeder, der dein Projekt remixt, diesen sehen): * Zuerst erstellen wir einen zufälligen geheimen Schlüssel. Öffne erneut das Glitch-Terminal und gib den folgenden Befehl ein: {% filename %}.env{% endfilename %} 
+> 
+>     bash
+>         python -c 'from django.core.management.utils import get_random_secret_key; \
+>               print(get_random_secret_key())' Das sollte einen langen zufälligen String ausgeben, der perfekt für die Verwendung als geheimer Schlüssel für deine brandneue Django-Website geeignet ist. Wir werden diesen Schlüssel jetzt in eine Datei namens 
+> 
+> `.env` einfügen, die Glitch nur dir als Besitzerin der Website anzeigt.  
+>   
+> * Erstelle eine Datei namens `.env` im Wurzelverzeichnis deines Projekts und füge folgenden Inhalt ein: {% filename %}.env{% endfilename %} 
+> 
+>     bash
+>         # Hier, innerhalb der einfachen Anführungszeichen, kannst den oben erzeugten zufälligen Schlüssel einfügen
+>         SECRET='3!0k#7ds5mp^-x$lqs2%le6v97h#@xopab&oj5y7d=hxe511jl' * Aktualisiere dann die Django-Einstellungen-Datei `mysite/settings.py`, um diesen geheimen Wert einzufügen zu lassen und lege den Django-Webseitennamen fest: {% filename %}mysite/settings.py{% endfilename %} 
+> 
+>     python
+>         SECRET_KEY = os.getenv('SECRET') * Und etwas weiter unten in derselben Datei geben wir den Namen deiner neuen Glitch-Website ein: {% filename %}mysite/settings.py{% endfilename %} 
+> 
+>     python
+>         ALLOWED_HOSTS = [os.getenv('PROJECT_DOMAIN') + ".glitch.me"] Der Wert 
+> 
+> `PROJECT_DOMAIN` wird automatisch von Glitch generiert. Er wird dem Namen deines Projekts entsprechen.
 
 ## Eine Datenbank erstellen
 
@@ -173,6 +195,14 @@ Wenn du ein Chromebook verwendest, benutze stattdessen diesen Befehl:
     (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
     
 
+oder wenn du Glitch verwendest, diesen:
+
+{% filename %}Glitch.com terminal{% endfilename %}
+
+    $ refresh
+    
+    
+
 Wenn du Windows benutzt und dies mit dem `UnicodeDecodeError` fehlschläft, verwende diesen Befehl:
 
 {% filename %}command-line{% endfilename %}
@@ -192,6 +222,11 @@ Wenn du ein Chromebook und Cloud9 verwendest, dann klicke stattdessen die URL im
 {% filename %}browser{% endfilename %}
 
     https://<a bunch of letters and numbers>.vfs.cloud9.us-west-2.amazonaws.com
+    
+
+oder auf Glitch:
+
+    https://name-deines-glitch-projects.glitch.me
     
 
 Glückwunsch! Du hast gerade deine erste Website erstellt und sie auf deinem Webserver laufen! Ist das nicht toll?

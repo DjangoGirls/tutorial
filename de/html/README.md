@@ -33,13 +33,14 @@ Kontrolliere deine überarbeitete Webseite unter: http://127.0.0.1:8000
 
 ![Abbildung 11.1](images/step1.png)
 
-Der Fehler sollte weg sein! Toll :) Deine Webseite ist allerdings noch leer, weil dein Template leer ist. Das müssen wir ändern.
+Der Fehler sollte weg sein! Gratulation! :) Deine Webseite ist allerdings noch leer, weil dein Template leer ist. Das müssen wir ändern.
 
 Öffne die neue Datei im Code-Editor, und füge Folgendes hinzu:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
 <body>
     <p>Halli-Hallo!</p>
@@ -52,9 +53,10 @@ Hat sich die Seite geändert? Besuche http://127.0.0.1:8000/, um nachzusehen.
 
 ![Abbildung 11.2](images/step3.png)
 
-Es funktioniert! Gute Arbeit! :)
+Es funktioniert. Gute Arbeit! :)
 
-* Jede Webseite sollte mit dem Tag `<html>` beginnen. Und `</html>` steht immer am Ende. Zwischen den beiden Tags `<html>` und `</html>` steht der gesamte Inhalt der Webseite
+* Die Zeile `<!DOCTYPE html>` ist kein HTML-Tag. Es deklariert nur den Dokumententyp. Hier informiert sie den Browser, dass der Dokumententyp [HTML5](https://html.spec.whatwg.org/#the-doctype) ist. Jede HTML5-Datei muss so anfangen.
+* Der eigentliche HTML-Teil beginnt immer mit `<html>` und endet immer mit `</html>`. Zwischen den beiden Tags `<html>` und `</html>` steht der gesamte Inhalt der Webseite
 * `<p>` ist der Tag für ein Absatz-Element (paragraph), `</p>` beendet einen Absatz
 
 ## "Head" und "body"
@@ -72,9 +74,10 @@ In den `<head>` können wir z.B. noch den Titel (title) der Seite mit aufnehmen:
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Olas Blog</title>
+        <title>Olas blog</title>
     </head>
     <body>
         <p>Halli-Hallo!</p>
@@ -109,40 +112,49 @@ Jetzt kannst du ein bisschen rumprobieren und dein Template umgestalten! Hier si
 * `<a href="https://djangogirls.org">link</a>` erstellt einen Link
 * `<ul><li>Erster Punkt</li><li>second item</li></ul>` generiert eine Liste so wie diese hier!
 * `<div></div>` definiert einen Abschnitt auf einer Seite
+* `<nav></nav>` definiert eine Reihe von Navigationslinks
+* `<article></article>` definiert voneinander unabhängige, eigenständige Inhalts-Teile
+* `<section></section>` definiert einen Abschnitt in einem Dokument
+* `<header></header>` gibt eine Kopfzeile für ein Dokument oder einen Abschnitt an
+* `<main></main>` enthält den Hauptinhalt eines Dokuments
+* `<aside></aside>` definiert eine Nebenbemerkung (wie den Inhalt einer Rand-Leiste) zum Inhaltsteil, in dem es platziert wird
+* `<footer></footer>` definiert eine Fußzeile für ein Dokument oder einen Abschnitt
+* `<time></time>` definiert eine bestimmte Zeit (oder einen Zeitpunkt samt Datum)
 
 Hier ist ein vollständiges Beispiel eines Templates. Kopiere es und füge es in `blog/templates/blog/post_list.html` ein:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
     </head>
     <body>
-        <div>
+        <header>
             <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+        </header>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
             <h2><a href="">My first post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
+        </article>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My second post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
+            <h2><a href="">My second post</a></h2>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
+        </article>
     </body>
 </html>
 ```
 
-Wir haben hier drei verschiedene `div` Abschnitte erstellt.
+Wir haben hier einen `header`-Abschnitt und zwei `article`-Abschnitte erstellt.
 
-* Das erste `div` Element enthält den Titel unseres Blogs – eine Überschrift und einen Link
-* Zwei weitere `div` Elemente beinhalten unsere Blogposts und ein Publikationsdatum, `h2` mit dem Titel des Posts und zwei `p` (paragraph) Tags mit Text, eines für das Datum und eines für den Blogpost.
+* Das `header`-Element enthält den Titel unseres Blogs – eine Überschrift und einen Link
+* Die beiden `Artikel` Elemente enthalten unsere Blogeinträge mit einem veröffentlichten Datum in einem `time` Element, ein `h2` Element mit einem anklickbaren Beitragstitel und einem `p` (Absatz) Element für den Text unseres Blogeintrags.
 
 Wir bekommen das Folgende:
 
@@ -169,10 +181,8 @@ Stelle sicher, dass du im `Djangogirls` Verzeichnis bist und sag `git`, dass all
 
 {% filename %}command-line{% endfilename %}
 
-    $ git add --all .
+    $ git add .
     
-
-> **Beachte:** `--all` bedeutet, dass `git` auch Dateien berücksichtigt, die du gelöscht hast (in der Standardeinstellung werden nur neue/geänderte Dateien hinzugefügt). Denk auch daran (Kapitel 3), dass `.` das aktuelle Verzeichnis meint.
 
 Bevor wir alle Dateien hochladen, prüfen wir noch einmal, was `git` hochladen will (alle Dateien, die `git` hochladen wird, sind jetzt grün):
 
