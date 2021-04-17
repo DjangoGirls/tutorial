@@ -113,27 +113,45 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 > 
 > Ajoutez `.amazonaws.com` à `ALLOWED_HOSTS` si vous utilisez cloud9
 > 
-> Si vous hébergez votre projet sur `Glitch.com`, nous devons protéger la clé secrète Django qui doit rester confidentielle (sinon, toute personne remixant votre projet pourrait la voir) : * Tout d'abord, nous allons créer une clé secrète aléatoire. Ouvrez à nouveau le terminal Glitch et tapez la commande suivante : {% filename %}Terminal{% endfilename %} 
+> Si vous hébergez votre projet sur `Glitch.com`, nous devons protéger la clé secrète Django qui doit rester confidentielle (sinon, toute personne remixant votre projet pourrait la voir) :
 > 
->     bash
->         python -c 'from django.core.management.utils import get_random_secret_key; \
->               print(get_random_secret_key())' Ceci devrait afficher une longue chaîne de caractères aléatoire, parfaite à utiliser comme clé secrète pour votre tout nouveau site web Django. Nous allons maintenant coller cette clé dans un 
+> - Tout d'abord, nous allons créer une clé secrète aléatoire. Ouvrez à nouveau le terminal Glitch et tapez la commande suivante :
+>     
+>     {% filename %}Terminal{% endfilename %}
+>     
+>     ```bash
+>     python -c 'from django.core.management.utils import get_random_secret_key; \
+>           print(get_random_secret_key())'
+>     ```
+>     
+>     Ceci devrait afficher une longue chaîne de caractères aléatoire, parfaite à utiliser comme clé secrète pour votre tout nouveau site web Django. Nous allons maintenant coller cette clé dans un `.env` que Glitch ne vous montrera que si vous êtes propriétaire du site Web.
 > 
-> `.env` que Glitch ne vous montrera que si vous êtes propriétaire du site Web.  
->   
-> Créez un fichier `.env` à la racine de votre projet et ajoutez-y la propriété suivante : {% filename %}.env{% endfilename %} 
+> - Créez un fichier `.env` à la racine de votre projet et ajoutez-y la propriété suivante :
+>     
+>     {% filename %}.env{% endfilename %}
+>     
+>     ```bash
+>     # Ici, à l'intérieur des apostrophes, vous pouvez copier et coller la clé aléatoire générée ci-dessus
+>     SECRET='3!0k#7ds5mp^-x$lqs2%le6v97h#@xopab&oj5y7d=hxe511jl'
+>     ```
 > 
->     bash
->         # Ici, à l'intérieur des apostrophes, vous pouvez copier et coller la clé aléatoire générée ci-dessus
->         SECRET='3!0k#7ds5mp^-x$lqs2%le6v97h#@xopab&oj5y7d=hxe511jl' * Puis mettez à jour le fichier de configuration de Django pour injecter cette valeur secrète et définir le nom du site web Django : {% filename %}mysite/settings.py{% endfilename %} 
+> - Puis mettez à jour le fichier de configuration de Django pour injecter cette valeur secrète et définir le nom du site web Django :
+>     
+>     {% filename %}mysite/settings.py{% endfilename %}
+>     
+>     ```python
+>     SECRET_KEY = os.getenv('SECRET')
+>     ```
 > 
->     python
->         SECRET_KEY = os.getenv('SECRET') * Et un peu plus loin, dans le même fichier, nous injectons le nom de votre nouveau site Glitch : {% filename %}mysite/settings.py{% endfilename %} 
-> 
->     python
->         ALLOWED_HOSTS = [os.getenv('PROJECT_DOMAIN') + ".glitch.me"] La valeur 
-> 
-> `PROJECT_DOMAIN` est générée automatiquement par Glitch. Elle contient le nom de votre projet.
+> - Et un peu plus loin, dans le même fichier, nous injectons le nom de votre nouveau site Glitch :
+>     
+>     {% filename %}mysite/settings.py{% endfilename %}
+>     
+>     ```python
+>     ALLOWED_HOSTS = [os.getenv('PROJECT_DOMAIN') + ".glitch.me"]
+>     ```
+>     
+>     `PROJECT_DOMAIN` est générée automatiquement par Glitch. Elle contient le nom de votre projet.
 
 ## Configuration de la base de données
 
