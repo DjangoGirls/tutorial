@@ -124,7 +124,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 >   * First, we are going to create a random secret key.
 >     Open the Glitch terminal again, and type the following command:
 >
->     {% filename %}.env{% endfilename %}
+>     {% filename %}command-line{% endfilename %}
 >     ```bash
 >     python -c 'from django.core.management.utils import get_random_secret_key; \
 >           print(get_random_secret_key())'
