@@ -1,4 +1,4 @@
-Егер сіз Хромбукты қолданбасаңыз, онда [осы секцияны секіріп кете аласыз](http://tutorial.djangogirls.org/en/installation/#install-python). If you are, your installation experience will be a little different. You can ignore the rest of the installation instructions.
+Егер сіз Хромбукты қолданбасаңыз, онда [осы секцияны секіріп кете аласыз](http://tutorial.djangogirls.org/en/installation/#install-python). Егер сіздің орнату жағдайыңыз кішкене басқаша болса. Онда қалған инструкцияларды елемеуге болады.
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com)
 
