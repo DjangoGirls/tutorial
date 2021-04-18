@@ -31,9 +31,9 @@ urlpatterns = [
 
 Ինչպես տեսնում եք, Django- ն այստեղ արդեն ինչ-որ բան է տեղադրել մեզ համար:
 
-Lines between triple quotes (`'''` or `"""`) are called docstrings – you can write them at the top of a file, class or method to describe what it does. They won't be run by Python.
+Եռապատիկ չակերտների միջեւ տողերը(`'''` or `"""`) կոչվում են docstrings/փաստաթղթերի գծեր. դուք կարող եք դրանք գրել ֆայլի, դասի կամ մեթոդի վերևում `բացատրելու համար, թե ինչ է դա անում: Դրանք չեն գործարկվի Python- ի կողմից:
 
-The admin URL, which you visited in the previous chapter, is already here:
+Նախորդ գլխում այցելած ադմինիստրատորի URL- ն արդեն առկա է այստեղ ՝
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -41,9 +41,9 @@ The admin URL, which you visited in the previous chapter, is already here:
     path('admin/', admin.site.urls),
 ```
 
-This line means that for every URL that starts with `admin/`, Django will find a corresponding *view*. In this case, we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
+Այս տողը նշանակում է, որ յուրաքանչյուր URL- ի համար, որը սկսվում է `admin/`, /ադմինիստրատորով Django- ն կգտնի համապատասխան *view* /տեսք: Այս դեպքում մենք ընդգրկում ենք մեծ թվով ադմինիստրատորի URL- ներ, որոնք հստակ գրված չեն այս փոքր ֆայլում. Սա շատ ավելի կոկիկ է և ավելի ընթեռնելի:
 
-## Your first Django URL!
+## Ձեր առաջին Django URL- ը:
 
 Time to create our first URL! We want 'http://127.0.0.1:8000/' to be the home page of our blog and to display a list of posts.
 
