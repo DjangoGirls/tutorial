@@ -45,7 +45,7 @@ urlpatterns = [
 
 ## Ձեր առաջին Django URL- ը:
 
-Time to create our first URL! We want 'http://127.0.0.1:8000/' to be the home page of our blog and to display a list of posts.
+Ժամանակն է ստեղծել ձեր առաջին URL- ը: Մենք ուզում ենք, որ «http://127.0.0.1:8000/» - ը լինի մեր բլոգի գլխավոր էջը `դրանում տեղադրված հաղորդագրությունների ցուցակով:
 
 We also want to keep the `mysite/urls.py` file clean, so we will import URLs from our `blog` application to the main `mysite/urls.py` file.
 
