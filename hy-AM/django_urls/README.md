@@ -92,11 +92,11 @@ urlpatterns = [
 
 Ինչպես տեսնում եք, մենք կապել ենք `post_list` անունով `view` -ն և արմատային url- ը: This URL pattern will match an empty string and the Django URL resolver will ignore the domain name (i.e., http://127.0.0.1:8000/) that prefixes the full URL path. This pattern will tell Django that `views.post_list` is the right place to go if someone enters your website at the 'http://127.0.0.1:8000/' address.
 
-The last part, `name='post_list'`, is the name of the URL that will be used to identify the view. This can be the same as the name of the view but it can also be something completely different. We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
+Վերջին մասը ՝`name='post_list'`, URL- ի անունն է, որն օգտագործվելու է դիտումը նույնացնելու համար: Դա կարող է նույնը լինել, ինչ view-ի անունն է, կամ կարող է լինել բոլորովին այլ բան: Ծրագրում մենք հետագայում կօգտագործենք անվանական URL- ներ, ուստի կարևոր է, որ դրանց անուններն այժմ ներառվեն ձեր դիմումի մեջ: Մեր URL- ների անունները յուրահատուկ և հեշտ հիշվող պետք է լինեն:
 
 Եթե ​​այժմ փորձեք այցելել http://127.0.0.1:8000/, ապա դուք պետք է տեսնեք այնպիսի հաղորդագրություն, որում ասվում է ՝ «ինտերնետային էջը հասանելի չէ»/'web page not available' : Դա այն պատճառով է, որ սերվերը (Հիշո՞ւմ եք մուտքագրեք `runserver`) այլևս չի աշխատում: Հայացք գցեք ձեր սերվերի վահանակի պատուհանից ՝ պարզելու պատճառը:
 
-![Error](images/error1.png)
+![Սխալ](images/error1.png)
 
 Ձեր վահանակը սխալ է ցույց տալիս, բայց մի անհանգստացեք. Սա իրականում շատ օգտակար է. այն Ձեզ ասում են, որ **no attribute 'post_list'**("բացակայում է հատկությունը 'post_list'"-ում): Դա այն *view*-ի անունն է, որը Django- ն փորձում է գտնել և օգտագործել, բայց մենք այն դեռ չենք ստեղծել: Այս փուլում ձեր `/admin/`/ադմինիստրատորը նույնպես չի աշխատի: Մի անհանգստացեք. Մենք կհասնենք այնտեղ: Եթե ​​այլ սխալի հաղորդագրություն եք տեսնում, փորձեք վերագործարկել/restart ձեր վեբ սերվերը: Դա անելու համար վեբ սերվերը աշխատող վահանակի պատուհանում դադարեցրեք այն ՝ սեղմելով Ctrl + C (Control և C ստեղները միասին): Windows- ում գուցե ստիպված լինեք սեղմել Ctrl + Break: Ապա դուք պետք է վերագործարկեք վեբ սերվերը ՝ գործարկելով <`python manage.py runserver` հրամանը:
 
