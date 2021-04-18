@@ -49,9 +49,9 @@ urlpatterns = [
 
 We also want to keep the `mysite/urls.py` file clean, so we will import URLs from our `blog` application to the main `mysite/urls.py` file.
 
-Go ahead, add a line that will import `blog.urls`. You will also need to change the `from django.urls…` line because we are using the `include` function here, so you will need to add that import to the line.
+Առաջ անցեք, տող ավելացրեք `blog.urls` - ը ներմուծելու համար: Նշենք, որ մենք այստեղ օգտագործում ենք `include/ներառման` գործառույթը/function, այնպես որ դուք ստիպված կլինեք այն ներմուծել `from django.urls…` տողում:
 
-Your `mysite/urls.py` file should now look like this:
+Ձեր `mysite/urls.py` ֆայլը այժմ պետք է ունենա այսպիսի տեսք.
 
 {% filename %}mysite/urls.py{% endfilename %}
 
