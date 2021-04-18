@@ -65,11 +65,11 @@ urlpatterns = [
 ]
 ```
 
-Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and looks for further instructions there.
+Django- ն այժմ «http://127.0.0.1:8000/» - ի բոլոր խնդրանքները կուղղորդի դեպի `blog.urls` և այնտեղ կփնտրի հետագա հրահանգները:
 
 ## blog.urls
 
-Create a new empty file named `urls.py` in the `blog` directory, and open it in the code editor. All right! Add these first two lines:
+`blog` գրացուցակում ստեղծեք նոր դատարկ ֆայլ `urls.py` անունով և բացեք այն ձեր կոդի խմբագրում: Շատ լավ! Ավելացրեք այս առաջին երկու տողերը.
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -78,9 +78,9 @@ from django.urls import path
 from . import views
 ```
 
-Here we're importing Django's function `path` and all of our `views` from the `blog` application. (We don't have any yet, but we will get to that in a minute!)
+Այստեղ մենք ներմուծում ենք Django- ի `path` գործառույթը և մեր բոլոր `views/դիտումները ` `blog` հավելվածից: (Մենք դեռ դրանք չունենք, բայց մի րոպեից նրանք կհայտնվեն):
 
-After that, we can add our first URL pattern:
+Դրանից հետո մենք կարող ենք ավելացնել մեր առաջին URL նմուշը.
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -90,7 +90,7 @@ urlpatterns = [
 ]
 ```
 
-As you can see, we're now assigning a `view` called `post_list` to the root URL. This URL pattern will match an empty string and the Django URL resolver will ignore the domain name (i.e., http://127.0.0.1:8000/) that prefixes the full URL path. This pattern will tell Django that `views.post_list` is the right place to go if someone enters your website at the 'http://127.0.0.1:8000/' address.
+Ինչպես տեսնում եք, մենք կապել ենք `post_list` անունով `view` -ն և արմատային url- ը: This URL pattern will match an empty string and the Django URL resolver will ignore the domain name (i.e., http://127.0.0.1:8000/) that prefixes the full URL path. This pattern will tell Django that `views.post_list` is the right place to go if someone enters your website at the 'http://127.0.0.1:8000/' address.
 
 The last part, `name='post_list'`, is the name of the URL that will be used to identify the view. This can be the same as the name of the view but it can also be something completely different. We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
 
@@ -98,6 +98,6 @@ If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'w
 
 ![Error](images/error1.png)
 
-Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is **no attribute 'post_list'**. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage, your `/admin/` will also not work. No worries – we will get there. If you see a different error message, try restarting your web server. To do that, in the console window that is running the web server, stop it by pressing Ctrl+C (the Control and C keys together). On Windows, you might have to press Ctrl+Break. Then you need to restart the web server by running a `python manage.py runserver` command.
+Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is **no attribute 'post_list'**. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage, your `/admin/` will also not work. No worries – we will get there. If you see a different error message, try restarting your web server. To do that, in the console window that is running the web server, stop it by pressing Ctrl+C (the Control and C keys together). Windows- ում գուցե ստիպված լինեք սեղմել Ctrl + Break: Ապա դուք պետք է վերագործարկեք վեբ սերվերը ՝ գործարկելով <`python manage.py runserver` հրամանը:
 
-> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/2.2/topics/http/urls/
+> Եթե ​​ցանկանում եք ավելին իմանալ Django- ի ադմինիստրատորի մասին, տես պաշտոնական փաստաթղթերի այս բաժինը ՝ https://docs.djangoproject.com/en/2.2/topics/http/urls/
