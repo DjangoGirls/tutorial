@@ -45,8 +45,8 @@ Cloud IDE - это инструмент, предоставляющий тебе
 
 #### Glitch.com Cloud IDE
 
-1. Go to [Glitch.com](https://glitch.com/)
-2. Sign up for an account (https://glitch.com/signup) or use your GitHub account if you have one. (See GitHub instructions below.)
+1. Перейдите на сайт
+2. Зарегистрируйте учетную запись (https://glitch.com/signup) или используйте свою учетную запись GitHub, если она у вас есть. (См. Инструкции GitHub ниже.)
 3. Click *New Project* and choose *hello-webpage*
 4. Click on the Tools dropdown list (at the bottom left side of the window), then on Terminal button to open terminal tab with a prompt like this:
 
