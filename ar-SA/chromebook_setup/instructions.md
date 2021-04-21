@@ -132,7 +132,7 @@ The initial restarting of the Glitch project should fail. (If you click on the t
 
 A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
-Run:
+تشغيل:
 
 {% filename %}Cloud 9{% endfilename %}
 
