@@ -6,7 +6,7 @@
   * [Python](installation/README.md#python)
   * [Code Editor](installation/README.md#code-editor)
   * [Virtual Environment](installation/README.md#virtualenv)
-  * [Django](installation/README.md#django)
+  * [جانقو](installation/README.md#django)
   * [Git](installation/README.md#git)
   * [GitHub](installation/README.md#github)
   * [PythonAnywhere](installation/README.md#pythonanywhere)
