@@ -1,10 +1,10 @@
-# How the Internet works
+# Ինչպես է աշխատում ինտերնետը
 
-> For readers at home: this chapter is covered in the [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc) video.
+> Ընթերցողների համար տանը. Այս գլուխն ընդգրկված է [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc) տեսանյութում
 > 
-> This chapter is inspired by the talk "How the Internet works" by Jessica McKellar (http://web.mit.edu/jesstess/www/).
+> Այս գլուխը ներշնչված է Howեսիկա ՄաքՔելարի (http://web.mit.edu/jesstess/www/) "How the Internet works"(«Ինչպես է աշխատում ինտերնետը») զրույցից:
 
-We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
+Մենք գրազ ենք գալիս, որ դուք ամեն օր ինտերնետ եք օգտագործում: Բայց գիտե՞ք իրականում, թե ինչ է պատահում, երբ ձեր զննարկչի մեջ մուտքագրում եք https://djangogirls.org- ի նման հասցե և սեղմում ` enter `:
 
 The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk -- just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
 
