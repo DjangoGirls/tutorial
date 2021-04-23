@@ -883,7 +883,7 @@ hi()
 - Якщо у вас `IndentationError` (помилка відступу), перевірте, чи мають обидва рядки `print` однакову кількість пробілів на початку рядка: Python хоче, щоб весь код всередині функції був чітко вирівняний.
 - Якщо ж на екран взагалі нічого не вивелося, перевірте, що *немає* пробілів перед останнім `hi()`, – якщо вони є, цей рядок також стане частиною функції і ніколи не запуститься.
 
-Let's build our first function with parameters. We will change the previous example – a function that says 'hi' to the person running it – with a name:
+А тепер побудуємо нашу першу функцію з параметрами. Скористаємося попереднім прикладом, але тепер нехай функція, що говорить 'hi', звертається на ім'я до особи, яка її запускає:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -891,7 +891,7 @@ Let's build our first function with parameters. We will change the previous exam
 def hi(name):
 ```
 
-As you can see, we now gave our function a parameter that we called `name`:
+Як бачимо, зараз ми задали для нашої функції параметр, який назвали `name`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -907,9 +907,9 @@ def hi(name):
 hi()
 ```
 
-Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
+Пам'ятайте: функція `print` відділена відступами від команди `if` на чотири пробіли. Це тому, що функція запускається, коли виконується умова. Давайте подивимося, як це працює зараз:
 
-{% filename %}{{ warning_icon }} command-line{% endfilename %}
+{% filename %}{{ warning_icon }} командний рядок{% endfilename %}
 
     $ python3 python_intro.py
     Traceback (most recent call last):
@@ -918,7 +918,7 @@ Remember: The `print` function is indented four spaces within the `if` statement
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
+Ой, помилка. На щастя, Python надає нам дуже корисне повідомлення про помилку. Воно повідомляє нам про те, що функція `hi()` (та, яку ми визначили) має один обов'язковий аргумент (`name`) і що ми забули передати цей аргумент, коли здійснювали виклик функції. Виправимо це наприкінці файлу:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -926,15 +926,15 @@ Oops, an error. Luckily, Python gives us a pretty useful error message. It tells
 hi("Ola")
 ```
 
-And run it again:
+І запустимо знову:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
     $ python3 python_intro.py
     Hi Ola!
     
 
-And if we change the name?
+А якщо ми змінимо ім'я?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -942,24 +942,24 @@ And if we change the name?
 hi("Sonja")
 ```
 
-And run it:
+Запустимо:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
     $ python3 python_intro.py
     Hi Sonja!
     
 
-Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
+А як ви думаєте, що відбудеться, якщо ми вкажемо тут інше ім'я? (Не Ola і не Sonja.) Спробуємо і подивимося, чи ви маєте рацію. Маємо отримати на виході:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
     Hi anonymous!
     
 
-This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
+Чудово, чи не так? Таким чином, вам не потрібно повторюватись кожного разу, коли ви захочете змінити ім'я особи, з якою має вітатися ваша функція. І саме тому нам потрібні функції – ви ж бо ніколи не хочете повторювати свій код!
 
-Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right? Replace the content of your file with the following:
+Виконаємо дещо складніші маніпуляції – існує безліч імен, набагато більше, ніж два, і написати умови для кожного з них буде досить складно, правда ж? Змініть вміст вашого файлу на такий:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -970,15 +970,15 @@ def hi(name):
 hi("Rachel")
 ```
 
-Let's call the code now:
+А тепер виконаємо програму:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}командний рядок{% endfilename %}
 
     $ python3 python_intro.py
     Hi Rachel!
     
 
-Congratulations! You just learned how to write functions! :)
+Вітаємо! Ви щойно розібралися з тим, як писати функції :)
 
 ## Цикли
 
