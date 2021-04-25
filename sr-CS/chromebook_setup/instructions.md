@@ -49,11 +49,11 @@ U ovu trenutku Cloud 9 zahteva da se prijavite na AWS i unesete informacije o kr
     1. Idi na [Glitch.com](https://glitch.com/)
     2. Registruj se (https://glitch.com/signup) ili koristi svoj GitHub nalog, ako ga imaš. (Pogledaj uputstva za GitHub ispod.)
     3. Klikni na *New Project* i izaberi *hello-webpage*
-    4. Click on the Tools dropdown list (at the bottom left side of the window), then on Terminal button to open terminal tab with a prompt like this:
+    4. Klikni na padajuću listu Tools (u donjem levom uglu prozora), a zatim na dugme Terminal da otvoriš novu karticu terminala, slično ovome:
     
     {% filename %}Terminal{% endfilename %}
     
-        app@name-of-your-glitch-project:~
+        app@ime-tvog-glitch-projekta:~
         
     
     When using Glitch.com as your Cloud IDE, you don't have to create a virtual environment. Instead, create the following files manually:
