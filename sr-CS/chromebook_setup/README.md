@@ -1,5 +1,5 @@
 # Podešavanje Chromebook-a
 
-> **Note** If you already worked through the [installation steps](../installation/README.md), no need to do this again – you can skip straight ahead to [Introduction to Python](../python_introduction/README.md).
+> **Napomena** Ako su već odrađeni [koraci za instalaciju](../installation/README.md), nema ppotrebe da se to ponovo radi - možeš da pređeš pravo na [Uvod u Python](../python_introduction/README.md).
 
 {% include "/chromebook_setup/instructions.md" %}
