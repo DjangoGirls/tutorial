@@ -56,7 +56,7 @@ U ovu trenutku Cloud 9 zahteva da se prijavite na AWS i unesete informacije o kr
         app@ime-tvog-glitch-projekta:~
         
     
-    When using Glitch.com as your Cloud IDE, you don't have to create a virtual environment. Instead, create the following files manually:
+    Kada koristiš Glitch.com kao svoj cloud IDE, ne moraš da praviš virtuelno okruženje.
     
     {% filename %}glitch.json{% endfilename %}
     
