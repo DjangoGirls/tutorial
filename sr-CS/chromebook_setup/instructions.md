@@ -2,7 +2,7 @@ Možeš da [preskočiš ovo poglavlje](http://tutorial.djangogirls.org/en/instal
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com)
 
-Cloud IDE je alatka koja vam omogućava uređivanje kodova i pristup računaru umreženom na internet, gde možete da instalirate, pišete, i pokrenete softver. Tokom ovog priručnika, Cloud IDE će poslužiti kao Vaš *lokalni računar*. I dalje ćes pokretati naredbe u terminalu, baš kao i Vaše kolege koje koriste OS X, Ubuntu ili Windows, ali će Vaš terminal biti povezan sa računarom pokrenutim negde drugde tamo gde je cloud IDE to podesio za tebe. Here are the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com). Možete da izaberete jedan od Cloud IDE-jeva i da pratite njegove instrukcije.
+Cloud IDE je alatka koja vam omogućava uređivanje kodova i pristup računaru umreženom na internet, gde možete da instalirate, pišete, i pokrenete softver. Tokom ovog priručnika, Cloud IDE će poslužiti kao Vaš *lokalni računar*. I dalje ćes pokretati naredbe u terminalu, baš kao i Vaše kolege koje koriste OS X, Ubuntu ili Windows, ali će Vaš terminal biti povezan sa računarom pokrenutim negde drugde tamo gde je cloud IDE to podesio za tebe. Evo cloud IDE uputstava (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com). Možete da izaberete jedan od Cloud IDE-jeva i da pratite njegove instrukcije.
 
 #### PaizaCloud Cloud IDE
 
@@ -46,8 +46,8 @@ U ovu trenutku Cloud 9 zahteva da se prijavite na AWS i unesete informacije o kr
     
     #### Glitch.com Cloud IDE
     
-    1. Go to [Glitch.com](https://glitch.com/)
-    2. Sign up for an account (https://glitch.com/signup) or use your GitHub account if you have one. (See GitHub instructions below.)
+    1. Idi na [Glitch.com](https://glitch.com/)
+    2. Registruj se (https://glitch.com/signup) ili koristi svoj GitHub nalog, ako ga imaš. (Pogledaj uputstva za GitHub ispod.)
     3. Click *New Project* and choose *hello-webpage*
     4. Click on the Tools dropdown list (at the bottom left side of the window), then on Terminal button to open terminal tab with a prompt like this:
     
