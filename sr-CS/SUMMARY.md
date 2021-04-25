@@ -22,7 +22,7 @@
 * [Django modeli](django_models/README.md)
 * [Django Admin](django_admin/README.md)
 * [Objavi!](deploy/README.md)
-* [Django URLs](django_urls/README.md)
+* [Django URL adrese](django_urls/README.md)
 * [Django views - vreme je za stvaranje!](django_views/README.md)
 * [Uvod u HTML](html/README.md)
 * [Django ORM (Querysets)](django_orm/README.md)
