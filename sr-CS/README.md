@@ -8,7 +8,7 @@
 
 Dobrodošli u Django Girls Priručnik! Srećni smo što si ovde. :) U ovom tutorijalu, vodimo te na putovanje u srce veb tehnologija, zavirićemo "ispod haube" i detaljno pregledati sve delove koji moraju da se uklope da bi veb bio onakav kakvog ga poznajemo.
 
-As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine. :)
+Kao i sa bilo čime nepoznatim, ovo će biti avantura - ali bez brige, pošto imaš hrabrosti da budeš ovde, sve će biti OK. :)
 
 ## Uvod
 
