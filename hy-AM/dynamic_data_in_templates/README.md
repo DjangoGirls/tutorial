@@ -2,11 +2,11 @@
 
 Մենք ունենք տարբեր կտորներ. `Post` մոդելը սահմանվում է `models.py`- ում, մենք ունենք `post_list`- ը `views.py` - ում և ավելացնում է ձևանմուշը: Բայց ինչպե՞ս ցուցադրել գրառումները HTML էջի ձևանմուշում: Ի վերջո, սա հենց այն է, ինչին մենք ուզում ենք հասնել. Վերցնել որոշակի բովանդակություն (շտեմարանում պահվող մոդելներ) և ճշգրիտ ցուցադրել դրանք մեր ձևանմուշում/ template, այնպես չէ՞:
 
-This is exactly what *views* are supposed to do: connect models and templates. In our `post_list` *view* we will need to take the models we want to display and pass them to the template. In a *view* we decide what (model) will be displayed in a template.
+Դրան են ծառայում դիտումները/*views* ՝ մոդելներն ու ձևանմուշները/models and templates/ միացնելու համար: `post_list` *view*-ում մենք պետք է վերցնենք այն մոդելները, որոնք մենք ցանկանում ենք ցուցադրել, և այնուհետև դրանք փոխանցել ձևանմուշին: *view*-ից մենք որոշում ենք, թե ինչ (մոդել) կցուցադրվի ձևանմուշում:
 
-OK, so how will we achieve this?
+Լավ, բա ինչպե՞ս ենք դրան հասնելու:
 
-We need to open our `blog/views.py` in our code editor. So far `post_list` *view* looks like this:
+Մենք պետք է բացենք `blog/views.py` ֆայլը կոդի խմբագրում/code editor: Այսպիսով, `post_list` *view* այսպիսի տեսք ունի.
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -17,7 +17,7 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-Remember when we talked about including code written in different files? Now is the moment when we have to include the model we have written in `models.py`. We will add the line `from .models import Post` like this:
+Հիշո՞ւմ եք, մենք խոսեցինք այլ ֆայլերից կոդ ներառելու մասին: Այժմ մենք պետք է ներառենք մեր սահմանած մոդելը `models.py` ֆայլում: Մենք կավելացնենք տողը `from .models import Post` - ից հետևյալ կերպ.
 
 {% filename %}blog/views.py{% endfilename %}
 
