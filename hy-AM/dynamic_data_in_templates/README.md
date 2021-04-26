@@ -79,6 +79,6 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {'posts': posts})
 ```
 
-That's it! Time to go back to our template and display this QuerySet!
+Այսքանը: Հիմա ժամանակն է գնալ ձևանմուշ/template և ցուցադրել QuerySet- ը էջում:
 
-Want to read a little bit more about QuerySets in Django? You should look here: https://docs.djangoproject.com/en/2.2/ref/models/querysets/
+Ցանկանու՞մ եք մի փոքր ավելին իմանալ Django- ի QuerySets- ի մասին: Անցեք այս հղումով՝ https://docs.djangoproject.com/en/2.2/ref/models/querysets/
