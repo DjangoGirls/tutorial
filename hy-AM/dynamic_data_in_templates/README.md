@@ -1,6 +1,6 @@
 # Dynamic data in templates
 
-Մենք ունենք տարբեր կտորներ. `Post` մոդելը սահմանվում է `models.py`- ում, մենք ունենք `post_list`- ը `views.py` - ում և ավելացնում է ձևանմուշը: Բայց ինչպե՞ս ցուցադրել գրառումները HTML էջի ձևանմուշում: Because that is what we want to do – take some content (models saved in the database) and display it nicely in our template, right?
+Մենք ունենք տարբեր կտորներ. `Post` մոդելը սահմանվում է `models.py`- ում, մենք ունենք `post_list`- ը `views.py` - ում և ավելացնում է ձևանմուշը: Բայց ինչպե՞ս ցուցադրել գրառումները HTML էջի ձևանմուշում: Ի վերջո, սա հենց այն է, ինչին մենք ուզում ենք հասնել. Վերցնել որոշակի բովանդակություն (շտեմարանում պահվող մոդելներ) և ճշգրիտ ցուցադրել դրանք մեր ձևանմուշում/ template, այնպես չէ՞:
 
 This is exactly what *views* are supposed to do: connect models and templates. In our `post_list` *view* we will need to take the models we want to display and pass them to the template. In a *view* we decide what (model) will be displayed in a template.
 
