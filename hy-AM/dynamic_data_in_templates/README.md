@@ -34,7 +34,7 @@ from .models import Post
 
 Դուք արդեն պետք է ծանոթ լինեք, թե ինչպես է աշխատում QuerySets- ը: Մենք դրա մասին խոսեցինք [Django ORM (QuerySets) գլխում ](../django_orm/README.md):
 
-So now we want published blog posts sorted by `published_date`, right? We already did that in QuerySets chapter!
+Այսպիսով, հիմա մենք ուզում ենք հրապարակված բլոգային հաղորդագրություններ/ published blog posts ՝ տեսակավորված ըստ published_date- ի, ճիշտ է: Մենք դա արդեն արեցինք QuerySets գլխում: 
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -42,7 +42,7 @@ So now we want published blog posts sorted by `published_date`, right? We alread
 Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 ```
 
-So, let's open the `blog/views.py` file in the code editor, and add this piece of code to the function `def post_list(request)` -- but don't forget to first add `from django.utils import timezone`:
+Այսպիսով, եկեք բացենք `blog/views.py` ֆայլը կոդի խմբագրում և ավելացնենք կոդի այս կտորը `def post_list(request)`, բայց մի մոռացեք ֆայլի սկզբում ավելացնել `from django.utils import timezone`.
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -56,7 +56,7 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-To display our QuerySet on our blog's post list, we have two things left to do:
+Մնացել է ընդամենը երկու բան ՝ մեր QuerySet- ը բլոգի գրառումների ցուցակում ցուցադրելու համար.
 
 1. Pass the `posts` QuerySet to the template context, by changing the `render` function call. We'll do this now.
 2. Modify the template to display the `posts` QuerySet. We'll cover this in a later chapter.
