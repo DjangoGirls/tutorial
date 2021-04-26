@@ -63,7 +63,7 @@ def post_list(request):
 
 Խնդրում ենք նկատի ունենալ, որ մենք QuerySet- ի համար *variable/փոփոխական* ենք ստեղծել. `posts/հաղորդագրություններ`: Դուք կարող եք դա համարել որպես անուն մեր QuerySet- ի համար: Այսուհետ մենք կարող ենք դրան անդրադառնալ այս անունով:
 
-In the `render` function we have one parameter `request` (everything we receive from the user via the Internet) and another giving the template file (`'blog/post_list.html'`). The last parameter, `{}`, is a place in which we can add some things for the template to use. We need to give them names (we will stick to `'posts'` right now). :) It should look like this: `{'posts': posts}`. Please note that the part before `:` is a string; you need to wrap it with quotes: `''`.
+`render/ռենդեր ` գործառույթում մենք արդեն ունենք `request/հարցման` պարամետրը (այսինքն `այն ամենը, ինչ մենք ստանում ենք օգտագործողից որպես խնդրանք ինտերնետի միջոցով) և ձևանմուշի ֆայլը` (`'blog/post_list.html'`): Վերջին պարամետրը, որն ունի այսպիսի տեսք `{}`, այն է, որտեղ մենք կարող ենք ավելացնել ձևանմուշ օգտագործելու ցանկացած բան: Սա այն վայրն է, որտեղ մենք կարող ենք ավելացնել որոշ բաներ, ձևանմուշի օգտագործման համար: Մենք պետք է նրանց անուններ տանք (մենք հիմա հավատարիմ կմնանք `'posts'/ հաղորդագրություններին` ) :) Դա պետք է ունենա այսպիսի տեսք. `{'posts': posts}`: Please note that the part before `:` is a string; you need to wrap it with quotes: `''`.
 
 Այսպիսով, վերջապես, մեր `blog/views.py` ֆայլը պետք է ունենա այսպիսի տեսք.
 
