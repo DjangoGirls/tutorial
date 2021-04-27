@@ -42,6 +42,6 @@
 
 Հետեւաբար, հիմնականում, երբ կայք ունեք, պետք է ունենաք նաև սերվեր (մեքենա)/*server* (machine), որտեղ այն գտնվում է: Երբ *server/սերվերը* ստանում է մուտքային *request/հարցում* (նամակով), այն հետ է ուղարկում ձեր կայքը (մեկ այլ նամակով):
 
-Since this is a Django tutorial, you might ask what Django does. When you send a response, you don't always want to send the same thing to everybody. It is so much better if your letters are personalized, especially for the person that has just written to you, right? Django helps you with creating these personalized, interesting letters. :)
+Քանի որ սա Django ձեռնարկ է, կարող եք հարցնել, թե ինչ է անում Django- ն: Պատասխան ուղարկելիս միշտ չէ, որ ցանկանում եք նույն բանը ուղարկել բոլոր հասցեատերերին: Շատ ավելի լավ է, եթե ձեր նամակները անձնավորված լինեն, հատկապես այն մարդու համար, ով հենց նոր է գրել ձեզ, այնպես չէ՞: Django- ն օգնում է ձեզ ստեղծել այս անհատականացված, հետաքրքիր նամակները: :)
 
 Բավական է խոսելը ՝ ստեղծագործելու ժամանակն է:
