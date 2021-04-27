@@ -8,9 +8,9 @@
 
 Առաջին բանը, որ դուք պետք է հասկանաք, այն է, որ կայքը բաղկացած է կոշտ սկավառակի/ hard disk -ի վրա պահված մի շարք ֆայլերից, ինչպես ձեր ֆիլմերը, երաժշտությունը կամ նկարները: Այնուամենայնիվ, կա մեկ առանձնահատկություն, որը հատուկ է միայն կայքերին. Դրանք պարունակում են համակարգչային կոդ, որը կոչվում է HTML:
 
-Եթե ​​դուք ծանոթ չեք ծրագրավորմանը, սկզբում դժվար կլինի հասկանալ HTML- ը, բայց ձեր վեբ բրաուզերները (օրինակ ՝ Chrome, Safari, Firefox և այլն) սիրում են այն: Web browsers are designed to understand this code, follow its instructions, and present these files that your website is made of, exactly the way you want.
+Եթե ​​դուք ծանոթ չեք ծրագրավորմանը, սկզբում դժվար կլինի հասկանալ HTML- ը, բայց ձեր վեբ բրաուզերները (օրինակ ՝ Chrome, Safari, Firefox և այլն) սիրում են այն: Վեբ բրաուզերները նախատեսված են հասկանալու այս կոդը, հետևելու նրա հրահանգներին և ներկայացնելու այն ֆայլերը, որոնցից կազմված է ձեր կայքը, ճիշտ այնպես, ինչպես ցանկանում եք:
 
-As with every file, we need to store HTML files somewhere on a hard disk. For the Internet, we use special, powerful computers called *servers*. They don't have a screen, mouse or a keyboard, because their main purpose is to store data and serve it. That's why they're called *servers* – because they *serve* you data.
+Ինչպես ցանկացած ֆայլ, HTML ֆայլերը նույնպես պետք է պահենք ինչ-որ տեղ մեր կոշտ սկավառակի/hard disk-ի վրա: Ինտերնետի համար մենք օգտագործում ենք հատուկ հզոր համակարգիչներ, որոնք կոչվում են *servers/սերվերներ*: Նրանք չունեն էկրան, մկնիկ կամ ստեղնաշար, քանի որ նրանց հիմնական նպատակը տվյալների պահպանումն ու սպասարկումն է: Այդ պատճառով նրանց անվանում են *servers/սերվեր* , քանի որ դրանք ձեզ ծառայություն են *մատուցում*:
 
 OK, but you want to know how the Internet looks, right?
 
