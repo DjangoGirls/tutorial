@@ -16,32 +16,32 @@
 
 Մենք նկարեցինք նկար ձեզ համար: Այն այսպիսի տեսք ունի.
 
-![Figure 1.1](images/internet_1.png)
+![Պատկեր 1.1](images/internet_1.png)
 
 Կարծես խառնաշփոթ է, չէ՞: Իրականում դա միացված մեքենաների ցանց է (վերոհիշյալ *servers/սերվերները*): Հարյուր հազարավոր մեքենաներ: Շատ ու շատ կիլոմետրեր ճոպաններ/cables ամբողջ աշխարհում: Կարող եք այցելել սուզանավերի մալուխային քարտեզի/Submarine Cable Map կայք (http://submarinecablemap.com/) ՝ տեսնելու, թե որքան բարդ է ցանցը: Ահա կայքի սքրինշոթը.
 
-![Figure 1.2](images/internet_3.png)
+![Պատկեր 1.2](images/internet_3.png)
 
 Դա զարմանալի է, այնպես չէ՞: Այնուամենայնիվ, հասկանալի է, որ հնարավոր չէ յուրաքանչյուր մեքենա մետաղալարով միացնել ինտերնետին: Այսպիսով, ցանկալի մեքենային հասնելու համար (օրինակ,մեկը https://djangogirls.org որտեղ պահպանվում է), մենք պետք է հարցումը փոխանցենք շատ այլ մեքենաների միջով:
 
 Այն պետք է ունենա նման տեսք:
 
-![Figure 1.3](images/internet_2.png)
+![Պատկեր 1.3](images/internet_2.png)
 
 Պատկերացրեք, որ երբ մուտքագրեք https://djangogirls.org, դուք նամակ եք ուղարկում, որում ասվում է. «Հարգելի Django Girls, ես ուզում եմ տեսնել djangogirls.org կայքը: Ուղարկեք այն ինձ, խնդրում եմ»:
 
 Ձեր նամակը գնում է ձեզ ամենամոտ փոստային բաժանմունք: Այնուհետև այն ուղարկվում է մեկ ուրիշին, որը մի փոքր ավելի մոտ է հասցեատիրոջը, իսկ հետո հաջորդին և այլն, մինչև այն հասցվի իր նպատակակետին: Միակ յուրահատկությունն այն է, որ շատ նամակներ (*data packets/տվյալների փաթեթներ *) մեկ հասցեով ուղարկելիս նրանցից յուրաքանչյուրը կարող է անցնել բոլորովին այլ փոստային բաժանմունքների (*routers/երթուղիչների*) միջով: Դա կախված է նրանից, թե ինչպես են դրանք բաշխվում յուրաքանչյուր գրասենյակում:
 
-![Figure 1.4](images/internet_4.png)
+![Պատկեր 1.4](images/internet_4.png)
 
 Ահա թե ինչպես է, այն աշխատում. Դուք հաղորդագրություններ եք ուղարկում և սպասում պատասխանի: Իհարկե, թղթի և գրիչի փոխարեն օգտագործվում են տվյալների բայթեր, բայց գաղափարը նույնն է:
 
-Instead of addresses with a street name, city, zip code and country name, we use IP addresses. Your computer first asks the DNS (Domain Name System) to translate djangogirls.org into an IP address. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
+Փողոցի, քաղաքի, փոստային կոդի և երկրի անունների փոխարեն մենք օգտագործում ենք IP հասցեներ: Ձեր համակարգիչը նախ խնդրում է DNS- ին (Domain Name System/Դոմեյն անունների համակարգ) djangogirls.org- ը թարգմանել IP հասցեի: Սա գործում է հին հեռախոսների գրքերի նման, որտեղ դուք կարող եք փնտրել այն մարդու անունը, ում հետ ցանկանում եք կապվել, և գտնել նրա հեռախոսահամարը և հասցեն:
 
-When you send a letter, it needs to have certain features to be delivered correctly: an address, a stamp, etc. You also use a language that the receiver understands, right? The same applies to the *data packets* you send to see a website. We use a protocol called HTTP (Hypertext Transfer Protocol).
+Նամակ ուղարկելիս այն պետք է ունենա որոշակի բնութագրեր, որպեսզի այն ճիշտ առաքվի ՝ հասցե, կնիք և այլն: Դուք նաև օգտագործում եք լեզու, որը ստացողը հասկանում է, այնպես չէ՞: Նույնը վերաբերում է *data packets/տվյալների փաթեթներին*, որոնք դուք ուղարկում եք կայքը տեսնելու համար: Մենք օգտագործում ենք HTTP (Hypertext Transfer Protocol) կոչվող արձանագրություն:
 
-So, basically, when you have a website, you need to have a *server* (machine) where it lives. When the *server* receives an incoming *request* (in a letter), it sends back your website (in another letter).
+Հետեւաբար, հիմնականում, երբ կայք ունեք, պետք է ունենաք նաև սերվեր (մեքենա)/*server* (machine), որտեղ այն գտնվում է: Երբ *server/սերվերը* ստանում է մուտքային *request/հարցում* (նամակով), այն հետ է ուղարկում ձեր կայքը (մեկ այլ նամակով):
 
 Since this is a Django tutorial, you might ask what Django does. When you send a response, you don't always want to send the same thing to everybody. It is so much better if your letters are personalized, especially for the person that has just written to you, right? Django helps you with creating these personalized, interesting letters. :)
 
-Enough talk – time to create!
+Բավական է խոսելը ՝ ստեղծագործելու ժամանակն է:
