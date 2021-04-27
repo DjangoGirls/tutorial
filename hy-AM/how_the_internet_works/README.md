@@ -12,17 +12,17 @@
 
 Ինչպես ցանկացած ֆայլ, HTML ֆայլերը նույնպես պետք է պահենք ինչ-որ տեղ մեր կոշտ սկավառակի/hard disk-ի վրա: Ինտերնետի համար մենք օգտագործում ենք հատուկ հզոր համակարգիչներ, որոնք կոչվում են *servers/սերվերներ*: Նրանք չունեն էկրան, մկնիկ կամ ստեղնաշար, քանի որ նրանց հիմնական նպատակը տվյալների պահպանումն ու սպասարկումն է: Այդ պատճառով նրանց անվանում են *servers/սերվեր* , քանի որ դրանք ձեզ ծառայություն են *մատուցում*:
 
-OK, but you want to know how the Internet looks, right?
+Շատ լավ, բայց ուզում եք իմանալ, թե ինչ տեսք ունի ինտերնետը, ճի՞շտ է:
 
-We drew you a picture! It looks like this:
+Մենք նկարեցինք նկար ձեզ համար: Այն այսպիսի տեսք ունի.
 
 ![Figure 1.1](images/internet_1.png)
 
-Looks like a mess, right? In fact it is a network of connected machines (the above-mentioned *servers*). Hundreds of thousands of machines! Many, many kilometers of cables around the world! You can visit a Submarine Cable Map website (http://submarinecablemap.com) to see how complicated the net is. Here is a screenshot from the website:
+Կարծես խառնաշփոթ է, չէ՞: Իրականում դա միացված մեքենաների ցանց է (վերոհիշյալ *servers/սերվերները*): Հարյուր հազարավոր մեքենաներ: Շատ ու շատ կիլոմետրեր ճոպաններ/cables ամբողջ աշխարհում: Կարող եք այցելել սուզանավերի մալուխային քարտեզի/Submarine Cable Map կայք (http://submarinecablemap.com/) ՝ տեսնելու, թե որքան բարդ է ցանցը: Ահա կայքի սքրինշոթը.
 
 ![Figure 1.2](images/internet_3.png)
 
-It is fascinating, isn't it? But it is not possible to have a wire between every machine connected to the Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
+Դա զարմանալի է, այնպես չէ՞: Այնուամենայնիվ, հասկանալի է, որ հնարավոր չէ յուրաքանչյուր մեքենա մետաղալարով միացնել ինտերնետին: So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
 
 It looks like this:
 
