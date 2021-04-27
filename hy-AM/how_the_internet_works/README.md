@@ -6,9 +6,9 @@
 
 Մենք գրազ ենք գալիս, որ դուք ամեն օր ինտերնետ եք օգտագործում: Բայց գիտե՞ք իրականում, թե ինչ է պատահում, երբ ձեր զննարկչի մեջ մուտքագրում եք https://djangogirls.org- ի նման հասցե և սեղմում ` enter `:
 
-The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk -- just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
+Առաջին բանը, որ դուք պետք է հասկանաք, այն է, որ կայքը բաղկացած է կոշտ սկավառակի/ hard disk -ի վրա պահված մի շարք ֆայլերից, ինչպես ձեր ֆիլմերը, երաժշտությունը կամ նկարները: Այնուամենայնիվ, կա մեկ առանձնահատկություն, որը հատուկ է միայն կայքերին. Դրանք պարունակում են համակարգչային կոդ, որը կոչվում է HTML:
 
-If you're not familiar with programming, it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. Web browsers are designed to understand this code, follow its instructions, and present these files that your website is made of, exactly the way you want.
+Եթե ​​դուք ծանոթ չեք ծրագրավորմանը, սկզբում դժվար կլինի հասկանալ HTML- ը, բայց ձեր վեբ բրաուզերները (օրինակ ՝ Chrome, Safari, Firefox և այլն) սիրում են այն: Web browsers are designed to understand this code, follow its instructions, and present these files that your website is made of, exactly the way you want.
 
 As with every file, we need to store HTML files somewhere on a hard disk. For the Internet, we use special, powerful computers called *servers*. They don't have a screen, mouse or a keyboard, because their main purpose is to store data and serve it. That's why they're called *servers* – because they *serve* you data.
 
