@@ -22,19 +22,19 @@
 
 ![Figure 1.2](images/internet_3.png)
 
-Դա զարմանալի է, այնպես չէ՞: Այնուամենայնիվ, հասկանալի է, որ հնարավոր չէ յուրաքանչյուր մեքենա մետաղալարով միացնել ինտերնետին: So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
+Դա զարմանալի է, այնպես չէ՞: Այնուամենայնիվ, հասկանալի է, որ հնարավոր չէ յուրաքանչյուր մեքենա մետաղալարով միացնել ինտերնետին: Այսպիսով, ցանկալի մեքենային հասնելու համար (օրինակ,մեկը https://djangogirls.org որտեղ պահպանվում է), մենք պետք է հարցումը փոխանցենք շատ այլ մեքենաների միջով:
 
-It looks like this:
+Այն պետք է ունենա նման տեսք:
 
 ![Figure 1.3](images/internet_2.png)
 
-Imagine that when you type https://djangogirls.org, you send a letter that says: "Dear Django Girls, I want to see the djangogirls.org website. Send it to me, please!"
+Պատկերացրեք, որ երբ մուտքագրեք https://djangogirls.org, դուք նամակ եք ուղարկում, որում ասվում է. «Հարգելի Django Girls, ես ուզում եմ տեսնել djangogirls.org կայքը: Ուղարկեք այն ինձ, խնդրում եմ»:
 
-Your letter goes to the post office closest to you. Then it goes to another that is a bit nearer to your addressee, then to another, and another until it is delivered at its destination. The only unique thing is that if you send many letters (*data packets*) to the same place, they could go through totally different post offices (*routers*). This depends on how they are distributed at each office.
+Ձեր նամակը գնում է ձեզ ամենամոտ փոստային բաժանմունք: Այնուհետև այն ուղարկվում է մեկ ուրիշին, որը մի փոքր ավելի մոտ է հասցեատիրոջը, իսկ հետո հաջորդին և այլն, մինչև այն հասցվի իր նպատակակետին: Միակ յուրահատկությունն այն է, որ շատ նամակներ (*data packets/տվյալների փաթեթներ *) մեկ հասցեով ուղարկելիս նրանցից յուրաքանչյուրը կարող է անցնել բոլորովին այլ փոստային բաժանմունքների (*routers/երթուղիչների*) միջով: Դա կախված է նրանից, թե ինչպես են դրանք բաշխվում յուրաքանչյուր գրասենյակում:
 
 ![Figure 1.4](images/internet_4.png)
 
-That's how it works - you send messages and you expect some response. Instead of paper and pen you use bytes of data, but the idea is the same!
+Ահա թե ինչպես է, այն աշխատում. Դուք հաղորդագրություններ եք ուղարկում և սպասում պատասխանի: Իհարկե, թղթի և գրիչի փոխարեն օգտագործվում են տվյալների բայթեր, բայց գաղափարը նույնն է:
 
 Instead of addresses with a street name, city, zip code and country name, we use IP addresses. Your computer first asks the DNS (Domain Name System) to translate djangogirls.org into an IP address. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
 
