@@ -45,8 +45,8 @@ Dolny obszar jest Twoim terminalem. Możesz użyć go do wysyłania instrukcji d
 
 #### Glitch.com Cloud IDE
 
-1. Go to [Glitch.com](https://glitch.com/)
-2. Sign up for an account (https://glitch.com/signup) or use your GitHub account if you have one. (See GitHub instructions below.)
+1. Przejdź do [Glitch.com](https://glitch.com/)
+2. Stwóż darmowe konto (https://glitch.com/signup) lub użyj swojego konta GitHub, jeśli je posiadasz. (Zobacz instrukcje GitHub poniżej)
 3. Click *New Project* and choose *hello-webpage*
 4. Click on the Tools dropdown list (at the bottom left side of the window), then on Terminal button to open terminal tab with a prompt like this:
 
