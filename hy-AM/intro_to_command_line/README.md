@@ -266,9 +266,9 @@ This little command will create a folder with the name `practice` on your deskto
 
 * * *
 
-### Exercise!
+### Վարժություն
 
-A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
+Մի փոքր առաջադրանք. Նորաստեղծ `practice/պրակտիկայի` թղթապանակում ստեղծեք պանակ, որը կոչվում է `test`: (Օգտագործեք `cd` և `mkdir` հրահանգները):
 
 #### Լուծում.
 
