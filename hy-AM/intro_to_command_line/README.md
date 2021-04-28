@@ -326,7 +326,7 @@ First, we need to get back to Desktop:
 
 Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-Check where you are:
+Ստուգեք, թե որտեղ եք դուք ՝
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -348,9 +348,9 @@ Check where you are:
 
 <!--endsec-->
 
-Now time to delete the `practice` directory:
+Հիմա ժամանակն է ջնջել `practice` գրացուցակը.
 
-> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
+> ** Ուշադրություն **. `del`, `rmdir` կամ `rm`ֆայլերը ջնջելը անվերադարձ է, այսինքն ՝ *ջնջված ֆայլերը կվերանան ընդմիշտ*!: Այսպիսով, շատ զգույշ եղեք այս հրամանի հետ:
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
@@ -371,7 +371,7 @@ Now time to delete the `practice` directory:
 
 <!--endsec-->
 
-Done! To be sure it's actually deleted, let's check it:
+Կատարած է! Համոզված լինելու համար, որ այն իրականում ջնջված է, եկեք ստուգենք այն.
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -391,9 +391,9 @@ Done! To be sure it's actually deleted, let's check it:
 
 <!--endsec-->
 
-### Exit
+### Ելք
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+Առայժմ վերջ: Այժմ կարող եք ապահով կերպով փակել հրամանի տողը: Եկեք դա անենք հակերային եղանակով, լա՞վ: :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -413,11 +413,11 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--endsec-->
 
-Cool, huh? :)
+Հերիք է, հա՞: :)
 
-## Summary
+## Ամփոփում
 
-Here is a summary of some useful commands:
+Ահա մի քանի օգտակար հրամանների ամփոփ նկարագրություն.
 
 | Command (Windows) | Command (Mac OS / Linux) | Description                | Example                                            |
 | ----------------- | ------------------------ | -------------------------- | -------------------------------------------------- |
@@ -432,9 +432,9 @@ Here is a summary of some useful commands:
 | rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                            |
 | [CMD] /?          | man [CMD]                | get help for a command     | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
 
-These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
+Սրանք ընդամենը հրամաններից մի քանիսն են, որոնք կարող եք գործարկել ձեր հրամանի տողում/command line, բայց այսօր դրանից ավելին չեք օգտագործելու:
 
-If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+Եթե ​​ձեզ հետաքրքրում է, [ss64.com](http://ss64.com) - ը պարունակում է հրամանի ամբողջական հղում բոլոր օպերացիոն համակարգերի համար:
 
 ## Պատրա՞ստ եք
 
