@@ -2,10 +2,10 @@
 
 Կախված Windows- ի ձեր տարբերակից և ստեղնաշարից, հետևյալներից որևէ մեկը պետք է հրամանի պատուհան բացի (գուցե մի քիչ փորձեր կատարեք, բայց բոլոր տարբերակները փորձելու կարիք չկա).
 
-- Go to the Start menu or screen, and enter "Command Prompt" in the search field.
-- Go to Start menu → Windows System → Command Prompt.
-- Go to Start menu → All Programs → Accessories → Command Prompt.
-- Go to the Start screen, hover your mouse in the lower-left corner of the screen, and click the down arrow that appears (on a touch screen, instead flick up from the bottom of the screen). The Apps page should open. Click on Command Prompt in the Windows System section.
+- Գնացեք Սկսել /Start բաժին ընտրացանկից (կամ Start էկրանից), և որոնման տողում մուտքագրեք «Command Prompt»:
+- Անցեք Սկսելու ցանկը/Start menu→Windows System → Command Prompt/ հրամանի տող:
+- Անցեք Start menu /Սկսելու ցանկը → All Programs / Բոլոր ծրագրերը → Accessories/Աքսեսուարներ → Command Prompt /Հրամանի տող:
+- Անցեք Start screen, ձեր մկնիկը տարեք էկրանի ստորին ձախ անկյունի վրա և կտտացրեք այնտեղ հայտնվող դեպի ներքև ուղված սլաքին: (Եթե ունեք սենսորային էկրան, մատը սահեցրեք ներքևից վերև): The Apps page should open. Click on Command Prompt in the Windows System section.
 - Hold the special Windows key on your keyboard and press the "X" key. Choose "Command Prompt" from the pop-up menu.
 - Hold the Windows key and press the "R" key to get a "Run" window. Type "cmd" in the box, and click the OK key.
 
