@@ -2,7 +2,7 @@ Możesz [pominąć tę sekcję](http://tutorial.djangogirls.org/en/installation/
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com)
 
-Cloud IDE jest narzędziem, które pełni funkcję edytora kodu oraz umożliwia dostęp do komputera uruchomionego w internecie, gdzie możesz instalować, pisać oraz uruchamiać programy. Na czas trwania tutoriala Cloud IDE będzie działać jako *komputer lokalny*. Będziesz mogła uruchamiać komendy w terminalu, tak jak inne osoby korzystające z systemu OS X, Ubuntu czy Windows, z tym że Twój terminal będzie podłączony do komputera, który ustawi dla Ciebie Cloud IDE. Here are the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com). Możesz wybrać jedno z poniższych Cloud IDE i postępować zgodnie z instrukcją.
+Cloud IDE jest narzędziem, które pełni funkcję edytora kodu oraz umożliwia dostęp do komputera uruchomionego w internecie, gdzie możesz instalować, pisać oraz uruchamiać programy. Na czas trwania tutoriala Cloud IDE będzie działać jako *komputer lokalny*. Będziesz mogła uruchamiać komendy w terminalu, tak jak inne osoby korzystające z systemu OS X, Ubuntu czy Windows, z tym że Twój terminal będzie podłączony do komputera, który ustawi dla Ciebie Cloud IDE. Oto instrukcje dotyczące różnych Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com). Możesz wybrać jedno z poniższych Cloud IDE i postępować zgodnie z instrukcją.
 
 #### PaizaCloud Cloud IDE
 
@@ -30,18 +30,18 @@ Obecnie Cloud 9 wymaga rejestracji w AWS i wprowadzenia informacji o karcie kred
 4. W Panelu AWS wpisz * Cloud9 * na pasku wyszukiwania i kliknij go
 5. W panelu Cloud 9 kliknij * Utwórz środowisko *
 6. Nazwij go * django-girls *
-7. While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
+7. Podczas konfiguracji wybierz *Utwórz nową instancję dla środowiska (EC2)* dla "Typ Środowiska" i *t2.micro* dla "Typ instancji" (powinien powiedzieć "Kwalifikuje się na poziom darmowy"). Domyślne ustawienie oszczędzania kosztów jest dobre, a pozostałe wartości możesz zachować domyślne.
 8. Kliknij *Next step*
 9. Kliknij *Create Environment*
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+Teraz powinnaś zobaczyć interfejs z bocznym paskiem, duże główne okno z tekstem i małe okno na dole, które wygląda następująco:
 
 {% filename %}bash{% endfilename %}
 
     twojanazwaużytkownika:~/workspace $
     
 
-This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+Dolny obszar jest Twoim terminalem. Możesz użyć go do wysyłania instrukcji do zdalnego komputera Cloud 9. Możesz zmienić rozmiar tego okna, aby je trochę powiększyć.
 
 #### Glitch.com Cloud IDE
 
