@@ -270,7 +270,7 @@ This little command will create a folder with the name `practice` on your deskto
 
 A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
 
-#### Solution:
+#### Լուծում.
 
 <!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
@@ -296,15 +296,15 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Congrats! :)
+Շնորհավորում ենք։
 
 * * *
 
-### Clean up
+### Մաքրել
 
-We don't want to leave a mess, so let's remove everything we did until that point.
+Մենք չենք ուզում խառնաշփոթ թողնել, ուստի եկեք ջնջենք այն ամենը, ինչ ստեղծել ենք մինչև այս պահը:
 
-First, we need to get back to Desktop:
+Նախ, մենք պետք է վերադառնանք Desktop / աշխատասեղան.
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -324,7 +324,7 @@ First, we need to get back to Desktop:
 
 <!--endsec-->
 
-Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+Օգտագործելով ` .. `-ի և ` cd ` - ի հրամանները միասին դուք կարող եք փոխել ընթացիկ գրացուցակը/current directory ծնող գրացուցակի/parent directory (այսինքն ՝ գրացուցակը, որը պարունակում է ձեր ընթացիկ գրացուցակը)
 
 Ստուգեք, թե որտեղ եք դուք ՝
 
