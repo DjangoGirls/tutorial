@@ -9,20 +9,20 @@
 - Ձեր ստեղնաշարի վրա սեղմած պահելով Windows ստեղնը սեղմեք X: Հայտնվող ընտրացանկում ընտրեք «Command Prompt/Հրամանի տող»-ը: 
 - Ձեր ստեղնաշարի վրա սեղմած պահելով Windows ստեղնը սեղմեք "R" ՝ Run պատուհանը վեր հանելու համար: Տողում մուտքագրեք "cmd" և կտտացրեք OK:
 
-![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
+![Մուտքագրեք  "cmd"  "Run"  պատուհանում](../python_installation/images/windows-plus-r.png)
 
-Ավելի ուշ այս ձեռնարկի շրջանակներոըմ ձեզ հարկավոր է լինելու ունենալ միևնույն ժամանակ երկու բաց հրամանի պատուհան: However, on some versions of Windows, if you already have one command window open and you try to open a second one using the same method, it will instead point you to the command window you already have open. Try it now on your computer and see what happens! If you only get one command window, try one of the other methods in the list above. At least one of them should result in a new command window being opened.
+Ավելի ուշ այս ձեռնարկի շրջանակներոըմ ձեզ հարկավոր է լինելու ունենալ միևնույն ժամանակ երկու բաց հրամանի պատուհան: Այնուամենայնիվ, Windows- ի որոշ տարբերակների դեպքում, եթե դուք արդեն ունեք մեկ բաց հրամանի պատուհան/command window և փորձում եք բացել երկրորդը նույն մեթոդով, այն ձեզ կուղարկի դեպի արդեն բացված հրամանի պատուհանը: Փորձեք դա ձեր համակարգչի վրա և տեսեք, թե ինչ է կատարվում: Եթե ​​միայն մեկ հրամանի պատուհան եք ստանում, փորձեք վերը նշված ցուցակի մյուս մեթոդներից որևէ մեկը: Դրանցից գոնե մեկը պետք է հանգեցնի նոր հրամանի պատուհանի բացմանը:
 
 <!--endsec-->
 
 <!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
 
-Go to Applications → Utilities → Terminal.
+Գնացեք Applications → Utilities/Կոմունալ ծառայություններ → Terminal /Տերմինալ: 
 
 <!--endsec-->
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-It's probably under Applications → Accessories → Terminal, or Applications → System → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
+Հրամանի տողը, հավանաբար, թաքնված է հետևյալում ՝ Applications → Accessories → Terminal, or Applications → System → Terminal, բայց դա կարող է կախված լինել ձեր համակարգից: Եթե ​​չկարողանաք գտնել, Google- ը կօգնի: :)
 
 <!--endsec-->
