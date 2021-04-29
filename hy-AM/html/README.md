@@ -1,16 +1,16 @@
-# Introduction to HTML
+# HTML- ի ներածություն
 
-What's a template, you may ask?
+Կարո՞ղ եք հարցնել, թե ի՞նչ ձևանմուշ է:
 
-A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter because although each letter might contain a different message and be addressed to a different person, they will share the same format.
+Կաղապարը ֆայլ է, որը մենք կարող ենք կրկին օգտագործել `տարբեր տեղեկատվություն կայուն ձևաչափով ներկայացնելու համար. Օրինակ, դուք կարող եք օգտագործել ձևանմուշ, որը կօգնի ձեզ նամակ գրել, քանի որ չնայած յուրաքանչյուր նամակ կարող է պարունակել տարբեր հաղորդագրություն և հասցեագրված լինել այլ անձի: , նրանք կկիսվեն նույն ձևաչափով:
 
-A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, **How the Internet works**).
+Django ձևանմուշի ձևաչափը նկարագրված է HTML կոչվող լեզվով (դա HTML- ն է, որը մենք նշել ենք առաջին գլխում ՝ ** How the Internet works (Ինչպես է աշխատում ինտերնետը) **):
 
-## What is HTML?
+## Ի՞նչ է HTML- ը:
 
-HTML is a code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
+HTML- ը ծածկագիր է, որը մեկնաբանվում է ձեր վեբ զննարկչի կողմից, ինչպիսիք են Chrome- ը, Firefox- ը կամ Safari- ն `օգտագործողի համար վեբ էջ ցուցադրելու համար:
 
-HTML stands for "HyperText Markup Language". **HyperText** means it's a type of text that supports hyperlinks between pages. **Markup** means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with **tags**, each one starting with `<` and ending with `>`. These tags represent markup **elements**.
+HTML- ը նշանակում է «HyperText Markup Language»: ** HyperText ** նշանակում է, որ դա տեքստի տեսակ է, որն աջակցում է էջերի միջև հիպերհղումները: ** Markup (Նշում) ** նշանակում է, որ մենք վերցրել ենք մի փաստաթուղթ և նշել այն կոդով, որպեսզի ինչ-որ բան ասենք (այս դեպքում ՝ զննարկիչ), թե ինչպես մեկնաբանել էջը: HTML կոդը կառուցված է ** tags (պիտակներով) **, յուրաքանչյուրը սկսվում է `<` - ով և ավարտվում `>` - ով: Այս tag-ները (պիտակները) ներկայացնում են markup (մակնշման) ** element-ներ(տարրեր) **:
 
 ## Your first template!
 
