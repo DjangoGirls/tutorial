@@ -110,19 +110,19 @@ HTML- ը նշանակում է «HyperText Markup Language»: ** HyperText ** ն
 * `<em> տեքստը </em>` ընդգծում է ձեր տեքստը
 * `<strong> տեքստը </strong>` խիստ ընդգծում է ձեր տեքստը
 * `<br>` անցնում է մեկ այլ տողի (br- ի ներսում ոչինչ չես դնի, և փակիչ պիտակ չկա)
-* `<a href="https://djangogirls.org">link</a>` creates a link
-* `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
-* `<div></div>` defines a section of the page
-* `<nav></nav>` defines a set of navigation links
-* `<article></article>` specifies independent, self-contained content
-* `<section></section>` defines a section in a document
-* `<header></header>` specifies a header for a document or section
-* `<main></main>` specifies the main content of a document
+* `<a href="https://djangogirls.org"> link-ը (հղումը) </a>` ստեղծում է link-ը (հղումը)
+* `<ul> <li> առաջին նյութը </li> <li> երկրորդ կետը </li> </ul>` կազմում է ցուցակ, ինչպես այս մեկը:
+* `<div> </div>` սահմանում է էջի մի հատված
+* `<nav> </nav>` սահմանում է նավիգացիոն հղումների շարք
+* `<article> </article>` սահմանում է անկախ, ինքնամփոփ բովանդակություն
+* `<section> </section>` փաստաթղթում բաժին է սահմանում 
+* `<header> </header>` նշանակում է փաստաթղթի կամ բաժնի վերնագիր
+* `<main> </main>` սահմանում է փաստաթղթի հիմնական բովանդակությունը
 * `<aside></aside>` defines some content aside from the content it is placed in (like a sidebar)
-* `<footer></footer>` defines a footer for a document or section
-* `<time></time>` defines a specific time (or datetime)
+* `<footer> </footer>` սահմանում է փաստաթղթի կամ բաժնի տողատակ
+* `<time> </time>` սահմանում է որոշակի ժամանակ (կամ տվյալների ժամանակը)
 
-Here's an example of a full template, copy and paste it into `blog/templates/blog/post_list.html`:
+Ահա ամբողջական ձևանմուշի օրինակ, պատճենեք և տեղադրեք այն ` blog/templates/blog/post_list.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -152,10 +152,10 @@ Here's an example of a full template, copy and paste it into `blog/templates/blo
 </html>
 ```
 
-We've created one `header` section and two `article` section here.
+Մենք այստեղ ստեղծել ենք մեկ ` header (վերնագիր) ` և երկու ` artcicle (հոդված) ` բաժիններ:
 
-* The `header` element contains the title of our blog – it's a heading and a link
-* The two `article` elements contain our blog posts with a published date in a `time` element, a `h2` element with a post title that is clickable and a `p` (paragraph) element for text of our blog post.
+* ` header (վերնագիր) ` տարրը պարունակում է մեր բլոգի վերնագիրը. Դա վերնագիր է և link
+* ` article-ի (հոդվածի) ` երկու տարրերը պարունակում են մեր բլոգի հաղորդագրությունները հրապարակված ամսաթվով ` ժամանակ ` տարրում, ` h2 ` տարրը `գրառման վերնագրով, որը սեղմված է և ` p ` (paragraph/ պարբերություն) տարր `մեր բլոգի գրառման տեքստի համար:
 
 It gives us this effect:
 
