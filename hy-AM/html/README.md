@@ -63,7 +63,7 @@ HTML- ը նշանակում է «HyperText Markup Language»: ** HyperText ** ն
 
 Յուրաքանչյուր HTML էջ բաժանվում է նաև երկու element-երի ** head ** և ** body **
 
-* ** head-ը ** element է, որը պարունակում է տեղեկություններ էկրանին չներկայացվող փաստաթղթի մասին:
+* ** head-ը ** էլեմենտ է, որը պարունակում է տեղեկություններ էկրանին չներկայացվող փաստաթղթի մասին:
 
 * ** body-ին ** էլեմենտ է, որը պարունակում է այն ամենը, ինչ ցուցադրվում է որպես վեբ էջի մաս:
 
@@ -92,23 +92,24 @@ HTML- ը նշանակում է «HyperText Markup Language»: ** HyperText ** ն
 
 Նկատեք, թե զննարկիչը ինչպե՞ս է հասկացել, որ "Ola's blog"( «Օլայի բլոգը») ձեր էջի վերնագիրն է: Այն մեկնաբանել է `<title> Օla's blog </title>` և տեքստը դրել ձեր զննարկչի վերնագրի տողում (այն կօգտագործվի նաև էջանիշների համար և այլն):
 
-Probably you have also noticed that each opening tag is matched by a *closing tag*, with a `/`, and that elements are *nested* (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
+Հավանաբար, դուք նաև նկատել եք, որ յուրաքանչյուր բացող պիտակ համընկնում է * closing tag (փակող պիտակ) * - ի հետ, ` / ` - ով, և որ էլեմենտ * nested (տեղադրված են) * (այսինքն ՝ կարող եք փակեք որոշակի tag (պիտակ), մինչև որ փակվեն բոլոր ներսում գտնվողները):
 
-It's like putting things into boxes. You have one big box, `<html></html>`; inside it there is `<body></body>`, and that contains still smaller boxes: `<p></p>`.
+Դա նման է իրերը տուփերի մեջ դնելուն: Դուք ունեք մեկ մեծ տուփ ՝ `<html> </html>`; դրա ներսում կա `<body> </body>`, և դա պարունակում է դեռ ավելի փոքր տուփեր. `<p> </p>`
 
-You need to follow these rules of *closing* tags, and of *nesting* elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
+Դուք պետք է պահպանեք պիտակների* closing (փակման) * և * nesting(բնադրման)* տարրերի այս կանոնները. Եթե դա չես անում, զննարկիչը չի կարողանա դրանք ճիշտ մեկնաբանել, և ձեր էջը կցուցադրվի սխալ
 
-## Customize your template
+## Անհատականացրեք ձեր ձևանմուշը
 
-You can now have a little fun and try to customize your template! Here are a few useful tags for that:
+Այժմ կարող եք մի փոքր զվարճանալ և փորձել հարմարեցնել ձեր ձևանմուշը: Ահա դրա համար մի քանի օգտակար tags (պիտակ):
 
-* `<h1>A heading</h1>` for your most important heading
-* `<h2>A sub-heading</h2>` for a heading at the next level
-* `<h3>A sub-sub-heading</h3>` …and so on, up to `<h6>`
-* `<p>A paragraph of text</p>`
-* `<em>text</em>` emphasizes your text
-* `<strong>text</strong>` strongly emphasizes your text
-* `<br>` goes to another line (you can't put anything inside br and there's no closing tag)
+* `<h1> A heading (Վերնագիր) </h1>` ձեր ամենակարևոր վերնագրի համար
+* `<h2> sub-heading (ենթավերնագիր) </h2>`Հաջորդ մակարդակի վերնագրի համար
+* Նույնիսկ ավելի փոքր`<h3> Ենթավերնագիր </h3>`… և այլն, մինչև `<h6>`
+* `
+<p> Տեքստի մի պարբերություն </p>`
+* `<em> տեքստը </em>` ընդգծում է ձեր տեքստը
+* `<strong> տեքստը </strong>` խիստ ընդգծում է ձեր տեքստը
+* `<br>` անցնում է մեկ այլ տողի (br- ի ներսում ոչինչ չես դնի, և փակիչ պիտակ չկա)
 * `<a href="https://djangogirls.org">link</a>` creates a link
 * `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
 * `<div></div>` defines a section of the page
