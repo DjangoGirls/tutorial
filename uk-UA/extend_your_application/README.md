@@ -6,13 +6,13 @@
 
 Час попрактикуватись!
 
-The first thing we need in our blog is, obviously, a page to display one post, right?
+Перша річ, яка має бути у нашому блозі - це, очевидно, сторінка, що відображує один пост, правильно?
 
-We already have a `Post` model, so we don't need to add anything to `models.py`.
+Ми вже маємо модель </code>посту`, тому не потрібно нічого додавати до <code>models.py`.
 
 ## Створюємо в шаблоні посилання на сторінку посту
 
-We will start with adding a link inside `blog/templates/blog/post_list.html` file. Open it in the code editor, and so far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+Ми розпочнемо із додавання посилання всередині `blog/templates/blog/post_list.html` файлу. Відкрийте його в редакторі коду і поки що воно має виглядати так: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -30,7 +30,7 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
 {% endblock %}
 ```
 
-{% raw %}We want to have a link from a post's title in the post list to the post's detail page. Let's change `<h2><a href="">{{ post.title }}</a></h2>` so that it links to the post's detail page:{% endraw %}
+{% raw %}Ми хочемо, щоб в списку постів в заголовку було посилання на сторінку детальної інформації про пост. Давайте змінимо `<h2><a href="">{{ post.title }}</a></h2>` так, щоб було посилання на сторінку з детальною інформацією про пост:{% endraw %}
 
 {% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 
@@ -38,7 +38,7 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
 <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
 ```
 
-{% raw %}Time to explain the mysterious `{% url 'post_detail' pk=post.pk %}`. As you might suspect, the `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!{% endraw %}
+{% raw %}Час пояснити дивний запис `{% url 'post_detail' pk=post.pk %}`. Як і очікувалось, `{% %}` означає, що ми використовуємо шаблонні теги Django. На цей раз ми використаємо один, який створить адресу URL для нас! 
 
 The `post_detail` part means that Django will be expecting a URL in `blog/urls.py` with name=post_detail
 
