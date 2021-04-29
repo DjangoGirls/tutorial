@@ -2,9 +2,9 @@
 
 # Розширте свою програму
 
-We've already completed all the different steps necessary for the creation of our website: we know how to write a model, URL, view and template. We also know how to make our website pretty.
+Ми вже завершили всі етапи необхідні для створення нашого сайту: ми знаємо як написати модель, адресу URL, вигляд та шаблон. Ми також знаємо як зробити сайт привабливим.
 
-Time to practice!
+Час попрактикуватись!
 
 The first thing we need in our blog is, obviously, a page to display one post, right?
 
