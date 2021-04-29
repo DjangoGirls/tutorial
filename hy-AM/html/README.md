@@ -35,7 +35,7 @@ HTML- ը նշանակում է «HyperText Markup Language»: ** HyperText ** ն
 
 Այլևս ոչ մի սխալ: Շնորհավորում եմ :) Այնուամենայնիվ, ձեր կայքը իրականում ոչինչ չի հրապարակում, բացի դատարկ էջից, քանի որ ձեր ձևանմուշն էլ է դատարկ: Մենք պետք է դա շտկենք:
 
-Open the new file in the code editor, and add the following:
+Բացեք նոր ֆայլը ծածկագրի խմբագրում և ավելացրեք հետևյալը.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -49,15 +49,15 @@ Open the new file in the code editor, and add the following:
 </html>
 ```
 
-So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
+Այսպիսով, ինչպես է ձեր կայքը այժմ նայում: Այցելեք այն ՝ պարզելու համար ՝ http://127.0.0.1:8000/
 
 ![Figure 11.2](images/step3.png)
 
-It worked. Nice work there! :)
+Դա աշխատեց. Հաճելի աշխատանք այնտեղ: :)
 
-* The line `<!DOCTYPE html>` is not a HTML tag. It only declares the document type. Here, it informs the browser that document type is [HTML5](https://html.spec.whatwg.org/#the-doctype). This is always the beginning of any HTML5 file.
-* The most basic tag, `<html>`, is always the beginning of html content and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
-* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
+* `<! DOCTYPE html >` տողը HTML պիտակ չէ: Այն հայտարարում է միայն փաստաթղթի տեսակը: Այստեղ այն զննարկչին տեղեկացնում է, որ փաստաթղթի տեսակը [ HTML5 ](https://html.spec.whatwg.org/#the-doctype) է: Սա միշտ էլ ցանկացած HTML5 ֆայլի սկիզբ է:
+* Ամենահիմնական թեգը ՝ `<html>`, միշտ html բովանդակության սկիզբն է, և `</html> ` միշտ վերջը: Ինչպես տեսնում եք, կայքի ամբողջ բովանդակությունը անցնում է `<html>` սկզբի և եզրափակիչ թեգի միջև`</html>`
+* `<p>` պիտակ է պարբերության տարրերի համար; `</p> ` փակվում է յուրաքանչյուր պարբերություն
 
 ## Head and body
 
