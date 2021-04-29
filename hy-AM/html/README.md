@@ -219,10 +219,10 @@ HTML- ը նշանակում է «HyperText Markup Language»: ** HyperText ** ն
     [...]
     
 
-Դուք պետք է փոխարինեք `<your-pythonanywhere-domain>` ձեր իրական PythonAnywhere ենթադոմեյն անունով ՝ առանց անկյունային փակագծերի ( < > ): Ձեր ենթատիրույթի անունը սովորաբար ձեր PythonAnywhere օգտագործողի անունն է, բայց որոշ դեպքերում այն ​​կարող է մի փոքր այլ լինել (օրինակ, եթե ձեր օգտագործողի անունը մեծատառեր է պարունակում): So if this command doesn't work, use the `ls` (list files) command to find your actual subdomain/folder name, and then `cd` to there.
+Դուք պետք է փոխարինեք `<your-pythonanywhere-domain>` ձեր իրական PythonAnywhere ենթադոմեյն անունով ՝ առանց անկյունային փակագծերի ( < > ): Ձեր ենթատիրույթի անունը սովորաբար ձեր PythonAnywhere օգտագործողի անունն է, բայց որոշ դեպքերում այն ​​կարող է մի փոքր այլ լինել (օրինակ, եթե ձեր օգտագործողի անունը մեծատառեր է պարունակում): Այսպիսով, եթե այս հրամանը չի գործում, օգտագործեք ` ls ` list files(ցուցակի ֆայլեր) հրամանը ՝ գտնելու ձեր իրական ենթադոմեյնը / թղթապանակի անունը, ապա ` cd ` այնտեղ:
 
-Now watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **"Files" page** and view your code on PythonAnywhere (you can reach other PythonAnywhere pages from the menu button on the console page).
+Այժմ դիտեք ձեր կոդի ներբեռնումը: Եթե ​​ուզում եք ստուգել, ​​թե արդյոք այն տեղ է հասել, կարող եք անցնել ** "Files" («Ֆայլեր») էջը ** և ձեր կոդը դիտել PythonAnywhere- ում (վահանակի էջի ընտրացանկի կոճակից կարող եք հասնել PythonAnywhere- ի այլ էջերի):
 
-* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
+* Վերջապես, անցեք [ "Web" («Վեբ») էջ ](https://www.pythonanywhere.com/web_app_setup/) և սեղմեք ** Reload (Վերաբեռնում) ** ձեր վեբ հավելվածում:
 
-Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
+Ձեր թարմացումը պետք է ուղիղ եթերում լինի: Գնացեք և թարմացրեք ձեր կայքը զննարկչում: Փոփոխությունները պետք է տեսանելի լինեն: :)
