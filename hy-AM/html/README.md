@@ -59,9 +59,9 @@ HTML- ը նշանակում է «HyperText Markup Language»: ** HyperText ** ն
 * Ամենահիմնական թեգը ՝ `<html>`, միշտ html բովանդակության սկիզբն է, և `</html> ` միշտ վերջը: Ինչպես տեսնում եք, կայքի ամբողջ բովանդակությունը անցնում է `<html>` սկզբի և եզրափակիչ թեգի միջև`</html>`
 * `<p>` պիտակ է պարբերության տարրերի համար; `</p> ` փակվում է յուրաքանչյուր պարբերություն
 
-## Head and body
+## Գլուխը և մարմինը
 
-Each HTML page is also divided into two elements: **head** and **body**.
+Յուրաքանչյուր HTML էջ բաժանվում է նաև երկու element-երի ** head ** և ** body **
 
 * **head** is an element that contains information about the document that is not displayed on the screen.
 
