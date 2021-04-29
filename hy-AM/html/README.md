@@ -157,58 +157,58 @@ HTML- ը նշանակում է «HyperText Markup Language»: ** HyperText ** ն
 * ` header (վերնագիր) ` տարրը պարունակում է մեր բլոգի վերնագիրը. Դա վերնագիր է և link
 * ` article-ի (հոդվածի) ` երկու տարրերը պարունակում են մեր բլոգի հաղորդագրությունները հրապարակված ամսաթվով ` ժամանակ ` տարրում, ` h2 ` տարրը `գրառման վերնագրով, որը սեղմված է և ` p ` (paragraph/ պարբերություն) տարր `մեր բլոգի գրառման տեքստի համար:
 
-It gives us this effect:
+Դա մեզ տալիս է այս էֆեկտը.
 
 ![Figure 11.4](images/step6.png)
 
-Yaaay! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
+Սա շատ լավ է! Բայց մինչ այժմ մեր ձևանմուշը ցուցադրում է միայն ** նույն տեղեկատվությունը ** մինչդեռ ավելի վաղ մենք խոսում էինք ձևանմուշների մասին, որոնք թույլ էին տալիս մեզ ** տարբեր ** տեղեկատվություն ցուցադրել ** նույն ձևաչափով **
 
-What we really want to do is display real posts added in our Django admin – and that's where we're going next.
+Այն, ինչ մենք իսկապես ուզում ենք անել, մեր Django ադմինիստրատորի մեջ ավելացված իրական հաղորդագրությունների ցուցադրումն է, և ահա թե ուր ենք գնալու:
 
-## One more thing: deploy!
+## Եվս մեկ բան. Տեղակայել:
 
-It'd be good to see all this out and live on the Internet, right? Let's do another PythonAnywhere deploy:
+Լավ կլիներ այս ամենը տեսնել և ապրել ինտերնետում, այնպես չէ՞: Եկեք կատարենք մեկ այլ PythonAnywhere տեղակայում.
 
-### Commit, and push your code up to GitHub
+### Commit (Պարտավորվել) և push (ուղարկել) ձեր կոդը դեպի GitHub
 
-First off, let's see what files have changed since we last deployed (run these commands locally, not on PythonAnywhere):
+Նախ և առաջ, եկեք տեսնենք, թե ինչ ֆայլեր են փոխվել վերջին անգամ տեղակայելուց հետո (գործադրեք այս հրամանները տեղական, այլ ոչ թե PythonAnywhere- ում).
 
 {% filename %}command-line{% endfilename %}
 
     $ git status
     
 
-Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes in this directory:
+Համոզվեք, որ գտնվում եք ` djangogirls ` գրացուցակում, և եկեք ասենք, որ ` git ` ներառի այս փոփոխությունների բոլոր փոփոխությունները.
 
 {% filename %}command-line{% endfilename %}
 
     $ git add .
     
 
-Before we upload all the files, let's check what `git` will be uploading (all the files that `git` will upload should now appear in green):
+Բոլոր ֆայլերը վերբեռնելուց առաջ եկեք ստուգենք, թե ինչ է վերբեռնելու համար ` git ` (բոլոր ֆայլերը, որոնք կբեռնեն ` git `, այժմ պետք է հայտնվեն կանաչ գույնով).
 
 {% filename %}command-line{% endfilename %}
 
     $ git status
     
 
-We're almost there, now it's time to tell it to save this change in its history. We're going to give it a "commit message" where we describe what we've changed. You can type anything you'd like at this stage, but it's helpful to type something descriptive so that you can remember what you've done in the future.
+Մենք համարյա այնտեղ ենք, հիմա ժամանակն է ասել, որ փրկի իր պատմության այս փոփոխությունը: Մենք դրան տալու ենք "commit message" («պարտավորության հաղորդագրություն»), որտեղ նկարագրում ենք, թե ինչ ենք փոխել: Այս փուլում կարող եք մուտքագրել այն ամենը, ինչ կցանկանաք, բայց օգտակար է նկարագրական ինչ-որ բան մուտքագրել, որպեսզի հետագայում կարողանաք հիշել ձեր արածը:
 
 {% filename %}command-line{% endfilename %}
 
     $ git commit -m "Changed the HTML for the site."
     
 
-> **Note** Make sure you use double quotes around the commit message.
+> ** Նշում ** Համոզվեք, որ կրկնակի գնանշումներ եք օգտագործում կատարած հաղորդագրության շուրջ:
 
-Once we've done that, we upload (push) our changes up to GitHub:
+Դա անելուց հետո մենք մեր փոփոխությունները վերբեռնում ենք (մղում) մինչև GitHub:
 
 {% filename %}command-line{% endfilename %}
 
     $ git push
     
 
-### Pull your new code down to PythonAnywhere, and reload your web app
+### Քաշեք ձեր նոր կոդը PythonAnywhere վայր և ներքաշեք ձեր վեբ ծրագիրը
 
 * Open up the [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one). Then, run:
 
@@ -219,7 +219,7 @@ Once we've done that, we upload (push) our changes up to GitHub:
     [...]
     
 
-You'll need to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain name, without the angle-brackets. Your subdomain name is normally your PythonAnywhere user name, but in some cases it might be a bit different (such as if your user name contains capital letters). So if this command doesn't work, use the `ls` (list files) command to find your actual subdomain/folder name, and then `cd` to there.
+Դուք պետք է փոխարինեք `<your-pythonanywhere-domain>` ձեր իրական PythonAnywhere ենթադոմեյն անունով ՝ առանց անկյունային փակագծերի ( < > ): Ձեր ենթատիրույթի անունը սովորաբար ձեր PythonAnywhere օգտագործողի անունն է, բայց որոշ դեպքերում այն ​​կարող է մի փոքր այլ լինել (օրինակ, եթե ձեր օգտագործողի անունը մեծատառեր է պարունակում): So if this command doesn't work, use the `ls` (list files) command to find your actual subdomain/folder name, and then `cd` to there.
 
 Now watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **"Files" page** and view your code on PythonAnywhere (you can reach other PythonAnywhere pages from the menu button on the console page).
 
