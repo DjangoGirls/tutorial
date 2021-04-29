@@ -63,13 +63,13 @@ HTML- ը նշանակում է «HyperText Markup Language»: ** HyperText ** ն
 
 Յուրաքանչյուր HTML էջ բաժանվում է նաև երկու element-երի ** head ** և ** body **
 
-* **head** is an element that contains information about the document that is not displayed on the screen.
+* ** head-ը ** element է, որը պարունակում է տեղեկություններ էկրանին չներկայացվող փաստաթղթի մասին:
 
-* **body** is an element that contains everything else that is displayed as part of the web page.
+* ** body-ին ** էլեմենտ է, որը պարունակում է այն ամենը, ինչ ցուցադրվում է որպես վեբ էջի մաս:
 
-We use `<head>` to tell the browser about the configuration of the page, and `<body>` to tell it what's actually on the page.
+Մենք օգտագործում ենք `<head>` ՝ զննարկիչին էջի կազմաձևման մասին պատմելու համար, և `<body>` ՝ պատմելու համար, թե իրականում որն է էջում:
 
-For example, you can put a web page title element inside the `<head>`, like this:
+Օրինակ, `<head>` - ի ներսում կարող եք տեղադրել վեբ էջի վերնագրի էլեմենտ, ինչպես հետևյալը.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -86,11 +86,11 @@ For example, you can put a web page title element inside the `<head>`, like this
 </html>
 ```
 
-Save the file and refresh your page.
+Պահեք (save) ֆայլը և թարմացրեք ձեր էջը:
 
 ![Figure 11.3](images/step4.png)
 
-Notice how the browser has understood that "Ola's blog" is the title of your page? It has interpreted `<title>Ola's blog</title>` and placed the text in the title bar of your browser (it will also be used for bookmarks and so on).
+Նկատեք, թե զննարկիչը ինչպե՞ս է հասկացել, որ "Ola's blog"( «Օլայի բլոգը») ձեր էջի վերնագիրն է: Այն մեկնաբանել է `<title> Օla's blog </title>` և տեքստը դրել ձեր զննարկչի վերնագրի տողում (այն կօգտագործվի նաև էջանիշների համար և այլն):
 
 Probably you have also noticed that each opening tag is matched by a *closing tag*, with a `/`, and that elements are *nested* (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
 
