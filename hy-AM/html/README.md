@@ -16,24 +16,24 @@ HTML- ը նշանակում է «HyperText Markup Language»: ** HyperText ** ն
 
 Կաղապար ստեղծել նշանակում է ձևանմուշի ֆայլ ստեղծել: Ամեն ինչ ֆայլ է, չէ՞: Դուք հավանաբար դա արդեն նկատել եք:
 
-Ձևանմուշները պահվում են ` blog/templates/blog` գրացուցակում: Այսպիսով, նախ ստեղծեք ` template-ներ (կաղապարներ) ` կոչվող գրացուցակ ձեր բլոգի գրացուցակի ներսում: Then create another directory called `blog` inside your templates directory:
+Ձևանմուշները պահվում են ` blog/templates/blog` գրացուցակում: Այսպիսով, նախ ստեղծեք ` template-ներ (կաղապարներ) ` կոչվող գրացուցակ ձեր բլոգի գրացուցակի ներսում: Դրանից հետո ստեղծեք մեկ այլ գրացուցակ, որը կոչվում է ` blog` ձեր ձևանմուշների գրացուցակում.
 
     blog
     └───templates
         └───blog
     
 
-(You might wonder why we need two directories both called `blog` – as you will discover later, this is a useful naming convention that makes life easier when things start to get more complicated.)
+(Կարող եք զարմանալ, թե ինչու են մեզ հարկավոր երկու գրացուցակներ, որոնք կոչվում են ` blog`, ինչպես կիմանաք ավելի ուշ, սա անվանակոչման օգտակար պայմանագիր է, որը կյանքն ավելի է հեշտացնում, երբ ամեն ինչ սկսում է բարդանալ:
 
-And now create a `post_list.html` file (just leave it blank for now) inside the `blog/templates/blog` directory.
+Եվ հիմա ստեղծեք ` post_list.html ` ֆայլ (պարզապես թողեք այն դատարկ) առայժմ `blog/templates/blog ` գրացուցակի ներսում:
 
-See how your website looks now: http://127.0.0.1:8000/
+Տեսեք, թե ինչպես է ձեր կայքը այժմ նայում. Http://127.0.0.1:8000/
 
-> If you still have an error `TemplateDoesNotExist`, try to restart your server. Go to the command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
+> Եթե ​​դեռ սխալ ունեք ` TemplateDoesNotExist ` - ը, փորձեք վերագործարկել ձեր սերվերը: Անցեք հրամանի տող, դադարեցրեք սերվերը ՝ Ctrl + C (Control և C ստեղները միասին) սեղմելով և այն նորից սկսեք ՝ գործարկելով ` python manage.py runserver ` command-ը (հրամանը):
 
 ![Figure 11.1](images/step1.png)
 
-No error anymore! Congratulations! :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
+Այլևս ոչ մի սխալ: Շնորհավորում եմ :) Այնուամենայնիվ, ձեր կայքը իրականում ոչինչ չի հրապարակում, բացի դատարկ էջից, քանի որ ձեր ձևանմուշն էլ է դատարկ: Մենք պետք է դա շտկենք:
 
 Open the new file in the code editor, and add the following:
 
