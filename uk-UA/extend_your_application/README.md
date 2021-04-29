@@ -44,17 +44,17 @@
 
 А як щодо `pk=post.pk`? `pk` - це скорочення від первинного ключа, що є унікальним ідентифікатором для кожного запису в базі даних. Кожна модель Django має поле, яке виступає як первинний ключ і будь-яку іншу назву воно маже мати, це також може називатися "pk". Тому що ми не вказали основного ключа в моделі `поста`, Django створює одне для нас (за замовчуванням, поле з назвою "id", що збільшується на усі записи, наприклад 1,2,3) і додає це поле в кожну з наших записів. Ми маємо доступ до первинного ключа, записуючи `post.pk`, так само як ми отримуємо доступ до інших полів (`назва`,`автор` і т.д.) у нашому об'єкті `пост`!
 
-Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
+Тепер, коли ми переходимо до http://127.0.0.1:8000/, ми отримуємо помилку (як і оікувалось, оскільки у нас немає адреси URL або потрібного *вигляду* для `post_detail`. Це буде виглядати наступним чином:
 
 ![NoReverseMatch error](images/no_reverse_match2.png)
 
 ## Створюєм адресу URL для деталей запису
 
-Let's create a URL in `urls.py` for our `post_detail` *view*!
+Давайте створимо адресу URL на `urls.py` для нашого *вигляду* `post_detail`!
 
-We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
+Ми хочемо, щоб наш перший пост був доступний за такою адресою **URL**: http://127.0.0.1:8000/post/1/ 
 
-Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Open the `blog/urls.py` file in the code editor, and add the line `path('post/<int:pk>/', views.post_detail, name='post_detail'),` so that the file looks like this:
+Давайте створимо адресу URL в файлі `blog/urls.py` і вкажемо Django на *вигляд* з назвою `post_detail`, який буде відображати пост цілком. Відкрийте файл `blog/urls.py` в редакторі коду і додайте рядок `path('post/<int:pk>/', views.post_detail, name='post_detail'),` так щоб файл виглядав так:
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
@@ -68,7 +68,7 @@ urlpatterns = [
 ]
 ```
 
-This part `post/<int:pk>/` specifies a URL pattern – we will explain it for you:
+Ця частина `post<int:pk>/` визначає шаблон адреси URL - ми пояснимо це вам:
 
 - `post/` means that the URL should begin with the word **post** followed by a **/**. So far so good.
 - `<int:pk>` – this part is trickier. It means that Django expects an integer value and will transfer it to a view as a variable called `pk`.
