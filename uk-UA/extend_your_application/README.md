@@ -40,9 +40,9 @@
 
 {% raw %}Час пояснити дивний запис `{% url 'post_detail' pk=post.pk %}`. Як і очікувалось, `{% %}` означає, що ми використовуємо шаблонні теги Django. На цей раз ми використаємо один, який створить адресу URL для нас! 
 
-The `post_detail` part means that Django will be expecting a URL in `blog/urls.py` with name=post_detail
+`post_detail` частина означає, що Django буде очікувати адресу URL у `blog/urls.py` з назвою=post_detail
 
-And how about `pk=post.pk`? `pk` is short for primary key, which is a unique identifier for each record in a database. Every Django model has a field which serves as its primary key, and whatever other name it has, it can also be referred to as "pk". Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a field named "id" holding a number that increases for each record, i.e. 1, 2, 3) and adds it as a field to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
+А як щодо `pk=post.pk`? `pk` - це скорочення від первинного ключа, що є унікальним ідентифікатором для кожного запису в базі даних. Кожна модель Django має поле, яке виступає як первинний ключ і будь-яку іншу назву воно маже мати, це також може називатися "pk". Тому що ми не вказали основного ключа в моделі `поста`, Django створює одне для нас (за замовчуванням, поле з назвою "id", що збільшується на усі записи, наприклад 1,2,3) і додає це поле в кожну з наших записів. Ми маємо доступ до первинного ключа, записуючи `post.pk`, так само як ми отримуємо доступ до інших полів (`назва`,`автор` і т.д.) у нашому об'єкті `пост`!
 
 Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
 
