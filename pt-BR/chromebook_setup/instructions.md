@@ -46,9 +46,9 @@ Essa janela na parte inferior é o seu terminal. Você pode usá-la para enviar 
 #### Glitch.com Cloud IDE
 
 1. Go to [Glitch.com](https://glitch.com/)
-2. Sign up for an account (https://glitch.com/signup) or use your GitHub account if you have one. (See GitHub instructions below.)
-3. Click *New Project* and choose *hello-webpage*
-4. Click on the Tools dropdown list (at the bottom left side of the window), then on Terminal button to open terminal tab with a prompt like this:
+2. Crie uma conta (https://glitch.com/signup) ou use a sua conta do GitHub se tiver uma. (Veja instruções abaixo)
+3. Clique * Novo projeto* e escolha*hello-webpage*
+4. Clique na lista suspensa de Ferramentas (no lado esquerdo inferior da janela), em seguida clique no botão Terminal para abrir a aba terminal com um prompt assim:
 
 {% filename %}Terminal{% endfilename %}
 
@@ -91,7 +91,7 @@ python3 manage.py migrate
 python3 manage.py runserver $PORT
 ```
 
-Once these files are created, go to the Terminal and execute the following commands to create your first Django project:
+Depois que esse arquivos foram criados, vá para o Terminal e execute os seguintes comandos para criar seu primeiro projeto Django:
 
 {% filename %}Terminal{% endfilename %}
 
@@ -130,7 +130,7 @@ The initial restarting of the Glitch project should fail. (If you click on the t
 
 ### Ambiente Virtual
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Um ambiente virtual (também chamado virtualenv) é como uma caixa privada em que podemos colocar código de computador útil em um projeto em que estamos trabalhando. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
 Run:
 
