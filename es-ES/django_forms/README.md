@@ -382,9 +382,9 @@ form = PostForm(instance=post)
 
 OK, let's test if it works! Let's go to the `post_detail` page. There should be an edit button in the top-right corner:
 
-![Edit button](images/edit_button2.png)
+![Botón "Editar"](images/edit_button2.png)
 
-When you click it you will see the form with our blog post:
+Cuando hagas clic en él, verás el formulario con nuestra publicación de blog:
 
 ![Edit form](images/edit_form2.png)
 
