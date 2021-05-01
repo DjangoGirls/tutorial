@@ -1,8 +1,8 @@
 Puedes [saltarte esta sección](http://tutorial.djangogirls.org/en/installation/#install-python) en caso de que no estés usando un Chromebook. Si lo usas, tu experiencia de instalación será algo diferente. Puedes ignorar el resto de las instrucciones de instalación.
 
-### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com)
+### IDE en la nube (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com)
 
-Cloud IDE es una herramienta que te da un editor de código y acceso a un ordenador conectado a internet en el que puedes instalar, escribir y ejecutar software. Durante este tutorial, el IDE en la nube te servirá como tu *máquina local*. Seguirás corriendo comandos en una interfaz de terminal justo como tus compañeros de clase en OS X, Ubuntu, o Windows, pero tu terminal será conenctada a una computadora corriendo en algún otro lugar que cloud IDE establecerá por tí. Here are the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com). Puedes elegir uno de los IDEs en la nube, y seguir sus instrucciones.
+Cloud IDE es una herramienta que te da un editor de código y acceso a un ordenador conectado a internet en el que puedes instalar, escribir y ejecutar software. Durante este tutorial, el IDE en la nube te servirá como tu *máquina local*. Seguirás corriendo comandos en una interfaz de terminal justo como tus compañeros de clase en OS X, Ubuntu, o Windows, pero tu terminal será conenctada a una computadora corriendo en algún otro lugar que cloud IDE establecerá por tí. Aquí tienes las instrucciones para varios IDEs de la nube (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com). Puedes elegir uno de los IDEs en la nube, y seguir sus instrucciones.
 
 #### PaizaCloud Cloud IDE
 
@@ -43,11 +43,11 @@ Ahora deberías ver una interfaz con una barra, una gran ventana principal con a
 
 El área de abajo es tu terminal. Puedes usar el terminal para enviar instrucciones al ordenador remoto Cloud 9. Puedes redimensionar la ventana para hacerla un poco mas grande
 
-#### Glitch.com Cloud IDE
+#### IDE en la nube de Glitch.com
 
-1. Go to [Glitch.com](https://glitch.com/)
-2. Sign up for an account (https://glitch.com/signup) or use your GitHub account if you have one. (See GitHub instructions below.)
-3. Click *New Project* and choose *hello-webpage*
+1. Entra en [Glitch.com](https://glitch.com/)
+2. Regístrate y crea una cuenta (https://glitch.com/signup) o usa tu cuenta de GitHub si tienes una (lee las instrucciones para GitHub a continuación)
+3. Haz clic en *Proyecto nuevo* y selecciona *hello-webpage*
 4. Click on the Tools dropdown list (at the bottom left side of the window), then on Terminal button to open terminal tab with a prompt like this:
 
 {% filename %}Terminal{% endfilename %}
