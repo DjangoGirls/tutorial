@@ -23,9 +23,9 @@ Una cosa para tener en cuenta: Durante la instalación, verás una ventana de "S
 
 Cuando la instalación de complete, verás un cuadro de diálogo con un enlace que puedes seguir para saber más sobre Python o sobre la versión que has instalado. Cierra o cancela ese dialogo -- ¡Aprenderás más en ese tutorial!
 
-Nota: Si utilizas una versión antigua de Windows( 7, Vista u otra versión anterior) y el instalador{{ book.py_version }} Python falla con un error, entonces deberás instalar todas las actualizaciones de Windows e intentar instalar Python de nueva cuenta. If you still have the error, try installing Python version {{ book.py_min_release }} from [Python.org](https://www.python.org/downloads/windows/).
+Nota: Si utilizas una versión antigua de Windows( 7, Vista u otra versión anterior) y el instalador{{ book.py_version }} Python falla con un error, entonces deberás instalar todas las actualizaciones de Windows e intentar instalar Python de nueva cuenta. Si aún así aparece el error, intenta instalar la version Python {{ book.py_min_release }} desde [python.org](https://www.python.org/downloads/windows/).
 
-> Django {{ book.django_version }} needs Python {{ book.py_min_version }} or greater, which does not support Windows XP or earlier versions.
+> Django{{ book.django_version }}necesita Python{{ book.py_min_version }}o algo más avanzado, el cual no es compatible con Windows XP o versiones anteriores.
 
 <!--endsec-->
 
