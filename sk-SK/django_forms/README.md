@@ -14,7 +14,7 @@ Musíme vytvoriť súbor s týmto názvom v adresári `blog`.
        └── forms.py
     
 
-OK, let's open it in the code editor and type the following code:
+OK, otvorme ho v editore a napíšme nasledovný kód:
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -30,7 +30,7 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
+Najskôr musíme naimportovať Django formuláre (`from django import forms`) a samozrejme aj náš `Post` model (`from .models import Post`).
 
 `PostForm`, ako asi správne predpokladáš, je názov nášho formulára. Musíme Djangu povedať, že tento formulár je `ModelForm` (aby Django pre nás mohlo trochu čarovať) - za to je zodpovedný `forms.ModelForm`.
 
