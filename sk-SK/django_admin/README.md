@@ -33,7 +33,7 @@ Pre prihlásenie musíš vytvoriť *superusera* - užívateľa, ktorý má kontr
     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
     
 
-Po výzve zadaj svoje meno (malé písmená, bez medzier), emailovú adresu a heslo. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Type it in and press `enter` to continue. Výstup by mal vyzerať asi takto (kde užívateľské meno a email by mali byť tvoje vlastné):
+Po výzve zadaj svoje meno (malé písmená, bez medzier), emailovú adresu a heslo. **Netráp sa, že nevidíš heslo ktoré zadávaš - tak to má byť.** Len ho zadaj a stlač `enter`. Výstup by mal vyzerať asi takto (kde užívateľské meno a email by mali byť tvoje vlastné):
 
     Username: ola
     Email address: ola@example.com
@@ -46,12 +46,12 @@ Vráť sa do prehliadača. Prihlás sa zvolenými údajmi ako superuser, mala by
 
 ![Django admin](images/django_admin3.png)
 
-Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content –- it's only visible to you on your local computer -- you can copy-paste some text from this tutorial to save time. :)
+Choď do kategórie Posts a experimentuj trocha. Pridaj 5 alebo 6 blog postov. Netráp sa s obsahom - je viditeľný len pre teba na tvojom lokálnom počítači - môžeš skopírovať nejaký text z tohto tutoriálu aby si ušetril čas. :)
 
 Uisti sa, že aspoň dva alebo tri posty (ale nie všetky) majú nastavený dátum publikovania. Bude to neskôr užitočné.
 
 ![Django admin](images/edit_post3.png)
 
-If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/2.2/ref/contrib/admin/
+Ak chceš vedieť viac o Django admine, pozri si dokumentáciu Djanga: https://docs.djangoproject.com/en/2.2/ref/contrib/admin/
 
 Teraz je asi vhodný čas dať si kávu (alebo čaj), alebo niečo pod zub a nabrať trochu energie. Práve si vytvorila svoj prvý Django model - zaslúžiš si trochu oddychu!
