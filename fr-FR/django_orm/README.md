@@ -58,7 +58,7 @@ Nous importons le modèle `Post` depuis notre `blog.models`. Essayons à nouveau
 <QuerySet [<Post: my post title>, <Post: another post title>]>
 ```
 
-Cela nous permet d'obtenir une liste des posts que nous avons créé tout à l'heure ! Rappelez-vous : nous avions créé ces posts à l'aide de l'interface d'administration de Django. Cependant, nous aimerions maintenant créer de nouveaux posts à l'aide de python : comment allons-nous nous y prendre ?
+Cela nous permet d'obtenir une liste des posts que nous avons créés tout à l'heure ! Rappelez-vous : nous avions créé ces posts à l'aide de l'interface d'administration de Django. Cependant, nous aimerions maintenant créer de nouveaux posts à l'aide de python : comment allons-nous nous y prendre ?
 
 ### Créer des objets
 
