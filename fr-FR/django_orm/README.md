@@ -70,7 +70,7 @@ Voici comment créer un nouveau objet Post dans la base de données :
 >>> Post.objects.create(author=me, title='Sample title', text='Test')
 ```
 
-Cependant, il nous manque un petit quelque chose : `moi`. Nous avons besoin de lui passer une instance du modèle `User` en guise d'auteur (author). Comment faire ?
+Cependant, il nous manque un petit quelque chose : `me`. Nous avons besoin de lui passer une instance du modèle `User` en guise d'auteur (author). Comment faire ?
 
 Tout d'abord, il nous faut importer le modèle User :
 
@@ -89,7 +89,7 @@ Avons-nous des utilisateurs dans notre base de données ? Voyons voir :
 <QuerySet [<User: ola>]>
 ```
 
-Il s'agit du superutilisateur que nous avons crée tout à l'heure ! Sauvegardons une instance de cet utilisateur (modifie la ligne suivante avec ton nom d'utilisateur) :
+Il s'agit du superutilisateur que nous avons créé tout à l'heure ! Sauvegardons une instance de cet utilisateur (modifie la ligne suivante avec ton nom d'utilisateur) :
 
 {% filename %}command-line{% endfilename %}
 
@@ -108,7 +108,7 @@ Nous allons enfin pouvoir créer notre post :
 <Post: Sample title>
 ```
 
-Et voilà ! Vous aimeriez voir ci ça a vraiment marché ?
+Et voilà ! Vous aimeriez voir si ça a vraiment marché ?
 
 {% filename %}command-line{% endfilename %}
 
@@ -125,7 +125,7 @@ Amusez-vous à ajouter d'autres posts pour vous entrainer un peu. Essayez d'ajou
 
 ### Filtrer les objets
 
-L'intérêt des QuerySets, c'est que l'on peut les filtrer. Disons que nous aimerions retrouver tous les posts écrits par l'utilisateur Ola. Pour cela, nous allons utiliser `filter` à la place de `all` dans `Post.objects.all()`. Les parenthèses vont nous servir à préciser quelles sont les conditions auxquelles un post de blog doit se conformer pour être retenu par notre queryset. Dans notre exemple, la condition est que `author` soit égal à `me`. La manière de le dire en Django c'est : `author=me`. Maintenant, votre bout de code doit ressembler à ceci:
+L'intérêt des QuerySets, c'est que l'on peut les filtrer. Disons que nous aimerions retrouver tous les posts écrits par l'utilisateur Ola. Pour cela, nous allons utiliser `filter` à la place de `all` dans `Post.objects.all()`. Les parenthèses vont nous servir à préciser quelles sont les conditions auxquelles un post de blog doit se conformer pour être retenu par notre queryset. Dans notre exemple, la condition est que `author` soit égal à `me`. La manière de le dire en Django c'est : `author=me`. Maintenant, votre bout de code doit ressembler à ceci :
 
 {% filename %}command-line{% endfilename %}
 
@@ -191,7 +191,7 @@ Les QuerySets permettent aussi de trier la liste des objets. Essayons de les tri
 <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
-On peut aussi inverser l'ordre de tri en ajouter `-` au début:
+On peut aussi inverser l'ordre de tri en ajouter `-` au début :
 
 {% filename %}command-line{% endfilename %}
 
