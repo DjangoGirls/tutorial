@@ -54,11 +54,11 @@ Windows- ում, հավանաբար, տեսնում եք այս `>` նշանը.
 
 Ցանկացած հատված, ներառյալ այս `$` կամ այս `>` նշանները, հավաքականորեն կոչվում է *command line prompt/հրամանի տող հուշում * կամ ուղղակի *prompt/հուշում* : Սովորաբար, այն պարունակում է այն թղթապանակի հասցեն, որի մեջ դուք այժմ գտնվում եք: Այն հուշում է ձեզ հրաման մուտքագրել պատուհանի մեջ:
 
-In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
+Հետագայում ձեռնարկում, յուրաքանչյուր հրամանից առաջ, որը դուք պետք է մուտքագրեք, մենք կգրենք `$` կամ `>` խորհրդանիշ: Երբեմն դրա ձախ կողմում կավելացնենք ևս մի քանի տեքստ: Անտեսեք ձախ կողմը և պարզապես մուտքագրեք հրահանգը. Այն սկսվում է հուշումից հետո:
 
-## Your first command (YAY!)
+## Ձեր առաջին հրամանը (YAY!)
 
-Let's start by typing this command:
+Սկսենք մուտքագրել այս հրամանը.
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -78,7 +78,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-And then hit `enter`. This is our result:
+Եվ ապա սեղմեք `enter`: Սա է մեր արդյունքը.
 
 {% filename %}command-line{% endfilename %}
 
@@ -86,17 +86,17 @@ And then hit `enter`. This is our result:
     olasitarska
     
 
-As you can see, the computer has just printed your username. Neat, huh? :)
+Ինչպես տեսնում եք, համակարգիչը նոր է տպել ձեր օգտվողի անունը: Կոկիկ է, այնպես չէ՞: :)
 
-> Try to type each command; do not copy-paste. You'll remember more this way!
+> Փորձեք մուտքագրել յուրաքանչյուր հրաման ձեռքով, այլ ոչ թե պատճենել և տեղադրել: Այսպիսով, դուք ավելի լավ կհիշեք:
 
-## Basics
+## Հիմունքներ
 
-Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
+Յուրաքանչյուր գործավար համակարգ ունի հրամանի տողի մի փոքր այլ հրամանների հավաքածու, այնպես որ համոզվեք, որ հետևում եք ձեր օպերացիոն համակարգի հրահանգներին: Փորձե՞նք սա:
 
-### Current directory
+### Ընթացիկ գրացուցակ/Current directory
 
-It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
+Ցանկալի կլիներ իմանալ, թե որտեղ ենք մենք գտնվում, այնպես չէ՞: Եկեք տեսնենք: Մուտքագրեք այս հրամանը և սեղմեք `enter`.
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -106,7 +106,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     /Users/olasitarska
     
 
-> Note: 'pwd' stands for 'print working directory'.
+> Նշում. «Pwd» նշանակում է «տպել աշխատանքային գրացուցակ»/'print working directory:
 
 <!--endsec-->
 
@@ -118,7 +118,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     C:\Users\olasitarska
     
 
-> Note: 'cd' stands for 'change directory'. With PowerShell you can use pwd just like on Linux or Mac OS X.
+> Նշում. «Cd» նշանակում է «փոփոխել գրացուցակը»/'change directory': PowerShell- ի միջոցով դուք կարող եք օգտագործել pwd այնպես, ինչպես Linux- ում կամ Mac OS X- ում:
 
 <!--endsec-->
 
