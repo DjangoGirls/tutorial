@@ -4,19 +4,19 @@
 
 Ցնցող է, չէ՞:Մի քանի րոպեից դուք կգրեք ձեր առաջին տողի ծածկագիրը: :)
 
-**Let us introduce you to your first new friend: the command line!**
+**Թույլ տվեք ներկայացնել ձեր առաջին նոր ընկերոջը. Հրամանի տող/command line:**
 
-The following steps will show you how to use the black window all hackers use. It might look a bit scary at first but really it's just a prompt waiting for commands from you.
+Հաջորդ քայլերը ցույց կտան, թե ինչպես օգտագործել այն սև պատուհանը, որն օգտագործում են բոլոր հակերները: Սկզբում դա կարող է թվալ մի փոքր վախեցնող, բայց իրականում դա պարզապես պատուհան է, որը սպասում է ձեզանից հրահանգների:
 
-> **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
+> **Նշում** Խնդրում ենք նկատի ունենալ, որ այս ձեռնարկում մենք օգտագործում ենք «գրացուցակ/'directory'» և «թղթապանակ/'folder'» տերմինները փոխադարձաբար. Այս բառերը միևնույն բանն են նշանակում:
 
-## What is the command line?
+## Ի՞նչ է հրամանի տողը/command line: 
 
-The window, which is usually called the **command line** or **command-line interface**, is a text-based application for viewing, handling, and manipulating files on your computer. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
+Պատուհանը, որը սովորաբար անվանում են **Հրամանի տող/ command line** կամ **«Հրամանի տողի միջերես»/command-line interface (CLI)** , տեքստի վրա հիմնված ծրագիր է ՝ ձեր համակարգչի վրա ֆայլերը դիտելու, մշակելու և շահարկելու համար: Դա անում է նույնը, ինչ Explorer- ը Windows- ում կամ Finder- ը Mac OS X- ում, բայց այն չունի գրաֆիկական ինտերֆեյս: Հրամանի տողի այլ անուններն են ՝ *cmd*, *CLI*, *prompt*, *console* կամ *terminal*:
 
-## Open the command-line interface
+## Բացեք հրամանի տողի միջերեսը/command-line interface
 
-To start some experiments we need to open our command-line interface first.
+Որոշ փորձեր սկսելու համար նախ պետք է բացենք հրամանի տողի միջերեսը/command-line interface:
 
 {% include "/intro_to_command_line/open_instructions.md" %}
 
