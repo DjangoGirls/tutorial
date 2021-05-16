@@ -150,7 +150,7 @@ Creează-ți un cont [GitHub](https://github.com).
 
 ### PythonAnywhere
 
-The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+Tutorialul Django Girls include o secţiune despre ceea ce se numeşte Deployment, care este procesul de luare a codului care alimentează noua aplicație web și de mutare a acesteia pe un calculator accesibil publicului (numit server), astfel încât alți oameni să-ți poată vedea munca.
 
 This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
