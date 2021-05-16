@@ -2,10 +2,10 @@
 
 * [Introducere](README.md)
 * [Instalare](installation/README.md) 
-  * [Command Line](installation/README.md#command-line)
+  * [Linia de comandă](installation/README.md#command-line)
   * [Python](installation/README.md#python)
-  * [Code Editor](installation/README.md#code-editor)
-  * [Virtual Environment](installation/README.md#virtualenv)
+  * [Editor de cod](installation/README.md#code-editor)
+  * [Mediul Virtual](installation/README.md#virtualenv)
   * [Django](installation/README.md#django)
   * [Git](installation/README.md#git)
   * [GitHub](installation/README.md#github)
