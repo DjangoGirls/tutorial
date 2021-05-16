@@ -177,9 +177,9 @@ OS X- ը և Linux- ը ունեն `man` հրաման, որը ձեզ օգնում 
 
 * * *
 
-### Change current directory
+### Փոխել ընթացիկ գրացուցակը/current directory
 
-Now, let's go to our Desktop directory:
+Հիմա եկեք գնանք մեր աշխատասեղանի գրացուցակին/Desktop directory.
 
 <!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
 
@@ -197,7 +197,7 @@ Now, let's go to our Desktop directory:
     $ cd Desktop
     
 
-Note that the directory name "Desktop" might be translated to the language of your Linux account. If that's the case, you'll need to replace `Desktop` with the translated name; for example, `Schreibtisch` for German.
+Նկատի ունեցեք, որ գրացուցակի անունը «Desktop» կարող է թարգմանվել ձեր Linux հաշվի լեզվով: Եթե ​​դա այդպես է, դուք պետք է `Desktop` փոխարինեք թարգմանված անունով. օրինակ ՝ `Schreibtisch` գերմաներենի համար:
 
 <!--endsec-->
 
@@ -210,7 +210,7 @@ Note that the directory name "Desktop" might be translated to the language of yo
 
 <!--endsec-->
 
-Check if it's really changed:
+Ստուգեք, արդյոք այն իսկապես փոխվել է.
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -232,15 +232,15 @@ Check if it's really changed:
 
 <!--endsec-->
 
-Here it is!
+Ահա այն!
 
 > PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
 * * *
 
-### Create directory
+### Ստեղծեք գրացուցակ
 
-How about creating a practice directory on your desktop? You can do it this way:
+Ի՞նչ կասեք ձեր աշխատասեղանի վրա պրակտիկ գրացուցակ ստեղծելու մասին: Դուք կարող եք դա անել այս կերպ.
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -260,9 +260,9 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--endsec-->
 
-This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+Այս փոքրիկ հրահանգը կստեղծի ձեր աշխատասեղանի վրա `practice` անունով պանակ: Կարող եք ստուգել, ​​արդյոք այնտեղ կա ՝ նայելով ձեր աշխատասեղանին կամ գործարկելով `ls` կամ `dir` հրամանը: Փորձիր. :)
 
-> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
+> PRO հուշում. Եթե չեք ցանկանում անընդմեջ մուտքագրել նույն հրամանները, փորձեք սեղմել `վերին սլաքը/up arrow` և `ներքևի սլաքը/ down arrow` ձեր ստեղնաշարի վրա, որպեսզի շրջանցեք վերջերս օգտագործված հրամանները:
 
 * * *
 
