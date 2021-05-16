@@ -1,8 +1,8 @@
 # Հրամանի տողի ինտերֆեյսի /command-line interface ներածություն
 
-> For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
+> Նրանց համար, ովքեր ձեռնարկն անցնում են տանը. Ձեր նոր ընկերը ՝ [հրամանի տողը/ Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8), խոսում է այս գլխի նյութի մասին:
 
-It's exciting, right?! You'll write your first line of code in just a few minutes! :)
+Ցնցող է, չէ՞:Մի քանի րոպեից դուք կգրեք ձեր առաջին տողի ծածկագիրը: :)
 
 **Let us introduce you to your first new friend: the command line!**
 
