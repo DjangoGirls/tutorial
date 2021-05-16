@@ -12,18 +12,18 @@
 
 * Ձեր սեմինարը կարող է ունենալ «տեղադրման երեկույթ»: Եթե ​​դուք տեղադրման երեկույթի եք, այս էջը ձեզ համար է: Հետևեք այստեղ տրված հրահանգներին ՝ ստանալու այն ամենը, ինչ անհրաժեշտ սեմինարը տեղադրելու համար, և անհրաժեշտության դեպքում դիմեք մարզիչների օգնությունը: Այնուհետև հիմնական սեմինարում կարող եք բաց թողնել տեղադրման հրահանգները. Դուք կստանաք դրանք նաև հիմնական ձեռնարկում:
 * Գուցե ձեր սեմինարի կազմակերպիչները խնդրել են ձեզ նախքան սեմինարը սկսելը, փորձել տանը ` ամեն ինչ տեղադրել ձեր համակարգչում: Եթե ​​ձեզանից խնդրեցին դա անել, այս էջը ձեզ համար է: Հնարավորինս լավ հետեւեք այստեղ տրված հրահանգներին: Այնուհետև հիմնական սեմինարում, երբ դուք ստանում եք հիմնական ձեռնարկի տեղադրման քայլերը, եթե չկարողացաք տեղադրել որոշ էլեմենտներ, ապա կարող եք օգնություն ստանալ ձեր մարզչից:
-* If your workshop does not have an installation party (or you couldn't attend), and if the organizers didn't ask you to try to install everything before you arrived, skip this page and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter. You'll be installing everything you need as you work through the tutorial.
+* Եթե ​​ձեր արհեստանոցը չի կազմակերպում «տեղադրման երեկույթ» (կամ դուք ի վիճակի չէիք ներկա գտնվել), և եթե կազմակերպիչները ձեզ չեն խնդրել տեղադրել ամեն ինչ նախքան ժամանելը. բաց թողեք այս էջը և անմիջապես անցեք [How the Internet works/ Ինտերնետի աշխատանք ](../how_the_internet_works/README.md) գլուխը: Ձեռնարկի միջոցով աշխատելու ընթացքում դուք կտեղադրեք այն ամենը, ինչ ձեզ հարկավոր է:
 
-# Installation
+# Installation (Տեղադրում)
 
-In this tutorial you will be building a blog. In order to do that, as you go through the tutorial you'll be instructed on how to install various software on your computer and set up some online accounts as they are needed. This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
+Այս ձեռնարկում դուք բլոգ կստեղծեք: Դա անելու համար ձեռնարկի ընթացքում ձեզ հանձնարարվելու է տարբեր ծրագրեր տեղադրել ձեր համակարգչում և անհրաժեշտության դեպքում կարգավորել որոշ առցանց հաշիվներ: Այս էջը պարունակում է տեղադրման և գրանցման բոլոր հրահանգները (ինչը օգտակար է սեմինարի որոշ ձևաչափերի համար):
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %}
 
 <!--endsec-->
 
-# Brief intro to the command line {#command-line}
+# Հրամանի տողի/ command line հակիրճ նկարագրություն {#command-line}
 
 Many of the steps below reference the "console", "terminal", "command window", or "command line" -- these all mean the same thing: a window on your computer where you can enter commands. When you get to the main tutorial, you'll learn more about the command line. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
 
