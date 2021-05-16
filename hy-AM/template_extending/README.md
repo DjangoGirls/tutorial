@@ -6,9 +6,9 @@ Django- ի մեկ այլ օգտակար բան **template extending/ձևանմո
 
 ## Ստեղծեք բազային ձևանմուշ/ base template
 
-A base template is the most basic template that you extend on every page of your website.
+Բազային ձևանմուշը/base template ամենահիմնական ձևանմուշն է, որը դուք տարածում եք ձեր կայքի յուրաքանչյուր էջում:
 
-Let's create a `base.html` file in `blog/templates/blog/`:
+Եկեք ստեղծենք `base.html` ֆայլ `blog/templates/blog/`-ում:
 
     blog
     └───templates
@@ -17,7 +17,7 @@ Let's create a `base.html` file in `blog/templates/blog/`:
                 post_list.html
     
 
-Then open it up in the code editor and copy everything from `post_list.html` to `base.html` file, like this:
+Դրանից հետո բացեք այն կոդերի խմբագրում և պատճենեք ամեն ինչ ՝ `post_list.html` - ից `base.html` ֆայլը, ինչպես սա:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -57,7 +57,7 @@ Then open it up in the code editor and copy everything from `post_list.html` to 
 </html>
 ```
 
-Then in `base.html`, replace your whole `<body>` (everything between `<body>` and `</body>`) with this:
+Դրանից հետո `base.html`- ում փոխարինեք ձեր ամբողջ `<body>` -ը (ամեն ինչ `<body>` և `</body> ` - ի միջև) հետևյալով.
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -79,7 +79,7 @@ Then in `base.html`, replace your whole `<body>` (everything between `<body>` an
 </body>
 ```
 
-{% raw %}You might notice this replaced everything from `{% for post in posts %}` to `{% endfor %}` with: {% endraw %}
+{% raw%} Ինչպես նկատեցիք, մենք փոխարինեցինք ամեն ինչ ՝ սկսած `{% for post in posts %}`-ը, `{% endfor %}` - ով փոխարինելով ՝ {% endraw %}
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -88,7 +88,7 @@ Then in `base.html`, replace your whole `<body>` (everything between `<body>` an
 {% endblock %}
 ```
 
-But why? You just created a `block`! You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). We will show you how to do this in a moment.
+Բայց ինչու՞ Դուք հենց նոր `block/բլոկ` ստեղծեցիք: Դուք օգտագործեցիք `{% block %}` ձևանմուշի պիտակը ՝ տարածք ստեղծելու համար, որտեղ կտեղադրվի HTML-ը : Այդ HTML- ը կգա մեկ այլ ձևանմուշից, որը տարածում է այս ձևանմուշը (`base.html`): Մենք ձեզ ցույց կտանք, թե ինչպես դա անել մեկ վայրկյանում:
 
 Now save `base.html` and open your `blog/templates/blog/post_list.html` again in the code editor. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
 
