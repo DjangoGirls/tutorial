@@ -26,13 +26,13 @@ Actual, Cloud 9 îți cere să te înregistrezi cu AWS și să introduci datele 
 
 1. Instalează Cloud 9 din [magazinul de aplicații Chrome](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
 2. Mergi la [c9.io](https://c9.io) și fă click pe *Începe cu Cloud9 AWS*
-3. Sign up for an AWS account (requires credit card information, but you can use it for free)
-4. In the AWS Dashboard, enter *Cloud9* in the search bar and click it
-5. In the Cloud 9 dashboard, click *Create environment*
-6. Name it *django-girls*
-7. While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
-8. Click *Next step*
-9. Click *Create environment*
+3. Înscrie-te pentru un cont AWS (necesită informații despre cardul de credit, dar îl poți folosi gratuit)
+4. În tabloul de bord AWS, introdu *Cloud9* în bara de căutare și fă click pe el
+5. În tabloul de bord Cloud 9, fă click pe *Creare Mediu*
+6. Numește-l *django-girls*
+7. La configurarea setărilor, selectează *Creați o nouă instanță pentru mediu (EC2)* pentru "Tipul de mediu" și *t2. icro* "Tip de instanţă" (ar trebui să spună "Eligibil pentru rang gratuit"). Setarea implicită de reducere a costurilor este bună și poți păstra celelalte valori implicite.
+8. Fă click pe * Server nou *
+9. Fă click pe *Creează Mediu*
 
 Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
 
