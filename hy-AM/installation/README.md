@@ -25,44 +25,44 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 # Հրամանի տողի/ command line հակիրճ նկարագրություն {#command-line}
 
-Many of the steps below reference the "console", "terminal", "command window", or "command line" -- these all mean the same thing: a window on your computer where you can enter commands. When you get to the main tutorial, you'll learn more about the command line. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
+Ստորև նշված քայլերից շատերը վերաբերում են "console"-ին, «տերմինալին»/"terminal", «հրամանի պատուհանին»"command window" կամ «հրամանի տողին»/ "command line" . Սրանք բոլորը նույն բանն են նշանակում. Ձեր համակարգչի վրա պատուհան, որտեղ կարող եք մուտքագրել հրամաններ: Երբ հասնեք հիմնական ձեռնարկին, դուք ավելին կսովորեք հրամանի տողի մասին: Այժմ հիմնական բանը, որ դուք պետք է իմանաք, այն է, թե ինչպես բացել հրամանի պատուհան և ինչպիսի տեսք ունի այն ՝ {% include "/intro_to_command_line/open_instructions.m
 
-# Install Python {#python}
+# Տեղադրեք Python- ը {#python}
 
 {% include "/python_installation/instructions.md" %}
 
-# Install a code editor {#code-editor}
+# Տեղադրեք կոդերի խմբագիր/code editor {#code-editor}
 
 {% include "/code_editor/instructions.md" %}
 
-# Set up virtualenv and install Django {#virtualenv}
+# Կարգավորեք virtualenv- ը և տեղադրեք Django- ն {#virtualenv}
 
 {% include "/django_installation/instructions.md" %}
 
-# Install Git {#git}
+# Տեղադրեք Git- ը {#git}
 
 {% include "/deploy/install_git.md" %}
 
-# Create a GitHub account {#github}
+# Ստեղծեք GitHub հաշիվ/GitHub account {#github}
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password (add it to your password manager, if you use one).
+Գնացեք [GitHub.com](https://www.github.com) և գրանցվեք նոր անվճար հաշվի համար: Համոզվեք, որ կհիշեք ձեր գաղտնաբառը (եթե այն օգտագործում եք, ավելացրեք գաղտնաբառերի կառավարչին):
 
-# Create a PythonAnywhere account {#pythonanywhere}
+# Ստեղծեք PythonAnywhere հաշիվ {#pythonanywhere}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-# Start reading
+# Սկսեք կարդալ
 
-Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
+Շնորհավորում եմ, ամեն ինչ պատրաստ է: Եթե ​​սեմինարին դեռ ազատ ժամանակ է մնացել, օգտակար կլինի կարդալ առաջին մի քանի գլուխները.
 
-* [How the internet works](../how_the_internet_works/README.md)
+* [Ինչպես է աշխատում ինտերնետը](../how_the_internet_works/README.md)
 
-* [Introduction to the command line](../intro_to_command_line/README.md)
+* [ Command line-ի (Հրամանի տողի) ներածություն](../intro_to_command_line/README.md)
 
-* [Introduction to Python](../python_introduction/README.md)
+* [ Python-ի ներածություն/ Introduction to Python](../python_introduction/README.md)
 
-* [What is Django?](../django/README.md)
+* [Ի՞նչ է Django- ն](../django/README.md)
 
-# Enjoy the workshop!
+# Վայելեք սեմինարը:
 
-When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
+Երբ սեմինարը սկսվի, դուք կկարողանաք անմիջապես անցնել [Your first Django project! /ձեր Առաջին Django նախագիծը](../django_start_project/README.md) գլխին:
