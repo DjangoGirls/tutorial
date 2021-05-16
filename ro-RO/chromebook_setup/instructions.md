@@ -99,12 +99,11 @@ Odată ce aceste fișiere sunt create, mergi în Terminal și execută următoar
     refresh
     
 
-In order to see detailed error messages, you can activate Django debug logs for your Glitch application. Simply add the following at the end of the `mysite/settings.py` file.
+Pentru a vedea mesaje de eroare detaliate, poți activa jurnalele de depanare Django pentru aplicația Glitch. Doar adaugă la sfârșitul fișierului `mysite/settings.py:</p>
 
-{% filename %}mysite/settings.py{% endfilename %}
+<p>{% filename %}mysite/settings.py{% endfilename %}</p>
 
-```python
-LOGGING = {
+<pre><code class="python">LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
     'handlers': {
@@ -122,11 +121,11 @@ LOGGING = {
         },
     },
 }
-```
+`</pre> 
 
-This will create a `debug.log` file detailing Django operations and any error messages that might come up, making it much easier to fix if your website does not work.
+Asta va crea un fișier `debug.log` care detaliază operațiunile în Django și orice mesaje de eroare care ar putea apărea. Cu ajutorul acestui fișier este mai ușor să remediezi site-ul dacă nu funcționează.
 
-The initial restarting of the Glitch project should fail. (If you click on the top dropdown button `Show` then click on `In a New Window`, you will receive a `DisallowedHost` error message.) Do not worry about it at this stage, the tutorial will fix this as soon as you update the Django settings of your project in the `mysite/settings.py` file.
+Repornirea iniţială a proiectului Glitch ar trebui să eşueze. (If you click on the top dropdown button `Show` then click on `In a New Window`, you will receive a `DisallowedHost` error message.) Do not worry about it at this stage, the tutorial will fix this as soon as you update the Django settings of your project in the `mysite/settings.py` file.
 
 ### Mediul Virtual
 
