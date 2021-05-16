@@ -90,7 +90,7 @@ Django- ի մեկ այլ օգտակար բան **template extending/ձևանմո
 
 Բայց ինչու՞ Դուք հենց նոր `block/բլոկ` ստեղծեցիք: Դուք օգտագործեցիք `{% block %}` ձևանմուշի պիտակը ՝ տարածք ստեղծելու համար, որտեղ կտեղադրվի HTML-ը : Այդ HTML- ը կգա մեկ այլ ձևանմուշից, որը տարածում է այս ձևանմուշը (`base.html`): Մենք ձեզ ցույց կտանք, թե ինչպես դա անել մեկ վայրկյանում:
 
-Now save `base.html` and open your `blog/templates/blog/post_list.html` again in the code editor. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
+Այժմ պահպանեք `base.html`- ը և նորից բացեք ձեր `blog/templates/blog/post_list.html` կոդերի խմբագրում: {% raw %}Դուք պատրաստվում եք հեռացնել ամեն ինչ, որը գտնվում է `{% for post in posts %}`-ից վերևում, և `{% endfor %}`-ից ներքևում: Ավարտելուց հետո ֆայլն այսպիսի տեսք կունենա.{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -106,9 +106,9 @@ Now save `base.html` and open your `blog/templates/blog/post_list.html` again in
 {% endfor %}
 ```
 
-We want to use this as part of our template for all the content blocks. Time to add block tags to this file!
+Մենք ուզում ենք սա օգտագործել որպես մեր ձևանմուշի մի մաս ՝ բովանդակության բոլոր բլոկների համար: Ժամանակն է այս ֆայլին ավելացնել բլոկի պիտակները/block tags:
 
-{% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. Like this:{% endraw %}
+{% raw %} Դուք ցանկանում եք, որ ձեր բլոկի թեգը համընկնի `base.html` ֆայլի պիտակի/ tag-ի հետ: Դուք նաև ցանկանում եք ներառել ամբողջ ծածկագիրը, որը պատկանում է բովանդակության բլոկներին/content blocks: Դա անելու համար ամեն ինչ տեղադրեք{% block content %} - ի և {% endblock %} - ի միջև: Սրա նման. {% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
