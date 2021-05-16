@@ -10,8 +10,8 @@
 
 Եթե ​​մասնակցում եք [ Django Girls- ի միջոցառումներից մեկին ](https://djangogirls.org/events/) ՝
 
-* Ձեր սեմինարը կարող է ունենալ «տեղադրման երեկույթ»: Եթե ​​դուք տեղադրման երեկույթի եք, այս էջը ձեզ համար է: Follow the instructions here to get everything you need for the workshop installed, with the help of the coaches if needed. Then at the main workshop, you'll be able to skip installation instructions you'll encounter in the main tutorial when you get to them.
-* The organizers of your workshop may have asked you to try at home to install everything on your computer before the workshop starts. If you have been asked to do that, this page is for you! Follow the instructions here, as best you can. Then at the main workshop, when you get to an installation step in the main tutorial, if you were not able to get that piece installed you can get help from your coach.
+* Ձեր սեմինարը կարող է ունենալ «տեղադրման երեկույթ»: Եթե ​​դուք տեղադրման երեկույթի եք, այս էջը ձեզ համար է: Հետևեք այստեղ տրված հրահանգներին ՝ ստանալու այն ամենը, ինչ անհրաժեշտ սեմինարը տեղադրելու համար, և անհրաժեշտության դեպքում դիմեք մարզիչների օգնությունը: Այնուհետև հիմնական սեմինարում կարող եք բաց թողնել տեղադրման հրահանգները. Դուք կստանաք դրանք նաև հիմնական ձեռնարկում:
+* Գուցե ձեր սեմինարի կազմակերպիչները խնդրել են ձեզ նախքան սեմինարը սկսելը, փորձել տանը ` ամեն ինչ տեղադրել ձեր համակարգչում: Եթե ​​ձեզանից խնդրեցին դա անել, այս էջը ձեզ համար է: Հնարավորինս լավ հետեւեք այստեղ տրված հրահանգներին: Այնուհետև հիմնական սեմինարում, երբ դուք ստանում եք հիմնական ձեռնարկի տեղադրման քայլերը, եթե չկարողացաք տեղադրել որոշ էլեմենտներ, ապա կարող եք օգնություն ստանալ ձեր մարզչից:
 * If your workshop does not have an installation party (or you couldn't attend), and if the organizers didn't ask you to try to install everything before you arrived, skip this page and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter. You'll be installing everything you need as you work through the tutorial.
 
 # Installation
