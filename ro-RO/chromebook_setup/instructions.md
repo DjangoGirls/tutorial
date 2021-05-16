@@ -2,14 +2,14 @@ Poţi [sări peste această secţiune](http://tutorial.djangogirls.org/en/instal
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com)
 
-Cloud IDE este un instrument care îți oferă un editor de cod şi acces la un calculator care rulează pe Internet, în care poți instala, scrie şi executa software-ul. Pe durata acestui tutorial, Cloud IDE se va comporta ca și *calculatorul tău local *. Tu vei rula comenzile în interfața terminalului la fel ca și colegii ce vor folosi Os X, Ubuntu, sau Windows, dar terminalul pe care îl vei folosi tu, este conectat la un calculator care rulează în altă parte, pe care Cloud IDE ți l-a configurat. Here are the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com). Poţi alege unul dintre programele Cloud IDE, şi să urmăreşti instrucţiunile programului Cloud IDE.
+Cloud IDE este un instrument care îți oferă un editor de cod şi acces la un calculator care rulează pe Internet, în care poți instala, scrie şi executa software-ul. Pe durata acestui tutorial, Cloud IDE va funcționa ca și *calculatorul tău local *. Tu vei rula comenzile în interfața terminalului la fel ca și colegii care folosesc OS X, Ubuntu sau Windows, dar terminalul pe care îl vei folosi tu este conectat la un calculator care rulează în altă parte, pe care Cloud IDE ți l-a configurat. Aici sunt instrucţiunile pentru Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9). Poţi alege unul dintre programele Cloud IDE şi urmări instrucţiunile programului Cloud IDE.
 
 #### PaizaCloud Cloud IDE
 
 1. Deschide aplicaţia [PaizaCloud Cloud IDE](https://paiza.cloud/)
-2. Înregistrează-te
-3. Click pe *Server nou* și alegeți aplicația Django
-4. Fă un click pe butonul "Terminal" (din partea stângă a ferestrei)
+2. Creează-ți un cont
+3. Fă click pe *Server nou* și alege aplicația Django
+4. Fă click pe butonul Terminal (în partea stângă a ferestrei)
 
 Acum ar trebui să vezi o interfaţă cu o bară laterală cu butoane în stânga. Fă click pe butonul "Terminal" pentru a deschide fereastra terminală ce va afişa:
 
