@@ -2,21 +2,21 @@
 
 [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
-> Acest lucru este licenţiat sub Creative Commons Attribution-ShareAlike 4.0 International License. Pentru a vedea o copie a acestei licenţe, vezi https://creativecommons.org/licenses/by-sa/4.0/
+> Această lucrare este licențiată sub licența Internațională Creative Commons Attribution-ShareAlike 4.0. Pentru a vedea o copie a acestei licențe, vizitează https://creativecommons.org/licenses/by-sa/4.0/
 
 ## Bine ai venit
 
-Bine ai venit la Django Girls Tutorial! We are happy to see you here. :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
+Bine ai venit la Tutorialul Django Girls! Ne bucurăm să te vedem aici :) În acest tutorial, te vom ghida în călătoria minunată prin lumea tehnologiilor web, oferindu-ți o imagine a tuturor părților care trebuie conectate în așa fel ca aplicațiile web să funcționeze bine.
 
-As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine. :)
+Ca în cazul tuturor lucrurilor necunoscute, aceasta va fi o aventură - dar nu-ți face griji, dacă ți-ai făcut deja curaj să ajungi aici, vei fi în regulă. :)
 
 ## Introducere
 
-Ai simţit vreodată că lumea este mai mult și mai mult legată de tehnologii, în care (încă) nu te pricepi? Te-ai întrebat vreodată cum poți crea un site web, dar nu ai avut niciodată suficientă motivaţie ca să începi? Te-ai gândit vreodată că lumea software-ului este prea complicată pentru a încerca să faci ceva de sine stătător?
+Ai simţit vreodată că lumea este din ce în ce mai legată de tehnologii la care (încă) nu te pricepi? Te-ai întrebat vreodată cum poți crea un site web, dar nu ai avut niciodată suficientă motivaţie ca să începi? Te-ai gândit vreodată că lumea software-ului este prea complicată pentru a încerca să creezi ceva independent?
 
 Ei bine, avem o veste bună pentru tine! Programarea nu este atât de complicată pe cât pare şi vrem să-ţi arătăm cât de distractivă poate fi.
 
-Acest tutorial nu te va transforma într-un mod magic într-un programator. Dacă vrei să fii bun în asta, ai nevoie de luni sau chiar ani de învăţare şi practică. Dar vrem să-ţi arătăm că programarea sau crearea de site-uri nu este un lucru atât de complicat cum pare. Vom încerca să-ți explicăm diferite aspecte ale programării web atât de bine cât putem, astfel încât să nu te simţi străin în acest domeniu și în noțiuni.
+Acest tutorial nu te va transforma în mod magic într-o programatoare. Dacă vrei să fii bun în asta, ai nevoie de luni sau chiar ani de învăţare şi practică. Dar vrem să-ţi arătăm că programarea sau crearea de site-uri nu este un lucru atât de complicat cum pare. Vom încerca să-ți explicăm diferite aspecte ale programării web atât de bine cât putem, astfel încât să nu te simţi străin în acest domeniu și în noțiuni.
 
 Sperăm că vom fi capabili să îți trezim iubirea și interesul pentru tehnologii și, în special, în programare!
 
