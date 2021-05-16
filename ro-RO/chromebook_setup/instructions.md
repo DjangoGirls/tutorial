@@ -152,6 +152,6 @@ Creează-ți un cont [GitHub](https://github.com).
 
 Tutorialul Django Girls include o secţiune despre ceea ce se numeşte Deployment, care este procesul de luare a codului care alimentează noua aplicație web și de mutare a acesteia pe un calculator accesibil publicului (numit server), astfel încât alți oameni să-ți poată vedea munca.
 
-This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Această parte este puţin ciudată când urmezi tutorialul pe un Chromebook, deoarece folosești deja un calculator care se află pe internet (spre deosebire de un laptop, de exemplu). Totuși, este bine de stiut: poți considera Cloud 9 ca un spațiu de lucru sau munca ta în curs de desfășurare și Python Anywhere ca locul în care îți poți prezenta proiectul odată ce acesta se apropie de final.
 
-Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Așadar, creează-ți un cont nou pe Python Anywhere la [www.pythonanywhere.com](https://www.pythonanywhere.com).
