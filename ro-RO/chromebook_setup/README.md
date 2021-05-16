@@ -1,5 +1,5 @@
 # Setup Chromebook
 
-> **Note** If you already worked through the [installation steps](../installation/README.md), no need to do this again – you can skip straight ahead to [Introduction to Python](../python_introduction/README.md).
+> **Notă** Dacă ai trecut deja prin [pașii de instalare](../installation/README.md), nu este nevoie să faci acest lucru din nou – poți trece direct la [Introducere în Python](../python_introduction/README.md).
 
 {% include "/chromebook_setup/instructions.md" %}
