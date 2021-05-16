@@ -34,28 +34,28 @@ Actual, Cloud 9 îți cere să te înregistrezi cu AWS și să introduci datele 
 8. Fă click pe * Server nou *
 9. Fă click pe *Creează Mediu*
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+Acum ar trebui să vezi o interfață cu o bară laterală, o mare fereastră principală cu ceva text şi o fereastră mică în partea de jos care arată cam aşa:
 
 {% filename %}bash{% endfilename %}
 
-    nume utilizator:~/workspace $
+    numeutilizator:~/workspace $
     
 
-This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+Această zonă de jos este terminalul tău. Poți folosi terminalul pentru a trimite instrucțiuni calculatorului din Cloud 9. Poți redimensiona fereastra pentru a o face puțin mai mare.
 
-#### Glitch.com Cloud IDE
+#### IDE Cloud Glitch.com
 
-1. Go to [Glitch.com](https://glitch.com/)
-2. Sign up for an account (https://glitch.com/signup) or use your GitHub account if you have one. (See GitHub instructions below.)
-3. Click *New Project* and choose *hello-webpage*
-4. Click on the Tools dropdown list (at the bottom left side of the window), then on Terminal button to open terminal tab with a prompt like this:
+1. Mergi la [Glitch.com](https://glitch.com/)
+2. Înscrie-te pentru un cont (https://glitch.com/signup) sau folosește contul tău GitHub dacă ai unul. (Vezi instrucțiunile GitHub de mai jos.)
+3. Fă lick pe *New Project* și alege *hello-webpage*
+4. Fă click pe lista verticală de instrumente Tools (în partea din stânga jos a ferestrei), apoi pe butonul Terminal pentru a deschide fereastra terminalului cu un prompt ca acesta:
 
 {% filename %}Terminal{% endfilename %}
 
-    app@name-of-your-glitch-project:~
+    app@numele-proiectului-tău-glitch:~
     
 
-When using Glitch.com as your Cloud IDE, you don't have to create a virtual environment. Instead, create the following files manually:
+Când folosești Glitch.com ca și Cloud IDE, nu e nevoie să creezi un mediu virtual. În schimb, creează următoarele fișiere manual:
 
 {% filename %}glitch.json{% endfilename %}
 
@@ -91,7 +91,7 @@ python3 manage.py migrate
 python3 manage.py runserver $PORT
 ```
 
-Once these files are created, go to the Terminal and execute the following commands to create your first Django project:
+Odată ce aceste fișiere sunt create, mergi în Terminal și execută următoarele comenzi pentru a crea primul tău proiect Django:
 
 {% filename %}Terminal{% endfilename %}
 
