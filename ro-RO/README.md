@@ -16,25 +16,25 @@ Ai simţit vreodată că lumea este din ce în ce mai legată de tehnologii la c
 
 Ei bine, avem o veste bună pentru tine! Programarea nu este atât de complicată pe cât pare şi vrem să-ţi arătăm cât de distractivă poate fi.
 
-Acest tutorial nu te va transforma în mod magic într-o programatoare. Dacă vrei să fii bun în asta, ai nevoie de luni sau chiar ani de învăţare şi practică. Dar vrem să-ţi arătăm că programarea sau crearea de site-uri nu este un lucru atât de complicat cum pare. Vom încerca să-ți explicăm diferite aspecte ale programării web atât de bine cât putem, astfel încât să nu te simţi străin în acest domeniu și în noțiuni.
+Acest tutorial nu te va transforma în mod magic într-o programatoare. Dacă vrei să fii bună la asta, ai nevoie de luni sau chiar ani de învăţare şi practică. Dar vrem să-ţi arătăm că programarea sau crearea de site-uri nu este atât de complicată precum pare. Vom încerca să-ți explicăm diferite aspecte ale programării web atât de bine cât putem, astfel încât să nu te simţi intimidată de tehnologie.
 
-Sperăm că vom fi capabili să îți trezim iubirea și interesul pentru tehnologii și, în special, în programare!
+Sperăm că te vom putea face să iubești tehnologia la fel de mult ca noi!
 
 ## Ce vei învăţa pe parcursul acestui tutorial?
 
-La sfârșitul acestui tutorial, tu o să ai o mică aplicație web - blogul tău personal. Noi îți vom arăta cum să îți postezi blogul online, astfel încât și ceilalţi să poată aprecia munca ta!
+La sfârșitul acestui tutorial, vei avea o mică aplicație web - blogul tău personal. Noi îți vom arăta cum să îți postezi blogul online, astfel încât să fie văzut de lume!
 
 Acesta va arăta (mai mult sau mai puţin) astfel:
 
 ![Figura 0.1](images/application.png)
 
-> Dacă lucrezi cu tutorialul de sine stătător şi nu ai un mentor care te va ajuta în caz că apar ceva dificultăți, îți propunem un chat pentru tine, fii liberă să te familiarizezi acolo: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Am rugat mentorii noștri și participantele Django Girls să intre pe chat din timp în timp și să ajute pe alții cu tutorialul! Nu îți fie teamă să adresezi întrebările tale acolo!
+> Dacă lucrezi cu tutorialul de una singură şi nu ai un mentor care să te ajute în caz de probleme, avem un sistem de chat pentru tine: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Amrugat mentorii noștri și participanții anteriori să fie acolo din când în când și să-i ajute pe alții cu tutorialul! Nu-ți fie teamă să pui întrebări acolo!
 
 OK, [să începem de la început...](./how_the_internet_works/README.md)
 
 ## Dacă urmezi tutorialul de acasă
 
-Este fantastic să iei parte la un atelier Django Girls, dar suntem conştienţi de faptul că nu este întotdeauna posibil de a participa la unul ca acesta. De aceea, îți recomandăm să încerci acest tutorial chiar de acasă. Pentru cei care ne citesc de acasă, ne pregătim să facem videoclipuri care vor facilita urmărirea acestui tutorial. Ideea este în curs de desfăşurare, dar mai multe şi mai multe lucruri vor fi acoperite în curând pe canalul de YouTube [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed).
+Este fantastic să iei parte la un atelier Django Girls, dar suntem conştienţi că nu este întotdeauna posibil să participi la unul în persoană. De aceea, îte încurajăm să încerci acest tutorial chiar de acasă. Pentru cele care ne citesc de acasă, ne pregătim să facem videoclipuri care vor facilita urmărirea acestui tutorial de una singură. Ideea este în curs de desfăşurare, dar mai multe şi mai multe lucruri vor fi acoperite în curând pe canalul de YouTube [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed).
 
 În capitolele unde există un videoclip, este afișat linkul spre canalul Youtube cu video-ul concret.
 
