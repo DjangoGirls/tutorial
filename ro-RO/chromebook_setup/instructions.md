@@ -11,21 +11,21 @@ Cloud IDE este un instrument care îți oferă un editor de cod şi acces la un 
 3. Fă click pe *Server nou* și alege aplicația Django
 4. Fă click pe butonul Terminal (în partea stângă a ferestrei)
 
-Acum ar trebui să vezi o interfaţă cu o bară laterală cu butoane în stânga. Fă click pe butonul "Terminal" pentru a deschide fereastra terminală ce va afişa:
+Acum ar trebui să vezi o interfaţă cu o bară laterală cu butoane în stânga. Fă click pe butonul Terminal pentru a deschide fereastra terminalului, care va afişa:
 
 {% filename %}Terminal{% endfilename %}
 
     $
     
 
-Terminalul din PaizaCloud Cloud IDE este gata pentru comenzile dumneavoastră. Puteți redimensiona sau extinde la maxim ferestra pentru o mai bună vizualizare.
+Terminalul de pe PaizaCloud Cloud IDE este pregătit pentru instrucțiunile tale. Poți redimensiona sau maximiza această fereastră pentru a o face puțin mai mare.
 
 #### AWS Cloud9
 
-Cloud 9 curent îți cere să te înregistrezi cu informațiile AWS și cardul de credit.
+Actual, Cloud 9 îți cere să te înregistrezi cu AWS și să introduci datele cardului tău de credit.
 
 1. Instalează Cloud 9 din [magazinul de aplicații Chrome](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Mergi la [c9.io](https://c9.io) și accesați *Începe cu Cloud9 AWS*
+2. Mergi la [c9.io](https://c9.io) și fă click pe *Începe cu Cloud9 AWS*
 3. Sign up for an AWS account (requires credit card information, but you can use it for free)
 4. In the AWS Dashboard, enter *Cloud9* in the search bar and click it
 5. In the Cloud 9 dashboard, click *Create environment*
