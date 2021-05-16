@@ -1,10 +1,10 @@
-# Template extending
+# Ձևանմուշի ընդլայնում/Template extending
 
-Another nice thing Django has for you is **template extending**. What does this mean? It means that you can use the same parts of your HTML for different pages of your website.
+Django- ի մեկ այլ օգտակար բան **template extending/ձևանմուշի ընդլայնումն է ** : Ինչ է դա նշանակում? Ձեր կայքի տարբեր էջերիի համար կարող եք օգտագործել HTML- ի նույն մասերը: 
 
-Templates help when you want to use the same information or layout in more than one place. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
+Ձևանմուշներն/Templates օգնում են, երբ ուզում եք նույն տեղեկատվությունը կամ դասավորությունը օգտագործել մեկից ավելի վայրերում: Յուրաքանչյուր ֆայլում հարկավոր չէ կրկնել: Եվ եթե ուզում եք ինչ-որ բան փոխել, ապա հարկավոր չէ դա անել յուրաքանչյուր ձևանմուշում, այլ միայն մեկում:
 
-## Create a base template
+## Ստեղծեք բազային ձևանմուշ/ base template
 
 A base template is the most basic template that you extend on every page of your website.
 
