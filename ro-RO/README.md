@@ -34,13 +34,13 @@ OK, [să începem de la început...](./how_the_internet_works/README.md)
 
 ## Dacă urmezi tutorialul de acasă
 
-Este fantastic să iei parte la un atelier Django Girls, dar suntem conştienţi că nu este întotdeauna posibil să participi la unul în persoană. De aceea, îte încurajăm să încerci acest tutorial chiar de acasă. Pentru cele care ne citesc de acasă, ne pregătim să facem videoclipuri care vor facilita urmărirea acestui tutorial de una singură. Ideea este în curs de desfăşurare, dar mai multe şi mai multe lucruri vor fi acoperite în curând pe canalul de YouTube [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed).
+Este fantastic să iei parte la un atelier Django Girls, dar suntem conştienţi că nu este întotdeauna posibil să participi la unul în persoană. De aceea, îte încurajăm să încerci acest tutorial chiar de acasă. Pentru cele care ne citesc de acasă, ne pregătim să facem videoclipuri care vor facilita urmărirea acestui tutorial de una singură. Ideea este în curs de desfăşurare, dar din ce în ce mai multe lucruri vor fi acoperite în curând pe canalul de YouTube [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed).
 
-În capitolele unde există un videoclip, este afișat linkul spre canalul Youtube cu video-ul concret.
+În fiecare capitol deja acoperit, există un link către videoclipul corect.
 
 ## Despre şi contribuții
 
-Acest tutorial este susținut de [DjangoGirls](https://djangogirls.org/). Dacă găsești careva greşeli sau vrei să actualizezi acest tutorial, te rugăm să [urmezi îndrumările de contribuție](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
+Acest tutorial este menținut de [DjangoGirls](https://djangogirls.org/). Dacă găsești greșeli sau dorești să actualizezi tutorialul, te rugăm să [urmezi ghidul de contribuție](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
 ## Dorești să ne ajuți să traducem tutorialul în alte limbi?
 
@@ -48,4 +48,4 @@ Acest tutorial este susținut de [DjangoGirls](https://djangogirls.org/). Dacă 
 
 https://crowdin.com/project/django-girls-tutorial
 
-Dacă limba dorită nu este menționată pe [crowdin](https://crowdin.com/), te rugăm să [deschizi o nouă problemă pe website](https://github.com/DjangoGirls/tutorial/issues/new) și să ne informezi despre ce limbă merge vorba, astefel încât să o putem adăuga.
+Dacă limba ta nu este listată pe [crowdin](https://crowdin.com/), te rugăm să [deschizi un issue](https://github.com/DjangoGirls/tutorial/issues/new) informându-ne despre limba pe care o vrei, pentru a o putea adăuga.
