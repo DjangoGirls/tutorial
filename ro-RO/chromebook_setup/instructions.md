@@ -1,8 +1,8 @@
-Poți [sări peste această secțiune](http://tutorial.djangogirls.org/en/installation/#install-python) dacă nu vei folosi Chromebook. Dar dacă folosești deja Chromebook, experiența ta de instalare poate că a fost un pic diferită de aceasta. Și poți ignora restul instrucţiunilor de instalare.
+Poţi [sări peste această secţiune](http://tutorial.djangogirls.org/en/installation/#install-python) dacă nu foloseşti Chromebook. Dacă îl folosești, experiența de instalare va fi puțin diferită. Poți ignora restul instrucţiunilor de instalare.
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com)
 
-Cloud IDE este un instrument care îți oferă un editor de cod şi acces la un calculator care rulează pe Internet, în care poți scrie, și unde poți instala şi executa software-ul. Pe durata acestui tutorial, Cloud IDE se va comporta ca și *calculatorul tău local *. Tu vei rula comenzile în interfața terminalului la fel ca și colegii ce vor folosi Os X, Ubuntu, sau Windows, dar terminalul pe care îl vei folosi tu, este conectat la un calculator care rulează în altă parte, pe care Cloud IDE ți l-a configurat. Here are the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com). Poţi alege unul dintre programele Cloud IDE, şi să urmăreşti instrucţiunile programului Cloud IDE.
+Cloud IDE este un instrument care îți oferă un editor de cod şi acces la un calculator care rulează pe Internet, în care poți instala, scrie şi executa software-ul. Pe durata acestui tutorial, Cloud IDE se va comporta ca și *calculatorul tău local *. Tu vei rula comenzile în interfața terminalului la fel ca și colegii ce vor folosi Os X, Ubuntu, sau Windows, dar terminalul pe care îl vei folosi tu, este conectat la un calculator care rulează în altă parte, pe care Cloud IDE ți l-a configurat. Here are the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com). Poţi alege unul dintre programele Cloud IDE, şi să urmăreşti instrucţiunile programului Cloud IDE.
 
 #### PaizaCloud Cloud IDE
 
