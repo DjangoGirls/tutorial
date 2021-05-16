@@ -126,7 +126,7 @@ Django- ի մեկ այլ օգտակար բան **template extending/ձևանմո
 {% endblock %}
 ```
 
-Only one thing left. We need to connect these two templates together. This is what extending templates is all about! We'll do this by adding an extends tag to the beginning of the file. Like this:
+Մնում է միայն մեկ բան. Մենք պետք է այս երկու ձևանմուշները միացնենք միմյանց: Սա այն է, ինչ կոչվում է «ձևանմուշի ընդլայնում/extending templates»: Մենք դա կանենք ՝ ֆայլի սկզբին ընդլայնման պիտակ/ extends tag ավելացնելով: Սրա նման:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -146,6 +146,6 @@ Only one thing left. We need to connect these two templates together. This is wh
 {% endblock %}
 ```
 
-That's it! Save the file, and check if your website is still working properly. :)
+Վերջ Պահեք ֆայլը և ստուգեք, արդյոք ձեր կայքը դեռ պատշաճ կերպով աշխատում է: :) 
 
-> If you get the error `TemplateDoesNotExist`, that means that there is no `blog/base.html` file and you have `runserver` running in the console. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+> Եթե `TemplateDoesNotExist` սխալ եք ստանում, դա նշանակում է, որ `blog/base.html` ֆայլը բացակայում է, և դուք ունեք `runserver` վահանակում: Փորձեք դադարեցնել այն (միաժամանակ սեղմելով Ctrl + C - Control և C ստեղները) և վերագործարկեք սերվերը `python manage.py runserver` հրամանի միջոցով:
