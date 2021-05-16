@@ -20,13 +20,13 @@
 
 {% include "/intro_to_command_line/open_instructions.md" %}
 
-## Prompt
+## Հուշում
 
-You now should see a white or black window that is waiting for your commands.
+Այժմ դուք պետք է տեսնեք սպիտակ կամ սև պատուհան, որը սպասում է ձեր հրամաններին:
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see a `$`, like this:
+Եթե ​​ունեք Mac կամ Linux, ամենայն հավանականությամբ տողի վերջում կտեսնեք այս `$` նշանը.
 
 {% filename %}command-line{% endfilename %}
 
@@ -37,18 +37,18 @@ If you're on Mac or Linux, you probably see a `$`, like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-On Windows, you probably see a `>`, like this:
+Windows- ում, հավանաբար, տեսնում եք այս `>` նշանը. 
 
 {% filename %}command-line{% endfilename %}
 
     >
     
 
-Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+Մի փոքր վերևում կարող եք աչքի անցկացնել Linux- ի օգտագործողների հրահանգները. Մենք նման բան կտեսնենք, երբ հասնենք ձեռնարկի PythonAnyplace- ին: 
 
 <!--endsec-->
 
-Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
+Յուրաքանչյուր հրամանին նախորդելու է `$` կամ `>` նշանը և տարածությունը/space: Բայց ձեզ հարկավոր չէ դրանք տպել: Համակարգիչը դա կանի ձեր փոխարեն :)
 
 > Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
