@@ -50,9 +50,9 @@ Windows- ում, հավանաբար, տեսնում եք այս `>` նշանը.
 
 Յուրաքանչյուր հրամանին նախորդելու է `$` կամ `>` նշանը և տարածությունը/space: Բայց ձեզ հարկավոր չէ դրանք տպել: Համակարգիչը դա կանի ձեր փոխարեն :)
 
-> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
+> Մի փոքր հուշում. Նման մի բան կարող է գրվել հրամանի տողի կուրսորի դիմաց `C:\Users\ola>` կամ `Olas-MacBook-Air:~ ola$` և դա 100% -ով նորմալ է:
 
-The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
+Ցանկացած հատված, ներառյալ այս `$` կամ այս `>` նշանները, հավաքականորեն կոչվում է *command line prompt/հրամանի տող հուշում * կամ ուղղակի *prompt/հուշում* : Սովորաբար, այն պարունակում է այն թղթապանակի հասցեն, որի մեջ դուք այժմ գտնվում եք: Այն հուշում է ձեզ հրաման մուտքագրել պատուհանի մեջ:
 
 In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
 
