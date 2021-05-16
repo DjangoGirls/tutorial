@@ -125,13 +125,13 @@ Pentru a vedea mesaje de eroare detaliate, poți activa jurnalele de depanare Dj
 
 Asta va crea un fișier `debug.log` care detaliază operațiunile în Django și orice mesaje de eroare care ar putea apărea. Cu ajutorul acestui fișier este mai ușor să remediezi site-ul dacă nu funcționează.
 
-Repornirea iniţială a proiectului Glitch ar trebui să eşueze. (If you click on the top dropdown button `Show` then click on `In a New Window`, you will receive a `DisallowedHost` error message.) Do not worry about it at this stage, the tutorial will fix this as soon as you update the Django settings of your project in the `mysite/settings.py` file.
+Repornirea iniţială a proiectului Glitch ar trebui să eşueze. (Dacă faci clic pe butonul derulant de sus `Afișați` apoi faci clic pe `Într-o fereastră nouă`, vei primi un mesaj de eroare `DisallowedHost` . Nu-ți face griji în această etapă, tutorialul va remedia această problemă de îndată ce actualizezi setările Django ale proiectului în fișierul `mysite/settings.py`.
 
 ### Mediul Virtual
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Un mediu virtual (numit și virtualenv) este ca o cutie privată în care putem să punem cod de calculator util pentru un proiect la care lucrăm. Putem folosi medii virtuale pentru a păstra diverse bucăți de cod de care avem nevoie pentru diferite proiecte, pentru a nu le amesteca între proiecte.
 
-Run:
+Execută:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -142,11 +142,11 @@ Run:
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: `~=`).
+(observă că pe ultima linie conține o tildă urmată de semnul egal: `~=`).
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+Creează-ți un cont [GitHub](https://github.com).
 
 ### PythonAnywhere
 
