@@ -122,29 +122,29 @@ Windows- ում, հավանաբար, տեսնում եք այս `>` նշանը.
 
 <!--endsec-->
 
-You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
+Նման բան, հավանաբար, ձեր համակարգչում կտեսնեք: Հրամանի տող/command line բացելիս սովորաբար գտնվում եք ընթացիկ օգտվողի տնային գրացուցակում/user's home directory:
 
 * * *
 
-### Learn more about a command
+### Իմացիր ավելին հրամանի/command մասին
 
-Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
+Հրամանի տողի շատ հրամաններ ներկառուցված օգնություն ունեն: Օրինակ ՝ ահա, թե ինչպես կարելի է ավելին իմանալ հրամանի մասին, որը ցույց է տալիս, թե որ թղթապանակում եք գտնվում ներկայումս.
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X and Linux have a `man` command, which gives you help on commands. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
+OS X- ը և Linux- ը ունեն `man` հրաման, որը ձեզ օգնում է հրամանների հարցում: Փորձեք `man pwd` -ը և տեսեք, թե ինչ է ասում, կամ `man` հրամանը այլ հրամանների առաջ դրեք, որպեսզի տեսնեք նրանց օգնությունը: Սովորաբար, `man`-ի էջերը ցուցադրվում են էջ առ էջ: Օգտագործեք space bar հաջորդ էջին անցնելու համար, և ` q ` - ը `օգնությունից դուրս գալու համար:
 
 <!--endsec-->
 
 <!--sec data-title="Command Help: Windows" data-id="windows_help" data-collapse=true ces-->
 
-Adding a `/?` suffix to most commands will print the help page. You may need to scroll your command window up to see it all. Try `cd /?`.
+Օգնություն ցուցադրելու համար գրեթե ցանկացած հրամանին կարող եք ավելացնել ` /? `: Գուցե հարկ լինի ոլորել ներքև ՝ ամբողջ Օգնությունը կարդալու համար: Փորձեք մուտքագրել `cd /?`:
 
 <!--endsec-->
 
-### List files and directories
+### Նշեք ֆայլերը և գրացուցակները/directories
 
-So what's in it? It'd be cool to find out. Let's see:
+Այսպիսով ի՞նչ կա դրա մեջ: Լավ կլինի պարզել դա: Տեսնենք.
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -173,7 +173,7 @@ So what's in it? It'd be cool to find out. Let's see:
     ...
     
 
-> Note: In PowerShell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
+> Նշում. PowerShell- ում կարող եք նաև օգտագործել «ls» - ը, ինչպես Linux- ում և Mac OS X- ում:<!--endsec-->
 
 * * *
 
