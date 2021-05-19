@@ -44,11 +44,11 @@ Bir kere daha sayfaya bir bağlantı, bir url, bir view ve bir template oluştur
 
 ## Formun bulunduğu sayfaya bağlantı oluşturma
 
-Before we add the link, we need some icons to use as buttons for the link. Bu öğretici için [file-earmark-plus.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/file-earmark-plus.svg) dosyasını indirin ve `blog/templates/blog/icons/` klasörüne kaydedin.
+Linki eklemeden önce, buton olarak kullanabileceğimiz bazı ikonlara ihtiyacımız var. Bu öğretici için [file-earmark-plus.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/file-earmark-plus.svg) dosyasını indirin ve `blog/templates/blog/icons/` klasörüne kaydedin.
 
 > Not: SVG görüntüsünü indirmek için, bağlam menüsünü açın (genellikle üzerine sağ tıklayarak) ve "Bağlantıyı farklı kaydet"i seçin. Dosyayı nereye kaydedeceğinizi soran iletişim kutusunda, Django projenizin `djangogirls` dizinine gidin, içindeki `blog/templates/blog/icons/` alt dizinine girin ve dosyayı oraya kaydedin.
 
-Kod düzenleyicide `blog/templates/blog/base.html` dosyasını açma zamanı geldi. Now we can use this icon file inside the base template as follows. In the `div` element inside `header` section, we will add a link before the `h1` element:
+Kod düzenleyicide `blog/templates/blog/base.html` dosyasını açma zamanı geldi. Şimdi bu ikon dosyasını ana şablonun içinden aşağıda gösterildiği gibi kullanabiliriz. In the `div` element inside `header` section, we will add a link before the `h1` element:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
