@@ -249,7 +249,7 @@ oppure su Glitch:
 
 Congratulazioni! Hai appena creato il tuo primo sito web e lo hai avviato usando un server web! Non è fantastico?
 
-![Install worked!](images/install_worked.png)
+![Installazione completata!](images/install_worked.png)
 
 N.B. Una finestra di comando può eseguire solo una cosa alla volta e la finestra di comando che hai aperto in precedenza sta eseguendo il server web. Finché il server web è in esecuzione e in attesa di ulteriori richieste in arrivo, il terminale ammetterà del testo nuovo, ma non eseguirà nuovi comandi.
 
@@ -257,4 +257,4 @@ N.B. Una finestra di comando può eseguire solo una cosa alla volta e la finestr
 
 Per digitare ulteriori comandi mentre il server web è in esecuzione, puoi aprire una nuova finestra terminale e attivare il tuo virtualenv (per rivedere le istruzioni su come aprire una seconda finestra terminale, vedi [Introduction to the command line](../intro_to_command_line/README.md)). Per arrestare il server web, devi tornare alla finestra dove è in esecuzione e premere CTRL+C - ovvero i tasti Control e C insieme (su Windows potresti dover premere Ctrl+Break).
 
-Ready for the next step? It's time to create some content!
+Sei pronto per il prossimo passaggio? È ora di creare un po' di contenuti!
