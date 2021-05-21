@@ -115,7 +115,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 > 
 > Se stai presentando il tuo progetto su `Glitch.com`, bisogna proteggere la chiave segreta di Django, che deve rimanere confidenziale (altrimenti chiunque faccia un remix del tuo progetto potrebbe vederla):
 > 
-> - First, we are going to create a random secret key. Open the Glitch terminal again, and type the following command:
+> - Prima di tutto, si crea una chiave segreta casuale. Apri nuovamente il terminale Glitch e digita il comando seguente:
 >     
 >     {% filename %}command-line{% endfilename %}
 >     
@@ -124,7 +124,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 >           print(get_random_secret_key())'
 >     ```
 >     
->     This should display a long random string, perfect to use as a secret key for your brand new Django web site. We will now paste this key into a `.env` file that Glitch will only show you if you are the owner of the web site.
+>     Il comando dovrebbe mostrare una lunga stringa casuale, perfetta da usare come chiave segreta per il tuo nuovo sito web Django. Si incolla poi questa chiave in un file `.env` che Glitch mostrerà solamente se sei il proprietario del sito web.
 > 
 > - Create a file `.env` at the root of your project and add the following property in it:
 >     
