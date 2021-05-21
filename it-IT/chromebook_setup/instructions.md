@@ -130,9 +130,9 @@ Il riavvio iniziale del progetto Glitch potrebbe fallire. (Se selezioni il pulsa
 
 ### Ambiente virtuale
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Un ambiente virtuale (virtual environment, spesso abbreviato in virtualenv) è una specie di scatola privata in cui si può inserire un codice informatico per un progetto su cui si sta lavorando. Si usa per mantenere separati i numerosi pezzi di codice dei vari progetti, in modo da non creare confusione tra i progetti stessi.
 
-Run:
+Esegui:
 
 {% filename %}Cloud 9{% endfilename %}
 
