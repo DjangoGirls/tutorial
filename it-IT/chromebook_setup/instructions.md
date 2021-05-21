@@ -99,7 +99,7 @@ Una volta creati i file, vai al Terminale ed esegui i comandi seguenti per crear
     refresh
     
 
-In order to see detailed error messages, you can activate Django debug logs for your Glitch application. Simply add the following at the end of the `mysite/settings.py` file.
+Per poter vedere dettagliatamente i messaggi di errore, puoi attivare i log di debug di Django per la tua applicazione Glitch. Aggiungi semplicemente questa dicitura alla fine del file `mysite/settings.py`.
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -124,9 +124,9 @@ LOGGING = {
 }
 ```
 
-This will create a `debug.log` file detailing Django operations and any error messages that might come up, making it much easier to fix if your website does not work.
+Questo procedimento creerà un file `debug.log` con i dettagli sulle operazioni effettuate da Django e su eventuali messaggi di errore che potrebbero apparire, rendendone più semplice la correzione se il tuo sito web non funzionasse.
 
-The initial restarting of the Glitch project should fail. (If you click on the top dropdown button `Show` then click on `In a New Window`, you will receive a `DisallowedHost` error message.) Do not worry about it at this stage, the tutorial will fix this as soon as you update the Django settings of your project in the `mysite/settings.py` file.
+Il riavvio iniziale del progetto Glitch potrebbe fallire. (Se selezioni il pulsante a discesa in alto `Show` e poi `In a New Window`, riceverai il messaggio di errore `DisallowedHost`) Non devi preoccupartene in questa fase, il tutorial lo correggerà non appena aggiorni le impostazioni del tuo progetto di Django nel file `mysite/settings.py`.
 
 ### Ambiente virtuale
 
