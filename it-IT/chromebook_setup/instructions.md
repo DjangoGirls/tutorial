@@ -2,14 +2,14 @@ Puoi [saltare questa sezione](http://tutorial.djangogirls.org/en/installation/#i
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com)
 
-Cloud IDE è uno strumento che mette a disposizione un editor di codice e l'accesso ad un computer virtuale su cui installare, scrivere ed eseguire il software. In questo tutorial, Cloud IDE avrà la funzione di un *computer locale*. Digiterai i comandi sull'interfaccia di un terminale, come le tue compagne di corso che utilizzano OS X, Ubuntu o Windows, ma il tuo terminale sarà connesso a un computer remoto che Cloud IDE ha creato per te. Here are the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com). Puoi selezionare uno dei Cloud IDE e seguire le relative istruzioni.
+Cloud IDE è uno strumento che mette a disposizione un editor di codice e l'accesso ad un computer virtuale su cui installare, scrivere ed eseguire il software. In questo tutorial, Cloud IDE avrà la funzione di un *computer locale*. Digiterai i comandi sull'interfaccia di un terminale, come le tue compagne di corso che utilizzano OS X, Ubuntu o Windows, ma il tuo terminale sarà connesso a un computer remoto che Cloud IDE ha creato per te. Puoi trovare di seguito le istruzioni per i Cloud IDE (PaizaCloud IDE, AWS Cloud9, Glitch.com). Puoi selezionare uno dei Cloud IDE e seguire le relative istruzioni.
 
 #### PaizaCloud Cloud IDE
 
-1. Andare su [PaizaCloud Cloud IDE](https://paiza.cloud/)
-2. Creare un account
+1. Vai su [PaizaCloud Cloud IDE](https://paiza.cloud/)
+2. Crea un account
 3. Clicca su *Nuovo server* oppure <0>New Server</0> e scegli l'app Django
-4. Fare click sul pulsante Terminal (sul lato sinistro della finestra)
+4. Seleziona il pulsante Terminal (sul lato sinistro della pagina)
 
 Ora dovresti vedere un'interfaccia con una barra laterale e dei pulsanti sulla sinistra. Fai click sul pulante "Terminal" per aprire la finestra del terminale con il prompt, così:
 
@@ -43,11 +43,11 @@ Ora dovresti vedere un'interfaccia con una barra laterale, una grossa finestra p
 
 Questa finestra in basso è il tuo terminale. Puoi usare il terminale per inviare istruzioni al computer remoto Cloud9. Puoi cambiare le dimensioni della finestra e renderla più grande.
 
-#### Glitch.com Cloud IDE
+#### Glitch.com
 
-1. Go to [Glitch.com](https://glitch.com/)
-2. Sign up for an account (https://glitch.com/signup) or use your GitHub account if you have one. (See GitHub instructions below.)
-3. Click *New Project* and choose *hello-webpage*
+1. Vai su [Glitch.com](https://glitch.com/)
+2. Crea un account (https://glitch.com/signup) o, se lo possiedi, usa il tuo account GitHub (di seguito puoi trovare le istruzioni su GitHub).
+3. Seleziona *New Project* e scegli *hello-webpage*
 4. Click on the Tools dropdown list (at the bottom left side of the window), then on Terminal button to open terminal tab with a prompt like this:
 
 {% filename %}Terminal{% endfilename %}
