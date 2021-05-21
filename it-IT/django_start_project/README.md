@@ -255,6 +255,6 @@ N.B. Una finestra di comando può eseguire solo una cosa alla volta e la finestr
 
 > Abbiamo esaminato come funzionano i server web nel capitolo **Come funziona il capitolo** .
 
-Per digitare ulteriori comandi mentre il server web è in esecuzione, puoi aprire una nuova finestra terminale e attivare il tuo virtualenv (per rivedere le istruzioni su come aprire una seconda finestra terminale, vedi [Introduction to the command line](../intro_to_command_line/README.md)). To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
+Per digitare ulteriori comandi mentre il server web è in esecuzione, puoi aprire una nuova finestra terminale e attivare il tuo virtualenv (per rivedere le istruzioni su come aprire una seconda finestra terminale, vedi [Introduction to the command line](../intro_to_command_line/README.md)). Per arrestare il server web, devi tornare alla finestra dove è in esecuzione e premere CTRL+C - ovvero i tasti Control e C insieme (su Windows potresti dover premere Ctrl+Break).
 
 Ready for the next step? It's time to create some content!
