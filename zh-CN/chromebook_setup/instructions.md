@@ -46,7 +46,7 @@ PaizaCloud Cloud IDE的终端是为你的指示准备的。 你可以调整窗�
 #### Glitch.com Cloud IDE
 
 1. 前往 [Glitch.com](https://glitch.com/)
-2. Sign up for an account (https://glitch.com/signup) or use your GitHub account if you have one. (See GitHub instructions below.)
+2. 注册一个帐户 (https://glitch.com/signup) 或使用您的 GitHub 帐户（如果您已有Github账户）。(参阅下面的 GitHub 说明)
 3. Click *New Project* and choose *hello-webpage*
 4. Click on the Tools dropdown list (at the bottom left side of the window), then on Terminal button to open terminal tab with a prompt like this:
 
