@@ -2,13 +2,13 @@
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com)
 
-Cloude IDE (云集成开发环境）是为你提供代码编辑器，访问在Internet上运行的计算机，并且可以在期间安装、编写和运行程序的工具。 在此教程中， cloude IDE 将作为你的<本地计算机> 你仍将会在终端界面运行命令，就像你的同学使用OS X, Ubuntu, or Windows一样，但是你的终端将会连接一台cloude IDE（云开发）为你设置的计算机上运行。 Here are the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com). 你可以选择其中一个cloude IDEs, 然后根据指示进行操作。
+Cloude IDE (云集成开发环境）是为你提供代码编辑器，访问在Internet上运行的计算机，并且可以在期间安装、编写和运行程序的工具。 在此教程中， cloude IDE 将作为你的<本地计算机> 你仍将会在终端界面运行命令，就像你的同学使用OS X, Ubuntu, 或者Windows时一样，但是你的终端将会连接一台cloude IDE（云集成开发环境）为你设置的其他地方的计算机。 以下是cloude IDEs 的操作说明（PaizaCloud Cloud IDE, AWS Cloud9）. 你可以选择其中一个cloud IDE, 然后根据说明进行操作。
 
 #### PaizaCloud 云集成开发环境
 
-1. 转到 [PaizaCloud Cloud IDE](https://paiza.cloud/)
+1. 前往 [PaizaCloud Cloud IDE](https://paiza.cloud/)
 2. 注册一个账户
-3. 点击新的*服务器*，然后选择Django应用
+3. 点击*新服务器*，然后选择Django应用
 4. 点击“终端‘’按钮（在窗口的左侧）
 
 现在你可看见一个带有侧边栏、左边按钮的界面。 点击“Terminal”按钮打开终端窗口，如下所示：
@@ -45,7 +45,7 @@ PaizaCloud Cloud IDE的终端是为你的指示准备的。 你可以调整窗�
 
 #### Glitch.com Cloud IDE
 
-1. Go to [Glitch.com](https://glitch.com/)
+1. 前往 [Glitch.com](https://glitch.com/)
 2. Sign up for an account (https://glitch.com/signup) or use your GitHub account if you have one. (See GitHub instructions below.)
 3. Click *New Project* and choose *hello-webpage*
 4. Click on the Tools dropdown list (at the bottom left side of the window), then on Terminal button to open terminal tab with a prompt like this:
