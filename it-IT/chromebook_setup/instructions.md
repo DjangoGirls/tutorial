@@ -48,14 +48,14 @@ Questa finestra in basso è il tuo terminale. Puoi usare il terminale per inviar
 1. Vai su [Glitch.com](https://glitch.com/)
 2. Crea un account (https://glitch.com/signup) o, se lo possiedi, usa il tuo account GitHub (di seguito puoi trovare le istruzioni su GitHub).
 3. Seleziona *New Project* e scegli *hello-webpage*
-4. Click on the Tools dropdown list (at the bottom left side of the window), then on Terminal button to open terminal tab with a prompt like this:
+4. Seleziona l'elenco a discesa "Strumenti" (Tools, nella sezione della pagina in basso a sinistra), poi premi sul pulsante Terminale (Terminal) per aprire una scheda terminale con un prompt come il seguente:
 
 {% filename %}Terminal{% endfilename %}
 
     app@name-of-your-glitch-project:~
     
 
-When using Glitch.com as your Cloud IDE, you don't have to create a virtual environment. Instead, create the following files manually:
+Quando utilizzi Glitch.com come il tuo Cloud IDE, non è necessario creare un ambiente virtuale. Puoi invece creare manualmente i seguenti file:
 
 {% filename %}glitch.json{% endfilename %}
 
@@ -91,7 +91,7 @@ python3 manage.py migrate
 python3 manage.py runserver $PORT
 ```
 
-Once these files are created, go to the Terminal and execute the following commands to create your first Django project:
+Una volta creati i file, vai al Terminale ed esegui i comandi seguenti per creare il tuo primo progetto Django:
 
 {% filename %}Terminal{% endfilename %}
 
