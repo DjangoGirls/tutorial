@@ -221,40 +221,40 @@ o questo se stai usando Glitch:
     
     
 
-If you are on Windows and this fails with `UnicodeDecodeError`, use this command instead:
+Se usi Windows e il comando `UnicodeDecodeError` non funziona, puoi usare questo:
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Now you need to check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
+Ora devi solo controllare se il tuo sito web è in esecuzione. Apri il tuo browser (Firefox, Chrome, Safari, Internet Explorer o quello che utilizzi di solito) e inserisci questo indirizzo:
 
 {% filename %}browser{% endfilename %}
 
     http://127.0.0.1:8000/
     
 
-If you're using a Chromebook and Cloud9, instead click the URL in the pop-up window that should have appeared in the upper right corner of the command window where the web server is running. The URL will look something like:
+Se stai utilizzando un Chromebook e Cloud9, seleziona invece l'URL nella finestra a comparsa che dovrebbe apparire nell'angolo in alto a destra della finestra di comando dove il server web è in esecuzione. L'URL sarà simile a questo:
 
 {% filename %}browser{% endfilename %}
 
     https://<a bunch of letters and numbers>.vfs.cloud9.us-west-2.amazonaws.com
     
 
-or on Glitch:
+oppure su Glitch:
 
     https://name-of-your-glitch-project.glitch.me
     
 
-Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?
+Congratulazioni! Hai appena creato il tuo primo sito web e lo hai avviato usando un server web! Non è fantastico?
 
 ![Install worked!](images/install_worked.png)
 
-Note that a command window can only run one thing at a time, and the command window you opened earlier is running the web server. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
+N.B. Una finestra di comando può eseguire solo una cosa alla volta e la finestra di comando che hai aperto in precedenza sta eseguendo il server web. Finché il server web è in esecuzione e in attesa di ulteriori richieste in arrivo, il terminale ammetterà del testo nuovo, ma non eseguirà nuovi comandi.
 
 > Abbiamo esaminato come funzionano i server web nel capitolo **Come funziona il capitolo** .
 
-To type additional commands while the web server is running, open a new terminal window and activate your virtualenv -- to review instructions on how to open a second terminal window, see [Introduction to the command line](../intro_to_command_line/README.md). To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
+Per digitare ulteriori comandi mentre il server web è in esecuzione, puoi aprire una nuova finestra terminale e attivare il tuo virtualenv (per rivedere le istruzioni su come aprire una seconda finestra terminale, vedi [Introduction to the command line](../intro_to_command_line/README.md)). To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
 
 Ready for the next step? It's time to create some content!
