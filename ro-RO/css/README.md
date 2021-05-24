@@ -80,13 +80,13 @@ h1 a, h2 a {
 
 `h1 a` este un Selector CSS. Asta înseamnă că aplicăm stilurile noastre la orice element `a` în interiorul unui element `h1` ; selectorul `h2 a ` face același lucru pentru elementele `h2`. Așa că atunci când avem ceva de genul `<h1><a href="">link</a></h1>`, stilul `h1 a` va fi aplicat. În acest caz, noi îi spunem să își schimbe culoarea în `#C25100`, care reprezintă culoarea oranj. Sau poți pune culoarea ta proprie aici, dar asigură-te că are un contrast bun cu un fundal alb!
 
-Într-un fișier CSS determinăm stilurile pentru elementele într-un fișier HTML. Prima metodă de a identifica elementele e prin numele unui element. Le ținem minte ca tag-urile din secția despre HTML. Astfel de lucruri ca `a`, `h1`, și `body` sunt exemple de nume de elemente. De asemenea putem identifica elementele după atributul `class` sau atributul `id`. Numele de clase și id le definim singuri. Clasele definesc grupuri de elemente, și id-urile indică la niște elemente anumite. For example, you could identify the following element by using the element name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+Într-un fișier CSS determinăm stilurile pentru elementele din fișierul HTML. Primul mod în care identificăm elementele este cu numele elementului. Poate îți amintești de acestea ca tag-uri din secţiunea HTML. Lucruri ca `a`, `h1`, şi `bodz` sunt exemple de nume de elemente. De asemenea putem identifica elementele după atributul `class` sau atributul `id`. Numele de clasă și id le definești singură. Clasele definesc grupuri de elemente, iar id-urile indică elemente specifice. De exemplu, ai putea identifica următorul element folosind numele elementului `a`, clasa `external_link`, sau id-ul `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
 ```
 
-Putem afla mai multe despre [selectorii CSS la w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
+Poți citi mai multe despre [selectori CSS pe w3school](http://www.w3schools.com/cssref/css_selectors.asp).
 
 De asemenea trebuie să-i spunem șablonului nostru HTML că am adăugat CSS. Deschidem fișierul `blog/templates/blog/post_list.html` și adăugăm această linie la începutul acestuia:
 
