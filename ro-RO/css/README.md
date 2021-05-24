@@ -63,11 +63,11 @@ Hai să creăm un fișier CSS acum, pentru a adăuga propriul stil pe pagina ta 
 
 E timpul să scrii niște CSS! Deschide fișierul `blog/static/css/blog.css` în editorul de cod.
 
-Nu ne vom adînci prea mult în personalizarea și învățarea CSS. La sfîrșitul acestei pagini este o recomandare pentru un curs gratis de CSS dacă este dorința de a afla mai multe.
+Nu vom învăța în detaliu despre personalizarea CSS aici. La sfârșitul acestei pagini există o recomandare pentru un curs gratuit de CSS, dacă vrei să aflii mai multe.
 
-Dar hai să facem cel puțin ceva. Poate am putea schimba culoarea header-ului? Pentru a înțelege culorile, calculatoarele ulilizează niște coduri speciale. Aceste coduri încep cu `#` urmate de 6 litere (A-F) și numere (0-9). De exemplu, codul pentru culoarea albastră este `#0000FF`. Putem găsi codurile a multe culori aici: http://www.colorpicker.com/. Poți de asemenea utiliza [culori predefinite](http://www.w3schools.com/colors/colors_names.asp), precum `red` - roșu și `green` - verde.
+Dar hai să facem cel puțin ceva. Poate am putea schimba culoarea header-ului? Pentru a înțelege culorile, calculatoarele ulilizează niște coduri speciale. Aceste coduri încep cu `#` urmat de 6 litere (A-F) și numere (0-9). De exemplu, codul pentru culoarea albastră este `#0000FF`. Poți găsi codurile pentru mai multe culori aici: http://www.colorpicker.com/. Poți de asemenea utiliza [culori predefinite](http://www.w3schools.com/colors/colors_names.asp), precum `red` - roșu și `green` - verde.
 
-Adaugăm următorul cod în fișierul `blog/static/css/blog.css`:
+În fișierul `blog/static/css/blog.css` adaugă următorul cod:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -78,7 +78,7 @@ h1 a, h2 a {
 
 ```
 
-`h1 a` este un Selector CSS. Acesta înseamnă că utilizăm stilurile pentru fiecare element `a` în element `h1`; selector `h2 a` face lucru asemănător, doar pentru elemente `h2`. Așa că atunci cînd vom avea ceva ca `<h1><a href="">link</a></h1>`, stilul `h1 a` va fi folosit. În acest caz, noi îi spunem să își schimbe culoarea în `#C25100`, care reprezintă culoarea oranj. Sau puteți să utilizați altă culoare, dar să asigurați că există un contrast bun cu fundalul deschis!
+`h1 a` este un Selector CSS. Asta înseamnă că aplicăm stilurile noastre la orice element `a` în interiorul unui element `h1` ; selectorul `h2 a ` face același lucru pentru elementele `h2`. Așa că atunci când avem ceva de genul `<h1><a href="">link</a></h1>`, stilul `h1 a` va fi aplicat. În acest caz, noi îi spunem să își schimbe culoarea în `#C25100`, care reprezintă culoarea oranj. Sau poți pune culoarea ta proprie aici, dar asigură-te că are un contrast bun cu un fundal alb!
 
 Într-un fișier CSS determinăm stilurile pentru elementele într-un fișier HTML. Prima metodă de a identifica elementele e prin numele unui element. Le ținem minte ca tag-urile din secția despre HTML. Astfel de lucruri ca `a`, `h1`, și `body` sunt exemple de nume de elemente. De asemenea putem identifica elementele după atributul `class` sau atributul `id`. Numele de clase și id le definim singuri. Clasele definesc grupuri de elemente, și id-urile indică la niște elemente anumite. For example, you could identify the following element by using the element name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
