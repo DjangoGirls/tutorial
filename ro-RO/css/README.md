@@ -88,7 +88,7 @@ h1 a, h2 a {
 
 Poți citi mai multe despre [selectori CSS pe w3school](http://www.w3schools.com/cssref/css_selectors.asp).
 
-De asemenea trebuie să-i spunem șablonului nostru HTML că am adăugat CSS. Deschidem fișierul `blog/templates/blog/post_list.html` și adăugăm această linie la începutul acestuia:
+De asemenea, trebuie să-i spunem șablonului nostru HTML că am adăugat CSS. Deschide fișierul `blog/templates/blog/post_list.html` în editorul de cod și adaugă această linie la începutul acestuia:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -96,7 +96,7 @@ De asemenea trebuie să-i spunem șablonului nostru HTML că am adăugat CSS. De
 {% load static %}
 ```
 
-Noi doar încărcăm fișierele statice aici. :) Între tag-urile `<head>` și `</head>`, după referințele la fișierele CSS de Bootstrap, adaugăm această linie:
+Noi doar încărcăm fișierele statice aici. :) Între tag-urile `<head>` și `</head>`, după link-urile către fișierele CSS Bootstrap, adaugă această linie:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -104,9 +104,9 @@ Noi doar încărcăm fișierele statice aici. :) Între tag-urile `<head>` și `
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-Browser-ul citește fișierele în ordinea în care sunt transmise, așa că trebuie să ne asigurăm că se află în locul potrivit. În caz contrar, codul din fișierul nostru poate fi rescris de codul din fișierele Bootstrap. În acest moment i-am spus șablonului unde se află fișierul nostru CSS.
+Browser-ul citește fișierele în ordinea în care sunt transmise, așa că trebuie să ne asigurăm că se află în locul potrivit. În caz contrar, codul din fișierul nostru poate fi rescris de codul din fișierele Bootstrap. Tocmai i-am spus șablonului unde se află fișierul nostru CSS.
 
-Fișierul nostru trebuie să arate așa:
+Fișierul tău trebuie să arate așa:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -135,7 +135,7 @@ Fișierul nostru trebuie să arate așa:
 </html>
 ```
 
-Bine, salvăm fișierul și actualizăm pagina!
+Bine, salvează fișierul și actualizează pagina!
 
 ![Figura 14.2](images/color2.png)
 
@@ -149,7 +149,7 @@ body {
 }
 ```
 
-Adăugăm aceasta la CSS-ul nostru, salvăm fișierul și ne uităm cum lucrează!
+Adaugă asta la codul tău CSS, salvează fișierul și vezi cum funcționează!
 
 ![Figura 14.3](images/margin2.png)
 
