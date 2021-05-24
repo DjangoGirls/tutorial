@@ -256,10 +256,10 @@ Salvează fișierele și actualizează site-ul.
 
 ![Figura 14.4](images/final.png)
 
-Uau! Arată super, așa-i? Hai să ne uităm la codul care l-am copiat ca să găsim locurile unde am adăugat clasele în HTML și le-am folosit în CSS. Unde am face schimbarea dacă am dori ca data să fie de culoare turcoaz?
+Uau! Arată super, așa-i? Hai să ne uităm la codul pe care l-am copiat ca să găsim locurile unde am adăugat clasele în HTML și le-am folosit în CSS. Unde ai face schimbarea dacă ai dori ca data să fie de culoare turcoaz?
 
-Să nu ne temem să schimbăm acest CSS un pic și să modificăm niște lucruri. Jucîndu-ne cu CSS putem înțelege ce fac diferite lucruri. Dacă ceva se strică, fără griji - putem oricînd să anulăm schimbarea!
+Nu-ți fie teamă să experimentezi cu acest CSS și să încerci să modifici unele lucruri. Joaca cu CSS te poate ajuta să înțelegi ce fac diferite lucruri. Dacă strici ceva, nu-ți face griji – poți oricând să anulezi schimbarea!
 
-We really recommend taking the free online courses "Basic HTML & HTML5" and "Basic CSS" on [freeCodeCamp](https://learn.freecodecamp.org/). They can help you learn all about making your websites prettier with HTML and CSS.
+Îți recomandăm să urmezi cursurile online gratuite "Basic HTML & HTML5" şi "Basic CSS" pe [freeCodeCamp](https://learn.freecodecamp.org/). Ele te pot ajuta să înveți cum să-ți înfrumusețezi site-urile cu HTML și CSS.
 
 Gata pentru capitolul următor?! :)
