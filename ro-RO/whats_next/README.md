@@ -34,10 +34,10 @@ Da! Există *o mulțime de resurse* online pentru a învăța tot felul de abili
 - [Coursera Python specialization](https://www.coursera.org/specializations/python) - unele lecții video pot fi auditate gratuit și poți primi un certificat de Coursera dacă participi la aceste cursuri
 - [Pythonfor Everybody](https://www.py4e.com/) - o versiune gratuită și deschisă a cursului Coursera Python for Everybody specialization
 
-#### Working with data
+#### Lucrul cu date
 
-- [Codecademy's data science course](https://www.codecademy.com/learn/paths/data-science)
-- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
-- [Dataquest](https://www.dataquest.io/) – the first 30 "missions" are free
+- [Cursul de data science oferit de Codecademy](https://www.codecademy.com/learn/paths/data-science)
+- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – poți audita cele mai multe cursuri gratuit, dar dacă vrei un certificat sau credite pentru o calificare în învăţământul superior, atunci acesta va costa bani
+- [Dataquest](https://www.dataquest.io/) - primele 30 de "misiuni" sunt gratuite
 
-We can't wait to see what you build next!
+Abia așteptăm să vedem ce construiești în continuare!
