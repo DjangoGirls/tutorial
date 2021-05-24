@@ -32,6 +32,6 @@ Poate te întrebi de ce instalăm acest program special de editat cod, în loc s
 
 În primul rând, codul trebuie să fie **text simplu**, iar problema cu programele ca Word și Textedit este că ele nu produc text simplu, ci text îmbogățit (cu fonturi și formatare), folosind formate ca [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
+Al doilea motiv este că editoarele de cod sunt specializate în editarea codului, astfel încât ele pot oferi funcționalități utile precum colorarea codului în funcție de semnificația lui sau închiderea automată a ghilimelelor.
 
-We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
+Vom vedea toate acestea în acțiune mai târziu. În curând, vei ajunge să te gândești la vechiul tău editor de cod ca unul dintre instrumentele tale preferate. :)
