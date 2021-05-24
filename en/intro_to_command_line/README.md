@@ -18,27 +18,7 @@ The window, which is usually called the __command line__ or __command-line inter
 
 To start some experiments we need to open our command-line interface first.
 
-
-<!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
-
-Go to Start menu → Windows System → Command Prompt.
-
-> On older versions of Windows, look in Start menu → All Programs → Accessories → Command Prompt.
-
-<!--endsec-->
-
-
-<!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
-
-Go to Applications → Utilities → Terminal.
-
-<!--endsec-->
-
-<!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
-
-It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, just Google it. :)
-
-<!--endsec-->
+{% include "/intro_to_command_line/open_instructions.md" %}
 
 ## Prompt
 
@@ -47,7 +27,7 @@ You now should see a white or black window that is waiting for your commands.
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
 
-If you're on Mac or Linux, you probably see `$`, just like this:
+If you're on Mac or Linux, you probably see a `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -58,25 +38,28 @@ $
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
 
-On Windows, it's a `>` sign, like this:
+On Windows, you probably see a `>`, like this:
 
 {% filename %}command-line{% endfilename %}
 ```
 >
 ```
+
+Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+
 <!--endsec-->
 
-Each command will be prepended by this sign and one space, but you don't have to type it. Your computer will do it for you. :)
+Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
 
 > Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
 The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
-In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
+In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
 
 ## Your first command (YAY!)
 
-Let's start with something simple. Type this command:
+Let's start by typing this command:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -138,13 +121,31 @@ $ pwd
 > cd
 C:\Users\olasitarska
 ```
-> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
+> Note: 'cd' stands for 'change directory'. With PowerShell you can use pwd just like on Linux or Mac OS X.
 
 <!--endsec-->
 
 You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
 
 ---
+
+### Learn more about a command
+
+Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
+
+<!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
+
+OS X and Linux have a `man` command, which gives you help on commands. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
+
+<!--endsec-->
+
+
+<!--sec data-title="Command Help: Windows" data-id="windows_help" data-collapse=true ces-->
+
+Adding a `/?` suffix to most commands will print the help page. You may need to scroll your command window up to see it all. Try `cd /?`.
+
+<!--endsec-->
+
 
 ### List files and directories
 
@@ -170,13 +171,13 @@ Music
 ```
 > dir
  Directory of C:\Users\olasitarska
-05/08/2014 07:28 PM <DIR>      Applications
-05/08/2014 07:28 PM <DIR>      Desktop
-05/08/2014 07:28 PM <DIR>      Downloads
-05/08/2014 07:28 PM <DIR>      Music
+05/08/2020 07:28 PM <DIR>      Applications
+05/08/2020 07:28 PM <DIR>      Desktop
+05/08/2020 07:28 PM <DIR>      Downloads
+05/08/2020 07:28 PM <DIR>      Music
 ...
 ```
-> Note: In powershell you can also use 'ls' like on Linux and Mac OS X.
+> Note: In PowerShell you can also use 'ls' like on Linux and Mac OS X.
 <!--endsec-->
 
 ---
@@ -185,12 +186,28 @@ Music
 
 Now, let's go to our Desktop directory:
 
-<!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
+<!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
 $ cd Desktop
 ```
+<!--endsec-->
+
+<!--sec data-title="Change current directory: Linux" data-id="Linux_move_to" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+```
+$ cd Desktop
+```
+
+Note that
+the directory name "Desktop" might be translated
+to the language of your Linux account.
+If that's the case, you'll need to replace `Desktop`
+with the translated name;
+for example, `Schreibtisch` for German.
+
 <!--endsec-->
 
 <!--sec data-title="Change current directory: Windows" data-id="windows_move_to" data-collapse=true ces-->
@@ -249,7 +266,7 @@ $ mkdir practice
 ```
 <!--endsec-->
 
-This little command will create a folder with the name `practice` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
 > PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
 
@@ -280,7 +297,7 @@ test
 > cd practice
 > mkdir test
 > dir
-05/08/2014 07:28 PM <DIR>      test
+05/08/2020 07:28 PM <DIR>      test
 ```
 <!--endsec-->
 
@@ -413,6 +430,7 @@ move              | mv                       | move file                  | **mo
 mkdir             | mkdir                    | create a new directory     | **mkdir testdirectory**
 rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**
 rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**
+[CMD] /?          | man [CMD]                | get help for a command     | **cd /?** (Windows) or **man cd** (Mac OS / Linux)
 
 These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
