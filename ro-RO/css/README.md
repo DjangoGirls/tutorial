@@ -153,7 +153,7 @@ Adaugă asta la codul tău CSS, salvează fișierul și vezi cum funcționează!
 
 ![Figura 14.3](images/margin2.png)
 
-Poate putem personaliza font-ul din header? Inserăm aceasta în `<head>` din fișierul `blog/templates/blog/post_list.html`:
+Poate putem personaliza font-ul din header? Inserează asta în `<head>` în fișierul `blog/templates/blog/post_list.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -161,9 +161,9 @@ Poate putem personaliza font-ul din header? Inserăm aceasta în `<head>` din fi
 <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
-Ca și mai înainte, notăm ordinea și plasăm înaintea link-ului la `blog/static/css/blog.css`. Această linie va importa un font numit *Lobster* din Google Fonts (https://www.google.com/fonts).
+Ca și înainte, verifică ordinea și plasează linia înainte de link-ul către `blog/static/css/blog.css`. Această linie va importa un font numit *Lobster* din Google Fonts (https://www.google.com/fonts).
 
-Găsim declarația blocului `h1 a` (codul între parantezele `{` și `}`) în fișierul CSS `blog/static/css/blog.css`. Acum adăugăm linia `font-family: 'Lobster';` între paranteze și actualizăm pagina:
+Găsește blocul de declarații `h1 a` (codul dintre paranteze `{` și `}`) în fișierul CSS `blog/static/css/blog. ss`. Acum adăugăm linia `font-family: 'Lobster';` între paranteze și actualizăm pagina:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
