@@ -10,29 +10,29 @@ După aceea, urmărește Django Girls pe [Facebook](http://facebook.com/djangogi
 
 ### Poți să recomanzi niște resurse suplimentare?
 
-Da! There are a *lot* of resources online for learning all kinds of programming skills – it can be pretty daunting to work out where to go next, but we've got you covered. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
+Da! Există *o mulțime de resurse* online pentru a învăța tot felul de abilități de programare - poate fi destul de greu să îți dai seama unde să mergi mai departe, dar te ajutăm noi. Indiferent de interesele tale înainte să ajungi la Django Girls și de alte interese trezite pe parcursul tutorialului, aici sunt niște resurse gratuite (sau în mare parte gratuite) pe care le poți folosi pentru a ajunge unde vrei să fii.
 
 #### Django
 
-- Our other book, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
-- [Django's official tutorial](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
-- [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
-- [Django for Everybody Specialization](https://www.coursera.org/specializations/django) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
+- Cealaltă carte a noastră, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
+- [Tutorialul oficial Django](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
+- [Lecții video despre noțiuni de bază în Django](http://www.gettingstartedwithdjango.com/)
+- [Django for Everybody Specialization](https://www.coursera.org/specializations/django) – unele lecții video pot fi auditate gratuit și poti primi un certificat Coursera dacă participi la aceste cursuri
 
-#### HTML, CSS and JavaScript
+#### HTML, CSS și JavaScript
 
-- [Codecademy's web development course](https://www.codecademy.com/learn/paths/web-development)
+- [Cursul de web development oferit de Codecademy](https://www.codecademy.com/learn/paths/web-development)
 - [freeCodeCamp](https://www.freecodecamp.org/)
 
 #### Python
 
-- [Codecademy's Python course](https://www.codecademy.com/learn/learn-python)
-- [Google's Python course](https://developers.google.com/edu/python/)
-- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – the initial exercises are free
-- [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
-- [edX](https://www.edx.org/course?search_query=python) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
-- [Coursera's Python specialization](https://www.coursera.org/specializations/python) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
-- [Python for Everybody](https://www.py4e.com/) - a free and open version of the Coursera Python for Everybody specialization
+- [Cursul Python oferit de Codecademy](https://www.codecademy.com/learn/learn-python)
+- [Cursul Python oferit de Google](https://developers.google.com/edu/python/)
+- Cartea [Learn Python The Hard Way](http://learnpythonthehardway.org/book/) - exercițiile inițiale sunt gratuite
+- [Tutoriale New Coder](http://newcoder.io/tutorials/) – asta include o varietate de exemple practice despre cum poti utiliza Python
+- [edX](https://www.edx.org/course?search_query=python) – poți audita cele mai multe cursuri gratuit, dar dacă vrei un certificat sau credite pentru o calificare în învăţământul superior, atunci acesta va costa bani
+- [Coursera Python specialization](https://www.coursera.org/specializations/python) - unele lecții video pot fi auditate gratuit și poți primi un certificat de Coursera dacă participi la aceste cursuri
+- [Pythonfor Everybody](https://www.py4e.com/) - o versiune gratuită și deschisă a cursului Coursera Python for Everybody specialization
 
 #### Working with data
 
