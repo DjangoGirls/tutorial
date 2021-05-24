@@ -1,22 +1,22 @@
 # CSS - fă-l frumos!
 
-Blog-ul nostru încă arată destul de urât, corect? E timpul să-l facem frumos! Pentru asta vom folosi CSS.
+Blog-ul nostru încă arată destul de urât, nu-i așa? E timpul să-l facem frumos! Pentru asta vom folosi CSS.
 
 ## Ce este CSS?
 
-Cascading Style Sheets (CSS) este un limbaj folosit pentru a descrie aspectul vizual și formatarea unui website scris într-un limbaj de marcaj (ca HTML). Poate fi socotit ca machiaj pentru pagina noastră web :)
+Cascading Style Sheets (CSS) este un limbaj folosit pentru a descrie aspectul vizual și formatarea unui website scris într-un limbaj de marcaj (ca HTML). Poate fi considerat ca machiaj pentru pagina noastră web :)
 
-Dar noi nu vrem să începem de la început, așa-i? Și iarăși vom folosi ceva ce programatorii au lansat gratis pe net. Nu e foarte vesel să reinventezi bicicleta.
+Dar nu vrem să o luăm de la început, nu-i așa? Încă o dată, vom folosi ceva ce programatorii au lansat gratuit pe internet. Reinventarea roții nu este distractivă, la urma urmei.
 
-## Să folosim procesul de Bootstrap!
+## Hai să folosim Bootstrap!
 
 Bootstrap este unul din cele mai populare framework-uri HTML și CSS pentru dezvoltarea website-urilor frumoase: https://getbootstrap.com/
 
 A fost scris de programatorii care au lucrat la Twitter. Acum e dezvoltat de voluntari din toată lumea!
 
-## Instalăm Bootstrap
+## Instalarea Bootstrap
 
-Pentru a instala Bootstrap, deschideți fișierul `.html` în editorul de cod și adăugați codul următor în secție `<head>`:
+Pentru a instala Bootstrap, deschide fișierul `.html` în editorul de cod și adaugă codul următor în secțiune `<head>`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -24,7 +24,7 @@ Pentru a instala Bootstrap, deschideți fișierul `.html` în editorul de cod ș
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 ```
 
-Aceasta nu adaugă nici un fișier la proiect, ci doar face referință la fișiere care există pe Internet. Deschideți website-ul și actualizați pagina. Iată-l!
+Aceasta nu adaugă niciun fișier la proiect, ci doar face referință la fișiere care există pe Internet. Deschide website-ul și actualizează pagina. Iat-o!
 
 ![Figura 14.1](images/bootstrap1.png)
 
@@ -36,7 +36,7 @@ Deja arată mai frumos!
 
 ### Unde se pun fișierele statice pentru Django
 
-Django deja știe unde să găsească fișierele statice pentru aplicația "admin" preconfigurată. Acum trebuie doar să adăugați niște fișiere statice pentru aplicația `blog`.
+Django deja știe unde să găsească fișierele statice pentru aplicația "admin" preconfigurată. Acum trebuie doar să adaugi niște fișiere statice pentru aplicația `blog`.
 
 Facem asta prin crearea unui dosar numit `static` înăuntrul blog-ului:
 
