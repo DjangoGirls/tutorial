@@ -48,11 +48,11 @@ Facem asta prin crearea unui dosar numit `static` înăuntrul blog-ului:
     └── mysite
     
 
-Django va găsi automat orice fișiere numite "static" în orice mapă a aplicației. Apoi va putea să le folosească conținutul ca fișiere statice.
+Django va găsi automat orice dosar numit "static" în oricare din dosarele aplicațiilor tale. Apoi va putea folosi conţinutul lor ca fişiere statice.
 
-## Primul fișier CSS!
+## Primul tău fișier CSS!
 
-Să creăm un fișier CSS acum pentru a adăuga stil propriu paginii web. Creăm o mapă nouă numită `css` în interiorul mapei `static`. Apoi creăm un nou fișier numit `blog.css` înăuntrul mapei `css`. Gata?
+Hai să creăm un fișier CSS acum, pentru a adăuga propriul stil pe pagina ta web. Creează un director nou numit `css` în interiorul directorului `static`. Apoi creează un nou fișier numit `blog.css` în interiorul directorului `css`. Gata?
 
     djangogirls
     └─── blog
@@ -61,7 +61,7 @@ Să creăm un fișier CSS acum pentru a adăuga stil propriu paginii web. Creăm
                    └─── blog.css
     
 
-E timpul pentru a scrie niște CSS! Deschidem fișierul `blog/static/css/blog.css` în editorul de cod.
+E timpul să scrii niște CSS! Deschide fișierul `blog/static/css/blog.css` în editorul de cod.
 
 Nu ne vom adînci prea mult în personalizarea și învățarea CSS. La sfîrșitul acestei pagini este o recomandare pentru un curs gratis de CSS dacă este dorința de a afla mai multe.
 
