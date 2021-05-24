@@ -66,9 +66,14 @@ You can think of a model in the database as a spreadsheet with columns (fields) 
 
 To keep everything tidy, we will create a separate application inside our project. It is very nice to have everything organized from the very beginning. To create an application we need to run the following command in the console (from `djangogirls` directory where `manage.py` file is):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}Mac OS X and Linux:{% endfilename %}
 ```
 (myvenv) ~/djangogirls$ python manage.py startapp blog
+```
+
+{% filename %}Windows:{% endfilename %}
+```
+(myvenv) C:\Users\Name\djangogirls> python manage.py startapp blog
 ```
 
 You will notice that a new `blog` directory is created and it contains a number of files now. The directories and files in our project should look like this:
@@ -76,9 +81,9 @@ You will notice that a new `blog` directory is created and it contains a number 
 ```
 djangogirls
 ├── blog
-│   ├── __init__.py
 │   ├── admin.py
 │   ├── apps.py
+│   ├── __init__.py
 │   ├── migrations
 │   │   └── __init__.py
 │   ├── models.py
@@ -86,14 +91,18 @@ djangogirls
 │   └── views.py
 ├── db.sqlite3
 ├── manage.py
-└── mysite
-    ├── __init__.py
-    ├── settings.py
-    ├── urls.py
-    └── wsgi.py
+├── mysite
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── myvenv
+│   └── ...
+└── requirements.txt
+
 ```
 
-After creating an application, we also need to tell Django that it should use it. We do that in the file `mysite/settings.py`. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `]`. So the final product should look like this:
+After creating an application, we also need to tell Django that it should use it. We do that in the file `mysite/settings.py` -- open it in your code editor. We need to find `INSTALLED_APPS` and add a line containing `'blog.apps.BlogConfig',` just above `]`. So the final product should look like this:
 
 {% filename %}mysite/settings.py{% endfilename %}
 ```python
@@ -104,7 +113,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog',
+    'blog.apps.BlogConfig',
 ]
 ```
 
@@ -112,22 +121,21 @@ INSTALLED_APPS = [
 
 In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
 
-Let's open `blog/models.py`, remove everything from it, and write code like this:
+Let's open `blog/models.py` in the code editor, remove everything from it, and write code like this:
 
 {% filename %}blog/models.py{% endfilename %}
 ```python
+from django.conf import settings
 from django.db import models
 from django.utils import timezone
 
 
 class Post(models.Model):
-    author = models.ForeignKey('auth.User')
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
     text = models.TextField()
-    created_date = models.DateTimeField(
-            default=timezone.now)
-    published_date = models.DateTimeField(
-            blank=True, null=True)
+    created_date = models.DateTimeField(default=timezone.now)
+    published_date = models.DateTimeField(blank=True, null=True)
 
     def publish(self):
         self.published_date = timezone.now()
@@ -155,7 +163,7 @@ Now we define the properties we were talking about: `title`, `text`, `created_da
 - `models.DateTimeField` – this is a date and time.
 - `models.ForeignKey` – this is a link to another model.
 
-We will not explain every bit of code here since it would take too much time. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
+We will not explain every bit of code here since it would take too much time. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.2/ref/models/fields/#field-types).
 
 What about `def publish(self):`? This is exactly the `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method if you want. The naming rule is that we use lowercase and underscores instead of spaces. For example,  a method that calculates average price could be called `calculate_average_price`.
 
@@ -187,7 +195,6 @@ Django prepared a migration file for us that we now have to apply to our databas
 Operations to perform:
   Apply all migrations: blog
 Running migrations:
-  Rendering model states... DONE
   Applying blog.0001_initial... OK
 ```
 
