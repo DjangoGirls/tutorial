@@ -163,7 +163,7 @@ Poate putem personaliza font-ul din header? Inserează asta în `<head>` în fi�
 
 Ca și înainte, verifică ordinea și plasează linia înainte de link-ul către `blog/static/css/blog.css`. Această linie va importa un font numit *Lobster* din Google Fonts (https://www.google.com/fonts).
 
-Găsește blocul de declarații `h1 a` (codul dintre paranteze `{` și `}`) în fișierul CSS `blog/static/css/blog. ss`. Acum adăugăm linia `font-family: 'Lobster';` între paranteze și actualizăm pagina:
+Găsește blocul de declarații `h1 a` (codul dintre paranteze `{` și `}`) în fișierul CSS `blog/static/css/blog. ss`. Acum adaugă linia `font-family: 'Lobster';` între paranteze și actualizează pagina:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -178,9 +178,9 @@ h1 a, h2 a {
 
 Grozav!
 
-Cum am menționat mai înainte, CSS are conceptul de clase. Acestea ne permit să numim o parte din codul HTML și să folosim stiluri doar pentru această parte fără a influența celelalte părți. Aceasta poate fi foarte util! Poate avem două div-uri care fac ceva diferit (de exemplu header-ul nostru și postarea). O clasă poate să ne ajute să le facem să arate diferit.
+Cum am menționat mai înainte, CSS are conceptul de clase. Acestea îți permit să numești o parte din codul HTML și să aplici stiluri numai la această parte, fără a afecta alte părți. Acest lucru poate fi foarte util! Poate ai două div-uri care fac ceva diferit (de exemplu, header şi postare). O clasă te poate ajuta să le faci să arate diferit.
 
-Go ahead and name some parts of the HTML code. Replace the `header` that contains your header with the following:
+Acum numește câteva părți ale codului HTML. Înlocuiește `header` care conține header-ul tău cu următorul cod:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -192,7 +192,7 @@ Go ahead and name some parts of the HTML code. Replace the `header` that contain
 </header>
 ```
 
-And now add a class `post` to your `article` containing a blog post.
+Acum adaugă o clasă `post` la `article` care conține un post de blog.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -204,84 +204,19 @@ And now add a class `post` to your `article` containing a blog post.
 </article>
 ```
 
-Acum vom adăuga blocuri de declarare la selectoare diferite. Selectoarele care încep cu `.` se referă la clase. Sunt o mulțime de tutoriale și explicări a CSS pe web care ne pot ajuta să înțelegem codul următor. Pentru moment, doar copiază-l și inserează-l in fișierul `blog/static/css/blog.css`:
+Acum vom adăuga blocuri de declarare la selectoare diferite. Selectoarele care încep cu `.` se referă la clase. Există multe tutoriale și explicații despre CSS pe Internet care te ajută să înțelegi următorul cod. Pentru moment, doar copiază-l și inserează-l în fișierul `blog/static/css/blog.css`:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-.page-header {
-    background-color: #C25100;
-    margin-top: 0;
-    margin-bottom: 40px;
-    padding: 20px 20px 20px 40px;
-}
-
-.page-header h1,
-.page-header h1 a,
-.page-header h1 a:visited,
-.page-header h1 a:active {
-    color: #ffffff;
-    font-size: 36pt;
-    text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4 {
-    font-family: 'Lobster', cursive;
-}
-
-.date {
-    color: #828282;
-}
-
-.save {
-    float: right;
-}
-
-.post-form textarea,
-.post-form input {
-    width: 100%;
-}
-
-.top-menu,
-.top-menu:hover,
-.top-menu:visited {
-    color: #ffffff;
-    float: right;
-    font-size: 26pt;
-    margin-right: 20px;
-}
-
-.post {
-    margin-bottom: 70px;
-}
-
-.post h2 a,
-.post h2 a:visited {
-    color: #000000;
-}
-
-.post > .date,
-.post > .actions {
-    float: right;
-}
-
-.btn-default,
-.btn-default:visited {
-    color: #C25100;
-    background: none;
-    border-color: #C25100;
-}
-
-.btn-default:hover {
-    color: #FFFFFF;
-    background-color: #C25100;
-}
+<0>
+    <1>published: {{ post.published_date }}</1>
+    <2>{{ post.title }}</2>
+    <3>{{ post.text|linebreaksbr }}</3>
+</0>
 ```
 
-Apoi selectează codul HTML care afișează posturile cu declarațiile de clase. Înlocuiește asta:
+Apoi înconjoară codul HTML care afișează postările cu declarații de clase. Înlocuiește asta:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -317,7 +252,7 @@ Apoi selectează codul HTML care afișează posturile cu declarațiile de clase.
 </main>
 ```
 
-Salvăm fișierele și actualizăm site-ul.
+Salvează fișierele și actualizează site-ul.
 
 ![Figura 14.4](images/final.png)
 
