@@ -1,10 +1,10 @@
 Există o mulţime de programe diferite de editare şi, în mare măsură, alegerea se reduce la preferinţa personală. Cei mai mulți programatori Python utilizează MPI-uri (Medii de Programare Integrate) complexe, însă extrem de puternice, precum PyCharm. Pentru un începător, totuși, ele sunt mai puțin adecvate; recomandările noastre sunt la fel de puternice, dar mult mai simple.
 
-Sugestiile noastre sunt mai jos, dar nu ezitați să întrebați trainer-ul dvs. ce preferințe au - va fi mai ușor să obțineți ajutor de la ei.
+Sugestiile noastre sunt mai jos, dar nu ezita să o întrebi pe antrenoarea ta ce preferințe are - va fi mai ușor să obții ajutor de la ea.
 
 ## Visual Studio Code
 
-Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+Visual Studio Code este un editor de cod dezvoltat de Microsoft pentru Windows, Linux şi macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
 
 [Descarcă-l de aici](https://code.visualstudio.com/)
 
