@@ -6,13 +6,13 @@
 
 Պրակտիկայի ժամանակն է:
 
-The first thing we need in our blog is, obviously, a page to display one post, right?
+Բլոգում առաջին բանը, որ մեզ պետք է, հատուկ գրառումներ բացելու էջն է, այնպես չէ՞:
 
-We already have a `Post` model, so we don't need to add anything to `models.py`.
+Մենք դեռ ունենք `Post` մոդել, ուստի հարկավոր չէ որևէ լրացուցիչ կոդ ավելացնել մեր `models.py` ֆայլին:
 
-## Create a template link to a post's detail
+## Ստեղծեք ձևանմուշի հղում դեպի գրառման մանրամասներ
 
-We will start with adding a link inside `blog/templates/blog/post_list.html` file. Open it in the code editor, and so far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+Մենք կսկսենք այս `blog/templates/blog/post_list.html` ֆայլի ներսում հղում ավելացնելով: Բացեք այն ձեր կոդերի խմբագրում, և այժմ այն ​​պետք է ունենա այսպիսի տեսք. {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -30,7 +30,7 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
 {% endblock %}
 ```
 
-{% raw %}We want to have a link from a post's title in the post list to the post's detail page. Let's change `<h2><a href="">{{ post.title }}</a></h2>` so that it links to the post's detail page:{% endraw %}
+{% raw %} Մենք կցանկանայինք ցուցակում գրառման վերնագրից (post's title in the post list) հղում ունենալ գրառման մանրամասների (post's detail) էջին: Եկեք փոխենք `<h2><a href="">{{ post.title }}</a></h2>` այնպես, որ այն հղվի հաղորդագրության մանրամասն էջին ՝ {% endraw %}
 
 {% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 
@@ -38,11 +38,11 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
 <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
 ```
 
-{% raw %}Time to explain the mysterious `{% url 'post_detail' pk=post.pk %}`. As you might suspect, the `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!{% endraw %}
+{% raw %} toամանակն է բացատրել խորհրդավոր `{% url 'post_detail' pk=post.pk %}`: Ինչպես կարող եք ենթադրել, այս `{% %}`նշումը նշանակում է, որ մենք օգտագործում ենք Django ձևանմուշի պիտակները/ Django template tags.: Այս անգամ մենք կօգտագործենք այն մեկը, որը մեզ համար URL կստեղծի: {% endraw %}
 
-The `post_detail` part means that Django will be expecting a URL in `blog/urls.py` with name=post_detail
+` post_detail ` մասը նշանակում է, որ Django- ն սպասում է URL- ի`blog/urls.py` անունով = post_detail
 
-And how about `pk=post.pk`? `pk` is short for primary key, which is a unique identifier for each record in a database. Every Django model has a field which serves as its primary key, and whatever other name it has, it can also be referred to as "pk". Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a field named "id" holding a number that increases for each record, i.e. 1, 2, 3) and adds it as a field to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
+Իսկ ինչ վերաբերում է `pk=post.pk`- ին: `pk`- ն կարճ բանալին է, որը եզակի նույնացուցիչ է տվյալների բազայում յուրաքանչյուր գրառման համար: Յուրաքանչյուր Django մոդել ունի մի դաշտ, որը ծառայում է որպես իր հիմնական բանալի, և նրա ցանկացած այլ անուն կարող է նաև անվանվել «pk»: Քանի որ մենք չենք սահմանել հատուկ առաջնային բանալի մեր `Post` մոդելի մեջ, Django- ն կստեղծի մեկը մեզ համար (անխոս, դա կլինի մի թիվ, որը յուրաքանչյուր հաղորդագրության համար ավելանում է մեկով, ինչպես 1, 2, 3) և այն ավելացնում է ` pk ` անունով դաշտին ՝ մեր յուրաքանչյուր գրառման համար: We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
 
 Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
 
