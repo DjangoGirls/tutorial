@@ -196,9 +196,9 @@ No translations matched your search {% raw %}`{% if ... %} ... {% endif %}` - ը
 
 ## Ստատիկ ֆայլերի թարմացվումը սերվերում
 
-Servers like PythonAnywhere like to treat "static files" (like CSS files) differently from Python files, because they can optimise for them to be loaded faster. As a result, whenever we make changes to our CSS files, we need to run an extra command on the server to tell it to update them. The command is called `collectstatic`.
+Python- ի նման սերվերները ցանկացած այլ վայրում սիրում են ստեղծել «ստատիկ ֆայլեր» (օրինակ ՝ CSS ֆայլեր) Python ֆայլերից առանձին, քանի որ դրանք կարող են օպտիմալացնել, որպեսզի դրանք ավելի արագ բեռնվեն: Արդյունքում, ամեն անգամ, երբ մենք փոփոխություններ ենք կատարում մեր CSS ֆայլերում, մենք պետք է սերվերի վրա գործադրենք լրացուցիչ հրաման ՝ ասելու, որ դրանք թարմացնի: Հրամանը կոչվում է `collectstatic`:
 
-Start by activating your virtualenv if it's not still active from earlier (PythonAnywhere uses a command called `workon` to do this, it's just like the `source myenv/bin/activate` command you use on your own computer):
+Սկսեք ակտիվացնելով ձեր virtualenv- ը, եթե այն արդեն ակտիվ չէ (PythonAnywhere- ը դրա համար օգտագործում է `workon` կոչվող հրամանը, սա նույնն է, ինչ `source myenv/bin/activate` հրամանը, որը դուք օգտագործում եք ձեր սեփական համակարգչում ):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -207,8 +207,8 @@ Start by activating your virtualenv if it's not still active from earlier (Pytho
     [...]
     
 
-The `manage.py collectstatic` command is a bit like `manage.py migrate`. We make some changes to our code, and then we tell Django to *apply* those changes, either to the server's collection of static files, or to the database.
+`manage.py collectstatic` հրամանը փոքր-ինչ նման է < `manage.py migrate`-ին: Մենք որոշ փոփոխություններ ենք կատարում մեր կոդի մեջ, այնուհետև ասում ենք, որ Django- ն *apply* / <0>կիրառի</0> այդ փոփոխությունները սերվերում կամ տվյալների բազայում ստատիկ ֆայլերի հավաքածուի մեջ:
 
-In any case, we're now ready to hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (from the menu button in the upper right of the console) and hit **Reload**, and then look at the https://subdomain.pythonanywhere.com page to see the result.
+Ամեն դեպքում, մենք այժմ պատրաստ ենք անցնել ["Web" page](https://www.pythonanywhere.com/web_app_setup/) / <0>«Վեբ» էջ</0> (վահանակի վերևի աջ անկյունում գտնվող կոճակի ընտրացանկից) և կտտացնել **Reload** / <1>Վերաբեռնել</1>, և այնուհետև անցնել այս հղումով https: // page subdomain.pythonanywhere.com արդյունքը տեսնելու համար:
 
-And that should be it. Congrats! :)
+Այսքանը: Դու արեցիր դա!
