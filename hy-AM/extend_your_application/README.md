@@ -42,19 +42,19 @@
 
 ` post_detail ` մասը նշանակում է, որ Django- ն սպասում է URL- ի`blog/urls.py` անունով = post_detail
 
-Իսկ ինչ վերաբերում է `pk=post.pk`- ին: `pk`- ն կարճ բանալին է, որը եզակի նույնացուցիչ է տվյալների բազայում յուրաքանչյուր գրառման համար: Յուրաքանչյուր Django մոդել ունի մի դաշտ, որը ծառայում է որպես իր հիմնական բանալի, և նրա ցանկացած այլ անուն կարող է նաև անվանվել «pk»: Քանի որ մենք չենք սահմանել հատուկ առաջնային բանալի մեր `Post` մոդելի մեջ, Django- ն կստեղծի մեկը մեզ համար (անխոս, դա կլինի մի թիվ, որը յուրաքանչյուր հաղորդագրության համար ավելանում է մեկով, ինչպես 1, 2, 3) և այն ավելացնում է ` pk ` անունով դաշտին ՝ մեր յուրաքանչյուր գրառման համար: We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
+Իսկ ինչ վերաբերում է `pk=post.pk`- ին: `pk`- ն կարճ բանալին է, որը եզակի նույնացուցիչ է տվյալների բազայում յուրաքանչյուր գրառման համար: Յուրաքանչյուր Django մոդել ունի մի դաշտ, որը ծառայում է որպես իր հիմնական բանալի, և նրա ցանկացած այլ անուն կարող է նաև անվանվել «pk»: Քանի որ մենք չենք սահմանել հատուկ առաջնային բանալի մեր `Post` մոդելի մեջ, Django- ն կստեղծի մեկը մեզ համար (անխոս, դա կլինի մի թիվ, որը յուրաքանչյուր հաղորդագրության համար ավելանում է մեկով, ինչպես 1, 2, 3) և այն ավելացնում է ` pk ` անունով դաշտին ՝ մեր յուրաքանչյուր գրառման համար: Մենք մուտք ենք գործում հիմնական բանալին ՝ մուտքագրելով ` post.pk `, նույն կերպ, ինչպես մուտք ենք գործում այլ դաշտեր (`title/վերնագիր`, `author/հեղինակ`, etc.) մեր `Post/Հրապարակել ` օբյեկտ:
 
-Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
+Այժմ, երբ մենք գնանք http://127.0.0.1:8000/, մենք կունենանք սխալ (ինչպես սպասվում էր, քանի որ մենք դեռ URL կամ *view/դիտում* չունենք `post_detail`- ի համար): Դա նման տեսք կունենա: 
 
 ![NoReverseMatch error](images/no_reverse_match2.png)
 
-## Create a URL to a post's detail
+## Ստեղծեք URL ՝ post's detail/գրառման մանրամասներ էջի համար
 
-Let's create a URL in `urls.py` for our `post_detail` *view*!
+Եկեք `urls.py`- ում ստեղծենք URL մեր `post_detail` *view* համար:
 
-We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
+Մենք ուզում ենք, որ մեր առաջին հաղորդագրության մանրամասները ցուցադրվեն այս **URL** - ում ՝ http://127.0.0.1:8000/post/1/
 
-Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Open the `blog/urls.py` file in the code editor, and add the line `path('post/<int:pk>/', views.post_detail, name='post_detail'),` so that the file looks like this:
+Եկեք `blog/urls.py` ֆայլում URL կազմենք ՝ Django- ին ուղղելու համար `post_detail`, անունով *view/դիտումը*-ն , որը ցույց կտա բլոգի մի ամբողջ գրառում: Բացեք `blog/urls.py` ֆայլը կոդերի խմբագրում և ավելացրեք այս տողը (`path('post/<int:pk>/', views.post_detail, name='post_detail'),`), որպեսզի ֆայլն այսպիսի տեսք ունենա.
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
