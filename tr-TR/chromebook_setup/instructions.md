@@ -147,7 +147,7 @@ Run:
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+Bir [GitHub](https://github.com) hesabı oluşturun.
 
 ### PythonAnywhere
 
