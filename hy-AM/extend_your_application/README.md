@@ -104,9 +104,9 @@ Post.objects.get(pk=pk)
 
 Լավ նորությունն այն է, որ դուք իրականում կարող եք ստեղծել ձեր սեփական `Page not found` / չգտնված էջը/ և այն դարձնել այնքան գեղեցիկ, որքան ցանկանում եք: Բայց դա հիմա այդքան էլ կարևոր չէ, ուստի մենք այն բաց կթողնենք:
 
-Լավ, ժամանակն է մեր `views.py` ֆայլին *view*/դիտում </0> ավելացնել:
+Լավ, ժամանակն է մեր `views.py` ֆայլին *view* /դիտում ավելացնել:
 
-In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called `views.post_detail`. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
+`blog/urls.py`- ում մենք ստեղծեցինք URL կանոն `post_detail` անունով, որը վերաբերում է `views.post_detail` կոչվող դիտմանը: This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
 
 We should open `blog/views.py` in the code editor and add the following code near the other `from` lines:
 
