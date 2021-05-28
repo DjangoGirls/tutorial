@@ -68,11 +68,11 @@ urlpatterns = [
 ]
 ```
 
-This part `post/<int:pk>/` specifies a URL pattern – we will explain it for you:
+Այս `post/<int:pk>/` մասը նշում է URL- ի օրինակը. Մենք ձեզ կբացատրենք ստորև.
 
-- `post/` means that the URL should begin with the word **post** followed by a **/**. So far so good.
-- `<int:pk>` – this part is trickier. It means that Django expects an integer value and will transfer it to a view as a variable called `pk`.
-- `/` – then we need a **/** again before finishing the URL.
+- `post/` /գրառում նշանակում է, որ URL- ը պետք է սկսվի **post** բառով, որին կհաջորդի **/**: Առայժմ ամեն բան կարգին է:
+- `<int:pk>` - այս հատվածը ավելի բարդ է: Դա նշանակում է, որ Django- ն ակնկալում է ամբողջ թվային արժեք և այն կփոխանցի view-ին որպես `pk` կոչվող փոփոխական:
+- `/` - ապա մեզ պետք է կրկին այս նշանը **/**, մինչև url- ի ավարտը:
 
 That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
 
