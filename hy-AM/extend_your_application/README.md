@@ -74,19 +74,19 @@ urlpatterns = [
 - `<int:pk>` - այս հատվածը ավելի բարդ է: Դա նշանակում է, որ Django- ն ակնկալում է ամբողջ թվային արժեք և այն կփոխանցի view-ին որպես `pk` կոչվող փոփոխական:
 - `/` - ապա մեզ պետք է կրկին այս նշանը **/**, մինչև url- ի ավարտը:
 
-That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
+Սա նշանակում է, որ եթե ձեր բրաուզերում մուտքագրեք սա `http://127.0.0.1:8000/post/5/` , Django- ն պետք է հասկանա, որ ձեզ հարկավոր է *view*-ն որը կոչվող է ` post_detail `, և և փոխանցել այն տեղեկատվությունը, որը ` pk ` *հավասար է ` 5 ` այս <1>view*-ում:
 
-OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! The server has stopped running again. Have a look at the console – as expected, there's yet another error!
+Լավ, մենք URL- ի նոր օրինակ ենք ավելացրել `blog/urls.py`-ում: Եկեք թարմացնենք էջը ՝ http://127.0.0.1:8000/ Boom! Սերվերը կրկին դադարեցրել է աշխատանքը: Հայացք գցեք կոնսոլին. Ինչպես և սպասվում էր, ևս մեկ սխալ կա:
 
 ![AttributeError](images/attribute_error2.png)
 
-Do you remember what the next step is? It's adding a view!
+Հիշու՞մ եք, թե որն է հաջորդ քայլը: Դա view-ի/տեսակետ է ավելացնում:
 
-## Add a post's detail view
+## Ավելացնել հաղորդագրության մանրամասն տեսք/post's detail view
 
-This time our *view* is given an extra parameter, `pk`. Our *view* needs to catch it, right? So we will define our function as `def post_detail(request, pk):`. Note that this parameter must have the exact same name as the one we specified in `urls` (`pk`). Also note that omitting this variable is incorrect and will result in an error!
+Այս անգամ մեր *view*-ին/ տեսակետին տրվում է լրացուցիչ պարամետր, `pk`. Մեր *view*-ն պետք է որսա, այնպես չէ՞: Այսպիսով, մենք մեր գործառույթը կսահմանենք որպես `def post_detail(request, pk):`. Նկատի ունեցեք, որ այս պարամետրը պետք է ունենա ճիշտ նույն անունը, ինչ որ մենք նշեցինք `urls` (`pk`) ներսում. Նկատի ունեցեք նաև, որ այս փոփոխականը բաց թողնելը սխալ է և կհանգեցնի սխալի:
 
-Now, we want to get one and only one blog post. To do this, we can use querysets, like this:
+Այժմ մենք ուզում ենք ստանալ մեկ և միայն մեկ բլոգային հաղորդագրություն: Դա անելու համար մենք կարող ենք օգտագործել հարցաթերթիկներ, ինչպես հետևյալը.
 
 {% filename %}{{ warning_icon }} blog/views.py{% endfilename %}
 
