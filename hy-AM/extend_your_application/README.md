@@ -106,7 +106,7 @@ Post.objects.get(pk=pk)
 
 Լավ, ժամանակն է մեր `views.py` ֆայլին *view* /դիտում ավելացնել:
 
-`blog/urls.py`- ում մենք ստեղծեցինք URL կանոն `post_detail` անունով, որը վերաբերում է `views.post_detail` կոչվող դիտմանը: This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
+`blog/urls.py`- ում մենք ստեղծեցինք URL կանոն `post_detail` անունով, որը վերաբերում է `views.post_detail` կոչվող դիտմանը: Սա նշանակում է, որ Django- ն `blog/views.py`- ի ներսում `post_detail` անունով գործառույթ կսպասարկի ներկայացնելու համար:
 
 We should open `blog/views.py` in the code editor and add the following code near the other `from` lines:
 
