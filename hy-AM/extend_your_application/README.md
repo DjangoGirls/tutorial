@@ -162,7 +162,7 @@ def post_detail(request, pk):
 
 Կրկին մենք երկարացնում ենք `base.html`- ը: `content`/ <0> բովանդակություն </0> բլոկում մենք ցուցադրում ենք հրապարակման ամսաթիվը (եթե գոյություն ունի հրապարակված_ թվականը), վերնագիրն ու տեքստը: Բայց մենք պետք է քննարկենք մի քանի կարևոր բաներ, ճիշտ է՞:
 
-{% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ...` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
+No translations matched your search {% raw %}`{% if ... %} ... {% endif %}` - ը ձևանմուշի պիտակ է, որը մենք կարող ենք օգտագործել, եթե ինչ-որ բան փորձելու կարիք ունենանք: (Հիշո՞ւմ եք եթե ... `if... կառուցվածքը Python- ի «Ներածություն» գլխից:) Այս բաժնում մենք ուզում ենք ստուգել, ​​թե արդյոք մեր գրառման <code>published_date` -ն /հրապարակված_թվականը պարունակում է տվյալներ, թե ոչ:{% endraw %}
 
 Լավ, մենք կարող ենք թարմացնել մեր էջը և տեսնել, թե արդյո՞ք `TemplateDoesNotExist` - ը այլևս չկա:
 
@@ -170,9 +170,9 @@ def post_detail(request, pk):
 
 Այո դա աշխատում է:
 
-# Deploy time!
+# Տեղակայման ժամանակն է:
 
-It'd be good to see if your website still works on PythonAnywhere, right? Let's try deploying again.
+Լավ կլինի ստուգել, ​​որ կայքը դեռ աշխատում է PythonAnywhere- ում, ճիշտ չէ՞: Եկեք նորից կատարենք տեղակայումը:
 
 {% filename %}command-line{% endfilename %}
 
@@ -183,7 +183,7 @@ It'd be good to see if your website still works on PythonAnywhere, right? Let's 
     $ git push
     
 
-Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
+Հետո, [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/)-ում:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -192,9 +192,9 @@ Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+(Հիշեք, որ `<your-pythonanywhere-domain>` - ը փոխարինեք ձեր PythonAnywhere օգտվողի անունով, առանց չակերտների (անկյունային փակագծերի:)
 
-## Updating the static files on the server
+## Ստատիկ ֆայլերի թարմացվումը սերվերում
 
 Servers like PythonAnywhere like to treat "static files" (like CSS files) differently from Python files, because they can optimise for them to be loaded faster. As a result, whenever we make changes to our CSS files, we need to run an extra command on the server to tell it to update them. The command is called `collectstatic`.
 
