@@ -1,10 +1,10 @@
 {% set warning_icon = '<span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this code!" ></span>' %}
 
-# Ընդլայնել ձեր դիմումը
+# Ընդլայնել հավելվածը.
 
-We've already completed all the different steps necessary for the creation of our website: we know how to write a model, URL, view and template. We also know how to make our website pretty.
+Մենք արդեն ավարտել ենք մեր կայքի ստեղծման համար անհրաժեշտ բոլոր տարբեր քայլերը. Մենք գիտենք, թե ինչպես գրել մոդել, URL, դիտում և ձևանմուշ: Մենք նաև գիտենք, թե ինչպես կարելի է գեղեցիկ դարձնել մեր կայքը:
 
-Time to practice!
+Պրակտիկայի ժամանակն է:
 
 The first thing we need in our blog is, obviously, a page to display one post, right?
 
