@@ -94,17 +94,17 @@ urlpatterns = [
 Post.objects.get(pk=pk)
 ```
 
-But this code has a problem. If there is no `Post` with the given `primary key` (`pk`) we will have a super ugly error!
+Բայց այս ծածկագիրը խնդիր ունի: Եթե ​​`primary key` (`pk`) -ում (տրված առաջնային բանալում) `Post`/գրառում չկա, մենք կունենանք շատ տգեղ սխալ:
 
 ![DoesNotExist error](images/does_not_exist2.png)
 
-We don't want that! But luckily Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
+Մենք դա չենք ուզում: Բայց բարեբախտաբար, Django- ն շրջանցելու միջոց ունի, որը կկարգավորի դա մեզ համար. `get_object_or_404`: Այն դեպքում, երբ չկա `Post`/Հաղորդագրություն տրված ` pk ` -ի համար, մենք կստանանք շատ ավելի լավ էջ, որը կոչվում է `Page Not Found 404`/ Էջը չի գտնվել):
 
 ![Page not found](images/404_2.png)
 
-The good news is that you can actually create your own `Page not found` page and make it as pretty as you want. But it's not super important right now, so we will skip it.
+Լավ նորությունն այն է, որ դուք իրականում կարող եք ստեղծել ձեր սեփական `Page not found` / չգտնված էջը/ և այն դարձնել այնքան գեղեցիկ, որքան ցանկանում եք: Բայց դա հիմա այդքան էլ կարևոր չէ, ուստի մենք այն բաց կթողնենք:
 
-OK, time to add a *view* to our `views.py` file!
+Լավ, ժամանակն է մեր `views.py` ֆայլին *view*/դիտում </0> ավելացնել:
 
 In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called `views.post_detail`. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
 
