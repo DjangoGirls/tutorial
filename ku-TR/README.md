@@ -6,11 +6,11 @@
 
 ## بەخێربێیت
 
-بەخێربێیت بۆ فێرکاری کچانی جەنگۆ! ئێمه خۆشحاڵین بە دیتنی ئێوە :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
+بەخێربێیت بۆ فێرکاری کچانی جەنگۆ! ئێمه خۆشحاڵین بە دیتنی ئێوە بە سەردانی ئێوە بۆ ئێرە خۆشحاڵین :-) لەو فێرکارییەدا، دەتانبەین بۆ سەفەرێک لەژێر ناوی تەکنۆلۆژیای وێب، ئەو دەرفەتە دەخوڵقێنین کە سەرنجتان رابکێشین بۆ پێداچوونەوەیەک بەسەر هەموو ئەو وردە بەشانە کە پێویستە لەگەڵ یەکتری بن بۆ ئەوەی وێب لەسەرگەڕ بێت وەکوو دەیزانین.
 
 As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine. :)
 
-## Introduction
+## پێشەکی
 
 Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
 
