@@ -108,7 +108,7 @@ Post.objects.get(pk=pk)
 
 `blog/urls.py`- ում մենք ստեղծեցինք URL կանոն `post_detail` անունով, որը վերաբերում է `views.post_detail` կոչվող դիտմանը: Սա նշանակում է, որ Django- ն `blog/views.py`- ի ներսում `post_detail` անունով գործառույթ կսպասարկի ներկայացնելու համար:
 
-We should open `blog/views.py` in the code editor and add the following code near the other `from` lines:
+Ժամանակն է բացել `blog/views.py` ֆայլը կոդի խմբագրում և տողերի կողքին ավելացնել `from` հետևյալ տողերը.
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -116,7 +116,7 @@ We should open `blog/views.py` in the code editor and add the following code nea
 from django.shortcuts import render, get_object_or_404
 ```
 
-And at the end of the file we will add our *view*:
+Եվ ֆայլի վերջում մենք կավելացնենք մեր *view* -ն:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -126,21 +126,21 @@ def post_detail(request, pk):
     return render(request, 'blog/post_detail.html', {'post': post})
 ```
 
-Yes. It is time to refresh the page: http://127.0.0.1:8000/
+Այո Էջը թարմացնելու ժամանակն է ՝ http://127.0.0.1:8000/
 
 ![Post list view](images/post_list2.png)
 
-It worked! But what happens when you click a link in blog post title?
+Աշխատում է! Ի՞նչ է պատահում, եթե փորձեք հետևել հաղորդագրության վերնագրի հղմանը:
 
 ![TemplateDoesNotExist error](images/template_does_not_exist2.png)
 
-Oh no! Another error! But we already know how to deal with it, right? We need to add a template!
+Օ ոչ! Եվս մեկ սխալ! Բայց մենք արդեն գիտենք, թե ինչպես վարվել դրա հետ, ճիշտ է: Մենք պետք է ձևանմուշ/template ավելացնենք:
 
-## Create a template for the post details
+## Ստեղծեք ձևանմուշի հղում գրառման մանրամասների համար
 
-We will create a file in `blog/templates/blog` called `post_detail.html`, and open it in the code editor.
+Մենք `blog/templates/blog`-ում կստեղծենք ֆայլ, որը կոչվում է `post_detail.html`, և կբացենք այն կոդերի խմբագրում:
 
-Enter the following code:
+Մուտքագրեք հետևյալ ծածկագիրը.
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -160,15 +160,15 @@ Enter the following code:
 {% endblock %}
 ```
 
-Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
+Կրկին մենք երկարացնում ենք `base.html`- ը: `content`/ <0> բովանդակություն </0> բլոկում մենք ցուցադրում ենք հրապարակման ամսաթիվը (եթե գոյություն ունի հրապարակված_ թվականը), վերնագիրն ու տեքստը: Բայց մենք պետք է քննարկենք մի քանի կարևոր բաներ, ճիշտ է՞:
 
 {% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ...` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
 
-OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
+Լավ, մենք կարող ենք թարմացնել մեր էջը և տեսնել, թե արդյո՞ք `TemplateDoesNotExist` - ը այլևս չկա:
 
 ![Post detail page](images/post_detail2.png)
 
-Yay! It works!
+Այո դա աշխատում է:
 
 # Deploy time!
 
