@@ -1,8 +1,8 @@
-> For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA) video.
+> Ընթերցողների համար տանը. Այս գլուխն ընդգրկված է [ Installing Python & Code Editor ](https://www.youtube.com/watch?v=pVTaqzKZCdA) տեսանյութ:
 > 
-> This section is based on a tutorial by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
+> Այս բաժինը հիմնված է Geek Girls Carrots- ի ձեռնարկի վրա (https://github.com/ggcarrots/django-carrots)
 
-Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want you to install the latest version of Python 3, so if you have any earlier version, you will need to upgrade it. If you already have version {{ book.py_min_version }} or higher you should be fine.
+Django- ն գրված է Python- ում: Մեզ պետք է Python- ը, որպեսզի Django- ում ինչ-որ բան անի: Let's start by installing it! We want you to install the latest version of Python 3, so if you have any earlier version, you will need to upgrade it. If you already have version {{ book.py_min_version }} or higher you should be fine.
 
 Please install normal Python as follows, even when you have Anaconda installed on your computer.
 
