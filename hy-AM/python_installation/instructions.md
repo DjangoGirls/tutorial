@@ -44,7 +44,7 @@ data-collapse=true ces-->
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
+Շատ հավանական է, որ Python- ն արդեն տեղադրված է տուփից դուրս: Ստուգելու համար, արդյոք այն տեղադրված է (և որ տարբերակն է), բացեք վահանակ և մուտքագրեք հետևյալ հրահանգը.
 
 {% filename %}command-line{% endfilename %}
 
@@ -52,20 +52,20 @@ It is very likely that you already have Python installed out of the box. To chec
     Python {{ book.py_release }}
     
 
-If you have a different version of Python installed, at least {{ book.py_min_version }} (e.g. {{ book.py_min_release }}), then you don't have to upgrade. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
+Եթե ​​Python- ի այլ տարբերակ ունեք տեղադրված, առնվազն {{ book.py_min_version }} (օրինակ ՝ {{ book.py_min_release }}), ապա ձեզ հարկավոր չէ արդիականացնել: Եթե ​​Python- ը տեղադրված չէ, կամ եթե այլ տարբերակ եք ուզում, նախ ստուգեք, թե Linux- ի ո՞ր բաշխումն եք օգտագործում հետևյալ հրահանգով.
 
 {% filename %}command-line{% endfilename %}
 
     $ grep '^NAME=' /etc/os-release
     
 
-Afterwards, depending on the result, follow one of the following installation guides below this section.
+Դրանից հետո, կախված արդյունքից, հետևեք այս բաժնի ներքևում տեղադրված հետևյալ ուղեցույցներից մեկին:
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-Type this command into your console:
+Մուտքագրեք այս հրամանը ձեր վահանակի մեջ.
 
 {% filename %}command-line{% endfilename %}
 
@@ -77,21 +77,21 @@ Type this command into your console:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Use this command in your console:
+Օգտագործեք այս հրամանը ձեր վահանակում.
 
 {% filename %}command-line{% endfilename %}
 
     $ sudo dnf install python3
     
 
-If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use `yum` instead.
+Եթե ​​Fedora- ի հին տարբերակներում եք, կարող է սխալվել, որ ` dnf ` հրամանը չի գտնվել: Այդ դեպքում փոխարենը պետք է օգտագործել ` yum `:
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Use this command in your console:
+Օգտագործեք այս հրամանը ձեր վահանակում.
 
 {% filename %}command-line{% endfilename %}
 
@@ -100,7 +100,7 @@ Use this command in your console:
 
 <!--endsec-->
 
-Verify the installation was successful by opening a command prompt and running the `python3` command:
+Հաստատեք, որ տեղադրումը հաջող է անցել ՝ հրամանի տող բացելով և գործարկելով ` python3 ` հրամանը.
 
 {% filename %}command-line{% endfilename %}
 
@@ -108,9 +108,9 @@ Verify the installation was successful by opening a command prompt and running t
     Python {{ book.py_release }}
     
 
-The version shown may be different from {{ book.py_release }} -- it should match the version you installed.
+Shownուցադրված տարբերակը կարող է տարբերվել {{ book.py_release }} - ից `այն պետք է համապատասխանի ձեր տեղադրած տարբերակին:
 
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is {{ book.py_min_version }} or higher. If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
+**NOTE:** Եթե ​​Windows- ում եք և սխալ հաղորդագրություն եք ստանում, որ ` python3 ` չի գտնվել, փորձեք օգտագործել ` python ` (առանց ` 3 `) և ստուգեք եթե այն դեռ կարող է լինել Python- ի {{ book.py_min_version }} կամ ավելի բարձր տարբերակ: If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
 
 * * *
 
