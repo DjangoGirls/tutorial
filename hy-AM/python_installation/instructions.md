@@ -32,12 +32,12 @@ Python- ը Windows- ի համար կարող եք ներբեռնել https://www
 <!--sec data-title="Install Python: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-> ** Նշում ** Նախքան Python- ը OS X- ում տեղադրելը, պետք է համոզվեք, որ ձեր Mac- ի կարգավորումները թույլ են տալիս տեղադրել փաթեթներ, որոնք App Store- ից չեն: Գնացեք համակարգի նախապատվություններ, կտտացրեք "Security & Privacy," , ապա "General" («Ընդհանուր»)ներդիրին: If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
+> ** Նշում ** Նախքան Python- ը OS X- ում տեղադրելը, պետք է համոզվեք, որ ձեր Mac- ի կարգավորումները թույլ են տալիս տեղադրել փաթեթներ, որոնք App Store- ից չեն: Գնացեք համակարգի նախապատվություններ, կտտացրեք "Security & Privacy," , ապա "General" («Ընդհանուր»)ներդիրին: Եթե ​​ձեր «Allow apps downloaded from:» դրված է որպես «Mac App Store,», ապա այն փոխեք «Mac App Store and identified developers.»:
 
-You need to go to the website https://www.python.org/downloads/mac-osx/ and download the latest Python installer:
+Դուք պետք է գնաք https://www.python.org/downloads/mac-osx/ կայք և ներբեռնեք Python- ի վերջին տեղադրիչը.
 
-* Download the *Mac OS X 64-bit/32-bit installer* file,
-* Double click *python-{{ book.py_release }}-macosx10.9.pkg* to run the installer.
+* Ներբեռնեք * Mac OS X 64-բիթ / 32-բիթանոց տեղադրիչ * ֆայլը,
+* Տեղադրիչը գործարկելու համար կրկնակի կտտացրեք * պիթոն - {{ book.py_release }} - macosx10.9.pkg *:
 
 <!--endsec-->
 
