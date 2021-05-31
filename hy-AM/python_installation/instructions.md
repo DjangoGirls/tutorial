@@ -13,9 +13,9 @@ Django- ն գրված է Python- ում: Մեզ պետք է Python- ը, որպե
 * Միաժամանակ սեղմեք Windows կոճակը և Pause / Break կոճակը
 * Բացեք ձեր կառավարման վահանակը Windows ընտրացանկից, ապա անցեք Համակարգ և & amp; Անվտանգություն, ապա ՝ Համակարգ
 * Սեղմեք Windows կոճակը, ապա անցեք Settings > System > About (Կարգավորումներ> Համակարգ> Մեր մասին)
-* Որոնեք Windows Start ընտրացանկում "System Information" («Համակարգի տեղեկատվություն») բաժնում: Դա անելու համար կտտացրեք Start կոճակին կամ սեղմեք Windows ստեղնը, ապա սկսեք մուտքագրել ` System Information `: Այն մուտքագրելուն պես կսկսի առաջարկություններ անել: You can select the entry once it shows up.
+* Որոնեք Windows Start ընտրացանկում "System Information" («Համակարգի տեղեկատվություն») բաժնում: Դա անելու համար կտտացրեք Start կոճակին կամ սեղմեք Windows ստեղնը, ապա սկսեք մուտքագրել ` System Information `: Այն մուտքագրելուն պես կսկսի առաջարկություններ անել: Դուք կարող եք ընտրել առաջարկը, երբ այն հայտնվի:
 
-You can download Python for Windows from the website https://www.python.org/downloads/windows/. Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
+Python- ը Windows- ի համար կարող եք ներբեռնել https://www.python.org/downloads/windows/ կայքից: Կտտացրեք «Վերջին Python 3 թողարկում - Python x.x.x» հղմանը: Եթե ​​ձեր համակարգիչը աշխատում է Windows- ի ** 64-բիթանոց ** տարբերակով, ներբեռնեք ** Windows x86-64 գործարկվող տեղադրիչը **: Հակառակ դեպքում ներբեռնեք ** Windows x86 գործարկվող տեղադրիչը **: After downloading the installer, you should run it (double-click on it) and follow the instructions there.
 
 One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python {{ book.py_version }} to PATH" or 'Add Python to your environment variables" checkbox and click on "Install Now", as shown here (it may look a bit different if you are installing a different version):
 
