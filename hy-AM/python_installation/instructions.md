@@ -17,22 +17,22 @@ Django- ն գրված է Python- ում: Մեզ պետք է Python- ը, որպե
 
 Python- ը Windows- ի համար կարող եք ներբեռնել https://www.python.org/downloads/windows/ կայքից: Կտտացրեք «Վերջին Python 3 թողարկում - Python x.x.x» հղմանը: Եթե ​​ձեր համակարգիչը աշխատում է Windows- ի ** 64-բիթանոց ** տարբերակով, ներբեռնեք ** Windows x86-64 գործարկվող տեղադրիչը **: Հակառակ դեպքում ներբեռնեք ** Windows x86 գործարկվող տեղադրիչը **: Տեղադրիչը ներբեռնելուց հետո դուք պետք է այն գործարկեք (կրկնակի սեղմեք դրա վրա) և հետևեք այնտեղ տրված հրահանգներին:
 
-One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python {{ book.py_version }} to PATH" or 'Add Python to your environment variables" checkbox and click on "Install Now", as shown here (it may look a bit different if you are installing a different version):
+Մի բան, որին պետք է զգույշ լինել. Տեղադրման ընթացքում դուք կնկատեք "Setup"(«Կարգավորում») նշվող պատուհանը: Համոզվեք, որ նշեք «Ավելացնել Python {{book.py_version}} - ը PATH» - ին կամ «Python ավելացնել ձեր միջավայրի փոփոխականներին» վանդակը և կտտացրեք «Տեղադրել հիմա» -ին, ինչպես ցույց է տրված այստեղ (կարող է մի փոքր այլ տեսք ունենալ, եթե տեղադրեք այլ տարբերակ):
 
 ![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
 
-When the installation completes, you may see a dialog box with a link you can follow to learn more about Python or about the version you installed. Close or cancel that dialog -- you'll be learning more in this tutorial!
+Տեղադրումն ավարտելուց հետո դուք կարող եք տեսնել երկխոսության տուփ հղումով, որին կարող եք հետևել Python- ի կամ ձեր տեղադրած տարբերակի մասին ավելին իմանալու համար: Փակեք կամ չեղարկեք այդ երկխոսությունը. Այս ձեռնարկում դուք ավելին կսովորեք:
 
-Note: If you are using an older version of Windows (7, Vista, or any older version) and the Python {{ book.py_version }} installer fails with an error, then install all Windows Updates and try to install Python again. If you still have the error, try installing Python version {{ book.py_min_release }} from [Python.org](https://www.python.org/downloads/windows/).
+Նշում. Եթե օգտագործում եք Windows- ի (7, Vista կամ որևէ հին տարբերակ) ավելի հին տարբերակ, և Python- ի {{ book.py_version }} տեղադրիչը սխալմամբ ձախողվեց, ապա տեղադրեք բոլոր Windows Updates- ը և փորձեք նորից տեղադրել Python- ը: Եթե ​​դեռ սխալ ունեք, փորձեք տեղադրել Python տարբերակը {{ book.py_min_release }} [ Python.org ](https://www.python.org/downloads/windows/) կայքից:
 
-> Django {{ book.django_version }} needs Python {{ book.py_min_version }} or greater, which does not support Windows XP or earlier versions.
+> Django- ին {{ book.django_version }} անհրաժեշտ է Python {{ book.django_version }} կամ ավելի մեծ, որը չի ապահովում Windows XP կամ ավելի վաղ տարբերակներ:
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
+> ** Նշում ** Նախքան Python- ը OS X- ում տեղադրելը, պետք է համոզվեք, որ ձեր Mac- ի կարգավորումները թույլ են տալիս տեղադրել փաթեթներ, որոնք App Store- ից չեն: Գնացեք համակարգի նախապատվություններ, կտտացրեք "Security & Privacy," , ապա "General" («Ընդհանուր»)ներդիրին: If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
 
 You need to go to the website https://www.python.org/downloads/mac-osx/ and download the latest Python installer:
 
