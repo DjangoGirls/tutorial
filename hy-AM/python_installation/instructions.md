@@ -15,7 +15,7 @@ Django- ն գրված է Python- ում: Մեզ պետք է Python- ը, որպե
 * Սեղմեք Windows կոճակը, ապա անցեք Settings > System > About (Կարգավորումներ> Համակարգ> Մեր մասին)
 * Որոնեք Windows Start ընտրացանկում "System Information" («Համակարգի տեղեկատվություն») բաժնում: Դա անելու համար կտտացրեք Start կոճակին կամ սեղմեք Windows ստեղնը, ապա սկսեք մուտքագրել ` System Information `: Այն մուտքագրելուն պես կսկսի առաջարկություններ անել: Դուք կարող եք ընտրել առաջարկը, երբ այն հայտնվի:
 
-Python- ը Windows- ի համար կարող եք ներբեռնել https://www.python.org/downloads/windows/ կայքից: Կտտացրեք «Վերջին Python 3 թողարկում - Python x.x.x» հղմանը: Եթե ​​ձեր համակարգիչը աշխատում է Windows- ի ** 64-բիթանոց ** տարբերակով, ներբեռնեք ** Windows x86-64 գործարկվող տեղադրիչը **: Հակառակ դեպքում ներբեռնեք ** Windows x86 գործարկվող տեղադրիչը **: After downloading the installer, you should run it (double-click on it) and follow the instructions there.
+Python- ը Windows- ի համար կարող եք ներբեռնել https://www.python.org/downloads/windows/ կայքից: Կտտացրեք «Վերջին Python 3 թողարկում - Python x.x.x» հղմանը: Եթե ​​ձեր համակարգիչը աշխատում է Windows- ի ** 64-բիթանոց ** տարբերակով, ներբեռնեք ** Windows x86-64 գործարկվող տեղադրիչը **: Հակառակ դեպքում ներբեռնեք ** Windows x86 գործարկվող տեղադրիչը **: Տեղադրիչը ներբեռնելուց հետո դուք պետք է այն գործարկեք (կրկնակի սեղմեք դրա վրա) և հետևեք այնտեղ տրված հրահանգներին:
 
 One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python {{ book.py_version }} to PATH" or 'Add Python to your environment variables" checkbox and click on "Install Now", as shown here (it may look a bit different if you are installing a different version):
 
