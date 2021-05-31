@@ -19,7 +19,8 @@ Python- ը Windows- ի համար կարող եք ներբեռնել https://www
 
 Մի բան, որին պետք է զգույշ լինել. Տեղադրման ընթացքում դուք կնկատեք "Setup"(«Կարգավորում») նշվող պատուհանը: Համոզվեք, որ նշեք «Ավելացնել Python {{book.py_version}} - ը PATH» - ին կամ «Python ավելացնել ձեր միջավայրի փոփոխականներին» վանդակը և կտտացրեք «Տեղադրել հիմա» -ին, ինչպես ցույց է տրված այստեղ (կարող է մի փոքր այլ տեսք ունենալ, եթե տեղադրեք այլ տարբերակ):
 
-![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
+![
+Մի մոռացեք Python- ին ավելացնել Path- ին](../python_installation/images/python-installation-options.png)
 
 Տեղադրումն ավարտելուց հետո դուք կարող եք տեսնել երկխոսության տուփ հղումով, որին կարող եք հետևել Python- ի կամ ձեր տեղադրած տարբերակի մասին ավելին իմանալու համար: Փակեք կամ չեղարկեք այդ երկխոսությունը. Այս ձեռնարկում դուք ավելին կսովորեք:
 
@@ -110,8 +111,8 @@ data-collapse=true ces-->
 
 Shownուցադրված տարբերակը կարող է տարբերվել {{ book.py_release }} - ից `այն պետք է համապատասխանի ձեր տեղադրած տարբերակին:
 
-**NOTE:** Եթե ​​Windows- ում եք և սխալ հաղորդագրություն եք ստանում, որ ` python3 ` չի գտնվել, փորձեք օգտագործել ` python ` (առանց ` 3 `) և ստուգեք եթե այն դեռ կարող է լինել Python- ի {{ book.py_min_version }} կամ ավելի բարձր տարբերակ: If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
+**NOTE:** Եթե ​​Windows- ում եք և սխալ հաղորդագրություն եք ստանում, որ ` python3 ` չի գտնվել, փորձեք օգտագործել ` python ` (առանց ` 3 `) և ստուգեք եթե այն դեռ կարող է լինել Python- ի {{ book.py_min_version }} կամ ավելի բարձր տարբերակ: Եթե ​​դա նույնպես չի աշխատում, կարող եք բացել նոր հրամանի տող և նորից փորձել: դա տեղի է ունենում, եթե օգտագործում եք Python- ի տեղադրումից առաջ բացված հրամանի տողը:
 
 * * *
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
+Եթե ​​կասկածներ ունեք կամ ինչ-որ բան սխալ է տեղի ունեցել, և գաղափար չունեք հետագա անելիքների մասին, խնդրում ենք ձեր մարզչին հարցրեք: Երբեմն ամեն ինչ հարթ չի ընթանում, և ավելի լավ է օգնություն խնդրել ավելի մեծ փորձ ունեցող մեկից:
