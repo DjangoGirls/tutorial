@@ -10,10 +10,10 @@ Django- ն գրված է Python- ում: Մեզ պետք է Python- ը, որպե
 
 Նախ ստուգեք, արդյոք ձեր համակարգիչը 32-բիթանոց տարբերակ է կամ 64-բիթանոց Windows տարբերակ, Համակարգի տեղեկատվության էջի «Համակարգի տեսակ» տողում: Այս էջին հասնելու համար փորձեք այս մեթոդներից մեկը.
 
-* Press the Windows key and Pause/Break key at the same time
-* Open your Control Panel from the Windows menu, then navigate to System & Security, then System
-* Press the Windows button, then navigate to Settings > System > About
-* Search the Windows Start menu for "System Information". To do that, click the Start button or press the Windows key, then begin to type `System Information`. It will start making suggestions as soon as you type. You can select the entry once it shows up.
+* Միաժամանակ սեղմեք Windows կոճակը և Pause / Break կոճակը
+* Բացեք ձեր կառավարման վահանակը Windows ընտրացանկից, ապա անցեք Համակարգ և & amp; Անվտանգություն, ապա ՝ Համակարգ
+* Սեղմեք Windows կոճակը, ապա անցեք Settings > System > About (Կարգավորումներ> Համակարգ> Մեր մասին)
+* Որոնեք Windows Start ընտրացանկում "System Information" («Համակարգի տեղեկատվություն») բաժնում: Դա անելու համար կտտացրեք Start կոճակին կամ սեղմեք Windows ստեղնը, ապա սկսեք մուտքագրել ` System Information `: Այն մուտքագրելուն պես կսկսի առաջարկություններ անել: You can select the entry once it shows up.
 
 You can download Python for Windows from the website https://www.python.org/downloads/windows/. Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
 
