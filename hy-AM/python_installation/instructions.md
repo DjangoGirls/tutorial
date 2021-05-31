@@ -2,13 +2,13 @@
 > 
 > Այս բաժինը հիմնված է Geek Girls Carrots- ի ձեռնարկի վրա (https://github.com/ggcarrots/django-carrots)
 
-Django- ն գրված է Python- ում: Մեզ պետք է Python- ը, որպեսզի Django- ում ինչ-որ բան անի: Let's start by installing it! We want you to install the latest version of Python 3, so if you have any earlier version, you will need to upgrade it. If you already have version {{ book.py_min_version }} or higher you should be fine.
+Django- ն գրված է Python- ում: Մեզ պետք է Python- ը, որպեսզի Django- ում ինչ-որ բան անի: Եկեք սկսենք տեղադրելով այն: Մենք ուզում ենք, որ դուք տեղադրեք Python 3-ի վերջին տարբերակը, այնպես որ, եթե ունեք ավելի վաղ տարբերակ, ապա ձեզ հարկավոր է արդիականացնել այն: Եթե ​​արդեն ունեք {{ book.py_min_version }} կամ ավելի բարձր տարբերակ, ապա լավ կլինի:
 
-Please install normal Python as follows, even when you have Anaconda installed on your computer.
+Խնդրում ենք տեղադրել սովորական Python– ը հետևյալ կերպ, նույնիսկ այն ժամանակ, երբ ձեր համակարգչում տեղադրված է Anaconda:
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
-First check whether your computer is running a 32-bit version or a 64-bit version of Windows, on the "System type" line of the System Info page. To reach this page, try one of these methods:
+Նախ ստուգեք, արդյոք ձեր համակարգիչը 32-բիթանոց տարբերակ է կամ 64-բիթանոց Windows տարբերակ, Համակարգի տեղեկատվության էջի «Համակարգի տեսակ» տողում: Այս էջին հասնելու համար փորձեք այս մեթոդներից մեկը.
 
 * Press the Windows key and Pause/Break key at the same time
 * Open your Control Panel from the Windows menu, then navigate to System & Security, then System
