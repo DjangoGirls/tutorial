@@ -210,7 +210,7 @@ HTML- ը նշանակում է «HyperText Markup Language»: ** HyperText ** ն
 
 ### Քաշեք ձեր նոր կոդը PythonAnywhere վայր և ներքաշեք ձեր վեբ ծրագիրը
 
-* Open up the [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one). Then, run:
+* Բացեք [ PythonAnywhere console page(վահանակների էջը) ](https://www.pythonanywhere.com/consoles/) և անցեք ձեր ** Bash console (Բաշ կոնսոլ) ** (կամ սկսեք նորը): Հետո run (սկի).
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
