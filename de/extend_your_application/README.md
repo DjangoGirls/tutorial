@@ -179,7 +179,7 @@ Es wäre schön zu sehen, ob deine Website noch auf PythonAnywhere funktioniert,
     $ git status
     $ git add .
     $ git status
-    $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
+    $ git commit -m "View und Template für Blogpost-Details sowie CSS für die Website hinzugefügt"
     $ git push
     
 
