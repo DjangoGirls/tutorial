@@ -33,13 +33,14 @@ Guarda che aspetto ha il tuo sito adesso: http://127.0.0.1:8000/
 
 ![Figura 11.1](images/step1.png)
 
-L'errore non c'è più! Congratulazioni :) Tuttavia, il tuo sito in realtà non sta pubblicando niente eccetto una pagina vuota, perché anche il tuo template è vuoto. Dobbiamo sistemarlo.
+L'errore dovrebbe essere stato corretto! Congratulazioni :) Tuttavia, il tuo sito in realtà non sta pubblicando niente eccetto una pagina vuota, perché anche il tuo template è vuoto. Bisogna sistemarlo.
 
 Apri il nuovo file nell'editor di codice e aggiungi quanto segue:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
 <body>
     <p>Hi there!</p>
@@ -52,9 +53,10 @@ Quindi come appare il tuo sito ora? clicca per scoprirlo: http://127.0.0.1:8000/
 
 ![Figura 11.2](images/step3.png)
 
-Ha funzionato! Ottimo lavoro :)
+Ha funzionato! Ottimo lavoro! :)
 
-* Il comando più basico, `<html>`, è sempre l'inizio di ogni pagina web e `</html>` è sempre la fine. Come puoi vedere, l'intero contenuto del sito va tra il tag iniziale `<html>` ed il tag conclusivo `</html>`
+* La riga `<!DOCTYPE html>` non è un tag HTML. Dichiara solo il tipo di documento. Qui, informa il browser che il tipo di documento è [HTML5](https://html.spec.whatwg.org/#the-doctype). Questo è sempre l'inizio di qualsiasi file HTML5.
+* Il tag più semplice, `<html>`, è sempre l'inizio del contenuto html e `</html>` è sempre la fine. Come puoi vedere, l'intero contenuto del sito va tra il tag iniziale `<html>` ed il tag conclusivo `</html>`
 * `<p>` è un tag per gli elementi paragrafo; `</p>` conclude ogni paragrafo
 
 ## Testa e corpo
@@ -72,6 +74,7 @@ Per esempio, puoi mettere un elemento di titolo all'interno di `<head>`, così:
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Ola's blog</title>
@@ -109,40 +112,49 @@ Ora puoi divertirti un po' e provare a personalizzare il tuo template! Qua ci so
 * `<a href="https://djangogirls.org">link</a>` crea un link
 * `<ul><li>primo elemento</li><li>secondo elemento</li></ul>` fa una lista, proprio come questa qui!
 * `<div></div>` definisce una sezione della pagina
+* `<nav></nav>` definisce un insieme di collegamenti di navigazione
+* `<article></article>` specifica il contenuto autonomo e indipendente
+* `<section></section>` definisce una sezione in un documento
+* `<header></header>` specifica un'intestazione per un documento o una sezione
+* `<main></main>` specifica il contenuto principale di un documento
+* `<aside></aside>` definisce alcuni contenuti a parte il contenuto in cui è inserito (come una barra laterale)
+* `<footer></footer>` definisce un piè di pagina per un documento o sezione
+* `<time></time>` definisce un'ora (o datetime) specifica
 
 Ecco un esempio di modello completo, copia e incolla in `blog/templates/blog/post_list.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
     </head>
     <body>
-        <div>
+        <header>
             <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+        </header>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
             <h2><a href="">My first post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
+            <p>Aenean eu leo quam Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        </article>
 
-        <div>
-            <p>pubblicato: 14.06.2014, 12:14</p>
-            <h2><a href="">Il mio secondo postt</a></h2>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
+            <h2><a href="">My second post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
+        </article>
     </body>
 </html>
 ```
 
-Abbiamo creato tre sezioni `div` qui.
+Abbiamo creato una sezione `intestazione` e due `articolo` sezione qui.
 
-* Il primo elemento `div` contiene il titolo del nostro blog - è un'intestazione ed un link
-* Altri tre elementi `div` contengono i nostri post con la loro data di pubblicazione, `h2` con il titolo di un post che è cliccabile e due `p` (paragrafi) di testo, uno per la data e l'altro per i nostri post.
+* L'elemento `intestazione` contiene il titolo del nostro blog – è un'intestazione e un link
+* I due elementi `articolo` contengono i nostri post sul blog con una data pubblicata in un elemento `ora` , un elemento `h2` con un titolo post cliccabile e un elemento `p` (paragrafo) per il testo del nostro post sul blog.
 
 Ci dà questo effetto:
 
@@ -169,10 +181,8 @@ Assicurati di essere nella directory `djangogirls` e diciamo a `git` di includer
 
 {% filename %}command-line{% endfilename %}
 
-    $ git add --all .
+    $ git add .
     
-
-> **Nota** `--all` significa che `git` riconoscerà anche se hai eliminato dei files (di default riconosce solo i file nuovi o modificati). Ricorda anche (dal capitolo 3) che il `.` significa la directory attuale.
 
 Prima di caricare tutti i file, proviamo a controllare cosa caricherà `git` (tutti i file che caricherà `git` ora appariranno in verde):
 
@@ -188,7 +198,7 @@ Ci siamo quasi, ora è il momento di dirgli di salvare questa modifica nella cro
     $ git commit -m "Ho cambiato l'HTML per questo sito."
     
 
-> **Nota** Assicurati di usare doppie virgolette attorno al messaggio di commit.
+> **Nota** Assicurati di usare doppie virgolette prima e dopo il "messaggio di commit".
 
 Quando hai finito, caricheremo (push) le nostre modifiche su Github:
 
