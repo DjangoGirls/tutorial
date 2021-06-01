@@ -234,7 +234,7 @@ OS X- ը և Linux- ը ունեն `man` հրաման, որը ձեզ օգնում 
 
 Ահա այն!
 
-> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
+> PRO հուշում. Եթե ձեր ստեղնաշարի վրա մուտքագրեք ` cd D ` և այնուհետև սեղմեք ` tab (էջանիշը/ներդիրը) `, command line (հրամանի տողը) ավտոմատ կերպով լրացնում է անվան մնացած մասը, որպեսզի կարողանաք ավելի արագ նավարկել Եթե ​​«D» - ով սկսվող մեկից ավելի պանակներ կան, երկու անգամ սեղմեք ` tab (ներդիրը )` ստեղնին `ընտրանքների ցուցակ ստանալու համար:
 
 * * *
 
