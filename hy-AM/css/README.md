@@ -164,7 +164,7 @@ body {
 
 Ինչպես նախկինում, ստուգեք հրահանգը և տեղադրեք `blog/static/css/blog.css` հղումը: Այս տողում Google Fonts- ից (https://www.google.com/fonts) ներմուծեք * Lobster * կոչվող տառատեսակը:
 
-Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file `blog/static/css/blog.css`. Ձևավոր փակագծերի միջև ավելացրեք `font-family: 'Lobster';` տողը և թարմացրեք էջը.
+Գտեք ` h1 a ` հայտարարագրի բլոկը (ամրագոտիների միջեւ ծածկագիրը ` {` և `} `) CSS ֆայլում ` blog/static/css/blog.css` Ձևավոր փակագծերի միջև ավելացրեք `font-family: 'Lobster';` տողը և թարմացրեք էջը.
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -193,7 +193,7 @@ h1 a, h2 a {
 </header>
 ```
 
-And now add a class `post` to your `article` containing a blog post.
+Եվ հիմա ձեր ` post` ավելացրեք դասի ` article` բլոգի գրառում պարունակող: 
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
