@@ -1,4 +1,4 @@
-# Django URLs
+# Django URL- ներ
 
 Մենք պատրաստվում ենք ստեղծել մեր առաջին վեբ էջը. Ձեր բլոգի գլխավոր էջը: Բայց նախ եկեք մի փոքր սովորենք Django URL- ների մասին:
 
@@ -47,7 +47,7 @@ urlpatterns = [
 
 Ժամանակն է ստեղծել ձեր առաջին URL- ը: Մենք ուզում ենք, որ «http://127.0.0.1:8000/» - ը լինի մեր բլոգի գլխավոր էջը `դրանում տեղադրված հաղորդագրությունների ցուցակով:
 
-We also want to keep the `mysite/urls.py` file clean, so we will import URLs from our `blog` application to the main `mysite/urls.py` file.
+Մենք նաև ուզում ենք մաքուր պահել ` mysite/urls.py ` ֆայլը, այնպես որ URL- ներ կներմուծենք մեր ` blog` ծրագրից հիմնական ` mysite/urls.py ` ֆայլ:
 
 Առաջ անցեք, տող ավելացրեք `blog.urls` - ը ներմուծելու համար: Նշենք, որ մենք այստեղ օգտագործում ենք `include/ներառման` գործառույթը/function, այնպես որ դուք ստիպված կլինեք այն ներմուծել `from django.urls…` տողում:
 
@@ -90,7 +90,7 @@ urlpatterns = [
 ]
 ```
 
-Ինչպես տեսնում եք, մենք կապել ենք `post_list` անունով `view` -ն և արմատային url- ը: This URL pattern will match an empty string and the Django URL resolver will ignore the domain name (i.e., http://127.0.0.1:8000/) that prefixes the full URL path. This pattern will tell Django that `views.post_list` is the right place to go if someone enters your website at the 'http://127.0.0.1:8000/' address.
+Ինչպես տեսնում եք, մենք կապել ենք `post_list` անունով `view` -ն և արմատային url- ը: Այս URL- ի օրինակը համընկնում է դատարկ տողի հետ, և Django URL լուծիչը անտեսելու է տիրույթի անունը (այսինքն `http://127.0.0.1:8000/), որը նախածանցում է URL- ի ամբողջական ուղին: Այս օրինակը Django- ին կասի, որ ` views.post_list ` - ը ճիշտ տեղն է այցելելու, եթե ինչ-որ մեկը մուտք է գործում ձեր կայք «http://127.0.0.1:8000/» հասցեով:
 
 Վերջին մասը ՝`name='post_list'`, URL- ի անունն է, որն օգտագործվելու է դիտումը նույնացնելու համար: Դա կարող է նույնը լինել, ինչ view-ի անունն է, կամ կարող է լինել բոլորովին այլ բան: Ծրագրում մենք հետագայում կօգտագործենք անվանական URL- ներ, ուստի կարևոր է, որ դրանց անուններն այժմ ներառվեն ձեր դիմումի մեջ: Մեր URL- ների անունները յուրահատուկ և հեշտ հիշվող պետք է լինեն:
 
