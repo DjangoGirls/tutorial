@@ -115,27 +115,27 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 > 
 > Wenn du dein Projekt auf `Glitch.com` hostest, dann lass uns den Django-Sekret-Key schützen, der vertraulich bleiben muss (andernfalls könnte jeder, der dein Projekt remixt, diesen sehen):
 > 
-> - First, we are going to create a random secret key. Open the Glitch terminal again, and type the following command:
+> - Zuerst erstellen wir einen zufälligen geheimen Schlüssel. Öffne erneut das Glitch-Terminal und gib den folgenden Befehl ein:
 >     
->     {% filename %}command-line{% endfilename %}
+>     {% filename %}Kommandozeile{% endfilename %}
 >     
 >     ```bash
 >     python -c 'from django.core.management.utils import get_random_secret_key; \
 >           print(get_random_secret_key())'
 >     ```
 >     
->     This should display a long random string, perfect to use as a secret key for your brand new Django web site. We will now paste this key into a `.env` file that Glitch will only show you if you are the owner of the web site.
+>     Das sollte einen langen zufälligen String ausgeben, der perfekt für die Verwendung als geheimer Schlüssel für deine brandneue Django-Website geeignet ist. Wir werden diesen Schlüssel jetzt in eine Datei namens `.env` einfügen, die Glitch nur dir als Besitzerin der Website anzeigen wird.
 > 
-> - Create a file `.env` at the root of your project and add the following property in it:
+> - Erstelle eine Datei namens `.env` im Wurzelverzeichnis deines Projekts und füge folgenden Inhalt ein:
 >     
 >     {% filename %}.env{% endfilename %}
 >     
 >     ```bash
->     # Here, inside the single quotes, you can cut and paste the random key generated above
+>     # Hier, innerhalb der einfachen Anführungszeichen, kannst den oben erzeugten zufälligen Schlüssel einfügen
 >     SECRET='3!0k#7ds5mp^-x$lqs2%le6v97h#@xopab&oj5y7d=hxe511jl'
 >     ```
 > 
-> - Then update the Django settings file to inject this secret value and set the Django web site name:
+> - Aktualisiere dann die Django-Einstellungen-Datei, um diesen geheimen Wert einzufügen zu lassen und lege den Django-Webseitennamen fest:
 >     
 >     {% filename %}mysite/settings.py{% endfilename %}
 >     
@@ -143,7 +143,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 >     SECRET_KEY = os.getenv('SECRET')
 >     ```
 > 
-> - And a little further down in the same file, we inject the name of your new Glitch website:
+> - Und etwas weiter unten in derselben Datei geben wir den Namen deiner neuen Glitch-Website ein:
 >     
 >     {% filename %}mysite/settings.py{% endfilename %}
 >     
