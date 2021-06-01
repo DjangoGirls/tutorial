@@ -8,9 +8,9 @@
 
 ## Python prompt (կահակալ)
 
-> For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
+> Ընթերցողների համար տանը. Այս մասը ներառված է [ Python Basics: Integers, Strings, Lists, Variables and Errors (Python- ի հիմունքներ. Ամբողջ թվեր, տողեր, ցուցակներ, փոփոխականներ և սխալներ) ](https://www.youtube.com/watch?v=MO63L4s-20U) տեսանյութում:
 
-To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+Python- ի հետ խաղալու համար մենք պետք է ձեր համակարգչում բացենք * command line (հրամանի տող)*: Դուք արդեն պետք է իմանաք, թե ինչպես դա անել. Դուք դա սովորել եք [ Intro to Command Line (Հրամանի տողի ներածություն) ](../intro_to_command_line/README.md) գլխում:
 
 Once you're ready, follow the instructions below.
 
