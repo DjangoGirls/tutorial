@@ -1,4 +1,4 @@
-# Django Girls Tutorial
+# Django Girls ձեռնարկը
 
 [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
@@ -32,7 +32,7 @@
 
 Լավ, [ եկեք սկսենք ամենասկզբից… ](./how_the_internet_works/README.md)
 
-## Following the tutorial at home
+## Տանը ձեռնարկին հետեւելը
 
 Հիանալի է մասնակցել Django Girls սեմինարին, բայց մենք տեղյակ ենք, որ միշտ չէ, որ հնարավոր է մեկին մասնակցել: Ահա թե ինչու մենք ձեզ խրախուսում ենք փորձել հետեւել այս ձեռնարկին տանը: Ընթերցողների համար տանը մենք ներկայումս պատրաստում ենք տեսանյութեր, որոնք ավելի հեշտ կդարձնեն ձեռնարկին ինքնուրույն հետևելը: Դա դեռ ընթացքի մեջ է, բայց շուտով ավելի ու ավելի շատ բաներ լուսաբանվելու են [ Կոդավորումը աղջիկների համար ](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube ալիքում:
 
