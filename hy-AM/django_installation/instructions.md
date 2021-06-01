@@ -57,9 +57,10 @@ data-collapse=true ces-->
 > > 
 > > {% filename %}command-line{% endfilename %}
 > > 
-> >     The virtual environment was not created successfully because ensurepip is not available.  On Debian/Ubuntu systems, you need to install the python3-venv package using the following command.
+> >     Վիրտուալ միջավայրը հաջողությամբ չի ստեղծվել, քանի որ ensurepip- ը հասանելի չէ:  Debian / Ubuntu համակարգերում անհրաժեշտ է տեղադրել python3-venv փաթեթը ՝ օգտագործելով հետևյալ հրամանը:
 > >        apt install python3-venv
-> >     You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.
+> >     Հնարավոր է, որ ձեզ հարկավոր է օգտագործել sudo(սուդո) այդ հրահանգով:
+> >       After installing the python3-venv package, recreate your virtual environment.
 > >     
 > > 
 > > Այս դեպքում հետևեք վերը նշված հրահանգներին և տեղադրեք ` python3-venv ` փաթեթը. {% filename %}command-line{% endfilename %}
