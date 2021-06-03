@@ -32,12 +32,12 @@
 - [ New Coder tutorials (Կոդերի նոր ձեռնարկներ) ](http://newcoder.io/tutorials/) - սա մի շարք գործնական օրինակներ է, թե ինչպես կարող եք օգտագործել Python- ը
 - [ edX ](https://www.edx.org/course?search_query=python) - Դուք կարող եք ստուգել դասընթացների մեծ մասը անվճար, բայց եթե ցանկանում եք բարձրագույն կրթության որակավորման վկայագիր կամ կրեդիտներ, ապա դա կարժենա գումար:
 - [ Coursera's Python specialization (Coursera- ի Python մասնագիտացումը) ](https://www.coursera.org/specializations/python) - որոշ վիդեո դասախոսություններ կարող են անվճար աուդիտի ենթարկվել, և դուք կարող եք վաստակել Coursera սերտիֆիկատ ՝ անցնելով այս դասընթացները
-- [Python for Everybody](https://www.py4e.com/) - a free and open version of the Coursera Python for Everybody specialization
+- [ Python for Everybody (Python բոլորի համար) ](https://www.py4e.com/) - Coursera Python- ի բոլորի համար անվճար և բաց տարբերակ մասնագիտացման համար
 
-#### Working with data
+#### Տվյալների հետ աշխատելը
 
-- [Codecademy's data science course](https://www.codecademy.com/learn/paths/data-science)
-- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
-- [Dataquest](https://www.dataquest.io/) – the first 30 "missions" are free
+- [Codecademy-ի տվյալների գիտության դասընթաց](https://www.codecademy.com/learn/paths/data-science)
+- [ edX ](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) - Դուք կարող եք ստուգել դասընթացների մեծ մասը անվճար, բայց եթե ցանկանում եք բարձրագույն կրթության որակավորման վկայագիր կամ կրեդիտներ, ապա դա կարժենա գումար:
+- [ Dataquest (Տվյալների հարցում) ](https://www.dataquest.io/) - առաջին 30 «առաքելությունները» անվճար են
 
-We can't wait to see what you build next!
+Մենք անհամբեր սպասում ենք ՝ տեսնելու, թե հետո ինչ եք կառուցում:
