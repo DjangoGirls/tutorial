@@ -12,7 +12,7 @@
 
 Python- ի հետ խաղալու համար մենք պետք է ձեր համակարգչում բացենք * command line (հրամանի տող)*: Դուք արդեն պետք է իմանաք, թե ինչպես դա անել. Դուք դա սովորել եք [ Intro to Command Line (Հրամանի տողի ներածություն) ](../intro_to_command_line/README.md) գլխում:
 
-Once you're ready, follow the instructions below.
+Պատրաստ լինելուց հետո հետևեք ստորև ներկայացված հրահանգներին:
 
 We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
 
