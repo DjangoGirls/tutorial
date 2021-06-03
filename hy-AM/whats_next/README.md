@@ -15,23 +15,23 @@
 #### Django
 
 - Մեր մեկ այլ գիրք ՝ [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
-- [Django's official tutorial](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
-- [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
-- [Django for Everybody Specialization](https://www.coursera.org/specializations/django) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
+- [Django- ի պաշտոնական ձեռնարկը](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
+- [Սկսենք Django- ի վիդեո դասերից](http://www.gettingstartedwithdjango.com/)
+- [ Django- ն բոլորի համար մասնագիտացման համար ](https://www.coursera.org/specializations/django) - որոշ տեսադասախոսություններ կարող են անվճար աուդիտի ենթարկվել, և այս դասընթացները անցնելով կարող եք վաստակել Coursera սերտիֆիկատ:
 
-#### HTML, CSS and JavaScript
+#### HTML, CSS և JavaScript
 
-- [Codecademy's web development course](https://www.codecademy.com/learn/paths/web-development)
-- [freeCodeCamp](https://www.freecodecamp.org/)
+- [Codecademy- ի վեբ զարգացման դասընթաց](https://www.codecademy.com/learn/paths/web-development)
+- [ freeCodeCamp](https://www.freecodecamp.org/)
 
 #### Python
 
-- [Codecademy's Python course](https://www.codecademy.com/learn/learn-python)
-- [Google's Python course](https://developers.google.com/edu/python/)
-- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – the initial exercises are free
-- [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
-- [edX](https://www.edx.org/course?search_query=python) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
-- [Coursera's Python specialization](https://www.coursera.org/specializations/python) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
+- [Codecademy-ի Python դասընթացը](https://www.codecademy.com/learn/learn-python)
+- [ Google- ի Python դասընթաց](https://developers.google.com/edu/python/)
+- [ Learn Python The Hard Way book (Իմացեք Python The Hard Way գիրքը) ](http://learnpythonthehardway.org/book/) - նախնական վարժություններն անվճար են
+- [ New Coder tutorials (Կոդերի նոր ձեռնարկներ) ](http://newcoder.io/tutorials/) - սա մի շարք գործնական օրինակներ է, թե ինչպես կարող եք օգտագործել Python- ը
+- [ edX ](https://www.edx.org/course?search_query=python) - Դուք կարող եք ստուգել դասընթացների մեծ մասը անվճար, բայց եթե ցանկանում եք բարձրագույն կրթության որակավորման վկայագիր կամ կրեդիտներ, ապա դա կարժենա գումար:
+- [ Coursera's Python specialization (Coursera- ի Python մասնագիտացումը) ](https://www.coursera.org/specializations/python) - որոշ վիդեո դասախոսություններ կարող են անվճար աուդիտի ենթարկվել, և դուք կարող եք վաստակել Coursera սերտիֆիկատ ՝ անցնելով այս դասընթացները
 - [Python for Everybody](https://www.py4e.com/) - a free and open version of the Coursera Python for Everybody specialization
 
 #### Working with data
