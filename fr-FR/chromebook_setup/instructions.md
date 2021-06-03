@@ -126,7 +126,7 @@ LOGGING = {
 
 Cela va créer un fichier `debug.log` détaillant les opérations Django et tous les messages d'erreur qui pourraient apparaître, ce qui rendra la correction beaucoup plus facile si votre site Web ne fonctionne pas.
 
-Le redémarrage initial du projet Glitch devrait échouer. (Si vous cliquez sur le bouton en haut de la liste déroulante `Show` puis cliquez sur `In a New Window`, vous recevrez un message d'erreur `DisallowedHost` d'accès non autorisé .) Ne vous inquiétez pas à ce stade, le tutoriel corrigera cela dès que vous aurez mis à jour les paramètres Django de votre projet dans le fichier `mysite/settings.py` .
+Le redémarrage initial du projet Glitch devrait échouer. (Si vous cliquez sur le bouton en haut de la liste déroulante `Show` puis cliquez sur `In a New Window`, vous recevrez un message d'erreur `DisallowedHost` (accès non autorisé).) Ne vous inquiétez pas à ce stade, le tutoriel corrigera cela dès que vous aurez mis à jour les paramètres Django de votre projet dans le fichier `mysite/settings.py` .
 
 ### Environnement virtuel
 
