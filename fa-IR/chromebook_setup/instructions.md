@@ -46,7 +46,7 @@ IDE ابری ابزاری است که به شما دسترسی به یک ویر�
 #### IDE ابری Glitch.com
 
 1. به [Glitch.com](https://glitch.com/) بروید 
-2. Sign up for an account (https://glitch.com/signup) or use your GitHub account if you have one. (See GitHub instructions below.)
+2. یک حساب کاربری (https://glitch.com/signup) بسازید یا از حساب GitHub خود استفاده کنید. (راهنمای استفاده از حساب GitHubرا در زیر ببینید)
 3. Click *New Project* and choose *hello-webpage*
 4. Click on the Tools dropdown list (at the bottom left side of the window), then on Terminal button to open terminal tab with a prompt like this:
 
