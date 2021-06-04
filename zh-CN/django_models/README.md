@@ -4,13 +4,13 @@
 
 ## 对象
 
-There is a concept in programming called `object-oriented programming`. The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
+在编程中有一个概念叫做 `面向对象编程` 。 它的思想是，与其用无聊的一连串的程序指令方式写程序，不如为事物建立模型，然后定义他们之间的交互方法。
 
 那什么是对象呢？它是一个属性和操作的集合。它听起来很奇怪，但我们会给你一个例子。
 
-If we want to model a cat, we will create an object `Cat` that has some properties such as `color`, `age`, `mood` (like good, bad, or sleepy ;)), and `owner` (which could be assigned a `Person` object – or maybe, in case of a stray cat, this property could be empty).
+如果我们想塑造一只猫的模型，我们会创建一个名为`Cat`的对象，它含有一些属性例如：`color`(颜色), `age`(年龄), `mood`(心情， 比如 good [好] , bad [不好], sleepy [困] ; ))，还有`owner` (主人) (那是一个`Person` (人) 对象, ——或者, 假若这只猫是流浪猫，这个属性可以为空)。
 
-Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which case, we will give the cat some `CatFood`, which could be a separate object with properties, like `taste`).
+然后这个`Cat`会有一些行为: `purr`(咕噜咕噜叫), `scratch`(抓挠), 或者`feed` (被喂食) (在这其中我们会给这只猫一些 `CatFood` (猫粮)，这个`CatFood`可以是单独的一个包含比如 <0>taste</0> (口味)属性的对象).
 
     Cat
     --------
@@ -34,7 +34,7 @@ Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which case, we
 
 我们需要回答一个问题：什么是一篇博客文章？它应该含有什么样的属性？
 
-嗯，肯定我们的博客文章需要一些文本，包括内容与标题，对吗？ It would be also nice to know who wrote it – so we need an author. 最后，我们想要知道什么时候该文章创建并发布。
+嗯，我们的博客文章一定需要一些文本，包括内容与标题，对吗？ It would be also nice to know who wrote it – so we need an author. 最后，我们想要知道什么时候该文章创建并发布。
 
     Post
     --------
