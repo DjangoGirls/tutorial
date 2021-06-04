@@ -34,7 +34,7 @@
 
 我们需要回答一个问题：什么是一篇博客文章？它应该含有什么样的属性？
 
-嗯，我们的博客文章一定需要一些文本，包括内容与标题，对吗？ It would be also nice to know who wrote it – so we need an author. 最后，我们想要知道什么时候该文章创建并发布。
+嗯，我们的博客文章一定需要一些文本，包括内容与标题，对吗？ 另一个很合理的需求是知道是谁写了这篇文章 — — 所以我们需要一个作者。 最后，我们想要知道什么时候该文章创建并发布。
 
     Post
     --------
@@ -55,7 +55,7 @@
 
 知道什么是对象，我们可以为我们的博客文章创建一个 Django 模型。
 
-A model in Django is a special kind of object – it is saved in the `database`. 数据库是数据的集合。 这是您存储有关用户、 您的博客文章等信息的地方。 我们将使用SQLite 数据库来存储我们的数据。 This is the default Django database adapter – it'll be enough for us right now.
+Django 里的模型(model)是一种特殊的对象(object) — — 它保存在 `数据库` 中。 数据库是数据的集合。 这是您存储有关用户、 您的博客文章等信息的地方。 我们将使用SQLite 数据库来存储我们的数据。 这是默认的 Django 数据库适配器 — — 对于我们现在的需求而言, 它是足够的。
 
 您可以将数据库中的模型看作是电子表格中的列 （字段） 和行 （数据）。
 
@@ -73,7 +73,7 @@ A model in Django is a special kind of object – it is saved in the `database`.
     (myvenv) C:\Users\Name\djangogirls> python manage.py startapp blog
     
 
-You will notice that a new `blog` directory is created and it contains a number of files now. The directories and files in our project should look like this:
+你会注意到一个新的 `blog` 目录被创建，并且它包含了一些文件。现在, 我们的项目中的目录和文件应该看起来像这样：
 
     djangogirls
     ├── blog
@@ -98,7 +98,7 @@ You will notice that a new `blog` directory is created and it contains a number 
     
     
 
-After creating an application, we also need to tell Django that it should use it. We do that in the file `mysite/settings.py` -- open it in your code editor. We need to find `INSTALLED_APPS` and add a line containing `'blog.apps.BlogConfig',` just above `]`. So the final product should look like this:
+创建应用程序之后，我们还需要告知 Django , 以让 Django 使用该应用程序。 我们在文件 `mysite/settings.py` 中做 "告知 Django" 这件事——请在你的代码编辑器中打开这个文件。 我们需要找到 `INSTALLED_APPS` , 并在它的条目中添加一条`'blog.apps.BlogConfig'` . 所以最终的文件应该如下所示：
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -116,7 +116,7 @@ INSTALLED_APPS = [
 
 ### 创建一个博客文章模型
 
-In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
+在 `blog/models.py` 文件中，我们定义所有的 `Models` 对象— — 这个文件是我们定义 "博客文章" 的地方。
 
 Let's open `blog/models.py` in the code editor, remove everything from it, and write code like this:
 
@@ -145,7 +145,7 @@ class Post(models.Model):
 
 > Double-check that you use two underscore characters (`_`) on each side of `str`. 这是Python编程里面的一种常见的约定写法，有时我们也叫这个做"dunder"("double-underscore"的缩写)。
 
-It looks scary, right? But don't worry – we will explain what these lines mean!
+这看起来太吓人了，对吧？不过不用担心，我们会解释这几行是什么意思！
 
 All lines starting with `from` or `import` are lines that add some bits from other files. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
 
