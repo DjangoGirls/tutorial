@@ -91,7 +91,7 @@ python3 manage.py migrate
 python3 manage.py runserver $PORT
 ```
 
-Once these files are created, go to the Terminal and execute the following commands to create your first Django project:
+После создания этих файлов перейдите в Терминал и выполните следующие команды, чтобы создать свой первый проект Django:
 
 {% filename %}Terminal{% endfilename %}
 
