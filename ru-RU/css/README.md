@@ -179,7 +179,7 @@ h1 a, h2 a {
 
 Как упоминалось выше, CSS имеет концепцию классов. Они позволяют назвать часть HTML-кода и применить стили только к этой части, не влияя на другие части. Это может быть супер полезно! Возможно, у вас есть два div, которые делают что-то разное (например, заголовок и ваше сообщение). Класс может помочь вам сделать их выглядеть иначе.
 
-Go ahead and name some parts of the HTML code. Replace the `header` that contains your header with the following:
+Идите вперед и назовите некоторые части HTML-кода. Замените `header`, который содержит ваш заголовок, следующим:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -189,9 +189,10 @@ Go ahead and name some parts of the HTML code. Replace the `header` that contain
         <h1><a href="/">Django Girls Blog</a></h1>
     </div>
 </header>
+
 ```
 
-And now add a class `post` to your `article` containing a blog post.
+А теперь добавьте класс `post` в ваш `article`, содержащий сообщение в блоге.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -201,6 +202,7 @@ And now add a class `post` to your `article` containing a blog post.
     <h2><a href="">{{ post.title }}</a></h2>
     <p>{{ post.text|linebreaksbr }}</p>
 </article>
+
 ```
 
 А теперь добавим определения блоков для различных селекторов. Селекторы, которые начинают с символа `.` относятся к классам. Существует много хороших справочников о CSS в Интернете, которые могут помочь вам понять следующий код. А сейчас просто скопируйте и вставьте его в файл `blog/static/css/blog.css`:
@@ -278,6 +280,7 @@ h4 {
     color: #FFFFFF;
     background-color: #C25100;
 }
+
 ```
 
 Далее переделайте HTML код, отображающий посты. замените:
