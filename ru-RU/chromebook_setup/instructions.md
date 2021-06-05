@@ -130,9 +130,9 @@ LOGGING = {
 
 ### Виртуальная среда
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Виртуальная среда (также называемая виртуальная программа) похожа на частный ящик, в который мы можем поместить полезный компьютерный код для проекта, над которым мы работаем. Мы используем их, чтобы хранить отдельные фрагменты кода, которые мы хотим для наших различных проектов, чтобы они не путались между проектами.
 
-Run:
+Запустить:
 
 {% filename %}Cloud 9{% endfilename %}
 
