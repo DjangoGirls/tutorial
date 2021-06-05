@@ -58,11 +58,11 @@ class PostForm(forms.ModelForm):
 </a>
 ```
 
-Note that we want to call our new view `post_new`. The [SVG icon](https://icons.getbootstrap.com/icons/file-earmark-plus/) is provided by the [Bootstrap Icons](https://icons.getbootstrap.com/) and it will display a page icon with plus sign. We use a Django template directive called `include`. This will inject the file's content into the Django template. The web browser knows how to handle this type of content without any further processing.
+Обратите внимание, что мы хотим назвать наше новое представление `post_new`. [Иконка SVG](https://icons.getbootstrap.com/icons/file-earmark-plus/) предоставлена [иконками Bootstrap](https://icons.getbootstrap.com/) , и на экране появится значок страницы с подписью плюс. Мы используем директиву шаблона Django под названием `include`. Это включит содержимое файла в шаблон Django. Веб-браузер знает, как обрабатывать этот тип контента без какой-либо дополнительной обработки.
 
-> You can download all the Bootstrap icons [here](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip). Unzip the file and copy all the SVG image files into a new folder inside `blog/templates/blog/` called `icons`. That way you can access an icon like `pencil-fill.svg` using the file path `blog/templates/blog/icons/pencil-fill.svg`
+> Вы можете скачать все иконки Bootstrap [здесь](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip). Разархивируйте файл и скопируйте все файлы изображений SVG в новую папку внутри `blog/templates/blog/` под названием `icons`. Таким образом, вы можете получить доступ к иконке `pencil-fill.svg` , используя путь к файлу `blog/templates/blog/icons/pencil-fill.svg`
 
-After editing the line, your HTML file should now look like this:
+После редактирования строки, ваш HTML-файл должен выглядеть следующим образом:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -97,7 +97,7 @@ After editing the line, your HTML file should now look like this:
 </html>
 ```
 
-After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
+После сохранения и обновления страницы http://127.0.0.1:8000 вы увидите знакомый `NoReverseMatch` . Это так? Хорошо!
 
 ## URL
 
