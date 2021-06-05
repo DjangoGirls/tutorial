@@ -126,9 +126,9 @@ LOGGING = {
 
 Это создаст файл ` debug.log ` с подробным описанием операций Django и любых сообщений об ошибках, которые могут появиться, что значительно упростит исправление, если ваш веб-сайт не работает.
 
-The initial restarting of the Glitch project should fail. (If you click on the top dropdown button `Show` then click on `In a New Window`, you will receive a `DisallowedHost` error message.) Do not worry about it at this stage, the tutorial will fix this as soon as you update the Django settings of your project in the `mysite/settings.py` file.
+Первоначальный перезапуск проекта Glitch должен завершиться ошибкой. (Если вы щелкните верхнюю кнопку раскрывающегося списка `Показать`, а затем щелкните `В новом окне`, вы получите сообщение об ошибке `DisallowedHost`.) Не беспокойтесь об этом на данном этапе, это руководство будет исправлено, как только вы обновите настройки Django вашего проекта в файле `mysite/settings.py`.
 
-### Виртуальное окружение
+### Виртуальная среда
 
 A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
