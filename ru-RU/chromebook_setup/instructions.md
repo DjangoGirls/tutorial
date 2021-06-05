@@ -153,6 +153,6 @@ LOGGING = {
 
 Учебник Django Girls включает раздел о том, что называется «Развертывание», которое представляет собой процесс переноса кода, обеспечивающего работу вашего нового веб-приложения, на общедоступный компьютер (называемый сервером), чтобы другие люди могли видеть вашу работу.
 
-This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Эта часть немного странная при выполнении руководство на Chromebook, поскольку мы уже используем компьютер, подключенный к Интернету (в отличие, скажем, от ноутбука). Тем не менее, он по-прежнему полезен, поскольку мы можем думать о нашем рабочем пространстве Cloud 9 как о месте «незавершенной» работы, а о Python Anywhere как о месте, где мы можем продемонстрировать наши вещи, когда они становятся более законченными.
 
 Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
