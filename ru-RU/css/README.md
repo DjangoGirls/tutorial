@@ -21,7 +21,7 @@ Bootstrap - один из самых популярных HTML и CSS фрейм
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"><0>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 ```
 
 Это не добавит никаких файлов в твой проект. Этот код просто указывает на то, что эти файлы существуют в Интернете. Поэтому открой сайт и обнови страницу, где ты обнаружишь изменения!
@@ -79,7 +79,7 @@ h1 a, h2 a {
 
 `h1 a` это CSS селектор. Это означает, что мы применяем наши стили к любым элементам `a`, внутри элемента `h1`; селектор `h2 a` делает то же самое для элементов `h2`. Поэтому, когда у нас есть что-то вроде `<h1><a href="">ссылка</a></h1>`, будет применяться стиль `h1 a`. В этом случае, мы говорим сменить этот цвет на `#C25100`, то есть на темно-оранжевый. Или же вы можете поместить сюда свой собственный цвет, но убедитесь, что у него хороший контраст на белом фоне!
 
-В CSS файле мы определяем стили для элементов HTML файла. Первый способ определить элементы — по имени. Ты должна помнить эти теги из HTML. `a`, `h1`, `head` - все это примеры имен элементов. Мы также назначить элементу `класс` или атрибут `id`. Class и id – это имена, которые ты сама присваиваешь элементам. Классы (сlass) определяют группы элементов, а идентификаторы (id) указывают на конкретные элементы. For example, you could identify the following element by using the element name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+В CSS файле мы определяем стили для элементов HTML файла. Первый способ определить элементы — по имени. Ты должна помнить эти теги из HTML. `a`, `h1`, `head` - все это примеры имен элементов. Мы также назначить элементу `класс` или атрибут `id`. Class и id – это имена, которые ты сама присваиваешь элементам. Классы (сlass) определяют группы элементов, а идентификаторы (id) указывают на конкретные элементы. Например, вы можете идентифицировать следующий элемент, используя имя элемента `a`, класс `external_link` или идентификатор `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
