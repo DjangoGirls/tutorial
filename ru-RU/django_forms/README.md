@@ -44,11 +44,11 @@ class PostForm(forms.ModelForm):
 
 ## Ссылка на страницу с формой
 
-Before we add the link, we need some icons to use as buttons for the link. For this tutorial, download [file-earmark-plus.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/file-earmark-plus.svg) and save it in the folder `blog/templates/blog/icons/`
+Прежде чем мы добавим ссылку, нам нужно несколько иконок, чтобы использовать как кнопки для ссылки. Для этого руководства, загрузите [файл earmark-plus.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/file-earmark-plus.svg) и сохраните его в папке `blog/templates/blog/icons/`
 
-> Note: To download the SVG image, open the context menu on the link (usually by right-clicking on it) and select "Save link as". In the dialog asking you where to save the file, navigate to the `djangogirls` directory of your Django project, and within that to subdirectory `blog/templates/blog/icons/`, and save the file there.
+> Замечание: Для загрузки SVG изображения, откройте контекстное меню на ссылке (обычно правой кнопкой мыши по нему) и выберите "Сохранить ссылку как". В диалоговом окне, попросив, где сохранить файл, перейдите в каталог `djangogirls` вашего проекта Django, и в том подкаталоге `blog/templates/blog/icons/`, и сохранить файл там.
 
-It's time to open `blog/templates/blog/base.html` in the code editor. Now we can use this icon file inside the base template as follows. In the `div` element inside `header` section, we will add a link before the `h1` element:
+Пора открыть `blog/templates/blog/base.html` в редакторе кода. Теперь мы можем использовать этот файл значков в базовом шаблоне следующим образом. В элементе `div` внутри раздела `header` мы добавим ссылку перед элементом `h1`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
