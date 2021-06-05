@@ -134,24 +134,24 @@ LOGGING = {
 
 Запустить:
 
-{% filename %}Cloud 9{% endfilename %}
+{% filename %}Cloud 9{% endfilename %} 
 
     mkdir djangogirls
-    cd djangogirls
-    python3 -m venv myvenv
+    djangogirls
+    python3 -m venv
     source myvenv/bin/activate
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: `~=`).
+(обратите внимание, что в последней строке мы используем знак равенства после знака тильды: `~=`).
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+Создать [GitHub](https://github.com) аккаунт.
 
 ### PythonAnywhere
 
-The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+Учебник Django Girls включает раздел о том, что называется «Развертывание», которое представляет собой процесс переноса кода, обеспечивающего работу вашего нового веб-приложения, на общедоступный компьютер (называемый сервером), чтобы другие люди могли видеть вашу работу.
 
 This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
