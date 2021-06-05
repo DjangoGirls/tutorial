@@ -93,13 +93,13 @@ python3 manage.py runserver $PORT
 
 После создания этих файлов перейдите в Терминал и выполните следующие команды, чтобы создать свой первый проект Django:
 
-{% filename %}Terminal{% endfilename %}
+{% filename %}Терминал{% endfilename %}
 
     django-admin.py startproject mysite .
-    refresh
+    Обновить
     
 
-In order to see detailed error messages, you can activate Django debug logs for your Glitch application. Simply add the following at the end of the `mysite/settings.py` file.
+Чтобы видеть подробные сообщения об ошибках, вы можете активировать журналы отладки Django для своего приложения Glitch. Просто добавьте следующее в конец файла ` mysite / settings.py `.
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -124,7 +124,7 @@ LOGGING = {
 }
 ```
 
-This will create a `debug.log` file detailing Django operations and any error messages that might come up, making it much easier to fix if your website does not work.
+Это создаст файл ` debug.log ` с подробным описанием операций Django и любых сообщений об ошибках, которые могут появиться, что значительно упростит исправление, если ваш веб-сайт не работает.
 
 The initial restarting of the Glitch project should fail. (If you click on the top dropdown button `Show` then click on `In a New Window`, you will receive a `DisallowedHost` error message.) Do not worry about it at this stage, the tutorial will fix this as soon as you update the Django settings of your project in the `mysite/settings.py` file.
 
