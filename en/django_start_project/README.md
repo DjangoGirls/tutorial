@@ -169,7 +169,7 @@ DATABASES = {
     }
 }
 ```
-To be able to use `os` module here `'NAME': os.path.join(BASE_DIR, 'db.sqlite3')` we have to add it in import section, at the beggining of `settings.py` file.
+To be able to use the `os` module here `'NAME': os.path.join(BASE_DIR, 'db.sqlite3')` we have to add it in the import section, at the beginning of the `settings.py` file.
 
 {% filename %}mysite/settings.py{% endfilename %}
 ```python
