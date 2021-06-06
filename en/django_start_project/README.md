@@ -169,6 +169,12 @@ DATABASES = {
     }
 }
 ```
+To be able to use `os` module here `'NAME': os.path.join(BASE_DIR, 'db.sqlite3')` we have to add it in import section, at the beggining of `settings.py` file.
+
+{% filename %}mysite/settings.py{% endfilename %}
+```python
+import os
+```
 
 To create a database for our blog, let's run the following in the console: `python manage.py migrate` (we need to be in the `djangogirls` directory that contains the `manage.py` file). If that goes well, you should see something like this:
 
