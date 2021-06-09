@@ -45,20 +45,20 @@ Python հրամանը գործարկելուց հետո հուշումը փոխ�
 - `5 - 1`
 - `40 / 2`
 
-To perform exponential calculation, say 2 to the power 3, we type: {% filename %}command-line{% endfilename %}
+Էքսպոնենտալ հաշվարկ կատարելու համար ասենք 2 հզորության 3-ը ՝ մենք մուտքագրում ենք. {% filename %}command-line (հրամանի տող){% endfilename %}
 
 ```python
 >>> 2 ** 3
 8
 ```
 
-Have fun with this for a little while and then get back here. :)
+Մի փոքր զվարճացեք դրանով, ապա վերադառնաք այստեղ :)
 
-As you can see, Python is a great calculator. If you're wondering what else you can do…
+Ինչպես տեսնում եք, Python- ը հիանալի հաշվիչ է: Եթե ​​մտածում եք, թե էլ ինչ կարող եք անել ...
 
-## Strings
+## Strings (տողեր)
 
-How about your name? Type your first name in quotes like this:
+Ինչ վերաբերում է ձեր անունին: Մուտքագրեք ձեր անունը այսպիսի մեջբերումներում. 
 
 {% filename %}command-line{% endfilename %}
 
@@ -67,9 +67,9 @@ How about your name? Type your first name in quotes like this:
 'Ola'
 ```
 
-You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
+Դուք այժմ ստեղծել եք ձեր առաջին string-ը (տողը): Դա նիշերի հաջորդականություն է, որը կարող է մշակվել համակարգչի կողմից: String-ը միշտ պետք է սկսվի և ավարտվի նույն նիշով: Սա կարող է լինել միայնակ (` '`) կամ կրկնակի (` "`) մեջբերումներ (տարբերություն չկա:) Գնանշումները Python- ին ասում են, որ իրենց մեջ եղածը string է:
 
-Strings can be strung together. Try this:
+String-երը կարելի է միասին դնել: Փորձեք այս:
 
 {% filename %}command-line{% endfilename %}
 
