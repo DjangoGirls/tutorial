@@ -260,9 +260,9 @@ Maria
 
 ## Lists (ցուցակները)
 
-String-երի և integer-ի (թվերի) հետ մեկտեղ Python- ն ունի ամենատարբեր տեսակի object-ներ (օբյեկտներ): Այժմ մենք պատրաստվում ենք ներկայացնել մեկը, որը կոչվում է ** list (ցուցակ) **: Lists are exactly what you think they are: objects which are lists of other objects. :)
+String-երի և integer-ի (թվերի) հետ մեկտեղ Python- ն ունի ամենատարբեր տեսակի object-ներ (օբյեկտներ): Այժմ մենք պատրաստվում ենք ներկայացնել մեկը, որը կոչվում է ** list (ցուցակ) **: Ծուցակները հենց այն են, ինչ դուք կարծում եք. օբյեկտներ, որոնք այլ օբյեկտների ցուցակներ են: :)
 
-Go ahead and create a list:
+Գնացեք և ստեղծեք ցուցակ.
 
 {% filename %}command-line{% endfilename %}
 
@@ -271,7 +271,7 @@ Go ahead and create a list:
 []
 ```
 
-Yes, this list is empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repeat ourselves all the time, so we will put it in a variable, too:
+Այո, այս ցուցակը դատարկ է: Շատ օգտակար չէ, չէ՞: Եկեք ստեղծենք վիճակախաղի համարների ցուցակ: Մենք չենք ուզում անընդհատ կրկնվել, այնպես որ այն նաև կդնենք փոփոխականի մեջ.
 
 {% filename %}command-line{% endfilename %}
 
@@ -279,7 +279,7 @@ Yes, this list is empty. Not very useful, right? Let's create a list of lottery 
 >>> lottery = [3, 42, 12, 19, 30, 59]
 ```
 
-All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that? You know this already!
+Լավ, մենք ցուցակ ունենք: Ի՞նչ կարող ենք անել դրա հետ: Տեսնենք, թե վիճակախաղի քանի համար կա ցուցակում: Դուք գաղափար ունե՞ք, թե որ function (ֆունկցիան) պետք է օգտագործեք դրա համար: Դուք դա արդեն գիտեք:
 
 {% filename %}command-line{% endfilename %}
 
@@ -288,7 +288,7 @@ All right, we have a list! What can we do with it? Let's see how many lottery nu
 6
 ```
 
-Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we will sort it now:
+Այո՛ ` len()` - ը կարող է ձեզ ցուցակում մի շարք օբյեկտներ տալ: Հարմար է, չէ՞: Միգուցե հիմա տեսակավորենք.
 
 {% filename %}command-line{% endfilename %}
 
@@ -296,7 +296,7 @@ Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we 
 >>> lottery.sort()
 ```
 
-This doesn't return anything, it just changed the order in which the numbers appear in the list. Let's print it out again and see what happened:
+Սա ոչինչ չի վերադարձնում, պարզապես փոխեց ցուցակի թվերը հայտնվելու հերթականությունը: Եկեք նորից տպենք և տեսնենք, թե ինչ է տեղի ունեցել:
 
 {% filename %}command-line{% endfilename %}
 
@@ -305,9 +305,9 @@ This doesn't return anything, it just changed the order in which the numbers app
 [3, 12, 19, 30, 42, 59]
 ```
 
-As you can see, the numbers in your list are now sorted from the lowest to highest value. Congrats!
+Ինչպես տեսնում եք, ձեր ցուցակի թվերն այժմ տեսակավորված են ամենացածրից բարձրագույն արժեքից: Շնորհավորանքներ
 
-Maybe we want to reverse that order? Let's do that!
+Միգուցե մենք ուզում ենք հետ շրջե՞լ այդ կարգը: Արի անենք դա!
 
 {% filename %}command-line{% endfilename %}
 
@@ -317,7 +317,7 @@ Maybe we want to reverse that order? Let's do that!
 [59, 42, 30, 19, 12, 3]
 ```
 
-If you want to add something to your list, you can do this by typing this command:
+Եթե ցանկանում եք ինչ-որ բան ավելացնել ձեր ցուցակին, կարող եք դա անել ՝ մուտքագրելով այս հրահանգը.
 
 {% filename %}command-line{% endfilename %}
 
@@ -1061,12 +1061,12 @@ Which would print:
 
 Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
 
-## Summary
+## Ամփոփում
 
-That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
+Վերջ ** Դուք լիովին ռոք եք անում: ** Սա բարդ գլուխ էր, այնպես որ դուք պետք է հպարտանաք ինքներդ ձեզնով: Մենք անկասկած հպարտ ենք ձեզանով, որ հասել եք մինչ այժմ:
 
-For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers! :)
+Python- ի պաշտոնական և ամբողջական ձեռնարկի համար այցելեք https://docs.python.org/3/tutorial/: Սա ձեզ լեզվի ավելի մանրակրկիտ և ամբողջական ուսումնասիրություն կտա: Ողջույն :)
 
-You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
+Կարող եք համառոտ մեկ այլ բան անել ՝ ձգվել, մի փոքր շրջել, հանգստանալ ձեր աչքերով ՝ նախքան հաջորդ գլուխ անցնելը: :)
 
 ![Cupcake](images/cupcake.png)
