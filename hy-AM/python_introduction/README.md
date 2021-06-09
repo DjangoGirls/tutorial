@@ -14,7 +14,7 @@ Python- ի հետ խաղալու համար մենք պետք է ձեր համա
 
 Պատրաստ լինելուց հետո հետևեք ստորև ներկայացված հրահանգներին:
 
-We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
+Մենք ուզում ենք Python կոնսոլ բացել, այնպես որ Windows- ում մուտքագրեք ` python ` կամ Mac OS / Linux համակարգում ` python3 ` և սեղմեք ` enter `:
 
 {% filename %}command-line{% endfilename %}
 
@@ -24,7 +24,7 @@ We want to open up a Python console, so type in `python` on Windows or `python3`
     >>>
     
 
-## Your first Python command!
+## Ձեր առաջին Python command-ը (հրամանը):
 
 After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
 
