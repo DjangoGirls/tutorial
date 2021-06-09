@@ -260,7 +260,7 @@ Maria
 
 ## Lists (ցուցակները)
 
-Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called **list**. Lists are exactly what you think they are: objects which are lists of other objects. :)
+String-երի և integer-ի (թվերի) հետ մեկտեղ Python- ն ունի ամենատարբեր տեսակի object-ներ (օբյեկտներ): Այժմ մենք պատրաստվում ենք ներկայացնել մեկը, որը կոչվում է ** list (ցուցակ) **: Lists are exactly what you think they are: objects which are lists of other objects. :)
 
 Go ahead and create a list:
 
