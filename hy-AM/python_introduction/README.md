@@ -386,11 +386,11 @@ Now, try writing the following command (try substituting your own information, t
 
 With this command, you just created a variable named `participant` with three key–value pairs:
 
-- The key `name` points to the value `'Ola'` (a `string` object),
-- `country` points to `'Poland'` (another `string`),
-- and `favorite_numbers` points to `[7, 42, 92]` (a `list` with three numbers in it).
+- `name(անուն) ` ստեղնը մատնանշում է ` 'Ola' ` արժեքը (` string` օբյեկտ),
+- ` country (երկիրը) ` մատնանշում է `'Poland' «Լեհաստան» ` (մեկ այլ ` string `)
+- և ` favorite_numbers (սիրված_համարները) ` ցույց են տալիս ` [7, 42, 92] ` (` list (ցուցակ) `, որի մեջ կա երեք համար):
 
-You can check the content of individual keys with this syntax:
+Անհատական ստեղների բովանդակությունը կարող եք ստուգել այս syntax (շարահյուսությամբ).
 
 {% filename %}command-line{% endfilename %}
 
