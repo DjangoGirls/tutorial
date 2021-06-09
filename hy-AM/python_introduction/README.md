@@ -166,16 +166,16 @@ TypeError: object of type 'int' has no len()
 
 Դա աշխատեց! Մենք ` str ` գործառույթի ներսում օգտագործեցինք ` str() ` function-ը: ` str() ` ամեն ինչ վերածում է string-երի:
 
-- The `str` function converts things into **strings**
-- The `int` function converts things into **integers**
+- ` str ` function (ֆունկցիան) իրերը վերափոխում է ** string-երի **
+- ` int ` function (ֆունկցիան) իրերը վերափոխում է ** integers **
 
-> Important: we can convert numbers into text, but we can't necessarily convert text into numbers – what would `int('hello')` be anyway?
+> Կարևոր. Մենք կարող ենք թվերը վերածել տեքստի, բայց պարտադիր չէ, որ տեքստը վերածենք թվերի. Ի՞նչ կլինի ամեն դեպքում `int('hello') `:
 
-## Variables
+## Variables (Փոփոխականներ)
 
-An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
+Mingրագրավորման կարևոր հայեցակարգը variable- ներն (փոփոխականներն) են: Varaible-ը (Փոփոխականը) ոչ այլ ինչ է, քան ինչ-որ բանի անուն, այնպես որ այն հետագայում կարող եք օգտագործել: ծրագրավորողներ օգտագործում են այս փոփոխականները տվյալներ պահելու, իրենց կոդերն ավելի ընթեռնելի դարձնելու համար և ստիպված չեն անընդհատ հիշել, թե ինչ բաներ են:
 
-Let's say we want to create a new variable called `name`:
+Ասենք, որ ուզում ենք ստեղծել նոր variable (փոփոխական), որը կոչվում է ` name (անուն) `:
 
 {% filename %}command-line{% endfilename %}
 
@@ -183,9 +183,9 @@ Let's say we want to create a new variable called `name`:
 >>> name = "Ola"
 ```
 
-We type name equals Ola.
+Մենք մուտքագրում ենք name-ը (անունը) հավասար է Ola:
 
-As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Enter `name` and hit `enter`:
+Ինչպես նկատել եք, ձեր ծրագիրը չի վերադարձրել այլ բան, ինչպես նախկինում էր: Այսպիսով, ինչպե՞ս իմանանք, որ variable-ն (փոփոխականն) իրականում գոյություն ունի: Մուտքագրեք ` name (անունը) ` և սեղմեք ` enter (մուտքագրեք) `
 
 {% filename %}command-line{% endfilename %}
 
@@ -194,7 +194,7 @@ As you've noticed, your program didn't return anything like it did before. So ho
 'Ola'
 ```
 
-Yippee! Your first variable! :) You can always change what it refers to:
+Ձեր առաջին variable-ը փոփոխականը! :) Դուք միշտ կարող եք փոխել այն, ինչին վերաբերում է.
 
 {% filename %}command-line{% endfilename %}
 
@@ -204,7 +204,7 @@ Yippee! Your first variable! :) You can always change what it refers to:
 'Sonja'
 ```
 
-You can use it in functions too:
+Այն կարող եք օգտագործել նաև function-ներում.
 
 {% filename %}command-line{% endfilename %}
 
