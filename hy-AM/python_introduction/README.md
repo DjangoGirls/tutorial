@@ -26,11 +26,11 @@ Python- ի հետ խաղալու համար մենք պետք է ձեր համա
 
 ## Ձեր առաջին Python command-ը (հրամանը):
 
-After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
+Python հրամանը գործարկելուց հետո հուշումը փոխվեց `>>>`. Մեզ համար սա նշանակում է, որ առայժմ մենք կարող ենք օգտագործել միայն Python լեզվով հրամաններ: Պետք չէ մուտքագրել `>>>` - Python- ը դա կանի ձեզ համար:
 
-If you want to exit the Python console at any point, type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
+Եթե ​​ցանկանում եք ցանկացած պահի դուրս գալ Python- ի վահանակից, մուտքագրեք ` ելք () ` կամ օգտագործեք դյուրանցում ` Ctrl + Z ` Windows- ի և ` Ctrl + D ` Mac / Linux- ի համար: Այդ դեպքում `>>>`այլևս չեք տեսնի:
 
-For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
+Առայժմ մենք չենք ցանկանում դուրս գալ Python կոնսոլից: Մենք ուզում ենք ավելին իմանալ դրա մասին: Եկեք սկսենք մուտքագրել մի քանի մաթեմատիկա, ինչպիսին է ` 2 + 3 ` և սեղմելով ` մուտքագրումը `:
 
 {% filename %}command-line{% endfilename %}
 
@@ -39,7 +39,7 @@ For now, we don't want to exit the Python console. We want to learn more about i
 5
 ```
 
-Nice! See how the answer popped out? Python knows math! You could try other commands like:
+Հոյակապ. Տեսեք, թե ինչպես հայտնվեց պատասխանը: Python- ը գիտի մաթեմատիկա: Կարող եք փորձել այլ հրամաններ, ինչպիսիք են ՝
 
 - `4 * 5`
 - `5 - 1`
