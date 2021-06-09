@@ -213,7 +213,7 @@ Mingրագրավորման կարևոր հայեցակարգը variable- ներ�
 5
 ```
 
-Awesome, right? Now, variables can be anything – numbers too! Try this:
+Հիանալի է, չէ՞: Այժմ variable-ները (փոփոխականները )կարող են լինել ցանկացած ՝ թվեր նույնպես: Փորձեք այս:
 
 {% filename %}command-line{% endfilename %}
 
@@ -224,7 +224,7 @@ Awesome, right? Now, variables can be anything – numbers too! Try this:
 24
 ```
 
-But what if we used the wrong name? Can you guess what would happen? Let's try!
+Բայց ի՞նչ կլինի, եթե մենք սխալ անուն օգտագործենք: Կարո՞ղ եք գուշակել, թե ինչ կլինի: Արի փորձենք!
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -236,13 +236,13 @@ Traceback (most recent call last):
 NameError: name 'ctiy' is not defined
 ```
 
-An error! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
+Սխալ! Ինչպես տեսնում եք, Python- ն ունի տարբեր տեսակի սխալներ, և այս մեկը կոչվում է ** NameError **: Python- ը ձեզ կտա այս սխալը, եթե փորձեք օգտագործել դեռ չսահմանված variable (փոփոխական): Եթե ​​ավելի ուշ այս սխալի եք բախվել, ստուգեք ձեր կոդը ՝ ստուգելու համար, արդյոք սխալ եք մուտքագրել որևէ անուն:
 
-Play with this for a while and see what you can do!
+Մի փոքր խաղացեք սրա հետ և տեսեք, թե ինչ կարող եք անել:
 
-## The print function
+## Print function (Տպման գործառույթը)
 
-Try this:
+Փորձեք այս:
 
 {% filename %}command-line{% endfilename %}
 
@@ -254,11 +254,11 @@ Try this:
 Maria
 ```
 
-When you just type `name`, the Python interpreter responds with the string *representation* of the variable 'name', which is the letters M-a-r-i-a, surrounded by single quotes, ''. When you say `print(name)`, Python will "print" the contents of the variable to the screen, without the quotes, which is neater.
+Երբ դուք պարզապես մուտքագրում եք ` name (անուն)`, Python- ի թարգմանիչը պատասխանում է 'name' variable (փոփոխական) string-ի (տող) * ներկայացմամբ* , որը M-a-r-i-a տառերն են, որոնք շրջապատված են մեկ չակերտով, ": Երբ ասում եք ` տպել (անունը) `, Python- ը "print"-կանի («կտպագրի») variable-ի պարունակությունը էկրանին ՝ առանց չակերտների, որը ավելի կոկիկ է:
 
-As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things on multiple lines.
+Ինչպես կտեսնենք ավելի ուշ, ` print () ` - ը օգտակար է նաև այն ժամանակ, երբ մենք ուզում ենք գործերը ներսից function-ներ տպել, կամ երբ ուզում ենք իրեր տպել բազմաթիվ տողերի վրա:
 
-## Lists
+## Lists (ցուցակները)
 
 Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called **list**. Lists are exactly what you think they are: objects which are lists of other objects. :)
 
