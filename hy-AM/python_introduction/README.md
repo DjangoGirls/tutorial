@@ -87,9 +87,9 @@ String-երը կարելի է միասին դնել: Փորձեք այս:
 'OlaOlaOla'
 ```
 
-If you need to put an apostrophe inside your string, you have two ways to do it.
+Եթե ​​ձեզ հարկավոր է ապոստերֆ դնել ձեր string-ի ներսում, ապա դա անելու երկու եղանակ ունեք:
 
-Using double quotes:
+Օգտագործելով կրկնակի գնանշումներ.
 
 {% filename %}command-line{% endfilename %}
 
@@ -98,7 +98,7 @@ Using double quotes:
 "Runnin' down the hill"
 ```
 
-or escaping the apostrophe with a backslash (`\`):
+կամ հետադարձ աղեղից խուսափելուց (`\`):
 
 {% filename %}command-line{% endfilename %}
 
