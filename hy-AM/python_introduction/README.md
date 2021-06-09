@@ -155,7 +155,7 @@ TypeError: object of type 'int' has no len()
 
 Մենք ստացանք մեր առաջին սխալը: {{ warning_icon }} icon-ը (պատկերակը) ձեզ նախապատվություն տալու այն ձևն է, որ այն կոդը, որը պատրաստվում եք գործարկել, չի աշխատի ինչպես սպասվում էր: Սխալներ թույլ տալը (նույնիսկ դիտավորյալները) ուսման կարևոր մասն է:
 
-It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
+Այն ասում է, որ «int» տեսակի object-ները (օբյեկտները) (integers/ ամբողջ թվեր) երկարություն չունեն: Այսպիսով, ի՞նչ կարող ենք անել հիմա: Միգուցե կարո՞ղ ենք մեր թիվը գրել որպես string: String-երն ունեն length (երկարություն), չէ՞:
 
 {% filename %}command-line{% endfilename %}
 
@@ -164,7 +164,7 @@ It says that objects of type "int" (integers, whole numbers) have no length. So 
 6
 ```
 
-It worked! We used the `str` function inside of the `len` function. `str()` converts everything to strings.
+Դա աշխատեց! Մենք ` str ` գործառույթի ներսում օգտագործեցինք ` str() ` function-ը: ` str() ` ամեն ինչ վերածում է string-երի:
 
 - The `str` function converts things into **strings**
 - The `int` function converts things into **integers**
