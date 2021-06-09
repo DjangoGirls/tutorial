@@ -327,7 +327,7 @@ String-երի և integer-ի (թվերի) հետ մեկտեղ Python- ն ունի
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-Եթե ցանկանում եք ցույց տալ միայն առաջին համարը, ապա կարող եք դա անել ՝ օգտագործելով ** index (ինդեքսներ) **: An index is the number that says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
+Եթե ցանկանում եք ցույց տալ միայն առաջին համարը, ապա կարող եք դա անել ՝ օգտագործելով ** index (ինդեքսներ) **: Ինդեկսը այն թիվն է, որն ասում է, թե որտեղ է ցուցակում ինչ-որ իր տեղի ունենում: Ծրագրավորողները նախընտրում են սկսել հաշվել 0-ից, այնպես որ ձեր ցուցակում առաջին օբյեկտը 0 ինդեքսում է, հաջորդը 1-ի վրա և այլն: Փորձեք այս:
 
 {% filename %}command-line{% endfilename %}
 
