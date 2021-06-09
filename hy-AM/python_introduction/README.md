@@ -78,7 +78,7 @@ String-երը կարելի է միասին դնել: Փորձեք այս:
 'Hi there Ola'
 ```
 
-You can also multiply strings with a number:
+Դուք կարող եք նաև բազմապատկել տողերը մի թվով.
 
 {% filename %}command-line{% endfilename %}
 
