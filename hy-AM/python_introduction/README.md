@@ -129,18 +129,18 @@ String-երը կարելի է միասին դնել: Փորձեք այս:
 
 Հետաքրքիր է, թե ինչու եք երբեմն function-ներ (ֆունկցիաներ) կանչում a `.` String-ի (տողի) վերջում (ինչպես ` "Ola".upper()  `) և երբեմն նախ կանչում ես ֆունկցիա և string-ը դնում փակագծերում: Դե, որոշ դեպքերում function-ները (ֆունկցիաները) պատկանում են object-ների (օբյեկտների), ինչպես, օրինակ, ` վերին () `, որը կարող է կատարվել միայն տողերի վրա: Այս դեպքում մենք function (ֆունկցիան) անվանում ենք ** method (մեթոդ) **: Այլ ֆունկցիաներ, գործառույթները չեն պատկանում որևէ կոնկրետ բանի և կարող են օգտագործվել տարբեր տեսակի օբյեկտների վրա, ինչպես ` len () `: Այդ պատճառով մենք`"Ola"` որպես պարամետր ենք տալիս `len` գֆունկցիաին:
 
-### Summary
+### Ամփոփում
 
-OK, enough of strings. So far you've learned about:
+Լավ, բավական է string-եր: Մինչ այժմ իմացել եք.
 
-- **the prompt** – typing commands (code) into the Python prompt results in answers in Python
-- **numbers and strings** – in Python numbers are used for math and strings for text objects
-- **operators** – like `+` and `*`, combine values to produce a new one
-- **functions** – like `upper()` and `len()`, perform actions on objects.
+- ** prompt-ը** - Python- ի մեջ հրահանգներ (code / կոդ) մուտքագրելը Python- ում տալիս է պատասխաններ
+- **numbers and strings (թվերն ու տողերը) ** - Python- ի համարներում օգտագործվում են մաթեմատիկայի համար, իսկ string-երը `տեքստային object- ների (օբյեկտների) համար
+- ** operators (օպերատորները) ** - ինչպիսիք են ` + ` և ` * `, միավորում են արժեքները ՝ նորը արտադրելու համար
+- ** function-ներ ** - ինչպես ` upper() ` և ` len() `, գործողություններ կատարել օբյեկտների վրա:
 
-These are the basics of every programming language you learn. Ready for something harder? We bet you are!
+Սրանք յուրաքանչյուր սովորած ծրագրավորման լեզվի հիմունքներն են: Պատրա՞ստ եք ավելի դժվար բանի:
 
-## Errors
+## Errors (Սխալներ)
 
 Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
 
