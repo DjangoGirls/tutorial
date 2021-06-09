@@ -994,7 +994,7 @@ Still remember lists? Let's do a list of girls:
 girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 ```
 
-We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
+Մենք ուզում ենք նրանց բոլորին ողջունել իրենց անունով: Դա անելու համար մենք ունենք ` hi ` function, ուստի եկեք օգտագործենք այն loop-ի (օղակի) մեջ.
 
 {% filename %}python_intro.py{% endfilename %}
 
