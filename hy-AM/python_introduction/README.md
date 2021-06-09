@@ -142,7 +142,7 @@ String-երը կարելի է միասին դնել: Փորձեք այս:
 
 ## Errors (Սխալներ)
 
-Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
+Փորձենք մի նոր բան: Կարո՞ղ ենք համարի երկարությունը ստանալ նույն կերպ, ինչպես կարող էինք պարզել մեր անվան երկարությունը: Մուտքագրեք ` len(304023) ` և սեղմեք ` enter `:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -153,7 +153,7 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-We got our first error! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. Making mistakes (even intentional ones) are an important part of learning!
+Մենք ստացանք մեր առաջին սխալը: {{ warning_icon }} icon-ը (պատկերակը) ձեզ նախապատվություն տալու այն ձևն է, որ այն կոդը, որը պատրաստվում եք գործարկել, չի աշխատի ինչպես սպասվում էր: Սխալներ թույլ տալը (նույնիսկ դիտավորյալները) ուսման կարևոր մասն է:
 
 It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
 
