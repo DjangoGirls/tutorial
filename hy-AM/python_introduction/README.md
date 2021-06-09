@@ -107,7 +107,7 @@ String-երը կարելի է միասին դնել: Փորձեք այս:
 "Runnin' down the hill"
 ```
 
-Nice, huh? To see your name in uppercase letters, type:
+Հետաքրքիր է, ոչ: Ձեր անունը մեծատառով տեսնելու համար մուտքագրեք ՝
 
 {% filename %}command-line{% endfilename %}
 
@@ -116,9 +116,9 @@ Nice, huh? To see your name in uppercase letters, type:
 'OLA'
 ```
 
-You just used the `upper` **method** on your string! A method (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
+Դուք հենց ձեր string-ի (տողի) վրա օգտագործեցիք ` upper(վերին) ` ** method(մեթոդը)**: Մեթոդը (ինչպիսին է ` upper() (վերին ()) `) հրահանգների հաջորդականությունն է, որը Python- ը պետք է կատարի տվյալ օբյեկտի վրա (` «Օլա» `), երբ այն զանգահարեք:
 
-If you want to know the number of letters contained in your name, there is a **function** for that too!
+Եթե ​​ուզում եք իմանալ ձեր անվան մեջ պարունակվող տառերի քանակը, դրա համար կա **function ( գործառույթ) **:
 
 {% filename %}command-line{% endfilename %}
 
@@ -127,7 +127,7 @@ If you want to know the number of letters contained in your name, there is a **f
 3
 ```
 
-Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
+Հետաքրքիր է, թե ինչու եք երբեմն function-ներ (ֆունկցիաներ) կանչում a `.` String-ի (տողի) վերջում (ինչպես ` "Ola".upper()  `) և երբեմն նախ կանչում ես ֆունկցիա և string-ը դնում փակագծերում: Դե, որոշ դեպքերում function-ները (ֆունկցիաները) պատկանում են object-ների (օբյեկտների), ինչպես, օրինակ, ` վերին () `, որը կարող է կատարվել միայն տողերի վրա: Այս դեպքում մենք function (ֆունկցիան) անվանում ենք ** method (մեթոդ) **: Այլ ֆունկցիաներ, գործառույթները չեն պատկանում որևէ կոնկրետ բանի և կարող են օգտագործվել տարբեր տեսակի օբյեկտների վրա, ինչպես ` len () `: Այդ պատճառով մենք`"Ola"` որպես պարամետր ենք տալիս `len` գֆունկցիաին:
 
 ### Summary
 
