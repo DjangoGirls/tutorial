@@ -559,9 +559,9 @@ Boolean (Բուլյան) ընդամենը երկու օբյեկտ կա.
 - Ճիշտ
 - Կեղծ
 
-But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well.)
+Բայց որպեսզի Python- ը դա հասկանա, դուք պետք է այն միշտ գրեք որպես 'True' («Ճիշտ») (առաջին տառերը մեծատառով, մնացած տառերը փոքրատառերով): ** true, TRUE և tRUE չեն գործի. Միայն True- ն է ճիշտ: ** (Նույնը վերաբերում է նաև 'False' - ին):
 
-Booleans can be variables, too! See here:
+Booleans- ը նույնպես կարող է փոփոխական լինել: Տեսեք այստեղ ՝
 
 {% filename %}command-line{% endfilename %}
 
@@ -571,7 +571,7 @@ Booleans can be variables, too! See here:
 True
 ```
 
-You can also do it this way:
+Դուք կարող եք նաև դա անել այս կերպ.
 
 {% filename %}command-line{% endfilename %}
 
@@ -581,18 +581,18 @@ You can also do it this way:
 False
 ```
 
-Practice and have fun with Booleans by trying to run the following commands:
+Պարապեք և զվարճացեք Booleans- ի հետ `փորձելով կատարել հետևյալ հրահանգները.
 
 - `True and True`
 - `False and True`
 - `True or 1 == 1`
 - `1 != 2`
 
-Congrats! Booleans are one of the coolest features in programming, and you just learned how to use them!
+Շնորհավորանքներ. Booleans- ը ծրագրավորման ամենաթեժ առանձնահատկություններից մեկն է, և դուք պարզապես սովորեցիք, թե ինչպես օգտագործել դրանք:
 
-# Save it!
+# Պահպանել այն!
 
-> For readers at home: this part is covered in the [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) video.
+> Ընթերցողների համար տանը. Այս մասը ներառված է [ Python Basics: Saving files and 'if' statement (Python- ի հիմունքներում. Ֆայլեր պահելը և «Եթե» հայտարարությունը) ](https://www.youtube.com/watch?v=dOAg6QVAxyk) տեսանյութում:
 
 So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal programs are saved in files and executed by our programming language **interpreter** or **compiler**. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
 
