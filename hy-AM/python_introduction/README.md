@@ -554,10 +554,10 @@ TypeError: '>' not supported between instances of 'int' and 'str'
 
 Ի դեպ, դուք հենց նոր իմացաք Python- ի նոր տեսակի օբյեկտների մասին: Այն կոչվում է ** Boolean (Բուլյան) **:
 
-There are only two Boolean objects:
+Boolean (Բուլյան) ընդամենը երկու օբյեկտ կա.
 
-- True
-- False
+- Ճիշտ
+- Կեղծ
 
 But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well.)
 
