@@ -374,9 +374,9 @@ Python- ի փաստաթղթավորման այս գլխում կարող եք գ
 {}
 ```
 
-This shows that you just created an empty dictionary. Hurray!
+Սա ցույց է տալիս, որ դուք պարզապես ստեղծել եք դատարկ բառարան: Ուռա!
 
-Now, try writing the following command (try substituting your own information, too):
+Այժմ փորձեք գրել հետևյալ հրահանգը (փորձեք փոխարինել նաև ձեր սեփական տեղեկությունները).
 
 {% filename %}command-line{% endfilename %}
 
@@ -384,7 +384,7 @@ Now, try writing the following command (try substituting your own information, t
 >>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
 ```
 
-With this command, you just created a variable named `participant` with three key–value pairs:
+Այս հրամանի միջոցով դուք պարզապես ստեղծեցիք ` participant (մասնակից) ` անունով փոփոխական `երեք առանցքային արժեքի զույգերով.
 
 - `name(անուն) ` ստեղնը մատնանշում է ` 'Ola' ` արժեքը (` string` օբյեկտ),
 - ` country (երկիրը) ` մատնանշում է `'Poland' «Լեհաստան» ` (մեկ այլ ` string `)
@@ -399,9 +399,9 @@ With this command, you just created a variable named `participant` with three ke
 Ola
 ```
 
-See, it's similar to a list. But you don't need to remember the index – just the name.
+Տեսեք, դա նման է ցուցակին: Բայց հարկավոր չէ հիշել ինդեքսը, պարզապես անունը:
 
-What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
+Ի՞նչ է պատահում, եթե Python- ից հարցնենք գոյություն չունեցող ստեղնաշարի արժեքը: Դուք կարող եք կռահել? Եկեք փորձենք և տեսնենք:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -412,14 +412,14 @@ Traceback (most recent call last):
 KeyError: 'age'
 ```
 
-Look, another error! This one is a **KeyError**. Python is helpful and tells you that the key `'age'` doesn't exist in this dictionary.
+Տեսեք, մեկ այլ սխալ: Այս մեկը ** KeyError ** է: Python- ը օգտակար է և ասում է, որ `'age' («տարիքը») ` բանալին գոյություն չունի այս բառարանում:
 
-When should you use a dictionary or a list? Well, that's a good point to ponder. Think about the answer before looking at it in the next line.
+Ե՞րբ պետք է օգտագործեք բառարան կամ ցուցակ: Լավ, դա խորհելու լավ կետ է: Մտածեք պատասխանի մասին նախքան այն հաջորդ տողում դիտելը:
 
-- Do you just need an ordered sequence of items? Go for a list.
-- Do you need to associate values with keys, so you can look them up efficiently (by key) later on? Use a dictionary.
+- Ուղղակի պե՞տք է իրերի պատվիրված հաջորդականություն: Գնացեք ցուցակի համար:
+- Ձեզ հարկավոր է արժեքները կապել բանալիների հետ, որպեսզի հետագայում դրանք արդյունավետ (բանալիներով) որոնեք: Օգտագործեք բառարան
 
-Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key–value pairs to a dictionary after it is created, like this:
+Բառարանները, ինչպես list-ները (ցուցակ)ները, * mutable (փոփոխական) են *, ինչը նշանակում է, որ դրանք կարող են փոփոխվել ստեղծվելուց հետո: Բառարանում կարող եք ավելացնել բանալի-արժեքի նոր զույգեր այն ստեղծվելուց հետո, ինչպես հետևյալը.
 
 {% filename %}command-line{% endfilename %}
 
@@ -427,7 +427,7 @@ Dictionaries, like lists, are *mutable*, meaning that they can be changed after 
 >>> participant['favorite_language'] = 'Python'
 ```
 
-Like lists, using the `len()` function on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
+Ծուցակների նման, բառարաններում օգտագործելով ` len () ` ֆունկցիան, վերադարձնում է բառարանում բանալի-արժեք զույգերի քանակը: Գնացեք և մուտքագրեք այս հրամանը.
 
 {% filename %}command-line{% endfilename %}
 
@@ -436,9 +436,9 @@ Like lists, using the `len()` function on the dictionaries returns the number of
 4
 ```
 
-I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
+Հուսով եմ ՝ դա մինչ այժմ իմաստ ունի: :) Պատրա՞ստ եք բառարանների հետ զվարճանալու համար: Կարդացեք մի քանի զարմանալի բաների մասին:
 
-You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, type in the following command:
+Կարող եք օգտագործել ` pop () ` method-(մեթոդ)ը ՝ բառարանում իրը ջնջելու համար: Ասեք, եթե ցանկանում եք ջնջել `'favorite_numebrs' «սիրված_համարները» ` բանալին համապատասխան գրառումը, մուտքագրեք հետևյալ հրամանը.
 
 {% filename %}command-line{% endfilename %}
 
@@ -449,9 +449,9 @@ You can use the `pop()` method to delete an item in the dictionary. Say, if you 
 {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-As you can see from the output, the key–value pair corresponding to the 'favorite_numbers' key has been deleted.
+Ինչպես տեսնում եք արդյունքից, 'favorite_numbers'(«սիրված_համարներ») ստեղնին համապատասխանող ստեղն-արժեք զույգը ջնջվել է:
 
-As well as this, you can also change a value associated with an already-created key in the dictionary. Type this:
+Բացի դրանից, դուք կարող եք նաև փոխել մի բառ, որը կապված է բառարանում արդեն իսկ ստեղծված բանալին: Մուտքագրեք սա ՝
 
 {% filename %}command-line{% endfilename %}
 
