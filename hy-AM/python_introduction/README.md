@@ -534,10 +534,10 @@ True
 
 Կարող եք Python- ին տալ այնքան թվեր, որպեսզի համեմատես, որքան ուզում ես, և դա քեզ կպատասխանի: Բավականին խելացի, այդպես չէ՞:
 
-- **and** – if you use the `and` operator, both comparisons have to be True in order for the whole command to be True
-- **or** – if you use the `or` operator, only one of the comparisons has to be True in order for the whole command to be True
+- ** and (և) ** - եթե օգտագործում եք ` and (և) ` օպերատորը, երկու համեմատություններն էլ պետք է լինեն Ճիշտ, որպեսզի ամբողջ հրամանը լինի Ճիշտ:
+- ** or (կամ) ** - եթե օգտագործում եք ` or (կամ) ` օպերատոր, ապա համեմատություններից միայն մեկը պետք է լինի Ճիշտ, որպեսզի ամբողջ հրամանը լինի Ճիշտ
 
-Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
+Լսե՞լ եք «խնձորը նարինջի հետ համեմատելը» արտահայտության մասին: Փորձենք Python- ի համարժեքը.
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -548,11 +548,11 @@ Traceback (most recent call last):
 TypeError: '>' not supported between instances of 'int' and 'str'
 ```
 
-Here you see that just like in the expression, Python is not able to compare a number (`int`) and a string (`str`). Instead, it shows a **TypeError** and tells us the two types can't be compared together.
+Այստեղ տեսնում եք, որ ինչպես արտահայտության մեջ, Python- ը ի վիճակի չէ համեմատել համարը (` int `) և տողը (` str `): Փոխարենը, այն ցույց է տալիս ** TypeError ** և մեզ ասում է, որ երկու տիպերը չեն կարող համեմատվել միասին:
 
 ## Boolean
 
-Incidentally, you just learned about a new type of object in Python. It's called **Boolean**.
+Ի դեպ, դուք հենց նոր իմացաք Python- ի նոր տեսակի օբյեկտների մասին: Այն կոչվում է ** Boolean (Բուլյան) **:
 
 There are only two Boolean objects:
 
