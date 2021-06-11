@@ -338,9 +338,9 @@ String-երի և integer-ի (թվերի) հետ մեկտեղ Python- ն ունի
 42
 ```
 
-As you can see, you can access different objects in your list by using the list's name and the object's index inside of square brackets.
+Ինչպես տեսնում եք, ձեր ցուցակում կարող եք մուտք գործել տարբեր օբյեկտներ ՝ օգտագործելով ցուցակի անվանումը և քառակուսի փակագծերի ներսում գտնվող օբյեկտի ցուցիչը:
 
-To delete something from your list you will need to use **indexes** as we learned above and the `pop()` method. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
+Ձեր ցուցակից ինչ-որ բան ջնջելու համար հարկավոր է օգտագործել ** indexes (ինդեքսները) **, ինչպես սովորեցինք վերևում և ` pop() (փոփ()) ` մեթոդը: Եկեք փորձենք մի օրինակ և ամրապնդենք նախկինում սովորածը. մենք կջնջենք մեր ցուցակի առաջին համարը:
 
 {% filename %}command-line{% endfilename %}
 
@@ -355,17 +355,17 @@ To delete something from your list you will need to use **indexes** as we learne
 [42, 30, 19, 12, 3, 199]
 ```
 
-That worked like a charm!
+Դա հիանալի աշխատեց:
 
-For extra fun, try some other indexes: 6, 7, 1000, -1, -6 or -1000. See if you can predict the result before trying the command. Do the results make sense?
+Լրացուցիչ զվարճանքի համար փորձեք մի քանի այլ ցուցանիշներ. 6, 7, 1000, -1, -6 կամ -1000: Տեսեք, արդյոք կարող եք կանխատեսել արդյունքը ՝ նախքան հրամանը փորձելը: Արդյո՞ք արդյունքները իմաստ ունեն:
 
-You can find a list of all available list methods in this chapter of the Python documentation: https://docs.python.org/3/tutorial/datastructures.html
+Python- ի փաստաթղթավորման այս գլխում կարող եք գտնել ցուցակի բոլոր մատչելի մեթոդների ցուցակը. https://docs.python.org/3/tutorial/datastructures.html
 
-## Dictionaries
+## Բառարաններ
 
-> For readers at home: this part is covered in the [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) video.
+> Ընթերցողների համար տանը. Այս մասն ընդգրկված է [ Python Basics: Dictionaries (Python- ի հիմունքները: բառարաններ) ](https://www.youtube.com/watch?v=ZX1CVvZLE6c) տեսանյութում:
 
-A dictionary is similar to a list, but you access values by looking up a key instead of a numeric index. A key can be any string or number. The syntax to define an empty dictionary is:
+Բառարանը նման է ցուցակին, բայց արժեքներին մուտք եք գործում թվային ցուցիչի փոխարեն ստեղ փնտրելով: Բանալին կարող է լինել ցանկացած string(տո) կամ համար: Դատարկ բառարան սահմանելու համար շարահյուսությունն է.
 
 {% filename %}command-line{% endfilename %}
 
