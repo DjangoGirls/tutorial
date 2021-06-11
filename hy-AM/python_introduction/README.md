@@ -461,24 +461,24 @@ KeyError: 'age'
 {'country': 'Germany', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
+Ինչպես տեսնում եք, `'country' («երկիր») ` ստեղնի արժեքը փոխվել է ` 'Poland' («Լեհաստան») ` - ից ` 'Germany' («Գերմանիա»)`: :) Հուզիչ? Ուռա! Դուք պարզապես սովորեցիք մեկ այլ զարմանալի բան:
 
-### Summary
+### Ամփոփում
 
-Awesome! You know a lot about programming now. In this last part you learned about:
+Հոյակապ. Դուք հիմա շատ բան գիտեք ծրագրավորման մասին: Այս վերջին մասում իմացաք.
 
-- **errors** – you now know how to read and understand errors that show up if Python doesn't understand a command you've given it
-- **variables** – names for objects that allow you to code more easily and to make your code more readable
-- **lists** – lists of objects stored in a particular order
-- **dictionaries** – objects stored as key–value pairs
+- ** errors (սխալներ) ** - Դուք այժմ գիտեք, թե ինչպես կարդալ և հասկանալ սխալները, որոնք հայտնվում են, եթե Python- ը չի հասկանում ձեր կողմից տրված հրամանը
+- ** variables (փոփոխականներ) ** - օբյեկտների անուններ, որոնք թույլ են տալիս ավելի հեշտ ծածկագրել և ձեր կոդն ավելի ընթեռնելի դարձնել
+- ** lists (ցուցակներ) ** - որոշակի հերթականությամբ պահված օբյեկտների ցուցակներ
+- ** disctionaries (բառարաններ) ** - օբյեկտներ, որոնք պահվում են որպես ստեղն-արժեք զույգեր
 
-Excited for the next part? :)
+Հիասթափվա՞ծ եք հաջորդ մասի համար: :) 
 
-## Compare things
+## Համեմատեք իրերը
 
-> For readers at home: this part is covered in the [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) video.
+> Ընթերցողների համար տանը. Այս մասն ընդգրկված է [ Python Basics: Comparisons (Համեմատություններ )](https://www.youtube.com/watch?v=7bzxqIKYgf4) տեսանյութում:
 
-A big part of programming involves comparing things. What's the easiest thing to compare? Numbers! Let's see how that works:
+Ծրագրավորման մեծ մասը ներառում է իրերի համեմատություն: Ո՞րն է համեմատության մեջ ամենահեշտ բանը: Թվե՛ր: Տեսնենք, թե ինչպես է դա գործում.
 
 {% filename %}command-line{% endfilename %}
 
@@ -497,11 +497,11 @@ True
 True
 ```
 
-We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare values of mathematical expressions like `2 * 2` and function results like the `2` returned by `len([4, 5])`. Nice, huh?
+Մենք որոշ թվեր տվեցինք Python- ին `համեմատելու համար: Ինչպես տեսնում եք, Python- ը ոչ միայն կարող է համեմատել թվերը, այլ նաև կարող է համեմատել մաթեմատիկական արտահայտությունների արժեքները, ինչպիսիք են ` 2 * 2 ` և ֆունկցիայի արդյունքները, ինչպիսին է ` 2 ` վերադարձվածը ` len ([4, 5]) `: Հաճելի է, հա՞:
 
-Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
+Զարմանո՞ւմ եք, թե ինչու ենք իրար կողքի դնում երկու հավասար ` == ` նշաններ ՝ համեմատելու համար, եթե թվերը հավասար են: Մենք օգտագործում ենք մեկ ` = ` փոփոխականներին արժեքներ նշանակելու համար: Դուք միշտ, ** միշտ ** պետք է դնեք դրանցից երկուսը ՝ ` == ` - եթե ուզում եք ստուգել, արդյոք իրերը հավասար են միմյանց: Կարող ենք նաև փաստել, որ իրերն անհավասար են միմյանց համար: Դրա համար մենք օգտագործում ենք `!= ` խորհրդանիշը, ինչպես ցույց է տրված վերևում բերված օրինակում:
 
-Give Python two more tasks:
+Python- ին տվեք ևս երկու առաջադրանք.
 
 {% filename %}command-line{% endfilename %}
 
