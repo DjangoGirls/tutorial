@@ -955,7 +955,7 @@ hi("Sonja")
     Ողջույն անանուն:
     
 
-This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
+Սա հիանալի է, չէ՞: Այս կերպ ձեզ հարկավոր չէ կրկնել ամեն անգամ, երբ ցանկանում եք փոխել այն անձի անունը, որը պետք է ողջունի ֆունկցիան: And that's exactly why we need functions – you never want to repeat your code!
 
 Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right? Replace the content of your file with the following:
 
