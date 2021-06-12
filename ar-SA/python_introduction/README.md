@@ -237,9 +237,9 @@ TypeError: object of type 'int' has no len()
     NameError: name 'ctiy' is not defined
     ```
     
-    An error! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
+    خطأ! كما ترون، بايثون لديه أنواع مختلفة من الأخطاء ويسمى هذا **NameError**. سوف يعطيك بايثون هذا الخطأ إذا حاولت استخدام متغير لم يتم تعريفه بعد. إذا واجهت هذا الخطأ في وقت لاحق، تحقق من التعليمات البرمجية الخاصة بك لمعرفة إذا كنت أخطأت في أي أسماء.
     
-    Play with this for a while and see what you can do!
+    العب مع هذا لبعض الوقت و شاهد ما يمكنك فعله!
     
     ## وظيفة الطباعة
     
