@@ -955,9 +955,9 @@ hi("Sonja")
     Ողջույն անանուն:
     
 
-Սա հիանալի է, չէ՞: Այս կերպ ձեզ հարկավոր չէ կրկնել ամեն անգամ, երբ ցանկանում եք փոխել այն անձի անունը, որը պետք է ողջունի ֆունկցիան: And that's exactly why we need functions – you never want to repeat your code!
+Սա հիանալի է, չէ՞: Այս կերպ ձեզ հարկավոր չէ կրկնել ամեն անգամ, երբ ցանկանում եք փոխել այն անձի անունը, որը պետք է ողջունի ֆունկցիան: Եվ հենց այդ պատճառով մեզ ֆունկցիաներ են պետք. Դուք երբեք չեք ցանկանում կրկնել ձեր ծածկագիրը:
 
-Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right? Replace the content of your file with the following:
+Եկեք ավելի խելացի բան անենք. Անուններն ավելի շատ են, քան երկուսը, և յուրաքանչյուրի համար պայման գրելը դժվար կլինի, չէ՞: Ձեր ֆայլի պարունակությունը փոխարինեք հետևյալով.
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -968,7 +968,7 @@ def hi(name):
 hi("Rachel")
 ```
 
-Let's call the code now:
+կեք հիմա զանգահարենք ծածկագիրը.
 
 {% filename %}command-line{% endfilename %}
 
@@ -976,17 +976,17 @@ Let's call the code now:
     Hi Rachel!
     
 
-Congratulations! You just learned how to write functions! :)
+Շնորհավորում եմ Դուք պարզապես իմացաք, թե ինչպես գրել ֆունկցիաներ: :)
 
-## Loops
+## Loops ( Օղակներ )
 
-> For readers at home: this part is covered in the [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) video.
+> Ընթերցողների համար տանը. Այս մասը ընդգրկված է [ Python Basics: For Loop ](https://www.youtube.com/watch?v=aEA6Rc86HF0) տեսանյութում:
 
-This is the last part already. That was quick, right? :)
+Սա արդեն վերջին մասն է: Դա արագ էր, չէ՞: :)
 
-Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
+Ծրագրավորողների չեն սիրում կրկնել իրենց: Ծրագրավորում բոլոր մասին, automating բաներ, այնպես որ, մենք չենք ուզում, որպեսզի ողջունելու յուրաքանչյուր անձին իրենց անունով ձեռքով, ճիշտ է? Դա այն վայրն է, որտեղ օղակները հարմար են:
 
-Still remember lists? Let's do a list of girls:
+Դեռ հիշու՞մ եք ցուցակները: Եկեք կատարենք աղջիկների ցուցակ.
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1002,9 +1002,9 @@ girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 for name in girls:
 ```
 
-The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
+` for ` հայտարարությունը իրեն նույն կերպ է վերաբերվում ` if ` հայտարարությանը; Այս երկուսից էլ ներքևի ծածկագիրը պետք է փորված լինի չորս տարածության մեջ:
 
-Here is the full code that will be in the file:
+Ահա ամբողջական կոդը, որը կլինի ֆայլում.
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1018,7 +1018,7 @@ for name in girls:
     print('Next girl')
 ```
 
-And when we run it:
+Եվ երբ մենք այն run/վարում ենք.
 
 {% filename %}command-line{% endfilename %}
 
@@ -1035,9 +1035,9 @@ And when we run it:
     Next girl
     
 
-As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
+Ինչպես տեսնում եք, այն ամենը, ինչ դնում եք ` for (համար) ` հայտարարության ներդիրով, կկրկնվի ` girls (աղջիկների)` ցուցակի յուրաքանչյուր տարր:
 
-You can also use `for` on numbers using the `range` function:
+Դուք կարող եք նաեւ օգտագործել `for (համար) ` է թվերի օգտագործելով ` range (հեռահար) ` ֆունկցիան:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1046,7 +1046,7 @@ for i in range(1, 6):
     print(i)
 ```
 
-Which would print:
+Որը կտպագրի.
 
 {% filename %}command-line{% endfilename %}
 
@@ -1057,9 +1057,9 @@ Which would print:
     5
     
 
-`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
+` range (միջակայքը) ` ֆունկցիան է, որը ստեղծում է թվերի ցուցակը մեկը մյուսին հաջորդող (այս թվերը տրամադրվում են ձեր կողմից որպես պարամետրեր):
 
-Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
+Նկատի ունեցեք, որ այս երկու թվերից երկրորդը ներառված չէ Python- ի կողմից թողարկվող ցուցակում (նկատի ունի ` range(1, 6) ` հաշվում է 1-ից 5-ը, բայց չի ներառում 6 թիվը): Դա այն պատճառով է, որ "range"-ը («միջակայքը») կիսաբաց է, և դրանով մենք նկատի ունենք, որ այն ներառում է առաջին արժեքը, բայց ոչ վերջինը:
 
 ## Ամփոփում
 
