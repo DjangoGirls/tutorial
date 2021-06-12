@@ -594,14 +594,14 @@ False
 
 > Ընթերցողների համար տանը. Այս մասը ներառված է [ Python Basics: Saving files and 'if' statement (Python- ի հիմունքներում. Ֆայլեր պահելը և «Եթե» հայտարարությունը) ](https://www.youtube.com/watch?v=dOAg6QVAxyk) տեսանյութում:
 
-So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal programs are saved in files and executed by our programming language **interpreter** or **compiler**. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
+Մինչ այժմ մենք թարգմանչի մեջ գրում էինք մեր պիթոնի բոլոր կոդերը, ինչը մեզ սահմանափակում է միանգամից մեկ տող կոդ մուտքագրելով: Նորմալ ծրագրերը պահվում են ֆայլերում և կատարվում են մեր ծրագրավորման լեզվի ** interpreter (թարգմանիչ) ** կամ ** compiler (կազմողի) ** կողմից: Մինչ այժմ մենք միանգամից տողեր ենք վարում մեր ծրագրերը Python- ի ** interpreter (թարգմանչի) ** մեջ: Հաջորդ մի քանի առաջադրանքների համար մեզ մեկից ավելի տող ծածկագիր է պետք, ուստի մեզ արագ անհրաժեշտ կլինի.
 
-- Exit the Python interpreter
-- Open up our code editor of choice
-- Save some code into a new python file
-- Run it!
+- Ելք Python- ի թարգմանիչից
+- Բացեք մեր ընտրած կոդերի խմբագրիչը
+- Մի քանի կոդ պահեք պիթոնի նոր ֆայլում
+- Սկսե՛ք (run the code) 
 
-To exit from the Python interpreter that we've been using, type the `exit()` function
+Մեզ համար օգտագործվող Python- ի interpreter (թարգմանիչից) դուրս գալու համար մուտքագրեք ` exit()  (ելք())` ֆունկցիան
 
 {% filename %}command-line{% endfilename %}
 
@@ -610,7 +610,7 @@ To exit from the Python interpreter that we've been using, type the `exit()` fun
 $
 ```
 
-This will put you back into the command prompt.
+Սա ձեզ կրկին կտեղադրի command-ի (հրամանի) տողի մեջ:
 
 Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now and write some code into a new file (or if you're using a Chromebook, create a new file in the cloud IDE and open the file, which will be in the included code editor):
 
