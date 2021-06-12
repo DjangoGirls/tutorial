@@ -155,7 +155,7 @@ TypeError: object of type 'int' has no len()
 
 لقد حصلنا على أول خطأ! أيقونة {{ warning_icon }} هي طريقتنا لتنبيهك أن الكود الذي أنت على وشك تشغيله لن يعمل كما هو متوقع. إن ارتكاب الأخطاء (حتى الأخطاء المتعمدة) جزء هام من التعلم!
 
-It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
+يقول أن الأشياء من نوع "int" (الأعداد الصحيحة، الأعداد الكاملة) ليس لها أي طول. إذن ماذا يمكننا أن نفعل الآن؟ ربما يمكننا كتابة رقمنا كسلسلة؟ السلاسل لها طول، أليس كذلك؟
 
 {% filename %}command-line{% endfilename %}
 
@@ -164,7 +164,7 @@ It says that objects of type "int" (integers, whole numbers) have no length. So 
 6
 ```
 
-It worked! We used the `str` function inside of the `len` function. `str()` converts everything to strings.
+لقد كان مجدياً! استخدمنا الدالة `str` داخل الدالة `len`. الدالة `str()` تحول كل شي إلى سلاسل.
 
 - الدالة `str` تحول الأشياء إلى **strings</1 ></li> 
     
@@ -174,9 +174,9 @@ It worked! We used the `str` function inside of the `len` function. `str()` conv
     
     ## المتغيرات
     
-    An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
+    مفهوم هام في البرمجة وهو المتغيرات. المتغير ليس أكثر من اسم لشيء يمكن استخدامه في وقت لاحق. يستخدم المبرمجون هذه المتغيرات لتخزين البيانات، وجعل التعليمات البرمجية الخاصة بهم أكثر قابلية للقراءة، لذا لا يتوجب عليهم أن يتذكروا ماهية الأشياء.
     
-    Let's say we want to create a new variable called `name`:
+    لنفرض أننا نريد إنشاء متغير جديد يسمى `name`:
     
     {% filename %}command-line{% endfilename %}
     
@@ -184,9 +184,9 @@ It worked! We used the `str` function inside of the `len` function. `str()` conv
     >>> name = "Ola"
     ```
     
-    We type name equals Ola.
+    نكتب الاسم يساوي Ola.
     
-    As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Enter `name` and hit `enter`:
+    كما لاحظت، لم يعيد برنامجك أي شيء كما فعل من قبل. إذاً كيف نعرف أن المتغير موجود بالفعل؟ أدخل `name` واضغط `enter`:
     
     {% filename %}command-line{% endfilename %}
     
@@ -195,7 +195,7 @@ It worked! We used the `str` function inside of the `len` function. `str()` conv
     'Ola'
     ```
     
-    Yippee! Your first variable! :) You can always change what it refers to:
+    يآآاي! المتغير الأول الخاص بك! :) يمكنك دائماً تغيير ما يشير إليه:
     
     {% filename %}command-line{% endfilename %}
     
@@ -205,7 +205,7 @@ It worked! We used the `str` function inside of the `len` function. `str()` conv
     'Sonja'
     ```
     
-    You can use it in functions too:
+    يمكنك استخدامه في الوظائف أيضا:
     
     {% filename %}command-line{% endfilename %}
     
@@ -214,7 +214,7 @@ It worked! We used the `str` function inside of the `len` function. `str()` conv
     5
     ```
     
-    Awesome, right? Now, variables can be anything – numbers too! Try this:
+    رائع، أليس كذلك؟ بالطبع، المتغيرات يمكن أن تكون أي شيء أرقام أيضا! جرب هذا:
     
     {% filename %}command-line{% endfilename %}
     
@@ -225,7 +225,7 @@ It worked! We used the `str` function inside of the `len` function. `str()` conv
     24
     ```
     
-    But what if we used the wrong name? Can you guess what would happen? Let's try!
+    ولكن ماذا لو استخدمنا اسم خاطئ؟ هل يمكنك تخمين ما يمكن أن يحدث؟ دعونا نحاول!
     
     {% filename %}{{ warning_icon }} command-line{% endfilename %}
     
