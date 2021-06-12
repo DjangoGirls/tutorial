@@ -145,7 +145,7 @@
 {% endblock %}
 ```
 
-That's it! Save the file, and check if your website is still working properly. :)
+هذا كل شي! احفظ الملف ، وتحقق إذا كان موقعك الإلكتروني ما زال يعمل جيداً. :)
 
 > اذا حصلت على هذا الخطأ `TemplateDoesNotExist`، وهذا يعني انه ليس هناك ملف`blog/base.html` ولديك `runserver` يشتغل في الكونسول. حاول إيقافه (بالضغط على Ctrl+C - مفتاح التحكم و C معا) وإعادة تشغيله من خلال تشغيل أمر  python manage.py runserver </ 0>.</p>
 </blockquote>
