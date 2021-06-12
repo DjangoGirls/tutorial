@@ -612,7 +612,7 @@ $
 
 Սա ձեզ կրկին կտեղադրի command-ի (հրամանի) տողի մեջ:
 
-Ավելի վաղ մենք [ code editor (կոդերի խմբագիր) ](../code_editor/README.md) բաժնից ընտրեցինք code editor (կոդի խմբագիր): We'll need to open the editor now and write some code into a new file (or if you're using a Chromebook, create a new file in the cloud IDE and open the file, which will be in the included code editor):
+Ավելի վաղ մենք [ code editor (կոդերի խմբագիր) ](../code_editor/README.md) բաժնից ընտրեցինք code editor (կոդի խմբագիր): Մենք հիմա պետք է բացենք editor-ը (խմբագիրը) և մի քանի կոդ գրենք նոր ֆայլի մեջ (կամ եթե օգտագործում եք Chromebook, ստեղծեք նոր ֆայլ ամպային IDE- ում և բացեք այն ֆայլ, որը կլինի ներառված ծածկագրերի խմբագրում).
 
 {% filename %}editor{% endfilename %}
 
@@ -620,11 +620,11 @@ $
 print('Hello, Django girls!')
 ```
 
-Obviously, you're a pretty seasoned Python developer now, so feel free to write some code that you've learned today.
+Ակնհայտ է, որ դուք այժմ Python- ի բավականին փորձառու մշակող եք, այնպես որ ազատորեն գրեք մի քանի կոդ, որոնք սովորել եք այսօր:
 
-Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, but the important part here is to make sure the file ends in **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
+Այժմ մենք պետք է պահենք ֆայլը և տալ այն նկարագրական անուն: Եկեք զանգահարենք ֆայլը ** python_intro.py ** և պահենք այն ձեր աշխատասեղանին: Մենք կարող ենք ֆայլը անվանել այն, ինչ ուզում ենք, բայց այստեղ կարևոր մասն այն է, որ ֆայլը վերջանա ** .py **: ** .py ** ընդլայնումը մեր օպերացիոն համակարգին ասում է, որ սա ** Python excutable file (գործարկվող ֆայլ) ** է, և Python- ը կարող է այն գործարկել:
 
-> **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. This is called "syntax highlighting", and it's a really useful feature when coding. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor. :)
+> ** Նշում ** Դուք պետք է նկատեք կոդերի խմբագիրների ամենաթեժ մեկը `գույները: Python կոնսոլում ամեն ինչ նույն գույնն էր. հիմա պետք է տեսնեք, որ ` print (տպել) ` function-ը (գործառույթը) string-ից տարբեր գույն է: Սա կոչվում է "syntax highlighting" («շարահյուսական լուսաբանում»), և դա իսկապես օգտակար հատկություն է կոդավորման ժամանակ: Իրերի գույնը ձեզ հուշումներ կտա, ինչպիսիք են չփակված string-երը կամ կարևոր բառի տառասխալը (ինչպես ֆունկցիաի ` def (անջատումը) `, որը կտեսնենք ստորև): Սա է պատճառը, որ մենք օգտագործում ենք code editor ( կոդերի խմբագիր): :)
 
 With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
 
