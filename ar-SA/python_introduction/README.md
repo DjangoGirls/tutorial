@@ -26,11 +26,11 @@
 
 ## أمر بايثون الأول الخاص بك!
 
-After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
+بعد تشغيل أمر Python ، تغير الموجه إلى `>>>`. هذا يعني أنه حالياً يمكننا فقط إستخدام الأوامر الخاصة بلغة البايثون. لا يتوجب عليكم أن تكتبوا `>>>` - بايثون سوف يفعل ذلك
 
-If you want to exit the Python console at any point, type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
+إذا كنتم تريدون أن تخرجوا من وحدة تحكم باثون في أي وقت ، اكتبوا `exit()` أو استخدموا الإختصار `Ctrl + Z` في وندوز أو `Ctrl + D` في ماك أو لينكس. لن تروا `>>>` مجدداً
 
-For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
+الآن ، نحن لا نريد الخروج من وحدة تحكم بايثون. نريد أن نتعلم أكثر عنه. دعونا نبدأ بكتابة بعض الرياضيات ، مثل `2 + 3` ونضغط `enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -39,7 +39,7 @@ For now, we don't want to exit the Python console. We want to learn more about i
 5
 ```
 
-Nice! See how the answer popped out? Python knows math! You could try other commands like:
+جميل! هل ترون كيف برزت الإجابة؟ بايثون يعرف الرياضيات! يمكنكم تجربة أوامر أخرى مثل:
 
 - `4 * 5`
 - `5 - 1`
