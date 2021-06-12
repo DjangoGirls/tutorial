@@ -729,9 +729,9 @@ if 3 > 2:
     print('It works!')
 ```
 
-Ուշադրություն դարձրեք, թե ինչպես ենք մենք մուտքագրել ծածկագրի հաջորդ տողը ըստ 4 տարածության: Մենք պետք է դա անենք, որպեսզի Python- ը իմանա, թե ինչ կոդ գործարկի, եթե արդյունքը ճիշտ է: Կարող եք մեկ տարածք անել, բայց Python- ի գրեթե բոլոր ծրագրավորողները կատարում են 4-ը, որպեսզի ամեն ինչ կոկիկ տեսք ունենա: Մեկ ներդիրը նույնպես կհամարվի 4 տարածություն, քանի դեռ ձեր տեքստի խմբագրիչը պատրաստ է դա անել: When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
+Ուշադրություն դարձրեք, թե ինչպես ենք մենք մուտքագրել ծածկագրի հաջորդ տողը ըստ 4 տարածության: Մենք պետք է դա անենք, որպեսզի Python- ը իմանա, թե ինչ կոդ գործարկի, եթե արդյունքը ճիշտ է: Կարող եք մեկ տարածք անել, բայց Python- ի գրեթե բոլոր ծրագրավորողները կատարում են 4-ը, որպեսզի ամեն ինչ կոկիկ տեսք ունենա: Մեկ ներդիրը նույնպես կհամարվի 4 տարածություն, քանի դեռ ձեր տեքստի խմբագրիչը պատրաստ է դա անել: Երբ դու կատարեցիր քո ընտրությունը, մի փոխիր այն: Եթե դուք արդեն կտրել եք 4 տարածություն, ապա կատարեք ցանկացած ապագա խորացում նաև 4 տարածության հետ, հակառակ դեպքում կարող եք խնդիրներ առաջանալ:
 
-Save it and give it another run:
+Պահպանեք այն և նորից run /մեկնարկեք.
 
 {% filename %}command-line{% endfilename %}
 
@@ -740,11 +740,11 @@ $ python3 python_intro.py
 It works!
 ```
 
-Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
+Նշում. Հիշեք, որ Windows- ում «python3» - ը չի ճանաչվում որպես հրաման: Այսուհետ, ֆայլը կատարելու համար փոխարինեք «python3» - ը «python» - ով:
 
-### What if a condition isn't True?
+### Ի՞նչ կլինի, եթե պայմանը True (ճիշտ) չէ:
 
-In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
+Նախորդ օրինակներում ծածկագիրը կատարվում էր միայն այն ժամանակ, երբ պայմանները True (ճշմարիտ) էին: Բայց Python- ը ունի նաև ` elif ` և ` else ` հայտարարություններ.
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -755,7 +755,7 @@ else:
     print('5 is not greater than 2')
 ```
 
-When this is run it will print out:
+Երբ սա գործարկվի, այն կտպագրվի ՝
 
 {% filename %}command-line{% endfilename %}
 
@@ -763,7 +763,7 @@ When this is run it will print out:
     5 is indeed greater than 2
     
 
-If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
+Եթե 2-ը 5-ից մեծ թիվ լիներ, ապա երկրորդ հրամանը կկատարվեր: Տեսնենք, թե ինչպես է աշխատում ` elif `:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -777,7 +777,7 @@ else:
     print('Hey anonymous!')
 ```
 
-and executed:
+և սկսեց.
 
 {% filename %}command-line{% endfilename %}
 
@@ -785,9 +785,9 @@ and executed:
     Hey Sonja!
     
 
-See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
+Տեսեք, թե ինչ է տեղի ունեցել այնտեղ: `elif` Ձեզ հնարավորություն է տալիս ավելացնել լրացուցիչ պայմաններ, որոնք գործում են նախորդ պայմանների ձախողման դեպքում:
 
-You can add as many `elif` statements as you like after your initial `if` statement. For example:
+Նախնական ` if (եթե) ` հայտարարությունից հետո կարող եք ավելացնել այնքան ` elif ` հայտարարություն, որքան ցանկանում եք: Օրինակ:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -807,7 +807,7 @@ else:
     print("My ears are hurting! :(")
 ```
 
-Python runs through each test in sequence and prints:
+Python- ն անցնում է յուրաքանչյուր թեստի հաջորդականությամբ և տպում.
 
 {% filename %}command-line{% endfilename %}
 
@@ -817,9 +817,9 @@ Python runs through each test in sequence and prints:
 
 ## Comments
 
-Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
+Մեկնաբանությունները տողեր են, որոնք սկսվում են ` # ` - ով: ` # ` - ից հետո կարող եք գրել այն ամենը, ինչ ուզում եք, և Python- ը անտեսելու է այն: Մեկնաբանությունները կարող են հեշտացնել ձեր ծածկագիրը այլ մարդկանց համար:
 
-Let's see how that looks:
+Տեսնենք, թե ինչպես է դա թվում.
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -830,11 +830,11 @@ if volume < 20 or volume > 80:
     print("That's better!")
 ```
 
-You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
+Կոդի յուրաքանչյուր տողի համար անհրաժեշտ չէ մեկնաբանություն գրել, բայց դրանք օգտակար են բացատրելու համար, թե ինչու է ձեր կոդն ինչ-որ բան անում, կամ ամփոփում է ներկայացնում, երբ այն ինչ-որ բարդ բան է անում:
 
-### Summary
+### Ամփոփում
 
-In the last few exercises you learned about:
+Վերջին մի քանի վարժություններում, որոնց մասին իմացաք.
 
 - **comparing things** – in Python you can compare things by using `>`, `>=`, `==`, `<=`, `<` and the `and`, `or` operators
 - **Boolean** – a type of object that can only have one of two values: `True` or `False`
