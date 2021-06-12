@@ -6,9 +6,9 @@
 
 ## Bem-vinda
 
-Bem-vinda ao Tutorial Django Girls! Estamos felizes em te ver aqui. :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
+Bem-vinda ao Tutorial Django Girls! Estamos felizes em te ver aqui. :) Neste tutorial, vamos levá-lo em uma viagem por baixo do capô das tecnologias da Web oferecendo um vislumbre de todos os bits e peças que precisam se juntar para fazer a web funcionar da forma como a conhecemos.
 
-As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine. :)
+Como todas as coisas desconhecidas, esta vai ser uma aventura - mas não se preocupe, já que vocês já tiveram coragem de estar aqui, você estará bem. :)
 
 ## Introdução
 
