@@ -4,17 +4,17 @@
 
 > هذا القسم يستند على دورة تعليمية من فتيات الجزر المهووسات (https://github.com/ggcarrots/django-carrots).
 
-Let's write some code!
+دعونا نكتب بعض الأكواد!
 
 ## موجه بايثون
 
 > للقراء في المنزل: تم تغطية هذا الجزء في فيديو [ أساسيات بايثون: عدد صحيح، سلاسل، قوائم، متغيرات وأخطاء ](https://www.youtube.com/watch?v=MO63L4s-20U).
 
-To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+من أجل تعلم واللعب بـ بايثون ، علينا أن نفتح *command line* على جهاز الكمبيوتر. من المفترض أنكم تعرفوا كيف تفعلوا ذلك - لقد تعلمتم ذلك في فصل [Intro to Command Line](../intro_to_command_line/README.md)
 
-Once you're ready, follow the instructions below.
+بمجرد أن تكونوا جاهزون ، تتبعوا التعليمات التي بالأسفل.
 
-We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
+نريد أن نفتح وحدة تحكم بايثون ، اكتبوا `python` على وندوز أو `python3` على ماك أو لينكس واضغطوا `enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -98,7 +98,7 @@ Using double quotes:
 "Runnin' down the hill"
 ```
 
-or escaping the apostrophe with a backslash (``):
+or escaping the apostrophe with a backslash (`\`):
 
 {% filename %}command-line{% endfilename %}
 
