@@ -142,7 +142,7 @@ Strings can be strung together. Try this:
 
 ## أخطاء
 
-Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
+لنجرب شيئا جديدا. هل يمكننا الحصول على طول رقم بنفس الطريقة التي يمكننا بها معرفة طول اسمنا؟ اكتب `len(304023)` واضغط `enter`:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -153,7 +153,7 @@ File "<stdin>", line 1, in <module>
 TypeError: object of type 'int' has no len()
 ```
 
-We got our first error! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. Making mistakes (even intentional ones) are an important part of learning!
+لقد حصلنا على أول خطأ! أيقونة {{ warning_icon }} هي طريقتنا لتنبيهك أن الكود الذي أنت على وشك تشغيله لن يعمل كما هو متوقع. إن ارتكاب الأخطاء (حتى الأخطاء المتعمدة) جزء هام من التعلم!
 
 It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
 
