@@ -626,12 +626,12 @@ print('Hello, Django girls!')
 
 > ** Նշում ** Դուք պետք է նկատեք կոդերի խմբագիրների ամենաթեժ մեկը `գույները: Python կոնսոլում ամեն ինչ նույն գույնն էր. հիմա պետք է տեսնեք, որ ` print (տպել) ` function-ը (գործառույթը) string-ից տարբեր գույն է: Սա կոչվում է "syntax highlighting" («շարահյուսական լուսաբանում»), և դա իսկապես օգտակար հատկություն է կոդավորման ժամանակ: Իրերի գույնը ձեզ հուշումներ կտա, ինչպիսիք են չփակված string-երը կամ կարևոր բառի տառասխալը (ինչպես ֆունկցիաի ` def (անջատումը) `, որը կտեսնենք ստորև): Սա է պատճառը, որ մենք օգտագործում ենք code editor ( կոդերի խմբագիր): :)
 
-With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
+Ֆայլը պահված պահով ՝ այն գործարկելու ժամանակն է: Օգտագործելով command line (հրամանի տողի) բաժնում ձեր սովորած հմտությունները, օգտագործեք տերմինալը ** change directories (գրացուցակները փոխելու ) ** համար:
 
 <!--sec data-title="Change directory: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-On a Mac, the command will look something like this:
+Mac- ի վրա հրամանը նման կլինի հետևյալ կերպ.
 
 {% filename %}command-line{% endfilename %}
 
@@ -643,20 +643,20 @@ On a Mac, the command will look something like this:
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-On Linux, it will be like this:
+Linux- ում դա կլինի այսպես.
 
 {% filename %}command-line{% endfilename %}
 
     $ cd ~/Desktop
     
 
-(Remember that the word "Desktop" might be translated to your local language.)
+(Հիշեք, որ "Desktop" («աշխատասեղան») բառը կարող է թարգմանվել ձեր տեղական լեզվով):
 
 <!--endsec-->
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-On Windows Command Prompt, it will be like this:
+Windows- ի հրամանի տողում սա կլինի այսպես.
 
 {% filename %}command-line{% endfilename %}
 
@@ -667,7 +667,7 @@ On Windows Command Prompt, it will be like this:
 
 <!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
 
-And on Windows Powershell, it will be like this:
+Եվ Windows Powershell- ում դա կլինի այսպես.
 
 {% filename %}command-line{% endfilename %}
 
@@ -676,9 +676,9 @@ And on Windows Powershell, it will be like this:
 
 <!--endsec-->
 
-If you get stuck, ask for help. That's exactly what the coaches are here for!
+Եթե խրվել եք, օգնություն խնդրեք: Դա հենց այն է, ինչի համար այստեղ են մարզիչները:
 
-Now use Python to execute the code in the file like this:
+Այժմ օգտագործեք Python- ը ֆայլի ծածկագիրը այսպիսի կատարելու համար.
 
 {% filename %}command-line{% endfilename %}
 
@@ -686,7 +686,7 @@ Now use Python to execute the code in the file like this:
     Hello, Django girls!
     
 
-Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
+Նշում. Windows- ում 'python3' («python3») - ը չի ճանաչվում որպես հրաման: Փոխարենը, ֆայլը կատարելու համար օգտագործեք 'python' («python»).
 
 {% filename %}command-line{% endfilename %}
 
@@ -694,15 +694,15 @@ Note: on Windows 'python3' is not recognized as a command. Instead, use 'python'
 > python python_intro.py
 ```
 
-Alright! You just ran your first Python program that was saved to a file. Feel awesome?
+Լավ! Դուք պարզապես գործարկել եք ձեր առաջին Python ծրագիրը, որը պահվել է ֆայլում: Ձեզ հիանալի՞ եք զգում:
 
-You can now move on to an essential tool in programming:
+Այժմ կարող եք անցնել ծրագրավորման կարևոր գործիքի.
 
 ## If … elif … else
 
-Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
+Կոդում պարունակվող շատ բաներ պետք է կատարվեն միայն տրված պայմանների բավարարման դեպքում: Այդ պատճառով Python- ն ունի **if statement (եթե հայտարարություններ) ** կոչվող մի բան:
 
-Replace the code in your **python_intro.py** file with this:
+Փոխարինեք կոդը ձեր ** python_intro.py ** ֆայլում հետևյալով.
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -710,7 +710,7 @@ Replace the code in your **python_intro.py** file with this:
 if 3 > 2:
 ```
 
-If we were to save and run this, we'd see an error like this:
+Եթե մենք save/ փրկեինք և run / գործարկեինք սա, կտեսնեինք այսպիսի սխալ.
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -720,7 +720,7 @@ If we were to save and run this, we'd see an error like this:
     SyntaxError: unexpected EOF while parsing
     
 
-Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
+Python- ն ակնկալում է, որ մենք նրան հետագա հրահանգներ կտանք, որոնք կատարվում են, եթե`3 > 2` պարզվում է, որ ճիշտ է (կամ `True` այդ հարցի համար): Փորձենք Python- ին տպել"It works!" («Այն գործում է»): Փոխեք ձեր կոդը ձեր ** python_intro.py ** ֆայլում հետևյալով ՝
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -729,7 +729,7 @@ if 3 > 2:
     print('It works!')
 ```
 
-Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
+Ուշադրություն դարձրեք, թե ինչպես ենք մենք մուտքագրել ծածկագրի հաջորդ տողը ըստ 4 տարածության: Մենք պետք է դա անենք, որպեսզի Python- ը իմանա, թե ինչ կոդ գործարկի, եթե արդյունքը ճիշտ է: Կարող եք մեկ տարածք անել, բայց Python- ի գրեթե բոլոր ծրագրավորողները կատարում են 4-ը, որպեսզի ամեն ինչ կոկիկ տեսք ունենա: Մեկ ներդիրը նույնպես կհամարվի 4 տարածություն, քանի դեռ ձեր տեքստի խմբագրիչը պատրաստ է դա անել: When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
 
 Save it and give it another run:
 
