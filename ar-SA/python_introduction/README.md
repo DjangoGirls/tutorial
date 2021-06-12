@@ -116,9 +116,9 @@ Strings can be strung together. Try this:
 'OLA'
 ```
 
-لقد استخدمت `upper` **method** للتو في السلسلة الخاصة بك! A method (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
+لقد استخدمت `upper` **method** للتو في السلسلة الخاصة بك! طريقة (مثل `upper()`) هي سلسلة من التعليمات التي يجب على بايثون تنفيذها على شيء معين (`"Ola"`) بمجرد أن تستدعيها.
 
-If you want to know the number of letters contained in your name, there is a **function** for that too!
+إذا كنت تريد أن تعرف عدد الحروف الواردة في اسمك، هناك **function** لذلك أيضا!
 
 {% filename %}command-line{% endfilename %}
 
@@ -127,7 +127,7 @@ If you want to know the number of letters contained in your name, there is a **f
 3
 ```
 
-Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
+هل تتسائلون في بعض الأحيان لماذا تستدعون الدوال مع `.` في نهاية السلسلة مثل `"Ola".upper()` وفي بعض الأحيان تقومون بإستدعاء الدالة وتضعون السلسلة بين قوسين؟ حسنًا، في بعض الحالات، تنتمي الدوال إلى أشياء، مثل `upper()`، والتي لا يمكن القيام بها إلا على السلاسل. في هذه الحالة نسمي المهام ب **method**. مرات أخرى، الدوال لا تنتمي إلى أي شيء محدد ويمكن استخدامها على أنواع مختلفة من الأشياء، تماما مثل `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
 
 ### مُلخّص
 
