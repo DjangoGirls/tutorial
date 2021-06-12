@@ -864,9 +864,9 @@ hi()
 
 Լավ, մեր առաջին ֆունկցիան պատրաստ է:
 
-Կարող եք զարմանալ, թե ինչու ենք ֆունկցիայի անունը գրել ֆայլի ներքևում: When we write `def hi():` and the indented lines following, this is us writing instructions for what the `hi()` function should do. Python will read and remember these instructions, but won't run the function yet. To tell Python we want to run the function, we have to call the function with `hi()`. Python reads the file and executes it from top to bottom, so we have to define the function in the file before we call it.
+Կարող եք զարմանալ, թե ինչու ենք ֆունկցիայի անունը գրել ֆայլի ներքևում: Երբ մենք գրում ենք ` def hi (): ` և հետևյալ խորշված տողերը, սա մենք ենք, որ հրահանգներ ենք գրում, թե ինչ պետք է անի ` hi () ` ֆունկցիան: Python- ը կկարդա և կհիշի այս հրահանգները, բայց ֆունկցիան դեռ չի գործարկի: Python- ին ասելու համար, որ մենք ուզում ենք ֆունկցիան գործարկել, մենք պետք է ֆունկցիան կանչենք ` hi () ` - ով: Python- ը կարդում է ֆայլը և կատարում այն վերից վար, այնպես որ մենք պետք է ֆայլում սահմանենք ֆունկցիան նախքան այն կանչելը:
 
-Let's run this now and see what happens:
+Եկեք վարենք սա հիմա և տեսնենք, թե ինչ է տեղի ունենում.
 
 {% filename %}command-line{% endfilename %}
 
@@ -875,10 +875,10 @@ Let's run this now and see what happens:
     How are you?
     
 
-Note: if it didn't work, don't panic! The output will help you to figure why:
+Նշում. Եթե չի հաջողվել, մի խուճապի մատնվեք: Արդյունքը կօգնի ձեզ հասկանալ, թե ինչու.
 
-- If you get a `NameError`, that probably means you typed something wrong, so you should check that you used the same name when creating the function with `def hi():` and when calling it with `hi()`.
-- If you get an `IndentationError`, check that both of the `print` lines have the same whitespace at the start of a line: python wants all the code inside the function to be neatly aligned.
+- Եթե դուք ստանում եք ` NameError` դա, հավանաբար, նշանակում է, որ դուք սխալ եք մուտքագրել ինչ-որ բան, ուստի պետք է ստուգեք, որ նույն անունն օգտագործել եք ` def hi (): ` ֆունկցիան ստեղծելիս և այն ` hi () ` - ով զանգահարելիս ,
+- Եթե դուք ստանում եք ` IndentationError `, տողի սկզբում ստուգեք, որ ` print (տպագիր) ` տողերն էլ ունենան նույն սպիտակ տարածությունը. 
 - If there's no output at all, check that the last `hi()` *isn't* indented - if it is, that line will become part of the function too, and it will never get run.
 
 Let's build our first function with parameters. We will change the previous example – a function that says 'hi' to the person running it – with a name:
