@@ -879,9 +879,9 @@ hi()
 
 - Եթե դուք ստանում եք ` NameError` դա, հավանաբար, նշանակում է, որ դուք սխալ եք մուտքագրել ինչ-որ բան, ուստի պետք է ստուգեք, որ նույն անունն օգտագործել եք ` def hi (): ` ֆունկցիան ստեղծելիս և այն ` hi () ` - ով զանգահարելիս ,
 - Եթե դուք ստանում եք ` IndentationError `, տողի սկզբում ստուգեք, որ ` print (տպագիր) ` տողերն էլ ունենան նույն սպիտակ տարածությունը. 
-- If there's no output at all, check that the last `hi()` *isn't* indented - if it is, that line will become part of the function too, and it will never get run.
+- Եթե ընդհանրապես ելք չկա, ստուգեք, որ վերջին ` hi() ` * տրոհված չէ * - եթե այդպես է, այդ տողը նույնպես կդառնա գործառույթի մաս: Այն երբեք չի սկսվի:
 
-Let's build our first function with parameters. We will change the previous example – a function that says 'hi' to the person running it – with a name:
+Եկեք կառուցենք մեր առաջին գործառույթը պարամետրերով: Մենք կփոխենք նախորդ օրինակը ՝ ֆունկցիան , որն ասում է "hi" («ողջույն») այն աշխատող անձին ՝ անունով.
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -889,7 +889,7 @@ Let's build our first function with parameters. We will change the previous exam
 def hi(name):
 ```
 
-As you can see, we now gave our function a parameter that we called `name`:
+Ինչպես տեսնում եք, մենք հիմա մեր ֆունկցիան տվեցինք մի պարամետր, որը կոչեցինք `name ( անուն) `:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -905,7 +905,7 @@ def hi(name):
 hi()
 ```
 
-Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
+Հիշիր `print (տպել) ` գործառույթը կտրված է չորս տարածության մեջ `if (եթե) ` հայտարարության մեջ: Դա պայմանավորված է նրանով, որ ֆունկցիան աշխատում է պայմանը բավարարելիս: Տեսնենք, թե ինչպես է այն աշխատում այժմ.
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -916,7 +916,7 @@ Remember: The `print` function is indented four spaces within the `if` statement
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
+Սխալ: Բարեբախտաբար, Python- ը մեզ տալիս է օգտակար սխալի հաղորդագրություն: Այն մեզ ասում է, որ ` hi () ` ֆունկցիան (այն, ինչ մենք սահմանեցինք) ունի մեկ պահանջվող փաստարկ (կոչվում է ` name (անուն) `) և որ մենք մոռացանք փոխանցել այն գործառույթը ակտիվացնելիս Եկեք ֆիքսենք այն ֆայլի ներքևում.
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -924,7 +924,7 @@ Oops, an error. Luckily, Python gives us a pretty useful error message. It tells
 hi("Ola")
 ```
 
-And run it again:
+Եվ նորից գործարկեք այն.
 
 {% filename %}command-line{% endfilename %}
 
@@ -932,7 +932,7 @@ And run it again:
     Hi Ola!
     
 
-And if we change the name?
+Իսկ եթե անունը փոխե՞նք:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -940,7 +940,7 @@ And if we change the name?
 hi("Sonja")
 ```
 
-And run it:
+Եվ run/գործարկեք այն.
 
 {% filename %}command-line{% endfilename %}
 
@@ -948,11 +948,11 @@ And run it:
     Hi Sonja!
     
 
-Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
+Հիմա ի՞նչ եք կարծում, ի՞նչ կլինի, եթե այնտեղ մեկ այլ անուն գրեք: (Ոչ Ola/Օլան կամ Sonja/Սոնյան): Փորձեք և տեսեք, արդյոք ճիշտ եք: Այն պետք է տպագրի սա ՝
 
 {% filename %}command-line{% endfilename %}
 
-    Hi anonymous!
+    Ողջույն անանուն:
     
 
 This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
