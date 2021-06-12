@@ -836,21 +836,21 @@ if volume < 20 or volume > 80:
 
 Վերջին մի քանի վարժություններում, որոնց մասին իմացաք.
 
-- **comparing things** – in Python you can compare things by using `>`, `>=`, `==`, `<=`, `<` and the `and`, `or` operators
-- **Boolean** – a type of object that can only have one of two values: `True` or `False`
-- **Saving files** – storing code in files so you can execute larger programs.
-- **if … elif … else** – statements that allow you to execute code only when certain conditions are met.
-- **comments** - lines that Python won't run which let you document your code
+- ** comparing things (իրերի համեմատություն)** - Python- ում դուք կարող եք համեմատել իրերը ՝ օգտագործելով`>`, `>=`, `==`, `<=`, `<` և ` և `, ` or (կամ) ` օպերատորները
+- ** Boolean ** - օբյեկտի տեսակ, որը կարող է ունենալ միայն երկու արժեքներից մեկը ՝ ` Ture (Ճիշտ) ` կամ ` False (Սխալ)`
+- ** Saving files (Ֆայլեր պահելը)** - ֆայլերում կոդ է պահվում, որպեսզի կարողանաք ավելի մեծ ծրագրեր իրականացնել:
+- ** if… elif… other ** - հայտարարություններ, որոնք թույլ են տալիս կատարել կոդ միայն որոշակի պայմանների բավարարման դեպքում:
+- ** comments (մեկնաբանություններ) ** - տողեր, որոնք Python- ը չի գործարկի, որոնք թույլ են տալիս փաստաթղթավորել ձեր կոդը
 
-Time for the last part of this chapter!
+Ժամանակն է այս գլխի վերջին մասի:
 
-## Your own functions!
+## Ձեր սեփական functions (ֆունկցիաները):
 
-> For readers at home: this part is covered in the [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0) video.
+> Ընթերցողների համար տանը. Այս մասն ընդգրկված է [ Python Basics: Functions ](https://www.youtube.com/watch?v=5owr-6suOl0) տեսանյութում: 
 
-Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
+Հիշո՞ւմ եք ` len() ` - ի նման գֆունկցիաներ, որոնք կարող եք կատարել Python- ում: Դե, լավ նորություն. Դուք կսովորեք, թե ինչպես գրել ձեր սեփական ֆունկցիաները հիմա:
 
-A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
+Ֆունկցիան հրահանգների հաջորդականություն է, որը Python- ը պետք է կատարի: Python- ում յուրաքանչյուր ֆունկցիան սկսվում է ` def ` հիմնաբառից, տրվում է անուն և կարող է ունենալ որոշ պարամետրեր: Եկեք փորձենք: Փոխարինեք կոդը ** python_intro.py ** - ում հետևյալով.
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -862,9 +862,9 @@ def hi():
 hi()
 ```
 
-Okay, our first function is ready!
+Լավ, մեր առաջին ֆունկցիան պատրաստ է:
 
-You may wonder why we've written the name of the function at the bottom of the file. When we write `def hi():` and the indented lines following, this is us writing instructions for what the `hi()` function should do. Python will read and remember these instructions, but won't run the function yet. To tell Python we want to run the function, we have to call the function with `hi()`. Python reads the file and executes it from top to bottom, so we have to define the function in the file before we call it.
+Կարող եք զարմանալ, թե ինչու ենք ֆունկցիայի անունը գրել ֆայլի ներքևում: When we write `def hi():` and the indented lines following, this is us writing instructions for what the `hi()` function should do. Python will read and remember these instructions, but won't run the function yet. To tell Python we want to run the function, we have to call the function with `hi()`. Python reads the file and executes it from top to bottom, so we have to define the function in the file before we call it.
 
 Let's run this now and see what happens:
 
