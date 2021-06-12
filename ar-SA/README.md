@@ -6,9 +6,9 @@
 
 ## مرحباً
 
-مرحبا بكم في الدليل التطبيقي Django Girls! يسعدنا رؤيتك هنا. :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
+مرحبا بكم في الدليل التطبيقي Django Girls! يسعدنا رؤيتك هنا. :) في هذا الدليل التطبيقي ، سوف نأخذك في رحلة تحت سقف تقنيات الشبكة ، وسنقوم بإعطائك لمحة عن كل الأجزاء والقطع التي تحتاج أن تعمل معاً من أجل أن تعمل الشبكة العنكبوتية كما نعرفها.
 
-As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine. :)
+كما هو الحال مع كل الأشياء التي لا نعرفها ، هذه ستكون مغامرة - لكن لا داعي للقلق ، بما أنك استجمعت قوتك وأتيت إلى هنا ، سوف تكون على ما يرام. :)
 
 ## المقدمة
 
