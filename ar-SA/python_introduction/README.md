@@ -45,20 +45,20 @@
 - `5 - 1`
 - `40 / 2`
 
-To perform exponential calculation, say 2 to the power 3, we type: {% filename %}command-line{% endfilename %}
+إذا كنتم تريدون كتابة معادلات أسية ، مثل 2 أس 3 ، نكتب: {% filename %}command-line{% endfilename %}
 
 ```python
 >>> 2 ** 3
 8
 ```
 
-Have fun with this for a little while and then get back here. :)
+استمتعوا بهذا لبعض الوقت ثم عودوا إلى هنا. :)
 
-As you can see, Python is a great calculator. If you're wondering what else you can do…
+كما ترون، بايثون آلة حاسبة رائعة. إذا كنت تتساءل عما يمكنك فعله…
 
 ## سلسلة
 
-How about your name? Type your first name in quotes like this:
+ماذا عن اسمك؟ اكتب اسمك الأول في اقتباسات مثل هذا:
 
 {% filename %}command-line{% endfilename %}
 
@@ -67,7 +67,7 @@ How about your name? Type your first name in quotes like this:
 'Ola'
 ```
 
-You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
+لقد أنشأت الآن السلسلة الأولى! هو تسلسل أحرف يمكن معالجتها بواسطة جهاز الكمبيوتر. يجب ان تبدأ السلسلة وتنتهي بنفس الحرف. قد يكون هذا واحد (`'`) أو الضعف (`"`) اقتباس (لا فرق!) الإقتباس يقول لبايثون انه هناك سلسلة.
 
 Strings can be strung together. Try this:
 
@@ -78,7 +78,7 @@ Strings can be strung together. Try this:
 'Hi there Ola'
 ```
 
-You can also multiply strings with a number:
+يمكنك أيضا ضرب السلاسل مع عدد:
 
 {% filename %}command-line{% endfilename %}
 
@@ -87,9 +87,9 @@ You can also multiply strings with a number:
 'OlaOlaOla'
 ```
 
-If you need to put an apostrophe inside your string, you have two ways to do it.
+إذا كنت بحاجة إلى وضع علامة اقتباس أحادية داخل السلسلة الخاصة بك, لديك طريقتين للقيام بذلك.
 
-Using double quotes:
+استخدام علامات الاقتباس المزدوجة:
 
 {% filename %}command-line{% endfilename %}
 
@@ -98,7 +98,7 @@ Using double quotes:
 "Runnin' down the hill"
 ```
 
-or escaping the apostrophe with a backslash (`\`):
+أو الهروب من الفاصلة بخط مائل (`` \):
 
 {% filename %}command-line{% endfilename %}
 
@@ -107,7 +107,7 @@ or escaping the apostrophe with a backslash (`\`):
 "Runnin' down the hill"
 ```
 
-Nice, huh? To see your name in uppercase letters, type:
+لطيف، هاه؟ لرؤية اسمك بالأحرف الكبيرة، اكتب:
 
 {% filename %}command-line{% endfilename %}
 
@@ -116,7 +116,7 @@ Nice, huh? To see your name in uppercase letters, type:
 'OLA'
 ```
 
-You just used the `upper` **method** on your string! A method (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
+لقد استخدمت `upper` **method** للتو في السلسلة الخاصة بك! A method (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
 
 If you want to know the number of letters contained in your name, there is a **function** for that too!
 
