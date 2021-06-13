@@ -745,7 +745,7 @@ data-collapse=true ces-->
     
     ### ماذا إذا كان الشرط غير صحيح؟
     
-    In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
+    في الأمثلة السابقة، تم تنفيذ التعليمات البرمجية فقط عندما كانت الظروف صحيحة. ولكن بايثون تحتوى ايضا على `elif` و `else`:
     
     {% filename %}python_intro.py{% endfilename %}
     
@@ -756,7 +756,7 @@ data-collapse=true ces-->
         print('5 is not greater than 2')
     ```
     
-    When this is run it will print out:
+    عند تشغيل هذا سيتم طباعة:
     
     {% filename %}command-line{% endfilename %}
     
@@ -764,7 +764,7 @@ data-collapse=true ces-->
         5 is indeed greater than 2
         
     
-    If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
+    إذا كان عدد 2 أكبر من 5، فسيتم تنفيذ الأمر الثاني. دعونا نرى كيف يعمل `elif`:
     
     {% filename %}python_intro.py{% endfilename %}
     
@@ -778,7 +778,7 @@ data-collapse=true ces-->
         print('Hey anonymous!')
     ```
     
-    and executed:
+    وتنفذ:
     
     {% filename %}command-line{% endfilename %}
     
@@ -786,9 +786,9 @@ data-collapse=true ces-->
         Hey Sonja!
         
     
-    See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
+    اترى ما حدث هناك؟ `elif` يسمح لك بإضافة الشروط الإضافية التي يتم تشغيلها في حالة فشل الشروط السابقة.
     
-    You can add as many `elif` statements as you like after your initial `if` statement. For example:
+    يمكنك إضافة العديد من بيانات `elif` كما تريد بعد العبارة الأولى `if` الخاص بك. على سبيل المثال:
     
     {% filename %}python_intro.py{% endfilename %}
     
@@ -808,7 +808,7 @@ data-collapse=true ces-->
         print("My ears are hurting! :(")
     ```
     
-    Python runs through each test in sequence and prints:
+    بايثون يمر من خلال كل اختبار في التسلسل ويطبع:
     
     {% filename %}command-line{% endfilename %}
     
@@ -818,9 +818,9 @@ data-collapse=true ces-->
     
     ## التعليقات
     
-    Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
+    التعليقات هي سطور تبدأ ب `#`. يمكنك كتابة ما تريد بعد `#` وسيتجاهل بايثون ذلك. يمكن للتعليقات ان تجعل تعليماتك البرمجية سهلة ليفهمها الأخرين.
     
-    Let's see how that looks:
+    دعونا نرى كيف يبدو ذلك:
     
     {% filename %}python_intro.py{% endfilename %}
     
@@ -831,11 +831,11 @@ data-collapse=true ces-->
         print("That's better!")
     ```
     
-    You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
+    لا تحتاج إلى كتابة تعليق لكل سطر من التعليمات البرمجية، لكنها مفيدة لشرح سبب عمل التعليمات البرمجية الخاصة بك لشيء ما، أو تقديم ملخص عندما تقوم بعمل شيء معقد.
     
     ### الملخص
     
-    In the last few exercises you learned about:
+    لقد تعلمت في التدريبات القليلة الماضية حول:
     
     - **مقارنة الأشياء** – في بايثون يمكنك مقارنة الأشياء باستخدام `>`، `> =`, `= =`، `< =`، `<` و `and` مشغلي `or`
     - **Boolean** نوع من العناصر التي لا يمكن أن تحتوي إلا على قيمتين: `True` أو `False`
@@ -843,15 +843,15 @@ data-collapse=true ces-->
     - **if … elif … else** – البيانات التي تسمح لك بتنفيذ التعليمات البرمجية فقط عند استيفاء شروط معينة.
     - **التعليقات**-الأسطر التي لن تشغلها بايثون والتي تمكنك من توثيق التعليمات البرمجية الخاصة بك
     
-    Time for the last part of this chapter!
+    حان الوقت للجزء الأخير من هذا الفصل!
     
     ## الدالات الخاصة بك!
     
     > للقراء في المنزل: هذا الفصل تم التكلم عنه في فيديو [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0).
     
-    Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
+    تذكر الدوال مثل `len()` التي يمكنك تنفيذها في بايتون؟ حسنًا، أخبار جيدة - سوف تتعلم كيفية كتابة وظائفك الآن!
     
-    A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
+    الدالة هي سلسلة من التعليمات التي يجب على بايثون تنفيذها. تبدأ كل وظيفة في بايثون بالكلمة الرئيسية `def`، وتعطى اسما، ويمكن أن تحتوي على بعض المعلمات. لنحاول. استبدل التعليمة البرمجية في **python_intro.py** بما يلي:
     
     {% filename %}python_intro.py{% endfilename %}
     
@@ -863,7 +863,7 @@ data-collapse=true ces-->
     hi()
     ```
     
-    Okay, our first function is ready!
+    حسنا، الدالة الأولى جاهزة!
     
     You may wonder why we've written the name of the function at the bottom of the file. When we write `def hi():` and the indented lines following, this is us writing instructions for what the `hi()` function should do. Python will read and remember these instructions, but won't run the function yet. To tell Python we want to run the function, we have to call the function with `hi()`. Python reads the file and executes it from top to bottom, so we have to define the function in the file before we call it.
     
