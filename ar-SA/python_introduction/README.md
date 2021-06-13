@@ -391,7 +391,7 @@ TypeError: object of type 'int' has no len()
     - `country` يشير إلى `'Poland'` (`string` أخرى)،
     - ويشير `favorite_numbers` إلى `[7، 42، 92]` (`list` بثلاثة أرقام).
     
-    You can check the content of individual keys with this syntax:
+    يمكنك التحقق من محتوى المفاتيح الفردية مع هذه الجملة:
     
     {% filename %}command-line{% endfilename %}
     
@@ -400,9 +400,9 @@ TypeError: object of type 'int' has no len()
     Ola
     ```
     
-    See, it's similar to a list. But you don't need to remember the index – just the name.
+    انظر، إنها مشابهة للقائمة. لكنك لست بحاجة إلى تذكر الفهرس - مجرد الاسم.
     
-    What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
+    ماذا يحدث إذا طلبنا من بايثون قيمة مفتاح غير موجود؟ هل يمكنك التخمين؟ دعونا نحاول ونرى!
     
     {% filename %}{{ warning_icon }} command-line{% endfilename %}
     
@@ -413,14 +413,14 @@ TypeError: object of type 'int' has no len()
     KeyError: 'age'
     ```
     
-    Look, another error! This one is a **KeyError**. Python is helpful and tells you that the key `'age'` doesn't exist in this dictionary.
+    انضر، خطأ آخر! هذا **KeyError**. بايثون مفيد ويخبرك بأن مفتاح `'age'` غير موجود في هذا القاموس.
     
-    When should you use a dictionary or a list? Well, that's a good point to ponder. Think about the answer before looking at it in the next line.
+    متى يجب عليك استخدام القاموس أو القائمة؟ حسناً، هذه نقطة جيدة للتفكير. فكر في الإجابة قبل النظر إليها في السطر التالي.
     
     - هل تحتاج فقط إلى تسلسل أمر من العناصر؟ انتقل إلى القائمة.
     - هل تحتاج إلى ربط القيم مع مفاتيح، حتى تتمكن من البحث عنها بكفاءة (عن طريق مفتاح) في وقت لاحق؟ إستخدم المعجم.
     
-    Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key–value pairs to a dictionary after it is created, like this:
+    القواميس، مثل القوائم، هي *mutable*، مما يعني أنه يمكن تغييرها بعد إنشائها. يمكنك إضافة أزواج مفتاح-قيمة جديدة إلى القاموس بعد إنشائه، مثل هذا:
     
     {% filename %}command-line{% endfilename %}
     
@@ -428,7 +428,7 @@ TypeError: object of type 'int' has no len()
     >>> participant['favorite_language'] = 'Python'
     ```
     
-    Like lists, using the `len()` function on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
+    مثل القوائم، باستخدام طريقة `len()` على القواميس ترجع عدد أزواج القيمة الرئيسية في القاموس. إمضي قدما واكتب هذا الأمر:
     
     {% filename %}command-line{% endfilename %}
     
@@ -437,9 +437,9 @@ TypeError: object of type 'int' has no len()
     4
     ```
     
-    I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
+    آمل أن يكون الأمر منطقيا حتى الآن. :) مستعد لمزيد من المتعة مع القواميس؟ استمر بالقراءة من أجل بعض الأشياء المذهلة.
     
-    You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, type in the following command:
+    يمكنك استخدام طريقة `pop()` لحذف عنصر في القاموس. لنفترض أنك تريد حذف المدخل المقابل للمفتاح `'favorite_numbers'`, ، اكتب فقط الأمر التالي:
     
     {% filename %}command-line{% endfilename %}
     
@@ -450,9 +450,9 @@ TypeError: object of type 'int' has no len()
     {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
     ```
     
-    As you can see from the output, the key–value pair corresponding to the 'favorite_numbers' key has been deleted.
+    كما ترون من المخرج، تم حذف زوج مفتاح القيمة المقابلة لمفتاح 'favorite_numbers'.
     
-    As well as this, you can also change a value associated with an already-created key in the dictionary. Type this:
+    فضلا عن ذلك، يمكنك أيضا تغيير قيمة مرتبطة بمفتاح تم إنشاؤه مسبقاً في القاموس. اكتب هذا الأمر:
     
     {% filename %}command-line{% endfilename %}
     
@@ -462,18 +462,18 @@ TypeError: object of type 'int' has no len()
     {'country': 'Germany', 'favorite_language': 'Python', 'name': 'Ola'}
     ```
     
-    As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
+    كما ترون، تم تغيير قيمة المفتاح `'country'` من `'Poland'` إلى `'Germany'`. :) مثير؟ مرحى! لقد تعلمت للتو شيء آخر مدهش.
     
     ### الملخص
     
-    Awesome! You know a lot about programming now. In this last part you learned about:
+    مدهش! أنت تعرف الكثير عن البرمجة الآن. لقد تعلمت في هذا الجزء الأخير حول:
     
     - **أخطاء** – يمكنك الآن معرفة كيفية قراءة وفهم الأخطاء التي تظهر إذا كان بايثون لم يفهم امر اعطيته له
     - **المتغيرات** –أسماء الكائنات التي تسمح لك بتكويد أكثر سهولة وجعل التعليمات البرمجية الخاصة بك أكثر قابلية للقراءة
     - **قوائم** – قوائم الكائنات المخزنة في ترتيب معين
     - **قواميس** – الكائنات المخزنة كقيمة مفتاح-أزواج
     
-    Excited for the next part? :)
+    متحمس للجزء القادم؟ :)
     
     ## مقارنة الأشياء
     
