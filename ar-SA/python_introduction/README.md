@@ -582,27 +582,27 @@ TypeError: object of type 'int' has no len()
     False
     ```
     
-    Practice and have fun with Booleans by trying to run the following commands:
+    تدرب واستمتع مع Booleans بمحاولة تشغيل الأوامر التالية:
     
     - `True and True`
     - `False and True`
     - `True or 1 == 1`
     - `1 != 2`
     
-    Congrats! Booleans are one of the coolest features in programming, and you just learned how to use them!
+    تهانينا! Booleans هي واحدة من أروع ميزات البرمجة، وقد تعلمت للتو كيفية استخدامها!
     
     # احفظه!
     
     > للقراء في المنزل: هذا الفصل تم التكلم عنه في فيديو [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk).
     
-    So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal programs are saved in files and executed by our programming language **interpreter** or **compiler**. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
+    حتى الآن كنا نكتب كل ما لدينا من تعليمات بايثون في المترجم، مما يحدنا من إدخال سطر واحد من التعليمات البرمجية في وقت واحد. يتم حفظ البرامج العادية في الملفات ويتم تنفيذها من قبل لغتنا البرمجية **interpreter** أو **compiler**. حتى الآن كنا نقوم بتشغيل برامجنا سطر واحد في كل مرة في بايثون **interpreter**. سنحتاج إلى أكثر من سطر واحد من التعليمات البرمجية للمهام القليلة التالية، لذلك سنحتاج بسرعة إلى:
     
     - قم بإنهاء مترجم بايثون
     - فتح محرر التعليمات البرمجية لدينا الاختيار
     - حفظ بعض التعليمات البرمجية في ملف بايثون جديد
     - تشغيله!
     
-    To exit from the Python interpreter that we've been using, type the `exit()` function
+    للخروج من مترجم بايثون الذي كنا نستخدمه، ببساطة اكتب دالة `exit()`
     
     {% filename %}command-line{% endfilename %}
     
@@ -611,9 +611,9 @@ TypeError: object of type 'int' has no len()
     $
     ```
     
-    This will put you back into the command prompt.
+    هذا سيضعك مرة أخرى في موجه الأوامر.
     
-    Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now and write some code into a new file (or if you're using a Chromebook, create a new file in the cloud IDE and open the file, which will be in the included code editor):
+    في وقت سابق، اخترنا محرر التعليمات البرمجية من قسم [code editor](../code_editor/README.md). We'll need to open the editor now and write some code into a new file (or if you're using a Chromebook, create a new file in the cloud IDE and open the file, which will be in the included code editor):
     
     {% filename %}editor{% endfilename %}
     
