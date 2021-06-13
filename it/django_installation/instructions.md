@@ -79,7 +79,7 @@ Possiamo creare un `virtualenv` sia su Linux che su OS X eseguendo `python3 -m m
 > {% filename %}command-line{% endfilename %}
 > 
 >     $ sudo apt install python-virtualenv
->     $ virtualenv --python=python3.6 myvenv
+>     $ virtualenv --python=python{{ book.py_version }} myvenv
 >     
 > 
 > **NOTA:** Se ottieni un errore come
@@ -93,7 +93,7 @@ Possiamo creare un `virtualenv` sia su Linux che su OS X eseguendo `python3 -m m
 > 
 > {% filename %}command-line{% endfilename %}
 > 
->     sudo apt install python3.6-venv
+>     sudo apt install python{{ book.py_version }}-venv
 >     
 
 <!--endsec-->
@@ -123,7 +123,7 @@ Avvia il tuo virtualenv digitando:
 
 <!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
 
-> **NOTA:** Per gli utenti del popolare editor VS Code, che ha un terminale integrato basato su una PowerShell Windows, se vuoi rimanere con il terminale integrato, puoi eseguire il seguente comando per attivare il tuo ambiente virtuale:
+> **NOTA:** Per gli utenti del popolare editor VS Code, che ha un terminale integrato basato su una powershell Windows, se vuoi rimanere con il terminale integrato, puoi eseguire il seguente comando per attivare il tuo ambiente virtuale:
 > 
 >     $ . myvenv\Scripts\activate.ps1
 >     
