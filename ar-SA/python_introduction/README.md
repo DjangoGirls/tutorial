@@ -479,7 +479,7 @@ TypeError: object of type 'int' has no len()
     
     > للقراء في المنزل: هذا الفصل تم التكلم عنه في فيديو [Python Basics: Dictionaries](https://www.youtube.com/watch?v=7bzxqIKYgf4).
     
-    A big part of programming involves comparing things. What's the easiest thing to compare? Numbers! Let's see how that works:
+    جزء كبير من البرمجة ينطوي على مقارنة الأشياء. ما هو أسهل شيء للمقارنة؟ أرقام، بالطبع. دعونا نرى كيف يعمل:
     
     {% filename %}command-line{% endfilename %}
     
@@ -498,11 +498,11 @@ TypeError: object of type 'int' has no len()
     True
     ```
     
-    We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare values of mathematical expressions like `2 * 2` and function results like the `2` returned by `len([4, 5])`. Nice, huh?
+    أعطينا بايثون بعض الأرقام للمقارنة. كما ترون، ليس فقط بايثون يمكن مقارنة الأرقام، ولكن يمكن أيضا مقارنة قيم التعبيرات الرياضية مثل `2 * 2` ونتائج الدالة مثل `2` التي تم إرجاعها بواسطة `len([4, 5]`. رائع، هاه؟
     
-    Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
+    هل تتساءل لماذا وضعنا اثنين من العلامات المتساوية `==` بجانب بعضها البعض للمقارنة إذا كانت الأرقام متساوية؟ نحن نستخدم `=` لتعيين القيم للمتغيرات. أنت دائما، **دائما** بحاجة إلى وضع اثنين منها - `==` - إذا كنت ترغب في التحقق مما إذا كانت الأشياء تساوي بعضها البعض. يمكننا أن نقول أيضا أن الأمور غير متساوية مع بعضها البعض. لذالك نستخدم هذه الرموز `!=` كما هو مبين في المثال أعلاه.
     
-    Give Python two more tasks:
+    أعطي بايثون مهمتان اخرتان:
     
     {% filename %}command-line{% endfilename %}
     
@@ -513,14 +513,14 @@ TypeError: object of type 'int' has no len()
     False
     ```
     
-    We've seen `>` and `<`, but what do `>=` and `<=` mean? Read them like this:
+    لقد رأينا `>` و `<`، ولكن ماذا يعني `>=` و `<=` ؟ اقرأهم بهذه الطريقة:
     
     - `x_>` y يعني: x أكبر من y
     - `x_<` y يعني: x أقل من y
     - x `<=` y يعني: x أقل من أو يساوي y
     - x `> =` يعني y: x أكبر من أو يساوي y
     
-    Awesome! Wanna do one more? Try this:
+    رائع! تريد القيام بذالك مرة اخرى؟ جرب هذا:
     
     {% filename %}command-line{% endfilename %}
     
