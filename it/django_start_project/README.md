@@ -112,6 +112,46 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 > **Nota**: se stai usando un Chromebook, aggiungi questa linea nella parte inferiore del file settings.py: `MESSAGE_STORAGE = 'django.contrib.storage.session.SessionStorage'`
 > 
 > Aggiunge anche `.amazonaws.com` a `ALLOWED_HOSTS` se stai usando cloud9
+> 
+> Se stai presentando il tuo progetto su `Glitch.com`, bisogna proteggere la chiave segreta di Django, che deve rimanere confidenziale (altrimenti chiunque faccia un remix del tuo progetto potrebbe vederla):
+> 
+> - Prima di tutto, si crea una chiave segreta casuale. Apri nuovamente il terminale Glitch e digita il comando seguente:
+>     
+>     {% filename %}command-line{% endfilename %}
+>     
+>     ```bash
+>     python -c 'from django.core.management.utils import get_random_secret_key; \
+>           print(get_random_secret_key())'
+>     ```
+>     
+>     Il comando dovrebbe mostrare una lunga stringa casuale, perfetta da usare come chiave segreta per il tuo nuovo sito web Django. Si incolla poi questa chiave in un file `.env` che Glitch mostrerà solamente se sei il proprietario del sito web.
+> 
+> - Crea un file `.env` alla base del tuo progetto e aggiungi al suo interno la proprietà seguente:
+>     
+>     {% filename %}.env{% endfilename %}
+>     
+>     ```bash
+>     # Qui, all'interno delle virgolette, puoi tagliare e incollare la chiave casuale generata precedentemente
+>     SECRET='3!0k#7ds5mp^-x$lqs2%le6v97h#@xopab&oj5y7d=hxe511jl'
+>     ```
+> 
+> - Aggiorna poi il file delle impostazioni di Django per inserire questo valore segreto e impostare il nome del sito web:
+>     
+>     {% filename %}mysite/settings.py{% endfilename %}
+>     
+>     ```python
+>     SECRET_KEY = os.getenv('SECRET')
+>     ```
+> 
+> - Poco più avanti nello stesso file, inserisci il nome del tuo nuovo sito web Glitch:
+>     
+>     {% filename %}mysite/settings.py{% endfilename %}
+>     
+>     ```python
+>     ALLOWED_HOSTS = [os.getenv('PROJECT_DOMAIN') + ".glitch.me"]
+>     ```
+>     
+>     Il valore `PROJECT_DOMAIN` è generato automaticamente da Glitch. Corrisponderà al nome del tuo progetto.
 
 ## Imposta un database
 
@@ -173,35 +213,48 @@ Se invece stai usando un Chromebook, digita questo comando:
     (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
     
 
-Se sei su Windows e non funziona con `UnicodeDecodeError`, usa questo comando:
+o questo se stai usando Glitch:
+
+{% filename %}Glitch.com terminal{% endfilename %}
+
+    $ refresh
+    
+    
+
+Se usi Windows e il comando `UnicodeDecodeError` non funziona, puoi usare questo:
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Ora tutto quello che devi fare è controllare che il tuo sito sia in esecuzione. Apri il tuo browser (Firefox, Chrome, Safari, Internet Explorer o qualsiasi altro tu usi) e digita l'indirizzo:
+Ora devi solo controllare se il tuo sito web è in esecuzione. Apri il tuo browser (Firefox, Chrome, Safari, Internet Explorer o quello che utilizzi di solito) e inserisci questo indirizzo:
 
 {% filename %}browser{% endfilename %}
 
     http://127.0.0.1:8000/
     
 
-Se stai usando un Chromebook e Cloud9, clicca invece l'URL nella finestra pop-up che avrebbe dovuto apparire nell'angolo in alto a destra della finestra di comando dove il server web è in esecuzione. L'URL apparirà qualcosa come:
+Se stai utilizzando un Chromebook e Cloud9, seleziona invece l'URL nella finestra a comparsa che dovrebbe apparire nell'angolo in alto a destra della finestra di comando dove il server web è in esecuzione. L'URL sarà simile a questo:
 
 {% filename %}browser{% endfilename %}
 
     https://<a bunch of letters and numbers>.vfs.cloud9.us-west-2.amazonaws.com
     
 
-Congratulazioni! Hai appena creato il tuo primo sito e l'hai avviato usando un web server! Non è fantastico?
+oppure su Glitch:
+
+    https://name-of-your-glitch-project.glitch.me
+    
+
+Congratulazioni! Hai appena creato il tuo primo sito web e lo hai avviato usando un server web! Non è fantastico?
 
 ![Installazione completata!](images/install_worked.png)
 
-Nota che una finestra di comando può eseguire solo una cosa alla volta, e la finestra di comando che hai aperto prima sta eseguendo il server web. Finché il server web è in esecuzione e in attesa di ulteriori richieste in arrivo, il terminale accetterà un nuovo testo ma non eseguirà nuovi comandi.
+N.B. Una finestra di comando può eseguire solo una cosa alla volta e la finestra di comando che hai aperto in precedenza sta eseguendo il server web. Finché il server web è in esecuzione e in attesa di ulteriori richieste in arrivo, il terminale ammetterà del testo nuovo, ma non eseguirà nuovi comandi.
 
 > Abbiamo esaminato come funzionano i server web nel capitolo **Come funziona il capitolo** .
 
-Per digitare ulteriori comandi mentre il server web è in esecuzione, apri una nuova finestra terminale e attiva il tuo virtualenv -- per rivedere le istruzioni su come aprire una seconda finestra terminale, vedere [Introduzione alla riga di comando](../intro_to_command_line/README.md). Per fermare il server web, torna alla finestra dove è in esecuzione e premi i pulsanti CTRL+C - Control and C insieme (su Windows, è probabile che tu deva premere Ctrl+Break).
+Per digitare ulteriori comandi mentre il server web è in esecuzione, puoi aprire una nuova finestra terminale e attivare il tuo virtualenv (per rivedere le istruzioni su come aprire una seconda finestra terminale, vedi [Introduction to the command line](../intro_to_command_line/README.md)). Per arrestare il server web, devi tornare alla finestra dove è in esecuzione e premere CTRL+C - ovvero i tasti Control e C insieme (su Windows potresti dover premere Ctrl+Break).
 
-Pronto/a per il prossimo passo? È ora di creare un po' di contenuti!
+Sei pronto per il prossimo passaggio? È ora di creare un po' di contenuti!

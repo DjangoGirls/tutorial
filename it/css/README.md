@@ -21,8 +21,7 @@ Per installare Bootstrap, apri il tuo file `.html` nell'editor di codice e aggiu
 {% filename %}blog/templates/blog/post_list{% endfilename %}
 
 ```html
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 ```
 
 Queste righe non aggiungono nessun file al tuo progetto. Puntano solo ad altri file già esistenti siu Internet. Quindi avanti, apri il tuo sito e ricarica la pagina. Ecco qua!
@@ -74,14 +73,14 @@ Aggiungi il seguente codice nel tuo file `static/css/blog.css`:
 
 ```css
 h1 a, h2 a {
-   color: #C25100;
+    color: #C25100;
 }
 
 ```
 
 `h1 a` è un esempio di selettore CSS. Significa che stiamo applicando i nostri fogli di stile ad ogni elemento `a` all'interno di un elemento `h1`; il selettore `h2 a` si comporta allo stesso modo con gli elementi `h2`. Quindi quando si ha qualcosa come `<h1><a href="">link</a></h1>`, lo stile `h1 a` verrà applicato. In questo caso stiamo impostando il colore `#C25100`, che corrisponde all'arancione scuro. Puoi inserire il colore che preferisci, ma assicurati che ci sia un buon contrasto con lo sfondo bianco!
 
-In un file CSS definiamo lo stile degli elementi presenti nel file HTML. Il primo modo per identificare gli elementi è attraverso il loro nome. Potresti ricordarli come tags dalla sezione sull'HTML. Cose come `a`, `h1` e `body` sono tutti esempi di nomi di elementi. Possiamo identificare anche con l'attributo `class` o l'attributo `id`. Class e id sono i nomi che assegni agli elementi. Le classi definiscono gruppi di elementi mentre gli id indicano uno specifico elemento. Per esempio puoi identificare il tag seguente usando il nome `a`, la classe `external_link` o l'id `link_to_wiki_page`:
+In un file CSS definiamo lo stile degli elementi presenti nel file HTML. Il primo modo per identificare gli elementi è attraverso il loro nome. Potresti ricordarli come tags dalla sezione sull'HTML. Cose come `a`, `h1` e `body` sono tutti esempi di nomi di elementi. Possiamo identificare anche con l'attributo `class` o l'attributo `id`. Class e id sono i nomi che assegni agli elementi. Le classi definiscono gruppi di elementi mentre gli id indicano uno specifico elemento. Per esempio, potresti identificare il seguente elemento utilizzando il nome dell'elemento `a`, la classe `external_link`, o l'ID`link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
@@ -113,24 +112,24 @@ Il tuo file dovrebbe avere questo aspetto:
 
 ```html
 {% load static %}
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-        <div>
+        <header>
             <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+        </header>
 
         {% for post in posts %}
-            <div>
-                <p>published: {{ post.published_date }}</p>
+            <article>
+                <time>published: {{ post.published_date }}</time>
                 <h2><a href="">{{ post.title }}</a></h2>
                 <p>{{ post.text|linebreaksbr }}</p>
-            </div>
+            </article>
         {% endfor %}
     </body>
 </html>
@@ -181,26 +180,28 @@ Grandioso!
 
 Come già detto in precedenza, CSS possiede il concetto di classi. Questo ti permette identificare una parte del codice HTML e applicare lo stile solo su quella parte, senza modificare le altre. Questo è utilissimo! Potresti avere due div che hanno qualcosa di differente (come il tuo header e il tuo post). Una classe ti aiuta a renderli differenti.
 
-Prova a dare dei nomi ad alcune parti dell'HTML. Aggiungi una classe chiamta `page-header` al tuo `div` che contiene l'intestazione così:
+Vai avanti e chiama alcune parti del codice HTML. Sostituisci l'`intestazione` che contiene l'intestazione con quanto segue:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<div class="page-header">
-    <h1><a href="/">Django Girls Blog</a></h1>
-</div>
+<header class="page-header">
+    <div class="container">
+        <h1><a href="/">Django Girls Blog</a></h1>
+    </div>
+</header>
 ```
 
-E ora aggiungi una classe `post` al tuo `div` che contiene un articolo del blog.
+E ora aggiungi una classe `post` al tuo `articolo` che contiene un post del blog.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<div class="post">
-    <p>published: {{ post.published_date }}</p>
+<article class="post">
+    <time>published: {{ post.published_date }}</time>
     <h2><a href="">{{ post.title }}</a></h2>
     <p>{{ post.text|linebreaksbr }}</p>
-</div>
+</article>
 ```
 
 Ora aggiungiamo dei blocchi di codice ai nostri nuovi selettori. I selettori che iniziano con `.` indicano una classe. Sul Web ci sono diversi ottimi tutorial e spiegazioni sui CSS che possono aiutarti a capire il codice che stiamo per scrivere. Per ora, copia e incolla quanto segue nel tuo file `blog/static/css/blog.css`:
@@ -209,49 +210,74 @@ Ora aggiungiamo dei blocchi di codice ai nostri nuovi selettori. I selettori che
 
 ```css
 .page-header {
-     background-color: #C25100;
-     margin-top: 0;
-     padding: 20px 20px 20px 40px; 
-} 
+    background-color: #C25100;
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding: 20px 20px 20px 40px;
+}
 
-.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-     color: #ffffff;
-     font-size: 36pt;
-     text-decoration: none; 
-} 
+.page-header h1,
+.page-header h1 a,
+.page-header h1 a:visited,
+.page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
 
-.content {
-     margin-left: 40px; 
-} 
-
-h1, h2, h3, h4 {
-     font-family: 'Lobster', cursive; 
-} 
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Lobster', cursive;
+}
 
 .date {
-     color: #828282; 
+    color: #828282;
 }
- 
+
 .save {
-     float: right; } 
+    float: right;
+}
 
-.post-form textarea, .post-form input {
-     width: 100%; 
-} 
+.post-form textarea,
+.post-form input {
+    width: 100%;
+}
 
-.top-menu, .top-menu:hover, .top-menu:visited {
-     color: #ffffff;
-     float: right;
-     font-size: 26pt;
-     margin-right: 20px; 
-} 
+.top-menu,
+.top-menu:hover,
+.top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
 
 .post {
-     margin-bottom: 70px; 
-} 
+    margin-bottom: 70px;
+}
 
-.post h2 a, .post h2 a:visited {
-     color: #000000; 
+.post h2 a,
+.post h2 a:visited {
+    color: #000000;
+}
+
+.post > .date,
+.post > .actions {
+    float: right;
+}
+
+.btn-default,
+.btn-default:visited {
+    color: #C25100;
+    background: none;
+    border-color: #C25100;
+}
+
+.btn-default:hover {
+    color: #FFFFFF;
+    background-color: #C25100;
 }
 ```
 
@@ -261,12 +287,12 @@ Ora aggiungi all'esterno del codice HTML riguardante i posts all'interno del blo
 
 ```html
 {% for post in posts %}
-     <div class="post">
-         <p>published: {{ post.published_date }}</p>
-         <h2><a href="">{{ post.title }}</a></h2> 
+    <article class="post">
+        <time>published: {{ post.published_date }}</time>
+        <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
-     </div>
- {% endfor %}
+    </article>
+{% endfor %}
 ```
 
 nel file `blog/templates/blog/post_list.html` con quanto segue:
@@ -274,21 +300,21 @@ nel file `blog/templates/blog/post_list.html` con quanto segue:
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<div class="content container">
+<main class="container">
     <div class="row">
-        <div class="col-md-8">
+        <div class="col">
             {% for post in posts %}
-                <div class="post">
-                    <div class="date">
-                        <p>published: {{ post.published_date }}</p>
-                    </div>
+                <article class="post">
+                    <time class="date">
+                        {{ post.published_date }}
+                    </time>
                     <h2><a href="">{{ post.title }}</a></h2>
                     <p>{{ post.text|linebreaksbr }}</p>
-                </div>
+                </article>
             {% endfor %}
         </div>
     </div>
-</div>
+</main>
 ```
 
 Salva entrambi i file e ricarica la pagina web.
