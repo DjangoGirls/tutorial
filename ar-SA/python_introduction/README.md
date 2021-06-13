@@ -280,7 +280,7 @@ TypeError: object of type 'int' has no len()
     >>> lottery = [3, 42, 12, 19, 30, 59]
     ```
     
-    All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that? You know this already!
+    حسنا، لدينا قائمة! ماذا يمكننا أن نفعل حيال ذلك؟ دعونا نرى كم عدد اليانصيب هناك في القائمة. هل لديك أي فكرة عن أي وظيفة يجب عليك استخدامها لذلك؟ أنت تعرف هذا بالفعل!
     
     {% filename %}command-line{% endfilename %}
     
@@ -289,7 +289,7 @@ TypeError: object of type 'int' has no len()
     6
     ```
     
-    Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we will sort it now:
+    نعم! `len()` يمكن أن تعطيك عددا من الكائنات في قائمة. مفيد، أليس كذلك؟ ربما سنقوم بترتيبها الآن:
     
     {% filename %}command-line{% endfilename %}
     
@@ -297,7 +297,7 @@ TypeError: object of type 'int' has no len()
     >>> lottery.sort()
     ```
     
-    This doesn't return anything, it just changed the order in which the numbers appear in the list. Let's print it out again and see what happened:
+    هذا لا يعيد أي شيء، انها مجرد تغييرات للترتيب الذي يظهر الأرقام في القائمة. دعونا نطبعه مرة أخرى ونرى ما يحدث:
     
     {% filename %}command-line{% endfilename %}
     
@@ -306,9 +306,9 @@ TypeError: object of type 'int' has no len()
     [3, 12, 19, 30, 42, 59]
     ```
     
-    As you can see, the numbers in your list are now sorted from the lowest to highest value. Congrats!
+    كما ترون، الأرقام في قائمتك الآن مصنفة من أدنى قيمة إلى أعلى قيمة. تهانينا!
     
-    Maybe we want to reverse that order? Let's do that!
+    ربما نريد عكس هذا الترتيب؟ دعونا نفعل ذلك!
     
     {% filename %}command-line{% endfilename %}
     
@@ -318,7 +318,7 @@ TypeError: object of type 'int' has no len()
     [59, 42, 30, 19, 12, 3]
     ```
     
-    If you want to add something to your list, you can do this by typing this command:
+    إذا كنت ترغب في إضافة شيء إلى القائمة الخاصة بك، يمكنك فعل ذلك عن طريق كتابة هذا الأمر:
     
     {% filename %}command-line{% endfilename %}
     
@@ -328,7 +328,7 @@ TypeError: object of type 'int' has no len()
     [59, 42, 30, 19, 12, 3, 199]
     ```
     
-    If you want to show only the first number, you can do this by using **indexes**. An index is the number that says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
+    إذا كنت ترغب في إظهار الرقم الأول فقط، يمكنك القيام بذلك باستخدام **indexes**. الفهرس هو الرقم الذي يقول أين يوجد عنصر في القائمة. المبرمجون يفضلون بدء العد عند 0، لذلك الكائن الأول في قائمتك هو في الفهرس 0، والعنصر التالي هو في 1، وما إلى ذلك. جرب هذا:
     
     {% filename %}command-line{% endfilename %}
     
@@ -339,7 +339,7 @@ TypeError: object of type 'int' has no len()
     42
     ```
     
-    As you can see, you can access different objects in your list by using the list's name and the object's index inside of square brackets.
+    كما ترون، يمكنك الوصول إلى كائنات مختلفة في قائمتك باستخدام اسم القائمة وفهرس الكائن داخل الأقواس المعقوفة.
     
     To delete something from your list you will need to use **indexes** as we learned above and the `pop()` method. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
     
