@@ -721,7 +721,7 @@ data-collapse=true ces-->
         SyntaxError: unexpected EOF while parsing
         
     
-    بايثون يتوقع منا إعطاءه مزيد من التعليمات ليتم تنفيذها إذا كان الشرط `3 > 2` يتحول إلى أن يكون صحيحاً (أو `True` لهذه المسألة). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
+    بايثون يتوقع منا إعطاءه مزيد من التعليمات ليتم تنفيذها إذا كان الشرط `3 > 2` يتحول إلى أن يكون صحيحاً (أو `True` لهذه المسألة). دعونا نحاول جعل بايثون يطبع "إنها تعمل!". استبدل التعليمات البرمجية في ملف **python_intro.py** بهذا:
     
     {% filename %}python_intro.py{% endfilename %}
     
@@ -730,9 +730,9 @@ data-collapse=true ces-->
         print('It works!')
     ```
     
-    Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
+    لاحظ كيف قمنا بفصل السطر التالي من التعليمات البرمجية ب 4 مسافات؟ نحن بحاجة إلى القيام بذلك حتى يعرف بايثون ما هي التعليمات البرمجية التي يجب عليه تشغيلها ، إذا كانت النتيجة صحيحة. يمكنك وضع مسافة واحدة لكن اغلب مبرمجي بايثون يستخدمون 4 مسافات ، لجعل الأمور اكثر اناقة. سيتم إحتساب ضغطة Tab واحدة كـ 4 مسافات أيضاً طالما تم تعيين محرر النصوص الخاص بك للقيام بذلك. عندما قمت باختيارك، لا تقم بتغييره! إذا وضعت فراغ بـ 4 مسافات، قم بوضع 4 مسافات لأي فراغ تعمله في المستقبل، أيضاً - عدا ذلك يمكن أن تواجه مشاكل.
     
-    Save it and give it another run:
+    احفظه وقم بتشغيله مرة أخرى:
     
     {% filename %}command-line{% endfilename %}
     
@@ -741,7 +741,7 @@ data-collapse=true ces-->
     It works!
     ```
     
-    Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
+    ملاحظة: تذكر أن 'python3' في Windows، لا يعتبر كأمر. من الآن فصاعدا، غير 'python3' ب 'python' لتشغيل الملف.
     
     ### ماذا إذا كان الشرط غير صحيح؟
     
