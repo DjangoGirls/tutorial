@@ -613,7 +613,7 @@ TypeError: object of type 'int' has no len()
     
     هذا سيضعك مرة أخرى في موجه الأوامر.
     
-    في وقت سابق، اخترنا محرر التعليمات البرمجية من قسم [code editor](../code_editor/README.md). We'll need to open the editor now and write some code into a new file (or if you're using a Chromebook, create a new file in the cloud IDE and open the file, which will be in the included code editor):
+    في وقت سابق، اخترنا محرر التعليمات البرمجية من قسم [code editor](../code_editor/README.md). سنحتاج إلى فتح المحرر الآن وكتابة بعض التعليمات البرمجية في ملف جديد (أو إذا كنت تستخدم كروم بوك، أنشئ ملف جديد في قاعدة البيانات السحابية وافتح الملف، الذي سيكون في محرر التعليمات البرمجية المضمنة):
     
     {% filename %}editor{% endfilename %}
     
@@ -621,18 +621,18 @@ TypeError: object of type 'int' has no len()
     print('Hello, Django girls!')
     ```
     
-    Obviously, you're a pretty seasoned Python developer now, so feel free to write some code that you've learned today.
+    من الواضح أنك مطور بايثون متقن الآن، لذا لا تتردد في كتابة بعض التعليمات البرمجية التي تعلمتها اليوم.
     
-    Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, but the important part here is to make sure the file ends in **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
+    الآن نحن بحاجة إلى حفظ الملف وإعطائه اسماً وصفياً. دعونا نسمي الملف **python_intro.py** وحفظه إلى سطح المكتب الخاص بك. يمكننا تسمية الملف أي شيء نريده، ولكن الجزء المهم هنا هو التأكد من انتهاء الملف ب **.py**. ويقول امتداد **.py** لنظام التشغيل أن هذا **Python executable file</0 وبايثون يمكن ان يشغله.</p> 
     
     > يجب أن تلاحظ واحدة من أروع شيء عن المحررين الأكواد: الألوان! في وحدة تحكم بايثون، كان كل شيء بنفس اللون. الآن يجب أن ترى أن الدالة `print` هي لون مختلف عن السلسلة. وهذا ما يسمى "syntax highlighting"، وهي ميزة مفيدة حقاً عند الترميز. سيعطيك لون الأشياء تلميحات مثل السلاسل غير المغلقة أو الأخطاء المطبعية في اسم الكلمة الرئيسية (مثل `def` في إحدى الدالات، والتي سنراها أدناه). وهذا أحد الأسباب التي تجعلنا نستخدم محرر تعليمات برمجية. :)
     
-    With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
+    مع حفظ الملف، حان الوقت لتشغيله! باستخدام المهارات التي تعلمتها في قسم سطر الأوامر، استخدم المحطة الطرفية إلى **change directories** إلى سطح المكتب.
     
     <!--sec data-title="Change directory: OS X" data-id="python_OSX"
 data-collapse=true ces-->
     
-    On a Mac, the command will look something like this:
+    على نظام التشغيل ماك، سيبدو الأمر على هذا النحو:
     
     {% filename %}command-line{% endfilename %}
     
@@ -644,20 +644,20 @@ data-collapse=true ces-->
     <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
     
-    On Linux, it will be like this:
+    على لينوكس، سيكون مثل هذا:
     
     {% filename %}command-line{% endfilename %}
     
         $ cd ~/Desktop
         
     
-    (Remember that the word "Desktop" might be translated to your local language.)
+    (تذكر أن كلمة "سطح المكتب" قد تترجم إلى لغتك المحلية.)
     
     <!--endsec-->
     
     <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
     
-    On Windows Command Prompt, it will be like this:
+    في موجه أوامر Windows، فإنه سيكون مثل هذا:
     
     {% filename %}command-line{% endfilename %}
     
@@ -668,7 +668,7 @@ data-collapse=true ces-->
     
     <!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
     
-    And on Windows Powershell, it will be like this:
+    وفي Windows Powershell، فإنه سيكون مثل هذا:
     
     {% filename %}command-line{% endfilename %}
     
