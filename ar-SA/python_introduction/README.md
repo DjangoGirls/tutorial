@@ -255,15 +255,15 @@ TypeError: object of type 'int' has no len()
     Maria
     ```
     
-    When you just type `name`, the Python interpreter responds with the string *representation* of the variable 'name', which is the letters M-a-r-i-a, surrounded by single quotes, ''. When you say `print(name)`, Python will "print" the contents of the variable to the screen, without the quotes, which is neater.
+    عندما تكتب فقط `name`، يستجيب مترجم بايثون بالسلسلة *representation* للمتغير 'name', والتي هي الحروف M-a-r-i-a محاطة بعلامة إقتباس واحدة، ''. عندما تقول `print(name)`، بايثون سيقوم ب "طباعة" محتويات المتغير إلى الشاشة، دون علامات الاقتباس، وهو أكثر إتقاناً.
     
-    As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things on multiple lines.
+    كما سنرى لاحقا، `print()` مفيد أيضا عندما نريد طباعة الأشياء من داخل الدوال، أو عندما نريد طباعة الأشياء على خطوط متعددة.
     
     ## القوائم
     
-    Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called **list**. Lists are exactly what you think they are: objects which are lists of other objects. :)
+    بجانب السلاسل والأعداد الصحيحة، بايثون لديه كل الأنواع المختلفة من الكائنات. الآن سوف نقدم واحدة تسمى **list**. القوائم هي بالضبط ما تعتقده: الأشياء التي هي قوائم أشياء أخرى. :)
     
-    Go ahead and create a list:
+    امضي قدما وأنشئ قائمة:
     
     {% filename %}command-line{% endfilename %}
     
@@ -272,7 +272,7 @@ TypeError: object of type 'int' has no len()
     []
     ```
     
-    Yes, this list is empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repeat ourselves all the time, so we will put it in a variable, too:
+    نعم، هذه القائمة فارغة. ليست مفيدة جدا، أليس كذلك؟ دعونا ننشئ قائمة من أرقام اليانصيب. نحن لا نريد أن نكرر ذالك طوال الوقت، لذلك سنضعها في متغير أيضا:
     
     {% filename %}command-line{% endfilename %}
     
