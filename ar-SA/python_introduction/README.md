@@ -69,7 +69,7 @@
 
 لقد أنشأت الآن السلسلة الأولى! هو تسلسل أحرف يمكن معالجتها بواسطة جهاز الكمبيوتر. يجب ان تبدأ السلسلة وتنتهي بنفس الحرف. قد يكون هذا واحد (`'`) أو الضعف (`"`) اقتباس (لا فرق!) الإقتباس يقول لبايثون انه هناك سلسلة.
 
-Strings can be strung together. Try this:
+السلاسل يمكن أن تكون مربوطة معا. جرب هذا:
 
 {% filename %}command-line{% endfilename %}
 
@@ -243,7 +243,7 @@ TypeError: object of type 'int' has no len()
     
     ## وظيفة الطباعة
     
-    Try this:
+    جرب هذا:
     
     {% filename %}command-line{% endfilename %}
     
