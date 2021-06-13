@@ -341,7 +341,7 @@ TypeError: object of type 'int' has no len()
     
     كما ترون، يمكنك الوصول إلى كائنات مختلفة في قائمتك باستخدام اسم القائمة وفهرس الكائن داخل الأقواس المعقوفة.
     
-    To delete something from your list you will need to use **indexes** as we learned above and the `pop()` method. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
+    لحذف شيء من القائمة الخاصة بك سوف تحتاج إلى استخدام **indexes** كما تعلمنا أعلاه وأسلوب `pop()`. دعونا نجرب مثالا ونعزز ما تعلمناه سابقا، سنقوم بحذف العدد الأول من قائمتنا.
     
     {% filename %}command-line{% endfilename %}
     
@@ -356,17 +356,17 @@ TypeError: object of type 'int' has no len()
     [42, 30, 19, 12, 3, 199]
     ```
     
-    That worked like a charm!
+    عمل هذا كالسحر !
     
-    For extra fun, try some other indexes: 6, 7, 1000, -1, -6 or -1000. See if you can predict the result before trying the command. Do the results make sense?
+    للمتعة الإضافية، حاول بعض الفهارس الأخرى: 6، 7، 1000، -1، -6 أو -1000. انظر إذا كان يمكنك التنبؤ بالنتيجة قبل محاولة الأمر. هل النتائج منطقية؟
     
-    You can find a list of all available list methods in this chapter of the Python documentation: https://docs.python.org/3/tutorial/datastructures.html
+    يمكن أن تجد قائمة بجميع أساليب القائمة المتوفرة في هذا الفصل من وثائق بايثون: https://docs.python.org/3/tutorial/datastructures.html
     
     ## القواميس
     
     > للقراء في المنزل: هذا الفصل تم التكلم عنه في [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c).
     
-    A dictionary is similar to a list, but you access values by looking up a key instead of a numeric index. A key can be any string or number. The syntax to define an empty dictionary is:
+    القاموس مماثل للقائمة، ولكن يمكنك الوصول إلى القيم عن طريق البحث عن مفتاح بدلا من فهرس رقمي. المفتاح يمكن أن يكون أي سلسلة أو عدد. بناء الجملة لتعريف القاموس الفارغ هو:
     
     {% filename %}command-line{% endfilename %}
     
@@ -375,9 +375,9 @@ TypeError: object of type 'int' has no len()
     {}
     ```
     
-    This shows that you just created an empty dictionary. Hurray!
+    هذا يدل على أنك قمت بإنشاء قاموس فارغ للتو. يآآاي!
     
-    Now, try writing the following command (try substituting your own information, too):
+    الآن، حاول كتابة الأمر التالي (حاول استبدال معلوماتك الخاصة أيضا):
     
     {% filename %}command-line{% endfilename %}
     
@@ -385,7 +385,7 @@ TypeError: object of type 'int' has no len()
     >>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
     ```
     
-    With this command, you just created a variable named `participant` with three key–value pairs:
+    مع هذا الأمر، قمت للتو بإنشاء متغير يسمى `participant` مع ثلاثة أزواج من القيمة المفتاحية:
     
     - المفتاح `name` يشير إلى قيمة`'Ola'`(كائن `string`)،
     - `country` يشير إلى `'Poland'` (`string` أخرى)،
