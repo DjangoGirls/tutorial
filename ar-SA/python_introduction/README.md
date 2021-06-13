@@ -677,9 +677,9 @@ data-collapse=true ces-->
     
     <!--endsec-->
     
-    If you get stuck, ask for help. That's exactly what the coaches are here for!
+    إذا علقت، اطلب المساعدة. لهذا بالضبط يتواجد المدربون هنا!
     
-    Now use Python to execute the code in the file like this:
+    الآن استخدم بايثون لتنفيذ التعليمات البرمجية في ملف مثل هذا:
     
     {% filename %}command-line{% endfilename %}
     
@@ -687,7 +687,7 @@ data-collapse=true ces-->
         Hello, Django girls!
         
     
-    Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
+    ملاحظة: في ويندوز 'python3' غير معروف كأمر. بدلاً من ذلك، استخدم 'python' لتنفيذ الملف:
     
     {% filename %}command-line{% endfilename %}
     
@@ -695,15 +695,15 @@ data-collapse=true ces-->
     > python python_intro.py
     ```
     
-    Alright! You just ran your first Python program that was saved to a file. Feel awesome?
+    حسناً! لقد قمت بتشغيل برنامج بايثون الأول الخاص بك والذي تم حفظه في ملف. هذا احساس رائع؟
     
-    You can now move on to an essential tool in programming:
+    يمكنك الآن الانتقال إلى أداة أساسية في البرمجة:
     
     ## If … elif … else
     
-    Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
+    يجب تنفيذ الكثير من الأشياء في التعليمات البرمجية فقط عند استيفاء شروط معينة. وهذا هو السبب في أن بايثون لديها ما يسمى **if statements**.
     
-    Replace the code in your **python_intro.py** file with this:
+    استبدال التعليمات البرمجية في ملف **python_intro.py** بهذا:
     
     {% filename %}python_intro.py{% endfilename %}
     
@@ -711,7 +711,7 @@ data-collapse=true ces-->
     if 3 > 2:
     ```
     
-    If we were to save and run this, we'd see an error like this:
+    إذا كان لنا أن نحفظ ونشغل هذا، كنا لنرى خطأ مثل هذا:
     
     {% filename %}{{ warning_icon }} command-line{% endfilename %}
     
@@ -721,7 +721,7 @@ data-collapse=true ces-->
         SyntaxError: unexpected EOF while parsing
         
     
-    Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
+    بايثون يتوقع منا إعطاءه مزيد من التعليمات ليتم تنفيذها إذا كان الشرط `3 > 2` يتحول إلى أن يكون صحيحاً (أو `True` لهذه المسألة). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
     
     {% filename %}python_intro.py{% endfilename %}
     
