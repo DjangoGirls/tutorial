@@ -538,7 +538,7 @@ TypeError: object of type 'int' has no len()
     - **و**-إذا قمت باستخدام عامل التشغيل `and`، كل المقارنات يجب أن تكون صحيحة في النظام لكي يكون الأمر كله صحيح
     - **أو** – إذا كنت تستخدم عامل التشغيل `or`، واحد فقط من المقارنات يجب أن يكون صحيحاً في النظام لكي يكون الأمر كله صحيح
     
-    Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
+    هل سمعت عبارة "مقارنة التفاح بالبرتقال"؟ دعونا نجرب ما يعادل هذه العبارة في بايثون:
     
     {% filename %}{{ warning_icon }} command-line{% endfilename %}
     
@@ -549,20 +549,20 @@ TypeError: object of type 'int' has no len()
     TypeError: '>' not supported between instances of 'int' and 'str'
     ```
     
-    Here you see that just like in the expression, Python is not able to compare a number (`int`) and a string (`str`). Instead, it shows a **TypeError** and tells us the two types can't be compared together.
+    هنا ترى أنه كما هو الحال في التعبير، بايثون غير قادر على مقارنة عدد (`int`) وسلسلة (`str`). بدلاً من ذلك، فإنه يظهر **TypeError** ويقول لنا لا يمكن مقارنة هذين النوعين معا.
     
     ## Boolean
     
-    Incidentally, you just learned about a new type of object in Python. It's called **Boolean**.
+    وبالمناسبة، لقد تعلمت للتو نوع جديد من الكائنات في بايثون. تسمى **Boolean**.
     
-    There are only two Boolean objects:
+    هناك نوعين فقط من كائنات Boolean:
     
     - صحيح
     - خطأ
     
-    But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well.)
+    ولكن لكي يفهم بايثون هذا، تحتاج دائما إلى كتابته كـ 'صحيح' (الحرف الأول الكبير، مع بقية الأحرف السفلية). **true, TRUE,، وtRUE لن تنجح – الوحيدة التي ستنجح هي True.** (نفس الأمر ينطبق على 'False' كذلك، بطبيعة الحال.)
     
-    Booleans can be variables, too! See here:
+    Booleans يمكن أن تكون متغيرات، أيضا! انظر هنا:
     
     {% filename %}command-line{% endfilename %}
     
@@ -572,7 +572,7 @@ TypeError: object of type 'int' has no len()
     True
     ```
     
-    You can also do it this way:
+    يمكنك أيضا القيام بذلك بهذه الطريقة:
     
     {% filename %}command-line{% endfilename %}
     
