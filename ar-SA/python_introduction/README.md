@@ -865,9 +865,9 @@ data-collapse=true ces-->
     
     حسنا، الدالة الأولى جاهزة!
     
-    You may wonder why we've written the name of the function at the bottom of the file. When we write `def hi():` and the indented lines following, this is us writing instructions for what the `hi()` function should do. Python will read and remember these instructions, but won't run the function yet. To tell Python we want to run the function, we have to call the function with `hi()`. Python reads the file and executes it from top to bottom, so we have to define the function in the file before we call it.
+    قد تتساءل لماذا قمنا بكتابة اسم الدالة في الجزء السفلي من الملف. عندما نكتب `def hi():` والخطوط المعبأة التالية ، هذا هو أننا نكتب تعليمات لما ينبغي أن تقوم به الدالة `H()`. بايثون سيقوم بقراءة وتذكر هذه التعليمات، ولكن لن يتم تشغيل الدالة بعد. لإخبار بايثون أننا نريد تشغيل الدالة، علينا أن نستدعي الدالة بواسطة `hi()`. بايثون يقرأ الملف وينفذه من الأعلى إلى الأسفل، لذا علينا أن نحدد الدالة في الملف قبل أن نسميها.
     
-    Let's run this now and see what happens:
+    لنختبر و نرى ماذا يحدث:
     
     {% filename %}command-line{% endfilename %}
     
@@ -876,13 +876,13 @@ data-collapse=true ces-->
         How are you؟
         
     
-    Note: if it didn't work, don't panic! The output will help you to figure why:
+    ملاحظة: إذا كان لا يعمل، لا داعي للذعر! المخارج سوف تساعدك على معرفة السبب:
     
     - إذا حصلت على `NameError`، فهذا يعني أنك كتبت شيئا خاطئا، لذا يجب عليك التحقق من أنك استخدمت نفس الاسم عند إنشاء الدالة باستخدام `def hi():` وعند الاتصال به `hi()`.
     - إذا حصلت على `IndentationError`، تحقق من أن كلا من خطوط <`print` لها نفس المسافة البيضاء في بداية السطر: بايثون يريد أن تكون كل شفرة داخل الدالة محاذية بدقة.
     - إذا لم يكن هناك أي إخراج على الإطلاق، تحقق من أن آخر `hi()` *isn't* مسنن - إذا كان كذلك، فسيصبح هذا السطر جزءا من الوظيفة أيضا، ولن يتم تشغيله ابدا.
     
-    Let's build our first function with parameters. We will change the previous example – a function that says 'hi' to the person running it – with a name:
+    دعونا نبني أول وظيفة لدينا مع المعلمات. سوف نغير المثال السابق - الدالة التي تقول "مرحبا" للشخص الذي يديرها - باسم:
     
     {% filename %}python_intro.py{% endfilename %}
     
@@ -890,7 +890,7 @@ data-collapse=true ces-->
     def hi(name):
     ```
     
-    As you can see, we now gave our function a parameter that we called `name`:
+    كما ترون، أعطينا الآن وظيفتنا معلمة قمنا بتسميتها `name`:
     
     {% filename %}python_intro.py{% endfilename %}
     
@@ -906,7 +906,7 @@ data-collapse=true ces-->
     hi()
     ```
     
-    Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
+    تذكر: الدالة `print` معبأة بأربعة مسافات داخل `if` . هذا لأن الدالة تعمل عند استيفاء الشرط. لنرى كيف تعمل الآن:
     
     {% filename %}{{ warning_icon }} command-line{% endfilename %}
     
@@ -917,7 +917,7 @@ data-collapse=true ces-->
         TypeError: hi() missing 1 required positional argument: 'name'
         
     
-    Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
+    عفوا، خطأ. لحسن الحظ، بايثون يعطينا رسالة إعلام خطأ مفيدة جداً. يخبرنا أن الدالة `hi()` (التي حددنا) تحتوي على حجة واحدة مطلوبة (تسمى `name`) وأننا نسينا تمريرها عند إستدعاء الدالة. دعونا نصلحه في الجزء السفلي من الملف:
     
     {% filename %}python_intro.py{% endfilename %}
     
@@ -925,7 +925,7 @@ data-collapse=true ces-->
     hi("Ola")
     ```
     
-    And run it again:
+    وشغله مرة أخرى:
     
     {% filename %}command-line{% endfilename %}
     
@@ -933,7 +933,7 @@ data-collapse=true ces-->
         Hi Ola!
         
     
-    And if we change the name?
+    وإذا قمنا بتغيير الاسم؟
     
     {% filename %}python_intro.py{% endfilename %}
     
