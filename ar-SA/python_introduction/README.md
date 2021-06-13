@@ -941,7 +941,7 @@ data-collapse=true ces-->
     hi("Sonja")
     ```
     
-    And run it:
+    و قم بتشغيلها:
     
     {% filename %}command-line{% endfilename %}
     
@@ -949,16 +949,16 @@ data-collapse=true ces-->
         Hi Sonja!
         
     
-    Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
+    والآن، ما رأيك سوف يحدث إذا قمت بكتابة اسم آخر هناك؟ (لا Ola أو Sonja). جرب وانظر إذا كنت على حق. يجب طباعة هذا:
     
     {% filename %}command-line{% endfilename %}
     
         Hi anonymous!
         
     
-    This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
+    يبدو رائعا أليس كذالك؟ بهذه الطريقة لا يتوجب عليك أن تكرر نفسك في كل مرة تريد فيها تغيير اسم الشخص الذي يفترض أن تستقبله الدالة. وهذا هو بالضبط لماذا نحن بحاجة إلى وظائف--لا تريد ابدأ تكرار التعليمات البرمجية الخاصة بك!
     
-    Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right? Replace the content of your file with the following:
+    دعونا نفعل شيئا أذكى - هناك أسماء أكثر من اثنين، وكتابة شرط لكل واحد سيكون صعبا، أليس كذلك؟ استبدل محتوى الملف الخاص بك بما يلي:
     
     {% filename %}python_intro.py{% endfilename %}
     
@@ -969,7 +969,7 @@ data-collapse=true ces-->
     hi("Rachel")
     ```
     
-    Let's call the code now:
+    دعونا نستدعي التعليمات البرمجية الآن:
     
     {% filename %}command-line{% endfilename %}
     
@@ -977,17 +977,17 @@ data-collapse=true ces-->
         Hi Rachel!
         
     
-    Congratulations! You just learned how to write functions! :)
+    تهانينا! لقد تعلمت للتو كيفية كتابة الوظائف! :)
     
     ## الحلقات
     
     > للقراء في المنزل: هذا الفصل تم التكلم عنه في فيديو [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0).
     
-    This is the last part already. That was quick, right? :)
+    هذا هو الجزء الأخير بالفعل. كان ذلك سريعا، أليس كذلك؟ :)
     
-    Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
+    المبرمجين لا يحبون تكرار أنفسهم. البرمجة هي جعل كل شيء يعمل أوتوماتيكيا، لذلك نحن لا نريد تحية كل شخص باسمه يدويا، أليس كذلك؟ هنا حيث تأتي الحلقات في متناول اليدين.
     
-    Still remember lists? Let's do a list of girls:
+    لا تزال تذكر القوائم؟ دعونا ننشئ قائمة من الفتيات:
     
     {% filename %}python_intro.py{% endfilename %}
     
@@ -995,7 +995,7 @@ data-collapse=true ces-->
     girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
     ```
     
-    We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
+    نحن نريد أن نحيي كل منهم باسمه. لدينا وظيفة `hi` للقيام بذلك، لذلك دعونا نستخدمها في حلقة:
     
     {% filename %}python_intro.py{% endfilename %}
     
@@ -1003,9 +1003,9 @@ data-collapse=true ces-->
     for name in girls:
     ```
     
-    The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
+    يتصرف بيان `for` بنفس الطريقة التي يتصرف بها بيان `if` ؛ الرمز أدناه يجب أن يكون هناك أربعة مسافات.
     
-    Here is the full code that will be in the file:
+    هنا التعليمات البرمجية الكاملة التي سوف تكون في الملف:
     
     {% filename %}python_intro.py{% endfilename %}
     
@@ -1019,7 +1019,7 @@ data-collapse=true ces-->
         print('Next girl')
     ```
     
-    And when we run it:
+    وعند تشغيله:
     
     {% filename %}command-line{% endfilename %}
     
@@ -1036,7 +1036,7 @@ data-collapse=true ces-->
         Next girl
         
     
-    As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
+    كما ترون، سيتم تكرار كل ما تضعه داخل بيان `for` مع مسافة بادئة لكل عنصر من القائمة `girls`.
     
     You can also use `for` on numbers using the `range` function:
     
