@@ -19,7 +19,7 @@
 
 شيء واحد يجب مراقبته: أثناء التثبيت، ستلاحظ علامة نافذة "الإعداد". تأكد من تحديد مربع الاختيار "إضافة بايثون {{ book.py_version }} إلى باث" أو "إضافة بايثون إلى متغيرات البيئة الخاصة بك" وانقر على "تثبيت الآن"، كما يظهر هنا (قد يبدو مختلفا بعض الشيء إذا كنت تقوم بتثبيت إصدار مختلف):
 
-![لا تنس إضافة بيثون إلى المسار](../python_installation/images/python-installation-options.png)
+![لا تنسى إضافة بايثون إلى المسار](../python_installation/images/python-installation-options.png)
 
 عند اكتمال التثبيت، قد ترى مربع حوار مع رابط يمكنك متابعته لمعرفة المزيد عن بايثون أو عن الإصدار الذي قمت بتثبيته. إغلاق أو إلغاء مربع الحوار هذا -- سوف تتعلم المزيد في هذا البرنامج التعليمي!
 
@@ -100,7 +100,7 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-Verify the installation was successful by opening a command prompt and running the `python3` command:
+تحقق من أن عملية التثبيت كانت ناجحة بفتح موجه الأوامر ثم تشغيل الأمر `python3`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -108,10 +108,10 @@ Verify the installation was successful by opening a command prompt and running t
     Python {{ book.py_release }}
     
 
-The version shown may be different from {{ book.py_release }} -- it should match the version you installed.
+قد يكون الإصدار المعروض مختلفا عن {{ book.py_release }} -- يجب أن يتطابق مع الإصدار الذي قمت بتثبيته.
 
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is {{ book.py_min_version }} or higher. If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
+**ملاحظة:** إذا كنت على Windows وتحصل على رسالة خطأ التي `python3` لم يتم العثور عليها، حاول استخدام `بايثون` (دون `3`) وتحقق مما إذا كان لا يزال إصدار بايثون {{ book.py_min_version }} أو أعلى. إذا لم ينجح ذلك أيضاً، فيمكنك فتح موجه أوامر جديد والمحاولة مرة أخرى؛ يحدث هذا إذا كنت تستخدم موجه أوامر تم فتحه قبل تثبيت بايثون.
 
 * * *
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
+إذا كان لديك أي شكوك، أو إذا حدث خطأ ما، وليس لديك أي فكرة عما تفعله بعد ذلك، يرجى سؤال مدربك! أحيانا لا تسير الأمور بسلاسة، لذا من الأفضل أن تطلب المساعدة من شخص لديه خبرة أكبر.
