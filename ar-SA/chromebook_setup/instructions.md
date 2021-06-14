@@ -91,15 +91,15 @@ python3 manage.py migrate
 python3 manage.py runserver $PORT
 ```
 
-Once these files are created, go to the Terminal and execute the following commands to create your first Django project:
+بمجرد إنشاء هذه الملفات، انتقل إلى المحطة الطرفية وتنفيذ الأوامر التالية لإنشاء أول مشروع جانغو الخاص بك:
 
 {% filename %}Terminal{% endfilename %}
 
     django-admin.py startproject mysite .
-    refresh
+    قم بالتحديث
     
 
-In order to see detailed error messages, you can activate Django debug logs for your Glitch application. Simply add the following at the end of the `mysite/settings.py` file.
+من أجل رؤية رسائل الخطأ المفصلة، يمكنك تفعيل سجلات التصحيح جانغو لتطبيق Glitch الخاص بك. ببساطة إضافة ما يلي في نهاية ملف `mysite/settings.py`.
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -124,9 +124,9 @@ LOGGING = {
 }
 ```
 
-This will create a `debug.log` file detailing Django operations and any error messages that might come up, making it much easier to fix if your website does not work.
+سيؤدي هذا إلى إنشاء `debug.log` ملف يفصل عمليات جانغو وأي رسائل خطأ قد تظهر، يجعل من الأسهل إصلاح ما إذا كان موقع الويب الخاص بك لا يعمل.
 
-The initial restarting of the Glitch project should fail. (If you click on the top dropdown button `Show` then click on `In a New Window`, you will receive a `DisallowedHost` error message.) Do not worry about it at this stage, the tutorial will fix this as soon as you update the Django settings of your project in the `mysite/settings.py` file.
+يجب أن تفشل عملية إعادة التشغيل الأولية لمشروع Glitch. (If you click on the top dropdown button `Show` then click on `In a New Window`, you will receive a `DisallowedHost` error message.) Do not worry about it at this stage, the tutorial will fix this as soon as you update the Django settings of your project in the `mysite/settings.py` file.
 
 ### البيئة الافتراضية
 
