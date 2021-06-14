@@ -2,7 +2,7 @@
 > 
 > هذا القسم يستند على دورة تعليمية من فتيات الجزر المهووسات (https://github.com/ggcarrots/django-carrots)
 
-دجانغو مكتوب في بايتون. نحتاج إلى بايثون للقيام بأي شيء في دجانغو. دعونا نبدأ بتثبيته! نريد منك تثبيت أحدث إصدار من Python 3، لذا إذا كان لديك أي إصدار سابق، فستحتاج إلى ترقيته. If you already have version {{ book.py_min_version }} or higher you should be fine.
+دجانغو مكتوب في بايتون. نحتاج إلى بايثون للقيام بأي شيء في دجانغو. دعونا نبدأ بتثبيته! نريد منك تثبيت أحدث إصدار من Python 3، لذا إذا كان لديك أي إصدار سابق، فستحتاج إلى ترقيته. إذا كان لديك بالفعل الإصدار {{ book.py_min_version }} أو أعلى يجب أن تكون على ما يرام.
 
 الرجاء تثبيت بايثون العادية كما يلي، حتى عندما يكون لديك أناكوندا مثبت على جهاز الكمبيوتر الخاص بك.
 
@@ -17,22 +17,22 @@
 
 يمكنك تحميل بايثون ل Windows من https://www.python.org/downloads/windows/. انقر فوق "Latest Python 3 Release - Python x.x.x". إذا كان جهاز الكمبيوتر الخاص بك يقوم بتشغيل إصدار **64 بت** من Windows، حمل **Windows x86-64 executable installer**. وبخلاف ذلك، حمل **Windows x86 executable installer**. بعد تحميل المثبت، ينبغي تشغيله (انقر نقراً مزدوجاً على الملف) واتبع الإرشادات الموجودة هناك.
 
-شيء واحد يجب مراقبته: أثناء التثبيت، ستلاحظ علامة نافذة "الإعداد". Make sure you tick the "Add Python {{ book.py_version }} to PATH" or 'Add Python to your environment variables" checkbox and click on "Install Now", as shown here (it may look a bit different if you are installing a different version):
+شيء واحد يجب مراقبته: أثناء التثبيت، ستلاحظ علامة نافذة "الإعداد". تأكد من تحديد مربع الاختيار "إضافة بايثون {{ book.py_version }} إلى باث" أو "إضافة بايثون إلى متغيرات البيئة الخاصة بك" وانقر على "تثبيت الآن"، كما يظهر هنا (قد يبدو مختلفا بعض الشيء إذا كنت تقوم بتثبيت إصدار مختلف):
 
 ![لا تنس إضافة بيثون إلى المسار](../python_installation/images/python-installation-options.png)
 
 عند اكتمال التثبيت، قد ترى مربع حوار مع رابط يمكنك متابعته لمعرفة المزيد عن بايثون أو عن الإصدار الذي قمت بتثبيته. إغلاق أو إلغاء مربع الحوار هذا -- سوف تتعلم المزيد في هذا البرنامج التعليمي!
 
-Note: If you are using an older version of Windows (7, Vista, or any older version) and the Python {{ book.py_version }} installer fails with an error, then install all Windows Updates and try to install Python again. If you still have the error, try installing Python version {{ book.py_min_release }} from [Python.org](https://www.python.org/downloads/windows/).
+ملاحظة: إذا كنت تستخدم نسخة قديمة من ويندوز (7، فيستا، أو أي إصدار قديم) وتثبيت Python {{ book.py_version }} فشل بخطأ، قم بتثبيت كافة تحديثات ويندوز وحاول تثبيت بايثون مرة أخرى. إذا كنت لا تزال تعاني من الخطأ، حاول تثبيت إصدار بايثون {{ book.py_min_release }} من [Python.org](https://www.python.org/downloads/windows/).
 
-> Django {{ book.django_version }} needs Python {{ book.py_min_version }} or greater, which does not support Windows XP or earlier versions.
+> جانغو {{ book.django_version }} يحتاج Python {{ book.py_min_version }} أو أكثر، الذي لا يدعم Windows XP أو الإصدارات السابقة.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
+> **ملاحظة** قبل تثبيت Python على OS X، يجب التأكد من أن إعدادات Mac تسمح بتثبيت الحزم التي ليست من متجر التطبيق. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
 
 You need to go to the website https://www.python.org/downloads/mac-osx/ and download the latest Python installer:
 
