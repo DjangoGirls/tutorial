@@ -25,7 +25,7 @@
 حالياً Cloud 9 تتطلب تسجيلك في AWS وإدخال معلومات بطاقتك البنكية.
 
 1. ثبت Cloud 9 من [ متجر كروم](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. إذهب الى [c9.io](https://c9.io) واضغط على *ابدأ مع AWS Cloud9*
+2. إذهب الى [c9.io](https://c9.io) واضغط على *Get started with AWS Cloud9*
 3. أنشئ حساب في AWS (يتطلب معلومات بطاقتك البنكية، لكن تستطيع استخدامها مجاناً)
 4. من AWS Dashboard، أدخل *Cloud9* في مربع البحث ثم اضغطه
 5. من Cloud 9 dashboard، اضغط *Create environment*
@@ -48,7 +48,7 @@
 1. انتقل إلى [Glitch.com](https://glitch.com/)
 2. قم بالتسجيل للحصول على حساب (https://glitch.com/signup) أو استخدم حساب GitHub الخاص بك إذا كان لديك حساب. (انظر تعليمات GitHub أدناه)
 3. انقر فوق *New Project* واختر *hello-webpage*
-4. Click on the Tools dropdown list (at the bottom left side of the window), then on Terminal button to open terminal tab with a prompt like this:
+4. انقر على قائمة الأدوات المنسدلة (في الجزء السفلي الأيسر من النافذة)، ثم على زر المحطة الطرفية لفتح علامة التبويب الطرفية مع توجيه مثل هذا:
 
 {% filename %}Terminal{% endfilename %}
 
@@ -153,6 +153,6 @@ LOGGING = {
 
 يتضمن البرنامج التعليمي للفتيات في جانغو قسما عما يسمى بالنشر، وهي عملية أخذ التعليمات البرمجية التي تعمل على تطبيق الويب الجديد ونقلها إلى جهاز كمبيوتر متاح للجمهور (يسمى الخادم) حتى يتمكن أشخاص آخرين من رؤية عملك.
 
-هذا الجزء غريب نوعاً ما عند تنفيذ البرنامج التعليمي على جهاز كروم بوك لأننا نستخدم جهاز كمبيوتر موجود على الإنترنت أساساً (ليس مثل أي كمبيوتر محمول آخر). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+هذا الجزء غريب نوعاً ما عند تنفيذ البرنامج التعليمي على جهاز كروم بوك لأننا نستخدم جهاز كمبيوتر موجود على الإنترنت أساساً (ليس مثل أي كمبيوتر محمول آخر). ومع ذلك، فإنه لا يزال مفيدا، إذا فكرنا في مساحة عمل Cloud 9 كمكان لعملنا "تحت الإنشاء" و Python Anywhere كمكان لعرض أشيائنا إذا اكتملت.
 
-Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+بالتالي، قم بتسجيل حساب جديد في Python Anywhere عبر هذا الرابط [www.pythonanywhere.com](https://www.pythonanywhere.com).
