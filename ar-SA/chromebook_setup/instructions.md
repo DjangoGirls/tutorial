@@ -1,8 +1,8 @@
 يمكنك [تخطي هذا القسم ](http://tutorial.djangogirls.org/en/installation/#install-python) إذا كنت لا تستخدم كروم بوك. إذا كنت كذلك، تجربة التثبيت الخاص بك سوف تكون مختلفة قليلاً. يمكنك تجاهل بقية إرشادات التثبيت.
 
-### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com)
+### بيئة التطوير المتكاملة السحابية (PaizaCloud Cloud IDE, AWS Cloud9)
 
-بيئة التطوير المتكاملة السحابية هي أداة توفر لك تحرير الأكواد البرمجية والوصول إلى جهاز كمبيوتر يعمل على شبكة الإنترنت حيث يمكنك تثبيت، وكتابة، وتشغيل البرامج. خلال مدة البرنامج التعليمي، بيئة التطوير المتكاملة السحابية ستكون بمثابة *الجهاز المحلي* الخاص بك. سوف تقوم بتنفيذ الأوامر في موجه الأوامر مثل زملائك الذين يعملون على أنظمة OS X, Ubuntu, أو Windows, لكن موجه الأوامر في السحابة سيكون متصل بجهاز حاسوبي يعمل في مكان اخر تقوم بيئة التطوير المتكاملة السحابية بإعداده لك. Here are the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com). يمكنك اختيار إحدى بيئات التطوير المتكاملة السحابية، واتباع تعليمات بيئة التطوير المتكاملة السحابية.
+بيئة التطوير المتكاملة السحابية هي أداة توفر لك تحرير الأكواد البرمجية والوصول إلى جهاز كمبيوتر يعمل على شبكة الإنترنت حيث يمكنك تثبيت، وكتابة، وتشغيل البرامج. خلال مدة البرنامج التعليمي، بيئة التطوير المتكاملة السحابية ستكون بمثابة *الجهاز المحلي* الخاص بك. سوف تقوم بتنفيذ الأوامر في موجه الأوامر مثل زملائك الذين يعملون على أنظمة OS X, Ubuntu, أو Windows, لكن موجه الأوامر في السحابة سيكون متصل بجهاز حاسوبي يعمل في مكان اخر تقوم بيئة التطوير المتكاملة السحابية بإعداده لك. وإليك الإرشادات الخاصة ببيئات التطوير المتكاملة السحابية (PaizaCloud Cloud IDE, AWS Cloud9). يمكنك اختيار إحدى بيئات التطوير المتكاملة السحابية، واتباع تعليمات بيئة التطوير المتكاملة السحابية.
 
 #### بيئة التطوير المتكاملة السحابية PaizaCloud
 
@@ -43,11 +43,11 @@
 
 هذه المساحة السفلية تحتوي موجه الأوامر الخاص بك. يمكنك استخدام موجه الأوامر لإرسال التعليمات إلى الكمبيوتر البعيد في Cloud 9. يمكنك تغيير حجم تلك النافذة لجعلها أكبر قليلاً.
 
-#### Glitch.com Cloud IDE
+#### معرف Glitch.com السحابي
 
-1. Go to [Glitch.com](https://glitch.com/)
-2. Sign up for an account (https://glitch.com/signup) or use your GitHub account if you have one. (See GitHub instructions below.)
-3. Click *New Project* and choose *hello-webpage*
+1. انتقل إلى [Glitch.com](https://glitch.com/)
+2. قم بالتسجيل للحصول على حساب (https://glitch.com/signup) أو استخدم حساب GitHub الخاص بك إذا كان لديك حساب. (انظر تعليمات GitHub أدناه)
+3. انقر فوق *New Project* واختر *hello-webpage*
 4. Click on the Tools dropdown list (at the bottom left side of the window), then on Terminal button to open terminal tab with a prompt like this:
 
 {% filename %}Terminal{% endfilename %}
@@ -55,7 +55,7 @@
     app@name-of-your-glitch-project:~
     
 
-When using Glitch.com as your Cloud IDE, you don't have to create a virtual environment. Instead, create the following files manually:
+عند استخدام Glitch.com كقاعدة بيانات سحابية، لا تحتاج إلى إنشاء بيئة افتراضية. بدلاً من ذلك، قم بإنشاء الملفات التالية يدوياً:
 
 {% filename %}glitch.json{% endfilename %}
 
