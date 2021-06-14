@@ -32,19 +32,19 @@
 <!--sec data-title="Install Python: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **ملاحظة** قبل تثبيت Python على OS X، يجب التأكد من أن إعدادات Mac تسمح بتثبيت الحزم التي ليست من متجر التطبيق. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
+> **ملاحظة** قبل تثبيت Python على OS X، يجب التأكد من أن إعدادات Mac تسمح بتثبيت الحزم التي ليست من متجر التطبيق. انتقل إلى تفضيلات النظام (هو في مجلد التطبيقات)، انقر فوق "الأمان & الخصوصية"، ثم علامة التبويب "الجنرال". إذا تم تعيين "السماح للتطبيقات التي تم تنزيلها من:" إلى "Mac App Store،" قم بتغييره إلى "Mac App Store والمطورين المحددين."
 
-You need to go to the website https://www.python.org/downloads/mac-osx/ and download the latest Python installer:
+يجب عليك زيارة هذا الموقع وتحميل مثبت بايثون https://www.python.org/downloads/mac-osx/:
 
 * تحميل ملف *مثبت Ma c OS X 64-بت/32-بت * ،
-* Double click *python-{{ book.py_release }}-macosx10.9.pkg* to run the installer.
+* انقر نقراً مزدوجاً فوق *python-3.6.1-macosx10.6.pkg* لتشغيل المثبت.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
+من المحتمل جدا ان لديك نسخة بايثون مثبتة بالفعل ، للتحقق ادخل الأوامر التالية في وحدة التحكم:
 
 {% filename %}command-line{% endfilename %}
 
@@ -52,20 +52,20 @@ It is very likely that you already have Python installed out of the box. To chec
     Python {{ book.py_release }}
     
 
-If you have a different version of Python installed, at least {{ book.py_min_version }} (e.g. {{ book.py_min_release }}), then you don't have to upgrade. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
+إذا كان لديك نسخة مختلفة من Python مثبتة، على الأقل {{ book.py_min_version }} ( {{ book.py_min_release }}مثلاً)، فلن تحتاج إلى الترقية. إذا لم يكن لديك Python مثبت، أو إذا كنت تريد إصدار مختلف، فتحقق أولاً من توزيع لينكس الذي تستخدمه مع الأمر التالي:
 
 {% filename %}command-line{% endfilename %}
 
     $ تنبيه '^NAME=' /etc/os-release
     
 
-Afterwards, depending on the result, follow one of the following installation guides below this section.
+وبعد ذلك، ووفقا للنتيجة، اتبع أحد أدلة التثبيت التالية تحت هذا القسم.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-Type this command into your console:
+استخدم هذا الأمر في وحدة التحكم الخاصة بك:
 
 {% filename %}command-line{% endfilename %}
 
@@ -77,21 +77,21 @@ Type this command into your console:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Use this command in your console:
+استخدم هذا الأمر في وحدة التحكم الخاصة بك:
 
 {% filename %}command-line{% endfilename %}
 
     $ sudo dnf install python3
     
 
-If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use `yum` instead.
+إذا كنت تستخدم إصدار فيدورا قديم قد تحصل على خطأ لم يتم العثور على الأمر dnf. في هذه الحالة تحتاج إلى استخدام yum بدلاً من ذلك.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Use this command in your console:
+استخدم هذا الأمر في وحدة التحكم الخاصة بك:
 
 {% filename %}command-line{% endfilename %}
 
