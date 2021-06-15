@@ -12,7 +12,7 @@
 
 # جيت (Git)
 
-> **Note** If you already did the [installation steps](../installation/README.md), there's no need to do this again – you can skip to the next section and start creating your Git repository.
+> **ملاحظة** إذا كنت قمت بإجراء خطوات التثبيت سابقا، لا تحتاج للقيام بذلك مرة أخرى -يمكنك التخطي إلى الجزء التالي والبدء في إنشاء مستودع Git الخاص بك.
 
 {% include "/deploy/install_git.md" %}
 
