@@ -284,19 +284,19 @@ def post_new(request):
 
 ## التحقق من صحة النموذج
 
-Now, we will show you how cool Django forms are. A blog post needs to have `title` and `text` fields. In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
+الآن، سوف نريكم كيف أن أشكال جانغو رائعة. يجب أن تحتوي مشاركة المدونة على حقول `title` و `text`. في نموذج `Post` لدينا لم نقل أن هذه الحقول (على عكس `published_date` غير مطلوبة. لذلك جانغو، بشكل افتراضي، يتوقع أن يتم تعيينهم.
 
-Try to save the form without `title` and `text`. Guess what will happen!
+حاول حفظ النموذج بدون `title` و `text`. خمن ما سيحدث!
 
 ![Form validation](images/form_validation2.png)
 
-Django is taking care to validate that all the fields in our form are correct. Isn't it awesome?
+جانغو يحرص على التحقق من صحة جميع الحقول في شكلنا ان كانت صحيحة. أليس هذا رائع؟
 
 ## تحرير النموذج
 
-Now we know how to add a new post. But what if we want to edit an existing one? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
+الآن نحن نعرف كيفية إضافة مشاركة جديدة. ولكن ماذا لو أردنا تعديل واحدة موجودة بالفعل؟ هذا مشابه جدا لما قمنا به. لنقم بإنشاء بعض الأمور الهامة بسرعة. (إذا كنت لا تفهم شيئا، يجب أن تسأل المدرب الخاص بك أو تنظر في الفصول السابقة، لأننا غطينا جميع هذه الخطوات مسبقاً.)
 
-First, let's save the icon which represents the edit button. Download [pencil-fill.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/pencil-fill.svg) and save it to the location `blog/templates/blog/icons/`.
+أولا، دعونا نحفظ الرمز الذي يمثل زر التحرير. قم بتنزيل [pencil-fill.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/pencil-fill.svg) وحفظه في الموقع `blog/templates/blog/icons/`.
 
 Open `blog/templates/blog/post_detail.html` in the code editor and add the following code inside `article` element:
 
