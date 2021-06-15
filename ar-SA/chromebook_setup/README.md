@@ -1,5 +1,5 @@
 # إعداد جهاز كروم بوك
 
-> **Note** If you already worked through the [installation steps](../installation/README.md), no need to do this again – you can skip straight ahead to [Introduction to Python](../python_introduction/README.md).
+> **ملاحظة** اذا كنت قد مررت من هذه المرحلة من قبل ، لا تحتاج للقيام بذلك مرة أخرى--يمكنك تخطي هذه المرحلة والإنتقال إلى [مقدمة بايثون](../python_introduction/README.md).
 
 {% include "/chromebook_setup/instructions.md" %}
