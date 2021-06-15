@@ -154,13 +154,13 @@ def post_new(request):
 نحن بحاجة إلى إنشاء ملف `post_edit.html` في الدليل `blog/templates/blog`، وفتحه في محرر التعليمات البرمجية. لجعل النموذج يعمل نحن بحاجة إلى عدة أشياء:
 
 * علينا عرض الشكل. يمكننا أن نفعل ذلك عبر (على سبيل المثال{% raw %}`{{ form.as_p }}`{% endraw %}.
-* The line above needs to be wrapped with an HTML form element: `<form method="POST">...</form>`.
+* يجب تغليف السطر أعلاه مع عنصر نموذج HTML: `<form method="POST">...</form>`.
 * ونحن بحاجة إلى زر `Save`. ونحن نفعل ذلك مع زر HTML: `<button type="submit">Save</button>`.
 * وأخيراً، فقط بعد افتتاح العلامة `<form ...>` نحن بحاجة إلى إضافة {% raw %} `{% csrf_token %}`{% endraw %}. هذا أمر مهم جداً، لأنه يجعل النماذج الخاصة بك آمنة! إذا كنت قد نسيت هذا قليلاً، سيشكو جانغو عند محاولة حفظ النموذج:
 
 ![CSFR Forbidden page](images/csrf2.png)
 
-OK, so let's see how the HTML in `post_edit.html` should look:
+حسنًا، دعونا نرى كيف يجب أن تبدو HTML في `post_edit.html`:
 
 {% filename %}blog/templates/blog/post_edit.html{% endfilename %}
 
@@ -176,19 +176,19 @@ OK, so let's see how the HTML in `post_edit.html` should look:
 {% endblock %}
 ```
 
-Time to refresh! Yay! Your form is displayed!
+حان وقت التحديث! ياي! يتم عرض النموذج الخاص بك!
 
 ![New form](images/new_form2.png)
 
-But, wait a minute! When you type something in the `title` and `text` fields and try to save it, what will happen?
+ولكن انتظر لحظة! عندما تكتب شيئا في حقول `title` و `text` ومحاولة حفظه، ما الذي سيحدث؟
 
-Nothing! We are once again on the same page and our text is gone… and no new post is added. So what went wrong?
+لا شيء! نحن مرة أخرى في نفس الصفحة و النص الخاص بنا يذهب… و لم تتم إضافة أي مشاركة جديدة. إذاً ماذا خطأ؟
 
-The answer is: nothing. We need to do a little bit more work in our *view*.
+الجواب: لا شيء. نحن بحاجة إلى العمل أكثر قليلاً في *view*.
 
 ## حفظ الشكل
 
-Open `blog/views.py` once again in the code editor. Currently all we have in the `post_new` view is the following:
+افتح `blog/views.py` مرة أخرى في محرر التعليمات البرمجية. حاليا كل ما لدينا في العرض `post_new` هو التالي:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -198,7 +198,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-When we submit the form, we are brought back to the same view, but this time we have some more data in `request`, more specifically in `request.POST` (the naming has nothing to do with a blog "post"; it's to do with the fact that we're "posting" data). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? All the fields from the form are now in `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
+عندما نسلم الشكل، يتم أخذنا إلى نفس المكان، ولكن هذه المرة لدينا بيانات أكثر في `request`، وبشكل أكثر تحديداً في `request.POST` (التسمية ليس لها علاقة بمشاركات المدونة؛ إنها تتعلق بحقيقة أننا "ننشر" البيانات). تذكر كيف في ملف HTML ، تعريفنا `<form>` لديه المتغير `method="POST"`؟ جميع الحقول من النموذج الآن في `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
 
 So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. So we need to add a condition (we will use `if` for that):
 
