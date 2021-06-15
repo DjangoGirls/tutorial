@@ -198,9 +198,9 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-عندما نسلم الشكل، يتم أخذنا إلى نفس المكان، ولكن هذه المرة لدينا بيانات أكثر في `request`، وبشكل أكثر تحديداً في `request.POST` (التسمية ليس لها علاقة بمشاركات المدونة؛ إنها تتعلق بحقيقة أننا "ننشر" البيانات). تذكر كيف في ملف HTML ، تعريفنا `<form>` لديه المتغير `method="POST"`؟ جميع الحقول من النموذج الآن في `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
+عندما نسلم الشكل، يتم أخذنا إلى نفس المكان، ولكن هذه المرة لدينا بيانات أكثر في `request`، وبشكل أكثر تحديداً في `request.POST` (التسمية ليس لها علاقة بمشاركات المدونة؛ إنها تتعلق بحقيقة أننا "ننشر" البيانات). تذكر كيف في ملف HTML ، تعريفنا `<form>` لديه المتغير `method="POST"`؟ جميع الحقول من النموذج الآن في `request.POST`. لا يجب إعادة تسمية `POST` الى أي شيء آخر (القيمة الوحيدة الصالحة ل `method` هي`GET`، ولكن ليس لدينا وقت لشرح الفرق).
 
-So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. So we need to add a condition (we will use `if` for that):
+لذا في *view* الخاص بنا لدينا حالتين منفصلتين للتعامل معهما: أولا، عندما نصل إلى الصفحة لأول مرة ونريد نموذج فارغ، وثانيا، عندما نعود إلى *view* مع جميع بيانات النموذج التي كتبناها للتو. لذا نحن بحاجة إلى إضافة شرط (سنستخدم `if` لذلك):
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -211,7 +211,7 @@ else:
     form = PostForm()
 ```
 
-It's time to fill in the dots `[...]`. If `method` is `POST` then we want to construct the `PostForm` with data from the form, right? We will do that as follows:
+حان الوقت لملء النقاط `[...]`. إذا كانت الطريقة `` `POST` إذاً نريد بناء `PostForm` مع بيانات من النموذج، أليس كذلك؟ سوف نفعل ذلك على النحو التالي:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -219,9 +219,9 @@ It's time to fill in the dots `[...]`. If `method` is `POST` then we want to con
 form = PostForm(request.POST)
 ```
 
-The next thing is to check if the form is correct (all required fields are set and no incorrect values have been submitted). We do that with `form.is_valid()`.
+الشيء التالي هو التحقق مما إذا كان النموذج صحيح (تم تعيين جميع الحقول المطلوبة ولم يتم تقديم أية قيم غير صحيحة). ونحن نفعل ذلك عبر `form.is_valid()`.
 
-We check if the form is valid and if so, we can save it!
+نتحقق مما إذا كان النموذج صالح وإذا كان كذلك، يمكننا حفظه!
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -233,7 +233,7 @@ if form.is_valid():
     post.save()
 ```
 
-Basically, we have two things here: we save the form with `form.save` and we add an author (since there was no `author` field in the `PostForm` and this field is required). `commit=False` means that we don't want to save the `Post` model yet – we want to add the author first. Most of the time you will use `form.save()` without `commit=False`, but in this case, we need to supply it. `post.save()` will preserve changes (adding the author) and a new blog post is created!
+في الأساس، لدينا أمرين هنا: نحفظ النموذج مع `form.save` ونضيف مؤلف (بما انه لم يكن هناك مجال ل `author` في `PostForm` وهذا الحقل مطلوب). `commit=False` يعني أننا لا نريد حفظ نموذج `Post` بعد--نريد إضافة الكاتب أولاً. في غالب الوقت ستستخدم `form.save()` بدون `commit=False` ولكن في هذه الحالة، نحن بحاجة لتوريده. `post.save()` سوف يحافظ على التغييرات (إضافة المؤلف) ويتم إنشاء مشاركة مدونة جديدة!
 
 Finally, it would be awesome if we could immediately go to the `post_detail` page for our newly created blog post, right? To do that we need one more import:
 
