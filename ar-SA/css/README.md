@@ -180,7 +180,7 @@ h1 a, h2 a {
 
 كما ذكر أعلاه، CSS لديها مفهوم طبقات. هذه تسمح لك بتسمية جزء من التعليمات البرمجية ل HTML وتطبيق الأنماط فقط لهذا الجزء، دون التأثير على الأجزاء الأخرى. هذا يمكن ان يكون مفيد جدا! ربما يكون لديك اثنين من divs اللذان يقومان بشيء مختلف (مثل الهيدر او الموضوع الخاص بك). الكلآس يمكن اي يساعدك في جعلها تبدو مختلفة.
 
-Go ahead and name some parts of the HTML code. Replace the `header` that contains your header with the following:
+امضي قدماً وقم بتسمية بعض أجزاء من كود HTML. استبدل `header` الذي يحتوي على رأس الصفحة الخاص بك بما يلي:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -192,7 +192,7 @@ Go ahead and name some parts of the HTML code. Replace the `header` that contain
 </header>
 ```
 
-And now add a class `post` to your `article` containing a blog post.
+الان أضف Class `post` إلى `div` الذي يحتوي مقال مدونة.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
