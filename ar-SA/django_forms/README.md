@@ -102,7 +102,7 @@ class PostForm(forms.ModelForm):
 
 ## عنوان الموقع URL
 
-We open `blog/urls.py` in the code editor and add a line:
+نقوم بفتح `blog/urls.py` في محرر التعليمات البرمجية وإضافة سطر:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -110,7 +110,7 @@ We open `blog/urls.py` in the code editor and add a line:
 path('post/new/', views.post_new, name='post_new'),
 ```
 
-And the final code will look like this:
+وسوف تبدو التعليمات البرمجية النهائية هكذا:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -125,11 +125,11 @@ urlpatterns = [
 ]
 ```
 
-After refreshing the site, we see an `AttributeError`, since we don't have the `post_new` view implemented. Let's add it right now.
+بعد تحديث الموقع، نرى `AttributeError`، حيث أننا ليس لدينا `post_new` طريقة عرض منفذة. دعونا نضيفها الآن.
 
 ## عرض post_new
 
-Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
+حان الوقت لفتح `blog/views. y` الملف في محرر التعليمات البرمجية وإضافة الأسطر التالية مع بقية صفوف `from`:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -137,7 +137,7 @@ Time to open the `blog/views.py` file in the code editor and add the following l
 from .forms import PostForm
 ```
 
-And then our *view*:
+عندها *view* الخاصة بنا:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -147,11 +147,11 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-To create a new `Post` form, we need to call `PostForm()` and pass it to the template. We will go back to this *view*, but for now, let's quickly create a template for the form.
+لإنشاء نموذج `Post` جديد، نحن بحاجة إلى استدعاء `PostForm()` وتمريرها إلى القالب. سنعود لهذا *view* لكن الأن دعونا ننشئ شكل نمودج سريعا.
 
 ## القالب
 
-We need to create a file `post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
+نحن بحاجة إلى إنشاء ملف `post_edit.html` في الدليل `blog/templates/blog`، وفتحه في محرر التعليمات البرمجية. لجعل النموذج يعمل نحن بحاجة إلى عدة أشياء:
 
 * علينا عرض الشكل. يمكننا أن نفعل ذلك عبر (على سبيل المثال{% raw %}`{{ form.as_p }}`{% endraw %}.
 * The line above needs to be wrapped with an HTML form element: `<form method="POST">...</form>`.
