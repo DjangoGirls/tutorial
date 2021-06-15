@@ -48,7 +48,7 @@ class PostForm(forms.ModelForm):
 
 > ملاحظة: لتنزيل صورة SVG، قم بفتح قائمة السياق على الرابط (عادة بالنقر على اليمين عليه) واختر "حفظ الرابط ك". في مربع الحوار الذي يسألك أين تحفظ الملف، انتقل إلى دليل `djangogirl` لمشروع جانغو الخاص بك. وفي ذلك إلى الدليل الفرعي `blog/templates/blog/icons`، وحفظ الملف هناك.
 
-حان الوقت لفتح `blog/templates/blog/base.html` في محرر التعليمات البرمجية. الآن يمكننا استخدام ملف الأيقونة هذا داخل قالب القاعدة كما يلي. In the `div` element inside `header` section, we will add a link before the `h1` element:
+حان الوقت لفتح `blog/templates/blog/base.html` في محرر التعليمات البرمجية. الآن يمكننا استخدام ملف الأيقونة هذا داخل قالب القاعدة كما يلي. في عنصر `div` داخل قسم `header` ، سنضيف رابط قبل عنصر `h1`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -58,11 +58,11 @@ class PostForm(forms.ModelForm):
 </a>
 ```
 
-Note that we want to call our new view `post_new`. The [SVG icon](https://icons.getbootstrap.com/icons/file-earmark-plus/) is provided by the [Bootstrap Icons](https://icons.getbootstrap.com/) and it will display a page icon with plus sign. We use a Django template directive called `include`. This will inject the file's content into the Django template. The web browser knows how to handle this type of content without any further processing.
+لاحظ أننا نريد تسمية العرض الجديد `post_new`. الـ SVG icon [](https://icons.getbootstrap.com/icons/file-earmark-plus/) مقدم من [Bootstrap Icons](https://icons.getbootstrap.com/) وسوف يعرض أيقونة صفحة مع علامة زائد. نحن نستخدم موجه قالب جانغو يسمى `include`. سيؤدي هذا إلى حقن محتوى الملف في قالب جانغو. متصفح الويب يعرف كيفية التعامل مع هذا النوع من المحتوى دون أي معالجة أخرى.
 
-> You can download all the Bootstrap icons [here](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip). Unzip the file and copy all the SVG image files into a new folder inside `blog/templates/blog/` called `icons`. That way you can access an icon like `pencil-fill.svg` using the file path `blog/templates/blog/icons/pencil-fill.svg`
+> يمكنك تنزيل جميع أيقونات Bootstrap [here](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip). فك ضغط الملف وانسخ جميع ملفات صور SVG في مجلد جديد داخل `blog/templates/blog/` يسمى `icons`. بهذه الطريقة يمكنك الوصول إلى أيقونة مثل `pencil-fill.svg` باستخدام مسار الملف `blog/templates/blog/icons/pencil-fill.svg`
 
-After editing the line, your HTML file should now look like this:
+بعد تعديل السطر ، يجب أن يبدو ملف HTML الخاص بك مثل هذا:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -95,9 +95,10 @@ After editing the line, your HTML file should now look like this:
         </main>
     </body>
 </html>
+
 ```
 
-After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
+بعد حفظ و تحديث الصفحة : http://127.0.0.1:8000 سوف ترى خطأ مألوف! `NoReverseMatch` هل هذا ما حدث معك/معكي؟ جيد !!
 
 ## عنوان الموقع URL
 
