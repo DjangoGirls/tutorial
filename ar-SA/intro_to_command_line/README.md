@@ -350,7 +350,7 @@ OS X و Linux لديهما أمر `man` الذي يعطيك المساعدة ف�
 
 حان الوقت الآن لحذف دليل `practice`:
 
-> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
+> **انتباه**: حذف الملفات بإستخدام `del`، `rmdir` أو `rm` غير قابل للإسترداد، مما يعني أن *الملفات المحذوفة ستزول للأبد*! لذا كن حدرا جدا مع هذه الأوامر.
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
@@ -371,7 +371,7 @@ OS X و Linux لديهما أمر `man` الذي يعطيك المساعدة ف�
 
 <!--endsec-->
 
-Done! To be sure it's actually deleted, let's check it:
+تم! للتأكد دعونا نتحقق من انك حدفته فعليا:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -391,9 +391,9 @@ Done! To be sure it's actually deleted, let's check it:
 
 <!--endsec-->
 
-### Exit
+### الخروج
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+هذا كل شيء الأن! يمكنك إغلاق سطر الأوامر الآن بأمان. دعونا نفعل ذلك بطريقة القراصنة، حسناً؟ :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -413,29 +413,29 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--endsec-->
 
-Cool, huh? :)
+رائع، هاه؟ :)
 
 ## الملخص
 
-Here is a summary of some useful commands:
+هنا ملخص لبعض الأوامر المفيدة:
 
-| الأوامر (في Windows) | الأوامر في (ماك/لينكس) | الوصف                  | أمثلة                                              |
-| -------------------- | ---------------------- | ---------------------- | -------------------------------------------------- |
-| exit                 | exit                   | أغلق النافذة           | **exit**                                           |
-| cd                   | cd                     | تغيير الدليل           | **cd test**                                        |
-| cd                   | pwd                    | إظهار الدليل الحالي    | **cd** (Windows) o **pwd** (Mac OS / Linux)        |
-| dir                  | ls                     | قائمة الدلائل/ملفات    | **dir**                                            |
-| copy                 | cp                     | نسخ ملف                | **copy c:\test\test.txt c:\windows\test.txt**  |
-| move                 | mv                     | نقل الملف              | **move c:\test\test.txt c:\windows\test.txt**  |
-| mkdir                | mkdir                  | إنشاء دليل جديد        | **mkdir testdirectory**                            |
-| rmdir (or del)       | rm                     | حذف الملف              | **del c:\test\test.txt**                         |
-| rmdir /S             | rm -r                  | حذف الدليل             | **rm -r testdirectory**                            |
-| [CMD] /?             | man [CMD]              | get help for a command | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
+| الأوامر (في Windows) | الأوامر في (ماك/لينكس) | الوصف                 | أمثلة                                              |
+| -------------------- | ---------------------- | --------------------- | -------------------------------------------------- |
+| exit                 | exit                   | أغلق النافذة          | **exit**                                           |
+| cd                   | cd                     | تغيير الدليل          | **cd test**                                        |
+| cd                   | pwd                    | إظهار الدليل الحالي   | **cd** (Windows) o **pwd** (Mac OS / Linux)        |
+| dir                  | ls                     | قائمة الدلائل/ملفات   | **dir**                                            |
+| copy                 | cp                     | نسخ ملف               | **copy c:\test\test.txt c:\windows\test.txt**  |
+| move                 | mv                     | نقل الملف             | **move c:\test\test.txt c:\windows\test.txt**  |
+| mkdir                | mkdir                  | إنشاء دليل جديد       | **mkdir testdirectory**                            |
+| rmdir (or del)       | rm                     | حذف الملف             | **del c:\test\test.txt**                         |
+| rmdir /S             | rm -r                  | حذف الدليل            | **rm -r testdirectory**                            |
+| [CMD] /?             | man [CMD]              | احصل على مساعدة للأمر | **cd /?** (Windows) أو **man cd** (Mac OS / Linux) |
 
-These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
+هذه فقط عدد قليل جداً من الأوامر التي يمكنك تشغيلها في سطر الأوامر الخاصة بك، ولكنك لن تستخدم أي شيء اكثر من ذلك اليوم.
 
-If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+إذا كنت فضولياً، [ss64.com](http://ss64.com) يحتوي على مرجع كامل للأوامر لجميع أنظمة التشغيل.
 
 ## مستعد ؟
 
-Let's dive into Python!
+دعونا نغوص في بايثون!
