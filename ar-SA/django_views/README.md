@@ -8,7 +8,7 @@ Views توضع في الملف `views.py`. وسوف نضيف *views* الخاص�
 
 ## blog/views.py
 
-OK, let's open up this file in our code editor and see what's in there:
+حسنًا، دعونا نفتح هذا الملف في محرر التعليمات البرمجية الخاص بنا ونرى ما هو هناك:
 
 {% filename %}blog/views.py{% endfilename %}
 
