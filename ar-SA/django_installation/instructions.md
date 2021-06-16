@@ -172,9 +172,9 @@ data-collapse=true ces-->
 
 ### تثبيت الحزم مع المتطلبات
 
-A requirements file keeps a list of dependencies to be installed using `pip install`:
+ملف المتطلبات يحتفظ بقائمة من التبعيات ليتم تثبيتها باستخدام `pip install`:
 
-First create a `requirements.txt` file inside of the `djangogirls/` folder, using the code editor that you installed earlier. You do this by opening a new file in the code editor and then saving it as `requirements.txt` in the `djangogirls/` folder. Your directory will look like this:
+أولاً قم بإنشاء ملف `requirements.txt` داخل مجلد `djangogirls` باستخدام محرر التعليمات البرمجية الذي قمت بتثبيته سابقاً. تفعل ذلك عن طريق فتح ملف جديد في محرر التعليمات البرمجية وحفظه بإسم `requirements.txt` في مجلد `djangogirls/` سيبدو الدليل الخاص بك هكذا:
 
     djangogirls
     ├── myvenv
@@ -182,14 +182,14 @@ First create a `requirements.txt` file inside of the `djangogirls/` folder, usin
     └───requirements.txt
     
 
-In your `djangogirls/requirements.txt` file you should add the following text:
+في ملف `djangogirls/requirements.txt` يجب عليك إضافة النص التالي:
 
 {% filename %}djangogirls/requirements.txt{% endfilename %}
 
     Django~={{ book.django_version }}
     
 
-Now, run `pip install -r requirements.txt` to install Django.
+الآن، قم بتشغيل `pip install -r requirements.txt` لتثبيت جانغو.
 
 {% filename %}command-line{% endfilename %}
 
@@ -203,7 +203,7 @@ Now, run `pip install -r requirements.txt` to install Django.
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
+> إذا كنت تحصل على خطأ عند استدعاء برنامج pip على منصة Windows، الرجاء التحقق إذا كان اسم مسار المشروع الخاص بك يحتوي على مسافات أو علامات نطقية أو أحرف خاصة (على سبيل المثال، `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
 
 <!--endsec-->
 
