@@ -365,7 +365,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-يبدو هذا بالضبط تقريبا نفس عرض `post_new`، أليس كذلك؟ ولكن ليس تماما. لسبب واحد، نحن نمرر عامل `pk` إضافي من `urls`. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
+يبدو هذا بالضبط تقريبا نفس عرض `post_new`، أليس كذلك؟ ولكن ليس تماما. لسبب واحد، نحن نمرر عامل `pk` إضافي من `urls`. بعد ذلك، نحصل على نموذج `Post` الذي نريد تعديله مع `get_object_or_404(Post, pk=pk)` وثم عندما نقوم بإنشاء نموذج، فإننا نمرر هذا المنشور كـ `instance`، كلاهما عندما نحفظ النموذج…
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -373,7 +373,7 @@ def post_edit(request, pk):
 form = PostForm(request.POST, instance=post)
 ```
 
-…and when we've just opened a form with this post to edit:
+…وعندما نكون قد فتحنا للتو نموذج مع هذا المنشور للتحرير:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -381,25 +381,25 @@ form = PostForm(request.POST, instance=post)
 form = PostForm(instance=post)
 ```
 
-OK, let's test if it works! Let's go to the `post_detail` page. There should be an edit button in the top-right corner:
+حسنا، دعونا نختبر إذا كان يعمل! لننتقل إلى صفحة `post_detail`. يجب أن يكون هناك زر تعديل في الركن العلوي الأيسر:
 
 ![Edit button](images/edit_button2.png)
 
-When you click it you will see the form with our blog post:
+عند النقر عليه سترى النموذج مع مشاركة مدونتنا:
 
 ![Edit form](images/edit_form2.png)
 
-Feel free to change the title or the text and save the changes!
+لا تتردد في تغيير العنوان أو النص وحفظ التغييرات!
 
-Congratulations! Your application is getting more and more complete!
+تهانينا! أصبح تطبيقك أكثر وأكثر اكتمالاً!
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.2/topics/forms/
+إذا كنت بحاجة إلى مزيد من المعلومات حول نماذج جانغو، فيجب عليك قراءة الوثائق: https://docs.djangoproject.com/en/2.2/topics/forms/
 
 ## الحماية
 
-Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
+التمكن من إنشاء مشاركات جديدة بالنقر على رابط رائع! ولكن في الوقت الراهن، أي شخص يقوم بزيارة موقع الويب الخاص بك سوف يكون قادر على انشاء مشاركة جديدة، وهذا شيء ربما لا تريده. دعونا تجعل الزر يظهر لك و ليس لأي شخص آخر.
 
-Open `blog/templates/blog/base.html` in the code editor, find our `div` inside `header` and the anchor element you put in there earlier. It should look like this:
+افتح `blog/templates/blog/base.html` في محرر التعليمات البرمجية، ابحث عن `div` في داخل `header` وعلامة المرساة التي وضعتها سابقاً. يجب أن تبدو هكذا:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -409,7 +409,7 @@ Open `blog/templates/blog/base.html` in the code editor, find our `div` inside `
 </a>
 ```
 
-We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! Change the `<a>` element to look like this:
+سوف نضيف علامة `{% if %}` أخرى إلى هذا، والذي سيجعل الرابط يظهر فقط للمستخدمين الذين تم تسجيل دخولهم كمشرفين. الآن، إنه أنت فقط! قم بتغيير عنصر `<a>` ليبدو هكذا:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -421,7 +421,7 @@ We're going to add another `{% if %}` tag to this, which will make the link show
 {% endif %}
 ```
 
-This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. This doesn't protect the creation of new posts completely, but it's a good first step. We'll cover more security in the extension lessons.
+سيؤدي هذا `{% if %}` إلى إرسال الرابط إلى المتصفح فقط إذا كان المستخدم الذي يطلب الصفحة مسجل الدخول. هذا لا يحمي إنشاء مشاركات جديدة تماماً، ولكنها خطوة أولى جيدة. سنقوم بتغطية المزيد من الأمان في دروس الإضافة.
 
 Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
 
