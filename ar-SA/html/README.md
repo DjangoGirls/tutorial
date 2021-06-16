@@ -23,7 +23,7 @@ HTML هو رمز يتم تفسيره بواسطة متصفح الويب - مثل
         └───blog
     
 
-(You might wonder why we need two directories both called `blog` – as you will discover later, this is a useful naming convention that makes life easier when things start to get more complicated.)
+(قد تتساءل لماذا نحتاج إلى دليلي `blog` - كما سوف تكتشف في وقت لاحق، وهذا هو مجرد تسمية اصطلاح مفيدة تجعل الحياة أسهل عندما تبدأ الأمور أكثر تعقيدا)
 
 والآن قم بإنشاء ملف `post_list.html` (فقط اتركه فارغاً للآن) داخل دليل `blog/templates/blog`.
 
@@ -33,9 +33,9 @@ HTML هو رمز يتم تفسيره بواسطة متصفح الويب - مثل
 
 ![الرقم 11.1](images/step1.png)
 
-No error anymore! Congratulations! :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
+لم يعد هناك خطأ! تهانينا! :) ومع ذلك، لا يقوم موقعك بنشر أي شيء إلا صفحة فارغة، لأن قالبك فارغ أيضا. نحن بحاجة إلى إصلاح ذلك.
 
-Open the new file in the code editor, and add the following:
+افتح الملف الجديد في محرر التعليمات البرمجية، وأضف ما يلي:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -53,11 +53,11 @@ Open the new file in the code editor, and add the following:
 
 ![الرقم 11.2](images/step3.png)
 
-It worked. Nice work there! :)
+لقد نجحت. عمل جيد هناك! :)
 
-* The line `<!DOCTYPE html>` is not a HTML tag. It only declares the document type. Here, it informs the browser that document type is [HTML5](https://html.spec.whatwg.org/#the-doctype). This is always the beginning of any HTML5 file.
-* The most basic tag, `<html>`, is always the beginning of html content and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
-* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
+* السطر `<!DOCTYPE html>` ليس علامة HTML. هي تعلن فقط نوع المستند. هنا، إنها تبلغ المتصفح بأن نوع المستند هو [HTML5](https://html.spec.whatwg.org/#the-doctype). هذا هو دائما بداية أي ملف HTML5.
+* إن العلامة الأساسية، `<html>`، هي دائما بداية أي صفحة ويب و `</html>` هي دائما النهاية. كما ترون، المحتوى الكامل للموقع يقع بين علامة البداية `<html>` وعلامة الإغلاق `</html>`
+* `<p>`علامة لعناصر الفقرة؛ `</p>` يغلق كل فقرة
 
 ## الرأس والجسم
 
@@ -112,14 +112,14 @@ It worked. Nice work there! :)
 * `<a href="https://djangogirls.org">link</a>` إنشاء رابط
 * `<ul><li>first item</li><li>second item</li></ul>` أنشئ قائمة مثل هذه!
 * `<div></div>` تعرف جزء من الصفحة
-* `<nav></nav>` defines a set of navigation links
-* `<article></article>` specifies independent, self-contained content
-* `<section></section>` defines a section in a document
-* `<header></header>` specifies a header for a document or section
-* `<main></main>` specifies the main content of a document
-* `<aside></aside>` defines some content aside from the content it is placed in (like a sidebar)
-* `<footer></footer>` defines a footer for a document or section
-* `<time></time>` defines a specific time (or datetime)
+* `<nav></nav>` يحدد مجموعة من روابط التنقل
+* `<article></article>` يحدد محتوى مستقل ومحتفظ بذاته
+* `<section></section>` يحدد القسم في مستند
+* `<header></header>` يحدد رأس المستند أو القسم
+* `<main></main>` يحدد المحتوى الرئيسي للمستند
+* `<aside></aside>` يحدد بعض المحتوى بعيداً عن المحتوى الذي يتم وضعه فيه (مثل الشريط الجانبي)
+* `<footer></footer>` يحدد تذييل المستند أو المقطع
+* `<time></time>` يحدد الوقت المحدد (أو التاريخ والوقت)
 
 هنا مثال لقالب كامل انسخه والصقه `blog/templates/blog/post_list.html`:
 
