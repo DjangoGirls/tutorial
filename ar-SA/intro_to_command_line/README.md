@@ -54,11 +54,11 @@
 
 الجزء الذي يصل إلى ويحتوي على `$` أو `>` يسمى *موجه سطر الأوامر*، أو *الموجه* بإختصار. إنه يطالبك بإدخال شيء هناك.
 
-In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
+في البرنامج التعليمي، عندما نريد منك كتابة أمر ما، سنقوم بتضمين `$` أو `>`، وأحيانا أكثر إلى اليسار. تجاهل الجزء الأيسر واكتب فقط في الأمر، الذي يبدأ بعد الموجه.
 
 ## الأمر الأول الخاص بك (ياي!)
 
-Let's start by typing this command:
+دعونا نبدأ بكتابة هذا الأمر:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -78,7 +78,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-And then hit `enter`. This is our result:
+ثم اضغط على `enter`. هذه هي النتيجة لدينا:
 
 {% filename %}command-line{% endfilename %}
 
@@ -86,17 +86,17 @@ And then hit `enter`. This is our result:
     olasitarska
     
 
-As you can see, the computer has just printed your username. Neat, huh? :)
+كما ترون، الكمبيوتر قد طبع اسم المستخدم الخاص بك. أنيق، هاه؟ :)
 
-> Try to type each command; do not copy-paste. You'll remember more this way!
+> حاول كتابة كل أمر؛ لا تنسخ وتلصق. سوف تتذكر أكثر بهذه الطريقة!
 
 ## الأساسيات
 
-Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
+كل نظام تشغيل يحتوي على مجموعة مختلفة قليلاً من أوامر سطر الأوامر، لذا تأكد من اتباع التعليمات لنظام التشغيل الخاص بك. دعونا نحاول هذا،هيا بنا؟
 
 ### الدليل الحالي
 
-It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
+سيكون من الجميل أن نعرف أين نحن الآن، اليس كذالك؟ لنرى. اكتب هذا الأمر وإضغط `enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -106,7 +106,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     /Users/olasitarska
     
 
-> Note: 'pwd' stands for 'print working directory'.
+> ملاحظة: 'pwd' تعني 'طباعة دليل العمل'.
 
 <!--endsec-->
 
@@ -118,21 +118,21 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     C:\Users\olasitarska
     
 
-> Note: 'cd' stands for 'change directory'. With PowerShell you can use pwd just like on Linux or Mac OS X.
+> ملاحظة: 'cd' تعني 'تغيير الدليل'. مع PowerShell يمكنك استخدام pwd تماما مثل Linux أو Mac OS X.
 
 <!--endsec-->
 
-You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
+ربما سترى شيئا مشابها على الجهاز الخاص بك. عندما تقوم بفتح سطر الأوامر تبدأ عادة في الدليل الرئيسي للمستخدم الخاص بك.
 
 * * *
 
-### Learn more about a command
+### معرفة المزيد حول الأمر
 
-Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
+العديد من الأوامر التي يمكنك كتابتها في موجه الأوامر لها مساعدة مدمجة يمكنك عرضها وقراءتها! على سبيل المثال، لمعرفة المزيد عن أمر الدليل الحالي:
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X and Linux have a `man` command, which gives you help on commands. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
+OS X و Linux لديهما أمر `man` الذي يعطيك المساعدة في الأوامر. جرب `man pwd` وشاهد ما يقوله، أو ضع `man` قبل أوامر أخرى لمشاهدة مساعدتهم. ناتج `man` هو عادة صفحة Use the space bar to move to the next page, and `q` to quit looking at the help.
 
 <!--endsec-->
 
