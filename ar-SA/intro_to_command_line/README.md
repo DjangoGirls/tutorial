@@ -16,17 +16,17 @@
 
 ## إفتح واجهة سطر الأوامر
 
-To start some experiments we need to open our command-line interface first.
+لبدء بعض التجارب نحن بحاجة إلى فتح واجهة سطر الأوامر لدينا أولاً.
 
 {% include "/intro_to_command_line/open_instructions.md" %}
 
 ## موجه
 
-You now should see a white or black window that is waiting for your commands.
+يجب أن تشاهد الآن نافذة بيضاء أو سوداء تنتظر الأوامر الخاصه بك.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see a `$`, like this:
+إذا كنت على Mac أو Linux، ربما ترى `$`، مثل هذا:
 
 {% filename %}command-line{% endfilename %}
 
@@ -37,22 +37,22 @@ If you're on Mac or Linux, you probably see a `$`, like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-On Windows, you probably see a `>`, like this:
+على Windows، ربما ترى `>`، مثل هذا:
 
 {% filename %}command-line{% endfilename %}
 
     >
     
 
-Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+ألقي نظرة على قسم لينكس أعلاه مباشرة -- سترى شيئا مثل هذا عندما تصل إلى PythonAnywhere لاحقا في البرنامج التعليمي.
 
 <!--endsec-->
 
-Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
+سيتم إرفاق كل أمر مسبقاً بواسطة `$` أو `>` ومسافة واحدة، ولكن يجب ألا تكتبها. الكمبيوتر الخاص بك سوف يفعله من أجلك. :)
 
-> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
+> ملاحظة صغيرة: في حالتك قد يكون هناك شيء مثل `C:\Users\ola>` أو `Olas-MacBook-Air:~ ola$` قبل علامة الطلب، وهذا هو 100% على ما يرام.
 
-The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
+الجزء الذي يصل إلى ويحتوي على `$` أو `>` يسمى *موجه سطر الأوامر*، أو *الموجه* بإختصار. إنه يطالبك بإدخال شيء هناك.
 
 In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
 
