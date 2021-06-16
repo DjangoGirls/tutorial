@@ -249,12 +249,12 @@ DATABASES = {
 
 تهانينا! لقد قمت بإنشاء موقعك الأول وتشغيله باستخدام خادم ويب! أليس هذا رائعاً؟
 
-![Install worked!](images/install_worked.png)
+![تم التثبيت بنجاح!](images/install_worked.png)
 
-لاحظ أن نافذة الأوامر يمكنها تشغيل شيء واحد فقط في كل مرة، وأن نافذة الأوامر التي فتحتها في وقت سابق تقوم بتشغيل خادم الويب. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
+لاحظ أن نافذة الأوامر يمكنها تشغيل شيء واحد فقط في كل مرة، وأن نافذة الأوامر التي فتحتها في وقت سابق تقوم بتشغيل خادم الويب. طالما أن خادم الويب يعمل وينتظر طلبات إضافية واردة ، ستقبل المحطة الطرفية نصا جديدا ولكنها لن تنفذ أوامر جديدة.
 
 > لقد استعرضنا كيف تعمل خادمات الويب في الفصل **How the Internet works**.
 
-To type additional commands while the web server is running, open a new terminal window and activate your virtualenv -- to review instructions on how to open a second terminal window, see [Introduction to the command line](../intro_to_command_line/README.md). To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
+لكتابة أوامر إضافية أثناء تشغيل خادم الويب، قم بفتح نافذة طرفية جديدة وتفعيل virtualenv الخاصة بك -- لمراجعة التعليمات حول كيفية فتح نافذة طرفية ثانية، انظر [Introduction to the command line](../intro_to_command_line/README.md). لإيقاف خادم الويب، قم بالتبديل مرة أخرى إلى النافذة التي يعمل فيها واضغط على CTRL+C - مفاتيح التحكم و C معا (على ويندوز، قد تضطر إلى الضغط على Ctrl+Break).
 
-Ready for the next step? It's time to create some content!
+مستعد للخطوة التالية؟ لقد حان الوقت لإنشاء بعض المحتوى!
