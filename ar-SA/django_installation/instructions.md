@@ -203,14 +203,14 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> إذا كنت تحصل على خطأ عند استدعاء برنامج pip على منصة Windows، الرجاء التحقق إذا كان اسم مسار المشروع الخاص بك يحتوي على مسافات أو علامات نطقية أو أحرف خاصة (على سبيل المثال، `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
+> إذا كنت تحصل على خطأ عند استدعاء برنامج pip على منصة Windows، الرجاء التحقق إذا كان اسم مسار المشروع الخاص بك يحتوي على مسافات أو علامات نطقية أو أحرف خاصة (على سبيل المثال، `C:\Users\User Name\djangogirls`). إذا كان كذالك، يرجى التفكير في استخدام مكان آخر دون مسافات، علامات نطقية أو أحرف خاصة (اقتراح: `C:\djangogirls`). أنشئ virtualenv جديدة في الدليل الجديد، ثم إحذف القديمة وحاول تنفيذ الأمر أعلاه مرة أخرى. (نقل دليل virtualenv لن يعمل لأن virtualenv يستخدم مسارات مطلقة.)
 
 <!--endsec-->
 
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
+> قد يجمد سطر الأوامر الخاص بك بعد أن تحاول تثبيت جانغو. إذا حدث ذلك، فبدلا من استخدام الأمر أعلاه:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -222,8 +222,8 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
+> إذا كنت تحصل على خطأ عند استدعاء برنامج pip على أوبونتو 12.04 الرجاء تشغيل `python -m pip install -U --force-reinstall pip` لإصلاح تثبيت برنامج pip في virtualenv.
 
 <!--endsec-->
 
-That's it! You're now (finally) ready to create a Django application!
+هذا كل شيء! أنت الآن على استعداد لإنشاء تطبيق جانغو (أخيرا)!
