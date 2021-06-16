@@ -26,7 +26,7 @@ QuerySet هو، في جوهره، قائمة الكائنات من نموذج م
 >>>
 ```
 
-You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too.
+أنت الآن في وحدة التحكم التفاعلية لجانغو. إنها تماماً مثل موجه بايثون، ولكن مع بعض سحر جانغو الإضافي. :) يمكنك استخدام جميع أوامر بايثون هنا أيضاً.
 
 ### كل الكائنات
 
