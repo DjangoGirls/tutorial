@@ -78,9 +78,9 @@ from django.urls import path
 from . import views
 ```
 
-Here we're importing Django's function `path` and all of our `views` from the `blog` application. (We don't have any yet, but we will get to that in a minute!)
+نحن هنا نستورد وظائف جانغو `path` وجميع الـ `views` من تطبيق الـ `blog`. (ليس لدينا أي شي حتى الآن، ولكننا سنصل إلى ذلك في دقيقة!)
 
-After that, we can add our first URL pattern:
+بعد ذلك، يمكننا إضافة أول نمط URL لدينا:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -90,11 +90,11 @@ urlpatterns = [
 ]
 ```
 
-As you can see, we're now assigning a `view` called `post_list` to the root URL. This URL pattern will match an empty string and the Django URL resolver will ignore the domain name (i.e., http://127.0.0.1:8000/) that prefixes the full URL path. This pattern will tell Django that `views.post_list` is the right place to go if someone enters your website at the 'http://127.0.0.1:8000/' address.
+كما ترون، نحن الآن نقوم بتعيين `view` يسمى `post_list` لعنوان URL الجذر. سيطابق نمط الرابط هذا سلسلة فارغة وسيتجاهل محلل URL جانغو اسم النطاق (i. ., http://127.0.0.1:8000/) الذي يبادئ مسار الرابط الكامل. سيخبر هذا النمط جانغو أن `views.post_list` هو المكان المناسب للذهاب إليه إذا دخل شخص ما موقعك على الويب على العنوان "http://127.0.0.1:8000/".
 
-The last part, `name='post_list'`, is the name of the URL that will be used to identify the view. This can be the same as the name of the view but it can also be something completely different. We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
+الجزء الأخير، `name='post_list'`, هو اسم عنوان URL الذي سيتم استخدامه لتحديد طريقة العرض. وهذا يمكن أن يكون نفس اسم العرض ولكن أيضا يمكن أن يكون شيئا مختلفاً تماما. سنستخدم عناوين URLs المسماة لاحقا في المشروع، لذلك من المهم تسمية كل عنوان URL في التطبيق. يجب أن نحاول أيضا الحفاظ على أسماء عناوين URL فريدة وسهلة التذكر.
 
-If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'web page not available' message. This is because the server (remember typing `runserver`?) is no longer running. Take a look at your server console window to find out why.
+إذا حاولت زيارة http://127.0.0.1:8000/ الآن، ستجد نوعا من رسائل الخطأ "صفحة ويب غير متوفرة". وذلك لأن الخادم (تذكر كتابة `runserver`?) لم يعد قيد التشغيل. Take a look at your server console window to find out why.
 
 ![Error](images/error1.png)
 
