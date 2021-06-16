@@ -49,9 +49,9 @@ urlpatterns = [
 
 نريد أيضا الاحتفاظ بالملف `mysite/urls.py` نظيف، حيث أننا سوف نسترد عناوين Url من تطبيق `blog` لدينا إلى الملف الرئيسي `mysite/urls.py`.
 
-امضي قدما ، واضف السطر الذي سيسترد `blog.urls`. You will also need to change the `from django.urls…` line because we are using the `include` function here, so you will need to add that import to the line.
+امضي قدما ، واضف السطر الذي سيسترد `blog.urls`. ستحتاج أيضاً إلى تغيير السطر `from django.urls…` لأننا نستخدم الدالة `include` هنا، لذا ستحتاج إلى إضافة ذلك الاستيراد إلى السطر.
 
-Your `mysite/urls.py` file should now look like this:
+ملف `mysite/urls.py` الخاص بك يجب أن يبدو مثل هذا:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -65,11 +65,11 @@ urlpatterns = [
 ]
 ```
 
-Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and looks for further instructions there.
+جانغو سيقوم الآن بإعادة توجيه كل ما يأتي إلى 'http://127.0.0.1:8000/' إلى `blog.urls` والبحث عن المزيد من التعليمات هناك.
 
 ## blog.urls
 
-Create a new empty file named `urls.py` in the `blog` directory, and open it in the code editor. All right! Add these first two lines:
+قم بإنشاء ملف فارغ جديد يسمى `urls.py` في الدليل `blog`، وقم بفتحه في محرر الكود. حسنًا! أضف هذين السطرين الأوليين:
 
 {% filename %}blog/urls.py{% endfilename %}
 
