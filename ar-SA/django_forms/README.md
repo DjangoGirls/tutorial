@@ -423,9 +423,9 @@ form = PostForm(instance=post)
 
 سيؤدي هذا `{% if %}` إلى إرسال الرابط إلى المتصفح فقط إذا كان المستخدم الذي يطلب الصفحة مسجل الدخول. هذا لا يحمي إنشاء مشاركات جديدة تماماً، ولكنها خطوة أولى جيدة. سنقوم بتغطية المزيد من الأمان في دروس الإضافة.
 
-Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
+تذكر رمز التحرير الذي أضفناه للتو إلى صفحة التفاصيل؟ نحن أيضا نريد إضافة نفس التغيير هناك، لذلك لن يتمكن الأشخاص الآخرون من تحرير المشاركات الموجودة.
 
-Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
+افتح `blog/templates/blog/post_detail.html` في محرر التعليمات البرمجية وابحث عن هذا السطر:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -435,7 +435,7 @@ Open `blog/templates/blog/post_detail.html` in the code editor and find this lin
 </a>
 ```
 
-Change it to this:
+غيره إلى هذا:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -447,13 +447,13 @@ Change it to this:
 {% endif %}
 ```
 
-Since you're likely logged in, if you refresh the page, you won't see anything different. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
+نظرا لأنك مسجل الدخول، إذا قمت بتحديث الصفحة، فلن ترى شيئا مختلفا. حمل الصفحة في متصفح مختلف أو نافذة متخفية (تسمى "InPrivate" في Windows Edge)، على الرغم من ذلك، وسترى أن الرابط لا يظهر، ولا تعرض الأيقونة أيضا!
 
-## شيء اخر: أنشر الوقت!
+## شيء اخر: وقت النشر!
 
-Let's see if all this works on PythonAnywhere. Time for another deploy!
+دعونا نرى ما إذا كان كل هذا يعمل على PythonAnywhere. حان الوقت لنشر آخر!
 
-* First, commit your new code, and push it up to GitHub:
+* أولاً، فوّض التعليمات البرمجية الخاصة بك، وادفعها إلى GitHub:
 
 {% filename %}command-line{% endfilename %}
 
@@ -473,7 +473,7 @@ Let's see if all this works on PythonAnywhere. Time for another deploy!
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+(تذكر أن تستبدل `<your-pythonanywhere-domain>` بالمجال الفرعي لـ PythonAnywhere الفعلي، بدون أقواس الزاوية. )
 
 * Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (use the menu button in the upper right of the console) and hit **Reload**. Refresh your https://subdomain.pythonanywhere.com blog to see the changes.
 
