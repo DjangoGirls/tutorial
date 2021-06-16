@@ -218,10 +218,10 @@ HTML هو رمز يتم تفسيره بواسطة متصفح الويب - مثل
     [...]
     
 
-You'll need to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain name, without the angle-brackets. Your subdomain name is normally your PythonAnywhere user name, but in some cases it might be a bit different (such as if your user name contains capital letters). So if this command doesn't work, use the `ls` (list files) command to find your actual subdomain/folder name, and then `cd` to there.
+ستحتاج إلى استبدال `<your-pythonanywhere-domain>` باسم النطاق الفرعي الخاص بك PythonAnywhere بدون أقواس الزاوية. اسم المجال الفرعي الخاص بك عادة هو اسم المستخدم PythonAnywhere الخاص بك، ولكن في بعض الحالات قد يكون مختلفا بعض الشيء (مثل إذا كان اسم المستخدم الخاص بك يحتوي على أحرف كبرى). إذا كان هذا الأمر لا يعمل، استخدم أمر `ls` (قائمة الملفات) للعثور على النطاق الفرعي/المجلد الفعلي الخاص بك، ثم `cd` إلى هناك.
 
-Now watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **"Files" page** and view your code on PythonAnywhere (you can reach other PythonAnywhere pages from the menu button on the console page).
+الآن شاهد التعليمات البرمجية الخاصة بك يتم تنزيلها. إذا كنت ترغب في التحقق من أنه وصل، يمكنك الانتقال إلى صفحة **"الملفات"** وعرض التعليمات البرمجية الخاصة بك على PythonAnywhere (يمكنك الوصول إلى صفحات بايثون في كل مكان الأخرى من زر القائمة على صفحة وحدة التحكم).
 
-* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
+* وأخيراً، انتقل إلى ["Web" page](https://www.pythonanywhere.com/web_app_setup/) واضغط على **Reload** في تطبيق الويب الخاص بك.
 
 تحديثك يجب ان يكون متاح, قم بعمل تحديث صفحة الموقع في المتصفح. التغييرات يجب ان تظهر لك الان
