@@ -82,9 +82,9 @@
 TIME_ZONE = 'Europe/Berlin'
 ```
 
-A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `ch` for Switzerland. If English is not your native language, you can add this to change the default buttons and notifications from Django to be in your language. لذلك سيكون لديك زر "إلغاء" ترجم إلى اللغة التي حددتها هنا. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/2.2/ref/settings/#language-code).
+رمز اللغة يتكون من اللغة، مثل `en` للغة الإنجليزية أو `de` للألمانية، ورمز البلد، مثل `de` لألمانيا أو `ch` لسويسرا. إذا لم تكن اللغة الإنجليزية لغتك الأصلية، يمكنك إضافة هذا لتغيير الأزرار والإشعارات الافتراضية من جانغو لتكون بلغتك. لذلك سيكون لديك زر "إلغاء" ترجم إلى اللغة التي حددتها هنا. [جانغو يأتي مع الكثير من الترجمات المعدة](https://docs.djangoproject.com/en/2.2/ref/settings/#language-code).
 
-If you want a different language, change the language code by changing the following line:
+إذا كنت تريد لغة مختلفة، قم بتغيير رمز اللغة بتغيير السطر التالي:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -111,11 +111,11 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 > **ملاحظة**: إذا كنت تستخدم Chromebook، أضف هذا السطر في الجزء السفلي من الملف settings.py: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
-> Also add `.amazonaws.com` to the `ALLOWED_HOSTS` if you are using cloud9
+> أضف أيضا `.amazonaws.com` إلى `ALLOWED_HOSTS` إذا كنت تستخدم Cloud9
 > 
-> If you are hosting your project on `Glitch.com`, let us protect the Django secret key that needs to remain confidential (otherwise, anyone remixing your project could see it):
+> إذا كنت تستضيف مشروعك على `Glitch.com`، دعونا نحمي مفتاح جانغو السري الذي يحتاج أن يبقى سرياً (عدا ذلك، أي شخص يعيد تعديل مشروعك يمكنه رؤيته):
 > 
-> - First, we are going to create a random secret key. Open the Glitch terminal again, and type the following command:
+> - أولا، سنقوم بإنشاء مفتاح سري عشوائي. افتح المحطة الطرفية Glitch مرة أخرى، واكتب الأمر التالي:
 >     
 >     {% filename %}command-line{% endfilename %}
 >     
@@ -124,7 +124,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 >           print(get_random_secret_key())'
 >     ```
 >     
->     This should display a long random string, perfect to use as a secret key for your brand new Django web site. We will now paste this key into a `.env` file that Glitch will only show you if you are the owner of the web site.
+>     هذا يجب أن يعرض سلسلة عشوائية طويلة، مثالية لاستخدامها كمفتاح سري لموقع جانغو الجديد الخاص بك. سوف نلصق هذا المفتاح الآن في ملف `.env` الذي سيقوم Glitch بعرضه لك فقط إذا كنت مالك الموقع.
 > 
 > - Create a file `.env` at the root of your project and add the following property in it:
 >     
