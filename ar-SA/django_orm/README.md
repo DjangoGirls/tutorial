@@ -89,7 +89,7 @@ NameError: name 'Post' is not defined
 <QuerySet [<User: ola>]>
 ```
 
-This is the superuser we created earlier! Let's get an instance of the user now (adjust this line to use your own username):
+هذا هو المستخدم المتميز الذي أنشأناه سابقاً! دعونا نحصل على مثيل للمستخدم الآن (قم بضبط هذا السطر لاستخدام اسم المستخدم الخاص بك):
 
 {% filename %}command-line{% endfilename %}
 
@@ -97,7 +97,7 @@ This is the superuser we created earlier! Let's get an instance of the user now 
 >>> me = User.objects.get(username='ola')
 ```
 
-As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat!
+كما ترون، نحن الآن `نحصل على` `مستخدم` مع `اسم مستخدم` يساوي 'ola'. رائع!
 
 الآن يمكننا أخيرا إنشاء مشاركة:
 
@@ -200,7 +200,7 @@ QuerySets تسمح لك أيضا بترتيب قائمة الكائنات. دع�
 <QuerySet [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]>
 ```
 
-### Complex queries through method-chaining
+### الاستفسارات المعقدة من خلال سلسلة الأساليب
 
 As you saw, some methods on `Post.objects` return a QuerySet. The same methods can in turn also be called on a QuerySet, and will then return a new QuerySet. Thus, you can combine their effect by **chaining** them together:
 
