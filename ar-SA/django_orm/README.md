@@ -202,7 +202,7 @@ QuerySets تسمح لك أيضا بترتيب قائمة الكائنات. دع�
 
 ### الاستفسارات المعقدة من خلال سلسلة الأساليب
 
-As you saw, some methods on `Post.objects` return a QuerySet. The same methods can in turn also be called on a QuerySet, and will then return a new QuerySet. Thus, you can combine their effect by **chaining** them together:
+كما رأيت، بعض الطرق في `Post.objec` تعيد QuerySet. نفس الأساليب يمكن أيضاً استدعاؤها على QuerySet، وبعد ذلك ستعيد QuerySet جديدة. وهكذا، يمكنك الجمع بين تأثيرها من خلال **سلسلة** بعضها البعض:
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
