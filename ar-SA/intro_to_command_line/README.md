@@ -132,19 +132,19 @@
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X و Linux لديهما أمر `man` الذي يعطيك المساعدة في الأوامر. جرب `man pwd` وشاهد ما يقوله، أو ضع `man` قبل أوامر أخرى لمشاهدة مساعدتهم. ناتج `man` هو عادة صفحة Use the space bar to move to the next page, and `q` to quit looking at the help.
+OS X و Linux لديهما أمر `man` الذي يعطيك المساعدة في الأوامر. جرب `man pwd` وشاهد ما يقوله، أو ضع `man` قبل أوامر أخرى لمشاهدة مساعدتهم. ناتج `man` هو عادة صفحة استخدم زر المسافة للإنتقال إلى الصفحة التالية، و `q` للخروج من النظر إلى المساعدة.
 
 <!--endsec-->
 
 <!--sec data-title="Command Help: Windows" data-id="windows_help" data-collapse=true ces-->
 
-Adding a `/?` suffix to most commands will print the help page. You may need to scroll your command window up to see it all. Try `cd /?`.
+إضافة `/?` لاحقة لمعظم الأوامر سوف يطبع صفحة المساعدة. قد تحتاج إلى تمرير نافذة الأوامر الخاصة بك لرؤية كل شيء. جرب `cd /?`.
 
 <!--endsec-->
 
-### List files and directories
+### قائمة الملفات والدلائل
 
-So what's in it? It'd be cool to find out. Let's see:
+اذاً ماذا فيها؟ سيكون من الرائع معرفة ذلك، دعونا نرى:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -173,13 +173,13 @@ So what's in it? It'd be cool to find out. Let's see:
     ...
     
 
-> Note: In PowerShell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
+> ملاحظة: في PowerShell يمكنك أيضا استخدام 'ls' مثل Linux و Mac OS X. <!--endsec-->
 
 * * *
 
-### Change current directory
+### تغيير الدليل الحالي
 
-Now, let's go to our Desktop directory:
+الآن، دعونا نذهب إلى دليل سطح المكتب لدينا:
 
 <!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
 
@@ -197,7 +197,7 @@ Now, let's go to our Desktop directory:
     $ cd Desktop
     
 
-Note that the directory name "Desktop" might be translated to the language of your Linux account. If that's the case, you'll need to replace `Desktop` with the translated name; for example, `Schreibtisch` for German.
+لاحظ أن اسم الدليل "سطح المكتب" قد يترجم إلى لغة حساب لينكس الخاص بك. إذا كان الأمر كذلك، ستحتاج إلى استبدال `Desktop` بالاسم المترجم؛ على سبيل المثال، `Schreibtisch` بالألمانية.
 
 <!--endsec-->
 
@@ -210,7 +210,7 @@ Note that the directory name "Desktop" might be translated to the language of yo
 
 <!--endsec-->
 
-Check if it's really changed:
+تحقق إذا كان تم تغييره حقا:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -232,15 +232,15 @@ Check if it's really changed:
 
 <!--endsec-->
 
-Here it is!
+ها هي!
 
-> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
+> نصيحة المحترفين: إذا كتبت `cd D` ثم ضغطت على `tab` في لوحة المفاتيح، فسيملأ سطر الأوامر تلقائيا بقية الاسم حتى تتمكن من التنقل بشكل أسرع. إذا كان هناك أكثر من مجلد واحد يبدأ بـ "D"، اضغط على مفتاح `tab` مرتين للحصول على قائمة الخيارات.
 
 * * *
 
-### Create directory
+### إنشاء دليل
 
-How about creating a practice directory on your desktop? You can do it this way:
+ماذا عن إنشاء دليل تدريب على سطح المكتب الخاص بك؟ يمكنك القيام بذلك بهذه الطريقة:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -260,15 +260,15 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--endsec-->
 
-This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+سيؤدي هذا الأمر الصغير إلى إنشاء مجلد باسم `practice` على سطح المكتب. يمكنك التحقق إذا كان هناك من خلال النظر في سطح المكتب الخاص بك أو بواسطة تشغيل أمر `dir` أو `ls`! جربها. :)
 
-> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
+> نصيحة للمحترفين: إذا كنت لا ترغب في كتابة نفس الأوامر مراراً وتكراراً، حاول الضغط على `سهم للأعلى` و `سهم للأسفل` على لوحة المفاتيح للتنقل عبر الأوامر المستخدمة مؤخرا.
 
 * * *
 
-### Exercise!
+### تمرين!
 
-A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
+تحدي صغيرة بالنسبة لك: في الدليل الذي تم إنشاؤه حديثا `practice` ، قم بإنشاء دليل يسمى `test`(استخدم الأمرين `cd` و `mkdir`.)
 
 #### الحل:
 
