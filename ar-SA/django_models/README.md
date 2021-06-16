@@ -1,4 +1,4 @@
-# نماذج دجانغو
+# نماذج جانغو
 
 ما نريد أن نخلق الآن هو شيء من شأنه أن يخزن جميع المشاركات في مدونتنا. ولكن لكي نكون قادرين على القيام بذلك، نحتاج إلى الحديث قليلا عن الأشياء المسماة `objects`.
 
@@ -51,7 +51,7 @@
 
 نظراً لأننا نعرف ما نريد أن نحققه، دعونا نبدأ النمذجة في جانغو!
 
-## نماذج دجانغو
+## نماذج جانغو
 
 بمعرفة ما هو الكائن ، يمكننا انشاء نمودج للمشاركة على مدونتنا.
 
@@ -77,28 +77,28 @@
 
     djangogirls
     ├── blog
-    │   ├── admin.py
-    │   ├── apps.py
-    │   ├── __init__.py
-    │   ├── migrations
-    │   │   └── __init__.py
-    │   ├── models.py
-    │   ├── tests.py
-    │   └── views.py
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── __init__.py
+    │   ├── migrations
+    │   │   └── __init__.py
+    │   ├── models.py
+    │   ├── tests.py
+    │   └── views.py
     ├── db.sqlite3
     ├── manage.py
     ├── mysite
-    │   ├── __init__.py
-    │   ├── settings.py
-    │   ├── urls.py
-    │   └── wsgi.py
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
     ├── myvenv
-    │   └── ...
+    │   └── ...
     └── requirements.txt
     
     
 
-بعد إنشاء التطبيق، نحتاج أيضا أن نقول لدجانغو أنه ينبغي استخدامه. We do that in the file `mysite/settings.py` -- open it in your code editor. We need to find `INSTALLED_APPS` and add a line containing `'blog.apps.BlogConfig',` just above `]`. المنتج النهائي ينبغي أن يبدو هكذا:
+بعد إنشاء التطبيق، نحتاج أيضا أن نقول لدجانغو أنه ينبغي استخدامه. نقوم بذلك في الملف `mysite/settings.py` -- قم بفتحه في محرر التعليمات البرمجية الخاص بك. نحن بحاجة إلى العثور على `INSTALLED_APPS` وإضافة سطر يحتوي على `'blog.apps.BlogConfig',` فقط فوق `]`. المنتج النهائي ينبغي أن يبدو هكذا:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -118,7 +118,7 @@ INSTALLED_APPS = [
 
 في ملف `blog/models.py` نحدد كافة كائنات تسمى `Models`--وهذا هو المكان الذي سنحدد فيه مشاركات مدونتنا.
 
-Let's open `blog/models.py` in the code editor, remove everything from it, and write code like this:
+دعونا نفتح `blog/models.py` في محرر التعليمات البرمجية، وإزالة كل شيء منه، وكتابة التعليمات البرمجية مثل هذا:
 
 {% filename %}blog/models.py{% endfilename %}
 
@@ -162,7 +162,7 @@ class Post(models.Model):
 - `models.DateTimeField` --هذا هو التاريخ والوقت.
 - `models.ForeignKey`--وهذا ارتباط إلى نموذج آخر.
 
-نحن لن شرح كل شيء من التعليمات البرمجية هنا لأنه سوف يستغرق الكثير من الوقت. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.2/ref/models/fields/#field-types).
+نحن لن شرح كل شيء من التعليمات البرمجية هنا لأنه سوف يستغرق الكثير من الوقت. ينبغي أن نلقي نظرة على وثائق جانغو إذا كنت ترغب في معرفة المزيد عن حقول النموذج وكيفية تحديد الأشياء غير تلك المذكورة أعلاه (https://docs.djangoproject.com/en/2.2/ref/models/fields/#field-types).
 
 وماذا عن `def publish(self):`؟ هذا هو بالضبط الأسلوب `publish` الذي كنا نتحدث عنه. `def` يعني أن هذا أسلوب دالة و `publish` اسم الأسلوب. يمكنك تغيير اسم الأسلوب إذا أردت. حكم التسمية أن نستخدم حروف صغيرة وتسطيرات أسفل السطر بدلاً من المسافات. على سبيل المثال، يمكن استدعاء أسلوب والذي يقوم بحساب متوسط السعر `calculate_average_price`.
 
