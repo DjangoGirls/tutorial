@@ -20,7 +20,7 @@
 {{ posts }}
 ```
 
-جرب هذا في قالبك `blog/templates/blog/post_list.html`. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. قم بحفظ الملف، وقم بتحديث الصفحة لمشاهدة النتائج:
+جرب هذا في قالبك `blog/templates/blog/post_list.html`. قم بفتحه في محرر التعليمات البرمجية، واستبدل كل شي من `<div>` الثاني إلى `</div>` الثالث بـ `{{ posts }}`. قم بحفظ الملف، وقم بتحديث الصفحة لمشاهدة النتائج:
 
 ![الرقم 13.1](images/step1.png)
 
@@ -74,7 +74,7 @@
 
 سيكون جيدا معرفة ما إذا كان موقع الويب الخاص بك لا يزال يعمل على شبكة الإنترنت العامة، اليس كذالك؟ دعونا نحاول نشره في PythonAnywhere مرة أخرى. هنا خلاصة للخطوات…
 
-* First, push your code to GitHub
+* أولاً، ادفع التعليمات البرمجية الخاصة بك إلى Github
 
 {% filename %}command-line{% endfilename %}
 
@@ -97,7 +97,7 @@
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+(تذكر أن تستبدل `<your-pythonanywhere-domain>` بالمجال الفرعي لـ PythonAnywhere الفعلي، بدون أقواس الزاوية. )
 
 * Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. (To reach other PythonAnywhere pages from the console, use the menu button in the upper right corner.) Your update should be live on https://subdomain.pythonanywhere.com -- check it out in the browser! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
 
