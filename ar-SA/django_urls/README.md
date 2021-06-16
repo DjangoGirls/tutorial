@@ -6,7 +6,7 @@
 
 ببساطة الرابط (URL) هو عنوان صفحة الويب. يمكنك أن ترى عنوان الرابط (URL) في كل مرة تقوم بزيارة الموقع على شبكة الإنترنت --إنها مرئية في شريط العناوين في المتصفح الخاص بك. (نعم! `127.0.0.1:8000` هو عنوان الرابط (URL)! و `https://djangogirls.org` أيضا الرابط (URL))
 
-![URL](images/url.png)
+![عنوان صفحة الويب](images/url.png)
 
 كل صفحة على شبكة الإنترنت تحتاج إلى عنوان رابط (URL) خاص بها. بهذه الطريقة يستطيع تطبيقك ان يعلم ماذا يفتح للمستخدم الذي فتح الرابط. في جانغو نستخدم ما يسمى `URLconf` (URL configuration). URLconf هو مجموعة من الأنماط التي ستحاول جانغو مطابقتها مع عنوان URL المطلوب للعثور على طريقة العرض الصحيح.
 
@@ -94,10 +94,10 @@ urlpatterns = [
 
 الجزء الأخير، `name='post_list'`, هو اسم عنوان URL الذي سيتم استخدامه لتحديد طريقة العرض. وهذا يمكن أن يكون نفس اسم العرض ولكن أيضا يمكن أن يكون شيئا مختلفاً تماما. سنستخدم عناوين URLs المسماة لاحقا في المشروع، لذلك من المهم تسمية كل عنوان URL في التطبيق. يجب أن نحاول أيضا الحفاظ على أسماء عناوين URL فريدة وسهلة التذكر.
 
-إذا حاولت زيارة http://127.0.0.1:8000/ الآن، ستجد نوعا من رسائل الخطأ "صفحة ويب غير متوفرة". وذلك لأن الخادم (تذكر كتابة `runserver`?) لم يعد قيد التشغيل. Take a look at your server console window to find out why.
+إذا حاولت زيارة http://127.0.0.1:8000/ الآن، ستجد نوعا من رسائل الخطأ "صفحة ويب غير متوفرة". وذلك لأن الخادم (تذكر كتابة `runserver`?) لم يعد قيد التشغيل. ألق نظرة على نافذة وحدة تحكم الخادم لمعرفة السبب.
 
-![Error](images/error1.png)
+![خطأ](images/error1.png)
 
-Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is **no attribute 'post_list'**. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage, your `/admin/` will also not work. No worries – we will get there. If you see a different error message, try restarting your web server. To do that, in the console window that is running the web server, stop it by pressing Ctrl+C (the Control and C keys together). On Windows, you might have to press Ctrl+Break. Then you need to restart the web server by running a `python manage.py runserver` command.
+وحدة التحكم الخاصة بك تظهر خطأ، ولكن لا تقلق - إنه في الواقع مفيد جدا: إنه يخبرك أن **no attribute 'post_list'**. هذا هو اسم *view* الذي تحاول جانغو العثور عليه واستخدامه، ولكن لم نقم بإنشاءه بعد. في هذه المرحلة،`/admin/` لن يعمل أيضا. لا تقلق – سوف نصل إلى هناك. إذا رأيت رسالة خطأ مختلفة، حاول إعادة تشغيل خادم الويب الخاص بك. للقيام بذلك، في نافذة وحدة التحكم التي تقوم بتشغيل خادم الويب، أوقفها بالضغط على Ctrl+C (مفتاحي التحكم و C معا). على ويندوز، قد تضطر إلى الضغط على Ctrl+Break. ثم تحتاج إلى إعادة تشغيل خادم الويب عن طريق تشغيل أمر `python manage.py runserver`.
 
-> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/2.2/topics/http/urls/
+> إذا كنت ترغب في معرفة المزيد عن URLconfs، انظر إلى الوثائق الرسمية: https://docs.djangoproject.com/en/2.2/topics/http/urls/
