@@ -31,7 +31,7 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-As you can see, we created a function (`def`) called `post_list` that takes `request` and will `return` the value it gets from calling another function `render` that will render (put together) our template `blog/post_list.html`.
+كما ترون، أنشأنا دالة (`def`) تسمى `post_list` التي تأخذ `request` وسوف ترجع `return` القيمة من خلال الاتصال بدالة أخرى `render` التي سوف توفر (تضع سوياً) قالبنا `blog/post_list.html`.
 
 قم بحفظ الملف، انتقل إلى http://127.0.0.1:8000/وانظر ماذا لدينا.
 
