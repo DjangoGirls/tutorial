@@ -99,10 +99,10 @@
 
 (تذكر أن تستبدل `<your-pythonanywhere-domain>` بالمجال الفرعي لـ PythonAnywhere الفعلي، بدون أقواس الزاوية. )
 
-* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. (To reach other PythonAnywhere pages from the console, use the menu button in the upper right corner.) Your update should be live on https://subdomain.pythonanywhere.com -- check it out in the browser! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
+* وأخيراً، انتقل إلى ["Web" page](https://www.pythonanywhere.com/web_app_setup/) واضغط على **Reload** في تطبيق الويب الخاص بك. (للوصول إلى صفحات PythonAnywhere الأخرى من وحدة التحكم ، استخدم زر القائمة في الزاوية اليمنى العلوية. يجب أن يكون تحديثك مباشرًا على https://subdomain.pythonanywhere.com -- تحقق من ذلك في المتصفح! إذا كانت مشاركات المدونة على موقع PythonAnywhere لا تتطابق مع المشاركات التي تظهر على المدونة المستضافة على الخادم المحلي، فلا بأس بذالك. قواعد البيانات على جهاز الكمبيوتر المحلي وبايثون في أي مكان لا يتزامنان مع بقية الملفات الخاصة بك.
 
-Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://subdomain.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
+تهانينا! الآن امضي قدما وحاول إضافة مشاركة جديدة عبر إدارة جانغو الخاصة بك (تذكر من إضافة published_date!) تأكد من أنك في صفحة المشرف لجانغو لموقع pythonanywhere الخاص بك، https://subdomain.pythonanywhere.com/admin. ثم حدث الصفحة لمعرفة ما إذا كانت المشاركة تظهر هناك أم لا.
 
-Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
+تعمل مثل السحر؟ نحن فخورون! ابتعدوا قليلا عن جهاز الكمبيوتر الخاص بك - لقد حصلت على استراحة. :)
 
-![Figure 13.4](images/donut.png)
+![الشكل 13.4](images/donut.png)
