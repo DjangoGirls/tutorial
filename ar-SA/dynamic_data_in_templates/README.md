@@ -56,10 +56,10 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-To display our QuerySet on our blog's post list, we have two things left to do:
+لعرض QuerySet الخاص بنا في قائمة منشورات مدونتنا، لدينا شيئان متبقيان للقيام بهما:
 
-1. Pass the `posts` QuerySet to the template context, by changing the `render` function call. We'll do this now.
-2. Modify the template to display the `posts` QuerySet. We'll cover this in a later chapter.
+1. مرر الـ `posts` QuerySet إلى سياق القالب، عن طريق تغيير إستدعاء الدالة `render`. سنقوم بذلك الآن.
+2. قم بتعديل القالب لعرض الـ `posts` QuerySet. سنقوم بتغطية هذا في فصل لاحق.
 
 يرجى ملاحظة أننا ننشئ *variable* لأعمالا QuerySet: `posts`.. عالج هذا كاسم QuerySet لدينا. من الآن فصاعدا يمكن أن نشير إليه بهذا الاسم.
 
@@ -81,4 +81,4 @@ def post_list(request):
 
 هذا كل شيء ، حان الوقت للعودة إلى قالبنا وإضهار QuerySet!
 
-Want to read a little bit more about QuerySets in Django? You should look here: https://docs.djangoproject.com/en/2.2/ref/models/querysets/
+هل تريد قراءة المزيد حول QuerySets في جانغو؟ يجب أن تنظر هنا: https://docs.djangoproject.com/en/2.2/ref/models/querysets/
