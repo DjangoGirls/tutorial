@@ -298,7 +298,7 @@ def post_new(request):
 
 أولا، دعونا نحفظ الرمز الذي يمثل زر التحرير. قم بتنزيل [pencil-fill.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/pencil-fill.svg) وحفظه في الموقع `blog/templates/blog/icons/`.
 
-Open `blog/templates/blog/post_detail.html` in the code editor and add the following code inside `article` element:
+افتح `blog/templates/blog/post_detail.html` في محرر التعليمات البرمجية وأضف التعليمات البرمجية التالية داخل عنصر `article`:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -310,7 +310,7 @@ Open `blog/templates/blog/post_detail.html` in the code editor and add the follo
 </aside>
 ```
 
-so that the template will look like this:
+بحيث يبدو القالب كما يلي:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -335,7 +335,7 @@ so that the template will look like this:
 {% endblock %}
 ```
 
-Open `blog/urls.py` in the code editor, and add this line:
+افتح `blog/urls.py` في محرر التعليمات البرمجية، وأضف هذا السطر:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -343,9 +343,9 @@ Open `blog/urls.py` in the code editor, and add this line:
     path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
 ```
 
-We will reuse the template `blog/templates/blog/post_edit.html`, so the last missing thing is a *view*.
+سنقوم بإعادة استخدام القالب `blog/templates/blog/post_edit.html`، لذلك آخر شيء مفقود هو *view*.
 
-Let's open `blog/views.py` in the code editor and add this at the very end of the file:
+دعونا نفتح `blog/views.py` وإضافة هذا في نهاية الملف:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -365,7 +365,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-This looks almost exactly the same as our `post_new` view, right? But not entirely. For one, we pass an extra `pk` parameter from `urls`. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
+يبدو هذا بالضبط تقريبا نفس عرض `post_new`، أليس كذلك؟ ولكن ليس تماما. لسبب واحد، نحن نمرر عامل `pk` إضافي من `urls`. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
 
 {% filename %}blog/views.py{% endfilename %}
 
