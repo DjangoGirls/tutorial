@@ -151,10 +151,10 @@ HTML هو رمز يتم تفسيره بواسطة متصفح الويب - مثل
 </html>
 ```
 
-We've created one `header` section and two `article` section here.
+لقد قمنا بإنشاء قسم `header` واحد وقسمان `article` اثنان هنا.
 
-* The `header` element contains the title of our blog – it's a heading and a link
-* The two `article` elements contain our blog posts with a published date in a `time` element, a `h2` element with a post title that is clickable and a `p` (paragraph) element for text of our blog post.
+* يحتوي العنصر `header` على عنوان مدونتنا - إنه عنوان ورابط
+* العنصران `article` يحتويان مشاركات مدونتنا مع تاريخ نشر في عنصر `time`، عنصر `h2` مع عنوان مشاركة قابل للنقر وعنصر (فقرة) `p` لنص مشاركة المدونة الخاص بنا.
 
 هو يتيح لنا هذا التأثير:
 
@@ -168,7 +168,7 @@ We've created one `header` section and two `article` section here.
 
 سيكون من الجيد أن نرى كل هذا على الإنترنت، ايس كذالك؟ دعونا ننشر بايثون في كل مكان اخر:
 
-### Commit, and push your code up to GitHub
+### فوض وادفع التعليمات البرمجية الخاصة بك الى Github
 
 أولاً، دعونا نرى ما هي الملفات التي تغيرت منذ آخر نشر (شغل هذه الأوامر محليا ، ليس في بايثون في كل مكان):
 
@@ -198,7 +198,7 @@ We've created one `header` section and two `article` section here.
     $ git commit -m "Changed the HTML for the site."
     
 
-> **Note** Make sure you use double quotes around the commit message.
+> **ملاحظة** تأكد من استخدام علامات الاقتباس المزدوجة حول رسالة التفويض.
 
 عندما نقوم بذالك نرفع او ندفع بتعديلاتنا إلى GitHub:
 
