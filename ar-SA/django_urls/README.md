@@ -4,7 +4,7 @@
 
 ## ما هو الرابط (URL) ؟
 
-A URL is a web address. يمكنك أن ترى عنوان الرابط (URL) في كل مرة تقوم بزيارة الموقع على شبكة الإنترنت --إنها مرئية في شريط العناوين في المتصفح الخاص بك. (نعم! `127.0.0.1:8000` هو عنوان الرابط (URL)! و `https://djangogirls.org` أيضا الرابط (URL))
+ببساطة الرابط (URL) هو عنوان صفحة الويب. يمكنك أن ترى عنوان الرابط (URL) في كل مرة تقوم بزيارة الموقع على شبكة الإنترنت --إنها مرئية في شريط العناوين في المتصفح الخاص بك. (نعم! `127.0.0.1:8000` هو عنوان الرابط (URL)! و `https://djangogirls.org` أيضا الرابط (URL))
 
 ![URL](images/url.png)
 
@@ -43,13 +43,13 @@ urlpatterns = [
 
 هذا السطر يعني أن لكل عنوان URL الذي يبدأ ب `admin/`، سوف تجد جانغو مقابله *view*. في هذه الحالة نحن ، نضع الكثير من روابط المدير ، لذالك هي ليست مجموعة كلها في هذا الملف الصغير ، انها اكثر قابلية للقراءة وانضف.
 
-## Your first Django URL!
+## رابط جانغو الأول الخاص بك!
 
-Time to create our first URL! We want 'http://127.0.0.1:8000/' to be the home page of our blog and to display a list of posts.
+حان الوقت لإنشاء أول عنوان URL لنا! نريد 'http://127.0.0.1:8000/' أن تكون الصفحة الرئيسية لمدونتنا وأن تعرض قائمة من المشاركات.
 
-We also want to keep the `mysite/urls.py` file clean, so we will import URLs from our `blog` application to the main `mysite/urls.py` file.
+نريد أيضا الاحتفاظ بالملف `mysite/urls.py` نظيف، حيث أننا سوف نسترد عناوين Url من تطبيق `blog` لدينا إلى الملف الرئيسي `mysite/urls.py`.
 
-Go ahead, add a line that will import `blog.urls`. You will also need to change the `from django.urls…` line because we are using the `include` function here, so you will need to add that import to the line.
+امضي قدما ، واضف السطر الذي سيسترد `blog.urls`. You will also need to change the `from django.urls…` line because we are using the `include` function here, so you will need to add that import to the line.
 
 Your `mysite/urls.py` file should now look like this:
 
