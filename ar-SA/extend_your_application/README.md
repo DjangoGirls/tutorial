@@ -4,15 +4,15 @@
 
 لقد أكملنا بالفعل جميع الخطوات المختلفة اللازمة لإنشاء موقعنا على الويب: 
 
-Time to practice!
+حان الوقت للتدريب!
 
-The first thing we need in our blog is, obviously, a page to display one post, right?
+أول شيء نحتاجه في مدونتنا هو، على الأرجح، صفحة لعرض مشاركة واحدة، أليس كذلك؟
 
-We already have a `Post` model, so we don't need to add anything to `models.py`.
+لدينا بالفعل نموذج `Post` ، لذلك لا نحتاج إلى إضافة أي شيء إلى `models.py`.
 
 ## إنشاء رابط نموذج لتفاصيل المشاركة
 
-We will start with adding a link inside `blog/templates/blog/post_list.html` file. Open it in the code editor, and so far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+سنبدأ بإضافة رابط داخل ملف `blog/templates/blog/post_list.html` افتحه في محرر التعليمات البرمجية، وحتى الآن يجب أن يبدوا هكذا: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -30,7 +30,7 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
 {% endblock %}
 ```
 
-{% raw %}We want to have a link from a post's title in the post list to the post's detail page. Let's change `<h2><a href="">{{ post.title }}</a></h2>` so that it links to the post's detail page:{% endraw %}
+{% raw %} نريد الحصول على رابط من عنوان المشاركة في قائمة المشاركات إلى صفحة تفاصيل المشاركة. دعونا نغير `<h2><a href="">{{ post.title }}</a></h2>` بحيث يربط صفحة تفاصيل المشاركة:{% endraw %}
 
 {% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 
@@ -38,7 +38,7 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
 <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
 ```
 
-{% raw %}Time to explain the mysterious `{% url 'post_detail' pk=post.pk %}`. As you might suspect, the `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!{% endraw %}
+{% raw %} حان الوقت لشرح `{% url 'post_detail' pk=post.pk %}`. كما قد تظن، فإن علامات `{% %}` تعني أننا نستخدم علامات قالب جانغو. This time we will use one that will create a URL for us!{% endraw %}
 
 The `post_detail` part means that Django will be expecting a URL in `blog/urls.py` with name=post_detail
 
