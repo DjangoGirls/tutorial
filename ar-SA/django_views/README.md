@@ -41,4 +41,4 @@ def post_list(request):
 
 هذا يبين أن الملقم قيد التشغيل مرة أخرى، على الأقل، ولكن لا يزال يبدو وكأنه ليس على ما يرام أليس كذالك؟ لا تقلق، انها مجرد صفحة خطأ، لا تخف! تماما مثل رسائل الخطأ في وحدة التحكم، هذه في الواقع مفيدة جدا. يمكن أن تقرأ أن*TemplateDoesNotExist*. دعونا نصلح هذا الخطأ وننشئ قالب في الفصل التالي!
 
-> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/2.2/topics/http/views/
+> إعرف المزيد حول الـ views في جانغو من خلال قراءة الوثائق الرسمية: https://docs.djangoproject.com/en/2.2/topics/http/views/
