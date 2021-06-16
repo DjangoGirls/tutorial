@@ -123,28 +123,28 @@ data-collapse=true ces-->
 
 <!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
 
-> **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows PowerShell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
+> **ملاحظة:** لمستخدمي المحرر الشائع VS Code، الذي يأتي مع محطة طرفية متكاملة مبنية من windows PowerShell، إذا كنت ترغب في التمسك بالمحطة الطرفية المدمجة، فيمكنك تشغيل الأمر التالي لتفعيل البيئة الافتراضية الخاصة بك:
 > 
 >     $ . myvenv\Scripts\activate.ps1
 >     
 > 
-> The advantage is that you don't have to switch between editor windows and command-line windows
+> الميزة هي أنه ليس عليك التبديل بين نوافذ المحرر ونوافذ سطر الأوامر
 
 <!--endsec-->
 
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-Start your virtual environment by running:
+ابدأ بيئتك الافتراضية بتشغيل:
 
 {% filename %}command-line{% endfilename %}
 
     $ source myvenv/bin/activate
     
 
-Remember to replace `myvenv` with your chosen `virtualenv` name!
+تذكر أن تستبدل `myvenv` باسم `virtualenv` الذي اخترته!
 
-> **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
+> **ملاحظة:** في بعض الأحيان قد يكون `source` غير متوفر. وفي تلك الحالات حاول القيام بهذا بدلاً من ذلك:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -153,24 +153,24 @@ Remember to replace `myvenv` with your chosen `virtualenv` name!
 
 <!--endsec-->
 
-You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
+سوف تعرف أنك قمت بتفعيل الـ `virtualenv` الخاصة بك عندما ترى أن الموجه في وحدة التحكم الخاصة بك مسبوقاً بـ `(myvenv)`.
 
-When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
+عند العمل ضمن بيئة افتراضية، سيشير `python` تلقائياً إلى الإصدار الصحيح حيث يمكنك استخدام `python` بدلاً من `python3`.
 
-OK, we have all important dependencies in place. We can finally install Django!
+حسنا، لدينا كافة التبعيات الهامة في المكان. وأخيراً يمكننا تثبيت جانغو!
 
-## Installing Django {#django}
+## تثبيت جانغو {#django}
 
-Now that you have your `virtualenv` started, you can install Django.
+الآن بما انه لديك `virtualenv` مشغل، يمكنك تثبيت جانغو.
 
-Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
+قبل أن نفعل ذلك، يجب علينا التأكد من لدينا أحدث إصدار من `pip`، البرامج التي نستخدمها لتثبيت جانغو:
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~$ python -m pip install --upgrade pip
     
 
-### Installing packages with requirements
+### تثبيت الحزم مع المتطلبات
 
 A requirements file keeps a list of dependencies to be installed using `pip install`:
 
