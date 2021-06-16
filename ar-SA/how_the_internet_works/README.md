@@ -1,4 +1,4 @@
-# كيف تعمل الإنترنت
+# كيف يعمل الإنترنت
 
 > للقراء في المنزل: هذا الفصل تم التكلم عنه في [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc).
 > 
@@ -6,9 +6,9 @@
 
 نحن نراهن انك تستخدم الأنترنت كل يوم. ولكن هل تعرف فعلا ما يحدث عند كتابة عنوان مثل https://djangogirls.org في متصفحك والضغط على `enter`؟
 
-The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk -- just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
+أول شيء تحتاج إلى فهمه هو أن الموقع يتكون من مجموعة من الملفات المحفوظة على قرص صلب، تماما مثل أفلامك، الموسيقى، أو الصور. ومع ذلك، هناك جزء واحد فريد للمواقع: وهي تعليمات كمبيوتر برمجية تسمى HTML.
 
-If you're not familiar with programming, it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. تم تصميم متصفحات الويب لفهم هذا الكود، اتباع التعليمات الخاصة به، وتقديم هذه الملفات التي تشكل موقع الويب الخاص بك، بالطريقة التي تريدها.
+إذا كنت لا تعرف البرمجة فإنه سيكون من الصعب فهم HTML في البداية، ولكن متصفحات الويب الخاص بك (مثل كروم، سفاري، فايرفوكس، الخ) تحبها. تم تصميم متصفحات الويب لفهم هذا الكود، اتباع التعليمات الخاصة به، وتقديم هذه الملفات التي تشكل موقع الويب الخاص بك، بالطريقة التي تريدها.
 
 كما هو الحال مع كل ملف، نحن بحاجة إلى تخزين ملفات HTML في مكان ما على قرص الثابت. بالنسبة إلى الإنترنت، نستخدم أجهزة كمبيوتر خاصة وقوية تسمى *خوادم*. أنهم لا يملكون شاشة أو ماوس أو لوحة مفاتيح، لأن الغرض الرئيسي منها هو لتخزين البيانات وخدمتها. لذالك يسمون *servers* لأنهم *serve* خدم ينقلون بياناتك.
 
@@ -22,7 +22,7 @@ If you're not familiar with programming, it can be hard to grasp HTML at first, 
 
 ![الرقم 1.2](images/internet_3.png)
 
-أنها رائعة، أليس كذلك؟ But it is not possible to have a wire between every machine connected to the Internet. إذا ، للوصول إلى جهاز (على سبيل المثال، حيث يتم حفظ https://djangogirls.org) نحن بحاجة لتمرير طلب من خلال آلات مختلفة كثيرة.
+أنها رائعة، أليس كذلك؟ ولكن ليس من الممكن أن يكون هناك سلك بين كل آلة متصلة بالإنترنت. إذا ، للوصول إلى جهاز (على سبيل المثال، حيث يتم حفظ https://djangogirls.org) نحن بحاجة لتمرير طلب من خلال آلات مختلفة كثيرة.
 
 ستبدو كالشكل التالي:
 
