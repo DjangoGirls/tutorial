@@ -6,7 +6,7 @@
 
 حسنا، كيف سوف نحقق ذلك؟
 
-We need to open our `blog/views.py` in our code editor. So far `post_list` *view* looks like this:
+نحن بحاجة إلى فتح `blog/views.py`. وحتى الآن `post_list` *view* يبدو مثل هذا:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -42,7 +42,7 @@ from .models import Post
 Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 ```
 
-So, let's open the `blog/views.py` file in the code editor, and add this piece of code to the function `def post_list(request)` -- but don't forget to first add `from django.utils import timezone`:
+إذاً، دعونا نفتح الملف `blog/views.py` في محرر التعليمات البرمجية، ونضيف هذه القطعة من التعليمات البرمجية إلى الدالة `def post_list(request)` -- ولكن لا تنسى أولاً إضافة `from django.utils import timezone`:
 
 {% filename %}blog/views.py{% endfilename %}
 
