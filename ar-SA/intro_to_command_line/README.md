@@ -296,15 +296,15 @@ OS X و Linux لديهما أمر `man` الذي يعطيك المساعدة ف�
 
 <!--endsec-->
 
-Congrats! :)
+تهانينا! :)
 
 * * *
 
-### Clean up
+### التنظيف
 
-We don't want to leave a mess, so let's remove everything we did until that point.
+لا نريد أن تترك فوضى، لذلك دعونا نزيل كل ما قمنا به حتى هذه النقطة.
 
-First, we need to get back to Desktop:
+أولاً، نحن بحاجة للعودة إلى سطح المكتب:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -324,9 +324,9 @@ First, we need to get back to Desktop:
 
 <!--endsec-->
 
-Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+استخدام `..` مع أمر `cd` سيغير الدليل الحالي الخاص بك إلى الدليل الأصلي (وهو، الدليل الذي يحتوي على الدليل الحالي الخاص بك).
 
-Check where you are:
+تحقق أين أنت:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -348,7 +348,7 @@ Check where you are:
 
 <!--endsec-->
 
-Now time to delete the `practice` directory:
+حان الوقت الآن لحذف دليل `practice`:
 
 > **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
 
