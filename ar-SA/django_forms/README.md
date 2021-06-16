@@ -158,7 +158,7 @@ def post_new(request):
 * ونحن بحاجة إلى زر `Save`. ونحن نفعل ذلك مع زر HTML: `<button type="submit">Save</button>`.
 * وأخيراً، فقط بعد افتتاح العلامة `<form ...>` نحن بحاجة إلى إضافة {% raw %} `{% csrf_token %}`{% endraw %}. هذا أمر مهم جداً، لأنه يجعل النماذج الخاصة بك آمنة! إذا كنت قد نسيت هذا قليلاً، سيشكو جانغو عند محاولة حفظ النموذج:
 
-![CSFR Forbidden page](images/csrf2.png)
+![صفحة الـ CSFR المحظورة](images/csrf2.png)
 
 حسنًا، دعونا نرى كيف يجب أن تبدو HTML في `post_edit.html`:
 
@@ -178,7 +178,7 @@ def post_new(request):
 
 حان وقت التحديث! ياي! يتم عرض النموذج الخاص بك!
 
-![New form](images/new_form2.png)
+![نموذج جديد](images/new_form2.png)
 
 ولكن انتظر لحظة! عندما تكتب شيئا في حقول `title` و `text` ومحاولة حفظه، ما الذي سيحدث؟
 
@@ -280,7 +280,7 @@ def post_new(request):
 
 > وبما أننا استخدمنا مؤخرا واجهة المشرف في جانغو، فإن النظام يعتقد حاليا أننا لا نزال مسجلين الدخول. هناك بعض الحالات التي يمكن أن تؤدي بنا إلى تسجيل الخروج (إغلاق المتصفح، إعادة تشغيل DB، إلخ.). إذا وجدت عند إنشاء مشاركة، أنك تحصل على أخطاء تشير إلى عدم وجود مستخدم مسجل الدخول، انتقل إلى صفحة المشرف http://127.0.0.1:8000/admin وسجل الدخول مرة أخرى. وهذا سيحل المشكلة مؤقتاً. هناك إصلاح دائم في انتظاركم في فصل **Homework: add security to your website!** بعد البرنامج التعليمي الرئيسي.
 
-![Logged in error](images/post_create_error.png)
+![خطأ في تسجيل الدخول](images/post_create_error.png)
 
 ## التحقق من صحة النموذج
 
@@ -288,7 +288,7 @@ def post_new(request):
 
 حاول حفظ النموذج بدون `title` و `text`. خمن ما سيحدث!
 
-![Form validation](images/form_validation2.png)
+![التحقق من صحة النموذج](images/form_validation2.png)
 
 جانغو يحرص على التحقق من صحة جميع الحقول في شكلنا ان كانت صحيحة. أليس هذا رائع؟
 
@@ -383,11 +383,11 @@ form = PostForm(instance=post)
 
 حسنا، دعونا نختبر إذا كان يعمل! لننتقل إلى صفحة `post_detail`. يجب أن يكون هناك زر تعديل في الركن العلوي الأيسر:
 
-![Edit button](images/edit_button2.png)
+![زر التعديل](images/edit_button2.png)
 
 عند النقر عليه سترى النموذج مع مشاركة مدونتنا:
 
-![Edit form](images/edit_form2.png)
+![تعديل النموذج](images/edit_form2.png)
 
 لا تتردد في تغيير العنوان أو النص وحفظ التغييرات!
 
@@ -475,6 +475,6 @@ form = PostForm(instance=post)
 
 (تذكر أن تستبدل `<your-pythonanywhere-domain>` بالمجال الفرعي لـ PythonAnywhere الفعلي، بدون أقواس الزاوية. )
 
-* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (use the menu button in the upper right of the console) and hit **Reload**. Refresh your https://subdomain.pythonanywhere.com blog to see the changes.
+* أخيراً، اقفز إلى ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (استخدم زر القائمة في الجزء العلوي الأيمن من وحدة التحكم) واضغط على **Reload**. قم بتحديث مدونة https://subdomain.pythonanywhere.com لرؤية التغييرات.
 
-And that should be it. Congrats! :)
+هذا ينبغي ان يكون كل شيء! مبروك:)
