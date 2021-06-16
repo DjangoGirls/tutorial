@@ -25,44 +25,44 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 # مقدمة مختصرة عن موجه الأوامر {#command-line}
 
-Many of the steps below reference the "console", "terminal", "command window", or "command line" -- these all mean the same thing: a window on your computer where you can enter commands. When you get to the main tutorial, you'll learn more about the command line. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
+العديد من الخطوات أدناه تشير إلى "وحدة التحكم"، "الطرف"، "نافذة الأوامر"، أو "سطر الأوامر" -- هذه كلها تعني نفس الشيء: نافذة على جهاز الكمبيوتر الخاص بك حيث يمكنك إدخال الأوامر. عندما تصل إلى البرنامج التعليمي الرئيسي، سوف تتعلم المزيد عن سطر الأوامر. الآن، الشيء الرئيسي الذي تحتاج إلى معرفته هو كيفية فتح نافذة أمر وكيف تبدو: {% include "/intro_to_command_line/open_instructions.md" %}
 
-# Install Python {#python}
+# تثبيت بايثون {#python}
 
 {% include "/python_installation/instructions.md" %}
 
-# Install a code editor {#code-editor}
+# تثبيت محرر التعليمات البرمجية {#code-editor}
 
 {% include "/code_editor/instructions.md" %}
 
-# Set up virtualenv and install Django {#virtualenv}
+# إعداد virtualenv وتثبيت Django {#virtualenv}
 
 {% include "/django_installation/instructions.md" %}
 
-# Install Git {#git}
+# تثبيت Git {#git}
 
 {% include "/deploy/install_git.md" %}
 
-# Create a GitHub account {#github}
+# إنشاء حساب Github {#github}
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password (add it to your password manager, if you use one).
+انتقل إلى [GitHub.com](https://www.github.com) وقم بالتسجيل للحصول على حساب مستخدم مجاني جديد. تأكد من تذكر كلمة المرور الخاصة بك (أضفها إلى مدير كلمات المرور الخاصة بك، إذا كنت تستخدم أحدهم).
 
-# Create a PythonAnywhere account {#pythonanywhere}
+# إنشاء حساب PythonAnywhere {#pythonanywhere}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-# Start reading
+# ابدأ بالقراءة
 
-Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
+تهانينا، انت جاهز الأن وعلى استعداد للإنطلاق! إذا كان لا يزال لديك بعض الوقت قبل انعقاد حلقة العمل، سيكون من المفيد بدء قراءة عدد قليل من فصول البداية:
 
-* [How the internet works](../how_the_internet_works/README.md)
+* [كيف يعمل الإنترنت](../how_the_internet_works/README.md)
 
-* [Introduction to the command line](../intro_to_command_line/README.md)
+* [مقدمة لسطر الأوامر](../intro_to_command_line/README.md)
 
-* [Introduction to Python](../python_introduction/README.md)
+* [مقدمة إلى بايثون](../python_introduction/README.md)
 
-* [What is Django?](../django/README.md)
+* [ما هو جانغو؟](../django/README.md)
 
-# Enjoy the workshop!
+# استمتع بورشة العمل!
 
-When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
+عند بدء ورشة العمل، ستتمكن من الانتقال مباشرة إلى [أول مشروع جانغو الخاص بك!](../django_start_project/README.md) لأنك قمت بالفعل بتغطية المادة في الفصول السابقة.
