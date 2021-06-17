@@ -45,7 +45,7 @@ Cette fenêtre en bas est votre terminal. Vous pouvez l'utiliser pour donner des
 
 #### Glitch.com Cloud IDE
 
-1. Rendez-vous sur [Glitch.com](https://glitch.com/)
+1. Allez sur [Glitch.com](https://glitch.com/)
 2. Créez un compte (https://glitch.com/signup) ou utilisez votre compte GitHub si vous en avez un. (Voir les instructions GitHub ci-dessous.)
 3. Cliquez sur *New Project* et choisissez *hello-webpage*
 4. Cliquez sur la liste déroulante Outils (en bas à gauche de la fenêtre), puis sur le bouton Terminal pour ouvrir l'onglet terminal qui contiendra une invite comme celle-ci :
@@ -126,7 +126,7 @@ LOGGING = {
 
 Cela va créer un fichier `debug.log` détaillant les opérations Django et tous les messages d'erreur qui pourraient apparaître, ce qui rendra la correction beaucoup plus facile si votre site Web ne fonctionne pas.
 
-Le redémarrage initial du projet Glitch devrait échouer. (Si vous cliquez sur le bouton en haut de la liste déroulante `Show` puis cliquez sur `In a New Window`, vous recevrez un message d'erreur `DisallowedHost` .) Ne vous inquiétez pas à ce stade, le tutoriel corrigera cela dès que vous aurez mis à jour les paramètres Django de votre projet dans le fichier `mysite/settings.py` .
+Le redémarrage initial du projet Glitch devrait échouer. (Si vous cliquez sur le bouton en haut de la liste déroulante `Show` puis cliquez sur `In a New Window`, vous recevrez un message d'erreur `DisallowedHost` (accès non autorisé).) Ne vous inquiétez pas à ce stade, le tutoriel corrigera cela dès que vous aurez mis à jour les paramètres Django de votre projet dans le fichier `mysite/settings.py` .
 
 ### Environnement virtuel
 
