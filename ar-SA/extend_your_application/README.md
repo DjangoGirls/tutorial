@@ -44,13 +44,13 @@
 
 وماذا عن `pk=post.pk`؟ `pk` هو اختصار للمفتاح الأساسي، وهو اسم فريد لكل سجل في قاعدة البيانات. كل نموذج جانغو لديه حقل يعمل كمفتاح رئيسي له، وأياً كان اسمه الآخر، فإنه يمكن أن يشار إليه أيضاً باسم "pk". ونظرا لأننا لم نحدد مفتاحا أساسيا في نموذج `Post`، فإن جانغو ينشئ واحدا لنا (بشكل افتراضي، هو حقل يسمى "id" يحتوي على رقم يزيد لكل سجل، أي 1 و 2 و 3) ويضيفه كحقل لكل واحدة من مشاركاتنا. نصل إلى المفتاح الأساسي من خلال كتابة `post.pk`، بنفس الطريقة التي نصل بها إلى الحقول الأخرى (`title`, `author`, etc.) في الكائن `Post`!
 
-Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
+الآن عندما ننتقل إلى http://127.0.0.1:8000/ سيكون لدينا خطأ (كما هو متوقع، نظرا لأنه لا يوجد لدينا عنوان URL أو *view* ل `post_detail`). وسوف تبدو كما يلي:
 
 ![NoReverseMatch error](images/no_reverse_match2.png)
 
 ## إنشاء عنوان URL لتفاصيل المشاركة
 
-Let's create a URL in `urls.py` for our `post_detail` *view*!
+لنقم بإنشاء عنوان URL في `urls.py` من أجل `post_detail` *view* الخاص بنا!
 
 We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
 
