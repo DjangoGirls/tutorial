@@ -46,7 +46,7 @@
 
 الآن عندما ننتقل إلى http://127.0.0.1:8000/ سيكون لدينا خطأ (كما هو متوقع، نظرا لأنه لا يوجد لدينا عنوان URL أو *view* ل `post_detail`). وسوف تبدو كما يلي:
 
-![NoReverseMatch error](images/no_reverse_match2.png)
+![خطأ NoReverseMatch](images/no_reverse_match2.png)
 
 ## إنشاء عنوان URL لتفاصيل المشاركة
 
@@ -96,11 +96,11 @@ Post.objects.get(pk=pk)Post.objects.get(pk=pk)
 
 ولكن توجد مشكلة في التعليمات البرمجية هذه. إذا لم يكن هناك `Post` مع الـ `primary key` (`pk`) المُعطى سيكون لدينا خطأ قبيح جداً!
 
-![DoesNotExist error](images/does_not_exist2.png)
+![خطأ DoesNotExist](images/does_not_exist2.png)
 
 نحن لا نريد ذلك! لكن لحسن الحظ جانغو يأتي مع شيء سوف يتعامل مع ذلك لنا: `get_object_or_404`. في حالة عدم وجود `Post` مع `pk` المعطى، سيتم عرض صفحة أفضل بكثير، صفحة `Page Not Found 404`.
 
-![Page not found](images/404_2.png)
+![لم يتم العثور على الصفحة](images/404_2.png)
 
 الخبر الجيد هو أنه يمكنك في الواقع إنشاء صفحة `Page not found` الخاصة بك وجعلها جميلة كما تريد. لكنها ليست مهمة جداً الآن، لذلك سنتخطى ذلك.
 
@@ -128,11 +128,11 @@ def post_detail(request, pk):
 
 نعم. لقد حان الوقت لتحديث الصفحة: http://127.0.0.1:8000/
 
-![Post list view](images/post_list2.png)
+![عرض قائمة المشاركات](images/post_list2.png)
 
 لقد نجحت! ولكن ماذا يحدث عند النقر على رابط في عنوان مشاركة المدونة؟
 
-![TemplateDoesNotExist error](images/template_does_not_exist2.png)
+![خطأ TemplateDoesNotExist](images/template_does_not_exist2.png)
 
 أوه لا! خطأ آخر! لكننا نعرف بالفعل كيفية التعامل معه، أليس كذلك؟ نحن بحاجة إلى إضافة قالب!
 
@@ -166,7 +166,7 @@ def post_detail(request, pk):
 
 حسنًا، يمكننا تحديث صفحتنا ومعرفة ما إذا كانت `TemplateDoesNotExist` قد ذهبت الآن.
 
-![Post detail page](images/post_detail2.png)
+![صفحة تفاصيل المشاركة](images/post_detail2.png)
 
 ياي! إنه يعمل!
 
@@ -198,7 +198,7 @@ def post_detail(request, pk):
 
 الخوادم مثل PythonAnywhere تحب معاملة "الملفات الثابتة" (مثل ملفات CSS) بشكل مختلف عن ملفات بايثون لأنها يمكن أن تحسن تحميلها بشكل أسرع. ونتيجة لذلك، كلما قمنا بتغيير ملفات CSS الخاصة بنا، نحن بحاجة إلى تشغيل أمر إضافي على الخادم لإخباره بتحديثهم. الأمر يسمى `collectstatic`.
 
-Start by activating your virtualenv if it's not still active from earlier (PythonAnywhere uses a command called `workon` to do this, it's just like the `source myenv/bin/activate` command you use on your own computer):
+ابدأ بتفعيل الـ virtualenv الخاص بك إذا لم يكن يزال نشطا من قبل (PythonAnywhere يستخدم أمر يسمى `workon` للقيام بذلك. إنه تماما مثل أمر `source myenv/bin/activate` الذي تستخدمه على جهاز الكمبيوتر الخاص بك:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -207,8 +207,8 @@ Start by activating your virtualenv if it's not still active from earlier (Pytho
     [...]
     
 
-The `manage.py collectstatic` command is a bit like `manage.py migrate`. We make some changes to our code, and then we tell Django to *apply* those changes, either to the server's collection of static files, or to the database.
+الأمر `manage.py collectstatic` يشبه قليلاً `manage.py migrate`. نحن نقوم ببعض التغييرات على تعليماتنا، ومن ثم نقول لجانغو *apply* لهذه التغييرات، إما إلى مجموعة الملفات الثابتة للخادم، أو إلى قاعدة البيانات.
 
-In any case, we're now ready to hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (from the menu button in the upper right of the console) and hit **Reload**, and then look at the https://subdomain.pythonanywhere.com page to see the result.
+وعلى أية حال، نحن الآن مستعدون للانتقال إلى ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (من زر القائمة في الجزء العلوي الأيمن من وحدة التحكم) و الضغط على **Reload**، ثم انظر إلى صفحة https://subdomain.pythonanywhere.com لرؤية النتيجة.
 
-And that should be it. Congrats! :)
+هذا ينبغي ان يكون كل شيء! مبروك:)
