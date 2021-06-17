@@ -52,9 +52,9 @@
 
 لنقم بإنشاء عنوان URL في `urls.py` من أجل `post_detail` *view* الخاص بنا!
 
-We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
+نريد عرض تفاصيل مشاركتنا الأولى في هذا الرابط ****: http://127.0.0.1:8000/post/1/
 
-Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Open the `blog/urls.py` file in the code editor, and add the line `path('post/<int:pk>/', views.post_detail, name='post_detail'),` so that the file looks like this:
+دعونا ننشئ عنوان URL في ملف `blog/urls.py` لتوجيه جانغو إلى *view* باسم `post_detail`، الذي سوف يعرض مشاركة بأكملها. افتح ملف `blog/urls.py` في محرر التعليمات البرمجية، وأضف السطر `path('post/<int:pk>/', views.post_detail, name='post_detail'),` بحيث يبدو الملف كهذا:
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
@@ -68,11 +68,11 @@ urlpatterns = [
 ]
 ```
 
-This part `post/<int:pk>/` specifies a URL pattern – we will explain it for you:
+يحدد هذا الجزء `post/<int:pk>/` نمط عنوان URL - وسوف نشرحه لك:
 
-- `post/` means that the URL should begin with the word **post** followed by a **/**. So far so good.
-- `<int:pk>` – this part is trickier. It means that Django expects an integer value and will transfer it to a view as a variable called `pk`.
-- `/` – then we need a **/** again before finishing the URL.
+- `post/` يعني أن عنوان URL يجب أن يبدأ بكلمة **post** يتبعه **/**. حتى الآن كل شيء جيد.
+- `<int:pk>` - هذا الجزء أكثر صعوبة. وهو يعني أن جانغو يتوقع قيمة صحيحة وسيقوم بتحويلها إلى عرض كمتغير يسمى `pk`.
+- `/` - ثم نحتاج إلى **/** مرة أخرى قبل الانتهاء من عنوان URL.
 
 That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
 
