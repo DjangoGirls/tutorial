@@ -94,17 +94,17 @@ urlpatterns = [
 Post.objects.get(pk=pk)Post.objects.get(pk=pk)
 ```
 
-But this code has a problem. If there is no `Post` with the given `primary key` (`pk`) we will have a super ugly error!
+ولكن توجد مشكلة في التعليمات البرمجية هذه. إذا لم يكن هناك `Post` مع الـ `primary key` (`pk`) المُعطى سيكون لدينا خطأ قبيح جداً!
 
 ![DoesNotExist error](images/does_not_exist2.png)
 
-We don't want that! But luckily Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
+نحن لا نريد ذلك! لكن لحسن الحظ جانغو يأتي مع شيء سوف يتعامل مع ذلك لنا: `get_object_or_404`. في حالة عدم وجود `Post` مع `pk` المعطى، سيتم عرض صفحة أفضل بكثير، صفحة `Page Not Found 404`.
 
 ![Page not found](images/404_2.png)
 
-The good news is that you can actually create your own `Page not found` page and make it as pretty as you want. But it's not super important right now, so we will skip it.
+الخبر الجيد هو أنه يمكنك في الواقع إنشاء صفحة `Page not found` الخاصة بك وجعلها جميلة كما تريد. لكنها ليست مهمة جداً الآن، لذلك سنتخطى ذلك.
 
-OK, time to add a *view* to our `views.py` file!
+طيب، حان الوقت لإضافة *view* لملف `views.py` لدينا!
 
 In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called `views.post_detail`. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
 
