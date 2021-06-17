@@ -162,17 +162,17 @@ def post_detail(request, pk):
 
 مرة أخرى نحن نوسع `base.html`. في الكتلة `content` نريد عرض تاريخ نشر المشاركة (إذا كان موجودا) والعنوان والنص. لكن علينا أن نناقش بعض الأشياء الهامة، أليس كذلك؟
 
-{% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ...` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` علامة قالب يمكننا استخدامها عندما نريد التحقق من شيء. (تذكر `if ... else ...` من فصل **Introduction to Python**؟) في هذا السيناريو نريد أن نتحقق إذا كان الـ `published_date` الخاص بالمشاركة ليس خالياً. {% endraw %}
 
-OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
+حسنًا، يمكننا تحديث صفحتنا ومعرفة ما إذا كانت `TemplateDoesNotExist` قد ذهبت الآن.
 
 ![Post detail page](images/post_detail2.png)
 
-Yay! It works!
+ياي! إنه يعمل!
 
-# Deploy time!
+# وقت النشر!
 
-It'd be good to see if your website still works on PythonAnywhere, right? Let's try deploying again.
+سيكون من الجيد معرفة ما إذا كان موقع الويب الخاص بك لا يزال يعمل على PythonAnywhere، أليس كذلك؟ دعونا نحاول النشر مرة أخرى.
 
 {% filename %}command-line{% endfilename %}
 
@@ -183,7 +183,7 @@ It'd be good to see if your website still works on PythonAnywhere, right? Let's 
     $ git push
     
 
-Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
+وبعد ذلك، في [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -192,11 +192,11 @@ Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+(تذكر أن تستبدل `<your-pythonanywhere-domain>` بالمجال الفرعي لـ PythonAnywhere الفعلي، بدون أقواس الزاوية. )
 
-## Updating the static files on the server
+## تحديث الملفات الثابتة على الخادم
 
-Servers like PythonAnywhere like to treat "static files" (like CSS files) differently from Python files, because they can optimise for them to be loaded faster. As a result, whenever we make changes to our CSS files, we need to run an extra command on the server to tell it to update them. The command is called `collectstatic`.
+الخوادم مثل PythonAnywhere تحب معاملة "الملفات الثابتة" (مثل ملفات CSS) بشكل مختلف عن ملفات بايثون لأنها يمكن أن تحسن تحميلها بشكل أسرع. ونتيجة لذلك، كلما قمنا بتغيير ملفات CSS الخاصة بنا، نحن بحاجة إلى تشغيل أمر إضافي على الخادم لإخباره بتحديثهم. الأمر يسمى `collectstatic`.
 
 Start by activating your virtualenv if it's not still active from earlier (PythonAnywhere uses a command called `workon` to do this, it's just like the `source myenv/bin/activate` command you use on your own computer):
 
