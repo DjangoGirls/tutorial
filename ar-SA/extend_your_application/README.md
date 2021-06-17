@@ -42,7 +42,7 @@
 
 الجزء `post_detail` يعني أن جانغو سوف يتوقع عنوان URL في `blog/urls.py` مع name=post_detail.
 
-وماذا عن `pk=post.pk`؟ `pk` هو اختصار للمفتاح الأساسي، وهو اسم فريد لكل سجل في قاعدة البيانات. كل نموذج جانغو لديه حقل يعمل كمفتاح رئيسي له، وأياً كان اسمه الآخر، فإنه يمكن أن يشار إليه أيضاً باسم "pk". Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a field named "id" holding a number that increases for each record, i.e. 1, 2, 3) and adds it as a field to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
+وماذا عن `pk=post.pk`؟ `pk` هو اختصار للمفتاح الأساسي، وهو اسم فريد لكل سجل في قاعدة البيانات. كل نموذج جانغو لديه حقل يعمل كمفتاح رئيسي له، وأياً كان اسمه الآخر، فإنه يمكن أن يشار إليه أيضاً باسم "pk". ونظرا لأننا لم نحدد مفتاحا أساسيا في نموذج `Post`، فإن جانغو ينشئ واحدا لنا (بشكل افتراضي، هو حقل يسمى "id" يحتوي على رقم يزيد لكل سجل، أي 1 و 2 و 3) ويضيفه كحقل لكل واحدة من مشاركاتنا. نصل إلى المفتاح الأساسي من خلال كتابة `post.pk`، بنفس الطريقة التي نصل بها إلى الحقول الأخرى (`title`, `author`, etc.) في الكائن `Post`!
 
 Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
 
