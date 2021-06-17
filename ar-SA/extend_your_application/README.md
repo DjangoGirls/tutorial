@@ -74,24 +74,24 @@ urlpatterns = [
 - `<int:pk>` - هذا الجزء أكثر صعوبة. وهو يعني أن جانغو يتوقع قيمة صحيحة وسيقوم بتحويلها إلى عرض كمتغير يسمى `pk`.
 - `/` - ثم نحتاج إلى **/** مرة أخرى قبل الانتهاء من عنوان URL.
 
-That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
+هذا يعني إذا قمت بإدخال `http://127.0.0.1:8000/post/5/` في المتصفح، جانغو سيفهم أنك تبحث عن *view* يسمى `post_detail` وسينقل معلومة أن `pk` تساوي `5` إلى ذلك الـ *view*.
 
-OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! The server has stopped running again. Have a look at the console – as expected, there's yet another error!
+حسنا، لقد أضفنا نمط عنوان URL جديد إلى `blog/urls.py`! دعونا نقم بتحديث الصفحة http://127.0.0.1:8000/ بوم! توقف الخادم عن العمل مرة أخرى. ألقي نظرة على وحدة التحكم – كما هو متوقع، هناك خطأ آخر!
 
 ![AttributeError](images/attribute_error2.png)
 
-Do you remember what the next step is? It's adding a view!
+هل تذكر ما الخطوة التالية؟ إنها إضافة طريقة عرض!
 
 ## إضافة مشاركة لعرض التفاصيل
 
-This time our *view* is given an extra parameter, `pk`. Our *view* needs to catch it, right? So we will define our function as `def post_detail(request, pk):`. Note that this parameter must have the exact same name as the one we specified in `urls` (`pk`). Also note that omitting this variable is incorrect and will result in an error!
+هذه المرة *view* الخاص بنا يُعطى معلمة إضافية، `pk`. الـ *view* الخاص بنا يحتاج إلى الإمساك به، أليس كذلك؟ لذلك سنقوم بتعريف وظيفتنا كـ `def post_detail(request, pk):`. لاحظ أن هذا العامل يجب أن يكون له نفس الاسم بالضبط الذي حددناه في `urls` (`pk`). لاحظ أيضا أن حذف هذا المتغير غير صحيح وسوف يؤدي إلى خطأ!
 
-Now, we want to get one and only one blog post. To do this, we can use querysets, like this:
+الآن، نريد أن نحصل على مشاركة مدونة واحدة فقط. للقيام بذلك، يمكننا استخدام مجموعات الاستعلامات، مثل هذا:
 
 {% filename %}{{ warning_icon }} blog/views.py{% endfilename %}
 
 ```python
-Post.objects.get(pk=pk)
+Post.objects.get(pk=pk)Post.objects.get(pk=pk)
 ```
 
 But this code has a problem. If there is no `Post` with the given `primary key` (`pk`) we will have a super ugly error!
