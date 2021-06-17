@@ -106,9 +106,9 @@ Post.objects.get(pk=pk)Post.objects.get(pk=pk)
 
 طيب، حان الوقت لإضافة *view* لملف `views.py` لدينا!
 
-In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called `views.post_detail`. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
+في `blog/urls.py` قمنا بإنشاء قاعدة عنوان URL اسمها `post_detail` التي تشير إلى طريقة عرض تسمى `views.post_detail`. وهذا يعني أن جانغو سوف يتوقع وظيفة عرض تسمى `post_detail` داخل `blog/views.py`.
 
-We should open `blog/views.py` in the code editor and add the following code near the other `from` lines:
+يجب علينا فتح `blog/views.py` في محرر التعليمات البرمجية وإضافة التعليمات البرمجية التالية بالقرب من أسطر `from` الأخرى:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -116,7 +116,7 @@ We should open `blog/views.py` in the code editor and add the following code nea
 from django.shortcuts import render, get_object_or_404
 ```
 
-And at the end of the file we will add our *view*:
+وفي نهاية الملف سوف نقوم بإضافة *view*:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -126,21 +126,21 @@ def post_detail(request, pk):
     return render(request, 'blog/post_detail.html', {'post': post})
 ```
 
-Yes. It is time to refresh the page: http://127.0.0.1:8000/
+نعم. لقد حان الوقت لتحديث الصفحة: http://127.0.0.1:8000/
 
 ![Post list view](images/post_list2.png)
 
-It worked! But what happens when you click a link in blog post title?
+لقد نجحت! ولكن ماذا يحدث عند النقر على رابط في عنوان مشاركة المدونة؟
 
 ![TemplateDoesNotExist error](images/template_does_not_exist2.png)
 
-Oh no! Another error! But we already know how to deal with it, right? We need to add a template!
+أوه لا! خطأ آخر! لكننا نعرف بالفعل كيفية التعامل معه، أليس كذلك؟ نحن بحاجة إلى إضافة قالب!
 
 ## إنشاء قالب لتفاصيل المشاركة
 
-We will create a file in `blog/templates/blog` called `post_detail.html`, and open it in the code editor.
+سنقوم بإنشاء ملف في `blog/templates/blog` يسمى `post_detail.html` وفتحه في محرر التعليمات البرمجية.
 
-Enter the following code:
+أدخل الأمر التالي:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -160,7 +160,7 @@ Enter the following code:
 {% endblock %}
 ```
 
-Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
+مرة أخرى نحن نوسع `base.html`. في الكتلة `content` نريد عرض تاريخ نشر المشاركة (إذا كان موجودا) والعنوان والنص. لكن علينا أن نناقش بعض الأشياء الهامة، أليس كذلك؟
 
 {% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ...` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
 
