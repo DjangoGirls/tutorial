@@ -43,11 +43,11 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 {% include "/deploy/install_git.md" %}
 
-# ساخت یک حساب کاربری GitHub {#github}
+# Create a GitHub account {#github-account}
 
 به [GitHub.com](https://www.github.com) بروید و برای یک حساب کاربری جدید و رایگان،‌ ثبت نام کنید. از بخاطر سپردن رمز عبور خود اطمینان حاصل کنید (اگر از یک نرم افزار مدیریت رمزهای عبور استفاده میکنید، رمز عبور جدید را به آن اضافه کنید).
 
-# ساخت یک حساب کاربری PythonAnywhere {#pythonanywhere}
+# Create a PythonAnywhere account {#pythonanywhere-account}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
