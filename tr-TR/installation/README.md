@@ -43,11 +43,11 @@ Aşağıdaki adımların çoğu, "konsol", "terminal", "komut penceresi" veya "k
 
 {% include "/deploy/install_git.md" %}
 
-# GitHub hesabı oluşturun {#github}
+# Create a GitHub account {#github-account}
 
 [GitHub.com](https://www.github.com)'a gidin ve ücretsiz yeni bir kullanıcı hesabı oluşturun. Şifrenizi hatırladığınızdan emin olun (eğer şifrenizi yöneticisi kullanıyorsanız, yöneticinize ekleyin).
 
-# PythonAnywhere hesabı oluşturun {#pythonanywhere}
+# Create a PythonAnywhere account {#pythonanywhere-account}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
