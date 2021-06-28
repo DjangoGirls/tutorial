@@ -43,11 +43,11 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 {% include "/deploy/install_git.md" %}
 
-# Създаване на акаунт в GitHub {#github}
+# Create a GitHub account {#github-account}
 
 Отидете на [GitHub.com](https://www.github.com) и се регистрирайте за нов безплатен потребителски акаунт. Не забравяйте да запомните паролата си (добавете я към вашия мениджър на пароли, ако използвате такъв).
 
-# Създаване на акаунт в PythonAnywhere {#pythonanywhere}
+# Create a PythonAnywhere account {#pythonanywhere-account}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
