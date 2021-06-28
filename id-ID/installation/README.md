@@ -43,11 +43,11 @@ Banyak dari langkah-langkah dibawah menunjuk kepada “konsol atau console”, �
 
 {% termasuk “/menyebar/pasang_git.md” %}
 
-# Buka akun GitHub {#github}
+# Create a GitHub account {#github-account}
 
 Masuk ke [GitHub.com](https://www.github.com) dan daftar pengguna baru. Pastikan untuk ingat kata kuncu (tambahkan itu pada manajer kata kunci, bila anda menggunakannya).
 
-# Buka akun PhytonAnywhere {#pythonanywhere}
+# Create a PythonAnywhere account {#pythonanywhere-account}
 
 {% termasuk “/penyebaran/daftar_phytonanywhere.md” %}
 
