@@ -43,11 +43,11 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 {% include "/deploy/install_git.md" %}
 
-# GitHubのアカウント作成 {#github}
+# Create a GitHub account {#github-account}
 
 [GitHub.com](https://www.github.com)へ行って、新しく無料のユーザーアカウントを登録しましょう。パスワードを忘れないようにしてください（もしパスワードマネージャーを使っているなら、追加しましょう）。
 
-# PythonAnywhereのアカウント作成 {#pythonanywhere}
+# Create a PythonAnywhere account {#pythonanywhere-account}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
