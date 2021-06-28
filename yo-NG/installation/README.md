@@ -43,11 +43,11 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 {% include "/deploy/install_git.md" %}
 
-# Create a GitHub account {#github}
+# Create a GitHub account {#github-account}
 
 Lọ sí [GitHub.com](https://www.github.com) kí o sì forúkọ sílẹ̀ fún account aṣàmúlò ọ̀fẹ́ tuntun kan. Ri dájú láti rántí ọ̀rọ̀ aṣínà rẹ (ṣàfikún rẹ̀ sínú alákòóso ọ̀rọ̀ aṣínà rẹ, tí o bá lo ọ̀kan).
 
-# Create a PythonAnywhere account {#pythonanywhere}
+# Create a PythonAnywhere account {#pythonanywhere-account}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
