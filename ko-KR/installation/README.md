@@ -43,11 +43,11 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 {% include "/deploy/install_git.md" %}
 
-# GitHub 계정 만들기 {#github}
+# Create a GitHub account {#github-account}
 
 [GitHub.com](https://www.github.com) 에 접속해서 무료계정으로 회원가입을 해요. 비밀번호를 잊어먹지 마세요. (비밀번호 관리자를 쓰고있다면 추가해 두세요).
 
-# PythonAnywhere 계정 만들기 {#pythonanywhere}
+# Create a PythonAnywhere account {#pythonanywhere-account}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
