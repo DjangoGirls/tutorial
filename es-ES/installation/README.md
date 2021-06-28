@@ -43,11 +43,11 @@ Muchos de los pasos citados abajo hacen referencia a la "consola", "terminal", "
 
 {% include "/deploy/install_git.md" %}
 
-# Crear una cuenta de GitHub {#github}
+# Create a GitHub account {#github-account}
 
 Ve a [GitHub.com](https://www.github.com) y registrate para una nueva y gratuita cuenta de usuario. Asegúrate de recordar tu contraseña ( añadela a tu manejador de contraseñas, si tu usas uno).
 
-# Crear una cuenta de PythonAnywhere {#pythonanywhere}
+# Create a PythonAnywhere account {#pythonanywhere-account}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
