@@ -43,11 +43,11 @@ Many of the steps below reference the "console", "terminal", "command window", o
 
 {% include "/deploy/install_git.md" %}
 
-# Створіть акаунт на GitHub {#github}
+# Create a GitHub account {#github-account}
 
 Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password (add it to your password manager, if you use one).
 
-# Створіть акаунт на PythonAnywhere {#pythonanywhere}
+# Create a PythonAnywhere account {#pythonanywhere-account}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
