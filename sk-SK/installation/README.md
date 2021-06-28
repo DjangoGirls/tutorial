@@ -43,11 +43,11 @@ Many of the steps below reference the "console", "terminal", "command window", o
 
 {% include "/deploy/install_git.md" %}
 
-# Create a GitHub account {#github}
+# Create a GitHub account {#github-account}
 
 Prejdite na adresu [ GitHub.com ](https://www.github.com) a zaregistrujte si nový bezplatný používateľský účet. Nezabudnite si heslo zapamätať (ak používate správcu hesiel, pridajte si ho tam).
 
-# Create a PythonAnywhere account {#pythonanywhere}
+# Create a PythonAnywhere account {#pythonanywhere-account}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
