@@ -43,11 +43,11 @@ Vários dos passos abaixos referenciam o "console", "terminal", "janela de coman
 
 {% include "/deploy/install_git.md" %}
 
-# Create a GitHub account {#github}
+# Create a GitHub account {#github-account}
 
 Vá para [GitHub.com](https://www.github.com) e registre uma nova conta, de graça. Assegure-se de lembrar a sua senha (e a adicione ao seu gerenciador de senhas, caso você tenha um).
 
-# Create a PythonAnywhere account {#pythonanywhere}
+# Create a PythonAnywhere account {#pythonanywhere-account}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
