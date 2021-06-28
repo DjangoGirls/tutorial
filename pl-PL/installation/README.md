@@ -43,11 +43,11 @@ Wiele z poniższych kroków odnosi się do "konsoli", "terminala", "wiersza pole
 
 {% include "/deploy/install_git.md" %}
 
-# Create a GitHub account {#github}
+# Create a GitHub account {#github-account}
 
 Przejdź do strony [ GitHub.com ](https://www.github.com) i zarejestruj nowe, bezpłatne konto użytkownika. Pamiętaj, aby zapamiętać swoje hasło (dodaj je do swojego menedżera haseł, jeśli go używasz).
 
-# Create a PythonAnywhere account {#pythonanywhere}
+# Create a PythonAnywhere account {#pythonanywhere-account}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
