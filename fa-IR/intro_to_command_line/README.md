@@ -118,7 +118,7 @@
     C:\Users\olasitarska
     
 
-> Note: 'cd' stands for 'change directory'. With PowerShell you can use pwd just like on Linux or Mac OS X.
+> نکته: 'cd' مخفف 'change directory' به معنی 'دایرکتوری را عوض کن'. در نرم افزار PowerShell در ویندوز شما می‌توانید مانند لینوکس یا مک از دستور pwd استفاده کنید.
 
 <!--endsec-->
 
@@ -173,7 +173,7 @@ OS X و لینوکس یک فرمان `man` دارند که در مورد فرم�
     ...
     
 
-> Note: In PowerShell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
+> نکته: در PowerShell شما می‌توانید مانند لینوکس یا Mac OS X از دستور 'ls' استفاده کنید.<!--endsec-->
 
 * * *
 
