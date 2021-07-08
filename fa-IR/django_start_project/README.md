@@ -113,18 +113,18 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 > 
 > اگر از cloud9 استفاده می‌کنید `.amazonaws.com` را به `ALLOWED_HOSTS` اضافه کنید
 > 
-> If you are hosting your project on `Glitch.com`, let us protect the Django secret key that needs to remain confidential (otherwise, anyone remixing your project could see it):
+> اگر شما پروژه خود را بر روی `Glitch.com` میزبانی می‌کنید، اجازه دهید که از کلید مخفی جنگو یا Djanog secret key پروژه شما که باید محرمانه بماند محافظت کنیم (در غیر اینصورت هر کس که پروژه شما را بررسی کند آن را خواهد دید):
 > 
-> - First, we are going to create a random secret key. Open the Glitch terminal again, and type the following command:
+> - در ابتدا، یک کلید مخفی شانسی می‌سازیم. ترمینال Glitch را دوباره باز کنید و دستورات زیر را تایپ کنید:
 >     
->     {% filename %}command-line{% endfilename %}
+>     {% filename %}خط فرمان{% endfilename %}
 >     
 >     ```bash
 >     python -c 'from django.core.management.utils import get_random_secret_key; \
 >           print(get_random_secret_key())'
 >     ```
 >     
->     This should display a long random string, perfect to use as a secret key for your brand new Django web site. We will now paste this key into a `.env` file that Glitch will only show you if you are the owner of the web site.
+>     این کار باعث خواهد شد که یک رشته اتفاقی از کاراکترها و حروف ساخته شود، چیزی که به عنوان یک کلید مخفی برای پروژه جنگو شما کاملاً مناسب است. We will now paste this key into a `.env` file that Glitch will only show you if you are the owner of the web site.
 > 
 > - Create a file `.env` at the root of your project and add the following property in it:
 >     
