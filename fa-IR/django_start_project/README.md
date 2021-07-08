@@ -124,9 +124,9 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 >           print(get_random_secret_key())'
 >     ```
 >     
->     این کار باعث خواهد شد که یک رشته اتفاقی از کاراکترها و حروف ساخته شود، چیزی که به عنوان یک کلید مخفی برای پروژه جنگو شما کاملاً مناسب است. We will now paste this key into a `.env` file that Glitch will only show you if you are the owner of the web site.
+>     این کار باعث خواهد شد که یک رشته اتفاقی از کاراکترها و حروف ساخته شود، چیزی که به عنوان یک کلید مخفی برای پروژه جنگو شما کاملاً مناسب است. ما این کلید را در فایل `.env` در Glitch اضافه می‌کنیم، این فایل درصورتی توسط Glitch به ما نشان داده می‌شود که ما صاحب پروژه باشیم.
 > 
-> - Create a file `.env` at the root of your project and add the following property in it:
+> - فایلی به نام `.env` در پوشه اصلی پروژه بسازید و کدهای زیر را در آن قرار دهید:
 >     
 >     {% filename %}.env{% endfilename %}
 >     
@@ -135,7 +135,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 >     SECRET='3!0k#7ds5mp^-x$lqs2%le6v97h#@xopab&oj5y7d=hxe511jl'
 >     ```
 > 
-> - Then update the Django settings file to inject this secret value and set the Django web site name:
+> - سپس فایل settings پروژه جنگو را با تغییرات زیر به روز رسانی کنید تا کلید مخفی به آن اضافه شود:
 >     
 >     {% filename %}mysite/settings.py{% endfilename %}
 >     
@@ -143,7 +143,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 >     SECRET_KEY = os.getenv('SECRET')
 >     ```
 > 
-> - And a little further down in the same file, we inject the name of your new Glitch website:
+> - کمی پایین‌تر در همان فایل، نام وبسایت جدید Glitch شما را اضافه می‌کنیم:
 >     
 >     {% filename %}mysite/settings.py{% endfilename %}
 >     
