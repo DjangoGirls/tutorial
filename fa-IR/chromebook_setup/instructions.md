@@ -126,13 +126,13 @@ LOGGING = {
 
 این کار یک فایل `debug.log` می‌سازد که جزییات عملیات جنگو و پیغام‌های خطای احتمالی، در آن است، به کمک این فایل عیب‌یابی وب‌سایت بسیار ساده‌تر می‌شود.
 
-اولین ریستارت پروژه Glitch‌ موفقیت‌آمیز نخواهد بود. (If you click on the top dropdown button `Show` then click on `In a New Window`, you will receive a `DisallowedHost` error message.) Do not worry about it at this stage, the tutorial will fix this as soon as you update the Django settings of your project in the `mysite/settings.py` file.
+اولین ریستارت پروژه Glitch‌ موفقیت‌آمیز نخواهد بود. (اگر بر روی منوی کشویی `Show` کلیک کنید و سپس `In a New Window` را بزنید، پیغام خطای `DisallowedHost` را دریافت خواهید کرد) در مورد این مرحله نگران نباشید، این آموزش این مشکل را به زودی و پس از به روزرسانی تنظیمات پروژه که در فایل `mysite/settings.py` است، حل خواهد کرد.
 
 ### محیط مجازی
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+یک محیط مجازی (Virtual Environment یا virtualenv) شبیه یک جعبه خصوصی است که ما می‌توانیم کدهای کامپیوتری مربوط به یک پروژه را در آن جمع کنیم. ما از آن‌ها استفاده می‌کنیم تا تکه‌های مختلف کدهای هر پروژه را جدا از پروژه دیگر نگه داریم تا بین پروژه‌ها تداخل پیش نیاید.
 
-Run:
+بعد، دستورات زیر را اجرا کنید:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -143,16 +143,16 @@ Run:
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: `~=`).
+(توجه کنید که در خط آخر ما از یک علامت مد و یک مساوی استفاده کردیم: `~=`).
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+یک حساب کاربری [GitHub](https://github.com) بسازید.
 
 ### PythonAnywhere
 
-The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+دوره آموزشی جنگوگرلز شامل بخشی است به نام فاز دیپلوی یا Deployment، که شامل گرفتن و انتقال دادن کدهای وبسایت شما به یک کامپیوتر در دسترس عموم (به نام سرور) است تا سایرین هم بتوانند کار شما را ببینند.
 
-This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+اگر این دوره آموزشی را بر روی Chromebook که خودش کامپیوتری بر روی اینترنت است (در مقابل لپ تاپ‌های معمولی که کامپیوتری محلی محسوب می‌شوند)، انجام می‌دهید این بخش کمی عجیب خواهد بود. با این‌حال، استفاده از Cloud 9 به عنوان یک محیط کاری برای کارهای در جریان و استفاده از Python Anywhere به عنوان یک فضای معرفی و نمایش پروژه هایی که در طول زمان کامل می‌شوند، مفید است.
 
-Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+بنابراین یک حساب کاربری جدید در [www.pythonanywhere.com](https://www.pythonanywhere.com) بسازید.
