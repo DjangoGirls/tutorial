@@ -124,9 +124,9 @@ LOGGING = {
 }
 ```
 
-This will create a `debug.log` file detailing Django operations and any error messages that might come up, making it much easier to fix if your website does not work.
+این کار یک فایل `debug.log` می‌سازد که جزییات عملیات جنگو و پیغام‌های خطای احتمالی، در آن است، به کمک این فایل عیب‌یابی وب‌سایت بسیار ساده‌تر می‌شود.
 
-The initial restarting of the Glitch project should fail. (If you click on the top dropdown button `Show` then click on `In a New Window`, you will receive a `DisallowedHost` error message.) Do not worry about it at this stage, the tutorial will fix this as soon as you update the Django settings of your project in the `mysite/settings.py` file.
+اولین ریستارت پروژه Glitch‌ موفقیت‌آمیز نخواهد بود. (If you click on the top dropdown button `Show` then click on `In a New Window`, you will receive a `DisallowedHost` error message.) Do not worry about it at this stage, the tutorial will fix this as soon as you update the Django settings of your project in the `mysite/settings.py` file.
 
 ### محیط مجازی
 
