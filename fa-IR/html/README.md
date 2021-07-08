@@ -116,10 +116,10 @@ HTML مخفف عبارت "HyperText Markup Language" است. **HyperText** به 
 * `<article></article>`محتوای مستقل و فارق از محیط را مشخص می‌کند
 * `<section></section>` یک بخش را در فایل مشخص می‌کند
 * `<header></header>` بخش سربرگ یک صفحه را مشخص می‌کند
-* `<main></main>` specifies the main content of a document
-* `<aside></aside>` defines some content aside from the content it is placed in (like a sidebar)
-* `<footer></footer>` defines a footer for a document or section
-* `<time></time>` defines a specific time (or datetime)
+* `<main></main>` بخش محتوای اصلی صفحه را مشخص می‌کند
+* `<aside></aside>` محتوای جانبی نسبت به جایی که در آن قرار گرفته را مشخص می‌کند (مانند منوی کناری)
+* `<footer></footer>` بخش پاورقی یک سند را مشخص می‌کند
+* `<time></time>` بک زمان (یا تاریخ و زمان) را مشخص می‌کند
 
 اینجا نمونه‌ای از یک تمپلیت کامل داریم. آن را در فایل `blog/templates/blog/post_list.html` کپی کنید:
 
@@ -151,10 +151,10 @@ HTML مخفف عبارت "HyperText Markup Language" است. **HyperText** به 
 </html>
 ```
 
-We've created one `header` section and two `article` section here.
+ما اینجا یک بخش `header` و دو بخش 0>article</code> ایجاد کردیم.
 
-* The `header` element contains the title of our blog – it's a heading and a link
-* The two `article` elements contain our blog posts with a published date in a `time` element, a `h2` element with a post title that is clickable and a `p` (paragraph) element for text of our blog post.
+* بخش `header` شامل عنوان مقاله وبلاگ ماست - یک عنوان و یک لینک
+* دو عنصر `article` شامل پست‌های وبلاگ ما به همراه تاریخ انتشار در یک عنصر `time`، یک عنصر`h2` با عنوان مقاله که قابل کلیک کردن است و عنصر `p` (paragraph) که برای متن مقاله استفاده شده است.
 
 چنین نتیجه ای به ما می‌دهد:
 
