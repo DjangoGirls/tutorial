@@ -55,9 +55,9 @@ HTML مخفف عبارت "HyperText Markup Language" است. **HyperText** به 
 
 کار می‌کند! خوب شد! :)
 
-* The line `<!DOCTYPE html>` is not a HTML tag. It only declares the document type. Here, it informs the browser that document type is [HTML5](https://html.spec.whatwg.org/#the-doctype). This is always the beginning of any HTML5 file.
-* The most basic tag, `<html>`, is always the beginning of html content and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
-* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
+* خط `<!DOCTYPE html>` یک تگ HTML نیست. این عبارت فقط نوع فایل را مشخص می‌کند. در اینجا این عبارت به مرورگر اعلام می‌کند که نوع فایل [HTML5](https://html.spec.whatwg.org/#the-doctype) است. همیشه شروع هر نوع فایل HTML5 با همین عبارت شروع می‌شود.
+* `<html>` پایه‌ای‌ترین تگ و معمولاً اولین تگ در ابتدای صفحه است و تگ `</html>` معمولاً در انتهای صفحه می‌آید. همانطور که می‌بینید، تمام محتوای وبسایت بین تگ `<html>` در ابتدا و تگ `</html>` در انتها قرار می‌گیرند
+* تگ `<p>` برای پاراگراف‌ها به کار می‌رود و تگ `</p>` پایان هر پاراگراف را مشخص می‌کند
 
 ## Head and body
 
@@ -112,10 +112,10 @@ HTML مخفف عبارت "HyperText Markup Language" است. **HyperText** به 
 * `<a href="https://djangogirls.org">لینک</a>` یک لینک می‌سازد
 * `<ul><li>آیتم اول</li><li>آیتم دوم</li></ul>` یک لیست، دقیقاً مانند همین لیست درست می‌کند!
 * `<div></div>` یک بخش جدید در صفحه تعریف می‌کند
-* `<nav></nav>` defines a set of navigation links
-* `<article></article>` specifies independent, self-contained content
-* `<section></section>` defines a section in a document
-* `<header></header>` specifies a header for a document or section
+* `<nav></nav>` مجموعه‌ای از لینک‌های دسترسی را تعریف می‌کند
+* `<article></article>`محتوای مستقل و فارق از محیط را مشخص می‌کند
+* `<section></section>` یک بخش را در فایل مشخص می‌کند
+* `<header></header>` بخش سربرگ یک صفحه را مشخص می‌کند
 * `<main></main>` specifies the main content of a document
 * `<aside></aside>` defines some content aside from the content it is placed in (like a sidebar)
 * `<footer></footer>` defines a footer for a document or section
