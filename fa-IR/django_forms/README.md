@@ -157,7 +157,7 @@ We need to create a file `post_edit.html` in the `blog/templates/blog` directory
 * ما به یک دکمه `ذخیره کردن` نیاز داریم. این کار را با یک دکمه HTML انجام می‌دهیم: `<button type="submit">Save</button>`.
 * و در نهایت، درست بعد از باز شدن تگ `<form ...>` باید {% raw %}`{% csrf_token %}`{% endraw %} را اضافه کنیم. نوشتن این عبارت بسیار مهم است، زیرا فرم‌های شما را امن می‌کند! اگر شما این تکه را فراموش کنید، جنگو هنگام تلاش برای ذخیره کردن فرم پیغام خطا می‌دهد:
 
-![CSFR Forbidden page](images/csrf2.png)
+![صفحه خطا CSRF](images/csrf2.png)
 
 OK, so let's see how the HTML in `post_edit.html` should look:
 
@@ -177,7 +177,7 @@ OK, so let's see how the HTML in `post_edit.html` should look:
 
 Time to refresh! Yay! Your form is displayed!
 
-![New form](images/new_form2.png)
+![فرم جدید](images/new_form2.png)
 
 But, wait a minute! When you type something in the `title` and `text` fields and try to save it, what will happen?
 
@@ -279,7 +279,7 @@ That is awesome!
 
 > As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
 
-![Logged in error](images/post_create_error.png)
+![خطا ورود به سیستم](images/post_create_error.png)
 
 ## اعتبارسنجی فرم
 
@@ -287,7 +287,7 @@ Now, we will show you how cool Django forms are. A blog post needs to have `titl
 
 Try to save the form without `title` and `text`. Guess what will happen!
 
-![Form validation](images/form_validation2.png)
+![اعتبارسنجی فرم](images/form_validation2.png)
 
 Django is taking care to validate that all the fields in our form are correct. Isn't it awesome?
 
@@ -382,11 +382,11 @@ form = PostForm(instance=post)
 
 OK, let's test if it works! Let's go to the `post_detail` page. There should be an edit button in the top-right corner:
 
-![Edit button](images/edit_button2.png)
+![کلید Edit](images/edit_button2.png)
 
 When you click it you will see the form with our blog post:
 
-![Edit form](images/edit_form2.png)
+![فرم Edit](images/edit_form2.png)
 
 Feel free to change the title or the text and save the changes!
 
@@ -408,7 +408,7 @@ Open `blog/templates/blog/base.html` in the code editor, find our `div` inside `
 </a>
 ```
 
-We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! Change the `<a>` element to look like this:
+حالا ما می‌خواهیم یک تگ `{% if %}` دیگر به این اضافه کنیم که باعث خواهد شد این لینک فقط برای کاربری نشان داده شود که به عنوان ادمین وارد شده باشد که در حال حاضر فقط شما هستید! تگ `<a>` را به شکل زیر تغییر دهید:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -420,11 +420,11 @@ We're going to add another `{% if %}` tag to this, which will make the link show
 {% endif %}
 ```
 
-This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. This doesn't protect the creation of new posts completely, but it's a good first step. We'll cover more security in the extension lessons.
+تگ `{% if %}` باعث خواهد شد که لینک فقط در صورتی به مرورگر ارسال شود که کاربر درخواست کننده صفحه، با حساب کاربری ادمین وارد شده باشد. این کار به طور کامل ساختن پست جدید را محافظت نمی‌کند اما قدم اولیه‌ی خوبی است. مباحث بیشتری از امنیت را در بخش‌های اضافه آموزش پوشش خواهیم داد.
 
-Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
+کلید edit را که به صفحه جزییات یک پست اضافه کردیم به یاد دارید؟ حالا همین کار را برای آن صفحه نیز می‌خواهیم انجام دهیم تا دیگران قادر به تغییر محتوای یک پست نباشند.
 
-Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
+فایل `blog/templates/blog/post_detail.html` را باز کنید و خط زیر را پیدا کنید:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -434,7 +434,7 @@ Open `blog/templates/blog/post_detail.html` in the code editor and find this lin
 </a>
 ```
 
-Change it to this:
+آن را به شکل زیر تغییر دهید:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -446,15 +446,15 @@ Change it to this:
 {% endif %}
 ```
 
-Since you're likely logged in, if you refresh the page, you won't see anything different. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
+از آنجا که احتمالاً هنوز به عنوان ادمین در سیستم لاگین کرده‌اید، اگر صفحه را دوباره بازخوانی کنید، تغییر خاصی را نمی‌بینید. صفحه را در یک مرورگر دیگر یا یک پنجره ناشناس incognito window (در Windows Edge به آن "InPrivate" می‌گویند) بارگذاری کنید. خواهید دید که لینک و آیکون اصلاح پست، نمایش داده نمی‌شود!
 
 ## یک چیز دیگر: زمان دیپلوی است!
 
-Let's see if all this works on PythonAnywhere. Time for another deploy!
+بیایید ببینیم آیا همه این تغییرات در PythonAnywhere کار می‌کند. وقت یک دیپلوی کردن دیگر است!
 
 * ابتدا کد جدید را کامیت کنید و آن را به GitHub بفرستید:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ git status
     $ git add .
@@ -472,8 +472,8 @@ Let's see if all this works on PythonAnywhere. Time for another deploy!
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+(یادتان باشد که `<your-pythonanywhere-domain>` را با زیر دامنه اصلی خود در PythonAnywhere عوض کنید البته بدون آکولادها.)
 
 * در نهایت به صفحه ["Web" page](https://www.pythonanywhere.com/web_app_setup/) بروید (از کلید منو در بالا و سمت راست کنسول استفاده کنید) و کلید **Reload** را بزنید. آدرس وبلاگ خودتان https://subdomain.pythonanywhere.com را باز کنید تا تغییرات را ببینید.
 
-And that should be it. Congrats! :)
+به نتیجه رسید! تبریک! :)
