@@ -136,7 +136,7 @@ Time to open the `blog/views.py` file in the code editor and add the following l
 from .forms import PostForm
 ```
 
-And then our *view*:
+و حالا *view* ما:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -159,7 +159,7 @@ We need to create a file `post_edit.html` in the `blog/templates/blog` directory
 
 ![صفحه خطا CSRF](images/csrf2.png)
 
-OK, so let's see how the HTML in `post_edit.html` should look:
+خوب، بگذار ببینیم HTML در فایل `post_edit.html` چطور باید باشد:
 
 {% filename %}blog/templates/blog/post_edit.html{% endfilename %}
 
@@ -398,7 +398,7 @@ If you need more information about Django forms, you should read the documentati
 
 Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
 
-Open `blog/templates/blog/base.html` in the code editor, find our `div` inside `header` and the anchor element you put in there earlier. It should look like this:
+فایل `blog/templates/blog/base.html` را در ویرایشگر کد باز کنید بخش `div` با نام `header` و تگ a موجود در آن را پیدا کنید. باید چیزی شبیه به این باشد:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
