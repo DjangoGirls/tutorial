@@ -47,8 +47,8 @@ IDE ابری ابزاری است که به شما دسترسی به یک ویر�
 
 1. به [Glitch.com](https://glitch.com/) بروید 
 2. یک حساب کاربری (https://glitch.com/signup) بسازید یا از حساب GitHub خود استفاده کنید. (راهنمای استفاده از حساب GitHubرا در زیر ببینید)
-3. Click *New Project* and choose *hello-webpage*
-4. Click on the Tools dropdown list (at the bottom left side of the window), then on Terminal button to open terminal tab with a prompt like this:
+3. بر روی *New Project* کلیک کنید و گزینه *hello-webpage* را انتخاب کنید
+4. بر روی گزینه کشویی Tools کلیک کنید (در سمت چپ و پایین صفحه)، سپس بر روی دکمه Terminal کلیک کنید تا یک کنسول خط فرمان باز شود: 
 
 {% filename %}Terminal{% endfilename %}
 
