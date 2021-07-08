@@ -55,7 +55,7 @@ IDE ابری ابزاری است که به شما دسترسی به یک ویر�
     app@name-of-your-glitch-project:~
     
 
-When using Glitch.com as your Cloud IDE, you don't have to create a virtual environment. Instead, create the following files manually:
+هنگامی که از Glitch.com به عنوان ویرایشگر ابری خود استفاده می‌کنید، لازم نیست که یک محیط مجازی بسازید، به جای آن فایل‌های زیر را باید بسازید:
 
 {% filename %}glitch.json{% endfilename %}
 
@@ -91,7 +91,7 @@ python3 manage.py migrate
 python3 manage.py runserver $PORT
 ```
 
-Once these files are created, go to the Terminal and execute the following commands to create your first Django project:
+وقتی این فایل‌ها ساخته شدند، به Terminal بروید و دستورات زیر را اجرا کنید تا اولین پروژه جنگو شما ساخته شود:
 
 {% filename %}Terminal{% endfilename %}
 
@@ -99,7 +99,7 @@ Once these files are created, go to the Terminal and execute the following comma
     refresh
     
 
-In order to see detailed error messages, you can activate Django debug logs for your Glitch application. Simply add the following at the end of the `mysite/settings.py` file.
+برای دیدن جزییات مربوط به پیغام خطا، می‌توانید لاگ عیب‌یابی جنگو را در اپلیکیشن Glitch فعال کنید. به سادگی کد زیر را به انتهای فایل `mysite/settings.py` اضافه کنید.
 
 {% filename %}mysite/settings.py{% endfilename %}
 
