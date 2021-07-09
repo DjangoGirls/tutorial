@@ -2,7 +2,7 @@ Du kan [hoppa över denna sektion](http://tutorial.djangogirls.org/en/installati
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com)
 
-Cloud IDE är ett verktyg som ger användaren en kod-editor och tillgång till en dator på internet på vilken du kan installera, skriva och köra mjukvara. Under denna introduktion kommer Cloud IDE vara din *lokala maskin*. Du kommer fortfarande att köra din kommandon i terminalen, precis som dina klasskamrater som sitter på OS X, Ubuntu, eller Windows, men din terminal kommer vara kopplat till en dator som Cloud IDE har satt upp till dig. Here are the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com). Du kan välja en Cloud IDE och följ anvisningen för den Cloud IDE.
+Cloud IDE är ett verktyg som ger användaren en kod-editor och tillgång till en dator på internet på vilken du kan installera, skriva och köra mjukvara. Under denna introduktion kommer Cloud IDE vara din *lokala maskin*. Du kommer fortfarande att köra din kommandon i terminalen, precis som dina klasskamrater som sitter på OS X, Ubuntu, eller Windows, men din terminal kommer vara kopplat till en dator som Cloud IDE har satt upp till dig. Här är instruktionerna för cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com). Du kan välja en Cloud IDE och följ anvisningen för den Cloud IDE.
 
 #### PaizaCloud Cloud IDE
 
@@ -45,9 +45,9 @@ Detta nedre område är din terminal. Du kan använda terminalen för att skicka
 
 #### Glitch.com Cloud IDE
 
-1. Go to [Glitch.com](https://glitch.com/)
-2. Sign up for an account (https://glitch.com/signup) or use your GitHub account if you have one. (See GitHub instructions below.)
-3. Click *New Project* and choose *hello-webpage*
+1. Gå till [Glitch.com](https://glitch.com/)
+2. Registrera ett nytt konto (https://glitch.com/signup) eller använd ditt GitHub-konto om du har ett. (Se GitHub-instruktionerna nedan.)
+3. Klicka på *New Project* och välj *hello-webpage*
 4. Click on the Tools dropdown list (at the bottom left side of the window), then on Terminal button to open terminal tab with a prompt like this:
 
 {% filename %}Terminal{% endfilename %}
