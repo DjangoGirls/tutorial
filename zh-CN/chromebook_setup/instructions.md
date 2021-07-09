@@ -50,7 +50,7 @@ PaizaCloud Cloud IDE的终端是为你的指示准备的。 你可以调整窗�
 3. Click *New Project* and choose *hello-webpage*
 4. Click on the Tools dropdown list (at the bottom left side of the window), then on Terminal button to open terminal tab with a prompt like this:
 
-{% filename %}Terminal{% endfilename %}
+{% filename %}终端{% endfilename %}
 
     app@name-of-your-glitch-project:~
     
