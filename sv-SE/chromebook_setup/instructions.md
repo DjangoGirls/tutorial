@@ -124,15 +124,15 @@ LOGGING = {
 }
 ```
 
-This will create a `debug.log` file detailing Django operations and any error messages that might come up, making it much easier to fix if your website does not work.
+Detta kommer att skapa filen `debug.log` som beskriver Django-operationer och eventuella felmeddelanden som kan komma upp, vilket gör felen mycket lättare att fixa om din webbplats inte fungerar.
 
-The initial restarting of the Glitch project should fail. (If you click on the top dropdown button `Show` then click on `In a New Window`, you will receive a `DisallowedHost` error message.) Do not worry about it at this stage, the tutorial will fix this as soon as you update the Django settings of your project in the `mysite/settings.py` file.
+Den första omstarten av Glitch-projektet kommer misslyckas. (Om du klickar på den övre rullgardinsmenyn `Show` och sedan klickar på `In a New Window`, kommer du att få felmeddelandet `DisallowedHost`. Oroa dig inte för det just nu, guiden kommer att fixa detta så snart du uppdaterar Django-inställningarna för ditt projekt i filen `mysite/settings.py`.
 
 ### Virtuell miljö
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+En virtuell miljö (även kallad virtualenv) är som en privat låda som vi kan stoppa användbar datorkod i för ett projekt vi arbetar med. Vi använder dem för att hålla olika kodbitar vi vill ha för våra olika projekt separerade så saker inte blandas ihop mellan projekt.
 
-Run:
+Kör:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -143,11 +143,11 @@ Run:
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: `~=`).
+(observera att på sista raden använder vi ett tilde följt av ett likamedtecken: `~=`).
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+Skapa ett [GitHub](https://github.com)-konto.
 
 ### PythonAnywhere
 
