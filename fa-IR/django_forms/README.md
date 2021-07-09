@@ -44,7 +44,7 @@ class PostForm(forms.ModelForm):
 
 ## لینک به یک صفحه با فرم
 
-Before we add the link, we need some icons to use as buttons for the link. For this tutorial, download [file-earmark-plus.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/file-earmark-plus.svg) and save it in the folder `blog/templates/blog/icons/`
+قبل از آنکه لینک را اضافه کنیم، لازم است آیکونی را به عنوان دکمه برای این لینک اضافه کنیم. برای این دوره آموزشی فایل [file-earmark-plus.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/file-earmark-plus.svg) را دانلود کنید و آن را در پوشه `blog/templates/blog/icons/` ذخیره کنید
 
 > Note: To download the SVG image, open the context menu on the link (usually by right-clicking on it) and select "Save link as". In the dialog asking you where to save the file, navigate to the `djangogirls` directory of your Django project, and within that to subdirectory `blog/templates/blog/icons/`, and save the file there.
 
