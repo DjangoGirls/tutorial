@@ -46,9 +46,9 @@ class PostForm(forms.ModelForm):
 
 قبل از آنکه لینک را اضافه کنیم، لازم است آیکونی را به عنوان دکمه برای این لینک اضافه کنیم. برای این دوره آموزشی فایل [file-earmark-plus.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/file-earmark-plus.svg) را دانلود کنید و آن را در پوشه `blog/templates/blog/icons/` ذخیره کنید
 
-> Note: To download the SVG image, open the context menu on the link (usually by right-clicking on it) and select "Save link as". In the dialog asking you where to save the file, navigate to the `djangogirls` directory of your Django project, and within that to subdirectory `blog/templates/blog/icons/`, and save the file there.
+> نکته: برای دانلود فایل SVG منو زمینه‌ای مربوط به آن را باز کنید (معمولاً به کمک راست کلیک بر روی آن) و بعد گزینه "Save link as" را انتخاب کنید. در پنجره‌ای که باز می‌شود آدرس محلی که می‌خواهید فایل را ذخیره کنید، مشخص کنید، به پوشه `djangogirls` که پروژه جنگو شما در آن است بروید و پوشه `blog/templates/blog/icons/` را پیدا کنید و فایل را در آن ذخیره کنید.
 
-It's time to open `blog/templates/blog/base.html` in the code editor. Now we can use this icon file inside the base template as follows. In the `div` element inside `header` section, we will add a link before the `h1` element:
+وقت آن است که فایل `blog/templates/blog/base.html` را در ویرایشگر متن خود باز کنید. حالا می‌توانیم از فایل آیکون در تمپلیت base به شکل زیر استفاده کنیم. در عنصر `div` که در بخش `header` قرار دارد، لینکی قبل از عنصر `h1` اضافه خواهیم کرد:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -58,7 +58,7 @@ It's time to open `blog/templates/blog/base.html` in the code editor. Now we can
 </a>
 ```
 
-Note that we want to call our new view `post_new`. The [SVG icon](https://icons.getbootstrap.com/icons/file-earmark-plus/) is provided by the [Bootstrap Icons](https://icons.getbootstrap.com/) and it will display a page icon with plus sign. We use a Django template directive called `include`. This will inject the file's content into the Django template. The web browser knows how to handle this type of content without any further processing.
+توجه داشته باشید که ما می‌خواهیم نام ویو جدید را `post_new` بگذاریم. آیتم [SVG icon](https://icons.getbootstrap.com/icons/file-earmark-plus/) توسط [Bootstrap Icons](https://icons.getbootstrap.com/) ارائه می‌شود و علامتی مانند یک صفحه به همراه یک علامت به اضافه، نشان خواهد داد. ما از یک هدایت‌کننده جنگو یا Django template directive، به اسم `include` استفاده می‌کنیم. این هدایت‌کننده محتوای یک فایل را به تمپلیت جنگو تزریق می‌کند. The web browser knows how to handle this type of content without any further processing.
 
 > You can download all the Bootstrap icons [here](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip). Unzip the file and copy all the SVG image files into a new folder inside `blog/templates/blog/` called `icons`. That way you can access an icon like `pencil-fill.svg` using the file path `blog/templates/blog/icons/pencil-fill.svg`
 
