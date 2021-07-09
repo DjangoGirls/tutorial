@@ -48,14 +48,14 @@ Detta nedre område är din terminal. Du kan använda terminalen för att skicka
 1. Gå till [Glitch.com](https://glitch.com/)
 2. Registrera ett nytt konto (https://glitch.com/signup) eller använd ditt GitHub-konto om du har ett. (Se GitHub-instruktionerna nedan.)
 3. Klicka på *New Project* och välj *hello-webpage*
-4. Click on the Tools dropdown list (at the bottom left side of the window), then on Terminal button to open terminal tab with a prompt like this:
+4. Klicka på rullgardinslistan Tools (längst ner till vänster i fönstret) och sedan på Terminal-knappen för att öppna terminalfliken med en prompt som ser ut så här:
 
 {% filename %}Terminal{% endfilename %}
 
     app@name-of-your-glitch-project:~
     
 
-When using Glitch.com as your Cloud IDE, you don't have to create a virtual environment. Instead, create the following files manually:
+När du använder Glitch.com som din moln-IDE behöver du inte skapa en virtuell miljö. Skapa istället följande filer manuellt:
 
 {% filename %}glitch.json{% endfilename %}
 
@@ -91,7 +91,7 @@ python3 manage.py migrate
 python3 manage.py runserver $PORT
 ```
 
-Once these files are created, go to the Terminal and execute the following commands to create your first Django project:
+När dessa filer har skapats går du till Terminalen och kör följande kommandon för att skapa ditt första Django-projekt:
 
 {% filename %}Terminal{% endfilename %}
 
@@ -99,7 +99,7 @@ Once these files are created, go to the Terminal and execute the following comma
     refresh
     
 
-In order to see detailed error messages, you can activate Django debug logs for your Glitch application. Simply add the following at the end of the `mysite/settings.py` file.
+För att se detaljerade felmeddelanden kan du aktivera Djangos felsökningsloggar för din Glitch-applikation. Lägg helt enkelt till följande i slutet av filen `mysite/settings.py`.
 
 {% filename %}mysite/settings.py{% endfilename %}
 
