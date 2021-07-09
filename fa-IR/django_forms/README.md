@@ -295,9 +295,9 @@ def post_new(request):
 
 حالا ما می‌دانیم که چگونه یک پست جدید اضافه کنیم. اما اگر بخواهیم یک فرم موجود را ویرایش کنیم، چه؟ این کار بسیار شبیه آنچه ما انجام داده‌یم است. بگذارید برخی از چیزهای مهم را سریع بسازیم. (اگر چیزی را درک نمی‌کنید، باید از مربی خود بپرسید یا در فصل‌های قبلی نگاه کنید، زیرا ما قبلاً همه این مراحل را پوشش دادیم.)
 
-ابتدا، اجازه دهید که آیکونی که نمایش دهنده دکمه اصلاح است را ذخیره کنیم. Download [pencil-fill.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/pencil-fill.svg) and save it to the location `blog/templates/blog/icons/`.
+ابتدا، اجازه دهید که آیکونی که نمایش دهنده دکمه اصلاح است را ذخیره کنیم. فایل [pencil-fill.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/pencil-fill.svg) را دانلود کنید و آن را در آدرس `blog/templates/blog/icons/` ذخیره کنید.
 
-Open `blog/templates/blog/post_detail.html` in the code editor and add the following code inside `article` element:
+فایل `blog/templates/blog/post_detail.html` را در ویرایشگر متن باز کنید و خطوط زیر را به عنصر `article` اضافه کنید:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -309,7 +309,7 @@ Open `blog/templates/blog/post_detail.html` in the code editor and add the follo
 </aside>
 ```
 
-so that the template will look like this:
+قالب فوق شبیه به این خواهد شد:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -334,7 +334,7 @@ so that the template will look like this:
 {% endblock %}
 ```
 
-Open `blog/urls.py` in the code editor, and add this line:
+فایل `blog/urls.py` را باز کنید و خط زیر را به آن اضافه کنید:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -342,9 +342,9 @@ Open `blog/urls.py` in the code editor, and add this line:
     path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
 ```
 
-We will reuse the template `blog/templates/blog/post_edit.html`, so the last missing thing is a *view*.
+ما از این تمپلیت `blog/templates/blog/post_edit.html` مجدداً استفاده خواهیم کرد پس تنها قطعه باقی مانده *view* است.
 
-Let's open `blog/views.py` in the code editor and add this at the very end of the file:
+فایل `blog/views.py` را باز کنید و خط زیر را به انتهای این فایل اضافه کنید:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -364,7 +364,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-This looks almost exactly the same as our `post_new` view, right? But not entirely. For one, we pass an extra `pk` parameter from `urls`. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
+این ویو شبیه ویوی `post_new` ماست، درست است؟ اما نه دقیقاً. در ابتدا ما یک پارامتر `pk` اضافی از `urls` ارسال کرده‌ایم. سپس مدل `Post` را که می‌خواهیم اصلاح کنیم با دستور `get_object_or_404(Post, pk=pk)` می‌گیریم و بعد از آن یک فرم می‌سازیم و این فرم را به صورت `instance`ارسال می‌کنیم، هر دو این کارها وقتی اتفاق می‌افتد که فرم را ذخیره می‌کنیم…
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -372,7 +372,7 @@ This looks almost exactly the same as our `post_new` view, right? But not entire
 form = PostForm(request.POST, instance=post)
 ```
 
-…and when we've just opened a form with this post to edit:
+… و هنگامی که یک فرم را به این صورت برای تغییر دادن باز می‌کنیم:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -380,23 +380,23 @@ form = PostForm(request.POST, instance=post)
 form = PostForm(instance=post)
 ```
 
-OK, let's test if it works! Let's go to the `post_detail` page. There should be an edit button in the top-right corner:
+بسیار خوب، حالا بیایید امتحان کنیم که آیا کار می‌کند! به صفحه `post_detail` بروید. باید یک کلید edit در گوشه سمت راست بالا باشد:
 
 ![کلید Edit](images/edit_button2.png)
 
-When you click it you will see the form with our blog post:
+وقتی بر روی آن کلیک کنید یک فرم که با اطلاعات پست وبلاگی ما پر شده است نشان داده می‌شود:
 
 ![فرم Edit](images/edit_form2.png)
 
-Feel free to change the title or the text and save the changes!
+به راحتی محتوای پست را تغییر دهید و آن را ذخیره کنید!
 
-Congratulations! Your application is getting more and more complete!
+تبریک! برنامه شما کامل و کامل‌تر می‌شود!
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.2/topics/forms/
+اگر اطلاعات بیشتری در مورد فرم‌ها در جنگو لازم دارید باید مستندات مربوط به آن را در این آدرس بخوانید: https://docs.djangoproject.com/en/2.2/topics/forms/
 
 ## امنیت
 
-Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
+ساختن یک پست جدید فقط با یک کلیک، بسیار فوق العاده است! اما همین الان هرکسی که از صفحه شما بازدید می‌کند می‌تواند به راحتی یک پست جدید بسازد و این احتمالاً چیزی نیست که شما بخواهید. حالا بیایید کاری کنیم که این دکمه فقط برای شما نشان داده شود و کس دیگری آن را نبیند.
 
 فایل `blog/templates/blog/base.html` را در ویرایشگر کد باز کنید بخش `div` با نام `header` و تگ a موجود در آن را پیدا کنید. باید چیزی شبیه به این باشد:
 
