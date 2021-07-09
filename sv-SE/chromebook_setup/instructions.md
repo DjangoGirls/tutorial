@@ -153,6 +153,6 @@ Skapa ett [GitHub](https://github.com)-konto.
 
 Django Girls handledning innehåller ett avsnitt om det som kallas Deployment (även kallat driftsättning eller publicering), som innebär att ta koden som driver din nya webbapplikation och flytta den till en offentligt tillgänglig dator (kallad server) så att andra personer kan se ditt arbete.
 
-Denna del är lite udda när du följer handledningen på en Chromebook eftersom vi redan använder en dator som är på Internet (i motsats till en vanlig bärbar dator). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Denna del är lite udda när du följer handledningen på en Chromebook eftersom vi redan använder en dator som är på Internet (i motsats till en vanlig bärbar dator). Men det är fortfarande användbart, eftersom vi kan se vår arbetsyta på Cloud 9 som en plats för vårt pågående arbete och Python Anywhere som en plats att visa upp våra grejer när de är mer kompletta.
 
-Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Så registrera ett nytt Python Anywhere-konto på [www.pythonanywhere.com](https://www.pythonanywhere.com).
