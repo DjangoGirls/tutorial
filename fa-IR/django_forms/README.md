@@ -175,19 +175,19 @@ def post_new(request):
 {% endblock %}
 ```
 
-Time to refresh! Yay! Your form is displayed!
+حالا زمان به روزرسانی پروژه است! بله فرم شما نمایش داده می‌شود!
 
 ![فرم جدید](images/new_form2.png)
 
 اما یک دقیقه صبر کنید وقتی چیزی را در فیلدهای `title` و `text` تایپ کنید و سعی کنید آن را ذخیره کنید، چه اتفاقی خواهد افتاد؟
 
-Nothing! We are once again on the same page and our text is gone… and no new post is added. So what went wrong?
+هیچ چی! ما یک بار دیگر در همان صفحه هستیم و متن ما رفته است... و هیچ پست جدیدی اضافه نشده است. پس چه اتفاقی افتاد؟
 
-The answer is: nothing. We need to do a little bit more work in our *view*.
+جواب این است: هیچ چیز. ما باید در *view* خودمان کمی کارهای بیشتری انجام دهیم.
 
 ## ذخیره فرم
 
-Open `blog/views.py` once again in the code editor. Currently all we have in the `post_new` view is the following:
+یکبار دیگر فایل `blog/views.py` را در ویرایشگر کد باز کنید. در حال حاضر آنچه که در ویو `post_new` داریم این هاست:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -197,9 +197,9 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-When we submit the form, we are brought back to the same view, but this time we have some more data in `request`, more specifically in `request.POST` (the naming has nothing to do with a blog "post"; it's to do with the fact that we're "posting" data). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? All the fields from the form are now in `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
+هنگامی که فرم را ارسال می‌کنیم، ما به همان ویوی قبل باز می‌گردیم، اما این بار ما در `request` داده‌های بیشتری داریم، به ویژه در `request.POST` (نامگذاری request.POST هیچ ارتباطی با "پست" وبلاگ ندارد و به معنی آن است که ما در حال ارسال اطلاعات هستیم). به یاد می آورید که چگونه در فایل HTML، تعریف `<form>` دارای متغیر `method="POST"` بود؟ تمام فیلدهای فرم اکنون در `request.POST` قرار دارند. شما نباید عبارت `POST` را در اینجا به چیز دیگری تغییر دهید (تنها مقدار معتبر دیگر برای `method` مقدار `GET` است، اما الان وقت آن را نداریم تا تفاوت آن‌ها را توضیح دهیم).
 
-So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. So we need to add a condition (we will use `if` for that):
+بنابراین در *view*، ما دو موقعیت جداگانه برای رسیدگی داریم: اول اینکه زمانی که ما برای اولین بار به صفحه می‌رویم و یک فرم خالی را می‌خواهیم، و دوم، وقتی با اطلاعات نوشته شده درون فرم، به *view* برمی‌گردیم. بنابراین ما نیاز به اضافه کردن یک شرط داریم (ما از `if`برای این منظور استفاده می‌کنیم):
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -210,7 +210,7 @@ else:
     form = PostForm()
 ```
 
-It's time to fill in the dots `[...]`. If `method` is `POST` then we want to construct the `PostForm` with data from the form, right? We will do that as follows:
+وقت آن است که نقاط `[...]` را پر کنید. اگر مقدار `method` برابر با `POST` باشد، ما می خواهیم که با اطلاعات درون فرم `PostForm` را بسازیم، درست است؟ ما این کار را به صورت زیر انجام خواهیم داد:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -218,9 +218,9 @@ It's time to fill in the dots `[...]`. If `method` is `POST` then we want to con
 form = PostForm(request.POST)
 ```
 
-The next thing is to check if the form is correct (all required fields are set and no incorrect values have been submitted). We do that with `form.is_valid()`.
+قدم بعدی این است که بررسی کنید که آیا فرم صحیح است (تمام فیلدهای لازم تنظیم شده و مقادیر نادرست وارد نشده است). ما این کار را با `form.is_valid()` انجام می‌دهیم.
 
-We check if the form is valid and if so, we can save it!
+ما بررسی می کنیم که آیا فرم معتبر است و اگر چنین باشد، می توانیم آن را ذخیره کنیم!
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -232,9 +232,9 @@ if form.is_valid():
     post.save()
 ```
 
-Basically, we have two things here: we save the form with `form.save` and we add an author (since there was no `author` field in the `PostForm` and this field is required). `commit=False` means that we don't want to save the `Post` model yet – we want to add the author first. Most of the time you will use `form.save()` without `commit=False`, but in this case, we need to supply it. `post.save()` will preserve changes (adding the author) and a new blog post is created!
+اساساً، ما دو چیز در اینجا داریم: فرم را با `form.save` ذخیره می‌کنیم سپس یک نویسنده برای مطلب تعیین می‌کنیم (از آنجا که فیلد `author` در فرم موجود نبوده و داشتن نویسنده برای مطلب در `PostForm`الزامی است). `commit=False` بدین معنی است که ما نمی‌خواهیم مدل `Post` را ذخیره کنیم - ما می‌خواهیم ابتدا نویسنده را اضافه کنیم. در بیشتر موارد شما از `()form.save` بدون `commit=False` استفاده می‌کنید، اما در این مورد، ما باید آن را استفاده کنیم. `()post.save` تغییرات (اضافه کردن نویسنده) را اعمال می‌کند و یک پست جدید بلاگ ایجاد می‌شود!
 
-Finally, it would be awesome if we could immediately go to the `post_detail` page for our newly created blog post, right? To do that we need one more import:
+سرانجام، خوب بود اگر می‌توانستیم بلافاصله به صفحه جزییات پست جدید `post_detail` که هم اکنون ساخته‌ایم برویم، درست است؟ برای این کار ما نیاز به فراخوانی دیگری داریم:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -242,7 +242,7 @@ Finally, it would be awesome if we could immediately go to the `post_detail` pag
 from django.shortcuts import redirect
 ```
 
-Add it at the very beginning of your file. And now we can say, "go to the `post_detail` page for the newly created post":
+آن را در ابتدای فایل خود اضافه کنید. و اکنون می‌توان گفت، "به صفحه جزییات پست `post_detail` برای پست جدید برو":
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -250,9 +250,9 @@ Add it at the very beginning of your file. And now we can say, "go to the `post_
 return redirect('post_detail', pk=post.pk)
 ```
 
-`post_detail` is the name of the view we want to go to. Remember that this *view* requires a `pk` variable? To pass it to the views, we use `pk=post.pk`, where `post` is the newly created blog post!
+`post_detail` نام ویویی است که ما می‌خواهیم به آن برویم. به یاد دارید که این *view* نیاز به متغیر `pk` دارد؟ برای فرستادن آن به ویو، از `pk=post.pk` استفاده می‌کنیم، که در آن `post` جدیدترین پست وبلاگ است!
 
-OK, we've talked a lot, but we probably want to see what the whole *view* looks like now, right?
+خوب، ما خیلی صحبت کرده‌ایم، اما احتمالاً می‌خواهید ببینید که کل *view* چگونه به نظر می‌رسد، درست است؟
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -271,31 +271,31 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Let's see if it works. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it… and voilà! The new blog post is added and we are redirected to the `post_detail` page!
+بیایید ببینیم که آیا کار می‌کند. به صفحه http://127.0.0.1:8000/post/new/ بروید، یک `title` و یک `text` اضافه کنید و نتیجه را ببینید! پست جدید وبلاگ اضافه شده است و ما به صفحه `post_detail` هدایت می‌شویم!
 
-You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a *publish button* in **Django Girls Tutorial: Extensions**.
+ممکن است متوجه شده باشید که قبل از ذخیره پست، تاریخ انتشار را تنظیم کرده‌ایم. بعدها، ما دکمه *publish button* را در بخش **Django Girls Tutorial: Extensions** معرفی می‌کنیم.
 
-That is awesome!
+این عالیه!
 
-> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
+> همانطور که اخیراً رابط کاربری ادمین جنگجو را استفاده کردیم، سیستم در حال حاضر فکر می‌کند ما هنوز در سیستم لاگین هستیم. چند موقعیت وجود دارد که می تواند منجر به خروج ما از رابط کاربری مدیریت شود (بسته شدن مرورگر، راه اندازی مجدد دیتابیس و غیره). اگر در هنگام ایجاد یک پست متوجه شدید که خطایی در رابطه با عدم وجود یک کاربر ایجاد شده است، به صفحه مدیریت http://127.0.0.1:8000/admin بروید و دوباره وارد شوید. این مسأله به طور موقت حل خواهد شد. یک تکلیف اضافه برای خانه که بعد از بخش اصلی آموزش، انتظار شما را می‌کشد رفع مشکلات امنیتی وبسایت در بخش **Homework: add security to your website!** است.
 
 ![خطا ورود به سیستم](images/post_create_error.png)
 
 ## اعتبارسنجی فرم
 
-Now, we will show you how cool Django forms are. A blog post needs to have `title` and `text` fields. In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
+حالا به شما نشان می‌دهیم که فرم‌ها در جنگو چقدر جالب هستند. یک پست وبلاگ باید فیلدهای `title` و `text` را داشته باشد. در مدل `Post` ما نگفتیم که این فیلدها (به غیر از `published_date`) الزامی نیستند، بنابراین، جنگو به طور پیش فرض آن‌ها را الزامی می‌داند.
 
-Try to save the form without `title` and `text`. Guess what will happen!
+سعی کنید فرم را بدون `title` و `text` ذخیره کنید. حدس بزنید چه اتفاقی خواهد افتاد!
 
 ![اعتبارسنجی فرم](images/form_validation2.png)
 
-Django is taking care to validate that all the fields in our form are correct. Isn't it awesome?
+جنگو مواظب است که تمام فیلدهای موجود در فرم ما صحیح پر شده باشند. فوق‌العاده نیست؟
 
 ## ويرايش فرم
 
-Now we know how to add a new post. But what if we want to edit an existing one? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
+حالا ما می‌دانیم که چگونه یک پست جدید اضافه کنیم. اما اگر بخواهیم یک فرم موجود را ویرایش کنیم، چه؟ این کار بسیار شبیه آنچه ما انجام داده‌یم است. بگذارید برخی از چیزهای مهم را سریع بسازیم. (اگر چیزی را درک نمی‌کنید، باید از مربی خود بپرسید یا در فصل‌های قبلی نگاه کنید، زیرا ما قبلاً همه این مراحل را پوشش دادیم.)
 
-First, let's save the icon which represents the edit button. Download [pencil-fill.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/pencil-fill.svg) and save it to the location `blog/templates/blog/icons/`.
+ابتدا، اجازه دهید که آیکونی که نمایش دهنده دکمه اصلاح است را ذخیره کنیم. Download [pencil-fill.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/pencil-fill.svg) and save it to the location `blog/templates/blog/icons/`.
 
 Open `blog/templates/blog/post_detail.html` in the code editor and add the following code inside `article` element:
 
