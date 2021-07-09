@@ -58,11 +58,11 @@ class PostForm(forms.ModelForm):
 </a>
 ```
 
-توجه داشته باشید که ما می‌خواهیم نام ویو جدید را `post_new` بگذاریم. آیتم [SVG icon](https://icons.getbootstrap.com/icons/file-earmark-plus/) توسط [Bootstrap Icons](https://icons.getbootstrap.com/) ارائه می‌شود و علامتی مانند یک صفحه به همراه یک علامت به اضافه، نشان خواهد داد. ما از یک هدایت‌کننده جنگو یا Django template directive، به اسم `include` استفاده می‌کنیم. این هدایت‌کننده محتوای یک فایل را به تمپلیت جنگو تزریق می‌کند. The web browser knows how to handle this type of content without any further processing.
+توجه داشته باشید که ما می‌خواهیم نام ویو جدید را `post_new` بگذاریم. آیتم [SVG icon](https://icons.getbootstrap.com/icons/file-earmark-plus/) توسط [Bootstrap Icons](https://icons.getbootstrap.com/) ارائه می‌شود و علامتی مانند یک صفحه به همراه یک علامت به اضافه، نشان خواهد داد. ما از یک هدایت‌کننده جنگو یا Django template directive، به اسم `include` استفاده می‌کنیم. این هدایت‌کننده محتوای یک فایل را به تمپلیت جنگو تزریق می‌کند. مرورگر وب به خوبی می‌تواند این نوع از محتوا را بدون پردازش‌های اضافه، مدیریت کند.
 
-> You can download all the Bootstrap icons [here](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip). Unzip the file and copy all the SVG image files into a new folder inside `blog/templates/blog/` called `icons`. That way you can access an icon like `pencil-fill.svg` using the file path `blog/templates/blog/icons/pencil-fill.svg`
+> شما می‌توانید تمام آیکون‌های بوتسترپ را از [اینجا](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip) دانلود کنید. فایل را از حالت زیپ خارج کنید و همه تصاویر را در پوشه‌ای به نام `icons` در داخل پوشه `blog/templates/blog/` قرار دهید. به این روش شما می‌توانید به آیکونی مانند `pencil-fill.svg` از طریق آدرس `blog/templates/blog/icons/pencil-fill.svg`، دسترسی داشته باشید
 
-After editing the line, your HTML file should now look like this:
+بعد از اصلاح این خط، فایل شما باید به این شکل باشد:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -97,11 +97,11 @@ After editing the line, your HTML file should now look like this:
 </html>
 ```
 
-After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
+پس از ذخیره و بازخوانی صفحه http://127.0.0.1:8000 شما با یک خطای شناخته شده `NoReverseMatch` مواجه خواهید شد، درست است؟ بسیار عالی!
 
 ## آدرس اینترنتی
 
-فایل url اپلیکیشن را که در آدرس `blog/urls.py` است باز کرده و کد زیر را به آن اضافه میکنیم:
+فایل `blog/urls.py` را باز کرده و کد زیر را به آن اضافه می‌کنیم:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -128,7 +128,7 @@ urlpatterns = [
 
 ## ویو post_new
 
-Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
+زمان آن است که فایل `blog/views.py` را در ویرایشگر کد باز کنید و خطوط زیر را در ردیف `from` ها اضافه کنید:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -146,14 +146,14 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-To create a new `Post` form, we need to call `PostForm()` and pass it to the template. We will go back to this *view*, but for now, let's quickly create a template for the form.
+برای ایجاد یک فرم جدید`Post`، ما باید`()PostForm` را فراخوانی کنیم و آن را به تمپلیت منتقل کنیم. ما به این *view* باز خواهیم گشت، اما در حال حاضر، بیایید به سرعت یک تمپلیت برای این فرم ایجاد کنیم.
 
 ## تمپلیت
 
-We need to create a file `post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
+لازم است یک فایل به نام `post_edit.html`در پوشه `blog/templates/blog`بسازیم و آن را در ویرایشگر کد بازکنیم. برای آنکه یک فرم کار کند به چند چیز نیاز داریم:
 
 * ما باید فرم را نمایش دهیم. مثلاً می‌توانیم این کار را با {% raw %}`{{ form.as_p }}`{% endraw %} انجام دهیم.
-* The line above needs to be wrapped with an HTML form element: `<form method="POST">...</form>`.
+* خط بالا باید درون تگ فرم HTML پیچیده شود: `<form method="POST">... </form>`.
 * ما به یک دکمه `ذخیره کردن` نیاز داریم. این کار را با یک دکمه HTML انجام می‌دهیم: `<button type="submit">Save</button>`.
 * و در نهایت، درست بعد از باز شدن تگ `<form ...>` باید {% raw %}`{% csrf_token %}`{% endraw %} را اضافه کنیم. نوشتن این عبارت بسیار مهم است، زیرا فرم‌های شما را امن می‌کند! اگر شما این تکه را فراموش کنید، جنگو هنگام تلاش برای ذخیره کردن فرم پیغام خطا می‌دهد:
 
@@ -179,7 +179,7 @@ Time to refresh! Yay! Your form is displayed!
 
 ![فرم جدید](images/new_form2.png)
 
-But, wait a minute! When you type something in the `title` and `text` fields and try to save it, what will happen?
+اما یک دقیقه صبر کنید وقتی چیزی را در فیلدهای `title` و `text` تایپ کنید و سعی کنید آن را ذخیره کنید، چه اتفاقی خواهد افتاد؟
 
 Nothing! We are once again on the same page and our text is gone… and no new post is added. So what went wrong?
 
