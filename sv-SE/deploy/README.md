@@ -151,15 +151,15 @@ När du pushar till GitHub kommer du bli ombedd att fylla i ditt användarnamn o
 
 Din kod är nu på GitHub. Gå och kolla in den! Du kommer se att den är i gott sällskap – [Django](https://github.com/django/django), [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial) och många andra stora projekt med öppen källkod har sin kod på GitHub. :)
 
-# Setting up our blog on PythonAnywhere
+# Publicera vår blogg på PythonAnywhere
 
-## Sign up for a PythonAnywhere account
+## Registrera ett PythonAnywhere-konto
 
-> **Note** You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
+> **Obs** Du kanske redan har skapat ett PythonAnywhere-konto tidigare under installationsstegen – i så fall behöver du inte göra det igen.
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-## Configuring our site on PythonAnywhere
+## Konfigurera vår webbplats på PythonAnywhere
 
 Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer.
 
