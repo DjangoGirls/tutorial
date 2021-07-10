@@ -174,36 +174,36 @@ Att installera en webbapp på PythonAnywhere innebär att du drar ner din kod fr
     $ pip3.8 install --user pythonanywhere
     
 
-That should print out some things like `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
+Det bör skriva ut vissa saker som `Collecting pythonanywhere` och så småningom avslutas det med en rad som säger `Successfully installed (...) pythonanywhere- (...)`.
 
-Now we run the helper to automatically configure our app from GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
+Nu kör vi hjälpverktyget för att automatiskt konfigurera vår app från GitHub. Skriv in följande i konsolen på PythonAnywhere (glöm inte att använda ditt användarnamn på GitHub istället för `<your-github-username>`, så att URL:en matchar klonens URL från GitHub):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ pa_autoconfigure_django.py --python=3.8 https://github.com/<your-github-username>/my-first-blog.git
     
 
-As you watch that running, you'll be able to see what it's doing:
+När du ser det köra, kommer du att kunna se vad det gör:
 
-- Downloading your code from GitHub
-- Creating a virtualenv on PythonAnywhere, just like the one on your own computer
-- Updating your settings file with some deployment settings
-- Setting up a database on PythonAnywhere using the `manage.py migrate` command
-- Setting up your static files (we'll learn about these later)
-- And configuring PythonAnywhere to serve your web app via its API
+- Laddar ner din kod från GitHub
+- Skapar en virtualenv på PythonAnywhere, precis som den på din egen dator
+- Uppdaterar din inställningsfil med några driftinställningar
+- Ställer in en databas på PythonAnywhere genom att använda kommandot `manage.py migrate`
+- Konfigurerar statiska filer (vi lär oss om dessa senare)
+- Och konfigurerar PythonAnywhere för att serva din webbapp via dess API
 
-On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider.
+På PythonAnywhere är alla dessa steg automatiserade, men de är samma steg som du skulle behöva gå igenom med någon annan serverleverantör.
 
-The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own computer, so it can have different posts and admin accounts. As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
+Det viktigaste att inse just nu är att din databas på PythonAnywhere faktiskt är helt skild från din databas på din egen dator, så den kan ha olika inlägg och administratörskonton. Därmed måste vi initiera administratörskontot med `createsuperuser`, precis som vi gjorde på din egen dator. PythonAnywhere har automatiskt aktiverat din virtualenv åt dig, så allt du behöver göra är att köra:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
     (ola.pythonanywhere.com) $ python manage.py createsuperuser
     
 
-Type in the details for your admin user. Best to use the same ones as you're using on your own computer to avoid any confusion, unless you want to make the password on PythonAnywhere more secure.
+Skriv in uppgifterna för din administratörsanvändare. Det är bäst att använda samma som du använder på din egen dator för att undvika förvirring, såvida du inte vill göra lösenordet på PythonAnywhere säkrare.
 
-Now, if you like, you can also take a look at your code on PythonAnywhere using `ls`:
+Nu, om du vill, kan du också ta en titt på din kod på PythonAnywhere med `ls`:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -214,7 +214,7 @@ Now, if you like, you can also take a look at your code on PythonAnywhere using 
     tests.py  views.py
     
 
-You can also go to the "Files" page and navigate around using PythonAnywhere's built-in file browser. (From the Console page, you can get to other PythonAnywhere pages from the menu button in the upper right corner. Once you're on one of the pages, there are links to the other ones near the top.)
+Du kan också gå till sidan "Files" och navigera runt med PythonAnywheres inbyggda filläsare. (From the Console page, you can get to other PythonAnywhere pages from the menu button in the upper right corner. Once you're on one of the pages, there are links to the other ones near the top.)
 
 ## You are now live!
 
