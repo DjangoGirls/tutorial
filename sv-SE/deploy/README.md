@@ -161,7 +161,7 @@ Din kod är nu på GitHub. Gå och kolla in den! Du kommer se att den är i gott
 
 ## Konfigurera vår webbplats på PythonAnywhere
 
-Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer.
+Gå tillbaka till [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) genom att klicka på logotypen, och välj alternativet att starta en "Bash"-konsol – det är PythonAnywheres version av en kommandorad, precis som den på din dator.
 
 ![The 'New Console' section on the PythonAnywhere web interface, with a button for 'bash'](images/pythonanywhere_bash_console.png)
 
