@@ -214,7 +214,7 @@ Nu, om du vill, kan du också ta en titt på din kod på PythonAnywhere med `ls`
     tests.py  views.py
     
 
-Du kan också gå till sidan "Files" och navigera runt med PythonAnywheres inbyggda filläsare. (From the Console page, you can get to other PythonAnywhere pages from the menu button in the upper right corner. Once you're on one of the pages, there are links to the other ones near the top.)
+Du kan också gå till sidan "Files" och navigera runt med PythonAnywheres inbyggda filläsare. (Från konsolsidan, kan du komma till andra PythonAnywhere-sidor via menyknappen i det övre högra hörnet. När du är på en av sidorna, finns det länkar till de andra nära toppen.)
 
 ## You are now live!
 
