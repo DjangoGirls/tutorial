@@ -12,7 +12,7 @@ Dessa tre platser kommer att vara viktiga för dig. Din lokala dator kommer vara
 
 # Git
 
-> **Note** If you already did the [installation steps](../installation/README.md), there's no need to do this again – you can skip to the next section and start creating your Git repository.
+> **Obs** Om du redan gått igenom [installationsstegen](../installation/README.md) finns det ingen anledning att göra dem igen – du kan hoppa vidare till nästa avsnitt och börja skapa ditt Git-repo.
 
 {% include "/deploy/install_git.md" %}
 
