@@ -43,11 +43,11 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 {% include "/deploy/install_git.md" %}
 
-# Create a GitHub account {#github-account}
+# Ստեղծեք GitHub հաշիվ/GitHub account {#github-account}
 
 Գնացեք [GitHub.com](https://www.github.com) և գրանցվեք նոր անվճար հաշվի համար: Համոզվեք, որ կհիշեք ձեր գաղտնաբառը (եթե այն օգտագործում եք, ավելացրեք գաղտնաբառերի կառավարչին):
 
-# Create a PythonAnywhere account {#pythonanywhere-account}
+# Ստեղծեք PythonAnywhere հաշիվ {#pythonanywhere-account}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
