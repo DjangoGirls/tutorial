@@ -79,7 +79,7 @@ data-collapse=true ces-->
 > {% filename %}خط فرمان{% endfilename %}
 > 
 >     $ sudo apt install python-virtualenv
->     $ virtualenv --python=python3.6 myvenv
+>     $ virtualenv --python=python{{ book.py_version }} myvenv
 >     
 > 
 > **نکته: ** اگر چنین خطایی گرفتید
@@ -93,7 +93,7 @@ data-collapse=true ces-->
 > 
 > {% filename %}خط فرمان{% endfilename %}
 > 
->     sudo apt install python3.6-venv
+>     sudo apt install python{{ book.py_version }}-venv
 >     
 
 <!--endsec-->
@@ -123,7 +123,7 @@ data-collapse=true ces-->
 
 <!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
 
-> **نکته:** برای کاربران ویرایشگر VS Code که همراه خود یک ترمینال مبتنی بر PowerShell ویندوز دارد، اگر می‌خواهید از این ترمینال استفاده کنید، باید دستور زیر را برای فعال کردن ترمینال اجرا کنید:
+> **نکته:** برای کاربران ویرایشگر VS Code که درون خود یک ترمینال خط فرمان منطبق بر PowerShell ویندوز دارد، اگر بخواهید از این ترمینال استفاده کنید باید این دستور را برای فعال کردن محیط مجازی خود بزنید:
 > 
 >     $ . myvenv\Scripts\activate.ps1
 >     
