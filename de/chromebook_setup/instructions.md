@@ -2,7 +2,7 @@ Du kannst [diesen Abschnitt einfach](http://tutorial.djangogirls.org/en/installa
 
 ### Cloud-IDE (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com)
 
-Cloud IDE ist ein Werkzeug, dass Dir einen Code-Editor und Zugang zu einem Rechner im Internet bereitstellt, auf dem Du die Software installieren, anpassen und ausführen kannst. Für die Dauer des Tutorials wird Cloud IDE zu deinem *lokalen Rechner*. Auch du wirst Befehle in einer Kommandozeilen-Oberfläche ausführen können, genau wie die anderen Teilnehmerinnen, die mit OS X, Ubuntu oder Windows arbeiten. Dein Terminal wird jedoch mit einem Rechner verbunden sein, den Cloud IDE dir bereitstellt. Hier sind die Anleitungen für die Cloud-IDEs (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com). Wähle eine der Cloud-IDEs aus und folge den Anweisungen der gewählten Cloud IDE.
+Eine Cloud-IDE ist ein Werkzeug, dass dir einen Code-Editor und Zugang zu einem Rechner im Internet bereitstellt, auf dem du die Software installieren, anpassen und ausführen kannst. Für die Dauer des Tutorials wird Cloud IDE zu deinem *lokalen Rechner*. Auch du wirst Befehle in einer Kommandozeilen-Oberfläche ausführen können, genau wie die anderen Teilnehmerinnen, die mit OS X, Ubuntu oder Windows arbeiten. Dein Terminal wird jedoch mit einem Rechner verbunden sein, den Cloud IDE dir bereitstellt. Hier sind die Anleitungen für die Cloud-IDEs (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com). Wähle eine der Cloud-IDEs aus und folge den Anweisungen der gewählten Cloud IDE.
 
 #### PaizaCloud Cloud IDE
 

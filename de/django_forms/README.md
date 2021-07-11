@@ -44,7 +44,7 @@ Also erstellen wir hier auch wieder einen Link auf die Seite, eine URL, eine Vie
 
 ## Link auf eine Seite mit dem Formular
 
-Bevor wir den Link hinzufügen, benötigen wir einige Icons als Buttons für den Link. Lade für dieses Tutorial [Datei earmark-plus.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/file-earmark-plus.svg) herunter und speicher es im Ordner `blog/templates/blog/blog/icons/`
+Bevor wir den Link hinzufügen, benötigen wir einige Icons als Buttons für den Link. Lade für dieses Tutorial [file-earmark-plus.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/file-earmark-plus.svg) herunter und speicher es im Ordner `blog/templates/blog/blog/icons/`
 
 > Hinweis: Um das SVG-Bild herunterzuladen, öffne das Kontextmenü auf dem Link (normalerweise durch einen Rechtsklick darauf) und wähle "Link speichern unter". Im Dialog, in dem du gefragt wirst, wo du die Datei speichern willst, navigiere zum `djangogirls`-Verzeichnis deines Django-Projekts und innerhalb davon in das Unterverzeichnis `blog/templates/blog/icons/` und speicher die Datei dort.
 
