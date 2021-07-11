@@ -19,8 +19,8 @@ Wenn du an einer [Django Girls Veranstaltung](https://djangogirls.org/events/) t
 In diesem Tutorial wirst du einen Blog bauen. Dafür wirst du während des Tutorials aufgefordert, verschiedene Software auf deinem Computer zu installieren und auch einige Online-Konten anzulegen, wenn sie gebraucht werden. Diese Seite fasst alle Installations- und Kontoeinrichtungs-Anweisungen an einer Stelle zusammen (das ist für einige Workshopformate sinnvoll).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
-data-id="chromebook_setup" data-collapse=true ces-->
-{% include "/chromebook_setup/instructions.md" %}
+data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
+
 <!--endsec-->
 
 # Kurze Einführung in die Kommandozeile {#command-line}
@@ -43,11 +43,11 @@ Viele der folgenden Schritte beziehen sich auf die "Konsole", das "Terminal", da
 
 {% include "/deploy/install_git.md" %}
 
-# Einen GitHub-Account erstellen {#github}
+# Einen GitHub-Account erstellen {#github-account}
 
 Gehe zu [GitHub.com](https://www.github.com) und registriere dich für ein neues, kostenfreies Benutzerkonto. Achte darauf, dass du dein Passwort nicht vergisst (füge es deinem Passwortmanager hinzu, wenn du einen benutzt).
 
-# Einen PythonAnywhere-Account erstellen {#pythonanywhere}
+# Einen PythonAnywhere-Account erstellen {#pythonanywhere-account}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 

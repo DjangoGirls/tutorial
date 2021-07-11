@@ -19,7 +19,7 @@ Wir wollen eine Python Konsole öffnen, also tippe unter Windows `python` oder i
 {% filename %}command-line{% endfilename %}
 
     $ python3
-    Python 3.6.1 (...)
+    Python {{ book.py_release }} (...)
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
     
@@ -98,7 +98,7 @@ Du kannst für den String doppelte Anführungszeichen verwenden:
 "Runnin' down the hill"
 ```
 
-oder du kannst den Apostroph mit einem Backslash (``) markieren:
+oder du kannst den Apostroph mit einem Backslash (`\`) markieren:
 
 {% filename %}command-line{% endfilename %}
 
@@ -493,9 +493,11 @@ True
 True
 >>> 5 != 2
 True
+>>> len([1, 2, 3]) > len([4, 5])
+True
 ```
 
-Hier haben wir Python einige Zahlen zum Vergleichen gegeben. Wie du siehst, kann Python nicht nur die Zahlen vergleichen, sondern auch die Ergebnisse von Berechnungen. Cool, nicht wahr?
+Hier haben wir Python einige Zahlen zum Vergleichen gegeben. Wie du siehst, kann Python nicht nur die Zahlen vergleichen, sondern auch die Ergebnisse von mathematischen Ausdrücken wie `2 * 2` und Funktionswerte wie die `2`, die von `len([4, 5])` zurückgegeben wird. Cool, nicht wahr?
 
 Womöglich wunderst du dich aber über die beiden `==` Gleichheitszeichen zum Vergleich, ob zwei Zahlen den selben Wert haben? Ein einfaches Gleichheitszeichen `=` verwenden wir bereits, um Variablen bestimmte Werte zuzuweisen. Da beim Programmieren alle Anweisungen eindeutig sein müssen, benötigst du in Python daher **stets** zwei `==` Zeichen, um Dinge auf Gleichheit zu testen. Wir können auch feststellen, ob Werte unterschiedlich sind. Dafür verwenden wir das Symbol `!=`, wie im obigen Beispiel.
 
@@ -1062,7 +1064,7 @@ Beachte, dass der zweite der Werte, die du als Argumente übergibst, nicht in de
 
 Das ist alles. **Du rockst total!** Das war ein kniffliges Kapitel, du darfst also ruhig stolz auf dich sein. Wir sind definitiv stolz auf dich und darauf, dass du es so weit geschafft hast!
 
-Besuche https://docs.python.org/3/tutorial/ , wenn du zum offiziellen und vollständigen Python-Tutorial willst. Dort gibt's (bislang jedoch noch nicht auf Deutsch) eine gründlichere und umfassendere Einführung in diese Programmiersprache. :)
+Wenn du zum offiziellen und vollständigen Python-Tutorial willst, besuche https://docs.python.org/3/tutorial/. Dort gibt's (bislang jedoch noch nicht auf Deutsch) eine gründlichere und umfassendere Einführung in diese Programmiersprache. Viel Erfolg! :)
 
 Bevor du zum nächsten Kapitel übergehst, mach kurz 'was anderes – streck dich, lauf etwas 'rum, ruh' deine Augen aus. :)
 

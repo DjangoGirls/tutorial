@@ -79,7 +79,7 @@ Auf Linux oder OS X kann ein `virtualenv` durch das Ausführen von `python3 -m v
 > {% filename %}command-line{% endfilename %}
 > 
 >     $ sudo apt install python-virtualenv
->     $ virtualenv --python=python3.6 myvenv
+>     $ virtualenv --python=python{{ book.py_version }} myvenv
 >     
 > 
 > **HINWEIS:** Wenn du einen Fehler wie
@@ -93,7 +93,7 @@ Auf Linux oder OS X kann ein `virtualenv` durch das Ausführen von `python3 -m v
 > 
 > {% filename %}command-line{% endfilename %}
 > 
->     sudo apt install python3.6-venv
+>     sudo apt install python{{ book.py_version }}-venv
 >     
 
 <!--endsec-->
@@ -123,7 +123,7 @@ Starte deine virtuelle Umgebung, indem du Folgendes eingibst:
 
 <!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
 
-> **Hinweis:** Für Benutzerinnen des populären Editors VS Code, der einen Powershell-basiertes Terminal eingebaut hat: Wenn du beim eingebauten Terminal bleiben willst, kannst du deine virtuelle Umgebung mit folgendem Befehl aktivieren:
+> **Hinweis:** Für Benutzerinnen des populären Editors VS Code, der einen PowerShell-basiertes Terminal eingebaut hat: Wenn du beim eingebauten Terminal bleiben willst, kannst du deine virtuelle Umgebung mit folgendem Befehl aktivieren:
 > 
 >     $ . myvenv\Scripts\activate.ps1
 >     
