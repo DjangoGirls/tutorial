@@ -44,43 +44,55 @@ class PostForm(forms.ModelForm):
 
 ## لینک به یک صفحه با فرم
 
-وقت آن است که فایل `blog/templates/blog/base.html` را در ویرایشگر کد باز کنید. در `div` که نام آن `page-header` است، یک لینک اضافه می‌کنیم:
+قبل از آنکه لینک را اضافه کنیم، لازم است آیکونی را به عنوان دکمه برای این لینک اضافه کنیم. برای این دوره آموزشی فایل [file-earmark-plus.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/file-earmark-plus.svg) را دانلود کنید و آن را در پوشه `blog/templates/blog/icons/` ذخیره کنید
+
+> نکته: برای دانلود فایل SVG منو زمینه‌ای مربوط به آن را باز کنید (معمولاً به کمک راست کلیک بر روی آن) و بعد گزینه "Save link as" را انتخاب کنید. در پنجره‌ای که باز می‌شود آدرس محلی که می‌خواهید فایل را ذخیره کنید، مشخص کنید، به پوشه `djangogirls` که پروژه جنگو شما در آن است بروید و پوشه `blog/templates/blog/icons/` را پیدا کنید و فایل را در آن ذخیره کنید.
+
+وقت آن است که فایل `blog/templates/blog/base.html` را در ویرایشگر متن خود باز کنید. حالا می‌توانیم از فایل آیکون در تمپلیت base به شکل زیر استفاده کنیم. در عنصر `div` که در بخش `header` قرار دارد، لینکی قبل از عنصر `h1` اضافه خواهیم کرد:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
-<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+<a href="{% url 'post_new' %}" class="top-menu">
+    {% include './icons/file-earmark-plus.svg' %}
+</a>
 ```
 
-توجه داشته باشید که ما می‌خواهیم نام ویو جدیدمان`post_new`باشد. کلاس `"glyphicon glyphicon-plus"` که توسط تم بوت‌استرپ استفاده می‌شود علامت پلاس را برای ما نمایش می‌دهد.
+توجه داشته باشید که ما می‌خواهیم نام ویو جدید را `post_new` بگذاریم. آیتم [SVG icon](https://icons.getbootstrap.com/icons/file-earmark-plus/) توسط [Bootstrap Icons](https://icons.getbootstrap.com/) ارائه می‌شود و علامتی مانند یک صفحه به همراه یک علامت به اضافه، نشان خواهد داد. ما از یک هدایت‌کننده جنگو یا Django template directive، به اسم `include` استفاده می‌کنیم. این هدایت‌کننده محتوای یک فایل را به تمپلیت جنگو تزریق می‌کند. مرورگر وب به خوبی می‌تواند این نوع از محتوا را بدون پردازش‌های اضافه، مدیریت کند.
 
-پس از اضافه کردن خط، فایل HTML شما باید اینگونه باشد:
+> شما می‌توانید تمام آیکون‌های بوتسترپ را از [اینجا](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip) دانلود کنید. فایل را از حالت زیپ خارج کنید و همه تصاویر را در پوشه‌ای به نام `icons` در داخل پوشه `blog/templates/blog/` قرار دهید. به این روش شما می‌توانید به آیکونی مانند `pencil-fill.svg` از طریق آدرس `blog/templates/blog/icons/pencil-fill.svg`، دسترسی داشته باشید
+
+بعد از اصلاح این خط، فایل شما باید به این شکل باشد:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
 {% load static %}
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-        <div class="page-header">
-            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
-        <div class="content container">
+        <header class="page-header">
+            <div class="container">
+                <a href="{% url 'post_new' %}" class="top-menu">
+                    {% include './icons/file-earmark-plus.svg' %}
+                </a>
+                <h1><a href="/">Django Girls Blog</a></h1>
+            </div>
+        </header>
+        <main class="content container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col">
                     {% block content %}
                     {% endblock %}
                 </div>
             </div>
-        </div>
+        </main>
     </body>
 </html>
 ```
@@ -89,7 +101,7 @@ class PostForm(forms.ModelForm):
 
 ## آدرس اینترنتی
 
-فایل `blog/urls.py` را باز کنید و خط زیر را به آن اضافه کنید:
+فایل `blog/urls.py` را باز کرده و کد زیر را به آن اضافه می‌کنیم:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -97,12 +109,12 @@ class PostForm(forms.ModelForm):
 path('post/new/', views.post_new, name='post_new'),
 ```
 
-و کد نهایی مانند این خواهد بود:
+و در نهایت کد ما بصورت زیر خواهد بود:
 
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-from django.urls import path 
+from django.urls import path
 from . import views
 
 urlpatterns = [
@@ -112,11 +124,11 @@ urlpatterns = [
 ]
 ```
 
-پس از بازخوانی سایت، ما یک خطای `AttributeError` را مشاهده می‌کنیم، زیرا ما ویو `post_new` را به کار نبرده‌ایم. بگذارید آن را اضافه کنیم.
+از آنجایی که ویوی `post_new` را پیاده سازی نکرده ایم، هنگامی که سایت را ریفرش کنیم با خطای `AttributeError` مواجه خواهیم شد. پس باید ویوی مربوطه را نیز بسازیم:
 
 ## ویو post_new
 
-زمان آن است که فایل `blog/views.py` را در ویرایشگر کد بازکنید و خطوط زیر را در ردیف `from` ها اضافه کنید:
+زمان آن است که فایل `blog/views.py` را در ویرایشگر کد باز کنید و خطوط زیر را در ردیف `from` ها اضافه کنید:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -175,7 +187,7 @@ def post_new(request):
 
 ## ذخیره فرم
 
-یکبار دیگر فایل `blog/views.py` را در ویرایشگر کد باز کنید. در حال حاضر آنچه که در `post_new` داریم این هاست:
+یکبار دیگر فایل `blog/views.py` را در ویرایشگر کد باز کنید. در حال حاضر آنچه که در ویو `post_new` داریم این هاست:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -283,12 +295,18 @@ def post_new(request):
 
 حالا ما می‌دانیم که چگونه یک پست جدید اضافه کنیم. اما اگر بخواهیم یک فرم موجود را ویرایش کنیم، چه؟ این کار بسیار شبیه آنچه ما انجام داده‌یم است. بگذارید برخی از چیزهای مهم را سریع بسازیم. (اگر چیزی را درک نمی‌کنید، باید از مربی خود بپرسید یا در فصل‌های قبلی نگاه کنید، زیرا ما قبلاً همه این مراحل را پوشش دادیم.)
 
-فایل `blog/templates/blog/post_detail.html` را در ویرایشگر کد بازکنید و خط زیر را به آن اضافه کنید
+ابتدا، اجازه دهید که آیکونی که نمایش دهنده دکمه اصلاح است را ذخیره کنیم. فایل [pencil-fill.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/pencil-fill.svg) را دانلود کنید و آن را در آدرس `blog/templates/blog/icons/` ذخیره کنید.
+
+فایل `blog/templates/blog/post_detail.html` را در ویرایشگر متن باز کنید و خطوط زیر را به عنصر `article` اضافه کنید:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
 ```html
-<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+<aside class="actions">
+    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+      {% include './icons/pencil-fill.svg' %}
+    </a>
+</aside>
 ```
 
 قالب فوق شبیه به این خواهد شد:
@@ -299,16 +317,20 @@ def post_new(request):
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <div class="post">
+    <article class="post">
+        <aside class="actions">
+            <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+                {% include './icons/pencil-fill.svg' %}
+            </a>
+        </aside>
         {% if post.published_date %}
-            <div class="date">
+            <time class="date">
                 {{ post.published_date }}
-            </div>
+            </time>
         {% endif %}
-        <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
         <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    </article>
 {% endblock %}
 ```
 
@@ -322,7 +344,7 @@ def post_new(request):
 
 ما از این تمپلیت `blog/templates/blog/post_edit.html` مجدداً استفاده خواهیم کرد پس تنها قطعه باقی مانده *view* است.
 
-فایل `blog/views.py` را باز کنید و خط زیر را به آن اضافه کنید:
+فایل `blog/views.py` را باز کنید و خط زیر را به انتهای این فایل اضافه کنید:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -370,18 +392,20 @@ form = PostForm(instance=post)
 
 تبریک! برنامه شما کامل و کامل‌تر می‌شود!
 
-اگر اطلاعات بیشتری در مورد فر‌م‌ها در جنگو نیاز دارید، باید مستندات جنگو را مطالعه کنید: https://docs.djangoproject.com/en/2.2/topics/forms/
+اگر اطلاعات بیشتری در مورد فرم‌ها در جنگو لازم دارید باید مستندات مربوط به آن را در این آدرس بخوانید: https://docs.djangoproject.com/en/2.2/topics/forms/
 
 ## امنیت
 
 ساختن یک پست جدید فقط با یک کلیک، بسیار فوق العاده است! اما همین الان هرکسی که از صفحه شما بازدید می‌کند می‌تواند به راحتی یک پست جدید بسازد و این احتمالاً چیزی نیست که شما بخواهید. حالا بیایید کاری کنیم که این دکمه فقط برای شما نشان داده شود و کس دیگری آن را نبیند.
 
-فایل `blog/templates/blog/base.html` را در ویرایشگر کد باز کنید بخش `div` با نام `page-header` را پیدا کنید. باید چیزی شبیه به این باشد:
+فایل `blog/templates/blog/base.html` را در ویرایشگر کد باز کنید بخش `div` با نام `header` و تگ a موجود در آن را پیدا کنید. باید چیزی شبیه به این باشد:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
-<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+<a href="{% url 'post_new' %}" class="top-menu">
+    {% include './icons/file-earmark-plus.svg' %}
+</a>
 ```
 
 حالا ما می‌خواهیم یک تگ `{% if %}` دیگر به این اضافه کنیم که باعث خواهد شد این لینک فقط برای کاربری نشان داده شود که به عنوان ادمین وارد شده باشد که در حال حاضر فقط شما هستید! تگ `<a>` را به شکل زیر تغییر دهید:
@@ -390,7 +414,9 @@ form = PostForm(instance=post)
 
 ```html
 {% if user.is_authenticated %}
-    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+    <a href="{% url 'post_new' %}" class="top-menu">
+        {% include './icons/file-earmark-plus.svg' %}
+    </a>
 {% endif %}
 ```
 
@@ -403,7 +429,9 @@ form = PostForm(instance=post)
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
 ```html
-<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+    {% include './icons/pencil-fill.svg' %}
+</a>
 ```
 
 آن را به شکل زیر تغییر دهید:
@@ -412,7 +440,9 @@ form = PostForm(instance=post)
 
 ```html
 {% if user.is_authenticated %}
-     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+        {% include './icons/pencil-fill.svg' %}
+     </a>
 {% endif %}
 ```
 
@@ -424,10 +454,10 @@ form = PostForm(instance=post)
 
 * ابتدا کد جدید را کامیت کنید و آن را به GitHub بفرستید:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ git status
-    $ git add --all .
+    $ git add .
     $ git status
     $ git commit -m "Added views to create/edit blog post inside the site."
     $ git push
@@ -446,4 +476,4 @@ form = PostForm(instance=post)
 
 * در نهایت به صفحه ["Web" page](https://www.pythonanywhere.com/web_app_setup/) بروید (از کلید منو در بالا و سمت راست کنسول استفاده کنید) و کلید **Reload** را بزنید. آدرس وبلاگ خودتان https://subdomain.pythonanywhere.com را باز کنید تا تغییرات را ببینید.
 
-همین است! تبریک به شما :)
+به نتیجه رسید! تبریک! :)

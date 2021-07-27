@@ -112,6 +112,46 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 > **نکته**: اگر از کروم بوک استفاده می‌کنید، این خط را هم به انتهای فایل settings.py اضافه کنید: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
 > اگر از cloud9 استفاده می‌کنید `.amazonaws.com` را به `ALLOWED_HOSTS` اضافه کنید
+> 
+> اگر شما پروژه خود را بر روی `Glitch.com` میزبانی می‌کنید، اجازه دهید که از کلید مخفی جنگو یا Djanog secret key پروژه شما که باید محرمانه بماند محافظت کنیم (در غیر اینصورت هر کس که پروژه شما را بررسی کند آن را خواهد دید):
+> 
+> - در ابتدا، یک کلید مخفی شانسی می‌سازیم. ترمینال Glitch را دوباره باز کنید و دستورات زیر را تایپ کنید:
+>     
+>     {% filename %}خط فرمان{% endfilename %}
+>     
+>     ```bash
+>     python -c 'from django.core.management.utils import get_random_secret_key; \
+>           print(get_random_secret_key())'
+>     ```
+>     
+>     این کار باعث خواهد شد که یک رشته اتفاقی از کاراکترها و حروف ساخته شود، چیزی که به عنوان یک کلید مخفی برای پروژه جنگو شما کاملاً مناسب است. ما این کلید را در فایل `.env` در Glitch اضافه می‌کنیم، این فایل درصورتی توسط Glitch به ما نشان داده می‌شود که ما صاحب پروژه باشیم.
+> 
+> - فایلی به نام `.env` در پوشه اصلی پروژه بسازید و کدهای زیر را در آن قرار دهید:
+>     
+>     {% filename %}.env{% endfilename %}
+>     
+>     ```bash
+>     # Here, inside the single quotes, you can cut and paste the random key generated above
+>     SECRET='3!0k#7ds5mp^-x$lqs2%le6v97h#@xopab&oj5y7d=hxe511jl'
+>     ```
+> 
+> - سپس فایل settings پروژه جنگو را با تغییرات زیر به روز رسانی کنید تا کلید مخفی به آن اضافه شود:
+>     
+>     {% filename %}mysite/settings.py{% endfilename %}
+>     
+>     ```python
+>     SECRET_KEY = os.getenv('SECRET')
+>     ```
+> 
+> - کمی پایین‌تر در همان فایل، نام وبسایت جدید Glitch شما را اضافه می‌کنیم:
+>     
+>     {% filename %}mysite/settings.py{% endfilename %}
+>     
+>     ```python
+>     ALLOWED_HOSTS = [os.getenv('PROJECT_DOMAIN') + ".glitch.me"]
+>     ```
+>     
+>     مقدار `PROJECT_DOMAIN` به صورت اتوماتیک توسط Glitch ایجاد می‌شود. این مقدار وابسته به نام پروژه شماست.
 
 ## راه اندازی یک پایگاه داده
 
@@ -173,7 +213,15 @@ DATABASES = {
     (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
     
 
-اگر در ویندوز کار می‌کنید و پیغام خطا `UnicodeDecodeError` را دریافت کردید، به جای دستور بالا از این دستور استفاده کنید:
+یا اگر از Glitch استفاده می‌کنید به کمک دستور زیر:
+
+{% filename %}Glitch.com terminal{% endfilename %}
+
+    $ refresh
+    
+    
+
+اگر در ویندوز کار می‌کنید و با خطای `UnicodeDecodeError` مواجه شدید، از دستور زیر استفاده کنید:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -194,11 +242,16 @@ DATABASES = {
     https://<a bunch of letters and numbers>.vfs.cloud9.us-west-2.amazonaws.com
     
 
+یا در Glitch:
+
+    https://name-of-your-glitch-project.glitch.me
+    
+
 تبریک! شما اولین وبسایت خود را ساخته اید و با یک وب سرور آن را فعال کرده اید! فوق العاده نیست؟
 
 ![Install worked!](images/install_worked.png)
 
-توجه داشته باشید که یک کنسول خط فرمان در هر لحظه فقط یک کار را می‌تواند انجام دهد و کنسول خط فرمان که شما قبل تر باز کرده اید در حال اجرای وب سرور است. تا زمانی که وب سرور در حال اجراست و منتظر است تا درخواستی به آن برسد می‌توان چیزی تایپ کرد ولی هیچ دستور جدیدی را نمی‌توان اجرا کرد.
+توجه داشته باشید که یک کنسول خط فرمان در هر لحظه فقط یک کار را می‌تواند انجام دهد و کنسول خط فرمان که شما قبل‌تر باز کرده‌اید در حال اجرای وب سرور است. تا زمانی که وب سرور در حال اجراست و منتظر است تا درخواستی به آن برسد می‌توان چیزی تایپ کرد ولی هیچ دستور جدیدی را نمی‌توان اجرا کرد.
 
 > نحوه عملکرد وب سرور را در بخش **اینترنت چگونه کار می‌کند** دوره کرده ایم.
 
