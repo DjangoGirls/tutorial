@@ -80,7 +80,7 @@ h1 a, h2 a {
 
 `h1 a` är en CSS Selektor. Det innebär att vi tillämpar våra stilar på alla `a`-element inom ett `h1`-element; `h2 a` selektoren gör samma sak för `h2`-elementen. Så när vi har något i stil med `<h1><a href="">länk</a></h1>`, kommer `h1 a`-stilen gälla. I detta fall säger vi åt den att ändra sin färg till `#C25100`, vilket är mörk orange. Eller så kan du lägga din egen färg här, men se till att den har god kontrast mot en vit bakgrund!
 
-I en CSS-fil bestämmer vi stilar för element i HTML-filen. Det första sättet vi identifierar element är med elementnamnet. Du kanske minns dessa som taggar från HTML-avsnittet. Saker som `a`, `h1` och `body` är alla exempel på elementnamn. Vi identifierar även element genom attributet `class` eller attributet `id`. Class och id är namn du själv ger elementet. Class definierar grupper av element, medan id pekar på specifika element. For example, you could identify the following element by using the element name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+I en CSS-fil bestämmer vi stilar för element i HTML-filen. Det första sättet vi identifierar element är med elementnamnet. Du kanske minns dessa som taggar från HTML-avsnittet. Saker som `a`, `h1` och `body` är alla exempel på elementnamn. Vi identifierar även element genom attributet `class` eller attributet `id`. Class och id är namn du själv ger elementet. Class definierar grupper av element, medan id pekar på specifika element. Till exempel kan du identifiera följande element genom att använda elementnamnet `a`, klassen `external_link` eller id `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
@@ -180,7 +180,7 @@ Toppen!
 
 Som tidigare nämnt har CSS ett koncept av klasser. Dessa tillåter dig att namnge en del av HTML-koden och använda formatmallar till enbart denna del, utan att det påverkar andra delar. Detta kan vara väldigt användbart! Kanske har du två div-taggar som gör något specifikt (som din rubrik och ditt inlägg). En klass kan hjälpa dig att få dem att se annorlunda ut.
 
-Go ahead and name some parts of the HTML code. Replace the `header` that contains your header with the following:
+Fortsätt med att namnge delar av HTML-koden. Ersätt elementet `header` som innehåller din rubrik med följande:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -192,7 +192,7 @@ Go ahead and name some parts of the HTML code. Replace the `header` that contain
 </header>
 ```
 
-And now add a class `post` to your `article` containing a blog post.
+Och lägg nu till en klass `post` i din `article` som innehåller ett blogginlägg.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
