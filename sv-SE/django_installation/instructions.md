@@ -74,7 +74,7 @@ Vi kan skapa en `virtualenv` på både Linux och OS X genom att köra `python3 -
 >     Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
 >     
 > 
-> To get around this, use the `virtualenv` command instead.
+> För att komma runt detta, använd kommandot `virtualenv` istället.
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -82,14 +82,14 @@ Vi kan skapa en `virtualenv` på både Linux och OS X genom att köra `python3 -
 >     $ virtualenv --python=python{{ book.py_version }} myvenv
 >     
 > 
-> **NOTE:** If you get an error like
+> **OBS:** Om du får ett fel som detta
 > 
 > {% filename %}command-line{% endfilename %}
 > 
 >     E: Unable to locate package python3-venv
 >     
 > 
-> then instead run:
+> kör istället:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -98,21 +98,21 @@ Vi kan skapa en `virtualenv` på både Linux och OS X genom att köra `python3 -
 
 <!--endsec-->
 
-## Working with virtualenv
+## Arbeta med virtualenv
 
-The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directory and files).
+Kommandot ovan kommer att skapa en katalog som heter `myvenv` (eller vilket namn du än väljer) som innehåller vår virtuella miljö (i princip ett gäng kataloger och filer).
 
 <!--sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
 
-Start your virtual environment by running:
+Starta din virtuella miljö genom att köra:
 
 {% filename %}command-line{% endfilename %}
 
     C:\Users\Name\djangogirls> myvenv\Scripts\activate
     
 
-> **NOTE:** on Windows 10 you might get an error in the Windows PowerShell that says `execution of scripts is disabled on this system`. In this case, open another Windows PowerShell with the "Run as Administrator" option. Then try typing the following command before starting your virtual environment:
+> **OBS:** På Windows 10 kan du få ett fel i Windows PowerShell som säger `execution of scripts is disabled on this system`. I så fall, öppna en annan Windows PowerShell med alternativet "Kör som administratör". Skriv sedan följande kommando innan du startar din virtuella miljö:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -123,26 +123,26 @@ Start your virtual environment by running:
 
 <!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
 
-> **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows PowerShell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
+> **OBS:** För användare av den populära editorn VS Code, som kommer med en integrerad terminal baserad på Windows PowerShell, om du vill hålla fast vid den integrerade terminalen, kan du köra följande kommando för att aktivera din virtuella miljö:
 > 
 >     $ . myvenv\Scripts\activate.ps1
 >     
 > 
-> The advantage is that you don't have to switch between editor windows and command-line windows
+> Fördelen är att du inte behöver växla mellan redigerarfönster och kommandoradsfönster
 
 <!--endsec-->
 
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-Start your virtual environment by running:
+Starta din virtuella miljö genom att köra:
 
 {% filename %}command-line{% endfilename %}
 
     $ source myvenv/bin/activate
     
 
-Remember to replace `myvenv` with your chosen `virtualenv` name!
+Kom ihåg att ersätta `myvenv` med ditt valda `virtualenv`-namn!
 
 > **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
 > 
