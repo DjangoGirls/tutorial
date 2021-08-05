@@ -37,7 +37,7 @@ Pour créer un nouveau `virtualenv`, vous devez ouvrir un terminal et exécuter 
     C:\Users\Name\djangogirls> python -m venv myvenv
     
 
-Où `myvenv` est le nom de votre `virtualenv`. Vous pouvez choisir un autre nom mais attention : il doit être en minuscules, sans espaces et sans accents ou caractères spéciaux. C'est aussi une bonne idée de choisir un nom plutôt court, car vous aller souvent l'utiliser!
+Où `myvenv` est le nom de votre `virtualenv`. Vous pouvez choisir un autre nom mais attention : il doit être en minuscules, sans espaces et sans accents ou caractères spéciaux. It is also a good idea to keep the name short – you'll be referencing it a lot!
 
 <!--endsec-->
 
@@ -100,7 +100,7 @@ Pour créer un `virtualenv` sous Linux ou OS X, tapez simplement la commande `py
 
 ## Travailler avec virtualenv
 
-Les commandes listées ci-dessus permettent de créer un dossier appelé `myvenv` (ou le nom que vous avez choisi) qui contient notre environnement virtuel. Pour faire simple, c'est un dossier composé lui-même d'autres dossiers et de fichiers.
+The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directories and files).
 
 <!--sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
@@ -112,7 +112,7 @@ Démarrez votre environnement virtuel en exécutant :
     C:\Utilisateurs\Nom\djangogirls> myvenv\Scripts\activate
     
 
-> **Note:** sur Windows 10 vous pouvez avoir une erreur dans le PowerShell de Windows disant `execution of scripts is disabled on this system`. Dans ce cas ouvrez une autre console Windows PowerShell avec l'option "ouvrir en tant qu'administrateur". Puis essayer d'exécuter la commande suivante avant de démarrer votre environnement virtuel :
+> **NOTE:** On Windows 10 you might get an error in the Windows PowerShell that says `execution of scripts is disabled on this system`. Dans ce cas ouvrez une autre console Windows PowerShell avec l'option "ouvrir en tant qu'administrateur". Puis essayer d'exécuter la commande suivante avant de démarrer votre environnement virtuel :
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -123,7 +123,7 @@ Démarrez votre environnement virtuel en exécutant :
 
 <!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
 
-> **NOTE :** Sous Windows, pour les utilisateurs du très populaire éditeur de texte VS Code, qui comporte un terminal intégré basé sur Windows Powershell, si vous souhaitez conserver le terminal intégré, vous pouvez utiliser la commande suivante pour activer votre environnement virtuel :
+> **NOTE:** For users of the popular editor VS Code, which comes with an integrated terminal based off windows PowerShell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
 > 
 >     $ . myvenv\Scripts\activate.ps1
 >     
@@ -144,7 +144,7 @@ Démarrez votre environnement virtuel en exécutant :
 
 N'oubliez pas de remplacer `myvenv` par le nom que vous avez choisi pour votre `virtualenv` (le cas échéant) !
 
-> **NOTE :** il arrive parfois que `source` ne soit pas disponible. Dans ce cas, vous pouvez essayer ceci :
+> **NOTE:** If the command `source` is not available, try doing this instead:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -203,14 +203,14 @@ Maintenant, exécutez `pip install -r requirements.txt` pour installer Django.
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> Si jamais vous obtenez des erreurs lorsque vous utilisez pip sous Windows, vérifiez si votre chemin d'accès contient des espaces, des accents ou des caractères spéciaux (ex : `C:\Utilisateurs\Nom d'Utilisateur\djangogirls`). Si c'est le cas, changez de dossier et essayez d'en créer un nouveau en prenant en compte le fait qu'il ne doit donc avoir ni accents, ni espaces, ni caractères spéciaux (ex : `C:\djangogirls`). Créez un nouvel environnement virtuel dans le nouveau répertoire, puis supprimez l'ancien et ré-essayez la commande précédente. (Déplacer ou couper/coller le répertoire de l'environnement virtuel ne marchera pas car virtualenv utilise des chemins absolus)
+> If you get an error when calling pip on Windows, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). Si c'est le cas, changez de dossier et essayez d'en créer un nouveau en prenant en compte le fait qu'il ne doit donc avoir ni accents, ni espaces, ni caractères spéciaux (ex : `C:\djangogirls`). Créez un nouvel environnement virtuel dans le nouveau répertoire, puis supprimez l'ancien et ré-essayez la commande précédente. (Déplacer ou couper/coller le répertoire de l'environnement virtuel ne marchera pas car virtualenv utilise des chemins absolus)
 
 <!--endsec-->
 
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Votre terminal peut se figer quand vous essayez d'installer Django. Si cela arrive, utilisez cette commande au lieu de la précédente :
+> Your command line might freeze when you try to install Django. If this happens, instead of the above command use:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
