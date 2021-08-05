@@ -210,7 +210,7 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
+> Din kommandorad kan frysa när du försöker installera Django. Om detta händer, kör detta istället för kommandot ovan:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -222,8 +222,8 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
+> Om du får ett fel när du kör pip på Ubuntu 12.04 kör `python -m pip install -U --force-reinstall pip` för att fixa pip-installationen i din virtualenv.
 
 <!--endsec-->
 
-That's it! You're now (finally) ready to create a Django application!
+Det var det! Du är nu (äntligen) redo att skapa en Django-applikation!
