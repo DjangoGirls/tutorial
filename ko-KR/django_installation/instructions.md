@@ -37,7 +37,7 @@ data-collapse=true ces-->
     C:\Users\Name\djangogirls> python -m venv myvenv
     
 
-여기서 `myvenv` 는 `가상 환경`의 이름이예요. 이름은 마음대로 정할 수 있지만, 소문자여야하고 공백은 없어야하고 특수문자도 사용하면 안되요. 이름은 짧게 만드는게 좋아요. 자주 입력해야하니까요.
+여기서 `myvenv` 는 `가상 환경`의 이름이예요. 이름은 마음대로 정할 수 있지만, 소문자여야하고 공백은 없어야하고 특수문자도 사용하면 안되요. It is also a good idea to keep the name short – you'll be referencing it a lot!
 
 <!--endsec-->
 
@@ -100,7 +100,7 @@ data-collapse=true ces-->
 
 ## 가상환경 사용하기
 
-앞의 명령을 사용하면 `myvenv`라는 디렉토리가 만들어져요. (이름을 다르게 했다면 그 이름의 디레토리가 만들어져요) 그리고 그 디렉토리에 우리가 사용할 가상 환경이 들어있어요 (디렉토리들이랑 파일들이 있어요).
+The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directories and files).
 
 <!--sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
@@ -112,7 +112,7 @@ data-collapse=true ces-->
     C:\Users\Name\djangogirls> myvenv\Scripts\activate
     
 
-> **주의:** 윈도우 10의 파워셸에서는 `execution of scripts is disabled on this system`와 같은 에러가 발생할 수 있어요. 이 경우 "관리자 권한으로 실행" 옵션을 사용해 새 윈도우 파워셸을 열어요. 가상환경을 시작하기 전에 그리고 아래 명령을 입력해요.
+> **NOTE:** On Windows 10 you might get an error in the Windows PowerShell that says `execution of scripts is disabled on this system`. 이 경우 "관리자 권한으로 실행" 옵션을 사용해 새 윈도우 파워셸을 열어요. 가상환경을 시작하기 전에 그리고 아래 명령을 입력해요.
 > 
 > {% filename %}명령줄{% endfilename %}
 > 
@@ -123,7 +123,7 @@ data-collapse=true ces-->
 
 <!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
 
-> **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows PowerShell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
+> **NOTE:** For users of the popular editor VS Code, which comes with an integrated terminal based off windows PowerShell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
 > 
 >     $ . myvenv\Scripts\activate.ps1
 >     
@@ -144,7 +144,7 @@ data-collapse=true ces-->
 
 실행할 때 `myvenv` 부분에 자신이 선택한 `가상 환경`의 이름을 적어야해요!
 
-> **주의:** 간혹 `source` 명령이 동작하지 않을 수도 있어요. 그럴 때는 이렇게 하세요.
+> **NOTE:** If the command `source` is not available, try doing this instead:
 > 
 > {% filename %}명령줄{% endfilename %}
 > 
@@ -203,14 +203,14 @@ requirements는 `pip install`로 설치가 필요한 것들의 목록을 유지�
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> 만약 윈도우에서 pip를 실행했는데 오류가 발생했다면 경로에 공백이나 특수문자가 없는지 (예를 들어 `C:\Users\User Name\djangogirls` 처럼요) 확인하세요. 만약 그렇다면 (`C:\djangogirls`처럼) 공백이나 특수문자가 없는 곳으로 옮겨보세요. 디렉토리에 새로운 가상환경을 만들고, 이전 가상환경을 삭제한 후 명령을 다시 시도해보세요. (가상환경은 절대 경로를 사용하기 때몬에 경로를 변경하면 작동하지 않습니다)
+> If you get an error when calling pip on Windows, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). 만약 그렇다면 (`C:\djangogirls`처럼) 공백이나 특수문자가 없는 곳으로 옮겨보세요. 디렉토리에 새로운 가상환경을 만들고, 이전 가상환경을 삭제한 후 명령을 다시 시도해보세요. (가상환경은 절대 경로를 사용하기 때몬에 경로를 변경하면 작동하지 않습니다)
 
 <!--endsec-->
 
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> 장고 설치 시, 커맨드 라인이 멈출 수 있습니다. 이 경우, 아래 명령어를 사용하세요:
+> Your command line might freeze when you try to install Django. If this happens, instead of the above command use:
 > 
 > {% filename %}명령줄{% endfilename %}
 > 
