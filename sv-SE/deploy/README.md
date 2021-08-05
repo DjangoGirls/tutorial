@@ -163,7 +163,7 @@ Din kod är nu på GitHub. Gå och kolla in den! Du kommer se att den är i gott
 
 Gå tillbaka till [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) genom att klicka på logotypen, och välj alternativet att starta en "Bash"-konsol – det är PythonAnywheres version av en kommandorad, precis som den på din dator.
 
-![The 'New Console' section on the PythonAnywhere web interface, with a button for 'bash'](images/pythonanywhere_bash_console.png)
+![Avsnittet 'New Console' i PythonAnywheres webbgränssnitt, med en knapp för 'bash'](images/pythonanywhere_bash_console.png)
 
 > **Obs** PythonAnywhere är baserat på Linux, så om du kör Windows, kommer konsolen att se lite annorlunda ut än den på din dator.
 
