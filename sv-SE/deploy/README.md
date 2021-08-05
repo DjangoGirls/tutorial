@@ -216,13 +216,13 @@ Nu, om du vill, kan du också ta en titt på din kod på PythonAnywhere med `ls`
 
 Du kan också gå till sidan "Files" och navigera runt med PythonAnywheres inbyggda filläsare. (Från konsolsidan, kan du komma till andra PythonAnywhere-sidor via menyknappen i det övre högra hörnet. När du är på en av sidorna, finns det länkar till de andra nära toppen.)
 
-## You are now live!
+## Nu är du live!
 
-Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want. :)
+Din webbplats ska nu vara live på Internet! Klicka på PythonAnywheres sida "Web" för att få en länk till den. Du kan dela denna med vem du vill. :)
 
-> **Note** This is a beginners' tutorial, and in deploying this site we've taken a few shortcuts which aren't ideal from a security point of view. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) for some tips on securing your site.
+> **Obs** Detta är en nybörjarhandledning och genom att distribuera denna webbplats har vi tagit några genvägar som inte är idealiska ur säkerhetssynpunkt. Om och när du väljer att bygga vidare på detta projekt, eller startar ett nytt projekt, bör du granska [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) för tips om hur du säkrar din webbplats.
 
-## Debugging tips
+## Tips för debuggning
 
 If you see an error while running the `pa_autoconfigure_django.py` script, here are a few common causes:
 
