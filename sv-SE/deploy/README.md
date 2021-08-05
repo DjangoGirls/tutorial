@@ -239,8 +239,8 @@ Och kom ihåg, din coach finns här för att hjälpa till!
 
 # Kolla in din webbsida!
 
-The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server -- remember, the posts from your local test database were not sent to your live blog.
+Standardsidan för din webbplats bör säga "It worked!", precis som den gör på din lokala dator. Försök att lägga till `/admin/` till slutet av webbadressen och du kommer att tas till administratörssidan. Logga in med användarnamn och lösenord så ser du att du kan lägga till nya inlägg på servern -- kom ihåg, inläggen från din lokala testdatabas skickades inte till din liveblogg.
 
-Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
+När du har skapat några inlägg kan du gå tillbaka till din lokala installation (inte PythonAnywhere). Från och med nu bör du arbeta med din lokala installation för att göra ändringar. Detta är ett vanligt arbetsflöde inom webbutveckling – gör lokala ändringar, pusha dessa ändringar till GitHub, och hämta dina ändringar till din live-webbserver. Detta gör att du kan arbeta och experimentera utan att ha sönder din live-webbsida. Ganska coolt va?
 
-Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet!
+Ge dig själv en *STOR* klapp på axeln! Serverpublicering är en av de svåraste delarna inom webbutveckling och det tar ofta flera dagar innan folk får det att fungera. Men du har din webbplats live, på Internet!
