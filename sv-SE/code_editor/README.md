@@ -6,6 +6,6 @@ Du är på väg att skriva din första rad kod, så det är dags att ladda ner e
 
 > **Obs** Om du använder en Chromebook, hoppa över detta kapitel och följ istället instruktionerna i [Chromebook-installation](../chromebook_setup/README.md). Det cloud IDE du valde (PaizaCloud Cloud IDE eller AWS Cloud9) innehåller en kod-editor, och när du öppnar en fil i din IDE från Arkiv-menyn använder du automatiskt editoren.
 > 
-> **Note** You might have done this earlier in the [Installation chapter](../installation/README.md) – if so, you can skip right ahead to the next chapter!
+> **Obs** Du kanske redan har gjort detta i [Installationskapitlet](../installation/README.md) – i så fall du kan hoppa vidare till nästa kapitel!
 
 {% include "/code_editor/instructions.md" %}
