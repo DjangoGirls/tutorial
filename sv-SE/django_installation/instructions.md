@@ -144,7 +144,7 @@ Starta din virtuella miljö genom att köra:
 
 Kom ihåg att ersätta `myvenv` med ditt valda `virtualenv`-namn!
 
-> **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
+> **OBS:** ibland är `source` inte tillgängligt. I dessa fall försök att göra detta istället:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -153,28 +153,28 @@ Kom ihåg att ersätta `myvenv` med ditt valda `virtualenv`-namn!
 
 <!--endsec-->
 
-You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
+Du vet att du har startat `virtualenv` när du ser att prompten i din konsol är prefixad med `(myvenv)`.
 
-When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
+När du arbetar i en virtuell miljö kommer `python` automatiskt att hänvisa till rätt version så du kan använda `python` istället för `python3`.
 
-OK, we have all important dependencies in place. We can finally install Django!
+OK, vi har alla viktiga beroenden på plats. Vi kan äntligen installera Django!
 
-## Installing Django {#django}
+## Installera Django {#django}
 
-Now that you have your `virtualenv` started, you can install Django.
+Nu när du har startat din `virtualenv` kan du installera Django.
 
-Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
+Innan vi gör det bör vi se till att vi har den senaste versionen av `pip`, den programvara vi använder för att installera Django:
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~$ python -m pip install --upgrade pip
     
 
-### Installing packages with requirements
+### Installera paket med krav (requirements)
 
-A requirements file keeps a list of dependencies to be installed using `pip install`:
+En kravfil håller en lista över beroenden som ska installeras med `pip install`:
 
-First create a `requirements.txt` file inside of the `djangogirls/` folder, using the code editor that you installed earlier. You do this by opening a new file in the code editor and then saving it as `requirements.txt` in the `djangogirls/` folder. Your directory will look like this:
+Skapa först filen `requirements.txt` inuti mappen `djangogirls/` med kodeditorn du installerade tidigare. Du gör detta genom att öppna en ny fil i kodeditorn och sedan sparar den som `requirements.txt` i mappen `djangogirls/` Din katalog kommer att se ut så här:
 
     djangogirls
     ├── myvenv
@@ -182,14 +182,14 @@ First create a `requirements.txt` file inside of the `djangogirls/` folder, usin
     └───requirements.txt
     
 
-In your `djangogirls/requirements.txt` file you should add the following text:
+Lägg till följande i filen `djangogirls/requirements.txt`:
 
 {% filename %}djangogirls/requirements.txt{% endfilename %}
 
     Django~={{ book.django_version }}
     
 
-Now, run `pip install -r requirements.txt` to install Django.
+Kör nu `pip install -r requirements.txt` för att installera Django.
 
 {% filename %}command-line{% endfilename %}
 
