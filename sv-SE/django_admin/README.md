@@ -21,9 +21,9 @@ OK, dags att titta på vår modell Post. Kom ihåg att köra `python manage.py r
 
 För att logga in måste du skapa en *superanvändare* - ett användarkonto som har kontroll över allt på webbplatsen. Gå tillbaka till kommandoraden, skriv `python manage.py createsuperuser` och tryck enter.
 
-> Kom ihåg: För att skriva nya kommandon medan webbservern körs, öppna ett nytt terminalfönster och aktivera din virtualenv. We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
+> Kom ihåg: För att skriva nya kommandon medan webbservern körs, öppna ett nytt terminalfönster och aktivera din virtualenv. Vi gick igenom hur man skriver nya kommandon i kapitlet **Ditt första Django-projekt!** i avsnittet **Starta webbservern**.
 
-{% filename %}Mac OS X or Linux:{% endfilename %}
+{% filename %}Mac OS X eller Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py createsuperuser
     
@@ -33,7 +33,7 @@ För att logga in måste du skapa en *superanvändare* - ett användarkonto som 
     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
     
 
-When prompted, type your username (lowercase, no spaces), email address, and password. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
+När du blir ombedd, skriv in ditt användarnamn (med gemener, inga mellanslag), e-postadress och lösenord. **Oroa dig inte för att du inte kan se lösenordet du skriver in – det är så det ska vara.** Skriv in det och tryck `enter` för att fortsätta. Utskriften ska se ut så här (där användarnamn och e-post ska vara dina egna):
 
     Username: ola
     Email address: ola@example.com
@@ -42,16 +42,16 @@ When prompted, type your username (lowercase, no spaces), email address, and pas
     Superuser created successfully.
     
 
-Return to your browser. Log in with the superuser's credentials you chose; you should see the Django admin dashboard.
+Återgå till din webbläsare. Logga in med superanvändarens användaruppgifter du valde; du bör se Django admins instrumentpanel.
 
 ![Django admin](images/django_admin3.png)
 
-Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content –- it's only visible to you on your local computer -- you can copy-paste some text from this tutorial to save time. :)
+Gå till Posts och experimentera lite. Lägg till fem eller sex blogginlägg. Oroa dig inte för innehållet – det är bara synligt för dig på din lokala dator – du kan kopiera och klistra in text från den här handledningen för att spara tid. :)
 
-Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
+Se till att minst två eller tre inlägg (men inte alla) har publiceringsdatum. Det kommer att vara till hjälp senare.
 
 ![Django admin](images/edit_post3.png)
 
-If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/2.2/ref/contrib/admin/
+Om du vill veta mer om Django admin, kolla in Djangos dokumentation: https://docs.djangoproject.com/en/2.2/ref/contrib/admin/
 
-This is probably a good moment to grab a coffee (or tea) or something to eat to re-energize yourself. You created your first Django model – you deserve a little break!
+Detta är förmodligen ett bra ögonblick att ta en kaffe (eller te) eller något att äta för att ge dig energi. Du skapade din första Django-modell – du förtjänar en liten paus!
