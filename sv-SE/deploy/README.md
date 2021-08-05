@@ -224,20 +224,20 @@ Din webbplats ska nu vara live på Internet! Klicka på PythonAnywheres sida "We
 
 ## Tips för debuggning
 
-If you see an error while running the `pa_autoconfigure_django.py` script, here are a few common causes:
+Om du får ett fel när du kör `pa_autoconfigure_django.py`, är här några vanliga anledningar:
 
-- Forgetting to create your PythonAnywhere API token.
-- Making a mistake in your GitHub URL
-- If you see an error saying *"Could not find your settings.py"*, it's probably because you didn't manage to add all your files to Git, and/or you didn't push them up to GitHub successfully. Have another look at the Git section above
-- If you previously signed up for a PythonAnywhere account and had an error with collectstatic, you probably have an older version of SQLite (eg 3.8.2) for your account. In that case, sign up for a new account and try the commands in the PythonAnywhere section above.
+- Du har glömt att skapa din PythonAnywhere API-token.
+- Du har skrivit fel i din GitHub-URL
+- Om du ser ett fel som säger *"Could not find your settings.py"* är det förmodligen för att du inte lyckades lägga till alla dina filer till Git och/eller att du inte pushade dem till GitHub. Ta en extra titt på Git-avsnittet ovan.
+- Om du tidigare registrerade ett PythonAnywhere-konto och fick ett fel med collectstatic har du förmodligen en äldre version av SQLite (t.ex. 3.8.2) på ditt konto. I så fall, registrera ett nytt konto och kör kommandona i PythonAnywhere-avsnittet ovan.
 
-If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere ["Web" page](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
+Om du får ett fel när du besöker din webbplats är den första platsen att leta efter felsökningsinformation i din **error log**. Du hittar en länk till denna på PythonAnywheres ["Web"-sida](https://www.pythonanywhere.com/web_app_setup/). Se om det finns några felmeddelanden där; de senaste är längst ned.
 
-There are also some [general debugging tips on the PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
+Det finns också några [allmänna debugg-tips på PythonAnywheres hjälp-sida](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
-And remember, your coach is here to help!
+Och kom ihåg, din coach finns här för att hjälpa till!
 
-# Check out your site!
+# Kolla in din webbsida!
 
 The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server -- remember, the posts from your local test database were not sent to your live blog.
 
