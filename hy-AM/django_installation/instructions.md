@@ -37,7 +37,7 @@ data-collapse=true ces-->
     C:\Users\Name\djangogirls> python -m venv myvenv
     
 
-Որտեղ ` myvenv ` - ը ձեր `virtualenv` անունն է: Կարող եք օգտագործել ցանկացած այլ անուն, բայց հավատարիմ մնացեք փոքրատառերին և մի օգտագործեք բացատներ, շեշտադրումներ կամ հատուկ նիշեր: Լավ է նաև, որ անունը կարճ մնա. Դուք դեռ շատ կանդրադառնաք դրան:
+Որտեղ ` myvenv ` - ը ձեր `virtualenv` անունն է: Կարող եք օգտագործել ցանկացած այլ անուն, բայց հավատարիմ մնացեք փոքրատառերին և մի օգտագործեք բացատներ, շեշտադրումներ կամ հատուկ նիշեր: It is also a good idea to keep the name short – you'll be referencing it a lot!
 
 <!--endsec-->
 
@@ -101,7 +101,7 @@ data-collapse=true ces-->
 
 ## Վիրտուալենվի/virtualenv-ի հետ աշխատանք
 
-Վերոնշյալ հրամանը կստեղծի ` myvenv ` գրացուցակ (կամ մեկ այլ ՝ ձեր ընտրած ցանկացած անուն), որը կպարունակի վիրտուալ միջավայր/ virtual environment (հիմնականում ֆայլերի և պանակների շարք):
+The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directories and files).
 
 <!--sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
@@ -113,7 +113,7 @@ data-collapse=true ces-->
     C:\Users\Name\djangogirls> myvenv\Scripts\activate
     
 
-> ** Նշում. ** Windows 10-ի դեպքում Windows PowerShell- ում կարող է ստացվել սխալի հաղորդագրություն, որում ասվում է, որ `execution of scripts is disabled on this system/սցենարը անջատված է այս համակարգում` Այս դեպքում բացեք մեկ այլ Windows PowerShell «Գործարկեք որպես ադմինիստրատոր»/"Run as Administrator" տարբերակով: Դրանից հետո փորձեք մուտքագրել հետևյալ հրամանը ՝ նախքան ձեր վիրտուալ միջավայրի/virtual environment-ի սկսելը.
+> **NOTE:** On Windows 10 you might get an error in the Windows PowerShell that says `execution of scripts is disabled on this system`. Այս դեպքում բացեք մեկ այլ Windows PowerShell «Գործարկեք որպես ադմինիստրատոր»/"Run as Administrator" տարբերակով: Դրանից հետո փորձեք մուտքագրել հետևյալ հրամանը ՝ նախքան ձեր վիրտուալ միջավայրի/virtual environment-ի սկսելը.
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -124,7 +124,7 @@ data-collapse=true ces-->
 
 <!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
 
-> **Նշում** Հանրաճանաչ խմբագիր VS Code- ի օգտագործողների համար, որոնք գալիս են Windows PowerShell- ի վրա հիմնված ինտեգրված տերմինալ, եթե ցանկանում եք հավատարիմ մնալ ինտեգրված տերմինալին, կարող եք գործարկել հետևյալ հրահանգը ՝ ձեր վիրտուալ միջավայրն ակտիվացնելու համար.
+> **NOTE:** For users of the popular editor VS Code, which comes with an integrated terminal based off windows PowerShell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
 > 
 >     $ . myvenv\Scripts\activate.ps1
 >     
@@ -145,7 +145,7 @@ data-collapse=true ces-->
 
 Մի մոռացեք ` myvenv ` -ը փոխարինել ձեր ընտրած ` virtualenv ` անունով:
 
-> **Նշում**երբեմն `source/աղբյուրը` կարող է անհասանելի լինել: Այդ դեպքում օգտագործեք հետևյալ մեթոդը.
+> **NOTE:** If the command `source` is not available, try doing this instead:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -204,14 +204,14 @@ Django- ն տեղադրելու համար այժմ մուտքագրեք `pip in
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> Եթե ​​Windows- ում pip գործարկելիս սխալ եք ստացել, ստուգեք, որ նախագծի գրացուցակը չի պարունակում հեռավորություններ կամ հատուկ նիշեր (օրինակ, `C:\Users\User Name\djangogirls`): Եթե ​​սա է խնդիրը, ապա խնդրում ենք ձեր նախագիծը տեղափոխել մեկ այլ վայր, որի հասցեն չի պարունակի բացատներ և հատուկ նիշեր (խորհուրդ ենք տալիս ՝ `C:\djangogirls`): Նոր գրացուցակում ստեղծեք նոր virtualenv, այնուհետև ջնջեք հինը և կրկնեք վերը նշված հրահանգները: (Virtualenv գրացուցակի տեղափոխումը չի գործի, քանի որ virtualenv- ն օգտագործում է բացարձակ ուղիներ):
+> If you get an error when calling pip on Windows, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). Եթե ​​սա է խնդիրը, ապա խնդրում ենք ձեր նախագիծը տեղափոխել մեկ այլ վայր, որի հասցեն չի պարունակի բացատներ և հատուկ նիշեր (խորհուրդ ենք տալիս ՝ `C:\djangogirls`): Նոր գրացուցակում ստեղծեք նոր virtualenv, այնուհետև ջնջեք հինը և կրկնեք վերը նշված հրահանգները: (Virtualenv գրացուցակի տեղափոխումը չի գործի, քանի որ virtualenv- ն օգտագործում է բացարձակ ուղիներ):
 
 <!--endsec-->
 
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Հրամանի տողը կարող է սառեցնել Django- ն տեղադրելու փորձից հետո: Եթե ​​դա տեղի ունենա, ապա վերը նշված հրամանի փոխարեն օգտագործեք այս մեկը.
+> Your command line might freeze when you try to install Django. If this happens, instead of the above command use:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
