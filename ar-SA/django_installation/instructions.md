@@ -37,7 +37,7 @@ data-collapse=true ces-->
     C:\Users\Name\djangogirls> python -m venv myvenv
     
 
-حيث `myvenv` هو اسم خاص ب `virtualenv`. يمكنك استخدام أي اسم آخر، لكن حافض على الحروف الصغيرة ولا تستخدم مسافات أو لهجات أو أحرف خاصة. كما أنها فكرة جيدة الحفاظ على الاسم قصير – سوف تستخدمه كمرجع كثيرا!
+حيث `myvenv` هو اسم خاص ب `virtualenv`. يمكنك استخدام أي اسم آخر، لكن حافض على الحروف الصغيرة ولا تستخدم مسافات أو لهجات أو أحرف خاصة. It is also a good idea to keep the name short – you'll be referencing it a lot!
 
 <!--endsec-->
 
@@ -100,7 +100,7 @@ data-collapse=true ces-->
 
 ## العمل مع virtualenv
 
-الأمر أعلاه سينشئ دليل يسمى `myvenv` (أو أيا كان الاسم الذي تختاره) الذي يحتوي على بيئتنا الإفتراضية (أساسا حفنة من الدلائل والملفات).
+The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directories and files).
 
 <!--sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
@@ -112,7 +112,7 @@ data-collapse=true ces-->
     C:\Users\Name\djangogirls> myvenv\Scripts\activate
     
 
-> **ملاحظة:** على Windows 10 قد تحصل على خطأ في Windows PowerShell يقول `execution of scripts is disabled on this system`. وفي هذه الحالة، قم بفتح Windows PowerShell آخر باستخدام الخيار "تشغيل كمسؤول". ثم حاول كتابة الأمر التالي قبل تشغيل البيئة الإفتراضية الخاصة بك:
+> **NOTE:** On Windows 10 you might get an error in the Windows PowerShell that says `execution of scripts is disabled on this system`. وفي هذه الحالة، قم بفتح Windows PowerShell آخر باستخدام الخيار "تشغيل كمسؤول". ثم حاول كتابة الأمر التالي قبل تشغيل البيئة الإفتراضية الخاصة بك:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -123,7 +123,7 @@ data-collapse=true ces-->
 
 <!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
 
-> **ملاحظة:** لمستخدمي المحرر الشائع VS Code، الذي يأتي مع محطة طرفية متكاملة مبنية من windows PowerShell، إذا كنت ترغب في التمسك بالمحطة الطرفية المدمجة، فيمكنك تشغيل الأمر التالي لتفعيل البيئة الافتراضية الخاصة بك:
+> **NOTE:** For users of the popular editor VS Code, which comes with an integrated terminal based off windows PowerShell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
 > 
 >     $ . myvenv\Scripts\activate.ps1
 >     
@@ -144,7 +144,7 @@ data-collapse=true ces-->
 
 تذكر أن تستبدل `myvenv` باسم `virtualenv` الذي اخترته!
 
-> **ملاحظة:** في بعض الأحيان قد يكون `source` غير متوفر. وفي تلك الحالات حاول القيام بهذا بدلاً من ذلك:
+> **NOTE:** If the command `source` is not available, try doing this instead:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -203,14 +203,14 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> إذا كنت تحصل على خطأ عند استدعاء برنامج pip على منصة Windows، الرجاء التحقق إذا كان اسم مسار المشروع الخاص بك يحتوي على مسافات أو علامات نطقية أو أحرف خاصة (على سبيل المثال، `C:\Users\User Name\djangogirls`). إذا كان كذالك، يرجى التفكير في استخدام مكان آخر دون مسافات، علامات نطقية أو أحرف خاصة (اقتراح: `C:\djangogirls`). أنشئ virtualenv جديدة في الدليل الجديد، ثم إحذف القديمة وحاول تنفيذ الأمر أعلاه مرة أخرى. (نقل دليل virtualenv لن يعمل لأن virtualenv يستخدم مسارات مطلقة.)
+> If you get an error when calling pip on Windows, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). إذا كان كذالك، يرجى التفكير في استخدام مكان آخر دون مسافات، علامات نطقية أو أحرف خاصة (اقتراح: `C:\djangogirls`). أنشئ virtualenv جديدة في الدليل الجديد، ثم إحذف القديمة وحاول تنفيذ الأمر أعلاه مرة أخرى. (نقل دليل virtualenv لن يعمل لأن virtualenv يستخدم مسارات مطلقة.)
 
 <!--endsec-->
 
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> قد يجمد سطر الأوامر الخاص بك بعد أن تحاول تثبيت جانغو. إذا حدث ذلك، فبدلا من استخدام الأمر أعلاه:
+> Your command line might freeze when you try to install Django. If this happens, instead of the above command use:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
