@@ -37,7 +37,7 @@ Yeni bir `virtualenv` yaratmak için, komut satırını açmanız ve `python -m 
     C:\Users\Name\djangogirls> python -m venv myvenv
     
 
-Burada `myvenv`, `virtualenv`'inizin ismidir. İstediğiniz herhangi bir ismi kullanabilirsiniz, ama küçük harfle yazılmasına ve boşluk, aksan karakterleri (örn: å) ve özel karakterleri kullanmamaya dikkat edin. Ayrıca ismi kısa tutmak işinize yarayacaktır zira bu ismi çokça kullanıyor olacaksınız!
+Burada `myvenv`, `virtualenv`'inizin ismidir. İstediğiniz herhangi bir ismi kullanabilirsiniz, ama küçük harfle yazılmasına ve boşluk, aksan karakterleri (örn: å) ve özel karakterleri kullanmamaya dikkat edin. It is also a good idea to keep the name short – you'll be referencing it a lot!
 
 <!--endsec-->
 
@@ -100,7 +100,7 @@ Burada `myvenv` sizin `virtualenv`'inizin ismi. Dilerseniz istediğiniz herhangi
 
 ## Virtualenv ile çalışmak
 
-Yukarıdaki komutlar `myvenv` (veya seçtiğiniz isimde) bir klasör oluşturacaktır. Bu klasörde birçok dosya ve klasör bulunur.
+The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directories and files).
 
 <!--sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
@@ -112,7 +112,7 @@ data-collapse=true ces-->
     C:\Users\Name\djangogirls> myvenv\Scripts\activate
     
 
-> **NOT:** Windows 10'da , Windows PowerShell tarafından `bu senaryoların uygulanması bu sistemde devre dışıdır` diyen bir hata alabilirsiniz. Bu durumda, başka bir Windows PowerShell'i, "Yönetici Olarak Çalıştır" seçeneğiyle açın. Bundan sonra sanal ortamınızı başlatmadan önce aşağıdaki komutları yazmayı deneyin:
+> **NOTE:** On Windows 10 you might get an error in the Windows PowerShell that says `execution of scripts is disabled on this system`. Bu durumda, başka bir Windows PowerShell'i, "Yönetici Olarak Çalıştır" seçeneğiyle açın. Bundan sonra sanal ortamınızı başlatmadan önce aşağıdaki komutları yazmayı deneyin:
 > 
 > {% filename %}komut-satırı{% endfilename %}
 > 
@@ -123,7 +123,7 @@ data-collapse=true ces-->
 
 <!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
 
-> **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows PowerShell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
+> **NOTE:** For users of the popular editor VS Code, which comes with an integrated terminal based off windows PowerShell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
 > 
 >     $ . myvenv\Scripts\activate.ps1
 >     
@@ -144,7 +144,7 @@ data-collapse=true ces-->
 
 `myvenv` kısmını seçtiğiniz `virtualenv` ismi ile değiştirmeyi unutmayın!
 
-> **NOT:** `source` her zaman calişmaya bilir. O durumlarda aşşağıdaki komutu deneyin:
+> **NOTE:** If the command `source` is not available, try doing this instead:
 > 
 > {% filename %}komut-satırı{% endfilename %}
 > 
@@ -203,14 +203,14 @@ Simdi, Django kurmak için `pip install -r requirements.txt` komutunu çalıstı
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> Eğer Windows'ta pip komutunu kullanırken bir hata aldıysanız, lütfen proje isminin boşluk veya özel karakter içerip içermediğini kontrol edin (örneğin `C:\Users\User Name\djangogirls`). Eğer böyleyse, lütfen boşluksuz veya özel karaktersiz bir yer kullanmayı düşünün (öneri: `C:\djangogirls`). Yeni dizinde yeni bir virtualenv oluşturun, sonra eskisini silin ve yukarıdaki komutu tekrar deneyin. (virtualenv dizinini taşımak işe yaramayacaktır çünkü virtualenv <0>absolute path</0> kullanır.)
+> If you get an error when calling pip on Windows, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). Eğer böyleyse, lütfen boşluksuz veya özel karaktersiz bir yer kullanmayı düşünün (öneri: `C:\djangogirls`). Yeni dizinde yeni bir virtualenv oluşturun, sonra eskisini silin ve yukarıdaki komutu tekrar deneyin. (virtualenv dizinini taşımak işe yaramayacaktır çünkü virtualenv <0>absolute path</0> kullanır.)
 
 <!--endsec-->
 
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Django kurmaya çalışırken komut satırınız donabilir. Bu durumda, yukarıdaki komut yerine şu komutu kullanın:
+> Your command line might freeze when you try to install Django. If this happens, instead of the above command use:
 > 
 > {% filename %}komut-satırı{% endfilename %}
 > 
