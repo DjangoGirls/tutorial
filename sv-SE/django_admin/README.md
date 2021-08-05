@@ -1,8 +1,8 @@
 # Django admin
 
-To add, edit and delete the posts we've just modeled, we will use Django admin.
+För att lägga till, redigera och ta bort de inlägg som vi just skapat modeller för använder vi Django admin.
 
-Let's open the `blog/admin.py` file in the code editor and replace its contents with this:
+Öppna filen `blog/admin.py` i kodredigeraren och ersätta dess innehåll med detta:
 
 {% filename %}blog/admin.py{% endfilename %}
 
@@ -13,15 +13,15 @@ from .models import Post
 admin.site.register(Post)
 ```
 
-As you can see, we import (include) the Post model defined in the previous chapter. To make our model visible on the admin page, we need to register the model with `admin.site.register(Post)`.
+Som du kan se importerar vi (inkluderar) modellen Post definierad i förra kapitlet. För att göra vår modell synlig på administratörssidan måste vi registrera modellen med `admin.site.register(Post)`.
 
-OK, time to look at our Post model. Remember to run `python manage.py runserver` in the console to run the web server. Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
+OK, dags att titta på vår modell Post. Kom ihåg att köra `python manage.py runserver` i konsolen för att köra webbservern. Gå till din webbläsare och skriv in adressen http://127.0.0.1:8000/admin/. Du kommer att se en inloggningssida lik denna:
 
 ![Login page](images/login_page2.png)
 
-To log in, you need to create a *superuser* - a user account that has control over everything on the site. Go back to the command line, type `python manage.py createsuperuser`, and press enter.
+För att logga in måste du skapa en *superanvändare* - ett användarkonto som har kontroll över allt på webbplatsen. Gå tillbaka till kommandoraden, skriv `python manage.py createsuperuser` och tryck enter.
 
-> Remember, to write new commands while the web server is running, open a new terminal window and activate your virtualenv. We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
+> Kom ihåg: För att skriva nya kommandon medan webbservern körs, öppna ett nytt terminalfönster och aktivera din virtualenv. We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
 
 {% filename %}Mac OS X or Linux:{% endfilename %}
 
