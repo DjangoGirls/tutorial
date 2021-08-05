@@ -37,7 +37,7 @@ data-collapse=true ces-->
     C:\Users\Name\djangogirls> python -m venv myvenv
     
 
-در اینجا `myvenv` نام `محیط مجازی` شماست. می‌توانید هر نام دیگری انتخاب کنید اما از حروف کوچک استفاده کنید و از اسپیس، اعراب گذاری و کاراکترهای خاص استفاده نکنید. همچنین بهتر است اسم کوتاهی انتخاب کنید چون بعدتر ارجاعات زیادی به آن خواهید داشت!
+در اینجا `myvenv` نام `محیط مجازی` شماست. می‌توانید هر نام دیگری انتخاب کنید اما از حروف کوچک استفاده کنید و از اسپیس، اعراب گذاری و کاراکترهای خاص استفاده نکنید. It is also a good idea to keep the name short – you'll be referencing it a lot!
 
 <!--endsec-->
 
@@ -100,7 +100,7 @@ data-collapse=true ces-->
 
 ## کار کردن با محیط مجازی
 
-دستور بالا یک پوشه به نام `myvenv` می‌سازد (یا هر نام دیگری که شما گذاشته باشید) که شامل محیط مجازی ماست (درواقع مجموعه‌ای از پوشه‌ها و فایل‌ها).
+The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directories and files).
 
 <!--sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
@@ -112,7 +112,7 @@ data-collapse=true ces-->
     C:\Users\Name\djangogirls> myvenv\Scripts\activate
     
 
-> **نکته: ** در ویندوز 10 و در هنگام استفاده از Windows PowerShell ممکن است با این خطا مواجه شوید `execution of scripts is disabled on this system`. در این شرایط یک بار دیگر Windows PowerShell را با گزینه "Run as Administrator" اجرا کنید. سپس دستورات زیر را قبل از فعال کردن محیط مجازی خود، اجرا کنید:
+> **NOTE:** On Windows 10 you might get an error in the Windows PowerShell that says `execution of scripts is disabled on this system`. در این شرایط یک بار دیگر Windows PowerShell را با گزینه "Run as Administrator" اجرا کنید. سپس دستورات زیر را قبل از فعال کردن محیط مجازی خود، اجرا کنید:
 > 
 > {% filename %}خط فرمان{% endfilename %}
 > 
@@ -123,7 +123,7 @@ data-collapse=true ces-->
 
 <!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
 
-> **نکته:** برای کاربران ویرایشگر VS Code که درون خود یک ترمینال خط فرمان منطبق بر PowerShell ویندوز دارد، اگر بخواهید از این ترمینال استفاده کنید باید این دستور را برای فعال کردن محیط مجازی خود بزنید:
+> **NOTE:** For users of the popular editor VS Code, which comes with an integrated terminal based off windows PowerShell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
 > 
 >     $ . myvenv\Scripts\activate.ps1
 >     
@@ -144,7 +144,7 @@ data-collapse=true ces-->
 
 به یاد داشته باشید که `myvenv` را با نامی که برای `محیط مجازی` خود انتخاب کرده‌اید عوض کنید!
 
-> **نکته: ** گاهی اوقات ممکن است دستور `source` در دسترس نباشد. در این مواقع دستور زیر را امتحان کنید:
+> **NOTE:** If the command `source` is not available, try doing this instead:
 > 
 > {% filename %}خط فرمان{% endfilename %}
 > 
@@ -203,14 +203,14 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> اگر در هنگام اجرای دستور pip در ویندوز خطایی دریافت کردید لطفاً کنترل کنید که در مسیر نام پوشه‌ها هیچ پوشه‌ای اسپیس، اعراب گذاری یا کارکتر خاص در نام خود نداشته باشد (مثلا مانند این `C:\Users\User Name\djangogirls`). اگر چنین است لطفاً از مسیری استفاده کنید که در آن اسپیس به کار نرفته باشد (مثلا چنین مسیری `C:\djangogirls`). یک محیط مجازی در پوشه جدید درست کنید سپس محیط مجازی قبلی را پاک کنید و دستور بالا را دوباره اجرا کنید. (جابجا کردن پوشه مربوط به محیط مجازی ایده خوبی نیست و باعث می‌شود محیط مجازی کار نکند. محیط مجازی با آدرس مطلق کار می‌کند)
+> If you get an error when calling pip on Windows, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). اگر چنین است لطفاً از مسیری استفاده کنید که در آن اسپیس به کار نرفته باشد (مثلا چنین مسیری `C:\djangogirls`). یک محیط مجازی در پوشه جدید درست کنید سپس محیط مجازی قبلی را پاک کنید و دستور بالا را دوباره اجرا کنید. (جابجا کردن پوشه مربوط به محیط مجازی ایده خوبی نیست و باعث می‌شود محیط مجازی کار نکند. محیط مجازی با آدرس مطلق کار می‌کند)
 
 <!--endsec-->
 
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> ممکن است کنسول خط فرمان شما بعد از اجرای دستور فوق ثابت و بی‌حرکت شود. اگر چنین اتفاقی افتاد به جای دستور بالا از خط زیر استفاده کنید:
+> Your command line might freeze when you try to install Django. If this happens, instead of the above command use:
 > 
 > {% filename %}خط فرمان{% endfilename %}
 > 
