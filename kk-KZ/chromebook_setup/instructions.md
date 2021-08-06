@@ -2,7 +2,7 @@
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com)
 
-Cloud IDE құралы сізге код редакторын және кашықтықтағы компьютерін қолдануға рұқсат береді. Сол компьютерде сіз бағдарламаны орната, жаза және орындата аласыз. Осы сабақтар кезеңінде бұлттық IDE сіздің *локалдық машинасын* рөлін атқарады. Убунту, Windows, OSX қолданушылар сияқты сіз командаларды терминал интерфейсінде жазуға мүмкіндік болады. Бірақ сіздің терминалыңыз бұлттық IDE берген компьютерге жалданады. Here are the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
+Cloud IDE құралы сізге код редакторын және кашықтықтағы компьютерін қолдануға рұқсат береді. Сол компьютерде сіз бағдарламаны орната, жаза және орындата аласыз. Осы сабақтар кезеңінде бұлттық IDE сіздің *локалдық машинасын* рөлін атқарады. Убунту, Windows, OSX қолданушылар сияқты сіз командаларды терминал интерфейсінде жазуға мүмкіндік болады. Бірақ сіздің терминалыңыз бұлттық IDE берген компьютерге жалданады. Осы жерде бұлттық IDE-ге (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com) арналған нұсқаулықтар. You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
 
 #### PaizaCloud Cloud IDE
 
