@@ -6,10 +6,10 @@ Cloud IDE құралы сізге код редакторын және кашы�
 
 #### PaizaCloud Бұлттық IDE
 
-1. Go to [PaizaCloud Cloud IDE](https://paiza.cloud/)
-2. Sign up for an account
-3. Click *New Server* and choose the Django app
-4. Click Terminal button(on the left side of the window)
+1. [PaizaCloud Cloud IDE](https://paiza.cloud/) парақшасына барыңыз
+2. Тіркеліңіз
+3. *New Server* шертініз және Django қосымшасын тандаңыз
+4. Терминал түймесін шертіңіз (терезенің сол жағында)
 
 Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
 
