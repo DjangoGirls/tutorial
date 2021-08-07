@@ -10,11 +10,11 @@ Django (/ˈdʒæŋɡoʊ/ *джэн-го*) ол бос және веб қосым
 
 ## Фреймворк сізге не үшін керек?
 
-Джанго не үшін керек екенің түсіну үшін, біз сервермен жақынырақ танысу керекпіз. Ең бастысы, сіз оған вебпарақша орналастыру мақсатында сервер білу керек.
+Джанго не үшін керек екенің түсіну үшін, біз сервермен жақынырақ танысу керекпіз. Ең бастысы, сервер қандай вебпарақша орналастыру керек екенің білу керек.
 
-Кіріс хаттарды бақылауға (сұраныс) арналған электрондық жәшікті елесте (порт). Соны бақылап тұратын веб-cервер. Веб сервер хатты оқиды, содан кейін вебпарақша түрінде жауапты жібереді. But when you want to send something, you need to have some content. And Django is something that helps you create the content.
+Кіріс хаттарды бақылауға (сұраныс) арналған электрондық жәшікті елесте (порт). Соны бақылап тұратын веб-cервер. Веб сервер хатты оқиды, содан кейін вебпарақша түрінде жауапты жібереді. Бірақ сіз бір нәрсе жібергіңіз келсе, сізде бір контент болу керек. Джанго сол контентті құру үшін көмектеседі.
 
-## What happens when someone requests a website from your server?
+## Егер біреу сіздің серверінізден вебсайтқа сұраныс жасаса не болады? 
 
 When a request comes to a web server, it's passed to Django which tries to figure out what is actually requested. It takes a web page address first and tries to figure out what to do. This part is done by Django's **urlresolver** (note that a website address is called a URL – Uniform Resource Locator – so the name *urlresolver* makes sense). It is not very smart – it takes a list of patterns and tries to match the URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
 
