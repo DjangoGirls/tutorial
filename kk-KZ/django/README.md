@@ -16,11 +16,11 @@ Django (/ˈdʒæŋɡoʊ/ *джэн-го*) ол бос және веб қосым
 
 ## Егер біреу сіздің серверінізде вебсайтқа сұраныс жасаса не болады? 
 
-Егер веб серверге сұраныс келсе, онда ол Джангоға барады. Біріншіден, ол веб парақшаның адресін алады және не істеу керек екенің анықтап отырады. Осы анықтау жұмысы Джангоның urlresolver модулімен өнделеді. Байқаныз, вебсайтты адресі URL деп аталады. URL resolver веб парақшалардың контенті қандай болу керек екенің шешеді. Ол өте ақылды емес - ол паттерндардың тізімін алады және URL-ды сәйкестіруге тырысады. Джанго үстіден астыға паттерндарды тексереді. Егер бірденке сәйкес болса, Джанго сұранысты тиісті функцияға апарады. Джангода оны *view* деп айтамыз.
+Егер веб серверге сұраныс келсе, онда ол Джангоға барады. Біріншіден, ол веб парақшаның адресін алады және не істеу керек екенің анықтап отырады. Осы анықтау жұмысы Джангоның urlresolver модулімен өнделеді. Байқаныз, вебсайтты адресі URL деп аталады. URL resolver веб парақшалардың контенті қандай болу керек екенің шешеді. Ол тым ақылды емес - ол паттерндардың тізімін алады және URL-ды сәйкестіруге тырысады. Джанго үстіден астыға паттерндарды тексереді. Егер бірденке сәйкес болса, Джанго сұранысты тиісті функцияға апарады. Джангода оны *view* деп айтамыз.
 
-Imagine a mail carrier with a letter. She is walking down the street and checks each house number against the one on the letter. If it matches, she puts the letter there. This is how the urlresolver works!
+Хатты қолында ұстап тұрған пошташыны елестет. Ол көше бойымен жүр және әр үйдің нөмірін хаттағы нөмірмен салыстырып жатыр. Егер сәйкестік болса, онда ол хатты есікте қалдырады. Үйістіп urlresolver жұмыс істейді.
 
-In the *view* function, all the interesting things are done: we can look at a database to look for some information. Maybe the user asked to change something in the data? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
+Қызықтың бәрі *view* функциясында жасалған: бір ақпарат табу үшін біз деректер базасына қараламыз Maybe the user asked to change something in the data? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
 
 The description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
 
