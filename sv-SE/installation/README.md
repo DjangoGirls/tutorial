@@ -4,15 +4,15 @@ Om du följer handledningen hemma, och inte vid ett [Django Girls-event](https:/
 
 Detta beror på att vi går igenom installationen av saker som behövs i handledningen – detta är bara en tilläggssida som samlar alla installationsinstruktioner på ett ställe (vilket är användbart för vissa workshop-format). Du kan välja att installera allt som listas på denna sida nu om du vill. Men om du vill lära dig saker innan du installerar en massa saker på datorn, hoppa över detta kapitel så kommer vi att förklara installationsdelarna för dig senare, allteftersom de behövs.
 
-Good luck!
+Lycka till!
 
-# If you're attending a workshop
+# Om du deltar i en workshop
 
-If you are attending one of the [Django Girls events](https://djangogirls.org/events/):
+Om du deltar i ett [Django Girls-event](https://djangogirls.org/events/):
 
-* Your workshop may have an "installation party" before the main workshop. If you are at an installation party, this page is for you! Follow the instructions here to get everything you need for the workshop installed, with the help of the coaches if needed. Then at the main workshop, you'll be able to skip installation instructions you'll encounter in the main tutorial when you get to them.
-* The organizers of your workshop may have asked you to try at home to install everything on your computer before the workshop starts. If you have been asked to do that, this page is for you! Follow the instructions here, as best you can. Then at the main workshop, when you get to an installation step in the main tutorial, if you were not able to get that piece installed you can get help from your coach.
-* If your workshop does not have an installation party (or you couldn't attend), and if the organizers didn't ask you to try to install everything before you arrived, skip this page and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter. You'll be installing everything you need as you work through the tutorial.
+* Din workshop kanske har en "installationsfest" innan huvud-workshopen. Om du är på en installationsfest är den här sidan till för dig! Följ instruktionerna här för att få allt du behöver inför workshopen installerad, med hjälp av coacharna om det behövs. På huvud-workshopen kommer du sen kunna hoppa över installationsinstruktionerna som du stöter på i huvudhandledningen.
+* Arrangörerna av din workshop kan ha bett dig att prova att installera allt på datorn hemma innan workshopen startar. Om du har blivit ombedd att göra det är den här sidan till för dig! Följ instruktionerna här, så gott du kan. Sedan på huvud-workshopen, när du kommer till ett installationssteg i huvudhandledningen och om du inte kunde få den delen installerad kan du få hjälp av din coach.
+* Om din workshop inte har en installationsfest (eller om du inte kunde delta) och om arrangörerna inte bad dig att försöka installera allt innan du kom: hoppa över denna sida och gå direkt till kapitlet [Hur Internet fungerar](../how_the_internet_works/README.md). You'll be installing everything you need as you work through the tutorial.
 
 # Installation
 
