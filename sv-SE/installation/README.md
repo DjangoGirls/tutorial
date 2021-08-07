@@ -65,4 +65,4 @@ Grattis, du är redo att köra! Om du fortfarande har lite tid innan workshopen 
 
 # Ha så kul på workshopen!
 
-When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
+När du påbörjar workshopen kommer du att kunna gå direkt till [Ditt första Django-projekt!](../django_start_project/README.md) eftersom du redan gått igenom materialet i de tidigare kapitlen.
