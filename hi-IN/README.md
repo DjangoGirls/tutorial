@@ -34,7 +34,7 @@
 
 ## घर पर टुटोरियस फौलो करते हुए
 
-जैंगो गर्ल कार्यशाला में भाग लेना अद्भुत है , परंतु हम जानते है की एक में भाग लेना संभव नहीं है| This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+जैंगो गर्ल कार्यशाला में भाग लेना अद्भुत है , परंतु हम जानते है की एक में भाग लेना संभव नहीं है| यही कारण है कि हम आपको निम्नलिखित टुटोरियल घर पर आज़माने के लिये एनकरेज करते हैं| घर पर बैठे पाठको के लिए हम ऐसे वीडीयो तैयार कर रहे हैं जो आपके लिए टुटोरियल का अनुसरण करना आसान बना देंगे| It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
 
 In every chapter already covered, there is a link that points to the correct video.
 
