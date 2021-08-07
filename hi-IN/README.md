@@ -28,11 +28,11 @@
 
 ![16](images/application.png)
 
-> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). 18 19
+> अगर आप टुटोरियल पर खुद काम करते हैं और आपके पास कोई कोच नही है जो समस्या आने पर आपकी मदद कर सके , हमारे पास आपके लिये एक चैट सिस्टम है: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial) 18 19
 
 ठीक है, चलो शुरुआत से शुरू करें</ 0></p> 
 
-## Following the tutorial at home
+## घर पर टुटोरियस फौलो करते हुए
 
 It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
 
