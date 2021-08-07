@@ -12,7 +12,7 @@ Django (/ˈdʒæŋɡoʊ/ *джэн-го*) ол бос және веб қосым
 
 Джанго не үшін керек екенің түсіну үшін, біз сервермен жақынырақ танысу керекпіз. Ең бастысы, сіз оған вебпарақша орналастыру мақсатында сервер білу керек.
 
-Imagine a mailbox (port) which is monitored for incoming letters (requests). This is done by a web server. The web server reads the letter and then sends a response with a webpage. But when you want to send something, you need to have some content. And Django is something that helps you create the content.
+Кіріс хаттарды бақылауға (сұраныс) арналған электрондық жәшікті елесте (порт). Соны бақылап тұратын веб-cервер. Веб сервер хатты оқиды, содан кейін вебпарақша түрінде жауапты жібереді. But when you want to send something, you need to have some content. And Django is something that helps you create the content.
 
 ## What happens when someone requests a website from your server?
 
