@@ -40,12 +40,12 @@
 
 ## 20
 
-This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). 23.
+टुटोरियल [ DjangoGirls](https://djangogirls.org/) द्वारा बनाए रखा हुआ है| 23.
 
 ## क्या आप हमें अन्य भाषाओं में ट्यूटोरियल अनुवाद करने में मदद करना चाहते हैं?
 
-Currently, translations are being kept on crowdin.com platform at:
+वर्तमान में अनुवादो को crowdin.com प्लेटफोर्म पर रखा गया है|
 
-https://crowdin.com/project/django-girls-tutorial
+https://crowdin.com/project/django-girls-tutorials
 
 If your language is not listed on [crowdin](https://crowdin.com/), please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
