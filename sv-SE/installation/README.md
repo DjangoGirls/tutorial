@@ -1,8 +1,8 @@
-# If you're doing the tutorial at home
+# Om du följer handledningen hemifrån
 
-If you're doing the tutorial at home, not at one of the [Django Girls events](https://djangogirls.org/events/), you can completely skip this chapter now and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter.
+Om du följer handledningen hemma, och inte vid ett [Django Girls-event](https://djangogirls.org/events/), kan du helt hoppa över detta kapitel och gå direkt till kapitlet [Hur Internet fungerar](../how_the_internet_works/README.md).
 
-This is because we cover installing things as they are needed in the tutorial -- this is just an additional page that gathers all of the installation instructions in one place (which is useful for some workshop formats). You can choose to install everything that is on this page right now if you wish. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation parts to you later on, as they are needed.
+Detta beror på att vi går igenom installationen av saker som behövs i handledningen – detta är bara en tilläggssida som samlar alla installationsinstruktioner på ett ställe (vilket är användbart för vissa workshop-format). Du kan välja att installera allt som listas på denna sida nu om du vill. Men om du vill lära dig saker innan du installerar en massa saker på datorn, hoppa över detta kapitel så kommer vi att förklara installationsdelarna för dig senare, allteftersom de behövs.
 
 Good luck!
 
