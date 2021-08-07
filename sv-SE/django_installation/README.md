@@ -1,4 +1,4 @@
-# Installation av Django
+# Installera Django
 
 > **Obs** Om du använder en Chromebook, hoppa över detta kapitel och följ istället instruktionerna i [Chromebook Setup](../chromebook_setup/README.md).
 > 
