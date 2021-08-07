@@ -16,7 +16,7 @@ Django (/ˈdʒæŋɡoʊ/ *джэн-го*) ол бос және веб қосым
 
 ## Егер біреу сіздің серверінізде вебсайтқа сұраныс жасаса не болады? 
 
-Егер веб серверге сұраныс келсе, онда ол Джангоға барады. It takes a web page address first and tries to figure out what to do. This part is done by Django's **urlresolver** (note that a website address is called a URL – Uniform Resource Locator – so the name *urlresolver* makes sense). It is not very smart – it takes a list of patterns and tries to match the URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
+Егер веб серверге сұраныс келсе, онда ол Джангоға барады. Біріншіден, ол веб парақшаның адресін алады және не істеу керек екенің анықтап отырады. Осы анықтау жұмысы Джангоның urlresolver модулімен өнделеді. Байқаныз, вебсайтты адресі URL деп аталады. URL resolver веб парақшалардың контенті қандай болу керек екенің шешеді. It is not very smart – it takes a list of patterns and tries to match the URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
 
 Imagine a mail carrier with a letter. She is walking down the street and checks each house number against the one on the letter. If it matches, she puts the letter there. This is how the urlresolver works!
 
