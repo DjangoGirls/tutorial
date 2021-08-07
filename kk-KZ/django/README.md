@@ -14,9 +14,9 @@ Django (/ˈdʒæŋɡoʊ/ *джэн-го*) ол бос және веб қосым
 
 Кіріс хаттарды бақылауға (сұраныс) арналған электрондық жәшікті елесте (порт). Соны бақылап тұратын веб-cервер. Веб сервер хатты оқиды, содан кейін вебпарақша түрінде жауапты жібереді. Бірақ сіз бір нәрсе жібергіңіз келсе, сізде бір контент болу керек. Джанго сол контентті құру үшін көмектеседі.
 
-## Егер біреу сіздің серверінізден вебсайтқа сұраныс жасаса не болады? 
+## Егер біреу сіздің серверінізде вебсайтқа сұраныс жасаса не болады? 
 
-When a request comes to a web server, it's passed to Django which tries to figure out what is actually requested. It takes a web page address first and tries to figure out what to do. This part is done by Django's **urlresolver** (note that a website address is called a URL – Uniform Resource Locator – so the name *urlresolver* makes sense). It is not very smart – it takes a list of patterns and tries to match the URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
+Егер веб серверге сұраныс келсе, онда ол Джангоға барады. It takes a web page address first and tries to figure out what to do. This part is done by Django's **urlresolver** (note that a website address is called a URL – Uniform Resource Locator – so the name *urlresolver* makes sense). It is not very smart – it takes a list of patterns and tries to match the URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
 
 Imagine a mail carrier with a letter. She is walking down the street and checks each house number against the one on the letter. If it matches, she puts the letter there. This is how the urlresolver works!
 
