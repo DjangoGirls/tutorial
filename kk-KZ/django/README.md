@@ -4,11 +4,11 @@ Django (/ˈdʒæŋɡoʊ/ *джэн-го*) ол бос және веб қосым
 
 Вебсайт құрғанда сізге әрдайым ұқсас компонентер керек. Мысалы: пайдаланушыны анықтап тануының өңдеу жолы (тіркелу, кіру, шығу), сайтты өзгертетін басқару тақтасы, форма, файлдарды жүктеу жолы және басқалары.
 
-Luckily for you, other people long ago noticed that web developers face similar problems when building a new site, so they teamed up and created frameworks (Django being one of them) that give you ready-made components to use.
+Қуанышқа орай, басқа адамдар бұрында веб дамытушылар жаңа сайт құрғанда бірдей мәселелерді кездесетінің байқаған. Сонда олар жиналды және фреймворктарды құрды (Джанго солардың қатарына кіреді). Фреймворк іске дайын компонентерді сізге қолдануға береді.
 
-Frameworks exist to save you from having to reinvent the wheel and to help alleviate some of the overhead when you’re building a new site.
+Дөнгелекті жаңадан құрудан сақтау ушін фреймворктар бар. Жәнеде жаңа сайт құрып жатқанда басты ауыртпау үшін.
 
-## Why do you need a framework?
+## Фреймворк сізге не үшін керек?
 
 To understand what Django is actually for, we need to take a closer look at the servers. The first thing is that the server needs to know that you want it to serve you a web page.
 
