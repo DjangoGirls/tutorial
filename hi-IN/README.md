@@ -6,7 +6,7 @@
 
 ## स्वागत है
 
-डीजेन्गो गर्ल प्रशिक्षण में आपका स्वागत है! We are happy to see you here. :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
+डीजेन्गो गर्ल प्रशिक्षण में आपका स्वागत है! हम आपको यहाँ देखकर खुश है| :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
 As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine. :)
 
