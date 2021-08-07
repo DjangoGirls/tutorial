@@ -1,6 +1,6 @@
-# What is Django?
+# Джанго деген не?
 
-Django (/ˈdʒæŋɡoʊ/ *джэн-го*) ол бос және веб қосымша фреймворгы. Джангоның коды ашық және ол Питонда жазылған. A web framework is a set of components that helps you to develop websites faster and easier.
+Django (/ˈdʒæŋɡoʊ/ *джэн-го*) ол бос және веб қосымша фреймворгы. Джангоның коды ашық және ол Питонда жазылған. Веб фреймворк - вебсайттарды тезірек және оңайырақ құруға көмектесетін компоненттердің жинағы.
 
 When you're building a website, you always need a similar set of components: a way to handle user authentication (signing up, signing in, signing out), a management panel for your website, forms, a way to upload files, etc.
 
