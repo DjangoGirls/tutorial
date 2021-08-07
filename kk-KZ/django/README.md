@@ -10,7 +10,7 @@ Django (/ˈdʒæŋɡoʊ/ *джэн-го*) ол бос және веб қосым
 
 ## Фреймворк сізге не үшін керек?
 
-To understand what Django is actually for, we need to take a closer look at the servers. The first thing is that the server needs to know that you want it to serve you a web page.
+Джанго не үшін керек екенің түсіну үшін, біз сервермен жақынырақ танысу керекпіз. Ең бастысы, сіз оған вебпарақша орналастыру мақсатында сервер білу керек.
 
 Imagine a mailbox (port) which is monitored for incoming letters (requests). This is done by a web server. The web server reads the letter and then sends a response with a webpage. But when you want to send something, you need to have some content. And Django is something that helps you create the content.
 
