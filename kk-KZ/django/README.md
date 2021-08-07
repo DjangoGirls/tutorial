@@ -2,7 +2,7 @@
 
 Django (/ˈdʒæŋɡoʊ/ *джэн-го*) ол бос және веб қосымша фреймворгы. Джангоның коды ашық және ол Питонда жазылған. Веб фреймворк - вебсайттарды тезірек және оңайырақ құруға көмектесетін компоненттердің жинағы.
 
-When you're building a website, you always need a similar set of components: a way to handle user authentication (signing up, signing in, signing out), a management panel for your website, forms, a way to upload files, etc.
+Вебсайт құрғанда сізге әрдайым ұқсас компонентер керек. Мысалы: пайдаланушыны анықтап тануының өңдеу жолы (тіркелу, кіру, шығу), сайтты өзгертетін басқару тақтасы, форма, файлдарды жүктеу жолы және басқалары.
 
 Luckily for you, other people long ago noticed that web developers face similar problems when building a new site, so they teamed up and created frameworks (Django being one of them) that give you ready-made components to use.
 
