@@ -1,7 +1,7 @@
-# Django installation
+# Installation av Django
 
-> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
+> **Obs** Om du använder en Chromebook, hoppa över detta kapitel och följ istället instruktionerna i [Chromebook Setup](../chromebook_setup/README.md).
 > 
-> **Note** If you already worked through the [installation steps](../installation/README.md) then you've already done this – you can go straight to the next chapter!
+> **Obs** Om du redan har gått igenom [installationsstegen](../installation/README.md) så har du redan gjort detta – då kan du gå direkt till nästa kapitel!
 
 {% include "/django_installation/instructions.md" %}
