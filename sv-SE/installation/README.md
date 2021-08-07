@@ -12,57 +12,57 @@ Om du deltar i ett [Django Girls-event](https://djangogirls.org/events/):
 
 * Din workshop kanske har en "installationsfest" innan huvud-workshopen. Om du är på en installationsfest är den här sidan till för dig! Följ instruktionerna här för att få allt du behöver inför workshopen installerad, med hjälp av coacharna om det behövs. På huvud-workshopen kommer du sen kunna hoppa över installationsinstruktionerna som du stöter på i huvudhandledningen.
 * Arrangörerna av din workshop kan ha bett dig att prova att installera allt på datorn hemma innan workshopen startar. Om du har blivit ombedd att göra det är den här sidan till för dig! Följ instruktionerna här, så gott du kan. Sedan på huvud-workshopen, när du kommer till ett installationssteg i huvudhandledningen och om du inte kunde få den delen installerad kan du få hjälp av din coach.
-* Om din workshop inte har en installationsfest (eller om du inte kunde delta) och om arrangörerna inte bad dig att försöka installera allt innan du kom: hoppa över denna sida och gå direkt till kapitlet [Hur Internet fungerar](../how_the_internet_works/README.md). You'll be installing everything you need as you work through the tutorial.
+* Om din workshop inte har en installationsfest (eller om du inte kunde delta) och om arrangörerna inte bad dig att försöka installera allt innan du kom: hoppa över denna sida och gå direkt till kapitlet [Hur Internet fungerar](../how_the_internet_works/README.md). Du kommer att installera allt du behöver när du går igenom handledningen.
 
 # Installation
 
-In this tutorial you will be building a blog. In order to do that, as you go through the tutorial you'll be instructed on how to install various software on your computer and set up some online accounts as they are needed. This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
+I den här handledningen kommer du att skapa en blogg. För att göra det kommer du att instrueras om hur man installerar olika program på din dator och registrera några online-konton allteftersom behövs. Denna sida samlar alla installations- och registreringsanvisningar på ett ställe (vilket är användbart för vissa workshopformat).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
 
 <!--endsec-->
 
-# Brief intro to the command line {#command-line}
+# Kort introduktion till kommandoraden {#command-line}
 
-Many of the steps below reference the "console", "terminal", "command window", or "command line" -- these all mean the same thing: a window on your computer where you can enter commands. When you get to the main tutorial, you'll learn more about the command line. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
+Många av stegen nedan refererar till "konsolen", "terminal", "kommandofönster" eller "kommandorad" – alla dessa betyder samma sak: ett fönster på din dator där du kan skriva in kommandon. När du kommer till huvudhandledningen får du lära dig mer om kommandoraden. För tillfället är det viktigaste du behöver veta hur du öppnar ett kommandofönster och hur det ser ut: {% include "/intro_to_command_line/open_instructions.md" %}
 
-# Install Python {#python}
+# Installera Python {#python}
 
 {% include "/python_installation/instructions.md" %}
 
-# Install a code editor {#code-editor}
+# Installera en kodeditor {#code-editor}
 
 {% include "/code_editor/instructions.md" %}
 
-# Set up virtualenv and install Django {#virtualenv}
+# Ställ in virtualenv och installera Django {#virtualenv}
 
 {% include "/django_installation/instructions.md" %}
 
-# Install Git {#git}
+# Installera Git {#git}
 
 {% include "/deploy/install_git.md" %}
 
-# Create a GitHub account {#github-account}
+# Skapa ett GitHub-konto {#github-account}
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password (add it to your password manager, if you use one).
+Gå till [GitHub.com](https://www.github.com) och registrera ett nytt, gratis användarkonto. Kom ihåg ditt lösenord (lägg till det i din lösenordshanterare om du använder en).
 
-# Create a PythonAnywhere account {#pythonanywhere-account}
+# Skapa ett PythonAnywhere-konto {#pythonanywhere-account}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-# Start reading
+# Börja läsa
 
-Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
+Grattis, du är redo att köra! Om du fortfarande har lite tid innan workshopen kan det vara bra att börja läsa några av de första kapitlen:
 
-* [How the internet works](../how_the_internet_works/README.md)
+* [Hur internet fungerar](../how_the_internet_works/README.md)
 
-* [Introduction to the command line](../intro_to_command_line/README.md)
+* [Introduktion till kommandoraden](../intro_to_command_line/README.md)
 
-* [Introduction to Python](../python_introduction/README.md)
+* [Introduktion till Python](../python_introduction/README.md)
 
-* [What is Django?](../django/README.md)
+* [Vad är Django?](../django/README.md)
 
-# Enjoy the workshop!
+# Ha så kul på workshopen!
 
 When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
