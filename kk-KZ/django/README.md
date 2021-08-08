@@ -20,7 +20,7 @@ Django (/ˈdʒæŋɡoʊ/ *джэн-го*) ол бос және веб қосым
 
 Хатты қолында ұстап тұрған пошташыны елестет. Ол көше бойымен жүр және әр үйдің нөмірін хаттағы нөмірмен салыстырып жатыр. Егер сәйкестік болса, онда ол хатты есікте қалдырады. Үйістіп urlresolver жұмыс істейді.
 
-Қызықтың бәрі *view* функциясында жасалған: бір ақпарат табу үшін біз деректер базасында көре аламыз. Егер қолданушы бір ақпаратты өзгертуге сұраса? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
+Қызықтың бәрі *view* функциясында жасалған: бір ақпарат табу үшін біз деректер базасында көре аламыз. Егер қолданушы бір ақпаратты өзгертуге сұраса? Мысалы бір хатта жазылған: "Менің жұмысымңың сипаттамасын өзгертіңіз." Сізде өзгертуге рұқсат бар екенің, *view* тексере алады. Содан кейін жұмыс сипаттамасын сіз үшін өзгертеді және жаұап қайтарады: "Жасалды!". Содан кейін *view* жауапты құрады және Джанго оны пайдаланушыдың веб браузеріне жібере алады. 
 
 The description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
 
