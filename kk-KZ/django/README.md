@@ -22,6 +22,6 @@ Django (/ˈdʒæŋɡoʊ/ *джэн-го*) ол бос және веб қосым
 
 Қызықтың бәрі *view* функциясында жасалған: бір ақпарат табу үшін біз деректер базасында көре аламыз. Егер қолданушы бір ақпаратты өзгертуге сұраса? Мысалы бір хатта жазылған: "Менің жұмысымңың сипаттамасын өзгертіңіз." Сізде өзгертуге рұқсат бар екенің, *view* тексере алады. Содан кейін жұмыс сипаттамасын сіз үшін өзгертеді және жаұап қайтарады: "Жасалды!". Содан кейін *view* жауапты құрады және Джанго оны пайдаланушыдың веб браузеріне жібере алады. 
 
-The description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
+Үстіндегі сипаттама кішкене жеңілдетілген, бірақ техникалық заттардың бәрін білуге сізге қажет емес. Жалпы ойды түсіну жеткілікті.
 
 So instead of diving too much into details, we will start creating something with Django and we will learn all the important parts along the way!
