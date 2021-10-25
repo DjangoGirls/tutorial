@@ -7,7 +7,7 @@ data-collapse=true ces-->
 
 You can download Git from [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for two: in the step where it asks to choose your editor, you should pick Nano, and in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Other than that, the defaults are fine. Checkout Windows-style, commit Unix-style line endings is good.
 
-An option while installing git-scm may be to choose "master" or "main" for your default branch. The use of "master" as the fedault branch has been deprecated by the global developer community - please see https://github.com/github/renaming for a discussion on the choices. Which option you choose will be important during the later "Deployment" desction of this tutorial.
+An option while installing git-scm may be to choose "master" or "main" for your default branch. The use of "master" as the default branch has been deprecated by the global developer community — please see https://github.com/github/renaming for a discussion on the choices. Which option you choose will be important during the later "Deployment" section of this tutorial.
 
 Do not forget to restart the command prompt or PowerShell after the installation finished successfully.
 <!--endsec-->
