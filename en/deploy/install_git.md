@@ -7,7 +7,7 @@ data-collapse=true ces-->
 
 You can download Git from [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for two: in the step where it asks to choose your editor, you should pick Nano, and in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Other than that, the defaults are fine. Checkout Windows-style, commit Unix-style line endings is good.
 
-An option while installing git-scm may be to choose "master" or "main" for your default branch. The use of "master" as the default branch has been deprecated by the global developer community — please see https://github.com/github/renaming for a discussion on the choices. Which option you choose will be important during the later "Deployment" section of this tutorial.
+During installation, if you are presented with the option of "Adjusting the name of the inita branch in new repositories", please choose to "Ovveride the default" and use "main". This will align your installation of git with the broad direction of the global developer community, and the "main" branch will be used throught the remainder of this tutrial. Please see https://sfconservancy.org/news/2020/jun/23/gitbranchname/ and https://github.com/github/renaming for further discussion of this subject. 
 
 Do not forget to restart the command prompt or PowerShell after the installation finished successfully.
 <!--endsec-->
@@ -16,6 +16,8 @@ Do not forget to restart the command prompt or PowerShell after the installation
 data-collapse=true ces-->
 
 Download Git from [git-scm.com](https://git-scm.com/) and follow the instructions.
+
+During installation, if you are presented with the option of "Adjusting the name of the inita branch in new repositories", please choose to "Ovveride the default" and use "main". This will align your installation of git with the broad direction of the global developer community, and the "main" branch will be used throught the remainder of this tutrial. Please see https://sfconservancy.org/news/2020/jun/23/gitbranchname/ and https://github.com/github/renaming for further discussion of this subject. 
 
 > **Note** If you are running OS X 10.6, 10.7, or 10.8, you will need to install the version of git from here: [Git installer for OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
 
@@ -29,6 +31,15 @@ data-collapse=true ces-->
 $ sudo apt install git
 ```
 
+### Adjusting your default branch name
+
+This will align your installation of git with the broad direction of the global developer community, and the "main" branch will be used throught the remainder of this tutrial. Please see https://sfconservancy.org/news/2020/jun/23/gitbranchname/ and https://github.com/github/renaming for further discussion of this subject. 
+
+{% filename %}command-line{% endfilename %}
+```
+$ git config --global --add init.defaultBranch main
+```
+
 <!--endsec-->
 
 <!--sec data-title="Installing Git: Fedora" data-id="git_install_fedora"
@@ -39,6 +50,15 @@ data-collapse=true ces-->
 $ sudo dnf install git
 ```
 
+### Adjusting your default branch name
+
+This will align your installation of git with the broad direction of the global developer community, and the "main" branch will be used throught the remainder of this tutrial. Please see https://sfconservancy.org/news/2020/jun/23/gitbranchname/ and https://github.com/github/renaming for further discussion of this subject. 
+
+{% filename %}command-line{% endfilename %}
+```
+$ git config --global --add init.defaultBranch main
+```
+
 <!--endsec-->
 
 <!--sec data-title="Installing Git: openSUSE" data-id="git_install_openSUSE"
@@ -47,6 +67,15 @@ data-collapse=true ces-->
 {% filename %}command-line{% endfilename %}
 ```bash
 $ sudo zypper install git
+```
+
+### Adjusting your default branch name
+
+This will align your installation of git with the broad direction of the global developer community, and the "main" branch will be used throught the remainder of this tutrial. Please see https://sfconservancy.org/news/2020/jun/23/gitbranchname/ and https://github.com/github/renaming for further discussion of this subject. 
+
+{% filename %}command-line{% endfilename %}
+```
+$ git config --global --add init.defaultBranch main
 ```
 
 <!--endsec-->

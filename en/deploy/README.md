@@ -29,8 +29,26 @@ Initialized empty Git repository in ~/djangogirls/.git/
 $ git config --global user.name "Your Name"
 $ git config --global user.email you@example.com
 ```
-
 Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email ever again).
+
+### Adjusting your branch name
+
+If the version of git that you are using is older than **2.28**, you will need to change the name of your branch to "main". To determine the version of git, please enter the following command:
+
+{% filename %}command-line{% endfilename %}
+```
+$ git --version
+git version 2.xx...
+```
+
+Only if the second number of the version, shown as "xx" above, is less than 28, will you need to enter the following command to rename your branch. If it is 28 or higher, please continue to "Ignoring files". As in "Initializing", this is something we need to do only once per project, as well as only when your version of git is less than 2.28:
+
+{% filename %}command-line{% endfilename %}
+```
+$ git branch -M main
+```
+
+### Ignoring files
 
 Git will track changes to all the files and folders in this directory, but there are some files we want it to ignore. We do this by creating a file called `.gitignore` in the base directory. Open up your editor and create a new file with the following contents:
 
@@ -130,7 +148,7 @@ On the next screen, you'll be shown your repo's clone URL, which you will use in
 
 Now we need to hook up the Git repository on your computer to the one up on GitHub.
 
-Type the following into your console (replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets -- the URL should match the clone URL you just saw). Note that your choice of "main" or "master" in the Installation chapter will determine the final word in the second command.
+Type the following into your console (replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets -- the URL should match the clone URL you just saw).
 
 {% filename %}command-line{% endfilename %}
 ```
