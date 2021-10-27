@@ -52,7 +52,7 @@ $ sudo dnf install git
 
 ### Adjusting your default branch name
 
-This will align your installation of git with the broad direction of the global developer community, and the "main" branch will be used throught the remainder of this tutrial. Please see https://sfconservancy.org/news/2020/jun/23/gitbranchname/ and https://github.com/github/renaming for further discussion of this subject. 
+This will align your installation of Git with the broad direction of the global developer community, and the "main" branch will be used through the remainder of this tutorial. Please see https://sfconservancy.org/news/2020/jun/23/gitbranchname/ and https://github.com/github/renaming for further discussion of this subject. 
 
 {% filename %}command-line{% endfilename %}
 ```
