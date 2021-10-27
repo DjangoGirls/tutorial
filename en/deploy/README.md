@@ -33,7 +33,7 @@ Initializing the git repository is something we need to do only once per project
 
 ### Adjusting your branch name
 
-If the version of git that you are using is older than **2.28**, you will need to change the name of your branch to "main". To determine the version of git, please enter the following command:
+If the version of Git that you are using is older than **2.28**, you will need to change the name of your branch to "main". To determine the version of Git, please enter the following command:
 
 {% filename %}command-line{% endfilename %}
 ```
