@@ -403,7 +403,7 @@ Like lists, using the `len()` function on the dictionaries returns the number of
 {% filename %}command-line{% endfilename %}
 ```python
 >>> len(participant)
-4
+3
 ```
 
 I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
