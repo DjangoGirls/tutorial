@@ -391,7 +391,6 @@ When should you use a dictionary or a list? Well, that's a good point to ponder.
 - Do you just need an ordered sequence of items? Go for a list.
 - Do you need to associate values with keys, so you can look them up efficiently (by key) later on? Use a dictionary.
 
-
 Like lists, using the `len()` function on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
 
 {% filename %}command-line{% endfilename %}
@@ -406,7 +405,6 @@ Dictionaries, like lists, are *mutable*, meaning that they can be changed after 
 ```python
 >>> participant['favorite_language'] = 'Python'
 ```
-
 
 I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
 
