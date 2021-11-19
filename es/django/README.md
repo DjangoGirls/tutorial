@@ -10,13 +10,13 @@ Los frameworks sirven para que no tengamos que reinventar la rueda cada vez y qu
 
 ## ¿Por qué necesitas un framework?
 
-Para entender para qué sirve realmente Django, necesitamos fijarnos en cómo funcionan los servidores. Lo primero es que el servidor necesita enterarse de que tú quieres que te sirva una página web.
+Para entender para que sirve realmente Django, necesitamos fijarnos en cómo funcionan los servidores. Lo primero es que el servidor necesita enterarse de que tu quieres que te sirva una página web.
 
 Imagina un buzón (puerto) en el que alguien está constantemente mirando si hay cartas entrantes (peticiones). Esto es lo que hace un servidor web. El servidor web lee la carta, y envía una respuesta con la página web. Pero para enviar algo, tenemos que tener algún contenido. Y Django nos ayuda a crear ese contenido.
 
 ## ¿Qué sucede cuando alguien solicita una página web de tu servidor?
 
-Cuando llega una petición a un servidor web, esta es pasada a Django, quien intenta averiguar qué es lo realmente solicitado. Toma primero una dirección de página web e intenta averiguar qué hacer con ella. Esta parte es realizada por el **urlresolver** de Django (ten en cuenta que la dirección de un sitio web es llamada URL - Uniform Resource Locator; así que el nombre *urlresolver* tiene sentido). Este no es muy inteligente - toma una lista de patrones y trata de hacer coincidir la URL. Django comprueba los patrones de arriba hacia abajo y si algo coincide entonces Django le pasa la solicitud a la función asociada (que se llama *view (vista)*).
+Cuando llega una petición a un servidor web, es pasada a Django quien intenta averiguar que es realmente solicitado. Toma primero una dirección de página web e intenta averiguar qué hacer. Esta parte es realizada por el **urlresolver** de Django (ten en cuenta que la dirección de un sitio web es llamada URL - Uniform Resource Locator; así que el nombre *urlresolver* tiene sentido). Este no es muy inteligente - toma una lista de patrones y trata de hacer coincidir la URL. Django comprueba los patrones de arriba hacia abajo y si algo coincide entonces Django le pasa la solicitud a la función asociada (que se llama *view (vista)*).
 
 Imagina a un cartero llevando una carta. Él está caminando por la calle y comprueba cada número de casa con el que está en la carta. Si coincide, deja la carta allí. Así es como funciona el urlresolver!
 

@@ -38,6 +38,7 @@ Git llevará un seguimiento de los cambios realizados en todos los archivos y ca
 
     *.pyc
     *~
+    /.vscode
     __pycache__
     myvenv
     db.sqlite3
@@ -47,7 +48,7 @@ Git llevará un seguimiento de los cambios realizados en todos los archivos y ca
 
 Y guárdalo como `.gitignore` en la carpeta "djangogirls".
 
-> **Nota** ¡El punto al principio del nombre del archivo es importante! Si tienes problemas para crearlo (a los Mac no les gusta que crees ficheros con un punto al principio del nombre usando el Finder por ejemplo), entonces usa la opción "Save As" o "Guardar como" de tu editor, esto funcionará seguro. Asegúrate de no añadir `.txt`, `.py`, o ninguna otra extensión al nombre de fichero -- Git solo lo reconocerá si se llama exactamente `.gitignore`, sin nada más.
+> **Nota** ¡El punto al principio del nombre del archivo es importante! Si tienes problemas para crearlo (a los Mac no les gusta que crees ficheros con un punto al principio del nombre usando el Finder por ejemplo), entonces usa la opción "Save As" o "Guardar como" de tu editor, esto funcionará seguro. Asegúrate de no añadir `.txt`, `.py`, o ninguna otra extensión al nombre de fichero -- Git solo lo reconocerá si se llama exactamente `.gitignore`, sin nada más. Linux y MacOS usan archivos con nombres que comienzan con `.` (como `.gitignore`) y aparecen ocultos, por lo que el comando normal `ls` no te mostrará esos archivos. En su lugar, usa `ls -a` para ver el archivo `.gitignore`.
 > 
 > **Nota** Uno de los archivos especificados en tu `.gitignore` es `db.sqlite3`. Ese fichero es tu base de datos local, donde se almacenan los usuarios y publicaciones de tu blog. Vamos a seguir las buenas prácticas de programación web: vamos a usar bases de datos separadas para tu sitio local y tu sitio en producción en PythonAnywhere. La base de datos en PythonAnywhere podría ser SQLite, como en tu máquina de desarrollo, pero también podrías usar otro gestor de base de datos como MySQL o PostgreSQL que pueden soportar muchas más visitas que SQLite. En cualquier caso, al ignorar la base de datos SQLite en tu copia de GitHub, todos los posts y el super usuario que has creado hasta el momento solo estarán disponibles en local, y tendrás que crear nuevos usuarios y publicaciones en producción. Tu base de datos local es un buen campo de pruebas donde puedes probar diferentes cosas sin miedo a estropear o borrar las publicaciones reales de tu blog.
 
@@ -87,7 +88,7 @@ Y finalmente guardamos nuestros cambios. Ve a la consola y ejecuta estos comando
 
 ## Subiendo tu código a Github
 
-Vete a [GitHub.com](https://www.github.com) y regístrate para obtener una cuenta de usuario nueva y gratuita. (Si ya lo hiciste en la preparación del taller, ¡eso es genial!) Asegúrate de recordar tu contraseña (agrégala a tu administrador de contraseñas, si usas uno).
+Vaya a [GitHub.com](https://www.github.com) y regístrese para obtener una cuenta de usuario nueva y gratuita. (Si ya lo hiciste en la preparación del taller, ¡eso es genial!) Asegúrate de recordar tu contraseña (agrégala a tu administrador de contraseñas, si usas uno).
 
 A continuación, crea un nuevo repositorio con el nombre "my-first-blog". Deja el checkbox "initialize with a README" sin marcar, deja la opción de .gitignore vacía (ya lo hemos hecho manualmente) y deja la licencia como None.
 
@@ -160,12 +161,12 @@ Ahora ejecutaremos el asistente para configurar automáticamente nuestra aplicac
 
 A medida que se ejecuta, podrás ver lo que hace:
 
-- Se descarga tu código de GitHub.
-- Crea un virtualenv en PythonAnywhere, como el de tu propia computadora.
-- Actualiza tus ficheros de settings con algunos settings de despliegue.
-- Crea la base de datos en PythonAnywhere ejecutando el comando `manage.py migrate`.
-- Configura los archivos estáticos (static) (luego hablaremos de éstos con más detalle).
-- Y configura PythonAnywhere para publicar tu aplicación web a través de su API.
+- Se descarga tu código de GitHub
+- Crear un virtualenv en PythonAnywhere, como el de tu propia computadora
+- Actualiza tus ficheros de settings con algunos settings de despliegue
+- Crea la base de datos en PythonAnywhere ejecutando el comando `manage.py migrate`
+- Configura los archivos estáticos (static) (luego hablaremos de éstos con más detalle)
+- Y configura PythonAnywhere para publicar tu aplicación web a través de su API
 
 En PythonAnywhere todos estos pasos están automatizados, pero son los mismos que tendrías que seguir en cualquier otro proveedor de servidores.
 
@@ -202,15 +203,15 @@ También puedes ir a la página de ficheros ("Files") y navegar por los ficheros
 Si te sale un error al ejecutar el script `pa_autconfigure_django.py`, aquí hay algunas causas comunes:
 
 - Te has olvidado de crear el token de API de PythonAnywhere.
-- No has puesto bien la URL de GitHub.
-- Si ves un error diciendo *"Could not find your settings.py*, es probable que no añadieras todos tus archivos a Git, y/o no los subiste a GitHub correctamente. Repasa la sección de Git más arriba.
-- Si anteriormente te suscribiste a una cuenta de PythonAnywhere y tuviste un error con *collectstatic*, probablemente tengas una versión antigua de SQLite (por ejemplo, 3.8.2) en tu cuenta. En este caso, regístrate con una nueva cuenta e intenta los comandos en la sección PythonAnywhere anterior.
+- No has puesto bien la URL de GitHub
+- Si ves un error diciendo *"Could not find your settings.py*, es probable que no añadieras todos tus archivos a Git, y/o no los subiste a GitHub correctamente. Repasa la sección de Git más arriba
+- Si anteriormente se suscribió a una cuenta de PythonAnywhere y tuvo un error con collectstatic, probablemente tenga una versión anterior de SQLite (por ejemplo, 3.8.2) para su cuenta. En ese caso, regístrese para una nueva cuenta e intente los comandos en la sección PythonAnywhere anterior.
 
-Si ves un error al visitar tu sitio, el primer lugar para ver qué está pasando es el **log de errores**. Encontrarás un enlace en la página ["Web"](https://www.pythonanywhere.com/web_app_setup/) de PythonAnywhere. Mira si hay algún mensaje de error allí; los más recientes están en la parte inferior.
+Si ves un error al visitar tu sitio, el primer lugar para ver qué está pasando es el **log de errores**. Encontrará un enlace en la página ["Web"](https://www.pythonanywhere.com/web_app_setup/) de PythonAnywhere. Mira si hay algún mensaje de error allí; los más recientes están en la parte inferior.
 
-Hay también algunos [consejos generales de depuración en la página de ayuda de PythonAnywhere](http://help.pythonanywhere.com/pages/DebuggingImportError).
+Hay también algunos [ consejos generales de depuración en la página de ayuda de PythonAnywhere](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
-Y recuerda, ¡tu mentora está aquí para ayudar!
+Y recuerda, ¡tu mentor está aquí para ayudar!
 
 # ¡Comprueba tu página!
 
@@ -218,4 +219,4 @@ La página por defecto debería decir "It worked!", tal como dice en tu ordenado
 
 Después de crear algunas publicaciones, puedes volver a tu instalación local (no la de PythonAnywhere). A partir de ahora, trabaja en tu instalación local para hacer los siguientes cambios. Este es un flujo de trabajo típico en el desarrollo web – haz cambios localmente, sube (push) esos cambios a GitHub, y descarga (pull) tus cambios al servidor de publicación. Esto te permite trabajar y experimentar en local sin romper tu página publicada. Mola, ¿eh?
 
-¡Date una *GRAN* palmada en la espalda! Desplegar a un servidor es una de las partes más complicadas de desarrollo web y a menudo la gente necesita varios días para que funcione del todo. Pero tú ya tienes tu sitio publicado, ¡en internet de verdad!
+¡Date una *GRAN* palmada en la espalda! Desplegar a un servidor es una de las partes más complicadas de desarrollo web y a menudo la gente necesita varios días para que funcione del todo. Pero tu ya tienes tu sitio publicado, ¡en internet de verdad!

@@ -2,7 +2,7 @@
 
 > Parte de este capítulo se basa en tutoriales por Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
-> Parte de este capítulo está basado en el [tutorial django-marcador](http://django-marcador.keimlink.de/) bajo licencia de Creative Commons Attribution-ShareAlike 4.0 internacional. El tutorial de django-marcador tiene derechos de autor de Markus Zapke-Gündemann et al.
+> Parte de este capítulo está basado en el [ tutorial django-marcador](http://django-marcador.keimlink.de/) bajo licencia de Creative Commons Attribution-ShareAlike 4.0 internacional. El tutorial de django-marcador tiene derechos de autor de Markus Zapke-Gündemann et al.
 
 ¡Vamos a crear un blog sencillo!
 
@@ -45,13 +45,15 @@ En Windows debes ejecutar el siguiente comando. **(No olvides incluir el punto `
 `django-admin.py` es un script que creará los archivos y directorios para ti. Ahora deberías tener una estructura de directorios parecida a esta:
 
     djangogirls
-    ├───manage.py
-    ├───mysite
-    │        settings.py
-    │        urls.py
-    │        wsgi.py
-    │        __init__.py
-    └───requirements.txt
+    ├── manage.py
+    ├── mysite
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
+    ├── myvenv
+    │   └── ...
+    └── requirements.txt
     
 
 > **Nota**: en tu estructura de directorios, también verás el directorio `venv` que creamos anteriormente.
@@ -99,7 +101,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
-Cuando `DEBUG` es `True` y `ALLOWED_HOST` esta vacío, el host es validado contra `['localhost', '127,0.0.1', '[::1]']`. Una vez despleguemos nuestra aplicación este no sera el mismo que nuestro nombre de host en PythonAnywhere así que cambiaremos la siguiente opción:
+Cuando `DEBUG` es `True` y `ALLOWED_HOST` esta vacío, el host es validado contra `['localhost', '127,0.0.1', '[::1]']`. Una vez despleguemos nuestra aplicación este no sera el mismo que nuestro nombre de host en PythonAnywhere asi que cambiaremos la siguiente opción:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -110,7 +112,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 > **Nota**: si estas usando un Chromebook, añade esta linea al final del archivo settings.py: `MESSAGE_STORAGE =
 'django.contrib.messages.storage.session.SessionStorage'`
 > 
-> Añade también `.c9users.io` a `ALLOWED_HOSTS` si estás usando cloud9.
+> Añade también `.c9users.io` a `ALLOWED_HOSTS` si estás usando cloud9
 
 ## Configurar una base de datos
 
@@ -154,7 +156,7 @@ Para crear una base de datos para nuestro blog, ejecutemos lo siguiente en la co
       Applying sessions.0001_initial... OK
     
 
-Y, ¡terminamos! ¡Es hora de iniciar el servidor web y ver si está funcionando nuestro sitio web!
+Y, ¡terminamos! Es hora de iniciar el servidor web y ver si está funcionando nuestro sitio web!
 
 ## Iniciar el servidor
 
@@ -179,7 +181,7 @@ Si estás en Windows y te falla con un error `UnicodeDecodeError`, utiliza en su
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Ahora necesitas revisar que tu website se está ejecutando. Abre tu navegador (Firefox, Chrome, Safari, Internet Explorer, o cualquiera que uses) y escribe esta dirección:
+Ahora necesitas revisar que tu website se esta ejecutando. Abre tu navegador (Firefox, Chrome, Safari, Internet Explorer, o cualquiera que uses) y escribe esta dirección:
 
 {% filename %}browser{% endfilename %}
 
@@ -199,7 +201,7 @@ Si estás usando una Chromebook y Cloud9, haga clic en la URL de la ventana emer
 
 Tenga en cuenta que una ventana de comandos sólo puede ejecutar una cosa a la vez, y la ventana de comandos que abrió antes está ejecutando el servidor web. Mientras el servidor web esté corriendo y esperando solicitudes adicionales, la terminal aceptará nuevo texto pero no ejecutará nuevos comandos.
 
-> Miramos cómo funcionan los servidores web en el capítulo **Cómo funciona internet**.
+> Miramos como funcionan los servidores web en el capítulo **Cómo funciona el internet**.
 
 Para escribir comandos adicionales mientras el servidor web está corriendo, abra una nueva ventana de terminal y active su virtualenv -- para revisar las instrucciones sobre cómo abrir una segunda ventana de terminal, vea [Introducción a la línea de comandos](../intro_to_command_line/README.md). Para parar el servidor web, ve a la ventana donde se esté ejecutando y pulsa CTRL+C, las teclas Control y C a la vez ( en Windows puede que tengas que pulsar Ctrl+Break).
 

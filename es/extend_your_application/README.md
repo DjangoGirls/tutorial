@@ -30,7 +30,7 @@ Empezaremos añadiendo un enlace al fichero `blog/templates/blog/post_list.html`
 {% endblock %}
 ```
 
-{% raw %}Queremos tener un enlace del título de una publicación en la lista de publicaciones al detalle de la misma. Cambiemos `<h2><a href="">{{ post.title }}</a></h2>` para enlazarla a la página detalle del post:{% endraw %}
+{% raw %}Queremos tener un link del titulo de una publicación en la lista de publicaciones al detalle de la misma. Cambiemos `<h2><a href="">{{ post.title }}</a></h2>` para enlazarla a la página detalle del post:{% endraw %}
 
 {% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 
@@ -42,7 +42,7 @@ Empezaremos añadiendo un enlace al fichero `blog/templates/blog/post_list.html`
 
 La parte de`post_detail` significa que Django estará esperando un URL en `blog/urls.py` con el nombre=post_detail
 
-¿Y ahora qué pasa con `pk=post.pk`? `pk` se refiere a primary key (clave primaria), la cual es un nombre único por cada registro en una base de datos. Debido a que no especificamos una llave primaria en nuestro modelo `Post`, Django creará una por nosotros (por defecto, un número que incrementa una unidad por cada registro, por ejemplo, 1, 2, 3) y lo añadirá como un campo llamado `pk` a cada uno de nuestros posts. Accedemos a la clave primaria escribiendo `post.pk`, del mismo modo en que accedemos a otros campos (`título`, `autor`, etc.) en nuestro objeto `Post`!
+¿Y ahora qué pasa con `pk=post.pk`? `pk` abrevia clave primaria (primary key), la cual es un identificador único para cada registro en una base de datos. Cada modelo de Django tiene un campo que sirve como clave primaria, y cualquier otro nombre que tiene, también se puede llamar "pk". Porque no especificamos una clave primaria en nuestro modelo `Post`, Django creará una por nosotros (por defecto, un campo llamado "id" con un número que se incrementará por cada registro, por ejemplo 1, 2, 3) y lo agregará como un campo en cada uno de nuestros posts. Accedemos a la clave primaria escribiendo `post.pk`, del mismo modo en que accedemos a otros campos (`title`, `author`, etc.) en nuestro objeto `Post`!
 
 Ahora cuando vayamos a: http://127.0.0.1:8000/ tendremos un error (como era de esperar, ya que no tenemos una URL o una *vista* para `post_detail`). Se verá así:
 
@@ -76,15 +76,15 @@ Esta parte `post/<int:pk>/` especifica un patrón de URL – ahora lo explicamos
 
 Esto quiere decir que si pones `http://127.0.0.1:8000/post/5/` en tu navegador, Django entenderá que estás buscando una *vista* llamada `post_detail` y transferirá la información de que `pk` es igual a `5` a esa *vista*.
 
-OK, ¡hemos añadido un nuevo patrón de URL a `blog/urls.py`! Actualizamos la página: http://127.0.0.1:8000/ y, ¡boom! El servidor vuelve a dejar de funcionar. Echa un vistazo a la consola – como era de esperar, ¡hay otro error!
+OK, hemos añadido un nuevo patrón de URL a `blog/urls.py`! Actualizamos la pagina: http://127.0.0.1:8000/ y boom! El servidor vuelve a dejar de funcionar. Echa un vistazo a la consola – como era de esperar, hay otro error!
 
 ![AttributeError](images/attribute_error2.png)
 
-¿Recuerdas cuál es el próximo paso? ¡Añadir una vista!
+¿Recuerdas cual es el próximo paso? ¡Añadir una vista!
 
 ## Añade la vista de detalle de la publicación
 
-Esta vez nuestra *vista* tomará un parámetro adicional `pk`. Nuestra *vista* necesita recibirlo, ¿verdad? Así que definiremos nuestra función como `def post_detail (request, pk):`. Tenga en cuenta que necesitamos usar exactamente el mismo nombre que el que especificamos en `urls` (`pk`). ¡Omitir esta variable es incorrecto y resultará en un error!
+Esta vez nuestra *vista* tomará un parámetro adicional `pk`. Nuestra *vista* necesita recibirlo, ¿verdad? Así que definiremos nuestra función como `def post_detail (request, pk):`. Tenga en cuenta que este parametro debe tener exactamente el mismo nombre que el que especificamos en `urls` (`pk`). ¡También tenga en cuenta que omitir esta variable es incorrecto y resultará en un error!
 
 Ahora, queremos obtener solo un post. Para ello podemos usar querysets como este:
 
@@ -130,17 +130,17 @@ Sí. Es hora de actualizar la página: http://127.0.0.1:8000/
 
 ![Post list view](images/post_list2.png)
 
-¡Funcionó! Pero, ¿qué pasa cuando haces click en un enlace en el título del post?
+¡Funcionó! Pero ¿qué pasa cuando haces click en un enlace en el título del post?
 
 ![TemplateDoesNotExist error](images/template_does_not_exist2.png)
 
-¡Oh, no! ¡Otro error! Pero ya sabemos cómo lidiar con eso, ¿no? ¡Tenemos que añadir una plantilla!
+¡Oh no! ¡Otro error! Pero ya sabemos cómo lidiar con eso, ¿no? ¡Tenemos que añadir una plantilla!
 
 ## Crear una plantilla para post detail
 
 Vamos crear un fichero en `blog/templates/blog` llamado `post_detail.html`, y abrirlo en el editor de código.
 
-Se verá así:
+Introduzca el siguiente código:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -170,7 +170,7 @@ Bien, podemos actualizar nuestra página y ver si `TemplateDoesNotExist` se ha i
 
 ¡Yay! ¡Funciona!
 
-# ¡Hora de despliegue!
+# Hora de despliegue!
 
 Sería bueno verificar que tu sitio web aún funcionará en PythonAnywhere, ¿cierto? Intentemos desplegar de nuevo.
 

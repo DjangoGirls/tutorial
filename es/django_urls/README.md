@@ -41,7 +41,7 @@ La URL de admin, que hemos visitado en el capítulo anterior ya está aquí:
     path('admin/', admin.site.urls),
 ```
 
-Esta línea dice que para cada URL que empieza con `admin/` Django encontrará su correspondiente *view*. En este caso estamos incluyendo muchas URLs admin así que no todo está empaquetado en este pequeño archivo. Es más limpio y legible.
+Esta linea dice que para cada URL que empieza con `admin/` Django encontrará su correspondiente *view*. En este caso estamos incluyendo muchas URLs admin así que no todo está empaquetado en este pequeño archivo. Es más limpio y legible.
 
 ## ¡Tu primera URL de Django!
 
@@ -69,7 +69,7 @@ Ahora Django redirigirá todo lo que entre a 'http://127.0.0.1:8000/' hacia `blo
 
 ## blog.urls
 
-Crea un nuevo fichero vacío llamado `urls.py` en el directorio `blog`, y ábrelo en el editor de código. ¡Vale! Añade las dos primeras líneas:
+Crea un nuevo fichero vacío llamado `urls.py` el el directorio `blog`, y ábrelo en el editor de código. ¡Vale! Añade las dos primeras líneas:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -98,6 +98,6 @@ Si tratas de visitar http://127.0.0.1:8000/ ahora, encontrarás un mensaje de er
 
 ![Error](images/error1.png)
 
-La consola esta mostrando un error, pero no te preocupes - de hecho es muy útil: está diciendote que **no existe el atributo 'post_list'**. Ese es el nombre del *view* que Django está tratando de encontrar y usar, pero aún no lo hemos creado. En esta etapa tu `/admin/` tampoco funcionará. No te preocupes, ya llegaremos a eso. Si ves un error diferente, intenta reiniciar el servidor web. Para hacerlo, en la ventana de la consola que ejecuta el servidor web, deténgalo presionando Ctrl+C (las teclas juntas Control y C). En Windows, es posible que deba presionar Ctrl+Break. Luego, debe reiniciar el servidor web ejecutando el comando `python manage.py runserver`.
+La consola esta mostrando un error, pero no te preocupes - de hecho es muy útil: está diciendote que **no existe el atributo 'post_list'**. Ese es el nombre del *view* que Django está tratando de encontrar y usar, pero aun no lo hemos creado. En esta etapa tu `/admin/` tampoco funcionará. No te preocupes, ya llegaremos a eso. Si ves un error diferente, intenta reiniciar el servidor web. Para hacerlo, en la ventana de la consola que ejecuta el servidor web, deténgalo presionando Ctrl+C (las teclas juntas Control y C). En Windows, es posible que deba presionar Ctrl+Break. Luego, debe reiniciar el servidor web ejecutando un comando `python manage.py runserver`.
 
 > Si quieres saber más sobre URLconfs de Django, mira la documentación oficial: https://docs.djangoproject.com/en/2.2/topics/http/urls/

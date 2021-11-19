@@ -97,9 +97,9 @@ Sería bueno ver si tu sitio web seguirá funcionando en la Internet pública, �
 
 (Recuerda sustituir `<your-pythonanywhere-domain>` con tu subdominio de PythonAnywhere real, sin los paréntesis angulares.)
 
-* Y finalmente, dirígete a la [página "Web"](https://www.pythonanywhere.com/web_app_setup/) y haz clic en **Reload** en tu aplicación web. (Para ir a otras páginas de PythonAnywhere desde la consola, haz clic en el botón de la esquina superior derecha.) Los cambios deberían estar visibles en https://subdomain.pythonanywhere.com -- ¡compruébalo en el navegador! Si ves distintas publicaciones en el sitio en PythonAnywhere de las que tienes en tu servidor local, es lo normal. Tienes dos bases de datos, una en tu ordenador local y otra en PythonAnywhere y no tienen por qué tener el mismo contenido.
+* Y finalmente, dirígete a la [página "Web"](https://www.pythonanywhere.com/web_app_setup/) y haz click en **Reload** en tu aplicación web. (Para ir a otras páginas de PythonAnywhere desde la consola, haz click en el botón de la esquina superior derecha.) Los cambios deberían estar visibles en https://subdomain.pythonanywhere.com -- ¡compruébalo en en navegador! Si ves distintas publicaciones en el sitio en PythonAnywhere de las que tienes en tu servidor local, es lo normal. Tienes dos bases de datos, una en tu ordenador local y otra en PythonAnywhere y no tienen por qué tener el mismo contenido.
 
-¡Felicidades! Ahora intenta añadir un nuevo post en tu administrador de Django (recuerda añadir published_date!) Asegúrate de que estás en el administrador de Django de PytonAnywhere, https://tunombre.pythonanywhere.com/admin. Luego actualiza tu página para ver si los posts aparecen.
+¡Felicidades! Ahora intenta añadir un nuevo post en tu administrador de Django (recuerda añadir published_date!) Asegúrate de que estas en el administrador de Django de PytonAnywhere, https://tunombre.pythonanywhere.com/admin. Luego actualiza tu página para ver si los posts aparecen.
 
 ¿Funciona de maravilla? ¡Estamos orgullosas! Aléjate un rato del ordenador, te has ganado un descanso. :)
 

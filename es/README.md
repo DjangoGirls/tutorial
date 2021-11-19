@@ -4,7 +4,7 @@
 
 > Este trabajo está bajo la licencia internacional Creative Commons Attribution-ShareAlike 4.0. Para ver una copia de esta licencia, visita el siguiente enlace https://creativecommons.org/licenses/by-sa/4.0/
 
-## Bienvenida/o
+## Bienvenido/a
 
 ¡Bienvenido/a al tutorial de las Django Girls! ¡Nos alegra que estés aquí :) En este tutorial, te llevaremos de viaje a las entrañas de la tecnología web, para que veas todas las piezas que se necesitan para que la web funcione.
 
@@ -12,11 +12,11 @@ Como pasa con todas las cosas nuevas, va a ser una aventura - pero no te preocup
 
 ## Introducción
 
-¿Alguna vez has tenido la sensación de que el mundo es cada vez más tecnológico? ¿que cada vez lo entiendes menos? ¿Alguna vez te has planteado crear un sitio web pero no sabías por dónde empezar? ¿Has pensado alguna vez que el mundo del software es demasiado complicado como para intentar hacer algo por tu cuenta?
+¿Alguna vez has tenido la sensación de que el mundo es cada vez más tecnológico? ¿que cada vez lo entiendes menos? ¿Alguna vez te has planteado crear un sitio web pero no sabías por donde empezar? ¿Has pensado alguna vez que el mundo del software es demasiado complicado como para intentar hacer algo por tu cuenta?
 
 Bueno, ¡tenemos buenas noticias! Programar no es tan difícil como parece y queremos demostrarte lo divertido que puede llegar a ser.
 
-Este tutorial no te convertirá en programadora de la noche a la mañana. Si quieres ser buena en esto, necesitarás meses o incluso años de aprendizaje y práctica. Sin embargo queremos enseñarte que programar o crear sitios web no es tan complicado como parece. Intentaremos explicar las cosas lo mejor que podamos, para perderle el miedo a la tecnología.
+Este tutorial no te convertirá en programadora de la noche a la mañana. Sí quieres ser buena en esto, necesitarás meses o incluso años de aprendizaje y práctica. Sin embargo queremos enseñarte que programar o crear sitios web no es tan complicado como parece. Intentaremos explicar las cosas lo mejor que podamos, para perderle el miedo a la tecnología.
 
 ¡Esperamos conseguir que te guste la tecnología tanto como a nosotras!
 
@@ -34,9 +34,9 @@ Bien, [empecemos por el comienzo...](./how_the_internet_works/README.md)
 
 ## Seguir el tutorial desde casa
 
-Participar en un taller de Django Girls en vivo es genial, pero somos conscientes de que no siempre es posible hacerlo. Por eso, te recomendamos hacer este tutorial en casa. Para las que estáis en casa, estamos preparando vídeos que facilitarán seguir el tutorial por tu cuenta. Todavía está en progreso, pero cada vez hay más cosas explicadas en el canal de YouTube [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) (Nota: en inglés).
+Participar en un taller de Django Girls en vivo es genial, pero somos conscientes de que no siempre es posible hacerlo. Por eso, te recomendamos hacer este tutorial en casa. Para las que estáis en casa, estamos preparando videos que facilitarán seguir el tutorial por tu cuenta. Todavía está en progreso, pero cada vez hay más cosas explicadas en el canal de YouTube [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) (Nota: en inglés).
 
-En cada capítulo hay un enlace que lleva al vídeo correspondiente (si lo hay).
+En cada capítulo hay un enlace que lleva al video correspondiente (si lo hay).
 
 ## Sobre nosotras y Cómo contribuir
 
