@@ -129,24 +129,22 @@ Voici un exemple d’un modèle complet, copiez et collez-le dans `blog/template
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Blog Django Girls</title>
+        <title>Ma Startup d'Etat</title>
     </head>
     <body>
         <header>
-            <h1><a href="/">Blog Django Girls</a></h1>
+            <h1><a href="/">Collez efficacement des post-il</a></h1>
         </header>
 
-        <article>
-            <time>publication: 14.06.2014, 12:14</time>
-            <h2><a href="">Mon premier article</a></h2>
+        <div>
+            <h2><a href="">Pourquoi apprendre à coller des post-its ?</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </article>
+        </div>
 
-        <article>
-            <time>publication: 14.06.2014, 12:14</time>
-            <h2><a href="">Mon second article</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </article>
+        <div>
+            <h2><a href="">Visionner le mooc</a></h2>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        </div>
     </body>
 </html>
 ```
