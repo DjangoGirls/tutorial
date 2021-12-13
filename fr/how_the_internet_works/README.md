@@ -4,7 +4,7 @@
 > 
 > Ce chapitre s’inspire de la conférence « Comment fonctionne Internet » de Jessica McKellar (http://web.mit.edu/jesstess/www/).
 
-Vous utilisez sûrement Internet tous les jours. Mais savez-vous ce qui ce passe vraiment quand vous tapez une adresse comme https://djangogirls.org dans votre navigateur et appuyez sur `Entrée`?
+Vous utilisez sûrement Internet tous les jours. Mais savez-vous ce qui ce passe vraiment quand vous tapez une adresse comme https://beta.gouv.fr dans votre navigateur et appuyez sur `Entrée`?
 
 La première chose que vous devez comprendre c’est qu’un site Web consiste en un tas de fichiers sauvegardés sur un disque dur -- tout comme vos films, musiques ou photos. Cependant, les sites web ont quelque chose d'unique : ils contiennent du code informatique appelé HTML.
 
@@ -28,7 +28,7 @@ Fascinant, non ? Cependant, il n'est pas possible de tirer un câble entre chaqu
 
 ![Figure 1.3](images/internet_2.png)
 
-C'est un peu comme si, quand vous tapiez https://djangogirls.org, vous envoyiez une lettre qui dit "Chères Django Girls, je voudrais voir le site djangogirls.org. Pouvez-vous me l'envoyer ?"
+C'est un peu comme si, quand vous tapiez https://beta.gouv.fr, vous envoyiez une lettre qui dit "Chèrs BetaGouvers, je voudrais voir le site beta.gouv.fr. Pouvez-vous me l'envoyer ?"
 
 Votre lettre part vers le bureau de poste le plus proche. Ensuite, il file vers un autre, qui est plus proche de votre destinataire. Puis un autre, et encore un autre, jusqu'à sa destination. Une chose à retenir : si vous envoyez beaucoup de lettres (*data packets*) au même endroit, il se pourrait qu'elles transitent par des postes différentes (*routers*). Cela dépend de la manière dont elles sont distribuées à chaque bureau de poste.
 
@@ -36,7 +36,7 @@ Votre lettre part vers le bureau de poste le plus proche. Ensuite, il file vers 
 
 Cela fonctionne comme ça - vous envoyez des messages et attendez une réponse. Vous utilisez des octets de données à la place du papier et du crayon, mais l'idée est la même !
 
-À la place des adresses postales (nom de rue, ville, code postal), nous utilisons des adresses IP. Votre ordinateur commence par demander au DNS (Domaine Name System) de traduire djangogirls.org en une adresse IP. Ça marche un peu comme un de ces vieux annuaires où l'on peut chercher le nom d'une personne et trouver son numéro de téléphone et son adresse.
+À la place des adresses postales (nom de rue, ville, code postal), nous utilisons des adresses IP. Votre ordinateur commence par demander au DNS (Domaine Name System) de traduire beta.gouv.fr en une adresse IP. Ça marche un peu comme un de ces vieux annuaires où l'on peut chercher le nom d'une personne et trouver son numéro de téléphone et son adresse.
 
 Quand vous envoyez une lettre, elle a besoin de certaines choses pour transiter correctement : une adresse, un timbre, etc. Vous devez aussi utiliser une langue que votre destinataire comprend. C'est la même chose pour les paquets de données que vous envoyez pour voir un site web. Vous utilisez un protocole appelé HTTP (Hypertext Tranfer Protocol).
 
