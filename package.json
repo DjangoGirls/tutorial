@@ -1,7 +1,7 @@
 {
   "name": "tutorial",
   "version": "1.0.0",
-  "description": "The Django Girls tutorial",
+  "description": "The beta.gouv coding tutorial, greatly inspired from The Django Girls tutorial",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {

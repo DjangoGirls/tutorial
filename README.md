@@ -1,3 +1,7 @@
+# Tutoriel pour la formation "Dev pour non-Devs" de beta.gouv
+
+Il est forké et adapté du tutoriel de [Django-girls](https://tutorial.djangogirls.org)
+
 # Django Girls Tutorial
 
 This is the source code repository for the Django Girls Tutorial. Django Girls Tutorial is used on [tutorial.djangogirls.org](http://tutorial.djangogirls.org) so if you want to read it, please go there. If you want to contribute please do go further with this file.
