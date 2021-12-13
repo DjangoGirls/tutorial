@@ -22,30 +22,15 @@ Nous espérons arriver à vous faire aimer la technologie autant que nous l'aimo
 
 ## Qu'apprendrez-vous au cours de ce tutoriel ?
 
-Une fois que vous aurez terminé le tutoriel, vous aurez une petite application web : votre propre blog. Nous allons vous montrer comment le mettre en ligne, ainsi votre travail sera visible par d'autres !
+Une fois que vous aurez terminé le tutoriel, vous aurez une petite application web : votre propre landing page utilisant le Design System de l'Etat. Nous allons aussi vous montrer comment la mettre en ligne, ainsi votre travail sera visible par d'autres !
 
 Ça devrait ressembler plus ou moins à ça :
 
 ![Figure 0.1](images/application.png)
 
-> Si vous travaillez avec le tutoriel de votre côté et n'avez pas un coach qui vous aiderait en cas de problème, nous avons un système de discussion instantanée pour vous : [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Nous avons demandé aux coachs et participant·e·s des précédentes éditions de passer de temps en temps pour aider les autres avec le tutoriel. N'ayez pas peur et allez poser vos questions !
+> Si vous travaillez avec le tutoriel de votre côté et n'avez pas un coach qui vous aiderait en cas de problème, n'hésitez pas à poser vos questions dans le canal Mattermost `~incubateur-formation-code` !
 
 OK, [commençons par le commencement…](./how_the_internet_works/README.md)
-
-## Suivre le tutoriel chez soi
-
-Il est formidable de participer à un atelier Django Girls, mais nous comprenons qu'il n'est pas toujours facile d'en trouver un. C'est pourquoi nous vous encourageons à essayer de suivre ce tutoriel chez vous. Pour les lectrices à la maison, nous sommes actuellement en train de préparer des vidéos afin qu'il vous soit plus facile de suivre le tutoriel de votre côté. C'est encore un travail en cours, mais la chaine YouTube [Le code convient aux filles](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) couvre de plus en plus de choses.
-
-Dans chaque chapitre couvert se trouve un lien pointant vers la vidéo correspondante.
-
 ## À propos et contributions
 
-Ce tutoriel est maintenu par [DjangoGirls](https://djangogirls.org/). Si vous rencontrez des erreurs ou souhaitez simplement suggérer une amélioration du tutoriel, il est important de respecter [les règles de contribution](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
-
-## Vous voulez nous aider à traduire le tutoriel dans d'autres langues ?
-
-Actuellement, les traductions sont faites sur la plateforme crowdin.com :
-
-https://crowdin.com/project/django-girls-tutorial
-
-Si votre langue n'est pas listée sur [crowdin](https://crowdin.com/), merci [d'ouvrir un ticket](https://github.com/DjangoGirls/tutorial/issues/new) pour nous en informer afin que nous la rajoutions.
+Ce tutoriel est maintenu par l'équipe tech transverse de beta.gouv. Il est librement inspiré du tutoriel[DjangoGirls](https://djangogirls.org/). Si vous rencontrez des erreurs ou souhaitez simplement suggérer une amélioration du tutoriel, il est important de respecter [les règles de contribution](https://github.com/betagouv/tutorial/blob/master/README.md).
