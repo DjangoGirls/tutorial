@@ -33,4 +33,4 @@ Une fois que vous aurez terminé le tutoriel, vous aurez une petite application 
 OK, [commençons par le commencement…](./how_the_internet_works/README.md)
 ## À propos et contributions
 
-Ce tutoriel est maintenu par l'équipe tech transverse de beta.gouv. Il est librement inspiré du tutoriel[DjangoGirls](https://djangogirls.org/). Si vous rencontrez des erreurs ou souhaitez simplement suggérer une amélioration du tutoriel, il est important de respecter [les règles de contribution](https://github.com/betagouv/tutorial/blob/master/README.md).
+Ce tutoriel est maintenu par la communauté de beta.gouv. Il est librement inspiré du tutoriel[DjangoGirls](https://djangogirls.org/). Si vous rencontrez des erreurs ou souhaitez simplement suggérer une amélioration du tutoriel, il est important de respecter [les règles de contribution](https://github.com/betagouv/tutorial/blob/master/README.md).

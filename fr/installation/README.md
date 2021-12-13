@@ -1,14 +1,4 @@
-# Si vous suivez ce tutoriel chez vous
-
-Si vous suivez ce tutoriel chez vous et non dans un [évènement Django Girls](https://djangogirls.org/events/), vous pouvez passer directement au chapitre [Comment fonctionne Internet](../how_the_internet_works/README.md).
-
-La raison est que toutes les informations nécessaires aux installations seront données au fur et à mesure dans les différents chapitres du tutoriel. Celle-ci est juste une page supplémentaire qui rassemble toutes les instructions d’installation en un seul endroit (ce qui est utile pour certains formats d’atelier). Vous pouvez choisir d’installer tout ce qui est sur cette page dès maintenant si vous le souhaitez. Cependant, si vous avez envie d'apprendre des choses avant d'installer plein de trucs sur votre ordinateur : passez ce chapitre et installez ce dont vous avez besoin au fil des chapitres.
-
-Bonne chance !
-
 # Si vous participez à un atelier
-
-Si vous participez à un [événement Django Girls](https://djangogirls.org/events/) :
 
 * Dans certains cas un « party d’installation » a lieu avant l’atelier principal. Si vous vous trouvez à un party d’installation, cette page est pour vous ! Suivez les instructions ici pour installer tout ce dont vous avez besoin pour l’atelier. Demandez de l'aide aux coaches si nécessaire. Ensuite, pendant l'atelier vous pourrez ignorer les instructions d’installation que vous rencontrerez dans le tutoriel.
 * Les organisateurs de votre atelier vous ont peut-être proposé de procéder aux installations chez vous. Si c'est le cas, cette page est pour vous ! Suivez les instructions ici, autant que vous le pouvez. Pendant l’atelier principal, quand vous arrivez à une étape nécessitant d'un logiciel que vous n'avez pas réussi à installer toute seule, vous pourrez demander à votre coach.
@@ -47,8 +37,8 @@ Dans les étapes ci-dessous vous allez rencontrer les noms « console », « 
 
 Allez sur [GitHub.com](https://www.github.com) et créez un compte d’utilisateur gratuitement. N’oubliez pas votre mot de passe (ajoutez-le à votre gestionnaire de mots de passe, si vous utilisez un).
 
-# Créer un compte PythonAnywhere {#pythonanywhere-account}
-
+# Créer un compte Scalingo {#scalingo-account}
+TODO :)
 {% include "/deploy/signup_pythonanywhere.md" %}
 
 # Commencer à lire
