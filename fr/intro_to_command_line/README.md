@@ -44,7 +44,7 @@ Si vous êtes sous Windows, vous verrez probablement un `>`, comme ça :
     >
     
 
-Jetez un coup d'œil à la section Linux ci-dessus : c'est à cela que la ligne de commande ressemblera une fois que vous serez sur PythonAnywhere.
+Jetez un coup d'œil à la section Linux ci-dessus : c'est à cela que la ligne de commande ressemblera une fois que vous serez sur Scalingo.
 
 <!--endsec-->
 
