@@ -4,7 +4,7 @@
 > 
 > Des morceaux de ce chapitre sont inspirés du [tutoriel django-marcador](http://django-marcador.keimlink.de/), disponible sous licence Creative Commons Attribution-ShareAlike 4.0 International. Le tutoriel django-marcador a été créé par Markus Zapke-Gründemann et al.
 
-Nous allons créer un petit blog !
+Nous allons créer une landing page pour une Startup d'Etat — aux couleurs du Design System de l'Etat et avec un formulaire de contact !
 
 La première étape consiste à démarrer un nouveau projet Django. En gros, cela veut dire que nous allons lancer quelques scripts fournis par Django qui vont créer un squelette de projet Django. Il s'agit de fichiers et de dossiers que nous utiliserons par la suite.
 
@@ -18,12 +18,12 @@ Retournons à la création de notre premier projet. Tapez la commande suivant da
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~/djangogirls$ django-admin startproject mysite .
+    (myvenv) ~/landingpage$ django-admin startproject mysite .
     
 
 > Le point `.` est très important : c'est lui qui permet de dire au script d'installer Django dans votre répertoire courant (le point `.` est une référence abrégée à celui-ci).
 > 
-> **Note** : lorsque vous tapez la commande précédente dans votre console, vous ne devez recopier que la partie qui commence par `django-admin`. La partie `(myvenv) ~/djangogirls$` montrée ici n'est qu'un exemple pour vous rappeler de taper la commande dans votre console.
+> **Note** : lorsque vous tapez la commande précédente dans votre console, vous ne devez recopier que la partie qui commence par `django-admin`. La partie `(myvenv) ~/landingpage$` montrée ici n'est qu'un exemple pour vous rappeler de taper la commande dans votre console.
 
 <!--endsec-->
 
@@ -33,18 +33,18 @@ Sur Windows, vous devez taper la commander suivante. ** (N'oubliez pas le point 
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) C:\Users\Name\djangogirls> django-admin.exe startproject mysite .
+    (myvenv) C:\Users\Name\landingpage> django-admin.exe startproject mysite .
     
 
 > Le point `.` est très important : c'est lui qui permet de dire au script d'installer Django dans votre répertoire courant (le point `.` est une référence abrégée à celui-ci).
 > 
-> **Note** : lorsque vous tapez la commande précédente dans votre console, vous ne devez recopier que la partie qui commence par `django-admin.exe`. La partie `(myvenv) C:\Users\Name\djangogirls>` montrée ici n'est qu'un exemple pour vous rappeler de taper la commande dans votre console.
+> **Note** : lorsque vous tapez la commande précédente dans votre console, vous ne devez recopier que la partie qui commence par `django-admin.exe`. La partie `(myvenv) C:\Users\Name\landingpage>` montrée ici n'est qu'un exemple pour vous rappeler de taper la commande dans votre console.
 
 <!--endsec-->
 
 `django-admin.py` est un script qui crée les dossiers et fichiers nécessaires pour vous. Vous devriez maintenant avoir une structure de dossier qui ressemble à celle-ci:
 
-    djangogirls
+    landingpage
     ├── manage.py
     ├── mysite
     │   ├── __init__.py
@@ -70,16 +70,16 @@ Ignorons les autres fichiers pour l'instant, nous n'allons pas avoir besoin d'y 
 
 Apportons quelques changements à `mysite/settings.py`. Ouvrez le fichier avec l'éditeur de code que vous avez installé tout à l'heure.
 
-**Note** : Gardez à l’esprit que `settings.py` est un fichier ordinaire, comme les autres. Vous pouvez l’ouvrir depuis l’éditeur de code, en cliquant sur « file-> open » dans le menu. Cela devrait ouvrir la fenêtre habituelle de navigation, où vous allez pouvoir chercher votre fichier `settings.py` et le sélectionner. Autrement, vous pouvez naviguer jusqu’au dossier djangogirls sur votre bureau et faire un clic droit sur le nom du fichier. Sélectionnez ensuite votre éditeur de code dans la liste qui s'affiche. Sélectionner l’éditeur est important car vous pourriez avoir d’autres programmes installés qui peuvent ouvrir le fichier, mais qui ne vous permettraient pas de le modifier.
+**Note** : Gardez à l’esprit que `settings.py` est un fichier ordinaire, comme les autres. Vous pouvez l’ouvrir depuis l’éditeur de code, en cliquant sur « file-> open » dans le menu. Cela devrait ouvrir la fenêtre habituelle de navigation, où vous allez pouvoir chercher votre fichier `settings.py` et le sélectionner. Autrement, vous pouvez naviguer jusqu’au dossier landingpage sur votre bureau et faire un clic droit sur le nom du fichier. Sélectionnez ensuite votre éditeur de code dans la liste qui s'affiche. Sélectionner l’éditeur est important car vous pourriez avoir d’autres programmes installés qui peuvent ouvrir le fichier, mais qui ne vous permettraient pas de le modifier.
 
-Ça serait sympa d'avoir l'heure correcte sur notre site Web. Allez sur la [liste Wikipedia des fuseaux horaires](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) et copiez votre fuseau horaire (TZ) (par exemple `Europe/Berlin`).
+Ça serait sympa d'avoir l'heure correcte sur notre site Web. Allez sur la [liste Wikipedia des fuseaux horaires](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) et copiez votre fuseau horaire (TZ) (par exemple `Europe/Paris`).
 
 Dans `settings.py`, recherchez la ligne qui contient `TIME_ZONE` et modifiez-la pour choisir votre propre fuseau horaire. Par exemple :
 
 {% filename %}mysite/settings.py{% endfilename %}
 
 ```python
-TIME_ZONE = 'Europe/Berlin'
+TIME_ZONE = 'Europe/Paris'
 ```
 
 Un code de langue se compose de la langue, par exemple `en` pour l’anglais ou `de` pour l’allemand et du code du pays, p. ex. `de` pour l’Allemagne ou `ch` pour la Suisse. Si l’anglais n’est pas votre langue maternelle, vous pouvez ajouter votre code de langue afin que les boutons par défaut et les notifications de Django soient traduits. Vous auriez alors le bouton « Cancel » traduits dans la langue que vous avez définie. [Django est livré avec un grand nombre de traductions disponibles](https://docs.djangoproject.com/en/2.2/ref/settings/#language-code).
@@ -89,7 +89,7 @@ Si vous voulez changer la langue, modifiez le code de langue comme montré dans 
 {% filename %}mysite/settings.py{% endfilename %}
 
 ```python
-LANGUAGE_CODE = 'de-ch'
+LANGUAGE_CODE = 'fr-fr'
 ```
 
 Nous allons avoir besoin aussi d'un chemin d’accès pour les fichiers statiques. (Nous allons découvrir les fichiers statiques et CSS plus tard dans le tutoriel) Allez à la *fin* du fichier et juste en dessous de `STATIC_URL`, ajoutez une nouvelle entrée `STATIC_ROOT` :
@@ -101,12 +101,12 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
-Lorsque `DEBUG` a valeur `True` et `ALLOWED_HOSTS` est vide, les noms d'hôte acceptés sont `[« localhost », '127.0.0.1 », ' [ :: 1]']`. Notre nom d’hôte sur PythonAnywhere ne sera donc pas accepté une fois que notre application sera déployée. Pour éviter cela, nous allons changer le paramètre suivant :
+Lorsque `DEBUG` a valeur `True` et `ALLOWED_HOSTS` est vide, les noms d'hôte acceptés sont `[« localhost », '127.0.0.1 », ' [ :: 1]']`. Notre nom d’hôte sur Scalingo ne sera donc pas accepté une fois que notre application sera déployée. Pour éviter cela, nous allons changer le paramètre suivant :
 
 {% filename %}mysite/settings.py{% endfilename %}
 
 ```python
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', '.scalingo.io']
 ```
 
 > **Note** : Si vous utilisez un Chromebook, ajoutez cette ligne à la fin de votre fichier settings.py : `MESSAGE_STORAGE = « django.contrib.messages.storage.session.SessionStorage »`
@@ -170,11 +170,11 @@ DATABASES = {
 }
 ```
 
-Pour créer la base de donnée de notre blog, il faut lancer la commande suivante dans la console : `python manage.py migrate` (vous avez besoin d'être dans le dossier `djangogirls` qui contient le fichier `manage.py`). Si tout se passe bien, vous devriez voir quelque chose comme ça:
+Pour créer la base de donnée de notre landing page, il faut lancer la commande suivante dans la console : `python manage.py migrate` (vous avez besoin d'être dans le dossier `landingpage` qui contient le fichier `manage.py`). Si tout se passe bien, vous devriez voir quelque chose comme ça:
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~/djangogirls$ python manage.py migrate
+    (myvenv) ~/landingpage$ python manage.py migrate
     Operations to perform:
       Apply all migrations: auth, admin, contenttypes, sessions
     Running migrations:
@@ -199,18 +199,18 @@ Et voilà ! Il ne reste plus qu'à lancer le serveur et voir si notre site web f
 
 ## Lancer le serveur web
 
-Pour cela, vous avez besoin d'être dans le dossier qui contient le fichier `manage.py` (le dossier `djangogirls`). Dans votre console, vous pouvez lancer le serveur en tapant `python manage.py runserver`:
+Pour cela, vous avez besoin d'être dans le dossier qui contient le fichier `manage.py` (le dossier `landingpage`). Dans votre console, vous pouvez lancer le serveur en tapant `python manage.py runserver`:
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~/djangogirls$ python manage.py runserver
+    (myvenv) ~/landingpage$ python manage.py runserver
     
 
 Si vous avez un Chromebook, utilisez plutôt la commande suivante :
 
 {% filename %}Cloud 9{% endfilename %}
 
-    (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
+    (myvenv) ~/landingpage$ python manage.py runserver 0.0.0.0:8080
     
 
 ou celle-ci si vous utilisez Glitch :
@@ -225,7 +225,7 @@ Si vous utilisez Windows et que vous obtenez l'erreur `UnicodeDecodeError`, tape
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
+    (myvenv) ~/landingpage$ python manage.py runserver 0:8000
     
 
 Ensuite, vous allez vérifier que votre site fonctionne. Pour cela, ouvrez votre navigateur (Firefox, Chrome, Safari, Internet Explorer, ou n'importe quel autre), et entrez l'adresse suivante :
