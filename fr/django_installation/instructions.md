@@ -10,14 +10,14 @@ Donc, commençons par créer un **environnement virtuel de programmation** (ou *
 
 Tout ce dont vous avez besoin, c'est de trouver un dossier où vous voulez créer votre `virtualenv` ; vous pouvez choisir votre répertoire "home" par exemple. Sous Windows, le home ressemble à `C:\Utilisateurs\Nom` (où `Nom` est votre login).
 
-> **Note:** Sur Windows, assurez-vous que le chemin vers ce répertoire ne contienne pas d'accents ou autres caractères spéciaux; si c'est la cas, utilisez un répertoire différent, par exemple `C:\djangogirls`.
+> **Note:** Sur Windows, assurez-vous que le chemin vers ce répertoire ne contienne pas d'accents ou autres caractères spéciaux; si c'est la cas, utilisez un répertoire différent, par exemple `C:\landingpage`.
 
-Dans ce tutoriel, nous allons utiliser un nouveau dossier `djangogirls` que vous allez créer dans votre dossier home :
+Dans ce tutoriel, nous allons utiliser un nouveau dossier `landingpage` que vous allez créer dans votre dossier home :
 
 {% filename %}command-line{% endfilename %}
 
-    $ mkdir djangogirls
-    $ cd djangogirls
+    $ mkdir landingpage
+    $ cd landingpage
     
 
 Nous allons créer un virtualenv appelé `myvenv`. Pour cela, nous taperons une commande qui ressemblera à :
@@ -34,7 +34,7 @@ Pour créer un nouveau `virtualenv`, vous devez ouvrir un terminal et exécuter 
 
 {% filename %}command-line{% endfilename %}
 
-    C:\Users\Name\djangogirls> python -m venv myvenv
+    C:\Users\Name\landingpage> python -m venv myvenv
     
 
 Où `myvenv` est le nom de votre `virtualenv`. Vous pouvez choisir un autre nom mais attention : il doit être en minuscules, sans espaces et sans accents ou caractères spéciaux. C'est aussi une bonne idée de choisir un nom plutôt court, car vous aller souvent l'utiliser!
@@ -109,7 +109,7 @@ Démarrez votre environnement virtuel en exécutant :
 
 {% filename %}command-line{% endfilename %}
 
-    C:\Utilisateurs\Nom\djangogirls> myvenv\Scripts\activate
+    C:\Utilisateurs\Nom\landingpage> myvenv\Scripts\activate
     
 
 > **Note:** sur Windows 10 vous pouvez avoir une erreur dans le PowerShell de Windows disant `execution of scripts is disabled on this system`. Dans ce cas ouvrez une autre console Windows PowerShell avec l'option "ouvrir en tant qu'administrateur". Puis essayer d'exécuter la commande suivante avant de démarrer votre environnement virtuel :
@@ -174,17 +174,17 @@ Avant de faire cela, nous devons nous assurer que nous avons la dernière versio
 
 Un fichier "requirement" maintient une liste des dépendances qui doivent être installées avec `pip install`:
 
-Tout d'abord, créez un fichier `requirements.txt` dans votre dossier `djangogirls`, en utilisant l'éditeur de texte que vous avez téléchargé précédemment. Pour ce faire, ouvrez un nouveau fichier dans l'éditeur et sauvegarde-le à l'intérieur du dossier `djangogirls/` en lui donnant le nom `requirements.txt`. Votre dossier ressemble maintenant à ceci :
+Tout d'abord, créez un fichier `requirements.txt` dans votre dossier `landingpage`, en utilisant l'éditeur de texte que vous avez téléchargé précédemment. Pour ce faire, ouvrez un nouveau fichier dans l'éditeur et sauvegarde-le à l'intérieur du dossier `landingpage/` en lui donnant le nom `requirements.txt`. Votre dossier ressemble maintenant à ceci :
 
-    djangogirls
+    landingpage
     ├── myvenv
     │   └── ...
     └───requirements.txt
     
 
-Dans ce fichier `djangogirls/requirements.txt` vous devez ajouter ceci :
+Dans ce fichier `landingpage/requirements.txt` vous devez ajouter ceci :
 
-{% filename %}djangogirls/requirements.txt{% endfilename %}
+{% filename %}landingpage/requirements.txt{% endfilename %}
 
     Django~={{ book.django_version }}
     
@@ -203,7 +203,7 @@ Maintenant, exécutez `pip install -r requirements.txt` pour installer Django.
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> Si jamais vous obtenez des erreurs lorsque vous utilisez pip sous Windows, vérifiez si votre chemin d'accès contient des espaces, des accents ou des caractères spéciaux (ex : `C:\Utilisateurs\Nom d'Utilisateur\djangogirls`). Si c'est le cas, changez de dossier et essayez d'en créer un nouveau en prenant en compte le fait qu'il ne doit donc avoir ni accents, ni espaces, ni caractères spéciaux (ex : `C:\djangogirls`). Créez un nouvel environnement virtuel dans le nouveau répertoire, puis supprimez l'ancien et ré-essayez la commande précédente. (Déplacer ou couper/coller le répertoire de l'environnement virtuel ne marchera pas car virtualenv utilise des chemins absolus)
+> Si jamais vous obtenez des erreurs lorsque vous utilisez pip sous Windows, vérifiez si votre chemin d'accès contient des espaces, des accents ou des caractères spéciaux (ex : `C:\Utilisateurs\Nom d'Utilisateur\landingpage`). Si c'est le cas, changez de dossier et essayez d'en créer un nouveau en prenant en compte le fait qu'il ne doit donc avoir ni accents, ni espaces, ni caractères spéciaux (ex : `C:\landingpage`). Créez un nouvel environnement virtuel dans le nouveau répertoire, puis supprimez l'ancien et ré-essayez la commande précédente. (Déplacer ou couper/coller le répertoire de l'environnement virtuel ne marchera pas car virtualenv utilise des chemins absolus)
 
 <!--endsec-->
 
@@ -214,7 +214,7 @@ data-collapse=true ces-->
 > 
 > {% filename %}command-line{% endfilename %}
 > 
->     C:\Users\Name\djangogirls> python -m pip install -r requirements.txt
+>     C:\Users\Name\landingpage> python -m pip install -r requirements.txt
 >     
 
 <!--endsec-->
