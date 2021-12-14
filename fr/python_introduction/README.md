@@ -183,7 +183,7 @@ Disons que nous aimerions créer une variable appelée `name` :
 >>> name = "Ola"
 ```
 
-Nous tapons name égale Ola.
+Nous tapons name égal Ola.
 
 Vous avez peut-être remarqué que contrairement à tout à l'heure, le programme ne renvoie rien. Du coup, comment faire pour vérifier que la variable existe vraiment ? Tapez `name` et appuyez sur `entrée` :
 
@@ -617,7 +617,7 @@ Tout à l'heure, nous avions choisi un éditeur de code de la section [code edit
 {% filename %}editor{% endfilename %}
 
 ```python
-print('Hello, Django girls!')
+print('Hello, beta.gouv !')
 ```
 
 Vous avez maintenant pas mal de connaissances en Python : n'hésitez pas à écrire du code avec ce que vous avez appris aujourd'hui !
@@ -683,7 +683,7 @@ Maintenant, utilisez Python pour exécuter le code contenu dans votre fichier :
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
-    Hello, Django girls!
+    Hello, beta.gouv !
     
 
 Note: sur Windows 'python3' n'est pas reconnu comme une commande. Au lieu de cela, utilisez 'python' pour exécuter le fichier :
