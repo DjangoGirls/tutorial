@@ -8,11 +8,11 @@
 
 [Κατεβάστε το εδώ](https://wiki.gnome.org/Apps/Gedit#Download)
 
-## Sublime Text 3
+## Sublime Text
 
 Το Sublime Text είναι ένας δημοφιλής επεξεργαστής με μια περίοδο δωρεάν χρήσης (στο πέρας αυτής μπορείτε να εξακολουθείτε να το χρησιμοποιείτε) και είναι διαθέσιμο για όλα τα λειτουργικά συστήματα.
 
-[Κατεβάστε το εδώ](https://www.sublimetext.com/3)
+[Κατεβάστε το εδώ](https://www.sublimetext.com/)
 
 ## Atom
 
