@@ -8,11 +8,11 @@ Gedit je open-source editor. Je k dispozici zdarma pro všechny operační syst�
 
 [Stáhnout si jej můžeš zde](https://wiki.gnome.org/Apps/Gedit#Download)
 
-## Sublime Text 3
+## Sublime Text
 
 Sublime Text je velmi oblíbený editor s bezplatnou zkušební dobou. Lze jej snadno nainstalovat a používat. Je k dispozici pro všechny operační systémy.
 
-[Stáhnout si jej můžeš zde](https://www.sublimetext.com/3)
+[Stáhnout si jej můžeš zde](https://www.sublimetext.com/)
 
 ## Atom
 

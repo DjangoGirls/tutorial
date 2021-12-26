@@ -8,15 +8,15 @@ Gedit açık kaynaklı, ücretsiz bir editördür. Tüm işletim sistemlerinde k
 
 [Buradan indirin](https://wiki.gnome.org/Apps/Gedit#Download)
 
-## Sublime Text 3
+## Sublime Text
 
 Sublime Text, ücretsiz deneme süresi olan çok popüler bir editördür ve tüm işletim sistemleri için mevcuttur.
 
-[Buradan indirin](https://www.sublimetext.com/3)
+[Buradan indirin](https://www.sublimetext.com/)
 
 ## Atom
 
-Atom başka bir popüler editör. Ücretsiz, açık kaynaklı ve Windows, OS X ve Linux için kullanılabilir. Atom  GitHub </ 0> tarafından geliştirilmiştir.</p> 
+Atom başka bir popüler editör. Ücretsiz, açık kaynaklı ve Windows, OS X ve Linux için kullanılabilir. Atom  GitHub </ 0> tarafından geliştirilmiştir.</p>
 
 [Buradan indirin](https://atom.io/)
 

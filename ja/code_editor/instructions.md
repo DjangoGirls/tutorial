@@ -14,11 +14,11 @@ Gedit は、オープンソースの無料エディタで、全てのOSで利用
 
 [ダウンロード](https://wiki.gnome.org/Apps/Gedit#Download)
 
-## Sublime Text 3
+## Sublime Text
 
 Sublime Text はとても人気のあるエディタで、無料の試用期間があります。全てのOSに対応しています。　
 
-[ダウンロード](https://www.sublimetext.com/3)
+[ダウンロード](https://www.sublimetext.com/)
 
 ## Atom
 
