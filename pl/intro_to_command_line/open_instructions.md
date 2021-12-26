@@ -1,3 +1,4 @@
+
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
 W zależności od wersji systemu Windows i klawiatury, jedna z poniższych instrukcji powinna otworzyć okno poleceń (być może trzeba trochę poeksperymentować, ale nie musisz wypróbowywać wszystkich tych sugestii):
