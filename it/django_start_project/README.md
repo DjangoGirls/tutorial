@@ -56,7 +56,7 @@ Dovresti eseguire nella tua console MacOS o Linux il seguente comando; **non dim
     └── requirements.txt
     
 
-> **Nota**: nella struttura della directory, vedrai anche la tua cartella `venv` che abbiamo creato prima.
+> **Nota**: nella struttura della directory, vedrai anche la tua cartella `myvenv` che abbiamo creato prima.
 
 `manage.py` è uno script che aiuta a gestire il sito. Usandolo saremo in grado di avviare un web server sul nostro computer senza dover istallare nient'altro, tra l'altro.
 

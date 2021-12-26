@@ -56,7 +56,7 @@ Auf Windows solltest du den folgenden Befehl ausführen. **(Vergiss den Punkt (`
     └── requirements.txt
     
 
-> **Hinweis:** In deiner Verzeichnisstruktur wirst du auch den `venv`-Ordner sehen, den wir vorhin erzeugt haben.
+> **Hinweis:** In deiner Verzeichnisstruktur wirst du auch den `myvenv`-Ordner sehen, den wir vorhin erzeugt haben.
 
 `manage.py` ist ein Script, das das Management deines Projektes unterstützt. Mit dem Script bist du unter anderem in der Lage, den Webserver auf deinem Rechner zu starten, ohne etwas Weiteres installieren zu müssen.
 

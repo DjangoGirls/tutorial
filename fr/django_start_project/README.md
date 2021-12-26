@@ -56,7 +56,7 @@ Sur Windows, vous devez taper la commander suivante. ** (N'oubliez pas le point 
     └── requirements.txt
     
 
-> **Note** : dans votre structure de dossier, vous pourrez voir également le répertoire `venv` que nous avons créé avant.
+> **Note** : dans votre structure de dossier, vous pourrez voir également le répertoire `myvenv` que nous avons créé avant.
 
 `manage.py` est un script qui aide à gérer ou maintenir le site. Entre autres, il permet notamment de lancer un serveur web sur notre ordinateur sans rien installer d'autre.
 
