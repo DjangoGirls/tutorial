@@ -25,7 +25,8 @@ data-id="chromebook_setup" data-collapse=true ces-->
 
 # Breve introducción a la línea de comandos
 
-Muchos de los pasos citados abajo hacen referencia a la "consola", "terminal", "ventana de comandos", o "línea de comandos" -- todos éstos términos significan la misma cosa: una ventana en tu computadora donde puedes introducir comandos. Cuando estés en el tutorial principal, aprenderás más acerca de la línea de comandos. Por ahora, la parte principal que necesitas es saber cómo abrir una ventana de comandos y cómo luce: {% include "/intro_to_command_line/open_instructions.md" %}
+Muchos de los pasos citados abajo hacen referencia a la "consola", "terminal", "ventana de comandos", o "línea de comandos" -- todos éstos términos significan la misma cosa: una ventana en tu computadora donde puedes introducir comandos. Cuando estés en el tutorial principal, aprenderás más acerca de la línea de comandos. Por ahora, la parte principal que necesitas es saber cómo abrir una ventana de comandos y cómo luce:
+{% include "/intro_to_command_line/open_instructions.md" %}
 
 # Instalar Python
 

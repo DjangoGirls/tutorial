@@ -19,13 +19,14 @@ Wenn du an einer [Django Girls Veranstaltung](https://djangogirls.org/events/) t
 In diesem Tutorial wirst du einen Blog bauen. Dafür wirst du während des Tutorials aufgefordert, verschiedene Software auf deinem Computer zu installieren und auch einige Online-Konten anzulegen, wenn sie gebraucht werden. Diese Seite fasst alle Installations- und Kontoeinrichtungs-Anweisungen an einer Stelle zusammen (das ist für einige Workshopformate sinnvoll).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
-data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
+data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %}
 
 <!--endsec-->
 
 # Kurze Einführung in die Kommandozeile {#command-line}
 
-Viele der folgenden Schritte beziehen sich auf die "Konsole", das "Terminal", das "Kommandozeilen-Fenster" oder die "Kommandozeile" -- all diese Begriffe bezeichnen dasselbe: Ein Fenster auf deinem Computer, in das du Kommandos eingeben kannst. Im Hauptteil des Tutorials wirst du mehr über die Kommandozeile lernen. Vorerst musst du nur wissen, wie du ein Kommandozeilenfester öffnen kannst und wie eines aussieht: {% include "/intro_to_command_line/open_instructions.md" %}
+Viele der folgenden Schritte beziehen sich auf die "Konsole", das "Terminal", das "Kommandozeilen-Fenster" oder die "Kommandozeile" -- all diese Begriffe bezeichnen dasselbe: Ein Fenster auf deinem Computer, in das du Kommandos eingeben kannst. Im Hauptteil des Tutorials wirst du mehr über die Kommandozeile lernen. Vorerst musst du nur wissen, wie du ein Kommandozeilenfester öffnen kannst und wie eines aussieht:
+{% include "/intro_to_command_line/open_instructions.md" %}
 
 # Python installieren {#python}
 

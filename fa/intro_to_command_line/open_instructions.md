@@ -1,3 +1,4 @@
+
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
 بسته به نسخه ویندوز و نیز نوع کیبورد شما، یکی از موارد زیر برای شما یک command window یا خط فرمان باز خواهد کرد (شاید باید کمی امتحان کنید ولی لازم نیست تمام این پیشنهادات را آزمایش کنید):
