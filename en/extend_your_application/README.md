@@ -77,7 +77,7 @@ OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: htt
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
-```shell
+```
     return _bootstrap._gcd_import(name[level:], package, level)
   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
@@ -85,7 +85,7 @@ OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: htt
   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
-  File "/Users/dana/Codes/djangogirls/blog/urls.py", line 6, in <module>
+  File "/Users/ola/djangogirls/blog/urls.py", line 6, in <module>
     path('post/<int:pk>/', views.post_detail, name='post_detail'),
 AttributeError: module 'blog.views' has no attribute 'post_detail'
 ```
