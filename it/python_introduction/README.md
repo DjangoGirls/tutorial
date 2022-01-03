@@ -19,7 +19,7 @@ Vogliamo aprire una console Python, quindi digita `python` su Windows o `python3
 {% filename %}command-line{% endfilename %}
 
     $ python3
-    Python 3.6.1 (...)
+    Python {{ book.py_release }} (...)
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
     
@@ -98,7 +98,7 @@ Utilizzando le virgolette doppie:
 "L'ape Maja va"
 ```
 
-o facendo l'escape dell'apostrofo (cioè evitando che concluda la stringa) con una barra rovesciata (``):
+o facendo l'escape dell'apostrofo (cioè evitando che concluda la stringa) con una barra rovesciata (`\`):
 
 {% filename %}command-line{% endfilename %}
 
@@ -427,7 +427,7 @@ I dizionari, come le liste, sono *mutable*, significa che possono essere cambiat
 >>> partecipante['linguaggio_preferito'] = 'Python'
 ```
 
-Così come succede se applicato alle liste, il metodo `len()` restituisce il numero di coppie chiave/valore anche quando applicato a un dizionario. Vai e digita il comando:
+Come le liste, usando la funzione `len()` sui dizionari restituisce il numero di coppie chiave-valore nel dizionario. Vai avanti e digita questo comando:
 
 {% filename %}command-line{% endfilename %}
 
@@ -493,9 +493,11 @@ True
 True
 >>> 5 != 2
 True
+>>> len([1, 2, 3]) > len([4, 5])
+True
 ```
 
-Abbiamo dato a Python alcuni numeri da mettere a confronto. Come puoi vedere, Python può mettere a confronto non solo numeri, ma anche i risultati dei metodi. Forte, eh?
+Abbiamo dato a Python dei numeri da confrontare. Come puoi vedere, non solo Python può confrontare i numeri, ma può anche confrontare i valori delle espressioni matematiche come `2 * 2` e i risultati delle funzioni come `2` restituiti da `len([4, 5])`. "Bello, eh?"
 
 Ti sei chiesta perché abbiamo messo due simboli di uguale `==` uno vicino all'altro per confrontare i numeri? Usiamo un singolo `=` per assegnare valori alle variabili. Sempre, **sempre** devi mettere due `==` se vuoi controllare se le cose sono uguali. Possiamo affermare anche che le cose sono diverse tra di loro. Per dirlo, usiamo il simbolo `!=`, come mostrato nell'esempio sopra.
 
@@ -1063,7 +1065,7 @@ Nota che il secondo di questi due numeri non è incluso nella lista prodotta da 
 
 È tutto. **Sei grande!** Questo capitolo non era affatto facile, puoi essere orgogliosa di te stessa. Noi siamo fierissimi di te per avercela fatta fino a qui!
 
-Per il tutorial ufficiale e completo di python visita https://docs.python.org/3/tutorial/. Questo ti darà uno studio più completo e completo della lingua. Cheers :)
+Per il tutorial ufficiale e completo di python visita https://docs.python.org/3/tutorial/. Questo ti darà uno studio più completo e completo della lingua. Saluti! :)
 
 Potresti desiderare di fare brevemente qualcos'altro - stiracchiati, fai due passi, riposa gli occhi - prima di continuare con il prossimo capitolo. :)
 

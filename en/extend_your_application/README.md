@@ -19,13 +19,13 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
 
 {% block content %}
     {% for post in posts %}
-        <div class="post">
-            <div class="date">
+        <article class="post">
+            <time class="date">
                 {{ post.published_date }}
-            </div>
+            </time>
             <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
-        </div>
+        </article>
     {% endfor %}
 {% endblock %}
 ```
@@ -142,15 +142,15 @@ Enter the following code:
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <div class="post">
+    <article class="post">
         {% if post.published_date %}
-            <div class="date">
+            <time class="date">
                 {{ post.published_date }}
-            </div>
+            </time>
         {% endif %}
         <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    </article>
 {% endblock %}
 ```
 
@@ -172,7 +172,7 @@ It'd be good to see if your website still works on PythonAnywhere, right? Let's 
 {% filename %}command-line{% endfilename %}
 ```
 $ git status
-$ git add --all .
+$ git add .
 $ git status
 $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
 $ git push
@@ -207,4 +207,4 @@ The `manage.py collectstatic` command is a bit like `manage.py migrate`.  We mak
 
 In any case, we're now ready to hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (from the menu button in the upper right of the console) and hit **Reload**, and then look at the https://subdomain.pythonanywhere.com page to see the result.
 
-And that should be it! Congrats :)
+And that should be it. Congrats! :)

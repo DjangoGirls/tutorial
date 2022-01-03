@@ -159,7 +159,7 @@ Maintenant, nous allons pouvoir définir les propriétés dont nous parlions au 
 
 - `models.CharField` - Cela nous permet de définir un champ texte avec un nombre limité de caractères.
 - `models.TextField` - Cela nous permet de définir un champ text sans limite de caractères. Parfait pour le contenu d'un blog post, non ?
-- `models.DateTimeField` - Définit que le champ en question est une date ou une heure.
+- `models.DateTimeField` - Définit que le champ en question est un horodatage (date et heure).
 - `models.ForeignKey` - C'est un lien vers un autre modèle.
 
 Malheureusement, nous n'avons pas le temps de vous expliquer tous les bouts de code que nous allons manipuler dans ce tutoriel. Si vous voulez en savoir plus sur les modèles Django, n'hésitez pas à consulter la documentation officielle de Django (https://docs.djangoproject.com/en/2.2/ref/models/fields/#field-types).

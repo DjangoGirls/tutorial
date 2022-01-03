@@ -12,7 +12,7 @@ Ces trois endroits sont importants pour vous. Votre ordinateur local est l'endro
 
 # Git
 
-> **Note** Si vous avez déjà effectué l'installation, vous n'avez pas besoin de le re-faire: vous pouvez passer à la section suivante et commencer à créer votre dépôt Git.
+> **Note** Si vous avez déjà effectué [l'installation](../installation/README.md), il n'est pas nécessaire de la refaire : vous pouvez passer à la partie suivante et commencer à créer votre dépôt Git
 
 {% include "/deploy/install_git.md" %}
 
@@ -36,19 +36,47 @@ Git va surveiller les modifications faites à tous les fichiers et dossiers pré
 
 {% filename %}.gitignore{% endfilename %}
 
+    # Python
     *.pyc
     *~
-    /.vscode
     __pycache__
-    myvenv
+    
+    # Env
+    .env
+    myvenv/
+    venv/
+    
+    # Base de donnée
     db.sqlite3
-    /static
+    
+    # Dossier "static" à la racine du projet
+    /static/
+    
+    # macOS
+    ._*
     .DS_Store
+    .fseventsd
+    .Spotlight-V100
+    
+    # Windows
+    Thumbs.db*
+    ehthumbs*.db
+    [Dd]esktop.ini
+    $RECYCLE.BIN/
+    
+    # Visual Studio
+    .vscode/
+    .history/
+    *.code-workspace
+     
+    Text
+    XPath: /pre[2]/code
+    
     
 
 Enregistrez ce fichier sous le nom `.gitignore` dans votre répertoire principal "djangogirls".
 
-> **Attention** : le point au début du nom du fichier est important ! Si vous avez des difficultés à le faire (les Macs n'aiment pas que vous créiez des fichiers commençant par un point dans le Finder, par exemple), utilisez la fonction "Enregistrer sous" dans votre éditeur; ça marche toujours. N'ajoutez pas `.txt`, `.py`, ou d'autres extensions à la fin du nom. Git va reconnaitre le fichier seulement s'il porte le nom `.gitignore`.
+> **Attention** : le point au début du nom du fichier est important ! Si vous avez des difficultés à le faire (les Macs n'aiment pas que vous créiez des fichiers commençant par un point dans le Finder, par exemple), utilisez la fonction "Enregistrer sous" dans votre éditeur; ça marche toujours. N'ajoutez pas `.txt`, `.py`, ou d'autres extensions à la fin du nom. Git va reconnaitre le fichier seulement s'il porte le nom `.gitignore`. Linux et MacOS considèrent les fichiers commençant par `.` (comme `.gitignore`) comme étant cachés et la commande `ls` normale ne va pas montrer ces fichiers. Il faut utiliser `ls -a` pour voir le fichier `.gitignore`.
 > 
 > **Remarque** un de fichiers que vous avez spécifié dans votre fichier `.gitignore` est `db.sqlite3`. Ce fichier est votre base de données locale, où tous les utilisateurs et les articles que vous avez créés sont stockés. Suivant les bonnes pratiques du développement web, nous allons utiliser des bases de données distinctes pour votre site de test local et votre site Web en ligne sur PythonAnywhere. La base de données sur PythonAnywhere pourrait être du type SQLite, comme votre version locale. Normalement on lui préfèrerait une base de données du type MySQL, car capable de gérer un plus grand nombre de visiteurs. Quoi qu’il en soit, le fait que votre base de données SQLite soit ignorée lors de l'archivage sur GitHub implique que tous les messages et le superutilisateurs que vous avez créé jusqu'à présent ne seront disponibles que localement. Vous devrez les créer de nouveau en production. Vous devriez penser à votre base de données locale comme un terrain de jeux où vous pouvez tester différentes choses et ne pas avoir peur de supprimer vos messages réels sur votre blog.
 
@@ -77,8 +105,8 @@ Et pour finir, nous allons enregistrer nos modifications. Tapez ces commandes da
 
 {% filename %}command-line{% endfilename %}
 
-    $ git add --all .
-    $ git commit -m "Mon app Django Girls, premier commit"
+    $ git add .
+    $ git commit -m "My Django Girls app, first commit"
      [...]
      13 files changed, 200 insertions(+)
      create mode 100644 .gitignore
@@ -147,7 +175,7 @@ Pour déployer une application sur PythonAnywhere, vous devez y télécharger vo
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pip3.6 install --user pythonanywhere
+    $ pip3.8 install --user pythonanywhere
     
 
 Vous devriez voir quelque chose comme `Collecting pythonanywhere`, et au bout d'un moment une dernière ligne disant `Successfully installed (...) pythonanywhere-(...)`.
@@ -156,7 +184,7 @@ Maintenant, nous exécutez l'assistant pour configurer automatiquement votre app
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pa_autoconfigure_django.py --python=3.6 https://github.com/<your-github-username>/my-first-blog.git
+    $ pa_autoconfigure_django.py --python=3.8 https://github.com/<your-github-username>/my-first-blog.git
     
 
 En regardant la commande s'exécuter, vous devriez voir ce qui ce passe:
@@ -194,7 +222,7 @@ Vous pouvez également accéder à la page "Fichiers" et naviguer à l'aide du n
 
 ## Vous êtes désormais sur Internet !
 
-Votre site devrait désormais être accessible sur Internet ! Cliquez sur la page "Web" dans PythonAnywhere pour obtenir un lien. Vous pouvez partagez ce lien avec qui vous voulez :)
+Votre site devrait maintenant être accessible sur Internet ! Cliquez sur l'onglet "Web" dans PythonAnywhere pour y obtenir un lien. Vous pouvez partagez ce lien avec qui vous voulez. :)
 
 > **Note** Ce tutoriel est conçu pour les débutants, et pendant le déploiement on a pris quelques raccourcis qui, d'un point de vue de la sécurité, ne sont pas idéaux. Quand vous voudrez aller plus loin dans ce projet, ou commencer un nouveau projet, vous devriez consulter la [Checklist de déploiement pour Django](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) pour obtenir des conseils sur comment sécuriser votre site.
 

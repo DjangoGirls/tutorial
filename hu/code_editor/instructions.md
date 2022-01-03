@@ -8,11 +8,11 @@ A Gedit egy open-source (nyílt forráskódú), ingyenes kódszerkesztő, az ös
 
 [Letöltés](https://wiki.gnome.org/Apps/Gedit#Download)
 
-## Sublime Text 3
+## Sublime Text
 
 A Sublime Text egy nagyon népszerű editor, ingyenes próbaidővel. Könnyű telepíteni és használni, és minden operációs rendszeren elérhető.
 
-[Letöltés](https://www.sublimetext.com/3)
+[Letöltés](https://www.sublimetext.com/)
 
 ## Atom
 

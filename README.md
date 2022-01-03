@@ -11,7 +11,7 @@ The Django Girls Tutorial is licensed under a [*Creative Commons Attribution-Sha
 
 The source code of the tutorial is [hosted on GitHub](https://github.com/DjangoGirls/tutorial). The GitHub [Fork & Pull workflow](https://help.github.com/articles/using-pull-requests) is used to accept and review changes.
 
-The tutorial uses the [GitBook](https://legacy.gitbook.com/) service for publishing its documentation. [See more information about how GitBook works](https://help.gitbook.com/).
+The tutorial uses the [HonKit](https://github.com/honkit/honkit) project for publishing its documentation. [See more information about how HonKit works](https://honkit.netlify.app/).
 
 The tutorial is written in [Markdown mark up language](https://help.github.com/articles/markdown-basics).
 
@@ -60,15 +60,24 @@ Either use the GitHub app for your operating system (mentioned above) or `git` c
 
     git clone git@github.com:yourgithubusername/tutorial.git
 
+Move to the folder containing the project, to run the following commands.
+
+    cd tutorial
+
 Then, create a branch for your new changes to sit in. It helps to call the branch something related to the changes you are going to make.
 
     git checkout -b contributing
 
-Download the [GitBook Editor](https://legacy.gitbook.com/editor) app to your computer.
+Install the project's requirements using [`npm`](https://docs.npmjs.com/cli/v8/configuring-npm/install).
 
-Then you can open the tutorial in GitBook Editor (*File* > *Open book*).
+    npm install
 
-Make any changes in the tutorial using GitBook and then save changes (*Book* > *Save all*).
+To preview and serve local files, with auto-reload capabilities, run HonKit using:
+
+    npx honkit serve
+
+The local server will be available at http://localhost:4000.
+If auto-reload is slow, you can temporarily remove unwanted languages from `LANGS.md`, to speed up the process.
 
 Then commit the changes using `git` and push the changes to your remote GitHub repository.
 
@@ -96,8 +105,6 @@ Example:
     Total 5 (delta 1), reused 0 (delta 0)
     To git@github.com:miohtama/tutorial.git
        b37ca59..fe36152  contributing -> contributing
-
-If you don't want to download the GitBook Editor app you can also go to the [GitBook website](https://legacy.gitbook.com/), sign up for free and work directly in your browser.
 
 # Making a pull request
 

@@ -7,7 +7,7 @@ data-collapse=true ces-->
 
 Ты можешь загрузить Git с официального сайта [git-scm.com](https://git-scm.com/). Ты можешь нажимать "дальше, дальше, дальше" на всех этапах установки за исключением одного: на пятом шаге, который называется "Adjusting your PATH environment" (Настройка системной переменной Path), выбери "Use Git and optional Unix tools from the Windows Command Prompt" (Запуск Git и соответствующих Unix утилит через командную строку Windows, нижняя опция). Все остальные настройки можно оставить по умолчанию. Также неплохо будет выбрать опцию "Checkout Windows-style, commit Unix-style line endings".
 
-После окончания установки не забудь перезапустить командную строку или powershell.
+После окончания установки не забудь перезапустить командную строку или PowerShell.
 <!--endsec-->
 
 <!--sec data-title="OS X" data-id="git_install_OSX"

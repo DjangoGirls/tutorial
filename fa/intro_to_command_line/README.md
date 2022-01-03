@@ -118,7 +118,7 @@
     C:\Users\olasitarska
     
 
-> نکته: 'cd' مخفف 'change directory' به معنی 'دایرکتوری را عوض کن'. در نرم افزار powershell در ویندوز شما می‌توانید مانند لینوکس یا مک از دستور pwd استفاده کنید.
+> نکته: 'cd' مخفف 'change directory' به معنی 'دایرکتوری را عوض کن'. در نرم افزار PowerShell در ویندوز شما می‌توانید مانند لینوکس یا مک از دستور pwd استفاده کنید.
 
 <!--endsec-->
 
@@ -166,14 +166,14 @@ OS X و لینوکس یک فرمان `man` دارند که در مورد فرم�
 
     > dir
      Directory of C:\Users\olasitarska
-    05/08/2014 07:28 PM <DIR>      Applications
-    05/08/2014 07:28 PM <DIR>      Desktop
-    05/08/2014 07:28 PM <DIR>      Downloads
-    05/08/2014 07:28 PM <DIR>      Music
+    05/08/2020 07:28 PM <DIR>      Applications
+    05/08/2020 07:28 PM <DIR>      Desktop
+    05/08/2020 07:28 PM <DIR>      Downloads
+    05/08/2020 07:28 PM <DIR>      Music
     ...
     
 
-> نکته: در powershell شما می‌توانید مانند لینوکس یا Mac OS X از دستور 'ls' استفاده کنید.<!--endsec-->
+> نکته: در PowerShell شما می‌توانید مانند لینوکس یا Mac OS X از دستور 'ls' استفاده کنید.<!--endsec-->
 
 * * *
 
@@ -291,7 +291,7 @@ OS X و لینوکس یک فرمان `man` دارند که در مورد فرم�
     > cd practice
     > mkdir test
     > dir
-    05/08/2014 07:28 PM <DIR>      test
+    05/08/2020 07:28 PM <DIR>      test
     
 
 <!--endsec-->

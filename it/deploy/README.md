@@ -12,7 +12,7 @@ Questi tre servizi saranno importantissimi per te. Userai il tuo computer locale
 
 # Git
 
-> **Nota** Se hai giá eseguito i passagi di installazione, non é necessario eseguire nuovamente questa operazione - puoi andare alla sezione successiva e iniziare a creare il tuo repository Git.
+> **Nota** Se hai già terminato il processo di installazione, non é necessario eseguire nuovamente questa operazione. Puoi passare alla sezione successiva e iniziare a creare il tuo repository Git.
 
 {% include "/deploy/install_git.md" %}
 
@@ -36,14 +36,38 @@ Git memorizzerà le modifiche a tutti i file e le cartelle in questa directory, 
 
 {% filename %}.gitignore{% endfilename %}
 
+    # Python
     *.pyc
     *~
-    /.vscode
     __pycache__
-    myvenv
+    
+    # Env
+    .env
+    myvenv/
+    venv/
+    
+    # Database
     db.sqlite3
-    /static
+    
+    # Static folder at project root
+    /static/
+    
+    # macOS
+    ._*
     .DS_Store
+    .fseventsd
+    .Spotlight-V100
+    
+    # Windows
+    Thumbs.db*
+    ehthumbs*.db
+    [Dd]esktop.ini
+    $RECYCLE.BIN/
+    
+    # Visual Studio
+    .vscode/
+    .history/
+    *.code-workspace
     
 
 E salvalo come `.gitignore` all'interno della cartella "djangogirls".
@@ -77,7 +101,7 @@ E finalmente salviamo le nostre modifiche. vai alla tua console ed esegui questi
 
 {% filename %}command-line{% endfilename %}
 
-    $ git add --all .
+    $ git add .
     $ git commit -m "My Django Girls app, first commit"
      [...]
      13 files changed, 200 insertions(+)
@@ -131,7 +155,7 @@ Adesso Il tuo codice è su GitHub. Guarda! Lo troverai in buona compagnia - [Dja
 
 ## Crea un account PythonAnywhere
 
-> **Nota** Potresti aver già creato un account PythonAnywhere prima, durante la fase di istallazione - in questo caso, non c'è bisogno di crearlo di nuovo.
+> **Nota** Potresti aver già creato un account PythonAnywhere prima, durante la fase di installazione - in questo caso, non c'è bisogno di crearlo di nuovo.
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
@@ -147,7 +171,7 @@ Per implementare un'applicazione web su PythonAnywhere devi prendere il codice d
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pip3.6 install --user pythonanywhere
+    $ pip3.8 install --user pythonanywhere
     
 
 Ora dovresti leggere: `Collecting pythonanywhere` e un'eventuale riga finale che dice `Successfully installed (...) pythonanywhere- (...)`.
@@ -156,7 +180,7 @@ Ora eseguiamo l'helper per configurare automaticamente la nostra applicazione da
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
+    $ pa_autoconfigure_django.py --python=3.8 https://github.com/<your-github-username>/my-first-blog.git
     
 
 Guardando l'esecuzione, potrai vedere cosa sta facendo:
@@ -194,7 +218,7 @@ Puoi anche andare alla pagina "File" e navigare in uso del browser di file integ
 
 ## Ora sei online!
 
-Il tuo sito dovrebbe ora essere online pubblicamente su Internet! Clicca sulla pagina PythonAnywhere "Web" per ottenere un link. Puoi condividerlo con chiunque tu voglia :)
+Ora il tuo sito dovrebbe essere stato pubblicato online! Clicca sulla pagina PythonAnywhere per ottenere un link. Puoi condividerlo con chiunque tu voglia :)
 
 > **Nota** Questo è un tutorial per principianti, e nel distribuire questo sito abbiamo preso alcune scorciatoie che non sono ideali dal punto di vista della sicurezza. Se e quando decidi di usare questo progetto in produzione, oppure di avviare un nuovo progetto, dovresti controllare la [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) per alcuni consigli di sicurezza del tuo sito.
 

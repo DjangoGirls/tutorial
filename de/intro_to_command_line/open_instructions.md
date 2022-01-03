@@ -1,3 +1,4 @@
+
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
 Abhängig von deiner Windows-Version und deiner Tastatur sollte eine der folgenden Methoden ein Kommandozeilen-Fenster öffnen (du musst vielleicht etwas herumexperimentieren, aber du musst nicht jeden dieser Vorschläge ausprobieren):

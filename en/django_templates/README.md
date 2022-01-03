@@ -19,7 +19,7 @@ To print a variable in Django templates, we use double curly brackets with the v
 {{ posts }}
 ```
 
-Try this in your `blog/templates/blog/post_list.html` template. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
+Try this in your `blog/templates/blog/post_list.html` template. Open it up in the code editor, and replace the existing `<article>` elements with `{{ posts }}`. Save the file, and refresh the page to see the results:
 
 ![Figure 13.1](images/step1.png)
 
@@ -47,16 +47,16 @@ It works! But we want the posts to be displayed like the static posts we created
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
-<div>
+<header>
     <h1><a href="/">Django Girls Blog</a></h1>
-</div>
+</header>
 
 {% for post in posts %}
-    <div>
-        <p>published: {{ post.published_date }}</p>
+    <article>
+        <time>published: {{ post.published_date }}</time>
         <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    </article>
 {% endfor %}
 ```
 
@@ -77,7 +77,7 @@ It'd be good to see if your website will still be working on the public Internet
 ```
 $ git status
 [...]
-$ git add --all .
+$ git add .
 $ git status
 [...]
 $ git commit -m "Modified templates to display posts from database."

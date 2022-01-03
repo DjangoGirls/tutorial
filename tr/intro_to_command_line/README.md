@@ -171,7 +171,7 @@ Yani içeride ne var? Bilmek harika olurdu. Haydi bakalım:
     ...
     
 
-> Not: Ayrıca powershell kullanırken Linux ve Mac OS X'teki gibi 'ls' komutunu kullanabilirsiniz. <!--endsec-->
+> Not: Ayrıca PowerShell kullanırken Linux ve Mac OS X'teki gibi 'ls' komutunu kullanabilirsiniz. <!--endsec-->
 
 * * *
 

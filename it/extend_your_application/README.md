@@ -18,16 +18,16 @@ Cominceremo aggiungendo un link all'interno del file `blog/templates/blog/post_l
 {% extends 'blog/base.html' %}
 
 {% block content %}
-     {% for post in posts %}
-         <div class="post">
-             <div class="date">
-                 {{ post.published_date }}
-             </div>
-             <h2><a href="">{{ post.title }}</a></h2>
-             <p>{{ post.text|linebreaksbr }}</p>
-         </div>
-     {% endfor %}
- {% endblock %}
+    {% for post in posts %}
+        <article class="post">
+            <time class="date">
+                {{ post.published_date }}
+            </time>
+            <h2><a href="">{{ post.title }}</a></h2>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </article>
+    {% endfor %}
+{% endblock %}
 ```
 
 {% raw %}Vogliamo creare un link che dal titolo di un post facente parte dell'elenco di articoli porti alla pagina di dettaglio. Cambiamo `<h2><a href="">{{ post.title }}</a></h2>` così che linki alla pagina di dettaglio del post:{% endraw %}
@@ -148,15 +148,15 @@ Inserisci il codice seguente:
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <div class="post">
+    <article class="post">
         {% if post.published_date %}
-            <div class="date">
+            <time class="date">
                 {{ post.published_date }}
-            </div>
+            </time>
         {% endif %}
         <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    </article>
 {% endblock %}
 ```
 
@@ -177,7 +177,7 @@ Sarebbe bello vedere se il tuo sito web funziona ancora su PythonAnywhere, giust
 {% filename %}command-line{% endfilename %}
 
     $ git status
-    $ git add --all .
+    $ git add .
     $ git status
     $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
     $ git push
@@ -211,4 +211,4 @@ Il comando `manage.py collectstatic` è un po' come `manage.py migrate`. Facciam
 
 In ogni caso, siamo pronti a salire sulla pagina [ "Web"](https://www.pythonanywhere.com/web_app_setup/) (dal pulsante menu in alto a destra della console) e colpire **Ricarica**, e poi guarda la pagina https://subdomain.pythonanywhere.com per vedere il risultato.
 
-Fatto! Congratulazioni :)
+Ecco fatto! Congratulazioni!

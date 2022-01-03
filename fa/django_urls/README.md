@@ -56,8 +56,8 @@ urlpatterns = [
 {% filename %}mysite/urls.py{% endfilename %}
 
 ```python
-from django.contrib import path, include
-from django.urls import admin
+from django.contrib import admin
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),

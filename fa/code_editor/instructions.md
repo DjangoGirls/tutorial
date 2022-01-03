@@ -14,11 +14,11 @@ Gedit یک نرم افزار آزاد و یک ویرایشگر رایگان اس
 
 [از اینجا دانلود کنید](https://wiki.gnome.org/Apps/Gedit#Download)
 
-## Sublime Text 3
+## Sublime Text
 
 Sublime Text یک ویرایشگر بسیار رایج است که یک دوره آزمایشی رایگان دارد و برای تمام سیستم عامل‌ها موجود است.
 
-[جهت دانلود کلیک نمایید](https://www.sublimetext.com/3)
+[جهت دانلود کلیک نمایید](https://www.sublimetext.com/)
 
 ## Atom
 

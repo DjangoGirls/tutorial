@@ -7,7 +7,7 @@ data-collapse=true ces-->
 
 برای نصب گیت می‌توانید آن را از [git-scm.com](https://git-scm.com/) دانلود کنید. همه جا میتوانید کلید next را بزنید به غیر از دو جا: جایی که در مورد ویرایشگر متن از شما می‌پرسد شما باید ویرایشگر Nano را انتخاب کنید و در مرحله‌ای که عنوان آن "Adjusting your PATH environment" است، گزینه "Use Git and optional Unix tools from the Windows Command Prompt" (گزینه آخر) را انتخاب کنید. در بقیه موارد، پیش فرض‌ها مناسب هستند. گزینه "Checkout Windows-style, commit Unix-style line endings" را انتخاب کنید.
 
-فراموش نکنید که بعد از اینکه نصب به پایان رسید command prompt یا powershell را از نو باز کنید. <!--endsec-->
+فراموش نکنید که بعد از اینکه نصب به پایان رسید command prompt یا PowerShell را از نو باز کنید. <!--endsec-->
 
 <!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->
