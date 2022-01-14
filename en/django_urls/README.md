@@ -93,10 +93,23 @@ The last part, `name='post_list'`, is the name of the URL that will be used to i
 
 If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'web page not available' message. This is because the server (remember typing `runserver`?) is no longer running. Take a look at your server console window to find out why.
 
-![Error](images/error1.png)
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
+
+```
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/ola/djangogirls/blog/urls.py", line 5, in <module>
+    path('', views.post_list, name='post_list'),
+AttributeError: module 'blog.views' has no attribute 'post_list'
+```
 
 Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is __no attribute 'post_list'__. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage, your `/admin/` will also not work. No worries – we will get there.
 If you see a different error message, try restarting your web server. To do that, in the console window that is running the web server, stop it by pressing Ctrl+C (the Control and C keys together). On Windows, you might have to press Ctrl+Break. Then you need to restart the web server by running a `python manage.py runserver` command.
 
 
-> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/2.2/topics/http/urls/
+> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/3.2/topics/http/urls/
