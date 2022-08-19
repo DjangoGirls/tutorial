@@ -8,11 +8,11 @@ Gedit 是开源、免费的编辑器，支持所有操作系统。
 
 [在这里下载](https://wiki.gnome.org/Apps/Gedit#Download)
 
-## Sublime Text 3编辑器
+## Sublime Text编辑器
 
 Sublime Text 是一个很受欢迎的、免费试用的编辑器。它很容易安装和使用，并且支持所有操作系统。
 
-[在这里下载](https://www.sublimetext.com/3)
+[在这里下载](https://www.sublimetext.com/)
 
 ## Atom编辑器
 

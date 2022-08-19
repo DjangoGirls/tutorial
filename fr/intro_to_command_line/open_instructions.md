@@ -1,3 +1,4 @@
+
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
 Une des procédures suivantes, selon votre version de Windows et votre clavier, devrait vous permettre d'ouvrir l'invite de commande (il est possible que vous deviez vous débrouiller un peu jusqu'à ce que vous trouvez la bonne) :

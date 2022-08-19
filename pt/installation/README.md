@@ -19,13 +19,14 @@ Se você está participando de uma oficina de um [ Evento Django Girls ](https:/
 Neste tutorial, você irá criar um blog. Para fazer isso, ao longo do tutorial você receberá instruções de como instalar diversos programas no seu computador e configurar algumas contas online conforme necessário. Esta página reune as instruções de instalação e registro em um só lugar (o que vai ser útil para a alguns formatos de workshop).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
-data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
+data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %}
 
 <!--endsec-->
 
 # Breve introdução à linha de comando
 
-Vários dos passos abaixos referenciam o "console", "terminal", "janela de comandos", ou "linha de comandos" - todos significam a mesma coisa: uma janela no seu computador onde você pode inserir comandos. Quando você chegar ao tutorial principal, você irá aprender mais sobre a linha de comandos. Por agora, a coisa principal que você precisará saber é como abrir uma janela de comandos e como ela se parece: {% include "/intro_to_command_line/open_instructions.md" %}
+Vários dos passos abaixos referenciam o "console", "terminal", "janela de comandos", ou "linha de comandos" - todos significam a mesma coisa: uma janela no seu computador onde você pode inserir comandos. Quando você chegar ao tutorial principal, você irá aprender mais sobre a linha de comandos. Por agora, a coisa principal que você precisará saber é como abrir uma janela de comandos e como ela se parece:
+{% include "/intro_to_command_line/open_instructions.md" %}
 
 # Instale o Python
 

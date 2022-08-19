@@ -19,13 +19,14 @@ Se stai partecipando a uno degli [eventi Django Girls](https://djangogirls.org/e
 In questo tutorial costruirai un blog. Per farlo, mentre vai nel tutorial, sarai informato su come installare vari software sul tuo computer e impostare alcuni account online come sono necessari. Questa pagina raccoglie tutte le istruzioni di installazione e iscrizione in un unico luogo (che è utile per alcuni formati di workshop).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
-data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
+data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %}
 
 <!--endsec-->
 
 # Breve introduzione alla linea di comando {#command-line}
 
-Molti dei passaggi qui sotto fanno riferimento alla "console", "terminal", "finestra di comando", o "linea di comando" - tutto questo significa la stessa cosa: una finestra sul tuo computer dove puoi inserire comandi. Quando arriverai al tutorial principale, imparerai di più sulla linea di comando. Per ora, la cosa principale che devi sapere è come aprire una finestra di comando e come sembra: {% include "/intro_to_command_line/open_instructions.md" %}
+Molti dei passaggi qui sotto fanno riferimento alla "console", "terminal", "finestra di comando", o "linea di comando" - tutto questo significa la stessa cosa: una finestra sul tuo computer dove puoi inserire comandi. Quando arriverai al tutorial principale, imparerai di più sulla linea di comando. Per ora, la cosa principale che devi sapere è come aprire una finestra di comando e come sembra:
+{% include "/intro_to_command_line/open_instructions.md" %}
 
 # Installa Python {#python}
 
@@ -43,11 +44,11 @@ Molti dei passaggi qui sotto fanno riferimento alla "console", "terminal", "fine
 
 {% include "/deploy/install_git.md" %}
 
-# Crea un profilo di GitHub {#github}
+# Crea un profilo di GitHub {#github-account}
 
 Vai su [GitHub.com](https://www.github.com) e crea un nuovo account gratuito. Assicurati di ricordare la tua password (aggiungila al tuo password manager, se ne usi uno).
 
-# Crea un profilo di PythonAnywhere {#pythonanywhere}
+# Crea un profilo di PythonAnywhere {#pythonanywhere-account}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 

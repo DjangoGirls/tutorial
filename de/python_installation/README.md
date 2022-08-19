@@ -10,6 +10,6 @@ Python entstand in den späten 1980ern mit dem Hauptziel, von Menschen lesbar zu
 
 > **Hinweis** Wenn du ein Chromebook verwendest, überspringe bitte dieses Kapitel und folge den Anweisungen im Kapitel [Chromebook Installation](../chromebook_setup/README.md).
 > 
-> **Hinweis:** Wenn du die Installation bereits hinter dir hast, gibt es keinen Grund dies erneut zu tun - du kannst direkt zum nächsten Kapitel springen!
+> **Hinweis:** Falls du dich bereits durch die [Installationsschritte](../installation/README.md) gearbeitet hast, gibt es keinen Grund dies erneut zu tun – du kannst direkt zum nächsten Kapitel springen!
 
 {% include "/python_installation/instructions.md" %}

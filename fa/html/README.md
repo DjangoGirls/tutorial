@@ -40,6 +40,7 @@ HTML مخفف عبارت "HyperText Markup Language" است. **HyperText** به 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
 <body>
     <p>Hi there!</p>
@@ -52,9 +53,10 @@ HTML مخفف عبارت "HyperText Markup Language" است. **HyperText** به 
 
 ![تصویر 11.2](images/step3.png)
 
-کار می‌کند! خوب شد :)
+کار می‌کند! خوب شد! :)
 
-* `<html>` پایه‌ای ترین تگ و معمولاً اولین تگ در ابتدای صفحه است و تگ `</html>` معمولاً در انتهای صفحه می‌آید. همانطور که می‌بینید، تمام محتوای وبسایت بین تگ `<html>` در ابتدا و تگ `</html>` در انتها قرار می‌گیرند
+* خط `<!DOCTYPE html>` یک تگ HTML نیست. این عبارت فقط نوع فایل را مشخص می‌کند. در اینجا این عبارت به مرورگر اعلام می‌کند که نوع فایل [HTML5](https://html.spec.whatwg.org/#the-doctype) است. همیشه شروع هر نوع فایل HTML5 با همین عبارت شروع می‌شود.
+* `<html>` پایه‌ای‌ترین تگ و معمولاً اولین تگ در ابتدای صفحه است و تگ `</html>` معمولاً در انتهای صفحه می‌آید. همانطور که می‌بینید، تمام محتوای وبسایت بین تگ `<html>` در ابتدا و تگ `</html>` در انتها قرار می‌گیرند
 * تگ `<p>` برای پاراگراف‌ها به کار می‌رود و تگ `</p>` پایان هر پاراگراف را مشخص می‌کند
 
 ## Head and body
@@ -72,6 +74,7 @@ HTML مخفف عبارت "HyperText Markup Language" است. **HyperText** به 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Ola's blog</title>
@@ -109,40 +112,49 @@ HTML مخفف عبارت "HyperText Markup Language" است. **HyperText** به 
 * `<a href="https://djangogirls.org">لینک</a>` یک لینک می‌سازد
 * `<ul><li>آیتم اول</li><li>آیتم دوم</li></ul>` یک لیست، دقیقاً مانند همین لیست درست می‌کند!
 * `<div></div>` یک بخش جدید در صفحه تعریف می‌کند
+* `<nav></nav>` مجموعه‌ای از لینک‌های دسترسی را تعریف می‌کند
+* `<article></article>`محتوای مستقل و فارق از محیط را مشخص می‌کند
+* `<section></section>` یک بخش را در فایل مشخص می‌کند
+* `<header></header>` بخش سربرگ یک صفحه را مشخص می‌کند
+* `<main></main>` بخش محتوای اصلی صفحه را مشخص می‌کند
+* `<aside></aside>` محتوای جانبی نسبت به جایی که در آن قرار گرفته را مشخص می‌کند (مانند منوی کناری)
+* `<footer></footer>` بخش پاورقی یک سند را مشخص می‌کند
+* `<time></time>` بک زمان (یا تاریخ و زمان) را مشخص می‌کند
 
 اینجا نمونه‌ای از یک تمپلیت کامل داریم. آن را در فایل `blog/templates/blog/post_list.html` کپی کنید:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
     </head>
     <body>
-        <div>
+        <header>
             <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+        </header>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
             <h2><a href="">My first post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
+        </article>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
             <h2><a href="">My second post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
+        </article>
     </body>
 </html>
 ```
 
-ما سه بخش با تگ `div` ساخته‌ایم.
+ما اینجا یک بخش `header` و دو بخش 0>article</code> ایجاد کردیم.
 
-* اولین عنصر `div`، شامل عنوان وبلاگ یعنی یک تیتر و یک لینک، است
-* دو عنصر `div` بعدی شامل یک پست وبلاگی و تاریخ انتشار آن است. تگ `h2` با عنوان پست و قابل کلیک کردن و دوتا تگ متنی `p` که یکی برای تاریخ است و دیگری برای متن پست وبلاگ ما.
+* بخش `header` شامل عنوان مقاله وبلاگ ماست - یک عنوان و یک لینک
+* دو عنصر `article` شامل پست‌های وبلاگ ما به همراه تاریخ انتشار در یک عنصر `time`، یک عنصر`h2` با عنوان مقاله که قابل کلیک کردن است و عنصر `p` (paragraph) که برای متن مقاله استفاده شده است.
 
 چنین نتیجه ای به ما می‌دهد:
 
@@ -169,10 +181,8 @@ HTML مخفف عبارت "HyperText Markup Language" است. **HyperText** به 
 
 {% filename %}خط فرمان{% endfilename %}
 
-    $ git add --all .
+    $ git add .
     
-
-> **نکته**: `--all` به معنی آن است که `git` حتی اگر فایلی را هم پاک کرده باشید متوجه آن می‌شود (در حالت عادی فقط فایل‌های جدید و فایل‌های تغییر کرده را دنبال می‌‎کند). همچنین به یاد داشته باشید (از بخش 3) که `.` (نقطه) به معنی دایرکتوری جاری است.
 
 قبل از آنکه همه فایل‌ها را آپلود کنیم بگذارید ببینیم که `گیت` چه فایل‌هایی را آپلود خواهد کرد (تمام فایل‌هایی که `گیت` آپلود خواهد کرد الان سبز رنگ دیده می‌شوند):
 
@@ -188,7 +198,7 @@ HTML مخفف عبارت "HyperText Markup Language" است. **HyperText** به 
     $ git commit -m "Changed the HTML for the site."
     
 
-> **نکته** مطمئن بشوید که از دابل کوت (" ") در دو طرف پیغام استفاده کنید.
+> **نکته** مطمئن باشید که از علامت نقل قول دوتایی در اطراف پیغام مربوط به کامیت استفاده کنید.
 
 وقتی این کار را انجام دادیم تغییرات را در گیتهاب آپلود (push) می‌کنیم:
 

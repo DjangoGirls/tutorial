@@ -19,13 +19,14 @@ Jeśli uczestniczysz w wydarzeniu Django Girls:
 Na tych warsztatach będziesz budować blog. W tym celu, podczas przechodzenia przez tutorial, zostaniesz poinstruowana, jak zainstalować na Twoim komputerze różnego rodzaju oprogramowanie i jak skonfigurować kilka kont online, które będą Ci potrzebne. Ta strona zbiera wszystkie instrukcje dotyczące instalacji i rejestracji w jednym miejscu (co jest przydatne w niektórych formach warsztatów).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
-data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
+data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %}
 
 <!--endsec-->
 
 # Krótkie wprowadzenie do wiersza polecenia
 
-Wiele z poniższych kroków odnosi się do "konsoli", "terminala", "wiersza poleceń" lub "linii poleceń" - wszystkie one oznaczają to samo: okno na komputerze, w którym można wprowadzać polecenia. Gdy dojdziesz do głównego tutoriala, dowiesz się więcej o wierszu polecenia. Na razie najważniejszą rzeczą jaką musisz wiedzieć to to, jak otworzyć okno wiersza polecenia i jak ono wygląda: {% include "/intro_to_command_line/open_instructions.md" %}
+Wiele z poniższych kroków odnosi się do "konsoli", "terminala", "wiersza poleceń" lub "linii poleceń" - wszystkie one oznaczają to samo: okno na komputerze, w którym można wprowadzać polecenia. Gdy dojdziesz do głównego tutoriala, dowiesz się więcej o wierszu polecenia. Na razie najważniejszą rzeczą jaką musisz wiedzieć to to, jak otworzyć okno wiersza polecenia i jak ono wygląda:
+{% include "/intro_to_command_line/open_instructions.md" %}
 
 # Zainstaluj Pythona
 
@@ -33,7 +34,7 @@ Wiele z poniższych kroków odnosi się do "konsoli", "terminala", "wiersza pole
 
 # Zainstaluj edytor kodu
 
-{% include "/code_editor/instructions.md" %} 
+{% include "/code_editor/instructions.md" %}
 
 # Utwórz środowisko wirtualne i zainstaluj Django
 

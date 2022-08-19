@@ -23,31 +23,32 @@ data-id="chromebook_setup" data-collapse=true ces-->
 {% include "/chromebook_setup/instructions.md" %}
 <!--endsec-->
 
-# Breve introducción a la línea de comandos
+# Breve introducción a la línea de comandos {#command-line}
 
-Muchos de los pasos citados abajo hacen referencia a la "consola", "terminal", "ventana de comandos", o "línea de comandos" -- todos éstos términos significan la misma cosa: una ventana en tu computadora donde puedes introducir comandos. Cuando estés en el tutorial principal, aprenderás más acerca de la línea de comandos. Por ahora, la parte principal que necesitas es saber cómo abrir una ventana de comandos y cómo luce: {% include "/intro_to_command_line/open_instructions.md" %}
+Muchos de los pasos citados abajo hacen referencia a la "consola", "terminal", "ventana de comandos", o "línea de comandos" -- todos éstos términos significan la misma cosa: una ventana en tu computadora donde puedes introducir comandos. Cuando estés en el tutorial principal, aprenderás más acerca de la línea de comandos. Por ahora, la parte principal que necesitas es saber cómo abrir una ventana de comandos y cómo luce:
+{% include "/intro_to_command_line/open_instructions.md" %}
 
-# Instalar Python
+# Instalar Python {#python}
 
 {% include "/python_installation/instructions.md" %}
 
-# Instala un Editor de Código
+# Instala un Editor de Código {#code-editor}
 
 {% include "/code_editor/instructions.md" %}
 
-# Configura el entorno virtual (virtualenv) e instala Django
+# Configura el entorno virtual (virtualenv) e instala Django {#virtualenv}
 
 {% include "/django_installation/instructions.md" %}
 
-# Instalar Git
+# Instalar Git {#git}
 
 {% include "/deploy/install_git.md" %}
 
-# Crear una cuenta de GitHub
+# Crear una cuenta de GitHub {#github-account}
 
 Ve a [GitHub.com](https://www.github.com) y regístrate con una nueva y gratuita cuenta de usuario. Asegúrate de recordar tu contraseña (añádela a tu gestor de contraseñas, si usas uno).
 
-# Crear una cuenta de PythonAnywhere
+# Crear una cuenta de PythonAnywhere {#pythonanywhere-account}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 

@@ -1,3 +1,4 @@
+
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
 Կախված Windows- ի ձեր տարբերակից և ստեղնաշարից, հետևյալներից որևէ մեկը պետք է հրամանի պատուհան բացի (գուցե մի քիչ փորձեր կատարեք, բայց բոլոր տարբերակները փորձելու կարիք չկա).
@@ -6,7 +7,7 @@
 - Անցեք Սկսելու ցանկը/Start menu→Windows System → Command Prompt/ հրամանի տող:
 - Անցեք Start menu /Սկսելու ցանկը → All Programs / Բոլոր ծրագրերը → Accessories/Աքսեսուարներ → Command Prompt /Հրամանի տող:
 - Անցեք Start screen, ձեր մկնիկը տարեք էկրանի ստորին ձախ անկյունի վրա և կտտացրեք այնտեղ հայտնվող դեպի ներքև ուղված սլաքին: (Եթե ունեք սենսորային էկրան, մատը սահեցրեք ներքևից վերև): Հավելվածների էջը պետք է բացվի: Windows համակարգի բաժնում/Windows System section ընտրեք Command Prompt-ը/ հրամանի տողը:
-- Ձեր ստեղնաշարի վրա սեղմած պահելով Windows ստեղնը սեղմեք X: Հայտնվող ընտրացանկում ընտրեք «Command Prompt/Հրամանի տող»-ը: 
+- Ձեր ստեղնաշարի վրա սեղմած պահելով Windows ստեղնը սեղմեք X: Հայտնվող ընտրացանկում ընտրեք «Command Prompt/Հրամանի տող»-ը:
 - Ձեր ստեղնաշարի վրա սեղմած պահելով Windows ստեղնը սեղմեք "R" ՝ Run պատուհանը վեր հանելու համար: Տողում մուտքագրեք "cmd" և կտտացրեք OK:
 
 ![Մուտքագրեք  "cmd"  "Run"  պատուհանում](../python_installation/images/windows-plus-r.png)
@@ -17,7 +18,7 @@
 
 <!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
 
-Գնացեք Applications → Utilities/Կոմունալ ծառայություններ → Terminal /Տերմինալ: 
+Գնացեք Applications → Utilities/Կոմունալ ծառայություններ → Terminal /Տերմինալ:
 
 <!--endsec-->
 

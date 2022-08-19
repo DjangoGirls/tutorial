@@ -29,8 +29,26 @@ Initialized empty Git repository in ~/djangogirls/.git/
 $ git config --global user.name "Your Name"
 $ git config --global user.email you@example.com
 ```
-
 Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email ever again).
+
+### Adjusting your branch name
+
+If the version of Git that you are using is older than **2.28**, you will need to change the name of your branch to "main". To determine the version of Git, please enter the following command:
+
+{% filename %}command-line{% endfilename %}
+```
+$ git --version
+git version 2.xx...
+```
+
+Only if the second number of the version, shown as "xx" above, is less than 28, will you need to enter the following command to rename your branch. If it is 28 or higher, please continue to "Ignoring files". As in "Initializing", this is something we need to do only once per project, as well as only when your version of Git is less than 2.28:
+
+{% filename %}command-line{% endfilename %}
+```
+$ git branch -M main
+```
+
+### Ignoring files
 
 Git will track changes to all the files and folders in this directory, but there are some files we want it to ignore. We do this by creating a file called `.gitignore` in the base directory. Open up your editor and create a new file with the following contents:
 
@@ -84,7 +102,7 @@ It's a good idea to use a `git status` command before `git add` or whenever you 
 {% filename %}command-line{% endfilename %}
 ```
 $ git status
-On branch master
+On branch main
 
 No commits yet
 
@@ -130,12 +148,12 @@ On the next screen, you'll be shown your repo's clone URL, which you will use in
 
 Now we need to hook up the Git repository on your computer to the one up on GitHub.
 
-Type the following into your console (replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets -- the URL should match the clone URL you just saw):
+Type the following into your console (replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets -- the URL should match the clone URL you just saw).
 
 {% filename %}command-line{% endfilename %}
 ```
 $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git
-$ git push -u origin master
+$ git push -u origin main
 ```
 
 When you push to GitHub, you'll be asked for your GitHub username and password (either right there in the command-line window or in a pop-up window), and after entering credentials you should see something like this:
@@ -146,8 +164,8 @@ Counting objects: 6, done.
 Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
 To https://github.com/ola/my-first-blog.git
- * [new branch]      master -> master
-Branch master set up to track remote branch master from origin.
+ * [new branch]      main -> main
+Branch main set up to track remote branch main from origin.
 ```
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->

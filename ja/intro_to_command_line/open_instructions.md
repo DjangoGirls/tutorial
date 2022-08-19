@@ -1,3 +1,4 @@
+
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
 使用しているWindowsのバージョンとキーボードによりますが、以下のいずれかの方法でコマンドラインを開けるはずです(いくつか試す必要があるかもしれませんが、これらの方法のすべてを試す必要はありません):

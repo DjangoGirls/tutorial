@@ -19,13 +19,13 @@
 
 {% block content %}
     {% for post in posts %}
-        <div class="post">
-            <div class="date">
+        <article class="post">
+            <time class="date">
                 {{ post.published_date }}
-            </div>
+            </time>
             <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
-        </div>
+        </article>
     {% endfor %}
 {% endblock %}
 ```
@@ -148,15 +148,15 @@ def post_detail(request, pk):
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <div class="post">
+    <article class="post">
         {% if post.published_date %}
-            <div class="date">
+            <time class="date">
                 {{ post.published_date }}
-            </div>
+            </time>
         {% endif %}
         <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    </article>
 {% endblock %}
 ```
 
@@ -177,7 +177,7 @@ def post_detail(request, pk):
 {% filename %}خط فرمان{% endfilename %}
 
     $ git status
-    $ git add --all .
+    $ git add .
     $ git status
     $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
     $ git push
@@ -211,4 +211,4 @@ def post_detail(request, pk):
 
 به هرحال، الان ما آماده هستیم، به سراغ ["Web" page](https://www.pythonanywhere.com/web_app_setup/) بروید (از طریق دکمه menu در گوشه بالا و سمت راست کنسول) و دکمه **Reload** را بزنید و سپس به صفحه https://subdomain.pythonanywhere.com نگاه کنید تا نتیجه را ببینید.
 
-به نتیجه رسید! تبریک :)
+به نتیجه رسید! تبریک! :)

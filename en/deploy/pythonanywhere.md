@@ -3,7 +3,6 @@
 ## Sign up for a PythonAnywhere account
 
 > **Note** You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
-
 {% include "/deploy/signup_pythonanywhere.md" %}
 
 
@@ -14,7 +13,6 @@ Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) 
 ![The 'New Console' section on the PythonAnywhere web interface, with a button for 'bash'](images/pythonanywhere_bash_console.png)
 
 > **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
-
 Deploying a web app on PythonAnywhere involves pulling down your code from GitHub, and then configuring PythonAnywhere to recognise it and start serving it as a web application.  There are manual ways of doing it, but PythonAnywhere provides a helper tool that will do it all for you. Let's install it first:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
@@ -70,8 +68,7 @@ You can also go to the "Files" page and navigate around using PythonAnywhere's b
 Your site should now be live on the public Internet!  Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want. :)
 
 
-> **Note** This is a beginners' tutorial, and in deploying this site we've taken a few shortcuts which aren't ideal from a security point of view.  If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) for some tips on securing your site.
-
+> **Note** This is a beginners' tutorial, and in deploying this site we've taken a few shortcuts which aren't ideal from a security point of view.  If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/) for some tips on securing your site.
 
 ## Debugging tips
 
