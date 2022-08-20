@@ -20,22 +20,29 @@ help:
 	@echo
 	@echo "Usage: make command [LANG=<language_short_code>]"
 	@echo
-	@echo "    LANG : Language short codes are found in LANGS.md. Default is 'en'(English)."
-	@echo "           ( Refer $(LANG_FILE) for short codes of Languages avaiable. )"
+	@echo "    LANG: Language shortcodes are found in LANGS.md. Default is 'en'(English)."
+	@echo "           ( Refer $(LANG_FILE) for shortcodes of Languages available. )"
 	@echo
 	@echo "Commands:"
 	@echo "  help      - Display make command list."
-	@echo "  dev       - Setup project and start the development server with debugging enabled."
-	@echo "  check     - Check for root directory for various dependencies."
+	@echo "  dev       - Setup the project and start the development server with debugging enabled."
+	@echo "  check     - Check for the root directory for various dependencies."
 	@echo "  setup     - Setup the temporary language and install node dependencies for the development."
 	@echo "  build     - Build the honkit project."
 	@echo "  build-dev - Build the honkit project with debug log."
 	@echo "  serve     - Start honkit server locally for development."
-	@echo "  pdf       - Generate PDF version of DjangoGirls tutorial."
-	@echo "  epub      - Generate EPUB version of DjangoGirls tutorial."
-	@echo "  mobi      - Generate MOBI version of DjangoGirls tutorial."
+	@echo "  pdf       - Generate the PDF version of DjangoGirls tutorial."
+	@echo "  epub      - Generate the EPUB version of DjangoGirls tutorial."
+	@echo "  mobi      - Generate the MOBI version of DjangoGirls tutorial."
 	@echo "  mode      - Shows the development mode status."
 	@echo "  exit      - Exit development mode."
+	@echo
+	@echo "Example:"
+	@echo
+	@echo "$$ make dev LANG=es"
+	@echo
+	@echo "The above command will start the development server using the language Español."
+	@echo "'LANG' argument is only required the first time until the exit command is executed."
 	@echo
 
 node_modules:
