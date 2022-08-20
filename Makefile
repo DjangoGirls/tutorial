@@ -2,6 +2,7 @@ LANG      := en
 LANG_FILE := $(shell test -f LANGS.md.bak && echo LANGS.md.bak || echo LANGS.md)
 LANG_DATA := $(shell grep "$(LANG)/" $(LANG_FILE))
 LANG_NAME := $(shell echo "$(LANG_DATA)" | sed 's/.*\[\(.*\)\].*/\1/')
+NODE      := $(shell which nodse 1> /dev/null && echo "true")
 
 define ebook_support
 	@if which ebook-convert 1> /dev/null; then\
@@ -22,7 +23,7 @@ help:
 	@echo "  help      - Display make command list."
 	@echo "  dev       - Setup project and start the development server with debugging enabled."
 	@echo "  check     - Check for root directory for various dependencies."
-	@echo "  setup     - Setup the temporary language and install node dependencies for the development. Default is 'en'"
+	@echo "  setup     - Setup the temporary language and install node dependencies for the development."
 	@echo "  build     - Build the honkit project."
 	@echo "  build-dev - Build the honkit project with debug log."
 	@echo "  serve     - Start honkit server locally for development."
@@ -31,11 +32,12 @@ help:
 	@echo "  mobi      - Generate MOBI version of DjangoGirls tutorial."
 	@echo "  mode      - Shows the development mode status."
 	@echo "  exit      - Reset the project and exit development mode."
+	@echo
 
 check: package.json book.json LANGS.md
-	@if ! which node 1> /dev/null; then\
-		echo "Node.js not found. Please install/reinstall Node.js. NVM is recommended for installation(https://github.com/nvm-sh/nvm).";\
-	fi
+ifeq ($(NODE),)
+	$(error NodeJS not found. Please install/reinstall Node.js. NVM is recommended for installation(https://github.com/nvm-sh/nvm))
+endif
 
 setup: check
 	@if ! test -f "LANGS.md.bak"; then\
