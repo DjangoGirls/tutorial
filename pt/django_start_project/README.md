@@ -54,7 +54,7 @@ No Windows, rode o seguinte comando (**não esqueça de adicionar o ponto `.` no
     └───requirements.txt
     
 
-> **Observação:** em sua estrutura de diretórios, você também verá o o diretório do virtualenv, `venv`, que criamos antes.
+> **Observação:** em sua estrutura de diretórios, você também verá o o diretório do virtualenv, `myvenv`, que criamos antes.
 
 `manage.py` é um script que ajuda com a gestão do site. Com ele, podemos iniciar um servidor de web no nosso computador sem instalar nada, entre outras coisas.
 

@@ -54,7 +54,7 @@ En Windows debes ejecutar el siguiente comando. **(No olvides incluir el punto `
     └───requirements.txt
     
 
-> **Nota**: en tu estructura de directorios, también verás el directorio `venv` que creamos anteriormente.
+> **Nota**: en tu estructura de directorios, también verás el directorio `myvenv` que creamos anteriormente.
 
 `manage.py` es un script que ayuda con la administración del sitio. Con él podremos iniciar un servidor web en nuestro ordenador sin necesidad de instalar nada más, entre otras cosas.
 
@@ -96,7 +96,7 @@ También tenemos que añadir una ruta para archivos estáticos. (Veremos todo ac
 
 ```python
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = BASE_DIR / 'static' 
 ```
 
 Cuando `DEBUG` es `True` y `ALLOWED_HOST` esta vacío, el host es validado contra `['localhost', '127,0.0.1', '[::1]']`. Una vez despleguemos nuestra aplicación este no sera el mismo que nuestro nombre de host en PythonAnywhere así que cambiaremos la siguiente opción:

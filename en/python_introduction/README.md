@@ -6,23 +6,7 @@
 
 Let's write some code!
 
-## Python prompt
-
-> For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
-
-To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
-
-Once you're ready, follow the instructions below.
-
-We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
-
-{% filename %}command-line{% endfilename %}
-```
-$ python3
-Python {{ book.py_release }} (...)
-Type "help", "copyright", "credits" or "license" for more information.
->>>
-```
+{% include "/python_introduction/prompt.md" %}
 
 ## Your first Python command!
 
@@ -391,19 +375,19 @@ When should you use a dictionary or a list? Well, that's a good point to ponder.
 - Do you just need an ordered sequence of items? Go for a list.
 - Do you need to associate values with keys, so you can look them up efficiently (by key) later on? Use a dictionary.
 
-Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key–value pairs to a dictionary after it is created, like this:
-
-{% filename %}command-line{% endfilename %}
-```python
->>> participant['favorite_language'] = 'Python'
-```
-
 Like lists, using the `len()` function on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
 
 {% filename %}command-line{% endfilename %}
 ```python
 >>> len(participant)
-4
+3
+```
+
+Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key–value pairs to a dictionary after it is created, like this:
+
+{% filename %}command-line{% endfilename %}
+```python
+>>> participant['favorite_language'] = 'Python'
 ```
 
 I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.

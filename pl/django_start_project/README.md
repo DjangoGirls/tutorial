@@ -54,7 +54,7 @@ Dla systemu Windows wpisz teraz do swojej konsoli następującą komendę. **Nie
     └───requirements.txt
     
 
-> **Uwaga**: w strukturze katalogów, możesz zobaczyć również katalog `venv`, który stworzyłyśmy wcześniej.
+> **Uwaga**: w strukturze katalogów, możesz zobaczyć również katalog `myvenv`, który stworzyłyśmy wcześniej.
 
 `manage.py` jest skryptem ułatwiającym zarządzanie witryną. Za jego pomocą, oprócz wielu innych rzeczy, możemy uruchomić serwer na naszym komputerze bez potrzeby instalowania czegokolwiek.
 

@@ -56,7 +56,7 @@ Sur Windows, vous devez taper la commander suivante. ** (N'oubliez pas le point 
     └── requirements.txt
     
 
-> **Note** : dans votre structure de dossier, vous pourrez voir également le répertoire `venv` que nous avons créé avant.
+> **Note** : dans votre structure de dossier, vous pourrez voir également le répertoire `myvenv` que nous avons créé avant.
 
 `manage.py` est un script qui aide à gérer ou maintenir le site. Entre autres, il permet notamment de lancer un serveur web sur notre ordinateur sans rien installer d'autre.
 
@@ -155,7 +155,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 ## Configuration de la base de données
 
-Il existe tout un tas de systèmes de gestion de bases de données qu'il est possible d'utiliser pour stocker les données de votre site. Nous allons va utiliser celui par défaut : `sqlite3`.
+Il existe tout un tas de systèmes de gestion de bases de données qu'il est possible d'utiliser pour stocker les données de votre site. Nous allons utiliser celui par défaut : `sqlite3`.
 
 Il est déjà configuré dans cette partie de votre fichier `mysite/settings.py`:
 

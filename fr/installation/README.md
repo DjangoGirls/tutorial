@@ -19,13 +19,14 @@ Si vous participez à un [événement Django Girls](https://djangogirls.org/even
 Dans ce tutoriel, vous allez apprendre comment créer un blog. Le tutoriel vous guidera à travers toute les étapes d'installation des différents logiciels, ansi que de création de comptes en ligne nécessaires. Cette page regroupe l’ensemble des instructions concernant installations et comptes en ligne en un seul endroit (ce qui est utile pour certains formats d’atelier).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
-data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
+data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %}
 
 <!--endsec-->
 
 # Brève introduction à la ligne de commande {#command-line}
 
-Dans les étapes ci-dessous vous allez rencontrer les noms « console », « terminal », « invite de commande » ou « ligne de commande ». Tous ces termes signifient la même chose : une fenêtre sur votre ordinateur où vous pouvez rentrer des commandes. Une fois que vous aurez démarré le tutoriel principal, vous apprendrez plus sur la ligne de commande. Pour l’instant, le plus important est que vous appreniez à ouvrir un terminal et que vous voyez à quoi cela ressemble : {% include "/intro_to_command_line/open_instructions.md" %}
+Dans les étapes ci-dessous vous allez rencontrer les noms « console », « terminal », « invite de commande » ou « ligne de commande ». Tous ces termes signifient la même chose : une fenêtre sur votre ordinateur où vous pouvez rentrer des commandes. Une fois que vous aurez démarré le tutoriel principal, vous apprendrez plus sur la ligne de commande. Pour l’instant, le plus important est que vous appreniez à ouvrir un terminal et que vous voyez à quoi cela ressemble :
+{% include "/intro_to_command_line/open_instructions.md" %}
 
 # Installer Python {#python}
 
@@ -43,11 +44,11 @@ Dans les étapes ci-dessous vous allez rencontrer les noms « console », « 
 
 {% include "/deploy/install_git.md" %}
 
-# Créer un compte GitHub {#github}
+# Créer un compte GitHub {#github-account}
 
 Allez sur [GitHub.com](https://www.github.com) et créez un compte d’utilisateur gratuitement. N’oubliez pas votre mot de passe (ajoutez-le à votre gestionnaire de mots de passe, si vous utilisez un).
 
-# Créer un compte PythonAnywhere {#pythonanywhere}
+# Créer un compte PythonAnywhere {#pythonanywhere-account}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 

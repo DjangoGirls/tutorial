@@ -18,13 +18,15 @@
 
 در این آموزش شما یک وبلاگ خواهید ساخت. برای انجام این کار، در خلال روند آموزش، به شما نحوه‌ی نصب نرم‌افزارهای مختلف روی کامپیوترتان و نحوه‌ی راه اندازی چند حساب اینترنتی گفته خواهد شد. این بخش شامل تمام مراحل نصب و دستورالعمل‌های ثبت نام است (که برای بعضی از کارگاه‌ها مفید است).
 
-<!--sec data-title="Chromebook setup (if you're using one)" data-id="chromebook_setup" data-collapse=true ces-->
-{% include "/chromebook_setup/instructions.md" %}
+<!--sec data-title="Chromebook setup (if you're using one)"
+data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %}
+
 <!--endsec-->
 
 # معرفی کوتاه کنسول خط فرمان {#command-line}
 
-بسیاری از مراحل زیر به "کنسول"، "ترمینال"، "پنجره دستورات" یا "خط فرمان" اشاره می‌کنند ـ همه آنها یک معنا دارند: یک پنجره روی کامپیوتر شما که می‌توانید دستوراتی را در آن وارد کنید. زمانی که به آموزش اصلی رسیدید، در مورد خط فرمان بیشتر می‌آموزید. فعلاً، اصلی‌ترین موردی که باید بدانید نحوه باز کردن یک پنجره خط فرمان و شکل ظاهری آن است: {% include "/intro_to_command_line/open_instructions.md" %}
+بسیاری از مراحل زیر به "کنسول"، "ترمینال"، "پنجره دستورات" یا "خط فرمان" اشاره می‌کنند ـ همه آنها یک معنا دارند: یک پنجره روی کامپیوتر شما که می‌توانید دستوراتی را در آن وارد کنید. زمانی که به آموزش اصلی رسیدید، در مورد خط فرمان بیشتر می‌آموزید. فعلاً، اصلی‌ترین موردی که باید بدانید نحوه باز کردن یک پنجره خط فرمان و شکل ظاهری آن است:
+{% include "/intro_to_command_line/open_instructions.md" %}
 
 # نصب پایتون {#python}
 
@@ -42,11 +44,11 @@
 
 {% include "/deploy/install_git.md" %}
 
-# ساخت یک حساب کاربری GitHub {#github}
+# ساخت حساب کاربری GitHub {#github-account}
 
 به [GitHub.com](https://www.github.com) بروید و برای یک حساب کاربری جدید و رایگان،‌ ثبت نام کنید. از بخاطر سپردن رمز عبور خود اطمینان حاصل کنید (اگر از یک نرم افزار مدیریت رمزهای عبور استفاده میکنید، رمز عبور جدید را به آن اضافه کنید).
 
-# ساخت یک حساب کاربری PythonAnywhere {#pythonanywhere}
+# ساخت حساب کاربری PythonAnywhere {#pythonanywhere-account}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 

@@ -53,6 +53,7 @@ The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the
 djangogirls
 ├── manage.py
 ├── mysite
+│   ├── asgi.py
 │   ├── __init__.py
 │   ├── settings.py
 │   ├── urls.py
@@ -61,7 +62,7 @@ djangogirls
 │   └── ...
 └── requirements.txt
 ```
-> **Note**: in your directory structure, you will also see your `venv` directory that we created before.
+> **Note**: in your directory structure, you will also see your `myvenv` directory that we created before.
 
 `manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
 
@@ -87,7 +88,7 @@ In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choos
 TIME_ZONE = 'Europe/Berlin'
 ```
 
-A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `ch` for Switzerland. If English is not your native language, you can add this to change the default buttons and notifications from Django to be in your language. So you would have "Cancel" button translated into the language you defined here. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/2.2/ref/settings/#language-code).
+A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `ch` for Switzerland. If English is not your native language, you can add this to change the default buttons and notifications from Django to be in your language. So you would have "Cancel" button translated into the language you defined here. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/3.2/ref/settings/#language-code).
 
 If you want a different language, change the language code by changing the following line:
 
@@ -102,7 +103,7 @@ We'll also need to add a path for static files. (We'll find out all about static
 {% filename %}mysite/settings.py{% endfilename %}
 ```python
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = BASE_DIR / 'static'
 ```
 
 When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated against `['localhost', '127.0.0.1', '[::1]']`. This won't
@@ -118,7 +119,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 > Also add `.amazonaws.com` to the `ALLOWED_HOSTS` if you are using cloud9
 
-> If you are hosting your project on `Glitch.com`, let us protect the Django secret key that needs to 
+> If you are hosting your project on `Glitch.com`, let us protect the Django secret key that needs to
 > remain confidential (otherwise, anyone remixing your project could see it):
 >
 >   * First, we are going to create a random secret key.
@@ -130,8 +131,8 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 >           print(get_random_secret_key())'
 >     ```
 >     This should display a long random string, perfect to use as a secret key for your brand new Django web site.
->     We will now paste this key into a `.env` file that Glitch will only show you if you are the owner of the web site.    
->   
+>     We will now paste this key into a `.env` file that Glitch will only show you if you are the owner of the web site.
+>
 >   * Create a file `.env` at the root of your project and add the following property in it:
 >
 >     {% filename %}.env{% endfilename %}
@@ -143,6 +144,8 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 >
 >     {% filename %}mysite/settings.py{% endfilename %}
 >     ```python
+>     import os
+>
 >     SECRET_KEY = os.getenv('SECRET')
 >     ```
 >   * And a little further down in the same file, we inject the name of your new Glitch website:
@@ -165,7 +168,7 @@ This is already set up in this part of your `mysite/settings.py` file:
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 ```
@@ -176,13 +179,13 @@ To create a database for our blog, let's run the following in the console: `pyth
 ```
 (myvenv) ~/djangogirls$ python manage.py migrate
 Operations to perform:
-  Apply all migrations: auth, admin, contenttypes, sessions
+  Apply all migrations: admin, auth, contenttypes, sessions
 Running migrations:
-  Rendering model states... DONE
   Applying contenttypes.0001_initial... OK
   Applying auth.0001_initial... OK
   Applying admin.0001_initial... OK
   Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
   Applying contenttypes.0002_remove_content_type_name... OK
   Applying auth.0002_alter_permission_name_max_length... OK
   Applying auth.0003_alter_user_email_max_length... OK
@@ -192,6 +195,9 @@ Running migrations:
   Applying auth.0007_alter_validators_add_error_messages... OK
   Applying auth.0008_alter_user_username_max_length... OK
   Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
   Applying sessions.0001_initial... OK
 ```
 

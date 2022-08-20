@@ -1,3 +1,4 @@
+
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
 A seconda della versione di Windows utilizzata e della propria tastiera, una delle azioni seguenti dovrebbe aprire una finestra di comando (probabilmente sarà necessario fare più prove, ma non è necessario provare tutti i suggerimenti proposti):

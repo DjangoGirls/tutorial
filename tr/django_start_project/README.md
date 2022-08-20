@@ -54,7 +54,7 @@ Windows'ta aşağıdaki komutu çalıştırmalısınız. **(Sonuna nokta `.` koy
     └───requirements.txt
     
 
-> **Not**: Dizin yapınızda, daha önceden oluşturduğumuz `venv` dizinini de göreceksiniz.
+> **Not**: Dizin yapınızda, daha önceden oluşturduğumuz `myvenv` dizinini de göreceksiniz.
 
 `manage.py` site yönetimine yardımcı olan bir komut dosyasıdır. Bu dosya sayesinde, başka herhangi bir şey kurmadan bilgisayarımızda bir web sunucusunu başlatabileceğiz.
 

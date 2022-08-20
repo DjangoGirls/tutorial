@@ -25,7 +25,8 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 # Հրամանի տողի/ command line հակիրճ նկարագրություն {#command-line}
 
-Ստորև նշված քայլերից շատերը վերաբերում են "console"-ին, «տերմինալին»/"terminal", «հրամանի պատուհանին»"command window" կամ «հրամանի տողին»/ "command line" . Սրանք բոլորը նույն բանն են նշանակում. Ձեր համակարգչի վրա պատուհան, որտեղ կարող եք մուտքագրել հրամաններ: Երբ հասնեք հիմնական ձեռնարկին, դուք ավելին կսովորեք հրամանի տողի մասին: Այժմ հիմնական բանը, որ դուք պետք է իմանաք, այն է, թե ինչպես բացել հրամանի պատուհան և ինչպիսի տեսք ունի այն: {% include "/intro_to_command_line/open_instructions.md" %}
+Ստորև նշված քայլերից շատերը վերաբերում են "console"-ին, «տերմինալին»/"terminal", «հրամանի պատուհանին»"command window" կամ «հրամանի տողին»/ "command line" . Սրանք բոլորը նույն բանն են նշանակում. Ձեր համակարգչի վրա պատուհան, որտեղ կարող եք մուտքագրել հրամաններ: Երբ հասնեք հիմնական ձեռնարկին, դուք ավելին կսովորեք հրամանի տողի մասին: Այժմ հիմնական բանը, որ դուք պետք է իմանաք, այն է, թե ինչպես բացել հրամանի պատուհան և ինչպիսի տեսք ունի այն:
+{% include "/intro_to_command_line/open_instructions.md" %}
 
 # Տեղադրեք Python- ը {#python}
 
@@ -43,11 +44,11 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 {% include "/deploy/install_git.md" %}
 
-# Ստեղծեք GitHub հաշիվ/GitHub account {#github}
+# Ստեղծեք GitHub հաշիվ/GitHub account {#github-account}
 
 Գնացեք [GitHub.com](https://www.github.com) և գրանցվեք նոր անվճար հաշվի համար: Համոզվեք, որ կհիշեք ձեր գաղտնաբառը (եթե այն օգտագործում եք, ավելացրեք գաղտնաբառերի կառավարչին):
 
-# Ստեղծեք PythonAnywhere հաշիվ {#pythonanywhere}
+# Ստեղծեք PythonAnywhere հաշիվ {#pythonanywhere-account}
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 

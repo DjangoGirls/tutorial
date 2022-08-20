@@ -70,7 +70,7 @@ After editing the line, your HTML file should now look like this:
 <html>
     <head>
         <title>Django Girls blog</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
@@ -163,7 +163,7 @@ OK, so let's see how the HTML in `post_edit.html` should look:
     <h2>New post</h2>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
-        <button type="submit" class="save btn btn-default">Save</button>
+        <button type="submit" class="save btn btn-secondary">Save</button>
     </form>
 {% endblock %}
 ```
@@ -290,7 +290,7 @@ Open `blog/templates/blog/post_detail.html` in the code editor and add the follo
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 ```html
 <aside class="actions">
-    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+    <a class="btn btn-secondary" href="{% url 'post_edit' pk=post.pk %}">
       {% include './icons/pencil-fill.svg' %}
     </a>
 </aside>
@@ -305,7 +305,7 @@ so that the template will look like this:
 {% block content %}
     <article class="post">
         <aside class="actions">
-            <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+            <a class="btn btn-secondary" href="{% url 'post_edit' pk=post.pk %}">
                 {% include './icons/pencil-fill.svg' %}
             </a>
         </aside>
@@ -374,7 +374,7 @@ Feel free to change the title or the text and save the changes!
 
 Congratulations! Your application is getting more and more complete!
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.2/topics/forms/
+If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/3.2/topics/forms/
 
 ## Security
 
@@ -408,7 +408,7 @@ Open `blog/templates/blog/post_detail.html` in the code editor and find this lin
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 ```html
-<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+<a class="btn btn-secondary" href="{% url 'post_edit' pk=post.pk %}">
     {% include './icons/pencil-fill.svg' %}
 </a>
 ```
@@ -418,7 +418,7 @@ Change it to this:
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 ```html
 {% if user.is_authenticated %}
-     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+     <a class="btn btn-secondary" href="{% url 'post_edit' pk=post.pk %}">
         {% include './icons/pencil-fill.svg' %}
      </a>
 {% endif %}
