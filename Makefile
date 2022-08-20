@@ -35,7 +35,7 @@ help:
 	@echo "  epub      - Generate EPUB version of DjangoGirls tutorial."
 	@echo "  mobi      - Generate MOBI version of DjangoGirls tutorial."
 	@echo "  mode      - Shows the development mode status."
-	@echo "  exit      - Reset the project and exit development mode."
+	@echo "  exit      - Exit development mode."
 	@echo
 
 check: package.json book.json LANGS.md
@@ -76,7 +76,7 @@ mode:
 
 exit:
 	@if test -f ".langs"; then\
-		mv -f .langs LANGS.md && echo "Language file is reset";\
+		mv -f .langs LANGS.md && echo "Language file is restored";\
 		rm -rf node_modules _book && echo "The project exited development mode.";\
 	fi
 
@@ -89,4 +89,4 @@ epub:
 mobi:
 	$(call ebook_support,mobi)
 
-.PHONY: help check reset setup build build-dev serve dev pdf epub mobi mode exit
+.PHONY: help check setup build build-dev serve dev pdf epub mobi mode exit
