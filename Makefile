@@ -38,6 +38,9 @@ help:
 	@echo "  exit      - Exit development mode."
 	@echo
 
+node_modules:
+	@npm install
+
 check: package.json book.json LANGS.md
 	@if ! which node 1> /dev/null; then\
 		echo "Error: Node.js not found";\
@@ -46,13 +49,11 @@ check: package.json book.json LANGS.md
 		false;\
 	fi
 
-setup: check
+setup: node_modules check
 	@if ! test -f ".langs"; then\
 		cp LANGS.md .langs && \
 		echo "$(LANG_DATA)" > LANGS.md && \
 			echo "You are set to $(LANG_NAME) for development";\
-		npm install && \
-			echo "Project is ready for development.";\
 	fi
 
 build: setup
@@ -69,7 +70,7 @@ dev: setup
 
 mode:
 	@if test -f ".langs"; then\
-		echo "You are in development mode";\
+		echo "You are in development mode using the language $(LANG_NAME)";\
 	else\
 		echo "You are not in development mode";\
 	fi
