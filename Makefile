@@ -1,14 +1,18 @@
 LANG      := en
-LANG_FILE := $(shell test -f LANGS.md.bak && echo LANGS.md.bak || echo LANGS.md)
+LANG_FILE := $(shell test -f .langs && echo .langs || echo LANGS.md)
 LANG_DATA := $(shell grep "$(LANG)/" $(LANG_FILE))
 LANG_NAME := $(shell echo "$(LANG_DATA)" | sed 's/.*\[\(.*\)\].*/\1/')
-NODE      := $(shell which nodse 1> /dev/null && echo "true")
 
 define ebook_support
 	@if which ebook-convert 1> /dev/null; then\
 		npx honkit $(1) ./ ./djangogirls.$(1);\
 	else\
-		echo "Error: ebook-convert is not found. Follow the guide at https://honkit.netlify.app/ebook";\
+		echo "Error: ebook-convert is not found";\
+		echo " * Follow the guide at https://honkit.netlify.app/ebook";\
+		echo "  - For Debian/Ubuntu, Try: sudo apt install calibre";\
+		echo "  - For MacOS, Try: brew install --cask calibre";\
+		echo "  - For Windows and any other OS, Download from https://github.com/kovidgoyal/calibre/releases";\
+		false;\
 	fi
 endef
 
@@ -35,15 +39,20 @@ help:
 	@echo
 
 check: package.json book.json LANGS.md
-ifeq ($(NODE),)
-	$(error NodeJS not found. Please install/reinstall Node.js. NVM is recommended for installation(https://github.com/nvm-sh/nvm))
-endif
+	@if ! which node 1> /dev/null; then\
+		echo "Error: Node.js not found";\
+		echo " * Please install/reinstall NodeJS on your system.";\
+		echo " * NVM is recommended for installation (https://github.com/nvm-sh/nvm).";\
+		false;\
+	fi
 
 setup: check
-	@if ! test -f "LANGS.md.bak"; then\
-		cp LANGS.md LANGS.md.bak && echo "Language file backup is created.";\
-		echo "$(LANG_DATA)" > LANGS.md && echo "Language list is reduced to $(LANG_NAME) for development";\
-		npm install && echo "Project is ready for development.";\
+	@if ! test -f ".langs"; then\
+		cp LANGS.md .langs && \
+		echo "$(LANG_DATA)" > LANGS.md && \
+			echo "You are set to $(LANG_NAME) for development";\
+		npm install && \
+			echo "Project is ready for development.";\
 	fi
 
 build: setup
@@ -59,15 +68,15 @@ dev: setup
 	@npx honkit serve --log=debug
 
 mode:
-	@if test -f "LANGS.md.bak"; then\
+	@if test -f ".langs"; then\
 		echo "You are in development mode";\
 	else\
 		echo "You are not in development mode";\
 	fi
 
 exit:
-	@if test -f "LANGS.md.bak"; then\
-		mv -f LANGS.md.bak LANGS.md && echo "Language file is reset";\
+	@if test -f ".langs"; then\
+		mv -f .langs LANGS.md && echo "Language file is reset";\
 		rm -rf node_modules _book && echo "The project exited development mode.";\
 	fi
 
