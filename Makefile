@@ -45,6 +45,17 @@ help:
 	@echo "'LANG' argument is only required the first time until the exit command is executed."
 	@echo
 
+.git/hooks/pre-commit:
+	@echo "#!/bin/sh\n\
+\n\
+if test -f \"./.langs\"; then\n\
+  echo \"Error: You can't commit without exiting development mode.\\\n\\\n\\\\\
+\nTry the following command to exit development mode:\\\n\\\n\\\\\
+\n$$ make exit\\\n\" 1>&2;\n\
+  exit 1\n\
+fi\n" > ./.git/hooks/pre-commit
+	@chmod u+x ./.git/hooks/pre-commit
+
 node_modules:
 	@npm install
 
@@ -56,7 +67,7 @@ check: package.json book.json LANGS.md
 		false;\
 	fi
 
-setup: node_modules check
+setup: node_modules check .git/hooks/pre-commit
 	@if ! test -f ".langs"; then\
 		cp LANGS.md .langs && \
 		echo "$(LANG_DATA)" > LANGS.md && \
@@ -85,7 +96,7 @@ mode:
 exit:
 	@if test -f ".langs"; then\
 		mv -f .langs LANGS.md && echo "Language file is restored";\
-		rm -rf node_modules _book && echo "The project exited development mode.";\
+		rm -rf node_modules _book .git/hooks/pre-commit && echo "The project exited development mode.";\
 	fi
 
 pdf:
