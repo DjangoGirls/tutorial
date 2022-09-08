@@ -1,34 +1,20 @@
+{% set warning_icon = '<span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!" ></span>' %}
+
 # Úvod do jazyka Python
 
 > Časť tejto kapitoly je založená na tutoriáli Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
 Poďme napísať nejaký kód!
 
-## Python prompt
+{% include "/python_introduction/prompt.md" %}
 
-> Pre čitateľov doma: Táto kapitola je spracovaná v [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) videu.
+## Tvoj prvý príkaz v Pythone!
 
-Aby sme mohli začať s Pythonom, musíte otvoriť *príkazový riadok* (angl. command line) na svojom počítači. Už by ste mali vedieť ako sa to robí -- naučili ste sa to v [ Úvode do príkazového riadku](../intro_to_command_line/README.md).
+Po spustení príkazu python sa začiatok nášho príkazového riadku (nazývaný aj prompt) zmenil na `>>>`. Toto pre nás znamená, že odteraz by sme mali písať príkazy iba v jazyku Python. Ty sama nemusíš vždy písať `>>>`, Python to urobí za teba.
 
-Ak ste hotoví, pokračujte s inštrukciami nižšie.
+Ak chceš z pythonovej konzoly kedykoľvek odísť, napíš `exit()` alebo použi skratku `Ctrl + Z` vo Windowse a `Ctrl + D` v Macu/Linuxe. Potom už nebudeš vidieť `>>>`.
 
-Chceme otvoriť Python konzolu, takže napíšte `python` na Windowse alebo `python3` na Mac alebo OS/Linux a stlačte `enter`.
-
-{% filename %}command-line{% endfilename %}
-
-    $ python3
-    Python 3.6.1 (...)
-    Type "help", "copyright", "credits" or "license" for more information.
-    >>>
-
-
-## Váš prvý príkaz v Pythone!
-
-Po spustení príkazu Python sa prompt zmenil na `>>>`. Pre nás to znamená že odteraz by sme mali písať príkazy iba v jazyku Python. Nemusíte písať `>>>` - Python to urobí pre Vás.
-
-Ak by ste chceli kedykoľvek ukončiť konzolu Pythonu, len napíšte `exit()` alebo môžete použiť aj skratku `Ctrl + Z` vo Windowse alebo `Ctrl + D` pre Mac/Linux. Potom už nebudete vidieť toto: `>>>`.
-
-Zatiaľ nechceme opustiť Python konzolu. Chceme sa o nej dozvedieť viac. Začnime tým, že skúsime matematiku, napr. ` 2 + 3 `a stlač `enter`.
+Zatiaľ ale z pythonovej konzoly odchádzať nechceme. Chceme sa o nej dozvedieť viac! Začnime tým, že napíšeme niečo jednoduché matematické ako `2 + 3` a stlačíme `enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -37,7 +23,7 @@ Zatiaľ nechceme opustiť Python konzolu. Chceme sa o nej dozvedieť viac. Začn
 5
 ```
 
-Super! Vidíte ako vyskočilo riešenie? Python vie počítať! Môžete skúsiť aj ďalšie príkazy, ako:
+Pekne! Vidíš, ako vyskočilo riešenie? Python vie počítať! Môžeš skúsiť iné príkazy ako:
 
 - `4 * 5`
 - `5 - 1`
@@ -50,33 +36,33 @@ Aby sme vypočítali mocninu, povedzme 2 na tretiu, zadáme: {% filename %}comma
 8
 ```
 
-Bavte sa s tým trošku, potom sa vráťte späť k nám. :)
+Trošku sa s tým pohraj a potom sa vráť späť . :)
 
-Ako vidíte, Python je dobrá kalkulačka. A ak ste zvedaví, čo všetko vie ešte…
+Ako môžeš vidieť, Python je skvelá kalkulačka. A ak si zvedavá, čo všetko ešte dokáže...
 
 ## Reťazce
 
-Čo tak vaše meno? Napíšte svoje meno v úvodzovkách:
+Čo tak napríklad tvoje meno? Napíš svoje meno v úvodzovkách:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
 >>> "Ola"
-"Ola"
+'Ola'
 ```
 
-Práve ste vytvorili svoj prvý reťazec! Je postupnosť znakov, ktoré môžu byť spracované počítačom. Reťazec musí vždy začínať a končíť s rovnakým znakom. Sú to jednoduché (`'`) alebo dvojité (`"`) úvodzovky (nie je medzi nimi žiadny rozdiel!). Úvodzovky naznačujú, že to čo je medzi nimi je reťazec (string).
+Práve si vytvorila svoj prvý reťazec (string)! Je to postupnosť znakov, ktoré môžu byť spracované počítačom. Reťazec musí vždy začínať a končiť rovnakým znakom. Buď jednoduchými (`'`) alebo dvojitými (`"`) úvodzovkami (nie je medzi nimi žiadny rozdiel!). Úvodzovky naznačujú, že to, čo je medzi nimi, je reťazec.
 
 Reťazce možno spájať dohromady. Skús toto:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> "Ahoj" + "Ola"
+>>> "Ahoj " + "Ola"
 'Ahoj Ola'
 ```
 
-Reťazce môžete násobiť aj s číslom:
+Reťazce môžeš tiež vynásobiť číslom:
 
 {% filename %}command-line{% endfilename %}
 
@@ -85,7 +71,7 @@ Reťazce môžete násobiť aj s číslom:
 'OlaOlaOla'
 ```
 
-Ak potrebujete dať apostrof do vnútra reťazca, máte dva spôsoby, ako to urobiť.
+Ak potrebuješ mať vo vnútri reťazca apostrof, máš dve možnosti, ako to spraviť.
 
 Použitím dvojitých úvodzoviek:
 
@@ -96,7 +82,7 @@ Použitím dvojitých úvodzoviek:
 "Runnin' down the hill"
 ```
 
-alebo pomocou spätného lomítka - tento znak (ak je napísaný pred úvodzovkou) povie, že ona je súčasťou reťazca a nie koniec / začiatok reťazca (``):
+alebo pomocou spätného lomítka (`\`) - tomuto sa anglicky hovorí escaping:
 
 {% filename %}command-line{% endfilename %}
 
@@ -105,7 +91,7 @@ alebo pomocou spätného lomítka - tento znak (ak je napísaný pred úvodzovko
 "Runnin' down the hill"
 ```
 
-Pekné, hm? Ak chcete vidieť svoje meno veľkými písmenami, jednoducho zadajte:
+Fajn, nie? Ak chceš vidieť svoje meno napísané veľkými písmenami, zadaj:
 
 {% filename %}command-line{% endfilename %}
 
@@ -114,9 +100,9 @@ Pekné, hm? Ak chcete vidieť svoje meno veľkými písmenami, jednoducho zadajt
 'OLA'
 ```
 
-Práve si použila `upper` **metódu** na reťazci! Metóda (ako `upper()`) je postupnosť inštrukcií, ktoré Python vykonáva na danom objekte (`"Ola"`), potom, čo ju zavoláš.
+Práve si na svojom reťazci použila **metódu** `upper`! Metóda (ako `upper()`) predstavuje postupnosť inštrukcií, ktoré Python vykoná na danom objekte (`"Ola"`), keď ju zavoláš.
 
-Ak chcete poznať počet písmen, ktoré sú obsiahnuté vo vašom mene, tak na to má Python **funkciu** tiež!
+Ak chceš vedieť, koľko má tvoje meno písmen, aj na to máme **funkciu**!
 
 {% filename %}command-line{% endfilename %}
 
@@ -125,24 +111,24 @@ Ak chcete poznať počet písmen, ktoré sú obsiahnuté vo vašom mene, tak na 
 3
 ```
 
-Ste zvedaví, prečo voláme niekedy funkciu s bodkou (`.`) na konci reťazca (ako `"Ola".upper()`) a niekedy najprv voláme funkciu a reťazec vložíme do zátvoriek? V niektorých prípadoch funkcie patria k objektom, ako napr. `upper()`, čo môže byt vykonaná len na reťazcoch. V takomto prípade sa tieto funkcie volajú **metódy**. Inokedy funkcie nepatria k žiadnemu konkrétnemu objektu a môžu byť použité na rôzne typy objektov, rovnako ako `len()`. Preto zadáme `"Ola"` ako parameter pre funkciu `len`.
+Rozmýšľaš, prečo občas voláme funkcie pomocou `.` na konci reťazca (napr. `"Ola".upper()`) a inokedy najprv zavoláme funkciu a reťazec dáme do zátvoriek? Ide o to, že v niektorých prípadoch funkcie patria k objektom, ako napríklad `upper()`, čo je funkcia, ktorá môže byť vykonaná len na reťazcoch. V takomto prípade sa tieto funkcie volajú **metódy**. Inokedy funkcie nepatria k žiadnemu konkrétnemu objektu a môžu byť použité na rôzne typy objektov, ako je to v prípade `len()`. Preto posielame reťazec `"Ola"` ako parameter funkcii `len`.
 
 ### Zhrnutie
 
-OK, dosť už reťazcoch. Zatiaľ ste sa naučili o:
+OK, dosť už o reťazcoch. Zatiaľ sme sa niečo naučili o nasledovnom:
 
 - **prompt** - píšeme príkazy (kód) do Python promptu, z čoho dostaneme výsledky zase v jazyku Python
 - **čísla a reťazce** - v Pythone sú čísla použité pre počítanie a reťazce pre textové objekty
 - **operátory** - ako `+` alebo `*`, z daných hodnôt vyrobia novú hodnotu
 - **funkcie** - napr. `upper()` alebo `len()`, vykonávajú činnosti na objektoch.
 
-Toto sú základy každého programovacieho jazyka. Ste pripravení na niečo ťažšie? Stavíme sa, že áno!
+Toto sú základy každého programovacieho jazyka. Si pripravená na niečo ťažšie? Stavíme sa, že áno!
 
 ## Chyby
 
-Teraz skúsme niečo nové. Je možné zistiť dĺžku nejakého čísla rovnako ako sme to robili s našim menom? Napíšte `len(304023)` a stlačte `enter`:
+Teraz skúsme niečo nové. Keď už vieme zistiť dĺžku reťazca, vieme to isté spraviť s číslom? Skús napísať `len(304023)` a stlač `enter`:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
 >>> len(304023)
@@ -151,7 +137,9 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-Dostali sme našu prvú chybovú hlášku! Hovorí nám, že objekty typu "int" (celé čísla, angl. integers) nemajú dĺžku. Tak čo môžeme teraz robiť? Možno by sme mohli napísať naše číslo ako reťazec? Reťazce majú dĺžku, pravda?
+Dostali sme našu prvú chybu! Keď uvidíš ikonku {{ warning_icon }}, ber to ako znamenie, že kód, ktorý ideš spustiť, nebude bežať tak, ako by sa dalo očakávať. Robenie chýb (aj úmyselných) je dôležitá súčasť učenia sa!
+
+Správa nám hovorí, že objekty typu "int" (integer, alebo slovensky celé číslo) nemajú dĺžku. Čo s tým? Možno by sme mohli naše číslo zapísať ako reťazec? Reťazce predsa dĺžku majú, nie?
 
 {% filename %}command-line{% endfilename %}
 
@@ -160,16 +148,16 @@ Dostali sme našu prvú chybovú hlášku! Hovorí nám, že objekty typu "int" 
 6
 ```
 
-Funguje to! Použili sme funkciu `str` vo vnútri funkcie `len`. Funkcia `str()` prevedie všetko na reťazce.
+Funguje to! Použili sme funkciu `str` vovnútri funkcie `len`. `str()` zmení všetko na reťazec.
 
-- Funkcia `str` prevedie (konvertuje) všetko na **reťazce** (angl. string)
+- Funkcia `str` prevedie všetko na **reťazec**
 - Funkcia `int` prevedie všetko na **int** (celé čísla)
 
-> Dôležité: je možné konvertovať čísla na reťazce, ale opačne sa to nedá vždy - inak čo by bolo napr. `int('hello')`?
+> Dôležité: čísla vieme premeniť na text, ale text nevieme vždy previesť na číslo - veď čo by vôbec malo byť `int('ahoj')`?
 
 ## Premenné
 
-Veľmi dôležitý pojem v programovaní je pojem premennej. Premenná je nič iné ako názov niečoho, čo môžeme použiť aj neskoršie v programe. Programátori používajú premenné aby v nich ukladali dáta, aby ich zdrojový kód bol prehľadnejší a aby nemuseli všetko držať v hlave.
+Veľmi dôležitý koncept v programovaní je pojem premennej (variable). Premenná nie je nič iné ako priradenie názvu niečomu, aby sme to mohli použiť neskôr. Programátorky a programátori používajú premenné, aby v nich ukladali dáta, aby ich zdrojový kód bol prehľadnejší, a aby nemuseli všetko držať v hlave.
 
 Povedzme, že chceme vytvoriť novú premennú s názvom `meno`:
 
@@ -179,9 +167,9 @@ Povedzme, že chceme vytvoriť novú premennú s názvom `meno`:
 >>> meno = "Ola"
 ```
 
-Zadáme meno sa rovná Ola.
+Napíšeme, že meno sa rovná Ola.
 
-Ako ste si to zbadali už, váš program nič nevrátil späť ako to robil v predchádzajúcich príkladoch. Tak ako vieme, či tá premenná existuje? Jednoducho napíšte `meno` a stlačte `enter`:
+Asi si si všimla, že tentokrát program nič nevypísal. Ako teda vieme, že naša premenná naozaj existuje? Napíš `meno` a stlač `enter`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -190,26 +178,26 @@ Ako ste si to zbadali už, váš program nič nevrátil späť ako to robil v pr
 'Ola'
 ```
 
-Hurá! Vaša prvá premenná! :) Vždy je možné zmeniť jej obsah:
+Jupí! Tvoja prvá premenná! :) Vždy môžeš zmeniť, na čo ukazuje:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> meno = "Sonja"
+>>> meno = "Sona"
 >>> meno
-'Sonja'
+'Sona'
 ```
 
-Môžete ju použiť aj vo funkciách:
+Môžeš ju tiež použiť vo funkciách:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
 >>> len(meno)
-5
+4
 ```
 
-Úžasné, že? Samozrejme premenné môžu byť hocičo, takže aj čísla! Skúste toto:
+Super, nie? Premenné môžu obsahovať čokoľvek, aj čísla! Skús toto:
 
 {% filename %}command-line{% endfilename %}
 
@@ -220,25 +208,25 @@ Môžete ju použiť aj vo funkciách:
 24
 ```
 
-Ale čo by sa stalo, keby sme použili zlý názov? Uhádnete, čo sa stane? Skúsme!
+Ale čo by sa stalo, keby sme použili nesprávny názov? Uhádneš, čo sa stane? Vyskúšajme!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
->>> mesto = "Tokyo"
+>>> mesto = "Tokio"
 >>> mseto
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 NameError: name 'mseto' is not defined
 ```
 
-Chyba! Ako vidíte, Python má viacero chýb a táto jedna sa volá **NameError**. Python vám hodí túto chybu ak sa pokúsite použiť premennú ktorá ešte nebola definovaná. Ak sa stretnete s touto chybou v budúcnosti, vždy skontrolujte svoj kód, či nemáte preklep v niektorom názve.
+Chyba! Ako vidíš, Python má viacero druhov chýb a táto konkrétna sa volá **NameError**. Python ti ju vyhodí, pokiaľ sa pokúsiš použiť premennú, ktorá ešte nebola definovaná. Ak sa s touto chybou stretneš v budúcnosti, skontroluj si kód, či nemáš preklep v nejakom názve.
 
-Hrajte sa s tým trošku, a potom uvidíme čo môžeme ešte urobiť!
+Pohraj sa s tým trošku a vyskúšaj si, čo všetko sa s tým dá urobiť!
 
 ## Funkcia print
 
-Vyskúšajte toto:
+Skús toto:
 
 {% filename %}command-line{% endfilename %}
 
@@ -250,15 +238,15 @@ Vyskúšajte toto:
 Maria
 ```
 
-Ak zadáte len `meno`, Python interpreter odpovie reťazcovou *reprezentáciou* premennej 'meno', teda písmenami M-a-r-i-a medzi jednoduchými úvodzovkami, ''. Keď napíšete `print(meno)`, Python vypíše obsah premennej na obrazovku, bez úvodzoviek, čo vyzerá krajšie.
+Ak napíšeš len `meno`, pythonový interpreter ti odpovie reťazcovou *reprezentáciou* premennej "meno", čo sú písmená M-a-r-i-a, obklopené jednoduchými úvodzovkami ''. Keď povieš `print(meno)`, Python vypíše (print) obsah premennej na obrazovku bez úvodzoviek, čo vyzerá úhľadnejšie.
 
-Ako uvidíme neskôr, funkcia `print()` je tiež užitočná, keď chceme tlačiť veci z funkcií, alebo ak chceme tlačiť veci na viacerých riadkoch.
+Ako uvidíme neskôr, funkcia `print()` tiež príde vhod, keď chceme vypisovať niečo zvnútra funkcie alebo keď chceme vypisovať veci na viacerých riadkoch.
 
 ## Zoznamy
 
-Okrem reťazcov a celých čísel, má Python všetky možné typy objektov. Teraz sa zoznámime s typom, ktorý sa volá **zoznam** (list). Zoznamy sú presne to, čo si myslíte, že sú: objekty, ktoré sú zoznamami iných objektov. :)
+Okrem reťazcov a celých čísel má Python všemožné typy objektov. Teraz sa zoznámime s typom, ktorý sa volá **zoznam** (list). Zoznamy sú presne to, čo by si povedala, že sú: objekty, ktoré sú zoznamami iných objektov. :)
 
-Poďme na to, vytvorte zoznam:
+Poď na to, vytvor zoznam:
 
 {% filename %}command-line{% endfilename %}
 
@@ -267,7 +255,7 @@ Poďme na to, vytvorte zoznam:
 []
 ```
 
-Áno, tento zoznam je prázdny. Nie veľmi užitočné, však? Vytvorme zoznam s číslami lotérie. Nechceme sa dokola opakovať, takže ho hneď aj priradíme do premennej:
+Áno, tento zoznam je prázdny. To nám nie je na veľa, že? Vytvorme radšej zoznam s číslami do lotérie. A keďže sa nechceme stále opakovať, hneď ho aj uložíme do premennej:
 
 {% filename %}command-line{% endfilename %}
 
@@ -275,7 +263,7 @@ Poďme na to, vytvorte zoznam:
 >>> loteria = [3, 42, 12, 19, 30, 59]
 ```
 
-OK, máme zoznam! Čo s ním môžeme urobiť? Pozrime sa, koľko čísel lotérie máme v zozname. Máte predstavu, ktorú funkciu by sme mohli použiť? Toto už predsa viete!
+OK, máme zoznam! Čo s ním môžeme urobiť? Pozrime sa, koľko čísel máme v zozname. Tušíš, akú funkciu by sme na také niečo mohli použiť? Už ju poznáš!
 
 {% filename %}command-line{% endfilename %}
 
@@ -284,7 +272,7 @@ OK, máme zoznam! Čo s ním môžeme urobiť? Pozrime sa, koľko čísel lotér
 6
 ```
 
-Áno! `len()` vám vráti počet objektov v zozname. Šikovné, nie? Možno by sme to teraz mohli usporiadať:
+Presne! `len()` ti vráti počet objektov v zozname. Šikovné, nie? Teraz by sme ho možno mohli usporiadať:
 
 {% filename %}command-line{% endfilename %}
 
@@ -292,7 +280,7 @@ OK, máme zoznam! Čo s ním môžeme urobiť? Pozrime sa, koľko čísel lotér
 >>> loteria.sort()
 ```
 
-Nič nám to nevrátilo, iba sa zmenilo poradie poradie, v ktorom sa čísla zobrazia v zozname. Vytlačme to znova a pozrime sa, čo sa stalo:
+Nič nám to nevrátilo, iba sa zmenilo poradie, v ktorom sa čísla vyskytujú v zozname. Vypíšme ho znova a pozrime sa, čo sa stalo:
 
 {% filename %}command-line{% endfilename %}
 
@@ -301,9 +289,9 @@ Nič nám to nevrátilo, iba sa zmenilo poradie poradie, v ktorom sa čísla zob
 [3, 12, 19, 30, 42, 59]
 ```
 
-Ako vidíte, čísla vo vašom zozname sú teraz zoradené od najnižšej po najvyššiu hodnotu. Gratulujeme!
+Ako vidíš, čísla v tvojom zozname sú teraz zoradené od najnižšej po najvyššiu hodnotu. Gratulujeme!
 
-Chceli by sme otočiť poradie? Urobme to!
+Možno by sme chceli toto poradie otočiť? Urobme to!
 
 {% filename %}command-line{% endfilename %}
 
@@ -313,7 +301,7 @@ Chceli by sme otočiť poradie? Urobme to!
 [59, 42, 30, 19, 12, 3]
 ```
 
-Ak chceš pridať niečo do svojho zoznamu, môžeš to urobiť zadaním tohto príkazu:
+Ak chceš do zoznamu niečo pridať, môžeš to urobiť zadaním tohto príkazu:
 
 {% filename %}command-line{% endfilename %}
 
@@ -323,7 +311,7 @@ Ak chceš pridať niečo do svojho zoznamu, môžeš to urobiť zadaním tohto p
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-Ak chcete zobraziť iba prvé číslo, môžete to urobiť pomocou **indexov**. Index je číslo, ktoré hovorí, kde v zozname sa položka nachádza. Programátori radi počítajú od nuly, takž eprvý objekt vo vašom zozname je na indexe 0, ďalší je na 1 a tak ďalej. Vyskúšajte toto:
+Ak chceš zobraziť len prvé číslo, môžeš na to použiť **index**. Index je číslo, ktoré hovorí, kde v zozname sa položka nachádza. Programátorky a programátori radi počítajú od 0, takže prvý objekt v našom liste je na indexe 0, druhý na indexe 1 a tak ďalej. Skús toto:
 
 {% filename %}command-line{% endfilename %}
 
@@ -334,9 +322,9 @@ Ak chcete zobraziť iba prvé číslo, môžete to urobiť pomocou **indexov**. 
 42
 ```
 
-Ako vidíte, k rôznym objektom vo vašom zozname môžete pristupovať použitím názvu zoznamu a indexom objektu v hranatých zátvorkách.
+Ako môžeš vidieť, môžeš pristupovať k rôznym objektom vo svojom zozname pomocou názvu zoznamu a indexu daného objektu v hranatých zátvorkách.
 
-Aby ste odstránili niečo zo svojho zoznamu, budete potrebovať **indexy**, ako sme sa dozvedeli vyššie a príkaz `pop()`. Vyskúšajme to na príklade a zopakujme si, čo sme sa už naučili; zmažeme prvé číslo v našom zozname.
+Ak chceš niečo zo svojho zoznamu odstrániť, budeš potrebovať **indexy**, ako sme sa dozvedeli vyššie, a metódu `pop()`. Vyskúšajme si to na príklade a zopakujme si, čo sme sa už naučili - ideme vymazať prvé číslo v našom zozname.
 
 {% filename %}command-line{% endfilename %}
 
@@ -353,15 +341,15 @@ Aby ste odstránili niečo zo svojho zoznamu, budete potrebovať **indexy**, ako
 
 Funguje to ako hodinky!
 
-Pre zábavu vyskúšajte aj nejaké iné indexy: 6, 7, 1000, -1, -6 alebo -1000. Skúste predpovedať výsledok predtým ako príkaz použijete. Dávajú výsledky zmysel?
+Pre tú srandu vyskúšaj iné indexy, napr. 6, 7, 1000, -1, -6 či -1000. Skús, či sa ti podarí predpovedať, aký bude výsledok, ešte pred tým, ako príkaz spustíš. Dávajú ti výsledky zmysel?
 
-Zoznam všetkých dostupných metód pre zoznamy v tejto kapitole dokumentácie Pythonu: https://docs.python.org/3/tutorial/datastructures.html
+Zoznam všetkých dostupných metód pre zoznamy nájdeš v tejto kapitole dokumentácie Pythonu: https://docs.python.org/3/tutorial/datastructures.html
 
 ## Slovníky
 
-> Pre čitateľov doma: Táto kapitola je spracovaná v [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) videu.
+> Pre čitateľky a čitateľov doma: Táto kapitola je spracovaná vo videu [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c).
 
-Slovník je podobný ako zoznam, ale k jeho hodnotám pristupujete vyhľadaním kľúča namiesto číselného indexu. Kľúč môže byť akýkoľvek reťazec alebo číslo. Syntax na definovanie prázdneho slovníka je:
+Slovník (dictionary, skrátene dict) je podobný zoznamu, ale k hodnotám pristupuješ pomocou kľúča namiesto číselného indexu. Kľúč môže byť hocijaký reťazec alebo číslo. Syntax na definovanie prázdneho slovníka je:
 
 {% filename %}command-line{% endfilename %}
 
@@ -370,23 +358,23 @@ Slovník je podobný ako zoznam, ale k jeho hodnotám pristupujete vyhľadaním 
 {}
 ```
 
-To znamená, že ste práve vytvorili prázdny slovník. Hurá!
+Toto ti hovorí, že si práve vytvorila prázdny slovník. Hurá!
 
-Teraz skúste napísať nasledujúci príkaz (skúste ale nahradiť hodnoty vlastnými údajmi):
+Teraz skús napísať nasledujúci príkaz (skús nahradiť hodnoty vlastnými údajmi):
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> ucastnicka = {'meno': 'Ola', 'krajina': 'Slovensko', 'oblubene_cisla': [7, 42, 92]}
+>>> ucastnicka = {'meno': 'Ola', 'krajina': 'Polsko', 'oblubene_cisla': [7, 42, 92]}
 ```
 
-Týmto príkazom ste práve vytvorili premennú s názvom `ucastnicka` s tromi pármi kľúč-hodnota:
+Týmto príkazom si práve vytvorila premennú s názvom `ucastnicka` s tromi pármi kľúč-hodnota (key-value):
 
-- Kľúč `meno` odkazuje na hodnotu `"Ola"` (objekt typu `reťazec/string`),
-- `krajina` odkazuje na `"Slovensko"` (ďalší `reťazec`),
-- a `oblubene_cisla` smeruje na `[7, 42, 92]` (`zoznam` s tromi číslami).
+- Kľúč `meno` odkazuje na hodnotu `"Ola"` (objekt typu `reťazec`),
+- `krajina` odkazuje na `"Polsko"` (ďalší `reťazec`),
+- a `oblubene_cisla` ukazuje na `[7, 42, 92]` (`zoznam` s tromi číslami).
 
-Obsah jednotlivých kľúčov môžete skontrolovať touto syntaxou:
+Obsah jednotlivých kľúčov môžeš skontrolovať použitím tejto syntaxe:
 
 {% filename %}command-line{% endfilename %}
 
@@ -395,11 +383,11 @@ Obsah jednotlivých kľúčov môžete skontrolovať touto syntaxou:
 Ola
 ```
 
-Ako vidíte, podobá sa to na zoznam. Ale nemusíte si pamätať index - stačí meno.
+Vidíš, podobá sa to na zoznam. Akurát si nemusíš pamätať index - stačí názov.
 
-Čo sa stane ak si od Pythonu vypýtame hodnotu kľúča, ktorý neexistuje? Uhádnete? Vyskúšajme to a uvidíme!
+Čo sa stane, ak si od Pythonu vypýtame hodnotu kľúča, ktorý neexistuje? Uhádneš? Vyskúšame a uvidíme!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
 >>> ucastnicka['vek']
@@ -408,14 +396,23 @@ Traceback (most recent call last):
 KeyError: 'vek'
 ```
 
-Aha, ďalšia chyba! Táto sa volá **KeyError** (chyba kľúča). Python je nápomocný a povie vám, že kľúč `'vek'` v tomto slovníku neexistuje.
+Aha, ďalšia chyba! Táto sa volá **KeyError**. Python je nápomocný a povie ti, že kľúč (key) `'vek'` v tomto slovníku neexistuje.
 
-Kedy by používať slovník alebo zoznam? No, to je dobrá otázka. Porozmýšľaj predtým, ako si pozrieš odpoveď v nasledujúcom riadku.
+Kedy je dobré použiť slovník a kedy zoznam? No, to je dobrá otázka. Porozmýšľaj predtým, ako si pozrieš odpoveď v nasledujúcom riadku.
 
-- Potrebuješ zoradenú postupnosť položiek? Vyber si zoznam (list).
-- Potrebuješ priraďovať hodnoty kľúčovým slovám, aby si si ich mohla efektívne (podľa kľúča) neskôr vyhľadať? Použi slovník (dictionary).
+- Potrebuješ zoradenú postupnosť vecí? Vyber si zoznam.
+- Potrebuješ priraďovať hodnoty kľúčom, aby si ich mohla efektívne (podľa kľúča) neskôr vyhľadať? Použi slovník.
 
-Slovníky, rovnako ako zoznamy sú *premenlivé*, čo znamená, že ich môžeme zmeniť po ich vytvorení. Po vytvorení môžeš do slovníka pridať nové dvojice kľúč/hodnota takto:
+Tak ako pri zoznamoch, aj pri slovníkoch funkcia `len()` vracia počet párov kľúč-hodnota v danom slovníku. Poď, zadaj tento príkaz:
+
+{% filename %}command-line{% endfilename %}
+
+```python
+>>> len(ucastnicka)
+3
+```
+
+Slovníky, podobne ako zoznamy, sú *mutable* (premenlivé), čo znamená, že ich možno zmeniť po tom, ako boli vytvorené. Do existujúceho slovníka môžeš pridať nový pár kľúč-hodnota takto:
 
 {% filename %}command-line{% endfilename %}
 
@@ -423,18 +420,9 @@ Slovníky, rovnako ako zoznamy sú *premenlivé*, čo znamená, že ich môžeme
 >>> ucastnicka['oblubeny_jazyk'] = 'Python'
 ```
 
-Tak ako pri zoznamoch, použitím metódy `len()` na slovníkoch dostaneš počet párov kľúč-hodnota v slovníku. Poďme na to, zadaj tento príkaz:
+Dúfam, že to dáva zmysel. :) Pripravená na trochu zábavy so slovníkmi? Čakajú nás ďalšie úžasné veci.
 
-{% filename %}command-line{% endfilename %}
-
-```python
->>> len(ucastnicka)
-4
-```
-
-Dúfam, že to dáva zmysel. :) Pripravená na trochu zábavy so slovníkmi? Tak šup na ďalší riadok za úžasnými vecami.
-
-Na odstránenie položky zo slovníka môžeš použiť metódu `pop()`. Napríklad ak chceš odstrániť položku zodpovedajúcu kľúču `'oblubene_cisla'`, zadaj nasledujúci príkaz:
+Na odstránenie položky zo slovníka môžeš tiež použiť metódu `pop()`. Napríklad, ak chceš odstrániť položku zodpovedajúcu kľúču `'oblubene_cisla'`, zadaj nasledujúci príkaz:
 
 {% filename %}command-line{% endfilename %}
 
@@ -442,10 +430,10 @@ Na odstránenie položky zo slovníka môžeš použiť metódu `pop()`. Naprík
 >>> ucastnicka.pop('oblubene_cisla')
 [7, 42, 92]
 >>> ucastnicka
-{'meno': 'Ola', 'krajina': 'Slovensko', 'oblubeny_jazyk': 'Python'}
+{'meno': 'Ola', 'krajina': 'Polsko', 'oblubeny_jazyk': 'Python'}
 ```
 
-Ako vidíš z výstupu, pár kľúč-hodnota zodpovedajúci kľúču 'oblubene_cisla' bol vymazaný.
+Ako vidíš z výstupu, pár kľúč-hodnota zodpovedajúci kľúču 'oblubene_cisla' zmizol.
 
 Taktiež môžeš zmeniť hodnotu priradenú k už vytvorenému kľúču v slovníku. Napíš:
 
@@ -457,24 +445,24 @@ Taktiež môžeš zmeniť hodnotu priradenú k už vytvorenému kľúču v slovn
 {'krajina': 'Nemecko', 'oblubeny_jazyk': 'Python', 'meno': 'Ola'}
 ```
 
-Ako vidíš, hodnota kľúča `"krajina"` sa zmenila z `"Poľsko"` na `"Nemecko"`. :) Vzrušujúce? Hurá! Práve si sa naučila ďalšiu úžasnú vec.
+Ako vidíš, hodnota kľúča `"krajina"` sa zmenila z `"Polsko"` na `"Nemecko"`. :) Vzrušujúce? Hurá! Práve si sa naučila ďalšiu úžasnú vec.
 
 ### Zhrnutie
 
 Skvelé! Teraz už vieš o programovaní dosť veľa. Pozrime sa, čo sme si vysvetlili v poslednej časti:
 
-- **chyby** (angl. error) - teraz už vieš ako čítať a rozumieť chybám, ktoré sa zobrazia, ak Python nerozumie príkazu, ktorý mu zadáš
+- **chyby** - teraz už vieš, ako čítať a rozumieť chybám, ktoré sa zobrazia, ak Python nerozumie príkazu, ktorý mu zadáš
 - **premenné** - názvy objektov, ktoré ti uľahčujú písanie kódu a robia tiež kód zrozumiteľnejším
-- **zoznamy** (angl. list) - zoznam objektov uložených v určitom poradí
-- **slovníky** (angl. dictionary) - objekty uložené v pároch kľúč-hodnota
+- **zoznamy** - zoznamy objektov uložených v určitom poradí
+- **slovníky** - objekty uložené v pároch kľúč-hodnota
 
 Tešíš sa na ďalšiu časť? :)
 
 ## Porovnávanie vecí
 
-> Pre čitateľov doma: Táto kapitola je spracovaná v [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) videu.
+> Pre čitateľky a čitateľov doma: Táto kapitola je spracovaná vo videu [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4).
 
-Veľkú časť programovania predstavuje porovnávanie veci. Čo je najjednoduchšia vec na porovnanie? Čísla, samozrejme. Pozrime sa, ako to funguje:
+Veľkú časť programovania predstavuje porovnávanie veci. Čo sa porovnáva najjednoduchšie? Čísla! Pozrime sa, ako to funguje:
 
 {% filename %}command-line{% endfilename %}
 
@@ -489,13 +477,15 @@ True
 True
 >>> 5 != 2
 True
+>>> len([1, 2, 3]) > len([4, 5])
+True
 ```
 
-Dali sme Pythonu pár čísiel na porovnanie. Ako vidíš, Python vie porovnávať nielen čísla, ale vie porovnávať aj výsledky metód. Pekné, nie?
+Dali sme Pythonu na porovnanie zopár čísel. Ako vidíš, Python vie porovnávať nielen čísla, ale aj výsledky matematických výrazov ako `2 * 2` a výsledky funkcií ako `2`, ktorú vrátila funkcia `len([4, 5])`. Fajn, nie?
 
-Zaujíma ťa, prečo sme použili dve "rovná sa" `==` vedľa seba, aby sme porovnali, či sú čísla rovnaké? Jeden znak `=` používame na priraďovanie hodnôt premenným. Takže, ak chceš skontrolovať, či sú veci rovnaké, musíš vždy, úplne **vždy** použiť dve `==`. Taktiež môžeme zisťovať, či sa veci navzájom líšia. Na to použijeme symbol `!=`, ako bolo uvedené v príklade vyššie.
+Zaujíma ťa, prečo sme použili dve znamenienka rovnosti `==` vedľa seba, aby sme porovnali, či sú čísla rovnaké? Jeden znak `=` používame na priraďovanie hodnôt premenným. Takže ak chceš skontrolovať, či sú veci rovnaké, musíš vždy, úplne **vždy** použiť dve `==`. Taktiež môžeme vyjadriť, že sa veci navzájom líšia. Na to použijeme symbol `!=`, ako bolo uvedené v príklade vyššie.
 
-Zadaj Pythonu ešte dve úlohy:
+Dajme Pythonu dve ďalšie úlohy:
 
 {% filename %}command-line{% endfilename %}
 
@@ -506,14 +496,14 @@ True
 False
 ```
 
-`>` a `<` sme už videli, ale čo znamenajú `>=` a `<=`? Prečítať ich môžeš takto:
+`>` a `<` sme už videli, ale čo znamenajú `>=` a `<=`? Môžeš ich čítať takto:
 
 - x `>` y znamená: x je väčšie ako y
 - x `<` y znamená: x je menšie ako y
-- x `<=` y znamená: x je menšie alebo sa rovná y
-- x `> =` y znamená: x je väčšie alebo sa rovná y
+- x `<=` y znamená: x je menšie alebo rovné y
+- x `> =` y znamená: x je väčšie alebo rovné y
 
-Skvelé! Chceš vyskúšať ešte jeden? Skús toto:
+Skvelé! Ešte si dáme jeden príklad? Skús toto:
 
 {% filename %}command-line{% endfilename %}
 
@@ -526,14 +516,14 @@ False
 True
 ```
 
-Môžeš dať Pythonu toľko čísel, koľko chceš a on ti dá vždy odpoveď! Vcelku šikovné, nie?
+Môžeš dať Pythonu toľko čísel, koľko chceš, a on ti dá vždy odpoveď! Vcelku šikovné, nie?
 
 - **and** - ak použiješ operátor `and`, obidve porovnávané veci musia byť pravdivé (True), aby príkaz bol pravdivý (True)
-- **or** - ak použiješ operátor `or`, stačí aby jedna z porovnávaných vecí bola pravdivá, aby bol celý príkaz pravda (True)
+- **or** - ak použiješ operátor `or`, stačí, aby jedna z porovnávaných vecí bola pravdivá, aby bol celý príkaz pravda (True)
 
-Už ste počula výraz "porovnávať hrušky s jablkami"? Skúsme pythonský ekvivalent:
+Už si počula výraz "porovnávať hrušky s jablkami"? Skúsme ekvivalent v Pythone:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
 >>> 1 > 'django'
@@ -542,20 +532,20 @@ Traceback (most recent call last):
 TypeError: '>' not supported between instances of 'int' and 'str'
 ```
 
-Tu vidíš, že tak ako nevieme porovnávať hrušky s jablkami, ani Python neviem porovnať číslo (`int`) s reťazcom (`str`). Namiesto toho vypíše chybu **TypeError** a povie nám, ktoré dva typy sa nedajú porovnať.
+Tu vidíš, že tak, ako nevieme porovnávať hrušky s jablkami, ani Python nevie porovnať číslo (`int`) s reťazcom (`str`). Namiesto toho vypíše chybu **TypeError** a povie nám, že tieto dva typy sa nedajú porovnať.
 
-## Logické hodnoty (Boolean)
+## Logické hodnoty
 
-Mimochodom práve si sa naučila nový typ objektu v Pythone. Volá sa **Boolean**.
+Mimochodom, práve si sa naučila nový typ objektu v Pythone. Volá sa **boolean** (logická hodnota).
 
-Existujú iba dva typy Booleovských objektov:- True (Pravda)- False (Nepravda):
+Existujú iba dva typy boolean objektov:
 
-- True
-- False
+- True (pravda)
+- False (nepravda)
 
-Aby ich Python spoznal, musíš vždy napísať 'True' (s veľkým písmenom na začiatku a zvyšok malým písmom). **true, TRUE, tRUE nebudú fungovať -- iba True je správne.** (Samozrejme, to isté platí aj pre 'False'.)
+Aby ich Python spoznal, musíš vždy napísať "True" (s veľkým písmenom na začiatku a zvyšok malým písmom). **true, TRUE, tRUE nebudú fungovať -- iba True je správne.** (To isté platí aj pre 'False'.)
 
-Logické hodnoty môžu byť aj premenné. Aha:
+Premenné môžu tiež obsahovať booleany. Aha:
 
 {% filename %}command-line{% endfilename %}
 
@@ -575,27 +565,27 @@ Môžeš to urobiť aj takto:
 False
 ```
 
-Precvič si to a zabav sa s logickými premennými - skús spustiť tieto príkazy:
+Precvič si to a zabav sa s booleanmi - skús spustiť tieto príkazy:
 
 - `True and True`
 - `False and True`
 - `True or 1 == 1`
 - `1 != 2`
 
-Gratulujeme! Logické hodnoty patria k tomu najužitočnejšiemu z programovania a ty si sa práve naučila, ako sa používajú!
+Gratulujeme! Booleany patria k tomu najzaujímavejšiemu v programovaní a ty si sa práve naučila, ako sa používajú!
 
 # Ulož to!
 
-> Pre čitateľov doma: Táto kapitola je spracovaná v [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) videu.
+> Pre čitateľky a čitateľov doma: Táto kapitola je spracovaná vo videu [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk).
 
-Zatiaľ sme písali všetok pythonský kód do konzoly interpretera, čiže môžeme na jedenkrát zadať iba jeden riadok kódu. Normálne programy sú uložené v súboroch, ktoré spúšťa buď **interpreter** alebo **kompilátor**. Doteraz sme spúšťali naše programy riadok po riadku v **interpreteri** Pythonu. Na ďalšie úlohy budeme potrebovať viac ako jeden riadok kódu, takže teraz rýchlo musíme:
+Zatiaľ sme písali všetok kód v Pythone do konzoly interpretera, kde môžeme naraz zadať iba jeden riadok kódu. Bežné programy bývajú uložené v súboroch, ktoré spúšťa náš programovací jazyk buď pomocou **interpretera**, alebo **kompilátora**. Doteraz sme spúšťali naše programy riadok po riadku v **interpreteri** Pythonu. Na ďalšie úlohy budeme potrebovať viac ako jeden riadok kódu, takže teraz rýchlo musíme:
 
 - Ukončiť interpreter Pythonu
-- Otvoriť si zvolený editor kódu
-- Uložiť v ňom nejaký kód do nového pythonského súboru
+- Otvoriť si náš zvolený editor kódu
+- Uložiť v ňom trochu kódu do nového Python súboru
 - Spustiť ho!
 
-Pre opustenie interpretera Pythonu, ktorý sme doteraz používali, zadaj jednoducho funkciu `exit()`
+Ak chceš odísť z Python interpretera, ktorý sme doteraz používali, zadaj funkciu `exit()`
 
 {% filename %}command-line{% endfilename %}
 
@@ -606,21 +596,21 @@ $
 
 Tak sa dostaneš späť na príkazový riadok.
 
-Už skôr si si vybrala editor kódu v kapitole [editor kódu](../code_editor/README.md). Teraz ho potrebujeme otvoriť a napísať v ňom do nového súboru nejaký kód:
+V jednej z [predošlých častí](../code_editor/README.md) sme si vybrali editor kódu. Teraz budeme chcieť tento editor otvoriť a napísať pár riadkov kódu do nového súboru (alebo ak používaš Chromebook, vytvoriť nový súbor v Cloud IDE a otvoriť ho, čo sa udeje v zabudovanom editore kódu):
 
 {% filename %}editor{% endfilename %}
 
 ```python
-print('Hello, Django girls!')
+print('Ahoj, Django Girls!')
 ```
 
-Samozrejme, teraz si už vcelku skúsená Python developerka, takže kľudne napíš nejaký kód, ktorý si sa dnes naučila.
+Prirodzene, teraz si už poriadne skúsená Python vývojárka, takže pokojne napíš nejaký kód, ktorý si sa dnes naučila.
 
-Teraz uložíme súbor a dáme mu nejaký zrozumiteľný názov. Nazvime ho **python_intro.py** a ulož ho plochu. Tento súbor môžeš nazvať akokoľvek chceš, ale dôležité je, aby jeho názov končil **.py**. Prípona **.py** nášmu operačnému systému hovorí, že je to **súbor spustiteľný Pythonom** a môže ho spustiť Pythonom.
+Teraz súbor musíme uložiť a dať mu nejaký zrozumiteľný názov. Nazvime ho **python_intro.py** a uložme ho na plochu. Súbor môžeš nazvať, akokoľvek chceš, ale dôležité je, aby jeho názov končil na **.py**. Prípona **.py** nášmu operačnému systému hovorí, že je to **spustiteľný pythonovský súbor** a Python ho vie spustiť.
 
-> **Poznámka** Všimni si jednu z najúžasnejších vecí editorov kódu: farby! V pythonskej konzole bolo všetko napísané jednou farbou, teraz však vidíš, že funkcia `print` je napísaná inou farbou ako reťazec. Toto sa nazýva "zvýraznenie syntaxe" a pri programovaní je to fakt užitočná vec. Farba výrazov ti môže pomôcť, ak máš neuzavretý reťazec či preklep v názve špeciálnych slov (ako napríklad `def` vo funkcii, ktorú uvidíme neskôr). Toto je jedným z dôvodov, prečo používame editor kódu. :)
+> **Poznámka** Všimni si jednu z najlepších vecí na editoroch kódu: farby! V Python konzole bolo všetko jednou farbou, teraz by si ale mala vidieť, že funkcia `print` je napísaná inou farbou ako reťazec. Toto sa nazýva "zvýraznenie syntaxe" (syntax highlighting) a pri programovaní je to fakt užitočná vec. Farba výrazov ti môže niečo napovedať, ak máš niekde neuzavretý reťazec či preklep v názve špeciálnych slov (ako napríklad `def` vo funkcii, ktorú uvidíme neskôr). Toto je jeden z dôvodov, prečo používame editor kódu. :)
 
-Súbor máme uložený, je čas ho spustiť! Pomocou poznatkov z kapitoly o príkazovom riadku, pomocou Terminálu **zmeň adresár** na plochu.
+Súbor máme uložený, je čas ho spustiť! Pomocou poznatkov z kapitoly o príkazovom riadku **zmeň adresár** na plochu terminálovým príkazom.
 
 <!--sec data-title="Change directory: OS X" data-id="python_OSX"
 data-collapse=true ces-->
@@ -630,55 +620,57 @@ Na Macu bude príkaz vyzerať takto:
 {% filename %}command-line{% endfilename %}
 
     $ cd ~/Desktop
-
+    
 
 <!--endsec-->
 
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-Na Linuxe to bude takto (slovo "Desktop" bude možno preložené):
+Na Linuxe bude takýto:
 
 {% filename %}command-line{% endfilename %}
 
     $ cd ~/Desktop
+    
 
+(Pripomíname, že slovo "Desktop" alebo "Plocha" môže bude preložené.)
 
 <!--endsec-->
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-Vo Windowse v Command Prompt, to bude takto:
+Vo windowsovom Command Prompte to bude takto:
 
 {% filename %}command-line{% endfilename %}
 
     > cd %HomePath%\Desktop
-
+    
 
 <!--endsec-->
 
 <!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
 
-A vo Windows Powershell bude príkaz vyzerať takto:
+A vo windowsovom PowerShelli to bude takto:
 
 {% filename %}command-line{% endfilename %}
 
     > cd $Home\Desktop
-
+    
 
 <!--endsec-->
 
-Ak máš akékoľvek ťažkosti, stačí požiadať o pomoc.
+Ak sa zasekneš, neboj sa spýtať. Na to presne tu máš mentorky a mentorov!
 
 Teraz použi Python na spustenie kódu v súbore:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
-    Hello, Django girls!
+    Ahoj, Django Girls!
+    
 
-
-Poznámka na Windowse python3 príkaz neexistuje. Použi python na spustenie súboru:
+Poznámka: na Windowse "python3" ako príkaz neexistuje. Na spustenie súboru použi "python":
 
 {% filename %}command-line{% endfilename %}
 
@@ -686,13 +678,13 @@ Poznámka na Windowse python3 príkaz neexistuje. Použi python na spustenie sú
 > python python_intro.py
 ```
 
-Výborne! Práve si spustila svoj prvý pythonský program uložený v súbore. Skvelý pocit, však?
+Okej! Práve si spustila svoj prvý program v Pythone zo súboru. Skvelý pocit, nie?
 
-Teraz sa môžeš posunúť na ďalší základný nástroj v programovaní:
+Teraz sa môžeš posunúť na základný nástroj v programovaní:
 
 ## If … elif … else
 
-Kopec vecí v kóde sa má spúšťať len ak sú splnené nejaké podmienky. Práve na to používa Python príkaz **if**.
+Kopec vecí v kóde sa má spúšťať, len ak sú splnené určité podmienky. Práve na to používa Python príkaz **if**.
 
 Nahraď kód v súbore **python_intro.py** týmto:
 
@@ -704,26 +696,26 @@ if 3 > 2:
 
 Ak to uložíš a spustíš, dostaneš túto chybu:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
     $ python3 python_intro.py
     File "python_intro.py", line 2
              ^
     SyntaxError: unexpected EOF while parsing
+    
 
-
-Python očakáva, že od nás dostane ďalšie inštrukcie, ktoré majú byť vykonané ak je podmienka `3 > 2` pravdivá (teda ak bude mať hodnotu `True`). Skúsme zariadiť, aby Python napísal "Funguje to!". Zmeň svoj kód v súbore **python_intro.py** takto:
+Python očakáva, že od nás dostane ďalšie inštrukcie, ktoré má vykonať, ak je podmienka `3 > 2` pravdivá (teda ak bude mať hodnotu `True`). Skúsme Pythonu povedať, aby vypísal "Funguje to!". Zmeň svoj kód v súbore **python_intro.py** takto:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
 if 3 > 2:
-    print('It works!')
+    print('Funguje to!')
 ```
 
-Všimla si si, ako sme odsadili druhý riadok o 4 medzery? To musíme urobiť preto, aby Python vedel, ktorú časť kódu má spustiť ak je výsledok pravdivý. Môžeš použiť len jednu medzeru, ale takmer všetci programátori v Pythone používajú 4 medzery, aby bol kód dobre čitateľný. Jeden `tab` sa tiež počíta ako 4 medzery.
+Všimla si si, ako sme odsadili druhý riadok o 4 medzery? To musíme urobiť preto, aby Python vedel, ktorú časť kódu má spustiť, ak je výsledok pravdivý. Môžeš použiť len jednu medzeru, ale takmer všetci programátori a programátorky v Pythone používajú 4 medzery, aby bol kód dobre čitateľný. Jedno stlačenie klávesy Tab sa tiež bude rátať ako 4 medzery, pokiaľ je tvoj editor tak nastavený. Keď sa pre jedno rozhodneš, zostaň pri tom! Ak si už začala odsádzať 4 medzerami, daj si záležať, aby aj ďalšie odsadenia boli 4 medzerami, inak ti to môže spôsobovať problémy.
 
-Ulož to a spusti to znova:
+Ulož to a spusti znova:
 
 {% filename %}command-line{% endfilename %}
 
@@ -732,19 +724,19 @@ $ python3 python_intro.py
 Funguje to!
 ```
 
-Poznámka: Zapamätaj si že Windows nepozná príkaz "python3". Od teraz a naďalej, nahraď "python3" príkazom "python"pri spúšťaní súborov.
+Poznámka: Pamätaj, že Windows nepozná príkaz "python3". Odteraz vždy pri spúšťaní súborov nahraď "python3" príkazom "python".
 
 ### Čo ak podmienka nie je pravdivá?
 
-V predchádzajúcich príkladoch, bol kód vykonaný len vtedy, keď podmienky boli pravdivé. Ale Python má tiež príkazy `elif` a `else`:
+V predcházajúcich príkladoch sa náš kód vykonal, len keď podmienka bola pravdivá (True). Ale Python má aj príkazy `elif` a `else`:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
 if 5 > 2:
-    print('5 is indeed greater than 2')
+    print('5 je naozaj viac ako 2')
 else:
-    print('5 is not greater than 2')
+    print('5 nie je viac ako 2')
 ```
 
 Keď to spustíš, vypíše to:
@@ -753,20 +745,20 @@ Keď to spustíš, vypíše to:
 
     $ python3 python_intro.py
     5 je naozaj viac ako 2
+    
 
-
-Ak by 2 bolo väčšie ako 5, spustil by sa druhý príkaz. Jednoduché, nie? Pozrime sa, ako funguje `elif`:
+Ak by 2 bolo viac ako 5, spustil by sa druhý príkaz. Pozrime sa, ako funguje `elif`:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-name = 'Sonja'
-if name == 'Ola':
-    print('Ahoj Ola!')
-elif name == 'Sonja':
-    print('Ahoj Sonja!')
+meno = 'Sona'
+if meno == 'Ola':
+    print('Cau Ola!')
+elif meno == 'Sona':
+    print('Cau Sona!')
 else:
-    print('Ahoj neznama!')
+    print('Cau neznama!')
 ```
 
 a po spustení:
@@ -774,111 +766,111 @@ a po spustení:
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
-    Ahoj Sonja!
+    Cau Sona!
+    
 
+Všimla si si, čo sa stalo? `elif` ti dovolí pridať dodatočné podmienky, ktoré sa spustia, ak predchádzajúce podmienky nie sú splnené.
 
-Všimla si si, čo sa stalo? `elif` ti dovolí pridať dodatočné podmienky, ktoré sa spustia, ak sú predchádzajúce nesplnené.
-
-Za prvý `if` môžeš dať `elif` toľkokrát, koľko len chceš. Napríklad:
+Za prvý `if` môžeš dať `elifov` toľko, koľko len chceš. Napríklad:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-volume = 57
-if volume < 20:
-    print("It's kinda quiet.")
+hlasitost = 57
+if hlasitost < 20:
+    print("Je to pomerne tiche.")
 elif 20 <= volume < 40:
-    print("It's nice for background music")
+    print("Je to fajn ako hudba na pozadi")
 elif 40 <= volume < 60:
-    print("Perfect, I can hear all the details")
+    print("Super, pocujem vsetky detaily")
 elif 60 <= volume < 80:
-    print("Nice for parties")
+    print("Fajn na party")
 elif 80 <= volume < 100:
-    print("A bit loud!")
+    print("Trochu hlasne!")
 else:
-    print("My ears are hurting! :(")
+    print("Bolia ma usi! :(")
 ```
 
-Python prejde všetkými podmienkami v poradí a vypíše:
+Python prejde všetkými podmienkami poporade a vypíše:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
     Super, pocujem vsetky detaily
-
+    
 
 ## Komentáre
 
-Komentáre su riadky, ktoré sa začínajú s `#`. Po `#` môžeš napísať hocičo, Python to bude ignorovať. Komentáre urobia tvoj kód čitateľnejším pre iných ludí.
+Komentáre (comments) sú riadky, ktoré sa začínajú znakom `#`. Po `#` môžeš napísať hocičo, Python to bude ignorovať. Komentáre môžu spraviť tvoj kód čitateľnejším pre iných ludí.
 
-Pozrime sa ako to vyzerá:
+Pozrime sa, ako to vyzerá:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-# Change the volume if it's too loud or too quiet
-if volume < 20 or volume > 80:
-    volume = 50
-    print("That's better!")
+# Zmen hlasitost, ak je prilis silna alebo slaba
+if hlasitost < 20 or hlasitost > 80:
+    hlasitost = 50
+    print("Lepsie!")
 ```
 
-Nemusíš písať komentár pre každý riadok kódu čo napíšeš, ale je užitočné vysvetliť prečo tvoj kód niečo robǐ, alebo stručne popísať keď robí niečo zložité.
+Nemusíš písať komentár pre každý riadok kódu, čo napíšeš, ale je užitočné vysvetliť, prečo tvoj kód niečo robǐ, alebo stručne zhrnúť, čo sa deje, keď robí niečo zložité.
 
 ### Zhrnutie
 
-V posledných troch cvičeniach si sa naučila:
+V posledných pár cvičeniach si sa naučila:
 
 - **porovnávať veci** - v Pythone môžeš porovnávať veci pomocou znamienok `>`, `>=`, `==`, `<=`, `<` a operátorov `and`, `or`
-- **Booleovské/logické premenné** - typ objektu, ktorý môže mať len jednu z dvoch hodnôt: `True` (pravda) alebo `False` (nepravda)
-- **Ukladať súbory** - ukladanie kódu v súboroch, takže môžete spúšťať väčšie programy.
+- **boolean** - typ objektu, ktorý môže mať len jednu z dvoch hodnôt: `True` (pravda) alebo `False` (nepravda)
+- **ukladať súbory** - ukladanie kódu v súboroch, vďaka čomu môžeme spúšťať väčšie programy
 - **if... elif... else** - príkazy, ktoré ti umožňujú spustiť kód, iba ak sú splnené určité podmienky.
-- **comments** - lines that Python won't run which let you document your code
+- **komentáre** - riadky, ktoré Python nebude spúšťať, vďaka ktorým môžeš svoj kód zdokumentovať
 
-Teraz je čas na poslednú časť tejto kapitoly!
+Prišiel čas na poslednú časť tejto kapitoly!
 
 ## Tvoje vlastné funkcie!
 
-> Pre čitateľov doma: Táto kapitola je spracovaná v [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0) videu.
+> Pre čitateľky a čitateľov doma: Táto kapitola je spracovaná vo videu [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0).
 
-Pamätáš si funkcie ako napríklad `len()`, ktoré môžeš v Pythone spúšťať? Máme pre teba dobrú správu - teraz sa naučíš ako napísať vlastnú funkciu!
+Pamätáš si funkcie ako napríklad `len()`, ktoré môžeš v Pythone spúšťať? Máme pre teba dobrú správu - teraz sa naučíš, ako napísať vlastnú funkciu!
 
-Funkcia je postupnosť inštrukcií, ktoré by mal Python spustiť. Každá funkcia v Pythone začína kľúčovým slovom `def`, má svoje meno a môže mať nejaké parametre. Skusme to. Nahraď kód v **python_intro.py** týmto:
+Funkcia je postupnosť inštrukcií, ktoré by mal Python spustiť. Každá funkcia v Pythone začína kľúčovým slovom `def`, má svoje meno a môže mať nejaké parametre. Vyskúšajme si to. Nahraď kód v **python_intro.py** týmto:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-def hi():
+def ahoj():
     print('Ahoj!')
     print('Ako sa mas?')
 
-hi()
+ahoj()
 ```
 
-OK, naša prvá funkcia je pripravená!
+OK, naša prvá funkcia je hotová!
 
-Možno sa čuduješ prečo sme na koniec súboru napísali názov funkcie. To preto, lebo Python číta súbor a vykonáva kód od vrchu po spodok. Takže aby sme mohli našu funkciu použiť, musíme jej názov napísať opäť.
+Možno sa čuduješ, prečo sme na koniec súboru napísali názov funkcie. Keď sme napísali `def ahoj():` a za tým odsadené riadky, písali sme inštrukcie, čo má funkcia `ahoj()` robiť. Python tieto inštrukcie prečíta a zapamätá si ich, ale funkciu zatiaľ nespustí. Aby sme Pythonu povedali, že funkciu má spustiť, musíme ju zavolať (call) pomocou `ahoj()`. Python číta a spúšťa obsah nášho súboru zhora nadol, takže funkciu musíme najprv definovať a až potom zavolať.
 
-Spusťme to a pozrime sa, čo sa stane:
+Poďme to spustiť a pozrime sa, čo sa stane:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
     Ahoj!
     Ako sa mas?
+    
 
+Poznámka: Ak to nefunguje, žiadne strachy! Výstup ti pomôže zistiť prečo:
 
-Poznámka: Ak nefunguje, nepanikár! Výstup ti pomôže zistiť dôvod, prečo:
+- Ak sa ti zjaví `NameError`, znamená to, že si niečo chybne napísala, takže by si si mala overiť, že si použila rovnaký názov, keď si funkciu vytvárala pomocou `def ahoj()` a keď si ju zavolala pomocou `ahoj()`.
+- Ak sa ti zjaví `IndentationError`, uisti sa, že oba `print` riadky majú rovnaký počet medzier od začiatku riadku: Python vyžaduje, aby všetky riadky boli pedantne zarovnané.
+- Ak nevidíš žiaden výstup, tak sa pozri, či posledné `ahoj()` *nie je* odsadené - ak je, tento riadok sa stal súčasťou funkcie a nikdy sa nespustí.
 
-- Ak sa ti zjaví `NameError`, to znamená, že si niečo chybne napísala, takže by si mala overiť, že si použila rovnaké meno, keď si vytvárala pomocou `def hi()` a keď si ju zavolala pomocou `hi()`.
-- Ak sa ti zjaví `IndentationError`, uisti sa, že oba `print` riadky, majú rovnaký počet medzier od začiatku riadku: python vyžaduje aby všetky riadky boli pedatne zarovnané.
-- Ak nevidíš žiaden výstup, tak sa pozri či posledné `hi()` *nie je* odsadené - ak je, ten riadok sa stal súčasťou funkcie a nikdy nedojde k jeho spusteniu.
-
-Poďme vytvoriť našu prvú funkciu s parametrami. Použijeme predchádzajúci príklad - funkcia, ktorá hovorí "ahoj" osobe, ktorá ju spustí - s menom:
+Poďme vytvoriť našu prvú funkciu s parametrami. Použijeme predchádzajúci príklad - funkciu, ktorá hovorí "ahoj" osobe, ktorá ju spustí - s menom:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-def hi(name):
+def ahoj(meno):
 ```
 
 Ako vidíš, dali sme našej funkcii parameter, ktorý sme nazvali `meno`:
@@ -886,50 +878,50 @@ Ako vidíš, dali sme našej funkcii parameter, ktorý sme nazvali `meno`:
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-def hi(meno):
+def ahoj(meno):
     if meno == 'Ola':
         print('Ahoj Ola!')
-    elif meno == 'Sonja':
-        print('Ahoj Sonja!')
+    elif meno == 'Sona':
+        print('Ahoj Sona!')
     else:
         print('Ahoj neznama!')
 
-hi()
+ahoj()
 ```
 
-Zapamätaj si: Funkcia `print` je odsadená o 4 medzery vo vnútri príkazu `if`. Je to preto, lebo funkcia sa spustí, len ak je splnená podmienka. Pozrime sa ako to funguje:
+Pamätaj: Funkcia `print` je odsadená o 4 medzery vo vnútri príkazu `if`. Je to preto, lebo funkcia sa spustí, len ak je splnená podmienka. Pozrime sa, ako to funguje:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
     $ python3 python_intro.py
     Traceback (most recent call last):
     File "python_intro.py", line 10, in <module>
-      hi()
-    TypeError: hi() missing 1 required positional argument: 'meno'
+      ahoj()
+    TypeError: ahoj() missing 1 required positional argument: 'meno'
+    
 
-
-Ups, chyba. Našťastie Python nám dáva vcelku užitočnú chybovú hlášku. Hovorí nám, že funkcia `hi()` (tá, čo sme definovali) má jeden povinný argument (s názvom `meno`) a že sme mu ju zabudli zadať pri volaní funkcie. Opravme to na konci súboru:
+Ups, chyba. Našťastie, Python nám dáva veľmi užitočnú chybovú hlášku. Hovorí nám, že funkcia `ahoj()` (tá, čo sme definovali) má jeden povinný argument (s názvom `meno`) a že sme mu ju zabudli zadať pri volaní funkcie. Opravme to na konci súboru:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-hi("Ola")
+ahoj("Ola")
 ```
 
-A znova ho spusti:
+A znova ho spustime:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
     Ahoj Ola!
-
+    
 
 A čo ak zmeníme meno?
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-hi("Sonja")
+ahoj("Sona")
 ```
 
 A spustíme to:
@@ -937,56 +929,56 @@ A spustíme to:
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
-    Ahoj Sonja!
+    Ahoj Sona!
+    
 
-
-No a čo si myslíš, čo sa stane, ak tam napíšeš iné meno? (Nie Ola ani Sonja). Vyskúšaj a uvidíš, či bol tvoj predpoklad správny. Malo by ti vypísať toto:
+No a čo si myslíš, čo sa stane, ak tam napíšeš iné meno? (Nie Ola, ani Sona.) Vyskúšaj a uvidíš, či bol tvoj predpoklad správny. Malo by ti to vypísať toto:
 
 {% filename %}command-line{% endfilename %}
 
-    Ahoj neznáma!
+    Ahoj neznama!
+    
 
+Nie je to super? Vďaka tomu nemusíš písať dookola to isté zakaždým, keď chceš zmeniť meno človeka, ktorého má funkcia pozdraviť. A to je presne dôvod, prečo potrebujeme funkcie - aby sme sa nemuseli v kóde opakovať!
 
-Úžasné, nie? Vďaka tomu nemusíš prepisovať dokola to isté zakaždým, keď chceš zmeniť meno osoby, ktorú má funkcia pozdraviť. A to je presne dôvod, prečo potrebujeme funkcie - aby sme nemuseli opakovať svoj kód!
-
-Urobme to teda trochu rozumnejšie - existujú viac ako dve mená a písať podmienku pre každé by bolo trochu náročné, však?
+Skúsme to trochu inak. Existuje viac mien ako len dve a písať samostatnú podmienku pre každé jedno by bolo ťažké, nie? Nahraď obsah svojho súboru týmto:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-def hi(meno):
+def ahoj(meno):
     print('Ahoj ' + meno + '!')
 
-hi("Katka")
+ahoj("Kika")
 ```
 
-Teraz spusťme kód:
+Teraz tento kód spustime:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
-    Ahoj Katka!
+    Ahoj Kika!
+    
 
-
-Gratulujeme! Práve si sa naučila ako sa píšu funkcie! :)
+Gratulujeme! Práve si sa naučila, ako sa píšu funkcie! :)
 
 ## Cykly
 
-> Pre čitateľov doma: Táto kapitola je spracovaná v [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) videu.
+> Pre čitateľky a čitateľov doma: Táto kapitola je spracovaná vo videu [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0).
 
 Toto je už posledná časť. Išlo to rýchlo, však? :)
 
-Programátori sa neradi opakujú. Programovanie je o automatizácii vecí, takže nechceme zdraviť každú osobu manuálne, nie? A vtedy nám prídu vhod cykly.
+Programátori a programátorky sa neradi opakujú. Programovanie je o automatizácii vecí, takže nechceme zdraviť každú osobu manuálne, však? A tu nám prídu vhod cykly (loops).
 
-Ešte si spomínaš na zoznamy? Pripravme zoznam dievčat:
+Ešte si spomínaš na zoznamy? Spravme si zoznam dievčat:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-dievcata = ['Katka', 'Monika', 'Zuzka', 'Ola', 'Ty']
+dievcata = ['Katka', 'Kika', 'Zuza', 'Ola', 'Ty']
 ```
 
-Chceme ich pozdraviť všetky menom. Na to máme funkciu `hi`, tak ju použime v cykle:
+Chceme ich pozdraviť všetky menom. Na to máme funkciu `ahoj`, tak ju použime v cykle:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -996,17 +988,17 @@ for meno in dievcata:
 
 Príkaz `for` sa správa podobne ako `if`; kód pod oboma z nich musí byť odsadený o štyri medzery.
 
-Tu je plný kód, ktorý napíšeme do súboru:
+Tu je celý kód, ktorý napíšeme do súboru:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-def hi(meno):
+def ahoj(meno):
     print('Ahoj ' + meno + '!')
 
-dievcata = ['Katka', 'Monika', 'Zuzka', 'Ola', 'Ty']
+dievcata = ['Katka', 'Kika', 'Zuza', 'Ola', 'Ty']
 for meno in dievcata:
-    hi(meno)
+    ahoj(meno)
     print('Dalsie dievca')
 ```
 
@@ -1017,17 +1009,17 @@ A keď to spustíme:
     $ python3 python_intro.py
     Ahoj Katka!
     Dalsie dievca
-    Ahoj Monika!
+    Ahoj Kika!
     Dalsie dievca
-    Ahoj Zuzka!
+    Ahoj Zuza!
     Dalsie dievca
     Ahoj Ola!
     Dalsie dievca
     Ahoj Ty!
     Dalsie dievca
+    
 
-
-Ako vidíš, všetko, čo dáš do príkazu `for` s oddsadením sa bude opakovať pre každý prvok zoznamu `dievcata`.
+Ako vidíš, všetko, čo dáš do príkazu `for` s tým, že to odsadíš, sa zopakuje pre každý prvok zoznamu `dievcata`.
 
 `for` môžeš pomocou funkcie `range` použiť aj na čísla:
 
@@ -1047,18 +1039,18 @@ for i in range(1, 6):
     3
     4
     5
+    
 
+`range` je funkcia, ktorá vytvára zoznam s postupnosťou čísel (krajné čísla funkcii poskytneš ako parametre).
 
-`range` je funkcia, ktorá vytvára zoznam čísel s postupnosťou čísel (krajné čísla funkcii poskytneš ako parametre).
-
-Všimni si, že druhé číslo sa nenachádza vo výstupnom zozname (teda `range(1, 6)` počíta od 1 po 5, ale neobsahuje číslo 6). To je preto, lebo "range" je jednostranne otvorený, čo znamená, že obsahuje prvú hodnotu, ale nie poslednú.
+Všimni si, že druhé číslo sa nenachádza vo výstupnom zozname (teda `range(1, 6)` počíta od 1 po 5, ale neobsahuje číslo 6). To preto, lebo "range" je jednostranne otvorený, čo znamená, že obsahuje prvú hodnotu, ale nie poslednú.
 
 ## Zhrnutie
 
-To je všetko. **Si úplne geniálna!** Toto bola náročná kapitola, takže by si mala byť na seba pyšná. My sme rozhodne hrdí na teba, že si to zvládla až potiaľto!
+To je všetko. **Si úplne super!** Toto bola náročná kapitola, takže by si mala byť na seba pyšná. My sme na teba rozhodne hrdí, že si to zvládla až potiaľto!
 
-Oficiálnu a plnú verziu tutoriálu najdeš na https://docs.python.org/3/tutorial/. Tam najdeš podrobnejšie a úplné informácie o jazyku. Nech sa darí :)
+Oficiálnu verziu tutoriálu najdeš na https://docs.python.org/3/tutorial/. Prevedie ťa jazykom podrobnejšie. Nech sa darí! :)
 
-Teraz na chvíľu si daj pauzu - natiahni sa trochu, poprechádzaj sa, nechaj svoje oči oddýchnuť si - a potom prejdeme na ďalšiu kapitolu. :)
+Teraz na chvíľu si daj pauzu - natiahni sa trochu, poprechádzaj sa, nech si tvoje oči oddýchnu - a potom prejdeme na ďalšiu kapitolu. :)
 
 ![Koláčik](images/cupcake.png)

@@ -1,48 +1,51 @@
 # Úvod do HTML
 
-Môžno sa pýtaš, čo jej šablóna?
+Možno sa pýtaš, čo je to šablóna?
 
-Šablóna je súbor, ktorý môžeme znova opakovane použiť, aby sme prezentovali nové informácie v konzistentnom formáte - šablónu môžeš použiť napríklad ako pomôcku pri písaní listu, pretože aj napriek tomu, že každý list môže obsahovať rozdielnu správu a byť adresovaný inej osobe, bude mať rovnaký formát.
+Šablóna (template) je súbor, ktorý môžeme viackrát použiť, aby sme ukazovali rôzne dáta v rovnakom formáte. Šablónu môžeš použiť napríklad ako pomôcku pri písaní listu, pretože aj napriek tomu, že každý list môže obsahovať rozdielnu správu a byť adresovaný inej osobe, bude mať rovnaký formát.
 
-Formát Django šablóny je popísaný v jazyku nazývanom HTML (to je to HTML, ktoré sme spomenuli v prvej kapitole **Ako funguje Internet**).
+Formát Django šablóny je popísaný v jazyku nazývanom HTML (to je to HTML, ktoré sme spomenuli v prvej kapitole **Ako funguje internet**).
 
 ## Čo je HTML?
 
-HTML je kód, ktorý je interpretovaný tvojím webovým prehliadačom - ako napríklad Chrome, Firefox alebo Safari - aby tak zobrazil užívateľom webové stránky.
+HTML je kód, ktorý je interpretovaný tvojím webovým prehliadačom - ako napríklad Chrome, Firefox alebo Safari - aby tak zobrazil užívateľkám a užívateľom webové stránky.
 
-HTML znamená "HyperText Markup Language". **HyperText** znamená, že sa jedná o typ textu, ktorý podporuje hypertextové odkazy medzi stránkami. **Markup** znamená, že sme vzali dokument a označili ho kódom aby sme niečomu povedali (v tomto prípade prehliadaču) ako interpretovať stránku. HTML kód je budovaný pomocou **tagov**, ktoré začínajú znakom `<` a končia znakom `>`. Tieto tagy reprezentujú značkovacie (Markup) **elementy**.
+HTML znamená "HyperText Markup Language". **HyperText** znamená, že sa jedná o typ textu, ktorý podporuje hypertextové odkazy medzi stránkami. **Markup** znamená, že sme vzali dokument a označili ho kódom, aby sme niečomu povedali (v tomto prípade prehliadaču), ako interpretovať stránku. HTML kód je budovaný pomocou **tagov**, ktoré začínajú znakom `<` a končia znakom `>`. Tieto tagy reprezentujú značkovacie (markup) **elementy**.
 
 ## Tvoja prvá šablóna!
 
-Vytvorenie šablóny znamená vytvorenie súboru šablóny. Všetko je súbor, však? To si si asi už všimla.
+Vytvorenie šablóny znamená, že najprv musíme vytvoriť šablónový súbor. Všetko je súbor, však? To si si asi už všimla.
 
-Šablóny sú uložené v zložke `blog/templates/blog`. Takže najprv vytvor v zložke blogu zložku s názvom `templates`. Potom vytvor ďalšiu zložku s názvom `blog` v zložke templates:
+Šablóny sú uložené v zložke `blog/templates/blog`. Takže najprv vytvor v priečinku blog priečinok s názvom `templates`. Potom vytvor ďalší priečinok s názvom `blog` v priečinku templates:
 
     blog
     └───templates
         └───blog
     
 
-(Možno sa pýtaš prečo potrebujeme dve zložky s menom `blog` - ako neskôr zistíš, je to len užitočna konvencia, ktorá ti uľahčí život keď sa veci začnú komplikovať.)
+(Možno sa pýtaš, prečo potrebujeme dve zložky s menom `blog` - ako neskôr zistíš, je to len užitočná konvencia, ktorá ti uľahčí život, keď sa veci začnú komplikovať.)
 
-A teraz vytvor súbor `post_list.html` (zatiaľ ho ponechaj prázdny) v zložke `blog/templates/blog`.
+A teraz vytvor súbor `post_list.html` (zatiaľ ho ponechaj prázdny) v priečinku `blog/templates/blog`.
 
 Pozri sa, ako momentálne vyzerá tvoja stránka: http://127.0.0.1:8000/
 
-> Pokiaľ stále vidíš chybu `TemplateDoesNotExist`, skús vyreštartovať svoj server. Choď do príkazového riadku, zastav server stlačením Ctrl+C (stlač naraz tlačidlá Control a C) a spusti ho znova pomocou príkazu `python manage.py runserver`.
+> Pokiaľ stále vidíš chybu `TemplateDoesNotExist`, skús reštartovať svoj server. Choď do príkazového riadku, zastav server stlačením Ctrl+C (stlač naraz tlačidlá Control a C) a spusti ho znova pomocou príkazu `python manage.py runserver`.
 
 ![Obrázok 11.1](images/step1.png)
 
-Žiadne ďalšie chyby! Gratulujeme :) Avšak tvoja stránka zatiaľ neukazuje nič, okrem prázdnej stránky, pretože tvoja šablóna je taktiež prázdna. To musíme opraviť.
+Chyba je preč! Gratulujeme :) Avšak tvoja webstránka zatiaľ neukazuje nič, len prázdnu stránku, pretože tvoja šablóna je taktiež prázdna. To musíme napraviť.
 
-Pridaj nasledujúci kód do tvojho súboru šablóny:
+Otvor svoj nový súbor v editore a pridaj doň nasledovné:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
+<body>
     <p>Hi there!</p>
     <p>It works!</p>
+</body>
 </html>
 ```
 
@@ -50,10 +53,11 @@ Takže ako momentálne vyzerá tvoja stránka? To môžeš zistiť kliknutím na
 
 ![Obrázok 11.2](images/step3.png)
 
-Funguje to! Dobrá práca :)
+Funguje to. Dobrá práca! :)
 
-* Najzákladnejší tag, `<html>`, je vždy na začiatku každej webovej stránky a `</html>` je vždy na jej konci. Ako môžeš vidieť, celý obsah stránky sa nachádza medzi začínajúcim tagom `<html>` a uzatvárajúcim tagom `</html>`
-* `<p>` je tag pre element odstavca; `</p>` uzatvára každý odstavec
+* Riadok `<!DOCTYPE html>` nie je HTML tag. Len definuje typ dokumentu. V tomto prípade hovorí prehliadaču, že typ nášho dokumentu je [HTML5](https://html.spec.whatwg.org/#the-doctype). Každý HTML5 súbor začína takto.
+* Najzákladnejší tag, `<html>`, je vždy na začiatku každej webovej stránky, a `</html>` je vždy na jej konci. Ako môžeš vidieť, celý obsah stránky sa nachádza medzi začínajúcim tagom `<html>` a uzatvárajúcim tagom `</html>`
+* `<p>` je tag pre element odstavca; `</p>` každý odstavec uzatvára
 
 ## Head a body
 
@@ -61,15 +65,16 @@ Každá HTML stránka je taktiež rozdelená do dvoch elementov: **head** a **bo
 
 * **head** je element, ktorý obsahuje informácie o dokumente, ktoré nie sú zobrazené na obrazovke.
 
-* **body** je element, ktorý obsahuje všetko ostatné zobrazené ako časť webovej stránky.
+* **body** je element, ktorý obsahuje všetko ostatné, zobrazené ako časť webovej stránky.
 
-`<head>` používame, aby sme povedali prehliadaču o konfigurácii stránky a `<body>` aby sme mu povedali, čo na stránke je.
+`<head>` používame, aby sme povedali prehliadaču o konfigurácii stránky, a `<body>`, aby sme mu povedali, čo na stránke je.
 
-Napríklad môžeš dať stránke titulok pomocou title elementu v hlavičke `<head>` takto:
+Napríklad môžeš dať stránke titulok pomocou elementu title v elemente `<head>` takto:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Ola's blog</title>
@@ -85,76 +90,85 @@ Ulož súbor a znova načítaj svoju stránku.
 
 ![Obrázok 11.3](images/step4.png)
 
-Všimni si ako prehliadač rozumie, že "Ola's blog" je titulok tvojej stránky? Interpretuje `<title>Ola's blog</title>` a vkladá text ako názov záložky (tento názov bude použitý aj keď si stránku uložíš do záložky a tak ďalej).
+Všimla si si, ako prehliadač porozumel, že "Ola's blog" je titulok tvojej stránky? Prečítal si slová `<title>Ola's blog</title>` a vložil ich do záhlavia záložky v tvojom prehliadači (tiež ich bude používať, keby si si stránku napríklad uložila, atď.).
 
 Pravdepodobne si taktiež všimneš, že každý začínajúci tag má svoj *uzatvárajúci tag* obsahujúci `/`, a že elementy sú *vnorené* (tj. nemôžeš daný tag zatvoriť, kým nie sú taktiež zatvorené všetky tagy, ktoré sú v jeho vnútri).
 
-Je to ako vkladať veci do krabice. Máš jednú veľkú krabicu, `<html></html>`; vo vnútri je `<body></body>`, a tá obsahuje menšie krabice: `<p></p>`.
+Je to, ako keby si vkladala veci do krabice. Máš jednu veľkú krabicu, `<html></html>`; vo vnútri je `<body></body>`, a tá obsahuje menšie krabice: `<p></p>`.
 
-Musíš dodržovať pravidlá *uzatvárania* tagov a *vnorenia* elementov - pokiaľ ich nebudeš dodržovať, prehliadač nemusí správne interpretovať tagy a tvoja stránka bude zobrazená nesprávne.
+Musíš dodržiavať pravidlá *uzatvárania* tagov a *vnorenia* elementov - pokiaľ ich nebudeš dodržiavať, prehliadač nemusí tagy správne interpretovať a tvoja stránka sa zobrazí nesprávne.
 
-## Uprav svoju šablónu
+## Upravenie tvojej šablóny
 
 Môžeš sa trocha pohrať s tým, že budeš upravovať svoju šablónu! Tu je zopár užitočných tagov:
 
-* `<h1>Hlavný nádpis</h1>` - pre tvoj najdôležitejší nádpis
-* `<h2>Podnádpis</h2>` pre nádpis na nižšej úrovni
-* `<h3>Pod-podnádpis</h3>`.. a tak ďalej až do `<h6>`
+* `<h1>Hlavný nadpis</h1>` - pre tvoj najdôležitejší nadpis
+* `<h2>Podnadpis</h2>` pre nadpis na nižšej úrovni
+* `<h3>Pod-podnadpis</h3>`... a tak ďalej až do `<h6>`
 * `<p>Odsek textu</p>`
-* `<em>text</em>` zdôrazňuje tvoj text
+* `<em>text</em>` zvýrazňuje tvoj text
 * `<strong>text</strong>` zvýrazňuje tvoj text o čosi viac
-* `<br>` vkladá nový riadok (do br nemôžeš nič vložiť a nemá uzatvárací tag)
+* `<br>` vkladá nový riadok (do br nemôžeš nič vložiť a nemá ani uzatvárací tag)
 * `<a href="https://djangogirls.org">link</a>` vytvára odkaz
-* `<ul><li>prvá položka</li><li>druhá položka</li></ul>` vytvára zoznam ako tento!
+* `<ul><li>prvá položka</li><li>druhá položka</li></ul>` vytvára zoznam, ako je tento!
 * `<div></div>` definuje sekciu stránky
+* `<nav></nav>` definuje skupinu navigačných odkazov
+* `<article></article>` (článok) definuje nezávislý obsah, ktorý má zmysel sám osebe
+* `<section></section>` definuje sekciu v dokumente
+* `<header></header>` definuje hlavičku dokumentu alebo sekcie
+* `<main></main>` definuje hlavný obsah dokumentu
+* `<aside></aside>` definuje obsah vedľa iného obsahu (napr. bočná lišta)
+* `<footer></footer>` definuje pätičku dokumentu alebo sekcie
+* `<time></time>` definuje konkrétny čas (alebo dátum a čas)
 
 Tu je príklad úplnej šablóny, skopíruj ho do súboru `blog/templates/blog/post_list.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
     </head>
     <body>
-        <div>
+        <header>
             <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+        </header>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
             <h2><a href="">My first post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
+        </article>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
+        <article>
+            <time>published: 14.06.2014, 12:14</time>
             <h2><a href="">My second post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
+        </article>
     </body>
 </html>
 ```
 
-Vytvorili sme tri `div` sekcie.
+Týmto sme vytvorili jednu hlavičkovú `header` sekciu a dve článkové `article` sekcie.
 
-* Prvá `div` sekcia obsahuje titulok nášho blogu - je to nádpis a odkaz
-* Ďalšie dva `div` elementy obsahujú príspevky blogu s časom publikovania, `h2` nádpisom príspevku, na ktorý sa dá kliknúť a dva `p` (odstavce) textu, jeden pre dátum a druhý pre náš príspevok.
+* Prvý `header` element obsahuje hlavný nadpis nášho blogu - je to nadpis a odkaz
+* Nasledujúce `article` elementy obsahujú naše blogové príspevky, každý s dátumom publikovania v `time` elemente, s nadpisom príspevku v `h2` elemente, na ktorý sa dá kliknúť, a s odstavcovým elementom `p`, ktorý predstavuje text nášho príspevku.
 
 Výsledok je nasledovný:
 
 ![Obrázok 11.4](images/step6.png)
 
-Jupí! Ale zatiaľ naša šablóna zobrazila len presne **rovnaké informácie** - kým pred chvíľou sme hovorili, že nám šablóny dovoľujú zobrazovať **rozdielne** informácie v **rovnakom formáte**.
+Jupí! Ale zatiaľ naša šablóna zobrazila len presne **tie isté dáta** - kým pred chvíľou sme hovorili, že nám šablóny dovoľujú zobrazovať **rozdielne** dáta v **rovnakom formáte**.
 
-To čo v skutočnosti chceme spraviť je zobraziť reálne príspevky pridané v Django admin rozhraní - a to je to, čo teraz spravíme.
+To, čo v skutočnosti chceme docieliť, je zobraziť reálne príspevky pridané v Django admin rozhraní - a to teraz aj spravíme.
 
-## Ešte jedna vec: nasaďte to!
+## Ešte jedna vec: nasaďme to!
 
-Bolo by skvelé, ak by sme všetky tieto veci mohli vidieť naživo na Internete, že? Spravme ďalšie PythonAnywhere nasadenie:
+Bolo by skvelé, ak by sme všetky tieto veci mohli vidieť naživo na internete, že? Spravme ďalšie PythonAnywhere nasadenie:
 
-### Commitni a pošli svoj kód na GitHub
+### Commitni a pošli svoj kód na Github
 
 Najprv sa pozrime, ktoré súbory sa zmenili od posledného nasadenia (tieto príkazy spusti lokálne, nie na PythonAnywhere):
 
@@ -163,32 +177,30 @@ Najprv sa pozrime, ktoré súbory sa zmenili od posledného nasadenia (tieto pr�
     $ git status
     
 
-Uisti sa, že si v zložke `djangogirls` a následne povedzme `gitu` nech zahrnie všetky zmeny v zložke:
+Uisti sa, že si v priečinku `djangogirls`, a následne povedz `gitu`, nech zahrnie všetky zmeny v priečinku:
 
 {% filename %}command-line{% endfilename %}
 
-    $ git add --all .
+    $ git add .
     
 
-> **Poznámka** - `--all` znamená, že `git` rozozná, ak si vymazala súbory (štandardne rozoznáva len nové/modifikované súbory). Spomeň si tiež (bolo to v kapitole 3), že `.` znamená aktuálny adresár.
-
-Predtým, ako nahráme všetky súbory, skontrolujme čo bude `git` nahrávať (všetky súbory, ktoré `git` nahrá by teraz mali byť zelené):
+Predtým, ako nahráme všetky súbory, skontrolujme, čo bude `git` nahrávať (všetky súbory, ktoré `git` nahrá, by teraz mali byť zelené):
 
 {% filename %}command-line{% endfilename %}
 
     $ git status
     
 
-Už sme skoro tam, teraz nastal čas mu povedať, aby uložil tieto zmeny v jeho histórii. Dáme mu "commit správu", kde popíšeme, čo sme zmenili. V tomto štádiu môžeš napísať čokoľvek, čo chceš, ale je nápomocné napísať čosi, čo je popisné natoľko, že si budeš v budúcnosti pamätať, čo si spravila.
+Už sme skoro tam, teraz nastal čas mu povedať, aby uložil tieto zmeny v jeho histórii. Dáme mu "commit správu" (commit message), kde popíšeme, čo sme zmenili. V tomto štádiu môžeš napísať čokoľvek, čo chceš, ale je nápomocné napísať čosi, čo je popisné natoľko, že si budeš v budúcnosti pamätať, čo si spravila.
 
 {% filename %}command-line{% endfilename %}
 
-    $ git commit -m "Zmeny v HTML pre stránku."
+    $ git commit -m "Zmeny v HTML pre stranku."
     
 
-> **Poznámka** - Uisti sa, že si použila dvojité úvodzovky okolo commit správy.
+> **Poznámka** Uisti sa, že si okolo commit správy použila dvojité úvodzovky.
 
-Po tom, čo sme to dokončili, nahráme (push) naše zmeny na GitHub:
+Keď to máme hotové, nahráme (push) naše zmeny na GitHub:
 
 {% filename %}command-line{% endfilename %}
 
@@ -199,17 +211,17 @@ Po tom, čo sme to dokončili, nahráme (push) naše zmeny na GitHub:
 
 * Otvor [konzolovú stránku PythonAnywhere](https://www.pythonanywhere.com/consoles/) a prejdi do svojej **Bash konzoly** (alebo naštartuj novú). Potom zadaj:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
+    $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-(Nezabudni nahradiť `<your-pythonanywhere-username>` svojím uživateľským menom na PythonAnywhere, bez hranatých zátvoriek).
+Nezabudni nahradiť `<your-pythonanywhere-domain>` svojou subdoménou na PythonAnywhere bez špicatých zátvoriek. Názov tvojej subdomény je zväčša tvoje užívateľské meno na PythonAnywhere, ale sú prípady, kedy môže byť trochu iný (napríklad, keď tvoje užívateľské meno obsahuje veľké písmená). Čiže ak ti tento príkaz nefunguje, skús spustiť `ls` (list files, alebo vypíš súbory), aby si zistila, ako sa tvoja subdoména/podadresár volá, a potom sa do tohto adresára presuň pomocou `cd`.
 
-A sleduj ako sa tvoj kód sťahuje. Pokiaľ chceš skontrolovať, že dorazil, môžeš skočiť do **záložky Files** a pozrieť sa na svoj kód na PythonAnywhere.
+Sleduj, ako sa tvoj kód sťahuje. Ak si chceš overiť, že už prišiel, prejdi na stránku **"Files"** a pozri sa na svoj kód na PythonAnywhere (po ostatné PythonAnywhere stránky sa vieš potom dostať pomocou tlačidla v menu na stránke s konzolou).
 
-* Nakoniec skoč do [záložky Web](https://www.pythonanywhere.com/web_app_setup/) a stlač **Reload** na tvojej webovej aplikácii.
+* A nakoniec prejdi na [záložku Web](https://www.pythonanywhere.com/web_app_setup/) a stlač **Reload** na svojej webovej aplikácii.
 
-Aktualizácia by mala prebehnuť a zmeny by mali byť dostupne v živej verzii! Obnov svoju stránku v prehliadači. Zmeny by mali byť viditeľné. :)
+Tvoje zmeny by mali byť online! Obnov svoju stránku v prehliadači. Zmeny by mali byť viditeľné. :)
