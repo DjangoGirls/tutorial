@@ -55,7 +55,7 @@ Choď na [GitHub.com](https://www.github.com) a zaregistruj si nový bezplatný 
 
 Gratulujeme, si pripravená začať! Pokiaľ máš stále zvyšný čas pred začiatkom workshopu, bolo by užitočné prečítať si pár začiatočníckych kapitol:
 
-* [Ako funguje Internet](../how_the_internet_works/README.md)
+* [Ako funguje internet](../how_the_internet_works/README.md)
 
 * [Úvod do príkazového riadku](../intro_to_command_line/README.md)
 

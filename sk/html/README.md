@@ -90,7 +90,7 @@ Ulož súbor a znova načítaj svoju stránku.
 
 ![Obrázok 11.3](images/step4.png)
 
-Všimla si si, ako prehliadač porozumel, že "Ola's blog" je titulok tvojej stránky? Prečítal si slová `<title>Ola's blog</title>` a vložil ich do záložky v tvojom prehliadači (tiež ich bude používať, keby si si stránku napríklad uložila, atď.).
+Všimla si si, ako prehliadač porozumel, že "Ola's blog" je titulok tvojej stránky? Prečítal si slová `<title>Ola's blog</title>` a vložil ich do záhlavia záložky v tvojom prehliadači (tiež ich bude používať, keby si si stránku napríklad uložila, atď.).
 
 Pravdepodobne si taktiež všimneš, že každý začínajúci tag má svoj *uzatvárajúci tag* obsahujúci `/`, a že elementy sú *vnorené* (tj. nemôžeš daný tag zatvoriť, kým nie sú taktiež zatvorené všetky tagy, ktoré sú v jeho vnútri).
 
@@ -164,13 +164,13 @@ Jupí! Ale zatiaľ naša šablóna zobrazila len presne **tie isté dáta** - k�
 
 To, čo v skutočnosti chceme docieliť, je zobraziť reálne príspevky pridané v Django admin rozhraní - a to teraz aj spravíme.
 
-## Ešte jedna vec: deploynime to!
+## Ešte jedna vec: nasaďme to!
 
-Bolo by skvelé, ak by sme všetky tieto veci mohli vidieť naživo na internete, že? Spravme ďalší PythonAnywhere deployment:
+Bolo by skvelé, ak by sme všetky tieto veci mohli vidieť naživo na internete, že? Spravme ďalšie PythonAnywhere nasadenie:
 
 ### Commitni a pošli svoj kód na Github
 
-Najprv sa pozrime, ktoré súbory sa zmenili od posledného deploymentu (tieto príkazy spusti lokálne, nie na PythonAnywhere):
+Najprv sa pozrime, ktoré súbory sa zmenili od posledného nasadenia (tieto príkazy spusti lokálne, nie na PythonAnywhere):
 
 {% filename %}command-line{% endfilename %}
 

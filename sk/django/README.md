@@ -16,11 +16,11 @@ Predstav si poštovú schránku (port), na ktorej sa sledujú prichádzajúce li
 
 ## Čo sa stane, ak si niekto vyžiada web stránku z tvojho servera?
 
-Keď na webový server príde žiadosť, tá je preposlaná do Djanga, ktoré sa pokúsi zistiť, čoho sa vlastne žiadosť týka. Najprv si zoberie adresu webstránky a zisťuje, čo má urobiť. Túto časť vykonáva Django **urlresolver** (všimni si, že adresa webstránku sa nazýva URL ( Uniform Resource Locator), takže názov *urlresolver* dáva zmysel). Nie je to žiadna veda - zoberie zoznam vzorov (patterns) a porovnáva ich s URL. Django overuje vzory od vrchu smerom dolu a ak nájde zhodu, pošle žiadosť príslušnej funkcii (ktorá sa nazýva *view*).
+Keď na webový server príde žiadosť, tá je preposlaná do Djanga, ktoré sa pokúsi zistiť, čoho sa vlastne žiadosť týka. Najprv si zoberie adresu webstránky a zisťuje, čo má urobiť. Túto časť vykonáva Django **urlresolver** (všimni si, že adresa webstránku sa nazýva URL (Uniform Resource Locator), takže názov *urlresolver* dáva zmysel). Nie je to žiadna veda - zoberie zoznam vzorov (patterns) a porovnáva ich s URL. Django overuje vzory od vrchu smerom dolu a ak nájde zhodu, pošle žiadosť príslušnej funkcii (ktorá sa nazýva *view*).
 
 Predstav si poštárku s listom. Kráča ulicou a porovnáva čísla domov s číslom na liste. Ak sa zhoduje, nechá tam list. Takto funguje urlresolver!
 
-Vo funkcii *view* sa dejú všetky zaujímavé veci: môžeme sa pozrieť do databázy a vyhľadať nejaké informácie. Čo ak užívateľka požiada o zmenu v údajoch? Napríklad listom, v ktorom je žiadosť "Prosím, zmeňte popis mojej práce." *view* overí, či máš oprávnenie na túto zmenu, potom aktualizuje popis tvojej práce a naspäť pošle správu: "Hotovo!". Následne *view* vygeneruje odpoveď a Django ho pošle do prehliadača patriacemu užívateľke.
+Vo funkcii *view* sa dejú všetky zaujímavé veci: môžeme sa pozrieť do databázy a vyhľadať nejaké informácie. Čo ak užívateľka požiada o zmenu v údajoch? Je to, akoby poslala list s obsahom: "Prosím, zmeňte popis mojej práce." *view* overí, či je oprávnená takú zmenu spraviť, potom popis práce zaktualizuje a naspäť pošle správu: "Hotovo!". Následne *view* vygeneruje odpoveď a Django ho pošle do prehliadača patriacemu užívateľke.
 
 Samozrejme, vyššie uvedený popis je trochu zjednodušený, ale zatiaľ ešte nepotrebuješ vedieť všetky technické detaily. Pre všeobecnú predstavu to stačí.
 

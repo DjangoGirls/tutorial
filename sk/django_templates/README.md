@@ -4,7 +4,7 @@ Prišiel čas zobraziť nejaké údaje! Na to nám Django ponúka užitočné za
 
 ## Čo sú to šablónové tagy?
 
-V HTML vlastne nemôžeš písať pythonový kód, pretože prehliadače mu nerozumejú. Poznajú len HTML. Vieme, že HTML je skôr statické, kým Python je oveľa dynamickejší.
+Totiž, v HTML nemôžeš písať pythonový kód, pretože prehliadače mu nerozumejú. Poznajú len HTML. Vieme, že HTML je skôr statické, kým Python je oveľa dynamickejší.
 
 **Šablónové tagy v Djangu** nám umožňujú previesť pythonové veci do HTML, takže dynamické webové stránky môžeš vytvoriť rýchlejšie. Paráda!
 
@@ -72,7 +72,7 @@ Všimla si si, že sme tentokrát použili trochu iný zápis (`{{ post.title }}
 
 ## Ešte jedna vec
 
-Bolo by fajn vidieť, či bude tvoja web stránka stále funkčná aj na internete, však? Skúsme ju znova deploynúť na PythonAnywhere. Tu je rekapitulácia postupu…
+Bolo by fajn vidieť, či bude tvoja web stránka stále funkčná aj na internete, však? Skúsme ju znova nasadiť na PythonAnywhere. Tu je rekapitulácia postupu…
 
 * Najskôr pošli svoj kód na GitHub
 

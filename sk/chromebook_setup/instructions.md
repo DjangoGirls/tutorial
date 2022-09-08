@@ -11,21 +11,21 @@ Cloud IDE je nástroj, ktorý ti poskytne editor kódu a prístup na počítač,
 3. Klikni na *New Server* a vyber si Django appku
 4. Klikni na tlačítko Terminal (na ľavej strane okna)
 
-Teraz by si mala vidieť rozhranie s bočnou lištou, tlačidlami naľavo. Klikni na tlačítko Terminal, aby sa ti otvorilo terminálové okno s takýmto promptom:
+Teraz by si mala vidieť rozhranie s bočnou lištou a tlačidlami naľavo. Klikni na tlačítko Terminal, aby sa ti otvorilo terminálové okno s takýmto promptom:
 
 {% filename %}Terminal{% endfilename %}
 
     $
     
 
-Terminál na PaizaCloud Cloud IDE je pripravený na tvoje inštrukcie. Okno môžeš zmenšiť, zväčšiť, alebo maximalizovať, aby bolo trochu väčšie.
+Terminál na PaizaCloud Cloud IDE je pripravený na tvoje inštrukcie. Oknu môžeš zmeniť veľkosť alebo ho maximalizovať, aby bolo trochu väčšie.
 
 #### AWS Cloud9
 
 Cloud 9 momentálne vyžaduje, aby si si vytvorila AWS účet a vložila informácie o kreditnej karte.
 
 1. Nainštaluj si Cloud 9 z [Chrome webového obchodu](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Choď na [c9.io](https://c9.io) a klikni *Get started with AWS Cloud9*
+2. Choď na [c9.io](https://c9.io) a klikni na *Get started with AWS Cloud9*
 3. Vytvor si AWS účet (je potrebné zadať údaje o svojej kreditnej karte, ale účet môžeš používať zdarma).
 4. Na AWS Dashboarde napíš do vyhľadávania *Cloud9* a klikni naň
 5. Na Cloud 9 dashboarde klikni na *Create environment*
@@ -55,7 +55,7 @@ Táto dolná časť je tvoj terminál. Môžeš ho použiť na poslanie inštruk
     app@nazov-tvojho-glitch-projektu:~
     
 
-Ak používať Glitch.com ako tvoje cloud IDE, nemusíš si vytvárať virtuálne prostredie. Namiesto toho vytvor nasledujúce súbory ručne:
+Ak používaš Glitch.com ako tvoje cloud IDE, nemusíš si vytvárať virtuálne prostredie. Namiesto toho vytvor nasledujúce súbory ručne:
 
 {% filename %}glitch.json{% endfilename %}
 
@@ -151,7 +151,7 @@ Vytvor si [GitHub](https://github.com) účet.
 
 ### PythonAnywhere
 
-DjangoGirls tutoriál obsahuje kapitolu o niečom, čomu sa hovorí deployment. Je to proces prenesenia kódu, ktorý poháňa tvoju novú webovú aplikáciu, na verejne dostupný počítač (ešte nazývaný aj server), aby aj ostatní ľudia videli tvoju prácu.
+DjangoGirls tutoriál obsahuje kapitolu o niečom, čomu sa hovorí nasadenie (deployment). Je to proces prenesenia kódu, ktorý poháňa tvoju novú webovú aplikáciu, na verejne dostupný počítač (ešte nazývaný aj server), aby aj ostatní ľudia videli tvoju prácu.
 
 Táto časť je trochu zvláštna, keď pracuješ s týmto tutoriálom na Chromebooku, lebo už používaš počítač, ktorý je na internete (na rozdiel od notebooku). Napriek tomu je stále užitočná, lebo si môžeme predstaviť pracovné prostredie Cloud 9 ako miesto, kde sa nachádza nedokončená práca, a PythonAnywhere ako miesto, kde ukážeme našu prácu, keď bude hotová.
 

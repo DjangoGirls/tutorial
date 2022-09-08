@@ -4,7 +4,7 @@
 > 
 > Táto kapitola je inšpirovaná prednáškou "Ako funguje Internet" od Jessicy McKellar (http://web.mit.edu/jesstess/www/).
 
-Stavíme sa, že Internet používaš každý deň. Ale vieš, čo sa udeje, keď napíšeš adresu ako https://djangogirls.org do prehliadača a stlačíš `enter`?
+Stavíme sa, že internet používaš každý deň. Ale vieš, čo sa udeje, keď napíšeš adresu ako https://djangogirls.org do prehliadača a stlačíš `enter`?
 
 Prvá vec, ktorú musíš vedieť, je, že webová stránka je len kôpka súborov uložených na pevnom disku, presne ako tvoje filmy, hudba či obrázky. Ale je tu jedna vec, ktorá je špecifická pre webové stránky: obsahujú počítačový kód nazývaný HTML.
 
@@ -12,7 +12,7 @@ Pokiaľ nemáš skúsenosti s programovaním, môže byť pochopenie HTML zo za�
 
 Ako každý iný súbor, aj HTML súbor musí byť uložený niekde na pevnom disku. V prípade internetu používame špeciálne výkonné počítače nazývané *servery*. Nemajú obrazovku, myš alebo klávesnicu, pretože ich hlavnou úlohou je ukladať dáta a poskytovať ich. Preto ich voláme *servery* -- pretože *poskytujú* (serve) tvoje dáta.
 
-OK, ale chceš vedieť, ako vyzerá internet, že?
+OK, ale ty chceš vedieť, ako vyzerá internet, že?
 
 Nakreslili sme ti obrázok! Vyzerá takto:
 
@@ -34,14 +34,14 @@ Tvoj list ide na najbližšiu poštu. Potom ide na ďalšiu, ktorá je o čosi b
 
 ![Obrázok 1.4](images/internet_4.png)
 
-Takto to funguje - posielaš správy a očakávaš nejaké odpovede. Akurát namiesto papiera a pera používaš byty dát, ale princíp je rovnaký!
+Takto to funguje - posielaš správy a očakávaš nejaké odpovede. Akurát namiesto papiera a pera používaš bajty dát, ale princíp je rovnaký!
 
 Namiesto adries s názvom ulice, mesta, PSČ a krajinou používame IP adresy. Tvoj počítač najprv požiada DNS (Domain Name System), aby preložil djangogirls.org na IP adresu. Funguje to trocha ako staré dobré telefónne zoznamy, kde si môžeš vyhľadať meno osoby, ktorú chceš kontaktovať, a nájsť jej telefón a adresu.
 
-Keď pošleš list, musí mať určité náležitosti, aby ho bolo možné správne doručiť: adresu, známku atď. Taktiež používaš jazyk, ktorému adresát rozumie, že? Rovnako to funguje aj s *dátovými paketmi* ktoré posielaš, aby sa ti zobrazila stránka. Používame protokol s názvom HTTP (Hypertext Transfer Protocol).
+Keď pošleš list, musí mať určité náležitosti, aby ho bolo možné správne doručiť: adresu, známku atď. Taktiež používaš jazyk, ktorému adresát rozumie, že? Rovnako to funguje aj s *dátovými paketmi*, ktoré posielaš, aby sa ti zobrazila stránka. Používame protokol s názvom HTTP (Hypertext Transfer Protocol).
 
 Takže v podstate keď máš webovú stránku, musíš mať *server* (stroj), na ktorom bude žiť. Keď *server* obdrží prichádzajúcu *požiadavku* alebo request (v liste), pošle naspäť tvoju webovú stránku (v ďalšom liste).
 
-Keďže toto je Django tutoriál, možno sa pýtaš, na čo Django je. Keď pošleš odpoveď, nechceš vždy poslať každému to isté. Je oveľa lepšie, ak sú tvoje listy osobné, presne pre človeka, ktorý ti práve napísal, že? Django ti pomáha vytváriť tieto osobné, zaujímavé listy. :)
+Keďže toto je Django tutoriál, možno sa pýtaš, kde do tohto procesu vstupuje Django. Keď pošleš odpoveď, nechceš vždy poslať každému to isté. Je oveľa lepšie, ak sú tvoje listy osobné, presne pre človeka, ktorý ti práve napísal, že? Django ti pomáha vytváriť tieto osobné, zaujímavé listy. :)
 
 Dosť bolo rečí, je čas tvoriť!

@@ -1,4 +1,4 @@
-# Django Girls Tutoriál
+# Django Girls tutoriál
 
 [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
@@ -8,7 +8,7 @@
 
 Vitaj v Django Girls tutoriáli! Tešíme sa, že tu si. :) V tomto tutoriáli sa vydáme na cestu pod kapotu webových technológií a ponúkneme ti letmý pohľad na všetky čiastočky a kúsky, ktoré musia do seba zapadnúť, aby vytvorili web tak, ako ho poznáme.
 
-Ako so všetkými vecami, ktoré sú neznáme, aj toto bude dobrodružstvo - ale žiadny strach, keď si už nabrala odvahu byť tu, zvládneš to v pohode. :)
+Ako to býva so všetkým, čo je neznáme, aj toto bude dobrodružstvo - ale žiadny strach, keď si už nabrala odvahu byť tu, zvládneš to v pohode. :)
 
 ## Úvod
 

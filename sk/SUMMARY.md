@@ -21,7 +21,7 @@
 * [Tvoj prvý Django projekt!](django_start_project/README.md)
 * [Django modely](django_models/README.md)
 * [Django admin](django_admin/README.md)
-* [Deploy!](deploy/README.md)
+* [Nasadenie!](deploy/README.md)
 * [Django URL](django_urls/README.md)
 * [Django viewy - čas tvoriť!](django_views/README.md)
 * [Úvod do HTML](html/README.md)

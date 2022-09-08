@@ -640,7 +640,7 @@ Na Linuxe bude takýto:
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-Vo Windowsovom Command Prompte to bude takto:
+Vo windowsovom Command Prompte to bude takto:
 
 {% filename %}command-line{% endfilename %}
 
@@ -651,7 +651,7 @@ Vo Windowsovom Command Prompte to bude takto:
 
 <!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
 
-A vo Windowsovom PowerShelli to bude takto:
+A vo windowsovom PowerShelli to bude takto:
 
 {% filename %}command-line{% endfilename %}
 
@@ -752,10 +752,10 @@ Ak by 2 bolo viac ako 5, spustil by sa druhý príkaz. Pozrime sa, ako funguje `
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-name = 'Sona'
-if name == 'Ola':
+meno = 'Sona'
+if meno == 'Ola':
     print('Cau Ola!')
-elif name == 'Sona':
+elif meno == 'Sona':
     print('Cau Sona!')
 else:
     print('Cau neznama!')
@@ -791,7 +791,7 @@ else:
     print("Bolia ma usi! :(")
 ```
 
-Python prejde všetkými podmienkami po podarí a vypíše:
+Python prejde všetkými podmienkami poporade a vypíše:
 
 {% filename %}command-line{% endfilename %}
 

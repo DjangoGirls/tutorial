@@ -48,7 +48,7 @@ Predtým, než pridáme link, budeme potrebovať zopár ikoniek, ktoré použije
 
 > Poznámka: Pre stiahnutie SVG obrázku otvor kontextové menu k linku (väčšinou stlačením pravého tlačidla na myši) a zvoľ "Uložiť odkaz ako". V dialógu, kde si vyberáš, kde sa má súbor uložiť, sa nasmeruj do priečinku `djangogirls` svojho Django projektu a ďalej do podadresára `blog/templates/blog/icons/` a ulož súbor tam.
 
-Prišiel čas otvoriť `blog/templates/blog/base.html` v editore. Teraz môžeme použiť tento súbor s ikonkou v našej základnej šablóne takto. V elemente `div` vnútri `header` sekcie pridáme link pred element `h1`:
+Prišiel čas otvoriť `blog/templates/blog/base.html` v editore. Teraz môžeme použiť tento súbor s ikonkou do našej základnej šablóny takto. V elemente `div` vnútri `header` sekcie pridáme link pred element `h1`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -60,7 +60,7 @@ Prišiel čas otvoriť `blog/templates/blog/base.html` v editore. Teraz môžeme
 
 Všimni si, že chceme zavolať náš nový view `post_new`. [SVG ikonku](https://icons.getbootstrap.com/icons/file-earmark-plus/) máme z [Bootstrap Icons](https://icons.getbootstrap.com/) a zobrazí sa ako ikonka stránky s pluskom. Použijeme šablónový príkaz `include`. Týmto dosiahneme, že sa obsah súboru vloží do Django šablóny. Webový prehliadač vie, ako sa s týmto typom obsahu vysporiadať, bez toho, aby bolo treba čokoľvek ďalej spracovávať.
 
-> Všetky Bootstrapové ikonky si môžeš stiahnuť [tu](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip). Súbor rozbaľ a skopíruj všetky obrázkové súbory SVG do nového adresára vo vnútri `blog/templates/blog/` s názvom `icons`. Vďaka tomuto môžeš pristupovať k ikonke ako `pencil-fill.svg` pomocou súborovej cesty `blog/templates/blog/icons/pencil-fill.svg`
+> Všetky Bootstrapové ikonky si môžeš stiahnuť [tu](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip). Súbor rozbaľ a skopíruj všetky obrázkové súbory SVG do nového adresára vo vnútri `blog/templates/blog/` s názvom `icons`. Vďaka tomuto môžeš pristupovať k ikonke ako `pencil-fill.svg` pomocou cesty `blog/templates/blog/icons/pencil-fill.svg`
 
 Po zmene riadku by tvoj HTML súbor mal vyzerať takto:
 
@@ -232,7 +232,7 @@ if form.is_valid():
     post.save()
 ```
 
-V podstate tu ide o dve veci: uložíme formulár pomocou `form.save` a pridáme autora (keďže pole `author` nebolo v `PostForm`, avšak toto pole je povinné). `commit=False` znamená, že ešte nechceme uložiť model `Post` - najskôr chceme pridať autora. Väčšinou budeš používať `form.save()` bez `commit=False`, no v tomto prípade to musíme pridať. `post.save()` uchová zmeny (pridanie autora) a máme vytvorený nový blogový príspevok!
+V podstate tu ide o dve veci: uložíme formulár pomocou `form.save` a pridáme autora (keďže pole `author` nebolo v `PostForm`, avšak toto pole je povinné). `commit=False` znamená, že ešte nechceme uložiť model `Post` - najskôr chceme pridať autora. Väčšinou budeš používať `form.save()` bez `commit=False`, no v tomto prípade to musíme tak spraviť. `post.save()` uchová zmeny (pridanie autora) a máme vytvorený nový blogový príspevok!
 
 A nakoniec by bolo super, keby sme mohli ísť rovno na stránku `post_detail` pre náš novovytvorený príspevok, nie? K tomu potrebujeme ešte jeden import:
 
@@ -408,7 +408,7 @@ Otvor `blog/templates/blog/base.html` v editore a nájdi náš `div` vovnútri `
 </a>
 ```
 
-Do neho pridáme ďalší tag `{% if %}`, vďaka ktorému sa link zobrazí len užívateľovi alebo užívateľke, ktorí sú prihlasení do admina. Momentálne si to len ty! Zmeň element `<a>`, aby vyzeral takto:
+Do tejto časti pridáme ďalší tag `{% if %}`, vďaka ktorému sa link zobrazí len užívateľovi alebo užívateľke, ktorí sú prihlasení do admina. Momentálne si to len ty! Zmeň element `<a>`, aby vyzeral takto:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -446,11 +446,11 @@ Zmeň ho na toto:
 {% endif %}
 ```
 
-Kedže si pravdepodobne prihlásená, ak obnovíš stránku, neuvidíš nič nové. Načítaj stránku v inom prehliadači, alebo incognito okne (nazývané "InPrivate" vo Windows Edge) a uvidíš, že odkaz sa nezobrazuje a ikonka tiež nie!
+Kedže si pravdepodobne prihlásená, ak obnovíš stránku, neuvidíš nič nové. Načítaj stránku v inom prehliadači alebo incognito okne (nazývané "InPrivate" vo Windows Edge) a uvidíš, že odkaz sa nezobrazuje a ikonka tiež nie!
 
-## Ešte jedna vec: čas deploynúť aplikáciu!
+## Ešte jedna vec: čas nasadiť aplikáciu!
 
-Pozrime sa, či to všetko funguje na PythonAnywhere. Je čas na ďalší deployment!
+Pozrime sa, či to všetko funguje na PythonAnywhere. Je čas na ďalšie nasadenie!
 
 * Najprv commitni svoj nový kód a pošli ho na GitHub:
 

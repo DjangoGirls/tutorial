@@ -1,12 +1,12 @@
-# Deploy!
+# Nasadenie!
 
-> **Poznámka** Môže byť trochu ťažké prehrýzť sa touto kapitolou. Vydrž a dokonči ju, deployment je dôležitou časťou vývoja webových stránok. Táto kapitola je umiestnená uprostred tutoriálu, aby ti mentor či mentorka mohli pomôcť s trochu náročnejšími časťami procesu spúšťania tvojej webovej stránky online. To znamená, že môžeš dokončiť tutoriál aj sama, ak ti nevyjde čas.
+> **Poznámka** Môže byť trochu ťažké prehrýzť sa touto kapitolou. Vydrž a dokonči ju, nasadenie je dôležitou časťou vývoja webových stránok. Táto kapitola je umiestnená uprostred tutoriálu, aby ti mentor či mentorka mohli pomôcť s trochu náročnejšími časťami procesu spúšťania tvojej webovej stránky online. To znamená, že môžeš dokončiť tutoriál aj sama, ak ti nevyjde čas.
 
-Až do tohto momentu bola tvoja webová stránka dostupná len v tvojom počítači. Teraz sa naučíš, ako ju deploynúť! Deployment je proces publikovania aplikácie na internete, aby ju všetci konečne mohli vidieť. :)
+Až do tohto momentu bola tvoja webová stránka dostupná len v tvojom počítači. Teraz sa naučíš, ako ju nasadiť! Nasadenie (deployment) je proces publikovania aplikácie na internete, aby ju všetci konečne mohli vidieť. :)
 
 Ako už vieš, webová stránka musí byť umiestnená na serveri. Na internete existuje množstvo poskytovateľov serverov, my použijeme [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere je bezplatný pre malé aplikácie, ktoré nemajú príliš veľa návštevníkov a návštevníčok, takže zatiaľ ti to určite bude stačiť.
 
-Ďalšou externou službou, ktorú budeme využívať, je [GitHub](https://www.github.com), kde sa uchovávajú zdrojové kódy. Existujú aj ďalšie podobné služby, no dnes už majú takmer všetci programátori a programátorky na GitHube konto a teraz ho už budeš mať aj ty!
+Ďalšou externou službou, ktorú budeme využívať, je [GitHub](https://www.github.com), kde sa uchovávajú zdrojové kódy. Existujú aj ďalšie podobné služby, no v dnešnej dobe už majú takmer všetci programátori a programátorky githubové konto a teraz ho už budeš mať aj ty!
 
 Tieto tri miesta budú pre teba dôležité. Lokálny počítač bude miestom, kde budeš vyvíjať a testovať. Keď si spokojná so zmenami, uložíš kópiu programu na GitHub. Tvoja webová stránka bude na PythonAnywhere a budeš ju aktualizovať stiahnutím novej kópie svojho kódu z GitHubu.
 
@@ -20,7 +20,7 @@ Tieto tri miesta budú pre teba dôležité. Lokálny počítač bude miestom, k
 
 Git sleduje zmeny na konkrétnej skupine súborov, v niečom, čo sa nazýva úložisko kódu alebo repozitár (skrátene "repo"). Založme si repo pre náš projekt. Otvor konzolu a spusti nasledujúce príkazy v adresári `djangogirls`:
 
-> **Poznámka** Skontroluj si aktuálny pracovný priečinok príkazom`pwd` (Mac OS X/Linux) alebo `cd` (Windows) pred inicializáciou repozitára. Mala by si byť v priečinku `djangogirls`.
+> **Poznámka** Skontroluj si aktuálny pracovný priečinok príkazom `pwd` (Mac OS X/Linux) alebo `cd` (Windows) pred inicializáciou repozitára. Mala by si byť v priečinku `djangogirls`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -42,7 +42,7 @@ Vo verziách Gitu starších ako **2.28** budeš musieť zmeniť meno svojej vet
     git version 2.xx...
     
 
-V prípade, že druhé číslo verzie ("xx" vyššie) je menšie ako 28, budeš musieť spustiť nasledujúci príkaz, aby si premenovala svoju vetvu. Ak je to 28 alebo viac, pokračuj, prosím, sekciou "Ignorovanie súborov". Rovnako ako v časti "Inicializácia" je toto niečo, čo musíme spraviť len jeden jediný raz v rámci projektu, a iba ak je tvoja verzia Gitu menšia ako 2.28:
+V prípade, že druhé číslo verzie ("xx" vyššie) je menšie ako 28, budeš musieť spustiť nasledujúci príkaz, aby si premenovala svoju vetvu. Ak je to 28 alebo viac, pokračuj, prosím, sekciou "Ignorovanie súborov". Rovnako ako v časti "Inicializácia" je toto niečo, čo musíme spraviť len jeden jediný raz vrámci projektu, a aj to iba v prípade, ak je tvoja verzia Gitu menšia ako 2.28:
 
 {% filename %}command-line{% endfilename %}
 
@@ -93,7 +93,7 @@ A ulož ho ako `.gitignore` v priečinku "djangogirls".
 
 > **Poznámka** Bodka na začiatku názvu súboru je dôležitá! Ak máš problém vytvoriť takýto súbor (napríklad Macom sa nepáči, ak chceš cez Vyhľadávanie (Finder) vytvoriť súbory, ktoré sa začínajú bodkou), potom použi funkciu "Uložiť ako" vo svojom editore, to funguje vždy. A daj pozor na to, aby si k názvu súboru nepridala `.txt`, `.py` alebo akúkoľvek inú koncovku - Git ho rozpozná, iba ak sa volá presne `.gitignore`. V Linuxe a MacOS sú súbory, ktoré začínajú `.` (ako `.gitignore`), považované za skryté a príkaz `ls` ich neukáže. Namiesto neho môžeš použiť `ls -a`, aby si súbor `.gitignore` videla.
 > 
-> **Poznámka** Jeden zo súborov, ktoré si spomenula vo svojom súbore `.gitignore`, je `db.sqlite3`. Tento súbor je tvoja lokálna databáza, kde sú uložení všetci tvoji používatelia/používateľky a príspevky. Budeme sa riadiť štandarnými programátorskými postupmi, čo znamená, že budeme používať dve rôzne databázy, jednu pre svoju vlastnú lokálnu testovaciu stránku a druhú pre svoju online stránku na PythonAnywhere. Na PythonAnywhere to možno bude SQLite, tak ako na stroji, na ktorom vyvíjaš, ale zvyčajne by si použila databázu, ktorá sa volá MySQL, ktorá zvládne oveľa viac navštevníčiek a návštevníkov ako SQLite. Tak či onak, to, že ignoruješ svoju SQLite databázu v kópii pre GitHub, znamená, že všetky príspevky a superuser, ktorých si doteraz vytvorila, budú dostupní len lokálne, a na produkčnej verzii budeš musieť vytvoriť nových. Svoju lokálnu databázu si môžeš predstaviť ako pieskovisko, na ktorom si môžeš vyskúšať rôzne veci a nebáť sa, že zmažeš reálne príspevky zo svojho blogu.
+> **Poznámka** Jeden zo súborov, ktoré si spomenula vo svojom súbore `.gitignore`, je `db.sqlite3`. Tento súbor je tvoja lokálna databáza, kde sú uložení všetci tvoji používatelia/používateľky a príspevky. Budeme sa riadiť štandardnými programátorskými postupmi, čo znamená, že budeme používať dve rôzne databázy, jednu pre svoju vlastnú lokálnu testovaciu stránku a druhú pre svoju online stránku na PythonAnywhere. Na PythonAnywhere to možno bude SQLite, tak ako na stroji, na ktorom vyvíjaš, ale zvyčajne by si tam skôr použila databázu, ktorá sa volá MySQL, ktorá zvládne oveľa viac navštevníčiek a návštevníkov ako SQLite. Tak či onak, to, že ignoruješ svoju SQLite databázu v kópii pre GitHub, znamená, že všetky príspevky a superuser, ktorých si doteraz vytvorila, budú dostupní len lokálne, a na produkčnej verzii budeš musieť vytvoriť nových. Svoju lokálnu databázu si môžeš predstaviť ako pieskovisko, na ktorom si môžeš vyskúšať rôzne veci a nebáť sa, že zmažeš reálne príspevky zo svojho blogu.
 
 Vždy je dobré použiť príkaz `git status` pred `git add` alebo kedykoľvek, keď si nebudeš istá, čo sa zmenilo. Pomôže ti to vyhnúť sa prekvapeniam ako napríklad pridanie nesprávnych súborov. Príkaz `git status` vracia informácie o nesledovaných (untracked) či zmenených (modified) súboroch, alebo súboroch pripravených na zmenu (staged), o stave vetvy a veľa ďalších vecí. Výstup by mal byť podobný nasledovnému:
 
@@ -131,13 +131,13 @@ A nakoniec uložíme naše zmeny. Prejdi na konzolu a zadaj nasledujúce príkaz
 
 ## Prenos nášho kódu na GitHub
 
-Choď na [GitHub.com](https://www.github.com) a založ (Sign Up) si nový účet zdarma. (Ak si to už spravila počas prípravy na workshop, super!) Zapamätaj si svoje heslo (a pridaj si ho do svojho password managera, ak nejaký používaš).
+Choď na [GitHub.com](https://www.github.com) a založ (Sign Up) si nový účet zdarma. (Ak si to už spravila počas prípravy na workshop, super!) Zapamätaj si svoje heslo (a pridaj si ho do svojho správcu hesiel, ak nejaký používaš).
 
-Potom vytvor nový repozitár a pomenuj ho "my-first-blog". Checkbox "initialize with a README" nechaj nezaškrtnutý, voľbu .gitignore nechaj prázdnu (urobili sme to manuálne) a License nechaj ako None.
+Potom vytvor nový repozitár a pomenuj ho "my-first-blog". Políčko "initialize with a README" nechaj nezaškrtnuté, voľbu .gitignore nechaj prázdnu (urobili sme to manuálne) a License nechaj ako None.
 
 ![](images/new_github_repo.png)
 
-> **Poznámka** Názov `my-first-blog` je dôležitý -- mohla by si si vybrať aj niečo iné, ale bude sa to ďalej vyskytovať veľakrát a musela by si to zakaždým nahradiť. Asi bude pohodlnejšie, ak ostaneš pri názve `my-first-blog`.
+> **Poznámka** Názov `my-first-blog` je dôležitý -- mohla by si si vybrať aj niečo iné, ale bude sa to ďalej vyskytovať veľakrát a musela by si to zakaždým nahradiť. Pravdepodobne bude pohodlnejšie, ak ostaneš pri názve `my-first-blog`.
 
 Na nasledujúcej stránke sa ti ukáže klonovacia URL tvojho repa, ktorú budeme potrebovať v niektorých z nasledujúcich príkazov:
 
@@ -145,7 +145,7 @@ Na nasledujúcej stránke sa ti ukáže klonovacia URL tvojho repa, ktorú budem
 
 Teraz musíme pripojiť Git repozitár v tvojom počítači k tomu na GitHube.
 
-Napíš do konzoly nasledujúci príkaz (nahraď `<your-github-username>` svojím užívateľským menom na GitHube, ale bez lomených zátvoriek - URL by mala byť rovnaká ako klonovacia URL, ktorú si práve videla).
+Napíš do konzoly nasledujúci príkaz (nahraď `<your-github-username>` svojím užívateľským menom na GitHube, ale bez špicatých zátvoriek - URL by mala byť rovnaká ako klonovacia URL, ktorú si práve videla).
 
 {% filename %}command-line{% endfilename %}
 
@@ -153,7 +153,7 @@ Napíš do konzoly nasledujúci príkaz (nahraď `<your-github-username>` svojí
     $ git push -u origin main
     
 
-Keď pošleš niečo na GitHub, spýta sa ťa to na tvoje GitHubové meno a heslo (buď rovno v príkazovom riadku alebo vo vyskakovacom okne) a keď ich zadáš, mala by si vidieť niečo takéto:
+Keď pošleš niečo na GitHub, spýta sa ťa to na tvoje githubové meno a heslo (buď rovno v príkazovom riadku alebo vo vyskakovacom okne) a keď ich zadáš, mala by si vidieť niečo takéto:
 
 {% filename %}command-line{% endfilename %}
 
@@ -176,6 +176,6 @@ Tvoj kód je na GitHube. Choď sa naň pozrieť! Zistíš, že sa nachádza vo v
 
 Hlavná stránka tvojej aplikácie by ťa mala vítať nápisom "It worked!", tak ako na tvojom počítači. Skús pridať `/admin/` na koniec adresy URL, a budeš presmerovaná na stránky administrácie. Prihlás sa svojím menom a heslom a uvidíš, že môžeš na server pridať nové príspevky. Nezabudni, že príspevky z tvojej lokálnej testovacej databázy sme neposlali na tvoj online blog.
 
-Keď vytvoríš niekolľko príspevkov, môžeš sa vrátiť do tvojho lokálneho prostredia (nie PythonAnywhere). Odteraz by si na zmenách mala pracovať vo svojom lokálnom prostredí. To je štandardný pracovný postup pri vývoji webových aplikácií - urobíš zmeny lokálne, dáš tieto zmeny na GitHub a stiahneš zmeny na svoj webový server. Vďaka tomu môžeš pracovať a experimentovať bez toho, aby si niečo pokazila na svojej online stránke. Celkom cool, že?
+Keď vytvoríš niekoľko príspevkov, môžeš sa vrátiť do tvojho lokálneho prostredia (nie PythonAnywhere). Odteraz by si na zmenách mala pracovať vo svojom lokálnom prostredí. To je štandardný pracovný postup pri vývoji webových aplikácií - urobíš zmeny lokálne, dáš tieto zmeny na GitHub a stiahneš zmeny na svoj webový server. Vďaka tomu môžeš pracovať a experimentovať bez toho, aby si niečo pokazila na svojej online stránke. Celkom cool, že?
 
-*PORIADNE* sa potľapkaj po chrbte! Deployment serveru je jedna z najzradnejších častí vývoja web stránok a často zaberie ľuďom aj niekoľko dní, kým to spojazdnia. Ale ty už máš svoju stránku online teraz, na skutočnom internete!
+*PORIADNE* sa potľapkaj po chrbte! Nasadenie serveru je jedna z najzradnejších častí vývoja web stránok a často zaberie ľuďom aj niekoľko dní, kým to celé spojazdnia. Ale ty už máš svoju stránku online teraz, na skutočnom internete!

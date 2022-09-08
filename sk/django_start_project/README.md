@@ -2,7 +2,7 @@
 
 > Časť tejto kapitoly je založená na tutoriáli Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
-> Časti tejto kapiolty sú založené na [django-marcador tutorial](http://django-marcador.keimlink.de/) pod licenciou Creative Commons Attribution-ShareAlike 4.0 International License. Tutoriál django-marcador je autorsky chránený Markusom Zapke-Gründemannom et al.
+> Časti tejto kapitoly sú založené na [django-marcador tutorial](http://django-marcador.keimlink.de/) pod licenciou Creative Commons Attribution-ShareAlike 4.0 International License. Tutoriál django-marcador je autorsky chránený Markusom Zapke-Gründemannom et al.
 
 Vytvoríme jednoduchý blog!
 
@@ -10,7 +10,7 @@ Prvý krok je vytvoriť nový Django projekt. To v podstate znamená, že spust�
 
 Mená niektorých súborov a priečinkov sú pre Django veľmi dôležité. Súbory, ktoré teraz vytvoríme, by si nemala premenovať. Presúvať ich na iné miesto taktiež nie je dobrý nápad. Django potrebuje udržovať určitú štruktúru, aby bolo schopné nájsť dôležité veci.
 
-> Nezabudni všetko spúšťať vo virtualenve. Pokiaľ vo svojej konzole nevidíš prefix `(myenv)`, musíš aktivovať virtualenv. Ako na to bolo vysvetlené v kapitole **Inštalácia Djanga** v časti **Práca s virtualenvom**. Pokiaľ napíšeš `myvenv\Scripts\activate` na Windowse alebo `source myvenv/bin/activate` na Mac OS X alebo Linuxe, malo by všetko fungovať.
+> Nezabudni všetko spúšťať vo virtualenve. Pokiaľ vo svojej konzole nevidíš predponu `(myenv)`, musíš aktivovať virtualenv. Ako na to bolo vysvetlené v kapitole **Inštalácia Djanga** v časti **Práca s virtualenvom**. Pokiaľ napíšeš `myvenv\Scripts\activate` na Windowse alebo `source myvenv/bin/activate` na Mac OS X alebo Linuxe, malo by všetko fungovať.
 
 <!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
@@ -102,7 +102,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'static'
 ```
 
-Keď `DEBUG` je `True` a `ALLOWED_HOSTS` je prázdne, host sa validuje voči `['localhost', '127.0.0.1', '[::1]']`. Toto sa nebude zhodovať s naším hostname na PythonAnywhere, keď deployneme našu aplikáciu, preto zmeníme nasledovné nastavenie:
+Keď `DEBUG` je `True` a `ALLOWED_HOSTS` je prázdne, host sa validuje voči `['localhost', '127.0.0.1', '[::1]']`. Toto sa nebude zhodovať s naším hostname na PythonAnywhere, keď nasadíme našu aplikáciu, preto zmeníme nasledovné nastavenie:
 
 {% filename %}mysite/settings.py{% endfilename %}
 

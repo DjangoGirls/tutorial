@@ -6,7 +6,7 @@ Náš blog uverejníme na PythonAnywhere. Vytvor si "Beginner" účet na PythonA
 
 ![Stránka PythonAnywhere, kde sa vytvára účet, s tlačidlom pre vytvorenie "Beginner" účtu zdarma](../deploy/images/pythonanywhere_beginner_account_button.png)
 
-> **Poznámka** Pri výbere používateľského mena mysli na to, že URL tvojho blogu bude v tvare `tvojeuzivatelskemeno.pythonanywhere.com`, takže si vyber prezývku alebo názov, o čom tvoj blog je. Taktiež si určite zapamätaj svoje heslo (pridaj si ho do svojho password managera, ak nejaký používaš).
+> **Poznámka** Pri výbere používateľského mena mysli na to, že URL tvojho blogu bude v tvare `tvojeuzivatelskemeno.pythonanywhere.com`, takže si vyber prezývku alebo názov, o čom tvoj blog je. Taktiež si určite zapamätaj svoje heslo (pridaj si ho do svojho správcu hesiel, ak nejaký používaš).
 
 ## Vytvorenie PythonAnywhere API tokenu
 

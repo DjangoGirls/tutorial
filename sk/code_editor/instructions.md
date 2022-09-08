@@ -4,7 +4,7 @@ Naše návrhy sú uvedené nižšie, ale neváhaj sa opýtať svojej mentorky al
 
 ## Visual Studio Code
 
-Visual Studio code je editor zdrojového kódu, ktorý vyvíja Microsoft pre Windows, Linux a macOS. Podporuje debugovanie, priamu prácu s Gitom, zvýrazňovanie syntaxe, inteligentné dopĺňanie kódu, snippety a refaktorovanie kódu.
+Visual Studio Code je editor zdrojového kódu, ktorý vyvíja Microsoft pre Windows, Linux a macOS. Podporuje debugovanie, priamu prácu s Gitom, zvýrazňovanie syntaxe, inteligentné dopĺňanie kódu, snippety a refaktorovanie kódu.
 
 [Stiahni si ho odtiaľto](https://code.visualstudio.com/)
 
@@ -28,7 +28,7 @@ Atom je ďalší populárny editor. Je zdarma, open source a dostupný pre Windo
 
 ## Prečo inštalujeme editor kódu?
 
-Možno ti napadlo, prečo inštalujeme takýto mimoriadny editor kódu namiesto toho, aby sme použili niečo ako Word alebo Notepad.
+Možno ti napadlo, prečo inštalujeme takýto špeciálny editor kódu namiesto toho, aby sme použili niečo ako Word alebo Notepad.
 
 Prvý dôvod je, že kód musí byť **čistý text** a problém s editormi ako Word a Textedit je ten, že v skutočnosti nevytvárajú čistý text, ale produkujú obohatený text (s fontami a formátovaním) a používajú vlastné formáty ako [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 

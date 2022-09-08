@@ -246,7 +246,7 @@ A je to!
 
 {% filename %}command-line{% endfilename %}
 
-    $ mkdir practice
+    $ mkdir pokus
     
 
 <!--endsec-->
@@ -255,12 +255,12 @@ A je to!
 
 {% filename %}command-line{% endfilename %}
 
-    > mkdir practice
+    > mkdir pokus
     
 
 <!--endsec-->
 
-Tento príkazík vytvorí priečinok s názvom `practice` na tvojej ploche. Či je priečinok naozaj tam, môžeš zistiť jednoducho pohľadom na plochu alebo spustením príkazu `ls` alebo `dir`! Skús si to. :)
+Tento príkazík vytvorí adresár s názvom `pokus` na tvojej ploche. Či je priečinok naozaj tam, môžeš zistiť jednoducho pohľadom na plochu alebo spustením príkazu `ls` alebo `dir`! Skús si to. :)
 
 > Profi tip: ak sa ti nechce vypisovať stále dookola tie isté príkazy, skús sa stlačením `šípky hore` a `šípky dole` vrátiť k nedávno použitým príkazom.
 
@@ -268,7 +268,7 @@ Tento príkazík vytvorí priečinok s názvom `practice` na tvojej ploche. Či 
 
 ### Cvičenie!
 
-Malá výzva pre teba: v čerstvo vytvorenom adresári `practice` vytvor adresár s názvom `test`. (Použi príkazy `cd` a `mkdir`.)
+Malá výzva pre teba: v čerstvo vytvorenom adresári `pokus` vytvor adresár s názvom `test`. (Použi príkazy `cd` a `mkdir`.)
 
 #### Riešenie:
 
@@ -276,7 +276,7 @@ Malá výzva pre teba: v čerstvo vytvorenom adresári `practice` vytvor adresá
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd practice
+    $ cd pokus
     $ mkdir test
     $ ls
     test
@@ -288,7 +288,7 @@ Malá výzva pre teba: v čerstvo vytvorenom adresári `practice` vytvor adresá
 
 {% filename %}command-line{% endfilename %}
 
-    > cd practice
+    > cd pokus
     > mkdir test
     > dir
     05/08/2020 07:28 PM <DIR>      test
@@ -348,7 +348,7 @@ Skontroluj, kde sa nachádzaš:
 
 <!--endsec-->
 
-Je načase zmazať priečinok `practice`:
+Je načase zmazať priečinok `pokus`:
 
 > **Pozor**: mazanie súborov pomocou `del`, `rmdir` alebo `rm` je neodvolateľné, teda *odstránené súbory budú odstránené navždy*! Takže s týmito príkazmi buď opatrná.
 
@@ -356,7 +356,7 @@ Je načase zmazať priečinok `practice`:
 
 {% filename %}command-line{% endfilename %}
 
-    $ rm -r practice
+    $ rm -r pokus
     
 
 <!--endsec-->
@@ -365,8 +365,8 @@ Je načase zmazať priečinok `practice`:
 
 {% filename %}command-line{% endfilename %}
 
-    > rmdir /S practice
-    practice, Are you sure <Y/N>? Y
+    > rmdir /S pokus
+    pokus, Are you sure <Y/N>? Y
     
 
 <!--endsec-->
@@ -423,7 +423,7 @@ Tu je prehľad niektorých užitočných príkazov:
 | ----------------- | ----------------------- | -------------------------------- | ----------------------------------------------------- |
 | exit              | exit                    | zatvorí okno                     | **exit**                                              |
 | cd                | cd                      | zmení priečinok                  | **cd test**                                           |
-| cd                | pwd                     | ukáž aktuálny priečinok          | **cd** (Windows) alebo **pwd** (Mac OS / Linux)       |
+| cd                | pwd                     | ukáže aktuálny priečinok         | **cd** (Windows) alebo **pwd** (Mac OS / Linux)       |
 | dir               | ls                      | vypíše zoznam priečinkov/súborov | **dir**                                               |
 | copy              | cp                      | skopíruje súbor                  | **copy c:\test\test.txt c:\windows\test.txt**     |
 | move              | mv                      | presunie súbor                   | **move c:\test\test.txt c:\windows\test.txt**     |

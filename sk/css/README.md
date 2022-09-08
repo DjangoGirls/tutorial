@@ -4,9 +4,9 @@ Náš blog vyzerá zatiaľ dosť škaredo, však? Je čas to napraviť! Použije
 
 ## Čo je CSS?
 
-Kaskádové štýly (CSS, angl. Cascading Style Sheets) je jazyk, ktorý sa používa na popis vzhľadu a formátovania webstránky napísanej v markupovom jazyku (napríklad HTML). Predstav si to ako make-up pre našu webstránku. ;)
+Kaskádové štýly (CSS, angl. Cascading Style Sheets) sú jazyk, ktorý sa používa na popis vzhľadu a formátovania webstránky napísanej v markupovom jazyku (napríklad HTML). Predstav si to ako make-up pre našu webstránku. ;)
 
-Ale nechceme začať zase od nuly, že? Znovu budeme používať niečo, čo iné programátorky a programátori zverejnili na internete zadarmo. Ako vieš, vymýšlať koleso nie je žiadna zábava.
+Ale nechceme začať zase od nuly, že? Znovu použijeme niečo, čo iné programátorky a programátori zverejnili na internete zadarmo. Ako vieš, vymýšlať koleso nie je žiadna zábava.
 
 ## Použime Bootstrap!
 
@@ -67,7 +67,7 @@ Tu sa nebudeme do hĺbky zaoberať úpravou a štúdiom CSS. Na konci tejto str�
 
 Ale urobme aspoň niečo. Čo keby sme zmenili farbu hlavičiek? Počítače používajú špeciálne kódy, aby rozumeli farbám. Tieto kódy sa začínajú `#` potom nasleduje 6 písmen (A-F) a číslic (0-9). Napríklad kód pre modrú je `#0000FF`. Kódy farieb nájdeš napríklad tu: http://www.colorpicker.com/. Môžeš tiež použiť [preddefinované farby](http://www.w3schools.com/colors/colors_names.asp) ako napríklad `red` (červená) alebo `green` (zelená).
 
-V súbore `blog/static/css/blog.css` pridaj nasledujúci kód:
+Do súboru `blog/static/css/blog.css` pridaj nasledujúci kód:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -78,7 +78,7 @@ h1 a, h2 a {
 
 ```
 
-`h1 a` je CSS selector. Znamená to, že aplikujeme naše štýly na všetky `a` elementy, ktoré sa nachádzajú vnútri `h1` elementu. Selektor `h2 a` robí presne to isté, akurát pre elementy `h2`. Takže keď máme niečo ako: `<h1><a href="">link</a></h1>`, použije sa naň štýl `h1 a`. V tomto prípade elementu hovoríme, aby zmenil svoju farbu na `#FCA205`, čo je tmavooranžová. Alebo si môžeš vybrať vlastnú farbu, akurát daj pozor, aby dobre kontrastovala s bielym pozadím!
+`h1 a` je CSS selektor. Znamená to, že aplikujeme naše štýly na všetky `a` elementy, ktoré sa nachádzajú vnútri `h1` elementu. Selektor `h2 a` robí presne to isté, akurát pre elementy `h2`. Takže keď máme niečo ako: `<h1><a href="">link</a></h1>`, použije sa na to štýl `h1 a`. V tomto prípade elementu hovoríme, aby zmenil svoju farbu na `#FCA205`, čo je tmavooranžová. Alebo si môžeš vybrať vlastnú farbu, akurát daj pozor, aby dobre kontrastovala s bielym pozadím!
 
 V CSS súbore definujeme štýly pre elementy v HTML súbore. Prvý spôsob, akým môžme identifikovať elementy, je názov elementu. Môžno si pamätáš tieto tagy z HTML sekcie. Veci ako `a`,`h1`, a `body` sú príklady názvov elementov. Elementy taktiež identifikujeme pomocou atribútu `class` alebo atribútu `id`. Triedy (class) a id sú názvy, ktorými nazveš elementy. Triedy definujú skupiny elementov a id-čká poukazujú na konkrétne elementy. Napríklad nasledujúci element môže byť identifikovaný v CSS pomocou názvu `a`, triedy `external_link`, alebo id `link_to_wiki_page`:
 
@@ -96,7 +96,7 @@ Ešte musíme povedať našej HTML šablóne, že sme pridali nejaké CSS. Otvor
 {% load static %}
 ```
 
-Tu sme len nahrali statické súbory. :) Medzi tagmi `<head>` a `</head>`, po odkazoch na Bootstrap CSS súbory, pridaj tento riadok:
+Tu sme len nahrali statické súbory. :) Medzi tagmi `<head>` a `</head>`, po odkazoch na bootstrapové CSS súbory, pridaj tento riadok:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -104,7 +104,7 @@ Tu sme len nahrali statické súbory. :) Medzi tagmi `<head>` a `</head>`, po od
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-Prehliadač číta súbory, ktoré dostane, zaradom, takže sa musíme uistiť, že sú na správnom mieste. Inak kód v našich súboroch môže byť prepísaný kódom z Bootstrap súborov. Práve sme našej šablóne povedali, kde sa nachádza náš CSS súbor.
+Prehliadač číta súbory, ktoré dostane, zaradom, takže sa musíme uistiť, že sú na správnom mieste. Inak kód v našich súboroch môže byť prepísaný kódom z boostrapových súborov. Práve sme našej šablóne povedali, kde sa nachádza náš CSS súbor.
 
 Súbor by mal teraz vyzerať asi takto:
 

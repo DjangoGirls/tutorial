@@ -2,7 +2,7 @@
 
 Niekoľko vecí už máme na svojom mieste: model `Post` je definovaný v `models.py`, máme `post_list` v `views.py` a pridanú šablónu. Ale ako vlastne prinútime HTML šablónu, aby zobrazila naše príspevky? Pretože to je to, čo chceme urobiť - vziať nejaký obsah (modely uložené v databáze) a zobraziť ich pekne v našej šablóne, že?
 
-To je presne to, čo majú robiť *viewy*: spájať modely a šablóny. V našom *viewe* `post_list` potrebujeme vziať modely, ktoré chceme zobraziť, a posunúť ich šablóne. Čiže vo *viewe* sa rozhodne, čo (ktorý model) bude zobrazené v šablóne.
+To je presne to, čo majú robiť *viewy*: spájať modely a šablóny. V našom *viewe* `post_list` potrebujeme vziať modely, ktoré chceme zobraziť, a posunúť ich šablóne. Čiže vo *viewe* sa rozhodne, čo (resp. ktorý model) bude zobrazené v šablóne.
 
 Dobre, takže ako toto dosiahneme?
 

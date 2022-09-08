@@ -71,7 +71,7 @@ urlpatterns = [
 Časť `post/<int:pk>/` definuje vzor URL – vysvetlime si ho:
 
 - `post/` znamená, že na začiatku by URL mala obsahovať slovo **post** a **/**. Zatiaľ všetko v poriadku.
-- `<int:pk>` – táto časť je trochu záludnejšia. Znamená, že Django očakáva číslo a posunie ho viewu ako premennú pod názvom `pk`.
+- `<int:pk>` – táto časť je trochu záludnejšia. Znamená, že Django očakáva číslo (integer alebo skrátene int) a posunie ho viewu ako premennú pod názvom `pk`.
 - `/` – potom potrebujeme znova **/** predtým, ako URL skončí.
 
 To znamená, že ak zadáš `http://127.0.0.1:8000/post/5/` do svojho prehliadača, Django pochopí, že hľadáš *view* s názvom `post_detail`, a posunie informáciu, že `pk` je `5`, tomuto *viewu*.
@@ -96,7 +96,7 @@ Pamätáš si, čo je ďalší krok? Musíme pridať náš nový view!
 
 ## Pridanie viewu pre detaily príspevku
 
-Tentokrát má náš *view* extra parameter, `pk`. Náš *view* ho potrebuje zachytiť, však? Takže definujeme našu funkciu ako `def post_detail(request, pk):`. Pozor na to, že tento parameter musí mať presne rovnaký názov, ako sme špecifikovali v `urls` (`pk`). Vynechanie tejto premmenej je nesprávne a bude mať za následok chybu!
+Tentokrát má náš *view* extra parameter s názvom `pk`. Náš *view* ho potrebuje zachytiť, však? Takže definujeme našu funkciu ako `def post_detail(request, pk):`. Pozor na to, že tento parameter musí mať presne rovnaký názov, ako sme špecifikovali v `urls` (`pk`). Vynechanie tejto premmenej je nesprávne a bude mať za následok chybu!
 
 Teraz chceme, aby sme dostali jeden jediný príspevok blogu. Na to môžeme použiť querysety, a to takto:
 
@@ -182,9 +182,9 @@ Dobre, môžeme obnoviť našu stránku a pozrieť sa, či `TemplateDoesNotExist
 
 Jupí! Funguje to!
 
-# Je čas deploynúť!
+# Je čas nasadiť!
 
-Bolo by dobré vedieť, či tvoja stránka stále funguje na PythonAnywhere, však? Pokúsme sa ju znova deploynúť.
+Bolo by dobré vedieť, či tvoja stránka stále funguje na PythonAnywhere, však? Pokúsme sa ju znova nasadiť.
 
 {% filename %}command-line{% endfilename %}
 
