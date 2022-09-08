@@ -1,16 +1,16 @@
-# Šablóny Django
+# Django šablóny
 
-Je na čase zobraziť nejaké údaje! Na to nám Django ponúka užitočné vstavané **šablónové tagy**.
+Prišiel čas zobraziť nejaké údaje! Na to nám Django ponúka užitočné zabudované **šablónové tagy**.
 
 ## Čo sú to šablónové tagy?
 
-V HTML vlastne nemôžeš písať Pythonský kód, pretože prehliadače mu nerozumejú. Poznajú len HTML. Vieme, že HTML je skôr statické, kým Python je oveľa dynamickejší.
+V HTML vlastne nemôžeš písať pythonový kód, pretože prehliadače mu nerozumejú. Poznajú len HTML. Vieme, že HTML je skôr statické, kým Python je oveľa dynamickejší.
 
-**Šablónové tagy v Djangu** nám umožňujú previesť Pythonovské veci do HTML, takže dynamické webové stránky môžeš vytvoriť rýchlejšie. Paráda!
+**Šablónové tagy v Djangu** nám umožňujú previesť pythonové veci do HTML, takže dynamické webové stránky môžeš vytvoriť rýchlejšie. Paráda!
 
-## Zobraz šablónu so zoznamom príspevkov
+## Zobrazenie šablóny so zoznamom príspevkov
 
-V predchádzajúcej kapitole sme našej šablóne dali zoznam príspevkov v premennej `posts`. Teraz to zobrazíme v HTML.
+V predchádzajúcej kapitole sme našej šablóne dali zoznam príspevkov v premennej `posts`. Teraz ich zobrazíme v HTML.
 
 Na vypísanie premennej v Django šablónach použijeme dvojitú zloženú zátvorku s názvom premennej vo vnútri, asi takto:
 
@@ -20,7 +20,7 @@ Na vypísanie premennej v Django šablónach použijeme dvojitú zloženú zátv
 {{ posts }}
 ```
 
-Vyskúšaj to vo svojej šablóne `blog/templates/blog/post_list.html`. Nahraď všetko od druhého `<div>` po tretí `</div>` týmto kódom: `{{ posts }}`. Ulož súbor a obnov stránku, aby si videla výsledky:
+Vyskúšaj to vo svojej šablóne `blog/templates/blog/post_list.html`. Otvor ju vo svojom editore a nahraď elementy `<article>` týmto: `{{ posts }}`. Ulož súbor a obnov stránku, aby si videla výsledky:
 
 ![Obrázok 13.1](images/step1.png)
 
@@ -32,7 +32,7 @@ Ako vidíš, dostali sme len toto:
 <QuerySet [<Post: My second post>, <Post: My first post>]>
 ```
 
-To znamená, že to Django chápe ako zoznam objektov. Pamätáš si z kapitoly **Úvod do Pythonu** ako môžeme zobraziť zoznamy? Áno, cyklami! V Django šablóne ich urobíš takto:
+To znamená, že to Django chápe ako zoznam objektov. Pamätáš si z kapitoly **Úvod do jazyka Python**, ako môžeme zobraziť zoznamy? Áno, cyklami! V Django šablóne ich urobíš takto:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -46,21 +46,21 @@ Vyskúšaj si to vo svojej šablóne.
 
 ![Obrázok 13.2](images/step2.png)
 
-Funguje to! Ale my chceme, aby sa príspevky zobrazili ako tie statické, ktoré sme vytvorili predtým v kapitole **Úvod do HTML**. Môžeš skombinovať HTML a šablónové tagy. Naše `body` bude vyzerať takto:
+Funguje to! Ale my chceme, aby sa príspevky zobrazili ako tie statické, ktoré sme vytvorili predtým v kapitole **Úvod do HTML**. HTML a šablónové tagy možno kombinovať. Naše `body` bude vyzerať takto:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<div>
+<header>
     <h1><a href="/">Django Girls Blog</a></h1>
-</div>
+</header>
 
 {% for post in posts %}
-    <div>
-        <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
+    <article>
+        <time>published: {{ post.published_date }}</time>
+        <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    </article>
 {% endfor %}
 ```
 
@@ -68,11 +68,11 @@ Funguje to! Ale my chceme, aby sa príspevky zobrazili ako tie statické, ktoré
 
 ![Obrázok 13.3](images/step3.png)
 
-Všimla si si, že sme tentokrát použili trochu iný zápis `{{ post.title }}` alebo `{{ post.text }}`? Pristupujeme k údajom v každom z polí definovanom v našom `Post` modeli. Okrem toho `|linebreaks` preposiela texty príspevkov cez filter, ktorý konvertuje zalomenie riadkov na odstavce.
+Všimla si si, že sme tentokrát použili trochu iný zápis (`{{ post.title }}` alebo `{{ post.text }}`)? Pristupujeme k údajom v každom z polí definovanom v našom modeli `Post`. Okrem toho, `|linebreaksbr` preposiela texty príspevkov cez filter, ktorý mení zalomenia riadkov na odstavce.
 
 ## Ešte jedna vec
 
-Bolo by fajn vidieť či bude tvoja web stránka stále funkčná aj na Internete, však? Skúsme to znova nasadiť na PythonAnywhere. Tu je rekapitulácia postupu…
+Bolo by fajn vidieť, či bude tvoja web stránka stále funkčná aj na internete, však? Skúsme ju znova deploynúť na PythonAnywhere. Tu je rekapitulácia postupu…
 
 * Najskôr pošli svoj kód na GitHub
 
@@ -80,7 +80,7 @@ Bolo by fajn vidieť či bude tvoja web stránka stále funkčná aj na Internet
 
     $ git status
     [...]
-    $ git add --all .
+    $ git add .
     $ git status
     [...]
     $ git commit -m "Modified templates to display posts from database."
@@ -92,15 +92,17 @@ Bolo by fajn vidieť či bude tvoja web stránka stále funkčná aj na Internet
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd my-first-blog
+    $ cd <your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-* A nakoniec prejdi na [záložku Web](https://www.pythonanywhere.com/web_app_setup/) a stlač **Reload** na svojej webovej aplikácii. Aktualizácia by mala byť online! Ak sa blogové príspevky na tvojej PythonAnywhere stránke nezhodujú s príspevkami na blogu ktorý beží na tvojom lokálnom počítači, to je v poriadku. Databázy na tvojom lokálnom počítači a na PythonAnywhere sa nesznchronizujú spolu so zvyšnými subormi.
+(Nezabudni nahradiť `<your-pythonanywhere-domain>` svojou subdoménou na PythonAnywhere bez špicatých zátvoriek.)
 
-Gratulujeme! Teraz skús pridať nový príspevok cez Django admin (nezabudni pridať published_date!). Uisti sa, že si v Django admin prostredi na svojej stránke na PythonAnywhere, https://yourname.pythonanywhere.com/admin. Následne obnov stránku aby si zistila či sa príspevok tam objaví.
+* A nakoniec prejdi na [záložku Web](https://www.pythonanywhere.com/web_app_setup/) a stlač **Reload** na svojej webovej aplikácii. (Ak sa chceš dostať k ďalším stránkam na PythonAnywhere z konzoly, použi tlačítko v menu v pravom hornom rohu.) Tvoje zmeny by mali byť online na https://subdomena.pythonanywhere.com - over si to vo svojom prehliadači! Pokiaľ sa blogové príspevky na tvojej PythonAnywhere stránke nezhodujú s príspevkami na blogu, ktorý beží na tvojom lokálnom serveri, to je v poriadku. Databázy na tvojom lokálnom počítači a na PythonAnywhere sa nesynchronizujú spolu s tvojimi ostatnými súbormi.
 
-Funguje ako hodinky? Sme hrdí! Teraz si na chvíľku oddýchni od počítača, zaslúžiš si prestávku. :)
+Gratulujeme! Teraz skús pridať nový príspevok cez Django admina (nezabudni pridať published_date!). Uisti sa, že si v Django admin prostredí na svojej stránke na PythonAnywhere, https://subdomena.pythonanywhere.com/admin. Následne obnov stránku, aby si zistila, či sa tam príspevok objaví.
+
+Funguje ako hodinky? Tešíme sa! Teraz si na chvíľku oddýchni od počítača, zaslúžiš si prestávku. :)
 
 ![Obrázok 13.4](images/donut.png)
