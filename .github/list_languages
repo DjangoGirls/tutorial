@@ -1,0 +1,35 @@
+#!/usr/bin/env python3
+
+import argparse
+import json
+import os
+from pathlib import Path
+
+
+def parse_langs(langs, include_beta):
+    for line in langs.readlines():
+        description = line[3:-7]
+        code = line[-5:-3]
+
+        if code != 'en' and (include_beta or 'beta' not in description):
+            yield code, description
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--include-beta', help='Include beta languages', default='false',
+                        choices=('true', 'false'))
+    parser.add_argument('--langs-file', help='LANGS.md to use',
+                        type=argparse.FileType('r', encoding='UTF-8'),
+                        default=(Path(__file__).absolute().parent.parent / 'LANGS.md').as_posix())
+    args = parser.parse_args()
+
+    languages = dict(parse_langs(args.langs_file, args.include_beta == 'true'))
+
+    if 'GITHUB_ACTION' in os.environ:
+        print(f'::set-output name=languages::{json.dumps(list(languages.keys()))}')
+    for code, language in languages.items():
+        print(f'{language} ({code})')
+
+
+if __name__ == '__main__':
+    main()
