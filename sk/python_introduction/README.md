@@ -779,13 +779,13 @@ Za prvý `if` môžeš dať `elifov` toľko, koľko len chceš. Napríklad:
 hlasitost = 57
 if hlasitost < 20:
     print("Je to pomerne tiche.")
-elif 20 <= volume < 40:
+elif 20 <= hlasitost < 40:
     print("Je to fajn ako hudba na pozadi")
-elif 40 <= volume < 60:
+elif 40 <= hlasitost < 60:
     print("Super, pocujem vsetky detaily")
-elif 60 <= volume < 80:
+elif 60 <= hlasitost < 80:
     print("Fajn na party")
-elif 80 <= volume < 100:
+elif 80 <= hlasitost < 100:
     print("Trochu hlasne!")
 else:
     print("Bolia ma usi! :(")
