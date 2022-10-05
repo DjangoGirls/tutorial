@@ -2,6 +2,11 @@
 
 이 중 내가 사용하고 싶은 것을 선택해 사용해도 되지만, 여러분의 코치가 어떤 프로그램을 사용하는지 물어보세요. 같은 프로그램을 사용하면 도움받기 수월해질 거에요.
 
+## Visual Studio Code
+Visual Studio Code는 Microsoft에서 Windows, Linux 및 macOS용으로 개발한 소스 코드 편집기에요. 여기에는 디버깅, 내장된 Git 제어, 구문 강조 표시, 지능형 코드 완성, 스니펫 및 코드 리팩토링에 대한 지원이 포함됩니다.
+
+[다운받기](https://code.visualstudio.com/)
+
 ## Gedit
 Gedit는 모든 운영체제에서 사용 가능한 무료 오픈소스에요.
 
