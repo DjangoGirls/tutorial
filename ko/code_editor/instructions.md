@@ -5,7 +5,7 @@
 ## Visual Studio Code
 Visual Studio Code는 마이크로소프트가 윈도우, 리눅스, 맥OS를 위해 개발한 소스 코드 에디터입니다. 디버깅, 내장 Git 컨트롤,문법 하이라이팅, 지능형 코드 완성, 스니펫, 코드 리팩토링등 지원을 포함하고 있습니다.
 
-[다운받기](https://code.visualstudio.com/)
+[이 곳에서 다운받을 수 있어요.](https://code.visualstudio.com/)
 
 ## Gedit
 Gedit는 모든 운영체제에서 사용 가능한 무료 오픈소스에요.
