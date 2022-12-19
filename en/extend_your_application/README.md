@@ -75,7 +75,20 @@ That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Djang
 
 OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! The server has stopped running again. Have a look at the console – as expected, there's yet another error!
 
-![AttributeError](images/attribute_error2.png)
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
+
+```
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/ola/djangogirls/blog/urls.py", line 6, in <module>
+    path('post/<int:pk>/', views.post_detail, name='post_detail'),
+AttributeError: module 'blog.views' has no attribute 'post_detail'
+```
 
 Do you remember what the next step is? It's adding a view!
 

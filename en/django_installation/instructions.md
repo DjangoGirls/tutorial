@@ -203,7 +203,7 @@ Now, run `pip install -r requirements.txt` to install Django.
 ```
 (myvenv) ~$ pip install -r requirements.txt
 Collecting Django~={{ book.django_version }} (from -r requirements.txt (line 1))
-  Downloading Django-{{ book.django_version }}-py3-none-any.whl (7.1MB)
+  Downloading Django-{{ book.django_version }}-py3-none-any.whl (7.9MB)
 Installing collected packages: Django
 Successfully installed Django-{{ book.django_version }}
 ```

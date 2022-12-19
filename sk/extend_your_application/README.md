@@ -1,114 +1,126 @@
+{% set warning_icon = '<span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this code!" ></span>' %}
+
 # Ako rozšíriť aplikáciu
 
-Už sme dokončili všetky kroky potrebné k tomu, aby sme vytvorili našu webovú stránku: vieme ako napísať model, url, view a šablónu. Taktiež vieme ako spraviť našu stránku peknú.
+Už sme dokončili všetky kroky potrebné k tomu, aby sme vytvorili našu webovú stránku: vieme, ako napísať model, URL, view a šablónu. Taktiež vieme, ako našu stránku skrášliť.
 
 Čas na precvičovanie!
 
-Prvá vec, ktorú potrebujeme na našom blogu je, zjavne, stránka, na ktorej zobrazíme jeden príspevok, že?
+Prvá vec, ktorú na našom blogu potrebujeme, je podstránka, ktorá zobrazí iba jeden príspevok, že?
 
-Už máme `Post` model, takže nepotrebujeme do `models.py` pridávať nič iné.
+Už máme model `Post`, takže nepotrebujeme do `models.py` pridávať nič nové.
 
-## Vytvorenie šablóny odkazu na post detail
+## Vytvorenie odkazu na detail príspevku
 
-Začneme s pridaním odkazu v `blog/templates/blog/post_list.html` súbore. Zatiaľ by mal vyzerať takto: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+Začneme tak, že pridáme link do súboru `blog/templates/blog/post_list.html`. Otvor ho vo svojom editore. Zatiaľ by mal vyzerať takto nejako: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
 
 {% block content %}
     {% for post in posts %}
-        <div class="post">
-            <div class="date">
+        <article class="post">
+            <time class="date">
                 {{ post.published_date }}
-            </div>
-            <h1><a href="">{{ post.title }}</a></h1>
+            </time>
+            <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
-        </div>
+        </article>
     {% endfor %}
 {% endblock %}
 ```
 
-{% raw %}Chceme, aby link z titulku príspevku smeroval na stránku detailov príspevku. Zmeňme `<h1><a href="">{{ post.title }}</a></h1>` tak, aby odkazoval na stránku detailu príspevku:{% endraw %}
+{% raw %}Chceme, aby link z titulku príspevku smeroval na stránku s detailami príspevku. Zmeňme `<h2><a href="">{{ post.title }}</a></h2>` tak, aby odkazoval na stránku detailu príspevku:{% endraw %}
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+{% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+<h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
 ```
 
-{% raw %}Je na čase vysvetliť záhadné `{% url 'post_detail' pk=post.pk %}`. Ako možno tušíš, `{% %}` notácia znamená, že používame tagy Django šablóny. Tentoraz použijeme jeden, ktorý pre nás vytvorí URL!{% endraw %}
+{% raw %}Nadišiel čas vysvetliť si tento záhadný zápis: `{% url 'post_detail' pk=post.pk %}`. Ako možno tušíš, notácia `{% %}` znamená, že používame tagy Django šablóny. Tentoraz použijeme jeden, ktorý pre nás vytvorí URL!{% endraw %}
 
-`post_detail` časť znamená, že Django bude očakávať URL v `blog/urls.py` s name=post_detail
+Časť `post_detail` znamená, že Django bude očakávať URL v `blog/urls.py`, pre ktorú platí name=post_detail
 
-A čo s `pk=post.pk`? `pk` je skratka pre primárny kľúč, ktorý jednoznačne určuje každý záznam v databáze. Keďže sme neurčili primárny kľúč v našom `Post` modely, Django ho vytvorí namiesto nás (štandardne je to číslo ktoré sa zvýši o jedna pre každý záznam, t.j. 1, 2, 3) a pridá ho ako pole s názvom `pk` ku každému z našich príspevkov. K primárny kľúču môžeme pristupovať napísaním `post.pk`, rovnako ako pristupujeme iným poliam (`titul`, `autor`, atď) v našom `Post` objekte!
+A čo `pk=post.pk`? `pk` je skratka pre primárny kľúč (primary key), ktorý jednoznačne určuje každý konkrétny záznam v databáze. Každý Django model má pole, ktoré slúži ako jeho primárny kľúč. Bez ohľadu na to, ako sa toto pole volá, dá sa naň vždy odkazovať menom "pk". Keďže sme neurčili žiadny primárny kľúč v našom `Post` modeli, Django ho vytvorí za nás (štandardne sa volá "id" a je to číslo, ktoré sa zvyšuje o jedna pre každý záznam, t.j. 1, 2, 3) a pridá ho ako pole ku každému z našich príspevkov. K primárnemu kľúču môžeme pristupovať napísaním `post.pk` rovnako, ako pristupujeme k iným poliam (`title`, `author`, atď.) v našom `Post` objekte!
 
-Teraz keď pôjdeme na: http://127.0.0.1:8000/ uvidíme chybu (ako sa dá očakávať, keďže ešte nemáme URL alebo *view* pre `post_detail`). Bude to vyzerať takto:
+Teraz keď pôjdeme na http://127.0.0.1:8000/, uvidíme chybu (ako sa dalo očakávať, keďže ešte nemáme URL alebo *view* pre `post_detail`). Bude to vyzerať takto:
 
-![NoReverseMatch error](images/no_reverse_match2.png)
+![Chyba NoReverseMatch](images/no_reverse_match2.png)
 
-## Vytvor URL na detail príspevku
+## Vytvorenie URL na detail príspevku
 
-Vytvorme URL v `urls.py` pre náš `post_detail` *view*!
+Vytvorme URL v `urls.py` pre náš *view* `post_detail`!
 
-Chceme aby sa detaily nášho prvého príspevku zobrazili na tejto **URL**: http://127.0.0.1:8000/post/1/
+Chceme, aby sa detaily nášho prvého príspevku zobrazili na tejto **URL**: http://127.0.0.1:8000/post/1/
 
-Vytvorme URL v súbore `blog/urls.py` tak, aby odkazoval Django na *view* nazvaný `post_detail`, ktorý zobrazí celý príspevok blogu. Pridaj riadok `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),` do súboru `blog/urls.py`. Súbor by mal vyzerať takto:
+Vytvorme URL v súbore `blog/urls.py` tak, aby odkazovala Django na *view* nazvaný `post_detail`, ktorý zobrazí celý príspevok blogu. Otvor súbor `blog/urls.py` v editore a pridaj doň riadok `path('post/<int:pk>/', views.post_detail, name='post_detail'),` tak, aby súbor vyzeral takto:
 
-{% filename %}blog/urls.py{% endfilename %}
+{% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
 ```python
-from django.conf.urls import url
+from django.urls import path
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.post_list, name='post_list'),
-    url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
+    path('', views.post_list, name='post_list'),
+    path('post/<int:pk>/', views.post_detail, name='post_detail'),
 ]
 ```
 
-Táto časť `^post/(?P<pk>\d+)/$` vyzerá desivo, ale bez obáv - vysvetlíme si:
+Časť `post/<int:pk>/` definuje vzor URL – vysvetlime si ho:
 
-- začína to opäť s `^` - "začiatok".
-- `post/` len znamená, že na začiatku, URL by mala obsahovať slovo **post** a **/**. Zatiaľ všetko v poriadku.
-- `(?P<pk>\d+)` - táto časť je zložitejšia. Znamená to, že Django vezme všetko, čo tu vložíš a premiestni to do premennej s názvom `pk`. (Všimni si, že to zodpovedá názvu ktorý sme dali primárnemu kľúču v `blog/templates/blog/post_list.html`!) `\d` nám hovorí, že to môže byť iba číslica, nie písmeno (takže všetko od 0 po 9). `+` znamená, že musíme mať aspoň jedno číslo. Takže niečo ako `http://127.0.0.1:8000/post//` nie je validné, ale `http://127.0.0.1:8000/post/1234567890/` je úplne v poriadku!
-- `/` – potom potrebujeme **/** ešte raz.
-- `$` – "koniec"!
+- `post/` znamená, že na začiatku by URL mala obsahovať slovo **post** a **/**. Zatiaľ všetko v poriadku.
+- `<int:pk>` – táto časť je trochu záludnejšia. Znamená, že Django očakáva číslo (integer alebo skrátene int) a posunie ho viewu ako premennú pod názvom `pk`.
+- `/` – potom potrebujeme znova **/** predtým, ako URL skončí.
 
-To znamená, že ak zadáš `http://127.0.0.1:8000/post/5/` do svojho prehliadača, Django pochopí, že hľadáš *view* s názvom `post_detail` a prenesie informácie z `pk` rovné `5` do toho *view*.
+To znamená, že ak zadáš `http://127.0.0.1:8000/post/5/` do svojho prehliadača, Django pochopí, že hľadáš *view* s názvom `post_detail`, a posunie informáciu, že `pk` je `5`, tomuto *viewu*.
 
-OK, pridali sme nový URL vzor `blog/urls.py`! Poďme obnoviť stránku: http://127.0.0.1:8000 / Boom! Server znova prestal bežať. Pozri sa do konzoly - ako sa aj dalo očakávať je tam ďalšia chyba!
+OK, pridali sme nový vzor URL do `blog/urls.py`! Poďme obnoviť stránku: http://127.0.0.1:8000 / Bum! Server znova prestal bežať. Pozri sa do konzoly - ako sa aj dalo očakávať, je tam ďalšia chyba!
 
-![AttributeError](images/attribute_error2.png)
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
-Pamätáš si, čo je ďalší krok? Samozrejme: pridávanie view!
+        return _bootstrap._gcd_import(name[level:], package, level)
+      File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+      File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+      File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+      File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+      File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+      File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+      File "/Users/ola/djangogirls/blog/urls.py", line 6, in <module>
+        path('post/<int:pk>/', views.post_detail, name='post_detail'),
+    AttributeError: module 'blog.views' has no attribute 'post_detail'
+    
 
-## Pridaj view do detailu príspevku
+Pamätáš si, čo je ďalší krok? Musíme pridať náš nový view!
 
-Tentokrát má náš *view* extra parameter, `pk`. Náš *view* ho potrebuje zachytiť, že? Takže definujeme našu funkciu ako `def post_detail(request, pk):`. Všimni si, že musíme použiť rovnaké meno, ako to, ktoré sme špecifikovali v Url (`pk`). Vynechanie tejto premmenej je nesprávne a bude mať za následok chybu!
+## Pridanie viewu pre detaily príspevku
 
-Teraz chceme aby sme dostali jeden a len jeden príspevok blogu. Na to môžeme použiť querysets takto:
+Tentokrát má náš *view* extra parameter s názvom `pk`. Náš *view* ho potrebuje zachytiť, však? Takže definujeme našu funkciu ako `def post_detail(request, pk):`. Pozor na to, že tento parameter musí mať presne rovnaký názov, ako sme špecifikovali v `urls` (`pk`). Vynechanie tejto premmenej je nesprávne a bude mať za následok chybu!
 
-{% filename %}blog/views.py{% endfilename %}
+Teraz chceme, aby sme dostali jeden jediný príspevok blogu. Na to môžeme použiť querysety, a to takto:
+
+{% filename %}{{ warning_icon }} blog/views.py{% endfilename %}
 
 ```python
 Post.objects.get(pk=pk)
 ```
 
-Ale tento kód má problém. Pokiaľ tu nie je žiaden `Post` s daným `primárnym kľúčom`(`pk`) budeme mať veľmi škaredú chybu!
+Ale tento kód má problém. Pokiaľ neexistuje žiaden `Post` s daným `primárnym kľúčom`(`pk`), dostaneme veľmi škaredú chybu!
 
-![DoesNotExist error](images/does_not_exist2.png)
+![Chyba DoesNotExist](images/does_not_exist2.png)
 
-To nechceme! Ale samozrejme Django prichádza s niečim, čo si s tým poradí: `get_object_or_404`. V príade, že neexistuje žiaden `Post` s daným `pk` zobrazí oveľa krajšiu stránku, `Page Not Found 404`.
+To nechceme! Našťastie Django má zabudované niečo, čo si s tým poradí: `get_object_or_404`. V prípade, že neexistuje žiaden `Post` s daným `pk`, zobrazí oveľa krajšiu stránku, `Page Not Found 404`.
 
-![Page not found](images/404_2.png)
+![Stránka nenájdená](images/404_2.png)
 
-Dobrá správa je, že si môžeš vytvoriť svoju vlastnú `Page not found` stránku a spraviť ju tak peknú ako len chceš. Ale to nie je momentálne príliš dôležité, takže to preskočíme.
+Dobrá správa je, že si môžeš vytvoriť svoju vlastnú `Page not found` stránku a spraviť ju takú peknú, ako len chceš. Ale to nie je momentálne extra dôležité, takže to preskočíme.
 
-Dobre, čas pridať *view* do nášho `views.py` súboru!
+Dobre, čas pridať *view* do nášho súboru `views.py`!
 
-V `blog/urls.py` sme vytvorili URL pravidlo s názvom `post_detail`, ktoré odkazuje na zobrazenies názvom `views.post_detail`. To znamená, že Django očakáva zobrazovaciu funkciu s nazvom `post_detail` v súbore `blog/views.py`.
+V `blog/urls.py` sme vytvorili URL pravidlo s názvom `post_detail`, ktoré odkazuje na view s názvom `views.post_detail`. To znamená, že Django očakáva view funkciu s názvom `post_detail` v súbore `blog/views.py`.
 
-Mali by sme otvoriť `blog/views.py` a pridať nasledovný kód ku ostatným `from` riadkom:
+Mali by sme otvoriť `blog/views.py` v editore a pridať nasledovný kód k ostatným `from` riadkom:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -132,15 +144,15 @@ def post_detail(request, pk):
 
 Funguje to! Ale čo sa stane, keď klikneš na odkaz v názve príspevku blogu?
 
-![TemplateDoesNotExist error](images/template_does_not_exist2.png)
+![Chyba TemplateDoesNotExist](images/template_does_not_exist2.png)
 
-Ale nie! Ďalšia chyba! Ale už vieme, s čim mám dočinenia, že? Potrebujeme pridať šablónu!
+Ale nie! Ďalšia chyba! Ale už vieme, s čím máme dočinenia, že? Potrebujeme pridať šablónu!
 
-## Vytvor šablónu pre detaily príspevku
+## Vytvorenie šablóny pre detaily príspevku
 
-Vytvoríme súbor v `blog/templates/blog` s názvom `post_detail.html`.
+Vytvoríme súbor v `blog/templates/blog` s názvom `post_detail.html` a otvoríme ho v editore.
 
-Bude to vyzerať takto:
+Vlož doň nasledujúci kód:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -148,67 +160,67 @@ Bude to vyzerať takto:
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <div class="post">
+    <article class="post">
         {% if post.published_date %}
-            <div class="date">
+            <time class="date">
                 {{ post.published_date }}
-            </div>
+            </time>
         {% endif %}
-        <h1>{{ post.title }}</h1>
+        <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    </article>
 {% endblock %}
 ```
 
-Znova raz rozširujeme `base.html`. V bloku `content` chceme zobraziť published_date príspevku (pokiaľ existuje), titulok a text. Ale mali by sme prebrať pár dôležitých vecí, však?
+Opäť raz rozširujeme (extend) `base.html`. V bloku `content` chceme zobraziť published_date príspevku (pokiaľ existuje), titulok a text. Ale mali by sme prebrať pár dôležitých vecí, však?
 
-{% raw %}`{% if ... %} ... {% endif %}` je tag šablóny, ktorý môžeme použiť ak chceme niečo skontrolovať. (Pamätáš si `if ... else ..` z **Úvodu do Pythonu**?) V tomto prípade chceme overiť či `published_date` príspevku nie je prázdny.{% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` je tag šablóny, ktorý môžeme použiť, ak chceme niečo skontrolovať. (Pamätáš si `if ... else ...` z kapitoly **Úvod do jazyka Python**?) V tomto prípade chceme skontrolovať, či pole `published_date` nášho príspevku nie je prázdne.{% endraw %}
 
 Dobre, môžeme obnoviť našu stránku a pozrieť sa, či `TemplateDoesNotExist` zmizlo.
 
-![Post detail page](images/post_detail2.png)
+![Post detail stránka](images/post_detail2.png)
 
 Jupí! Funguje to!
 
 # Je čas nasadiť!
 
-Bolo by dobré vedieť, či tvoja stránka stále funguje na PythonAnywhere, že? Pokúsme sa ju znova nasadiť.
+Bolo by dobré vedieť, či tvoja stránka stále funguje na PythonAnywhere, však? Pokúsme sa ju znova nasadiť.
 
 {% filename %}command-line{% endfilename %}
 
     $ git status
-    $ git add --al .
+    $ git add .
     $ git status
-    $ git commit -m "Pridaný view a šablóna pre detail príspevku blogu a taktiež CSS pre stránku."
+    $ git commit -m "Pridany view a sablona pre detaily prispevku a taktiez CSS pre stranku"
     $ git push
     
 
 Potom v [Bash konzole PythonAnywhere](https://www.pythonanywhere.com/consoles/):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
+    $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-(Nezabudni nahradiť `<your-pythonanywhere-username>` svojím uživateľským menom na PythonAnywhere, bez hranatých zátvoriek).
+(Nezabudni nahradiť `<your-pythonanywhere-domain>` svojou subdoménou na PythonAnywhere bez špicatých zátvoriek.)
 
 ## Aktualizovanie statických súborov na serveri
 
-Servre ako PythonAnywhere sa ku "statickým súborom" (ako CSS súbory) správajú inak ako ku Python súborom, lebo ich môžu optimalizovať aby ich bolo možné rýchlejšie načítať. Kvôli tomu, keď meníme naše CSS súbory, musíme spustiť ďalší príkaz na servri aby ich akutalizoval. Názov príkazu je `collectstatic`.
+Servery ako PythonAnywhere sa ku "statickým súborom" (ako CSS súbory) správajú inak ako ku Python súborom, lebo ich môžu optimalizovať, aby ich bolo možné rýchlejšie načítať. Preto keď meníme naše CSS súbory, musíme spustiť ďalší príkaz na serveri, aby ich aktualizoval. Názov tohto príkazu je `collectstatic`.
 
-Začni spustením virtualenvu, ak už nie je aktívne (PythonAnywhere používa príkaz `workon`, je to presne ako `source myenv/bin/activate` príkaz ktorý si použila na vlastnom počítači):
+Začni spustením virtualenvu, ak už nie je aktivovaný (PythonAnywhere používa príkaz `workon`, je to presne ako príkaz `source mojenv/bin/activate`, ktorý si použila na vlastnom počítači):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ workon <your-pythonanywhere-username>.pythonanywhere.com
+    $ workon <your-pythonanywhere-domain>.pythonanywhere.com
     (ola.pythonanywhere.com)$ python manage.py collectstatic
     [...]
     
 
-`manage.py collectstatic` príkaz sa trochu podobá na `manage.py migrate`. Robíme zmeny v našom kóde a potom povieme Django aby aplikoval (*apply*) tie zmeny, buď na statické súbory na servri, alebo do databázy.
+Tento `manage.py collectstatic` príkaz sa trochu podobá na `manage.py migrate`. Urobíme zmeny v našom kóde a potom povieme Djangu, aby aplikovalo (*apply*) dané zmeny buď na statické súbory na serveri, alebo na databázu.
 
-A nakoniec preskoč na [kartu Web](https://www.pythonanywhere.com/web_app_setup/) and klinki na **Reload**.
+Každopádne, teraz môžeme prejsť na stránku ["Web"](https://www.pythonanywhere.com/web_app_setup/) (cez menu v pravom hornom rohu konzoly), stlačiť **Reload** a pozrieť sa na náš výsledok na adrese https://subdomena.pythonanywhere.com.
 
-A to by malo byť všetko! Gratulujeme :)
+A to by malo byť všetko! Gratulujeme! :)

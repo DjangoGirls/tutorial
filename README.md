@@ -32,6 +32,14 @@ First fork the [DjangoGirls/tutorial](https://github.com/DjangoGirls/tutorial) r
 
 ![Fork button](contributing/images/fork.png)
 
+## CLI for Development
+
+This command line tool use `make` to create development environment. It is optional to use this tool. While building the document, it builds the document for every language. The build process can be limited to any one language using this tool and reduce build time considerbly. Afterwards, the translation to other languages are done from crowdin localization process.
+
+Usage instructions are available though `make help` command.
+
+Try the command `make dev` to start development process.
+
 # Editing chapter content
 
 ## Simple changes
