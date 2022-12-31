@@ -11,6 +11,7 @@
   * [GitHub](installation/README.md#github-account)
   * [PythonAnywhere](installation/README.md#pythonanywhere-account)
 * [Installation (chromebook)](chromebook_setup/README.md)
+* [Installation (RunCode Cloud)](cloud_development_setup/README.md)
 * [How the Internet works](how_the_internet_works/README.md)
 * [Introduction to command line](intro_to_command_line/README.md)
 * [Python installation](python_installation/README.md)
