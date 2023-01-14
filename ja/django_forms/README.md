@@ -370,7 +370,7 @@ form = PostForm(instance=post)
 
 おめでとう！アプリケーションが完成しました。
 
-Djangoのフォームについてもっと知りたい場合、Djangoのドキュメントを読んでください。https://docs.djangoproject.com/ja/2.2/topics/forms/
+Djangoのフォームについてもっと知りたい場合、Djangoのドキュメントを読んでください。https://docs.djangoproject.com/ja/3.2/topics/forms/
 
 ## セキュリティ
 
