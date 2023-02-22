@@ -1,4 +1,3 @@
-
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
 Depending on your version of Windows and your keyboard, one of the following should open a command window (you may have to experiment a bit, but you don't have to try all of these suggestions):
@@ -28,6 +27,8 @@ It's probably under Applications → Accessories → Terminal, or Applications �
 <!--endsec-->
 
 <!--sec data-title="Opening: RunCode" data-id="runcode_prompt" data-collapse=true ces-->
+> **NOTE** If you followed [RunCode setup instructions](../cloud_development_setup/README.md) follow these steps to open command line.
+
 To open the Ubuntu terminal on RunCode, go to Workspaces → New Workspace → Blank. This will open a new Visual Studio Code workspace which has an Ubuntu terminal in the bottom pane.
 
 Altenatively, you can go to Workspaces → New Workspace → Jupyter Lab. This will open a Python prompt which is depicted by `>>>`, you can type `exit()` to get back to the Ubuntu terminal.
