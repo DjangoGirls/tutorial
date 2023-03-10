@@ -98,7 +98,7 @@ Nous allons avoir besoin aussi d'un chemin d’accès pour les fichiers statique
 
 ```python
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = BASE_DIR / 'static'
 ```
 
 Lorsque `DEBUG` a valeur `True` et `ALLOWED_HOSTS` est vide, les noms d'hôte acceptés sont `[« localhost », '127.0.0.1 », ' [ :: 1]']`. Notre nom d’hôte sur PythonAnywhere ne sera donc pas accepté une fois que notre application sera déployée. Pour éviter cela, nous allons changer le paramètre suivant :

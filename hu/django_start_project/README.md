@@ -69,7 +69,7 @@ Szükségünk lesz még arra, hogy megadjuk a statikus fájlokhoz vezető elér�
 
 ```python
     STATIC_URL = '/static/'
-    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+    STATIC_ROOT = BASE_DIR / 'static'
 ```
 
 Amikor a DEBUG értéke True és az ALLOWED_HOSTS üres, a hosztnév alapértelmezetten ['localhost', '127.0.0.1', '[::1]']. Ez deploy után nem fog működni a PythonAnywhere-en, ezért változtassuk meg ezt a beállítást így:

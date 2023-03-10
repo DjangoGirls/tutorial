@@ -70,7 +70,7 @@ Budeme také muset přidat cestu pro statické soubory (o statických souborech 
 
 ```python
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = BASE_DIR / 'static'
 ```  
 
 ## Nastavení databáze

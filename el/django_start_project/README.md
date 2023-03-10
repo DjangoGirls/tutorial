@@ -96,7 +96,7 @@ LANGUAGE_CODE = 'el-GR'
 
 ```python
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = BASE_DIR / 'static'
 ```
 
 Όταν το flag `DEBUG` είναι `True` και η λίστα `ALLOWED_HOSTS` είναι κενή, ο host επικυρώνεται μέσα από την ακόλουθη λίστα `[«localhost', '127.0.0.1', ' [:: 1]']`. Αυτό δεν θα ταιριάξει το hostname μας στο PythonAnywhere μόλις κάνουμε deploy την εφαρμογή μας. Οπότε θα χρειαστεί να κάνουμε την ακόλουθη αλλαγή:

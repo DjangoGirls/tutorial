@@ -98,7 +98,7 @@ LANGUAGE_CODE = 'de-ch'
 
 ```python
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = BASE_DIR / 'static'
 ```
 
 Когато `DEBUG` е `True` и `ALLOWED_HOSTS` е празен, хостът е валидиран срещу `['localhost', '127.0.0.1', '[::1]']`. Това няма да съвпада с името на хоста ни в PythonAnywhere, след като разширим нашето приложение, така че ще променим следната настройка:
