@@ -165,7 +165,7 @@ Ci sono un sacco di software di database diversi che possono immagazzinare dati 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 ```

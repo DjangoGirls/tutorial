@@ -165,7 +165,7 @@ Il est déjà configuré dans cette partie de votre fichier `mysite/settings.py`
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 ```
