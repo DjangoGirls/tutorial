@@ -8,4 +8,6 @@ You're about to write your first line of code, so it's time to download a code e
 
 > **Note** You might have done this earlier in the [Installation chapter](../installation/README.md) – if so, you can skip right ahead to the next chapter!
 
+> **Note** If you have followed [RunCode Setup](../cloud_development_setup/README.md) you can skip this section as Visual Studio Code is pre-installed on the platform.
+
 {% include "/code_editor/instructions.md" %}

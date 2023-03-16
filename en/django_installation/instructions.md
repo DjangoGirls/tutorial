@@ -104,6 +104,7 @@ $ python3 -m venv myvenv
 
 <!--endsec-->
 
+
 ## Working with virtualenv
 
 The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directories and files).
