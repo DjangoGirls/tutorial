@@ -17,13 +17,7 @@ If you are attending one of the [Django Girls events](https://djangogirls.org/ev
 In this tutorial you will be building a blog. In order to do that, as you go through the tutorial you'll be instructed on how to
 install various software on your computer and set up some online accounts as needed (if you are using local desktop environment) or instructed on how to create online accounts only (if you are using cloud development). This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
 
-## Local Installation
-We have seperate guides for different operating systems, that is, Windows, Linux and Mac OS X. You will need to follow the guide for your operating system. This will will be a good option if you have internet challenges, especially if the laptop you are using is your own. The software you need may be downloaded beforehand by the organizers and you can install from a USB stick.
-
-## Chromebook Setup
-Chromebook setup instructions have also been written separate from the guides for other operating systems. These apply to someone following the tutorial on a Chromebook.
-
-## Cloud Development
+# Cloud Development
 In this tutorial, the cloud development platform we will be using will be [RunCode](https://runcode.io/). RunCode is a cloud development environment which people can use without the need to install Python, Django and Visual Studio Code editor locally on their machines. This cloud environment enables anyone to work from any device that has an internet connection, including cellphones, tablets, laptop or desktop.
 
 This removes the need for you to install packages on a borrowed laptop or the need for you to own a laptop to attend the workshop or follow this tutorial from home as you only need to set up three online accounts. This will also save you time required for setting up your development environment. You can always do the [installation](installation/README.md#command-line) later own as a follow-up after finishing the tutorial. However, loading the development enviroment requires good and fast internet for this solution to work for you.
@@ -38,7 +32,6 @@ To set up RunCode Cloud development, follow the instructions below:
 data-id="cloud_development" data-collapse=true ces-->
 {% include "/cloud_development_setup/instructions.md" %}
 <!--endsec-->
- 
 
 # Chromebook Installation
 To set up your Chromebook, follow the instructions below:
