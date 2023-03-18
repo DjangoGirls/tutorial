@@ -98,7 +98,7 @@ LANGUAGE_CODE = 'de-ch'
 
 ```python
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = BASE_DIR / 'static'
 ```
 
 Երբ `DEBUG`- ը `True/ճիշտ է`ճիշտ է, և `ALLOWED_HOSTS`- ը սահմանված չէ, ընդունիչը գտնվում է ընդդեմ `['localhost', '127.0.0.1', '[::1]']` . Մեր դիմումը գործադրելուց հետո սա չի համապատասխանում PythonAnywhere-ում մեր hostname-ին (հյուրընկալող անունին ), այնպես որ մենք կփոխենք հետևյալ կարգավորումները:

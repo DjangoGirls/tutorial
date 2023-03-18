@@ -98,7 +98,7 @@ LANGUAGE_CODE = 'ru-ru'
 {% filename %}mysite/settings.py{% endfilename %}
 ```python
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = BASE_DIR / 'static'
 ```
 
 Когда наcтройка `DEBUG` имеет значение `True`, а настройка `ALLOWED_HOSTS` пуста, имя хост твоего веб-сайта сверяется со списком `['localhost', '127.0.0.1', '[::1]']`.

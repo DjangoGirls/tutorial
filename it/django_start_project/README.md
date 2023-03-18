@@ -98,7 +98,7 @@ Dovremo anche aggiungere un percorso per i file statici. (Più tardi scopriremo 
 
 ```python
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = BASE_DIR / 'static'
 ```
 
 Quando `DEBUG` è `Vero` e `ALLOWED_HOSTS` è vuoto, l'host è convalidato contro `['localhost', '127.0.0.1', '[::1]']`. Questo non abbina il nostro hostname su PythonAnywhere dopo aver distribuito la nostra applicazione in modo da modificare le seguenti impostazioni:
