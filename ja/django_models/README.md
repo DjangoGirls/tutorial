@@ -162,7 +162,7 @@ class Post(models.Model):
 - `models.DateTimeField` – 日付と時間のフィールド
 - `models.ForeignKey` – これは他のモデルへのリンク
 
-コードの細かいところまでは説明し出すと時間がかかるので、ここではしませんが、 モデルのフィールドや上記以外の定義のやり方について知りたい方は是非Djangoドキュメントを見てみて下さい。 (https://docs.djangoproject.com/ja/2.2/ref/models/fields/#field-types)
+コードの細かいところまでは説明し出すと時間がかかるので、ここではしませんが、 モデルのフィールドや上記以外の定義のやり方について知りたい方は是非Djangoドキュメントを見てみて下さい。 (https://docs.djangoproject.com/ja/3.2/ref/models/fields/#field-types)
 
 `def publish(self):` は何かと言うと、 これこそが先程お話ししたブログを公開するメソッドそのものです。 `def` は、これはファンクション（関数）/メソッドという意味です。`publish` はメソッドの名前で、 変えることもできます。 メソッドの名前に使っていいのは、英小文字とアンダースコアで、アンダースコアはスペースの代わりに使います。 （例えば、平均価格を計算するメソッドは `calculate_average_price` っていう名前にします）
 
