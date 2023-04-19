@@ -9,6 +9,11 @@ Go to [RunCode.io](https://runcode.io/) and sign up for a new, free user account
 [Google.com](https://www.google.com/intl/en-GB/gmail/about/) account or [GitHub.com](https://github.com/) 
 which you can sign up with.
 
+## Visual Studio Code
+Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+
+You do not need to install Python as it is pre-installed on their platform so you can skip straight ahead to the next chapter!
+
 ## Create a PythonAnywhere account {#pythonanywhere-account}
 {% include "/deploy/signup_pythonanywhere.md" %}
 
