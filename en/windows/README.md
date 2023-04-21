@@ -27,19 +27,19 @@ When you get to the main tutorial, you'll learn more about the command line.
 For now, the main thing you need to know is how to open a command window and 
 what it looks like:
 
-{% include "/intro_to_command_line/open_instructions.md" %}
+{% include "intro_to_command_line/open_instructions.md" %}
 
 ## Install Python {#python}
-{% include "/python_installation/instructions.md" %}
+{% include "python_installation/instructions.md" %}
 
 ## Install a code editor {#code-editor}
 {% include "/code_editor/instructions.md" %}
 
 ## Set up virtualenv and install Django {#virtualenv}
-{% include "/django_installation/instructions.md" %}
+{% include "django_installation/instructions.md" %}
 
 ## Install Git {#git}
-{% include "/deploy/install_git.md" %}
+{% include "deploy/install_git.md" %}
 
 ## Create a GitHub account {#github-account}
 Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. 

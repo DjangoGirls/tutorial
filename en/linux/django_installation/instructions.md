@@ -104,7 +104,9 @@ like this currently gives the following error:
 
 ## Working with virtualenv
 
-The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directories and files).
+The command above will create a directory called `myvenv` (or whatever name you 
+chose) that contains our virtual environment (basically a bunch of directories 
+and files).
 
 Start your virtual environment by running:
 
@@ -122,9 +124,11 @@ Remember to replace `myvenv` with your chosen `virtualenv` name!
 >$ . myvenv/bin/activate
 >```
 
-You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
+You will know that you have `virtualenv` started when you see that the prompt 
+in your console is prefixed with `(myvenv)`.
 
-When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
+When working within a virtual environment, `python` will automatically refer to 
+the correct version so you can use `python` instead of `python3`.
 
 OK, we have all important dependencies in place. We can finally install Django!
 
@@ -132,7 +136,8 @@ OK, we have all important dependencies in place. We can finally install Django!
 
 Now that you have your `virtualenv` started, you can install Django.
 
-Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
+Before we do that, we should make sure we have the latest version of `pip`, the 
+software that we use to install Django:
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -144,7 +149,10 @@ Before we do that, we should make sure we have the latest version of `pip`, the 
 A requirements file keeps a list of dependencies to be installed using
 `pip install`:
 
-First create a `requirements.txt` file inside of the `djangogirls/` folder, using the code editor that you installed earlier. You do this by opening a new file in the code editor and then saving it as `requirements.txt` in the `djangogirls/` folder. Your directory will look like this:
+First create a `requirements.txt` file inside of the `djangogirls/` folder, 
+using the code editor that you installed earlier. 
+You do this by opening a new file in the code editor and then saving it as 
+`requirements.txt` in the `djangogirls/` folder. Your directory will look like this:
 
 ```
 djangogirls
