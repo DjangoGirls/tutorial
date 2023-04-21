@@ -1,4 +1,4 @@
-* [🇺🇸 English](en/OS.md)
+* [🇺🇸 English](en/)
 * [🇧🇬 Български (beta)](bg/)
 * [🇨🇿 Čeština (beta)](cs/)
 * [🇩🇪 Deutsch](de/)

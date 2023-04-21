@@ -13,9 +13,8 @@ This is why it looks simpler than other programming languages, but don't worry
 
 # Python installation
 
-> **Note** If you already worked through the 
-[installation steps](../installation/README.md), there's no need to do this 
-again – you can skip straight ahead to the next chapter!
+> **Note** If you already worked through the installation steps, there's no need 
+to do this again – you can skip straight ahead to the next chapter!
 
-{% include "/python_installation/instructions.md" %}
+{% include "python_installation/instructions.md" %}
 

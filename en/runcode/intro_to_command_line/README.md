@@ -8,7 +8,8 @@ It's exciting, right?! You'll write your first line of code in just a few minute
 __Let us introduce you to your first new friend: the command line!__
 
 The following steps will show you how to use the black window all hackers use. 
-It might look a bit scary at first but really it's just a prompt waiting for commands from you.
+It might look a bit scary at first but really it's just a prompt waiting for 
+commands from you.
 
 > **Note** Please note that throughout this book we use the terms 'directory' 
 and 'folder' interchangeably but they are one and the same thing.
@@ -18,7 +19,8 @@ and 'folder' interchangeably but they are one and the same thing.
 The window, which is usually called the __command line__ or 
 __command-line interface__, is a text-based application for viewing, handling, 
 and manipulating files on your computer. 
-It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. 
+It's much like Windows Explorer or Finder on the Mac, but without the graphical 
+interface. 
 Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
 
 ## Open the command-line interface
@@ -115,7 +117,8 @@ Many commands you can type at the command prompt have built-in help that you
 can display and read! For example, to learn more about the current directory command:
 
 Linux has a `man` command, which gives you help on commands. 
-Try `man pwd` and see what it says, or put `man` before other commands to see their help. 
+Try `man pwd` and see what it says, or put `man` before other commands to see 
+their help. 
 The output of `man` is normally paged. Use the space bar to move to the next page, 
 and `q` to quit looking at the help.
 

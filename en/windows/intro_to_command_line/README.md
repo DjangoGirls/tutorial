@@ -78,7 +78,7 @@ before the prompt sign, and this is 100% OK.
 The part up to and including the `>` is called the *command line prompt*, or *prompt* for short. 
 It prompts you to input something there.
 
-In the tutorial, when we want you to type in a command, we will include the `>`, 
+In the tutorial, when we want you to type in a command, we will include the `$` or `>`, 
 and occasionally more to the left. Ignore the left part and only type in the 
 command, which starts after the prompt.
 
