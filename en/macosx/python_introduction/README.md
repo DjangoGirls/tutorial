@@ -2,10 +2,11 @@
 
 # Introduction to Python
 
-> Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> Part of this chapter is based on tutorials by Geek Girls Carrots 
+(https://github.com/ggcarrots/django-carrots).
 
 Let's write some code!
 
-{% include "/python_introduction/prompt.md" %}
+{% include "prompt.md" %}
 
-{% include "../python_introduction/instructions.md" %}
+{% include "/python_introduction/instructions.md" %}

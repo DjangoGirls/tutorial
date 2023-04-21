@@ -6,6 +6,6 @@
 
 Let's write some code!
 
-{% include "/python_introduction/prompt.md" %}
+{% include "prompt.md" %}
 
-{% include "../../python_introduction/instructions.md" %}
+{% include "/python_introduction/instructions.md" %}

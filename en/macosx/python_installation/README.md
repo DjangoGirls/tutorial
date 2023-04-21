@@ -17,5 +17,5 @@ but don't worry – Python is also really powerful!
 there's no need to do this again – you can skip straight ahead to 
 the next chapter!
 
-{% include "python_installation/instructions.md" %}
+{% include "instructions.md" %}
 

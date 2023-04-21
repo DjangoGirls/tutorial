@@ -1,8 +1,11 @@
 ## Python prompt
 
-> For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
+> For readers at home: this part is covered in the 
+[Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
 
-To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+To start playing with Python, we need to open up a *command line* on RunCode. 
+You should already know how to do that – you learned it in the 
+[Intro to Command Line](../intro_to_command_line/README.md) chapter.
 
 Once you're ready, follow the instructions below.
 
@@ -16,8 +19,8 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
 
-Another way to open the Python terminal on RunCode, is to go to Workspaces → New Workspace → Jupyter Lab. This will open a Python prompt 
-which is depicted by `>>>`. If you already opened an Ubuntu terminal open, in the [Intro to Command Line](../intro_to_command_line/README.md) chapter, you can just type `python3` in the prompt as shown below to open a Python prompt.
+Another way to open the Python terminal on RunCode, is to go to 
+Workspaces → New Workspace → Jupyter Lab. 
+This will open a Python prompt which is depicted by `>>>`. 
 
 `ubuntu@runcode:~$ python3`
-
