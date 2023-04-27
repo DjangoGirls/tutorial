@@ -10,3 +10,7 @@ Let's write some code!
 {% include "prompt.md" %}
 
 {% include "/python_introduction/instructions.md" %}
+
+{% include "instructions.md" %}
+
+{% include "/python_introduction/instructions_part_two.md" %}

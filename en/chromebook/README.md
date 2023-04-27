@@ -210,3 +210,24 @@ Thus, sign up for a new Python Anywhere account at
 [www.pythonanywhere.com](https://www.pythonanywhere.com).
 
 {% include "/deploy/signup_pythonanywhere.md" %}
+
+# Start reading
+
+Congratulations, you are all set up and ready to go! If you still have some 
+time before the workshop, it would be useful to start reading a few of the 
+beginning chapters:
+
+* [How the internet works](../how_the_internet_works/README.md)
+
+* [Introduction to the command line](../linux/intro_to_command_line/README.md)
+
+* [Introduction to Python](../linux/python_introduction/README.md)
+
+* [What is Django?](../django/README.md)
+
+
+# Enjoy the workshop!
+
+When you begin the workshop, you'll be able to go straight to 
+[Your first Django project!](../linux/django_start_project/README.md) because you 
+already covered the material in the earlier chapters.

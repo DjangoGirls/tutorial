@@ -74,31 +74,14 @@ platforms.
 Feel free to explore instructions for other platforms if you hve time.
 
 # Pick your operating system/platform
-To follow the tutorial, please pick your operating system or platform which you 
-will be following the tutorial on.
+To install software or setup your development environment and follow the 
+tutorial, please pick your operating system or platform which you will be 
+following the tutorial on.
 
-* [ ChromeBook](../chromebook/README.md)
-* [ Linux](../linux/README.md)
-* [ Mac OSX](../macosx/README.md)
-* [ RunCode Cloud](../runcode/README.md)
-* [ Windows](../windows/README.md)
+* [ChromeBook](../chromebook/README.md)
+* [Linux](../linux/README.md)
+* [Mac OSX](../macosx/README.md)
+* [RunCode Cloud](../runcode/README.md)
+* [Windows](../windows/README.md)
 
-# Start reading
-
-Congratulations, you are all set up and ready to go! 
-If you still have some time before the workshop, it would be useful to start 
-reading a few of the beginning chapters:
-
-* [How the internet works](../how_the_internet_works/README.md)
-
-* [Introduction to the command line](../intro_to_command_line/README.md)
-
-* [Introduction to Python](../python_introduction/README.md)
-
-* [What is Django?](../django/README.md)
-
-
-# Enjoy the workshop!
-
-When you begin the workshop, you'll be able to go straight to `Your first Django project!` 
-section because you already covered the material in the earlier chapters.
+Enjoy the workshop!

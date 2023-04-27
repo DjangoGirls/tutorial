@@ -9,7 +9,7 @@ You should already know how to do that – you learned it in the
 
 Once you're ready, follow the instructions below.
 
-We want to open up a Python console, so type in `python3` on Mac OS and hit `enter`.
+We want to open up a Python console, so type in `python3` on Mac OSX and hit `enter`.
 
 {% filename %}command-line{% endfilename %}
 ```

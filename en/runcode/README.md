@@ -52,6 +52,27 @@ to get back to the Ubuntu terminal.
 Ubuntu is a version of Linux so for all command line instructions later in the 
 tutorial you can follow Linux instructions.
 
-# Installing Django {#django}
+## Installing Django {#django}
 
-{% include "/django_installation/instructions.md" %}
+{% include "django_installation/instructions.md" %}
+
+# Start reading
+
+Congratulations, you are all set up and ready to go! If you still have some 
+time before the workshop, it would be useful to start reading a few of the 
+beginning chapters:
+
+* [How the internet works](../how_the_internet_works/README.md)
+
+* [Introduction to the command line](../runcode/intro_to_command_line/README.md)
+
+* [Introduction to Python](../runcode/python_introduction/README.md)
+
+* [What is Django?](../django/README.md)
+
+
+# Enjoy the workshop!
+
+When you begin the workshop, you'll be able to go straight to 
+[Your first Django project!](../runcode/django_start_project/README.md) because you 
+already covered the material in the earlier chapters.

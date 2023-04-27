@@ -50,9 +50,9 @@ beginning chapters:
 
 * [How the internet works](../how_the_internet_works/README.md)
 
-* [Introduction to the command line](../intro_to_command_line/README.md)
+* [Introduction to the command line](../macosx/intro_to_command_line/README.md)
 
-* [Introduction to Python](../python_introduction/README.md)
+* [Introduction to Python](../macosx/python_introduction/README.md)
 
 * [What is Django?](../django/README.md)
 
@@ -60,5 +60,5 @@ beginning chapters:
 # Enjoy the workshop!
 
 When you begin the workshop, you'll be able to go straight to 
-[Your first Django project!](../django_start_project/README.md) because you 
+[Your first Django project!](../macosx/django_start_project/README.md) because you 
 already covered the material in the earlier chapters.
