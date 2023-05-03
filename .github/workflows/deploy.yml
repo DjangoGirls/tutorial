@@ -25,13 +25,14 @@ jobs:
           persist-credentials: false
       - uses: awalsh128/cache-apt-pkgs-action@v1
         with:
-          packages: calibre
+          packages: calibre rename
       - name: Install and Build
         run: |
           npm install
           npx honkit build
           npx honkit epub
-          mv book_*.epub _book/
+          rename 's/^book/django-girls-tutorial/' book_*.epub
+          mv *.epub _book/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
