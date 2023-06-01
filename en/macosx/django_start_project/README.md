@@ -9,25 +9,31 @@ is copyrighted by Markus Zapke-Gründemann et al.
 
 We're going to create a small blog!
 
-The first step is to start a new Django project. Basically, this means that we'll run some scripts provided by Django that will create the skeleton of a Django project for us. This is just a bunch of directories and files that we will use later.
+The first step is to start a new Django project. Basically, this means that we'll run some scripts provided by Django that will create the 
+skeleton of a Django project for us. This is just a bunch of directories and files that we will use later.
 
-The names of some files and directories are very important for Django. You should not rename the files that we are about to create. Moving them to a different place is also not a good idea. Django needs to maintain a certain structure to be able to find important things.
+The names of some files and directories are very important for Django. You should not rename the files that we are about to create. Moving 
+them to a different place is also not a good idea. Django needs to maintain a certain structure to be able to find important things.
 
-> Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. We explained how to do that in the __Django installation__ chapter in the __Working with virtualenv__ part. Typing `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
+> Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. 
+We explained how to do that in the __Django installation__ chapter in the __Working with virtualenv__ part. Typing 
+`source myvenv/bin/activate` on Mac OS X will do this for you.
 
-In your Mac OS X or Linux console, you should run the following command. **Don't forget to add the period (or dot) `.` at the end!**
+In your Mac OS X, you should run the following command. **Don't forget to add the period (or dot) `.` at the end!**
 
 {% filename %}command-line{% endfilename %}
 ```
 (myvenv) ~/djangogirls$ django-admin startproject mysite .
 ```
 
-> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
+> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-
+hand reference).
 
 > **Note** When typing the command above, remember that you only type the part which starts by `django-admin`.
 The `(myvenv) ~/djangogirls$` part shown here is just example of the prompt that will be inviting your input on your command line.
 
-`django-admin.py` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
+`django-admin.py` is a script that will create the directories and files for you. You should now have a directory structure which looks 
+like this:
 
 ```
 djangogirls
@@ -44,11 +50,13 @@ djangogirls
 ```
 > **Note**: in your directory structure, you will also see your `myvenv` directory that we created before.
 
-`manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
+`manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our 
+computer without installing anything else.
 
 The `settings.py` file contains the configuration of your website.
 
-Remember when we talked about a mail carrier checking where to deliver a letter? `urls.py` file contains a list of patterns used by `urlresolver`.
+Remember when we talked about a mail carrier checking where to deliver a letter? `urls.py` file contains a list of patterns used by 
+`urlresolver`.
 
 Let's ignore the other files for now as we won't change them. The only thing to remember is not to delete them by accident!
 
