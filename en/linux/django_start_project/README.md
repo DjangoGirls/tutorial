@@ -9,25 +9,32 @@ is copyrighted by Markus Zapke-Gründemann et al.
 
 We're going to create a small blog!
 
-The first step is to start a new Django project. Basically, this means that we'll run some scripts provided by Django that will create the skeleton of a Django project for us. This is just a bunch of directories and files that we will use later.
+The first step is to start a new Django project. Basically, this means that we'll run some scripts provided by Django that will create the skeleton
+of a Django project for us. This is just a bunch of directories and files that we will use later.
 
-The names of some files and directories are very important for Django. You should not rename the files that we are about to create. Moving them to a different place is also not a good idea. Django needs to maintain a certain structure to be able to find important things.
+The names of some files and directories are very important for Django. You should not rename the files that we are about to create. Moving them to a
+different place is also not a good idea. Django needs to maintain a certain structure to be able to find important things.
 
-> Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. We explained how to do that in the __Django installation__ chapter in the __Working with virtualenv__ part. Typing `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
+> Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. We
+explained how to do that in the __Django installation__ chapter in the __Working with virtualenv__ part. Typing 
+`source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
 
-In your Mac OS X or Linux console, you should run the following command. **Don't forget to add the period (or dot) `.` at the end!**
+In your Linux console, you should run the following command. **Don't forget to add the period (or dot) `.` at the end!**
 
 {% filename %}command-line{% endfilename %}
 ```
 (myvenv) ~/djangogirls$ django-admin startproject mysite .
 ```
 
-> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
+> The period `.` is crucial because it tells the script to install Django in your current directory (for which the 
+> period `.` is a short-hand reference).
 
-> **Note** When typing the command above, remember that you only type the part which starts by `django-admin`.
-The `(myvenv) ~/djangogirls$` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **Note** When typing the command above, remember that you only type the part which starts by `django-admin`. 
+> The `(myvenv) ~/djangogirls$` part shown here is just example of the prompt that will be inviting your input on your 
+> command line.
 
-`django-admin.py` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
+`django-admin.py` is a script that will create the directories and files for you. 
+You should now have a directory structure which looks like this:
 
 ```
 djangogirls
@@ -57,18 +64,26 @@ Let's ignore the other files for now as we won't change them. The only thing to 
 
 Let's make some changes in `mysite/settings.py`. Open the file using the code editor you installed earlier.
 
-**Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "file -> open" menu actions. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
+**Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the 
+"file -> open" menu actions. This should get you the usual window in which you can navigate to your `settings.py` file and select it. 
+Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. 
+Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can 
+open the file but will not let you edit it.
 
-It would be nice to have the correct time on our website. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
+It would be nice to have the correct time on our website. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) 
+and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
 
-In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choose your own timezone.  For example:
+In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choose your own timezone. For example:
 
 {% filename %}mysite/settings.py{% endfilename %}
 ```python
 TIME_ZONE = 'Europe/Berlin'
 ```
 
-A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `ch` for Switzerland. If English is not your native language, you can add this to change the default buttons and notifications from Django to be in your language. So you would have "Cancel" button translated into the language you defined here. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/3.2/ref/settings/#language-code).
+A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for 
+Germany or `ch` for Switzerland. If English is not your native language, you can add this to change the default buttons and notifications 
+from Django to be in your language. So you would have "Cancel" button translated into the language you defined here. 
+[Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/3.2/ref/settings/#language-code).
 
 If you want a different language, change the language code by changing the following line:
 
@@ -78,7 +93,8 @@ LANGUAGE_CODE = 'de-ch'
 ```
 
 
-We'll also need to add a path for static files. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
+We'll also need to add a path for static files.(We'll find out all about static files and CSS later in the tutorial.) 
+Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
 
 {% filename %}mysite/settings.py{% endfilename %}
 ```python
@@ -86,8 +102,8 @@ STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'static'
 ```
 
-When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated against `['localhost', '127.0.0.1', '[::1]']`. This won't
-match our hostname on PythonAnywhere once we deploy our application so we will change the following setting:
+When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated against `['localhost', '127.0.0.1', '[::1]']`. 
+This won't match our hostname on PythonAnywhere once we deploy our application so we will change the following setting:
 
 {% filename %}mysite/settings.py{% endfilename %}
 ```python
@@ -110,7 +126,8 @@ DATABASES = {
 }
 ```
 
-To create a database for our blog, let's run the following in the console: `python manage.py migrate` (we need to be in the `djangogirls` directory that contains the `manage.py` file). If that goes well, you should see something like this:
+To create a database for our blog, let's run the following in the console: `python manage.py migrate` (we need to be in 
+the `djangogirls` directory that contains the `manage.py` file). If that goes well, you should see something like this:
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -142,14 +159,16 @@ And we're done! Time to start the web server and see if our website is working!
 
 ## Starting the web server
 
-You need to be in the directory that contains the `manage.py` file (the `djangogirls` directory). In the console, we can start the web server by running `python manage.py runserver`:
+You need to be in the directory that contains the `manage.py` file (the `djangogirls` directory). In the console, we can start the 
+web server by running `python manage.py runserver`:
 
 {% filename %}command-line{% endfilename %}
 ```
 (myvenv) ~/djangogirls$ python manage.py runserver
 ```
 
-Now you need to check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
+Now you need to check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) 
+and enter this address:
 
 {% filename %}browser{% endfilename %}
 ```
@@ -160,10 +179,15 @@ Congratulations! You've just created your first website and run it using a web s
 
 ![Install worked!](/images/install_worked.png)
 
-Note that a command window can only run one thing at a time, and the command window you opened earlier is running the web server. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
+Note that a command window can only run one thing at a time, and the command window you opened earlier is running the 
+web server. 
+As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but 
+will not execute new commands.
 
 > We reviewed how web servers work in the <b>How the Internet works</b> chapter.
 
-To type additional commands while the web server is running, open a new terminal window and activate your virtualenv -- to review instructions on how to open a second terminal window, see [Introduction to the command line](../intro_to_command_line/README.md). To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
+To type additional commands while the web server is running, open a new terminal window and activate your virtualenv -- to review 
+instructions on how to open a second terminal window, see [Introduction to the command line](../intro_to_command_line/README.md). 
+To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
 
 Ready for the next step? It's time to create some content!

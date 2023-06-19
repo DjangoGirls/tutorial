@@ -1,15 +1,12 @@
 ## Your first Python command!
 
-After running the Python command, the prompt changed to `>>>`. 
-For us this means that for now we may only use commands in the Python language. 
-You don't have to type in `>>>` – Python will do that for you.
+After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the 
+Python language. You don't have to type in `>>>` – Python will do that for you.
 
-If you want to exit the Python console at any point, type `exit()` or use the 
-shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. 
-Then you won't see `>>>` any longer.
+If you want to exit the Python console at any point, type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for 
+Mac/Linux. Then you won't see `>>>` any longer.
 
-For now, we don't want to exit the Python console. 
-We want to learn more about it. Let's start by typing some math, like `2 + 3` 
+For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` 
 and hitting `enter`.
 
 {% filename %}command-line{% endfilename %}
@@ -33,8 +30,7 @@ To perform exponential calculation, say 2 to the power 3, we type:
 
 Have fun with this for a little while and then get back here. :)
 
-As you can see, Python is a great calculator. 
-If you're wondering what else you can do…
+As you can see, Python is a great calculator. If you're wondering what else you can do…
 
 ## Strings
 
@@ -46,10 +42,9 @@ How about your name? Type your first name in quotes like this:
 'Ola'
 ```
 
-You've now created your first string! It's a sequence of characters that can be 
-processed by a computer. The string must always begin and end with the same character. 
-This may be single (`'`) or double (`"`) quotes (there is no difference!) 
-The quotes tell Python that what's inside of them is a string.
+You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always 
+begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!)The quotes tell 
+Python that what's inside of them is a string.
 
 Strings can be strung together. Try this:
 
@@ -93,12 +88,10 @@ Nice, huh? To see your name in uppercase letters, type:
 'OLA'
 ```
 
-You just used the `upper` __method__ on your string! A method (like `upper()`) 
-is a sequence of instructions that Python has to perform on a given object 
-(`"Ola"`) once you call it.
+You just used the `upper` __method__ on your string! A method (like `upper()`) is a sequence of instructions that Python has to perform 
+on a given object (`"Ola"`) once you call it.
 
-If you want to know the number of letters contained in your name, there is a 
-__function__ for that too!
+If you want to know the number of letters contained in your name, there is a __function__ for that too!
 
 {% filename %}command-line{% endfilename %}
 ```python
@@ -106,14 +99,11 @@ __function__ for that too!
 3
 ```
 
-Wonder why sometimes you call functions with a `.` at the end of a string 
-(like `"Ola".upper()`) and sometimes you first call a function and place the 
-string in parentheses?
-Well, in some cases, functions belong to objects, like `upper()`, which can 
-only be performed on strings. In this case, we call the function a __method__. 
-Other times, functions don't belong to anything specific and can be used on
-different types of objects, just like `len()`. 
-That's why we're giving `"Ola"` as a parameter to the `len` function.
+Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a 
+function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only 
+be performed on strings. In this case, we call the function a __method__. Other times, functions don't belong to anything 
+specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the 
+`len` function.
 
 ### Summary
 
@@ -124,14 +114,12 @@ OK, enough of strings. So far you've learned about:
 - __operators__ – like `+` and `*`, combine values to produce a new one
 - __functions__ – like `upper()` and `len()`, perform actions on objects.
 
-These are the basics of every programming language you learn. 
-Ready for something harder? We bet you are!
+These are the basics of every programming language you learn. Ready for something harder? We bet you are!
 
 ## Errors
 
-Let's try something new. Can we get the length of a number the same way we 
-could find out the length of our name? 
-Type in `len(304023)` and hit `enter`:
+Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in 
+`len(304023)` and hit `enter`:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 ```python
@@ -141,14 +129,11 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-We got our first error! 
-The {{ warning_icon }} icon is our way of giving you a heads up that the code 
-you are about to run won't work as expected. 
-Making mistakes (even intentional ones) are an important part of learning!
+We got our first error! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run 
+won't work as expected. Making mistakes (even intentional ones) are an important part of learning!
 
-It says that objects of type "int" (integers, whole numbers) have no length. 
-So what can we do now? Maybe we can write our number as a string? 
-Strings have a length, right?
+It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number 
+as a string? Strings have a length, right?
 
 {% filename %}command-line{% endfilename %}
 ```python
@@ -156,9 +141,7 @@ Strings have a length, right?
 6
 ```
 
-It worked! 
-We used the `str` function inside of the `len` function. 
-`str()` converts everything to strings.
+It worked! We used the `str` function inside of the `len` function. `str()` converts everything to strings.
 
 - The `str` function converts things into __strings__
 - The `int` function converts things into __integers__
@@ -168,10 +151,8 @@ text into numbers – what would `int('hello')` be anyway?
 
 ## Variables
 
-An important concept in programming is variables. 
-A variable is nothing more than a name for something so you can use it later. 
-Programmers use these variables to store data, make their code more readable 
-and so they don't have to keep remembering what things are.
+An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. 
+Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
 
 Let's say we want to create a new variable called `name`:
 
@@ -182,8 +163,8 @@ Let's say we want to create a new variable called `name`:
 
 We type name equals Ola.
 
-As you've noticed, your program didn't return anything like it did before. 
-So how do we know that the variable actually exists? Enter `name` and hit `enter`:
+As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? 
+Enter `name` and hit `enter`:
 
 {% filename %}command-line{% endfilename %}
 ```python
@@ -229,11 +210,9 @@ Traceback (most recent call last):
 NameError: name 'ctiy' is not defined
 ```
 
-An error! As you can see, Python has different types of errors and this one is 
-called a **NameError**. 
-Python will give you this error if you try to use a variable that hasn't been 
-defined yet. 
-If you encounter this error later, check your code to see if you've mistyped any names.
+An error! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this 
+error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if 
+you've mistyped any names.
 
 Play with this for a while and see what you can do!
 
@@ -251,21 +230,18 @@ Try this:
 Maria
 ```
 
-When you just type `name`, the Python interpreter responds with the string 
-*representation* of the variable 'name', which is the letters M-a-r-i-a, 
-surrounded by single quotes, ''. 
-When you say `print(name)`, Python will "print" the contents of the variable to 
-the screen, without the quotes, which is neater.
+When you just type `name`, the Python interpreter responds with the string *representation* of the variable 'name', which is the 
+letters M-a-r-i-a, surrounded by single quotes, ''. When you say `print(name)`, Python will "print" the contents of the variable 
+to the screen, without the quotes, which is neater.
 
-As we'll see later, `print()` is also useful when we want to print things from 
-inside functions, or when we want to print things on multiple lines.
+As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things 
+on multiple lines.
 
 
 ## Lists
 
-Beside strings and integers, Python has all sorts of different types of objects. 
-Now we're going to introduce one called __list__. 
-Lists are exactly what you think they are: objects which are lists of other objects. :)
+Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called 
+__list__. Lists are exactly what you think they are: objects which are lists of other objects. :)
 
 Go ahead and create a list:
 
@@ -275,17 +251,16 @@ Go ahead and create a list:
 []
 ```
 
-Yes, this list is empty. Not very useful, right? Let's create a list of lottery numbers. 
-We don't want to repeat ourselves all the time, so we will put it in a variable, too:
+Yes, this list is empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repeat ourselves all 
+the time, so we will put it in a variable, too:
 
 {% filename %}command-line{% endfilename %}
 ```python
 >>> lottery = [3, 42, 12, 19, 30, 59]
 ```
 
-All right, we have a list! What can we do with it? Let's see how many lottery 
-numbers there are in a list. 
-Do you have any idea which function you should use for that? You know this already!
+All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea 
+which function you should use for that? You know this already!
 
 {% filename %}command-line{% endfilename %}
 ```python
@@ -293,19 +268,15 @@ Do you have any idea which function you should use for that? You know this alrea
 6
 ```
 
-Yes! 
-`len()` can give you a number of objects in a list. 
-Handy, right? 
-Maybe we will sort it now:
+Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we will sort it now:
 
 {% filename %}command-line{% endfilename %}
 ```python
 >>> lottery.sort()
 ```
 
-This doesn't return anything, it just changed the order in which the numbers 
-appear in the list. 
-Let's print it out again and see what happened:
+This doesn't return anything, it just changed the order in which the numbers appear in the list. Let's print it out again and 
+see what happened:
 
 {% filename %}command-line{% endfilename %}
 ```python
@@ -313,8 +284,7 @@ Let's print it out again and see what happened:
 [3, 12, 19, 30, 42, 59]
 ```
 
-As you can see, the numbers in your list are now sorted from the lowest to highest value. 
-Congrats!
+As you can see, the numbers in your list are now sorted from the lowest to highest value. Congrats!
 
 Maybe we want to reverse that order? Let's do that!
 
@@ -334,11 +304,9 @@ If you want to add something to your list, you can do this by typing this comman
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-If you want to show only the first number, you can do this by using __indexes__. 
-An index is the number that says where in a list an item occurs. 
-Programmers prefer to start counting at 0, so the first object in your list is 
-at index 0, the next one is at 1, and so on. 
-Try this:
+If you want to show only the first number, you can do this by using __indexes__. An index is the number that says where in a list 
+an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is 
+at 1, and so on. Try this:
 
 {% filename %}command-line{% endfilename %}
 ```python
@@ -348,13 +316,10 @@ Try this:
 42
 ```
 
-As you can see, you can access different objects in your list by using the 
-list's name and the object's index inside of square brackets.
+As you can see, you can access different objects in your list by using the list's name and the object's index inside of square brackets.
 
-To delete something from your list you will need to use __indexes__ as we 
-learned above and the `pop()` method. 
-Let's try an example and reinforce what we learned previously; 
-we will be deleting the first number of our list.
+To delete something from your list you will need to use __indexes__ as we learned above and the `pop()` method. Let's try an 
+example and reinforce what we learned previously; we will be deleting the first number of our list.
 
 {% filename %}command-line{% endfilename %}
 ```python
@@ -370,22 +335,19 @@ we will be deleting the first number of our list.
 
 That worked like a charm!
 
-For extra fun, try some other indexes: 6, 7, 1000, -1, -6 or -1000. 
-See if you can predict the result before trying the command. 
+For extra fun, try some other indexes: 6, 7, 1000, -1, -6 or -1000. See if you can predict the result before trying the command. 
 Do the results make sense?
 
-You can find a list of all available list methods in this chapter of the Python 
-documentation: https://docs.python.org/3/tutorial/datastructures.html
+You can find a list of all available list methods in this chapter of the Python documentation: 
+https://docs.python.org/3/tutorial/datastructures.html
 
 ## Dictionaries
 
-> For readers at home: this part is covered in the 
-[Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) video.
+> For readers at home: this part is covered in the [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) 
+video.
 
-A dictionary is similar to a list, but you access values by looking up a key 
-instead of a numeric index. 
-A key can be any string or number. 
-The syntax to define an empty dictionary is:
+A dictionary is similar to a list, but you access values by looking up a key instead of a numeric index. A key can be any string or 
+number. The syntax to define an empty dictionary is:
 
 {% filename %}command-line{% endfilename %}
 ```python
@@ -402,8 +364,7 @@ Now, try writing the following command (try substituting your own information, t
 >>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
 ```
 
-With this command, you just created a variable named `participant` with three 
-key–value pairs:
+With this command, you just created a variable named `participant` with three key–value pairs:
 
 - The key `name` points to the value `'Ola'` (a `string` object),
 - `country` points to `'Poland'` (another `string`),
@@ -419,9 +380,7 @@ Ola
 
 See, it's similar to a list. But you don't need to remember the index – just the name.
 
-What happens if we ask Python the value of a key that doesn't exist? 
-Can you guess? 
-Let's try it and see!
+What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 ```python
@@ -431,20 +390,19 @@ Traceback (most recent call last):
 KeyError: 'age'
 ```
 
-Look, another error! This one is a **KeyError**. 
-Python is helpful and tells you that the key `'age'` doesn't exist in this dictionary.
+Look, another error! This one is a **KeyError**. Python is helpful and tells you that the key `'age'` doesn't exist in this 
+dictionary.
 
-When should you use a dictionary or a list? 
-Well, that's a good point to ponder. 
-Think about the answer before looking at it in the next line.
+When should you use a dictionary or a list? Well, that's a good point to ponder. Think about the answer before looking at it in 
+the next line.
 
 - Do you just need an ordered sequence of items? 
   Go for a list.
 - Do you need to associate values with keys, so you can look them up 
   efficiently (by key) later on? Use a dictionary.
 
-Like lists, using the `len()` function on the dictionaries returns the number of 
-key–value pairs in the dictionary. Go ahead and type in this command:
+Like lists, using the `len()` function on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and 
+type in this command:
 
 {% filename %}command-line{% endfilename %}
 ```python
@@ -452,22 +410,18 @@ key–value pairs in the dictionary. Go ahead and type in this command:
 3
 ```
 
-Dictionaries, like lists, are *mutable*, meaning that they can be changed after 
-they are created. 
-You can add new key–value pairs to a dictionary after it is created, like this:
+Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key–value 
+pairs to a dictionary after it is created, like this:
 
 {% filename %}command-line{% endfilename %}
 ```python
 >>> participant['favorite_language'] = 'Python'
 ```
 
-I hope it makes sense up to now. :) 
-Ready for some more fun with dictionaries? 
-Read on for some amazing things.
+I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
 
-You can use the `pop()` method to delete an item in the dictionary. 
-Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, 
-type in the following command:
+You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the 
+key `'favorite_numbers'`, type in the following command:
 
 {% filename %}command-line{% endfilename %}
 ```python
@@ -477,12 +431,9 @@ type in the following command:
 {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-As you can see from the output, the key–value pair corresponding to the 
-'favorite_numbers' key has been deleted.
+As you can see from the output, the key–value pair corresponding to the 'favorite_numbers' key has been deleted.
 
-As well as this, you can also change a value associated with an already-created 
-key in the dictionary. 
-Type this:
+As well as this, you can also change a value associated with an already-created key in the dictionary. Type this:
 
 {% filename %}command-line{% endfilename %}
 ```python
@@ -491,16 +442,12 @@ Type this:
 {'country': 'Germany', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-As you can see, the value of the key `'country'` has been altered from 
-`'Poland'` to `'Germany'`. :) 
-Exciting? 
-Hurrah! 
+As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! 
 You just learned another amazing thing.
 
 ### Summary
 
-Awesome! You know a lot about programming now. 
-In this last part you learned about:
+Awesome! You know a lot about programming now. In this last part you learned about:
 
 - __errors__ – you now know how to read and understand errors that show up if 
   Python doesn't understand a command you've given it
@@ -513,13 +460,10 @@ Excited for the next part? :)
 
 ## Compare things
 
-> For readers at home: this part is covered in the 
-[Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) video.
+> For readers at home: this part is covered in the [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) 
+video.
 
-A big part of programming involves comparing things. 
-What's the easiest thing to compare? 
-Numbers! 
-Let's see how that works:
+A big part of programming involves comparing things. What's the easiest thing to compare? Numbers! Let's see how that works:
 
 {% filename %}command-line{% endfilename %}
 ```python
@@ -537,19 +481,13 @@ True
 True
 ```
 
-We gave Python some numbers to compare. 
-As you can see, not only can Python compare numbers, but it can also compare 
-values of mathematical expressions like `2 * 2` and function results like the 
-`2` returned by `len([4, 5])`. 
-Nice, huh?
+We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare values of 
+mathematical expressions like `2 * 2` and function results like the`2` returned by `len([4, 5])`. Nice, huh?
 
-Do you wonder why we put two equal signs `==` next to each other to compare if 
-numbers are equal? 
-We use a single `=` for assigning values to variables. 
-You always, __always__ need to put two of them – `==` – if you want to check if 
-things are equal to each other. 
-We can also state that things are unequal to each other. 
-For that, we use the symbol `!=`, as shown in the example above.
+Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for 
+assigning values to variables. You always, __always__ need to put two of them – `==` – if you want to check if things are equal 
+to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the 
+example above.
 
 Give Python two more tasks:
 
@@ -580,17 +518,12 @@ False
 True
 ```
 
-You can give Python as many numbers to compare as you want, and it will give 
-you an answer! 
-Pretty smart, right?
+You can give Python as many numbers to compare as you want, and it will give you an answer! Pretty smart, right?
 
-- __and__ – if you use the `and` operator, both comparisons have to be True in 
-  order for the whole command to be True
-- __or__ – if you use the `or` operator, only one of the comparisons has to be 
-  True in order for the whole command to be True
+- __and__ – if you use the `and` operator, both comparisons have to be True in order for the whole command to be True
+- __or__ – if you use the `or` operator, only one of the comparisons has to be True in order for the whole command to be True
 
-Have you heard of the expression "comparing apples to oranges"? 
-Let's try the Python equivalent:
+Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 ```python
@@ -600,26 +533,21 @@ Traceback (most recent call last):
 TypeError: '>' not supported between instances of 'int' and 'str'
 ```
 
-Here you see that just like in the expression, Python is not able to compare a 
-number (`int`) and a string (`str`).
+Here you see that just like in the expression, Python is not able to compare a number (`int`) and a string (`str`).
 Instead, it shows a **TypeError** and tells us the two types can't be compared together.
 
 ## Boolean
 
-Incidentally, you just learned about a new type of object in Python. 
-It's called __Boolean__.
+Incidentally, you just learned about a new type of object in Python. It's called __Boolean__.
 
 There are only two Boolean objects:
 - True
 - False
 
-But for Python to understand this, you need to always write it as 'True' 
-(first letter uppercase, with the rest of the letters lowercased). 
-__true, TRUE, and tRUE won't work – only True is correct.__ 
-(The same applies to 'False' as well.)
+But for Python to understand this, you need to always write it as 'True'(first letter uppercase, with the rest of the letters 
+lowercased). __true, TRUE, and tRUE won't work – only True is correct.__ (The same applies to 'False' as well.)
 
-Booleans can be variables, too! 
-See here:
+Booleans can be variables, too! See here:
 
 {% filename %}command-line{% endfilename %}
 ```python
@@ -644,24 +572,18 @@ Practice and have fun with Booleans by trying to run the following commands:
 - `True or 1 == 1`
 - `1 != 2`
 
-Congrats! 
-Booleans are one of the coolest features in programming, and you just learned 
-how to use them!
+Congrats! Booleans are one of the coolest features in programming, and you just learned how to use them!
 
 # Save it!
 
-> For readers at home: this part is covered in the 
-[Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) video.
+> For readers at home: this part is covered in the[Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) 
+> video.
 
 
-So far we've been writing all our python code in the interpreter, which limits 
-us to entering one line of code at a time. 
-Normal programs are saved in files and executed by our programming language
-__interpreter__ or __compiler__. 
-So far we've been running our programs one line at a time in the Python 
-__interpreter__. 
-We're going to need more than one line of code for the next few tasks, so we'll 
-quickly need to:
+So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal 
+programs are saved in files and executed by our programming language__interpreter__ or __compiler__. So far we've been running 
+our programs one line at a time in the Python __interpreter__. We're going to need more than one line of code for the next few 
+tasks, so we'll quickly need to:
 
 - Exit the Python interpreter
 - Open up our code editor of choice
@@ -678,10 +600,8 @@ $
 
 This will put you back into the command prompt.
 
-Earlier, we picked out a code editor from the 
-[code editor](../code_editor/README.md) section. 
-We'll need to open the editor now and write some code into a new file (or if 
-you're using a Chromebook, create a new file in the cloud IDE and open the file, 
+Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now 
+and write some code into a new file (or if you're using a Chromebook, create a new file in the cloud IDE and open the file, 
 which will be in the included code editor):
 
 {% filename %}editor{% endfilename %}
@@ -689,24 +609,17 @@ which will be in the included code editor):
 print('Hello, Django girls!')
 ```
 
-Obviously, you're a pretty seasoned Python developer now, so feel free to write 
-some code that you've learned today.
+Obviously, you're a pretty seasoned Python developer now, so feel free to write some code that you've learned today.
 
-Now we need to save the file and give it a descriptive name. 
-Let's call the file **python_intro.py** and save it to your desktop. 
-We can name the file anything we want, but the important part here is to make 
-sure the file ends in __.py__. 
-The __.py__ extension tells our operating system that this is a 
-**Python executable file** and Python can run it.
+Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your 
+desktop. We can name the file anything we want, but the important part here is to make sure the file ends in __.py__. The 
+__.py__ extension tells our operating system that this is a **Python executable file** and Python can run it.
 
-> **Note** You should notice one of the coolest thing about code editors: colors! 
-In the Python console, everything was the same color; now you should see that 
-the `print` function is a different color from the string. 
-This is called "syntax highlighting", and it's a really useful feature when coding. 
-The color of things will give you hints, such as unclosed strings or a typo in 
-a keyword name (like the `def` in a function, which we'll see below). 
-This is one of the reasons we use a code editor. :)
+> **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same 
+color; now you should see that the `print` function is a different color from the string. This is called "syntax highlighting", 
+and it's a really useful feature when coding. The color of things will give you hints, such as unclosed strings or a typo in 
+a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor. :)
 
 
-With the file saved, it's time to run it! Using the skills you've learned in 
-the command line section, use the terminal to **change directories** to the desktop.
+With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to 
+**change directories** to the desktop.
