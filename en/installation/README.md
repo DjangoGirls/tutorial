@@ -54,10 +54,10 @@ for other platforms if you hve time.
 To install software or setup your development environment and follow the tutorial, please pick your operating system or 
 platform which you will be following the tutorial on.
 
+* [RunCode Cloud](../runcode/README.md)
 * [ChromeBook](../chromebook/README.md)
 * [Linux](../linux/README.md)
 * [Mac OSX](../macosx/README.md)
-* [RunCode Cloud](../runcode/README.md)
 * [Windows](../windows/README.md)
 
 Enjoy the workshop!

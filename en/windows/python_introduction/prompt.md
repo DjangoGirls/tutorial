@@ -10,7 +10,7 @@ We want to open up a Python console, so type in `python` on Windows and hit `ent
 
 {% filename %}command-line{% endfilename %}
 ```
-$ python3
+> python
 Python {{ book.py_release }} (...)
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
