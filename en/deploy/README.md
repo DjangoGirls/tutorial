@@ -23,12 +23,13 @@ Git tracks changes to a particular set of files in what's called a code reposito
 > **Note** Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. You should be in the `djangogirls` folder.
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ git init
 Initialized empty Git repository in ~/djangogirls/.git/
 $ git config --global user.name "Your Name"
 $ git config --global user.email you@example.com
 ```
+
 Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email ever again).
 
 ### Adjusting your branch name
@@ -36,7 +37,7 @@ Initializing the git repository is something we need to do only once per project
 If the version of Git that you are using is older than **2.28**, you will need to change the name of your branch to "main". To determine the version of Git, please enter the following command:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ git --version
 git version 2.xx...
 ```
@@ -44,7 +45,7 @@ git version 2.xx...
 Only if the second number of the version, shown as "xx" above, is less than 28, will you need to enter the following command to rename your branch. If it is 28 or higher, please continue to "Ignoring files". As in "Initializing", this is something we need to do only once per project, as well as only when your version of Git is less than 2.28:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ git branch -M main
 ```
 
@@ -100,7 +101,7 @@ Instead use `ls -a` to see the `.gitignore` file.
 It's a good idea to use a `git status` command before `git add` or whenever you find yourself unsure of what has changed. This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ git status
 On branch main
 
@@ -121,7 +122,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 And finally we save our changes. Go to your console and run these commands:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ git add .
 $ git commit -m "My Django Girls app, first commit"
  [...]
@@ -151,7 +152,7 @@ Now we need to hook up the Git repository on your computer to the one up on GitH
 Type the following into your console (replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets -- the URL should match the clone URL you just saw).
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git
 $ git push -u origin main
 ```

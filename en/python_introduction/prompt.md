@@ -9,7 +9,7 @@ Once you're ready, follow the instructions below.
 We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ python3
 Python {{ book.py_release }} (...)
 Type "help", "copyright", "credits" or "license" for more information.

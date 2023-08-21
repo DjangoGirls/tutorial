@@ -67,12 +67,12 @@ You can think of a model in the database as a spreadsheet with columns (fields) 
 To keep everything tidy, we will create a separate application inside our project. It is very nice to have everything organized from the very beginning. To create an application we need to run the following command in the console (from `djangogirls` directory where `manage.py` file is):
 
 {% filename %}Mac OS X and Linux:{% endfilename %}
-```
+```shell
 (myvenv) ~/djangogirls$ python manage.py startapp blog
 ```
 
 {% filename %}Windows:{% endfilename %}
-```
+```shell
 (myvenv) C:\Users\Name\djangogirls> python manage.py startapp blog
 ```
 
@@ -179,7 +179,7 @@ If something is still not clear about models, feel free to ask your coach! We kn
 The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 (myvenv) ~/djangogirls$ python manage.py makemigrations blog
 Migrations for 'blog':
   blog/migrations/0001_initial.py
@@ -191,7 +191,7 @@ Migrations for 'blog':
 Django prepared a migration file for us that we now have to apply to our database. Type `python manage.py migrate blog` and the output should be as follows:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 (myvenv) ~/djangogirls$ python manage.py migrate blog
 Operations to perform:
   Apply all migrations: blog

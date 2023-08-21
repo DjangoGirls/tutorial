@@ -36,7 +36,7 @@ $ sudo apt install git
 This will align your installation of Git with the broad direction of the global developer community, and the "main" branch will be used through the remainder of this tutorial. Please see https://sfconservancy.org/news/2020/jun/23/gitbranchname/ and https://github.com/github/renaming for further discussion of this subject. 
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ git config --global --add init.defaultBranch main
 ```
 
@@ -55,7 +55,7 @@ $ sudo dnf install git
 This will align your installation of Git with the broad direction of the global developer community, and the "main" branch will be used through the remainder of this tutorial. Please see https://sfconservancy.org/news/2020/jun/23/gitbranchname/ and https://github.com/github/renaming for further discussion of this subject. 
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ git config --global --add init.defaultBranch main
 ```
 
@@ -74,7 +74,7 @@ $ sudo zypper install git
 This will align your installation of Git with the broad direction of the global developer community, and the "main" branch will be used through the remainder of this tutorial. Please see https://sfconservancy.org/news/2020/jun/23/gitbranchname/ and https://github.com/github/renaming for further discussion of this subject. 
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ git config --global --add init.defaultBranch main
 ```
 

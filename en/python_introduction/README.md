@@ -580,9 +580,10 @@ data-collapse=true ces-->
 On a Mac, the command will look something like this:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ cd ~/Desktop
 ```
+
 <!--endsec-->
 
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
@@ -591,7 +592,7 @@ data-collapse=true ces-->
 On Linux, it will be like this:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ cd ~/Desktop
 ```
 
@@ -604,9 +605,10 @@ $ cd ~/Desktop
 On Windows Command Prompt, it will be like this:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 > cd %HomePath%\Desktop
 ```
+
 <!--endsec-->
 
 
@@ -615,9 +617,10 @@ On Windows Command Prompt, it will be like this:
 And on Windows Powershell, it will be like this:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 > cd $Home\Desktop
 ```
+
 <!--endsec-->
 
 
@@ -626,7 +629,7 @@ If you get stuck, ask for help. That's exactly what the coaches are here for!
 Now use Python to execute the code in the file like this:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ python3 python_intro.py
 Hello, Django girls!
 ```
@@ -656,7 +659,7 @@ if 3 > 2:
 If we were to save and run this, we'd see an error like this:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
-```
+```shell
 $ python3 python_intro.py
 File "python_intro.py", line 2
          ^
@@ -698,7 +701,7 @@ else:
 When this is run it will print out:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ python3 python_intro.py
 5 is indeed greater than 2
 ```
@@ -719,7 +722,7 @@ else:
 and executed:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ python3 python_intro.py
 Hey Sonja!
 ```
@@ -748,7 +751,7 @@ else:
 Python runs through each test in sequence and prints:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ python3 python_intro.py
 Perfect, I can hear all the details
 ```
@@ -806,7 +809,7 @@ You may wonder why we've written the name of the function at the bottom of the f
 Let's run this now and see what happens:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ python3 python_intro.py
 Hi there!
 How are you?
@@ -842,7 +845,7 @@ hi()
 Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
-```
+```shell
 $ python3 python_intro.py
 Traceback (most recent call last):
 File "python_intro.py", line 10, in <module>
@@ -862,7 +865,7 @@ hi("Ola")
 And run it again:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ python3 python_intro.py
 Hi Ola!
 ```
@@ -877,7 +880,7 @@ hi("Sonja")
 And run it:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ python3 python_intro.py
 Hi Sonja!
 ```
@@ -904,7 +907,7 @@ hi("Rachel")
 Let's call the code now:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ python3 python_intro.py
 Hi Rachel!
 ```
@@ -951,7 +954,7 @@ for name in girls:
 And when we run it:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ python3 python_intro.py
 Hi Rachel!
 Next girl

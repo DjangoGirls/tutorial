@@ -16,7 +16,7 @@ Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) 
 Deploying a web app on PythonAnywhere involves pulling down your code from GitHub, and then configuring PythonAnywhere to recognise it and start serving it as a web application.  There are manual ways of doing it, but PythonAnywhere provides a helper tool that will do it all for you. Let's install it first:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
-```
+```shell
 $ pip{{ book.pa_py_version }} install --user pythonanywhere
 ```
 
@@ -25,7 +25,7 @@ That should print out some things like `Collecting pythonanywhere`, and eventual
 Now we run the helper to automatically configure our app from GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
-```
+```shell
 $ pa_autoconfigure_django.py --python={{ book.pa_py_version }} https://github.com/<your-github-username>/my-first-blog.git
 ```
 
@@ -43,7 +43,7 @@ On PythonAnywhere all those steps are automated, but they're the same steps you 
 The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own computer, so it can have different posts and admin accounts. As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
-```
+```shell
 (ola.pythonanywhere.com) $ python manage.py createsuperuser
 ```
 
@@ -52,7 +52,7 @@ Type in the details for your admin user.  Best to use the same ones as you're us
 Now, if you like, you can also take a look at your code on PythonAnywhere using `ls`:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
-```
+```shell
 (ola.pythonanywhere.com) $ ls
 blog  db.sqlite3  manage.py  mysite requirements.txt static
 (ola.pythonanywhere.com) $ ls blog/
