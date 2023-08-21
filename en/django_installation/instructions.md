@@ -19,7 +19,7 @@ All you need to do is find a directory in which you want to create the `virtuale
 For this tutorial we will be using a new directory `djangogirls` from your home directory:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ mkdir djangogirls
 $ cd djangogirls
 ```
@@ -27,7 +27,7 @@ $ cd djangogirls
 We will make a virtualenv called `myvenv`. The general command will be in the format:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ python3 -m venv myvenv
 ```
 
@@ -37,7 +37,7 @@ data-collapse=true ces-->
 To create a new `virtualenv`, you need to open the command prompt and run `python -m venv myvenv`. It will look like this:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 C:\Users\Name\djangogirls> python -m venv myvenv
 ```
 
@@ -52,7 +52,7 @@ We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv 
 It will look like this:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ python3 -m venv myvenv
 ```
 
@@ -61,7 +61,7 @@ $ python3 -m venv myvenv
 > __NOTE:__ On some versions of Debian/Ubuntu you may receive the following error:
 
 >{% filename %}command-line{% endfilename %}
->```
+>```shell
 >The virtual environment was not created successfully because ensurepip is not available.  On Debian/Ubuntu systems, you need to install the python3-venv package using the following command.
 >    apt install python3-venv
 >You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.
@@ -69,7 +69,7 @@ $ python3 -m venv myvenv
 >
 > In this case, follow the instructions above and install the `python3-venv` package:
 >{% filename %}command-line{% endfilename %}
->```
+>```shell
 >$ sudo apt install python3-venv
 >```
 
@@ -83,7 +83,7 @@ $ python3 -m venv myvenv
 > To get around this, use the `virtualenv` command instead.
 
 >{% filename %}command-line{% endfilename %}
->```
+>```shell
 >$ sudo apt install python-virtualenv
 >$ virtualenv --python=python{{ book.py_version }} myvenv
 >```
@@ -98,7 +98,7 @@ $ python3 -m venv myvenv
 > then instead run:
 >
 >{% filename %}command-line{% endfilename %}
->```
+>```shell
 >sudo apt install python{{ book.py_version }}-venv
 >```
 
@@ -115,14 +115,14 @@ data-collapse=true ces-->
 Start your virtual environment by running:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 C:\Users\Name\djangogirls> myvenv\Scripts\activate
 ```
 
 > __NOTE:__ On Windows 10 you might get an error in the Windows PowerShell that says `execution of scripts is disabled on this system`. In this case, open another Windows PowerShell with the "Run as Administrator" option.  Then try typing the following command before starting your virtual environment:
 >
 >{% filename %}command-line{% endfilename %}
->```
+>```powershell
 >C:\WINDOWS\system32> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 >     Execution Policy Change
 >     The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
@@ -132,7 +132,7 @@ C:\Users\Name\djangogirls> myvenv\Scripts\activate
 
 > __NOTE:__ For users of the popular editor VS Code, which comes with an integrated terminal based off windows PowerShell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
 >
->```
+>```shell
 >$ . myvenv\Scripts\activate.ps1
 >```
 >The advantage is that you don't have to switch between editor windows and command-line windows
@@ -145,7 +145,7 @@ data-collapse=true ces-->
 Start your virtual environment by running:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ source myvenv/bin/activate
 ```
 
@@ -154,7 +154,7 @@ Remember to replace `myvenv` with your chosen `virtualenv` name!
 > __NOTE:__ If the command `source` is not available, try doing this instead:
 >
 >{% filename %}command-line{% endfilename %}
->```
+>```shell
 >$ . myvenv/bin/activate
 >```
 
@@ -173,7 +173,7 @@ Now that you have your `virtualenv` started, you can install Django.
 Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 (myvenv) ~$ python -m pip install --upgrade pip
 ```
 
@@ -201,7 +201,7 @@ Django~={{ book.django_version }}
 Now, run `pip install -r requirements.txt` to install Django.
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 (myvenv) ~$ pip install -r requirements.txt
 Collecting Django~={{ book.django_version }} (from -r requirements.txt (line 1))
   Downloading Django-{{ book.django_version }}-py3-none-any.whl (7.9MB)
@@ -222,7 +222,7 @@ data-collapse=true ces-->
 > Your command line might freeze when you try to install Django. If this happens, instead of the above command use:
 >
 >{% filename %}command-line{% endfilename %}
->```
+>```shell
 >C:\Users\Name\djangogirls> python -m pip install -r requirements.txt
 >```
 

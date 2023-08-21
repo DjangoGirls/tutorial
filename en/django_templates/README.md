@@ -74,7 +74,7 @@ It'd be good to see if your website will still be working on the public Internet
 * First, push your code to GitHub
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ git status
 [...]
 $ git add .
@@ -88,7 +88,7 @@ $ git push
 * Then, log back in to [PythonAnywhere](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one), and run:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
-```
+```shell
 $ cd <your-pythonanywhere-domain>.pythonanywhere.com
 $ git pull
 [...]

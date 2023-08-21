@@ -15,7 +15,7 @@ It's easiest to learn by example. Let's try this, shall we?
 Open up your local console (not on PythonAnywhere) and type this command:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 (myvenv) ~/djangogirls$ python manage.py shell
 ```
 

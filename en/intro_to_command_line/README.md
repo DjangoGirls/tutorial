@@ -30,9 +30,10 @@ You now should see a white or black window that is waiting for your commands.
 If you're on Mac or Linux, you probably see a `$`, like this:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $
 ```
+
 <!--endsec-->
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
@@ -41,7 +42,7 @@ $
 On Windows, you probably see a `>`, like this:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 >
 ```
 
@@ -64,7 +65,7 @@ Let's start by typing this command:
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ whoami
 ```
 
@@ -74,7 +75,7 @@ $ whoami
 <!--sec data-title="Your first command: Windows" data-id="windows_whoami" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 > whoami
 ```
 
@@ -83,7 +84,7 @@ $ whoami
 And then hit `enter`. This is our result:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ whoami
 olasitarska
 ```
@@ -104,7 +105,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
 
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ pwd
 /Users/olasitarska
 ```
@@ -117,10 +118,11 @@ $ pwd
 <!--sec data-title="Current directory: Windows" data-id="windows_cd" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 > cd
 C:\Users\olasitarska
 ```
+
 > Note: 'cd' stands for 'change directory'. With PowerShell you can use pwd just like on Linux or Mac OS X.
 
 <!--endsec-->
@@ -154,7 +156,7 @@ So what's in it? It'd be cool to find out. Let's see:
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ ls
 Applications
 Desktop
@@ -162,13 +164,14 @@ Downloads
 Music
 ...
 ```
+
 <!--endsec-->
 
 <!--sec data-title="List files and directories: Windows" data-id="windows_dir" data-collapse=true ces-->
 
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 > dir
  Directory of C:\Users\olasitarska
 05/08/2020 07:28 PM <DIR>      Applications
@@ -177,6 +180,7 @@ Music
 05/08/2020 07:28 PM <DIR>      Music
 ...
 ```
+
 > Note: In PowerShell you can also use 'ls' like on Linux and Mac OS X.
 <!--endsec-->
 
@@ -189,15 +193,16 @@ Now, let's go to our Desktop directory:
 <!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ cd Desktop
 ```
+
 <!--endsec-->
 
 <!--sec data-title="Change current directory: Linux" data-id="Linux_move_to" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ cd Desktop
 ```
 
@@ -214,9 +219,10 @@ for example, `Schreibtisch` for German.
 
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 > cd Desktop
 ```
+
 <!--endsec-->
 
 Check if it's really changed:
@@ -224,19 +230,21 @@ Check if it's really changed:
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ pwd
 /Users/olasitarska/Desktop
 ```
+
 <!--endsec-->
 
 <!--sec data-title="Check if changed: Windows" data-id="windows_cd2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 > cd
 C:\Users\olasitarska\Desktop
 ```
+
 <!--endsec-->
 
 Here it is!
@@ -252,18 +260,20 @@ How about creating a practice directory on your desktop? You can do it this way:
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ mkdir practice
 ```
+
 <!--endsec-->
 
 <!--sec data-title="Create directory: Windows" data-id="windows_mkdir" data-collapse=true ces-->
 
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 > mkdir practice
 ```
+
 <!--endsec-->
 
 This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
@@ -281,24 +291,26 @@ A small challenge for you: in your newly created `practice` directory, create a 
 <!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ cd practice
 $ mkdir test
 $ ls
 test
 ```
+
 <!--endsec-->
 
 <!--sec data-title="Exercise solution: Windows" data-id="windows_test_dir" data-collapse=true ces-->
 
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 > cd practice
 > mkdir test
 > dir
 05/08/2020 07:28 PM <DIR>      test
 ```
+
 <!--endsec-->
 
 Congrats! :)
@@ -314,18 +326,20 @@ First, we need to get back to Desktop:
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ cd ..
 ```
+
 <!--endsec-->
 
 <!--sec data-title="Clean up: Windows" data-id="windows_back" data-collapse=true ces-->
 
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 > cd ..
 ```
+
 <!--endsec-->
 
 Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
@@ -335,20 +349,22 @@ Check where you are:
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ pwd
 /Users/olasitarska/Desktop
 ```
+
 <!--endsec-->
 
 <!--sec data-title="Check location: Windows" data-id="windows_cd3" data-collapse=true ces-->
 
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 > cd
 C:\Users\olasitarska\Desktop
 ```
+
 <!--endsec-->
 
 Now time to delete the `practice` directory:
@@ -358,19 +374,21 @@ Now time to delete the `practice` directory:
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ rm -r practice
 ```
+
 <!--endsec-->
 
 <!--sec data-title="Delete directory: Windows Command Prompt" data-id="windows_rmdir" data-collapse=true ces-->
 
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 > rmdir /S practice
 practice, Are you sure <Y/N>? Y
 ```
+
 <!--endsec-->
 
 Done! To be sure it's actually deleted, let's check it:
@@ -378,18 +396,20 @@ Done! To be sure it's actually deleted, let's check it:
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ ls
 ```
+
 <!--endsec-->
 
 <!--sec data-title="Check deletion: Windows" data-id="windows_dir2" data-collapse=true ces-->
 
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 > dir
 ```
+
 <!--endsec-->
 
 ### Exit
@@ -399,18 +419,20 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ exit
 ```
+
 <!--endsec-->
 
 <!--sec data-title="Exit: Windows" data-id="windows_exit" data-collapse=true ces-->
 
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 > exit
 ```
+
 <!--endsec-->
 
 Cool, huh? :)

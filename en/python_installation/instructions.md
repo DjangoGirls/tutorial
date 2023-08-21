@@ -46,7 +46,7 @@ data-collapse=true ces-->
 It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ python3 --version
 Python {{ book.py_release }}
 ```
@@ -54,7 +54,7 @@ Python {{ book.py_release }}
 If you have a different version of Python installed, at least {{ book.py_min_version }} (e.g. {{ book.py_min_release }}), then you don't have to upgrade. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ grep '^NAME=' /etc/os-release
 ```
 
@@ -67,7 +67,7 @@ Afterwards, depending on the result, follow one of the following installation gu
 Type this command into your console:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ sudo apt install python3
 ```
 
@@ -79,7 +79,7 @@ data-collapse=true ces-->
 Use this command in your console:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ sudo dnf install python3
 ```
 
@@ -93,7 +93,7 @@ data-collapse=true ces-->
 Use this command in your console:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ sudo zypper install python3
 ```
 
@@ -102,10 +102,11 @@ $ sudo zypper install python3
 Verify the installation was successful by opening a command prompt and running the `python3` command:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ python3 --version
 Python {{ book.py_release }}
 ```
+
 The version shown may be different from {{ book.py_release }} -- it should match the version you installed.
 
 **NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is {{ book.py_min_version }} or higher. If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.

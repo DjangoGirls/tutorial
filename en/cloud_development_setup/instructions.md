@@ -29,7 +29,7 @@ All you need to do is find a directory in which you want to create the `virtuale
 For this tutorial we will be using a new directory `djangogirls` from your home directory:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ mkdir djangogirls
 $ cd djangogirls
 ```
@@ -38,23 +38,23 @@ We will make a virtualenv called `myvenv`.
 
 To create a new `virtualenv` on RunCode, you first need to install the `virtualenv` module. To do so, first you need to update
 the packages in your environment
->```
+>```shell
 >$ sudo apt-get update -y
 >```
 > then install `virtualenv` by running the command:
->```
+>```shell
 >$ sudo apt-get install -y virtualenv
 >```
 
 > After this you can create the `virtualenv` run the command:
->```
+>```shell
 >$ virtualenv -p python myvenv
 >```
 > and a new `virtualenv` with the name `myvenv` or whatever name you chose should be created in your `djangogirls` folder.
 
 ## Working with a Virtual Environment
 >Start your virtual environment by running:
->```
+>```shell
 >$ . myvenv/bin/activate
 >```
 
@@ -82,7 +82,7 @@ Django~={{ book.django_version }}
 Now, run `pip install -r requirements.txt` to install Django.
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 (myvenv) ~$ pip install -r requirements.txt
 Collecting Django~={{ book.django_version }} (from -r requirements.txt (line 1))
   Downloading Django-{{ book.django_version }}-py3-none-any.whl (7.9MB)

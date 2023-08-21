@@ -171,28 +171,28 @@ It'd be good to see all this out and live on the Internet, right?  Let's do anot
 First off, let's see what files have changed since we last deployed (run these commands locally, not on PythonAnywhere):
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ git status
 ```
 
 Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes in this directory:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ git add .
 ```
 
 Before we upload all the files, let's check what `git` will be uploading (all the files that `git` will upload should now appear in green):
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ git status
 ```
 
 We're almost there, now it's time to tell it to save this change in its history. We're going to give it a "commit message" where we describe what we've changed. You can type anything you'd like at this stage, but it's helpful to type something descriptive so that you can remember what you've done in the future.
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ git commit -m "Changed the HTML for the site."
 ```
 
@@ -201,7 +201,7 @@ $ git commit -m "Changed the HTML for the site."
 Once we've done that, we upload (push) our changes up to GitHub:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ git push
 ```
 
@@ -210,7 +210,7 @@ $ git push
 * Open up the [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one). Then, run:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
-```
+```shell
 $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
 $ git pull
 [...]

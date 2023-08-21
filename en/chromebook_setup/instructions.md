@@ -24,7 +24,7 @@ Now you should see an interface with a sidebar, buttons at the left.
 Click "Terminal" button to open terminal window with prompt like this:
 
 {% filename %}Terminal{% endfilename %}
-```
+```shell
 $
 ```
 
@@ -53,7 +53,7 @@ Now you should see an interface with a sidebar, a big main window with some
 text, and a small window at the bottom that looks something like this:
 
 {% filename %}bash{% endfilename %}
-```
+```shell
 yourusername:~/workspace $
 ```
 
@@ -69,7 +69,7 @@ bigger.
 4. Click on the Tools dropdown list (at the bottom left side of the window), then on Terminal button to open terminal tab with a prompt like this:
 
 {% filename %}Terminal{% endfilename %}
-```
+```shell
 app@name-of-your-glitch-project:~
 ```
 
@@ -111,7 +111,7 @@ python3 manage.py runserver $PORT
 Once these files are created, go to the Terminal and execute the following commands to create your first Django project:
 
 {% filename %}Terminal{% endfilename %}
-```
+```shell
 django-admin.py startproject mysite .
 refresh
 ```
@@ -140,6 +140,7 @@ LOGGING = {
     },
 }
 ```
+
 This will create a `debug.log` file detailing Django operations and any error messages that might come up, making it much easier to fix if your website does not work.
 
 The initial restarting of the Glitch project should fail.
@@ -156,7 +157,7 @@ things don't get mixed up between projects.
 Run:
 
 {% filename %}Cloud 9{% endfilename %}
-```
+```shell
 mkdir djangogirls
 cd djangogirls
 python3 -m venv myvenv

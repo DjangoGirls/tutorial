@@ -433,7 +433,7 @@ Let's see if all this works on PythonAnywhere. Time for another deploy!
 * First, commit your new code, and push it up to GitHub:
 
 {% filename %}command-line{% endfilename %}
-```
+```shell
 $ git status
 $ git add .
 $ git status
@@ -444,7 +444,7 @@ $ git push
 * Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
-```
+```shell
 $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
 $ git pull
 [...]
