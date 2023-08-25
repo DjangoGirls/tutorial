@@ -1,7 +1,25 @@
 # Django Girls Tutorial
 
-This is the source code repository for the Django Girls Tutorial. Django Girls Tutorial is used on [tutorial.djangogirls.org](http://tutorial.djangogirls.org) so if you want to read it, please go there. If you want to contribute please do go further with this file.
+~ 🖥 Source Code 🖥 ~
 
+**NOT** intended for reading here. To read go to: [📖 tutorial.djangogirls.org 📖](http://tutorial.djangogirls.org)
+
+# Contribution QUICKSTART
+
+1. Fork this repo [[fork](#fork-the-repository)]
+
+> 2. **[Small changes](#simple-changes)**: you can now edit your fork on the github website, do this! Make a change, then [create a pull request](#making-a-pull-request)!
+
+2. **[Big changes](#new-content-and-complex-changes)**: clone your fork locally.
+3. [CLI](#cli-for-development) run `make dev` in repo.
+
+```
+$ make dev
+...
+Serving book on http://localhost:4000
+```
+
+Note: we have many changes under way we maybe working on your request already! Refer to existing [Pull requests](https://github.com/DjangoGirls/tutorial/pulls).
 
 # How to contribute
 
@@ -114,9 +132,9 @@ Example:
     To git@github.com:miohtama/tutorial.git
        b37ca59..fe36152  contributing -> contributing
 
-# Making a pull request
+# Making a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 
-After you have finished your changes you need to create [a pull request](https://help.github.com/articles/using-pull-requests)  on GitHub. DjangoGirls will get notified about the pull request, review your changes, suggest any corrections if needed and then *pull* your changes to the master version.
+After you have finished your changes you need to [create a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)  on GitHub. DjangoGirls will get notified about the pull request, review your changes, suggest any corrections if needed and then *pull* your changes to the master version.
 
 In your own repository on GitHub press do *Compare & pull request*
 
