@@ -31,23 +31,6 @@ $ git config --global user.email you@example.com
 ```
 Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email ever again).
 
-### Adjusting your branch name
-
-If the version of Git that you are using is older than **2.28**, you will need to change the name of your branch to "main". To determine the version of Git, please enter the following command:
-
-{% filename %}command-line{% endfilename %}
-```
-$ git --version
-git version 2.xx...
-```
-
-Only if the second number of the version, shown as "xx" above, is less than 28, will you need to enter the following command to rename your branch. If it is 28 or higher, please continue to "Ignoring files". As in "Initializing", this is something we need to do only once per project, as well as only when your version of Git is less than 2.28:
-
-{% filename %}command-line{% endfilename %}
-```
-$ git branch -M main
-```
-
 ### Ignoring files
 
 Git will track changes to all the files and folders in this directory, but there are some files we want it to ignore. We do this by creating a file called `.gitignore` in the base directory. Open up your editor and create a new file with the following contents:
@@ -131,6 +114,22 @@ $ git commit -m "My Django Girls app, first commit"
  create mode 100644 mysite/wsgi.py
 ```
 
+### Adjusting your branch name
+
+If the version of Git that you are using is older than **2.28**, you will need to change the name of your branch to "main". To determine the version of Git, please enter the following command:
+
+{% filename %}command-line{% endfilename %}
+```
+$ git --version
+git version 2.xx...
+```
+
+Only if the second number of the version, shown as "xx" above, is less than 28, will you need to enter the following command to rename your branch. If it is 28 or higher, please continue to "Pushing your code to GitHub". As in "Initializing", this is something we need to do only once per project, as well as only when your version of Git is less than 2.28:
+
+{% filename %}command-line{% endfilename %}
+```
+$ git branch -M main
+```
 
 ## Pushing your code to GitHub
 
