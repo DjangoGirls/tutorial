@@ -16,7 +16,7 @@ You can download Python for Windows from the website https://www.python.org/down
 
 One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python {{ book.py_version }} to PATH" or "Add Python to your environment variables" checkbox and click on "Install Now", as shown here (it may look a bit different if you are installing a different version):
 
-![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
+![Don't forget to add Python to the Path](python_installation/images/python-installation-options.png)
 
 When the installation completes, you may see a dialog box with a link you can follow to learn more about Python or about the version you installed. Close or cancel that dialog -- you'll be learning more in this tutorial!
 
