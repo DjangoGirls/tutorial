@@ -2,7 +2,7 @@
 
 ~ 🖥 Source Code 🖥 ~
 
-**NOT** intended for reading here. To read go to: [📖 tutorial.djangogirls.org 📖](http://tutorial.djangogirls.org)
+**NOT** intended for reading here. To read go to: [📖 tutorial.djangogirls.org 📖](https://tutorial.djangogirls.org)
 
 # Contribution QUICKSTART
 
