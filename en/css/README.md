@@ -159,7 +159,7 @@ Maybe we can customize the font in our header? Paste this into your `<head>` in 
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
-<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext">
 ```
 
 As before, check the order and place before the link to `blog/static/css/blog.css`. This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
