@@ -34,29 +34,23 @@ $ mkdir djangogirls
 $ cd djangogirls
 ```
 
-We will make a virtualenv called `myvenv`. 
+We will make a virtualenv called `myvenv` by running `python3 -m venv myvenv`.
+It will look like this:
 
-To create a new `virtualenv` on RunCode, you first need to install the `virtualenv` module. To do so, first you need to update
-the packages in your environment
->```
->$ sudo apt-get update -y
->```
-> then install `virtualenv` by running the command:
->```
->$ sudo apt-get install -y virtualenv
->```
+{% filename %}command-line{% endfilename %}
+```
+$ python3 -m venv myvenv
+```
 
-> After this you can create the `virtualenv` run the command:
->```
->$ virtualenv -p python myvenv
->```
-> and a new `virtualenv` with the name `myvenv` or whatever name you chose should be created in your `djangogirls` folder.
+`myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces. It is also a good idea to keep the name short as you'll be referencing it a lot!
 
 ## Working with a Virtual Environment
 >Start your virtual environment by running:
 >```
->$ . myvenv/bin/activate
+>$ source myvenv/bin/activate
 >```
+
+Remember to replace `myvenv` with your chosen `virtualenv` name!
 
 ### Installing packages with requirements
 
