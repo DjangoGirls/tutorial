@@ -13,7 +13,7 @@ which you can sign up with.
 {% include "/deploy/signup_pythonanywhere.md" %}
 
 ## Command Line
-To open the Ubuntu terminal on RunCode, go to Workspaces → New Workspace → Blank. This will open a new Visual Studio Code workspace which has an Ubuntu terminal in the bottom pane.
+To open the Ubuntu terminal on RunCode, go to Workspaces → New Workspace → Blank, and select the “Tiny” Workspace Type. After waiting for it to start, this will open a new Visual Studio Code workspace which has an Ubuntu terminal in the bottom pane.
 
 Ubuntu is a version of Linux so for all command line instructions later in the tutorial you can follow Linux instructions.
 

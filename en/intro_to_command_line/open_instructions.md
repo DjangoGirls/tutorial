@@ -29,7 +29,7 @@ It's probably under Applications → Accessories → Terminal, or Applications �
 <!--sec data-title="Opening: RunCode" data-id="runcode_prompt" data-collapse=true ces-->
 > **NOTE** If you followed [RunCode setup instructions](../cloud_development_setup/README.md) follow these steps to open command line.
 
-To open the Ubuntu terminal on RunCode, go to Workspaces → New Workspace → Blank. This will open a new Visual Studio Code workspace which has an Ubuntu terminal in the bottom pane.
+If you already created a Workspace on RunCode, access it again from the Dashobard. To open a new workspace with the the Ubuntu terminal on RunCode, go to Workspaces → New Workspace → Blank, and select the “Tiny” Workspace Type. This will open a new Visual Studio Code workspace which has an Ubuntu terminal in the bottom pane.
 
 Ubuntu is a version of Linux so from now on you can follow Linux instructions.
 
