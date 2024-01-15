@@ -20,6 +20,12 @@ Sublime Text is a very popular editor with a free evaluation period and it's ava
 
 [Download it here](https://www.sublimetext.com/)
 
+## Codelobster
+
+Codelobster is a cross-platform editor with many plug-ins for all popular frameworks.
+
+[Download it here](https://www.codelobster.com/)
+
 ## Why are we installing a code editor?
 
 You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
