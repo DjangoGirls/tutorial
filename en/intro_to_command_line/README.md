@@ -94,7 +94,11 @@ As you can see, the computer has just printed your username. Neat, huh? :)
 
 ## Basics
 
-Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
+Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system.
+
+If you make a typo, you can use the left and right arrow keys to move your cursor, backspace and delete to edit the command. Most command lines don't support using the mouse to move the cursor.
+
+Let's try this, shall we?
 
 ### Current directory
 
