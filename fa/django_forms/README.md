@@ -60,7 +60,7 @@ class PostForm(forms.ModelForm):
 
 توجه داشته باشید که ما می‌خواهیم نام ویو جدید را `post_new` بگذاریم. آیتم [SVG icon](https://icons.getbootstrap.com/icons/file-earmark-plus/) توسط [Bootstrap Icons](https://icons.getbootstrap.com/) ارائه می‌شود و علامتی مانند یک صفحه به همراه یک علامت به اضافه، نشان خواهد داد. ما از یک هدایت‌کننده جنگو یا Django template directive، به اسم `include` استفاده می‌کنیم. این هدایت‌کننده محتوای یک فایل را به تمپلیت جنگو تزریق می‌کند. مرورگر وب به خوبی می‌تواند این نوع از محتوا را بدون پردازش‌های اضافه، مدیریت کند.
 
-> شما می‌توانید تمام آیکون‌های بوتسترپ را از [اینجا](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip) دانلود کنید. فایل را از حالت زیپ خارج کنید و همه تصاویر را در پوشه‌ای به نام `icons` در داخل پوشه `blog/templates/blog/` قرار دهید. به این روش شما می‌توانید به آیکونی مانند `pencil-fill.svg` از طریق آدرس `blog/templates/blog/icons/pencil-fill.svg`، دسترسی داشته باشید
+> شما می‌توانید تمام آیکون‌های بوتسترپ را از [اینجا](https://github.com/twbs/icons/releases/download/v1.11.3/bootstrap-icons-1.11.3.zip) دانلود کنید. فایل را از حالت زیپ خارج کنید و همه تصاویر را در پوشه‌ای به نام `icons` در داخل پوشه `blog/templates/blog/` قرار دهید. به این روش شما می‌توانید به آیکونی مانند `pencil-fill.svg` از طریق آدرس `blog/templates/blog/icons/pencil-fill.svg`، دسترسی داشته باشید
 
 بعد از اصلاح این خط، فایل شما باید به این شکل باشد:
 

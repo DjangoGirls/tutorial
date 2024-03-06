@@ -62,7 +62,7 @@ Codeամանակն է ծածկագրի խմբագրում բացել `blog/templ
 
 Նկատի ունեցեք, որ մենք ուզում ենք մեր նոր տեսակետը կոչել ` post_new `: [SVG icon](https://icons.getbootstrap.com/icons/file-earmark-plus/) տրամադրվում է [Bootstrap Icons ](https://icons.getbootstrap.com/) կողմից, և դրանում կցուցադրվի էջի պատկերակ `գումարած նշանով: Մենք օգտագործում ենք Django ձևանմուշի դիրեկտիվը, որը կոչվում է `include `: Սա ֆայլի պարունակությունը կներարկի Django ձևանմուշում: Վեբ զննարկիչը գիտի, թե ինչպես վարվել այս տեսակի բովանդակության հետ `առանց հետագա մշակման:
 
-> Bootstrap- ի բոլոր պատկերակները կարող եք ներբեռնել [ here](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip): Անջատեք ֆայլը և պատճենեք բոլոր SVG պատկերային ֆայլերը ` blog/templates/blog/ ` ներսում գտնվող նոր պանակի մեջ, որը կոչվում է ` icons `: Այդ կերպ Դուք կարող եք մուտք գործել ` pencil-fill.svg ` պես պատկերակ ՝ օգտագործելով ֆայլի ուղի `blog/templates/blog/icons/pencil-fill.svg `
+> Bootstrap- ի բոլոր պատկերակները կարող եք ներբեռնել [ here](https://github.com/twbs/icons/releases/download/v1.11.3/bootstrap-icons-1.11.3.zip): Անջատեք ֆայլը և պատճենեք բոլոր SVG պատկերային ֆայլերը ` blog/templates/blog/ ` ներսում գտնվող նոր պանակի մեջ, որը կոչվում է ` icons `: Այդ կերպ Դուք կարող եք մուտք գործել ` pencil-fill.svg ` պես պատկերակ ՝ օգտագործելով ֆայլի ուղի `blog/templates/blog/icons/pencil-fill.svg `
 
 Տողը խմբագրելուց հետո ձեր HTML ֆայլը այժմ պետք է ունենա այսպիսի տեսք.
 
