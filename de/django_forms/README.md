@@ -60,7 +60,7 @@ Es ist an der Zeit, `blog/templates/blog/base.html` im Code-Editor zu öffnen. J
 
 Beachte, dass wir unsere neue View `post_new` nennen wollen. Das [SVG-Icon](https://icons.getbootstrap.com/icons/file-earmark-plus/) wird von [Bootstrap Icons](https://icons.getbootstrap.com/) zur Verfügung gestellt und zeigt ein Seitensymbol mit Pluszeichen an. Wir verwenden eine Django-Template-Direktive namens `include`. Dadurch wird der Inhalt der Datei in das Django-Template eingefügt. Der Web-Browser weiß, wie man diese Art von Inhalt ohne weitere Verarbeitung handhabt.
 
-> Alle Bootstrap-Icons kannst du [hier herunterladen](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip). Entpacke die Datei und kopiere alle SVG-Bilddateien in einen neuen Ordner namens `icons` innerhalb von `blog/templates/blog/`. So kannst du auf ein Symbol wie `pencil-fill.svg` mit dem Dateipfad `blog/templates/blog/icons/pencil-fill.svg` zugreifen
+> Alle Bootstrap-Icons kannst du [hier herunterladen](https://github.com/twbs/icons/releases/download/v1.11.3/bootstrap-icons-1.11.3.zip). Entpacke die Datei und kopiere alle SVG-Bilddateien in einen neuen Ordner namens `icons` innerhalb von `blog/templates/blog/`. So kannst du auf ein Symbol wie `pencil-fill.svg` mit dem Dateipfad `blog/templates/blog/icons/pencil-fill.svg` zugreifen
 
 Nach dem Bearbeiten der Zeile sieht deine HTML-Datei so aus:
 
