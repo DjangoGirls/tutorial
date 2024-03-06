@@ -68,7 +68,7 @@ Môžeš tiež ísť do záložky "Files" a pohybovať sa pomocou zabudovaného 
 Tvoja stránka by teraz mala byť online na internete!  Preklikaj sa cez stránku "Web" na PythonAnywhere, kým sa dostaneš k odkazu na ňu. Môžeš ho poslať, komu len chceš. :)
 
 
-> **Poznámka** Toto je začiatočnícky tutoriál a pre nasadenie stránky sme si niektoré veci zjednodušili, čo nie je ideálne z pohľadu bezpečnosti.  Ak sa rozhodneš na tomto projekte ďalej stavať, mala by si si prejsť [Django deployment checklist](https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/) pre zopár tipov, ako svoju stránku zabezpečiť.
+> **Poznámka** Toto je začiatočnícky tutoriál a pre nasadenie stránky sme si niektoré veci zjednodušili, čo nie je ideálne z pohľadu bezpečnosti.  Ak sa rozhodneš na tomto projekte ďalej stavať, mala by si si prejsť [Django deployment checklist](https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/) pre zopár tipov, ako svoju stránku zabezpečiť.
 
 ## Debugovacie tipy
 

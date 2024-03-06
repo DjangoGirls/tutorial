@@ -83,7 +83,7 @@ V súbore `settings.py` nájdi riadok, ktorý obsahuje `TIME_ZONE`, a uprav ho t
 TIME_ZONE = 'Europe/Bratislava'
 ```
 
-Jazykový kód sa skladá z jazyka, napr. `en` pre angličtinu alebo `sk` pre slovenčinu, a kódu krajiny, napr. `de` pre Nemecko alebo `ch` pre Švajčiarsko. Ak angličtina nie je tvoj materinský jazyk, môžeš pridať nasledovné, ak chceš zmeniť nápisy na tlačidlách a pripomienkach do svojho jazyka. Ak to spravíš, bude napríklad tlačidlo "Cancel" preložené do jazyka, ktorý tu definuješ. [Django má zabudovaných veľa prekladov](https://docs.djangoproject.com/en/3.2/ref/settings/#language-code).
+Jazykový kód sa skladá z jazyka, napr. `en` pre angličtinu alebo `sk` pre slovenčinu, a kódu krajiny, napr. `de` pre Nemecko alebo `ch` pre Švajčiarsko. Ak angličtina nie je tvoj materinský jazyk, môžeš pridať nasledovné, ak chceš zmeniť nápisy na tlačidlách a pripomienkach do svojho jazyka. Ak to spravíš, bude napríklad tlačidlo "Cancel" preložené do jazyka, ktorý tu definuješ. [Django má zabudovaných veľa prekladov](https://docs.djangoproject.com/en/5.1/ref/settings/#language-code).
 
 Ak chceš iný jazyk, zmeň jazykový kód tým, že zmeníš nasledujúci riadok:
 

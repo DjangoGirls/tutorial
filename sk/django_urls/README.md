@@ -112,4 +112,4 @@ Ak sa teraz pokúsiš navštiviť http://127.0.0.1:8000/, uvidíš správu, že 
 
 Konzola zobrazuje chybu, ale neboj sa - je to práveže nápomocné: hovorí ti, že neexistuje atribút post_list (**no attribute 'post_list'**). To je názov *viewu*, ktorý sa Django pokúša nájsť a použiť, ale my sme ho ešte nevytvorili. V tejto fáze `/admin/` tiež nefunguje. Žiadne obavy, aj k tomu sa dostaneme. Ak vidíš inú chybovú hlášku, skúš reštartovať web server. To môžeš docieliť tak, že v príkazovom okne, kde beží tvoj web server, stlačíš Ctrl + C (klávesy Control a C) naraz. Na Windowse možno bude treba stlačiť Ctrl + Break. Svoj web server potom znova spustíš príkazom `python manage.py runserver`.
 
-> Ak chceš vedieť viac o Django URL konfigurácii, pozri sa na oficiálnu dokumentáciu: https://docs.djangoproject.com/en/3.2/topics/http/urls/
+> Ak chceš vedieť viac o Django URL konfigurácii, pozri sa na oficiálnu dokumentáciu: https://docs.djangoproject.com/en/5.1/topics/http/urls/

@@ -392,7 +392,7 @@ Môžeš si vyskúšať zmeniť názov alebo text a uložiť zmeny!
 
 Gratulujeme! Tvoja aplikácia je čím ďalej dokonalejšia!
 
-Ak potrebuješ viac informácií o Django formulároch, prečítaj si dokumentáciu: https://docs.djangoproject.com/en/3.2/topics/forms/
+Ak potrebuješ viac informácií o Django formulároch, prečítaj si dokumentáciu: https://docs.djangoproject.com/en/5.1/topics/forms/
 
 ## Bezpečnosť
 

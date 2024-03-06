@@ -100,4 +100,4 @@ urlpatterns = [
 
 エラーが表示されていますね。でも心配しないで。これはむしろ、結構便利なものなんですよ：ここでは、**'post_list' という属性(attribute)がない**ことを知らせてくれています。 これは *ビュー* の名前で、Djangoが探して使おうとしましたが、私たちはこれをまだ作っていませんでした。 現時点では、`/admin/` も動作していないと思います。 心配しなくて大丈夫です。ちゃんとできますから。 別のエラーメッセージが表示された場合は、Webサーバーを再起動してみてください。 これを行うには、Webサーバーを実行しているコンソールウィンドウで、Ctrl + C（CtrlキーとCキーを同時に押す）で停止します。 Windowsの場合、Ctrl + Breakかもしれません。 その後、`python manage.py runserver`を実行してWebサーバーを再起動します。
 
-> Django URLconfについてもっと知りたい場合は、公式のドキュメントを見て下さい。 https://docs.djangoproject.com/ja/3.2/topics/http/urls/
+> Django URLconfについてもっと知りたい場合は、公式のドキュメントを見て下さい。 https://docs.djangoproject.com/ja/5.1/topics/http/urls/
