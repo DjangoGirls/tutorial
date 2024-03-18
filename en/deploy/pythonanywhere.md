@@ -29,6 +29,45 @@ Now we run the helper to automatically configure our app from GitHub. Type the f
 $ pa_autoconfigure_django.py --python={{ book.pa_py_version }} https://github.com/<your-github-username>/my-first-blog.git
 ```
 
+> **Note** This will ask for your GitHub username and password. GitHub no longer supports password authentication and running this command could display an error like this: 
+> ```
+> remote: Support for password authentication was removed on August 13, 2021.
+> remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+> fatal: Authentication failed for 'https://github.com/lilspad/my-first-blog/'
+> ```
+> If this is the case for you, you can use SSH connection instead. This probably sounds a bit scary, but it's just a more secure way for github to check that you are who you say you are. [You can find out more about SSH keys from GitHub docs](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh).  
+> Here's how to connect with SSH:
+> 1. Make sure you do the following steps on the *pythonanywhere* bash console. 
+    > SSH keys are generated for each system that requires access to your github. This means if you do these steps on your computer's terminal, it will create keys for your computer and not the pythonanywhere service you're trying to access now. 
+>
+> 2. Generate a new SSH key by typing the following line into the bash console:
+    > ```
+    > ssh-keygen -t ed25519 -C "your_email@example.com"
+    > ```
+    > This will trigger "Generating public/private ed25519 key pair.", where "ed25519" is the name of the pair of keys (1 public, 1 private). 
+    > 
+    > It will also ask you where to save the files and for a passphrase - you can just press enter for both, as it will choose a default location for the files, and the passphrase is not required.
+>
+> 3. Copy your newly generated SSH public key. On the bash console, you can view the content of the file by using `cat` like this:
+    > ```
+    > cat ~/.ssh/id_ed25519.pub
+    > ```
+    > The next line printed in the console will be your public key. Select all of it (including your email address at the end) and copy.
+>
+> 4. Create a new SSH key on you github profile:
+    > - Go to github.com and click on your avatar in the top right-hand corner.
+    > - Select settings and look for the "SSH and GPG keys" tab in the settings menu.
+    > - Click on the "New SSH key" button on the right hand side.
+    > - You can name this new key anything you like, but  I recommend something like "pythonanywhere" so you know what it is in the future.
+    > - Paste your newly generated SSH public key (that we copied from the bash console) into the "Key" field and press "Add SSH key".
+    >
+    > For extra help you can have a look at ["Adding a new SSH key to your account"](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account#adding-a-new-ssh-key-to-your-account) on GitHub docs.
+>
+> 5. Now run the helper with an SSH url (instead on HTTPS):
+    > ```
+    > $ pa_autoconfigure_django.py --python={{ book.pa_py_version }} git@github.com:<your-github-username>/my-first-blog.git
+    > ```
+
 As you watch that running, you'll be able to see what it's doing:
 
 - Downloading your code from GitHub
