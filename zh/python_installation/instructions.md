@@ -41,11 +41,11 @@ Django 是用 Python 写的。 在 Django 中，我们需要使用 Python 语言
     $ sudo zypper install python3
 
 
-### OS X
+### macOS
 
 你需要去到网站 https://www.python.org/downloads/release/python-343/ 然后下载 Python 安装程序：
 
-  * 下载 *Mac OS X 64-bit/32-bit installer* 文件，
+  * 下载 *macOS 64-bit/32-bit installer* 文件，
   * 双击 *python-3.4.3-macosx10.6.pkg* 以运行安装程序。
 
 验证安装成功，请打开 *终端* 应用，运行 `python3` 命令：

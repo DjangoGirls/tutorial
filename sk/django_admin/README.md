@@ -23,7 +23,7 @@ Pre prihlásenie musíš vytvoriť *superusera* - užívateľa, ktorý má kontr
 
 > Ak chceš zadať viac príkazov, kým web server beží, otvor nové okno terminálu a aktivuj svoj virtualenv. Ako písať príkazy sme si povedali v kapitole **Tvoj prvý Django projekt!** v odstavci **Spustenie webového serveru**.
 
-{% filename %}Mac OS X alebo Linux:{% endfilename %}
+{% filename %}macOS alebo Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py createsuperuser
     

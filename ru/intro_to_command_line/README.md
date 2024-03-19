@@ -12,7 +12,7 @@ __Позволь представить нашего первого нового
 
 ## Что такое командная строка?
 
-Окно, которое обычно называют __командной строкой__ или __интерфейсом командной строки (англ. CLI, Command Line Interface)__, является текстовым приложением для просмотра, обработки и манипулирования файлами на вашем компьютере. Она делает то же, что и Проводник в Windows или Finder в Mac OS X, но у неё нет графического интерфейса. Другими названиями для командной строки являются: *cmd*, *CLI*, *prompt*, *консоль* или *терминал*.
+Окно, которое обычно называют __командной строкой__ или __интерфейсом командной строки (англ. CLI, Command Line Interface)__, является текстовым приложением для просмотра, обработки и манипулирования файлами на вашем компьютере. Она делает то же, что и Проводник в Windows или Finder в macOS, но у неё нет графического интерфейса. Другими названиями для командной строки являются: *cmd*, *CLI*, *prompt*, *консоль* или *терминал*.
 
 ## Открываем интерфейс командной строки
 
@@ -23,7 +23,7 @@ __Позволь представить нашего первого нового
 
 Перед тобой должно появиться белое или чёрное окошко. Оно ожидает, когда ты введёшь команду.
 
-<!--sec data-title="OS X и Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
+<!--sec data-title="macOS и Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
 
 Если у тебя Mac или Linux, ты, скорее всего, увидишь знак `$` в конце строки (перед курсором):
@@ -61,7 +61,7 @@ $
 
 Давай введём следующую команду:
 
-<!--sec data-title="OS X и Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
+<!--sec data-title="macOS и Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -100,7 +100,7 @@ olasitarska
 
 Было бы неплохо знать, где мы находимся сейчас, верно? Давай посмотрим. Набери эту команду и нажми `Enter`:
 
-<!--sec data-title="OS X и Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
+<!--sec data-title="macOS и Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
 
 {% filename %}command-line{% endfilename %}
@@ -121,7 +121,7 @@ $ pwd
 > cd
 C:\Users\olasitarska
 ```
-> Примечание: 'cd' означает 'change directory'(сменить каталог). Если ты пользуешься PowerShell, можешь ввести pwd — как на Linux или Mac OS X.
+> Примечание: 'cd' означает 'change directory'(сменить каталог). Если ты пользуешься PowerShell, можешь ввести pwd — как на Linux или macOS.
 
 <!--endsec-->
 
@@ -133,9 +133,9 @@ C:\Users\olasitarska
 
 У многих команд для командной строки есть встроенная справка! Например, вот как узнать подробнее о команде, которая показывает, в какой папке ты сейчас находишься:
 
-<!--sec data-title="OS X и Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
+<!--sec data-title="macOS и Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-В OS X и Linux есть команда `man` — справка о других командах (на английском языке). Набери `man pwd` и посмотри, что пишут о команде `pwd`. Используй `man` с другими командами, чтобы посмотреть для них справку. Как правило, справки `man` выводятся постранично. Нажми пробел, чтобы перейти на следующую страницу. Чтобы выйти, нажми  `q`.
+В macOS и Linux есть команда `man` — справка о других командах (на английском языке). Набери `man pwd` и посмотри, что пишут о команде `pwd`. Используй `man` с другими командами, чтобы посмотреть для них справку. Как правило, справки `man` выводятся постранично. Нажми пробел, чтобы перейти на следующую страницу. Чтобы выйти, нажми  `q`.
 
 <!--endsec-->
 
@@ -151,7 +151,7 @@ C:\Users\olasitarska
 
 Так что же в нем? Было бы здорово узнать. Давай посмотрим:
 
-<!--sec data-title="OS X и Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
+<!--sec data-title="macOS и Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -177,7 +177,7 @@ Music
 05/08/2014 07:28 PM <DIR>      Music
 ...
 ```
-> Примечание: в PowerShell можешь использовать 'ls' — как в Linux или Mac OS X.
+> Примечание: в PowerShell можешь использовать 'ls' — как в Linux или macOS.
 <!--endsec-->
 
 ---
@@ -186,7 +186,7 @@ Music
 
 Теперь вернёмся в наш каталог рабочего стола:
 
-<!--sec data-title="OS X" data-id="OSX_move_to" data-collapse=true ces-->
+<!--sec data-title="macOS" data-id="OSX_move_to" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -217,7 +217,7 @@ $ cd Desktop
 
 Проверь, что рабочий каталог действительно изменился:
 
-<!--sec data-title="OS X и Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
+<!--sec data-title="macOS и Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -245,7 +245,7 @@ C:\Users\olasitarska\Desktop
 
 Как насчет создания каталога practice на рабочем столе? Ты можешь сделать это так:
 
-<!--sec data-title="OS X и Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
+<!--sec data-title="macOS и Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -274,7 +274,7 @@ $ mkdir practice
 
 #### Решение:
 
-<!--sec data-title="OS X и Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
+<!--sec data-title="macOS и Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -307,7 +307,7 @@ test
 
 Во-первых, мы должны вернуться на рабочий стол:
 
-<!--sec data-title="OS X и Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
+<!--sec data-title="macOS и Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -328,7 +328,7 @@ $ cd ..
 
 Проверь, где ты находишься:
 
-<!--sec data-title="OS X и Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
+<!--sec data-title="macOS и Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -351,7 +351,7 @@ C:\Users\olasitarska\Desktop
 
 > __Внимание__: удаление файлов с помощью `del`, `rmdir` или `rm` необратимо. Это означает, что _удалённые файлы будут потеряны навсегда_! Поэтому будь очень осторожна с этими командами.
 
-<!--sec data-title="Windows Powershell, OS X и Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
+<!--sec data-title="Windows Powershell, macOS и Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -371,7 +371,7 @@ practice, Are you sure <Y/N>? Y
 
 Готово! Давай проверим, что папка действительно удалена:
 
-<!--sec data-title="OS X и Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
+<!--sec data-title="macOS и Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -392,7 +392,7 @@ $ ls
 
 Вот и всё на данный момент! Теперь можно безопасно закрыть командную строку. Давай сделаем это как хакеры, согласна? :)
 
-<!--sec data-title="OS X и Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
+<!--sec data-title="macOS и Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```

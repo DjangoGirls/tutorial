@@ -20,7 +20,7 @@ Questi tre servizi saranno importantissimi per te. Userai il tuo computer locale
 
 Git tiene traccia delle modifiche a un particolare insieme di file in quello che è chiamato repository di codice (o "repo" in breve). Iniziamone uno per il nostro progetto. Apri la console ed esegui questi comandi nella directory `djangogirls`:
 
-> **Nota** Controlla la tua cartella di lavoro corrente con a`pwd`(Mac OS X/Linux) o`cd` (Windows) comando prima di inizziare il repository. Dovresti essere nella cartella `djangogirls`.
+> **Nota** Controlla la tua cartella di lavoro corrente con a`pwd`(macOS/Linux) o`cd` (Windows) comando prima di inizziare il repository. Dovresti essere nella cartella `djangogirls`.
 
 {% filename %}comando-linea{% endfilename %}
 

@@ -66,7 +66,7 @@ published_date
 
 Для аккуратности мы создадим отдельное приложение в нашем проекте. Очень удобно иметь хорошо организованное рабочее место с самого начала. Для создания приложения нам понадобится набрать следующую инструкцию в командной строке (из директории `djangogirls`, где находится файл `manage.py`):
 
-{% filename %}Mac OS X и Linux:{% endfilename %}
+{% filename %}macOS и Linux:{% endfilename %}
 ```
 (myvenv) ~/djangogirls$ python manage.py startapp blog
 ```

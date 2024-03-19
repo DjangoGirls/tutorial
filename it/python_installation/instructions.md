@@ -29,15 +29,15 @@ Nota: Se si utilizza una versione precedente di Windows (7, Vista, o qualsiasi v
 
 <!--endsec-->
 
-<!--sec data-title="Install Python: OS X" data-id="python_OSX"
+<!--sec data-title="Install Python: macOS" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Nota** Prima di installare Python su OS X, devi fare in modo/ verificare che le impostazioni Mac consentano l'installazione di pacchetti che non sono presenti nell'App Store. Vai alle Preferenze di sistema (è nella cartella Applicazioni), clicca "Sicurezza & Privacy," e poi la scheda "Generale". Se il tuo "Consenti le app scaricate da:" è impostato su "Mac App Store", cambialo in "Mac App Store e sviluppatori identificati".
+> **Nota** Prima di installare Python su macOS, devi fare in modo/ verificare che le impostazioni Mac consentano l'installazione di pacchetti che non sono presenti nell'App Store. Vai alle Preferenze di sistema (è nella cartella Applicazioni), clicca "Sicurezza & Privacy," e poi la scheda "Generale". Se il tuo "Consenti le app scaricate da:" è impostato su "Mac App Store", cambialo in "Mac App Store e sviluppatori identificati".
 
-Devi andare sul sito https://www.python.org/downloads/mac-osx/ e scaricare il programma di installazione di Python più recente:
+Devi andare sul sito https://www.python.org/downloads/ e scaricare il programma di installazione di Python più recente:
 
-* Scarica il file *Mac OS X 64-bit/32-bit installer*
-* Fare doppio clic su *python-{{ book.py_release }}-macosx10.9.pkg* per eseguire l'installer.
+* Scarica Python {{ book.py_release }}
+* Fare doppio clic su *python-{{ book.py_release }}-macos11.pkg* per eseguire l'installer.
 
 <!--endsec-->
 

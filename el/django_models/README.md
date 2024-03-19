@@ -63,7 +63,7 @@
 
 Για να κρατήσουμε τα πάντα τακτοποιημένα, θα δημιουργήσουμε μια ξεχωριστή εφαρμογή μέσα στο project μας. Είναι πολύ ωραίο να έχουμε τα πάντα οργανωμένα από την αρχή. Για την δημιουργία μιας εφαρμογής θα χρειαστεί να τρέξουμε την ακόλουθη εντολή στην κονσόλα (από τον φάκελο `djangogirls` όπου βρίσκεται το αρχείο `manage.py`):
 
-{% filename %}Mac OS X and Linux:{% endfilename %}
+{% filename %}macOS and Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py startapp blog
     

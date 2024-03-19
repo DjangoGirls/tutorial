@@ -24,7 +24,7 @@ Pour commencer à expérimenter, nous avons d'abord besoin d'ouvrir notre interf
 
 Vous devriez maintenant voir une fenêtre noire ou blanche qui attend vos commandes.
 
-<!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
+<!--sec data-title="Prompt: macOS and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
 Si vous êtes sous Mac ou Linux, vous verrez probablement un `$`, comme ça :
 
@@ -60,7 +60,7 @@ Dans le tutoriel, lorsque nous voulons que vous tapiez une commande, nous allons
 
 Commençons en tapant cette commande :
 
-<!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
+<!--sec data-title="Your first command: macOS and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -98,7 +98,7 @@ Les différents systèmes d'exploitation ont des commandes légèrement différe
 
 Ce serait pratique de savoir dans quel répertoire nous nous trouvons. Pour le savoir, tapez la commande suivante et appuyez sur `entrée` :
 
-<!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
+<!--sec data-title="Current directory: macOS and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -130,7 +130,7 @@ Vous verrez probablement quelque chose de similaire sur votre machine. Quand vou
 
 De nombreuses commandes que vous pouvez taper à l’invite de commande ont une aide intégrée que vous pouvez afficher et lire ! Par exemple, pour en savoir plus sur le répertoire actuel :
 
-<!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
+<!--sec data-title="Command help: macOS and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
 macOS et Linux ont une commande `man`, qui donne des informations sur les commandes. Essayez `man pwd` et regardez ce qui s'affiche, ou ajoutez `man` devant une autre commande pour voir sa documentation. La sortie de `man` est normalement paginée. Utilisez la barre d’espace pour passer à la page suivante et `q` pour quitter l’aide.
 
@@ -146,7 +146,7 @@ Ajouter un `/ ?` à la fin de la commande devrait également permettre d'affich
 
 Du coup, que pouvons-nous trouver dans ce dossier personnel ? Voyons voir :
 
-<!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
+<!--sec data-title="List files and directories: macOS and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -173,7 +173,7 @@ Du coup, que pouvons-nous trouver dans ce dossier personnel ? Voyons voir :
     ...
     
 
-> Remarque : Dans PowerShell, vous pouvez également utiliser "ls" comme sur Linux et Mac OS X. <!--endsec-->
+> Remarque : Dans PowerShell, vous pouvez également utiliser "ls" comme sur Linux et macOS. <!--endsec-->
 
 * * *
 
@@ -181,7 +181,7 @@ Du coup, que pouvons-nous trouver dans ce dossier personnel ? Voyons voir :
 
 Maintenant, essayons d'aller sur notre Bureau :
 
-<!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
+<!--sec data-title="Change current directory: macOS" data-id="OSX_move_to" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -212,7 +212,7 @@ Notez que le nom du répertoire « Bureau » pourrait être traduit dans la la
 
 Vérifions que ça a bien changé :
 
-<!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
+<!--sec data-title="Check if changed: macOS and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -242,7 +242,7 @@ Et voilà !
 
 Que diriez-vous de créer un répertoire dédié aux exercices sur votre bureau ? Vous pouvez le faire de cette façon :
 
-<!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
+<!--sec data-title="Create directory: macOS and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -272,7 +272,7 @@ Un petit défi pour vous : dans votre nouveau dossier `exercices`, créez un do
 
 #### Solutions :
 
-<!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
+<!--sec data-title="Exercise solution: macOS and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -306,7 +306,7 @@ Supprimons tout ce qu'on vient de faire, histoire d'éviter de laisser du bazar.
 
 D'abord, revenons au Bureau :
 
-<!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
+<!--sec data-title="Clean up: macOS and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -328,7 +328,7 @@ Grâce à `...` et la commande `cd`, vous pouvez aller directement dans le dossi
 
 Vérifiez où vous êtes :
 
-<!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
+<!--sec data-title="Check location: macOS and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -352,7 +352,7 @@ Maintenant, il est temps de supprimer le dossier `exercices` :
 
 > **Attention** : Supprimer des fichiers avec `del`, `rmdir` ou `rm` est irrévocable, ce qui veut dire que *les fichiers supprimés sont perdus à jamais* ! Du coup, faites très attention avec cette commande.
 
-<!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
+<!--sec data-title="Delete directory: Windows Powershell, macOS and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -373,7 +373,7 @@ Maintenant, il est temps de supprimer le dossier `exercices` :
 
 Et voilà ! Pour être sure que le dossier a bien été supprimé, vérifions :
 
-<!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
+<!--sec data-title="Check deletion: macOS and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -395,7 +395,7 @@ Et voilà ! Pour être sure que le dossier a bien été supprimé, vérifions 
 
 C'est tout pour le moment ! Vous pouvez maintenant fermer la ligne de commande. Faisons-le à la manière des bidouilleurs⋅euses, d’accord ? :)
 
-<!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
+<!--sec data-title="Exit: macOS and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 

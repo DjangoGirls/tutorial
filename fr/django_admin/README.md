@@ -23,7 +23,7 @@ Afin de vous connecter, vous allez devoir créer un *superuser*, c'est à dire u
 
 > Conseil : pour pouvoir taper de nouvelles commandes pendant que le serveur tourne, ouvrez une nouvelle console et activez à nouveau votre virtualenv. La section **Démarrer le serveur web** du chapitre **Votre premier projet Django !** explique comment écrire de nouvelles commandes.
 
-{% filename %}Mac OS X or Linux:{% endfilename %}
+{% filename %}macOS or Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py createsuperuser
     

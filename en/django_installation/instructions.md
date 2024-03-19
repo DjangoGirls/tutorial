@@ -45,10 +45,10 @@ Where `myvenv` is the name of your `virtualenv`. You can use any other name, but
 
 <!--endsec-->
 
-<!--sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx"
+<!--sec data-title="Virtual environment: Linux and macOS" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv myvenv`.
+We can create a `virtualenv` on both Linux and macOS by running `python3 -m venv myvenv`.
 It will look like this:
 
 {% filename %}command-line{% endfilename %}
@@ -139,7 +139,7 @@ C:\Users\Name\djangogirls> myvenv\Scripts\activate
 
 <!--endsec-->
 
-<!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
+<!--sec data-title="Working with virtualenv: Linux and macOS" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
 Start your virtual environment by running:

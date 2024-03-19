@@ -2,7 +2,7 @@ Túto časť [môžeš preskočiť](http://tutorial.djangogirls.org/en/installat
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com)
 
-Cloud IDE je nástroj, ktorý ti poskytne editor kódu a prístup na počítač, ktorý beží v cloude na internete, kde môžeš inštalovať, písať a spúšťať softvér. Počas tohto tutoriálu sa Cloud IDE bude tváriť ako tvoj *lokálny stroj*. Príkazy budeš zadávať do terminálového rozhrania tak, ako tvoje spoluúčastníčky, čo používajú OS X, Ubuntu, alebo Windows, ale tvoj terminál bude pripojený na počítač, ktorý beží niekde inde a ktorý Cloud IDE pripraví pre teba. Tu sú inštrukcie pre cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com). Môžeš si vybrať jedno z Cloud IDE riešení a postupovať podľa inštrukcií pre zvolený typ IDE.
+Cloud IDE je nástroj, ktorý ti poskytne editor kódu a prístup na počítač, ktorý beží v cloude na internete, kde môžeš inštalovať, písať a spúšťať softvér. Počas tohto tutoriálu sa Cloud IDE bude tváriť ako tvoj *lokálny stroj*. Príkazy budeš zadávať do terminálového rozhrania tak, ako tvoje spoluúčastníčky, čo používajú macOS, Ubuntu, alebo Windows, ale tvoj terminál bude pripojený na počítač, ktorý beží niekde inde a ktorý Cloud IDE pripraví pre teba. Tu sú inštrukcie pre cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com). Môžeš si vybrať jedno z Cloud IDE riešení a postupovať podľa inštrukcií pre zvolený typ IDE.
 
 #### PaizaCloud Cloud IDE
 

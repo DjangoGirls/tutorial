@@ -15,7 +15,7 @@
 
 <!--endsec-->
 
-<!--sec data-title="OS X" data-id="OSX_prompt" data-collapse=true ces-->
+<!--sec data-title="macOS" data-id="macOS_prompt" data-collapse=true ces-->
 
 Перейди в Приложения → Прочие → Терминал.
 

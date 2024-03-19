@@ -29,15 +29,15 @@ Poznámka: Ak si na staršej verzii Windowsu (7, Vista alebo niečo staršie) a 
 
 <!--endsec-->
 
-<!--sec data-title="Install Python: OS X" data-id="python_OSX"
+<!--sec data-title="Install Python: macOS" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Poznámka:** Pred inštaláciou Pythonu na OS X sa uisti, že nastavenia tvojho Macu ti povoľujú inštaláciu balíkov, ktoré nie sú z App Storu. Choď do System Preferences (je to v priečinku Applications), klikni na "Security & Privacy," a potom na záložku "General". Ak možnosť "Allow apps downloaded from:" je nastavená na "Mac App Store," zmeň ho na "Mac App Store and identified developers."
+> **Poznámka:** Pred inštaláciou Pythonu na macOS sa uisti, že nastavenia tvojho Macu ti povoľujú inštaláciu balíkov, ktoré nie sú z App Storu. Choď do System Preferences (je to v priečinku Applications), klikni na "Security & Privacy," a potom na záložku "General". Ak možnosť "Allow apps downloaded from:" je nastavená na "Mac App Store," zmeň ho na "Mac App Store and identified developers."
 
-Potom musíš ísť na stránku https://www.python.org/downloads/mac-osx/ a stiahnuť si najnovší Python:
+Potom musíš ísť na stránku https://www.python.org/downloads/ a stiahnuť si najnovší Python:
 
-* Stiahni si súbor s *Mac OS X 64/32-bitovým inštalátorom*,
-* Dvojklikom na *python-{{ book.py_release }}-macosx10.9.pkg* spusti inštalačný program.
+* Stiahni si súbor s *macOS inštalátorom*,
+* Dvojklikom na *python-{{ book.py_release }}-macos11.pkg* spusti inštalačný program.
 
 <!--endsec-->
 

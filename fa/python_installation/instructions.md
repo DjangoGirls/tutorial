@@ -29,15 +29,15 @@
 
 <!--endsec-->
 
-<!--sec data-title="Install Python: OS X" data-id="python_OSX"
+<!--sec data-title="Install Python: macOS" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **نکته** قبل از نصب پایتون بر روی OS X، باید مطمئن شوید که تنظیمات Mac‌، اجازه نصب پکیج‌هایی را که در App Store‌ نیستند، می‌دهد. به System Preferences بروید (در پوشه Applications است)، بر روی "Security & Privacy," کلیک کنید و به تب "General" بروید. اگر "Allow apps downloaded from:" بر روی "Mac App Store" تنظیم شده بود آن را به گزینه "Mac App Store and identified developers" تغییر دهید.
+> **نکته** قبل از نصب پایتون بر روی macOS، باید مطمئن شوید که تنظیمات Mac‌، اجازه نصب پکیج‌هایی را که در App Store‌ نیستند، می‌دهد. به System Preferences بروید (در پوشه Applications است)، بر روی "Security & Privacy," کلیک کنید و به تب "General" بروید. اگر "Allow apps downloaded from:" بر روی "Mac App Store" تنظیم شده بود آن را به گزینه "Mac App Store and identified developers" تغییر دهید.
 
-شما باید به آدرس https://www.python.org/downloads/mac-osx/ بروید و آخرین نسخه پایتون را دانلود کنید: 
+شما باید به آدرس https://www.python.org/downloads/ بروید و آخرین نسخه پایتون را دانلود کنید: 
 
-* فایل *Mac OS X 64-bit/32-bit installer* را دانلود کنید،
-* بر روی *python-{{ book.py_release }}-macosx10.9.pkg* دوبار کلیک کنید تا نصب‌کننده نرم‌افزار فعال شود.
+* فایل *macOS installer* را دانلود کنید،
+* بر روی *python-{{ book.py_release }}-macos11.pkg* دوبار کلیک کنید تا نصب‌کننده نرم‌افزار فعال شود.
 
 <!--endsec-->
 

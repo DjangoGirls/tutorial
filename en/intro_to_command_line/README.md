@@ -24,7 +24,7 @@ To start some experiments we need to open our command-line interface first.
 
 You now should see a white or black window that is waiting for your commands.
 
-<!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
+<!--sec data-title="Prompt: macOS and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
 
 If you're on Mac or Linux, you probably see a `$`, like this:
@@ -61,7 +61,7 @@ In the tutorial, when we want you to type in a command, we will include the `$` 
 
 Let's start by typing this command:
 
-<!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
+<!--sec data-title="Your first command: macOS and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -104,7 +104,7 @@ Let's try this, shall we?
 
 It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
-<!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
+<!--sec data-title="Current directory: macOS and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
 
 {% filename %}command-line{% endfilename %}
@@ -125,7 +125,7 @@ $ pwd
 > cd
 C:\Users\olasitarska
 ```
-> Note: 'cd' stands for 'change directory'. With PowerShell you can use pwd just like on Linux or Mac OS X.
+> Note: 'cd' stands for 'change directory'. With PowerShell you can use pwd just like on Linux or macOS.
 
 <!--endsec-->
 
@@ -137,9 +137,9 @@ You'll probably see something similar on your machine. Once you open the command
 
 Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
 
-<!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
+<!--sec data-title="Command help: macOS and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X and Linux have a `man` command, which gives you help on commands. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
+macOS and Linux have a `man` command, which gives you help on commands. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
 
 <!--endsec-->
 
@@ -155,7 +155,7 @@ Adding a `/?` suffix to most commands will print the help page. You may need to 
 
 So what's in it? It'd be cool to find out. Let's see:
 
-<!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
+<!--sec data-title="List files and directories: macOS and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -181,7 +181,7 @@ Music
 05/08/2020 07:28 PM <DIR>      Music
 ...
 ```
-> Note: In PowerShell you can also use 'ls' like on Linux and Mac OS X.
+> Note: In PowerShell you can also use 'ls' like on Linux and macOS.
 <!--endsec-->
 
 ---
@@ -190,7 +190,7 @@ Music
 
 Now, let's go to our Desktop directory:
 
-<!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
+<!--sec data-title="Change current directory: macOS" data-id="OSX_move_to" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -225,7 +225,7 @@ for example, `Schreibtisch` for German.
 
 Check if it's really changed:
 
-<!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
+<!--sec data-title="Check if changed: macOS and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -253,7 +253,7 @@ Here it is!
 
 How about creating a practice directory on your desktop? You can do it this way:
 
-<!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
+<!--sec data-title="Create directory: macOS and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -282,7 +282,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 #### Solution:
 
-<!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
+<!--sec data-title="Exercise solution: macOS and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -315,7 +315,7 @@ We don't want to leave a mess, so let's remove everything we did until that poin
 
 First, we need to get back to Desktop:
 
-<!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
+<!--sec data-title="Clean up: macOS and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -336,7 +336,7 @@ Using `..` with the `cd` command will change your current directory to the paren
 
 Check where you are:
 
-<!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
+<!--sec data-title="Check location: macOS and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -359,7 +359,7 @@ Now time to delete the `practice` directory:
 
 > __Attention__: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning _the deleted files will be gone forever_! So be very careful with this command.
 
-<!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
+<!--sec data-title="Delete directory: Windows Powershell, macOS and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -379,7 +379,7 @@ practice, Are you sure <Y/N>? Y
 
 Done! To be sure it's actually deleted, let's check it:
 
-<!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
+<!--sec data-title="Check deletion: macOS and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -400,7 +400,7 @@ $ ls
 
 That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
-<!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
+<!--sec data-title="Exit: macOS and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```

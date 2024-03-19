@@ -63,7 +63,7 @@ Puoi pensare ad un modello nel database come ad un foglio elettronico con colonn
 
 Per mantenere tutto ordinato, creeremo un'applicazione diversa all'interno del nostro progetto. E' molto bello avere tutto organizzato fin dall'inizio. Per creare un'applicazione abbiamo bisogno di eseguire il seguente comando nella console (dalla cartella `djangogirls` dove si trova il file `manage.py`):
 
-{% filename %}Mac OS X o Linux:{% endfilename %}
+{% filename %}macOS o Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py startapp blog
     

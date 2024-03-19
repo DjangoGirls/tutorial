@@ -24,7 +24,7 @@ Aby sme mohli trochu experimentovať, musíme najskôr rozhranie príkazového r
 
 Teraz by si už mala vidieť biele alebo čierne okno, ktoré čaká na tvoje príkazy.
 
-<!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
+<!--sec data-title="Prompt: macOS and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
 Ak si na Macu alebo Linuxe, zrejme uvidíš `$`. Takto:
 
@@ -60,7 +60,7 @@ Keď od teba budeme v tomto tutoriáli chcieť, aby si napísala príkaz, budeme
 
 Začnime tým, že zadáme nasledovný príkaz:
 
-<!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
+<!--sec data-title="Your first command: macOS and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -98,7 +98,7 @@ Každý operačný systém má trochu iné príkazy pre príkazový riadok, tak�
 
 Bolo by fajn vedieť, kde sa nachádzame, však? Zistime to. Napíš tento príkaz a stlač `enter`:
 
-<!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
+<!--sec data-title="Current directory: macOS and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -118,7 +118,7 @@ Bolo by fajn vedieť, kde sa nachádzame, však? Zistime to. Napíš tento prík
     C:\Users\olasitarska
     
 
-> Poznámka: 'cd' znamená 'change directory', teda zmeň priečinok. V PowerShelli môžeš použiť pwd rovnako ako na Linuxe alebo Mac OS X.
+> Poznámka: 'cd' znamená 'change directory', teda zmeň priečinok. V PowerShelli môžeš použiť pwd rovnako ako na Linuxe alebo macOS.
 
 <!--endsec-->
 
@@ -130,9 +130,9 @@ Na svojom stroji pravdepodobne uvidíš niečo takéto. Keď otvoríš príkazov
 
 Mnoho príkazov, ktoré píšeš do konzoly, má zabudovanú nápovedu (help), ktorú si môžeš nechať zobraziť! Napríklad, ak sa chceš dozvedieť viac o príkaze z predošlej časti:
 
-<!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
+<!--sec data-title="Command help: macOS and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X a Linux majú príkaz `man`, ktorý ti zobrazí nápovedu k iným príkazom. Skús `man pwd` a pozri, čo ti vypíše, alebo napíš `man` v kombinácii s inými príkazmi, aby sa ti zobrazila ich nápoveda. Výstup príkazu `man` má zvyčajne niekoľko strán. Na listovanie použi medzerník a stlačením klávesy `q` nápovedu ukončíš.
+macOS a Linux majú príkaz `man`, ktorý ti zobrazí nápovedu k iným príkazom. Skús `man pwd` a pozri, čo ti vypíše, alebo napíš `man` v kombinácii s inými príkazmi, aby sa ti zobrazila ich nápoveda. Výstup príkazu `man` má zvyčajne niekoľko strán. Na listovanie použi medzerník a stlačením klávesy `q` nápovedu ukončíš.
 
 <!--endsec-->
 
@@ -146,7 +146,7 @@ Keď pripojíš `/?` na koniec príkazu, vo väčšine prípadov tiež dostaneš
 
 Bolo by zaujímavé zistiť, čo taký priečinok obsahuje. Pozrime sa na to:
 
-<!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
+<!--sec data-title="List files and directories: macOS and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -173,7 +173,7 @@ Bolo by zaujímavé zistiť, čo taký priečinok obsahuje. Pozrime sa na to:
     ...
     
 
-> Poznámka: V PowerShelli môžeš použiť aj 'ls' rovnako ako na Linuxe alebo Mac OS X.<!--endsec-->
+> Poznámka: V PowerShelli môžeš použiť aj 'ls' rovnako ako na Linuxe alebo macOS.<!--endsec-->
 
 * * *
 
@@ -181,7 +181,7 @@ Bolo by zaujímavé zistiť, čo taký priečinok obsahuje. Pozrime sa na to:
 
 Teraz prejdime do priečinku, kde je naša plocha:
 
-<!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
+<!--sec data-title="Change current directory: macOS" data-id="OSX_move_to" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -212,7 +212,7 @@ Tu je dobré poznamenať, že názov "Desktop" môže byť preložený do jazyka
 
 Skontroluj, či sa priečinok skutočne zmenil:
 
-<!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
+<!--sec data-title="Check if changed: macOS and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -242,7 +242,7 @@ A je to!
 
 Čo takto vytvoriť pokusný adresár na ploche? Urobíš to takto:
 
-<!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
+<!--sec data-title="Create directory: macOS and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -272,7 +272,7 @@ Malá výzva pre teba: v čerstvo vytvorenom adresári `pokus` vytvor adresár s
 
 #### Riešenie:
 
-<!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
+<!--sec data-title="Exercise solution: macOS and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -306,7 +306,7 @@ Nechceme po sebe nechať neporiadok, tak poďme odstrániť všetko, čo sme dot
 
 Najskôr sa musíme vrátiť späť na plochu:
 
-<!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
+<!--sec data-title="Clean up: macOS and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -328,7 +328,7 @@ Pomocou `..` s príkazom `cd` zmeníš svoj aktuálny priečinok na rodičovský
 
 Skontroluj, kde sa nachádzaš:
 
-<!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
+<!--sec data-title="Check location: macOS and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -352,7 +352,7 @@ Je načase zmazať priečinok `pokus`:
 
 > **Pozor**: mazanie súborov pomocou `del`, `rmdir` alebo `rm` je neodvolateľné, teda *odstránené súbory budú odstránené navždy*! Takže s týmito príkazmi buď opatrná.
 
-<!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
+<!--sec data-title="Delete directory: Windows Powershell, macOS and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -373,7 +373,7 @@ Je načase zmazať priečinok `pokus`:
 
 Hotovo! Uistime sa, či je naozaj vymazaný:
 
-<!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
+<!--sec data-title="Check deletion: macOS and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -395,7 +395,7 @@ Hotovo! Uistime sa, či je naozaj vymazaný:
 
 Nateraz je to všetko! Môžeš pokojne zatvoriť príkazový riadok. Urobme to hackersky, čo povieš? :)
 
-<!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
+<!--sec data-title="Exit: macOS and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 

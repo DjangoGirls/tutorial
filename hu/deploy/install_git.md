@@ -9,7 +9,7 @@ A Gitet innen töltheted le: [git-scm.com](https://git-scm.com/). Telepítése: 
 
 <!--endsec-->
 
-<!--sec data-title="OS X" data-id="git_install_OSX"
+<!--sec data-title="macOS" data-id="git_install_OSX"
 data-collapse=true ces-->
 
 Töltsd le a Git-tet az alábbi linken: [git-scm.com](https://git-scm.com/), majd kövesd az utasításokat.

@@ -589,7 +589,7 @@ print('Hello, Django girls!')
 
 파일을 저장했다면, 커맨드라인 장에서 배웠던 것을 써먹어야죠! 터미널에서 데스크탑(또는 Desktop, 바탕화면)으로 **디렉토리 변경**을 해보세요.
 
-<!--sec data-title="OS X" data-id="python_OSX"
+<!--sec data-title="macOS" data-id="python_OSX"
 data-collapse=true ces-->
 
 맥OS :

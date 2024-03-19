@@ -22,7 +22,7 @@ To log in, you need to create a *superuser* - a user account that has control ov
 
 > Remember, to write new commands while the web server is running, open a new terminal window and activate your virtualenv. We reviewed how to write new commands in the <b>Your first Django project!</b> chapter, in the <b>Starting the web server</b> section.
 
-{% filename %}Mac OS X or Linux:{% endfilename %}
+{% filename %}macOS or Linux:{% endfilename %}
 ```
 (myvenv) ~/djangogirls$ python manage.py createsuperuser
 ```

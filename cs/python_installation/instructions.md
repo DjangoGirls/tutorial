@@ -45,11 +45,11 @@ Použij tento příkaz v konzoli:
 $ sudo zypper install python3
 ```
 
-### OS X
+### macOS
 
 Musíš jít na web https://www.python.org/downloads/release/python-342/ a stáhnout si instalátor Python:
 
-  * Stáhni *Mac OS X 64-bit/32-bit installer* soubor,
+  * Stáhni *macOS 64-bit/32-bit installer* soubor,
   * Poklepej na *python-3.4.3-macosx10.6.pkg*, chceš-li spustit instalační program.
 
 Ověř, zda instalace proběhla úspěšně, otevři aplikaci *Terminal* a spusť příkaz `python3`:

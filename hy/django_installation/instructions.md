@@ -41,10 +41,10 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-<!--sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx"
+<!--sec data-title="Virtual environment: Linux and macOS" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-Մենք կարող ենք ստեղծել ` virtualenv ` ինչպես Linux- ի, այնպես էլ OS X- ի վրա ՝ գործարկելով `python3 -m venv myvenv`: Դա կունենա այսպիսի տեսք.
+Մենք կարող ենք ստեղծել ` virtualenv ` ինչպես Linux- ի, այնպես էլ macOS- ի վրա ՝ գործարկելով `python3 -m venv myvenv`: Դա կունենա այսպիսի տեսք.
 
 {% filename %}command-line{% endfilename %}
 
@@ -133,7 +133,7 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-<!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
+<!--sec data-title="Working with virtualenv: Linux and macOS" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
 Սկսեք ձեր վիրտուալ միջավայրը/virtual environment-ը `գործարկելով.

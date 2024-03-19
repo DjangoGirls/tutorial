@@ -626,7 +626,7 @@ Teraz musimy zapisać plik i nadać mu wymowną nazwę. Nazwijmy go **python_int
 
 Mamy już zapisany plik, a więc czas go uruchomić! Wykorzystując wiadomości poznane w sekcji poświęconej wierszowi polecenia, użyj terminala, aby **zmienić aktualny katalog** na katalog Pulpitu.
 
-<!--sec data-title="Change directory: OS X" data-id="python_OSX"
+<!--sec data-title="Change directory: macOS" data-id="python_OSX"
 data-collapse=true ces-->
 
 Na Macu polecenie będzie wyglądać mniej-więcej tak:

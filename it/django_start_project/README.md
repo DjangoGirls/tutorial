@@ -12,9 +12,9 @@ I nomi di alcuni file e cartelle sono molto importanti per Django. Non dovresti 
 
 > Ricordati di eseguire tutto nel virtualenv. Se non vedi il prefisso `(myvenv)` nella tua console, devi attivare il tuo virtualenv. Abbiamo spiegato come farlo nel capitolo **installazione Django** nella parte **Lavorando con virtualenv**. Digitando `myvenv\Scripts\activate` su Windows oppure `source myvenv/bin/activate` su Mac OS / Linux farà questo per te.
 
-<!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
+<!--sec data-title="Create project: macOS or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
-Dovresti eseguire il seguente comando nella tua console MacOS X o Linux; **non dimenticarti di aggiungere il punto `.` alla fine! **
+Dovresti eseguire il seguente comando nella tua console MacmacOS o Linux; **non dimenticarti di aggiungere il punto `.` alla fine! **
 
 {% filename %}command-line{% endfilename %}
 

@@ -612,7 +612,7 @@ Teraz súbor musíme uložiť a dať mu nejaký zrozumiteľný názov. Nazvime h
 
 Súbor máme uložený, je čas ho spustiť! Pomocou poznatkov z kapitoly o príkazovom riadku **zmeň adresár** na plochu terminálovým príkazom.
 
-<!--sec data-title="Change directory: OS X" data-id="python_OSX"
+<!--sec data-title="Change directory: macOS" data-id="python_OSX"
 data-collapse=true ces-->
 
 Na Macu bude príkaz vyzerať takto:

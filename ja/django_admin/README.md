@@ -23,7 +23,7 @@ admin.site.register(Post)
 
 > Webサーバーを実行しているときに新しいコマンドを入力したい場合は、新しいターミナルウィンドウを開き、仮想環境（virtualenv）を有効にすることを思い出してください。 **プロジェクトを作成しよう！**の**ウェブサーバを起動する**セクションでどうやって新しいコマンドを書くかというのを見直しました。
 
-{% filename %}Mac OS X または Linux:{% endfilename %}
+{% filename %}macOS または Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py createsuperuser
     

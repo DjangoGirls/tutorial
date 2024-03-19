@@ -29,14 +29,14 @@
 
 <!--endsec-->
 
-<!--sec data-title="OS X" data-id="python_OSX_ko"
+<!--sec data-title="macOS" data-id="python_OSX_ko"
 data-collapse=true ces-->
 
-> **Note** OS X에서는 파이썬 설치하기 전, Mac 설정에서 App Store가 아닌 패키지를 설치할 수 있도록 설정해야합니다. 시스템 환경 설정 (응용 프로그램 폴더에 있음)으로 이동하여 "보안 및 개인 정보"를 클릭 한 다음 "일반"탭을 클릭하세요. "다운로드 한 응용 프로그램 허용"이 "Mac App Store"로 설정된 경우 "Mac App Store 및 확인된 개발자"로 변경하세요.
+> **Note** macOS에서는 파이썬 설치하기 전, Mac 설정에서 App Store가 아닌 패키지를 설치할 수 있도록 설정해야합니다. 시스템 환경 설정 (응용 프로그램 폴더에 있음)으로 이동하여 "보안 및 개인 정보"를 클릭 한 다음 "일반"탭을 클릭하세요. "다운로드 한 응용 프로그램 허용"이 "Mac App Store"로 설정된 경우 "Mac App Store 및 확인된 개발자"로 변경하세요.
 
 웹 사이트로 가서 파이썬 설치 파일을 다운 받으세요. : https://www.python.org/downloads/release/python-351/
 
-* *Mac OS X 64-bit/32-bit installer* 파일을 다운받습니다.
+* *macOS 64-bit/32-bit installer* 파일을 다운받습니다.
 * *python-3.6.1-macosx10.6.pkg*을 더블클릭해 설치합니다.
 
 <!--endsec-->

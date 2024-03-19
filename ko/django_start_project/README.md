@@ -13,7 +13,7 @@
 
 > 모든 작업은 가상환경(virtualenv) 안에서 해야 하는 것을 꼭 기억하세요. 현재 콘솔 창에서 접두어로 `(myvenv)`가 안 보인다면 먼저 virtualenv를 활성화해야 합니다. **Django 설치하기** 장에서 **virtualenv 작동법**에 대해 배웠어요. 윈도우에서는 `myvenv\Scripts\activate`를 타이핑하고, 맥 OS과 리눅스에서는 `source myvenv/bin/activate`을 입력하세요.
 
-<!--sec data-title="OS X / Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
+<!--sec data-title="macOS / Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
 맥 OS과 리눅스 콘솔에서는 다음과 같이 명령을 실행해야해요. **명령어 끝에 `.`(점, 마침표)을 입력하는 것을 잊지마세요.** :
 

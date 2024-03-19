@@ -10,11 +10,11 @@
 
 Имената на някои файлове и директории са много важни за Django. Не трябва да преименувате файловете, които предстои да създадем. Преместването им на друго място също не е добра идея. Django трябва да поддържа определена структура, за да може да намери важни неща.
 
-> Не забравяйте да стартирате всичко във virtualenv (виртуалната среда). Ако не видите префикс `(myvenv)` в конзолата си, трябва да активирате своята virtualenv. Обяснихме как да направим това в главата **Инсталация на Django** в частта **Работа с virtualenv**. Въвеждането `myvenv\Scripts\activate`` в Windows или <0>source myvenv/bin/activate` в Mac OS X или Linux ще направи това вместо вас.
+> Не забравяйте да стартирате всичко във virtualenv (виртуалната среда). Ако не видите префикс `(myvenv)` в конзолата си, трябва да активирате своята virtualenv. Обяснихме как да направим това в главата **Инсталация на Django** в частта **Работа с virtualenv**. Въвеждането `myvenv\Scripts\activate`` в Windows или <0>source myvenv/bin/activate` в macOS или Linux ще направи това вместо вас.
 
-<!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
+<!--sec data-title="Create project: macOS or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
-Във вашата Mac OS X или Linux конзола трябва да изпълните следната команда. ** Не забравяйте да добавите точка `.` в края!**
+Във вашата macOS или Linux конзола трябва да изпълните следната команда. ** Не забравяйте да добавите точка `.` в края!**
 
 {% filename %}command-line{% endfilename %}
 

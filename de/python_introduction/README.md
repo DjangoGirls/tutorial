@@ -627,7 +627,7 @@ Als nächstes wollen wir diesen Code in einer Datei mit einem aussagekräftigen 
 
 Nun, da die Datei gesichert ist, wollen wir sie ausführen! Nutze, was du bisher über die Kommandozeile (das mit dem Prompt) gelernt hast, um in der Konsole in das Desktop-Verzeichnis zu wechseln.
 
-<!--sec data-title="Change directory: OS X" data-id="python_OSX"
+<!--sec data-title="Change directory: macOS" data-id="python_OSX"
 data-collapse=true ces-->
 
 Auf einem Mac sieht das etwa so aus:

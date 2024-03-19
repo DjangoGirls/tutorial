@@ -41,10 +41,10 @@ C:\Users\Name\djangogirls> python -m venv myvenv
 
 <!--endsec-->
 
-<!--sec data-title="Виртуальное окружение: Linux и OS X" data-id="virtualenv_installation_linuxosx"
+<!--sec data-title="Виртуальное окружение: Linux и macOS" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-В Linux и OS X достаточно набрать `python3 -m venv myvenv`, чтобы создать `virtualenv`:
+В Linux и macOS достаточно набрать `python3 -m venv myvenv`, чтобы создать `virtualenv`:
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -124,7 +124,7 @@ C:\Users\Name\djangogirls> myvenv\Scripts\activate
 
 <!--endsec-->
 
-<!--sec data-title="Работаем с virtualenv: Linux и OS X" data-id="virtualenv_linuxosx"
+<!--sec data-title="Работаем с virtualenv: Linux и macOS" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
 Запусти виртуальное окружение, выполнив:

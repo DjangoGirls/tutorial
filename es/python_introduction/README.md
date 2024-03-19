@@ -626,7 +626,7 @@ Ahora tenemos que guardar el archivo y asignarle un nombre descriptivo. Vamos a 
 
 Con el archivo guardado, ¡es hora de ejecutarlo! Utilizando las habilidades que has aprendido en la sección de línea de comandos, utiliza la terminal para **cambiar los directorios** e ir al escritorio.
 
-<!--sec data-title="Change directory: OS X" data-id="python_OSX"
+<!--sec data-title="Change directory: macOS" data-id="python_OSX"
 data-collapse=true ces-->
 
 En una Mac, el comando se verá algo como esto:

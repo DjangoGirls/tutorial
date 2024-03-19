@@ -63,7 +63,7 @@ Veritabanındaki bir modeli, sütunları (alan adı) ve satırları (veri) olan 
 
 Her şeyi derli toplu tutmak için, projemizin içinde ayrı bir uygulama oluşturacağız. Her şeyin en başından düzenli olması çok iyidir. Bir uygulama oluşturmak için aşağıdaki komutu konsolda çalıştırmamız gerekiyor (`djangogirls` dizininden `manage.py` dosyasının bulunduğu yer):
 
-{% filename %}Mac OS X ve Linux:{% endfilename %}
+{% filename %}macOS ve Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py startapp blog
     

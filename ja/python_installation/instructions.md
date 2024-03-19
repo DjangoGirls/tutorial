@@ -33,14 +33,14 @@ https://www.python.org/downloads/windows/ からWindows版のPythonをダウン�
 
 <!--endsec-->
 
-<!--sec data-title="Install Python: OS X" data-id="python_OSX"
+<!--sec data-title="Install Python: macOS" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **注意**：OS XにPythonをインストールする前に、Macの設定でApp Store以外のパッケージをインストールできるようにする必要があります。 「システム環境設定」（「アプリケーション」フォルダ内）に移動し、「セキュリティとプライバシー」、「一般」タブの順にクリックします。 「ダウンロードしたアプリを許可する」が「Mac App Store」に設定されている場合は、「Mac App Storeと識別された開発者」に変更します。
+> **注意**：macOSにPythonをインストールする前に、Macの設定でApp Store以外のパッケージをインストールできるようにする必要があります。 「システム環境設定」（「アプリケーション」フォルダ内）に移動し、「セキュリティとプライバシー」、「一般」タブの順にクリックします。 「ダウンロードしたアプリを許可する」が「Mac App Store」に設定されている場合は、「Mac App Storeと識別された開発者」に変更します。
 
 https://www.python.org/downloads/release/python-361/ からPythonインストーラーをダウンロードします。
 
-* *Mac OS X 64-bit/32-bit installer* というファイルをダウンロードします。 
+* *macOS 64-bit/32-bit installer* というファイルをダウンロードします。 
 * ダウンロードできたら *python-3.6.1-macosx10.6.pkg* をダブルクリックして実行します。
 
 <!--endsec-->

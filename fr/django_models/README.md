@@ -63,7 +63,7 @@ Pour vous aider à visualiser ce qu'est une base de données, pensez à un table
 
 Pour éviter le désordre, nous allons créer une application séparée à l'intérieur de notre projet. Prenez l'habitude de bien tout organiser dès le début. Afin de créer une application, nous avons besoin d'exécuter la commande suivante dans notre console (prenez garde à bien être dans le dossier `djangogirls` où se trouve le fichier `manage.py`) :
 
-{% filename %}Mac OS X and Linux:{% endfilename %}
+{% filename %}macOS and Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py startapp blog
     

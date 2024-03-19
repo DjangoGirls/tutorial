@@ -24,7 +24,7 @@ Aby zacząć nasze eksperymenty, musimy najpierw otworzyć nasz wiersz polecenia
 
 Teraz powinnaś zobaczyć białe lub czarne okno, które czeka na Twoje polecenia.
 
-<!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
+<!--sec data-title="Prompt: macOS and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
 Jeżeli używasz Maca lub Linuksa, powinnaś zobaczyć `$`, tak jak poniżej:
 
@@ -60,7 +60,7 @@ W tutorialu, jeżeli będziemy chciały, byś wpisała komendę, umieścimy prze
 
 Zacznijmy od wpisania następującego polecenia:
 
-<!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
+<!--sec data-title="Your first command: macOS and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -98,7 +98,7 @@ Każdy system operacyjny ma nieco inny zestaw komend dostępnych w wierszu polec
 
 Miło byłoby dowiedzieć się, gdzie teraz jesteśmy, co? No to sprawdźmy. Wpisz poniższe polecenie i wciśnij `enter`:
 
-<!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
+<!--sec data-title="Current directory: macOS and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -118,7 +118,7 @@ Miło byłoby dowiedzieć się, gdzie teraz jesteśmy, co? No to sprawdźmy. Wpi
     C:\Users\olasitarska
     
 
-> Uwaga: 'cd' pochodzi od 'change directory' (po polsku 'zmień katalog'). W PowerShell możesz używać pwd dokładnie tak samo jak w Linuksie lub Mac OS X.
+> Uwaga: 'cd' pochodzi od 'change directory' (po polsku 'zmień katalog'). W PowerShell możesz używać pwd dokładnie tak samo jak w Linuksie lub macOS.
 
 <!--endsec-->
 
@@ -130,9 +130,9 @@ Prawdopodobnie ujrzysz coś podobnego na swoim komputerze. Kiedy otwierasz wiers
 
 Wiele poleceń, które można wpisać w wierszu polecenia ma wbudowane funkcje pomocy, które można wyświetlić i przeczytać! Na przykład, aby dowiedzieć się więcej na temat polecenia cd:
 
-<!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
+<!--sec data-title="Command help: macOS and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X i Linux posiada polecenie `man`, które wyświetla Ci pomoc dla danego polecenia. Spróbuj `man pwd` i zobacz, co mówi lub umieścić `man` przed innim poleceniem, aby zobaczyć jego pomoc. Wynikiem `man` jest normalna strona. Użyj spacji, aby przejść do następnej strony i `q`, aby zakończyć.
+macOS i Linux posiada polecenie `man`, które wyświetla Ci pomoc dla danego polecenia. Spróbuj `man pwd` i zobacz, co mówi lub umieścić `man` przed innim poleceniem, aby zobaczyć jego pomoc. Wynikiem `man` jest normalna strona. Użyj spacji, aby przejść do następnej strony i `q`, aby zakończyć.
 
 <!--endsec-->
 
@@ -146,7 +146,7 @@ Dodawanie przyrostka`/?` do większości poleceń powoduje, że zostają wyświe
 
 Co znajduje się w środku? Fajnie byłoby się tego dowiedzieć. Sprawdźmy:
 
-<!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
+<!--sec data-title="List files and directories: macOS and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -173,7 +173,7 @@ Co znajduje się w środku? Fajnie byłoby się tego dowiedzieć. Sprawdźmy:
     ...
     
 
-> Uwaga: W PowerShell możesz również używać 'ls' tak jak w Linuksie lub Mac OS X.<!--endsec-->
+> Uwaga: W PowerShell możesz również używać 'ls' tak jak w Linuksie lub macOS.<!--endsec-->
 
 * * *
 
@@ -181,7 +181,7 @@ Co znajduje się w środku? Fajnie byłoby się tego dowiedzieć. Sprawdźmy:
 
 Przejdźmy teraz do naszego folderu Pulpit:
 
-<!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
+<!--sec data-title="Change current directory: macOS" data-id="OSX_move_to" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -212,7 +212,7 @@ Zapamiętaj, że katalog "Desktop" może być przetłumaczony na język Twojego 
 
 Sprawdźmy, czy coś się faktycznie zmieniło:
 
-<!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
+<!--sec data-title="Check if changed: macOS and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -242,7 +242,7 @@ Tak, to tutaj!
 
 Co powiesz na stworzenie folderu "cwiczenie" na swoim pulpicie? Zrób to w ten sposób:
 
-<!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
+<!--sec data-title="Create directory: macOS and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -272,7 +272,7 @@ Małe wyzwanie dla Ciebie: wewnątrz świeżo utworzonego katalogu `cwiczenie` s
 
 #### Rozwiązanie:
 
-<!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
+<!--sec data-title="Exercise solution: macOS and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -306,7 +306,7 @@ Nie chcemy zostawić bałaganu, a zatem wyrzućmy wszystko, co do tej pory zrobi
 
 Najpierw musimy wrócić do Pulpitu:
 
-<!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
+<!--sec data-title="Clean up: macOS and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -328,7 +328,7 @@ Wykonanie `cd` wraz z `..` przeniesie Cię do katalogu nadrzędnego (czyli tego,
 
 Sprawdź, gdzie jesteś:
 
-<!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
+<!--sec data-title="Check location: macOS and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -352,7 +352,7 @@ Teraz czas usunąć katalog `cwiczenie`:
 
 > **Uwaga**: Usuwanie plików za pomocą `del`, `rmdir` lub `rm` jest nieodwracalne. To znaczy, że *Twoje pliki zostaną bezpowrotnie utracone*! Tak więc bądź ostrożna z tymi poleceniami.
 
-<!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
+<!--sec data-title="Delete directory: Windows Powershell, macOS and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -373,7 +373,7 @@ Teraz czas usunąć katalog `cwiczenie`:
 
 Gotowe! Dla pewności, że został on naprawdę usunięty, sprawdźmy to:
 
-<!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
+<!--sec data-title="Check deletion: macOS and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -395,7 +395,7 @@ Gotowe! Dla pewności, że został on naprawdę usunięty, sprawdźmy to:
 
 To na razie tyle! Możesz teraz spokojnie zamknąć wiersz polecenia. To co, zrobimy to jak prawdziwy haker? :)
 
-<!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
+<!--sec data-title="Exit: macOS and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 

@@ -41,10 +41,10 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-<!--sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx"
+<!--sec data-title="Virtual environment: Linux and macOS" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-Можем да създадем `virtualenv` и в Linux и OS X, като пуснем `python3 -m venv myvenv`. Ще изглежда така:
+Можем да създадем `virtualenv` и в Linux и macOS, като пуснем `python3 -m venv myvenv`. Ще изглежда така:
 
 {% filename %}command-line{% endfilename %}
 
@@ -132,7 +132,7 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-<!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
+<!--sec data-title="Working with virtualenv: Linux and macOS" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
 Стартирайте виртуалната си среда като напишете:

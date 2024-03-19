@@ -63,7 +63,7 @@ Djangoのモデルは特別なオブジェクトで、`データベース` に�
 
 全部をきちんと整理しておくため、プロジェクトの中に別のアプリケーションを作ります。 初めから全てを整理しておくのはとっても良いことです。 アプリケーションを作るために、次のコマンドをコンソールの中で走らせましょう。（`manage.py` ファイルがある `djangogirls` ディレクトリでコマンドをタイプしてくださいね）
 
-{% filename %}Mac OS X and Linux:{% endfilename %}
+{% filename %}macOS and Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py startapp blog
     
