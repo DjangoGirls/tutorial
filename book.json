@@ -49,17 +49,23 @@
                     "btnText": "Donate now!"
                 },
                 {
-                    "imageUrl": "https://posthog.com/static/1cf376d3f6ea36d7fafb9b1c50110603/0b2f4/hosthog-banner.webp",
-                    "url": "https://posthog.com/",
-                    "description": "💖 PostHog offers a suite of product analysis tools! ✨",
-                    "btnText": "Learn more!"
-                },
-                {
                     "imageUrl": "https://static.djangoproject.com/img/logos/django-logo-negative.png",
                     "url": "https://www.djangoproject.com/",
                     "description": "💖 The DSF supports the development of Django! ✨",
                     "btnText": "Learn more!"
                 },
+                {
+                    "imageUrl": "https://djangogirls.org/static/img/global/supporters/DO_Logo_Vertical_Blue.png",
+                    "url": "https://www.digitalocean.com/",
+                    "description": "💖 DigitalOcean simplifies cloud computing! ✨",
+                    "btnText": "Learn more!"
+                },
+                {
+                    "imageUrl": "https://djangogirls.org/uploads/uploads/posthog.png",
+                    "url": "https://posthog.com/",
+                    "description": "💖 PostHog offers a suite of product analysis tools! ✨",
+                    "btnText": "Learn more!"
+                },   
                 {
                     "imageUrl": "https://djangogirls.org/uploads/uploads/lincolnloop.png",
                     "url": "https://lincolnloop.com/",
