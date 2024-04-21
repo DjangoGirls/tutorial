@@ -20,7 +20,7 @@ install various software on your computer and set up some online accounts as nee
 # Cloud Development
 In this tutorial, the cloud development platform we will be using will be [RunCode](https://runcode.io/). RunCode is a cloud development environment which people can use without the need to install Python, Django and Visual Studio Code editor locally on their machines. This cloud environment enables anyone to work from any device that has an internet connection, including cellphones, tablets, laptop or desktop.
 
-This removes the need for you to install packages on a borrowed laptop or the need for you to own a laptop to attend the workshop or follow this tutorial from home as you only need to set up three online accounts. This will also save you time required for setting up your development environment. You can always do the [installation](installation/README.md#command-line) later own as a follow-up after finishing the tutorial. However, loading the development enviroment requires good and fast internet for this solution to work for you.
+This removes the need for you to install packages on a borrowed laptop or the need for you to own a laptop to attend the workshop or follow this tutorial from home as you only need to set up three online accounts. This will also save you time required for setting up your development environment. You can always do the [installation](installation/README.md#command-line) later on as a follow-up after finishing the tutorial. However, loading the development environment requires good and fast internet for this solution to work for you.
 
 > **Note** There are sections of this tutorial which depend on the platform you are working on. If you follow the local installation steps for Windows, Linux, OS X or Chromebook, you will need to follow instructions for your operating system. If you follow RunCode Cloud Environment setup instructions, then you will need to follow instructions for RunCode development environment. Where no specific instructions are provided for RunCode Cloud Environment, follow the Linux instructions as RunCode runs on Ubuntu Linux.
 
@@ -28,7 +28,7 @@ This removes the need for you to install packages on a borrowed laptop or the ne
 # RunCode Cloud Development Setup
 To set up RunCode Cloud development, follow the instructions below:
 
-<!-- sec data-title="RunCode Cloud Development setup (if you are using cloud development)" 
+<!-- sec data-title="RunCode Cloud Development setup (if you are using cloud development)"
 data-id="cloud_development" data-collapse=true ces-->
 {% include "/cloud_development_setup/instructions.md" %}
 <!--endsec-->
@@ -43,7 +43,7 @@ data-id="chromebook_setup" data-collapse=true ces-->
 
 
 # OS X, Windows, Linux Installation {#osx-windows-linux}
-> __NOTE:__  You can skip right over this section if you have followed [RunCode Cloud Development](cloud_development_setup/README.md) or [ChromeBook](chromebook_setup/README.md) installation steps. 
+> __NOTE:__  You can skip right over this section if you have followed [RunCode Cloud Development](cloud_development_setup/README.md) or [ChromeBook](chromebook_setup/README.md) installation steps.
 
 If you are not using RunCode or Chromebook, your experience will be a little different as you need to download and install some software locally as well as set up online accounts.
 
