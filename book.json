@@ -1,99 +1,99 @@
 {
-    "gitbook": ">=3.2.0",
-    "variables": {
-      "py_version": "3.8",
-      "py_release": "3.8.6",
-      "py_min_version": "3.6",
-      "py_min_release": "3.6.8",
-      "pa_py_version": "3.8",
-      "django_version": "3.2.10"
-    },
-    "links": {
-        "sidebar": {
-            "Need help? Talk to us!": "https://gitter.im/DjangoGirls/tutorial"
-        }
-    },
-    "pdf": {
-        "fontSize": 16
-    },
-    "plugins": [
-        "heading-anchors@1.0.3",
-        "ga@1.0.1",
-        "richquotes@0.0.9",
-        "github@2.0.0",
-        "language-picker",
-        "sidebar-ads",
-        "codeblock-label",
-        "sectionx-ex",
-        "collapsible-menu"
-    ],
-    "pluginsConfig": {
-        "ga": {
-            "token": "UA-51680040-3"
-        },
-        "richquotes": {
-            "default": false
-        },
-        "github": {
-            "url": "https://github.com/DjangoGirls/tutorial"
-        },
-        "language-picker": {
-            "grid-columns": 3
-        },
-        "sidebar-ads": {
-            "ads": [
-                {
-                    "imageUrl": "https://djangogirls.org/static/img/global/donate/lagos.jpg",
-                    "url": "https://www.patreon.com/djangogirls",
-                    "description": "💖 Support our work and donate to our project! ✨",
-                    "btnText": "Donate now!"
-                },
-                {
-                    "imageUrl": "https://static.djangoproject.com/img/logos/django-logo-negative.png",
-                    "url": "https://www.djangoproject.com/",
-                    "description": "💖 The DSF supports the development of Django! ✨",
-                    "btnText": "Learn more!"
-                },
-                {
-                    "imageUrl": "https://djangogirls.org/static/img/global/supporters/DO_Logo_Vertical_Blue.png",
-                    "url": "https://www.digitalocean.com/",
-                    "description": "💖 DigitalOcean simplifies cloud computing! ✨",
-                    "btnText": "Learn more!"
-                },
-                {
-                    "imageUrl": "https://djangogirls.org/uploads/uploads/posthog.png",
-                    "url": "https://posthog.com/",
-                    "description": "💖 PostHog offers a suite of product analysis tools! ✨",
-                    "btnText": "Learn more!"
-                },   
-                {
-                    "imageUrl": "https://djangogirls.org/uploads/uploads/lincolnloop.png",
-                    "url": "https://lincolnloop.com/",
-                    "description": "💖 Lincoln Loop provides scalable content platforms! ✨",
-                    "btnText": "Learn more!"
-                },
-                {
-                    "imageUrl": "https://djangogirls.org/uploads/uploads/torchbox.png",
-                    "url": "https://torchbox.com/",
-                    "description": "💖 Torchbox, the creators of Wagtail! ✨",
-                    "btnText": "Learn more!"
-                },
-                {
-                    "imageUrl": "https://www.pythonanywhere.com/static/anywhere/images/PA-logo.svg",
-                    "url": "https://www.pythonanywhere.com/",
-                    "description": "💖 Host, run, and code Python in the cloud! ✨",
-                    "btnText": "Learn more! "
-                },
-                {
-                    "imageUrl": "https://djangogirls.org/static/img/global/donate/tshirt.jpg",
-                    "url": "https://djangogirls.org/en/contact/",
-                    "description": "💖 Want to support our work? ✨",
-                    "btnText": "Contact Us!"
-                }
-            ]
-        },
-        "sectionx": {
-            "tag": "b"
-        }
-    }
+	"gitbook": ">=3.2.0",
+	"variables": {
+		"py_version": "3.12",
+		"py_release": "3.12.3",
+		"py_min_version": "3.9",
+		"py_min_release": "3.9.19",
+		"pa_py_version": "3.12",
+		"django_version": "4.2.11"
+	},
+	"links": {
+		"sidebar": {
+			"Need help? Talk to us!": "https://gitter.im/DjangoGirls/tutorial"
+		}
+	},
+	"pdf": {
+		"fontSize": 16
+	},
+	"plugins": [
+		"heading-anchors@1.0.3",
+		"ga@1.0.1",
+		"richquotes@0.0.9",
+		"github@2.0.0",
+		"language-picker",
+		"sidebar-ads",
+		"codeblock-label",
+		"sectionx-ex",
+		"collapsible-menu"
+	],
+	"pluginsConfig": {
+		"ga": {
+			"token": "UA-51680040-3"
+		},
+		"richquotes": {
+			"default": false
+		},
+		"github": {
+			"url": "https://github.com/DjangoGirls/tutorial"
+		},
+		"language-picker": {
+			"grid-columns": 3
+		},
+		"sidebar-ads": {
+			"ads": [
+				{
+					"imageUrl": "https://djangogirls.org/static/img/global/donate/lagos.jpg",
+					"url": "https://www.patreon.com/djangogirls",
+					"description": "💖 Support our work and donate to our project! ✨",
+					"btnText": "Donate now!"
+				},
+				{
+					"imageUrl": "https://static.djangoproject.com/img/logos/django-logo-negative.png",
+					"url": "https://www.djangoproject.com/",
+					"description": "💖 The DSF supports the development of Django! ✨",
+					"btnText": "Learn more!"
+				},
+				{
+					"imageUrl": "https://djangogirls.org/static/img/global/supporters/DO_Logo_Vertical_Blue.png",
+					"url": "https://www.digitalocean.com/",
+					"description": "💖 DigitalOcean simplifies cloud computing! ✨",
+					"btnText": "Learn more!"
+				},
+				{
+					"imageUrl": "https://djangogirls.org/uploads/uploads/posthog.png",
+					"url": "https://posthog.com/",
+					"description": "💖 PostHog offers a suite of product analysis tools! ✨",
+					"btnText": "Learn more!"
+				},
+				{
+					"imageUrl": "https://djangogirls.org/uploads/uploads/lincolnloop.png",
+					"url": "https://lincolnloop.com/",
+					"description": "💖 Lincoln Loop provides scalable content platforms! ✨",
+					"btnText": "Learn more!"
+				},
+				{
+					"imageUrl": "https://djangogirls.org/uploads/uploads/torchbox.png",
+					"url": "https://torchbox.com/",
+					"description": "💖 Torchbox, the creators of Wagtail! ✨",
+					"btnText": "Learn more!"
+				},
+				{
+					"imageUrl": "https://www.pythonanywhere.com/static/anywhere/images/PA-logo.svg",
+					"url": "https://www.pythonanywhere.com/",
+					"description": "💖 Host, run, and code Python in the cloud! ✨",
+					"btnText": "Learn more! "
+				},
+				{
+					"imageUrl": "https://djangogirls.org/static/img/global/donate/tshirt.jpg",
+					"url": "https://djangogirls.org/en/contact/",
+					"description": "💖 Want to support our work? ✨",
+					"btnText": "Contact Us!"
+				}
+			]
+		},
+		"sectionx": {
+			"tag": "b"
+		}
+	}
 }
