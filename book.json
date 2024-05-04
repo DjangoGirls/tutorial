@@ -44,9 +44,9 @@
             "ads": [
                 {
                     "imageUrl": "https://djangogirls.org/static/img/global/donate/lagos.jpg",
-                    "url": "https://www.patreon.com/djangogirls",
-                    "description": "💖 Support our work and donate to our project! ✨",
-                    "btnText": "Donate now!"
+                    "url": "https://surveys.jetbrains.com/s3/w-django-girls-survey-2024",
+                    "description": "💖 Celebrate 10 years with us. Fill our survey! ✨",
+                    "btnText": "Fill in now!"
                 },
                 {
                     "imageUrl": "https://static.djangoproject.com/img/logos/django-logo-negative.png",
@@ -65,7 +65,7 @@
                     "url": "https://posthog.com/",
                     "description": "💖 PostHog offers a suite of product analysis tools! ✨",
                     "btnText": "Learn more!"
-                },   
+                },
                 {
                     "imageUrl": "https://djangogirls.org/uploads/uploads/lincolnloop.png",
                     "url": "https://lincolnloop.com/",
@@ -83,6 +83,12 @@
                     "url": "https://www.pythonanywhere.com/",
                     "description": "💖 Host, run, and code Python in the cloud! ✨",
                     "btnText": "Learn more! "
+                },
+                {
+                    "imageUrl": "https://djangogirls.org/static/img/global/donate/lagos.jpg",
+                    "url": "https://www.patreon.com/djangogirls",
+                    "description": "💖 Support our work and donate to our project! ✨",
+                    "btnText": "Donate now!"
                 },
                 {
                     "imageUrl": "https://djangogirls.org/static/img/global/donate/tshirt.jpg",
