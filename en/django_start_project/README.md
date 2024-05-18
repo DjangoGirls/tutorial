@@ -252,13 +252,6 @@ or on Glitch:
 https://name-of-your-glitch-project.glitch.me
 ```
 
-If you are using RunCode cloud platform, the URL will look something like this:
-`https://8000-soft-limit-18855079.eu-ws4.runcode.io/`. To view your own instance, the URL will be like:
-
-{% filename %}browser{% endfilename %}
-```
-https://8000-the-name-of-your-runcode-instance.eu-ws4.runcode.io/
-```
 You can open this in another browser window and you should see the Django install worked page.
 
 Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?
