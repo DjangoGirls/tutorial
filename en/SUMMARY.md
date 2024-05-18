@@ -2,7 +2,6 @@
 
 * [Introduction](README.md)
 * [Installation](installation/README.md)
-  * [Installation (RunCode Cloud)](cloud_development_setup/README.md)
   * [Installation (Chromebook)](chromebook_setup/README.md)
   * [Installation (OS X/Windows/Linux)](installation/README.md#osx-windows-linux)
   * [Command Line](installation/README.md#intro-command-line)
