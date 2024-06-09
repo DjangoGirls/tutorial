@@ -19,7 +19,7 @@ OK, è tempo di guardare il nostro Post. Ricorda di eseguire `python manage.py r
 
 ![Login page](images/login_page2.png)
 
-Per accedere, devi creare un *superuser* - un utente che ha pieno controllo di tutto quello che c'è sul sito. Torna alla riga di comando, digita` python manage.py crearesuperutente`, e premi invio.
+Per accedere, devi creare un *superuser* - un utente che ha pieno controllo di tutto quello che c'è sul sito. Torna alla riga di comando, digita` python manage.py createsuperuser`, e premi invio.
 
 > Ricorda, per eseguire comandi lasciando in esecuzione il server web, apri una nuova finestra di terminale e attiva il tuo virtualenv. Abbiamo presentato come scrivere nuovi comandi nel capitolo **Il tuo primo progetto Django!**, nella sezione **Avvio del server web**.
 
