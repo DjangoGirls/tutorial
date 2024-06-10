@@ -24,11 +24,12 @@ Git sigue los cambios realizados a un grupo determinado de archivos en lo que ll
 
 {% filename %}command-line{% endfilename %}
 
-    $ git init
-    Initialized empty Git repository in ~/djangogirls/.git/
-    $ git config --global user.name "Tu nombre"
-    $ git config --global user.email tu@ejemplo.com
-    
+```         
+$ git init
+Initialized empty Git repository in ~/djangogirls/.git/
+$ git config --global user.name "Tu nombre"
+$ git config --global user.email tu@ejemplo.com
+```
 
 Inicializar el repositorio de git es algo que sólo tenemos que hacer una vez por proyecto (y no tendrás que volver a teclear tu nombre de usuario y correo electrónico nunca más).
 
@@ -36,54 +37,57 @@ Git llevará un seguimiento de los cambios realizados en todos los archivos y ca
 
 {% filename %}.gitignore{% endfilename %}
 
-    *.pyc
-    *~
-    __pycache__
-    myvenv
-    db.sqlite3
-    /static
-    .DS_Store
-    
+```         
+*.pyc
+*~
+__pycache__
+myvenv
+db.sqlite3
+/static
+.DS_Store
+```
 
 Y guárdalo como `.gitignore` en la carpeta "djangogirls".
 
 > **Nota** ¡El punto al principio del nombre del archivo es importante! Si tienes problemas para crearlo (a los Mac no les gusta que crees ficheros con un punto al principio del nombre usando el Finder por ejemplo), entonces usa la opción "Save As" o "Guardar como" de tu editor, esto funcionará seguro. Asegúrate de no añadir `.txt`, `.py`, o ninguna otra extensión al nombre de fichero -- Git solo lo reconocerá si se llama exactamente `.gitignore`, sin nada más.
-> 
+>
 > **Nota** Uno de los archivos especificados en tu `.gitignore` es `db.sqlite3`. Ese fichero es tu base de datos local, donde se almacenan los usuarios y publicaciones de tu blog. Vamos a seguir las buenas prácticas de programación web: vamos a usar bases de datos separadas para tu sitio local y tu sitio en producción en PythonAnywhere. La base de datos en PythonAnywhere podría ser SQLite, como en tu máquina de desarrollo, pero también podrías usar otro gestor de base de datos como MySQL o PostgreSQL que pueden soportar muchas más visitas que SQLite. En cualquier caso, al ignorar la base de datos SQLite en tu copia de GitHub, todos los posts y el super usuario que has creado hasta el momento solo estarán disponibles en local, y tendrás que crear nuevos usuarios y publicaciones en producción. Tu base de datos local es un buen campo de pruebas donde puedes probar diferentes cosas sin miedo a estropear o borrar las publicaciones reales de tu blog.
 
 Te recomendamos utilizar el comando `git status` antes de `git add` o en cualquier momento en que no sepas muy bien lo que ha cambiado. Esto te ayudará a evitar sorpresas, como subir cambios o archivos que no queríamos subir. El comando `git status` muestra información sobre cualquier archivo no seguido ("untracked"), modificado ("modified"), preparado ("staged"), el estado de la rama y muchas cosas más. La salida debería ser parecida a esto:
 
 {% filename %}command-line{% endfilename %}
 
-    $ git status
-    On branch master
-    
-    No commits yet
-    
-    Untracked files:
-      (use "git add <file>..." to include in what will be committed)
-    
-            .gitignore
-            blog/
-            manage.py
-            mysite/
-            requirements.txt
-    
-    nothing added to commit but untracked files present (use "git add" to track)
-    
+```         
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitignore
+        blog/
+        manage.py
+        mysite/
+        requirements.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+```
 
 Y finalmente guardamos nuestros cambios. Ve a la consola y ejecuta estos comandos:
 
 {% filename %}command-line{% endfilename %}
 
-    $ git add --all .
-    $ git commit -m "Mi aplicación Django Girls, primer commit"
-     [...]
-     13 files changed, 200 insertions(+)
-     create mode 100644 .gitignore
-     [...]
-     create mode 100644 mysite/wsgi.py
-    
+```         
+$ git add --all .
+$ git commit -m "Mi aplicación Django Girls, primer commit"
+ [...]
+ 13 files changed, 200 insertions(+)
+ create mode 100644 .gitignore
+ [...]
+ create mode 100644 mysite/wsgi.py
+```
 
 ## Subiendo tu código a Github
 
@@ -101,26 +105,71 @@ En la siguiente pantalla, verás la URL para clonar el repo, que tendrás que us
 
 Ahora necesitas enlazar el repositorio Git en tu ordenador con el repositorio de GitHub.
 
-Escribe lo siguiente en la consola (cambia `<your-github-username>` por tu nombre de usuario de GitHub, pero sin los símbolos < y > -- fíjate en que la URL debería coincidir con la URL para clonar el repo que acabas de ver):
+## Generar un tocken de GitHub
+
+Para subir tu código a GitHub, necesitas autenticarte. Para ello, necesitas un token de GitHub. Sigue las instrucciones en [este enlace](https://github.com/settings/tokens/new) para generar un token de GitHub. Asegúrate de seleccionar la opción `repo` en la lista de permisos.
+
+Sigamos los siguientes pasos:
+
+1.  Ingresar a la página de [tokens de GitHub](https://github.com/settings/tokens/new)
+2.  En el campo note, escribe un nombre para identificar el token, por ejemplo
+
+![](images/paste-1.png)
+
+3.  En la sección **Expiration** selecciona una fecha de expiración para el token, por ejemplo
+
+![](images/paste-2.png)
+
+4.  En la sección **Select scopes**, selecciona la opción `repo`
+5.  Haz click en el botón **Generate token**
+
+![](images/paste-3.png)
+
+Si todo salio bien debe aparecernos algo como esto:
+
+![](images/paste-4.png)
+
+Almacena este token en un lugar seguro ya que no se podrá visualizar nuevamente y lo necesitarás para subir tu código a GitHub.
+
+Si no deseas agregar cada vez el token generado, es necesario actualizar las creadenciales de acceso:
+
+```bash
+git config --global credential.helper store
+```
+
+Github a partir de 2021 ha deshabilitado el uso de usuario y contraseña para autenticarse, por lo que es necesario usar un token de acceso.
+
+Actualiza las credenciales de acceso con el siguiente comando:
+
+```bash
+git config user.name "Tu nombre"
+git config user.email "tucorreo"
+git config --global user.password "tu token"
+```
+
+
+Escribe lo siguiente en la consola (cambia `<your-github-username>` por tu nombre de usuario de GitHub, pero sin los símbolos \< y \> -- fíjate en que la URL debería coincidir con la URL para clonar el repo que acabas de ver):
 
 {% filename %}command-line{% endfilename %}
 
-    $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git
-    $ git push -u origin master
-    
+```         
+$ git remote add origin https://github.com/<your-github-username>/my-first-blog.git
+$ git push -u origin master
+```
 
 Cuando hagas push a GitHub, te preguntará tu usuario y password de GitHub, y después de introducirlos, deberías ver algo como esto:
 
 {% filename %}command-line{% endfilename %}
 
-    Counting objects: 6, done.
-    Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
-    Total 3 (delta 0), reused 0 (delta 0)
-    To https://github.com/ola/my-first-blog.git
-    
-     * [new branch]      master -> master
-    Branch master set up to track remote branch master from origin.
-    
+```         
+Counting objects: 6, done.
+Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/ola/my-first-blog.git
+
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+```
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 
@@ -146,8 +195,9 @@ Para desplegar una aplicación web en PythonAnywhere necesitas descargar tu cód
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pip3.6 install --user pythonanywhere
-    
+```         
+$ pip3.6 install --user pythonanywhere
+```
 
 Eso debería mostrar en pantalla algunos mensajes como `Collecting pythonanywhere`, y finalmente una linea diciendo que ha terminado bien: `Successfully installed (...) pythonanywhere- (...)`.
 
@@ -155,17 +205,18 @@ Ahora ejecutaremos el asistente para configurar automáticamente nuestra aplicac
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pa_autoconfigure_django.py --python=3.6 https://github.com/<your-github-username>/my-first-blog.git
-    
+```         
+$ pa_autoconfigure_django.py --python=3.6 https://github.com/<your-github-username>/my-first-blog.git
+```
 
 A medida que se ejecuta, podrás ver lo que hace:
 
-- Se descarga tu código de GitHub.
-- Crea un virtualenv en PythonAnywhere, como el de tu propia computadora.
-- Actualiza tus ficheros de settings con algunos settings de despliegue.
-- Crea la base de datos en PythonAnywhere ejecutando el comando `manage.py migrate`.
-- Configura los archivos estáticos (static) (luego hablaremos de éstos con más detalle).
-- Y configura PythonAnywhere para publicar tu aplicación web a través de su API.
+-   Se descarga tu código de GitHub.
+-   Crea un virtualenv en PythonAnywhere, como el de tu propia computadora.
+-   Actualiza tus ficheros de settings con algunos settings de despliegue.
+-   Crea la base de datos en PythonAnywhere ejecutando el comando `manage.py migrate`.
+-   Configura los archivos estáticos (static) (luego hablaremos de éstos con más detalle).
+-   Y configura PythonAnywhere para publicar tu aplicación web a través de su API.
 
 En PythonAnywhere todos estos pasos están automatizados, pero son los mismos que tendrías que seguir en cualquier otro proveedor de servidores.
 
@@ -173,8 +224,9 @@ Lo más importante que debes notar en este momento es que tu base de datos en Py
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    (ola.pythonanywhere.com) $ python manage.py createsuperuser
-    
+```         
+(ola.pythonanywhere.com) $ python manage.py createsuperuser
+```
 
 Teclea las credenciales para tu usuario admin. Para evitar confusiones, te recomendamos usar el mismo nombre de usuario que usaste en tu ordenador local; aunque a lo mejor prefieres que la contraseña en PythonAnywhere sea más segura.
 
@@ -182,12 +234,13 @@ Ahora, si quieres, también puedes ver tu código en PythonAnywhere con el coman
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    (ola.pythonanywhere.com) $ ls
-    blog  db.sqlite3  manage.py  mysite requirements.txt static
-    (ola.pythonanywhere.com) $ ls blog/
-    __init__.py  __pycache__  admin.py  apps.py  migrations  models.py
-    tests.py  views.py
-    
+```         
+(ola.pythonanywhere.com) $ ls
+blog  db.sqlite3  manage.py  mysite requirements.txt static
+(ola.pythonanywhere.com) $ ls blog/
+__init__.py  __pycache__  admin.py  apps.py  migrations  models.py
+tests.py  views.py
+```
 
 También puedes ir a la página de ficheros ("Files") y navegar por los ficheros y directorios usando el visor de PythonAnywhere. (Desde la página de la consola ("Console"), puedes ir a cualquier otra página de PythonAnywhere usando el botón de la esquina superior derecha. Desde el resto de páginas, también hay enlaces a las otras en la parte superior.)
 
@@ -201,10 +254,10 @@ También puedes ir a la página de ficheros ("Files") y navegar por los ficheros
 
 Si te sale un error al ejecutar el script `pa_autconfigure_django.py`, aquí hay algunas causas comunes:
 
-- Te has olvidado de crear el token de API de PythonAnywhere.
-- No has puesto bien la URL de GitHub.
-- Si ves un error diciendo *"Could not find your settings.py*, es probable que no añadieras todos tus archivos a Git, y/o no los subiste a GitHub correctamente. Repasa la sección de Git más arriba.
-- Si anteriormente te suscribiste a una cuenta de PythonAnywhere y tuviste un error con *collectstatic*, probablemente tengas una versión antigua de SQLite (por ejemplo, 3.8.2) en tu cuenta. En este caso, regístrate con una nueva cuenta e intenta los comandos en la sección PythonAnywhere anterior.
+-   Te has olvidado de crear el token de API de PythonAnywhere.
+-   No has puesto bien la URL de GitHub.
+-   Si ves un error diciendo *"Could not find your settings.py*, es probable que no añadieras todos tus archivos a Git, y/o no los subiste a GitHub correctamente. Repasa la sección de Git más arriba.
+-   Si anteriormente te suscribiste a una cuenta de PythonAnywhere y tuviste un error con *collectstatic*, probablemente tengas una versión antigua de SQLite (por ejemplo, 3.8.2) en tu cuenta. En este caso, regístrate con una nueva cuenta e intenta los comandos en la sección PythonAnywhere anterior.
 
 Si ves un error al visitar tu sitio, el primer lugar para ver qué está pasando es el **log de errores**. Encontrarás un enlace en la página ["Web"](https://www.pythonanywhere.com/web_app_setup/) de PythonAnywhere. Mira si hay algún mensaje de error allí; los más recientes están en la parte inferior.
 

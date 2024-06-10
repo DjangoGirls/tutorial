@@ -1,4 +1,4 @@
-LANG      := en
+LANG      := en es
 LANG_FILE := $(shell test -f .langs && echo .langs || echo LANGS.md)
 LANG_DATA := $(shell grep "$(LANG)/" $(LANG_FILE))
 LANG_NAME := $(shell echo "$(LANG_DATA)" | sed 's/.*\[\(.*\)\].*/\1/')
