@@ -44,15 +44,22 @@ class PostForm(forms.ModelForm):
 
 ## フォームにおけるページへのリンク
 
-`blog/templates/blog/base.html` をエディタで開きましょう。`page-header` と名付けた `div` 中に次のリンクを追加します：
+リンクを追加する前に、リンクのボタンとして使用するアイコンが必要ですね。このチュートリアルでは、[file-earmark-plus.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/file-earmark-plus.svg)をダウンロードし、`blog/templates/blog/icons/`フォルダに保存します。
+
+> 注：SVG 画像をダウンロードするには、リンクのコンテキストメニューを開き （通常は右クリック）、"名前を付けてリンク先を保存" を選択してください。ファイルを保存する場所を尋ねるダイアログが表示されたら、あなたの Django プロジェクトの `djangogirls` ディレクトリに移動し、その中のサブディレクトリ `blog/templates/blog/icons/` に移動して、そこにファイルを保存してください。
+
+それでは、`blog/templates/blog/base.html` をエディタで開きましょう。このアイコンファイルはベーステンプレート内でこのように使えます。`header`セクション内の`div`要素内の、`h1`要素の前にリンクを追加してください：
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
-
 ```html
-<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+<a href="{% url 'post_new' %}" class="top-menu">
+    {% include './icons/file-earmark-plus.svg' %}
+</a>
 ```
 
-新しいビュー` post_new `を呼び出すことに注意してください。 ` "glyphicon glyphicon-plus" `クラスは、使用しているBootstrapテーマによって提供され、プラス記号を表示します。
+新しいビューを `post_new` と呼ぶことに注意してください。SVGアイコン](https://icons.getbootstrap.com/icons/file-earmark-plus/) は [Bootstrap アイコン](https://icons.getbootstrap.com/) が提供するもので、プラス記号のページアイコンを表示します。Django テンプレートディレクティブの `include` を使います。これはファイルの内容を Django テンプレートに注入します。ウェブブラウザは、この種のコンテンツをこれ以上処理することなく読み込むことができるのです。
+
+> 全てのBootstrapアイコンはここからダウンロードできます(https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip)。ファイルを解凍して、すべてのSVG画像ファイルを`blog/templates/blog/`内の`icons`という新しいフォルダにコピーしてください。そうすることで、`pencil-fill.svg`のようなアイコンに、ファイルパス`blog/templates/blog/icons/pencil-fill.svg`を使ってアクセスすることができます。
 
 行を追加すると、このような html ファイルになります。
 
@@ -60,27 +67,31 @@ class PostForm(forms.ModelForm):
 
 ```html
 {% load static %}
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-        <div class="page-header">
-            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
-        <div class="content container">
+        <header class="page-header">
+            <div class="container">
+                <a href="{% url 'post_new' %}" class="top-menu">
+                    {% include './icons/file-earmark-plus.svg' %}
+                </a>
+                <h1><a href="/">Django Girls Blog</a></h1>
+            </div>
+        </header>
+        <main class="content container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col">
                     {% block content %}
                     {% endblock %}
                 </div>
             </div>
-        </div>
+        </main>
     </body>
 </html>
 ```
@@ -158,7 +169,7 @@ def post_new(request):
     <h2>New post</h2>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
-        <button type="submit" class="save btn btn-default">Save</button>
+        <button type="submit" class="save btn btn-secondary">Save</button>
     </form>
 {% endblock %}
 ```
@@ -283,12 +294,18 @@ Djangoはフォームのすべてのフィールドが正しいことを検証�
 
 今、私たちは新しいフォームを追加する方法を知っています。 しかし既存のデータを編集するためはどうすれば良いのでしょうか? それは先ほど行ったことと非常に似ています。 すぐにいくつかの重要なものを作成してみましょう。 （もしわからない場合、コーチに尋ねるか、もしくはすでに手順をカバーしているので、前の章を見てください）
 
-`blog/templates/blog/post_detail.html` をエディタで開いて次の行を追加します
+まず、編集ボタンを表すアイコンを保存しましょう。[pencil-fill.svg](https://raw.githubusercontent.com/twbs/icons/main/icons/pencil-fill.svg)をダウンロードし、`blog/templates/blog/icons/`に保存します。
+
+`blog/templates/blog/post_detail.html`をコードエディターで開き、`article`要素の中に以下のコードを追加する：
+
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
-```html
-<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+<aside class="actions">
+    <a class="btn btn-secondary" href="{% url 'post_edit' pk=post.pk %}">
+      {% include './icons/pencil-fill.svg' %}
+    </a>
+</aside>
 ```
 
 テンプレートは次のようになります:
@@ -299,16 +316,20 @@ Djangoはフォームのすべてのフィールドが正しいことを検証�
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <div class="post">
+    <article class="post">
+        <aside class="actions">
+            <a class="btn btn-secondary" href="{% url 'post_edit' pk=post.pk %}">
+                {% include './icons/pencil-fill.svg' %}
+            </a>
+        </aside>
         {% if post.published_date %}
-            <div class="date">
+            <time class="date">
                 {{ post.published_date }}
-            </div>
+            </time>
         {% endif %}
-        <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
         <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    </article>
 {% endblock %}
 ```
 
@@ -376,21 +397,24 @@ Djangoのフォームについてもっと知りたい場合、Djangoのドキ�
 
 リンクをクリックするだけで新しい投稿を作成できることは素晴らしいことです！ しかし、今、あなたのサイトにアクセスした人は誰でも新しいブログ投稿を作成することができます。それはおそらくあなたが望むものではありません。 ボタンはあなたのためには表示されますが、他の人には表示されないようにしましょう。
 
-`blog/templates/blog/base.html` をエディタで開き、`page-header` と名付けた `div` とそこに以前に入力したアンカータグを見つけます。 これは次のようになっています。
+blog/templates/blog/base.html`をコードエディターで開き、`header`の中にある`div`と、先ほど入れたアンカー要素を見つけてください。このようになるはずです：
+
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
-
 ```html
-<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+<a href="{% url 'post_new' %}" class="top-menu">
+    {% include './icons/file-earmark-plus.svg' %}
+</a>
 ```
 
 これに`{% if %}`タグを追加し、管理者でログインしているユーザーのみにリンクを表示します。 今は、あなただけです！ `<a>` タグを以下のように変更します：
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
-
 ```html
 {% if user.is_authenticated %}
-    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+    <a href="{% url 'post_new' %}" class="top-menu">
+        {% include './icons/file-earmark-plus.svg' %}
+    </a>
 {% endif %}
 ```
 
@@ -401,18 +425,20 @@ Djangoのフォームについてもっと知りたい場合、Djangoのドキ�
 `blog/templates/blog/post_detail.html` をエディタで開いて次の行を見つけてください：
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
-
 ```html
-<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+<a class="btn btn-secondary" href="{% url 'post_edit' pk=post.pk %}">
+    {% include './icons/pencil-fill.svg' %}
+</a>
 ```
 
 以下のように変更してください：
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
-
 ```html
 {% if user.is_authenticated %}
-     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+     <a class="btn btn-secondary" href="{% url 'post_edit' pk=post.pk %}">
+        {% include './icons/pencil-fill.svg' %}
+     </a>
 {% endif %}
 ```
 
@@ -427,7 +453,7 @@ Djangoのフォームについてもっと知りたい場合、Djangoのドキ�
 {% filename %}command-line{% endfilename %}
 
     $ git status
-    $ git add --all .
+    $ git add .
     $ git status
     $ git commit -m "Added views to create/edit blog post inside the site."
     $ git push
