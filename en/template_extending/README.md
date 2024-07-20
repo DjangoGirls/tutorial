@@ -26,7 +26,7 @@ Then open it up in the code editor and copy everything from `post_list.html` to 
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Django Girls blog</title>
+        <title>DjangoFest blog</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
@@ -34,7 +34,7 @@ Then open it up in the code editor and copy everything from `post_list.html` to 
     <body>
         <header class="page-header">
           <div class="container">
-              <h1><a href="/">Django Girls Blog</a></h1>
+              <h1><a href="/">DjangoFest Blog</a></h1>
           </div>
         </header>
 
@@ -64,7 +64,7 @@ Then in `base.html`, replace your whole `<body>` (everything between `<body>` an
 <body>
     <header class="page-header">
       <div class="container">
-          <h1><a href="/">Django Girls Blog</a></h1>
+          <h1><a href="/">DjangoFest Blog</a></h1>
       </div>
     </header>
     <main class="container">

@@ -106,7 +106,7 @@ And finally we save our changes. Go to your console and run these commands:
 {% filename %}command-line{% endfilename %}
 ```
 $ git add .
-$ git commit -m "My Django Girls app, first commit"
+$ git commit -m "My DjangoFest app, first commit"
  [...]
  13 files changed, 200 insertions(+)
  create mode 100644 .gitignore
@@ -161,7 +161,7 @@ In this case, follow the instructions from GitHub to [create a personal access t
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 
-Your code is now on GitHub. Go and check it out!  You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
+Your code is now on GitHub. Go and check it out!  You'll find it's in fine company – [Django](https://github.com/django/django), the [DjangoFest Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
 
 {% include "/deploy/pythonanywhere.md" %}
 
