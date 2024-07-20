@@ -69,7 +69,7 @@ After editing the line, your HTML file should now look like this:
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Django Girls blog</title>
+        <title>DjangoFest blog</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
@@ -80,7 +80,7 @@ After editing the line, your HTML file should now look like this:
                 <a href="{% url 'post_new' %}" class="top-menu">
                     {% include './icons/file-earmark-plus.svg' %}
                 </a>
-                <h1><a href="/">Django Girls Blog</a></h1>
+                <h1><a href="/">DjangoFest Blog</a></h1>
             </div>
         </header>
         <main class="content container">
@@ -259,7 +259,7 @@ def post_new(request):
 
 Let's see if it works. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it… and voilà! The new blog post is added and we are redirected to the `post_detail` page!
 
-You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a _publish button_ in __Django Girls Tutorial: Extensions__.
+You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a _publish button_ in __DjangoFest Tutorial: Extensions__.
 
 That is awesome!
 

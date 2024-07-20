@@ -1,11 +1,11 @@
-# Django Girls Tutorial
+# DjangoFest Tutorial
 [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
 > This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License.
 > To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
 
 ## Welcome
-Welcome to the Django Girls Tutorial! We are happy to see you here. :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
+Welcome to the DjangoFest Tutorial! We are happy to see you here. :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
 As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine. :)
 
@@ -33,7 +33,7 @@ OK, [let's start at the beginning…](./how_the_internet_works/README.md)
 
 ## Following the tutorial at home
 
-It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+It is amazing to take part in a DjangoFest workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
 
 In every chapter already covered, there is a link that points to the correct video.
 

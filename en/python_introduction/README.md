@@ -562,7 +562,7 @@ Earlier, we picked out a code editor from the [code editor](../code_editor/READM
 
 {% filename %}editor{% endfilename %}
 ```python
-print('Hello, Django girls!')
+print('Hello, DjangoFest!')
 ```
 
 Obviously, you're a pretty seasoned Python developer now, so feel free to write some code that you've learned today.
@@ -628,7 +628,7 @@ Now use Python to execute the code in the file like this:
 {% filename %}command-line{% endfilename %}
 ```
 $ python3 python_intro.py
-Hello, Django girls!
+Hello, DjangoFest!
 ```
 
 Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
