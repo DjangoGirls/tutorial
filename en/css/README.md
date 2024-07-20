@@ -107,7 +107,7 @@ Between the `<head>` and `</head>` tags, after the links to the Bootstrap CSS fi
 ```html
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
-The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may be overriden by code in Bootstrap files.
+The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may be overridden by code in Bootstrap files.
 We just told our template where our CSS file is located.
 
 Your file should now look like this:

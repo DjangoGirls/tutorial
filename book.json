@@ -1,12 +1,12 @@
 {
     "gitbook": ">=3.2.0",
     "variables": {
-      "py_version": "3.8",
-      "py_release": "3.8.6",
-      "py_min_version": "3.6",
-      "py_min_release": "3.6.8",
-      "pa_py_version": "3.8",
-      "django_version": "3.2.10"
+      "py_version": "3.12",
+      "py_release": "3.12.3",
+      "py_min_version": "3.9",
+      "py_min_release": "3.9.19",
+      "pa_py_version": "3.10",
+      "django_version": "4.2.11"
     },
     "links": {
         "sidebar": {
@@ -44,20 +44,26 @@
             "ads": [
                 {
                     "imageUrl": "https://djangogirls.org/static/img/global/donate/lagos.jpg",
-                    "url": "https://www.patreon.com/djangogirls",
-                    "description": "💖 Support our work and donate to our project! ✨",
-                    "btnText": "Donate now!"
-                },
-                {
-                    "imageUrl": "https://posthog.com/static/1cf376d3f6ea36d7fafb9b1c50110603/0b2f4/hosthog-banner.webp",
-                    "url": "https://posthog.com/",
-                    "description": "💖 PostHog offers a suite of product analysis tools! ✨",
-                    "btnText": "Learn more!"
+                    "url": "https://surveys.jetbrains.com/s3/w-django-girls-survey-2024",
+                    "description": "💖 Celebrate 10 years with us. Fill our survey! ✨",
+                    "btnText": "Fill in now!"
                 },
                 {
                     "imageUrl": "https://static.djangoproject.com/img/logos/django-logo-negative.png",
                     "url": "https://www.djangoproject.com/",
                     "description": "💖 The DSF supports the development of Django! ✨",
+                    "btnText": "Learn more!"
+                },
+                {
+                    "imageUrl": "https://djangogirls.org/static/img/global/supporters/DO_Logo_Vertical_Blue.png",
+                    "url": "https://www.digitalocean.com/",
+                    "description": "💖 DigitalOcean simplifies cloud computing! ✨",
+                    "btnText": "Learn more!"
+                },
+                {
+                    "imageUrl": "https://djangogirls.org/uploads/uploads/posthog.png",
+                    "url": "https://posthog.com/",
+                    "description": "💖 PostHog offers a suite of product analysis tools! ✨",
                     "btnText": "Learn more!"
                 },
                 {
@@ -77,6 +83,12 @@
                     "url": "https://www.pythonanywhere.com/",
                     "description": "💖 Host, run, and code Python in the cloud! ✨",
                     "btnText": "Learn more! "
+                },
+                {
+                    "imageUrl": "https://djangogirls.org/static/img/global/donate/lagos.jpg",
+                    "url": "https://www.patreon.com/djangogirls",
+                    "description": "💖 Support our work and donate to our project! ✨",
+                    "btnText": "Donate now!"
                 },
                 {
                     "imageUrl": "https://djangogirls.org/static/img/global/donate/tshirt.jpg",
