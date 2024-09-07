@@ -31,7 +31,7 @@ It looks like this:
 
 ![Figure 1.3](images/internet_2.png)
 
-Imagine that when you type https://djangogirls.org, you send a letter that says: "Dear Django Girls, I want to see the djangogirls.org website. Send it to me, please!"
+Imagine that when you type https://djangogirls.org, you send a letter that says: "Dear DjangoFest, I want to see the djangogirls.org website. Send it to me, please!"
 
 Your letter goes to the post office closest to you. Then it goes to another that is a bit nearer to your addressee, then to another, and another until it is delivered at its destination. The only unique thing is that if you send many letters (*data packets*) to the same place, they could go through totally different post offices (*routers*). This depends on how they are distributed at each office.
 

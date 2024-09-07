@@ -48,7 +48,7 @@ It works! But we want the posts to be displayed like the static posts we created
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
 <header>
-    <h1><a href="/">Django Girls Blog</a></h1>
+    <h1><a href="/">DjangoFest Blog</a></h1>
 </header>
 
 {% for post in posts %}

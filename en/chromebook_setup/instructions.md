@@ -172,7 +172,7 @@ Make a [GitHub](https://github.com) account.
 
 ### PythonAnywhere
 
-The Django Girls tutorial includes a section on what is called Deployment,
+The DjangoFest tutorial includes a section on what is called Deployment,
 which is the process of taking the code that powers your new web application
 and moving it to a publicly accessible computer (called a server) so other
 people can see your work.

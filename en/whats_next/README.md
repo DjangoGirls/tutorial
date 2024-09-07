@@ -6,14 +6,14 @@ Congratulate yourself! __You're totally awesome__. We're proud! <3
 
 Take a break and relax! You have just done something really huge.
 
-After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
+After that, make sure to follow DjangoFest on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
 
 ### Can you recommend any further resources?
 
-Yes! There are a _lot_ of resources online for learning all kinds of programming skills – it can be pretty daunting to work out where to go next, but we've got you covered. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
+Yes! There are a _lot_ of resources online for learning all kinds of programming skills – it can be pretty daunting to work out where to go next, but we've got you covered. Whatever your interests were before you came to DjangoFest, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
 
 #### Django
-- Our other book, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
+- Our other book, [DjangoFest Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
 - [Django's official tutorial](https://docs.djangoproject.com/en/4.2/intro/tutorial01/)
 - [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
 - [Django for Everybody Specialization](https://www.coursera.org/specializations/django) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
