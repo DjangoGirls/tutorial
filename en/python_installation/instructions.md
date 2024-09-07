@@ -48,6 +48,11 @@ It is very likely that you already have Python installed out of the box. To chec
 {% filename %}command-line{% endfilename %}
 ```
 $ python3 --version
+```
+
+
+{% filename %}What you'll see{% endfilename %}
+```
 Python {{ book.py_release }}
 ```
 
