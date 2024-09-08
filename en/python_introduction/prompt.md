@@ -11,6 +11,10 @@ We want to open up a Python console, so type in `python` on Windows or `python3`
 {% filename %}command-line{% endfilename %}
 ```
 $ python3
+
+```
+{% filename %}What you'll see{% endfilename %}
+```
 Python {{ book.py_release }} (...)
 Type "help", "copyright", "credits" or "license" for more information.
 >>>

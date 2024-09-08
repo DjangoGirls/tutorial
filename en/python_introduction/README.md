@@ -953,6 +953,9 @@ And when we run it:
 {% filename %}command-line{% endfilename %}
 ```
 $ python3 python_intro.py
+```
+{% filename %}What you'll se{% endfilename %}
+```
 Hi Rachel!
 Next girl
 Hi Monica!
@@ -964,7 +967,6 @@ Next girl
 Hi You!
 Next girl
 ```
-
 As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
 
 You can also use `for` on numbers using the `range` function:
