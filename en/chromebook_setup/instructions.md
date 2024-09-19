@@ -25,6 +25,10 @@ The bash terminal (similar to Linux) is at the bottom of the page.
 
 ![](images/codespace-preview.png)
 
+By default, the GitHub Codespace environment will be deleted after 1 month (this applies only to the environment, not your code). To prevent auto-deletion, you can adjust the settings on the page: https://github.com/codespaces 
+
+![](images/codespace-auto-delete-off.png)
+
 - Continue with the tutorial
 
 Follow the next steps from the section [Set up virtual environment and install Django](https://tutorial.djangogirls.org/en/installation/#virtualenv).
