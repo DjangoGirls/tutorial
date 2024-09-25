@@ -151,13 +151,42 @@ To https://github.com/ola/my-first-blog.git
 Branch main set up to track remote branch main from origin.
 ```
 
-> **Note** You might encounter the following error when trying to push to GitHub:
+**Note** You will likely encounter the following error when trying to push to GitHub:
 ```
 remote: Support for password authentication was removed on August 13, 2021.
 remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
 fatal: Authentication failed for 'https://github.com/<your-github-username>/my-first-blog.git/'
 ```
-In this case, follow the instructions from GitHub to [create a personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic). The token should have the 'repo' scope. Copy the value of the token, then try the git push command again. When you are prompted to enter your username and password, enter the access token instead of your password. 
+In this case, follow the instructions from GitHub to [create a personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic). The token should have the 'repo' scope. Copy the value of the token, then try the git push command again. When you are prompted to enter your username and password, enter the access token instead of your password:
+
+1. Go to profile settings or go here: https://github.com/settings/profile
+2. Scroll down and click "Developer settings" on left-hand menu or go here: https://github.com/settings/apps
+3. On left-hand menu, press "Personal access tokens" to expand the dropdown menu. Click "Tokens (classic)"
+4. In the top-right, click "Generate new token", and then click "Generate new token (classic)". You will need to authenticate your account at this point.
+5. Fill in the form:
+  - Note: Django girls blog
+  - Expiration: No expiration (or if you want more security, choose 90 days)
+  - Select scopes: Check every box 
+6. Press "Generate token"
+7. Copy the token generated (it's the text string that likely starts with `ghp...`) and store this token somewhere secure as once you close this page, you will lose access to viewing this token and will need to generate a new one if you lose it. For example, you could store it in a password manager or even in a note on your computer.
+8. Run the command in the terminal again:
+  {% filename %}command-line{% endfilename %}
+  ```
+  $ git push -u origin HEAD
+  ```
+9. When the terminal asks for `username`, enter in your github username. Press enter.
+10. Next, it will ask for `password`. Do not use your github password as this method of authenticating ("logging in") is deprecated. Copy the token you just generated (either from github or wherever you carefully stored this token) and carefully paste it into the terminal. Note that as you paste or even type into the terminal for the password, nothing will appear (you can't see what you typed) for security reasons (it's designed like this on purpose). Press enter.
+11. If that worked, you will see the output as below. If you are unsuccesful, try to run `git push -u origin HEAD` again and make sure that you enter in your github username and the token (as the password) correctly.
+
+{% filename %}command-line{% endfilename %}
+```
+Counting objects: 6, done.
+Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/ola/my-first-blog.git
+ * [new branch]      main -> main
+Branch main set up to track remote branch main from origin.
+```
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 
