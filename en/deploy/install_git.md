@@ -13,9 +13,14 @@ Do not forget to restart the command prompt or PowerShell after the installation
 <!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->
 
-Download Git from [git-scm.com](https://git-scm.com/) and follow the instructions.
+Download Git from [https://git-scm.com/download/mac](https://git-scm.com/download/mac) and follow the instructions.
 
 > **Note** If you are running OS X 10.6, 10.7, or 10.8, you will need to install the version of git from here: [Git installer for OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
+
+> It is recommended to install using brew (you may need to install homebrew if you don't already have it): 
+> ```brew install git```
+> 
+> Please note that some Mac M1/M2/M3 users may have the error `zsh: command not found: brew`. In that case, please follow [this](https://stackoverflow.com/a/66019047) or [this](https://mac.install.guide/homebrew/zsh-command-not-found-brew) to fix the error.
 
 <!--endsec-->
 
