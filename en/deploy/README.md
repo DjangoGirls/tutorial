@@ -26,7 +26,7 @@ The deployment process on **Chromebook** and Cloud environment can be illustrate
 
 {% include "/deploy/install_git.md" %}
 
-> **Note** If you're using a **Chromebook** and have already completed the **Chromebook** Installation [part](../chromebook_setup/README.md), you've already created the repository and can **skip** all commands from the "Starting our Git repository" and "Ignoring Files" chapters. You can continue from the "First Git commands" chapter.  While you’re welcome to read these chapters, the Terminal commands can be skipped. 
+> **Note** If you're using a **Chromebook** and have already completed the **Chromebook** Installation [part](../chromebook_setup/README.md), you've already created the repository and can **skip** all commands from the "Starting our Git repository" and "Ignoring files" chapters. You can continue from the "First Git commands" chapter.  While you’re welcome to read these chapters, the Terminal commands can be skipped. 
 
 ## Starting our Git repository
 
@@ -43,7 +43,7 @@ $ git config --global user.email you@example.com
 ```
 Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email ever again).
 
-## Ignoring Files
+### Ignoring files
 
 Git will track changes to all the files and folders in this directory, but there are some files we want it to ignore. We do this by creating a file called `.gitignore` in the base directory. Open up your editor and create a new file with the following contents:
 
@@ -93,7 +93,7 @@ Instead use `ls -a` to see the `.gitignore` file.
 > **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. That file is your local database, where all of your users and posts are stored. We'll follow standard web programming practice, meaning that we'll use separate databases for your local testing site and your live website on PythonAnywhere. The PythonAnywhere database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts and superuser you created so far are going to only be available locally, and you'll have to create new ones on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
 
 
-## First Git commands
+### First Git commands
 
 It's a good idea to use a `git status` command before `git add` or whenever you find yourself unsure of what has changed. This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
 
