@@ -9,9 +9,6 @@
       "django_version": "4.2.11"
     },
     "links": {
-        "sidebar": {
-            "Need help? Talk to us!": "https://gitter.im/DjangoGirls/tutorial"
-        }
     },
     "pdf": {
         "fontSize": 16
