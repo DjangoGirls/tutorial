@@ -15,12 +15,3 @@ Python {{ book.py_release }} (...)
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
-
-<!--sec data-title="Opening: RunCode Cloud Environment" data-id="runcode_prompt" data-collapse=true ces-->
-
-To open the Python terminal on RunCode, go to Workspaces → New Workspace → Jupyter Lab. This will open a Python prompt 
-which is depicted by `>>>`. If you already opened an Ubuntu terminal open, in the [Intro to Command Line](../intro_to_command_line/README.md) chapter, you can just type `python3` in the prompt as shown below to open a Python prompt.
-
-`ubuntu@runcode:~$ python3`
-
-<!--endsec-->

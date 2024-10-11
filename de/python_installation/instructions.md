@@ -47,10 +47,10 @@ data-collapse=true ces-->
 Es ist ziemlich wahrscheinlich, dass du Python schon automatisch installiert hast. Um herauszufinden, ob das so ist (und wenn ja, welche Version du hast), öffne eine Konsole und gib das folgende Kommando ein:
 
 {% filename %}command-line{% endfilename %}
-
-    $ python3 --version
-    Python {{ book.py_release }}
-    
+```
+$ python3 --version
+Python {{ book.py_release }}
+``` 
 
 Wenn du eine andere Version von Python installiert hast, die {{ book.py_min_version }} oder höher ist, z.B. {{ book.py_min_release }}, dann musst du die Version nicht aktualisieren. Wenn du Python noch nicht installiert hast oder wenn du eine andere Python-Version willst, prüfe zuerst mit folgendem Befehl, welche Linux-Distribution du benutzt:
 
@@ -103,10 +103,10 @@ Gib diesen Befehl in die Konsole ein:
 Prüfe, ob die Installation erfolgreich war, indem du ein Kommandozeilenfenster öffnest und den `python3`-Befehl ausführst:
 
 {% filename %}command-line{% endfilename %}
-
-    $ python3 --version
-    Python {{ book.py_release }}
-    
+```
+$ python3 --version
+Python {{ book.py_release }}
+```    
 
 Die angezeigte Version kann bei dir eine andere sein als {{ book.py_release }} -- sie sollte aber der entsprechen, die du installiert hast.
 

@@ -8,13 +8,25 @@ As you learned, a website has to be located on a server. There are a lot of serv
 
 The other external service we'll be using is [GitHub](https://www.github.com), which is a code hosting service. There are others out there, but almost all programmers have a GitHub account these days, and now so will you!
 
-These three places will be important to you.  Your local computer will be the place where you do development and testing.  When you're happy with the changes, you will place a copy of your program on GitHub.  Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
+These three places will be important to you. Your local computer will be the place where you do development and testing. When you're happy with the changes, you will place a copy of your program on GitHub. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
+
+The deployment process can be illustrated as follows:
+
+![](../deploy/images/deployment_local.png)
+
+If you’re using a **Chromebook** and [GitHub Codespaces](https://github.com/codespaces), your setup will look a bit different. All code-related changes are made not locally on your **Chromebook**, but in the Cloud Environment provided by GitHub.
+
+The deployment process on **Chromebook** and Cloud environment can be illustrated as follows:
+
+![](../deploy/images/deployment_cloud.png)
 
 # Git
 
 > **Note** If you already did the [installation steps](../installation/README.md), there's no need to do this again – you can skip to the next section and start creating your Git repository.
 
 {% include "/deploy/install_git.md" %}
+
+> **Note** If you're using a **Chromebook** and have already completed the **Chromebook** Installation [part](../chromebook_setup/README.md), you've already created the repository and can **skip** all commands from the "Starting our Git repository" and "Ignoring files" chapters. You can continue from the "First Git commands" chapter.  While you’re welcome to read these chapters, the Terminal commands can be skipped. 
 
 ## Starting our Git repository
 
@@ -30,23 +42,6 @@ $ git config --global user.name "Your Name"
 $ git config --global user.email you@example.com
 ```
 Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email ever again).
-
-### Adjusting your branch name
-
-If the version of Git that you are using is older than **2.28**, you will need to change the name of your branch to "main". To determine the version of Git, please enter the following command:
-
-{% filename %}command-line{% endfilename %}
-```
-$ git --version
-git version 2.xx...
-```
-
-Only if the second number of the version, shown as "xx" above, is less than 28, will you need to enter the following command to rename your branch. If it is 28 or higher, please continue to "Ignoring files". As in "Initializing", this is something we need to do only once per project, as well as only when your version of Git is less than 2.28:
-
-{% filename %}command-line{% endfilename %}
-```
-$ git branch -M main
-```
 
 ### Ignoring files
 
@@ -96,6 +91,9 @@ and the normal `ls` command won't show these files.
 Instead use `ls -a` to see the `.gitignore` file.
 
 > **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. That file is your local database, where all of your users and posts are stored. We'll follow standard web programming practice, meaning that we'll use separate databases for your local testing site and your live website on PythonAnywhere. The PythonAnywhere database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts and superuser you created so far are going to only be available locally, and you'll have to create new ones on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
+
+
+### First Git commands
 
 It's a good idea to use a `git status` command before `git add` or whenever you find yourself unsure of what has changed. This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
 
@@ -153,10 +151,47 @@ Type the following into your console (replace `<your-github-username>` with the 
 {% filename %}command-line{% endfilename %}
 ```
 $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git
-$ git push -u origin main
+$ git push -u origin HEAD
 ```
 
 When you push to GitHub, you'll be asked for your GitHub username and password (either right there in the command-line window or in a pop-up window), and after entering credentials you should see something like this:
+
+{% filename %}command-line{% endfilename %}
+```
+Counting objects: 6, done.
+Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/ola/my-first-blog.git
+ * [new branch]      main -> main
+Branch main set up to track remote branch main from origin.
+```
+
+**Note** You will likely encounter the following error when trying to push to GitHub:
+```
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/<your-github-username>/my-first-blog.git/'
+```
+In this case, follow the instructions from GitHub to [create a personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic). The token should have the 'repo' scope. Copy the value of the token, then try the git push command again. When you are prompted to enter your username and password, enter the access token instead of your password:
+
+1. Go to profile settings or go here: https://github.com/settings/profile
+2. Scroll down and click "Developer settings" on left-hand menu or go here: https://github.com/settings/apps
+3. On left-hand menu, press "Personal access tokens" to expand the dropdown menu. Click "Tokens (classic)"
+4. In the top-right, click "Generate new token", and then click "Generate new token (classic)". You will need to authenticate your account at this point.
+5. Fill in the form:
+  - Note: Django girls blog
+  - Expiration: No expiration (or if you want more security, choose 90 days)
+  - Select scopes: Check every box 
+6. Press "Generate token"
+7. Copy the token generated (it's the text string that likely starts with `ghp...`) and store this token somewhere secure as once you close this page, you will lose access to viewing this token and will need to generate a new one if you lose it. For example, you could store it in a password manager or even in a note on your computer.
+8. Run the command in the terminal again:
+  {% filename %}command-line{% endfilename %}
+  ```
+  $ git push -u origin HEAD
+  ```
+9. When the terminal asks for `username`, enter in your github username. Press enter.
+10. Next, it will ask for `password`. Do not use your github password as this method of authenticating ("logging in") is deprecated. Copy the token you just generated (either from github or wherever you carefully stored this token) and carefully paste it into the terminal. Note that as you paste or even type into the terminal for the password, nothing will appear (you can't see what you typed) for security reasons (it's designed like this on purpose). Press enter.
+11. If that worked, you will see the output as below. If you are unsuccesful, try to run `git push -u origin HEAD` again and make sure that you enter in your github username and the token (as the password) correctly.
 
 {% filename %}command-line{% endfilename %}
 ```

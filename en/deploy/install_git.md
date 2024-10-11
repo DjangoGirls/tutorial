@@ -7,19 +7,20 @@ data-collapse=true ces-->
 
 You can download Git from [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for two: in the step where it asks to choose your editor, you should pick Nano, and in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Other than that, the defaults are fine. Checkout Windows-style, commit Unix-style line endings is good.
 
-During installation, if you are presented with the option of "Adjusting the name of the initial branch in new repositories", please choose to "Override the default" and use "main". This will align your installation of Git with the broad direction of the global developer community, and the "main" branch will be used through the remainder of this tutorial. Please see https://sfconservancy.org/news/2020/jun/23/gitbranchname/ and https://github.com/github/renaming for further discussion of this subject. 
-
 Do not forget to restart the command prompt or PowerShell after the installation finished successfully.
 <!--endsec-->
 
 <!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->
 
-Download Git from [git-scm.com](https://git-scm.com/) and follow the instructions.
-
-During installation, if you are presented with the option of "Adjusting the name of the initial branch in new repositories", please choose to "Override the default" and use "main". This will align your installation of Git with the broad direction of the global developer community, and the "main" branch will be used through the remainder of this tutorial. Please see https://sfconservancy.org/news/2020/jun/23/gitbranchname/ and https://github.com/github/renaming for further discussion of this subject. 
+Download Git from [https://git-scm.com/download/mac](https://git-scm.com/download/mac) and follow the instructions.
 
 > **Note** If you are running OS X 10.6, 10.7, or 10.8, you will need to install the version of git from here: [Git installer for OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
+
+> It is recommended to install using brew (you may need to install homebrew if you don't already have it): 
+> ```brew install git```
+> 
+> Please note that some Mac M1/M2/M3 users may have the error `zsh: command not found: brew`. In that case, please follow [this](https://stackoverflow.com/a/66019047) or [this](https://mac.install.guide/homebrew/zsh-command-not-found-brew) to fix the error.
 
 <!--endsec-->
 
@@ -29,15 +30,6 @@ data-collapse=true ces-->
 {% filename %}command-line{% endfilename %}
 ```bash
 $ sudo apt install git
-```
-
-### Adjusting your default branch name
-
-This will align your installation of Git with the broad direction of the global developer community, and the "main" branch will be used through the remainder of this tutorial. Please see https://sfconservancy.org/news/2020/jun/23/gitbranchname/ and https://github.com/github/renaming for further discussion of this subject. 
-
-{% filename %}command-line{% endfilename %}
-```
-$ git config --global --add init.defaultBranch main
 ```
 
 <!--endsec-->
@@ -50,15 +42,6 @@ data-collapse=true ces-->
 $ sudo dnf install git
 ```
 
-### Adjusting your default branch name
-
-This will align your installation of Git with the broad direction of the global developer community, and the "main" branch will be used through the remainder of this tutorial. Please see https://sfconservancy.org/news/2020/jun/23/gitbranchname/ and https://github.com/github/renaming for further discussion of this subject. 
-
-{% filename %}command-line{% endfilename %}
-```
-$ git config --global --add init.defaultBranch main
-```
-
 <!--endsec-->
 
 <!--sec data-title="Installing Git: openSUSE" data-id="git_install_openSUSE"
@@ -67,15 +50,6 @@ data-collapse=true ces-->
 {% filename %}command-line{% endfilename %}
 ```bash
 $ sudo zypper install git
-```
-
-### Adjusting your default branch name
-
-This will align your installation of Git with the broad direction of the global developer community, and the "main" branch will be used through the remainder of this tutorial. Please see https://sfconservancy.org/news/2020/jun/23/gitbranchname/ and https://github.com/github/renaming for further discussion of this subject. 
-
-{% filename %}command-line{% endfilename %}
-```
-$ git config --global --add init.defaultBranch main
 ```
 
 <!--endsec-->

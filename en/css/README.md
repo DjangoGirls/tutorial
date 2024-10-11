@@ -107,7 +107,7 @@ Between the `<head>` and `</head>` tags, after the links to the Bootstrap CSS fi
 ```html
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
-The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may be overriden by code in Bootstrap files.
+The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may be overridden by code in Bootstrap files.
 We just told our template where our CSS file is located.
 
 Your file should now look like this:
@@ -159,7 +159,7 @@ Maybe we can customize the font in our header? Paste this into your `<head>` in 
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
-<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext">
 ```
 
 As before, check the order and place before the link to `blog/static/css/blog.css`. This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).

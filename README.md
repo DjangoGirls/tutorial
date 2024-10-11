@@ -1,7 +1,25 @@
 # Django Girls Tutorial
 
-This is the source code repository for the Django Girls Tutorial. Django Girls Tutorial is used on [tutorial.djangogirls.org](http://tutorial.djangogirls.org) so if you want to read it, please go there. If you want to contribute please do go further with this file.
+~ 🖥 Source Code 🖥 ~
 
+**NOT** intended for reading here. To read go to: [📖 tutorial.djangogirls.org 📖](https://tutorial.djangogirls.org)
+
+# Contribution QUICKSTART
+
+1. Fork this repo [[fork](#fork-the-repository)]
+
+> 2. **[Small changes](#simple-changes)**: you can now edit your fork on the github website, do this! Make a change, then [create a pull request](#making-a-pull-request)!
+
+2. **[Big changes](#new-content-and-complex-changes)**: clone your fork locally.
+3. [CLI](#cli-for-development) run `make dev` in repo.
+
+```
+$ make dev
+...
+Serving book on http://localhost:4000
+```
+
+Note: we have many changes under way we maybe working on your request already! Refer to existing [Pull requests](https://github.com/DjangoGirls/tutorial/pulls).
 
 # How to contribute
 
@@ -34,7 +52,7 @@ First fork the [DjangoGirls/tutorial](https://github.com/DjangoGirls/tutorial) r
 
 ## CLI for Development
 
-This command line tool use `make` to create development environment. It is optional to use this tool. While building the document, it builds the document for every language. The build process can be limited to any one language using this tool and reduce build time considerbly. Afterwards, the translation to other languages are done from crowdin localization process.
+This command line tool use `make` to create development environment. It is optional to use this tool. While building the document, it builds the document for every language. The build process can be limited to any one language using this tool and reduce build time considerably. Afterwards, the translation to other languages are done from crowdin localization process.
 
 Usage instructions are available though `make help` command.
 
@@ -136,8 +154,7 @@ should be made to the `restructure-tutorial`.
 All other steps for creating a pull request are the same as those outlined in the section on [making a pull request below](#making-a-pull-request), just make sure you make the pull request against the `restructure-tutorial` branch.
 
 # Making a pull request {#making-a-pull-request}
-
-After you have finished your changes you need to create [a pull request](https://help.github.com/articles/using-pull-requests)  on GitHub. DjangoGirls will get notified about the pull request, review your changes, suggest any corrections if needed and then *pull* your changes to the master version.
+After you have finished your changes you need to [create a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)  on GitHub. DjangoGirls will get notified about the pull request, review your changes, suggest any corrections if needed and then *pull* your changes to the master version.
 
 In your own repository on GitHub press do *Compare & pull request*
 

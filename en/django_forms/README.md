@@ -27,7 +27,7 @@ class PostForm(forms.ModelForm):
 
     class Meta:
         model = Post
-        fields = ('title', 'text',)
+        fields = ('title', 'text')
 ```
 
 We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
@@ -71,7 +71,7 @@ After editing the line, your HTML file should now look like this:
     <head>
         <title>Django Girls blog</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
@@ -374,7 +374,7 @@ Feel free to change the title or the text and save the changes!
 
 Congratulations! Your application is getting more and more complete!
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/3.2/topics/forms/
+If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/4.2/topics/forms/
 
 ## Security
 

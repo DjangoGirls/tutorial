@@ -25,14 +25,3 @@ Go to Applications → Utilities → Terminal.
 It's probably under Applications → Accessories → Terminal, or Applications → System → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
 
 <!--endsec-->
-
-<!--sec data-title="Opening: RunCode" data-id="runcode_prompt" data-collapse=true ces-->
-> **NOTE** If you followed [RunCode setup instructions](../cloud_development_setup/README.md) follow these steps to open command line.
-
-To open the Ubuntu terminal on RunCode, go to Workspaces → New Workspace → Blank. This will open a new Visual Studio Code workspace which has an Ubuntu terminal in the bottom pane.
-
-Altenatively, you can go to Workspaces → New Workspace → Jupyter Lab. This will open a Python prompt which is depicted by `>>>`, you can type `exit()` to get back to the Ubuntu terminal.
-
-Ubuntu is a version of Linux so from now on you can follow Linux instructions.
-
-<!--endsec-->

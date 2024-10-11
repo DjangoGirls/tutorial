@@ -88,7 +88,7 @@ In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choos
 TIME_ZONE = 'Europe/Berlin'
 ```
 
-A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `ch` for Switzerland. If English is not your native language, you can add this to change the default buttons and notifications from Django to be in your language. So you would have "Cancel" button translated into the language you defined here. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/3.2/ref/settings/#language-code).
+A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `ch` for Switzerland. If English is not your native language, you can add this to change the default buttons and notifications from Django to be in your language. So you would have "Cancel" button translated into the language you defined here. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/4.2/ref/settings/#language-code).
 
 If you want a different language, change the language code by changing the following line:
 
@@ -111,7 +111,7 @@ match our hostname on PythonAnywhere once we deploy our application so we will c
 
 {% filename %}mysite/settings.py{% endfilename %}
 ```python
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.pythonanywhere.com']
 ```
 
 > **Note**: If you're using a Chromebook, add this line at the bottom of your settings.py file:
@@ -252,13 +252,6 @@ or on Glitch:
 https://name-of-your-glitch-project.glitch.me
 ```
 
-If you are using RunCode cloud platform, the URL will look something like this:
-`https://8000-soft-limit-18855079.eu-ws4.runcode.io/`. To view your own instance, the URL will be like:
-
-{% filename %}browser{% endfilename %}
-```
-https://8000-the-name-of-your-runcode-instance.eu-ws4.runcode.io/
-```
 You can open this in another browser window and you should see the Django install worked page.
 
 Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?
