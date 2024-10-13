@@ -8,6 +8,11 @@ Welcome to the Django Girls Tutorial! We are happy to see you here. :) In this t
 
 As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine. :)
 
+{% if output.name != "ebook" %}
+> Do you want to read this tutorial on your e-reader?
+> Then [download the Django Girls Tutorial as an e-book in ePub format](../django-girls-tutorial_{{ book.language }}.epub).
+{% endif %}
+
 ## Introduction
 
 Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
