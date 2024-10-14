@@ -157,7 +157,7 @@ PythonAnywhere- ում վեբ հավելվածի տեղադրումը ենթադ
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pip3.8 install --user pythonanywhere
+    $ pip install --user pythonanywhere
     
 
 Վահանակը պետք է տպի նման մի բան, ինչպիսին է `Collecting pythonanywhere` և վերջում `Successfully installed (...) pythonanywhere- (...)`.
@@ -166,7 +166,7 @@ PythonAnywhere- ում վեբ հավելվածի տեղադրումը ենթադ
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pa_autoconfigure_django.py --python=3.8 https://github.com/<your-github-username>/my-first-blog.git
+    $ pa_autoconfigure_django.py --python=3.10 https://github.com/<your-github-username>/my-first-blog.git
     
 
 Երբ տեսնեք, թե ինչպես է այն աշխատում, կարող եք հասկանալ, թե կոնկրետ ինչ է այն անում.

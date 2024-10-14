@@ -15,7 +15,7 @@
 #### Django
 
 - このチュートリアルの続きである[Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
-- [Django 公式チュートリアル](https://docs.djangoproject.com/ja/3.2/intro/tutorial01/)
+- [Django 公式チュートリアル](https://docs.djangoproject.com/ja/5.1/intro/tutorial01/)
 - [Getting Started With Django 動画レッスン](http://www.gettingstartedwithdjango.com/)
 
 #### HTML, CSS ならびに JavaScript

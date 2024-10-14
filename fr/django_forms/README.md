@@ -60,7 +60,7 @@ Il est temps d'ouvrir `blog/templates/blog/base.html` dans l'éditeur de code. M
 
 Remarquez que notre nouvelle vue s'appelle `post_new`. L'icône [SVG](https://icons.getbootstrap.com/icons/file-earmark-plus/) est fournie par les [icônes Bootstrap](https://icons.getbootstrap.com/) et elle affichera une icône de page avec le signe plus. Nous utilisons une directive de modèle Django appelée `include`. Cela injectera le contenu du fichier dans le template Django. Le navigateur web sait comment gérer ce type de contenu sans aucun traitement supplémentaire.
 
-> Vous pouvez télécharger toutes les icônes Bootstrap [ici](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip). Décompressez le fichier et copiez tous les fichiers image SVG vers un nouveau dossier dans `blog/templates/blog/` intitulé `icons`. De cette façon, vous pouvez accéder à une icône comme `pencil-fill.svg` en référençant le chemin du fichier `blog/templates/blog/icons/pencil-fill.svg`
+> Vous pouvez télécharger toutes les icônes Bootstrap [ici](https://github.com/twbs/icons/releases/download/v1.11.3/bootstrap-icons-1.11.3.zip). Décompressez le fichier et copiez tous les fichiers image SVG vers un nouveau dossier dans `blog/templates/blog/` intitulé `icons`. De cette façon, vous pouvez accéder à une icône comme `pencil-fill.svg` en référençant le chemin du fichier `blog/templates/blog/icons/pencil-fill.svg`
 
 Après avoir ajouté cette ligne, votre fichier HTML devrait maintenant ressembler à ceci :
 

@@ -60,7 +60,7 @@ Prima di aggiungere il link, abbiamo bisogno di alcune icone da usare come pulsa
 
 Nota che vogliamo chiamare la nostra nuova view `post_new`. L'[icona SVG](https://icons.getbootstrap.com/icons/file-earmark-plus/) è fornita dal [Bootstrap Icons](https://icons.getbootstrap.com/) e mostrerà un'icona di pagina con il segno 'più'. Utilizziamo una direttiva sui modelli Django chiamata `include`. Questo immetterà il contenuto del file nel modello Django. Il browser web sa come gestire questo tipo di contenuto senza ulteriori elaborazioni.
 
-> Puoi scaricare tutte le icone di Bootstrap [qui](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip). Scompattare il file e copiare tutti i file immagine SVG in una nuova cartella all'interno `blog/templates/blog/` chiamata `icone`. In questo modo è possibile accedere a un'icona come `pencil-fill.svg` utilizzando il percorso del file `blog/templates/blog/icons/pencil-fill.svg`
+> Puoi scaricare tutte le icone di Bootstrap [qui](https://github.com/twbs/icons/releases/download/v1.11.3/bootstrap-icons-1.11.3.zip). Scompattare il file e copiare tutti i file immagine SVG in una nuova cartella all'interno `blog/templates/blog/` chiamata `icone`. In questo modo è possibile accedere a un'icona come `pencil-fill.svg` utilizzando il percorso del file `blog/templates/blog/icons/pencil-fill.svg`
 
 Dopo aver modificato la riga, il file HTML dovrebbe ora assomigliare a questo:
 

@@ -60,7 +60,7 @@ Prišiel čas otvoriť `blog/templates/blog/base.html` v editore. Teraz môžeme
 
 Všimni si, že chceme zavolať náš nový view `post_new`. [SVG ikonku](https://icons.getbootstrap.com/icons/file-earmark-plus/) máme z [Bootstrap Icons](https://icons.getbootstrap.com/) a zobrazí sa ako ikonka stránky s pluskom. Použijeme šablónový príkaz `include`. Týmto dosiahneme, že sa obsah súboru vloží do Django šablóny. Webový prehliadač vie, ako sa s týmto typom obsahu vysporiadať, bez toho, aby bolo treba čokoľvek ďalej spracovávať.
 
-> Všetky Bootstrapové ikonky si môžeš stiahnuť [tu](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip). Súbor rozbaľ a skopíruj všetky obrázkové súbory SVG do nového adresára vo vnútri `blog/templates/blog/` s názvom `icons`. Vďaka tomuto môžeš pristupovať k ikonke ako `pencil-fill.svg` pomocou cesty `blog/templates/blog/icons/pencil-fill.svg`
+> Všetky Bootstrapové ikonky si môžeš stiahnuť [tu](https://github.com/twbs/icons/releases/download/v1.11.3/bootstrap-icons-1.11.3.zip). Súbor rozbaľ a skopíruj všetky obrázkové súbory SVG do nového adresára vo vnútri `blog/templates/blog/` s názvom `icons`. Vďaka tomuto môžeš pristupovať k ikonke ako `pencil-fill.svg` pomocou cesty `blog/templates/blog/icons/pencil-fill.svg`
 
 Po zmene riadku by tvoj HTML súbor mal vyzerať takto:
 
@@ -72,7 +72,7 @@ Po zmene riadku by tvoj HTML súbor mal vyzerať takto:
 <html>
     <head>
         <title>Django Girls blog</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
@@ -392,7 +392,7 @@ Môžeš si vyskúšať zmeniť názov alebo text a uložiť zmeny!
 
 Gratulujeme! Tvoja aplikácia je čím ďalej dokonalejšia!
 
-Ak potrebuješ viac informácií o Django formulároch, prečítaj si dokumentáciu: https://docs.djangoproject.com/en/3.2/topics/forms/
+Ak potrebuješ viac informácií o Django formulároch, prečítaj si dokumentáciu: https://docs.djangoproject.com/en/5.1/topics/forms/
 
 ## Bezpečnosť
 

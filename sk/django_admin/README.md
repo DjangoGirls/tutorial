@@ -52,6 +52,6 @@ Uisti sa, že aspoň dva alebo tri príspevky (ale nie všetky) majú nastavený
 
 ![Django admin](images/edit_post3.png)
 
-Ak chceš vedieť viac o Django admine, pozri si dokumentáciu Djanga: https://docs.djangoproject.com/en/3.2/ref/contrib/admin/
+Ak chceš vedieť viac o Django admine, pozri si dokumentáciu Djanga: https://docs.djangoproject.com/en/5.1/ref/contrib/admin/
 
 Teraz je asi vhodný čas dať si kávu (alebo čaj) alebo niečo pod zub a nabrať trochu energie. Práve si vytvorila svoj prvý Django model - zaslúžiš si trochu oddychu!

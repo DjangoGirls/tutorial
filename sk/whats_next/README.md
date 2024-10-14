@@ -15,7 +15,7 @@ Potom určite začni sledovať Django Girls na [Facebooku](http://facebook.com/d
 #### Django
 
 - Naša knižka [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
-- [Oficiálny Django návod](https://docs.djangoproject.com/en/3.2/intro/tutorial01/)
+- [Oficiálny Django návod](https://docs.djangoproject.com/en/5.1/intro/tutorial01/)
 - [Video návod Getting Started With Django](http://www.gettingstartedwithdjango.com/)
 - [Django for Everybody Specialization](https://www.coursera.org/specializations/django) – niektoré z prednášok možno sledovať zdarma a môžeš za ne dostať Coursera certifikát
 
