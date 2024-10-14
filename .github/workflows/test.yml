@@ -15,3 +15,87 @@ jobs:
         run: |
           npm install
           npx honkit build
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: github-pages-pr-${{ github.event.pull_request.number }}
+          path: _book/**
+
+  preview:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Set preview domain
+        run: echo "PREVIEW_DOMAIN=$(echo ${{ github.repository }} | tr / - )-${{ github.job }}-pr-${{ github.event.pull_request.number }}.surge.sh" >> $GITHUB_ENV
+
+      - name: Install surge
+        run: npm install surge
+
+      - name: Install diffstat and pygments
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y diffstat python3-pygments
+
+      # TODO: can this download from the existing pages or a cache?
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.event.pull_request.base.repo.full_name }}
+          ref: ${{ github.event.pull_request.base.ref }}
+          persist-credentials: false
+
+      - name: Build current pages
+        run: |
+          npm install
+          npx honkit build
+          mv _book current
+
+      - name: Download preview pages
+        uses: actions/download-artifact@v4
+        with:
+          # TODO: store output in upload step?
+          name: github-pages-pr-${{ github.event.pull_request.number }}
+          path: preview
+
+      - name: Remove indeterminism
+        run: |
+          find current/ preview/ -type f -exec sed -i '/gitbook.page.hasChanged/d' {} +
+
+      - name: Create diff to current
+        run: |
+          diff -Nrwu --exclude search_index.json current/ preview/ | cat > preview/diff.patch
+          if [[ -s preview/diff.patch ]] ; then
+            pygmentize -o preview/diff.html -l diff -f html -O full preview/diff.patch
+            diffstat -l -p2 preview/diff.patch > diff.txt
+          fi
+
+      - name: Deploy to surge.sh
+        run: npx surge ./preview $PREVIEW_DOMAIN --token ${{ secrets.SURGE_TOKEN }}
+
+      - name: Generate summary
+        run: |
+          echo "The PR preview for ${{ github.event.pull_request.head.sha }} is available at [${{ env.PREVIEW_DOMAIN }}](https://${{ env.PREVIEW_DOMAIN }})" > pr.md
+          echo "" >> pr.md
+
+          if [[ -f preview/diff.txt ]] ; then
+            echo "The following output files are affected by this PR:" >> pr.md
+            sed -E "s#(.*)#- [\1](https://${{ env.PREVIEW_DOMAIN }}/\1)#" preview/diff.txt >> pr.md
+          else
+            echo "No diff compared to the current website" >> pr.md
+          fi
+
+          if [[ -s preview/diff.patch ]] ; then
+            echo "" >> pr.md
+            echo "[show diff](https://${{ env.PREVIEW_DOMAIN }}/diff.patch)" >> pr.md
+          fi
+
+          if [[ -f preview/diff.html ]] ; then
+            echo "" >> pr.md
+            echo "[show diff as HTML](https://${{ env.PREVIEW_DOMAIN }}/diff.html)" >> pr.md
+          fi
+
+      - name: Comment on PR
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          path: pr.md
