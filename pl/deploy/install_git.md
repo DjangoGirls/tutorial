@@ -9,7 +9,7 @@ Możesz ściągnąć Gita z [git-scm.com](https://git-scm.com/). Naciśnij "next
 
 Nie zapomnij zrestartować wiersza polecenia lub Powershell po instalacji zakończonej sukcesem. <!--endsec-->
 
-<!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
+<!--sec data-title="Installing Git: macOS" data-id="git_install_OSX"
 data-collapse=true ces-->
 
 Ściągnij Gita z [git-scm.com](https://git-scm.com/) i postępuj zgodnie z instrukcją.

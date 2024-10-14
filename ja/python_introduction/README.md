@@ -626,7 +626,7 @@ print('Hello, Django girls!')
 
 ファイルを保存したら、実行してみましょう！コマンドラインのセクションで学んだことを思い出して、ターミナルの **ディレクトリを変更** して、デスクトップにしましょう。
 
-<!--sec data-title="Change directory: OS X" data-id="python_OSX"
+<!--sec data-title="Change directory: macOS" data-id="python_OSX"
 data-collapse=true ces-->
 
 Macでは、コマンドは次のようになります。

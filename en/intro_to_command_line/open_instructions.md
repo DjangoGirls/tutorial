@@ -14,9 +14,9 @@ Later in this tutorial, you will need to have two command windows open at the sa
 
 <!--endsec-->
 
-<!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
+<!--sec data-title="Opening: macOS" data-id="macOS_prompt" data-collapse=true ces-->
 
-Go to Applications → Utilities → Terminal.
+Go to Launchpad → Other → Terminal.
 
 <!--endsec-->
 

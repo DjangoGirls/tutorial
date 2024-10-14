@@ -23,7 +23,7 @@ Para fazer login, você precisa criar um *superusuário (superuser)* - uma conta
 
 > Lembre-se: para escrever novos comandos enquanto o servidor web estiver rodando, abra uma nova janela do terminal e ative seu virtualenv. Nós revisamos como escrever novos comandos no capítulo **Seu primeiro projeto Django!**, na seção **Iniciando o servidor web**.
 
-{% filename %}Mac OS X ou Linux:{% endfilename %}
+{% filename %}macOS ou Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py createsuperuser
     

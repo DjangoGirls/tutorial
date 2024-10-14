@@ -479,7 +479,7 @@ Most mentsük el a fájlt, és adjunk neki valami jellemző nevet. Nevezzünk **
 
 Most hogy a fájl el van mentve, itt az ideje, hogy lefuttassuk. Felhaszálva a tudásodat a parancssoros részből, navigálj a terminálban a desktopra a **könyvtárváltás** parancs segítségével.
 
-<!--sec data-title="OS X" data-id="python_OSX"
+<!--sec data-title="macOS" data-id="python_OSX"
 data-collapse=true ces-->
 
 Mac-en a parancs valahogy így néz ki:

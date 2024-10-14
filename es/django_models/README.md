@@ -64,7 +64,7 @@ Puedes pensar el modelo en la base de datos, como una hoja de cálculo con colum
 
 Para mantener todo en orden, crearemos una aplicación separada dentro de nuestro proyecto. Es muy bueno tener todo organizado desde el principio. Para crear una aplicación, necesitamos ejecutar el siguiente comando en la consola (dentro de la carpeta de `djangogirls` donde está el archivo `manage.py`):
 
-{% filename %}Mac OS X y Linux:{% endfilename %}
+{% filename %}macOS y Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py startapp blog
     

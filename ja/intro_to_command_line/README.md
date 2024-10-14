@@ -24,7 +24,7 @@
 
 おそらく今、真っ白または真っ黒な画面が開かれていることでしょう。この画面はあなたの命令（コマンド）を待っています。
 
-<!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
+<!--sec data-title="Prompt: macOS and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
 MacあるいはLinuxの方は、次のように `$` という記号が表示されていることでしょう。
 
@@ -60,7 +60,7 @@ Windowsの方は、 `>` という記号が表示されていることでしょ�
 
 次のようにコマンドを入力してみましょう:
 
-<!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
+<!--sec data-title="Your first command: macOS and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -98,7 +98,7 @@ OSによってコマンドが若干違います。あなたのコンピュータ
 
 今どこのディレクトリにいるか（どのフォルダで作業をしているか）、知りたいですよね？では、このようにキーボードから入力し、`Enterキー`を押してください。
 
-<!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
+<!--sec data-title="Current directory: macOS and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -118,7 +118,7 @@ OSによってコマンドが若干違います。あなたのコンピュータ
     C:\Users\olasitarska
     
 
-> 補足: 'cd' は、'change directory'の略で、ディレクトリを変えることを意味します。PowerShellを使うと、LinuxやMac OS Xのようにpwdコマンドを使えます。
+> 補足: 'cd' は、'change directory'の略で、ディレクトリを変えることを意味します。PowerShellを使うと、LinuxやmacOSのようにpwdコマンドを使えます。
 
 <!--endsec-->
 
@@ -130,9 +130,9 @@ OSによってコマンドが若干違います。あなたのコンピュータ
 
 コマンドプロンプトに入力するコマンドの多くには、表示して読むことができるヘルプ機能が備わっています！例として、カレントディレクトリを表示するコマンドについてみてみましょう:
 
-<!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
+<!--sec data-title="Command help: macOS and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X と Linux には、`man` コマンドがあり、それはコマンドのヘルプを提供します。 `man pwd` を試してみましょう。他のコマンドも、コマンドの前に `man` と書き、ヘルプを見てみましょう。 `man` の出力は、通常はページ単位で表示されます。 次のページに移動するにはスペースキーを使います。 ヘルプを見るのをやめるには `qキー` を押します。
+macOS と Linux には、`man` コマンドがあり、それはコマンドのヘルプを提供します。 `man pwd` を試してみましょう。他のコマンドも、コマンドの前に `man` と書き、ヘルプを見てみましょう。 `man` の出力は、通常はページ単位で表示されます。 次のページに移動するにはスペースキーを使います。 ヘルプを見るのをやめるには `qキー` を押します。
 
 <!--endsec-->
 
@@ -146,7 +146,7 @@ OS X と Linux には、`man` コマンドがあり、それはコマンドの�
 
 では、カレントディレクトリの中には何があるのでしょうか？表示させてみましょう。
 
-<!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
+<!--sec data-title="List files and directories: macOS and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -173,7 +173,7 @@ OS X と Linux には、`man` コマンドがあり、それはコマンドの�
     ...
     
 
-> 補足：PowerSellでは、Linux や Mac OS X同様にlsコマンドが使えます。 <!--endsec-->
+> 補足：PowerSellでは、Linux や macOS同様にlsコマンドが使えます。 <!--endsec-->
 
 * * *
 
@@ -181,7 +181,7 @@ OS X と Linux には、`man` コマンドがあり、それはコマンドの�
 
 次に、デスクトップ(Desktop)というディレクトリに移動してみましょう。
 
-<!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
+<!--sec data-title="Change current directory: macOS" data-id="OSX_move_to" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -212,7 +212,7 @@ Desktop というディレクトリ名は、使用しているLinuxアカウン�
 
 本当に変更されたかどうか確認してみてください：
 
-<!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
+<!--sec data-title="Check if changed: macOS and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -242,7 +242,7 @@ Desktop というディレクトリ名は、使用しているLinuxアカウン�
 
 それでは、practice ディレクトリをデスクトップに作成してみましょう。
 
-<!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
+<!--sec data-title="Create directory: macOS and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -272,7 +272,7 @@ Desktop というディレクトリ名は、使用しているLinuxアカウン�
 
 #### 解答:
 
-<!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
+<!--sec data-title="Exercise solution: macOS and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -306,7 +306,7 @@ Desktop というディレクトリ名は、使用しているLinuxアカウン�
 
 はじめに、作業するディレクトリをデスクトップに戻しましょう。
 
-<!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
+<!--sec data-title="Clean up: macOS and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -328,7 +328,7 @@ Desktop というディレクトリ名は、使用しているLinuxアカウン�
 
 現在の作業ディレクトリを確認しておきましょう:
 
-<!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
+<!--sec data-title="Check location: macOS and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -352,7 +352,7 @@ Desktop というディレクトリ名は、使用しているLinuxアカウン�
 
 > **注意**: `del` や `rmdir `、`rm` コマンドを使って削除したファイルは元に戻せません。*完全に消えてしまいます*！ これらのコマンドを使う時は、よく気をつけてくださいね。
 
-<!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
+<!--sec data-title="Delete directory: Windows Powershell, macOS and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -373,7 +373,7 @@ Desktop というディレクトリ名は、使用しているLinuxアカウン�
 
 できました！本当に削除されたか、確認してみましょう:
 
-<!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
+<!--sec data-title="Check deletion: macOS and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -395,7 +395,7 @@ Desktop というディレクトリ名は、使用しているLinuxアカウン�
 
 今回はここまでです。それではコマンドラインを終了しましょう。かっこいいやり方で終了したいですよね? :)
 
-<!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
+<!--sec data-title="Exit: macOS and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 

@@ -11,7 +11,7 @@ Ak ti bude počas inštalácie ponúknutá možnosť "Adjusting the name of the 
 
 Nezabudni reštartovať príkazový riadok alebo PowerShell po úspešnom dokončení inštalácie. <!--endsec-->
 
-<!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
+<!--sec data-title="Installing Git: macOS" data-id="git_install_OSX"
 data-collapse=true ces-->
 
 Stiahni si Git z [git-scm.com](https://git-scm.com/) a riaď sa inštrukciami.

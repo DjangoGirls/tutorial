@@ -10,11 +10,11 @@ Prvý krok je vytvoriť nový Django projekt. To v podstate znamená, že spust�
 
 Mená niektorých súborov a priečinkov sú pre Django veľmi dôležité. Súbory, ktoré teraz vytvoríme, by si nemala premenovať. Presúvať ich na iné miesto taktiež nie je dobrý nápad. Django potrebuje udržovať určitú štruktúru, aby bolo schopné nájsť dôležité veci.
 
-> Nezabudni všetko spúšťať vo virtualenve. Pokiaľ vo svojej konzole nevidíš predponu `(myenv)`, musíš aktivovať virtualenv. Ako na to bolo vysvetlené v kapitole **Inštalácia Djanga** v časti **Práca s virtualenvom**. Pokiaľ napíšeš `myvenv\Scripts\activate` na Windowse alebo `source myvenv/bin/activate` na Mac OS X alebo Linuxe, malo by všetko fungovať.
+> Nezabudni všetko spúšťať vo virtualenve. Pokiaľ vo svojej konzole nevidíš predponu `(myenv)`, musíš aktivovať virtualenv. Ako na to bolo vysvetlené v kapitole **Inštalácia Djanga** v časti **Práca s virtualenvom**. Pokiaľ napíšeš `myvenv\Scripts\activate` na Windowse alebo `source myvenv/bin/activate` na macOS alebo Linuxe, malo by všetko fungovať.
 
-<!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
+<!--sec data-title="Create project: macOS or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
-Vo svojej Mac OS X alebo Linux konzole spusti tento príkaz. **Nezabudni pridať bodku `.` na konci!**
+Vo svojej macOS alebo Linux konzole spusti tento príkaz. **Nezabudni pridať bodku `.` na konci!**
 
 {% filename %}command-line{% endfilename %}
 

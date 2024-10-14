@@ -24,7 +24,7 @@ Para começar alguns experimentos, precisamos abrir a nossa interface de linha d
 
 Agora você deve ver uma janela branca ou preta que está à espera de seus comandos.
 
-<!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
+<!--sec data-title="Prompt: macOS and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
 Se você está usando Mac ou Linux, você provavelmente verá um `$`, como esse:
 
@@ -60,7 +60,7 @@ No tutorial, quando quisermos que você digite um comando, incluiremos o `$` ou 
 
 Vamos começar digitando este comando:
 
-<!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
+<!--sec data-title="Your first command: macOS and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -98,7 +98,7 @@ Cada sistema operacional tem o seu próprio conjunto de instruções para a linh
 
 Quer saber em que diretório está agora? Digite o seguinte comando e clique `enter`:
 
-<!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
+<!--sec data-title="Current directory: macOS and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -118,7 +118,7 @@ Quer saber em que diretório está agora? Digite o seguinte comando e clique `en
     C:\Users\olasitarska
     
 
-> Observação: 'cd' significa 'change directory' em inglês, o que se traduz para 'mudar de diretório'. Com o PowerShell, você pode utilizar pwd da mesma forma como no Linux ou Mac OS X.
+> Observação: 'cd' significa 'change directory' em inglês, o que se traduz para 'mudar de diretório'. Com o PowerShell, você pode utilizar pwd da mesma forma como no Linux ou macOS.
 
 <!--endsec-->
 
@@ -130,7 +130,7 @@ Você provavelmente vai ver algo parecido em seu computador. A linha de comando 
 
 Muitos comandos que você digita no Prompt de comand possuem um painel de ajuda integrada que você pode abrir e ler! Por exemplo, para entender melhor sobre o comando do diretório atual:
 
-<!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
+<!--sec data-title="Command help: macOS and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
 SO X e Linux tem um comando `man`, que ajuda você nos comandos. Tente `man pwd` e veja o que ele diz, ou coloque `man` antes de outros comandos para ver seus menus de ajuda. A saída `man` é normalmente paginada. Use a barra de espaço para ir para a próxima página, e `q` para sair do menu de ajuda.
 
@@ -146,7 +146,7 @@ Colocando um sufixo `/?` para a maioria dos comandos, irá imprimir uma página 
 
 Então, o que tem no seu computador? Vamos descobrir:
 
-<!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
+<!--sec data-title="List files and directories: macOS and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -173,7 +173,7 @@ Então, o que tem no seu computador? Vamos descobrir:
     ...
     
 
-> Observação: No PowerShell, você também pode usar 'ls' como no Linux e Mac OS X. <!--endsec-->
+> Observação: No PowerShell, você também pode usar 'ls' como no Linux e macOS. <!--endsec-->
 
 * * *
 
@@ -181,7 +181,7 @@ Então, o que tem no seu computador? Vamos descobrir:
 
 Agora vamos para a pasta Desktop:
 
-<!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
+<!--sec data-title="Change current directory: macOS" data-id="OSX_move_to" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -212,7 +212,7 @@ Note que o nome do diretório "Desktop" pode estar traduzido para a linguagem da
 
 Verifique se realmente mudamos de pasta:
 
-<!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
+<!--sec data-title="Check if changed: macOS and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -242,7 +242,7 @@ Aqui está!
 
 Que tal criar uma pasta para praticarmos em sua área de trabalho? Você pode fazer assim:
 
-<!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
+<!--sec data-title="Create directory: macOS and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -272,7 +272,7 @@ Um pequeno desafio para você: em sua recém criada pasta `practice`, crie uma p
 
 #### Solução:
 
-<!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
+<!--sec data-title="Exercise solution: macOS and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -306,7 +306,7 @@ Nós não queremos que você deixe uma bagunça, então vamos remover tudo que f
 
 Primeiro, precisamos voltar para a Área de trabalho:
 
-<!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
+<!--sec data-title="Clean up: macOS and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -328,7 +328,7 @@ Usando o comando `..` com o `cd` irá mudar sua pasta atual para o diretório pa
 
 Verifique onde você está:
 
-<!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
+<!--sec data-title="Check location: macOS and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -352,7 +352,7 @@ Agora é hora de deletar a pasta `practice`:
 
 > **Atenção**: A exclusão de arquivos usando `del`, `rmdir` ou `rm` é irreversível; ou seja, os *arquivos excluídos são perdidos para sempre*! Então, tenha cuidado com este comando.
 
-<!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
+<!--sec data-title="Delete directory: Windows Powershell, macOS and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -373,7 +373,7 @@ Agora é hora de deletar a pasta `practice`:
 
 Pronto! Para ter certeza de que a pasta foi excluída, vamos checar:
 
-<!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
+<!--sec data-title="Check deletion: macOS and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -395,7 +395,7 @@ Pronto! Para ter certeza de que a pasta foi excluída, vamos checar:
 
 Isso é tudo por agora! Você pode fechar a janela da sua linha de comando agora sem medo. Vamos fazer isso do jeito hacker, certo? :)
 
-<!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
+<!--sec data-title="Exit: macOS and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 

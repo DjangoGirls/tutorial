@@ -12,7 +12,7 @@
 
 > Մի մոռացեք. Դուք պետք է գործադրեք բոլոր հրամանները virtualenv- ով: Եթե ​​հրամանի տողում չեք տեսնում `(myvenv)` նախածանցը, ապա ձեզ հարկավոր է ակտիվացնել virtualenv- ը: Մենք բացատրեցինք, թե ինչպես դա անել, **Django installation/Django տեղադրում** գլխի **Working with virtualenv/ Աշխատանք virtualenv-ի հետ ** բաժնում: Դա անելու համար մուտքագրեք `myvenv\Scripts\activate` Windows- ում կամ `source myvenv/bin/activate` Mac OS / Linux- ում:
 
-<!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
+<!--sec data-title="Create project: macOS or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
 Mac OS- ի կամ Linux- ի վահանակի վրա գործարկեք հետևյալ հրամանը. **մի մոռացեք կետ ավելացնել `  ` at the end!/վերջում**
 

@@ -41,10 +41,10 @@ Ak chceš vytvoriť nový `virtualenv`, musíš otvoriť príkazový riadok a sp
 
 <!--endsec-->
 
-<!--sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx"
+<!--sec data-title="Virtual environment: Linux and macOS" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-Vytvoriť `virtualenv` na Linuxe a OS X vyžaduje spustenie `python3 -m venv myvenv`. Bude to vyzerať takto:
+Vytvoriť `virtualenv` na Linuxe a macOS vyžaduje spustenie `python3 -m venv myvenv`. Bude to vyzerať takto:
 
 {% filename %}command-line{% endfilename %}
 
@@ -132,7 +132,7 @@ Virtuálne prostredie spusti príkazom:
 
 <!--endsec-->
 
-<!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
+<!--sec data-title="Working with virtualenv: Linux and macOS" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
 Virtuálne prostredie spusti príkazom:

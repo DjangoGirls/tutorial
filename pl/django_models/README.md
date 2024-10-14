@@ -63,7 +63,7 @@ Możesz sobie wyobrazić model w bazie danych jako arkusz kalkulacyjny z kolumna
 
 Aby utrzymać wszystko w ładzie, stworzymy osobną aplikację wewnątrz naszego projektu. Przyjemnie jest mieć wszystko uporządkowane od samego początku. Aby stworzyć aplikację, musimy wykonać następujące polecenie w konsoli (z poziomu katalogu `djangogirls`, tam gdzie znajduje się plik `manage.py`):
 
-{% filename %}Mac OS X and Linux:{% endfilename %}
+{% filename %}macOS and Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py startapp blog
     

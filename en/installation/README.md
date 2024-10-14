@@ -26,7 +26,7 @@ data-id="chromebook_setup" data-collapse=true ces-->
 <!--endsec-->
 
 
-# OS X, Windows, Linux Installation {#osx-windows-linux}
+# macOS, Windows, Linux Installation {#macos-windows-linux}
 If you are not using a Chromebook, your experience will be a little different as you need to download and install some software locally as well as set up online accounts.
 
 To install software on your machine, follow the instructions below:

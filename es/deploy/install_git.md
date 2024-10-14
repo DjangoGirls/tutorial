@@ -9,7 +9,7 @@ Puedes descargar Git desde [git-scm.com](https://git-scm.com/). Puedes hacer cli
 
 No olvides reiniciar el Símbolo del Sistema o el PowerShell una vez que la instalación se complete con éxito. <!--endsec-->
 
-<!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
+<!--sec data-title="Installing Git: macOS" data-id="git_install_OSX"
 data-collapse=true ces-->
 
 Descarga Git de [git-scm.com](https://git-scm.com/) y sigue las instrucciones.

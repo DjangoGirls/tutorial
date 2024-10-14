@@ -15,7 +15,7 @@ Neskôr v tutoriáli budeš potrebovať mať otvorené dve príkazové okná sú
 
 <!--endsec-->
 
-<!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
+<!--sec data-title="Opening: macOS" data-id="macOS_prompt" data-collapse=true ces-->
 
 Choď do Aplikácie → Nástroje → Terminál.
 

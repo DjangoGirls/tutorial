@@ -63,7 +63,7 @@ Du kannst dir ein Model wie eine Tabelle mit Spalten ("Feldern", englisch "field
 
 Um unsere Webseite aufgeräumt zu halten, werden wir eine eigene Anwendung für unser Projekt erstellen, wir nennen das eine Applikation. Wir wollen uns gleich daran gewöhnen, alles ordentlich und sortiert zu halten. Um eine Applikation zu erstellen, müssen wir das folgende Kommando in der Konsole ausführen (wieder in dem `djangogirls`-Verzeichnis, in dem die `manage.py`-Datei liegt):
 
-{% filename %}Mac OS X und Linux:{% endfilename %}
+{% filename %}macOS und Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py startapp blog
     

@@ -12,7 +12,7 @@
 
 > به یاد داشته باشید که همه دستورات را در محیط مجازی (virtualenv) اجرا کنید. اگر پیشوند `(myvenv)` را در کنسول خط فرمان نمی‌بینید، باید محیط مجازی را فعال کنید. فعال کردن محیط مجازی را در قسمت **کارکردن با محیط مجازی** از بخش **نصب جنگو** توضیح داده‌ایم. در ویندوز با تایپ `myvenv\Scripts\activate` و در لینوکس یا مک با نوشتن `source myvenv/bin/activate` می‌توانید محیط مجازی را فعال کنید.
 
-<!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
+<!--sec data-title="Create project: macOS or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
 در کنسول لینوکس یا مک باید دستورات زیر را اجرا کنید. **فراموش نکنید که `علامت نقطه` را در آخر عبارت بگذارید!**
 

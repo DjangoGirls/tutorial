@@ -628,7 +628,7 @@ Ora dobbiamo salvare il file e dargli un nome descrittivo. Chiama il file **pyth
 
 E' ora di eseguire il file! Usando le nozioni che hai imparato nella sezione command line, usa il terminal per **cambiare cartella** alla scrivania.
 
-<!--sec data-title="Change directory: OS X" data-id="python_OSX"
+<!--sec data-title="Change directory: macOS" data-id="python_OSX"
 data-collapse=true ces-->
 
 Su un Mac, il comando sarà più o meno così:

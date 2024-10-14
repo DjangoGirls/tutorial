@@ -26,7 +26,7 @@ Başlat'a gidin → Windows sistemi → Komut istemcisi.
 
 <!--endsec-->
 
-<!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
+<!--sec data-title="Opening: macOS" data-id="macOS_prompt" data-collapse=true ces-->
 
 Uygulamalar → Araçlar →Terminal.
 
@@ -42,7 +42,7 @@ Muhtemelen Uygulamalar → Donatılar → Terminal altında olmalı, fakat siste
 
 Şu anda yüksek ihtimalle sizden komut bekleyen siyah ya da beyaz bir ekran görüyor olmalısınız.
 
-<!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
+<!--sec data-title="Prompt: macOS and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
 Eğer Mac veya GNU/Linux kullanıyorsanız, yüksek ihtimalle `$` işareti göreceksiniz, tıpkı bunun gibi:
 
@@ -76,7 +76,7 @@ Bu kılavuzda bir komut girmeniz istendiğinde, biz `$` veya `>` ekleyeceğiz, g
 
 Aşağıdaki komutu yazarak başlayalım:
 
-<!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
+<!--sec data-title="Your first command: macOS and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -113,7 +113,7 @@ Tüm işletim sistemleri komut satırı için birbirinden biraz farklı komutlar
 
 Nerede olduğumuzu bilmek güzel olurdu, değil mi? Bakalım. Bu komutu yazın ve `enter` tuşuna basın:
 
-<!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
+<!--sec data-title="Current directory: macOS and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -133,7 +133,7 @@ Nerede olduğumuzu bilmek güzel olurdu, değil mi? Bakalım. Bu komutu yazın v
     C:\Users\zeynep
     
 
-> Not: 'cd' komutu 'dizin değiştir' anlamındadır. Powershell ile Linux veya Mac OS X'teki gibi pwd komutunu kullanabilirsiniz.
+> Not: 'cd' komutu 'dizin değiştir' anlamındadır. Powershell ile Linux veya macOS'teki gibi pwd komutunu kullanabilirsiniz.
 
 <!--endsec-->
 
@@ -145,7 +145,7 @@ Muhtemelen makinenizde benzeri bir yazı göreceksiniz. Komut satırını açtı
 
 Yani içeride ne var? Bilmek harika olurdu. Haydi bakalım:
 
-<!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
+<!--sec data-title="List files and directories: macOS and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -171,7 +171,7 @@ Yani içeride ne var? Bilmek harika olurdu. Haydi bakalım:
     ...
     
 
-> Not: Ayrıca PowerShell kullanırken Linux ve Mac OS X'teki gibi 'ls' komutunu kullanabilirsiniz. <!--endsec-->
+> Not: Ayrıca PowerShell kullanırken Linux ve macOS'teki gibi 'ls' komutunu kullanabilirsiniz. <!--endsec-->
 
 * * *
 
@@ -179,7 +179,7 @@ Yani içeride ne var? Bilmek harika olurdu. Haydi bakalım:
 
 Şimdi, haydi Masaüstü dizinimize gidelim:
 
-<!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
+<!--sec data-title="Change current directory: macOS and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -199,7 +199,7 @@ Yani içeride ne var? Bilmek harika olurdu. Haydi bakalım:
 
 Gerçekten değişmiş mi bir bakalım:
 
-<!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
+<!--sec data-title="Check if changed: macOS and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -229,7 +229,7 @@ Gerçekten değişmiş mi bir bakalım:
 
 Uygulamalı yapmak için masaüstünüzde bir dizin oluşturmaya ne dersiniz? Bu şekilde yapabilirsiniz:
 
-<!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
+<!--sec data-title="Create directory: macOS and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -259,7 +259,7 @@ Sizin için ufak bir alıştırma: yeni oluşturduğunuz `alıştırma` dizinind
 
 #### Çözüm:
 
-<!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
+<!--sec data-title="Exercise solution: macOS and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -293,7 +293,7 @@ Ortalığı dağınık bırakmak istemeyiz, haydi yaptığımız her şeyi silel
 
 İlk önce masaüstüne geri dönmemiz gerek:
 
-<!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
+<!--sec data-title="Clean up: macOS and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
 {% filename %}komut satırı{% endfilename %}
 
@@ -315,7 +315,7 @@ Ortalığı dağınık bırakmak istemeyiz, haydi yaptığımız her şeyi silel
 
 Nerede olduğunuzu kontrol edin:
 
-<!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
+<!--sec data-title="Check location: macOS and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
 {% filename %}komut satırı{% endfilename %}
 
@@ -339,7 +339,7 @@ Nerede olduğunuzu kontrol edin:
 
 > **Dikkat**: `del`, `rmdir` veya `rm` komutları kullanılarak yapılan silme işlemleri geri alınamaz, bunun anlamı: *silinen dosyalar sonsuza dek yok olur*! Yani bu komutları kullanırken çok dikkatli olun.
 
-<!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
+<!--sec data-title="Delete directory: Windows Powershell, macOS and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
 {% filename %}komut satırı{% endfilename %}
 
@@ -360,7 +360,7 @@ Nerede olduğunuzu kontrol edin:
 
 Bitti! Gerçekten silindiğinden emin olalım:
 
-<!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
+<!--sec data-title="Check deletion: macOS and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
 {% filename %}komut satırı{% endfilename %}
 
@@ -382,7 +382,7 @@ Bitti! Gerçekten silindiğinden emin olalım:
 
 Şimdilik bu kadar! Şimdi komut satırını güvenle kapatabilirsiniz. Bunu "hacker" tarzında yapalım, tamam mı? :)
 
-<!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
+<!--sec data-title="Exit: macOS and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
 {% filename %}komut satırı{% endfilename %}
 

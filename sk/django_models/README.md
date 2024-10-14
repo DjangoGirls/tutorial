@@ -68,7 +68,7 @@ Model v databáze si môžeš predstaviť ako tabuľku so stĺpcami (polia) a ri
 
 Aby sme mali všetko pekne upratané, vytvoríme vo vnútri nášho projektu samostatnú aplikáciu. Je dobré mať všetko zorganizované hneď od začiatku. Aby sme vytvorili aplikáciu, musíme v konzole spustiť nasledujúci príkaz (v priečinku `djangogirls`, kde sa nachádza súbor `manage.py`):
 
-{% filename %}Mac OS X a Linux:{% endfilename %}
+{% filename %}macOS a Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py startapp blog
     

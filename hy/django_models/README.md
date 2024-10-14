@@ -63,7 +63,7 @@ Django- ում մոդելը հատուկ տեսակի առարկա է. Այն պ
 
 Ամեն ինչ կոկիկ պահելու համար մենք մեր ծրագրի ներսում կստեղծենք առանձին ծրագիր: Շատ հաճելի է ամեն ինչ կազմակերպել հենց սկզբից: Ծրագիր / Application ստեղծելու համար մենք պետք է հրամանի տողում մուտքագրենք հետևյալ հրահանգը ( `djangogirls` գրացուցակից, որտեղ գտնվում է `manage.py` ֆայլը). 
 
-{% filename %}Mac OS X and Linux:{% endfilename %}
+{% filename %}macOS and Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py startapp blog
     

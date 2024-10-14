@@ -41,10 +41,10 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-<!--sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx"
+<!--sec data-title="Virtual environment: Linux and macOS" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-می‌توانیم با دستور `python3 -m venv myvenv` هم در لینوکس و هم در OS X `محیط مجازی` بسازیم. شبیه این خواهد بود:
+می‌توانیم با دستور `python3 -m venv myvenv` هم در لینوکس و هم در macOS `محیط مجازی` بسازیم. شبیه این خواهد بود:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -132,7 +132,7 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-<!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
+<!--sec data-title="Working with virtualenv: Linux and macOS" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
 محیط مجازی خود را با اجرای دستور زیر فعال کنید:

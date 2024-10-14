@@ -35,14 +35,14 @@
 
 <!--endsec-->
 
-<!--sec data-title="Install Python: OS X" data-id="python_OSX"
+<!--sec data-title="Install Python: macOS" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Σημείωση** Πριν εγκαταστήσετε την Python σε λειτουργικό OS X, θα πρέπει να σιγουρευτείτε ότι οι ρυθμίσεις του Mac σας, επιτρέπουν την εγκατάσταση πακέτων που δεν είναι από το App Store. Πηγαίνετε στο System Preferences (βρίσκεται στο φάκελο Applications) και κλικάρετε στο "Security & Privacy" και έπειτα στη καρτέλα "General". Αν η επιλογή "Allow apps downloaded from:" είναι ρυθμισμένη στο "Mac App Store," αλλάξτε το σε "Mac App Store and identified developers."
+> **Σημείωση** Πριν εγκαταστήσετε την Python σε λειτουργικό macOS, θα πρέπει να σιγουρευτείτε ότι οι ρυθμίσεις του Mac σας, επιτρέπουν την εγκατάσταση πακέτων που δεν είναι από το App Store. Πηγαίνετε στο System Preferences (βρίσκεται στο φάκελο Applications) και κλικάρετε στο "Security & Privacy" και έπειτα στη καρτέλα "General". Αν η επιλογή "Allow apps downloaded from:" είναι ρυθμισμένη στο "Mac App Store," αλλάξτε το σε "Mac App Store and identified developers."
 
 Θα χρειαστεί να μεταβείτε στη σελίδα https://www.python.org/downloads/release/python-361/ και να κατεβάσετε το αρχείο εγκατάστασης:
 
-* Κατεβάστε το αρχείο *Mac OS X 64-bit/32-bit installer*,
+* Κατεβάστε το αρχείο *macOS 64-bit/32-bit installer*,
 * Διπλό κλικ στο *python-3.6.1-macosx10.6.pkg* για να ξεκινήσει η διαδικασία εγκατάστασης.
 
 <!--endsec-->

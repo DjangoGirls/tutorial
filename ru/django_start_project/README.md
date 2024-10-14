@@ -14,7 +14,7 @@
 
 > Не забудь: ты должна запускать все команды в virtualenv. Если ты не видишь в командной строке префикса `(myvenv)`, то необходимо активировать virtualenv. Мы объясняли, как это сделать, в разделе __Работаем с virtualenv__ главы __Установка Django__. Для этого нужно набрать `myvenv\Scripts\activate` в Windows или `source myvenv/bin/activate` в Mac OS / Linux.
 
-<!--sec data-title="OS X или Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
+<!--sec data-title="macOS или Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
 В консоли Mac OS или Linux нужно запустить следующую команду (**не забудь добавить точку `.` в конце**):
 

@@ -10,11 +10,11 @@ Pierwszy krok, który trzeba wykonać, to utworzenie nowego projektu Django. To 
 
 Nazwy niektórych plików i katalogów są bardzo ważne dla Django. Nie powinnaś zmieniać nazw plików, które zostaną utworzone. Przenoszenie ich w inne miejsce też nie jest dobrym pomysłem. Django wymaga zachowania pewnej struktury, by móc szybko znaleźć potrzebne rzeczy.
 
-> Pamiętaj, aby uruchamiać wszystko w virtualenvie. Jeśli nie widzisz prefiksu `(myvenv)` w konsoli, to znaczy że musisz uruchomić swój virtualenv. Wyjaśniłyśmy, jak to zrobić w rozdziale **Instalacja Django** w części **Praca z virtualenv**. Wystarczy wpisać `myvenv\Scripts\activate` w systemie Windows lub `source myvenv/bin/activate`, jeśli używasz Mac OS X lub Linux.
+> Pamiętaj, aby uruchamiać wszystko w virtualenvie. Jeśli nie widzisz prefiksu `(myvenv)` w konsoli, to znaczy że musisz uruchomić swój virtualenv. Wyjaśniłyśmy, jak to zrobić w rozdziale **Instalacja Django** w części **Praca z virtualenv**. Wystarczy wpisać `myvenv\Scripts\activate` w systemie Windows lub `source myvenv/bin/activate`, jeśli używasz macOS lub Linux.
 
-<!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
+<!--sec data-title="Create project: macOS or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
-Dla systemów MacOS X lub Linux, wpisz teraz do swojej konsoli następującą komendę. **Nie zapomnij dodać kropki `.` na końcu!**
+Dla systemów MacmacOS lub Linux, wpisz teraz do swojej konsoli następującą komendę. **Nie zapomnij dodać kropki `.` na końcu!**
 
 {% filename %}command-line{% endfilename %}
 

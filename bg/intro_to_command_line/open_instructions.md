@@ -16,9 +16,9 @@
 
 <!--endsec-->
 
-<!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
+<!--sec data-title="Opening: macOS" data-id="macOS_prompt" data-collapse=true ces-->
 
-Отидете на Applications → Utilities → Terminal.
+Отидете на Launchpad → Other → Terminal.
 
 <!--endsec-->
 

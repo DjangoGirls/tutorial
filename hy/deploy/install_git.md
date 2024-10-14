@@ -9,7 +9,7 @@ data-collapse=true ces-->
 
 Տեղադրումը հաջող ավարտելուց հետո մի մոռացեք վերսկսել հրամանի տողը կամ PowerShell- ը:<!--endsec-->
 
-<!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
+<!--sec data-title="Installing Git: macOS" data-id="git_install_OSX"
 data-collapse=true ces-->
 
 Ներբեռնեք Git- ը [git-scm.com](https://git-scm.com/) կայքից և հետևեք հրահանգներին:

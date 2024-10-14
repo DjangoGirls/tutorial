@@ -20,7 +20,7 @@ Tieto tri miesta budú pre teba dôležité. Lokálny počítač bude miestom, k
 
 Git sleduje zmeny na konkrétnej skupine súborov, v niečom, čo sa nazýva úložisko kódu alebo repozitár (skrátene "repo"). Založme si repo pre náš projekt. Otvor konzolu a spusti nasledujúce príkazy v adresári `djangogirls`:
 
-> **Poznámka** Skontroluj si aktuálny pracovný priečinok príkazom `pwd` (Mac OS X/Linux) alebo `cd` (Windows) pred inicializáciou repozitára. Mala by si byť v priečinku `djangogirls`.
+> **Poznámka** Skontroluj si aktuálny pracovný priečinok príkazom `pwd` (macOS/Linux) alebo `cd` (Windows) pred inicializáciou repozitára. Mala by si byť v priečinku `djangogirls`.
 
 {% filename %}command-line{% endfilename %}
 

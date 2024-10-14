@@ -33,9 +33,9 @@ C:\Users\Name\djangogirls > C:\Python34\python -m venv myvenv
 
 kde `C:\Python34\python` je adresář, kam jsme dříve nainstalovali Python a `myvenv` je název `virtualenv`. Můžeš použít i jiné jméno, ale používej malá písmena a nepoužívej mezery, diakritiku nebo speciální znaky. Je také dobrý nápad, abys zvolila krátké jméno - budeš ho používat častokrát!
 
-### Linux a OS X
+### Linux a macOS
 
-Vytvoření `virtualenv` na Linux a OS X je stejně jednoduché - spusť`python3 -m venv myvenv`. Celý příkaz bude vypadat takto:
+Vytvoření `virtualenv` na Linux a macOS je stejně jednoduché - spusť`python3 -m venv myvenv`. Celý příkaz bude vypadat takto:
 
 ```
 ~/djangogirls$ python3 -m venv myvenv
@@ -66,7 +66,7 @@ Spusť virtuální prostředí:
 C:\Users\Name\djangogirls> myvenv\Scripts\activate
 ```  
 
-#### Linux a OS X
+#### Linux a macOS
 
 Spusť virtuální prostředí:
 

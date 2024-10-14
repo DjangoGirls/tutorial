@@ -63,7 +63,7 @@
 
 برای آنکه همه چیز مرتب باشد ما یک برنامه مجزا (اپلیکیشن) در پروژه خود خواهیم ساخت. خوب است که همه چیز از ابتدا مرتب باشد. برای ساخت یک برنامه جدید باید دستور زیر را در خط فرمان اجرا کنیم (در پوشه `djangogirls` و جایی که فایل `manage.py` وجود دارد):
 
-{% filename %}Mac OS X or Linux:{% endfilename %}
+{% filename %}macOS or Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py startapp blog
     

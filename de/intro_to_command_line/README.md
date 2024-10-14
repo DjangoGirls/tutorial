@@ -24,7 +24,7 @@ Um mit unserem Tutorial zu starten, musst du als Erstes das Kommandozeilenprogra
 
 Du solltest nun ein weißes oder schwarzes Fenster sehen, das auf deine Anweisungen wartet.
 
-<!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
+<!--sec data-title="Prompt: macOS and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
 Auf einem Mac- oder Linux-Rechner siehst du wahrscheinlich ein `$`, also so:
 
@@ -60,7 +60,7 @@ Wenn wir im Tutorial wollen, dass du einen Befehl eingibst, schreiben wir `$` od
 
 Lass uns mit diesem Kommando beginnen:
 
-<!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
+<!--sec data-title="Your first command: macOS and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -98,7 +98,7 @@ Jedes Betriebssystem hat einen geringfügig anderen Bestand an Befehlen für die
 
 Es wäre schön zu sehen, wo wir uns befinden, oder? Lass uns nachsehen. Gib diesen Befehl in die Konsole ein und bestätige ihn mit `Enter`:
 
-<!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
+<!--sec data-title="Current directory: macOS and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -118,7 +118,7 @@ Es wäre schön zu sehen, wo wir uns befinden, oder? Lass uns nachsehen. Gib die
     C:\Users\olasitarska
     
 
-> Hinweis: "cd" steht für "change directory". Mit PowerShell kannst du auch 'pwd' verwenden, wie auf Linux oder Mac OS X.
+> Hinweis: "cd" steht für "change directory". Mit PowerShell kannst du auch 'pwd' verwenden, wie auf Linux oder macOS.
 
 <!--endsec-->
 
@@ -130,9 +130,9 @@ Du wirst wahrscheinlich etwas Ähnliches auf deinem Gerät sehen. Wenn du die Ko
 
 Viele Befehle, die du in der Kommandozeile nutzen kannst, haben eine eingebaute Hilfe, die du anzeigen und lesen kannst! Zum Beispiel kannst du etwas über den eben verwendeten Befehl lernen:
 
-<!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
+<!--sec data-title="Command help: macOS and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X und Linux haben einen `man`-Befehl, mit dem du die Hilfe über die Kommandos aufrufen kannst. Gib `man pwd` ein und schau, was angezeigt wird oder setzte `man` vor andere Kommandos und sieh dir deren Hilfe an. Das Ergebnis von `man` wird in der Regel seitenweise ausgegeben. Du kannst die Leertaste benutzen, um auf die nächste Seite zu gelangen und `q` (für engl. "quit", was "verlassen"/"rausgehen" heisst), um die Hilfeseiten zu schließen.
+macOS und Linux haben einen `man`-Befehl, mit dem du die Hilfe über die Kommandos aufrufen kannst. Gib `man pwd` ein und schau, was angezeigt wird oder setzte `man` vor andere Kommandos und sieh dir deren Hilfe an. Das Ergebnis von `man` wird in der Regel seitenweise ausgegeben. Du kannst die Leertaste benutzen, um auf die nächste Seite zu gelangen und `q` (für engl. "quit", was "verlassen"/"rausgehen" heisst), um die Hilfeseiten zu schließen.
 
 <!--endsec-->
 
@@ -146,7 +146,7 @@ Wenn du Windows benutzt, dann wird dir der Suffix `/?` für die meisten Kommando
 
 Nun, was befindet sich in deinem Verzeichnis? Es wäre toll, das herauszufinden. Lass uns mal schauen:
 
-<!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
+<!--sec data-title="List files and directories: macOS and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -173,7 +173,7 @@ Nun, was befindet sich in deinem Verzeichnis? Es wäre toll, das herauszufinden.
     ...
     
 
-> Hinweis: PowerShell kannst du auch 'ls' verwenden, wie auf Linux oder Mac OS X.<!--endsec-->
+> Hinweis: PowerShell kannst du auch 'ls' verwenden, wie auf Linux oder macOS.<!--endsec-->
 
 * * *
 
@@ -181,7 +181,7 @@ Nun, was befindet sich in deinem Verzeichnis? Es wäre toll, das herauszufinden.
 
 Lass uns jetzt zu unserem Desktop-Verzeichnis wechseln:
 
-<!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
+<!--sec data-title="Change current directory: macOS" data-id="OSX_move_to" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -212,7 +212,7 @@ Wenn dein Linux-Benutzerkonto auf Deutsch eingestellt ist, kann es sein, dass au
 
 Schau, ob das Wechseln des Verzeichnisses funktioniert hat:
 
-<!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
+<!--sec data-title="Check if changed: macOS and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -242,7 +242,7 @@ Passt!
 
 Wie wär's damit, ein Übungsverzeichnis auf deinem Desktop zu erstellen? So kannst du das tun:
 
-<!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
+<!--sec data-title="Create directory: macOS and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -272,7 +272,7 @@ Eine kleine Herausforderung für dich: Erstelle in deinem neu erstellten `practi
 
 #### Lösung:
 
-<!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
+<!--sec data-title="Exercise solution: macOS and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -306,7 +306,7 @@ Wir wollen kein Chaos hinterlassen, also lass uns das bislang Geschaffene wieder
 
 Zuerst müssen wir zurück zum Desktop wechseln:
 
-<!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
+<!--sec data-title="Clean up: macOS and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -328,7 +328,7 @@ Durch Verwendung von `..` mit dem `cd`-Kommando wechselst du von deinem aktuelle
 
 Schau nach, wo du gerade bist:
 
-<!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
+<!--sec data-title="Check location: macOS and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -352,7 +352,7 @@ Jetzt ist es an der Zeit, dein `practice`-Verzeichnis zu löschen:
 
 > **Achtung**: Wenn du Daten mit `del`, `rmdir` oder `rm` löschst, kannst du das nicht mehr rückgängig machen, das bedeutet, *die gelöschten Dateien sind für immer weg*! Sei also sehr vorsichtig mit diesem Befehl.
 
-<!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
+<!--sec data-title="Delete directory: Windows Powershell, macOS and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -373,7 +373,7 @@ Jetzt ist es an der Zeit, dein `practice`-Verzeichnis zu löschen:
 
 Geschafft! Lass uns schauen, ob es wirklich gelöscht ist:
 
-<!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
+<!--sec data-title="Check deletion: macOS and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -395,7 +395,7 @@ Geschafft! Lass uns schauen, ob es wirklich gelöscht ist:
 
 Das wärs fürs Erste. Du kannst nun beruhigt deine Konsole schließen. Lass es uns wie die Hacker machen, okay? :)
 
-<!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
+<!--sec data-title="Exit: macOS and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 

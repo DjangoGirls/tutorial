@@ -23,7 +23,7 @@ Um dich einloggen zu können, musst du zunächst einen *superuser* erstellen - e
 
 > Denke daran, damit du neue Kommandos eingeben kannst während der Webserver läuft, musst du ein neues Terminal öffnen und deine virtualenv aktivieren. Wie man neue Kommandos eingeben kann, haben wir im Kapitel **Dein erstes Django-Projekt!** unter **Den Webserver starten** behandelt.
 
-{% filename %}Mac OS X oder Linux:{% endfilename %}
+{% filename %}macOS oder Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py createsuperuser
     
