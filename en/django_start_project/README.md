@@ -102,7 +102,7 @@ We'll also need to add a path for static files. (We'll find out all about static
 
 {% filename %}mysite/settings.py{% endfilename %}
 ```python
-STATIC_URL = '/static/'
+STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'static'
 ```
 
