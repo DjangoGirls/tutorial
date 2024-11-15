@@ -6,7 +6,7 @@ Congratulate yourself! __You're totally awesome__. We're proud! <3
 
 Take a break and relax! You have just done something really huge.
 
-After that, make sure to follow Django Girls on [Facebook](https://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
+After that, make sure to follow Django Girls on [Facebook](https://facebook.com/djangogirls) or [X](https://x.com/djangogirls) to stay up to date.
 
 ### Can you recommend any further resources?
 
