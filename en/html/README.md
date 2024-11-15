@@ -189,7 +189,7 @@ Before we upload all the files, let's check what `git` will be uploading (all th
 $ git status
 ```
 
-We're almost there, now it's time to tell it to save this change in its history. We're going to give it a "commit message" where we describe what we've changed. You can type anything you'd like at this stage, but it's helpful to type something descriptive so that you can remember what you've done in the future.
+We're almost there, now it's time to tell it to save this change in its history. We're going to give it a "commit message" where we describe what we've changed. You can type anything you'd like at this stage, but it's helpful to type something descriptive so that, in the future, you can remember what you've done.
 
 {% filename %}command-line{% endfilename %}
 ```
