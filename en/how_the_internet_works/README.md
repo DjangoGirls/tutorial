@@ -2,7 +2,7 @@
 
 > For readers at home: this chapter is covered in the [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc) video.
 
-> This chapter is inspired by the talk "How the Internet works" by Jessica McKellar (http://web.mit.edu/jesstess/www/).
+> This chapter is inspired by the talk "How the Internet works" by Jessica McKellar (https://web.mit.edu/jesstess/www/).
 
 We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
 
@@ -21,7 +21,7 @@ We drew you a picture! It looks like this:
 
 ![Figure 1.1](images/internet_1.png)
 
-Looks like a mess, right? In fact it is a network of connected machines (the above-mentioned *servers*). Hundreds of thousands of machines! Many, many kilometers of cables around the world! You can visit a Submarine Cable Map website (http://submarinecablemap.com) to see how complicated the net is. Here is a screenshot from the website:
+Looks like a mess, right? In fact it is a network of connected machines (the above-mentioned *servers*). Hundreds of thousands of machines! Many, many kilometers of cables around the world! You can visit a Submarine Cable Map website (https://submarinecablemap.com) to see how complicated the net is. Here is a screenshot from the website:
 
 ![Figure 1.2](images/internet_3.png)
 

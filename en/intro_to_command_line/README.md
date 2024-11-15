@@ -438,7 +438,7 @@ rmdir /S          | rm -r                    | delete a directory         | **rm
 
 These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
-If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+If you're curious, [ss64.com](https://ss64.com) contains a complete reference of commands for all operating systems.
 
 ## Ready?
 

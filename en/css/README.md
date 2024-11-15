@@ -70,7 +70,7 @@ Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code
 We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
 
 But let's do at least a little. Maybe we could change the color of our headers?
-To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use predefined [named colors](https://developer.mozilla.org/en-US/docs/Web/CSS/named-color), such as `red` and `green`.
+To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: https://www.colorpicker.com/. You may also use predefined [named colors](https://developer.mozilla.org/en-US/docs/Web/CSS/named-color), such as `red` and `green`.
 
 
 In your `blog/static/css/blog.css` file you should add the following code:
