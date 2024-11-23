@@ -6,7 +6,7 @@ Congratulate yourself! __You're totally awesome__. We're proud! <3
 
 Take a break and relax! You have just done something really huge.
 
-After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
+After that, make sure to follow Django Girls on [Facebook](https://facebook.com/djangogirls) or [X](https://x.com/djangogirls) to stay up to date.
 
 ### Can you recommend any further resources?
 
@@ -15,7 +15,7 @@ Yes! There are a _lot_ of resources online for learning all kinds of programming
 #### Django
 - Our other book, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
 - [Django's official tutorial](https://docs.djangoproject.com/en/5.1/intro/tutorial01/)
-- [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
+- [Getting Started With Django video lessons](https://thekennethlove.com/videos/)
 - [Django for Everybody Specialization](https://www.coursera.org/specializations/django) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
 
 
@@ -26,7 +26,7 @@ Yes! There are a _lot_ of resources online for learning all kinds of programming
 #### Python
 - [Codecademy's Python course](https://www.codecademy.com/learn/learn-python)
 - [Google's Python course](https://developers.google.com/edu/python/)
-- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – the initial exercises are free
+- [Learn Python The Hard Way book](https://learnpythonthehardway.org/book/) – the initial exercises are free
 - [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
 - [edX](https://www.edx.org/course?search_query=python) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
 - [Coursera's Python specialization](https://www.coursera.org/specializations/python) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
