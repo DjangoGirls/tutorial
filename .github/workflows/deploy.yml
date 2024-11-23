@@ -28,6 +28,7 @@ jobs:
           packages: calibre
       - name: Install and Build
         run: |
+          sudo apt install rename
           npm install
           npx honkit build
           npx honkit epub
