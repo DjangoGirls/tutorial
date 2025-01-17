@@ -1,0 +1,109 @@
+name: Preview
+
+on:
+  workflow_run:
+    workflows:
+      - Build
+    types:
+      - completed
+
+jobs:
+  preview-failed:
+    if: github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.conclusion != 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download metadata artifact
+        run: gh run download '${{ github.event.workflow_run.id }}' --name pr
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Read PR data
+        run: echo "PR_NUMBER=$(cat ./pr)" >> $GITHUB_ENV
+
+      - name: Comment on PR
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          number: ${{ env.PR_NUMBER }}
+          message: "The PR preview for ${{ github.event.workflow_run.head_sha }} could not be generated"
+
+  preview:
+    if: github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      # TODO: can this download from the existing pages or a cache?
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Build current pages
+        run: |
+          npm install
+          npx honkit build
+          mv _book current
+
+      - name: Download preview artifact
+        run: gh run download '${{ github.event.workflow_run.id }}' --name github-pages --dir preview
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Remove indeterminism
+        run: |
+          find current/ preview/ -type f -exec sed -i '/gitbook.page.hasChanged/d' {} +
+
+      - name: Create diff to current
+        run: |
+          diff -Nrwu --exclude search_index.json current/ preview/ > diff.patch || true
+          if [[ -s diff.patch ]] ; then
+            sudo apt-get update
+            sudo apt-get install -y diffstat python3-pygments
+
+            mv diff.patch preview/diff.patch
+            pygmentize -o preview/diff.html -l diff -f html -O full preview/diff.patch
+            diffstat -l -p1 preview/diff.patch > preview/diff.txt
+          fi
+
+      - name: Download metadata artifact
+        run: gh run download '${{ github.event.workflow_run.id }}' --name pr
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Read PR data
+        run: echo "PR_NUMBER=$(cat ./pr)" >> $GITHUB_ENV
+
+      - name: Set preview domain
+        run: echo "PREVIEW_DOMAIN=$(echo ${{ github.repository }} | tr / - )-${{ github.job }}-pr-${{ env.PR_NUMBER }}.surge.sh" >> $GITHUB_ENV
+
+      - name: Install surge
+        run: npm install surge
+
+      - name: Deploy to surge.sh
+        run: npx surge ./preview $PREVIEW_DOMAIN --token ${{ secrets.SURGE_TOKEN }}
+
+      - name: Generate summary
+        run: |
+          echo "The PR preview for ${{ github.event.workflow_run.head_sha }} is available at [${{ env.PREVIEW_DOMAIN }}](https://${{ env.PREVIEW_DOMAIN }})" >> pr.md
+          echo "" >> pr.md
+
+          if [[ -f preview/diff.txt ]] ; then
+            echo "The following output files are affected by this PR:" >> pr.md
+            sed -E "s#(.*)#- [\1](https://${{ env.PREVIEW_DOMAIN }}/\1)#" preview/diff.txt >> pr.md
+          else
+            echo "No diff compared to the current website" >> pr.md
+          fi
+
+          if [[ -s preview/diff.patch ]] ; then
+            echo "" >> pr.md
+            echo "[show diff](https://${{ env.PREVIEW_DOMAIN }}/diff.patch)" >> pr.md
+          fi
+
+          if [[ -f preview/diff.html ]] ; then
+            echo "" >> pr.md
+            echo "[show diff as HTML](https://${{ env.PREVIEW_DOMAIN }}/diff.html)" >> pr.md
+          fi
+
+      - name: Comment on PR
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          number: ${{ env.PR_NUMBER }}
+          path: pr.md
