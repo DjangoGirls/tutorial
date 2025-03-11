@@ -2,7 +2,13 @@
 
 Time to get rid of the bug we created in the last chapter! :)
 
-A *view* is a place where we put the "logic" of our application. It will request information from the `model` you created before and pass it to a `template`. We'll create a template in the next chapter. Views are just Python functions that are a little bit more complicated than the ones we wrote in the __Introduction to Python__ chapter.
+A *view* is a place where we put the "logic" of our application. The views do the following:
+
+1. Receive the `request` information (current user session and other stuff) as well as parameters parsed from the url (for example, the id of a blog post)
+2. Fetch the information from the `model`, probably adding some logic (like filtering logic to show only the published posts)
+3. Create a response by filling a `template` with the fetched info
+
+We'll create a template in the next chapter. Now we'll create a view. Technically, views are Python functions, exactly like the ones we wrote in the __Introduction to Python__ chapter. These functions take `request` as a parameter and return `HttpResponse`. You shouldn't worry about the type of the return value because another function from the Django framework will construct it for us.
 
 Views are placed in the `views.py` file. We will add our *views* to the `blog/views.py` file.
 
