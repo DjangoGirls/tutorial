@@ -271,6 +271,7 @@ h4 {
     color: #C25100;
     background: none;
     border-color: #C25100;
+    margin-left: 15px;
 }
 
 .btn-secondary:hover {
