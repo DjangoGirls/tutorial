@@ -189,7 +189,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-When we submit the form, we are brought back to the same view, but this time the `request` parameter is different. If we look at the `request.method` it will be `"POST"` (method for sending forms) instead of `"GET"` (method for requesting pages) and the `request.POST` field will contain all the fields form the form. The naming has nothing to do with a blog "post"; it's to do with the fact that we're "posting" data.
+When we submit the form, we are brought back to the same view, but this time the `request` parameter is different. If we look at the `request.method` it will be `"POST"` (method for sending forms) instead of `"GET"` (method for requesting pages) and the `request.POST` attribute will contain all the fields from the form. The naming has nothing to do with a blog "post"; it's to do with the fact that we're "posting" data.
 
 So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. So we need to add a condition (we will use `if` for that):
 
