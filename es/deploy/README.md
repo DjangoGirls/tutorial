@@ -146,7 +146,7 @@ Para desplegar una aplicación web en PythonAnywhere necesitas descargar tu cód
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pip3.6 install --user pythonanywhere
+    $ pip3.8 install --user pythonanywhere
     
 
 Eso debería mostrar en pantalla algunos mensajes como `Collecting pythonanywhere`, y finalmente una linea diciendo que ha terminado bien: `Successfully installed (...) pythonanywhere- (...)`.
@@ -155,7 +155,7 @@ Ahora ejecutaremos el asistente para configurar automáticamente nuestra aplicac
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pa_autoconfigure_django.py --python=3.6 https://github.com/<your-github-username>/my-first-blog.git
+    $ pa_autoconfigure_django.py --python=3.8 https://github.com/<your-github-username>/my-first-blog.git
     
 
 A medida que se ejecuta, podrás ver lo que hace:
