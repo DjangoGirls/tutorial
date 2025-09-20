@@ -79,6 +79,8 @@ Let's make some changes in `mysite/settings.py`. Open the file using the code ed
 
 **Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "File -> Open" menu action. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the `djangogirls/` folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
 
+#### Changing the Timezone
+
 It would be nice to have the correct time on our website. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
 
 In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choose your own timezone.  For example:
@@ -87,6 +89,11 @@ In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choos
 ```python
 TIME_ZONE = 'Europe/Berlin'
 ```
+
+> **Note**: Timezones should be in the Region/City format, so eg "EDT" is not valid, but "America/Detroit" is.
+
+
+#### Changing the Language
 
 A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `ch` for Switzerland. If English is not your native language, you can add this to change the default buttons and notifications from Django to be in your language. So you would have "Cancel" button translated into the language you defined here. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/5.1/ref/settings/#language-code).
 
@@ -98,7 +105,12 @@ LANGUAGE_CODE = 'de-ch'
 ```
 
 
-We'll also need to add a path for static files. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
+#### Other settings
+
+We'll also need to add a path for static files.
+(We'll find out all about static files and CSS later in the tutorial.)
+Go down to the *end* of the file,
+and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
 
 {% filename %}mysite/settings.py{% endfilename %}
 ```python
@@ -106,8 +118,8 @@ STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'static'
 ```
 
-When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated against `['localhost', '127.0.0.1', '[::1]']`. This won't
-match our hostname on PythonAnywhere once we deploy our application so we will change the following setting:
+When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated against `['localhost', '127.0.0.1', '[::1]']`.
+This won't match our hostname on PythonAnywhere once we deploy our application so we will change the following setting:
 
 {% filename %}mysite/settings.py{% endfilename %}
 ```python
