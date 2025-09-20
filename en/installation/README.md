@@ -33,7 +33,16 @@ To install software on your machine, follow the instructions below:
 
 ## Brief intro to the command line {#intro-command-line}
 Many of the steps below reference the "console", "terminal", "command window", or "command line" -- these all mean the same thing: a window on your computer where you can enter commands. When you get to the main tutorial, you'll learn more about the command line. For now, the main thing you need to know is how to open a command window and what it looks like:
+
 {% include "/intro_to_command_line/open_instructions.md" %}
+
+### The Command-line Prompt
+
+Now you know how to open a command line,
+we just need to understand what the "prompt" is.
+
+{% include "/intro_to_command_line/prompt.md" %}
+
 
 ## Install Python {#python}
 {% include "/python_installation/instructions.md" %}
