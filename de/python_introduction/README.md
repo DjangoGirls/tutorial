@@ -30,6 +30,15 @@ Nach Eingabe von python3 in der Konsole ändert sich das Prompt-Zeichen zu `>>>`
 
 Wenn du die Python-Konsole wieder verlassen möchtest, gib `exit()` ein oder nutze das Tastatur-Kürzel `Strg + Z` unter Windows bzw. `Strg + D`, wenn du einen Mac hast oder Linux verwendest. Dann bist du wieder in der normalen Konsole und der Python-Prompt `>>>` ist weg.
 
+### Den Konsolenbildschirm leeren
+Manchmal möchtest du vielleicht den Inhalt deiner Konsole löschen, um eine übersichtlichere Ansicht zu haben. In der interaktiven Python-Konsole gibt es keine direkte eingebaute Funktion wie clear() dafür. Wenn du den Bildschirm in einer normalen Kommandozeile (nicht in der Python-Konsole selbst) leeren möchtest, verwendest du üblicherweise folgende Befehle:
+
+* Unter Windows: Gib cls ein und drück Enter.
+
+* Unter macOS und Linux: Gib clear ein und drück Enter.
+
+Diese Befehle funktionieren, bevor du python3 eingibst und die Python-Konsole startest. 
+
 Fürs Erste bleiben wir in der Python Konsole, wir wollen mehr darüber lernen. Lass uns mit ein wenig Mathematik anfangen, gib `2 + 3` ein und drück `enter`.
 
 {% filename %}command-line{% endfilename %}

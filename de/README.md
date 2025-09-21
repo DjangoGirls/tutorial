@@ -34,7 +34,11 @@ Okay, [lass uns ganz am Anfang starten...](./how_the_internet_works/README.md)
 
 ## Das Tutorial daheim durcharbeiten
 
-An einem Django-Girls-Workshop teilzunehmen ist toll, aber uns ist klar, dass das nicht immer allen möglich ist. Darum wollen wir dich ermutigen, das Tutorial auch zu Hause zu erarbeiten. Für Leser zu Hause erstellen wir gerade Video-Tutorials, die es erleichtern sollen, diesem Tutorial zu folgen. Diese Arbeit ist noch nicht abgeschlossen, aber mehr und mehr Themen werden als Video erfasst und können im [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed)-YouTube-Kanal angesehen werden.
+An einem Django-Girls-Workshop teilzunehmen ist toll, aber uns ist klar, dass das nicht immer allen möglich ist. Darum wollen wir dich ermutigen, das Tutorial auch zu Hause zu erarbeiten.
+
+Das gesamte Tutorial dauert etwa 8 Stunden, aber keine Sorge! Du kannst es problemlos in Abschnitten durchgehen, ganz in deinem eigenen Tempo. Es ist nicht nötig, alles auf einmal zu erledigen.
+
+Für Leser zu Hause erstellen wir gerade Video-Tutorials, die es erleichtern sollen, diesem Tutorial zu folgen. Diese Arbeit ist noch nicht abgeschlossen, aber mehr und mehr Themen werden als Video erfasst und können im [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed)-YouTube-Kanal angesehen werden.
 
 In jedem Kapitel, das bereits mit Video unterstützt wird, gibt es einen Link auf das jeweilige Video dazu.
 
