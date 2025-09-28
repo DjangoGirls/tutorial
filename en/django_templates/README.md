@@ -12,45 +12,79 @@ __Django template tags__ allow us to transfer Python-like things into HTML, so y
 
 In the previous chapter we gave our template a list of posts in the `posts` variable. Now we will display it in HTML.
 
-To print a variable in Django templates, we use double curly brackets with the variable's name inside, like this:
+To print a variable in Django templates, we use double curly brackets with the variable's name inside, like this: `{{ posts }}`. Try this in your `blog/templates/blog/post_list.html` template. Open it up in the code editor, and replace the existing `<article>` elements with `{{ posts }}`. 
+
+Your `blog/templates/blog/post_list.html` should now look like this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
-{{ posts }}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Django Girls blog</title>
+    </head>
+    <body>
+        <header>
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </header>
+
+        {{ posts }}
+
+    </body>
+</html>
 ```
 
-Try this in your `blog/templates/blog/post_list.html` template. Open it up in the code editor, and replace the existing `<article>` elements with `{{ posts }}`. Save the file, and refresh the page to see the results:
+ Save the file, and refresh the page to see the results:
 
 ![Figure 13.1](images/step1.png)
 
 As you can see, all we've got is this:
-
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
-```html
-<QuerySet [<Post: My second post>, <Post: My first post>]>
-```
+`<QuerySet [<Post: My second post>, <Post: My first post>]>`
 
 This means that Django understands it as a list of objects. Remember from __Introduction to Python__ how we can display lists? Yes, with for loops! In a Django template you do them like this:
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
-```html
+```
 {% for post in posts %}
     {{ post }}
 {% endfor %}
 ```
 
-Try this in your template.
-
-![Figure 13.2](images/step2.png)
-
-It works! But we want the posts to be displayed like the static posts we created earlier in the __Introduction to HTML__ chapter. You can mix HTML and template tags. Our `body` will look like this:
+Try this in your template. Your `blog/templates/blog/post_list.html` should now look like this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
-<header>
-    <h1><a href="/">Django Girls Blog</a></h1>
-</header>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Django Girls blog</title>
+    </head>
+    <body>
+        <header>
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </header>
 
+        {% for post in posts %}
+            {{ post }}
+        {% endfor %}
+
+    </body>
+</html>
+```
+
+Now refresh the web page:
+
+![Figure 13.2](images/step2.png)
+
+It works! But we want the posts to be displayed like the static posts we created earlier in the __Introduction to HTML__ chapter. You can mix HTML and template tags. In the `blog/templates/blog/post_list.html` file, change this block of code from
+```
+{% for post in posts %}
+    {{ post }}
+{% endfor %}
+```
+
+to
+
+```
 {% for post in posts %}
     <article>
         <time>published: {{ post.published_date }}</time>
