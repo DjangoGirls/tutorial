@@ -39,43 +39,41 @@ Finally we will take a closer look at these things we've been calling __static f
 
 Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
 
-We do that by creating a folder called `static` inside the blog app:
+We do that by creating a folder called `static` inside the blog app.However, to avoid naming conflicts between different apps, Django recommends creating another folder with your app name inside the static folder:
 
 ```
 djangogirls
 ├── blog
 │   ├── migrations
 │   ├── static
-│   └── templates
+│   │   └── blog
+│   └── templates
 └── mysite
 ```
 
-Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
-
+Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.The additional app-name folder (blog) helps Django distinguish between static files from different apps when you have multiple apps in your project
 
 ## Your first CSS file!
 
-Let's create a CSS file now, to add your own style to your web page. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
+Let's create a CSS file now, to add your own style to your web page. Create a new directory called `css` inside your `static/blog` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
 
 ```
 djangogirls
 └─── blog
      └─── static
-          └─── css
-               └─── blog.css
+          └─── blog
+               └─── css
+                    └─── blog.css
 ```
 
-Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code editor.
+Time to write some CSS! Open up the `blog/static/blog/css/blog.css` file in your code editor.
 
 We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
 
 But let's do at least a little. Maybe we could change the color of our headers?
 To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: https://www.colorpicker.com/. You may also use predefined [named colors](https://developer.mozilla.org/en-US/docs/Web/CSS/named-color), such as `red` and `green`.
-
-
-In your `blog/static/css/blog.css` file you should add the following code:
-
-{% filename %}blog/static/css/blog.css{% endfilename %}
+In your `blog/static/blog/css/blog.css` file you should add the following code:
+{% filename %}blog/static/blog/css/blog.css{% endfilename %}
 ```css
 h1 a, h2 a {
     color: #C25100;
@@ -105,8 +103,11 @@ Between the `<head>` and `</head>` tags, after the links to the Bootstrap CSS fi
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
-<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+<link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
 ```
+
+Note that we reference the CSS file as `blog/css/blog.css` because our CSS file is now located in the `blog/static/blog/css/blog.css` path. The `{% static %}` template tag automatically handles the `static/` part of the path.
+
 The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may be overridden by code in Bootstrap files.
 We just told our template where our CSS file is located.
 
@@ -120,7 +121,7 @@ Your file should now look like this:
     <head>
         <title>Django Girls blog</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
     </head>
     <body>
         <header>
@@ -144,7 +145,7 @@ OK, save the file and refresh the site!
 
 Nice work! Maybe we would also like to give our website a little air and increase the margin on the left side? Let's try this!
 
-{% filename %}blog/static/css/blog.css{% endfilename %}
+{% filename %}blog/static/blog/css/blog.css{% endfilename %}
 ```css
 body {
     padding-left: 15px;
@@ -162,11 +163,11 @@ Maybe we can customize the font in our header? Paste this into your `<head>` in 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext">
 ```
 
-Again, check the order and place it before the link to `blog/static/css/blog.css`. This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
+Again, check the order and place it before the link to `blog/static/blog/css/blog.css`. This line will import a font called _Lobster_ from Google Fonts (https://www.google.com/fonts).
 
-Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file `blog/static/css/blog.css`.  Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
+Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file `blog/static/blog/css/blog.css`. Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
 
-{% filename %}blog/static/css/blog.css{% endfilename %}
+{% filename %}blog/static/blog/css/blog.css{% endfilename %}
 ```css
 h1 a, h2 a {
     color: #C25100;
@@ -203,9 +204,9 @@ And now add a class `post` to your `article` containing a blog post.
 </article>
 ```
 
-We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, copy and paste it into your `blog/static/css/blog.css` file:
+We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, copy and paste it into your `blog/static/blog/css/blog.css` file:
 
-{% filename %}blog/static/css/blog.css{% endfilename %}
+{% filename %}blog/static/blog/css/blog.css{% endfilename %}
 ```css
 .page-header {
     background-color: #C25100;
