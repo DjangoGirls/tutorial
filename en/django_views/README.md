@@ -35,14 +35,26 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-As you can see, we created a function (`def`) called `post_list` that takes `request` and will `return` the value it gets from calling another function `render` that will render (put together) our template `blog/post_list.html`.
+Now your `blog/views.py` file should look like this:
+
+{% filename %}blog/views.py{% endfilename %}
+```python
+from django.shortcuts import render
+
+def post_list(request):
+    return render(request, 'blog/post_list.html', {})
+```
+
+As you can see, we created a function called `post_list`. It takes `request` and will `render` (display) our template `blog/post_list.html`. 
 
 Save the file, go to http://127.0.0.1:8000/ and see what we've got.
 
-Another error! Read what's going on now:
+Another error! But don't worry, we will fix it. Let's first understand what the error message is telling us:
 
 ![Error](images/error.png)
 
-This shows that the server is running again, at least, but it still doesn't look right, does it? Don't worry, it's just an error page, nothing to be scared of! Just like the error messages in the console, these are actually pretty useful. You can read that the *TemplateDoesNotExist*. Let's fix this bug and create a template in the next chapter!
+This shows that the web server is running, at least, but it still doesn't look right, does it? Don't worry, it's just an error page, nothing to be scared of! Just like the error messages in the console, these are actually pretty useful. The *TemplateDoesNotExist* message indicates our template `blog/post_list.html` does not exist. Indeed, we have not created the template file yet.
+
+Let's fix this by creating the template `blog/post_list.html` in the next chapter!
 
 > Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/5.1/topics/http/views/
