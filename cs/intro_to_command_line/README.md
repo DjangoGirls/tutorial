@@ -20,7 +20,7 @@ Chceš-li začít experimentovat, je třeba nejprve otevřít naše rozhraní p�
 
 Jdi na menu Start → Všechny programy → Příslušenství → Příkazová řádka.
 
-### Mac OS X
+### macOS
 
 Aplikace → Nástroje → Terminál.
 

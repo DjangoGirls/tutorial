@@ -41,10 +41,10 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-<!--sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx"
+<!--sec data-title="Virtual environment: Linux and macOS" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-Μπορούμε να δημιουργήσουμε ένα `virtualenv` σε Linux και σε OS X τρέχοντας την εντολή `python3 -m venv myvenv`. Θα μοιάζει κάπως έτσι:
+Μπορούμε να δημιουργήσουμε ένα `virtualenv` σε Linux και σε macOS τρέχοντας την εντολή `python3 -m venv myvenv`. Θα μοιάζει κάπως έτσι:
 
 {% filename %}command-line{% endfilename %}
 
@@ -123,7 +123,7 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-<!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
+<!--sec data-title="Working with virtualenv: Linux and macOS" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
 Ξεκινήστε το εικονικό σας περιβάλλον εκτελώντας:

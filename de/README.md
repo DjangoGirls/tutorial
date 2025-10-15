@@ -40,7 +40,7 @@ In jedem Kapitel, das bereits mit Video unterstützt wird, gibt es einen Link au
 
 ## Über uns und wie du mithelfen kannst
 
-Dieses Tutorial wird von [DjangoGirls](https://djangogirls.org/) betreut. Solltest du Fehler finden oder das Tutorial aktualisieren wollen, dann folge den [Richtlinien zum Mitarbeiten](https://github.com/DjangoGirls/tutorial/blob/master/CONTRIBUTING.md).
+Dieses Tutorial wird von [DjangoGirls](https://djangogirls.org/) betreut. Solltest du Fehler finden oder das Tutorial aktualisieren wollen, dann folge den [Richtlinien zum Mitarbeiten](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
 ## Möchtest du uns helfen, das Tutorial in andere Sprachen zu übersetzen?
 

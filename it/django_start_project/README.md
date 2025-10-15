@@ -12,9 +12,9 @@ I nomi di alcuni file e cartelle sono molto importanti per Django. Non dovresti 
 
 > Ricordati di eseguire tutto nel virtualenv. Se non vedi il prefisso `(myvenv)` nella tua console, devi attivare il tuo virtualenv. Abbiamo spiegato come farlo nel capitolo **installazione Django** nella parte **Lavorando con virtualenv**. Digitando `myvenv\Scripts\activate` su Windows oppure `source myvenv/bin/activate` su Mac OS / Linux farà questo per te.
 
-<!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
+<!--sec data-title="Create project: macOS or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
-Dovresti eseguire il seguente comando nella tua console MacOS X o Linux; **non dimenticarti di aggiungere il punto `.` alla fine! **
+Dovresti eseguire il seguente comando nella tua console MacmacOS o Linux; **non dimenticarti di aggiungere il punto `.` alla fine! **
 
 {% filename %}command-line{% endfilename %}
 
@@ -56,7 +56,7 @@ Dovresti eseguire nella tua console MacOS o Linux il seguente comando; **non dim
     └── requirements.txt
     
 
-> **Nota**: nella struttura della directory, vedrai anche la tua cartella `venv` che abbiamo creato prima.
+> **Nota**: nella struttura della directory, vedrai anche la tua cartella `myvenv` che abbiamo creato prima.
 
 `manage.py` è uno script che aiuta a gestire il sito. Usandolo saremo in grado di avviare un web server sul nostro computer senza dover istallare nient'altro, tra l'altro.
 
@@ -98,7 +98,7 @@ Dovremo anche aggiungere un percorso per i file statici. (Più tardi scopriremo 
 
 ```python
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = BASE_DIR / 'static'
 ```
 
 Quando `DEBUG` è `Vero` e `ALLOWED_HOSTS` è vuoto, l'host è convalidato contro `['localhost', '127.0.0.1', '[::1]']`. Questo non abbina il nostro hostname su PythonAnywhere dopo aver distribuito la nostra applicazione in modo da modificare le seguenti impostazioni:
@@ -165,7 +165,7 @@ Ci sono un sacco di software di database diversi che possono immagazzinare dati 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 ```

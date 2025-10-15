@@ -41,10 +41,10 @@ Onde `myvenv` é o nome do seu `virtualenv`. Você pode usar qualquer outro nome
 
 <!--endsec-->
 
-<!--sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx"
+<!--sec data-title="Virtual environment: Linux and macOS" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-Podemos criar um `virtualenv` no Linux ou no OS X executando `python3 -m venv myvenv`. Deve ficar assim:
+Podemos criar um `virtualenv` no Linux ou no macOS executando `python3 -m venv myvenv`. Deve ficar assim:
 
 {% filename %}command-line{% endfilename %}
 
@@ -130,7 +130,7 @@ Inicie o seu ambiente virtual executando:
 
 <!--endsec-->
 
-<!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
+<!--sec data-title="Working with virtualenv: Linux and macOS" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
 Inicie o seu ambiente virtual executando:

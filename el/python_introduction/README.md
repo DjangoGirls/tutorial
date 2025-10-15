@@ -626,7 +626,7 @@ print('Hello, Django girls!')
 
 Με αποθηκευμένο το αρχείο, είναι ώρα να το τρέξουμε! Χρησιμοποιώντας τις δεξιότητες που μάθατε στη γραμμή εντολών, χρησιμοποιήστε την κονσόλα για να **αλλάξετε φάκελο** και να μεταβείτε στην επιφάνεια εργασίας.
 
-<!--sec data-title="Change directory: OS X" data-id="python_OSX"
+<!--sec data-title="Change directory: macOS" data-id="python_OSX"
 data-collapse=true ces-->
 
 Σε Mac, η εντολή θα μοιάζει κάπως έτσι:

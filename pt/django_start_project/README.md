@@ -12,7 +12,7 @@ Os nomes de alguns arquivos e diretórios são muito importantes para o Django. 
 
 > Lembre-se de rodar tudo no virtualenv. Se você não vê um prefixo `(myvenv)` em seu console, é necessário ativar o virtualenv. Nós explicamos como fazer isso no capítulo **Instalação do Django** na parte **Ambiente Virtual**. Digitar `myvenv\Scripts\activate` no Windows ou `source myvenv/bin/activate` no Mac OS / Linux fará isso para você.
 
-<!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
+<!--sec data-title="Create project: macOS or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
 No MacOS ou no console do Linux, rode o comando abaixo (**não esqueça de adicionar o ponto `.` no final</0!>):</p> 
 
@@ -54,7 +54,7 @@ No Windows, rode o seguinte comando (**não esqueça de adicionar o ponto `.` no
     └───requirements.txt
     
 
-> **Observação:** em sua estrutura de diretórios, você também verá o o diretório do virtualenv, `venv`, que criamos antes.
+> **Observação:** em sua estrutura de diretórios, você também verá o o diretório do virtualenv, `myvenv`, que criamos antes.
 
 `manage.py` é um script que ajuda com a gestão do site. Com ele, podemos iniciar um servidor de web no nosso computador sem instalar nada, entre outras coisas.
 
@@ -96,7 +96,7 @@ Também precisamos adicionar o caminho para os arquivos estáticos. (Discutiremo
 
 ```python
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = BASE_DIR / 'static'
 ```
 
 Quando `DEBUG` for `True` e `ALLOWED_HOSTS` estiver vazia, o domínio do site será validado como `['localhost', '127.0.0.1', '[::1]']`. Isso não corresponderá ao nosso domínio no PythonAnywhere quando implantarmos a nossa aplicação, então vamos mudamos a seguinte configuração:
@@ -123,7 +123,7 @@ Isto já está configurado nesta parte do seu arquivo `mysite/settings.py`:
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 ```

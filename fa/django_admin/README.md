@@ -23,7 +23,7 @@ admin.site.register(Post)
 
 > به یاد داشته باشید، برای نوشتن دستورات جدید در حالی که وب سرور در حال اجرا است، یک پنجره ترمینال جدید را باز کرده و محیط مجازی خود را فعال کنید. ما در مورد نحوه نوشتن دستورات جدید در بخش **راه اندازی وب سرور** از فصل **اولین پروژه جنگو شما!** صحبت کردیم.
 
-{% filename %}Mac OS X or Linux:{% endfilename %}
+{% filename %}macOS or Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py createsuperuser
     

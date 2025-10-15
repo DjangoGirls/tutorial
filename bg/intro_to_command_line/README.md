@@ -24,7 +24,7 @@
 
 Сега трябва да видите бял или черен прозорец, който чака вашите команди.
 
-<!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
+<!--sec data-title="Prompt: macOS and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
 Ако сте на Mac или Linux, вероятно виждате `$`, ето така:
 
@@ -60,7 +60,7 @@
 
 Нека започнем с въвеждането на тази команда:
 
-<!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
+<!--sec data-title="Your first command: macOS and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -98,7 +98,7 @@
 
 Би било хубаво да знаем къде сме сега, нали? Да видим. Въведете тази команда и натиснете `enter`:
 
-<!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
+<!--sec data-title="Current directory: macOS and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -118,7 +118,7 @@
     C:\Users\olasitarska
     
 
-> Забележка: 'cd' означава 'change directory' (промяна на директория). С PowerShell можете да използвате pwd точно както в Linux или Mac OS X.
+> Забележка: 'cd' означава 'change directory' (промяна на директория). С PowerShell можете да използвате pwd точно както в Linux или macOS.
 
 <!--endsec-->
 
@@ -130,9 +130,9 @@
 
 Много команди, които можете да въведете в командния ред, имат вградена помощ, която можете да показвате и четете! Например, за да научите повече за текущата команда на директория:
 
-<!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
+<!--sec data-title="Command help: macOS and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X и Linux имат команда `man`, която ви предоставя помощ за команди. Опитайте `man pwd` и вижте какво пише, или поставете `man` преди други команди, за да видите помощта им. Изходът на `man` обикновено се изписва на страницата. Използвайте интервала, за да преминете към следващата страница, и `q`, за да прекратите прегледа на помощта.
+macOS и Linux имат команда `man`, която ви предоставя помощ за команди. Опитайте `man pwd` и вижте какво пише, или поставете `man` преди други команди, за да видите помощта им. Изходът на `man` обикновено се изписва на страницата. Използвайте интервала, за да преминете към следващата страница, и `q`, за да прекратите прегледа на помощта.
 
 <!--endsec-->
 
@@ -146,7 +146,7 @@ OS X и Linux имат команда `man`, която ви предостав�
 
 И така, какво има в него? Ще е готино да разберем. Да видим:
 
-<!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
+<!--sec data-title="List files and directories: macOS and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -173,7 +173,7 @@ OS X и Linux имат команда `man`, която ви предостав�
     ...
     
 
-> Забележка: В PowerShell можете също да използвате 'ls' като в Linux и Mac OS X. <!--endsec-->
+> Забележка: В PowerShell можете също да използвате 'ls' като в Linux и macOS. <!--endsec-->
 
 * * *
 
@@ -181,7 +181,7 @@ OS X и Linux имат команда `man`, която ви предостав�
 
 Сега, нека да отидем на вашата директория Desktop:
 
-<!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
+<!--sec data-title="Change current directory: macOS" data-id="OSX_move_to" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -212,7 +212,7 @@ OS X и Linux имат команда `man`, която ви предостав�
 
 Проверете дали наистина е променена:
 
-<!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
+<!--sec data-title="Check if changed: macOS and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -242,7 +242,7 @@ OS X и Linux имат команда `man`, която ви предостав�
 
 Какво ще кажете за създаването на тестова директория на вашия работен плот? Можете да го направите по този начин:
 
-<!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
+<!--sec data-title="Create directory: macOS and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -272,7 +272,7 @@ OS X и Linux имат команда `man`, която ви предостав�
 
 #### Решение:
 
-<!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
+<!--sec data-title="Exercise solution: macOS and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -306,7 +306,7 @@ OS X и Linux имат команда `man`, която ви предостав�
 
 Първо, трябва да се върнем към Desktop:
 
-<!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
+<!--sec data-title="Clean up: macOS and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -328,7 +328,7 @@ OS X и Linux имат команда `man`, която ви предостав�
 
 Проверете къде се намирате:
 
-<!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
+<!--sec data-title="Check location: macOS and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -352,7 +352,7 @@ OS X и Linux имат команда `man`, която ви предостав�
 
 > **Внимание**: Изтриването на файлове с помощта на `del`, `rmdir` или `rm` е безвъзвратно, което означава, че *изтритите файлове ще изчезнат завинаги*! Затова бъдете много внимателни с тази команда.
 
-<!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
+<!--sec data-title="Delete directory: Windows Powershell, macOS and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -373,7 +373,7 @@ OS X и Linux имат команда `man`, която ви предостав�
 
 Готово! За да сме сигурни, че е действително изтрита, нека проверим:
 
-<!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
+<!--sec data-title="Check deletion: macOS and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -395,7 +395,7 @@ OS X и Linux имат команда `man`, която ви предостав�
 
 Това е засега! Можете спокойно да затворите командния ред. Да го направим по хакерския начин, съгласни? :)
 
-<!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
+<!--sec data-title="Exit: macOS and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 

@@ -63,7 +63,7 @@
 
 За да поддържаме всичко подредено, ние ще създадем отделно приложение вътре в нашия проект. Много е хубаво да се организира всичко от самото начало. За да създадем приложение, трябва да стартираме следната команда в конзолата (от директорията `djangogirls`, където е файлът ` manage.py`):
 
-{% filename %}Mac OS X и Linux:{% endfilename %}
+{% filename %}macOS и Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py startapp blog
     

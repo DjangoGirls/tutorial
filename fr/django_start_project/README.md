@@ -12,7 +12,7 @@ Il y existe certains fichiers et dossiers dont les noms sont extrêmement import
 
 > N'oubliez pas de tout exécuter dans votre virtualenv. Si vous ne voyez pas le préfixe `(myvenv)` dans votre console, vous avez besoin d'activer votre virtualenv. Nous vous avons expliqué comment faire ça dans le chapitre **Installation de Django**, dans la partie **Travailler avec virtualenv**. Tapez `myvenv\Scripts\activate` dans votre console Windows ou `source myvenv/bin/activate` dans celle de Mac OS ou Linux afin d'activer votre virtualenv.
 
-<!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
+<!--sec data-title="Create project: macOS or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
 Retournons à la création de notre premier projet. Tapez la commande suivant dans votre console MacOS ou Linux. **N'oubliez pas le point `.`à la fin !**
 
@@ -56,7 +56,7 @@ Sur Windows, vous devez taper la commander suivante. ** (N'oubliez pas le point 
     └── requirements.txt
     
 
-> **Note** : dans votre structure de dossier, vous pourrez voir également le répertoire `venv` que nous avons créé avant.
+> **Note** : dans votre structure de dossier, vous pourrez voir également le répertoire `myvenv` que nous avons créé avant.
 
 `manage.py` est un script qui aide à gérer ou maintenir le site. Entre autres, il permet notamment de lancer un serveur web sur notre ordinateur sans rien installer d'autre.
 
@@ -98,7 +98,7 @@ Nous allons avoir besoin aussi d'un chemin d’accès pour les fichiers statique
 
 ```python
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = BASE_DIR / 'static'
 ```
 
 Lorsque `DEBUG` a valeur `True` et `ALLOWED_HOSTS` est vide, les noms d'hôte acceptés sont `[« localhost », '127.0.0.1 », ' [ :: 1]']`. Notre nom d’hôte sur PythonAnywhere ne sera donc pas accepté une fois que notre application sera déployée. Pour éviter cela, nous allons changer le paramètre suivant :
@@ -165,7 +165,7 @@ Il est déjà configuré dans cette partie de votre fichier `mysite/settings.py`
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 ```

@@ -22,7 +22,7 @@ Sublime Text е много популярен редактор с безплат
 
 ## Atom
 
-Atom е друг популярен редактор. Той е безплатен, с отворен код и се предлага за Windows, OS X и Linux. Atom е разработен от [GitHub](https://github.com/).
+Atom е друг популярен редактор. Той е безплатен, с отворен код и се предлага за Windows, macOS и Linux. Atom е разработен от [GitHub](https://github.com/).
 
 [Изтеглете го тук](https://atom.io/)
 

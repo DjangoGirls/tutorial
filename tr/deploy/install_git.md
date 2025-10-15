@@ -9,7 +9,7 @@ Git'i [git-scm.com](https://git-scm.com/) adresinden indirebilirsiniz. Bir adım
 
 Kurulum başarı ile tamamlandıktan sonra komut istemini veya powershelli yeniden başlatmayı unutmayın. <!--endsec-->
 
-<!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
+<!--sec data-title="Installing Git: macOS" data-id="git_install_OSX"
 data-collapse=true ces-->
 
 Git'i [git-scm.com](https://git-scm.com/)'den indirin ve yönergeleri izleyin.

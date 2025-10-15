@@ -63,7 +63,7 @@ Você pode pensar em um modelo de banco de dados como uma planilha com colunas (
 
 Para manter tudo arrumado, vamos criar uma aplicação separada dentro do nosso projeto. É muito bom ter tudo organizado desde o início. Para criar uma aplicação, precisamos executar o seguinte comando no prompt (a partir do diretório `djangogirls` onde está o arquivo `manage.py`):
 
-{% filename %}Mac OS X and Linux:{% endfilename %}
+{% filename %}macOS and Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py startapp blog
     

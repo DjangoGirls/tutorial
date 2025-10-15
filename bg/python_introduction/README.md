@@ -626,7 +626,7 @@ print('Hello, Django girls!')
 
 С вече запазения файл е време да го пуснем! Да използваме това, което научихме от секцията с командите. Ползвайте терминала (конзолата) за да смените директорията до началния си екран (desktop).
 
-<!--sec data-title="Change directory: OS X" data-id="python_OSX"
+<!--sec data-title="Change directory: macOS" data-id="python_OSX"
 data-collapse=true ces-->
 
 На Mac, командата ще излгежда по този начин:

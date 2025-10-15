@@ -7,7 +7,7 @@ In this chapter you'll learn how Django connects to the database and stores data
 
 A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow you to read the data from the database, filter it and order it.
 
-It's easiest to learn by example. Let's try this, shall we?
+It's easier to learn by example. Let's try this, shall we?
 
 
 ## Django shell

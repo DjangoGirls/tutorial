@@ -10,7 +10,7 @@ data-collapse=true ces-->
 После окончания установки не забудь перезапустить командную строку или PowerShell.
 <!--endsec-->
 
-<!--sec data-title="OS X" data-id="git_install_OSX"
+<!--sec data-title="macOS" data-id="git_install_OSX"
 data-collapse=true ces-->
 
 Загрузи Git с официального сайта [git-scm.com](https://git-scm.com/) и просто следуй инструкциям по установке.

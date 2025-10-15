@@ -1,27 +1,54 @@
+---
 name: Build and Deploy
+
 on:
   push:
     branches:
       - master
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    if: github.repository == 'djangogirls/tutorial'
+  build:
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           persist-credentials: false
-
+      - uses: awalsh128/cache-apt-pkgs-action@v1
+        with:
+          packages: calibre
       - name: Install and Build
         run: |
+          sudo apt install rename
           npm install
           npx honkit build
-
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+          npx honkit epub
+          rename 's/^book/django-girls-tutorial/' book_*.epub
+          mv *.epub _book/
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: _book
+          path: _book
+
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

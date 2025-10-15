@@ -9,7 +9,7 @@ data-collapse=true ces-->
 
 インストールが正常に終了した後、コマンドプロンプトまたはPowerShellを再起動することを忘れないでください。<!--endsec-->
 
-<!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
+<!--sec data-title="Installing Git: macOS" data-id="git_install_OSX"
 data-collapse=true ces-->
 
 [git-scm.com](https://git-scm.com/) からGitをダウンロードし、指示に従ってください。

@@ -24,7 +24,7 @@
 
 شما صفحه‌ای سیاه یا سفید خواهید دید که منتظر دستورات شماست.
 
-<!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
+<!--sec data-title="Prompt: macOS and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
 اگر بر روی مک یا لینوکس کار می‌کنید، ممکن است یک علامت `$` ببینید:
 
@@ -60,7 +60,7 @@
 
 بیایید با تایپ این دستور شروع کنیم:
 
-<!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
+<!--sec data-title="Your first command: macOS and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -98,7 +98,7 @@
 
 بسیار خوب است که بفهمیم در کدام دایرکتوری هستیم. این دستور را تایپ کنید و کلید `enter` را بزنید:
 
-<!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
+<!--sec data-title="Current directory: macOS and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -130,9 +130,9 @@
 
 بسیاری از فرمان‌هایی که شما می‌توانید در پرامت فرمان تایپ کنید یک راهنمای داخلی دارند که می‌توانید آن را ببینید و بخوانید! مثلاٌ برای آنکه در مورد فرمان دایرکتوری جاری بیشتر بدانید:
 
-<!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
+<!--sec data-title="Command help: macOS and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X و لینوکس یک فرمان `man` دارند که در مورد فرمان‌ها کمک زیادی می‌کند. دستور `man pwd` را امتحان کنید و ببینید که چه می‌شود. یا دستور `man` را قبل از فرمان‌های دیگر قرار دهید تا راهنمای داخلی آن‌ها را ببینید. خروجی فرمان `man` صفحه بندی شده است. با کمک کلید اسپیس به صفحه بعد بروید و با زدن `q` از راهنما خارج شوید.
+macOS و لینوکس یک فرمان `man` دارند که در مورد فرمان‌ها کمک زیادی می‌کند. دستور `man pwd` را امتحان کنید و ببینید که چه می‌شود. یا دستور `man` را قبل از فرمان‌های دیگر قرار دهید تا راهنمای داخلی آن‌ها را ببینید. خروجی فرمان `man` صفحه بندی شده است. با کمک کلید اسپیس به صفحه بعد بروید و با زدن `q` از راهنما خارج شوید.
 
 <!--endsec-->
 
@@ -146,7 +146,7 @@ OS X و لینوکس یک فرمان `man` دارند که در مورد فرم�
 
 چی توش هست؟ خوبه که بفهمیم. نگاه کنید:
 
-<!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
+<!--sec data-title="List files and directories: macOS and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -173,7 +173,7 @@ OS X و لینوکس یک فرمان `man` دارند که در مورد فرم�
     ...
     
 
-> نکته: در PowerShell شما می‌توانید مانند لینوکس یا Mac OS X از دستور 'ls' استفاده کنید.<!--endsec-->
+> نکته: در PowerShell شما می‌توانید مانند لینوکس یا macOS از دستور 'ls' استفاده کنید.<!--endsec-->
 
 * * *
 
@@ -181,7 +181,7 @@ OS X و لینوکس یک فرمان `man` دارند که در مورد فرم�
 
 حالا به دایرکتوری Desktop کامپیوترمان برویم:
 
-<!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
+<!--sec data-title="Change current directory: macOS" data-id="OSX_move_to" data-collapse=true ces-->
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -212,7 +212,7 @@ OS X و لینوکس یک فرمان `man` دارند که در مورد فرم�
 
 بررسی کنید که آیا واقعاً دایرکتوری جاری عوض شد:
 
-<!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
+<!--sec data-title="Check if changed: macOS and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -242,7 +242,7 @@ OS X و لینوکس یک فرمان `man` دارند که در مورد فرم�
 
 چطور است که یک دایرکتوری آزمایشی بر روی دسکتاپ بسازیم؟ به این روش می‌توانید انجام دهید:
 
-<!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
+<!--sec data-title="Create directory: macOS and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -272,7 +272,7 @@ OS X و لینوکس یک فرمان `man` دارند که در مورد فرم�
 
 #### راه حل:
 
-<!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
+<!--sec data-title="Exercise solution: macOS and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -306,7 +306,7 @@ OS X و لینوکس یک فرمان `man` دارند که در مورد فرم�
 
 اول از همه باید به Desktop برویم:
 
-<!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
+<!--sec data-title="Clean up: macOS and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -328,7 +328,7 @@ OS X و لینوکس یک فرمان `man` دارند که در مورد فرم�
 
 بررسی کنید که کجا هستید:
 
-<!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
+<!--sec data-title="Check location: macOS and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -352,7 +352,7 @@ OS X و لینوکس یک فرمان `man` دارند که در مورد فرم�
 
 > **توجه**: پاک کردن فایل‌ها با `del` یا `rmdir` یا `rm` غیر قابل بازگشت است به این معنی که *فایل‌های پاک شده برای همیشه از بین می‌روند*! بنابراین هنگام کار با این دستورها بسیار احتیاط کنید.
 
-<!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
+<!--sec data-title="Delete directory: Windows Powershell, macOS and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -373,7 +373,7 @@ OS X و لینوکس یک فرمان `man` دارند که در مورد فرم�
 
 انجام شد! برای اینکه مطمئن شوید پاک شده است آن را چک کنید:
 
-<!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
+<!--sec data-title="Check deletion: macOS and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -395,7 +395,7 @@ OS X و لینوکس یک فرمان `man` دارند که در مورد فرم�
 
 برای الان کافی است! شما می‌توانید به راحتی خط فرمان را ببندید. بیایید به روش هکرها انجامش دهیم، باشه؟ :)
 
-<!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
+<!--sec data-title="Exit: macOS and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
 {% filename %}خط فرمان{% endfilename %}
 

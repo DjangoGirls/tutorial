@@ -14,11 +14,11 @@ The first step is to start a new Django project. Basically, this means that we'l
 The names of some files and directories are very important for Django. You should not rename the files that we are about to create. Moving them to a different place is also not a good idea. Django needs to maintain a certain structure to be able to find important things.
 
 > Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. We explained how to do that in the __Django installation__ chapter in the __Working with virtualenv__ part. Typing `myvenv\Scripts\activate` on Windows or
-`source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
+`source myvenv/bin/activate` on macOS or Linux will do this for you.
 
-<!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
+<!--sec data-title="Create project: macOS or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
-In your Mac OS X or Linux console, you should run the following command. **Don't forget to add the period (or dot) `.` at the end!**
+In your macOS or Linux console, you should run the following command. **Don't forget to add the period (or dot) `.` at the end!**
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -53,6 +53,7 @@ The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the
 djangogirls
 ├── manage.py
 ├── mysite
+│   ├── asgi.py
 │   ├── __init__.py
 │   ├── settings.py
 │   ├── urls.py
@@ -61,9 +62,9 @@ djangogirls
 │   └── ...
 └── requirements.txt
 ```
-> **Note**: in your directory structure, you will also see your `venv` directory that we created before.
+> **Note**: in your directory structure, you will also see your `myvenv` directory that we created before.
 
-`manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
+`manage.py` is a script that helps with management of the site. With it we will be able (among other things) to start a web server on our computer without installing anything else.
 
 The `settings.py` file contains the configuration of your website.
 
@@ -76,7 +77,9 @@ Let's ignore the other files for now as we won't change them. The only thing to 
 
 Let's make some changes in `mysite/settings.py`. Open the file using the code editor you installed earlier.
 
-**Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "file -> open" menu actions. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
+**Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "File -> Open" menu action. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the `djangogirls/` folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
+
+#### Changing the Timezone
 
 It would be nice to have the correct time on our website. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
 
@@ -87,7 +90,12 @@ In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choos
 TIME_ZONE = 'Europe/Berlin'
 ```
 
-A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `ch` for Switzerland. If English is not your native language, you can add this to change the default buttons and notifications from Django to be in your language. So you would have "Cancel" button translated into the language you defined here. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/2.2/ref/settings/#language-code).
+> **Note**: Timezones should be in the Region/City format, so eg "EDT" is not valid, but "America/Detroit" is.
+
+
+#### Changing the Language
+
+A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `ch` for Switzerland. If English is not your native language, you can add this to change the default buttons and notifications from Django to be in your language. So you would have "Cancel" button translated into the language you defined here. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/5.1/ref/settings/#language-code).
 
 If you want a different language, change the language code by changing the following line:
 
@@ -97,20 +105,25 @@ LANGUAGE_CODE = 'de-ch'
 ```
 
 
-We'll also need to add a path for static files. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
+#### Other settings
+
+We'll also need to add a path for static files.
+(We'll find out all about static files and CSS later in the tutorial.)
+Go down to the *end* of the file,
+and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
 
 {% filename %}mysite/settings.py{% endfilename %}
 ```python
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / 'static'
 ```
 
-When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated against `['localhost', '127.0.0.1', '[::1]']`. This won't
-match our hostname on PythonAnywhere once we deploy our application so we will change the following setting:
+When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated against `['localhost', '127.0.0.1', '[::1]']`.
+This won't match our hostname on PythonAnywhere once we deploy our application so we will change the following setting:
 
 {% filename %}mysite/settings.py{% endfilename %}
 ```python
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.pythonanywhere.com']
 ```
 
 > **Note**: If you're using a Chromebook, add this line at the bottom of your settings.py file:
@@ -118,7 +131,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 > Also add `.amazonaws.com` to the `ALLOWED_HOSTS` if you are using cloud9
 
-> If you are hosting your project on `Glitch.com`, let us protect the Django secret key that needs to 
+> If you are hosting your project on `Glitch.com`, let us protect the Django secret key that needs to
 > remain confidential (otherwise, anyone remixing your project could see it):
 >
 >   * First, we are going to create a random secret key.
@@ -130,8 +143,8 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 >           print(get_random_secret_key())'
 >     ```
 >     This should display a long random string, perfect to use as a secret key for your brand new Django web site.
->     We will now paste this key into a `.env` file that Glitch will only show you if you are the owner of the web site.    
->   
+>     We will now paste this key into a `.env` file that Glitch will only show you if you are the owner of the web site.
+>
 >   * Create a file `.env` at the root of your project and add the following property in it:
 >
 >     {% filename %}.env{% endfilename %}
@@ -143,6 +156,8 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 >
 >     {% filename %}mysite/settings.py{% endfilename %}
 >     ```python
+>     import os
+>
 >     SECRET_KEY = os.getenv('SECRET')
 >     ```
 >   * And a little further down in the same file, we inject the name of your new Glitch website:
@@ -165,7 +180,7 @@ This is already set up in this part of your `mysite/settings.py` file:
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 ```
@@ -176,13 +191,13 @@ To create a database for our blog, let's run the following in the console: `pyth
 ```
 (myvenv) ~/djangogirls$ python manage.py migrate
 Operations to perform:
-  Apply all migrations: auth, admin, contenttypes, sessions
+  Apply all migrations: admin, auth, contenttypes, sessions
 Running migrations:
-  Rendering model states... DONE
   Applying contenttypes.0001_initial... OK
   Applying auth.0001_initial... OK
   Applying admin.0001_initial... OK
   Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
   Applying contenttypes.0002_remove_content_type_name... OK
   Applying auth.0002_alter_permission_name_max_length... OK
   Applying auth.0003_alter_user_email_max_length... OK
@@ -192,6 +207,9 @@ Running migrations:
   Applying auth.0007_alter_validators_add_error_messages... OK
   Applying auth.0008_alter_user_username_max_length... OK
   Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
   Applying sessions.0001_initial... OK
 ```
 
@@ -245,6 +263,8 @@ or on Glitch:
 ```
 https://name-of-your-glitch-project.glitch.me
 ```
+
+You can open this in another browser window and you should see the Django install worked page.
 
 Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?
 

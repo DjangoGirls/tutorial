@@ -20,7 +20,7 @@ Bu üç yer sizin için önemli olacak. Lokal bilgisayarınız geliştirme ve te
 
 Git, bir kod deposu (repository veya kısaca "repo") olarak adlandırılan belirli dosyalardaki değişiklikleri izler. Projemiz için bir tane oluşturalım. Konsolunuzu açın ve `djangogirls` klasöründe aşağıdaki komutları çalıştırın:
 
-> **Not** Reponuzu oluşturmadan önce `pwd` (Mac OS X/Linux) ya da `cd` (Windows) komutu ile şu an çalışmakta olan dizininizi kontrol edin. `djangogirls` dizininde olmanız gerekiyor.
+> **Not** Reponuzu oluşturmadan önce `pwd` (macOS/Linux) ya da `cd` (Windows) komutu ile şu an çalışmakta olan dizininizi kontrol edin. `djangogirls` dizininde olmanız gerekiyor.
 
 {% filename %}komut-satırı{% endfilename %}
 

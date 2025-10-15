@@ -14,7 +14,7 @@
 
 > Не забудь: ты должна запускать все команды в virtualenv. Если ты не видишь в командной строке префикса `(myvenv)`, то необходимо активировать virtualenv. Мы объясняли, как это сделать, в разделе __Работаем с virtualenv__ главы __Установка Django__. Для этого нужно набрать `myvenv\Scripts\activate` в Windows или `source myvenv/bin/activate` в Mac OS / Linux.
 
-<!--sec data-title="OS X или Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
+<!--sec data-title="macOS или Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
 В консоли Mac OS или Linux нужно запустить следующую команду (**не забудь добавить точку `.` в конце**):
 
@@ -98,7 +98,7 @@ LANGUAGE_CODE = 'ru-ru'
 {% filename %}mysite/settings.py{% endfilename %}
 ```python
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = BASE_DIR / 'static'
 ```
 
 Когда наcтройка `DEBUG` имеет значение `True`, а настройка `ALLOWED_HOSTS` пуста, имя хост твоего веб-сайта сверяется со списком `['localhost', '127.0.0.1', '[::1]']`.
@@ -123,7 +123,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 ```

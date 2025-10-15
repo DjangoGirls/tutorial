@@ -28,7 +28,7 @@ Git je "systém pro správu verzí" používaný spoustou programátorů. Tento 
 
 Git sleduje změny v sadě souborů v takzvaném úložišti kódu/repository (nebo zkráceně "repo"). Založme si jedno repo pro náš projekt. Otevři konzoli a v `djangogirls` adresáři spusť tyto příkazy:
 
-> **Poznámka:** Zkontroluj si svůj aktuální pracovní adresář pomocí `pwd` (OS x/Linux) nebo příkazem `cd` (Windows) před inicializací úložiště. Měla bys být ve složce `djangogirls`.
+> **Poznámka:** Zkontroluj si svůj aktuální pracovní adresář pomocí `pwd` (macOS/Linux) nebo příkazem `cd` (Windows) před inicializací úložiště. Měla bys být ve složce `djangogirls`.
 
 ```
 $ git init

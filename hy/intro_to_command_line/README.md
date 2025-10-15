@@ -12,7 +12,7 @@
 
 ## Ի՞նչ է հրամանի տողը/command line: 
 
-Պատուհանը, որը սովորաբար անվանում են **Հրամանի տող/ command line** կամ **«Հրամանի տողի միջերես»/command-line interface (CLI)** , տեքստի վրա հիմնված ծրագիր է ՝ ձեր համակարգչի վրա ֆայլերը դիտելու, մշակելու և շահարկելու համար: Դա անում է նույնը, ինչ Explorer- ը Windows- ում կամ Finder- ը Mac OS X- ում, բայց այն չունի գրաֆիկական ինտերֆեյս: Հրամանի տողի այլ անուններն են ՝ *cmd*, *CLI*, *prompt*, *console* կամ *terminal*:
+Պատուհանը, որը սովորաբար անվանում են **Հրամանի տող/ command line** կամ **«Հրամանի տողի միջերես»/command-line interface (CLI)** , տեքստի վրա հիմնված ծրագիր է ՝ ձեր համակարգչի վրա ֆայլերը դիտելու, մշակելու և շահարկելու համար: Դա անում է նույնը, ինչ Explorer- ը Windows- ում կամ Finder- ը macOS- ում, բայց այն չունի գրաֆիկական ինտերֆեյս: Հրամանի տողի այլ անուններն են ՝ *cmd*, *CLI*, *prompt*, *console* կամ *terminal*:
 
 ## Բացեք հրամանի տողի միջերեսը/command-line interface
 
@@ -24,7 +24,7 @@
 
 Այժմ դուք պետք է տեսնեք սպիտակ կամ սև պատուհան, որը սպասում է ձեր հրամաններին:
 
-<!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
+<!--sec data-title="Prompt: macOS and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
 Եթե ​​ունեք Mac կամ Linux, ամենայն հավանականությամբ տողի վերջում կտեսնեք այս `$` նշանը.
 
@@ -60,7 +60,7 @@ Windows- ում, հավանաբար, տեսնում եք այս `>` նշանը.
 
 Սկսենք մուտքագրել այս հրամանը.
 
-<!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
+<!--sec data-title="Your first command: macOS and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -98,7 +98,7 @@ Windows- ում, հավանաբար, տեսնում եք այս `>` նշանը.
 
 Ցանկալի կլիներ իմանալ, թե որտեղ ենք մենք գտնվում, այնպես չէ՞: Եկեք տեսնենք: Մուտքագրեք այս հրամանը և սեղմեք `enter`.
 
-<!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
+<!--sec data-title="Current directory: macOS and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -118,7 +118,7 @@ Windows- ում, հավանաբար, տեսնում եք այս `>` նշանը.
     C:\Users\olasitarska
     
 
-> Նշում. «Cd» նշանակում է «փոփոխել գրացուցակը»/'change directory': PowerShell- ի միջոցով դուք կարող եք օգտագործել pwd այնպես, ինչպես Linux- ում կամ Mac OS X- ում:
+> Նշում. «Cd» նշանակում է «փոփոխել գրացուցակը»/'change directory': PowerShell- ի միջոցով դուք կարող եք օգտագործել pwd այնպես, ինչպես Linux- ում կամ macOS- ում:
 
 <!--endsec-->
 
@@ -130,9 +130,9 @@ Windows- ում, հավանաբար, տեսնում եք այս `>` նշանը.
 
 Հրամանի տողի շատ հրամաններ ներկառուցված օգնություն ունեն: Օրինակ ՝ ահա, թե ինչպես կարելի է ավելին իմանալ հրամանի մասին, որը ցույց է տալիս, թե որ թղթապանակում եք գտնվում ներկայումս.
 
-<!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
+<!--sec data-title="Command help: macOS and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X- ը և Linux- ը ունեն `man` հրաման, որը ձեզ օգնում է հրամանների հարցում: Փորձեք `man pwd` -ը և տեսեք, թե ինչ է ասում, կամ `man` հրամանը այլ հրամանների առաջ դրեք, որպեսզի տեսնեք նրանց օգնությունը: Սովորաբար, `man`-ի էջերը ցուցադրվում են էջ առ էջ: Օգտագործեք space bar հաջորդ էջին անցնելու համար, և ` q ` - ը `օգնությունից դուրս գալու համար:
+macOS- ը և Linux- ը ունեն `man` հրաման, որը ձեզ օգնում է հրամանների հարցում: Փորձեք `man pwd` -ը և տեսեք, թե ինչ է ասում, կամ `man` հրամանը այլ հրամանների առաջ դրեք, որպեսզի տեսնեք նրանց օգնությունը: Սովորաբար, `man`-ի էջերը ցուցադրվում են էջ առ էջ: Օգտագործեք space bar հաջորդ էջին անցնելու համար, և ` q ` - ը `օգնությունից դուրս գալու համար:
 
 <!--endsec-->
 
@@ -146,7 +146,7 @@ OS X- ը և Linux- ը ունեն `man` հրաման, որը ձեզ օգնում 
 
 Այսպիսով ի՞նչ կա դրա մեջ: Լավ կլինի պարզել դա: Տեսնենք.
 
-<!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
+<!--sec data-title="List files and directories: macOS and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -173,7 +173,7 @@ OS X- ը և Linux- ը ունեն `man` հրաման, որը ձեզ օգնում 
     ...
     
 
-> Նշում. PowerShell- ում կարող եք նաև օգտագործել «ls» - ը, ինչպես Linux- ում և Mac OS X- ում:<!--endsec-->
+> Նշում. PowerShell- ում կարող եք նաև օգտագործել «ls» - ը, ինչպես Linux- ում և macOS- ում:<!--endsec-->
 
 * * *
 
@@ -181,7 +181,7 @@ OS X- ը և Linux- ը ունեն `man` հրաման, որը ձեզ օգնում 
 
 Հիմա եկեք գնանք մեր աշխատասեղանի գրացուցակին/Desktop directory.
 
-<!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
+<!--sec data-title="Change current directory: macOS" data-id="OSX_move_to" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -212,7 +212,7 @@ OS X- ը և Linux- ը ունեն `man` հրաման, որը ձեզ օգնում 
 
 Ստուգեք, արդյոք այն իսկապես փոխվել է.
 
-<!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
+<!--sec data-title="Check if changed: macOS and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -242,7 +242,7 @@ OS X- ը և Linux- ը ունեն `man` հրաման, որը ձեզ օգնում 
 
 Ի՞նչ կասեք ձեր աշխատասեղանի վրա պրակտիկ գրացուցակ ստեղծելու մասին: Դուք կարող եք դա անել այս կերպ.
 
-<!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
+<!--sec data-title="Create directory: macOS and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -272,7 +272,7 @@ OS X- ը և Linux- ը ունեն `man` հրաման, որը ձեզ օգնում 
 
 #### Լուծում.
 
-<!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
+<!--sec data-title="Exercise solution: macOS and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -306,7 +306,7 @@ OS X- ը և Linux- ը ունեն `man` հրաման, որը ձեզ օգնում 
 
 Նախ, մենք պետք է վերադառնանք Desktop / աշխատասեղան.
 
-<!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
+<!--sec data-title="Clean up: macOS and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -328,7 +328,7 @@ OS X- ը և Linux- ը ունեն `man` հրաման, որը ձեզ օգնում 
 
 Ստուգեք, թե որտեղ եք դուք ՝
 
-<!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
+<!--sec data-title="Check location: macOS and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -352,7 +352,7 @@ OS X- ը և Linux- ը ունեն `man` հրաման, որը ձեզ օգնում 
 
 > ** Ուշադրություն **. `del`, `rmdir` կամ `rm`ֆայլերը ջնջելը անվերադարձ է, այսինքն ՝ *ջնջված ֆայլերը կվերանան ընդմիշտ*!: Այսպիսով, շատ զգույշ եղեք այս հրամանի հետ:
 
-<!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
+<!--sec data-title="Delete directory: Windows Powershell, macOS and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -373,7 +373,7 @@ OS X- ը և Linux- ը ունեն `man` հրաման, որը ձեզ օգնում 
 
 Կատարած է! Համոզված լինելու համար, որ այն իրականում ջնջված է, եկեք ստուգենք այն.
 
-<!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
+<!--sec data-title="Check deletion: macOS and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -395,7 +395,7 @@ OS X- ը և Linux- ը ունեն `man` հրաման, որը ձեզ օգնում 
 
 Առայժմ վերջ: Այժմ կարող եք ապահով կերպով փակել հրամանի տողը: Եկեք դա անենք հակերային եղանակով, լա՞վ: :)
 
-<!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
+<!--sec data-title="Exit: macOS and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 

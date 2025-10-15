@@ -16,9 +16,9 @@ W dalszej części tego tutoriala konieczne będzie otwarcie dwóch okien polece
 
 <!--endsec-->
 
-<!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
+<!--sec data-title="Opening: macOS" data-id="macOS_prompt" data-collapse=true ces-->
 
-Przejdź do Applications → Utilities → Terminal.
+Przejdź do Launchpad → Other → Terminal.
 
 <!--endsec-->
 

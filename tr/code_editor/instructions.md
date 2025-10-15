@@ -16,7 +16,7 @@ Sublime Text, ücretsiz deneme süresi olan çok popüler bir editördür ve tü
 
 ## Atom
 
-Atom başka bir popüler editör. Ücretsiz, açık kaynaklı ve Windows, OS X ve Linux için kullanılabilir. Atom  GitHub </ 0> tarafından geliştirilmiştir.</p>
+Atom başka bir popüler editör. Ücretsiz, açık kaynaklı ve Windows, macOS ve Linux için kullanılabilir. Atom  GitHub </ 0> tarafından geliştirilmiştir.</p>
 
 [Buradan indirin](https://atom.io/)
 

@@ -20,7 +20,7 @@ Te trzy miejsca będą dla Ciebie bardzo ważne. Twój lokalny komputer będzie 
 
 Git śledzi zmiany dokonywane w zbiorze plików w czymś, co nazywamy repozytorium kodu (albo po prostu "repo", żeby było krócej). Stwórzmy takie repozytorium dla naszego projektu. Otwórz konsolę w katalogu `djangogirls` i wpisz następujące polecenia:
 
-> **Uwaga** Sprawdź bieżący katalog roboczy za pomocą polecenia `pwd` (Mac OS X/Linux) lub `cd` (Windows) przed inicjalizacją repozytorium. Powinnaś się znajdować w katalogu `djangogirls`.
+> **Uwaga** Sprawdź bieżący katalog roboczy za pomocą polecenia `pwd` (macOS/Linux) lub `cd` (Windows) przed inicjalizacją repozytorium. Powinnaś się znajdować w katalogu `djangogirls`.
 
 {% filename %}command-line{% endfilename %}
 

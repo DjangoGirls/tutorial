@@ -23,7 +23,7 @@ Para iniciar sesión, deberás crear un *superusuario (superuser)*, que es un us
 
 > Recuerda, para escribir comandos mientras el servidor web está funcionando, abre una nueva terminal y activa el virtualenv. Revisamos cómo escribir nuevos comandos en el capítulo **Tu primer proyecto de Django!**, al inicio de la sección **Iniciando el servidor web**.
 
-{% filename %}Mac OS X o Linux:{% endfilename %}
+{% filename %}macOS o Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py createsuperuser
     

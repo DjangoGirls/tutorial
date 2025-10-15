@@ -22,7 +22,7 @@ To log in, you need to create a *superuser* - a user account that has control ov
 
 > Remember, to write new commands while the web server is running, open a new terminal window and activate your virtualenv. We reviewed how to write new commands in the <b>Your first Django project!</b> chapter, in the <b>Starting the web server</b> section.
 
-{% filename %}Mac OS X or Linux:{% endfilename %}
+{% filename %}macOS or Linux:{% endfilename %}
 ```
 (myvenv) ~/djangogirls$ python manage.py createsuperuser
 ```
@@ -52,6 +52,6 @@ Make sure that at least two or three posts (but not all) have the publish date s
 
 ![Django admin](images/edit_post3.png)
 
-If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/2.2/ref/contrib/admin/
+If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/5.1/ref/contrib/admin/
 
 This is probably a good moment to grab a coffee (or tea) or something to eat to re-energize yourself. You created your first Django model – you deserve a little break!

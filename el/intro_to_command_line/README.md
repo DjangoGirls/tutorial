@@ -26,9 +26,9 @@
 
 <!--endsec-->
 
-<!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
+<!--sec data-title="Opening: macOS" data-id="macOS_prompt" data-collapse=true ces-->
 
-Πηγαίνετε στο Applications → Utilities → Terminal.
+Πηγαίνετε στο Launchpad → Other → Terminal.
 
 <!--endsec-->
 
@@ -42,7 +42,7 @@
 
 Θα πρέπει, τώρα, να βλέπετε ένα άσπρο ή μαύρο παράθυρο που αναμένει εντολές από εσάς.
 
-<!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
+<!--sec data-title="Prompt: macOS and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
 Αν είστε σε Mac ή Linux, θα βλέπετε το `$`, όπως αυτό:
 
@@ -78,7 +78,7 @@
 
 Ας ξεκινήσουμε με αυτή την εντολή:
 
-<!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
+<!--sec data-title="Your first command: macOS and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -116,7 +116,7 @@
 
 Θα ήταν ωραίο να γνωρίζουμε πού βρισκόμαστε τώρα, έτσι; Ας δούμε. Πληκτρολογήσετε αυτή την εντολή πατήστε `enter`:
 
-<!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
+<!--sec data-title="Current directory: macOS and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -136,7 +136,7 @@
     C:\Users\olasitarska
     
 
-> Σημείωση: 'cd' σημαίνει 'change directory'. Με το PowerShell μπορείτε να χρησιμοποιήσετε την εντολή pwd όπως στο Linux ή το Mac OS X.
+> Σημείωση: 'cd' σημαίνει 'change directory'. Με το PowerShell μπορείτε να χρησιμοποιήσετε την εντολή pwd όπως στο Linux ή το macOS.
 
 <!--endsec-->
 
@@ -148,9 +148,9 @@
 
 Πολλές εντολές που πληκτρολογείτε στη γραμμή εντολών έχουν ενσωματωμένη βοήθεια που μπορείτε να εμφανίσετε και να διαβάσετε! Για παράδειγμα, για να μάθετε περισσότερα σχετικά με τον τρέχων φάκελο:
 
-<!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
+<!--sec data-title="Command help: macOS and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-Τα λειτουργικά συστήματα OS X και Linux έχουν μια εντολή `man`, η οποία δίνει βοήθεια στις εντολές. Δοκιμάστε `man pwd` και δείτε τι λέει ή βάλτε την εντολή `man` πριν από άλλες εντολές για να δείτε τη βοήθειά τους. Η έξοδος της εντολής `man` παρουσιάζεται, συνήθως, ως σελιδοποιημένη (paged). Χρησιμοποιήστε το κουμπί του διαστήματος για να κινηθείτε προς την επόμενη σελίδα και το πλήκτρο `q` για να βγείτε από την "σελιδοποιημένη" βοήθεια, πίσω στην γραμμή εντολών.
+Τα λειτουργικά συστήματα macOS και Linux έχουν μια εντολή `man`, η οποία δίνει βοήθεια στις εντολές. Δοκιμάστε `man pwd` και δείτε τι λέει ή βάλτε την εντολή `man` πριν από άλλες εντολές για να δείτε τη βοήθειά τους. Η έξοδος της εντολής `man` παρουσιάζεται, συνήθως, ως σελιδοποιημένη (paged). Χρησιμοποιήστε το κουμπί του διαστήματος για να κινηθείτε προς την επόμενη σελίδα και το πλήκτρο `q` για να βγείτε από την "σελιδοποιημένη" βοήθεια, πίσω στην γραμμή εντολών.
 
 <!--endsec-->
 
@@ -164,7 +164,7 @@
 
 Τι είναι, λοιπόν, μέσα; Θα ήταν ωραίο να μάθουμε. Ας δούμε:
 
-<!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
+<!--sec data-title="List files and directories: macOS and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -191,7 +191,7 @@
     ...
     
 
-> Σημείωση: Σε PowerShell μπορείτε επίσης να χρησιμοποιήσετε το 'ls' όπως στο Linux και στο Mac OS X. <!--endsec-->
+> Σημείωση: Σε PowerShell μπορείτε επίσης να χρησιμοποιήσετε το 'ls' όπως στο Linux και στο macOS. <!--endsec-->
 
 * * *
 
@@ -199,7 +199,7 @@
 
 Τώρα, ας μεταβούμε στον φάκελο επιφάνεια εργασίας:
 
-<!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
+<!--sec data-title="Change current directory: macOS and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -219,7 +219,7 @@
 
 Δείτε αν όντως άλλαξε:
 
-<!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
+<!--sec data-title="Check if changed: macOS and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -249,7 +249,7 @@
 
 Τι θα λέγατε να δημιουργούσαμε έναν φάκελο για σκοπούς εξάσκησης στην επιφάνεια εργασίας; Μπορείτε να το κάνετε κατ' αυτό τον τρόπο:
 
-<!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
+<!--sec data-title="Create directory: macOS and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -279,7 +279,7 @@
 
 #### Λύση:
 
-<!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
+<!--sec data-title="Exercise solution: macOS and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -313,7 +313,7 @@
 
 Πρώτα, πρέπει να πάμε πίσω στην Επιφάνεια Εργασίας:
 
-<!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
+<!--sec data-title="Clean up: macOS and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -335,7 +335,7 @@
 
 Δείτε που είστε:
 
-<!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
+<!--sec data-title="Check location: macOS and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -359,7 +359,7 @@
 
 > **Προσοχή**: Η διαγραφή των αρχείων χρησιμοποιώντας τις εντολές `del`, `rmdir` ή `rm` είναι μη αναστρέψιμες, δηλαδή *τα διεγραμμένα αρχεία δεν μπορούν να επανακτηθούν*! Οπότε να είστε προσεκτικοί με αυτή την εντολή.
 
-<!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
+<!--sec data-title="Delete directory: Windows Powershell, macOS and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -380,7 +380,7 @@
 
 Έγινε! Για να βεβαιωθείτε ότι όντως διαγράφηκε, ας το δούμε:
 
-<!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
+<!--sec data-title="Check deletion: macOS and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -402,7 +402,7 @@
 
 Αυτά για τώρα! Μπορείτε να κλείσετε τη γραμμή εντολών με ασφάλεια τώρα. Ας το κάνουμε με τον τρόπο του χάκερ, εντάξει;:)
 
-<!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
+<!--sec data-title="Exit: macOS and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 

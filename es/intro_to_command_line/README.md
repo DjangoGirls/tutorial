@@ -24,7 +24,7 @@ Para empezar con algunos experimentos necesitarás abrir nuestra interfaz de lí
 
 Ahora deberías ver una pantalla blanca o negra que espera a que introduzcas tus comandos.
 
-<!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
+<!--sec data-title="Prompt: macOS and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
 Si estás en Mac o Linux, probablemente veas una `$`, como ésta:
 
@@ -60,7 +60,7 @@ En el tutorial, cuando queramos introducir un comando, incluye el `$` o `>`, y o
 
 Comencemos tecleando este comando:
 
-<!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
+<!--sec data-title="Your first command: macOS and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -97,7 +97,7 @@ Cada sistema operativo tiene un poco diferente la configuración de los comandos
 
 Sería bueno saber dónde estamos ahora, ¿Correcto? Veamos. Escribe éste comando y presiona `enter`:
 
-<!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
+<!--sec data-title="Current directory: macOS and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -117,7 +117,7 @@ Sería bueno saber dónde estamos ahora, ¿Correcto? Veamos. Escribe éste coman
     C:\Users\olasitarska
     
 
-> Nota: 'cd' es para cambiar de directorio (change directory). Con la consola tu puedes usar pwd solo con Linux o Mac OS X.
+> Nota: 'cd' es para cambiar de directorio (change directory). Con la consola tu puedes usar pwd solo con Linux o macOS.
 
 <!--endsec-->
 
@@ -129,9 +129,9 @@ Probablemente veremos algo similar en tu computador. Una vez que abres la consol
 
 ¡Muchos comandos pueden escribirse en el prompt que tiene construido una ayuda que puedes leer! Por ejemplo, aprende más acerca de el comando del directorio actual:
 
-<!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
+<!--sec data-title="Command help: macOS and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X y Linux tienen un comando `man`, el cual te da una ayuda en comandos. Intenta `man pwd` y ve qué dice, o coloca `man` antes de otro comando para ver su ayuda. La salida de `man` nomalmentes es paginada. Usa la barra de espacio para moverte a la siguiente página, y `q` para salir de la ayuda.
+macOS y Linux tienen un comando `man`, el cual te da una ayuda en comandos. Intenta `man pwd` y ve qué dice, o coloca `man` antes de otro comando para ver su ayuda. La salida de `man` nomalmentes es paginada. Usa la barra de espacio para moverte a la siguiente página, y `q` para salir de la ayuda.
 
 <!--endsec-->
 
@@ -145,7 +145,7 @@ Añade un sufijo `/?` para más comandos que se imprimirán en la página de ayu
 
 Así que, ¿en qué estamos? Estaría bien saberlo. Veamos:
 
-<!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
+<!--sec data-title="List files and directories: macOS and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -172,7 +172,7 @@ Así que, ¿en qué estamos? Estaría bien saberlo. Veamos:
     ...
     
 
-> Nota: En consola tu puedes usar también 'ls' como en Linux y Mac OS X. <!--endsec-->
+> Nota: En consola tu puedes usar también 'ls' como en Linux y macOS. <!--endsec-->
 
 * * *
 
@@ -180,7 +180,7 @@ Así que, ¿en qué estamos? Estaría bien saberlo. Veamos:
 
 Ahora, vamos a nuestro directorio de escritorio:
 
-<!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
+<!--sec data-title="Change current directory: macOS" data-id="OSX_move_to" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -211,7 +211,7 @@ Nota que el nombre del directorio "Escritorio" puede ser traducido al lenguaje d
 
 Verifica si está cambiado actualmente:
 
-<!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
+<!--sec data-title="Check if changed: macOS and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -239,7 +239,7 @@ Verifica si está cambiado actualmente:
 
 ¿Cómo crear un práctico directorio para tu escritorio? Puedes hacerlo de esta manera:
 
-<!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
+<!--sec data-title="Create directory: macOS and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -269,7 +269,7 @@ Un pequeño reto para ti: en tu nuevo directorio creado `práctica`, crea un dir
 
 #### Solución:
 
-<!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
+<!--sec data-title="Exercise solution: macOS and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -303,7 +303,7 @@ No queremos dejar un enredo, así que removamos todo lo que hicimos hasta este m
 
 Primero, necesitamos regresar al Escritorio:
 
-<!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
+<!--sec data-title="Clean up: macOS and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -325,7 +325,7 @@ Usando los `..` con el comando `cd` cambiaremos tu actual directorio al director
 
 Verifica dónde estás:
 
-<!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
+<!--sec data-title="Check location: macOS and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -347,7 +347,7 @@ Es hora de eliminar el directorio `practica`:
 
 > **Atención**: Si eliminas los archivos usando `del`, `rmdir` o `rm` no se podrán recuperar, esto significa ¡*el borrado de los archivos será para siempre*! Sé muy cuidados@ con este comando.
 
-<!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
+<!--sec data-title="Delete directory: Windows Powershell, macOS and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -368,7 +368,7 @@ Es hora de eliminar el directorio `practica`:
 
 ¡Hecho! Estás seguro que lo eliminaste realmente, verifica:
 
-<!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
+<!--sec data-title="Check deletion: macOS and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -390,7 +390,7 @@ Es hora de eliminar el directorio `practica`:
 
 ¡Eso es todo por ahora! Tú puedes ahora cerrar la línea de comandos o consola sin problemas. Hazlo como un hacker, ¿vale? :)
 
-<!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
+<!--sec data-title="Exit: macOS and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 

@@ -43,11 +43,11 @@ Python для Windows можна завантажити з сайту https://ww
     $ sudo zypper install python3
 
 
-### OS X
+### macOS
 
 Вам необхідно перейти на веб сайт https://www.python.org/downloads/release/python-343/ і завантажити Python інсталятор:
 
-* завантажте файл *Mac OS X 64-bit/32-bit installer*,
+* завантажте файл *macOS 64-bit/32-bit installer*,
 * Двічі клацніть на *python 3.4.3 macosx10.6.pkg*, щоб запустити інсталятор.
 
 Підтвердіть, що інсталяція пройшла успішно відкривши програму *Terminal* і запустивши команду `python3`:

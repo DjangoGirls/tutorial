@@ -39,7 +39,7 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
 
 {% raw %}Time to explain the mysterious `{% url 'post_detail' pk=post.pk %}`. As you might suspect, the `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!{% endraw %}
 
-The `post_detail` part means that Django will be expecting a URL in `blog/urls.py` with name=post_detail
+The `post_detail` part means that Django will be expecting a URL in `blog/urls.py` with `name=post_detail`.
 
 And how about `pk=post.pk`? `pk` is short for primary key, which is a unique identifier for each record in a database. Every Django model has a field which serves as its primary key, and whatever other name it has, it can also be referred to as "pk". Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a field named "id" holding a number that increases for each record, i.e. 1, 2, 3) and adds it as a field to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields  (`title`, `author`, etc.) in our `Post` object!
 
@@ -75,7 +75,20 @@ That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Djang
 
 OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! The server has stopped running again. Have a look at the console – as expected, there's yet another error!
 
-![AttributeError](images/attribute_error2.png)
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
+
+```
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/ola/djangogirls/blog/urls.py", line 6, in <module>
+    path('post/<int:pk>/', views.post_detail, name='post_detail'),
+AttributeError: module 'blog.views' has no attribute 'post_detail'
+```
 
 Do you remember what the next step is? It's adding a view!
 

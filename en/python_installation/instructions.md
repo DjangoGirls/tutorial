@@ -28,15 +28,15 @@ Note: If you are using an older version of Windows (7, Vista, or any older versi
 
 <!--endsec-->
 
-<!--sec data-title="Install Python: OS X" data-id="python_OSX"
+<!--sec data-title="Install Python: macOS" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
+> **Note** Before you install Python on macOS, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
 
-You need to go to the website https://www.python.org/downloads/mac-osx/ and download the latest Python installer:
+You need to go to the website https://www.python.org/downloads/ and download the latest Python installer:
 
-* Download the *Mac OS X 64-bit/32-bit installer* file,
-* Double click *python-{{ book.py_release }}-macosx10.9.pkg* to run the installer.
+* Download Python {{ book.py_release }},
+* Double click *python-{{ book.py_release }}-macos11.pkg* to run the installer.
 
 <!--endsec-->
 
@@ -51,7 +51,7 @@ $ python3 --version
 Python {{ book.py_release }}
 ```
 
-If you have a different version of Python installed, at least {{ book.py_min_version }} (e.g. {{ book.py_min_release }}), then you don't have to upgrade. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
+If you have a different version of Python installed, at least {{ book.py_min_version }} (e.g. {{ book.py_min_release }}), then you don't have to upgrade. If you don't have Python installed, or if you want a different version, first check which Linux distribution you are using with the following command:
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -108,7 +108,7 @@ Python {{ book.py_release }}
 ```
 The version shown may be different from {{ book.py_release }} -- it should match the version you installed.
 
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is {{ book.py_min_version }} or higher. If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
+**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is {{ book.py_min_version }} or higher. If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt that was opened before the Python installation.
 
 ----
 

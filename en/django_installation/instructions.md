@@ -8,7 +8,7 @@ is copyrighted by Markus Zapke-Gründemann et al.
 
 ## Virtual environment
 
-Before we install Django we will get you to install an extremely useful tool to help keep your coding environment tidy on your computer. It's possible to skip this step, but it's highly recommended. Starting with the best possible setup will save you a lot of trouble in the future!
+Before we install Django we will get you to install an extremely useful tool to help keep your coding environment tidy on your computer. It's possible to skip this step, but it's highly recommended to follow it. Starting with the best possible setup will save you a lot of trouble in the future!
 
 So, let's create a **virtual environment** (also called a *virtualenv*). Virtualenv will isolate your Python/Django setup on a per-project basis. This means that any changes you make to one website won't affect any others you're also developing. Neat, right?
 
@@ -45,10 +45,10 @@ Where `myvenv` is the name of your `virtualenv`. You can use any other name, but
 
 <!--endsec-->
 
-<!--sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx"
+<!--sec data-title="Virtual environment: Linux and macOS" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv myvenv`.
+We can create a `virtualenv` on both Linux and macOS by running `python3 -m venv myvenv`.
 It will look like this:
 
 {% filename %}command-line{% endfilename %}
@@ -104,6 +104,7 @@ $ python3 -m venv myvenv
 
 <!--endsec-->
 
+
 ## Working with virtualenv
 
 The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directories and files).
@@ -124,7 +125,7 @@ C:\Users\Name\djangogirls> myvenv\Scripts\activate
 >```
 >C:\WINDOWS\system32> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 >     Execution Policy Change
->     The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
+>     The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at https://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
 >```
 
 <!-- (This comment separates the two blockquote blocks, so that GitBook and Crowdin don't merge them into a single block.) -->
@@ -138,7 +139,7 @@ C:\Users\Name\djangogirls> myvenv\Scripts\activate
 
 <!--endsec-->
 
-<!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
+<!--sec data-title="Working with virtualenv: Linux and macOS" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
 Start your virtual environment by running:
@@ -203,7 +204,7 @@ Now, run `pip install -r requirements.txt` to install Django.
 ```
 (myvenv) ~$ pip install -r requirements.txt
 Collecting Django~={{ book.django_version }} (from -r requirements.txt (line 1))
-  Downloading Django-{{ book.django_version }}-py3-none-any.whl (7.1MB)
+  Downloading Django-{{ book.django_version }}-py3-none-any.whl (7.9MB)
 Installing collected packages: Django
 Successfully installed Django-{{ book.django_version }}
 ```

@@ -20,7 +20,7 @@ To install Bootstrap, open up your `.html` file in the code editor and add this 
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 ```
 
 This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
@@ -70,7 +70,8 @@ Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code
 We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
 
 But let's do at least a little. Maybe we could change the color of our headers?
-To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
+To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: https://www.colorpicker.com/. You may also use predefined [named colors](https://developer.mozilla.org/en-US/docs/Web/CSS/named-color), such as `red` and `green`.
+
 
 In your `blog/static/css/blog.css` file you should add the following code:
 
@@ -91,8 +92,7 @@ We also identify elements by the attribute `class` or the attribute `id`. Class 
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
 ```
 
-You can read more about [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
-
+You can read more about [CSS Selectors at MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors).
 We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file in the code editor and add this line at the very beginning of it:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
@@ -107,7 +107,7 @@ Between the `<head>` and `</head>` tags, after the links to the Bootstrap CSS fi
 ```html
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
-The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may be overriden by code in Bootstrap files.
+The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may be overridden by code in Bootstrap files.
 We just told our template where our CSS file is located.
 
 Your file should now look like this:
@@ -119,7 +119,7 @@ Your file should now look like this:
 <html>
     <head>
         <title>Django Girls blog</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
@@ -159,10 +159,10 @@ Maybe we can customize the font in our header? Paste this into your `<head>` in 
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
-<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext">
 ```
 
-As before, check the order and place before the link to `blog/static/css/blog.css`. This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
+Again, check the order and place it before the link to `blog/static/css/blog.css`. This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
 
 Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file `blog/static/css/blog.css`.  Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
 
@@ -266,14 +266,15 @@ h4 {
     float: right;
 }
 
-.btn-default,
-.btn-default:visited {
+.btn-secondary,
+.btn-secondary:visited {
     color: #C25100;
     background: none;
     border-color: #C25100;
+    margin-left: 15px;
 }
 
-.btn-default:hover {
+.btn-secondary:hover {
     color: #FFFFFF;
     background-color: #C25100;
 }

@@ -10,11 +10,11 @@
 
 Имената на някои файлове и директории са много важни за Django. Не трябва да преименувате файловете, които предстои да създадем. Преместването им на друго място също не е добра идея. Django трябва да поддържа определена структура, за да може да намери важни неща.
 
-> Не забравяйте да стартирате всичко във virtualenv (виртуалната среда). Ако не видите префикс `(myvenv)` в конзолата си, трябва да активирате своята virtualenv. Обяснихме как да направим това в главата **Инсталация на Django** в частта **Работа с virtualenv**. Въвеждането `myvenv\Scripts\activate`` в Windows или <0>source myvenv/bin/activate` в Mac OS X или Linux ще направи това вместо вас.
+> Не забравяйте да стартирате всичко във virtualenv (виртуалната среда). Ако не видите префикс `(myvenv)` в конзолата си, трябва да активирате своята virtualenv. Обяснихме как да направим това в главата **Инсталация на Django** в частта **Работа с virtualenv**. Въвеждането `myvenv\Scripts\activate`` в Windows или <0>source myvenv/bin/activate` в macOS или Linux ще направи това вместо вас.
 
-<!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
+<!--sec data-title="Create project: macOS or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
-Във вашата Mac OS X или Linux конзола трябва да изпълните следната команда. ** Не забравяйте да добавите точка `.` в края!**
+Във вашата macOS или Linux конзола трябва да изпълните следната команда. ** Не забравяйте да добавите точка `.` в края!**
 
 {% filename %}command-line{% endfilename %}
 
@@ -56,7 +56,7 @@
     └── requirements.txt
     
 
-> **Забележка**: в структурата на вашата директория ще видите и вашата `venv` директория, която създадохме преди.
+> **Забележка**: в структурата на вашата директория ще видите и вашата `myvenv` директория, която създадохме преди.
 
 `manage.py` е скрипт, който помага при управлението на сайта. С него ще можем (освен всичко друго) да стартираме уеб сървър на нашия компютър, без да инсталираме нищо друго.
 
@@ -98,7 +98,7 @@ LANGUAGE_CODE = 'de-ch'
 
 ```python
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = BASE_DIR / 'static'
 ```
 
 Когато `DEBUG` е `True` и `ALLOWED_HOSTS` е празен, хостът е валидиран срещу `['localhost', '127.0.0.1', '[::1]']`. Това няма да съвпада с името на хоста ни в PythonAnywhere, след като разширим нашето приложение, така че ще променим следната настройка:
@@ -125,7 +125,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 ```

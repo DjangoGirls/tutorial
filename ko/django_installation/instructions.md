@@ -39,7 +39,7 @@ C:\Users\Name\djangogirls> C:\Python35\python -m venv myvenv
 
 <!--endsec-->
 
-<!--sec data-title="Linux / OS X" data-id="virtualenv_installation_linuxosx" data-collapse=true ces-->
+<!--sec data-title="Linux / macOS" data-id="virtualenv_installation_linuxosx" data-collapse=true ces-->
 
 리눅스와 맥에서 `virtualenv`를 생성하려면 간단하게 `python3 -m venv myvenv`를 입력하면 됩니다. 화면에 이렇게 나타날 거에요. :
 
@@ -119,7 +119,7 @@ C:\WINDOWS\system32> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 
 <!--endsec-->
 
-<!--sec data-title="Linux / OS X" data-id="virtualenv_linuxosx"
+<!--sec data-title="Linux / macOS" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
 아래 명령어를 입력해 가상환경을 실행하세요. :

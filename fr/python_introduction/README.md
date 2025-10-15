@@ -10,7 +10,7 @@ Allons écrire du code !
 
 > Pour les lecteurs à la maison: cette partie est couverte dans la vidéo [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) .
 
-Pour commencer à jouer avec Python, nous avons besoin d'ouvrir une *ligne de commande* sur votre ordinateur. Normalement, vous savez déjà comment le faire – vous l'avez appris dans le chapitre [Introduction à la ligne de commande](/intro_to_command_line/README. html).
+Pour commencer à jouer avec Python, nous avons besoin d'ouvrir une *ligne de commande* sur votre ordinateur. Normalement, vous savez déjà comment le faire – vous l'avez appris dans le chapitre [Introduction à la ligne de commande](../intro_to_command_line/README.md).
 
 Dès que vous êtes prête, suivez les instructions suivantes.
 
@@ -628,7 +628,7 @@ Maintenant, nous devons sauvegarder le fichier et lui donner un nom descriptif. 
 
 Une fois que le fichier est sauvegardé, vous pouvez le lancer ! En utilisant les compétences que vous avez apprises dans la section sur la ligne de commande, utilisez le terminal pour **changer le dossier courant** vers le bureau.
 
-<!--sec data-title="Change directory: OS X" data-id="python_OSX"
+<!--sec data-title="Change directory: macOS" data-id="python_OSX"
 data-collapse=true ces-->
 
 Sur Mac, ça ressemblera à :

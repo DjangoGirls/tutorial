@@ -41,10 +41,10 @@ Burada `myvenv`, `virtualenv`'inizin ismidir. İstediğiniz herhangi bir ismi ku
 
 <!--endsec-->
 
-<!--sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx"
+<!--sec data-title="Virtual environment: Linux and macOS" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-Hem Linux hem de OS X 'teyken `python3 -m venv myvenv` komutuyla bir `virtualenv` oluşturabiliriz. Şu şekilde gözükecektir:
+Hem Linux hem de macOS 'teyken `python3 -m venv myvenv` komutuyla bir `virtualenv` oluşturabiliriz. Şu şekilde gözükecektir:
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -123,7 +123,7 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-<!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
+<!--sec data-title="Working with virtualenv: Linux and macOS" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
 Şu komutu çalıştırarak virtualenv'i başlatın:

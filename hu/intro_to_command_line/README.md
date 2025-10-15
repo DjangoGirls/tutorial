@@ -23,9 +23,9 @@ Start menu → All Programs → Accessories → Command Prompt.
 <!--endsec-->
 
 
-<!--sec data-title="OS X" data-id="OSX_prompt" data-collapse=true ces-->
+<!--sec data-title="macOS" data-id="macOS_prompt" data-collapse=true ces-->
 
-Applications → Utilities → Terminal.
+Launchpad → Other → Terminal.
 
 <!--endsec-->
 
@@ -39,7 +39,7 @@ Valószínűleg itt találod meg: Applications → Accessories → Terminal, de 
 
 Egy fehér vagy fekete ablakot kell látnod, ami csak a te parancsaidra vár.
 
-<!--sec data-title="OS X és Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
+<!--sec data-title="macOS és Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
 Ha Mac-ed vagy Linux-od van, valószínűleg egy `$`-t kell látnod:
 
@@ -69,7 +69,7 @@ A tutorial során, amikor egy parancsot kell beírnod, ki fogjuk írni a `$` vag
 
 Kezdjük valami egyszerűvel. Gépeld be ezt a parancsot:
 
-<!--sec data-title="OS X és Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
+<!--sec data-title="macOS és Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
 {% filename %}parancssor{% endfilename %}
 ```
@@ -107,7 +107,7 @@ Minden operációs rendszer parancssora kissé különböző prancsokat igényel
 
 Jó lenne tudni, hogy most hol vagyunk, nem? Nézzük. Írd be ezt a parancsot, és nyomj `enter`t:
 
-<!--sec data-title="OS X és Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
+<!--sec data-title="macOS és Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
 {% filename %}parancssor{% endfilename %}
 ```
@@ -127,7 +127,7 @@ $ pwd
 > cd
 C:\Users\olasitarska
 ```
-> Megjegyzés: a 'cd' jelentése: 'change directory' ('könyvtár váltása'). Ha PowerShell-t használsz, használhatod a pwd parancsot is, mint Linuxon vagy Mac OS X-en.
+> Megjegyzés: a 'cd' jelentése: 'change directory' ('könyvtár váltása'). Ha PowerShell-t használsz, használhatod a pwd parancsot is, mint Linuxon vagy macOS-en.
 
 <!--endsec-->
 
@@ -140,7 +140,7 @@ Valószínűleg valami hasonlót fogsz látni a gépeden. Amikor megnyitod a par
     
 És mi van benne? Szuper lenne kideríteni. Nézzük meg:
 
-<!--sec data-title="OS X és Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
+<!--sec data-title="macOS és Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
     $ ls
     Applications
@@ -169,7 +169,7 @@ Valószínűleg valami hasonlót fogsz látni a gépeden. Amikor megnyitod a par
 
 Most pedig lépjünk be a Desktop (vagy Asztal) mappába:
 
-<!--sec data-title="OS X és Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
+<!--sec data-title="macOS és Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
 {% filename %}parancssor{% endfilename %}
 ```
@@ -189,7 +189,7 @@ $ cd Desktop
 
 Nézzük meg, hogy tényleg megváltozott-e:
 
-<!--sec data-title="OS X és Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
+<!--sec data-title="macOS és Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
 {% filename %}parancssor{% endfilename %}
 ```
@@ -217,7 +217,7 @@ Itt is van!
 
 Mit szólnál, ha létrehoznánk egy gyakorló (practice) könyvtárat az asztalon? Így tudod megtenni:
 
-<!--sec data-title="OS X és Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
+<!--sec data-title="macOS és Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
 {% filename %}parancssor{% endfilename %}
 ```
@@ -246,7 +246,7 @@ Egy kis kihívás: hozz létre egy `test` nevű mappát a frissen elkészített 
 
 #### Megoldás:
 
-<!--sec data-title="OS X és Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
+<!--sec data-title="macOS és Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
 {% filename %}parancssor{% endfilename %}
 ```
@@ -280,7 +280,7 @@ Nem szeretnénk káoszt hagyni magunk után, szóval töröljünk le mindent, am
 
 Először vissza kell mennünk az Asztal-ra:
 
-<!--sec data-title="OS X és Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
+<!--sec data-title="macOS és Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
 {% filename %}parancssor{% endfilename %}
 ```
@@ -302,7 +302,7 @@ Ha a `cd` parancsot `..`-tal használod, a jelenlegi könyvtárból a parent (sz
 
 Ellenőrizzük le, hogy hol vagyunk:
 
-<!--sec data-title="OS X és Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
+<!--sec data-title="macOS és Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
 {% filename %}parancssor{% endfilename %}
 ```
@@ -325,7 +325,7 @@ Most pedig itt az ideje, hogy kitöröljük a `practice` könyvtárat:
 
 > **Figyelem**: A fájlok törlése a `del`, `rmdir`, vagy a `rm` parancsokkal visszafordíthatatlan, tehát a *törölt fájlok örökre eltűnnek*! Legyél nagyon óvatos ezzel a paranccsal.
 
-<!--sec data-title="OS X és Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
+<!--sec data-title="macOS és Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
 {% filename %}parancssor{% endfilename %}
 ```
@@ -346,7 +346,7 @@ practice, Are you sure <Y/N>? Y
 
 Kész! Ellenőrizzük le, hogy tényleg megtörtént-e:
 
-<!--sec data-title="OS X és Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
+<!--sec data-title="macOS és Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
 {% filename %}parancssor{% endfilename %}
 ```
@@ -368,7 +368,7 @@ $ ls
 
 Ennyi volt! Most már biztonságosan kiléphetsz a parancssorból. Csináljuk hacker módra, jó?:)
 
-<!--sec data-title="OS X és Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
+<!--sec data-title="macOS és Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
 {% filename %}parancssor{% endfilename %}
 ```

@@ -27,14 +27,14 @@ Eğer Python'ın eski bir versiyonunu yüklerseniz, yükleme ekranı yukarıda g
 
 <!--endsec-->
 
-<!--sec data-title="Install Python: OS X" data-id="python_OSX"
+<!--sec data-title="Install Python: macOS" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Not** Python'ı OS X'te yüklemeden önce, Mac ayarlarınızın App Store'dan olmayan paketleri yüklemeye izin verdiğinden emin olmalısınız. Sistem Tercihleri'ne (Uygulamalar klasöründe) gidin, önce "Güvenlik & Gizlilik"'e ve daha sonra da "Genel" sekmesine tıklayın. Eğer sizin "Şuradan yüklenen uygulamalara izin ver:" ayarınız "Mac App Store"'a ayarlıysa, onu "Mac App Store and kimliği bilinen geliştirici."lere çevirin
+> **Not** Python'ı macOS'te yüklemeden önce, Mac ayarlarınızın App Store'dan olmayan paketleri yüklemeye izin verdiğinden emin olmalısınız. Sistem Tercihleri'ne (Uygulamalar klasöründe) gidin, önce "Güvenlik & Gizlilik"'e ve daha sonra da "Genel" sekmesine tıklayın. Eğer sizin "Şuradan yüklenen uygulamalara izin ver:" ayarınız "Mac App Store"'a ayarlıysa, onu "Mac App Store and kimliği bilinen geliştirici."lere çevirin
 
 Python kurulum dosyasını indirmek için resmi siteye gitmelisiniz: https://www.python.org/downloads/release/python-361/
 
-* *Mac OS X 64-bit/32-bit yükleyici* dosyasını indirin,
+* *macOS 64-bit/32-bit yükleyici* dosyasını indirin,
 * *python-3.6.1-macosx10.6.pkg* 'a çift tıklayarak yükleyiciyi çalıştırın.
 
 <!--endsec-->

@@ -29,14 +29,14 @@ Hinweis: Falls du eine ältere Version von Windows verwendest (7, Vista oder äl
 
 <!--endsec-->
 
-<!--sec data-title="Install Python: OS X" data-id="python_OSX"
+<!--sec data-title="Install Python: macOS" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Hinweis** Bevor du Python auf Mac OS X installierst, musst du sicherstellen, dass deine Mac-Einstellungen es erlauben, Pakete zu installieren, die nicht aus dem App Store stammen. Geh auf Systemeinstellungen (im Ordner "Programme"), klicke auf "Sicherheit", und dann auf die Registerkarte "Allgemein". Wenn "Apps-Download erlauben von:" auf "Mac App Store" gestellt ist, ändere die Einstellung auf "Mac App Store und verifizierte Entwickler".
+> **Hinweis** Bevor du Python auf macOS installierst, musst du sicherstellen, dass deine Mac-Einstellungen es erlauben, Pakete zu installieren, die nicht aus dem App Store stammen. Geh auf Systemeinstellungen (im Ordner "Programme"), klicke auf "Sicherheit", und dann auf die Registerkarte "Allgemein". Wenn "Apps-Download erlauben von:" auf "Mac App Store" gestellt ist, ändere die Einstellung auf "Mac App Store und verifizierte Entwickler".
 
 Auf der Website https://www.python.org/downloads/mac-osx/ findest du aktuellen Python-Installer:
 
-* Lade die Datei *Mac OS X 64-bit/32-bit installer* herunter,
+* Lade die Datei *macOS 64-bit/32-bit installer* herunter,
 * Doppelklicke auf *python-{{ book.py_release }}-macosx10.9.pkg*, um die Installation zu starten.
 
 <!--endsec-->
@@ -47,10 +47,10 @@ data-collapse=true ces-->
 Es ist ziemlich wahrscheinlich, dass du Python schon automatisch installiert hast. Um herauszufinden, ob das so ist (und wenn ja, welche Version du hast), öffne eine Konsole und gib das folgende Kommando ein:
 
 {% filename %}command-line{% endfilename %}
-
-    $ python3 --version
-    Python {{ book.py_release }}
-    
+```
+$ python3 --version
+Python {{ book.py_release }}
+``` 
 
 Wenn du eine andere Version von Python installiert hast, die {{ book.py_min_version }} oder höher ist, z.B. {{ book.py_min_release }}, dann musst du die Version nicht aktualisieren. Wenn du Python noch nicht installiert hast oder wenn du eine andere Python-Version willst, prüfe zuerst mit folgendem Befehl, welche Linux-Distribution du benutzt:
 
@@ -103,10 +103,10 @@ Gib diesen Befehl in die Konsole ein:
 Prüfe, ob die Installation erfolgreich war, indem du ein Kommandozeilenfenster öffnest und den `python3`-Befehl ausführst:
 
 {% filename %}command-line{% endfilename %}
-
-    $ python3 --version
-    Python {{ book.py_release }}
-    
+```
+$ python3 --version
+Python {{ book.py_release }}
+```    
 
 Die angezeigte Version kann bei dir eine andere sein als {{ book.py_release }} -- sie sollte aber der entsprechen, die du installiert hast.
 

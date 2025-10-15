@@ -9,7 +9,7 @@ data-collapse=true ces-->
 
 Не забравяйте да рестартирате командния ред или PowerShell, след като инсталацията приключи успешно. <!--endsec-->
 
-<!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
+<!--sec data-title="Installing Git: macOS" data-id="git_install_OSX"
 data-collapse=true ces-->
 
 Свалете Git от [git-scm.com](https://git-scm.com/) и следвайте инструкцията.

@@ -23,7 +23,7 @@ admin.site.register(Post)
 
 > Не забравяйте, че за да пишете нови команди, докато уеб сървърът работи, отворете нов прозорец на терминала и активирайте своя virtualenv. Прегледахме как да пишете нови команди във **Вашия първи проект на Django!**, в секцията **Стартиране на уеб сървъра**.
 
-{% filename %}Mac OS X or Linux:{% endfilename %}
+{% filename %}macOS or Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py createsuperuser
     

@@ -23,7 +23,7 @@ Giriş yapabilmek için, sitedeki her şey üzerinde kontrolü olan *superuser* 
 
 > Ağ sunucusu açıkken yeni komut yazmak için, yeni bir terminal penceresi açıp sanal ortamınızı (virtualenv) aktive etmeniz gerekmektedir. **Web sunucusu başlatma** bölümünün, **Sizin ilk Django projeniz!** kısmında yeni komutların nasıl yazılacağını gözden geçirdik.
 
-{% filename %}Mac OS X veya Linux:{% endfilename %}
+{% filename %}macOS veya Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py createsuperuser
     

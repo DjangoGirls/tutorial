@@ -72,7 +72,7 @@ Git wird die Änderungen an all den Dateien und Ordnern in diesem Verzeichnis au
 
 Speichere die Datei mit dem Namen `.gitignore` im "djangogirls"-Root-Verzeichnis.
 
-> **Hinweis:** Der Punkt vor dem Dateinamen ist wichtig! Wenn du Schwierigkeiten beim Erstellen hast (z.B. lassen Macs im Finder keine Dateien mit Punkt am Anfang erzeugen, Punkt-Dateien sind auf Linux und OS X "versteckte Dateien"), dann verwende die "Speichern unter"-Funktion im Editor, das sollte immer funktionieren. Wichtig ist, dass du den Dateinamen nicht mit `.txt`, `.py` oder einer anderen Dateinamen-Erweiterung ergänzt -- die Datei wird von Git nur erkannt, wenn ihr Name exakt nur `.gitignore` ist. Linux und MacOS behandeln Dateien mit Namen, die mit `.` beginnen (wie `.gitignore`), als versteckt und der normale `ls`-Befehl zeigt diese Dateien nicht an. Verwende stattdessen `ls -a` um die Datei `.gitignore` anzuzeigen.
+> **Hinweis:** Der Punkt vor dem Dateinamen ist wichtig! Wenn du Schwierigkeiten beim Erstellen hast (z.B. lassen Macs im Finder keine Dateien mit Punkt am Anfang erzeugen, Punkt-Dateien sind auf Linux und macOS "versteckte Dateien"), dann verwende die "Speichern unter"-Funktion im Editor, das sollte immer funktionieren. Wichtig ist, dass du den Dateinamen nicht mit `.txt`, `.py` oder einer anderen Dateinamen-Erweiterung ergänzt -- die Datei wird von Git nur erkannt, wenn ihr Name exakt nur `.gitignore` ist. Linux und MacOS behandeln Dateien mit Namen, die mit `.` beginnen (wie `.gitignore`), als versteckt und der normale `ls`-Befehl zeigt diese Dateien nicht an. Verwende stattdessen `ls -a` um die Datei `.gitignore` anzuzeigen.
 > 
 > **Hinweis:** Eine der Dateien, die du in deiner `.gitignore`-Datei defniniert hast, ist `db.sqlite3`. Diese Datei ist deine lokale Datenbank, in welcher alle deine Benutzer und Posts gespeichert werden. Wir werden die gängige Web-Entwicklungs-Praxis befolgen, was heißt, dass wir separate Datenbanken für unsere lokale Test-Website und unsere öffentliche Website auf PythonAnywhere verwenden werden. Die Datenbank für letztere könnte SQLite sein, wie auf deiner Entwicklungsmaschine, aber normalerweise wirst du eine sogenannte MySQL-Datenbank nutzen, welche mit viel mehr Besuchern umgehen kann als SQLite. So oder so, dadurch, dass du deine SQLite-Datenbank für die GitHub-Kopie nicht verwendest, werden alle deine bisherigen Posts der Superuser nur lokal zur Verfügung stehen und du musst in der produktiven Umgebung neue hinzufügen. Betrachte deine lokale Datenbank als tollen Spielplatz, auf welchem du verschiedene Dinge ausprobieren kannst, ohne Angst zu haben, dass du deine wirklichen Post auf deinem Blog löschst.
 
@@ -171,7 +171,7 @@ Um eine Web App auf PythonAnywhere publizieren zu können, muss dein Code von Gi
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pip3.8 install --user pythonanywhere
+    $ pip install --user pythonanywhere
     
 
 Nach diesem Befehl solltest du in etwa Folgendes sehen: `Collecting pythonanywhere`, und irgendwann den Schluss `Successfully installed (...) pythonanywhere- (...)`.
@@ -180,7 +180,7 @@ Nun können wir mit dem Hilfstool unsere App von GitHub automatisch konfiguriere
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pa_autoconfigure_django.py --python=3.8 https://github.com/<your-github-username>/my-first-blog.git
+    $ pa_autoconfigure_django.py --python=3.10 https://github.com/<your-github-username>/my-first-blog.git
     
 
 Während du die Ausführung verfolgst, wirst du sehen, was passiert:

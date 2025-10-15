@@ -21,7 +21,7 @@
 {% filename %}command-line{% endfilename %}
 ```
 $ python3
-Python 3.6.1 (...)
+Python {{ book.py_release }} (...)
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
@@ -588,7 +588,7 @@ print('Hello, Django girls!')
 
 После сохранения файла пришло время запустить его! Используя навыки из раздела о командной строке, открой терминал и **поменяй текущую директорию** на рабочий стол.
 
-<!--sec data-title="OS X" data-id="python_OSX"
+<!--sec data-title="macOS" data-id="python_OSX"
 data-collapse=true ces-->
 
 Для Mac команда будет выглядеть так:

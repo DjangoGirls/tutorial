@@ -16,7 +16,7 @@ Sublime Text je velmi oblíbený editor s bezplatnou zkušební dobou. Lze jej s
 
 ## Atom
 
-Atom je velmi nový editor kódu vytvořen [GitHub](https://github.com/)em. Je zdarma, je open-source a má snadnou instalaci a snadné použití. Je k dispozici pro Windows, OS X a Linux.
+Atom je velmi nový editor kódu vytvořen [GitHub](https://github.com/)em. Je zdarma, je open-source a má snadnou instalaci a snadné použití. Je k dispozici pro Windows, macOS a Linux.
 
 [Stáhnout si jej můžeš zde](https://atom.io/)
 

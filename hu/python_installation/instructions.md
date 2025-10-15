@@ -12,14 +12,14 @@ Egy fontos dolog, amire figyelj oda: a telepítővarázsló második képernyőj
 
 <!--endsec-->
 
-<!--sec data-title="OS X" data-id="python_OSX"
+<!--sec data-title="macOS" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Megjegyzés** Mielőtt telepítenéd a Pythont OS X-en, bizonyosodj meg arról hogy a Mac beállításaid megengedik olyan csomagok telepítését, amelyek nem az App Store-ból származnak. Nyisd meg a System Preferences ablakot (az Applications mappában), kattints a "Security & Privacy" gombra majd a "General" fülre. Ha az "Allow apps downloaded from:" beállítás "Mac App Store"-ra van állítva, állítsd át "Mac App Store and identified developers"-ra.
+> **Megjegyzés** Mielőtt telepítenéd a Pythont macOS-en, bizonyosodj meg arról hogy a Mac beállításaid megengedik olyan csomagok telepítését, amelyek nem az App Store-ból származnak. Nyisd meg a System Preferences ablakot (az Applications mappában), kattints a "Security & Privacy" gombra majd a "General" fülre. Ha az "Allow apps downloaded from:" beállítás "Mac App Store"-ra van állítva, állítsd át "Mac App Store and identified developers"-ra.
 
 Menj a https://www.python.org/downloads/release/python-343/ oldalra, és töltsd le a Python installert:
 
-  * Töltsd le a *Mac OS X 64-bit/32-bit installer* fájlt,
+  * Töltsd le a *macOS 64-bit/32-bit installer* fájlt,
   * Kattints duplán a *python-3.4.3-macosx10.6.pkg*-re, hogy futtasd a telepítőt.
 
 <!--endsec-->

@@ -20,7 +20,7 @@
 
 نرم افزار گیت تغییرات یک مجموعه فایل که در جایی به نام مخزن (به طور مخفف repo) وجود دارند را ردگیری می‌کند. بیایید یکی برای پروژه خودمان بسازیم. کنسول خود را باز کنید و این دستورات را در پوشه `djangogirls` اجرا کنید:
 
-> ** توجه ** قبل از شروع به کار موقعیت پوشه‌ای را که در آن هستید با دستور `pwd` (در سیستم عامل Mac OS X / Linux) یا `cd` (در ویندوز) بفهمید. شما باید در پوشه `djangogirls` باشید.
+> ** توجه ** قبل از شروع به کار موقعیت پوشه‌ای را که در آن هستید با دستور `pwd` (در سیستم عامل macOS / Linux) یا `cd` (در ویندوز) بفهمید. شما باید در پوشه `djangogirls` باشید.
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -171,7 +171,7 @@
 
 {% filename %}خط فرمان PythonAnywhere {% endfilename %}
 
-    $ pip3.8 install --user pythonanywhere
+    $ pip install --user pythonanywhere
     
 
 این دستور باید چیزهایی شبیه به `Collecting pythonanywhere` بر روی صفحه نشان دهد و در انتها نیز این پیغام `Successfully installed (...) pythonanywhere- (...)` نمایش داده خواهد شد.
@@ -180,7 +180,7 @@
 
 {% filename %}خط فرمان PythonAnywhere {% endfilename %}
 
-    $ pa_autoconfigure_django.py --python=3.8 https://github.com/<your-github-username>/my-first-blog.git
+    $ pa_autoconfigure_django.py --python=3.10 https://github.com/<your-github-username>/my-first-blog.git
     
 
 همینطور که به اجراشدن آن نگاه می‌کنید می‌توانید بفهمید که چه کاری انجام می‌دهد:

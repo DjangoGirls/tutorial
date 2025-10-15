@@ -23,7 +23,7 @@ admin.site.register(Post)
 
 > Webサーバーを実行しているときに新しいコマンドを入力したい場合は、新しいターミナルウィンドウを開き、仮想環境（virtualenv）を有効にすることを思い出してください。 **プロジェクトを作成しよう！**の**ウェブサーバを起動する**セクションでどうやって新しいコマンドを書くかというのを見直しました。
 
-{% filename %}Mac OS X または Linux:{% endfilename %}
+{% filename %}macOS または Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py createsuperuser
     
@@ -52,6 +52,6 @@ Postsをクリックして移動し、少し試してみましょう。 5つか6
 
 ![Django admin](images/edit_post3.png)
 
-Django adminについてもっと知りたいときは、Djangoのドキュメントを見るとよいでしょう。https://docs.djangoproject.com/ja/2.2/ref/contrib/admin/
+Django adminについてもっと知りたいときは、Djangoのドキュメントを見るとよいでしょう。https://docs.djangoproject.com/ja/5.1/ref/contrib/admin/
 
 ここでそろそろコーヒー（または紅茶）か何か食べるものを摂って自分を元気づけるのにいいタイミングでしょう。最初のDjangoモデルを作ったのだから、少し休みをとっていいところです！

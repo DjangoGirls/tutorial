@@ -12,7 +12,7 @@
 
 > Մի մոռացեք. Դուք պետք է գործադրեք բոլոր հրամանները virtualenv- ով: Եթե ​​հրամանի տողում չեք տեսնում `(myvenv)` նախածանցը, ապա ձեզ հարկավոր է ակտիվացնել virtualenv- ը: Մենք բացատրեցինք, թե ինչպես դա անել, **Django installation/Django տեղադրում** գլխի **Working with virtualenv/ Աշխատանք virtualenv-ի հետ ** բաժնում: Դա անելու համար մուտքագրեք `myvenv\Scripts\activate` Windows- ում կամ `source myvenv/bin/activate` Mac OS / Linux- ում:
 
-<!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
+<!--sec data-title="Create project: macOS or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
 Mac OS- ի կամ Linux- ի վահանակի վրա գործարկեք հետևյալ հրամանը. **մի մոռացեք կետ ավելացնել `  ` at the end!/վերջում**
 
@@ -56,7 +56,7 @@ Windows- ում պետք է գործարկել հետևյալ հրամանը: **
     └── requirements.txt
     
 
-> **Նշում**. Գրացուցակի կառուցվածքում կտեսնեք նաև ձեր ` venv ` գրացուցակը, որը մենք ավելի վաղ ստեղծել էինք:
+> **Նշում**. Գրացուցակի կառուցվածքում կտեսնեք նաև ձեր ` myvenv ` գրացուցակը, որը մենք ավելի վաղ ստեղծել էինք:
 
 `manage.py` սա սցենար է, որն օգնում է կառավարել կայքը: Դրանով մենք կկարողանանք վեբ սերվեր գործարկել ձեր համակարգչում ՝ առանց լրացուցիչ ծրագրեր տեղադրելու:
 
@@ -98,7 +98,7 @@ LANGUAGE_CODE = 'de-ch'
 
 ```python
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = BASE_DIR / 'static'
 ```
 
 Երբ `DEBUG`- ը `True/ճիշտ է`ճիշտ է, և `ALLOWED_HOSTS`- ը սահմանված չէ, ընդունիչը գտնվում է ընդդեմ `['localhost', '127.0.0.1', '[::1]']` . Մեր դիմումը գործադրելուց հետո սա չի համապատասխանում PythonAnywhere-ում մեր hostname-ին (հյուրընկալող անունին ), այնպես որ մենք կփոխենք հետևյալ կարգավորումները:
@@ -165,7 +165,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 ```

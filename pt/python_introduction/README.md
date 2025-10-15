@@ -626,7 +626,7 @@ Agora, precisamos salvar o arquivo e dar a ele um nome descritivo. Vamos nomear 
 
 O arquivo está salvo, então é hora de executá-lo! Com as habilidades que você aprendeu na seção sobre linhas de comando, use o terminal para **ir para os diretórios no desktop**.
 
-<!--sec data-title="Change directory: OS X" data-id="python_OSX"
+<!--sec data-title="Change directory: macOS" data-id="python_OSX"
 data-collapse=true ces-->
 
 Em um Mac, o comando é esse:

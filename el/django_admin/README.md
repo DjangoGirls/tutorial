@@ -23,7 +23,7 @@ admin.site.register(Post)
 
 > Θυμηθείτε, για να γράψετε νέες εντολές ενώ ο server εκτελείται, ανοίξτε μια νέα κονσόλα και ενεργοποιήστε το virtualenv. Είδαμε πως να γράφετε νέες εντολές μέσα στο κεφάλαιο **Το πρώτο σας Django project!**, στην ενότητα **Ξεκινώντας τον web server**.
 
-{% filename %}Mac OS X or Linux:{% endfilename %}
+{% filename %}macOS or Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py createsuperuser
     

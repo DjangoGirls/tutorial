@@ -27,7 +27,7 @@ class PostForm(forms.ModelForm):
 
     class Meta:
         model = Post
-        fields = ('title', 'text',)
+        fields = ('title', 'text')
 ```
 
 We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
@@ -59,7 +59,7 @@ It's time to open `blog/templates/blog/base.html` in the code editor. Now we can
 
 Note that we want to call our new view `post_new`. The [SVG icon](https://icons.getbootstrap.com/icons/file-earmark-plus/) is provided by the [Bootstrap Icons](https://icons.getbootstrap.com/) and it will display a page icon with plus sign. We use a Django template directive called `include`. This will inject the file's content into the Django template. The web browser knows how to handle this type of content without any further processing.
 
-> You can download all the Bootstrap icons [here](https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip). Unzip the file and copy all the SVG image files into a new folder inside `blog/templates/blog/` called `icons`. That way you can access an icon like `pencil-fill.svg` using the file path `blog/templates/blog/icons/pencil-fill.svg`
+> You can download all the Bootstrap icons [here](https://github.com/twbs/icons/releases/download/v1.11.3/bootstrap-icons-1.11.3.zip). Unzip the file and copy all the SVG image files into a new folder inside `blog/templates/blog/` called `icons`. That way you can access an icon like `pencil-fill.svg` using the file path `blog/templates/blog/icons/pencil-fill.svg`
 
 After editing the line, your HTML file should now look like this:
 
@@ -70,8 +70,8 @@ After editing the line, your HTML file should now look like this:
 <html>
     <head>
         <title>Django Girls blog</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
@@ -151,7 +151,7 @@ We need to create a file `post_edit.html` in the `blog/templates/blog` directory
 - We need a `Save` button. We do that with an HTML button: `<button type="submit">Save</button>`.
 - And finally, just after the opening `<form ...>` tag we need to add {% raw %}`{% csrf_token %}`{% endraw %}. This is very important, since it makes your forms secure! If you forget about this bit, Django will complain when you try to save the form:
 
-![CSFR Forbidden page](images/csrf2.png)
+![CSRF Forbidden page](images/csrf2.png)
 
 OK, so let's see how the HTML in `post_edit.html` should look:
 
@@ -163,7 +163,7 @@ OK, so let's see how the HTML in `post_edit.html` should look:
     <h2>New post</h2>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
-        <button type="submit" class="save btn btn-default">Save</button>
+        <button type="submit" class="save btn btn-secondary">Save</button>
     </form>
 {% endblock %}
 ```
@@ -189,7 +189,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-When we submit the form, we are brought back to the same view, but this time we have some more data in `request`, more specifically in `request.POST` (the naming has nothing to do with a blog "post"; it's to do with the fact that we're "posting" data). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? All the fields from the form are now in `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
+When we submit the form, we are brought back to the same view, but this time the `request` parameter is different. If we look at the `request.method` it will be `"POST"` (method for sending forms) instead of `"GET"` (method for requesting pages) and the `request.POST` attribute will contain all the fields from the form. The naming has nothing to do with a blog "post"; it's to do with the fact that we're "posting" data.
 
 So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. So we need to add a condition (we will use `if` for that):
 
@@ -290,7 +290,7 @@ Open `blog/templates/blog/post_detail.html` in the code editor and add the follo
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 ```html
 <aside class="actions">
-    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+    <a class="btn btn-secondary" href="{% url 'post_edit' pk=post.pk %}">
       {% include './icons/pencil-fill.svg' %}
     </a>
 </aside>
@@ -305,7 +305,7 @@ so that the template will look like this:
 {% block content %}
     <article class="post">
         <aside class="actions">
-            <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+            <a class="btn btn-secondary" href="{% url 'post_edit' pk=post.pk %}">
                 {% include './icons/pencil-fill.svg' %}
             </a>
         </aside>
@@ -374,7 +374,7 @@ Feel free to change the title or the text and save the changes!
 
 Congratulations! Your application is getting more and more complete!
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.2/topics/forms/
+If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/5.1/topics/forms/
 
 ## Security
 
@@ -408,7 +408,7 @@ Open `blog/templates/blog/post_detail.html` in the code editor and find this lin
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 ```html
-<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+<a class="btn btn-secondary" href="{% url 'post_edit' pk=post.pk %}">
     {% include './icons/pencil-fill.svg' %}
 </a>
 ```
@@ -418,7 +418,7 @@ Change it to this:
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 ```html
 {% if user.is_authenticated %}
-     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+     <a class="btn btn-secondary" href="{% url 'post_edit' pk=post.pk %}">
         {% include './icons/pencil-fill.svg' %}
      </a>
 {% endif %}

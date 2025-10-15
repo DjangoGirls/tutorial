@@ -9,7 +9,7 @@ data-collapse=true ces-->
 
 Non dimenticare di riavviare il prompt dei comandi o la powershell dopo che l'installazione è terminata con successo. <!--endsec-->
 
-<!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
+<!--sec data-title="Installing Git: macOS" data-id="git_install_OSX"
 data-collapse=true ces-->
 
 Scarica Git da [git-scm.com](https://git-scm.com/) e segui le istruzioni.

@@ -13,7 +13,7 @@
 
 > 모든 작업은 가상환경(virtualenv) 안에서 해야 하는 것을 꼭 기억하세요. 현재 콘솔 창에서 접두어로 `(myvenv)`가 안 보인다면 먼저 virtualenv를 활성화해야 합니다. **Django 설치하기** 장에서 **virtualenv 작동법**에 대해 배웠어요. 윈도우에서는 `myvenv\Scripts\activate`를 타이핑하고, 맥 OS과 리눅스에서는 `source myvenv/bin/activate`을 입력하세요.
 
-<!--sec data-title="OS X / Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
+<!--sec data-title="macOS / Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
 맥 OS과 리눅스 콘솔에서는 다음과 같이 명령을 실행해야해요. **명령어 끝에 `.`(점, 마침표)을 입력하는 것을 잊지마세요.** :
 
@@ -83,7 +83,7 @@ Settings.py에서 `TIME_ZONE`있는 줄을 찾으세요. 그리고 이를 해당
 {% filename %}mysite/settings.py{% endfilename %}
 ```python
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = BASE_DIR / 'static'
 ```
 
 `DEBUG`가`True`이고 `ALLOWED_HOSTS`가 비어 있으면, 호스트는 `['localhost', '127.0.0.1', '[::1]']`에 대해서 유효합니다. 애플리케이션을 배포할 때 PythonAnywhere의 호스트 이름과 일치하지 않으므로 다음 설정을 아래와 같이 변경해줘야 합니다. :
@@ -107,7 +107,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 ```

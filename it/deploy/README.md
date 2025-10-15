@@ -20,7 +20,7 @@ Questi tre servizi saranno importantissimi per te. Userai il tuo computer locale
 
 Git tiene traccia delle modifiche a un particolare insieme di file in quello che è chiamato repository di codice (o "repo" in breve). Iniziamone uno per il nostro progetto. Apri la console ed esegui questi comandi nella directory `djangogirls`:
 
-> **Nota** Controlla la tua cartella di lavoro corrente con a`pwd`(Mac OS X/Linux) o`cd` (Windows) comando prima di inizziare il repository. Dovresti essere nella cartella `djangogirls`.
+> **Nota** Controlla la tua cartella di lavoro corrente con a`pwd`(macOS/Linux) o`cd` (Windows) comando prima di inizziare il repository. Dovresti essere nella cartella `djangogirls`.
 
 {% filename %}comando-linea{% endfilename %}
 
@@ -171,7 +171,7 @@ Per implementare un'applicazione web su PythonAnywhere devi prendere il codice d
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pip3.8 install --user pythonanywhere
+    $ pip install --user pythonanywhere
     
 
 Ora dovresti leggere: `Collecting pythonanywhere` e un'eventuale riga finale che dice `Successfully installed (...) pythonanywhere- (...)`.
@@ -180,7 +180,7 @@ Ora eseguiamo l'helper per configurare automaticamente la nostra applicazione da
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pa_autoconfigure_django.py --python=3.8 https://github.com/<your-github-username>/my-first-blog.git
+    $ pa_autoconfigure_django.py --python=3.10 https://github.com/<your-github-username>/my-first-blog.git
     
 
 Guardando l'esecuzione, potrai vedere cosa sta facendo:

@@ -30,9 +30,9 @@
 
 `C:\Python34` 是您之前安装Python的目录， `myvenv` 是您`虚拟环境` 的名字。 你可以使用其他任何名字，但请坚持使用小写，并不要使用空格、重音符号或特殊字符。 始终保持名称短小是个好主意 — — 你会大量引用它 ！
 
-### Linux 和 OS X
+### Linux 和 macOS
 
-在 Linux 和 OS X 上创建的 `虚拟环境` 就和运行 `python3 -m venv myvenv` 一样简单。看起来像这样：
+在 Linux 和 macOS 上创建的 `虚拟环境` 就和运行 `python3 -m venv myvenv` 一样简单。看起来像这样：
 
     ~/djangogirls$ python3 -m venv myvenv
     
@@ -61,7 +61,7 @@
     C:\Users\Name\djangogirls> myvenv\Scripts\activate
     
 
-#### Linux 和 OS X
+#### Linux 和 macOS
 
 运行如下命令进入你的虚拟环境：
 

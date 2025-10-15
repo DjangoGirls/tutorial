@@ -627,7 +627,7 @@ print('Hello, Django girls!')
 
 وقتی فایل را ذخیره کردیم وقت آن است که آن را اجرا کنیم! ار مهارت‌هایی که در بخش خط فرمان گفتیم استفاده کنید، از ترمینال برای **تغییر دایرکتوری** به دسکتاپ استفاده کنید.
 
-<!--sec data-title="Change directory: OS X" data-id="python_OSX"
+<!--sec data-title="Change directory: macOS" data-id="python_OSX"
 data-collapse=true ces-->
 
 بر روی Mac، فرمان‌ها شبیه به این خواهد بود:

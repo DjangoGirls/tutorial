@@ -626,7 +626,7 @@ Açıkça, artık oldukça deneyimli Python programcısısın, bu yüzden bugün
 
 Dosyayı kaydettiğimize göre artık çalıştırabiliriz! Konsoldan **klasör değiştirme ** yaparak masaüstüne ulaşın, komut satırı bölümünde öğrendiklerinizi hatırlayın.
 
-<!--sec data-title="Change directory: OS X" data-id="python_OSX"
+<!--sec data-title="Change directory: macOS" data-id="python_OSX"
 data-collapse=true ces-->
 
 Mac'de bu komut şunun gibi görünecektir:

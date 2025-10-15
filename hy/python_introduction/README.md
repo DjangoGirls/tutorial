@@ -628,7 +628,7 @@ print('Hello, Django girls!')
 
 Ֆայլը պահված պահով ՝ այն գործարկելու ժամանակն է: Օգտագործելով command line (հրամանի տողի) բաժնում ձեր սովորած հմտությունները, օգտագործեք տերմինալը ** change directories (գրացուցակները փոխելու ) ** համար:
 
-<!--sec data-title="Change directory: OS X" data-id="python_OSX"
+<!--sec data-title="Change directory: macOS" data-id="python_OSX"
 data-collapse=true ces-->
 
 Mac- ի վրա հրամանը նման կլինի հետևյալ կերպ.

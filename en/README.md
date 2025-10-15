@@ -1,5 +1,4 @@
 # Django Girls Tutorial
-[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
 > This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License.
 > To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
@@ -8,6 +7,11 @@
 Welcome to the Django Girls Tutorial! We are happy to see you here. :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
 As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine. :)
+
+{% if output.name != "ebook" %}
+> Do you want to read this tutorial on your e-reader?
+> Then [download the Django Girls Tutorial as an e-book in ePub format](../django-girls-tutorial_{{ book.language }}.epub).
+{% endif %}
 
 ## Introduction
 
@@ -27,8 +31,6 @@ It will (more or less) look like this:
 
 ![Figure 0.1](images/application.png)
 
-> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
-
 OK, [let's start at the beginning…](./how_the_internet_works/README.md)
 
 ## Following the tutorial at home
@@ -44,7 +46,7 @@ This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you f
 
 ## Would you like to help us translate the tutorial into other languages?
 
-Currently, translations are being kept on crowdin.com platform at:
+Currently, translations are being kept on the crowdin.com platform at:
 
 https://crowdin.com/project/django-girls-tutorial
 

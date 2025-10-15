@@ -35,10 +35,10 @@ itt a `C:\Python35\python` azt a könyvtárat jelenti, ahova korábban a Pythont
 
 <!--endsec-->
 
-<!--sec data-title="Linux és OS X" data-id="virtualenv_installation_linuxosx"
+<!--sec data-title="Linux és macOS" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-A `virtualenv` létrehozása Linux és OS X környezetben is csak annyiból áll, hogy a `python3 -m venv myvenv` parancsot futtatod. Így fog kinézni:
+A `virtualenv` létrehozása Linux és macOS környezetben is csak annyiból áll, hogy a `python3 -m venv myvenv` parancsot futtatod. Így fog kinézni:
 
     ~/djangogirls$ python3 -m venv myvenv
     
@@ -109,7 +109,7 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-<!--sec data-title="Linux and OS X" data-id="virtualenv_linuxosx"
+<!--sec data-title="Linux and macOS" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
 Így indíthatod el a virtuális környezetet:

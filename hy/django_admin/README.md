@@ -23,7 +23,7 @@ admin.site.register(Post)
 
 > Հիշեք ՝ վեբ սերվերի գործարկման ընթացքում նոր հրամաններ գրելու համար բացեք նոր տերմինալային պատուհան և ակտիվացրեք ձեր վիրտուալ միջավայրը (virtualenv): Մենք վերանայեցինք, թե ինչպես գրել նոր հրամաններ ** Ձեր առաջին Django նախագիծը ** (Your first Django project)գլուխը, **Մեկնարկելով վեբ սերվերը** (Starting the web server) բաժնում:
 
-{% filename %}Mac OS X or Linux:{% endfilename %}
+{% filename %}macOS or Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py createsuperuser
     

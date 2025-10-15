@@ -12,7 +12,7 @@ Los nombres de algunos archivos y directorios son muy importantes para Django. N
 
 > Recuerda ejecutar todo en el virtualenv. Si no ves un prefijo `(myvenv)` en tu consola tienes que activar tu virtualenv. Explicamos cómo hacerlo en el capítulo de **Instalación de Django** en la sección **Trabajar con virtualenv**. Basta con escribir `myvenv\Scripts\activate` en Windows o `source myvenv/bin/activate` en Mac OS / Linux.
 
-<!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
+<!--sec data-title="Create project: macOS or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
 En MacOS o Linux deberías ejecutar el siguiente comando en la consola. **no te olvides de añadir el punto `.` al final**
 
@@ -54,7 +54,7 @@ En Windows debes ejecutar el siguiente comando. **(No olvides incluir el punto `
     └───requirements.txt
     
 
-> **Nota**: en tu estructura de directorios, también verás el directorio `venv` que creamos anteriormente.
+> **Nota**: en tu estructura de directorios, también verás el directorio `myvenv` que creamos anteriormente.
 
 `manage.py` es un script que ayuda con la administración del sitio. Con él podremos iniciar un servidor web en nuestro ordenador sin necesidad de instalar nada más, entre otras cosas.
 
@@ -96,7 +96,7 @@ También tenemos que añadir una ruta para archivos estáticos. (Veremos todo ac
 
 ```python
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = BASE_DIR / 'static' 
 ```
 
 Cuando `DEBUG` es `True` y `ALLOWED_HOST` esta vacío, el host es validado contra `['localhost', '127,0.0.1', '[::1]']`. Una vez despleguemos nuestra aplicación este no sera el mismo que nuestro nombre de host en PythonAnywhere así que cambiaremos la siguiente opción:
@@ -124,7 +124,7 @@ Esta ya está configurado en esta parte de tu archivo `mysite/settings.py`:
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 ```

@@ -9,7 +9,7 @@ Git은 [git-scm.com](https://git-scm.com/)에서 내려받을 수 있습니다. 
 
 <!--endsec-->
 
-<!--sec data-title="OS X" data-id="git_install_OSX"
+<!--sec data-title="macOS" data-id="git_install_OSX"
 data-collapse=true ces-->
 
 [git-scm.com](https://git-scm.com/)에서 다운받아 설치하세요. 
