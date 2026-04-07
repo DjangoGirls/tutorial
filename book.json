@@ -1,12 +1,13 @@
 {
     "gitbook": ">=3.2.0",
     "variables": {
-      "py_version": "3.12",
-      "py_release": "3.12.3",
+      "py_version": "3.14",
+      "py_release": "3.14.3",
       "py_min_version": "3.10",
       "py_min_release": "3.10.13",
       "pa_py_version": "3.10",
-      "django_version": "5.1.2"
+      "django_version": "5.2.12",
+      "docs_version": "5.2"
     },
     "links": {
     },
