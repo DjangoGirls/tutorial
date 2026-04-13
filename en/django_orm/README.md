@@ -173,11 +173,11 @@ Now try to get list of published posts again (press the up arrow key three times
 
 ### Ordering objects
 
-QuerySets also allow you to order the list of objects. Let's try to order them by `created_date` field:
+QuerySets also allow you to order the list of objects. Let's try to order them by `create_date` field:
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> Post.objects.order_by('created_date')
+>>> Post.objects.order_by('create_date')
 <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
@@ -185,7 +185,7 @@ We can also reverse the ordering by adding `-` at the beginning:
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> Post.objects.order_by('-created_date')
+>>> Post.objects.order_by('-create_date')
 <QuerySet [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]>
 ```
 
