@@ -658,9 +658,9 @@ If we were to save and run this, we'd see an error like this:
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 ```
 $ python3 python_intro.py
-File "python_intro.py", line 2
-         ^
-SyntaxError: unexpected EOF while parsing
+File "python_intro.py", line 1
+    if 3 > 2:
+IndentationError: expected an indented block after 'if' statement on line 1```
 ```
 
 Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
