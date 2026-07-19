@@ -15,3 +15,18 @@ jobs:
         run: |
           npm install
           npx honkit build
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: github-pages
+          path: _book/**
+
+      - name: Save PR metadata
+        run: |
+          echo ${{ github.event.number }} > ./pr
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pr
+          path: ./pr
