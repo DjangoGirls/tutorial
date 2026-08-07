@@ -155,7 +155,7 @@ Agora vamos executar a ferramenta para configurar a nossa aplicação a partir d
 
 {% filename %}linha de comando do PythonAnywhere{% endfilename %}
 
-    $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
+    $ pa_autoconfigure_django.py --python=3.10 https://github.com/<your-github-username>/my-first-blog.git
     
 
 Enquanto assiste a execução da ferramenta, você pode ver o que ela está fazendo:
