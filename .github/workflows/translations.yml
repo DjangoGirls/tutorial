@@ -1,0 +1,54 @@
+name: Update translations
+
+on:
+  workflow_dispatch:
+    inputs:
+      include_beta:
+        type: boolean
+        default: false
+        description: Include beta languages
+
+env:
+  GIT_AUTHOR_NAME: Django Girls Automation
+  GIT_AUTHOR_EMAIL: automation@djangogirls.org
+
+jobs:
+  list_languages:
+    name: List languages
+    runs-on: ubuntu-latest
+    outputs:
+      languages: ${{ steps.set_list.outputs.languages }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Set the language list
+        id: set_list
+        run: ./.github/list_languages --include-beta ${{ inputs.include_beta }}
+
+  update_language:
+    name: 'Update ${{ matrix.language }} translations from Crowdin'
+    needs: list_languages
+    if: ${{ needs.list_languages.outputs.languages != '[]' }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        language: ${{ fromJson(needs.list_languages.outputs.languages) }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Update language
+        run: |
+          wget https://crowdin.com/backend/download/project/django-girls-tutorial/${{ matrix.language }}.zip
+          unzip ${{ matrix.language }}.zip
+          find ${{ matrix.language }} -name '*.md' -delete
+          rsync -av master/${{ matrix.language }}*/* ${{ matrix.language }}/
+          rm -rf ${{ matrix.language }}.zip master
+      - name: Open a PR
+        uses: peter-evans/create-pull-request@v3
+        with:
+          commit-message: "Update ${{ matrix.language }} translations from Crowdin"
+          branch: "update_translations/${{ matrix.language }}"
+          title: "Update ${{ matrix.language }} translations from Crowdin"
+          body: ''
+          delete-branch: true
