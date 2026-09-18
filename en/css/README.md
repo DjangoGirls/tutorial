@@ -142,6 +142,11 @@ OK, save the file and refresh the site!
 
 ![Figure 14.2](images/color2.png)
 
+> **Note** Don't see the new colors after refreshing? Here are three quick checks:
+> 1. **Restart your server**: If the Django server was already running when you created the `static` folder, stop the server in your console by pressing `Ctrl + C`, and start it again with `python manage.py runserver`.
+> 2. **Force refresh your browser**: Sometimes browsers remember (cache) the old page without styling. Try a hard refresh by pressing `Ctrl + F5` (or `Ctrl + Shift + R`) on Windows/Linux, or `Cmd + Shift + R` on macOS.
+> 3. **Check `DEBUG = True`**: Open `mysite/settings.py` and verify that `DEBUG = True`. If `DEBUG` is set to `False`, Django will not serve static files during local development.
+
 Nice work! Maybe we would also like to give our website a little air and increase the margin on the left side? Let's try this!
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
