@@ -610,7 +610,7 @@ $
 
 Esto te llevará de vuelta a la línea de comandos.
 
-Anteriormente, seleccionamos un editor de código de la sección </a>editor de código</0>. Necesitaremos abrir el editor ahora y escribir algo de código en un nuevo archivo (o si está usando un Chromebook, cree un nuevo archivo en el IDE de la nube y abra el archivo, que estará en el editor de código incluido):
+Anteriormente, seleccionamos un editor de código de la sección [editor de código](../code_editor/README.md). Necesitaremos abrir el editor ahora y escribir algo de código en un nuevo archivo (o si está usando un Chromebook, cree un nuevo archivo en el IDE de la nube y abra el archivo, que estará en el editor de código incluido):
 
 {% filename %}editor{% endfilename %}
 
