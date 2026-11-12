@@ -1,7 +1,5 @@
 # Django Girls 教程
 
- [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 > 这项工作是根据公共创意贡献署名国际协议4.0的要求完成的。若要查看本许可证的副本，请访问https://creativecommons.org/licenses/by-sa/4.0/
 
 ## 介绍
@@ -23,8 +21,6 @@
 ![图0.1][2]
 
  [2]: images/application.png
-
-> 如果你独自学习这个教程而苦于没有一位能帮你答疑解惑的的教练，我们给你提供交流的平台：[![Gitter](https://badges.gitter.im/Join Chat.svg)][1]。 我们要求我们的教练以及之前的参与者时不时到那里去，帮助其他人参与本教程！ 不要担心什么，尽管大胆地提问吧！
 
 好嘞，[我们从头开始...][3]
 

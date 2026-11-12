@@ -1,7 +1,5 @@
 # جنگو برای دختران
 
-[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
-
 > این کار تحت مجوز Creative Commons Attribution-Share Alike 4.0 مجاز است. برای مشاهده یک نسخه از این مجوز، بهhttps://creativecommons.org/licenses/by-sa/4.0/ مراجعه کنید
 
 ## خوش آمدید
@@ -27,8 +25,6 @@
 کمابیش شبیه این خواهد شد:
 
 ![تصویر 0.1](images/application.png)
-
-> اگر خودتان به تنهایی با این آموزش کار می‌کنید و مربی ندارید تا به شما کمک کند، در صورت بروز هر مشکلی ما یک سیستم چت برای شما داریم: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). ما از مربی‌ها و شرکت کنندگان قبلی خود خواسته ایم تا هر چند وقت یکبار اینجا باشند و به بقیه کمک کنند! از پرسیدن سوال هایتان نترسید!
 
 خوب،[ بیایید از ابتدا شروع کنیم... ](./how_the_internet_works/README.md)
 

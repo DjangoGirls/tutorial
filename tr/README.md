@@ -1,7 +1,5 @@
 # Django Girls Eğitimi
 
-[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
-
 > Bu eser Creative Commons Attribution-ShareAlike 4.0 International License ile lisanslıdır. Bu lisansın bir örneğini görmek için https://creativecommons.org/licenses/by-sa/4.0/ adresine gidebilirsiniz
 
 ## Hoşgeldiniz
@@ -27,8 +25,6 @@ Eğitimi bitirdiğinizde, küçük bir çalışan web uygulamanız olacak: kendi
 Aşağı yukarı şu şekilde gözükecek:
 
 ![Şekil 0.1](images/application.png)
-
-> Eğer eğitimi kendi başınıza takip ediyorsanız ve bir problem yaşadığınızda size yardım edebilecek bir mentörünüz yoksa, size yardım edebileceğimiz bir sohbet sistemimiz var:[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Daha önce katılmış olan kişilerden ve eğitmenlerimizden zaman zaman chat odasında bulunmalarını ve eğitimi takip eden kişilere yardımcı olmalarını istedik! Chat odasında sorularınızı sormaktan çekinmeyin!
 
 Tamam, [hadi en baştan başlayalım...](./how_the_internet_works/README.md)
 

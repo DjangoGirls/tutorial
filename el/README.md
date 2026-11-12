@@ -1,7 +1,5 @@
 # Φροντιστήριο Django Girls
 
-[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
-
 > Αυτό το φροντιστήριο χορηγείται υπό την άδεια χρήσης με το όνομα: Creative Commons Attribution-ShareAlike 4.0 International License. Για να δείτε ένα αντίγραφο αυτής της άδειας χρήσης, επισκεφθείτε τον ακόλουθο σύνδεσμο https://creativecommons.org/licenses/by-sa/4.0/
 
 ## Καλώς ήρθατε
@@ -27,8 +25,6 @@
 Θα φαίνεται έτσι (πάνω κάτω):
 
 ![Σχήμα 0.1](images/application.png)
-
-> Αν είσαι μόνος σου χωρίς κάποιον να σε βοηθάει, τότε σε περίπτωση προβλήματος, έχουμε ένα σύστημα συνομιλίας για εσένα: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Ζητήσαμε από τους προπονητές μας και τους προηγούμενους συμμετάσχοντες να είναι εκεί που και που και να βοηθάνε άλλους με το σεμινάριο! Μην φοβάστε να κάνετε ερωτήσεις εκεί!
 
 Οκ, [ ας ξεκινήσουμε από την αρχή...](./how_the_internet_works/README.md)
 

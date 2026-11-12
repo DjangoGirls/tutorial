@@ -1,7 +1,5 @@
 # Django Girls ձեռնարկը
 
-[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
-
 > Այս աշխատանքը լիցենզավորված է Creative Commons Attribution-ShareAlike 4.0 միջազգային լիցենզիայով: Այս արտոնագրի պատճենը դիտելու համար այցելեք https://creativecommons.org/licenses/by-sa/4.0/
 
 ## Բարի գալուստ
@@ -27,8 +25,6 @@
 Դա (քիչ թե շատ) այսպիսի տեսք կունենա.
 
 ![Figure 0.1](images/application.png)
-
-> Եթե ​​ինքնուրույն աշխատում եք ձեռնարկի հետ և չունեք մարզիչ, որը կօգնի ձեզ ցանկացած խնդրի դեպքում, մենք ձեզ համար ունենք չաթ համակարգ ՝ [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg) ](https://gitter.im/DjangoGirls/tutorial): Մենք խնդրեցինք մեր մարզիչներին և նախորդ մասնակիցներին ժամանակ առ ժամանակ այնտեղ գտնվել և օգնել ուրիշներին ձեռնարկի միջոցով: Մի վախեցեք այնտեղ ձեր հարցը տալուց:
 
 Լավ, [ եկեք սկսենք ամենասկզբից… ](./how_the_internet_works/README.md)
 

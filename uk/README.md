@@ -1,6 +1,4 @@
 # Навчальний посібник Django Girls
-[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 > Ця робота ліцензована міжнародною ліцензією Creative Commons Attribution-ShareAlike 4.0
 International License. Щоб переглянути копію цієї ліцензії, відвідайте
 https://creativecommons.org/licenses/by-sa/4.0/
@@ -27,8 +25,6 @@ This tutorial has been translated from English by a group of awesome volunteers:
 Це буде (в більшій чи меншій мірі) виглядати наступним чином:
 
 ![Рисунок 0.1](images/application.png)
-
-> Якщо ви працюєте над матеріалами самостійно і не маєте інструктора, що зміг би допомогти у разі певної проблеми, для вас існує чат: [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DjangoGirls/tutorial?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge). Ми попросили наших інструкторів і попередніх учасників бути там час від часу та допомагати іншим із освоєнням матеріалу! Не бійтеся задавати свої питання!
 
 Гаразд, [почнемо з самого початку...](./how_the_internet_works/README.md)
 

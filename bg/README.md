@@ -1,7 +1,5 @@
 # Django Girls ръководство
 
-[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
-
 > Тази работа е лицензирана под Creative Commons Attribution-ShareAlike 4.0 International License. За да видите копие на този лиценз, посетете https://creativecommons.org/licenses/by-sa/4.0/
 
 ## Добре дошли
@@ -27,8 +25,6 @@
 Това ще изглежда (горе-долу) ето така:
 
 ![Фигура 0.1](images/application.png)
-
-> Ако работиш с ръкводството сам, и нямаш инструктор който да ти помага в случай на някой проблем, имаме чат система за теб: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Помолихме нашите инструктори и миналите участници да са там от време на време и да помагат на другите с ръководството! Не се страхувай да задаваш въпроси тука!
 
 Добре, [хайде да започнем от начало...](./how_the_internet_works/README.md)
 
