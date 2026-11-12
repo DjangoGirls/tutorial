@@ -54,10 +54,13 @@ It's time to open `blog/templates/blog/base.html` in the code editor. Now we can
 ```html
 <a href="{% url 'post_new' %}" class="top-menu">
     {% include './icons/file-earmark-plus.svg' %}
+    <span class="visually-hidden">New post</span>
 </a>
 ```
 
 Note that we want to call our new view `post_new`. The [SVG icon](https://icons.getbootstrap.com/icons/file-earmark-plus/) is provided by the [Bootstrap Icons](https://icons.getbootstrap.com/) and it will display a page icon with plus sign. We use a Django template directive called `include`. This will inject the file's content into the Django template. The web browser knows how to handle this type of content without any further processing.
+
+The icon alone doesn't tell screen readers (the software that reads web pages aloud for people who are blind or have low vision) what the link does. That's why we also add the text "New post" inside a `span` with the `visually-hidden` class from Bootstrap: it is hidden on the screen, but screen readers will still read it out loud.
 
 > You can download all the Bootstrap icons [here](https://github.com/twbs/icons/releases/download/v1.11.3/bootstrap-icons-1.11.3.zip). Unzip the file and copy all the SVG image files into a new folder inside `blog/templates/blog/` called `icons`. That way you can access an icon like `pencil-fill.svg` using the file path `blog/templates/blog/icons/pencil-fill.svg`
 
@@ -79,6 +82,7 @@ After editing the line, your HTML file should now look like this:
             <div class="container">
                 <a href="{% url 'post_new' %}" class="top-menu">
                     {% include './icons/file-earmark-plus.svg' %}
+                    <span class="visually-hidden">New post</span>
                 </a>
                 <h1><a href="/">Django Girls Blog</a></h1>
             </div>
@@ -292,6 +296,7 @@ Open `blog/templates/blog/post_detail.html` in the code editor and add the follo
 <aside class="actions">
     <a class="btn btn-secondary" href="{% url 'post_edit' pk=post.pk %}">
       {% include './icons/pencil-fill.svg' %}
+      <span class="visually-hidden">Edit post</span>
     </a>
 </aside>
 ```
@@ -307,6 +312,7 @@ so that the template will look like this:
         <aside class="actions">
             <a class="btn btn-secondary" href="{% url 'post_edit' pk=post.pk %}">
                 {% include './icons/pencil-fill.svg' %}
+                <span class="visually-hidden">Edit post</span>
             </a>
         </aside>
         {% if post.published_date %}
@@ -386,6 +392,7 @@ Open `blog/templates/blog/base.html` in the code editor, find our `div` inside `
 ```html
 <a href="{% url 'post_new' %}" class="top-menu">
     {% include './icons/file-earmark-plus.svg' %}
+    <span class="visually-hidden">New post</span>
 </a>
 ```
 
@@ -396,6 +403,7 @@ We're going to add another `{% if %}` tag to this, which will make the link show
 {% if user.is_authenticated %}
     <a href="{% url 'post_new' %}" class="top-menu">
         {% include './icons/file-earmark-plus.svg' %}
+        <span class="visually-hidden">New post</span>
     </a>
 {% endif %}
 ```
@@ -410,6 +418,7 @@ Open `blog/templates/blog/post_detail.html` in the code editor and find this lin
 ```html
 <a class="btn btn-secondary" href="{% url 'post_edit' pk=post.pk %}">
     {% include './icons/pencil-fill.svg' %}
+    <span class="visually-hidden">Edit post</span>
 </a>
 ```
 
@@ -420,6 +429,7 @@ Change it to this:
 {% if user.is_authenticated %}
      <a class="btn btn-secondary" href="{% url 'post_edit' pk=post.pk %}">
         {% include './icons/pencil-fill.svg' %}
+        <span class="visually-hidden">Edit post</span>
      </a>
 {% endif %}
 ```
