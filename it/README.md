@@ -1,7 +1,5 @@
 # Il tutorial di Django Girls
 
-[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
-
 > Questo lavoro è concesso sotto la licenza Creative Commons Attribuzione-ShareAlike 4.0 internazionale. Per visualizzare una copia di questa licenza, visita https://creativecommons.org/licenses/by-sa/4.0/
 
 ## Benvenuta
@@ -27,8 +25,6 @@ Una volta terminato il tutorial, avrai creato una piccola applicazione web funzi
 Assomiglierà (più o meno) a questo:
 
 ![Figure 0.1](images/application.png)
-
-> Se lavori da sola al tutorial e non hai un insegnante che ti possa aiutare nel caso avessi qualche problema, abbiamo una chat per te: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Abbiamo chiesto ai nostri coach e a coloro che hanno già partecipato di visitare la chat di tanto in tanto per aiutare gli altri con il tutorial! Non aver paura di fare domande!
 
 OK, [cominciamo dall'inizio...](./how_the_internet_works/README.md)
 

@@ -1,7 +1,5 @@
 # Django Girls tutoriál
 
-[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
-
 > Toto dielo je zverejnené pod licenciou Creative Commons Attribution-ShareAlike 4.0 International License. Ak chceš vidieť kópiu tejto licencie, navštív https://creativecommons.org/licenses/by-sa/4.0/
 
 ## Vitaj
@@ -27,8 +25,6 @@ Po skončení budeš mať funkčnú webovú aplikáciu - tvoj vlastný blog. Uk�
 Výsledok bude vyzerať asi takto:
 
 ![Obrázok 0.1](images/application.png)
-
-> Ak budeš na tomto projekte pracovať sama a nemáš mentorku či mentora, ktorý ti pomáha, môžeš v prípade problémov navštíviť tento chat: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Požiadali sme naše mentorky a mentorov, ale aj absolventky, aby sa na tomto chate občas ukázali a pomohli ostatným! Neboj sa opýtať, čomu nerozumieš!
 
 OK, [začnime pekne po poriadku...](./how_the_internet_works/README.md)
 

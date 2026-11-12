@@ -1,7 +1,5 @@
 # Django Girls のチュートリアル
 
-[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
-
 > これは、Creative Commons Attribution-ShareAlike 4.0 International License のライセンスの下で提供しています。ライセンスについてはこちらをご確認ください。 https://creativecommons.org/licenses/by-sa/4.0/
 
 ## ウェルカム！
@@ -27,8 +25,6 @@ Django Girlsのチュートリアルにようこそ！ お会いできて嬉し�
 このようなサイトができあがります！:
 
 ![図 0.1](images/application.png)
-
-> もしあなたがこのチュートリアルを１人ですすめていて、質問できるコーチが周りにいない時は、ここにチャットを用意しています：[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial) これまでにワークショップに参加したことがある方やコーチの皆さんが、このチャットで助けてくれることでしょう。 心配せずに、質問をなげかけてみてくださいね！
 
 それでは、[さっそく最初からやってみよう！](./how_the_internet_works/README.md)
 

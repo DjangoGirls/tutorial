@@ -1,7 +1,5 @@
 # 장고걸스 튜토리얼 (Django Girls Tutorial)
 
-[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
-
 > 이 튜토리얼은 Creative Commons Attribution-ShareAlike 4.0 International 저작권을 준수합니다.
 > 라이센스 전문은 https://creativecommons.org/licenses/by-sa/4.0 에서 확인하세요.
 
@@ -49,8 +47,6 @@
 우리는 앞으로 아래와 같은 웹 사이트를 만들어 볼 거예요.
 
 ![Figure 0.1](images/application.png)
-
-> 만약 집에서 혼자 튜토리얼을 따라하고 있거나, 문제가 생겼을 때 도움받을 선생님이 없다면 이 곳에서 질문하세요 : [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). 우리의 코치들과 워크샵 참가자들이 여러분들을 도와줄 거예요! 어떤 질문이든 주저하지 말고 물어보세요!
 
 자, [이제 그럼 어서 시작해볼까요.](./how_the_internet_works/README.md)
 
