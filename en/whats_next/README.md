@@ -17,6 +17,7 @@ Yes! There are a _lot_ of resources online for learning all kinds of programming
 - [Django's official tutorial](https://docs.djangoproject.com/en/{{ book.docs_version }}/intro/tutorial01/)
 - [Getting Started With Django video lessons](https://thekennethlove.com/videos/)
 - [Django for Everybody Specialization](https://www.coursera.org/specializations/django) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
+- [Coddy's Django course](https://coddy.tech/landing/django) – build six small Django projects in your browser with nothing to install, free with a daily lesson limit
 
 
 #### HTML, CSS and JavaScript
