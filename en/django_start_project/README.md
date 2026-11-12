@@ -129,7 +129,8 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.pythonanywhere.com']
 > **Note**: If you're using a Chromebook, add this line at the bottom of your settings.py file:
 > `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 
-> Also add `.amazonaws.com` to the `ALLOWED_HOSTS` if you are using cloud9
+> If you're using GitHub Codespaces, also add this line at the bottom of your settings.py file, so that you can log in to the Django admin later:
+> `CSRF_TRUSTED_ORIGINS = ['https://*.app.github.dev']`
 
 
 ## Set up a database
@@ -187,13 +188,6 @@ You need to be in the directory that contains the `manage.py` file (the `djangog
 (myvenv) ~/djangogirls$ python manage.py runserver
 ```
 
-If you are on a Chromebook, use this command instead:
-
-{% filename %}Cloud 9{% endfilename %}
-```
-(myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
-```
-
 If you are on Windows and this fails with `UnicodeDecodeError`, use this command instead:
 
 {% filename %}command-line{% endfilename %}
@@ -209,11 +203,11 @@ Now you need to check that your website is running. Open your browser (Firefox, 
 http://127.0.0.1:8000/
 ```
 
-If you're using a Chromebook and Cloud9, instead click the URL in the pop-up window that should have appeared in the upper right corner of the command window where the web server is running. The URL will look something like:
+If you're using a Chromebook and GitHub Codespaces, instead click "Open in Browser" in the pop-up that appears in the lower right corner when the web server starts. You can also find the address in the "Ports" tab, next to the terminal. The URL will look something like:
 
 {% filename %}browser{% endfilename %}
 ```
-https://<a bunch of letters and numbers>.vfs.cloud9.us-west-2.amazonaws.com
+https://<your-codespace-name>-8000.app.github.dev
 ```
 
 You can open this in another browser window and you should see the Django install worked page.
